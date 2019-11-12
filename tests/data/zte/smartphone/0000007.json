@@ -1,44 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; Z959 Build/LMY47V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/55.0.2883.91 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/106.0.0.26.68;]"
-    },
-    "device": {
-      "deviceName": "Z959",
-      "marketingName": "Grand X3",
-      "manufacturer": "zte",
-      "brand": "zte",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 5.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "106.0.0.26.68",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.1.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "55.0.2883.91",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Callpod Keeper for Android 1.0 (10.4.8/261) Dalvik/2.1.0 (Linux; U; Android 5.1; Z812 Build/LMY47O)"
     },
     "device": {
@@ -80,15 +42,15 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; ZTE-Z830 Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "general ZTE device",
-      "marketingName": "general ZTE device",
+      "deviceName": "Z830",
+      "marketingName": "Compel LTE",
       "manufacturer": "zte",
       "brand": "zte",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 800,
+        "height": 480,
         "touch": true,
-        "size": null
+        "size": 4
       },
       "type": "smartphone"
     },
@@ -118,15 +80,15 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; ZTE Z830 Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "general ZTE device",
-      "marketingName": "general ZTE device",
+      "deviceName": "Z830",
+      "marketingName": "Compel LTE",
       "manufacturer": "zte",
       "brand": "zte",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 800,
+        "height": 480,
         "touch": true,
-        "size": null
+        "size": 4
       },
       "type": "smartphone"
     },
@@ -156,15 +118,15 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; ZTE_Z830 Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "general ZTE device",
-      "marketingName": "general ZTE device",
+      "deviceName": "Z830",
+      "marketingName": "Compel LTE",
       "manufacturer": "zte",
       "brand": "zte",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 800,
+        "height": 480,
         "touch": true,
-        "size": null
+        "size": 4
       },
       "type": "smartphone"
     },
@@ -232,15 +194,15 @@
       "user-agent": "Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; ZTE; USCCN859; USC-US)"
     },
     "device": {
-      "deviceName": "general ZTE device",
-      "marketingName": "general ZTE device",
+      "deviceName": "N859",
+      "marketingName": "Render",
       "manufacturer": "zte",
       "brand": "zte",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 800,
+        "height": 480,
         "touch": true,
-        "size": null
+        "size": 4
       },
       "type": "smartphone"
     },
@@ -253,10 +215,10 @@
       "type": "browser"
     },
     "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": null,
-      "manufacturer": "google",
+      "name": "Windows Phone OS 7.5",
+      "marketingName": "Windows Phone OS 7.5",
+      "version": "7.5.0",
+      "manufacturer": "microsoft",
       "bits": null
     },
     "engine": {
@@ -339,44 +301,6 @@
       "name": "Blink",
       "version": "34.0.1847.114",
       "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "LG-NX550"
-    },
-    "device": {
-      "deviceName": "general ZTE device",
-      "marketingName": "general ZTE device",
-      "manufacturer": "zte",
-      "brand": "zte",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": null,
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
     }
   },
   {
@@ -1904,15 +1828,15 @@
       "user-agent": "Mozilla 5.0 (Linux; U; Android 2.1-update1; zh-cn; ZTE-C N600 Build ERE27) UC AppleWebKit 534.31 (KHTML, like Gecko) Mobile Safari 534.31"
     },
     "device": {
-      "deviceName": "N600",
-      "marketingName": "Racer",
+      "deviceName": "C N600",
+      "marketingName": "C N600",
       "manufacturer": "zte",
       "brand": "zte",
       "display": {
-        "width": 320,
-        "height": 240,
+        "width": null,
+        "height": null,
         "touch": true,
-        "size": 2.8
+        "size": null
       },
       "type": "smartphone"
     },
@@ -1942,15 +1866,15 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 2.1-update1; zh-cn; ZTE-C N600+ Build/ERE27) UC AppleWebKit/530+ (KHTML, like Gecko) Mobile Safari/530"
     },
     "device": {
-      "deviceName": "general ZTE device",
-      "marketingName": "general ZTE device",
+      "deviceName": "C N600 Plus",
+      "marketingName": "C N600 Plus",
       "manufacturer": "zte",
       "brand": "zte",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 480,
+        "height": 320,
         "touch": true,
-        "size": null
+        "size": 3.5
       },
       "type": "smartphone"
     },
@@ -1980,15 +1904,15 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 2.2.2; zh-cn; ZTE-C N700 Build/FRF91) UC AppleWebKit/530+ (KHTML, like Gecko) Mobile Safari/530"
     },
     "device": {
-      "deviceName": "general ZTE device",
-      "marketingName": "general ZTE device",
+      "deviceName": "C N700",
+      "marketingName": "C N700",
       "manufacturer": "zte",
       "brand": "zte",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 400,
+        "height": 240,
         "touch": true,
-        "size": null
+        "size": 3.2
       },
       "type": "smartphone"
     },
@@ -2018,15 +1942,15 @@
       "user-agent": "Mozilla 5.0 (Linux; U; Android 2.3.4; zh-cn; ZTE-C N760 Build GRJ22) UC AppleWebKit 534.31 (KHTML, like Gecko) Mobile Safari 534.31"
     },
     "device": {
-      "deviceName": "general ZTE device",
-      "marketingName": "general ZTE device",
+      "deviceName": "C N760",
+      "marketingName": "C N760",
       "manufacturer": "zte",
       "brand": "zte",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 480,
+        "height": 320,
         "touch": true,
-        "size": null
+        "size": 3.5
       },
       "type": "smartphone"
     },
@@ -2094,15 +2018,15 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; ZTE_CLARO_Q1 Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.114 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "general ZTE device",
-      "marketingName": "general ZTE device",
+      "deviceName": "Claro Q1",
+      "marketingName": "Claro Q1",
       "manufacturer": "zte",
       "brand": "zte",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 854,
+        "height": 480,
         "touch": true,
-        "size": null
+        "size": 4.5
       },
       "type": "smartphone"
     },
@@ -2170,15 +2094,15 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 4.0.4; ZTE Grand Era Build/IMM76L) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166 Mobile Safari/535.19"
     },
     "device": {
-      "deviceName": "general ZTE device",
-      "marketingName": "general ZTE device",
+      "deviceName": "Grand Era",
+      "marketingName": "Grand Era",
       "manufacturer": "zte",
       "brand": "zte",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1280,
+        "height": 720,
         "touch": true,
-        "size": null
+        "size": 4.5
       },
       "type": "smartphone"
     },
@@ -2246,15 +2170,15 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 4.1.2; de-de; ZTE Grand S Build/JZO54K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.1 Mobile Safari/534.30"
     },
     "device": {
-      "deviceName": "general ZTE device",
-      "marketingName": "general ZTE device",
+      "deviceName": "Grand S",
+      "marketingName": "Grand S",
       "manufacturer": "zte",
       "brand": "zte",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1920,
+        "height": 1080,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "type": "smartphone"
     },
@@ -2284,13 +2208,13 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 2.2.1; Pt-br; ZTE_GV821 Build/MASTER) AppleWebKit/533.1 (KHTML, Like Gecko) Version/4.0 Mobile Safari/533.1"
     },
     "device": {
-      "deviceName": "general ZTE device",
-      "marketingName": "general ZTE device",
+      "deviceName": "GV821",
+      "marketingName": "GV821",
       "manufacturer": "zte",
       "brand": "zte",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 320,
+        "height": 240,
         "touch": true,
         "size": null
       },
@@ -2322,15 +2246,15 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android SpeedFreak! Exclusively for ZTE Avail/Merit; en-us; ZTE-HOTROD Build/GRJ22) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
     },
     "device": {
-      "deviceName": "general ZTE device",
-      "marketingName": "general ZTE device",
+      "deviceName": "Avail",
+      "marketingName": "Avail",
       "manufacturer": "zte",
       "brand": "zte",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 480,
+        "height": 320,
         "touch": true,
-        "size": null
+        "size": 3.5
       },
       "type": "smartphone"
     },
@@ -2360,15 +2284,15 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 2.1-update1; tr-tr; ZTE-JOE Build/VF945_V02c_PT) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Mobile Safari/530.17"
     },
     "device": {
-      "deviceName": "general ZTE device",
-      "marketingName": "general ZTE device",
+      "deviceName": "Joe",
+      "marketingName": "Joe",
       "manufacturer": "zte",
       "brand": "zte",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 400,
+        "height": 240,
         "touch": true,
-        "size": null
+        "size": 3.2
       },
       "type": "smartphone"
     },
@@ -2398,15 +2322,15 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 2.3;es-es; ZTE KIS Flex Build/FRF91) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
     },
     "device": {
-      "deviceName": "general ZTE device",
-      "marketingName": "general ZTE device",
+      "deviceName": "Kis Flex",
+      "marketingName": "Kis Flex",
       "manufacturer": "zte",
       "brand": "zte",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 480,
+        "height": 320,
         "touch": true,
-        "size": null
+        "size": 3.5
       },
       "type": "smartphone"
     },
@@ -2436,15 +2360,15 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 4.1.1; ZTE Kis Pro Build/JRO03C) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166 Mobile Safari/535.19"
     },
     "device": {
-      "deviceName": "general ZTE device",
-      "marketingName": "general ZTE device",
+      "deviceName": "Kis Pro",
+      "marketingName": "Kis Pro",
       "manufacturer": "zte",
       "brand": "zte",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 480,
+        "height": 320,
         "touch": true,
-        "size": null
+        "size": 3.5
       },
       "type": "smartphone"
     },
@@ -2474,15 +2398,15 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 2.2.2; Hu-hu; ZTE-Libra Build/FRF91) AppleWebKit/533.1 (KHTML, Like Gecko) Version/4.0 Mobile Safari/533.1"
     },
     "device": {
-      "deviceName": "general ZTE device",
-      "marketingName": "general ZTE device",
+      "deviceName": "Libra",
+      "marketingName": "Libra",
       "manufacturer": "zte",
       "brand": "zte",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 800,
+        "height": 480,
         "touch": true,
-        "size": null
+        "size": 3.5
       },
       "type": "smartphone"
     },
@@ -2512,15 +2436,15 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 2.3.5; Zh-CN; ZTE-LIBRA Build/GRJ22) AppleWebKit/534.31 (KHTML, Like Gecko) UCBrowser/9.3.1.344 U3/0.8.0 Mobile Safari/534.31"
     },
     "device": {
-      "deviceName": "general ZTE device",
-      "marketingName": "general ZTE device",
+      "deviceName": "Libra",
+      "marketingName": "Libra",
       "manufacturer": "zte",
       "brand": "zte",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 800,
+        "height": 480,
         "touch": true,
-        "size": null
+        "size": 3.5
       },
       "type": "smartphone"
     },
@@ -2588,15 +2512,15 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 4.1.2; de-de; ZTE N5 Build/JZO54K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.1 Mobile Safari/534.30"
     },
     "device": {
-      "deviceName": "general ZTE device",
-      "marketingName": "general ZTE device",
+      "deviceName": "N5",
+      "marketingName": "Grand Memo",
       "manufacturer": "zte",
       "brand": "zte",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1280,
+        "height": 720,
         "touch": true,
-        "size": null
+        "size": 5.7
       },
       "type": "smartphone"
     },
@@ -2626,15 +2550,15 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 2.2.2; en-us; ZTE-U N720 Build/FRF91) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
     },
     "device": {
-      "deviceName": "general ZTE device",
-      "marketingName": "general ZTE device",
+      "deviceName": "U N720",
+      "marketingName": "U N720",
       "manufacturer": "zte",
       "brand": "zte",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 320,
+        "height": 240,
         "touch": true,
-        "size": null
+        "size": 2.8
       },
       "type": "smartphone"
     },
@@ -2664,15 +2588,15 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 2.2.2; Es-es; ZTE-U N721 Build/FRG83) AppleWebKit/533.1 (KHTML, Like Gecko) Version/4.0 Mobile Safari/533.1"
     },
     "device": {
-      "deviceName": "general ZTE device",
-      "marketingName": "general ZTE device",
+      "deviceName": "U N721",
+      "marketingName": "U N721",
       "manufacturer": "zte",
       "brand": "zte",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 320,
+        "height": 240,
         "touch": true,
-        "size": null
+        "size": 2.8
       },
       "type": "smartphone"
     },
@@ -2702,15 +2626,15 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 2.3.6; En-IN; ZTE N788 Build/GRK39F) AppleWebKit/534.30 (KHTML, Like Gecko) Version/4.0 Mobile Safari/534.30"
     },
     "device": {
-      "deviceName": "general ZTE device",
-      "marketingName": "general ZTE device",
+      "deviceName": "N788",
+      "marketingName": "N788",
       "manufacturer": "zte",
       "brand": "zte",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 480,
+        "height": 320,
         "touch": true,
-        "size": null
+        "size": 3.5
       },
       "type": "smartphone"
     },
@@ -2740,15 +2664,15 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 2.3.6; Zh-tw; ZTE N789 Build/GRK39F) AppleWebKit/533.1 (KHTML, Like Gecko) Version/4.0 Mobile Safari/533.1"
     },
     "device": {
-      "deviceName": "general ZTE device",
-      "marketingName": "general ZTE device",
+      "deviceName": "N789",
+      "marketingName": "N789",
       "manufacturer": "zte",
       "brand": "zte",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 480,
+        "height": 320,
         "touch": true,
-        "size": null
+        "size": 3.5
       },
       "type": "smartphone"
     },
@@ -2778,15 +2702,15 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 2.3.6; en-; ZTE N790 Build/GRK39F) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
     },
     "device": {
-      "deviceName": "general ZTE device",
-      "marketingName": "general ZTE device",
+      "deviceName": "N790",
+      "marketingName": "N790",
       "manufacturer": "zte",
       "brand": "zte",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 480,
+        "height": 320,
         "touch": true,
-        "size": null
+        "size": 3.5
       },
       "type": "smartphone"
     },
@@ -2816,15 +2740,15 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 2.3.6; en-us; ZTE N790S Build/GRK39F) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
     },
     "device": {
-      "deviceName": "general ZTE device",
-      "marketingName": "general ZTE device",
+      "deviceName": "N790S",
+      "marketingName": "N790S",
       "manufacturer": "zte",
       "brand": "zte",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 480,
+        "height": 320,
         "touch": true,
-        "size": null
+        "size": 3.5
       },
       "type": "smartphone"
     },
@@ -2854,8 +2778,8 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 4.0.4; zh-cn; ZTE N798 Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
     },
     "device": {
-      "deviceName": "general ZTE device",
-      "marketingName": "general ZTE device",
+      "deviceName": "N798",
+      "marketingName": "N798",
       "manufacturer": "zte",
       "brand": "zte",
       "display": {
@@ -2892,15 +2816,15 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 4.1.2; zh-cn; ZTE N807 Build/JZO54K) AppleWebKit/530.17 (KHTML, like Gecko) FlyFlow/2.5 Version/4.0 Mobile Safari/530.17 baidubrowser/042_3.9.5.2_diordna_008_084/ETZ_61_2.1.4_708N-ETZ/1200a/1B47019C80C97F1F4EA338FF4A3A3729|C6D002C7300000A/1"
     },
     "device": {
-      "deviceName": "general ZTE device",
-      "marketingName": "general ZTE device",
+      "deviceName": "N807",
+      "marketingName": "N807",
       "manufacturer": "zte",
       "brand": "zte",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 800,
+        "height": 480,
         "touch": true,
-        "size": null
+        "size": 4
       },
       "type": "smartphone"
     },
@@ -2930,15 +2854,15 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 2.3.6; En-IE; ZTE N855D Build/GRK39F) AppleWebKit/533.1 (KHTML, Like Gecko) Version/4.0 Mobile Safari/533.1"
     },
     "device": {
-      "deviceName": "general ZTE device",
-      "marketingName": "general ZTE device",
+      "deviceName": "N855D",
+      "marketingName": "N855D",
       "manufacturer": "zte",
       "brand": "zte",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 480,
+        "height": 320,
         "touch": true,
-        "size": null
+        "size": 4
       },
       "type": "smartphone"
     },
@@ -2968,15 +2892,15 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 2.3.6; zh-cn; ZTE N855D+ Build/GRK39F) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Mobile Safari/530.17 T5/1.0 baidubrowser/4.0.7.10 (Baidu; P1 2.3.6)"
     },
     "device": {
-      "deviceName": "general ZTE device",
-      "marketingName": "general ZTE device",
+      "deviceName": "N855D Plus",
+      "marketingName": "N855D Plus",
       "manufacturer": "zte",
       "brand": "zte",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 480,
+        "height": 320,
         "touch": true,
-        "size": null
+        "size": 4
       },
       "type": "smartphone"
     },
@@ -3044,15 +2968,15 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 4.0.4; en-; ZTE N880F Build/IMM76I) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
     },
     "device": {
-      "deviceName": "general ZTE device",
-      "marketingName": "general ZTE device",
+      "deviceName": "N880F",
+      "marketingName": "N880F",
       "manufacturer": "zte",
       "brand": "zte",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 800,
+        "height": 480,
         "touch": true,
-        "size": null
+        "size": 4
       },
       "type": "smartphone"
     },
@@ -3082,15 +3006,15 @@
       "user-agent": "Mozilla 5.0 (Linux; U; Android 4.0.4; zh-cn; ZTE N880G Build IMM76I) UC AppleWebKit 534.31 (KHTML, like Gecko) Mobile Safari 534.31"
     },
     "device": {
-      "deviceName": "general ZTE device",
-      "marketingName": "general ZTE device",
+      "deviceName": "N880G",
+      "marketingName": "N880G",
       "manufacturer": "zte",
       "brand": "zte",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 854,
+        "height": 480,
         "touch": true,
-        "size": null
+        "size": 4.5
       },
       "type": "smartphone"
     },
@@ -3797,6 +3721,82 @@
       "name": "WebKit",
       "version": "528.5.0",
       "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.3.7; zh-CN; ZTE-T_U960s Build/GWK74) AppleWebKit/528.5+ (KHTML, like Gecko) Version/3.1.2 Mobile Safari/525.20.1 UCBrowser/8.8.1.243 Mobile"
+    },
+    "device": {
+      "deviceName": "U960S",
+      "marketingName": "U960S",
+      "manufacturer": "zte",
+      "brand": "zte",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 4.3
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "8.8.1.243",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "2.3.7",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "528.5.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.3.5; en-US; ZTE T12 Build/GRJ90) AppleWebKit/534.31 (KHTML, like Gecko) UCBrowser/9.3.0.321 U3/0.8.0 Mobile Safari/534.31"
+    },
+    "device": {
+      "deviceName": "general ZTE device",
+      "marketingName": "general ZTE device",
+      "manufacturer": "zte",
+      "brand": "zte",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "9.3.0.321",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "2.3.5",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "U3",
+      "version": "0.8.0",
+      "manufacturer": "ucweb"
     }
   }
 ]
