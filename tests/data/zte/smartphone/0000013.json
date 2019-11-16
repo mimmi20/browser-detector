@@ -1,6 +1,44 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.1.2; Z796C Build/JZO54K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.59 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Z796C",
+      "marketingName": "Majesty",
+      "manufacturer": "zte",
+      "brand": "zte",
+      "display": {
+        "width": 854,
+        "height": 480,
+        "touch": true,
+        "size": 4.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "39.0.2171.59",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.1.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "39.0.2171.59",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; U; Android 4.2.2; es-us; ZTE V795 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 [FB_IAB/FB4A;FBAV/28.0.0.20.16;]"
     },
     "device": {
@@ -194,15 +232,15 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 4.1.2; en-us; ZTE-Z740 Build/JZO54K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 [FB_IAB/FB4A;FBAV/27.0.0.25.15;]"
     },
     "device": {
-      "deviceName": "general ZTE device",
-      "marketingName": "general ZTE device",
+      "deviceName": "Z740",
+      "marketingName": "Radiant",
       "manufacturer": "zte",
       "brand": "zte",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 800,
+        "height": 480,
         "touch": true,
-        "size": null
+        "size": 4
       },
       "type": "smartphone"
     },
@@ -232,15 +270,15 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 4.1.2; es-us; ZTE-Z740G Build/JZO54K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
     },
     "device": {
-      "deviceName": "general ZTE device",
-      "marketingName": "general ZTE device",
+      "deviceName": "Z740G",
+      "marketingName": "Sonata 4G",
       "manufacturer": "zte",
       "brand": "zte",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 800,
+        "height": 480,
         "touch": true,
-        "size": null
+        "size": 4
       },
       "type": "smartphone"
     },
@@ -688,15 +726,15 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 4.1.2; es-us; ZTE-Z740G Build/JZO54K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 [FB_IAB/FB4A;FBAV/26.0.0.22.16;]"
     },
     "device": {
-      "deviceName": "general ZTE device",
-      "marketingName": "general ZTE device",
+      "deviceName": "Z740G",
+      "marketingName": "Sonata 4G",
       "manufacturer": "zte",
       "brand": "zte",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 800,
+        "height": 480,
         "touch": true,
-        "size": null
+        "size": 4
       },
       "type": "smartphone"
     },
@@ -772,7 +810,7 @@
         "width": 854,
         "height": 480,
         "touch": true,
-        "size": null
+        "size": 4.5
       },
       "type": "smartphone"
     },
@@ -954,15 +992,15 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 4.2.2; th-th; ZTE V765M Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 [FB_IAB/FB4A;FBAV/29.0.0.23.13;]"
     },
     "device": {
-      "deviceName": "general ZTE device",
-      "marketingName": "general ZTE device",
+      "deviceName": "V765M",
+      "marketingName": "V765M",
       "manufacturer": "zte",
       "brand": "zte",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 800,
+        "height": 480,
         "touch": true,
-        "size": null
+        "size": 4
       },
       "type": "smartphone"
     },
@@ -1000,7 +1038,7 @@
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "type": "smartphone"
     },
@@ -1106,15 +1144,15 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 4.1.2; en-us; ZTE-Z740 Build/JZO54K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 [FB_IAB/FB4A;FBAV/24.0.0.30.15;]"
     },
     "device": {
-      "deviceName": "general ZTE device",
-      "marketingName": "general ZTE device",
+      "deviceName": "Z740",
+      "marketingName": "Radiant",
       "manufacturer": "zte",
       "brand": "zte",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 800,
+        "height": 480,
         "touch": true,
-        "size": null
+        "size": 4
       },
       "type": "smartphone"
     },
@@ -1152,7 +1190,7 @@
         "width": 854,
         "height": 480,
         "touch": true,
-        "size": null
+        "size": 4.5
       },
       "type": "smartphone"
     },
@@ -1912,7 +1950,7 @@
         "width": 854,
         "height": 480,
         "touch": true,
-        "size": null
+        "size": 4.5
       },
       "type": "smartphone"
     },
@@ -2216,7 +2254,7 @@
         "width": 800,
         "height": 480,
         "touch": true,
-        "size": null
+        "size": 3.5
       },
       "type": "smartphone"
     },
@@ -2292,7 +2330,7 @@
         "width": 800,
         "height": 480,
         "touch": true,
-        "size": null
+        "size": 3.5
       },
       "type": "smartphone"
     },
@@ -2740,15 +2778,15 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 4.2.2; th-th; ZTE V765M Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 [FB_IAB/FB4A;FBAV/28.0.0.20.16;]"
     },
     "device": {
-      "deviceName": "general ZTE device",
-      "marketingName": "general ZTE device",
+      "deviceName": "V765M",
+      "marketingName": "V765M",
       "manufacturer": "zte",
       "brand": "zte",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 800,
+        "height": 480,
         "touch": true,
-        "size": null
+        "size": 4
       },
       "type": "smartphone"
     },
@@ -2862,7 +2900,7 @@
         "width": 800,
         "height": 480,
         "touch": true,
-        "size": null
+        "size": 3.5
       },
       "type": "smartphone"
     },
@@ -3242,7 +3280,7 @@
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "type": "smartphone"
     },
@@ -3310,15 +3348,15 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; ZTE T815 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.141 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "general ZTE device",
-      "marketingName": "general ZTE device",
+      "deviceName": "T815",
+      "marketingName": "T815",
       "manufacturer": "zte",
       "brand": "zte",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 800,
+        "height": 480,
         "touch": true,
-        "size": null
+        "size": 4
       },
       "type": "smartphone"
     },
@@ -3348,15 +3386,15 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 2.3;es-es; ZTE V793 Build/FRF91) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
     },
     "device": {
-      "deviceName": "general ZTE device",
-      "marketingName": "general ZTE device",
+      "deviceName": "V793",
+      "marketingName": "Kis Flex",
       "manufacturer": "zte",
       "brand": "zte",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 480,
+        "height": 320,
         "touch": true,
-        "size": null
+        "size": 3.5
       },
       "type": "smartphone"
     },
@@ -3470,7 +3508,7 @@
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "type": "smartphone"
     },
@@ -3546,7 +3584,7 @@
         "width": 800,
         "height": 480,
         "touch": true,
-        "size": null
+        "size": 3.5
       },
       "type": "smartphone"
     },
@@ -3752,44 +3790,6 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "4.3.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "534.30.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.2.2; fr-fr; STARTRAIL 4 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 [FB_IAB/FB4A;FBAV/26.0.0.22.16;]"
-    },
-    "device": {
-      "deviceName": "StarTrail 4",
-      "marketingName": "StarTrail 4",
-      "manufacturer": "zte",
-      "brand": "sfr",
-      "display": {
-        "width": 854,
-        "height": 480,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "26.0.0.22.16",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.2.2",
       "manufacturer": "google",
       "bits": null
     },
