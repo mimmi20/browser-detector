@@ -6,8 +6,8 @@
     "device": {
       "deviceName": "M72",
       "marketingName": "M72",
-      "manufacturer": "zen",
-      "brand": "zen",
+      "manufacturer": "zen-mobile",
+      "brand": "zen-mobile",
       "display": {
         "width": 320,
         "height": 240,
@@ -44,8 +44,8 @@
     "device": {
       "deviceName": "M8",
       "marketingName": "M8",
-      "manufacturer": "zen",
-      "brand": "zen",
+      "manufacturer": "zen-mobile",
+      "brand": "zen-mobile",
       "display": {
         "width": 320,
         "height": 240,
@@ -82,8 +82,8 @@
     "device": {
       "deviceName": "P9",
       "marketingName": "P9",
-      "manufacturer": "zen",
-      "brand": "zen",
+      "manufacturer": "zen-mobile",
+      "brand": "zen-mobile",
       "display": {
         "width": null,
         "height": null,
@@ -120,8 +120,8 @@
     "device": {
       "deviceName": "M72",
       "marketingName": "M72",
-      "manufacturer": "zen",
-      "brand": "zen",
+      "manufacturer": "zen-mobile",
+      "brand": "zen-mobile",
       "display": {
         "width": 320,
         "height": 240,
@@ -158,8 +158,8 @@
     "device": {
       "deviceName": "P46",
       "marketingName": "P46",
-      "manufacturer": "zen",
-      "brand": "zen",
+      "manufacturer": "zen-mobile",
+      "brand": "zen-mobile",
       "display": {
         "width": 480,
         "height": 320,
@@ -196,8 +196,8 @@
     "device": {
       "deviceName": "X10",
       "marketingName": "X10",
-      "manufacturer": "zen",
-      "brand": "zen",
+      "manufacturer": "zen-mobile",
+      "brand": "zen-mobile",
       "display": {
         "width": 320,
         "height": 240,
@@ -234,13 +234,51 @@
     "device": {
       "deviceName": "M39",
       "marketingName": "M39",
-      "manufacturer": "zen",
-      "brand": "zen",
+      "manufacturer": "zen-mobile",
+      "brand": "zen-mobile",
       "display": {
         "width": 480,
         "height": 320,
         "touch": false,
         "size": 2.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "MAUI Wap Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "wap-browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "ZEN M9 Mini/MAUI WAP Browser"
+    },
+    "device": {
+      "deviceName": "M9 Mini",
+      "marketingName": "M9 Mini",
+      "manufacturer": "zen-mobile",
+      "brand": "zen-mobile",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.4
       },
       "type": "feature-phone"
     },
