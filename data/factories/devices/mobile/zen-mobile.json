@@ -1,0 +1,24 @@
+{
+  "rules": {
+    "/cinemax[_ \\-]?click/i": "zen-mobile cinemax click",
+    "/cinemax[_ \\-]?3/i": "zen-mobile cinemax 3",
+    "/cinemax[_ \\-]?2\\+/i": "zen-mobile cinemax 2+",
+    "/cinemax[_ \\-]?2/i": "zen-mobile cinemax 2",
+    "/cinemax[_ \\-]?1/i": "zen-mobile cinemax 1",
+    "/cinemax[_ \\-]?4g/i": "zen-mobile cinemax 4g",
+    "/cinemax[_ \\-]?force/i": "zen-mobile cinemax force",
+    "/admire[_ \\-]?sxy/i": "zen-mobile admire sxy",
+    "/admire[_ \\-]?curve/i": "zen-mobile admire curve",
+    "/ultrafone 701 ?hd/i": "zen-mobile ultrafone 701 hd",
+    "/ultrafone 502/i": "zen-mobile ultrafone 502",
+    "/303/i": "zen-mobile ultrafone 303",
+    "/x10/i": "zen-mobile x10",
+    "/p46/i": "zen-mobile p46",
+    "/p9/i": "zen-mobile p9",
+    "/m72/i": "zen-mobile m72",
+    "/m39/i": "zen-mobile m39",
+    "/m9 mini/i": "zen-mobile m9 mini",
+    "/m8/i": "zen-mobile m8"
+  },
+  "generic": "general zen-mobile device"
+}

@@ -27,6 +27,20 @@
     "type": "feature-phone",
     "platform": "brew"
   },
+  "zte z432": {
+    "deviceName": "Z432",
+    "marketingName": "Altair 2 (AT&T, Cricket)",
+    "manufacturer": "zte",
+    "brand": "zte",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": 2.4
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "zte c880 (feature)": {
     "deviceName": "C880",
     "marketingName": "C880",
@@ -191,6 +205,20 @@
       "height": 240,
       "touch": false,
       "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "zte z222": {
+    "deviceName": "Z222",
+    "marketingName": "Z222",
+    "manufacturer": "zte",
+    "brand": "zte",
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": false,
+      "size": 2
     },
     "type": "feature-phone",
     "platform": "java"
