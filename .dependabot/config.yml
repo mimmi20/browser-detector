@@ -17,3 +17,7 @@ update_configs:
     ignored_updates:
       - match:
           dependency_name: "phpunit/phpunit"
+      - match:
+          dependency_name: "symfony/cache"
+      - match:
+          dependency_name: "symfony/finder"
