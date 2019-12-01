@@ -12,7 +12,6 @@ declare(strict_types = 1);
 namespace BrowserDetector;
 
 use BrowserDetector\Cache\CacheInterface;
-use BrowserDetector\Loader\NotFoundException;
 use BrowserDetector\Parser\BrowserParserInterface;
 use BrowserDetector\Parser\DeviceParserInterface;
 use BrowserDetector\Parser\EngineParserInterface;
