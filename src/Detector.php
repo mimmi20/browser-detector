@@ -174,7 +174,7 @@ final class Detector implements DetectorInterface
         /* @var \UaResult\Os\OsInterface $platform */
         try {
             [$device, $platform] = $deviceParser->parse($deviceUa);
-        } catch (NotFoundException | \UnexpectedValueException $e) {
+        } catch (\UnexpectedValueException $e) {
             $this->logger->warning($e);
 
             $device   = clone $defaultDevice;
@@ -187,7 +187,7 @@ final class Detector implements DetectorInterface
 
             try {
                 $platform = $platformParser->parse($this->normalizer->normalize($request->getPlatformUserAgent()));
-            } catch (NotFoundException | \UnexpectedValueException $e) {
+            } catch (\UnexpectedValueException $e) {
                 $this->logger->warning($e);
                 $platform = clone $defaultPlatform;
             }
@@ -217,7 +217,7 @@ final class Detector implements DetectorInterface
         /* @var \UaResult\Engine\EngineInterface $engine */
         try {
             [$browser, $engine] = $browserParser->parse($browserUa);
-        } catch (NotFoundException | \UnexpectedValueException $e) {
+        } catch (\UnexpectedValueException $e) {
             $this->logger->error($e);
 
             $browser = clone $defaultBrowser;
@@ -227,7 +227,7 @@ final class Detector implements DetectorInterface
         if (null !== $platform && in_array($platform->getName(), ['iOS', 'iPhone OS'], true)) {
             try {
                 $engine = $this->engineParser->load('webkit', $engineUa);
-            } catch (NotFoundException | \UnexpectedValueException $e) {
+            } catch (\UnexpectedValueException $e) {
                 $this->logger->warning($e);
 
                 $engine = clone $defaultEngine;
@@ -240,7 +240,7 @@ final class Detector implements DetectorInterface
 
             try {
                 $engine = $engineParser->parse($engineUa);
-            } catch (NotFoundException | \UnexpectedValueException $e) {
+            } catch (\UnexpectedValueException $e) {
                 $this->logger->error($e);
             }
         }

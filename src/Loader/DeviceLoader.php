@@ -87,7 +87,7 @@ final class DeviceLoader implements DeviceLoaderInterface
         if (null !== $platformKey) {
             try {
                 $platform = $this->platformParser->load($platformKey, $useragent);
-            } catch (NotFoundException | \UnexpectedValueException $e) {
+            } catch (\UnexpectedValueException $e) {
                 $this->logger->warning($e);
             }
         }
