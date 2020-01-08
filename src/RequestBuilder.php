@@ -20,8 +20,8 @@ use UnexpectedValueException;
 final class RequestBuilder implements RequestBuilderInterface
 {
     /**
-     * @param \Psr\Log\LoggerInterface                                                  $logger
-     * @param array|\Psr\Http\Message\MessageInterface|string|\UaRequest\GenericRequest $request
+     * @param \Psr\Log\LoggerInterface                                                        $logger
+     * @param array|mixed|\Psr\Http\Message\MessageInterface|string|\UaRequest\GenericRequest $request
      *
      * @throws \UnexpectedValueException
      *
@@ -56,7 +56,7 @@ final class RequestBuilder implements RequestBuilderInterface
         }
 
         throw new UnexpectedValueException(
-            'the request parameter has to be a string, an array or an instance of \Psr\Http\Message\MessageInterface'
+            'the request parameter has to be a string, an array or an instance of \Psr\Http\Message\MessageInterface or an instance of \UaRequest\GenericRequest'
         );
     }
 }

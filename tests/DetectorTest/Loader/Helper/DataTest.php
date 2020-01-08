@@ -63,7 +63,7 @@ final class DataTest extends TestCase
             ->expects(self::once())
             ->method('valid')
             ->willReturnCallback(
-                static function () {
+                static function (): bool {
                     static $i = 0;
                     $return = false;
                     if (0 === $i) {
@@ -124,7 +124,7 @@ final class DataTest extends TestCase
             ->expects(self::exactly(3))
             ->method('valid')
             ->willReturnCallback(
-                static function () {
+                static function (): bool {
                     static $i = 0;
                     $return = false;
                     if (1 >= $i) {
