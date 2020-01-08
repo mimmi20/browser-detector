@@ -24,7 +24,7 @@ final class Filter implements FilterInterface
         $directory = new \RecursiveDirectoryIterator($path);
         $filter    = new \RecursiveCallbackFilterIterator(
             $directory,
-            static function (\SplFileInfo $current, $key, \RecursiveIterator $iterator) use ($extension) {
+            static function (\SplFileInfo $current, $key, \RecursiveIterator $iterator) use ($extension): bool {
                 // Allow recursion
                 if ($iterator->hasChildren()) {
                     return true;

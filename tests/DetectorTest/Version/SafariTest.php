@@ -267,7 +267,7 @@ final class SafariTest extends TestCase
             ->expects(self::exactly(2))
             ->method('set')
             ->withConsecutive(['4.0'], ['1.0'])
-            ->willReturnCallback(static function () use ($mappedVersionOne, $exception) {
+            ->willReturnCallback(static function () use ($mappedVersionOne, $exception): Version {
                 static $i = 0;
 
                 ++$i;
