@@ -761,6 +761,44 @@
   },
   {
     "headers": {
+      "user-agent": "LG-NX550"
+    },
+    "device": {
+      "deviceName": "NX550",
+      "marketingName": "NX550",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Java; U; en-in; lg-s310) UCBrowser8.3.0.154/69/444/UCWEB Mobile UNTRUSTED/1.0"
     },
     "device": {
@@ -3569,44 +3607,6 @@
       "name": "Trident",
       "version": null,
       "manufacturer": "microsoft"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "LG-NX550"
-    },
-    "device": {
-      "deviceName": "NX550",
-      "marketingName": "NX550",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "display": {
-        "width": 220,
-        "height": 176,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
     }
   }
 ]

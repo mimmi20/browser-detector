@@ -2392,5 +2392,43 @@
       "version": "537.36.0",
       "manufacturer": "apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.3; KFAPWA) AppleWebKit/537.36 (KHTML, like Gecko) Silk/71.2.4 like Chrome/71.0.3578.98 Safari/537.36 comdirect/1.0 (appVersion:19.11.0;deviceType:mobile)"
+    },
+    "device": {
+      "deviceName": "KFAPWA",
+      "marketingName": "Kindle Fire HDX 8.9 (3rd Gen.)",
+      "manufacturer": "amazon",
+      "brand": "amazon",
+      "display": {
+        "width": 2560,
+        "height": 1600,
+        "touch": true,
+        "size": 8.9
+      },
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "Silk",
+      "modus": null,
+      "version": "71.2.4",
+      "manufacturer": "amazon",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.3",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "71.0.3578.98",
+      "manufacturer": "google"
+    }
   }
 ]

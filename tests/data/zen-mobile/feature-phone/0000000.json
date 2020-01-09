@@ -39,6 +39,44 @@
   },
   {
     "headers": {
+      "user-agent": "ZEN M9 Mini/MAUI WAP Browser"
+    },
+    "device": {
+      "deviceName": "M9 Mini",
+      "marketingName": "M9 Mini",
+      "manufacturer": "zen-mobile",
+      "brand": "zen-mobile",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.4
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "MAUI Wap Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "wap-browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "ZEN M8/1.0; Profile/MIDP-2.0 Configuration/CLDC-1.1"
     },
     "device": {
@@ -241,44 +279,6 @@
         "height": 320,
         "touch": false,
         "size": 2.8
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "MAUI Wap Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "wap-browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "ZEN M9 Mini/MAUI WAP Browser"
-    },
-    "device": {
-      "deviceName": "M9 Mini",
-      "marketingName": "M9 Mini",
-      "manufacturer": "zen-mobile",
-      "brand": "zen-mobile",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": 2.4
       },
       "type": "feature-phone"
     },

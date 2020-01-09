@@ -39,7 +39,7 @@
   },
   {
     "headers": {
-      "user-agent": "Rope'n'Fly 2.5 (iPad; iPhone OS 8.1.2; en_US)"
+      "user-agent": "Rope\u0027n\u0027Fly 2.5 (iPad; iPhone OS 8.1.2; en_US)"
     },
     "device": {
       "deviceName": "general Fly device",
@@ -115,7 +115,7 @@
   },
   {
     "headers": {
-      "user-agent": "Rope'n'Fly 2.5 (iPad; iPhone OS 8.1.3; en_US)"
+      "user-agent": "Rope\u0027n\u0027Fly 2.5 (iPad; iPhone OS 8.1.3; en_US)"
     },
     "device": {
       "deviceName": "general Fly device",
@@ -343,7 +343,7 @@
   },
   {
     "headers": {
-      "user-agent": "Rope'n'Fly 2.5 (iPhone; iPhone OS 8.2; en_US)"
+      "user-agent": "Rope\u0027n\u0027Fly 2.5 (iPhone; iPhone OS 8.2; en_US)"
     },
     "device": {
       "deviceName": "general Fly device",
@@ -609,7 +609,7 @@
   },
   {
     "headers": {
-      "user-agent": "Rope'n'Fly 2.5 (iPad; iPhone OS 5.1.1; en_US)"
+      "user-agent": "Rope\u0027n\u0027Fly 2.5 (iPad; iPhone OS 5.1.1; en_US)"
     },
     "device": {
       "deviceName": "general Fly device",
@@ -723,7 +723,7 @@
   },
   {
     "headers": {
-      "user-agent": "Rope'n'Fly 2.5 (iPod touch; iPhone OS 6.1.6; en_US)"
+      "user-agent": "Rope\u0027n\u0027Fly 2.5 (iPod touch; iPhone OS 6.1.6; en_US)"
     },
     "device": {
       "deviceName": "general Fly device",
@@ -1022,6 +1022,44 @@
     "engine": {
       "name": "Blink",
       "version": "66.0.3359.158",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1; iQ1570) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.96 Mobile Safari/537.36 comdirect/1.0 (appVersion:19.11.0;deviceType:mobile)"
+    },
+    "device": {
+      "deviceName": "general Fly device",
+      "marketingName": "general Fly device",
+      "manufacturer": "fly",
+      "brand": "fly",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "78.0.3904.96",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "78.0.3904.96",
       "manufacturer": "google"
     }
   }

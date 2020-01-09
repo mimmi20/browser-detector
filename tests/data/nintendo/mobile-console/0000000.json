@@ -454,5 +454,43 @@
       "version": "536.30.0",
       "manufacturer": "apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Nintendo Switch; WifiWebAuthApplet) AppleWebKit/606.4 (KHTML, like Gecko) NF/6.0.1.13.17 NintendoBrowser/5.1.0.19907"
+    },
+    "device": {
+      "deviceName": "Switch",
+      "marketingName": "Switch",
+      "manufacturer": "nintendo",
+      "brand": "nintendo",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 6.2
+      },
+      "type": "mobile-console"
+    },
+    "browser": {
+      "name": "NintendoBrowser",
+      "modus": null,
+      "version": "5.1.0.19907",
+      "manufacturer": "nintendo",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Nintendo Switch OS",
+      "marketingName": "Nintendo Switch OS",
+      "version": null,
+      "manufacturer": "nintendo",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "606.4.0",
+      "manufacturer": "apple"
+    }
   }
 ]
