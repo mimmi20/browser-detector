@@ -2,10 +2,12 @@
   "rules": {
     "/(poco(phone)?)? f1/i": "xiaomi pocophone f1",
     "/mdt2/i": "xiaomi mdt2",
+    "/mi a3/i": "xiaomi mi a3",
     "/mi a2 lite/i": "xiaomi mi a2 lite",
     "/mi a2/i": "xiaomi mi a2",
     "/mi a1/i": "xiaomi mi a1",
     "/mibox3/i": "xiaomi mi box 3",
+    "/redmi k20 pro/i": "xiaomi redmi k20 pro",
     "/redmi[ _]7/i": "xiaomi redmi 7",
     "/redmi[ _]6a/i": "xiaomi redmi 6a",
     "/redmi[ _]6/i": "xiaomi redmi 6",
@@ -35,11 +37,13 @@
     "/redmi[ _]note[ _]2/i": "xiaomi redmi note 2",
     "/redmi s2/i": "xiaomi redmi s2",
     "/redmi pro/i": "xiaomi redmi pro",
+    "/redmi go/i": "xiaomi redmi go",
     "/mi note 3/i": "xiaomi mi note 3",
     "/mi note 2/i": "xiaomi mi note 2",
     "/mi note pro/i": "xiaomi mi note pro",
     "/mi note lte/i": "xiaomi mi note lte",
     "/mi note/i": "xiaomi mi note",
+    "/mi cc 9/i": "xiaomi mi cc 9",
     "/mi max 3/i": "xiaomi mi max 3",
     "/mi mix 3|mix 3/i": "xiaomi mi mix 3",
     "/mi mix 2s|mix 2s/i": "xiaomi mi mix 2s",
@@ -92,6 +96,7 @@
     "/hm note 1ltew/i": "xiaomi hm note 1ltew",
     "/hm note 1ltetd/i": "xiaomi hm note 1lte td",
     "/hm note 1lte/i": "xiaomi hm note 1lte",
+    "/hm note 1|2014022/i": "xiaomi hm note 1",
     "/2015052/i": "xiaomi 2015052",
     "/2014818/i": "xiaomi hongmi 2 3g",
     "/2014817/i": "xiaomi 2014817",
@@ -107,7 +112,8 @@
     "/hm[_ ]?1sw/i": "xiaomi hm 1sw",
     "/hm[_ ]?1sc/i": "xiaomi hm 1sc",
     "/hm[_ ]?1s/i": "xiaomi hm 1s",
-    "/hm[_ ]?1/i": "xiaomi hm 1"
+    "/hm[_ ]?1/i": "xiaomi hm 1",
+    "/xiaomi2/i": "xiaomi xiaomi2"
   },
   "generic": "general xiaomi device"
 }
