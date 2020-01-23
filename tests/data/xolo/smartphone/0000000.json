@@ -118,8 +118,8 @@
       "user-agent": "UCWEB/2.0 (Linux; U; Adr 4.2.2; en-US; Q1000 Opus) U2/1.0.0 UCBrowser/9.0.1.275 U2/1.0.0 Mobile"
     },
     "device": {
-      "deviceName": "Q1000 Opus",
-      "marketingName": "Q1000 Opus",
+      "deviceName": "Q1000",
+      "marketingName": "Opus",
       "manufacturer": "xolo",
       "brand": "xolo",
       "display": {
@@ -688,15 +688,15 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 4.1.1; XOLO A1000 Build/JRO03C) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166 Mobile Safari/535.19"
     },
     "device": {
-      "deviceName": "general XOLO device",
-      "marketingName": "general XOLO device",
+      "deviceName": "A1000",
+      "marketingName": "A1000",
       "manufacturer": "xolo",
       "brand": "xolo",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1280,
+        "height": 720,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "type": "smartphone"
     },
@@ -726,15 +726,15 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 4.0.4; XOLO_A800 Build/IMM76D) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166 Mobile Safari/535.19"
     },
     "device": {
-      "deviceName": "general XOLO device",
-      "marketingName": "general XOLO device",
+      "deviceName": "A800",
+      "marketingName": "A800",
       "manufacturer": "xolo",
       "brand": "xolo",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 960,
+        "height": 540,
         "touch": true,
-        "size": null
+        "size": 4.5
       },
       "type": "smartphone"
     },
@@ -764,15 +764,15 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 4.0.4; XOLO B700 Build/IMM76D) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166 Mobile Safari/535.19"
     },
     "device": {
-      "deviceName": "general XOLO device",
-      "marketingName": "general XOLO device",
+      "deviceName": "B700",
+      "marketingName": "B700",
       "manufacturer": "xolo",
       "brand": "xolo",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 960,
+        "height": 540,
         "touch": true,
-        "size": null
+        "size": 4.3
       },
       "type": "smartphone"
     },
@@ -802,15 +802,15 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 4.1.1; XOLO Play Build/JRO03C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.59 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "general XOLO device",
-      "marketingName": "general XOLO device",
+      "deviceName": "Play",
+      "marketingName": "Play",
       "manufacturer": "xolo",
       "brand": "xolo",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1280,
+        "height": 720,
         "touch": true,
-        "size": null
+        "size": 4.7
       },
       "type": "smartphone"
     },
@@ -913,44 +913,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.1.2; en-us; Xolo QC800 Build/JZO54K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30"
-    },
-    "device": {
-      "deviceName": "general XOLO device",
-      "marketingName": "general XOLO device",
-      "manufacturer": "xolo",
-      "brand": "xolo",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Android Webkit",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.1.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "534.30.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 4.0.4; XOLO_X1000 Build/IMM76D) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166 Mobile Safari/535.19"
     },
     "device": {
@@ -992,15 +954,15 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 4.0.4; Xolo_X500 Build/IMM76D) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166 Mobile Safari/535.19"
     },
     "device": {
-      "deviceName": "general XOLO device",
-      "marketingName": "general XOLO device",
+      "deviceName": "X500",
+      "marketingName": "X500",
       "manufacturer": "xolo",
       "brand": "xolo",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 480,
+        "height": 320,
         "touch": true,
-        "size": null
+        "size": 3.5
       },
       "type": "smartphone"
     },
@@ -1030,15 +992,15 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 4.0.4; Xolo_X900 Build/AZ510_ICS_02.19I) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166 Mobile Safari/535.19"
     },
     "device": {
-      "deviceName": "general XOLO device",
-      "marketingName": "general XOLO device",
+      "deviceName": "X900",
+      "marketingName": "X900",
       "manufacturer": "xolo",
       "brand": "xolo",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1024,
+        "height": 600,
         "touch": true,
-        "size": null
+        "size": 4.03
       },
       "type": "smartphone"
     },
@@ -1068,15 +1030,15 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 4.2.1; Q1000 Build/JOP40D) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166 Mobile Safari/535.19"
     },
     "device": {
-      "deviceName": "general XOLO device",
-      "marketingName": "general XOLO device",
+      "deviceName": "Q1000",
+      "marketingName": "Q1000",
       "manufacturer": "xolo",
       "brand": "xolo",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1280,
+        "height": 720,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "type": "smartphone"
     },
@@ -1106,15 +1068,15 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 4.2.1; Q1000S Build/JOP40D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.136 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "general XOLO device",
-      "marketingName": "general XOLO device",
+      "deviceName": "Q1000s",
+      "marketingName": "Q1000s",
       "manufacturer": "xolo",
       "brand": "xolo",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1280,
+        "height": 720,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "type": "smartphone"
     },
@@ -1296,8 +1258,8 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 4.2.2; en-us; Q1000 Opus Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
     },
     "device": {
-      "deviceName": "Q1000 Opus",
-      "marketingName": "Q1000 Opus",
+      "deviceName": "Q1000",
+      "marketingName": "Opus",
       "manufacturer": "xolo",
       "brand": "xolo",
       "display": {
@@ -1334,8 +1296,8 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 4.2.2; en-us; Q1000 Opus Build/JDQ39) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 UCBrowser/9.8.0.435 U3/0.8.0 Mobile Safari/533.1"
     },
     "device": {
-      "deviceName": "Q1000 Opus",
-      "marketingName": "Q1000 Opus",
+      "deviceName": "Q1000",
+      "marketingName": "Opus",
       "manufacturer": "xolo",
       "brand": "xolo",
       "display": {
@@ -1600,8 +1562,8 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 4.2.2; en-US; Q1000 Opus Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/10.2.0.535 U3/0.8.0 Mobile Safari/534.30"
     },
     "device": {
-      "deviceName": "Q1000 Opus",
-      "marketingName": "Q1000 Opus",
+      "deviceName": "Q1000",
+      "marketingName": "Opus",
       "manufacturer": "xolo",
       "brand": "xolo",
       "display": {
@@ -1790,15 +1752,15 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 4.2.1; en-us; Q1000 Build/JOP40D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 [FB_IAB/FB4A;FBAV/29.0.0.23.13;]"
     },
     "device": {
-      "deviceName": "general XOLO device",
-      "marketingName": "general XOLO device",
+      "deviceName": "Q1000",
+      "marketingName": "Q1000",
       "manufacturer": "xolo",
       "brand": "xolo",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1280,
+        "height": 720,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "type": "smartphone"
     },
@@ -1904,15 +1866,15 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 4.2.1; en-us; Q1000S Build/JOP40D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 [FB_IAB/FB4A;FBAV/29.0.0.23.13;]"
     },
     "device": {
-      "deviceName": "general XOLO device",
-      "marketingName": "general XOLO device",
+      "deviceName": "Q1000s",
+      "marketingName": "Q1000s",
       "manufacturer": "xolo",
       "brand": "xolo",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1280,
+        "height": 720,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "type": "smartphone"
     },
@@ -2132,15 +2094,15 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; 8X-1020 Build/XOLO 8X-1020) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "general XOLO device",
-      "marketingName": "general XOLO device",
+      "deviceName": "8X-1020",
+      "marketingName": "8X-1020",
       "manufacturer": "xolo",
       "brand": "xolo",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1280,
+        "height": 720,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "type": "smartphone"
     },
@@ -2246,15 +2208,15 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 4.1.1; en-us; XOLO A1000 Build/JRO03C) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
     },
     "device": {
-      "deviceName": "general XOLO device",
-      "marketingName": "general XOLO device",
+      "deviceName": "A1000",
+      "marketingName": "A1000",
       "manufacturer": "xolo",
       "brand": "xolo",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1280,
+        "height": 720,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "type": "smartphone"
     },
@@ -2474,8 +2436,8 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; Q1000 Opus Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/28.0.0.20.16;]"
     },
     "device": {
-      "deviceName": "Q1000 Opus",
-      "marketingName": "Q1000 Opus",
+      "deviceName": "Q1000",
+      "marketingName": "Opus",
       "manufacturer": "xolo",
       "brand": "xolo",
       "display": {
@@ -2512,8 +2474,8 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 4.4.2; en-US; Q1000 Opus Build/KOT49H) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/10.2.0.535 U3/0.8.0 Mobile Safari/534.30"
     },
     "device": {
-      "deviceName": "Q1000 Opus",
-      "marketingName": "Q1000 Opus",
+      "deviceName": "Q1000",
+      "marketingName": "Opus",
       "manufacturer": "xolo",
       "brand": "xolo",
       "display": {
@@ -2550,15 +2512,15 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 4.2.1; en-us; Q1000 Build/JOP40D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 [FB_IAB/FB4A;FBAV/28.0.0.20.16;]"
     },
     "device": {
-      "deviceName": "general XOLO device",
-      "marketingName": "general XOLO device",
+      "deviceName": "Q1000",
+      "marketingName": "Q1000",
       "manufacturer": "xolo",
       "brand": "xolo",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1280,
+        "height": 720,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "type": "smartphone"
     },
@@ -2702,15 +2664,15 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; Opus 3 Build/XOLO Opus 3) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "general XOLO device",
-      "marketingName": "general XOLO device",
+      "deviceName": "Opus 3",
+      "marketingName": "Opus 3",
       "manufacturer": "xolo",
       "brand": "xolo",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1280,
+        "height": 720,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "type": "smartphone"
     },
@@ -2740,15 +2702,15 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 4.2.2; en-us; Q1010 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
     },
     "device": {
-      "deviceName": "general XOLO device",
-      "marketingName": "general XOLO device",
+      "deviceName": "Q1010",
+      "marketingName": "Q1010",
       "manufacturer": "xolo",
       "brand": "xolo",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1280,
+        "height": 720,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "type": "smartphone"
     },
@@ -2778,15 +2740,15 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 4.2.1; en-US; Q1000 Build/JOP40D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/10.2.0.535 U3/0.8.0 Mobile Safari/534.30"
     },
     "device": {
-      "deviceName": "general XOLO device",
-      "marketingName": "general XOLO device",
+      "deviceName": "Q1000",
+      "marketingName": "Q1000",
       "manufacturer": "xolo",
       "brand": "xolo",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1280,
+        "height": 720,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "type": "smartphone"
     },
@@ -2892,15 +2854,15 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 4.3; en-us; XOLO Q1000_Opus2/XOLO_Q1000_Opus2_S011_21072014; 540*960; CTC/2.0) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
     },
     "device": {
-      "deviceName": "general XOLO device",
-      "marketingName": "general XOLO device",
+      "deviceName": "Q1000",
+      "marketingName": "Opus 2",
       "manufacturer": "xolo",
       "brand": "xolo",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 960,
+        "height": 540,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "type": "smartphone"
     },
@@ -3158,8 +3120,8 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; Q1000 Opus HD Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "Q1000 Opus",
-      "marketingName": "Q1000 Opus",
+      "deviceName": "Q1000",
+      "marketingName": "Opus",
       "manufacturer": "xolo",
       "brand": "xolo",
       "display": {
@@ -3234,15 +3196,15 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 4.2.1; en-us; Q1000 Build/JOP40D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
     },
     "device": {
-      "deviceName": "general XOLO device",
-      "marketingName": "general XOLO device",
+      "deviceName": "Q1000",
+      "marketingName": "Q1000",
       "manufacturer": "xolo",
       "brand": "xolo",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1280,
+        "height": 720,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "type": "smartphone"
     },
@@ -3614,15 +3576,15 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 4.4.2; en-US; 8X-1020 Build/XOLO8X-1020) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/10.2.0.535 U3/0.8.0 Mobile Safari/534.30"
     },
     "device": {
-      "deviceName": "general XOLO device",
-      "marketingName": "general XOLO device",
+      "deviceName": "8X-1020",
+      "marketingName": "8X-1020",
       "manufacturer": "xolo",
       "brand": "xolo",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1280,
+        "height": 720,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "type": "smartphone"
     },
@@ -3728,8 +3690,8 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; Q1000 Opus Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/29.0.0.23.13;]"
     },
     "device": {
-      "deviceName": "Q1000 Opus",
-      "marketingName": "Q1000 Opus",
+      "deviceName": "Q1000",
+      "marketingName": "Opus",
       "manufacturer": "xolo",
       "brand": "xolo",
       "display": {
@@ -3796,6 +3758,44 @@
     "engine": {
       "name": "U3",
       "version": "0.8.0",
+      "manufacturer": "ucweb"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "UCWEB/2.0 (MIDP-2.0; U; Adr 4.2.2; en-US; A500s) U2/1.0.0 UCBrowser/9.9.0.543 U2/1.0.0 Mobile"
+    },
+    "device": {
+      "deviceName": "A500s",
+      "marketingName": "A500s",
+      "manufacturer": "xolo",
+      "brand": "xolo",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 4
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "9.9.0.543",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "U2",
+      "version": "1.0.0",
       "manufacturer": "ucweb"
     }
   }
