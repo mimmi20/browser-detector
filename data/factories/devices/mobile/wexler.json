@@ -5,8 +5,9 @@
     "/tab-700/i": "wexler tab 700",
     "/tab 10q/i": "wexler tab 10q",
     "/tab-7t/i": "wexler tab 7t",
-    "/tab7id/i": "wexler tab7id",
-    "/tab 7i 3g/i": "wexler tab 7i 3g",
+    "/tab[ _]?7id/i": "wexler tab7id",
+    "/tab[ _]?7i[ _]?3g/i": "wexler tab 7i 3g",
+    "/tab[ _]?7b[ _]?3g/i": "wexler tab 7b 3g",
     "/zen 5/i": "wexler zen 5",
     "/zen 4\\.7/i": "wexler zen 4.7",
     "/zen 4\\.5/i": "wexler zen 4.5"
