@@ -51,9 +51,7 @@ jobs:
     - stage: test with coverage
       os: linux
       php: 7.1
-      env:
-        - COVERAGE=yes
-        - COMPOSER_FLAGS=""
+      env: COMPOSER_FLAGS=""
       before_install:
         - stty cols 130
         - echo 'opcache.enable=1' >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
@@ -70,48 +68,67 @@ jobs:
       os: linux
       php: 7.1
       env: COMPOSER_FLAGS=""
-      script:
-        - composer validate
-        - composer normalize --dry-run
+      install: skip
+      script: composer validate
+
+    - stage: composer validate
+      os: linux
+      php: 7.1
+      env: COMPOSER_FLAGS=""
+      script: composer normalize --dry-run
+
+    - stage: composer validate
+      os: linux
+      php: 7.1
+      env: COMPOSER_FLAGS=""
+      script: composer outdated --direct --strict
+
+    - stage: composer validate
+      os: linux
+      php: 7.2
+      env: COMPOSER_FLAGS=""
+      script: composer outdated --direct --strict
+
+    - stage: composer validate
+      os: linux
+      php: 7.3
+      env: COMPOSER_FLAGS=""
+      script: composer outdated --direct --strict
+
+    - stage: composer validate
+      os: linux
+      php: 7.4
+      env: COMPOSER_FLAGS=""
+      script: composer outdated --direct --strict
 
     - stage: static code analysis
       os: linux
       php: 7.1
-      env:
-        - TEST=phpcs
-        - COMPOSER_FLAGS=""
+      env: COMPOSER_FLAGS=""
       script: vendor/bin/phpcs --colors
 
     - stage: static code analysis
       os: linux
       php: 7.1
-      env:
-        - TEST=php-cs-fixer
-        - COMPOSER_FLAGS=""
+      env: COMPOSER_FLAGS=""
       script: vendor/bin/php-cs-fixer fix --dry-run -vv
 
     - stage: static code analysis
       os: linux
       php: 7.1
-      env:
-        - TEST=phpstan
-        - COMPOSER_FLAGS=""
+      env: COMPOSER_FLAGS=""
       script: vendor/bin/phpstan analyse -c phpstan.neon --memory-limit=768M --no-progress
 
     - stage: integration tests
       os: linux
       php: 7.1
-      env:
-        - TEST="phpunit - integration"
-        - COMPOSER_FLAGS=""
+      env: COMPOSER_FLAGS=""
       script: php -n vendor/bin/phpunit -c tests/phpunit-integration.xml --no-coverage --colors --columns 121 --verbose
 
     - stage: infection
       os: linux
       php: 7.1
-      env:
-        - COVERAGE=yes
-        - COMPOSER_FLAGS=""
+      env: COMPOSER_FLAGS=""
       before_install:
         - stty cols 130
         - echo 'opcache.enable=1' >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
