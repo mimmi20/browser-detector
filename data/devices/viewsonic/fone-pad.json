@@ -1,4 +1,18 @@
 {
+  "viewsonic viewpad 100n pro": {
+    "deviceName": "ViewPad 100N Pro",
+    "marketingName": "ViewPad 100N Pro",
+    "manufacturer": "viewsonic",
+    "brand": "viewsonic",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": 10.1
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
   "viewsonic viewpad 7": {
     "deviceName": "ViewPad 7",
     "marketingName": "ViewPad 7",
@@ -37,6 +51,34 @@
       "height": 600,
       "touch": true,
       "size": 7
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "viewsonic viewpad 97a": {
+    "deviceName": "ViewPad 97A",
+    "marketingName": "ViewPad 97A",
+    "manufacturer": "viewsonic",
+    "brand": "viewsonic",
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "size": 9.7
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "viewsonic viewpad 97a pro": {
+    "deviceName": "ViewPad 97A Pro",
+    "marketingName": "ViewPad 97A Pro",
+    "manufacturer": "viewsonic",
+    "brand": "viewsonic",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "size": null
     },
     "type": "fone-pad",
     "platform": "android"
