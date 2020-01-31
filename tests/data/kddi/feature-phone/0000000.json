@@ -2582,5 +2582,81 @@
       "version": null,
       "manufacturer": "unknown"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "KDDI-CA34 UP.Browser/6.2.0.10.2.2(GUI)MMP/2.0 (compatible; KDDI-Googlebot-Mobile/2.1; http://www.google.com/bot.html)"
+    },
+    "device": {
+      "deviceName": "general KDDI device",
+      "marketingName": "general KDDI device",
+      "manufacturer": "kddi",
+      "brand": "kddi",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Google Bot Mobile",
+      "modus": null,
+      "version": "2.1.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "bot"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "KDDI-Googlebot-Mobile"
+    },
+    "device": {
+      "deviceName": "general KDDI device",
+      "marketingName": "general KDDI device",
+      "manufacturer": "kddi",
+      "brand": "kddi",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Google Bot Mobile",
+      "modus": null,
+      "version": null,
+      "manufacturer": "google",
+      "bits": null,
+      "type": "bot"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
   }
 ]

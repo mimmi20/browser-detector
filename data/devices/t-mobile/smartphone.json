@@ -47,10 +47,10 @@
     "manufacturer": "htc",
     "brand": "t-mobile",
     "display": {
-      "width": 480,
-      "height": 320,
+      "width": 800,
+      "height": 480,
       "touch": true,
-      "size": null
+      "size": 3.7
     },
     "type": "smartphone",
     "platform": "android"
@@ -83,7 +83,21 @@
     "type": "smartphone",
     "platform": null
   },
-  "t-mobile mytouch4g": {
+  "t-mobile mytouch": {
+    "deviceName": "myTouch",
+    "marketingName": "myTouch",
+    "manufacturer": "t-mobile",
+    "brand": "t-mobile",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 3.8
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "t-mobile mytouch 4g": {
     "deviceName": "Panache",
     "marketingName": "myTouch",
     "manufacturer": "htc",
@@ -92,7 +106,7 @@
       "width": 800,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 3.8
     },
     "type": "smartphone",
     "platform": "android"
@@ -163,6 +177,20 @@
       "height": 720,
       "touch": true,
       "size": 5.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "t-mobile rhodium": {
+    "deviceName": "Rhodium",
+    "marketingName": "Rhodium",
+    "manufacturer": "htc",
+    "brand": "t-mobile",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 3.6
     },
     "type": "smartphone",
     "platform": "android"
