@@ -27,6 +27,20 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "telenor smart": {
+    "deviceName": "Smart",
+    "marketingName": "Smart",
+    "manufacturer": "telenor",
+    "brand": "telenor",
+    "display": {
+      "width": 480,
+      "height": 320,
+      "touch": true,
+      "size": 3.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "telenor smart 4g": {
     "deviceName": "Smart",
     "marketingName": "Smart",
@@ -37,6 +51,20 @@
       "height": null,
       "touch": true,
       "size": null
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "telenor smart plus": {
+    "deviceName": "Smart Plus",
+    "marketingName": "Smart Plus",
+    "manufacturer": "telenor",
+    "brand": "telenor",
+    "display": {
+      "width": 960,
+      "height": 540,
+      "touch": true,
+      "size": 5
     },
     "type": "smartphone",
     "platform": "android"
