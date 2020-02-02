@@ -1,9 +1,11 @@
 {
   "rules": {
     "/onetouch/i": "telenor onetouch",
-    "/smart[ _]pro/i": "telenor smart pro",
-    "/smart[ _]4g/i": "telenor smart 4g",
-    "/touch[ _]plus/i": "telenor touch plus"
+    "/smart[ _]?plus/i": "telenor smart plus",
+    "/smart[ _]?pro/i": "telenor smart pro",
+    "/smart[ _]?4g/i": "telenor smart 4g",
+    "/smart/i": "telenor smart",
+    "/touch[ _]?plus/i": "telenor touch plus"
   },
   "generic": "general telenor device"
 }

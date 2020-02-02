@@ -1,8 +1,14 @@
 {
   "rules": {
+    "/xtab-?100 ?dci-?3g/i": "wayte-q xtab 100 dci 3g",
+    "/xtab-?100 ?qcr/i": "wayte-q xtab 100 qcr",
+    "/xtab-?9/i": "wayte-q xtab 9",
+    "/xtab 8q gps/i": "wayte-q xtab 8q gps",
     "/xtab-7x_quad/i": "wayte-q xtab-7x quad",
-    "/xtab-?79qci/i": "wayte-q xtab-79qci",
-    "/xtab-?70dc/i": "wayte-q xtab 70dc"
+    "/xtab-?700 ?qci/i": "wayte-q xtab 700 qci",
+    "/xtab-?700 ?dc/i": "wayte-q xtab 700 dc",
+    "/xtab-?79 ?qci/i": "wayte-q xtab-79qci",
+    "/xtab-?70 ?dc/i": "wayte-q xtab 70dc"
   },
   "generic": "general wayte-q device"
 }
