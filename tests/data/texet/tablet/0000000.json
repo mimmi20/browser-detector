@@ -81,7 +81,7 @@
     },
     "device": {
       "deviceName": "TM-7066",
-      "marketingName": "X-pad LITE 7.1",
+      "marketingName": "X-Pad Lite 7.1",
       "manufacturer": "texet",
       "brand": "texet",
       "display": {
@@ -153,44 +153,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.2.2; ru-ru; X-pad SHINE 8.1 3G (revision 3) Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
-    },
-    "device": {
-      "deviceName": "general TeXet device",
-      "marketingName": "general TeXet device",
-      "manufacturer": "texet",
-      "brand": "texet",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "tablet"
-    },
-    "browser": {
-      "name": "Android Webkit",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.2.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "534.30.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; U; Android 4.1.2; de-de; TEXET Build/JZO54K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
     },
     "device": {
@@ -232,15 +194,15 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 2.1-update1; ru-ru; TM-7011 Build/ECLAIR) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 M"
     },
     "device": {
-      "deviceName": "general TeXet device",
-      "marketingName": "general TeXet device",
+      "deviceName": "TM-7011",
+      "marketingName": "TM-7011",
       "manufacturer": "texet",
       "brand": "texet",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 800,
+        "height": 480,
         "touch": true,
-        "size": null
+        "size": 7
       },
       "type": "tablet"
     },
@@ -270,15 +232,15 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 4.0.4; ru-ru; TM-7016 Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30 MYI/1.10"
     },
     "device": {
-      "deviceName": "general TeXet device",
-      "marketingName": "general TeXet device",
+      "deviceName": "TM-7016",
+      "marketingName": "TM-7016",
       "manufacturer": "texet",
       "brand": "texet",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 800,
+        "height": 480,
         "touch": true,
-        "size": null
+        "size": 7
       },
       "type": "tablet"
     },
@@ -422,15 +384,15 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 4.0.3; TM-7025 Build/IML74K) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166 Safari/535.19"
     },
     "device": {
-      "deviceName": "general TeXet device",
-      "marketingName": "general TeXet device",
+      "deviceName": "TM-7025",
+      "marketingName": "TM-7025",
       "manufacturer": "texet",
       "brand": "texet",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 800,
+        "height": 480,
         "touch": true,
-        "size": null
+        "size": 7
       },
       "type": "tablet"
     },
@@ -490,44 +452,6 @@
     "engine": {
       "name": "WebKit",
       "version": "535.19.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.0.3; ru-ru; TM-7038W Build/IML74K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30"
-    },
-    "device": {
-      "deviceName": "general TeXet device",
-      "marketingName": "general TeXet device",
-      "manufacturer": "texet",
-      "brand": "texet",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "tablet"
-    },
-    "browser": {
-      "name": "Android Webkit",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.0.3",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "534.30.0",
       "manufacturer": "apple"
     }
   },
@@ -612,15 +536,15 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 3.1; ru-ru; TM-9725 Build/IML74K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/53"
     },
     "device": {
-      "deviceName": "general TeXet device",
-      "marketingName": "general TeXet device",
+      "deviceName": "TM-9725",
+      "marketingName": "TM-9725",
       "manufacturer": "texet",
       "brand": "texet",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1024,
+        "height": 768,
         "touch": true,
-        "size": null
+        "size": 9.7
       },
       "type": "tablet"
     },
@@ -803,7 +727,7 @@
     },
     "device": {
       "deviceName": "TM-7066",
-      "marketingName": "X-pad LITE 7.1",
+      "marketingName": "X-Pad Lite 7.1",
       "manufacturer": "texet",
       "brand": "texet",
       "display": {
@@ -833,82 +757,6 @@
       "name": "WebKit",
       "version": "534.30.0",
       "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.2.2; ru-ru; NaviPad TM-7878 3G (revision 1) Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30"
-    },
-    "device": {
-      "deviceName": "general TeXet device",
-      "marketingName": "general TeXet device",
-      "manufacturer": "texet",
-      "brand": "texet",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "tablet"
-    },
-    "browser": {
-      "name": "Android Webkit",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.2.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "534.30.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.1.2; NaviPad TM-7045 3G Build/JZO54K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.166 Safari/537.36"
-    },
-    "device": {
-      "deviceName": "general TeXet device",
-      "marketingName": "general TeXet device",
-      "manufacturer": "texet",
-      "brand": "texet",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "tablet"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "33.0.1750.166",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.1.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "33.0.1750.166",
-      "manufacturer": "google"
     }
   },
   {
@@ -3796,6 +3644,158 @@
     "engine": {
       "name": "Blink",
       "version": "62.0.3202.84",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 Linux; Android 5.1; TM-1067 Build/LMY47I; wv AppleWebKit/537.36 KHTML, like Gecko Version/4.0 Chrome/63.0.3239.111 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "TM-1067",
+      "marketingName": "TM-1067",
+      "manufacturer": "texet",
+      "brand": "texet",
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "size": 10.1
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "63.0.3239.111",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "63.0.3239.111",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 Linux; Android 5.1; TM-1067 Build/LMY47I; wv AppleWebKit/537.36 KHTML, like Gecko Version/4.0 Chrome/64.0.3282.137 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "TM-1067",
+      "marketingName": "TM-1067",
+      "manufacturer": "texet",
+      "brand": "texet",
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "size": 10.1
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "64.0.3282.137",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "64.0.3282.137",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 Linux; Android 5.1; TM-1067 Build/LMY47I; wv AppleWebKit/537.36 KHTML, like Gecko Version/4.0 Chrome/64.0.3282.137 Safari/537.36 YandexSearch/7.33/apad YandexSearchBrowser/7.33"
+    },
+    "device": {
+      "deviceName": "TM-1067",
+      "marketingName": "TM-1067",
+      "manufacturer": "texet",
+      "brand": "texet",
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "size": 10.1
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Yandex Search App",
+      "modus": null,
+      "version": "7.33.0",
+      "manufacturer": "yandex",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "64.0.3282.137",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 Linux; Android 5.1; TM-1067 Build/LMY47I; wv AppleWebKit/537.36 KHTML, like Gecko Version/4.0 Chrome/65.0.3325.109 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "TM-1067",
+      "marketingName": "TM-1067",
+      "manufacturer": "texet",
+      "brand": "texet",
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "size": 10.1
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "65.0.3325.109",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "65.0.3325.109",
       "manufacturer": "google"
     }
   }

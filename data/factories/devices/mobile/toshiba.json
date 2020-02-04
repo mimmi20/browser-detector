@@ -2,7 +2,7 @@
   "rules": {
     "/at10pe-a/i": "toshiba at10pe-a",
     "/at10le-a/i": "toshiba at10le-a",
-    "/toshiba[\\/\\-]tg01/i": "toshiba tg01",
+    "/toshiba[\\/\\-]tg01|tsunagi/i": "toshiba tg01",
     "/folio_and_a|toshiba_ac_and_az|folio100/i": "toshiba folio 100",
     "/at830/i": "toshiba at830",
     "/at703/i": "toshiba at703",
@@ -35,7 +35,10 @@
     "/bdx5400kb/i": "toshiba bdx5400kb",
     "/bdx3400kb/i": "toshiba bdx3400kb",
     "/h11t/i": "toshiba h11t",
-    "/910t/i": "toshiba 910t"
+    "/910t/i": "toshiba 910t",
+    "/ts608[_ ]ts30/i": "toshiba ts608 ts30",
+    "/si2157lg32/i": "general toshiba tv",
+    "/si2156lg32/i": "general toshiba tv"
   },
   "generic": "general toshiba device"
 }
