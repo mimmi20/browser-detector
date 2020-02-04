@@ -3611,6 +3611,44 @@
   },
   {
     "headers": {
+      "user-agent": "HTC-DASH 3G"
+    },
+    "device": {
+      "deviceName": "Dash 3G",
+      "marketingName": "Dash 3G",
+      "manufacturer": "htc",
+      "brand": "t-mobile",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "size": 2.4
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": null,
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "HTC_HD_mini"
     },
     "device": {
@@ -3726,44 +3764,6 @@
   {
     "headers": {
       "user-agent": "HTC HD2"
-    },
-    "device": {
-      "deviceName": "T8585",
-      "marketingName": "HD2",
-      "manufacturer": "htc",
-      "brand": "htc",
-      "display": {
-        "width": 800,
-        "height": 480,
-        "touch": true,
-        "size": 4.3
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": "Windows CE",
-      "marketingName": "Windows CE",
-      "version": null,
-      "manufacturer": "microsoft",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "HTC HD2 T8585 / YouTube-3.0"
     },
     "device": {
       "deviceName": "T8585",

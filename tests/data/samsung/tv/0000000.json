@@ -2430,5 +2430,81 @@
       "version": "53.0.2785.143",
       "manufacturer": "google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; NetCast; U) AppleWebKit/537.31 (KHTML, like Gecko) Safari/537.31 SmartTV/6.0 Silk"
+    },
+    "device": {
+      "deviceName": "Smart TV",
+      "marketingName": "Smart TV",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Silk",
+      "modus": null,
+      "version": null,
+      "manufacturer": "amazon",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": null,
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.31.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (SMART-TV; Linux; Tizen 5.0) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/2.2 Chrome/63.0.3239.84 TV Safari/537.36 comdirect/1.0 (appVersion:20.1.1;deviceType:desktop)"
+    },
+    "device": {
+      "deviceName": "Smart TV",
+      "marketingName": "Smart TV",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Samsung Browser",
+      "modus": null,
+      "version": "2.2.0",
+      "manufacturer": "samsung",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Tizen",
+      "marketingName": "Tizen",
+      "version": "5.0.0",
+      "manufacturer": "linux-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "63.0.3239.84",
+      "manufacturer": "google"
+    }
   }
 ]

@@ -74,5 +74,43 @@
       "version": "2.0.0",
       "manufacturer": "baidu"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; ARK_Benefit_M4 Build/ARK_Benefit_M4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.93 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Benefit M4",
+      "marketingName": "Benefit M4",
+      "manufacturer": "ark",
+      "brand": "ark",
+      "display": {
+        "width": 854,
+        "height": 480,
+        "touch": true,
+        "size": 4.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "43.0.2357.93",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "43.0.2357.93",
+      "manufacturer": "google"
+    }
   }
 ]

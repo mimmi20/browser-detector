@@ -1,6 +1,82 @@
 [
   {
     "headers": {
+      "user-agent": "LG-LX570 AU-MIC-LX570/2.0 MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+    },
+    "device": {
+      "deviceName": "general LG device",
+      "marketingName": "general LG device",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Teleca-Obigo",
+      "modus": null,
+      "version": null,
+      "manufacturer": "obigo",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "LG-LX600"
+    },
+    "device": {
+      "deviceName": "general LG device",
+      "marketingName": "general LG device",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "LG-LX610"
     },
     "device": {
@@ -3721,82 +3797,6 @@
       "name": null,
       "version": null,
       "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Bible 4.2.1 (LGE LG-P920 lge_Cosmopolitan;Android 2.2.2;en_GB)"
-    },
-    "device": {
-      "deviceName": "P920",
-      "marketingName": "Optimus 3D",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "display": {
-        "width": 800,
-        "height": 480,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Android Webkit",
-      "modus": null,
-      "version": null,
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "2.2.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "BBC News (AndroidApp; 2.5.2 WW; 60) LG-P936 (Android 4.0.4, SDK 15)"
-    },
-    "device": {
-      "deviceName": "P936",
-      "marketingName": "Optimus True HD LTE",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 4.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Android Webkit",
-      "modus": null,
-      "version": null,
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.0.4",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
     }
   }
 ]

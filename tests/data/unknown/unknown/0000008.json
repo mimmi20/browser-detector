@@ -1,44 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "Commerce Browser Center"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "browser": {
-      "name": "Commerce Browser Center",
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "bot"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/6.0 (compatible)"
     },
     "device": {
@@ -3797,6 +3759,44 @@
       "name": null,
       "version": null,
       "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Firefox/41.0.1 (x86 de); anonymized by Abelssoft 1663170808"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown"
+    },
+    "browser": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "41.0.1",
+      "manufacturer": "mozilla-foundation",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla-foundation"
     }
   }
 ]

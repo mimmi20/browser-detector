@@ -77,82 +77,6 @@
   },
   {
     "headers": {
-      "user-agent": "ALCATEL_3020D/1.0 ObigoInternetBrowser/Q03C"
-    },
-    "device": {
-      "deviceName": "3020D",
-      "marketingName": "3020D",
-      "manufacturer": "tcl",
-      "brand": "alcatel",
-      "display": {
-        "width": 220,
-        "height": 176,
-        "touch": false,
-        "size": 2
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Obigo Q",
-      "modus": null,
-      "version": "3.0.0",
-      "manufacturer": "obigo",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": "Teleca",
-      "version": null,
-      "manufacturer": "obigo"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "ALCATEL_3041D/1.0 ObigoInternetBrowser/Q03C"
-    },
-    "device": {
-      "deviceName": "3041D",
-      "marketingName": "OneTouch Tribe",
-      "manufacturer": "tcl",
-      "brand": "alcatel",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Obigo Q",
-      "modus": null,
-      "version": "3.0.0",
-      "manufacturer": "obigo",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": "Teleca",
-      "version": null,
-      "manufacturer": "obigo"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "TCL-Q550"
     },
     "device": {
@@ -643,6 +567,82 @@
       "name": null,
       "version": null,
       "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "ALCATEL_3020D/1.0 ObigoInternetBrowser/Q03C"
+    },
+    "device": {
+      "deviceName": "3020D",
+      "marketingName": "3020D",
+      "manufacturer": "tcl",
+      "brand": "alcatel",
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": 2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Obigo Q",
+      "modus": null,
+      "version": "3.0.0",
+      "manufacturer": "obigo",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": "Teleca",
+      "version": null,
+      "manufacturer": "obigo"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "ALCATEL_3041D/1.0 ObigoInternetBrowser/Q03C"
+    },
+    "device": {
+      "deviceName": "3041D",
+      "marketingName": "OneTouch Tribe",
+      "manufacturer": "tcl",
+      "brand": "alcatel",
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Obigo Q",
+      "modus": null,
+      "version": "3.0.0",
+      "manufacturer": "obigo",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": "Teleca",
+      "version": null,
+      "manufacturer": "obigo"
     }
   }
 ]

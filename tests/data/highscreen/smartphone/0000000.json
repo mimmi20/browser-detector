@@ -720,5 +720,81 @@
       "version": "40.0.2214.109",
       "manufacturer": "google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; Zera F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Zera F",
+      "marketingName": "Zera F",
+      "manufacturer": "highscreen",
+      "brand": "highscreen",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 4
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "78.0.3904.108",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "78.0.3904.108",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 Linux; Android 7.0; FTE161G Build/NRD90M; wv AppleWebKit/537.36 KHTML, like Gecko Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36 Instagram 89.0.0.21.101 Android 24/7.0; 320dpi; 720x1184; Plus One Japan Limited/FREETEL; FTE161G; ICE2plus;"
+    },
+    "device": {
+      "deviceName": "ICE 2",
+      "marketingName": "ICE 2",
+      "manufacturer": "highscreen",
+      "brand": "highscreen",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 4.7
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "89.0.0.21.101",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "56.0.2924.87",
+      "manufacturer": "google"
+    }
   }
 ]

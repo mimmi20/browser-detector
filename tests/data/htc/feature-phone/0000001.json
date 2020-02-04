@@ -1,6 +1,44 @@
 [
   {
     "headers": {
+      "user-agent": "HTC HD2 T8585 / YouTube-3.0"
+    },
+    "device": {
+      "deviceName": "T8585",
+      "marketingName": "HD2",
+      "manufacturer": "htc",
+      "brand": "htc",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 4.3
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": null,
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "HTC_HD2_T8585 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/7.6.1.82/31/400"
     },
     "device": {
@@ -3744,44 +3782,6 @@
       "name": "Opera",
       "modus": null,
       "version": "9.50.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Windows CE",
-      "marketingName": "Windows CE",
-      "version": null,
-      "manufacturer": "microsoft",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": null,
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; Opera/9.5) Alltel HTC Touch Pro"
-    },
-    "device": {
-      "deviceName": "Touch Pro",
-      "marketingName": "Touch Pro",
-      "manufacturer": "htc",
-      "brand": "htc",
-      "display": {
-        "width": 640,
-        "height": 480,
-        "touch": true,
-        "size": 2.8
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Opera Mobile",
-      "modus": null,
-      "version": "9.5.0",
       "manufacturer": "opera",
       "bits": null,
       "type": "browser"

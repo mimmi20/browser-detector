@@ -1,6 +1,44 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Android 7.0; Tablet; rv:62.0.3) Gecko/62.0.3 Firefox/62.0.3"
+    },
+    "device": {
+      "deviceName": "general Tablet",
+      "marketingName": "general Tablet",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "62.0.3",
+      "manufacturer": "mozilla-foundation",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "62.0.3",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Android 8.0.0; Tablet; rv:62.0.3) Gecko/62.0.3 Firefox/62.0.3"
     },
     "device": {
@@ -3759,44 +3797,6 @@
       "name": "Blink",
       "version": "71.0.3578.99",
       "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Android 5.0.2; Tablet; rv:64.0) Gecko/64.0 Firefox/64.0"
-    },
-    "device": {
-      "deviceName": "general Tablet",
-      "marketingName": "general Tablet",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "tablet"
-    },
-    "browser": {
-      "name": "Firefox",
-      "modus": null,
-      "version": "64.0.0",
-      "manufacturer": "mozilla-foundation",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.0.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": "64.0.0",
-      "manufacturer": "mozilla-foundation"
     }
   }
 ]

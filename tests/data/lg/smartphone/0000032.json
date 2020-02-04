@@ -1,6 +1,82 @@
 [
   {
     "headers": {
+      "user-agent": "LG A7150"
+    },
+    "device": {
+      "deviceName": "general LG device",
+      "marketingName": "general LG device",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "LGE-AD5235/1.0 UP.Browser/4.1.26l"
+    },
+    "device": {
+      "deviceName": "general LG device",
+      "marketingName": "general LG device",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "4.1.26",
+      "manufacturer": "myriad",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "LGE-AD6335/1.0 UP.Browser/6.2.3.2 (GUI) MMP/2.0"
     },
     "device": {
@@ -3721,82 +3797,6 @@
       "name": null,
       "version": null,
       "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Layar/4.0 Android/2.2.1 (LGE LG-E720)"
-    },
-    "device": {
-      "deviceName": "E720",
-      "marketingName": "Optimus Chic",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Android Webkit",
-      "modus": null,
-      "version": null,
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "2.2.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "RhythmDisplayAdSDK-E-Android LG-E739-2.3.6-43074"
-    },
-    "device": {
-      "deviceName": "E739",
-      "marketingName": "myTouch",
-      "manufacturer": "lg",
-      "brand": "t-mobile",
-      "display": {
-        "width": 800,
-        "height": 480,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Android Webkit",
-      "modus": null,
-      "version": null,
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": null,
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
     }
   }
 ]

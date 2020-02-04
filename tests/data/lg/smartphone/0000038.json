@@ -1,6 +1,82 @@
 [
   {
     "headers": {
+      "user-agent": "LGE-VX5300/1.0 UP.Browser/6.2.3.2 (GUI) MMP/2.0"
+    },
+    "device": {
+      "deviceName": "general LG device",
+      "marketingName": "general LG device",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "6.2.3.2",
+      "manufacturer": "myriad",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "LGE-VX5500/1.0 UP.Browser/6.2.3.2 (GUI) MMP/2.0"
+    },
+    "device": {
+      "deviceName": "general LG device",
+      "marketingName": "general LG device",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "6.2.3.2",
+      "manufacturer": "myriad",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "LGE-VX5600/1.0 UP.Browser/6.2.3.2 (GUI) MMP/2.0"
     },
     "device": {
@@ -3720,82 +3796,6 @@
     "engine": {
       "name": "Blink",
       "version": "42.0.2311.154",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 6.0; LG-H635 Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "H635",
-      "marketingName": "G4 Stylus",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "56.0.2924.87",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "6.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "56.0.2924.87",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 6.0; LG-H525n Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.132 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "H525N",
-      "marketingName": "G4c",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "57.0.2987.132",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "6.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "57.0.2987.132",
       "manufacturer": "google"
     }
   }
