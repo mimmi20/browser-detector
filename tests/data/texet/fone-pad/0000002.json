@@ -1525,7 +1525,7 @@
     },
     "device": {
       "deviceName": "TM-7863",
-      "marketingName": "X-pad Air 8 3G",
+      "marketingName": "X-Pad Air 8 3G",
       "manufacturer": "texet",
       "brand": "texet",
       "display": {
@@ -1563,7 +1563,7 @@
     },
     "device": {
       "deviceName": "TM-7068",
-      "marketingName": "X-pad iX 7 3G",
+      "marketingName": "X-Pad iX 7 3G",
       "manufacturer": "texet",
       "brand": "texet",
       "display": {
@@ -1592,6 +1592,158 @@
     "engine": {
       "name": "Blink",
       "version": "68.0.3440.91",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.2.2; ru-ru; X-pad SHINE 8.1 3G (revision 3) Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
+    },
+    "device": {
+      "deviceName": "TM-7868",
+      "marketingName": "X-Pad Shine 8.1 3G",
+      "manufacturer": "texet",
+      "brand": "texet",
+      "display": {
+        "width": 1024,
+        "height": 768,
+        "touch": true,
+        "size": 7.85
+      },
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.0.3; ru-ru; TM-7038W Build/IML74K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30"
+    },
+    "device": {
+      "deviceName": "TM-7038W",
+      "marketingName": "TM-7038W",
+      "manufacturer": "texet",
+      "brand": "texet",
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "size": 7
+      },
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.0.3",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.2.2; ru-ru; NaviPad TM-7878 3G (revision 1) Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30"
+    },
+    "device": {
+      "deviceName": "TM-7878 3G",
+      "marketingName": "NaviPad",
+      "manufacturer": "texet",
+      "brand": "texet",
+      "display": {
+        "width": 1024,
+        "height": 768,
+        "touch": true,
+        "size": 7.85
+      },
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.1.2; NaviPad TM-7045 3G Build/JZO54K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.166 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "TM-7045 3G",
+      "marketingName": "NaviPad",
+      "manufacturer": "texet",
+      "brand": "texet",
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "size": 7
+      },
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "33.0.1750.166",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.1.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "33.0.1750.166",
       "manufacturer": "google"
     }
   }
