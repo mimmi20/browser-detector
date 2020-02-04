@@ -115,6 +115,44 @@
   },
   {
     "headers": {
+      "user-agent": "KWC-M2000/AAN0314 UP.Browser/7.2.7.2.528 (GUI) MMP/2.0"
+    },
+    "device": {
+      "deviceName": "KWC-M2000",
+      "marketingName": "KWC-M2000",
+      "manufacturer": "kyocera",
+      "brand": "kyocera",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.4
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "7.2.7.2.528",
+      "manufacturer": "myriad",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/4.0 (Brew MP 1.0.2; U; en-us; Kyocera; NetFront/4.1/AMB) Sprint E4255"
     },
     "device": {
@@ -381,82 +419,6 @@
       "name": "NetFront",
       "version": null,
       "manufacturer": "access"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "KWC-M2000/AAN0314 UP.Browser/7.2.7.2.528 (GUI) MMP/2.0"
-    },
-    "device": {
-      "deviceName": "KWC-M2000",
-      "marketingName": "KWC-M2000",
-      "manufacturer": "kyocera",
-      "brand": "kyocera",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": 2.4
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Openwave Mobile Browser",
-      "modus": null,
-      "version": "7.2.7.2.528",
-      "manufacturer": "myriad",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "KWC-M2000/ZQ1000 UP.Browser/7.2.7.2.531 (GUI) MMP/2.0"
-    },
-    "device": {
-      "deviceName": "KWC-M2000",
-      "marketingName": "KWC-M2000",
-      "manufacturer": "kyocera",
-      "brand": "kyocera",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": 2.4
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Openwave Mobile Browser",
-      "modus": null,
-      "version": "7.2.7.2.531",
-      "manufacturer": "myriad",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
     }
   }
 ]
