@@ -13,9 +13,9 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "tracer oxygen gs1": {
-    "deviceName": "Oxygen GS1",
-    "marketingName": "Oxygen GS1",
+  "tracer gs1": {
+    "deviceName": "GS1",
+    "marketingName": "Oxygen",
     "manufacturer": "tracer",
     "brand": "tracer",
     "display": {
@@ -23,6 +23,20 @@
       "height": 480,
       "touch": true,
       "size": 5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "tracer gs4": {
+    "deviceName": "GS4",
+    "marketingName": "Oxygen",
+    "manufacturer": "tracer",
+    "brand": "tracer",
+    "display": {
+      "width": 854,
+      "height": 480,
+      "touch": true,
+      "size": 4.5
     },
     "type": "smartphone",
     "platform": "android"
