@@ -1,44 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.2.1; en-us; SHW-M110s Build/FROYO) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
-    },
-    "device": {
-      "deviceName": "SHW-M110S",
-      "marketingName": "Galaxy S (South Korea)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 800,
-        "height": 480,
-        "touch": true,
-        "size": 4
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Android Webkit",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "2.2.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "533.1.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; U; Android 2.1-update1; en-us; SHW-M130L Build/ECLAIR) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Mobile Safari/530.17"
     },
     "device": {
@@ -840,15 +802,15 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 4.2.2; ko-kr; SHW-M570S Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
     },
     "device": {
-      "deviceName": "general Samsung device",
-      "marketingName": "general Samsung device",
+      "deviceName": "SHW-M570S",
+      "marketingName": "Galaxy Core Advance",
       "manufacturer": "samsung",
       "brand": "samsung",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 800,
+        "height": 480,
         "touch": true,
-        "size": null
+        "size": 4.6
       },
       "type": "smartphone"
     },
@@ -1220,15 +1182,15 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 4.2.2; de-de; SM-G3812B Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
     },
     "device": {
-      "deviceName": "general Samsung device",
-      "marketingName": "general Samsung device",
+      "deviceName": "SM-G3812B",
+      "marketingName": "Galaxy S3 Slim",
       "manufacturer": "samsung",
       "brand": "samsung",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 960,
+        "height": 540,
         "touch": true,
-        "size": null
+        "size": 4.52
       },
       "type": "smartphone"
     },
@@ -3082,15 +3044,15 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; SPH-L600 Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.114 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "general Samsung device",
-      "marketingName": "general Samsung device",
+      "deviceName": "SPH-L600",
+      "marketingName": "Galaxy Mega 6.3 LTE",
       "manufacturer": "samsung",
       "brand": "samsung",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1280,
+        "height": 720,
         "touch": true,
-        "size": null
+        "size": 6.3
       },
       "type": "smartphone"
     },
@@ -3796,6 +3758,44 @@
     "engine": {
       "name": "WebKit",
       "version": "535.19.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 Linux U Android 2.2.1 en-us SCH-I500 Build/MIUI AppleWebKit/533.1 KHTML, like Gecko Version/4.0 Mobile Safari/533.1"
+    },
+    "device": {
+      "deviceName": "SCH-I500",
+      "marketingName": "Fascinate (Verizon)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "2.2.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "533.1.0",
       "manufacturer": "apple"
     }
   }

@@ -1,44 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.0.1; SAMSUNG SM-G906S Build/LRX22C) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/2.1 Chrome/34.0.1847.76 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "SM-G906S",
-      "marketingName": "Galaxy S5",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5.1
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Samsung Browser",
-      "modus": null,
-      "version": "2.1.0",
-      "manufacturer": "samsung",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.0.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "34.0.1847.76",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "UCWEB/2.0 (Linux; U; Adr 4.2.2; en-US; GT-S7582) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile"
     },
     "device": {
@@ -992,15 +954,15 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; de-de; SAMSUNG SHV-E330S Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/1.5 Chrome/28.0.1500.94 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "general Samsung device",
-      "marketingName": "general Samsung device",
+      "deviceName": "SHV-E330S",
+      "marketingName": "Galaxy S4 LTE (Korea)",
       "manufacturer": "samsung",
       "brand": "samsung",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1920,
+        "height": 1080,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "type": "smartphone"
     },
@@ -3790,6 +3752,44 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "4.4.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "46.0.2490.76",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.1.2; GT-I8190N Build/JZO54K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.76 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "GT-I8190N",
+      "marketingName": "Galaxy S3 Mini NFC",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 4
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "46.0.2490.76",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.1.2",
       "manufacturer": "google",
       "bits": null
     },
