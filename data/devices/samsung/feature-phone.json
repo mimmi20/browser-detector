@@ -83,6 +83,62 @@
     "type": "feature-phone",
     "platform": "brew"
   },
+  "samsung gt-e2220": {
+    "deviceName": "GT-E2220",
+    "marketingName": "Ch@t 220",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": false,
+      "size": 2.2
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "samsung gt-e2222": {
+    "deviceName": "GT-E2222",
+    "marketingName": "Ch@t 222",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": false,
+      "size": 2.2
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "samsung gt-e2222l": {
+    "deviceName": "GT-E2222L",
+    "marketingName": "Ch@t 222",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": false,
+      "size": 2.2
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "samsung gt-c3222": {
+    "deviceName": "GT-C3222",
+    "marketingName": "Ch@t 322",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": false,
+      "size": 2.2
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "samsung gt-s3332": {
     "deviceName": "GT-S3332",
     "marketingName": "Ch@t 322 Duos",
@@ -111,30 +167,44 @@
     "type": "feature-phone",
     "platform": "java"
   },
-  "samsung gt-e2222": {
-    "deviceName": "GT-E2222",
-    "marketingName": "Ch@t222",
+  "samsung gt-s3570": {
+    "deviceName": "GT-S3570",
+    "marketingName": "Ch@t 357",
     "manufacturer": "samsung",
     "brand": "samsung",
     "display": {
-      "width": 220,
-      "height": 176,
+      "width": 320,
+      "height": 240,
       "touch": false,
-      "size": null
+      "size": 2.4
     },
     "type": "feature-phone",
     "platform": "java"
   },
-  "samsung gt-e2222l": {
-    "deviceName": "GT-E2222L",
-    "marketingName": "Ch@t222",
+  "samsung gt-s3572": {
+    "deviceName": "GT-S3572",
+    "marketingName": "Ch@t 357 Duos",
     "manufacturer": "samsung",
     "brand": "samsung",
     "display": {
-      "width": 220,
-      "height": 176,
+      "width": 320,
+      "height": 240,
       "touch": false,
-      "size": null
+      "size": 2.4
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "samsung gt-c3500": {
+    "deviceName": "GT-C3500",
+    "marketingName": "Ch@t C3500",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": true,
+      "size": 2.4
     },
     "type": "feature-phone",
     "platform": "java"
@@ -247,62 +317,6 @@
       "height": 240,
       "touch": false,
       "size": 2.4
-    },
-    "type": "feature-phone",
-    "platform": "java"
-  },
-  "samsung gt-c3222": {
-    "deviceName": "GT-C3222",
-    "marketingName": "Chat 322",
-    "manufacturer": "samsung",
-    "brand": "samsung",
-    "display": {
-      "width": 220,
-      "height": 176,
-      "touch": false,
-      "size": 2.2
-    },
-    "type": "feature-phone",
-    "platform": "java"
-  },
-  "samsung gt-s3570": {
-    "deviceName": "GT-S3570",
-    "marketingName": "Chat 357",
-    "manufacturer": "samsung",
-    "brand": "samsung",
-    "display": {
-      "width": 320,
-      "height": 240,
-      "touch": false,
-      "size": 2.4
-    },
-    "type": "feature-phone",
-    "platform": "java"
-  },
-  "samsung gt-s3572": {
-    "deviceName": "GT-S3572",
-    "marketingName": "Chat 357 Duos",
-    "manufacturer": "samsung",
-    "brand": "samsung",
-    "display": {
-      "width": 320,
-      "height": 240,
-      "touch": false,
-      "size": 2.4
-    },
-    "type": "feature-phone",
-    "platform": "java"
-  },
-  "samsung gt-c3500": {
-    "deviceName": "GT-C3500",
-    "marketingName": "Chat C3500",
-    "manufacturer": "samsung",
-    "brand": "samsung",
-    "display": {
-      "width": 320,
-      "height": 240,
-      "touch": true,
-      "size": null
     },
     "type": "feature-phone",
     "platform": "java"
@@ -1203,6 +1217,20 @@
     "type": "feature-phone",
     "platform": "brew"
   },
+  "samsung gt-e2200": {
+    "deviceName": "GT-E2200",
+    "marketingName": "Metro",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": 1.8
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "samsung gt-e2202": {
     "deviceName": "GT-E2202",
     "marketingName": "Metro",
@@ -1212,7 +1240,7 @@
       "width": 160,
       "height": 128,
       "touch": false,
-      "size": null
+      "size": 1.8
     },
     "type": "feature-phone",
     "platform": "java"
@@ -2029,6 +2057,20 @@
     "type": "feature-phone",
     "platform": "symbian"
   },
+  "samsung sgh-i520": {
+    "deviceName": "SGH-I520",
+    "marketingName": "SGH-I520",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": 2.3
+    },
+    "type": "feature-phone",
+    "platform": "symbian"
+  },
   "samsung sgh-i520v": {
     "deviceName": "SGH-I520V",
     "marketingName": "SGH-I520V",
@@ -2038,7 +2080,7 @@
       "width": 320,
       "height": 240,
       "touch": false,
-      "size": null
+      "size": 2.3
     },
     "type": "feature-phone",
     "platform": "symbian"
@@ -2151,6 +2193,20 @@
       "height": 128,
       "touch": false,
       "size": 2
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "samsung sgh-m310": {
+    "deviceName": "SGH-M310",
+    "marketingName": "SGH-M310",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": 1.7
     },
     "type": "feature-phone",
     "platform": "java"
@@ -2535,6 +2591,20 @@
   },
   "samsung c3050": {
     "deviceName": "C3050",
+    "marketingName": "Stratus",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": 2
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "samsung c3053": {
+    "deviceName": "C3053",
     "marketingName": "Stratus",
     "manufacturer": "samsung",
     "brand": "samsung",
