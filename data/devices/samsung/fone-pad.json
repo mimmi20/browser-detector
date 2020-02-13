@@ -139,6 +139,20 @@
     "type": "fone-pad",
     "platform": "android"
   },
+  "samsung sch-i925": {
+    "deviceName": "SCH-I925",
+    "marketingName": "Galaxy Note 10.1 LTE",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": 10.1
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
   "samsung gt-n5100": {
     "deviceName": "GT-N5100",
     "marketingName": "Galaxy Note 8.0 3G",
@@ -331,6 +345,20 @@
       "height": 800,
       "touch": true,
       "size": null
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "samsung sch-i905": {
+    "deviceName": "SCH-I905",
+    "marketingName": "Galaxy Tab 10.1 4G",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": 10.1
     },
     "type": "fone-pad",
     "platform": "android"
@@ -573,6 +601,20 @@
     "type": "fone-pad",
     "platform": "android"
   },
+  "samsung sm-t312": {
+    "deviceName": "SM-T312",
+    "marketingName": "Galaxy Tab 3 8.0 3G",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": 8
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
   "samsung sm-t315": {
     "deviceName": "SM-T315",
     "marketingName": "Galaxy Tab 3 8.0 LTE",
@@ -715,7 +757,21 @@
   },
   "samsung sm-t537a": {
     "deviceName": "SM-T537A",
-    "marketingName": "Galaxy Tab 4 10.1 LTE",
+    "marketingName": "Galaxy Tab 4 10.1 LTE (AT&T)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": 10.1
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "samsung sm-t537v": {
+    "deviceName": "SM-T537V",
+    "marketingName": "Galaxy Tab 4 10.1 LTE (Verizon)",
     "manufacturer": "samsung",
     "brand": "samsung",
     "display": {
@@ -755,9 +811,37 @@
     "type": "fone-pad",
     "platform": "android"
   },
+  "samsung sm-t213": {
+    "deviceName": "SM-T213",
+    "marketingName": "Galaxy Tab 4 7.0 3G",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": 7
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
   "samsung sm-t321": {
     "deviceName": "SM-T321",
     "marketingName": "Galaxy Tab 4 7.0 3G",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": 7
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "samsung sm-t237p": {
+    "deviceName": "SM-T237P",
+    "marketingName": "Galaxy Tab 4 7.0 LTE",
     "manufacturer": "samsung",
     "brand": "samsung",
     "display": {
@@ -933,6 +1017,20 @@
       "height": 600,
       "touch": true,
       "size": null
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "samsung sgh-t869": {
+    "deviceName": "SGH-T869",
+    "marketingName": "Galaxy Tab 7.0 Plus 4G",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "size": 7
     },
     "type": "fone-pad",
     "platform": "android"
@@ -1553,20 +1651,6 @@
     "type": "fone-pad",
     "platform": "android"
   },
-  "samsung sm-t817a": {
-    "deviceName": "SM-T817A",
-    "marketingName": "Galaxy Tab S2",
-    "manufacturer": "samsung",
-    "brand": "samsung",
-    "display": {
-      "width": 2048,
-      "height": 1536,
-      "touch": true,
-      "size": 9.7
-    },
-    "type": "fone-pad",
-    "platform": "android"
-  },
   "samsung sm-t815y": {
     "deviceName": "SM-T815Y",
     "marketingName": "Galaxy Tab S2 (9.7, 2015)",
@@ -1654,6 +1738,34 @@
   "samsung sm-t817t": {
     "deviceName": "SM-T817T",
     "marketingName": "Galaxy Tab S2 9.7",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 2048,
+      "height": 1536,
+      "touch": true,
+      "size": 9.7
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "samsung sm-t817a": {
+    "deviceName": "SM-T817A",
+    "marketingName": "Galaxy Tab S2 9.7 (AT&T)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 2048,
+      "height": 1536,
+      "touch": true,
+      "size": 9.7
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "samsung sm-t817v": {
+    "deviceName": "SM-T817V",
+    "marketingName": "Galaxy Tab S2 9.7 (Verizon)",
     "manufacturer": "samsung",
     "brand": "samsung",
     "display": {
