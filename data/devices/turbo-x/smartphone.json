@@ -1,4 +1,32 @@
 {
+  "turbo-x a2": {
+    "deviceName": "A2",
+    "marketingName": "A2",
+    "manufacturer": "turbo-x",
+    "brand": "turbo-x",
+    "display": {
+      "width": 960,
+      "height": 540,
+      "touch": true,
+      "size": 5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "turbo-x o": {
+    "deviceName": "O",
+    "marketingName": "O",
+    "manufacturer": "turbo-x",
+    "brand": "turbo-x",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "turbo-x pi": {
     "deviceName": "PI",
     "marketingName": "PI",
@@ -8,7 +36,7 @@
       "width": 1280,
       "height": 720,
       "touch": true,
-      "size": null
+      "size": 4.7
     },
     "type": "smartphone",
     "platform": "android"
@@ -22,7 +50,21 @@
       "width": 960,
       "height": 540,
       "touch": true,
-      "size": null
+      "size": 4.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "turbo-x y": {
+    "deviceName": "Y",
+    "marketingName": "Y",
+    "manufacturer": "turbo-x",
+    "brand": "turbo-x",
+    "display": {
+      "width": 2560,
+      "height": 1440,
+      "touch": true,
+      "size": 4.5
     },
     "type": "smartphone",
     "platform": "android"
