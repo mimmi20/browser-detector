@@ -70,9 +70,9 @@
       "bits": null
     },
     "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
+      "name": "Presto",
+      "version": "2.12.362",
+      "manufacturer": "opera"
     }
   },
   {
@@ -146,9 +146,9 @@
       "bits": null
     },
     "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
+      "name": "Presto",
+      "version": "2.12.407",
+      "manufacturer": "opera"
     }
   },
   {
@@ -194,15 +194,15 @@
       "user-agent": "Opera/9.80 (Linux armv7l; U;  HbbTV/1.1.1 (; Sony; KDL40HX758; PKG1.212EUA; 2013;);; en) Presto/2.10.287 Version/12.00"
     },
     "device": {
-      "deviceName": "general Sony TV",
-      "marketingName": "general Sony TV",
+      "deviceName": "KDL-40HX758",
+      "marketingName": "KDL-40HX758",
       "manufacturer": "sony",
       "brand": "sony",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1920,
+        "height": 1080,
         "touch": false,
-        "size": null
+        "size": 40
       },
       "type": "tv"
     },
@@ -283,10 +283,10 @@
       "type": "tv"
     },
     "browser": {
-      "name": "Opera",
+      "name": "InettvBrowser",
       "modus": null,
-      "version": "12.11.0",
-      "manufacturer": "opera",
+      "version": "2.2.0",
+      "manufacturer": "unknown",
       "bits": null,
       "type": "browser"
     },
@@ -308,15 +308,15 @@
       "user-agent": "Opera/9.80 (Linux armv7l; U;  HbbTV/1.1.1 (; Sony; KDL46EX650; PKG0.002EUA; 2013;);; en) Presto/2.10.287 Version/12.00"
     },
     "device": {
-      "deviceName": "general Sony TV",
-      "marketingName": "general Sony TV",
+      "deviceName": "KDL-46EX650",
+      "marketingName": "KDL-46EX650",
       "manufacturer": "sony",
       "brand": "sony",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1920,
+        "height": 1080,
         "touch": false,
-        "size": null
+        "size": 46
       },
       "type": "tv"
     },
@@ -346,15 +346,15 @@
       "user-agent": "Opera/9.80 (Linux mips; U;  HbbTV/1.1.1 (; Sony; KDL55NX725; PKG4.012EUA; 2011;);; en) Presto/2.7.61 Version/11.00"
     },
     "device": {
-      "deviceName": "general Sony TV",
-      "marketingName": "general Sony TV",
+      "deviceName": "KDL-55NX725",
+      "marketingName": "KDL-55NX725",
       "manufacturer": "sony",
       "brand": "sony",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1920,
+        "height": 1080,
         "touch": false,
-        "size": null
+        "size": 55
       },
       "type": "tv"
     },
@@ -367,8 +367,8 @@
       "type": "browser"
     },
     "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
+      "name": "Maemo",
+      "marketingName": "Maemo",
       "version": null,
       "manufacturer": "linux-foundation",
       "bits": null
@@ -625,10 +625,10 @@
       "type": "tv"
     },
     "browser": {
-      "name": "Opera",
+      "name": "InettvBrowser",
       "modus": null,
-      "version": "12.11.0",
-      "manufacturer": "opera",
+      "version": "2.2.0",
+      "manufacturer": "unknown",
       "bits": null,
       "type": "browser"
     },
@@ -663,10 +663,10 @@
       "type": "tv"
     },
     "browser": {
-      "name": "Opera",
+      "name": "InettvBrowser",
       "modus": null,
-      "version": "12.50.0",
-      "manufacturer": "opera",
+      "version": "2.2.0",
+      "manufacturer": "unknown",
       "bits": null,
       "type": "browser"
     },
@@ -701,10 +701,10 @@
       "type": "tv"
     },
     "browser": {
-      "name": "Opera",
+      "name": "InettvBrowser",
       "modus": null,
-      "version": "12.50.0",
-      "manufacturer": "opera",
+      "version": "2.2.0",
+      "manufacturer": "unknown",
       "bits": null,
       "type": "browser"
     },
@@ -739,10 +739,10 @@
       "type": "tv"
     },
     "browser": {
-      "name": "Opera",
+      "name": "InettvBrowser",
       "modus": null,
-      "version": "12.50.0",
-      "manufacturer": "opera",
+      "version": "2.2.0",
+      "manufacturer": "unknown",
       "bits": null,
       "type": "browser"
     },
@@ -777,10 +777,10 @@
       "type": "tv"
     },
     "browser": {
-      "name": "Opera",
+      "name": "InettvBrowser",
       "modus": null,
-      "version": "12.11.0",
-      "manufacturer": "opera",
+      "version": "2.2.0",
+      "manufacturer": "unknown",
       "bits": null,
       "type": "browser"
     },
@@ -853,10 +853,10 @@
       "type": "tv"
     },
     "browser": {
-      "name": "Opera",
+      "name": "InettvBrowser",
       "modus": null,
-      "version": "12.50.0",
-      "manufacturer": "opera",
+      "version": "2.2.0",
+      "manufacturer": "unknown",
       "bits": null,
       "type": "browser"
     },
@@ -891,10 +891,10 @@
       "type": "tv"
     },
     "browser": {
-      "name": "Opera",
+      "name": "InettvBrowser",
       "modus": null,
-      "version": "11.60.0",
-      "manufacturer": "opera",
+      "version": "2.2.0",
+      "manufacturer": "unknown",
       "bits": null,
       "type": "browser"
     },
@@ -967,10 +967,10 @@
       "type": "tv"
     },
     "browser": {
-      "name": "Opera",
+      "name": "InettvBrowser",
       "modus": null,
-      "version": "12.11.0",
-      "manufacturer": "opera",
+      "version": "2.2.0",
+      "manufacturer": "unknown",
       "bits": null,
       "type": "browser"
     },
@@ -1347,10 +1347,10 @@
       "type": "tv"
     },
     "browser": {
-      "name": "Opera",
+      "name": "InettvBrowser",
       "modus": null,
-      "version": "12.11.0",
-      "manufacturer": "opera",
+      "version": "2.2.0",
+      "manufacturer": "unknown",
       "bits": null,
       "type": "browser"
     },
@@ -1385,10 +1385,10 @@
       "type": "tv"
     },
     "browser": {
-      "name": "Opera",
+      "name": "InettvBrowser",
       "modus": null,
-      "version": "12.50.0",
-      "manufacturer": "opera",
+      "version": "2.2.0",
+      "manufacturer": "unknown",
       "bits": null,
       "type": "browser"
     },
@@ -1613,10 +1613,10 @@
       "type": "tv"
     },
     "browser": {
-      "name": "Opera",
+      "name": "InettvBrowser",
       "modus": null,
-      "version": "12.50.0",
-      "manufacturer": "opera",
+      "version": "2.2.0",
+      "manufacturer": "unknown",
       "bits": null,
       "type": "browser"
     },
@@ -1689,10 +1689,10 @@
       "type": "tv"
     },
     "browser": {
-      "name": "Opera",
+      "name": "InettvBrowser",
       "modus": null,
-      "version": "12.50.0",
-      "manufacturer": "opera",
+      "version": "2.2.0",
+      "manufacturer": "unknown",
       "bits": null,
       "type": "browser"
     },
@@ -1727,10 +1727,10 @@
       "type": "tv"
     },
     "browser": {
-      "name": "Opera",
+      "name": "InettvBrowser",
       "modus": null,
-      "version": "11.60.0",
-      "manufacturer": "opera",
+      "version": "2.2.0",
+      "manufacturer": "unknown",
       "bits": null,
       "type": "browser"
     },
@@ -1765,10 +1765,10 @@
       "type": "tv"
     },
     "browser": {
-      "name": "Opera",
+      "name": "InettvBrowser",
       "modus": null,
-      "version": "12.50.0",
-      "manufacturer": "opera",
+      "version": "2.2.0",
+      "manufacturer": "unknown",
       "bits": null,
       "type": "browser"
     },
@@ -1803,10 +1803,10 @@
       "type": "tv"
     },
     "browser": {
-      "name": "Opera",
+      "name": "InettvBrowser",
       "modus": null,
-      "version": "12.50.0",
-      "manufacturer": "opera",
+      "version": "2.2.0",
+      "manufacturer": "unknown",
       "bits": null,
       "type": "browser"
     },
@@ -1841,10 +1841,10 @@
       "type": "tv"
     },
     "browser": {
-      "name": "Opera",
+      "name": "InettvBrowser",
       "modus": null,
-      "version": "12.50.0",
-      "manufacturer": "opera",
+      "version": "2.2.0",
+      "manufacturer": "unknown",
       "bits": null,
       "type": "browser"
     },
@@ -1879,10 +1879,10 @@
       "type": "tv"
     },
     "browser": {
-      "name": "Opera",
+      "name": "InettvBrowser",
       "modus": null,
-      "version": "12.50.0",
-      "manufacturer": "opera",
+      "version": "2.2.0",
+      "manufacturer": "unknown",
       "bits": null,
       "type": "browser"
     },
@@ -1917,10 +1917,10 @@
       "type": "tv"
     },
     "browser": {
-      "name": "Opera",
+      "name": "InettvBrowser",
       "modus": null,
-      "version": "12.50.0",
-      "manufacturer": "opera",
+      "version": "2.2.0",
+      "manufacturer": "unknown",
       "bits": null,
       "type": "browser"
     },
@@ -1955,10 +1955,10 @@
       "type": "tv"
     },
     "browser": {
-      "name": "Opera",
+      "name": "InettvBrowser",
       "modus": null,
-      "version": "12.50.0",
-      "manufacturer": "opera",
+      "version": "2.2.0",
+      "manufacturer": "unknown",
       "bits": null,
       "type": "browser"
     },
@@ -1993,10 +1993,10 @@
       "type": "tv"
     },
     "browser": {
-      "name": "Opera",
+      "name": "InettvBrowser",
       "modus": null,
-      "version": "12.50.0",
-      "manufacturer": "opera",
+      "version": "2.2.0",
+      "manufacturer": "unknown",
       "bits": null,
       "type": "browser"
     },
@@ -2031,10 +2031,10 @@
       "type": "tv"
     },
     "browser": {
-      "name": "Opera",
+      "name": "InettvBrowser",
       "modus": null,
-      "version": "12.11.0",
-      "manufacturer": "opera",
+      "version": "2.2.0",
+      "manufacturer": "unknown",
       "bits": null,
       "type": "browser"
     },
@@ -2069,10 +2069,10 @@
       "type": "tv"
     },
     "browser": {
-      "name": "Opera",
+      "name": "InettvBrowser",
       "modus": null,
-      "version": "12.50.0",
-      "manufacturer": "opera",
+      "version": "2.2.0",
+      "manufacturer": "unknown",
       "bits": null,
       "type": "browser"
     },
@@ -2107,10 +2107,10 @@
       "type": "tv"
     },
     "browser": {
-      "name": "Opera",
+      "name": "InettvBrowser",
       "modus": null,
-      "version": "12.11.0",
-      "manufacturer": "opera",
+      "version": "2.2.0",
+      "manufacturer": "unknown",
       "bits": null,
       "type": "browser"
     },
@@ -2145,10 +2145,10 @@
       "type": "tv"
     },
     "browser": {
-      "name": "Opera",
+      "name": "InettvBrowser",
       "modus": null,
-      "version": "12.50.0",
-      "manufacturer": "opera",
+      "version": "2.2.0",
+      "manufacturer": "unknown",
       "bits": null,
       "type": "browser"
     },
@@ -2183,10 +2183,10 @@
       "type": "tv"
     },
     "browser": {
-      "name": "Opera",
+      "name": "InettvBrowser",
       "modus": null,
-      "version": "11.60.0",
-      "manufacturer": "opera",
+      "version": "2.2.0",
+      "manufacturer": "unknown",
       "bits": null,
       "type": "browser"
     },
@@ -2221,10 +2221,10 @@
       "type": "tv"
     },
     "browser": {
-      "name": "Opera",
+      "name": "InettvBrowser",
       "modus": null,
-      "version": "12.50.0",
-      "manufacturer": "opera",
+      "version": "2.2.0",
+      "manufacturer": "unknown",
       "bits": null,
       "type": "browser"
     },
@@ -2259,10 +2259,10 @@
       "type": "tv"
     },
     "browser": {
-      "name": "Opera",
+      "name": "InettvBrowser",
       "modus": null,
-      "version": "12.50.0",
-      "manufacturer": "opera",
+      "version": "2.2.0",
+      "manufacturer": "unknown",
       "bits": null,
       "type": "browser"
     },
@@ -2297,10 +2297,10 @@
       "type": "tv"
     },
     "browser": {
-      "name": "Opera",
+      "name": "InettvBrowser",
       "modus": null,
-      "version": "12.50.0",
-      "manufacturer": "opera",
+      "version": "2.2.0",
+      "manufacturer": "unknown",
       "bits": null,
       "type": "browser"
     },
@@ -2335,10 +2335,10 @@
       "type": "tv"
     },
     "browser": {
-      "name": "Opera",
+      "name": "InettvBrowser",
       "modus": null,
-      "version": "12.11.0",
-      "manufacturer": "opera",
+      "version": "2.2.0",
+      "manufacturer": "unknown",
       "bits": null,
       "type": "browser"
     },
@@ -2373,10 +2373,10 @@
       "type": "tv"
     },
     "browser": {
-      "name": "Opera",
+      "name": "InettvBrowser",
       "modus": null,
-      "version": "12.50.0",
-      "manufacturer": "opera",
+      "version": "2.2.0",
+      "manufacturer": "unknown",
       "bits": null,
       "type": "browser"
     },
@@ -2411,10 +2411,10 @@
       "type": "tv"
     },
     "browser": {
-      "name": "Opera",
+      "name": "InettvBrowser",
       "modus": null,
-      "version": "12.50.0",
-      "manufacturer": "opera",
+      "version": "2.2.0",
+      "manufacturer": "unknown",
       "bits": null,
       "type": "browser"
     },
@@ -2449,10 +2449,10 @@
       "type": "tv"
     },
     "browser": {
-      "name": "Opera",
+      "name": "InettvBrowser",
       "modus": null,
-      "version": "12.11.0",
-      "manufacturer": "opera",
+      "version": "2.2.0",
+      "manufacturer": "unknown",
       "bits": null,
       "type": "browser"
     },
@@ -2487,10 +2487,10 @@
       "type": "tv"
     },
     "browser": {
-      "name": "Opera",
+      "name": "InettvBrowser",
       "modus": null,
-      "version": "12.50.0",
-      "manufacturer": "opera",
+      "version": "2.2.0",
+      "manufacturer": "unknown",
       "bits": null,
       "type": "browser"
     },
@@ -2525,10 +2525,10 @@
       "type": "tv"
     },
     "browser": {
-      "name": "Opera",
+      "name": "InettvBrowser",
       "modus": null,
-      "version": "12.50.0",
-      "manufacturer": "opera",
+      "version": "2.2.0",
+      "manufacturer": "unknown",
       "bits": null,
       "type": "browser"
     },
@@ -2563,10 +2563,10 @@
       "type": "tv"
     },
     "browser": {
-      "name": "Opera",
+      "name": "InettvBrowser",
       "modus": null,
-      "version": "12.11.0",
-      "manufacturer": "opera",
+      "version": "2.2.0",
+      "manufacturer": "unknown",
       "bits": null,
       "type": "browser"
     },
@@ -2601,10 +2601,10 @@
       "type": "tv"
     },
     "browser": {
-      "name": "Opera",
+      "name": "InettvBrowser",
       "modus": null,
-      "version": "12.50.0",
-      "manufacturer": "opera",
+      "version": "2.2.0",
+      "manufacturer": "unknown",
       "bits": null,
       "type": "browser"
     },
@@ -2639,10 +2639,10 @@
       "type": "tv"
     },
     "browser": {
-      "name": "Opera",
+      "name": "InettvBrowser",
       "modus": null,
-      "version": "12.50.0",
-      "manufacturer": "opera",
+      "version": "2.2.0",
+      "manufacturer": "unknown",
       "bits": null,
       "type": "browser"
     },
@@ -2677,10 +2677,10 @@
       "type": "tv"
     },
     "browser": {
-      "name": "Opera",
+      "name": "InettvBrowser",
       "modus": null,
-      "version": "12.11.0",
-      "manufacturer": "opera",
+      "version": "2.2.0",
+      "manufacturer": "unknown",
       "bits": null,
       "type": "browser"
     },
@@ -2715,10 +2715,10 @@
       "type": "tv"
     },
     "browser": {
-      "name": "Opera",
+      "name": "InettvBrowser",
       "modus": null,
-      "version": "11.60.0",
-      "manufacturer": "opera",
+      "version": "2.2.0",
+      "manufacturer": "unknown",
       "bits": null,
       "type": "browser"
     },
@@ -2753,10 +2753,10 @@
       "type": "tv"
     },
     "browser": {
-      "name": "Opera",
+      "name": "InettvBrowser",
       "modus": null,
-      "version": "12.50.0",
-      "manufacturer": "opera",
+      "version": "2.2.0",
+      "manufacturer": "unknown",
       "bits": null,
       "type": "browser"
     },
@@ -2791,10 +2791,10 @@
       "type": "tv"
     },
     "browser": {
-      "name": "Opera",
+      "name": "InettvBrowser",
       "modus": null,
-      "version": "12.11.0",
-      "manufacturer": "opera",
+      "version": "2.2.0",
+      "manufacturer": "unknown",
       "bits": null,
       "type": "browser"
     },
@@ -2829,10 +2829,10 @@
       "type": "tv"
     },
     "browser": {
-      "name": "Opera",
+      "name": "InettvBrowser",
       "modus": null,
-      "version": "12.11.0",
-      "manufacturer": "opera",
+      "version": "2.2.0",
+      "manufacturer": "unknown",
       "bits": null,
       "type": "browser"
     },
@@ -2867,10 +2867,10 @@
       "type": "tv"
     },
     "browser": {
-      "name": "Opera",
+      "name": "InettvBrowser",
       "modus": null,
-      "version": "12.11.0",
-      "manufacturer": "opera",
+      "version": "2.2.0",
+      "manufacturer": "unknown",
       "bits": null,
       "type": "browser"
     },
@@ -2905,10 +2905,10 @@
       "type": "tv"
     },
     "browser": {
-      "name": "Opera",
+      "name": "InettvBrowser",
       "modus": null,
-      "version": "12.11.0",
-      "manufacturer": "opera",
+      "version": "2.2.0",
+      "manufacturer": "unknown",
       "bits": null,
       "type": "browser"
     },
@@ -2943,10 +2943,10 @@
       "type": "tv"
     },
     "browser": {
-      "name": "Opera",
+      "name": "InettvBrowser",
       "modus": null,
-      "version": "12.11.0",
-      "manufacturer": "opera",
+      "version": "2.2.0",
+      "manufacturer": "unknown",
       "bits": null,
       "type": "browser"
     },
@@ -2981,10 +2981,10 @@
       "type": "tv"
     },
     "browser": {
-      "name": "Opera",
+      "name": "InettvBrowser",
       "modus": null,
-      "version": "12.50.0",
-      "manufacturer": "opera",
+      "version": "2.2.0",
+      "manufacturer": "unknown",
       "bits": null,
       "type": "browser"
     },
@@ -3019,10 +3019,10 @@
       "type": "tv"
     },
     "browser": {
-      "name": "Opera",
+      "name": "InettvBrowser",
       "modus": null,
-      "version": "12.11.0",
-      "manufacturer": "opera",
+      "version": "2.2.0",
+      "manufacturer": "unknown",
       "bits": null,
       "type": "browser"
     },
@@ -3057,10 +3057,10 @@
       "type": "tv"
     },
     "browser": {
-      "name": "Opera",
+      "name": "InettvBrowser",
       "modus": null,
-      "version": "11.60.0",
-      "manufacturer": "opera",
+      "version": "2.2.0",
+      "manufacturer": "unknown",
       "bits": null,
       "type": "browser"
     },
@@ -3095,10 +3095,10 @@
       "type": "tv"
     },
     "browser": {
-      "name": "Opera",
+      "name": "InettvBrowser",
       "modus": null,
-      "version": "11.60.0",
-      "manufacturer": "opera",
+      "version": "2.2.0",
+      "manufacturer": "unknown",
       "bits": null,
       "type": "browser"
     },
@@ -3120,23 +3120,23 @@
       "user-agent": "Opera/9.80 (Linux armv7l; InettvBrowser/2.2 (00014A;SonyDTV140;0001;0001) KDL50W705B; CC/DEU) Presto/2.12.407 Version/12.50"
     },
     "device": {
-      "deviceName": "general Sony TV",
-      "marketingName": "general Sony TV",
+      "deviceName": "KDL-50W705B",
+      "marketingName": "KDL-50W705B",
       "manufacturer": "sony",
       "brand": "sony",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1920,
+        "height": 1080,
         "touch": false,
-        "size": null
+        "size": 50
       },
       "type": "tv"
     },
     "browser": {
-      "name": "Opera",
+      "name": "InettvBrowser",
       "modus": null,
-      "version": "12.50.0",
-      "manufacturer": "opera",
+      "version": "2.2.0",
+      "manufacturer": "unknown",
       "bits": null,
       "type": "browser"
     },
@@ -3158,23 +3158,23 @@
       "user-agent": "Opera/9.80 (Linux armv7l; InettvBrowser/2.2 (00014A;SonyDTV115;0002;0100) KDL42W809A; CC/DEU) Presto/2.12.362 Version/12.11"
     },
     "device": {
-      "deviceName": "general Sony TV",
-      "marketingName": "general Sony TV",
+      "deviceName": "KDL-42W809A",
+      "marketingName": "KDL-42W809A",
       "manufacturer": "sony",
       "brand": "sony",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1920,
+        "height": 1080,
         "touch": false,
-        "size": null
+        "size": 42
       },
       "type": "tv"
     },
     "browser": {
-      "name": "Opera",
+      "name": "InettvBrowser",
       "modus": null,
-      "version": "12.11.0",
-      "manufacturer": "opera",
+      "version": "2.2.0",
+      "manufacturer": "unknown",
       "bits": null,
       "type": "browser"
     },
@@ -3209,10 +3209,10 @@
       "type": "tv"
     },
     "browser": {
-      "name": "Opera",
+      "name": "InettvBrowser",
       "modus": null,
-      "version": "12.50.0",
-      "manufacturer": "opera",
+      "version": "2.2.0",
+      "manufacturer": "unknown",
       "bits": null,
       "type": "browser"
     },
@@ -3234,23 +3234,23 @@
       "user-agent": "Opera/9.80 (Linux armv7l; InettvBrowser/2.2 (00014A;SonyDTV115;0002;0100) KDL42W808A; CC/DEU) Presto/2.12.362 Version/12.11"
     },
     "device": {
-      "deviceName": "general Sony TV",
-      "marketingName": "general Sony TV",
+      "deviceName": "KDL-42W808A",
+      "marketingName": "KDL-42W808A",
       "manufacturer": "sony",
       "brand": "sony",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1920,
+        "height": 1080,
         "touch": false,
-        "size": null
+        "size": 42
       },
       "type": "tv"
     },
     "browser": {
-      "name": "Opera",
+      "name": "InettvBrowser",
       "modus": null,
-      "version": "12.11.0",
-      "manufacturer": "opera",
+      "version": "2.2.0",
+      "manufacturer": "unknown",
       "bits": null,
       "type": "browser"
     },
@@ -3272,23 +3272,23 @@
       "user-agent": "Opera/9.80 (Linux armv7l; InettvBrowser/2.2 (00014A;SonyDTV140;0001;0001) KDL50W706B; CC/DEU) Presto/2.12.407 Version/12.50"
     },
     "device": {
-      "deviceName": "general Sony TV",
-      "marketingName": "general Sony TV",
+      "deviceName": "KDL-50W706B",
+      "marketingName": "KDL-50W706B",
       "manufacturer": "sony",
       "brand": "sony",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1920,
+        "height": 1080,
         "touch": false,
-        "size": null
+        "size": 50
       },
       "type": "tv"
     },
     "browser": {
-      "name": "Opera",
+      "name": "InettvBrowser",
       "modus": null,
-      "version": "12.50.0",
-      "manufacturer": "opera",
+      "version": "2.2.0",
+      "manufacturer": "unknown",
       "bits": null,
       "type": "browser"
     },
@@ -3310,23 +3310,23 @@
       "user-agent": "Opera/9.80 (Linux armv7l; InettvBrowser/2.2 (00014A;SonyDTV115;0002;0100) KDL32W656A; CC/DEU) Presto/2.12.362 Version/12.11"
     },
     "device": {
-      "deviceName": "general Sony TV",
-      "marketingName": "general Sony TV",
+      "deviceName": "KDL-32W656A",
+      "marketingName": "KDL-32W656A",
       "manufacturer": "sony",
       "brand": "sony",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1920,
+        "height": 1080,
         "touch": false,
-        "size": null
+        "size": 32
       },
       "type": "tv"
     },
     "browser": {
-      "name": "Opera",
+      "name": "InettvBrowser",
       "modus": null,
-      "version": "12.11.0",
-      "manufacturer": "opera",
+      "version": "2.2.0",
+      "manufacturer": "unknown",
       "bits": null,
       "type": "browser"
     },
@@ -3348,23 +3348,23 @@
       "user-agent": "Opera/9.80 (Linux armv7l; InettvBrowser/2.2 (00014A;SonyDTV140;0001;0001) KD65X9005B; CC/DEU) Presto/2.12.407 Version/12.50"
     },
     "device": {
-      "deviceName": "general Sony TV",
-      "marketingName": "general Sony TV",
+      "deviceName": "KD-65X9005B",
+      "marketingName": "KD-65X9005B",
       "manufacturer": "sony",
       "brand": "sony",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 3840,
+        "height": 2160,
         "touch": false,
-        "size": null
+        "size": 65
       },
       "type": "tv"
     },
     "browser": {
-      "name": "Opera",
+      "name": "InettvBrowser",
       "modus": null,
-      "version": "12.50.0",
-      "manufacturer": "opera",
+      "version": "2.2.0",
+      "manufacturer": "unknown",
       "bits": null,
       "type": "browser"
     },
@@ -3399,10 +3399,10 @@
       "type": "tv"
     },
     "browser": {
-      "name": "Opera",
+      "name": "InettvBrowser",
       "modus": null,
-      "version": "12.50.0",
-      "manufacturer": "opera",
+      "version": "2.2.0",
+      "manufacturer": "unknown",
       "bits": null,
       "type": "browser"
     },
@@ -3437,10 +3437,10 @@
       "type": "tv"
     },
     "browser": {
-      "name": "Opera",
+      "name": "InettvBrowser",
       "modus": null,
-      "version": "12.50.0",
-      "manufacturer": "opera",
+      "version": "2.2.0",
+      "manufacturer": "unknown",
       "bits": null,
       "type": "browser"
     },
@@ -3475,10 +3475,10 @@
       "type": "tv"
     },
     "browser": {
-      "name": "Opera",
+      "name": "InettvBrowser",
       "modus": null,
-      "version": "12.50.0",
-      "manufacturer": "opera",
+      "version": "2.2.0",
+      "manufacturer": "unknown",
       "bits": null,
       "type": "browser"
     },
@@ -3500,29 +3500,29 @@
       "user-agent": "Opera/9.80 (Linux mips; U; InettvBrowser/2.2 (00014A;SonyDTV115;0002;0100) KDL32EX725; CC/DEU; en) Presto/2.7.61 Version/11.00"
     },
     "device": {
-      "deviceName": "general Sony TV",
-      "marketingName": "general Sony TV",
+      "deviceName": "KDL-32EX725",
+      "marketingName": "KDL-32EX725",
       "manufacturer": "sony",
       "brand": "sony",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1920,
+        "height": 1080,
         "touch": false,
-        "size": null
+        "size": 32
       },
       "type": "tv"
     },
     "browser": {
-      "name": "Opera",
+      "name": "InettvBrowser",
       "modus": null,
-      "version": "11.00.0",
-      "manufacturer": "opera",
+      "version": "2.2.0",
+      "manufacturer": "unknown",
       "bits": null,
       "type": "browser"
     },
     "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
+      "name": "Maemo",
+      "marketingName": "Maemo",
       "version": null,
       "manufacturer": "linux-foundation",
       "bits": null
@@ -3576,29 +3576,29 @@
       "user-agent": "Opera/9.80 (Linux mips; U; InettvBrowser/2.2 (00014A;SonyDTV115;0002;0100) KDL60NX725; CC/AUT; en) Presto/2.7.61 Version/11.00"
     },
     "device": {
-      "deviceName": "general Sony TV",
-      "marketingName": "general Sony TV",
+      "deviceName": "KDL-60NX725",
+      "marketingName": "KDL-60NX725",
       "manufacturer": "sony",
       "brand": "sony",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1920,
+        "height": 1080,
         "touch": false,
-        "size": null
+        "size": 60
       },
       "type": "tv"
     },
     "browser": {
-      "name": "Opera",
+      "name": "InettvBrowser",
       "modus": null,
-      "version": "11.00.0",
-      "manufacturer": "opera",
+      "version": "2.2.0",
+      "manufacturer": "unknown",
       "bits": null,
       "type": "browser"
     },
     "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
+      "name": "Maemo",
+      "marketingName": "Maemo",
       "version": null,
       "manufacturer": "linux-foundation",
       "bits": null
@@ -3652,23 +3652,23 @@
       "user-agent": "Opera/9.80 (Linux armv7l; InettvBrowser/2.2 (00014A;SonyDTV115;0002;0100) KDL42W654A; CC/RUS) Presto/2.12.362 Version/12.11"
     },
     "device": {
-      "deviceName": "general Sony TV",
-      "marketingName": "general Sony TV",
+      "deviceName": "KDL-42W654A",
+      "marketingName": "KDL-42W654A",
       "manufacturer": "sony",
       "brand": "sony",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1920,
+        "height": 1080,
         "touch": false,
-        "size": null
+        "size": 42
       },
       "type": "tv"
     },
     "browser": {
-      "name": "Opera",
+      "name": "InettvBrowser",
       "modus": null,
-      "version": "12.11.0",
-      "manufacturer": "opera",
+      "version": "2.2.0",
+      "manufacturer": "unknown",
       "bits": null,
       "type": "browser"
     },
@@ -3690,23 +3690,23 @@
       "user-agent": "Opera/9.80 (Linux mips; U; InettvBrowser/2.2 (00014A;SonyDTV115;0002;0100) KDL37EX725; CC/DEU; en) Presto/2.7.61 Version/11.00"
     },
     "device": {
-      "deviceName": "general Sony TV",
-      "marketingName": "general Sony TV",
+      "deviceName": "KDL-37EX725",
+      "marketingName": "KDL-37EX725",
       "manufacturer": "sony",
       "brand": "sony",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1920,
+        "height": 1080,
         "touch": false,
-        "size": null
+        "size": 37
       },
       "type": "tv"
     },
     "browser": {
-      "name": "Opera",
+      "name": "InettvBrowser",
       "modus": null,
-      "version": "11.00.0",
-      "manufacturer": "opera",
+      "version": "2.2.0",
+      "manufacturer": "unknown",
       "bits": null,
       "type": "browser"
     },
@@ -3766,29 +3766,29 @@
       "user-agent": "Opera/9.80 (Linux mips; U; InettvBrowser/2.2 (00014A;SonyDTV115;0002;0100) KDL46EX655; CC/DEU; de) Presto/2.10.250 Version/11.60"
     },
     "device": {
-      "deviceName": "general Sony TV",
-      "marketingName": "general Sony TV",
+      "deviceName": "KDL-46EX655",
+      "marketingName": "KDL-46EX655",
       "manufacturer": "sony",
       "brand": "sony",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1920,
+        "height": 1080,
         "touch": false,
-        "size": null
+        "size": 46
       },
       "type": "tv"
     },
     "browser": {
-      "name": "Opera",
+      "name": "InettvBrowser",
       "modus": null,
-      "version": "11.60.0",
-      "manufacturer": "opera",
+      "version": "2.2.0",
+      "manufacturer": "unknown",
       "bits": null,
       "type": "browser"
     },
     "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
+      "name": "Maemo",
+      "marketingName": "Maemo",
       "version": null,
       "manufacturer": "linux-foundation",
       "bits": null
