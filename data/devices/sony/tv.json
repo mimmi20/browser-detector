@@ -13,6 +13,34 @@
     "type": "tv",
     "platform": null
   },
+  "sony bravia 2015": {
+    "deviceName": "Bravia 2015",
+    "marketingName": "Bravia 2015",
+    "manufacturer": "sony",
+    "brand": "sony",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": false,
+      "size": null
+    },
+    "type": "tv",
+    "platform": null
+  },
+  "sony bravia 4k 2015": {
+    "deviceName": "Bravia 4K 2015",
+    "marketingName": "Bravia 4K 2015",
+    "manufacturer": "sony",
+    "brand": "sony",
+    "display": {
+      "width": 3840,
+      "height": 2160,
+      "touch": false,
+      "size": null
+    },
+    "type": "tv",
+    "platform": null
+  },
   "sony bravia 4k gb": {
     "deviceName": "Bravia 4K GB",
     "marketingName": "Bravia 4K GB",
@@ -41,6 +69,20 @@
     "type": "tv",
     "platform": "linux"
   },
+  "sony kd-49x8505b": {
+    "deviceName": "KD-49X8505B",
+    "marketingName": "KD-49X8505B",
+    "manufacturer": "sony",
+    "brand": "sony",
+    "display": {
+      "width": 3840,
+      "height": 2160,
+      "touch": false,
+      "size": 49
+    },
+    "type": "tv",
+    "platform": "linux smartphone os (maemo)"
+  },
   "sony kd-55x8505b": {
     "deviceName": "KD-55X8505B",
     "marketingName": "KD-55X8505B",
@@ -51,6 +93,34 @@
       "height": 2160,
       "touch": false,
       "size": 54.6
+    },
+    "type": "tv",
+    "platform": "linux smartphone os (maemo)"
+  },
+  "sony kd-55x9005a": {
+    "deviceName": "KD-55X9005A",
+    "marketingName": "KD-55X9005A",
+    "manufacturer": "sony",
+    "brand": "sony",
+    "display": {
+      "width": 3840,
+      "height": 2160,
+      "touch": false,
+      "size": 55
+    },
+    "type": "tv",
+    "platform": "linux smartphone os (maemo)"
+  },
+  "sony kd-55x9005b": {
+    "deviceName": "KD-55X9005B",
+    "marketingName": "KD-55X9005B",
+    "manufacturer": "sony",
+    "brand": "sony",
+    "display": {
+      "width": 3840,
+      "height": 2160,
+      "touch": false,
+      "size": 55
     },
     "type": "tv",
     "platform": "linux smartphone os (maemo)"
@@ -69,6 +139,34 @@
     "type": "tv",
     "platform": "linux smartphone os (maemo)"
   },
+  "sony kd-65s9005b": {
+    "deviceName": "KD-65S9005B",
+    "marketingName": "KD-65S9005B",
+    "manufacturer": "sony",
+    "brand": "sony",
+    "display": {
+      "width": 3840,
+      "height": 2160,
+      "touch": false,
+      "size": 65
+    },
+    "type": "tv",
+    "platform": "linux smartphone os (maemo)"
+  },
+  "sony kd-65x8505b": {
+    "deviceName": "KD-65X8505B",
+    "marketingName": "KD-65X8505B",
+    "manufacturer": "sony",
+    "brand": "sony",
+    "display": {
+      "width": 3840,
+      "height": 2160,
+      "touch": false,
+      "size": 65
+    },
+    "type": "tv",
+    "platform": "linux smartphone os (maemo)"
+  },
   "sony kd-65zd9": {
     "deviceName": "KD-65ZD9",
     "marketingName": "KD-65ZD9",
@@ -83,19 +181,131 @@
     "type": "tv",
     "platform": "linux smartphone os (maemo)"
   },
+  "sony kdl-22ex320": {
+    "deviceName": "KDL-22EX320",
+    "marketingName": "KDL-22EX320",
+    "manufacturer": "sony",
+    "brand": "sony",
+    "display": {
+      "width": 1366,
+      "height": 768,
+      "touch": false,
+      "size": 22
+    },
+    "type": "tv",
+    "platform": "linux smartphone os (maemo)"
+  },
+  "sony kdl-22ex555": {
+    "deviceName": "KDL-22EX555",
+    "marketingName": "KDL-22EX555",
+    "manufacturer": "sony",
+    "brand": "sony",
+    "display": {
+      "width": 1366,
+      "height": 768,
+      "touch": false,
+      "size": 22
+    },
+    "type": "tv",
+    "platform": "linux smartphone os (maemo)"
+  },
+  "sony kdl-24ex325": {
+    "deviceName": "KDL-24EX325",
+    "marketingName": "KDL-24EX325",
+    "manufacturer": "sony",
+    "brand": "sony",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": false,
+      "size": 24
+    },
+    "type": "tv",
+    "platform": "linux smartphone os (maemo)"
+  },
+  "sony kdl-24w605a": {
+    "deviceName": "KDL-24W605A",
+    "marketingName": "KDL-24W605A",
+    "manufacturer": "sony",
+    "brand": "sony",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": false,
+      "size": 24
+    },
+    "type": "tv",
+    "platform": "linux smartphone os (maemo)"
+  },
+  "sony kdl-32cx525": {
+    "deviceName": "KDL-32CX525",
+    "marketingName": "KDL-32CX525",
+    "manufacturer": "sony",
+    "brand": "sony",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": false,
+      "size": 32
+    },
+    "type": "tv",
+    "platform": "linux smartphone os (maemo)"
+  },
+  "sony kdl-32ex727": {
+    "deviceName": "KDL-32EX727",
+    "marketingName": "KDL-32EX727",
+    "manufacturer": "sony",
+    "brand": "sony",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": false,
+      "size": 32
+    },
+    "type": "tv",
+    "platform": "linux smartphone os (maemo)"
+  },
   "sony kdl-32hx755": {
     "deviceName": "KDL-32HX755",
     "marketingName": "KDL-32HX755",
     "manufacturer": "sony",
     "brand": "sony",
     "display": {
-      "width": null,
-      "height": null,
+      "width": 1920,
+      "height": 1080,
       "touch": false,
-      "size": null
+      "size": 32
     },
     "type": "tv",
     "platform": "linux"
+  },
+  "sony kdl-32hx757": {
+    "deviceName": "KDL-32HX757",
+    "marketingName": "KDL-32HX757",
+    "manufacturer": "sony",
+    "brand": "sony",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": false,
+      "size": 32
+    },
+    "type": "tv",
+    "platform": "linux smartphone os (maemo)"
+  },
+  "sony kdl-32w650a": {
+    "deviceName": "KDL-32W650A",
+    "marketingName": "KDL-32W650A",
+    "manufacturer": "sony",
+    "brand": "sony",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": false,
+      "size": 32
+    },
+    "type": "tv",
+    "platform": "linux smartphone os (maemo)"
   },
   "sony kdl-32w653a": {
     "deviceName": "KDL-32W653A",
@@ -117,10 +327,38 @@
     "manufacturer": "sony",
     "brand": "sony",
     "display": {
-      "width": null,
-      "height": null,
+      "width": 1920,
+      "height": 1080,
       "touch": false,
-      "size": null
+      "size": 32
+    },
+    "type": "tv",
+    "platform": "linux smartphone os (maemo)"
+  },
+  "sony kdl-32w705b": {
+    "deviceName": "KDL-32W705B",
+    "marketingName": "KDL-32W705B",
+    "manufacturer": "sony",
+    "brand": "sony",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": false,
+      "size": 32
+    },
+    "type": "tv",
+    "platform": "linux smartphone os (maemo)"
+  },
+  "sony kdl-32w706b": {
+    "deviceName": "KDL-32W706B",
+    "marketingName": "KDL-32W706B",
+    "manufacturer": "sony",
+    "brand": "sony",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": false,
+      "size": 32
     },
     "type": "tv",
     "platform": "linux smartphone os (maemo)"
@@ -131,13 +369,41 @@
     "manufacturer": "sony",
     "brand": "sony",
     "display": {
-      "width": null,
-      "height": null,
+      "width": 1920,
+      "height": 1080,
       "touch": false,
-      "size": null
+      "size": 37
     },
     "type": "tv",
     "platform": "linux"
+  },
+  "sony kdl-40ex650": {
+    "deviceName": "KDL-40EX650",
+    "marketingName": "KDL-40EX650",
+    "manufacturer": "sony",
+    "brand": "sony",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": false,
+      "size": 40
+    },
+    "type": "tv",
+    "platform": "linux smartphone os (maemo)"
+  },
+  "sony kdl-40ex655": {
+    "deviceName": "KDL-40EX655",
+    "marketingName": "KDL-40EX655",
+    "manufacturer": "sony",
+    "brand": "sony",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": false,
+      "size": 40
+    },
+    "type": "tv",
+    "platform": "linux smartphone os (maemo)"
   },
   "sony kdl-40ex720": {
     "deviceName": "KDL-40EX720",
@@ -145,13 +411,83 @@
     "manufacturer": "sony",
     "brand": "sony",
     "display": {
-      "width": null,
-      "height": null,
+      "width": 1920,
+      "height": 1080,
       "touch": false,
-      "size": null
+      "size": 40
     },
     "type": "tv",
     "platform": "linux"
+  },
+  "sony kdl-40ex725": {
+    "deviceName": "KDL-40EX725",
+    "marketingName": "KDL-40EX725",
+    "manufacturer": "sony",
+    "brand": "sony",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": false,
+      "size": 40
+    },
+    "type": "tv",
+    "platform": "linux smartphone os (maemo)"
+  },
+  "sony kdl-40ex729": {
+    "deviceName": "KDL-40EX729",
+    "marketingName": "KDL-40EX729",
+    "manufacturer": "sony",
+    "brand": "sony",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": false,
+      "size": 40
+    },
+    "type": "tv",
+    "platform": "linux smartphone os (maemo)"
+  },
+  "sony kdl-40hx751": {
+    "deviceName": "KDL-40HX751",
+    "marketingName": "KDL-40HX751",
+    "manufacturer": "sony",
+    "brand": "sony",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": false,
+      "size": 40
+    },
+    "type": "tv",
+    "platform": "linux smartphone os (maemo)"
+  },
+  "sony kdl-40hx755": {
+    "deviceName": "KDL-40HX755",
+    "marketingName": "KDL-40HX755",
+    "manufacturer": "sony",
+    "brand": "sony",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": false,
+      "size": 40
+    },
+    "type": "tv",
+    "platform": "linux smartphone os (maemo)"
+  },
+  "sony kdl-40w605b": {
+    "deviceName": "KDL-40W605B",
+    "marketingName": "KDL-40W605B",
+    "manufacturer": "sony",
+    "brand": "sony",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": false,
+      "size": 40
+    },
+    "type": "tv",
+    "platform": "linux smartphone os (maemo)"
   },
   "sony kdl-40w905a": {
     "deviceName": "KDL-40W905A",
@@ -159,8 +495,8 @@
     "manufacturer": "sony",
     "brand": "sony",
     "display": {
-      "width": null,
-      "height": null,
+      "width": 1920,
+      "height": 1080,
       "touch": false,
       "size": 40
     },
@@ -173,10 +509,52 @@
     "manufacturer": "sony",
     "brand": "sony",
     "display": {
-      "width": null,
-      "height": null,
+      "width": 1920,
+      "height": 1080,
       "touch": false,
-      "size": null
+      "size": 42
+    },
+    "type": "tv",
+    "platform": "linux smartphone os (maemo)"
+  },
+  "sony kdl-42w656a": {
+    "deviceName": "KDL-42W656A",
+    "marketingName": "KDL-42W656A",
+    "manufacturer": "sony",
+    "brand": "sony",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": false,
+      "size": 42
+    },
+    "type": "tv",
+    "platform": "linux smartphone os (maemo)"
+  },
+  "sony kdl-42w705b": {
+    "deviceName": "KDL-42W705B",
+    "marketingName": "KDL-42W705B",
+    "manufacturer": "sony",
+    "brand": "sony",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": false,
+      "size": 42
+    },
+    "type": "tv",
+    "platform": "linux smartphone os (maemo)"
+  },
+  "sony kdl-42w706b": {
+    "deviceName": "KDL-42W706B",
+    "marketingName": "KDL-42W706B",
+    "manufacturer": "sony",
+    "brand": "sony",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": false,
+      "size": 42
     },
     "type": "tv",
     "platform": "linux smartphone os (maemo)"
@@ -187,10 +565,136 @@
     "manufacturer": "sony",
     "brand": "sony",
     "display": {
-      "width": null,
-      "height": null,
+      "width": 1920,
+      "height": 1080,
       "touch": false,
       "size": 42
+    },
+    "type": "tv",
+    "platform": "linux smartphone os (maemo)"
+  },
+  "sony kdl-42w805b": {
+    "deviceName": "KDL-42W805B",
+    "marketingName": "KDL-42W805B",
+    "manufacturer": "sony",
+    "brand": "sony",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": false,
+      "size": 42
+    },
+    "type": "tv",
+    "platform": "linux smartphone os (maemo)"
+  },
+  "sony kdl-42w807a": {
+    "deviceName": "KDL-42W807A",
+    "marketingName": "KDL-42W807A",
+    "manufacturer": "sony",
+    "brand": "sony",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": false,
+      "size": 42
+    },
+    "type": "tv",
+    "platform": "linux smartphone os (maemo)"
+  },
+  "sony kdl-42w815b": {
+    "deviceName": "KDL-42W815B",
+    "marketingName": "KDL-42W815B",
+    "manufacturer": "sony",
+    "brand": "sony",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": false,
+      "size": 42
+    },
+    "type": "tv",
+    "platform": "linux smartphone os (maemo)"
+  },
+  "sony kdl-42w829b": {
+    "deviceName": "KDL-42W829B",
+    "marketingName": "KDL-42W829B",
+    "manufacturer": "sony",
+    "brand": "sony",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": false,
+      "size": 42
+    },
+    "type": "tv",
+    "platform": "linux smartphone os (maemo)"
+  },
+  "sony kdl-46ex720": {
+    "deviceName": "KDL-46EX720",
+    "marketingName": "KDL-46EX720",
+    "manufacturer": "sony",
+    "brand": "sony",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": false,
+      "size": 46
+    },
+    "type": "tv",
+    "platform": "linux smartphone os (maemo)"
+  },
+  "sony kdl-46ex721": {
+    "deviceName": "KDL-46EX721",
+    "marketingName": "KDL-46EX721",
+    "manufacturer": "sony",
+    "brand": "sony",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": false,
+      "size": 46
+    },
+    "type": "tv",
+    "platform": "linux smartphone os (maemo)"
+  },
+  "sony kdl-46ex725": {
+    "deviceName": "KDL-46EX725",
+    "marketingName": "KDL-46EX725",
+    "manufacturer": "sony",
+    "brand": "sony",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": false,
+      "size": 46
+    },
+    "type": "tv",
+    "platform": "linux smartphone os (maemo)"
+  },
+  "sony kdl-46hx758": {
+    "deviceName": "KDL-46HX758",
+    "marketingName": "KDL-46HX758",
+    "manufacturer": "sony",
+    "brand": "sony",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": false,
+      "size": 46
+    },
+    "type": "tv",
+    "platform": "linux smartphone os (maemo)"
+  },
+  "sony kdl-46hx825": {
+    "deviceName": "KDL-46HX825",
+    "marketingName": "KDL-46HX825",
+    "manufacturer": "sony",
+    "brand": "sony",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": false,
+      "size": 46
     },
     "type": "tv",
     "platform": "linux smartphone os (maemo)"
@@ -223,19 +727,257 @@
     "type": "tv",
     "platform": "linux smartphone os (maemo)"
   },
+  "sony kdl-47w805a": {
+    "deviceName": "KDL-47W805A",
+    "marketingName": "KDL-47W805A",
+    "manufacturer": "sony",
+    "brand": "sony",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": false,
+      "size": 47
+    },
+    "type": "tv",
+    "platform": "linux smartphone os (maemo)"
+  },
+  "sony kdl-47w808a": {
+    "deviceName": "KDL-47W808A",
+    "marketingName": "KDL-47W808A",
+    "manufacturer": "sony",
+    "brand": "sony",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": false,
+      "size": 47
+    },
+    "type": "tv",
+    "platform": "linux smartphone os (maemo)"
+  },
+  "sony kdl-48w585b": {
+    "deviceName": "KDL-48W585B",
+    "marketingName": "KDL-48W585B",
+    "manufacturer": "sony",
+    "brand": "sony",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": false,
+      "size": 48
+    },
+    "type": "tv",
+    "platform": "linux smartphone os (maemo)"
+  },
+  "sony kdl-48w605b": {
+    "deviceName": "KDL-48W605B",
+    "marketingName": "KDL-48W605B",
+    "manufacturer": "sony",
+    "brand": "sony",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": false,
+      "size": 48
+    },
+    "type": "tv",
+    "platform": "linux smartphone os (maemo)"
+  },
+  "sony kdl-50w656a": {
+    "deviceName": "KDL-50W656A",
+    "marketingName": "KDL-50W656A",
+    "manufacturer": "sony",
+    "brand": "sony",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": false,
+      "size": 50
+    },
+    "type": "tv",
+    "platform": "linux smartphone os (maemo)"
+  },
+  "sony kdl-50w685a": {
+    "deviceName": "KDL-50W685A",
+    "marketingName": "KDL-50W685A",
+    "manufacturer": "sony",
+    "brand": "sony",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": false,
+      "size": 50
+    },
+    "type": "tv",
+    "platform": "linux smartphone os (maemo)"
+  },
+  "sony kdl-50w805b": {
+    "deviceName": "KDL-50W805B",
+    "marketingName": "KDL-50W805B",
+    "manufacturer": "sony",
+    "brand": "sony",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": false,
+      "size": 50
+    },
+    "type": "tv",
+    "platform": "linux smartphone os (maemo)"
+  },
   "sony kdl-50w815b": {
     "deviceName": "KDL-50W815B",
     "marketingName": "KDL-50W815B",
     "manufacturer": "sony",
     "brand": "sony",
     "display": {
-      "width": null,
-      "height": null,
+      "width": 1920,
+      "height": 1080,
       "touch": false,
-      "size": null
+      "size": 50
     },
     "type": "tv",
     "platform": null
+  },
+  "sony kdl-50w828b": {
+    "deviceName": "KDL-50W828B",
+    "marketingName": "KDL-50W828B",
+    "manufacturer": "sony",
+    "brand": "sony",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": false,
+      "size": 49.5
+    },
+    "type": "tv",
+    "platform": "linux smartphone os (maemo)"
+  },
+  "sony kdl-50w829b": {
+    "deviceName": "KDL-50W829B",
+    "marketingName": "KDL-50W829B",
+    "manufacturer": "sony",
+    "brand": "sony",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": false,
+      "size": 49.5
+    },
+    "type": "tv",
+    "platform": "linux smartphone os (maemo)"
+  },
+  "sony kdl-55hx755": {
+    "deviceName": "KDL-55HX755",
+    "marketingName": "KDL-55HX755",
+    "manufacturer": "sony",
+    "brand": "sony",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": false,
+      "size": 55
+    },
+    "type": "tv",
+    "platform": "linux smartphone os (maemo)"
+  },
+  "sony kdl-55hx855": {
+    "deviceName": "KDL-55HX855",
+    "marketingName": "KDL-55HX855",
+    "manufacturer": "sony",
+    "brand": "sony",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": false,
+      "size": 55
+    },
+    "type": "tv",
+    "platform": "linux smartphone os (maemo)"
+  },
+  "sony kdl-55hx925": {
+    "deviceName": "KDL-55HX925",
+    "marketingName": "KDL-55HX925",
+    "manufacturer": "sony",
+    "brand": "sony",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": false,
+      "size": 55
+    },
+    "type": "tv",
+    "platform": "linux smartphone os (maemo)"
+  },
+  "sony kdl-55w805a": {
+    "deviceName": "KDL-55W805A",
+    "marketingName": "KDL-55W805A",
+    "manufacturer": "sony",
+    "brand": "sony",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": false,
+      "size": 55
+    },
+    "type": "tv",
+    "platform": "linux smartphone os (maemo)"
+  },
+  "sony kdl-55w805b": {
+    "deviceName": "KDL-55W805B",
+    "marketingName": "KDL-55W805B",
+    "manufacturer": "sony",
+    "brand": "sony",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": false,
+      "size": 55
+    },
+    "type": "tv",
+    "platform": "linux smartphone os (maemo)"
+  },
+  "sony kdl-55w807a": {
+    "deviceName": "KDL-55W807A",
+    "marketingName": "KDL-55W807A",
+    "manufacturer": "sony",
+    "brand": "sony",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": false,
+      "size": 55
+    },
+    "type": "tv",
+    "platform": "linux smartphone os (maemo)"
+  },
+  "sony kdl-55w815b": {
+    "deviceName": "KDL-55W815B",
+    "marketingName": "KDL-55W815B",
+    "manufacturer": "sony",
+    "brand": "sony",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": false,
+      "size": 55
+    },
+    "type": "tv",
+    "platform": "linux smartphone os (maemo)"
+  },
+  "sony kdl-55w829b": {
+    "deviceName": "KDL-55W829B",
+    "marketingName": "KDL-55W829B",
+    "manufacturer": "sony",
+    "brand": "sony",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": false,
+      "size": 55
+    },
+    "type": "tv",
+    "platform": "linux smartphone os (maemo)"
   },
   "sony kdl-55w905a": {
     "deviceName": "KDL-55W905A",
@@ -243,10 +985,52 @@
     "manufacturer": "sony",
     "brand": "sony",
     "display": {
-      "width": null,
-      "height": null,
+      "width": 1920,
+      "height": 1080,
       "touch": false,
       "size": 55
+    },
+    "type": "tv",
+    "platform": "linux smartphone os (maemo)"
+  },
+  "sony kdl-55w955b": {
+    "deviceName": "KDL-55W955B",
+    "marketingName": "KDL-55W955B",
+    "manufacturer": "sony",
+    "brand": "sony",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": false,
+      "size": 55
+    },
+    "type": "tv",
+    "platform": "linux smartphone os (maemo)"
+  },
+  "sony kdl-60w605b": {
+    "deviceName": "KDL-60W605B",
+    "marketingName": "KDL-60W605B",
+    "manufacturer": "sony",
+    "brand": "sony",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": false,
+      "size": 60
+    },
+    "type": "tv",
+    "platform": "linux smartphone os (maemo)"
+  },
+  "sony kdl-60w855b": {
+    "deviceName": "KDL-60W855B",
+    "marketingName": "KDL-60W855B",
+    "manufacturer": "sony",
+    "brand": "sony",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": false,
+      "size": 60
     },
     "type": "tv",
     "platform": "linux smartphone os (maemo)"
@@ -254,6 +1038,20 @@
   "sony kdl-65w859c": {
     "deviceName": "KDL-65W859C",
     "marketingName": "KDL-65W859C",
+    "manufacturer": "sony",
+    "brand": "sony",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": false,
+      "size": 65
+    },
+    "type": "tv",
+    "platform": "linux smartphone os (maemo)"
+  },
+  "sony kdl-65w955b": {
+    "deviceName": "KDL-65W955B",
+    "marketingName": "KDL-65W955B",
     "manufacturer": "sony",
     "brand": "sony",
     "display": {
