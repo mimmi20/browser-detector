@@ -46,9 +46,10 @@
     "ergebnis/phpstan-rules": "^0.14.3",
     "friendsofphp/php-cs-fixer": "^2.16.1",
     "infection/infection": "^0.13.6",
+    "laminas/laminas-diactoros": "^2.2.2",
     "mikey179/vfsstream": "^1.6.8",
     "pepakriz/phpstan-exception-rules": "^0.10.1",
-    "phpstan/phpstan": "^0.12.10",
+    "phpstan/phpstan": "^0.12.11",
     "phpstan/phpstan-beberlei-assert": "^0.12.2",
     "phpstan/phpstan-deprecation-rules": "^0.12.2",
     "phpstan/phpstan-phpunit": "^0.12.6",
@@ -56,8 +57,7 @@
     "phpunit/phpunit": "^7.5.20 || ^8.5.0",
     "squizlabs/php_codesniffer": "^3.5.4",
     "symfony/cache": "^4.4.4 || ^5.0.4",
-    "symfony/finder": "^4.4.4 || ^5.0.4",
-    "laminas/laminas-diactoros": "^2.2.2"
+    "symfony/finder": "^4.4.4 || ^5.0.4"
   },
   "config": {
     "platform": {
