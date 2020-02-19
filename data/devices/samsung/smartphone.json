@@ -83,6 +83,20 @@
     "type": "smartphone",
     "platform": "windows phone"
   },
+  "samsung gt-i8370": {
+    "deviceName": "GT-I8370",
+    "marketingName": "Ativ S",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 4.8
+    },
+    "type": "smartphone",
+    "platform": null
+  },
   "samsung gt-i8750": {
     "deviceName": "GT-I8750",
     "marketingName": "Ativ S",
@@ -92,7 +106,7 @@
       "width": 1280,
       "height": 720,
       "touch": true,
-      "size": null
+      "size": 4.8
     },
     "type": "smartphone",
     "platform": "windows phone"
@@ -106,7 +120,7 @@
       "width": 1280,
       "height": 720,
       "touch": true,
-      "size": null
+      "size": 4.8
     },
     "type": "smartphone",
     "platform": "windows phone"
@@ -2743,6 +2757,34 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "samsung sm-g850k": {
+    "deviceName": "SM-G850K",
+    "marketingName": "Galaxy Alpha (Korea)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 4.7
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sm-g850s": {
+    "deviceName": "SM-G850S",
+    "marketingName": "Galaxy Alpha (Korea)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 4.7
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "samsung sm-g850l": {
     "deviceName": "SM-G850L",
     "marketingName": "Galaxy Alpha (Lorea)",
@@ -3695,6 +3737,20 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "samsung sm-e5000": {
+    "deviceName": "SM-E5000",
+    "marketingName": "Galaxy E5 3G",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "samsung sm-s978l": {
     "deviceName": "SM-S978L",
     "marketingName": "Galaxy E5 Duos",
@@ -4185,6 +4241,20 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "samsung sm-g150ns": {
+    "deviceName": "SM-G150NS",
+    "marketingName": "Galaxy Folder LTE",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 3.8
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "samsung gt-s7392": {
     "deviceName": "GT-S7392",
     "marketingName": "Galaxy Fresh",
@@ -4327,6 +4397,20 @@
   },
   "samsung shv-e270k": {
     "deviceName": "SHV-E270K",
+    "marketingName": "Galaxy Grand",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung shv-e275s": {
+    "deviceName": "SHV-E275S",
     "marketingName": "Galaxy Grand",
     "manufacturer": "samsung",
     "brand": "samsung",
@@ -4495,6 +4579,20 @@
   },
   "samsung gt-i9082l": {
     "deviceName": "GT-I9082L",
+    "marketingName": "Galaxy Grand Duos",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung gt-i9118": {
+    "deviceName": "GT-I9118",
     "marketingName": "Galaxy Grand Duos",
     "manufacturer": "samsung",
     "brand": "samsung",
@@ -5627,8 +5725,8 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "samsung sm-j320v": {
-    "deviceName": "SM-J320V",
+  "samsung sm-j320n0": {
+    "deviceName": "SM-J320N0",
     "marketingName": "Galaxy J3 (2016)",
     "manufacturer": "samsung",
     "brand": "samsung",
@@ -5823,51 +5921,9 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "samsung sm-j320f": {
-    "deviceName": "SM-J320F",
-    "marketingName": "Galaxy J3 4G (2016)",
-    "manufacturer": "samsung",
-    "brand": "samsung",
-    "display": {
-      "width": 1280,
-      "height": 720,
-      "touch": true,
-      "size": 5
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
-  "samsung sm-j320fn": {
-    "deviceName": "SM-J320FN",
-    "marketingName": "Galaxy J3 4G (2016)",
-    "manufacturer": "samsung",
-    "brand": "samsung",
-    "display": {
-      "width": 1280,
-      "height": 720,
-      "touch": true,
-      "size": 5
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
   "samsung sm-j320g": {
     "deviceName": "SM-J320G",
-    "marketingName": "Galaxy J3 4G (2016)",
-    "manufacturer": "samsung",
-    "brand": "samsung",
-    "display": {
-      "width": 1280,
-      "height": 720,
-      "touch": true,
-      "size": 5
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
-  "samsung sm-j320m": {
-    "deviceName": "SM-J320M",
-    "marketingName": "Galaxy J3 4G (2016)",
+    "marketingName": "Galaxy J3 4G (2016, Asia)",
     "manufacturer": "samsung",
     "brand": "samsung",
     "display": {
@@ -5893,9 +5949,65 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "samsung sm-j320f": {
+    "deviceName": "SM-J320F",
+    "marketingName": "Galaxy J3 4G (2016, EMEA)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sm-j320fn": {
+    "deviceName": "SM-J320FN",
+    "marketingName": "Galaxy J3 4G (2016, Europe)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sm-j320m": {
+    "deviceName": "SM-J320M",
+    "marketingName": "Galaxy J3 4G (2016, LATAM)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "samsung sm-j320p": {
     "deviceName": "SM-J320P",
-    "marketingName": "Galaxy J3 4G (2016, Sprint)",
+    "marketingName": "Galaxy J3 4G (2016, Sprint, Virgin Mobile, Boost)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sm-j320v": {
+    "deviceName": "SM-J320V",
+    "marketingName": "Galaxy J3 4G (2016, Verizon)",
     "manufacturer": "samsung",
     "brand": "samsung",
     "display": {
@@ -5931,6 +6043,20 @@
       "height": 720,
       "touch": true,
       "size": null
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sm-j320y": {
+    "deviceName": "SM-J320Y",
+    "marketingName": "Galaxy J3 Duos (2016)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 5
     },
     "type": "smartphone",
     "platform": "android"
@@ -7461,6 +7587,20 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "samsung sm-m405f": {
+    "deviceName": "SM-M405F",
+    "marketingName": "Galaxy M40 2019 Dual SIM",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 2340,
+      "height": 1080,
+      "touch": true,
+      "size": 6.3
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "samsung sm-g7508": {
     "deviceName": "SM-G7508",
     "marketingName": "Galaxy Mega 2",
@@ -7947,6 +8087,20 @@
       "height": 1440,
       "touch": true,
       "size": 6.8
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung gt-i7100": {
+    "deviceName": "GT-I7100",
+    "marketingName": "Galaxy Note 2",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 5.5
     },
     "type": "smartphone",
     "platform": "android"
@@ -11367,8 +11521,36 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "samsung shv-e120k": {
+    "deviceName": "SHV-E120K",
+    "marketingName": "Galaxy S2 HD",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 4.6
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "samsung shv-e120l": {
     "deviceName": "SHV-E120L",
+    "marketingName": "Galaxy S2 HD",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 4.6
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung shv-e120s": {
+    "deviceName": "SHV-E120S",
     "marketingName": "Galaxy S2 HD",
     "manufacturer": "samsung",
     "brand": "samsung",
@@ -12669,6 +12851,20 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "samsung gt-i1318": {
+    "deviceName": "GT-I1318",
+    "marketingName": "Galaxy S4 Mini 3G",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 960,
+      "height": 540,
+      "touch": true,
+      "size": 4.3
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "samsung gt-i9192": {
     "deviceName": "GT-I9192",
     "marketingName": "Galaxy S4 Mini Duos",
@@ -13733,6 +13929,20 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "samsung sm-g920": {
+    "deviceName": "SM-G920",
+    "marketingName": "Galaxy S6 Duos",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 2560,
+      "height": 1440,
+      "touch": true,
+      "size": 5.1
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "samsung 404sc": {
     "deviceName": "404SC",
     "marketingName": "Galaxy S6 Edge",
@@ -13973,6 +14183,34 @@
   },
   "samsung sm-g928c": {
     "deviceName": "SM-G928C",
+    "marketingName": "Galaxy S6 Edge Plus",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 2560,
+      "height": 1440,
+      "touch": true,
+      "size": 5.7
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sm-g928k": {
+    "deviceName": "SM-G928K",
+    "marketingName": "Galaxy S6 Edge Plus",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 2560,
+      "height": 1440,
+      "touch": true,
+      "size": 5.7
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sm-g928l": {
+    "deviceName": "SM-G928L",
     "marketingName": "Galaxy S6 Edge Plus",
     "manufacturer": "samsung",
     "brand": "samsung",
@@ -15511,6 +15749,20 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "samsung gt-s7583t": {
+    "deviceName": "GT-S7583T",
+    "marketingName": "Galaxy Trend Plus",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 4
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "samsung shw-m130l": {
     "deviceName": "SHW-M130L",
     "marketingName": "Galaxy U",
@@ -15521,6 +15773,34 @@
       "height": 480,
       "touch": true,
       "size": 3.7
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sm-g318hz": {
+    "deviceName": "SM-G318HZ",
+    "marketingName": "Galaxy V Plus",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 4
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sm-g318mz": {
+    "deviceName": "SM-G318MZ",
+    "marketingName": "Galaxy V Plus",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 4
     },
     "type": "smartphone",
     "platform": "android"
@@ -15549,20 +15829,6 @@
       "height": 480,
       "touch": true,
       "size": null
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
-  "samsung shv-e500l": {
-    "deviceName": "SHV-E500L",
-    "marketingName": "Galaxy Win",
-    "manufacturer": "samsung",
-    "brand": "samsung",
-    "display": {
-      "width": 800,
-      "height": 480,
-      "touch": true,
-      "size": 4.7
     },
     "type": "smartphone",
     "platform": "android"
@@ -15598,6 +15864,48 @@
   "samsung gt-i8552b": {
     "deviceName": "GT-I8552B",
     "marketingName": "Galaxy Win Duos",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 4.7
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung shv-e500k": {
+    "deviceName": "SHV-E500K",
+    "marketingName": "Galaxy Win LTE",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 4.7
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung shv-e500l": {
+    "deviceName": "SHV-E500L",
+    "marketingName": "Galaxy Win LTE",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 4.7
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung shv-e500s": {
+    "deviceName": "SHV-E500S",
+    "marketingName": "Galaxy Win LTE",
     "manufacturer": "samsung",
     "brand": "samsung",
     "display": {
@@ -16057,6 +16365,34 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "samsung gt-i3900": {
+    "deviceName": "GT-I3900",
+    "marketingName": "GT-I3900",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "size": null
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung gt-i7510": {
+    "deviceName": "GT-I7510",
+    "marketingName": "GT-I7510",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "size": null
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "samsung gt-i8240": {
     "deviceName": "GT-I8240",
     "marketingName": "GT-I8240",
@@ -16098,6 +16434,20 @@
     },
     "type": "smartphone",
     "platform": "android"
+  },
+  "samsung gt-i8710": {
+    "deviceName": "GT-I8710",
+    "marketingName": "GT-I8710",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "size": null
+    },
+    "type": "smartphone",
+    "platform": null
   },
   "samsung gt-i9050": {
     "deviceName": "GT-I9050",
