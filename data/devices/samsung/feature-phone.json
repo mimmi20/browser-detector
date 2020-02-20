@@ -223,6 +223,20 @@
     "type": "feature-phone",
     "platform": "java"
   },
+  "samsung gt-c3300i": {
+    "deviceName": "GT-C3300I",
+    "marketingName": "Champ",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": true,
+      "size": 2.4
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "samsung gt-c3303": {
     "deviceName": "GT-C3303",
     "marketingName": "Champ",
@@ -485,6 +499,34 @@
       "height": 240,
       "touch": true,
       "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "samsung gt-b5722": {
+    "deviceName": "GT-B5722",
+    "marketingName": "Duos B5722",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": 2.8
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "samsung gt-b5722c": {
+    "deviceName": "GT-B5722C",
+    "marketingName": "Duos B5722",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": 2.8
     },
     "type": "feature-phone",
     "platform": "java"
@@ -2333,6 +2375,20 @@
       "height": 240,
       "touch": false,
       "size": 2.4
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "samsung sgh-t199": {
+    "deviceName": "SGH-T199",
+    "marketingName": "SGH-T199",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": 2
     },
     "type": "feature-phone",
     "platform": "java"
