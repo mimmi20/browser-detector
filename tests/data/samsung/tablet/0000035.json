@@ -1,6 +1,196 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; SM-T320 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "SM-T320",
+      "marketingName": "Galaxy Tab Pro 8.4 Wi-Fi",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 2560,
+        "height": 1600,
+        "touch": true,
+        "size": 8.4
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "67.0.3396.87",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "67.0.3396.87",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; SAMSUNG SM-T280 Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/7.2 Chrome/59.0.3071.125 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "SM-T280",
+      "marketingName": "Galaxy Tab A (7.0, Wi-Fi, 2016)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 7
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Samsung Browser",
+      "modus": null,
+      "version": "7.2.0",
+      "manufacturer": "samsung",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "59.0.3071.125",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; SM-T800 Build/MMB29K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.111 Safari/537.36 OPR/46.3.2246.127744"
+    },
+    "device": {
+      "deviceName": "SM-T800",
+      "marketingName": "Galaxy Tab S 10.5",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 2560,
+        "height": 1600,
+        "touch": true,
+        "size": 10.5
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "46.3.2246.127744",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "63.0.3239.111",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; Nexus 10 Build/LMY49J) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Nexus 10",
+      "marketingName": "Nexus 10",
+      "manufacturer": "samsung",
+      "brand": "google",
+      "display": {
+        "width": 2560,
+        "height": 1600,
+        "touch": true,
+        "size": 10.1
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "67.0.3396.87",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "67.0.3396.87",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.1.2; GT-N8010 Build/JZO54K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.230 Safari/537.36 (Ecosia android@65.0.3325.230)"
+    },
+    "device": {
+      "deviceName": "GT-N8010",
+      "marketingName": "Galaxy Note 10.1 Wi-Fi",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 10.1
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Ecosia",
+      "modus": null,
+      "version": "65.0.3325.230",
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.1.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "65.0.3325.230",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; SM-T210 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36"
     },
     "device": {
@@ -3606,196 +3796,6 @@
     "engine": {
       "name": "Blink",
       "version": "67.0.3396.123",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; SM-T230 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.91 Safari/537.36"
-    },
-    "device": {
-      "deviceName": "SM-T230",
-      "marketingName": "Galaxy Tab 4 7.0",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 1280,
-        "height": 800,
-        "touch": true,
-        "size": 7
-      },
-      "type": "tablet"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "69.0.3497.91",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.4.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "69.0.3497.91",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; SM-T110 Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.91 Safari/537.36"
-    },
-    "device": {
-      "deviceName": "SM-T110",
-      "marketingName": "Galaxy Tab 3 Lite 7",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 1024,
-        "height": 600,
-        "touch": true,
-        "size": 7
-      },
-      "type": "tablet"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "69.0.3497.91",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.2.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "69.0.3497.91",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 8.0.0; SM-T820 Build/R16NW) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.91 Safari/537.36"
-    },
-    "device": {
-      "deviceName": "SM-T820",
-      "marketingName": "Galaxy Tab S3 (9.7)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 2048,
-        "height": 1536,
-        "touch": true,
-        "size": 9.7
-      },
-      "type": "tablet"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "69.0.3497.91",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "8.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "69.0.3497.91",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; SM-T590 Build/M1AJQ) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.91 Safari/537.36"
-    },
-    "device": {
-      "deviceName": "SM-T590",
-      "marketingName": "Galaxy Tab A (10.5, Wi-Fi)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 1920,
-        "height": 1200,
-        "touch": true,
-        "size": 10.5
-      },
-      "type": "tablet"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "68.0.3440.91",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "8.1.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "68.0.3440.91",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; SM-T900 Build/LMY47X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36"
-    },
-    "device": {
-      "deviceName": "SM-T900",
-      "marketingName": "Galaxy Tab Pro 12.2",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 2560,
-        "height": 1600,
-        "touch": true,
-        "size": 12.2
-      },
-      "type": "tablet"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "69.0.3497.100",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.1.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "69.0.3497.100",
       "manufacturer": "google"
     }
   }
