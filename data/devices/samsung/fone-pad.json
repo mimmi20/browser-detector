@@ -223,6 +223,20 @@
     "type": "fone-pad",
     "platform": "android"
   },
+  "samsung sph-p600": {
+    "deviceName": "SPH-P600",
+    "marketingName": "Galaxy Note 10.1 LTE",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": 10.1
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
   "samsung gt-n5100": {
     "deviceName": "GT-N5100",
     "marketingName": "Galaxy Note 8.0 3G",
@@ -405,9 +419,23 @@
     "type": "fone-pad",
     "platform": "android"
   },
+  "samsung shw-m380k": {
+    "deviceName": "SHW-M380K",
+    "marketingName": "Galaxy Tab 10.1 3G",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": null
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
   "samsung sc-01d": {
     "deviceName": "SC-01D",
-    "marketingName": "Galaxy Tab 10.1 3G",
+    "marketingName": "Galaxy Tab 10.1 3G (NTT DoCoMo)",
     "manufacturer": "samsung",
     "brand": "samsung",
     "display": {
@@ -419,16 +447,16 @@
     "type": "fone-pad",
     "platform": "android"
   },
-  "samsung shw-m380k": {
-    "deviceName": "SHW-M380K",
-    "marketingName": "Galaxy Tab 10.1 3G",
+  "samsung sgh-n014": {
+    "deviceName": "SGH-N014",
+    "marketingName": "Galaxy Tab 10.1 3G (NTT DoCoMo)",
     "manufacturer": "samsung",
     "brand": "samsung",
     "display": {
-      "width": 1280,
-      "height": 800,
+      "width": 1024,
+      "height": 600,
       "touch": true,
-      "size": null
+      "size": 10.1
     },
     "type": "fone-pad",
     "platform": "android"
@@ -1128,20 +1156,6 @@
       "width": 1024,
       "height": 600,
       "touch": true,
-      "size": null
-    },
-    "type": "fone-pad",
-    "platform": "android"
-  },
-  "samsung sc-01c": {
-    "deviceName": "SC-01C",
-    "marketingName": "Galaxy Tab 7.0",
-    "manufacturer": "samsung",
-    "brand": "samsung",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
       "size": 7
     },
     "type": "fone-pad",
@@ -1156,7 +1170,21 @@
       "width": 1024,
       "height": 600,
       "touch": true,
-      "size": null
+      "size": 7
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "samsung sgh-i987": {
+    "deviceName": "SGH-I987",
+    "marketingName": "Galaxy Tab 7.0",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "size": 7
     },
     "type": "fone-pad",
     "platform": "android"
@@ -1170,7 +1198,91 @@
       "width": 1024,
       "height": 600,
       "touch": true,
-      "size": null
+      "size": 7
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "samsung shw-m180k": {
+    "deviceName": "SHW-M180K",
+    "marketingName": "Galaxy Tab 7.0 (Korea)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "size": 7
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "samsung shw-m180l": {
+    "deviceName": "SHW-M180L",
+    "marketingName": "Galaxy Tab 7.0 (Korea)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "size": 7
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "samsung shw-m180s": {
+    "deviceName": "SHW-M180S",
+    "marketingName": "Galaxy Tab 7.0 (Korea)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "size": 7
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "samsung shw-m180w": {
+    "deviceName": "SHW-M180W",
+    "marketingName": "Galaxy Tab 7.0 (Korea)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "size": 7
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "samsung sc-01c": {
+    "deviceName": "SC-01C",
+    "marketingName": "Galaxy Tab 7.0 (NTT DoCoMo)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "size": 7
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "samsung sgh-t849": {
+    "deviceName": "SGH-T849",
+    "marketingName": "Galaxy Tab 7.0 (T-Mobile)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "size": 7
     },
     "type": "fone-pad",
     "platform": "android"
@@ -1198,14 +1310,28 @@
       "width": 1280,
       "height": 800,
       "touch": true,
-      "size": null
+      "size": 7.7
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "samsung shv-e150s": {
+    "deviceName": "SHV-E150S",
+    "marketingName": "Galaxy Tab 7.7 LTE (Korea)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": 7.7
     },
     "type": "fone-pad",
     "platform": "android"
   },
   "samsung sc-01e": {
     "deviceName": "SC-01E",
-    "marketingName": "Galaxy Tab 7.7 Plus LTE",
+    "marketingName": "Galaxy Tab 7.7 Plus LTE (NTT DoCoMo)",
     "manufacturer": "samsung",
     "brand": "samsung",
     "display": {
@@ -1248,6 +1374,20 @@
   "samsung shw-m305w": {
     "deviceName": "SHW-M305W",
     "marketingName": "Galaxy Tab 8.9",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": 8.9
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "samsung sch-p739": {
+    "deviceName": "SCH-P739",
+    "marketingName": "Galaxy Tab 8.9 CDMA",
     "manufacturer": "samsung",
     "brand": "samsung",
     "display": {

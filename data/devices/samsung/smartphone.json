@@ -167,6 +167,20 @@
     "type": "smartphone",
     "platform": "windows phone"
   },
+  "samsung captivate": {
+    "deviceName": "Captivate",
+    "marketingName": "Captivate",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 4
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "samsung sgh-i897": {
     "deviceName": "SGH-I897",
     "marketingName": "Captivate (AT&T)",
@@ -279,6 +293,20 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "samsung sph-700": {
+    "deviceName": "SPH-700",
+    "marketingName": "Epic",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 4
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "samsung sgh-t759": {
     "deviceName": "SGH-T759",
     "marketingName": "Exhibit",
@@ -345,6 +373,34 @@
       "height": 480,
       "touch": true,
       "size": 4
+    },
+    "type": "smartphone",
+    "platform": "windows phone"
+  },
+  "samsung sgh-i667": {
+    "deviceName": "SGH-I667",
+    "marketingName": "Focus 2",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 4
+    },
+    "type": "smartphone",
+    "platform": "windows phone"
+  },
+  "samsung sgh-i677": {
+    "deviceName": "SGH-I677",
+    "marketingName": "Focus Flash",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 3.7
     },
     "type": "smartphone",
     "platform": "windows phone"
@@ -2337,6 +2393,20 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "samsung shw-m240s": {
+    "deviceName": "SHW-M240S",
+    "marketingName": "Galaxy Ace (Korea)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 480,
+      "height": 320,
+      "touch": true,
+      "size": 3.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "samsung gt-i8160": {
     "deviceName": "GT-I8160",
     "marketingName": "Galaxy Ace 2",
@@ -3788,13 +3858,13 @@
       "width": 480,
       "height": 320,
       "touch": true,
-      "size": null
+      "size": 3.5
     },
     "type": "smartphone",
     "platform": "android"
   },
-  "samsung sgh-s730m": {
-    "deviceName": "SGH-S730M",
+  "samsung sch-s735c": {
+    "deviceName": "SCH-S735C",
     "marketingName": "Galaxy Discover",
     "manufacturer": "samsung",
     "brand": "samsung",
@@ -3802,7 +3872,35 @@
       "width": 480,
       "height": 320,
       "touch": true,
-      "size": null
+      "size": 3.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sgh-s730m": {
+    "deviceName": "SGH-S730M",
+    "marketingName": "Galaxy Discover (Telus)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 480,
+      "height": 320,
+      "touch": true,
+      "size": 3.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sgh-s730g": {
+    "deviceName": "SGH-S730G",
+    "marketingName": "Galaxy Discover (TracFone)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 480,
+      "height": 320,
+      "touch": true,
+      "size": 3.5
     },
     "type": "smartphone",
     "platform": "android"
@@ -4367,6 +4465,34 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "samsung shw-m290k": {
+    "deviceName": "SHW-M290K",
+    "marketingName": "Galaxy Gio",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 480,
+      "height": 320,
+      "touch": true,
+      "size": 3.2
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung shw-m290s": {
+    "deviceName": "SHW-M290S",
+    "marketingName": "Galaxy Gio",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 480,
+      "height": 320,
+      "touch": true,
+      "size": 3.2
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "samsung gt-i9230": {
     "deviceName": "GT-I9230",
     "marketingName": "Galaxy Golden",
@@ -4493,8 +4619,8 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "samsung shv-e270k": {
-    "deviceName": "SHV-E270K",
+  "samsung shv-e275s": {
+    "deviceName": "SHV-E275S",
     "marketingName": "Galaxy Grand",
     "manufacturer": "samsung",
     "brand": "samsung",
@@ -4507,9 +4633,37 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "samsung shv-e275s": {
-    "deviceName": "SHV-E275S",
-    "marketingName": "Galaxy Grand",
+  "samsung shv-e270k": {
+    "deviceName": "SHV-E270K",
+    "marketingName": "Galaxy Grand (Korea)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung shv-e270l": {
+    "deviceName": "SHV-E270L",
+    "marketingName": "Galaxy Grand (Korea)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung shv-e270s": {
+    "deviceName": "SHV-E270S",
+    "marketingName": "Galaxy Grand (Korea)",
     "manufacturer": "samsung",
     "brand": "samsung",
     "display": {
@@ -7755,6 +7909,34 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "samsung shw-m340l": {
+    "deviceName": "SHW-M340L",
+    "marketingName": "Galaxy M",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "size": null
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung shw-m340s": {
+    "deviceName": "SHW-M340S",
+    "marketingName": "Galaxy M",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "size": null
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "samsung sm-m105g": {
     "deviceName": "SM-M105G",
     "marketingName": "Galaxy M10 (Global)",
@@ -8023,6 +8205,20 @@
   },
   "samsung gt-i9158": {
     "deviceName": "GT-I9158",
+    "marketingName": "Galaxy Mega 5.8",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 960,
+      "height": 540,
+      "touch": true,
+      "size": 5.8
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sch-p709": {
+    "deviceName": "SCH-P709",
     "marketingName": "Galaxy Mega 5.8",
     "manufacturer": "samsung",
     "brand": "samsung",
@@ -8331,6 +8527,20 @@
   },
   "samsung sch-i515": {
     "deviceName": "SCH-I515",
+    "marketingName": "Galaxy Nexus LTE",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 4.65
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sph-l700": {
+    "deviceName": "SPH-L700",
     "marketingName": "Galaxy Nexus LTE",
     "manufacturer": "samsung",
     "brand": "samsung",
@@ -8737,6 +8947,20 @@
   },
   "samsung n900+": {
     "deviceName": "N900+",
+    "marketingName": "Galaxy Note 3",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": 5.7
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sm-1327": {
+    "deviceName": "SM-1327",
     "marketingName": "Galaxy Note 3",
     "manufacturer": "samsung",
     "brand": "samsung",
@@ -11787,8 +12011,36 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "samsung sgh-s959": {
+    "deviceName": "SGH-S959",
+    "marketingName": "Galaxy S2",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 4.3
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "samsung sgh-s959g": {
     "deviceName": "SGH-S959G",
+    "marketingName": "Galaxy S2",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 4.3
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sgh-t727": {
+    "deviceName": "SGH-T727",
     "marketingName": "Galaxy S2",
     "manufacturer": "samsung",
     "brand": "samsung",
@@ -11829,20 +12081,6 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "samsung shw-m250k": {
-    "deviceName": "SHW-M250K",
-    "marketingName": "Galaxy S2",
-    "manufacturer": "samsung",
-    "brand": "samsung",
-    "display": {
-      "width": 800,
-      "height": 480,
-      "touch": true,
-      "size": 4.3
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
   "samsung gt-i9100m": {
     "deviceName": "GT-I9100M",
     "marketingName": "Galaxy S2 (Bell)",
@@ -11857,9 +12095,23 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "samsung sc-02c": {
-    "deviceName": "SC-02C",
-    "marketingName": "Galaxy S2 (NTT DoCoMo)",
+  "samsung shw-m250k": {
+    "deviceName": "SHW-M250K",
+    "marketingName": "Galaxy S2 (Korea)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 4.3
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung shw-m250l": {
+    "deviceName": "SHW-M250L",
+    "marketingName": "Galaxy S2 (Korea)",
     "manufacturer": "samsung",
     "brand": "samsung",
     "display": {
@@ -11873,7 +12125,21 @@
   },
   "samsung shw-m250s": {
     "deviceName": "SHW-M250S",
-    "marketingName": "Galaxy S2 (South Korea)",
+    "marketingName": "Galaxy S2 (Korea)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 4.3
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sc-02c": {
+    "deviceName": "SC-02C",
+    "marketingName": "Galaxy S2 (NTT DoCoMo)",
     "manufacturer": "samsung",
     "brand": "samsung",
     "display": {
@@ -11951,6 +12217,20 @@
       "height": 480,
       "touch": true,
       "size": 4.3
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung shv-e120": {
+    "deviceName": "SHV-E120",
+    "marketingName": "Galaxy S2 HD",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 4.6
     },
     "type": "smartphone",
     "platform": "android"
@@ -12445,6 +12725,20 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "samsung sgh-i535": {
+    "deviceName": "SGH-I535",
+    "marketingName": "Galaxy S3 (Verizon)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 4.8
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "samsung sch-i535": {
     "deviceName": "SCH-I535",
     "marketingName": "Galaxy S3 4G CDMA",
@@ -12504,6 +12798,20 @@
   "samsung gt-i9305t": {
     "deviceName": "GT-I9305T",
     "marketingName": "Galaxy S3 LTE (Telstra)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 4.8
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sch-r530": {
+    "deviceName": "SCH-R530",
+    "marketingName": "Galaxy S3 LTE (US-Cellular)",
     "manufacturer": "samsung",
     "brand": "samsung",
     "display": {
@@ -12735,6 +13043,20 @@
       "height": 540,
       "touch": true,
       "size": 4.52
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung gt-1317": {
+    "deviceName": "GT-1317",
+    "marketingName": "Galaxy S4",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": 5
     },
     "type": "smartphone",
     "platform": "android"
@@ -13089,6 +13411,20 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "samsung shv-e330": {
+    "deviceName": "SHV-E330",
+    "marketingName": "Galaxy S4 LTE",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": 5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "samsung sch-r970x": {
     "deviceName": "SCH-R970X",
     "marketingName": "Galaxy S4 LTE (C Spire)",
@@ -13330,6 +13666,20 @@
   "samsung gt-i1318": {
     "deviceName": "GT-I1318",
     "marketingName": "Galaxy S4 Mini 3G",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 960,
+      "height": 540,
+      "touch": true,
+      "size": 4.3
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung gt-9192": {
+    "deviceName": "GT-9192",
+    "marketingName": "Galaxy S4 Mini Duos",
     "manufacturer": "samsung",
     "brand": "samsung",
     "display": {
@@ -13791,6 +14141,20 @@
   },
   "samsung sm-g900f": {
     "deviceName": "SM-G900F",
+    "marketingName": "Galaxy S5 LTE",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": 5.1
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sm-g906f": {
+    "deviceName": "SM-G906F",
     "marketingName": "Galaxy S5 LTE",
     "manufacturer": "samsung",
     "brand": "samsung",
@@ -15875,6 +16239,20 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "samsung a9500": {
+    "deviceName": "A9500",
+    "marketingName": "Galaxy Siv S4",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 854,
+      "height": 480,
+      "touch": true,
+      "size": 4.7
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "samsung sm-s320vl": {
     "deviceName": "SM-S320VL",
     "marketingName": "Galaxy Sky (Tracfone)",
@@ -16417,6 +16795,20 @@
       "height": 480,
       "touch": true,
       "size": 4.7
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sm-g3812": {
+    "deviceName": "SM-G3812",
+    "marketingName": "Galaxy Win Pro",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 960,
+      "height": 540,
+      "touch": true,
+      "size": 4.5
     },
     "type": "smartphone",
     "platform": "android"
@@ -17597,6 +17989,34 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "samsung sgh-897": {
+    "deviceName": "SGH-897",
+    "marketingName": "SGH-897",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "size": null
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sgh-9000": {
+    "deviceName": "SGH-9000",
+    "marketingName": "SGH-9000",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "size": null
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "samsung sgh-i807": {
     "deviceName": "SGH-I807",
     "marketingName": "SGH-I807",
@@ -17656,6 +18076,34 @@
   "samsung sgh-w2013": {
     "deviceName": "SGH-W2013",
     "marketingName": "SGH-W2013",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "size": null
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung shw-m280s": {
+    "deviceName": "SHW-M280S",
+    "marketingName": "SHW-M280S",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "size": null
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung shw-m300w": {
+    "deviceName": "SHW-M300W",
+    "marketingName": "SHW-M300W",
     "manufacturer": "samsung",
     "brand": "samsung",
     "display": {
@@ -17820,6 +18268,34 @@
     },
     "type": "smartphone",
     "platform": "android"
+  },
+  "samsung sch-r710": {
+    "deviceName": "SCH-R710",
+    "marketingName": "Suede",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 400,
+      "height": 240,
+      "touch": true,
+      "size": 3
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sgh-i707": {
+    "deviceName": "SGH-I707",
+    "marketingName": "Taylor",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": null
+    },
+    "type": "smartphone",
+    "platform": "windows phone"
   },
   "samsung sch-r730": {
     "deviceName": "SCH-R730",

@@ -536,14 +536,14 @@
       "user-agent": "Mozilla/5.0 (Java; U; es-la; samsungsgh-i627) AppleWebKit/530.13 (KHTML, like Gecko) UCBrowser/8.5.0.185/83/352/UCWEB Mobile, SAMSUNG-SGH-i780/1.0 UNTRUSTED/1.0"
     },
     "device": {
-      "deviceName": "SGH-I627",
-      "marketingName": "Propel Pro",
+      "deviceName": "SGH-I780",
+      "marketingName": "SGH-I780",
       "manufacturer": "samsung",
       "brand": "samsung",
       "display": {
-        "width": 320,
-        "height": 320,
-        "touch": false,
+        "width": null,
+        "height": null,
+        "touch": true,
         "size": null
       },
       "type": "feature-phone"
@@ -557,10 +557,10 @@
       "type": "transcoder"
     },
     "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
       "version": null,
-      "manufacturer": "sun-microsystems",
+      "manufacturer": "microsoft",
       "bits": null
     },
     "engine": {
