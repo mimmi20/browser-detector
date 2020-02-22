@@ -1,4 +1,18 @@
 {
+  "samsung yp-gi2": {
+    "deviceName": "YP-GI2",
+    "marketingName": "Galaxy 070",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 4
+    },
+    "type": "mobile-media-player",
+    "platform": "android"
+  },
   "samsung yp-gb1": {
     "deviceName": "YP-GB1",
     "marketingName": "Galaxy Player",
@@ -51,6 +65,34 @@
       "height": 480,
       "touch": true,
       "size": 5
+    },
+    "type": "mobile-media-player",
+    "platform": "android"
+  },
+  "samsung yp-gp1": {
+    "deviceName": "YP-GP1",
+    "marketingName": "Galaxy Player 5.8",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 960,
+      "height": 540,
+      "touch": true,
+      "size": 5.8
+    },
+    "type": "mobile-media-player",
+    "platform": "android"
+  },
+  "samsung yp-g50": {
+    "deviceName": "YP-G50",
+    "marketingName": "Galaxy Player 50",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 400,
+      "height": 240,
+      "touch": true,
+      "size": 3.2
     },
     "type": "mobile-media-player",
     "platform": "android"

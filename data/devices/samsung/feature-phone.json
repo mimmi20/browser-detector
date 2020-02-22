@@ -41,6 +41,34 @@
     "type": "feature-phone",
     "platform": "brew"
   },
+  "samsung b2700": {
+    "deviceName": "B2700",
+    "marketingName": "B2700",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": false,
+      "size": 1.9
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "samsung b5702": {
+    "deviceName": "B5702",
+    "marketingName": "B5702",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": 2.4
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "samsung gt-m7600": {
     "deviceName": "GT-M7600",
     "marketingName": "Beat DJ",
@@ -96,6 +124,76 @@
     },
     "type": "feature-phone",
     "platform": "brew"
+  },
+  "samsung c3010": {
+    "deviceName": "C3010",
+    "marketingName": "C3010",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": 2
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "samsung c3110": {
+    "deviceName": "C3110",
+    "marketingName": "C3110",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": false,
+      "size": 2
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "samsung c3530": {
+    "deviceName": "C3530",
+    "marketingName": "C3530",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": 2.2
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "samsung c5220": {
+    "deviceName": "C5220",
+    "marketingName": "C5220",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": false,
+      "size": 2
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "samsung c6625": {
+    "deviceName": "C6625",
+    "marketingName": "C6625",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": 2.6
+    },
+    "type": "feature-phone",
+    "platform": "java"
   },
   "samsung gt-e2220": {
     "deviceName": "GT-E2220",
@@ -226,6 +324,20 @@
   "samsung gt-c3500": {
     "deviceName": "GT-C3500",
     "marketingName": "Ch@t C3500",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": true,
+      "size": 2.4
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "samsung c3300": {
+    "deviceName": "C3300",
+    "marketingName": "Champ",
     "manufacturer": "samsung",
     "brand": "samsung",
     "display": {
@@ -489,6 +601,48 @@
     "type": "feature-phone",
     "platform": "java"
   },
+  "samsung gt-b3310": {
+    "deviceName": "GT-B3310",
+    "marketingName": "Corby Mate",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": true,
+      "size": 2
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "samsung gt-b3310i": {
+    "deviceName": "GT-B3310i",
+    "marketingName": "Corby Mate",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": true,
+      "size": 2
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "samsung gt-b3313": {
+    "deviceName": "GT-B3313",
+    "marketingName": "Corby Mate",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": true,
+      "size": 2
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "samsung gt-b5310": {
     "deviceName": "GT-B5310",
     "marketingName": "Corby Pro",
@@ -503,9 +657,23 @@
     "type": "feature-phone",
     "platform": "java"
   },
+  "samsung gt-b3210": {
+    "deviceName": "GT-B3210",
+    "marketingName": "Corby Text",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": true,
+      "size": 2.2
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "samsung gt-b3410": {
     "deviceName": "GT-B3410",
-    "marketingName": "Corby text",
+    "marketingName": "Corby Text",
     "manufacturer": "samsung",
     "brand": "samsung",
     "display": {
@@ -513,6 +681,48 @@
       "height": 240,
       "touch": true,
       "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "samsung d600": {
+    "deviceName": "D600",
+    "marketingName": "D600",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": true,
+      "size": 2
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "samsung d600e": {
+    "deviceName": "D600E",
+    "marketingName": "D600E",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": true,
+      "size": 2
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "samsung d900e": {
+    "deviceName": "D900E",
+    "marketingName": "D900E",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": true,
+      "size": 2.1
     },
     "type": "feature-phone",
     "platform": "java"
@@ -545,6 +755,146 @@
     "type": "feature-phone",
     "platform": "java"
   },
+  "samsung e1100c": {
+    "deviceName": "E1100C",
+    "marketingName": "E1100C",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 128,
+      "height": 128,
+      "touch": true,
+      "size": 1.5
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "samsung e1310b": {
+    "deviceName": "E1310B",
+    "marketingName": "E1310B",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 160,
+      "height": 120,
+      "touch": true,
+      "size": 1.77
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "samsung e1310c": {
+    "deviceName": "E1310C",
+    "marketingName": "E1310C",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 160,
+      "height": 120,
+      "touch": true,
+      "size": 1.77
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "samsung e1310e": {
+    "deviceName": "E1310E",
+    "marketingName": "E1310E",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 160,
+      "height": 120,
+      "touch": true,
+      "size": 1.77
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "samsung e1310m": {
+    "deviceName": "E1310M",
+    "marketingName": "E1310M",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 160,
+      "height": 120,
+      "touch": true,
+      "size": 1.77
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "samsung e1310s": {
+    "deviceName": "E1310S",
+    "marketingName": "E1310S",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 160,
+      "height": 120,
+      "touch": true,
+      "size": 1.77
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "samsung e1360": {
+    "deviceName": "E1360",
+    "marketingName": "E1360",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": true,
+      "size": 1.77
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "samsung e1360b": {
+    "deviceName": "E1360B",
+    "marketingName": "E1360B",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": true,
+      "size": 1.77
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "samsung e1360m": {
+    "deviceName": "E1360M",
+    "marketingName": "E1360M",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": true,
+      "size": 1.77
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "samsung e1410": {
+    "deviceName": "E1410",
+    "marketingName": "E1410",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 128,
+      "height": 128,
+      "touch": true,
+      "size": 1.63
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "samsung e2100": {
     "deviceName": "E2100",
     "marketingName": "E2100",
@@ -569,6 +919,20 @@
       "height": 128,
       "touch": false,
       "size": 1.77
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "samsung e2510": {
+    "deviceName": "E2510",
+    "marketingName": "E2510",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": true,
+      "size": 1.9
     },
     "type": "feature-phone",
     "platform": "java"
@@ -1511,6 +1875,20 @@
     "type": "feature-phone",
     "platform": "java"
   },
+  "samsung c3200": {
+    "deviceName": "C3200",
+    "marketingName": "Monte Bar",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": 2
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "samsung gt-e2550": {
     "deviceName": "GT-E2550",
     "marketingName": "Monte Slider",
@@ -1651,6 +2029,34 @@
     "type": "feature-phone",
     "platform": "windows ce"
   },
+  "samsung gt-b7320": {
+    "deviceName": "GT-B7320",
+    "marketingName": "Omnia Pro",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": true,
+      "size": 2.4
+    },
+    "type": "feature-phone",
+    "platform": null
+  },
+  "samsung gt-b7320l": {
+    "deviceName": "GT-B7320L",
+    "marketingName": "Omnia Pro",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": true,
+      "size": 2.4
+    },
+    "type": "feature-phone",
+    "platform": null
+  },
   "samsung gt-b7350": {
     "deviceName": "GT-B7350",
     "marketingName": "Omnia Pro 4",
@@ -1664,6 +2070,20 @@
     },
     "type": "feature-phone",
     "platform": "windows ce"
+  },
+  "samsung gt-b6520": {
+    "deviceName": "GT-B6520",
+    "marketingName": "Omnia Pro 5",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": true,
+      "size": 2.4
+    },
+    "type": "feature-phone",
+    "platform": null
   },
   "samsung gt-s5600": {
     "deviceName": "GT-S5600",
@@ -2407,6 +2827,20 @@
     "type": "feature-phone",
     "platform": "java"
   },
+  "samsung sgh-l870": {
+    "deviceName": "SGH-L870",
+    "marketingName": "SGH-L870",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": true,
+      "size": 2.4
+    },
+    "type": "feature-phone",
+    "platform": null
+  },
   "samsung sgh-m310": {
     "deviceName": "SGH-M310",
     "marketingName": "SGH-M310",
@@ -3102,7 +3536,21 @@
       "width": 160,
       "height": 120,
       "touch": false,
-      "size": null
+      "size": 1.77
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "samsung gt-b2100v": {
+    "deviceName": "GT-B2100V",
+    "marketingName": "Xplorer",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 160,
+      "height": 120,
+      "touch": false,
+      "size": 1.77
     },
     "type": "feature-phone",
     "platform": "java"
