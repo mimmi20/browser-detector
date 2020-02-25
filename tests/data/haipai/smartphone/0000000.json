@@ -22,7 +22,7 @@
       "version": "4.0.0",
       "manufacturer": "google",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -60,7 +60,7 @@
       "version": "4.0.0",
       "manufacturer": "google",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -98,7 +98,7 @@
       "version": "28.0.1764.90386",
       "manufacturer": "opera",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -136,7 +136,7 @@
       "version": "27.0.1698.89115",
       "manufacturer": "opera",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -149,82 +149,6 @@
       "name": "Blink",
       "version": "40.0.2214.89",
       "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.0.4; X710d Build/IMM76I) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.169 Mobile Safari/537.22"
-    },
-    "device": {
-      "deviceName": "X710d",
-      "marketingName": "X710d",
-      "manufacturer": "haipai",
-      "brand": "haipai",
-      "display": {
-        "width": 800,
-        "height": 480,
-        "touch": true,
-        "size": 5.3
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "25.0.1364.169",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.0.4",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "537.22.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.0.6; de-de; i9220 Build/IMM76D) UC AppleWebKit/530+ (KHTML, like Gecko) Mobile Safari/530"
-    },
-    "device": {
-      "deviceName": "I9220",
-      "marketingName": "Noble",
-      "manufacturer": "haipai",
-      "brand": "haipai",
-      "display": {
-        "width": 800,
-        "height": 480,
-        "touch": true,
-        "size": 5.3
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.0.6",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "530.0.0",
-      "manufacturer": "apple"
     }
   },
   {
@@ -250,7 +174,7 @@
       "version": "18.0.1025.166",
       "manufacturer": "google",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -262,6 +186,44 @@
     "engine": {
       "name": "WebKit",
       "version": "535.19.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.0.4; X710d Build/IMM76I) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.169 Mobile Safari/537.22"
+    },
+    "device": {
+      "deviceName": "X710d",
+      "marketingName": "X710d",
+      "manufacturer": "haipai",
+      "brand": "haipai",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 5.3
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "25.0.1364.169",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.0.4",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.22.0",
       "manufacturer": "apple"
     }
   },
@@ -288,7 +250,7 @@
       "version": "4.0.0",
       "manufacturer": "google",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -300,6 +262,44 @@
     "engine": {
       "name": "WebKit",
       "version": "534.30.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.0.6; de-de; i9220 Build/IMM76D) UC AppleWebKit/530+ (KHTML, like Gecko) Mobile Safari/530"
+    },
+    "device": {
+      "deviceName": "I9220",
+      "marketingName": "Noble",
+      "manufacturer": "haipai",
+      "brand": "haipai",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 5.3
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.0.6",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "530.0.0",
       "manufacturer": "apple"
     }
   }

@@ -1,120 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Java; U; Pt-br; samsung-gt-s5380d) UCBrowser8.4.0.159/69/352/UCWEB Mobile UNTRUSTED/1.0"
-    },
-    "device": {
-      "deviceName": "GT-S5380",
-      "marketingName": "Wave Y",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.2
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "8.4.0.159",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Bada",
-      "marketingName": "Bada",
-      "version": null,
-      "manufacturer": "samsung",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Java; U; ru; samsung-gt-s5380f) UCBrowser8.3.0.154/69/352/UCWEB Mobile UNTRUSTED/1.0"
-    },
-    "device": {
-      "deviceName": "GT-S5380",
-      "marketingName": "Wave Y",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.2
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "8.3.0.154",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Bada",
-      "marketingName": "Bada",
-      "version": null,
-      "manufacturer": "samsung",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Java; U; Id; samsung-gt-s5380k) UCBrowser8.3.0.154/69/444/UCWEB Mobile UNTRUSTED/1.0"
-    },
-    "device": {
-      "deviceName": "GT-S5380K",
-      "marketingName": "Wave Y",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.2
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "8.3.0.154",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Bada",
-      "marketingName": "Bada",
-      "version": null,
-      "manufacturer": "samsung",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "MQQBrowser/Mini2.8 (SAMSUNG-GT-S5380K/S5380KDDLC3)"
     },
     "device": {
@@ -136,7 +22,7 @@
       "version": "2.8.0",
       "manufacturer": "tencent",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Bada",
@@ -174,7 +60,7 @@
       "version": "3.5.0",
       "manufacturer": "access",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -288,7 +174,7 @@
       "version": "8.6.0.199",
       "manufacturer": "ucweb",
       "bits": null,
-      "type": "transcoder"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -440,7 +326,7 @@
       "version": "2.0.0",
       "manufacturer": "mopotab",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -478,7 +364,7 @@
       "version": "3.1.0",
       "manufacturer": "unknown",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": null,
@@ -516,7 +402,7 @@
       "version": "7.4.0.65",
       "manufacturer": "ucweb",
       "bits": null,
-      "type": "transcoder"
+      "type": "unknown"
     },
     "os": {
       "name": null,
@@ -554,7 +440,7 @@
       "version": "2.0.0",
       "manufacturer": "mopotab",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -592,7 +478,7 @@
       "version": "8.4.0.159",
       "manufacturer": "ucweb",
       "bits": null,
-      "type": "transcoder"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -668,7 +554,7 @@
       "version": null,
       "manufacturer": "google",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -782,7 +668,7 @@
       "version": "8.5.0.185",
       "manufacturer": "ucweb",
       "bits": null,
-      "type": "transcoder"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -896,7 +782,7 @@
       "version": "1.5.0",
       "manufacturer": "mopotab",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -934,7 +820,7 @@
       "version": "3.5.0",
       "manufacturer": "access",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -1048,7 +934,7 @@
       "version": null,
       "manufacturer": "google",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -1086,7 +972,7 @@
       "version": null,
       "manufacturer": "google",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -1200,7 +1086,7 @@
       "version": null,
       "manufacturer": "google",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -1276,7 +1162,7 @@
       "version": null,
       "manufacturer": "google",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -1314,7 +1200,7 @@
       "version": null,
       "manufacturer": "google",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -1428,7 +1314,7 @@
       "version": "3.4.0",
       "manufacturer": "access",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -1542,7 +1428,7 @@
       "version": null,
       "manufacturer": "google",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -1580,7 +1466,7 @@
       "version": "8.3.0.154",
       "manufacturer": "ucweb",
       "bits": null,
-      "type": "transcoder"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -1618,7 +1504,7 @@
       "version": "6.0.0",
       "manufacturer": "microsoft",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -1656,7 +1542,7 @@
       "version": "1.0.0",
       "manufacturer": "pivotal-labs",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -1694,7 +1580,7 @@
       "version": "1.0.0",
       "manufacturer": "mopotab",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -1770,7 +1656,7 @@
       "version": "8.5.0.185",
       "manufacturer": "ucweb",
       "bits": null,
-      "type": "transcoder"
+      "type": "unknown"
     },
     "os": {
       "name": "Bada",
@@ -1846,7 +1732,7 @@
       "version": "9.3.0.326",
       "manufacturer": "ucweb",
       "bits": null,
-      "type": "transcoder"
+      "type": "unknown"
     },
     "os": {
       "name": "Bada",
@@ -1884,7 +1770,7 @@
       "version": "9.0.1.303",
       "manufacturer": "ucweb",
       "bits": null,
-      "type": "transcoder"
+      "type": "unknown"
     },
     "os": {
       "name": "Bada",
@@ -1922,7 +1808,7 @@
       "version": null,
       "manufacturer": "google",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -1960,7 +1846,7 @@
       "version": null,
       "manufacturer": "google",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -1998,7 +1884,7 @@
       "version": null,
       "manufacturer": "google",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -2112,7 +1998,7 @@
       "version": "2.11.152",
       "manufacturer": "unknown",
       "bits": null,
-      "type": "application"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -2150,7 +2036,7 @@
       "version": null,
       "manufacturer": "google",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -2188,7 +2074,7 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null,
-      "type": "application"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -2226,7 +2112,7 @@
       "version": null,
       "manufacturer": "google",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -2264,7 +2150,7 @@
       "version": null,
       "manufacturer": "google",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -2302,7 +2188,7 @@
       "version": "2.0.0",
       "manufacturer": "mopotab",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Bada",
@@ -2340,7 +2226,7 @@
       "version": "8.9.0.251",
       "manufacturer": "ucweb",
       "bits": null,
-      "type": "transcoder"
+      "type": "unknown"
     },
     "os": {
       "name": "Bada",
@@ -2416,7 +2302,7 @@
       "version": "8.2.1.144",
       "manufacturer": "ucweb",
       "bits": null,
-      "type": "transcoder"
+      "type": "unknown"
     },
     "os": {
       "name": "Bada",
@@ -2492,7 +2378,7 @@
       "version": "4.0.0",
       "manufacturer": "google",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -2530,7 +2416,7 @@
       "version": "3.4.0",
       "manufacturer": "access",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -2644,7 +2530,7 @@
       "version": "2.11.151",
       "manufacturer": "unknown",
       "bits": null,
-      "type": "application"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -2682,7 +2568,7 @@
       "version": null,
       "manufacturer": "google",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -2758,7 +2644,7 @@
       "version": null,
       "manufacturer": "oracle",
       "bits": null,
-      "type": "bot"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -2834,7 +2720,7 @@
       "version": null,
       "manufacturer": "google",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -2872,7 +2758,7 @@
       "version": null,
       "manufacturer": "google",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -2948,7 +2834,7 @@
       "version": "8.2.1.144",
       "manufacturer": "ucweb",
       "bits": null,
-      "type": "transcoder"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -2986,7 +2872,7 @@
       "version": "2.2.0",
       "manufacturer": "tencent",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": null,
@@ -3062,7 +2948,7 @@
       "version": null,
       "manufacturer": "google",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -3100,7 +2986,7 @@
       "version": "8.6.0.199",
       "manufacturer": "ucweb",
       "bits": null,
-      "type": "transcoder"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -3138,7 +3024,7 @@
       "version": "2.8.0",
       "manufacturer": "tencent",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": null,
@@ -3176,7 +3062,7 @@
       "version": "6.0.0",
       "manufacturer": "ucweb",
       "bits": null,
-      "type": "transcoder"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -3214,7 +3100,7 @@
       "version": "8.9.0.251",
       "manufacturer": "ucweb",
       "bits": null,
-      "type": "transcoder"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -3252,7 +3138,7 @@
       "version": "3.4.0",
       "manufacturer": "access",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -3290,7 +3176,7 @@
       "version": "8.7.0.218",
       "manufacturer": "ucweb",
       "bits": null,
-      "type": "transcoder"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -3556,7 +3442,7 @@
       "version": null,
       "manufacturer": "google",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -3632,7 +3518,7 @@
       "version": null,
       "manufacturer": "google",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -3670,7 +3556,7 @@
       "version": null,
       "manufacturer": "google",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -3708,7 +3594,7 @@
       "version": null,
       "manufacturer": "google",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -3746,7 +3632,7 @@
       "version": null,
       "manufacturer": "google",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -3784,7 +3670,7 @@
       "version": null,
       "manufacturer": "google",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -3796,6 +3682,120 @@
     "engine": {
       "name": "WebKit",
       "version": "533.1.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (GT-I9300 samsung; NetatmoApp/v1.1.4.2 Android 4.3) AppleWebKit/534.46 (KHTML, like Gecko) Version/5.1 Mobile/9A334 Safari/7534.48.3"
+    },
+    "device": {
+      "deviceName": "GT-I9300",
+      "marketingName": "Galaxy S3",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 4.8
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "5.1.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.3.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.46.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Samsung Network Manager 2.0"
+    },
+    "device": {
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Groupon/2.10.3166 (Android 4.1.2; Samsung Nevisp / Samsung GT-S6810P; )[preload=true;locale=de_DE;clientidbase=android-samsung]"
+    },
+    "device": {
+      "deviceName": "GT-S6810P",
+      "marketingName": "Galaxy Fame (NFC)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": null,
+      "manufacturer": "google",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.1.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
       "manufacturer": "apple"
     }
   }

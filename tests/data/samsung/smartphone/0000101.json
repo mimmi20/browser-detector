@@ -1,120 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "UCWEB/2.0(Java; U; MIDP-2.0; en-us; samsung-sgh-c414r) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile UNTRUSTED/1.0"
-    },
-    "device": {
-      "deviceName": "general Samsung device",
-      "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "8.7.1.234",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": "U2",
-      "version": "1.0.0",
-      "manufacturer": "ucweb"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG-SGH-C414V/C414VTKC1 SHP/VPP/R5 NetFront/3.5 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1"
-    },
-    "device": {
-      "deviceName": "general Samsung device",
-      "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "NetFront",
-      "modus": null,
-      "version": "3.5.0",
-      "manufacturer": "access",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": "NetFront",
-      "version": null,
-      "manufacturer": "access"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG-SGH-C414W/C414UQKB3 SHP/VPP/R5 NetFront/3.5 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1"
-    },
-    "device": {
-      "deviceName": "general Samsung device",
-      "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "NetFront",
-      "modus": null,
-      "version": "3.5.0",
-      "manufacturer": "access",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": "NetFront",
-      "version": null,
-      "manufacturer": "access"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "SAMSUNG-SGH-C414Y"
     },
     "device": {
@@ -174,7 +60,7 @@
       "version": "9.0.1.303",
       "manufacturer": "ucweb",
       "bits": null,
-      "type": "transcoder"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -250,7 +136,7 @@
       "version": "6.2.3.3",
       "manufacturer": "myriad",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -326,7 +212,7 @@
       "version": "6.2.3.3",
       "manufacturer": "myriad",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -440,7 +326,7 @@
       "version": "6.2.3.3",
       "manufacturer": "myriad",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Nucleus OS",
@@ -592,7 +478,7 @@
       "version": "6.2.3.3",
       "manufacturer": "myriad",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": null,
@@ -896,7 +782,7 @@
       "version": "6.2.2.6",
       "manufacturer": "myriad",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": null,
@@ -1200,7 +1086,7 @@
       "version": "8.3.0.154",
       "manufacturer": "ucweb",
       "bits": null,
-      "type": "transcoder"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -1238,7 +1124,7 @@
       "version": "2.2.0",
       "manufacturer": "tencent",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": null,
@@ -1314,7 +1200,7 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null,
-      "type": "wap-browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Series 60",
@@ -1390,7 +1276,7 @@
       "version": "8.4.0.159",
       "manufacturer": "ucweb",
       "bits": null,
-      "type": "transcoder"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -1428,7 +1314,7 @@
       "version": "3.1.0",
       "manufacturer": "unknown",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": null,
@@ -1466,7 +1352,7 @@
       "version": "6.2.3.3",
       "manufacturer": "myriad",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -1580,7 +1466,7 @@
       "version": "3.2.0",
       "manufacturer": "access",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -1770,7 +1656,7 @@
       "version": "8.3.0.154",
       "manufacturer": "ucweb",
       "bits": null,
-      "type": "transcoder"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -1808,7 +1694,7 @@
       "version": "2.8.0",
       "manufacturer": "tencent",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": null,
@@ -1846,7 +1732,7 @@
       "version": "6.2.3.3",
       "manufacturer": "myriad",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -2074,7 +1960,7 @@
       "version": "6.2.3.3",
       "manufacturer": "myriad",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -2188,7 +2074,7 @@
       "version": "6.2.3.3",
       "manufacturer": "myriad",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -2226,7 +2112,7 @@
       "version": "8.5.0.185",
       "manufacturer": "ucweb",
       "bits": null,
-      "type": "transcoder"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -2340,7 +2226,7 @@
       "version": "6.1.0.6",
       "manufacturer": "myriad",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": null,
@@ -2378,7 +2264,7 @@
       "version": "6.1.0.6",
       "manufacturer": "myriad",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": null,
@@ -2492,7 +2378,7 @@
       "version": "6.2.3.3",
       "manufacturer": "myriad",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -2682,7 +2568,7 @@
       "version": "6.2.3.3",
       "manufacturer": "myriad",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -2720,7 +2606,7 @@
       "version": "6.2.3.3",
       "manufacturer": "myriad",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -2758,7 +2644,7 @@
       "version": "6.2.3.3",
       "manufacturer": "myriad",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -3138,7 +3024,7 @@
       "version": "6.2.2.6",
       "manufacturer": "myriad",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": null,
@@ -3252,7 +3138,7 @@
       "version": "6.2.3.3",
       "manufacturer": "myriad",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -3290,7 +3176,7 @@
       "version": "6.2.3.3",
       "manufacturer": "myriad",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -3632,7 +3518,7 @@
       "version": "6.2.3.3",
       "manufacturer": "myriad",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -3764,6 +3650,120 @@
   {
     "headers": {
       "user-agent": "SAMSUNG-SGH-E378"
+    },
+    "device": {
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-E380"
+    },
+    "device": {
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-E390"
+    },
+    "device": {
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-E420"
     },
     "device": {
       "deviceName": "general Samsung device",

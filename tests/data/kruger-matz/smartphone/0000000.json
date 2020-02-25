@@ -22,7 +22,7 @@
       "version": "39.0.0.0",
       "manufacturer": "google",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -60,7 +60,7 @@
       "version": "68.0.3440.91",
       "manufacturer": "google",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -98,7 +98,7 @@
       "version": "76.0.3809.89",
       "manufacturer": "google",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -136,7 +136,7 @@
       "version": "77.0.3865.116",
       "manufacturer": "google",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -174,7 +174,7 @@
       "version": "78.0.3904.90",
       "manufacturer": "google",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -212,7 +212,7 @@
       "version": "56.0.2924.87",
       "manufacturer": "google",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -250,7 +250,7 @@
       "version": "62.0.3202.84",
       "manufacturer": "google",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -288,7 +288,7 @@
       "version": "79.0.3945.136",
       "manufacturer": "google",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -326,7 +326,7 @@
       "version": "77.0.3865.116",
       "manufacturer": "google",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -338,6 +338,44 @@
     "engine": {
       "name": "Blink",
       "version": "77.0.3865.116",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0; Kruger&Matz MOVE 6S) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.92 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "KM0437",
+      "marketingName": "Move 6",
+      "manufacturer": "kruger-matz",
+      "brand": "kruger-matz",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "77.0.3865.92",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "77.0.3865.92",
       "manufacturer": "google"
     }
   }

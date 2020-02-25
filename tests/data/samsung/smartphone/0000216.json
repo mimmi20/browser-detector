@@ -1,1260 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.1.2; GT-I8160 Build/JZO54K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.72 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "GT-I8160",
-      "marketingName": "Galaxy Ace 2",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 800,
-        "height": 480,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "29.0.1547.72",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.1.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "29.0.1547.72",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.1.1; en-us ; GT-I9300 Build/JRO03C) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1/UCBrowser/8.6.1.262/145/444"
-    },
-    "device": {
-      "deviceName": "GT-I9300",
-      "marketingName": "Galaxy S3",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 4.8
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "8.6.1.262",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.1.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "533.1.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.1.1; de-de; GT-I9305 Build/JRO03C) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30/TansoDL"
-    },
-    "device": {
-      "deviceName": "GT-I9305",
-      "marketingName": "Galaxy S3 LTE International",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 4.8
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Tanso Download Manager",
-      "modus": null,
-      "version": null,
-      "manufacturer": "web-expansion",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.1.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Dalvik/1.2.0 (Linux; U; Android 2.2.1; GT-I9003 Build/FROYO)"
-    },
-    "device": {
-      "deviceName": "GT-I9003",
-      "marketingName": "Galaxy SL",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 800,
-        "height": 480,
-        "touch": true,
-        "size": 4
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Dalvik",
-      "modus": null,
-      "version": "1.2.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "2.2.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; GT-I9003 Build/JDQ39E) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.59 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "GT-I9003",
-      "marketingName": "Galaxy SL",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 800,
-        "height": 480,
-        "touch": true,
-        "size": 4
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "29.0.1547.59",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.2.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "29.0.1547.59",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; GT-I9105P Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.63 Mobile Safari/537.36 OPR/15.0.1162.61541"
-    },
-    "device": {
-      "deviceName": "GT-I9105P",
-      "marketingName": "Galaxy S2 Plus NFC",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 800,
-        "height": 480,
-        "touch": true,
-        "size": 4.3
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Opera Mobile",
-      "modus": null,
-      "version": "15.0.1162.61541",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.2.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "28.0.1500.63",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.1.2; GT-I8190N Build/JZO54K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.63 Mobile Safari/537.36 OPR/15.0.1162.61541"
-    },
-    "device": {
-      "deviceName": "GT-I8190N",
-      "marketingName": "Galaxy S3 Mini NFC",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 800,
-        "height": 480,
-        "touch": true,
-        "size": 4
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Opera Mobile",
-      "modus": null,
-      "version": "15.0.1162.61541",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.1.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "28.0.1500.63",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.3.6; en-gb; GT-B7510 Build/GINGERBREAD) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
-    },
-    "device": {
-      "deviceName": "GT-B7510",
-      "marketingName": "Galaxy Pro",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Android Webkit",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "2.3.6",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "533.1.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.0.4; de-de; SHV-E210L Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
-    },
-    "device": {
-      "deviceName": "SHV-E210L",
-      "marketingName": "Galaxy S3 (Korea LG U+)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 4.8
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Android Webkit",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.0.4",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "534.30.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.3.6; en-us ; GT-I9100G Build/GINGERBREAD) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1/UCBrowser/8.3.0.143/145/444"
-    },
-    "device": {
-      "deviceName": "GT-I9100G",
-      "marketingName": "Galaxy S2",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 800,
-        "height": 480,
-        "touch": true,
-        "size": 4.3
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "8.3.0.143",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "2.3.6",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "533.1.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.0.3; en-gb; GT-I9100 Build/IML74K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 iLunascape/2.0.0.0"
-    },
-    "device": {
-      "deviceName": "GT-I9100",
-      "marketingName": "Galaxy S2",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 800,
-        "height": 480,
-        "touch": true,
-        "size": 4.3
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "iLunascape",
-      "modus": null,
-      "version": "2.0.0.0",
-      "manufacturer": "lunascape",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.0.3",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "534.30.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "OneBrowser/4.2.0/Adr(Linux; U; Android 4.2.2; de-de; GT-I9505 Build/JDQ39) AppleWebKit/533.1 (KHTML, like Gecko) Mobile Safari/533.1"
-    },
-    "device": {
-      "deviceName": "GT-I9505",
-      "marketingName": "Galaxy S4",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "OneBrowser",
-      "modus": null,
-      "version": "4.2.0",
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.2.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "533.1.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.1.2; Nexus S Build/JZO54K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.64 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "Nexus S",
-      "marketingName": "Nexus S",
-      "manufacturer": "samsung",
-      "brand": "google",
-      "display": {
-        "width": 800,
-        "height": 480,
-        "touch": true,
-        "size": 4
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "28.0.1500.64",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.1.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "28.0.1500.64",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Dalvik/1.4.0 (Linux; U; Android 2.3.6; GT-S5660 Build/GINGERBREAD)"
-    },
-    "device": {
-      "deviceName": "GT-S5660",
-      "marketingName": "Galaxy Gio",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.2
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Dalvik",
-      "modus": null,
-      "version": "1.4.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "2.3.6",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.1.1; de-de; SGH-I897 Build/JRO03L) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
-    },
-    "device": {
-      "deviceName": "SGH-I897",
-      "marketingName": "Captivate (AT&T)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 800,
-        "height": 480,
-        "touch": true,
-        "size": 4
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Android Webkit",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.1.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "534.30.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "OneBrowser/4.2.0/Adr(Linux; U; Android 2.3.5; de-de; GT-I9001 Build/GINGERBREAD) AppleWebKit/533.1 (KHTML, like Gecko) Mobile Safari/533.1"
-    },
-    "device": {
-      "deviceName": "GT-I9001",
-      "marketingName": "Galaxy S Plus",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 800,
-        "height": 480,
-        "touch": true,
-        "size": 4
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "OneBrowser",
-      "modus": null,
-      "version": "4.2.0",
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "2.3.5",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "533.1.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Dalvik/1.2.0 (Linux; U; Android 2.2.1; GT-S5660 Build/FROYO)"
-    },
-    "device": {
-      "deviceName": "GT-S5660",
-      "marketingName": "Galaxy Gio",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.2
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Dalvik",
-      "modus": null,
-      "version": "1.2.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "2.2.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "UCWEB/2.0 (Linux; U; Adr 4.1.2; en-US; GT-I9300) U2/1.0.0 UCBrowser/9.0.1.275 U2/1.0.0 Mobile"
-    },
-    "device": {
-      "deviceName": "GT-I9300",
-      "marketingName": "Galaxy S3",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 4.8
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "9.0.1.275",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.1.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "U2",
-      "version": "1.0.0",
-      "manufacturer": "ucweb"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.1.2; GT-I8160 Build/JZO54K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.94 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "GT-I8160",
-      "marketingName": "Galaxy Ace 2",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 800,
-        "height": 480,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "28.0.1500.94",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.1.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "28.0.1500.94",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 3.0.2; en-US; I9103-Galaxy-S2 Build/4345Q5)"
-    },
-    "device": {
-      "deviceName": "GT-I9103",
-      "marketingName": "Galaxy R",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 800,
-        "height": 480,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Android Webkit",
-      "modus": null,
-      "version": null,
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "3.0.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.2.1; en-us ; GT-I9003 Build/FROYO) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1/UCBrowser/8.3.0.143/145/444"
-    },
-    "device": {
-      "deviceName": "GT-I9003",
-      "marketingName": "Galaxy SL",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 800,
-        "height": 480,
-        "touch": true,
-        "size": 4
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "8.3.0.143",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "2.2.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "533.1.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.3.6; en-us; SPH-D710 Build/GINGERBREAD) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1(Mobile; afma-sdk-a-v 4.3.1 )"
-    },
-    "device": {
-      "deviceName": "SPH-D710",
-      "marketingName": "Galaxy S2 Epic 4G Touch",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 800,
-        "height": 480,
-        "touch": true,
-        "size": 4.3
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Android Webkit",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "2.3.6",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "533.1.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "MQQBrowser/3.1/Mozilla/5.0 (Linux; U; Android 2.3.6; de-de; GT-S5660 Build/GINGERBREAD) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
-    },
-    "device": {
-      "deviceName": "GT-S5660",
-      "marketingName": "Galaxy Gio",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.2
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "QQ Browser",
-      "modus": null,
-      "version": "3.1.0",
-      "manufacturer": "tencent",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "2.3.6",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "533.1.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.1; de-de; GT-I5700 Build/Eclair) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
-    },
-    "device": {
-      "deviceName": "GT-I5700",
-      "marketingName": "Galaxy Spica",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.2
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Android Webkit",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "2.1.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "533.1.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.2.2; de-de; GT-I9505 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 Flipboard/2.0.8/620,2.0.8.620,2013-09-06 15:06, +0200, de"
-    },
-    "device": {
-      "deviceName": "GT-I9505",
-      "marketingName": "Galaxy S4",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Flipboard App",
-      "modus": null,
-      "version": "2.0.8",
-      "manufacturer": "flipboard",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.2.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "534.30.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.1.2; en-us; GT-I9100G Build/JZO54K) UC AppleWebKit/534.31 (KHTML, like Gecko) Mobile Safari/534.31"
-    },
-    "device": {
-      "deviceName": "GT-I9100G",
-      "marketingName": "Galaxy S2",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 800,
-        "height": 480,
-        "touch": true,
-        "size": 4.3
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.1.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "534.31.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.1.2; GT-S6310 Build/JZO54K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.72 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "GT-S6310",
-      "marketingName": "Galaxy Young",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.3
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "29.0.1547.72",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.1.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "29.0.1547.72",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.1.2; de-; GT-I9001 Build/JZO54K) AppleWebKit/530.17 (KHTML, like Gecko) FlyFlow/2.3 Version/4.0 Mobile Safari/530.17 T5/2.0"
-    },
-    "device": {
-      "deviceName": "GT-I9001",
-      "marketingName": "Galaxy S Plus",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 800,
-        "height": 480,
-        "touch": true,
-        "size": 4
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "FlyFlow",
-      "modus": null,
-      "version": "2.3.0",
-      "manufacturer": "baidu",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.1.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "530.17.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; GT-I9000 Build/JDQ39E) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.58 Mobile Safari/537.31"
-    },
-    "device": {
-      "deviceName": "GT-I9000",
-      "marketingName": "Galaxy S",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 800,
-        "height": 480,
-        "touch": true,
-        "size": 4
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "26.0.1410.58",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.2.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "537.31.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; GT-I9195 Build/JDQ39) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.58 Mobile Safari/537.31 OPR/14.0.1074.58201"
-    },
-    "device": {
-      "deviceName": "GT-I9195",
-      "marketingName": "Galaxy S4 Mini LTE",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 960,
-        "height": 540,
-        "touch": true,
-        "size": 4.3
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Opera Mobile",
-      "modus": null,
-      "version": "14.0.1074.58201",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.2.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "537.31.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; GT-I9305 Build/JDQ39) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.169 Mobile Safari/537.22"
-    },
-    "device": {
-      "deviceName": "GT-I9305",
-      "marketingName": "Galaxy S3 LTE International",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 4.8
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "25.0.1364.169",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.2.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "537.22.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "sam455/1.0[TF268435460712035732000000014348083769] UP.Browser/6.2.3.8 (GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1"
-    },
-    "device": {
-      "deviceName": "general Samsung device",
-      "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Openwave Mobile Browser",
-      "modus": null,
-      "version": "6.2.3.8",
-      "manufacturer": "myriad",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG-OMNIA7/UCWEB2.4.0.188/47/32079"
-    },
-    "device": {
-      "deviceName": "GT-I8700",
-      "marketingName": "Omnia 7",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 800,
-        "height": 480,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "2.4.0.188",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Windows Phone OS",
-      "marketingName": "Windows Phone OS",
-      "version": null,
-      "manufacturer": "microsoft",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; U; Android 2.3.6; en-us; Nexus S Build/GRK39F) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1/tansoDL"
     },
     "device": {
@@ -1276,7 +22,7 @@
       "version": null,
       "manufacturer": "web-expansion",
       "bits": null,
-      "type": "application"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -1314,7 +60,7 @@
       "version": "3.4.0",
       "manufacturer": "tencent",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -1352,7 +98,7 @@
       "version": "1.0.5",
       "manufacturer": "mopotab",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -1390,7 +136,7 @@
       "version": "4.0.0",
       "manufacturer": "google",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -1428,7 +174,7 @@
       "version": "4.0.0",
       "manufacturer": "google",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -1466,7 +212,7 @@
       "version": "4.0.0",
       "manufacturer": "maxthon",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -1504,7 +250,7 @@
       "version": "16.0.912.77",
       "manufacturer": "google",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -1542,7 +288,7 @@
       "version": "4.0.0",
       "manufacturer": "google",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -1580,7 +326,7 @@
       "version": null,
       "manufacturer": "google",
       "bits": null,
-      "type": "bot"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -1618,7 +364,7 @@
       "version": "29.0.1547.72",
       "manufacturer": "google",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -1656,7 +402,7 @@
       "version": "15.0.1162.60140",
       "manufacturer": "opera",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -1694,7 +440,7 @@
       "version": "9.0.1.275",
       "manufacturer": "ucweb",
       "bits": null,
-      "type": "transcoder"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -1732,7 +478,7 @@
       "version": "8.9.0.251",
       "manufacturer": "ucweb",
       "bits": null,
-      "type": "transcoder"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -1770,7 +516,7 @@
       "version": "8.7.1.234",
       "manufacturer": "ucweb",
       "bits": null,
-      "type": "transcoder"
+      "type": "unknown"
     },
     "os": {
       "name": "Bada",
@@ -1808,7 +554,7 @@
       "version": "4.8.156",
       "manufacturer": "zillow",
       "bits": null,
-      "type": "application"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -1846,7 +592,7 @@
       "version": null,
       "manufacturer": "microsoft",
       "bits": null,
-      "type": "bot"
+      "type": "unknown"
     },
     "os": {
       "name": "Windows Phone OS",
@@ -1884,7 +630,7 @@
       "version": null,
       "manufacturer": "google",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -1922,7 +668,7 @@
       "version": null,
       "manufacturer": "google",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -1960,7 +706,7 @@
       "version": "1.4.0",
       "manufacturer": "google",
       "bits": null,
-      "type": "application"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -1998,7 +744,7 @@
       "version": "3.4.0",
       "manufacturer": "tencent",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -2036,7 +782,7 @@
       "version": "4.0.0",
       "manufacturer": "google",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -2074,7 +820,7 @@
       "version": "4.0.0",
       "manufacturer": "maxthon",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -2112,7 +858,7 @@
       "version": "4.2.0",
       "manufacturer": "unknown",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -2150,7 +896,7 @@
       "version": "1.6.0",
       "manufacturer": "google",
       "bits": null,
-      "type": "application"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -2188,7 +934,7 @@
       "version": "29.0.1547.59",
       "manufacturer": "google",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -2226,7 +972,7 @@
       "version": "3.4.0",
       "manufacturer": "tencent",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -2264,7 +1010,7 @@
       "version": "27.0.1453.90",
       "manufacturer": "google",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -2302,7 +1048,7 @@
       "version": "3.4.0",
       "manufacturer": "tencent",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -2340,7 +1086,7 @@
       "version": "2.0.7",
       "manufacturer": "flipboard",
       "bits": null,
-      "type": "application"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -2378,7 +1124,7 @@
       "version": "2.2.0",
       "manufacturer": "baidu",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -2416,7 +1162,7 @@
       "version": "4.0.0",
       "manufacturer": "google",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -2454,7 +1200,7 @@
       "version": "3.4.0",
       "manufacturer": "access",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -2492,7 +1238,7 @@
       "version": "4.1.0",
       "manufacturer": "tencent",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -2530,7 +1276,7 @@
       "version": "1.4.0",
       "manufacturer": "google",
       "bits": null,
-      "type": "application"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -2568,7 +1314,7 @@
       "version": "2.0.0",
       "manufacturer": "facebook",
       "bits": null,
-      "type": "application"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -2606,7 +1352,7 @@
       "version": "2.3.0",
       "manufacturer": "access",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -2644,7 +1390,7 @@
       "version": "1.1.0",
       "manufacturer": "google",
       "bits": null,
-      "type": "application"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -2682,7 +1428,7 @@
       "version": null,
       "manufacturer": "web-expansion",
       "bits": null,
-      "type": "application"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -2720,7 +1466,7 @@
       "version": "3.4.0",
       "manufacturer": "tencent",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -2758,7 +1504,7 @@
       "version": "4.5.1.257",
       "manufacturer": "tencent",
       "bits": null,
-      "type": "application"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -2796,7 +1542,7 @@
       "version": "1.4.0",
       "manufacturer": "google",
       "bits": null,
-      "type": "application"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -2834,7 +1580,7 @@
       "version": null,
       "manufacturer": "google",
       "bits": null,
-      "type": "bot"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -2847,44 +1593,6 @@
       "name": null,
       "version": null,
       "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.3.3; ko-kr; SHW-M250L Build/GINGERBREAD) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
-    },
-    "device": {
-      "deviceName": "SHW-M250L",
-      "marketingName": "Galaxy S2 (Korea)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 800,
-        "height": 480,
-        "touch": true,
-        "size": 4.3
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Android Webkit",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "2.3.3",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "533.1.0",
-      "manufacturer": "apple"
     }
   },
   {
@@ -2910,7 +1618,7 @@
       "version": "6.2.3.8",
       "manufacturer": "myriad",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": null,
@@ -2948,7 +1656,7 @@
       "version": "1.6.0",
       "manufacturer": "google",
       "bits": null,
-      "type": "application"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -2986,7 +1694,7 @@
       "version": "16.0.912.77",
       "manufacturer": "google",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -3024,7 +1732,7 @@
       "version": "4.0.0",
       "manufacturer": "google",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -3062,7 +1770,7 @@
       "version": "16.0.912.77",
       "manufacturer": "google",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -3100,7 +1808,7 @@
       "version": "4.0.0",
       "manufacturer": "google",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -3138,7 +1846,7 @@
       "version": "1.4.0",
       "manufacturer": "google",
       "bits": null,
-      "type": "application"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -3176,7 +1884,7 @@
       "version": "4.0.0",
       "manufacturer": "google",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -3214,7 +1922,7 @@
       "version": "4.0.0",
       "manufacturer": "google",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -3252,7 +1960,7 @@
       "version": "2.8.0",
       "manufacturer": "tencent",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -3290,7 +1998,7 @@
       "version": "2.8.0",
       "manufacturer": "tencent",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -3328,7 +2036,7 @@
       "version": "3.1.2",
       "manufacturer": "google",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -3366,7 +2074,7 @@
       "version": "7.3.0",
       "manufacturer": "novarra",
       "bits": null,
-      "type": "transcoder"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -3404,7 +2112,7 @@
       "version": "2.9.1",
       "manufacturer": "nexstreaming",
       "bits": null,
-      "type": "multimedia-player"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -3442,7 +2150,7 @@
       "version": null,
       "manufacturer": "google",
       "bits": null,
-      "type": "bot"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -3480,7 +2188,7 @@
       "version": "3.4.0",
       "manufacturer": "access",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -3518,7 +2226,7 @@
       "version": "1.0.0",
       "manufacturer": "pivotal-labs",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -3556,7 +2264,7 @@
       "version": "1.2.0",
       "manufacturer": "google",
       "bits": null,
-      "type": "application"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -3594,7 +2302,7 @@
       "version": "7.8.0.95",
       "manufacturer": "ucweb",
       "bits": null,
-      "type": "transcoder"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -3632,7 +2340,7 @@
       "version": null,
       "manufacturer": "google",
       "bits": null,
-      "type": "bot"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -3670,7 +2378,7 @@
       "version": "3.4.0",
       "manufacturer": "access",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -3708,7 +2416,7 @@
       "version": "25.0.0",
       "manufacturer": "tencent",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -3746,7 +2454,7 @@
       "version": "25.0.0",
       "manufacturer": "tencent",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -3784,7 +2492,7 @@
       "version": "3.4.0",
       "manufacturer": "access",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -3797,6 +2505,1298 @@
       "name": "NetFront",
       "version": null,
       "manufacturer": "access"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-U900/BOHD2 SHP/VPP/R5 NetFront/3.4 QTV5.3 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1"
+    },
+    "device": {
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "NetFront",
+      "modus": null,
+      "version": "3.4.0",
+      "manufacturer": "access",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": "NetFront",
+      "version": null,
+      "manufacturer": "access"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-G800/XXHF1 SHP/VPP/R5 NetFront/3.4 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1"
+    },
+    "device": {
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "NetFront",
+      "modus": null,
+      "version": "3.4.0",
+      "manufacturer": "access",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": "NetFront",
+      "version": null,
+      "manufacturer": "access"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-GT-S3100/S3100BOJB1 NetFront/3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+    },
+    "device": {
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "NetFront",
+      "modus": null,
+      "version": "3.5.0",
+      "manufacturer": "access",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": "NetFront",
+      "version": null,
+      "manufacturer": "access"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.3.5; hd-us; GT-I9000 Build/GRJ22) AppleWebKit/528.5+ (KHTML, like Gecko) Version/3.1.2 Mobile Safari/525.20.1 GoogleGoggles-Android/1.5.2; gzip"
+    },
+    "device": {
+      "deviceName": "GT-I9000",
+      "marketingName": "Galaxy S",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 4
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "3.1.2",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "2.3.5",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "528.5.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.2.2; en-us; SPH-M920 Build/FROYO) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
+    },
+    "device": {
+      "deviceName": "SPH-M920",
+      "marketingName": "Transform",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "2.2.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "533.1.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-L760/XXGH2 SHP/VPP/R5 NetFront/3.4 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1"
+    },
+    "device": {
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "NetFront",
+      "modus": null,
+      "version": "3.4.0",
+      "manufacturer": "access",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": "NetFront",
+      "version": null,
+      "manufacturer": "access"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SCH-W259/W259DDEE3 NetFront/3.4 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+    },
+    "device": {
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "NetFront",
+      "modus": null,
+      "version": "3.4.0",
+      "manufacturer": "access",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": "NetFront",
+      "version": null,
+      "manufacturer": "access"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.2.1; en-us; SCH-R910 Build/FROYO) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
+    },
+    "device": {
+      "deviceName": "SCH-R910",
+      "marketingName": "Galaxy Indulge",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "2.2.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "533.1.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Dalvik/1.4.0 (Linux; U; Android 2.3.3; Nexus S Build/GRI54)"
+    },
+    "device": {
+      "deviceName": "Nexus S",
+      "marketingName": "Nexus S",
+      "manufacturer": "samsung",
+      "brand": "google",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 4
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Dalvik",
+      "modus": null,
+      "version": "1.4.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "2.3.3",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-L810-Vodafone/L810BUHEC SHP/VPP/R5 Opera/9.5 Qtv5.3 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1"
+    },
+    "device": {
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "9.5.0",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": null,
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.2.1; en-us; SPH-M910 Build/FROYO) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
+    },
+    "device": {
+      "deviceName": "SPH-M910",
+      "marketingName": "Intercept (Sprint)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 400,
+        "height": 240,
+        "touch": true,
+        "size": 3.2
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "2.2.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "533.1.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "AndroidGoogleTalkAppHttp/1.0 (GT-I9000 ECLAIR)"
+    },
+    "device": {
+      "deviceName": "GT-I9000",
+      "marketingName": "Galaxy S",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 4
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Google Bot",
+      "modus": null,
+      "version": null,
+      "manufacturer": "google",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": null,
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-GT-M8800/M8800BMIC1 SHP/VPP/R5 NetFront/3.5 Qtv5.3 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1"
+    },
+    "device": {
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "NetFront",
+      "modus": null,
+      "version": "3.5.0",
+      "manufacturer": "access",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": "NetFront",
+      "version": null,
+      "manufacturer": "access"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.3.3; de_de; Nexus S Build/GINGERBREAD) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 NetFrontLifeBrowser/2.1 Mobile (Dragonfruit)"
+    },
+    "device": {
+      "deviceName": "Nexus S",
+      "marketingName": "Nexus S",
+      "manufacturer": "samsung",
+      "brand": "google",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 4
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "NetFrontLifeBrowser",
+      "modus": null,
+      "version": "2.1.0",
+      "manufacturer": "access",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "2.3.3",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "NetFront",
+      "version": null,
+      "manufacturer": "access"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-U700-Vodafone/BUGK2 SHP/VPP/R5 NetFront/3.4 Qtv5.3 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1"
+    },
+    "device": {
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "NetFront",
+      "modus": null,
+      "version": "3.4.0",
+      "manufacturer": "access",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": "NetFront",
+      "version": null,
+      "manufacturer": "access"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.3.3; de-de; Galaxy5 Build/GRI40) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
+    },
+    "device": {
+      "deviceName": "GT-I7500",
+      "marketingName": "Galaxy",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 4
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "2.3.3",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "533.1.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-S3600/S3600XAIE1 NetFront/3.4 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+    },
+    "device": {
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "NetFront",
+      "modus": null,
+      "version": "3.4.0",
+      "manufacturer": "access",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": "NetFront",
+      "version": null,
+      "manufacturer": "access"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-G600/G600XWGL1 NetFront/3.4 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+    },
+    "device": {
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "NetFront",
+      "modus": null,
+      "version": "3.4.0",
+      "manufacturer": "access",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": "NetFront",
+      "version": null,
+      "manufacturer": "access"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.3.3; zh-cn; GT-I9000 Build/GINGERBREAD) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Mobile Safari/530.17"
+    },
+    "device": {
+      "deviceName": "GT-I9000",
+      "marketingName": "Galaxy S",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 4
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "2.3.3",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "530.17.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Dalvik/1.1.0 (Linux; U; Android 2.1-update1; GT-I5800 Build/ECLAIR)"
+    },
+    "device": {
+      "deviceName": "GT-I5800",
+      "marketingName": "Galaxy 3 Apollo",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 400,
+        "height": 240,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Dalvik",
+      "modus": null,
+      "version": "1.1.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "2.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-GT-S3550/1.0 NetFront/3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+    },
+    "device": {
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "NetFront",
+      "modus": null,
+      "version": "3.5.0",
+      "manufacturer": "access",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": "NetFront",
+      "version": null,
+      "manufacturer": "access"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Vodafone/1.0/SAMSUNG-SGH-M200/AMHI4/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0"
+    },
+    "device": {
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "6.2.3.3",
+      "manufacturer": "myriad",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Dalvik/1.2.0 (Linux; U; Android 2.2.1; GT-I9000 Build/FROYO) FacebookAndroidSDK"
+    },
+    "device": {
+      "deviceName": "GT-I9000",
+      "marketingName": "Galaxy S",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 4
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": null,
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "2.2.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-U900-Vodafone/U90WBUHK3 SHP/VPP/R5 NetFront/3.4 Qtv5.3 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1"
+    },
+    "device": {
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "NetFront",
+      "modus": null,
+      "version": "3.4.0",
+      "manufacturer": "access",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": "NetFront",
+      "version": null,
+      "manufacturer": "access"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-U900/BOHH5 SHP/VPP/R5 NetFront/3.4 QTV5.3 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1"
+    },
+    "device": {
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "NetFront",
+      "modus": null,
+      "version": "3.4.0",
+      "manufacturer": "access",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": "NetFront",
+      "version": null,
+      "manufacturer": "access"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-D900/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0 Novarra-Vision/8.0"
+    },
+    "device": {
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "6.2.3.3",
+      "manufacturer": "myriad",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-G800/AOGJ3 SHP/VPP/R5 NetFront/3.4 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1"
+    },
+    "device": {
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "NetFront",
+      "modus": null,
+      "version": "3.4.0",
+      "manufacturer": "access",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": "NetFront",
+      "version": null,
+      "manufacturer": "access"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Dalvik/1.2.0 (Linux; U; Android 2.2.1; SHW-M130L Build/FROYO)"
+    },
+    "device": {
+      "deviceName": "SHW-M130L",
+      "marketingName": "Galaxy U",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 3.7
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Dalvik",
+      "modus": null,
+      "version": "1.2.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "2.2.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Dalvik/1.2.0 (Linux; U; Android 2.2; SC-02B Build/FROYO)"
+    },
+    "device": {
+      "deviceName": "SC-02B",
+      "marketingName": "Galaxy S",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 4
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Dalvik",
+      "modus": null,
+      "version": "1.2.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "2.2.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-T401G/T401UDJD2 NetFront/3.4 Profile/MIDP-2.0 Configuration/CLDC-1.1[TF356986031673809000000013374422415]"
+    },
+    "device": {
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "NetFront",
+      "modus": null,
+      "version": "3.4.0",
+      "manufacturer": "access",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": "NetFront",
+      "version": null,
+      "manufacturer": "access"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-G800/BHGK1 SHP/VPP/R5 NetFront/3.4 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1"
+    },
+    "device": {
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "NetFront",
+      "modus": null,
+      "version": "3.4.0",
+      "manufacturer": "access",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": "NetFront",
+      "version": null,
+      "manufacturer": "access"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-D500/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0 Novarra-Vision/8.0"
+    },
+    "device": {
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "6.2.3.3",
+      "manufacturer": "myriad",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-F700-Vodafone/F700ACGK2 SHP/VPP/R5 NetFront/3.4 Qtv5.3 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1"
+    },
+    "device": {
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "NetFront",
+      "modus": null,
+      "version": "3.4.0",
+      "manufacturer": "access",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": "NetFront",
+      "version": null,
+      "manufacturer": "access"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "X-WAP-PROFILE: http://device.sprintpcs.com/Samsung/SPH-A620/"
+    },
+    "device": {
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
     }
   }
 ]
