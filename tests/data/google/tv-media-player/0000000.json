@@ -22,7 +22,7 @@
       "version": "31.0.1650.0",
       "manufacturer": "google",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -60,7 +60,7 @@
       "version": "41.0.2272.75",
       "manufacturer": "google",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -98,7 +98,7 @@
       "version": "52.0.2743.84",
       "manufacturer": "google",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -136,7 +136,7 @@
       "version": "41.0.2272.75",
       "manufacturer": "google",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -174,7 +174,7 @@
       "version": "39.0.2171.51",
       "manufacturer": "google",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -212,7 +212,7 @@
       "version": "6.1.11",
       "manufacturer": "espial-group",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -250,7 +250,7 @@
       "version": "30.0.1573.2",
       "manufacturer": "google",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -288,7 +288,7 @@
       "version": "33.0.1702.0",
       "manufacturer": "google",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -326,7 +326,7 @@
       "version": "26.0.1410.0",
       "manufacturer": "google",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -364,7 +364,7 @@
       "version": null,
       "manufacturer": "google",
       "bits": null,
-      "type": "bot"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -402,7 +402,7 @@
       "version": "76.0.3809.81",
       "manufacturer": "google",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -414,6 +414,44 @@
     "engine": {
       "name": "Blink",
       "version": "76.0.3809.81",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.47 Safari/537.36 CrKey/1.36.159268 comdirect/1.0 (appVersion:20.2.0;deviceType:desktop)"
+    },
+    "device": {
+      "deviceName": "Chromecast",
+      "marketingName": "Chromecast",
+      "manufacturer": "google",
+      "brand": "google",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv-media-player"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "70.0.3538.47",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": null,
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "70.0.3538.47",
       "manufacturer": "google"
     }
   }

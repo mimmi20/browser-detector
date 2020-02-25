@@ -22,7 +22,7 @@
       "version": "30.0.0.0",
       "manufacturer": "google",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -60,7 +60,7 @@
       "version": null,
       "manufacturer": "cheetah-mobile",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -98,7 +98,7 @@
       "version": "1.6.0",
       "manufacturer": "google",
       "bits": null,
-      "type": "application"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -136,7 +136,7 @@
       "version": "50.0.2661.89",
       "manufacturer": "google",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -174,7 +174,7 @@
       "version": "51.0.2704.81",
       "manufacturer": "google",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -212,7 +212,7 @@
       "version": "61.0.3163.98",
       "manufacturer": "google",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -250,7 +250,7 @@
       "version": "68.0.3440.40",
       "manufacturer": "google",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -288,7 +288,7 @@
       "version": "69.0.3497.128",
       "manufacturer": "unknown",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -300,6 +300,44 @@
     "engine": {
       "name": "Blink",
       "version": "69.0.3497.128",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; KT096H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.62 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "KT096H",
+      "marketingName": "KT096H",
+      "manufacturer": "xgody",
+      "brand": "xgody",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 9.6
+      },
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "78.0.3904.62",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "78.0.3904.62",
       "manufacturer": "google"
     }
   }
