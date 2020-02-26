@@ -1,6 +1,44 @@
 [
   {
     "headers": {
+      "user-agent": "SAMSUNG-GT-S9110/S9110XAIK2 NetFront/3.4"
+    },
+    "device": {
+      "deviceName": "GT-S9110",
+      "marketingName": "Watchphone",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": true,
+        "size": 1.76
+      },
+      "type": "watch"
+    },
+    "browser": {
+      "name": "NetFront",
+      "modus": null,
+      "version": "3.4.0",
+      "manufacturer": "access",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": "NetFront",
+      "version": null,
+      "manufacturer": "access"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 4.4; Gear Live Build/KMV78X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/19.77.34.5 Mobile Safari/537.36"
     },
     "device": {
@@ -22,7 +60,7 @@
       "version": "19.77.34.5",
       "manufacturer": "google",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
@@ -60,7 +98,7 @@
       "version": "4.0.0",
       "manufacturer": "google",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
@@ -98,7 +136,7 @@
       "version": "2.2.1.3",
       "manufacturer": "linux-foundation",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Tizen",
@@ -136,7 +174,7 @@
       "version": "2.2.1.3",
       "manufacturer": "linux-foundation",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Tizen",
@@ -174,7 +212,7 @@
       "version": "34.0.1847.76",
       "manufacturer": "google",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Tizen",
@@ -212,7 +250,7 @@
       "version": "56.0.2924.0",
       "manufacturer": "google",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Tizen",
@@ -250,7 +288,7 @@
       "version": "2.0.0",
       "manufacturer": "samsung",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Tizen",
