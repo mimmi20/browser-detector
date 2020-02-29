@@ -176,7 +176,7 @@
       "width": 800,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 4
     },
     "type": "smartphone",
     "platform": null
@@ -243,10 +243,10 @@
     "manufacturer": "tcl",
     "brand": "tcl",
     "display": {
-      "width": null,
-      "height": null,
+      "width": 480,
+      "height": 320,
       "touch": true,
-      "size": null
+      "size": 3.5
     },
     "type": "smartphone",
     "platform": null
@@ -559,6 +559,20 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "tcl p561u": {
+    "deviceName": "P561U",
+    "marketingName": "P561U",
+    "manufacturer": "tcl",
+    "brand": "tcl",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 5.5
+    },
+    "type": "smartphone",
+    "platform": null
+  },
   "tcl p600": {
     "deviceName": "P600",
     "marketingName": "P600",
@@ -685,6 +699,20 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "tcl s725t": {
+    "deviceName": "S725T",
+    "marketingName": "S725T",
+    "manufacturer": "tcl",
+    "brand": "tcl",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 5.5
+    },
+    "type": "smartphone",
+    "platform": null
+  },
   "tcl s800": {
     "deviceName": "S800",
     "marketingName": "S800",
@@ -754,19 +782,5 @@
     },
     "type": "smartphone",
     "platform": "android"
-  },
-  "tcl z206": {
-    "deviceName": "Z206",
-    "marketingName": "Z206",
-    "manufacturer": "tcl",
-    "brand": "tcl",
-    "display": {
-      "width": 320,
-      "height": 240,
-      "touch": true,
-      "size": 2.4
-    },
-    "type": "smartphone",
-    "platform": null
   }
 }
