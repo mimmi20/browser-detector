@@ -12,7 +12,7 @@
         "width": 1280,
         "height": 800,
         "touch": true,
-        "size": null
+        "size": 7
       },
       "type": "tablet"
     },
@@ -50,7 +50,7 @@
         "width": 1280,
         "height": 800,
         "touch": true,
-        "size": null
+        "size": 7
       },
       "type": "tablet"
     },
@@ -88,7 +88,7 @@
         "width": 1280,
         "height": 800,
         "touch": true,
-        "size": null
+        "size": 7
       },
       "type": "tablet"
     },
@@ -126,7 +126,7 @@
         "width": 1280,
         "height": 800,
         "touch": true,
-        "size": null
+        "size": 7
       },
       "type": "tablet"
     },
@@ -164,7 +164,7 @@
         "width": 1280,
         "height": 800,
         "touch": true,
-        "size": null
+        "size": 7
       },
       "type": "tablet"
     },
@@ -316,7 +316,7 @@
         "width": 1280,
         "height": 800,
         "touch": true,
-        "size": null
+        "size": 7
       },
       "type": "tablet"
     },
@@ -354,7 +354,7 @@
         "width": 1280,
         "height": 800,
         "touch": true,
-        "size": null
+        "size": 7
       },
       "type": "tablet"
     },
@@ -423,12 +423,12 @@
     },
     "device": {
       "deviceName": "8H",
-      "marketingName": "8H",
+      "marketingName": "Droipad 8",
       "manufacturer": "tecno",
       "brand": "tecno",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1024,
+        "height": 768,
         "touch": true,
         "size": 8
       },
@@ -575,12 +575,12 @@
     },
     "device": {
       "deviceName": "8H",
-      "marketingName": "8H",
+      "marketingName": "Droipad 8",
       "manufacturer": "tecno",
       "brand": "tecno",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1024,
+        "height": 768,
         "touch": true,
         "size": 8
       },
@@ -604,44 +604,6 @@
     "engine": {
       "name": "Blink",
       "version": "63.0.3239.111",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; TECNO WX3LTE Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "general Tecno device",
-      "marketingName": "general Tecno device",
-      "manufacturer": "tecno",
-      "brand": "tecno",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "tablet"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "56.0.2924.87",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "7.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "56.0.2924.87",
       "manufacturer": "google"
     }
   },

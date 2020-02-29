@@ -1007,6 +1007,20 @@
     "type": "feature-phone",
     "platform": "java"
   },
+  "samsung sch-r900": {
+    "deviceName": "SCH-R900",
+    "marketingName": "Craft",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": false,
+      "size": 3.3
+    },
+    "type": "feature-phone",
+    "platform": "brew"
+  },
   "samsung d600": {
     "deviceName": "D600",
     "marketingName": "D600",
@@ -3219,6 +3233,20 @@
     "type": "feature-phone",
     "platform": "brew"
   },
+  "samsung sch-r640": {
+    "deviceName": "SCH-R640",
+    "marketingName": "Messager Touch II",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": 2.8
+    },
+    "type": "feature-phone",
+    "platform": "brew"
+  },
   "samsung gt-e2200": {
     "deviceName": "GT-E2200",
     "marketingName": "Metro",
@@ -3807,6 +3835,20 @@
     "type": "feature-phone",
     "platform": "java"
   },
+  "samsung pls-m520": {
+    "deviceName": "PLS-M520",
+    "marketingName": "PLS-M520",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "samsung gt-s5600": {
     "deviceName": "GT-S5600",
     "marketingName": "Preston",
@@ -3961,6 +4003,20 @@
     "type": "feature-phone",
     "platform": "java"
   },
+  "samsung rl-a760": {
+    "deviceName": "RL-A760",
+    "marketingName": "RL-A760",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "samsung s3500": {
     "deviceName": "S3500",
     "marketingName": "S3500",
@@ -3985,6 +4041,34 @@
       "height": 176,
       "touch": false,
       "size": 1.8
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "samsung s5320": {
+    "deviceName": "S5320",
+    "marketingName": "S5320",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": 2.2
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "samsung s9402": {
+    "deviceName": "S9402",
+    "marketingName": "S9402",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": 2
     },
     "type": "feature-phone",
     "platform": "java"
@@ -4031,6 +4115,34 @@
     "type": "feature-phone",
     "platform": "java"
   },
+  "samsung sch-a600": {
+    "deviceName": "SCH-A600",
+    "marketingName": "SCH-A600",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 160,
+      "height": 120,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "samsung sch-a670": {
+    "deviceName": "SCH-A670",
+    "marketingName": "SCH-A670",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "samsung sch-a950": {
     "deviceName": "SCH-A950",
     "marketingName": "SCH-A950",
@@ -4059,6 +4171,20 @@
     "type": "feature-phone",
     "platform": "brew"
   },
+  "samsung sch-f309": {
+    "deviceName": "SCH-F309",
+    "marketingName": "SCH-F309",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": false,
+      "size": 1.9
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "samsung sch-f859": {
     "deviceName": "SCH-F859",
     "marketingName": "SCH-F859",
@@ -4072,6 +4198,48 @@
     },
     "type": "feature-phone",
     "platform": "nucleus os"
+  },
+  "samsung sch-i220": {
+    "deviceName": "SCH-I220",
+    "marketingName": "SCH-I220",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": 2.4
+    },
+    "type": "feature-phone",
+    "platform": "windows ce"
+  },
+  "samsung sch-i220a": {
+    "deviceName": "SCH-I220A",
+    "marketingName": "SCH-I220A",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": 2.4
+    },
+    "type": "feature-phone",
+    "platform": "windows ce"
+  },
+  "samsung sch-i225": {
+    "deviceName": "SCH-I225",
+    "marketingName": "SCH-I225",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": 2.4
+    },
+    "type": "feature-phone",
+    "platform": "windows ce"
   },
   "samsung sch-i760": {
     "deviceName": "SCH-I760",
@@ -4955,6 +5123,20 @@
     "type": "feature-phone",
     "platform": "java"
   },
+  "samsung sch-u350": {
+    "deviceName": "SCH-U350",
+    "marketingName": "Smooth",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": 1.9
+    },
+    "type": "feature-phone",
+    "platform": "windows ce"
+  },
   "samsung sgh-u800": {
     "deviceName": "SGH-U800",
     "marketingName": "Soul B",
@@ -5192,6 +5374,20 @@
     },
     "type": "feature-phone",
     "platform": "java"
+  },
+  "samsung sch-m710": {
+    "deviceName": "SCH-M710",
+    "marketingName": "T*OMNIA II",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": false,
+      "size": 3.7
+    },
+    "type": "feature-phone",
+    "platform": "windows ce"
   },
   "samsung sch-m715": {
     "deviceName": "SCH-M715",
