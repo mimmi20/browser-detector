@@ -1,7 +1,7 @@
 [
   {
     "headers": {
-      "user-agent": "SAMSUNG-SGH-D415"
+      "user-agent": "SAMSUNG-SGH-F330"
     },
     "device": {
       "deviceName": "general Samsung device",
@@ -39,7 +39,7 @@
   },
   {
     "headers": {
-      "user-agent": "SAMSUNG-SGH-D418"
+      "user-agent": "SAMSUNG-SGH-F330-TEN/F330AFHB1 SHP/VPP/R5 NetFront/3.4 Qtv5.3 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1"
     },
     "device": {
       "deviceName": "general Samsung device",
@@ -55,67 +55,29 @@
       "type": "smartphone"
     },
     "browser": {
-      "name": null,
+      "name": "NetFront",
       "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG-SGH-D488/1.0*MDA0NDAwMDA2MjM1NzMx UP.Browser/6.2.2.6 (GUI) MMP/1.0"
-    },
-    "device": {
-      "deviceName": "general Samsung device",
-      "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Openwave Mobile Browser",
-      "modus": null,
-      "version": "6.2.2.6",
-      "manufacturer": "myriad",
+      "version": "3.4.0",
+      "manufacturer": "access",
       "bits": null,
       "type": "browser"
     },
     "os": {
-      "name": null,
-      "marketingName": null,
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "unknown",
+      "manufacturer": "sun-microsystems",
       "bits": null
     },
     "engine": {
-      "name": null,
+      "name": "NetFront",
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "access"
     }
   },
   {
     "headers": {
-      "user-agent": "SAMSUNG-SGH-D500"
+      "user-agent": "SAMSUNG-SGH-F338"
     },
     "device": {
       "deviceName": "general Samsung device",
@@ -153,235 +115,7 @@
   },
   {
     "headers": {
-      "user-agent": "SAMSUNG-SGH-D500C"
-    },
-    "device": {
-      "deviceName": "general Samsung device",
-      "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG-SGH-D500E"
-    },
-    "device": {
-      "deviceName": "general Samsung device",
-      "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG-SGH-D508"
-    },
-    "device": {
-      "deviceName": "general Samsung device",
-      "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG-SGH-D510"
-    },
-    "device": {
-      "deviceName": "general Samsung device",
-      "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG-SGH-D520"
-    },
-    "device": {
-      "deviceName": "general Samsung device",
-      "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG SGH-D528 GSM/GPRS Handset UA Prof"
-    },
-    "device": {
-      "deviceName": "general Samsung device",
-      "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Java; U; Pt-br; samsung-sgh-d608) UCBrowser8.3.0.154/70/352/UCWEB Mobile UNTRUSTED/1.0"
+      "user-agent": "Mozilla/5.0 (Java; U; es-la; samsung-sgh-f400) AppleWebKit/530.13 (KHTML, like Gecko) UCBrowser/8.6.0.199/84/352/UCWEB Mobile UNTRUSTED/1.0"
     },
     "device": {
       "deviceName": "general Samsung device",
@@ -399,7 +133,7 @@
     "browser": {
       "name": "UC Browser",
       "modus": null,
-      "version": "8.3.0.154",
+      "version": "8.6.0.199",
       "manufacturer": "ucweb",
       "bits": null,
       "type": "transcoder"
@@ -412,52 +146,14 @@
       "bits": null
     },
     "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
+      "name": "WebKit",
+      "version": "530.13.0",
+      "manufacturer": "apple"
     }
   },
   {
     "headers": {
-      "user-agent": "MQQBrowser/Mini2.2 (SAMSUNG-SGH-D608/1.0/WAP2.0)"
-    },
-    "device": {
-      "deviceName": "general Samsung device",
-      "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "QQbrowser Mini",
-      "modus": null,
-      "version": "2.2.0",
-      "manufacturer": "tencent",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG-SGH-D720"
+      "user-agent": "SAMSUNG-SGH-F400"
     },
     "device": {
       "deviceName": "general Samsung device",
@@ -495,7 +191,7 @@
   },
   {
     "headers": {
-      "user-agent": "SAMSUNG-SGH-D728/Series60 2.1/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.0"
+      "user-agent": "SAMSUNG-SGH-F500"
     },
     "device": {
       "deviceName": "general Samsung device",
@@ -511,12 +207,392 @@
       "type": "smartphone"
     },
     "browser": {
-      "name": "WAP Browser",
+      "name": null,
       "modus": null,
       "version": null,
       "manufacturer": "unknown",
       "bits": null,
-      "type": "wap-browser"
+      "type": "unknown"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-F700"
+    },
+    "device": {
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-F700-VODAFONE"
+    },
+    "device": {
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-F700-Vodafone"
+    },
+    "device": {
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-G400"
+    },
+    "device": {
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-G400L"
+    },
+    "device": {
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-G600"
+    },
+    "device": {
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-G600-VODA/G600ACGJ1 NetFront/3.4 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+    },
+    "device": {
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "NetFront",
+      "modus": null,
+      "version": "3.4.0",
+      "manufacturer": "access",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": "NetFront",
+      "version": null,
+      "manufacturer": "access"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-G608"
+    },
+    "device": {
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-G800"
+    },
+    "device": {
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-G818E/1.0 SymbianOS/9.2 Series60/3.1 Release/1.15.2008 Browser/OSS3.1 Profile/MIDP-2.0 Configuration/CLDC-1.0"
+    },
+    "device": {
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
     },
     "os": {
       "name": "Series 60",
@@ -533,7 +609,7 @@
   },
   {
     "headers": {
-      "user-agent": "Samsung SGH-D730"
+      "user-agent": "SAMSUNG-SGH-I200"
     },
     "device": {
       "deviceName": "general Samsung device",
@@ -571,7 +647,1071 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Java; U; en-us; samsung sgh-d780) UCBrowser8.4.0.159/69/444/UCWEB Mobile,SAMSUNG-SGH-D780/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.102 (GUI) MMP/2.0 Untrusted/1.0"
+      "user-agent": "SAMSUNG-SGH-i200"
+    },
+    "device": {
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-I200-ORANGE"
+    },
+    "device": {
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-i200-ORANGE"
+    },
+    "device": {
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-I300"
+    },
+    "device": {
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-I308/Browser 1.0.0.23/WAP-2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+    },
+    "device": {
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-I310"
+    },
+    "device": {
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.1.1; Samsung-SGH-i317 Build/JRO03C) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.37 Mobile Safari/537.22"
+    },
+    "device": {
+      "deviceName": "SGH-I317",
+      "marketingName": "Galaxy Note 2 (AT&T)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "25.0.1364.37",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.22.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "JUC (Linux; U; 4.1.1; zh-cn; SAMSUNG-SGH-I317; 720*1280) UCWEB7.9.0.94/139/444"
+    },
+    "device": {
+      "deviceName": "SGH-I317",
+      "marketingName": "Galaxy Note 2 (AT&T)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "7.9.0.94",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-I320"
+    },
+    "device": {
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-I320N"
+    },
+    "device": {
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-I400"
+    },
+    "device": {
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Samsung SGH-i400"
+    },
+    "device": {
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "JUC (Linux; U; 4.0.4; zh-cn; SAMSUNG-SGH-I437; 480*800) UCWEB7.9.0.94/140/352"
+    },
+    "device": {
+      "deviceName": "SGH-I437",
+      "marketingName": "Galaxy Express",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 4.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "7.9.0.94",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.0.4",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-I458"
+    },
+    "device": {
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Samsung-SGH-i458_CMCC/1.0 SymbianOS/9.2 Series60/3.1 Release/5.25.2007 Browser/OSS3.1 Profile/MIDP-2.0 Configuration/CLDC-1.0"
+    },
+    "device": {
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Series 60",
+      "marketingName": "Series 60",
+      "version": null,
+      "manufacturer": "nokia",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "android 4.2.2; SAMSUNG-SGH-I527"
+    },
+    "device": {
+      "deviceName": "SGH-I527",
+      "marketingName": "Galaxy Mega 6.3",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 6.3
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": null,
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "JUC (Linux; U; 2.3.6; zh-cn; SAMSUNG-SGH-I577; 480*800) UCWEB7.9.0.94/139/444"
+    },
+    "device": {
+      "deviceName": "SGH-I577",
+      "marketingName": "Exhilarate",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "7.9.0.94",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "2.3.6",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) SAMSUNG-SGH-i600/WM534"
+    },
+    "device": {
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "IEMobile",
+      "modus": null,
+      "version": "6.12.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": null,
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": "Trident",
+      "version": null,
+      "manufacturer": "microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-I600"
+    },
+    "device": {
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-I600ORANGE"
+    },
+    "device": {
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-i600ORANGE/1.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8)"
+    },
+    "device": {
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "IEMobile",
+      "modus": null,
+      "version": "6.8.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": null,
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": "Trident",
+      "version": null,
+      "manufacturer": "microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-i600TIM/1.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8)"
+    },
+    "device": {
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "IEMobile",
+      "modus": null,
+      "version": "6.8.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": null,
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": "Trident",
+      "version": null,
+      "manufacturer": "microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) SAMSUNG-SGH-i600V/1.0"
+    },
+    "device": {
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "IEMobile",
+      "modus": null,
+      "version": "6.12.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": null,
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": "Trident",
+      "version": null,
+      "manufacturer": "microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Java; U; en-us; j2me) AppleWebKit/530.13 (KHTML, like Gecko) UCBrowser/8.6.0.199/84/352/UCWEB Mobile, SAMSUNG-SGH-I607/I607FG1 Mozilla/4.0/UNTRUSTED/1.0"
+    },
+    "device": {
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "8.6.0.199",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "530.13.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "UCWEB/2.0 (Java; U; MIDP-2.0; es-LA; samsung-sgh-i607) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile, SAMSUNG-SGH-I607/I607FG1 Mozilla/4.0 UNTRUSTED/1.0"
+    },
+    "device": {
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "8.9.0.251",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": "U2",
+      "version": "1.0.0",
+      "manufacturer": "ucweb"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-I608"
+    },
+    "device": {
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-i608/1.0 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)"
+    },
+    "device": {
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "IEMobile",
+      "modus": null,
+      "version": "7.6.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": null,
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": "Trident",
+      "version": null,
+      "manufacturer": "microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-I616"
+    },
+    "device": {
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Java; U; Pt-br; aplix jblend) UCBrowser8.4.0.159/69/352/UCWEB Mobile, SAMSUNG-SGH-I617/1.0 Mozilla/4.0 UNTRUSTED/1.0"
     },
     "device": {
       "deviceName": "general Samsung device",
@@ -609,7 +1749,7 @@
   },
   {
     "headers": {
-      "user-agent": "OneBrowser/3.1 (SAMSUNG SGH-D780)"
+      "user-agent": "UCWEB/2.0 (Java; U; MIDP-2.0; es-LA; samsung-sgh-i617) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile, SAMSUNG-SGH-I617/1.0 Mozilla/4.0 UNTRUSTED/1.0"
     },
     "device": {
       "deviceName": "general Samsung device",
@@ -625,18 +1765,664 @@
       "type": "smartphone"
     },
     "browser": {
-      "name": "OneBrowser",
+      "name": "UC Browser",
       "modus": null,
-      "version": "3.1.0",
+      "version": "8.9.0.251",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": "U2",
+      "version": "1.0.0",
+      "manufacturer": "ucweb"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-I620"
+    },
+    "device": {
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
       "manufacturer": "unknown",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": null,
       "marketingName": null,
       "version": null,
       "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-I620V"
+    },
+    "device": {
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-i620v"
+    },
+    "device": {
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) SAMSUNG-SGH-i640V/BUGI4"
+    },
+    "device": {
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "IEMobile",
+      "modus": null,
+      "version": "6.12.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": null,
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": "Trident",
+      "version": null,
+      "manufacturer": "microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "MOZILLA40 (COMPATIBLE MSIE 60 WINDOWS CE IEMOBILE 612) SAMSUNG-SGH-I640V"
+    },
+    "device": {
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "IEMobile",
+      "modus": null,
+      "version": "612.0.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": null,
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": "Trident",
+      "version": null,
+      "manufacturer": "microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-i677/UCWEB2.0.0.149/47/32079"
+    },
+    "device": {
+      "deviceName": "SGH-I677",
+      "marketingName": "Focus Flash",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 3.7
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "2.0.0.149",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Windows Phone OS",
+      "marketingName": "Windows Phone OS",
+      "version": null,
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-I688"
+    },
+    "device": {
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-I710"
+    },
+    "device": {
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-i710"
+    },
+    "device": {
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-I718"
+    },
+    "device": {
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-i718/MSIE4.01/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.4.0.65"
+    },
+    "device": {
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "7.4.0.65",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": null,
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": "Trident",
+      "version": null,
+      "manufacturer": "microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-i718plus_CMCC/1.0 Release/03.07 Browser/IE6 Profile/MIDP-2.0 Configuration/CLDC-1.1 (compatible; MSIE 4.01; Windows CE; PPC)"
+    },
+    "device": {
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Internet Explorer",
+      "modus": null,
+      "version": "4.01.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": null,
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": "Trident",
+      "version": null,
+      "manufacturer": "microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-I728"
+    },
+    "device": {
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-i728_CMCC/1.0 Release/03.07 Browser/IE6 Profile/MIDP-2.0 Configuration/CLDC-1.1 (compatible; MSIE 4.01; Windows CE; PPC)/UCWEB7.4.0.57/31/999"
+    },
+    "device": {
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "7.4.0.57",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": null,
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": "Trident",
+      "version": null,
+      "manufacturer": "microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-I740"
+    },
+    "device": {
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-i740/1.0"
+    },
+    "device": {
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Instagram 5.1.7 Android (18/4.3; 320dpi; 720x1280; samsung; SGH-I747M; d2can; qcom; en_CA)"
+    },
+    "device": {
+      "deviceName": "SGH-I747M",
+      "marketingName": "Galaxy S3",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 4.8
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": null,
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": null,
+      "manufacturer": "google",
       "bits": null
     },
     "engine": {
@@ -647,7 +2433,121 @@
   },
   {
     "headers": {
-      "user-agent": "SAMSUNG-SGH-D788/1.0 RTK-E/1.0 DF/1.0 Release/08.17.2007 Browser/Openwave6.2.3.3.c.1.101 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+      "user-agent": "SAMSUNG-SGH-I750"
+    },
+    "device": {
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "JUC (Linux; U; 2.3.6; zh-cn; SAMSUNG-SGH-I827; 320*480) UCWEB7.9.0.94/139/444"
+    },
+    "device": {
+      "deviceName": "SGH-I827",
+      "marketingName": "Galaxy Appeal",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.2
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "7.9.0.94",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "2.3.6",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "FriendFinder/2.12 (AllFriendFinder) Android/2.3.6 (ARMv7) (SAMSUNG-SGH-I847)"
+    },
+    "device": {
+      "deviceName": "SGH-I847",
+      "marketingName": "Rugby Smart",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 3.6
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": null,
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "2.3.6",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-I858/1.0/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.4 (GUI) MMP/2.0"
     },
     "device": {
       "deviceName": "general Samsung device",
@@ -665,7 +2565,7 @@
     "browser": {
       "name": "Openwave Mobile Browser",
       "modus": null,
-      "version": "6.2.3.3",
+      "version": "6.2.3.4",
       "manufacturer": "myriad",
       "bits": null,
       "type": "browser"
@@ -685,7 +2585,7 @@
   },
   {
     "headers": {
-      "user-agent": "SAMSUNG-SGH-D800"
+      "user-agent": "SAMSUNG-SGH-I907"
     },
     "device": {
       "deviceName": "general Samsung device",
@@ -723,7 +2623,7 @@
   },
   {
     "headers": {
-      "user-agent": "SAMSUNG-SGH-D807"
+      "user-agent": "SAMSUNG-SGH-i907"
     },
     "device": {
       "deviceName": "general Samsung device",
@@ -761,45 +2661,7 @@
   },
   {
     "headers": {
-      "user-agent": "SAMSUNG-SGH-D808/NetFront 3.2/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1/*MzU3ODE2MDAwMDAwMTE1"
-    },
-    "device": {
-      "deviceName": "general Samsung device",
-      "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "NetFront",
-      "modus": null,
-      "version": "3.2.0",
-      "manufacturer": "access",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG-SGH-D820"
+      "user-agent": "SAMSUNG-SGH-I908"
     },
     "device": {
       "deviceName": "general Samsung device",
@@ -837,7 +2699,7 @@
   },
   {
     "headers": {
-      "user-agent": "SAMSUNG-SGH-D830"
+      "user-agent": "SAMSUNG-SGH-i908"
     },
     "device": {
       "deviceName": "general Samsung device",
@@ -875,7 +2737,7 @@
   },
   {
     "headers": {
-      "user-agent": "SAMSUNG-SGH-D836"
+      "user-agent": "SAMSUNG-SGH-I908E_CMCC"
     },
     "device": {
       "deviceName": "general Samsung device",
@@ -913,45 +2775,7 @@
   },
   {
     "headers": {
-      "user-agent": "SAMSUNG-SGH-D840"
-    },
-    "device": {
-      "deviceName": "general Samsung device",
-      "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Java; U; ru; samsung-sgh-d880) UCBrowser8.3.0.154/69/444/UCWEB Mobile"
+      "user-agent": "SAMSUNG-SGH-i908E_CMCC/1.0 Release/03.07 Browser/IE6 Profile/MIDP-2.0 Configuration/CLDC-1.1 (compatible; MSIE 4.01; Windows CE; PPC)/UCWEB7.4.1.61/31/800"
     },
     "device": {
       "deviceName": "general Samsung device",
@@ -969,7 +2793,311 @@
     "browser": {
       "name": "UC Browser",
       "modus": null,
-      "version": "8.3.0.154",
+      "version": "7.4.1.61",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": null,
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": "Trident",
+      "version": null,
+      "manufacturer": "microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; msie 9.0; windows phone os 7.5; trident/5.0; iemobile/9.0; samsung; sgh-i917)"
+    },
+    "device": {
+      "deviceName": "SGH-I917",
+      "marketingName": "Focus",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 4
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "IEMobile",
+      "modus": null,
+      "version": "9.0.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Windows Phone OS",
+      "marketingName": "Windows Phone OS",
+      "version": "7.5.0",
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": "Trident",
+      "version": null,
+      "manufacturer": "microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-I917/UCWEB2.4.0.188/47/999"
+    },
+    "device": {
+      "deviceName": "SGH-I917",
+      "marketingName": "Focus",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 4
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "2.4.0.188",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Windows Phone OS",
+      "marketingName": "Windows Phone OS",
+      "version": null,
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-i917/UCWEB2.2.0.157/47/32079"
+    },
+    "device": {
+      "deviceName": "SGH-I917",
+      "marketingName": "Focus",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 4
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "2.2.0.157",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Windows Phone OS",
+      "marketingName": "Windows Phone OS",
+      "version": null,
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "JUC (Linux; U; 2.3.5; zh-cn; SAMSUNG-SGH-I927; 480*800) UCWEB7.9.0.94/139/444"
+    },
+    "device": {
+      "deviceName": "SGH-I927",
+      "marketingName": "Captivate Glide",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 4
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "7.9.0.94",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "2.3.5",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-i937/UCWEB2.2.0.157/47/32079"
+    },
+    "device": {
+      "deviceName": "SGH-I937",
+      "marketingName": "Focus S",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 4.3
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "2.2.0.157",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Windows Phone OS",
+      "marketingName": "Windows Phone OS",
+      "version": null,
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0(Linux;U;Android2.2.1;Zh_cn;SAMSUNG-SGH-I997;480*800;)AppleWebKit/528.5+ (KHTML) Version/3.1.2/UCWEB7.8.0.95/139/352"
+    },
+    "device": {
+      "deviceName": "SGH-I997",
+      "marketingName": "Infuse",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "7.8.0.95",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "2.2.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "528.5.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "JUC(Linux;U;Android2.3.3;Zh_cn;SAMSUNG-SGH-I997R;480*800;)UCWEB7.8.0.95/139/444"
+    },
+    "device": {
+      "deviceName": "SGH-I997R",
+      "marketingName": "Infuse",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "7.8.0.95",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "2.3.3",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG SGH-J150 UCWEB/6.0,SAMSUNG-SGH-J150/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.102 (GUI) MMP/2.0 Untrusted/1.0"
+    },
+    "device": {
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "6.0.0",
       "manufacturer": "ucweb",
       "bits": null,
       "type": "transcoder"
@@ -989,7 +3117,7 @@
   },
   {
     "headers": {
-      "user-agent": "MQQBrowser/Mini2.8 (SAMSUNG SGH-D880)"
+      "user-agent": "Bluevibe 2.4 r3799 Mozilla/4.0 (compatible; MSIE 6.0; SAMSUNG SGH-J150B Profile/MIDP-2.0 Configuration/CLDC-1.0), SAMSUNG-SGH-J150B/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.102 (GUI) MMP/2.0 Untrusted/1.0"
     },
     "device": {
       "deviceName": "general Samsung device",
@@ -1005,12 +3133,50 @@
       "type": "smartphone"
     },
     "browser": {
-      "name": "QQbrowser Mini",
+      "name": "Internet Explorer",
       "modus": null,
-      "version": "2.8.0",
-      "manufacturer": "tencent",
+      "version": "6.0.0",
+      "manufacturer": "microsoft",
       "bits": null,
       "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": "Trident",
+      "version": null,
+      "manufacturer": "microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-J200"
+    },
+    "device": {
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
     },
     "os": {
       "name": null,
@@ -1027,7 +3193,83 @@
   },
   {
     "headers": {
-      "user-agent": "SAMSUNG-SGH-D888_CMCC/1.0 RTK-E/1.0 DF/1.0 Release/08.17.2007 Browser/Openwave6.2.3.3.c.1.101 Profile/MIDP-2.0 Configuration/CLDC-1.1/*MzU2NzAzMDExMDkxMzAy UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0"
+      "user-agent": "SAMSUNG-SGH-J208"
+    },
+    "device": {
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-J210"
+    },
+    "device": {
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-J218_CMCC/1.0 RTK-E/1.0 DF/1.0 Release/08.23.2007 Browser/OpenWave6.2.3.3.c.1.101 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0 Untrusted/1.0,gzip(gfe),gzip(gfe)"
     },
     "device": {
       "deviceName": "general Samsung device",
@@ -1065,7 +3307,7 @@
   },
   {
     "headers": {
-      "user-agent": "SAMSUNG-SGH-D900"
+      "user-agent": "SAMSUNG-SGH-J400"
     },
     "device": {
       "deviceName": "general Samsung device",
@@ -1103,7 +3345,7 @@
   },
   {
     "headers": {
-      "user-agent": "SAMSUNG-SGH-D900-ORANGE"
+      "user-agent": "SAMSUNG-SGH-J600"
     },
     "device": {
       "deviceName": "general Samsung device",
@@ -1141,7 +3383,7 @@
   },
   {
     "headers": {
-      "user-agent": "SAMSUNG-SGH-D900-VODA"
+      "user-agent": "Samsung SGH-J600E"
     },
     "device": {
       "deviceName": "general Samsung device",
@@ -1179,7 +3421,7 @@
   },
   {
     "headers": {
-      "user-agent": "SAMSUNG-SGH-D900I"
+      "user-agent": "SAMSUNG-SGH-J600V"
     },
     "device": {
       "deviceName": "general Samsung device",
@@ -1217,7 +3459,7 @@
   },
   {
     "headers": {
-      "user-agent": "SAMSUNG-SGH-D900i"
+      "user-agent": "SAMSUNG-SGH-J610"
     },
     "device": {
       "deviceName": "general Samsung device",
@@ -1255,7 +3497,159 @@
   },
   {
     "headers": {
-      "user-agent": "SAMSUNG-SGH-D900i-ORANGE/D900iABGF2 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0"
+      "user-agent": "SAMSUNG-SGH-J618"
+    },
+    "device": {
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-J630"
+    },
+    "device": {
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-J706"
+    },
+    "device": {
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-J708"
+    },
+    "device": {
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-J708i/1.0 RTK-E/1.0 DF/1.0 Release/12.18.2008 Browser/OpenWave6.2.3.3.c.1.101 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.102 (GUI) MMP/2.0 Untrusted/1.0"
     },
     "device": {
       "deviceName": "general Samsung device",
@@ -1293,7 +3687,7 @@
   },
   {
     "headers": {
-      "user-agent": "SAMSUNG-SGH-D908"
+      "user-agent": "SAMSUNG-SGH-J750"
     },
     "device": {
       "deviceName": "general Samsung device",
@@ -1331,7 +3725,7 @@
   },
   {
     "headers": {
-      "user-agent": "SAMSUNG-SGH-D908I"
+      "user-agent": "SAMSUNG-SGH-J750AFHA1"
     },
     "device": {
       "deviceName": "general Samsung device",
@@ -1369,2401 +3763,7 @@
   },
   {
     "headers": {
-      "user-agent": "SAMSUNG-SGH-D908i/1.0 RTK-E/1.0 DF/1.0 Release/11.27.2006 Browser/OpenWave6.2.3.3.c.1.101 Profile/MIDP-2.0 Configuration/CLDC-1.1/*MzU0ODkwMDE4MzE0NzIw UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0"
-    },
-    "device": {
-      "deviceName": "general Samsung device",
-      "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Openwave Mobile Browser",
-      "modus": null,
-      "version": "6.2.3.3",
-      "manufacturer": "myriad",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Java; U; en-us; samsung sgh-d980) AppleWebKit/530.13 (KHTML, like Gecko) UCBrowser/8.5.0.185/82/352/UCWEB Mobile"
-    },
-    "device": {
-      "deviceName": "general Samsung device",
-      "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "8.5.0.185",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "530.13.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG-SGH-D980"
-    },
-    "device": {
-      "deviceName": "general Samsung device",
-      "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG-SGH-D988"
-    },
-    "device": {
-      "deviceName": "general Samsung device",
-      "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG-SGH-E100/T2 UP.Browser/6.1.0.6 (GUI) MMP/1.0"
-    },
-    "device": {
-      "deviceName": "general Samsung device",
-      "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Openwave Mobile Browser",
-      "modus": null,
-      "version": "6.1.0.6",
-      "manufacturer": "myriad",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG-SGH-E100A/T2 UP.Browser/6.1.0.6 (GUI) MMP/1.0"
-    },
-    "device": {
-      "deviceName": "general Samsung device",
-      "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Openwave Mobile Browser",
-      "modus": null,
-      "version": "6.1.0.6",
-      "manufacturer": "myriad",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG-SGH-E108"
-    },
-    "device": {
-      "deviceName": "general Samsung device",
-      "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG-SGH-E200"
-    },
-    "device": {
-      "deviceName": "general Samsung device",
-      "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG-SGH-E200-ORANGE/E200EBVIB2/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0"
-    },
-    "device": {
-      "deviceName": "general Samsung device",
-      "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Openwave Mobile Browser",
-      "modus": null,
-      "version": "6.2.3.3",
-      "manufacturer": "myriad",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG-SGH-E208"
-    },
-    "device": {
-      "deviceName": "general Samsung device",
-      "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG-SGH-E210"
-    },
-    "device": {
-      "deviceName": "general Samsung device",
-      "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG-SGH-E215L"
-    },
-    "device": {
-      "deviceName": "general Samsung device",
-      "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG-SGH-E236"
-    },
-    "device": {
-      "deviceName": "general Samsung device",
-      "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG SGH-E251, SAMSUNG-SGH-E251/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.102 (GUI) MMP/2.0 Untrusted/1.0"
-    },
-    "device": {
-      "deviceName": "general Samsung device",
-      "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Openwave Mobile Browser",
-      "modus": null,
-      "version": "6.2.3.3",
-      "manufacturer": "myriad",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG-SGH-E251C/1.0 RTK-E/1.0 DF/1.0 Release/02.05.2008 Browser/OpenWave6.2.3.3.c.1.101 Profile/MIDP-2.0 Configuration/CLDC-1.1/*MzU0NzM3MDIyOTA5OTk3 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0"
-    },
-    "device": {
-      "deviceName": "general Samsung device",
-      "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Openwave Mobile Browser",
-      "modus": null,
-      "version": "6.2.3.3",
-      "manufacturer": "myriad",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG-SGH-E251L/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0"
-    },
-    "device": {
-      "deviceName": "general Samsung device",
-      "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Openwave Mobile Browser",
-      "modus": null,
-      "version": "6.2.3.3",
-      "manufacturer": "myriad",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG-SGH-E256"
-    },
-    "device": {
-      "deviceName": "general Samsung device",
-      "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG-SGH-E258"
-    },
-    "device": {
-      "deviceName": "general Samsung device",
-      "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG-SGH-E300"
-    },
-    "device": {
-      "deviceName": "general Samsung device",
-      "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG-SGH-E310"
-    },
-    "device": {
-      "deviceName": "general Samsung device",
-      "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG-SGH-E316"
-    },
-    "device": {
-      "deviceName": "general Samsung device",
-      "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG-SGH-E317"
-    },
-    "device": {
-      "deviceName": "general Samsung device",
-      "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG-SGH-E330"
-    },
-    "device": {
-      "deviceName": "general Samsung device",
-      "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG-SGH-E330C"
-    },
-    "device": {
-      "deviceName": "general Samsung device",
-      "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG-SGH-E330N"
-    },
-    "device": {
-      "deviceName": "general Samsung device",
-      "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG-SGH-E335/E335UVEE1 UP.Browser/6.2.2.6 (GUI) MMP/1.0"
-    },
-    "device": {
-      "deviceName": "general Samsung device",
-      "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Openwave Mobile Browser",
-      "modus": null,
-      "version": "6.2.2.6",
-      "manufacturer": "myriad",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG-SGH-E338"
-    },
-    "device": {
-      "deviceName": "general Samsung device",
-      "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG-SGH-E340"
-    },
-    "device": {
-      "deviceName": "general Samsung device",
-      "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG-SGH-E340E/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0"
-    },
-    "device": {
-      "deviceName": "general Samsung device",
-      "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Openwave Mobile Browser",
-      "modus": null,
-      "version": "6.2.3.3",
-      "manufacturer": "myriad",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG-SGH-E348/1.0/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1/*MzU2Njc2MDAwMDE4NDM5 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0"
-    },
-    "device": {
-      "deviceName": "general Samsung device",
-      "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Openwave Mobile Browser",
-      "modus": null,
-      "version": "6.2.3.3",
-      "manufacturer": "myriad",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG-SGH-E350"
-    },
-    "device": {
-      "deviceName": "general Samsung device",
-      "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG-SGH-E350E"
-    },
-    "device": {
-      "deviceName": "general Samsung device",
-      "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG-SGH-E350V"
-    },
-    "device": {
-      "deviceName": "general Samsung device",
-      "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG-SGH-E351"
-    },
-    "device": {
-      "deviceName": "general Samsung device",
-      "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Samsung SGH-E351L"
-    },
-    "device": {
-      "deviceName": "general Samsung device",
-      "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG-SGH-E356"
-    },
-    "device": {
-      "deviceName": "general Samsung device",
-      "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG-SGH-E358"
-    },
-    "device": {
-      "deviceName": "general Samsung device",
-      "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG-SGH-E360"
-    },
-    "device": {
-      "deviceName": "general Samsung device",
-      "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG-SGH-E368/1.0/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1/*MDAwMDAwMDAwMDAwMDAw UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0"
-    },
-    "device": {
-      "deviceName": "general Samsung device",
-      "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Openwave Mobile Browser",
-      "modus": null,
-      "version": "6.2.3.3",
-      "manufacturer": "myriad",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG-SGH-E370"
-    },
-    "device": {
-      "deviceName": "general Samsung device",
-      "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG-SGH-E370-VODA"
-    },
-    "device": {
-      "deviceName": "general Samsung device",
-      "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG-SGH-E376"
-    },
-    "device": {
-      "deviceName": "general Samsung device",
-      "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG-SGH-E378"
-    },
-    "device": {
-      "deviceName": "general Samsung device",
-      "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG-SGH-E380"
-    },
-    "device": {
-      "deviceName": "general Samsung device",
-      "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG-SGH-E390"
-    },
-    "device": {
-      "deviceName": "general Samsung device",
-      "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG-SGH-E420"
-    },
-    "device": {
-      "deviceName": "general Samsung device",
-      "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG-SGH-E480"
-    },
-    "device": {
-      "deviceName": "general Samsung device",
-      "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG-SGH-E490"
-    },
-    "device": {
-      "deviceName": "general Samsung device",
-      "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG-SGH-E496"
-    },
-    "device": {
-      "deviceName": "general Samsung device",
-      "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG-SGH-E500"
-    },
-    "device": {
-      "deviceName": "general Samsung device",
-      "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG-SGH-E530"
-    },
-    "device": {
-      "deviceName": "general Samsung device",
-      "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG-SGH-E530C"
-    },
-    "device": {
-      "deviceName": "general Samsung device",
-      "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG-SGH-E538/TSS 2.5.0/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.0/*MDAwMDAwMDAwMDAwMDA"
-    },
-    "device": {
-      "deviceName": "general Samsung device",
-      "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "WAP Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "wap-browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG-SGH-E568/TSS 2.5.0/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.0/*MDAwMDAwMDAwMDAwMDA"
-    },
-    "device": {
-      "deviceName": "general Samsung device",
-      "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "WAP Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "wap-browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG-SGH-E570"
-    },
-    "device": {
-      "deviceName": "general Samsung device",
-      "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG-SGH-E590"
-    },
-    "device": {
-      "deviceName": "general Samsung device",
-      "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG-SGH-E600"
-    },
-    "device": {
-      "deviceName": "general Samsung device",
-      "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG-SGH-E600C"
-    },
-    "device": {
-      "deviceName": "general Samsung device",
-      "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG-SGH-E608"
-    },
-    "device": {
-      "deviceName": "general Samsung device",
-      "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG-SGH-E610"
-    },
-    "device": {
-      "deviceName": "general Samsung device",
-      "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG-SGH-E618"
-    },
-    "device": {
-      "deviceName": "general Samsung device",
-      "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG-SGH-E620"
-    },
-    "device": {
-      "deviceName": "general Samsung device",
-      "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG-SGH-E628/TSS 2.5.0/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.0/*MDAwMDAwMDAwMDAwMDA"
-    },
-    "device": {
-      "deviceName": "general Samsung device",
-      "marketingName": "general Samsung device",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "WAP Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "wap-browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG-SGH-E630"
+      "user-agent": "SAMSUNG-SGH-J750BNGI4"
     },
     "device": {
       "deviceName": "general Samsung device",

@@ -1,28 +1,28 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; SM-G150NS Build/LMY47X; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/52.0.2743.98 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/90.0.0.20.70;]"
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; SM-A5100 Build/LMY47X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.124 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "SM-G150NS",
-      "marketingName": "Galaxy Folder LTE",
+      "deviceName": "SM-A5100",
+      "marketingName": "Galaxy A5 (2016)",
       "manufacturer": "samsung",
       "brand": "samsung",
       "display": {
-        "width": 800,
-        "height": 480,
+        "width": 1920,
+        "height": 1080,
         "touch": true,
-        "size": 3.8
+        "size": 5.2
       },
       "type": "smartphone"
     },
     "browser": {
-      "name": "Facebook App",
+      "name": "Chrome",
       "modus": null,
-      "version": "90.0.0.20.70",
-      "manufacturer": "facebook",
+      "version": "53.0.2785.124",
+      "manufacturer": "google",
       "bits": null,
-      "type": "application"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
@@ -33,98 +33,22 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "52.0.2743.98",
+      "version": "53.0.2785.124",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.4.4; en-US; SM-J110H Build/KTU84P) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/10.7.8.710 U3/0.8.0 Mobile Safari/534.30"
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; SM-G920W8 Build/LMY47X; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/76.0.0.24.67;]"
     },
     "device": {
-      "deviceName": "SM-J110H",
-      "marketingName": "Galaxy J1 Ace Duos",
+      "deviceName": "SM-G920W8",
+      "marketingName": "Galaxy S6",
       "manufacturer": "samsung",
       "brand": "samsung",
       "display": {
-        "width": 800,
-        "height": 480,
-        "touch": true,
-        "size": 4.3
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "10.7.8.710",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.4.4",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "U3",
-      "version": "0.8.0",
-      "manufacturer": "ucweb"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; SAMSUNG SM-G900R4 USCC Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/4.0 Chrome/44.0.2403.133 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "SM-G900R4",
-      "marketingName": "Galaxy S5 (US Cellular)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5.1
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Samsung Browser",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "samsung",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "6.0.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "44.0.2403.133",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.0; SM-G900H Build/LRX21T; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/76.0.0.24.67;]"
-    },
-    "device": {
-      "deviceName": "SM-G900H",
-      "marketingName": "Galaxy S5 Exynos (octa-core)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 1920,
-        "height": 1080,
+        "width": 2560,
+        "height": 1440,
         "touch": true,
         "size": 5.1
       },
@@ -141,7 +65,7 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "5.0.0",
+      "version": "5.1.1",
       "manufacturer": "google",
       "bits": null
     },
@@ -153,391 +77,11 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.1.2; GT-S6810P Build/JZO54K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Mobile Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; SM-G901F Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/53.0.2785.124 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/99.0.0.26.69;]"
     },
     "device": {
-      "deviceName": "GT-S6810P",
-      "marketingName": "Galaxy Fame (NFC)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "49.0.2623.105",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.1.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "49.0.2623.105",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; SM-G925F Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/49.0.2623.105 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/74.0.0.21.69;]"
-    },
-    "device": {
-      "deviceName": "SM-G925F",
-      "marketingName": "Galaxy S6 Edge (Global)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 2560,
-        "height": 1440,
-        "touch": true,
-        "size": 5.1
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "74.0.0.21.69",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "6.0.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "49.0.2623.105",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.1.2; GT-N7105 Build/JZO54K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.85 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "GT-N7105",
-      "marketingName": "Galaxy Note 2",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 5.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "54.0.2840.85",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.1.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "54.0.2840.85",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.3; GT-N7105 Build/JSS15J) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "GT-N7105",
-      "marketingName": "Galaxy Note 2",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 5.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "49.0.2623.105",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.3.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "49.0.2623.105",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.4; SM-E500F Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.85 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "SM-E500F",
-      "marketingName": "Galaxy E5 Duos 3G",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "54.0.2840.85",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.4.4",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "54.0.2840.85",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; SM-G928F Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/46.0.2490.76 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/59.0.0.15.313;]"
-    },
-    "device": {
-      "deviceName": "SM-G928F",
-      "marketingName": "Galaxy S6 Edge Plus LTE",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 2560,
-        "height": 1440,
-        "touch": true,
-        "size": 5.7
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "59.0.0.15.313",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "6.0.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "46.0.2490.76",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.0.1; SPH-L720T Build/LRX22C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "SPH-L720T",
-      "marketingName": "Galaxy S4 LTE Tri-Band (Sprint)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "49.0.2623.105",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.0.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "49.0.2623.105",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 5.1.1; en-US; SM-J200F Build/LMY47X) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/10.9.8.770 U3/0.8.0 Mobile Safari/534.30"
-    },
-    "device": {
-      "deviceName": "SM-J200F",
-      "marketingName": "Galaxy J2",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 960,
-        "height": 540,
-        "touch": true,
-        "size": 4.7
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "10.9.8.770",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.1.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "U3",
-      "version": "0.8.0",
-      "manufacturer": "ucweb"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.0.1; GT-I9505 Build/LRX22C; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/74.0.0.21.69;]"
-    },
-    "device": {
-      "deviceName": "GT-I9505",
-      "marketingName": "Galaxy S4",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "74.0.0.21.69",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.0.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "50.0.2661.86",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; SM-N920I Build/LMY47X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "SM-N920I",
-      "marketingName": "Galaxy Note 5 LTE (Australia, New Zealand, Singapore, Canada)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 2560,
-        "height": 1440,
-        "touch": true,
-        "size": 5.7
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "50.0.2661.89",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.1.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "50.0.2661.89",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; SM-G900P Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.83 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "SM-G900P",
-      "marketingName": "Galaxy S5 (Sprint)",
+      "deviceName": "SM-G901F",
+      "marketingName": "Galaxy S5 Plus",
       "manufacturer": "samsung",
       "brand": "samsung",
       "display": {
@@ -549,12 +93,12 @@
       "type": "smartphone"
     },
     "browser": {
-      "name": "Chrome",
+      "name": "Facebook App",
       "modus": null,
-      "version": "47.0.2526.83",
-      "manufacturer": "google",
+      "version": "99.0.0.26.69",
+      "manufacturer": "facebook",
       "bits": null,
-      "type": "browser"
+      "type": "application"
     },
     "os": {
       "name": "Android",
@@ -565,98 +109,22 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "47.0.2526.83",
+      "version": "53.0.2785.124",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; SM-G531F Build/LMY48B; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/43.0.2357.121 Mobile Safari/537.36 ACHEETAHI/2100502044"
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; SM-E700H Build/LMY47X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "SM-G531F",
-      "marketingName": "Galaxy Grand Prime Value Edition LTE",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 960,
-        "height": 540,
-        "touch": true,
-        "size": 5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "CM Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "cheetah-mobile",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.1.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "43.0.2357.121",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; SM-J700H Build/LMY48B; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "SM-J700H",
-      "marketingName": "Galaxy J7 3G Duos (South Africa, Pakistan, Vietnam, Philippines, Russia)",
+      "deviceName": "SM-E700H",
+      "marketingName": "Galaxy E7 Duos 3G",
       "manufacturer": "samsung",
       "brand": "samsung",
       "display": {
         "width": 1280,
         "height": 720,
-        "touch": true,
-        "size": 5.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Android WebView",
-      "modus": null,
-      "version": "50.0.2661.86",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.1.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "50.0.2661.86",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; SM-G9208 Build/LMY47X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "SM-G9208",
-      "marketingName": "Galaxy S6",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 2560,
-        "height": 1440,
         "touch": true,
         "size": null
       },
@@ -685,7 +153,349 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; SM-G928C Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/49.0.2623.105 Mobile Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; SM-A800I Build/LMY47X; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/52.0.2743.98 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/93.0.0.13.69;]"
+    },
+    "device": {
+      "deviceName": "SM-A800I",
+      "marketingName": "Galaxy A8 Duos",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.7
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "93.0.0.13.69",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "52.0.2743.98",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; SM-N920G Build/MMB29K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "SM-N920G",
+      "marketingName": "Galaxy Note 5 (Unlocked)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 2560,
+        "height": 1440,
+        "touch": true,
+        "size": 5.7
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "50.0.2661.89",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "50.0.2661.89",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; SM-N9000Q Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "SM-N9000Q",
+      "marketingName": "Galaxy Note 3",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.7
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "50.0.2661.89",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "50.0.2661.89",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; SM-G935F Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/58.0.3029.83 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/124.0.0.22.66;]"
+    },
+    "device": {
+      "deviceName": "SM-G935F",
+      "marketingName": "Galaxy S7 Edge (Global)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 2560,
+        "height": 1440,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "124.0.0.22.66",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "58.0.3029.83",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.0; SM-G900F Build/LRX21T; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/52.0.2743.98 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/104.0.0.17.71;]"
+    },
+    "device": {
+      "deviceName": "SM-G900F",
+      "marketingName": "Galaxy S5 LTE",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.1
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "104.0.0.17.71",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "52.0.2743.98",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.2.2; en-gb; GT-I8200N Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 [FB_IAB/FB4A;FBAV/76.0.0.24.67;]"
+    },
+    "device": {
+      "deviceName": "GT-I8200N",
+      "marketingName": "Galaxy S3 Mini Value Edition",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 4
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "76.0.0.24.67",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.0; SM-G900M Build/LRX21T; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/77.0.0.20.66;]"
+    },
+    "device": {
+      "deviceName": "SM-G900M",
+      "marketingName": "Galaxy S5",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.1
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "77.0.0.20.66",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "50.0.2661.86",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Dalvik/2.1.0 (Linux; U; Android 5.1.1; SM-J320P Build/LMY47X)"
+    },
+    "device": {
+      "deviceName": "SM-J320P",
+      "marketingName": "Galaxy J3 4G (2016, Sprint, Virgin Mobile, Boost)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Dalvik",
+      "modus": null,
+      "version": "2.1.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.4; SAMSUNG-SM-G870A Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.132 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "SM-G870A",
+      "marketingName": "Galaxy S5 Active LTE (AT&T)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.1
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "57.0.2987.132",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.4",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "57.0.2987.132",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; SM-G928C Build/MMB29K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.81 Mobile Safari/537.36"
     },
     "device": {
       "deviceName": "SM-G928C",
@@ -701,9 +511,9 @@
       "type": "smartphone"
     },
     "browser": {
-      "name": "Android WebView",
+      "name": "Chrome",
       "modus": null,
-      "version": "49.0.2623.105",
+      "version": "51.0.2704.81",
       "manufacturer": "google",
       "bits": null,
       "type": "browser"
@@ -717,17 +527,55 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "49.0.2623.105",
+      "version": "51.0.2704.81",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; SM-G900W8 Build/LMY47X; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/76.0.0.24.67;]"
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.4; SHV-E210S Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.81 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "SM-G900W8",
-      "marketingName": "Galaxy S5 (Canada)",
+      "deviceName": "SHV-E210S",
+      "marketingName": "Galaxy S3 LTE (Korea)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 4.8
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "51.0.2704.81",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.4",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "51.0.2704.81",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.0; SM-G900F Build/LRX21T; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/51.0.2704.81 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/87.0.0.17.79;]"
+    },
+    "device": {
+      "deviceName": "SM-G900F",
+      "marketingName": "Galaxy S5 LTE",
       "manufacturer": "samsung",
       "brand": "samsung",
       "display": {
@@ -741,10 +589,504 @@
     "browser": {
       "name": "Facebook App",
       "modus": null,
-      "version": "76.0.0.24.67",
+      "version": "87.0.0.17.79",
       "manufacturer": "facebook",
       "bits": null,
       "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "51.0.2704.81",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.4; SM-G360H Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/77.0.0.20.66;]"
+    },
+    "device": {
+      "deviceName": "SM-G360H",
+      "marketingName": "Galaxy Core Prime Duos",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 4.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "77.0.0.20.66",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.4",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "33.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; SM-G920V Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/53.0.2785.124 Mobile Safari/537.36 GSA/6.4.31.21.arm64"
+    },
+    "device": {
+      "deviceName": "SM-G920V",
+      "marketingName": "Galaxy S6 (Verizon)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 2560,
+        "height": 1440,
+        "touch": true,
+        "size": 5.1
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Google App",
+      "modus": null,
+      "version": "6.4.31.21",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "53.0.2785.124",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 6.0.1; en-US; SM-G930F Build/MMB29K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/11.0.0.828 U3/0.8.0 Mobile Safari/534.30"
+    },
+    "device": {
+      "deviceName": "SM-G930F",
+      "marketingName": "Galaxy S7",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 2560,
+        "height": 1440,
+        "touch": true,
+        "size": 5.1
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "11.0.0.828",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "U3",
+      "version": "0.8.0",
+      "manufacturer": "ucweb"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; SAMSUNG SM-G930F Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/5.2 Chrome/51.0.2704.106 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "SM-G930F",
+      "marketingName": "Galaxy S7",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 2560,
+        "height": 1440,
+        "touch": true,
+        "size": 5.1
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Samsung Browser",
+      "modus": null,
+      "version": "5.2.0",
+      "manufacturer": "samsung",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "51.0.2704.106",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.4.4; en-us; SM-J110H Build/KTU84P) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 UCBrowser/9.7.5.418 U3/0.8.0 Mobile Safari/533.1"
+    },
+    "device": {
+      "deviceName": "SM-J110H",
+      "marketingName": "Galaxy J1 Ace Duos",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 4.3
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "9.7.5.418",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.4",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "U3",
+      "version": "0.8.0",
+      "manufacturer": "ucweb"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; SM-J500FN Build/LMY48B; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/51.0.2704.81 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/83.0.0.20.71;]"
+    },
+    "device": {
+      "deviceName": "SM-J500FN",
+      "marketingName": "Galaxy J5",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "83.0.0.20.71",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "51.0.2704.81",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; SM-G930F Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/52.0.2743.98 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/104.0.0.17.71;]"
+    },
+    "device": {
+      "deviceName": "SM-G930F",
+      "marketingName": "Galaxy S7",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 2560,
+        "height": 1440,
+        "touch": true,
+        "size": 5.1
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "104.0.0.17.71",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "52.0.2743.98",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; SM-G935F Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/52.0.2743.98 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/89.0.0.17.70;]"
+    },
+    "device": {
+      "deviceName": "SM-G935F",
+      "marketingName": "Galaxy S7 Edge (Global)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 2560,
+        "height": 1440,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "89.0.0.17.70",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "52.0.2743.98",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.0.1; GT-I9505 Build/LRX22C; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/45.0.2454.95 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/120.0.0.18.72;]"
+    },
+    "device": {
+      "deviceName": "GT-I9505",
+      "marketingName": "Galaxy S4",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "120.0.0.18.72",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.0.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "45.0.2454.95",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; SM-G361F Build/LMY48B; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/51.0.2704.81 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/85.0.0.15.70;]"
+    },
+    "device": {
+      "deviceName": "SM-G361F",
+      "marketingName": "Galaxy Core Prime Value Edition",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 4.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "85.0.0.15.70",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "51.0.2704.81",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; GT-I9190 Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.78 Mobile Safari/537.36 OPR/30.0.1856.95530"
+    },
+    "device": {
+      "deviceName": "GT-I9190",
+      "marketingName": "Galaxy S4 Mini",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 960,
+        "height": 540,
+        "touch": true,
+        "size": 4.3
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "30.0.1856.95530",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "43.0.2357.78",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.1.2; en-US; GT-S7392 Build/JZO54K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/10.5.0.575 U3/0.8.0 Mobile Safari/534.30"
+    },
+    "device": {
+      "deviceName": "GT-S7392",
+      "marketingName": "Galaxy Fresh",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "10.5.0.575",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.1.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "U3",
+      "version": "0.8.0",
+      "manufacturer": "ucweb"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; SM-J700F Build/LMY48B; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "SM-J700F",
+      "marketingName": "Galaxy J7 4G (India, Thailand)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "50.0.2661.86",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
     },
     "os": {
       "name": "Android",
@@ -761,63 +1103,25 @@
   },
   {
     "headers": {
-      "user-agent": "UCWEB/2.0 (MIDP-2.0; U; Adr 4.2.2; en-US; GT-S7582) U2/1.0.0 UCBrowser/10.7.2.757 U2/1.0.0 Mobile"
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; SM-G360T1 Build/LMY47X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.111 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "GT-S7582",
-      "marketingName": "Galaxy S Duos 2",
+      "deviceName": "SM-G360T1",
+      "marketingName": "Galaxy Core Prime LTE (MetroPCS)",
       "manufacturer": "samsung",
       "brand": "samsung",
       "display": {
         "width": 800,
         "height": 480,
         "touch": true,
-        "size": 4
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "10.7.2.757",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.2.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "U2",
-      "version": "1.0.0",
-      "manufacturer": "ucweb"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.4; SM-G750F Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "SM-G750F",
-      "marketingName": "Galaxy Mega 2",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 6
+        "size": 4.5
       },
       "type": "smartphone"
     },
     "browser": {
       "name": "Chrome",
       "modus": null,
-      "version": "50.0.2661.89",
+      "version": "42.0.2311.111",
       "manufacturer": "google",
       "bits": null,
       "type": "browser"
@@ -825,75 +1129,37 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "4.4.4",
+      "version": "5.1.1",
       "manufacturer": "google",
       "bits": null
     },
     "engine": {
       "name": "Blink",
-      "version": "50.0.2661.89",
+      "version": "42.0.2311.111",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "UCWEB/2.0 (Linux; U; Opera Mini/7.1.32052/30.3697; en-US; GT-S7582 Build/JDQ39) U2/1.0.0 UCBrowser/10.7.2.757 Mobile"
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; SM-G930F Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/51.0.2704.81 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/83.0.0.4.71;]"
     },
     "device": {
-      "deviceName": "GT-S7582",
-      "marketingName": "Galaxy S Duos 2",
+      "deviceName": "SM-G930F",
+      "marketingName": "Galaxy S7",
       "manufacturer": "samsung",
       "brand": "samsung",
       "display": {
-        "width": 800,
-        "height": 480,
+        "width": 2560,
+        "height": 1440,
         "touch": true,
-        "size": 4
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "10.7.2.757",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": null,
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "U2",
-      "version": "1.0.0",
-      "manufacturer": "ucweb"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; SM-A310F Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/114.0.0.20.70;]"
-    },
-    "device": {
-      "deviceName": "SM-A310F",
-      "marketingName": "Galaxy A3 (2016)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 4.7
+        "size": 5.1
       },
       "type": "smartphone"
     },
     "browser": {
       "name": "Facebook App",
       "modus": null,
-      "version": "114.0.0.20.70",
+      "version": "83.0.0.4.71",
       "manufacturer": "facebook",
       "bits": null,
       "type": "application"
@@ -907,131 +1173,17 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "56.0.2924.87",
+      "version": "51.0.2704.81",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; SM-J500FN Build/LMY48B; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36 [FB_IAB/MESSENGER;FBAV/104.0.0.13.69;]"
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; SAMSUNG SM-N910P Build/LMY47X) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/4.0 Chrome/44.0.2403.133 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "SM-J500FN",
-      "marketingName": "Galaxy J5",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Facebook Messenger App",
-      "modus": null,
-      "version": "104.0.0.13.69",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.1.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "56.0.2924.87",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; SM-C115 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/75.0.0.23.69;]"
-    },
-    "device": {
-      "deviceName": "SM-C115",
-      "marketingName": "Galaxy K Zoom LTE",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 4.8
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "75.0.0.23.69",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.4.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "30.0.0.0",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.0.2; SM-A500G Build/LRX22G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.95 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "SM-A500G",
-      "marketingName": "Galaxy A5 Duos",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "48.0.2564.95",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.0.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "48.0.2564.95",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.0.1; SAMSUNG SM-N910U Build/LRX22C) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/4.0 Chrome/44.0.2403.133 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "SM-N910U",
-      "marketingName": "Galaxy Note 4",
+      "deviceName": "SM-N910P",
+      "marketingName": "Galaxy Note 4 LTE (Sprint)",
       "manufacturer": "samsung",
       "brand": "samsung",
       "display": {
@@ -1053,7 +1205,7 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "5.0.1",
+      "version": "5.1.1",
       "manufacturer": "google",
       "bits": null
     },
@@ -1065,256 +1217,66 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.4.4; en-US; SM-G7202 Build/KTU84P) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/10.8.0.718 U3/0.8.0 Mobile Safari/534.30"
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.3; SM-N7505 Build/JSS15J) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.132 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "SM-G7202",
-      "marketingName": "Galaxy Grand Max",
+      "deviceName": "SM-N7505",
+      "marketingName": "Galaxy Note 3 Neo LTE",
       "manufacturer": "samsung",
       "brand": "samsung",
       "display": {
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": 5.25
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "10.8.0.718",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.4.4",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "U3",
-      "version": "0.8.0",
-      "manufacturer": "ucweb"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.4; GT-I9305N Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "GT-I9305N",
-      "marketingName": "Galaxy S3",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 4.8
+        "size": 5.5
       },
       "type": "smartphone"
     },
     "browser": {
       "name": "Chrome",
       "modus": null,
-      "version": "50.0.2661.89",
+      "version": "57.0.2987.132",
       "manufacturer": "google",
       "bits": null,
       "type": "browser"
     },
     "os": {
-      "name": "Windows Phone OS",
-      "marketingName": "Windows Phone OS",
-      "version": null,
-      "manufacturer": "microsoft",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "50.0.2661.89",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.4.4; en-US; SM-G7202 Build/KTU84P) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/10.9.0.731 U3/0.8.0 Mobile Safari/534.30"
-    },
-    "device": {
-      "deviceName": "SM-G7202",
-      "marketingName": "Galaxy Grand Max",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 5.25
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "10.9.0.731",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "4.4.4",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "U3",
-      "version": "0.8.0",
-      "manufacturer": "ucweb"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.0.2; SM-G901F Build/LRX22G; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/76.0.0.24.67;]"
-    },
-    "device": {
-      "deviceName": "SM-G901F",
-      "marketingName": "Galaxy S5 Plus",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5.1
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "76.0.0.24.67",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.0.2",
+      "version": "4.3.0",
       "manufacturer": "google",
       "bits": null
     },
     "engine": {
       "name": "Blink",
-      "version": "50.0.2661.86",
+      "version": "57.0.2987.132",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.0.1; GT-I9505 Build/LRX22C; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/58.0.3029.83 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/124.0.0.22.66;]"
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; SM-N920V Build/MMB29K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.98 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "GT-I9505",
-      "marketingName": "Galaxy S4",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "124.0.0.22.66",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.0.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "58.0.3029.83",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.0.2; SM-A500F Build/LRX22G; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/77.0.0.20.66;]"
-    },
-    "device": {
-      "deviceName": "SM-A500F",
-      "marketingName": "Galaxy A5 (Global)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "77.0.0.20.66",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.0.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "50.0.2661.86",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; SM-G920F Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/75.0.0.23.69;]"
-    },
-    "device": {
-      "deviceName": "SM-G920F",
-      "marketingName": "Galaxy S6 (Global)",
+      "deviceName": "SM-N920V",
+      "marketingName": "Galaxy Note 5 CDMA + LTE (Verizon)",
       "manufacturer": "samsung",
       "brand": "samsung",
       "display": {
         "width": 2560,
         "height": 1440,
         "touch": true,
-        "size": 5.1
+        "size": 5.7
       },
       "type": "smartphone"
     },
     "browser": {
-      "name": "Facebook App",
+      "name": "Chrome",
       "modus": null,
-      "version": "75.0.0.23.69",
-      "manufacturer": "facebook",
+      "version": "52.0.2743.98",
+      "manufacturer": "google",
       "bits": null,
-      "type": "application"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
@@ -1325,13 +1287,89 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "50.0.2661.86",
+      "version": "52.0.2743.98",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; SM-A300FU Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/55.0.2883.91 Mobile Safari/537.36 [FB_IAB/MESSENGER;FBAV/100.0.0.29.61;]"
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; SM-G361F Build/LMY48B; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/55.0.2883.91 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/105.0.0.23.137;]"
+    },
+    "device": {
+      "deviceName": "SM-G361F",
+      "marketingName": "Galaxy Core Prime Value Edition",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 4.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "105.0.0.23.137",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "55.0.2883.91",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 6.0.1; SM-N910F Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36 OPR/22.0.2254.112936"
+    },
+    "device": {
+      "deviceName": "SM-N910F",
+      "marketingName": "Galaxy Note 4 LTE (Europe)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 2560,
+        "height": 1440,
+        "touch": true,
+        "size": 5.7
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "22.0.2254.112936",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "56.0.2924.87",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; SM-A300FU Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/119.0.0.23.70;]"
     },
     "device": {
       "deviceName": "SM-A300FU",
@@ -1347,9 +1385,9 @@
       "type": "smartphone"
     },
     "browser": {
-      "name": "Facebook Messenger App",
+      "name": "Facebook App",
       "modus": null,
-      "version": "100.0.0.29.61",
+      "version": "119.0.0.23.70",
       "manufacturer": "facebook",
       "bits": null,
       "type": "application"
@@ -1363,17 +1401,17 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "55.0.2883.91",
+      "version": "57.0.2987.132",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; SAMSUNG-SM-G900A Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.95 Mobile Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 6.0.1; zh-CN; SM-G9008V Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/40.0.2214.89 UCBrowser/11.2.8.885 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "SM-G900A",
-      "marketingName": "Galaxy S5 LTE (AT&T)",
+      "deviceName": "SM-G9008V",
+      "marketingName": "Galaxy S5 TD-LTE (Pacific)",
       "manufacturer": "samsung",
       "brand": "samsung",
       "display": {
@@ -1385,47 +1423,47 @@
       "type": "smartphone"
     },
     "browser": {
-      "name": "Chrome",
+      "name": "UC Browser",
       "modus": null,
-      "version": "48.0.2564.95",
-      "manufacturer": "google",
+      "version": "11.2.8.885",
+      "manufacturer": "ucweb",
       "bits": null,
-      "type": "browser"
+      "type": "transcoder"
     },
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "4.4.2",
+      "version": "6.0.1",
       "manufacturer": "google",
       "bits": null
     },
     "engine": {
       "name": "Blink",
-      "version": "48.0.2564.95",
+      "version": "40.0.2214.89",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; SM-G930K Build/MMB29K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.85 Mobile Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; SM-A500F Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "SM-G930",
-      "marketingName": "Galaxy S7",
+      "deviceName": "SM-A500F",
+      "marketingName": "Galaxy A5 (Global)",
       "manufacturer": "samsung",
       "brand": "samsung",
       "display": {
-        "width": 2560,
-        "height": 1440,
+        "width": 1280,
+        "height": 720,
         "touch": true,
-        "size": 5.1
+        "size": 5
       },
       "type": "smartphone"
     },
     "browser": {
       "name": "Chrome",
       "modus": null,
-      "version": "54.0.2840.85",
+      "version": "56.0.2924.87",
       "manufacturer": "google",
       "bits": null,
       "type": "browser"
@@ -1439,145 +1477,31 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "54.0.2840.85",
+      "version": "56.0.2924.87",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.0; SM-G900H Build/LRX21T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.64 Mobile Safari/537.36 OPR/33.0.2002.97617"
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; GT-N7100 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/82.0.0.23.70;]"
     },
     "device": {
-      "deviceName": "SM-G900H",
-      "marketingName": "Galaxy S5 Exynos (octa-core)",
+      "deviceName": "GT-N7100",
+      "marketingName": "Galaxy Note 2",
       "manufacturer": "samsung",
       "brand": "samsung",
       "display": {
-        "width": 1920,
-        "height": 1080,
+        "width": 1280,
+        "height": 720,
         "touch": true,
-        "size": 5.1
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Opera Mobile",
-      "modus": null,
-      "version": "33.0.2002.97617",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "46.0.2490.64",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.0.2; SM-G920 Build/LRX22G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.98 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "SM-G920",
-      "marketingName": "Galaxy S6 Duos",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 2560,
-        "height": 1440,
-        "touch": true,
-        "size": 5.1
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "52.0.2743.98",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.0.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "52.0.2743.98",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.0; SM-G900FD Build/LRX21T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.124 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "SM-G900FD",
-      "marketingName": "Galaxy S5 Duos LTE",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5.1
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "53.0.2785.124",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "53.0.2785.124",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; GT-I9195 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/74.0.0.21.69;]"
-    },
-    "device": {
-      "deviceName": "GT-I9195",
-      "marketingName": "Galaxy S4 Mini LTE",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 960,
-        "height": 540,
-        "touch": true,
-        "size": 4.3
+        "size": 5.5
       },
       "type": "smartphone"
     },
     "browser": {
       "name": "Facebook App",
       "modus": null,
-      "version": "74.0.0.21.69",
+      "version": "82.0.0.23.70",
       "manufacturer": "facebook",
       "bits": null,
       "type": "application"
@@ -1597,63 +1521,25 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.0.2; SM-G360F Build/LRX22G; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Mobile Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; SM-A310F Build/LMY47X; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/53.0.2785.124 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/96.0.0.17.70;]"
     },
     "device": {
-      "deviceName": "SM-G360F",
-      "marketingName": "Galaxy Core Prime",
+      "deviceName": "SM-A310F",
+      "marketingName": "Galaxy A3 (2016)",
       "manufacturer": "samsung",
       "brand": "samsung",
       "display": {
-        "width": 800,
-        "height": 480,
+        "width": 1280,
+        "height": 720,
         "touch": true,
-        "size": 4.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Android WebView",
-      "modus": null,
-      "version": "50.0.2661.86",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.0.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "50.0.2661.86",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.0.1; GT-I9505 Build/LRX22C; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/49.0.2623.105 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/75.0.0.23.69;]"
-    },
-    "device": {
-      "deviceName": "GT-I9505",
-      "marketingName": "Galaxy S4",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5
+        "size": 4.7
       },
       "type": "smartphone"
     },
     "browser": {
       "name": "Facebook App",
       "modus": null,
-      "version": "75.0.0.23.69",
+      "version": "96.0.0.17.70",
       "manufacturer": "facebook",
       "bits": null,
       "type": "application"
@@ -1661,76 +1547,38 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "5.0.1",
+      "version": "5.1.1",
       "manufacturer": "google",
       "bits": null
     },
     "engine": {
       "name": "Blink",
-      "version": "49.0.2623.105",
+      "version": "53.0.2785.124",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; GT-I9505 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/76.0.0.24.67;]"
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; SM-A7100 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/53.0.2785.49 Mobile MQQBrowser/6.2 TBS/043024 Safari/537.36 MicroMessenger/6.3.31.940 NetType/WIFI Language/zh_CN"
     },
     "device": {
-      "deviceName": "GT-I9505",
-      "marketingName": "Galaxy S4",
+      "deviceName": "SM-A7100",
+      "marketingName": "Galaxy A7 (Hong Kong, China, 2016)",
       "manufacturer": "samsung",
       "brand": "samsung",
       "display": {
         "width": 1920,
         "height": 1080,
         "touch": true,
-        "size": 5
+        "size": 5.5
       },
       "type": "smartphone"
     },
     "browser": {
-      "name": "Facebook App",
+      "name": "WeChat App",
       "modus": null,
-      "version": "76.0.0.24.67",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.4.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "30.0.0.0",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; SM-G925F Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/74.0.0.21.69;]"
-    },
-    "device": {
-      "deviceName": "SM-G925F",
-      "marketingName": "Galaxy S6 Edge (Global)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 2560,
-        "height": 1440,
-        "touch": true,
-        "size": 5.1
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "74.0.0.21.69",
-      "manufacturer": "facebook",
+      "version": "6.3.31.940",
+      "manufacturer": "tencent",
       "bits": null,
       "type": "application"
     },
@@ -1743,51 +1591,13 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "50.0.2661.86",
+      "version": "53.0.2785.49",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.4; SM-J100MU Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "SM-J100MU",
-      "marketingName": "Galaxy J1 4G",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 800,
-        "height": 480,
-        "touch": true,
-        "size": 4.3
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "50.0.2661.89",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.4.4",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "50.0.2661.89",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; SM-G920F Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/76.0.0.24.67;]"
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; SM-G920F Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/118.0.0.22.79;]"
     },
     "device": {
       "deviceName": "SM-G920F",
@@ -1805,7 +1615,83 @@
     "browser": {
       "name": "Facebook App",
       "modus": null,
+      "version": "118.0.0.22.79",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "57.0.2987.132",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; GT-N7100 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/76.0.0.24.67;]"
+    },
+    "device": {
+      "deviceName": "GT-N7100",
+      "marketingName": "Galaxy Note 2",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
       "version": "76.0.0.24.67",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "30.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; SM-G920F Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/58.0.3029.83 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/121.0.0.20.69;]"
+    },
+    "device": {
+      "deviceName": "SM-G920F",
+      "marketingName": "Galaxy S6 (Global)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 2560,
+        "height": 1440,
+        "touch": true,
+        "size": 5.1
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "121.0.0.20.69",
       "manufacturer": "facebook",
       "bits": null,
       "type": "application"
@@ -1819,31 +1705,31 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "50.0.2661.86",
+      "version": "58.0.3029.83",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.4; GT-I9195I Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/75.0.0.23.69;]"
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.0; SM-G900F Build/LRX21T; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/55.0.2883.91 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/107.0.0.19.337;]"
     },
     "device": {
-      "deviceName": "GT-I9195I",
-      "marketingName": "Galaxy S4 Mini LTE",
+      "deviceName": "SM-G900F",
+      "marketingName": "Galaxy S5 LTE",
       "manufacturer": "samsung",
       "brand": "samsung",
       "display": {
-        "width": 960,
-        "height": 540,
+        "width": 1920,
+        "height": 1080,
         "touch": true,
-        "size": 4.3
+        "size": 5.1
       },
       "type": "smartphone"
     },
     "browser": {
       "name": "Facebook App",
       "modus": null,
-      "version": "75.0.0.23.69",
+      "version": "107.0.0.19.337",
       "manufacturer": "facebook",
       "bits": null,
       "type": "application"
@@ -1851,23 +1737,23 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "4.4.4",
+      "version": "5.0.0",
       "manufacturer": "google",
       "bits": null
     },
     "engine": {
       "name": "Blink",
-      "version": "33.0.0.0",
+      "version": "55.0.2883.91",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; SAMSUNG-SM-G890A Build/LMY47X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; SM-G920F Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/49.0.2623.105 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/104.0.0.17.71;]"
     },
     "device": {
-      "deviceName": "SM-G890A",
-      "marketingName": "Galaxy S6 Active (AT&T)",
+      "deviceName": "SM-G920F",
+      "marketingName": "Galaxy S6 (Global)",
       "manufacturer": "samsung",
       "brand": "samsung",
       "display": {
@@ -1879,9 +1765,47 @@
       "type": "smartphone"
     },
     "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "104.0.0.17.71",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "49.0.2623.105",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; SM-J200F Build/LMY47X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.93 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "SM-J200F",
+      "marketingName": "Galaxy J2",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 960,
+        "height": 540,
+        "touch": true,
+        "size": 4.7
+      },
+      "type": "smartphone"
+    },
+    "browser": {
       "name": "Chrome",
       "modus": null,
-      "version": "50.0.2661.89",
+      "version": "43.0.2357.93",
       "manufacturer": "google",
       "bits": null,
       "type": "browser"
@@ -1895,107 +1819,31 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "50.0.2661.89",
+      "version": "43.0.2357.93",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.1.2; GT-I8262 Build/JZO54K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Mobile Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; SM-A510F Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/53.0.2785.124 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/96.0.0.17.70;]"
     },
     "device": {
-      "deviceName": "GT-I8262",
-      "marketingName": "Galaxy Core Duos",
+      "deviceName": "SM-A510F",
+      "marketingName": "Galaxy A5 LTE (2016, Europe)",
       "manufacturer": "samsung",
       "brand": "samsung",
       "display": {
-        "width": 800,
-        "height": 480,
+        "width": 1920,
+        "height": 1080,
         "touch": true,
-        "size": 4.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "49.0.2623.105",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.1.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "49.0.2623.105",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.4.4; en-US; GT-I9300I Build/KTU84P) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/10.8.8.730 U3/0.8.0 Mobile Safari/534.30"
-    },
-    "device": {
-      "deviceName": "GT-I9300I",
-      "marketingName": "Galaxy S3 Neo Duos",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 4.8
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "10.8.8.730",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.4.4",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "U3",
-      "version": "0.8.0",
-      "manufacturer": "ucweb"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; SM-G920F Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/48.0.2564.106 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/76.0.0.24.67;]"
-    },
-    "device": {
-      "deviceName": "SM-G920F",
-      "marketingName": "Galaxy S6 (Global)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 2560,
-        "height": 1440,
-        "touch": true,
-        "size": 5.1
+        "size": 5.2
       },
       "type": "smartphone"
     },
     "browser": {
       "name": "Facebook App",
       "modus": null,
-      "version": "76.0.0.24.67",
+      "version": "96.0.0.17.70",
       "manufacturer": "facebook",
       "bits": null,
       "type": "application"
@@ -2009,17 +1857,17 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "48.0.2564.106",
+      "version": "53.0.2785.124",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.0.1; SM-N910U Build/LRX22C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; SM-N910H Build/LMY47X; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/77.0.0.20.66;]"
     },
     "device": {
-      "deviceName": "SM-N910U",
-      "marketingName": "Galaxy Note 4",
+      "deviceName": "SM-N910H",
+      "marketingName": "Galaxy Note 4 LTE (Samsung Pacific)",
       "manufacturer": "samsung",
       "brand": "samsung",
       "display": {
@@ -2031,40 +1879,40 @@
       "type": "smartphone"
     },
     "browser": {
-      "name": "Chrome",
+      "name": "Facebook App",
       "modus": null,
-      "version": "50.0.2661.89",
-      "manufacturer": "google",
+      "version": "77.0.0.20.66",
+      "manufacturer": "facebook",
       "bits": null,
-      "type": "browser"
+      "type": "application"
     },
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "5.0.1",
+      "version": "5.1.1",
       "manufacturer": "google",
       "bits": null
     },
     "engine": {
       "name": "Blink",
-      "version": "50.0.2661.89",
+      "version": "50.0.2661.86",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; SM-N920P Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/111.0.0.18.69;]"
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; SM-G901F Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/111.0.0.18.69;]"
     },
     "device": {
-      "deviceName": "SM-N920P",
-      "marketingName": "Galaxy Note 5 CDMA + LTE (Sprint)",
+      "deviceName": "SM-G901F",
+      "marketingName": "Galaxy S5 Plus",
       "manufacturer": "samsung",
       "brand": "samsung",
       "display": {
-        "width": 2560,
-        "height": 1440,
+        "width": 1920,
+        "height": 1080,
         "touch": true,
-        "size": 5.7
+        "size": 5.1
       },
       "type": "smartphone"
     },
@@ -2091,63 +1939,63 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.1.2; en-US; GT-S6312 Build/JZO54K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/10.9.0.731 U3/0.8.0 Mobile Safari/534.30"
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; SM-A500FU Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/49.0.2623.105 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/96.0.0.17.70;]"
     },
     "device": {
-      "deviceName": "GT-S6312",
-      "marketingName": "Galaxy Young Duos",
+      "deviceName": "SM-A500FU",
+      "marketingName": "Galaxy A5 (Europe)",
       "manufacturer": "samsung",
       "brand": "samsung",
       "display": {
-        "width": 480,
-        "height": 320,
+        "width": 1280,
+        "height": 720,
         "touch": true,
-        "size": 3.3
+        "size": 5
       },
       "type": "smartphone"
     },
     "browser": {
-      "name": "UC Browser",
+      "name": "Facebook App",
       "modus": null,
-      "version": "10.9.0.731",
-      "manufacturer": "ucweb",
+      "version": "96.0.0.17.70",
+      "manufacturer": "facebook",
       "bits": null,
-      "type": "transcoder"
+      "type": "application"
     },
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "4.1.2",
+      "version": "6.0.1",
       "manufacturer": "google",
       "bits": null
     },
     "engine": {
-      "name": "U3",
-      "version": "0.8.0",
-      "manufacturer": "ucweb"
+      "name": "Blink",
+      "version": "49.0.2623.105",
+      "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; GT-S5310I Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.83 Mobile Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.4; SM-A500G Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.81 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "GT-S5310",
-      "marketingName": "Galaxy Pocket Neo",
+      "deviceName": "SM-A500G",
+      "marketingName": "Galaxy A5 Duos",
       "manufacturer": "samsung",
       "brand": "samsung",
       "display": {
-        "width": 320,
-        "height": 240,
+        "width": 1280,
+        "height": 720,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "type": "smartphone"
     },
     "browser": {
       "name": "Chrome",
       "modus": null,
-      "version": "47.0.2526.83",
+      "version": "51.0.2704.81",
       "manufacturer": "google",
       "bits": null,
       "type": "browser"
@@ -2155,23 +2003,289 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "4.4.2",
+      "version": "4.4.4",
       "manufacturer": "google",
       "bits": null
     },
     "engine": {
       "name": "Blink",
-      "version": "47.0.2526.83",
+      "version": "51.0.2704.81",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; SM-G920F Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/49.0.2623.105 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/91.0.0.17.68;]"
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.4; SM-E500H Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "SM-G920F",
-      "marketingName": "Galaxy S6 (Global)",
+      "deviceName": "SM-E500H",
+      "marketingName": "Galaxy E5 Duos 3G",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "50.0.2661.89",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.4",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "50.0.2661.89",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.0.2; SM-A500F Build/LRX22G; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/49.0.2623.105 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/89.0.0.17.70;]"
+    },
+    "device": {
+      "deviceName": "SM-A500F",
+      "marketingName": "Galaxy A5 (Global)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "89.0.0.17.70",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.0.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "49.0.2623.105",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; SM-E500F Build/LMY47X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "SM-E500F",
+      "marketingName": "Galaxy E5 Duos 3G",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "49.0.2623.105",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "49.0.2623.105",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; SM-G928F Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/55.0.2883.91 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/108.0.0.17.68;]"
+    },
+    "device": {
+      "deviceName": "SM-G928F",
+      "marketingName": "Galaxy S6 Edge Plus LTE",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 2560,
+        "height": 1440,
+        "touch": true,
+        "size": 5.7
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "108.0.0.17.68",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "55.0.2883.91",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; SM-G900F Build/MHC19Q; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/44.0.2403.119 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/76.0.0.24.67;]"
+    },
+    "device": {
+      "deviceName": "SM-G900F",
+      "marketingName": "Galaxy S5 LTE",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.1
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "76.0.0.24.67",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "44.0.2403.119",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; SM-N910C Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/77.0.0.20.66;]"
+    },
+    "device": {
+      "deviceName": "SM-N910C",
+      "marketingName": "Galaxy Note 4 LTE (Asia, Europe, South America)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 2560,
+        "height": 1440,
+        "touch": true,
+        "size": 5.7
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "77.0.0.20.66",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "50.0.2661.86",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; SAMSUNG-SM-G900A Build/LMY47X; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/77.0.0.20.66;]"
+    },
+    "device": {
+      "deviceName": "SM-G900A",
+      "marketingName": "Galaxy S5 LTE (AT&T)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.1
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "77.0.0.20.66",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "50.0.2661.86",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; SM-G925F Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/91.0.0.17.68;]"
+    },
+    "device": {
+      "deviceName": "SM-G925F",
+      "marketingName": "Galaxy S6 Edge (Global)",
       "manufacturer": "samsung",
       "brand": "samsung",
       "display": {
@@ -2199,31 +2313,221 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "49.0.2623.105",
+      "version": "50.0.2661.86",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; SM-N910F Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/53.0.2785.124 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/99.0.0.26.69;]"
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; SM-J200G Build/LMY47X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.124 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "SM-N910F",
-      "marketingName": "Galaxy Note 4 LTE (Europe)",
+      "deviceName": "SM-J200G",
+      "marketingName": "Galaxy J2 4G Duos",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 960,
+        "height": 540,
+        "touch": true,
+        "size": 4.7
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "53.0.2785.124",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "53.0.2785.124",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; SM-G920W8 Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/46.0.2490.76 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "SM-G920W8",
+      "marketingName": "Galaxy S6",
       "manufacturer": "samsung",
       "brand": "samsung",
       "display": {
         "width": 2560,
         "height": 1440,
         "touch": true,
-        "size": 5.7
+        "size": 5.1
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "46.0.2490.76",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "46.0.2490.76",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; SM-G9208 Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/77.0.0.20.66;]"
+    },
+    "device": {
+      "deviceName": "SM-G9208",
+      "marketingName": "Galaxy S6",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 2560,
+        "height": 1440,
+        "touch": true,
+        "size": null
       },
       "type": "smartphone"
     },
     "browser": {
       "name": "Facebook App",
       "modus": null,
-      "version": "99.0.0.26.69",
+      "version": "77.0.0.20.66",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "50.0.2661.86",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; SM-J510FN Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/77.0.0.20.66;]"
+    },
+    "device": {
+      "deviceName": "SM-J510FN",
+      "marketingName": "Galaxy J5 4G Duos (2016, Europe)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5.2
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "77.0.0.20.66",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "50.0.2661.86",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 5.1.1; en-US; SM-G531F Build/LMY48B) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/10.9.5.735 U3/0.8.0 Mobile Safari/534.30"
+    },
+    "device": {
+      "deviceName": "SM-G531F",
+      "marketingName": "Galaxy Grand Prime Value Edition LTE",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 960,
+        "height": 540,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "10.9.5.735",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "U3",
+      "version": "0.8.0",
+      "manufacturer": "ucweb"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; SM-G900F Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/53.0.2785.124 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/98.0.0.18.70;]"
+    },
+    "device": {
+      "deviceName": "SM-G900F",
+      "marketingName": "Galaxy S5 LTE",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.1
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "98.0.0.18.70",
       "manufacturer": "facebook",
       "bits": null,
       "type": "application"
@@ -2243,63 +2547,25 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.1.2; GT-S7392 Build/JZO54K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; SM-J200M Build/LMY47X; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/77.0.0.20.66;]"
     },
     "device": {
-      "deviceName": "GT-S7392",
-      "marketingName": "Galaxy Fresh",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 800,
-        "height": 480,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "50.0.2661.89",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.1.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "50.0.2661.89",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.0.2; SM-A300FU Build/LRX22G; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/76.0.0.24.67;]"
-    },
-    "device": {
-      "deviceName": "SM-A300FU",
-      "marketingName": "Galaxy A3 LTE",
+      "deviceName": "SM-J200M",
+      "marketingName": "Galaxy J2",
       "manufacturer": "samsung",
       "brand": "samsung",
       "display": {
         "width": 960,
         "height": 540,
         "touch": true,
-        "size": 4.5
+        "size": 4.7
       },
       "type": "smartphone"
     },
     "browser": {
       "name": "Facebook App",
       "modus": null,
-      "version": "76.0.0.24.67",
+      "version": "77.0.0.20.66",
       "manufacturer": "facebook",
       "bits": null,
       "type": "application"
@@ -2307,7 +2573,7 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "5.0.2",
+      "version": "5.1.1",
       "manufacturer": "google",
       "bits": null
     },
@@ -2319,28 +2585,142 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; SM-G800F Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/76.0.0.24.67;]"
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; SM-J700F Build/LMY48B; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "SM-G800F",
-      "marketingName": "Galaxy S5 Mini (Europe)",
+      "deviceName": "SM-J700F",
+      "marketingName": "Galaxy J7 4G (India, Thailand)",
       "manufacturer": "samsung",
       "brand": "samsung",
       "display": {
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": 4.5
+        "size": 5.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "56.0.2924.87",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "56.0.2924.87",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; SM-A9100 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/55.0.2883.91 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/106.0.0.26.68;]"
+    },
+    "device": {
+      "deviceName": "SM-A9100",
+      "marketingName": "Galaxy A9 Pro (2016)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 6
       },
       "type": "smartphone"
     },
     "browser": {
       "name": "Facebook App",
       "modus": null,
-      "version": "76.0.0.24.67",
+      "version": "106.0.0.26.68",
       "manufacturer": "facebook",
       "bits": null,
       "type": "application"
+    },
+    "os": {
+      "name": "Tizen",
+      "marketingName": "Tizen",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "55.0.2883.91",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; SM-G920F Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/58.0.3029.83 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/124.0.0.22.66;]"
+    },
+    "device": {
+      "deviceName": "SM-G920F",
+      "marketingName": "Galaxy S6 (Global)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 2560,
+        "height": 1440,
+        "touch": true,
+        "size": 5.1
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "124.0.0.22.66",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "58.0.3029.83",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.4.2; en-US; SM-G313HU Build/KOT49H) AppleWebKit/528.5+ (KHTML, like Gecko) Version/3.1.2 Mobile Safari/525.20.1 UCBrowser/10.7.9.856 Mobile"
+    },
+    "device": {
+      "deviceName": "SM-G313HU",
+      "marketingName": "Galaxy S Duos 3",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 4
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "10.7.9.856",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
     },
     "os": {
       "name": "Android",
@@ -2350,32 +2730,146 @@
       "bits": null
     },
     "engine": {
+      "name": "WebKit",
+      "version": "528.5.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.4; SM-G360P Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/108.0.0.17.68;]"
+    },
+    "device": {
+      "deviceName": "SM-G360P",
+      "marketingName": "Galaxy Core Prime",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 4.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "108.0.0.17.68",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.4",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
       "name": "Blink",
-      "version": "30.0.0.0",
+      "version": "33.0.0.0",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.4.2; en-US; SCH-I435 Build/KOT49H) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/10.9.0.731 U3/0.8.0 Mobile Safari/534.30"
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; SM-G900H Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/54.0.2840.85 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "SCH-I435",
-      "marketingName": "Galaxy S4 Mini (Verizon)",
+      "deviceName": "SM-G900H",
+      "marketingName": "Galaxy S5 Exynos (octa-core)",
       "manufacturer": "samsung",
       "brand": "samsung",
       "display": {
-        "width": 960,
-        "height": 540,
+        "width": 1920,
+        "height": 1080,
         "touch": true,
-        "size": 4.3
+        "size": 5.1
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "54.0.2840.85",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "54.0.2840.85",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; SM-A510F Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/55.0.2883.91 Mobile Safari/537.36 [FB_IAB/MESSENGER;FBAV/104.0.0.13.69;]"
+    },
+    "device": {
+      "deviceName": "SM-A510F",
+      "marketingName": "Galaxy A5 LTE (2016, Europe)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.2
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook Messenger App",
+      "modus": null,
+      "version": "104.0.0.13.69",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "55.0.2883.91",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.4.2; en-US; GT-N7100 Build/KOT49H) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/11.1.5.890 U3/0.8.0 Mobile Safari/534.30"
+    },
+    "device": {
+      "deviceName": "GT-N7100",
+      "marketingName": "Galaxy Note 2",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5.5
       },
       "type": "smartphone"
     },
     "browser": {
       "name": "UC Browser",
       "modus": null,
-      "version": "10.9.0.731",
+      "version": "11.1.5.890",
       "manufacturer": "ucweb",
       "bits": null,
       "type": "transcoder"
@@ -2395,11 +2889,11 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; SM-G920F Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/46.0.2490.76 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/76.0.0.24.67;]"
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; SM-G925V Build/LMY47X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.98 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "SM-G920F",
-      "marketingName": "Galaxy S6 (Global)",
+      "deviceName": "SM-G925V",
+      "marketingName": "Galaxy S6 Edge (Verizon)",
       "manufacturer": "samsung",
       "brand": "samsung",
       "display": {
@@ -2411,50 +2905,12 @@
       "type": "smartphone"
     },
     "browser": {
-      "name": "Facebook App",
+      "name": "Chrome",
       "modus": null,
-      "version": "76.0.0.24.67",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "6.0.1",
+      "version": "52.0.2743.98",
       "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "46.0.2490.76",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; SM-N910F Build/LMY49J) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/39.0.0.0 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/77.0.0.20.66;]"
-    },
-    "device": {
-      "deviceName": "SM-N910F",
-      "marketingName": "Galaxy Note 4 LTE (Europe)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 2560,
-        "height": 1440,
-        "touch": true,
-        "size": 5.7
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "77.0.0.20.66",
-      "manufacturer": "facebook",
       "bits": null,
-      "type": "application"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
@@ -2465,13 +2921,89 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "39.0.0.0",
+      "version": "52.0.2743.98",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; SM-G361F Build/LMY48B; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/76.0.0.24.67;]"
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.0; SM-N9000Q Build/LRX21V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.124 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "SM-N9000Q",
+      "marketingName": "Galaxy Note 3",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.7
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "53.0.2785.124",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "53.0.2785.124",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 6.0.1; en-US; SM-J500F Build/MMB29M) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/11.0.8.855 U3/0.8.0 Mobile Safari/534.30"
+    },
+    "device": {
+      "deviceName": "SM-J500F",
+      "marketingName": "Galaxy J5 (HK, India, South Africa, Thailand)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "11.0.8.855",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "U3",
+      "version": "0.8.0",
+      "manufacturer": "ucweb"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; SM-G361F Build/LMY48B; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/54.0.2840.68 Mobile Safari/537.36"
     },
     "device": {
       "deviceName": "SM-G361F",
@@ -2487,9 +3019,85 @@
       "type": "smartphone"
     },
     "browser": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "54.0.2840.68",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "54.0.2840.68",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; GT-I9200 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.98 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "GT-I9200",
+      "marketingName": "Galaxy Mega 6.3",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 6.3
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "52.0.2743.98",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "52.0.2743.98",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; SM-J500FN Build/LMY48B; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/51.0.2704.81 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/85.0.0.15.70;]"
+    },
+    "device": {
+      "deviceName": "SM-J500FN",
+      "marketingName": "Galaxy J5",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
       "name": "Facebook App",
       "modus": null,
-      "version": "76.0.0.24.67",
+      "version": "85.0.0.15.70",
       "manufacturer": "facebook",
       "bits": null,
       "type": "application"
@@ -2503,69 +3111,107 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "50.0.2661.86",
+      "version": "51.0.2704.81",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; SM-G928F Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/75.0.0.23.69;]"
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 5.1.1; en-US; SM-J200G Build/LMY47X) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/10.7.2.645 U3/0.8.0 Mobile Safari/534.30"
     },
     "device": {
-      "deviceName": "SM-G928F",
-      "marketingName": "Galaxy S6 Edge Plus LTE",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 2560,
-        "height": 1440,
-        "touch": true,
-        "size": 5.7
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "75.0.0.23.69",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "6.0.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "50.0.2661.86",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.0.2; SM-A300FU Build/LRX22G; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/75.0.0.23.69;]"
-    },
-    "device": {
-      "deviceName": "SM-A300FU",
-      "marketingName": "Galaxy A3 LTE",
+      "deviceName": "SM-J200G",
+      "marketingName": "Galaxy J2 4G Duos",
       "manufacturer": "samsung",
       "brand": "samsung",
       "display": {
         "width": 960,
         "height": 540,
         "touch": true,
-        "size": 4.5
+        "size": 4.7
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "10.7.2.645",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "U3",
+      "version": "0.8.0",
+      "manufacturer": "ucweb"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.0.1; SAMSUNG GT-I9508 Build/LRX22C) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/2.1 Chrome/34.0.1847.76 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "GT-I9508",
+      "marketingName": "Galaxy S4 Duos (China)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Samsung Browser",
+      "modus": null,
+      "version": "2.1.0",
+      "manufacturer": "samsung",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.0.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "34.0.1847.76",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.0; SM-G900F Build/LRX21T; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/43.0.2357.121 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/81.0.0.22.70;]"
+    },
+    "device": {
+      "deviceName": "SM-G900F",
+      "marketingName": "Galaxy S5 LTE",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.1
       },
       "type": "smartphone"
     },
     "browser": {
       "name": "Facebook App",
       "modus": null,
-      "version": "75.0.0.23.69",
+      "version": "81.0.0.22.70",
       "manufacturer": "facebook",
       "bits": null,
       "type": "application"
@@ -2573,23 +3219,61 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "5.0.2",
+      "version": "5.0.0",
       "manufacturer": "google",
       "bits": null
     },
     "engine": {
       "name": "Blink",
-      "version": "50.0.2661.86",
+      "version": "43.0.2357.121",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; SM-G925F Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/76.0.0.24.67;]"
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; SAMSUNG SM-A710F Build/LMY47X) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/4.0 Chrome/44.0.2403.133 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "SM-G925F",
-      "marketingName": "Galaxy S6 Edge (Global)",
+      "deviceName": "SM-A710F",
+      "marketingName": "Galaxy A7 (Europe, South Africa, Kazakhstan, Russia, 2016)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Samsung Browser",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "samsung",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "44.0.2403.133",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.0.2; SAMSUNG-SM-G925A Build/LRX22G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.81 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "SM-G925A",
+      "marketingName": "Galaxy S6 Edge (AT&T)",
       "manufacturer": "samsung",
       "brand": "samsung",
       "display": {
@@ -2601,47 +3285,9 @@
       "type": "smartphone"
     },
     "browser": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "76.0.0.24.67",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "6.0.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "50.0.2661.86",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.0.2; SM-A500W Build/LRX22G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.93 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "SM-A500W",
-      "marketingName": "Galaxy A5 (Rogers)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
       "name": "Chrome",
       "modus": null,
-      "version": "43.0.2357.93",
+      "version": "51.0.2704.81",
       "manufacturer": "google",
       "bits": null,
       "type": "browser"
@@ -2655,60 +3301,22 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "43.0.2357.93",
+      "version": "51.0.2704.81",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.0.1; SM-N910U Build/LRX22C; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/49.0.2623.105 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/73.0.0.18.66;]"
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; SM-G3815 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/82.0.0.23.70;]"
     },
     "device": {
-      "deviceName": "SM-N910U",
-      "marketingName": "Galaxy Note 4",
+      "deviceName": "SM-G3815",
+      "marketingName": "Galaxy Express 2",
       "manufacturer": "samsung",
       "brand": "samsung",
       "display": {
-        "width": 2560,
-        "height": 1440,
-        "touch": true,
-        "size": 5.7
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "73.0.0.18.66",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.0.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "49.0.2623.105",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; SM-G355HN Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/77.0.0.20.66;]"
-    },
-    "device": {
-      "deviceName": "SM-G355HN",
-      "marketingName": "Galaxy Core 2",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 800,
-        "height": 480,
+        "width": 960,
+        "height": 540,
         "touch": true,
         "size": 4.5
       },
@@ -2717,7 +3325,7 @@
     "browser": {
       "name": "Facebook App",
       "modus": null,
-      "version": "77.0.0.20.66",
+      "version": "82.0.0.23.70",
       "manufacturer": "facebook",
       "bits": null,
       "type": "application"
@@ -2737,49 +3345,11 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.0; SM-G900F Build/LRX21T; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/75.0.0.23.69;]"
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; SM-N9300 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/52.0.2743.98 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/92.0.0.16.72;]"
     },
     "device": {
-      "deviceName": "SM-G900F",
-      "marketingName": "Galaxy S5 LTE",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5.1
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "75.0.0.23.69",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "50.0.2661.86",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; SM-N910F Build/LMY47X; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/76.0.0.24.67;]"
-    },
-    "device": {
-      "deviceName": "SM-N910F",
-      "marketingName": "Galaxy Note 4 LTE (Europe)",
+      "deviceName": "SM-N9300",
+      "marketingName": "Galaxy Note 7",
       "manufacturer": "samsung",
       "brand": "samsung",
       "display": {
@@ -2793,7 +3363,7 @@
     "browser": {
       "name": "Facebook App",
       "modus": null,
-      "version": "76.0.0.24.67",
+      "version": "92.0.0.16.72",
       "manufacturer": "facebook",
       "bits": null,
       "type": "application"
@@ -2801,40 +3371,78 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "5.1.1",
+      "version": "6.0.1",
       "manufacturer": "google",
       "bits": null
     },
     "engine": {
       "name": "Blink",
-      "version": "50.0.2661.86",
+      "version": "52.0.2743.98",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; SM-J700F Build/LMY48B; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/76.0.0.24.67;]"
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.4; SGH-M919 Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/94.0.0.17.68;]"
     },
     "device": {
-      "deviceName": "SM-J700F",
-      "marketingName": "Galaxy J7 4G (India, Thailand)",
+      "deviceName": "SGH-M919",
+      "marketingName": "Galaxy S4 LTE (T-Mobile), Black Mist",
       "manufacturer": "samsung",
       "brand": "samsung",
       "display": {
-        "width": 1280,
-        "height": 720,
+        "width": 1920,
+        "height": 1080,
         "touch": true,
-        "size": 5.5
+        "size": 5
       },
       "type": "smartphone"
     },
     "browser": {
       "name": "Facebook App",
       "modus": null,
-      "version": "76.0.0.24.67",
+      "version": "94.0.0.17.68",
       "manufacturer": "facebook",
       "bits": null,
       "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.4",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "33.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; SAMSUNG SM-A8000 Build/LMY47X) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/4.0 Chrome/44.0.2403.133 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "SM-A8000",
+      "marketingName": "Galaxy A8 Duos",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.7
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Samsung Browser",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "samsung",
+      "bits": null,
+      "type": "browser"
     },
     "os": {
       "name": "Android",
@@ -2845,13 +3453,89 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "50.0.2661.86",
+      "version": "44.0.2403.133",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.0.2; SM-A500FU Build/LRX22G; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/76.0.0.24.67;]"
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; SM-G900S Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.132 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "SM-G900S",
+      "marketingName": "Galaxy S5",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.1
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "57.0.2987.132",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Windows Phone OS",
+      "marketingName": "Windows Phone OS",
+      "version": null,
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "57.0.2987.132",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.4; GT-I9060I Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/109.0.0.15.71;]"
+    },
+    "device": {
+      "deviceName": "GT-I9060I",
+      "marketingName": "Galaxy Grand Neo Plus",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 5.01
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "109.0.0.15.71",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.4",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "33.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.0.2; SM-A500FU Build/LRX22G; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/51.0.2704.81 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/86.0.0.19.69;]"
     },
     "device": {
       "deviceName": "SM-A500FU",
@@ -2869,7 +3553,7 @@
     "browser": {
       "name": "Facebook App",
       "modus": null,
-      "version": "76.0.0.24.67",
+      "version": "86.0.0.19.69",
       "manufacturer": "facebook",
       "bits": null,
       "type": "application"
@@ -2883,13 +3567,13 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "50.0.2661.86",
+      "version": "51.0.2704.81",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; SM-G920F Build/LMY47X; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/76.0.0.24.67;]"
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; SM-G920F Build/LMY47X; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/77.0.0.20.66;]"
     },
     "device": {
       "deviceName": "SM-G920F",
@@ -2907,7 +3591,7 @@
     "browser": {
       "name": "Facebook App",
       "modus": null,
-      "version": "76.0.0.24.67",
+      "version": "77.0.0.20.66",
       "manufacturer": "facebook",
       "bits": null,
       "type": "application"
@@ -2927,66 +3611,28 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.0; SAMSUNG-SM-G870A Build/LRX21T) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/4.0 Chrome/44.0.2403.133 Mobile Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; SM-G925S Build/MMB29K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.132 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "SM-G870A",
-      "marketingName": "Galaxy S5 Active LTE (AT&T)",
+      "deviceName": "SM-G925S",
+      "marketingName": "Galaxy S6 Edge (SK Telecom)",
       "manufacturer": "samsung",
       "brand": "samsung",
       "display": {
-        "width": 1920,
-        "height": 1080,
+        "width": 2560,
+        "height": 1440,
         "touch": true,
         "size": 5.1
       },
       "type": "smartphone"
     },
     "browser": {
-      "name": "Samsung Browser",
+      "name": "Chrome",
       "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "samsung",
+      "version": "57.0.2987.132",
+      "manufacturer": "google",
       "bits": null,
       "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "44.0.2403.133",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 6.0.1; en-US; SM-G610F Build/MMB29K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/11.2.0.915 U3/0.8.0 Mobile Safari/534.30"
-    },
-    "device": {
-      "deviceName": "SM-G610F",
-      "marketingName": "Galaxy On7 (2016)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "11.2.0.915",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
     },
     "os": {
       "name": "Android",
@@ -2996,32 +3642,70 @@
       "bits": null
     },
     "engine": {
-      "name": "U3",
-      "version": "0.8.0",
-      "manufacturer": "ucweb"
+      "name": "Blink",
+      "version": "57.0.2987.132",
+      "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; SM-G800F Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/117.0.0.18.47;]"
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; SM-J320M Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "SM-G800F",
-      "marketingName": "Galaxy S5 Mini (Europe)",
+      "deviceName": "SM-J320M",
+      "marketingName": "Galaxy J3 4G (2016, LATAM)",
       "manufacturer": "samsung",
       "brand": "samsung",
       "display": {
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": 4.5
+        "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "56.0.2924.87",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "56.0.2924.87",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; SM-A520F Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/58.0.3029.83 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/123.0.0.18.71;]"
+    },
+    "device": {
+      "deviceName": "SM-A520F",
+      "marketingName": "Galaxy A5 (2017)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.2
       },
       "type": "smartphone"
     },
     "browser": {
       "name": "Facebook App",
       "modus": null,
-      "version": "117.0.0.18.47",
+      "version": "123.0.0.18.71",
       "manufacturer": "facebook",
       "bits": null,
       "type": "application"
@@ -3035,22 +3719,22 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "56.0.2924.87",
+      "version": "58.0.3029.83",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.4.2; en-US; GT-I9192 Build/KOT49H) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/10.7.5.658 U3/0.8.0 Mobile Safari/534.30"
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.4.4; en-US; SM-J100F Build/KTU84P) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/11.1.5.890 U3/0.8.0 Mobile Safari/534.30"
     },
     "device": {
-      "deviceName": "GT-I9192",
-      "marketingName": "Galaxy S4 Mini Duos",
+      "deviceName": "SM-J100F",
+      "marketingName": "Galaxy J1 LTE",
       "manufacturer": "samsung",
       "brand": "samsung",
       "display": {
-        "width": 960,
-        "height": 540,
+        "width": 800,
+        "height": 480,
         "touch": true,
         "size": 4.3
       },
@@ -3059,7 +3743,7 @@
     "browser": {
       "name": "UC Browser",
       "modus": null,
-      "version": "10.7.5.658",
+      "version": "11.1.5.890",
       "manufacturer": "ucweb",
       "bits": null,
       "type": "transcoder"
@@ -3067,7 +3751,7 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "4.4.2",
+      "version": "4.4.4",
       "manufacturer": "google",
       "bits": null
     },
@@ -3079,244 +3763,16 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.0.2; SM-A300FU Build/LRX22G; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/74.0.0.21.69;]"
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; SM-J320H Build/LMY47V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/54.0.2840.85 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/103.0.0.20.72;]"
     },
     "device": {
-      "deviceName": "SM-A300FU",
-      "marketingName": "Galaxy A3 LTE",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 960,
-        "height": 540,
-        "touch": true,
-        "size": 4.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "74.0.0.21.69",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.0.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "50.0.2661.86",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; SM-N910F Build/LMY47X; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/75.0.0.23.69;]"
-    },
-    "device": {
-      "deviceName": "SM-N910F",
-      "marketingName": "Galaxy Note 4 LTE (Europe)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 2560,
-        "height": 1440,
-        "touch": true,
-        "size": 5.7
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "75.0.0.23.69",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.1.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "50.0.2661.86",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.4; SM-N910C Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "SM-N910C",
-      "marketingName": "Galaxy Note 4 LTE (Asia, Europe, South America)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 2560,
-        "height": 1440,
-        "touch": true,
-        "size": 5.7
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "50.0.2661.89",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.4.4",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "50.0.2661.89",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; SM-G7102 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.76 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "SM-G7102",
-      "marketingName": "Galaxy Grand 2 Duos",
+      "deviceName": "SM-J320H",
+      "marketingName": "Galaxy J3 4G Duos (2016)",
       "manufacturer": "samsung",
       "brand": "samsung",
       "display": {
         "width": 1280,
         "height": 720,
-        "touch": true,
-        "size": 5.25
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "46.0.2490.76",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.4.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "46.0.2490.76",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.0; SM-N9005 Build/LRX21V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/74.0.0.21.69;]"
-    },
-    "device": {
-      "deviceName": "SM-N9005",
-      "marketingName": "Galaxy Note 3 LTE",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5.7
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "74.0.0.21.69",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "50.0.2661.86",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.0.2; SM-A300H Build/LRX22G; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "SM-A300H",
-      "marketingName": "Galaxy A3 Duos",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 960,
-        "height": 540,
-        "touch": true,
-        "size": 4.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Android WebView",
-      "modus": null,
-      "version": "50.0.2661.86",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.0.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "50.0.2661.86",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.4; SM-G530H Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/77.0.0.20.66;]"
-    },
-    "device": {
-      "deviceName": "SM-G530H",
-      "marketingName": "Galaxy Grand Prime Duos",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 960,
-        "height": 540,
         "touch": true,
         "size": 5
       },
@@ -3325,463 +3781,7 @@
     "browser": {
       "name": "Facebook App",
       "modus": null,
-      "version": "77.0.0.20.66",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.4.4",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "33.0.0.0",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; SM-N9208 Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/52.0.2743.98 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "SM-N9208",
-      "marketingName": "Galaxy Note 5 LTE (Taiwan)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 2560,
-        "height": 1440,
-        "touch": true,
-        "size": 5.7
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Android WebView",
-      "modus": null,
-      "version": "52.0.2743.98",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "6.0.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "52.0.2743.98",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.0; SM-N9005 Build/LRX21V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/77.0.0.20.66;]"
-    },
-    "device": {
-      "deviceName": "SM-N9005",
-      "marketingName": "Galaxy Note 3 LTE",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5.7
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "77.0.0.20.66",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "50.0.2661.86",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; SM-G9250 Build/MMB29K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "SM-G9250",
-      "marketingName": "Galaxy S6 Edge",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 2560,
-        "height": 1440,
-        "touch": true,
-        "size": 5.1
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "50.0.2661.89",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "6.0.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "50.0.2661.89",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.4; GT-I9300I Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/76.0.0.24.67;]"
-    },
-    "device": {
-      "deviceName": "GT-I9300I",
-      "marketingName": "Galaxy S3 Neo Duos",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 4.8
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "76.0.0.24.67",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.4.4",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "33.0.0.0",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.0; SM-G900F Build/LRX21T; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/120.0.0.18.72;]"
-    },
-    "device": {
-      "deviceName": "SM-G900F",
-      "marketingName": "Galaxy S5 LTE",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5.1
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "120.0.0.18.72",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "57.0.2987.132",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; SAMSUNG-SM-N920A Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.132 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "SM-N920A",
-      "marketingName": "Galaxy Note 5 LTE (AT&T)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 2560,
-        "height": 1440,
-        "touch": true,
-        "size": 5.7
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "57.0.2987.132",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "7.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "57.0.2987.132",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; SM-G925P Build/MMB29K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "SM-G925P",
-      "marketingName": "Galaxy S6 Edge CDMA (Sprint)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 2560,
-        "height": 1440,
-        "touch": true,
-        "size": 5.1
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "50.0.2661.89",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "6.0.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "50.0.2661.89",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; SM-N910H Build/LMY47X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "SM-N910H",
-      "marketingName": "Galaxy Note 4 LTE (Samsung Pacific)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 2560,
-        "height": 1440,
-        "touch": true,
-        "size": 5.7
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "50.0.2661.89",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.1.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "50.0.2661.89",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.4; SAMSUNG-SM-N910A Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "SM-N910A",
-      "marketingName": "Galaxy Note 4 CDMA (AT&T)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 2560,
-        "height": 1440,
-        "touch": true,
-        "size": 5.7
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "50.0.2661.89",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.4.4",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "50.0.2661.89",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.0; SM-N900 Build/LRX21V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/75.0.0.23.69;]"
-    },
-    "device": {
-      "deviceName": "SM-N900",
-      "marketingName": "Galaxy Note 3 3G",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5.7
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "75.0.0.23.69",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "50.0.2661.86",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; SM-A310F Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36 [FB_IAB/MESSENGER;FBAV/105.0.0.16.69;]"
-    },
-    "device": {
-      "deviceName": "SM-A310F",
-      "marketingName": "Galaxy A3 (2016)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 4.7
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Facebook Messenger App",
-      "modus": null,
-      "version": "105.0.0.16.69",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "6.0.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "56.0.2924.87",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; SM-J700F Build/LMY48B; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/51.0.2704.81 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/86.0.0.19.69;]"
-    },
-    "device": {
-      "deviceName": "SM-J700F",
-      "marketingName": "Galaxy J7 4G (India, Thailand)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 5.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "86.0.0.19.69",
+      "version": "103.0.0.20.72",
       "manufacturer": "facebook",
       "bits": null,
       "type": "application"
@@ -3795,7 +3795,7 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "51.0.2704.81",
+      "version": "54.0.2840.85",
       "manufacturer": "google"
     }
   }
