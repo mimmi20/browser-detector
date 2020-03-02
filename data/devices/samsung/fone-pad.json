@@ -657,20 +657,6 @@
     "type": "fone-pad",
     "platform": "android"
   },
-  "samsung sm-t217a": {
-    "deviceName": "SM-T217A",
-    "marketingName": "Galaxy Tab 3 7.0",
-    "manufacturer": "samsung",
-    "brand": "samsung",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "size": 7
-    },
-    "type": "fone-pad",
-    "platform": "android"
-  },
   "samsung gt-p3200": {
     "deviceName": "GT-P3200",
     "marketingName": "Galaxy Tab 3 7.0 3G",
@@ -730,6 +716,34 @@
   "samsung sm-t217s": {
     "deviceName": "SM-T217S",
     "marketingName": "Galaxy Tab 3 7.0 4G (Sprint)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "size": 7
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "samsung sm-t217a": {
+    "deviceName": "SM-T217A",
+    "marketingName": "Galaxy Tab 3 7.0 LTE (AT&T)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "size": 7
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "samsung sm-t217t": {
+    "deviceName": "SM-T217T",
+    "marketingName": "Galaxy Tab 3 7.0 LTE (T-Mobile)",
     "manufacturer": "samsung",
     "brand": "samsung",
     "display": {
@@ -2051,6 +2065,20 @@
     "display": {
       "width": 1280,
       "height": 800,
+      "touch": true,
+      "size": 8.4
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "samsung sm-t707a": {
+    "deviceName": "SM-T707A",
+    "marketingName": "Galaxy Tab S 8.4 LTE (AT&T)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 2560,
+      "height": 1600,
       "touch": true,
       "size": 8.4
     },
