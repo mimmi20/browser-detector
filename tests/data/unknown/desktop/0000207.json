@@ -22,7 +22,7 @@
       "version": "68.5.0",
       "manufacturer": "mozilla-foundation",
       "bits": null,
-      "type": "email-client"
+      "type": "unknown"
     },
     "os": {
       "name": "Windows NT 6.1",
@@ -60,7 +60,7 @@
       "version": "82.0.4069.0",
       "manufacturer": "google",
       "bits": 32,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Linux",
@@ -98,7 +98,7 @@
       "version": "73.0.1",
       "manufacturer": "mozilla-foundation",
       "bits": 64,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Windows NT 10.0",
@@ -136,7 +136,7 @@
       "version": "74.0.0",
       "manufacturer": "mozilla-foundation",
       "bits": 64,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Windows NT 6.1",
@@ -174,7 +174,7 @@
       "version": "15.0.805.0",
       "manufacturer": "google",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Windows NT 6.1",
@@ -212,7 +212,7 @@
       "version": "72.0.3626.121",
       "manufacturer": "google",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Raspbian",
@@ -250,7 +250,7 @@
       "version": "74.0.0",
       "manufacturer": "mozilla-foundation",
       "bits": 64,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Windows NT 6.3",
@@ -288,7 +288,7 @@
       "version": "28.5.2",
       "manufacturer": "moonchild-productions",
       "bits": 64,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Windows NT 10.0",
@@ -326,7 +326,7 @@
       "version": "7.0.22.1",
       "manufacturer": "baidu",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Windows NT 5.2",
@@ -364,7 +364,7 @@
       "version": "74.0.3850.0",
       "manufacturer": "srware",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Windows NT 6.3",
@@ -402,7 +402,7 @@
       "version": "30.1835.49",
       "manufacturer": "opera",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Windows NT 6.2",
@@ -440,7 +440,7 @@
       "version": "60.3.0",
       "manufacturer": "mozilla-foundation",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Windows NT 10.0",
@@ -478,7 +478,7 @@
       "version": "18.19571.0",
       "manufacturer": "microsoft",
       "bits": 64,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Windows NT 10.0",
@@ -516,7 +516,7 @@
       "version": "68.0.0",
       "manufacturer": "mozilla-foundation",
       "bits": 64,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "OpenBSD",
@@ -554,7 +554,7 @@
       "version": "18.19569.0",
       "manufacturer": "microsoft",
       "bits": 64,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Windows NT 10.0",
@@ -592,7 +592,7 @@
       "version": "73.0.0",
       "manufacturer": "mozilla-foundation",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Windows NT 6.1",
@@ -630,7 +630,7 @@
       "version": "73.0.0",
       "manufacturer": "mozilla-foundation",
       "bits": 64,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "FreeBSD",
@@ -668,7 +668,7 @@
       "version": "81.0.416.12",
       "manufacturer": "microsoft",
       "bits": 64,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Windows NT 6.3",
@@ -706,7 +706,7 @@
       "version": "9.5.9244.400",
       "manufacturer": "tencent",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Windows NT 6.1",
@@ -719,6 +719,880 @@
       "name": "Trident",
       "version": "7.0.0",
       "manufacturer": "microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.100 Safari/537.36 OPR/67.0.3575.31 comdirect/1.0 (appVersion:20.2.1;deviceType:desktop)"
+    },
+    "device": {
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop"
+    },
+    "browser": {
+      "name": "Opera",
+      "modus": null,
+      "version": "67.0.3575.31",
+      "manufacturer": "opera",
+      "bits": 64,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": 64
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "80.0.3987.100",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/82.0.4056.0 Safari/537.36 Edg/82.0.432.3 comdirect/1.0 (appVersion:20.2.1;deviceType:desktop)"
+    },
+    "device": {
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop"
+    },
+    "browser": {
+      "name": "Edge",
+      "modus": null,
+      "version": "82.0.432.3",
+      "manufacturer": "microsoft",
+      "bits": 64,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Windows NT 10.0",
+      "marketingName": "Windows 10",
+      "version": "10.0.0",
+      "manufacturer": "microsoft",
+      "bits": 64
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "82.0.4056.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; Linux x86_64) KHTML/5.28.0 (like Gecko) Konqueror/5.28 comdirect/1.0 (appVersion:20.2.1;deviceType:desktop)"
+    },
+    "device": {
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop"
+    },
+    "browser": {
+      "name": "Konqueror",
+      "modus": null,
+      "version": "5.28.0",
+      "manufacturer": "kde",
+      "bits": 64,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": 64
+    },
+    "engine": {
+      "name": "KHTML",
+      "version": "5.28.0",
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) kontact/5.2.3 Safari/538.1 comdirect/1.0 (appVersion:20.2.1;deviceType:desktop)"
+    },
+    "device": {
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop"
+    },
+    "browser": {
+      "name": "Kontact",
+      "modus": null,
+      "version": "5.2.3",
+      "manufacturer": "kde",
+      "bits": 64,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": 64
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "538.1.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; ) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4040.5 Safari/537.36 OPR/68.0.3602.0 (Edition developer)"
+    },
+    "device": {
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop"
+    },
+    "browser": {
+      "name": "Opera",
+      "modus": null,
+      "version": "68.0.3602.0",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Windows NT 10.0",
+      "marketingName": "Windows 10",
+      "version": "10.0.0",
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "81.0.4040.5",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 Edge/18.19577 comdirect/1.0 (appVersion:20.2.1;deviceType:desktop)"
+    },
+    "device": {
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop"
+    },
+    "browser": {
+      "name": "Edge",
+      "modus": null,
+      "version": "18.19577.0",
+      "manufacturer": "microsoft",
+      "bits": 64,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Windows NT 10.0",
+      "marketingName": "Windows 10",
+      "version": "10.0.0",
+      "manufacturer": "microsoft",
+      "bits": 64
+    },
+    "engine": {
+      "name": "Edge",
+      "version": "18.19577.0",
+      "manufacturer": "microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0 Safari/605.1.15 Surf/2.0 comdirect/1.0 (appVersion:20.2.1;deviceType:desktop)"
+    },
+    "device": {
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop"
+    },
+    "browser": {
+      "name": "SurfBrowser",
+      "modus": null,
+      "version": "2.0.0",
+      "manufacturer": "unknown",
+      "bits": 64,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Ubuntu",
+      "marketingName": "Ubuntu",
+      "version": null,
+      "manufacturer": "canonical",
+      "bits": 64
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "yacybot (/global; amd64 FreeBSD 13.0-CURRENT; java 1.8.0_192; GMT/en) http://yacy.net/bot.html comdirect/1.0 (appVersion:20.2.1)"
+    },
+    "device": {
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop"
+    },
+    "browser": {
+      "name": "YaCy Bot",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 64,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "FreeBSD",
+      "marketingName": "FreeBSD",
+      "version": "13.0.0",
+      "manufacturer": "free-bsd-foundation",
+      "bits": 64
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.100 Safari/537.36 OPR/67.0.3575.31"
+    },
+    "device": {
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop"
+    },
+    "browser": {
+      "name": "Opera",
+      "modus": null,
+      "version": "67.0.3575.31",
+      "manufacturer": "opera",
+      "bits": 64,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Windows NT 6.1",
+      "marketingName": "Windows 7",
+      "version": "6.1.0",
+      "manufacturer": "microsoft",
+      "bits": 64
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "80.0.3987.100",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/3.0)"
+    },
+    "device": {
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop"
+    },
+    "browser": {
+      "name": "Internet Explorer",
+      "modus": null,
+      "version": "7.0.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Windows NT 5.1",
+      "marketingName": "Windows XP",
+      "version": "5.1.0",
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": "Trident",
+      "version": "3.0.0",
+      "manufacturer": "microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 5.0) AppleWebKit/5352 (KHTML, like Gecko) Chrome/13.0.824.0 Safari/5352"
+    },
+    "device": {
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "13.0.824.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Windows NT 5.0",
+      "marketingName": "Windows 2000",
+      "version": "5.0.0",
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "5352.0.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.0; Trident/3.1)"
+    },
+    "device": {
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop"
+    },
+    "browser": {
+      "name": "Internet Explorer",
+      "modus": null,
+      "version": "9.0.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Windows NT 6.0",
+      "marketingName": "Windows Vista",
+      "version": "6.0.0",
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": "Trident",
+      "version": "3.1.0",
+      "manufacturer": "microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/8.93 (Windows NT 5.0; U; en-US) Presto/2.9.164 Version/10.00"
+    },
+    "device": {
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop"
+    },
+    "browser": {
+      "name": "Opera",
+      "modus": null,
+      "version": "10.00.0",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Windows NT 5.0",
+      "marketingName": "Windows 2000",
+      "version": "5.0.0",
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.9.164",
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 6.0) AppleWebKit/5342 (KHTML, like Gecko) Chrome/15.0.839.0 Safari/5342"
+    },
+    "device": {
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "15.0.839.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Windows NT 6.0",
+      "marketingName": "Windows Vista",
+      "version": "6.0.0",
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "5342.0.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "79.0.3945.130",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Windows NT 5.1",
+      "marketingName": "Windows XP",
+      "version": "5.1.0",
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "79.0.3945.130",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 5.0) AppleWebKit/5340 (KHTML, like Gecko) Chrome/13.0.891.0 Safari/5340"
+    },
+    "device": {
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "13.0.891.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Windows NT 5.0",
+      "marketingName": "Windows 2000",
+      "version": "5.0.0",
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "5340.0.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3314.0 Safari/537.36 SE 2.X MetaSr 1.0"
+    },
+    "device": {
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop"
+    },
+    "browser": {
+      "name": "Sogou Explorer",
+      "modus": null,
+      "version": "2.0.0",
+      "manufacturer": "sogou",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Windows NT 6.1",
+      "marketingName": "Windows 7",
+      "version": "6.1.0",
+      "manufacturer": "microsoft",
+      "bits": 64
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "65.0.3314.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML like Gecko) Chrome/47.0.2526.80 Safari/537.36 Core/1.47.211.400 QQBrowser/9.3.7425.400"
+    },
+    "device": {
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop"
+    },
+    "browser": {
+      "name": "QQ Browser",
+      "modus": null,
+      "version": "9.3.7425.400",
+      "manufacturer": "tencent",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Windows NT 5.1",
+      "marketingName": "Windows XP",
+      "version": "5.1.0",
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "47.0.2526.80",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36 Edg/80.0.361.57"
+    },
+    "device": {
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop"
+    },
+    "browser": {
+      "name": "Edge",
+      "modus": null,
+      "version": "80.0.361.57",
+      "manufacturer": "microsoft",
+      "bits": 64,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Windows NT 6.2",
+      "marketingName": "Windows 8",
+      "version": "6.2.0",
+      "manufacturer": "microsoft",
+      "bits": 64
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "80.0.3987.116",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML like Gecko) Chrome/41.0.2272.118 UBrowser/5.0.1369.26 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "5.0.1369.26",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Windows NT 5.1",
+      "marketingName": "Windows XP",
+      "version": "5.1.0",
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "41.0.2272.118",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:75.0) Gecko/20100101 Firefox/75.0"
+    },
+    "device": {
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop"
+    },
+    "browser": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "75.0.0",
+      "manufacturer": "mozilla-foundation",
+      "bits": 64,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Windows NT 10.0",
+      "marketingName": "Windows 10",
+      "version": "10.0.0",
+      "manufacturer": "microsoft",
+      "bits": 64
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "75.0.0",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/82.0.4068.4 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "82.0.4068.4",
+      "manufacturer": "google",
+      "bits": 64,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Windows NT 6.3",
+      "marketingName": "Windows 8.1",
+      "version": "6.3.0",
+      "manufacturer": "microsoft",
+      "bits": 64
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "82.0.4068.4",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 6.2; Win64; x64; rv:74.0) Gecko/20100101 Firefox/74.0"
+    },
+    "device": {
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop"
+    },
+    "browser": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "74.0.0",
+      "manufacturer": "mozilla-foundation",
+      "bits": 64,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Windows NT 6.2",
+      "marketingName": "Windows 8",
+      "version": "6.2.0",
+      "manufacturer": "microsoft",
+      "bits": 64
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "74.0.0",
+      "manufacturer": "mozilla-foundation"
     }
   }
 ]
