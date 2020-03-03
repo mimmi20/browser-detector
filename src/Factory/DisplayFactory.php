@@ -54,7 +54,7 @@ final class DisplayFactory implements DisplayFactoryInterface
         $size   = $data['size'];
 
         try {
-            $type = $this->typeLoader->loadByDiemsions($height, $width);
+            $type = $this->typeLoader->loadByDimensions($height, $width);
         } catch (NotFoundException $e) {
             $logger->info($e);
 

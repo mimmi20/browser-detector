@@ -21,3 +21,5 @@ update_configs:
           dependency_name: "symfony/cache"
       - match:
           dependency_name: "symfony/finder"
+      - match:
+          dependency_name: "infection/infection"
