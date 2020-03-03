@@ -60,7 +60,7 @@ final class DisplayFactoryTest extends TestCase
             ->getMock();
         $typeLoader
             ->expects(self::never())
-            ->method('loadByDiemsions');
+            ->method('loadByDimensions');
 
         /** @var TypeLoader $typeLoader */
         $object = new DisplayFactory($typeLoader);
@@ -131,7 +131,7 @@ final class DisplayFactoryTest extends TestCase
             ->getMock();
         $typeLoader
             ->expects(self::once())
-            ->method('loadByDiemsions')
+            ->method('loadByDimensions')
             ->with($height, $width)
             ->willReturn($type);
 
@@ -226,7 +226,7 @@ final class DisplayFactoryTest extends TestCase
             ->getMock();
         $typeLoader
             ->expects(self::once())
-            ->method('loadByDiemsions')
+            ->method('loadByDimensions')
             ->with($height, $width)
             ->willThrowException($exception);
 
