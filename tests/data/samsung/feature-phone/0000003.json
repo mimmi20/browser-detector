@@ -1,6 +1,44 @@
 [
   {
     "headers": {
+      "user-agent": "SAMSUNG-GT-C3630C_CMCC/1.0 RTK-E/1.0 SHP/VPP-R5 Release/11.17.2009 Browser/NetFront3.4 Profile/MIDP-2.0 Configuration/CLDC-1.1 SMM-MMS/1.2.0"
+    },
+    "device": {
+      "deviceName": "GT-C3630C",
+      "marketingName": "GT-C3630C",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "size": 2.2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "NetFront",
+      "modus": null,
+      "version": "3.4.0",
+      "manufacturer": "access",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "MQQBrowser/Mini2.4 (SAMSUNG-GT-C3750)"
     },
     "device": {
@@ -22,7 +60,7 @@
       "version": "2.4.0",
       "manufacturer": "tencent",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -60,7 +98,7 @@
       "version": "4.1.0",
       "manufacturer": "access",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -98,7 +136,7 @@
       "version": "2.5.0",
       "manufacturer": "tencent",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -136,7 +174,7 @@
       "version": "3.1.0",
       "manufacturer": "unknown",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -174,7 +212,7 @@
       "version": "2.2.0",
       "manufacturer": "tencent",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -212,7 +250,7 @@
       "version": "8.9.0.251",
       "manufacturer": "ucweb",
       "bits": null,
-      "type": "transcoder"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -250,7 +288,7 @@
       "version": "4.2.0",
       "manufacturer": "access",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -326,7 +364,7 @@
       "version": "3.5.0",
       "manufacturer": "access",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -402,7 +440,7 @@
       "version": "3.5.0",
       "manufacturer": "access",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -440,7 +478,7 @@
       "version": "8.3.0.154",
       "manufacturer": "ucweb",
       "bits": null,
-      "type": "transcoder"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -478,7 +516,7 @@
       "version": "3.1.0",
       "manufacturer": "unknown",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -554,7 +592,7 @@
       "version": "3.5.0",
       "manufacturer": "access",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -630,7 +668,7 @@
       "version": null,
       "manufacturer": "opera",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -668,7 +706,7 @@
       "version": "8.3.0.154",
       "manufacturer": "ucweb",
       "bits": null,
-      "type": "transcoder"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -744,7 +782,7 @@
       "version": "8.6.0.199",
       "manufacturer": "ucweb",
       "bits": null,
-      "type": "transcoder"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -820,7 +858,7 @@
       "version": "3.5.0",
       "manufacturer": "access",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -858,7 +896,7 @@
       "version": "8.2.1.144",
       "manufacturer": "ucweb",
       "bits": null,
-      "type": "transcoder"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -896,7 +934,7 @@
       "version": "3.1.0",
       "manufacturer": "unknown",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -934,7 +972,7 @@
       "version": "3.5.0",
       "manufacturer": "access",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -972,7 +1010,7 @@
       "version": "8.4.0.159",
       "manufacturer": "ucweb",
       "bits": null,
-      "type": "transcoder"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -1010,7 +1048,7 @@
       "version": "2.0.0",
       "manufacturer": "mopotab",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -1048,7 +1086,7 @@
       "version": "6.2.3.3",
       "manufacturer": "myriad",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -1124,7 +1162,7 @@
       "version": "6.2.3.3",
       "manufacturer": "myriad",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -1162,7 +1200,7 @@
       "version": "4.2.0",
       "manufacturer": "access",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -1238,7 +1276,7 @@
       "version": "6.2.3.3",
       "manufacturer": "myriad",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -1276,7 +1314,7 @@
       "version": "6.0.0",
       "manufacturer": "ucweb",
       "bits": null,
-      "type": "transcoder"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -1390,7 +1428,7 @@
       "version": "2.2.0",
       "manufacturer": "tencent",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -1466,7 +1504,7 @@
       "version": "6.2.3.3",
       "manufacturer": "myriad",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -1504,7 +1542,7 @@
       "version": "2.2.0",
       "manufacturer": "tencent",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -1542,7 +1580,7 @@
       "version": "2.2.0",
       "manufacturer": "tencent",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -1580,7 +1618,7 @@
       "version": "6.2.3.3",
       "manufacturer": "myriad",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -1618,7 +1656,7 @@
       "version": "6.0.0",
       "manufacturer": "ucweb",
       "bits": null,
-      "type": "transcoder"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -1656,7 +1694,7 @@
       "version": "2.2.0",
       "manufacturer": "tencent",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -1694,7 +1732,7 @@
       "version": "7.2.2.51",
       "manufacturer": "ucweb",
       "bits": null,
-      "type": "transcoder"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -1770,7 +1808,7 @@
       "version": "3.0.0",
       "manufacturer": "unknown",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -1808,7 +1846,7 @@
       "version": null,
       "manufacturer": "opera",
       "bits": null,
-      "type": "transcoder"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -1846,7 +1884,7 @@
       "version": "8.6.0.199",
       "manufacturer": "ucweb",
       "bits": null,
-      "type": "transcoder"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -1884,7 +1922,7 @@
       "version": "2.8.0",
       "manufacturer": "tencent",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -1922,7 +1960,7 @@
       "version": "8.2.1.144",
       "manufacturer": "ucweb",
       "bits": null,
-      "type": "transcoder"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -1960,7 +1998,7 @@
       "version": "2.7.0",
       "manufacturer": "tencent",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -1998,7 +2036,7 @@
       "version": "8.5.0.185",
       "manufacturer": "ucweb",
       "bits": null,
-      "type": "transcoder"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -2036,7 +2074,7 @@
       "version": "4.1.0",
       "manufacturer": "access",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -2226,7 +2264,7 @@
       "version": "3.1.0",
       "manufacturer": "unknown",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -2264,7 +2302,7 @@
       "version": "2.2.0",
       "manufacturer": "tencent",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -2568,7 +2606,7 @@
       "version": "2.2.0",
       "manufacturer": "tencent",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -2606,7 +2644,7 @@
       "version": "3.1.0",
       "manufacturer": "unknown",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -2644,7 +2682,7 @@
       "version": "2.2.0",
       "manufacturer": "tencent",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -2682,7 +2720,7 @@
       "version": "2.2.0",
       "manufacturer": "tencent",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -2872,7 +2910,7 @@
       "version": "4.4.33546",
       "manufacturer": "opera",
       "bits": null,
-      "type": "transcoder"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -2986,7 +3024,7 @@
       "version": "8.5.0.185",
       "manufacturer": "ucweb",
       "bits": null,
-      "type": "transcoder"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -3024,7 +3062,7 @@
       "version": "3.1.0",
       "manufacturer": "unknown",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -3138,7 +3176,7 @@
       "version": "9.62.0",
       "manufacturer": "opera",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "Android",
@@ -3176,7 +3214,7 @@
       "version": "8.5.0.185",
       "manufacturer": "ucweb",
       "bits": null,
-      "type": "transcoder"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -3214,7 +3252,7 @@
       "version": "3.1.0",
       "manufacturer": "unknown",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -3252,7 +3290,7 @@
       "version": "1.0.0",
       "manufacturer": "pivotal-labs",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -3328,7 +3366,7 @@
       "version": "10.00.0",
       "manufacturer": "opera",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -3442,7 +3480,7 @@
       "version": "2.2.0",
       "manufacturer": "tencent",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -3518,7 +3556,7 @@
       "version": "3.4.0",
       "manufacturer": "access",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -3594,7 +3632,7 @@
       "version": "8.2.1.144",
       "manufacturer": "ucweb",
       "bits": null,
-      "type": "transcoder"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -3649,26 +3687,26 @@
   },
   {
     "headers": {
-      "user-agent": "SAMSUNG-GT-M7600"
+      "user-agent": "Mozilla/5.0 (Java; U; Id; samsung-gt-m3710) UCBrowser8.2.1.144/69/444/UCWEB Mobile UNTRUSTED/1.0"
     },
     "device": {
-      "deviceName": "GT-M7600",
-      "marketingName": "Beat DJ",
+      "deviceName": "GT-M3710",
+      "marketingName": "Corby Beat",
       "manufacturer": "samsung",
       "brand": "samsung",
       "display": {
-        "width": 400,
+        "width": 320,
         "height": 240,
         "touch": true,
-        "size": null
+        "size": 2.8
       },
       "type": "feature-phone"
     },
     "browser": {
-      "name": null,
+      "name": "UC Browser",
       "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
+      "version": "8.2.1.144",
+      "manufacturer": "ucweb",
       "bits": null,
       "type": "unknown"
     },
@@ -3687,26 +3725,26 @@
   },
   {
     "headers": {
-      "user-agent": "SAMSUNG-GT-M7600B"
+      "user-agent": "MQQBrowser/Mini2.2 (SAMSUNG-GT-M3710/M3710UMJB2)"
     },
     "device": {
-      "deviceName": "GT-M7600",
-      "marketingName": "Beat DJ",
+      "deviceName": "GT-M3710",
+      "marketingName": "Corby Beat",
       "manufacturer": "samsung",
       "brand": "samsung",
       "display": {
-        "width": 400,
+        "width": 320,
         "height": 240,
         "touch": true,
-        "size": null
+        "size": 2.8
       },
       "type": "feature-phone"
     },
     "browser": {
-      "name": null,
+      "name": "QQbrowser Mini",
       "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
+      "version": "2.2.0",
+      "manufacturer": "tencent",
       "bits": null,
       "type": "unknown"
     },
@@ -3725,64 +3763,26 @@
   },
   {
     "headers": {
-      "user-agent": "SAMSUNG-GT-M7600L"
+      "user-agent": "Mozilla/5.0 (Java; U; Pt-br; samsung-gt-m5650) AppleWebKit/530.13 (KHTML, like Gecko) UCBrowser/8.6.0.199/70/352/UCWEB Mobile UNTRUSTED/1.0"
     },
     "device": {
-      "deviceName": "GT-M7600L",
-      "marketingName": "Beat DJ",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 400,
-        "height": 240,
-        "touch": true,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG-GT-S3353"
-    },
-    "device": {
-      "deviceName": "GT-S3353",
-      "marketingName": "Chat",
+      "deviceName": "GT-M5650",
+      "marketingName": "Lindy",
       "manufacturer": "samsung",
       "brand": "samsung",
       "display": {
         "width": 320,
         "height": 240,
         "touch": false,
-        "size": 2.4
+        "size": 2.8
       },
       "type": "feature-phone"
     },
     "browser": {
-      "name": null,
+      "name": "UC Browser",
       "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
+      "version": "8.6.0.199",
+      "manufacturer": "ucweb",
       "bits": null,
       "type": "unknown"
     },
@@ -3794,9 +3794,9 @@
       "bits": null
     },
     "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
+      "name": "WebKit",
+      "version": "530.13.0",
+      "manufacturer": "apple"
     }
   }
 ]
