@@ -22,7 +22,7 @@
       "version": "6.2.0",
       "manufacturer": "infraware",
       "bits": null,
-      "type": "unknown"
+      "type": "application"
     },
     "os": {
       "name": "Brew",
@@ -60,7 +60,7 @@
       "version": "2.4.0",
       "manufacturer": "tencent",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "JavaOS",
@@ -98,7 +98,7 @@
       "version": "2.8.0",
       "manufacturer": "tencent",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "JavaOS",
@@ -136,7 +136,7 @@
       "version": "8.5.0.185",
       "manufacturer": "ucweb",
       "bits": null,
-      "type": "unknown"
+      "type": "transcoder"
     },
     "os": {
       "name": "JavaOS",
@@ -174,7 +174,7 @@
       "version": "3.1.0",
       "manufacturer": "unknown",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "JavaOS",
@@ -212,7 +212,7 @@
       "version": null,
       "manufacturer": "opera",
       "bits": null,
-      "type": "unknown"
+      "type": "transcoder"
     },
     "os": {
       "name": "JavaOS",
@@ -250,7 +250,7 @@
       "version": "4.2.0",
       "manufacturer": "access",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "JavaOS",
@@ -288,7 +288,7 @@
       "version": "4.2.0",
       "manufacturer": "access",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "JavaOS",
@@ -326,7 +326,7 @@
       "version": "8.0.35840",
       "manufacturer": "opera",
       "bits": null,
-      "type": "unknown"
+      "type": "transcoder"
     },
     "os": {
       "name": "JavaOS",
@@ -402,7 +402,7 @@
       "version": "4.0.0",
       "manufacturer": "google",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Symbian OS",
@@ -440,7 +440,7 @@
       "version": "9.0.0",
       "manufacturer": "microsoft",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Symbian OS",
@@ -478,7 +478,7 @@
       "version": "8.2.0.116",
       "manufacturer": "ucweb",
       "bits": null,
-      "type": "unknown"
+      "type": "transcoder"
     },
     "os": {
       "name": "Windows CE",
@@ -516,7 +516,7 @@
       "version": "7.8.0.95",
       "manufacturer": "ucweb",
       "bits": null,
-      "type": "unknown"
+      "type": "transcoder"
     },
     "os": {
       "name": "Windows CE",
@@ -554,7 +554,7 @@
       "version": "8.2.0.116",
       "manufacturer": "ucweb",
       "bits": null,
-      "type": "unknown"
+      "type": "transcoder"
     },
     "os": {
       "name": "Windows CE",
@@ -593,7 +593,7 @@
       "version": "8.0.35626",
       "manufacturer": "opera",
       "bits": null,
-      "type": "unknown"
+      "type": "transcoder"
     },
     "os": {
       "name": "Windows CE",
@@ -634,7 +634,7 @@
       "version": "9.5.0.449",
       "manufacturer": "ucweb",
       "bits": null,
-      "type": "unknown"
+      "type": "transcoder"
     },
     "os": {
       "name": "JavaOS",
@@ -675,7 +675,7 @@
       "version": "9.5.0.449",
       "manufacturer": "ucweb",
       "bits": null,
-      "type": "unknown"
+      "type": "transcoder"
     },
     "os": {
       "name": "JavaOS",
@@ -716,7 +716,7 @@
       "version": "9.0.0.261",
       "manufacturer": "ucweb",
       "bits": null,
-      "type": "unknown"
+      "type": "transcoder"
     },
     "os": {
       "name": "JavaOS",
@@ -754,7 +754,7 @@
       "version": "1.0.0",
       "manufacturer": "google",
       "bits": null,
-      "type": "unknown"
+      "type": "bot"
     },
     "os": {
       "name": "JavaOS",
@@ -792,7 +792,7 @@
       "version": "8.0.40326",
       "manufacturer": "opera",
       "bits": null,
-      "type": "unknown"
+      "type": "transcoder"
     },
     "os": {
       "name": "JavaOS",
@@ -830,7 +830,7 @@
       "version": "35.0.0",
       "manufacturer": "access",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "JavaOS",
@@ -868,7 +868,7 @@
       "version": "8.0.40326",
       "manufacturer": "opera",
       "bits": null,
-      "type": "unknown"
+      "type": "transcoder"
     },
     "os": {
       "name": "JavaOS",
@@ -944,7 +944,7 @@
       "version": "8.0.40326",
       "manufacturer": "opera",
       "bits": null,
-      "type": "unknown"
+      "type": "transcoder"
     },
     "os": {
       "name": "JavaOS",
@@ -957,6 +957,2856 @@
       "name": "Presto",
       "version": "2.12.423",
       "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SEC-SGHE900/10 SAMSUNG JAVA CLIENT"
+    },
+    "device": {
+      "deviceName": "SGH-E900",
+      "marketingName": "SGH-E900",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.05
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Java Standard Library",
+      "modus": null,
+      "version": null,
+      "manufacturer": "oracle",
+      "bits": null,
+      "type": "bot"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/4.0 (BREW 3.1.5; U; en-us; Samsung; PLS_M330; POLARIS/6.1/WAP) MMP/2.0 Configuration/CLDC-1.1"
+    },
+    "device": {
+      "deviceName": "PLS-M330",
+      "marketingName": "PLS-M330",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Polaris",
+      "modus": null,
+      "version": "6.1.0",
+      "manufacturer": "infraware",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-D415"
+    },
+    "device": {
+      "deviceName": "SGH-D415",
+      "marketingName": "SGH-D415",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-D418"
+    },
+    "device": {
+      "deviceName": "SGH-D418",
+      "marketingName": "SGH-D418",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": 2.1
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-D488/1.0*MDA0NDAwMDA2MjM1NzMx UP.Browser/6.2.2.6 (GUI) MMP/1.0"
+    },
+    "device": {
+      "deviceName": "SGH-D488",
+      "marketingName": "SGH-D488",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 160,
+        "height": 128,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "6.2.2.6",
+      "manufacturer": "myriad",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-D500"
+    },
+    "device": {
+      "deviceName": "SGH-D500",
+      "marketingName": "SGH-D500",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": 1.9
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-D500C"
+    },
+    "device": {
+      "deviceName": "SGH-D500C",
+      "marketingName": "SGH-D500C",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": 1.9
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-D500E"
+    },
+    "device": {
+      "deviceName": "SGH-D500E",
+      "marketingName": "SGH-D500E",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": 1.9
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-D508"
+    },
+    "device": {
+      "deviceName": "SGH-D508",
+      "marketingName": "SGH-D508",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": 1.9
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-D510"
+    },
+    "device": {
+      "deviceName": "SGH-D510",
+      "marketingName": "SGH-D510",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": 1.9
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-D520"
+    },
+    "device": {
+      "deviceName": "SGH-D520",
+      "marketingName": "SGH-D520",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": 1.9
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG SGH-D528 GSM/GPRS Handset UA Prof"
+    },
+    "device": {
+      "deviceName": "SGH-D528",
+      "marketingName": "SGH-D528",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Java; U; Pt-br; samsung-sgh-d608) UCBrowser8.3.0.154/70/352/UCWEB Mobile UNTRUSTED/1.0"
+    },
+    "device": {
+      "deviceName": "SGH-D608",
+      "marketingName": "SGH-D608",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "8.3.0.154",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "MQQBrowser/Mini2.2 (SAMSUNG-SGH-D608/1.0/WAP2.0)"
+    },
+    "device": {
+      "deviceName": "SGH-D608",
+      "marketingName": "SGH-D608",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "QQbrowser Mini",
+      "modus": null,
+      "version": "2.2.0",
+      "manufacturer": "tencent",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-D720"
+    },
+    "device": {
+      "deviceName": "SGH-D720",
+      "marketingName": "SGH-D720",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "symbian-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-D728/Series60 2.1/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.0"
+    },
+    "device": {
+      "deviceName": "SGH-D728",
+      "marketingName": "SGH-D728",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": 1.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "WAP Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "wap-browser"
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "symbian-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Samsung SGH-D730"
+    },
+    "device": {
+      "deviceName": "SGH-D730",
+      "marketingName": "SGH-D730",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": 1.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "symbian-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Java; U; en-us; samsung sgh-d780) UCBrowser8.4.0.159/69/444/UCWEB Mobile,SAMSUNG-SGH-D780/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.102 (GUI) MMP/2.0 Untrusted/1.0"
+    },
+    "device": {
+      "deviceName": "SGH-D780",
+      "marketingName": "SGH-D780",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.1
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "8.4.0.159",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "OneBrowser/3.1 (SAMSUNG SGH-D780)"
+    },
+    "device": {
+      "deviceName": "SGH-D780",
+      "marketingName": "SGH-D780",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.1
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "OneBrowser",
+      "modus": null,
+      "version": "3.1.0",
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-D788/1.0 RTK-E/1.0 DF/1.0 Release/08.17.2007 Browser/Openwave6.2.3.3.c.1.101 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+    },
+    "device": {
+      "deviceName": "SGH-D788",
+      "marketingName": "SGH-D788",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.1
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "6.2.3.3",
+      "manufacturer": "myriad",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-D800"
+    },
+    "device": {
+      "deviceName": "SGH-D800",
+      "marketingName": "SGH-D800",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-D807"
+    },
+    "device": {
+      "deviceName": "SGH-D807",
+      "marketingName": "SGH-D807",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-D808/NetFront 3.2/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1/*MzU3ODE2MDAwMDAwMTE1"
+    },
+    "device": {
+      "deviceName": "SGH-D808",
+      "marketingName": "SGH-D808",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "NetFront",
+      "modus": null,
+      "version": "3.2.0",
+      "manufacturer": "access",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-D820"
+    },
+    "device": {
+      "deviceName": "SGH-D820",
+      "marketingName": "SGH-D820",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.1
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-D830"
+    },
+    "device": {
+      "deviceName": "SGH-D830",
+      "marketingName": "SGH-D830",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-D836"
+    },
+    "device": {
+      "deviceName": "SGH-D836",
+      "marketingName": "SGH-D836",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.3
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-D840"
+    },
+    "device": {
+      "deviceName": "SGH-D840",
+      "marketingName": "SGH-D840",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.12
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Java; U; ru; samsung-sgh-d880) UCBrowser8.3.0.154/69/444/UCWEB Mobile"
+    },
+    "device": {
+      "deviceName": "SGH-D880",
+      "marketingName": "SGH-D880",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.3
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "8.3.0.154",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "MQQBrowser/Mini2.8 (SAMSUNG SGH-D880)"
+    },
+    "device": {
+      "deviceName": "SGH-D880",
+      "marketingName": "SGH-D880",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.3
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "QQbrowser Mini",
+      "modus": null,
+      "version": "2.8.0",
+      "manufacturer": "tencent",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-D888_CMCC/1.0 RTK-E/1.0 DF/1.0 Release/08.17.2007 Browser/Openwave6.2.3.3.c.1.101 Profile/MIDP-2.0 Configuration/CLDC-1.1/*MzU2NzAzMDExMDkxMzAy UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0"
+    },
+    "device": {
+      "deviceName": "SGH-D888",
+      "marketingName": "SGH-D888",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.3
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "6.2.3.3",
+      "manufacturer": "myriad",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-D908"
+    },
+    "device": {
+      "deviceName": "SGH-D908",
+      "marketingName": "SGH-D908",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.1
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-D908I"
+    },
+    "device": {
+      "deviceName": "SGH-D908I",
+      "marketingName": "SGH-D908I",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.1
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-D908i/1.0 RTK-E/1.0 DF/1.0 Release/11.27.2006 Browser/OpenWave6.2.3.3.c.1.101 Profile/MIDP-2.0 Configuration/CLDC-1.1/*MzU0ODkwMDE4MzE0NzIw UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0"
+    },
+    "device": {
+      "deviceName": "SGH-D908I",
+      "marketingName": "SGH-D908I",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.1
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "6.2.3.3",
+      "manufacturer": "myriad",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Java; U; en-us; samsung sgh-d980) AppleWebKit/530.13 (KHTML, like Gecko) UCBrowser/8.5.0.185/82/352/UCWEB Mobile"
+    },
+    "device": {
+      "deviceName": "SGH-D980",
+      "marketingName": "SGH-D980",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "size": 2.6
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "8.5.0.185",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "530.13.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-D980"
+    },
+    "device": {
+      "deviceName": "SGH-D980",
+      "marketingName": "SGH-D980",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "size": 2.6
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-D988"
+    },
+    "device": {
+      "deviceName": "SGH-D988",
+      "marketingName": "SGH-D988",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "size": 2.6
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-E100/T2 UP.Browser/6.1.0.6 (GUI) MMP/1.0"
+    },
+    "device": {
+      "deviceName": "SGH-E100",
+      "marketingName": "SGH-E100",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 160,
+        "height": 128,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "6.1.0.6",
+      "manufacturer": "myriad",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-E100A/T2 UP.Browser/6.1.0.6 (GUI) MMP/1.0"
+    },
+    "device": {
+      "deviceName": "SGH-E100A",
+      "marketingName": "SGH-E100A",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 160,
+        "height": 128,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "6.1.0.6",
+      "manufacturer": "myriad",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-E108"
+    },
+    "device": {
+      "deviceName": "SGH-E108",
+      "marketingName": "SGH-E108",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-E200"
+    },
+    "device": {
+      "deviceName": "SGH-E200",
+      "marketingName": "SGH-E200",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": 1.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-E200-ORANGE/E200EBVIB2/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0"
+    },
+    "device": {
+      "deviceName": "SGH-E200",
+      "marketingName": "SGH-E200",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": 1.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "6.2.3.3",
+      "manufacturer": "myriad",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-E208"
+    },
+    "device": {
+      "deviceName": "SGH-E208",
+      "marketingName": "SGH-E208",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-E210"
+    },
+    "device": {
+      "deviceName": "SGH-E210",
+      "marketingName": "SGH-E210",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 160,
+        "height": 128,
+        "touch": false,
+        "size": 1.9
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-E215L"
+    },
+    "device": {
+      "deviceName": "SGH-E215L",
+      "marketingName": "SGH-E215L",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 160,
+        "height": 128,
+        "touch": false,
+        "size": 2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-E236"
+    },
+    "device": {
+      "deviceName": "SGH-E236",
+      "marketingName": "SGH-E236",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 160,
+        "height": 128,
+        "touch": false,
+        "size": 1.9
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG SGH-E251, SAMSUNG-SGH-E251/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.102 (GUI) MMP/2.0 Untrusted/1.0"
+    },
+    "device": {
+      "deviceName": "SGH-E251",
+      "marketingName": "SGH-E251",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 160,
+        "height": 128,
+        "touch": false,
+        "size": 2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "6.2.3.3",
+      "manufacturer": "myriad",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-E251C/1.0 RTK-E/1.0 DF/1.0 Release/02.05.2008 Browser/OpenWave6.2.3.3.c.1.101 Profile/MIDP-2.0 Configuration/CLDC-1.1/*MzU0NzM3MDIyOTA5OTk3 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0"
+    },
+    "device": {
+      "deviceName": "SGH-E251C",
+      "marketingName": "SGH-E251C",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 160,
+        "height": 128,
+        "touch": false,
+        "size": 2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "6.2.3.3",
+      "manufacturer": "myriad",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-E251L/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0"
+    },
+    "device": {
+      "deviceName": "SGH-E251L",
+      "marketingName": "SGH-E251L",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 160,
+        "height": 128,
+        "touch": false,
+        "size": 2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "6.2.3.3",
+      "manufacturer": "myriad",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-E256"
+    },
+    "device": {
+      "deviceName": "SGH-E256",
+      "marketingName": "SGH-E256",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 160,
+        "height": 128,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-E258"
+    },
+    "device": {
+      "deviceName": "SGH-E258",
+      "marketingName": "SGH-E258",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 160,
+        "height": 128,
+        "touch": false,
+        "size": 2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-E300"
+    },
+    "device": {
+      "deviceName": "SGH-E300",
+      "marketingName": "SGH-E300",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 160,
+        "height": 128,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-E310"
+    },
+    "device": {
+      "deviceName": "SGH-E310",
+      "marketingName": "SGH-E310",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 160,
+        "height": 128,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-E316"
+    },
+    "device": {
+      "deviceName": "SGH-E316",
+      "marketingName": "SGH-E316",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 160,
+        "height": 128,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-E317"
+    },
+    "device": {
+      "deviceName": "SGH-E317",
+      "marketingName": "SGH-E317",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 160,
+        "height": 128,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-E330"
+    },
+    "device": {
+      "deviceName": "SGH-E330",
+      "marketingName": "SGH-E330",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 160,
+        "height": 128,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-E330C"
+    },
+    "device": {
+      "deviceName": "SGH-E330C",
+      "marketingName": "SGH-E330C",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 160,
+        "height": 128,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-E330N"
+    },
+    "device": {
+      "deviceName": "SGH-E330N",
+      "marketingName": "SGH-E330N",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 160,
+        "height": 128,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-E335/E335UVEE1 UP.Browser/6.2.2.6 (GUI) MMP/1.0"
+    },
+    "device": {
+      "deviceName": "SGH-E335",
+      "marketingName": "SGH-E335",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 160,
+        "height": 128,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "6.2.2.6",
+      "manufacturer": "myriad",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-E338"
+    },
+    "device": {
+      "deviceName": "SGH-E338",
+      "marketingName": "SGH-E338",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 160,
+        "height": 128,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-E340"
+    },
+    "device": {
+      "deviceName": "SGH-E340",
+      "marketingName": "SGH-E340",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 160,
+        "height": 128,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-E340E/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0"
+    },
+    "device": {
+      "deviceName": "SGH-E340E",
+      "marketingName": "SGH-E340E",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 160,
+        "height": 128,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "6.2.3.3",
+      "manufacturer": "myriad",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-E348/1.0/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1/*MzU2Njc2MDAwMDE4NDM5 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0"
+    },
+    "device": {
+      "deviceName": "SGH-E348",
+      "marketingName": "SGH-E348",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 160,
+        "height": 128,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "6.2.3.3",
+      "manufacturer": "myriad",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-E350"
+    },
+    "device": {
+      "deviceName": "SGH-E350",
+      "marketingName": "SGH-E350",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 160,
+        "height": 128,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-E350E"
+    },
+    "device": {
+      "deviceName": "SGH-E350E",
+      "marketingName": "SGH-E350E",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 160,
+        "height": 128,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-E350V"
+    },
+    "device": {
+      "deviceName": "SGH-E350V",
+      "marketingName": "SGH-E350V",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 160,
+        "height": 128,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-E351"
+    },
+    "device": {
+      "deviceName": "SGH-E351",
+      "marketingName": "SGH-E351",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 160,
+        "height": 128,
+        "touch": false,
+        "size": 1.6
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Samsung SGH-E351L"
+    },
+    "device": {
+      "deviceName": "SGH-E351L",
+      "marketingName": "SGH-E351L",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 160,
+        "height": 128,
+        "touch": false,
+        "size": 1.6
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-E356"
+    },
+    "device": {
+      "deviceName": "SGH-E356",
+      "marketingName": "SGH-E356",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 160,
+        "height": 128,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-E358"
+    },
+    "device": {
+      "deviceName": "SGH-E358",
+      "marketingName": "SGH-E358",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 160,
+        "height": 128,
+        "touch": false,
+        "size": 1.6
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-E360"
+    },
+    "device": {
+      "deviceName": "SGH-E360",
+      "marketingName": "SGH-E360",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 160,
+        "height": 128,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-E368/1.0/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1/*MDAwMDAwMDAwMDAwMDAw UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0"
+    },
+    "device": {
+      "deviceName": "SGH-E368",
+      "marketingName": "SGH-E368",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 160,
+        "height": 128,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "6.2.3.3",
+      "manufacturer": "myriad",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-E370"
+    },
+    "device": {
+      "deviceName": "SGH-E370",
+      "marketingName": "SGH-E370",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 160,
+        "height": 128,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-E370-VODA"
+    },
+    "device": {
+      "deviceName": "SGH-E370",
+      "marketingName": "SGH-E370",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 160,
+        "height": 128,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-E376"
+    },
+    "device": {
+      "deviceName": "SGH-E376",
+      "marketingName": "SGH-E376",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 160,
+        "height": 128,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-E378"
+    },
+    "device": {
+      "deviceName": "SGH-E378",
+      "marketingName": "SGH-E378",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 160,
+        "height": 128,
+        "touch": false,
+        "size": 1.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
     }
   }
 ]
