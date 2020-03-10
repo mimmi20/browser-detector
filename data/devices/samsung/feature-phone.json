@@ -41,6 +41,34 @@
     "type": "feature-phone",
     "platform": "windows ce"
   },
+  "samsung sph-i330": {
+    "deviceName": "SPH-I330",
+    "marketingName": "SPH-I330",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 240,
+      "height": 160,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "windows ce"
+  },
+  "samsung sph-i700": {
+    "deviceName": "SPH-I700",
+    "marketingName": "SPH-I700",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": true,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "windows ce"
+  },
   "samsung sgh-a885": {
     "deviceName": "SGH-A885",
     "marketingName": "Advance",
@@ -1580,6 +1608,160 @@
     },
     "type": "feature-phone",
     "platform": "brew"
+  },
+  "samsung sph-m240": {
+    "deviceName": "SPH-M240",
+    "marketingName": "SPH-M240",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": 1.8
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "samsung sph-m500": {
+    "deviceName": "SPH-M500",
+    "marketingName": "SPH-M500",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "samsung sph-m520": {
+    "deviceName": "SPH-M520",
+    "marketingName": "SPH-M520",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": false,
+      "size": 2.1
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "samsung sph-m540": {
+    "deviceName": "SPH-M540",
+    "marketingName": "SPH-M540",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": false,
+      "size": 2.1
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "samsung sph-m610": {
+    "deviceName": "SPH-M610",
+    "marketingName": "SPH-M610",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "samsung sph-m620": {
+    "deviceName": "SPH-M620",
+    "marketingName": "SPH-M620",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "samsung sph-m630": {
+    "deviceName": "SPH-M630",
+    "marketingName": "Highnote",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": false,
+      "size": 2
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "samsung sph-m7200": {
+    "deviceName": "SPH-M7200",
+    "marketingName": "SPH-M7200",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 400,
+      "height": 240,
+      "touch": false,
+      "size": 3
+    },
+    "type": "feature-phone",
+    "platform": "windows ce"
+  },
+  "samsung sph-m7350": {
+    "deviceName": "SPH-M7350",
+    "marketingName": "OZ Omnia",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 3.7
+    },
+    "type": "feature-phone",
+    "platform": "windows ce"
+  },
+  "samsung sph-m800": {
+    "deviceName": "SPH-M800",
+    "marketingName": "SPH-M800",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 432,
+      "height": 240,
+      "touch": true,
+      "size": 3.1
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "samsung sph-m810": {
+    "deviceName": "SPH-M810",
+    "marketingName": "SPH-M810",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 432,
+      "height": 240,
+      "touch": true,
+      "size": 3.2
+    },
+    "type": "feature-phone",
+    "platform": "java"
   },
   "samsung sch-r810": {
     "deviceName": "SCH-R810",
@@ -13853,6 +14035,132 @@
     "display": {
       "width": 160,
       "height": 128,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "brew"
+  },
+  "samsung sph-a790": {
+    "deviceName": "SPH-A790",
+    "marketingName": "SPH-A790",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "brew"
+  },
+  "samsung sph-a800": {
+    "deviceName": "SPH-A800",
+    "marketingName": "SPH-A800",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "brew"
+  },
+  "samsung sph-a820": {
+    "deviceName": "SPH-A820",
+    "marketingName": "VI-A820",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "brew"
+  },
+  "samsung sph-a840": {
+    "deviceName": "SPH-A840",
+    "marketingName": "SPH-A840",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "brew"
+  },
+  "samsung sph-a880": {
+    "deviceName": "SPH-A880",
+    "marketingName": "SPH-A880",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "brew"
+  },
+  "samsung sph-a900": {
+    "deviceName": "SPH-A900",
+    "marketingName": "SPH-A900",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "brew"
+  },
+  "samsung sph-a920": {
+    "deviceName": "SPH-A920",
+    "marketingName": "SPH-A920",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "brew"
+  },
+  "samsung sph-a940": {
+    "deviceName": "SPH-A940",
+    "marketingName": "SPH-A940",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "brew"
+  },
+  "samsung sph-a960": {
+    "deviceName": "SPH-A960",
+    "marketingName": "SPH-A960",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 220,
+      "height": 176,
       "touch": false,
       "size": null
     },
