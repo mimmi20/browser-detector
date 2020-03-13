@@ -125,6 +125,20 @@
     "type": "phablet",
     "platform": "android"
   },
+  "samsung sm-n770f": {
+    "deviceName": "SM-N770F",
+    "marketingName": "Galaxy Note 10 Lite Dual SIM (Global)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.7
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
   "samsung sm-n970w": {
     "deviceName": "SM-N970W",
     "marketingName": "Galaxy Note 10 (Canada)",
@@ -351,7 +365,63 @@
   },
   "samsung sm-n960f": {
     "deviceName": "SM-N960F",
-    "marketingName": "Galaxy Note 9",
+    "marketingName": "Galaxy Note 9 (Global)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 2960,
+      "height": 1440,
+      "touch": true,
+      "size": 6.4
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sm-g985f": {
+    "deviceName": "SM-G985F",
+    "marketingName": "Galaxy S20 Plus",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 3200,
+      "height": 1440,
+      "touch": true,
+      "size": 6.7
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sm-g985": {
+    "deviceName": "SM-G985",
+    "marketingName": "Galaxy S20 Plus",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 3200,
+      "height": 1440,
+      "touch": true,
+      "size": 6.7
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sm-g988b": {
+    "deviceName": "SM-G988B",
+    "marketingName": "Galaxy S20 Ultra Dual SIM (Global, 5G)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 3200,
+      "height": 1440,
+      "touch": true,
+      "size": 6.9
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sm-n9600": {
+    "deviceName": "SM-N9600",
+    "marketingName": "Galaxy Note 9 (LATAM, Brazil, China)",
     "manufacturer": "samsung",
     "brand": "samsung",
     "display": {
@@ -365,6 +435,62 @@
   },
   "samsung sm-n960u": {
     "deviceName": "SM-N960U",
+    "marketingName": "Galaxy Note 9 (USA)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 2960,
+      "height": 1440,
+      "touch": true,
+      "size": 6.4
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sm-n960u1": {
+    "deviceName": "SM-N960U1",
+    "marketingName": "Galaxy Note 9 (USA)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 2960,
+      "height": 1440,
+      "touch": true,
+      "size": 6.4
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sm-n960n": {
+    "deviceName": "SM-N960N",
+    "marketingName": "Galaxy Note 9",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 2960,
+      "height": 1440,
+      "touch": true,
+      "size": 6.4
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sm-n960x": {
+    "deviceName": "SM-N960X",
+    "marketingName": "Galaxy Note 9",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 2960,
+      "height": 1440,
+      "touch": true,
+      "size": 6.4
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung scv40": {
+    "deviceName": "SCV40",
     "marketingName": "Galaxy Note 9",
     "manufacturer": "samsung",
     "brand": "samsung",
@@ -541,6 +667,20 @@
       "height": 1440,
       "touch": true,
       "size": 6.4
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sm-g770f": {
+    "deviceName": "SM-G770F",
+    "marketingName": "Galaxy S10 Lite",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 2400,
+      "height": 1440,
+      "touch": true,
+      "size": 6.7
     },
     "type": "phablet",
     "platform": "android"
