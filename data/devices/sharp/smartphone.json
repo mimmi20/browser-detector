@@ -265,7 +265,7 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "sharp sh05c": {
+  "sharp sh-05c": {
     "deviceName": "SH-05C",
     "marketingName": "SH-05C",
     "manufacturer": "sharp",
@@ -345,6 +345,34 @@
       "height": 720,
       "touch": true,
       "size": null
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "sharp dm016sh": {
+    "deviceName": "DM016SH",
+    "marketingName": "DM016SH",
+    "manufacturer": "sharp",
+    "brand": "disney-mobile",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": 5.2
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "sharp sbm200sh": {
+    "deviceName": "SBM200SH",
+    "marketingName": "Pantone 6",
+    "manufacturer": "sharp",
+    "brand": "softbank",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 4.5
     },
     "type": "smartphone",
     "platform": "android"
