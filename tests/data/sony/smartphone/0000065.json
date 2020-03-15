@@ -1,6 +1,44 @@
 [
   {
     "headers": {
+      "user-agent": "SonyEricssonW600i/R7B Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+    },
+    "device": {
+      "deviceName": "general Sony device",
+      "marketingName": "general Sony device",
+      "manufacturer": "sony",
+      "brand": "sony",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "NetFront",
+      "modus": null,
+      "version": "3.3.0",
+      "manufacturer": "access",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": "NetFront",
+      "version": null,
+      "manufacturer": "access"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "SonyEricssonW550i/R4CB Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Link/6.3.1.12.0"
     },
     "device": {
@@ -22,7 +60,7 @@
       "version": "3.3.0",
       "manufacturer": "access",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "JavaOS",
@@ -60,7 +98,7 @@
       "version": "3.3.0",
       "manufacturer": "access",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "JavaOS",
@@ -98,7 +136,7 @@
       "version": "3.3.0",
       "manufacturer": "access",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "JavaOS",
@@ -136,7 +174,7 @@
       "version": "3.3.0",
       "manufacturer": "access",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "JavaOS",
@@ -174,7 +212,7 @@
       "version": "3.3.0",
       "manufacturer": "access",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "JavaOS",
@@ -212,7 +250,7 @@
       "version": "3.3.0",
       "manufacturer": "access",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "JavaOS",
@@ -250,7 +288,7 @@
       "version": "3.3.0",
       "manufacturer": "access",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "JavaOS",
@@ -288,7 +326,7 @@
       "version": "3.3.0",
       "manufacturer": "access",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "JavaOS",
@@ -326,7 +364,7 @@
       "version": "3.3.0",
       "manufacturer": "access",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "JavaOS",
@@ -364,7 +402,7 @@
       "version": "3.3.0",
       "manufacturer": "access",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "JavaOS",
@@ -402,7 +440,7 @@
       "version": "3.3.0",
       "manufacturer": "access",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "JavaOS",
@@ -440,7 +478,7 @@
       "version": "3.3.0",
       "manufacturer": "access",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "JavaOS",
@@ -478,7 +516,7 @@
       "version": "3.3.0",
       "manufacturer": "access",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "JavaOS",
@@ -516,7 +554,7 @@
       "version": "3.3.0",
       "manufacturer": "access",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "JavaOS",
@@ -554,7 +592,7 @@
       "version": "1.0.0",
       "manufacturer": "myriad",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "JavaOS",
@@ -592,7 +630,7 @@
       "version": "3.3.0",
       "manufacturer": "access",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "JavaOS",
@@ -630,7 +668,7 @@
       "version": "8.0.0",
       "manufacturer": "novarra",
       "bits": null,
-      "type": "unknown"
+      "type": "transcoder"
     },
     "os": {
       "name": "JavaOS",
@@ -668,7 +706,7 @@
       "version": "3.3.0",
       "manufacturer": "access",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "JavaOS",
@@ -706,7 +744,7 @@
       "version": "3.3.0",
       "manufacturer": "access",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "JavaOS",
@@ -744,7 +782,7 @@
       "version": "7.3.0",
       "manufacturer": "novarra",
       "bits": null,
-      "type": "unknown"
+      "type": "transcoder"
     },
     "os": {
       "name": "JavaOS",
@@ -782,7 +820,7 @@
       "version": "3.3.0",
       "manufacturer": "access",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "JavaOS",
@@ -820,7 +858,7 @@
       "version": "4.2.0",
       "manufacturer": "sony-ericsson",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "JavaOS",
@@ -858,7 +896,7 @@
       "version": "4.2.0",
       "manufacturer": "sony-ericsson",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "JavaOS",
@@ -896,7 +934,7 @@
       "version": "4.2.0",
       "manufacturer": "sony-ericsson",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "JavaOS",
@@ -934,7 +972,7 @@
       "version": "4.2.0",
       "manufacturer": "sony-ericsson",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "JavaOS",
@@ -972,7 +1010,7 @@
       "version": "4.2.0",
       "manufacturer": "sony-ericsson",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "JavaOS",
@@ -1010,7 +1048,7 @@
       "version": "4.2.0",
       "manufacturer": "sony-ericsson",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "JavaOS",
@@ -1048,7 +1086,7 @@
       "version": "4.2.0",
       "manufacturer": "sony-ericsson",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "JavaOS",
@@ -1086,7 +1124,7 @@
       "version": "4.2.0",
       "manufacturer": "sony-ericsson",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "JavaOS",
@@ -1124,7 +1162,7 @@
       "version": "4.2.0",
       "manufacturer": "sony-ericsson",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "JavaOS",
@@ -1162,7 +1200,7 @@
       "version": "4.2.0",
       "manufacturer": "sony-ericsson",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "JavaOS",
@@ -1200,7 +1238,7 @@
       "version": "4.2.0",
       "manufacturer": "sony-ericsson",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "JavaOS",
@@ -1238,7 +1276,7 @@
       "version": "4.2.0",
       "manufacturer": "sony-ericsson",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "JavaOS",
@@ -1276,7 +1314,7 @@
       "version": "8.0.0",
       "manufacturer": "novarra",
       "bits": null,
-      "type": "unknown"
+      "type": "transcoder"
     },
     "os": {
       "name": "JavaOS",
@@ -1314,7 +1352,7 @@
       "version": "7.3.0",
       "manufacturer": "novarra",
       "bits": null,
-      "type": "unknown"
+      "type": "transcoder"
     },
     "os": {
       "name": "JavaOS",
@@ -1428,7 +1466,7 @@
       "version": "1.0.0",
       "manufacturer": "google",
       "bits": null,
-      "type": "unknown"
+      "type": "bot"
     },
     "os": {
       "name": null,
@@ -2036,7 +2074,7 @@
       "version": "1.0.0",
       "manufacturer": "google",
       "bits": null,
-      "type": "unknown"
+      "type": "bot"
     },
     "os": {
       "name": null,
@@ -2416,7 +2454,7 @@
       "version": "1.0.0",
       "manufacturer": "google",
       "bits": null,
-      "type": "unknown"
+      "type": "bot"
     },
     "os": {
       "name": null,
@@ -3518,7 +3556,7 @@
       "version": "1.0.0",
       "manufacturer": "google",
       "bits": null,
-      "type": "unknown"
+      "type": "bot"
     },
     "os": {
       "name": null,
@@ -3594,7 +3632,7 @@
       "version": "1.0.0",
       "manufacturer": "google",
       "bits": null,
-      "type": "unknown"
+      "type": "bot"
     },
     "os": {
       "name": null,
@@ -3670,7 +3708,7 @@
       "version": "1.0.0",
       "manufacturer": "google",
       "bits": null,
-      "type": "unknown"
+      "type": "bot"
     },
     "os": {
       "name": null,
@@ -3708,7 +3746,7 @@
       "version": "4.0.3",
       "manufacturer": "sony-ericsson",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "JavaOS",
@@ -3746,45 +3784,7 @@
       "version": "4.0.1",
       "manufacturer": "sony-ericsson",
       "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SonyEricssonS700i/R3M SEMC-Browser/4.0.3 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Link/6.3.1.12.0"
-    },
-    "device": {
-      "deviceName": "general Sony device",
-      "marketingName": "general Sony device",
-      "manufacturer": "sony",
-      "brand": "sony",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "SEMC-Browser",
-      "modus": null,
-      "version": "4.0.3",
-      "manufacturer": "sony-ericsson",
-      "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "JavaOS",

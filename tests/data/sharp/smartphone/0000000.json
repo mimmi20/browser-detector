@@ -22,7 +22,7 @@
       "version": "4.0.0",
       "manufacturer": "google",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
@@ -60,7 +60,7 @@
       "version": "4.0.0",
       "manufacturer": "google",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
@@ -98,7 +98,7 @@
       "version": "59.0.3071.125",
       "manufacturer": "google",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
@@ -136,7 +136,7 @@
       "version": "4.0.0",
       "manufacturer": "google",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
@@ -174,7 +174,7 @@
       "version": "4.0.0",
       "manufacturer": "google",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
@@ -212,7 +212,7 @@
       "version": "27.0.1453.90",
       "manufacturer": "google",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
@@ -250,7 +250,7 @@
       "version": "18.0.1025.166",
       "manufacturer": "google",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
@@ -271,7 +271,7 @@
     },
     "device": {
       "deviceName": "SBM009SH",
-      "marketingName": "Aquos Phone THE PREMIUM",
+      "marketingName": "Aquos Phone The Premium",
       "manufacturer": "sharp",
       "brand": "softbank",
       "display": {
@@ -288,7 +288,7 @@
       "version": "1.4.0",
       "manufacturer": "google",
       "bits": null,
-      "type": "unknown"
+      "type": "application"
     },
     "os": {
       "name": "Android",
@@ -326,7 +326,7 @@
       "version": null,
       "manufacturer": "sharp",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Symbian OS",
@@ -364,7 +364,7 @@
       "version": "41.0.2272.92",
       "manufacturer": "google",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
@@ -402,7 +402,7 @@
       "version": "4.0.0",
       "manufacturer": "google",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
@@ -440,7 +440,7 @@
       "version": "4.0.0",
       "manufacturer": "google",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
@@ -478,7 +478,7 @@
       "version": "30.0.0.0",
       "manufacturer": "google",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
@@ -516,7 +516,7 @@
       "version": "48.0.2564.95",
       "manufacturer": "google",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
@@ -528,44 +528,6 @@
     "engine": {
       "name": "Blink",
       "version": "48.0.2564.95",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; SH-06F Build/S7120) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Safari/537.36"
-    },
-    "device": {
-      "deviceName": "general Sharp device",
-      "marketingName": "general Sharp device",
-      "manufacturer": "sharp",
-      "brand": "sharp",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Android WebView",
-      "modus": null,
-      "version": "30.0.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.4.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "30.0.0.0",
       "manufacturer": "google"
     }
   },
@@ -592,7 +554,7 @@
       "version": "4.0.0",
       "manufacturer": "google",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
@@ -630,7 +592,7 @@
       "version": "30.0.0.0",
       "manufacturer": "google",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
@@ -650,15 +612,15 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 4.2.2; ja-jp; DM016SH Build/S0014) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
     },
     "device": {
-      "deviceName": "general Sharp device",
-      "marketingName": "general Sharp device",
+      "deviceName": "DM016SH",
+      "marketingName": "DM016SH",
       "manufacturer": "sharp",
-      "brand": "sharp",
+      "brand": "disney-mobile",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1920,
+        "height": 1080,
         "touch": true,
-        "size": null
+        "size": 5.2
       },
       "type": "smartphone"
     },
@@ -668,7 +630,7 @@
       "version": "4.0.0",
       "manufacturer": "google",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
@@ -706,7 +668,7 @@
       "version": "51.0.2704.81",
       "manufacturer": "google",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
@@ -726,15 +688,15 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 4.1.2; ja-jp; SBM200SH Build/S1006) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 YJApp-ANDROID jp.co.yahoo.android.yjtop/2.4.10"
     },
     "device": {
-      "deviceName": "general Sharp device",
-      "marketingName": "general Sharp device",
+      "deviceName": "SBM200SH",
+      "marketingName": "Pantone 6",
       "manufacturer": "sharp",
-      "brand": "sharp",
+      "brand": "softbank",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1280,
+        "height": 720,
         "touch": true,
-        "size": null
+        "size": 4.5
       },
       "type": "smartphone"
     },
@@ -744,7 +706,7 @@
       "version": "2.4.10",
       "manufacturer": "yahoo",
       "bits": null,
-      "type": "unknown"
+      "type": "application"
     },
     "os": {
       "name": "Android",
@@ -757,196 +719,6 @@
       "name": "WebKit",
       "version": "534.30.0",
       "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "DoCoMo/2.0 SH01C(c500;TB;W16H10)"
-    },
-    "device": {
-      "deviceName": "general Sharp device",
-      "marketingName": "general Sharp device",
-      "manufacturer": "sharp",
-      "brand": "sharp",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "DoCoMo/2.0 SH02C(c500;TB;W30H20)"
-    },
-    "device": {
-      "deviceName": "general Sharp device",
-      "marketingName": "general Sharp device",
-      "manufacturer": "sharp",
-      "brand": "sharp",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "DoCoMo/2.0 SH03D(c500;TB;W24H16)"
-    },
-    "device": {
-      "deviceName": "general Sharp device",
-      "marketingName": "general Sharp device",
-      "manufacturer": "sharp",
-      "brand": "sharp",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "DoCoMo/2.0 SH03E(c500;TB;W24H16)"
-    },
-    "device": {
-      "deviceName": "general Sharp device",
-      "marketingName": "general Sharp device",
-      "manufacturer": "sharp",
-      "brand": "sharp",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "DoCoMo/2.0 SH04C(c500;TB;W24H16)"
-    },
-    "device": {
-      "deviceName": "general Sharp device",
-      "marketingName": "general Sharp device",
-      "manufacturer": "sharp",
-      "brand": "sharp",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
     }
   },
   {
@@ -989,474 +761,18 @@
   },
   {
     "headers": {
-      "user-agent": "DoCoMo/2.0 SH05D(c500;TB;W24H16)"
-    },
-    "device": {
-      "deviceName": "general Sharp device",
-      "marketingName": "general Sharp device",
-      "manufacturer": "sharp",
-      "brand": "sharp",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "DoCoMo/2.0 SH09C(c500;TB;W30H20)"
-    },
-    "device": {
-      "deviceName": "general Sharp device",
-      "marketingName": "general Sharp device",
-      "manufacturer": "sharp",
-      "brand": "sharp",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "DoCoMo/2.0 SH10C(c500;TB;W24H16)"
-    },
-    "device": {
-      "deviceName": "general Sharp device",
-      "marketingName": "general Sharp device",
-      "manufacturer": "sharp",
-      "brand": "sharp",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "DoCoMo/2.0 SH11C(c500;TB;W24H16)"
-    },
-    "device": {
-      "deviceName": "general Sharp device",
-      "marketingName": "general Sharp device",
-      "manufacturer": "sharp",
-      "brand": "sharp",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "DoCoMo/2.0 SH700iS(c100;TB;W24H12)"
-    },
-    "device": {
-      "deviceName": "general Sharp device",
-      "marketingName": "general Sharp device",
-      "manufacturer": "sharp",
-      "brand": "sharp",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "DoCoMo/2.0 SH702iD"
-    },
-    "device": {
-      "deviceName": "general Sharp device",
-      "marketingName": "general Sharp device",
-      "manufacturer": "sharp",
-      "brand": "sharp",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "DoCoMo/2.0 SH703i(c100;TB;W24H12)"
-    },
-    "device": {
-      "deviceName": "general Sharp device",
-      "marketingName": "general Sharp device",
-      "manufacturer": "sharp",
-      "brand": "sharp",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "DoCoMo/2.0 SH706ie"
-    },
-    "device": {
-      "deviceName": "general Sharp device",
-      "marketingName": "general Sharp device",
-      "manufacturer": "sharp",
-      "brand": "sharp",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "DoCoMo/2.0 SH901iS(c100;TB;W24H12)"
-    },
-    "device": {
-      "deviceName": "general Sharp device",
-      "marketingName": "general Sharp device",
-      "manufacturer": "sharp",
-      "brand": "sharp",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "DoCoMo/2.0 SH906i(c100;TB;W24H16)"
-    },
-    "device": {
-      "deviceName": "general Sharp device",
-      "marketingName": "general Sharp device",
-      "manufacturer": "sharp",
-      "brand": "sharp",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "DoCoMo/2.0 SH906iTV(c100;TB;W20H13)"
-    },
-    "device": {
-      "deviceName": "general Sharp device",
-      "marketingName": "general Sharp device",
-      "manufacturer": "sharp",
-      "brand": "sharp",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (SH01C;FOMA;like Gecko)"
-    },
-    "device": {
-      "deviceName": "general Sharp device",
-      "marketingName": "general Sharp device",
-      "manufacturer": "sharp",
-      "brand": "sharp",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "sharp",
-      "modus": null,
-      "version": null,
-      "manufacturer": "sharp",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 2.3.5; SH-01D Build/S5100) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.58 Mobile Safari/537.31 OPR/14.0.1074.57768"
     },
     "device": {
-      "deviceName": "general Sharp device",
-      "marketingName": "general Sharp device",
+      "deviceName": "SH-01D",
+      "marketingName": "SH-01D",
       "manufacturer": "sharp",
-      "brand": "sharp",
+      "brand": "ntt-docomo",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1280,
+        "height": 720,
         "touch": true,
-        "size": null
+        "size": 4.5
       },
       "type": "smartphone"
     },
@@ -1466,7 +782,7 @@
       "version": "14.0.1074.57768",
       "manufacturer": "opera",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
@@ -1486,15 +802,15 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 4.0.4; SH-01E Build/S3110) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166 Mobile Safari/535.19"
     },
     "device": {
-      "deviceName": "general Sharp device",
-      "marketingName": "general Sharp device",
+      "deviceName": "SH-01E",
+      "marketingName": "SH-01E",
       "manufacturer": "sharp",
-      "brand": "sharp",
+      "brand": "ntt-docomo",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 960,
+        "height": 540,
         "touch": true,
-        "size": null
+        "size": 4.1
       },
       "type": "smartphone"
     },
@@ -1504,7 +820,7 @@
       "version": "18.0.1025.166",
       "manufacturer": "google",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
@@ -1524,15 +840,15 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 4.0.4; SH-01EVW Build/S3120) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166 Mobile Safari/535.19"
     },
     "device": {
-      "deviceName": "general Sharp device",
-      "marketingName": "general Sharp device",
+      "deviceName": "SH-01EVW",
+      "marketingName": "SH-01EVW",
       "manufacturer": "sharp",
-      "brand": "sharp",
+      "brand": "ntt-docomo",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 960,
+        "height": 540,
         "touch": true,
-        "size": null
+        "size": 4.1
       },
       "type": "smartphone"
     },
@@ -1542,7 +858,7 @@
       "version": "18.0.1025.166",
       "manufacturer": "google",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
@@ -1580,7 +896,7 @@
       "version": "34.0.1847.114",
       "manufacturer": "google",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
@@ -1600,15 +916,15 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 2.3.5; En-us; SH-02D Build/S6130) AppleWebKit/533.1 (KHTML, Like Gecko) Version/4.0 Mobile Safari/533.1"
     },
     "device": {
-      "deviceName": "general Sharp device",
-      "marketingName": "general Sharp device",
+      "deviceName": "SH-02D",
+      "marketingName": "SH-02D",
       "manufacturer": "sharp",
-      "brand": "sharp",
+      "brand": "ntt-docomo",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 960,
+        "height": 540,
         "touch": true,
-        "size": null
+        "size": 3.7
       },
       "type": "smartphone"
     },
@@ -1618,7 +934,7 @@
       "version": "4.0.0",
       "manufacturer": "google",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
@@ -1656,7 +972,7 @@
       "version": "18.0.1025.166",
       "manufacturer": "google",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
@@ -1676,15 +992,15 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 2.1-update1; En-us; SH-03C Build/S2140) AppleWebKit/530.17 (KHTML Like Gecko) Version/4.0 Mobile Safari/530.17"
     },
     "device": {
-      "deviceName": "general Sharp device",
-      "marketingName": "general Sharp device",
+      "deviceName": "SH-03C",
+      "marketingName": "Lynx 3D",
       "manufacturer": "sharp",
-      "brand": "sharp",
+      "brand": "ntt-docomo",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 800,
+        "height": 480,
         "touch": true,
-        "size": null
+        "size": 3.8
       },
       "type": "smartphone"
     },
@@ -1694,7 +1010,7 @@
       "version": "4.0.0",
       "manufacturer": "google",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
@@ -1714,15 +1030,15 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 2.3.4; En-us; SH-04D Build/S8100) AppleWebKit/533.1 (KHTML, Like Gecko) Version/4.0 Mobile Safari/533.1"
     },
     "device": {
-      "deviceName": "general Sharp device",
-      "marketingName": "general Sharp device",
+      "deviceName": "SH-04D",
+      "marketingName": "Q-Pot",
       "manufacturer": "sharp",
-      "brand": "sharp",
+      "brand": "ntt-docomo",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 960,
+        "height": 540,
         "touch": true,
-        "size": null
+        "size": 3.7
       },
       "type": "smartphone"
     },
@@ -1732,7 +1048,7 @@
       "version": "4.0.0",
       "manufacturer": "google",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
@@ -1770,7 +1086,7 @@
       "version": "14.0.1074.54070",
       "manufacturer": "opera",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
@@ -1808,7 +1124,7 @@
       "version": "28.0.1500.94",
       "manufacturer": "google",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
@@ -1828,15 +1144,15 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; SH-06E Build/S6170) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.114 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "general Sharp device",
-      "marketingName": "general Sharp device",
+      "deviceName": "SH-06E",
+      "marketingName": "Aquos Phone Zeta",
       "manufacturer": "sharp",
-      "brand": "sharp",
+      "brand": "ntt-docomo",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1920,
+        "height": 1080,
         "touch": true,
-        "size": null
+        "size": 4.8
       },
       "type": "smartphone"
     },
@@ -1846,7 +1162,7 @@
       "version": "34.0.1847.114",
       "manufacturer": "google",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
@@ -1884,7 +1200,7 @@
       "version": "18.0.1025.166",
       "manufacturer": "google",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
@@ -1904,15 +1220,15 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; SH-07E Build/R7100) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/30.0.1599.92 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "general Sharp device",
-      "marketingName": "general Sharp device",
+      "deviceName": "SH-07E",
+      "marketingName": "Aquos Phone si",
       "manufacturer": "sharp",
-      "brand": "sharp",
+      "brand": "ntt-docomo",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1280,
+        "height": 720,
         "touch": true,
-        "size": null
+        "size": 4.3
       },
       "type": "smartphone"
     },
@@ -1922,7 +1238,7 @@
       "version": "30.0.1599.92",
       "manufacturer": "google",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
@@ -1942,15 +1258,15 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 4.0.4; SH-09D Build/S4060) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166 Mobile Safari/535.19"
     },
     "device": {
-      "deviceName": "general Sharp device",
-      "marketingName": "general Sharp device",
+      "deviceName": "SH-09D",
+      "marketingName": "Aquos",
       "manufacturer": "sharp",
-      "brand": "sharp",
+      "brand": "ntt-docomo",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1280,
+        "height": 720,
         "touch": true,
-        "size": null
+        "size": 4.7
       },
       "type": "smartphone"
     },
@@ -1960,7 +1276,7 @@
       "version": "18.0.1025.166",
       "manufacturer": "google",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
@@ -1998,7 +1314,7 @@
       "version": "25.0.1364.169",
       "manufacturer": "google",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
@@ -2018,15 +1334,15 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 2.3.3; SH-12C Build/S7140) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166 Mobile Safari/535.19"
     },
     "device": {
-      "deviceName": "general Sharp device",
-      "marketingName": "general Sharp device",
+      "deviceName": "SH-12C",
+      "marketingName": "Aquos",
       "manufacturer": "sharp",
-      "brand": "sharp",
+      "brand": "ntt-docomo",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 960,
+        "height": 540,
         "touch": true,
-        "size": null
+        "size": 4.2
       },
       "type": "smartphone"
     },
@@ -2036,7 +1352,7 @@
       "version": "18.0.1025.166",
       "manufacturer": "google",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
@@ -2056,15 +1372,15 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 2.3.4; En-us; SH-13C Build/S4090) AppleWebKit/533.1 (KHTML, Like Gecko) Version/4.0 Mobile Safari/533.1"
     },
     "device": {
-      "deviceName": "general Sharp device",
-      "marketingName": "general Sharp device",
+      "deviceName": "SH-13C",
+      "marketingName": "Aquos",
       "manufacturer": "sharp",
-      "brand": "sharp",
+      "brand": "ntt-docomo",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 960,
+        "height": 540,
         "touch": true,
-        "size": null
+        "size": 3.7
       },
       "type": "smartphone"
     },
@@ -2074,7 +1390,7 @@
       "version": "4.0.0",
       "manufacturer": "google",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
@@ -2112,7 +1428,7 @@
       "version": "14.0.1074.57453",
       "manufacturer": "opera",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
@@ -2132,15 +1448,15 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 2.2.1; br-br; SBM003SH Build/S1900) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
     },
     "device": {
-      "deviceName": "general Sharp device",
-      "marketingName": "general Sharp device",
+      "deviceName": "SBM003SH",
+      "marketingName": "Galapagos",
       "manufacturer": "sharp",
-      "brand": "sharp",
+      "brand": "softbank",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 800,
+        "height": 480,
         "touch": true,
-        "size": null
+        "size": 3.8
       },
       "type": "smartphone"
     },
@@ -2150,7 +1466,7 @@
       "version": "4.0.0",
       "manufacturer": "google",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
@@ -2170,15 +1486,15 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 2.2.1; En-us; SBM005SH Build/S0900) AppleWebKit/533.1 (KHTML, Like Gecko) Version/4.0 Mobile Safari/533.1"
     },
     "device": {
-      "deviceName": "general Sharp device",
-      "marketingName": "general Sharp device",
+      "deviceName": "SBM005SH",
+      "marketingName": "Galapagos",
       "manufacturer": "sharp",
-      "brand": "sharp",
+      "brand": "softbank",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 800,
+        "height": 480,
         "touch": true,
-        "size": null
+        "size": 3.8
       },
       "type": "smartphone"
     },
@@ -2188,7 +1504,7 @@
       "version": "4.0.0",
       "manufacturer": "google",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
@@ -2208,15 +1524,15 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 2.3.3; Ja-jp; SBM006SH Build/S0018) AppleWebKit/533.1 (KHTML, Like Gecko) Version/4.0 Mobile Safari/533.1"
     },
     "device": {
-      "deviceName": "general Sharp device",
-      "marketingName": "general Sharp device",
+      "deviceName": "SBM006SH",
+      "marketingName": "SBM006SH",
       "manufacturer": "sharp",
-      "brand": "sharp",
+      "brand": "softbank",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 960,
+        "height": 540,
         "touch": true,
-        "size": null
+        "size": 4.2
       },
       "type": "smartphone"
     },
@@ -2226,7 +1542,7 @@
       "version": "4.0.0",
       "manufacturer": "google",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
@@ -2246,15 +1562,15 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 2.3.3; En-; SBM007SH Build/S0020) AppleWebKit/533.1 (KHTML, Like Gecko) Version/4.0 Mobile Safari/533.1"
     },
     "device": {
-      "deviceName": "general Sharp device",
-      "marketingName": "general Sharp device",
+      "deviceName": "SBM007SH",
+      "marketingName": "Aquos",
       "manufacturer": "sharp",
-      "brand": "sharp",
+      "brand": "softbank",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 854,
+        "height": 480,
         "touch": true,
-        "size": null
+        "size": 3.4
       },
       "type": "smartphone"
     },
@@ -2264,7 +1580,7 @@
       "version": "4.0.0",
       "manufacturer": "google",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
@@ -2284,15 +1600,15 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 2.3.3; ja-jp; SBM007SHJ Build/S0006) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
     },
     "device": {
-      "deviceName": "general Sharp device",
-      "marketingName": "general Sharp device",
+      "deviceName": "SBM007SHJ",
+      "marketingName": "Aquos",
       "manufacturer": "sharp",
-      "brand": "sharp",
+      "brand": "softbank",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 854,
+        "height": 480,
         "touch": true,
-        "size": null
+        "size": 3.4
       },
       "type": "smartphone"
     },
@@ -2302,7 +1618,7 @@
       "version": "4.0.0",
       "manufacturer": "google",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
@@ -2323,7 +1639,7 @@
     },
     "device": {
       "deviceName": "SBM009SH",
-      "marketingName": "Aquos Phone THE PREMIUM",
+      "marketingName": "Aquos Phone The Premium",
       "manufacturer": "sharp",
       "brand": "softbank",
       "display": {
@@ -2340,7 +1656,7 @@
       "version": "4.0.0",
       "manufacturer": "google",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
@@ -2360,10 +1676,10 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 2.3.5; Ja-jp; SBM101SH Build/S0018) AppleWebKit/533.1 (KHTML, Like Gecko) Version/4.0 Mobile Safari/533.1"
     },
     "device": {
-      "deviceName": "general Sharp device",
-      "marketingName": "general Sharp device",
+      "deviceName": "SBM101SH",
+      "marketingName": "SBM101SH",
       "manufacturer": "sharp",
-      "brand": "sharp",
+      "brand": "softbank",
       "display": {
         "width": null,
         "height": null,
@@ -2378,7 +1694,7 @@
       "version": "4.0.0",
       "manufacturer": "google",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
@@ -2398,15 +1714,15 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 2.3.5; SBM102SH Build/S0022) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.58 Mobile Safari/537.31 OPR/14.0.1074.57768"
     },
     "device": {
-      "deviceName": "general Sharp device",
-      "marketingName": "general Sharp device",
+      "deviceName": "SBM102SH",
+      "marketingName": "Aquos Phone 102SH",
       "manufacturer": "sharp",
-      "brand": "sharp",
+      "brand": "softbank",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1280,
+        "height": 720,
         "touch": true,
-        "size": null
+        "size": 4.5
       },
       "type": "smartphone"
     },
@@ -2416,7 +1732,7 @@
       "version": "14.0.1074.57768",
       "manufacturer": "opera",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
@@ -2436,15 +1752,15 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 4.0.4; SBM102SH2 Build/S1010) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166 Mobile Safari/535.19"
     },
     "device": {
-      "deviceName": "general Sharp device",
-      "marketingName": "general Sharp device",
+      "deviceName": "SBM102SH2",
+      "marketingName": "Aquos Phone 102SH2",
       "manufacturer": "sharp",
-      "brand": "sharp",
+      "brand": "softbank",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1280,
+        "height": 720,
         "touch": true,
-        "size": null
+        "size": 4.5
       },
       "type": "smartphone"
     },
@@ -2454,7 +1770,7 @@
       "version": "18.0.1025.166",
       "manufacturer": "google",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
@@ -2474,15 +1790,15 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 2.3.5; En-US; SBM103SH Build/GRJ90) AppleWebKit/534.30 (KHTML, Like Gecko) Version/4.0 Mobile Safari/534.30"
     },
     "device": {
-      "deviceName": "general Sharp device",
-      "marketingName": "general Sharp device",
+      "deviceName": "SBM103SH",
+      "marketingName": "Aquos Phone 103SH",
       "manufacturer": "sharp",
-      "brand": "sharp",
+      "brand": "softbank",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 960,
+        "height": 540,
         "touch": true,
-        "size": null
+        "size": 4
       },
       "type": "smartphone"
     },
@@ -2492,7 +1808,7 @@
       "version": "4.0.0",
       "manufacturer": "google",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
@@ -2512,15 +1828,15 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 4.0.1; SBM104SH Build/AC280) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166 Mobile Safari/535.19"
     },
     "device": {
-      "deviceName": "general Sharp device",
-      "marketingName": "general Sharp device",
+      "deviceName": "SBM104SH",
+      "marketingName": "Aquos Phone 104SH",
       "manufacturer": "sharp",
-      "brand": "sharp",
+      "brand": "softbank",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1280,
+        "height": 720,
         "touch": true,
-        "size": null
+        "size": 4.5
       },
       "type": "smartphone"
     },
@@ -2530,7 +1846,7 @@
       "version": "18.0.1025.166",
       "manufacturer": "google",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
@@ -2550,15 +1866,15 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 4.0.4; SBM106SH Build/S0010) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166 Mobile Safari/535.19"
     },
     "device": {
-      "deviceName": "general Sharp device",
-      "marketingName": "general Sharp device",
+      "deviceName": "SBM106SH",
+      "marketingName": "Aquos Phone 106SH",
       "manufacturer": "sharp",
-      "brand": "sharp",
+      "brand": "softbank",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1280,
+        "height": 720,
         "touch": true,
-        "size": null
+        "size": 4.7
       },
       "type": "smartphone"
     },
@@ -2568,7 +1884,7 @@
       "version": "18.0.1025.166",
       "manufacturer": "google",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
@@ -2588,15 +1904,15 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 4.0.4; SBM107SH Build/S0006) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166 Mobile Safari/535.19"
     },
     "device": {
-      "deviceName": "general Sharp device",
-      "marketingName": "general Sharp device",
+      "deviceName": "SBM107SH",
+      "marketingName": "Aquos Phone 107SH",
       "manufacturer": "sharp",
-      "brand": "sharp",
+      "brand": "softbank",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 854,
+        "height": 480,
         "touch": true,
-        "size": null
+        "size": 3.7
       },
       "type": "smartphone"
     },
@@ -2606,7 +1922,7 @@
       "version": "18.0.1025.166",
       "manufacturer": "google",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
@@ -2626,15 +1942,15 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 4.0.4; SBM107SHB Build/S0006) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166 Mobile Safari/535.19"
     },
     "device": {
-      "deviceName": "general Sharp device",
-      "marketingName": "general Sharp device",
+      "deviceName": "SBM107SHB",
+      "marketingName": "Aquos Phone 107SHB",
       "manufacturer": "sharp",
-      "brand": "sharp",
+      "brand": "softbank",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 854,
+        "height": 480,
         "touch": true,
-        "size": null
+        "size": 3.7
       },
       "type": "smartphone"
     },
@@ -2644,7 +1960,7 @@
       "version": "18.0.1025.166",
       "manufacturer": "google",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
@@ -2664,15 +1980,15 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 4.0.4; SBM200SH Build/EC030) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166 Mobile Safari/535.19"
     },
     "device": {
-      "deviceName": "general Sharp device",
-      "marketingName": "general Sharp device",
+      "deviceName": "SBM200SH",
+      "marketingName": "Pantone 6",
       "manufacturer": "sharp",
-      "brand": "sharp",
+      "brand": "softbank",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1280,
+        "height": 720,
         "touch": true,
-        "size": null
+        "size": 4.5
       },
       "type": "smartphone"
     },
@@ -2682,7 +1998,7 @@
       "version": "18.0.1025.166",
       "manufacturer": "google",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
@@ -2702,15 +2018,15 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 4.1.2; SBM203SH Build/E2120) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166 Mobile Safari/535.19"
     },
     "device": {
-      "deviceName": "general Sharp device",
-      "marketingName": "general Sharp device",
+      "deviceName": "SBM203SH",
+      "marketingName": "Aquos Phone 203SH",
       "manufacturer": "sharp",
-      "brand": "sharp",
+      "brand": "softbank",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1280,
+        "height": 720,
         "touch": true,
-        "size": null
+        "size": 4.9
       },
       "type": "smartphone"
     },
@@ -2720,7 +2036,7 @@
       "version": "18.0.1025.166",
       "manufacturer": "google",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
@@ -2740,10 +2056,10 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 4.0.4; de-de; SBM204SH Build/S0004) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
     },
     "device": {
-      "deviceName": "general Sharp device",
-      "marketingName": "general Sharp device",
+      "deviceName": "SBM204SH",
+      "marketingName": "Aquos Phone 204SH",
       "manufacturer": "sharp",
-      "brand": "sharp",
+      "brand": "softbank",
       "display": {
         "width": null,
         "height": null,
@@ -2758,7 +2074,7 @@
       "version": "4.0.0",
       "manufacturer": "google",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
@@ -2778,15 +2094,15 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 4.1.2; ja-jp; SBM205SH Build/S0008) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
     },
     "device": {
-      "deviceName": "general Sharp device",
-      "marketingName": "general Sharp device",
+      "deviceName": "SBM205SH",
+      "marketingName": "Aquos Phone 205SH",
       "manufacturer": "sharp",
-      "brand": "sharp",
+      "brand": "softbank",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 854,
+        "height": 480,
         "touch": true,
-        "size": null
+        "size": 4
       },
       "type": "smartphone"
     },
@@ -2796,7 +2112,7 @@
       "version": "4.0.0",
       "manufacturer": "google",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
@@ -2816,15 +2132,15 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; SBM206SH Build/S0008) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.114 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "general Sharp device",
-      "marketingName": "general Sharp device",
+      "deviceName": "SBM206SH",
+      "marketingName": "Aquos Phone Xx 206SH",
       "manufacturer": "sharp",
-      "brand": "sharp",
+      "brand": "softbank",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1920,
+        "height": 1080,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "type": "smartphone"
     },
@@ -2834,7 +2150,7 @@
       "version": "34.0.1847.114",
       "manufacturer": "google",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
@@ -2854,15 +2170,15 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; SBM302SH Build/S0014) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.114 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "general Sharp device",
-      "marketingName": "general Sharp device",
+      "deviceName": "SBM302SH",
+      "marketingName": "Aquos Phone 302SH",
       "manufacturer": "sharp",
-      "brand": "sharp",
+      "brand": "softbank",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1920,
+        "height": 1080,
         "touch": true,
-        "size": null
+        "size": 5.2
       },
       "type": "smartphone"
     },
@@ -2872,7 +2188,7 @@
       "version": "34.0.1847.114",
       "manufacturer": "google",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
@@ -2892,15 +2208,15 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; SBM303SH Build/S0018) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.136 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "general Sharp device",
-      "marketingName": "general Sharp device",
+      "deviceName": "SBM303SH",
+      "marketingName": "Aquos Phone Xx Mini",
       "manufacturer": "sharp",
-      "brand": "sharp",
+      "brand": "softbank",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1920,
+        "height": 1080,
         "touch": true,
-        "size": null
+        "size": 4.5
       },
       "type": "smartphone"
     },
@@ -2910,7 +2226,7 @@
       "version": "33.0.1750.136",
       "manufacturer": "google",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
@@ -2930,15 +2246,15 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 2.3.5; ja-JP; SH01D Build/S6270) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.58 Mobile Safari/537.31"
     },
     "device": {
-      "deviceName": "general Sharp device",
-      "marketingName": "general Sharp device",
+      "deviceName": "SH-01D",
+      "marketingName": "SH-01D",
       "manufacturer": "sharp",
-      "brand": "sharp",
+      "brand": "ntt-docomo",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1280,
+        "height": 720,
         "touch": true,
-        "size": null
+        "size": 4.5
       },
       "type": "smartphone"
     },
@@ -2948,7 +2264,7 @@
       "version": "26.0.1410.58",
       "manufacturer": "google",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
@@ -2968,15 +2284,15 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 4.0.4; SH530U Build/IMM76D) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166 Mobile Safari/535.19"
     },
     "device": {
-      "deviceName": "general Sharp device",
-      "marketingName": "general Sharp device",
+      "deviceName": "SH530U",
+      "marketingName": "SH530U",
       "manufacturer": "sharp",
       "brand": "sharp",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 800,
+        "height": 480,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "type": "smartphone"
     },
@@ -2986,7 +2302,7 @@
       "version": "18.0.1025.166",
       "manufacturer": "google",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
@@ -3006,15 +2322,15 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 4.0.4; SH631W Build/IMM76D) AppleWebKit/535.19 (KHTML, Like Gecko) Chrome/18.0.1025.166 Mobile Safari/535.19"
     },
     "device": {
-      "deviceName": "general Sharp device",
-      "marketingName": "general Sharp device",
+      "deviceName": "SH631W",
+      "marketingName": "SH631W",
       "manufacturer": "sharp",
       "brand": "sharp",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 960,
+        "height": 540,
         "touch": true,
-        "size": null
+        "size": 4.5
       },
       "type": "smartphone"
     },
@@ -3024,7 +2340,7 @@
       "version": "18.0.1025.166",
       "manufacturer": "google",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
@@ -3044,15 +2360,15 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 2.2.2; zh-TW; SH8118U Build/HK9) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166 Mobile Safari/535.19"
     },
     "device": {
-      "deviceName": "general Sharp device",
-      "marketingName": "general Sharp device",
+      "deviceName": "SH8118U",
+      "marketingName": "SH8118U",
       "manufacturer": "sharp",
       "brand": "sharp",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 480,
+        "height": 320,
         "touch": true,
-        "size": null
+        "size": 3.2
       },
       "type": "smartphone"
     },
@@ -3062,7 +2378,7 @@
       "version": "18.0.1025.166",
       "manufacturer": "google",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
@@ -3100,7 +2416,7 @@
       "version": "9.3.2.349",
       "manufacturer": "ucweb",
       "bits": null,
-      "type": "unknown"
+      "type": "transcoder"
     },
     "os": {
       "name": "Android",
@@ -3120,15 +2436,15 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 2.2.2; zh-cn; SH8158U Build/S3181) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
     },
     "device": {
-      "deviceName": "general Sharp device",
-      "marketingName": "general Sharp device",
+      "deviceName": "SH8158U",
+      "marketingName": "SH8158U",
       "manufacturer": "sharp",
       "brand": "sharp",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 800,
+        "height": 480,
         "touch": true,
-        "size": null
+        "size": 3.8
       },
       "type": "smartphone"
     },
@@ -3138,7 +2454,7 @@
       "version": "4.0.0",
       "manufacturer": "google",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
@@ -3158,15 +2474,15 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 2.2.2; Zh-cn; SH8168U Build/S4200) AppleWebKit/533.1 (KHTML, Like Gecko) Version/4.0 Mobile Safari/533.1"
     },
     "device": {
-      "deviceName": "general Sharp device",
-      "marketingName": "general Sharp device",
+      "deviceName": "SH8168U",
+      "marketingName": "SH8168U",
       "manufacturer": "sharp",
       "brand": "sharp",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 800,
+        "height": 480,
         "touch": true,
-        "size": null
+        "size": 3.8
       },
       "type": "smartphone"
     },
@@ -3176,7 +2492,7 @@
       "version": "4.0.0",
       "manufacturer": "google",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
@@ -3196,15 +2512,15 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 2.2.2; En-US; SH8188U Build/2AYA) AppleWebKit/533.1 (KHTML, Like Gecko) Version/4.0 Mobile Safari/533.1"
     },
     "device": {
-      "deviceName": "general Sharp device",
-      "marketingName": "general Sharp device",
+      "deviceName": "SH8188U",
+      "marketingName": "SH8188U",
       "manufacturer": "sharp",
       "brand": "sharp",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 800,
+        "height": 480,
         "touch": true,
-        "size": null
+        "size": 4.1
       },
       "type": "smartphone"
     },
@@ -3214,7 +2530,7 @@
       "version": "4.0.0",
       "manufacturer": "google",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
@@ -3234,15 +2550,15 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 2.3.3; de-de; SH8298U Build/S8041) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
     },
     "device": {
-      "deviceName": "general Sharp device",
-      "marketingName": "general Sharp device",
+      "deviceName": "SH8298U",
+      "marketingName": "SH8298U",
       "manufacturer": "sharp",
       "brand": "sharp",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 960,
+        "height": 540,
         "touch": true,
-        "size": null
+        "size": 4.2
       },
       "type": "smartphone"
     },
@@ -3252,7 +2568,7 @@
       "version": "4.0.0",
       "manufacturer": "google",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
@@ -3272,15 +2588,15 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 4.1.1; SH930W Build/JRO03L) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166 Mobile Safari/535.19"
     },
     "device": {
-      "deviceName": "general Sharp device",
-      "marketingName": "general Sharp device",
+      "deviceName": "SH930W",
+      "marketingName": "Aquos Phone SH930W",
       "manufacturer": "sharp",
       "brand": "sharp",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1920,
+        "height": 1080,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "type": "smartphone"
     },
@@ -3290,7 +2606,7 @@
       "version": "18.0.1025.166",
       "manufacturer": "google",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
@@ -3310,15 +2626,15 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 2.3.7; zh-cn; SHARP SH8188U Build/MIUI) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
     },
     "device": {
-      "deviceName": "general Sharp device",
-      "marketingName": "general Sharp device",
+      "deviceName": "SH8188U",
+      "marketingName": "SH8188U",
       "manufacturer": "sharp",
       "brand": "sharp",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 800,
+        "height": 480,
         "touch": true,
-        "size": null
+        "size": 4.1
       },
       "type": "smartphone"
     },
@@ -3328,13 +2644,13 @@
       "version": "4.0.0",
       "manufacturer": "google",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
-      "name": "Miui OS",
-      "marketingName": "Miui OS",
-      "version": null,
-      "manufacturer": "xiaomi",
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "2.3.7",
+      "manufacturer": "google",
       "bits": null
     },
     "engine": {
@@ -3348,15 +2664,15 @@
       "user-agent": "YahooJMobileApp/1.1 (Android yfinkeyguardwidget; 1.1.0) (SBM; SBM203SH; SHARP; SBM203SH; 4.1.2/S0022)"
     },
     "device": {
-      "deviceName": "general Sharp device",
-      "marketingName": "general Sharp device",
+      "deviceName": "SBM203SH",
+      "marketingName": "Aquos Phone 203SH",
       "manufacturer": "sharp",
-      "brand": "sharp",
+      "brand": "softbank",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1280,
+        "height": 720,
         "touch": true,
-        "size": null
+        "size": 4.9
       },
       "type": "smartphone"
     },
@@ -3366,7 +2682,7 @@
       "version": null,
       "manufacturer": "google",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
@@ -3379,82 +2695,6 @@
       "name": "WebKit",
       "version": null,
       "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.7 (Windows Mobile; SHARP/WS007SH; PPC; 480x640; Opera Mobi/35166; U; xx) Presto/2.2.1"
-    },
-    "device": {
-      "deviceName": "general Sharp device",
-      "marketingName": "general Sharp device",
-      "manufacturer": "sharp",
-      "brand": "sharp",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Opera Mobile",
-      "modus": null,
-      "version": "35166.0.0",
-      "manufacturer": "opera",
-      "bits": 64,
-      "type": "unknown"
-    },
-    "os": {
-      "name": "Windows Mobile OS",
-      "marketingName": "Windows Mobile OS",
-      "version": null,
-      "manufacturer": "microsoft",
-      "bits": 64
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.2.1",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; SHARP/WS020SH; PPC; 480x800) Opera Mobi; Opera 9.5 [ja]"
-    },
-    "device": {
-      "deviceName": "general Sharp device",
-      "marketingName": "general Sharp device",
-      "manufacturer": "sharp",
-      "brand": "sharp",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Opera Mobile",
-      "modus": null,
-      "version": "9.5.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": "Windows CE",
-      "marketingName": "Windows CE",
-      "version": null,
-      "manufacturer": "microsoft",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": null,
-      "manufacturer": "opera"
     }
   },
   {
@@ -3480,7 +2720,7 @@
       "version": "39.0.2171.59",
       "manufacturer": "google",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
@@ -3500,15 +2740,15 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 4.1.1; zh-tw; SH930W Build/JRO03L) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
     },
     "device": {
-      "deviceName": "general Sharp device",
-      "marketingName": "general Sharp device",
+      "deviceName": "SH930W",
+      "marketingName": "Aquos Phone SH930W",
       "manufacturer": "sharp",
       "brand": "sharp",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1920,
+        "height": 1080,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "type": "smartphone"
     },
@@ -3518,7 +2758,7 @@
       "version": "4.0.0",
       "manufacturer": "google",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
@@ -3538,15 +2778,15 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 4.2.2; en-us; SH-06E Build/S6170) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
     },
     "device": {
-      "deviceName": "general Sharp device",
-      "marketingName": "general Sharp device",
+      "deviceName": "SH-06E",
+      "marketingName": "Aquos Phone Zeta",
       "manufacturer": "sharp",
-      "brand": "sharp",
+      "brand": "ntt-docomo",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1920,
+        "height": 1080,
         "touch": true,
-        "size": null
+        "size": 4.8
       },
       "type": "smartphone"
     },
@@ -3556,7 +2796,7 @@
       "version": "4.0.0",
       "manufacturer": "google",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
@@ -3594,7 +2834,7 @@
       "version": "52.0.2743.91",
       "manufacturer": "google",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
@@ -3632,7 +2872,7 @@
       "version": "41.0.2272.96",
       "manufacturer": "google",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
@@ -3670,7 +2910,7 @@
       "version": "30.0.0.0",
       "manufacturer": "google",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
@@ -3690,15 +2930,15 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 4.2.2; ja-jp; SH-02F Build/S9240) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
     },
     "device": {
-      "deviceName": "general Sharp device",
-      "marketingName": "general Sharp device",
+      "deviceName": "SH-02F",
+      "marketingName": "Aquos Phone EX",
       "manufacturer": "sharp",
       "brand": "sharp",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1920,
+        "height": 1080,
         "touch": true,
-        "size": null
+        "size": 4.5
       },
       "type": "smartphone"
     },
@@ -3708,7 +2948,7 @@
       "version": "4.0.0",
       "manufacturer": "google",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
@@ -3728,15 +2968,15 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 4.2.2; ja-jp; SH-06E Build/SC040) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
     },
     "device": {
-      "deviceName": "general Sharp device",
-      "marketingName": "general Sharp device",
+      "deviceName": "SH-06E",
+      "marketingName": "Aquos Phone Zeta",
       "manufacturer": "sharp",
-      "brand": "sharp",
+      "brand": "ntt-docomo",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1920,
+        "height": 1080,
         "touch": true,
-        "size": null
+        "size": 4.8
       },
       "type": "smartphone"
     },
@@ -3746,7 +2986,7 @@
       "version": "4.0.0",
       "manufacturer": "google",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
@@ -3784,12 +3024,772 @@
       "version": "4.0.0",
       "manufacturer": "google",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
       "marketingName": "Android",
       "version": "4.0.4",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.1.2; ja-jp; SBM203SH Build/S0028) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 [FB_IAB/FB4A;FBAV/28.0.0.20.16;]"
+    },
+    "device": {
+      "deviceName": "SBM203SH",
+      "marketingName": "Aquos Phone 203SH",
+      "manufacturer": "sharp",
+      "brand": "softbank",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 4.9
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "28.0.0.20.16",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.1.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; SH-01F Build/SA090) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/29.0.0.23.13;]"
+    },
+    "device": {
+      "deviceName": "SH-01F",
+      "marketingName": "Aquos Phone Zeta",
+      "manufacturer": "sharp",
+      "brand": "ntt-docomo",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "29.0.0.23.13",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "30.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.2.2; ja-jp; SHL22 Build/S2141) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 [FB_IAB/FB4A;FBAV/27.0.0.25.15;]"
+    },
+    "device": {
+      "deviceName": "SHL22",
+      "marketingName": "Aquos Phone",
+      "manufacturer": "sharp",
+      "brand": "sharp",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "27.0.0.25.15",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; SH-01F Build/SA090) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/28.0.0.20.16;]"
+    },
+    "device": {
+      "deviceName": "SH-01F",
+      "marketingName": "Aquos Phone Zeta",
+      "manufacturer": "sharp",
+      "brand": "ntt-docomo",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "28.0.0.20.16",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "30.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; 306SH Build/S8216) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "306SH",
+      "marketingName": "Aquos Crystal",
+      "manufacturer": "sharp",
+      "brand": "sprint",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "30.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "30.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.4; 402SH Build/S0014) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.109 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "general Sharp device",
+      "marketingName": "general Sharp device",
+      "manufacturer": "sharp",
+      "brand": "sharp",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "40.0.2214.109",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.4",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "40.0.2214.109",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.0.4; ja-jp; SH-02E Build/S4100) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 [FB_IAB/FB4A;FBAV/29.0.0.23.13;]"
+    },
+    "device": {
+      "deviceName": "SH-02E",
+      "marketingName": "Aquos Phone Zeta",
+      "manufacturer": "sharp",
+      "brand": "ntt-docomo",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "29.0.0.23.13",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.0.4",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Dalvik/1.6.0 (Linux; U; Android 4.2.2; SH-01F Build/S5270)"
+    },
+    "device": {
+      "deviceName": "SH-01F",
+      "marketingName": "Aquos Phone Zeta",
+      "manufacturer": "sharp",
+      "brand": "ntt-docomo",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Dalvik",
+      "modus": null,
+      "version": "1.6.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.1.2; SH-02E Build/S9290) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.96 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "SH-02E",
+      "marketingName": "Aquos Phone Zeta",
+      "manufacturer": "sharp",
+      "brand": "ntt-docomo",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "41.0.2272.96",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.1.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "41.0.2272.96",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.2.2; ja-jp; SBM303SH Build/S0028) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 YJApp-ANDROID jp.co.yahoo.android.yjtop/2.4.27"
+    },
+    "device": {
+      "deviceName": "SBM303SH",
+      "marketingName": "Aquos Phone Xx Mini",
+      "manufacturer": "sharp",
+      "brand": "softbank",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 4.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Yahoo! App",
+      "modus": null,
+      "version": "2.4.27",
+      "manufacturer": "yahoo",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Dalvik/1.6.0 (Linux; U; Android 4.1.2; SBM205SH Build/S0016)"
+    },
+    "device": {
+      "deviceName": "SBM205SH",
+      "marketingName": "Aquos Phone 205SH",
+      "manufacturer": "sharp",
+      "brand": "softbank",
+      "display": {
+        "width": 854,
+        "height": 480,
+        "touch": true,
+        "size": 4
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Dalvik",
+      "modus": null,
+      "version": "1.6.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.1.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.3.5; ja-jp; DM012SH Build/S0012) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
+    },
+    "device": {
+      "deviceName": "general Sharp device",
+      "marketingName": "general Sharp device",
+      "manufacturer": "sharp",
+      "brand": "sharp",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "2.3.5",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "533.1.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; 401SH Build/S0008) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "general Sharp device",
+      "marketingName": "general Sharp device",
+      "manufacturer": "sharp",
+      "brand": "sharp",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "30.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "30.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.1.2; ja-jp; SH-01EVW Build/SC260) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
+    },
+    "device": {
+      "deviceName": "SH-01EVW",
+      "marketingName": "SH-01EVW",
+      "manufacturer": "sharp",
+      "brand": "ntt-docomo",
+      "display": {
+        "width": 960,
+        "height": 540,
+        "touch": true,
+        "size": 4.1
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.1.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; 306SH Build/SA300) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.114 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "306SH",
+      "marketingName": "Aquos Crystal",
+      "manufacturer": "sharp",
+      "brand": "sprint",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "34.0.1847.114",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "34.0.1847.114",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.2.2; ja-jp; SBM303SH Build/S0028) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 [FB_IAB/FB4A;FBAV/28.0.0.20.16;]"
+    },
+    "device": {
+      "deviceName": "SBM303SH",
+      "marketingName": "Aquos Phone Xx Mini",
+      "manufacturer": "sharp",
+      "brand": "softbank",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 4.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "28.0.0.20.16",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.1.2; ja-jp; SBM203SH Build/S0024) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
+    },
+    "device": {
+      "deviceName": "SBM203SH",
+      "marketingName": "Aquos Phone 203SH",
+      "manufacturer": "sharp",
+      "brand": "softbank",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 4.9
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.1.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.3.5; ja-jp; SBM102SH2 Build/S0002) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
+    },
+    "device": {
+      "deviceName": "SBM102SH2",
+      "marketingName": "Aquos Phone 102SH2",
+      "manufacturer": "sharp",
+      "brand": "softbank",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 4.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "2.3.5",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "533.1.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; SHL25 Build/SA210) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.109 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "SHL25",
+      "marketingName": "Aquos Crystal",
+      "manufacturer": "sharp",
+      "brand": "sharp",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "40.0.2214.109",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "40.0.2214.109",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.1.2; ja-jp; SBM200SH Build/S1008) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 [FB_IAB/FB4A;FBAV/29.0.0.23.13;]"
+    },
+    "device": {
+      "deviceName": "SBM200SH",
+      "marketingName": "Pantone 6",
+      "manufacturer": "sharp",
+      "brand": "softbank",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 4.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "29.0.0.23.13",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.1.2",
       "manufacturer": "google",
       "bits": null
     },
