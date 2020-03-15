@@ -237,48 +237,6 @@
     "type": "feature-phone",
     "platform": "java"
   },
-  "sharp sh-07f": {
-    "deviceName": "SH-07F",
-    "marketingName": "SH-07F",
-    "manufacturer": "sharp",
-    "brand": "ntt-docomo",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": false,
-      "size": null
-    },
-    "type": "feature-phone",
-    "platform": "java"
-  },
-  "sharp sh505i": {
-    "deviceName": "SH505i",
-    "marketingName": "SH505i",
-    "manufacturer": "sharp",
-    "brand": "ntt-docomo",
-    "display": {
-      "width": 252,
-      "height": 96,
-      "touch": false,
-      "size": 2.3
-    },
-    "type": "feature-phone",
-    "platform": "java"
-  },
-  "sharp sh705i2": {
-    "deviceName": "SH705i2",
-    "marketingName": "SH705i2",
-    "manufacturer": "sharp",
-    "brand": "ntt-docomo",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": false,
-      "size": null
-    },
-    "type": "feature-phone",
-    "platform": "java"
-  },
   "sharp sh-01c": {
     "deviceName": "SH-01C",
     "marketingName": "SH-01C",
@@ -289,104 +247,6 @@
       "height": 480,
       "touch": false,
       "size": 3.4
-    },
-    "type": "feature-phone",
-    "platform": "java"
-  },
-  "sharp sh-05d": {
-    "deviceName": "SH-05D",
-    "marketingName": "SH-05D",
-    "manufacturer": "sharp",
-    "brand": "ntt-docomo",
-    "display": {
-      "width": 854,
-      "height": 480,
-      "touch": false,
-      "size": 3.2
-    },
-    "type": "feature-phone",
-    "platform": "java"
-  },
-  "sharp sh-09c": {
-    "deviceName": "SH-09C",
-    "marketingName": "SH-09C",
-    "manufacturer": "sharp",
-    "brand": "ntt-docomo",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": false,
-      "size": null
-    },
-    "type": "feature-phone",
-    "platform": "java"
-  },
-  "sharp sh-10c": {
-    "deviceName": "SH-10C",
-    "marketingName": "SH-10C",
-    "manufacturer": "sharp",
-    "brand": "ntt-docomo",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": false,
-      "size": null
-    },
-    "type": "feature-phone",
-    "platform": "java"
-  },
-  "sharp sh-11c": {
-    "deviceName": "SH-11C",
-    "marketingName": "SH-11C",
-    "manufacturer": "sharp",
-    "brand": "ntt-docomo",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": false,
-      "size": null
-    },
-    "type": "feature-phone",
-    "platform": "java"
-  },
-  "sharp sh700is": {
-    "deviceName": "SH700iS",
-    "marketingName": "SH700iS",
-    "manufacturer": "sharp",
-    "brand": "ntt-docomo",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": false,
-      "size": null
-    },
-    "type": "feature-phone",
-    "platform": "java"
-  },
-  "sharp sh702id": {
-    "deviceName": "SH702iD",
-    "marketingName": "SH702iD",
-    "manufacturer": "sharp",
-    "brand": "ntt-docomo",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": false,
-      "size": null
-    },
-    "type": "feature-phone",
-    "platform": "java"
-  },
-  "sharp sh703i": {
-    "deviceName": "SH703i",
-    "marketingName": "SH703i",
-    "manufacturer": "sharp",
-    "brand": "ntt-docomo",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": false,
-      "size": null
     },
     "type": "feature-phone",
     "platform": "java"
@@ -435,7 +295,7 @@
   },
   "sharp sh-04c": {
     "deviceName": "SH-04C",
-    "marketingName": "SH0-4C",
+    "marketingName": "SH-04C",
     "manufacturer": "sharp",
     "brand": "ntt-docomo",
     "display": {
@@ -443,6 +303,160 @@
       "height": 240,
       "touch": false,
       "size": 2.8
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "sharp sh-05d": {
+    "deviceName": "SH-05D",
+    "marketingName": "SH-05D",
+    "manufacturer": "sharp",
+    "brand": "ntt-docomo",
+    "display": {
+      "width": 854,
+      "height": 480,
+      "touch": false,
+      "size": 3.2
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "sharp sh-07f": {
+    "deviceName": "SH-07F",
+    "marketingName": "SH-07F",
+    "manufacturer": "sharp",
+    "brand": "ntt-docomo",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "sharp sh-09c": {
+    "deviceName": "SH-09C",
+    "marketingName": "SH-09C",
+    "manufacturer": "sharp",
+    "brand": "ntt-docomo",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "sharp sh-10c": {
+    "deviceName": "SH-10C",
+    "marketingName": "SH-10C",
+    "manufacturer": "sharp",
+    "brand": "ntt-docomo",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "sharp sh-11c": {
+    "deviceName": "SH-11C",
+    "marketingName": "SH-11C",
+    "manufacturer": "sharp",
+    "brand": "ntt-docomo",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "sharp sh505i": {
+    "deviceName": "SH505i",
+    "marketingName": "SH505i",
+    "manufacturer": "sharp",
+    "brand": "ntt-docomo",
+    "display": {
+      "width": 252,
+      "height": 96,
+      "touch": false,
+      "size": 2.3
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "sharp sh700is": {
+    "deviceName": "SH700iS",
+    "marketingName": "SH700iS",
+    "manufacturer": "sharp",
+    "brand": "ntt-docomo",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "sharp sh702id": {
+    "deviceName": "SH702iD",
+    "marketingName": "SH702iD",
+    "manufacturer": "sharp",
+    "brand": "ntt-docomo",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "sharp sh703i": {
+    "deviceName": "SH703i",
+    "marketingName": "SH703i",
+    "manufacturer": "sharp",
+    "brand": "ntt-docomo",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "sharp sh705i2": {
+    "deviceName": "SH705i2",
+    "marketingName": "SH705i2",
+    "manufacturer": "sharp",
+    "brand": "ntt-docomo",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "sharp sh706ie": {
+    "deviceName": "SH706ie",
+    "marketingName": "SH706ie",
+    "manufacturer": "sharp",
+    "brand": "ntt-docomo",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
     },
     "type": "feature-phone",
     "platform": "java"
@@ -464,6 +478,20 @@
   "sharp sh901ic": {
     "deviceName": "SH901iC",
     "marketingName": "SH901iC",
+    "manufacturer": "sharp",
+    "brand": "ntt-docomo",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "sharp sh901is": {
+    "deviceName": "SH901iS",
+    "marketingName": "SH901iS",
     "manufacturer": "sharp",
     "brand": "ntt-docomo",
     "display": {
@@ -516,6 +544,34 @@
     },
     "type": "feature-phone",
     "platform": "java"
+  },
+  "sharp sh906i": {
+    "deviceName": "SH906i",
+    "marketingName": "SH906i",
+    "manufacturer": "sharp",
+    "brand": "ntt-docomo",
+    "display": {
+      "width": 854,
+      "height": 480,
+      "touch": false,
+      "size": 3
+    },
+    "type": "feature-phone",
+    "platform": "symbian"
+  },
+  "sharp sh906itv": {
+    "deviceName": "SH906iTV",
+    "marketingName": "SH906iTV",
+    "manufacturer": "sharp",
+    "brand": "ntt-docomo",
+    "display": {
+      "width": 854,
+      "height": 480,
+      "touch": false,
+      "size": 3
+    },
+    "type": "feature-phone",
+    "platform": "symbian"
   },
   "sharp tq-gx20": {
     "deviceName": "TQ-GX20",
@@ -656,5 +712,33 @@
     },
     "type": "feature-phone",
     "platform": "java"
+  },
+  "sharp ws007sh": {
+    "deviceName": "WS007SH",
+    "marketingName": "WS007SH",
+    "manufacturer": "sharp",
+    "brand": "willcom",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "windows ce"
+  },
+  "sharp ws020sh": {
+    "deviceName": "WS020SH",
+    "marketingName": "WS020SH",
+    "manufacturer": "sharp",
+    "brand": "willcom",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": false,
+      "size": 3
+    },
+    "type": "feature-phone",
+    "platform": "windows ce"
   }
 }

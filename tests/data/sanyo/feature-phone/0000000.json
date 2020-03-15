@@ -22,7 +22,7 @@
       "version": "3.5.1",
       "manufacturer": "access",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Brew",
@@ -60,7 +60,7 @@
       "version": "3.5.1",
       "manufacturer": "access",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Brew",
@@ -98,7 +98,7 @@
       "version": "3.4.0",
       "manufacturer": "access",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Brew",
@@ -136,7 +136,7 @@
       "version": "3.0.0",
       "manufacturer": "access",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "JavaOS",
@@ -174,7 +174,7 @@
       "version": "3.3.0",
       "manufacturer": "access",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "JavaOS",
@@ -187,44 +187,6 @@
       "name": "NetFront",
       "version": null,
       "manufacturer": "access"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; BPM8040 Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.93 Safari/537.36"
-    },
-    "device": {
-      "deviceName": "general Sanyo device",
-      "marketingName": "general Sanyo device",
-      "manufacturer": "sanyo",
-      "brand": "sanyo",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "39.0.2171.93",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": "Brew",
-      "marketingName": "Brew",
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "39.0.2171.93",
-      "manufacturer": "google"
     }
   },
   {
@@ -250,7 +212,7 @@
       "version": "3.5.1",
       "manufacturer": "access",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Brew",
@@ -288,7 +250,7 @@
       "version": "3.5.1",
       "manufacturer": "access",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Brew",
@@ -308,15 +270,15 @@
       "user-agent": "Mozilla/4.0 (BREW 3.1.5; U; en-us; Sanyo; Polaris/6.0/AMB) Sprint SCP-2700"
     },
     "device": {
-      "deviceName": "general Sanyo device",
-      "marketingName": "general Sanyo device",
+      "deviceName": "SCP-2700",
+      "marketingName": "SCP-2700",
       "manufacturer": "sanyo",
       "brand": "sanyo",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 320,
+        "height": 240,
         "touch": false,
-        "size": null
+        "size": 2.2
       },
       "type": "feature-phone"
     },
@@ -326,7 +288,7 @@
       "version": "6.0.0",
       "manufacturer": "infraware",
       "bits": null,
-      "type": "unknown"
+      "type": "application"
     },
     "os": {
       "name": "Brew",
@@ -346,15 +308,15 @@
       "user-agent": "Mozilla/4.0 (Brew MP 1.0.2; U; en-us; Sanyo; NetFront/3.5.1/AMB) Sprint SCP-3820"
     },
     "device": {
-      "deviceName": "general Sanyo device",
-      "marketingName": "general Sanyo device",
+      "deviceName": "SCP-3820",
+      "marketingName": "SCP-3820",
       "manufacturer": "sanyo",
       "brand": "sanyo",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 320,
+        "height": 240,
         "touch": false,
-        "size": null
+        "size": 2.4
       },
       "type": "feature-phone"
     },
@@ -364,7 +326,7 @@
       "version": "3.5.1",
       "manufacturer": "access",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Brew",
@@ -377,44 +339,6 @@
       "name": "NetFront",
       "version": null,
       "manufacturer": "access"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.2.2; en-us; PM63100/2.15.502.2 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
-    },
-    "device": {
-      "deviceName": "general Sanyo device",
-      "marketingName": "general Sanyo device",
-      "manufacturer": "sanyo",
-      "brand": "sanyo",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Android Webkit",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": "Brew",
-      "marketingName": "Brew",
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "534.30.0",
-      "manufacturer": "apple"
     }
   },
   {
@@ -440,45 +364,7 @@
       "version": "4.0.0",
       "manufacturer": "google",
       "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": "Brew",
-      "marketingName": "Brew",
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "534.30.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.1.1; en-us; PM63100/1.19.502.1 Build/JRO03C) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
-    },
-    "device": {
-      "deviceName": "general Sanyo device",
-      "marketingName": "general Sanyo device",
-      "manufacturer": "sanyo",
-      "brand": "sanyo",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Android Webkit",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Brew",
@@ -516,7 +402,7 @@
       "version": "4.0.0",
       "manufacturer": "google",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Brew",
@@ -554,45 +440,7 @@
       "version": "4.0.0",
       "manufacturer": "google",
       "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": "Brew",
-      "marketingName": "Brew",
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "534.30.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.1.1; en-us; PM63100/1.15.502.9 Build/JRO03C) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
-    },
-    "device": {
-      "deviceName": "general Sanyo device",
-      "marketingName": "general Sanyo device",
-      "manufacturer": "sanyo",
-      "brand": "sanyo",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Android Webkit",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Brew",
@@ -630,7 +478,7 @@
       "version": "4.0.0",
       "manufacturer": "google",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Brew",
@@ -668,7 +516,7 @@
       "version": "4.0.0",
       "manufacturer": "google",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Brew",
@@ -688,15 +536,15 @@
       "user-agent": "Mozilla/4.0 (BREW 3.1.5; U; en-us; Sanyo; Polaris/6.0/AMB) Boost SCP-2700"
     },
     "device": {
-      "deviceName": "general Sanyo device",
-      "marketingName": "general Sanyo device",
+      "deviceName": "SCP-2700",
+      "marketingName": "SCP-2700",
       "manufacturer": "sanyo",
       "brand": "sanyo",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 320,
+        "height": 240,
         "touch": false,
-        "size": null
+        "size": 2.2
       },
       "type": "feature-phone"
     },
@@ -706,7 +554,7 @@
       "version": "6.0.0",
       "manufacturer": "infraware",
       "bits": null,
-      "type": "unknown"
+      "type": "application"
     },
     "os": {
       "name": "Brew",
@@ -726,13 +574,13 @@
       "user-agent": "Mozilla/4.0 (MobilePhone SCP-8500/US/1.0) NetFront/3.3 MMP/2.0"
     },
     "device": {
-      "deviceName": "general Sanyo device",
-      "marketingName": "general Sanyo device",
+      "deviceName": "SCP-8500",
+      "marketingName": "SCP-8500",
       "manufacturer": "sanyo",
       "brand": "sanyo",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 320,
+        "height": 240,
         "touch": false,
         "size": null
       },
@@ -744,13 +592,13 @@
       "version": "3.3.0",
       "manufacturer": "access",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
-      "name": "Brew",
-      "marketingName": "Brew",
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "unknown",
+      "manufacturer": "sun-microsystems",
       "bits": null
     },
     "engine": {
@@ -764,13 +612,13 @@
       "user-agent": "Mozilla/4.0 (MobilePhone SCP-8400/US/1.0) NetFront/3.3 MMP/2.0"
     },
     "device": {
-      "deviceName": "general Sanyo device",
-      "marketingName": "general Sanyo device",
+      "deviceName": "SCP-8400",
+      "marketingName": "SCP-8400",
       "manufacturer": "sanyo",
       "brand": "sanyo",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 320,
+        "height": 240,
         "touch": false,
         "size": null
       },
@@ -782,13 +630,13 @@
       "version": "3.3.0",
       "manufacturer": "access",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
-      "name": "Brew",
-      "marketingName": "Brew",
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "unknown",
+      "manufacturer": "sun-microsystems",
       "bits": null
     },
     "engine": {
@@ -802,13 +650,13 @@
       "user-agent": "Mozilla/4.0 (MobilePhone SCP-8200/NZ/1.0) NetFront/3.1 MMP/2.0"
     },
     "device": {
-      "deviceName": "general Sanyo device",
-      "marketingName": "general Sanyo device",
+      "deviceName": "SCP-8200",
+      "marketingName": "SCP-8200",
       "manufacturer": "sanyo",
       "brand": "sanyo",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 160,
+        "height": 132,
         "touch": false,
         "size": null
       },
@@ -820,13 +668,13 @@
       "version": "3.1.0",
       "manufacturer": "access",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
-      "name": "Brew",
-      "marketingName": "Brew",
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "unknown",
+      "manufacturer": "sun-microsystems",
       "bits": null
     },
     "engine": {
@@ -840,13 +688,13 @@
       "user-agent": "Mozilla/4.0 (MobilePhone SCP-8100/US/1.0) NetFront/3.0 MMP/2.0"
     },
     "device": {
-      "deviceName": "general Sanyo device",
-      "marketingName": "general Sanyo device",
+      "deviceName": "SCP-8100",
+      "marketingName": "SCP-8100",
       "manufacturer": "sanyo",
       "brand": "sanyo",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 144,
+        "height": 120,
         "touch": false,
         "size": null
       },
@@ -858,13 +706,13 @@
       "version": "3.0.0",
       "manufacturer": "access",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
-      "name": "Brew",
-      "marketingName": "Brew",
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "unknown",
+      "manufacturer": "sun-microsystems",
       "bits": null
     },
     "engine": {
@@ -878,13 +726,13 @@
       "user-agent": "Mozilla/4.0 (MobilePhone SCP-8100/CA/1.0) NetFront/3.0 MMP/2.0"
     },
     "device": {
-      "deviceName": "general Sanyo device",
-      "marketingName": "general Sanyo device",
+      "deviceName": "SCP-8100",
+      "marketingName": "SCP-8100",
       "manufacturer": "sanyo",
       "brand": "sanyo",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 144,
+        "height": 120,
         "touch": false,
         "size": null
       },
@@ -896,13 +744,13 @@
       "version": "3.0.0",
       "manufacturer": "access",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
-      "name": "Brew",
-      "marketingName": "Brew",
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "unknown",
+      "manufacturer": "sun-microsystems",
       "bits": null
     },
     "engine": {
@@ -916,13 +764,13 @@
       "user-agent": "Mozilla/4.0 (MobilePhone SCP-7400/NZ/1.0) NetFront/3.1 MMP/2.0"
     },
     "device": {
-      "deviceName": "general Sanyo device",
-      "marketingName": "general Sanyo device",
+      "deviceName": "SCP-7400",
+      "marketingName": "SCP-7400",
       "manufacturer": "sanyo",
       "brand": "sanyo",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 220,
+        "height": 176,
         "touch": false,
         "size": null
       },
@@ -934,13 +782,13 @@
       "version": "3.1.0",
       "manufacturer": "access",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
-      "name": "Brew",
-      "marketingName": "Brew",
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "unknown",
+      "manufacturer": "sun-microsystems",
       "bits": null
     },
     "engine": {
@@ -954,13 +802,13 @@
       "user-agent": "Mozilla/4.0 (MobilePhone SCP-7300/US/1.0) NetFront/3.0 MMP/2.0"
     },
     "device": {
-      "deviceName": "general Sanyo device",
-      "marketingName": "general Sanyo device",
+      "deviceName": "SCP-7300",
+      "marketingName": "SCP-7300",
       "manufacturer": "sanyo",
       "brand": "sanyo",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 176,
+        "height": 132,
         "touch": false,
         "size": null
       },
@@ -972,13 +820,13 @@
       "version": "3.0.0",
       "manufacturer": "access",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
-      "name": "Brew",
-      "marketingName": "Brew",
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "unknown",
+      "manufacturer": "sun-microsystems",
       "bits": null
     },
     "engine": {
@@ -992,13 +840,13 @@
       "user-agent": "Mozilla/4.0 (MobilePhone SCP-7300/UN/1.0) NetFront/3.0 MMP/2.0"
     },
     "device": {
-      "deviceName": "general Sanyo device",
-      "marketingName": "general Sanyo device",
+      "deviceName": "SCP-7300",
+      "marketingName": "SCP-7300",
       "manufacturer": "sanyo",
       "brand": "sanyo",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 176,
+        "height": 132,
         "touch": false,
         "size": null
       },
@@ -1010,13 +858,13 @@
       "version": "3.0.0",
       "manufacturer": "access",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
-      "name": "Brew",
-      "marketingName": "Brew",
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "unknown",
+      "manufacturer": "sun-microsystems",
       "bits": null
     },
     "engine": {
@@ -1030,13 +878,13 @@
       "user-agent": "Mozilla/4.0 (MobilePhone SCP-7300/CA/1.0) NetFront/3.0 MMP/2.0"
     },
     "device": {
-      "deviceName": "general Sanyo device",
-      "marketingName": "general Sanyo device",
+      "deviceName": "SCP-7300",
+      "marketingName": "SCP-7300",
       "manufacturer": "sanyo",
       "brand": "sanyo",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 176,
+        "height": 132,
         "touch": false,
         "size": null
       },
@@ -1048,13 +896,13 @@
       "version": "3.0.0",
       "manufacturer": "access",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
-      "name": "Brew",
-      "marketingName": "Brew",
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "unknown",
+      "manufacturer": "sun-microsystems",
       "bits": null
     },
     "engine": {
@@ -1068,13 +916,13 @@
       "user-agent": "Mozilla/4.0 (MobilePhone SCP-7050/US/1.0) NetFront/3.3 MMP/2.0"
     },
     "device": {
-      "deviceName": "general Sanyo device",
-      "marketingName": "general Sanyo device",
+      "deviceName": "SCP-7050",
+      "marketingName": "SCP-7050",
       "manufacturer": "sanyo",
       "brand": "sanyo",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 320,
+        "height": 240,
         "touch": false,
         "size": null
       },
@@ -1086,13 +934,13 @@
       "version": "3.3.0",
       "manufacturer": "access",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
-      "name": "Brew",
-      "marketingName": "Brew",
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "unknown",
+      "manufacturer": "sun-microsystems",
       "bits": null
     },
     "engine": {
@@ -1106,13 +954,13 @@
       "user-agent": "Mozilla/4.0 (MobilePhone SCP-5600/NZ/1.0) NetFront/3.1 MMP/2.0"
     },
     "device": {
-      "deviceName": "general Sanyo device",
-      "marketingName": "general Sanyo device",
+      "deviceName": "SCP-5600",
+      "marketingName": "SCP-5600",
       "manufacturer": "sanyo",
       "brand": "sanyo",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 320,
+        "height": 240,
         "touch": false,
         "size": null
       },
@@ -1124,13 +972,13 @@
       "version": "3.1.0",
       "manufacturer": "access",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
-      "name": "Brew",
-      "marketingName": "Brew",
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "unknown",
+      "manufacturer": "sun-microsystems",
       "bits": null
     },
     "engine": {
@@ -1162,7 +1010,7 @@
       "version": "3.0.0",
       "manufacturer": "access",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "JavaOS",
@@ -1182,13 +1030,13 @@
       "user-agent": "Mozilla/4.0 (MobilePhone SCP-5400/US/1.0) NetFront/3.0 MMP/2.0"
     },
     "device": {
-      "deviceName": "general Sanyo device",
-      "marketingName": "general Sanyo device",
+      "deviceName": "SCP-5400",
+      "marketingName": "SCP-5400",
       "manufacturer": "sanyo",
       "brand": "sanyo",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 176,
+        "height": 132,
         "touch": false,
         "size": null
       },
@@ -1200,13 +1048,13 @@
       "version": "3.0.0",
       "manufacturer": "access",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
-      "name": "Brew",
-      "marketingName": "Brew",
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "unknown",
+      "manufacturer": "sun-microsystems",
       "bits": null
     },
     "engine": {
@@ -1220,15 +1068,15 @@
       "user-agent": "Mozilla/4.0 (MobilePhone SCP-5300/1.0) NetFront/3.0 MMP/2.0"
     },
     "device": {
-      "deviceName": "general Sanyo device",
-      "marketingName": "general Sanyo device",
+      "deviceName": "SCP-5300",
+      "marketingName": "SCP-5300",
       "manufacturer": "sanyo",
       "brand": "sanyo",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 176,
+        "height": 132,
         "touch": false,
-        "size": null
+        "size": 2.1
       },
       "type": "feature-phone"
     },
@@ -1238,13 +1086,13 @@
       "version": "3.0.0",
       "manufacturer": "access",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
-      "name": "Brew",
-      "marketingName": "Brew",
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "unknown",
+      "manufacturer": "sun-microsystems",
       "bits": null
     },
     "engine": {
@@ -1258,13 +1106,13 @@
       "user-agent": "Mozilla/4.0 (MobilePhone SCP-4920/IU/1.0) NetFront/3.1 MMP/2.0"
     },
     "device": {
-      "deviceName": "general Sanyo device",
-      "marketingName": "general Sanyo device",
+      "deviceName": "SCP-4920",
+      "marketingName": "SCP-4920",
       "manufacturer": "sanyo",
       "brand": "sanyo",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 128,
+        "height": 112,
         "touch": false,
         "size": null
       },
@@ -1276,13 +1124,13 @@
       "version": "3.1.0",
       "manufacturer": "access",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
-      "name": "Brew",
-      "marketingName": "Brew",
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "unknown",
+      "manufacturer": "sun-microsystems",
       "bits": null
     },
     "engine": {
@@ -1296,13 +1144,13 @@
       "user-agent": "Mozilla/4.0 (MobilePhone SCP-4900/1.0) NetFront/3.0 MMP/2.0"
     },
     "device": {
-      "deviceName": "general Sanyo device",
-      "marketingName": "general Sanyo device",
+      "deviceName": "SCP-4900",
+      "marketingName": "SCP-4900",
       "manufacturer": "sanyo",
       "brand": "sanyo",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 128,
+        "height": 120,
         "touch": false,
         "size": null
       },
@@ -1314,13 +1162,13 @@
       "version": "3.0.0",
       "manufacturer": "access",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
-      "name": "Brew",
-      "marketingName": "Brew",
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "unknown",
+      "manufacturer": "sun-microsystems",
       "bits": null
     },
     "engine": {
@@ -1334,15 +1182,15 @@
       "user-agent": "Mozilla/4.0 (MobilePhone SCP-3800/US/1.0) NetFront/3.4 MMP/2.0"
     },
     "device": {
-      "deviceName": "general Sanyo device",
-      "marketingName": "general Sanyo device",
+      "deviceName": "SCP-3800",
+      "marketingName": "SCP-3800",
       "manufacturer": "sanyo",
       "brand": "sanyo",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 160,
+        "height": 128,
         "touch": false,
-        "size": null
+        "size": 2
       },
       "type": "feature-phone"
     },
@@ -1352,13 +1200,13 @@
       "version": "3.4.0",
       "manufacturer": "access",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
-      "name": "Brew",
-      "marketingName": "Brew",
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "unknown",
+      "manufacturer": "sun-microsystems",
       "bits": null
     },
     "engine": {
@@ -1372,15 +1220,15 @@
       "user-agent": "Mozilla/4.0 (MobilePhone SCP-3200/US/1.0) NetFront/3.3L MMP/2.0"
     },
     "device": {
-      "deviceName": "general Sanyo device",
-      "marketingName": "general Sanyo device",
+      "deviceName": "SCP-3200",
+      "marketingName": "SCP-3200",
       "manufacturer": "sanyo",
       "brand": "sanyo",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 160,
+        "height": 128,
         "touch": false,
-        "size": null
+        "size": 1.8
       },
       "type": "feature-phone"
     },
@@ -1390,13 +1238,13 @@
       "version": "3.3.0",
       "manufacturer": "access",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
-      "name": "Brew",
-      "marketingName": "Brew",
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "unknown",
+      "manufacturer": "sun-microsystems",
       "bits": null
     },
     "engine": {
@@ -1410,13 +1258,13 @@
       "user-agent": "Mozilla/4.0 (MobilePhone SCP-3100/US/1.0) NetFront/3.1 MMP/2.0"
     },
     "device": {
-      "deviceName": "general Sanyo device",
-      "marketingName": "general Sanyo device",
+      "deviceName": "SCP-3100",
+      "marketingName": "SCP-3100",
       "manufacturer": "sanyo",
       "brand": "sanyo",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 160,
+        "height": 128,
         "touch": false,
         "size": null
       },
@@ -1428,13 +1276,13 @@
       "version": "3.1.0",
       "manufacturer": "access",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
-      "name": "Brew",
-      "marketingName": "Brew",
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "unknown",
+      "manufacturer": "sun-microsystems",
       "bits": null
     },
     "engine": {
@@ -1448,13 +1296,13 @@
       "user-agent": "Mozilla/4.0 (MobilePhone SCP-3100/CA/1.0) NetFront/3.1 MMP/2.0"
     },
     "device": {
-      "deviceName": "general Sanyo device",
-      "marketingName": "general Sanyo device",
+      "deviceName": "SCP-3100",
+      "marketingName": "SCP-3100",
       "manufacturer": "sanyo",
       "brand": "sanyo",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 160,
+        "height": 128,
         "touch": false,
         "size": null
       },
@@ -1466,13 +1314,13 @@
       "version": "3.1.0",
       "manufacturer": "access",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
-      "name": "Brew",
-      "marketingName": "Brew",
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "unknown",
+      "manufacturer": "sun-microsystems",
       "bits": null
     },
     "engine": {
@@ -1486,13 +1334,13 @@
       "user-agent": "Mozilla/4.0 (MobilePhone SCP-2400/US/1.0) NetFront/3.1 MMP/2.0"
     },
     "device": {
-      "deviceName": "general Sanyo device",
-      "marketingName": "general Sanyo device",
+      "deviceName": "SCP-2400",
+      "marketingName": "SCP-2400",
       "manufacturer": "sanyo",
       "brand": "sanyo",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 160,
+        "height": 128,
         "touch": false,
         "size": null
       },
@@ -1504,13 +1352,13 @@
       "version": "3.1.0",
       "manufacturer": "access",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
-      "name": "Brew",
-      "marketingName": "Brew",
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "unknown",
+      "manufacturer": "sun-microsystems",
       "bits": null
     },
     "engine": {
@@ -1524,13 +1372,13 @@
       "user-agent": "Mozilla/4.0 (MobilePhone SCP-2300/CA/1.0) NetFront/3.1 MMP/2.0"
     },
     "device": {
-      "deviceName": "general Sanyo device",
-      "marketingName": "general Sanyo device",
+      "deviceName": "SCP-2300",
+      "marketingName": "SCP-2300",
       "manufacturer": "sanyo",
       "brand": "sanyo",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 128,
+        "height": 128,
         "touch": false,
         "size": null
       },
@@ -1542,13 +1390,13 @@
       "version": "3.1.0",
       "manufacturer": "access",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
-      "name": "Brew",
-      "marketingName": "Brew",
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "unknown",
+      "manufacturer": "sun-microsystems",
       "bits": null
     },
     "engine": {
@@ -1580,7 +1428,7 @@
       "version": "3.1.0",
       "manufacturer": "access",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "JavaOS",
@@ -1593,44 +1441,6 @@
       "name": "NetFront",
       "version": null,
       "manufacturer": "access"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.1-update1; en-us; PM1152 Tabula (V9) Build/ERE27) AppleWebKit/530.17 (KHTML like Gecko) Version/4.0 Mobile Safari/530.17"
-    },
-    "device": {
-      "deviceName": "general Sanyo device",
-      "marketingName": "general Sanyo device",
-      "manufacturer": "sanyo",
-      "brand": "sanyo",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Android Webkit",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": "Brew",
-      "marketingName": "Brew",
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "530.17.0",
-      "manufacturer": "apple"
     }
   },
   {
@@ -1656,7 +1466,7 @@
       "version": "6.2.2.6",
       "manufacturer": "myriad",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "JavaOS",
@@ -1676,15 +1486,15 @@
       "user-agent": "SANYO-S750/2.280 UP.Browser/7.0.2.1.sn.1.222.a (GUI) MMP/2.0"
     },
     "device": {
-      "deviceName": "general Sanyo device",
-      "marketingName": "general Sanyo device",
+      "deviceName": "S750",
+      "marketingName": "S750",
       "manufacturer": "sanyo",
       "brand": "sanyo",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 320,
+        "height": 240,
         "touch": false,
-        "size": null
+        "size": 2.2
       },
       "type": "feature-phone"
     },
@@ -1694,13 +1504,13 @@
       "version": "7.0.2.1",
       "manufacturer": "myriad",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
-      "name": "Brew",
-      "marketingName": "Brew",
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "unknown",
+      "manufacturer": "sun-microsystems",
       "bits": null
     },
     "engine": {
@@ -1732,7 +1542,7 @@
       "version": "3.1.0",
       "manufacturer": "access",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "JavaOS",
@@ -1770,7 +1580,7 @@
       "version": "4.1.23-alpha",
       "manufacturer": "myriad",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "JavaOS",
@@ -1808,7 +1618,7 @@
       "version": "6.2.0.7.3",
       "manufacturer": "myriad",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "JavaOS",
@@ -1884,7 +1694,7 @@
       "version": "6.0.0",
       "manufacturer": "microsoft",
       "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": "Windows Mobile OS",
@@ -1925,7 +1735,7 @@
       "version": "9.4.1.377",
       "manufacturer": "ucweb",
       "bits": null,
-      "type": "unknown"
+      "type": "transcoder"
     },
     "os": {
       "name": "Brew",
@@ -1967,7 +1777,7 @@
       "version": "7.1.32052",
       "manufacturer": "opera",
       "bits": null,
-      "type": "unknown"
+      "type": "transcoder"
     },
     "os": {
       "name": "Brew",
