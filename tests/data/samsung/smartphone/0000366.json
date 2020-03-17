@@ -1,44 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.4; SM-J100ML Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.109 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "SM-J100ML",
-      "marketingName": "Galaxy J1",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 800,
-        "height": 480,
-        "touch": true,
-        "size": 4.3
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "40.0.2214.109",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.4.4",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "40.0.2214.109",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 7.0; SM-G920F Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/64.0.3282.137 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/163.0.0.43.91;]"
     },
     "device": {
@@ -3797,6 +3759,44 @@
       "name": "Blink",
       "version": "56.0.2924.87",
       "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Tizen 2.4.0.5; Samsung SM-Z200Y) AppleWebKit/537.3 (KHTML, like Gecko) Version/2.4.0.5 Mobile Safari/537.3  [FBAN/FB4T;FBAV/1.0.25;FBBV/1.0.25;FBMF/Samsung;FBDV/SM-Z200Y;FBSN/Tizen;FBSV/2.4.0.5;FBCR/234-30;FBLC/en_GB;FBCM/{density=233,width=480,height=800};]"
+    },
+    "device": {
+      "deviceName": "SM-Z200Y",
+      "marketingName": "Z2",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 4
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "1.0.25",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Tizen",
+      "marketingName": "Tizen",
+      "version": "2.4.0.5",
+      "manufacturer": "linux-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.3.0",
+      "manufacturer": "apple"
     }
   }
 ]

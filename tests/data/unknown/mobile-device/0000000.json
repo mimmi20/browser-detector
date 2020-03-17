@@ -1,272 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "Dalvik/1.4.0 (Linux; U; Android 2.3.1; KESAM726HC Build/GINGERBREAD)"
-    },
-    "device": {
-      "deviceName": "general Mobile device",
-      "marketingName": "general Mobile device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": "Dalvik",
-      "modus": null,
-      "version": "1.4.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "2.3.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG Opera/9.80 (J2ME/MIDP; Opera Mini/4.4.30085/34.818; U; en) Presto/2.8.119 Version/11.10"
-    },
-    "device": {
-      "deviceName": "general Mobile device",
-      "marketingName": "general Mobile device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "4.4.30085",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.8.119",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG Opera/9.80 (J2ME/MIDP; Opera Mini/4.4.30421/36.1370; U; en) Presto/2.12.423 Version/12.16"
-    },
-    "device": {
-      "deviceName": "general Mobile device",
-      "marketingName": "general Mobile device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "4.4.30421",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.12.423",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG Opera/9.80 (J2ME/MIDP; Opera Mini/4.4.30421/36.1355; U; en) Presto/2.12.423 Version/12.16"
-    },
-    "device": {
-      "deviceName": "general Mobile device",
-      "marketingName": "general Mobile device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "4.4.30421",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.12.423",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG Opera/9.80 (J2ME/MIDP; Opera Mini/4.4.30421/36.1344; U; en) Presto/2.12.423 Version/12.16"
-    },
-    "device": {
-      "deviceName": "general Mobile device",
-      "marketingName": "general Mobile device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "4.4.30421",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.12.423",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "samsung UP.Browser/7.0.2.3.119 (GUI) MMP/2.0 Push/PO"
-    },
-    "device": {
-      "deviceName": "general Mobile device",
-      "marketingName": "general Mobile device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": "Openwave Mobile Browser",
-      "modus": null,
-      "version": "7.0.2.3.119",
-      "manufacturer": "myriad",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "PWACrawler +@SamsungInternet"
-    },
-    "device": {
-      "deviceName": "general Mobile device",
-      "marketingName": "general Mobile device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": "Crawler",
-      "modus": null,
-      "version": null,
-      "manufacturer": "linkfluence",
-      "bits": null,
-      "type": "bot"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "W3C-mobileOK/DDC-1.0 (see http://www.w3.org/2006/07/mobileok-ddc)"
     },
     "device": {
@@ -3797,6 +3531,272 @@
       "name": "WebKit",
       "version": null,
       "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Coursera-Mobile/1.3.0-1192"
+    },
+    "device": {
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device"
+    },
+    "browser": {
+      "name": "Coursera Mobile App",
+      "modus": null,
+      "version": "1.3.0.1192",
+      "manufacturer": "coursera",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Crowsnest/0.5 (+http://www.crowsnest.tv/)"
+    },
+    "device": {
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device"
+    },
+    "browser": {
+      "name": "Crowsnest Mobile App",
+      "modus": null,
+      "version": "0.5.0",
+      "manufacturer": "gocro",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Dorado WAP-Browser/1.0.0"
+    },
+    "device": {
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device"
+    },
+    "browser": {
+      "name": "Dorado WAP Browser",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "dorado",
+      "bits": null,
+      "type": "wap-browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "IVO/1.0 Android/4.4.2 Release/KVT49L Browser/AppleWebKit534.30 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+    },
+    "device": {
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": null,
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/4.0 (compatible;Android;320x480)"
+    },
+    "device": {
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": null,
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "320.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Mobile; rv:28.1) Gecko/28.1 Firefox/28.1"
+    },
+    "device": {
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device"
+    },
+    "browser": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "28.1.0",
+      "manufacturer": "mozilla-foundation",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Firefox OS",
+      "marketingName": "Firefox OS",
+      "version": "1.3.0",
+      "manufacturer": "mozilla-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "28.1.0",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/9.80 (Windows Phone; Opera Mini/7.6.8/35.4999; U; en) Presto/2.8.119 Version/11.10"
+    },
+    "device": {
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device"
+    },
+    "browser": {
+      "name": "Opera Mini",
+      "modus": null,
+      "version": "7.6.8",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Windows Phone OS",
+      "marketingName": "Windows Phone OS",
+      "version": null,
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.8.119",
+      "manufacturer": "opera"
     }
   }
 ]

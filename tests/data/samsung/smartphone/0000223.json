@@ -1,44 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "UCWEB/2.0(Linux; U; Opera Mini/7.1.32052/30.3697; en-US; SM-G531H Build/LMY48B) U2/1.0.0 UCBrowser/10.8.8.730 Mobile"
-    },
-    "device": {
-      "deviceName": "SM-G531H",
-      "marketingName": "Galaxy Grand Prime Value Edition Duos LTE",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 960,
-        "height": 540,
-        "touch": true,
-        "size": 5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "10.8.8.730",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": null,
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "U2",
-      "version": "1.0.0",
-      "manufacturer": "ucweb"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 7.0; SAMSUNG SM-G935F Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/6.3 Chrome/56.0.2924.87 Mobile Safari/537.36"
     },
     "device": {
@@ -3775,6 +3737,44 @@
         "height": 480,
         "touch": true,
         "size": 4.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Samsung Browser",
+      "modus": null,
+      "version": "1.5.0",
+      "manufacturer": "samsung",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.3.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "28.0.1500.94",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.3; xx; SAMSUNG-SM-W2014 Build/JSS15J) AppleWebKit/537.36 (KHTML, like Gecko) Version/1.5 Chrome/28.0.1500.94 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "SM-W2014",
+      "marketingName": "SM-W2014",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 3.7
       },
       "type": "smartphone"
     },

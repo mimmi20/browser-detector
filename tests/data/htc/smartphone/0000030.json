@@ -1,44 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_5_7; HTC/DesireS/2.10.161.5) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Safari/530.17"
-    },
-    "device": {
-      "deviceName": "Desire S",
-      "marketingName": "Desire S",
-      "manufacturer": "htc",
-      "brand": "htc",
-      "display": {
-        "width": 800,
-        "height": 480,
-        "touch": true,
-        "size": 3.7
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Safari",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "apple",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": null,
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "530.17.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 4.4.3; HTC One Build/KTU84L) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36 MxBrowser/4.3.4.2000"
     },
     "device": {
@@ -3796,6 +3758,44 @@
     "engine": {
       "name": "Blink",
       "version": "30.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.0.4; HTC One SV Build/IMM76I) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.59 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "One SV",
+      "marketingName": "One SV",
+      "manufacturer": "htc",
+      "brand": "htc",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 4.3
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "39.0.2171.59",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.0.4",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "39.0.2171.59",
       "manufacturer": "google"
     }
   }

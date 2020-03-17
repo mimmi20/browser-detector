@@ -1,44 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; SM-A310F Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/61.0.3163.81 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/141.0.0.31.91;]"
-    },
-    "device": {
-      "deviceName": "SM-A310F",
-      "marketingName": "Galaxy A3 (2016)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 4.7
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "141.0.0.31.91",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "6.0.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "61.0.3163.81",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 7.0; SM-J710GN Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/62.0.3202.84 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/150.0.0.38.138;]"
     },
     "device": {
@@ -3796,6 +3758,44 @@
     "engine": {
       "name": "Blink",
       "version": "56.0.2924.87",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.0; SM-N900 Build/LRX21V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/42.0.2311.129 Mobile Safari/537.36 [FB_IAB/MESSENGER;FBAV/100.0.0.29.61;]"
+    },
+    "device": {
+      "deviceName": "SM-N900",
+      "marketingName": "Galaxy Note 3 3G",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.7
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook Messenger App",
+      "modus": null,
+      "version": "100.0.0.29.61",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "42.0.2311.129",
       "manufacturer": "google"
     }
   }

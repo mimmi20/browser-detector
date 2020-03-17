@@ -1,6 +1,44 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.0.2; SM-P905 Build/LRX22G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "SM-P905",
+      "marketingName": "Galaxy Note Pro 12.2 LTE",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 2560,
+        "height": 1600,
+        "touch": true,
+        "size": 12.2
+      },
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "62.0.3202.84",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.0.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "62.0.3202.84",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; SAMSUNG SM-T335/T335XXS1BPL3 Build/LMY47X) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/6.2 Chrome/56.0.2924.87 Safari/537.36"
     },
     "device": {
@@ -3758,44 +3796,6 @@
     "engine": {
       "name": "Blink",
       "version": "44.0.2403.119",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.4; SM-T337V Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.83 Safari/537.36"
-    },
-    "device": {
-      "deviceName": "SM-T337V",
-      "marketingName": "Galaxy Tab 4 8.0 4G (Verizon)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 1280,
-        "height": 800,
-        "touch": true,
-        "size": 8
-      },
-      "type": "fone-pad"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "58.0.3029.83",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.4.4",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "58.0.3029.83",
       "manufacturer": "google"
     }
   }

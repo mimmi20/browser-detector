@@ -188,5 +188,43 @@
       "version": null,
       "manufacturer": "apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 7.1.2; en-US; T95ZPLUS Build/NHG47L) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.108 UCBrowser/12.13.2.1208 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "T95Z Plus",
+      "marketingName": "T95Z Plus",
+      "manufacturer": "sunvell",
+      "brand": "sunvell",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv-media-player"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "12.13.2.1208",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.1.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "57.0.2987.108",
+      "manufacturer": "google"
+    }
   }
 ]

@@ -1,44 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; SHV-E330K Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.109 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "SHV-E330K",
-      "marketingName": "Galaxy S4 LTE (Korea)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "40.0.2214.109",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.4.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "40.0.2214.109",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; U; Android 4.3; en-us; SAMSUNG-SGH-I537 Build/JSS15J) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
     },
     "device": {
@@ -3797,6 +3759,44 @@
       "name": "Blink",
       "version": "33.0.0.0",
       "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "UCWEB/2.0 (MIDP-2.0; U; Adr 2.3.6; en-US; GT-S5360) U2/1.0.0 UCBrowser/9.1.1.420 U2/1.0.0 Mobile"
+    },
+    "device": {
+      "deviceName": "GT-S5360",
+      "marketingName": "Galaxy Y",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "size": 3
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "9.1.1.420",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "2.3.6",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "U2",
+      "version": "1.0.0",
+      "manufacturer": "ucweb"
     }
   }
 ]

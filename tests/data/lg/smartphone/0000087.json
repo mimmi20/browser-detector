@@ -1,6 +1,44 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.0.1; LG-H420 Build/LRX21Y) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.137 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "H420",
+      "marketingName": "Spirit 3G",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 4.7
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "64.0.3282.137",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.0.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "64.0.3282.137",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; Nexus 4 Build/LMY48T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.109 Mobile Safari/537.36"
     },
     "device": {
@@ -3760,47 +3798,6 @@
       "name": "WebKit",
       "version": null,
       "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (BREW; Opera Mini/6.0.3/27.2339; U; xx) Presto/2.8.119 320X240 LG VN530",
-      "x-operamini-features": "advanced, download, file_system, folding",
-      "x-operamini-phone": "LG # VN530",
-      "x-operamini-phone-ua": "LG VN530"
-    },
-    "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "6.0.3",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Brew",
-      "marketingName": "Brew",
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.8.119",
-      "manufacturer": "opera"
     }
   }
 ]

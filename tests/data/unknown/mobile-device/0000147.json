@@ -1,44 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "{version:6.2003.0,platform:server_android,osversion:10}"
-    },
-    "device": {
-      "deviceName": "general Mobile device",
-      "marketingName": "general Mobile device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": "Android Webkit",
-      "modus": null,
-      "version": null,
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "{version:6.2002.0,platform:server_android,osversion:8.0.0}"
     },
     "device": {
@@ -1331,6 +1293,44 @@
   },
   {
     "headers": {
+      "user-agent": "PWACrawler +@SamsungInternet"
+    },
+    "device": {
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device"
+    },
+    "browser": {
+      "name": "Crawler",
+      "modus": null,
+      "version": null,
+      "manufacturer": "linkfluence",
+      "bits": null,
+      "type": "bot"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "{version:6.2008.0,platform:server_android,osversion:10}"
     },
     "device": {
@@ -2049,6 +2049,82 @@
       "name": "Presto",
       "version": "2.12.423",
       "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Dalvik/1.6.0 (Linux; U; Android 4.4.2; NUVO Green ND 45 Build/KOT49H)"
+    },
+    "device": {
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device"
+    },
+    "browser": {
+      "name": "Dalvik",
+      "modus": null,
+      "version": "1.6.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Mobile; CAT B35; rv:48.0) Gecko/48.0 Firefox/48.0 KAIOS/2.5.1"
+    },
+    "device": {
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device"
+    },
+    "browser": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "48.0.0",
+      "manufacturer": "mozilla-foundation",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "kaios",
+      "marketingName": "kaios",
+      "version": "2.5.1",
+      "manufacturer": "kaios",
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "48.0.0",
+      "manufacturer": "mozilla-foundation"
     }
   }
 ]
