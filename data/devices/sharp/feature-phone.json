@@ -27,6 +27,20 @@
     "type": "feature-phone",
     "platform": "java"
   },
+  "sharp 703sh": {
+    "deviceName": "703SH",
+    "marketingName": "703SH",
+    "manufacturer": "sharp",
+    "brand": "softbank",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "sharp 811sh": {
     "deviceName": "811SH",
     "marketingName": "811SH",
@@ -139,6 +153,20 @@
     "type": "feature-phone",
     "platform": "java"
   },
+  "sharp 902sh": {
+    "deviceName": "902SH",
+    "marketingName": "902SH",
+    "manufacturer": "sharp",
+    "brand": "softbank",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "sharp 911sh": {
     "deviceName": "911SH",
     "marketingName": "911SH",
@@ -153,16 +181,16 @@
     "type": "feature-phone",
     "platform": "java"
   },
-  "sharp 902sh": {
-    "deviceName": "902SH",
-    "marketingName": "902SH",
+  "sharp 920sh": {
+    "deviceName": "920SH",
+    "marketingName": "920SH",
     "manufacturer": "sharp",
     "brand": "softbank",
     "display": {
-      "width": 320,
-      "height": 240,
+      "width": 854,
+      "height": 480,
       "touch": false,
-      "size": null
+      "size": 3.2
     },
     "type": "feature-phone",
     "platform": "java"
@@ -209,6 +237,34 @@
     "type": "feature-phone",
     "platform": "java"
   },
+  "sharp ws011sh": {
+    "deviceName": "WS011SH",
+    "marketingName": "Advanced W-Zero",
+    "manufacturer": "sharp",
+    "brand": "willcom",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": false,
+      "size": 3
+    },
+    "type": "feature-phone",
+    "platform": "windows ce"
+  },
+  "sharp 931sh": {
+    "deviceName": "931SH",
+    "marketingName": "Aquos FullTouch",
+    "manufacturer": "sharp",
+    "brand": "softbank",
+    "display": {
+      "width": 1024,
+      "height": 480,
+      "touch": false,
+      "size": 3.8
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "sharp stx2": {
     "deviceName": "STX2",
     "marketingName": "FX",
@@ -223,6 +279,160 @@
     "type": "feature-phone",
     "platform": "java"
   },
+  "sharp tq-gx1": {
+    "deviceName": "GX1",
+    "marketingName": "GX1",
+    "manufacturer": "sharp",
+    "brand": "sharp",
+    "display": {
+      "width": 160,
+      "height": 120,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "sharp tq-gx10": {
+    "deviceName": "GX10",
+    "marketingName": "GX10",
+    "manufacturer": "sharp",
+    "brand": "sharp",
+    "display": {
+      "width": 160,
+      "height": 120,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "sharp tq-gx10n": {
+    "deviceName": "GX10N",
+    "marketingName": "GX10N",
+    "manufacturer": "sharp",
+    "brand": "sharp",
+    "display": {
+      "width": 160,
+      "height": 120,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "sharp tq-gx15": {
+    "deviceName": "GX15",
+    "marketingName": "GX15",
+    "manufacturer": "sharp",
+    "brand": "sharp",
+    "display": {
+      "width": 160,
+      "height": 120,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "sharp tq-gx17": {
+    "deviceName": "GX17",
+    "marketingName": "GX17",
+    "manufacturer": "sharp",
+    "brand": "sharp",
+    "display": {
+      "width": 160,
+      "height": 120,
+      "touch": false,
+      "size": 1.9
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "sharp tq-gx22": {
+    "deviceName": "GX22",
+    "marketingName": "GX22",
+    "manufacturer": "sharp",
+    "brand": "sharp",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "sharp tq-gx22s": {
+    "deviceName": "GX22S",
+    "marketingName": "GX22S",
+    "manufacturer": "sharp",
+    "brand": "sharp",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "sharp tq-gx25": {
+    "deviceName": "GX25",
+    "marketingName": "GX25",
+    "manufacturer": "sharp",
+    "brand": "sharp",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "sharp tq-gx27": {
+    "deviceName": "GX27",
+    "marketingName": "GX27",
+    "manufacturer": "sharp",
+    "brand": "sharp",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "sharp tq-gx29": {
+    "deviceName": "GX29",
+    "marketingName": "GX29",
+    "manufacturer": "sharp",
+    "brand": "sharp",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "sharp tq-gx30": {
+    "deviceName": "GX30",
+    "marketingName": "GX30",
+    "manufacturer": "sharp",
+    "brand": "sharp",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": 2.2
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "sharp tq-gx30i": {
     "deviceName": "GX30i",
     "marketingName": "GX30i",
@@ -231,6 +441,48 @@
     "display": {
       "width": 320,
       "height": 240,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "sharp tq-gx32": {
+    "deviceName": "GX32",
+    "marketingName": "GX32",
+    "manufacturer": "sharp",
+    "brand": "sharp",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": 2.2
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "sharp tq-gz100": {
+    "deviceName": "GZ100",
+    "marketingName": "GZ100",
+    "manufacturer": "sharp",
+    "brand": "sharp",
+    "display": {
+      "width": 160,
+      "height": 120,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "sharp tq-gz100s": {
+    "deviceName": "GZ100S",
+    "marketingName": "GZ100S",
+    "manufacturer": "sharp",
+    "brand": "sharp",
+    "display": {
+      "width": 160,
+      "height": 120,
       "touch": false,
       "size": null
     },
@@ -587,6 +839,90 @@
     "type": "feature-phone",
     "platform": "symbian"
   },
+  "sharp sx813": {
+    "deviceName": "SX813",
+    "marketingName": "SX813",
+    "manufacturer": "sharp",
+    "brand": "vodafone",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": 2.4
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "sharp sx833": {
+    "deviceName": "SX833",
+    "marketingName": "SX833",
+    "manufacturer": "sharp",
+    "brand": "vodafone",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "sharp tm-100": {
+    "deviceName": "TM-100",
+    "marketingName": "TM-100",
+    "manufacturer": "sharp",
+    "brand": "sharp",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "sharp tm-150": {
+    "deviceName": "TM-150",
+    "marketingName": "TM-150",
+    "manufacturer": "sharp",
+    "brand": "sharp",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": 2.2
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "sharp tq-gx-a25": {
+    "deviceName": "TQ-GX-A25",
+    "marketingName": "TQ-GX-A25",
+    "manufacturer": "sharp",
+    "brand": "sharp",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "sharp tq-gx-e30": {
+    "deviceName": "TQ-GX-E30",
+    "marketingName": "TQ-GX-E30",
+    "manufacturer": "sharp",
+    "brand": "sharp",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": 2.2
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "sharp tq-gx20": {
     "deviceName": "TQ-GX20",
     "marketingName": "TQ-GX20",
@@ -657,6 +993,20 @@
     "type": "feature-phone",
     "platform": "java"
   },
+  "sharp tq-v750": {
+    "deviceName": "V750",
+    "marketingName": "V750",
+    "manufacturer": "sharp",
+    "brand": "sharp",
+    "display": {
+      "width": 160,
+      "height": 120,
+      "touch": false,
+      "size": 2
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "sharp v801sh": {
     "deviceName": "V801SH",
     "marketingName": "V801SH",
@@ -693,6 +1043,20 @@
     "display": {
       "width": null,
       "height": null,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "sharp v902sh": {
+    "deviceName": "V902SH",
+    "marketingName": "V902SH",
+    "manufacturer": "sharp",
+    "brand": "vodafone",
+    "display": {
+      "width": 320,
+      "height": 240,
       "touch": false,
       "size": null
     },
@@ -754,369 +1118,5 @@
     },
     "type": "feature-phone",
     "platform": "windows ce"
-  },
-  "sharp ws011sh": {
-    "deviceName": "WS011SH",
-    "marketingName": "Advanced W-Zero",
-    "manufacturer": "sharp",
-    "brand": "willcom",
-    "display": {
-      "width": 800,
-      "height": 480,
-      "touch": false,
-      "size": 3
-    },
-    "type": "feature-phone",
-    "platform": "windows ce"
-  },
-  "sharp 920sh": {
-    "deviceName": "920SH",
-    "marketingName": "920SH",
-    "manufacturer": "sharp",
-    "brand": "softbank",
-    "display": {
-      "width": 854,
-      "height": 480,
-      "touch": false,
-      "size": 3.2
-    },
-    "type": "feature-phone",
-    "platform": "java"
-  },
-  "sharp v902sh": {
-    "deviceName": "V902SH",
-    "marketingName": "V902SH",
-    "manufacturer": "sharp",
-    "brand": "vodafone",
-    "display": {
-      "width": 320,
-      "height": 240,
-      "touch": false,
-      "size": null
-    },
-    "type": "feature-phone",
-    "platform": "java"
-  },
-  "sharp 703sh": {
-    "deviceName": "703SH",
-    "marketingName": "703SH",
-    "manufacturer": "sharp",
-    "brand": "softbank",
-    "display": {
-      "width": 320,
-      "height": 240,
-      "touch": false,
-      "size": null
-    },
-    "type": "feature-phone",
-    "platform": "java"
-  },
-  "sharp 931sh": {
-    "deviceName": "931SH",
-    "marketingName": "Aquos FullTouch",
-    "manufacturer": "sharp",
-    "brand": "softbank",
-    "display": {
-      "width": 1024,
-      "height": 480,
-      "touch": false,
-      "size": 3.8
-    },
-    "type": "feature-phone",
-    "platform": "java"
-  },
-  "sharp sx813": {
-    "deviceName": "SX813",
-    "marketingName": "SX813",
-    "manufacturer": "sharp",
-    "brand": "vodafone",
-    "display": {
-      "width": 320,
-      "height": 240,
-      "touch": false,
-      "size": 2.4
-    },
-    "type": "feature-phone",
-    "platform": "java"
-  },
-  "sharp sx833": {
-    "deviceName": "SX833",
-    "marketingName": "SX833",
-    "manufacturer": "sharp",
-    "brand": "vodafone",
-    "display": {
-      "width": 320,
-      "height": 240,
-      "touch": false,
-      "size": null
-    },
-    "type": "feature-phone",
-    "platform": "java"
-  },
-  "sharp tq-v750": {
-    "deviceName": "V750",
-    "marketingName": "V750",
-    "manufacturer": "sharp",
-    "brand": "sharp",
-    "display": {
-      "width": 160,
-      "height": 120,
-      "touch": false,
-      "size": 2
-    },
-    "type": "feature-phone",
-    "platform": "java"
-  },
-  "sharp tq-gz100s": {
-    "deviceName": "GZ100S",
-    "marketingName": "GZ100S",
-    "manufacturer": "sharp",
-    "brand": "sharp",
-    "display": {
-      "width": 160,
-      "height": 120,
-      "touch": false,
-      "size": null
-    },
-    "type": "feature-phone",
-    "platform": "java"
-  },
-  "sharp tq-gz100": {
-    "deviceName": "GZ100",
-    "marketingName": "GZ100",
-    "manufacturer": "sharp",
-    "brand": "sharp",
-    "display": {
-      "width": 160,
-      "height": 120,
-      "touch": false,
-      "size": null
-    },
-    "type": "feature-phone",
-    "platform": "java"
-  },
-  "sharp tq-gx32": {
-    "deviceName": "GX32",
-    "marketingName": "GX32",
-    "manufacturer": "sharp",
-    "brand": "sharp",
-    "display": {
-      "width": 320,
-      "height": 240,
-      "touch": false,
-      "size": 2.2
-    },
-    "type": "feature-phone",
-    "platform": "java"
-  },
-  "sharp tq-gx30": {
-    "deviceName": "GX30",
-    "marketingName": "GX30",
-    "manufacturer": "sharp",
-    "brand": "sharp",
-    "display": {
-      "width": 320,
-      "height": 240,
-      "touch": false,
-      "size": 2.2
-    },
-    "type": "feature-phone",
-    "platform": "java"
-  },
-  "sharp tq-gx29": {
-    "deviceName": "GX29",
-    "marketingName": "GX29",
-    "manufacturer": "sharp",
-    "brand": "sharp",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": false,
-      "size": null
-    },
-    "type": "feature-phone",
-    "platform": "java"
-  },
-  "sharp tq-gx27": {
-    "deviceName": "GX27",
-    "marketingName": "GX27",
-    "manufacturer": "sharp",
-    "brand": "sharp",
-    "display": {
-      "width": 320,
-      "height": 240,
-      "touch": false,
-      "size": null
-    },
-    "type": "feature-phone",
-    "platform": "java"
-  },
-  "sharp tq-gx25": {
-    "deviceName": "GX25",
-    "marketingName": "GX25",
-    "manufacturer": "sharp",
-    "brand": "sharp",
-    "display": {
-      "width": 320,
-      "height": 240,
-      "touch": false,
-      "size": null
-    },
-    "type": "feature-phone",
-    "platform": "java"
-  },
-  "sharp tq-gx22s": {
-    "deviceName": "GX22S",
-    "marketingName": "GX22S",
-    "manufacturer": "sharp",
-    "brand": "sharp",
-    "display": {
-      "width": 320,
-      "height": 240,
-      "touch": false,
-      "size": null
-    },
-    "type": "feature-phone",
-    "platform": "java"
-  },
-  "sharp tq-gx22": {
-    "deviceName": "GX22",
-    "marketingName": "GX22",
-    "manufacturer": "sharp",
-    "brand": "sharp",
-    "display": {
-      "width": 320,
-      "height": 240,
-      "touch": false,
-      "size": null
-    },
-    "type": "feature-phone",
-    "platform": "java"
-  },
-  "sharp tq-gx17": {
-    "deviceName": "GX17",
-    "marketingName": "GX17",
-    "manufacturer": "sharp",
-    "brand": "sharp",
-    "display": {
-      "width": 160,
-      "height": 120,
-      "touch": false,
-      "size": 1.9
-    },
-    "type": "feature-phone",
-    "platform": "java"
-  },
-  "sharp tq-gx15": {
-    "deviceName": "GX15",
-    "marketingName": "GX15",
-    "manufacturer": "sharp",
-    "brand": "sharp",
-    "display": {
-      "width": 160,
-      "height": 120,
-      "touch": false,
-      "size": null
-    },
-    "type": "feature-phone",
-    "platform": "java"
-  },
-  "sharp tq-gx10n": {
-    "deviceName": "GX10N",
-    "marketingName": "GX10N",
-    "manufacturer": "sharp",
-    "brand": "sharp",
-    "display": {
-      "width": 160,
-      "height": 120,
-      "touch": false,
-      "size": null
-    },
-    "type": "feature-phone",
-    "platform": "java"
-  },
-  "sharp tq-gx10": {
-    "deviceName": "GX10",
-    "marketingName": "GX10",
-    "manufacturer": "sharp",
-    "brand": "sharp",
-    "display": {
-      "width": 160,
-      "height": 120,
-      "touch": false,
-      "size": null
-    },
-    "type": "feature-phone",
-    "platform": "java"
-  },
-  "sharp tq-gx1": {
-    "deviceName": "GX1",
-    "marketingName": "GX1",
-    "manufacturer": "sharp",
-    "brand": "sharp",
-    "display": {
-      "width": 160,
-      "height": 120,
-      "touch": false,
-      "size": null
-    },
-    "type": "feature-phone",
-    "platform": "java"
-  },
-  "sharp tq-gx-e30": {
-    "deviceName": "TQ-GX-E30",
-    "marketingName": "TQ-GX-E30",
-    "manufacturer": "sharp",
-    "brand": "sharp",
-    "display": {
-      "width": 320,
-      "height": 240,
-      "touch": false,
-      "size": 2.2
-    },
-    "type": "feature-phone",
-    "platform": "java"
-  },
-  "sharp tq-gx-a25": {
-    "deviceName": "TQ-GX-A25",
-    "marketingName": "TQ-GX-A25",
-    "manufacturer": "sharp",
-    "brand": "sharp",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": false,
-      "size": null
-    },
-    "type": "feature-phone",
-    "platform": "java"
-  },
-  "sharp tm-150": {
-    "deviceName": "TM-150",
-    "marketingName": "TM-150",
-    "manufacturer": "sharp",
-    "brand": "sharp",
-    "display": {
-      "width": 320,
-      "height": 240,
-      "touch": false,
-      "size": 2.2
-    },
-    "type": "feature-phone",
-    "platform": "java"
-  },
-  "sharp tm-100": {
-    "deviceName": "TM-100",
-    "marketingName": "TM-100",
-    "manufacturer": "sharp",
-    "brand": "sharp",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": false,
-      "size": null
-    },
-    "type": "feature-phone",
-    "platform": "java"
   }
 }
