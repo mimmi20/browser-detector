@@ -643,9 +643,51 @@
     "type": "phablet",
     "platform": "android"
   },
+  "samsung sm-g980f": {
+    "deviceName": "SM-G980F",
+    "marketingName": "Galaxy S20 4G",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 3200,
+      "height": 1440,
+      "touch": true,
+      "size": 6.2
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sm-g980": {
+    "deviceName": "SM-G980",
+    "marketingName": "Galaxy S20 4G",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 3200,
+      "height": 1440,
+      "touch": true,
+      "size": 6.2
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sm-g981b": {
+    "deviceName": "SM-G981B",
+    "marketingName": "Galaxy S20 5G",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 3200,
+      "height": 1440,
+      "touch": true,
+      "size": 6.2
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
   "samsung sm-g985": {
     "deviceName": "SM-G985",
-    "marketingName": "Galaxy S20 Plus",
+    "marketingName": "Galaxy S20 Plus 4G",
     "manufacturer": "samsung",
     "brand": "samsung",
     "display": {
@@ -659,7 +701,21 @@
   },
   "samsung sm-g985f": {
     "deviceName": "SM-G985F",
-    "marketingName": "Galaxy S20 Plus",
+    "marketingName": "Galaxy S20 Plus 4G",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 3200,
+      "height": 1440,
+      "touch": true,
+      "size": 6.7
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sm-g986b": {
+    "deviceName": "SM-G986B",
+    "marketingName": "Galaxy S20 Plus 5G",
     "manufacturer": "samsung",
     "brand": "samsung",
     "display": {
@@ -684,5 +740,19 @@
     },
     "type": "phablet",
     "platform": "android"
+  },
+  "samsung sm-f700u": {
+    "deviceName": "SM-F700U",
+    "marketingName": "Galaxy Z Flip",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 2636,
+      "height": 1080,
+      "touch": true,
+      "size": 6.7
+    },
+    "type": "smartphone",
+    "platform": "phablet"
   }
 }
