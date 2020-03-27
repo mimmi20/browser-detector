@@ -26,5 +26,33 @@
     },
     "type": "tablet",
     "platform": "android"
+  },
+  "smart-q t10": {
+    "deviceName": "T10",
+    "marketingName": "Ten",
+    "manufacturer": "smart-q",
+    "brand": "smart-q",
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "size": 9.7
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "smart-q t19": {
+    "deviceName": "T19",
+    "marketingName": "T19",
+    "manufacturer": "smart-q",
+    "brand": "smart-q",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": 10.1
+    },
+    "type": "tablet",
+    "platform": "android"
   }
 }
