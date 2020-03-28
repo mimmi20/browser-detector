@@ -1,10 +1,15 @@
 {
   "rules": {
     "/v7/i": "smart-q v7",
+    "/v5-?ii/i": "smart-q v5-ii",
+    "/v5/i": "smart-q v5",
+    "/t30/i": "smart-q t30",
+    "/t20/i": "smart-q t20",
     "/t19/i": "smart-q t19",
     "/t15/i": "smart-q t15",
     "/t12/i": "smart-q t12",
     "/t10/i": "smart-q t10",
+    "/t7 /i": "smart-q t7",
     "/r10/i": "smart-q r10"
   },
   "generic": "general smart-q device"

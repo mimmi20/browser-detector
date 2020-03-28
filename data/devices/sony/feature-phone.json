@@ -1146,5 +1146,33 @@
     },
     "type": "feature-phone",
     "platform": "java"
+  },
+  "sonyericsson k310iv": {
+    "deviceName": "K310iv",
+    "marketingName": "K310iv",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": 1.8
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "sonyericsson p100": {
+    "deviceName": "P100",
+    "marketingName": "P100",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": 640,
+      "height": 360,
+      "touch": false,
+      "size": 3.5
+    },
+    "type": "feature-phone",
+    "platform": "symbian"
   }
 }
