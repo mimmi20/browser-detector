@@ -643,8 +643,8 @@
     "type": "phablet",
     "platform": "android"
   },
-  "samsung sm-g980f": {
-    "deviceName": "SM-G980F",
+  "samsung sm-g980": {
+    "deviceName": "SM-G980",
     "marketingName": "Galaxy S20 4G",
     "manufacturer": "samsung",
     "brand": "samsung",
@@ -657,8 +657,8 @@
     "type": "phablet",
     "platform": "android"
   },
-  "samsung sm-g980": {
-    "deviceName": "SM-G980",
+  "samsung sm-g980f": {
+    "deviceName": "SM-G980F",
     "marketingName": "Galaxy S20 4G",
     "manufacturer": "samsung",
     "brand": "samsung",
@@ -752,7 +752,7 @@
       "touch": true,
       "size": 6.7
     },
-    "type": "smartphone",
-    "platform": "phablet"
+    "type": "phablet",
+    "platform": "android"
   }
 }

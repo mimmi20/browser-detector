@@ -1,56 +1,18 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.1-update1; ru-ru; SmartQR10 Build/ECLAIR) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Mobile Safari/530.17"
-    },
-    "device": {
-      "deviceName": "general SmartQ device",
-      "marketingName": "general SmartQ device",
-      "manufacturer": "smart-q",
-      "brand": "smart-q",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "tablet"
-    },
-    "browser": {
-      "name": "Android Webkit",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "2.1.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "530.17.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; U; Android 2.2.1; en-gb; SmartQT10 Build/MID) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
     },
     "device": {
-      "deviceName": "general SmartQ device",
-      "marketingName": "general SmartQ device",
+      "deviceName": "T10",
+      "marketingName": "Ten",
       "manufacturer": "smart-q",
       "brand": "smart-q",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1024,
+        "height": 768,
         "touch": true,
-        "size": null
+        "size": 9.7
       },
       "type": "tablet"
     },
@@ -72,82 +34,6 @@
     "engine": {
       "name": "WebKit",
       "version": "533.1.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.2.1; Ru-ru; SmartQT12 Build/MID) AppleWebKit/533.1 (KHTML, Like Gecko) Version/4.0 Mobile Safari/533.1"
-    },
-    "device": {
-      "deviceName": "general SmartQ device",
-      "marketingName": "general SmartQ device",
-      "manufacturer": "smart-q",
-      "brand": "smart-q",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "tablet"
-    },
-    "browser": {
-      "name": "Android Webkit",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "2.2.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "533.1.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.0.1; SmartQT15 Build/ICS_MR0) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166 Safari/535.19"
-    },
-    "device": {
-      "deviceName": "general SmartQ device",
-      "marketingName": "general SmartQ device",
-      "manufacturer": "smart-q",
-      "brand": "smart-q",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "tablet"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "18.0.1025.166",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.0.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "535.19.0",
       "manufacturer": "apple"
     }
   },
@@ -156,15 +42,15 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 4.0.4; de-de; SmartQT19 Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30"
     },
     "device": {
-      "deviceName": "general SmartQ device",
-      "marketingName": "general SmartQ device",
+      "deviceName": "T19",
+      "marketingName": "T19",
       "manufacturer": "smart-q",
       "brand": "smart-q",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1280,
+        "height": 800,
         "touch": true,
-        "size": null
+        "size": 10.1
       },
       "type": "tablet"
     },
@@ -194,15 +80,15 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 4.0.4; SmartQT20 Build/IMM76D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/30.0.1599.92 Safari/537.36"
     },
     "device": {
-      "deviceName": "general SmartQ device",
-      "marketingName": "general SmartQ device",
+      "deviceName": "T20",
+      "marketingName": "T20",
       "manufacturer": "smart-q",
       "brand": "smart-q",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1280,
+        "height": 800,
         "touch": true,
-        "size": null
+        "size": 10.1
       },
       "type": "tablet"
     },
@@ -232,15 +118,15 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 4.0.4; SmartQT30 Build/IMM76D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.72 Mobile Safari/537.36 OPR/16.0.1212.64462"
     },
     "device": {
-      "deviceName": "general SmartQ device",
-      "marketingName": "general SmartQ device",
+      "deviceName": "T30",
+      "marketingName": "T30",
       "manufacturer": "smart-q",
       "brand": "smart-q",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1280,
+        "height": 800,
         "touch": true,
-        "size": null
+        "size": 10.1
       },
       "type": "tablet"
     },
@@ -270,15 +156,15 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 2.1-update1; En-ca; SmartQT7 Build/ECLAIR) AppleWebKit/530.17 (KHTML, Like Gecko) Version/4.0 Mobile Safari/530.17"
     },
     "device": {
-      "deviceName": "general SmartQ device",
-      "marketingName": "general SmartQ device",
+      "deviceName": "T7",
+      "marketingName": "T7",
       "manufacturer": "smart-q",
       "brand": "smart-q",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 800,
+        "height": 600,
         "touch": true,
-        "size": null
+        "size": 7
       },
       "type": "tablet"
     },
@@ -308,15 +194,15 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 2.1-update1-corvusMODV6; es-es; SmartQ V5 Build/ECLAIR) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Mobile Safari/530.17"
     },
     "device": {
-      "deviceName": "general SmartQ device",
-      "marketingName": "general SmartQ device",
+      "deviceName": "V5",
+      "marketingName": "V5",
       "manufacturer": "smart-q",
       "brand": "smart-q",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 800,
+        "height": 480,
         "touch": true,
-        "size": null
+        "size": 4.3
       },
       "type": "tablet"
     },
@@ -332,44 +218,6 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "2.1.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "530.17.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 3.1-update1; zh-cn; SmartQV5II Build/Honeycomb) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Mobile Safari/530.17"
-    },
-    "device": {
-      "deviceName": "general SmartQ device",
-      "marketingName": "general SmartQ device",
-      "manufacturer": "smart-q",
-      "brand": "smart-q",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "tablet"
-    },
-    "browser": {
-      "name": "Android Webkit",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "3.1.0",
       "manufacturer": "google",
       "bits": null
     },

@@ -13,6 +13,20 @@
     "type": "smartphone",
     "platform": null
   },
+  "kyocera e6782": {
+    "deviceName": "E6782",
+    "marketingName": "Brigadier",
+    "manufacturer": "kyocera",
+    "brand": "kyocera",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 4.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "kyocera c6745": {
     "deviceName": "C6745",
     "marketingName": "C6745",
@@ -79,6 +93,34 @@
       "height": 720,
       "touch": true,
       "size": null
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "kyocera e6910": {
+    "deviceName": "E6910",
+    "marketingName": "DuraForce Pro 2",
+    "manufacturer": "kyocera",
+    "brand": "kyocera",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": 5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "kyocera e6810": {
+    "deviceName": "E6810",
+    "marketingName": "DuraForce Pro XLTE",
+    "manufacturer": "kyocera",
+    "brand": "kyocera",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": 5
     },
     "type": "smartphone",
     "platform": "android"
@@ -265,48 +307,6 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "kyocera kyy21": {
-    "deviceName": "KYY21",
-    "marketingName": "Urbano L01",
-    "manufacturer": "kyocera",
-    "brand": "kyocera",
-    "display": {
-      "width": 1280,
-      "height": 720,
-      "touch": true,
-      "size": 4.7
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
-  "kyocera e6782": {
-    "deviceName": "E6782",
-    "marketingName": "Brigadier",
-    "manufacturer": "kyocera",
-    "brand": "kyocera",
-    "display": {
-      "width": 1280,
-      "height": 720,
-      "touch": true,
-      "size": 4.5
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
-  "kyocera e6810": {
-    "deviceName": "E6810",
-    "marketingName": "DuraForce Pro XLTE",
-    "manufacturer": "kyocera",
-    "brand": "kyocera",
-    "display": {
-      "width": 1920,
-      "height": 1080,
-      "touch": true,
-      "size": 5
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
   "kyocera e6715": {
     "deviceName": "E6715",
     "marketingName": "Torque XT",
@@ -321,16 +321,16 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "kyocera e6910": {
-    "deviceName": "E6910",
-    "marketingName": "DuraForce Pro 2",
+  "kyocera kyy21": {
+    "deviceName": "KYY21",
+    "marketingName": "Urbano L01",
     "manufacturer": "kyocera",
     "brand": "kyocera",
     "display": {
-      "width": 1920,
-      "height": 1080,
+      "width": 1280,
+      "height": 720,
       "touch": true,
-      "size": 5
+      "size": 4.7
     },
     "type": "smartphone",
     "platform": "android"
