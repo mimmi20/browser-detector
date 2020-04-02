@@ -875,44 +875,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.1.1; Smartfren Tab 7 Build/JRO03H) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166  Safari/535.19"
-    },
-    "device": {
-      "deviceName": "general Smartfren device",
-      "marketingName": "general Smartfren device",
-      "manufacturer": "smartfren",
-      "brand": "smartfren",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "18.0.1025.166",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.1.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "535.19.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; Smartfren Andromax AD6B1H Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/28.0.0.20.16;]"
     },
     "device": {
@@ -2740,15 +2702,15 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 5.0.2; en-US; Andromax C46B2H Build/LRX22G) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/10.10.8.820 U3/0.8.0 Mobile Safari/534.30"
     },
     "device": {
-      "deviceName": "general Smartfren device",
-      "marketingName": "general Smartfren device",
+      "deviceName": "C46B2H",
+      "marketingName": "Andromax",
       "manufacturer": "smartfren",
       "brand": "smartfren",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 800,
+        "height": 480,
         "touch": true,
-        "size": null
+        "size": 3.9
       },
       "type": "smartphone"
     },
@@ -2847,6 +2809,44 @@
       "name": "U3",
       "version": "0.8.0",
       "manufacturer": "ucweb"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.3.0; en-us; Andromax C Sulthan Rafi XPERIA Mod Build/IMM76I) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
+    },
+    "device": {
+      "deviceName": "Andromax C",
+      "marketingName": "Andromax C",
+      "manufacturer": "smartfren",
+      "brand": "smartfren",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.3.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "apple"
     }
   }
 ]
