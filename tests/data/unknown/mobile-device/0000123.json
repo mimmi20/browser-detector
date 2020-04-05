@@ -1,82 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "Dalvik/2.1.0 Linux; U; Android 7.0; FS8028 Build/NRD90M"
-    },
-    "device": {
-      "deviceName": "general Mobile device",
-      "marketingName": "general Mobile device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": "Dalvik",
-      "modus": null,
-      "version": "2.1.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "7.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Dalvik/2.1.0 Linux; U; Android 7.0; FS8009 Build/NRD90M"
-    },
-    "device": {
-      "deviceName": "general Mobile device",
-      "marketingName": "general Mobile device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": "Dalvik",
-      "modus": null,
-      "version": "2.1.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "7.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "UCWEB/2.0 (MIDP-2.0; U; Adr 4.2.2; es-LA; Sky_3.5) U2/1.0.0 UCBrowser/9.1.1.420 U2/1.0.0 Mobile"
     },
     "device": {
@@ -3791,6 +3715,82 @@
       "marketingName": "MAUI Runtime Environment",
       "version": null,
       "manufacturer": "mediatek",
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.12.423",
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/9.80 (Android; Opera Mini/8.0.1807/37.8380; U; en) Presto/2.12.423 Version/12.16"
+    },
+    "device": {
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device"
+    },
+    "browser": {
+      "name": "Opera Mini",
+      "modus": null,
+      "version": "8.0.1807",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": null,
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.12.423",
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/9.80 (Android; Opera Mini/12.0.1987/37.9093; U; en) Presto/2.12.423 Version/12.16"
+    },
+    "device": {
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device"
+    },
+    "browser": {
+      "name": "Opera Mini",
+      "modus": null,
+      "version": "12.0.1987",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": null,
+      "manufacturer": "google",
       "bits": null
     },
     "engine": {

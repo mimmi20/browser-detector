@@ -1,25 +1,63 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.1; G8141 Build/45.0.A.5.1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/59.0.3071.125 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/137.0.0.24.91;]"
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.0.0; F8331 Build/41.3.A.2.58; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/64.0.3282.137 Mobile Safari/537.36 [FB_IAB/Orca-Android;FBAV/151.0.0.17.95;]"
     },
     "device": {
-      "deviceName": "G8141",
-      "marketingName": "Xperia XZ Premium",
+      "deviceName": "F8331",
+      "marketingName": "Xperia XZ",
       "manufacturer": "sony",
       "brand": "sony",
       "display": {
-        "width": 3840,
-        "height": 2160,
+        "width": 1920,
+        "height": 1080,
         "touch": true,
-        "size": 5.46
+        "size": 5.2
       },
       "type": "smartphone"
     },
     "browser": {
       "name": "Facebook App",
       "modus": null,
-      "version": "137.0.0.24.91",
+      "version": "151.0.0.17.95",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "64.0.3282.137",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.1; E6653 Build/32.4.A.0.160; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/61.0.3163.98 Mobile Safari/537.36 [FB_IAB/MESSENGER;FBAV/138.0.0.20.92;]"
+    },
+    "device": {
+      "deviceName": "E6653",
+      "marketingName": "Xperia Z5",
+      "manufacturer": "sony",
+      "brand": "sony",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.2
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook Messenger App",
+      "modus": null,
+      "version": "138.0.0.20.92",
       "manufacturer": "facebook",
       "bits": null,
       "type": "application"
@@ -33,169 +71,17 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "59.0.3071.125",
+      "version": "61.0.3163.98",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "UCWEB/2.0 (MIDP-2.0; U; Adr 7.0; en-US; F3116) U2/1.0.0 UCBrowser/10.6.0.706 U2/1.0.0 Mobile"
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.0.2; D6683 Build/23.1.2.E.0.13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.126 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "F3116",
-      "marketingName": "Xperia XA Dual SIM",
-      "manufacturer": "sony",
-      "brand": "sony",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "10.6.0.706",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "7.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "U2",
-      "version": "1.0.0",
-      "manufacturer": "ucweb"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; D2502 Build/19.2.A.0.391) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.125 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "D2502",
-      "marketingName": "Xperia C3 Dual",
-      "manufacturer": "sony",
-      "brand": "sony",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 5.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "59.0.3071.125",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.4.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "59.0.3071.125",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.1; E6883 Build/32.4.A.1.54) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "E6883",
-      "marketingName": "Xperia Z5 Premium Dual",
-      "manufacturer": "sony",
-      "brand": "sony",
-      "display": {
-        "width": 3840,
-        "height": 2160,
-        "touch": true,
-        "size": 5.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "63.0.3239.111",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "7.1.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "63.0.3239.111",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; F3112 Build/33.3.A.0.131) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.125 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "F3112",
-      "marketingName": "Xperia XA Dual SIM",
-      "manufacturer": "sony",
-      "brand": "sony",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "59.0.3071.125",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "7.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "59.0.3071.125",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; D6633 Build/23.4.A.1.264) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "D6633",
-      "marketingName": "Xperia Z3 Dual SIM",
+      "deviceName": "D6683",
+      "marketingName": "Xperia Z3",
       "manufacturer": "sony",
       "brand": "sony",
       "display": {
@@ -209,7 +95,7 @@
     "browser": {
       "name": "Chrome",
       "modus": null,
-      "version": "50.0.2661.89",
+      "version": "66.0.3359.126",
       "manufacturer": "google",
       "bits": null,
       "type": "browser"
@@ -217,57 +103,19 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "5.1.1",
+      "version": "5.0.2",
       "manufacturer": "google",
       "bits": null
     },
     "engine": {
       "name": "Blink",
-      "version": "50.0.2661.89",
+      "version": "66.0.3359.126",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.1; E5563 Build/29.1.B.0.101) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.91 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "E5563",
-      "marketingName": "Xperia C5 Ultra Dual SIM",
-      "manufacturer": "sony",
-      "brand": "sony",
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 6
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "55.0.2883.91",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.1.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "55.0.2883.91",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 8.0.0; G8142 Build/47.1.A.12.145; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/65.0.3325.109 Mobile Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.1; G8142 Build/45.0.A.5.1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/55.0.2883.91 Mobile Safari/537.36"
     },
     "device": {
       "deviceName": "G8142",
@@ -285,7 +133,45 @@
     "browser": {
       "name": "Android WebView",
       "modus": null,
-      "version": "65.0.3325.109",
+      "version": "55.0.2883.91",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "55.0.2883.91",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.0.0; G8142 Build/47.1.A.5.51) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "G8142",
+      "marketingName": "Xperia XZ Premium Dual",
+      "manufacturer": "sony",
+      "brand": "sony",
+      "display": {
+        "width": 3840,
+        "height": 2160,
+        "touch": true,
+        "size": 5.46
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "62.0.3202.84",
       "manufacturer": "google",
       "bits": null,
       "type": "browser"
@@ -299,31 +185,335 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "65.0.3325.109",
+      "version": "62.0.3202.84",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; F3216 Build/36.1.A.0.182) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.107 Mobile Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.1; E6653 Build/32.4.A.1.54; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.106 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "F3216",
-      "marketingName": "Xperia XA Ultra",
+      "deviceName": "E6653",
+      "marketingName": "Xperia Z5",
       "manufacturer": "sony",
       "brand": "sony",
       "display": {
         "width": 1920,
         "height": 1080,
         "touch": true,
-        "size": null
+        "size": 5.2
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "66.0.3359.106",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "66.0.3359.106",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0; E5633 Build/30.2.B.1.21) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "E5633",
+      "marketingName": "Xperia M5 Dual",
+      "manufacturer": "sony",
+      "brand": "sony",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5
       },
       "type": "smartphone"
     },
     "browser": {
       "name": "Chrome",
       "modus": null,
-      "version": "60.0.3112.107",
+      "version": "62.0.3202.84",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "62.0.3202.84",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; E2303 Build/26.3.A.1.33; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/51.0.2704.81 Mobile Safari/537.36 [FB_IAB/Orca-Android;FBAV/142.0.0.18.63;]"
+    },
+    "device": {
+      "deviceName": "E2303",
+      "marketingName": "Xperia M4 Aqua",
+      "manufacturer": "sony",
+      "brand": "sony",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "142.0.0.18.63",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "51.0.2704.81",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.1; E6683 Build/32.4.A.1.54) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "E6683",
+      "marketingName": "Xperia Z5 Dual",
+      "manufacturer": "sony",
+      "brand": "sony",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.2
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "62.0.3202.84",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "62.0.3202.84",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.0.2; D6683 Build/23.1.2.E.0.13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "D6683",
+      "marketingName": "Xperia Z3",
+      "manufacturer": "sony",
+      "brand": "sony",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.2
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "63.0.3239.111",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.0.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "63.0.3239.111",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; D2303 Build/18.6.A.0.182; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/58.0.3029.83 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/124.0.0.22.66;]"
+    },
+    "device": {
+      "deviceName": "D2303",
+      "marketingName": "Xperia M2",
+      "manufacturer": "sony",
+      "brand": "sony",
+      "display": {
+        "width": 960,
+        "height": 540,
+        "touch": true,
+        "size": 4.8
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "124.0.0.22.66",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "58.0.3029.83",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.0; E2353 Build/26.1.A.3.111) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.93 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "E2353",
+      "marketingName": "Xperia M4 Aqua",
+      "manufacturer": "sony",
+      "brand": "sony",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "39.0.2171.93",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "39.0.2171.93",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.0.0; G8441 Build/47.1.A.2.300) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.125 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "G8441",
+      "marketingName": "Xperia XZ1 Compact",
+      "manufacturer": "sony",
+      "brand": "sony",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 4.6
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "58.0.3029.125",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "58.0.3029.125",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; E6553 Build/32.3.A.2.33) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.98 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "E6553",
+      "marketingName": "Xperia Z3+",
+      "manufacturer": "sony",
+      "brand": "sony",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.2
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "61.0.3163.98",
       "manufacturer": "google",
       "bits": null,
       "type": "browser"
@@ -337,13 +527,51 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "60.0.3112.107",
+      "version": "61.0.3163.98",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 6.0; F3311 Build/37.0.A.2.248; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/64.0.3282.137 Mobile Safari/537.36 [FB_IAB/Orca-Android;FBAV/153.0.0.17.94;]"
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.1; E6853 Build/32.4.A.0.160; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/61.0.3163.98 Mobile Safari/537.36 [FB_IAB/MESSENGER;FBAV/138.0.0.20.92;]"
+    },
+    "device": {
+      "deviceName": "E6853",
+      "marketingName": "Xperia Z5 Premium",
+      "manufacturer": "sony",
+      "brand": "sony",
+      "display": {
+        "width": 3840,
+        "height": 2160,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook Messenger App",
+      "modus": null,
+      "version": "138.0.0.20.92",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "61.0.3163.98",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0; F3311 Build/37.0.A.2.108; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/63.0.3239.111 Mobile Safari/537.36 [FB_IAB/Orca-Android;FBAV/147.0.0.25.86;]"
     },
     "device": {
       "deviceName": "F3311",
@@ -361,7 +589,7 @@
     "browser": {
       "name": "Facebook App",
       "modus": null,
-      "version": "153.0.0.17.94",
+      "version": "147.0.0.25.86",
       "manufacturer": "facebook",
       "bits": null,
       "type": "application"
@@ -375,13 +603,659 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "64.0.3282.137",
+      "version": "63.0.3239.111",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.0; E5533 Build/29.0.B.1.55) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.93 Mobile Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.1; E6833 Build/32.4.A.0.160) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "E6833",
+      "marketingName": "Xperia Z5 Premium Dual",
+      "manufacturer": "sony",
+      "brand": "sony",
+      "display": {
+        "width": 3840,
+        "height": 2160,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "62.0.3202.84",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "62.0.3202.84",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; G3123 Build/40.0.A.5.66) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.98 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "G3123",
+      "marketingName": "Xperia XA1",
+      "manufacturer": "sony",
+      "brand": "sony",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "61.0.3163.98",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "61.0.3163.98",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; D5803 Build/23.4.A.1.264) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.123 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "D5803",
+      "marketingName": "Xperia Z3 Compact",
+      "manufacturer": "sony",
+      "brand": "sony",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 4.6
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "64.0.3282.123",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "64.0.3282.123",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 6.0.1; en-US; D6603 Build/23.5.A.1.291) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/40.0.2214.89 UCBrowser/11.4.6.1017 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "D6603",
+      "marketingName": "Xperia Z3",
+      "manufacturer": "sony",
+      "brand": "sony",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.2
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "11.4.6.1017",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "40.0.2214.89",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.1; F5321 Build/34.3.A.0.252; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/64.0.3282.116 Mobile Safari/537.36 [FB_IAB/Orca-Android;FBAV/149.0.0.22.95;]"
+    },
+    "device": {
+      "deviceName": "F5321",
+      "marketingName": "Xperia X Compact",
+      "manufacturer": "sony",
+      "brand": "sony",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 4.6
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "149.0.0.22.95",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "64.0.3282.116",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.1; E5823 Build/32.4.A.1.54; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/63.0.3239.111 Mobile Safari/537.36 [FB_IAB/Orca-Android;FBAV/147.0.0.25.86;]"
+    },
+    "device": {
+      "deviceName": "E5823",
+      "marketingName": "Xperia Z5 Compact LTE",
+      "manufacturer": "sony",
+      "brand": "sony",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 4.6
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "147.0.0.25.86",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "63.0.3239.111",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.0.0; G8141 Build/47.1.A.8.49; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/63.0.3239.111 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/156.0.0.36.100;]"
+    },
+    "device": {
+      "deviceName": "G8141",
+      "marketingName": "Xperia XZ Premium",
+      "manufacturer": "sony",
+      "brand": "sony",
+      "display": {
+        "width": 3840,
+        "height": 2160,
+        "touch": true,
+        "size": 5.46
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "156.0.0.36.100",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "63.0.3239.111",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; E6853 Build/32.3.A.2.33) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "E6853",
+      "marketingName": "Xperia Z5 Premium",
+      "manufacturer": "sony",
+      "brand": "sony",
+      "display": {
+        "width": 3840,
+        "height": 2160,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "62.0.3202.84",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "62.0.3202.84",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.0.2; D5803 Build/23.1.A.1.28) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "D5803",
+      "marketingName": "Xperia Z3 Compact",
+      "manufacturer": "sony",
+      "brand": "sony",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 4.6
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "62.0.3202.84",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.0.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "62.0.3202.84",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.1; G8142 Build/45.0.A.7.137) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.98 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "G8142",
+      "marketingName": "Xperia XZ Premium Dual",
+      "manufacturer": "sony",
+      "brand": "sony",
+      "display": {
+        "width": 3840,
+        "height": 2160,
+        "touch": true,
+        "size": 5.46
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "61.0.3163.98",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "61.0.3163.98",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.1; F8332 Build/41.2.A.7.76; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/62.0.3202.84 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "F8332",
+      "marketingName": "Xperia XZ Dual SIM",
+      "manufacturer": "sony",
+      "brand": "sony",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.2
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "62.0.3202.84",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "62.0.3202.84",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0; F3311 Build/37.0.A.2.108; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/62.0.3202.84 Mobile Safari/537.36 [FB_IAB/Orca-Android;FBAV/144.0.0.22.136;]"
+    },
+    "device": {
+      "deviceName": "F3311",
+      "marketingName": "Xperia E5",
+      "manufacturer": "sony",
+      "brand": "sony",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "144.0.0.22.136",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "62.0.3202.84",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.1; E5823 Build/32.4.A.1.54; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/58.0.3029.83 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/150.0.0.38.138;]"
+    },
+    "device": {
+      "deviceName": "E5823",
+      "marketingName": "Xperia Z5 Compact LTE",
+      "manufacturer": "sony",
+      "brand": "sony",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 4.6
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "150.0.0.38.138",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "58.0.3029.83",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0; E5303 Build/27.3.A.0.129) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.91 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "E5303",
+      "marketingName": "Xperia C4",
+      "manufacturer": "sony",
+      "brand": "sony",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "55.0.2883.91",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "55.0.2883.91",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0; E5303 Build/27.3.A.0.129) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "E5303",
+      "marketingName": "Xperia C4",
+      "manufacturer": "sony",
+      "brand": "sony",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "56.0.2924.87",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "56.0.2924.87",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; G3311 Build/43.0.A.6.49; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/62.0.3202.84 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "G3311",
+      "marketingName": "Xperia L1",
+      "manufacturer": "sony",
+      "brand": "sony",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "62.0.3202.84",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "62.0.3202.84",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.1; E6883 Build/32.4.A.1.54) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.98 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "E6883",
+      "marketingName": "Xperia Z5 Premium Dual",
+      "manufacturer": "sony",
+      "brand": "sony",
+      "display": {
+        "width": 3840,
+        "height": 2160,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "61.0.3163.98",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "61.0.3163.98",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0; E5533 Build/29.2.B.0.129) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36"
     },
     "device": {
       "deviceName": "E5533",
@@ -399,10 +1273,200 @@
     "browser": {
       "name": "Chrome",
       "modus": null,
-      "version": "43.0.2357.93",
+      "version": "62.0.3202.84",
       "manufacturer": "google",
       "bits": null,
       "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "62.0.3202.84",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0; F3311 Build/37.0.A.2.108; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/60.0.3112.116 Mobile Safari/537.36 [FB_IAB/MESSENGER;FBAV/138.0.0.20.92;]"
+    },
+    "device": {
+      "deviceName": "F3311",
+      "marketingName": "Xperia E5",
+      "manufacturer": "sony",
+      "brand": "sony",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook Messenger App",
+      "modus": null,
+      "version": "138.0.0.20.92",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "60.0.3112.116",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; F3116 Build/33.3.A.1.97) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.116 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "F3116",
+      "marketingName": "Xperia XA Dual SIM",
+      "manufacturer": "sony",
+      "brand": "sony",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "60.0.3112.116",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "60.0.3112.116",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0; F3215 Build/36.0.A.1.111) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "F3215",
+      "marketingName": "Xperia XA Ultra",
+      "manufacturer": "sony",
+      "brand": "sony",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "63.0.3239.111",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "63.0.3239.111",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.1; E6853 Build/32.4.A.1.54; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/61.0.3163.98 Mobile Safari/537.36 [FB_IAB/Orca-Android;FBAV/142.0.0.18.63;]"
+    },
+    "device": {
+      "deviceName": "E6853",
+      "marketingName": "Xperia Z5 Premium",
+      "manufacturer": "sony",
+      "brand": "sony",
+      "display": {
+        "width": 3840,
+        "height": 2160,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "142.0.0.18.63",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "61.0.3163.98",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.0; E2303 Build/26.1.A.2.167; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/112.0.0.20.70;]"
+    },
+    "device": {
+      "deviceName": "E2303",
+      "marketingName": "Xperia M4 Aqua",
+      "manufacturer": "sony",
+      "brand": "sony",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "112.0.0.20.70",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
     },
     "os": {
       "name": "Android",
@@ -413,55 +1477,93 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "43.0.2357.93",
+      "version": "50.0.2661.86",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; D6503 Build/23.5.A.0.575; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/52.0.2743.98 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/123.0.0.18.71;]"
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.4; E2115 Build/24.0.B.5.14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "D6503",
-      "marketingName": "Xperia Z2 LTE",
+      "deviceName": "E2115",
+      "marketingName": "Xperia E4 Dual",
+      "manufacturer": "sony",
+      "brand": "sony",
+      "display": {
+        "width": 960,
+        "height": 540,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "56.0.2924.87",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.4",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "56.0.2924.87",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; F3211 Build/36.1.A.1.86; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/44.0.2403.119 Mobile Safari/537.36 ACHEETAHI/1"
+    },
+    "device": {
+      "deviceName": "F3211",
+      "marketingName": "Xperia XA Ultra",
       "manufacturer": "sony",
       "brand": "sony",
       "display": {
         "width": 1920,
         "height": 1080,
         "touch": true,
-        "size": 5.2
+        "size": 6
       },
       "type": "smartphone"
     },
     "browser": {
-      "name": "Facebook App",
+      "name": "CM Browser",
       "modus": null,
-      "version": "123.0.0.18.71",
-      "manufacturer": "facebook",
+      "version": null,
+      "manufacturer": "cheetah-mobile",
       "bits": null,
-      "type": "application"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "6.0.1",
+      "version": "7.0.0",
       "manufacturer": "google",
       "bits": null
     },
     "engine": {
       "name": "Blink",
-      "version": "52.0.2743.98",
+      "version": "44.0.2403.119",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 6.0; F3311 Build/37.0.A.2.108; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/61.0.3163.98 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/147.0.0.44.75;]"
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; F3111 Build/33.3.A.1.97; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/61.0.3163.98 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/147.0.0.44.75;]"
     },
     "device": {
-      "deviceName": "F3311",
-      "marketingName": "Xperia E5",
+      "deviceName": "F3111",
+      "marketingName": "Xperia XA",
       "manufacturer": "sony",
       "brand": "sony",
       "display": {
@@ -483,7 +1585,7 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "6.0.0",
+      "version": "7.0.0",
       "manufacturer": "google",
       "bits": null
     },
@@ -495,159 +1597,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.0; E2363 Build/26.1.B.3.109) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.125 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "E2363",
-      "marketingName": "Xperia M4 Aqua Dual",
-      "manufacturer": "sony",
-      "brand": "sony",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "59.0.3071.125",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "59.0.3071.125",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.1; F8332 Build/41.2.A.7.53; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/61.0.3163.98 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "F8332",
-      "marketingName": "Xperia XZ Dual SIM",
-      "manufacturer": "sony",
-      "brand": "sony",
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5.2
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Android WebView",
-      "modus": null,
-      "version": "61.0.3163.98",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "7.1.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "61.0.3163.98",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 8.0.0; F5121 Build/34.4.A.2.19; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/65.0.3325.109 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "F5121",
-      "marketingName": "Xperia X",
-      "manufacturer": "sony",
-      "brand": "sony",
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Android WebView",
-      "modus": null,
-      "version": "65.0.3325.109",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "8.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "65.0.3325.109",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.1; E6653 Build/32.4.A.1.54; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/64.0.3282.123 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "E6653",
-      "marketingName": "Xperia Z5",
-      "manufacturer": "sony",
-      "brand": "sony",
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5.2
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Android WebView",
-      "modus": null,
-      "version": "64.0.3282.123",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "7.1.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "64.0.3282.123",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; E6603 Build/32.0.A.6.152; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 Mobile Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; E6603 Build/32.0.A.6.152; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/65.0.3325.109 Mobile Safari/537.36"
     },
     "device": {
       "deviceName": "E6603",
@@ -665,7 +1615,7 @@
     "browser": {
       "name": "Android WebView",
       "modus": null,
-      "version": "66.0.3359.126",
+      "version": "65.0.3325.109",
       "manufacturer": "google",
       "bits": null,
       "type": "browser"
@@ -679,13 +1629,89 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "66.0.3359.126",
+      "version": "65.0.3325.109",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; D5803 Build/23.5.A.1.291; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/60.0.3112.116 Mobile Safari/537.36 [FB_IAB/MESSENGER;FBAV/134.0.0.18.91;]"
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.4; E2003 Build/25.0.A.2.31) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.83 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "E2003",
+      "marketingName": "Xperia E4g",
+      "manufacturer": "sony",
+      "brand": "sony",
+      "display": {
+        "width": 960,
+        "height": 540,
+        "touch": true,
+        "size": 4.7
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "58.0.3029.83",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.4",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "58.0.3029.83",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.0; E2303 Build/26.1.A.3.111; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/60.0.3112.107 Mobile Safari/537.36 [FB_IAB/MESSENGER;FBAV/137.0.0.15.90;]"
+    },
+    "device": {
+      "deviceName": "E2303",
+      "marketingName": "Xperia M4 Aqua",
+      "manufacturer": "sony",
+      "brand": "sony",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook Messenger App",
+      "modus": null,
+      "version": "137.0.0.15.90",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "60.0.3112.107",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; D5803 Build/23.5.A.1.291; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/61.0.3163.98 Mobile Safari/537.36 [FB_IAB/MESSENGER;FBAV/139.0.0.17.85;]"
     },
     "device": {
       "deviceName": "D5803",
@@ -703,7 +1729,7 @@
     "browser": {
       "name": "Facebook Messenger App",
       "modus": null,
-      "version": "134.0.0.18.91",
+      "version": "139.0.0.17.85",
       "manufacturer": "facebook",
       "bits": null,
       "type": "application"
@@ -717,545 +1743,13 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "60.0.3112.116",
+      "version": "61.0.3163.98",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.0; E2306 Build/26.1.A.3.120) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.125 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "E2306",
-      "marketingName": "Xperia M4 Aqua",
-      "manufacturer": "sony",
-      "brand": "sony",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "59.0.3071.125",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "59.0.3071.125",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 6.0.1; en-US; D6603 Build/23.5.A.1.291) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/11.2.0.915 U3/0.8.0 Mobile Safari/534.30"
-    },
-    "device": {
-      "deviceName": "D6603",
-      "marketingName": "Xperia Z3",
-      "manufacturer": "sony",
-      "brand": "sony",
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5.2
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "11.2.0.915",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "6.0.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "U3",
-      "version": "0.8.0",
-      "manufacturer": "ucweb"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.1; E6853 Build/32.4.A.0.160) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.83 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "E6853",
-      "marketingName": "Xperia Z5 Premium",
-      "manufacturer": "sony",
-      "brand": "sony",
-      "display": {
-        "width": 3840,
-        "height": 2160,
-        "touch": true,
-        "size": 5.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "58.0.3029.83",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "7.1.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "58.0.3029.83",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.0; E2303 Build/26.1.A.3.111; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/116.0.0.17.69;]"
-    },
-    "device": {
-      "deviceName": "E2303",
-      "marketingName": "Xperia M4 Aqua",
-      "manufacturer": "sony",
-      "brand": "sony",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "116.0.0.17.69",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "56.0.2924.87",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; F5321 Build/34.2.A.2.69; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/64.0.3282.137 Mobile Safari/537.36 [FB_IAB/Orca-Android;FBAV/154.0.0.17.93;]"
-    },
-    "device": {
-      "deviceName": "F5321",
-      "marketingName": "Xperia X Compact",
-      "manufacturer": "sony",
-      "brand": "sony",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 4.6
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "154.0.0.17.93",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "7.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "64.0.3282.137",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 8.0.0; G8342 Build/47.1.A.2.374) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "G8342",
-      "marketingName": "Xperia XZ1",
-      "manufacturer": "sony",
-      "brand": "sony",
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5.2
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "62.0.3202.84",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "8.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "62.0.3202.84",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Dalvik/1.6.0 (Linux; U; Android 4.4.4; E2115 Build/24.0.B.5.14)"
-    },
-    "device": {
-      "deviceName": "E2115",
-      "marketingName": "Xperia E4 Dual",
-      "manufacturer": "sony",
-      "brand": "sony",
-      "display": {
-        "width": 960,
-        "height": 540,
-        "touch": true,
-        "size": 5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Dalvik",
-      "modus": null,
-      "version": "1.6.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.4.4",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; F3113 Build/33.3.A.0.131) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.107 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "F3113",
-      "marketingName": "Xperia XA",
-      "manufacturer": "sony",
-      "brand": "sony",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "60.0.3112.107",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "7.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "60.0.3112.107",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; D5803 Build/23.5.A.1.291; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/59.0.3071.125 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/133.0.0.19.83;]"
-    },
-    "device": {
-      "deviceName": "D5803",
-      "marketingName": "Xperia Z3 Compact",
-      "manufacturer": "sony",
-      "brand": "sony",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 4.6
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "133.0.0.19.83",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "6.0.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "59.0.3071.125",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; D6603 Build/23.5.A.1.291; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/59.0.3071.125 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/138.0.0.19.93;]"
-    },
-    "device": {
-      "deviceName": "D6603",
-      "marketingName": "Xperia Z3",
-      "manufacturer": "sony",
-      "brand": "sony",
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5.2
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "138.0.0.19.93",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "6.0.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "59.0.3071.125",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.0.2; D6603 Build/23.1.A.1.28) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.116 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "D6603",
-      "marketingName": "Xperia Z3",
-      "manufacturer": "sony",
-      "brand": "sony",
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5.2
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "60.0.3112.116",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.0.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "60.0.3112.116",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.4; D6603 Build/23.0.1.A.5.77) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.125 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "D6603",
-      "marketingName": "Xperia Z3",
-      "manufacturer": "sony",
-      "brand": "sony",
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5.2
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "59.0.3071.125",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.4.4",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "59.0.3071.125",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; D6603 Build/23.5.A.1.291; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/153.0.0.54.88;]"
-    },
-    "device": {
-      "deviceName": "D6603",
-      "marketingName": "Xperia Z3",
-      "manufacturer": "sony",
-      "brand": "sony",
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5.2
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "153.0.0.54.88",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "6.0.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "50.0.2661.86",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 8.0.0; G8141 Build/47.1.A.12.75; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/64.0.3282.137 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/159.0.0.38.95;]"
-    },
-    "device": {
-      "deviceName": "G8141",
-      "marketingName": "Xperia XZ Premium",
-      "manufacturer": "sony",
-      "brand": "sony",
-      "display": {
-        "width": 3840,
-        "height": 2160,
-        "touch": true,
-        "size": 5.46
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "159.0.0.38.95",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "8.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "64.0.3282.137",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.1; E5823 Build/32.4.A.1.54; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/64.0.3282.137 Mobile Safari/537.36 [FB_IAB/Orca-Android;FBAV/152.0.0.17.94;]"
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.1; E5823 Build/32.4.A.1.54; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/63.0.3239.111 Mobile Safari/537.36 [FB_IAB/Orca-Android;FBAV/150.0.0.16.97;]"
     },
     "device": {
       "deviceName": "E5823",
@@ -1273,7 +1767,7 @@
     "browser": {
       "name": "Facebook App",
       "modus": null,
-      "version": "152.0.0.17.94",
+      "version": "150.0.0.16.97",
       "manufacturer": "facebook",
       "bits": null,
       "type": "application"
@@ -1287,93 +1781,131 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "64.0.3282.137",
+      "version": "63.0.3239.111",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "UCWEB/2.0 (MIDP-2.0; U; Adr 5.1.1; en-US; C6603) U2/1.0.0 UCBrowser/11.0.0.1016 U2/1.0.0 Mobile"
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.0.0; G8441 Build/47.1.A.8.49) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36 EdgA/41.0.0.1561"
     },
     "device": {
-      "deviceName": "C6603",
-      "marketingName": "Xperia Z",
-      "manufacturer": "sony",
-      "brand": "sony",
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "11.0.0.1016",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.1.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "U2",
-      "version": "1.0.0",
-      "manufacturer": "ucweb"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; G3112 Build/40.0.A.5.66) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.116 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "G3112",
-      "marketingName": "Xperia XA1",
+      "deviceName": "G8441",
+      "marketingName": "Xperia XZ1 Compact",
       "manufacturer": "sony",
       "brand": "sony",
       "display": {
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": 5
+        "size": 4.6
       },
       "type": "smartphone"
     },
     "browser": {
-      "name": "Chrome",
+      "name": "Edge Mobile for Android",
       "modus": null,
-      "version": "60.0.3112.116",
-      "manufacturer": "google",
+      "version": "41.0.0.1561",
+      "manufacturer": "microsoft",
       "bits": null,
       "type": "browser"
     },
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "7.0.0",
+      "version": "8.0.0",
       "manufacturer": "google",
       "bits": null
     },
     "engine": {
       "name": "Blink",
-      "version": "60.0.3112.116",
+      "version": "63.0.3239.111",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.1; E6683 Build/32.4.A.0.160) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.116 Mobile Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.1; F8331 Build/41.2.A.7.76; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/62.0.3202.84 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/151.0.0.44.205;]"
     },
     "device": {
-      "deviceName": "E6683",
-      "marketingName": "Xperia Z5 Dual",
+      "deviceName": "F8331",
+      "marketingName": "Xperia XZ",
+      "manufacturer": "sony",
+      "brand": "sony",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.2
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "151.0.0.44.205",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "62.0.3202.84",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.0.0; F8331 Build/41.3.A.0.401; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/63.0.3239.111 Mobile Safari/537.36 [FB_IAB/Orca-Android;FBAV/147.0.0.25.86;]"
+    },
+    "device": {
+      "deviceName": "F8331",
+      "marketingName": "Xperia XZ",
+      "manufacturer": "sony",
+      "brand": "sony",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.2
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "147.0.0.25.86",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "63.0.3239.111",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.0.2; D6683 Build/23.1.2.E.0.13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.125 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "D6683",
+      "marketingName": "Xperia Z3",
       "manufacturer": "sony",
       "brand": "sony",
       "display": {
@@ -1387,7 +1919,7 @@
     "browser": {
       "name": "Chrome",
       "modus": null,
-      "version": "60.0.3112.116",
+      "version": "59.0.3071.125",
       "manufacturer": "google",
       "bits": null,
       "type": "browser"
@@ -1395,19 +1927,19 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "7.1.1",
+      "version": "5.0.2",
       "manufacturer": "google",
       "bits": null
     },
     "engine": {
       "name": "Blink",
-      "version": "60.0.3112.116",
+      "version": "59.0.3071.125",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 8.0.0; F8332 Build/41.3.A.2.58; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/64.0.3282.137 Mobile Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.1; F8332 Build/41.2.A.7.76; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/60.0.3112.116 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/144.0.0.27.91;]"
     },
     "device": {
       "deviceName": "F8332",
@@ -1423,12 +1955,50 @@
       "type": "smartphone"
     },
     "browser": {
-      "name": "Android WebView",
+      "name": "Facebook App",
       "modus": null,
-      "version": "64.0.3282.137",
-      "manufacturer": "google",
+      "version": "144.0.0.27.91",
+      "manufacturer": "facebook",
       "bits": null,
-      "type": "browser"
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "60.0.3112.116",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.0.0; F8331 Build/41.3.A.2.75; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/64.0.3282.137 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/162.0.0.45.94;]"
+    },
+    "device": {
+      "deviceName": "F8331",
+      "marketingName": "Xperia XZ",
+      "manufacturer": "sony",
+      "brand": "sony",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.2
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "162.0.0.45.94",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
     },
     "os": {
       "name": "Android",
@@ -1445,101 +2015,25 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; D5322 Build/19.4.A.0.182) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.98 Mobile Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.1; E6853 Build/32.4.A.1.54; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/62.0.3202.84 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/151.0.0.44.205;]"
     },
     "device": {
-      "deviceName": "D5322",
-      "marketingName": "Xperia T2 Ultra Dual",
+      "deviceName": "E6853",
+      "marketingName": "Xperia Z5 Premium",
       "manufacturer": "sony",
       "brand": "sony",
       "display": {
-        "width": 1280,
-        "height": 720,
+        "width": 3840,
+        "height": 2160,
         "touch": true,
-        "size": 6
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "61.0.3163.98",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.1.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "61.0.3163.98",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 6.0; F3311 Build/37.0.A.2.108; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/60.0.3112.107 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "F3311",
-      "marketingName": "Xperia E5",
-      "manufacturer": "sony",
-      "brand": "sony",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Android WebView",
-      "modus": null,
-      "version": "60.0.3112.107",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "6.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "60.0.3112.107",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; D2403 Build/18.6.A.0.182; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/65.0.3325.109 Mobile Safari/537.36 [FB_IAB/Orca-Android;FBAV/158.0.0.20.96;]"
-    },
-    "device": {
-      "deviceName": "D2403",
-      "marketingName": "Xperia M2 Aqua",
-      "manufacturer": "sony",
-      "brand": "sony",
-      "display": {
-        "width": 960,
-        "height": 540,
-        "touch": true,
-        "size": 4.8
+        "size": 5.5
       },
       "type": "smartphone"
     },
     "browser": {
       "name": "Facebook App",
       "modus": null,
-      "version": "158.0.0.20.96",
+      "version": "151.0.0.44.205",
       "manufacturer": "facebook",
       "bits": null,
       "type": "application"
@@ -1547,19 +2041,57 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "5.1.1",
+      "version": "7.1.1",
       "manufacturer": "google",
       "bits": null
     },
     "engine": {
       "name": "Blink",
-      "version": "65.0.3325.109",
+      "version": "62.0.3202.84",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; F3111 Build/33.3.A.0.131) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.132 Mobile Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.1; E5823 Build/32.4.A.1.54) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.145 Mobile Safari/537.36 EdgA/41.0.0.1138"
+    },
+    "device": {
+      "deviceName": "E5823",
+      "marketingName": "Xperia Z5 Compact LTE",
+      "manufacturer": "sony",
+      "brand": "sony",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 4.6
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Edge Mobile for Android",
+      "modus": null,
+      "version": "41.0.0.1138",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "58.0.3029.145",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; F3111 Build/33.3.A.1.97; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/64.0.3282.123 Mobile Safari/537.36"
     },
     "device": {
       "deviceName": "F3111",
@@ -1575,9 +2107,9 @@
       "type": "smartphone"
     },
     "browser": {
-      "name": "Chrome",
+      "name": "Android WebView",
       "modus": null,
-      "version": "57.0.2987.132",
+      "version": "64.0.3282.123",
       "manufacturer": "google",
       "bits": null,
       "type": "browser"
@@ -1591,24 +2123,24 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "57.0.2987.132",
+      "version": "64.0.3282.123",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.4; C6903 Build/14.4.A.0.108) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.98 Mobile Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.1; E5803 Build/32.4.A.0.160) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.98 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "C6903",
-      "marketingName": "Xperia Z1",
+      "deviceName": "E5803",
+      "marketingName": "Xperia Z5 Compact",
       "manufacturer": "sony",
       "brand": "sony",
       "display": {
-        "width": 1920,
-        "height": 1080,
+        "width": 1280,
+        "height": 720,
         "touch": true,
-        "size": 5
+        "size": 4.6
       },
       "type": "smartphone"
     },
@@ -1623,7 +2155,7 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "4.4.4",
+      "version": "7.1.1",
       "manufacturer": "google",
       "bits": null
     },
@@ -1635,398 +2167,18 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 6.0; F3211 Build/36.0.A.1.100) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.1; G8232 Build/41.2.A.7.76; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/64.0.3282.137 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "F3211",
-      "marketingName": "Xperia XA Ultra",
+      "deviceName": "G8232",
+      "marketingName": "Xperia XZs",
       "manufacturer": "sony",
       "brand": "sony",
       "display": {
         "width": 1920,
         "height": 1080,
         "touch": true,
-        "size": 6
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "63.0.3239.111",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "6.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "63.0.3239.111",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; G3116 Build/40.0.A.6.175) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.137 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "G3116",
-      "marketingName": "Xperia XA1",
-      "manufacturer": "sony",
-      "brand": "sony",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "64.0.3282.137",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "7.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "64.0.3282.137",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.0; E2303 Build/26.1.A.3.111; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/51.0.2704.81 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/136.0.0.22.91;]"
-    },
-    "device": {
-      "deviceName": "E2303",
-      "marketingName": "Xperia M4 Aqua",
-      "manufacturer": "sony",
-      "brand": "sony",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "136.0.0.22.91",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "51.0.2704.81",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.1; F5321 Build/34.3.A.0.252; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/64.0.3282.137 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/159.0.0.38.95;]"
-    },
-    "device": {
-      "deviceName": "F5321",
-      "marketingName": "Xperia X Compact",
-      "manufacturer": "sony",
-      "brand": "sony",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 4.6
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "159.0.0.38.95",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "7.1.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "64.0.3282.137",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; D5833 Build/23.5.A.0.575) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.125 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "D5833",
-      "marketingName": "Xperia Z3 Compact (Asia)",
-      "manufacturer": "sony",
-      "brand": "sony",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 4.6
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "59.0.3071.125",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "6.0.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "59.0.3071.125",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; G3121 Build/40.0.A.6.189) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36 EdgA/41.0.0.1561"
-    },
-    "device": {
-      "deviceName": "G3121",
-      "marketingName": "Xperia XA1",
-      "manufacturer": "sony",
-      "brand": "sony",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Edge Mobile for Android",
-      "modus": null,
-      "version": "41.0.0.1561",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "7.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "63.0.3239.111",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; E2353 Build/26.3.A.1.33) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.83 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "E2353",
-      "marketingName": "Xperia M4 Aqua",
-      "manufacturer": "sony",
-      "brand": "sony",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "58.0.3029.83",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "6.0.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "58.0.3029.83",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.0.2; C6903 Build/14.5.A.0.242) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.116 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "C6903",
-      "marketingName": "Xperia Z1",
-      "manufacturer": "sony",
-      "brand": "sony",
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "60.0.3112.116",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.0.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "60.0.3112.116",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 6.0; F3311 Build/37.0.A.2.108; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/59.0.3071.125 Mobile Safari/537.36 [FB_IAB/MESSENGER;FBAV/128.0.0.21.88;]"
-    },
-    "device": {
-      "deviceName": "F3311",
-      "marketingName": "Xperia E5",
-      "manufacturer": "sony",
-      "brand": "sony",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Facebook Messenger App",
-      "modus": null,
-      "version": "128.0.0.21.88",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "6.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "59.0.3071.125",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 7.1.1; en-US; E5823 Build/32.4.A.1.54) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/40.0.2214.89 UCBrowser/11.4.8.1012 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "E5823",
-      "marketingName": "Xperia Z5 Compact LTE",
-      "manufacturer": "sony",
-      "brand": "sony",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 4.6
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "11.4.8.1012",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "7.1.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "40.0.2214.89",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.1; F5321 Build/34.3.A.0.252; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/64.0.3282.137 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "F5321",
-      "marketingName": "Xperia X Compact",
-      "manufacturer": "sony",
-      "brand": "sony",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 4.6
+        "size": 5.2
       },
       "type": "smartphone"
     },
@@ -2053,367 +2205,25 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.1; F8331 Build/41.2.A.7.35; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/59.0.3071.125 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/134.0.0.25.91;]"
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; D2105 Build/20.1.B.2.29) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.98 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "F8331",
-      "marketingName": "Xperia XZ",
+      "deviceName": "D2105",
+      "marketingName": "Xperia E1 Dual",
       "manufacturer": "sony",
       "brand": "sony",
       "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5.2
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "134.0.0.25.91",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "7.1.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "59.0.3071.125",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.0.2; D6503 Build/23.1.A.1.28) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.92 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "D6503",
-      "marketingName": "Xperia Z2 LTE",
-      "manufacturer": "sony",
-      "brand": "sony",
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5.2
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "59.0.3071.92",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.0.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "59.0.3071.92",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.1; E6653 Build/32.4.A.0.160; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/61.0.3163.98 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/142.0.0.29.92;]"
-    },
-    "device": {
-      "deviceName": "E6653",
-      "marketingName": "Xperia Z5",
-      "manufacturer": "sony",
-      "brand": "sony",
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5.2
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "142.0.0.29.92",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "7.1.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "61.0.3163.98",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; E5823 Build/32.0.A.5.12; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/64.0.3282.137 Mobile Safari/537.36 [FB_IAB/Orca-Android;FBAV/153.0.0.17.94;]"
-    },
-    "device": {
-      "deviceName": "E5823",
-      "marketingName": "Xperia Z5 Compact LTE",
-      "manufacturer": "sony",
-      "brand": "sony",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 4.6
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "153.0.0.17.94",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.1.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "64.0.3282.137",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; G3311 Build/43.0.A.4.46; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/59.0.3071.125 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/136.0.0.22.91;]"
-    },
-    "device": {
-      "deviceName": "G3311",
-      "marketingName": "Xperia L1",
-      "manufacturer": "sony",
-      "brand": "sony",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 5.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "136.0.0.22.91",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "7.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "59.0.3071.125",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; G3311 Build/43.0.A.4.46; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/60.0.3112.116 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "G3311",
-      "marketingName": "Xperia L1",
-      "manufacturer": "sony",
-      "brand": "sony",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 5.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Android WebView",
-      "modus": null,
-      "version": "60.0.3112.116",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "7.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "60.0.3112.116",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; G3313 Build/43.0.A.5.79; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/65.0.3325.109 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/163.0.0.43.91;]"
-    },
-    "device": {
-      "deviceName": "G3313",
-      "marketingName": "Xperia L1",
-      "manufacturer": "sony",
-      "brand": "sony",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 5.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "163.0.0.43.91",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "7.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "65.0.3325.109",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; C6902 Build/14.6.A.1.236) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.98 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "C6902",
-      "marketingName": "Xperia Z1",
-      "manufacturer": "sony",
-      "brand": "sony",
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "61.0.3163.98",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.1.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "61.0.3163.98",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; D5303 Build/19.4.A.0.182; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/55.0.2883.91 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/129.0.0.29.67;]"
-    },
-    "device": {
-      "deviceName": "D5303",
-      "marketingName": "Xperia T2 Ultra LTE",
-      "manufacturer": "sony",
-      "brand": "sony",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 6
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "129.0.0.29.67",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.1.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "55.0.2883.91",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; D2203 Build/18.4.C.2.12) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.125 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "D2203",
-      "marketingName": "Xperia E3",
-      "manufacturer": "sony",
-      "brand": "sony",
-      "display": {
-        "width": 854,
+        "width": 800,
         "height": 480,
         "touch": true,
-        "size": 4.5
+        "size": 4
       },
       "type": "smartphone"
     },
     "browser": {
       "name": "Chrome",
       "modus": null,
-      "version": "59.0.3071.125",
+      "version": "52.0.2743.98",
       "manufacturer": "google",
       "bits": null,
       "type": "browser"
@@ -2427,39 +2237,39 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "59.0.3071.125",
+      "version": "52.0.2743.98",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.1; F8331 Build/41.2.A.7.35; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/59.0.3071.125 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/135.0.0.22.90;]"
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; C6903 Build/14.6.A.1.236; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/59.0.3071.125 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "F8331",
-      "marketingName": "Xperia XZ",
+      "deviceName": "C6903",
+      "marketingName": "Xperia Z1",
       "manufacturer": "sony",
       "brand": "sony",
       "display": {
         "width": 1920,
         "height": 1080,
         "touch": true,
-        "size": 5.2
+        "size": 5
       },
       "type": "smartphone"
     },
     "browser": {
-      "name": "Facebook App",
+      "name": "Android WebView",
       "modus": null,
-      "version": "135.0.0.22.90",
-      "manufacturer": "facebook",
+      "version": "59.0.3071.125",
+      "manufacturer": "google",
       "bits": null,
-      "type": "application"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "7.1.1",
+      "version": "5.1.1",
       "manufacturer": "google",
       "bits": null
     },
@@ -2471,7 +2281,45 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 6.0; E5603 Build/30.2.A.1.21; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/61.0.3163.98 Mobile Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.4; D2403 Build/18.3.1.C.1.17) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.137 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "D2403",
+      "marketingName": "Xperia M2 Aqua",
+      "manufacturer": "sony",
+      "brand": "sony",
+      "display": {
+        "width": 960,
+        "height": 540,
+        "touch": true,
+        "size": 4.8
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "64.0.3282.137",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.4",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "64.0.3282.137",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1; E5603 Build/30.1.A.1.46; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/61.0.3163.98 Mobile Safari/537.36"
     },
     "device": {
       "deviceName": "E5603",
@@ -2497,7 +2345,7 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "6.0.0",
+      "version": "5.1.0",
       "manufacturer": "google",
       "bits": null
     },
@@ -2509,66 +2357,28 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; D6603 Build/23.5.A.1.291; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/64.0.3282.137 Mobile Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.1; G8141 Build/45.0.A.7.90; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/62.0.3202.73 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "D6603",
-      "marketingName": "Xperia Z3",
+      "deviceName": "G8141",
+      "marketingName": "Xperia XZ Premium",
       "manufacturer": "sony",
       "brand": "sony",
       "display": {
-        "width": 1920,
-        "height": 1080,
+        "width": 3840,
+        "height": 2160,
         "touch": true,
-        "size": 5.2
+        "size": 5.46
       },
       "type": "smartphone"
     },
     "browser": {
       "name": "Android WebView",
       "modus": null,
-      "version": "64.0.3282.137",
+      "version": "62.0.3202.73",
       "manufacturer": "google",
       "bits": null,
       "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "6.0.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "64.0.3282.137",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.1; E6653 Build/32.4.A.0.160; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/60.0.3112.107 Mobile Safari/537.36 [FB_IAB/MESSENGER;FBAV/131.0.0.17.89;]"
-    },
-    "device": {
-      "deviceName": "E6653",
-      "marketingName": "Xperia Z5",
-      "manufacturer": "sony",
-      "brand": "sony",
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5.2
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Facebook Messenger App",
-      "modus": null,
-      "version": "131.0.0.17.89",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
     },
     "os": {
       "name": "Android",
@@ -2579,29 +2389,29 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "60.0.3112.107",
+      "version": "62.0.3202.73",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; E6603 Build/32.0.A.6.152; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/60.0.3112.116 Mobile Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; C6902 Build/14.6.A.1.236) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.116 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "E6603",
-      "marketingName": "Xperia Z5",
+      "deviceName": "C6902",
+      "marketingName": "Xperia Z1",
       "manufacturer": "sony",
       "brand": "sony",
       "display": {
         "width": 1920,
         "height": 1080,
         "touch": true,
-        "size": 5.2
+        "size": 5
       },
       "type": "smartphone"
     },
     "browser": {
-      "name": "Android WebView",
+      "name": "Chrome",
       "modus": null,
       "version": "60.0.3112.116",
       "manufacturer": "google",
@@ -2623,54 +2433,16 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; G3311 Build/43.0.A.4.46; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/60.0.3112.107 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/138.0.0.19.93;]"
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.4; E2115 Build/24.0.B.5.14) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/141.0.0.31.91;]"
     },
     "device": {
-      "deviceName": "G3311",
-      "marketingName": "Xperia L1",
+      "deviceName": "E2115",
+      "marketingName": "Xperia E4 Dual",
       "manufacturer": "sony",
       "brand": "sony",
       "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 5.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "138.0.0.19.93",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "7.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "60.0.3112.107",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; G3121 Build/40.0.A.6.189; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/65.0.3325.109 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/165.0.0.53.93;]"
-    },
-    "device": {
-      "deviceName": "G3121",
-      "marketingName": "Xperia XA1",
-      "manufacturer": "sony",
-      "brand": "sony",
-      "display": {
-        "width": 1280,
-        "height": 720,
+        "width": 960,
+        "height": 540,
         "touch": true,
         "size": 5
       },
@@ -2679,7 +2451,7 @@
     "browser": {
       "name": "Facebook App",
       "modus": null,
-      "version": "165.0.0.53.93",
+      "version": "141.0.0.31.91",
       "manufacturer": "facebook",
       "bits": null,
       "type": "application"
@@ -2687,57 +2459,19 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "7.0.0",
+      "version": "4.4.4",
       "manufacturer": "google",
       "bits": null
     },
     "engine": {
       "name": "Blink",
-      "version": "65.0.3325.109",
+      "version": "33.0.0.0",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; D6503 Build/23.5.A.1.291; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/65.0.3325.109 Mobile Safari/537.36 [FB_IAB/Orca-Android;FBAV/157.0.0.21.89;]"
-    },
-    "device": {
-      "deviceName": "D6503",
-      "marketingName": "Xperia Z2 LTE",
-      "manufacturer": "sony",
-      "brand": "sony",
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5.2
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "157.0.0.21.89",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "6.0.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "65.0.3325.109",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 8.0.0; F5121 Build/34.4.A.2.32; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/65.0.3325.109 Mobile Safari/537.36 [FB_IAB/Orca-Android;FBAV/158.0.0.20.96;]"
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.1; F5121 Build/34.3.A.0.238; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/61.0.3163.98 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/147.0.0.44.75;]"
     },
     "device": {
       "deviceName": "F5121",
@@ -2755,7 +2489,7 @@
     "browser": {
       "name": "Facebook App",
       "modus": null,
-      "version": "158.0.0.20.96",
+      "version": "147.0.0.44.75",
       "manufacturer": "facebook",
       "bits": null,
       "type": "application"
@@ -2763,23 +2497,23 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "8.0.0",
+      "version": "7.1.1",
       "manufacturer": "google",
       "bits": null
     },
     "engine": {
       "name": "Blink",
-      "version": "65.0.3325.109",
+      "version": "61.0.3163.98",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; D6503 Build/23.5.A.1.291; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/60.0.3112.107 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/139.0.0.22.93;]"
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.1; F8332 Build/41.2.A.7.76) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "D6503",
-      "marketingName": "Xperia Z2 LTE",
+      "deviceName": "F8332",
+      "marketingName": "Xperia XZ Dual SIM",
       "manufacturer": "sony",
       "brand": "sony",
       "display": {
@@ -2791,9 +2525,85 @@
       "type": "smartphone"
     },
     "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "62.0.3202.84",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "62.0.3202.84",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.0.0; F8332 Build/41.3.A.2.24; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/63.0.3239.111 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "F8332",
+      "marketingName": "Xperia XZ Dual SIM",
+      "manufacturer": "sony",
+      "brand": "sony",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.2
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "63.0.3239.111",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "63.0.3239.111",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; D5803 Build/23.5.A.1.291; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/61.0.3163.98 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/146.0.0.53.92;]"
+    },
+    "device": {
+      "deviceName": "D5803",
+      "marketingName": "Xperia Z3 Compact",
+      "manufacturer": "sony",
+      "brand": "sony",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 4.6
+      },
+      "type": "smartphone"
+    },
+    "browser": {
       "name": "Facebook App",
       "modus": null,
-      "version": "139.0.0.22.93",
+      "version": "146.0.0.53.92",
       "manufacturer": "facebook",
       "bits": null,
       "type": "application"
@@ -2807,17 +2617,93 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "60.0.3112.107",
+      "version": "61.0.3163.98",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 8.0.0; G8141 Build/47.1.A.3.254; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/62.0.3202.84 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/149.0.0.40.71;]"
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; E2303 Build/26.3.A.1.33; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/51.0.2704.81 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/152.0.0.42.136;]"
     },
     "device": {
-      "deviceName": "G8141",
-      "marketingName": "Xperia XZ Premium",
+      "deviceName": "E2303",
+      "marketingName": "Xperia M4 Aqua",
+      "manufacturer": "sony",
+      "brand": "sony",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "152.0.0.42.136",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "51.0.2704.81",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0; F3111 Build/33.2.A.4.70; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/63.0.3239.111 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/171.0.0.49.92;]"
+    },
+    "device": {
+      "deviceName": "F3111",
+      "marketingName": "Xperia XA",
+      "manufacturer": "sony",
+      "brand": "sony",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "171.0.0.49.92",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "63.0.3239.111",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.0.0; G8142 Build/47.1.A.5.51; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/62.0.3202.84 Mobile Safari/537.36 [FB_IAB/Orca-Android;FBAV/146.0.0.33.136;]"
+    },
+    "device": {
+      "deviceName": "G8142",
+      "marketingName": "Xperia XZ Premium Dual",
       "manufacturer": "sony",
       "brand": "sony",
       "display": {
@@ -2831,7 +2717,7 @@
     "browser": {
       "name": "Facebook App",
       "modus": null,
-      "version": "149.0.0.40.71",
+      "version": "146.0.0.33.136",
       "manufacturer": "facebook",
       "bits": null,
       "type": "application"
@@ -2851,16 +2737,54 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; G3123 Build/40.0.A.5.66) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.116 Mobile Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; D2302 Build/18.6.A.0.182; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/112.0.0.20.70;]"
     },
     "device": {
-      "deviceName": "G3123",
-      "marketingName": "Xperia XA1",
+      "deviceName": "D2302",
+      "marketingName": "Xperia M2 Dual",
       "manufacturer": "sony",
       "brand": "sony",
       "display": {
-        "width": 1280,
-        "height": 720,
+        "width": 960,
+        "height": 540,
+        "touch": true,
+        "size": 4.8
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "112.0.0.20.70",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "56.0.2924.87",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; F5122 Build/34.2.A.0.292) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "F5122",
+      "marketingName": "Xperia X Dual",
+      "manufacturer": "sony",
+      "brand": "sony",
+      "display": {
+        "width": 1920,
+        "height": 1080,
         "touch": true,
         "size": 5
       },
@@ -2869,7 +2793,7 @@
     "browser": {
       "name": "Chrome",
       "modus": null,
-      "version": "60.0.3112.116",
+      "version": "63.0.3239.111",
       "manufacturer": "google",
       "bits": null,
       "type": "browser"
@@ -2883,17 +2807,283 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "60.0.3112.116",
+      "version": "63.0.3239.111",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.1; F5121 Build/34.3.A.0.238; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/62.0.3202.84 Mobile Safari/537.36 [FB_IAB/Orca-Android;FBAV/143.0.0.20.69;]"
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.0.0; F8331 Build/41.3.A.2.75; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/64.0.3282.137 Mobile Safari/537.36 [FB_IAB/Orca-Android;FBAV/155.0.0.14.93;]"
     },
     "device": {
-      "deviceName": "F5121",
-      "marketingName": "Xperia X",
+      "deviceName": "F8331",
+      "marketingName": "Xperia XZ",
+      "manufacturer": "sony",
+      "brand": "sony",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.2
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "155.0.0.14.93",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "64.0.3282.137",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; G3311 Build/43.0.A.5.79; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/61.0.3163.98 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "G3311",
+      "marketingName": "Xperia L1",
+      "manufacturer": "sony",
+      "brand": "sony",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "61.0.3163.98",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "61.0.3163.98",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0; F3113 Build/33.2.A.3.81) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.107 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "F3113",
+      "marketingName": "Xperia XA",
+      "manufacturer": "sony",
+      "brand": "sony",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "60.0.3112.107",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "60.0.3112.107",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.0.0; G8141 Build/47.1.A.3.254; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/63.0.3239.111 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/153.0.0.54.88;]"
+    },
+    "device": {
+      "deviceName": "G8141",
+      "marketingName": "Xperia XZ Premium",
+      "manufacturer": "sony",
+      "brand": "sony",
+      "display": {
+        "width": 3840,
+        "height": 2160,
+        "touch": true,
+        "size": 5.46
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "153.0.0.54.88",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "63.0.3239.111",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; G3311 Build/43.0.A.7.25; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/65.0.3325.109 Mobile Safari/537.36 [FB_IAB/Orca-Android;FBAV/162.0.0.19.90;]"
+    },
+    "device": {
+      "deviceName": "G3311",
+      "marketingName": "Xperia L1",
+      "manufacturer": "sony",
+      "brand": "sony",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "162.0.0.19.90",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "65.0.3325.109",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; D2305 Build/18.6.A.0.182) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.83 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "D2305",
+      "marketingName": "Xperia M2",
+      "manufacturer": "sony",
+      "brand": "sony",
+      "display": {
+        "width": 960,
+        "height": 540,
+        "touch": true,
+        "size": 4.8
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "58.0.3029.83",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "58.0.3029.83",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.0.2; D6603 Build/23.1.A.1.28) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "D6603",
+      "marketingName": "Xperia Z3",
+      "manufacturer": "sony",
+      "brand": "sony",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.2
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "62.0.3202.84",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.0.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "62.0.3202.84",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0; E5663 Build/30.2.B.0.100) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "E5663",
+      "marketingName": "Xperia M5 Dual",
       "manufacturer": "sony",
       "brand": "sony",
       "display": {
@@ -2901,6 +3091,196 @@
         "height": 1080,
         "touch": true,
         "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "62.0.3202.84",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "62.0.3202.84",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.0.0; G8141 Build/47.1.A.8.49; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/63.0.3239.111 Mobile Safari/537.36 [FB_IAB/Orca-Android;FBAV/148.0.0.20.381;]"
+    },
+    "device": {
+      "deviceName": "G8141",
+      "marketingName": "Xperia XZ Premium",
+      "manufacturer": "sony",
+      "brand": "sony",
+      "display": {
+        "width": 3840,
+        "height": 2160,
+        "touch": true,
+        "size": 5.46
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "148.0.0.20.381",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "63.0.3239.111",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.0.2; D6503 Build/23.1.A.0.726) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.137 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "D6503",
+      "marketingName": "Xperia Z2 LTE",
+      "manufacturer": "sony",
+      "brand": "sony",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.2
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "64.0.3282.137",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.0.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "64.0.3282.137",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; G3311 Build/43.0.A.5.79; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/61.0.3163.98 Mobile Safari/537.36 [FB_IAB/MESSENGER;FBAV/140.0.0.43.91;]"
+    },
+    "device": {
+      "deviceName": "G3311",
+      "marketingName": "Xperia L1",
+      "manufacturer": "sony",
+      "brand": "sony",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook Messenger App",
+      "modus": null,
+      "version": "140.0.0.43.91",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "61.0.3163.98",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; C2104 Build/15.3.A.1.17) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.98 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "C2104",
+      "marketingName": "Xperia L",
+      "manufacturer": "sony",
+      "brand": "sony",
+      "display": {
+        "width": 854,
+        "height": 480,
+        "touch": true,
+        "size": 4.3
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "61.0.3163.98",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "61.0.3163.98",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.1; F5321 Build/34.3.A.0.238; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/62.0.3202.84 Mobile Safari/537.36 [FB_IAB/Orca-Android;FBAV/143.0.0.20.69;]"
+    },
+    "device": {
+      "deviceName": "F5321",
+      "marketingName": "Xperia X Compact",
+      "manufacturer": "sony",
+      "brand": "sony",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 4.6
       },
       "type": "smartphone"
     },
@@ -2927,311 +3307,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; F3211 Build/36.1.A.1.86; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/62.0.3202.84 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "F3211",
-      "marketingName": "Xperia XA Ultra",
-      "manufacturer": "sony",
-      "brand": "sony",
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 6
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Android WebView",
-      "modus": null,
-      "version": "62.0.3202.84",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "7.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "62.0.3202.84",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; C6603 Build/10.7.A.0.228; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/61.0.3163.98 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/142.0.0.29.92;]"
-    },
-    "device": {
-      "deviceName": "C6603",
-      "marketingName": "Xperia Z",
-      "manufacturer": "sony",
-      "brand": "sony",
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "142.0.0.29.92",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.1.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "61.0.3163.98",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 6.0; F3111 Build/33.2.A.4.70; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/61.0.3163.98 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/143.0.0.32.90;]"
-    },
-    "device": {
-      "deviceName": "F3111",
-      "marketingName": "Xperia XA",
-      "manufacturer": "sony",
-      "brand": "sony",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "143.0.0.32.90",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "6.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "61.0.3163.98",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.1; E6653 Build/32.4.A.1.54; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/63.0.3239.111 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/157.0.0.38.97;]"
-    },
-    "device": {
-      "deviceName": "E6653",
-      "marketingName": "Xperia Z5",
-      "manufacturer": "sony",
-      "brand": "sony",
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5.2
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "157.0.0.38.97",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "7.1.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "63.0.3239.111",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.1; F8331 Build/41.2.A.7.53; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/61.0.3163.98 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/116.0.0.0.48;]"
-    },
-    "device": {
-      "deviceName": "F8331",
-      "marketingName": "Xperia XZ",
-      "manufacturer": "sony",
-      "brand": "sony",
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5.2
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "116.0.0.0.48",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "7.1.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "61.0.3163.98",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; C6603 Build/10.7.A.0.228; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/61.0.3163.98 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "C6603",
-      "marketingName": "Xperia Z",
-      "manufacturer": "sony",
-      "brand": "sony",
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Android WebView",
-      "modus": null,
-      "version": "61.0.3163.98",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.1.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "61.0.3163.98",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 6.0; E5603 Build/30.2.A.1.21; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/61.0.3163.98 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/148.0.0.51.62;]"
-    },
-    "device": {
-      "deviceName": "E5603",
-      "marketingName": "Xperia M5",
-      "manufacturer": "sony",
-      "brand": "sony",
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "148.0.0.51.62",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "6.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "61.0.3163.98",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.4; E2105 Build/24.0.A.5.14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.98 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "E2105",
-      "marketingName": "Xperia E4",
-      "manufacturer": "sony",
-      "brand": "sony",
-      "display": {
-        "width": 960,
-        "height": 540,
-        "touch": true,
-        "size": 5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "61.0.3163.98",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.4.4",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "61.0.3163.98",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 8.0.0; G3121 Build/48.1.A.0.129; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/65.0.3325.109 Mobile Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; G3121 Build/40.0.A.6.162; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/60.0.3112.116 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/151.0.0.44.205;]"
     },
     "device": {
       "deviceName": "G3121",
@@ -3247,9 +3323,47 @@
       "type": "smartphone"
     },
     "browser": {
-      "name": "Android WebView",
+      "name": "Facebook App",
       "modus": null,
-      "version": "65.0.3325.109",
+      "version": "151.0.0.44.205",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "60.0.3112.116",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; F3216 Build/36.1.A.1.86) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.83 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "F3216",
+      "marketingName": "Xperia XA Ultra",
+      "manufacturer": "sony",
+      "brand": "sony",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "58.0.3029.83",
       "manufacturer": "google",
       "bits": null,
       "type": "browser"
@@ -3257,23 +3371,23 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "8.0.0",
+      "version": "7.0.0",
       "manufacturer": "google",
       "bits": null
     },
     "engine": {
       "name": "Blink",
-      "version": "65.0.3325.109",
+      "version": "58.0.3029.83",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.1; F8331 Build/41.2.A.7.53; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/60.0.3112.107 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/139.0.0.26.93;]"
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.1; F8332 Build/41.2.A.7.76) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.109 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "F8331",
-      "marketingName": "Xperia XZ",
+      "deviceName": "F8332",
+      "marketingName": "Xperia XZ Dual SIM",
       "manufacturer": "sony",
       "brand": "sony",
       "display": {
@@ -3285,12 +3399,12 @@
       "type": "smartphone"
     },
     "browser": {
-      "name": "Facebook App",
+      "name": "Chrome",
       "modus": null,
-      "version": "139.0.0.26.93",
-      "manufacturer": "facebook",
+      "version": "65.0.3325.109",
+      "manufacturer": "google",
       "bits": null,
-      "type": "application"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
@@ -3301,51 +3415,51 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "60.0.3112.107",
+      "version": "65.0.3325.109",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; C6833 Build/14.6.A.1.236; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/44.0.2403.117 Mobile Safari/537.36 MicroMessenger/6.5.7.1041 NetType/WIFI Language/zh_CN"
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; D6633 Build/23.5.A.1.291) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.126 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "C6833",
-      "marketingName": "Xperia Z Ultra LTE",
+      "deviceName": "D6633",
+      "marketingName": "Xperia Z3 Dual SIM",
       "manufacturer": "sony",
       "brand": "sony",
       "display": {
         "width": 1920,
         "height": 1080,
         "touch": true,
-        "size": 6.4
+        "size": 5.2
       },
       "type": "smartphone"
     },
     "browser": {
-      "name": "WeChat App",
+      "name": "Chrome",
       "modus": null,
-      "version": "6.5.7.1041",
-      "manufacturer": "tencent",
+      "version": "66.0.3359.126",
+      "manufacturer": "google",
       "bits": null,
-      "type": "application"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "5.1.1",
+      "version": "6.0.1",
       "manufacturer": "google",
       "bits": null
     },
     "engine": {
       "name": "Blink",
-      "version": "44.0.2403.117",
+      "version": "66.0.3359.126",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.1; F5121 Build/34.3.A.0.217; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/60.0.3112.107 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/139.0.0.22.93;]"
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.0.0; F5121 Build/34.4.A.2.19; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/64.0.3282.137 Mobile Safari/537.36"
     },
     "device": {
       "deviceName": "F5121",
@@ -3361,47 +3475,9 @@
       "type": "smartphone"
     },
     "browser": {
-      "name": "Facebook App",
+      "name": "Android WebView",
       "modus": null,
-      "version": "139.0.0.22.93",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "7.1.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "60.0.3112.107",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 6.0; E5303 Build/27.3.A.0.129) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.125 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "E5303",
-      "marketingName": "Xperia C4",
-      "manufacturer": "sony",
-      "brand": "sony",
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "59.0.3071.125",
+      "version": "64.0.3282.137",
       "manufacturer": "google",
       "bits": null,
       "type": "browser"
@@ -3409,19 +3485,57 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "6.0.0",
+      "version": "8.0.0",
       "manufacturer": "google",
       "bits": null
     },
     "engine": {
       "name": "Blink",
-      "version": "59.0.3071.125",
+      "version": "64.0.3282.137",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 6.0; F3111 Build/33.2.A.4.70; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/62.0.3202.84 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/153.0.0.54.88;]"
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.4; E2115 Build/24.0.B.5.14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.109 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "E2115",
+      "marketingName": "Xperia E4 Dual",
+      "manufacturer": "sony",
+      "brand": "sony",
+      "display": {
+        "width": 960,
+        "height": 540,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "40.0.2214.109",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.4",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "40.0.2214.109",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; F3111 Build/33.3.A.1.97; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.158 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/171.0.0.49.92;]"
     },
     "device": {
       "deviceName": "F3111",
@@ -3439,44 +3553,6 @@
     "browser": {
       "name": "Facebook App",
       "modus": null,
-      "version": "153.0.0.54.88",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "6.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "62.0.3202.84",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 8.0.0; G8441 Build/47.1.A.12.179; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.158 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/171.0.0.49.92;]"
-    },
-    "device": {
-      "deviceName": "G8441",
-      "marketingName": "Xperia XZ1 Compact",
-      "manufacturer": "sony",
-      "brand": "sony",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 4.6
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Facebook App",
-      "modus": null,
       "version": "171.0.0.49.92",
       "manufacturer": "facebook",
       "bits": null,
@@ -3485,7 +3561,7 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "8.0.0",
+      "version": "7.0.0",
       "manufacturer": "google",
       "bits": null
     },
@@ -3497,177 +3573,25 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.1; E5823 Build/32.4.A.0.160; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/58.0.3029.83 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/138.0.0.19.93;]"
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0; F3112 Build/33.2.B.3.81) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.81 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "E5823",
-      "marketingName": "Xperia Z5 Compact LTE",
+      "deviceName": "F3112",
+      "marketingName": "Xperia XA Dual SIM",
       "manufacturer": "sony",
       "brand": "sony",
       "display": {
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": 4.6
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "138.0.0.19.93",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "7.1.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "58.0.3029.83",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; F5121 Build/34.2.A.0.311; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/64.0.3282.137 Mobile Safari/537.36 [FB_IAB/Orca-Android;FBAV/153.0.0.17.94;]"
-    },
-    "device": {
-      "deviceName": "F5121",
-      "marketingName": "Xperia X",
-      "manufacturer": "sony",
-      "brand": "sony",
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
         "size": 5
       },
       "type": "smartphone"
     },
     "browser": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "153.0.0.17.94",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "7.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "64.0.3282.137",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; D2005 Build/20.1.A.2.19) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.137 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "D2005",
-      "marketingName": "Xperia E1",
-      "manufacturer": "sony",
-      "brand": "sony",
-      "display": {
-        "width": 800,
-        "height": 480,
-        "touch": true,
-        "size": 4
-      },
-      "type": "smartphone"
-    },
-    "browser": {
       "name": "Chrome",
       "modus": null,
-      "version": "64.0.3282.137",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.4.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "64.0.3282.137",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; C2104 Build/15.3.A.1.17) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.125 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "C2104",
-      "marketingName": "Xperia L",
-      "manufacturer": "sony",
-      "brand": "sony",
-      "display": {
-        "width": 854,
-        "height": 480,
-        "touch": true,
-        "size": 4.3
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "59.0.3071.125",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.2.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "59.0.3071.125",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 6.0; E5303 Build/27.3.A.0.129) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.107 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "E5303",
-      "marketingName": "Xperia C4",
-      "manufacturer": "sony",
-      "brand": "sony",
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "60.0.3112.107",
+      "version": "51.0.2704.81",
       "manufacturer": "google",
       "bits": null,
       "type": "browser"
@@ -3681,110 +3605,110 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "60.0.3112.107",
+      "version": "51.0.2704.81",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.4; E2105 Build/24.0.A.5.14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.116 Mobile Safari/537.36 OPR/44.1.2246.123029"
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; D6653 Build/23.5.A.1.291) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36 EdgA/41.0.0.1656"
     },
     "device": {
-      "deviceName": "E2105",
-      "marketingName": "Xperia E4",
+      "deviceName": "D6653",
+      "marketingName": "Xperia Z3",
       "manufacturer": "sony",
       "brand": "sony",
       "display": {
-        "width": 960,
-        "height": 540,
+        "width": 1920,
+        "height": 1080,
         "touch": true,
-        "size": 5
+        "size": 5.2
       },
       "type": "smartphone"
     },
     "browser": {
-      "name": "Opera Mobile",
+      "name": "Edge Mobile for Android",
       "modus": null,
-      "version": "44.1.2246.123029",
-      "manufacturer": "opera",
+      "version": "41.0.0.1656",
+      "manufacturer": "microsoft",
       "bits": null,
       "type": "browser"
     },
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "4.4.4",
+      "version": "6.0.1",
       "manufacturer": "google",
       "bits": null
     },
     "engine": {
       "name": "Blink",
-      "version": "60.0.3112.116",
+      "version": "63.0.3239.111",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.0; E2333 Build/26.1.B.3.109; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/60.0.3112.116 Mobile Safari/537.36 [FB_IAB/MESSENGER;FBAV/133.0.0.14.91;]"
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.0.0; F8331 Build/41.3.A.2.58; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/64.0.3282.137 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "E2333",
-      "marketingName": "Xperia M4 Aqua Dual",
+      "deviceName": "F8331",
+      "marketingName": "Xperia XZ",
       "manufacturer": "sony",
       "brand": "sony",
       "display": {
-        "width": 1280,
-        "height": 720,
+        "width": 1920,
+        "height": 1080,
         "touch": true,
-        "size": 5
+        "size": 5.2
       },
       "type": "smartphone"
     },
     "browser": {
-      "name": "Facebook Messenger App",
+      "name": "Android WebView",
       "modus": null,
-      "version": "133.0.0.14.91",
-      "manufacturer": "facebook",
+      "version": "64.0.3282.137",
+      "manufacturer": "google",
       "bits": null,
-      "type": "application"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "5.0.0",
+      "version": "8.0.0",
       "manufacturer": "google",
       "bits": null
     },
     "engine": {
       "name": "Blink",
-      "version": "60.0.3112.116",
+      "version": "64.0.3282.137",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; F5321 Build/34.2.A.2.69; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/60.0.3112.116 Mobile Safari/537.36 [FB_IAB/Orca-Android;FBAV/141.0.0.31.76;]"
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; E6853 Build/32.3.A.2.33) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.137 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "F5321",
-      "marketingName": "Xperia X Compact",
+      "deviceName": "E6853",
+      "marketingName": "Xperia Z5 Premium",
       "manufacturer": "sony",
       "brand": "sony",
       "display": {
-        "width": 1280,
-        "height": 720,
+        "width": 3840,
+        "height": 2160,
         "touch": true,
-        "size": 4.6
+        "size": 5.5
       },
       "type": "smartphone"
     },
     "browser": {
-      "name": "Facebook App",
+      "name": "Chrome",
       "modus": null,
-      "version": "141.0.0.31.76",
-      "manufacturer": "facebook",
+      "version": "64.0.3282.137",
+      "manufacturer": "google",
       "bits": null,
-      "type": "application"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
@@ -3795,7 +3719,83 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "60.0.3112.116",
+      "version": "64.0.3282.137",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; G3112 Build/40.0.A.6.189) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.126 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "G3112",
+      "marketingName": "Xperia XA1",
+      "manufacturer": "sony",
+      "brand": "sony",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "66.0.3359.126",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "66.0.3359.126",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.1; E6603 Build/32.4.A.1.54) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "E6603",
+      "marketingName": "Xperia Z5",
+      "manufacturer": "sony",
+      "brand": "sony",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.2
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "63.0.3239.111",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "63.0.3239.111",
       "manufacturer": "google"
     }
   }

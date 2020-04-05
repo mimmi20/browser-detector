@@ -1,44 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "KAA-A59/KAA59DZ1.09.A18/WAP1.2 Profile/MIDP-2.0 Configuration/CLDC-1.1"
-    },
-    "device": {
-      "deviceName": "general Mobile device",
-      "marketingName": "general Mobile device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": "WAP Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "wap-browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "KAA-A59/KAA59DZ1.08.A13/WAP1.2 Profile/MIDP-2.0 Configuration/CLDC-1.1"
     },
     "device": {
@@ -3782,6 +3744,44 @@
       "name": "Openwave Mobile Browser",
       "modus": null,
       "version": "5.0.5.4",
+      "manufacturer": "myriad",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "[=Fega_LoveRz=] UP.Browser/5.0.3.3 (GUI)"
+    },
+    "device": {
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "5.0.3.3",
       "manufacturer": "myriad",
       "bits": null,
       "type": "browser"
