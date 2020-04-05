@@ -1,6 +1,44 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.3.4; en-gb; LT170 Build/GRJ22) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
+    },
+    "device": {
+      "deviceName": "LT170",
+      "marketingName": "LT170",
+      "manufacturer": "toshiba",
+      "brand": "toshiba",
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "size": 7.7
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "2.3.4",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "533.1.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; U; Android 2.2; fr; TSB_CLOUD_COMPANION;TOSHIBA_AC_AND_AZ) AppleWebkit/533.1(KHTML, like Gecko) Version/4.0 Safari/533.1"
     },
     "device": {
@@ -3730,44 +3768,6 @@
     "device": {
       "deviceName": "AT10PE-A",
       "marketingName": "eXcite Write",
-      "manufacturer": "toshiba",
-      "brand": "toshiba",
-      "display": {
-        "width": 2560,
-        "height": 1600,
-        "touch": true,
-        "size": 10.1
-      },
-      "type": "tablet"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "45.0.2454.84",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.2.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "45.0.2454.84",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.2.1; AT10LE-A Build/JOP40D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.84 Safari/537.36"
-    },
-    "device": {
-      "deviceName": "AT10LE-A",
-      "marketingName": "eXcite Pro",
       "manufacturer": "toshiba",
       "brand": "toshiba",
       "display": {

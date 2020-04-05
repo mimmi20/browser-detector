@@ -13,6 +13,20 @@
     "type": "smartphone",
     "platform": null
   },
+  "sonyericsson anzu": {
+    "deviceName": "Anzu",
+    "marketingName": "Anzu",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": 854,
+      "height": 480,
+      "touch": true,
+      "size": 4.2
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "sonyericsson wt19a": {
     "deviceName": "WT19a",
     "marketingName": "Live with Walkman",
@@ -181,6 +195,20 @@
     "type": "smartphone",
     "platform": "symbian"
   },
+  "sonyericsson u8a": {
+    "deviceName": "U8a",
+    "marketingName": "Vivaz Pro",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": 640,
+      "height": 360,
+      "touch": true,
+      "size": 3.2
+    },
+    "type": "smartphone",
+    "platform": "symbian"
+  },
   "sonyericsson u8i": {
     "deviceName": "U8i",
     "marketingName": "Vivaz Pro",
@@ -190,7 +218,7 @@
       "width": 640,
       "height": 360,
       "touch": true,
-      "size": null
+      "size": 3.2
     },
     "type": "smartphone",
     "platform": "symbian"
@@ -568,7 +596,7 @@
       "width": 480,
       "height": 320,
       "touch": true,
-      "size": null
+      "size": 3
     },
     "type": "smartphone",
     "platform": "android"
@@ -582,7 +610,21 @@
       "width": 480,
       "height": 320,
       "touch": true,
-      "size": null
+      "size": 3
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "sonyericsson xperia active": {
+    "deviceName": "Xperia Active",
+    "marketingName": "Xperia Active",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": 480,
+      "height": 320,
+      "touch": true,
+      "size": 3
     },
     "type": "smartphone",
     "platform": "android"
@@ -645,6 +687,20 @@
   },
   "sonyericsson so-01c": {
     "deviceName": "SO-01C",
+    "marketingName": "Xperia Arc",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": 854,
+      "height": 480,
+      "touch": true,
+      "size": 4.2
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "sonyericsson xperia arc": {
+    "deviceName": "Xperia Arc",
     "marketingName": "Xperia Arc",
     "manufacturer": "sony-ericsson",
     "brand": "sony-ericsson",
@@ -729,6 +785,20 @@
   },
   "sonyericsson lt18iv": {
     "deviceName": "LT18iv",
+    "marketingName": "Xperia Arc S",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": 854,
+      "height": 480,
+      "touch": true,
+      "size": 4.2
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "sonyericsson mt18i": {
+    "deviceName": "MT18i",
     "marketingName": "Xperia Arc S",
     "manufacturer": "sony-ericsson",
     "brand": "sony-ericsson",
@@ -1399,6 +1469,20 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "sonyericsson xperia halon": {
+    "deviceName": "Xperia Halon",
+    "marketingName": "Xperia Halon",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": 854,
+      "height": 480,
+      "touch": true,
+      "size": null
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "sony lt29i": {
     "deviceName": "LT29i",
     "marketingName": "Xperia Hayabusa",
@@ -1455,6 +1539,20 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "sony xperia ion": {
+    "deviceName": "Xperia Ion",
+    "marketingName": "Xperia Ion",
+    "manufacturer": "sony",
+    "brand": "sony",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 4.6
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "sony st26a": {
     "deviceName": "ST26a",
     "marketingName": "Xperia J",
@@ -1471,6 +1569,20 @@
   },
   "sony st26i": {
     "deviceName": "ST26i",
+    "marketingName": "Xperia J",
+    "manufacturer": "sony",
+    "brand": "sony",
+    "display": {
+      "width": 854,
+      "height": 480,
+      "touch": true,
+      "size": 4
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "sony xperia j": {
+    "deviceName": "Xperia J",
     "marketingName": "Xperia J",
     "manufacturer": "sony",
     "brand": "sony",
@@ -2015,6 +2127,20 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "sonyericsson st15": {
+    "deviceName": "ST15",
+    "marketingName": "Xperia Mini",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": 480,
+      "height": 320,
+      "touch": true,
+      "size": null
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "sonyericsson st15a": {
     "deviceName": "ST15a",
     "marketingName": "Xperia Mini",
@@ -2031,6 +2157,20 @@
   },
   "sonyericsson st15i": {
     "deviceName": "ST15i",
+    "marketingName": "Xperia Mini",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": 480,
+      "height": 320,
+      "touch": true,
+      "size": null
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "sonyericsson xperia mini": {
+    "deviceName": "Xperia Mini",
     "marketingName": "Xperia Mini",
     "manufacturer": "sony-ericsson",
     "brand": "sony-ericsson",
@@ -2127,6 +2267,34 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "sony xperia miro": {
+    "deviceName": "Xperia Miro",
+    "marketingName": "Xperia Miro",
+    "manufacturer": "sony",
+    "brand": "sony",
+    "display": {
+      "width": 480,
+      "height": 320,
+      "touch": true,
+      "size": 3.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "sonyericsson mt15": {
+    "deviceName": "MT15",
+    "marketingName": "Xperia Neo",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": 854,
+      "height": 480,
+      "touch": true,
+      "size": null
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "sonyericsson mt15a": {
     "deviceName": "MT15a",
     "marketingName": "Xperia Neo",
@@ -2169,8 +2337,36 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "sonyericsson xperia neo": {
+    "deviceName": "Xperia Neo",
+    "marketingName": "Xperia Neo",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": 854,
+      "height": 480,
+      "touch": true,
+      "size": null
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "sonyericsson mt25i": {
     "deviceName": "MT25i",
+    "marketingName": "Xperia Neo L",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": 854,
+      "height": 480,
+      "touch": true,
+      "size": null
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "sonyericsson xperia neo l": {
+    "deviceName": "Xperia Neo L",
     "marketingName": "Xperia Neo L",
     "manufacturer": "sony-ericsson",
     "brand": "sony-ericsson",
@@ -2347,6 +2543,20 @@
       "height": 480,
       "touch": true,
       "size": null
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "sonyericsson mk16": {
+    "deviceName": "MK16",
+    "marketingName": "Xperia Pro",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": 854,
+      "height": 480,
+      "touch": true,
+      "size": 3.7
     },
     "type": "smartphone",
     "platform": "android"
@@ -2855,6 +3065,20 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "sonyericsson xperia u": {
+    "deviceName": "Xperia U",
+    "marketingName": "Xperia U",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": 854,
+      "height": 480,
+      "touch": true,
+      "size": 3.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "sony sol22": {
     "deviceName": "SOL22",
     "marketingName": "Xperia UL",
@@ -3277,6 +3501,20 @@
   },
   "sonyericsson e15iv": {
     "deviceName": "E15iv",
+    "marketingName": "Xperia X8",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": 480,
+      "height": 320,
+      "touch": true,
+      "size": 3
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "sonyericsson xperia x8": {
+    "deviceName": "Xperia X8",
     "marketingName": "Xperia X8",
     "manufacturer": "sony-ericsson",
     "brand": "sony-ericsson",
