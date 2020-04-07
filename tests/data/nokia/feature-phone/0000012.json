@@ -1490,5 +1490,43 @@
       "version": "1.0.0",
       "manufacturer": "ucweb"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "UCWEB/2.0 (Java; U; MIDP-2.0; Nokia203/20.37) U2/1.0.0 UCMini/11.2.0.1125 (SpeedMode; Proxy; Android 7.1.2; SM-J701F ) U2/1.0.0 Mobile"
+    },
+    "device": {
+      "deviceName": "203",
+      "marketingName": "Asha 203",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "size": 2.4
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "UC Browser Mini",
+      "modus": null,
+      "version": "11.2.0.1125",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Nokia OS",
+      "marketingName": "Nokia OS",
+      "version": null,
+      "manufacturer": "nokia",
+      "bits": null
+    },
+    "engine": {
+      "name": "U2",
+      "version": "1.0.0",
+      "manufacturer": "ucweb"
+    }
   }
 ]
