@@ -1,9 +1,13 @@
 {
   "rules": {
-    "/visionbook p55 lte pro/i": "umax visionbook p55 lte pro",
-    "/visionbook 10qi 3g/i": "umax visionbook 10qi 3g",
-    "/visionbook_10ai/i": "umax visionbook 10ai",
-    "/visionbook 7qi 3g/i": "umax visionbook 7qi 3g"
+    "/visionbook[_ ]p55[_ ]lte[_ ]pro/i": "umax visionbook p55 lte pro",
+    "/visionbook[_ ]p55[_ ]lte/i": "umax visionbook p55 lte",
+    "/visionbook[_ ]p50[_ ]lte/i": "umax visionbook p50 lte",
+    "/visionbook[_ ]10qi[_ ]3g/i": "umax visionbook 10qi 3g",
+    "/visionbook[_ ]10ai/i": "umax visionbook 10ai",
+    "/visionbook[_ ]8q[_ ]plus/i": "umax visionbook 8q plus",
+    "/visionbook[_ ]8q[_ ]lte/i": "umax visionbook 8q lte",
+    "/visionbook[_ ]7qi[_ ]3g/i": "umax visionbook 7qi 3g"
   },
   "generic": "general umax device"
 }
