@@ -111,6 +111,48 @@
     "type": "feature-phone",
     "platform": "nokia os"
   },
+  "sonyericsson m1a": {
+    "deviceName": "M1a",
+    "marketingName": "Aspen",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": 400,
+      "height": 240,
+      "touch": true,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "windows ce"
+  },
+  "sonyericsson c123": {
+    "deviceName": "C123",
+    "marketingName": "C123",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "sonyericsson c123v": {
+    "deviceName": "C123v",
+    "marketingName": "C123v",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "sonyericsson c510": {
     "deviceName": "C510",
     "marketingName": "C510",
@@ -139,6 +181,20 @@
     "type": "feature-phone",
     "platform": "java"
   },
+  "sonyericsson c901": {
+    "deviceName": "C901",
+    "marketingName": "C901",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": 2.2
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "sonyericsson c902": {
     "deviceName": "C902",
     "marketingName": "C902",
@@ -149,6 +205,34 @@
       "height": 240,
       "touch": false,
       "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "sonyericsson c903": {
+    "deviceName": "C903",
+    "marketingName": "C903",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": 2.4
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "sonyericsson c903a": {
+    "deviceName": "C903a",
+    "marketingName": "C903a",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": 2.4
     },
     "type": "feature-phone",
     "platform": "java"
@@ -174,6 +258,20 @@
     "brand": "sony-ericsson",
     "display": {
       "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "sonyericsson ck15a": {
+    "deviceName": "CK15a",
+    "marketingName": "CK15a",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": 400,
       "height": 240,
       "touch": false,
       "size": null
@@ -233,6 +331,34 @@
       "height": 240,
       "touch": false,
       "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "sonyericsson f305": {
+    "deviceName": "F305",
+    "marketingName": "F305",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": false,
+      "size": 2
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "sonyericsson f305c": {
+    "deviceName": "F305c",
+    "marketingName": "F305c",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": false,
+      "size": 2
     },
     "type": "feature-phone",
     "platform": "java"
@@ -335,6 +461,76 @@
     "type": "feature-phone",
     "platform": "java"
   },
+  "sonyericsson j105a": {
+    "deviceName": "J105a",
+    "marketingName": "J105a",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "sonyericsson j108": {
+    "deviceName": "J108",
+    "marketingName": "J108",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "sonyericsson j108a": {
+    "deviceName": "J108a",
+    "marketingName": "J108a",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "sonyericsson j10i": {
+    "deviceName": "J10i",
+    "marketingName": "J10i",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "sonyericsson j20": {
+    "deviceName": "J20",
+    "marketingName": "J20",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "sonyericsson j200i": {
     "deviceName": "J200i",
     "marketingName": "J200i",
@@ -345,6 +541,34 @@
       "height": 128,
       "touch": false,
       "size": 1.6
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "sonyericsson j20a": {
+    "deviceName": "J20a",
+    "marketingName": "J20a",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "sonyericsson j210c": {
+    "deviceName": "J210c",
+    "marketingName": "J210c",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
     },
     "type": "feature-phone",
     "platform": "java"
@@ -363,6 +587,20 @@
     "type": "feature-phone",
     "platform": "java"
   },
+  "sonyericsson j220c": {
+    "deviceName": "J220c",
+    "marketingName": "J220c",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "sonyericsson j220i": {
     "deviceName": "J220i",
     "marketingName": "J220i",
@@ -371,6 +609,20 @@
     "display": {
       "width": 128,
       "height": 128,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "sonyericsson j230c": {
+    "deviceName": "J230c",
+    "marketingName": "J230c",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": null,
+      "height": null,
       "touch": false,
       "size": null
     },
@@ -447,6 +699,62 @@
     "type": "feature-phone",
     "platform": "java"
   },
+  "sonyericsson k200i": {
+    "deviceName": "K200i",
+    "marketingName": "K200i",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": 128,
+      "height": 128,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "sonyericsson k220c": {
+    "deviceName": "K220c",
+    "marketingName": "K220c",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": 128,
+      "height": 128,
+      "touch": false,
+      "size": 1.6
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "sonyericsson k220i": {
+    "deviceName": "K220i",
+    "marketingName": "K220i",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": 128,
+      "height": 128,
+      "touch": false,
+      "size": 1.6
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "sonyericsson k300": {
+    "deviceName": "K300",
+    "marketingName": "K300",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": 128,
+      "height": 128,
+      "touch": false,
+      "size": 1.6
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "sonyericsson k300a": {
     "deviceName": "K300a",
     "marketingName": "K300a",
@@ -489,9 +797,205 @@
     "type": "feature-phone",
     "platform": "java"
   },
+  "sonyericsson k310a": {
+    "deviceName": "K310a",
+    "marketingName": "K310a",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": 1.8
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "sonyericsson k310c": {
+    "deviceName": "K310c",
+    "marketingName": "K310c",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": 1.8
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "sonyericsson k310i": {
+    "deviceName": "K310i",
+    "marketingName": "K310i",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": 1.8
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "sonyericsson k310iv": {
     "deviceName": "K310iv",
     "marketingName": "K310iv",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": 1.8
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "sonyericsson k320c": {
+    "deviceName": "K320c",
+    "marketingName": "K320c",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": 1.8
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "sonyericsson k320i": {
+    "deviceName": "K320i",
+    "marketingName": "K320i",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": 1.8
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "sonyericsson k330": {
+    "deviceName": "K330",
+    "marketingName": "K330",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": 1.7
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "sonyericsson k330a": {
+    "deviceName": "K330a",
+    "marketingName": "K330a",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": 1.7
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "sonyericsson k500": {
+    "deviceName": "K500",
+    "marketingName": "K500",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": 1.9
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "sonyericsson k500c": {
+    "deviceName": "K500c",
+    "marketingName": "K500c",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": 1.9
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "sonyericsson k500i": {
+    "deviceName": "K500i",
+    "marketingName": "K500i",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": 1.9
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "sonyericsson k506c": {
+    "deviceName": "K506c",
+    "marketingName": "K506c",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": 1.9
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "sonyericsson k508c": {
+    "deviceName": "K508c",
+    "marketingName": "K508c",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": 1.9
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "sonyericsson k508i": {
+    "deviceName": "K508i",
+    "marketingName": "K508i",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": 1.9
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "sonyericsson k510": {
+    "deviceName": "K510",
+    "marketingName": "K510",
     "manufacturer": "sony-ericsson",
     "brand": "sony-ericsson",
     "display": {
@@ -545,6 +1049,20 @@
     "type": "feature-phone",
     "platform": "java"
   },
+  "sonyericsson k530c": {
+    "deviceName": "K530c",
+    "marketingName": "K530c",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": false,
+      "size": 2
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "sonyericsson k530i": {
     "deviceName": "K530i",
     "marketingName": "K530i",
@@ -555,6 +1073,20 @@
       "height": 176,
       "touch": false,
       "size": 2
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "sonyericsson k550c": {
+    "deviceName": "K550c",
+    "marketingName": "K550c",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": false,
+      "size": 1.9
     },
     "type": "feature-phone",
     "platform": "java"
@@ -573,6 +1105,34 @@
     "type": "feature-phone",
     "platform": "java"
   },
+  "sonyericsson k600": {
+    "deviceName": "K600",
+    "marketingName": "K600",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": false,
+      "size": 1.8
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "sonyericsson k600c": {
+    "deviceName": "K600c",
+    "marketingName": "K600c",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": false,
+      "size": 1.8
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "sonyericsson k600i": {
     "deviceName": "K600i",
     "marketingName": "K600i",
@@ -583,6 +1143,188 @@
       "height": 176,
       "touch": false,
       "size": 1.8
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "sonyericsson k608i": {
+    "deviceName": "K608i",
+    "marketingName": "K608i",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": false,
+      "size": 1.8
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "sonyericsson k610a": {
+    "deviceName": "K610a",
+    "marketingName": "K610a",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": false,
+      "size": 1.9
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "sonyericsson k610c": {
+    "deviceName": "K610c",
+    "marketingName": "K610c",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": false,
+      "size": 1.9
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "sonyericsson k610i": {
+    "deviceName": "K610i",
+    "marketingName": "K610i",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": false,
+      "size": 1.9
+    },
+    "type": "feature-phone",
+    "platform": "windows ce"
+  },
+  "sonyericsson k610im": {
+    "deviceName": "K610im",
+    "marketingName": "K610im",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": false,
+      "size": 1.9
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "sonyericsson k610iv": {
+    "deviceName": "K610iv",
+    "marketingName": "K610iv",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": false,
+      "size": 1.9
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "sonyericsson k618i": {
+    "deviceName": "K618i",
+    "marketingName": "K618i",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": false,
+      "size": 1.9
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "sonyericsson k618iv": {
+    "deviceName": "K618iv",
+    "marketingName": "K618iv",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": false,
+      "size": 1.9
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "sonyericsson k630i": {
+    "deviceName": "K630i",
+    "marketingName": "K630i",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": false,
+      "size": 2
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "sonyericsson k660": {
+    "deviceName": "K660",
+    "marketingName": "K660",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": 2
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "sonyericsson k660i": {
+    "deviceName": "K660i",
+    "marketingName": "K660i",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": 2
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "sonyericsson k700": {
+    "deviceName": "K700",
+    "marketingName": "K700",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "sonyericsson k700c": {
+    "deviceName": "K700c",
+    "marketingName": "K700c",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": false,
+      "size": null
     },
     "type": "feature-phone",
     "platform": "java"
@@ -601,6 +1343,34 @@
     "type": "feature-phone",
     "platform": "java"
   },
+  "sonyericsson k700v": {
+    "deviceName": "K700v",
+    "marketingName": "K700v",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "sonyericsson k750c": {
+    "deviceName": "K750c",
+    "marketingName": "K750c",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": false,
+      "size": 1.8
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "sonyericsson k750i": {
     "deviceName": "K750i",
     "marketingName": "K750i",
@@ -615,9 +1385,37 @@
     "type": "feature-phone",
     "platform": "java"
   },
+  "sonyericsson k758c": {
+    "deviceName": "K758c",
+    "marketingName": "K758c",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": false,
+      "size": 1.8
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "sonyericsson k770i": {
     "deviceName": "K770i",
     "marketingName": "K770i",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "sonyericsson k790": {
+    "deviceName": "K790",
+    "marketingName": "K790",
     "manufacturer": "sony-ericsson",
     "brand": "sony-ericsson",
     "display": {
@@ -671,6 +1469,20 @@
     "type": "feature-phone",
     "platform": "java"
   },
+  "sonyericsson k800a": {
+    "deviceName": "K800a",
+    "marketingName": "K800a",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "sonyericsson k800c": {
     "deviceName": "K800c",
     "marketingName": "K800c",
@@ -688,6 +1500,20 @@
   "sonyericsson k800i": {
     "deviceName": "K800i",
     "marketingName": "K800i",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "sonyericsson k810a": {
+    "deviceName": "K810a",
+    "marketingName": "K810a",
     "manufacturer": "sony-ericsson",
     "brand": "sony-ericsson",
     "display": {
@@ -727,6 +1553,34 @@
     "type": "feature-phone",
     "platform": "java"
   },
+  "sonyericsson k818c": {
+    "deviceName": "K818c",
+    "marketingName": "K818c",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": 2
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "sonyericsson k850fi": {
+    "deviceName": "K850Fi",
+    "marketingName": "K850Fi",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": 2.2
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "sonyericsson k850i": {
     "deviceName": "K850i",
     "marketingName": "K850i",
@@ -740,6 +1594,90 @@
     },
     "type": "feature-phone",
     "platform": "java"
+  },
+  "sonyericsson k858c": {
+    "deviceName": "K858c",
+    "marketingName": "K858c",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": 2.2
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "sonyericsson k8j50i": {
+    "deviceName": "K8J50i",
+    "marketingName": "K8J50i",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "sonyericsson k999": {
+    "deviceName": "K999",
+    "marketingName": "K999",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": 3
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "sonyericsson m1i": {
+    "deviceName": "M1i",
+    "marketingName": "M1i",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": true,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": null
+  },
+  "sonyericsson m600c": {
+    "deviceName": "M600c",
+    "marketingName": "M600c",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": true,
+      "size": 2.6
+    },
+    "type": "feature-phone",
+    "platform": "symbian"
+  },
+  "sonyericsson m608c": {
+    "deviceName": "M608c",
+    "marketingName": "M608c",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": true,
+      "size": 2.6
+    },
+    "type": "feature-phone",
+    "platform": "symbian"
   },
   "sonyericsson wt13i": {
     "deviceName": "WT13i",
@@ -797,6 +1735,48 @@
     "type": "feature-phone",
     "platform": "symbian"
   },
+  "sonyericsson p200": {
+    "deviceName": "P200",
+    "marketingName": "P200",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": true,
+      "size": 2.6
+    },
+    "type": "feature-phone",
+    "platform": "symbian"
+  },
+  "sonyericsson p700i": {
+    "deviceName": "P700i",
+    "marketingName": "P700i",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": true,
+      "size": 2.6
+    },
+    "type": "feature-phone",
+    "platform": "symbian"
+  },
+  "sonyericsson p800": {
+    "deviceName": "P800",
+    "marketingName": "P800",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": 320,
+      "height": 208,
+      "touch": true,
+      "size": 2.9
+    },
+    "type": "feature-phone",
+    "platform": "symbian"
+  },
   "sonyericsson p900": {
     "deviceName": "P900",
     "marketingName": "P900",
@@ -807,6 +1787,20 @@
       "height": 208,
       "touch": false,
       "size": 2.9
+    },
+    "type": "feature-phone",
+    "platform": "symbian"
+  },
+  "sonyericsson p908": {
+    "deviceName": "P908",
+    "marketingName": "P908",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": 320,
+      "height": 208,
+      "touch": true,
+      "size": 3
     },
     "type": "feature-phone",
     "platform": "symbian"
@@ -853,6 +1847,20 @@
     "type": "feature-phone",
     "platform": "symbian"
   },
+  "sonyericsson p990": {
+    "deviceName": "P990",
+    "marketingName": "P990",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": true,
+      "size": 2.7
+    },
+    "type": "feature-phone",
+    "platform": "symbian"
+  },
   "sonyericsson p990i": {
     "deviceName": "P990i",
     "marketingName": "P990i",
@@ -866,6 +1874,90 @@
     },
     "type": "feature-phone",
     "platform": "symbian"
+  },
+  "sonyericsson r300": {
+    "deviceName": "R300",
+    "marketingName": "R300",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": true,
+      "size": 1.8
+    },
+    "type": "feature-phone",
+    "platform": "symbian"
+  },
+  "sonyericsson r300a": {
+    "deviceName": "R300a",
+    "marketingName": "R300a",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": true,
+      "size": 1.8
+    },
+    "type": "feature-phone",
+    "platform": "symbian"
+  },
+  "sonyericsson r306": {
+    "deviceName": "R306",
+    "marketingName": "R306",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": true,
+      "size": 1.9
+    },
+    "type": "feature-phone",
+    "platform": "symbian"
+  },
+  "sonyericsson r306a": {
+    "deviceName": "R306a",
+    "marketingName": "R306a",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": true,
+      "size": 1.9
+    },
+    "type": "feature-phone",
+    "platform": "symbian"
+  },
+  "sonyericsson s302": {
+    "deviceName": "S302",
+    "marketingName": "S302",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": false,
+      "size": 2
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "sonyericsson s302c": {
+    "deviceName": "S302c",
+    "marketingName": "S302c",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": false,
+      "size": 2
+    },
+    "type": "feature-phone",
+    "platform": "java"
   },
   "sonyericsson s312": {
     "deviceName": "S312",
@@ -903,6 +1995,20 @@
     "display": {
       "width": 320,
       "height": 240,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "sonyericsson s600i": {
+    "deviceName": "S600i",
+    "marketingName": "S600i",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": 220,
+      "height": 176,
       "touch": false,
       "size": null
     },
