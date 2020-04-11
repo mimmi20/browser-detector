@@ -323,7 +323,7 @@
     "/primo76|primo 91/i": "msi",
     "/walton|primo[\\- _]|walpad/i": "walton",
     "/rivo|rx([47]5|[64]0)/i": "rivo",
-    "/(mpqc|mpdc)[0-9]{1,4}|ph[0-9]{3}|mid(7c|74c|82c|84c|801|811|701|711|170|77c|43c|102c|103c|104c|114c)|mp(843|717|718|843|888|959|969|100i|1010|7007|7008|11 octa)|mgp7/i": "mpman",
+    "/(mpqc|mpdc)[0-9]{1,4}|(?<!c)ph[0-9]{3}|mid(7c|74c|82c|84c|801|811|701|711|170|77c|43c|102c|103c|104c|114c)|mp(843|717|718|843|888|959|969|100i|1010|7007|7008|11 octa)|mgp7/i": "mpman",
     "/picopad[_ ]/i": "axioo",
     "/xiaomi(?!\\/mint|\\/miui)|redmi|note 4|mipad|poco(phone)?|mibox3|(mi [a-z0-9]+|mi-4c|mi-one[ _]?[a-z0-9]+|mix 2s?)[);\\/ ]|((?<!t)hm[ _][^\\/;]+|2014501|2014011|201481[12378]|201302[23]|2013061| f1|leo w|wt88047)( build| miui|[;\\/\\)])/i": "xiaomi",
     "/WeTab/": "neofonie",
