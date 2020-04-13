@@ -1,6 +1,158 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.0.4; MITO_A300 Build/IMM76D) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166 Mobile Safari/535.19"
+    },
+    "device": {
+      "deviceName": "general Mobile Phone",
+      "marketingName": "general Mobile Phone",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "18.0.1025.166",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.0.4",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "535.19.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 2.3.5; MITO_A78 Build/GINGERBREAD) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.72 Mobile Safari/537.36 OPR/16.0.1212.64336"
+    },
+    "device": {
+      "deviceName": "general Mobile Phone",
+      "marketingName": "general Mobile Phone",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "16.0.1212.64336",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "2.3.5",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "29.0.1547.72",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.1.2; MITOA800 Build/JZO54K) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.58 Mobile Safari/537.31"
+    },
+    "device": {
+      "deviceName": "general Mobile Phone",
+      "marketingName": "general Mobile Phone",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "26.0.1410.58",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.1.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.31.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 1.6; en-; Devour Build/DRC92) AppleWebKit/528.5+ (KHTML, like Gecko) Version/3.1.2 Mobile Safari/525.20.1"
+    },
+    "device": {
+      "deviceName": "general Mobile Phone",
+      "marketingName": "general Mobile Phone",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "3.1.2",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "1.6.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "528.5.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; U; Android 2.0.1; en-us; Droid (AdamZ Enhanced) Build/ESD56) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Mobile Safari/530.17"
     },
     "device": {
@@ -3644,158 +3796,6 @@
     "engine": {
       "name": "WebKit",
       "version": "533.1.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.2.1; de-de; RK2818, Build/MASTER) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
-    },
-    "device": {
-      "deviceName": "general Mobile Phone",
-      "marketingName": "general Mobile Phone",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Android Webkit",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "2.2.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "533.1.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.0.4; RK2906 Build/rk29sdk_Android 4.0.4_20120703.165436 fwd.test-keys) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166 Mobile Safari/535.19"
-    },
-    "device": {
-      "deviceName": "general Mobile Phone",
-      "marketingName": "general Mobile Phone",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "18.0.1025.166",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.0.4",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "535.19.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.0.4; RK701 Build/RK2906) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166 Mobile Safari/535.19"
-    },
-    "device": {
-      "deviceName": "general Mobile Phone",
-      "marketingName": "general Mobile Phone",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "18.0.1025.166",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.0.4",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "535.19.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.0.4; RK702 Build/2906) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166 Mobile Safari/535.19"
-    },
-    "device": {
-      "deviceName": "general Mobile Phone",
-      "marketingName": "general Mobile Phone",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "18.0.1025.166",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.0.4",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "535.19.0",
       "manufacturer": "apple"
     }
   }

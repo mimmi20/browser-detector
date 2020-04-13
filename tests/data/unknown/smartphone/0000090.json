@@ -1,44 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.1; CP8676_I02 Build/LMY47D; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 Mobile Safari/537.36 [FBIA/FB4A;FBAV/144.0.0.27.91;]"
-    },
-    "device": {
-      "deviceName": "general Mobile Phone",
-      "marketingName": "general Mobile Phone",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "144.0.0.27.91",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.1.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "57.0.2987.132",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; U; Android 5.1; en-US; P5L Build/LMY47D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/11.1.2.912 U3/0.8.0 Mobile Safari/534.30"
     },
     "device": {
@@ -3797,6 +3759,44 @@
       "name": "Gecko",
       "version": "68.0.2",
       "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.2.1; id; AD350) AppleWebKit/528.5+ (KHTML, like Gecko) Version/3.1.2 Mobile Safari/525.20.1 UCBrowser/8.7.0.315 Ponsel"
+    },
+    "device": {
+      "deviceName": "general Mobile Phone",
+      "marketingName": "general Mobile Phone",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "8.7.0.315",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "2.2.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "528.5.0",
+      "manufacturer": "apple"
     }
   }
 ]

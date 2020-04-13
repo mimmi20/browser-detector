@@ -1,44 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; msm8909 Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.93 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "general Mobile Phone",
-      "marketingName": "general Mobile Phone",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "43.0.2357.93",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.1.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "43.0.2357.93",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 5.1; Y12 Build/LMY47I) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36"
     },
     "device": {
@@ -3764,6 +3726,44 @@
   {
     "headers": {
       "user-agent": "Mozilla/5.0 (Linux; U; Android 4.1.1; xx; YunOS/3.0.0-E-20140312.1906) AppleWebKit/536.28 (KHTML, like Gecko) Version/4.0 Mobile Safari/536.28 Tanggula/3.0.0"
+    },
+    "device": {
+      "deviceName": "general Mobile Phone",
+      "marketingName": "general Mobile Phone",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Aliyun Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Yun OS",
+      "marketingName": "Yun OS",
+      "version": "3.0.0",
+      "manufacturer": "alibaba",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "536.28.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.1.1; xx; YunOS/3.0.0-R-20140515.0715) AppleWebKit/536.28 (KHTML, like Gecko) Version/4.0 Mobile Safari/536.28 Tanggula/3.0.0-20140515"
     },
     "device": {
       "deviceName": "general Mobile Phone",

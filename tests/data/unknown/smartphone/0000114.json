@@ -1,44 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Android 7.1.1; Mobile; rv:71.0) Gecko/71.0 Firefox/71.0"
-    },
-    "device": {
-      "deviceName": "general Mobile Phone",
-      "marketingName": "general Mobile Phone",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Firefox",
-      "modus": null,
-      "version": "71.0.0",
-      "manufacturer": "mozilla-foundation",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "7.1.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": "71.0.0",
-      "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 9; QUEST) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.93 Mobile Safari/537.36"
     },
     "device": {
@@ -3797,6 +3759,44 @@
       "name": "Gecko",
       "version": "68.4.1",
       "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; SL05) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.116 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "general Mobile Phone",
+      "marketingName": "general Mobile Phone",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "79.0.3945.116",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.1.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "79.0.3945.116",
+      "manufacturer": "google"
     }
   }
 ]
