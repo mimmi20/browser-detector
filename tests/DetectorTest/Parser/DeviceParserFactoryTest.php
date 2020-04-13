@@ -9,12 +9,6 @@
  */
 
 declare(strict_types = 1);
-/**
- * Created by PhpStorm.
- * User: Besitzer
- * Date: 24.12.2018
- * Time: 13:12
- */
 namespace BrowserDetectorTest\Parser;
 
 use BrowserDetector\Loader\CompanyLoaderInterface;
