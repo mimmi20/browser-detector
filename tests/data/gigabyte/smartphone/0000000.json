@@ -650,15 +650,15 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 2.1-update1; en-us; GSmart-G1305 Build/ERE27) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Mobile Safari/530.17"
     },
     "device": {
-      "deviceName": "general Gigabyte device",
-      "marketingName": "general Gigabyte device",
+      "deviceName": "GSmart G1305",
+      "marketingName": "GSmart G1305",
       "manufacturer": "gigabyte",
       "brand": "gigabyte",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 480,
+        "height": 320,
         "touch": true,
-        "size": null
+        "size": 3.2
       },
       "type": "smartphone"
     },
@@ -2315,6 +2315,44 @@
       "name": "Blink",
       "version": "79.0.3945.93",
       "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.0.4; en-US; G1305 Build/79Q030)"
+    },
+    "device": {
+      "deviceName": "GSmart G1305",
+      "marketingName": "GSmart G1305",
+      "manufacturer": "gigabyte",
+      "brand": "gigabyte",
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.2
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": null,
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.0.4",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
     }
   }
 ]

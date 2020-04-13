@@ -1,6 +1,120 @@
 [
   {
     "headers": {
+      "user-agent": "SonyEricssonZ1010/R1G SEMC-Browser/4.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Link/1.1"
+    },
+    "device": {
+      "deviceName": "Z1010",
+      "marketingName": "Z1010",
+      "manufacturer": "sony-ericsson",
+      "brand": "sony-ericsson",
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": 2.2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "SEMC-Browser",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "sony-ericsson",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SonyEricssonZ1010/R1G SEMC-Browser/4.0 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+    },
+    "device": {
+      "deviceName": "Z1010",
+      "marketingName": "Z1010",
+      "manufacturer": "sony-ericsson",
+      "brand": "sony-ericsson",
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": 2.2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "SEMC-Browser",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "sony-ericsson",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SonyEricssonZ1010/R1F SEMC-Browser/4.0 Profile/MIDP-1.0 MIDP-2.0 Configuration/CLDC-1.1"
+    },
+    "device": {
+      "deviceName": "Z1010",
+      "marketingName": "Z1010",
+      "manufacturer": "sony-ericsson",
+      "brand": "sony-ericsson",
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": 2.2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "SEMC-Browser",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "sony-ericsson",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "SonyEricssonZ1010/R1D SEMC-Browser/4.0 Profile/MIDP-1.0 MIDP-2.0 Configuration/CLDC-1.1"
     },
     "device": {
@@ -3683,120 +3797,6 @@
       "name": "NetFront",
       "version": null,
       "manufacturer": "access"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "OneBrowser/3.2 (SonyEricssonW800c/R1AA008)"
-    },
-    "device": {
-      "deviceName": "W800c",
-      "marketingName": "W800c",
-      "manufacturer": "sony-ericsson",
-      "brand": "sony-ericsson",
-      "display": {
-        "width": 220,
-        "height": 176,
-        "touch": false,
-        "size": 1.8
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "OneBrowser",
-      "modus": null,
-      "version": "3.2.0",
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "MQQBrowser/Mini2.2 (SonyEricssonW810c/R4EA031)"
-    },
-    "device": {
-      "deviceName": "W810c",
-      "marketingName": "W810c",
-      "manufacturer": "sony-ericsson",
-      "brand": "sony-ericsson",
-      "display": {
-        "width": 220,
-        "height": 176,
-        "touch": false,
-        "size": 1.9
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "QQbrowser Mini",
-      "modus": null,
-      "version": "2.2.0",
-      "manufacturer": "tencent",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "MQQBrowser/Mini2.8 (SonyEricssonW810i/R4DB004)"
-    },
-    "device": {
-      "deviceName": "W810i",
-      "marketingName": "W810i",
-      "manufacturer": "sony-ericsson",
-      "brand": "sony-ericsson",
-      "display": {
-        "width": 220,
-        "height": 176,
-        "touch": false,
-        "size": 1.9
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "QQbrowser Mini",
-      "modus": null,
-      "version": "2.8.0",
-      "manufacturer": "tencent",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
     }
   }
 ]

@@ -1,6 +1,120 @@
 [
   {
     "headers": {
+      "user-agent": "SonyEricssonK610iv/R1CB Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+    },
+    "device": {
+      "deviceName": "K610iv",
+      "marketingName": "K610iv",
+      "manufacturer": "sony-ericsson",
+      "brand": "sony-ericsson",
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": 1.9
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "NetFront",
+      "modus": null,
+      "version": "3.3.0",
+      "manufacturer": "access",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": "NetFront",
+      "version": null,
+      "manufacturer": "access"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "OneBrowser/3.1 (SonyEricssonK618i/R1KG001)"
+    },
+    "device": {
+      "deviceName": "K618i",
+      "marketingName": "K618i",
+      "manufacturer": "sony-ericsson",
+      "brand": "sony-ericsson",
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": 1.9
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "OneBrowser",
+      "modus": null,
+      "version": "3.1.0",
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SonyEricssonK618iv/R1ED Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+    },
+    "device": {
+      "deviceName": "K618iv",
+      "marketingName": "K618iv",
+      "manufacturer": "sony-ericsson",
+      "brand": "sony-ericsson",
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": 1.9
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "NetFront",
+      "modus": null,
+      "version": "3.3.0",
+      "manufacturer": "access",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": "NetFront",
+      "version": null,
+      "manufacturer": "access"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "SonyEricssonK630i/R1CA Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1"
     },
     "device": {
@@ -3668,120 +3782,6 @@
       "name": "SEMC-Browser",
       "modus": null,
       "version": "4.0.3",
-      "manufacturer": "sony-ericsson",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SonyEricssonK508i/R2AA SEMC-Browser/4.0.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Link/1.1"
-    },
-    "device": {
-      "deviceName": "K508i",
-      "marketingName": "K508i",
-      "manufacturer": "sony-ericsson",
-      "brand": "sony-ericsson",
-      "display": {
-        "width": 160,
-        "height": 128,
-        "touch": false,
-        "size": 1.9
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "SEMC-Browser",
-      "modus": null,
-      "version": "4.0.2",
-      "manufacturer": "sony-ericsson",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SonyEricssonK508c/R2AT SEMC-Browser/4.0.3 Profile/MIDP-2.0 Configuration/CLDC-1.1"
-    },
-    "device": {
-      "deviceName": "K508c",
-      "marketingName": "K508c",
-      "manufacturer": "sony-ericsson",
-      "brand": "sony-ericsson",
-      "display": {
-        "width": 160,
-        "height": 128,
-        "touch": false,
-        "size": 1.9
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "SEMC-Browser",
-      "modus": null,
-      "version": "4.0.3",
-      "manufacturer": "sony-ericsson",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SonyEricssonK500i/R2Y SEMC-Browser/4.0.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Link/1.1"
-    },
-    "device": {
-      "deviceName": "K500i",
-      "marketingName": "K500i",
-      "manufacturer": "sony-ericsson",
-      "brand": "sony-ericsson",
-      "display": {
-        "width": 160,
-        "height": 128,
-        "touch": false,
-        "size": 1.9
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "SEMC-Browser",
-      "modus": null,
-      "version": "4.0.2",
       "manufacturer": "sony-ericsson",
       "bits": null,
       "type": "browser"

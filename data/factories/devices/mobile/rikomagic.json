@@ -1,9 +1,12 @@
 {
   "rules": {
-    "/mk802 ?iiis/i": "rikomagic mk802 iiis",
+    "/mk903v/i": "rikomagic mk903v",
+    "/mk902/i": "rikomagic rkm mk902",
+    "/mk802 ?iv ?s/i": "rikomagic mk802 iv s",
+    "/mk802 ?iv/i": "rikomagic mk802 iv",
+    "/mk802 ?iii ?s/i": "rikomagic mk802 iii s",
     "/mk802 ?iii/i": "rikomagic mk802 iii",
-    "/rkm mk68/i": "rikomagic rkm mk68",
-    "/mk903v/i": "rikomagic mk903v"
+    "/mk68/i": "rikomagic rkm mk68"
   },
   "generic": "general rikomagic device"
 }

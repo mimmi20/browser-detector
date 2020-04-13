@@ -279,6 +279,34 @@
     "type": "feature-phone",
     "platform": "java"
   },
+  "sony cmd j7": {
+    "deviceName": "CMD J7",
+    "marketingName": "CMD J7",
+    "manufacturer": "sony",
+    "brand": "sony",
+    "display": {
+      "width": 96,
+      "height": 92,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "sony cmd z5": {
+    "deviceName": "CMD Z5",
+    "marketingName": "CMD Z5",
+    "manufacturer": "sony",
+    "brand": "sony",
+    "display": {
+      "width": 96,
+      "height": 72,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "sony cmd-j5": {
     "deviceName": "CMD-J5",
     "marketingName": "CMD-J5",
@@ -1819,6 +1847,20 @@
     "type": "feature-phone",
     "platform": "symbian"
   },
+  "sonyericsson p910": {
+    "deviceName": "P910",
+    "marketingName": "P910",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": 320,
+      "height": 208,
+      "touch": false,
+      "size": 2.9
+    },
+    "type": "feature-phone",
+    "platform": "symbian"
+  },
   "sonyericsson p910a": {
     "deviceName": "P910a",
     "marketingName": "P910",
@@ -2095,6 +2137,20 @@
       "height": 240,
       "touch": true,
       "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "sonyericsson w100": {
+    "deviceName": "W100",
+    "marketingName": "Spiro",
+    "manufacturer": "sony-ericsson",
+    "brand": "sony-ericsson",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": 2.2
     },
     "type": "feature-phone",
     "platform": "java"
