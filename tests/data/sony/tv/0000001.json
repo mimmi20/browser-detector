@@ -2962,5 +2962,43 @@
       "version": "53.0.2785.143",
       "manufacturer": "google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (PlayStation 4 WebMAF) AppleWebKit/538.8 (KHTML, like Gecko) WebMAF/v2.3.0-0-g349b724 SDK: (0x06508031u), Built: Dec 20 2019 14:28:41"
+    },
+    "device": {
+      "deviceName": "Playstation 4",
+      "marketingName": "Playstation 4",
+      "manufacturer": "sony",
+      "brand": "sony",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Playstation Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "sony",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "CellOS",
+      "marketingName": "CellOS",
+      "version": null,
+      "manufacturer": "sony",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "538.8.0",
+      "manufacturer": "apple"
+    }
   }
 ]
