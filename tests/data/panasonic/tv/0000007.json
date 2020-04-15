@@ -1822,5 +1822,43 @@
       "version": "51.0.2704.100",
       "manufacturer": "google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0   (Linux; U; Viera; en-AU) AppleWebKit/537.36 (KHTML, like Gecko) Viera/4.0.0   Chrome/51.0.2704.100 Safari/537.36 SmartTV"
+    },
+    "device": {
+      "deviceName": "Viera TV",
+      "marketingName": "Viera TV",
+      "manufacturer": "panasonic",
+      "brand": "panasonic",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Viera Browser",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "panasonic",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "51.0.2704.100",
+      "manufacturer": "google"
+    }
   }
 ]

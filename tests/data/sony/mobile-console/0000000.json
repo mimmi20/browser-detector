@@ -226,5 +226,43 @@
       "version": "531.3.0",
       "manufacturer": "apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "MSIE PSP (PlayStation Portable); 2.00"
+    },
+    "device": {
+      "deviceName": "PlayStation Portable",
+      "marketingName": "PlayStation Portable",
+      "manufacturer": "sony",
+      "brand": "sony",
+      "display": {
+        "width": 480,
+        "height": 272,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-console"
+    },
+    "browser": {
+      "name": "Playstation Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "sony",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": "Trident",
+      "version": null,
+      "manufacturer": "microsoft"
+    }
   }
 ]

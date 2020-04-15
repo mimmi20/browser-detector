@@ -948,5 +948,119 @@
       "version": "80.0.3987.162",
       "manufacturer": "google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Android 7.1.2; Pixel Build/NHG47Q) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.9 YaaniBrowser/4.1.0.93 (Turkcell-TR) Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Pixel",
+      "marketingName": "Pixel",
+      "manufacturer": "google",
+      "brand": "google",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Yaani Browser",
+      "modus": null,
+      "version": "4.1.0.93",
+      "manufacturer": "turkcell",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.1.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "54.0.2840.9",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 10; en-us; Pixel 4 XL Build/QQ2A.200305.004.A1) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/61.0.3163.128 Mobile Safari/537.36 XiaoMi/Mint Browser/3.3.1"
+    },
+    "device": {
+      "deviceName": "Pixel",
+      "marketingName": "Pixel",
+      "manufacturer": "google",
+      "brand": "google",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Mint Browser",
+      "modus": null,
+      "version": "3.3.1",
+      "manufacturer": "xiaomi",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "61.0.3163.128",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; Pixel 2 XL Build/OPM2.171026.006.H1) AppleWebKit/537.36 (KHTML, like Gecko) Kiwi Chrome/69.0.3477.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Pixel 2 XL",
+      "marketingName": "Pixel 2 XL",
+      "manufacturer": "google",
+      "brand": "google",
+      "display": {
+        "width": 2880,
+        "height": 1440,
+        "touch": true,
+        "size": 6
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Kiwi",
+      "modus": null,
+      "version": null,
+      "manufacturer": "geometry",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.1.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "69.0.3477.0",
+      "manufacturer": "google"
+    }
   }
 ]
