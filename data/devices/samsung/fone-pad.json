@@ -1623,20 +1623,6 @@
     "type": "fone-pad",
     "platform": "android"
   },
-  "samsung sm-p205": {
-    "deviceName": "SM-P205",
-    "marketingName": "Galaxy Tab A 8.0 (2019, Global)",
-    "manufacturer": "samsung",
-    "brand": "samsung",
-    "display": {
-      "width": 1920,
-      "height": 1200,
-      "touch": true,
-      "size": 8
-    },
-    "type": "fone-pad",
-    "platform": "android"
-  },
   "samsung sm-t295": {
     "deviceName": "SM-T295",
     "marketingName": "Galaxy Tab A 8.0 (2019, Global)",
@@ -1645,6 +1631,20 @@
     "display": {
       "width": 1280,
       "height": 800,
+      "touch": true,
+      "size": 8
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "samsung sm-p205": {
+    "deviceName": "SM-P205",
+    "marketingName": "Galaxy Tab A 8.0 (2019, LTE, Global)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 1920,
+      "height": 1200,
       "touch": true,
       "size": 8
     },
