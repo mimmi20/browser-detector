@@ -125,6 +125,20 @@
     "type": "feature-phone",
     "platform": "windows ce"
   },
+  "sprint ppc-i830": {
+    "deviceName": "PPC-i830",
+    "marketingName": "PPC-i830",
+    "manufacturer": "sprint",
+    "brand": "sprint",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "windows ce"
+  },
   "sprint ppc6800": {
     "deviceName": "PPC6800",
     "marketingName": "PPC6800",
@@ -225,6 +239,20 @@
   },
   "sprint ppc-6600": {
     "deviceName": "PPC-6600",
+    "marketingName": "Vision",
+    "manufacturer": "audiovox",
+    "brand": "sprint",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": true,
+      "size": 3.5
+    },
+    "type": "feature-phone",
+    "platform": "windows ce"
+  },
+  "sprint ppc-6600-1": {
+    "deviceName": "PPC-6600-1",
     "marketingName": "Vision",
     "manufacturer": "audiovox",
     "brand": "sprint",
