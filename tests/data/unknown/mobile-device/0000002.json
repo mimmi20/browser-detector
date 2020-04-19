@@ -1,6 +1,44 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (X11; U; Linux x86_64; pt-br) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/30.0.1599.114 Safari/537.36 Puffin/4.1.2.1212AT"
+    },
+    "device": {
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device"
+    },
+    "browser": {
+      "name": "Puffin",
+      "modus": null,
+      "version": "4.1.2.1212",
+      "manufacturer": "cloud-mosa",
+      "bits": 64,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": null,
+      "manufacturer": "google",
+      "bits": 64
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (X11; U; Linux x86_64; da-dk) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/30.0.1599.114 Safari/537.36 Puffin/4.1.4.1387AP"
     },
     "device": {
@@ -3759,44 +3797,6 @@
       "name": "WebKit",
       "version": "534.35.0",
       "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Windows; U; Windows CE 6.0; en-US; rv:1.9.2a1pre) Gecko/20090219 Minefield/3.2a1pre"
-    },
-    "device": {
-      "deviceName": "general Mobile device",
-      "marketingName": "general Mobile device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": "Firefox",
-      "modus": null,
-      "version": "3.2.0-alpha+1",
-      "manufacturer": "mozilla-foundation",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Windows CE",
-      "marketingName": "Windows CE",
-      "version": null,
-      "manufacturer": "microsoft",
-      "bits": null
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": "1.9.2-alpha+1",
-      "manufacturer": "mozilla-foundation"
     }
   }
 ]

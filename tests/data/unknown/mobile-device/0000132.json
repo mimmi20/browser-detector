@@ -1,6 +1,44 @@
 [
   {
     "headers": {
+      "user-agent": "Opera/9.80 (SpreadTrum; Opera Mini/4.4.31492/60.271; U; en) Presto/2.12.423 Version/12.16"
+    },
+    "device": {
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device"
+    },
+    "browser": {
+      "name": "Opera Mini",
+      "modus": null,
+      "version": "4.4.31492",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": null,
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.12.423",
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Opera/9.80 (Android; Opera Mini/20.0.2254/62.178; U; en) Presto/2.12.423 Version/12.16"
     },
     "device": {
@@ -3753,44 +3791,6 @@
       "marketingName": "MAUI Runtime Environment",
       "version": null,
       "manufacturer": "mediatek",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.12.423",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (Android; Opera Mini/7.6.40234/60.313; U; en) Presto/2.12.423 Version/12.16"
-    },
-    "device": {
-      "deviceName": "general Mobile device",
-      "marketingName": "general Mobile device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "7.6.40234",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": null,
-      "manufacturer": "google",
       "bits": null
     },
     "engine": {

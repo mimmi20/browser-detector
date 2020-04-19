@@ -1,6 +1,44 @@
 [
   {
     "headers": {
+      "user-agent": "VertuConstellationT/025.605 (Symbian/3; Series60/5.2 Mozilla/5.0; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.1.37 Mobile Safari/533.4 3gpp-gba"
+    },
+    "device": {
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device"
+    },
+    "browser": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": "7.3.1.37",
+      "manufacturer": "nokia",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Series 60",
+      "marketingName": "Series 60",
+      "version": null,
+      "manufacturer": "nokia",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "533.4.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Opera/9.80 (J2ME/MIDP; Opera Mini/4.5.40312/62.178; U; de) Presto/2.12.423 Version/12.16"
     },
     "device": {
@@ -3753,44 +3791,6 @@
       "marketingName": "Series 60",
       "version": null,
       "manufacturer": "nokia",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.8.119",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (MAUI Runtime; Opera Mini/4.4.33448/35.6368; U; en) Presto/2.8.119 Version/11.10"
-    },
-    "device": {
-      "deviceName": "general Mobile device",
-      "marketingName": "general Mobile device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "4.4.33448",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "MRE",
-      "marketingName": "MAUI Runtime Environment",
-      "version": null,
-      "manufacturer": "mediatek",
       "bits": null
     },
     "engine": {

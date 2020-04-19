@@ -1,6 +1,44 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Windows; U; Windows CE 6.0; en-US; rv:1.9.2a1pre) Gecko/20090219 Minefield/3.2a1pre"
+    },
+    "device": {
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device"
+    },
+    "browser": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "3.2.0-alpha+1",
+      "manufacturer": "mozilla-foundation",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": null,
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "1.9.2-alpha+1",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (X11; U; Linux armv7l; en-US; rv:1.9.0.1) Gecko/2009010915 Minefield/3.0.1"
     },
     "device": {
@@ -3759,44 +3797,6 @@
       "name": null,
       "version": null,
       "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "'Mozilla/5.0 (compatible; MSIE 8.0; Windows NT 6.0; Trident/4.0; .NET CLR 2.7.58687; SLCC2; Media Center PC 5.0; Zune 3.4; Tablet PC 3.6; InfoPath3)"
-    },
-    "device": {
-      "deviceName": "general Mobile device",
-      "marketingName": "general Mobile device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": "Zune",
-      "modus": null,
-      "version": "3.4.0",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "multimedia-player"
-    },
-    "os": {
-      "name": "Windows NT 6.0",
-      "marketingName": "Windows Vista",
-      "version": "6.0.0",
-      "manufacturer": "microsoft",
-      "bits": null
-    },
-    "engine": {
-      "name": "Trident",
-      "version": "4.0.0",
-      "manufacturer": "microsoft"
     }
   }
 ]

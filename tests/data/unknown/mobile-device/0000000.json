@@ -1,6 +1,44 @@
 [
   {
     "headers": {
+      "user-agent": "Dalvik/1.2.0 (Linux; U; Android 2.2; C510a Build/CN0BN4200M)"
+    },
+    "device": {
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device"
+    },
+    "browser": {
+      "name": "Dalvik",
+      "modus": null,
+      "version": "1.2.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "2.2.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "sprd-I950/1.0 Linux/2.6.35.7 Android/4.2.2 Release/06.14.2013 Browser/AppleWebKit533.1 (KHTML, like Gecko) Mozilla/5.0 Mobile"
     },
     "device": {
@@ -3753,44 +3791,6 @@
       "marketingName": "Android",
       "version": null,
       "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Coursera-Mobile 1.2.1"
-    },
-    "device": {
-      "deviceName": "general Mobile device",
-      "marketingName": "general Mobile device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": "Coursera Mobile App",
-      "modus": null,
-      "version": "1.2.1",
-      "manufacturer": "coursera",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
       "bits": null
     },
     "engine": {

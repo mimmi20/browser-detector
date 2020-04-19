@@ -1,6 +1,44 @@
 [
   {
     "headers": {
+      "user-agent": "Opera/9.80 (J2ME/MIDP  Opera Mini/4.3.24603/24.760  U  ru) Presto/2.5.25 Version/10.54"
+    },
+    "device": {
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device"
+    },
+    "browser": {
+      "name": "Opera Mini",
+      "modus": null,
+      "version": "4.3.24603",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.5.25",
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Opera/9.80 (Series 60; Opera Mini/7.1.32446/37.7327; U; de) Presto/2.12.423 Version/12.16"
     },
     "device": {
@@ -3758,44 +3796,6 @@
     "engine": {
       "name": "Trident",
       "version": "3.1.0",
-      "manufacturer": "microsoft"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; MSIE 11.0; Windows CE; Trident/4.1)"
-    },
-    "device": {
-      "deviceName": "general Mobile device",
-      "marketingName": "general Mobile device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": "Internet Explorer",
-      "modus": null,
-      "version": "8.0.0",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Windows CE",
-      "marketingName": "Windows CE",
-      "version": null,
-      "manufacturer": "microsoft",
-      "bits": null
-    },
-    "engine": {
-      "name": "Trident",
-      "version": "4.1.0",
       "manufacturer": "microsoft"
     }
   }
