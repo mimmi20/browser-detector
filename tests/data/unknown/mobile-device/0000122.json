@@ -1,6 +1,44 @@
 [
   {
     "headers": {
+      "user-agent": "stagefright/1.2 (Linux;Android 7.0)"
+    },
+    "device": {
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device"
+    },
+    "browser": {
+      "name": "stagefright",
+      "modus": null,
+      "version": "1.2.0",
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "ExoPlayerDemo/1.1.0 (Linux;Android 7.1.2) ExoPlayerLib/1.5.8"
     },
     "device": {
@@ -3758,44 +3796,6 @@
     "engine": {
       "name": "Gecko",
       "version": null,
-      "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (X11; Linux armv7l; rv:60.0) Gecko/20100101 Firefox/60.0"
-    },
-    "device": {
-      "deviceName": "general Mobile device",
-      "marketingName": "general Mobile device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": "Firefox",
-      "modus": null,
-      "version": "60.0.0",
-      "manufacturer": "mozilla-foundation",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Maemo",
-      "marketingName": "Maemo",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": "60.0.0",
       "manufacturer": "mozilla-foundation"
     }
   }
