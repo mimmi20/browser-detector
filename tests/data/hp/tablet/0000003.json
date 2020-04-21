@@ -1708,5 +1708,43 @@
       "version": "63.0.3239.111",
       "manufacturer": "google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.3; Slate 21 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.99 Safari/537.36 comdirect/1.0 (appVersion:20.3.0;deviceName:nokia 2.1;deviceType:mobile)"
+    },
+    "device": {
+      "deviceName": "Slate 21",
+      "marketingName": "Slate 21",
+      "manufacturer": "hp",
+      "brand": "hp",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 21.5
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "71.0.3578.99",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.3.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "71.0.3578.99",
+      "manufacturer": "google"
+    }
   }
 ]

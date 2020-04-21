@@ -910,5 +910,43 @@
       "version": null,
       "manufacturer": "unknown"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.109 Safari/537.36 OPR/46.0.2207.0 LOEWE-SL420/4.3.60.0 HbbTV/1.2.1 (; LOEWE; SL420; LOH/4.3.60.0;;) CE-HTML/1.0 Config(L:deu,CC:DEU) NETRANGEMMH"
+    },
+    "device": {
+      "deviceName": "SL420",
+      "marketingName": "Connect 55 UHD",
+      "manufacturer": "loewe",
+      "brand": "loewe",
+      "display": {
+        "width": 3840,
+        "height": 2160,
+        "touch": false,
+        "size": 55
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Opera",
+      "modus": null,
+      "version": "46.0.2207.0",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Maemo",
+      "marketingName": "Maemo",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "59.0.3071.109",
+      "manufacturer": "google"
+    }
   }
 ]
