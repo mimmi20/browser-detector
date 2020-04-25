@@ -1,7 +1,15 @@
 {
   "rules": {
+    "/sky 9\\.7/i": "roverpad sky 9.7",
+    "/sky 7\\.85/i": "roverpad sky 7.85",
+    "/air s70/i": "roverpad air s70",
     "/air a70/i": "roverpad air a70",
-    "/3wt70/i": "roverpad 3wt70"
+    "/3w ?t70/i": "roverpad 3w t70",
+    "/3w ?a73/i": "roverpad 3w a73",
+    "/3w9\\.4/i": "roverpad 3w9.4",
+    "/3w7/i": "roverpad 3w7",
+    "/10\\.4/i": "roverpad 10.4",
+    "/9\\.7 3g/i": "roverpad 9.7 3g"
   },
   "generic": "general roverpad device"
 }

@@ -1,6 +1,10 @@
 {
   "rules": {
-    "/box s10/i": "r-tv box s10",
+    "/box ?x99/i": "r-tv box x99",
+    "/box ?x10 ?pro/i": "r-tv box x10 pro",
+    "/box ?x10/i": "r-tv box x10",
+    "/box ?s10/i": "r-tv box s10",
+    "/box ?r10/i": "r-tv box r10",
     "/boxmini00|box mini\\+/i": "r-tv box mini+"
   },
   "generic": "general r-tv device"
