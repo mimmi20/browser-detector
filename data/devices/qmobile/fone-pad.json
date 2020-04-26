@@ -1,4 +1,18 @@
 {
+  "qmobile qtab q300": {
+    "deviceName": "QTab Q300",
+    "marketingName": "QTab Q300",
+    "manufacturer": "qmobile",
+    "brand": "qmobile",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "size": 7
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
   "qmobile qtab q400": {
     "deviceName": "QTab Q400",
     "marketingName": "QTab Q400",
@@ -23,6 +37,34 @@
       "height": 480,
       "touch": true,
       "size": null
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "qmobile qtab q800": {
+    "deviceName": "QTab Q800",
+    "marketingName": "QTab Q800",
+    "manufacturer": "qmobile",
+    "brand": "qmobile",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "size": 7.85
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "qmobile qtab q850": {
+    "deviceName": "QTab Q850",
+    "marketingName": "QTab Q850",
+    "manufacturer": "qmobile",
+    "brand": "qmobile",
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "size": 7.8
     },
     "type": "fone-pad",
     "platform": "android"
