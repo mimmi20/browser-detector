@@ -1,4 +1,32 @@
 {
+  "qilive 101": {
+    "deviceName": "101",
+    "marketingName": "101",
+    "manufacturer": "qilive",
+    "brand": "qilive",
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "size": 10.1
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "qilive 7": {
+    "deviceName": "7",
+    "marketingName": "7",
+    "manufacturer": "qilive",
+    "brand": "qilive",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "size": 7
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
   "qilive 8": {
     "deviceName": "8",
     "marketingName": "8",
@@ -8,7 +36,7 @@
       "width": 1024,
       "height": 768,
       "touch": true,
-      "size": null
+      "size": 7.85
     },
     "type": "tablet",
     "platform": "android"
@@ -22,7 +50,7 @@
       "width": 1024,
       "height": 768,
       "touch": true,
-      "size": null
+      "size": 8
     },
     "type": "tablet",
     "platform": "android"
@@ -36,7 +64,7 @@
       "width": 1024,
       "height": 768,
       "touch": true,
-      "size": null
+      "size": 9.7
     },
     "type": "tablet",
     "platform": "android"
@@ -47,10 +75,24 @@
     "manufacturer": "qilive",
     "brand": "qilive",
     "display": {
-      "width": 1024,
-      "height": 768,
+      "width": 2048,
+      "height": 1536,
       "touch": true,
-      "size": null
+      "size": 9.7
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "qilive 70v2": {
+    "deviceName": "70v2",
+    "marketingName": "Q.3004",
+    "manufacturer": "qilive",
+    "brand": "qilive",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "size": 7
     },
     "type": "tablet",
     "platform": "android"
@@ -64,7 +106,7 @@
       "width": 1280,
       "height": 800,
       "touch": true,
-      "size": null
+      "size": 10.1
     },
     "type": "tablet",
     "platform": "android"

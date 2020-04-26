@@ -1,8 +1,21 @@
 {
   "rules": {
-    "/sirius ?890/i": "qumo sirius 890",
-    "/quest_450/i": "qumo quest 450",
-    "/quest_354/i": "qumo quest 354"
+    "/yooda/i": "qumo yooda",
+    "/sirius[ _]?890/i": "qumo sirius 890",
+    "/sirius[ _]?101-4g/i": "qumo sirius 101 4g",
+    "/vega[ _]?8002/i": "qumo vega 8002",
+    "/vega[ _]?783/i": "qumo vega 783",
+    "/altair[ _]?7004/i": "qumo altair 7004",
+    "/altair[ _]?701/i": "qumo altair 701",
+    "/quest[ _]?600/i": "qumo quest 600",
+    "/quest[ _]?570/i": "qumo quest 570",
+    "/quest[ _]?476/i": "qumo quest 476",
+    "/quest[ _]?458/i": "qumo quest 458",
+    "/quest[ _]?452/i": "qumo quest 452",
+    "/quest[ _]?450/i": "qumo quest 450",
+    "/quest[ _]?402/i": "qumo quest 402",
+    "/quest[ _]?354/i": "qumo quest 354",
+    "/quest[ _]?353/i": "qumo quest 353"
   },
   "generic": "general qumo device"
 }
