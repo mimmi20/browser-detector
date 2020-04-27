@@ -258,7 +258,7 @@ final class Ios implements VersionDetectorInterface
             }
 
             if (false !== $buildVersion) {
-                return $this->versionFactory->set((string) $buildVersion);
+                return $this->versionFactory->set($buildVersion);
             }
         }
 
@@ -272,7 +272,7 @@ final class Ios implements VersionDetectorInterface
             }
 
             if (false !== $buildVersion) {
-                return $this->versionFactory->set((string) $buildVersion);
+                return $this->versionFactory->set($buildVersion);
             }
         }
 

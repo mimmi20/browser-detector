@@ -21,6 +21,7 @@ cache:
 
 stages:
   - composer validate
+  - check dependencies
   - static code analysis
   - test
   - test with coverage
@@ -75,28 +76,34 @@ jobs:
       env: COMPOSER_FLAGS=""
       script: composer normalize --dry-run
 
-    - stage: composer validate
+    - stage: check dependencies
       os: linux
       php: 7.1
       env: COMPOSER_FLAGS=""
       script: composer outdated --direct # --strict
 
-    - stage: composer validate
+    - stage: check dependencies
       os: linux
       php: 7.2
       env: COMPOSER_FLAGS=""
       script: composer outdated --direct # --strict
 
-    - stage: composer validate
+    - stage: check dependencies
       os: linux
       php: 7.3
       env: COMPOSER_FLAGS=""
       script: composer outdated --direct # --strict
 
-    - stage: composer validate
+    - stage: check dependencies
       os: linux
       php: 7.4
       env: COMPOSER_FLAGS=""
+      script: composer outdated --direct # --strict
+
+    - stage: check dependencies
+      os: linux
+      php: nightly
+      env: COMPOSER_FLAGS="--ignore-platform-reqs"
       script: composer outdated --direct # --strict
 
     - stage: static code analysis
