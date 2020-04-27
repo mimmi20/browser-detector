@@ -23,3 +23,5 @@ update_configs:
           dependency_name: "symfony/finder"
       - match:
           dependency_name: "infection/infection"
+      - match:
+          dependency_name: "ergebnis/composer-normalize"

@@ -401,6 +401,79 @@ final class RulefileParserTest extends TestCase
      *
      * @return void
      */
+    public function testParseNotEmptyFile4(): void
+    {
+        $content  = 'test-content';
+        $fallback = 'test-fallback';
+        $mode     = 'test-mode';
+
+        $generic = 'test-generic';
+        $rules   = [1 => 'test-mode-3', '/test-useragent/' => $mode, '/test/' => 'test-mode-2'];
+
+        $fileInfo = $this->getMockBuilder(\SplFileInfo::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $fileInfo
+            ->expects(self::exactly(2))
+            ->method('getPathname')
+            ->willReturn(vfsStream::url(self::DATA_PATH . '/bot.json'));
+
+        $jsonParser = $this->getMockBuilder(JsonInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $jsonParser
+            ->expects(self::once())
+            ->method('decode')
+            ->with($content, true)
+            ->willReturn(['generic' => $generic, 'rules' => $rules]);
+
+        $useragent = 'test-useragent';
+
+        $logger = $this->getMockBuilder(LoggerInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $logger
+            ->expects(self::never())
+            ->method('debug');
+        $logger
+            ->expects(self::never())
+            ->method('info');
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::never())
+            ->method('warning');
+        $logger
+            ->expects(self::once())
+            ->method('error')
+            ->with(new IsInstanceOf(\Exception::class));
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
+
+        /** @var \JsonClass\JsonInterface $jsonParser */
+        /** @var \Psr\Log\LoggerInterface $logger */
+        $object = new RulefileParser($jsonParser, $logger);
+
+        /** @var \SplFileInfo $fileInfo */
+        $result = $object->parseFile($fileInfo, $useragent, $fallback);
+
+        self::assertSame($mode, $result);
+    }
+
+    /**
+     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
+     * @throws \PHPUnit\Framework\ExpectationFailedException
+     *
+     * @return void
+     */
     public function testParseNotExistingFile(): void
     {
         $fallback = 'test-fallback';

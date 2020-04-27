@@ -75,6 +75,13 @@ final class RulefileParser implements RulefileParserInterface
         }
 
         foreach (array_keys($rules) as $rule) {
+            if (is_int($rule)) {
+                $this->logger->error(
+                    new \Exception(sprintf('invalid rule "%s" found in file %s', $rule, $file->getPathname()))
+                );
+                continue;
+            }
+
             $match = @preg_match($rule, $useragent);
 
             if (false === $match) {
