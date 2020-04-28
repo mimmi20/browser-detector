@@ -1,82 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; MSIE 5.0; Symbian OS; UIQ; 316) Opera 6.31 [hu]"
-    },
-    "device": {
-      "deviceName": "general Mobile device",
-      "marketingName": "general Mobile device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": "Opera",
-      "modus": null,
-      "version": "6.31.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "symbian-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": null,
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; MSIE 5.0; Symbian OS; UIQ; 316) Opera 6.31 [en]"
-    },
-    "device": {
-      "deviceName": "general Mobile device",
-      "marketingName": "general Mobile device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": "Opera",
-      "modus": null,
-      "version": "6.31.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "symbian-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": null,
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/4.0 (compatible; MSIE 5.0; Symbian OS; UIQ; 305) Opera 6.30 [en]"
     },
     "device": {
@@ -3764,6 +3688,82 @@
   {
     "headers": {
       "user-agent": "KAA-A59/KAA59DZ1.11.B02/WAP1.2 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+    },
+    "device": {
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device"
+    },
+    "browser": {
+      "name": "WAP Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "wap-browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "KAA-A59/KAA59DZ1.10.B1/WAP1.2 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+    },
+    "device": {
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device"
+    },
+    "browser": {
+      "name": "WAP Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "wap-browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "KAA-A59/KAA59DZ1.10.A28/WAP1.2 Profile/MIDP-2.0 Configuration/CLDC-1.1"
     },
     "device": {
       "deviceName": "general Mobile device",

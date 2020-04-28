@@ -1,44 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "Opera/9.80 (Android; Opera Mini/6.1.25375/163.76; U; de) Presto/2.12.423 Version/12.16"
-    },
-    "device": {
-      "deviceName": "general Mobile device",
-      "marketingName": "general Mobile device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "6.1.25375",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": null,
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.12.423",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Opera/9.80 (J2ME/MIDP; Opera Mini/8.0.35626/163.76; U; en) Presto/2.12.423 Version/12.16"
     },
     "device": {
@@ -187,6 +149,44 @@
       "name": "Gecko",
       "version": "60.0.0",
       "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Sonim-XP3400/E343B_2100B00_N1900;U;REX/1.0;BREW/3.1.5;240*320;CTC/2.0) POLARIS/6.2"
+    },
+    "device": {
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device"
+    },
+    "browser": {
+      "name": "Polaris",
+      "modus": null,
+      "version": "6.2.0",
+      "manufacturer": "infraware",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Brew",
+      "marketingName": "Brew",
+      "version": "3.1.5",
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
     }
   },
   {

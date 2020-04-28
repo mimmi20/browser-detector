@@ -1,6 +1,82 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; SM-A510F Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.108 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/255.0.0.33.121;] comdirect/1.0 (appVersion:20.3.0;deviceType:mobile)"
+    },
+    "device": {
+      "deviceName": "SM-A510F",
+      "marketingName": "Galaxy A5 LTE (2016, Europe)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.2
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "255.0.0.33.121",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "78.0.3904.108",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; SM-J700H Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/80.0.3987.162 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/265.0.0.61.103;] comdirect/1.0 (appVersion:20.3.0;deviceType:mobile)"
+    },
+    "device": {
+      "deviceName": "SM-J700H",
+      "marketingName": "Galaxy J7 3G Duos (South Africa, Pakistan, Vietnam, Philippines, Russia)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "265.0.0.61.103",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "80.0.3987.162",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 9; SM-M307FN Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/74.0.3729.136 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/248.1.0.44.116;] comdirect/1.0 (appVersion:20.3.0;deviceType:mobile)"
     },
     "device": {
@@ -3611,101 +3687,101 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.2.2; de-de; N9006 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 ACHEETAHI/2100050092"
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; SM-A750FN) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.111 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "SM-N9006",
-      "marketingName": "Galaxy Note 3 (China/WCDMA)",
+      "deviceName": "SM-A750FN",
+      "marketingName": "Galaxy A7 (2018)",
       "manufacturer": "samsung",
       "brand": "samsung",
       "display": {
-        "width": 1920,
+        "width": 2220,
         "height": 1080,
         "touch": true,
-        "size": 5.7
+        "size": 6
       },
       "type": "smartphone"
     },
     "browser": {
-      "name": "CM Browser",
+      "name": "Chrome",
       "modus": null,
-      "version": null,
-      "manufacturer": "cheetah-mobile",
+      "version": "81.0.4044.111",
+      "manufacturer": "google",
       "bits": null,
       "type": "browser"
     },
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "4.2.2",
+      "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
     },
     "engine": {
-      "name": "WebKit",
-      "version": "534.30.0",
-      "manufacturer": "apple"
+      "name": "Blink",
+      "version": "81.0.4044.111",
+      "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.0.4; de-de; N7000 Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; SM-J330F Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/81.0.4044.111 Mobile Safari/537.36 Instagram 138.0.0.28.117 Android (24/7.0; 320dpi; 720x1280; samsung; SM-J330F; j3y17lte; samsungexynos7570; de_DE; 210180512)"
     },
     "device": {
-      "deviceName": "GT-N7000",
-      "marketingName": "Galaxy Note",
+      "deviceName": "SM-J330F",
+      "marketingName": "Galaxy J3 (2017)",
       "manufacturer": "samsung",
       "brand": "samsung",
       "display": {
         "width": 1280,
-        "height": 800,
+        "height": 720,
         "touch": true,
-        "size": 5.3
+        "size": 5
       },
       "type": "smartphone"
     },
     "browser": {
-      "name": "Android Webkit",
+      "name": "Instagram App",
       "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "google",
+      "version": "138.0.0.28.117",
+      "manufacturer": "facebook",
       "bits": null,
-      "type": "browser"
+      "type": "application"
     },
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "4.0.4",
+      "version": "7.0.0",
       "manufacturer": "google",
       "bits": null
     },
     "engine": {
-      "name": "WebKit",
-      "version": "534.30.0",
-      "manufacturer": "apple"
+      "name": "Blink",
+      "version": "81.0.4044.111",
+      "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.0.4; en-us; N7200   Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; SM-A202F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.117 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "GT-N7200",
-      "marketingName": "Galaxy Note 3",
+      "deviceName": "SM-A202F",
+      "marketingName": "Galaxy A20e",
       "manufacturer": "samsung",
       "brand": "samsung",
       "display": {
-        "width": 1920,
-        "height": 1080,
+        "width": 1560,
+        "height": 720,
         "touch": true,
-        "size": 5.7
+        "size": 5.8
       },
       "type": "smartphone"
     },
     "browser": {
-      "name": "Android Webkit",
+      "name": "Chrome",
       "modus": null,
-      "version": "4.0.0",
+      "version": "81.0.4044.117",
       "manufacturer": "google",
       "bits": null,
       "type": "browser"
@@ -3713,14 +3789,14 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "4.0.4",
+      "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
     },
     "engine": {
-      "name": "WebKit",
-      "version": "534.30.0",
-      "manufacturer": "apple"
+      "name": "Blink",
+      "version": "81.0.4044.117",
+      "manufacturer": "google"
     }
   }
 ]
