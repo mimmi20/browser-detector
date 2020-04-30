@@ -1,56 +1,18 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.4.2; en-US; QMobile X60 Build/KOT49H) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/10.9.0.731 U3/0.8.0 Mobile Safari/534.30"
-    },
-    "device": {
-      "deviceName": "X60",
-      "marketingName": "Noir X60",
-      "manufacturer": "qmobile",
-      "brand": "qmobile",
-      "display": {
-        "width": 800,
-        "height": 480,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "10.9.0.731",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.4.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "U3",
-      "version": "0.8.0",
-      "manufacturer": "ucweb"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; U; Android 5.0; en-US; LT700 Build/LRX21M) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/10.10.8.820 U3/0.8.0 Mobile Safari/534.30"
     },
     "device": {
-      "deviceName": "general QMobile device",
-      "marketingName": "general QMobile device",
+      "deviceName": "LT700",
+      "marketingName": "Noir LT700",
       "manufacturer": "qmobile",
       "brand": "qmobile",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1280,
+        "height": 720,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "type": "smartphone"
     },
@@ -194,15 +156,15 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 5.1; QMobile L20 Build/LMY47I) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.98 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "general QMobile device",
-      "marketingName": "general QMobile device",
+      "deviceName": "L20",
+      "marketingName": "LinQ L20",
       "manufacturer": "qmobile",
       "brand": "qmobile",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1280,
+        "height": 720,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "type": "smartphone"
     },
@@ -308,15 +270,15 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 5.0.2; QMobile Z8 Build/LRX22G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.124 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "general QMobile device",
-      "marketingName": "general QMobile device",
+      "deviceName": "Z8",
+      "marketingName": "Noir Z8",
       "manufacturer": "qmobile",
       "brand": "qmobile",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1280,
+        "height": 720,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "type": "smartphone"
     },
@@ -498,15 +460,15 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 4.4.4; QMobile Z9 Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "general QMobile device",
-      "marketingName": "general QMobile device",
+      "deviceName": "Z9",
+      "marketingName": "Noir Z9",
       "manufacturer": "qmobile",
       "brand": "qmobile",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1280,
+        "height": 720,
         "touch": true,
-        "size": null
+        "size": 4.8
       },
       "type": "smartphone"
     },
@@ -650,15 +612,15 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 5.1; QMobile i1 Build/LMY47D; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/46.0.2490.76 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/80.0.0.21.65;]"
     },
     "device": {
-      "deviceName": "general QMobile device",
-      "marketingName": "general QMobile device",
+      "deviceName": "i1",
+      "marketingName": "Noir i1",
       "manufacturer": "qmobile",
       "brand": "qmobile",
       "display": {
         "width": null,
         "height": null,
         "touch": true,
-        "size": null
+        "size": 4
       },
       "type": "smartphone"
     },
@@ -802,15 +764,15 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; QMobile X30 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "general QMobile device",
-      "marketingName": "general QMobile device",
+      "deviceName": "X30",
+      "marketingName": "Noir X30",
       "manufacturer": "qmobile",
       "brand": "qmobile",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 800,
+        "height": 480,
         "touch": true,
-        "size": null
+        "size": 4
       },
       "type": "smartphone"
     },
@@ -954,15 +916,15 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 5.1; en-US; QMobile i1 Build/LMY47D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/11.0.8.855 U3/0.8.0 Mobile Safari/534.30"
     },
     "device": {
-      "deviceName": "general QMobile device",
-      "marketingName": "general QMobile device",
+      "deviceName": "i1",
+      "marketingName": "Noir i1",
       "manufacturer": "qmobile",
       "brand": "qmobile",
       "display": {
         "width": null,
         "height": null,
         "touch": true,
-        "size": null
+        "size": 4
       },
       "type": "smartphone"
     },
@@ -1068,13 +1030,13 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 4.4.2;  zh-cn; QMobile T250; Android/4.4.2; Release/07.02.2015)  AppleWebKit/534.30 (KHTML, like Gecko) Mobile Safari/534.30"
     },
     "device": {
-      "deviceName": "T250",
-      "marketingName": "Bolt",
+      "deviceName": "general QMobile device",
+      "marketingName": "general QMobile device",
       "manufacturer": "qmobile",
       "brand": "qmobile",
       "display": {
-        "width": 768,
-        "height": 480,
+        "width": null,
+        "height": null,
         "touch": true,
         "size": null
       },
@@ -1144,15 +1106,15 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 5.1; en-US; QMobile i7i Build/LMY47D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/11.2.0.915 U3/0.8.0 Mobile Safari/534.30"
     },
     "device": {
-      "deviceName": "general QMobile device",
-      "marketingName": "general QMobile device",
+      "deviceName": "i7i",
+      "marketingName": "Noir i7i",
       "manufacturer": "qmobile",
       "brand": "qmobile",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 854,
+        "height": 480,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "type": "smartphone"
     },
@@ -1220,15 +1182,15 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 5.1; QMobile i2 Build/LMY47D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.91 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "general QMobile device",
-      "marketingName": "general QMobile device",
+      "deviceName": "i2",
+      "marketingName": "Noir i2",
       "manufacturer": "qmobile",
       "brand": "qmobile",
       "display": {
         "width": null,
         "height": null,
         "touch": true,
-        "size": null
+        "size": 4.5
       },
       "type": "smartphone"
     },
@@ -1258,15 +1220,15 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 5.0; en-US; QMobile X95 Build/LRX21M) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/10.9.0.731 U3/0.8.0 Mobile Safari/534.30"
     },
     "device": {
-      "deviceName": "general QMobile device",
-      "marketingName": "general QMobile device",
+      "deviceName": "X95",
+      "marketingName": "Noir X95",
       "manufacturer": "qmobile",
       "brand": "qmobile",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 854,
+        "height": 480,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "type": "smartphone"
     },
@@ -1293,56 +1255,18 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; QTab V3 Plus Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Safari/537.36"
-    },
-    "device": {
-      "deviceName": "general QMobile device",
-      "marketingName": "general QMobile device",
-      "manufacturer": "qmobile",
-      "brand": "qmobile",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Android WebView",
-      "modus": null,
-      "version": "30.0.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.4.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "30.0.0.0",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 5.0.2; QMobile Z8 Build/LRX22G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.85 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "general QMobile device",
-      "marketingName": "general QMobile device",
+      "deviceName": "Z8",
+      "marketingName": "Noir Z8",
       "manufacturer": "qmobile",
       "brand": "qmobile",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1280,
+        "height": 720,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "type": "smartphone"
     },
@@ -1369,56 +1293,18 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; QTab V3 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Safari/537.36"
-    },
-    "device": {
-      "deviceName": "general QMobile device",
-      "marketingName": "general QMobile device",
-      "manufacturer": "qmobile",
-      "brand": "qmobile",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Android WebView",
-      "modus": null,
-      "version": "30.0.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.4.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "30.0.0.0",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; U; Android 4.4.3;  zh-cn; QMobile M95; Android/4.4.3; Release/07.31.2015)  AppleWebKit/534.30 (KHTML, like Gecko) Mobile Safari/534.30"
     },
     "device": {
-      "deviceName": "general QMobile device",
-      "marketingName": "general QMobile device",
+      "deviceName": "M95",
+      "marketingName": "Noir M95",
       "manufacturer": "qmobile",
       "brand": "qmobile",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 960,
+        "height": 540,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "type": "smartphone"
     },
@@ -1486,15 +1372,15 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; QMobile X30 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.98 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "general QMobile device",
-      "marketingName": "general QMobile device",
+      "deviceName": "X30",
+      "marketingName": "Noir X30",
       "manufacturer": "qmobile",
       "brand": "qmobile",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 800,
+        "height": 480,
         "touch": true,
-        "size": null
+        "size": 4
       },
       "type": "smartphone"
     },
@@ -1600,15 +1486,15 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 4.4.2; en-us; QMobile W7 Build/KOT49H) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
     },
     "device": {
-      "deviceName": "general QMobile device",
-      "marketingName": "general QMobile device",
+      "deviceName": "W7",
+      "marketingName": "Noir W7",
       "manufacturer": "qmobile",
       "brand": "qmobile",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 800,
+        "height": 480,
         "touch": true,
-        "size": null
+        "size": 4
       },
       "type": "smartphone"
     },
@@ -1714,15 +1600,15 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 5.0; QMobile i8 Build/LRX21M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.83 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "general QMobile device",
-      "marketingName": "general QMobile device",
+      "deviceName": "i8",
+      "marketingName": "Noir i8",
       "manufacturer": "qmobile",
       "brand": "qmobile",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 800,
+        "height": 480,
         "touch": true,
-        "size": null
+        "size": 4.7
       },
       "type": "smartphone"
     },
@@ -1828,15 +1714,15 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 4.4.4; QMobile Z8 Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.81 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "general QMobile device",
-      "marketingName": "general QMobile device",
+      "deviceName": "Z8",
+      "marketingName": "Noir Z8",
       "manufacturer": "qmobile",
       "brand": "qmobile",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1280,
+        "height": 720,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "type": "smartphone"
     },
@@ -1980,15 +1866,15 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 5.1; QMobile X700i Build/LMY47I) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/39.0.0.0 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "general QMobile device",
-      "marketingName": "general QMobile device",
+      "deviceName": "X700i",
+      "marketingName": "Titan X700i",
       "manufacturer": "qmobile",
       "brand": "qmobile",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1280,
+        "height": 720,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "type": "smartphone"
     },
@@ -2246,15 +2132,15 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 4.4.2;  zh-cn; QMobile X2i; Android/4.4.2; Release/08.28.2015)  AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
     },
     "device": {
-      "deviceName": "general QMobile device",
-      "marketingName": "general QMobile device",
+      "deviceName": "X2i",
+      "marketingName": "Magnus X2i",
       "manufacturer": "qmobile",
       "brand": "qmobile",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 480,
+        "height": 320,
         "touch": true,
-        "size": null
+        "size": 3.5
       },
       "type": "smartphone"
     },
@@ -2284,15 +2170,15 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 5.1; QMobile M350 Build/LMY47I) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "general QMobile device",
-      "marketingName": "general QMobile device",
+      "deviceName": "M350",
+      "marketingName": "Noir M350",
       "manufacturer": "qmobile",
       "brand": "qmobile",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1280,
+        "height": 720,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "type": "smartphone"
     },
@@ -2360,15 +2246,15 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 5.0; LT700 Build/LRX21M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.125 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "general QMobile device",
-      "marketingName": "general QMobile device",
+      "deviceName": "LT700",
+      "marketingName": "Noir LT700",
       "manufacturer": "qmobile",
       "brand": "qmobile",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1280,
+        "height": 720,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "type": "smartphone"
     },
@@ -2550,15 +2436,15 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 5.1; en-US; QMobile i7i Build/LMY47D) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/40.0.2214.89 UCBrowser/11.4.6.1017 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "general QMobile device",
-      "marketingName": "general QMobile device",
+      "deviceName": "i7i",
+      "marketingName": "Noir i7i",
       "manufacturer": "qmobile",
       "brand": "qmobile",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 854,
+        "height": 480,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "type": "smartphone"
     },
@@ -2740,15 +2626,15 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 5.1; QMobile i7i Build/LMY47D; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/43.0.2357.121 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "general QMobile device",
-      "marketingName": "general QMobile device",
+      "deviceName": "i7i",
+      "marketingName": "Noir i7i",
       "manufacturer": "qmobile",
       "brand": "qmobile",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 854,
+        "height": 480,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "type": "smartphone"
     },
@@ -3044,15 +2930,15 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 4.4.4; QMobile Z8 Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.98 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "general QMobile device",
-      "marketingName": "general QMobile device",
+      "deviceName": "Z8",
+      "marketingName": "Noir Z8",
       "manufacturer": "qmobile",
       "brand": "qmobile",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1280,
+        "height": 720,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "type": "smartphone"
     },
@@ -3424,15 +3310,15 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 5.1; QMobile i2 Build/LMY47D; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/64.0.3282.137 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "general QMobile device",
-      "marketingName": "general QMobile device",
+      "deviceName": "i2",
+      "marketingName": "Noir i2",
       "manufacturer": "qmobile",
       "brand": "qmobile",
       "display": {
         "width": null,
         "height": null,
         "touch": true,
-        "size": null
+        "size": 4.5
       },
       "type": "smartphone"
     },
@@ -3538,15 +3424,15 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 5.1; QMobile L20 Build/LMY47I) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.137 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "general QMobile device",
-      "marketingName": "general QMobile device",
+      "deviceName": "L20",
+      "marketingName": "LinQ L20",
       "manufacturer": "qmobile",
       "brand": "qmobile",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1280,
+        "height": 720,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "type": "smartphone"
     },
@@ -3796,6 +3682,120 @@
     "engine": {
       "name": "Blink",
       "version": "56.0.2924.87",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0; QMobile S6 Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "S6",
+      "marketingName": "Noir S6",
+      "manufacturer": "qmobile",
+      "brand": "qmobile",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 4.95
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "63.0.3239.111",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "63.0.3239.111",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1; QMobile i6i Build/LMY47I) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/39.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "i6i",
+      "marketingName": "Noir i6i",
+      "manufacturer": "qmobile",
+      "brand": "qmobile",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "39.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "39.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; QMobile T250 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "T250",
+      "marketingName": "Bolt",
+      "manufacturer": "qmobile",
+      "brand": "qmobile",
+      "display": {
+        "width": 768,
+        "height": 480,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "30.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "30.0.0.0",
       "manufacturer": "google"
     }
   }
