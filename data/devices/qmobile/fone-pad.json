@@ -82,5 +82,33 @@
     },
     "type": "fone-pad",
     "platform": "android"
+  },
+  "qmobile qtab v3": {
+    "deviceName": "QTab V3",
+    "marketingName": "QTab V3",
+    "manufacturer": "qmobile",
+    "brand": "qmobile",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "size": 7
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "qmobile qtab v3 plus": {
+    "deviceName": "QTab V3 Plus",
+    "marketingName": "QTab V3 Plus",
+    "manufacturer": "qmobile",
+    "brand": "qmobile",
+    "display": {
+      "width": 854,
+      "height": 480,
+      "touch": true,
+      "size": 7
+    },
+    "type": "fone-pad",
+    "platform": "android"
   }
 }
