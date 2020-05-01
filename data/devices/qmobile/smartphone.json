@@ -55,20 +55,6 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "qmobile t250": {
-    "deviceName": "T250",
-    "marketingName": "Bolt",
-    "manufacturer": "qmobile",
-    "brand": "qmobile",
-    "display": {
-      "width": 768,
-      "height": 480,
-      "touch": true,
-      "size": null
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
   "qmobile a2 lite": {
     "deviceName": "A2 Lite",
     "marketingName": "Bolt A2 Lite",
@@ -79,6 +65,34 @@
       "height": 320,
       "touch": true,
       "size": 3.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "qmobile t250": {
+    "deviceName": "T250",
+    "marketingName": "Bolt T250",
+    "manufacturer": "qmobile",
+    "brand": "qmobile",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "qmobile i5.5": {
+    "deviceName": "i5.5",
+    "marketingName": "i5.5",
+    "manufacturer": "qmobile",
+    "brand": "qmobile",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 5.5
     },
     "type": "smartphone",
     "platform": "android"
@@ -163,6 +177,20 @@
       "height": 480,
       "touch": true,
       "size": 4
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "qmobile a1": {
+    "deviceName": "A1",
+    "marketingName": "Noir A1",
+    "manufacturer": "qmobile",
+    "brand": "qmobile",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": 5.5
     },
     "type": "smartphone",
     "platform": "android"
@@ -789,10 +817,24 @@
     "manufacturer": "qmobile",
     "brand": "qmobile",
     "display": {
-      "width": null,
-      "height": null,
+      "width": 800,
+      "height": 480,
       "touch": true,
       "size": 4
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "qmobile w35": {
+    "deviceName": "W35",
+    "marketingName": "Noir W35",
+    "manufacturer": "qmobile",
+    "brand": "qmobile",
+    "display": {
+      "width": 854,
+      "height": 480,
+      "touch": true,
+      "size": 4.5
     },
     "type": "smartphone",
     "platform": "android"
@@ -961,6 +1003,34 @@
       "height": 480,
       "touch": true,
       "size": null
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "qmobile x700 pro": {
+    "deviceName": "X700 Pro",
+    "marketingName": "Noir X700 Pro",
+    "manufacturer": "qmobile",
+    "brand": "qmobile",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "qmobile x700 pro 2": {
+    "deviceName": "X700 Pro 2",
+    "marketingName": "Noir X700 Pro 2",
+    "manufacturer": "qmobile",
+    "brand": "qmobile",
+    "display": {
+      "width": 854,
+      "height": 480,
+      "touch": true,
+      "size": 5
     },
     "type": "smartphone",
     "platform": "android"
