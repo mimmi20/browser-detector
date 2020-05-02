@@ -1,6 +1,44 @@
 [
   {
     "headers": {
+      "user-agent": "HbbTV/1.2.1 (;Panasonic;VIERA 2014;3.096;4101-0003 0008-0000;)"
+    },
+    "device": {
+      "deviceName": "Viera TV",
+      "marketingName": "Viera TV",
+      "manufacturer": "panasonic",
+      "brand": "panasonic",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "HbbTV/1.2.1 (;Panasonic;VIERA 2014;3.096;4401-0003 0001-0000;)"
     },
     "device": {
@@ -3726,44 +3764,6 @@
   {
     "headers": {
       "user-agent": "HbbTV/1.2.1 (;Panasonic;VIERA 2015;3.004;4701-0003 0008-0000;)"
-    },
-    "device": {
-      "deviceName": "Viera TV",
-      "marketingName": "Viera TV",
-      "manufacturer": "panasonic",
-      "brand": "panasonic",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "HbbTV/1.2.1 (;Panasonic;VIERA 2015;3.004;4b01-0003 0002-0000;)"
     },
     "device": {
       "deviceName": "Viera TV",
