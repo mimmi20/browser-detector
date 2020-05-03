@@ -1,17 +1,115 @@
 {
-  "general pantech device": {
-    "deviceName": "general Pantech device",
-    "marketingName": "general Pantech device",
+  "pantech c520": {
+    "deviceName": "C520",
+    "marketingName": "Breeze",
     "manufacturer": "pantech",
     "brand": "pantech",
     "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
+      "width": 220,
+      "height": 176,
+      "touch": false,
+      "size": 2.2
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "pantech p2000": {
+    "deviceName": "P2000",
+    "marketingName": "Breeze II",
+    "manufacturer": "pantech",
+    "brand": "pantech",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": 2.2
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "pantech p2030": {
+    "deviceName": "P2030",
+    "marketingName": "Breeze III",
+    "manufacturer": "pantech",
+    "brand": "pantech",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": 2.2
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "pantech c180": {
+    "deviceName": "C180",
+    "marketingName": "C180",
+    "manufacturer": "pantech",
+    "brand": "pantech",
+    "display": {
+      "width": 128,
+      "height": 128,
+      "touch": false,
+      "size": 1.5
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "pantech c320": {
+    "deviceName": "C320",
+    "marketingName": "C320",
+    "manufacturer": "pantech",
+    "brand": "pantech",
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": false,
+      "size": 2
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "pantech c510": {
+    "deviceName": "C510",
+    "marketingName": "C510",
+    "manufacturer": "pantech",
+    "brand": "pantech",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
       "size": null
     },
     "type": "feature-phone",
-    "platform": "android"
+    "platform": "java"
+  },
+  "pantech c570": {
+    "deviceName": "C570",
+    "marketingName": "C570",
+    "manufacturer": "pantech",
+    "brand": "pantech",
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "pantech c610": {
+    "deviceName": "C610",
+    "marketingName": "C610",
+    "manufacturer": "pantech",
+    "brand": "pantech",
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": false,
+      "size": 2
+    },
+    "type": "feature-phone",
+    "platform": "java"
   },
   "pantech cdm8992": {
     "deviceName": "CDM8992",
@@ -55,6 +153,34 @@
     "type": "feature-phone",
     "platform": "java"
   },
+  "pantech u4000": {
+    "deviceName": "U4000",
+    "marketingName": "Europa",
+    "manufacturer": "pantech",
+    "brand": "pantech",
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": false,
+      "size": 1.9
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "pantech gf500": {
+    "deviceName": "GF500",
+    "marketingName": "GF500",
+    "manufacturer": "pantech",
+    "brand": "pantech",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "pantech p7000": {
     "deviceName": "P7000",
     "marketingName": "Impact",
@@ -69,6 +195,20 @@
     "type": "feature-phone",
     "platform": "java"
   },
+  "pantech p9050": {
+    "deviceName": "P9050",
+    "marketingName": "Laser",
+    "manufacturer": "pantech",
+    "brand": "pantech",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": false,
+      "size": 3.1
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "pantech p7040": {
     "deviceName": "P7040",
     "marketingName": "Link",
@@ -77,6 +217,62 @@
     "display": {
       "width": 320,
       "height": 240,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "pantech p5000": {
+    "deviceName": "P5000",
+    "marketingName": "Link II",
+    "manufacturer": "pantech",
+    "brand": "pantech",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": 2.4
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "pantech p7050": {
+    "deviceName": "P7050",
+    "marketingName": "Onza",
+    "manufacturer": "pantech",
+    "brand": "pantech",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": 2.4
+    },
+    "type": "feature-phone",
+    "platform": "brew"
+  },
+  "pantech p4000": {
+    "deviceName": "P4000",
+    "marketingName": "P4000",
+    "manufacturer": "pantech",
+    "brand": "pantech",
+    "display": {
+      "width": 400,
+      "height": 240,
+      "touch": true,
+      "size": 3
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "pantech pg-1200": {
+    "deviceName": "PG-1200",
+    "marketingName": "PG-1200",
+    "manufacturer": "pantech",
+    "brand": "pantech",
+    "display": {
+      "width": 160,
+      "height": 128,
       "touch": false,
       "size": null
     },
@@ -125,6 +321,20 @@
     "type": "feature-phone",
     "platform": "java"
   },
+  "pantech p6030": {
+    "deviceName": "P6030",
+    "marketingName": "Renue",
+    "manufacturer": "pantech",
+    "brand": "pantech",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": 3.2
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "pantech p6020": {
     "deviceName": "P6020",
     "marketingName": "Swift",
@@ -152,5 +362,19 @@
     },
     "type": "feature-phone",
     "platform": "brew"
+  },
+  "pantech p1010": {
+    "deviceName": "P1010",
+    "marketingName": "Xtreme",
+    "manufacturer": "pantech",
+    "brand": "pantech",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": 1.8
+    },
+    "type": "feature-phone",
+    "platform": "java"
   }
 }
