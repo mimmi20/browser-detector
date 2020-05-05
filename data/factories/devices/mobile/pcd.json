@@ -1,6 +1,10 @@
 {
   "rules": {
-    "/c751/i": "pcd c751"
+    "/pcd ?509/i": "pcd 509",
+    "/pcd ?508/i": "pcd 508",
+    "/pcd ?506/i": "pcd 506",
+    "/c751/i": "pcd c751",
+    "/c741/i": "pcd c741"
   },
   "generic": "general pcd device"
 }

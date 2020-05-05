@@ -89,9 +89,7 @@ final class Data implements DataInterface
             /** @var \SplFileInfo $file */
             $content = file_get_contents($file->getPathname());
 
-            if (false === $content) {
-                throw new \RuntimeException('could not read file "' . $file->getPathname() . '"');
-            }
+            assert(false !== $content, sprintf('could not read file "%s"', $file->getPathname()));
 
             try {
                 $fileData = $this->json->decode($content, false);
