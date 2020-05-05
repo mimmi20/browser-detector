@@ -111,6 +111,20 @@
     "type": "feature-phone",
     "platform": "java"
   },
+  "pantech c810": {
+    "deviceName": "C810",
+    "marketingName": "C810",
+    "manufacturer": "pantech",
+    "brand": "pantech",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": 2.2
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "pantech cdm8992": {
     "deviceName": "CDM8992",
     "marketingName": "CDM8992",
@@ -163,6 +177,34 @@
       "height": 176,
       "touch": false,
       "size": 1.9
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "pantech g200": {
+    "deviceName": "G200",
+    "marketingName": "G200",
+    "manufacturer": "pantech",
+    "brand": "pantech",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "pantech g500": {
+    "deviceName": "G500",
+    "marketingName": "G500",
+    "manufacturer": "pantech",
+    "brand": "pantech",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": null
     },
     "type": "feature-phone",
     "platform": "java"
@@ -275,6 +317,48 @@
       "height": 128,
       "touch": false,
       "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "pantech pg-1400": {
+    "deviceName": "PG-1400",
+    "marketingName": "PG-1400",
+    "manufacturer": "pantech",
+    "brand": "pantech",
+    "display": {
+      "width": 128,
+      "height": 128,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "pantech pg-3000": {
+    "deviceName": "PG-3000",
+    "marketingName": "PG-3000",
+    "manufacturer": "pantech",
+    "brand": "pantech",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "pantech pg-8000": {
+    "deviceName": "PG-8000",
+    "marketingName": "PG-8000",
+    "manufacturer": "pantech",
+    "brand": "pantech",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": 2
     },
     "type": "feature-phone",
     "platform": "java"
