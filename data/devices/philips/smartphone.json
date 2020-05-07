@@ -1,4 +1,18 @@
 {
+  "philips i908": {
+    "deviceName": "I908",
+    "marketingName": "I908",
+    "manufacturer": "philips",
+    "brand": "philips",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": 5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "philips i928": {
     "deviceName": "I928",
     "marketingName": "I928",
@@ -23,6 +37,20 @@
       "height": 480,
       "touch": true,
       "size": 4
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "philips s326": {
+    "deviceName": "S326",
+    "marketingName": "S326",
+    "manufacturer": "philips",
+    "brand": "philips",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 5
     },
     "type": "smartphone",
     "platform": "android"
@@ -79,6 +107,20 @@
       "height": 1080,
       "touch": true,
       "size": null
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "philips t3500": {
+    "deviceName": "T3500",
+    "marketingName": "T3500",
+    "manufacturer": "philips",
+    "brand": "philips",
+    "display": {
+      "width": 854,
+      "height": 480,
+      "touch": true,
+      "size": 5
     },
     "type": "smartphone",
     "platform": "android"
