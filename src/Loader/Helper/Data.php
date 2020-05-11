@@ -87,14 +87,15 @@ final class Data implements DataInterface
 
         foreach ($this->finder as $file) {
             /** @var \SplFileInfo $file */
-            $content = file_get_contents($file->getPathname());
+            $path    = $file->getPathname();
+            $content = file_get_contents($path);
 
-            assert(false !== $content, sprintf('could not read file "%s"', $file->getPathname()));
+            assert(false !== $content, sprintf('could not read file "%s"', $path));
 
             try {
                 $fileData = $this->json->decode($content, false);
             } catch (DecodeErrorException $e) {
-                throw new \RuntimeException('file "' . $file->getPathname() . '" contains invalid json', 0, $e);
+                throw new \RuntimeException(sprintf('file "%s" contains invalid json', $path), 0, $e);
             }
 
             foreach ($fileData as $key => $data) {
