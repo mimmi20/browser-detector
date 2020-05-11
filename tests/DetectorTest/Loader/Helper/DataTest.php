@@ -48,9 +48,9 @@ final class DataTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
         $file
-            ->expects(self::exactly(2))
+            ->expects(self::once())
             ->method('getPathname')
-            ->willReturnOnConsecutiveCalls(vfsStream::url(self::DATA_PATH . '/bot.json'), vfsStream::url(self::DATA_PATH . '/tool.json'));
+            ->willReturn(vfsStream::url(self::DATA_PATH . '/bot.json'));
 
         $iterator = $this->getMockBuilder(\Iterator::class)
             ->disableOriginalConstructor()
@@ -90,7 +90,7 @@ final class DataTest extends TestCase
         $object = new Data($iterator, $jsonParser);
 
         $this->expectException(\RuntimeException::class);
-        $this->expectExceptionMessage('file "vfs://root/tool.json" contains invalid json');
+        $this->expectExceptionMessage('file "vfs://root/bot.json" contains invalid json');
         $this->expectExceptionCode(0);
         $object();
     }
