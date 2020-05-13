@@ -1,82 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "Dalvik/2.1.0 (Linux## U## Android 7.1.2## QM161E Build/NZH54D)"
-    },
-    "device": {
-      "deviceName": "general Philips TV",
-      "marketingName": "general Philips TV",
-      "manufacturer": "philips",
-      "brand": "philips",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Dalvik",
-      "modus": null,
-      "version": "2.1.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "7.1.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Dalvik/2.1.0 (Linux## U## Android 5.1.1## QM153E Build/LMY48N)"
-    },
-    "device": {
-      "deviceName": "general Philips TV",
-      "marketingName": "general Philips TV",
-      "manufacturer": "philips",
-      "brand": "philips",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "Dalvik",
-      "modus": null,
-      "version": "2.1.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.1.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Opera/9.80 (Linux armv7l; HbbTV/1.2.1 (; Philips; 28HFL5009D12; ; PHILIPSTV;  CE-HTML/1.0 NETTV/4.4.1 SmartTvA/3.0.0 Firmware/004.001.163.001 (PhilipsTV, 3.1.1,)en) ) Presto/2.12.407 Version/12.50"
     },
     "device": {
@@ -723,6 +647,44 @@
   },
   {
     "headers": {
+      "user-agent": "CE-HTML/1.0 NETTV/6.0.2 SmartTvA/3.0.0 (PhilipsTV, 6.1.1,) enMozilla/5.0 (Linux; QM151E Build/LMY47D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.125 Safari/537.36 OPR/31.0.1890.0 OMI/4.6.1.13.Sprinter.13"
+    },
+    "device": {
+      "deviceName": "general Philips TV",
+      "marketingName": "general Philips TV",
+      "manufacturer": "philips",
+      "brand": "philips",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Opera Devices",
+      "modus": null,
+      "version": "4.6.1.13",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "44.0.2403.125",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 5.1; QM152E Build/LMY47D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.83 Mobile Safari/537.36"
     },
     "device": {
@@ -875,6 +837,44 @@
   },
   {
     "headers": {
+      "user-agent": "Dalvik/2.1.0 (Linux## U## Android 7.1.2## QM161E Build/NZH54D)"
+    },
+    "device": {
+      "deviceName": "general Philips TV",
+      "marketingName": "general Philips TV",
+      "manufacturer": "philips",
+      "brand": "philips",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Dalvik",
+      "modus": null,
+      "version": "2.1.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.1.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Dalvik/2.1.0 (Linux## U## Android 6.0.1## QM151E Build/MOB31S)"
     },
     "device": {
@@ -1016,6 +1016,44 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "5.1.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Dalvik/2.1.0 (Linux## U## Android 5.1.1## QM153E Build/LMY48N)"
+    },
+    "device": {
+      "deviceName": "general Philips TV",
+      "marketingName": "general Philips TV",
+      "manufacturer": "philips",
+      "brand": "philips",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "Dalvik",
+      "modus": null,
+      "version": "2.1.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
       "manufacturer": "google",
       "bits": null
     },

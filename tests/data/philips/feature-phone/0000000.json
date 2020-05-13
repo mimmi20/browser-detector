@@ -1,82 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "PhilipsW715/Qualcomm Brew MP 1.0.3/WAP-2.0/MIDP-2.0/CLDC-1.1"
-    },
-    "device": {
-      "deviceName": "W715",
-      "marketingName": "W715",
-      "manufacturer": "philips",
-      "brand": "philips",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": 2.4
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": "Brew",
-      "marketingName": "Brew",
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "PhilipsX331 MAUI/10A1032MP_ASTRO_W1052 Release/31.12.2010 Browser/Opera Sync/SyncClient1.1 Profile/MIDP-2.0 Configuration/CLDC-1.1 Opera/9.80 (MTK; U; xx) Presto/2.5.28 Version/10.10"
-    },
-    "device": {
-      "deviceName": "X331",
-      "marketingName": "X331",
-      "manufacturer": "philips",
-      "brand": "philips",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": 2.8
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Opera Mobile",
-      "modus": null,
-      "version": "10.10.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.5.28",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Philips292 / Obigo Browser 2.0"
     },
     "device": {
@@ -647,6 +571,44 @@
   },
   {
     "headers": {
+      "user-agent": "Philips E210/Obigo Browser wap2.0"
+    },
+    "device": {
+      "deviceName": "E210",
+      "marketingName": "E210",
+      "manufacturer": "philips",
+      "brand": "philips",
+      "display": {
+        "width": 160,
+        "height": 128,
+        "touch": false,
+        "size": 1.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Teleca-Obigo",
+      "modus": null,
+      "version": null,
+      "manufacturer": "obigo",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Philips F511/MTK 6235.09A 09.32/WAP-2.0/MIDP-2.0/CLDC-1.1"
     },
     "device": {
@@ -707,44 +669,6 @@
       "manufacturer": "unknown",
       "bits": null,
       "type": "unknown"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Philips E210/Obigo Browser wap2.0"
-    },
-    "device": {
-      "deviceName": "E210",
-      "marketingName": "E210",
-      "manufacturer": "philips",
-      "brand": "philips",
-      "display": {
-        "width": 160,
-        "height": 128,
-        "touch": false,
-        "size": 1.8
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Teleca-Obigo",
-      "modus": null,
-      "version": null,
-      "manufacturer": "obigo",
-      "bits": null,
-      "type": "browser"
     },
     "os": {
       "name": "JavaOS",
@@ -913,44 +837,6 @@
   },
   {
     "headers": {
-      "user-agent": "PHILIPS755 ObigoInternetBrowser/2.0"
-    },
-    "device": {
-      "deviceName": "755",
-      "marketingName": "755",
-      "manufacturer": "philips",
-      "brand": "philips",
-      "display": {
-        "width": 160,
-        "height": 128,
-        "touch": true,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Teleca-Obigo",
-      "modus": null,
-      "version": "2.0.0",
-      "manufacturer": "obigo",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "PHILIPS660 ObigoInternetBrowser/2.0"
     },
     "device": {
@@ -990,44 +876,6 @@
   {
     "headers": {
       "user-agent": "PHILIPS650 ObigoInternetBrowser/2.0 UP.Link/1.1"
-    },
-    "device": {
-      "deviceName": "650",
-      "marketingName": "650",
-      "manufacturer": "philips",
-      "brand": "philips",
-      "display": {
-        "width": 160,
-        "height": 128,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Teleca-Obigo",
-      "modus": null,
-      "version": "2.0.0",
-      "manufacturer": "obigo",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "PHILIPS650 ObigoInternetBrowser/2.0"
     },
     "device": {
       "deviceName": "650",
@@ -1293,44 +1141,6 @@
   },
   {
     "headers": {
-      "user-agent": "PHILIPS-FISIO 820/3.14 UP.Browser/5.0.1.10"
-    },
-    "device": {
-      "deviceName": "Fisio 820",
-      "marketingName": "Fisio 820",
-      "manufacturer": "philips",
-      "brand": "philips",
-      "display": {
-        "width": 130,
-        "height": 120,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Openwave Mobile Browser",
-      "modus": null,
-      "version": "5.0.1.10",
-      "manufacturer": "myriad",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "PHILIPS-FISIO 620/3.14 UP.Browser/5.0.1.11 (Google WAP Proxy/1.0)"
     },
     "device": {
@@ -1559,44 +1369,6 @@
   },
   {
     "headers": {
-      "user-agent": "PHILIPS 535 / Obigo Internet Browser 2.0"
-    },
-    "device": {
-      "deviceName": "535",
-      "marketingName": "535",
-      "manufacturer": "philips",
-      "brand": "philips",
-      "display": {
-        "width": 128,
-        "height": 128,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Teleca-Obigo",
-      "modus": null,
-      "version": null,
-      "manufacturer": "obigo",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "PHILIPS 530 / Obigo Internet Browser 2.0"
     },
     "device": {
@@ -1673,82 +1445,6 @@
   },
   {
     "headers": {
-      "user-agent": "PHILIPS 355 / Obigo Internet Browser 2.2"
-    },
-    "device": {
-      "deviceName": "355",
-      "marketingName": "355",
-      "manufacturer": "philips",
-      "brand": "philips",
-      "display": {
-        "width": 128,
-        "height": 128,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Teleca-Obigo",
-      "modus": null,
-      "version": null,
-      "manufacturer": "obigo",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "PHILIPS 355 / Obigo Internet Browser 2.0"
-    },
-    "device": {
-      "deviceName": "355",
-      "marketingName": "355",
-      "manufacturer": "philips",
-      "brand": "philips",
-      "display": {
-        "width": 128,
-        "height": 128,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Teleca-Obigo",
-      "modus": null,
-      "version": null,
-      "manufacturer": "obigo",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "PHILIPS 350 / Obigo Internet Browser 2.0 UP.Link/1.1"
     },
     "device": {
@@ -1787,26 +1483,64 @@
   },
   {
     "headers": {
-      "user-agent": "PHILIPS 350 / Obigo Internet Browser 2.0"
+      "user-agent": "PhilipsW715/Qualcomm Brew MP 1.0.3/WAP-2.0/MIDP-2.0/CLDC-1.1"
     },
     "device": {
-      "deviceName": "350",
-      "marketingName": "350",
+      "deviceName": "W715",
+      "marketingName": "W715",
       "manufacturer": "philips",
       "brand": "philips",
       "display": {
-        "width": 112,
-        "height": 112,
+        "width": 320,
+        "height": 240,
         "touch": false,
-        "size": null
+        "size": 2.4
       },
       "type": "feature-phone"
     },
     "browser": {
-      "name": "Teleca-Obigo",
+      "name": null,
       "modus": null,
       "version": null,
-      "manufacturer": "obigo",
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Brew",
+      "marketingName": "Brew",
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "PhilipsX331 MAUI/10A1032MP_ASTRO_W1052 Release/31.12.2010 Browser/Opera Sync/SyncClient1.1 Profile/MIDP-2.0 Configuration/CLDC-1.1 Opera/9.80 (MTK; U; xx) Presto/2.5.28 Version/10.10"
+    },
+    "device": {
+      "deviceName": "X331",
+      "marketingName": "X331",
+      "manufacturer": "philips",
+      "brand": "philips",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "10.10.0",
+      "manufacturer": "opera",
       "bits": null,
       "type": "browser"
     },
@@ -1818,9 +1552,9 @@
       "bits": null
     },
     "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
+      "name": "Presto",
+      "version": "2.5.28",
+      "manufacturer": "opera"
     }
   }
 ]
