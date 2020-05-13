@@ -7,6 +7,8 @@ update_configs:
       - "mimmi20"
     default_reviewers:
       - "mimmi20"
+    default_labels:
+      - "dependencies"
     directory: "/"
     package_manager: "php:composer"
     update_schedule: "live"
