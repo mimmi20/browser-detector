@@ -54,5 +54,33 @@
     },
     "type": "tablet",
     "platform": "android"
+  },
+  "polypad c7000": {
+    "deviceName": "C7000",
+    "marketingName": "C7000",
+    "manufacturer": "polypad",
+    "brand": "polypad",
+    "display": {
+      "width": 800,
+      "height": 600,
+      "touch": true,
+      "size": 7
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "polypad i7 pro": {
+    "deviceName": "i7 Pro",
+    "marketingName": "i7 Pro",
+    "manufacturer": "polypad",
+    "brand": "polypad",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "size": 7
+    },
+    "type": "tablet",
+    "platform": "android"
   }
 }
