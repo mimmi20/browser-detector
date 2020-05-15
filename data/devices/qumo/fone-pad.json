@@ -1,4 +1,18 @@
 {
+  "qumo altair 7002": {
+    "deviceName": "Altair 7002",
+    "marketingName": "Altair 7002",
+    "manufacturer": "qumo",
+    "brand": "qumo",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "size": 7
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
   "qumo altair 7004": {
     "deviceName": "Altair 7004",
     "marketingName": "Altair 7004",
@@ -21,6 +35,20 @@
     "display": {
       "width": 1280,
       "height": 800,
+      "touch": true,
+      "size": 7
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "qumo altair 706": {
+    "deviceName": "Altair 706",
+    "marketingName": "Altair 706",
+    "manufacturer": "qumo",
+    "brand": "qumo",
+    "display": {
+      "width": 1920,
+      "height": 1200,
       "touch": true,
       "size": 7
     },
