@@ -335,7 +335,7 @@
     "/ouki|ok[au][0-9]{1,2}/i": "ouki",
     "/k107| k17 |(adr|android) 4\\.4.* q88h/i": "yuntab",
     "/numy|novo ?[0-9]|novocrystal|aurora-ii|(adr|android) 4\\.4.* q88/i": "ainol",
-    "/oneplus|one (a200[135]|e100[135])|a0001|gm19[01][01357]| pro7|in202[35]/i": "oneplus",
+    "/oneplus|one [ae][0-9]{4}|a0001|gm19[01][0-9]| pro7|in20[12][0-9]/i": "oneplus",
     "/innos|d6000/i": "innos",
     "/sanyo|(pm|scp)-?[0-9]{4}|v801sa/i": "sanyo",
     "/sprint/i": "sprint",
