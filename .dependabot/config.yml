@@ -20,10 +20,8 @@ update_configs:
       - match:
           dependency_name: "phpunit/phpunit"
       - match:
+          dependency_name: "infection/infection"
+      - match:
           dependency_name: "symfony/cache"
       - match:
           dependency_name: "symfony/finder"
-      - match:
-          dependency_name: "infection/infection"
-      - match:
-          dependency_name: "ergebnis/composer-normalize"
