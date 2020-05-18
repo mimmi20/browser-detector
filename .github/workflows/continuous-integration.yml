@@ -309,6 +309,15 @@ jobs:
 
     runs-on: "ubuntu-latest"
 
+    strategy:
+      fail-fast: false
+      matrix:
+        php-versions:
+          - "7.1"
+
+        dependencies:
+          - ""
+
     steps:
       - name: "Checkout"
         uses: "actions/checkout@v2"
