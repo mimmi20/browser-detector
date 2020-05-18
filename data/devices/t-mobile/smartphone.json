@@ -97,20 +97,6 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "t-mobile mytouch 4g": {
-    "deviceName": "Panache",
-    "marketingName": "myTouch",
-    "manufacturer": "htc",
-    "brand": "t-mobile",
-    "display": {
-      "width": 800,
-      "height": 480,
-      "touch": true,
-      "size": 3.8
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
   "t-mobile mytouch 3g": {
     "deviceName": "myTouch 3G",
     "marketingName": "myTouch 3G",
@@ -125,6 +111,20 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "t-mobile mytouch 3g hd": {
+    "deviceName": "myTouch 3G HD",
+    "marketingName": "myTouch 3G HD",
+    "manufacturer": "t-mobile",
+    "brand": "t-mobile",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 3.8
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "t-mobile mytouch 3g slide": {
     "deviceName": "myTouch 3G Slide",
     "marketingName": "myTouch 3G Slide",
@@ -133,6 +133,48 @@
     "display": {
       "width": 480,
       "height": 320,
+      "touch": true,
+      "size": null
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "t-mobile mytouch 3g slide 2": {
+    "deviceName": "myTouch 3G Slide 2",
+    "marketingName": "myTouch 3G Slide 2",
+    "manufacturer": "t-mobile",
+    "brand": "t-mobile",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "size": null
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "t-mobile mytouch 4g": {
+    "deviceName": "Panache",
+    "marketingName": "myTouch 4G",
+    "manufacturer": "htc",
+    "brand": "t-mobile",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 3.8
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "t-mobile mytouch 4g slide": {
+    "deviceName": "myTouch 4G Slide",
+    "marketingName": "myTouch 4G Slide",
+    "manufacturer": "t-mobile",
+    "brand": "t-mobile",
+    "display": {
+      "width": null,
+      "height": null,
       "touch": true,
       "size": null
     },
