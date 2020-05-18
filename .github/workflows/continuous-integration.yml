@@ -36,7 +36,7 @@ jobs:
         uses: "shivammathur/setup-php@v2"
         with:
           php-version: "${{ matrix.php-versions }}"
-          extension: "mbstring, dom, xmlwriter, opcache, bcmath, curl, intl, json" #optional
+          extensions: "mbstring, dom, xmlwriter, opcache, bcmath, curl, intl, json" #optional
           ini-values: "opcache.enable=1, opcache.enable_cli=1, zend.assertions=1, assert.exception=On" #optional
           coverage: "none" #optional
 
@@ -75,7 +75,7 @@ jobs:
           - "7.2"
           - "7.3"
           - "7.4"
-          - "8.0"
+#          - "8.0"
 
         dependencies:
           - "--prefer-lowest"
@@ -89,7 +89,7 @@ jobs:
         uses: "shivammathur/setup-php@v2"
         with:
           php-version: "${{ matrix.php-versions }}"
-          extension: "mbstring, dom, xmlwriter, opcache, bcmath, curl, intl, json" #optional
+          extensions: "mbstring, dom, xmlwriter, opcache, bcmath, curl, intl, json" #optional
           ini-values: "opcache.enable=1, opcache.enable_cli=1, zend.assertions=1, assert.exception=On" #optional
           coverage: "none" #optional
 
@@ -134,7 +134,7 @@ jobs:
         uses: "shivammathur/setup-php@v2"
         with:
           php-version: "${{ matrix.php-versions }}"
-          extension: "mbstring, dom, xmlwriter, opcache, bcmath, curl, intl, json" #optional
+          extensions: "mbstring, dom, xmlwriter, opcache, bcmath, curl, intl, json" #optional
           ini-values: "opcache.enable=1, opcache.enable_cli=1, zend.assertions=1, assert.exception=On" #optional
           coverage: "none" #optional
 
@@ -182,7 +182,7 @@ jobs:
         uses: "shivammathur/setup-php@v2"
         with:
           php-version: "${{ matrix.php-versions }}"
-          extension: "mbstring, dom, xmlwriter, opcache, bcmath, curl, intl, json" #optional
+          extensions: "mbstring, dom, xmlwriter, opcache, bcmath, curl, intl, json" #optional
           ini-values: "opcache.enable=1, opcache.enable_cli=1, zend.assertions=1, assert.exception=On" #optional
           coverage: "none" #optional
 
@@ -229,7 +229,7 @@ jobs:
         uses: "shivammathur/setup-php@v2"
         with:
           php-version: "${{ matrix.php-versions }}"
-          extension: "mbstring, dom, xmlwriter, opcache, bcmath, curl, intl, json" #optional
+          extensions: "mbstring, dom, xmlwriter, opcache, bcmath, curl, intl, json" #optional
           ini-values: "opcache.enable=1, opcache.enable_cli=1, zend.assertions=1, assert.exception=On" #optional
           coverage: "none" #optional
 
@@ -274,7 +274,7 @@ jobs:
         uses: "shivammathur/setup-php@v2"
         with:
           php-version: "${{ matrix.php-versions }}"
-          extension: "mbstring, dom, xmlwriter, opcache, bcmath, curl, intl, json" #optional
+          extensions: "mbstring, dom, xmlwriter, opcache, bcmath, curl, intl, json" #optional
           ini-values: "opcache.enable=1, opcache.enable_cli=1, zend.assertions=1, assert.exception=On" #optional
           coverage: "xdebug" #optional
 
@@ -317,7 +317,7 @@ jobs:
         uses: "shivammathur/setup-php@v2"
         with:
           php-version: "${{ matrix.php-versions }}"
-          extension: "mbstring, dom, xmlwriter, opcache, bcmath, curl, intl, json" #optional
+          extensions: "mbstring, dom, xmlwriter, opcache, bcmath, curl, intl, json" #optional
           ini-values: "opcache.enable=1, opcache.enable_cli=1, zend.assertions=1, assert.exception=On" #optional
           coverage: "none" #optional
 
@@ -364,7 +364,7 @@ jobs:
         uses: "shivammathur/setup-php@v2"
         with:
           php-version: "${{ matrix.php-versions }}"
-          extension: "mbstring, dom, xmlwriter, opcache, bcmath, curl, intl, json" #optional
+          extensions: "mbstring, dom, xmlwriter, opcache, bcmath, curl, intl, json" #optional
           ini-values: "opcache.enable=1, opcache.enable_cli=1, zend.assertions=1, assert.exception=On" #optional
           coverage: "xdebug" #optional
 
