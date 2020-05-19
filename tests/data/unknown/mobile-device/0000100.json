@@ -1,7 +1,7 @@
 [
   {
     "headers": {
-      "user-agent": "portalmmm/2.0 EXALEAD(CRAWLER)"
+      "user-agent": "polytron-big-band-s UP.Browser/5.0.3.3 (GUI)"
     },
     "device": {
       "deviceName": "general Mobile device",
@@ -17,50 +17,12 @@
       "type": "mobile-device"
     },
     "browser": {
-      "name": "Crawler",
+      "name": "Openwave Mobile Browser",
       "modus": null,
-      "version": null,
-      "manufacturer": "linkfluence",
+      "version": "5.0.3.3",
+      "manufacturer": "myriad",
       "bits": null,
-      "type": "bot"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "portalmmm/1.0 m21i-10(c10)"
-    },
-    "device": {
-      "deviceName": "general Mobile device",
-      "marketingName": "general Mobile device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
+      "type": "browser"
     },
     "os": {
       "name": null,
@@ -3782,6 +3744,44 @@
       "name": "Opera Mini",
       "modus": null,
       "version": "4.2.20663",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.5.25",
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/9.80 (J2ME/MIDP; Opera Mini/4.2.18887/20.2479; U; ru) Presto/2.5.25"
+    },
+    "device": {
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device"
+    },
+    "browser": {
+      "name": "Opera Mini",
+      "modus": null,
+      "version": "4.2.18887",
       "manufacturer": "opera",
       "bits": null,
       "type": "transcoder"
