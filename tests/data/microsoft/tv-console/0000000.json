@@ -1138,5 +1138,43 @@
       "version": "40.15063.0",
       "manufacturer": "microsoft"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; Xbox; Xbox One)  AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.973.34 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Xbox One",
+      "marketingName": "Xbox One",
+      "manufacturer": "microsoft",
+      "brand": "microsoft",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv-console"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "74.0.973.34",
+      "manufacturer": "google",
+      "bits": 64,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Windows NT 10.0",
+      "marketingName": "Windows 10",
+      "version": "10.0.0",
+      "manufacturer": "microsoft",
+      "bits": 64
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "74.0.973.34",
+      "manufacturer": "google"
+    }
   }
 ]
