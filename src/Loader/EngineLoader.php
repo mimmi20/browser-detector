@@ -19,19 +19,13 @@ use UaResult\Engine\EngineInterface;
 
 final class EngineLoader implements EngineLoaderInterface
 {
-    /**
-     * @var \Psr\Log\LoggerInterface
-     */
+    /** @var \Psr\Log\LoggerInterface */
     private $logger;
 
-    /**
-     * @var \BrowserDetector\Loader\Helper\DataInterface
-     */
+    /** @var \BrowserDetector\Loader\Helper\DataInterface */
     private $initData;
 
-    /**
-     * @var \BrowserDetector\Loader\CompanyLoaderInterface
-     */
+    /** @var \BrowserDetector\Loader\CompanyLoaderInterface */
     private $companyLoader;
 
     /**

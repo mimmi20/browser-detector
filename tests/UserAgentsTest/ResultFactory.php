@@ -34,14 +34,10 @@ use UaResult\Result\Result;
 
 final class ResultFactory
 {
-    /**
-     * @var \BrowserDetector\Loader\CompanyLoaderInterface
-     */
+    /** @var \BrowserDetector\Loader\CompanyLoaderInterface */
     private $companyLoader;
 
     /**
-     * BrowserFactory constructor.
-     *
      * @param \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader
      */
     public function __construct(CompanyLoaderInterface $companyLoader)

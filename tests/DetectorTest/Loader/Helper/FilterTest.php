@@ -20,11 +20,6 @@ final class FilterTest extends TestCase
     private const DATA_PATH = 'root';
 
     /**
-     * @var \org\bovigo\vfs\vfsStreamDirectory
-     */
-    private $root;
-
-    /**
      * @return void
      */
     protected function setUp(): void
@@ -39,7 +34,7 @@ final class FilterTest extends TestCase
             ],
         ];
 
-        $this->root = vfsStream::setup(self::DATA_PATH, null, $structure);
+        vfsStream::setup(self::DATA_PATH, null, $structure);
     }
 
     /**

@@ -17,14 +17,11 @@ use Psr\Log\LoggerInterface;
 use UaRequest\Constants;
 use UaRequest\GenericRequest;
 use UaRequest\GenericRequestFactory;
-use UaResult\Result\Result;
 use Zend\Diactoros\ServerRequestFactory;
 
 final class RequestBuilderTest extends TestCase
 {
-    /**
-     * @var \BrowserDetector\RequestBuilder
-     */
+    /** @var \BrowserDetector\RequestBuilder */
     private $object;
 
     /**
@@ -76,8 +73,8 @@ final class RequestBuilderTest extends TestCase
             ->method('emergency');
 
         /** @var \Psr\Log\LoggerInterface $logger */
-        /** @var \UaResult\Result\Result $result */
         $result = $this->object->buildRequest($logger, $useragent);
+        \assert($result instanceof GenericRequest, sprintf('$result should be an instance of %s, but is %s', GenericRequest::class, get_class($result)));
 
         self::assertInstanceOf(GenericRequest::class, $result);
     }
@@ -128,8 +125,8 @@ final class RequestBuilderTest extends TestCase
         $requestFactory = new GenericRequestFactory();
         $request        = $requestFactory->createRequestFromPsr7Message($message);
 
-        /** @var Result $result */
         $result = $this->object->buildRequest($logger, $request);
+        \assert($result instanceof GenericRequest, sprintf('$result should be an instance of %s, but is %s', GenericRequest::class, get_class($result)));
 
         self::assertInstanceOf(GenericRequest::class, $result);
     }
@@ -180,8 +177,8 @@ final class RequestBuilderTest extends TestCase
         $requestFactory = new GenericRequestFactory();
         $request        = $requestFactory->createRequestFromPsr7Message($message);
 
-        /** @var Result $result */
         $result = $this->object->buildRequest($logger, $request);
+        \assert($result instanceof GenericRequest, sprintf('$result should be an instance of %s, but is %s', GenericRequest::class, get_class($result)));
 
         self::assertInstanceOf(GenericRequest::class, $result);
     }

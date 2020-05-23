@@ -22,10 +22,6 @@ final class Tv implements TvInterface
      */
     public function isTvDevice(string $useragent): bool
     {
-        if (0 < preg_match('/boxee|ce-html|dlink\.dsm380|googletv|hbbtv|idl-6651n|kdl40ex720|netrangemmh|loewe;|smart-?tv|sonydtv|viera|xbox|espial|aquosbrowser|gxt_dongle_3188|lf1v\d{3}|apple tv|mxl661l32|nettv|netbox|philipstv|crkey|metz(?!ler)|(?<!xia)omi\/|netcast|netgem|webos\.tv|lgwebostv|; ?lge? ?;/i', $useragent)) {
-            return true;
-        }
-
-        return false;
+        return 0 < preg_match('/boxee|ce-html|dlink\.dsm380|googletv|hbbtv|idl-6651n|kdl40ex720|netrangemmh|loewe;|smart-?tv|sonydtv|viera|xbox|espial|aquosbrowser|gxt_dongle_3188|lf1v\d{3}|apple tv|mxl661l32|nettv|netbox|philipstv|crkey|metz(?!ler)|(?<!xia)omi\/|netcast|netgem|webos\.tv|lgwebostv|; ?lge? ?;/i', $useragent);
     }
 }

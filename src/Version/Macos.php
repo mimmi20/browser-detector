@@ -14,7 +14,6 @@ namespace BrowserDetector\Version;
 use MacosBuild\BuildException;
 use MacosBuild\MacosBuildInterface;
 use MacosBuild\NotFoundException;
-use Psr\Log\LoggerInterface;
 
 final class Macos implements VersionDetectorInterface
 {
@@ -130,31 +129,18 @@ final class Macos implements VersionDetectorInterface
         '/darwin\/1\.3\.1/i' => '10.0.0',
     ];
 
-    /**
-     * @var \Psr\Log\LoggerInterface
-     */
-    private $logger;
-
-    /**
-     * @var \BrowserDetector\Version\VersionFactoryInterface
-     */
+    /** @var \BrowserDetector\Version\VersionFactoryInterface */
     private $versionFactory;
 
-    /**
-     * @var \MacosBuild\MacosBuildInterface
-     */
+    /** @var \MacosBuild\MacosBuildInterface */
     private $macosBuild;
 
     /**
-     * ChromeOs constructor.
-     *
-     * @param \Psr\Log\LoggerInterface                         $logger
      * @param \BrowserDetector\Version\VersionFactoryInterface $versionFactory
      * @param \MacosBuild\MacosBuildInterface                  $macosBuild
      */
-    public function __construct(LoggerInterface $logger, VersionFactoryInterface $versionFactory, MacosBuildInterface $macosBuild)
+    public function __construct(VersionFactoryInterface $versionFactory, MacosBuildInterface $macosBuild)
     {
-        $this->logger         = $logger;
         $this->versionFactory = $versionFactory;
         $this->macosBuild     = $macosBuild;
     }

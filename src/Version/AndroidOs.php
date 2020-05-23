@@ -31,19 +31,13 @@ final class AndroidOs implements VersionDetectorInterface
         'platform:server_android,osversion:',
     ];
 
-    /**
-     * @var \Psr\Log\LoggerInterface
-     */
+    /** @var \Psr\Log\LoggerInterface */
     private $logger;
 
-    /**
-     * @var VersionFactoryInterface
-     */
+    /** @var VersionFactoryInterface */
     private $versionFactory;
 
     /**
-     * ChromeOs constructor.
-     *
      * @param \Psr\Log\LoggerInterface                         $logger
      * @param \BrowserDetector\Version\VersionFactoryInterface $versionFactory
      */

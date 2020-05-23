@@ -15,9 +15,7 @@ use Psr\SimpleCache\CacheInterface as PsrCacheInterface;
 
 final class Cache implements CacheInterface
 {
-    /**
-     * @var \Psr\SimpleCache\CacheInterface
-     */
+    /** @var \Psr\SimpleCache\CacheInterface */
     private $cache;
 
     /**

@@ -14,13 +14,10 @@ namespace BrowserDetectorTest\Version;
 use BrowserDetector\Version\Macos;
 use BrowserDetector\Version\MacosFactory;
 use PHPUnit\Framework\TestCase;
-use Psr\Log\NullLogger;
 
 final class MacosFactoryTest extends TestCase
 {
-    /**
-     * @var \BrowserDetector\Version\MacosFactory
-     */
+    /** @var \BrowserDetector\Version\MacosFactory */
     private $object;
 
     /**
@@ -36,9 +33,9 @@ final class MacosFactoryTest extends TestCase
      */
     public function testInvoke(): void
     {
-        /** @var MacosFactory $object */
         $object = $this->object;
-        $result = $object(new NullLogger());
+        \assert($object instanceof MacosFactory, sprintf('$object should be an instance of %s, but is %s', MacosFactory::class, get_class($object)));
+        $result = $object();
         self::assertInstanceOf(Macos::class, $result);
     }
 }

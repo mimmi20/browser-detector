@@ -21,14 +21,12 @@ use UaResult\Engine\EngineInterface;
 
 final class EngineFactory
 {
-    /**
-     * @var \BrowserDetector\Loader\CompanyLoaderInterface
-     */
+    use VersionFactoryTrait;
+
+    /** @var \BrowserDetector\Loader\CompanyLoaderInterface */
     private $companyLoader;
 
     /**
-     * BrowserFactory constructor.
-     *
      * @param \BrowserDetector\Loader\CompanyLoaderInterface   $companyLoader
      * @param \BrowserDetector\Version\VersionFactoryInterface $versionFactory
      */
@@ -71,6 +69,4 @@ final class EngineFactory
 
         return new Engine($name, $manufacturer, $version);
     }
-
-    use VersionFactoryTrait;
 }

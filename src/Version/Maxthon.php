@@ -19,19 +19,13 @@ final class Maxthon implements VersionDetectorInterface
     public const SEARCH_OLD = ['MyIE'];
     public const REGEX      = '/^v?(?<major>\d+)(?:[-|\.](?<minor>\d+))?(?:[-|\.](?<micro>\d+))?(?:[-|\.](?<patch>\d+))?(?:[-|\.](?<micropatch>\d+))?(?:[-_.+ ]?(?<stability>rc|alpha|a|beta|b|patch|pl?|stable|dev|d)[-_.+ ]?(?<build>\d*))?.*$/i';
 
-    /**
-     * @var \Psr\Log\LoggerInterface
-     */
+    /** @var \Psr\Log\LoggerInterface */
     private $logger;
 
-    /**
-     * @var \BrowserDetector\Version\VersionFactoryInterface
-     */
+    /** @var \BrowserDetector\Version\VersionFactoryInterface */
     private $versionFactory;
 
     /**
-     * ChromeOs constructor.
-     *
      * @param \Psr\Log\LoggerInterface                         $logger
      * @param \BrowserDetector\Version\VersionFactoryInterface $versionFactory
      */

@@ -17,14 +17,10 @@ use Psr\Log\LoggerInterface;
 
 final class RulefileParser implements RulefileParserInterface
 {
-    /**
-     * @var \JsonClass\JsonInterface
-     */
+    /** @var \JsonClass\JsonInterface */
     private $jsonParser;
 
-    /**
-     * @var \Psr\Log\LoggerInterface
-     */
+    /** @var \Psr\Log\LoggerInterface */
     private $logger;
 
     /**

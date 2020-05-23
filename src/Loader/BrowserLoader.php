@@ -21,24 +21,16 @@ use UaBrowserType\TypeLoader;
 
 final class BrowserLoader implements BrowserLoaderInterface
 {
-    /**
-     * @var \Psr\Log\LoggerInterface
-     */
+    /** @var \Psr\Log\LoggerInterface */
     private $logger;
 
-    /**
-     * @var \BrowserDetector\Parser\EngineParserInterface
-     */
+    /** @var \BrowserDetector\Parser\EngineParserInterface */
     private $engineParser;
 
-    /**
-     * @var \BrowserDetector\Loader\Helper\DataInterface
-     */
+    /** @var \BrowserDetector\Loader\Helper\DataInterface */
     private $initData;
 
-    /**
-     * @var \BrowserDetector\Loader\CompanyLoaderInterface
-     */
+    /** @var \BrowserDetector\Loader\CompanyLoaderInterface */
     private $companyLoader;
 
     /**

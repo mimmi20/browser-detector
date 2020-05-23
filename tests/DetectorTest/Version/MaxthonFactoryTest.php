@@ -18,9 +18,7 @@ use Psr\Log\NullLogger;
 
 final class MaxthonFactoryTest extends TestCase
 {
-    /**
-     * @var \BrowserDetector\Version\MaxthonFactory
-     */
+    /** @var \BrowserDetector\Version\MaxthonFactory */
     private $object;
 
     /**
@@ -36,8 +34,8 @@ final class MaxthonFactoryTest extends TestCase
      */
     public function testInvoke(): void
     {
-        /** @var MaxthonFactory $object */
         $object = $this->object;
+        \assert($object instanceof MaxthonFactory, sprintf('$object should be an instance of %s, but is %s', MaxthonFactory::class, get_class($object)));
         $result = $object(new NullLogger());
         self::assertInstanceOf(Maxthon::class, $result);
     }

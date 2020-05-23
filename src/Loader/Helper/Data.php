@@ -16,24 +16,16 @@ use JsonClass\JsonInterface;
 
 final class Data implements DataInterface
 {
-    /**
-     * @var \Iterator
-     */
+    /** @var \Iterator */
     private $finder;
 
-    /**
-     * @var array
-     */
+    /** @var array */
     private $items = [];
 
-    /**
-     * @var bool
-     */
+    /** @var bool */
     private $initialized = false;
 
-    /**
-     * @var \JsonClass\JsonInterface
-     */
+    /** @var \JsonClass\JsonInterface */
     private $json;
 
     /**
@@ -119,8 +111,6 @@ final class Data implements DataInterface
      *             </p>
      *             <p>
      *             The return value is cast to an integer.
-     *
-     * @since 5.1.0
      */
     public function count(): int
     {

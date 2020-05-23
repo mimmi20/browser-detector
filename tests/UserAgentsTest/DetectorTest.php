@@ -12,6 +12,7 @@ declare(strict_types = 1);
 namespace UserAgentsTest;
 
 use BrowserDetector\DetectorFactory;
+use BrowserDetector\Loader\CompanyLoader;
 use BrowserDetector\Loader\CompanyLoaderFactory;
 use BrowserDetector\Loader\Helper\Filter;
 use ExceptionalJSON\DecodeErrorException;
@@ -32,9 +33,7 @@ use UaResult\Result\ResultInterface;
 
 final class DetectorTest extends TestCase
 {
-    /**
-     * @var \BrowserDetector\Detector
-     */
+    /** @var \BrowserDetector\Detector */
     private $object;
 
     /**
@@ -42,6 +41,7 @@ final class DetectorTest extends TestCase
      * This method is called before a test is executed.
      *
      * @return void
+     *
      * @coversNothing
      */
     protected function setUp(): void
@@ -91,12 +91,13 @@ final class DetectorTest extends TestCase
      * @throws \UnexpectedValueException
      *
      * @return void
+     *
      * @coversNothing
      */
     public function testGetBrowser(array $headers, Result $expectedResult): void
     {
-        /** @var Result $result */
         $result = $this->object->__invoke($headers);
+        \assert($result instanceof ResultInterface, sprintf('$result should be an instance of %s, but is %s', ResultInterface::class, get_class($result)));
 
         try {
             $encodedHeaders = (new Json())->encode($headers, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
@@ -188,8 +189,8 @@ final class DetectorTest extends TestCase
 
         $companyLoaderFactory = new CompanyLoaderFactory($jsonParser, new Filter());
 
-        /** @var \BrowserDetector\Loader\CompanyLoader $companyLoader */
         $companyLoader = $companyLoaderFactory();
+        \assert($companyLoader instanceof CompanyLoader, sprintf('$companyLoader should be an instance of %s, but is %s', CompanyLoader::class, get_class($companyLoader)));
         $resultFactory = new ResultFactory($companyLoader);
 
         foreach ($finder as $file) {

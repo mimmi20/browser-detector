@@ -24,20 +24,13 @@ final class RulefileParserTest extends TestCase
     private const DATA_PATH = 'root';
 
     /**
-     * @var \org\bovigo\vfs\vfsStreamDirectory
-     */
-    private $root;
-
-    /**
      * @return void
      */
     protected function setUp(): void
     {
-        $structure = [
-            'bot.json' => 'test-content',
-        ];
+        $structure = ['bot.json' => 'test-content'];
 
-        $this->root = vfsStream::setup(self::DATA_PATH, null, $structure);
+        vfsStream::setup(self::DATA_PATH, null, $structure);
     }
 
     /**
@@ -157,7 +150,7 @@ final class RulefileParserTest extends TestCase
         $logger
             ->expects(self::once())
             ->method('error')
-            ->with(new IsInstanceOf(\Exception::class));
+            ->with(new IsInstanceOf(\Throwable::class));
         $logger
             ->expects(self::never())
             ->method('critical');
@@ -374,7 +367,7 @@ final class RulefileParserTest extends TestCase
         $logger
             ->expects(self::once())
             ->method('error')
-            ->with(new IsInstanceOf(\Exception::class));
+            ->with(new IsInstanceOf(\Throwable::class));
         $logger
             ->expects(self::never())
             ->method('critical');
@@ -447,7 +440,7 @@ final class RulefileParserTest extends TestCase
         $logger
             ->expects(self::once())
             ->method('error')
-            ->with(new IsInstanceOf(\Exception::class));
+            ->with(new IsInstanceOf(\Throwable::class));
         $logger
             ->expects(self::never())
             ->method('critical');
@@ -513,7 +506,7 @@ final class RulefileParserTest extends TestCase
         $logger
             ->expects(self::once())
             ->method('error')
-            ->with(new IsInstanceOf(\Exception::class));
+            ->with(new IsInstanceOf(\Throwable::class));
         $logger
             ->expects(self::never())
             ->method('critical');

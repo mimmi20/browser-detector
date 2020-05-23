@@ -22,14 +22,12 @@ use UaResult\Os\OsInterface;
 
 final class PlatformFactory
 {
-    /**
-     * @var \BrowserDetector\Loader\CompanyLoaderInterface
-     */
+    use VersionFactoryTrait;
+
+    /** @var \BrowserDetector\Loader\CompanyLoaderInterface */
     private $companyLoader;
 
     /**
-     * BrowserFactory constructor.
-     *
      * @param \BrowserDetector\Loader\CompanyLoaderInterface   $companyLoader
      * @param \BrowserDetector\Version\VersionFactoryInterface $versionFactory
      */
@@ -75,12 +73,14 @@ final class PlatformFactory
         }
 
         if (null !== $version->getVersion(VersionInterface::IGNORE_MICRO)) {
-            if ('Mac OS X' === $name
+            if (
+                'Mac OS X' === $name
                 && version_compare($version->getVersion(VersionInterface::IGNORE_MICRO), '10.12', '>=')
             ) {
                 $name          = 'macOS';
                 $marketingName = 'macOS';
-            } elseif ('iOS' === $name
+            } elseif (
+                'iOS' === $name
                 && version_compare($version->getVersion(VersionInterface::IGNORE_MICRO), '4.0', '<')
                 && version_compare($version->getVersion(VersionInterface::IGNORE_MICRO), '0.0', '>')
             ) {
@@ -91,6 +91,4 @@ final class PlatformFactory
 
         return new Os($name, $marketingName, $manufacturer, $version, $bits);
     }
-
-    use VersionFactoryTrait;
 }

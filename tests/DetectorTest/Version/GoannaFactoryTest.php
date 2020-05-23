@@ -18,9 +18,7 @@ use Psr\Log\NullLogger;
 
 final class GoannaFactoryTest extends TestCase
 {
-    /**
-     * @var \BrowserDetector\Version\GoannaFactory
-     */
+    /** @var \BrowserDetector\Version\GoannaFactory */
     private $object;
 
     /**
@@ -36,8 +34,8 @@ final class GoannaFactoryTest extends TestCase
      */
     public function testInvoke(): void
     {
-        /** @var GoannaFactory $object */
         $object = $this->object;
+        \assert($object instanceof GoannaFactory, sprintf('$object should be an instance of %s, but is %s', GoannaFactory::class, get_class($object)));
         $result = $object(new NullLogger());
         self::assertInstanceOf(Goanna::class, $result);
     }

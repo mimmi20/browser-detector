@@ -15,19 +15,13 @@ use Psr\Log\LoggerInterface;
 
 final class Trident implements VersionDetectorInterface
 {
-    /**
-     * @var \Psr\Log\LoggerInterface
-     */
+    /** @var \Psr\Log\LoggerInterface */
     private $logger;
 
-    /**
-     * @var \BrowserDetector\Version\VersionFactoryInterface
-     */
+    /** @var \BrowserDetector\Version\VersionFactoryInterface */
     private $versionFactory;
 
     /**
-     * ChromeOs constructor.
-     *
      * @param \Psr\Log\LoggerInterface                         $logger
      * @param \BrowserDetector\Version\VersionFactoryInterface $versionFactory
      */

@@ -27,24 +27,16 @@ use Psr\Log\LoggerInterface;
 
 final class DeviceParserFactory implements DeviceParserFactoryInterface
 {
-    /**
-     * @var \Psr\Log\LoggerInterface
-     */
+    /** @var \Psr\Log\LoggerInterface */
     private $logger;
 
-    /**
-     * @var \JsonClass\JsonInterface
-     */
+    /** @var \JsonClass\JsonInterface */
     private $jsonParser;
 
-    /**
-     * @var \BrowserDetector\Loader\CompanyLoaderInterface
-     */
+    /** @var \BrowserDetector\Loader\CompanyLoaderInterface */
     private $companyLoader;
 
-    /**
-     * @var \BrowserDetector\Parser\PlatformParserInterface
-     */
+    /** @var \BrowserDetector\Parser\PlatformParserInterface */
     private $platformParser;
 
     /**

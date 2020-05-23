@@ -20,14 +20,10 @@ use UaResult\Device\DisplayInterface;
 
 final class DisplayFactory implements DisplayFactoryInterface
 {
-    /**
-     * @var TypeLoaderInterface
-     */
+    /** @var TypeLoaderInterface */
     private $typeLoader;
 
     /**
-     * DisplayFactory constructor.
-     *
      * @param \UaDisplaySize\TypeLoaderInterface $typeLoader
      */
     public function __construct(TypeLoaderInterface $typeLoader)

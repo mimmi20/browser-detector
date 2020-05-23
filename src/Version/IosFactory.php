@@ -12,19 +12,15 @@ declare(strict_types = 1);
 namespace BrowserDetector\Version;
 
 use IosBuild\IosBuild;
-use Psr\Log\LoggerInterface;
 
 final class IosFactory implements IosFactoryInterface
 {
     /**
-     * @param \Psr\Log\LoggerInterface $logger
-     *
      * @return \BrowserDetector\Version\Ios
      */
-    public function __invoke(LoggerInterface $logger): Ios
+    public function __invoke(): Ios
     {
         return new Ios(
-            $logger,
             new VersionFactory(),
             new IosBuild()
         );

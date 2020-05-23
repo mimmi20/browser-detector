@@ -35,11 +35,7 @@ final class Filter implements FilterInterface
                     return false;
                 }
 
-                if ($current->getExtension() !== $extension) {
-                    return false;
-                }
-
-                return true;
+                return $current->getExtension() === $extension;
             }
         );
 

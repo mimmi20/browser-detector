@@ -18,9 +18,7 @@ use Psr\Log\NullLogger;
 
 final class RaspbianFactoryTest extends TestCase
 {
-    /**
-     * @var \BrowserDetector\Version\RaspbianFactory
-     */
+    /** @var \BrowserDetector\Version\RaspbianFactory */
     private $object;
 
     /**
@@ -36,8 +34,8 @@ final class RaspbianFactoryTest extends TestCase
      */
     public function testInvoke(): void
     {
-        /** @var RaspbianFactory $object */
         $object = $this->object;
+        \assert($object instanceof RaspbianFactory, sprintf('$object should be an instance of %s, but is %s', RaspbianFactory::class, get_class($object)));
         $result = $object(new NullLogger());
         self::assertInstanceOf(Raspbian::class, $result);
     }

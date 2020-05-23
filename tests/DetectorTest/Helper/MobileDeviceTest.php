@@ -16,9 +16,7 @@ use PHPUnit\Framework\TestCase;
 
 final class MobileDeviceTest extends TestCase
 {
-    /**
-     * @var \BrowserDetector\Helper\MobileDevice
-     */
+    /** @var \BrowserDetector\Helper\MobileDevice */
     private $object;
 
     /**

@@ -15,7 +15,6 @@ use BrowserDetector\Version\FirefoxOs;
 use BrowserDetector\Version\VersionFactory;
 use BrowserDetector\Version\VersionInterface;
 use PHPUnit\Framework\TestCase;
-use Psr\Log\LoggerInterface;
 
 final class FirefoxOsTest extends TestCase
 {
@@ -33,36 +32,7 @@ final class FirefoxOsTest extends TestCase
      */
     public function testTestdetectVersion(string $useragent, ?string $expectedVersion): void
     {
-        $logger = $this->getMockBuilder(LoggerInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
-        $logger
-            ->expects(self::never())
-            ->method('debug');
-        $logger
-            ->expects(self::never())
-            ->method('info');
-        $logger
-            ->expects(self::never())
-            ->method('notice');
-        $logger
-            ->expects(self::never())
-            ->method('warning');
-        $logger
-            ->expects(self::never())
-            ->method('error');
-        $logger
-            ->expects(self::never())
-            ->method('critical');
-        $logger
-            ->expects(self::never())
-            ->method('alert');
-        $logger
-            ->expects(self::never())
-            ->method('emergency');
-
-        /** @var LoggerInterface $logger */
-        $object = new FirefoxOs($logger, new VersionFactory());
+        $object = new FirefoxOs(new VersionFactory());
 
         $detectedVersion = $object->detectVersion($useragent);
 

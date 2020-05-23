@@ -20,24 +20,16 @@ final class EngineLoaderFactory implements EngineLoaderFactoryInterface
 {
     public const DATA_PATH = __DIR__ . '/../../data/engines';
 
-    /**
-     * @var \Psr\Log\LoggerInterface
-     */
+    /** @var \Psr\Log\LoggerInterface */
     private $logger;
 
-    /**
-     * @var \JsonClass\JsonInterface
-     */
+    /** @var \JsonClass\JsonInterface */
     private $jsonParser;
 
-    /**
-     * @var \BrowserDetector\Loader\CompanyLoaderInterface
-     */
+    /** @var \BrowserDetector\Loader\CompanyLoaderInterface */
     private $companyLoader;
 
-    /**
-     * @var \BrowserDetector\Loader\Helper\FilterInterface
-     */
+    /** @var \BrowserDetector\Loader\Helper\FilterInterface */
     private $filter;
 
     /**

@@ -15,6 +15,7 @@ use BrowserDetector\Helper\DesktopInterface;
 use BrowserDetector\Helper\MobileDeviceInterface;
 use BrowserDetector\Helper\TvInterface;
 use BrowserDetector\Loader\DeviceLoaderFactoryInterface;
+use BrowserDetector\Loader\DeviceLoaderInterface;
 use BrowserDetector\Parser\Device\DarwinParserInterface;
 use BrowserDetector\Parser\Device\DesktopParserInterface;
 use BrowserDetector\Parser\Device\MobileParserInterface;
@@ -22,47 +23,29 @@ use BrowserDetector\Parser\Device\TvParserInterface;
 
 final class DeviceParser implements DeviceParserInterface
 {
-    /**
-     * @var \BrowserDetector\Parser\Device\DarwinParserInterface
-     */
+    /** @var \BrowserDetector\Parser\Device\DarwinParserInterface */
     private $darwinParser;
 
-    /**
-     * @var \BrowserDetector\Parser\Device\MobileParserInterface
-     */
+    /** @var \BrowserDetector\Parser\Device\MobileParserInterface */
     private $mobileParser;
 
-    /**
-     * @var \BrowserDetector\Parser\Device\TvParserInterface
-     */
+    /** @var \BrowserDetector\Parser\Device\TvParserInterface */
     private $tvParser;
 
-    /**
-     * @var \BrowserDetector\Parser\Device\DesktopParserInterface
-     */
+    /** @var \BrowserDetector\Parser\Device\DesktopParserInterface */
     private $desktopParser;
 
-    /**
-     * @var \BrowserDetector\Loader\DeviceLoaderFactoryInterface
-     */
+    /** @var \BrowserDetector\Loader\DeviceLoaderFactoryInterface */
     private $loaderFactory;
 
-    /**
-     * @var \BrowserDetector\Helper\MobileDeviceInterface
-     */
+    /** @var \BrowserDetector\Helper\MobileDeviceInterface */
     private $mobileDevice;
-    /**
-     * @var \BrowserDetector\Helper\TvInterface
-     */
+    /** @var \BrowserDetector\Helper\TvInterface */
     private $tvDevice;
-    /**
-     * @var \BrowserDetector\Helper\DesktopInterface
-     */
+    /** @var \BrowserDetector\Helper\DesktopInterface */
     private $desktopDevice;
 
     /**
-     * DeviceParser constructor.
-     *
      * @param \BrowserDetector\Parser\Device\DarwinParserInterface  $darwinParser
      * @param \BrowserDetector\Parser\Device\MobileParserInterface  $mobileParser
      * @param \BrowserDetector\Parser\Device\TvParserInterface      $tvParser
@@ -108,7 +91,8 @@ final class DeviceParser implements DeviceParserInterface
             return $this->load('unknown', 'unknown', $useragent);
         }
 
-        if (0 === preg_match('/freebsd|raspbian/i', $useragent)
+        if (
+            0 === preg_match('/freebsd|raspbian/i', $useragent)
             && 0 < preg_match('/darwin|cfnetwork/i', $useragent)
         ) {
             return $this->darwinParser->parse($useragent);
@@ -143,8 +127,8 @@ final class DeviceParser implements DeviceParserInterface
     {
         $loaderFactory = $this->loaderFactory;
 
-        /** @var \BrowserDetector\Loader\DeviceLoader $loader */
         $loader = $loaderFactory($company);
+        \assert($loader instanceof DeviceLoaderInterface, sprintf('$loader should be an instance of %s, but is %s', DeviceLoaderInterface::class, get_class($loader)));
 
         return $loader->load($key, $useragent);
     }

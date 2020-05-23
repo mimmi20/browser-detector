@@ -12,18 +12,15 @@ declare(strict_types = 1);
 namespace BrowserDetector\Parser\Device;
 
 use BrowserDetector\Loader\DeviceLoaderFactoryInterface;
+use BrowserDetector\Loader\DeviceLoaderInterface;
 use BrowserDetector\Parser\Helper\RulefileParserInterface;
 
 final class MobileParser implements MobileParserInterface
 {
-    /**
-     * @var \BrowserDetector\Loader\DeviceLoaderFactoryInterface
-     */
+    /** @var \BrowserDetector\Loader\DeviceLoaderFactoryInterface */
     private $loaderFactory;
 
-    /**
-     * @var \BrowserDetector\Parser\Helper\RulefileParserInterface
-     */
+    /** @var \BrowserDetector\Parser\Helper\RulefileParserInterface */
     private $fileParser;
 
     private const GENERIC_FILE  = __DIR__ . '/../../../data/factories/devices/mobile.json';
@@ -80,8 +77,8 @@ final class MobileParser implements MobileParserInterface
     {
         $loaderFactory = $this->loaderFactory;
 
-        /** @var \BrowserDetector\Loader\DeviceLoader $loader */
         $loader = $loaderFactory($company);
+        \assert($loader instanceof DeviceLoaderInterface, sprintf('$loader should be an instance of %s, but is %s', DeviceLoaderInterface::class, get_class($loader)));
 
         return $loader->load($key, $useragent);
     }
