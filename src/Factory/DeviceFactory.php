@@ -25,24 +25,16 @@ use UaResult\Device\DeviceInterface;
  */
 final class DeviceFactory
 {
-    /**
-     * @var \UaDeviceType\TypeLoaderInterface
-     */
+    /** @var \UaDeviceType\TypeLoaderInterface */
     private $typeLoader;
 
-    /**
-     * @var \BrowserDetector\Loader\CompanyLoaderInterface
-     */
+    /** @var \BrowserDetector\Loader\CompanyLoaderInterface */
     private $companyLoader;
 
-    /**
-     * @var \BrowserDetector\Factory\DisplayFactoryInterface
-     */
+    /** @var \BrowserDetector\Factory\DisplayFactoryInterface */
     private $displayFactory;
 
     /**
-     * BrowserFactory constructor.
-     *
      * @param \BrowserDetector\Loader\CompanyLoaderInterface   $companyLoader
      * @param \UaDeviceType\TypeLoaderInterface                $typeLoader
      * @param \BrowserDetector\Factory\DisplayFactoryInterface $displayFactory

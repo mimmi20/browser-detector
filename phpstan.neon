@@ -30,6 +30,8 @@ parameters:
     - '~Useless \@throws~'
     - '~Missing \@throws~'
     - '~Error suppression via "@" should not be used~'
+    - '~Call to function assert\(\) with true and string will always evaluate to true~'
+    - '~Instanceof between .* and .* will always evaluate to true~'
 includes:
   - vendor/phpstan/phpstan-strict-rules/rules.neon
   - vendor/phpstan/phpstan-phpunit/extension.neon

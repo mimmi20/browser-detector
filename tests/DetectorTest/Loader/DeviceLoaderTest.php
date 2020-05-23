@@ -466,13 +466,13 @@ final class DeviceLoaderTest extends TestCase
 
         self::assertIsArray($result);
         self::assertArrayHasKey(0, $result);
-        /** @var DeviceInterface $deviceResult */
         $deviceResult = $result[0];
+        \assert($deviceResult instanceof DeviceInterface, sprintf('$deviceResult should be an instance of %s, but is %s', DeviceInterface::class, get_class($deviceResult)));
         self::assertInstanceOf(DeviceInterface::class, $deviceResult);
 
         self::assertArrayHasKey(1, $result);
-        /** @var OsInterface $platformResult */
         $platformResult = $result[1];
+        \assert($platformResult instanceof OsInterface, sprintf('$platformResult should be an instance of %s, but is %s', OsInterface::class, get_class($platformResult)));
         self::assertInstanceOf(OsInterface::class, $platformResult);
         self::assertSame($platform, $platformResult);
 

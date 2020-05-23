@@ -18,9 +18,7 @@ use Psr\Log\NullLogger;
 
 final class SafariFactoryTest extends TestCase
 {
-    /**
-     * @var \BrowserDetector\Version\SafariFactory
-     */
+    /** @var \BrowserDetector\Version\SafariFactory */
     private $object;
 
     /**
@@ -36,8 +34,8 @@ final class SafariFactoryTest extends TestCase
      */
     public function testInvoke(): void
     {
-        /** @var SafariFactory $object */
         $object = $this->object;
+        \assert($object instanceof SafariFactory, sprintf('$object should be an instance of %s, but is %s', SafariFactory::class, get_class($object)));
         $result = $object(new NullLogger());
         self::assertInstanceOf(Safari::class, $result);
     }

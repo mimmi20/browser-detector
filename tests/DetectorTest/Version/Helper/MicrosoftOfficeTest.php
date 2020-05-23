@@ -16,9 +16,7 @@ use PHPUnit\Framework\TestCase;
 
 final class MicrosoftOfficeTest extends TestCase
 {
-    /**
-     * @var \BrowserDetector\Version\Helper\MicrosoftOffice
-     */
+    /** @var \BrowserDetector\Version\Helper\MicrosoftOffice */
     private $object;
 
     /**

@@ -18,9 +18,7 @@ use Psr\Log\NullLogger;
 
 final class FriendicaFactoryTest extends TestCase
 {
-    /**
-     * @var \BrowserDetector\Version\FriendicaFactory
-     */
+    /** @var \BrowserDetector\Version\FriendicaFactory */
     private $object;
 
     /**
@@ -36,8 +34,8 @@ final class FriendicaFactoryTest extends TestCase
      */
     public function testInvoke(): void
     {
-        /** @var FriendicaFactory $object */
         $object = $this->object;
+        \assert($object instanceof FriendicaFactory, sprintf('$object should be an instance of %s, but is %s', FriendicaFactory::class, get_class($object)));
         $result = $object(new NullLogger());
         self::assertInstanceOf(Friendica::class, $result);
     }

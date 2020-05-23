@@ -23,19 +23,15 @@ use UaResult\Company\Company;
 
 final class BrowserFactory
 {
-    /**
-     * @var \UaBrowserType\TypeLoaderInterface
-     */
+    use VersionFactoryTrait;
+
+    /** @var \UaBrowserType\TypeLoaderInterface */
     private $typeLoader;
 
-    /**
-     * @var \BrowserDetector\Loader\CompanyLoaderInterface
-     */
+    /** @var \BrowserDetector\Loader\CompanyLoaderInterface */
     private $companyLoader;
 
     /**
-     * BrowserFactory constructor.
-     *
      * @param \BrowserDetector\Loader\CompanyLoaderInterface   $companyLoader
      * @param \BrowserDetector\Version\VersionFactoryInterface $versionFactory
      * @param \UaBrowserType\TypeLoaderInterface               $typeLoader
@@ -96,6 +92,4 @@ final class BrowserFactory
 
         return new Browser($name, $manufacturer, $version, $type, $bits, $modus);
     }
-
-    use VersionFactoryTrait;
 }

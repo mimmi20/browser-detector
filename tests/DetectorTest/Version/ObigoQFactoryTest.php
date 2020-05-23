@@ -18,9 +18,7 @@ use Psr\Log\NullLogger;
 
 final class ObigoQFactoryTest extends TestCase
 {
-    /**
-     * @var \BrowserDetector\Version\ObigoQFactory
-     */
+    /** @var \BrowserDetector\Version\ObigoQFactory */
     private $object;
 
     /**
@@ -36,8 +34,8 @@ final class ObigoQFactoryTest extends TestCase
      */
     public function testInvoke(): void
     {
-        /** @var ObigoQFactory $object */
         $object = $this->object;
+        \assert($object instanceof ObigoQFactory, sprintf('$object should be an instance of %s, but is %s', ObigoQFactory::class, get_class($object)));
         $result = $object(new NullLogger());
         self::assertInstanceOf(ObigoQ::class, $result);
     }

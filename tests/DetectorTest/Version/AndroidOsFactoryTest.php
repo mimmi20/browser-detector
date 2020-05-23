@@ -18,9 +18,7 @@ use Psr\Log\NullLogger;
 
 final class AndroidOsFactoryTest extends TestCase
 {
-    /**
-     * @var \BrowserDetector\Version\AndroidOsFactory
-     */
+    /** @var \BrowserDetector\Version\AndroidOsFactory */
     private $object;
 
     /**
@@ -36,8 +34,8 @@ final class AndroidOsFactoryTest extends TestCase
      */
     public function testInvoke(): void
     {
-        /** @var AndroidOsFactory $object */
         $object = $this->object;
+        \assert($object instanceof AndroidOsFactory, sprintf('$object should be an instance of %s, but is %s', AndroidOsFactory::class, get_class($object)));
         $result = $object(new NullLogger());
         self::assertInstanceOf(AndroidOs::class, $result);
     }

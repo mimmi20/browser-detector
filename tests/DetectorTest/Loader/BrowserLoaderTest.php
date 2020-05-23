@@ -553,12 +553,12 @@ final class BrowserLoaderTest extends TestCase
 
         self::assertIsArray($result);
         self::assertArrayHasKey(0, $result);
-        /** @var BrowserInterface $browserResult */
         $browserResult = $result[0];
+        \assert($browserResult instanceof BrowserInterface, sprintf('$browserResult should be an instance of %s, but is %s', BrowserInterface::class, get_class($browserResult)));
         self::assertInstanceOf(BrowserInterface::class, $browserResult);
         self::assertArrayHasKey(1, $result);
-        /** @var EngineInterface $engineResult */
         $engineResult = $result[1];
+        \assert($engineResult instanceof EngineInterface, sprintf('$engineResult should be an instance of %s, but is %s', EngineInterface::class, get_class($engineResult)));
         self::assertInstanceOf(EngineInterface::class, $engineResult);
 
         self::assertSame('test-browser', $browserResult->getName());

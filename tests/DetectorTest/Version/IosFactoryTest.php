@@ -14,13 +14,10 @@ namespace BrowserDetectorTest\Version;
 use BrowserDetector\Version\Ios;
 use BrowserDetector\Version\IosFactory;
 use PHPUnit\Framework\TestCase;
-use Psr\Log\NullLogger;
 
 final class IosFactoryTest extends TestCase
 {
-    /**
-     * @var \BrowserDetector\Version\IosFactory
-     */
+    /** @var \BrowserDetector\Version\IosFactory */
     private $object;
 
     /**
@@ -36,9 +33,9 @@ final class IosFactoryTest extends TestCase
      */
     public function testInvoke(): void
     {
-        /** @var IosFactory $object */
         $object = $this->object;
-        $result = $object(new NullLogger());
+        \assert($object instanceof IosFactory, sprintf('$object should be an instance of %s, but is %s', IosFactory::class, get_class($object)));
+        $result = $object();
         self::assertInstanceOf(Ios::class, $result);
     }
 }

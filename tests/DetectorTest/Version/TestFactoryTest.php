@@ -18,9 +18,7 @@ use Psr\Log\NullLogger;
 
 final class TestFactoryTest extends TestCase
 {
-    /**
-     * @var \BrowserDetector\Version\TestFactory
-     */
+    /** @var \BrowserDetector\Version\TestFactory */
     private $object;
 
     /**
@@ -36,8 +34,8 @@ final class TestFactoryTest extends TestCase
      */
     public function testInvoke(): void
     {
-        /** @var TestFactory $object */
         $object = $this->object;
+        \assert($object instanceof TestFactory, sprintf('$object should be an instance of %s, but is %s', TestFactory::class, get_class($object)));
         $result = $object(new NullLogger());
         self::assertInstanceOf(Test::class, $result);
     }

@@ -21,29 +21,19 @@ final class BrowserLoaderFactory implements BrowserLoaderFactoryInterface
 {
     public const DATA_PATH = __DIR__ . '/../../data/browsers';
 
-    /**
-     * @var \Psr\Log\LoggerInterface
-     */
+    /** @var \Psr\Log\LoggerInterface */
     private $logger;
 
-    /**
-     * @var \JsonClass\JsonInterface
-     */
+    /** @var \JsonClass\JsonInterface */
     private $jsonParser;
 
-    /**
-     * @var \BrowserDetector\Parser\EngineParserInterface
-     */
+    /** @var \BrowserDetector\Parser\EngineParserInterface */
     private $engineParser;
 
-    /**
-     * @var \BrowserDetector\Loader\CompanyLoaderInterface
-     */
+    /** @var \BrowserDetector\Loader\CompanyLoaderInterface */
     private $companyLoader;
 
-    /**
-     * @var \BrowserDetector\Loader\Helper\FilterInterface
-     */
+    /** @var \BrowserDetector\Loader\Helper\FilterInterface */
     private $filter;
 
     /**

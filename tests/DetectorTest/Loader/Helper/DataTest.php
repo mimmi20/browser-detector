@@ -22,11 +22,6 @@ final class DataTest extends TestCase
     private const DATA_PATH = 'root';
 
     /**
-     * @var \org\bovigo\vfs\vfsStreamDirectory
-     */
-    private $root;
-
-    /**
      * @return void
      */
     protected function setUp(): void
@@ -36,7 +31,7 @@ final class DataTest extends TestCase
             'tool.json' => '{"key2": "value2"}',
         ];
 
-        $this->root = vfsStream::setup(self::DATA_PATH, null, $structure);
+        vfsStream::setup(self::DATA_PATH, null, $structure);
     }
 
     /**
@@ -69,6 +64,7 @@ final class DataTest extends TestCase
                     if (0 === $i) {
                         $return = true;
                     }
+
                     ++$i;
 
                     return $return;
@@ -130,6 +126,7 @@ final class DataTest extends TestCase
                     if (1 >= $i) {
                         $return = true;
                     }
+
                     ++$i;
 
                     return $return;

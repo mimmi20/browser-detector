@@ -18,9 +18,7 @@ use Psr\Log\NullLogger;
 
 final class DebianFactoryTest extends TestCase
 {
-    /**
-     * @var \BrowserDetector\Version\DebianFactory
-     */
+    /** @var \BrowserDetector\Version\DebianFactory */
     private $object;
 
     /**
@@ -36,8 +34,8 @@ final class DebianFactoryTest extends TestCase
      */
     public function testInvoke(): void
     {
-        /** @var DebianFactory $object */
         $object = $this->object;
+        \assert($object instanceof DebianFactory, sprintf('$object should be an instance of %s, but is %s', DebianFactory::class, get_class($object)));
         $result = $object(new NullLogger());
         self::assertInstanceOf(Debian::class, $result);
     }

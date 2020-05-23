@@ -16,9 +16,7 @@ use PHPUnit\Framework\TestCase;
 
 final class DesktopTest extends TestCase
 {
-    /**
-     * @var \BrowserDetector\Helper\Desktop
-     */
+    /** @var \BrowserDetector\Helper\Desktop */
     private $object;
 
     /**

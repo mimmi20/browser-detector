@@ -12,26 +12,21 @@ declare(strict_types = 1);
 namespace BrowserDetector\Parser;
 
 use BrowserDetector\Loader\EngineLoaderFactoryInterface;
+use BrowserDetector\Loader\EngineLoaderInterface;
 use BrowserDetector\Parser\Helper\RulefileParserInterface;
 use UaResult\Engine\EngineInterface;
 
 final class EngineParser implements EngineParserInterface
 {
-    /**
-     * @var \BrowserDetector\Loader\EngineLoaderFactoryInterface
-     */
+    /** @var \BrowserDetector\Loader\EngineLoaderFactoryInterface */
     private $loaderFactory;
 
-    /**
-     * @var \BrowserDetector\Parser\Helper\RulefileParserInterface
-     */
+    /** @var \BrowserDetector\Parser\Helper\RulefileParserInterface */
     private $fileParser;
 
     private const GENERIC_FILE = __DIR__ . '/../../data/factories/engines.json';
 
     /**
-     * EngineParser constructor.
-     *
      * @param \BrowserDetector\Loader\EngineLoaderFactoryInterface   $loaderFactory
      * @param \BrowserDetector\Parser\Helper\RulefileParserInterface $fileParser
      */
@@ -77,8 +72,8 @@ final class EngineParser implements EngineParserInterface
     {
         $loaderFactory = $this->loaderFactory;
 
-        /** @var \BrowserDetector\Loader\EngineLoader $loader */
         $loader = $loaderFactory();
+        \assert($loader instanceof EngineLoaderInterface, sprintf('$loader should be an instance of %s, but is %s', EngineLoaderInterface::class, get_class($loader)));
 
         return $loader->load($key, $useragent);
     }

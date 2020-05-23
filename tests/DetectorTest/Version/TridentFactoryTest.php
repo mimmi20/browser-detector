@@ -18,9 +18,7 @@ use Psr\Log\NullLogger;
 
 final class TridentFactoryTest extends TestCase
 {
-    /**
-     * @var \BrowserDetector\Version\TridentFactory
-     */
+    /** @var \BrowserDetector\Version\TridentFactory */
     private $object;
 
     /**
@@ -36,8 +34,8 @@ final class TridentFactoryTest extends TestCase
      */
     public function testInvoke(): void
     {
-        /** @var TridentFactory $object */
         $object = $this->object;
+        \assert($object instanceof TridentFactory, sprintf('$object should be an instance of %s, but is %s', TridentFactory::class, get_class($object)));
         $result = $object(new NullLogger());
         self::assertInstanceOf(Trident::class, $result);
     }

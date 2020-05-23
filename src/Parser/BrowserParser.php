@@ -12,26 +12,21 @@ declare(strict_types = 1);
 namespace BrowserDetector\Parser;
 
 use BrowserDetector\Loader\BrowserLoaderFactoryInterface;
+use BrowserDetector\Loader\BrowserLoaderInterface;
 use BrowserDetector\Parser\Helper\RulefileParserInterface;
 
 final class BrowserParser implements BrowserParserInterface
 {
-    /**
-     * @var \BrowserDetector\Loader\BrowserLoaderFactoryInterface
-     */
+    /** @var \BrowserDetector\Loader\BrowserLoaderFactoryInterface */
     private $loaderFactory;
 
-    /**
-     * @var \BrowserDetector\Parser\Helper\RulefileParserInterface
-     */
+    /** @var \BrowserDetector\Parser\Helper\RulefileParserInterface */
     private $fileParser;
 
     private const GENERIC_FILE  = __DIR__ . '/../../data/factories/browsers.json';
     private const SPECIFIC_FILE = __DIR__ . '/../../data/factories/browsers/%s.json';
 
     /**
-     * BrowserParser constructor.
-     *
      * @param \BrowserDetector\Loader\BrowserLoaderFactoryInterface  $loaderFactory
      * @param \BrowserDetector\Parser\Helper\RulefileParserInterface $fileParser
      */
@@ -83,8 +78,8 @@ final class BrowserParser implements BrowserParserInterface
     {
         $loaderFactory = $this->loaderFactory;
 
-        /** @var \BrowserDetector\Loader\BrowserLoader $loader */
         $loader = $loaderFactory();
+        \assert($loader instanceof BrowserLoaderInterface, sprintf('$loader should be an instance of %s, but is %s', BrowserLoaderInterface::class, get_class($loader)));
 
         return $loader->load($key, $useragent);
     }

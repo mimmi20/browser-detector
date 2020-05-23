@@ -19,14 +19,10 @@ final class CompanyLoaderFactory implements CompanyLoaderFactoryInterface
 {
     public const DATA_PATH = __DIR__ . '/../../data/companies';
 
-    /**
-     * @var \JsonClass\JsonInterface
-     */
+    /** @var \JsonClass\JsonInterface */
     private $jsonParser;
 
-    /**
-     * @var \BrowserDetector\Loader\Helper\FilterInterface
-     */
+    /** @var \BrowserDetector\Loader\Helper\FilterInterface */
     private $filter;
 
     /**

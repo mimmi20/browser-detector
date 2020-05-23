@@ -16,7 +16,6 @@ use BrowserDetector\Version\VersionFactory;
 use BrowserDetector\Version\VersionInterface;
 use IosBuild\IosBuild;
 use PHPUnit\Framework\TestCase;
-use Psr\Log\LoggerInterface;
 
 final class IosTest extends TestCase
 {
@@ -35,36 +34,7 @@ final class IosTest extends TestCase
      */
     public function testTestdetectVersion(string $useragent, ?string $expectedVersion): void
     {
-        $logger = $this->getMockBuilder(LoggerInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
-        $logger
-            ->expects(self::never())
-            ->method('debug');
-        $logger
-            ->expects(self::never())
-            ->method('info');
-        $logger
-            ->expects(self::never())
-            ->method('notice');
-        $logger
-            ->expects(self::never())
-            ->method('warning');
-        $logger
-            ->expects(self::never())
-            ->method('error');
-        $logger
-            ->expects(self::never())
-            ->method('critical');
-        $logger
-            ->expects(self::never())
-            ->method('alert');
-        $logger
-            ->expects(self::never())
-            ->method('emergency');
-
-        /** @var LoggerInterface $logger */
-        $object = new Ios($logger, new VersionFactory(), new IosBuild());
+        $object = new Ios(new VersionFactory(), new IosBuild());
 
         $detectedVersion = $object->detectVersion($useragent);
 

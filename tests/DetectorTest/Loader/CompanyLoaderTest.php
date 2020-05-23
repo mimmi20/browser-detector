@@ -16,6 +16,7 @@ use BrowserDetector\Loader\Helper\Data;
 use BrowserDetector\Loader\Helper\DataInterface;
 use BrowserDetector\Loader\NotFoundException;
 use PHPUnit\Framework\TestCase;
+use UaResult\Company\CompanyInterface;
 
 /**
  * Test class for \BrowserDetector\Loader\CompanyLoader
@@ -131,10 +132,10 @@ final class CompanyLoaderTest extends TestCase
         /** @var Data $data */
         $object = new CompanyLoader($data);
 
-        /** @var \UaResult\Company\CompanyInterface $result */
         $result = $object->load($companyKey);
+        \assert($result instanceof CompanyInterface, sprintf('$result should be an instance of %s, but is %s', CompanyInterface::class, get_class($result)));
 
-        self::assertInstanceOf(\UaResult\Company\CompanyInterface::class, $result);
+        self::assertInstanceOf(CompanyInterface::class, $result);
 
         self::assertSame(
             $companyName,

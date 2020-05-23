@@ -12,27 +12,22 @@ declare(strict_types = 1);
 namespace BrowserDetector\Parser;
 
 use BrowserDetector\Loader\PlatformLoaderFactoryInterface;
+use BrowserDetector\Loader\PlatformLoaderInterface;
 use BrowserDetector\Parser\Helper\RulefileParserInterface;
 use UaResult\Os\OsInterface;
 
 final class PlatformParser implements PlatformParserInterface
 {
-    /**
-     * @var \BrowserDetector\Loader\PlatformLoaderFactoryInterface
-     */
+    /** @var \BrowserDetector\Loader\PlatformLoaderFactoryInterface */
     private $loaderFactory;
 
-    /**
-     * @var \BrowserDetector\Parser\Helper\RulefileParserInterface
-     */
+    /** @var \BrowserDetector\Parser\Helper\RulefileParserInterface */
     private $fileParser;
 
     private const GENERIC_FILE  = __DIR__ . '/../../data/factories/platforms.json';
     private const SPECIFIC_FILE = __DIR__ . '/../../data/factories/platforms/%s.json';
 
     /**
-     * PlatformParser constructor.
-     *
      * @param \BrowserDetector\Loader\PlatformLoaderFactoryInterface $loaderFactory
      * @param \BrowserDetector\Parser\Helper\RulefileParserInterface $fileParser
      */
@@ -84,8 +79,8 @@ final class PlatformParser implements PlatformParserInterface
     {
         $loaderFactory = $this->loaderFactory;
 
-        /** @var \BrowserDetector\Loader\PlatformLoader $loader */
         $loader = $loaderFactory();
+        \assert($loader instanceof PlatformLoaderInterface, sprintf('$loader should be an instance of %s, but is %s', PlatformLoaderInterface::class, get_class($loader)));
 
         return $loader->load($key, $useragent);
     }

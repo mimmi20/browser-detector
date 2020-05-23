@@ -17,19 +17,13 @@ final class WindowsMobileOs implements VersionDetectorInterface
 {
     public const SEARCHES = ['Windows Mobile', 'Windows Phone'];
 
-    /**
-     * @var \Psr\Log\LoggerInterface
-     */
+    /** @var \Psr\Log\LoggerInterface */
     private $logger;
 
-    /**
-     * @var \BrowserDetector\Version\VersionFactoryInterface
-     */
+    /** @var \BrowserDetector\Version\VersionFactoryInterface */
     private $versionFactory;
 
     /**
-     * ChromeOs constructor.
-     *
      * @param \Psr\Log\LoggerInterface                         $logger
      * @param \BrowserDetector\Version\VersionFactoryInterface $versionFactory
      */

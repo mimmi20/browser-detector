@@ -11,8 +11,6 @@
 declare(strict_types = 1);
 namespace BrowserDetector\Version;
 
-use Psr\Log\LoggerInterface;
-
 final class FirefoxOs implements VersionDetectorInterface
 {
     private const SEARCHES = [
@@ -27,25 +25,14 @@ final class FirefoxOs implements VersionDetectorInterface
         '18.0' => '1.0',
     ];
 
-    /**
-     * @var \Psr\Log\LoggerInterface
-     */
-    private $logger;
-
-    /**
-     * @var \BrowserDetector\Version\VersionFactoryInterface
-     */
+    /** @var \BrowserDetector\Version\VersionFactoryInterface */
     private $versionFactory;
 
     /**
-     * ChromeOs constructor.
-     *
-     * @param \Psr\Log\LoggerInterface                         $logger
      * @param \BrowserDetector\Version\VersionFactoryInterface $versionFactory
      */
-    public function __construct(LoggerInterface $logger, VersionFactoryInterface $versionFactory)
+    public function __construct(VersionFactoryInterface $versionFactory)
     {
-        $this->logger         = $logger;
         $this->versionFactory = $versionFactory;
     }
 

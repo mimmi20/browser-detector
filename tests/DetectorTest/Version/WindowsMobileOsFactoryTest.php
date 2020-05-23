@@ -18,9 +18,7 @@ use Psr\Log\NullLogger;
 
 final class WindowsMobileOsFactoryTest extends TestCase
 {
-    /**
-     * @var \BrowserDetector\Version\WindowsMobileOsFactory
-     */
+    /** @var \BrowserDetector\Version\WindowsMobileOsFactory */
     private $object;
 
     /**
@@ -36,8 +34,8 @@ final class WindowsMobileOsFactoryTest extends TestCase
      */
     public function testInvoke(): void
     {
-        /** @var WindowsMobileOsFactory $object */
         $object = $this->object;
+        \assert($object instanceof WindowsMobileOsFactory, sprintf('$object should be an instance of %s, but is %s', WindowsMobileOsFactory::class, get_class($object)));
         $result = $object(new NullLogger());
         self::assertInstanceOf(WindowsMobileOs::class, $result);
     }

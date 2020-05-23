@@ -17,9 +17,7 @@ use UaResult\Company\CompanyInterface;
 
 final class CompanyLoader implements CompanyLoaderInterface
 {
-    /**
-     * @var \BrowserDetector\Loader\Helper\DataInterface
-     */
+    /** @var \BrowserDetector\Loader\Helper\DataInterface */
     private $initData;
 
     /**

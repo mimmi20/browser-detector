@@ -16,9 +16,7 @@ use PHPUnit\Framework\TestCase;
 
 final class TvTest extends TestCase
 {
-    /**
-     * @var \BrowserDetector\Helper\Tv
-     */
+    /** @var \BrowserDetector\Helper\Tv */
     private $object;
 
     /**

@@ -18,9 +18,7 @@ use Psr\Log\NullLogger;
 
 final class ChromeOsFactoryTest extends TestCase
 {
-    /**
-     * @var \BrowserDetector\Version\ChromeOsFactory
-     */
+    /** @var \BrowserDetector\Version\ChromeOsFactory */
     private $object;
 
     /**
@@ -36,8 +34,8 @@ final class ChromeOsFactoryTest extends TestCase
      */
     public function testInvoke(): void
     {
-        /** @var ChromeOsFactory $object */
         $object = $this->object;
+        \assert($object instanceof ChromeOsFactory, sprintf('$object should be an instance of %s, but is %s', ChromeOsFactory::class, get_class($object)));
         $result = $object(new NullLogger());
         self::assertInstanceOf(ChromeOs::class, $result);
     }

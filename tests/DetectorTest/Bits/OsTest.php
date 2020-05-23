@@ -16,9 +16,7 @@ use PHPUnit\Framework\TestCase;
 
 final class OsTest extends TestCase
 {
-    /**
-     * @var \BrowserDetector\Bits\Os
-     */
+    /** @var \BrowserDetector\Bits\Os */
     private $object;
 
     /**

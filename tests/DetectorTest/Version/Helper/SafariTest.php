@@ -17,9 +17,7 @@ use PHPUnit\Framework\TestCase;
 
 final class SafariTest extends TestCase
 {
-    /**
-     * @var \BrowserDetector\Version\Helper\Safari
-     */
+    /** @var \BrowserDetector\Version\Helper\Safari */
     private $object;
 
     /**

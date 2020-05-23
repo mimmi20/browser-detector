@@ -20,19 +20,13 @@ use Psr\Log\LoggerInterface;
 
 final class PlatformParserFactory implements PlatformParserFactoryInterface
 {
-    /**
-     * @var LoggerInterface
-     */
+    /** @var LoggerInterface */
     private $logger;
 
-    /**
-     * @var JsonInterface
-     */
+    /** @var JsonInterface */
     private $jsonParser;
 
-    /**
-     * @var CompanyLoaderInterface
-     */
+    /** @var CompanyLoaderInterface */
     private $companyLoader;
 
     /**

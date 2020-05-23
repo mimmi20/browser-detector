@@ -39,34 +39,22 @@ final class Detector implements DetectorInterface
      */
     private $logger;
 
-    /**
-     * @var \BrowserDetector\Cache\CacheInterface
-     */
+    /** @var \BrowserDetector\Cache\CacheInterface */
     private $cache;
 
-    /**
-     * @var \BrowserDetector\Parser\DeviceParserInterface
-     */
+    /** @var \BrowserDetector\Parser\DeviceParserInterface */
     private $deviceParser;
 
-    /**
-     * @var \BrowserDetector\Parser\PlatformParserInterface
-     */
+    /** @var \BrowserDetector\Parser\PlatformParserInterface */
     private $platformParser;
 
-    /**
-     * @var \BrowserDetector\Parser\BrowserParserInterface
-     */
+    /** @var \BrowserDetector\Parser\BrowserParserInterface */
     private $browserParser;
 
-    /**
-     * @var \BrowserDetector\Parser\EngineParserInterface
-     */
+    /** @var \BrowserDetector\Parser\EngineParserInterface */
     private $engineParser;
 
-    /**
-     * @var \UaNormalizer\Normalizer\NormalizerInterface
-     */
+    /** @var \UaNormalizer\Normalizer\NormalizerInterface */
     private $normalizer;
 
     /**

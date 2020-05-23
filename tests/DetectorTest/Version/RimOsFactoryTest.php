@@ -18,9 +18,7 @@ use Psr\Log\NullLogger;
 
 final class RimOsFactoryTest extends TestCase
 {
-    /**
-     * @var \BrowserDetector\Version\RimOsFactory
-     */
+    /** @var \BrowserDetector\Version\RimOsFactory */
     private $object;
 
     /**
@@ -36,8 +34,8 @@ final class RimOsFactoryTest extends TestCase
      */
     public function testInvoke(): void
     {
-        /** @var RimOsFactory $object */
         $object = $this->object;
+        \assert($object instanceof RimOsFactory, sprintf('$object should be an instance of %s, but is %s', RimOsFactory::class, get_class($object)));
         $result = $object(new NullLogger());
         self::assertInstanceOf(RimOs::class, $result);
     }

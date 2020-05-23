@@ -23,24 +23,16 @@ final class MicrosoftInternetExplorer implements VersionDetectorInterface
         '4' => '8.0',
     ];
 
-    /**
-     * @var \Psr\Log\LoggerInterface
-     */
+    /** @var \Psr\Log\LoggerInterface */
     private $logger;
 
-    /**
-     * @var \BrowserDetector\Version\VersionFactoryInterface
-     */
+    /** @var \BrowserDetector\Version\VersionFactoryInterface */
     private $versionFactory;
 
-    /**
-     * @var \BrowserDetector\Version\VersionDetectorInterface
-     */
+    /** @var \BrowserDetector\Version\VersionDetectorInterface */
     private $trident;
 
     /**
-     * ChromeOs constructor.
-     *
      * @param \Psr\Log\LoggerInterface                          $logger
      * @param \BrowserDetector\Version\VersionFactoryInterface  $versionFactory
      * @param \BrowserDetector\Version\VersionDetectorInterface $trident
@@ -65,12 +57,14 @@ final class MicrosoftInternetExplorer implements VersionDetectorInterface
 
         if (null !== $version->getMajor()) {
             foreach (self::VERSIONS as $engineVersion => $ieVersion) {
-                if (version_compare($version->getMajor(), (string) $engineVersion, '>=')) {
-                    try {
-                        return $this->versionFactory->set($ieVersion);
-                    } catch (NotNumericException $e) {
-                        $this->logger->info($e);
-                    }
+                if (!version_compare($version->getMajor(), (string) $engineVersion, '>=')) {
+                    continue;
+                }
+
+                try {
+                    return $this->versionFactory->set($ieVersion);
+                } catch (NotNumericException $e) {
+                    $this->logger->info($e);
                 }
             }
         }

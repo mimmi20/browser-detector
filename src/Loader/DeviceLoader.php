@@ -19,24 +19,16 @@ use Psr\Log\LoggerInterface;
 
 final class DeviceLoader implements DeviceLoaderInterface
 {
-    /**
-     * @var \Psr\Log\LoggerInterface
-     */
+    /** @var \Psr\Log\LoggerInterface */
     private $logger;
 
-    /**
-     * @var \BrowserDetector\Parser\PlatformParserInterface
-     */
+    /** @var \BrowserDetector\Parser\PlatformParserInterface */
     private $platformParser;
 
-    /**
-     * @var \BrowserDetector\Loader\Helper\DataInterface
-     */
+    /** @var \BrowserDetector\Loader\Helper\DataInterface */
     private $initData;
 
-    /**
-     * @var \BrowserDetector\Loader\CompanyLoaderInterface
-     */
+    /** @var \BrowserDetector\Loader\CompanyLoaderInterface */
     private $companyLoader;
 
     /**

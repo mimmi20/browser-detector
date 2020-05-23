@@ -26,14 +26,10 @@ use UaNormalizer\NormalizerFactory;
 
 final class DetectorFactory
 {
-    /**
-     * @var \Psr\SimpleCache\CacheInterface
-     */
+    /** @var \Psr\SimpleCache\CacheInterface */
     private $cache;
 
-    /**
-     * @var \Psr\Log\LoggerInterface
-     */
+    /** @var \Psr\Log\LoggerInterface */
     private $logger;
 
     /**
@@ -57,8 +53,8 @@ final class DetectorFactory
             $jsonParser           = new Json();
             $companyLoaderFactory = new CompanyLoaderFactory($jsonParser, new Filter());
 
-            /** @var CompanyLoader $companyLoader */
             $companyLoader = $companyLoaderFactory();
+            \assert($companyLoader instanceof CompanyLoader, sprintf('$companyLoader should be an instance of %s, but is %s', CompanyLoader::class, get_class($companyLoader)));
 
             $platformParserFactory = new PlatformParserFactory($this->logger, $jsonParser, $companyLoader);
             $platformParser        = $platformParserFactory();

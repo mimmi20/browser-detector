@@ -18,9 +18,7 @@ use Psr\Log\NullLogger;
 
 final class PuffinFactoryTest extends TestCase
 {
-    /**
-     * @var \BrowserDetector\Version\PuffinFactory
-     */
+    /** @var \BrowserDetector\Version\PuffinFactory */
     private $object;
 
     /**
@@ -36,8 +34,8 @@ final class PuffinFactoryTest extends TestCase
      */
     public function testInvoke(): void
     {
-        /** @var PuffinFactory $object */
         $object = $this->object;
+        \assert($object instanceof PuffinFactory, sprintf('$object should be an instance of %s, but is %s', PuffinFactory::class, get_class($object)));
         $result = $object(new NullLogger());
         self::assertInstanceOf(Puffin::class, $result);
     }

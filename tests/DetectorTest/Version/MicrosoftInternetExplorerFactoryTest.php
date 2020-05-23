@@ -18,9 +18,7 @@ use Psr\Log\NullLogger;
 
 final class MicrosoftInternetExplorerFactoryTest extends TestCase
 {
-    /**
-     * @var \BrowserDetector\Version\MicrosoftInternetExplorerFactory
-     */
+    /** @var \BrowserDetector\Version\MicrosoftInternetExplorerFactory */
     private $object;
 
     /**
@@ -36,8 +34,8 @@ final class MicrosoftInternetExplorerFactoryTest extends TestCase
      */
     public function testInvoke(): void
     {
-        /** @var MicrosoftInternetExplorerFactory $object */
         $object = $this->object;
+        \assert($object instanceof MicrosoftInternetExplorerFactory, sprintf('$object should be an instance of %s, but is %s', MicrosoftInternetExplorerFactory::class, get_class($object)));
         $result = $object(new NullLogger());
         self::assertInstanceOf(MicrosoftInternetExplorer::class, $result);
     }

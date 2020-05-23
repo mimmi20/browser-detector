@@ -12,14 +12,13 @@ declare(strict_types = 1);
 namespace BrowserDetector\Factory;
 
 use BrowserDetector\Version\NullVersion;
+use BrowserDetector\Version\VersionDetectorInterface;
 use BrowserDetector\Version\VersionInterface;
 use Psr\Log\LoggerInterface;
 
 trait VersionFactoryTrait
 {
-    /**
-     * @var \BrowserDetector\Version\VersionFactoryInterface
-     */
+    /** @var \BrowserDetector\Version\VersionFactoryInterface */
     private $versionFactory;
 
     /**
@@ -61,15 +60,15 @@ trait VersionFactoryTrait
         if (is_string($factoryName)) {
             $factory = new $factoryName();
 
-            /** @var \BrowserDetector\Version\VersionDetectorInterface $versionDetector */
             $versionDetector = $factory($logger);
+            \assert($versionDetector instanceof VersionDetectorInterface, sprintf('$versionDetector should be an instance of %s, but is %s', VersionDetectorInterface::class, get_class($versionDetector)));
 
             return $versionDetector->detectVersion($useragent);
         }
 
         if ('VersionFactory' !== $className) {
-            /** @var \BrowserDetector\Version\VersionDetectorInterface $versionDetector */
             $versionDetector = new $className();
+            \assert($versionDetector instanceof VersionDetectorInterface, sprintf('$versionDetector should be an instance of %s, but is %s', VersionDetectorInterface::class, get_class($versionDetector)));
 
             return $versionDetector->detectVersion($useragent);
         }

@@ -18,9 +18,7 @@ use Psr\Log\NullLogger;
 
 final class CoreMediaFactoryTest extends TestCase
 {
-    /**
-     * @var \BrowserDetector\Version\CoreMediaFactory
-     */
+    /** @var \BrowserDetector\Version\CoreMediaFactory */
     private $object;
 
     /**
@@ -36,8 +34,8 @@ final class CoreMediaFactoryTest extends TestCase
      */
     public function testInvoke(): void
     {
-        /** @var CoreMediaFactory $object */
         $object = $this->object;
+        \assert($object instanceof CoreMediaFactory, sprintf('$object should be an instance of %s, but is %s', CoreMediaFactory::class, get_class($object)));
         $result = $object(new NullLogger());
         self::assertInstanceOf(CoreMedia::class, $result);
     }
