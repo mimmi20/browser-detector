@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<ruleset name="browser-detector"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="vendor/squizlabs/php_codesniffer/phpcs.xsd"
+>
+    <description>browser-detector</description>
+
+    <arg name="report" value="full"/>
+    <arg value="wps"/>
+    <arg name="encoding" value="utf-8"/>
+
+    <!-- inherit rules from: -->
+    <rule ref="mimmi20-cs"/>
+
+    <!-- Paths to check -->
+    <file>src</file>
+    <file>tests</file>
+</ruleset>

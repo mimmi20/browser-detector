@@ -1,11 +1,34 @@
-includes:
-	- phpstan-baseline.neon
-
 parameters:
-	checkMissingIterableValueType: false
-	inferPrivatePropertyTypeFromConstructor: true
-	level: max
-	paths:
-		- src/
-		- test/
-	tmpDir: .build/phpstan/
+  level: max
+  parallel:
+    maximumNumberOfProcesses: 1
+    processTimeout: 200.0
+  paths:
+    - src
+    - tests
+  autoload_files:
+    - %currentWorkingDirectory%/vendor/autoload.php
+    - %currentWorkingDirectory%/vendor/squizlabs/php_codesniffer/autoload.php
+    - %currentWorkingDirectory%/vendor/squizlabs/php_codesniffer/src/Util/Tokens.php
+  exceptionRules:
+    reportUnusedCatchesOfUncheckedExceptions: true
+    uncheckedExceptions: []
+  checkMissingIterableValueType: false
+  excludes_analyse:
+    - */tests/*/data/*
+  ignoreErrors:
+    - '~MockObject~'
+#    - '~Parameter #1 \$headers of callable BrowserDetector\\Detector expects array\|Psr\Http\Message\MessageInterface\|string\|UaRequest\GenericRequest, stdClass given~'
+    - '~Parameter #1 \$headers of method BrowserDetector\\Detector::__invoke\(\) expects array\|Psr\\Http\\Message\\MessageInterface\|string\|UaRequest\\GenericRequest, stdClass given~'
+    - '~Parameter #1 \$message of method Psr\\Log\\LoggerInterface::.* expects string, .*Exception given~'
+    - '~is not subtype of Throwable~'
+    - '~Call to static method PHPUnit~'
+    - '~has a nullable return type declaration~'
+    - '~has parameter \$.* with a nullable type declaration~'
+#    - '~with null as default value~'
+    - '~Call to deprecated method getBrowser\(\) of class BrowserDetector\\Detector~'
+    - '~Useless \@throws~'
+    - '~Missing \@throws~'
+    - '~Error suppression via "@" should not be used~'
+    - '~Call to function assert\(\) with true and string will always evaluate to true~'
+    - '~Instanceof between .* and .* will always evaluate to true~'

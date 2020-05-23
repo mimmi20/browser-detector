@@ -1,8 +1,8 @@
 # https://help.github.com/en/categories/automating-your-workflow-with-github-actions
 
-name: "Renew"
+name: "Renew License"
 
-on: # yamllint disable-line rule:truthy
+on:
   schedule:
     - cron: "1 0 1 1 *"
 
@@ -16,12 +16,13 @@ jobs:
     runs-on: "ubuntu-latest"
 
     strategy:
+      fail-fast: false
       matrix:
-        php-version:
-          - "7.2"
+        php-versions:
+          - "7.1"
 
         dependencies:
-          - "locked"
+          - ""
 
     steps:
       - name: "Checkout"
@@ -48,17 +49,8 @@ jobs:
           key: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-${{ hashFiles('**/composer.lock') }}"
           restore-keys: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-"
 
-      - name: "Install lowest dependencies from composer.json"
-        if: "matrix.dependencies == 'lowest'"
-        run: "composer update --no-interaction --no-progress --no-suggest --prefer-lowest"
-
-      - name: "Install locked dependencies from composer.lock"
-        if: "matrix.dependencies == 'locked'"
-        run: "composer install --no-interaction --no-progress --no-suggest"
-
-      - name: "Install highest dependencies from composer.json"
-        if: "matrix.dependencies == 'highest'"
-        run: "composer update --no-interaction --no-progress --no-suggest"
+      - name: "Update dependencies with composer"
+        run: "composer update --optimize-autoloader --prefer-dist --prefer-stable --no-progress --no-interaction --no-suggest -vv ${{ matrix.dependencies }}"
 
       - name: "Create cache directory for friendsofphp/php-cs-fixer"
         run: "mkdir -p .build/php-cs-fixer"
@@ -76,7 +68,7 @@ jobs:
       - name: "Open pull request updating license year"
         uses: "gr2m/create-or-update-pull-request-action@v1.2.10"
         with:
-          author: "ergebnis-bot <bot@ergebn.is>"
+          author: "mimmi20"
           branch: "feature/license-year"
           body: |
             This PR
@@ -86,4 +78,4 @@ jobs:
           path: "."
           title: "Enhancement: Update license year"
         env:
-          GITHUB_TOKEN: "${{ secrets.ERGEBNIS_BOT_TOKEN }}"
+          GITHUB_TOKEN: "${{ secrets.RENEW_TOKEN }}"

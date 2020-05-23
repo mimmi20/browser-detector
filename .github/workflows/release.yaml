@@ -2,7 +2,7 @@
 
 name: "Release"
 
-on: # yamllint disable-line rule:truthy
+on:
   push:
     tags:
       - "**"
@@ -21,7 +21,7 @@ jobs:
       - name: "Create release"
         uses: "actions/create-release@v1"
         env:
-          GITHUB_TOKEN: "${{ secrets.ERGEBNIS_BOT_TOKEN }}"
+          GITHUB_TOKEN: "${{ secrets.RELEASE_TOKEN }}"
         with:
           draft: false
           prerelease: false

@@ -3,12 +3,21 @@
 version: 1
 
 update_configs:
-  - commit_message:
-      include_scope: true
-      prefix: "Build"
+  - default_assignees:
+      - "mimmi20"
+    default_reviewers:
+      - "mimmi20"
     default_labels:
-      - "dependency"
+      - "dependencies"
     directory: "/"
     package_manager: "php:composer"
     update_schedule: "live"
     version_requirement_updates: "increase_versions"
+    commit_message:
+      prefix: "Build"
+      include_scope: true
+    ignored_updates:
+      - match:
+          dependency_name: "phpunit/phpunit"
+      - match:
+          dependency_name: "infection/infection"

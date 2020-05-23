@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<phpunit
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="vendor/phpunit/phpunit/phpunit.xsd"
+    backupGlobals="false"
+    backupStaticAttributes="false"
+    beStrictAboutChangesToGlobalState="true"
+    beStrictAboutCoversAnnotation="false"
+    beStrictAboutOutputDuringTests="true"
+    beStrictAboutTestsThatDoNotTestAnything="true"
+    beStrictAboutTodoAnnotatedTests="true"
+    failOnWarning="true"
+    failOnRisky="true"
+    verbose="false"
+    bootstrap="vendor/autoload.php"
+    enforceTimeLimit="false"
+    executionOrder="default"
+    resolveDependencies="true"
+    >
+    <php>
+        <ini name="error_reporting" value="-1"/>
+        <ini name="memory_limit" value="-1"/>
+        <ini name="date.timezone" value="UTC"/>
+    </php>
+
+    <testsuite name="BrowserDetector Test Suite">
+        <directory>tests/</directory>
+    </testsuite>
+
+    <filter>
+        <whitelist addUncoveredFilesFromWhitelist="true" processUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">src/</directory>
+        </whitelist>
+    </filter>
+
+    <logging>
+        <log type="coverage-text" target="php://stdout" showUncoveredFiles="true"/>
+    </logging>
+</phpunit>

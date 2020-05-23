@@ -1,44 +1,47 @@
 <?php
-
-declare(strict_types=1);
-
 /**
- * Copyright (c) 2017-2020 Andreas Möller
+ * This file is part of the mimmi20/template package.
  *
- * For the full copyright and license information, please view
- * the LICENSE.md file that was distributed with this source code.
+ * Copyright (c) 2020, Thomas Mueller <mimmi20@live.de>
  *
- * @see https://github.com/ergebnis/php-library-template
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
  */
 
-use Ergebnis\License;
-use Ergebnis\PhpCsFixer;
+declare(strict_types = 1);
 
-$license = License\Type\MIT::markdown(
-    __DIR__ . '/LICENSE.md',
-    License\Range::since(
-        License\Year::fromString('2017'),
-        new \DateTimeZone('UTC')
-    ),
-    License\Holder::fromString('Andreas Möller'),
-    License\Url::fromString('https://github.com/ergebnis/php-library-template')
-);
+$header = <<<'EOF'
+This file is part of the mimmi20/template package.
 
-$license->save();
+Copyright (c) 2020, Thomas Mueller <mimmi20@live.de>
 
-$config = PhpCsFixer\Config\Factory::fromRuleSet(new PhpCsFixer\Config\RuleSet\Php71($license->header()));
+For the full copyright and license information, please view the LICENSE
+file that was distributed with this source code.
+EOF;
 
-$config->getFinder()
-    ->ignoreDotFiles(false)
-    ->in(__DIR__)
-    ->exclude([
-        '.build/',
-        '.dependabot/',
-        '.github/',
-        '.notes/',
-    ])
-    ->name('.php_cs');
+$finder = PhpCsFixer\Finder::create()
+    ->files()
+    ->name('*.php')
+    ->in(__DIR__ . '/src')
+    ->in(__DIR__ . '/tests')
+    ->append([__FILE__]);
 
-$config->setCacheFile(__DIR__ . '/.build/php-cs-fixer/.php_cs.cache');
+$rules = require 'vendor/mimmi20/coding-standard/src/phpcs.config.php';
 
-return $config;
+return PhpCsFixer\Config::create()
+    ->setRiskyAllowed(true)
+    ->setRules(
+        array_merge(
+            $rules,
+            [
+                'header_comment' => [
+                    'header' => $header,
+                    'comment_type' => 'PHPDoc',
+                    'location' => 'after_open',
+                    'separate' => 'bottom',
+                ],
+            ]
+        )
+    )
+    ->setUsingCache(true)
+    ->setFinder($finder);
