@@ -1,0 +1,54 @@
+{
+  "name": "ergebnis/php-library-template",
+  "type": "library",
+  "description": "Provides a GitHub repository template for a PHP library, using GitHub actions.",
+  "homepage": "https://github.com/ergebnis/php-library-template",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Andreas Möller",
+      "email": "am@localheinz.com"
+    }
+  ],
+  "require": {
+    "php": "^7.2"
+  },
+  "require-dev": {
+    "ergebnis/composer-normalize": "^2.5.1",
+    "ergebnis/license": "^1.0.0",
+    "ergebnis/php-cs-fixer-config": "^2.1.2",
+    "ergebnis/phpstan-rules": "~0.15.0",
+    "ergebnis/test-util": "^1.0.0",
+    "infection/infection": "~0.15.3",
+    "jangregor/phpstan-prophecy": "~0.8.0",
+    "phpstan/extension-installer": "^1.0.4",
+    "phpstan/phpstan": "~0.12.25",
+    "phpstan/phpstan-deprecation-rules": "~0.12.3",
+    "phpstan/phpstan-phpunit": "~0.12.8",
+    "phpstan/phpstan-strict-rules": "~0.12.2",
+    "phpunit/phpunit": "^8.5.5",
+    "psalm/plugin-phpunit": "~0.10.0",
+    "vimeo/psalm": "^3.11.4"
+  },
+  "config": {
+    "platform": {
+      "php": "7.2.25"
+    },
+    "preferred-install": "dist",
+    "sort-packages": true
+  },
+  "autoload": {
+    "psr-4": {
+      "Ergebnis\\Library\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Ergebnis\\Library\\Test\\": "test/"
+    }
+  },
+  "support": {
+    "issues": "https://github.com/ergebnis/php-library-template/issues",
+    "source": "https://github.com/ergebnis/php-library-template"
+  }
+}
