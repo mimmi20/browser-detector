@@ -1,0 +1,22 @@
+# https://help.github.com/en/categories/automating-your-workflow-with-github-actions
+
+name: "Merge"
+on:
+  pull_request:
+    types:
+      - opened
+      - reopened
+      - synchronize
+jobs:
+  request-review:
+    name: "Request Review"
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: "Request review from @mimmi20"
+        if: github.actor == 'dependabot-preview[bot]' && startsWith(github.event.pull_request.title, 'Build(deps-dev)')
+        uses: kunihiko-t/review-request-action@master
+        with:
+          repo-token: ${{ secrets.MERGE_TOKEN }}
+          reviewers: "mimmi20"
