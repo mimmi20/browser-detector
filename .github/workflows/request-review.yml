@@ -14,13 +14,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: "Assign @mimmi20"
-        uses: rowi1de/auto-assign-review-teams@v1
-        with:
-          repo-token: "${{secrets.MERGE_TOKEN}}"
-          persons: "mimmi20"
-
-
       - name: "Approve pull request"
         if: github.actor == 'dependabot-preview[bot]' && startsWith(github.event.pull_request.title, 'Build(deps-dev)')
         uses: hmarr/auto-approve-action@v2.0.0
