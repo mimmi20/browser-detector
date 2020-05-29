@@ -301,101 +301,101 @@ jobs:
 #      - name: "Run mutation tests with infection/infection"
 #        run: "vendor/bin/infection --min-covered-msi=95 --min-msi=95 --coverage=.build/coverage"
 
-  merge:
-    name: "Merge"
-
-    runs-on: "ubuntu-latest"
-
-    strategy:
-      fail-fast: false
-      matrix:
-        php-versions:
-          - "7.1"
-
-        dependencies:
-          - ""
-
-    needs:
-      - "code-coverage"
-      - "tests"
-
-    if: >
-      github.event_name == 'pull_request' &&
-      github.event.pull_request.draft == false && (
-        github.event.action == 'opened' ||
-        github.event.action == 'reopened' ||
-        github.event.action == 'synchronize'
-      ) && (
-        (github.actor == 'dependabot-preview[bot]' && startsWith(github.event.pull_request.title, 'Build(deps-dev)')) ||
-        (github.actor == 'mimmi20' && github.event.pull_request.title == 'Enhancement: Update license year')
-      )
-
-    steps:
-      - name: "Request review from @mimmi20"
-        uses: "actions/github-script@0.8.0"
-        with:
-          github-token: "${{ secrets.MERGE_TOKEN }}"
-          script: |
-            const pullRequest = context.payload.pull_request
-            const repository = context.repo
-
-            const reviewers = [
-              "mimmi20",
-            ]
-
-            await github.pulls.createReviewRequest({
-              owner: repository.owner,
-              pull_number: pullRequest.number,
-              repo: repository.repo,
-              reviewers: reviewers,
-            })
-
-      - name: "Assign @mimmi20"
-        uses: "actions/github-script@0.8.0"
-        with:
-          github-token: "${{ secrets.MERGE_TOKEN }}"
-          script: |
-            const pullRequest = context.payload.pull_request
-            const repository = context.repo
-
-            const reviewers = [
-              "mimmi20",
-            ]
-
-            await github.issues.addAssignees({
-              assignees: reviewers,
-              issue_number: pullRequest.number,
-              owner: repository.owner,
-              repo: repository.repo,
-            })
-
-      - name: "Approve pull request"
-        uses: "actions/github-script@0.8.0"
-        if: "github.actor != 'mimmi20'"
-        with:
-          github-token: "${{ secrets.MERGE_TOKEN }}"
-          script: |
-            const pullRequest = context.payload.pull_request
-            const repository = context.repo
-
-            await github.pulls.createReview({
-              event: "APPROVE",
-              owner: repository.owner,
-              pull_number: pullRequest.number,
-              repo: repository.repo,
-            })
-
-      - name: "Merge pull request"
-        uses: "actions/github-script@0.8.0"
-        with:
-          github-token: "${{ secrets.MERGE_TOKEN }}"
-          script: |
-            const pullRequest = context.payload.pull_request
-            const repository = context.repo
-
-            await github.pulls.merge({
-              merge_method: "merge",
-              owner: repository.owner,
-              pull_number: pullRequest.number,
-              repo: repository.repo,
-            })
+#  merge:
+#    name: "Merge"
+#
+#    runs-on: "ubuntu-latest"
+#
+#    strategy:
+#      fail-fast: false
+#      matrix:
+#        php-versions:
+#          - "7.1"
+#
+#        dependencies:
+#          - ""
+#
+#    needs:
+#      - "code-coverage"
+#      - "tests"
+#
+#    if: >
+#      github.event_name == 'pull_request' &&
+#      github.event.pull_request.draft == false && (
+#        github.event.action == 'opened' ||
+#        github.event.action == 'reopened' ||
+#        github.event.action == 'synchronize'
+#      ) && (
+#        (github.actor == 'dependabot-preview[bot]' && startsWith(github.event.pull_request.title, 'Build(deps-dev)')) ||
+#        (github.actor == 'mimmi20' && github.event.pull_request.title == 'Enhancement: Update license year')
+#      )
+#
+#    steps:
+#      - name: "Request review from @mimmi20"
+#        uses: "actions/github-script@0.8.0"
+#        with:
+#          github-token: "${{ secrets.MERGE_TOKEN }}"
+#          script: |
+#            const pullRequest = context.payload.pull_request
+#            const repository = context.repo
+#
+#            const reviewers = [
+#              "mimmi20",
+#            ]
+#
+#            await github.pulls.createReviewRequest({
+#              owner: repository.owner,
+#              pull_number: pullRequest.number,
+#              repo: repository.repo,
+#              reviewers: reviewers,
+#            })
+#
+#      - name: "Assign @mimmi20"
+#        uses: "actions/github-script@0.8.0"
+#        with:
+#          github-token: "${{ secrets.MERGE_TOKEN }}"
+#          script: |
+#            const pullRequest = context.payload.pull_request
+#            const repository = context.repo
+#
+#            const reviewers = [
+#              "mimmi20",
+#            ]
+#
+#            await github.issues.addAssignees({
+#              assignees: reviewers,
+#              issue_number: pullRequest.number,
+#              owner: repository.owner,
+#              repo: repository.repo,
+#            })
+#
+#      - name: "Approve pull request"
+#        uses: "actions/github-script@0.8.0"
+#        if: "github.actor != 'mimmi20'"
+#        with:
+#          github-token: "${{ secrets.MERGE_TOKEN }}"
+#          script: |
+#            const pullRequest = context.payload.pull_request
+#            const repository = context.repo
+#
+#            await github.pulls.createReview({
+#              event: "APPROVE",
+#              owner: repository.owner,
+#              pull_number: pullRequest.number,
+#              repo: repository.repo,
+#            })
+#
+#      - name: "Merge pull request"
+#        uses: "actions/github-script@0.8.0"
+#        with:
+#          github-token: "${{ secrets.MERGE_TOKEN }}"
+#          script: |
+#            const pullRequest = context.payload.pull_request
+#            const repository = context.repo
+#
+#            await github.pulls.merge({
+#              merge_method: "merge",
+#              owner: repository.owner,
+#              pull_number: pullRequest.number,
+#              repo: repository.repo,
+#            })

@@ -1,0 +1,21 @@
+# https://help.github.com/en/categories/automating-your-workflow-with-github-actions
+
+name: "Merge"
+on:
+  pull_request:
+    types:
+      - opened
+      - reopened
+      - synchronize
+jobs:
+  request-review:
+    name: "Request Review"
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: "Approve pull request"
+        if: github.actor == 'dependabot-preview[bot]' && startsWith(github.event.pull_request.title, 'Build(deps-dev)')
+        uses: hmarr/auto-approve-action@v2.0.0
+        with:
+          repo-token: "${{secrets.MERGE_TOKEN}}"
