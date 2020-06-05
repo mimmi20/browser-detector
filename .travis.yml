@@ -80,31 +80,31 @@ jobs:
       os: linux
       php: 7.1
       env: COMPOSER_FLAGS=""
-      script: composer outdated --direct # --strict
+      script: composer outdated --direct
 
     - stage: check dependencies
       os: linux
       php: 7.2
       env: COMPOSER_FLAGS=""
-      script: composer outdated --direct # --strict
+      script: composer outdated --direct
 
     - stage: check dependencies
       os: linux
       php: 7.3
       env: COMPOSER_FLAGS=""
-      script: composer outdated --direct # --strict
+      script: composer outdated --direct
 
     - stage: check dependencies
       os: linux
       php: 7.4
       env: COMPOSER_FLAGS=""
-      script: composer outdated --direct # --strict
+      script: composer outdated --direct
 
     - stage: check dependencies
       os: linux
       php: nightly
       env: COMPOSER_FLAGS="--ignore-platform-reqs"
-      script: composer outdated --direct # --strict
+      script: composer outdated --direct
 
     - stage: static code analysis
       os: linux
