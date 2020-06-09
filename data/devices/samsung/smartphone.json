@@ -12109,20 +12109,6 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "samsung sch-s720c": {
-    "deviceName": "SCH-S720C",
-    "marketingName": "Galaxy Proclaim",
-    "manufacturer": "samsung",
-    "brand": "samsung",
-    "display": {
-      "width": 480,
-      "height": 320,
-      "touch": true,
-      "size": 3.5
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
   "samsung gt-b9150": {
     "deviceName": "GT-B9150",
     "marketingName": "Galaxy Q",
@@ -19805,6 +19791,20 @@
       "height": 480,
       "touch": true,
       "size": 4.5
+    },
+    "type": "smartphone",
+    "platform": "tizen"
+  },
+  "samsung s720c": {
+    "deviceName": "SCH-S720C",
+    "marketingName": "Galaxy Proclaim",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 480,
+      "height": 320,
+      "touch": true,
+      "size": 3.5
     },
     "type": "smartphone",
     "platform": "tizen"

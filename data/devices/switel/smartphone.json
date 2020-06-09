@@ -56,8 +56,8 @@
     "platform": "android"
   },
   "switel flash s4010": {
-    "deviceName": "Flash S4010",
-    "marketingName": "Flash S4010",
+    "deviceName": "S4010",
+    "marketingName": "Flash",
     "manufacturer": "switel",
     "brand": "switel",
     "display": {
@@ -70,8 +70,8 @@
     "platform": "android"
   },
   "switel spark s5002d": {
-    "deviceName": "Spark S5002D",
-    "marketingName": "Spark S5002D",
+    "deviceName": "S5002D",
+    "marketingName": "Spark",
     "manufacturer": "switel",
     "brand": "switel",
     "display": {
@@ -79,6 +79,20 @@
       "height": 720,
       "touch": true,
       "size": 5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "switel victory s4700d": {
+    "deviceName": "S4700D",
+    "marketingName": "Victory",
+    "manufacturer": "switel",
+    "brand": "switel",
+    "display": {
+      "width": 960,
+      "height": 540,
+      "touch": true,
+      "size": 4.7
     },
     "type": "smartphone",
     "platform": "android"
