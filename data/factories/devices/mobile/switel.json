@@ -1,10 +1,11 @@
 {
   "rules": {
-    "/flash s4010/i": "switel flash s4010",
     "/esmart m3/i": "switel esmart m3",
     "/s5003d/i": "switel s5003d",
     "/s5002d spark/i": "switel spark s5002d",
-    "/s5000d/i": "switel s5000d"
+    "/s5000d/i": "switel s5000d",
+    "/victory s4700d/i": "switel victory s4700d",
+    "/flash s4010/i": "switel flash s4010"
   },
   "generic": "general switel device"
 }
