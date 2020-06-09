@@ -6,7 +6,7 @@ parameters:
   paths:
     - src
     - tests
-  autoload_files:
+  scanFiles:
     - %currentWorkingDirectory%/vendor/autoload.php
     - %currentWorkingDirectory%/vendor/squizlabs/php_codesniffer/autoload.php
     - %currentWorkingDirectory%/vendor/squizlabs/php_codesniffer/src/Util/Tokens.php
@@ -32,11 +32,3 @@ parameters:
     - '~Error suppression via "@" should not be used~'
     - '~Call to function assert\(\) with true and string will always evaluate to true~'
     - '~Instanceof between .* and .* will always evaluate to true~'
-includes:
-  - vendor/phpstan/phpstan-strict-rules/rules.neon
-  - vendor/phpstan/phpstan-phpunit/extension.neon
-  - vendor/phpstan/phpstan-phpunit/rules.neon
-  - vendor/pepakriz/phpstan-exception-rules/extension.neon
-  - vendor/phpstan/phpstan-deprecation-rules/rules.neon
-  - vendor/phpstan/phpstan-beberlei-assert/extension.neon
-  - vendor/ergebnis/phpstan-rules/rules.neon
