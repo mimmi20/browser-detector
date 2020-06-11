@@ -1,18 +1,4 @@
 {
-  "general wiko device": {
-    "deviceName": "general Wiko device",
-    "marketingName": "general Wiko device",
-    "manufacturer": "wiko",
-    "brand": "wiko",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "size": null
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
   "wiko barry": {
     "deviceName": "Barry",
     "marketingName": "Barry",
@@ -127,6 +113,20 @@
   },
   "wiko cink slim": {
     "deviceName": "Cink Slim",
+    "marketingName": "Cink Slim",
+    "manufacturer": "wiko",
+    "brand": "wiko",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 4
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "wiko s8073": {
+    "deviceName": "S8073",
     "marketingName": "Cink Slim",
     "manufacturer": "wiko",
     "brand": "wiko",
@@ -797,6 +797,20 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "wiko l4801": {
+    "deviceName": "L4801",
+    "marketingName": "Selfy 4G",
+    "manufacturer": "wiko",
+    "brand": "wiko",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 4.8
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "wiko slide": {
     "deviceName": "Slide",
     "marketingName": "Slide",
@@ -1367,20 +1381,6 @@
       "height": 720,
       "touch": true,
       "size": 5.99
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
-  "wiko l4801": {
-    "deviceName": "L4801",
-    "marketingName": "Selfy 4G",
-    "manufacturer": "wiko",
-    "brand": "wiko",
-    "display": {
-      "width": 1280,
-      "height": 720,
-      "touch": true,
-      "size": 4.8
     },
     "type": "smartphone",
     "platform": "android"

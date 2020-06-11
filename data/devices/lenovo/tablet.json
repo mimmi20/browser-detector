@@ -1,18 +1,4 @@
 {
-  "general lenovo device": {
-    "deviceName": "general Lenovo device",
-    "marketingName": "general Lenovo device",
-    "manufacturer": "lenovo",
-    "brand": "lenovo",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "size": null
-    },
-    "type": "tablet",
-    "platform": null
-  },
   "lenovo a7600-f": {
     "deviceName": "A7600-F",
     "marketingName": "A10-70 A7600 Wi-Fi",
@@ -617,6 +603,20 @@
   },
   "lenovo tb-x705f": {
     "deviceName": "TB-X705F",
+    "marketingName": "Tab 5 Plus",
+    "manufacturer": "lenovo",
+    "brand": "lenovo",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": 10.1
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "lenovo tb-x705l": {
+    "deviceName": "TB-X705L",
     "marketingName": "Tab 5 Plus",
     "manufacturer": "lenovo",
     "brand": "lenovo",

@@ -1,18 +1,4 @@
 {
-  "general cherry-mobile device": {
-    "deviceName": "general Cherry Mobile device",
-    "marketingName": "general Cherry Mobile device",
-    "manufacturer": "cherry-mobile",
-    "brand": "cherry-mobile",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "size": null
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
   "cherry-mobile alpha luxe": {
     "deviceName": "Alpha Luxe",
     "marketingName": "Alpha Luxe",
@@ -30,6 +16,20 @@
   "cherry-mobile w380": {
     "deviceName": "W380",
     "marketingName": "Amber",
+    "manufacturer": "cherry-mobile",
+    "brand": "cherry-mobile",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 4
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "cherry-mobile s710": {
+    "deviceName": "S710",
+    "marketingName": "Emerald",
     "manufacturer": "cherry-mobile",
     "brand": "cherry-mobile",
     "display": {
@@ -153,16 +153,16 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "cherry-mobile s710": {
-    "deviceName": "S710",
-    "marketingName": "Emerald",
+  "cherry-mobile s320": {
+    "deviceName": "S320",
+    "marketingName": "Titan TV",
     "manufacturer": "cherry-mobile",
     "brand": "cherry-mobile",
     "display": {
       "width": 800,
       "height": 480,
       "touch": true,
-      "size": 4
+      "size": 5
     },
     "type": "smartphone",
     "platform": "android"

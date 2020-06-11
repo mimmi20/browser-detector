@@ -1,18 +1,4 @@
 {
-  "general samsung device": {
-    "deviceName": "general Samsung device",
-    "marketingName": "general Samsung device",
-    "manufacturer": "samsung",
-    "brand": "samsung",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "size": null
-    },
-    "type": "smartphone",
-    "platform": null
-  },
   "samsung gt-i8320": {
     "deviceName": "GT-I8320",
     "marketingName": "360 H1",
@@ -12109,6 +12095,20 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "samsung s720c": {
+    "deviceName": "SCH-S720C",
+    "marketingName": "Galaxy Proclaim",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 480,
+      "height": 320,
+      "touch": true,
+      "size": 3.5
+    },
+    "type": "smartphone",
+    "platform": "tizen"
+  },
   "samsung gt-b9150": {
     "deviceName": "GT-B9150",
     "marketingName": "Galaxy Q",
@@ -19791,20 +19791,6 @@
       "height": 480,
       "touch": true,
       "size": 4.5
-    },
-    "type": "smartphone",
-    "platform": "tizen"
-  },
-  "samsung s720c": {
-    "deviceName": "SCH-S720C",
-    "marketingName": "Galaxy Proclaim",
-    "manufacturer": "samsung",
-    "brand": "samsung",
-    "display": {
-      "width": 480,
-      "height": 320,
-      "touch": true,
-      "size": 3.5
     },
     "type": "smartphone",
     "platform": "tizen"
