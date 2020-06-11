@@ -1,18 +1,4 @@
 {
-  "general verykool device": {
-    "deviceName": "general verykool device",
-    "marketingName": "general verykool device",
-    "manufacturer": "verykool",
-    "brand": "verykool",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "size": null
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
   "verykool s6004": {
     "deviceName": "s6004",
     "marketingName": "Cyprus II Jr",
@@ -209,6 +195,20 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "verykool s732": {
+    "deviceName": "s732",
+    "marketingName": "s732",
+    "manufacturer": "verykool",
+    "brand": "verykool",
+    "display": {
+      "width": 480,
+      "height": 320,
+      "touch": true,
+      "size": 3.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "verykool sl5200": {
     "deviceName": "SL5200",
     "marketingName": "SL5200",
@@ -247,20 +247,6 @@
       "height": 480,
       "touch": true,
       "size": 5
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
-  "verykool s732": {
-    "deviceName": "s732",
-    "marketingName": "s732",
-    "manufacturer": "verykool",
-    "brand": "verykool",
-    "display": {
-      "width": 480,
-      "height": 320,
-      "touch": true,
-      "size": 3.5
     },
     "type": "smartphone",
     "platform": "android"

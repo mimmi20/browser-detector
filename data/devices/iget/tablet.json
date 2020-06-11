@@ -1,14 +1,14 @@
 {
-  "general iget device": {
-    "deviceName": "general iGET device",
-    "marketingName": "general iGET device",
+  "iget smart s100": {
+    "deviceName": "Smart S100",
+    "marketingName": "Smart S100",
     "manufacturer": "iget",
     "brand": "iget",
     "display": {
-      "width": null,
-      "height": null,
+      "width": 1024,
+      "height": 600,
       "touch": true,
-      "size": null
+      "size": 10.1
     },
     "type": "tablet",
     "platform": "android"
@@ -23,20 +23,6 @@
       "height": 600,
       "touch": true,
       "size": 7
-    },
-    "type": "tablet",
-    "platform": "android"
-  },
-  "iget smart s100": {
-    "deviceName": "Smart S100",
-    "marketingName": "Smart S100",
-    "manufacturer": "iget",
-    "brand": "iget",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "size": 10.1
     },
     "type": "tablet",
     "platform": "android"

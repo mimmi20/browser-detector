@@ -1,18 +1,4 @@
 {
-  "general logicom device": {
-    "deviceName": "general Logicom device",
-    "marketingName": "general Logicom device",
-    "manufacturer": "logicom",
-    "brand": "logicom",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "size": null
-    },
-    "type": "tablet",
-    "platform": "android"
-  },
   "logicom e1031": {
     "deviceName": "E1031",
     "marketingName": "E1031",
@@ -195,6 +181,20 @@
     "type": "tablet",
     "platform": "android"
   },
+  "logicom s7812bt": {
+    "deviceName": "S7812BT",
+    "marketingName": "S7812BT",
+    "manufacturer": "logicom",
+    "brand": "logicom",
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "size": 7.85
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
   "logicom s9782": {
     "deviceName": "S9782",
     "marketingName": "S9782",
@@ -233,20 +233,6 @@
       "height": 480,
       "touch": true,
       "size": null
-    },
-    "type": "tablet",
-    "platform": "android"
-  },
-  "logicom s7812bt": {
-    "deviceName": "S7812BT",
-    "marketingName": "S7812BT",
-    "manufacturer": "logicom",
-    "brand": "logicom",
-    "display": {
-      "width": 1024,
-      "height": 768,
-      "touch": true,
-      "size": 7.85
     },
     "type": "tablet",
     "platform": "android"

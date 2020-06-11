@@ -1,14 +1,28 @@
 {
-  "general positivo device": {
-    "deviceName": "general Positivo device",
-    "marketingName": "general Positivo device",
+  "positivo s440": {
+    "deviceName": "S440",
+    "marketingName": "S440",
     "manufacturer": "positivo",
     "brand": "positivo",
     "display": {
-      "width": null,
-      "height": null,
+      "width": 800,
+      "height": 480,
       "touch": true,
-      "size": null
+      "size": 4
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "positivo s480": {
+    "deviceName": "S480",
+    "marketingName": "S480",
+    "manufacturer": "positivo",
+    "brand": "positivo",
+    "display": {
+      "width": 854,
+      "height": 480,
+      "touch": true,
+      "size": 4.5
     },
     "type": "smartphone",
     "platform": "android"

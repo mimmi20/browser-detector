@@ -1,18 +1,4 @@
 {
-  "general trekstor device": {
-    "deviceName": "general TrekStor device",
-    "marketingName": "general TrekStor device",
-    "manufacturer": "trekstor",
-    "brand": "trekstor",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "size": null
-    },
-    "type": "tablet",
-    "platform": "android"
-  },
   "trekstor liro color": {
     "deviceName": "Liro Color",
     "marketingName": "Liro Color",
@@ -44,6 +30,20 @@
   "trekstor primetab p10": {
     "deviceName": "PrimeTab P10",
     "marketingName": "PrimeTab P10",
+    "manufacturer": "trekstor",
+    "brand": "trekstor",
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "size": 10.1
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "trekstor primetab p10 lte": {
+    "deviceName": "PrimeTab P10 LTE",
+    "marketingName": "PrimeTab P10 LTE",
     "manufacturer": "trekstor",
     "brand": "trekstor",
     "display": {

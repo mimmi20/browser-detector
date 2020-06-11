@@ -1,18 +1,4 @@
 {
-  "general landvo device": {
-    "deviceName": "general Landvo device",
-    "marketingName": "general Landvo device",
-    "manufacturer": "landvo",
-    "brand": "landvo",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "size": null
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
   "landvo l100": {
     "deviceName": "L100",
     "marketingName": "L100",
@@ -27,6 +13,34 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "landvo l200": {
+    "deviceName": "L200",
+    "marketingName": "L200",
+    "manufacturer": "landvo",
+    "brand": "landvo",
+    "display": {
+      "width": 960,
+      "height": 540,
+      "touch": true,
+      "size": 5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "landvo l200g": {
+    "deviceName": "L200G",
+    "marketingName": "L200G",
+    "manufacturer": "landvo",
+    "brand": "landvo",
+    "display": {
+      "width": 960,
+      "height": 540,
+      "touch": true,
+      "size": 5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "landvo l200s": {
     "deviceName": "L200S",
     "marketingName": "L200S",
@@ -35,6 +49,20 @@
     "display": {
       "width": 1280,
       "height": 720,
+      "touch": true,
+      "size": 5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "landvo l500s": {
+    "deviceName": "L500S",
+    "marketingName": "L500S",
+    "manufacturer": "landvo",
+    "brand": "landvo",
+    "display": {
+      "width": 854,
+      "height": 480,
       "touch": true,
       "size": 5
     },
@@ -161,48 +189,6 @@
     "display": {
       "width": 1280,
       "height": 720,
-      "touch": true,
-      "size": 5
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
-  "landvo l500s": {
-    "deviceName": "L500S",
-    "marketingName": "L500S",
-    "manufacturer": "landvo",
-    "brand": "landvo",
-    "display": {
-      "width": 854,
-      "height": 480,
-      "touch": true,
-      "size": 5
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
-  "landvo l200": {
-    "deviceName": "L200",
-    "marketingName": "L200",
-    "manufacturer": "landvo",
-    "brand": "landvo",
-    "display": {
-      "width": 960,
-      "height": 540,
-      "touch": true,
-      "size": 5
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
-  "landvo l200g": {
-    "deviceName": "L200G",
-    "marketingName": "L200G",
-    "manufacturer": "landvo",
-    "brand": "landvo",
-    "display": {
-      "width": 960,
-      "height": 540,
       "touch": true,
       "size": 5
     },

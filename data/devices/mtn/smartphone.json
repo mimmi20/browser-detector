@@ -1,4 +1,18 @@
 {
+  "mtn sm@rt mini s620": {
+    "deviceName": "Sm@rt Mini S620",
+    "marketingName": "Sm@rt Mini S620",
+    "manufacturer": "mtn",
+    "brand": "mtn",
+    "display": {
+      "width": 480,
+      "height": 320,
+      "touch": true,
+      "size": 3.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "mtn sm@rt s720": {
     "deviceName": "Sm@rt S720",
     "marketingName": "Sm@rt S720",
@@ -7,6 +21,20 @@
     "display": {
       "width": null,
       "height": null,
+      "touch": true,
+      "size": 4
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "mtn sm@rt s720i": {
+    "deviceName": "Sm@rt S720i",
+    "marketingName": "Sm@rt S720i",
+    "manufacturer": "mtn",
+    "brand": "mtn",
+    "display": {
+      "width": 800,
+      "height": 480,
       "touch": true,
       "size": 4
     },
