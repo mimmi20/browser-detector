@@ -625,7 +625,7 @@
     "/majestic|crono/i": "majestic",
     "/andywin|andy_5ei3/i": "andy",
     "/ns[0-9]{1,4}/i": "nous",
-    "/pulid|f1[0-9]/i": "pulid",
+    "/pulid| f1[0-9]( build|[;\\/\\)])/i": "pulid",
     "/ax5_duo/i": "maxx",
     "/ga10h|t736/i": "gooweel",
     "/positivo|s480|ypy_s450|s455|s440/i": "positivo",
