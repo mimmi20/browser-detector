@@ -173,7 +173,7 @@
     "/a713_vivo_pro/i": "gtel",
     "/(?<!fbcr\\/)vivo|(?<!t|primo )x[0-9] ?(plus|max|pro)| x21( build|[;\\/\\)])|(adr|android) 7\\..* x11( build|[;\\/\\)])|v1814[at]/i": "vivo",
     "/yuanda/i": "yuanda",
-    "/pocketbook/i": "pocketbook",
+    "/pocketbook(?!\\/)/i": "pocketbook",
     "/goclever|quantum|aries|insignia|orion_|elipso|terra_(?!pad)|orion7o|tq[0-9]{3}|libra 97/i": "goclever",
     "/senseit/i": "senseit",
     "/twz/i": "twz",
