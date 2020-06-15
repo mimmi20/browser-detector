@@ -1,8 +1,18 @@
 {
   "rules": {
+    "/omega[ _]?5/i": "primux omega 5",
+    "/omega[ _]?4/i": "primux omega 4",
     "/omega[ _]?2/i": "primux omega 2",
+    "/omega/i": "primux omega",
     "/delta[ _]?6/i": "primux delta 6",
-    "/alpha[ _]?4/i": "primux alpha 4"
+    "/alpha[ _]?4/i": "primux alpha 4",
+    "/alpha[ _]?3x/i": "primux alpha 3x",
+    "/alpha[ _]?3/i": "primux alpha 3",
+    "/zeta[ _]?2/i": "primux zeta 2",
+    "/zeta/i": "primux zeta",
+    "/nova/i": "primux nova",
+    "/sonora[ _]?dual/i": "primux sonora dual",
+    "/sonora/i": "primux sonora"
   },
   "generic": "general primux device"
 }
