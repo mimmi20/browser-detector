@@ -1,18 +1,4 @@
 {
-  "primux alpha 4": {
-    "deviceName": "Alpha 4",
-    "marketingName": "Alpha 4",
-    "manufacturer": "primux",
-    "brand": "primux",
-    "display": {
-      "width": 960,
-      "height": 540,
-      "touch": true,
-      "size": 5
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
   "primux alpha 3": {
     "deviceName": "Alpha 3",
     "marketingName": "Alpha 3",
@@ -41,6 +27,20 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "primux alpha 4": {
+    "deviceName": "Alpha 4",
+    "marketingName": "Alpha 4",
+    "manufacturer": "primux",
+    "brand": "primux",
+    "display": {
+      "width": 960,
+      "height": 540,
+      "touch": true,
+      "size": 5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "primux delta 6": {
     "deviceName": "Delta 6",
     "marketingName": "Delta 6",
@@ -51,20 +51,6 @@
       "height": 320,
       "touch": true,
       "size": 3.5
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
-  "primux omega 2": {
-    "deviceName": "Omega 2",
-    "marketingName": "Omega 2",
-    "manufacturer": "primux",
-    "brand": "primux",
-    "display": {
-      "width": 960,
-      "height": 540,
-      "touch": true,
-      "size": 5.3
     },
     "type": "smartphone",
     "platform": "android"
@@ -97,16 +83,16 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "primux omega 5": {
-    "deviceName": "Omega 5",
-    "marketingName": "Omega 5",
+  "primux omega 2": {
+    "deviceName": "Omega 2",
+    "marketingName": "Omega 2",
     "manufacturer": "primux",
     "brand": "primux",
     "display": {
       "width": 960,
       "height": 540,
       "touch": true,
-      "size": 5.5
+      "size": 5.3
     },
     "type": "smartphone",
     "platform": "android"
@@ -125,9 +111,23 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "primux zeta 2": {
-    "deviceName": "Zeta 2",
-    "marketingName": "Zeta 2",
+  "primux omega 5": {
+    "deviceName": "Omega 5",
+    "marketingName": "Omega 5",
+    "manufacturer": "primux",
+    "brand": "primux",
+    "display": {
+      "width": 960,
+      "height": 540,
+      "touch": true,
+      "size": 5.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "primux zeta": {
+    "deviceName": "Zeta",
+    "marketingName": "Zeta",
     "manufacturer": "primux",
     "brand": "primux",
     "display": {
@@ -139,9 +139,9 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "primux zeta": {
-    "deviceName": "Zeta",
-    "marketingName": "Zeta",
+  "primux zeta 2": {
+    "deviceName": "Zeta 2",
+    "marketingName": "Zeta 2",
     "manufacturer": "primux",
     "brand": "primux",
     "display": {
