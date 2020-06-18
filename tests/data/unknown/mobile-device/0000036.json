@@ -1,44 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "Opera/9.80 (Android; Opera Mini/7.7.40394/66.277; U; de) Presto/2.12.423 Version/12.16"
-    },
-    "device": {
-      "deviceName": "general Mobile device",
-      "marketingName": "general Mobile device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "7.7.40394",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": null,
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.12.423",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Opera/9.80 (Android; Opera Mini/7.7.40394/66.299; U; de) Presto/2.12.423 Version/12.16"
     },
     "device": {
@@ -2927,44 +2889,6 @@
   },
   {
     "headers": {
-      "user-agent": "Kodi/14.0-BETA2 (Linux; Android 4.2.2; MBX reference board (g18ref) Build/JDQ39) Android/4.2.2 Sys_CPU/armv7l App_Bitness/32 Version/14.0-BETA2-Git:2014-11-08-2d88a9a-dirty"
-    },
-    "device": {
-      "deviceName": "general Mobile device",
-      "marketingName": "general Mobile device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": "Kodi Media Center",
-      "modus": null,
-      "version": "14.0.0-beta+2",
-      "manufacturer": "xbmc-foundation",
-      "bits": null,
-      "type": "multimedia-player"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.2.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Opera/9.80 (Android; Opera Mini/18.0.1290/36.1344; U; en) Presto/2.12.423 Version/12.16"
     },
     "device": {
@@ -3791,6 +3715,82 @@
       "marketingName": "Android",
       "version": null,
       "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.12.423",
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Player/LG Player 1.0 for Android(stagefright alternative)"
+    },
+    "device": {
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device"
+    },
+    "browser": {
+      "name": "LG Player",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "lg",
+      "bits": null,
+      "type": "multimedia-player"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": null,
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": null,
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/9.80 (J2ME/MIDP; Opera Mini/4.5.33867/36.1370; U; es) Presto/2.12.423 Version/12.16"
+    },
+    "device": {
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device"
+    },
+    "browser": {
+      "name": "Opera Mini",
+      "modus": null,
+      "version": "4.5.33867",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
       "bits": null
     },
     "engine": {
