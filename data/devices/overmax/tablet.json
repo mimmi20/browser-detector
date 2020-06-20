@@ -1,4 +1,32 @@
 {
+  "overmax basecore 10": {
+    "deviceName": "BaseCore 10",
+    "marketingName": "BaseCore 10",
+    "manufacturer": "overmax",
+    "brand": "overmax",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "size": 10.1
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "overmax basecore 9": {
+    "deviceName": "BaseCore 9",
+    "marketingName": "BaseCore 9",
+    "manufacturer": "overmax",
+    "brand": "overmax",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 9
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
   "overmax basictab": {
     "deviceName": "BasicTab",
     "marketingName": "BasicTab",
@@ -9,6 +37,20 @@
       "height": 480,
       "touch": true,
       "size": null
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "overmax basis 9": {
+    "deviceName": "Basis 9",
+    "marketingName": "Basis 9",
+    "manufacturer": "overmax",
+    "brand": "overmax",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 9
     },
     "type": "tablet",
     "platform": "android"
@@ -27,16 +69,30 @@
     "type": "tablet",
     "platform": "android"
   },
-  "overmax ov steelcore 10 iii": {
-    "deviceName": "OV SteelCore 10 III",
-    "marketingName": "OV SteelCore 10 III",
+  "overmax ov-dual drive max 2": {
+    "deviceName": "OV-Dual Drive Max 2",
+    "marketingName": "OV-Dual Drive Max 2",
     "manufacturer": "overmax",
     "brand": "overmax",
     "display": {
-      "width": 1280,
-      "height": 800,
+      "width": 1024,
+      "height": 600,
       "touch": true,
-      "size": 10.1
+      "size": 9.7
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "overmax ov-edutab 2 plus": {
+    "deviceName": "OV-EduTab 2 Plus",
+    "marketingName": "OV-EduTab 2 Plus",
+    "manufacturer": "overmax",
+    "brand": "overmax",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 7
     },
     "type": "tablet",
     "platform": "android"
@@ -51,6 +107,20 @@
       "height": 600,
       "touch": true,
       "size": null
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "overmax qualcore 7010": {
+    "deviceName": "Qualcore 7010",
+    "marketingName": "Qualcore 7010",
+    "manufacturer": "overmax",
+    "brand": "overmax",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "size": 7
     },
     "type": "tablet",
     "platform": "android"
@@ -121,6 +191,34 @@
       "height": 800,
       "touch": true,
       "size": null
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "overmax steelcore 10 iii": {
+    "deviceName": "SteelCore 10 III",
+    "marketingName": "SteelCore 10 III",
+    "manufacturer": "overmax",
+    "brand": "overmax",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": 10.1
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "overmax steelcore 10 plus": {
+    "deviceName": "SteelCore 10 Plus",
+    "marketingName": "SteelCore 10 Plus",
+    "manufacturer": "overmax",
+    "brand": "overmax",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": 10.1
     },
     "type": "tablet",
     "platform": "android"
