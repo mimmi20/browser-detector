@@ -1,4 +1,32 @@
 {
+  "nokia 100": {
+    "deviceName": "100",
+    "marketingName": "100",
+    "manufacturer": "nokia",
+    "brand": "nokia",
+    "display": {
+      "width": 160,
+      "height": 120,
+      "touch": false,
+      "size": 1.8
+    },
+    "type": "feature-phone",
+    "platform": "symbian"
+  },
+  "nokia 1006": {
+    "deviceName": "1006",
+    "marketingName": "1006",
+    "manufacturer": "nokia",
+    "brand": "nokia",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": 1.5
+    },
+    "type": "feature-phone",
+    "platform": "nokia os"
+  },
   "nokia 109": {
     "deviceName": "109",
     "marketingName": "109",
@@ -21,6 +49,48 @@
     "display": {
       "width": 160,
       "height": 128,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "nokia os"
+  },
+  "nokia 111": {
+    "deviceName": "111",
+    "marketingName": "111",
+    "manufacturer": "nokia",
+    "brand": "nokia",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": 1.8
+    },
+    "type": "feature-phone",
+    "platform": "nokia os"
+  },
+  "nokia 111.1": {
+    "deviceName": "111.1",
+    "marketingName": "111.1",
+    "manufacturer": "nokia",
+    "brand": "nokia",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": 1.8
+    },
+    "type": "feature-phone",
+    "platform": "nokia os"
+  },
+  "nokia 1112": {
+    "deviceName": "1112",
+    "marketingName": "1112",
+    "manufacturer": "nokia",
+    "brand": "nokia",
+    "display": {
+      "width": 96,
+      "height": 68,
       "touch": false,
       "size": null
     },
@@ -55,6 +125,62 @@
     "type": "feature-phone",
     "platform": "nokia os"
   },
+  "nokia 114": {
+    "deviceName": "114",
+    "marketingName": "114",
+    "manufacturer": "nokia",
+    "brand": "nokia",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": 1.8
+    },
+    "type": "feature-phone",
+    "platform": "symbian"
+  },
+  "nokia 1220": {
+    "deviceName": "1220",
+    "marketingName": "1220",
+    "manufacturer": "nokia",
+    "brand": "nokia",
+    "display": {
+      "width": 84,
+      "height": 48,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "nokia os"
+  },
+  "nokia 1600": {
+    "deviceName": "1600",
+    "marketingName": "1600",
+    "manufacturer": "nokia",
+    "brand": "nokia",
+    "display": {
+      "width": 96,
+      "height": 68,
+      "touch": false,
+      "size": 1.4
+    },
+    "type": "feature-phone",
+    "platform": "nokia os"
+  },
+  "nokia 1606": {
+    "deviceName": "1606",
+    "marketingName": "1606",
+    "manufacturer": "nokia",
+    "brand": "nokia",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": 1.8
+    },
+    "type": "feature-phone",
+    "platform": "nokia os"
+  },
   "nokia 1680 classic": {
     "deviceName": "1680 classic",
     "marketingName": "1680 classic",
@@ -68,6 +194,62 @@
     },
     "type": "feature-phone",
     "platform": "java"
+  },
+  "nokia 1681 classic": {
+    "deviceName": "1681 classic",
+    "marketingName": "1681 classic",
+    "manufacturer": "nokia",
+    "brand": "nokia",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "nokia os"
+  },
+  "nokia 1682 classic": {
+    "deviceName": "1682 classic",
+    "marketingName": "1682 classic",
+    "manufacturer": "nokia",
+    "brand": "nokia",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": 1.9
+    },
+    "type": "feature-phone",
+    "platform": "nokia os"
+  },
+  "nokia 207": {
+    "deviceName": "207",
+    "marketingName": "207",
+    "manufacturer": "nokia",
+    "brand": "nokia",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": 2.4
+    },
+    "type": "feature-phone",
+    "platform": "nokia os"
+  },
+  "nokia 207.1": {
+    "deviceName": "207.1",
+    "marketingName": "207.1",
+    "manufacturer": "nokia",
+    "brand": "nokia",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": 2.4
+    },
+    "type": "feature-phone",
+    "platform": "nokia os"
   },
   "nokia 208": {
     "deviceName": "208",
@@ -97,6 +279,20 @@
     "type": "feature-phone",
     "platform": "java"
   },
+  "nokia 2115i": {
+    "deviceName": "2115i",
+    "marketingName": "2115i",
+    "manufacturer": "nokia",
+    "brand": "nokia",
+    "display": {
+      "width": 96,
+      "height": 64,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "nokia 2220 slide": {
     "deviceName": "2220 slide",
     "marketingName": "2220 slide",
@@ -107,6 +303,20 @@
       "height": 128,
       "touch": false,
       "size": 1.8
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "nokia 2228": {
+    "deviceName": "2228",
+    "marketingName": "2228",
+    "manufacturer": "nokia",
+    "brand": "nokia",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": null
     },
     "type": "feature-phone",
     "platform": "java"
@@ -152,6 +362,20 @@
     },
     "type": "feature-phone",
     "platform": "nokia os"
+  },
+  "nokia 2320": {
+    "deviceName": "2320",
+    "marketingName": "2320",
+    "manufacturer": "nokia",
+    "brand": "nokia",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": 1.8
+    },
+    "type": "feature-phone",
+    "platform": "java"
   },
   "nokia 2320c": {
     "deviceName": "2320 classic",
@@ -209,9 +433,51 @@
     "type": "feature-phone",
     "platform": "symbian"
   },
+  "nokia 2355": {
+    "deviceName": "2355",
+    "marketingName": "2355",
+    "manufacturer": "nokia",
+    "brand": "nokia",
+    "display": {
+      "width": 128,
+      "height": 128,
+      "touch": false,
+      "size": 1.5
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "nokia 2600": {
+    "deviceName": "2600",
+    "marketingName": "2600",
+    "manufacturer": "nokia",
+    "brand": "nokia",
+    "display": {
+      "width": 128,
+      "height": 128,
+      "touch": false,
+      "size": 1.5
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "nokia 2600 classic": {
     "deviceName": "2600 classic",
     "marketingName": "2600 classic",
+    "manufacturer": "nokia",
+    "brand": "nokia",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": 1.77
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "nokia 2605": {
+    "deviceName": "2605",
+    "marketingName": "2605",
     "manufacturer": "nokia",
     "brand": "nokia",
     "display": {
@@ -279,6 +545,48 @@
     "type": "feature-phone",
     "platform": "java"
   },
+  "nokia 2652": {
+    "deviceName": "2652",
+    "marketingName": "2652",
+    "manufacturer": "nokia",
+    "brand": "nokia",
+    "display": {
+      "width": 128,
+      "height": 128,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "nokia 2660": {
+    "deviceName": "2660",
+    "marketingName": "2660",
+    "manufacturer": "nokia",
+    "brand": "nokia",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": 1.85
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "nokia 2680": {
+    "deviceName": "2680",
+    "marketingName": "2680",
+    "manufacturer": "nokia",
+    "brand": "nokia",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": 1.8
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "nokia 2680 slide": {
     "deviceName": "2680 slide",
     "marketingName": "2680 slide",
@@ -306,6 +614,20 @@
     },
     "type": "feature-phone",
     "platform": "nokia os"
+  },
+  "nokia 2692": {
+    "deviceName": "2692",
+    "marketingName": "2692",
+    "manufacturer": "nokia",
+    "brand": "nokia",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": 1.8
+    },
+    "type": "feature-phone",
+    "platform": "java"
   },
   "nokia 2700 classic": {
     "deviceName": "2700 classic",
@@ -377,6 +699,62 @@
     "type": "feature-phone",
     "platform": "symbian"
   },
+  "nokia 2855": {
+    "deviceName": "2855",
+    "marketingName": "2855",
+    "manufacturer": "nokia",
+    "brand": "nokia",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "nokia 2855i": {
+    "deviceName": "2855i",
+    "marketingName": "2855i",
+    "manufacturer": "nokia",
+    "brand": "nokia",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "nokia 2865": {
+    "deviceName": "2865",
+    "marketingName": "2865",
+    "manufacturer": "nokia",
+    "brand": "nokia",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "nokia 2865i": {
+    "deviceName": "2865i",
+    "marketingName": "2865i",
+    "manufacturer": "nokia",
+    "brand": "nokia",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "nokia 3100": {
     "deviceName": "3100",
     "marketingName": "3100",
@@ -429,6 +807,20 @@
       "height": 128,
       "touch": false,
       "size": 1.5
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "nokia 3108": {
+    "deviceName": "3108",
+    "marketingName": "3108",
+    "manufacturer": "nokia",
+    "brand": "nokia",
+    "display": {
+      "width": 128,
+      "height": 128,
+      "touch": false,
+      "size": 1.45
     },
     "type": "feature-phone",
     "platform": "java"
@@ -499,6 +891,20 @@
       "height": 128,
       "touch": false,
       "size": 1.5
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "nokia 3128": {
+    "deviceName": "3128",
+    "marketingName": "3128",
+    "manufacturer": "nokia",
+    "brand": "nokia",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": null
     },
     "type": "feature-phone",
     "platform": "java"
@@ -615,6 +1021,20 @@
     "type": "feature-phone",
     "platform": "java"
   },
+  "nokia 3210": {
+    "deviceName": "3210",
+    "marketingName": "3210",
+    "manufacturer": "nokia",
+    "brand": "nokia",
+    "display": {
+      "width": 84,
+      "height": 48,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "nokia 3220": {
     "deviceName": "3220",
     "marketingName": "3220",
@@ -671,6 +1091,34 @@
     "type": "feature-phone",
     "platform": "java"
   },
+  "nokia 3310": {
+    "deviceName": "3310",
+    "marketingName": "3310",
+    "manufacturer": "nokia",
+    "brand": "nokia",
+    "display": {
+      "width": 90,
+      "height": 40,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "nokia 3310i": {
+    "deviceName": "3310i",
+    "marketingName": "3310i",
+    "manufacturer": "nokia",
+    "brand": "nokia",
+    "display": {
+      "width": 90,
+      "height": 40,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "nokia 3315": {
     "deviceName": "3315",
     "marketingName": "3315",
@@ -685,9 +1133,65 @@
     "type": "feature-phone",
     "platform": "java"
   },
+  "nokia 3320": {
+    "deviceName": "3320",
+    "marketingName": "3320",
+    "manufacturer": "nokia",
+    "brand": "nokia",
+    "display": {
+      "width": 84,
+      "height": 48,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "nokia 3330": {
     "deviceName": "3330",
     "marketingName": "3330",
+    "manufacturer": "nokia",
+    "brand": "nokia",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "nokia 3350": {
+    "deviceName": "3350",
+    "marketingName": "3350",
+    "manufacturer": "nokia",
+    "brand": "nokia",
+    "display": {
+      "width": 96,
+      "height": 65,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "nokia 3360": {
+    "deviceName": "3360",
+    "marketingName": "3360",
+    "manufacturer": "nokia",
+    "brand": "nokia",
+    "display": {
+      "width": 84,
+      "height": 48,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "nokia 3395": {
+    "deviceName": "3395",
+    "marketingName": "3395",
     "manufacturer": "nokia",
     "brand": "nokia",
     "display": {
@@ -741,6 +1245,20 @@
     "type": "feature-phone",
     "platform": "java"
   },
+  "nokia 3520": {
+    "deviceName": "3520",
+    "marketingName": "3520",
+    "manufacturer": "nokia",
+    "brand": "nokia",
+    "display": {
+      "width": 96,
+      "height": 65,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "nokia 3530": {
     "deviceName": "3530",
     "marketingName": "3530",
@@ -751,6 +1269,34 @@
       "height": 65,
       "touch": false,
       "size": 1.5
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "nokia 3555": {
+    "deviceName": "3555",
+    "marketingName": "3555",
+    "manufacturer": "nokia",
+    "brand": "nokia",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": 1.8
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "nokia 3555b": {
+    "deviceName": "3555B",
+    "marketingName": "3555B",
+    "manufacturer": "nokia",
+    "brand": "nokia",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": 1.8
     },
     "type": "feature-phone",
     "platform": "java"
@@ -3681,9 +4227,37 @@
     "type": "feature-phone",
     "platform": "symbian"
   },
+  "nokia n75": {
+    "deviceName": "N75",
+    "marketingName": "N75",
+    "manufacturer": "nokia",
+    "brand": "nokia",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": 2.4
+    },
+    "type": "feature-phone",
+    "platform": "symbian"
+  },
   "nokia n76": {
     "deviceName": "N76",
     "marketingName": "N76",
+    "manufacturer": "nokia",
+    "brand": "nokia",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": 2.4
+    },
+    "type": "feature-phone",
+    "platform": "symbian"
+  },
+  "nokia n77": {
+    "deviceName": "N77",
+    "marketingName": "N77",
     "manufacturer": "nokia",
     "brand": "nokia",
     "display": {
