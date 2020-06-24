@@ -1,6 +1,8 @@
 {
   "rules": {
     "/mxiii-g/i": "mbx mxiii-g",
+    "/mbx reference board \\(g18ref\\)/i": "mbx g18ref",
+    "/mbx reference board \\(f16ref\\)/i": "mbx f16ref",
     "/dvbt reference board/i": "mbx dvbt"
   },
   "generic": "general mbx device"

@@ -1,4 +1,18 @@
 {
+  "mediacom m-mp1050s2": {
+    "deviceName": "M-MP1050S2",
+    "marketingName": "M-MP1050S2",
+    "manufacturer": "mediacom",
+    "brand": "mediacom",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "size": 10.1
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
   "mediacom m-mp10pa": {
     "deviceName": "M-MP10PA",
     "marketingName": "SmartPad 10.1 HD Pro",
@@ -97,6 +111,20 @@
     "type": "tablet",
     "platform": "android"
   },
+  "mediacom m-mp710go": {
+    "deviceName": "M-MP710GO",
+    "marketingName": "SmartPad 7.0 Go",
+    "manufacturer": "mediacom",
+    "brand": "mediacom",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 7
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
   "mediacom m-mp740gox": {
     "deviceName": "M-MP740GOx",
     "marketingName": "SmartPad 7.0 Go Blue Sky",
@@ -111,9 +139,93 @@
     "type": "tablet",
     "platform": "android"
   },
+  "mediacom m-mp706i": {
+    "deviceName": "M-MP706I",
+    "marketingName": "SmartPad 706i",
+    "manufacturer": "mediacom",
+    "brand": "mediacom",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 7
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "mediacom m-mp707i": {
+    "deviceName": "M-MP707I",
+    "marketingName": "SmartPad 707i",
+    "manufacturer": "mediacom",
+    "brand": "mediacom",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 7
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "mediacom m-mp711i": {
+    "deviceName": "M-MP711I",
+    "marketingName": "SmartPad 711i",
+    "manufacturer": "mediacom",
+    "brand": "mediacom",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 7
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "mediacom m-mp715i": {
+    "deviceName": "M-MP715I",
+    "marketingName": "SmartPad 715i",
+    "manufacturer": "mediacom",
+    "brand": "mediacom",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 7
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "mediacom m-mp720i": {
+    "deviceName": "M-MP720I",
+    "marketingName": "SmartPad 720i",
+    "manufacturer": "mediacom",
+    "brand": "mediacom",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 7
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
   "mediacom m-mp722i": {
     "deviceName": "M-MP722I",
     "marketingName": "SmartPad 722i",
+    "manufacturer": "mediacom",
+    "brand": "mediacom",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "size": 7
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "mediacom m-mp722m": {
+    "deviceName": "M-MP722M",
+    "marketingName": "SmartPad 722m",
     "manufacturer": "mediacom",
     "brand": "mediacom",
     "display": {
@@ -135,6 +247,20 @@
       "height": 768,
       "touch": true,
       "size": 8
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "mediacom m-mp815i": {
+    "deviceName": "M-MP815I",
+    "marketingName": "SmartPad 815i",
+    "manufacturer": "mediacom",
+    "brand": "mediacom",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "size": null
     },
     "type": "tablet",
     "platform": "android"
@@ -181,9 +307,51 @@
     "type": "tablet",
     "platform": "android"
   },
+  "mediacom m-mp99s4": {
+    "deviceName": "M-MP99S4",
+    "marketingName": "SmartPad 9.7 HD S4",
+    "manufacturer": "mediacom",
+    "brand": "mediacom",
+    "display": {
+      "width": 2048,
+      "height": 1536,
+      "touch": true,
+      "size": 9.7
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
   "mediacom m-mp940m": {
     "deviceName": "M-MP940M",
     "marketingName": "SmartPad 9.7 Mobile",
+    "manufacturer": "mediacom",
+    "brand": "mediacom",
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "size": 9.7
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "mediacom m-mp917i": {
+    "deviceName": "M-MP917I",
+    "marketingName": "SmartPad 917i",
+    "manufacturer": "mediacom",
+    "brand": "mediacom",
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "size": 9.7
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "mediacom m-mp927i": {
+    "deviceName": "M-MP927I",
+    "marketingName": "SmartPad 927i",
     "manufacturer": "mediacom",
     "brand": "mediacom",
     "display": {
@@ -211,7 +379,7 @@
   },
   "mediacom m-mp720go": {
     "deviceName": "M-MP720GO",
-    "marketingName": "SmartPad GO",
+    "marketingName": "SmartPad Go",
     "manufacturer": "mediacom",
     "brand": "mediacom",
     "display": {
