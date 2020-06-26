@@ -1,44 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla / reddit pic scraper v0.8 (bklug@tyx.net)"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "browser": {
-      "name": "reddit pic scraper",
-      "modus": null,
-      "version": "0.8.0",
-      "manufacturer": "reddit",
-      "bits": null,
-      "type": "bot"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (compatible; GroupHigh/1.0; +http://www.grouphigh.com/bot.html)"
     },
     "device": {
@@ -3783,6 +3745,44 @@
       "modus": null,
       "version": null,
       "manufacturer": "domains-bot",
+      "bits": null,
+      "type": "bot"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "RED/1 (http://redbot.org/)"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown"
+    },
+    "browser": {
+      "name": "redbot",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "redbot",
       "bits": null,
       "type": "bot"
     },

@@ -1,44 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "FavitReader/0.5 (Feed Parser; http://simplepie.org; Allow like Gecko) Build/2.00803152059E+13"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "browser": {
-      "name": "SimplePie",
-      "modus": null,
-      "version": null,
-      "manufacturer": "ryan-parman",
-      "bits": null,
-      "type": "bot"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "The Incutio XML-RPC PHP Library -- WordPress/8529"
     },
     "device": {
@@ -3782,6 +3744,44 @@
       "name": "Internet Archive Bot",
       "modus": null,
       "version": "2.4.0",
+      "manufacturer": "archive.org",
+      "bits": null,
+      "type": "bot"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "ia_archiver/5.2 (OSX 3.5; )"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown"
+    },
+    "browser": {
+      "name": "Internet Archive Bot",
+      "modus": null,
+      "version": "5.2.0",
       "manufacturer": "archive.org",
       "bits": null,
       "type": "bot"

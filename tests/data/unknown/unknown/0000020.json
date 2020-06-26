@@ -1,44 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "python-requests/0.8.2"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "browser": {
-      "name": "python-requests",
-      "modus": null,
-      "version": "0.8.2",
-      "manufacturer": "python-software-foundation",
-      "bits": null,
-      "type": "bot"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "fastbot crawler beta 2.0 (+http://www.fastbot.de)"
     },
     "device": {
@@ -3785,6 +3747,44 @@
       "manufacturer": "video-lan",
       "bits": null,
       "type": "multimedia-player"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "GroupHighBlogSearch"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown"
+    },
+    "browser": {
+      "name": "GroupHigh Bot",
+      "modus": null,
+      "version": null,
+      "manufacturer": "group-high",
+      "bits": null,
+      "type": "bot"
     },
     "os": {
       "name": null,

@@ -1,44 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "RED/1 (http://redbot.org/)"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "browser": {
-      "name": "redbot",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "redbot",
-      "bits": null,
-      "type": "bot"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (X11; compatible; semantic-visions.com crawler; HTTPClient 3.1)"
     },
     "device": {
@@ -3783,6 +3745,44 @@
       "modus": null,
       "version": "4.00.0",
       "manufacturer": "binarymonkey",
+      "bits": null,
+      "type": "bot"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "OWASP_SECRET_BROWSER/3.0"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown"
+    },
+    "browser": {
+      "name": "OWASP_SECRET_BROWSER",
+      "modus": null,
+      "version": "3.0.0",
+      "manufacturer": "unknown",
       "bits": null,
       "type": "bot"
     },
