@@ -1,44 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "Blogshares Spiders (Staff Of RAR V1.51)"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "browser": {
-      "name": "Blogshares Spiders",
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "bot"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "GarlikCrawler/1.1 (http://garlik.com/, crawler@garlik.com)"
     },
     "device": {
@@ -3783,6 +3745,44 @@
       "modus": null,
       "version": "4.8.0",
       "manufacturer": "w3c",
+      "bits": null,
+      "type": "bot"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "FavitReader/0.5 (Feed Parser; http://simplepie.org; Allow like Gecko) Build/2.00803152059E+13"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown"
+    },
+    "browser": {
+      "name": "SimplePie",
+      "modus": null,
+      "version": null,
+      "manufacturer": "ryan-parman",
       "bits": null,
       "type": "bot"
     },
