@@ -1,6 +1,44 @@
 [
   {
     "headers": {
+      "user-agent": "NOKIA-6103"
+    },
+    "device": {
+      "deviceName": "6103",
+      "marketingName": "6103",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 160,
+        "height": 128,
+        "touch": false,
+        "size": 1.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "nokia",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "NOKIA-6108"
     },
     "device": {
@@ -3730,44 +3768,6 @@
     "device": {
       "deviceName": "6810",
       "marketingName": "6810",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": 128,
-        "height": 128,
-        "touch": false,
-        "size": 1.6
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "NOKIA-6820"
-    },
-    "device": {
-      "deviceName": "6820",
-      "marketingName": "6820",
       "manufacturer": "nokia",
       "brand": "nokia",
       "display": {

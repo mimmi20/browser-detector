@@ -1,6 +1,44 @@
 [
   {
     "headers": {
+      "user-agent": "\"Nokia6820/2.0 (4.83) Profile/MIDP-1.0 Configuration/CLDC-1.0 (compatible; Googlebot-Mobile/2.1;  http://www.google.com/bot.html)\""
+    },
+    "device": {
+      "deviceName": "6820",
+      "marketingName": "6820",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 128,
+        "height": 128,
+        "touch": false,
+        "size": 1.6
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Google Bot Mobile",
+      "modus": null,
+      "version": "2.1.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "bot"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 NokiaE75-1"
     },
     "device": {
@@ -3744,44 +3782,6 @@
       "name": "UC Browser",
       "modus": null,
       "version": "7.8.0.95",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "symbian-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia5233/UC Browser7.9.0.102/50/355/UCWEB"
-    },
-    "device": {
-      "deviceName": "5233",
-      "marketingName": "5233",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": 640,
-        "height": 360,
-        "touch": true,
-        "size": 3.2
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "7.9.0.102",
       "manufacturer": "ucweb",
       "bits": null,
       "type": "transcoder"

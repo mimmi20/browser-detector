@@ -1,6 +1,44 @@
 [
   {
     "headers": {
+      "user-agent": "UCWEB/2.0 (Symbian; U; S60 V5; en-US; Nokia5250) U2/1.0.0 UCBrowser/9.2.0.336 U2/1.0.0 Mobile"
+    },
+    "device": {
+      "deviceName": "5250",
+      "marketingName": "5250",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 640,
+        "height": 360,
+        "touch": true,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "9.2.0.336",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "symbian-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "U2",
+      "version": "1.0.0",
+      "manufacturer": "ucweb"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "UCWEB/2.0 (Java; U; MIDP-2.0; en-US; NokiaC5-00.2) U2/1.0.0 UCBrowser/9.4.1.377 U2/1.0.0 Mobile UNTRUSTED/1.0 3gpp-gba"
     },
     "device": {
@@ -3759,44 +3797,6 @@
       "name": "Presto",
       "version": null,
       "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "\"Nokia6820/2.0 (4.83) Profile/MIDP-1.0 Configuration/CLDC-1.0 (compatible; Googlebot-Mobile/2.1;  http://www.google.com/bot.html)\""
-    },
-    "device": {
-      "deviceName": "6820",
-      "marketingName": "6820",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": 128,
-        "height": 128,
-        "touch": false,
-        "size": 1.6
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Google Bot Mobile",
-      "modus": null,
-      "version": "2.1.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "bot"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
     }
   }
 ]
