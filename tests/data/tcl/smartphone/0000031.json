@@ -1,6 +1,234 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; 6036Y Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/87.0.0.17.79;]"
+    },
+    "device": {
+      "deviceName": "6036Y",
+      "marketingName": "OneTouch Idol 2 Mini S",
+      "manufacturer": "tcl",
+      "brand": "alcatel",
+      "display": {
+        "width": 960,
+        "height": 540,
+        "touch": true,
+        "size": 4.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "87.0.0.17.79",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "30.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; 5038D Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/92.0.0.16.72;]"
+    },
+    "device": {
+      "deviceName": "5038D",
+      "marketingName": "OneTouch POP D5",
+      "manufacturer": "tcl",
+      "brand": "alcatel",
+      "display": {
+        "width": 854,
+        "height": 480,
+        "touch": true,
+        "size": 4.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "92.0.0.16.72",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "30.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; 6043D Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.81 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "6043D",
+      "marketingName": "OneTouch Idol X+",
+      "manufacturer": "tcl",
+      "brand": "alcatel",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "51.0.2704.81",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "51.0.2704.81",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; STV100-4 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/52.0.2743.98 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/93.0.0.13.69;]"
+    },
+    "device": {
+      "deviceName": "STV100-4",
+      "marketingName": "Priv",
+      "manufacturer": "tcl",
+      "brand": "black-berry",
+      "display": {
+        "width": 2560,
+        "height": 1440,
+        "touch": true,
+        "size": 5.4
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "93.0.0.13.69",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "52.0.2743.98",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; STV100-4 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/79.0.0.18.71;]"
+    },
+    "device": {
+      "deviceName": "STV100-4",
+      "marketingName": "Priv",
+      "manufacturer": "tcl",
+      "brand": "black-berry",
+      "display": {
+        "width": 2560,
+        "height": 1440,
+        "touch": true,
+        "size": 5.4
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "79.0.0.18.71",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "50.0.2661.86",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.0.2; 6039Y Build/LRX22G; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/52.0.2743.98 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/88.0.0.22.76;]"
+    },
+    "device": {
+      "deviceName": "6039Y",
+      "marketingName": "OneTouch Idol 3 (4.7)",
+      "manufacturer": "tcl",
+      "brand": "alcatel",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 4.7
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "88.0.0.22.76",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.0.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "52.0.2743.98",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 6.0; 4034X Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36"
     },
     "device": {
@@ -3568,234 +3796,6 @@
     "engine": {
       "name": "Blink",
       "version": "50.0.2661.89",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; STV100-1 Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "STV100-1",
-      "marketingName": "Priv",
-      "manufacturer": "tcl",
-      "brand": "black-berry",
-      "display": {
-        "width": 2560,
-        "height": 1440,
-        "touch": true,
-        "size": 5.4
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "63.0.3239.111",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.1.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "63.0.3239.111",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.1; 5022X Build/LMY47I) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.83 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "5022X",
-      "marketingName": "OneTouch Pop Star 3G",
-      "manufacturer": "tcl",
-      "brand": "alcatel",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "58.0.3029.83",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.1.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "58.0.3029.83",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; VFD 900 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/62.0.3202.84 Mobile Safari/537.36 [FB_IAB/Orca-Android;FBAV/143.0.0.20.69;]"
-    },
-    "device": {
-      "deviceName": "VFD 900",
-      "marketingName": "Smart Platinum 7",
-      "manufacturer": "tcl",
-      "brand": "vodafone",
-      "display": {
-        "width": 2560,
-        "height": 1440,
-        "touch": true,
-        "size": 5.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "143.0.0.20.69",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "6.0.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "62.0.3202.84",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; 5056X Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "5056X",
-      "marketingName": "OneTouch Pop 4 Plus",
-      "manufacturer": "tcl",
-      "brand": "alcatel",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 5.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "62.0.3202.84",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "6.0.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "62.0.3202.84",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; 6045O Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.125 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "6045O",
-      "marketingName": "OneTouch Idol 3 (5.5)",
-      "manufacturer": "tcl",
-      "brand": "alcatel",
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "59.0.3071.125",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "6.0.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "59.0.3071.125",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; STH100-1 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/61.0.3163.98 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "STH100-1",
-      "marketingName": "DTEK50",
-      "manufacturer": "tcl",
-      "brand": "black-berry",
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5.2
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Android WebView",
-      "modus": null,
-      "version": "61.0.3163.98",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "6.0.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "61.0.3163.98",
       "manufacturer": "google"
     }
   }

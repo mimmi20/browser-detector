@@ -1,6 +1,82 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5 Build/M4B30Z; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/61.0.3163.98 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/142.0.0.29.92;]"
+    },
+    "device": {
+      "deviceName": "Nexus 5",
+      "marketingName": "Nexus 5",
+      "manufacturer": "lg",
+      "brand": "google",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "142.0.0.29.92",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "61.0.3163.98",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5 Build/MOB31V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/62.0.3202.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Nexus 5",
+      "marketingName": "Nexus 5",
+      "manufacturer": "lg",
+      "brand": "google",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "62.0.3202.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "62.0.3202.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 8.0.0; Nexus 5X Build/OPR4.170623.009; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/61.0.3163.98 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/147.0.0.44.75;]"
     },
     "device": {
@@ -3720,82 +3796,6 @@
     "engine": {
       "name": "Blink",
       "version": "61.0.3163.98",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 6.0; LG-H502 Build/MRA58K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/63.0.3239.83 Mobile Safari/537.36 Mobile UCBrowser/3.4.3.532"
-    },
-    "device": {
-      "deviceName": "H502",
-      "marketingName": "Magna",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "3.4.3.532",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "6.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "63.0.3239.83",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 6.0; LG-K430 Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.83 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "K430",
-      "marketingName": "K10",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 5.3
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "63.0.3239.83",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "6.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "63.0.3239.83",
       "manufacturer": "google"
     }
   }

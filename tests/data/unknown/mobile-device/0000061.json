@@ -1,6 +1,44 @@
 [
   {
     "headers": {
+      "user-agent": "KWC-KX1/1011 UP.Browser/6.2.3.2.c.1.100 (GUI) MMP/2.0"
+    },
+    "device": {
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "6.2.3.2",
+      "manufacturer": "myriad",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "KWC-KX1/10095 UP.Browser/6.2.3.2.c.1.100 (GUI) MMP/2.0"
     },
     "device": {
@@ -3726,44 +3764,6 @@
   {
     "headers": {
       "user-agent": "C257 UP.Browser/6.2.3.9.c.4 (GUI) MMP/2.0 UP.Link/1.1"
-    },
-    "device": {
-      "deviceName": "general Mobile device",
-      "marketingName": "general Mobile device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": "Openwave Mobile Browser",
-      "modus": null,
-      "version": "6.2.3.9",
-      "manufacturer": "myriad",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "C257 UP.Browser/6.2.3.9.c.4 (GUI) MMP/2.0"
     },
     "device": {
       "deviceName": "general Mobile device",

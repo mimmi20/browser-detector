@@ -1,6 +1,44 @@
 [
   {
     "headers": {
+      "user-agent": "Nokia5233/UC Browser7.9.0.102/50/355/UCWEB"
+    },
+    "device": {
+      "deviceName": "5233",
+      "marketingName": "5233",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 640,
+        "height": 360,
+        "touch": true,
+        "size": 3.2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "7.9.0.102",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "symbian-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Series40; NokiaC3-00/08.63; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.0.9.17.2"
     },
     "device": {
@@ -3744,44 +3782,6 @@
       "name": "Nokia Proxy Browser",
       "modus": null,
       "version": "2.3.0.0.48",
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Nokia OS",
-      "marketingName": "Nokia OS",
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Series40; Nokia112/03.26; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/3.2.0.0.6"
-    },
-    "device": {
-      "deviceName": "112",
-      "marketingName": "112",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": 160,
-        "height": 128,
-        "touch": false,
-        "size": 1.8
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Nokia Proxy Browser",
-      "modus": null,
-      "version": "3.2.0.0.6",
       "manufacturer": "nokia",
       "bits": null,
       "type": "transcoder"

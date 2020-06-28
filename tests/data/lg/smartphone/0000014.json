@@ -1,6 +1,82 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.4; Nexus 4 Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.133 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Nexus 4",
+      "marketingName": "Nexus 4",
+      "manufacturer": "lg",
+      "brand": "google",
+      "display": {
+        "width": 1280,
+        "height": 768,
+        "touch": true,
+        "size": 4.7
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "44.0.2403.133",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.4",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "44.0.2403.133",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.0.1; LG-D858HK Build/LRX22G; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/43.0.2357.121 Mobile Safari/537.36 ACHEETAHI/2100502002"
+    },
+    "device": {
+      "deviceName": "D858HK",
+      "marketingName": "G3",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": 2560,
+        "height": 1440,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "CM Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "cheetah-mobile",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.0.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "43.0.2357.121",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Dalvik/2.1.0 (Linux; U; Android 5.0.1; LG-D858HK Build/LRX22G)"
     },
     "device": {
@@ -3721,82 +3797,6 @@
       "name": "WebKit",
       "version": null,
       "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; LG-K120 Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.81 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "K120",
-      "marketingName": "Spree (Cricket)",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "display": {
-        "width": 854,
-        "height": 480,
-        "touch": true,
-        "size": 4.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "51.0.2704.81",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.1.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "51.0.2704.81",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 6.0; LG-D855 Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.81 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "D855",
-      "marketingName": "G3",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "display": {
-        "width": 2560,
-        "height": 1440,
-        "touch": true,
-        "size": 5.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "51.0.2704.81",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "6.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "51.0.2704.81",
-      "manufacturer": "google"
     }
   }
 ]

@@ -1,120 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "AmigaVoyager/3.3.126 (AmigaOS/MC680x0)"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "browser": {
-      "name": "AmigaVoyager",
-      "modus": null,
-      "version": "3.3.126",
-      "manufacturer": "vaporware",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Amiga OS",
-      "marketingName": "Amiga OS",
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "AmigaVoyager/1.0"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "browser": {
-      "name": "AmigaVoyager",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "vaporware",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "amibot - http://www.amidalla.de - tech@amidalla.com libwww-perl/5.831"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "browser": {
-      "name": "Motorola Internet Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "motorola",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "adidxbot/1.1 ( http://search.msn.com/msnbot.htm)"
     },
     "device": {
@@ -3782,6 +3668,120 @@
       "name": "Mozilla",
       "modus": null,
       "version": "4.1.0",
+      "manufacturer": "mozilla-foundation",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/4.08"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown"
+    },
+    "browser": {
+      "name": "Mozilla",
+      "modus": null,
+      "version": "4.08.0",
+      "manufacturer": "mozilla-foundation",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/4.06 [en] (Direct Hit Grabber)"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown"
+    },
+    "browser": {
+      "name": "Mozilla",
+      "modus": null,
+      "version": "4.06.0",
+      "manufacturer": "mozilla-foundation",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/4.05 [en] (Elegent)"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown"
+    },
+    "browser": {
+      "name": "Mozilla",
+      "modus": null,
+      "version": "4.05.0",
       "manufacturer": "mozilla-foundation",
       "bits": null,
       "type": "browser"

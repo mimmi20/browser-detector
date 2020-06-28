@@ -1,6 +1,82 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0; LG-H812 Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.83 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "H812",
+      "marketingName": "G5",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": 2560,
+        "height": 1440,
+        "touch": true,
+        "size": 5.3
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "58.0.3029.83",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "58.0.3029.83",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0; VS986 Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.83 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "VS986",
+      "marketingName": "G4 (Verizon)",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": 2560,
+        "height": 1440,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "58.0.3029.83",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "58.0.3029.83",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Dalvik/2.1.0 (Linux; U; Android 6.0; VS986 Build/MRA58K)"
     },
     "device": {
@@ -3721,82 +3797,6 @@
       "name": "WebKit",
       "version": null,
       "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 6.0; LG-H961N Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.91 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "H961N",
-      "marketingName": "V10",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "display": {
-        "width": 2560,
-        "height": 1440,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "55.0.2883.91",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "6.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "55.0.2883.91",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 6.0; LG-D855 Build/MRA58K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/60.0.3112.107 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "D855",
-      "marketingName": "G3",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "display": {
-        "width": 2560,
-        "height": 1440,
-        "touch": true,
-        "size": 5.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Android WebView",
-      "modus": null,
-      "version": "60.0.3112.107",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "6.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "60.0.3112.107",
-      "manufacturer": "google"
     }
   }
 ]

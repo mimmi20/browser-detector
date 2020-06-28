@@ -1,6 +1,44 @@
 [
   {
     "headers": {
+      "user-agent": "Opera/9.80 (Android; Opera Mini/28.0.1764/36.1355; U; in) Presto/2.12.423 Version/12.16"
+    },
+    "device": {
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device"
+    },
+    "browser": {
+      "name": "Opera Mini",
+      "modus": null,
+      "version": "28.0.1764",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": null,
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.12.423",
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "SYM.SL10.HEXING60A_11B_HW (MRE/3.1.00(1280);MAUI/1_XXX_V01.01_R032_V012;BDATE/2014/08/15 17:54;LCD/240320;CHIP/MT6260;KEY/Normal;TOUCH/0;CAMERA/1;SENSOR/0;DEV/HEXING60A_11B_HW;WAP Browser/MAUI (HTTP PGDL;HTTPS);GMOBI/001;MBOUNCE/002;MOMAGIC/003;INDEX/004;SPICEI2I/005;GAMELOFT/006;MO) SL10_1_XXX_V01.01_R032_V012 Release/2014.08.15 WAP Browser/MAUI (HTTP PGDL; HTTPS) Profile/Profile/MIDP-2.0 Configuration/CLDC-1.1 Q03C1-2.40 en-US"
     },
     "device": {
@@ -3744,44 +3782,6 @@
       "name": "Opera Mini",
       "modus": null,
       "version": "8.0.35158",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.12.423",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (J2ME/MIDP; Opera Mini/4.1.15082/36.1370; U; ms) Presto/2.12.423 Version/12.16"
-    },
-    "device": {
-      "deviceName": "general Mobile device",
-      "marketingName": "general Mobile device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "4.1.15082",
       "manufacturer": "opera",
       "bits": null,
       "type": "transcoder"
