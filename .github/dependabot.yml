@@ -12,7 +12,7 @@ updates:
   - mimmi20
   labels:
   - dependencies
-  versioning-strategy: increase-if-necessary
+  versioning-strategy: increase
   ignore:
   - dependency-name: infection/infection
     versions:

@@ -8,7 +8,7 @@ name: "Continuous Integration"
 
 jobs:
   validate:
-    name: "Validate"
+    name: "Validate composer"
 
     runs-on: "ubuntu-latest"
 
@@ -104,7 +104,7 @@ jobs:
         run: "composer outdated --direct --strict"
 
   coding-standards:
-    name: "Coding Standards"
+    name: "Check Coding Standards"
 
     needs: "install"
 
@@ -210,6 +210,10 @@ jobs:
       matrix:
         php-versions:
           - "7.1"
+          - "7.2"
+          - "7.3"
+          - "7.4"
+#          - "8.0"
 
         dependencies:
           - ""
@@ -285,14 +289,17 @@ jobs:
       - name: "Update dependencies with composer"
         run: "composer update --optimize-autoloader --prefer-dist --prefer-stable --no-progress --no-interaction --no-suggest -vv ${{ matrix.dependencies }}"
 
+      - name: "Create cache directory for phpunit/phpunit"
+        run: "mkdir -p .build/coverage"
+
       - name: "Collect code coverage with Xdebug and phpunit/phpunit"
-        run: "vendor/bin/phpunit -c phpunit.xml --colors --coverage-clover=clover.xml --coverage-text"
+        run: "vendor/bin/phpunit -c phpunit.xml --colors --coverage-clover=.build/coverage/clover.xml --coverage-text --coverage-xml=.build/coverage/coverage-xml --log-junit=.build/coverage/junit.xml"
 
       - name: "Upload coverage to Codecov"
         uses: "codecov/codecov-action@master"
         with:
           token: "${{secrets.CODECOV_TOKEN}}"
-          file: "clover.xml"
+          file: ".build/coverage/clover.xml"
           flags: "phpunit"
 
   integration-tests:
