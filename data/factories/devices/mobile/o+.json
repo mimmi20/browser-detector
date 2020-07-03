@@ -1,8 +1,33 @@
 {
   "rules": {
-    "/ultra 2\\.0/i": "o+ ultra 2.0",
+    "/8\\.93[ _]android/i": "o+ 8.93 android",
+    "/8\\.92[ _]android/i": "o+ 8.92 android",
+    "/8\\.91[ _]android/i": "o+ 8.91 android",
+    "/8\\.9[ _]android/i": "o+ 8.9 android",
+    "/8\\.6[ _]android/i": "o+ 8.6 android",
+    "/8\\.52[ _]android/i": "o+ 8.52 android",
+    "/8\\.37[ _]android/i": "o+ 8.37 android",
+    "/8\\.36z[ _]android/i": "o+ 8.36z android",
+    "/8\\.36[ _]android/i": "o+ 8.36 android",
+    "/8\\.33[ _]android/i": "o+ 8.33 android",
+    "/8\\.31z[ _]android/i": "o+ 8.31z android",
+    "/8\\.31[ _]android/i": "o+ 8.31 android",
+    "/8\\.16[ _]android/i": "o+ 8.16 android",
+    "/8\\.15[ _]android/i": "o+ 8.15 android",
+    "/ultra[ _]2\\.0/i": "o+ ultra 2.0",
+    "/360[ _]alpha/i": "o+ 360 alpha",
+    "/360[ _]hd/i": "o+ 360 hd",
+    "/o\\+[ _]360/i": "o+ 360",
+    "/fab[ _]color[ _]2\\.0/i": "o+ fab color 2.0",
+    "/fab[ _]color/i": "o+ fab color",
+    "/fab[ _]lite/i": "o+ fab lite",
+    "/fab[ _]go/i": "o+ fab go",
+    "/venti[ _]4g/i": "o+ venti 4g",
+    "/upsized/i": "o+ upsized",
+    "/ultra/i": "o+ ultra",
     "/presto/i": "o+ presto",
-    "/8\\.36/i": "o+ 8.36"
+    "/crunch/i": "o+ crunch",
+    "/air/i": "o+ air"
   },
   "generic": "general o+ device"
 }
