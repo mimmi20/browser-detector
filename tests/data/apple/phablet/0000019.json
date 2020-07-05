@@ -267,25 +267,25 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 8_2 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Mobile/12D508 [FBAN/FBIOS;FBAV/26.0.0.11.13;FBBV/7806348;FBDV/iPhone7,1;FBMD/iPhone;FBSN/iPhone OS;FBSV/8.2;FBSS/3; FBCR/MegaFon;FBID/phone;FBLC/ru_RU;FBOP/5]"
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_5_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 147.0.0.30.121 (iPhone12,3; iOS 13_5_1; de_DE; de-DE; scale=3.00; 1125x2436; 224680684)"
     },
     "device": {
-      "deviceName": "iPhone 7,1",
-      "marketingName": "iPhone 6 Plus",
+      "deviceName": "iPhone 12,3",
+      "marketingName": "iPhone 11 Pro",
       "manufacturer": "apple",
       "brand": "apple",
       "display": {
-        "width": 1920,
-        "height": 1080,
+        "width": 2436,
+        "height": 1125,
         "touch": true,
-        "size": 5.5
+        "size": 5.8
       },
       "type": "phablet"
     },
     "browser": {
-      "name": "Facebook App",
+      "name": "Instagram App",
       "modus": null,
-      "version": "26.0.0.11.13",
+      "version": "147.0.0.30.121",
       "manufacturer": "facebook",
       "bits": null,
       "type": "application"
@@ -293,13 +293,89 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "8.2.0",
+      "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
     },
     "engine": {
       "name": "WebKit",
-      "version": "600.1.4",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_5_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 147.0.0.30.121 (iPhone10,6; iOS 13_5_1; de_DE; de-DE; scale=3.00; 1125x2436; 224680684)"
+    },
+    "device": {
+      "deviceName": "iPhone 10,6",
+      "marketingName": "iPhone X",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 2436,
+        "height": 1125,
+        "touch": true,
+        "size": 5.8
+      },
+      "type": "phablet"
+    },
+    "browser": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "147.0.0.30.121",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.3.0",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_5_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Snapchat/10.84.5.59 (iPhone10,6; iOS 13.5.1; gzip)"
+    },
+    "device": {
+      "deviceName": "iPhone 10,6",
+      "marketingName": "iPhone X",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 2436,
+        "height": 1125,
+        "touch": true,
+        "size": 5.8
+      },
+      "type": "phablet"
+    },
+    "browser": {
+      "name": "Snapchat",
+      "modus": null,
+      "version": "10.84.5.59",
+      "manufacturer": "snap",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "13.5.1",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
       "manufacturer": "apple"
     }
   }

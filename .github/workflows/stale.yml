@@ -1,4 +1,4 @@
-name: Close stale issues and pull requests
+name: "Close stale issues and pull requests"
 
 on:
   schedule:
@@ -10,7 +10,7 @@ jobs:
     runs-on: "ubuntu-latest"
 
     steps:
-      - uses: "actions/stale@v2"
+      - uses: "actions/stale@v3"
         with:
           repo-token: "${{ secrets.GITHUB_TOKEN }}"
           days-before-stale: 60

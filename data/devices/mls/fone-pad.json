@@ -1,4 +1,18 @@
 {
+  "mls iqm801": {
+    "deviceName": "iQM801",
+    "marketingName": "Brace 4G (2018)",
+    "manufacturer": "mls",
+    "brand": "mls",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": 8
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
   "mls iq1010": {
     "deviceName": "iQ1010",
     "marketingName": "iQTab 10 3G",
@@ -37,6 +51,20 @@
       "height": 600,
       "touch": true,
       "size": 7
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "mls iqm1001": {
+    "deviceName": "iQM1001",
+    "marketingName": "iQTab Stage 4G (2018)",
+    "manufacturer": "mls",
+    "brand": "mls",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": 10.1
     },
     "type": "fone-pad",
     "platform": "android"

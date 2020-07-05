@@ -60,7 +60,8 @@ jobs:
         - echo 'zend.assertions=1' >> ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/travis.ini
         - echo 'assert.exception=On' >> ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/travis.ini
         - composer self-update
-      script: vendor/bin/phpunit -c phpunit.xml --colors --columns 117 --coverage-clover=clover.xml --coverage-text
+      before_script: mkdir -p .build/coverage
+      script: vendor/bin/phpunit -c phpunit.xml --colors --columns 117 --coverage-clover=clover.xml --coverage-text --coverage-xml=.build/coverage/coverage-xml --log-junit=.build/coverage/junit.xml
       after_success: bash <(curl -s https://codecov.io/bash) -f clover.xml -F phpunit
 
     - stage: composer validate

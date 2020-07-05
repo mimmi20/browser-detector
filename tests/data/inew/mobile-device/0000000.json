@@ -1708,5 +1708,43 @@
       "version": "81.0.4044.138",
       "manufacturer": "google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "UCWEB/2.0 (Symbian; U; S60 V5; en-US; VertuConstellation T) U2/1.0.0 UCBrowser/9.1.0.319 U2/1.0.0 Mobile"
+    },
+    "device": {
+      "deviceName": "general iNew device",
+      "marketingName": "general iNew device",
+      "manufacturer": "inew",
+      "brand": "inew",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "9.1.0.319",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": null,
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "U2",
+      "version": "1.0.0",
+      "manufacturer": "ucweb"
+    }
   }
 ]

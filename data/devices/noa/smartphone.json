@@ -1,4 +1,116 @@
 {
+  "noa c25": {
+    "deviceName": "C25",
+    "marketingName": "C25",
+    "manufacturer": "noa",
+    "brand": "noa",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 4
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "noa core forte": {
+    "deviceName": "Core Forte",
+    "marketingName": "Core Forte",
+    "manufacturer": "noa",
+    "brand": "noa",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "noa e1": {
+    "deviceName": "E1",
+    "marketingName": "E1",
+    "manufacturer": "noa",
+    "brand": "noa",
+    "display": {
+      "width": 960,
+      "height": 540,
+      "touch": true,
+      "size": 4.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "noa g1": {
+    "deviceName": "G1",
+    "marketingName": "G1",
+    "manufacturer": "noa",
+    "brand": "noa",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "noa h10": {
+    "deviceName": "H10",
+    "marketingName": "H10",
+    "manufacturer": "noa",
+    "brand": "noa",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": 5.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "noa h10le": {
+    "deviceName": "H10le",
+    "marketingName": "H10le",
+    "manufacturer": "noa",
+    "brand": "noa",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": 5.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "noa h2": {
+    "deviceName": "H2",
+    "marketingName": "H2",
+    "manufacturer": "noa",
+    "brand": "noa",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "noa h4": {
+    "deviceName": "H4",
+    "marketingName": "H4",
+    "manufacturer": "noa",
+    "brand": "noa",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "noa h42": {
     "deviceName": "H42",
     "marketingName": "H42",
@@ -13,6 +125,104 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "noa h43": {
+    "deviceName": "H43",
+    "marketingName": "H43",
+    "manufacturer": "noa",
+    "brand": "noa",
+    "display": {
+      "width": 960,
+      "height": 540,
+      "touch": true,
+      "size": 4.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "noa h44": {
+    "deviceName": "H44",
+    "marketingName": "H44",
+    "manufacturer": "noa",
+    "brand": "noa",
+    "display": {
+      "width": 960,
+      "height": 540,
+      "touch": true,
+      "size": 4.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "noa h44se": {
+    "deviceName": "H44SE",
+    "marketingName": "H44SE",
+    "manufacturer": "noa",
+    "brand": "noa",
+    "display": {
+      "width": 960,
+      "height": 540,
+      "touch": true,
+      "size": 4.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "noa h4se": {
+    "deviceName": "H4SE",
+    "marketingName": "H4SE",
+    "manufacturer": "noa",
+    "brand": "noa",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": 5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "noa h5": {
+    "deviceName": "H5",
+    "marketingName": "H5",
+    "manufacturer": "noa",
+    "brand": "noa",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": 5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "noa h6": {
+    "deviceName": "H6",
+    "marketingName": "H6",
+    "manufacturer": "noa",
+    "brand": "noa",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "noa h8": {
+    "deviceName": "H8",
+    "marketingName": "H8",
+    "manufacturer": "noa",
+    "brand": "noa",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": 5.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "noa h8se": {
     "deviceName": "H8se",
     "marketingName": "H8se",
@@ -22,7 +232,21 @@
       "width": 1920,
       "height": 1080,
       "touch": true,
-      "size": null
+      "size": 5.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "noa h9": {
+    "deviceName": "H9",
+    "marketingName": "H9",
+    "manufacturer": "noa",
+    "brand": "noa",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": 5.5
     },
     "type": "smartphone",
     "platform": "android"
@@ -37,6 +261,90 @@
       "height": 720,
       "touch": true,
       "size": 4.7
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "noa hummer lite": {
+    "deviceName": "Hummer Lite",
+    "marketingName": "Hummer Lite",
+    "manufacturer": "noa",
+    "brand": "noa",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 4.7
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "noa loop": {
+    "deviceName": "Loop",
+    "marketingName": "Loop",
+    "manufacturer": "noa",
+    "brand": "noa",
+    "display": {
+      "width": 960,
+      "height": 540,
+      "touch": true,
+      "size": 4.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "noa mg12": {
+    "deviceName": "MG12",
+    "marketingName": "MG12",
+    "manufacturer": "noa",
+    "brand": "noa",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 4.7
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "noa n2": {
+    "deviceName": "N2",
+    "marketingName": "N2",
+    "manufacturer": "noa",
+    "brand": "noa",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": 5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "noa vision h3": {
+    "deviceName": "Vision H3",
+    "marketingName": "Vision H3",
+    "manufacturer": "noa",
+    "brand": "noa",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "noa vision h3se": {
+    "deviceName": "Vision H3SE",
+    "marketingName": "Vision H3SE",
+    "manufacturer": "noa",
+    "brand": "noa",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 5
     },
     "type": "smartphone",
     "platform": "android"
