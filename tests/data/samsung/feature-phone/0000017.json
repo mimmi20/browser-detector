@@ -1,6 +1,120 @@
 [
   {
     "headers": {
+      "user-agent": "SAMSUNG-S3600/S3600XAHJ3 NetFront/3.4 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+    },
+    "device": {
+      "deviceName": "S3600",
+      "marketingName": "S3600",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": 2.2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "NetFront",
+      "modus": null,
+      "version": "3.4.0",
+      "manufacturer": "access",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": "NetFront",
+      "version": null,
+      "manufacturer": "access"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-G400/G400BMHG2 SHP/VPP/R5 NetFront/3.4 Qtv5.3 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1"
+    },
+    "device": {
+      "deviceName": "SGH-G400",
+      "marketingName": "SGH-G400",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "NetFront",
+      "modus": null,
+      "version": "3.4.0",
+      "manufacturer": "access",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": "NetFront",
+      "version": null,
+      "manufacturer": "access"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-U900/BOHD2 SHP/VPP/R5 NetFront/3.4 QTV5.3 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1"
+    },
+    "device": {
+      "deviceName": "SGH-U900",
+      "marketingName": "SGH-U900",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "NetFront",
+      "modus": null,
+      "version": "3.4.0",
+      "manufacturer": "access",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": "NetFront",
+      "version": null,
+      "manufacturer": "access"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "SAMSUNG-B2700/BMHI2 SHP/VPP/R5 NetFront/3.4 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1"
     },
     "device": {
@@ -3650,120 +3764,6 @@
   {
     "headers": {
       "user-agent": "SEC-SGHV208*MzUyMjg4MDAyNDYxMjk2 UP.Link/1.1"
-    },
-    "device": {
-      "deviceName": "SGH-V208",
-      "marketingName": "SGH-V208",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 160,
-        "height": 128,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SEC-SGHV208*MzUyMjg4MDAxNzk2MzIw UP.Link/1.1"
-    },
-    "device": {
-      "deviceName": "SGH-V208",
-      "marketingName": "SGH-V208",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 160,
-        "height": 128,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SEC-SGHV208*MzUyMjg4MDA4MjcyNDA4 UP.Link/1.1"
-    },
-    "device": {
-      "deviceName": "SGH-V208",
-      "marketingName": "SGH-V208",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 160,
-        "height": 128,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SEC-SGHV208*MzUyMjg4MDA4MDU1NjA1 UP.Link/1.1"
     },
     "device": {
       "deviceName": "SGH-V208",

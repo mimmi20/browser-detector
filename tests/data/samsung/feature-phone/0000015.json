@@ -1,6 +1,120 @@
 [
   {
     "headers": {
+      "user-agent": "SAMSUNG-SPHM330"
+    },
+    "device": {
+      "deviceName": "SPH-M330",
+      "marketingName": "SPH-M330",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 160,
+        "height": 128,
+        "touch": false,
+        "size": 2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Brew",
+      "marketingName": "Brew",
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SPHM350"
+    },
+    "device": {
+      "deviceName": "SPH-M350",
+      "marketingName": "Seek",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Brew",
+      "marketingName": "Brew",
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SPHM500 AU-"
+    },
+    "device": {
+      "deviceName": "SPH-M500",
+      "marketingName": "SPH-M500",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "SAMSUNG-SPHM520 AU-MIC-M520"
     },
     "device": {
@@ -3683,120 +3797,6 @@
       "name": "NetFront",
       "version": null,
       "manufacturer": "access"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG-SM-B360E Opera/9.80 (J2ME/MIDP; Opera Mini/8.0.35840/36.1370; U; en) Presto/2.12.423 Version/12.16"
-    },
-    "device": {
-      "deviceName": "SM-B360E",
-      "marketingName": "Metro 360",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": 2.4
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "8.0.35840",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.12.423",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "UCWEB/2.0 (Java; U; MIDP-2.0; en-US; SAMSUNG-GT-B7722) U2/1.0.0 UCBrowser/9.4.1.377 U2/1.0.0 Mobile UNTRUSTED/1.0"
-    },
-    "device": {
-      "deviceName": "GT-B7722",
-      "marketingName": "Star Duos",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 400,
-        "height": 240,
-        "touch": true,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "9.4.1.377",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": "U2",
-      "version": "1.0.0",
-      "manufacturer": "ucweb"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG-GT-S5222R Opera/9.80 (J2ME/MIDP; Opera Mini/7.0.32584/36.1344; U; en) Presto/2.12.423 Version/12.16"
-    },
-    "device": {
-      "deviceName": "GT-S5222R",
-      "marketingName": "Rex 80",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": true,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "7.0.32584",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.12.423",
-      "manufacturer": "opera"
     }
   }
 ]
