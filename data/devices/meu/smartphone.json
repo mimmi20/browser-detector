@@ -1,4 +1,18 @@
 {
+  "meu an351": {
+    "deviceName": "AN351",
+    "marketingName": "AN351",
+    "manufacturer": "meu",
+    "brand": "meu",
+    "display": {
+      "width": 480,
+      "height": 320,
+      "touch": true,
+      "size": 3.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "meu an400": {
     "deviceName": "AN400",
     "marketingName": "AN400",
@@ -9,6 +23,20 @@
       "height": 480,
       "touch": true,
       "size": null
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "meu an450": {
+    "deviceName": "AN450",
+    "marketingName": "AN450",
+    "manufacturer": "meu",
+    "brand": "meu",
+    "display": {
+      "width": 854,
+      "height": 480,
+      "touch": true,
+      "size": 4.5
     },
     "type": "smartphone",
     "platform": "android"
