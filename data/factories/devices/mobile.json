@@ -307,7 +307,7 @@
     "/vestel|venus[ _](z[12]0|v3)|vsp355[gs]|vsp250[gs]/i": "vestel",
     "/sp874/i": "inar",
     "/skytex|sx-sp715a|sx-sp700a|sx-sp435a/i": "skytex",
-    "/memup|slidepad|(?<!_|[ky] )(sp-?|spng)[0-9]{3}([cdp][ce]?)?( build|[;\\/\\)])/i": "memup",
+    "/memup|slidepad|(?<!_|[ky] )spng[0-9]{3}([cdp][ce]?)?( build|[;\\/\\)])|sp-?816p|sp-?704[cd]/i": "memup",
     "/hsg[0-9]{4}|sn10t1|sn14t71|sn97t41w|sn1at71w|sn70t51a|sn70t31?|snat71bue|t7-qc/i": "hannspree",
     "/pc1088/i": "honlin",
     "/jolla|sailfish(?!browser)/i": "jolla",
