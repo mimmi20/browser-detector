@@ -311,7 +311,7 @@
     "/hsg[0-9]{4}|sn10t1|sn14t71|sn97t41w|sn1at71w|sn70t51a|sn70t31?|snat71bue|t7-qc/i": "hannspree",
     "/pc1088/i": "honlin",
     "/jolla|sailfish(?!browser)/i": "jolla",
-    "/Magic/": "magic",
+    "/(?<!e)Magic/": "magic",
     "/s5003d_champ|esmart m3|s5000d|flash s4010|s5002d spark|victory s4700d/i": "switel",
     "/panasonic|panatv[0-9]+|viera\\/|p902i( build|[;\\/\\)])|eluga[ _]|fz-(n1|a1b)|dl1|p55 max|dmc-cm1|940p|840pe|103p|p55 novo 4g|(adr|android) 4\\.[24].* t10( build|[;\\/\\)])/i": "panasonic",
     "/videocon|vt75c/i": "videocon",
