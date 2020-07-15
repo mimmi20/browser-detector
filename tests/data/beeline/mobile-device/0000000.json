@@ -150,5 +150,43 @@
       "version": "72.0.3626.121",
       "manufacturer": "google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Dalvik/2.1.0 (Linux; U; Android 5.1; Beeline Fast Build/LMY47D)"
+    },
+    "device": {
+      "deviceName": "general Beeline device",
+      "marketingName": "general Beeline device",
+      "manufacturer": "beeline",
+      "brand": "beeline",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device"
+    },
+    "browser": {
+      "name": "Dalvik",
+      "modus": null,
+      "version": "2.1.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
   }
 ]

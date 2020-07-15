@@ -1404,5 +1404,43 @@
       "version": null,
       "manufacturer": "apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Dalvik/1.6.0 (Linux; U; Android 4.2.2; POLYTRON W1400 Build/POLYTRONW1400)"
+    },
+    "device": {
+      "deviceName": "W1400",
+      "marketingName": "Rocket Jetz",
+      "manufacturer": "polytron",
+      "brand": "polytron",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 4
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Dalvik",
+      "modus": null,
+      "version": "1.6.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
   }
 ]
