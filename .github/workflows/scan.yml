@@ -1,0 +1,23 @@
+# https://help.github.com/en/categories/automating-your-workflow-with-github-actions
+
+on:
+  - pull_request
+  - push
+
+name: "Scan"
+
+jobs:
+  composer-unused:
+    name: "Composer Unused"
+
+    runs-on: "ubuntu-latest"
+
+    strategy:
+      fail-fast: false
+
+    steps:
+      - name: "Checkout"
+        uses: "actions/checkout@v2"
+
+      - name: "ComposerUnused"
+        uses: docker://icanhazstring/composer-unused-ga
