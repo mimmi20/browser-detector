@@ -1,6 +1,44 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; SAMSUNG SM-G975F) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/12.0 Chrome/79.0.3945.136 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "SM-G975F",
+      "marketingName": "Galaxy S10+ Dual SIM (Global)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 3040,
+        "height": 1440,
+        "touch": true,
+        "size": 6.4
+      },
+      "type": "phablet"
+    },
+    "browser": {
+      "name": "Samsung Browser",
+      "modus": null,
+      "version": "12.0.0",
+      "manufacturer": "samsung",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "79.0.3945.136",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 10; SM-G975F Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/81.0.4044.138 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/272.0.0.50.125;] comdirect/1.0 (appVersion:20.5.4;deviceType:mobile)"
     },
     "device": {
@@ -1297,7 +1335,7 @@
     },
     "device": {
       "deviceName": "SM-A207F",
-      "marketingName": "Galaxy A20s",
+      "marketingName": "Galaxy A20s (Global)",
       "manufacturer": "samsung",
       "brand": "samsung",
       "display": {
@@ -1563,7 +1601,7 @@
     },
     "device": {
       "deviceName": "SM-A207F",
-      "marketingName": "Galaxy A20s",
+      "marketingName": "Galaxy A20s (Global)",
       "manufacturer": "samsung",
       "brand": "samsung",
       "display": {
@@ -3045,7 +3083,7 @@
     },
     "device": {
       "deviceName": "SM-A207F",
-      "marketingName": "Galaxy A20s",
+      "marketingName": "Galaxy A20s (Global)",
       "manufacturer": "samsung",
       "brand": "samsung",
       "display": {
@@ -3758,44 +3796,6 @@
     "engine": {
       "name": "Blink",
       "version": "83.0.4103.83",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; SM-G986B Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/81.0.4044.138 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/272.0.0.50.125;] comdirect/1.0 (appVersion:20.5.4;deviceType:mobile)"
-    },
-    "device": {
-      "deviceName": "SM-G986B",
-      "marketingName": "Galaxy S20 Plus 5G",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 3200,
-        "height": 1440,
-        "touch": true,
-        "size": 6.7
-      },
-      "type": "phablet"
-    },
-    "browser": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "272.0.0.50.125",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "81.0.4044.138",
       "manufacturer": "google"
     }
   }
