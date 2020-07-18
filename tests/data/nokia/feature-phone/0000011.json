@@ -1,44 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "Nokia308/2.0 (05.85) Profile/MIDP-2.1 Configuration/CLDC-1.1 UCWEB/2.0 (Java; U; MIDP-2.0; en-US; nokia308) U2/1.0.0 UCBrowser/9.1.0.291 U2/1.0.0 Mobile UNTRUSTED/1.0"
-    },
-    "device": {
-      "deviceName": "308",
-      "marketingName": "Asha 308",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": 400,
-        "height": 240,
-        "touch": true,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "9.1.0.291",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Nokia OS",
-      "marketingName": "Nokia OS",
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null
-    },
-    "engine": {
-      "name": "U2",
-      "version": "1.0.0",
-      "manufacturer": "ucweb"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Nokia203/2.0 (20.26) Profile/MIDP-2.1 Configuration/CLDC-1.1 UCWEB/2.0 (Java; U; MIDP-2.0; en-US; nokia203) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile"
     },
     "device": {
@@ -3785,6 +3747,44 @@
       "manufacturer": "novarra",
       "bits": null,
       "type": "transcoder"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Nokia6016i/1.0 (M125V1000.nep) UP.Browser/4.1.26l1.c.2.100 UP.Link/1.1"
+    },
+    "device": {
+      "deviceName": "6016i",
+      "marketingName": "6016i",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 96,
+        "height": 65,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "4.1.26",
+      "manufacturer": "myriad",
+      "bits": null,
+      "type": "browser"
     },
     "os": {
       "name": "JavaOS",
