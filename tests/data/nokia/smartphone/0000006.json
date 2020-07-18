@@ -1,6 +1,82 @@
 [
   {
     "headers": {
+      "user-agent": "UCWEB/2.0 (Windows; U; wds 8.0; zh-CN; NOKIA; RM-822_apac_prc_204) U2/1.0.0 UCBrowser/3.1.1.343 U2/1.0.0 Mobile"
+    },
+    "device": {
+      "deviceName": "RM-822",
+      "marketingName": "Lumia 920",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 1280,
+        "height": 768,
+        "touch": true,
+        "size": 4.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "3.1.1.343",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Windows Phone OS",
+      "marketingName": "Windows Phone OS",
+      "version": "8.0.0",
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": "U2",
+      "version": "1.0.0",
+      "manufacturer": "ucweb"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "UCWEB/2.0(Symbian; U; S60 V5; en-US; NokiaC6-01) U2/1.0.0 UCBrowser/8.8.1.252 U2/1.0.0 Mobile"
+    },
+    "device": {
+      "deviceName": "C6-01",
+      "marketingName": "C6",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 640,
+        "height": 360,
+        "touch": true,
+        "size": 3.2
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "8.8.1.252",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "symbian-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "U2",
+      "version": "1.0.0",
+      "manufacturer": "ucweb"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "UCWEB/2.0 (Windows; U; wds 7.10; en-US; NOKIA; Lumia 710) U2/1.0.0 UCBrowser/3.0.0.285 U2/1.0.0 Mobile"
     },
     "device": {
@@ -3735,82 +3811,6 @@
       "name": "U3",
       "version": "0.8.0",
       "manufacturer": "ucweb"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.1.2; en-US; Nokia_XL Build/JZO54K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/10.10.5.809 U3/0.8.0 Mobile Safari/534.30"
-    },
-    "device": {
-      "deviceName": "RM-1030",
-      "marketingName": "XL",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": 800,
-        "height": 480,
-        "touch": true,
-        "size": 5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "10.10.5.809",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.1.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "U3",
-      "version": "0.8.0",
-      "manufacturer": "ucweb"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.1.2; Nokia_X Build/JZO54K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.110 Mobile Safari/537.36 OPR/36.2.2126.102826"
-    },
-    "device": {
-      "deviceName": "X",
-      "marketingName": "X",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": 800,
-        "height": 480,
-        "touch": true,
-        "size": 4
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Opera Mobile",
-      "modus": null,
-      "version": "36.2.2126.102826",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.1.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "49.0.2623.110",
-      "manufacturer": "google"
     }
   }
 ]
