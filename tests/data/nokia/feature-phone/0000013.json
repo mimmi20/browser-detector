@@ -1452,5 +1452,43 @@
       "version": null,
       "manufacturer": "mozilla-foundation"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "NOKIA-NHP-2AX"
+    },
+    "device": {
+      "deviceName": "NHP-2AX",
+      "marketingName": "NHP-2AX",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 90,
+        "height": 40,
+        "touch": true,
+        "size": 2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "nokia",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
   }
 ]
