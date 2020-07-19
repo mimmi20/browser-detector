@@ -1,4 +1,18 @@
 {
+  "mobicel metro": {
+    "deviceName": "Metro",
+    "marketingName": "Metro",
+    "manufacturer": "mobicel",
+    "brand": "mobicel",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "size": 3.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "mobicel metro 2": {
     "deviceName": "Metro 2",
     "marketingName": "Metro 2",
@@ -7,6 +21,34 @@
     "display": {
       "width": 1024,
       "height": 600,
+      "touch": true,
+      "size": 3.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "mobicel r1": {
+    "deviceName": "R1",
+    "marketingName": "R1",
+    "manufacturer": "mobicel",
+    "brand": "mobicel",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 5.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "mobicel titan": {
+    "deviceName": "Titan",
+    "marketingName": "Titan",
+    "manufacturer": "mobicel",
+    "brand": "mobicel",
+    "display": {
+      "width": 480,
+      "height": 320,
       "touch": true,
       "size": 3.5
     },
