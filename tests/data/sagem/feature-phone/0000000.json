@@ -1939,44 +1939,6 @@
   },
   {
     "headers": {
-      "user-agent": "SAGEM-myX-5m/1.0 UP.Browser/6.1.0.6.1.c.3 (GUI) MMP/1.0 (Google WAP Proxy/1.0)"
-    },
-    "device": {
-      "deviceName": "my X-5m",
-      "marketingName": "my X-5m",
-      "manufacturer": "sagem",
-      "brand": "sagem",
-      "display": {
-        "width": 101,
-        "height": 80,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Google Wap Proxy",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "bot"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "SAGEM-VF526/1.0/EVN_HF MIDP/2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.2.6.c.1.414 (GUI)"
     },
     "device": {
@@ -2037,6 +1999,44 @@
       "manufacturer": "myriad",
       "bits": null,
       "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAGEM-myX-5m/1.0 UP.Browser/6.1.0.6.1.c.3 (GUI) MMP/1.0 (Google WAP Proxy/1.0)"
+    },
+    "device": {
+      "deviceName": "my X-5m",
+      "marketingName": "my X-5m",
+      "manufacturer": "sagem",
+      "brand": "sagem",
+      "display": {
+        "width": 101,
+        "height": 80,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Google Wap Proxy",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "bot"
     },
     "os": {
       "name": "JavaOS",

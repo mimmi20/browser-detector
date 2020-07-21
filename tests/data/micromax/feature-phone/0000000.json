@@ -799,6 +799,44 @@
   },
   {
     "headers": {
+      "user-agent": "MicromaxX222"
+    },
+    "device": {
+      "deviceName": "X222",
+      "marketingName": "X222",
+      "manufacturer": "micromax",
+      "brand": "micromax",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Micromax X085/R2AE SEMC-Browser/4.0.3 Profile/MIDP-2.0 Configuration/CLDC-1.1"
     },
     "device": {
@@ -1707,44 +1745,6 @@
       "name": "U2",
       "version": "1.0.0",
       "manufacturer": "ucweb"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "MicromaxX222"
-    },
-    "device": {
-      "deviceName": "X222",
-      "marketingName": "X222",
-      "manufacturer": "micromax",
-      "brand": "micromax",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
     }
   }
 ]

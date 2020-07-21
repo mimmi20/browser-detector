@@ -1,6 +1,234 @@
 [
   {
     "headers": {
+      "user-agent": "UCWEB/2.0 (Symbian; U; S60 V5; en-US; NokiaN97 mini) U2/1.0.0 UCBrowser/9.2.0.336 U2/1.0.0 Mobile"
+    },
+    "device": {
+      "deviceName": "N97 Mini",
+      "marketingName": "N97 Mini",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 640,
+        "height": 360,
+        "touch": true,
+        "size": 3.2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "9.2.0.336",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "symbian-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "U2",
+      "version": "1.0.0",
+      "manufacturer": "ucweb"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Nokia7210Supernova/2.0 (07.23) Profile/MIDP-2.1 Configuration/CLDC-1.1 UCWEB/2.0 (Java; U; MIDP-2.0; en-US; Nokia7210Supernova) U2/1.0.0 UCBrowser/9.5.0.449 U2/1.0.0 Mobile UNTRUSTED/1.0"
+    },
+    "device": {
+      "deviceName": "7210 Supernova",
+      "marketingName": "7210 Supernova",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "9.5.0.449",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": "U2",
+      "version": "1.0.0",
+      "manufacturer": "ucweb"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "NokiaC2-02/2.0 (06.96) Profile/MIDP-2.1 Configuration/CLDC-1.1 UCWEB/2.0 (Java; U; MIDP-2.0; en-US; NokiaC2-02) U2/1.0.0 UCBrowser/9.5.0.449 U2/1.0.0 Mobile"
+    },
+    "device": {
+      "deviceName": "C2-02",
+      "marketingName": "C2",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "size": 2.4
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "9.5.0.449",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Nokia OS",
+      "marketingName": "Nokia OS",
+      "version": null,
+      "manufacturer": "nokia",
+      "bits": null
+    },
+    "engine": {
+      "name": "U2",
+      "version": "1.0.0",
+      "manufacturer": "ucweb"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Nokia201/2.0 (11.95) Profile/MIDP-2.1 Configuration/CLDC-1.1 UCWEB/2.0 (Java; U; MIDP-2.0; en-US; Nokia201) U2/1.0.0 UCBrowser/9.4.1.377 U2/1.0.0 Mobile"
+    },
+    "device": {
+      "deviceName": "201",
+      "marketingName": "Asha 201",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.4
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "9.4.1.377",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Nokia OS",
+      "marketingName": "Nokia OS",
+      "version": null,
+      "manufacturer": "nokia",
+      "bits": null
+    },
+    "engine": {
+      "name": "U2",
+      "version": "1.0.0",
+      "manufacturer": "ucweb"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Nokia309/2.0 (05.85) Profile/MIDP-2.1 Configuration/CLDC-1.1 UCWEB/2.0 (Java; U; MIDP-2.0; en-US; Nokia309) U2/1.0.0 UCBrowser/9.5.0.449 U2/1.0.0 Mobile"
+    },
+    "device": {
+      "deviceName": "309",
+      "marketingName": "Asha 309",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 400,
+        "height": 240,
+        "touch": true,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "9.5.0.449",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Nokia OS",
+      "marketingName": "Nokia OS",
+      "version": null,
+      "manufacturer": "nokia",
+      "bits": null
+    },
+    "engine": {
+      "name": "U2",
+      "version": "1.0.0",
+      "manufacturer": "ucweb"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "UCWEB/2.0 (Java; U; MIDP-2.0; en-US; Nokia5233) U2/1.0.0 UCBrowser/9.5.0.449 U2/1.0.0 Mobile UNTRUSTED/1.0 3gpp-gba"
+    },
+    "device": {
+      "deviceName": "5233",
+      "marketingName": "5233",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 640,
+        "height": 360,
+        "touch": true,
+        "size": 3.2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "9.5.0.449",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "symbian-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "U2",
+      "version": "1.0.0",
+      "manufacturer": "ucweb"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Nokia3110c/2.0 (07.30) Profile/MIDP-2.0 Configuration/CLDC-1.1 UCWEB/2.0 (Java; U; MIDP-2.0; en-US; Nokia3110c) U2/1.0.0 UCBrowser/9.5.0.449 U2/1.0.0 Mobile UNTRUSTED/1.0"
     },
     "device": {
@@ -2015,6 +2243,44 @@
   },
   {
     "headers": {
+      "user-agent": "UCWEB/2.0 (Symbian; U; S60 V5; en-US; Nokia5236) U2/1.0.0 UCBrowser/9.2.0.336 U2/1.0.0 Mobile"
+    },
+    "device": {
+      "deviceName": "5236",
+      "marketingName": "5236",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 640,
+        "height": 360,
+        "touch": true,
+        "size": 3.2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "9.2.0.336",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "symbian-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "U2",
+      "version": "1.0.0",
+      "manufacturer": "ucweb"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Nokia300/5.0 (07.57) Profile/MIDP-2.1 Configuration/CLDC-1.1 UCWEB/2.0 (Java; U; MIDP-2.0; en-US; Nokia300) U2/1.0.0 UCBrowser/9.4.1.377 U2/1.0.0 Mobile"
     },
     "device": {
@@ -2087,6 +2353,44 @@
       "name": "U2",
       "version": "1.0.0",
       "manufacturer": "ucweb"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Series40; Nokia307/07.55; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/2.2.0.0.36"
+    },
+    "device": {
+      "deviceName": "307",
+      "marketingName": "Asha 307",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 400,
+        "height": 240,
+        "touch": true,
+        "size": 3
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Nokia Proxy Browser",
+      "modus": null,
+      "version": "2.2.0.0.36",
+      "manufacturer": "nokia",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Nokia OS",
+      "marketingName": "Nokia OS",
+      "version": null,
+      "manufacturer": "nokia",
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla-foundation"
     }
   },
   {
@@ -3493,310 +3797,6 @@
       "name": "U2",
       "version": "1.0.0",
       "manufacturer": "ucweb"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "UCWEB/2.0 (Symbian; U; S60 V5; en-US; NokiaC5-03) U2/1.0.0 UCBrowser/9.1.0.319 U2/1.0.0 Mobile"
-    },
-    "device": {
-      "deviceName": "C5-03",
-      "marketingName": "C5",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": 640,
-        "height": 360,
-        "touch": true,
-        "size": 3.2
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "9.1.0.319",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "symbian-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "U2",
-      "version": "1.0.0",
-      "manufacturer": "ucweb"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "UCWEB/2.0 (Symbian; U; S60 V3; en-US; NOKIAN82) U2/1.0.0 UCBrowser/9.2.0.336 U2/1.0.0 Mobile"
-    },
-    "device": {
-      "deviceName": "N82",
-      "marketingName": "N82",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": 2.4
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "9.2.0.336",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "symbian-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "U2",
-      "version": "1.0.0",
-      "manufacturer": "ucweb"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia3230/2.0 (5.0614.0) SymbianOS/7.0s Series60/2.1 Profile/MIDP-2.0Configuration/CLDC-1.0"
-    },
-    "device": {
-      "deviceName": "3230",
-      "marketingName": "3230",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": 208,
-        "height": 176,
-        "touch": false,
-        "size": 2.1
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "symbian-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia303/5.0 (14.87) Profile/MIDP-2.1 Configuration/CLDC-1.1 UCWEB/2.0 (Java; U; MIDP-2.0; en-US; Nokia303) U2/1.0.0 UCBrowser/9.5.0.449 U2/1.0.0 Mobile UNTRUSTED/1.0"
-    },
-    "device": {
-      "deviceName": "303",
-      "marketingName": "Asha 303",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": true,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "9.5.0.449",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Nokia OS",
-      "marketingName": "Nokia OS",
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null
-    },
-    "engine": {
-      "name": "U2",
-      "version": "1.0.0",
-      "manufacturer": "ucweb"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "UCWEB/2.0 (Symbian; U; S60 V5; en-US; NokiaE6-00) U2/1.0.0 UCBrowser/9.0.1.317 U2/1.0.0 Mobile"
-    },
-    "device": {
-      "deviceName": "E6-00",
-      "marketingName": "E6",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": 640,
-        "height": 480,
-        "touch": true,
-        "size": 2.46
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "9.0.1.317",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "symbian-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "U2",
-      "version": "1.0.0",
-      "manufacturer": "ucweb"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "UCWEB/2.0 (Java; U; MIDP-2.0; en-US; NokiaC5-00.2) U2/1.0.0 UCBrowser/9.5.0.449 U2/1.0.0 Mobile UNTRUSTED/1.0 3gpp-gba"
-    },
-    "device": {
-      "deviceName": "C5-00",
-      "marketingName": "C5",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": 2.2
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "9.5.0.449",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "symbian-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "U2",
-      "version": "1.0.0",
-      "manufacturer": "ucweb"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Nokia6303classic/2.0 (10.12) Profile/MIDP-2.1 Configuration/CLDC-1.1 UCWEB/2.0 (Java; U; MIDP-2.0; en-US; Nokia6303classic) U2/1.0.0 UCBrowser/9.5.0.449 U2/1.0.0 Mobile"
-    },
-    "device": {
-      "deviceName": "6303 classic",
-      "marketingName": "6303 classic",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": 2.2
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "9.5.0.449",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "symbian-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "U2",
-      "version": "1.0.0",
-      "manufacturer": "ucweb"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Series40; NokiaX2-05/08.60; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.5.0.34.15"
-    },
-    "device": {
-      "deviceName": "X2-05",
-      "marketingName": "X2",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": 2.2
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Nokia Proxy Browser",
-      "modus": null,
-      "version": "1.5.0.34.15",
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Nokia OS",
-      "marketingName": "Nokia OS",
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla-foundation"
     }
   }
 ]
