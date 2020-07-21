@@ -1,44 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.2.2; en-us; C8512 Build/HuaweiC8512) AppleWebKit/530.17 (KHTML, like Gecko) FlyFlow/2.4 Version/4.0 Mobile Safari/530.17 T5/1.0"
-    },
-    "device": {
-      "deviceName": "C8512",
-      "marketingName": "C8512",
-      "manufacturer": "huawei",
-      "brand": "huawei",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": true,
-        "size": 2.8
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "FlyFlow",
-      "modus": null,
-      "version": "2.4.0",
-      "manufacturer": "baidu",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "2.2.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "530.17.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; U; Android 2.2.2; En-us; C8600 Build/HuaweiC8600) AppleWebKit/533.1 (KHTML, Like Gecko) Version/4.0 Mobile Safari/533.1"
     },
     "device": {
@@ -3790,6 +3752,44 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "2.3.3",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "528.5.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.2.2; zh-cn; MTS-SP101 Build/HuaweiC8511; 240*320) AppleWebKit/528.5+ (KHTML, like Gecko) Version/3.1.2 Mobile Safari/525.20.1/UCWEB7.9.0.94/139/355"
+    },
+    "device": {
+      "deviceName": "MTS-SP101",
+      "marketingName": "MTS-SP101",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "7.9.0.94",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "2.2.2",
       "manufacturer": "google",
       "bits": null
     },

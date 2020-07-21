@@ -1,158 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 7.1.1; en-US; XT1799-2 Build/NZS26.86-108) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.108 UCBrowser/12.13.5.1209 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "XT1799-2",
-      "marketingName": "XT1799-2",
-      "manufacturer": "motorola",
-      "brand": "motorola",
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5.2
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "12.13.5.1209",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "7.1.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "57.0.2987.108",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; XT1943-1 Build/OPM1.171019.019; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/64.0.3282.137 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "XT1943-1",
-      "marketingName": "P30",
-      "manufacturer": "motorola",
-      "brand": "motorola",
-      "display": {
-        "width": 2246,
-        "height": 1080,
-        "touch": true,
-        "size": 6.2
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Android WebView",
-      "modus": null,
-      "version": "64.0.3282.137",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "8.1.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "64.0.3282.137",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; XT1941-2 Build/OCK28.47-32; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/64.0.3282.137 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "XT1941-2",
-      "marketingName": "P30 Play Dual SIM",
-      "manufacturer": "motorola",
-      "brand": "motorola",
-      "display": {
-        "width": 1520,
-        "height": 720,
-        "touch": true,
-        "size": 5.9
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Android WebView",
-      "modus": null,
-      "version": "64.0.3282.137",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "8.1.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "64.0.3282.137",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 8.1.0; zh-cn; XT1942-1 Build/OCT28.67-54) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/10.3 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "XT1942-1",
-      "marketingName": "P30 Note Standard Edition Dual SIM",
-      "manufacturer": "motorola",
-      "brand": "motorola",
-      "display": {
-        "width": 2246,
-        "height": 1080,
-        "touch": true,
-        "size": 6.2
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "QQ Browser",
-      "modus": null,
-      "version": "10.3.0",
-      "manufacturer": "tencent",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "8.1.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "66.0.3359.126",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "AndroidDownloadManager/4.1.1 (Linux; U; Android 4.1.1; MB886 Build/9.8.0Q-97_MB886_FFW-20)"
     },
     "device": {
@@ -3797,6 +3645,158 @@
       "name": "WebKit",
       "version": "534.30.0",
       "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.0.4; en-us; IS12M Build/6.7.5-50_MR1-11) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
+    },
+    "device": {
+      "deviceName": "XT909",
+      "marketingName": "Razr",
+      "manufacturer": "motorola",
+      "brand": "motorola",
+      "display": {
+        "width": 960,
+        "height": 540,
+        "touch": true,
+        "size": 4.3
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.0.4",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; XT1021 Build/KXC20.82-13) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36 MxBrowser/4.3.0.2000  Maxthon/4.3.0.2000 Maxthon/4.3.0.2000"
+    },
+    "device": {
+      "deviceName": "XT1021",
+      "marketingName": "Moto E",
+      "manufacturer": "motorola",
+      "brand": "motorola",
+      "display": {
+        "width": 960,
+        "height": 540,
+        "touch": true,
+        "size": 4.3
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Maxthon",
+      "modus": null,
+      "version": "4.3.0.2000",
+      "manufacturer": "maxthon",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "30.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "UCWEB/2.0(Linux; U; Opera Mini/7.1.32052/30.3697; fr-fr; MB525 Build/JRDNEM_U3_2.24.0) U2/1.0.0 UCBrowser/9.5.0.360 Mobile"
+    },
+    "device": {
+      "deviceName": "MB525",
+      "marketingName": "Defy",
+      "manufacturer": "motorola",
+      "brand": "motorola",
+      "display": {
+        "width": 854,
+        "height": 480,
+        "touch": true,
+        "size": 3.7
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "9.5.0.360",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": null,
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "U2",
+      "version": "1.0.0",
+      "manufacturer": "ucweb"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; XT1032 Build/KLB20.9-1.10-1.24-1.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.114 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "XT1032",
+      "marketingName": "Moto G",
+      "manufacturer": "motorola",
+      "brand": "motorola",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 4.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "34.0.1847.114",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "34.0.1847.114",
+      "manufacturer": "google"
     }
   }
 ]

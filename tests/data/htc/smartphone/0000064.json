@@ -1,6 +1,44 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0; HTC One_M8 Build/MRA58K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.83 Mobile Safari/537.36 JsSdk/2 TopBuzz/12.6.7 NetType/WIFI comdirect/1.0 (appVersion:20.5.4;deviceName:nokia 2;deviceType:mobile)"
+    },
+    "device": {
+      "deviceName": "M8",
+      "marketingName": "One M8",
+      "manufacturer": "htc",
+      "brand": "htc",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "83.0.4103.83",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "83.0.4103.83",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 9; HTC U11 Build/PQ2A.190205.003; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.83 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/272.0.0.50.125;] comdirect/1.0 (appVersion:20.5.4;deviceType:mobile)"
     },
     "device": {
@@ -1065,25 +1103,25 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.3.2; en-US; Magic-G2 Build/0O0LX8)"
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.0.0; HTC U Ultra) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "Magic",
-      "marketingName": "Magic",
+      "deviceName": "U Ultra",
+      "marketingName": "U Ultra",
       "manufacturer": "htc",
       "brand": "htc",
       "display": {
-        "width": 480,
-        "height": 320,
+        "width": 2560,
+        "height": 1440,
         "touch": true,
-        "size": 3.2
+        "size": 5.7
       },
       "type": "smartphone"
     },
     "browser": {
-      "name": "Android Webkit",
+      "name": "Chrome",
       "modus": null,
-      "version": null,
+      "version": "84.0.4147.89",
       "manufacturer": "google",
       "bits": null,
       "type": "browser"
@@ -1091,14 +1129,52 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "2.3.2",
+      "version": "8.0.0",
       "manufacturer": "google",
       "bits": null
     },
     "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
+      "name": "Blink",
+      "version": "84.0.4147.89",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; HTC One A9) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "One A9",
+      "marketingName": "One A9",
+      "manufacturer": "htc",
+      "brand": "htc",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "83.0.4103.106",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "83.0.4103.106",
+      "manufacturer": "google"
     }
   }
 ]

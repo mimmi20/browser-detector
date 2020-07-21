@@ -1,120 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "Opera/9.80 (Windows Phone; Opera Mini/9.0.0/37.8015; U; en) Presto/2.12.423 Version/12.16"
-    },
-    "device": {
-      "deviceName": "general Mobile device",
-      "marketingName": "general Mobile device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "9.0.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Windows Phone OS",
-      "marketingName": "Windows Phone OS",
-      "version": null,
-      "manufacturer": "microsoft",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.12.423",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (Windows Phone; Opera Mini/9.0.0/37.8025; U; en) Presto/2.12.423 Version/12.16"
-    },
-    "device": {
-      "deviceName": "general Mobile device",
-      "marketingName": "general Mobile device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "9.0.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Windows Phone OS",
-      "marketingName": "Windows Phone OS",
-      "version": null,
-      "manufacturer": "microsoft",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.12.423",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (Windows Phone; Opera Mini/9.0.0/37.8069; U; en) Presto/2.12.423 Version/12.16"
-    },
-    "device": {
-      "deviceName": "general Mobile device",
-      "marketingName": "general Mobile device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "9.0.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Windows Phone OS",
-      "marketingName": "Windows Phone OS",
-      "version": null,
-      "manufacturer": "microsoft",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.12.423",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Opera/9.80 (Windows Phone; Opera Mini/9.0.0/37.8104; U; en) Presto/2.12.423 Version/12.16"
     },
     "device": {
@@ -3041,6 +2927,44 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/4.1 (compatible; MSIE 5.0; EPOC) Opera 6.0  [de]Nokia/Series-9200"
+    },
+    "device": {
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device"
+    },
+    "browser": {
+      "name": "Opera",
+      "modus": null,
+      "version": "6.0.0",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "symbian-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": null,
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/4.1 (compatible; MSIE5.0; Symbian OS); Opera 6.02 [de]"
     },
     "device": {
@@ -3797,6 +3721,82 @@
       "name": "WebKit",
       "version": "537.13.0.1379224625",
       "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 6.1; Windows CE 6.0; WOW64; Trident/7.0; rv:11.0) like Gecko"
+    },
+    "device": {
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device"
+    },
+    "browser": {
+      "name": "Internet Explorer",
+      "modus": null,
+      "version": "11.0.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": null,
+      "manufacturer": "microsoft",
+      "bits": 64
+    },
+    "engine": {
+      "name": "Trident",
+      "version": "7.0.0",
+      "manufacturer": "microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows; U; Windows CE 4.21; rv:1.8.1a3) Gecko/20060610 Minimo/0.016"
+    },
+    "device": {
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device"
+    },
+    "browser": {
+      "name": "Minimo",
+      "modus": null,
+      "version": "0.016.0",
+      "manufacturer": "mozilla-foundation",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": null,
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "1.8.1-alpha+3",
+      "manufacturer": "mozilla-foundation"
     }
   }
 ]
