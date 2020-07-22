@@ -1,44 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "WordPress/5.0.2; http://floridamarketingnews.com"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "browser": {
-      "name": "WordPress",
-      "modus": null,
-      "version": "5.0.2",
-      "manufacturer": "wordpress",
-      "bits": null,
-      "type": "bot"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "WhatsApp/2.19.4 A"
     },
     "device": {
@@ -3785,6 +3747,44 @@
       "manufacturer": "free-software-foundation",
       "bits": null,
       "type": "offline-browser"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "libwww-perl/6.44"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown"
+    },
+    "browser": {
+      "name": "libwww",
+      "modus": null,
+      "version": "6.44.0",
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "bot"
     },
     "os": {
       "name": null,

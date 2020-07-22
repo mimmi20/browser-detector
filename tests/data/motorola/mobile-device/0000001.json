@@ -1,120 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "MOT-JFJK0/00.62 UP.Browser/6.2.3.4.c.1.123 (GUI) MMP/2.0,gzip(gfe),gzip(gfe)"
-    },
-    "device": {
-      "deviceName": "general Motorola device",
-      "marketingName": "general Motorola device",
-      "manufacturer": "motorola",
-      "brand": "motorola",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": "Openwave Mobile Browser",
-      "modus": null,
-      "version": "6.2.3.4",
-      "manufacturer": "myriad",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "MOT-K1m/1.1 UP.Browser/6.2.3.4.c.1.123 (GUI) MMP/2.0"
-    },
-    "device": {
-      "deviceName": "general Motorola device",
-      "marketingName": "general Motorola device",
-      "manufacturer": "motorola",
-      "brand": "motorola",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": "Openwave Mobile Browser",
-      "modus": null,
-      "version": "6.2.3.4",
-      "manufacturer": "myriad",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "MOT-K3m/99.40.07R BER2.2 Mozilla/4.0 (compatible; MSIE 6.0; 12003173) Profile/MIDP-2.0 Configuration/CLDC-1.1  Opera 8.00 [de]"
-    },
-    "device": {
-      "deviceName": "general Motorola device",
-      "marketingName": "general Motorola device",
-      "manufacturer": "motorola",
-      "brand": "motorola",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": "Opera",
-      "modus": null,
-      "version": "8.00.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": null,
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "MOT-KLGO iTunes/0E.30.16R MIB/2.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1"
     },
     "device": {
@@ -3785,6 +3671,120 @@
       "manufacturer": "motorola",
       "bits": null,
       "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "MOT-V810/6.2.2 UP.Browser/6.2.2.4 (GUI) MMP/2.0 M4-MMS/3.01"
+    },
+    "device": {
+      "deviceName": "general Motorola device",
+      "marketingName": "general Motorola device",
+      "manufacturer": "motorola",
+      "brand": "motorola",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "6.2.2.4",
+      "manufacturer": "myriad",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "MOT-V872/ WAP.Browser/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.0"
+    },
+    "device": {
+      "deviceName": "general Motorola device",
+      "marketingName": "general Motorola device",
+      "manufacturer": "motorola",
+      "brand": "motorola",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "MOT-V878/ WAP.Browser/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.0"
+    },
+    "device": {
+      "deviceName": "general Motorola device",
+      "marketingName": "general Motorola device",
+      "manufacturer": "motorola",
+      "brand": "motorola",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
