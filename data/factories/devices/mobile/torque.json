@@ -1,8 +1,14 @@
 {
   "rules": {
-    "/droidz drive\\+/i": "torque droidz drive+",
-    "/droidz race x/i": "torque droidz race x",
-    "/droidz race/i": "torque droidz race"
+    "/droidz[ _]drive\\+/i": "torque droidz drive+",
+    "/droidz[ _]race[ _]x/i": "torque droidz race x",
+    "/droidz[ _]race/i": "torque droidz race",
+    "/droidz[ _]smart/i": "torque droidz smart",
+    "/droidz[ _]force/i": "torque droidz force",
+    "/droidz[ _]quad/i": "torque droidz quad",
+    "/droidz[ _]inspire/i": "torque droidz inspire",
+    "/droidz[ _]easy/i": "torque droidz easy",
+    "/droidz[ _]beat[ _]tv/i": "torque droidz beat tv"
   },
   "generic": "general torque device"
 }
