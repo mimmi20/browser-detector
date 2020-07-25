@@ -1,44 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (X11; Linux armv8l) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.12.6 Chrome/65.0.3325.230 Safari/537.36"
-    },
-    "device": {
-      "deviceName": "general Mobile device",
-      "marketingName": "general Mobile device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": "QtWebEngine",
-      "modus": null,
-      "version": "5.12.6",
-      "manufacturer": "logicware",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Maemo",
-      "marketingName": "Maemo",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "65.0.3325.230",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (X11; Linux armv8l) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.11.2 Chrome/65.0.3325.230 Safari/537.36"
     },
     "device": {
@@ -3725,7 +3687,7 @@
   },
   {
     "headers": {
-      "user-agent": "Dalvik/1.6.0 (Linux; U; Android 4.4.2; MAXTRON_V3 Build/KOT49H)"
+      "user-agent": "Dalvik/2.1.0 (Linux; U; Android 8.1.0; Twist Metal 32GB Build/O11019)"
     },
     "device": {
       "deviceName": "general Mobile device",
@@ -3743,7 +3705,7 @@
     "browser": {
       "name": "Dalvik",
       "modus": null,
-      "version": "1.6.0",
+      "version": "2.1.0",
       "manufacturer": "google",
       "bits": null,
       "type": "application"
@@ -3751,7 +3713,7 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "4.4.2",
+      "version": "8.1.0",
       "manufacturer": "google",
       "bits": null
     },
@@ -3763,7 +3725,7 @@
   },
   {
     "headers": {
-      "user-agent": "Dalvik/1.6.0 (Linux; U; Android 4.4.2; MAXTRON_V2 Build/KOT49H)"
+      "user-agent": "Dalvik/2.1.0 (Linux; U; Android 7.0; Twist Max Build/NRD90M)"
     },
     "device": {
       "deviceName": "general Mobile device",
@@ -3781,7 +3743,7 @@
     "browser": {
       "name": "Dalvik",
       "modus": null,
-      "version": "1.6.0",
+      "version": "2.1.0",
       "manufacturer": "google",
       "bits": null,
       "type": "application"
@@ -3789,7 +3751,45 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "4.4.2",
+      "version": "7.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Dalvik/2.1.0 (Linux; U; Android 7.0; Twist XL Build/NRD90M)"
+    },
+    "device": {
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device"
+    },
+    "browser": {
+      "name": "Dalvik",
+      "modus": null,
+      "version": "2.1.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
       "manufacturer": "google",
       "bits": null
     },

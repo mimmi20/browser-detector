@@ -1,6 +1,44 @@
 [
   {
     "headers": {
+      "user-agent": "(android:4.0.4;package:com.imangi.templerun2;lang:zh_CN;game_version:1.0;api_version:1.0;device_brand:htccn_chs;device_model:HTC S720e;resolution:720X1280;udid:ffffffff-8ab5-e4d3-ffff-fffffce3b8df;cpu_freq:1500000;game_name:Temple+Run+2;encoded:true;imei:358834040102816;location:unknown)"
+    },
+    "device": {
+      "deviceName": "S720e",
+      "marketingName": "One X",
+      "manufacturer": "htc",
+      "brand": "htc",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 4.7
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": null,
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": null,
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "BBC News (AndroidApp; 1.3.1; 11) HTC Sensation XE with Beats Audio Z715e (Android 4.0.3, SDK 15)"
     },
     "device": {
@@ -3752,44 +3790,6 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "6.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "57.0.2987.132",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; HTC One SV Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.132 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "One SV",
-      "marketingName": "One SV",
-      "manufacturer": "htc",
-      "brand": "htc",
-      "display": {
-        "width": 800,
-        "height": 480,
-        "touch": true,
-        "size": 4.3
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "57.0.2987.132",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.2.2",
       "manufacturer": "google",
       "bits": null
     },
