@@ -1,44 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "Firefox/41.0.1 (x86 de); anonymized by Abelssoft 1663170808"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "browser": {
-      "name": "Firefox",
-      "modus": null,
-      "version": "41.0.1",
-      "manufacturer": "mozilla-foundation",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "PHP-SOAP/5.6.19-0+deb8u1"
     },
     "device": {
@@ -3783,6 +3745,44 @@
       "modus": null,
       "version": "0.99.0-beta",
       "manufacturer": "semrush",
+      "bits": null,
+      "type": "bot"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Screaming Frog SEO Spider/5.0"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown"
+    },
+    "browser": {
+      "name": "Screaming Frog SEO Spider",
+      "modus": null,
+      "version": "5.0.0",
+      "manufacturer": "screaming-frog",
       "bits": null,
       "type": "bot"
     },
