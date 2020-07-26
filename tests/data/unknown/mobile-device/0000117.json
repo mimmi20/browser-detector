@@ -1,44 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "Opera/9.80 (Windows Phone; Opera Mini/9.0.0/37.8104; U; en) Presto/2.12.423 Version/12.16"
-    },
-    "device": {
-      "deviceName": "general Mobile device",
-      "marketingName": "general Mobile device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "9.0.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Windows Phone OS",
-      "marketingName": "Windows Phone OS",
-      "version": null,
-      "manufacturer": "microsoft",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.12.423",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "UCWEB/2.0 (Java; U; MIDP-2.0; en-US; generic) U2/1.0.0 UCBrowser/9.3.0.326 U2/1.0.0 Mobile"
     },
     "device": {
@@ -3796,6 +3758,44 @@
     "engine": {
       "name": "Gecko",
       "version": "1.8.1-alpha+3",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows; U; Windows CE 5.2; xx; rv:1.9.2a1pre) Gecko/20090513 Fennec/1.0a1"
+    },
+    "device": {
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device"
+    },
+    "browser": {
+      "name": "Fennec",
+      "modus": null,
+      "version": "1.0.0-alpha+1",
+      "manufacturer": "mozilla-foundation",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": null,
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "1.9.2-alpha+1",
       "manufacturer": "mozilla-foundation"
     }
   }
