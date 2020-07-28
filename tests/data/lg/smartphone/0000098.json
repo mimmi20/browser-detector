@@ -1,6 +1,44 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0; LG-H735) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.99 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "H735",
+      "marketingName": "G4S",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "71.0.3578.99",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "71.0.3578.99",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 9; LM-G810) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/12.0 Chrome/79.0.3945.136 Mobile Safari/537.36"
     },
     "device": {
@@ -951,78 +989,40 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.3.7; de-de; GT540 Build/GRI40; SwiftDroid v2.0 ASIS (Based on CyanogenMod-7.1.0)) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
+      "user-agent": "Dalvik/2.1.0 (Linux; U; Android 6.0; VS990 Build/MRA58K)"
     },
     "device": {
-      "deviceName": "GT540",
-      "marketingName": "Optimus",
+      "deviceName": "VS990",
+      "marketingName": "V10 (Verizon)",
       "manufacturer": "lg",
       "brand": "lg",
       "display": {
-        "width": 480,
-        "height": 320,
+        "width": 2560,
+        "height": 1440,
         "touch": true,
-        "size": 3
+        "size": null
       },
       "type": "smartphone"
     },
     "browser": {
-      "name": "Android Webkit",
+      "name": "Dalvik",
       "modus": null,
-      "version": "4.0.0",
+      "version": "2.1.0",
       "manufacturer": "google",
       "bits": null,
-      "type": "browser"
+      "type": "application"
     },
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "2.3.7",
+      "version": "6.0.0",
       "manufacturer": "google",
       "bits": null
     },
     "engine": {
       "name": "WebKit",
-      "version": "533.1.0",
+      "version": null,
       "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 9; LML413DL Build/OPM1.171019.026) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.83 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "L413DL",
-      "marketingName": "Premier Pro LTE",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 5.3
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "71.0.3578.83",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "9.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "71.0.3578.83",
-      "manufacturer": "google"
     }
   }
 ]

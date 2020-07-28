@@ -1,82 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 1.5; en-us; Eris Build/CUPCAKE) AppleWebKit/528.5  (KHTML, like Gecko) Version/3.1.2 Mobile Safari/525.20.1"
-    },
-    "device": {
-      "deviceName": "general Mobile Phone",
-      "marketingName": "general Mobile Phone",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Android Webkit",
-      "modus": null,
-      "version": "3.1.2",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "1.5.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "528.5.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.1; en-us; ERIS Build/ERD62) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Mobile Safari/530.17"
-    },
-    "device": {
-      "deviceName": "general Mobile Phone",
-      "marketingName": "general Mobile Phone",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Android Webkit",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "2.1.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "530.17.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 4.0.3; EVO Build/IML74K) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.133 Mobile Safari/535.19"
     },
     "device": {
@@ -3797,6 +3721,82 @@
       "name": "WebKit",
       "version": "535.19.0",
       "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.0.1; en-us; imo s88 Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
+    },
+    "device": {
+      "deviceName": "general Mobile Phone",
+      "marketingName": "general Mobile Phone",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.0.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.1.2; IMO S89 Build/JZO54K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/30.0.1599.82 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "general Mobile Phone",
+      "marketingName": "general Mobile Phone",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "30.0.1599.82",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.1.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "30.0.1599.82",
+      "manufacturer": "google"
     }
   }
 ]

@@ -1,158 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; Cynus T6 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.109 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "Cynus T6",
-      "marketingName": "Cynus T6",
-      "manufacturer": "mobistel",
-      "brand": "mobistel",
-      "display": {
-        "width": 960,
-        "height": 540,
-        "touch": true,
-        "size": 5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "40.0.2214.109",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.4.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "40.0.2214.109",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.2.1; Cynus T5 Build/JOP40D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.109 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "Cynus T5",
-      "marketingName": "Cynus T5",
-      "manufacturer": "mobistel",
-      "brand": "mobistel",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "40.0.2214.109",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.2.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "40.0.2214.109",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; Cynus F6 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.84 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "Cynus F6",
-      "marketingName": "Cynus F6",
-      "manufacturer": "mobistel",
-      "brand": "mobistel",
-      "display": {
-        "width": 854,
-        "height": 480,
-        "touch": true,
-        "size": 5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "45.0.2454.84",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.4.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "45.0.2454.84",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.4.2; pl-pl; Cynus T6 Build/KOT49H) AppleWebKit/537.16 (KHTML, like Gecko) Version/4.0 Mobile Safari/537.16"
-    },
-    "device": {
-      "deviceName": "Cynus T6",
-      "marketingName": "Cynus T6",
-      "manufacturer": "mobistel",
-      "brand": "mobistel",
-      "display": {
-        "width": 960,
-        "height": 540,
-        "touch": true,
-        "size": 5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Android Webkit",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.4.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "537.16.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; U; Android 4.0.4; it-it; Cynus T2 Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 [FB_IAB/FB4A;FBAV/43.0.0.29.147;]"
     },
     "device": {
@@ -2889,6 +2737,44 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1; Cynus E6 Build/LMY47I) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/39.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Cynus E6",
+      "marketingName": "Cynus E6",
+      "manufacturer": "mobistel",
+      "brand": "mobistel",
+      "display": {
+        "width": 854,
+        "height": 480,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "39.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "39.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 6.0; Cynus E7 Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.85 Mobile Safari/537.36"
     },
     "device": {
@@ -3172,6 +3058,44 @@
     },
     "browser": {
       "name": "Android WebView",
+      "modus": null,
+      "version": "55.0.2883.91",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "55.0.2883.91",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1; Cynus E6 Build/LMY47I) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.91 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Cynus E6",
+      "marketingName": "Cynus E6",
+      "manufacturer": "mobistel",
+      "brand": "mobistel",
+      "display": {
+        "width": 854,
+        "height": 480,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
       "modus": null,
       "version": "55.0.2883.91",
       "manufacturer": "google",
@@ -3797,6 +3721,82 @@
       "name": "Blink",
       "version": "31.0.1650.59",
       "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.1.1; Cynus F3 Build/JRO03C) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.58 Mobile Safari/537.31"
+    },
+    "device": {
+      "deviceName": "Cynus F3",
+      "marketingName": "Cynus F3",
+      "manufacturer": "mobistel",
+      "brand": "mobistel",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "26.0.1410.58",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.31.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; Cynus F4 Build/JDQ39) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166 Mobile Safari/535.19"
+    },
+    "device": {
+      "deviceName": "MT-7521S",
+      "marketingName": "Cynus F4",
+      "manufacturer": "mobistel",
+      "brand": "mobistel",
+      "display": {
+        "width": 854,
+        "height": 480,
+        "touch": true,
+        "size": 4.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "18.0.1025.166",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "535.19.0",
+      "manufacturer": "apple"
     }
   }
 ]

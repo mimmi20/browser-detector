@@ -1,44 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 6.0; Cynus_E8 Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.125 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "Cynus E8",
-      "marketingName": "Cynus E8",
-      "manufacturer": "mobistel",
-      "brand": "mobistel",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "59.0.3071.125",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "6.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "59.0.3071.125",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; Cynus T8 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.42 Mobile Safari/537.36"
     },
     "device": {
@@ -256,6 +218,44 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "4.4.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "60.0.3112.116",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1; Cynus E6 Build/LMY47I) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.116 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Cynus E6",
+      "marketingName": "Cynus E6",
+      "manufacturer": "mobistel",
+      "brand": "mobistel",
+      "display": {
+        "width": 854,
+        "height": 480,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "60.0.3112.116",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.0",
       "manufacturer": "google",
       "bits": null
     },

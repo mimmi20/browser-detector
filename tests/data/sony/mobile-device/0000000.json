@@ -2050,5 +2050,43 @@
       "version": null,
       "manufacturer": "access"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Dalvik/2.1.0 (Linux; U; Android 6.0; SO-02H Build/32.1.F.1.75)"
+    },
+    "device": {
+      "deviceName": "general Sony device",
+      "marketingName": "general Sony device",
+      "manufacturer": "sony",
+      "brand": "sony",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device"
+    },
+    "browser": {
+      "name": "Dalvik",
+      "modus": null,
+      "version": "2.1.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
   }
 ]

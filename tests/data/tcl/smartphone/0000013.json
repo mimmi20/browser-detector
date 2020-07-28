@@ -1,6 +1,120 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.1.1; ALCATEL ONE TOUCH 5035D Build/JRO03C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.99 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "5035D",
+      "marketingName": "OneTouch XPop",
+      "manufacturer": "tcl",
+      "brand": "alcatel",
+      "display": {
+        "width": 960,
+        "height": 540,
+        "touch": true,
+        "size": 4.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "32.0.1700.99",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "32.0.1700.99",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; ONE TOUCH 6012X Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.136 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "6012X",
+      "marketingName": "OneTouch Idol Mini",
+      "manufacturer": "tcl",
+      "brand": "alcatel",
+      "display": {
+        "width": 854,
+        "height": 480,
+        "touch": true,
+        "size": 4.3
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "33.0.1750.136",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "33.0.1750.136",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.1.1; ALCATEL ONE TOUCH 5035D Build/JRO03C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.136 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "5035D",
+      "marketingName": "OneTouch XPop",
+      "manufacturer": "tcl",
+      "brand": "alcatel",
+      "display": {
+        "width": 960,
+        "height": 540,
+        "touch": true,
+        "size": 4.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "33.0.1750.136",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "33.0.1750.136",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 4.0.4; ALCATEL ONE TOUCH 997D Build/IMM76D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/30.0.1599.92 Mobile Safari/537.36"
     },
     "device": {
@@ -3676,120 +3790,6 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "6.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "60.0.3112.107",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.1; 8050D Build/LMY47I) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.107 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "8050D",
-      "marketingName": "OneTouch Pixi 4 (6)",
-      "manufacturer": "tcl",
-      "brand": "alcatel",
-      "display": {
-        "width": 960,
-        "height": 540,
-        "touch": true,
-        "size": 6
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "60.0.3112.107",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.1.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "60.0.3112.107",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; STH100-2 Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.107 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "STH100-2",
-      "marketingName": "DTEK50",
-      "manufacturer": "tcl",
-      "brand": "black-berry",
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5.2
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "60.0.3112.107",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "6.0.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "60.0.3112.107",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; 6055K Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.107 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "6055K",
-      "marketingName": "OneTouch Idol 4",
-      "manufacturer": "tcl",
-      "brand": "alcatel",
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5.2
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "60.0.3112.107",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "6.0.1",
       "manufacturer": "google",
       "bits": null
     },
