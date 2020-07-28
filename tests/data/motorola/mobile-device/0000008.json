@@ -1,6 +1,44 @@
 [
   {
     "headers": {
+      "user-agent": "MOT-V235/08.D0.00R MIB/2.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+    },
+    "device": {
+      "deviceName": "general Motorola device",
+      "marketingName": "general Motorola device",
+      "manufacturer": "motorola",
+      "brand": "motorola",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device"
+    },
+    "browser": {
+      "name": "Motorola Internet Browser",
+      "modus": null,
+      "version": "2.2.1",
+      "manufacturer": "motorola",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "MOT-V220ENS/0B.D2.2ER MIB/2.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.0 UP.Link/6.3.0.0.0"
     },
     "device": {
@@ -3744,44 +3782,6 @@
       "name": "Openwave Mobile Browser",
       "modus": null,
       "version": "4.1.23",
-      "manufacturer": "myriad",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "MOT-ED/06.12 UP.Browser/5.0.2.4"
-    },
-    "device": {
-      "deviceName": "general Motorola device",
-      "marketingName": "general Motorola device",
-      "manufacturer": "motorola",
-      "brand": "motorola",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": "Openwave Mobile Browser",
-      "modus": null,
-      "version": "5.0.2.4",
       "manufacturer": "myriad",
       "bits": null,
       "type": "browser"

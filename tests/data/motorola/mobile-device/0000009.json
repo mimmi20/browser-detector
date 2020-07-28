@@ -1,6 +1,44 @@
 [
   {
     "headers": {
+      "user-agent": "MOT-ED/06.12 UP.Browser/5.0.2.4"
+    },
+    "device": {
+      "deviceName": "general Motorola device",
+      "marketingName": "general Motorola device",
+      "manufacturer": "motorola",
+      "brand": "motorola",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "5.0.2.4",
+      "manufacturer": "myriad",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "MOT-E8/R6713_G_71.03.01R_B MotoWebKit/417.19 (KHTML, like Gecko) BER/2.0 Mozilla/5.0 (compatible; OSS/1.0; Chameleon; Linux) Profile/MIDP-2.0 Configuration/CLDC-1.1 EGE/9.0"
     },
     "device": {
@@ -1289,44 +1327,6 @@
       "name": "Blink",
       "version": "62.0.3202.84",
       "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.1-update1; en-us; MB610 Build/BEGNA_U3_0.30.0) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Mobile Safari/530.1"
-    },
-    "device": {
-      "deviceName": "general Motorola device",
-      "marketingName": "general Motorola device",
-      "manufacturer": "motorola",
-      "brand": "motorola",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": "Android Webkit",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "2.1.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "530.17.0",
-      "manufacturer": "apple"
     }
   }
 ]

@@ -3732,5 +3732,81 @@
       "version": "2.12.423",
       "manufacturer": "opera"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Dalvik/2.1.0 (Linux; U; Android 8.0.0; SM-A920X Build/R16NW)"
+    },
+    "device": {
+      "deviceName": "SPH-A920",
+      "marketingName": "SPH-A920",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Dalvik",
+      "modus": null,
+      "version": "2.1.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Brew",
+      "marketingName": "Brew",
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 Linux; U; Android 9; en-US; SM-A920N Build/PPR1.180610.011 AppleWebKit/537.36 KHTML, like Gecko Version/4.0 Chrome/57.0.2987.108 UCBrowser/12.10.6.1200 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "SPH-A920",
+      "marketingName": "SPH-A920",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "12.10.6.1200",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Brew",
+      "marketingName": "Brew",
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "57.0.2987.108",
+      "manufacturer": "google"
+    }
   }
 ]

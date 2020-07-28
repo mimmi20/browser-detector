@@ -1,6 +1,44 @@
 [
   {
     "headers": {
+      "user-agent": "MOT-W233/0.0.45 UP.Browser/6.3.0.6.c.23 (GUI) MMP/2.0"
+    },
+    "device": {
+      "deviceName": "general Motorola device",
+      "marketingName": "general Motorola device",
+      "manufacturer": "motorola",
+      "brand": "motorola",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "6.3.0.6",
+      "manufacturer": "myriad",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "MOT-W315/1.0 UP.Browser/6.2.2.6.n.1.101 (GUI) MMP/2.0"
     },
     "device": {
@@ -3726,44 +3764,6 @@
   {
     "headers": {
       "user-agent": "MOT-W220/1.0 Release/6.30.2006 Browser/CMCS1.0 Software/0.280 UP.Link/6.3.0.0.0"
-    },
-    "device": {
-      "deviceName": "general Motorola device",
-      "marketingName": "general Motorola device",
-      "manufacturer": "motorola",
-      "brand": "motorola",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "MOT-W220/1.0 Release/6.30.2006 Browser/CMCS1.0 Software/0.280 UP.Link/1.1"
     },
     "device": {
       "deviceName": "general Motorola device",
