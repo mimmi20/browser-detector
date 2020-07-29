@@ -1,9 +1,24 @@
 {
   "rules": {
-    "/excite prime/i": "cloudfone excite prime",
-    "/350e/i": "cloudfone 350e",
-    "/320g/i": "cloudfone 320g",
-    "/320e/i": "cloudfone 320e"
+    "/excite[ _]?prime/i": "cloudfone excite prime",
+    "/excite[ _]?502q/i": "cloudfone excite 502q",
+    "/excite[ _]?500d/i": "cloudfone excite 500d",
+    "/excite[ _]?470q/i": "cloudfone excite 470q",
+    "/excite[ _]?451tv/i": "cloudfone excite 451tv",
+    "/excite[ _]?402d/i": "cloudfone excite 402d",
+    "/excite[ _]?400d/i": "cloudfone excite 400d",
+    "/excite[ _]?350i/i": "cloudfone excite 350i",
+    "/excite[ _]?350g/i": "cloudfone excite 350g",
+    "/excite[ _]?350e/i": "cloudfone excite 350e",
+    "/excite[ _]?320g/i": "cloudfone excite 320g",
+    "/excite[ _]?320e/i": "cloudfone excite 320e",
+    "/thrill[ _]?500g/i": "cloudfone thrill 500g",
+    "/thrill[ _]?430g/i": "cloudfone thrill 430g",
+    "/thrill[ _]?430d/i": "cloudfone thrill 430d",
+    "/thrill[ _]?400g/i": "cloudfone thrill 400g",
+    "/geo[ _]?402q/i": "cloudfone geo 402q",
+    "/geo[ _]?401q\\+/i": "cloudfone geo 401q plus",
+    "/ice[ _]?2gs/i": "cloudfone ice 2gs"
   },
   "generic": "general cloudfone device"
 }
