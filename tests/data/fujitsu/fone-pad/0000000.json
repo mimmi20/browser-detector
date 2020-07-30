@@ -378,5 +378,43 @@
       "version": "534.30.0",
       "manufacturer": "apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.1; F-02K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "F-02K",
+      "marketingName": "Arrows Tab",
+      "manufacturer": "fujitsu",
+      "brand": "fujitsu",
+      "display": {
+        "width": 2560,
+        "height": 1600,
+        "touch": true,
+        "size": 10.1
+      },
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "83.0.4103.106",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "83.0.4103.106",
+      "manufacturer": "google"
+    }
   }
 ]

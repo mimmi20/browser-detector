@@ -264,5 +264,43 @@
       "version": "533.1.0",
       "manufacturer": "apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; IMO Q2 Plus Build/O21019) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Q2 Plus",
+      "marketingName": "Q2 Plus",
+      "manufacturer": "imo",
+      "brand": "imo",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 4
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "70.0.3538.110",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.1.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "70.0.3538.110",
+      "manufacturer": "google"
+    }
   }
 ]

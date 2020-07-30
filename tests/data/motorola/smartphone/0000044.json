@@ -1,6 +1,1070 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 5.1; en-US; MotoE2 Build/LPC23.13-56) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/10.10.0.796 U3/0.8.0 Mobile Safari/534.30"
+    },
+    "device": {
+      "deviceName": "XT1505",
+      "marketingName": "Moto E (2nd Gen.)",
+      "manufacturer": "motorola",
+      "brand": "motorola",
+      "display": {
+        "width": 960,
+        "height": 540,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "10.10.0.796",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "U3",
+      "version": "0.8.0",
+      "manufacturer": "ucweb"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1; XT1031 Build/LPB23.13-51-R.10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.124 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "XT1031",
+      "marketingName": "Moto G",
+      "manufacturer": "motorola",
+      "brand": "motorola",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 4.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "53.0.2785.124",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "53.0.2785.124",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; Moto G (4) Build/MPJ24.139-63; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/55.0.2883.91 Mobile Safari/537.36 [FB_IAB/MESSENGER;FBAV/99.0.0.20.136;]"
+    },
+    "device": {
+      "deviceName": "Moto G4",
+      "marketingName": "Moto G4",
+      "manufacturer": "motorola",
+      "brand": "motorola",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook Messenger App",
+      "modus": null,
+      "version": "99.0.0.20.136",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "55.0.2883.91",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1; MotoE2 Build/LPC23.13-56) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.83 Mobile Safari/537.36 Google"
+    },
+    "device": {
+      "deviceName": "XT1505",
+      "marketingName": "Moto E (2nd Gen.)",
+      "manufacturer": "motorola",
+      "brand": "motorola",
+      "display": {
+        "width": 960,
+        "height": 540,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "47.0.2526.83",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "47.0.2526.83",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; Nexus 6 Build/LMY48B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.81 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Nexus 6",
+      "marketingName": "Nexus 6",
+      "manufacturer": "motorola",
+      "brand": "google",
+      "display": {
+        "width": 2560,
+        "height": 1440,
+        "touch": true,
+        "size": 6
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "51.0.2704.81",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "51.0.2704.81",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; XT1635-02 Build/MPN24.104-25; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/52.0.2743.98 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "XT1635-02",
+      "marketingName": "Moto Z Play Dual",
+      "manufacturer": "motorola",
+      "brand": "motorola",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "52.0.2743.98",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "52.0.2743.98",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0; MotoG3 Build/MPI24.65-33; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/52.0.2743.98 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/86.0.0.19.69;]"
+    },
+    "device": {
+      "deviceName": "MotoG3",
+      "marketingName": "Moto G (3rd Gen.)",
+      "manufacturer": "motorola",
+      "brand": "motorola",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "86.0.0.19.69",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "52.0.2743.98",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.4; XT1034 Build/KXB21.14-L1.61) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.124 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "XT1034",
+      "marketingName": "Moto G",
+      "manufacturer": "motorola",
+      "brand": "motorola",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 4.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "53.0.2785.124",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.4",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "53.0.2785.124",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; Moto G Play Build/MPI24.241-2.33; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/55.0.2883.91 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Moto G Play",
+      "marketingName": "Moto G Play",
+      "manufacturer": "motorola",
+      "brand": "motorola",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "55.0.2883.91",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "55.0.2883.91",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 5.1; en-US; XT1060 Build/LPAS23.12-39.7-1) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/10.10.8.820 U3/0.8.0 Mobile Safari/534.30"
+    },
+    "device": {
+      "deviceName": "XT1060",
+      "marketingName": "Moto X",
+      "manufacturer": "motorola",
+      "brand": "motorola",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 4.7
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "10.10.8.820",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "U3",
+      "version": "0.8.0",
+      "manufacturer": "ucweb"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0; XT1663 Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.132 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "XT1663",
+      "marketingName": "Moto M",
+      "manufacturer": "motorola",
+      "brand": "motorola",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "57.0.2987.132",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "57.0.2987.132",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0; MotoE2(4G-LTE) Build/MPI24.65-39; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/54.0.2840.68 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "XT1528",
+      "marketingName": "Moto E (2nd Gen.)",
+      "manufacturer": "motorola",
+      "brand": "motorola",
+      "display": {
+        "width": 960,
+        "height": 540,
+        "touch": true,
+        "size": 4.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "54.0.2840.68",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "54.0.2840.68",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; Moto G (4) Build/NPJ25.93-14; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/120.0.0.18.72;]"
+    },
+    "device": {
+      "deviceName": "Moto G4",
+      "marketingName": "Moto G4",
+      "manufacturer": "motorola",
+      "brand": "motorola",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "120.0.0.18.72",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "57.0.2987.132",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0; MotoG3 Build/MPI24.65-33; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/51.0.2704.81 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/81.0.0.22.70;]"
+    },
+    "device": {
+      "deviceName": "MotoG3",
+      "marketingName": "Moto G (3rd Gen.)",
+      "manufacturer": "motorola",
+      "brand": "motorola",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "81.0.0.22.70",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "51.0.2704.81",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1; XT1033 Build/LPBS23.13-56-2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/52.0.2743.98 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/92.0.0.16.72;]"
+    },
+    "device": {
+      "deviceName": "XT1033",
+      "marketingName": "Moto G",
+      "manufacturer": "motorola",
+      "brand": "motorola",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 4.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "92.0.0.16.72",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "52.0.2743.98",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; Nexus 6 Build/NBD91P; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/55.0.2883.91 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Nexus 6",
+      "marketingName": "Nexus 6",
+      "manufacturer": "motorola",
+      "brand": "google",
+      "display": {
+        "width": 2560,
+        "height": 1440,
+        "touch": true,
+        "size": 6
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "55.0.2883.91",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "55.0.2883.91",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; XT1635-02 Build/MPN24.104-44; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/54.0.2840.85 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "XT1635-02",
+      "marketingName": "Moto Z Play Dual",
+      "manufacturer": "motorola",
+      "brand": "motorola",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "54.0.2840.85",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "54.0.2840.85",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; Moto G (5) Build/NPP25.137-15; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Moto G5",
+      "marketingName": "Moto G5",
+      "manufacturer": "motorola",
+      "brand": "motorola",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "57.0.2987.132",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "57.0.2987.132",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.4; XT1022 Build/KXC21.5-40) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "XT1022",
+      "marketingName": "Moto E",
+      "manufacturer": "motorola",
+      "brand": "motorola",
+      "display": {
+        "width": 960,
+        "height": 540,
+        "touch": true,
+        "size": 4.3
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "50.0.2661.89",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.4",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "50.0.2661.89",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1; XT1022 Build/LPCS23.13-34.8-3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.124 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "XT1022",
+      "marketingName": "Moto E",
+      "manufacturer": "motorola",
+      "brand": "motorola",
+      "display": {
+        "width": 960,
+        "height": 540,
+        "touch": true,
+        "size": 4.3
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "53.0.2785.124",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "53.0.2785.124",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1; XT1039 Build/LPBS23.13-17.6-1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 Mobile Safari/537.36 [FB_IAB/MESSENGER;FBAV/109.0.0.24.70;]"
+    },
+    "device": {
+      "deviceName": "XT1039",
+      "marketingName": "Moto G",
+      "manufacturer": "motorola",
+      "brand": "motorola",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 4.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook Messenger App",
+      "modus": null,
+      "version": "109.0.0.24.70",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "57.0.2987.132",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; Moto G Build/MOB31K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.91 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "XT1032",
+      "marketingName": "Moto G",
+      "manufacturer": "motorola",
+      "brand": "motorola",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 4.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "55.0.2883.91",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "55.0.2883.91",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0; XT1092 Build/MPE24.49-18; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/51.0.2704.81 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/83.0.0.20.71;]"
+    },
+    "device": {
+      "deviceName": "XT1092",
+      "marketingName": "Moto X (2nd Gen.)",
+      "manufacturer": "motorola",
+      "brand": "motorola",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.2
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "83.0.0.20.71",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "51.0.2704.81",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; XT1562 Build/MPD24.107-70; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/54.0.2840.68 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/99.0.0.26.69;]"
+    },
+    "device": {
+      "deviceName": "XT1562",
+      "marketingName": "Moto X Play",
+      "manufacturer": "motorola",
+      "brand": "motorola",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "99.0.0.26.69",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "54.0.2840.68",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1; XT1094 Build/LPE23.32-39-R-42) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.91 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "XT1094",
+      "marketingName": "Moto X 2nd Gen",
+      "manufacturer": "motorola",
+      "brand": "motorola",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.2
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "55.0.2883.91",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "55.0.2883.91",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; Moto G (4) Build/MPJ24.139-63; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/53.0.2785.124 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/95.0.0.13.69;]"
+    },
+    "device": {
+      "deviceName": "Moto G4",
+      "marketingName": "Moto G4",
+      "manufacturer": "motorola",
+      "brand": "motorola",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "95.0.0.13.69",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "53.0.2785.124",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; MotoG3 Build/MPIS24.107-55-2-12; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/58.0.3029.83 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/123.0.0.18.71;]"
+    },
+    "device": {
+      "deviceName": "MotoG3",
+      "marketingName": "Moto G (3rd Gen.)",
+      "manufacturer": "motorola",
+      "brand": "motorola",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "123.0.0.18.71",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "58.0.3029.83",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; Moto G Play Build/MPIS24.241-15.3-7; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/112.0.0.20.70;]"
+    },
+    "device": {
+      "deviceName": "Moto G Play",
+      "marketingName": "Moto G Play",
+      "manufacturer": "motorola",
+      "brand": "motorola",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "112.0.0.20.70",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "56.0.2924.87",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; U; Android 6.0; en-US; MotoE2(4G-LTE) Build/MPI24.65-39-4) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/10.9.0.731 U3/0.8.0 Mobile Safari/534.30"
     },
     "device": {
@@ -2732,1070 +3796,6 @@
     "engine": {
       "name": "Blink",
       "version": "54.0.2840.85",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; Moto G (4) Build/NPJ25.93-14; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/118.0.0.22.79;]"
-    },
-    "device": {
-      "deviceName": "Moto G4",
-      "marketingName": "Moto G4",
-      "manufacturer": "motorola",
-      "brand": "motorola",
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "118.0.0.22.79",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "7.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "57.0.2987.132",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 6.0; XT1063 Build/MPB24.65-34) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.105 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "XT1063",
-      "marketingName": "Moto G (2nd Gen.)",
-      "manufacturer": "motorola",
-      "brand": "motorola",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "49.0.2623.105",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "6.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "49.0.2623.105",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; Moto G (4) Build/MPJ24.139-63; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/54.0.2840.85 Mobile Safari/537.36 [FB_IAB/MESSENGER;FBAV/98.0.0.18.71;]"
-    },
-    "device": {
-      "deviceName": "Moto G4",
-      "marketingName": "Moto G4",
-      "manufacturer": "motorola",
-      "brand": "motorola",
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Facebook Messenger App",
-      "modus": null,
-      "version": "98.0.0.18.71",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "6.0.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "54.0.2840.85",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 6.0; XT1097 Build/MPE24.49-18) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.81 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "XT1097",
-      "marketingName": "Moto X (2nd Gen., AT&T)",
-      "manufacturer": "motorola",
-      "brand": "motorola",
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5.2
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "51.0.2704.81",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "6.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "51.0.2704.81",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.1; XT1033 Build/LPBS23.13-56-2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.59 Mobile Safari/537.36 OPR/26.0.1656.87080"
-    },
-    "device": {
-      "deviceName": "XT1033",
-      "marketingName": "Moto G",
-      "manufacturer": "motorola",
-      "brand": "motorola",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 4.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Opera Mobile",
-      "modus": null,
-      "version": "26.0.1656.87080",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.1.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "39.0.2171.59",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.1; XT1053 Build/LPAS23.12-15.5-1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.98 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "XT1053",
-      "marketingName": "Moto X",
-      "manufacturer": "motorola",
-      "brand": "motorola",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 4.7
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "52.0.2743.98",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.1.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "52.0.2743.98",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.1; XT1032 Build/LPBS23.13-56-2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/54.0.2840.85 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/105.0.0.23.137;]"
-    },
-    "device": {
-      "deviceName": "XT1032",
-      "marketingName": "Moto G",
-      "manufacturer": "motorola",
-      "brand": "motorola",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 4.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "105.0.0.23.137",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.1.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "54.0.2840.85",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 6.0; XT1092 Build/MPES24.49-18-7; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "XT1092",
-      "marketingName": "Moto X (2nd Gen.)",
-      "manufacturer": "motorola",
-      "brand": "motorola",
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5.2
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Android WebView",
-      "modus": null,
-      "version": "56.0.2924.87",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "6.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "56.0.2924.87",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; Moto G (4) Build/NPJ25.93-14; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/117.0.0.18.47;]"
-    },
-    "device": {
-      "deviceName": "Moto G4",
-      "marketingName": "Moto G4",
-      "manufacturer": "motorola",
-      "brand": "motorola",
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "117.0.0.18.47",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "7.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "57.0.2987.132",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; XT1635-02 Build/MPNS24.104-44-7; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/55.0.2883.91 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "XT1635-02",
-      "marketingName": "Moto Z Play Dual",
-      "manufacturer": "motorola",
-      "brand": "motorola",
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Android WebView",
-      "modus": null,
-      "version": "55.0.2883.91",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "6.0.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "55.0.2883.91",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 6.0; XT1064 Build/MPBS24.65-34-4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.132 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "XT1064",
-      "marketingName": "Moto G (2nd Gen.)",
-      "manufacturer": "motorola",
-      "brand": "motorola",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "57.0.2987.132",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "6.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "57.0.2987.132",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.1; XT1032 Build/LPBS23.13-56-2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/52.0.2743.98 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/89.0.0.17.70;]"
-    },
-    "device": {
-      "deviceName": "XT1032",
-      "marketingName": "Moto G",
-      "manufacturer": "motorola",
-      "brand": "motorola",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 4.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "89.0.0.17.70",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.1.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "52.0.2743.98",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 6.0.1; en-US; Moto G (4) Build/MPJ24.139-23.1) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/10.10.0.796 U3/0.8.0 Mobile Safari/534.30"
-    },
-    "device": {
-      "deviceName": "Moto G4",
-      "marketingName": "Moto G4",
-      "manufacturer": "motorola",
-      "brand": "motorola",
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "10.10.0.796",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "6.0.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "U3",
-      "version": "0.8.0",
-      "manufacturer": "ucweb"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 6.0; MotoE2(4G-LTE) Build/MPI24.65-39; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/51.0.2704.81 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "XT1528",
-      "marketingName": "Moto E (2nd Gen.)",
-      "manufacturer": "motorola",
-      "brand": "motorola",
-      "display": {
-        "width": 960,
-        "height": 540,
-        "touch": true,
-        "size": 4.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Android WebView",
-      "modus": null,
-      "version": "51.0.2704.81",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "6.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "51.0.2704.81",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 5.1; en-US; XT1056 Build/LPA23.12-39.10) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/11.1.0.882 U3/0.8.0 Mobile Safari/534.30"
-    },
-    "device": {
-      "deviceName": "XT1056",
-      "marketingName": "Moto X",
-      "manufacturer": "motorola",
-      "brand": "motorola",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 4.7
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "11.1.0.882",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.1.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "U3",
-      "version": "0.8.0",
-      "manufacturer": "ucweb"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; Nexus 6 Build/NBD92G; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "Nexus 6",
-      "marketingName": "Nexus 6",
-      "manufacturer": "motorola",
-      "brand": "google",
-      "display": {
-        "width": 2560,
-        "height": 1440,
-        "touch": true,
-        "size": 6
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Android WebView",
-      "modus": null,
-      "version": "57.0.2987.132",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "7.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "57.0.2987.132",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.0.2; XT1033 Build/LXB22.46-28) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.98 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "XT1033",
-      "marketingName": "Moto G",
-      "manufacturer": "motorola",
-      "brand": "motorola",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 4.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "52.0.2743.98",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.0.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "52.0.2743.98",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; XT1562 Build/LPD23.118-10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "XT1562",
-      "marketingName": "Moto X Play",
-      "manufacturer": "motorola",
-      "brand": "motorola",
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "56.0.2924.87",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.1.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "56.0.2924.87",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.1; XT1032 Build/LPBS23.13-56-2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/51.0.2704.81 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/88.0.0.22.76;]"
-    },
-    "device": {
-      "deviceName": "XT1032",
-      "marketingName": "Moto G",
-      "manufacturer": "motorola",
-      "brand": "motorola",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 4.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "88.0.0.22.76",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.1.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "51.0.2704.81",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 6.0; XT1068 Build/MPB24.65-34-3; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/117.0.0.18.47;]"
-    },
-    "device": {
-      "deviceName": "XT1068",
-      "marketingName": "Moto G (2nd Gen.)",
-      "manufacturer": "motorola",
-      "brand": "motorola",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "117.0.0.18.47",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "6.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "57.0.2987.132",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.3; XT1023 Build/KXC21.5-34) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "XT1023",
-      "marketingName": "Moto E",
-      "manufacturer": "motorola",
-      "brand": "motorola",
-      "display": {
-        "width": 960,
-        "height": 540,
-        "touch": true,
-        "size": 4.3
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "50.0.2661.89",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.4.3",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "50.0.2661.89",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; Moto G (4) Build/MPJ24.139-63; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/53.0.2785.124 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/99.0.0.26.69;]"
-    },
-    "device": {
-      "deviceName": "Moto G4",
-      "marketingName": "Moto G4",
-      "manufacturer": "motorola",
-      "brand": "motorola",
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "99.0.0.26.69",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "6.0.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "53.0.2785.124",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "UCWEB/2.0 (MIDP-2.0; U; Adr 5.0.2; en-US; MotoE2) U2/1.0.0 UCBrowser/9.7.0.520 U2/1.0.0 Mobile"
-    },
-    "device": {
-      "deviceName": "XT1505",
-      "marketingName": "Moto E (2nd Gen.)",
-      "manufacturer": "motorola",
-      "brand": "motorola",
-      "display": {
-        "width": 960,
-        "height": 540,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "9.7.0.520",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.0.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "U2",
-      "version": "1.0.0",
-      "manufacturer": "ucweb"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 6.0; MotoG3 Build/MPI24.65-33; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/51.0.2704.81 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/87.0.0.17.79;]"
-    },
-    "device": {
-      "deviceName": "MotoG3",
-      "marketingName": "Moto G (3rd Gen.)",
-      "manufacturer": "motorola",
-      "brand": "motorola",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "87.0.0.17.79",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "6.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "51.0.2704.81",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 6.0; XT1072 Build/MPB24.65-34; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/51.0.2704.81 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/86.0.0.19.69;]"
-    },
-    "device": {
-      "deviceName": "XT1072",
-      "marketingName": "Moto G (2nd Gen.)",
-      "manufacturer": "motorola",
-      "brand": "motorola",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "86.0.0.19.69",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "6.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "51.0.2704.81",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 6.0; MotoG3 Build/MPI24.65-33; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/53.0.2785.124 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/100.0.0.15.70;]"
-    },
-    "device": {
-      "deviceName": "MotoG3",
-      "marketingName": "Moto G (3rd Gen.)",
-      "manufacturer": "motorola",
-      "brand": "motorola",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "100.0.0.15.70",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "6.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "53.0.2785.124",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.1; XT1094 Build/LPE23.32-39-R-28) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.124 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "XT1094",
-      "marketingName": "Moto X 2nd Gen",
-      "manufacturer": "motorola",
-      "brand": "motorola",
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5.2
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "53.0.2785.124",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.1.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "53.0.2785.124",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.1; XT1039 Build/LPB23.13-17.6; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/51.0.2704.81 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/86.0.0.19.69;]"
-    },
-    "device": {
-      "deviceName": "XT1039",
-      "marketingName": "Moto G",
-      "manufacturer": "motorola",
-      "brand": "motorola",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 4.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "86.0.0.19.69",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.1.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "51.0.2704.81",
       "manufacturer": "google"
     }
   }
