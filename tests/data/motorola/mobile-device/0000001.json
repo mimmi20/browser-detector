@@ -3383,44 +3383,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Symbian OS; Motorola A1000;735b) Opera 7.50 [en]./A1000./1.0 UP.Link/6.3.1.15.0"
-    },
-    "device": {
-      "deviceName": "general Motorola device",
-      "marketingName": "general Motorola device",
-      "manufacturer": "motorola",
-      "brand": "motorola",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": "Opera",
-      "modus": null,
-      "version": "7.50.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "symbian-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": null,
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Symbian OS; Motorola M1000;811) Opera 7.50 [ja]./M1000./1.0"
     },
     "device": {
@@ -3649,7 +3611,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Symbian OS; Motorola A1000;744) Opera 7.50 [en]./A1000./1.0"
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Linux; Motorola ???; 781) MOT-???/R561_G_10.03.45I Profile/MIDP-2.0 Configuration/CLDC-1.1 Opera 7.50 [en]"
     },
     "device": {
       "deviceName": "general Motorola device",
@@ -3673,10 +3635,10 @@
       "type": "browser"
     },
     "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
+      "name": "Linux",
+      "marketingName": "Linux",
       "version": null,
-      "manufacturer": "symbian-foundation",
+      "manufacturer": "linux-foundation",
       "bits": null
     },
     "engine": {
@@ -3687,7 +3649,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Symbian OS; Motorola A1000;743) Opera 7.50 [en]./A1000./1.0"
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Linux; Motorola ???; 781) MOT-???/R561_G_10.03.43I Profile/MIDP-2.0 Configuration/CLDC-1.1 Opera 7.50 [en]"
     },
     "device": {
       "deviceName": "general Motorola device",
@@ -3711,10 +3673,10 @@
       "type": "browser"
     },
     "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
+      "name": "Linux",
+      "marketingName": "Linux",
       "version": null,
-      "manufacturer": "symbian-foundation",
+      "manufacturer": "linux-foundation",
       "bits": null
     },
     "engine": {
@@ -3725,7 +3687,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Symbian OS; Motorola A1000;740) Opera 7.50 [en]./A1000./1.0"
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Linux; Motorola ???; 781) MOT-???/R532_G_11.00.09I Profile/MIDP-2.0 Configuration/CLDC-1.1 Opera 7.50 [zh-cn]"
     },
     "device": {
       "deviceName": "general Motorola device",
@@ -3749,10 +3711,10 @@
       "type": "browser"
     },
     "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
+      "name": "Linux",
+      "marketingName": "Linux",
       "version": null,
-      "manufacturer": "symbian-foundation",
+      "manufacturer": "linux-foundation",
       "bits": null
     },
     "engine": {
@@ -3763,7 +3725,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Symbian OS; Motorola A1000;738) Opera 7.50 [en]./A1000./1.0"
+      "user-agent": "MOT-ZN4/00.72 UP.Browser/7.2.7.5.597 (GUI) MMP/2.0"
     },
     "device": {
       "deviceName": "general Motorola device",
@@ -3779,24 +3741,62 @@
       "type": "mobile-device"
     },
     "browser": {
-      "name": "Opera",
+      "name": "Openwave Mobile Browser",
       "modus": null,
-      "version": "7.50.0",
-      "manufacturer": "opera",
+      "version": "7.2.7.5.597",
+      "manufacturer": "myriad",
       "bits": null,
       "type": "browser"
     },
     "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
+      "name": null,
+      "marketingName": null,
       "version": null,
-      "manufacturer": "symbian-foundation",
+      "manufacturer": "unknown",
       "bits": null
     },
     "engine": {
-      "name": "Presto",
+      "name": null,
       "version": null,
-      "manufacturer": "opera"
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "MOT-Z3/08.00.43R MIB/BER2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 EGE/1.0"
+    },
+    "device": {
+      "deviceName": "general Motorola device",
+      "marketingName": "general Motorola device",
+      "manufacturer": "motorola",
+      "brand": "motorola",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device"
+    },
+    "browser": {
+      "name": "Motorola Internet Browser",
+      "modus": null,
+      "version": "2.2.0",
+      "manufacturer": "motorola",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
     }
   }
 ]

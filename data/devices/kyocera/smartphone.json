@@ -27,11 +27,25 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "kyocera kyl22": {
+    "deviceName": "KYL22",
+    "marketingName": "Digno M",
+    "manufacturer": "kyocera",
+    "brand": "kddi",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": 5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "kyocera kyl21": {
     "deviceName": "KYL21",
     "marketingName": "Digno S",
     "manufacturer": "kyocera",
-    "brand": "kyocera",
+    "brand": "kddi",
     "display": {
       "width": 1280,
       "height": 720,
@@ -339,7 +353,7 @@
     "deviceName": "KYL23",
     "marketingName": "Miraie",
     "manufacturer": "kyocera",
-    "brand": "kyocera",
+    "brand": "kddi",
     "display": {
       "width": 960,
       "height": 540,
@@ -409,7 +423,7 @@
     "deviceName": "KYY22",
     "marketingName": "Urbano",
     "manufacturer": "kyocera",
-    "brand": "kyocera",
+    "brand": "kddi",
     "display": {
       "width": 1280,
       "height": 720,
@@ -423,12 +437,26 @@
     "deviceName": "KYY21",
     "marketingName": "Urbano L01",
     "manufacturer": "kyocera",
-    "brand": "kyocera",
+    "brand": "kddi",
     "display": {
       "width": 1280,
       "height": 720,
       "touch": true,
       "size": 4.7
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "kyocera kyy23": {
+    "deviceName": "KYY23",
+    "marketingName": "Urbano L03",
+    "manufacturer": "kyocera",
+    "brand": "kddi",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": 5
     },
     "type": "smartphone",
     "platform": "android"
