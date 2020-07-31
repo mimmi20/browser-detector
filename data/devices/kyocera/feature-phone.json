@@ -13,6 +13,20 @@
     "type": "feature-phone",
     "platform": "java"
   },
+  "kyocera kwc-k323": {
+    "deviceName": "KWC-K323",
+    "marketingName": "KWC-K323",
+    "manufacturer": "kyocera",
+    "brand": "kyocera",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "kyocera kwc-k612": {
     "deviceName": "KWC-K612",
     "marketingName": "KWC-K612",
@@ -50,7 +64,7 @@
       "width": 128,
       "height": 128,
       "touch": false,
-      "size": null
+      "size": 2.5
     },
     "type": "feature-phone",
     "platform": "java"

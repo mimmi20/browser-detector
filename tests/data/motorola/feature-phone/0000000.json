@@ -1638,15 +1638,15 @@
       "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Symbian OS; Motorola A1000;698) Opera 7.50 en ./MOT-A925./P243"
     },
     "device": {
-      "deviceName": "A925",
-      "marketingName": "A925",
+      "deviceName": "A1000",
+      "marketingName": "A1000",
       "manufacturer": "motorola",
       "brand": "motorola",
       "display": {
         "width": 320,
         "height": 208,
-        "touch": false,
-        "size": null
+        "touch": true,
+        "size": 2.9
       },
       "type": "feature-phone"
     },
