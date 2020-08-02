@@ -1,4 +1,60 @@
 {
+  "mtc 950": {
+    "deviceName": "950",
+    "marketingName": "950",
+    "manufacturer": "mtc",
+    "brand": "mtc",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": true,
+      "size": 2.8
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "mtc 970": {
+    "deviceName": "970",
+    "marketingName": "970",
+    "manufacturer": "tcl",
+    "brand": "mtc",
+    "display": {
+      "width": 480,
+      "height": 320,
+      "touch": true,
+      "size": 3.6
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "mtc 970h": {
+    "deviceName": "970H",
+    "marketingName": "970H",
+    "manufacturer": "tcl",
+    "brand": "mtc",
+    "display": {
+      "width": 480,
+      "height": 320,
+      "touch": true,
+      "size": 3.6
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "mtc 972": {
+    "deviceName": "972",
+    "marketingName": "972",
+    "manufacturer": "mtc",
+    "brand": "mtc",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 4
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "mtc 978": {
     "deviceName": "978",
     "marketingName": "978",
@@ -55,16 +111,58 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "mtc evo": {
+    "deviceName": "Evo",
+    "marketingName": "Evo",
+    "manufacturer": "huawei",
+    "brand": "mtc",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "size": null
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "mtc mini": {
+    "deviceName": "Mini",
+    "marketingName": "Mini",
+    "manufacturer": "mtc",
+    "brand": "mtc",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "size": null
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "mtc smart run": {
-    "deviceName": "SMART Run",
-    "marketingName": "SMART Run",
+    "deviceName": "Smart Run",
+    "marketingName": "Smart Run",
     "manufacturer": "mtc",
     "brand": "mtc",
     "display": {
       "width": 1280,
       "height": 720,
       "touch": true,
-      "size": null
+      "size": 5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "mtc smart run 4g": {
+    "deviceName": "Smart Run 4G",
+    "marketingName": "Smart Run 4G",
+    "manufacturer": "mtc",
+    "brand": "mtc",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 5
     },
     "type": "smartphone",
     "platform": "android"
@@ -93,6 +191,20 @@
       "height": 720,
       "touch": true,
       "size": 5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "mtc viva": {
+    "deviceName": "Viva",
+    "marketingName": "Viva",
+    "manufacturer": "huawei",
+    "brand": "mtc",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 4
     },
     "type": "smartphone",
     "platform": "android"
