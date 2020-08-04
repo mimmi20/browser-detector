@@ -1,5 +1,8 @@
 {
   "rules": {
+    "/impulse[ _]p2/i": "ark impulse p2",
+    "/impulse[ _]p1\\+/i": "ark impulse p1 plus",
+    "/impulse[ _]p1/i": "ark impulse p1",
     "/benefit[ _]m4/i": "ark benefit m4",
     "/benefit[ _]m3s/i": "ark benefit m3s"
   },
