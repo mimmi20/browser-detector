@@ -1255,6 +1255,44 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; S3_Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.117 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "S3 Pro",
+      "marketingName": "S3 Pro",
+      "manufacturer": "umi",
+      "brand": "umi",
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.3
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "80.0.3987.117",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "80.0.3987.117",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; One Max) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Mobile Safari/537.36"
     },
     "device": {
@@ -2205,6 +2243,44 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; S3_Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "S3 Pro",
+      "marketingName": "S3 Pro",
+      "manufacturer": "umi",
+      "brand": "umi",
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.3
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "83.0.4103.106",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "83.0.4103.106",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; Z2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Mobile Safari/537.36"
     },
     "device": {
@@ -2281,25 +2357,25 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 9; S3_Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.117 Mobile Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; Z2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.111 Mobile Safari/537.36 comdirect/1.0 (appVersion:20.7.3;deviceType:mobile)"
     },
     "device": {
-      "deviceName": "S3 Pro",
-      "marketingName": "S3 Pro",
+      "deviceName": "Z2",
+      "marketingName": "Z2",
       "manufacturer": "umi",
       "brand": "umi",
       "display": {
-        "width": 2340,
+        "width": 2246,
         "height": 1080,
         "touch": true,
-        "size": 6.3
+        "size": 6.2
       },
       "type": "smartphone"
     },
     "browser": {
       "name": "Chrome",
       "modus": null,
-      "version": "80.0.3987.117",
+      "version": "84.0.4147.111",
       "manufacturer": "google",
       "bits": null,
       "type": "browser"
@@ -2307,37 +2383,37 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "9.0.0",
+      "version": "8.1.0",
       "manufacturer": "google",
       "bits": null
     },
     "engine": {
       "name": "Blink",
-      "version": "80.0.3987.117",
+      "version": "84.0.4147.111",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 9; S3_Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.119 Mobile Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; One Max Build/O11019; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/84.0.4147.89 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "S3 Pro",
-      "marketingName": "S3 Pro",
+      "deviceName": "One Max",
+      "marketingName": "One Max",
       "manufacturer": "umi",
       "brand": "umi",
       "display": {
-        "width": 2340,
-        "height": 1080,
+        "width": 1520,
+        "height": 720,
         "touch": true,
         "size": 6.3
       },
       "type": "smartphone"
     },
     "browser": {
-      "name": "Chrome",
+      "name": "Android WebView",
       "modus": null,
-      "version": "80.0.3987.119",
+      "version": "84.0.4147.89",
       "manufacturer": "google",
       "bits": null,
       "type": "browser"
@@ -2345,37 +2421,37 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "9.0.0",
+      "version": "8.1.0",
       "manufacturer": "google",
       "bits": null
     },
     "engine": {
       "name": "Blink",
-      "version": "80.0.3987.119",
+      "version": "84.0.4147.89",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 9; S3_Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Mobile Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; A3_Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "S3 Pro",
-      "marketingName": "S3 Pro",
+      "deviceName": "A3 Pro",
+      "marketingName": "A3 Pro",
       "manufacturer": "umi",
       "brand": "umi",
       "display": {
-        "width": 2340,
-        "height": 1080,
+        "width": 1512,
+        "height": 720,
         "touch": true,
-        "size": 6.3
+        "size": 5.7
       },
       "type": "smartphone"
     },
     "browser": {
       "name": "Chrome",
       "modus": null,
-      "version": "80.0.3987.132",
+      "version": "84.0.4147.89",
       "manufacturer": "google",
       "bits": null,
       "type": "browser"
@@ -2389,83 +2465,7 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "80.0.3987.132",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 9; S3_Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.87 Mobile Safari/537.36 comdirect/1.0 (appVersion:20.5.4;deviceType:mobile)"
-    },
-    "device": {
-      "deviceName": "S3 Pro",
-      "marketingName": "S3 Pro",
-      "manufacturer": "umi",
-      "brand": "umi",
-      "display": {
-        "width": 2340,
-        "height": 1080,
-        "touch": true,
-        "size": 6.3
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "80.0.3987.87",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "9.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "80.0.3987.87",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 9; S3_Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "S3 Pro",
-      "marketingName": "S3 Pro",
-      "manufacturer": "umi",
-      "brand": "umi",
-      "display": {
-        "width": 2340,
-        "height": 1080,
-        "touch": true,
-        "size": 6.3
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "83.0.4103.106",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "9.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "83.0.4103.106",
+      "version": "84.0.4147.89",
       "manufacturer": "google"
     }
   }
