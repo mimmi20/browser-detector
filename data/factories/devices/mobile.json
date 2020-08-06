@@ -345,7 +345,7 @@
     "/comio|ct701g plus|ct701w|(?<![0-9])c1 pro(?!f)/i": "comio",
     "/zopo|zp[0-9]{3}| c2 |hero ?1/i": "zopo",
     "/xgimi/i": "xgimi",
-    "/primo76|primo 91/i": "msi",
+    "/primo ?91|primo ?7[56]/i": "msi",
     "/walton|primo[\\- _]|walpad/i": "walton",
     "/rivo|rx([47]5|[64]0)/i": "rivo",
     "/pcd(?![mt][0-9]{2})|ph4001/i": "pcd",
