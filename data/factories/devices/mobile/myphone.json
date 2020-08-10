@@ -1,23 +1,32 @@
 {
   "rules": {
-    "/q ?smart premium/i": "myphone q smart premium",
-    "/hammer active/i": "myphone hammer active",
+    "/q[ _\\-]?smart[ _]premium/i": "myphone q smart premium",
+    "/q[ _\\-]?smart[ _]iii[ _]plus/i": "myphone q-smart iii plus",
+    "/q[ _\\-]?smart[ _]iii/i": "myphone q-smart iii",
+    "/hammer[ _]active/i": "myphone hammer active",
     "/infinity[ _](ii|2)[ _]lte/i": "myphone infinity 2 lte",
     "/infinity[ _](ii|2)[ _]lite/i": "myphone infinity 2 lite",
     "/infinity[ _]3g/i": "myphone infinity 3g",
+    "/pocket[ _]18x9/i": "myphone pocket 18x9",
+    "/c-smart[ _]4/i": "myphone c-smart 4",
+    "/fun[ _]lte/i": "myphone fun lte",
+    "/city[ _]?xl/i": "myphone city xl",
     "/axe[ _]m[ _]lte/i": "myphone hammer axe m lte",
     "/axe[ _]lte/i": "myphone axe lte",
     "/axe[ _]3g/i": "myphone axe 3g",
     "/cube[ _]lte/i": "myphone cube lte",
     "/funky/i": "myphone funky",
-    "/a919 duo/i": "myphone a919 duo",
+    "/a919[ _]duo/i": "myphone a919 duo",
     "/a888/i": "myphone a888",
     "/c1001/i": "myphone c1001",
     "/cube/i": "myphone cube",
-    "/mytab_10_q/i": "myphone mytab 10 q",
+    "/mytab[ _]10[ _]q/i": "myphone mytab 10 q",
     "/mytab10ii/i": "myphone mytab 10 ii",
-    "/mypad 2/i": "myphone mypad 2",
-    "/mytab mini 3g/i": "myphone mytab mini 3g"
+    "/mypad[ _]2/i": "myphone mypad 2",
+    "/mytab[ _]mini[ _]3g/i": "myphone mytab mini 3g",
+    "/my92[ _]dtv/i": "myphone my92 dtv",
+    "/my77[ _]dtv/i": "myphone my77 dtv",
+    "/my28s/i": "myphone my28s"
   },
   "generic": "general myphone device"
 }
