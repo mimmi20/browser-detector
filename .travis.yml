@@ -81,25 +81,25 @@ jobs:
       os: linux
       php: 7.1
       env: COMPOSER_FLAGS=""
-      script: composer outdated --direct
+      script: composer outdated --direct --strict
 
     - stage: check dependencies
       os: linux
       php: 7.2
       env: COMPOSER_FLAGS=""
-      script: composer outdated --direct
+      script: composer outdated --direct --strict
 
     - stage: check dependencies
       os: linux
       php: 7.3
       env: COMPOSER_FLAGS=""
-      script: composer outdated --direct
+      script: composer outdated --direct --strict
 
     - stage: check dependencies
       os: linux
       php: 7.4
       env: COMPOSER_FLAGS=""
-      script: composer outdated --direct
+      script: composer outdated --direct --strict
 
     - stage: check dependencies
       os: linux
