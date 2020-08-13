@@ -1,10 +1,16 @@
 {
   "rules": {
-    "/phablet 6\\.0/i": "lark phablet 6.0",
-    "/cirrus 4\\.5/i": "lark cirrus 4.5",
-    "/evolution 10/i": "lark evolution 10",
-    "/bjorn_sp-500/i": "lark bjorn sp-500",
-    "/ultimate 7i|ulitmate 7i/i": "lark ultimate 7i"
+    "/phablet[ _]6\\.0/i": "lark phablet 6.0",
+    "/stratus[ _]5/i": "lark stratus 5",
+    "/cirrus[ _]5/i": "lark cirrus 5",
+    "/cirrus[ _]4\\.5/i": "lark cirrus 4.5",
+    "/cirrus[ _]4/i": "lark cirrus 4",
+    "/ultimate[ _]x4[ _]10\\.1[ _]3g[ _]ips/i": "lark ultimate x4 10.1 3g ips",
+    "/ultimate[ _]7i|ulitmate[ _]7i/i": "lark ultimate 7i",
+    "/evolution[ _]x4[ _]10\\.1/i": "lark evolution x4 10.1",
+    "/evolution[ _]x4[ _]7[ _]3g/i": "lark evolution x4 7 3g",
+    "/evolution[ _]10/i": "lark evolution 10",
+    "/bjorn[ _]sp-500/i": "lark bjorn sp-500"
   },
   "generic": "general lark device"
 }

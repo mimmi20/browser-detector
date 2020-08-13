@@ -3,6 +3,7 @@
     "/c1-u02/i": "leeco c1-u02",
     "/max2/i": "leeco le max2",
     "/le max/i": "leeco le max",
+    "/x910/i": "leeco x910",
     "/x900\\+/i": "leeco le x900+",
     "/x800\\+/i": "leeco le x800+",
     "/le 1 pro|x800/i": "leeco le x800",
@@ -15,6 +16,8 @@
     "/le[ _]?x720/i": "leeco le x720",
     "/le[ _]?x650/i": "leeco le x650",
     "/le[ _]?x626/i": "leeco le x626",
+    "/le[ _]?x622/i": "leeco x622",
+    "/le[ _]?x621/i": "leeco x621",
     "/le[ _]?x620/i": "leeco le x620",
     "/x600/i": "leeco x600",
     "/x52x/i": "leeco x52x",
@@ -24,7 +27,8 @@
     "/le[ _]?x520/i": "leeco le x520",
     "/le[ _]?x509/i": "leeco le x509",
     "/le[ _]?x507/i": "leeco le x507",
-    "/letv[ _]?x500/i": "leeco x500",
+    "/letv[ _]?x500|le[ _]?x500/i": "leeco x500",
+    "/1 pro/i": "leeco 1 pro",
     "/x3-50 uhd/i": "leeco x3-50 uhd"
   },
   "generic": "general leeco device"
