@@ -1,6 +1,44 @@
 [
   {
     "headers": {
+      "user-agent": "OWG1 UP/4.1.20a UP.Browser/4.1.20a-XXXX UP.Link/5.1.2.12 (Google WAP Proxy/1.0)"
+    },
+    "device": {
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device"
+    },
+    "browser": {
+      "name": "Google Wap Proxy",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "bot"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "WinWAP-PRO/3.1 (3.1.5.190) UP.Link/5.1.2.5 (Google WAP Proxy/1.0)"
     },
     "device": {
@@ -3761,44 +3799,6 @@
       "name": "WebKit",
       "version": "537.36.0",
       "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (Android; Opera Mini/37.1.2254/121.115; U; de) Presto/2.12.423 Version/12.16"
-    },
-    "device": {
-      "deviceName": "general Mobile device",
-      "marketingName": "general Mobile device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "37.1.2254",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": null,
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.12.423",
-      "manufacturer": "opera"
     }
   }
 ]

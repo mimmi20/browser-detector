@@ -1,6 +1,44 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; NOKIA; P4301)"
+    },
+    "device": {
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device"
+    },
+    "browser": {
+      "name": "IEMobile",
+      "modus": null,
+      "version": "10.0.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Windows Phone OS 8.0",
+      "marketingName": "Windows Phone OS 8.0",
+      "version": "8.0.0",
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": "Trident",
+      "version": "6.0.0",
+      "manufacturer": "microsoft"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; NOKIA; Phi-CMCC)"
     },
     "device": {
@@ -3744,44 +3782,6 @@
       "name": "Opera Mini",
       "modus": null,
       "version": "7.5.35199",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": null,
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.12.423",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (Android; Opera Mini/22.0.2254/60.271; U; de) Presto/2.12.423 Version/12.16"
-    },
-    "device": {
-      "deviceName": "general Mobile device",
-      "marketingName": "general Mobile device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "22.0.2254",
       "manufacturer": "opera",
       "bits": null,
       "type": "transcoder"

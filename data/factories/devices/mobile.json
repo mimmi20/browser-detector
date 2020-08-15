@@ -374,7 +374,7 @@
     "/tesla| smartphone[ _]|ttl[0-9]|impulse 7\\.85 3g|(?<!ask) sp[0-9](?![0-9])/i": "tesla",
     "/terra[ _]?pad|pad[ _]?1002/i": "wortmann",
     "/microstar|e10319/i": "microstar",
-    "/logicom|[ ;](l-?ement|l-ite|l-?ixir)|e[89]12|e731|e1031|kt712a_4\\.4|s7812bt|tab1062|tab950|(b|id|m|vr)[_ ]?bot/i": "logicom",
+    "/logicom|[ ;](l-?ement|l-ite|l-?ixir)|e[89]12|e731|e1031|kt712a_4\\.4|s7812bt|tab1062|tab950|((?<!e)b|(?<!k)id|m|vr)[_ ]?bot/i": "logicom",
     "/xtab-?70 ?dc|xtab-7x_quad|xtab-?79 ?qci|xtab-?700 ?qci|xtab-?700 ?dc|xtab 8q gps|xtab-?100 ?qcr|xtab-?9|xtab-?100 ?dci-?3g/i": "wayte-q",
     "/aedupac/i": "aedupac",
     "/eaxtab[_ ]001/i": "eaxus",

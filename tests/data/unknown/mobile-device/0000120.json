@@ -1,6 +1,44 @@
 [
   {
     "headers": {
+      "user-agent": "Opera/9.80 (J2ME/MIDP; Opera Mini/5.0.15650/20.2479; U; en) Presto/2.5.25"
+    },
+    "device": {
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device"
+    },
+    "browser": {
+      "name": "Opera Mini",
+      "modus": null,
+      "version": "5.0.15650",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.5.25",
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Opera/9.80 (J2ME/MIDP; Opera Mini/5.0.0.862 Profile/24.743; U; en) Presto/2.5.25 Version/10.54"
     },
     "device": {
@@ -3726,44 +3764,6 @@
   {
     "headers": {
       "user-agent": "UP.Browser/3.1.02-SC01 UP.Link/5.0.2.9 (Google WAP Proxy/1.0)"
-    },
-    "device": {
-      "deviceName": "general Mobile device",
-      "marketingName": "general Mobile device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": "Google Wap Proxy",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "bot"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "OWG1 UP/4.1.20a UP.Browser/4.1.20a-XXXX UP.Link/5.1.2.12 (Google WAP Proxy/1.0)"
     },
     "device": {
       "deviceName": "general Mobile device",

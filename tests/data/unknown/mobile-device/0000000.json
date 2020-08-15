@@ -1,6 +1,44 @@
 [
   {
     "headers": {
+      "user-agent": "Opera/8.01 (J2ME/MIDP; MXit WebBot/1.8.3.119) Opera Mini/3.1"
+    },
+    "device": {
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device"
+    },
+    "browser": {
+      "name": "Opera Mini",
+      "modus": null,
+      "version": "3.1.0",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": null,
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "XBMC/12.4-MINIX Git:20131225-38bc34f (Linux; Android; 3.0.36+ armv7l; http://www.xbmc.org)"
     },
     "device": {
@@ -3745,44 +3783,6 @@
       "modus": null,
       "version": "1.3.0.1192",
       "manufacturer": "coursera",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Crowsnest/0.5 (+http://www.crowsnest.tv/)"
-    },
-    "device": {
-      "deviceName": "general Mobile device",
-      "marketingName": "general Mobile device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": "Crowsnest Mobile App",
-      "modus": null,
-      "version": "0.5.0",
-      "manufacturer": "gocro",
       "bits": null,
       "type": "application"
     },
