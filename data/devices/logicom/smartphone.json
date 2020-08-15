@@ -69,9 +69,37 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "logicom l-ement500": {
-    "deviceName": "L-EMENT500",
-    "marketingName": "L-EMENT500",
+  "logicom l-ement 350": {
+    "deviceName": "L-EMENT 350",
+    "marketingName": "L-EMENT 350",
+    "manufacturer": "logicom",
+    "brand": "logicom",
+    "display": {
+      "width": 480,
+      "height": 320,
+      "touch": true,
+      "size": 3.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "logicom l-ement 400": {
+    "deviceName": "L-EMENT 400",
+    "marketingName": "L-EMENT 400",
+    "manufacturer": "logicom",
+    "brand": "logicom",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 4
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "logicom l-ement 500": {
+    "deviceName": "L-EMENT 500",
+    "marketingName": "L-EMENT 500",
     "manufacturer": "logicom",
     "brand": "logicom",
     "display": {
@@ -79,6 +107,20 @@
       "height": 480,
       "touch": true,
       "size": null
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "logicom l-ement 550": {
+    "deviceName": "L-EMENT 550",
+    "marketingName": "L-EMENT 550",
+    "manufacturer": "logicom",
+    "brand": "logicom",
+    "display": {
+      "width": 960,
+      "height": 540,
+      "touch": true,
+      "size": 5.5
     },
     "type": "smartphone",
     "platform": "android"
