@@ -4,6 +4,7 @@
     "/onepad ?1100b/i": "airis onepad 1100b",
     "/onepad ?1100/i": "airis onepad 1100",
     "/onepad ?1050/i": "airis onepad 1050",
+    "/onepad ?1000/i": "airis onepad 1000",
     "/onepad ?970/i": "airis onepad 970",
     "/onepad ?940/i": "airis onepad 940",
     "/onepad ?785i/i": "airis onepad 785i",
@@ -16,8 +17,17 @@
     "/onepad ?720/i": "airis onepad 720",
     "/onepad ?715/i": "airis onepad 715",
     "/onepad ?705/i": "airis onepad 705",
+    "/onepad ?700/i": "airis onepad 700",
     "/onepad ?90/i": "airis onepad 90",
-    "/kira ?n9010/i": "airis kira n9010"
+    "/onepad( build|[;\\/\\)])/i": "airis onepad",
+    "/kira ?n9010/i": "airis kira n9010",
+    "/s211/i": "airis s211",
+    "/tm500/i": "airis tm500",
+    "/tm475/i": "airis tm475",
+    "/tm450/i": "airis tm450",
+    "/tm400/i": "airis tm400",
+    "/tm350/i": "airis tm350",
+    "/gn135/i": "airis gn135"
   },
   "generic": "general airis device"
 }
