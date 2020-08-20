@@ -1,58 +1,20 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.0.3; Lemon_LT9 Build/IML74K) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.58 Mobile Safari/537.31 OPR/14.0.1074.58201"
-    },
-    "device": {
-      "deviceName": "general Lemon device",
-      "marketingName": "general Lemon device",
-      "manufacturer": "lemon",
-      "brand": "lemon",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": "Opera Mobile",
-      "modus": null,
-      "version": "14.0.1074.58201",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "537.31.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; U; Android 2.2.2; en-US; Lemon P1 Build/1.0.6008.0254) AppleWebKit/534.31 (KHTML, like Gecko) UCBrowser/9.3.1.344 U3/0.8.0 Mobile Safari/534.31"
     },
     "device": {
-      "deviceName": "general Lemon device",
-      "marketingName": "general Lemon device",
+      "deviceName": "P1",
+      "marketingName": "P1",
       "manufacturer": "lemon",
       "brand": "lemon",
       "display": {
         "width": null,
         "height": null,
-        "touch": false,
+        "touch": true,
         "size": null
       },
-      "type": "mobile-device"
+      "type": "smartphone"
     },
     "browser": {
       "name": "UC Browser",
@@ -63,10 +25,10 @@
       "type": "transcoder"
     },
     "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "2.2.2",
+      "manufacturer": "google",
       "bits": null
     },
     "engine": {
@@ -80,17 +42,17 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 4.1.1; LEMON P100 Build/JRO03C) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166 Mobile Safari/535.19"
     },
     "device": {
-      "deviceName": "general Lemon device",
-      "marketingName": "general Lemon device",
+      "deviceName": "P100",
+      "marketingName": "P100",
       "manufacturer": "lemon",
       "brand": "lemon",
       "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
+        "width": 960,
+        "height": 640,
+        "touch": true,
+        "size": 5
       },
-      "type": "mobile-device"
+      "type": "smartphone"
     },
     "browser": {
       "name": "Chrome",
@@ -101,10 +63,10 @@
       "type": "browser"
     },
     "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.1.1",
+      "manufacturer": "google",
       "bits": null
     },
     "engine": {
@@ -118,17 +80,17 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 4.0.4; Lemon P101 Build/IMM76D) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.58 Mobile Safari/537.31"
     },
     "device": {
-      "deviceName": "general Lemon device",
-      "marketingName": "general Lemon device",
+      "deviceName": "P101",
+      "marketingName": "P101",
       "manufacturer": "lemon",
       "brand": "lemon",
       "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 4.3
       },
-      "type": "mobile-device"
+      "type": "smartphone"
     },
     "browser": {
       "name": "Chrome",
@@ -139,10 +101,10 @@
       "type": "browser"
     },
     "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.0.4",
+      "manufacturer": "google",
       "bits": null
     },
     "engine": {
@@ -156,17 +118,17 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 2.3.6; En-us; Lemon P2 Build/GRK39F) AppleWebKit/533.1 (KHTML, Like Gecko) Version/4.0 Mobile Safari/533.1"
     },
     "device": {
-      "deviceName": "general Lemon device",
-      "marketingName": "general Lemon device",
+      "deviceName": "P2",
+      "marketingName": "P2",
       "manufacturer": "lemon",
       "brand": "lemon",
       "display": {
         "width": null,
         "height": null,
-        "touch": false,
+        "touch": true,
         "size": null
       },
-      "type": "mobile-device"
+      "type": "smartphone"
     },
     "browser": {
       "name": "Android Webkit",
@@ -177,10 +139,10 @@
       "type": "browser"
     },
     "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "2.3.6",
+      "manufacturer": "google",
       "bits": null
     },
     "engine": {
@@ -194,17 +156,17 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 2.3.6; En-US; Lemon_P2_ Build/GRK39F) AppleWebKit/528.5+ (KHTML, Like Gecko) Version/3.1.2 Mobile Safari/525.20.1 UCBrowser/8.7.0.315 Mobile"
     },
     "device": {
-      "deviceName": "general Lemon device",
-      "marketingName": "general Lemon device",
+      "deviceName": "P2",
+      "marketingName": "P2",
       "manufacturer": "lemon",
       "brand": "lemon",
       "display": {
         "width": null,
         "height": null,
-        "touch": false,
+        "touch": true,
         "size": null
       },
-      "type": "mobile-device"
+      "type": "smartphone"
     },
     "browser": {
       "name": "UC Browser",
@@ -215,10 +177,10 @@
       "type": "transcoder"
     },
     "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "2.3.6",
+      "manufacturer": "google",
       "bits": null
     },
     "engine": {
@@ -232,17 +194,17 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 2.3.5; en-US; Lemon_P3 Build/GRJ90) AppleWebKit/528.5+ (KHTML, like Gecko) Version/3.1.2 Mobile Safari/525.20.1 UCBrowser/8.7.0.315 Mobile"
     },
     "device": {
-      "deviceName": "general Lemon device",
-      "marketingName": "general Lemon device",
+      "deviceName": "P3",
+      "marketingName": "P3",
       "manufacturer": "lemon",
       "brand": "lemon",
       "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
       },
-      "type": "mobile-device"
+      "type": "smartphone"
     },
     "browser": {
       "name": "UC Browser",
@@ -253,10 +215,10 @@
       "type": "transcoder"
     },
     "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "2.3.5",
+      "manufacturer": "google",
       "bits": null
     },
     "engine": {
@@ -270,17 +232,17 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 2.3.6; En-US; LEMON P7 Build/GRK39F) AppleWebKit/533.1 (KHTML, Like Gecko) Version/4.0 Mobile Safari/533.1"
     },
     "device": {
-      "deviceName": "general Lemon device",
-      "marketingName": "general Lemon device",
+      "deviceName": "P7",
+      "marketingName": "P7",
       "manufacturer": "lemon",
       "brand": "lemon",
       "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
       },
-      "type": "mobile-device"
+      "type": "smartphone"
     },
     "browser": {
       "name": "Android Webkit",
@@ -291,10 +253,10 @@
       "type": "browser"
     },
     "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "2.3.6",
+      "manufacturer": "google",
       "bits": null
     },
     "engine": {
@@ -308,17 +270,17 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 2.3.6; En-US; LEMON_P7_ Build/GRK39F) AppleWebKit/528.5+ (KHTML, Like Gecko) Version/3.1.2 Mobile Safari/525.20.1 UCBrowser/8.7.0.315 Mobile"
     },
     "device": {
-      "deviceName": "general Lemon device",
-      "marketingName": "general Lemon device",
+      "deviceName": "P7",
+      "marketingName": "P7",
       "manufacturer": "lemon",
       "brand": "lemon",
       "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
       },
-      "type": "mobile-device"
+      "type": "smartphone"
     },
     "browser": {
       "name": "UC Browser",
@@ -329,10 +291,10 @@
       "type": "transcoder"
     },
     "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "2.3.6",
+      "manufacturer": "google",
       "bits": null
     },
     "engine": {
@@ -346,17 +308,17 @@
       "user-agent": "Mozilla/5.0 (Linux; U; Android 2.3.5; En-US; Lemon P9 Build/MocorDroid2.3.5) AppleWebKit/534.31 (KHTML, Like Gecko) UCBrowser/9.3.2.349 U3/0.8.0 Mobile Safari/534.31"
     },
     "device": {
-      "deviceName": "general Lemon device",
-      "marketingName": "general Lemon device",
+      "deviceName": "P9",
+      "marketingName": "P9",
       "manufacturer": "lemon",
       "brand": "lemon",
       "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
       },
-      "type": "mobile-device"
+      "type": "smartphone"
     },
     "browser": {
       "name": "UC Browser",
@@ -367,10 +329,10 @@
       "type": "transcoder"
     },
     "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "2.3.5",
+      "manufacturer": "google",
       "bits": null
     },
     "engine": {
@@ -381,96 +343,20 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.0.4; Lemon Tab LT29 Build/IMM76D) AppleWebKit/535.19 (KHTML, Like Gecko) Chrome/18.0.1025.166 Mobile Safari/535.19"
-    },
-    "device": {
-      "deviceName": "general Lemon device",
-      "marketingName": "general Lemon device",
-      "manufacturer": "lemon",
-      "brand": "lemon",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "18.0.1025.166",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "535.19.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.0.4; en-US; Lemon_Tab_LT29 Build/IMM76D) AppleWebKit/528.5+ (KHTML, like Gecko) Version/3.1.2 Mobile Safari/525.20.1 UCBrowser/8.7.0.315 Mobile"
-    },
-    "device": {
-      "deviceName": "general Lemon device",
-      "marketingName": "general Lemon device",
-      "manufacturer": "lemon",
-      "brand": "lemon",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "8.7.0.315",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "528.5.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; U; Android 4.2.2; en-us; P105 Build/LemonP105) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
     },
     "device": {
-      "deviceName": "general Lemon device",
-      "marketingName": "general Lemon device",
+      "deviceName": "P105",
+      "marketingName": "P105",
       "manufacturer": "lemon",
       "brand": "lemon",
       "display": {
         "width": null,
         "height": null,
-        "touch": false,
-        "size": null
+        "touch": true,
+        "size": 5
       },
-      "type": "mobile-device"
+      "type": "smartphone"
     },
     "browser": {
       "name": "Android Webkit",
@@ -481,10 +367,10 @@
       "type": "browser"
     },
     "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "google",
       "bits": null
     },
     "engine": {
