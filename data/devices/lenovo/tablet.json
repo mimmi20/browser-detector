@@ -307,20 +307,6 @@
     "type": "tablet",
     "platform": "android"
   },
-  "lenovo e1060x": {
-    "deviceName": "E1060X",
-    "marketingName": "LifeTab E1060X",
-    "manufacturer": "lenovo",
-    "brand": "medion",
-    "display": {
-      "width": null,
-      "height": null,
-      "touch": true,
-      "size": 10.1
-    },
-    "type": "tablet",
-    "platform": "android"
-  },
   "lenovo e10312": {
     "deviceName": "E10312",
     "marketingName": "LifeTab E10312",
@@ -343,6 +329,20 @@
     "display": {
       "width": 1280,
       "height": 800,
+      "touch": true,
+      "size": 10.1
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "lenovo e1060x": {
+    "deviceName": "E1060X",
+    "marketingName": "LifeTab E1060X",
+    "manufacturer": "lenovo",
+    "brand": "medion",
+    "display": {
+      "width": null,
+      "height": null,
       "touch": true,
       "size": 10.1
     },
@@ -429,20 +429,6 @@
       "height": 600,
       "touch": true,
       "size": 10.1
-    },
-    "type": "tablet",
-    "platform": "android"
-  },
-  "lenovo smart tab iii 7": {
-    "deviceName": "Smart Tab III 7",
-    "marketingName": "Smart Tab III 7",
-    "manufacturer": "lenovo",
-    "brand": "vodafone",
-    "display": {
-      "width": 1024,
-      "height": 600,
-      "touch": true,
-      "size": 7
     },
     "type": "tablet",
     "platform": "android"
@@ -755,6 +741,20 @@
     "type": "tablet",
     "platform": "android"
   },
+  "lenovo tb-7305f": {
+    "deviceName": "TB-7305F",
+    "marketingName": "Tab M7",
+    "manufacturer": "lenovo",
+    "brand": "lenovo",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "size": 7
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
   "lenovo tb-8505f": {
     "deviceName": "TB-8505F",
     "marketingName": "Tab M8",
@@ -802,6 +802,20 @@
     "marketingName": "Tab4 8 Plus",
     "manufacturer": "lenovo",
     "brand": "medion",
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "size": 8
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "lenovo tb-8705f": {
+    "deviceName": "TB-8705F",
+    "marketingName": "Tab4 M8",
+    "manufacturer": "lenovo",
+    "brand": "lenovo",
     "display": {
       "width": 1920,
       "height": 1200,
