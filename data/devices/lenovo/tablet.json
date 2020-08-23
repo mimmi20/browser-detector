@@ -1,4 +1,18 @@
 {
+  "lenovo a10": {
+    "deviceName": "A10",
+    "marketingName": "A10",
+    "manufacturer": "lenovo",
+    "brand": "lenovo",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": 10.1
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
   "lenovo a7600-f": {
     "deviceName": "A7600-F",
     "marketingName": "A10-70 A7600 Wi-Fi",
@@ -51,6 +65,20 @@
       "height": 800,
       "touch": true,
       "size": 10
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "lenovo a1": {
+    "deviceName": "A1",
+    "marketingName": "IdeaPad A1",
+    "manufacturer": "lenovo",
+    "brand": "lenovo",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "size": 7
     },
     "type": "tablet",
     "platform": "android"
