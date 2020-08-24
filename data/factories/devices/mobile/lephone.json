@@ -1,10 +1,18 @@
 {
   "rules": {
+    "/w15/i": "lephone w15",
+    "/w12/i": "lephone w12",
     "/w11/i": "lephone w11",
+    "/w10/i": "lephone w10",
+    "/w9/i": "lephone w9",
+    "/w7[ _]plus/i": "lephone w7 plus",
+    "/w7/i": "lephone w7",
+    "/w2/i": "lephone w2",
     "/td8208/i": "lephone td8208",
     "/t10/i": "lephone t10",
     "/t6\\+v/i": "lephone t6+v",
-    "/t2/i": "lephone t2"
+    "/t2/i": "lephone t2",
+    "/k7/i": "lephone k7"
   },
   "generic": "general lephone device"
 }
