@@ -209,6 +209,20 @@
     "type": "feature-phone",
     "platform": "java"
   },
+  "lg a340": {
+    "deviceName": "A340",
+    "marketingName": "A340",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": 2.4
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "lg a380": {
     "deviceName": "A380",
     "marketingName": "A380",
@@ -587,6 +601,20 @@
     "type": "feature-phone",
     "platform": "java"
   },
+  "lg kg800": {
+    "deviceName": "KG800",
+    "marketingName": "Chocolate",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": false,
+      "size": 2
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "lg ku800": {
     "deviceName": "KU800",
     "marketingName": "Chocolate",
@@ -769,6 +797,20 @@
     "type": "feature-phone",
     "platform": "java"
   },
+  "lg t505": {
+    "deviceName": "T505",
+    "marketingName": "Ego",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": true,
+      "size": 2.8
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "lg gt550": {
     "deviceName": "GT550",
     "marketingName": "Encore",
@@ -867,6 +909,20 @@
     "type": "feature-phone",
     "platform": "java"
   },
+  "lg f1200": {
+    "deviceName": "F1200",
+    "marketingName": "F1200",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "lg f2100": {
     "deviceName": "F2100",
     "marketingName": "F2100",
@@ -947,6 +1003,20 @@
       "height": 176,
       "touch": false,
       "size": 2.2
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "lg lx550": {
+    "deviceName": "LX550",
+    "marketingName": "Fusic",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": false,
+      "size": null
     },
     "type": "feature-phone",
     "platform": "java"
@@ -1127,6 +1197,34 @@
     "display": {
       "width": 160,
       "height": 128,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "lg g7070": {
+    "deviceName": "G7070",
+    "marketingName": "G7070",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "lg g7200": {
+    "deviceName": "G7200",
+    "marketingName": "G7200",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 220,
+      "height": 176,
       "touch": false,
       "size": null
     },
@@ -1371,6 +1469,20 @@
     "type": "feature-phone",
     "platform": "java"
   },
+  "lg kg220": {
+    "deviceName": "KG220",
+    "marketingName": "KG220",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 128,
+      "height": 128,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "lg kp210": {
     "deviceName": "KP210",
     "marketingName": "KP210",
@@ -1483,6 +1595,174 @@
     "type": "feature-phone",
     "platform": "symbian"
   },
+  "lg l1100": {
+    "deviceName": "L1100",
+    "marketingName": "L1100",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "lg l1200": {
+    "deviceName": "L1200",
+    "marketingName": "L1200",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "lg l1400": {
+    "deviceName": "L1400",
+    "marketingName": "L1400",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "lg l3100": {
+    "deviceName": "L3100",
+    "marketingName": "L3100",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "lg l5100": {
+    "deviceName": "L5100",
+    "marketingName": "L5100",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": false,
+      "size": 2
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "lg gd580": {
+    "deviceName": "GD580",
+    "marketingName": "Lollipop",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 400,
+      "height": 240,
+      "touch": false,
+      "size": 2.8
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "lg lx600": {
+    "deviceName": "LX600",
+    "marketingName": "Lotus",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": 2.4
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "lg lx260": {
+    "deviceName": "LX260",
+    "marketingName": "LX260",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": false,
+      "size": 2
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "lg lx350": {
+    "deviceName": "LX350",
+    "marketingName": "LX350",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "lg m4410": {
+    "deviceName": "M4410",
+    "marketingName": "M4410",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "lg m6100": {
+    "deviceName": "M6100",
+    "marketingName": "M6100",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "lg mg800": {
+    "deviceName": "MG800",
+    "marketingName": "MG800",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "lg mx380": {
     "deviceName": "MX380",
     "marketingName": "MX380",
@@ -1493,6 +1773,20 @@
       "height": 176,
       "touch": false,
       "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "lg gt365": {
+    "deviceName": "GT365",
+    "marketingName": "Neon",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": 2.4
     },
     "type": "feature-phone",
     "platform": "java"
@@ -1661,6 +1955,20 @@
       "height": 176,
       "touch": true,
       "size": 2.3
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "lg s5200": {
+    "deviceName": "S5200",
+    "marketingName": "S5200",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": 1.8
     },
     "type": "feature-phone",
     "platform": "java"
@@ -1899,6 +2207,20 @@
       "height": 240,
       "touch": false,
       "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "lg gr500": {
+    "deviceName": "GR500",
+    "marketingName": "Xenon",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 400,
+      "height": 240,
+      "touch": true,
+      "size": 2.8
     },
     "type": "feature-phone",
     "platform": "java"
