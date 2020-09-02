@@ -1,6 +1,34 @@
 {
+  "lg f520k": {
+    "deviceName": "F520K",
+    "marketingName": "AKA 4G",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "lg f520l": {
     "deviceName": "F520L",
+    "marketingName": "AKA 4G",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "lg f520s": {
+    "deviceName": "F520S",
     "marketingName": "AKA 4G",
     "manufacturer": "lg",
     "brand": "lg",
@@ -475,6 +503,20 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "lg d392": {
+    "deviceName": "D392",
+    "marketingName": "F60",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 4.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "lg l63bl": {
     "deviceName": "L63BL",
     "marketingName": "Fiesta",
@@ -517,8 +559,22 @@
     "type": "smartphone",
     "platform": "firefoxos"
   },
-  "lg d955": {
-    "deviceName": "D955",
+  "lg d956": {
+    "deviceName": "D956",
+    "marketingName": "G Flex",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 6
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "lg lgl23": {
+    "deviceName": "LGL23",
     "marketingName": "G Flex",
     "manufacturer": "lg",
     "brand": "lg",
@@ -533,56 +589,14 @@
   },
   "lg d958": {
     "deviceName": "D958",
-    "marketingName": "G Flex",
+    "marketingName": "G Flex (Asia, Hong Kong)",
     "manufacturer": "lg",
     "brand": "lg",
     "display": {
       "width": 1280,
       "height": 720,
       "touch": true,
-      "size": null
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
-  "lg d959": {
-    "deviceName": "D959",
-    "marketingName": "G Flex",
-    "manufacturer": "lg",
-    "brand": "lg",
-    "display": {
-      "width": 1280,
-      "height": 720,
-      "touch": true,
-      "size": null
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
-  "lg f340": {
-    "deviceName": "F340",
-    "marketingName": "G Flex",
-    "manufacturer": "lg",
-    "brand": "lg",
-    "display": {
-      "width": 1280,
-      "height": 720,
-      "touch": true,
-      "size": null
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
-  "lg ls995": {
-    "deviceName": "LS995",
-    "marketingName": "G Flex",
-    "manufacturer": "lg",
-    "brand": "lg",
-    "display": {
-      "width": 1280,
-      "height": 720,
-      "touch": true,
-      "size": null
+      "size": 6
     },
     "type": "smartphone",
     "platform": "android"
@@ -596,7 +610,119 @@
       "width": 1280,
       "height": 720,
       "touch": true,
-      "size": null
+      "size": 6
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "lg d955": {
+    "deviceName": "D955",
+    "marketingName": "G Flex (Europe)",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 6
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "lg f340": {
+    "deviceName": "F340",
+    "marketingName": "G Flex (Korea)",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 6
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "lg f340k": {
+    "deviceName": "F340K",
+    "marketingName": "G Flex (Korea)",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 6
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "lg f340l": {
+    "deviceName": "F340L",
+    "marketingName": "G Flex (Korea)",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 6
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "lg f340s": {
+    "deviceName": "F340S",
+    "marketingName": "G Flex (Korea)",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 6
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "lg ls995": {
+    "deviceName": "LS995",
+    "marketingName": "G Flex (Sprint)",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 6
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "lg d959": {
+    "deviceName": "D959",
+    "marketingName": "G Flex (T-Mobile)",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 6
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "lg f510l": {
+    "deviceName": "F510L",
+    "marketingName": "G Flex 2",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": 5.5
     },
     "type": "smartphone",
     "platform": "android"
@@ -1273,36 +1399,8 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "lg d852": {
-    "deviceName": "D852",
-    "marketingName": "G3",
-    "manufacturer": "lg",
-    "brand": "lg",
-    "display": {
-      "width": 2560,
-      "height": 1440,
-      "touch": true,
-      "size": 5.5
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
   "lg d852g": {
     "deviceName": "D852G",
-    "marketingName": "G3",
-    "manufacturer": "lg",
-    "brand": "lg",
-    "display": {
-      "width": 2560,
-      "height": 1440,
-      "touch": true,
-      "size": 5.5
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
-  "lg d855": {
-    "deviceName": "D855",
     "marketingName": "G3",
     "manufacturer": "lg",
     "brand": "lg",
@@ -1331,6 +1429,20 @@
   },
   "lg d858hk": {
     "deviceName": "D858HK",
+    "marketingName": "G3",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 2560,
+      "height": 1440,
+      "touch": true,
+      "size": 5.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "lg f400k": {
+    "deviceName": "F400K",
     "marketingName": "G3",
     "manufacturer": "lg",
     "brand": "lg",
@@ -1427,9 +1539,51 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "lg us990": {
+    "deviceName": "US990",
+    "marketingName": "G3",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 2560,
+      "height": 1440,
+      "touch": true,
+      "size": 5.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "lg d850": {
     "deviceName": "D850",
     "marketingName": "G3 (AT&T)",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 2560,
+      "height": 1440,
+      "touch": true,
+      "size": 5.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "lg d852": {
+    "deviceName": "D852",
+    "marketingName": "G3 (Canada)",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 2560,
+      "height": 1440,
+      "touch": true,
+      "size": 5.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "lg d855": {
+    "deviceName": "D855",
+    "marketingName": "G3 (Europe)",
     "manufacturer": "lg",
     "brand": "lg",
     "display": {
@@ -1513,6 +1667,20 @@
   },
   "lg f470k": {
     "deviceName": "F470K",
+    "marketingName": "G3 Beat",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "lg f470l": {
+    "deviceName": "F470L",
     "marketingName": "G3 Beat",
     "manufacturer": "lg",
     "brand": "lg",
@@ -1639,6 +1807,20 @@
   },
   "lg d690n": {
     "deviceName": "D690N",
+    "marketingName": "G3 Stylus",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 960,
+      "height": 540,
+      "touch": true,
+      "size": 5.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "lg d693": {
+    "deviceName": "D693",
     "marketingName": "G3 Stylus",
     "manufacturer": "lg",
     "brand": "lg",
@@ -4031,6 +4213,20 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "lg x145": {
+    "deviceName": "X145",
+    "marketingName": "L60 Dual",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 4.3
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "lg x147": {
     "deviceName": "X147",
     "marketingName": "L60 Dual",
@@ -4173,6 +4369,20 @@
   },
   "lg d373": {
     "deviceName": "D373",
+    "marketingName": "L80",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "lg d375ar": {
+    "deviceName": "D375AR",
     "marketingName": "L80",
     "manufacturer": "lg",
     "brand": "lg",
@@ -5291,6 +5501,20 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "lg us780": {
+    "deviceName": "US780",
+    "marketingName": "Optimus F7",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 4.7
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "lg l34c": {
     "deviceName": "L34C",
     "marketingName": "Optimus Fuel",
@@ -5445,6 +5669,20 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "lg e981h": {
+    "deviceName": "E981h",
+    "marketingName": "Optimus G Pro",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": 5.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "lg e986": {
     "deviceName": "E986",
     "marketingName": "Optimus G Pro",
@@ -5476,6 +5714,20 @@
   "lg e980": {
     "deviceName": "E980",
     "marketingName": "Optimus G Pro (AT&T)",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": 5.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "lg l-04e": {
+    "deviceName": "L-04E",
+    "marketingName": "Optimus G Pro (DoCoMo)",
     "manufacturer": "lg",
     "brand": "lg",
     "display": {
@@ -5599,6 +5851,20 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "lg l-05d": {
+    "deviceName": "L-05D",
+    "marketingName": "Optimus it",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": null
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "lg l-05e": {
     "deviceName": "L-05E",
     "marketingName": "Optimus it",
@@ -5609,6 +5875,20 @@
       "height": 720,
       "touch": true,
       "size": null
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "lg e410": {
+    "deviceName": "E410",
+    "marketingName": "Optimus L1 II",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": true,
+      "size": 3
     },
     "type": "smartphone",
     "platform": "android"
@@ -5683,6 +5963,20 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "lg e410g": {
+    "deviceName": "E410g",
+    "marketingName": "Optimus L1X",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": true,
+      "size": 3
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "lg e400": {
     "deviceName": "E400",
     "marketingName": "Optimus L3",
@@ -5727,6 +6021,20 @@
   },
   "lg e430": {
     "deviceName": "E430",
+    "marketingName": "Optimus L3 II",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": true,
+      "size": 3.2
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "lg e431g": {
+    "deviceName": "E431g",
     "marketingName": "Optimus L3 II",
     "manufacturer": "lg",
     "brand": "lg",
@@ -6117,6 +6425,20 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "lg d321": {
+    "deviceName": "D321",
+    "marketingName": "Optimus L70",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 4.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "lg ms323": {
     "deviceName": "MS323",
     "marketingName": "Optimus L70",
@@ -6126,7 +6448,7 @@
       "width": 800,
       "height": 480,
       "touch": true,
-      "size": null
+      "size": 4.5
     },
     "type": "smartphone",
     "platform": "android"
@@ -6175,6 +6497,34 @@
   },
   "lg p769": {
     "deviceName": "P769",
+    "marketingName": "Optimus L9",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 960,
+      "height": 540,
+      "touch": true,
+      "size": 4.7
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "lg p778": {
+    "deviceName": "P778",
+    "marketingName": "Optimus L9",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 960,
+      "height": 540,
+      "touch": true,
+      "size": 4.7
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "lg p778g": {
+    "deviceName": "P778G",
     "marketingName": "Optimus L9",
     "manufacturer": "lg",
     "brand": "lg",
@@ -6775,7 +7125,7 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "lg vs950 4g": {
+  "lg vs950": {
     "deviceName": "VS950 4G",
     "marketingName": "Optimus Vu",
     "manufacturer": "lg",
@@ -6840,7 +7190,21 @@
       "width": 1024,
       "height": 768,
       "touch": true,
-      "size": null
+      "size": 5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "lg f200l": {
+    "deviceName": "F200L",
+    "marketingName": "Optimus Vu II",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "size": 5
     },
     "type": "smartphone",
     "platform": "android"
@@ -6854,7 +7218,7 @@
       "width": 1024,
       "height": 768,
       "touch": true,
-      "size": null
+      "size": 5
     },
     "type": "smartphone",
     "platform": "android"
@@ -7485,6 +7849,20 @@
       "height": 480,
       "touch": true,
       "size": 5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "lg vs920": {
+    "deviceName": "VS920",
+    "marketingName": "Spectrum",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 4.5
     },
     "type": "smartphone",
     "platform": "android"
