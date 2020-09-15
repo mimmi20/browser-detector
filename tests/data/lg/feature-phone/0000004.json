@@ -1,34 +1,186 @@
 [
   {
     "headers": {
-      "user-agent": "LG-KG77 MIC/1.1.14 MIDP-2.0/CLDC-1.1"
+      "user-agent": "Mozilla/5.0 (Java; U; Id; lg-gt365) UCBrowser8.4.0.159/70/352/UCWEB Mobile UNTRUSTED/1.0"
     },
     "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
+      "deviceName": "GT365",
+      "marketingName": "Neon",
       "manufacturer": "lg",
       "brand": "lg",
       "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.4
       },
-      "type": "mobile-device"
+      "type": "feature-phone"
     },
     "browser": {
-      "name": "Teleca-Obigo",
+      "name": "UC Browser",
       "modus": null,
-      "version": "1.1.14",
-      "manufacturer": "obigo",
+      "version": "8.4.0.159",
+      "manufacturer": "ucweb",
       "bits": null,
-      "type": "browser"
+      "type": "transcoder"
     },
     "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
       "name": null,
-      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "LG GT365"
+    },
+    "device": {
+      "deviceName": "GT365",
+      "marketingName": "Neon",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.4
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
       "version": null,
       "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "WindowsPhoneMMS/1.0 WindowsPhoneOS/7.0-6403 LG-GW910"
+    },
+    "device": {
+      "deviceName": "GW910",
+      "marketingName": "Optimus 7",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "WSP Bot",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "bot"
+    },
+    "os": {
+      "name": "Windows Phone OS",
+      "marketingName": "Windows Phone OS",
+      "version": null,
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "LG-KF350"
+    },
+    "device": {
+      "deviceName": "KF350",
+      "marketingName": "Ice Cream",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "LG-KG220"
+    },
+    "device": {
+      "deviceName": "KG220",
+      "marketingName": "KG220",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": 128,
+        "height": 128,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
       "bits": null
     },
     "engine": {
@@ -42,17 +194,17 @@
       "user-agent": "LG-KG800"
     },
     "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
+      "deviceName": "KG800",
+      "marketingName": "Chocolate",
       "manufacturer": "lg",
       "brand": "lg",
       "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": 2
       },
-      "type": "mobile-device"
+      "type": "feature-phone"
     },
     "browser": {
       "name": null,
@@ -61,272 +213,6 @@
       "manufacturer": "unknown",
       "bits": null,
       "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "LG-KG810"
-    },
-    "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "LG-KG90"
-    },
-    "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "LG-KG920"
-    },
-    "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "LG-KG99 MIC/1.1.14 MIDP-2.0/CLDC-1.1"
-    },
-    "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": "Teleca-Obigo",
-      "modus": null,
-      "version": "1.1.14",
-      "manufacturer": "obigo",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "LG-KM335"
-    },
-    "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "LG KM380"
-    },
-    "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "LG-KM385 Obigo/WAP2.0 MIDP-2.0/CLDC-1.1,gzip(gfe)"
-    },
-    "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": "Teleca-Obigo",
-      "modus": null,
-      "version": null,
-      "manufacturer": "obigo",
-      "bits": null,
-      "type": "browser"
     },
     "os": {
       "name": "JavaOS",
@@ -339,1184 +225,6 @@
       "name": null,
       "version": null,
       "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "LG-KM500"
-    },
-    "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "LG-KM501 Obigo/WAP2.0 MIDP-2.0/CLDC-1.1"
-    },
-    "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": "Teleca-Obigo",
-      "modus": null,
-      "version": null,
-      "manufacturer": "obigo",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "LG-KM555/V100"
-    },
-    "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "UCWEB/2.0 (Java; U; MIDP-2.0; es-LA; lg-km555) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile UNTRUSTED/1.0"
-    },
-    "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "8.9.0.251",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": "U2",
-      "version": "1.0.0",
-      "manufacturer": "ucweb"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "LG-KM570"
-    },
-    "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "LG-KM710"
-    },
-    "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "LG-KP110"
-    },
-    "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "LG-KP130"
-    },
-    "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "LG-KP15xQ Teleca/WAP2.0 MIDP-2.0/CLDC-1.1"
-    },
-    "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": "Teleca-Obigo",
-      "modus": null,
-      "version": null,
-      "manufacturer": "obigo",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "LG-KP170"
-    },
-    "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "LG-KP175"
-    },
-    "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "LG KP200"
-    },
-    "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "LG-KP202"
-    },
-    "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "LG-KP215"
-    },
-    "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "LG-KP220"
-    },
-    "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "LG-KP230-V10a Obigo/WAP2.0 MIDP-2.0/CLDC-1.1"
-    },
-    "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": "Teleca-Obigo",
-      "modus": null,
-      "version": null,
-      "manufacturer": "obigo",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "LG-KP233"
-    },
-    "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "LG-KP235"
-    },
-    "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "LG-KP260"
-    },
-    "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "lg-kp260 UNTRUSTED/1.0"
-    },
-    "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "LG-KP265 Obigo/WAP2.0 MIDP-2.0/CLDC-1.1"
-    },
-    "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": "Teleca-Obigo",
-      "modus": null,
-      "version": null,
-      "manufacturer": "obigo",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "LG-KP270"
-    },
-    "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "LG-KP270V/V10g Teleca/WAP2.0 MIDP-2.0/CLDC-1.1"
-    },
-    "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": "Teleca-Obigo",
-      "modus": null,
-      "version": null,
-      "manufacturer": "obigo",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "LG-KP320"
-    },
-    "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "UCWEB/2.0 (Java; U; MIDP-2.0; es-LA; lg-kp320) U2/1.0.0 UCBrowser/9.2.0.311 U2/1.0.0 Mobile"
-    },
-    "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "9.2.0.311",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": "U2",
-      "version": "1.0.0",
-      "manufacturer": "ucweb"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "LG-KP330"
-    },
-    "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "LG-KP501 Teleca/WAP2.0 MIDP-2.0/CLDC-1.1"
-    },
-    "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": "Teleca-Obigo",
-      "modus": null,
-      "version": null,
-      "manufacturer": "obigo",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "LG-KP502"
-    },
-    "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "LG-KP550-Bouygues/WAP2.0 MIDP-2.0/CLDC-1.1"
-    },
-    "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": "WAP Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "wap-browser"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "LG-KP570 Teleca/WAP2.0 MIDP-2.0/CLDC-1.1"
-    },
-    "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": "Teleca-Obigo",
-      "modus": null,
-      "version": null,
-      "manufacturer": "obigo",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.0 (Vodafone/1.0/LG-KS500/V08b Browser/Teleca-Q7.1/3.12 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1)"
-    },
-    "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": "Obigo Q",
-      "modus": null,
-      "version": "7.1.0",
-      "manufacturer": "obigo",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": "Teleca",
-      "version": null,
-      "manufacturer": "obigo"
     }
   },
   {
@@ -1524,93 +232,17 @@
       "user-agent": "LG-KS660"
     },
     "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
+      "deviceName": "KS660",
+      "marketingName": "KS660",
       "manufacturer": "lg",
       "brand": "lg",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 400,
+        "height": 240,
         "touch": true,
-        "size": null
+        "size": 3
       },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "LG KT520"
-    },
-    "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "LG/KT525/v1.0 Profile/MIDP-2.1 Configuration/CLDC-1.1"
-    },
-    "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
+      "type": "feature-phone"
     },
     "browser": {
       "name": null,
@@ -1638,17 +270,17 @@
       "user-agent": "LG-KU250"
     },
     "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
+      "deviceName": "U250",
+      "marketingName": "U250",
       "manufacturer": "lg",
       "brand": "lg",
       "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": 1.7
       },
-      "type": "mobile-device"
+      "type": "feature-phone"
     },
     "browser": {
       "name": null,
@@ -1659,124 +291,10 @@
       "type": "unknown"
     },
     "os": {
-      "name": null,
-      "marketingName": null,
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "LG KU311"
-    },
-    "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "LG-KU380"
-    },
-    "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "LG-KU385"
-    },
-    "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
+      "manufacturer": "sun-microsystems",
       "bits": null
     },
     "engine": {
@@ -1790,207 +308,17 @@
       "user-agent": "LG-KU450"
     },
     "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
+      "deviceName": "U450",
+      "marketingName": "U450",
       "manufacturer": "lg",
       "brand": "lg",
       "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": 2
       },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "LG-KU580"
-    },
-    "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "UCWEB/2.0(Java; U; MIDP-2.0; es-la; lg-ku580-orange) U2/1.0.0 UCBrowser/8.7.0.218 U2/1.0.0 Mobile UNTRUSTED/1.0"
-    },
-    "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "8.7.0.218",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": "U2",
-      "version": "1.0.0",
-      "manufacturer": "ucweb"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "LG-KU730"
-    },
-    "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "LG-KU886 Obigo/WAP2.0 MIDP-2.0/CLDC-1.1"
-    },
-    "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": "Teleca-Obigo",
-      "modus": null,
-      "version": null,
-      "manufacturer": "obigo",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "LG/KU950/v1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1"
-    },
-    "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
+      "type": "feature-phone"
     },
     "browser": {
       "name": null,
@@ -2018,17 +346,17 @@
       "user-agent": "LG KU970"
     },
     "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
+      "deviceName": "U970",
+      "marketingName": "Shine",
       "manufacturer": "lg",
       "brand": "lg",
       "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.2
       },
-      "type": "mobile-device"
+      "type": "feature-phone"
     },
     "browser": {
       "name": null,
@@ -2039,10 +367,10 @@
       "type": "unknown"
     },
     "os": {
-      "name": null,
-      "marketingName": null,
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "unknown",
+      "manufacturer": "sun-microsystems",
       "bits": null
     },
     "engine": {
@@ -2056,17 +384,17 @@
       "user-agent": "LG-L1100"
     },
     "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
+      "deviceName": "L1100",
+      "marketingName": "L1100",
       "manufacturer": "lg",
       "brand": "lg",
       "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
+        "width": 160,
+        "height": 128,
+        "touch": false,
         "size": null
       },
-      "type": "mobile-device"
+      "type": "feature-phone"
     },
     "browser": {
       "name": null,
@@ -2077,48 +405,10 @@
       "type": "unknown"
     },
     "os": {
-      "name": null,
-      "marketingName": null,
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "LG-L1150 UP.Browser/6.2.3 (GUI) MMP/1.0 UP.Browser/6.2.3.2 (GUI) MMP/2.0"
-    },
-    "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": "Openwave Mobile Browser",
-      "modus": null,
-      "version": "6.2.3",
-      "manufacturer": "myriad",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
+      "manufacturer": "sun-microsystems",
       "bits": null
     },
     "engine": {
@@ -2132,17 +422,17 @@
       "user-agent": "LG-L1200"
     },
     "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
+      "deviceName": "L1200",
+      "marketingName": "L1200",
       "manufacturer": "lg",
       "brand": "lg",
       "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
+        "width": 160,
+        "height": 128,
+        "touch": false,
         "size": null
       },
-      "type": "mobile-device"
+      "type": "feature-phone"
     },
     "browser": {
       "name": null,
@@ -2153,10 +443,10 @@
       "type": "unknown"
     },
     "os": {
-      "name": null,
-      "marketingName": null,
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "unknown",
+      "manufacturer": "sun-microsystems",
       "bits": null
     },
     "engine": {
@@ -2170,17 +460,17 @@
       "user-agent": "LG-L1400 UP.Browser"
     },
     "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
+      "deviceName": "L1400",
+      "marketingName": "L1400",
       "manufacturer": "lg",
       "brand": "lg",
       "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
+        "width": 160,
+        "height": 128,
+        "touch": false,
         "size": null
       },
-      "type": "mobile-device"
+      "type": "feature-phone"
     },
     "browser": {
       "name": "Openwave Mobile Browser",
@@ -2191,10 +481,10 @@
       "type": "browser"
     },
     "os": {
-      "name": null,
-      "marketingName": null,
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "unknown",
+      "manufacturer": "sun-microsystems",
       "bits": null
     },
     "engine": {
@@ -2208,17 +498,17 @@
       "user-agent": "LG-L1400I"
     },
     "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
+      "deviceName": "L1400",
+      "marketingName": "L1400",
       "manufacturer": "lg",
       "brand": "lg",
       "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
+        "width": 160,
+        "height": 128,
+        "touch": false,
         "size": null
       },
-      "type": "mobile-device"
+      "type": "feature-phone"
     },
     "browser": {
       "name": null,
@@ -2229,10 +519,10 @@
       "type": "unknown"
     },
     "os": {
-      "name": null,
-      "marketingName": null,
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "unknown",
+      "manufacturer": "sun-microsystems",
       "bits": null
     },
     "engine": {
@@ -2246,17 +536,17 @@
       "user-agent": "LG-L3100 MIC/WAP2.0 MIDP-2.0/CLDC-1.0"
     },
     "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
+      "deviceName": "L3100",
+      "marketingName": "L3100",
       "manufacturer": "lg",
       "brand": "lg",
       "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
+        "width": 160,
+        "height": 128,
+        "touch": false,
         "size": null
       },
-      "type": "mobile-device"
+      "type": "feature-phone"
     },
     "browser": {
       "name": "Teleca-Obigo",
@@ -2267,10 +557,10 @@
       "type": "browser"
     },
     "os": {
-      "name": null,
-      "marketingName": null,
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "unknown",
+      "manufacturer": "sun-microsystems",
       "bits": null
     },
     "engine": {
@@ -2284,17 +574,17 @@
       "user-agent": "LG-L5100"
     },
     "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
+      "deviceName": "L5100",
+      "marketingName": "L5100",
       "manufacturer": "lg",
       "brand": "lg",
       "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": 2
       },
-      "type": "mobile-device"
+      "type": "feature-phone"
     },
     "browser": {
       "name": null,
@@ -2305,10 +595,10 @@
       "type": "unknown"
     },
     "os": {
-      "name": null,
-      "marketingName": null,
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "unknown",
+      "manufacturer": "sun-microsystems",
       "bits": null
     },
     "engine": {
@@ -2322,17 +612,17 @@
       "user-agent": "LG-l5100"
     },
     "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
+      "deviceName": "L5100",
+      "marketingName": "L5100",
       "manufacturer": "lg",
       "brand": "lg",
       "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": 2
       },
-      "type": "mobile-device"
+      "type": "feature-phone"
     },
     "browser": {
       "name": null,
@@ -2343,466 +633,10 @@
       "type": "unknown"
     },
     "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "LG-L600V"
-    },
-    "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Java; U; en-us; lg-lg420g[tf012125009345399008080015075895332] obigo) UCBrowser8.3.0.154/70/352/UCWEB Mobile"
-    },
-    "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "8.3.0.154",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
       "name": "JavaOS",
       "marketingName": "JavaOS",
       "version": null,
       "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": "Teleca",
-      "version": null,
-      "manufacturer": "obigo"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Java; U; en-us; lg-lg500g) UCBrowser8.2.1.144/69/444/UCWEB Mobile UNTRUSTED/1.0"
-    },
-    "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "8.2.1.144",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; Teleca Q7; Brew 3.1.5; U; en) 240X400 LGE LG700"
-    },
-    "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": "Teleca-Obigo",
-      "modus": null,
-      "version": null,
-      "manufacturer": "obigo",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Brew",
-      "marketingName": "Brew",
-      "version": "3.1.5",
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Java; U; en-us; lg-lg800g) AppleWebKit/530.13 (KHTML, like Gecko) UCBrowser/8.5.0.185/82/352/UCWEB Mobile UNTRUSTED/1.0"
-    },
-    "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "8.5.0.185",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "530.13.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; Teleca Q7; Brew 4.0.3; U; en) 240X400 LGE LG840"
-    },
-    "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": "Teleca-Obigo",
-      "modus": null,
-      "version": null,
-      "manufacturer": "obigo",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Brew",
-      "marketingName": "Brew",
-      "version": "4.0.3",
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; Polaris 6.2; BREW 3.1.5; U; en)/240X400 LGE LG-LG8575"
-    },
-    "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": "Polaris",
-      "modus": null,
-      "version": "6.2.0",
-      "manufacturer": "infraware",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Brew",
-      "marketingName": "Brew",
-      "version": "3.1.5",
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "LG LG8700"
-    },
-    "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0(compatible; Teleca Q7; 4.0.3; U; en) 240X480 LGE LG-LG9600"
-    },
-    "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": "Teleca-Obigo",
-      "modus": null,
-      "version": null,
-      "manufacturer": "obigo",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Java; U; Pt-br; lg-lgc300) AppleWebKit/530.13 (KHTML, like Gecko) UCBrowser/8.5.0.185/82/352/UCWEB Mobile UNTRUSTED/1.0"
-    },
-    "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "8.5.0.185",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "530.13.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "LGE-LW310/1.0 UP.Browser/6.2.3.8 (GUI) MMP/2.0"
-    },
-    "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": "Openwave Mobile Browser",
-      "modus": null,
-      "version": "6.2.3.8",
-      "manufacturer": "myriad",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "LGE-LX125VNO/1.0 UP.Browser/6.2.3.2.l.1.100 (GUI) MMP/2.0"
-    },
-    "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": "Openwave Mobile Browser",
-      "modus": null,
-      "version": "6.2.3.2",
-      "manufacturer": "myriad",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
       "bits": null
     },
     "engine": {
@@ -2816,17 +650,17 @@
       "user-agent": "LG-LX260"
     },
     "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
+      "deviceName": "LX260",
+      "marketingName": "LX260",
       "manufacturer": "lg",
       "brand": "lg",
       "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": 2
       },
-      "type": "mobile-device"
+      "type": "feature-phone"
     },
     "browser": {
       "name": null,
@@ -2837,48 +671,10 @@
       "type": "unknown"
     },
     "os": {
-      "name": null,
-      "marketingName": null,
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "LG-LX290S"
-    },
-    "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
+      "manufacturer": "sun-microsystems",
       "bits": null
     },
     "engine": {
@@ -2892,17 +688,17 @@
       "user-agent": "LG-LX350"
     },
     "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
+      "deviceName": "LX350",
+      "marketingName": "LX350",
       "manufacturer": "lg",
       "brand": "lg",
       "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
+        "width": 160,
+        "height": 128,
+        "touch": false,
         "size": null
       },
-      "type": "mobile-device"
+      "type": "feature-phone"
     },
     "browser": {
       "name": null,
@@ -2913,10 +709,10 @@
       "type": "unknown"
     },
     "os": {
-      "name": null,
-      "marketingName": null,
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "unknown",
+      "manufacturer": "sun-microsystems",
       "bits": null
     },
     "engine": {
@@ -2927,64 +723,26 @@
   },
   {
     "headers": {
-      "user-agent": "LG-LX370"
+      "user-agent": "LGE-LX5350/1.0 UP.Browser/6.1.0.2.135 (GUI) MMP/2.0"
     },
     "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
+      "deviceName": "LX5350",
+      "marketingName": "LX5350",
       "manufacturer": "lg",
       "brand": "lg",
       "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
+        "width": 160,
+        "height": 128,
+        "touch": false,
         "size": null
       },
-      "type": "mobile-device"
+      "type": "feature-phone"
     },
     "browser": {
-      "name": null,
+      "name": "Openwave Mobile Browser",
       "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "LG-LX400 TELECA-LX400/2.0 MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1"
-    },
-    "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": "Teleca-Obigo",
-      "modus": null,
-      "version": null,
-      "manufacturer": "obigo",
+      "version": "6.1.0.2.135",
+      "manufacturer": "myriad",
       "bits": null,
       "type": "browser"
     },
@@ -3003,96 +761,20 @@
   },
   {
     "headers": {
-      "user-agent": "LG-LX535"
-    },
-    "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "LGE-LX5350/1.0 UP.Browser/6.1.0.2.135 (GUI) MMP/2.0"
-    },
-    "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": "Openwave Mobile Browser",
-      "modus": null,
-      "version": "6.1.0.2.135",
-      "manufacturer": "myriad",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "LG-LX550"
     },
     "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
+      "deviceName": "LX550",
+      "marketingName": "Fusic",
       "manufacturer": "lg",
       "brand": "lg",
       "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
+        "width": 220,
+        "height": 176,
+        "touch": false,
         "size": null
       },
-      "type": "mobile-device"
+      "type": "feature-phone"
     },
     "browser": {
       "name": null,
@@ -3101,44 +783,6 @@
       "manufacturer": "unknown",
       "bits": null,
       "type": "unknown"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "LG-LX570 AU-MIC-LX570/2.0 MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1"
-    },
-    "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": "Teleca-Obigo",
-      "modus": null,
-      "version": null,
-      "manufacturer": "obigo",
-      "bits": null,
-      "type": "browser"
     },
     "os": {
       "name": "JavaOS",
@@ -3158,17 +802,17 @@
       "user-agent": "LG-LX600"
     },
     "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
+      "deviceName": "LX600",
+      "marketingName": "Lotus",
       "manufacturer": "lg",
       "brand": "lg",
       "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.4
       },
-      "type": "mobile-device"
+      "type": "feature-phone"
     },
     "browser": {
       "name": null,
@@ -3179,10 +823,10 @@
       "type": "unknown"
     },
     "os": {
-      "name": null,
-      "marketingName": null,
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "unknown",
+      "manufacturer": "sun-microsystems",
       "bits": null
     },
     "engine": {
@@ -3196,17 +840,17 @@
       "user-agent": "LG-LX610"
     },
     "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
+      "deviceName": "LX610",
+      "marketingName": "Lotus Elite",
       "manufacturer": "lg",
       "brand": "lg",
       "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 3.8
       },
-      "type": "mobile-device"
+      "type": "feature-phone"
     },
     "browser": {
       "name": null,
@@ -3217,8 +861,8 @@
       "type": "unknown"
     },
     "os": {
-      "name": null,
-      "marketingName": null,
+      "name": "Brew",
+      "marketingName": "Brew",
       "version": null,
       "manufacturer": "unknown",
       "bits": null
@@ -3234,17 +878,17 @@
       "user-agent": "LG-M4410"
     },
     "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
+      "deviceName": "M4410",
+      "marketingName": "M4410",
       "manufacturer": "lg",
       "brand": "lg",
       "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
+        "width": 220,
+        "height": 176,
+        "touch": false,
         "size": null
       },
-      "type": "mobile-device"
+      "type": "feature-phone"
     },
     "browser": {
       "name": null,
@@ -3255,10 +899,10 @@
       "type": "unknown"
     },
     "os": {
-      "name": null,
-      "marketingName": null,
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "unknown",
+      "manufacturer": "sun-microsystems",
       "bits": null
     },
     "engine": {
@@ -3272,17 +916,17 @@
       "user-agent": "LG-M6100"
     },
     "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
+      "deviceName": "M6100",
+      "marketingName": "M6100",
       "manufacturer": "lg",
       "brand": "lg",
       "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
+        "width": 160,
+        "height": 128,
+        "touch": false,
         "size": null
       },
-      "type": "mobile-device"
+      "type": "feature-phone"
     },
     "browser": {
       "name": null,
@@ -3293,10 +937,10 @@
       "type": "unknown"
     },
     "os": {
-      "name": null,
-      "marketingName": null,
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "unknown",
+      "manufacturer": "sun-microsystems",
       "bits": null
     },
     "engine": {
@@ -3307,34 +951,34 @@
   },
   {
     "headers": {
-      "user-agent": "Groupon/2.8.3084 (Android 4.3; LGE Mako / Google Nexus 4; )[preload=false;locale=de_DE;clientidbase=android-google]"
+      "user-agent": "LG-MG800"
     },
     "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
+      "deviceName": "MG800",
+      "marketingName": "MG800",
       "manufacturer": "lg",
       "brand": "lg",
       "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
+        "width": 220,
+        "height": 176,
+        "touch": false,
         "size": null
       },
-      "type": "mobile-device"
+      "type": "feature-phone"
     },
     "browser": {
-      "name": "Google Bot",
+      "name": null,
       "modus": null,
       "version": null,
-      "manufacturer": "google",
+      "manufacturer": "unknown",
       "bits": null,
-      "type": "bot"
+      "type": "unknown"
     },
     "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.3.0",
-      "manufacturer": "google",
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
       "bits": null
     },
     "engine": {
@@ -3345,34 +989,148 @@
   },
   {
     "headers": {
-      "user-agent": "LG-ME240Q UP.Browser/6.2.3 (GUI) MMP/1.0"
+      "user-agent": "LG-MG800c MIC/WAP2.0 MIDP-2.0/CLDC-1.1"
     },
     "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
+      "deviceName": "MG800",
+      "marketingName": "MG800",
       "manufacturer": "lg",
       "brand": "lg",
       "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
+        "width": 220,
+        "height": 176,
+        "touch": false,
         "size": null
       },
-      "type": "mobile-device"
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Teleca-Obigo",
+      "modus": null,
+      "version": null,
+      "manufacturer": "obigo",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "LG-MG800d MIC/WAP2.0 MIDP-2.0/CLDC-1.1"
+    },
+    "device": {
+      "deviceName": "MG800",
+      "marketingName": "MG800",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Teleca-Obigo",
+      "modus": null,
+      "version": null,
+      "manufacturer": "obigo",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "LG-MM535"
+    },
+    "device": {
+      "deviceName": "MM535",
+      "marketingName": "MM535",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "LGE-MT310/1.0 UP.Browser/6.2.3.8 (GUI) MMP/2.0"
+    },
+    "device": {
+      "deviceName": "MT310",
+      "marketingName": "Helix",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": 2
+      },
+      "type": "feature-phone"
     },
     "browser": {
       "name": "Openwave Mobile Browser",
       "modus": null,
-      "version": "6.2.3",
+      "version": "6.2.3.8",
       "manufacturer": "myriad",
       "bits": null,
       "type": "browser"
     },
     "os": {
-      "name": null,
-      "marketingName": null,
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "unknown",
+      "manufacturer": "sun-microsystems",
       "bits": null
     },
     "engine": {
@@ -3383,34 +1141,186 @@
   },
   {
     "headers": {
-      "user-agent": "LG-ME500c MIC/WAP2.0 MIDP-2.0/CLDC-1.1"
+      "user-agent": "LGE-PM325/1.0 UP.Browser/6.2.3.2 (GUI) MMP/2.0"
     },
     "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
+      "deviceName": "PM325",
+      "marketingName": "PM325",
       "manufacturer": "lg",
       "brand": "lg",
       "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
+        "width": 800,
+        "height": 480,
+        "touch": false,
+        "size": 4.3
       },
-      "type": "mobile-device"
+      "type": "feature-phone"
     },
     "browser": {
-      "name": "Teleca-Obigo",
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "6.2.3.2",
+      "manufacturer": "myriad",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "LG-S5200"
+    },
+    "device": {
+      "deviceName": "S5200",
+      "marketingName": "S5200",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": 160,
+        "height": 128,
+        "touch": false,
+        "size": 1.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
       "modus": null,
       "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Java; U; Id; lg-t310) UCBrowser8.3.0.154/69/405/UCWEB Mobile UNTRUSTED/1.0"
+    },
+    "device": {
+      "deviceName": "T310",
+      "marketingName": "Cookie Style",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "size": 2.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "8.3.0.154",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "LG-T310-Orange/V10a Obigo/Q7.3 MMS/LG-MMS-V1.1/1.2 MediaPlayer/LGPlayer/1.0 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1"
+    },
+    "device": {
+      "deviceName": "T310",
+      "marketingName": "Cookie Style",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "size": 2.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Obigo Q",
+      "modus": null,
+      "version": "7.3.0",
       "manufacturer": "obigo",
       "bits": null,
       "type": "browser"
     },
     "os": {
-      "name": null,
-      "marketingName": null,
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "unknown",
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": "Teleca",
+      "version": null,
+      "manufacturer": "obigo"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Java; U; Id; lg-t310i) UCBrowser8.3.0.154/69/444/UCWEB Mobile UNTRUSTED/1.0"
+    },
+    "device": {
+      "deviceName": "T310i",
+      "marketingName": "Cookie WiFi",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "size": 2.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "8.3.0.154",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
       "bits": null
     },
     "engine": {
@@ -3421,20 +1331,286 @@
   },
   {
     "headers": {
-      "user-agent": "LG-ME550 Obigo/WAP2.0 MIDP-2.0/CLDC-1.1"
+      "user-agent": "LG-T310i/V100 Obigo/Q7.3 MMS/LG-MMS-V1.1/1.2 MediaPlayer/LGPlayer/1.0 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1"
     },
     "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
+      "deviceName": "T310i",
+      "marketingName": "Cookie WiFi",
       "manufacturer": "lg",
       "brand": "lg",
       "display": {
-        "width": null,
-        "height": null,
+        "width": 320,
+        "height": 240,
         "touch": true,
+        "size": 2.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Obigo Q",
+      "modus": null,
+      "version": "7.3.0",
+      "manufacturer": "obigo",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": "Teleca",
+      "version": null,
+      "manufacturer": "obigo"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Java; U; Pt-br; lg-t505) AppleWebKit/530.13 (KHTML, like Gecko) UCBrowser/8.5.0.185/82/405/UCWEB Mobile UNTRUSTED/1.0"
+    },
+    "device": {
+      "deviceName": "T505",
+      "marketingName": "Ego",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "size": 2.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "8.5.0.185",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "530.13.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (LG-T505 AppleWebkit/531 Browser/Phantom/V2.0 Widget/LGMW/3.0 MMS/LG-MMS-V1.0/1.2 Java/A"
+    },
+    "device": {
+      "deviceName": "T505",
+      "marketingName": "Ego",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "size": 2.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Phantom Browser",
+      "modus": null,
+      "version": "2.0.0",
+      "manufacturer": "lg",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "531.0.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "LG-T5100"
+    },
+    "device": {
+      "deviceName": "T5100",
+      "marketingName": "T5100",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": false,
         "size": null
       },
-      "type": "mobile-device"
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "LG-TD7130"
+    },
+    "device": {
+      "deviceName": "TD7130",
+      "marketingName": "TD7130",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": 90,
+        "height": 40,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Java; U; Pt-br; lg-te365 teleca) UCBrowser8.4.0.159/69/352/UCWEB Mobile UNTRUSTED/1.0"
+    },
+    "device": {
+      "deviceName": "TE365",
+      "marketingName": "Neon",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.4
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "8.4.0.159",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": "Teleca",
+      "version": null,
+      "manufacturer": "obigo"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "LG-TE365"
+    },
+    "device": {
+      "deviceName": "TE365",
+      "marketingName": "Neon",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.4
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "LG-TG800 MIC/WAP2.0 MIDP-2.0/CLDC-1.1"
+    },
+    "device": {
+      "deviceName": "TG800",
+      "marketingName": "Chocolate",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": 2
+      },
+      "type": "feature-phone"
     },
     "browser": {
       "name": "Teleca-Obigo",
@@ -3459,20 +1635,780 @@
   },
   {
     "headers": {
-      "user-agent": "LG-ME591 MIC/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+      "user-agent": "LGE-TM240/1.0 UP.Browser/4.1.26l"
     },
     "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
+      "deviceName": "TM240",
+      "marketingName": "TM240",
       "manufacturer": "lg",
       "brand": "lg",
       "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
+        "width": 90,
+        "height": 90,
+        "touch": false,
         "size": null
       },
-      "type": "mobile-device"
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "4.1.26",
+      "manufacturer": "myriad",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "LGE-TM510/1.0 UP.Browser/4.1.22b"
+    },
+    "device": {
+      "deviceName": "TM510",
+      "marketingName": "TM510",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": 128,
+        "height": 64,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "4.1.22-beta",
+      "manufacturer": "myriad",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "LGE-TM520/1.0 UP.Browser/4.1.22b UP.Link/4.3.4.4d"
+    },
+    "device": {
+      "deviceName": "TM520",
+      "marketingName": "TM520",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": 128,
+        "height": 104,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "4.1.22-beta",
+      "manufacturer": "myriad",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "LG-TU500"
+    },
+    "device": {
+      "deviceName": "TU500",
+      "marketingName": "TU500",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": 2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "LG TU515"
+    },
+    "device": {
+      "deviceName": "TU515",
+      "marketingName": "TU515",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "LG-TU550"
+    },
+    "device": {
+      "deviceName": "TU550",
+      "marketingName": "TU550",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": 2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "LG-TU575"
+    },
+    "device": {
+      "deviceName": "TU575",
+      "marketingName": "TU575",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": 2.2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "LG-TU720"
+    },
+    "device": {
+      "deviceName": "TU720",
+      "marketingName": "TU720",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "LG-TU750/V10a Teleca/Q7.0 Profile/MIDP-2.1 Configuration/CLDC-1.1"
+    },
+    "device": {
+      "deviceName": "TU750",
+      "marketingName": "TU750",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.4
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Obigo Q",
+      "modus": null,
+      "version": "7.0.0",
+      "manufacturer": "obigo",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": "Teleca",
+      "version": null,
+      "manufacturer": "obigo"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "LG-U250"
+    },
+    "device": {
+      "deviceName": "U250",
+      "marketingName": "U250",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": 1.7
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "LG-U300"
+    },
+    "device": {
+      "deviceName": "U300",
+      "marketingName": "U300",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": 2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "LG-U310"
+    },
+    "device": {
+      "deviceName": "U310",
+      "marketingName": "U310",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": 2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "LG U400"
+    },
+    "device": {
+      "deviceName": "U400",
+      "marketingName": "U400",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "LG/U450/v1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UNTRUSTED/1.0 lg"
+    },
+    "device": {
+      "deviceName": "U450",
+      "marketingName": "U450",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": 2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "LG-U8110"
+    },
+    "device": {
+      "deviceName": "U8110",
+      "marketingName": "U8110",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "LG-U8120"
+    },
+    "device": {
+      "deviceName": "U8120",
+      "marketingName": "U8120",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "LG-U8130"
+    },
+    "device": {
+      "deviceName": "U8130",
+      "marketingName": "U8130",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "LG-U8138"
+    },
+    "device": {
+      "deviceName": "U8138",
+      "marketingName": "U8138",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "LG-U8150"
+    },
+    "device": {
+      "deviceName": "U8150",
+      "marketingName": "U8150",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "LG-U8180"
+    },
+    "device": {
+      "deviceName": "U8180",
+      "marketingName": "U8180",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "LG-U8210/V080 Obigo/WAP2.0 MIDP-2.0/CLDC-1.1"
+    },
+    "device": {
+      "deviceName": "U8210",
+      "marketingName": "U8210",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
     },
     "browser": {
       "name": "Teleca-Obigo",
@@ -3497,20 +2433,20 @@
   },
   {
     "headers": {
-      "user-agent": "LG-ME770"
+      "user-agent": "LG-U830"
     },
     "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
+      "deviceName": "U830",
+      "marketingName": "U830",
       "manufacturer": "lg",
       "brand": "lg",
       "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.2
       },
-      "type": "mobile-device"
+      "type": "feature-phone"
     },
     "browser": {
       "name": null,
@@ -3521,10 +2457,10 @@
       "type": "unknown"
     },
     "os": {
-      "name": null,
-      "marketingName": null,
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "unknown",
+      "manufacturer": "sun-microsystems",
       "bits": null
     },
     "engine": {
@@ -3535,210 +2471,20 @@
   },
   {
     "headers": {
-      "user-agent": "LG-ME770c MIC/1.1.14 MIDP-2.0/CLDC-1.1"
+      "user-agent": "LG-U8330"
     },
     "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
+      "deviceName": "U8330",
+      "marketingName": "U8330",
       "manufacturer": "lg",
       "brand": "lg",
       "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
+        "width": 220,
+        "height": 176,
+        "touch": false,
         "size": null
       },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": "Teleca-Obigo",
-      "modus": null,
-      "version": "1.1.14",
-      "manufacturer": "obigo",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "LG-ME770d MIC/1.1.14 MIDP-2.0/CLDC-1.1"
-    },
-    "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": "Teleca-Obigo",
-      "modus": null,
-      "version": "1.1.14",
-      "manufacturer": "obigo",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "LG-ME850c MIC/1.1.14 MIDP-2.0/CLDC-1.1"
-    },
-    "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": "Teleca-Obigo",
-      "modus": null,
-      "version": "1.1.14",
-      "manufacturer": "obigo",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "LG-ME850d MIC/1.1.14 MIDP-2.0/CLDC-1.1"
-    },
-    "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": "Teleca-Obigo",
-      "modus": null,
-      "version": "1.1.14",
-      "manufacturer": "obigo",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "LG-MG100a MIC/WAP2.0 MIDP-2.0/CLDC-1.0"
-    },
-    "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": "Teleca-Obigo",
-      "modus": null,
-      "version": null,
-      "manufacturer": "obigo",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "LG MG1010"
-    },
-    "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
+      "type": "feature-phone"
     },
     "browser": {
       "name": null,
@@ -3749,9 +2495,503 @@
       "type": "unknown"
     },
     "os": {
-      "name": null,
-      "marketingName": null,
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
       "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "LG U8360"
+    },
+    "device": {
+      "deviceName": "U8360",
+      "marketingName": "U8360",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": 2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "LG-U8380"
+    },
+    "device": {
+      "deviceName": "U8380",
+      "marketingName": "U8380",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": 2.2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "LG-U8500"
+    },
+    "device": {
+      "deviceName": "U8500",
+      "marketingName": "U8500",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "LG-U8550"
+    },
+    "device": {
+      "deviceName": "U8550",
+      "marketingName": "U8550",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": 2.2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "LG-U880"
+    },
+    "device": {
+      "deviceName": "U880",
+      "marketingName": "U880",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": 2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "LG-U890"
+    },
+    "device": {
+      "deviceName": "U890",
+      "marketingName": "U890",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": 2.2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "LG-U900"
+    },
+    "device": {
+      "deviceName": "U900",
+      "marketingName": "U900",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "LG-U960"
+    },
+    "device": {
+      "deviceName": "U960",
+      "marketingName": "U960",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "LG-U970"
+    },
+    "device": {
+      "deviceName": "U970",
+      "marketingName": "Shine",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "LG-U990"
+    },
+    "device": {
+      "deviceName": "U990",
+      "marketingName": "U990",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": 400,
+        "height": 240,
+        "touch": false,
+        "size": 3
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (LGE-UN200/1.0 Profile/MIDP-2.2 Configuration/CLDC-1.1 MMP/2.0 Novarra-Vision/8.0) Gecko/20100401 1web  Novarra-Vision/8.1"
+    },
+    "device": {
+      "deviceName": "UN200",
+      "marketingName": "Saber",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": 2.2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Vision",
+      "modus": null,
+      "version": "8.0.0",
+      "manufacturer": "novarra",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "LGE-UN270/1.0 UP.Browser/6.2.3.8 (GUI) MMP/2.0 Novarra-Vision/8.0"
+    },
+    "device": {
+      "deviceName": "UN270",
+      "marketingName": "Attune",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": 400,
+        "height": 240,
+        "touch": false,
+        "size": 2.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "6.2.3.8",
+      "manufacturer": "myriad",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; Teleca Q7; Brew 3.1.5; U; en) 240X400 LGE UX700"
+    },
+    "device": {
+      "deviceName": "UX700",
+      "marketingName": "Bliss",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": 400,
+        "height": 240,
+        "touch": false,
+        "size": 3
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Teleca-Obigo",
+      "modus": null,
+      "version": null,
+      "manufacturer": "obigo",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Brew",
+      "marketingName": "Brew",
+      "version": "3.1.5",
       "manufacturer": "unknown",
       "bits": null
     },
@@ -3763,20 +3003,20 @@
   },
   {
     "headers": {
-      "user-agent": "LG-MG105 MIC/WAP2.0 MIDP-2.0/CLDC-1.0"
+      "user-agent": "Mozilla/5.0 (compatible; Teleca Q7; Brew 3.1.5; U; en) 240X400 LGE UX840"
     },
     "device": {
-      "deviceName": "general LG device",
-      "marketingName": "general LG device",
+      "deviceName": "UX840",
+      "marketingName": "Tritan",
       "manufacturer": "lg",
       "brand": "lg",
       "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 3
       },
-      "type": "mobile-device"
+      "type": "feature-phone"
     },
     "browser": {
       "name": "Teleca-Obigo",
@@ -3787,9 +3027,9 @@
       "type": "browser"
     },
     "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
+      "name": "Brew",
+      "marketingName": "Brew",
+      "version": "3.1.5",
       "manufacturer": "unknown",
       "bits": null
     },
@@ -3797,6 +3037,766 @@
       "name": null,
       "version": null,
       "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "LG-VM510"
+    },
+    "device": {
+      "deviceName": "VM510",
+      "marketingName": "Rumor Touch",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": 400,
+        "height": 240,
+        "touch": false,
+        "size": 3
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "LGE-VN270/1.0 UP.Browser/6.2.3.2 (GUI) MMP/2.0"
+    },
+    "device": {
+      "deviceName": "VN270",
+      "marketingName": "Cosmos Touch",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": 400,
+        "height": 240,
+        "touch": true,
+        "size": 2.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "6.2.3.2",
+      "manufacturer": "myriad",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "LGE-VN270L/1.0 UP.Browser/6.2.3.2 (GUI) MMP/2.0"
+    },
+    "device": {
+      "deviceName": "VN270L",
+      "marketingName": "Cosmos Touch",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": 400,
+        "height": 240,
+        "touch": true,
+        "size": 2.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "6.2.3.2",
+      "manufacturer": "myriad",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "LGE-VN270P/1.0 UP.Browser/6.2.3.2 (GUI) MMP/2.0"
+    },
+    "device": {
+      "deviceName": "VN270P",
+      "marketingName": "Cosmos Touch",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": 400,
+        "height": 240,
+        "touch": true,
+        "size": 2.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "6.2.3.2",
+      "manufacturer": "myriad",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "LGE-VX4650/1.0 UP.Browser/6.2.3.1 (GUI) MMP/2.0"
+    },
+    "device": {
+      "deviceName": "VX4650",
+      "marketingName": "VX4650",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": 128,
+        "height": 128,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "6.2.3.1",
+      "manufacturer": "myriad",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "LG VX5200"
+    },
+    "device": {
+      "deviceName": "VX5200",
+      "marketingName": "VX5200",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": 160,
+        "height": 128,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "LGE-VX5500/1.0 UP.Browser/6.2.3.2 (GUI) MMP/2.0"
+    },
+    "device": {
+      "deviceName": "VX5500",
+      "marketingName": "VX5500",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": 1.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "6.2.3.2",
+      "manufacturer": "myriad",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "LGE-VX5600/1.0 UP.Browser/6.2.3.2 (GUI) MMP/2.0"
+    },
+    "device": {
+      "deviceName": "VX5600",
+      "marketingName": "VX5600",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": 2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "6.2.3.2",
+      "manufacturer": "myriad",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "LGE-VX6000 UP.Browser/4.1.27"
+    },
+    "device": {
+      "deviceName": "VX6000",
+      "marketingName": "VX6000",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": 160,
+        "height": 120,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "4.1.27",
+      "manufacturer": "myriad",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "LGE-VX6100/1.0 UP.Browser/6.2.3.1 (GUI) MMP/2.0"
+    },
+    "device": {
+      "deviceName": "VX6100",
+      "marketingName": "VX6100",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": 160,
+        "height": 128,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "6.2.3.1",
+      "manufacturer": "myriad",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "LGE-VX7100/1.0 UP.Browser/6.2.3.2 (GUI) MMP/2.0"
+    },
+    "device": {
+      "deviceName": "VX7100",
+      "marketingName": "Glance",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "6.2.3.2",
+      "manufacturer": "myriad",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "LGE-VX8350/1.0 UP.Browser/6.2.3.2 (GUI) MMP/2.0"
+    },
+    "device": {
+      "deviceName": "VX8350",
+      "marketingName": "VX8350",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "6.2.3.2",
+      "manufacturer": "myriad",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "LGE-VX9100/1.0 UP.Browser/6.2.3.2 (GUI) MMP/2.0"
+    },
+    "device": {
+      "deviceName": "VX9100",
+      "marketingName": "VX9100",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.4
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "6.2.3.2",
+      "manufacturer": "myriad",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "LGE-VX9900/1.0 UP.Browser/6.2.3.2 (GUI) MMP/2.0"
+    },
+    "device": {
+      "deviceName": "VX9900",
+      "marketingName": "VX9900",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "6.2.3.2",
+      "manufacturer": "myriad",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "LGE/U8210/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+    },
+    "device": {
+      "deviceName": "U8210",
+      "marketingName": "U8210",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "LGE-PM225/1.0 UP.Browser/6.2.3.7.e.1.101 (GUI) MMP/2.0"
+    },
+    "device": {
+      "deviceName": "PM225",
+      "marketingName": "PM225",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": 160,
+        "height": 128,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "6.2.3.7",
+      "manufacturer": "myriad",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "LGE-VX7000/1.0 UP.Browser/6.2.3.1.174 (GUI) MMP/2.0 (Google WAP Proxy/1.0)"
+    },
+    "device": {
+      "deviceName": "VX7000",
+      "marketingName": "VX7000",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Google Wap Proxy",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "bot"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "LG-A395/V100 Obigo/Q05A MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1"
+    },
+    "device": {
+      "deviceName": "A395",
+      "marketingName": "A395",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.4
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Obigo Q",
+      "modus": null,
+      "version": "5.0.0",
+      "manufacturer": "obigo",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": "Teleca",
+      "version": null,
+      "manufacturer": "obigo"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (LG-C193 AppleWebkit/531 Browser/Phantom/V2.0 Widget/LGMW/3.0 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1)"
+    },
+    "device": {
+      "deviceName": "C193",
+      "marketingName": "C193",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.6
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Phantom Browser",
+      "modus": null,
+      "version": "2.0.0",
+      "manufacturer": "lg",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "531.0.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/9.80 (BREW; Opera Mini/6.0.3/27.2370; U; en) Presto/2.8.119 240X400 LG VN280"
+    },
+    "device": {
+      "deviceName": "VN280",
+      "marketingName": "Extravert 2",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": 400,
+        "height": 240,
+        "touch": true,
+        "size": 3.2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Opera Mini",
+      "modus": null,
+      "version": "6.0.3",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Brew",
+      "marketingName": "Brew",
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.8.119",
+      "manufacturer": "opera"
     }
   }
 ]
