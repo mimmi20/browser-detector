@@ -1,6 +1,44 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.41 (KHTML, like Gecko) Large Screen Safari/537.41 LG Browser/7.00.00(LGE; 49UB856V-ZD; 05.00.70; 1); webOS.TV-2014; LG NetCast.TV-2013 Compatible (LGE, 49UB856V-ZD, wireless)"
+    },
+    "device": {
+      "deviceName": "general LG TV",
+      "marketingName": "general LG TV",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv"
+    },
+    "browser": {
+      "name": "LG Browser",
+      "modus": null,
+      "version": "7.00.00",
+      "manufacturer": "lg",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "webOS",
+      "marketingName": "webOS",
+      "version": null,
+      "manufacturer": "lg",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.41.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.41 (KHTML, like Gecko) Large Screen Safari/537.41 LG Browser/7.00.00(LGE; 50LB650V-ZN; 03.23.18; 1); webOS.TV-2014; LG NetCast.TV-2013 Compatible (LGE, 50LB650V-ZN, wireless)"
     },
     "device": {
@@ -3726,44 +3764,6 @@
   {
     "headers": {
       "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.41 (KHTML, like Gecko) Large Screen Safari/537.41 LG Browser/7.00.00(LGE; 55LB678V-ZF; 04.41.32; 1); webOS.TV-2014; LG NetCast.TV-2013 Compatible (LGE, 55LB678V-ZF, wireless)"
-    },
-    "device": {
-      "deviceName": "general LG TV",
-      "marketingName": "general LG TV",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv"
-    },
-    "browser": {
-      "name": "LG Browser",
-      "modus": null,
-      "version": "7.00.00",
-      "manufacturer": "lg",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "webOS",
-      "marketingName": "webOS",
-      "version": null,
-      "manufacturer": "lg",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "537.41.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.41 (KHTML, like Gecko) Large Screen Safari/537.41 LG Browser/7.00.00(LGE; 55LB678V-ZF; 04.45.25; 1); webOS.TV-2014; LG NetCast.TV-2013 Compatible (LGE, 55LB678V-ZF, wireless)"
     },
     "device": {
       "deviceName": "general LG TV",
