@@ -139,7 +139,7 @@
     "/(?<!mobi|e)lephone/i": "lephone",
     "/woxter|nimbus 80qb/i": "woxter",
     "/andromeda vm508/i": "phonocar",
-    "/(?<![adehor0-9]|gll |x5\\-|fbcr\\/)lg(?! nexus| player|[0-9e])|(?<!o)lg[em](?! nexus|\\/google)|g3mini| g3 |((?<!s)(l[ns]|us|v[kms])[0-9]{3}(pp|u| 4g)?|h87[01]|h870k|h831|p713|p509|c660| k10|gt-?540| l50)( build|[;\\/\\)])|optimus g|l-0[0-9][cdef]|lm-?[gkqvx][0-9]{3}|vk810 4g|(adr|android) 6\\.0.* x5( build|[;\\/\\)])|g watch|ku9500|su950|gw620| ally |as740|vortex|ms840|p940|rs988|ti320-du|l413dl|(adr|android) 5\\.1.* g4s( build|[;\\/\\)])|l-0[0-9][kl]|x401s?/i": "lg",
+    "/(?<![adehor0-9]|gll |x5\\-|fbcr\\/)lg(?! nexus| player|[0-9e]|\\-android|\\-app| browser)|(?<!o)lg[em](?! nexus|\\/google)|g3mini| g3 |((?<!s)(l[ns]|us|v[kms])[0-9]{3}(pp|u| 4g)?|h87[01]|h870k|h831|p713|p509|c660| k10|gt-?540| l50)( build|[;\\/\\)])|optimus g|l-0[0-9][cdef]|lm-?[gkqvx][0-9]{3}|vk810 4g|(adr|android) 6\\.0.* x5( build|[;\\/\\)])|g watch|ku9500|su950|gw620| ally |as740|vortex|ms840|p940|rs988|ti320-du|l413dl|(adr|android) 5\\.1.* g4s( build|[;\\/\\)])|l-0[0-9][kl]|x401s?/i": "lg",
     "/gigaset|gs5[357]-6|gs80|gs100|gs110|gs18[05]|gs195|gs270|gs290|gs370|qv1030|gx290|maxwell-10/i": "gigaset",
     "/s-tell/i": "s-tell",
     "/bliss|bpm8040/i": "bliss",
