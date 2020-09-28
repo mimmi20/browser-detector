@@ -713,6 +713,20 @@
     "type": "feature-phone",
     "platform": "java"
   },
+  "lg gt950": {
+    "deviceName": "GT950",
+    "marketingName": "Arena",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 3
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "lg km900": {
     "deviceName": "KM900",
     "marketingName": "Arena",
@@ -1847,6 +1861,20 @@
     "type": "feature-phone",
     "platform": "java"
   },
+  "lg gs500": {
+    "deviceName": "GS500",
+    "marketingName": "Cookie Plus",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 400,
+      "height": 240,
+      "touch": true,
+      "size": 3
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "lg t370": {
     "deviceName": "T370",
     "marketingName": "Cookie Smart",
@@ -2309,6 +2337,48 @@
     "type": "feature-phone",
     "platform": "java"
   },
+  "lg gm730": {
+    "deviceName": "GM730",
+    "marketingName": "Eigen",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 400,
+      "height": 240,
+      "touch": true,
+      "size": 3
+    },
+    "type": "feature-phone",
+    "platform": "windows ce"
+  },
+  "lg gm730e": {
+    "deviceName": "GM730E",
+    "marketingName": "Eigen",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 400,
+      "height": 240,
+      "touch": true,
+      "size": 3
+    },
+    "type": "feature-phone",
+    "platform": "windows ce"
+  },
+  "lg gm730f": {
+    "deviceName": "GM730F",
+    "marketingName": "Eigen",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 400,
+      "height": 240,
+      "touch": true,
+      "size": 3
+    },
+    "type": "feature-phone",
+    "platform": "windows ce"
+  },
   "lg gt550": {
     "deviceName": "GT550",
     "marketingName": "Encore",
@@ -2420,6 +2490,20 @@
     },
     "type": "feature-phone",
     "platform": "java"
+  },
+  "lg gw820": {
+    "deviceName": "GW820",
+    "marketingName": "eXpo",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 800,
+      "height": 480,
+      "touch": true,
+      "size": 3.2
+    },
+    "type": "feature-phone",
+    "platform": "windows ce"
   },
   "lg vn280": {
     "deviceName": "VN280",
@@ -2757,6 +2841,62 @@
     "type": "feature-phone",
     "platform": "java"
   },
+  "lg g220": {
+    "deviceName": "G220",
+    "marketingName": "G220",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "lg g232": {
+    "deviceName": "G232",
+    "marketingName": "G232",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "lg g262": {
+    "deviceName": "G262",
+    "marketingName": "G262",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "lg g282": {
+    "deviceName": "G282",
+    "marketingName": "G282",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": 1.77
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "lg g3100": {
     "deviceName": "G3100",
     "marketingName": "G3100",
@@ -2771,9 +2911,79 @@
     "type": "feature-phone",
     "platform": "java"
   },
+  "lg g4010": {
+    "deviceName": "G4010",
+    "marketingName": "G4010",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 128,
+      "height": 128,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "lg g4011": {
+    "deviceName": "G4011",
+    "marketingName": "G4011",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 128,
+      "height": 128,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "lg g4015": {
     "deviceName": "G4015",
     "marketingName": "G4015",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 128,
+      "height": 128,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "lg g4020": {
+    "deviceName": "G4020",
+    "marketingName": "G4020",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 128,
+      "height": 128,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "lg g4050": {
+    "deviceName": "G4050",
+    "marketingName": "G4050",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "lg g510": {
+    "deviceName": "G510",
+    "marketingName": "G510",
     "manufacturer": "lg",
     "brand": "lg",
     "display": {
@@ -2813,9 +3023,37 @@
     "type": "feature-phone",
     "platform": "java"
   },
+  "lg g5310": {
+    "deviceName": "G5310",
+    "marketingName": "G5310",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "lg g5400": {
     "deviceName": "G5400",
     "marketingName": "G5400",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "lg g5410": {
+    "deviceName": "G5410",
+    "marketingName": "G5410",
     "manufacturer": "lg",
     "brand": "lg",
     "display": {
@@ -2865,6 +3103,76 @@
       "height": 128,
       "touch": false,
       "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "lg g622": {
+    "deviceName": "G622",
+    "marketingName": "G622",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 128,
+      "height": 128,
+      "touch": false,
+      "size": 1.5
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "lg g650": {
+    "deviceName": "G650",
+    "marketingName": "G650",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 128,
+      "height": 128,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "lg g660": {
+    "deviceName": "G660",
+    "marketingName": "G660",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "lg g688": {
+    "deviceName": "G688",
+    "marketingName": "G688",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 128,
+      "height": 128,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "lg g692": {
+    "deviceName": "G692",
+    "marketingName": "G692",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": 1.8
     },
     "type": "feature-phone",
     "platform": "java"
@@ -2939,6 +3247,174 @@
     "type": "feature-phone",
     "platform": "java"
   },
+  "lg g828": {
+    "deviceName": "G828",
+    "marketingName": "G828",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "lg g832": {
+    "deviceName": "G832",
+    "marketingName": "G832",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": 2.2
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "lg g850": {
+    "deviceName": "G850",
+    "marketingName": "G850",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "lg g912": {
+    "deviceName": "G912",
+    "marketingName": "G912",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "lg g920": {
+    "deviceName": "G920",
+    "marketingName": "G920",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "lg g922": {
+    "deviceName": "G922",
+    "marketingName": "G922",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "lg g933": {
+    "deviceName": "G933",
+    "marketingName": "G933",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "lg gb160": {
+    "deviceName": "GB160",
+    "marketingName": "GB160",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 128,
+      "height": 128,
+      "touch": false,
+      "size": 1.5
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "lg gb170": {
+    "deviceName": "GB170",
+    "marketingName": "GB170",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 128,
+      "height": 128,
+      "touch": false,
+      "size": 1.5
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "lg gb175": {
+    "deviceName": "GB175",
+    "marketingName": "GB175",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 128,
+      "height": 128,
+      "touch": false,
+      "size": 1.5
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "lg gb190": {
+    "deviceName": "GB190",
+    "marketingName": "GB190",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 128,
+      "height": 128,
+      "touch": false,
+      "size": 1.5
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "lg gb210": {
+    "deviceName": "GB210",
+    "marketingName": "GB210",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 160,
+      "height": 120,
+      "touch": false,
+      "size": 1.77
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "lg gb220": {
     "deviceName": "GB220",
     "marketingName": "GB220",
@@ -2953,6 +3429,34 @@
     "type": "feature-phone",
     "platform": "java"
   },
+  "lg gb250": {
+    "deviceName": "GB250",
+    "marketingName": "GB250",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": false,
+      "size": 2
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "lg gb255": {
+    "deviceName": "GB255",
+    "marketingName": "GB255",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": false,
+      "size": 2
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "lg gb270": {
     "deviceName": "GB270",
     "marketingName": "GB270",
@@ -2963,6 +3467,34 @@
       "height": 120,
       "touch": false,
       "size": 2
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "lg gb280": {
+    "deviceName": "GB280",
+    "marketingName": "GB280",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": false,
+      "size": 2
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "lg gd330": {
+    "deviceName": "GD330",
+    "marketingName": "GD330",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": 2.2
     },
     "type": "feature-phone",
     "platform": "java"
@@ -3003,6 +3535,20 @@
     "display": {
       "width": 320,
       "height": 240,
+      "touch": false,
+      "size": 2
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "lg gm205": {
+    "deviceName": "GM205",
+    "marketingName": "GM205",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 220,
+      "height": 176,
       "touch": false,
       "size": 2
     },
@@ -3079,6 +3625,48 @@
     "type": "feature-phone",
     "platform": "java"
   },
+  "lg gs170": {
+    "deviceName": "GS170",
+    "marketingName": "GS170",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": false,
+      "size": 1.8
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "lg gs190": {
+    "deviceName": "GS190",
+    "marketingName": "GS190",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": 2
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "lg gs200": {
+    "deviceName": "GS200",
+    "marketingName": "GS200",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": false,
+      "size": 2
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "lg gt360": {
     "deviceName": "GT360",
     "marketingName": "GT360",
@@ -3121,6 +3709,20 @@
     "type": "feature-phone",
     "platform": "java"
   },
+  "lg gt810h": {
+    "deviceName": "GT810H",
+    "marketingName": "GT810H",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 400,
+      "height": 240,
+      "touch": true,
+      "size": 3
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "lg gu220": {
     "deviceName": "GU220",
     "marketingName": "GU220",
@@ -3149,6 +3751,146 @@
     "type": "feature-phone",
     "platform": "java"
   },
+  "lg gu280": {
+    "deviceName": "GU280",
+    "marketingName": "GU280",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": false,
+      "size": 2
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "lg gu280f": {
+    "deviceName": "GU280f",
+    "marketingName": "GU280f",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": false,
+      "size": 2
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "lg gu282": {
+    "deviceName": "GU282",
+    "marketingName": "GU282",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": false,
+      "size": 2
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "lg gu285": {
+    "deviceName": "GU285",
+    "marketingName": "GU285",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": false,
+      "size": 2
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "lg gu285f": {
+    "deviceName": "GU285f",
+    "marketingName": "GU285f",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": false,
+      "size": 2
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "lg gu285g": {
+    "deviceName": "GU285g",
+    "marketingName": "GU285g",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": false,
+      "size": 2
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "lg gu290f": {
+    "deviceName": "GU290f",
+    "marketingName": "GU290f",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": false,
+      "size": 2
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "lg gu295": {
+    "deviceName": "GU295",
+    "marketingName": "GU295",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": false,
+      "size": 2
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "lg gu295f": {
+    "deviceName": "GU295f",
+    "marketingName": "GU295f",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": false,
+      "size": 2
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "lg gu295g": {
+    "deviceName": "GU295g",
+    "marketingName": "GU295g",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": false,
+      "size": 2
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "lg gw300": {
     "deviceName": "GW300",
     "marketingName": "GW300",
@@ -3159,6 +3901,20 @@
       "height": 240,
       "touch": false,
       "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "lg gw305": {
+    "deviceName": "GW305",
+    "marketingName": "GW305",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": 2.4
     },
     "type": "feature-phone",
     "platform": "java"
@@ -5571,6 +6327,20 @@
     "type": "feature-phone",
     "platform": "java"
   },
+  "lg gd550": {
+    "deviceName": "GD550",
+    "marketingName": "Pure",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": 2.4
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "lg ln240": {
     "deviceName": "LN240",
     "marketingName": "Remarq",
@@ -5725,6 +6495,34 @@
     "type": "feature-phone",
     "platform": "java"
   },
+  "lg gw370": {
+    "deviceName": "GW370",
+    "marketingName": "Rumour Plus",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": true,
+      "size": 2.4
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "lg gw370b": {
+    "deviceName": "GW370B",
+    "marketingName": "Rumour Plus",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": true,
+      "size": 2.4
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "lg s310": {
     "deviceName": "S310",
     "marketingName": "S310",
@@ -5851,6 +6649,20 @@
     "type": "feature-phone",
     "platform": "java"
   },
+  "lg gm600": {
+    "deviceName": "GM600",
+    "marketingName": "Scarlet II",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 400,
+      "height": 240,
+      "touch": false,
+      "size": 3
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "lg kf750": {
     "deviceName": "KF750",
     "marketingName": "Secret",
@@ -5861,6 +6673,20 @@
       "height": 240,
       "touch": true,
       "size": 2.4
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "lg gs505": {
+    "deviceName": "GS505",
+    "marketingName": "Sentio",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 400,
+      "height": 240,
+      "touch": true,
+      "size": 3
     },
     "type": "feature-phone",
     "platform": "java"
@@ -6663,6 +7489,20 @@
     "type": "feature-phone",
     "platform": "java"
   },
+  "lg gt405": {
+    "deviceName": "GT405",
+    "marketingName": "Viewty GT",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 400,
+      "height": 240,
+      "touch": true,
+      "size": 3
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "lg gt400": {
     "deviceName": "GT400",
     "marketingName": "Viewty Smile",
@@ -6792,6 +7632,20 @@
   "lg cu920": {
     "deviceName": "CU920",
     "marketingName": "Vu",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 400,
+      "height": 240,
+      "touch": false,
+      "size": 3
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "lg gr700": {
+    "deviceName": "GR700",
+    "marketingName": "VU Plus",
     "manufacturer": "lg",
     "brand": "lg",
     "display": {
