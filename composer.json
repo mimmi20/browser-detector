@@ -43,7 +43,7 @@
   "require-dev": {
     "ergebnis/composer-normalize": "~2.8.0",
     "ergebnis/phpstan-rules": "~0.15.1",
-    "infection/infection": "~0.13.6 || ~0.17.5",
+    "infection/infection": "~0.13.6 || ~0.17.6",
     "laminas/laminas-diactoros": "~2.4.1",
     "mikey179/vfsstream": "~1.6.8",
     "mimmi20/coding-standard": "~1.0.3",
@@ -54,9 +54,9 @@
     "phpstan/phpstan-deprecation-rules": "~0.12.5",
     "phpstan/phpstan-phpunit": "~0.12.16",
     "phpstan/phpstan-strict-rules": "~0.12.5",
-    "phpunit/phpunit": "~7.5.20 || ~8.5.8 || ~9.3.11",
-    "symfony/cache": "~4.4.14 || ~5.1.6",
-    "symfony/finder": "~4.4.14 || ~5.1.6"
+    "phpunit/phpunit": "~7.5.20 || ~8.5.8 || ~9.4.0",
+    "symfony/cache": "~4.4.15 || ~5.1.7",
+    "symfony/finder": "~4.4.15 || ~5.1.7"
   },
   "config": {
     "platform": {
