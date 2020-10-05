@@ -13,20 +13,6 @@
     "type": "fone-pad",
     "platform": "android"
   },
-  "texet tm-7878 3g": {
-    "deviceName": "TM-7878 3G",
-    "marketingName": "NaviPad",
-    "manufacturer": "texet",
-    "brand": "texet",
-    "display": {
-      "width": 1024,
-      "height": 768,
-      "touch": true,
-      "size": 7.85
-    },
-    "type": "fone-pad",
-    "platform": "android"
-  },
   "texet tm-7055hd": {
     "deviceName": "TM-7055HD",
     "marketingName": "NaviPad 3G",
@@ -37,6 +23,20 @@
       "height": 800,
       "touch": true,
       "size": 7
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "texet tm-7878 3g": {
+    "deviceName": "TM-7878 3G",
+    "marketingName": "NaviPad 3G",
+    "manufacturer": "texet",
+    "brand": "texet",
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "size": 7.85
     },
     "type": "fone-pad",
     "platform": "android"
@@ -349,6 +349,20 @@
     "type": "fone-pad",
     "platform": "android"
   },
+  "texet tm-7866": {
+    "deviceName": "TM-7866",
+    "marketingName": "X-Pad Hit 7 3G",
+    "manufacturer": "texet",
+    "brand": "texet",
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "size": 7.85
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
   "texet tm-7068": {
     "deviceName": "TM-7068",
     "marketingName": "X-Pad iX 7 3G",
@@ -357,6 +371,20 @@
     "display": {
       "width": 1024,
       "height": 600,
+      "touch": true,
+      "size": 7
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "texet tm-7086": {
+    "deviceName": "TM-7086",
+    "marketingName": "X-Pad Lite 7.2",
+    "manufacturer": "texet",
+    "brand": "texet",
+    "display": {
+      "width": 800,
+      "height": 480,
       "touch": true,
       "size": 7
     },
@@ -380,6 +408,20 @@
   "texet tm-7096": {
     "deviceName": "TM-7096",
     "marketingName": "X-Pad Navi 7.3 3G",
+    "manufacturer": "texet",
+    "brand": "texet",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "size": 7
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "texet x-pad navi 7.5 3g": {
+    "deviceName": "X-Pad Navi 7.5 3G",
+    "marketingName": "X-Pad Navi 7.5 3G",
     "manufacturer": "texet",
     "brand": "texet",
     "display": {
@@ -433,6 +475,48 @@
     "type": "fone-pad",
     "platform": "android"
   },
+  "texet tm-1049": {
+    "deviceName": "TM-1049",
+    "marketingName": "X-Pad Quad 10 3G",
+    "manufacturer": "texet",
+    "brand": "texet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": 10.1
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "texet tm-7876": {
+    "deviceName": "TM-7876",
+    "marketingName": "X-Pad Quad 7 3G",
+    "manufacturer": "texet",
+    "brand": "texet",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "size": 7
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "texet x-pad quad 7.2 3g": {
+    "deviceName": "X-Pad Quad 7.2 3G",
+    "marketingName": "X-Pad Quad 7.2 3G",
+    "manufacturer": "texet",
+    "brand": "texet",
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "size": 7
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
   "texet tm-7868": {
     "deviceName": "TM-7868",
     "marketingName": "X-Pad Shine 8.1 3G",
@@ -447,9 +531,37 @@
     "type": "fone-pad",
     "platform": "android"
   },
+  "texet tm-8054": {
+    "deviceName": "TM-8054",
+    "marketingName": "X-Pad Sky 8.1 3G",
+    "manufacturer": "texet",
+    "brand": "texet",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": 8
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
   "texet tm-9767 3g": {
     "deviceName": "TM-9767 3G",
     "marketingName": "X-Pad Style 10 3G",
+    "manufacturer": "texet",
+    "brand": "texet",
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "size": 9.7
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "texet tm-9777": {
+    "deviceName": "TM-9777",
+    "marketingName": "X-Pad Style 10.1 3G",
     "manufacturer": "texet",
     "brand": "texet",
     "display": {
@@ -471,6 +583,20 @@
       "height": 600,
       "touch": true,
       "size": 7
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "texet tm-7877": {
+    "deviceName": "TM-7877",
+    "marketingName": "X-Pad Style 8 3G",
+    "manufacturer": "texet",
+    "brand": "texet",
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "size": 7.85
     },
     "type": "fone-pad",
     "platform": "android"
