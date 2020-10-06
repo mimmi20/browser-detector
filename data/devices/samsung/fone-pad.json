@@ -1623,6 +1623,20 @@
     "type": "fone-pad",
     "platform": "android"
   },
+  "samsung sm-t387aa": {
+    "deviceName": "SM-T387AA",
+    "marketingName": "Galaxy Tab A 8.0 (2018, AT&T)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "size": 10.1
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
   "samsung sm-t387w": {
     "deviceName": "SM-T387W",
     "marketingName": "Galaxy Tab A 8.0 (2018, Canada)",
@@ -1903,20 +1917,6 @@
     "type": "fone-pad",
     "platform": "android"
   },
-  "samsung sm-t378l": {
-    "deviceName": "SM-T378L",
-    "marketingName": "Galaxy Tab E",
-    "manufacturer": "samsung",
-    "brand": "samsung",
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "size": 8
-    },
-    "type": "fone-pad",
-    "platform": "android"
-  },
   "samsung sm-t567v": {
     "deviceName": "SM-T567V",
     "marketingName": "Galaxy Tab E",
@@ -1945,9 +1945,37 @@
     "type": "fone-pad",
     "platform": "android"
   },
+  "samsung sm-t378l": {
+    "deviceName": "SM-T378L",
+    "marketingName": "Galaxy Tab E 8 (Korea)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": 8
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
   "samsung sm-t378s": {
     "deviceName": "SM-T378S",
-    "marketingName": "Galaxy Tab E (Korea, SK Telecom)",
+    "marketingName": "Galaxy Tab E 8 (Korea, SK Telecom)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": 8
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "samsung sm-t378v": {
+    "deviceName": "SM-T378V",
+    "marketingName": "Galaxy Tab E 8 (Verizon)",
     "manufacturer": "samsung",
     "brand": "samsung",
     "display": {
@@ -2477,6 +2505,20 @@
     "type": "fone-pad",
     "platform": "android"
   },
+  "samsung sm-t837r4": {
+    "deviceName": "SM-T837R4",
+    "marketingName": "Galaxy Tab S4 (10.5, Verizon)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 2560,
+      "height": 1600,
+      "touch": true,
+      "size": 10.5
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
   "samsung sm-t837v": {
     "deviceName": "SM-T837V",
     "marketingName": "Galaxy Tab S4 (10.5, Verizon)",
@@ -2561,6 +2603,48 @@
     "type": "fone-pad",
     "platform": "android"
   },
+  "samsung sm-t867": {
+    "deviceName": "SM-T867",
+    "marketingName": "Galaxy Tab S6 (LTE)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 2560,
+      "height": 1600,
+      "touch": true,
+      "size": 10.5
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "samsung sm-t867u": {
+    "deviceName": "SM-T867U",
+    "marketingName": "Galaxy Tab S6 (LTE, T-Mobile)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 2560,
+      "height": 1600,
+      "touch": true,
+      "size": 10.5
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "samsung sm-t867v": {
+    "deviceName": "SM-T867V",
+    "marketingName": "Galaxy Tab S6 (LTE, Verizon)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 2560,
+      "height": 1600,
+      "touch": true,
+      "size": 10.5
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
   "samsung sm-p615": {
     "deviceName": "SM-P615",
     "marketingName": "Galaxy Tab S6 Lite 10.4 Global LTE",
@@ -2571,6 +2655,48 @@
       "height": 1200,
       "touch": true,
       "size": 10.4
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "samsung sm-t875": {
+    "deviceName": "SM-T875",
+    "marketingName": "Galaxy Tab S7 (LTE)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 2560,
+      "height": 1600,
+      "touch": true,
+      "size": 11
+    },
+    "type": "fone-pad",
+    "platform": null
+  },
+  "samsung sm-t876b": {
+    "deviceName": "SM-T876B",
+    "marketingName": "Galaxy Tab S7 (LTE+5G)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 2560,
+      "height": 1600,
+      "touch": true,
+      "size": 11
+    },
+    "type": "fone-pad",
+    "platform": null
+  },
+  "samsung sm-t976b": {
+    "deviceName": "SM-T976B",
+    "marketingName": "Galaxy Tab S7 Plus 5G",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 2800,
+      "height": 1752,
+      "touch": true,
+      "size": 12.4
     },
     "type": "fone-pad",
     "platform": "android"
