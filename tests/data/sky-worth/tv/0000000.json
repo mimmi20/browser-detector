@@ -1,25 +1,25 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; TECNO F4 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Mobile Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; SM-LED32M04S Build/M5C14J) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36"
     },
     "device": {
-      "deviceName": "general Tecno device",
-      "marketingName": "general Tecno device",
-      "manufacturer": "tecno",
-      "brand": "tecno",
+      "deviceName": "SM-LED32M04S",
+      "marketingName": "SM-LED32M04S",
+      "manufacturer": "sky-worth",
+      "brand": "sky-worth",
       "display": {
         "width": null,
         "height": null,
-        "touch": true,
+        "touch": false,
         "size": null
       },
-      "type": "mobile-device"
+      "type": "tv"
     },
     "browser": {
       "name": "Chrome",
       "modus": null,
-      "version": "83.0.4103.106",
+      "version": "67.0.3396.87",
       "manufacturer": "google",
       "bits": null,
       "type": "browser"
@@ -27,37 +27,37 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "8.1.0",
+      "version": "6.0.1",
       "manufacturer": "google",
       "bits": null
     },
     "engine": {
       "name": "Blink",
-      "version": "83.0.4103.106",
+      "version": "67.0.3396.87",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; TECNO KB7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.127 Mobile Safari/537.36 comdirect/1.0 (appVersion:20.9.2;deviceType:mobile)"
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; SM-LED32M11S Build/M5C14J; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/48.0.2542.0 Safari/537.36"
     },
     "device": {
-      "deviceName": "general Tecno device",
-      "marketingName": "general Tecno device",
-      "manufacturer": "tecno",
-      "brand": "tecno",
+      "deviceName": "SM-LED32M11S",
+      "marketingName": "SM-LED32M11S",
+      "manufacturer": "sky-worth",
+      "brand": "sky-worth",
       "display": {
         "width": null,
         "height": null,
-        "touch": true,
+        "touch": false,
         "size": null
       },
-      "type": "mobile-device"
+      "type": "tv"
     },
     "browser": {
-      "name": "Chrome",
+      "name": "Android WebView",
       "modus": null,
-      "version": "85.0.4183.127",
+      "version": "48.0.2542.0",
       "manufacturer": "google",
       "bits": null,
       "type": "browser"
@@ -65,13 +65,13 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "8.1.0",
+      "version": "6.0.1",
       "manufacturer": "google",
       "bits": null
     },
     "engine": {
       "name": "Blink",
-      "version": "85.0.4183.127",
+      "version": "48.0.2542.0",
       "manufacturer": "google"
     }
   }

@@ -139,6 +139,62 @@
     "type": "phablet",
     "platform": "android"
   },
+  "samsung sm-a215dl": {
+    "deviceName": "SM-A215DL",
+    "marketingName": "Galaxy A21",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 1600,
+      "height": 720,
+      "touch": true,
+      "size": 6.5
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sm-a215p": {
+    "deviceName": "SM-A215P",
+    "marketingName": "Galaxy A21",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 1600,
+      "height": 720,
+      "touch": true,
+      "size": 6.5
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sm-a215u": {
+    "deviceName": "SM-A215U",
+    "marketingName": "Galaxy A21",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 1600,
+      "height": 720,
+      "touch": true,
+      "size": 6.5
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sm-a215w": {
+    "deviceName": "SM-A215W",
+    "marketingName": "Galaxy A21",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 1600,
+      "height": 720,
+      "touch": true,
+      "size": 6.5
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
   "samsung sm-a515f": {
     "deviceName": "SM-A515F",
     "marketingName": "Galaxy A51",
@@ -147,6 +203,76 @@
     "display": {
       "width": 2400,
       "height": 1080,
+      "touch": true,
+      "size": 6.5
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sm-a7156": {
+    "deviceName": "SM-A7156",
+    "marketingName": "Galaxy A71 (5G)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 1600,
+      "height": 720,
+      "touch": true,
+      "size": 6.5
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sm-a7160": {
+    "deviceName": "SM-A7160",
+    "marketingName": "Galaxy A71 (5G)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 1600,
+      "height": 720,
+      "touch": true,
+      "size": 6.5
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sm-a716f": {
+    "deviceName": "SM-A716F",
+    "marketingName": "Galaxy A71 (5G)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 1600,
+      "height": 720,
+      "touch": true,
+      "size": 6.5
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sm-a716b": {
+    "deviceName": "SM-A716B",
+    "marketingName": "Galaxy A71 (5G, International)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 1600,
+      "height": 720,
+      "touch": true,
+      "size": 6.5
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sm-a716u": {
+    "deviceName": "SM-A716U",
+    "marketingName": "Galaxy A71 (5G, USA)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 1600,
+      "height": 720,
       "touch": true,
       "size": 6.5
     },
@@ -783,9 +909,51 @@
     "type": "phablet",
     "platform": "android"
   },
+  "samsung sm-n981b": {
+    "deviceName": "SM-N981B",
+    "marketingName": "Galaxy Note 20 5G (Australia)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.7
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sm-n981w": {
+    "deviceName": "SM-N981W",
+    "marketingName": "Galaxy Note 20 5G (Canada)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.7
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
   "samsung sm-n9810": {
     "deviceName": "SM-N9810",
     "marketingName": "Galaxy Note 20 5G (China)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.7
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sm-n981n": {
+    "deviceName": "SM-N981N",
+    "marketingName": "Galaxy Note 20 5G (Korea)",
     "manufacturer": "samsung",
     "brand": "samsung",
     "display": {
@@ -825,44 +993,30 @@
     "type": "phablet",
     "platform": "android"
   },
-  "samsung sm-n981w": {
-    "deviceName": "SM-N981W",
-    "marketingName": "Galaxy Note 20 5G (Canada)",
+  "samsung sm-n985f": {
+    "deviceName": "SM-N985F",
+    "marketingName": "Galaxy Note 20 Ultra 4G",
     "manufacturer": "samsung",
     "brand": "samsung",
     "display": {
-      "width": 2400,
-      "height": 1080,
+      "width": 3088,
+      "height": 1440,
       "touch": true,
-      "size": 6.7
+      "size": 6.9
     },
     "type": "phablet",
     "platform": "android"
   },
-  "samsung sm-n981b": {
-    "deviceName": "SM-N981B",
-    "marketingName": "Galaxy Note 20 5G (Australia)",
+  "samsung sm-n986w": {
+    "deviceName": "SM-N986W",
+    "marketingName": "Galaxy Note 20 Ultra 5G (Canada)",
     "manufacturer": "samsung",
     "brand": "samsung",
     "display": {
-      "width": 2400,
-      "height": 1080,
+      "width": 3088,
+      "height": 1440,
       "touch": true,
-      "size": 6.7
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
-  "samsung sm-n981n": {
-    "deviceName": "SM-N981N",
-    "marketingName": "Galaxy Note 20 5G (Korea)",
-    "manufacturer": "samsung",
-    "brand": "samsung",
-    "display": {
-      "width": 2400,
-      "height": 1080,
-      "touch": true,
-      "size": 6.7
+      "size": 6.9
     },
     "type": "phablet",
     "platform": "android"
@@ -926,20 +1080,6 @@
   "samsung sm-n986u1": {
     "deviceName": "SM-N986U1",
     "marketingName": "Galaxy Note 20 Ultra 5G (USA, unlocked)",
-    "manufacturer": "samsung",
-    "brand": "samsung",
-    "display": {
-      "width": 3088,
-      "height": 1440,
-      "touch": true,
-      "size": 6.9
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
-  "samsung sm-n986w": {
-    "deviceName": "SM-N986W",
-    "marketingName": "Galaxy Note 20 Ultra 5G (Canada)",
     "manufacturer": "samsung",
     "brand": "samsung",
     "display": {
@@ -1359,6 +1499,34 @@
   },
   "samsung sm-g981b": {
     "deviceName": "SM-G981B",
+    "marketingName": "Galaxy S20 5G",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 3200,
+      "height": 1440,
+      "touch": true,
+      "size": 6.2
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sm-g981u": {
+    "deviceName": "SM-G981U",
+    "marketingName": "Galaxy S20 5G",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 3200,
+      "height": 1440,
+      "touch": true,
+      "size": 6.2
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sm-g981v": {
+    "deviceName": "SM-G981V",
     "marketingName": "Galaxy S20 5G",
     "manufacturer": "samsung",
     "brand": "samsung",
