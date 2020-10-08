@@ -1,6 +1,44 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.3.4; de-de; SonyEricssonZ1i Build/4.0.2.A.0.42) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
+    },
+    "device": {
+      "deviceName": "Z1i",
+      "marketingName": "Z1i",
+      "manufacturer": "sony-ericsson",
+      "brand": "sony-ericsson",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "2.3.4",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "533.1.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (SymbianOS/9.2;U; Series60/5.0 SonyEricssonU1i/1.00;Profile/MIDP-2.1 Configuration/ CLDC-1.1)AppleWebKit/525 (KHTML, like Gecko) version/3.0Safari/525"
     },
     "device": {
@@ -3737,44 +3775,6 @@
         "height": 480,
         "touch": true,
         "size": 4.2
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Android Webkit",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.0.4",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "534.30.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.0.4; de-de; SonyEricssonWT19i Build/4.1.B.0.431) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
-    },
-    "device": {
-      "deviceName": "WT19i",
-      "marketingName": "Live with Walkman",
-      "manufacturer": "sony-ericsson",
-      "brand": "sony-ericsson",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": null
       },
       "type": "smartphone"
     },

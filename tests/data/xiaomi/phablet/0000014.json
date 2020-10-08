@@ -1,6 +1,196 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; Redmi Note 9 Pro Build/QKQ1.191215.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.106 Mobile Safari/537.36 Instagram 146.0.0.27.125 Android (29/10; 440dpi; 1080x2170; Xiaomi/Redmi; Redmi Note 9 Pro; joyeuse; qcom; de_DE; 221134032)"
+    },
+    "device": {
+      "deviceName": "Redmi Note 9 Pro",
+      "marketingName": "Redmi Note 9 Pro",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.67
+      },
+      "type": "phablet"
+    },
+    "browser": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "146.0.0.27.125",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "83.0.4103.106",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; Redmi Note 6 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Mobile Safari/537.36 comdirect/1.0 (appVersion:20.6.0;deviceName:nokia 6;deviceType:mobile)"
+    },
+    "device": {
+      "deviceName": "Redmi Note 6 Pro",
+      "marketingName": "Redmi Note 6 Pro",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 2280,
+        "height": 1080,
+        "touch": true,
+        "size": 6.26
+      },
+      "type": "phablet"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "83.0.4103.106",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "83.0.4103.106",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; Redmi Note 9S Build/QKQ1.191215.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.101 Mobile Safari/537.36 Instagram 145.0.0.32.119 Android (29/10; 440dpi; 1080x2170; Xiaomi/Redmi; Redmi Note 9S; curtana; qcom; tr_TR; 219308759)"
+    },
+    "device": {
+      "deviceName": "MI Note",
+      "marketingName": "MI Note",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.7
+      },
+      "type": "phablet"
+    },
+    "browser": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "145.0.0.32.119",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "83.0.4103.101",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; Redmi Note 8 Pro Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.101 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Redmi Note 8 Pro",
+      "marketingName": "Redmi Note 8 Pro",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.53
+      },
+      "type": "phablet"
+    },
+    "browser": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "83.0.4103.101",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "83.0.4103.101",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; Mi Note 3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Mobile Safari/537.36 comdirect/1.0 (appVersion:20.6.0;deviceName:nokia 3;deviceType:mobile)"
+    },
+    "device": {
+      "deviceName": "MI Note 3",
+      "marketingName": "MI Note 3",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "phablet"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "83.0.4103.106",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "83.0.4103.106",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 7.0; Redmi Note 4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Mobile Safari/537.36 OPR/58.2.2878.53403 comdirect/1.0 (appVersion:20.6.0;deviceType:mobile)"
     },
     "device": {
@@ -3606,196 +3796,6 @@
     "engine": {
       "name": "Blink",
       "version": "71.0.3578.141",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla%2F5.0+%28Linux%3B+U%3B+Android+9%3B+de-de%3B+Redmi+Note+5+Build%2FPKQ1.180904.001%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Version%2F4.0+Chrome%2F71.0.3578.141+Mobile+Safari%2F537.36+XiaoMi%2FMiuiBrowser%2F12.5.2-go"
-    },
-    "device": {
-      "deviceName": "Redmi Note 5",
-      "marketingName": "Redmi Note 5",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
-      "display": {
-        "width": 2160,
-        "height": 1080,
-        "touch": true,
-        "size": 5.99
-      },
-      "type": "phablet"
-    },
-    "browser": {
-      "name": "Miui Browser",
-      "modus": null,
-      "version": "12.5.2",
-      "manufacturer": "xiaomi",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "9.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; Redmi Note 9 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.81 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "Redmi Note 9 Pro",
-      "marketingName": "Redmi Note 9 Pro",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
-      "display": {
-        "width": 2400,
-        "height": 1080,
-        "touch": true,
-        "size": 6.67
-      },
-      "type": "phablet"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "85.0.4183.81",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "85.0.4183.81",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 9; Redmi Note 8 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.81 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "Redmi Note 8 Pro",
-      "marketingName": "Redmi Note 8 Pro",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
-      "display": {
-        "width": 2340,
-        "height": 1080,
-        "touch": true,
-        "size": 6.53
-      },
-      "type": "phablet"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "85.0.4183.81",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "9.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "85.0.4183.81",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; Redmi Note 8 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.81 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "Redmi Note 8 Pro",
-      "marketingName": "Redmi Note 8 Pro",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
-      "display": {
-        "width": 2340,
-        "height": 1080,
-        "touch": true,
-        "size": 6.53
-      },
-      "type": "phablet"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "85.0.4183.81",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "85.0.4183.81",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; Redmi Note 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.81 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "Redmi Note 5",
-      "marketingName": "Redmi Note 5",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
-      "display": {
-        "width": 2160,
-        "height": 1080,
-        "touch": true,
-        "size": 5.99
-      },
-      "type": "phablet"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "85.0.4183.81",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "8.1.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "85.0.4183.81",
       "manufacturer": "google"
     }
   }
