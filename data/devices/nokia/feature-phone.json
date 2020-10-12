@@ -407,7 +407,7 @@
   },
   "nokia 2322c": {
     "deviceName": "2322c",
-    "marketingName": "2322 Classic",
+    "marketingName": "2322 classic",
     "manufacturer": "nokia",
     "brand": "nokia",
     "display": {
@@ -420,7 +420,7 @@
     "platform": "java"
   },
   "nokia 2323c": {
-    "deviceName": "2323 classic",
+    "deviceName": "2323c",
     "marketingName": "2323 classic",
     "manufacturer": "nokia",
     "brand": "nokia",
@@ -1329,6 +1329,34 @@
     "type": "feature-phone",
     "platform": "java"
   },
+  "nokia 3587": {
+    "deviceName": "3587",
+    "marketingName": "3587",
+    "manufacturer": "nokia",
+    "brand": "nokia",
+    "display": {
+      "width": 96,
+      "height": 65,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "nokia 3587i": {
+    "deviceName": "3587i",
+    "marketingName": "3587i",
+    "manufacturer": "nokia",
+    "brand": "nokia",
+    "display": {
+      "width": 96,
+      "height": 65,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "nokia 3590": {
     "deviceName": "3590",
     "marketingName": "3590",
@@ -1371,6 +1399,34 @@
     "type": "feature-phone",
     "platform": "java"
   },
+  "nokia 3602s": {
+    "deviceName": "3602s",
+    "marketingName": "3602 Slide",
+    "manufacturer": "nokia",
+    "brand": "nokia",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "nokia 3606": {
+    "deviceName": "3606",
+    "marketingName": "3606",
+    "manufacturer": "nokia",
+    "brand": "nokia",
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": false,
+      "size": 2
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "nokia 3610": {
     "deviceName": "3610",
     "marketingName": "3610",
@@ -1381,6 +1437,20 @@
       "height": 65,
       "touch": false,
       "size": 1.5
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "nokia 3620": {
+    "deviceName": "3620",
+    "marketingName": "3620",
+    "manufacturer": "nokia",
+    "brand": "nokia",
+    "display": {
+      "width": 208,
+      "height": 176,
+      "touch": false,
+      "size": null
     },
     "type": "feature-phone",
     "platform": "java"
@@ -1427,6 +1497,20 @@
     "type": "feature-phone",
     "platform": "asha"
   },
+  "nokia 3711": {
+    "deviceName": "3711",
+    "marketingName": "3711",
+    "manufacturer": "nokia",
+    "brand": "nokia",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": 2.2
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "nokia 3720c": {
     "deviceName": "3720c",
     "marketingName": "3720 classic",
@@ -1440,6 +1524,48 @@
     },
     "type": "feature-phone",
     "platform": "symbian"
+  },
+  "nokia 3806": {
+    "deviceName": "3806",
+    "marketingName": "3806",
+    "manufacturer": "nokia",
+    "brand": "nokia",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": 2.2
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "nokia 5070": {
+    "deviceName": "5070",
+    "marketingName": "5070",
+    "manufacturer": "nokia",
+    "brand": "nokia",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": 1.87
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "nokia 5070b": {
+    "deviceName": "5070b",
+    "marketingName": "5070b",
+    "manufacturer": "nokia",
+    "brand": "nokia",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": 1.87
+    },
+    "type": "feature-phone",
+    "platform": "java"
   },
   "nokia 5100": {
     "deviceName": "5100",
@@ -1525,6 +1651,20 @@
     "type": "feature-phone",
     "platform": "java"
   },
+  "nokia 5208": {
+    "deviceName": "5208",
+    "marketingName": "5208",
+    "manufacturer": "nokia",
+    "brand": "nokia",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": 1.87
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "nokia 5210": {
     "deviceName": "5210",
     "marketingName": "5210",
@@ -1567,6 +1707,20 @@
     "type": "feature-phone",
     "platform": "symbian"
   },
+  "nokia 5232": {
+    "deviceName": "5232",
+    "marketingName": "5232",
+    "manufacturer": "nokia",
+    "brand": "nokia",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": 1.87
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "nokia 5233": {
     "deviceName": "5233",
     "marketingName": "5233",
@@ -1590,6 +1744,20 @@
       "width": 640,
       "height": 360,
       "touch": true,
+      "size": 3.2
+    },
+    "type": "feature-phone",
+    "platform": "symbian"
+  },
+  "nokia 5238": {
+    "deviceName": "5238",
+    "marketingName": "5238",
+    "manufacturer": "nokia",
+    "brand": "nokia",
+    "display": {
+      "width": 640,
+      "height": 360,
+      "touch": false,
       "size": 3.2
     },
     "type": "feature-phone",
@@ -1693,6 +1861,20 @@
     "type": "feature-phone",
     "platform": "asha"
   },
+  "nokia 5510": {
+    "deviceName": "5510",
+    "marketingName": "5510",
+    "manufacturer": "nokia",
+    "brand": "nokia",
+    "display": {
+      "width": 90,
+      "height": 40,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "nokia 5610": {
     "deviceName": "5610",
     "marketingName": "5610 XpressMusic",
@@ -1706,6 +1888,20 @@
     },
     "type": "feature-phone",
     "platform": "symbian"
+  },
+  "nokia 5611": {
+    "deviceName": "5611",
+    "marketingName": "5611 XpressMusic",
+    "manufacturer": "nokia",
+    "brand": "nokia",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": 2.2
+    },
+    "type": "feature-phone",
+    "platform": "java"
   },
   "nokia 5630": {
     "deviceName": "5630",
@@ -1749,16 +1945,30 @@
     "type": "feature-phone",
     "platform": "symbian"
   },
-  "nokia 5730s": {
-    "deviceName": "5730s",
-    "marketingName": "5730S Xpress music side slide",
+  "nokia 5730": {
+    "deviceName": "5730",
+    "marketingName": "5730 XpressMusic",
     "manufacturer": "nokia",
     "brand": "nokia",
     "display": {
       "width": 320,
       "height": 240,
       "touch": false,
-      "size": null
+      "size": 2.4
+    },
+    "type": "feature-phone",
+    "platform": "symbian"
+  },
+  "nokia 5730s": {
+    "deviceName": "5730s",
+    "marketingName": "5730s XpressMusic side slide",
+    "manufacturer": "nokia",
+    "brand": "nokia",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": 2.4
     },
     "type": "feature-phone",
     "platform": "symbian"
@@ -1777,9 +1987,37 @@
     "type": "feature-phone",
     "platform": "symbian"
   },
+  "nokia 5802": {
+    "deviceName": "5802",
+    "marketingName": "5802 XpressMusic",
+    "manufacturer": "nokia",
+    "brand": "nokia",
+    "display": {
+      "width": 640,
+      "height": 360,
+      "touch": true,
+      "size": 3.2
+    },
+    "type": "feature-phone",
+    "platform": "symbian"
+  },
   "nokia 6010": {
     "deviceName": "6010",
     "marketingName": "6010",
+    "manufacturer": "nokia",
+    "brand": "nokia",
+    "display": {
+      "width": 96,
+      "height": 65,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "nokia 6015": {
+    "deviceName": "6015",
+    "marketingName": "6015",
     "manufacturer": "nokia",
     "brand": "nokia",
     "display": {
@@ -1832,6 +2070,20 @@
     },
     "type": "feature-phone",
     "platform": "java"
+  },
+  "nokia 603": {
+    "deviceName": "603",
+    "marketingName": "603",
+    "manufacturer": "nokia",
+    "brand": "nokia",
+    "display": {
+      "width": 640,
+      "height": 360,
+      "touch": true,
+      "size": 3.5
+    },
+    "type": "feature-phone",
+    "platform": "symbian"
   },
   "nokia 6060": {
     "deviceName": "6060",
@@ -1892,6 +2144,20 @@
   "nokia 6085": {
     "deviceName": "6085",
     "marketingName": "6085",
+    "manufacturer": "nokia",
+    "brand": "nokia",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": 1.8
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "nokia 6086": {
+    "deviceName": "6086",
+    "marketingName": "6086",
     "manufacturer": "nokia",
     "brand": "nokia",
     "display": {
@@ -2001,6 +2267,20 @@
     "type": "feature-phone",
     "platform": "java"
   },
+  "nokia 6110": {
+    "deviceName": "6110",
+    "marketingName": "6110",
+    "manufacturer": "nokia",
+    "brand": "nokia",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "symbian"
+  },
   "nokia 6110 navigator": {
     "deviceName": "6110 Navigator",
     "marketingName": "6110 Navigator",
@@ -2045,7 +2325,49 @@
   },
   "nokia 6120c": {
     "deviceName": "6120c",
-    "marketingName": "6120 Classic",
+    "marketingName": "6120 classic",
+    "manufacturer": "nokia",
+    "brand": "nokia",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": 2
+    },
+    "type": "feature-phone",
+    "platform": "symbian"
+  },
+  "nokia 6121": {
+    "deviceName": "6121",
+    "marketingName": "6121",
+    "manufacturer": "nokia",
+    "brand": "nokia",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": 2
+    },
+    "type": "feature-phone",
+    "platform": "symbian"
+  },
+  "nokia 6121c": {
+    "deviceName": "6121c",
+    "marketingName": "6121 classic",
+    "manufacturer": "nokia",
+    "brand": "nokia",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": 2
+    },
+    "type": "feature-phone",
+    "platform": "symbian"
+  },
+  "nokia 6122c": {
+    "deviceName": "6122c",
+    "marketingName": "6122 classic",
     "manufacturer": "nokia",
     "brand": "nokia",
     "display": {
@@ -2059,14 +2381,14 @@
   },
   "nokia 6124c": {
     "deviceName": "6124c",
-    "marketingName": "6124 Classic",
+    "marketingName": "6124 classic",
     "manufacturer": "nokia",
     "brand": "nokia",
     "display": {
       "width": 320,
       "height": 240,
       "touch": false,
-      "size": null
+      "size": 2
     },
     "type": "feature-phone",
     "platform": "symbian"
@@ -2081,6 +2403,20 @@
       "height": 128,
       "touch": false,
       "size": 1.8
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "nokia 6126": {
+    "deviceName": "6126",
+    "marketingName": "6126",
+    "manufacturer": "nokia",
+    "brand": "nokia",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": 2.2
     },
     "type": "feature-phone",
     "platform": "java"
@@ -2113,6 +2449,20 @@
     "type": "feature-phone",
     "platform": "java"
   },
+  "nokia 6136": {
+    "deviceName": "6136",
+    "marketingName": "6136",
+    "manufacturer": "nokia",
+    "brand": "nokia",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": 1.8
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "nokia 6151": {
     "deviceName": "6151",
     "marketingName": "6151",
@@ -2127,6 +2477,20 @@
     "type": "feature-phone",
     "platform": "java"
   },
+  "nokia 6152": {
+    "deviceName": "6152",
+    "marketingName": "6152",
+    "manufacturer": "nokia",
+    "brand": "nokia",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "nokia 6155": {
     "deviceName": "6155",
     "marketingName": "6155",
@@ -2137,6 +2501,20 @@
       "height": 128,
       "touch": false,
       "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "nokia 6165": {
+    "deviceName": "6165",
+    "marketingName": "6165",
+    "manufacturer": "nokia",
+    "brand": "nokia",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": 1.8
     },
     "type": "feature-phone",
     "platform": "java"
@@ -2179,6 +2557,90 @@
       "height": 128,
       "touch": false,
       "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "nokia 6205": {
+    "deviceName": "6205",
+    "marketingName": "6205",
+    "manufacturer": "nokia",
+    "brand": "nokia",
+    "display": {
+      "width": 220,
+      "height": 176,
+      "touch": false,
+      "size": 2
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "nokia 6208c": {
+    "deviceName": "6208c",
+    "marketingName": "6208 classic",
+    "manufacturer": "nokia",
+    "brand": "nokia",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": true,
+      "size": 2.4
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "nokia 6212": {
+    "deviceName": "6212",
+    "marketingName": "6212",
+    "manufacturer": "nokia",
+    "brand": "nokia",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": 2
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "nokia 6212c": {
+    "deviceName": "6212c",
+    "marketingName": "6212 classic",
+    "manufacturer": "nokia",
+    "brand": "nokia",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": 2
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "nokia 6215i": {
+    "deviceName": "6215i",
+    "marketingName": "6215i",
+    "manufacturer": "nokia",
+    "brand": "nokia",
+    "display": {
+      "width": 128,
+      "height": 128,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "nokia 6216c": {
+    "deviceName": "6216c",
+    "marketingName": "6216 classic",
+    "manufacturer": "nokia",
+    "brand": "nokia",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": false,
+      "size": 2
     },
     "type": "feature-phone",
     "platform": "java"
@@ -4069,6 +4531,20 @@
       "height": 360,
       "touch": true,
       "size": null
+    },
+    "type": "feature-phone",
+    "platform": "symbian"
+  },
+  "nokia 600": {
+    "deviceName": "600",
+    "marketingName": "Cindy",
+    "manufacturer": "nokia",
+    "brand": "nokia",
+    "display": {
+      "width": 640,
+      "height": 360,
+      "touch": true,
+      "size": 3.2
     },
     "type": "feature-phone",
     "platform": "symbian"

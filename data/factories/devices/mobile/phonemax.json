@@ -1,7 +1,10 @@
 {
   "rules": {
-    "/venus x/i": "phonemax venus x",
-    "/rocky 2/i": "phonemax rocky 2"
+    "/venus[ _]x/i": "phonemax venus x",
+    "/saturn/i": "phonemax saturn",
+    "/rocky[ _]2/i": "phonemax rocky 2",
+    "/mars[ _]x/i": "phonemax mars x",
+    "/mars/i": "phonemax mars"
   },
   "generic": "general phonemax device"
 }
