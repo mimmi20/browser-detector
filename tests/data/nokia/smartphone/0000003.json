@@ -1,44 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "3gpp-gba Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 NokiaN8-00-1/1.0; Profile/MIDP-2.1 Configuration/CLDC-1.1; en-us) AppleWebKit/525 (KHTML, like Gecko) BrowserNG/7.1.12344"
-    },
-    "device": {
-      "deviceName": "N8-00",
-      "marketingName": "N8",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": 640,
-        "height": 360,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Nokia OSS Browser",
-      "modus": null,
-      "version": "7.1.12344",
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "symbian-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "525.0.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "MozillaQtWRT/1.05.0 (SymbianQtWRT/1.03; U; NokiaN8-00QtWRT/1.0RM-59601; ConfigurationQtWRT/1.0CLDC-1.1 ProfileQtWRT/1.0MIDP-2.1; ar-AE) AppleWebKitQtWRT/1.0532.4 (KHTML, like Gecko) BrowserNGQtWRT/1.08.0.r19209 Mobile SafariQtWRT/1.0532.4"
     },
     "device": {
@@ -365,82 +327,6 @@
       "manufacturer": "ucweb",
       "bits": null,
       "type": "transcoder"
-    },
-    "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "symbian-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (S60V5; U; Pt-br; Nokia603)/UC Browser8.2.0.132/50/352/UCWEB Mobile"
-    },
-    "device": {
-      "deviceName": "603",
-      "marketingName": "603",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": 640,
-        "height": 360,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "8.2.0.132",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "symbian-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "NOKIA-6030"
-    },
-    "device": {
-      "deviceName": "603",
-      "marketingName": "603",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": 640,
-        "height": 360,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
     },
     "os": {
       "name": "Symbian OS",
@@ -3725,72 +3611,186 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Symbian/3; Series60/5.4 Nokia603/112.010.1404; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/535.1 (KHTML, like Gecko) NokiaBrowser/8.2.1.20 Mobile Safari/535.1 3gpp-gba"
+      "user-agent": "Mozilla/5.0 (X11; U; Linux armv7l; de-DE; rv:1.9.2a1pre) Gecko/20091127 Firefox/3.5 Maemo Browser 1.5.6 RX-51 N900"
     },
     "device": {
-      "deviceName": "603",
-      "marketingName": "603",
+      "deviceName": "N900",
+      "marketingName": "N900",
       "manufacturer": "nokia",
       "brand": "nokia",
       "display": {
-        "width": 640,
-        "height": 360,
+        "width": 800,
+        "height": 480,
         "touch": true,
         "size": 3.5
       },
       "type": "smartphone"
     },
     "browser": {
-      "name": "Nokia Browser",
+      "name": "MicroB",
       "modus": null,
-      "version": "8.2.1.20",
+      "version": "1.5.6",
       "manufacturer": "nokia",
       "bits": null,
       "type": "browser"
     },
     "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
+      "name": "Maemo",
+      "marketingName": "Maemo",
       "version": null,
-      "manufacturer": "symbian-foundation",
+      "manufacturer": "linux-foundation",
       "bits": null
     },
     "engine": {
-      "name": "WebKit",
-      "version": "535.1.0",
-      "manufacturer": "apple"
+      "name": "Gecko",
+      "version": "1.9.2-alpha+1",
+      "manufacturer": "mozilla-foundation"
     }
   },
   {
     "headers": {
-      "user-agent": "UCWEB/2.0 (Symbian; U; S60 V5; en-US; Nokia603) U2/1.0.0 UCBrowser/9.2.0.336 U2/1.0.0 Mobile"
+      "user-agent": "Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 521)"
     },
     "device": {
-      "deviceName": "603",
-      "marketingName": "603",
+      "deviceName": "RM-917",
+      "marketingName": "Lumia 521",
       "manufacturer": "nokia",
       "brand": "nokia",
       "display": {
-        "width": 640,
-        "height": 360,
+        "width": 800,
+        "height": 480,
         "touch": true,
-        "size": 3.5
+        "size": 4
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "IEMobile",
+      "modus": null,
+      "version": "9.0.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Windows Phone OS",
+      "marketingName": "Windows Phone OS",
+      "version": "7.5.0",
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": "Trident",
+      "version": "5.0.0",
+      "manufacturer": "microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 720)"
+    },
+    "device": {
+      "deviceName": "Lumia 720",
+      "marketingName": "Lumia 720",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 4.3
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "IEMobile",
+      "modus": null,
+      "version": "9.0.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Windows Phone OS",
+      "marketingName": "Windows Phone OS",
+      "version": "7.5.0",
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": "Trident",
+      "version": "5.0.0",
+      "manufacturer": "microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "UCWEB/2.0 (Windows; U; wds 8.0; ru-RU; NOKIA; RM-914_eu_euro2_367) U2/1.0.0 UCBrowser/3.4.1.407 U2/1.0.0 Mobile"
+    },
+    "device": {
+      "deviceName": "RM-914",
+      "marketingName": "Lumia 520",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 4
       },
       "type": "smartphone"
     },
     "browser": {
       "name": "UC Browser",
       "modus": null,
-      "version": "9.2.0.336",
+      "version": "3.4.1.407",
       "manufacturer": "ucweb",
       "bits": null,
       "type": "transcoder"
     },
     "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "symbian-foundation",
+      "name": "Windows Phone OS",
+      "marketingName": "Windows Phone OS",
+      "version": "8.0.0",
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": "U2",
+      "version": "1.0.0",
+      "manufacturer": "ucweb"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "UCWEB/2.0 (Windows; U; wds 8.0; ru-RU; NOKIA; RM-892_eu_euro2_217) U2/1.0.0 UCBrowser/3.4.1.407 U2/1.0.0 Mobile"
+    },
+    "device": {
+      "deviceName": "RM-892",
+      "marketingName": "Lumia 925",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 1280,
+        "height": 768,
+        "touch": true,
+        "size": 4.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "3.4.1.407",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Windows Phone OS",
+      "marketingName": "Windows Phone OS",
+      "version": "8.0.0",
+      "manufacturer": "microsoft",
       "bits": null
     },
     "engine": {
