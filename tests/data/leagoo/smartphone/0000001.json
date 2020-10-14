@@ -1,6 +1,82 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0; T10 Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "T10",
+      "marketingName": "T10",
+      "manufacturer": "leagoo",
+      "brand": "leagoo",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.7
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "67.0.3396.87",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "67.0.3396.87",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0; T10 Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "T10",
+      "marketingName": "T10",
+      "manufacturer": "leagoo",
+      "brand": "leagoo",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.7
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "56.0.2924.87",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "56.0.2924.87",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 6.0; M8 Pro Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.91 Mobile Safari/537.36"
     },
     "device": {
@@ -916,8 +992,8 @@
       "user-agent": "Mozilla/5.0 Linux; Android 6.0; Leagoo M8Pro Build/MRA58K AppleWebKit/537.36 KHTML, like Gecko Chrome/54.0.2840.85 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "M8",
-      "marketingName": "M8",
+      "deviceName": "M8 Pro",
+      "marketingName": "M8 Pro",
       "manufacturer": "leagoo",
       "brand": "leagoo",
       "display": {
@@ -2816,8 +2892,8 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 7.1.2; leagoo M8_pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.92 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "M8",
-      "marketingName": "M8",
+      "deviceName": "M8 Pro",
+      "marketingName": "M8 Pro",
       "manufacturer": "leagoo",
       "brand": "leagoo",
       "display": {
@@ -2846,44 +2922,6 @@
     "engine": {
       "name": "Blink",
       "version": "77.0.3865.92",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.2; Leagoo-M8-Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.105 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "M8",
-      "marketingName": "M8",
-      "manufacturer": "leagoo",
-      "brand": "leagoo",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 5.7
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "72.0.3626.105",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "7.1.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "72.0.3626.105",
       "manufacturer": "google"
     }
   }
