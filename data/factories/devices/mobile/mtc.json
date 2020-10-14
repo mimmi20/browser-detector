@@ -1,8 +1,9 @@
 {
   "rules": {
-    "/smart[ _]?sprint[ _]4g/i": "mtc smart sprint 4g",
-    "/smart[ _]?surf[ _]4g/i": "mtc smart surf 4g",
-    "/smart[ _]?run[ _]4g/i": "mtc smart run 4g",
+    "/smart[ _]?sprint[ _]?4g/i": "mtc smart sprint 4g",
+    "/smart[ _]?surf[ _]?4g/i": "mtc smart surf 4g",
+    "/smart[ _]?start[ _]?2/i": "mtc smart start 2",
+    "/smart[ _]?run[ _]?4g/i": "mtc smart run 4g",
     "/smart[ _]?run/i": "mtc smart run",
     "/viva/i": "mtc viva",
     "/mini/i": "mtc mini",
@@ -14,6 +15,7 @@
     "/972/i": "mtc 972",
     "/970h/i": "mtc 970h",
     "/970/i": "mtc 970",
+    "/968/i": "mtc 968",
     "/950/i": "mtc 950",
     "/evo/i": "mtc evo"
   },
