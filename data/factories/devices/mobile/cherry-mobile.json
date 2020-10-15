@@ -1,17 +1,19 @@
 {
   "rules": {
-    "/omega hd 4/i": "cherry-mobile omega hd 4",
-    "/flare_hd_max/i": "cherry-mobile flare hd max",
+    "/thunder[ _]?s220/i": "cherry-mobile thunder s220",
+    "/thunder[ _]?2\\.0/i": "cherry-mobile thunder 2.0",
+    "/omega[ _]?hd[ _]?4/i": "cherry-mobile omega hd 4",
+    "/flare[ _]?hd[ _]?max/i": "cherry-mobile flare hd max",
     "/razor/i": "cherry-mobile razor",
     "/w380/i": "cherry-mobile w380",
-    "/titan tv|s320/i": "cherry-mobile s320",
+    "/titan[ _]?tv|s320/i": "cherry-mobile s320",
     "/flare2x/i": "cherry-mobile flare 2x",
     "/life/i": "cherry-mobile life",
     "/snap/i": "cherry-mobile snap",
     "/sonic/i": "cherry-mobile sonic",
-    "/nova a100/i": "cherry-mobile nova a100",
-    "/fusion bolt/i": "cherry-mobile fusion bolt",
-    "/alpha luxe/i": "cherry-mobile alpha luxe",
+    "/nova[ _]?a100/i": "cherry-mobile nova a100",
+    "/fusion[ _]?bolt/i": "cherry-mobile fusion bolt",
+    "/alpha[ _]?luxe/i": "cherry-mobile alpha luxe",
     "/s710/i": "cherry-mobile s710"
   },
   "generic": "general cherry-mobile device"
