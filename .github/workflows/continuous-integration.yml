@@ -23,10 +23,10 @@ jobs:
 
     steps:
       - name: "Checkout"
-        uses: "actions/checkout@v2"
+        uses: "actions/checkout@v2.3.3"
 
       - name: "Install PHP"
-        uses: "shivammathur/setup-php@v2"
+        uses: "shivammathur/setup-php@2.6.0"
         with:
           php-version: "${{ matrix.php-versions }}"
           extensions: "json"
@@ -75,10 +75,10 @@ jobs:
 
     steps:
       - name: "Checkout"
-        uses: "actions/checkout@v2"
+        uses: "actions/checkout@v2.3.3"
 
       - name: "Install PHP"
-        uses: "shivammathur/setup-php@v2"
+        uses: "shivammathur/setup-php@2.6.0"
         with:
           php-version: "${{ matrix.php-versions }}"
           extensions: "json"
@@ -120,10 +120,10 @@ jobs:
 
     steps:
       - name: "Checkout"
-        uses: "actions/checkout@v2"
+        uses: "actions/checkout@v2.3.3"
 
       - name: "Install PHP"
-        uses: "shivammathur/setup-php@v2"
+        uses: "shivammathur/setup-php@2.6.0"
         with:
           php-version: "${{ matrix.php-versions }}"
           extensions: "json"
@@ -168,10 +168,10 @@ jobs:
 
     steps:
       - name: "Checkout"
-        uses: "actions/checkout@v2"
+        uses: "actions/checkout@v2.3.3"
 
       - name: "Install PHP"
-        uses: "shivammathur/setup-php@v2"
+        uses: "shivammathur/setup-php@2.6.0"
         with:
           php-version: "${{ matrix.php-versions }}"
           extensions: "json"
@@ -218,10 +218,10 @@ jobs:
 
     steps:
       - name: "Checkout"
-        uses: "actions/checkout@v2"
+        uses: "actions/checkout@v2.3.3"
 
       - name: "Install PHP"
-        uses: "shivammathur/setup-php@v2"
+        uses: "shivammathur/setup-php@2.6.0"
         with:
           php-version: "${{ matrix.php-versions }}"
           extensions: "json"
@@ -263,10 +263,10 @@ jobs:
 
     steps:
       - name: "Checkout"
-        uses: "actions/checkout@v2"
+        uses: "actions/checkout@v2.3.3"
 
       - name: "Install PHP"
-        uses: "shivammathur/setup-php@v2"
+        uses: "shivammathur/setup-php@2.6.0"
         with:
           php-version: "${{ matrix.php-versions }}"
           extensions: "json"
@@ -294,7 +294,7 @@ jobs:
         run: "vendor/bin/phpunit -c phpunit.xml --colors --coverage-clover=.build/coverage/clover.xml --coverage-text --coverage-xml=.build/coverage/coverage-xml --log-junit=.build/coverage/junit.xml"
 
       - name: "Upload coverage to Codecov"
-        uses: "codecov/codecov-action@master"
+        uses: "codecov/codecov-action@v1.0.13"
         with:
           token: "${{secrets.CODECOV_TOKEN}}"
           file: ".build/coverage/clover.xml"
@@ -318,10 +318,10 @@ jobs:
 
     steps:
       - name: "Checkout"
-        uses: "actions/checkout@v2"
+        uses: "actions/checkout@v2.3.3"
 
       - name: "Install PHP"
-        uses: "shivammathur/setup-php@v2"
+        uses: "shivammathur/setup-php@2.6.0"
         with:
           php-version: "${{ matrix.php-versions }}"
           extensions: "json" #optional
@@ -365,10 +365,10 @@ jobs:
 
     steps:
       - name: "Checkout"
-        uses: "actions/checkout@v2"
+        uses: "actions/checkout@v2.3.3"
 
       - name: "Install PHP"
-        uses: "shivammathur/setup-php@v2"
+        uses: "shivammathur/setup-php@2.6.0"
         with:
           php-version: "${{ matrix.php-versions }}"
           extensions: "json" #optional
