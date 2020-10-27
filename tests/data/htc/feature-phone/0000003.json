@@ -1,6 +1,44 @@
 [
   {
     "headers": {
+      "user-agent": "dopodT5388/1.0 WindowsMobile/6.1 CEOS/5.2 release/1.6 Opera/9.5 WAP2.0 Profile/MIDP2.0 Configuration/CLDC1.1 (compatible; MSIE 4.01; Windows CE; PPC)/UCWEB8.2.0.116/31/999"
+    },
+    "device": {
+      "deviceName": "T5388",
+      "marketingName": "Touch Diamond 2",
+      "manufacturer": "htc",
+      "brand": "dopod",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 3.2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "9.5.0",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": null,
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": null,
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "dopodT8588/1.0 WindowsMobile/6.5 CEOS/5.2 release/5.0 Opera/9.7 WAP2.0 Profile/MIDP2.0 Configuration/CLDC1.1 4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UCWEB8.2.0.116/31/800"
     },
     "device": {
@@ -573,44 +611,6 @@
       "name": "Blink",
       "version": "81.0.4044.117",
       "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Appcelerator Titanium/3.1.2 (HTC One X; Android API Level: 17; de-DE;)"
-    },
-    "device": {
-      "deviceName": "X310e",
-      "marketingName": "Titan",
-      "manufacturer": "htc",
-      "brand": "htc",
-      "display": {
-        "width": 800,
-        "height": 480,
-        "touch": true,
-        "size": 4.7
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Android Webkit",
-      "modus": null,
-      "version": null,
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Windows Phone OS",
-      "marketingName": "Windows Phone OS",
-      "version": null,
-      "manufacturer": "microsoft",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
     }
   }
 ]

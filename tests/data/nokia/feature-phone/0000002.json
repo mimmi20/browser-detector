@@ -1,6 +1,44 @@
 [
   {
     "headers": {
+      "user-agent": "MQQBrowser/2.0 (NokiaN868MP;SymbianOS/9.1 Series60/3.0)"
+    },
+    "device": {
+      "deviceName": "N86",
+      "marketingName": "N86",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.6
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "QQ Browser",
+      "modus": null,
+      "version": "2.0.0",
+      "manufacturer": "tencent",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "symbian-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/4.0 (compatible; MSIE 5.0; Series60/2.8 NokiaN90-1/2.0521.1.5 Profile/MIDP-2.0 Configuration/CLDC-1.1)"
     },
     "device": {
@@ -3730,44 +3768,6 @@
     "device": {
       "deviceName": "3120",
       "marketingName": "3120",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "display": {
-        "width": 128,
-        "height": 128,
-        "touch": false,
-        "size": 1.6
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "NOKIA-3120B"
-    },
-    "device": {
-      "deviceName": "3120b",
-      "marketingName": "3120b",
       "manufacturer": "nokia",
       "brand": "nokia",
       "display": {
