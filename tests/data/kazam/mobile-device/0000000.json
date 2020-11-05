@@ -226,5 +226,43 @@
       "version": "80.0.3987.149",
       "manufacturer": "google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Mobile; Windows Phone 8.1; Android 4.0; ARM; Trident/7.0; Touch; rv:11.0; IEMobile/11.0; KAZAM; Thunder 450W) like iPhone OS 7_0_3 Mac OS X AppleWebKit/537 (KHTML, like Gecko) Mobile Safari/537"
+    },
+    "device": {
+      "deviceName": "general KAZAM device",
+      "marketingName": "general KAZAM device",
+      "manufacturer": "kazam",
+      "brand": "kazam",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device"
+    },
+    "browser": {
+      "name": "IEMobile",
+      "modus": null,
+      "version": "11.0.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Trident",
+      "version": "7.0.0",
+      "manufacturer": "microsoft"
+    }
   }
 ]

@@ -720,5 +720,43 @@
       "version": null,
       "manufacturer": "apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; U1006) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.110 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "U100",
+      "marketingName": "U100",
+      "manufacturer": "uhans",
+      "brand": "uhans",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 4.7
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "86.0.4240.110",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "86.0.4240.110",
+      "manufacturer": "google"
+    }
   }
 ]

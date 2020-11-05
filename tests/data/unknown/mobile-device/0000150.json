@@ -2734,5 +2734,233 @@
       "version": null,
       "manufacturer": "apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Deezer/5.4.19.9 (Android; 7.0; Mobile; fr) Maze Alpha"
+    },
+    "device": {
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device"
+    },
+    "browser": {
+      "name": "Deezer",
+      "modus": null,
+      "version": "5.4.19.9",
+      "manufacturer": "deezer",
+      "bits": null,
+      "type": "multimedia-player"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "PodcastAddict/v5 (+https://podcastaddict.com/; Android podcast app)"
+    },
+    "device": {
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": null,
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": null,
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "osiris/2.0.0"
+    },
+    "device": {
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "osiris/2.0"
+    },
+    "device": {
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/9.80 (Android; Opera Mini/39.1.2254/187.21; U; de) Presto/2.12.423 Version/12.16"
+    },
+    "device": {
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device"
+    },
+    "browser": {
+      "name": "Opera Mini",
+      "modus": null,
+      "version": "39.1.2254",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": null,
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.12.423",
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.96 Safari/537.36 (Ecosia android@78.0.3904.96) comdirect/1.0 (appVersion:20.10.2;deviceType:desktop)"
+    },
+    "device": {
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device"
+    },
+    "browser": {
+      "name": "Ecosia",
+      "modus": null,
+      "version": "78.0.3904.96",
+      "manufacturer": "unknown",
+      "bits": 64,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": null,
+      "manufacturer": "google",
+      "bits": 64
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "78.0.3904.96",
+      "manufacturer": "google"
+    }
   }
 ]

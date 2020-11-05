@@ -796,5 +796,43 @@
       "version": "0.8.0",
       "manufacturer": "ucweb"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Mobile; Windows Phone 8.1; Android 4.0; ARM; Trident/7.0; Touch; rv:11.0; IEMobile/11.0; HIGHSCREEN; WinWin) like iPhone OS 7_0_3 Mac OS X AppleWebKit/537 (KHTML, like Gecko) Mobile Safari/537 UCBrowser/4.2.1.541 Mobile"
+    },
+    "device": {
+      "deviceName": "iphone",
+      "marketingName": "iphone",
+      "manufacturer": "xianghe",
+      "brand": "xianghe",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "4.2.1.541",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Trident",
+      "version": "7.0.0",
+      "manufacturer": "microsoft"
+    }
   }
 ]

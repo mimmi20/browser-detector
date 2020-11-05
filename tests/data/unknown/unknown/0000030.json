@@ -2164,5 +2164,157 @@
       "version": null,
       "manufacturer": "unknown"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "okhttp/4.9.0"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown"
+    },
+    "browser": {
+      "name": "okhttp",
+      "modus": null,
+      "version": "4.9.0",
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "bot"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Scrapy/2.3.0 (+https://scrapy.org)"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown"
+    },
+    "browser": {
+      "name": "Scrapy",
+      "modus": null,
+      "version": "2.3.0",
+      "manufacturer": "scrapy.org",
+      "bits": null,
+      "type": "bot"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; Gentoo; rv:83.0) Gecko/20100101 Firefox/83.0 comdirect/1.0 (appVersion:20.10.2;deviceType:desktop)"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown"
+    },
+    "browser": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "83.0.0",
+      "manufacturer": "mozilla-foundation",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Gentoo Linux",
+      "marketingName": "Gentoo Linux",
+      "version": null,
+      "manufacturer": "gentoo",
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "83.0.0",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/86.0.4240.96 Safari/537.36"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown"
+    },
+    "browser": {
+      "name": "Google Bot",
+      "modus": null,
+      "version": "2.1.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "bot"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "86.0.4240.96",
+      "manufacturer": "google"
+    }
   }
 ]
