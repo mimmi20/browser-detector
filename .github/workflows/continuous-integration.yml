@@ -26,7 +26,7 @@ jobs:
         uses: "actions/checkout@v2.3.4"
 
       - name: "Install PHP"
-        uses: "shivammathur/setup-php@2.8.0"
+        uses: "shivammathur/setup-php@2.9.0"
         with:
           php-version: "${{ matrix.php-versions }}"
           extensions: "json"
@@ -66,7 +66,7 @@ jobs:
         uses: "actions/checkout@v2.3.4"
 
       - name: "Install PHP"
-        uses: "shivammathur/setup-php@2.8.0"
+        uses: "shivammathur/setup-php@2.9.0"
         with:
           php-version: "${{ matrix.php-versions }}"
           extensions: "json"
@@ -111,7 +111,7 @@ jobs:
         uses: "actions/checkout@v2.3.4"
 
       - name: "Install PHP"
-        uses: "shivammathur/setup-php@2.8.0"
+        uses: "shivammathur/setup-php@2.9.0"
         with:
           php-version: "${{ matrix.php-versions }}"
           extensions: "json"
@@ -162,7 +162,7 @@ jobs:
         uses: "actions/checkout@v2.3.4"
 
       - name: "Install PHP"
-        uses: "shivammathur/setup-php@2.8.0"
+        uses: "shivammathur/setup-php@2.9.0"
         with:
           php-version: "${{ matrix.php-versions }}"
           extensions: "json"
@@ -212,7 +212,7 @@ jobs:
         uses: "actions/checkout@v2.3.4"
 
       - name: "Install PHP"
-        uses: "shivammathur/setup-php@2.8.0"
+        uses: "shivammathur/setup-php@2.9.0"
         with:
           php-version: "${{ matrix.php-versions }}"
           extensions: "json"
@@ -257,7 +257,7 @@ jobs:
         uses: "actions/checkout@v2.3.4"
 
       - name: "Install PHP"
-        uses: "shivammathur/setup-php@2.8.0"
+        uses: "shivammathur/setup-php@2.9.0"
         with:
           php-version: "${{ matrix.php-versions }}"
           extensions: "json"
@@ -315,7 +315,7 @@ jobs:
         uses: "actions/checkout@v2.3.4"
 
       - name: "Install PHP"
-        uses: "shivammathur/setup-php@2.8.0"
+        uses: "shivammathur/setup-php@2.9.0"
         with:
           php-version: "${{ matrix.php-versions }}"
           extensions: "json" #optional
