@@ -29,6 +29,9 @@ updates:
       - dependency-name: symfony/finder
         versions:
           - ">= 0"
+      - dependency-name: laminas/laminas-diactoros
+        versions:
+          - ">= 0"
     commit-message:
       include: "scope"
       prefix: "Build"
