@@ -8,31 +8,31 @@ exclude-labels:
   - invalid
   - wontfix
 categories:
-  - title: '**💥Breaking:**'
+  - title: '**💥 Breaking:**'
     labels:
       - 'BC Break'
-  - title: '**🍰Enhancements:**'
+  - title: '**🍰 Enhancements:**'
     labels:
       - 'enhancement'
-  - title: '**🐞Bugs:**'
+  - title: '**🐞 Bugs:**'
     labels:
       - 'bug'
-  - title: '**💀Deprecated:**'
+  - title: '**💀 Deprecated:**'
     labels:
       - 'deprecated'
-  - title: '**🗑Removed:**'
+  - title: '**🗑 Removed:**'
     labels:
       - 'removed'
-  - title: '**🛡Security:**'
+  - title: '**🛡 Security:**'
     labels:
       - 'security'
-  - title: '**🕸Dependencies:**'
+  - title: '**🕸 Dependencies:**'
     labels:
       - 'dependencies'
   - title: '**🧹 Maintenance:**'
     labels:
       - 'maintenance'
-  # other Labels to mimmi20/browscap-helper
-  - title: '**📦 new Useragents:**'
+  # other Labels to mimmi20/BrowserDetector
+  - title: '**📦 Documentation:**'
     labels:
-      - 'new useragents'
+      - 'documentation'
