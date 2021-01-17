@@ -38,7 +38,7 @@ jobs:
           deprecatedLabel: "**💀Deprecated:**"
           removedLabel: "**🗑Removed:**"
           securityLabel: "**🛡Security:**"
-          addSections: '{"dependencies":{"prefix":"**🕸Dependencies:**","labels":["dependencies"]}, "maintenance":{"prefix":"**🧹 Maintenance:**","labels":["maintenance"]}, "new useragents": {"prefix":"**📦 new Useragents:**","labels":["new useragents"]}}'
+          addSections: '{"dependencies":{"prefix":"**🕸Dependencies:**","labels":["dependencies"]}, "maintenance":{"prefix":"**🧹 Maintenance:**","labels":["maintenance"]}, "documentation": {"prefix":"**📦 Documentation:**","labels":["documentation"]}}'
           stripGeneratorNotice: true
           author: true
           usernamesAsGithubLogins: true
