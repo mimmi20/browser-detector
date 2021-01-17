@@ -1,0 +1,38 @@
+template: |
+  ## What’s Changed
+
+  $CHANGES
+exclude-labels:
+  - duplicate
+  - question
+  - invalid
+  - wontfix
+categories:
+  - title: '**💥Breaking:**'
+    labels:
+      - 'BC Break'
+  - title: '**🍰Enhancements:**'
+    labels:
+      - 'enhancement'
+  - title: '**🐞Bugs:**'
+    labels:
+      - 'bug'
+  - title: '**💀Deprecated:**'
+    labels:
+      - 'deprecated'
+  - title: '**🗑Removed:**'
+    labels:
+      - 'removed'
+  - title: '**🛡Security:**'
+    labels:
+      - 'security'
+  - title: '**🕸Dependencies:**'
+    labels:
+      - 'dependencies'
+  - title: '**🧹 Maintenance:**'
+    labels:
+      - 'maintenance'
+  # other Labels to mimmi20/browscap-helper
+  - title: '**📦 new Useragents:**'
+    labels:
+      - 'new useragents'
