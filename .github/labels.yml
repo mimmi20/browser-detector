@@ -1,0 +1,85 @@
+---
+# Default GitHub labels
+- color: ee0701
+  name: "bug"
+  description: "Something isn't working"
+- color: cccccc
+  name: "duplicate"
+  description: "This issue or pull request already exists"
+- color: a2eeef
+  name: "enhancement"
+  description: "New feature or request"
+- color: 7057ff
+  name: "good first issue"
+  description: "Good for newcomers"
+- color: 128a0c
+  name: "help wanted"
+  description: "Extra attention is needed"
+- color: e6e6e6
+  name: "invalid"
+  description: "This doesn't seem right"
+- color: cc317c
+  name: "question"
+  description: "Further information is requested"
+- color: ffffff
+  name: "wontfix"
+  description: "This will not be worked on"
+
+# other Labels to all mimmi20 repos
+- color: 0025ff
+  name: "dependencies"
+  description: "Pull requests that update a dependency file"
+- color: f9d0c4
+  name: "stale"
+  description: "no activity"
+- color: b60205
+  name: "BC Break"
+  description: ""
+- color: f4e99c
+  name: "maintenance"
+  description: "Maintenance"
+- color: fbca04
+  name: "wishlist"
+  description: ""
+- color: d1260f
+  name: "security"
+  description: ""
+- color: e6e6e6
+  name: "removed"
+  description: ""
+- color: b60205
+  name: "deprecated"
+  description: ""
+
+# other Labels to mimmi20/BrowserDetector
+- color: b0b1fc
+  name: "new browser"
+  description: ""
+- color: bfdadc
+  name: "new device"
+  description: ""
+- color: dcffb2
+  name: "new engine"
+  description: ""
+- color: 408c09
+  name: "new platform"
+  description: ""
+- color: e85f9c
+  name: "new test"
+  description: ""
+- color: 5319e7
+  name: "update browser"
+  description: ""
+- color: ed956d
+  name: "update device"
+  description: ""
+- color: e886e4
+  name: "update engine"
+  description: ""
+- color: fc445c
+  name: "update platform"
+  description: ""
+- color: e3ffaf
+  name: "update test"
+  description: ""
+
