@@ -11,17 +11,30 @@ on:
       - '*'
 
 jobs:
-  update_release_draft:
+  update-release-draft:
+
     runs-on: ubuntu-latest
+
     steps:
       # Drafts your next Release notes as Pull Requests are merged into "master"
-      - name: Release Drafter
-        uses: release-drafter/release-drafter@v5.6.1
+      - name: "Release Drafter"
+        uses: "release-drafter/release-drafter@v5.6.1"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Changelog Generator
-        uses: heinrichreimer/github-changelog-generator-action@v2.1.1
+  generate-changelog:
+    name: "Generate Changelog"
+
+    needs: "update-release-draft"
+
+    runs-on: "ubuntu-latest"
+
+    steps:
+      - name: "Checkout"
+        uses: "actions/checkout@v2.3.4"
+
+      - name: "Changelog Generator"
+        uses: "heinrichreimer/github-changelog-generator-action@v2.1.1"
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           output: CHANGELOG.md
@@ -31,19 +44,18 @@ jobs:
           pullRequests: true
           prWoLabels: true
           unreleased: true
-          breakingLabel: "**💥Breaking:**"
+          breakingLabel: "## **💥 Breaking:**"
           breakingLabels: 'BC Break'
-          enhancementLabel: "**🍰Enhancements:**"
-          bugsLabel: "**🐞Bugs:**"
-          deprecatedLabel: "**💀Deprecated:**"
-          removedLabel: "**🗑Removed:**"
-          securityLabel: "**🛡Security:**"
-          addSections: '{"dependencies":{"prefix":"**🕸Dependencies:**","labels":["dependencies"]}, "maintenance":{"prefix":"**🧹 Maintenance:**","labels":["maintenance"]}, "documentation": {"prefix":"**📦 Documentation:**","labels":["documentation"]}}'
+          enhancementLabel: "## **🍰 Enhancements:**"
+          bugsLabel: "## **🐞 Bugs:**"
+          deprecatedLabel: "## **💀 Deprecated:**"
+          removedLabel: "## **🗑 Removed:**"
+          securityLabel: "## **🛡 Security:**"
+          addSections: '{"dependencies":{"prefix":"##**🕸Dependencies:**","labels":["dependencies"]},"maintenance":{"prefix":"##**🧹Maintenance:**","labels":["maintenance"]},"documentation":{"prefix":"##**📦Documentation:**","labels":["documentation"]}}'
           stripGeneratorNotice: true
           author: true
           usernamesAsGithubLogins: true
           httpCache: false
           filterByMilestone: false
           verbose: true
-          compareLink: true
-          exclude-labels: 'duplicate,question,invalid,wontfix'
+          excludeLabels: 'duplicate,question,invalid,wontfix'
