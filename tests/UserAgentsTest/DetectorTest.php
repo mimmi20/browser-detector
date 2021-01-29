@@ -71,20 +71,50 @@ final class DetectorTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $cache = $this->getMockBuilder(CacheInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
-        $cache
-            ->expects(self::any())
-            ->method('has')
-            ->willReturn(false);
-        $cache
-            ->expects(self::any())
-            ->method('set')
-            ->willReturn(false);
+        $cache = new Class implements CacheInterface
+        {
+            public function get($key, $default = null)
+            {
+                return null;
+            }
+
+            public function set($key, $value, $ttl = null): bool
+            {
+                return false;
+            }
+
+            public function delete($key): bool
+            {
+                return false;
+            }
+
+            public function clear(): bool
+            {
+                return false;
+            }
+
+            public function getMultiple($keys, $default = null):iterable
+            {
+                return [];
+            }
+
+            public function setMultiple($values, $ttl = null): bool
+            {
+                return false;
+            }
+
+            public function deleteMultiple($keys): bool
+            {
+                return false;
+            }
+
+            public function has($key): bool
+            {
+                return false;
+            }
+        };
 
         \assert($logger instanceof LoggerInterface);
-        \assert($cache instanceof CacheInterface);
         $factory      = new DetectorFactory($cache, $logger);
         $this->object = $factory();
     }
