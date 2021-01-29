@@ -13,7 +13,6 @@ namespace BrowserDetectorTest\Loader;
 
 use BrowserDetector\Loader\BrowserLoader;
 use BrowserDetector\Loader\CompanyLoaderInterface;
-use BrowserDetector\Loader\Helper\Data;
 use BrowserDetector\Loader\Helper\DataInterface;
 use BrowserDetector\Loader\NotFoundException;
 use BrowserDetector\Parser\EngineParserInterface;
@@ -83,10 +82,10 @@ final class BrowserLoaderTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
 
-        /** @var \Psr\Log\LoggerInterface $logger */
-        /** @var CompanyLoaderInterface $companyLoader */
-        /** @var EngineParserInterface $engineParser */
-        /** @var Data $initData */
+        \assert($logger instanceof LoggerInterface);
+        \assert($companyLoader instanceof CompanyLoaderInterface);
+        \assert($engineParser instanceof EngineParserInterface);
+        \assert($initData instanceof DataInterface);
         $object = new BrowserLoader(
             $logger,
             $initData,
@@ -158,10 +157,10 @@ final class BrowserLoaderTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
 
-        /** @var \Psr\Log\LoggerInterface $logger */
-        /** @var CompanyLoaderInterface $companyLoader */
-        /** @var EngineParserInterface $engineParser */
-        /** @var Data $initData */
+        \assert($logger instanceof LoggerInterface);
+        \assert($companyLoader instanceof CompanyLoaderInterface);
+        \assert($engineParser instanceof EngineParserInterface);
+        \assert($initData instanceof DataInterface);
         $object = new BrowserLoader(
             $logger,
             $initData,
@@ -247,10 +246,10 @@ final class BrowserLoaderTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
 
-        /** @var \Psr\Log\LoggerInterface $logger */
-        /** @var CompanyLoaderInterface $companyLoader */
-        /** @var EngineParserInterface $engineParser */
-        /** @var Data $initData */
+        \assert($logger instanceof LoggerInterface);
+        \assert($companyLoader instanceof CompanyLoaderInterface);
+        \assert($engineParser instanceof EngineParserInterface);
+        \assert($initData instanceof DataInterface);
         $object = new BrowserLoader(
             $logger,
             $initData,
@@ -342,10 +341,10 @@ final class BrowserLoaderTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
 
-        /** @var \Psr\Log\LoggerInterface $logger */
-        /** @var CompanyLoaderInterface $companyLoader */
-        /** @var EngineParserInterface $engineParser */
-        /** @var Data $initData */
+        \assert($logger instanceof LoggerInterface);
+        \assert($companyLoader instanceof CompanyLoaderInterface);
+        \assert($engineParser instanceof EngineParserInterface);
+        \assert($initData instanceof DataInterface);
         $object = new BrowserLoader(
             $logger,
             $initData,
@@ -446,10 +445,10 @@ final class BrowserLoaderTest extends TestCase
             ->with($engineKey, $useragent)
             ->willThrowException($exception);
 
-        /** @var \Psr\Log\LoggerInterface $logger */
-        /** @var CompanyLoaderInterface $companyLoader */
-        /** @var EngineParserInterface $engineParser */
-        /** @var Data $initData */
+        \assert($logger instanceof LoggerInterface);
+        \assert($companyLoader instanceof CompanyLoaderInterface);
+        \assert($engineParser instanceof EngineParserInterface);
+        \assert($initData instanceof DataInterface);
         $object = new BrowserLoader(
             $logger,
             $initData,
@@ -538,10 +537,10 @@ final class BrowserLoaderTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
 
-        /** @var \Psr\Log\LoggerInterface $logger */
-        /** @var CompanyLoaderInterface $companyLoader */
-        /** @var EngineParserInterface $engineParser */
-        /** @var Data $initData */
+        \assert($logger instanceof LoggerInterface);
+        \assert($companyLoader instanceof CompanyLoaderInterface);
+        \assert($engineParser instanceof EngineParserInterface);
+        \assert($initData instanceof DataInterface);
         $object = new BrowserLoader(
             $logger,
             $initData,

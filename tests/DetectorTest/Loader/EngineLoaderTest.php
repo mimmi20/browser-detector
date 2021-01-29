@@ -11,7 +11,6 @@
 declare(strict_types = 1);
 namespace BrowserDetectorTest\Loader;
 
-use BrowserDetector\Loader\CompanyLoader;
 use BrowserDetector\Loader\CompanyLoaderInterface;
 use BrowserDetector\Loader\EngineLoader;
 use BrowserDetector\Loader\Helper\DataInterface;
@@ -83,9 +82,9 @@ final class EngineLoaderTest extends TestCase
             ->expects(self::never())
             ->method('load');
 
-        /** @var \Psr\Log\LoggerInterface $logger */
-        /** @var \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader */
-        /** @var \BrowserDetector\Loader\Helper\DataInterface $initData */
+        \assert($logger instanceof LoggerInterface);
+        \assert($companyLoader instanceof CompanyLoaderInterface);
+        \assert($initData instanceof DataInterface);
         $object = new EngineLoader(
             $logger,
             $initData,
@@ -156,9 +155,9 @@ final class EngineLoaderTest extends TestCase
             ->expects(self::never())
             ->method('load');
 
-        /** @var \Psr\Log\LoggerInterface $logger */
-        /** @var \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader */
-        /** @var \BrowserDetector\Loader\Helper\DataInterface $initData */
+        \assert($logger instanceof LoggerInterface);
+        \assert($companyLoader instanceof CompanyLoaderInterface);
+        \assert($initData instanceof DataInterface);
         $object = new EngineLoader(
             $logger,
             $initData,
@@ -244,9 +243,9 @@ final class EngineLoaderTest extends TestCase
             ->with('unknown')
             ->willReturn($company);
 
-        /** @var \Psr\Log\LoggerInterface $logger */
-        /** @var \BrowserDetector\Loader\CompanyLoader $companyLoader */
-        /** @var \BrowserDetector\Loader\Helper\DataInterface $initData */
+        \assert($logger instanceof LoggerInterface);
+        \assert($companyLoader instanceof CompanyLoaderInterface);
+        \assert($initData instanceof DataInterface);
         $object = new EngineLoader(
             $logger,
             $initData,
@@ -331,9 +330,9 @@ final class EngineLoaderTest extends TestCase
             ->with('unknown')
             ->willReturn($company);
 
-        /** @var \Psr\Log\LoggerInterface $logger */
-        /** @var CompanyLoader $companyLoader */
-        /** @var DataInterface $initData */
+        \assert($logger instanceof LoggerInterface);
+        \assert($companyLoader instanceof CompanyLoaderInterface);
+        \assert($initData instanceof DataInterface);
         $object = new EngineLoader(
             $logger,
             $initData,
@@ -419,9 +418,9 @@ final class EngineLoaderTest extends TestCase
             ->with('unknown')
             ->willReturn($company);
 
-        /** @var \Psr\Log\LoggerInterface $logger */
-        /** @var CompanyLoader $companyLoader */
-        /** @var DataInterface $initData */
+        \assert($logger instanceof LoggerInterface);
+        \assert($companyLoader instanceof CompanyLoaderInterface);
+        \assert($initData instanceof DataInterface);
         $object = new EngineLoader(
             $logger,
             $initData,

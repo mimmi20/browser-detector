@@ -60,8 +60,8 @@ final class EngineParserTest extends TestCase
             ->method('parseFile')
             ->willReturn($mode);
 
-        /** @var \BrowserDetector\Loader\EngineLoaderFactoryInterface $loaderFactory */
-        /** @var \BrowserDetector\Parser\Helper\RulefileParserInterface $fileParser */
+        \assert($loaderFactory instanceof EngineLoaderFactoryInterface);
+        \assert($fileParser instanceof RulefileParserInterface);
         $parser       = new EngineParser($loaderFactory, $fileParser);
         $parserResult = $parser->parse($useragent);
 

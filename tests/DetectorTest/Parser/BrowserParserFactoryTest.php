@@ -37,10 +37,10 @@ final class BrowserParserFactoryTest extends TestCase
         $companyLoader = $this->createMock(CompanyLoaderInterface::class);
         $engineParser  = $this->createMock(EngineParserInterface::class);
 
-        /** @var \Psr\Log\LoggerInterface $logger */
-        /** @var \JsonClass\JsonInterface $jsonParser */
-        /** @var \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader */
-        /** @var \BrowserDetector\Parser\EngineParserInterface $engineParser */
+        \assert($logger instanceof LoggerInterface);
+        \assert($jsonParser instanceof JsonInterface);
+        \assert($companyLoader instanceof CompanyLoaderInterface);
+        \assert($engineParser instanceof EngineParserInterface);
         $factory = new BrowserParserFactory($logger, $jsonParser, $companyLoader, $engineParser);
 
         $parser = $factory();

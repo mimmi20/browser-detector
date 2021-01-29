@@ -47,8 +47,8 @@ final class CompanyLoaderFactoryTest extends TestCase
             ->with(CompanyLoaderFactory::DATA_PATH, 'json')
             ->willReturn($iterator);
 
-        /** @var \JsonClass\JsonInterface $jsonParser */
-        /** @var \BrowserDetector\Loader\Helper\FilterInterface $filter */
+        \assert($jsonParser instanceof JsonInterface);
+        \assert($filter instanceof FilterInterface);
         $factory = new CompanyLoaderFactory($jsonParser, $filter);
         $object  = $factory();
 

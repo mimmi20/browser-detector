@@ -67,7 +67,7 @@ final class MicrosoftInternetExplorerTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        /** @var LoggerInterface $logger */
+        \assert($logger instanceof LoggerInterface);
         $object = new MicrosoftInternetExplorer($logger, new VersionFactory(), new Trident($logger, new VersionFactory()));
 
         $detectedVersion = $object->detectVersion($useragent);
@@ -171,9 +171,9 @@ final class MicrosoftInternetExplorerTest extends TestCase
             ->with($useragent)
             ->willReturn(new Version('8', '0'));
 
-        /** @var LoggerInterface $logger */
-        /** @var VersionFactoryInterface $versionFactory */
-        /** @var VersionDetectorInterface $trident */
+        \assert($logger instanceof LoggerInterface);
+        \assert($versionFactory instanceof VersionFactoryInterface);
+        \assert($trident instanceof VersionDetectorInterface);
         $object = new MicrosoftInternetExplorer($logger, $versionFactory, $trident);
 
         $detectedVersion = $object->detectVersion($useragent);
@@ -237,9 +237,9 @@ final class MicrosoftInternetExplorerTest extends TestCase
             ->with($useragent)
             ->willReturn(new NullVersion());
 
-        /** @var LoggerInterface $logger */
-        /** @var VersionFactoryInterface $versionFactory */
-        /** @var VersionDetectorInterface $trident */
+        \assert($logger instanceof LoggerInterface);
+        \assert($versionFactory instanceof VersionFactoryInterface);
+        \assert($trident instanceof VersionDetectorInterface);
         $object = new MicrosoftInternetExplorer($logger, $versionFactory, $trident);
 
         $detectedVersion = $object->detectVersion($useragent);

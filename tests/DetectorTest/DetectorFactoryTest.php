@@ -15,8 +15,7 @@ use BrowserDetector\Detector;
 use BrowserDetector\DetectorFactory;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
-use Symfony\Component\Cache\Adapter\FilesystemAdapter;
-use Symfony\Component\Cache\Psr16Cache;
+use Psr\SimpleCache\CacheInterface;
 
 final class DetectorFactoryTest extends TestCase
 {
@@ -53,10 +52,11 @@ final class DetectorFactoryTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $cache = new FilesystemAdapter('', 0, 'cache/');
+        $cache = $this->createMock(CacheInterface::class);
 
-        /** @var \Psr\Log\LoggerInterface $logger */
-        $factory = new DetectorFactory(new Psr16Cache($cache), $logger);
+        \assert($logger instanceof LoggerInterface);
+        \assert($cache instanceof CacheInterface);
+        $factory = new DetectorFactory($cache, $logger);
         $object  = $factory();
 
         self::assertInstanceOf(Detector::class, $object);

@@ -139,13 +139,13 @@ final class DetectorTest extends TestCase
             ->with($useragent)
             ->willReturn($normalizedUseragent);
 
-        /** @var \Psr\Log\LoggerInterface $logger */
-        /** @var CacheInterface $cache */
-        /** @var DeviceParserInterface $deviceParser */
-        /** @var PlatformParserInterface $platformParser */
-        /** @var BrowserParserInterface $browserParser */
-        /** @var EngineParserInterface $engineParser */
-        /** @var NormalizerInterface $normalizer */
+        \assert($logger instanceof LoggerInterface);
+        \assert($cache instanceof CacheInterface);
+        \assert($deviceParser instanceof DeviceParserInterface);
+        \assert($platformParser instanceof PlatformParserInterface);
+        \assert($browserParser instanceof BrowserParserInterface);
+        \assert($engineParser instanceof EngineParserInterface);
+        \assert($normalizer instanceof NormalizerInterface);
         $object = new Detector(
             $logger,
             $cache,
@@ -273,13 +273,13 @@ final class DetectorTest extends TestCase
             ->with($useragent)
             ->willReturn($normalizedUseragent);
 
-        /** @var \Psr\Log\LoggerInterface $logger */
-        /** @var CacheInterface $cache */
-        /** @var DeviceParserInterface $deviceParser */
-        /** @var PlatformParserInterface $platformParser */
-        /** @var BrowserParserInterface $browserParser */
-        /** @var EngineParserInterface $engineParser */
-        /** @var NormalizerInterface $normalizer */
+        \assert($logger instanceof LoggerInterface);
+        \assert($cache instanceof CacheInterface);
+        \assert($deviceParser instanceof DeviceParserInterface);
+        \assert($platformParser instanceof PlatformParserInterface);
+        \assert($browserParser instanceof BrowserParserInterface);
+        \assert($engineParser instanceof EngineParserInterface);
+        \assert($normalizer instanceof NormalizerInterface);
         $object = new Detector(
             $logger,
             $cache,
@@ -400,13 +400,13 @@ final class DetectorTest extends TestCase
             ->expects(self::never())
             ->method('normalize');
 
-        /** @var \Psr\Log\LoggerInterface $logger */
-        /** @var CacheInterface $cache */
-        /** @var DeviceParserInterface $deviceParser */
-        /** @var PlatformParserInterface $platformParser */
-        /** @var BrowserParserInterface $browserParser */
-        /** @var EngineParserInterface $engineParser */
-        /** @var NormalizerInterface $normalizer */
+        \assert($logger instanceof LoggerInterface);
+        \assert($cache instanceof CacheInterface);
+        \assert($deviceParser instanceof DeviceParserInterface);
+        \assert($platformParser instanceof PlatformParserInterface);
+        \assert($browserParser instanceof BrowserParserInterface);
+        \assert($engineParser instanceof EngineParserInterface);
+        \assert($normalizer instanceof NormalizerInterface);
         $object = new Detector(
             $logger,
             $cache,
@@ -522,13 +522,13 @@ final class DetectorTest extends TestCase
             ->expects(self::never())
             ->method('normalize');
 
-        /** @var \Psr\Log\LoggerInterface $logger */
-        /** @var CacheInterface $cache */
-        /** @var DeviceParserInterface $deviceParser */
-        /** @var PlatformParserInterface $platformParser */
-        /** @var BrowserParserInterface $browserParser */
-        /** @var EngineParserInterface $engineParser */
-        /** @var NormalizerInterface $normalizer */
+        \assert($logger instanceof LoggerInterface);
+        \assert($cache instanceof CacheInterface);
+        \assert($deviceParser instanceof DeviceParserInterface);
+        \assert($platformParser instanceof PlatformParserInterface);
+        \assert($browserParser instanceof BrowserParserInterface);
+        \assert($engineParser instanceof EngineParserInterface);
+        \assert($normalizer instanceof NormalizerInterface);
         $object = new Detector(
             $logger,
             $cache,
@@ -652,13 +652,13 @@ final class DetectorTest extends TestCase
             ->with($useragent)
             ->willReturn($normalizedUseragent);
 
-        /** @var \Psr\Log\LoggerInterface $logger */
-        /** @var CacheInterface $cache */
-        /** @var DeviceParserInterface $deviceParser */
-        /** @var PlatformParserInterface $platformParser */
-        /** @var BrowserParserInterface $browserParser */
-        /** @var EngineParserInterface $engineParser */
-        /** @var NormalizerInterface $normalizer */
+        \assert($logger instanceof LoggerInterface);
+        \assert($cache instanceof CacheInterface);
+        \assert($deviceParser instanceof DeviceParserInterface);
+        \assert($platformParser instanceof PlatformParserInterface);
+        \assert($browserParser instanceof BrowserParserInterface);
+        \assert($engineParser instanceof EngineParserInterface);
+        \assert($normalizer instanceof NormalizerInterface);
         $object = new Detector(
             $logger,
             $cache,
@@ -786,13 +786,13 @@ final class DetectorTest extends TestCase
             ->with($useragent)
             ->willReturn($normalizedUseragent);
 
-        /** @var \Psr\Log\LoggerInterface $logger */
-        /** @var CacheInterface $cache */
-        /** @var DeviceParserInterface $deviceParser */
-        /** @var PlatformParserInterface $platformParser */
-        /** @var BrowserParserInterface $browserParser */
-        /** @var EngineParserInterface $engineParser */
-        /** @var NormalizerInterface $normalizer */
+        \assert($logger instanceof LoggerInterface);
+        \assert($cache instanceof CacheInterface);
+        \assert($deviceParser instanceof DeviceParserInterface);
+        \assert($platformParser instanceof PlatformParserInterface);
+        \assert($browserParser instanceof BrowserParserInterface);
+        \assert($engineParser instanceof EngineParserInterface);
+        \assert($normalizer instanceof NormalizerInterface);
         $object = new Detector(
             $logger,
             $cache,
@@ -924,13 +924,13 @@ final class DetectorTest extends TestCase
             ->with($useragent)
             ->willReturn($normalizedUseragent);
 
-        /** @var \Psr\Log\LoggerInterface $logger */
-        /** @var CacheInterface $cache */
-        /** @var DeviceParserInterface $deviceParser */
-        /** @var PlatformParserInterface $platformParser */
-        /** @var BrowserParserInterface $browserParser */
-        /** @var EngineParserInterface $engineParser */
-        /** @var NormalizerInterface $normalizer */
+        \assert($logger instanceof LoggerInterface);
+        \assert($cache instanceof CacheInterface);
+        \assert($deviceParser instanceof DeviceParserInterface);
+        \assert($platformParser instanceof PlatformParserInterface);
+        \assert($browserParser instanceof BrowserParserInterface);
+        \assert($engineParser instanceof EngineParserInterface);
+        \assert($normalizer instanceof NormalizerInterface);
         $object = new Detector(
             $logger,
             $cache,
@@ -1060,13 +1060,13 @@ final class DetectorTest extends TestCase
             ->with($useragent)
             ->willReturn($normalizedUseragent);
 
-        /** @var \Psr\Log\LoggerInterface $logger */
-        /** @var CacheInterface $cache */
-        /** @var DeviceParserInterface $deviceParser */
-        /** @var PlatformParserInterface $platformParser */
-        /** @var BrowserParserInterface $browserParser */
-        /** @var EngineParserInterface $engineParser */
-        /** @var NormalizerInterface $normalizer */
+        \assert($logger instanceof LoggerInterface);
+        \assert($cache instanceof CacheInterface);
+        \assert($deviceParser instanceof DeviceParserInterface);
+        \assert($platformParser instanceof PlatformParserInterface);
+        \assert($browserParser instanceof BrowserParserInterface);
+        \assert($engineParser instanceof EngineParserInterface);
+        \assert($normalizer instanceof NormalizerInterface);
         $object = new Detector(
             $logger,
             $cache,
@@ -1195,13 +1195,13 @@ final class DetectorTest extends TestCase
             ->with($useragent)
             ->willReturn($normalizedUseragent);
 
-        /** @var \Psr\Log\LoggerInterface $logger */
-        /** @var CacheInterface $cache */
-        /** @var DeviceParserInterface $deviceParser */
-        /** @var PlatformParserInterface $platformParser */
-        /** @var BrowserParserInterface $browserParser */
-        /** @var EngineParserInterface $engineParser */
-        /** @var NormalizerInterface $normalizer */
+        \assert($logger instanceof LoggerInterface);
+        \assert($cache instanceof CacheInterface);
+        \assert($deviceParser instanceof DeviceParserInterface);
+        \assert($platformParser instanceof PlatformParserInterface);
+        \assert($browserParser instanceof BrowserParserInterface);
+        \assert($engineParser instanceof EngineParserInterface);
+        \assert($normalizer instanceof NormalizerInterface);
         $object = new Detector(
             $logger,
             $cache,
@@ -1343,13 +1343,13 @@ final class DetectorTest extends TestCase
             ->with($useragent)
             ->willReturn($normalizedUseragent);
 
-        /** @var \Psr\Log\LoggerInterface $logger */
-        /** @var CacheInterface $cache */
-        /** @var DeviceParserInterface $deviceParser */
-        /** @var PlatformParserInterface $platformParser */
-        /** @var BrowserParserInterface $browserParser */
-        /** @var EngineParserInterface $engineParser */
-        /** @var NormalizerInterface $normalizer */
+        \assert($logger instanceof LoggerInterface);
+        \assert($cache instanceof CacheInterface);
+        \assert($deviceParser instanceof DeviceParserInterface);
+        \assert($platformParser instanceof PlatformParserInterface);
+        \assert($browserParser instanceof BrowserParserInterface);
+        \assert($engineParser instanceof EngineParserInterface);
+        \assert($normalizer instanceof NormalizerInterface);
         $object = new Detector(
             $logger,
             $cache,
@@ -1487,13 +1487,13 @@ final class DetectorTest extends TestCase
             ->with($useragent)
             ->willReturn($normalizedUseragent);
 
-        /** @var \Psr\Log\LoggerInterface $logger */
-        /** @var CacheInterface $cache */
-        /** @var DeviceParserInterface $deviceParser */
-        /** @var PlatformParserInterface $platformParser */
-        /** @var BrowserParserInterface $browserParser */
-        /** @var EngineParserInterface $engineParser */
-        /** @var NormalizerInterface $normalizer */
+        \assert($logger instanceof LoggerInterface);
+        \assert($cache instanceof CacheInterface);
+        \assert($deviceParser instanceof DeviceParserInterface);
+        \assert($platformParser instanceof PlatformParserInterface);
+        \assert($browserParser instanceof BrowserParserInterface);
+        \assert($engineParser instanceof EngineParserInterface);
+        \assert($normalizer instanceof NormalizerInterface);
         $object = new Detector(
             $logger,
             $cache,
@@ -1640,13 +1640,13 @@ final class DetectorTest extends TestCase
             ->with($useragent)
             ->willReturn($normalizedUseragent);
 
-        /** @var \Psr\Log\LoggerInterface $logger */
-        /** @var CacheInterface $cache */
-        /** @var DeviceParserInterface $deviceParser */
-        /** @var PlatformParserInterface $platformParser */
-        /** @var BrowserParserInterface $browserParser */
-        /** @var EngineParserInterface $engineParser */
-        /** @var NormalizerInterface $normalizer */
+        \assert($logger instanceof LoggerInterface);
+        \assert($cache instanceof CacheInterface);
+        \assert($deviceParser instanceof DeviceParserInterface);
+        \assert($platformParser instanceof PlatformParserInterface);
+        \assert($browserParser instanceof BrowserParserInterface);
+        \assert($engineParser instanceof EngineParserInterface);
+        \assert($normalizer instanceof NormalizerInterface);
         $object = new Detector(
             $logger,
             $cache,
@@ -1788,13 +1788,13 @@ final class DetectorTest extends TestCase
             ->with($useragent)
             ->willReturn($normalizedUseragent);
 
-        /** @var \Psr\Log\LoggerInterface $logger */
-        /** @var CacheInterface $cache */
-        /** @var DeviceParserInterface $deviceParser */
-        /** @var PlatformParserInterface $platformParser */
-        /** @var BrowserParserInterface $browserParser */
-        /** @var EngineParserInterface $engineParser */
-        /** @var NormalizerInterface $normalizer */
+        \assert($logger instanceof LoggerInterface);
+        \assert($cache instanceof CacheInterface);
+        \assert($deviceParser instanceof DeviceParserInterface);
+        \assert($platformParser instanceof PlatformParserInterface);
+        \assert($browserParser instanceof BrowserParserInterface);
+        \assert($engineParser instanceof EngineParserInterface);
+        \assert($normalizer instanceof NormalizerInterface);
         $object = new Detector(
             $logger,
             $cache,
@@ -1936,13 +1936,13 @@ final class DetectorTest extends TestCase
             ->with($useragent)
             ->willReturn($normalizedUseragent);
 
-        /** @var \Psr\Log\LoggerInterface $logger */
-        /** @var CacheInterface $cache */
-        /** @var DeviceParserInterface $deviceParser */
-        /** @var PlatformParserInterface $platformParser */
-        /** @var BrowserParserInterface $browserParser */
-        /** @var EngineParserInterface $engineParser */
-        /** @var NormalizerInterface $normalizer */
+        \assert($logger instanceof LoggerInterface);
+        \assert($cache instanceof CacheInterface);
+        \assert($deviceParser instanceof DeviceParserInterface);
+        \assert($platformParser instanceof PlatformParserInterface);
+        \assert($browserParser instanceof BrowserParserInterface);
+        \assert($engineParser instanceof EngineParserInterface);
+        \assert($normalizer instanceof NormalizerInterface);
         $object = new Detector(
             $logger,
             $cache,
@@ -2088,13 +2088,13 @@ final class DetectorTest extends TestCase
             ->with($useragent)
             ->willReturn($normalizedUseragent);
 
-        /** @var \Psr\Log\LoggerInterface $logger */
-        /** @var CacheInterface $cache */
-        /** @var DeviceParserInterface $deviceParser */
-        /** @var PlatformParserInterface $platformParser */
-        /** @var BrowserParserInterface $browserParser */
-        /** @var EngineParserInterface $engineParser */
-        /** @var NormalizerInterface $normalizer */
+        \assert($logger instanceof LoggerInterface);
+        \assert($cache instanceof CacheInterface);
+        \assert($deviceParser instanceof DeviceParserInterface);
+        \assert($platformParser instanceof PlatformParserInterface);
+        \assert($browserParser instanceof BrowserParserInterface);
+        \assert($engineParser instanceof EngineParserInterface);
+        \assert($normalizer instanceof NormalizerInterface);
         $object = new Detector(
             $logger,
             $cache,
@@ -2239,13 +2239,13 @@ final class DetectorTest extends TestCase
             ->with($useragent)
             ->willReturn($normalizedUseragent);
 
-        /** @var \Psr\Log\LoggerInterface $logger */
-        /** @var CacheInterface $cache */
-        /** @var DeviceParserInterface $deviceParser */
-        /** @var PlatformParserInterface $platformParser */
-        /** @var BrowserParserInterface $browserParser */
-        /** @var EngineParserInterface $engineParser */
-        /** @var NormalizerInterface $normalizer */
+        \assert($logger instanceof LoggerInterface);
+        \assert($cache instanceof CacheInterface);
+        \assert($deviceParser instanceof DeviceParserInterface);
+        \assert($platformParser instanceof PlatformParserInterface);
+        \assert($browserParser instanceof BrowserParserInterface);
+        \assert($engineParser instanceof EngineParserInterface);
+        \assert($normalizer instanceof NormalizerInterface);
         $object = new Detector(
             $logger,
             $cache,
@@ -2388,13 +2388,13 @@ final class DetectorTest extends TestCase
             ->with($useragent)
             ->willReturn($normalizedUseragent);
 
-        /** @var \Psr\Log\LoggerInterface $logger */
-        /** @var CacheInterface $cache */
-        /** @var DeviceParserInterface $deviceParser */
-        /** @var PlatformParserInterface $platformParser */
-        /** @var BrowserParserInterface $browserParser */
-        /** @var EngineParserInterface $engineParser */
-        /** @var NormalizerInterface $normalizer */
+        \assert($logger instanceof LoggerInterface);
+        \assert($cache instanceof CacheInterface);
+        \assert($deviceParser instanceof DeviceParserInterface);
+        \assert($platformParser instanceof PlatformParserInterface);
+        \assert($browserParser instanceof BrowserParserInterface);
+        \assert($engineParser instanceof EngineParserInterface);
+        \assert($normalizer instanceof NormalizerInterface);
         $object = new Detector(
             $logger,
             $cache,

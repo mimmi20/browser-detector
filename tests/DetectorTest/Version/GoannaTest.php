@@ -64,7 +64,7 @@ final class GoannaTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        /** @var LoggerInterface $logger */
+        \assert($logger instanceof LoggerInterface);
         $object = new Goanna($logger, new VersionFactory());
 
         $detectedVersion = $object->detectVersion($useragent);
@@ -147,8 +147,8 @@ final class GoannaTest extends TestCase
             ->with('3.3')
             ->willThrowException($exception);
 
-        /** @var LoggerInterface $logger */
-        /** @var VersionFactoryInterface $versionFactory */
+        \assert($logger instanceof LoggerInterface);
+        \assert($versionFactory instanceof VersionFactoryInterface);
         $object = new Goanna($logger, $versionFactory);
 
         $detectedVersion = $object->detectVersion($useragent);
@@ -203,8 +203,8 @@ final class GoannaTest extends TestCase
             ->with('3.0')
             ->willThrowException($exception);
 
-        /** @var LoggerInterface $logger */
-        /** @var VersionFactoryInterface $versionFactory */
+        \assert($logger instanceof LoggerInterface);
+        \assert($versionFactory instanceof VersionFactoryInterface);
         $object = new Goanna($logger, $versionFactory);
 
         $detectedVersion = $object->detectVersion($useragent);
@@ -259,8 +259,8 @@ final class GoannaTest extends TestCase
             ->with('1.0')
             ->willThrowException($exception);
 
-        /** @var LoggerInterface $logger */
-        /** @var VersionFactoryInterface $versionFactory */
+        \assert($logger instanceof LoggerInterface);
+        \assert($versionFactory instanceof VersionFactoryInterface);
         $object = new Goanna($logger, $versionFactory);
 
         $detectedVersion = $object->detectVersion($useragent);

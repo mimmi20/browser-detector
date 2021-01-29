@@ -64,7 +64,7 @@ final class TridentTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        /** @var LoggerInterface $logger */
+        \assert($logger instanceof LoggerInterface);
         $object = new Trident($logger, new VersionFactory());
 
         $detectedVersion = $object->detectVersion($useragent);
@@ -134,8 +134,8 @@ final class TridentTest extends TestCase
             ->with('7.0')
             ->willThrowException($exception);
 
-        /** @var LoggerInterface $logger */
-        /** @var VersionFactoryInterface $versionFactory */
+        \assert($logger instanceof LoggerInterface);
+        \assert($versionFactory instanceof VersionFactoryInterface);
         $object = new Trident($logger, $versionFactory);
 
         $detectedVersion = $object->detectVersion('Mozilla/5.0 (compatible;FW 2.0. 6868.p;FW 2.0. 7049.p; Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko');

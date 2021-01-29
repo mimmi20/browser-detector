@@ -61,11 +61,11 @@ final class DeviceLoaderFactoryTest extends TestCase
             ->with(DeviceLoaderFactory::DATA_PATH . $company, 'json')
             ->willReturn($iterator);
 
-        /** @var \Psr\Log\LoggerInterface $logger */
-        /** @var \JsonClass\JsonInterface $jsonParser */
-        /** @var \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader */
-        /** @var \BrowserDetector\Parser\PlatformParserInterface $platformParser */
-        /** @var \BrowserDetector\Loader\Helper\FilterInterface $filter */
+        \assert($logger instanceof LoggerInterface);
+        \assert($jsonParser instanceof JsonInterface);
+        \assert($companyLoader instanceof CompanyLoaderInterface);
+        \assert($platformParser instanceof PlatformParserInterface);
+        \assert($filter instanceof FilterInterface);
         $factory = new DeviceLoaderFactory($logger, $jsonParser, $companyLoader, $platformParser, $filter);
         $object  = $factory($company);
 

@@ -59,11 +59,11 @@ final class BrowserLoaderFactoryTest extends TestCase
             ->with(BrowserLoaderFactory::DATA_PATH, 'json')
             ->willReturn($iterator);
 
-        /** @var \Psr\Log\LoggerInterface $logger */
-        /** @var \JsonClass\JsonInterface $jsonParser */
-        /** @var \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader */
-        /** @var \BrowserDetector\Parser\EngineParserInterface $engineParser */
-        /** @var \BrowserDetector\Loader\Helper\FilterInterface $filter */
+        \assert($logger instanceof LoggerInterface);
+        \assert($jsonParser instanceof JsonInterface);
+        \assert($companyLoader instanceof CompanyLoaderInterface);
+        \assert($engineParser instanceof EngineParserInterface);
+        \assert($filter instanceof FilterInterface);
         $factory = new BrowserLoaderFactory($logger, $jsonParser, $companyLoader, $engineParser, $filter);
         $object  = $factory();
 

@@ -37,10 +37,10 @@ final class DeviceParserFactoryTest extends TestCase
         $companyLoader  = $this->createMock(CompanyLoaderInterface::class);
         $platformParser = $this->createMock(PlatformParserInterface::class);
 
-        /** @var \Psr\Log\LoggerInterface $logger */
-        /** @var \JsonClass\JsonInterface $jsonParser */
-        /** @var \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader */
-        /** @var \BrowserDetector\Parser\PlatformParserInterface $platformParser */
+        \assert($logger instanceof LoggerInterface);
+        \assert($jsonParser instanceof JsonInterface);
+        \assert($companyLoader instanceof CompanyLoaderInterface);
+        \assert($platformParser instanceof PlatformParserInterface);
         $factory = new DeviceParserFactory($logger, $jsonParser, $companyLoader, $platformParser);
 
         $parser = $factory();

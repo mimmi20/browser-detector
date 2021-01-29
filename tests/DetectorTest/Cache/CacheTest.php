@@ -13,8 +13,7 @@ namespace BrowserDetectorTest\Cache;
 
 use BrowserDetector\Cache\Cache;
 use PHPUnit\Framework\TestCase;
-use Symfony\Component\Cache\Adapter\ArrayAdapter;
-use Symfony\Component\Cache\Psr16Cache;
+use Psr\SimpleCache\CacheInterface;
 
 final class CacheTest extends TestCase
 {
@@ -27,11 +26,32 @@ final class CacheTest extends TestCase
      */
     public function testVersion(): void
     {
-        $adapter = new Psr16Cache(new ArrayAdapter());
-        $cache   = new Cache($adapter);
+        $version = 6012;
+        $cacheId = 'version';
 
-        $cache->setItem('version', 6012);
-        self::assertSame(6012, $cache->getItem('version'));
+        $adapter = $this->getMockBuilder(CacheInterface::class)
+            ->disableOriginalClone()
+            ->getMock();
+        $adapter
+            ->expects(self::once())
+            ->method('set')
+            ->with($cacheId, ['content' => serialize($version)])
+            ->willReturn(true);
+        $adapter
+            ->expects(self::once())
+            ->method('has')
+            ->with($cacheId)
+            ->willReturn(true);
+        $adapter
+            ->expects(self::once())
+            ->method('get')
+            ->with($cacheId)
+            ->willReturn(['content' => serialize($version)]);
+
+        $cache = new Cache($adapter);
+
+        $cache->setItem($cacheId, $version);
+        self::assertSame($version, $cache->getItem($cacheId));
     }
 
     /**
@@ -43,7 +63,7 @@ final class CacheTest extends TestCase
      */
     public function testHasNotItem(): void
     {
-        $adapter = $this->getMockBuilder(Psr16Cache::class)
+        $adapter = $this->getMockBuilder(CacheInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $adapter
@@ -60,7 +80,7 @@ final class CacheTest extends TestCase
             ->method('get')
             ->willReturn(null);
 
-        /** @var Psr16Cache $adapter */
+        \assert($adapter instanceof CacheInterface);
         $cache = new Cache($adapter);
 
         self::assertFalse($cache->setItem('version', 6012));
@@ -76,7 +96,7 @@ final class CacheTest extends TestCase
      */
     public function testHasNotItem2(): void
     {
-        $adapter = $this->getMockBuilder(Psr16Cache::class)
+        $adapter = $this->getMockBuilder(CacheInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $adapter
@@ -94,7 +114,7 @@ final class CacheTest extends TestCase
             ->with('version')
             ->willReturn(null);
 
-        /** @var Psr16Cache $adapter */
+        \assert($adapter instanceof CacheInterface);
         $cache = new Cache($adapter);
 
         self::assertFalse($cache->setItem('version', 6012));
@@ -110,7 +130,7 @@ final class CacheTest extends TestCase
      */
     public function testHasNotItem3(): void
     {
-        $adapter = $this->getMockBuilder(Psr16Cache::class)
+        $adapter = $this->getMockBuilder(CacheInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $adapter
@@ -127,7 +147,7 @@ final class CacheTest extends TestCase
             ->method('get')
             ->willReturn(null);
 
-        /** @var Psr16Cache $adapter */
+        \assert($adapter instanceof CacheInterface);
         $cache = new Cache($adapter);
 
         self::assertFalse($cache->hasItem('version'));

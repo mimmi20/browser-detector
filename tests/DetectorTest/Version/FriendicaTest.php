@@ -64,7 +64,7 @@ final class FriendicaTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        /** @var LoggerInterface $logger */
+        \assert($logger instanceof LoggerInterface);
         $object = new Friendica($logger, new VersionFactory());
 
         $detectedVersion = $object->detectVersion($useragent);
@@ -138,8 +138,8 @@ final class FriendicaTest extends TestCase
             ->with('3.3-1173')
             ->willThrowException($exception);
 
-        /** @var LoggerInterface $logger */
-        /** @var VersionFactoryInterface $versionFactory */
+        \assert($logger instanceof LoggerInterface);
+        \assert($versionFactory instanceof VersionFactoryInterface);
         $object = new Friendica($logger, $versionFactory);
 
         $detectedVersion = $object->detectVersion('Friendica \'Ginger\' 3.3-1173; http://social.romber.com.mx');

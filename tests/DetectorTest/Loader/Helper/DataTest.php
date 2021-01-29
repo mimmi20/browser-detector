@@ -81,8 +81,8 @@ final class DataTest extends TestCase
             ->with('{"key": "value"}', false, 512, 0)
             ->will(self::throwException(new DecodeErrorException(0, 'error', '')));
 
-        /** @var \Iterator $iterator */
-        /** @var \JsonClass\Json $jsonParser */
+        \assert($iterator instanceof \Iterator);
+        \assert($jsonParser instanceof JsonInterface);
         $object = new Data($iterator, $jsonParser);
 
         $this->expectException(\RuntimeException::class);
@@ -146,8 +146,8 @@ final class DataTest extends TestCase
             ->withConsecutive(['{"key": "value"}', false, 512, 0], ['{"key2": "value2"}', false, 512, 0])
             ->willReturnOnConsecutiveCalls([$key => $value, 'generic' => 'test', 'generic2' => 'test2'], ['generic' => 'test', 'generic2' => 'test2', 'new' => 'newValue']);
 
-        /** @var \Iterator $iterator */
-        /** @var \JsonClass\Json $jsonParser */
+        \assert($iterator instanceof \Iterator);
+        \assert($jsonParser instanceof JsonInterface);
         $object = new Data($iterator, $jsonParser);
 
         $object();

@@ -54,10 +54,10 @@ final class PlatformLoaderFactoryTest extends TestCase
             ->with(PlatformLoaderFactory::DATA_PATH, 'json')
             ->willReturn($iterator);
 
-        /** @var \Psr\Log\LoggerInterface $logger */
-        /** @var \JsonClass\JsonInterface $jsonParser */
-        /** @var \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader */
-        /** @var \BrowserDetector\Loader\Helper\FilterInterface $filter */
+        \assert($logger instanceof LoggerInterface);
+        \assert($jsonParser instanceof JsonInterface);
+        \assert($companyLoader instanceof CompanyLoaderInterface);
+        \assert($filter instanceof FilterInterface);
         $factory = new PlatformLoaderFactory($logger, $jsonParser, $companyLoader, $filter);
         $object  = $factory();
 

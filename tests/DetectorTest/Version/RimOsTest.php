@@ -64,7 +64,7 @@ final class RimOsTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        /** @var LoggerInterface $logger */
+        \assert($logger instanceof LoggerInterface);
         $object = new RimOs($logger, new VersionFactory());
 
         $detectedVersion = $object->detectVersion($useragent);
@@ -147,8 +147,8 @@ final class RimOsTest extends TestCase
             ->with('10.0.0')
             ->willThrowException($exception);
 
-        /** @var LoggerInterface $logger */
-        /** @var VersionFactoryInterface $versionFactory */
+        \assert($logger instanceof LoggerInterface);
+        \assert($versionFactory instanceof VersionFactoryInterface);
         $object = new RimOs($logger, $versionFactory);
 
         $detectedVersion = $object->detectVersion($useragent);
@@ -206,8 +206,8 @@ final class RimOsTest extends TestCase
             ->expects(self::never())
             ->method('set');
 
-        /** @var LoggerInterface $logger */
-        /** @var VersionFactoryInterface $versionFactory */
+        \assert($logger instanceof LoggerInterface);
+        \assert($versionFactory instanceof VersionFactoryInterface);
         $object = new RimOs($logger, $versionFactory);
 
         $detectedVersion = $object->detectVersion($useragent);

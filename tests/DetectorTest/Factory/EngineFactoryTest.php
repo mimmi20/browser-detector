@@ -46,8 +46,8 @@ final class EngineFactoryTest extends TestCase
             ->expects(self::never())
             ->method('set');
 
-        /** @var \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader */
-        /** @var \BrowserDetector\Version\VersionFactoryInterface $versionFactory */
+        \assert($companyLoader instanceof CompanyLoaderInterface);
+        \assert($versionFactory instanceof VersionFactoryInterface);
         $object = new EngineFactory($companyLoader, $versionFactory);
 
         $logger = $this->getMockBuilder(LoggerInterface::class)
@@ -81,7 +81,7 @@ final class EngineFactoryTest extends TestCase
         $this->expectException(\AssertionError::class);
         $this->expectExceptionMessage('"name" property is required');
 
-        /* @var \Psr\Log\LoggerInterface $logger */
+        \assert($logger instanceof LoggerInterface);
         $object->fromArray($logger, [], 'this is a test');
     }
 
@@ -119,8 +119,8 @@ final class EngineFactoryTest extends TestCase
             ->with($v)
             ->willReturn($version2);
 
-        /** @var \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader */
-        /** @var \BrowserDetector\Version\VersionFactoryInterface $versionFactory */
+        \assert($companyLoader instanceof CompanyLoaderInterface);
+        \assert($versionFactory instanceof VersionFactoryInterface);
         $object = new EngineFactory($companyLoader, $versionFactory);
 
         $logger = $this->getMockBuilder(LoggerInterface::class)
@@ -151,7 +151,7 @@ final class EngineFactoryTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        /** @var \Psr\Log\LoggerInterface $logger */
+        \assert($logger instanceof LoggerInterface);
         $result = $object->fromArray(
             $logger,
             ['name' => null, 'manufacturer' => 'unknown', 'version' => $v],
@@ -196,8 +196,8 @@ final class EngineFactoryTest extends TestCase
             ->expects(self::never())
             ->method('set');
 
-        /** @var \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader */
-        /** @var \BrowserDetector\Version\VersionFactoryInterface $versionFactory */
+        \assert($companyLoader instanceof CompanyLoaderInterface);
+        \assert($versionFactory instanceof VersionFactoryInterface);
         $object = new EngineFactory($companyLoader, $versionFactory);
 
         $logger = $this->getMockBuilder(LoggerInterface::class)
@@ -228,7 +228,7 @@ final class EngineFactoryTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        /** @var \Psr\Log\LoggerInterface $logger */
+        \assert($logger instanceof LoggerInterface);
         $result = $object->fromArray(
             $logger,
             ['name' => null, 'manufacturer' => 'unknown', 'version' => $v],
@@ -279,8 +279,8 @@ final class EngineFactoryTest extends TestCase
             ->with($v2)
             ->willReturn($version2);
 
-        /** @var \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader */
-        /** @var \BrowserDetector\Version\VersionFactoryInterface $versionFactory */
+        \assert($companyLoader instanceof CompanyLoaderInterface);
+        \assert($versionFactory instanceof VersionFactoryInterface);
         $object = new EngineFactory($companyLoader, $versionFactory);
 
         $logger = $this->getMockBuilder(LoggerInterface::class)
@@ -311,7 +311,7 @@ final class EngineFactoryTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        /** @var \Psr\Log\LoggerInterface $logger */
+        \assert($logger instanceof LoggerInterface);
         $result = $object->fromArray(
             $logger,
             ['name' => null, 'manufacturer' => 'unknown', 'version' => $v],
@@ -359,8 +359,8 @@ final class EngineFactoryTest extends TestCase
             ->expects(self::never())
             ->method('set');
 
-        /** @var \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader */
-        /** @var \BrowserDetector\Version\VersionFactoryInterface $versionFactory */
+        \assert($companyLoader instanceof CompanyLoaderInterface);
+        \assert($versionFactory instanceof VersionFactoryInterface);
         $object = new EngineFactory($companyLoader, $versionFactory);
 
         $logger = $this->getMockBuilder(LoggerInterface::class)
@@ -391,7 +391,7 @@ final class EngineFactoryTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        /** @var \Psr\Log\LoggerInterface $logger */
+        \assert($logger instanceof LoggerInterface);
         $result = $object->fromArray(
             $logger,
             ['name' => null, 'manufacturer' => 'unknown', 'version' => $v],
@@ -439,8 +439,8 @@ final class EngineFactoryTest extends TestCase
             ->expects(self::never())
             ->method('set');
 
-        /** @var \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader */
-        /** @var \BrowserDetector\Version\VersionFactoryInterface $versionFactory */
+        \assert($companyLoader instanceof CompanyLoaderInterface);
+        \assert($versionFactory instanceof VersionFactoryInterface);
         $object = new EngineFactory($companyLoader, $versionFactory);
 
         $logger = $this->getMockBuilder(LoggerInterface::class)
@@ -471,7 +471,7 @@ final class EngineFactoryTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        /** @var \Psr\Log\LoggerInterface $logger */
+        \assert($logger instanceof LoggerInterface);
         $result = $object->fromArray(
             $logger,
             ['name' => null, 'manufacturer' => 'unknown', 'version' => $v],
@@ -521,8 +521,8 @@ final class EngineFactoryTest extends TestCase
             ->expects(self::never())
             ->method('set');
 
-        /** @var \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader */
-        /** @var \BrowserDetector\Version\VersionFactoryInterface $versionFactory */
+        \assert($companyLoader instanceof CompanyLoaderInterface);
+        \assert($versionFactory instanceof VersionFactoryInterface);
         $object = new EngineFactory($companyLoader, $versionFactory);
 
         $logger = $this->getMockBuilder(LoggerInterface::class)
@@ -553,7 +553,7 @@ final class EngineFactoryTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        /** @var \Psr\Log\LoggerInterface $logger */
+        \assert($logger instanceof LoggerInterface);
         $result = $object->fromArray(
             $logger,
             ['name' => null, 'manufacturer' => 'unknown', 'version' => $v],
@@ -610,8 +610,8 @@ final class EngineFactoryTest extends TestCase
             ->with($useragent, $search)
             ->willReturn($version2);
 
-        /** @var \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader */
-        /** @var \BrowserDetector\Version\VersionFactoryInterface $versionFactory */
+        \assert($companyLoader instanceof CompanyLoaderInterface);
+        \assert($versionFactory instanceof VersionFactoryInterface);
         $object = new EngineFactory($companyLoader, $versionFactory);
 
         $logger = $this->getMockBuilder(LoggerInterface::class)
@@ -642,7 +642,7 @@ final class EngineFactoryTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        /** @var \Psr\Log\LoggerInterface $logger */
+        \assert($logger instanceof LoggerInterface);
         $result = $object->fromArray(
             $logger,
             ['name' => null, 'manufacturer' => 'unknown', 'version' => $v],
@@ -694,8 +694,8 @@ final class EngineFactoryTest extends TestCase
             ->with('0')
             ->willReturn($version);
 
-        /** @var \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader */
-        /** @var \BrowserDetector\Version\VersionFactoryInterface $versionFactory */
+        \assert($companyLoader instanceof CompanyLoaderInterface);
+        \assert($versionFactory instanceof VersionFactoryInterface);
         $object = new EngineFactory($companyLoader, $versionFactory);
 
         $logger = $this->getMockBuilder(LoggerInterface::class)
@@ -727,7 +727,7 @@ final class EngineFactoryTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        /** @var \Psr\Log\LoggerInterface $logger */
+        \assert($logger instanceof LoggerInterface);
         $result = $object->fromArray(
             $logger,
             ['name' => null, 'manufacturer' => $companyName, 'version' => '0'],

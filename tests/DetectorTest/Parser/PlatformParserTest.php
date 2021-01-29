@@ -61,8 +61,8 @@ final class PlatformParserTest extends TestCase
             ->method('parseFile')
             ->willReturnOnConsecutiveCalls($mode, $key);
 
-        /** @var \BrowserDetector\Loader\PlatformLoaderFactoryInterface $loaderFactory */
-        /** @var \BrowserDetector\Parser\Helper\RulefileParserInterface $fileParser */
+        \assert($loaderFactory instanceof PlatformLoaderFactoryInterface);
+        \assert($fileParser instanceof RulefileParserInterface);
         $parser       = new PlatformParser($loaderFactory, $fileParser);
         $parserResult = $parser->parse($useragent);
 

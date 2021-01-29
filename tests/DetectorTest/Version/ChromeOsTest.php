@@ -64,7 +64,7 @@ final class ChromeOsTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        /** @var LoggerInterface $logger */
+        \assert($logger instanceof LoggerInterface);
         $object = new ChromeOs($logger, new VersionFactory());
 
         $detectedVersion = $object->detectVersion($useragent);
@@ -142,8 +142,8 @@ final class ChromeOsTest extends TestCase
             ->with('70.0.3538.22')
             ->willThrowException($exception);
 
-        /** @var LoggerInterface $logger */
-        /** @var VersionFactoryInterface $versionFactory */
+        \assert($logger instanceof LoggerInterface);
+        \assert($versionFactory instanceof VersionFactoryInterface);
         $object = new ChromeOs($logger, $versionFactory);
 
         $detectedVersion = $object->detectVersion('Mozilla/5.0 (X11; CrOS aarch64 11021.19.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.22 Safari/537.36');
@@ -197,8 +197,8 @@ final class ChromeOsTest extends TestCase
             ->with('14.4.0')
             ->willThrowException($exception);
 
-        /** @var LoggerInterface $logger */
-        /** @var VersionFactoryInterface $versionFactory */
+        \assert($logger instanceof LoggerInterface);
+        \assert($versionFactory instanceof VersionFactoryInterface);
         $object = new ChromeOs($logger, $versionFactory);
 
         $detectedVersion = $object->detectVersion('Mozilla/5.0 (X11; CrOS x86_64 14.4.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2550.0 Safari/537.36');

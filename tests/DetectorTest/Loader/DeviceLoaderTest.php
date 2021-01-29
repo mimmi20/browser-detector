@@ -13,7 +13,6 @@ namespace BrowserDetectorTest\Loader;
 
 use BrowserDetector\Loader\CompanyLoaderInterface;
 use BrowserDetector\Loader\DeviceLoader;
-use BrowserDetector\Loader\Helper\Data;
 use BrowserDetector\Loader\Helper\DataInterface;
 use BrowserDetector\Loader\NotFoundException;
 use BrowserDetector\Parser\PlatformParserInterface;
@@ -83,10 +82,10 @@ final class DeviceLoaderTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
 
-        /** @var \Psr\Log\LoggerInterface $logger */
-        /** @var CompanyLoaderInterface $companyLoader */
-        /** @var PlatformParserInterface $platformParser */
-        /** @var Data $initData */
+        \assert($logger instanceof LoggerInterface);
+        \assert($companyLoader instanceof CompanyLoaderInterface);
+        \assert($platformParser instanceof PlatformParserInterface);
+        \assert($initData instanceof DataInterface);
         $object = new DeviceLoader(
             $logger,
             $initData,
@@ -158,10 +157,10 @@ final class DeviceLoaderTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
 
-        /** @var \Psr\Log\LoggerInterface $logger */
-        /** @var CompanyLoaderInterface $companyLoader */
-        /** @var PlatformParserInterface $platformParser */
-        /** @var Data $initData */
+        \assert($logger instanceof LoggerInterface);
+        \assert($companyLoader instanceof CompanyLoaderInterface);
+        \assert($platformParser instanceof PlatformParserInterface);
+        \assert($initData instanceof DataInterface);
         $object = new DeviceLoader(
             $logger,
             $initData,
@@ -249,10 +248,10 @@ final class DeviceLoaderTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
 
-        /** @var \Psr\Log\LoggerInterface $logger */
-        /** @var CompanyLoaderInterface $companyLoader */
-        /** @var PlatformParserInterface $platformParser */
-        /** @var Data $initData */
+        \assert($logger instanceof LoggerInterface);
+        \assert($companyLoader instanceof CompanyLoaderInterface);
+        \assert($platformParser instanceof PlatformParserInterface);
+        \assert($initData instanceof DataInterface);
         $object = new DeviceLoader(
             $logger,
             $initData,
@@ -350,10 +349,10 @@ final class DeviceLoaderTest extends TestCase
             ->with('test-platform')
             ->willThrowException(new NotFoundException());
 
-        /** @var \Psr\Log\LoggerInterface $logger */
-        /** @var CompanyLoaderInterface $companyLoader */
-        /** @var PlatformParserInterface $platformParser */
-        /** @var Data $initData */
+        \assert($logger instanceof LoggerInterface);
+        \assert($companyLoader instanceof CompanyLoaderInterface);
+        \assert($platformParser instanceof PlatformParserInterface);
+        \assert($initData instanceof DataInterface);
         $object = new DeviceLoader(
             $logger,
             $initData,
@@ -451,10 +450,10 @@ final class DeviceLoaderTest extends TestCase
             ->with('test-platform')
             ->willReturn($platform);
 
-        /** @var \Psr\Log\LoggerInterface $logger */
-        /** @var CompanyLoaderInterface $companyLoader */
-        /** @var PlatformParserInterface $platformParser */
-        /** @var Data $initData */
+        \assert($logger instanceof LoggerInterface);
+        \assert($companyLoader instanceof CompanyLoaderInterface);
+        \assert($platformParser instanceof PlatformParserInterface);
+        \assert($initData instanceof DataInterface);
         $object = new DeviceLoader(
             $logger,
             $initData,

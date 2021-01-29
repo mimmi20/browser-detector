@@ -35,9 +35,9 @@ final class EngineParserFactoryTest extends TestCase
         $jsonParser    = $this->createMock(JsonInterface::class);
         $companyLoader = $this->createMock(CompanyLoaderInterface::class);
 
-        /** @var \Psr\Log\LoggerInterface $logger */
-        /** @var \JsonClass\JsonInterface $jsonParser */
-        /** @var \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader */
+        \assert($logger instanceof LoggerInterface);
+        \assert($jsonParser instanceof JsonInterface);
+        \assert($companyLoader instanceof CompanyLoaderInterface);
         $factory = new EngineParserFactory($logger, $jsonParser, $companyLoader);
 
         $parser = $factory();

@@ -91,11 +91,11 @@ final class RulefileParserTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        /** @var \JsonClass\JsonInterface $jsonParser */
-        /** @var \Psr\Log\LoggerInterface $logger */
+        \assert($jsonParser instanceof JsonInterface);
+        \assert($logger instanceof LoggerInterface);
         $object = new RulefileParser($jsonParser, $logger);
 
-        /** @var \SplFileInfo $fileInfo */
+        \assert($fileInfo instanceof \SplFileInfo);
         $result = $object->parseFile($fileInfo, $useragent, $fallback);
 
         self::assertSame($fallback, $result);
@@ -161,11 +161,11 @@ final class RulefileParserTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        /** @var \JsonClass\JsonInterface $jsonParser */
-        /** @var \Psr\Log\LoggerInterface $logger */
+        \assert($jsonParser instanceof JsonInterface);
+        \assert($logger instanceof LoggerInterface);
         $object = new RulefileParser($jsonParser, $logger);
 
-        /** @var \SplFileInfo $fileInfo */
+        \assert($fileInfo instanceof \SplFileInfo);
         $result = $object->parseFile($fileInfo, $useragent, $fallback);
 
         self::assertSame($fallback, $result);
@@ -233,11 +233,11 @@ final class RulefileParserTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        /** @var \JsonClass\JsonInterface $jsonParser */
-        /** @var \Psr\Log\LoggerInterface $logger */
+        \assert($jsonParser instanceof JsonInterface);
+        \assert($logger instanceof LoggerInterface);
         $object = new RulefileParser($jsonParser, $logger);
 
-        /** @var \SplFileInfo $fileInfo */
+        \assert($fileInfo instanceof \SplFileInfo);
         $result = $object->parseFile($fileInfo, $useragent, $fallback);
 
         self::assertSame($mode, $result);
@@ -305,11 +305,11 @@ final class RulefileParserTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        /** @var \JsonClass\JsonInterface $jsonParser */
-        /** @var \Psr\Log\LoggerInterface $logger */
+        \assert($jsonParser instanceof JsonInterface);
+        \assert($logger instanceof LoggerInterface);
         $object = new RulefileParser($jsonParser, $logger);
 
-        /** @var \SplFileInfo $fileInfo */
+        \assert($fileInfo instanceof \SplFileInfo);
         $result = $object->parseFile($fileInfo, $useragent, $fallback);
 
         self::assertSame($generic, $result);
@@ -378,11 +378,11 @@ final class RulefileParserTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        /** @var \JsonClass\JsonInterface $jsonParser */
-        /** @var \Psr\Log\LoggerInterface $logger */
+        \assert($jsonParser instanceof JsonInterface);
+        \assert($logger instanceof LoggerInterface);
         $object = new RulefileParser($jsonParser, $logger);
 
-        /** @var \SplFileInfo $fileInfo */
+        \assert($fileInfo instanceof \SplFileInfo);
         $result = $object->parseFile($fileInfo, $useragent, $fallback);
 
         self::assertSame($mode, $result);
@@ -451,11 +451,11 @@ final class RulefileParserTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        /** @var \JsonClass\JsonInterface $jsonParser */
-        /** @var \Psr\Log\LoggerInterface $logger */
+        \assert($jsonParser instanceof JsonInterface);
+        \assert($logger instanceof LoggerInterface);
         $object = new RulefileParser($jsonParser, $logger);
 
-        /** @var \SplFileInfo $fileInfo */
+        \assert($fileInfo instanceof \SplFileInfo);
         $result = $object->parseFile($fileInfo, $useragent, $fallback);
 
         self::assertSame($mode, $result);
@@ -517,11 +517,11 @@ final class RulefileParserTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        /** @var \JsonClass\JsonInterface $jsonParser */
-        /** @var \Psr\Log\LoggerInterface $logger */
+        \assert($jsonParser instanceof JsonInterface);
+        \assert($logger instanceof LoggerInterface);
         $object = new RulefileParser($jsonParser, $logger);
 
-        /** @var \SplFileInfo $fileInfo */
+        \assert($fileInfo instanceof \SplFileInfo);
         $result = $object->parseFile($fileInfo, $useragent, $fallback);
 
         self::assertSame($fallback, $result);

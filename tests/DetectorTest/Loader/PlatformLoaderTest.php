@@ -82,9 +82,9 @@ final class PlatformLoaderTest extends TestCase
             ->expects(self::never())
             ->method('load');
 
-        /** @var \Psr\Log\LoggerInterface $logger */
-        /** @var \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader */
-        /** @var \BrowserDetector\Loader\Helper\DataInterface $initData */
+        \assert($logger instanceof LoggerInterface);
+        \assert($companyLoader instanceof CompanyLoaderInterface);
+        \assert($initData instanceof DataInterface);
         $object = new PlatformLoader(
             $logger,
             $initData,
@@ -155,9 +155,9 @@ final class PlatformLoaderTest extends TestCase
             ->expects(self::never())
             ->method('load');
 
-        /** @var \Psr\Log\LoggerInterface $logger */
-        /** @var \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader */
-        /** @var \BrowserDetector\Loader\Helper\DataInterface $initData */
+        \assert($logger instanceof LoggerInterface);
+        \assert($companyLoader instanceof CompanyLoaderInterface);
+        \assert($initData instanceof DataInterface);
         $object = new PlatformLoader(
             $logger,
             $initData,
@@ -244,9 +244,9 @@ final class PlatformLoaderTest extends TestCase
             ->with('unknown')
             ->willReturn($company);
 
-        /** @var \Psr\Log\LoggerInterface $logger */
-        /** @var \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader */
-        /** @var \BrowserDetector\Loader\Helper\DataInterface $initData */
+        \assert($logger instanceof LoggerInterface);
+        \assert($companyLoader instanceof CompanyLoaderInterface);
+        \assert($initData instanceof DataInterface);
         $object = new PlatformLoader(
             $logger,
             $initData,
@@ -332,9 +332,9 @@ final class PlatformLoaderTest extends TestCase
             ->with('unknown')
             ->willReturn($company);
 
-        /** @var \Psr\Log\LoggerInterface $logger */
-        /** @var \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader */
-        /** @var \BrowserDetector\Loader\Helper\DataInterface $initData */
+        \assert($logger instanceof LoggerInterface);
+        \assert($companyLoader instanceof CompanyLoaderInterface);
+        \assert($initData instanceof DataInterface);
         $object = new PlatformLoader(
             $logger,
             $initData,
@@ -420,9 +420,9 @@ final class PlatformLoaderTest extends TestCase
             ->with('unknown')
             ->willReturn($company);
 
-        /** @var \Psr\Log\LoggerInterface $logger */
-        /** @var \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader */
-        /** @var \BrowserDetector\Loader\Helper\DataInterface $initData */
+        \assert($logger instanceof LoggerInterface);
+        \assert($companyLoader instanceof CompanyLoaderInterface);
+        \assert($initData instanceof DataInterface);
         $object = new PlatformLoader(
             $logger,
             $initData,
@@ -510,9 +510,9 @@ final class PlatformLoaderTest extends TestCase
             ->with('unknown')
             ->willReturn($company);
 
-        /** @var \Psr\Log\LoggerInterface $logger */
-        /** @var \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader */
-        /** @var \BrowserDetector\Loader\Helper\DataInterface $initData */
+        \assert($logger instanceof LoggerInterface);
+        \assert($companyLoader instanceof CompanyLoaderInterface);
+        \assert($initData instanceof DataInterface);
         $object = new PlatformLoader(
             $logger,
             $initData,

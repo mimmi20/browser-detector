@@ -64,7 +64,7 @@ final class AndroidOsTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        /** @var LoggerInterface $logger */
+        \assert($logger instanceof LoggerInterface);
         $object = new AndroidOs($logger, new VersionFactory());
 
         $detectedVersion = $object->detectVersion($useragent);
@@ -166,8 +166,8 @@ final class AndroidOsTest extends TestCase
             ->expects(self::never())
             ->method('set');
 
-        /** @var LoggerInterface $logger */
-        /** @var VersionFactoryInterface $versionFactory */
+        \assert($logger instanceof LoggerInterface);
+        \assert($versionFactory instanceof VersionFactoryInterface);
         $object = new AndroidOs($logger, $versionFactory);
 
         $detectedVersion = $object->detectVersion($useragent);
@@ -222,8 +222,8 @@ final class AndroidOsTest extends TestCase
             ->with('4.4.4')
             ->willThrowException($exception);
 
-        /** @var LoggerInterface $logger */
-        /** @var VersionFactoryInterface $versionFactory */
+        \assert($logger instanceof LoggerInterface);
+        \assert($versionFactory instanceof VersionFactoryInterface);
         $object = new AndroidOs($logger, $versionFactory);
 
         $detectedVersion = $object->detectVersion($useragent);
@@ -278,8 +278,8 @@ final class AndroidOsTest extends TestCase
             ->with('2.3.0')
             ->willThrowException($exception);
 
-        /** @var LoggerInterface $logger */
-        /** @var VersionFactoryInterface $versionFactory */
+        \assert($logger instanceof LoggerInterface);
+        \assert($versionFactory instanceof VersionFactoryInterface);
         $object = new AndroidOs($logger, $versionFactory);
 
         $detectedVersion = $object->detectVersion($useragent);
@@ -334,8 +334,8 @@ final class AndroidOsTest extends TestCase
             ->with('2.1.0')
             ->willThrowException($exception);
 
-        /** @var LoggerInterface $logger */
-        /** @var VersionFactoryInterface $versionFactory */
+        \assert($logger instanceof LoggerInterface);
+        \assert($versionFactory instanceof VersionFactoryInterface);
         $object = new AndroidOs($logger, $versionFactory);
 
         $detectedVersion = $object->detectVersion($useragent);

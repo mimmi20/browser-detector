@@ -21,9 +21,9 @@ use JsonClass\Json;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
 use Psr\Log\NullLogger;
-use Symfony\Component\Cache\Adapter\NullAdapter;
-use Symfony\Component\Cache\Psr16Cache;
+use Psr\SimpleCache\CacheInterface;
 use Symfony\Component\Finder\Finder;
+use Symfony\Component\Finder\SplFileInfo;
 use UaResult\Browser\BrowserInterface;
 use UaResult\Device\DeviceInterface;
 use UaResult\Engine\EngineInterface;
@@ -71,9 +71,10 @@ final class DetectorTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $cache = new Psr16Cache(new NullAdapter());
+        $cache = $this->createMock(CacheInterface::class);
 
-        /** @var NullLogger $logger */
+        \assert($logger instanceof LoggerInterface);
+        \assert($cache instanceof CacheInterface);
         $factory      = new DetectorFactory($cache, $logger);
         $this->object = $factory();
     }
@@ -194,7 +195,7 @@ final class DetectorTest extends TestCase
         $resultFactory = new ResultFactory($companyLoader);
 
         foreach ($finder as $file) {
-            /* @var \Symfony\Component\Finder\SplFileInfo $file */
+            \assert($file instanceof SplFileInfo);
 
             try {
                 $tests = (new Json())->decode(
