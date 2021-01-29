@@ -23,9 +23,6 @@ updates:
       - dependency-name: phpunit/phpunit
         versions:
           - ">= 0"
-      - dependency-name: symfony/cache
-        versions:
-          - ">= 0"
       - dependency-name: symfony/finder
         versions:
           - ">= 0"

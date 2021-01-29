@@ -71,7 +71,17 @@ final class DetectorTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $cache = $this->createMock(CacheInterface::class);
+        $cache = $this->getMockBuilder(CacheInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $cache
+            ->expects(self::any())
+            ->method('has')
+            ->willReturn(false);
+        $cache
+            ->expects(self::any())
+            ->method('set')
+            ->willReturn(false);
 
         \assert($logger instanceof LoggerInterface);
         \assert($cache instanceof CacheInterface);
