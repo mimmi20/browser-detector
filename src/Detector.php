@@ -22,11 +22,15 @@ use UaDeviceType\Unknown;
 use UaNormalizer\Normalizer\NormalizerInterface;
 use UaRequest\GenericRequest;
 use UaResult\Browser\Browser;
+use UaResult\Browser\BrowserInterface;
 use UaResult\Company\Company;
 use UaResult\Device\Device;
+use UaResult\Device\DeviceInterface;
 use UaResult\Device\Display;
 use UaResult\Engine\Engine;
+use UaResult\Engine\EngineInterface;
 use UaResult\Os\Os;
+use UaResult\Os\OsInterface;
 use UaResult\Result\Result;
 use UaResult\Result\ResultInterface;
 
@@ -157,8 +161,6 @@ final class Detector implements DetectorInterface
             null
         );
 
-        /* @var \UaResult\Device\DeviceInterface $device */
-        /* @var \UaResult\Os\OsInterface $platform */
         try {
             [$device, $platform] = $deviceParser->parse($deviceUa);
         } catch (\UnexpectedValueException $e) {
@@ -167,6 +169,9 @@ final class Detector implements DetectorInterface
             $device   = clone $defaultDevice;
             $platform = clone $defaultPlatform;
         }
+
+        \assert($device instanceof DeviceInterface);
+        \assert($platform instanceof OsInterface || null === $platform);
 
         if (null === $platform) {
             $this->logger->debug('platform not detected from the device');
@@ -200,8 +205,6 @@ final class Detector implements DetectorInterface
         $browserUa = $this->normalizer->normalize($request->getBrowserUserAgent());
         $engineUa  = $this->normalizer->normalize($request->getEngineUserAgent());
 
-        /* @var \UaResult\Browser\BrowserInterface $browser */
-        /* @var \UaResult\Engine\EngineInterface $engine */
         try {
             [$browser, $engine] = $browserParser->parse($browserUa);
         } catch (\UnexpectedValueException $e) {
@@ -210,6 +213,9 @@ final class Detector implements DetectorInterface
             $browser = clone $defaultBrowser;
             $engine  = clone $defaultEngine;
         }
+
+        \assert($browser instanceof BrowserInterface);
+        \assert($engine instanceof EngineInterface || null === $engine);
 
         if (null !== $platform && in_array($platform->getName(), ['iOS', 'iPhone OS'], true)) {
             try {

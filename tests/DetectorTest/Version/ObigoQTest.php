@@ -64,7 +64,7 @@ final class ObigoQTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        /** @var LoggerInterface $logger */
+        \assert($logger instanceof LoggerInterface);
         $object = new ObigoQ($logger, new VersionFactory());
 
         $detectedVersion = $object->detectVersion($useragent);
@@ -150,8 +150,8 @@ final class ObigoQTest extends TestCase
             ->with('5')
             ->willThrowException($exception);
 
-        /** @var LoggerInterface $logger */
-        /** @var VersionFactoryInterface $versionFactory */
+        \assert($logger instanceof LoggerInterface);
+        \assert($versionFactory instanceof VersionFactoryInterface);
         $object = new ObigoQ($logger, $versionFactory);
 
         $detectedVersion = $object->detectVersion('ALCATEL_TRIBE_3075A/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q05A');
@@ -205,8 +205,8 @@ final class ObigoQTest extends TestCase
             ->with('7.1')
             ->willThrowException($exception);
 
-        /** @var LoggerInterface $logger */
-        /** @var VersionFactoryInterface $versionFactory */
+        \assert($logger instanceof LoggerInterface);
+        \assert($versionFactory instanceof VersionFactoryInterface);
         $object = new ObigoQ($logger, $versionFactory);
 
         $detectedVersion = $object->detectVersion('LG-GT505/v10a Browser/Teleca-Q7.1 MMS/LG-MMS-V1.0/1.2 MediaPlayer/LGPlayer/1.0 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1');

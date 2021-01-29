@@ -64,7 +64,7 @@ final class ScreamingFrogTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        /** @var LoggerInterface $logger */
+        \assert($logger instanceof LoggerInterface);
         $object = new ScreamingFrog($logger, new VersionFactory());
 
         $detectedVersion = $object->detectVersion($useragent);
@@ -130,8 +130,8 @@ final class ScreamingFrogTest extends TestCase
             ->with('Screaming Frog SEO Spider/2.22', ['Screaming Frog SEO Spider'])
             ->willThrowException($exception);
 
-        /** @var LoggerInterface $logger */
-        /** @var VersionFactoryInterface $versionFactory */
+        \assert($logger instanceof LoggerInterface);
+        \assert($versionFactory instanceof VersionFactoryInterface);
         $object = new ScreamingFrog($logger, $versionFactory);
 
         $detectedVersion = $object->detectVersion('Screaming Frog SEO Spider/2,22');

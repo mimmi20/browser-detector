@@ -64,7 +64,7 @@ final class CoreMediaTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        /** @var LoggerInterface $logger */
+        \assert($logger instanceof LoggerInterface);
         $object = new CoreMedia($logger, new VersionFactory());
 
         $detectedVersion = $object->detectVersion($useragent);
@@ -138,8 +138,8 @@ final class CoreMediaTest extends TestCase
             ->with('1.0.2')
             ->willThrowException($exception);
 
-        /** @var LoggerInterface $logger */
-        /** @var VersionFactoryInterface $versionFactory */
+        \assert($logger instanceof LoggerInterface);
+        \assert($versionFactory instanceof VersionFactoryInterface);
         $object = new CoreMedia($logger, $versionFactory);
 
         $detectedVersion = $object->detectVersion('AppleCoreMedia/1.0.2.12D508 (iPad; U; CPU OS 8_2 like Mac OS X; sv_se)');

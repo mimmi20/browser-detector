@@ -78,7 +78,7 @@ final class Data implements DataInterface
         }
 
         foreach ($this->finder as $file) {
-            /** @var \SplFileInfo $file */
+            \assert($file instanceof \SplFileInfo);
             $path    = $file->getPathname();
             $content = file_get_contents($path);
 

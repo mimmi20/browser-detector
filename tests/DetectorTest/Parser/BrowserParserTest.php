@@ -58,8 +58,8 @@ final class BrowserParserTest extends TestCase
             ->method('parseFile')
             ->willReturnOnConsecutiveCalls($mode, $key);
 
-        /** @var \BrowserDetector\Loader\BrowserLoaderFactoryInterface $loaderFactory */
-        /** @var \BrowserDetector\Parser\Helper\RulefileParserInterface $fileParser */
+        \assert($loaderFactory instanceof BrowserLoaderFactoryInterface);
+        \assert($fileParser instanceof RulefileParserInterface);
         $parser       = new BrowserParser($loaderFactory, $fileParser);
         $parserResult = $parser->parse($useragent);
 

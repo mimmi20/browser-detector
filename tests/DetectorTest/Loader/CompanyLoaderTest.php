@@ -12,7 +12,6 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest\Loader;
 
 use BrowserDetector\Loader\CompanyLoader;
-use BrowserDetector\Loader\Helper\Data;
 use BrowserDetector\Loader\Helper\DataInterface;
 use BrowserDetector\Loader\NotFoundException;
 use PHPUnit\Framework\TestCase;
@@ -51,7 +50,7 @@ final class CompanyLoaderTest extends TestCase
         $data->expects(self::once())
             ->method('__invoke');
 
-        /** @var Data $data */
+        \assert($data instanceof DataInterface);
         $object = new CompanyLoader($data);
 
         $this->expectException(NotFoundException::class);
@@ -88,7 +87,7 @@ final class CompanyLoaderTest extends TestCase
         $data->expects(self::once())
             ->method('__invoke');
 
-        /** @var Data $data */
+        \assert($data instanceof DataInterface);
         $object = new CompanyLoader($data);
 
         $this->expectException(NotFoundException::class);
@@ -129,7 +128,7 @@ final class CompanyLoaderTest extends TestCase
         $data->expects(self::once())
             ->method('__invoke');
 
-        /** @var Data $data */
+        \assert($data instanceof DataInterface);
         $object = new CompanyLoader($data);
 
         $result = $object->load($companyKey);

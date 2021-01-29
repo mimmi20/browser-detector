@@ -106,14 +106,14 @@ final class DeviceParserTest extends TestCase
             ->expects(self::never())
             ->method('isDesktopDevice');
 
-        /** @var \BrowserDetector\Parser\Device\DarwinParserInterface $darwinParser */
-        /** @var \BrowserDetector\Parser\Device\MobileParserInterface $mobileParser */
-        /** @var \BrowserDetector\Parser\Device\TvParserInterface $tvParser */
-        /** @var \BrowserDetector\Parser\Device\DesktopParserInterface $desktopParser */
-        /** @var \BrowserDetector\Loader\DeviceLoaderFactoryInterface $loaderFactory */
-        /** @var \BrowserDetector\Helper\MobileDeviceInterface $mobileDevice */
-        /** @var \BrowserDetector\Helper\TvInterface $tvDevice */
-        /** @var \BrowserDetector\Helper\DesktopInterface $desktopDevice */
+        \assert($darwinParser instanceof DarwinParserInterface);
+        \assert($mobileParser instanceof MobileParserInterface);
+        \assert($tvParser instanceof TvParserInterface);
+        \assert($desktopParser instanceof DesktopParserInterface);
+        \assert($loaderFactory instanceof DeviceLoaderFactoryInterface);
+        \assert($mobileDevice instanceof MobileDeviceInterface);
+        \assert($tvDevice instanceof TvInterface);
+        \assert($desktopDevice instanceof DesktopInterface);
         $object = new DeviceParser($darwinParser, $mobileParser, $tvParser, $desktopParser, $loaderFactory, $mobileDevice, $tvDevice, $desktopDevice);
         $result = $object->parse($useragent);
 
@@ -201,14 +201,14 @@ final class DeviceParserTest extends TestCase
             ->expects(self::never())
             ->method('isDesktopDevice');
 
-        /** @var \BrowserDetector\Parser\Device\DarwinParserInterface $darwinParser */
-        /** @var \BrowserDetector\Parser\Device\MobileParserInterface $mobileParser */
-        /** @var \BrowserDetector\Parser\Device\TvParserInterface $tvParser */
-        /** @var \BrowserDetector\Parser\Device\DesktopParserInterface $desktopParser */
-        /** @var \BrowserDetector\Loader\DeviceLoaderFactoryInterface $loaderFactory */
-        /** @var \BrowserDetector\Helper\MobileDeviceInterface $mobileDevice */
-        /** @var \BrowserDetector\Helper\TvInterface $tvDevice */
-        /** @var \BrowserDetector\Helper\DesktopInterface $desktopDevice */
+        \assert($darwinParser instanceof DarwinParserInterface);
+        \assert($mobileParser instanceof MobileParserInterface);
+        \assert($tvParser instanceof TvParserInterface);
+        \assert($desktopParser instanceof DesktopParserInterface);
+        \assert($loaderFactory instanceof DeviceLoaderFactoryInterface);
+        \assert($mobileDevice instanceof MobileDeviceInterface);
+        \assert($tvDevice instanceof TvInterface);
+        \assert($desktopDevice instanceof DesktopInterface);
         $object = new DeviceParser($darwinParser, $mobileParser, $tvParser, $desktopParser, $loaderFactory, $mobileDevice, $tvDevice, $desktopDevice);
         $result = $object->parse($useragent);
 
@@ -292,14 +292,14 @@ final class DeviceParserTest extends TestCase
             ->expects(self::never())
             ->method('isDesktopDevice');
 
-        /** @var \BrowserDetector\Parser\Device\DarwinParserInterface $darwinParser */
-        /** @var \BrowserDetector\Parser\Device\MobileParserInterface $mobileParser */
-        /** @var \BrowserDetector\Parser\Device\TvParserInterface $tvParser */
-        /** @var \BrowserDetector\Parser\Device\DesktopParserInterface $desktopParser */
-        /** @var \BrowserDetector\Loader\DeviceLoaderFactoryInterface $loaderFactory */
-        /** @var \BrowserDetector\Helper\MobileDeviceInterface $mobileDevice */
-        /** @var \BrowserDetector\Helper\TvInterface $tvDevice */
-        /** @var \BrowserDetector\Helper\DesktopInterface $desktopDevice */
+        \assert($darwinParser instanceof DarwinParserInterface);
+        \assert($mobileParser instanceof MobileParserInterface);
+        \assert($tvParser instanceof TvParserInterface);
+        \assert($desktopParser instanceof DesktopParserInterface);
+        \assert($loaderFactory instanceof DeviceLoaderFactoryInterface);
+        \assert($mobileDevice instanceof MobileDeviceInterface);
+        \assert($tvDevice instanceof TvInterface);
+        \assert($desktopDevice instanceof DesktopInterface);
         $object = new DeviceParser($darwinParser, $mobileParser, $tvParser, $desktopParser, $loaderFactory, $mobileDevice, $tvDevice, $desktopDevice);
         $result = $object->parse($useragent);
 
@@ -384,14 +384,14 @@ final class DeviceParserTest extends TestCase
             ->expects(self::never())
             ->method('isDesktopDevice');
 
-        /** @var \BrowserDetector\Parser\Device\DarwinParserInterface $darwinParser */
-        /** @var \BrowserDetector\Parser\Device\MobileParserInterface $mobileParser */
-        /** @var \BrowserDetector\Parser\Device\TvParserInterface $tvParser */
-        /** @var \BrowserDetector\Parser\Device\DesktopParserInterface $desktopParser */
-        /** @var \BrowserDetector\Loader\DeviceLoaderFactoryInterface $loaderFactory */
-        /** @var \BrowserDetector\Helper\MobileDeviceInterface $mobileDevice */
-        /** @var \BrowserDetector\Helper\TvInterface $tvDevice */
-        /** @var \BrowserDetector\Helper\DesktopInterface $desktopDevice */
+        \assert($darwinParser instanceof DarwinParserInterface);
+        \assert($mobileParser instanceof MobileParserInterface);
+        \assert($tvParser instanceof TvParserInterface);
+        \assert($desktopParser instanceof DesktopParserInterface);
+        \assert($loaderFactory instanceof DeviceLoaderFactoryInterface);
+        \assert($mobileDevice instanceof MobileDeviceInterface);
+        \assert($tvDevice instanceof TvInterface);
+        \assert($desktopDevice instanceof DesktopInterface);
         $object = new DeviceParser($darwinParser, $mobileParser, $tvParser, $desktopParser, $loaderFactory, $mobileDevice, $tvDevice, $desktopDevice);
         $result = $object->parse($useragent);
 
@@ -477,14 +477,14 @@ final class DeviceParserTest extends TestCase
             ->expects(self::never())
             ->method('isDesktopDevice');
 
-        /** @var \BrowserDetector\Parser\Device\DarwinParserInterface $darwinParser */
-        /** @var \BrowserDetector\Parser\Device\MobileParserInterface $mobileParser */
-        /** @var \BrowserDetector\Parser\Device\TvParserInterface $tvParser */
-        /** @var \BrowserDetector\Parser\Device\DesktopParserInterface $desktopParser */
-        /** @var \BrowserDetector\Loader\DeviceLoaderFactoryInterface $loaderFactory */
-        /** @var \BrowserDetector\Helper\MobileDeviceInterface $mobileDevice */
-        /** @var \BrowserDetector\Helper\TvInterface $tvDevice */
-        /** @var \BrowserDetector\Helper\DesktopInterface $desktopDevice */
+        \assert($darwinParser instanceof DarwinParserInterface);
+        \assert($mobileParser instanceof MobileParserInterface);
+        \assert($tvParser instanceof TvParserInterface);
+        \assert($desktopParser instanceof DesktopParserInterface);
+        \assert($loaderFactory instanceof DeviceLoaderFactoryInterface);
+        \assert($mobileDevice instanceof MobileDeviceInterface);
+        \assert($tvDevice instanceof TvInterface);
+        \assert($desktopDevice instanceof DesktopInterface);
         $object = new DeviceParser($darwinParser, $mobileParser, $tvParser, $desktopParser, $loaderFactory, $mobileDevice, $tvDevice, $desktopDevice);
         $result = $object->parse($useragent);
 
@@ -571,14 +571,14 @@ final class DeviceParserTest extends TestCase
             ->method('isDesktopDevice')
             ->willReturn(true);
 
-        /** @var \BrowserDetector\Parser\Device\DarwinParserInterface $darwinParser */
-        /** @var \BrowserDetector\Parser\Device\MobileParserInterface $mobileParser */
-        /** @var \BrowserDetector\Parser\Device\TvParserInterface $tvParser */
-        /** @var \BrowserDetector\Parser\Device\DesktopParserInterface $desktopParser */
-        /** @var \BrowserDetector\Loader\DeviceLoaderFactoryInterface $loaderFactory */
-        /** @var \BrowserDetector\Helper\MobileDeviceInterface $mobileDevice */
-        /** @var \BrowserDetector\Helper\TvInterface $tvDevice */
-        /** @var \BrowserDetector\Helper\DesktopInterface $desktopDevice */
+        \assert($darwinParser instanceof DarwinParserInterface);
+        \assert($mobileParser instanceof MobileParserInterface);
+        \assert($tvParser instanceof TvParserInterface);
+        \assert($desktopParser instanceof DesktopParserInterface);
+        \assert($loaderFactory instanceof DeviceLoaderFactoryInterface);
+        \assert($mobileDevice instanceof MobileDeviceInterface);
+        \assert($tvDevice instanceof TvInterface);
+        \assert($desktopDevice instanceof DesktopInterface);
         $object = new DeviceParser($darwinParser, $mobileParser, $tvParser, $desktopParser, $loaderFactory, $mobileDevice, $tvDevice, $desktopDevice);
         $result = $object->parse($useragent);
 
@@ -669,14 +669,14 @@ final class DeviceParserTest extends TestCase
             ->method('isDesktopDevice')
             ->willReturn(false);
 
-        /** @var \BrowserDetector\Parser\Device\DarwinParserInterface $darwinParser */
-        /** @var \BrowserDetector\Parser\Device\MobileParserInterface $mobileParser */
-        /** @var \BrowserDetector\Parser\Device\TvParserInterface $tvParser */
-        /** @var \BrowserDetector\Parser\Device\DesktopParserInterface $desktopParser */
-        /** @var \BrowserDetector\Loader\DeviceLoaderFactoryInterface $loaderFactory */
-        /** @var \BrowserDetector\Helper\MobileDeviceInterface $mobileDevice */
-        /** @var \BrowserDetector\Helper\TvInterface $tvDevice */
-        /** @var \BrowserDetector\Helper\DesktopInterface $desktopDevice */
+        \assert($darwinParser instanceof DarwinParserInterface);
+        \assert($mobileParser instanceof MobileParserInterface);
+        \assert($tvParser instanceof TvParserInterface);
+        \assert($desktopParser instanceof DesktopParserInterface);
+        \assert($loaderFactory instanceof DeviceLoaderFactoryInterface);
+        \assert($mobileDevice instanceof MobileDeviceInterface);
+        \assert($tvDevice instanceof TvInterface);
+        \assert($desktopDevice instanceof DesktopInterface);
         $object = new DeviceParser($darwinParser, $mobileParser, $tvParser, $desktopParser, $loaderFactory, $mobileDevice, $tvDevice, $desktopDevice);
         $result = $object->parse($useragent);
 

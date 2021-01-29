@@ -64,7 +64,7 @@ final class MaxthonTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        /** @var LoggerInterface $logger */
+        \assert($logger instanceof LoggerInterface);
         $object = new Maxthon($logger, new VersionFactory());
 
         $detectedVersion = $object->detectVersion($useragent);
@@ -139,8 +139,8 @@ final class MaxthonTest extends TestCase
             ->with('2.0')
             ->willThrowException($exception);
 
-        /** @var LoggerInterface $logger */
-        /** @var VersionFactoryInterface $versionFactory */
+        \assert($logger instanceof LoggerInterface);
+        \assert($versionFactory instanceof VersionFactoryInterface);
         $object = new Maxthon($logger, $versionFactory);
 
         $detectedVersion = $object->detectVersion($useragent);
@@ -202,8 +202,8 @@ final class MaxthonTest extends TestCase
             ->method('setRegex')
             ->with(Maxthon::REGEX);
 
-        /** @var LoggerInterface $logger */
-        /** @var VersionFactoryInterface $versionFactory */
+        \assert($logger instanceof LoggerInterface);
+        \assert($versionFactory instanceof VersionFactoryInterface);
         $object = new Maxthon($logger, $versionFactory);
 
         $detectedVersion = $object->detectVersion($useragent);
@@ -261,8 +261,8 @@ final class MaxthonTest extends TestCase
             ->expects(self::never())
             ->method('set');
 
-        /** @var LoggerInterface $logger */
-        /** @var VersionFactoryInterface $versionFactory */
+        \assert($logger instanceof LoggerInterface);
+        \assert($versionFactory instanceof VersionFactoryInterface);
         $object = new Maxthon($logger, $versionFactory);
 
         $detectedVersion = $object->detectVersion($useragent);

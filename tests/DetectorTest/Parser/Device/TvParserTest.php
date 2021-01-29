@@ -59,8 +59,8 @@ final class TvParserTest extends TestCase
             ->method('parseFile')
             ->willReturnOnConsecutiveCalls($genericMode, $expectedMode);
 
-        /** @var \BrowserDetector\Parser\Helper\RulefileParserInterface $fileParser */
-        /** @var \BrowserDetector\Loader\DeviceLoaderFactory $mockLoaderFactory */
+        \assert($fileParser instanceof RulefileParserInterface);
+        \assert($mockLoaderFactory instanceof DeviceLoaderFactoryInterface);
         $object = new TvParser($fileParser, $mockLoaderFactory);
 
         self::assertSame($expectedResult, $object->parse($useragent));

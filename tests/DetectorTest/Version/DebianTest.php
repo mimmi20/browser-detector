@@ -64,7 +64,7 @@ final class DebianTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        /** @var LoggerInterface $logger */
+        \assert($logger instanceof LoggerInterface);
         $object = new Debian($logger, new VersionFactory());
 
         $detectedVersion = $object->detectVersion($useragent);
@@ -139,8 +139,8 @@ final class DebianTest extends TestCase
             ->with('6.0')
             ->willThrowException($exception);
 
-        /** @var LoggerInterface $logger */
-        /** @var VersionFactoryInterface $versionFactory */
+        \assert($logger instanceof LoggerInterface);
+        \assert($versionFactory instanceof VersionFactoryInterface);
         $object = new Debian($logger, $versionFactory);
 
         $detectedVersion = $object->detectVersion($useragent);
@@ -198,8 +198,8 @@ final class DebianTest extends TestCase
             ->expects(self::never())
             ->method('set');
 
-        /** @var LoggerInterface $logger */
-        /** @var VersionFactoryInterface $versionFactory */
+        \assert($logger instanceof LoggerInterface);
+        \assert($versionFactory instanceof VersionFactoryInterface);
         $object = new Debian($logger, $versionFactory);
 
         $detectedVersion = $object->detectVersion($useragent);

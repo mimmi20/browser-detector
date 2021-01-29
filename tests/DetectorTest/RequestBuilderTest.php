@@ -72,7 +72,7 @@ final class RequestBuilderTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        /** @var \Psr\Log\LoggerInterface $logger */
+        \assert($logger instanceof LoggerInterface);
         $result = $this->object->buildRequest($logger, $useragent);
         \assert($result instanceof GenericRequest, sprintf('$result should be an instance of %s, but is %s', GenericRequest::class, get_class($result)));
 
@@ -119,7 +119,7 @@ final class RequestBuilderTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        /** @var \Psr\Log\LoggerInterface $logger */
+        \assert($logger instanceof LoggerInterface);
 
         $message        = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => [$useragent]]);
         $requestFactory = new GenericRequestFactory();
@@ -171,7 +171,7 @@ final class RequestBuilderTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        /** @var \Psr\Log\LoggerInterface $logger */
+        \assert($logger instanceof LoggerInterface);
 
         $message        = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => [$useragent]]);
         $requestFactory = new GenericRequestFactory();
@@ -218,7 +218,7 @@ final class RequestBuilderTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        /* @var \Psr\Log\LoggerInterface $logger */
+        \assert($logger instanceof LoggerInterface);
 
         $this->expectException(\UnexpectedValueException::class);
         $this->expectExceptionMessage('the request parameter has to be a string, an array or an instance of \Psr\Http\Message\MessageInterface');

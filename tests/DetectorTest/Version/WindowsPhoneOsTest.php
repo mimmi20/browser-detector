@@ -64,7 +64,7 @@ final class WindowsPhoneOsTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        /** @var LoggerInterface $logger */
+        \assert($logger instanceof LoggerInterface);
         $object = new WindowsPhoneOs($logger, new VersionFactory());
 
         $detectedVersion = $object->detectVersion($useragent);
@@ -163,8 +163,8 @@ final class WindowsPhoneOsTest extends TestCase
             ->with('7.5.0')
             ->willThrowException($exception);
 
-        /** @var LoggerInterface $logger */
-        /** @var VersionFactoryInterface $versionFactory */
+        \assert($logger instanceof LoggerInterface);
+        \assert($versionFactory instanceof VersionFactoryInterface);
         $object = new WindowsPhoneOs($logger, $versionFactory);
 
         $detectedVersion = $object->detectVersion($useragent);
@@ -219,8 +219,8 @@ final class WindowsPhoneOsTest extends TestCase
             ->with('8.10')
             ->willThrowException($exception);
 
-        /** @var LoggerInterface $logger */
-        /** @var VersionFactoryInterface $versionFactory */
+        \assert($logger instanceof LoggerInterface);
+        \assert($versionFactory instanceof VersionFactoryInterface);
         $object = new WindowsPhoneOs($logger, $versionFactory);
 
         $detectedVersion = $object->detectVersion($useragent);
@@ -275,8 +275,8 @@ final class WindowsPhoneOsTest extends TestCase
             ->with('8.0.0')
             ->willThrowException($exception);
 
-        /** @var LoggerInterface $logger */
-        /** @var VersionFactoryInterface $versionFactory */
+        \assert($logger instanceof LoggerInterface);
+        \assert($versionFactory instanceof VersionFactoryInterface);
         $object = new WindowsPhoneOs($logger, $versionFactory);
 
         $detectedVersion = $object->detectVersion($useragent);
@@ -331,8 +331,8 @@ final class WindowsPhoneOsTest extends TestCase
             ->with('8.1.0')
             ->willThrowException($exception);
 
-        /** @var LoggerInterface $logger */
-        /** @var VersionFactoryInterface $versionFactory */
+        \assert($logger instanceof LoggerInterface);
+        \assert($versionFactory instanceof VersionFactoryInterface);
         $object = new WindowsPhoneOs($logger, $versionFactory);
 
         $detectedVersion = $object->detectVersion($useragent);
@@ -390,8 +390,8 @@ final class WindowsPhoneOsTest extends TestCase
             ->expects(self::never())
             ->method('set');
 
-        /** @var LoggerInterface $logger */
-        /** @var VersionFactoryInterface $versionFactory */
+        \assert($logger instanceof LoggerInterface);
+        \assert($versionFactory instanceof VersionFactoryInterface);
         $object = new WindowsPhoneOs($logger, $versionFactory);
 
         $detectedVersion = $object->detectVersion($useragent);

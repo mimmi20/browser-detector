@@ -16,7 +16,6 @@ use BrowserDetector\Loader\NotFoundException;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
 use UaDisplaySize\DisplayTypeInterface;
-use UaDisplaySize\TypeLoader;
 use UaDisplaySize\TypeLoaderInterface;
 use UaResult\Device\DisplayInterface;
 
@@ -62,13 +61,13 @@ final class DisplayFactoryTest extends TestCase
             ->expects(self::never())
             ->method('loadByDimensions');
 
-        /** @var TypeLoader $typeLoader */
+        \assert($typeLoader instanceof TypeLoaderInterface);
         $object = new DisplayFactory($typeLoader);
 
         $this->expectException(\AssertionError::class);
         $this->expectExceptionMessage('"width" property is required');
 
-        /* @var \Psr\Log\LoggerInterface $logger */
+        \assert($logger instanceof LoggerInterface);
         $object->fromArray($logger, []);
     }
 
@@ -135,13 +134,13 @@ final class DisplayFactoryTest extends TestCase
             ->with($height, $width)
             ->willReturn($type);
 
-        /** @var TypeLoader $typeLoader */
+        \assert($typeLoader instanceof TypeLoaderInterface);
         $object = new DisplayFactory($typeLoader);
 
         $size  = 12.1;
         $touch = true;
 
-        /** @var \Psr\Log\LoggerInterface $logger */
+        \assert($logger instanceof LoggerInterface);
         $result = $object->fromArray($logger, ['width' => $width, 'height' => $height, 'touch' => $touch, 'size' => $size]);
 
         self::assertInstanceOf(DisplayInterface::class, $result);
@@ -230,13 +229,13 @@ final class DisplayFactoryTest extends TestCase
             ->with($height, $width)
             ->willThrowException($exception);
 
-        /** @var TypeLoader $typeLoader */
+        \assert($typeLoader instanceof TypeLoaderInterface);
         $object = new DisplayFactory($typeLoader);
 
         $size  = 12.1;
         $touch = true;
 
-        /** @var \Psr\Log\LoggerInterface $logger */
+        \assert($logger instanceof LoggerInterface);
         $result = $object->fromArray($logger, ['width' => $width, 'height' => $height, 'touch' => $touch, 'size' => $size]);
 
         self::assertInstanceOf(DisplayInterface::class, $result);
