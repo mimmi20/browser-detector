@@ -10,7 +10,9 @@
     <arg name="encoding" value="utf-8"/>
 
     <!-- inherit rules from: -->
-    <rule ref="mimmi20-cs"/>
+    <rule ref="mimmi20-cs">
+        <exclude name="PSR12.Classes.AnonClassDeclaration.SpaceAfterKeyword"/>
+    </rule>
 
     <!-- Paths to check -->
     <file>src</file>
