@@ -13,8 +13,36 @@
     "type": "phablet",
     "platform": "android"
   },
+  "samsung sm-s205dl": {
+    "deviceName": "SM-S205DL",
+    "marketingName": "Galaxy A20",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 1560,
+      "height": 720,
+      "touch": true,
+      "size": 6.4
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
   "samsung sm-a205yn": {
     "deviceName": "SM-A205YN",
+    "marketingName": "Galaxy A20 (Australia, New Zealand)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 1560,
+      "height": 720,
+      "touch": true,
+      "size": 6.4
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sm-s205yn": {
+    "deviceName": "SM-S205YN",
     "marketingName": "Galaxy A20 (Australia, New Zealand)",
     "manufacturer": "samsung",
     "brand": "samsung",
@@ -41,6 +69,20 @@
     "type": "phablet",
     "platform": "android"
   },
+  "samsung sm-s205w": {
+    "deviceName": "SM-S205W",
+    "marketingName": "Galaxy A20 (Canada)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 1560,
+      "height": 720,
+      "touch": true,
+      "size": 6.4
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
   "samsung sm-a205fn": {
     "deviceName": "SM-A205FN",
     "marketingName": "Galaxy A20 (Global)",
@@ -55,8 +97,64 @@
     "type": "phablet",
     "platform": "android"
   },
+  "samsung sm-s205f": {
+    "deviceName": "SM-S205F",
+    "marketingName": "Galaxy A20 (Global)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 1560,
+      "height": 720,
+      "touch": true,
+      "size": 6.4
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sm-s205fn": {
+    "deviceName": "SM-S205FN",
+    "marketingName": "Galaxy A20 (Global)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 1560,
+      "height": 720,
+      "touch": true,
+      "size": 6.4
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sm-s205s": {
+    "deviceName": "SM-S205S",
+    "marketingName": "Galaxy A20 (Korea)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 1560,
+      "height": 720,
+      "touch": true,
+      "size": 6.4
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
   "samsung sm-a205g": {
     "deviceName": "SM-A205G",
+    "marketingName": "Galaxy A20 (LATAM/Brazil)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 1560,
+      "height": 720,
+      "touch": true,
+      "size": 6.4
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sm-s205g": {
+    "deviceName": "SM-S205G",
     "marketingName": "Galaxy A20 (LATAM/Brazil)",
     "manufacturer": "samsung",
     "brand": "samsung",
@@ -83,8 +181,50 @@
     "type": "phablet",
     "platform": "android"
   },
+  "samsung sm-s205gn": {
+    "deviceName": "SM-S205GN",
+    "marketingName": "Galaxy A20 (Philippines, Hong Kong, Taiwan)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 1560,
+      "height": 720,
+      "touch": true,
+      "size": 6.4
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sm-s205u1": {
+    "deviceName": "SM-S205U1",
+    "marketingName": "Galaxy A20 (USA unlocked)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 1560,
+      "height": 720,
+      "touch": true,
+      "size": 6.4
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
   "samsung sm-a205u": {
     "deviceName": "SM-A205U",
+    "marketingName": "Galaxy A20 (USA)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 1560,
+      "height": 720,
+      "touch": true,
+      "size": 6.4
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sm-s205u": {
+    "deviceName": "SM-S205U",
     "marketingName": "Galaxy A20 (USA)",
     "manufacturer": "samsung",
     "brand": "samsung",
@@ -195,9 +335,65 @@
     "type": "phablet",
     "platform": "android"
   },
+  "samsung sm-a426b": {
+    "deviceName": "SM-A426B",
+    "marketingName": "Galaxy A42 5G",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 1600,
+      "height": 720,
+      "touch": true,
+      "size": 6.6
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sm-a515w": {
+    "deviceName": "SM-A515W",
+    "marketingName": "Galaxy A51 4G (Canada)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.5
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
   "samsung sm-a515f": {
     "deviceName": "SM-A515F",
-    "marketingName": "Galaxy A51",
+    "marketingName": "Galaxy A51 4G (Global)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.5
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sm-a515u1": {
+    "deviceName": "SM-A515U1",
+    "marketingName": "Galaxy A51 4G (USA unlocked)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.5
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sm-a515u": {
+    "deviceName": "SM-A515U",
+    "marketingName": "Galaxy A51 4G (USA)",
     "manufacturer": "samsung",
     "brand": "samsung",
     "display": {
@@ -363,6 +559,20 @@
     "type": "phablet",
     "platform": "android"
   },
+  "samsung sm-g8858": {
+    "deviceName": "SM-G8858",
+    "marketingName": "Galaxy A8 Star Duos",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 2220,
+      "height": 1080,
+      "touch": true,
+      "size": 6.3
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
   "samsung sm-g885s": {
     "deviceName": "SM-G885S",
     "marketingName": "Galaxy A8 Star Duos",
@@ -457,6 +667,34 @@
       "height": 1080,
       "touch": true,
       "size": 6.4
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sm-m317f": {
+    "deviceName": "SM-M317F",
+    "marketingName": "Galaxy M31s",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.5
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sm-m515f": {
+    "deviceName": "SM-M515F",
+    "marketingName": "Galaxy M51 (International)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.7
     },
     "type": "phablet",
     "platform": "android"
@@ -1483,36 +1721,8 @@
     "type": "phablet",
     "platform": "android"
   },
-  "samsung sm-g9810": {
-    "deviceName": "SM-G9810",
-    "marketingName": "Galaxy S20 5G",
-    "manufacturer": "samsung",
-    "brand": "samsung",
-    "display": {
-      "width": 3200,
-      "height": 1440,
-      "touch": true,
-      "size": 6.2
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
-  "samsung sm-g981b": {
-    "deviceName": "SM-G981B",
-    "marketingName": "Galaxy S20 5G",
-    "manufacturer": "samsung",
-    "brand": "samsung",
-    "display": {
-      "width": 3200,
-      "height": 1440,
-      "touch": true,
-      "size": 6.2
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
-  "samsung sm-g981u": {
-    "deviceName": "SM-G981U",
+  "samsung sm-g981n": {
+    "deviceName": "SM-G981N",
     "marketingName": "Galaxy S20 5G",
     "manufacturer": "samsung",
     "brand": "samsung",
@@ -1528,6 +1738,90 @@
   "samsung sm-g981v": {
     "deviceName": "SM-G981V",
     "marketingName": "Galaxy S20 5G",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 3200,
+      "height": 1440,
+      "touch": true,
+      "size": 6.2
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sm-g981w": {
+    "deviceName": "SM-G981W",
+    "marketingName": "Galaxy S20 5G (Canada)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 3200,
+      "height": 1440,
+      "touch": true,
+      "size": 6.2
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sm-g9810": {
+    "deviceName": "SM-G9810",
+    "marketingName": "Galaxy S20 5G (China, Hong Kong)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 3200,
+      "height": 1440,
+      "touch": true,
+      "size": 6.2
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sm-g981b": {
+    "deviceName": "SM-G981B",
+    "marketingName": "Galaxy S20 5G (International)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 3200,
+      "height": 1440,
+      "touch": true,
+      "size": 6.2
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sm-g981f": {
+    "deviceName": "SM-G981F",
+    "marketingName": "Galaxy S20 5G (International)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 3200,
+      "height": 1440,
+      "touch": true,
+      "size": 6.2
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sm-g981u1": {
+    "deviceName": "SM-G981U1",
+    "marketingName": "Galaxy S20 5G (USA Unlocked)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 3200,
+      "height": 1440,
+      "touch": true,
+      "size": 6.2
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sm-g981u": {
+    "deviceName": "SM-G981U",
+    "marketingName": "Galaxy S20 5G (USA)",
     "manufacturer": "samsung",
     "brand": "samsung",
     "display": {
@@ -1626,6 +1920,20 @@
   "samsung sm-g781u": {
     "deviceName": "SM-G781U",
     "marketingName": "Galaxy S20 FE 5G (USA)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.5
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sm-g781v": {
+    "deviceName": "SM-G781V",
+    "marketingName": "Galaxy S20 FE 5G (Verizon)",
     "manufacturer": "samsung",
     "brand": "samsung",
     "display": {
@@ -1903,6 +2211,20 @@
     "type": "phablet",
     "platform": "android"
   },
+  "samsung scv47": {
+    "deviceName": "SCV47",
+    "marketingName": "Galaxy Z Flip",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 2636,
+      "height": 1080,
+      "touch": true,
+      "size": 6.7
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
   "samsung sm-f700": {
     "deviceName": "SM-F700",
     "marketingName": "Galaxy Z Flip",
@@ -1933,6 +2255,20 @@
   },
   "samsung sm-f700f": {
     "deviceName": "SM-F700F",
+    "marketingName": "Galaxy Z Flip",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "display": {
+      "width": 2636,
+      "height": 1080,
+      "touch": true,
+      "size": 6.7
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sm-f700j": {
+    "deviceName": "SM-F700J",
     "marketingName": "Galaxy Z Flip",
     "manufacturer": "samsung",
     "brand": "samsung",
