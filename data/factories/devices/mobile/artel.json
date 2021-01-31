@@ -1,6 +1,8 @@
 {
   "rules": {
-    "/adi_5s/i": "artel adi5s"
+    "/quadro[ _]pro/i": "artel quadro pro",
+    "/quadro/i": "artel quadro",
+    "/adi[ _]5s/i": "artel adi5s"
   },
   "generic": "general artel device"
 }
