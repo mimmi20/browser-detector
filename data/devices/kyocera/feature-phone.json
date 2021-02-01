@@ -13,6 +13,48 @@
     "type": "feature-phone",
     "platform": "java"
   },
+  "kyocera kwc-k312": {
+    "deviceName": "KWC-K312",
+    "marketingName": "Cyclops",
+    "manufacturer": "kyocera",
+    "brand": "kyocera",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "kyocera kwc-k325": {
+    "deviceName": "KWC-K325",
+    "marketingName": "Cyclops",
+    "manufacturer": "kyocera",
+    "brand": "kyocera",
+    "display": {
+      "width": 160,
+      "height": 128,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "kyocera e4000": {
+    "deviceName": "E4000",
+    "marketingName": "E4000",
+    "manufacturer": "kyocera",
+    "brand": "kyocera",
+    "display": {
+      "width": 320,
+      "height": 240,
+      "touch": true,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "windows ce"
+  },
   "kyocera kwc-k323": {
     "deviceName": "KWC-K323",
     "marketingName": "KWC-K323",
@@ -27,9 +69,51 @@
     "type": "feature-phone",
     "platform": "java"
   },
+  "kyocera kwc-k483j": {
+    "deviceName": "KWC-K483J",
+    "marketingName": "KWC-K483J",
+    "manufacturer": "kyocera",
+    "brand": "kyocera",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "kyocera kwc-k612": {
     "deviceName": "KWC-K612",
     "marketingName": "KWC-K612",
+    "manufacturer": "kyocera",
+    "brand": "kyocera",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "kyocera kwc-m1000": {
+    "deviceName": "KWC-M1000",
+    "marketingName": "KWC-M1000",
+    "manufacturer": "kyocera",
+    "brand": "kyocera",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "kyocera kwc-m1400": {
+    "deviceName": "KWC-M1400",
+    "marketingName": "KWC-M1400",
     "manufacturer": "kyocera",
     "brand": "kyocera",
     "display": {
@@ -69,6 +153,20 @@
     "type": "feature-phone",
     "platform": "java"
   },
+  "kyocera kwc-k132": {
+    "deviceName": "KWC-K132",
+    "marketingName": "Marbl",
+    "manufacturer": "kyocera",
+    "brand": "kyocera",
+    "display": {
+      "width": 128,
+      "height": 128,
+      "touch": false,
+      "size": null
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
   "kyocera qc-2135": {
     "deviceName": "QC-2135",
     "marketingName": "QC-2135",
@@ -93,6 +191,20 @@
       "height": 240,
       "touch": false,
       "size": 2.5
+    },
+    "type": "feature-phone",
+    "platform": "java"
+  },
+  "kyocera wx01k": {
+    "deviceName": "WX01K",
+    "marketingName": "WX01K",
+    "manufacturer": "kyocera",
+    "brand": "kyocera",
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
     },
     "type": "feature-phone",
     "platform": "java"

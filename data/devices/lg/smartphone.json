@@ -139,6 +139,20 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "lg lm-k300": {
+    "deviceName": "LM-K300",
+    "marketingName": "Aristo 5",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 1520,
+      "height": 720,
+      "touch": true,
+      "size": 5.7
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "lg lgl25": {
     "deviceName": "LGL25",
     "marketingName": "au Fx0",
@@ -3106,6 +3120,20 @@
     },
     "type": "smartphone",
     "platform": "windows phone"
+  },
+  "lg l322dl": {
+    "deviceName": "L322DL",
+    "marketingName": "Journey LTE",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 1440,
+      "height": 720,
+      "touch": true,
+      "size": 5.4
+    },
+    "type": "smartphone",
+    "platform": "android"
   },
   "lg h220": {
     "deviceName": "H220",
@@ -8259,6 +8287,20 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "lg lm-q730": {
+    "deviceName": "LM-Q730",
+    "marketingName": "Q70",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 2310,
+      "height": 1080,
+      "touch": true,
+      "size": 6.4
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "lg h970": {
     "deviceName": "H970",
     "marketingName": "Q8",
@@ -8843,6 +8885,34 @@
       "height": 1080,
       "touch": true,
       "size": 5.7
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "lg q710al": {
+    "deviceName": "Q710AL",
+    "marketingName": "Stylo 4",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 2160,
+      "height": 1080,
+      "touch": true,
+      "size": 6.2
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "lg l722dl": {
+    "deviceName": "L722DL",
+    "marketingName": "Stylo 5",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 2160,
+      "height": 1080,
+      "touch": true,
+      "size": 6.2
     },
     "type": "smartphone",
     "platform": "android"
@@ -9617,50 +9687,8 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "lg h930": {
-    "deviceName": "H930",
-    "marketingName": "V30",
-    "manufacturer": "lg",
-    "brand": "lg",
-    "display": {
-      "width": 2880,
-      "height": 1440,
-      "touch": true,
-      "size": 6
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
-  "lg h931": {
-    "deviceName": "H931",
-    "marketingName": "V30",
-    "manufacturer": "lg",
-    "brand": "lg",
-    "display": {
-      "width": 2880,
-      "height": 1440,
-      "touch": true,
-      "size": 6
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
-  "lg h932": {
-    "deviceName": "H932",
-    "marketingName": "V30",
-    "manufacturer": "lg",
-    "brand": "lg",
-    "display": {
-      "width": 2880,
-      "height": 1440,
-      "touch": true,
-      "size": 6
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
-  "lg h933": {
-    "deviceName": "H933",
+  "lg as998": {
+    "deviceName": "AS998",
     "marketingName": "V30",
     "manufacturer": "lg",
     "brand": "lg",
@@ -9687,9 +9715,9 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "lg v300l": {
-    "deviceName": "V300L",
-    "marketingName": "V30",
+  "lg h933": {
+    "deviceName": "H933",
+    "marketingName": "V30 (Canada)",
     "manufacturer": "lg",
     "brand": "lg",
     "display": {
@@ -9701,9 +9729,9 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "lg vs996": {
-    "deviceName": "VS996",
-    "marketingName": "V30",
+  "lg h930": {
+    "deviceName": "H930",
+    "marketingName": "V30 (Europe)",
     "manufacturer": "lg",
     "brand": "lg",
     "display": {
@@ -9717,7 +9745,119 @@
   },
   "lg h930ds": {
     "deviceName": "H930DS",
-    "marketingName": "V30+",
+    "marketingName": "V30 (Hong Kong)",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 2880,
+      "height": 1440,
+      "touch": true,
+      "size": 6
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "lg v300l": {
+    "deviceName": "V300L",
+    "marketingName": "V30 (Korea)",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 2880,
+      "height": 1440,
+      "touch": true,
+      "size": 6
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "lg v300s": {
+    "deviceName": "V300S",
+    "marketingName": "V30 (Korea)",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 2880,
+      "height": 1440,
+      "touch": true,
+      "size": 6
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "lg ls998": {
+    "deviceName": "LS998",
+    "marketingName": "V30 (Sprint)",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 2880,
+      "height": 1440,
+      "touch": true,
+      "size": 6
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "lg ls998u": {
+    "deviceName": "LS998U",
+    "marketingName": "V30 (Sprint)",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 2880,
+      "height": 1440,
+      "touch": true,
+      "size": 6
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "lg h932": {
+    "deviceName": "H932",
+    "marketingName": "V30 (T-Mobile)",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 2880,
+      "height": 1440,
+      "touch": true,
+      "size": 6
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "lg us998": {
+    "deviceName": "US998",
+    "marketingName": "V30 (US Cellular)",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 2880,
+      "height": 1440,
+      "touch": true,
+      "size": 6
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "lg vs996": {
+    "deviceName": "VS996",
+    "marketingName": "V30 (Verizon)",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "display": {
+      "width": 2880,
+      "height": 1440,
+      "touch": true,
+      "size": 6
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "lg h931": {
+    "deviceName": "H931",
+    "marketingName": "V30 (АТ&Т)",
     "manufacturer": "lg",
     "brand": "lg",
     "display": {
@@ -9739,34 +9879,6 @@
       "height": 1440,
       "touch": true,
       "size": 6
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
-  "lg ls998u": {
-    "deviceName": "LS998U",
-    "marketingName": "V30+",
-    "manufacturer": "lg",
-    "brand": "lg",
-    "display": {
-      "width": 2880,
-      "height": 1440,
-      "touch": true,
-      "size": null
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
-  "lg us998": {
-    "deviceName": "US998",
-    "marketingName": "V30+",
-    "manufacturer": "lg",
-    "brand": "lg",
-    "display": {
-      "width": 2880,
-      "height": 1440,
-      "touch": true,
-      "size": null
     },
     "type": "smartphone",
     "platform": "android"

@@ -1,6 +1,9 @@
 {
   "rules": {
-    "/explore/i": "land-rover explore"
+    "/explore/i": "land-rover explore",
+    "/roverd?[ _]x18/i": "land-rover x18",
+    "/rover[ _]x17/i": "land-rover x17",
+    "/rover[ _]x/i": "land-rover x"
   },
   "generic": "general land-rover device"
 }

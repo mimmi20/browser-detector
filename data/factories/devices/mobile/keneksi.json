@@ -1,10 +1,33 @@
 {
   "rules": {
-    "/libra_dual/i": "keneksi libra dual",
+    "/libra[ _]dual/i": "keneksi libra dual",
+    "/liberty/i": "keneksi liberty",
     "/crystal/i": "keneksi crystal",
-    "/norma 2/i": "keneksi norma 2",
+    "/choice/i": "keneksi choice",
+    "/chance/i": "keneksi chance",
+    "/amulet/i": "keneksi amulet",
+    "/storm/i": "keneksi storm",
+    "/sigma/i": "keneksi sigma",
+    "/norma[ _]2/i": "keneksi norma 2",
+    "/norma/i": "keneksi norma",
+    "/glass/i": "keneksi glass",
     "/flora/i": "keneksi flora",
-    "/sun/i": "keneksi sun"
+    "/flash/i": "keneksi flash",
+    "/flame/i": "keneksi flame",
+    "/dream/i": "keneksi dream",
+    "/delta/i": "keneksi delta",
+    "/amber/i": "keneksi amber",
+    "/zeta/i": "keneksi zeta",
+    "/wind/i": "keneksi wind",
+    "/step/i": "keneksi step",
+    "/star/i": "keneksi star",
+    "/soul/i": "keneksi soul",
+    "/solo/i": "keneksi solo",
+    "/rock/i": "keneksi rock",
+    "/moon/i": "keneksi moon",
+    "/fire/i": "keneksi fire",
+    "/sun/i": "keneksi sun",
+    "/sky/i": "keneksi sky"
   },
   "generic": "general keneksi device"
 }

@@ -2,8 +2,12 @@
   "rules": {
     "/move[ _]8/i": "kruger-matz move 8",
     "/km0437|move[ _]6/i": "kruger-matz km0437",
-    "/flow_5/i": "kruger-matz flow 5",
-    "/km0701_1/i": "kruger-matz km0701_1"
+    "/km0450|live[ _]5/i": "kruger-matz live 5",
+    "/km0449|drive[ _]5/i": "kruger-matz drive 5",
+    "/drive[ _]4s/i": "kruger-matz drive 4s",
+    "/drive[ _]4/i": "kruger-matz drive 4",
+    "/flow[ _]5/i": "kruger-matz flow 5",
+    "/km0701[ _]1/i": "kruger-matz km0701_1"
   },
   "generic": "general kruger-matz device"
 }
