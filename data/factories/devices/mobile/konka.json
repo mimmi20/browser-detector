@@ -1,7 +1,10 @@
 {
   "rules": {
     "/v980/i": "konka v980",
-    "/v926/i": "konka v926"
+    "/v926/i": "konka v926",
+    "/[ _\\-]v8/i": "konka v8",
+    "/[ _\\-]v7/i": "konka v7",
+    "/[ _\\-]a66/i": "konka a66"
   },
   "generic": "general konka device"
 }

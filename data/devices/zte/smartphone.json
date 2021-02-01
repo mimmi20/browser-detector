@@ -1399,20 +1399,6 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "zte 9000": {
-    "deviceName": "9000",
-    "marketingName": "Blade V2020 (LTE-A, LATAM)",
-    "manufacturer": "zte",
-    "brand": "zte",
-    "display": {
-      "width": 2340,
-      "height": 1080,
-      "touch": true,
-      "size": 6.5
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
   "zte blade v220": {
     "deviceName": "Blade V220",
     "marketingName": "Blade V220",
@@ -1616,6 +1602,20 @@
     "brand": "zte",
     "display": {
       "width": 854,
+      "height": 480,
+      "touch": true,
+      "size": 5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "zte z3153v": {
+    "deviceName": "Z3153V",
+    "marketingName": "Blade Vantage 2 LTE",
+    "manufacturer": "zte",
+    "brand": "zte",
+    "display": {
+      "width": 960,
       "height": 480,
       "touch": true,
       "size": 5
@@ -3523,48 +3523,6 @@
       "height": 1080,
       "touch": true,
       "size": 6
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
-  "zte nx629j": {
-    "deviceName": "NX629J",
-    "marketingName": "Nubia Red Magic 3",
-    "manufacturer": "zte",
-    "brand": "zte",
-    "display": {
-      "width": 2340,
-      "height": 1080,
-      "touch": true,
-      "size": 6.65
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
-  "zte nx659j": {
-    "deviceName": "NX659J",
-    "marketingName": "Nubia Red Magic 5G",
-    "manufacturer": "zte",
-    "brand": "zte",
-    "display": {
-      "width": 2340,
-      "height": 1080,
-      "touch": true,
-      "size": 6.65
-    },
-    "type": "smartphone",
-    "platform": "android"
-  },
-  "zte nx651j": {
-    "deviceName": "NX651J",
-    "marketingName": "Nubia Red Magic 5G Lite",
-    "manufacturer": "zte",
-    "brand": "zte",
-    "display": {
-      "width": 2340,
-      "height": 1080,
-      "touch": true,
-      "size": 6.65
     },
     "type": "smartphone",
     "platform": "android"

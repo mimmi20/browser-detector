@@ -1,9 +1,10 @@
 {
   "rules": {
+    "/[ _]s8[ )]/i": "maxtron s8",
     "/v7/i": "maxtron v7",
-    "/[ _]v3 /i": "maxtron v3",
-    "/[ _]v2 /i": "maxtron v2",
-    "/[ _]v1 /i": "maxtron v1"
+    "/[ _]v3[ )]/i": "maxtron v3",
+    "/[ _]v2[ )]/i": "maxtron v2",
+    "/[ _]v1[ )]/i": "maxtron v1"
   },
   "generic": "general maxtron device"
 }
