@@ -457,7 +457,83 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 6.0;Karbonn K9 Viraat 4G Build/KOT49H)  AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0  Mobile Safari/534.30"
+      "user-agent": "WAP Browser Karbonn K75"
+    },
+    "device": {
+      "deviceName": "K75",
+      "marketingName": "K75",
+      "manufacturer": "karbonn",
+      "brand": "karbonn",
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "WAP Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "wap-browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Karbonn K85 WAP Browser/v1.0.0"
+    },
+    "device": {
+      "deviceName": "K85",
+      "marketingName": "K85",
+      "manufacturer": "karbonn",
+      "brand": "karbonn",
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 4.95
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "WAP Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "wap-browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Maui_Browser_Karbonn_K9"
     },
     "device": {
       "deviceName": "K9",
@@ -473,12 +549,12 @@
       "type": "feature-phone"
     },
     "browser": {
-      "name": "Android WebView",
+      "name": null,
       "modus": null,
-      "version": "30.0.0.0",
-      "manufacturer": "google",
+      "version": null,
+      "manufacturer": "unknown",
       "bits": null,
-      "type": "browser"
+      "type": "unknown"
     },
     "os": {
       "name": "JavaOS",
@@ -488,9 +564,9 @@
       "bits": null
     },
     "engine": {
-      "name": "Blink",
-      "version": "30.0.0.0",
-      "manufacturer": "google"
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
     }
   }
 ]
