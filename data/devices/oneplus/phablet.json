@@ -278,5 +278,47 @@
     },
     "type": "phablet",
     "platform": "android"
+  },
+  "oneplus kb2000": {
+    "deviceName": "KB2000",
+    "marketingName": "8T",
+    "manufacturer": "bbk",
+    "brand": "oneplus",
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.55
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "oneplus kb2003": {
+    "deviceName": "KB2003",
+    "marketingName": "8T Lunar",
+    "manufacturer": "bbk",
+    "brand": "oneplus",
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.55
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "oneplus ac2003": {
+    "deviceName": "AC2003",
+    "marketingName": "Nord 5G (International)",
+    "manufacturer": "bbk",
+    "brand": "oneplus",
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.4
+    },
+    "type": "phablet",
+    "platform": "android"
   }
 }

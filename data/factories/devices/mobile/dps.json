@@ -1,7 +1,8 @@
 {
   "rules": {
-    "/dream 9/i": "dps dream 9",
-    "/dual 7/i": "dps dual 7",
+    "/dream[ _]9/i": "dps dream 9",
+    "/dual[ _]7/i": "dps dual 7",
+    "/titan/i": "dps titan",
     "/iq7/i": "dps iq7"
   },
   "generic": "general dps device"

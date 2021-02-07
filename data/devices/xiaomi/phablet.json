@@ -55,6 +55,20 @@
     "type": "phablet",
     "platform": "android"
   },
+  "xiaomi m2007j1sc": {
+    "deviceName": "M2007J1SC",
+    "marketingName": "Mi 10 Ultra LTE (China)",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "display": {
+      "width": 2340,
+      "height": 1080,
+      "touch": true,
+      "size": 6.67
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
   "xiaomi m2002j9e": {
     "deviceName": "M2002J9E",
     "marketingName": "Mi 10 Youth 5G",
@@ -65,6 +79,48 @@
       "height": 1080,
       "touch": true,
       "size": 6.57
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "xiaomi m2007j3sy": {
+    "deviceName": "M2007J3SY",
+    "marketingName": "Mi 10T 5G (Global)",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.7
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "xiaomi m2007j17g": {
+    "deviceName": "M2007J17G",
+    "marketingName": "Mi 10T Lite 5G (Global)",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.7
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "xiaomi m2007j3sg": {
+    "deviceName": "M2007J3SG",
+    "marketingName": "Mi 10T Pro 5G (Global)",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.7
     },
     "type": "phablet",
     "platform": "android"
@@ -287,6 +343,62 @@
     "display": {
       "width": 2340,
       "height": 1080,
+      "touch": true,
+      "size": 6.5
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "xiaomi m2006c3lc": {
+    "deviceName": "M2006C3LC",
+    "marketingName": "Redmi 9A (China)",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "display": {
+      "width": 1600,
+      "height": 720,
+      "touch": true,
+      "size": 6.5
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "xiaomi dandelion": {
+    "deviceName": "Dandelion",
+    "marketingName": "Redmi 9A (Global)",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "display": {
+      "width": 1600,
+      "height": 720,
+      "touch": true,
+      "size": 6.5
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "xiaomi m2006c3lg": {
+    "deviceName": "M2006C3LG",
+    "marketingName": "Redmi 9A (Global)",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "display": {
+      "width": 1600,
+      "height": 720,
+      "touch": true,
+      "size": 6.5
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "xiaomi m2006c3li": {
+    "deviceName": "M2006C3LI",
+    "marketingName": "Redmi 9A (India)",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "display": {
+      "width": 1600,
+      "height": 720,
       "touch": true,
       "size": 6.5
     },
