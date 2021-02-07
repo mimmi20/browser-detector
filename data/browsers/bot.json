@@ -5859,6 +5859,18 @@
     },
     "engine": "unknown"
   },
+  "petalbot": {
+    "name": "PetalBot",
+    "manufacturer": "aspiegel",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "PetalBot"
+      ]
+    },
+    "engine": "unknown"
+  },
   "phantom.js bot": {
     "name": "Phantom.js bot",
     "manufacturer": "unknown",
