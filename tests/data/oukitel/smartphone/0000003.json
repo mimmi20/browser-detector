@@ -1,25 +1,25 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 9; WP6 Build/PPR1.180610.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.185 Mobile Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; WP5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.101 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "WP6",
-      "marketingName": "WP6",
+      "deviceName": "WP5",
+      "marketingName": "WP5",
       "manufacturer": "oukitel",
       "brand": "oukitel",
       "display": {
-        "width": 2340,
-        "height": 1080,
+        "width": 1440,
+        "height": 720,
         "touch": true,
-        "size": 6.3
+        "size": 5.5
       },
       "type": "smartphone"
     },
     "browser": {
       "name": "Chrome",
       "modus": null,
-      "version": "86.0.4240.185",
+      "version": "87.0.4280.101",
       "manufacturer": "google",
       "bits": null,
       "type": "browser"
@@ -33,31 +33,31 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "86.0.4240.185",
+      "version": "87.0.4280.101",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; C12 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Mobile Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.0.0; WP2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.93 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "C12 Pro",
-      "marketingName": "C12 Pro",
+      "deviceName": "WP2",
+      "marketingName": "WP2",
       "manufacturer": "oukitel",
       "brand": "oukitel",
       "display": {
-        "width": 996,
-        "height": 480,
+        "width": 2160,
+        "height": 1080,
         "touch": true,
-        "size": 6.18
+        "size": 6
       },
       "type": "smartphone"
     },
     "browser": {
       "name": "Chrome",
       "modus": null,
-      "version": "86.0.4240.198",
+      "version": "88.0.4324.93",
       "manufacturer": "google",
       "bits": null,
       "type": "browser"
@@ -65,37 +65,37 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "8.1.0",
+      "version": "8.0.0",
       "manufacturer": "google",
       "bits": null
     },
     "engine": {
       "name": "Blink",
-      "version": "86.0.4240.198",
+      "version": "88.0.4324.93",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; C12 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.101 Mobile Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; WP5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.141 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "C12 Pro",
-      "marketingName": "C12 Pro",
+      "deviceName": "WP5",
+      "marketingName": "WP5",
       "manufacturer": "oukitel",
       "brand": "oukitel",
       "display": {
-        "width": 996,
-        "height": 480,
+        "width": 1440,
+        "height": 720,
         "touch": true,
-        "size": 6.18
+        "size": 5.5
       },
       "type": "smartphone"
     },
     "browser": {
       "name": "Chrome",
       "modus": null,
-      "version": "87.0.4280.101",
+      "version": "88.0.4324.141",
       "manufacturer": "google",
       "bits": null,
       "type": "browser"
@@ -103,13 +103,51 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "8.1.0",
+      "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
     },
     "engine": {
       "name": "Blink",
-      "version": "87.0.4280.101",
+      "version": "88.0.4324.141",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; C15 Pro) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/13.2 Chrome/83.0.4103.106 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "C15 Pro",
+      "marketingName": "C15 Pro",
+      "manufacturer": "oukitel",
+      "brand": "oukitel",
+      "display": {
+        "width": 1280,
+        "height": 600,
+        "touch": true,
+        "size": 6.09
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Samsung Browser",
+      "modus": null,
+      "version": "13.2.0",
+      "manufacturer": "samsung",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "83.0.4103.106",
       "manufacturer": "google"
     }
   }
