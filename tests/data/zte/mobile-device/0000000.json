@@ -1,44 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 11_1_1 like Mac OS X) AppleWebKit/604.3.5 (KHTML, like Gecko) Mobile/15B150 [FBAN/FBIOS;FBAV/151.0.0.61.202;FBBV/82156572;FBDV/iPhone7,2;FBMD/iPhone;FBSN/iOS;FBSV/11.1.1;FBSS/2;FBCR/JAZZTEL;FBID/phone;FBLC/en_GB;FBOP/5;FBRV/82156572]"
-    },
-    "device": {
-      "deviceName": "general ZTE device",
-      "marketingName": "general ZTE device",
-      "manufacturer": "zte",
-      "brand": "zte",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "151.0.0.61.202",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": null,
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "604.3.5",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "YahooMobile/1.0 (im; 1.8.3.13903); (Linux; U; Android 2.3.5; ZTE_BP_GER Build/GINGERBREAD_MR1);"
     },
     "device": {
@@ -111,6 +73,44 @@
       "name": "Trident",
       "version": "5.0.0",
       "manufacturer": "microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 11_1_1 like Mac OS X) AppleWebKit/604.3.5 (KHTML, like Gecko) Mobile/15B150 [FBAN/FBIOS;FBAV/151.0.0.61.202;FBBV/82156572;FBDV/iPhone7,2;FBMD/iPhone;FBSN/iOS;FBSV/11.1.1;FBSS/2;FBCR/JAZZTEL;FBID/phone;FBLC/en_GB;FBOP/5;FBRV/82156572]"
+    },
+    "device": {
+      "deviceName": "general ZTE device",
+      "marketingName": "general ZTE device",
+      "manufacturer": "zte",
+      "brand": "zte",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "151.0.0.61.202",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": null,
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "604.3.5",
+      "manufacturer": "apple"
     }
   }
 ]
