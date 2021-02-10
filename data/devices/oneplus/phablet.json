@@ -139,16 +139,30 @@
     "type": "phablet",
     "platform": "android"
   },
-  "oneplus hd1913": {
-    "deviceName": "HD1913",
-    "marketingName": "7T Pro McLaren Edition (Global)",
+  "oneplus hd1911": {
+    "deviceName": "HD1911",
+    "marketingName": "7T Pro",
     "manufacturer": "bbk",
     "brand": "oneplus",
     "display": {
       "width": 3120,
       "height": 1440,
       "touch": true,
-      "size": 6.7
+      "size": 6.67
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "oneplus hd1913": {
+    "deviceName": "HD1913",
+    "marketingName": "7T Pro (Global)",
+    "manufacturer": "bbk",
+    "brand": "oneplus",
+    "display": {
+      "width": 3120,
+      "height": 1440,
+      "touch": true,
+      "size": 6.67
     },
     "type": "phablet",
     "platform": "android"
@@ -219,6 +233,34 @@
       "height": 1080,
       "touch": true,
       "size": 6.6
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "oneplus ac2001": {
+    "deviceName": "AC2001",
+    "marketingName": "8 NORD 5G (India)",
+    "manufacturer": "bbk",
+    "brand": "oneplus",
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.44
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "oneplus ac2003": {
+    "deviceName": "AC2003",
+    "marketingName": "8 NORD 5G (International)",
+    "manufacturer": "bbk",
+    "brand": "oneplus",
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.4
     },
     "type": "phablet",
     "platform": "android"
@@ -303,20 +345,6 @@
       "height": 1080,
       "touch": true,
       "size": 6.55
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
-  "oneplus ac2003": {
-    "deviceName": "AC2003",
-    "marketingName": "Nord 5G (International)",
-    "manufacturer": "bbk",
-    "brand": "oneplus",
-    "display": {
-      "width": 2400,
-      "height": 1080,
-      "touch": true,
-      "size": 6.4
     },
     "type": "phablet",
     "platform": "android"
