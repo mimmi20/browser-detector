@@ -1,14 +1,56 @@
 {
+  "nos five": {
+    "deviceName": "Five",
+    "marketingName": "Five",
+    "manufacturer": "zte",
+    "brand": "nos",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 5
+    },
+    "type": "smartphone",
+    "platform": "symbian"
+  },
+  "nos neva 80": {
+    "deviceName": "Neva 80",
+    "marketingName": "Neva 80",
+    "manufacturer": "zte",
+    "brand": "nos",
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": 5.2
+    },
+    "type": "smartphone",
+    "platform": "symbian"
+  },
   "nos novu": {
-    "deviceName": "NOVU",
-    "marketingName": "NOVU",
-    "manufacturer": "nos",
+    "deviceName": "Novu",
+    "marketingName": "Novu",
+    "manufacturer": "zte",
     "brand": "nos",
     "display": {
       "width": null,
       "height": null,
       "touch": true,
       "size": null
+    },
+    "type": "smartphone",
+    "platform": "symbian"
+  },
+  "nos roya": {
+    "deviceName": "Roya",
+    "marketingName": "Roya",
+    "manufacturer": "tcl",
+    "brand": "nos",
+    "display": {
+      "width": 854,
+      "height": 480,
+      "touch": true,
+      "size": 4.5
     },
     "type": "smartphone",
     "platform": "symbian"

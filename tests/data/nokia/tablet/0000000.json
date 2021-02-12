@@ -1,6 +1,44 @@
 [
   {
     "headers": {
+      "user-agent": "UCWEB/2.0 (MIDP-2.0; U; Adr 5.1; en-US; N1) U2/1.0.0 UCBrowser/10.5.0.668 U2/1.0.0 Mobile"
+    },
+    "device": {
+      "deviceName": "N1",
+      "marketingName": "N1",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 2048,
+        "height": 1536,
+        "touch": true,
+        "size": 7.9
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "10.5.0.668",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "U2",
+      "version": "1.0.0",
+      "manufacturer": "ucweb"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; N1 Build/A5FMB19) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.95 Safari/537.36"
     },
     "device": {
@@ -12,7 +50,7 @@
         "width": 2048,
         "height": 1536,
         "touch": true,
-        "size": null
+        "size": 7.9
       },
       "type": "tablet"
     },
@@ -50,7 +88,7 @@
         "width": 2048,
         "height": 1536,
         "touch": true,
-        "size": null
+        "size": 7.9
       },
       "type": "tablet"
     },
@@ -88,7 +126,7 @@
         "width": 2048,
         "height": 1536,
         "touch": true,
-        "size": null
+        "size": 7.9
       },
       "type": "tablet"
     },
@@ -126,7 +164,7 @@
         "width": 2048,
         "height": 1536,
         "touch": true,
-        "size": null
+        "size": 7.9
       },
       "type": "tablet"
     },

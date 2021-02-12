@@ -1,6 +1,44 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "SM-G981B",
+      "marketingName": "Galaxy S20 5G (International)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 3200,
+        "height": 1440,
+        "touch": true,
+        "size": 6.2
+      },
+      "type": "phablet"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "87.0.4280.141",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "87.0.4280.141",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 10; SM-A215U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.99 Mobile Safari/537.36"
     },
     "device": {
@@ -3758,44 +3796,6 @@
     "engine": {
       "name": "Blink",
       "version": "86.0.4240.198",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 11; SM-N975F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.79 Mobile Safari/537.36,gzip(gfe),gzip(gfe) (Chrome Image Compression Service)"
-    },
-    "device": {
-      "deviceName": "SM-N975F",
-      "marketingName": "Galaxy Note 10+ (Europe)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 3040,
-        "height": 1440,
-        "touch": true,
-        "size": 6.8
-      },
-      "type": "phablet"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "88.0.4324.79",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "11.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "88.0.4324.79",
       "manufacturer": "google"
     }
   }

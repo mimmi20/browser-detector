@@ -1,5 +1,13 @@
 {
   "rules": {
+    "/photo[ _]?p16/i": "x-tigi photo p16",
+    "/photo[ _]?p11/i": "x-tigi photo p11",
+    "/joy[ _]?10[ _]?pro/i": "x-tigi joy 10 pro",
+    "/joy[ _]?10/i": "x-tigi joy 10",
+    "/joy[ _]?7[ _]?max/i": "x-tigi joy 7 max",
+    "/j110/i": "x-tigi j110",
+    "/g530/i": "x-tigi g530",
+    "/v28[ _]?lte/i": "x-tigi v28 lte",
     "/v19/i": "x-tigi v19"
   },
   "generic": "general x-tigi device"
