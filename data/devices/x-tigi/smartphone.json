@@ -1,4 +1,46 @@
 {
+  "x-tigi g530": {
+    "deviceName": "G530",
+    "marketingName": "G530",
+    "manufacturer": "x-tigi",
+    "brand": "x-tigi",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "x-tigi j110": {
+    "deviceName": "J110",
+    "marketingName": "J110",
+    "manufacturer": "x-tigi",
+    "brand": "x-tigi",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "x-tigi photo p11": {
+    "deviceName": "Photo P11",
+    "marketingName": "Photo P11",
+    "manufacturer": "x-tigi",
+    "brand": "x-tigi",
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "x-tigi v19": {
     "deviceName": "V19",
     "marketingName": "V19",
@@ -9,6 +51,20 @@
       "height": 480,
       "touch": true,
       "size": 5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "x-tigi v28 lte": {
+    "deviceName": "V28 LTE",
+    "marketingName": "V28 LTE",
+    "manufacturer": "x-tigi",
+    "brand": "x-tigi",
+    "display": {
+      "width": 860,
+      "height": 480,
+      "touch": true,
+      "size": 5.7
     },
     "type": "smartphone",
     "platform": "android"
