@@ -1,6 +1,44 @@
 [
   {
     "headers": {
+      "user-agent": "ERO247 Android Application (13, ero247 v2.1) - LGE LG-P500 lge - FFFFFFFF-8C8E-624B-0F99-0EDC62D2CE08"
+    },
+    "device": {
+      "deviceName": "P500",
+      "marketingName": "Optimus One",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.2
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": null,
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": null,
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "ERO247 Android Application (13, ero247 v2.1) - LGE LG-P700 lge - 00000000-0B57-AA27-0A86-171E6A341DD1"
     },
     "device": {
@@ -3737,44 +3775,6 @@
         "height": 480,
         "touch": true,
         "size": 4
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "18.0.1025.166",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.1.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "535.19.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.1.2; LG-E451g Build/JZO54K) AppleWebKit/535.19 (KHTML, Like Gecko) Chrome/18.0.1025.166 Mobile Safari/535.19"
-    },
-    "device": {
-      "deviceName": "E451g",
-      "marketingName": "Optimus L5 II",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 4.7
       },
       "type": "smartphone"
     },
