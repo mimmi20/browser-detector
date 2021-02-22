@@ -3,11 +3,13 @@
 version: 2
 
 updates:
-  - package-ecosystem: composer
+  - package-ecosystem: "composer"
     directory: "/"
     schedule:
-      interval: daily
-      time: '07:00'
+      interval: "weekly"
+      day: "thursday"
+      time: "07:00"
+      timezone: "Europe/Berlin"
     open-pull-requests-limit: 10
     reviewers:
       - "mimmi20"
@@ -16,6 +18,9 @@ updates:
     labels:
       - "dependencies"
     versioning-strategy: increase
+    commit-message:
+      include: "scope"
+      prefix: "composer"
     ignore:
       - dependency-name: infection/infection
         versions:
@@ -29,15 +34,14 @@ updates:
       - dependency-name: laminas/laminas-diactoros
         versions:
           - ">= 0"
-    commit-message:
-      include: "scope"
-      prefix: "Build"
 
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
-      interval: daily
-      time: '07:00'
+      interval: "weekly"
+      day: "thursday"
+      time: "07:00"
+      timezone: "Europe/Berlin"
     open-pull-requests-limit: 10
     reviewers:
       - "mimmi20"
