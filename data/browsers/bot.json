@@ -262,6 +262,18 @@
     },
     "engine": "unknown"
   },
+  "adsbot": {
+    "name": "Adsbot",
+    "manufacturer": "unknown",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Adsbot"
+      ]
+    },
+    "engine": "unknown"
+  },
   "adsbot google": {
     "name": "AdsBot Google",
     "manufacturer": "google",
@@ -2889,6 +2901,18 @@
       "class": "VersionFactory",
       "search": [
         "Google\\-Adwords\\-DisplayAds\\-WebRender"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "google adwords express": {
+    "name": "Google Adwords Express",
+    "manufacturer": "google",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Google\\-Adwords\\-Express"
       ]
     },
     "engine": "unknown"
