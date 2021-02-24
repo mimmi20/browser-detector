@@ -1,44 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "{version:6.2016.3,platform:server_android,osversion:8.1.0}"
-    },
-    "device": {
-      "deviceName": "general Mobile device",
-      "marketingName": "general Mobile device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": "Android Webkit",
-      "modus": null,
-      "version": null,
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "8.1.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (compatible; AhrefsBot/6.1; +http://ahrefs.com/robot/) comdirect/1.0 (appVersion:20.4.0;deviceName:nokia 6.1;deviceType:mobile)"
     },
     "device": {
@@ -63,10 +25,10 @@
       "type": "bot"
     },
     "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
+      "name": null,
+      "marketingName": null,
       "version": null,
-      "manufacturer": "symbian-foundation",
+      "manufacturer": "unknown",
       "bits": null
     },
     "engine": {
@@ -519,10 +481,10 @@
       "type": "bot"
     },
     "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
+      "name": null,
+      "marketingName": null,
       "version": null,
-      "manufacturer": "symbian-foundation",
+      "manufacturer": "unknown",
       "bits": null
     },
     "engine": {
@@ -557,10 +519,10 @@
       "type": "bot"
     },
     "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
+      "name": null,
+      "marketingName": null,
       "version": null,
-      "manufacturer": "symbian-foundation",
+      "manufacturer": "unknown",
       "bits": null
     },
     "engine": {
@@ -595,10 +557,10 @@
       "type": "bot"
     },
     "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
+      "name": null,
+      "marketingName": null,
       "version": null,
-      "manufacturer": "symbian-foundation",
+      "manufacturer": "unknown",
       "bits": null
     },
     "engine": {
@@ -937,10 +899,10 @@
       "type": "bot"
     },
     "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
+      "name": null,
+      "marketingName": null,
       "version": null,
-      "manufacturer": "symbian-foundation",
+      "manufacturer": "unknown",
       "bits": null
     },
     "engine": {
@@ -1165,10 +1127,10 @@
       "type": "bot"
     },
     "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
+      "name": null,
+      "marketingName": null,
       "version": null,
-      "manufacturer": "symbian-foundation",
+      "manufacturer": "unknown",
       "bits": null
     },
     "engine": {
@@ -1507,10 +1469,10 @@
       "type": "bot"
     },
     "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
+      "name": null,
+      "marketingName": null,
       "version": null,
-      "manufacturer": "symbian-foundation",
+      "manufacturer": "unknown",
       "bits": null
     },
     "engine": {
@@ -2343,10 +2305,10 @@
       "type": "bot"
     },
     "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
+      "name": null,
+      "marketingName": null,
       "version": null,
-      "manufacturer": "symbian-foundation",
+      "manufacturer": "unknown",
       "bits": null
     },
     "engine": {
@@ -2533,10 +2495,10 @@
       "type": "bot"
     },
     "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
+      "name": null,
+      "marketingName": null,
       "version": null,
-      "manufacturer": "symbian-foundation",
+      "manufacturer": "unknown",
       "bits": null
     },
     "engine": {
@@ -2761,10 +2723,10 @@
       "type": "bot"
     },
     "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
+      "name": null,
+      "marketingName": null,
       "version": null,
-      "manufacturer": "symbian-foundation",
+      "manufacturer": "unknown",
       "bits": null
     },
     "engine": {
@@ -3797,6 +3759,44 @@
       "name": "WebKit",
       "version": null,
       "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; AhrefsBot/6.1; +http://ahrefs.com/robot/) comdirect/1.0 (appVersion:20.7.3;deviceName:nokia 6.1;deviceType:mobile)"
+    },
+    "device": {
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device"
+    },
+    "browser": {
+      "name": "AhrefsBot",
+      "modus": null,
+      "version": "6.1.0",
+      "manufacturer": "ahrefs",
+      "bits": null,
+      "type": "bot"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
     }
   }
 ]

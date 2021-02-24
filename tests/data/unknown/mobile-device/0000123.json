@@ -1,44 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "RadioPlayer/6.20.8 (Linux;Android 4.2.2) ExoPlayerLib/2.2.0"
-    },
-    "device": {
-      "deviceName": "general Mobile device",
-      "marketingName": "general Mobile device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": "Radio App",
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "multimedia-player"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.2.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "GeekBoyApp/6.3 (Linux;Android 9) ExoPlayerLib/2.1.1"
     },
     "device": {
@@ -2343,10 +2305,10 @@
       "type": "bot"
     },
     "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
+      "name": null,
+      "marketingName": null,
       "version": null,
-      "manufacturer": "symbian-foundation",
+      "manufacturer": "unknown",
       "bits": null
     },
     "engine": {
@@ -2419,10 +2381,10 @@
       "type": "bot"
     },
     "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
+      "name": null,
+      "marketingName": null,
       "version": null,
-      "manufacturer": "symbian-foundation",
+      "manufacturer": "unknown",
       "bits": null
     },
     "engine": {
@@ -2457,10 +2419,10 @@
       "type": "bot"
     },
     "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
+      "name": null,
+      "marketingName": null,
       "version": null,
-      "manufacturer": "symbian-foundation",
+      "manufacturer": "unknown",
       "bits": null
     },
     "engine": {
@@ -2799,10 +2761,10 @@
       "type": "bot"
     },
     "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
+      "name": null,
+      "marketingName": null,
       "version": null,
-      "manufacturer": "symbian-foundation",
+      "manufacturer": "unknown",
       "bits": null
     },
     "engine": {
@@ -3103,10 +3065,10 @@
       "type": "bot"
     },
     "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
+      "name": null,
+      "marketingName": null,
       "version": null,
-      "manufacturer": "symbian-foundation",
+      "manufacturer": "unknown",
       "bits": null
     },
     "engine": {
@@ -3790,6 +3752,44 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "5.1.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Dalvik/2.1.0 (Linux; U; Android 5.1.1; Q.Mate R99 Build/LMY47I)"
+    },
+    "device": {
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device"
+    },
+    "browser": {
+      "name": "Dalvik",
+      "modus": null,
+      "version": "2.1.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
       "manufacturer": "google",
       "bits": null
     },

@@ -674,7 +674,7 @@
     "/blackberry/i": "blackberry",
     "/novarra-vision/i": "novarra-vision",
     "/browserng/i": "nokia oss browser",
-    "/nokia/i": "nokiabrowser",
+    "/(?<!devicename:)nokia/i": "nokiabrowser",
     "/playstation|psp /i": "playstation browser",
     "/netfront|nf\\/?[34]/i": "netfront",
     "/teleca|obigo|au-mic|mic\\//i": "teleca-obigo",
@@ -781,7 +781,8 @@
     "/chrome.*(?<!agent)version|(?<!agent)version.*chrome|com\\.android\\.browser/i": "android webview",
     "/me\\.android\\.browser/i": "me browser",
     "/lebrowser|com\\.lenovo\\.browser/i": "lenovo browser",
-    "/com\\.asus\\.browser/i": "asus browser"
+    "/com\\.asus\\.browser/i": "asus browser",
+    "/adsbot/i": "adsbot"
   },
   "generic": "unknown"
 }
