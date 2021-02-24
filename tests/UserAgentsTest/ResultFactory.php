@@ -70,13 +70,13 @@ final class ResultFactory
             new Company('Unknown', null, null),
             new Company('Unknown', null, null),
             new Unknown(),
-            new Display(null, new \UaDisplaySize\Unknown(), null)
+            new Display(null, null, null, null)
         );
         if (array_key_exists('device', $data)) {
             $deviceFactory = new DeviceFactory(
                 $this->companyLoader,
                 new \UaDeviceType\TypeLoader(),
-                new DisplayFactory(new \UaDisplaySize\TypeLoader())
+                new DisplayFactory()
             );
             $device = $deviceFactory->fromArray($logger, (array) $data['device'], $request->getDeviceUserAgent());
         }
