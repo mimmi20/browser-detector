@@ -87,7 +87,7 @@ final class DeviceLoader implements DeviceLoaderInterface
         $deviceFactory = new DeviceFactory(
             $this->companyLoader,
             new \UaDeviceType\TypeLoader(),
-            new DisplayFactory(new \UaDisplaySize\TypeLoader())
+            new DisplayFactory()
         );
         $device = $deviceFactory->fromArray($this->logger, (array) $deviceData, $useragent);
 
