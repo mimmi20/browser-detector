@@ -1,6 +1,272 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; HMA-L09) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.111 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "HMA-L09",
+      "marketingName": "Mate 20",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "display": {
+        "width": 2244,
+        "height": 1080,
+        "touch": true,
+        "size": 6.53
+      },
+      "type": "phablet"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "81.0.4044.111",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "81.0.4044.111",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; HMA-L29 Build/HUAWEIHMA-L29; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/80.0.3987.162 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/208.0.0.38.104;] comdirect/1.0 (appVersion:20.4.0;deviceType:mobile)"
+    },
+    "device": {
+      "deviceName": "HMA-L29",
+      "marketingName": "Mate 20",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "display": {
+        "width": 2244,
+        "height": 1080,
+        "touch": true,
+        "size": 6.53
+      },
+      "type": "phablet"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "208.0.0.38.104",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "80.0.3987.162",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; HMA-L29 Build/HUAWEIHMA-L29; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/81.0.4044.111 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/266.0.0.64.124;] comdirect/1.0 (appVersion:20.4.0;deviceType:mobile)"
+    },
+    "device": {
+      "deviceName": "HMA-L29",
+      "marketingName": "Mate 20",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "display": {
+        "width": 2244,
+        "height": 1080,
+        "touch": true,
+        "size": 6.53
+      },
+      "type": "phablet"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "266.0.0.64.124",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "81.0.4044.111",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; STK-LX1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.117 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "STK-LX1",
+      "marketingName": "P Smart Z",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "display": {
+        "width": 2316,
+        "height": 1080,
+        "touch": true,
+        "size": 6.59
+      },
+      "type": "phablet"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "81.0.4044.117",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "81.0.4044.117",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; STK-LX1 Build/HUAWEISTK-LX1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/44.0.2403.119 Mobile Safari/537.36 ACHEETAHI/1"
+    },
+    "device": {
+      "deviceName": "STK-LX1",
+      "marketingName": "P Smart Z",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "display": {
+        "width": 2316,
+        "height": 1080,
+        "touch": true,
+        "size": 6.59
+      },
+      "type": "phablet"
+    },
+    "browser": {
+      "name": "CM Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "cheetah-mobile",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "44.0.2403.119",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Dalvik/2.1.0 (Linux; U; Android 10; STK-LX1 Build/HUAWEISTK-LX1)"
+    },
+    "device": {
+      "deviceName": "STK-LX1",
+      "marketingName": "P Smart Z",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "display": {
+        "width": 2316,
+        "height": 1080,
+        "touch": true,
+        "size": 6.59
+      },
+      "type": "phablet"
+    },
+    "browser": {
+      "name": "Dalvik",
+      "modus": null,
+      "version": "2.1.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; HMA-L29) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.111 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "HMA-L29",
+      "marketingName": "Mate 20",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "display": {
+        "width": 2244,
+        "height": 1080,
+        "touch": true,
+        "size": 6.53
+      },
+      "type": "phablet"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "81.0.4044.111",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "81.0.4044.111",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 10; LIO-AL00) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/11.1 Chrome/75.0.3770.143 Mobile Safari/537.36"
     },
     "device": {
@@ -3530,272 +3796,6 @@
     "engine": {
       "name": "Blink",
       "version": "83.0.4103.106",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 10; zh-cn; BMH-AN20 Build/XXXXX BMH-AN20X) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/10.3 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "BMH-AN20",
-      "marketingName": "Honor 30",
-      "manufacturer": "huawei",
-      "brand": "huawei",
-      "display": {
-        "width": 2400,
-        "height": 1080,
-        "touch": true,
-        "size": 6.53
-      },
-      "type": "phablet"
-    },
-    "browser": {
-      "name": "QQ Browser",
-      "modus": null,
-      "version": "10.3.0",
-      "manufacturer": "tencent",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "66.0.3359.126",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; HMA-L29) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Mobile Safari/537.36 OPR/58.2.2878.53403"
-    },
-    "device": {
-      "deviceName": "HMA-L29",
-      "marketingName": "Mate 20",
-      "manufacturer": "huawei",
-      "brand": "huawei",
-      "display": {
-        "width": 2244,
-        "height": 1080,
-        "touch": true,
-        "size": 6.53
-      },
-      "type": "phablet"
-    },
-    "browser": {
-      "name": "Opera Mobile",
-      "modus": null,
-      "version": "58.2.2878.53403",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "81.0.4044.138",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 9; RVL-AL09) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/12.0 Chrome/79.0.3945.136 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "RVL-AL09",
-      "marketingName": "Honor Note 10",
-      "manufacturer": "huawei",
-      "brand": "huawei",
-      "display": {
-        "width": 2220,
-        "height": 1080,
-        "touch": true,
-        "size": 6.95
-      },
-      "type": "phablet"
-    },
-    "browser": {
-      "name": "Samsung Browser",
-      "modus": null,
-      "version": "12.0.0",
-      "manufacturer": "samsung",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "9.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "79.0.3945.136",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; HMA-L29) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/12.0 Chrome/79.0.3945.136 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "HMA-L29",
-      "marketingName": "Mate 20",
-      "manufacturer": "huawei",
-      "brand": "huawei",
-      "display": {
-        "width": 2244,
-        "height": 1080,
-        "touch": true,
-        "size": 6.53
-      },
-      "type": "phablet"
-    },
-    "browser": {
-      "name": "Samsung Browser",
-      "modus": null,
-      "version": "12.0.0",
-      "manufacturer": "samsung",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "79.0.3945.136",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; JSN-L21) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Mobile Safari/537.36 OPR/59.0.2926.53920"
-    },
-    "device": {
-      "deviceName": "JSN-L21",
-      "marketingName": "Honor 8X",
-      "manufacturer": "huawei",
-      "brand": "huawei",
-      "display": {
-        "width": 2340,
-        "height": 1080,
-        "touch": true,
-        "size": 6.5
-      },
-      "type": "phablet"
-    },
-    "browser": {
-      "name": "Opera Mobile",
-      "modus": null,
-      "version": "59.0.2926.53920",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "83.0.4103.106",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; STK-LX1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "STK-LX1",
-      "marketingName": "P Smart Z",
-      "manufacturer": "huawei",
-      "brand": "huawei",
-      "display": {
-        "width": 2316,
-        "height": 1080,
-        "touch": true,
-        "size": 6.59
-      },
-      "type": "phablet"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "84.0.4147.89",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "84.0.4147.89",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; LIO-N29 Build/HUAWEILIO-N29) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Mobile Safari/537.36 OPR/53.0.2569.141117"
-    },
-    "device": {
-      "deviceName": "LIO-N29",
-      "marketingName": "Mate 30 Pro 5G",
-      "manufacturer": "huawei",
-      "brand": "huawei",
-      "display": {
-        "width": 2400,
-        "height": 1176,
-        "touch": true,
-        "size": 6.53
-      },
-      "type": "phablet"
-    },
-    "browser": {
-      "name": "Opera Mobile",
-      "modus": null,
-      "version": "53.0.2569.141117",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "74.0.3729.157",
       "manufacturer": "google"
     }
   }
