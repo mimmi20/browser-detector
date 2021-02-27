@@ -1,6 +1,82 @@
 [
   {
     "headers": {
+      "user-agent": "SEC-SGHE900/1.0 NetFront/3.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 Novarra-Vision/7.3"
+    },
+    "device": {
+      "deviceName": "SGH-E900",
+      "marketingName": "SGH-E900",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.05
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Vision",
+      "modus": null,
+      "version": "7.3.0",
+      "manufacturer": "novarra",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-GT-M8800/M8800BOHJ5 SHP/VPP/R5 NetFront/3.5 NexPlayer/2.9.1 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1"
+    },
+    "device": {
+      "deviceName": "GT-M8800",
+      "marketingName": "Pixon",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 400,
+        "height": 240,
+        "touch": false,
+        "size": 3.2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "NexPlayer",
+      "modus": null,
+      "version": "2.9.1",
+      "manufacturer": "nexstreaming",
+      "bits": null,
+      "type": "multimedia-player"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": "NetFront",
+      "version": null,
+      "manufacturer": "access"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "SAMSUNG-S3600/S3600XAHJ3 NetFront/3.4 Profile/MIDP-2.0 Configuration/CLDC-1.1"
     },
     "device": {
@@ -3688,82 +3764,6 @@
   {
     "headers": {
       "user-agent": "SEC-SGHV208*MzUyNDgwMDAwNjE4NTg1 UP.Link/1.1"
-    },
-    "device": {
-      "deviceName": "SGH-V208",
-      "marketingName": "SGH-V208",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 160,
-        "height": 128,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SEC-SGHV208*MzUyMjg4MDAzOTA1MTY4 UP.Link/1.1"
-    },
-    "device": {
-      "deviceName": "SGH-V208",
-      "marketingName": "SGH-V208",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 160,
-        "height": 128,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SEC-SGHV208*MzUyMjg4MDAyNDYxMjk2 UP.Link/1.1"
     },
     "device": {
       "deviceName": "SGH-V208",
