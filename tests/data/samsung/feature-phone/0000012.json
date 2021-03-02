@@ -1,44 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "MQQBrowser/Mini2.4 (SAMSUNG-SGH-S390G/S390UDLF4)"
-    },
-    "device": {
-      "deviceName": "SGH-S390G",
-      "marketingName": "SGH-S390G",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": 2.4
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "QQbrowser Mini",
-      "modus": null,
-      "version": "2.4.0",
-      "manufacturer": "tencent",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "SAMSUNG-SGH-S425G/S425UD[TFXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX] NetFront/4.2 SMM-MMS/1.2.0 Profile/MIDP-2.1 Configuration/CLDC-1.1"
     },
     "device": {
@@ -3768,6 +3730,44 @@
     "device": {
       "deviceName": "SGH-U700V",
       "marketingName": "SGH-U700V",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-U708"
+    },
+    "device": {
+      "deviceName": "SGH-U708",
+      "marketingName": "SGH-U708",
       "manufacturer": "samsung",
       "brand": "samsung",
       "display": {
