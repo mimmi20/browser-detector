@@ -1,6 +1,82 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; Redmi Note 7 Build/PKQ1.180904.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.60 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/270.1.0.66.127;] comdirect/1.0 (appVersion:20.5.2;deviceType:mobile)"
+    },
+    "device": {
+      "deviceName": "Redmi Note 7",
+      "marketingName": "Redmi Note 7",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.3
+      },
+      "type": "phablet"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "270.1.0.66.127",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "83.0.4103.60",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; Redmi Note 8 Build/PKQ1.190616.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/81.0.4044.138 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/270.1.0.66.127;] comdirect/1.0 (appVersion:20.5.2;deviceName:nokia 8;deviceType:mobile)"
+    },
+    "device": {
+      "deviceName": "MI Note",
+      "marketingName": "MI Note",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.7
+      },
+      "type": "phablet"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "270.1.0.66.127",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "81.0.4044.138",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 7.0; Redmi Note 4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Mobile Safari/537.36 OPR/58.1.2878.53288 comdirect/1.0 (appVersion:20.5.0;deviceType:mobile)"
     },
     "device": {
@@ -875,6 +951,44 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; Mi Note 10 Pro Build/PKQ1.190302.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.83 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/271.0.0.55.109;] comdirect/1.0 (appVersion:20.5.4;deviceType:mobile)"
+    },
+    "device": {
+      "deviceName": "MI Note",
+      "marketingName": "MI Note",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.7
+      },
+      "type": "phablet"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "271.0.0.55.109",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "83.0.4103.83",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 9; Redmi Note 7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.03.4.4958 comdirect/1.0 (appVersion:20.5.4;deviceType:mobile)"
     },
     "device": {
@@ -908,6 +1022,44 @@
     "engine": {
       "name": "Blink",
       "version": "77.0.3865.116",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; Mi Note 10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.60 Mobile Safari/537.36 comdirect/1.0 (appVersion:20.5.2;deviceType:mobile)"
+    },
+    "device": {
+      "deviceName": "MI Note",
+      "marketingName": "MI Note",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.7
+      },
+      "type": "phablet"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "83.0.4103.60",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "83.0.4103.60",
       "manufacturer": "google"
     }
   },
@@ -1136,6 +1288,44 @@
     "engine": {
       "name": "Blink",
       "version": "81.0.4044.138",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; Redmi Note 8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.92 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "MI Note",
+      "marketingName": "MI Note",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.7
+      },
+      "type": "phablet"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "77.0.3865.92",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "77.0.3865.92",
       "manufacturer": "google"
     }
   },
@@ -1820,6 +2010,44 @@
     "engine": {
       "name": "Blink",
       "version": "83.0.4103.83",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; Mi Note 10 Pro Build/PKQ1.190302.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.96 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/272.0.0.50.125;] comdirect/1.0 (appVersion:20.5.4;deviceType:mobile)"
+    },
+    "device": {
+      "deviceName": "MI Note",
+      "marketingName": "MI Note",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.7
+      },
+      "type": "phablet"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "272.0.0.50.125",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "83.0.4103.96",
       "manufacturer": "google"
     }
   },
@@ -3459,6 +3687,44 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; Mi Note 10 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Mobile Safari/537.36 OPR/58.2.2878.53403"
+    },
+    "device": {
+      "deviceName": "MI Note",
+      "marketingName": "MI Note",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.7
+      },
+      "type": "phablet"
+    },
+    "browser": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "58.2.2878.53403",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "81.0.4044.138",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 9; Redmi Note 8 Pro Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.106 Mobile Safari/537.36"
     },
     "device": {
@@ -3530,272 +3796,6 @@
     "engine": {
       "name": "Blink",
       "version": "71.0.3578.141",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; M2002J9G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "M2002J9G",
-      "marketingName": "Mi 10 Lite Standard Edition 5G (Global, Dual SIM)",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
-      "display": {
-        "width": 2400,
-        "height": 1080,
-        "touch": true,
-        "size": 6.6
-      },
-      "type": "phablet"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "83.0.4103.106",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "83.0.4103.106",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; Mi 10) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/12.0 Chrome/79.0.3945.136 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "Mi 10",
-      "marketingName": "Mi 10",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
-      "display": {
-        "width": 2340,
-        "height": 1080,
-        "touch": true,
-        "size": 6.67
-      },
-      "type": "phablet"
-    },
-    "browser": {
-      "name": "Samsung Browser",
-      "modus": null,
-      "version": "12.0.0",
-      "manufacturer": "samsung",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "79.0.3945.136",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; M2003J15SC) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Mobile Safari/537.36 comdirect/1.0 (appVersion:20.6.3;deviceType:mobile)"
-    },
-    "device": {
-      "deviceName": "M2003J15SC",
-      "marketingName": "Redmi 10X 4G",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
-      "display": {
-        "width": 2340,
-        "height": 1080,
-        "touch": true,
-        "size": 6.53
-      },
-      "type": "phablet"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "83.0.4103.106",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "83.0.4103.106",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 9; Redmi Note 7 Pro Build/PKQ1.181203.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/6.2 TBS/044807 Mobile Safari/537.36 MMWEBID/7272 MicroMessenger/7.0.6.1460(0x27000634) Process/tools NetType/WIFI Language/zh_CN"
-    },
-    "device": {
-      "deviceName": "Redmi Note 7",
-      "marketingName": "Redmi Note 7",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
-      "display": {
-        "width": 2340,
-        "height": 1080,
-        "touch": true,
-        "size": 6.3
-      },
-      "type": "phablet"
-    },
-    "browser": {
-      "name": "WeChat App",
-      "modus": null,
-      "version": "7.0.6.1460",
-      "manufacturer": "tencent",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "9.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "66.0.3359.126",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 9; Redmi Note 7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.99 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "Redmi Note 7",
-      "marketingName": "Redmi Note 7",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
-      "display": {
-        "width": 2340,
-        "height": 1080,
-        "touch": true,
-        "size": 6.3
-      },
-      "type": "phablet"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "71.0.3578.99",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "9.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "71.0.3578.99",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 8.0.0; Mi Note 2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "MI Note 2",
-      "marketingName": "MI Note 2",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5.7
-      },
-      "type": "phablet"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "83.0.4103.106",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "8.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "83.0.4103.106",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 10; zh-CN; M2002J9E Build/QKQ1.191222.002) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.108 UCBrowser/12.5.5.1035 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "M2002J9E",
-      "marketingName": "Mi 10 Youth 5G",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
-      "display": {
-        "width": 2400,
-        "height": 1080,
-        "touch": true,
-        "size": 6.57
-      },
-      "type": "phablet"
-    },
-    "browser": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "12.5.5.1035",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "57.0.2987.108",
       "manufacturer": "google"
     }
   }

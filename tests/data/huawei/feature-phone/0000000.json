@@ -267,6 +267,348 @@
   },
   {
     "headers": {
+      "user-agent": "HuaweiC6100 Java/HWJa/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UNTRUSTED/1.0"
+    },
+    "device": {
+      "deviceName": "C6100",
+      "marketingName": "C6100",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Java Standard Library",
+      "modus": null,
+      "version": null,
+      "manufacturer": "oracle",
+      "bits": null,
+      "type": "bot"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Huawei/1.0/0HuaweiG3501/SP05 Browser/Obigo-Browser/Q03C MMS/Obigo-MMS/1.1"
+    },
+    "device": {
+      "deviceName": "G3501",
+      "marketingName": "G3501",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "display": {
+        "width": 128,
+        "height": 128,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Obigo Q",
+      "modus": null,
+      "version": "3.0.0",
+      "manufacturer": "obigo",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": "Teleca",
+      "version": null,
+      "manufacturer": "obigo"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Huawei/1.0/0HuaweiG3610/WAP2.0/Obigo-Browser/Q03C MMS/Obigo-MMS/1.2"
+    },
+    "device": {
+      "deviceName": "G3610",
+      "marketingName": "G3610",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "display": {
+        "width": 160,
+        "height": 128,
+        "touch": false,
+        "size": 1.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Obigo Q",
+      "modus": null,
+      "version": "3.0.0",
+      "manufacturer": "obigo",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": "Teleca",
+      "version": null,
+      "manufacturer": "obigo"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Huawei/1.0/0HuaweiG3620/WAP2.0/Obigo-Browser/Q03C MMS/Obigo-MMS/1.2"
+    },
+    "device": {
+      "deviceName": "G3620",
+      "marketingName": "G3620",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "display": {
+        "width": 160,
+        "height": 128,
+        "touch": false,
+        "size": 1.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Obigo Q",
+      "modus": null,
+      "version": "3.0.0",
+      "manufacturer": "obigo",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": "Teleca",
+      "version": null,
+      "manufacturer": "obigo"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Huawei/1.0/0HuaweiG5010/SP00 Browser/Obigo-Browser/Q03C MMS/Obigo-MMS/1.2 UP.Link/6.3.0.0.0"
+    },
+    "device": {
+      "deviceName": "G5010",
+      "marketingName": "G5010",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "display": {
+        "width": 160,
+        "height": 128,
+        "touch": false,
+        "size": 1.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Obigo Q",
+      "modus": null,
+      "version": "3.0.0",
+      "manufacturer": "obigo",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": "Teleca",
+      "version": null,
+      "manufacturer": "obigo"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Huawei/1.0/0HuaweiG5500/SP00 Browser/Obigo-Browser/Q03C MMS/Obigo-MMS/1.2"
+    },
+    "device": {
+      "deviceName": "G5500",
+      "marketingName": "G5500",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": 2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Obigo Q",
+      "modus": null,
+      "version": "3.0.0",
+      "manufacturer": "obigo",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": "Teleca",
+      "version": null,
+      "manufacturer": "obigo"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Huawei/1.0/0HuaweiG6610/SW03 Browser/Obigo-Browser/Q03C MMS/Obigo-MMS/1.2"
+    },
+    "device": {
+      "deviceName": "G6610",
+      "marketingName": "G6610",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.4
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Obigo Q",
+      "modus": null,
+      "version": "3.0.0",
+      "manufacturer": "obigo",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": "Teleca",
+      "version": null,
+      "manufacturer": "obigo"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Huawei/1.0/0HuaweiG6610V/SW03 Browser/Obigo-Browser/Q03C MMS/Obigo-MMS/1.2"
+    },
+    "device": {
+      "deviceName": "G6610V",
+      "marketingName": "G6610V",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Obigo Q",
+      "modus": null,
+      "version": "3.0.0",
+      "manufacturer": "obigo",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": "Teleca",
+      "version": null,
+      "manufacturer": "obigo"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Huawei/1.0/0HuaweiG6620/G6620SS.C210.M40.04.02 Browser/Obigo-Browser/Q03C MMS/Obigo-MMS/1.0/MIDP-2.0 Configuration/CLDC-1.1"
+    },
+    "device": {
+      "deviceName": "G6620",
+      "marketingName": "G6620",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.4
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Obigo Q",
+      "modus": null,
+      "version": "3.0.0",
+      "manufacturer": "obigo",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": "Teleca",
+      "version": null,
+      "manufacturer": "obigo"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "HUAWEI-U2800/001.00 Browser/Obigo-Browser/Q05A MMS/UNIBOX/V1.2 HuaweiJava/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1"
     },
     "device": {
@@ -305,750 +647,28 @@
   },
   {
     "headers": {
-      "user-agent": "HuaweiU7510/B000 Browser/NetFront/3.5 MMS/Obigo-MMS/Q05A SyncML/HW-SyncML/1.0 Java/HWJa/2.0 Profile/MIDP-2.0 Configuration/CL"
+      "user-agent": "Huawei/1.0/0HuaweiM615/B100 Browser/Obigo_Browser/Q05A HUAWEI-M615"
     },
     "device": {
-      "deviceName": "U7510",
-      "marketingName": "U7510",
+      "deviceName": "M615",
+      "marketingName": "M615",
       "manufacturer": "huawei",
       "brand": "huawei",
       "display": {
-        "width": 320,
-        "height": 240,
-        "touch": true,
-        "size": 2.8
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "NetFront",
-      "modus": null,
-      "version": "3.5.0",
-      "manufacturer": "access",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": "NetFront",
-      "version": null,
-      "manufacturer": "access"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "HuaweiU9130/B044 Browser/NetFront/3.5 MMS/Obigo-MMS/Q05A SyncML/HW-SyncML/1.0 Java/HWJa/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Player/QTV-Player/5.3"
-    },
-    "device": {
-      "deviceName": "U9130",
-      "marketingName": "Compass",
-      "manufacturer": "huawei",
-      "brand": "huawei",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": true,
-        "size": 2.4
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "NetFront",
-      "modus": null,
-      "version": "3.5.0",
-      "manufacturer": "access",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Brew",
-      "marketingName": "Brew",
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": "NetFront",
-      "version": null,
-      "manufacturer": "access"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "HUAWEI-M635/001.00 WAP/OBIGO/Q05A"
-    },
-    "device": {
-      "deviceName": "M635",
-      "marketingName": "Pinnacle",
-      "manufacturer": "huawei",
-      "brand": "huawei",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": 2.4
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Obigo Q",
-      "modus": null,
-      "version": "5.0.0",
-      "manufacturer": "obigo",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": "Teleca",
-      "version": null,
-      "manufacturer": "obigo"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.3.1; en-US; G6600 Build/GREQ6O)"
-    },
-    "device": {
-      "deviceName": "G6600",
-      "marketingName": "Passport",
-      "manufacturer": "huawei",
-      "brand": "huawei",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": 2.4
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Android Webkit",
-      "modus": null,
-      "version": null,
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Huawei/1.0/G6600/Browser/obigo-browser/q03c"
-    },
-    "device": {
-      "deviceName": "G6600",
-      "marketingName": "Passport",
-      "manufacturer": "huawei",
-      "brand": "huawei",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": 2.4
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Obigo Q",
-      "modus": null,
-      "version": "3.0.0",
-      "manufacturer": "obigo",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": "Teleca",
-      "version": null,
-      "manufacturer": "obigo"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "HUAWEI-M570/001.00 WAP/OBIGO/Q05A"
-    },
-    "device": {
-      "deviceName": "M570",
-      "marketingName": "M570",
-      "manufacturer": "huawei",
-      "brand": "huawei",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": true,
-        "size": 2.4
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Obigo Q",
-      "modus": null,
-      "version": "5.0.0",
-      "manufacturer": "obigo",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Brew",
-      "marketingName": "Brew",
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": "Teleca",
-      "version": null,
-      "manufacturer": "obigo"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Huawei/1.0/0MTC-752/B000 Browser/Obigo-Browser/Q05A MTC-752 HuaweiJava/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1"
-    },
-    "device": {
-      "deviceName": "MTC-752",
-      "marketingName": "MTC-752",
-      "manufacturer": "huawei",
-      "brand": "huawei",
-      "display": {
-        "width": 320,
-        "height": 240,
+        "width": null,
+        "height": null,
         "touch": false,
         "size": null
       },
       "type": "feature-phone"
     },
     "browser": {
-      "name": "Obigo Q",
+      "name": "Teleca-Obigo",
       "modus": null,
-      "version": "5.0.0",
+      "version": null,
       "manufacturer": "obigo",
       "bits": null,
       "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": "Teleca",
-      "version": null,
-      "manufacturer": "obigo"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "HuaweiU7510/B000 Browser/Obigo-Browser/Q05A MMS/Obigo-MMS/Q05A SyncML/HW-SyncML/1.0 Java/HWJa/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Player/QTV-Player/5.3"
-    },
-    "device": {
-      "deviceName": "U7510",
-      "marketingName": "U7510",
-      "manufacturer": "huawei",
-      "brand": "huawei",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": true,
-        "size": 2.8
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Obigo Q",
-      "modus": null,
-      "version": "5.0.0",
-      "manufacturer": "obigo",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": "Teleca",
-      "version": null,
-      "manufacturer": "obigo"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Huawei/1.0/H11HW/B000 Browser/Obigo-Browser/Q04A"
-    },
-    "device": {
-      "deviceName": "H11HW",
-      "marketingName": "H11HW",
-      "manufacturer": "huawei",
-      "brand": "emobile",
-      "display": {
-        "width": 220,
-        "height": 176,
-        "touch": false,
-        "size": 2
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Obigo Q",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "obigo",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": "Teleca",
-      "version": null,
-      "manufacturer": "obigo"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (HW-HUAWEI_U2801;U;REX/1.0;BREW/5.0.4.1;Profile/MIDP-2.0 Configuration/CLDC-1.1;128*160) Opera/9.70"
-    },
-    "device": {
-      "deviceName": "U2801",
-      "marketingName": "U2801",
-      "manufacturer": "huawei",
-      "brand": "huawei",
-      "display": {
-        "width": 160,
-        "height": 120,
-        "touch": false,
-        "size": 1.8
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Opera",
-      "modus": null,
-      "version": "9.70.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Brew",
-      "marketingName": "Brew",
-      "version": "5.0.4.1",
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": null,
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (HW-HUAWEI_U5200/;U;REX/1.0;BREW/5.0.4.1;Profile/MIDP-2.0 Configuration/CLDC-1.1;240*320) Opera/9.70"
-    },
-    "device": {
-      "deviceName": "U5200",
-      "marketingName": "U5200",
-      "manufacturer": "huawei",
-      "brand": "huawei",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Opera",
-      "modus": null,
-      "version": "9.70.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Brew",
-      "marketingName": "Brew",
-      "version": "5.0.4.1",
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": null,
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "CTC/HUAWEIC5720 Java/HWJa/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UNTRUSTED/1.0"
-    },
-    "device": {
-      "deviceName": "C5720",
-      "marketingName": "C5720",
-      "manufacturer": "huawei",
-      "brand": "huawei",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": 2
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Java Standard Library",
-      "modus": null,
-      "version": null,
-      "manufacturer": "oracle",
-      "bits": null,
-      "type": "bot"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "HUAWEI T1201_TD/1.0 ThreadX_OS/04.00 SC8800H/S4 Release/6.17.2010 Browser/NetFont-3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1"
-    },
-    "device": {
-      "deviceName": "T1201",
-      "marketingName": "T1201",
-      "manufacturer": "huawei",
-      "brand": "huawei",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": "ThreadX",
-      "marketingName": "ThreadX",
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; HUAWEI-M570/001.00 WAP/OBIGO/Q05A) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36 AlohaBrowser/1.2.1.3"
-    },
-    "device": {
-      "deviceName": "M570",
-      "marketingName": "M570",
-      "manufacturer": "huawei",
-      "brand": "huawei",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": true,
-        "size": 2.4
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Aloha Browser",
-      "modus": null,
-      "version": "1.2.1.3",
-      "manufacturer": "aloha-mobile",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Brew",
-      "marketingName": "Brew",
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "63.0.3239.111",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "HUAWEI-U526/10 BREW/31 BROWSER/10 PROFILE/MIDP-20 CONFIGURATION/CLDC-11"
-    },
-    "device": {
-      "deviceName": "U526",
-      "marketingName": "U526",
-      "manufacturer": "huawei",
-      "brand": "huawei",
-      "display": {
-        "width": 220,
-        "height": 176,
-        "touch": true,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": "Brew",
-      "marketingName": "Brew",
-      "version": "31.0.0",
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Huawei_G7220/1.0 WAP2.0/Obigo-Browser/Q03C MMS/Obigo-MMS/1.2 Profile/MIDP-2.0 Configuration/CLDC-1.1"
-    },
-    "device": {
-      "deviceName": "G7220",
-      "marketingName": "G7220",
-      "manufacturer": "huawei",
-      "brand": "huawei",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": true,
-        "size": 3.2
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Obigo Q",
-      "modus": null,
-      "version": "3.0.0",
-      "manufacturer": "obigo",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": "Teleca",
-      "version": null,
-      "manufacturer": "obigo"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Huawei-U636/1.0 BREW/2.1 Browser/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1"
-    },
-    "device": {
-      "deviceName": "U636",
-      "marketingName": "U636",
-      "manufacturer": "huawei",
-      "brand": "huawei",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": true,
-        "size": 2.2
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": "Brew",
-      "marketingName": "Brew",
-      "version": "2.1.0",
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Huawei-U626/1.0 BREW/2.1 Browser/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1"
-    },
-    "device": {
-      "deviceName": "U626",
-      "marketingName": "U626",
-      "manufacturer": "huawei",
-      "brand": "huawei",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": true,
-        "size": 2.2
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": "Brew",
-      "marketingName": "Brew",
-      "version": "2.1.0",
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Huawei-U526/1.0 BREW/3.1 Browser/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1"
-    },
-    "device": {
-      "deviceName": "U526",
-      "marketingName": "U526",
-      "manufacturer": "huawei",
-      "brand": "huawei",
-      "display": {
-        "width": 220,
-        "height": 176,
-        "touch": true,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": "Brew",
-      "marketingName": "Brew",
-      "version": "3.1.0",
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "HuaweiC6100 Java/HWJa/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UNTRUSTED/1.0"
-    },
-    "device": {
-      "deviceName": "C6100",
-      "marketingName": "C6100",
-      "manufacturer": "huawei",
-      "brand": "huawei",
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Java Standard Library",
-      "modus": null,
-      "version": null,
-      "manufacturer": "oracle",
-      "bits": null,
-      "type": "bot"
     },
     "os": {
       "name": "JavaOS",
@@ -1863,6 +1483,44 @@
   },
   {
     "headers": {
+      "user-agent": "HuaweiU7510/B000 Browser/NetFront/3.5 MMS/Obigo-MMS/Q05A SyncML/HW-SyncML/1.0 Java/HWJa/2.0 Profile/MIDP-2.0 Configuration/CL"
+    },
+    "device": {
+      "deviceName": "U7510",
+      "marketingName": "U7510",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "size": 2.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "NetFront",
+      "modus": null,
+      "version": "3.5.0",
+      "manufacturer": "access",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": "NetFront",
+      "version": null,
+      "manufacturer": "access"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "HuaweiU7515/B000 Browser/NetFront/3.5 MMS/Obigo-MMS/Q05A SyncML/HW-SyncML/1.0 Java/HWJa/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Player/QTV-Player/5.3"
     },
     "device": {
@@ -2043,6 +1701,44 @@
       "marketingName": "JavaOS",
       "version": null,
       "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": "NetFront",
+      "version": null,
+      "manufacturer": "access"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HuaweiU9130/B044 Browser/NetFront/3.5 MMS/Obigo-MMS/Q05A SyncML/HW-SyncML/1.0 Java/HWJa/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Player/QTV-Player/5.3"
+    },
+    "device": {
+      "deviceName": "U9130",
+      "marketingName": "Compass",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "size": 2.4
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "NetFront",
+      "modus": null,
+      "version": "3.5.0",
+      "manufacturer": "access",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Brew",
+      "marketingName": "Brew",
+      "version": null,
+      "manufacturer": "unknown",
       "bits": null
     },
     "engine": {
@@ -2319,6 +2015,82 @@
   },
   {
     "headers": {
+      "user-agent": "HUAWEI-M635/001.00 WAP/OBIGO/Q05A"
+    },
+    "device": {
+      "deviceName": "M635",
+      "marketingName": "Pinnacle",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.4
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Obigo Q",
+      "modus": null,
+      "version": "5.0.0",
+      "manufacturer": "obigo",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": "Teleca",
+      "version": null,
+      "manufacturer": "obigo"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HUAWEI-U526/10 BREW/31 BROWSER/10 PROFILE/MIDP-20 CONFIGURATION/CLDC-11"
+    },
+    "device": {
+      "deviceName": "U526",
+      "marketingName": "U526",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": true,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Brew",
+      "marketingName": "Brew",
+      "version": "31.0.0",
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "HUAWEI-U528/10 BREW/31 BROWSER/10 PROFILE/MIDP-20 CONFIGURATION/CLDC-11"
     },
     "device": {
@@ -2357,16 +2129,282 @@
   },
   {
     "headers": {
-      "user-agent": "Huawei/1.0/0HuaweiG3501/SP05 Browser/Obigo-Browser/Q03C MMS/Obigo-MMS/1.1"
+      "user-agent": "Huawei_G7220/1.0 WAP2.0/Obigo-Browser/Q03C MMS/Obigo-MMS/1.2 Profile/MIDP-2.0 Configuration/CLDC-1.1"
     },
     "device": {
-      "deviceName": "G3501",
-      "marketingName": "G3501",
+      "deviceName": "G7220",
+      "marketingName": "G7220",
       "manufacturer": "huawei",
       "brand": "huawei",
       "display": {
-        "width": 128,
-        "height": 128,
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "size": 3.2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Obigo Q",
+      "modus": null,
+      "version": "3.0.0",
+      "manufacturer": "obigo",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": "Teleca",
+      "version": null,
+      "manufacturer": "obigo"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Huawei-U636/1.0 BREW/2.1 Browser/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+    },
+    "device": {
+      "deviceName": "U636",
+      "marketingName": "U636",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "size": 2.2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Brew",
+      "marketingName": "Brew",
+      "version": "2.1.0",
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Huawei-U626/1.0 BREW/2.1 Browser/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+    },
+    "device": {
+      "deviceName": "U626",
+      "marketingName": "U626",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "size": 2.2
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Brew",
+      "marketingName": "Brew",
+      "version": "2.1.0",
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Huawei-U526/1.0 BREW/3.1 Browser/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+    },
+    "device": {
+      "deviceName": "U526",
+      "marketingName": "U526",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": true,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Brew",
+      "marketingName": "Brew",
+      "version": "3.1.0",
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.3.1; en-US; G6600 Build/GREQ6O)"
+    },
+    "device": {
+      "deviceName": "G6600",
+      "marketingName": "Passport",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.4
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": null,
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Huawei/1.0/G6600/Browser/obigo-browser/q03c"
+    },
+    "device": {
+      "deviceName": "G6600",
+      "marketingName": "Passport",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.4
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Obigo Q",
+      "modus": null,
+      "version": "3.0.0",
+      "manufacturer": "obigo",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": "Teleca",
+      "version": null,
+      "manufacturer": "obigo"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HUAWEI-M570/001.00 WAP/OBIGO/Q05A"
+    },
+    "device": {
+      "deviceName": "M570",
+      "marketingName": "M570",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "size": 2.4
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Obigo Q",
+      "modus": null,
+      "version": "5.0.0",
+      "manufacturer": "obigo",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Brew",
+      "marketingName": "Brew",
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": "Teleca",
+      "version": null,
+      "manufacturer": "obigo"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Huawei/1.0/0MTC-752/B000 Browser/Obigo-Browser/Q05A MTC-752 HuaweiJava/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+    },
+    "device": {
+      "deviceName": "MTC-752",
+      "marketingName": "MTC-752",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "display": {
+        "width": 320,
+        "height": 240,
         "touch": false,
         "size": null
       },
@@ -2375,7 +2413,7 @@
     "browser": {
       "name": "Obigo Q",
       "modus": null,
-      "version": "3.0.0",
+      "version": "5.0.0",
       "manufacturer": "obigo",
       "bits": null,
       "type": "browser"
@@ -2395,25 +2433,25 @@
   },
   {
     "headers": {
-      "user-agent": "Huawei/1.0/0HuaweiG3610/WAP2.0/Obigo-Browser/Q03C MMS/Obigo-MMS/1.2"
+      "user-agent": "HuaweiU7510/B000 Browser/Obigo-Browser/Q05A MMS/Obigo-MMS/Q05A SyncML/HW-SyncML/1.0 Java/HWJa/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Player/QTV-Player/5.3"
     },
     "device": {
-      "deviceName": "G3610",
-      "marketingName": "G3610",
+      "deviceName": "U7510",
+      "marketingName": "U7510",
       "manufacturer": "huawei",
       "brand": "huawei",
       "display": {
-        "width": 160,
-        "height": 128,
-        "touch": false,
-        "size": 1.8
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "size": 2.8
       },
       "type": "feature-phone"
     },
     "browser": {
       "name": "Obigo Q",
       "modus": null,
-      "version": "3.0.0",
+      "version": "5.0.0",
       "manufacturer": "obigo",
       "bits": null,
       "type": "browser"
@@ -2433,89 +2471,13 @@
   },
   {
     "headers": {
-      "user-agent": "Huawei/1.0/0HuaweiG3620/WAP2.0/Obigo-Browser/Q03C MMS/Obigo-MMS/1.2"
+      "user-agent": "Huawei/1.0/H11HW/B000 Browser/Obigo-Browser/Q04A"
     },
     "device": {
-      "deviceName": "G3620",
-      "marketingName": "G3620",
+      "deviceName": "H11HW",
+      "marketingName": "H11HW",
       "manufacturer": "huawei",
-      "brand": "huawei",
-      "display": {
-        "width": 160,
-        "height": 128,
-        "touch": false,
-        "size": 1.8
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Obigo Q",
-      "modus": null,
-      "version": "3.0.0",
-      "manufacturer": "obigo",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": "Teleca",
-      "version": null,
-      "manufacturer": "obigo"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Huawei/1.0/0HuaweiG5010/SP00 Browser/Obigo-Browser/Q03C MMS/Obigo-MMS/1.2 UP.Link/6.3.0.0.0"
-    },
-    "device": {
-      "deviceName": "G5010",
-      "marketingName": "G5010",
-      "manufacturer": "huawei",
-      "brand": "huawei",
-      "display": {
-        "width": 160,
-        "height": 128,
-        "touch": false,
-        "size": 1.8
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Obigo Q",
-      "modus": null,
-      "version": "3.0.0",
-      "manufacturer": "obigo",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": "Teleca",
-      "version": null,
-      "manufacturer": "obigo"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Huawei/1.0/0HuaweiG5500/SP00 Browser/Obigo-Browser/Q03C MMS/Obigo-MMS/1.2"
-    },
-    "device": {
-      "deviceName": "G5500",
-      "marketingName": "G5500",
-      "manufacturer": "huawei",
-      "brand": "huawei",
+      "brand": "emobile",
       "display": {
         "width": 220,
         "height": 176,
@@ -2527,7 +2489,7 @@
     "browser": {
       "name": "Obigo Q",
       "modus": null,
-      "version": "3.0.0",
+      "version": "4.0.0",
       "manufacturer": "obigo",
       "bits": null,
       "type": "browser"
@@ -2547,142 +2509,104 @@
   },
   {
     "headers": {
-      "user-agent": "Huawei/1.0/0HuaweiG6610/SW03 Browser/Obigo-Browser/Q03C MMS/Obigo-MMS/1.2"
+      "user-agent": "Mozilla/5.0 (HW-HUAWEI_U2801;U;REX/1.0;BREW/5.0.4.1;Profile/MIDP-2.0 Configuration/CLDC-1.1;128*160) Opera/9.70"
     },
     "device": {
-      "deviceName": "G6610",
-      "marketingName": "G6610",
+      "deviceName": "U2801",
+      "marketingName": "U2801",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "display": {
+        "width": 160,
+        "height": 120,
+        "touch": false,
+        "size": 1.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Opera",
+      "modus": null,
+      "version": "9.70.0",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Brew",
+      "marketingName": "Brew",
+      "version": "5.0.4.1",
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": null,
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (HW-HUAWEI_U5200/;U;REX/1.0;BREW/5.0.4.1;Profile/MIDP-2.0 Configuration/CLDC-1.1;240*320) Opera/9.70"
+    },
+    "device": {
+      "deviceName": "U5200",
+      "marketingName": "U5200",
       "manufacturer": "huawei",
       "brand": "huawei",
       "display": {
         "width": 320,
         "height": 240,
         "touch": false,
-        "size": 2.4
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Obigo Q",
-      "modus": null,
-      "version": "3.0.0",
-      "manufacturer": "obigo",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": "Teleca",
-      "version": null,
-      "manufacturer": "obigo"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Huawei/1.0/0HuaweiG6610V/SW03 Browser/Obigo-Browser/Q03C MMS/Obigo-MMS/1.2"
-    },
-    "device": {
-      "deviceName": "G6610V",
-      "marketingName": "G6610V",
-      "manufacturer": "huawei",
-      "brand": "huawei",
-      "display": {
-        "width": 220,
-        "height": 176,
-        "touch": false,
         "size": null
       },
       "type": "feature-phone"
     },
     "browser": {
-      "name": "Obigo Q",
+      "name": "Opera",
       "modus": null,
-      "version": "3.0.0",
-      "manufacturer": "obigo",
+      "version": "9.70.0",
+      "manufacturer": "opera",
       "bits": null,
       "type": "browser"
     },
     "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
+      "name": "Brew",
+      "marketingName": "Brew",
+      "version": "5.0.4.1",
+      "manufacturer": "unknown",
       "bits": null
     },
     "engine": {
-      "name": "Teleca",
+      "name": "Presto",
       "version": null,
-      "manufacturer": "obigo"
+      "manufacturer": "opera"
     }
   },
   {
     "headers": {
-      "user-agent": "Huawei/1.0/0HuaweiG6620/G6620SS.C210.M40.04.02 Browser/Obigo-Browser/Q03C MMS/Obigo-MMS/1.0/MIDP-2.0 Configuration/CLDC-1.1"
+      "user-agent": "CTC/HUAWEIC5720 Java/HWJa/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UNTRUSTED/1.0"
     },
     "device": {
-      "deviceName": "G6620",
-      "marketingName": "G6620",
+      "deviceName": "C5720",
+      "marketingName": "C5720",
       "manufacturer": "huawei",
       "brand": "huawei",
       "display": {
         "width": 320,
         "height": 240,
         "touch": false,
-        "size": 2.4
+        "size": 2
       },
       "type": "feature-phone"
     },
     "browser": {
-      "name": "Obigo Q",
-      "modus": null,
-      "version": "3.0.0",
-      "manufacturer": "obigo",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": "Teleca",
-      "version": null,
-      "manufacturer": "obigo"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Huawei/1.0/0HuaweiM615/B100 Browser/Obigo_Browser/Q05A HUAWEI-M615"
-    },
-    "device": {
-      "deviceName": "M615",
-      "marketingName": "M615",
-      "manufacturer": "huawei",
-      "brand": "huawei",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone"
-    },
-    "browser": {
-      "name": "Teleca-Obigo",
+      "name": "Java Standard Library",
       "modus": null,
       "version": null,
-      "manufacturer": "obigo",
+      "manufacturer": "oracle",
       "bits": null,
-      "type": "browser"
+      "type": "bot"
     },
     "os": {
       "name": "JavaOS",
@@ -2695,6 +2619,82 @@
       "name": null,
       "version": null,
       "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HUAWEI T1201_TD/1.0 ThreadX_OS/04.00 SC8800H/S4 Release/6.17.2010 Browser/NetFont-3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+    },
+    "device": {
+      "deviceName": "T1201",
+      "marketingName": "T1201",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "ThreadX",
+      "marketingName": "ThreadX",
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; HUAWEI-M570/001.00 WAP/OBIGO/Q05A) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36 AlohaBrowser/1.2.1.3"
+    },
+    "device": {
+      "deviceName": "M570",
+      "marketingName": "M570",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": true,
+        "size": 2.4
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Aloha Browser",
+      "modus": null,
+      "version": "1.2.1.3",
+      "manufacturer": "aloha-mobile",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Brew",
+      "marketingName": "Brew",
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "63.0.3239.111",
+      "manufacturer": "google"
     }
   }
 ]

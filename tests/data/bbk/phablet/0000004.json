@@ -1,6 +1,272 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; HD1900) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.101 Mobile Safari/537.36 comdirect/1.0 (appVersion:20.11.1;deviceType:mobile)"
+    },
+    "device": {
+      "deviceName": "HD1900",
+      "marketingName": "7T",
+      "manufacturer": "bbk",
+      "brand": "oneplus",
+      "display": {
+        "width": 3120,
+        "height": 1440,
+        "touch": true,
+        "size": 6.67
+      },
+      "type": "phablet"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "87.0.4280.101",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "87.0.4280.101",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; CPH1907) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.101 Mobile Safari/537.36 comdirect/1.0 (appVersion:20.11.1;deviceType:mobile)"
+    },
+    "device": {
+      "deviceName": "CPH1907",
+      "marketingName": "Reno 2",
+      "manufacturer": "bbk",
+      "brand": "oppo",
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.5
+      },
+      "type": "phablet"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "87.0.4280.101",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "87.0.4280.101",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; RMX2020) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "RMX2020",
+      "marketingName": "C3",
+      "manufacturer": "bbk",
+      "brand": "realme",
+      "display": {
+        "width": 1560,
+        "height": 720,
+        "touch": true,
+        "size": 6.5
+      },
+      "type": "phablet"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "86.0.4240.198",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "86.0.4240.198",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Dalvik/2.1.0 (Linux; U; Android 10; HD1903 Build/QKQ1.190716.003)"
+    },
+    "device": {
+      "deviceName": "HD1903",
+      "marketingName": "7T Standard Edition Dual SIM",
+      "manufacturer": "bbk",
+      "brand": "oneplus",
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.6
+      },
+      "type": "phablet"
+    },
+    "browser": {
+      "name": "Dalvik",
+      "modus": null,
+      "version": "2.1.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; GM1920) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "GM1920",
+      "marketingName": "7 Pro 5G",
+      "manufacturer": "bbk",
+      "brand": "oneplus",
+      "display": {
+        "width": 3120,
+        "height": 1440,
+        "touch": true,
+        "size": 6.67
+      },
+      "type": "phablet"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "86.0.4240.198",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "86.0.4240.198",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; PCAM10 Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/80.0.3987.99 Mobile Safari/537.36 Zalo android/12100438"
+    },
+    "device": {
+      "deviceName": "PCAM10",
+      "marketingName": "A9",
+      "manufacturer": "bbk",
+      "brand": "oppo",
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.53
+      },
+      "type": "phablet"
+    },
+    "browser": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "80.0.3987.99",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "80.0.3987.99",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "ArcGISRuntime-Android/100.4 (Android 10.0; arm64-v8a; ONEPLUS-HD1903)"
+    },
+    "device": {
+      "deviceName": "HD1903",
+      "marketingName": "7T Standard Edition Dual SIM",
+      "manufacturer": "bbk",
+      "brand": "oneplus",
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.6
+      },
+      "type": "phablet"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": null,
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 10; RMX1931 Build/QKQ1.191021.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/87.0.4280.141 Mobile Safari/537.36 Instagram 170.2.0.30.474 Android (29/10; 480dpi; 1080x2332; realme; RMX1931; RMX1931L1; qcom; de_DE; 267925737)"
     },
     "device": {
@@ -1825,6 +2091,44 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; GM1920) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.101 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "GM1920",
+      "marketingName": "7 Pro 5G",
+      "manufacturer": "bbk",
+      "brand": "oneplus",
+      "display": {
+        "width": 3120,
+        "height": 1440,
+        "touch": true,
+        "size": 6.67
+      },
+      "type": "phablet"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "87.0.4280.101",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "87.0.4280.101",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 10; CPH2025) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.101 Mobile Safari/537.36"
     },
     "device": {
@@ -2699,6 +3003,44 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; GM1920) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.93 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "GM1920",
+      "marketingName": "7 Pro 5G",
+      "manufacturer": "bbk",
+      "brand": "oneplus",
+      "display": {
+        "width": 3120,
+        "height": 1440,
+        "touch": true,
+        "size": 6.67
+      },
+      "type": "phablet"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "88.0.4324.93",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "88.0.4324.93",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 10; CPH1907) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.93 Mobile Safari/537.36"
     },
     "device": {
@@ -3454,348 +3796,6 @@
     "engine": {
       "name": "Blink",
       "version": "85.0.4183.127",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Dalvik/2.1.0 (Linux; U; Android 10; RMX2111 Build/QP1A.190711.020)"
-    },
-    "device": {
-      "deviceName": "RMX2111",
-      "marketingName": "7 5G",
-      "manufacturer": "bbk",
-      "brand": "realme",
-      "display": {
-        "width": 2400,
-        "height": 1080,
-        "touch": true,
-        "size": 6.5
-      },
-      "type": "phablet"
-    },
-    "browser": {
-      "name": "Dalvik",
-      "modus": null,
-      "version": "2.1.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 9; CPH1907) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.152 Mobile Safari/537.36 comdirect/1.0 (appVersion:21.2.0;deviceType:mobile)"
-    },
-    "device": {
-      "deviceName": "CPH1907",
-      "marketingName": "Reno 2",
-      "manufacturer": "bbk",
-      "brand": "oppo",
-      "display": {
-        "width": 2400,
-        "height": 1080,
-        "touch": true,
-        "size": 6.5
-      },
-      "type": "phablet"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "88.0.4324.152",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "9.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "88.0.4324.152",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; RMX1931) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Mobile Safari/537.36 OPR/61.2.3076.56749"
-    },
-    "device": {
-      "deviceName": "RMX1931",
-      "marketingName": "X2 Pro Premium Edition (Global)",
-      "manufacturer": "bbk",
-      "brand": "realme",
-      "display": {
-        "width": 2400,
-        "height": 1080,
-        "touch": true,
-        "size": 6.5
-      },
-      "type": "phablet"
-    },
-    "browser": {
-      "name": "Opera Mobile",
-      "modus": null,
-      "version": "61.2.3076.56749",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "86.0.4240.198",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; HD1901) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.181 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "HD1901",
-      "marketingName": "7T",
-      "manufacturer": "bbk",
-      "brand": "oneplus",
-      "display": {
-        "width": 3120,
-        "height": 1440,
-        "touch": true,
-        "size": 6.67
-      },
-      "type": "phablet"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "88.0.4324.181",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "88.0.4324.181",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; CPH2135) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "CPH2135",
-      "marketingName": "A53s",
-      "manufacturer": "bbk",
-      "brand": "oppo",
-      "display": {
-        "width": 1600,
-        "height": 720,
-        "touch": true,
-        "size": 6.5
-      },
-      "type": "phablet"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "87.0.4280.141",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "87.0.4280.141",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; GM1913) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.127 Mobile Safari/537.36 (Ecosia android@85.0.4183.127)"
-    },
-    "device": {
-      "deviceName": "GM1913",
-      "marketingName": "7 Pro",
-      "manufacturer": "bbk",
-      "brand": "oneplus",
-      "display": {
-        "width": 3120,
-        "height": 1440,
-        "touch": true,
-        "size": 6.67
-      },
-      "type": "phablet"
-    },
-    "browser": {
-      "name": "Ecosia",
-      "modus": null,
-      "version": "85.0.4183.127",
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "85.0.4183.127",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 9; GM1920) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.117 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "GM1920",
-      "marketingName": "7 Pro 5G",
-      "manufacturer": "bbk",
-      "brand": "oneplus",
-      "display": {
-        "width": 3120,
-        "height": 1440,
-        "touch": true,
-        "size": 6.67
-      },
-      "type": "phablet"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "80.0.3987.117",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "9.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "80.0.3987.117",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 9; GM1920) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.119 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "GM1920",
-      "marketingName": "7 Pro 5G",
-      "manufacturer": "bbk",
-      "brand": "oneplus",
-      "display": {
-        "width": 3120,
-        "height": 1440,
-        "touch": true,
-        "size": 6.67
-      },
-      "type": "phablet"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "80.0.3987.119",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "9.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "80.0.3987.119",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; GM1920) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "GM1920",
-      "marketingName": "7 Pro 5G",
-      "manufacturer": "bbk",
-      "brand": "oneplus",
-      "display": {
-        "width": 3120,
-        "height": 1440,
-        "touch": true,
-        "size": 6.67
-      },
-      "type": "phablet"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "80.0.3987.132",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "80.0.3987.132",
       "manufacturer": "google"
     }
   }

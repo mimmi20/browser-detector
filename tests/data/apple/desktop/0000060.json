@@ -1,44 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "AppStoreScraperZ/1 CFNetwork/889.9 Darwin/17.2.0 (x86_64)"
-    },
-    "device": {
-      "deviceName": "Macintosh",
-      "marketingName": "Macintosh",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop"
-    },
-    "browser": {
-      "name": "AppStore App",
-      "modus": null,
-      "version": null,
-      "manufacturer": "apple",
-      "bits": 64,
-      "type": "application"
-    },
-    "os": {
-      "name": "macOS",
-      "marketingName": "macOS",
-      "version": "10.13.2",
-      "manufacturer": "apple",
-      "bits": 64
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "889.9.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "URLTester/1 CFNetwork/974.1 Darwin/18.0.0 (x86_64)"
     },
     "device": {
@@ -3797,6 +3759,44 @@
       "name": "Blink",
       "version": "61.0.3163.100",
       "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "com.apple.WebKit.Networking/11604.5.6.1.1 CFNetwork/760.8 Darwin/15.6.0 (x86_64)"
+    },
+    "device": {
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop"
+    },
+    "browser": {
+      "name": "Webkit Service",
+      "modus": null,
+      "version": null,
+      "manufacturer": "apple",
+      "bits": 64,
+      "type": "application"
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": "10.11.6",
+      "manufacturer": "apple",
+      "bits": 64
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "760.8.0",
+      "manufacturer": "apple"
     }
   }
 ]

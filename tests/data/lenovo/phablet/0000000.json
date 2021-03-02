@@ -1594,5 +1594,43 @@
       "version": null,
       "manufacturer": "microsoft"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; motorola edge plus) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.101 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Edge Plus",
+      "marketingName": "Edge Plus",
+      "manufacturer": "lenovo",
+      "brand": "motorola",
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.7
+      },
+      "type": "phablet"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "87.0.4280.101",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Edge",
+      "version": null,
+      "manufacturer": "microsoft"
+    }
   }
 ]

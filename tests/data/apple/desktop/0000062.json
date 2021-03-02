@@ -1,82 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "Wayback%20Machine%20Extension/6 CFNetwork/1121.1.2 Darwin/19.2.0 (x86_64) comdirect/1.0 (appVersion:20.1.1;deviceName:nokia 6;deviceType:mobile)"
-    },
-    "device": {
-      "deviceName": "Macintosh",
-      "marketingName": "Macintosh",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop"
-    },
-    "browser": {
-      "name": "CFNetwork",
-      "modus": null,
-      "version": null,
-      "manufacturer": "apple",
-      "bits": 64,
-      "type": "application"
-    },
-    "os": {
-      "name": "macOS",
-      "marketingName": "macOS",
-      "version": "10.15.0",
-      "manufacturer": "apple",
-      "bits": 64
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "1121.1.2",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/82.0.4050.0 Safari/537.36 comdirect/1.0 (appVersion:20.1.1;deviceType:desktop)"
-    },
-    "device": {
-      "deviceName": "Macintosh",
-      "marketingName": "Macintosh",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "82.0.4050.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "macOS",
-      "marketingName": "macOS",
-      "version": "10.14.6",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "82.0.4050.0",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.87 Safari/537.36"
     },
     "device": {
@@ -3796,6 +3720,82 @@
     "engine": {
       "name": "Blink",
       "version": "79.0.3945.134",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) coc_coc_browser/85.0.134 Chrome/79.0.3945.134 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop"
+    },
+    "browser": {
+      "name": "Coc Coc Browser",
+      "modus": null,
+      "version": "85.0.134",
+      "manufacturer": "coc-coc-company",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": "10.10.5",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "79.0.3945.134",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) coc_coc_browser/83.0.142 Chrome/77.0.3865.142 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop"
+    },
+    "browser": {
+      "name": "Coc Coc Browser",
+      "modus": null,
+      "version": "83.0.142",
+      "manufacturer": "coc-coc-company",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "macOS",
+      "marketingName": "macOS",
+      "version": "10.13.4",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "77.0.3865.142",
       "manufacturer": "google"
     }
   }

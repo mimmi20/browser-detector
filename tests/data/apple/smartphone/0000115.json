@@ -1,6 +1,44 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 125.0.0.18.125 (iPhone9,3; iOS 13_2_3; tr_TR; tr-TR; scale=2.00; 750x1334; 193828684)"
+    },
+    "device": {
+      "deviceName": "iPhone 9,3",
+      "marketingName": "iPhone 7",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 1334,
+        "height": 750,
+        "touch": true,
+        "size": 4.7
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "125.0.0.18.125",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.3.0",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/91.1.292041477 Mobile/15E148 Safari/604.1"
     },
     "device": {
@@ -3737,44 +3775,6 @@
         "height": 1125,
         "touch": true,
         "size": 5.8
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Facebook Messenger App",
-      "modus": null,
-      "version": "256.0.1.26.113",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 LightSpeed [FBAN/MessengerLiteForiOS;FBAV/256.0.1.26.113;FBBV/203261359;FBDV/iPhone11,8;FBMD/iPhone;FBSN/iOS;FBSV/13.3.1;FBSS/2;FBCR/;FBID/phone;FBLC/de_DE;FBOP/0]"
-    },
-    "device": {
-      "deviceName": "iPhone 11,8",
-      "marketingName": "iPhone XR",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 1792,
-        "height": 828,
-        "touch": true,
-        "size": 6.1
       },
       "type": "smartphone"
     },

@@ -1,6 +1,44 @@
 [
   {
     "headers": {
+      "user-agent": "Dalvik/2.1.0 (Linux; U; Android 10; EVR-N29 Build/HUAWEIEVR-N29)"
+    },
+    "device": {
+      "deviceName": "EVR-N29",
+      "marketingName": "Mate 20 X 5G",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "display": {
+        "width": 2244,
+        "height": 1080,
+        "touch": true,
+        "size": 7.2
+      },
+      "type": "phablet"
+    },
+    "browser": {
+      "name": "Dalvik",
+      "modus": null,
+      "version": "2.1.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 10; HMA-L09) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.111 Mobile Safari/537.36"
     },
     "device": {
@@ -3758,44 +3796,6 @@
     "engine": {
       "name": "Blink",
       "version": "69.0.3497.128",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; HMA-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "HMA-AL00",
-      "marketingName": "Mate 20",
-      "manufacturer": "huawei",
-      "brand": "huawei",
-      "display": {
-        "width": 2244,
-        "height": 1080,
-        "touch": true,
-        "size": 6.53
-      },
-      "type": "phablet"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "83.0.4103.106",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "83.0.4103.106",
       "manufacturer": "google"
     }
   }
