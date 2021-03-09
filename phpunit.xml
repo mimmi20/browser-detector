@@ -10,8 +10,12 @@
     beStrictAboutOutputDuringTests="true"
     beStrictAboutTestsThatDoNotTestAnything="true"
     beStrictAboutTodoAnnotatedTests="true"
-    failOnWarning="true"
+    beStrictAboutResourceUsageDuringSmallTests="true"
+    failOnEmptyTestSuite="true"
+    failOnIncomplete="true"
     failOnRisky="true"
+    failOnSkipped="true"
+    failOnWarning="true"
     verbose="false"
     bootstrap="vendor/autoload.php"
     enforceTimeLimit="false"
@@ -28,13 +32,13 @@
         <directory>tests/DetectorTest/</directory>
     </testsuite>
 
-    <filter>
-        <whitelist addUncoveredFilesFromWhitelist="true" processUncoveredFilesFromWhitelist="true">
+    <coverage includeUncoveredFiles="true" processUncoveredFiles="true">
+        <include>
             <directory suffix=".php">src/</directory>
-        </whitelist>
-    </filter>
+        </include>
+    </coverage>
 
     <logging>
-        <log type="coverage-text" target="php://stdout" showUncoveredFiles="true"/>
+        <text outputFile="php://stdout"/>
     </logging>
 </phpunit>

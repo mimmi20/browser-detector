@@ -21,19 +21,19 @@ updates:
     commit-message:
       include: "scope"
       prefix: "composer"
-    ignore:
-      - dependency-name: infection/infection
-        versions:
-          - ">= 0"
-      - dependency-name: phpunit/phpunit
-        versions:
-          - ">= 0"
-      - dependency-name: symfony/finder
-        versions:
-          - ">= 0"
-      - dependency-name: laminas/laminas-diactoros
-        versions:
-          - ">= 0"
+#    ignore:
+#      - dependency-name: infection/infection
+#        versions:
+#          - ">= 0"
+#      - dependency-name: phpunit/phpunit
+#        versions:
+#          - ">= 0"
+#      - dependency-name: symfony/finder
+#        versions:
+#          - ">= 0"
+#      - dependency-name: laminas/laminas-diactoros
+#        versions:
+#          - ">= 0"
 
   - package-ecosystem: "github-actions"
     directory: "/"

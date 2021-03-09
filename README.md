@@ -6,14 +6,13 @@
 
 ## Code Status
 
-[![Build Status](https://travis-ci.org/mimmi20/BrowserDetector.svg?branch=master)](https://travis-ci.org/mimmi20/BrowserDetector)
 [![codecov](https://codecov.io/gh/mimmi20/BrowserDetector/branch/master/graph/badge.svg)](https://codecov.io/gh/mimmi20/BrowserDetector)
 [![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/mimmi20/BrowserDetector.svg)](http://isitmaintained.com/project/mimmi20/BrowserDetector "Average time to resolve an issue")
 [![Percentage of issues still open](http://isitmaintained.com/badge/open/mimmi20/BrowserDetector.svg)](http://isitmaintained.com/project/mimmi20/BrowserDetector "Percentage of issues still open")
 
 ## Requirements
 
-This library requires PHP 7.1+.
+This library requires PHP 7.4+.
 Also a PSR-3 compatible logger and a PSR-16 compatible cache are required.
 
 ## Installation

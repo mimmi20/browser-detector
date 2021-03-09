@@ -57,7 +57,7 @@ jobs:
 
     runs-on: "${{ matrix.operating-system }}"
 
-    continue-on-error: ${{ matrix.continue-on-error }}
+    continue-on-error: false
 
     strategy:
       fail-fast: false
@@ -65,48 +65,14 @@ jobs:
       matrix:
         operating-system:
           - "ubuntu-latest"
-          - "windows-latest"
-          - "macos-latest"
 
         php-version:
-          - "7.1"
-          - "7.2"
-          - "7.3"
           - "7.4"
           - "8.0"
 
         dependencies:
           - "--prefer-lowest"
           - ""
-
-        continue-on-error:
-          - false
-
-        include:
-          - operating-system: "ubuntu-latest"
-            php-version: "8.1"
-            dependencies: "--prefer-lowest"
-            continue-on-error: true
-          - operating-system: "ubuntu-latest"
-            php-version: "8.1"
-            dependencies: ""
-            continue-on-error: true
-          - operating-system: "windows-latest"
-            dependencies: "--prefer-lowest"
-            php-version: "8.1"
-            continue-on-error: true
-          - operating-system: "windows-latest"
-            dependencies: ""
-            php-version: "8.1"
-            continue-on-error: true
-          - operating-system: "macos-latest"
-            dependencies: "--prefer-lowest"
-            php-version: "8.1"
-            continue-on-error: true
-          - operating-system: "macos-latest"
-            dependencies: ""
-            php-version: "8.1"
-            continue-on-error: true
 
     steps:
       - name: "Checkout"
@@ -155,7 +121,7 @@ jobs:
           - "ubuntu-latest"
 
         php-version:
-          - "7.1"
+          - "7.4"
 
         dependencies:
           - ""
@@ -207,7 +173,7 @@ jobs:
           - "ubuntu-latest"
 
         php-version:
-          - "7.1"
+          - "7.4"
 
         dependencies:
           - ""
@@ -260,7 +226,7 @@ jobs:
           - "ubuntu-latest"
 
         php-version:
-          - "7.1"
+          - "7.4"
 
         dependencies:
           - ""
@@ -314,9 +280,6 @@ jobs:
           - "macos-latest"
 
         php-version:
-          - "7.1"
-          - "7.2"
-          - "7.3"
           - "7.4"
 
         dependencies:
@@ -383,7 +346,7 @@ jobs:
           - "ubuntu-latest"
 
         php-version:
-          - "7.1"
+          - "7.4"
 
         dependencies:
           - ""
@@ -430,7 +393,7 @@ jobs:
         with:
           token: "${{secrets.CODECOV_TOKEN}}"
           file: ".build/coverage/clover.xml"
-          flags: "phpunit"
+          flags: "phpunit,php-${{ matrix.php-version }},${{ matrix.coverage-drivers }}"
 
       - name: "Run mutation tests with infection/infection"
         run: "vendor/bin/infection --min-covered-msi=95 --min-msi=95 --coverage=.build/coverage"
@@ -452,7 +415,7 @@ jobs:
           - "ubuntu-latest"
 
         php-version:
-          - "7.1"
+          - "7.4"
 
         dependencies:
           - ""
