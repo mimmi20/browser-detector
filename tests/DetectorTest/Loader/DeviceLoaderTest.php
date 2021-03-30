@@ -9,6 +9,7 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetectorTest\Loader;
 
 use BrowserDetector\Loader\CompanyLoaderInterface;
@@ -17,18 +18,26 @@ use BrowserDetector\Loader\Helper\DataInterface;
 use BrowserDetector\Loader\NotFoundException;
 use BrowserDetector\Parser\PlatformParserInterface;
 use BrowserDetector\Version\Test;
+use PHPUnit\Framework\Exception;
+use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
+use SebastianBergmann\RecursionContext\InvalidArgumentException;
 use UaResult\Device\DeviceInterface;
 use UaResult\Os\OsInterface;
+use UnexpectedValueException;
+
+use function assert;
+use function get_class;
+use function gettype;
+use function is_object;
+use function sprintf;
 
 final class DeviceLoaderTest extends TestCase
 {
     /**
-     * @throws \BrowserDetector\Loader\NotFoundException
-     * @throws \UnexpectedValueException
-     *
-     * @return void
+     * @throws NotFoundException
+     * @throws UnexpectedValueException
      */
     public function testInvokeNotInCache(): void
     {
@@ -82,10 +91,10 @@ final class DeviceLoaderTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
 
-        \assert($logger instanceof LoggerInterface);
-        \assert($companyLoader instanceof CompanyLoaderInterface);
-        \assert($platformParser instanceof PlatformParserInterface);
-        \assert($initData instanceof DataInterface);
+        assert($logger instanceof LoggerInterface);
+        assert($companyLoader instanceof CompanyLoaderInterface);
+        assert($platformParser instanceof PlatformParserInterface);
+        assert($initData instanceof DataInterface);
         $object = new DeviceLoader(
             $logger,
             $initData,
@@ -100,10 +109,8 @@ final class DeviceLoaderTest extends TestCase
     }
 
     /**
-     * @throws \BrowserDetector\Loader\NotFoundException
-     * @throws \UnexpectedValueException
-     *
-     * @return void
+     * @throws NotFoundException
+     * @throws UnexpectedValueException
      */
     public function testInvokeNullInCache(): void
     {
@@ -157,10 +164,10 @@ final class DeviceLoaderTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
 
-        \assert($logger instanceof LoggerInterface);
-        \assert($companyLoader instanceof CompanyLoaderInterface);
-        \assert($platformParser instanceof PlatformParserInterface);
-        \assert($initData instanceof DataInterface);
+        assert($logger instanceof LoggerInterface);
+        assert($companyLoader instanceof CompanyLoaderInterface);
+        assert($platformParser instanceof PlatformParserInterface);
+        assert($initData instanceof DataInterface);
         $object = new DeviceLoader(
             $logger,
             $initData,
@@ -175,14 +182,12 @@ final class DeviceLoaderTest extends TestCase
     }
 
     /**
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
-     * @throws \PHPUnit\Framework\ExpectationFailedException
-     * @throws \PHPUnit\Framework\Exception
-     * @throws \BrowserDetector\Loader\NotFoundException
+     * @throws InvalidArgumentException
+     * @throws ExpectationFailedException
+     * @throws Exception
+     * @throws NotFoundException
      * @throws \InvalidArgumentException
-     * @throws \UnexpectedValueException
-     *
-     * @return void
+     * @throws UnexpectedValueException
      */
     public function testInvokeNoVersion(): void
     {
@@ -248,10 +253,10 @@ final class DeviceLoaderTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
 
-        \assert($logger instanceof LoggerInterface);
-        \assert($companyLoader instanceof CompanyLoaderInterface);
-        \assert($platformParser instanceof PlatformParserInterface);
-        \assert($initData instanceof DataInterface);
+        assert($logger instanceof LoggerInterface);
+        assert($companyLoader instanceof CompanyLoaderInterface);
+        assert($platformParser instanceof PlatformParserInterface);
+        assert($initData instanceof DataInterface);
         $object = new DeviceLoader(
             $logger,
             $initData,
@@ -269,14 +274,12 @@ final class DeviceLoaderTest extends TestCase
     }
 
     /**
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
-     * @throws \PHPUnit\Framework\ExpectationFailedException
-     * @throws \PHPUnit\Framework\Exception
-     * @throws \BrowserDetector\Loader\NotFoundException
+     * @throws InvalidArgumentException
+     * @throws ExpectationFailedException
+     * @throws Exception
+     * @throws NotFoundException
      * @throws \InvalidArgumentException
-     * @throws \UnexpectedValueException
-     *
-     * @return void
+     * @throws UnexpectedValueException
      */
     public function testInvokeGenericVersionAndPlatformInvalidException(): void
     {
@@ -349,10 +352,10 @@ final class DeviceLoaderTest extends TestCase
             ->with('test-platform')
             ->willThrowException(new NotFoundException());
 
-        \assert($logger instanceof LoggerInterface);
-        \assert($companyLoader instanceof CompanyLoaderInterface);
-        \assert($platformParser instanceof PlatformParserInterface);
-        \assert($initData instanceof DataInterface);
+        assert($logger instanceof LoggerInterface);
+        assert($companyLoader instanceof CompanyLoaderInterface);
+        assert($platformParser instanceof PlatformParserInterface);
+        assert($initData instanceof DataInterface);
         $object = new DeviceLoader(
             $logger,
             $initData,
@@ -370,14 +373,12 @@ final class DeviceLoaderTest extends TestCase
     }
 
     /**
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
-     * @throws \PHPUnit\Framework\ExpectationFailedException
-     * @throws \PHPUnit\Framework\Exception
-     * @throws \BrowserDetector\Loader\NotFoundException
+     * @throws InvalidArgumentException
+     * @throws ExpectationFailedException
+     * @throws Exception
+     * @throws NotFoundException
      * @throws \InvalidArgumentException
-     * @throws \UnexpectedValueException
-     *
-     * @return void
+     * @throws UnexpectedValueException
      */
     public function testInvokeVersionAndPlatform(): void
     {
@@ -438,7 +439,7 @@ final class DeviceLoaderTest extends TestCase
         $companyLoader = $this->getMockBuilder(CompanyLoaderInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
-        $platform = $this->getMockBuilder(OsInterface::class)
+        $platform      = $this->getMockBuilder(OsInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
 
@@ -450,10 +451,10 @@ final class DeviceLoaderTest extends TestCase
             ->with('test-platform')
             ->willReturn($platform);
 
-        \assert($logger instanceof LoggerInterface);
-        \assert($companyLoader instanceof CompanyLoaderInterface);
-        \assert($platformParser instanceof PlatformParserInterface);
-        \assert($initData instanceof DataInterface);
+        assert($logger instanceof LoggerInterface);
+        assert($companyLoader instanceof CompanyLoaderInterface);
+        assert($platformParser instanceof PlatformParserInterface);
+        assert($initData instanceof DataInterface);
         $object = new DeviceLoader(
             $logger,
             $initData,
@@ -466,12 +467,30 @@ final class DeviceLoaderTest extends TestCase
         self::assertIsArray($result);
         self::assertArrayHasKey(0, $result);
         $deviceResult = $result[0];
-        \assert($deviceResult instanceof DeviceInterface, sprintf('$deviceResult should be an instance of %s, but is %s', DeviceInterface::class, get_class($deviceResult)));
+
+        assert(
+            $deviceResult instanceof DeviceInterface,
+            sprintf(
+                '$deviceResult should be an instance of %s, but is %s',
+                DeviceInterface::class,
+                is_object($deviceResult) ? get_class($deviceResult) : gettype($deviceResult)
+            )
+        );
+
         self::assertInstanceOf(DeviceInterface::class, $deviceResult);
 
         self::assertArrayHasKey(1, $result);
         $platformResult = $result[1];
-        \assert($platformResult instanceof OsInterface, sprintf('$platformResult should be an instance of %s, but is %s', OsInterface::class, get_class($platformResult)));
+
+        assert(
+            $platformResult instanceof OsInterface,
+            sprintf(
+                '$platformResult should be an instance of %s, but is %s',
+                OsInterface::class,
+                is_object($platformResult) ? get_class($platformResult) : gettype($platformResult)
+            )
+        );
+
         self::assertInstanceOf(OsInterface::class, $platformResult);
         self::assertSame($platform, $platformResult);
 

@@ -9,6 +9,7 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetector\Loader;
 
 use BrowserDetector\Factory\EngineFactory;
@@ -16,23 +17,16 @@ use BrowserDetector\Loader\Helper\DataInterface;
 use BrowserDetector\Version\VersionFactory;
 use Psr\Log\LoggerInterface;
 use UaResult\Engine\EngineInterface;
+use UnexpectedValueException;
 
 final class EngineLoader implements EngineLoaderInterface
 {
-    /** @var \Psr\Log\LoggerInterface */
-    private $logger;
+    private LoggerInterface $logger;
 
-    /** @var \BrowserDetector\Loader\Helper\DataInterface */
-    private $initData;
+    private DataInterface $initData;
 
-    /** @var \BrowserDetector\Loader\CompanyLoaderInterface */
-    private $companyLoader;
+    private CompanyLoaderInterface $companyLoader;
 
-    /**
-     * @param \Psr\Log\LoggerInterface                       $logger
-     * @param \BrowserDetector\Loader\Helper\DataInterface   $initData
-     * @param \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader
-     */
     public function __construct(
         LoggerInterface $logger,
         DataInterface $initData,
@@ -47,13 +41,8 @@ final class EngineLoader implements EngineLoaderInterface
     }
 
     /**
-     * @param string $key
-     * @param string $useragent
-     *
-     * @throws \BrowserDetector\Loader\NotFoundException
-     * @throws \UnexpectedValueException
-     *
-     * @return \UaResult\Engine\EngineInterface
+     * @throws NotFoundException
+     * @throws UnexpectedValueException
      */
     public function load(string $key, string $useragent = ''): EngineInterface
     {

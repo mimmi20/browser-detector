@@ -9,6 +9,7 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetectorTest\Loader;
 
 use BrowserDetector\Loader\BrowserLoader;
@@ -17,18 +18,26 @@ use BrowserDetector\Loader\Helper\DataInterface;
 use BrowserDetector\Loader\NotFoundException;
 use BrowserDetector\Parser\EngineParserInterface;
 use BrowserDetector\Version\Test;
+use PHPUnit\Framework\Exception;
+use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
+use SebastianBergmann\RecursionContext\InvalidArgumentException;
 use UaResult\Browser\BrowserInterface;
 use UaResult\Engine\EngineInterface;
+use UnexpectedValueException;
+
+use function assert;
+use function get_class;
+use function gettype;
+use function is_object;
+use function sprintf;
 
 final class BrowserLoaderTest extends TestCase
 {
     /**
-     * @throws \BrowserDetector\Loader\NotFoundException
-     * @throws \UnexpectedValueException
-     *
-     * @return void
+     * @throws NotFoundException
+     * @throws UnexpectedValueException
      */
     public function testInvokeNotInCache(): void
     {
@@ -82,10 +91,10 @@ final class BrowserLoaderTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
 
-        \assert($logger instanceof LoggerInterface);
-        \assert($companyLoader instanceof CompanyLoaderInterface);
-        \assert($engineParser instanceof EngineParserInterface);
-        \assert($initData instanceof DataInterface);
+        assert($logger instanceof LoggerInterface);
+        assert($companyLoader instanceof CompanyLoaderInterface);
+        assert($engineParser instanceof EngineParserInterface);
+        assert($initData instanceof DataInterface);
         $object = new BrowserLoader(
             $logger,
             $initData,
@@ -100,10 +109,8 @@ final class BrowserLoaderTest extends TestCase
     }
 
     /**
-     * @throws \BrowserDetector\Loader\NotFoundException
-     * @throws \UnexpectedValueException
-     *
-     * @return void
+     * @throws NotFoundException
+     * @throws UnexpectedValueException
      */
     public function testInvokeNullInCache(): void
     {
@@ -157,10 +164,10 @@ final class BrowserLoaderTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
 
-        \assert($logger instanceof LoggerInterface);
-        \assert($companyLoader instanceof CompanyLoaderInterface);
-        \assert($engineParser instanceof EngineParserInterface);
-        \assert($initData instanceof DataInterface);
+        assert($logger instanceof LoggerInterface);
+        assert($companyLoader instanceof CompanyLoaderInterface);
+        assert($engineParser instanceof EngineParserInterface);
+        assert($initData instanceof DataInterface);
         $object = new BrowserLoader(
             $logger,
             $initData,
@@ -175,14 +182,12 @@ final class BrowserLoaderTest extends TestCase
     }
 
     /**
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
-     * @throws \PHPUnit\Framework\ExpectationFailedException
-     * @throws \PHPUnit\Framework\Exception
-     * @throws \BrowserDetector\Loader\NotFoundException
+     * @throws InvalidArgumentException
+     * @throws ExpectationFailedException
+     * @throws Exception
+     * @throws NotFoundException
      * @throws \InvalidArgumentException
-     * @throws \UnexpectedValueException
-     *
-     * @return void
+     * @throws UnexpectedValueException
      */
     public function testInvokeNoVersion(): void
     {
@@ -246,10 +251,10 @@ final class BrowserLoaderTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
 
-        \assert($logger instanceof LoggerInterface);
-        \assert($companyLoader instanceof CompanyLoaderInterface);
-        \assert($engineParser instanceof EngineParserInterface);
-        \assert($initData instanceof DataInterface);
+        assert($logger instanceof LoggerInterface);
+        assert($companyLoader instanceof CompanyLoaderInterface);
+        assert($engineParser instanceof EngineParserInterface);
+        assert($initData instanceof DataInterface);
         $object = new BrowserLoader(
             $logger,
             $initData,
@@ -267,14 +272,12 @@ final class BrowserLoaderTest extends TestCase
     }
 
     /**
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
-     * @throws \PHPUnit\Framework\ExpectationFailedException
-     * @throws \PHPUnit\Framework\Exception
-     * @throws \BrowserDetector\Loader\NotFoundException
+     * @throws InvalidArgumentException
+     * @throws ExpectationFailedException
+     * @throws Exception
+     * @throws NotFoundException
      * @throws \InvalidArgumentException
-     * @throws \UnexpectedValueException
-     *
-     * @return void
+     * @throws UnexpectedValueException
      */
     public function testInvokeGenericVersionAndEngineException(): void
     {
@@ -341,10 +344,10 @@ final class BrowserLoaderTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
 
-        \assert($logger instanceof LoggerInterface);
-        \assert($companyLoader instanceof CompanyLoaderInterface);
-        \assert($engineParser instanceof EngineParserInterface);
-        \assert($initData instanceof DataInterface);
+        assert($logger instanceof LoggerInterface);
+        assert($companyLoader instanceof CompanyLoaderInterface);
+        assert($engineParser instanceof EngineParserInterface);
+        assert($initData instanceof DataInterface);
         $object = new BrowserLoader(
             $logger,
             $initData,
@@ -362,14 +365,12 @@ final class BrowserLoaderTest extends TestCase
     }
 
     /**
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
-     * @throws \PHPUnit\Framework\ExpectationFailedException
-     * @throws \PHPUnit\Framework\Exception
-     * @throws \BrowserDetector\Loader\NotFoundException
+     * @throws InvalidArgumentException
+     * @throws ExpectationFailedException
+     * @throws Exception
+     * @throws NotFoundException
      * @throws \InvalidArgumentException
-     * @throws \UnexpectedValueException
-     *
-     * @return void
+     * @throws UnexpectedValueException
      */
     public function testInvokeGenericVersionAndEngineInvalidException(): void
     {
@@ -445,10 +446,10 @@ final class BrowserLoaderTest extends TestCase
             ->with($engineKey, $useragent)
             ->willThrowException($exception);
 
-        \assert($logger instanceof LoggerInterface);
-        \assert($companyLoader instanceof CompanyLoaderInterface);
-        \assert($engineParser instanceof EngineParserInterface);
-        \assert($initData instanceof DataInterface);
+        assert($logger instanceof LoggerInterface);
+        assert($companyLoader instanceof CompanyLoaderInterface);
+        assert($engineParser instanceof EngineParserInterface);
+        assert($initData instanceof DataInterface);
         $object = new BrowserLoader(
             $logger,
             $initData,
@@ -466,14 +467,12 @@ final class BrowserLoaderTest extends TestCase
     }
 
     /**
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
-     * @throws \PHPUnit\Framework\ExpectationFailedException
-     * @throws \PHPUnit\Framework\Exception
-     * @throws \BrowserDetector\Loader\NotFoundException
+     * @throws InvalidArgumentException
+     * @throws ExpectationFailedException
+     * @throws Exception
+     * @throws NotFoundException
      * @throws \InvalidArgumentException
-     * @throws \UnexpectedValueException
-     *
-     * @return void
+     * @throws UnexpectedValueException
      */
     public function testInvokeVersionAndEngine(): void
     {
@@ -537,10 +536,10 @@ final class BrowserLoaderTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
 
-        \assert($logger instanceof LoggerInterface);
-        \assert($companyLoader instanceof CompanyLoaderInterface);
-        \assert($engineParser instanceof EngineParserInterface);
-        \assert($initData instanceof DataInterface);
+        assert($logger instanceof LoggerInterface);
+        assert($companyLoader instanceof CompanyLoaderInterface);
+        assert($engineParser instanceof EngineParserInterface);
+        assert($initData instanceof DataInterface);
         $object = new BrowserLoader(
             $logger,
             $initData,
@@ -553,11 +552,29 @@ final class BrowserLoaderTest extends TestCase
         self::assertIsArray($result);
         self::assertArrayHasKey(0, $result);
         $browserResult = $result[0];
-        \assert($browserResult instanceof BrowserInterface, sprintf('$browserResult should be an instance of %s, but is %s', BrowserInterface::class, get_class($browserResult)));
+
+        assert(
+            $browserResult instanceof BrowserInterface,
+            sprintf(
+                '$browserResult should be an instance of %s, but is %s',
+                BrowserInterface::class,
+                is_object($browserResult) ? get_class($browserResult) : gettype($browserResult)
+            )
+        );
+
         self::assertInstanceOf(BrowserInterface::class, $browserResult);
         self::assertArrayHasKey(1, $result);
         $engineResult = $result[1];
-        \assert($engineResult instanceof EngineInterface, sprintf('$engineResult should be an instance of %s, but is %s', EngineInterface::class, get_class($engineResult)));
+
+        assert(
+            $engineResult instanceof EngineInterface,
+            sprintf(
+                '$engineResult should be an instance of %s, but is %s',
+                EngineInterface::class,
+                is_object($engineResult) ? get_class($engineResult) : gettype($engineResult)
+            )
+        );
+
         self::assertInstanceOf(EngineInterface::class, $engineResult);
 
         self::assertSame('test-browser', $browserResult->getName());

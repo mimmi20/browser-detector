@@ -9,17 +9,13 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetector\Version;
 
 use Psr\Log\LoggerInterface;
 
 final class GoannaFactory implements GoannaFactoryInterface
 {
-    /**
-     * @param \Psr\Log\LoggerInterface $logger
-     *
-     * @return \BrowserDetector\Version\Goanna
-     */
     public function __invoke(LoggerInterface $logger): Goanna
     {
         return new Goanna(

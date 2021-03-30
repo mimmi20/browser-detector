@@ -9,28 +9,28 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetectorTest\Version;
 
 use BrowserDetector\Version\Macos;
 use BrowserDetector\Version\VersionFactory;
 use BrowserDetector\Version\VersionInterface;
+use Exception;
 use MacosBuild\MacosBuild;
+use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
+use SebastianBergmann\RecursionContext\InvalidArgumentException;
+use UnexpectedValueException;
 
 final class MacosTest extends TestCase
 {
     /**
+     * @throws Exception
+     * @throws InvalidArgumentException
+     * @throws ExpectationFailedException
+     * @throws UnexpectedValueException
+     *
      * @dataProvider providerVersion
-     *
-     * @param string      $useragent
-     * @param string|null $expectedVersion
-     *
-     * @throws \Exception
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
-     * @throws \PHPUnit\Framework\ExpectationFailedException
-     * @throws \UnexpectedValueException
-     *
-     * @return void
      */
     public function testTestdetectVersion(string $useragent, ?string $expectedVersion): void
     {
@@ -43,7 +43,7 @@ final class MacosTest extends TestCase
     }
 
     /**
-     * @return array[]
+     * @return array<int, array<int, string>>
      */
     public function providerVersion(): array
     {

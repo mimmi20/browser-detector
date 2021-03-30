@@ -9,19 +9,22 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetectorTest\Loader\Helper;
 
 use BrowserDetector\Loader\Helper\Filter;
+use Iterator;
 use org\bovigo\vfs\vfsStream;
+use PHPUnit\Framework\Exception;
+use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
+use SebastianBergmann\RecursionContext\InvalidArgumentException;
+use SplFileInfo;
 
 final class FilterTest extends TestCase
 {
     private const DATA_PATH = 'root';
 
-    /**
-     * @return void
-     */
     protected function setUp(): void
     {
         $structure = [
@@ -38,12 +41,10 @@ final class FilterTest extends TestCase
     }
 
     /**
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
-     * @throws \PHPUnit\Framework\ExpectationFailedException
-     * @throws \PHPUnit\Framework\Exception
+     * @throws InvalidArgumentException
+     * @throws ExpectationFailedException
+     * @throws Exception
      * @throws \InvalidArgumentException
-     *
-     * @return void
      */
     public function testInvokeFail(): void
     {
@@ -51,12 +52,12 @@ final class FilterTest extends TestCase
 
         $result = $object(vfsStream::url(self::DATA_PATH), 'json');
 
-        self::assertInstanceOf(\Iterator::class, $result);
+        self::assertInstanceOf(Iterator::class, $result);
 
         $counter = 0;
 
         foreach ($result as $file) {
-            self::assertInstanceOf(\SplFileInfo::class, $file);
+            self::assertInstanceOf(SplFileInfo::class, $file);
             ++$counter;
         }
 

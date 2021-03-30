@@ -9,6 +9,7 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetectorTest\Version;
 
 use BrowserDetector\Version\NotNumericException;
@@ -17,22 +18,22 @@ use BrowserDetector\Version\RimOs;
 use BrowserDetector\Version\VersionFactory;
 use BrowserDetector\Version\VersionFactoryInterface;
 use BrowserDetector\Version\VersionInterface;
+use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
+use SebastianBergmann\RecursionContext\InvalidArgumentException;
+use UnexpectedValueException;
+
+use function assert;
 
 final class RimOsTest extends TestCase
 {
     /**
+     * @throws InvalidArgumentException
+     * @throws ExpectationFailedException
+     * @throws UnexpectedValueException
+     *
      * @dataProvider providerVersion
-     *
-     * @param string      $useragent
-     * @param string|null $expectedVersion
-     *
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
-     * @throws \PHPUnit\Framework\ExpectationFailedException
-     * @throws \UnexpectedValueException
-     *
-     * @return void
      */
     public function testTestdetectVersion(string $useragent, ?string $expectedVersion): void
     {
@@ -64,7 +65,7 @@ final class RimOsTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        \assert($logger instanceof LoggerInterface);
+        assert($logger instanceof LoggerInterface);
         $object = new RimOs($logger, new VersionFactory());
 
         $detectedVersion = $object->detectVersion($useragent);
@@ -74,7 +75,7 @@ final class RimOsTest extends TestCase
     }
 
     /**
-     * @return array[]
+     * @return array<int, array<int, string|null>>
      */
     public function providerVersion(): array
     {
@@ -102,9 +103,6 @@ final class RimOsTest extends TestCase
         ];
     }
 
-    /**
-     * @return void
-     */
     public function testDetectVersionFail(): void
     {
         $useragent = 'Mozilla/5.0 (BB10; Kbd) AppleWebKit/537.35+ (KHTML, like Gecko) Mobile Safari/537.35+';
@@ -147,8 +145,8 @@ final class RimOsTest extends TestCase
             ->with('10.0.0')
             ->willThrowException($exception);
 
-        \assert($logger instanceof LoggerInterface);
-        \assert($versionFactory instanceof VersionFactoryInterface);
+        assert($logger instanceof LoggerInterface);
+        assert($versionFactory instanceof VersionFactoryInterface);
         $object = new RimOs($logger, $versionFactory);
 
         $detectedVersion = $object->detectVersion($useragent);
@@ -158,9 +156,6 @@ final class RimOsTest extends TestCase
         self::assertNull($detectedVersion->getVersion());
     }
 
-    /**
-     * @return void
-     */
     public function testDetectVersionFailSecond(): void
     {
         $useragent = 'Mozilla/5.0 (BB10; Kbd) AppleWebKit/537.35+ (KHTML, like Gecko) Version/10.3.3.3057 Mobile Safari/537.35+';
@@ -206,8 +201,8 @@ final class RimOsTest extends TestCase
             ->expects(self::never())
             ->method('set');
 
-        \assert($logger instanceof LoggerInterface);
-        \assert($versionFactory instanceof VersionFactoryInterface);
+        assert($logger instanceof LoggerInterface);
+        assert($versionFactory instanceof VersionFactoryInterface);
         $object = new RimOs($logger, $versionFactory);
 
         $detectedVersion = $object->detectVersion($useragent);

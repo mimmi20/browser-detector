@@ -9,6 +9,7 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetectorTest\Version;
 
 use BrowserDetector\Version\Goanna;
@@ -17,22 +18,22 @@ use BrowserDetector\Version\NullVersion;
 use BrowserDetector\Version\VersionFactory;
 use BrowserDetector\Version\VersionFactoryInterface;
 use BrowserDetector\Version\VersionInterface;
+use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
+use SebastianBergmann\RecursionContext\InvalidArgumentException;
+use UnexpectedValueException;
+
+use function assert;
 
 final class GoannaTest extends TestCase
 {
     /**
+     * @throws InvalidArgumentException
+     * @throws ExpectationFailedException
+     * @throws UnexpectedValueException
+     *
      * @dataProvider providerVersion
-     *
-     * @param string      $useragent
-     * @param string|null $expectedVersion
-     *
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
-     * @throws \PHPUnit\Framework\ExpectationFailedException
-     * @throws \UnexpectedValueException
-     *
-     * @return void
      */
     public function testTestdetectVersion(string $useragent, ?string $expectedVersion): void
     {
@@ -64,7 +65,7 @@ final class GoannaTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        \assert($logger instanceof LoggerInterface);
+        assert($logger instanceof LoggerInterface);
         $object = new Goanna($logger, new VersionFactory());
 
         $detectedVersion = $object->detectVersion($useragent);
@@ -74,7 +75,7 @@ final class GoannaTest extends TestCase
     }
 
     /**
-     * @return array[]
+     * @return array<int, array<int, string>>
      */
     public function providerVersion(): array
     {
@@ -102,9 +103,6 @@ final class GoannaTest extends TestCase
         ];
     }
 
-    /**
-     * @return void
-     */
     public function testDetectVersionFail(): void
     {
         $useragent = 'Mozilla/5.0 (Windows NT 6.1; rv:52.9) Gecko/20100101 Goanna/3.3 Firefox/52.9 PaleMoon/27.5.0';
@@ -147,8 +145,8 @@ final class GoannaTest extends TestCase
             ->with('3.3')
             ->willThrowException($exception);
 
-        \assert($logger instanceof LoggerInterface);
-        \assert($versionFactory instanceof VersionFactoryInterface);
+        assert($logger instanceof LoggerInterface);
+        assert($versionFactory instanceof VersionFactoryInterface);
         $object = new Goanna($logger, $versionFactory);
 
         $detectedVersion = $object->detectVersion($useragent);
@@ -158,9 +156,6 @@ final class GoannaTest extends TestCase
         self::assertNull($detectedVersion->getVersion());
     }
 
-    /**
-     * @return void
-     */
     public function testDetectVersionFailSecond(): void
     {
         $useragent = 'Mozilla/5.0 (X11; Linux x86_64; rv:3.0) Goanna/20170207 PaleMoon/27.1.0';
@@ -203,8 +198,8 @@ final class GoannaTest extends TestCase
             ->with('3.0')
             ->willThrowException($exception);
 
-        \assert($logger instanceof LoggerInterface);
-        \assert($versionFactory instanceof VersionFactoryInterface);
+        assert($logger instanceof LoggerInterface);
+        assert($versionFactory instanceof VersionFactoryInterface);
         $object = new Goanna($logger, $versionFactory);
 
         $detectedVersion = $object->detectVersion($useragent);
@@ -214,9 +209,6 @@ final class GoannaTest extends TestCase
         self::assertNull($detectedVersion->getVersion());
     }
 
-    /**
-     * @return void
-     */
     public function testDetectVersionFailThird(): void
     {
         $useragent = 'Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:26.0.0b2) Goanna/20150828 Gecko/20100101 AppleWebKit/601.1.37 (KHTML, like Gecko) Version/9.0 Safari/601.1.37 PaleMoon/26.0.0b2';
@@ -259,8 +251,8 @@ final class GoannaTest extends TestCase
             ->with('1.0')
             ->willThrowException($exception);
 
-        \assert($logger instanceof LoggerInterface);
-        \assert($versionFactory instanceof VersionFactoryInterface);
+        assert($logger instanceof LoggerInterface);
+        assert($versionFactory instanceof VersionFactoryInterface);
         $object = new Goanna($logger, $versionFactory);
 
         $detectedVersion = $object->detectVersion($useragent);

@@ -9,17 +9,13 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetector\Version;
 
 use Psr\Log\LoggerInterface;
 
 final class CoreMediaFactory implements CoreMediaFactoryInterface
 {
-    /**
-     * @param \Psr\Log\LoggerInterface $logger
-     *
-     * @return \BrowserDetector\Version\CoreMedia
-     */
     public function __invoke(LoggerInterface $logger): CoreMedia
     {
         return new CoreMedia(

@@ -9,37 +9,41 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetectorTest;
 
 use BrowserDetector\RequestBuilder;
+use Laminas\Diactoros\ServerRequestFactory;
+use PHPUnit\Framework\Exception;
+use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
+use SebastianBergmann\RecursionContext\InvalidArgumentException;
+use stdClass;
 use UaRequest\Constants;
 use UaRequest\GenericRequest;
 use UaRequest\GenericRequestFactory;
-use Zend\Diactoros\ServerRequestFactory;
+use UnexpectedValueException;
+
+use function assert;
+use function get_class;
+use function sprintf;
 
 final class RequestBuilderTest extends TestCase
 {
-    /** @var \BrowserDetector\RequestBuilder */
-    private $object;
+    private RequestBuilder $object;
 
-    /**
-     * @return void
-     */
     protected function setUp(): void
     {
         $this->object = new RequestBuilder();
     }
 
     /**
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
-     * @throws \PHPUnit\Framework\ExpectationFailedException
-     * @throws \PHPUnit\Framework\Exception
+     * @throws InvalidArgumentException
+     * @throws ExpectationFailedException
+     * @throws Exception
      * @throws \InvalidArgumentException
-     * @throws \UnexpectedValueException
-     *
-     * @return void
+     * @throws UnexpectedValueException
      */
     public function testGetBrowserFromUaOld(): void
     {
@@ -72,21 +76,19 @@ final class RequestBuilderTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        \assert($logger instanceof LoggerInterface);
+        assert($logger instanceof LoggerInterface);
         $result = $this->object->buildRequest($logger, $useragent);
-        \assert($result instanceof GenericRequest, sprintf('$result should be an instance of %s, but is %s', GenericRequest::class, get_class($result)));
+        assert($result instanceof GenericRequest, sprintf('$result should be an instance of %s, but is %s', GenericRequest::class, get_class($result)));
 
         self::assertInstanceOf(GenericRequest::class, $result);
     }
 
     /**
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
-     * @throws \PHPUnit\Framework\ExpectationFailedException
-     * @throws \PHPUnit\Framework\Exception
+     * @throws InvalidArgumentException
+     * @throws ExpectationFailedException
+     * @throws Exception
      * @throws \InvalidArgumentException
-     * @throws \UnexpectedValueException
-     *
-     * @return void
+     * @throws UnexpectedValueException
      */
     public function testGetBrowserFromGenericRequest(): void
     {
@@ -119,26 +121,24 @@ final class RequestBuilderTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        \assert($logger instanceof LoggerInterface);
+        assert($logger instanceof LoggerInterface);
 
         $message        = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => [$useragent]]);
         $requestFactory = new GenericRequestFactory();
         $request        = $requestFactory->createRequestFromPsr7Message($message);
 
         $result = $this->object->buildRequest($logger, $request);
-        \assert($result instanceof GenericRequest, sprintf('$result should be an instance of %s, but is %s', GenericRequest::class, get_class($result)));
+        assert($result instanceof GenericRequest, sprintf('$result should be an instance of %s, but is %s', GenericRequest::class, get_class($result)));
 
         self::assertInstanceOf(GenericRequest::class, $result);
     }
 
     /**
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
-     * @throws \PHPUnit\Framework\ExpectationFailedException
-     * @throws \PHPUnit\Framework\Exception
+     * @throws InvalidArgumentException
+     * @throws ExpectationFailedException
+     * @throws Exception
      * @throws \InvalidArgumentException
-     * @throws \UnexpectedValueException
-     *
-     * @return void
+     * @throws UnexpectedValueException
      */
     public function testGetBrowserFromGenericRequest2(): void
     {
@@ -171,22 +171,20 @@ final class RequestBuilderTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        \assert($logger instanceof LoggerInterface);
+        assert($logger instanceof LoggerInterface);
 
         $message        = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => [$useragent]]);
         $requestFactory = new GenericRequestFactory();
         $request        = $requestFactory->createRequestFromPsr7Message($message);
 
         $result = $this->object->buildRequest($logger, $request);
-        \assert($result instanceof GenericRequest, sprintf('$result should be an instance of %s, but is %s', GenericRequest::class, get_class($result)));
+        assert($result instanceof GenericRequest, sprintf('$result should be an instance of %s, but is %s', GenericRequest::class, get_class($result)));
 
         self::assertInstanceOf(GenericRequest::class, $result);
     }
 
     /**
-     * @throws \UnexpectedValueException
-     *
-     * @return void
+     * @throws UnexpectedValueException
      */
     public function testGetBrowserFromInvalid(): void
     {
@@ -218,11 +216,11 @@ final class RequestBuilderTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        \assert($logger instanceof LoggerInterface);
+        assert($logger instanceof LoggerInterface);
 
-        $this->expectException(\UnexpectedValueException::class);
+        $this->expectException(UnexpectedValueException::class);
         $this->expectExceptionMessage('the request parameter has to be a string, an array or an instance of \Psr\Http\Message\MessageInterface');
 
-        $this->object->buildRequest($logger, new \stdClass());
+        $this->object->buildRequest($logger, new stdClass());
     }
 }

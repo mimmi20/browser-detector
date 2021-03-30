@@ -9,6 +9,7 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetector\Parser;
 
 use BrowserDetector\Helper\Desktop;
@@ -27,24 +28,14 @@ use Psr\Log\LoggerInterface;
 
 final class DeviceParserFactory implements DeviceParserFactoryInterface
 {
-    /** @var \Psr\Log\LoggerInterface */
-    private $logger;
+    private LoggerInterface $logger;
 
-    /** @var \JsonClass\JsonInterface */
-    private $jsonParser;
+    private JsonInterface $jsonParser;
 
-    /** @var \BrowserDetector\Loader\CompanyLoaderInterface */
-    private $companyLoader;
+    private CompanyLoaderInterface $companyLoader;
 
-    /** @var \BrowserDetector\Parser\PlatformParserInterface */
-    private $platformParser;
+    private PlatformParserInterface $platformParser;
 
-    /**
-     * @param \Psr\Log\LoggerInterface                        $logger
-     * @param \JsonClass\JsonInterface                        $jsonParser
-     * @param \BrowserDetector\Loader\CompanyLoaderInterface  $companyLoader
-     * @param \BrowserDetector\Parser\PlatformParserInterface $platformParser
-     */
     public function __construct(
         LoggerInterface $logger,
         JsonInterface $jsonParser,
@@ -59,8 +50,6 @@ final class DeviceParserFactory implements DeviceParserFactoryInterface
 
     /**
      * Gets the information about the rendering engine by User Agent
-     *
-     * @return \BrowserDetector\Parser\DeviceParserInterface
      */
     public function __invoke(): DeviceParserInterface
     {

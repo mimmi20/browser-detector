@@ -9,6 +9,7 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetector\Factory;
 
 use BrowserDetector\Loader\CompanyLoaderInterface;
@@ -16,21 +17,24 @@ use BrowserDetector\Loader\NotFoundException;
 use BrowserDetector\Version\VersionFactoryInterface;
 use BrowserDetector\Version\VersionInterface;
 use Psr\Log\LoggerInterface;
+use stdClass;
 use UaResult\Company\Company;
 use UaResult\Os\Os;
 use UaResult\Os\OsInterface;
+use UnexpectedValueException;
+
+use function array_key_exists;
+use function assert;
+use function is_int;
+use function is_string;
+use function version_compare;
 
 final class PlatformFactory
 {
     use VersionFactoryTrait;
 
-    /** @var \BrowserDetector\Loader\CompanyLoaderInterface */
-    private $companyLoader;
+    private CompanyLoaderInterface $companyLoader;
 
-    /**
-     * @param \BrowserDetector\Loader\CompanyLoaderInterface   $companyLoader
-     * @param \BrowserDetector\Version\VersionFactoryInterface $versionFactory
-     */
     public function __construct(CompanyLoaderInterface $companyLoader, VersionFactoryInterface $versionFactory)
     {
         $this->companyLoader  = $companyLoader;
@@ -38,14 +42,10 @@ final class PlatformFactory
     }
 
     /**
-     * @param \Psr\Log\LoggerInterface $logger
-     * @param array                    $data
-     * @param string                   $useragent
+     * @param array<string, (string|stdClass|int|null)> $data
      *
-     * @throws \BrowserDetector\Loader\NotFoundException
-     * @throws \UnexpectedValueException
-     *
-     * @return \UaResult\Os\OsInterface
+     * @throws NotFoundException
+     * @throws UnexpectedValueException
      */
     public function fromArray(LoggerInterface $logger, array $data, string $useragent): OsInterface
     {
@@ -58,7 +58,14 @@ final class PlatformFactory
         $name          = $data['name'];
         $marketingName = $data['marketingName'];
         $bits          = $data['bits'];
-        $version       = $this->getVersion($data, $useragent, $logger);
+
+        assert(!is_int($data['version']));
+        $version = $this->getVersion($data['version'], $useragent, $logger);
+
+        assert(is_string($name) || null === $name);
+        assert(is_string($marketingName) || null === $marketingName);
+        assert(is_int($bits) || null === $bits);
+        assert(is_string($data['manufacturer']));
 
         try {
             $manufacturer = $this->companyLoader->load($data['manufacturer'], $useragent);

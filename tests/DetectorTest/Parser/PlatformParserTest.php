@@ -9,25 +9,30 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetectorTest\Parser;
 
 use BrowserDetector\Loader\PlatformLoaderFactoryInterface;
 use BrowserDetector\Loader\PlatformLoaderInterface;
 use BrowserDetector\Parser\Helper\RulefileParserInterface;
 use BrowserDetector\Parser\PlatformParser;
+use PHPUnit\Framework\Exception;
+use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
+use SebastianBergmann\RecursionContext\InvalidArgumentException;
 use UaResult\Os\OsInterface;
+use UnexpectedValueException;
+
+use function assert;
 
 final class PlatformParserTest extends TestCase
 {
     /**
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
-     * @throws \PHPUnit\Framework\ExpectationFailedException
-     * @throws \PHPUnit\Framework\Exception
-     * @throws \UnexpectedValueException
+     * @throws InvalidArgumentException
+     * @throws ExpectationFailedException
+     * @throws Exception
+     * @throws UnexpectedValueException
      * @throws \InvalidArgumentException
-     *
-     * @return void
      */
     public function testInvoke(): void
     {
@@ -61,8 +66,8 @@ final class PlatformParserTest extends TestCase
             ->method('parseFile')
             ->willReturnOnConsecutiveCalls($mode, $key);
 
-        \assert($loaderFactory instanceof PlatformLoaderFactoryInterface);
-        \assert($fileParser instanceof RulefileParserInterface);
+        assert($loaderFactory instanceof PlatformLoaderFactoryInterface);
+        assert($fileParser instanceof RulefileParserInterface);
         $parser       = new PlatformParser($loaderFactory, $fileParser);
         $parserResult = $parser->parse($useragent);
 

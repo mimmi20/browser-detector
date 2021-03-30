@@ -9,16 +9,12 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetector\Version;
 
 use Psr\Log\LoggerInterface;
 
 interface TestFactoryInterface
 {
-    /**
-     * @param \Psr\Log\LoggerInterface $logger
-     *
-     * @return \BrowserDetector\Version\Test
-     */
     public function __invoke(LoggerInterface $logger): Test;
 }

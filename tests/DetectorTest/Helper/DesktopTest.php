@@ -9,33 +9,30 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetectorTest\Helper;
 
 use BrowserDetector\Helper\Desktop;
+use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
+use SebastianBergmann\RecursionContext\InvalidArgumentException;
+
+use function sprintf;
 
 final class DesktopTest extends TestCase
 {
-    /** @var \BrowserDetector\Helper\Desktop */
-    private $object;
+    private Desktop $object;
 
-    /**
-     * @return void
-     */
     protected function setUp(): void
     {
         $this->object = new Desktop();
     }
 
     /**
+     * @throws InvalidArgumentException
+     * @throws ExpectationFailedException
+     *
      * @dataProvider providerIsDesktop
-     *
-     * @param string $agent
-     *
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
-     * @throws \PHPUnit\Framework\ExpectationFailedException
-     *
-     * @return void
      */
     public function testIsDesktop(string $agent): void
     {
@@ -46,7 +43,7 @@ final class DesktopTest extends TestCase
     }
 
     /**
-     * @return array[]
+     * @return array<int, array<int, string>>
      */
     public function providerIsDesktop(): array
     {
@@ -103,14 +100,10 @@ final class DesktopTest extends TestCase
     }
 
     /**
+     * @throws InvalidArgumentException
+     * @throws ExpectationFailedException
+     *
      * @dataProvider providerIsNoDesktop
-     *
-     * @param string $agent
-     *
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
-     * @throws \PHPUnit\Framework\ExpectationFailedException
-     *
-     * @return void
      */
     public function testIsNoDesktop(string $agent): void
     {
@@ -121,7 +114,7 @@ final class DesktopTest extends TestCase
     }
 
     /**
-     * @return array[]
+     * @return array<int, array<int, string>>
      */
     public function providerIsNoDesktop(): array
     {

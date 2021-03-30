@@ -9,7 +9,11 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetector\Version;
+
+use function preg_match;
+use function version_compare;
 
 final class FirefoxOs implements VersionDetectorInterface
 {
@@ -25,12 +29,8 @@ final class FirefoxOs implements VersionDetectorInterface
         '18.0' => '1.0',
     ];
 
-    /** @var \BrowserDetector\Version\VersionFactoryInterface */
-    private $versionFactory;
+    private VersionFactoryInterface $versionFactory;
 
-    /**
-     * @param \BrowserDetector\Version\VersionFactoryInterface $versionFactory
-     */
     public function __construct(VersionFactoryInterface $versionFactory)
     {
         $this->versionFactory = $versionFactory;
@@ -38,10 +38,6 @@ final class FirefoxOs implements VersionDetectorInterface
 
     /**
      * returns the version of the operating system/platform
-     *
-     * @param string $useragent
-     *
-     * @return \BrowserDetector\Version\VersionInterface
      */
     public function detectVersion(string $useragent): VersionInterface
     {

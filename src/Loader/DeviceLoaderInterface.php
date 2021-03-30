@@ -9,18 +9,20 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetector\Loader;
+
+use UaResult\Device\DeviceInterface;
+use UaResult\Os\OsInterface;
+use UnexpectedValueException;
 
 interface DeviceLoaderInterface extends SpecificLoaderInterface
 {
     /**
-     * @param string $key
-     * @param string $useragent
+     * @return array<int, (OsInterface|DeviceInterface|null)>
      *
-     * @throws \BrowserDetector\Loader\NotFoundException
-     * @throws \UnexpectedValueException
-     *
-     * @return array
+     * @throws NotFoundException
+     * @throws UnexpectedValueException
      */
     public function load(string $key, string $useragent = ''): array;
 }

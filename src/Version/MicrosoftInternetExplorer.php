@@ -9,9 +9,13 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetector\Version;
 
 use Psr\Log\LoggerInterface;
+
+use function preg_match;
+use function version_compare;
 
 final class MicrosoftInternetExplorer implements VersionDetectorInterface
 {
@@ -23,20 +27,12 @@ final class MicrosoftInternetExplorer implements VersionDetectorInterface
         '4' => '8.0',
     ];
 
-    /** @var \Psr\Log\LoggerInterface */
-    private $logger;
+    private LoggerInterface $logger;
 
-    /** @var \BrowserDetector\Version\VersionFactoryInterface */
-    private $versionFactory;
+    private VersionFactoryInterface $versionFactory;
 
-    /** @var \BrowserDetector\Version\VersionDetectorInterface */
-    private $trident;
+    private VersionDetectorInterface $trident;
 
-    /**
-     * @param \Psr\Log\LoggerInterface                          $logger
-     * @param \BrowserDetector\Version\VersionFactoryInterface  $versionFactory
-     * @param \BrowserDetector\Version\VersionDetectorInterface $trident
-     */
     public function __construct(LoggerInterface $logger, VersionFactoryInterface $versionFactory, VersionDetectorInterface $trident)
     {
         $this->logger         = $logger;
@@ -46,10 +42,6 @@ final class MicrosoftInternetExplorer implements VersionDetectorInterface
 
     /**
      * returns the version of the operating system/platform
-     *
-     * @param string $useragent
-     *
-     * @return \BrowserDetector\Version\VersionInterface
      */
     public function detectVersion(string $useragent): VersionInterface
     {

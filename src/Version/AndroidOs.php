@@ -9,9 +9,14 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetector\Version;
 
 use Psr\Log\LoggerInterface;
+use UnexpectedValueException;
+
+use function mb_stripos;
+use function preg_match;
 
 final class AndroidOs implements VersionDetectorInterface
 {
@@ -31,16 +36,10 @@ final class AndroidOs implements VersionDetectorInterface
         'platform:server_android,osversion:',
     ];
 
-    /** @var \Psr\Log\LoggerInterface */
-    private $logger;
+    private LoggerInterface $logger;
 
-    /** @var VersionFactoryInterface */
-    private $versionFactory;
+    private VersionFactoryInterface $versionFactory;
 
-    /**
-     * @param \Psr\Log\LoggerInterface                         $logger
-     * @param \BrowserDetector\Version\VersionFactoryInterface $versionFactory
-     */
     public function __construct(LoggerInterface $logger, VersionFactoryInterface $versionFactory)
     {
         $this->logger         = $logger;
@@ -50,11 +49,7 @@ final class AndroidOs implements VersionDetectorInterface
     /**
      * returns the version of the operating system/platform
      *
-     * @param string $useragent
-     *
-     * @throws \UnexpectedValueException
-     *
-     * @return \BrowserDetector\Version\VersionInterface
+     * @throws UnexpectedValueException
      */
     public function detectVersion(string $useragent): VersionInterface
     {

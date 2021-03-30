@@ -9,14 +9,19 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetectorTest\Factory;
 
+use AssertionError;
 use BrowserDetector\Factory\DeviceFactory;
 use BrowserDetector\Factory\DisplayFactoryInterface;
 use BrowserDetector\Loader\CompanyLoaderInterface;
 use BrowserDetector\Loader\NotFoundException;
+use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
+use SebastianBergmann\RecursionContext\InvalidArgumentException;
+use stdClass;
 use UaDeviceType\TypeInterface;
 use UaDeviceType\TypeLoaderInterface;
 use UaDeviceType\Unknown;
@@ -24,11 +29,10 @@ use UaResult\Company\CompanyInterface;
 use UaResult\Device\Device;
 use UaResult\Device\DisplayInterface;
 
+use function assert;
+
 final class DeviceFactoryTest extends TestCase
 {
-    /**
-     * @return void
-     */
     public function testFromEmptyArray(): void
     {
         $useragent     = 'this is a test';
@@ -53,9 +57,9 @@ final class DeviceFactoryTest extends TestCase
             ->expects(self::never())
             ->method('fromArray');
 
-        \assert($companyLoader instanceof CompanyLoaderInterface);
-        \assert($typeLoader instanceof TypeLoaderInterface);
-        \assert($displayFactory instanceof DisplayFactoryInterface);
+        assert($companyLoader instanceof CompanyLoaderInterface);
+        assert($typeLoader instanceof TypeLoaderInterface);
+        assert($displayFactory instanceof DisplayFactoryInterface);
         $object = new DeviceFactory($companyLoader, $typeLoader, $displayFactory);
 
         $logger = $this->getMockBuilder(LoggerInterface::class)
@@ -86,23 +90,21 @@ final class DeviceFactoryTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $this->expectException(\AssertionError::class);
+        $this->expectException(AssertionError::class);
         $this->expectExceptionMessage('"deviceName" property is required');
 
-        \assert($logger instanceof LoggerInterface);
+        assert($logger instanceof LoggerInterface);
         $object->fromArray($logger, [], $useragent);
     }
 
     /**
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
-     * @throws \PHPUnit\Framework\ExpectationFailedException
-     *
-     * @return void
+     * @throws InvalidArgumentException
+     * @throws ExpectationFailedException
      */
     public function testFromArrayWithoutData(): void
     {
-        $useragent = 'this is a test';
-        $company   = $this->getMockBuilder(CompanyInterface::class)
+        $useragent     = 'this is a test';
+        $company       = $this->getMockBuilder(CompanyInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $companyLoader = $this->getMockBuilder(CompanyLoaderInterface::class)
@@ -114,7 +116,7 @@ final class DeviceFactoryTest extends TestCase
             ->with('unknown', $useragent)
             ->willReturn($company);
 
-        $type = $this->getMockBuilder(TypeInterface::class)
+        $type       = $this->getMockBuilder(TypeInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $typeLoader = $this->getMockBuilder(TypeLoaderInterface::class)
@@ -154,8 +156,8 @@ final class DeviceFactoryTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $displayParam = [];
-        $display      = $this->getMockBuilder(DisplayInterface::class)
+        $displayParam   = [];
+        $display        = $this->getMockBuilder(DisplayInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $displayFactory = $this->getMockBuilder(DisplayFactoryInterface::class)
@@ -167,12 +169,12 @@ final class DeviceFactoryTest extends TestCase
             ->with($logger, $displayParam)
             ->willReturn($display);
 
-        \assert($companyLoader instanceof CompanyLoaderInterface);
-        \assert($typeLoader instanceof TypeLoaderInterface);
-        \assert($displayFactory instanceof DisplayFactoryInterface);
+        assert($companyLoader instanceof CompanyLoaderInterface);
+        assert($typeLoader instanceof TypeLoaderInterface);
+        assert($displayFactory instanceof DisplayFactoryInterface);
         $object = new DeviceFactory($companyLoader, $typeLoader, $displayFactory);
 
-        \assert($logger instanceof LoggerInterface);
+        assert($logger instanceof LoggerInterface);
         $result = $object->fromArray(
             $logger,
             ['deviceName' => '', 'marketingName' => '', 'manufacturer' => 'unknown', 'brand' => 'unknown', 'type' => null, 'display' => null],
@@ -194,29 +196,22 @@ final class DeviceFactoryTest extends TestCase
     }
 
     /**
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
-     * @throws \PHPUnit\Framework\ExpectationFailedException
-     *
-     * @return void
+     * @throws InvalidArgumentException
+     * @throws ExpectationFailedException
      */
     public function testFromArrayWithData(): void
     {
         $useragent     = 'this is a test';
         $deviceName    = 'deviceName';
         $marketingName = 'marketingName';
-        $simCount      = 2;
-        $connections   = ['LTE', 'GSM'];
 
         $manufacturerParam = 'test-manufacturer';
         $brandParam        = 'test-brand';
 
-        $company = $this->getMockBuilder(CompanyInterface::class)
+        $manufacturer  = $this->getMockBuilder(CompanyInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
-        $manufacturer = $this->getMockBuilder(CompanyInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
-        $brand = $this->getMockBuilder(CompanyInterface::class)
+        $brand         = $this->getMockBuilder(CompanyInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $companyLoader = $this->getMockBuilder(CompanyLoaderInterface::class)
@@ -228,8 +223,8 @@ final class DeviceFactoryTest extends TestCase
             ->withConsecutive([$manufacturerParam, $useragent], [$brandParam, $useragent])
             ->willReturnOnConsecutiveCalls($manufacturer, $brand);
 
-        $typeParam = 1;
-        $type      = $this->getMockBuilder(TypeInterface::class)
+        $typeParam  = '1';
+        $type       = $this->getMockBuilder(TypeInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $typeLoader = $this->getMockBuilder(TypeLoaderInterface::class)
@@ -238,7 +233,7 @@ final class DeviceFactoryTest extends TestCase
         $typeLoader
             ->expects(self::once())
             ->method('load')
-            ->with('1')
+            ->with($typeParam)
             ->willReturn($type);
 
         $logger = $this->getMockBuilder(LoggerInterface::class)
@@ -269,8 +264,8 @@ final class DeviceFactoryTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $displayParam = [];
-        $display      = $this->getMockBuilder(DisplayInterface::class)
+        $displayParam   = [];
+        $display        = $this->getMockBuilder(DisplayInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $displayFactory = $this->getMockBuilder(DisplayFactoryInterface::class)
@@ -282,25 +277,21 @@ final class DeviceFactoryTest extends TestCase
             ->with($logger, $displayParam)
             ->willReturn($display);
 
-        \assert($companyLoader instanceof CompanyLoaderInterface);
-        \assert($typeLoader instanceof TypeLoaderInterface);
-        \assert($displayFactory instanceof DisplayFactoryInterface);
+        assert($companyLoader instanceof CompanyLoaderInterface);
+        assert($typeLoader instanceof TypeLoaderInterface);
+        assert($displayFactory instanceof DisplayFactoryInterface);
         $object = new DeviceFactory($companyLoader, $typeLoader, $displayFactory);
 
         $data = [
             'deviceName' => $deviceName,
             'marketingName' => $marketingName,
-            'dualOrientation' => true,
-            'simCount' => $simCount,
-            'connections' => $connections,
-            'type' => $typeParam,
-            'display' => new \stdClass(),
-            'market' => new \stdClass(),
             'manufacturer' => $manufacturerParam,
             'brand' => $brandParam,
+            'display' => new stdClass(),
+            'type' => $typeParam,
         ];
 
-        \assert($logger instanceof LoggerInterface);
+        assert($logger instanceof LoggerInterface);
         $result = $object->fromArray($logger, $data, $useragent);
 
         self::assertInstanceOf(Device::class, $result);
@@ -320,18 +311,14 @@ final class DeviceFactoryTest extends TestCase
     }
 
     /**
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
-     * @throws \PHPUnit\Framework\ExpectationFailedException
-     *
-     * @return void
+     * @throws InvalidArgumentException
+     * @throws ExpectationFailedException
      */
     public function testFromArrayWithDataFailure(): void
     {
         $useragent     = 'this is a test';
         $deviceName    = 'deviceName';
         $marketingName = 'marketingName';
-        $simCount      = 2;
-        $connections   = ['LTE', 'GSM'];
 
         $manufacturerParam = 'test-manufacturer';
         $brandParam        = 'test-brand';
@@ -347,14 +334,14 @@ final class DeviceFactoryTest extends TestCase
             ->withConsecutive([$manufacturerParam, $useragent], [$brandParam, $useragent])
             ->willThrowException($companyException);
 
-        $typeParam  = 1;
+        $typeParam  = '1';
         $typeLoader = $this->getMockBuilder(TypeLoaderInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $typeLoader
             ->expects(self::once())
             ->method('load')
-            ->with('1')
+            ->with($typeParam)
             ->willThrowException($typeException);
 
         $logger = $this->getMockBuilder(LoggerInterface::class)
@@ -386,7 +373,7 @@ final class DeviceFactoryTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $display = $this->getMockBuilder(DisplayInterface::class)
+        $display        = $this->getMockBuilder(DisplayInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $displayParam   = [];
@@ -399,25 +386,21 @@ final class DeviceFactoryTest extends TestCase
             ->with($logger, $displayParam)
             ->willReturn($display);
 
-        \assert($companyLoader instanceof CompanyLoaderInterface);
-        \assert($typeLoader instanceof TypeLoaderInterface);
-        \assert($displayFactory instanceof DisplayFactoryInterface);
+        assert($companyLoader instanceof CompanyLoaderInterface);
+        assert($typeLoader instanceof TypeLoaderInterface);
+        assert($displayFactory instanceof DisplayFactoryInterface);
         $object = new DeviceFactory($companyLoader, $typeLoader, $displayFactory);
 
         $data = [
             'deviceName' => $deviceName,
             'marketingName' => $marketingName,
-            'dualOrientation' => true,
-            'simCount' => $simCount,
-            'connections' => $connections,
-            'type' => $typeParam,
-            'display' => new \stdClass(),
-            'market' => new \stdClass(),
             'manufacturer' => $manufacturerParam,
             'brand' => $brandParam,
+            'display' => new stdClass(),
+            'type' => $typeParam,
         ];
 
-        \assert($logger instanceof LoggerInterface);
+        assert($logger instanceof LoggerInterface);
         $result = $object->fromArray($logger, $data, $useragent);
 
         self::assertInstanceOf(Device::class, $result);

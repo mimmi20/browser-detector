@@ -9,6 +9,7 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetectorTest\Parser;
 
 use BrowserDetector\Loader\CompanyLoaderInterface;
@@ -17,18 +18,21 @@ use BrowserDetector\Parser\DeviceParserFactory;
 use BrowserDetector\Parser\DeviceParserInterface;
 use BrowserDetector\Parser\PlatformParserInterface;
 use JsonClass\JsonInterface;
+use PHPUnit\Framework\Exception;
+use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
+use SebastianBergmann\RecursionContext\InvalidArgumentException;
+
+use function assert;
 
 final class DeviceParserFactoryTest extends TestCase
 {
     /**
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
-     * @throws \PHPUnit\Framework\ExpectationFailedException
-     * @throws \PHPUnit\Framework\Exception
+     * @throws InvalidArgumentException
+     * @throws ExpectationFailedException
+     * @throws Exception
      * @throws \InvalidArgumentException
-     *
-     * @return void
      */
     public function testInvoke(): void
     {
@@ -37,10 +41,10 @@ final class DeviceParserFactoryTest extends TestCase
         $companyLoader  = $this->createMock(CompanyLoaderInterface::class);
         $platformParser = $this->createMock(PlatformParserInterface::class);
 
-        \assert($logger instanceof LoggerInterface);
-        \assert($jsonParser instanceof JsonInterface);
-        \assert($companyLoader instanceof CompanyLoaderInterface);
-        \assert($platformParser instanceof PlatformParserInterface);
+        assert($logger instanceof LoggerInterface);
+        assert($jsonParser instanceof JsonInterface);
+        assert($companyLoader instanceof CompanyLoaderInterface);
+        assert($platformParser instanceof PlatformParserInterface);
         $factory = new DeviceParserFactory($logger, $jsonParser, $companyLoader, $platformParser);
 
         $parser = $factory();

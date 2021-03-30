@@ -9,16 +9,15 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetector\Helper;
+
+use function preg_match;
 
 final class Desktop implements DesktopInterface
 {
     /**
      * Returns true if the give $useragent is from a desktop device
-     *
-     * @param string $useragent
-     *
-     * @return bool
      */
     public function isDesktopDevice(string $useragent): bool
     {

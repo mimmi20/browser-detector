@@ -9,17 +9,13 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetector\Version;
 
 use Psr\Log\LoggerInterface;
 
 final class MaxthonFactory implements MaxthonFactoryInterface
 {
-    /**
-     * @param \Psr\Log\LoggerInterface $logger
-     *
-     * @return \BrowserDetector\Version\Maxthon
-     */
     public function __invoke(LoggerInterface $logger): Maxthon
     {
         return new Maxthon(

@@ -9,16 +9,12 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetector\Version;
 
 use Psr\Log\LoggerInterface;
 
 interface RaspbianFactoryInterface
 {
-    /**
-     * @param \Psr\Log\LoggerInterface $logger
-     *
-     * @return \BrowserDetector\Version\Raspbian
-     */
     public function __invoke(LoggerInterface $logger): Raspbian;
 }

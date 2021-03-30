@@ -9,6 +9,7 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetectorTest\Version;
 
 use BrowserDetector\Version\NotNumericException;
@@ -17,22 +18,22 @@ use BrowserDetector\Version\Raspbian;
 use BrowserDetector\Version\VersionFactory;
 use BrowserDetector\Version\VersionFactoryInterface;
 use BrowserDetector\Version\VersionInterface;
+use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
+use SebastianBergmann\RecursionContext\InvalidArgumentException;
+use UnexpectedValueException;
+
+use function assert;
 
 final class RaspbianTest extends TestCase
 {
     /**
+     * @throws InvalidArgumentException
+     * @throws ExpectationFailedException
+     * @throws UnexpectedValueException
+     *
      * @dataProvider providerVersion
-     *
-     * @param string      $useragent
-     * @param string|null $expectedVersion
-     *
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
-     * @throws \PHPUnit\Framework\ExpectationFailedException
-     * @throws \UnexpectedValueException
-     *
-     * @return void
      */
     public function testTestdetectVersion(string $useragent, ?string $expectedVersion): void
     {
@@ -64,7 +65,7 @@ final class RaspbianTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        \assert($logger instanceof LoggerInterface);
+        assert($logger instanceof LoggerInterface);
         $object = new Raspbian($logger, new VersionFactory());
 
         $detectedVersion = $object->detectVersion($useragent);
@@ -74,7 +75,7 @@ final class RaspbianTest extends TestCase
     }
 
     /**
-     * @return array[]
+     * @return array<int, array<int, string|null>>
      */
     public function providerVersion(): array
     {
@@ -94,9 +95,6 @@ final class RaspbianTest extends TestCase
         ];
     }
 
-    /**
-     * @return void
-     */
     public function testDetectVersionFail(): void
     {
         $exception = new NotNumericException('set failed');
@@ -138,8 +136,8 @@ final class RaspbianTest extends TestCase
             ->with('8.0')
             ->willThrowException($exception);
 
-        \assert($logger instanceof LoggerInterface);
-        \assert($versionFactory instanceof VersionFactoryInterface);
+        assert($logger instanceof LoggerInterface);
+        assert($versionFactory instanceof VersionFactoryInterface);
         $object = new Raspbian($logger, $versionFactory);
 
         $detectedVersion = $object->detectVersion('Mozilla/5.0 (Macintosh; ARM Mac OS X) AppleWebKit/538.15 (KHTML, like Gecko) Safari/538.15 Version/6.0 Raspbian/8.0 (1:3.8.2.0-0rpi27rpi1g) Epiphany/3.8.2');

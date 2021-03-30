@@ -9,16 +9,13 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetector\Helper;
 
 interface TvInterface
 {
     /**
      * Returns true if the give $useragent is from a tv device
-     *
-     * @param string $useragent
-     *
-     * @return bool
      */
     public function isTvDevice(string $useragent): bool;
 }

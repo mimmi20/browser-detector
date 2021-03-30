@@ -9,21 +9,28 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetectorTest\Loader\Helper;
 
+use ArrayIterator;
 use BrowserDetector\Loader\Helper\Data;
 use ExceptionalJSON\DecodeErrorException;
+use Iterator;
 use JsonClass\JsonInterface;
 use org\bovigo\vfs\vfsStream;
+use PHPUnit\Framework\Exception;
+use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
+use RuntimeException;
+use SebastianBergmann\RecursionContext\InvalidArgumentException;
+use SplFileInfo;
+
+use function assert;
 
 final class DataTest extends TestCase
 {
     private const DATA_PATH = 'root';
 
-    /**
-     * @return void
-     */
     protected function setUp(): void
     {
         $structure = [
@@ -34,12 +41,9 @@ final class DataTest extends TestCase
         vfsStream::setup(self::DATA_PATH, null, $structure);
     }
 
-    /**
-     * @return void
-     */
     public function testInvokeFail(): void
     {
-        $file = $this->getMockBuilder(\SplFileInfo::class)
+        $file = $this->getMockBuilder(SplFileInfo::class)
             ->disableOriginalConstructor()
             ->getMock();
         $file
@@ -47,7 +51,7 @@ final class DataTest extends TestCase
             ->method('getPathname')
             ->willReturn(vfsStream::url(self::DATA_PATH . '/bot.json'));
 
-        $iterator = $this->getMockBuilder(\Iterator::class)
+        $iterator = $this->getMockBuilder(Iterator::class)
             ->disableOriginalConstructor()
             ->getMock();
         $iterator
@@ -60,7 +64,7 @@ final class DataTest extends TestCase
             ->willReturnCallback(
                 static function (): bool {
                     static $i = 0;
-                    $return = false;
+                    $return   = false;
                     if (0 === $i) {
                         $return = true;
                     }
@@ -81,27 +85,25 @@ final class DataTest extends TestCase
             ->with('{"key": "value"}', false, 512, 0)
             ->will(self::throwException(new DecodeErrorException(0, 'error', '')));
 
-        \assert($iterator instanceof \Iterator);
-        \assert($jsonParser instanceof JsonInterface);
+        assert($iterator instanceof Iterator);
+        assert($jsonParser instanceof JsonInterface);
         $object = new Data($iterator, $jsonParser);
 
-        $this->expectException(\RuntimeException::class);
+        $this->expectException(RuntimeException::class);
         $this->expectExceptionMessage('file "vfs://root/bot.json" contains invalid json');
         $this->expectExceptionCode(0);
         $object();
     }
 
     /**
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
-     * @throws \PHPUnit\Framework\ExpectationFailedException
-     * @throws \PHPUnit\Framework\Exception
+     * @throws InvalidArgumentException
+     * @throws ExpectationFailedException
+     * @throws Exception
      * @throws \InvalidArgumentException
-     *
-     * @return void
      */
     public function testInvokeSuccess(): void
     {
-        $file = $this->getMockBuilder(\SplFileInfo::class)
+        $file = $this->getMockBuilder(SplFileInfo::class)
             ->disableOriginalConstructor()
             ->getMock();
         $file
@@ -109,7 +111,7 @@ final class DataTest extends TestCase
             ->method('getPathname')
             ->willReturnOnConsecutiveCalls(vfsStream::url(self::DATA_PATH . '/bot.json'), vfsStream::url(self::DATA_PATH . '/tool.json'));
 
-        $iterator = $this->getMockBuilder(\ArrayIterator::class)
+        $iterator = $this->getMockBuilder(ArrayIterator::class)
             ->disableOriginalConstructor()
             ->getMock();
         $iterator
@@ -122,7 +124,7 @@ final class DataTest extends TestCase
             ->willReturnCallback(
                 static function (): bool {
                     static $i = 0;
-                    $return = false;
+                    $return   = false;
                     if (1 >= $i) {
                         $return = true;
                     }
@@ -146,8 +148,8 @@ final class DataTest extends TestCase
             ->withConsecutive(['{"key": "value"}', false, 512, 0], ['{"key2": "value2"}', false, 512, 0])
             ->willReturnOnConsecutiveCalls([$key => $value, 'generic' => 'test', 'generic2' => 'test2'], ['generic' => 'test', 'generic2' => 'test2', 'new' => 'newValue']);
 
-        \assert($iterator instanceof \Iterator);
-        \assert($jsonParser instanceof JsonInterface);
+        assert($iterator instanceof Iterator);
+        assert($jsonParser instanceof JsonInterface);
         $object = new Data($iterator, $jsonParser);
 
         $object();

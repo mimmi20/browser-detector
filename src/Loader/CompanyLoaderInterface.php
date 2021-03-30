@@ -9,6 +9,7 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetector\Loader;
 
 use UaResult\Company\CompanyInterface;
@@ -16,12 +17,7 @@ use UaResult\Company\CompanyInterface;
 interface CompanyLoaderInterface extends SpecificLoaderInterface
 {
     /**
-     * @param string $key
-     * @param string $useragent
-     *
-     * @throws \BrowserDetector\Loader\NotFoundException
-     *
-     * @return \UaResult\Company\CompanyInterface
+     * @throws NotFoundException
      */
     public function load(string $key, string $useragent = ''): CompanyInterface;
 }

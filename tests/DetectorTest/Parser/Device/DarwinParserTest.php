@@ -9,28 +9,152 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetectorTest\Parser\Device;
 
 use BrowserDetector\Loader\DeviceLoaderFactoryInterface;
 use BrowserDetector\Loader\DeviceLoaderInterface;
 use BrowserDetector\Parser\Device\DarwinParser;
 use BrowserDetector\Parser\Helper\RulefileParserInterface;
+use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
+use SebastianBergmann\RecursionContext\InvalidArgumentException;
+use UaDeviceType\TypeInterface;
+use UaResult\Company\CompanyInterface;
+use UaResult\Device\DeviceInterface;
+use UaResult\Device\DisplayInterface;
+use UnexpectedValueException;
+
+use function assert;
 
 final class DarwinParserTest extends TestCase
 {
     /**
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
-     * @throws \PHPUnit\Framework\ExpectationFailedException
-     * @throws \UnexpectedValueException
-     *
-     * @return void
+     * @throws InvalidArgumentException
+     * @throws ExpectationFailedException
+     * @throws UnexpectedValueException
      */
     public function testInvoke(): void
     {
-        $useragent      = 'test-useragent';
-        $expectedMode   = 'test-mode';
-        $expectedResult = ['test-result'];
+        $useragent    = 'test-useragent';
+        $expectedMode = 'test-mode';
+
+        $expectedDevice = new class() implements DeviceInterface {
+            public function getDeviceName(): ?string
+            {
+                return null;
+            }
+
+            public function getBrand(): CompanyInterface
+            {
+                return new class() implements CompanyInterface {
+                    public function getType(): string
+                    {
+                        return '';
+                    }
+
+                    public function getName(): ?string
+                    {
+                        return null;
+                    }
+
+                    public function getBrandName(): ?string
+                    {
+                        return null;
+                    }
+                };
+            }
+
+            public function getManufacturer(): CompanyInterface
+            {
+                return new class() implements CompanyInterface {
+                    public function getType(): string
+                    {
+                        return '';
+                    }
+
+                    public function getName(): ?string
+                    {
+                        return null;
+                    }
+
+                    public function getBrandName(): ?string
+                    {
+                        return null;
+                    }
+                };
+            }
+
+            public function getMarketingName(): ?string
+            {
+                return null;
+            }
+
+            public function getDisplay(): ?DisplayInterface
+            {
+                return null;
+            }
+
+            public function getType(): TypeInterface
+            {
+                return new class() implements TypeInterface {
+                    public function getType(): string
+                    {
+                        return '';
+                    }
+
+                    public function getName(): ?string
+                    {
+                        return null;
+                    }
+
+                    public function isMobile(): bool
+                    {
+                        return false;
+                    }
+
+                    public function isDesktop(): bool
+                    {
+                        return false;
+                    }
+
+                    public function isConsole(): bool
+                    {
+                        return false;
+                    }
+
+                    public function isTv(): bool
+                    {
+                        return false;
+                    }
+
+                    public function isPhone(): bool
+                    {
+                        return false;
+                    }
+
+                    public function isTablet(): bool
+                    {
+                        return false;
+                    }
+
+                    public function getDescription(): string
+                    {
+                        return '';
+                    }
+                };
+            }
+
+            /**
+             * @return array<string, array<string, bool|float|int>|string|null>
+             */
+            public function toArray(): array
+            {
+                return [];
+            }
+        };
+
+        $expectedResult = [$expectedDevice];
 
         $mockLoader = $this->getMockBuilder(DeviceLoaderInterface::class)
             ->disableOriginalConstructor()
@@ -58,8 +182,8 @@ final class DarwinParserTest extends TestCase
             ->method('parseFile')
             ->willReturnOnConsecutiveCalls('genericMode', $expectedMode);
 
-        \assert($fileParser instanceof RulefileParserInterface);
-        \assert($mockLoaderFactory instanceof DeviceLoaderFactoryInterface);
+        assert($fileParser instanceof RulefileParserInterface);
+        assert($mockLoaderFactory instanceof DeviceLoaderFactoryInterface);
         $object = new DarwinParser($fileParser, $mockLoaderFactory);
 
         self::assertSame($expectedResult, $object->parse($useragent));

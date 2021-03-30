@@ -9,6 +9,7 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetectorTest\Version;
 
 use BrowserDetector\Version\AndroidOs;
@@ -17,22 +18,22 @@ use BrowserDetector\Version\NullVersion;
 use BrowserDetector\Version\VersionFactory;
 use BrowserDetector\Version\VersionFactoryInterface;
 use BrowserDetector\Version\VersionInterface;
+use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
+use SebastianBergmann\RecursionContext\InvalidArgumentException;
+use UnexpectedValueException;
+
+use function assert;
 
 final class AndroidOsTest extends TestCase
 {
     /**
+     * @throws InvalidArgumentException
+     * @throws ExpectationFailedException
+     * @throws UnexpectedValueException
+     *
      * @dataProvider providerVersion
-     *
-     * @param string      $useragent
-     * @param string|null $expectedVersion
-     *
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
-     * @throws \PHPUnit\Framework\ExpectationFailedException
-     * @throws \UnexpectedValueException
-     *
-     * @return void
      */
     public function testTestdetectVersion(string $useragent, ?string $expectedVersion): void
     {
@@ -64,7 +65,7 @@ final class AndroidOsTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        \assert($logger instanceof LoggerInterface);
+        assert($logger instanceof LoggerInterface);
         $object = new AndroidOs($logger, new VersionFactory());
 
         $detectedVersion = $object->detectVersion($useragent);
@@ -74,7 +75,7 @@ final class AndroidOsTest extends TestCase
     }
 
     /**
-     * @return array[]
+     * @return array<int, array<int, string|null>>
      */
     public function providerVersion(): array
     {
@@ -118,9 +119,6 @@ final class AndroidOsTest extends TestCase
         ];
     }
 
-    /**
-     * @return void
-     */
     public function testDetectVersionFail(): void
     {
         $useragent = 'Dalvik/1.4.0 (Linux; U; Android 2.3.6; GT-I9100G Build/GINGERBREAD)';
@@ -166,8 +164,8 @@ final class AndroidOsTest extends TestCase
             ->expects(self::never())
             ->method('set');
 
-        \assert($logger instanceof LoggerInterface);
-        \assert($versionFactory instanceof VersionFactoryInterface);
+        assert($logger instanceof LoggerInterface);
+        assert($versionFactory instanceof VersionFactoryInterface);
         $object = new AndroidOs($logger, $versionFactory);
 
         $detectedVersion = $object->detectVersion($useragent);
@@ -177,9 +175,6 @@ final class AndroidOsTest extends TestCase
         self::assertNull($detectedVersion->getVersion());
     }
 
-    /**
-     * @return void
-     */
     public function testDetectVersionFailSecond(): void
     {
         $useragent = 'Mozilla/5.0 (Linux; 4.4.4; Nexus 7 Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.107 Safari/537.36 Obigo/W20A.42';
@@ -222,8 +217,8 @@ final class AndroidOsTest extends TestCase
             ->with('4.4.4')
             ->willThrowException($exception);
 
-        \assert($logger instanceof LoggerInterface);
-        \assert($versionFactory instanceof VersionFactoryInterface);
+        assert($logger instanceof LoggerInterface);
+        assert($versionFactory instanceof VersionFactoryInterface);
         $object = new AndroidOs($logger, $versionFactory);
 
         $detectedVersion = $object->detectVersion($useragent);
@@ -233,9 +228,6 @@ final class AndroidOsTest extends TestCase
         self::assertNull($detectedVersion->getVersion());
     }
 
-    /**
-     * @return void
-     */
     public function testDetectVersionFailThird(): void
     {
         $useragent = 'Mozilla/5.0 (Linux; U; de-de; GT-I9100 Build/GINGERBREAD) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Safari/533.1';
@@ -278,8 +270,8 @@ final class AndroidOsTest extends TestCase
             ->with('2.3.0')
             ->willThrowException($exception);
 
-        \assert($logger instanceof LoggerInterface);
-        \assert($versionFactory instanceof VersionFactoryInterface);
+        assert($logger instanceof LoggerInterface);
+        assert($versionFactory instanceof VersionFactoryInterface);
         $object = new AndroidOs($logger, $versionFactory);
 
         $detectedVersion = $object->detectVersion($useragent);
@@ -289,9 +281,6 @@ final class AndroidOsTest extends TestCase
         self::assertNull($detectedVersion->getVersion());
     }
 
-    /**
-     * @return void
-     */
     public function testDetectVersionFailForth(): void
     {
         $useragent = 'Mozilla/5.0 (Linux; U; Android Eclair; md-us Build/pandigitalopc1/sourceidDL00000009) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Mobile Safari/530.17';
@@ -334,8 +323,8 @@ final class AndroidOsTest extends TestCase
             ->with('2.1.0')
             ->willThrowException($exception);
 
-        \assert($logger instanceof LoggerInterface);
-        \assert($versionFactory instanceof VersionFactoryInterface);
+        assert($logger instanceof LoggerInterface);
+        assert($versionFactory instanceof VersionFactoryInterface);
         $object = new AndroidOs($logger, $versionFactory);
 
         $detectedVersion = $object->detectVersion($useragent);

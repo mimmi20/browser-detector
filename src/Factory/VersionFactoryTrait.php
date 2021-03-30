@@ -9,74 +9,79 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetector\Factory;
 
 use BrowserDetector\Version\NullVersion;
 use BrowserDetector\Version\VersionDetectorInterface;
+use BrowserDetector\Version\VersionFactoryInterface;
 use BrowserDetector\Version\VersionInterface;
 use Psr\Log\LoggerInterface;
+use stdClass;
+use UnexpectedValueException;
+
+use function assert;
+use function get_class;
+use function is_array;
+use function is_string;
+use function sprintf;
 
 trait VersionFactoryTrait
 {
-    /** @var \BrowserDetector\Version\VersionFactoryInterface */
-    private $versionFactory;
+    private VersionFactoryInterface $versionFactory;
 
     /**
-     * @param array                    $data
-     * @param string                   $useragent
-     * @param \Psr\Log\LoggerInterface $logger
+     * @param stdClass|string|null $version
      *
-     * @throws \UnexpectedValueException
-     *
-     * @return \BrowserDetector\Version\VersionInterface
+     * @throws UnexpectedValueException
      */
-    private function getVersion(array $data, string $useragent, LoggerInterface $logger): VersionInterface
+    private function getVersion($version, string $useragent, LoggerInterface $logger): VersionInterface
     {
-        assert(is_string($data['version']) || $data['version'] instanceof \stdClass || null === $data['version']);
+        assert(is_string($version) || $version instanceof stdClass || null === $version);
 
-        if (is_string($data['version'])) {
-            return $this->versionFactory->set($data['version']);
+        if (is_string($version)) {
+            return $this->versionFactory->set($version);
         }
 
-        $version = new NullVersion();
+        $versionClass = new NullVersion();
 
-        if (null === $data['version']) {
-            return $version;
+        if (null === $version) {
+            return $versionClass;
         }
 
-        $value = $data['version']->value ?? null;
+        $value = $version->value ?? null;
 
         if (null !== $value) {
             return $this->versionFactory->set((string) $value);
         }
 
-        $className   = $data['version']->class ?? null;
-        $factoryName = $data['version']->factory ?? null;
+        $className   = $version->class ?? null;
+        $factoryName = $version->factory ?? null;
 
         if (!is_string($className) && !is_string($factoryName)) {
-            return $version;
+            return $versionClass;
         }
 
         if (is_string($factoryName)) {
             $factory = new $factoryName();
 
             $versionDetector = $factory($logger);
-            \assert($versionDetector instanceof VersionDetectorInterface, sprintf('$versionDetector should be an instance of %s, but is %s', VersionDetectorInterface::class, get_class($versionDetector)));
+            assert($versionDetector instanceof VersionDetectorInterface, sprintf('$versionDetector should be an instance of %s, but is %s', VersionDetectorInterface::class, get_class($versionDetector)));
 
             return $versionDetector->detectVersion($useragent);
         }
 
         if ('VersionFactory' !== $className) {
             $versionDetector = new $className();
-            \assert($versionDetector instanceof VersionDetectorInterface, sprintf('$versionDetector should be an instance of %s, but is %s', VersionDetectorInterface::class, get_class($versionDetector)));
+            assert($versionDetector instanceof VersionDetectorInterface, sprintf('$versionDetector should be an instance of %s, but is %s', VersionDetectorInterface::class, get_class($versionDetector)));
 
             return $versionDetector->detectVersion($useragent);
         }
 
-        if (!is_array($data['version']->search ?? null)) {
-            return $version;
+        if (!is_array($version->search ?? null)) {
+            return $versionClass;
         }
 
-        return $this->versionFactory->detectVersion($useragent, $data['version']->search);
+        return $this->versionFactory->detectVersion($useragent, $version->search);
     }
 }

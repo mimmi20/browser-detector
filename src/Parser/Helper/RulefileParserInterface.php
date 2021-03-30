@@ -9,16 +9,12 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetector\Parser\Helper;
+
+use SplFileInfo;
 
 interface RulefileParserInterface
 {
-    /**
-     * @param \SplFileInfo $file
-     * @param string       $useragent
-     * @param string       $fallback
-     *
-     * @return string
-     */
-    public function parseFile(\SplFileInfo $file, string $useragent, string $fallback): string;
+    public function parseFile(SplFileInfo $file, string $useragent, string $fallback): string;
 }

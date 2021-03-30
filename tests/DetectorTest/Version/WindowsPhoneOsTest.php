@@ -9,6 +9,7 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetectorTest\Version;
 
 use BrowserDetector\Version\NotNumericException;
@@ -17,22 +18,22 @@ use BrowserDetector\Version\VersionFactory;
 use BrowserDetector\Version\VersionFactoryInterface;
 use BrowserDetector\Version\VersionInterface;
 use BrowserDetector\Version\WindowsPhoneOs;
+use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
+use SebastianBergmann\RecursionContext\InvalidArgumentException;
+use UnexpectedValueException;
+
+use function assert;
 
 final class WindowsPhoneOsTest extends TestCase
 {
     /**
+     * @throws InvalidArgumentException
+     * @throws ExpectationFailedException
+     * @throws UnexpectedValueException
+     *
      * @dataProvider providerVersion
-     *
-     * @param string      $useragent
-     * @param string|null $expectedVersion
-     *
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
-     * @throws \PHPUnit\Framework\ExpectationFailedException
-     * @throws \UnexpectedValueException
-     *
-     * @return void
      */
     public function testTestdetectVersion(string $useragent, ?string $expectedVersion): void
     {
@@ -64,7 +65,7 @@ final class WindowsPhoneOsTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        \assert($logger instanceof LoggerInterface);
+        assert($logger instanceof LoggerInterface);
         $object = new WindowsPhoneOs($logger, new VersionFactory());
 
         $detectedVersion = $object->detectVersion($useragent);
@@ -74,7 +75,7 @@ final class WindowsPhoneOsTest extends TestCase
     }
 
     /**
-     * @return array[]
+     * @return array<int, array<int, string|null>>
      */
     public function providerVersion(): array
     {
@@ -118,9 +119,6 @@ final class WindowsPhoneOsTest extends TestCase
         ];
     }
 
-    /**
-     * @return void
-     */
     public function testDetectVersionFail(): void
     {
         $useragent = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0; XBLWP7; ZuneWP7)';
@@ -163,8 +161,8 @@ final class WindowsPhoneOsTest extends TestCase
             ->with('7.5.0')
             ->willThrowException($exception);
 
-        \assert($logger instanceof LoggerInterface);
-        \assert($versionFactory instanceof VersionFactoryInterface);
+        assert($logger instanceof LoggerInterface);
+        assert($versionFactory instanceof VersionFactoryInterface);
         $object = new WindowsPhoneOs($logger, $versionFactory);
 
         $detectedVersion = $object->detectVersion($useragent);
@@ -174,9 +172,6 @@ final class WindowsPhoneOsTest extends TestCase
         self::assertNull($detectedVersion->getVersion());
     }
 
-    /**
-     * @return void
-     */
     public function testDetectVersionFailSecond(): void
     {
         $useragent = 'UCWEB/2.0 (Windows; U; wds 8.10; en-IN; NOKIA; RM-914_im_india_269) U2/1.0.0 UCBrowser/4.1.0.504 U2/1.0.0 Mobile';
@@ -219,8 +214,8 @@ final class WindowsPhoneOsTest extends TestCase
             ->with('8.10')
             ->willThrowException($exception);
 
-        \assert($logger instanceof LoggerInterface);
-        \assert($versionFactory instanceof VersionFactoryInterface);
+        assert($logger instanceof LoggerInterface);
+        assert($versionFactory instanceof VersionFactoryInterface);
         $object = new WindowsPhoneOs($logger, $versionFactory);
 
         $detectedVersion = $object->detectVersion($useragent);
@@ -230,9 +225,6 @@ final class WindowsPhoneOsTest extends TestCase
         self::assertNull($detectedVersion->getVersion());
     }
 
-    /**
-     * @return void
-     */
     public function testDetectVersionFailThird(): void
     {
         $useragent = 'Mozilla/5.0 (Windows NT 6.2; ARM; Trident/7.0; Touch; rv:11.0; WPDesktop; Lumia 630; Orange) like Gecko';
@@ -275,8 +267,8 @@ final class WindowsPhoneOsTest extends TestCase
             ->with('8.0.0')
             ->willThrowException($exception);
 
-        \assert($logger instanceof LoggerInterface);
-        \assert($versionFactory instanceof VersionFactoryInterface);
+        assert($logger instanceof LoggerInterface);
+        assert($versionFactory instanceof VersionFactoryInterface);
         $object = new WindowsPhoneOs($logger, $versionFactory);
 
         $detectedVersion = $object->detectVersion($useragent);
@@ -286,9 +278,6 @@ final class WindowsPhoneOsTest extends TestCase
         self::assertNull($detectedVersion->getVersion());
     }
 
-    /**
-     * @return void
-     */
     public function testDetectVersionFailForth(): void
     {
         $useragent = 'Mozilla/5.0 (Windows NT 6.3; ARM; Trident/7.0; Touch; rv:11.0; WPDesktop; Lumia 928) like Gecko';
@@ -331,8 +320,8 @@ final class WindowsPhoneOsTest extends TestCase
             ->with('8.1.0')
             ->willThrowException($exception);
 
-        \assert($logger instanceof LoggerInterface);
-        \assert($versionFactory instanceof VersionFactoryInterface);
+        assert($logger instanceof LoggerInterface);
+        assert($versionFactory instanceof VersionFactoryInterface);
         $object = new WindowsPhoneOs($logger, $versionFactory);
 
         $detectedVersion = $object->detectVersion($useragent);
@@ -342,9 +331,6 @@ final class WindowsPhoneOsTest extends TestCase
         self::assertNull($detectedVersion->getVersion());
     }
 
-    /**
-     * @return void
-     */
     public function testDetectVersionFailFifth(): void
     {
         $useragent = 'Mozilla/5.0 (Windows Phone 8.1; ARM; Trident/7.0; Touch; rv:11.0; IEMobile/11.0; NOKIA; Lumia 520; Vodafone ES) like Gecko';
@@ -390,8 +376,8 @@ final class WindowsPhoneOsTest extends TestCase
             ->expects(self::never())
             ->method('set');
 
-        \assert($logger instanceof LoggerInterface);
-        \assert($versionFactory instanceof VersionFactoryInterface);
+        assert($logger instanceof LoggerInterface);
+        assert($versionFactory instanceof VersionFactoryInterface);
         $object = new WindowsPhoneOs($logger, $versionFactory);
 
         $detectedVersion = $object->detectVersion($useragent);

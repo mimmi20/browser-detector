@@ -9,6 +9,7 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetector\Parser;
 
 use BrowserDetector\Loader\BrowserLoaderFactory;
@@ -20,24 +21,14 @@ use Psr\Log\LoggerInterface;
 
 final class BrowserParserFactory implements BrowserParserFactoryInterface
 {
-    /** @var \Psr\Log\LoggerInterface */
-    private $logger;
+    private LoggerInterface $logger;
 
-    /** @var \JsonClass\JsonInterface */
-    private $jsonParser;
+    private JsonInterface $jsonParser;
 
-    /** @var \BrowserDetector\Loader\CompanyLoaderInterface */
-    private $companyLoader;
+    private CompanyLoaderInterface $companyLoader;
 
-    /** @var \BrowserDetector\Parser\EngineParserInterface */
-    private $engineParser;
+    private EngineParserInterface $engineParser;
 
-    /**
-     * @param \Psr\Log\LoggerInterface                       $logger
-     * @param \JsonClass\JsonInterface                       $jsonParser
-     * @param \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader
-     * @param \BrowserDetector\Parser\EngineParserInterface  $engineParser
-     */
     public function __construct(
         LoggerInterface $logger,
         JsonInterface $jsonParser,
@@ -52,8 +43,6 @@ final class BrowserParserFactory implements BrowserParserFactoryInterface
 
     /**
      * Gets the information about the browser by User Agent
-     *
-     * @return BrowserParserInterface
      */
     public function __invoke(): BrowserParserInterface
     {

@@ -9,33 +9,32 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetector\Parser\Device;
 
+use BrowserDetector\Loader\NotFoundException;
 use BrowserDetector\Parser\DeviceParserInterface;
+use UaResult\Device\DeviceInterface;
+use UaResult\Os\OsInterface;
+use UnexpectedValueException;
 
 interface DarwinParserInterface extends DeviceParserInterface
 {
     /**
      * Gets the information about the browser by User Agent
      *
-     * @param string $useragent
+     * @return array<int, (OsInterface|DeviceInterface|null)>
      *
-     * @throws \BrowserDetector\Loader\NotFoundException
-     * @throws \UnexpectedValueException
-     *
-     * @return array
+     * @throws NotFoundException
+     * @throws UnexpectedValueException
      */
     public function parse(string $useragent): array;
 
     /**
-     * @param string $company
-     * @param string $key
-     * @param string $useragent
+     * @return array<int, (OsInterface|DeviceInterface|null)>
      *
-     * @throws \BrowserDetector\Loader\NotFoundException
-     * @throws \UnexpectedValueException
-     *
-     * @return array
+     * @throws NotFoundException
+     * @throws UnexpectedValueException
      */
     public function load(string $company, string $key, string $useragent = ''): array;
 }

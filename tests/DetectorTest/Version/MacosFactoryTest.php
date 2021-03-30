@@ -9,32 +9,30 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetectorTest\Version;
 
 use BrowserDetector\Version\Macos;
 use BrowserDetector\Version\MacosFactory;
 use PHPUnit\Framework\TestCase;
 
+use function assert;
+use function get_class;
+use function sprintf;
+
 final class MacosFactoryTest extends TestCase
 {
-    /** @var \BrowserDetector\Version\MacosFactory */
-    private $object;
+    private MacosFactory $object;
 
-    /**
-     * @return void
-     */
     protected function setUp(): void
     {
         $this->object = new MacosFactory();
     }
 
-    /**
-     * @return void
-     */
     public function testInvoke(): void
     {
         $object = $this->object;
-        \assert($object instanceof MacosFactory, sprintf('$object should be an instance of %s, but is %s', MacosFactory::class, get_class($object)));
+        assert($object instanceof MacosFactory, sprintf('$object should be an instance of %s, but is %s', MacosFactory::class, get_class($object)));
         $result = $object();
         self::assertInstanceOf(Macos::class, $result);
     }

@@ -9,14 +9,10 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetector\Bits;
 
 interface BitsInterface
 {
-    /**
-     * @param string $useragent
-     *
-     * @return int|null
-     */
     public function getBits(string $useragent): ?int;
 }

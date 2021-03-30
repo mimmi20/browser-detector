@@ -9,27 +9,28 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetector\Parser;
 
 use BrowserDetector\Loader\EngineLoaderFactoryInterface;
 use BrowserDetector\Loader\EngineLoaderInterface;
+use BrowserDetector\Loader\NotFoundException;
 use BrowserDetector\Parser\Helper\RulefileParserInterface;
+use SplFileInfo;
 use UaResult\Engine\EngineInterface;
+use UnexpectedValueException;
+
+use function assert;
+use function get_class;
+use function sprintf;
 
 final class EngineParser implements EngineParserInterface
 {
-    /** @var \BrowserDetector\Loader\EngineLoaderFactoryInterface */
-    private $loaderFactory;
-
-    /** @var \BrowserDetector\Parser\Helper\RulefileParserInterface */
-    private $fileParser;
-
     private const GENERIC_FILE = __DIR__ . '/../../data/factories/engines.json';
+    private EngineLoaderFactoryInterface $loaderFactory;
 
-    /**
-     * @param \BrowserDetector\Loader\EngineLoaderFactoryInterface   $loaderFactory
-     * @param \BrowserDetector\Parser\Helper\RulefileParserInterface $fileParser
-     */
+    private RulefileParserInterface $fileParser;
+
     public function __construct(
         EngineLoaderFactoryInterface $loaderFactory,
         RulefileParserInterface $fileParser
@@ -41,17 +42,13 @@ final class EngineParser implements EngineParserInterface
     /**
      * Gets the information about the engine by User Agent
      *
-     * @param string $useragent
-     *
-     * @throws \BrowserDetector\Loader\NotFoundException
-     * @throws \UnexpectedValueException
-     *
-     * @return \UaResult\Engine\EngineInterface
+     * @throws NotFoundException
+     * @throws UnexpectedValueException
      */
     public function parse(string $useragent): EngineInterface
     {
         $key = $this->fileParser->parseFile(
-            new \SplFileInfo(self::GENERIC_FILE),
+            new SplFileInfo(self::GENERIC_FILE),
             $useragent,
             'unknown'
         );
@@ -60,20 +57,15 @@ final class EngineParser implements EngineParserInterface
     }
 
     /**
-     * @param string $key
-     * @param string $useragent
-     *
-     * @throws \BrowserDetector\Loader\NotFoundException
-     * @throws \UnexpectedValueException
-     *
-     * @return EngineInterface
+     * @throws NotFoundException
+     * @throws UnexpectedValueException
      */
     public function load(string $key, string $useragent = ''): EngineInterface
     {
         $loaderFactory = $this->loaderFactory;
 
         $loader = $loaderFactory();
-        \assert($loader instanceof EngineLoaderInterface, sprintf('$loader should be an instance of %s, but is %s', EngineLoaderInterface::class, get_class($loader)));
+        assert($loader instanceof EngineLoaderInterface, sprintf('$loader should be an instance of %s, but is %s', EngineLoaderInterface::class, get_class($loader)));
 
         return $loader->load($key, $useragent);
     }

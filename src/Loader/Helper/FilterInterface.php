@@ -9,15 +9,16 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetector\Loader\Helper;
+
+use Iterator;
+use Symfony\Component\Finder\SplFileInfo;
 
 interface FilterInterface
 {
     /**
-     * @param string $path
-     * @param string $extension
-     *
-     * @return \Iterator
+     * @return Iterator<SplFileInfo>
      */
-    public function __invoke(string $path, string $extension): \Iterator;
+    public function __invoke(string $path, string $extension): Iterator;
 }

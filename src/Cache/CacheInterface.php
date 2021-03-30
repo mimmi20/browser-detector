@@ -9,7 +9,10 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetector\Cache;
+
+use Psr\SimpleCache\InvalidArgumentException;
 
 /**
  * a cache proxy to be able to use the cache adapters provided by the WurflCache package
@@ -19,11 +22,9 @@ interface CacheInterface
     /**
      * Get an item.
      *
-     * @param string $cacheId
-     *
-     * @throws \Psr\SimpleCache\InvalidArgumentException
-     *
      * @return mixed Data on success, null on failure
+     *
+     * @throws InvalidArgumentException
      */
     public function getItem(string $cacheId);
 
@@ -33,20 +34,16 @@ interface CacheInterface
      * @param string $cacheId The cache id
      * @param mixed  $content The content to store
      *
-     * @throws \Psr\SimpleCache\InvalidArgumentException
-     *
      * @return bool whether the file was correctly written to the disk
+     *
+     * @throws InvalidArgumentException
      */
     public function setItem(string $cacheId, $content): bool;
 
     /**
      * Test if an item exists.
      *
-     * @param string $cacheId
-     *
-     * @throws \Psr\SimpleCache\InvalidArgumentException
-     *
-     * @return bool
+     * @throws InvalidArgumentException
      */
     public function hasItem(string $cacheId): bool;
 }

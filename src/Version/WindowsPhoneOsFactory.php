@@ -9,17 +9,13 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetector\Version;
 
 use Psr\Log\LoggerInterface;
 
 final class WindowsPhoneOsFactory implements WindowsPhoneOsFactoryInterface
 {
-    /**
-     * @param \Psr\Log\LoggerInterface $logger
-     *
-     * @return \BrowserDetector\Version\WindowsPhoneOs
-     */
     public function __invoke(LoggerInterface $logger): WindowsPhoneOs
     {
         return new WindowsPhoneOs(

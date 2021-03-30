@@ -9,15 +9,13 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetector\Version;
 
 use IosBuild\IosBuild;
 
 final class IosFactory implements IosFactoryInterface
 {
-    /**
-     * @return \BrowserDetector\Version\Ios
-     */
     public function __invoke(): Ios
     {
         return new Ios(

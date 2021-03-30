@@ -9,6 +9,7 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetector\Loader;
 
 use BrowserDetector\Loader\Helper\Data;
@@ -21,28 +22,16 @@ final class BrowserLoaderFactory implements BrowserLoaderFactoryInterface
 {
     public const DATA_PATH = __DIR__ . '/../../data/browsers';
 
-    /** @var \Psr\Log\LoggerInterface */
-    private $logger;
+    private LoggerInterface $logger;
 
-    /** @var \JsonClass\JsonInterface */
-    private $jsonParser;
+    private JsonInterface $jsonParser;
 
-    /** @var \BrowserDetector\Parser\EngineParserInterface */
-    private $engineParser;
+    private EngineParserInterface $engineParser;
 
-    /** @var \BrowserDetector\Loader\CompanyLoaderInterface */
-    private $companyLoader;
+    private CompanyLoaderInterface $companyLoader;
 
-    /** @var \BrowserDetector\Loader\Helper\FilterInterface */
-    private $filter;
+    private FilterInterface $filter;
 
-    /**
-     * @param \Psr\Log\LoggerInterface                       $logger
-     * @param \JsonClass\JsonInterface                       $jsonParser
-     * @param \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader
-     * @param \BrowserDetector\Parser\EngineParserInterface  $engineParser
-     * @param \BrowserDetector\Loader\Helper\FilterInterface $filter
-     */
     public function __construct(
         LoggerInterface $logger,
         JsonInterface $jsonParser,
@@ -57,9 +46,6 @@ final class BrowserLoaderFactory implements BrowserLoaderFactoryInterface
         $this->filter        = $filter;
     }
 
-    /**
-     * @return BrowserLoaderInterface
-     */
     public function __invoke(): BrowserLoaderInterface
     {
         /** @var BrowserLoader|null $loader */

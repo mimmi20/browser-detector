@@ -9,6 +9,7 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetectorTest\Version;
 
 use BrowserDetector\Version\Helper\Safari as SafariHelper;
@@ -20,22 +21,22 @@ use BrowserDetector\Version\Version;
 use BrowserDetector\Version\VersionFactory;
 use BrowserDetector\Version\VersionFactoryInterface;
 use BrowserDetector\Version\VersionInterface;
+use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
+use SebastianBergmann\RecursionContext\InvalidArgumentException;
+use UnexpectedValueException;
+
+use function assert;
 
 final class SafariTest extends TestCase
 {
     /**
+     * @throws InvalidArgumentException
+     * @throws ExpectationFailedException
+     * @throws UnexpectedValueException
+     *
      * @dataProvider providerVersion
-     *
-     * @param string      $useragent
-     * @param string|null $expectedVersion
-     *
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
-     * @throws \PHPUnit\Framework\ExpectationFailedException
-     * @throws \UnexpectedValueException
-     *
-     * @return void
      */
     public function testTestdetectVersion(string $useragent, ?string $expectedVersion): void
     {
@@ -67,7 +68,7 @@ final class SafariTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        \assert($logger instanceof LoggerInterface);
+        assert($logger instanceof LoggerInterface);
         $object = new Safari($logger, new VersionFactory(), new SafariHelper());
 
         $detectedVersion = $object->detectVersion($useragent);
@@ -77,7 +78,7 @@ final class SafariTest extends TestCase
     }
 
     /**
-     * @return array[]
+     * @return array<int, array<int, string|null>>
      */
     public function providerVersion(): array
     {
@@ -97,9 +98,6 @@ final class SafariTest extends TestCase
         ];
     }
 
-    /**
-     * @return void
-     */
     public function testDetectVersionFail(): void
     {
         $exception = new NotNumericException('set failed');
@@ -148,9 +146,9 @@ final class SafariTest extends TestCase
             ->expects(self::never())
             ->method('mapSafariVersion');
 
-        \assert($logger instanceof LoggerInterface);
-        \assert($versionFactory instanceof VersionFactoryInterface);
-        \assert($safariHelper instanceof SafariInterface);
+        assert($logger instanceof LoggerInterface);
+        assert($versionFactory instanceof VersionFactoryInterface);
+        assert($safariHelper instanceof SafariInterface);
         $object = new Safari($logger, $versionFactory, $safariHelper);
 
         $detectedVersion = $object->detectVersion('Mozilla/5.0 (Linux; U; Android 4.2.2; ru-ru; ImPAD 9708 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30');
@@ -160,9 +158,6 @@ final class SafariTest extends TestCase
         self::assertNull($detectedVersion->getVersion());
     }
 
-    /**
-     * @return void
-     */
     public function testDetectVersionFailSecond(): void
     {
         $logger = $this->getMockBuilder(LoggerInterface::class)
@@ -212,9 +207,9 @@ final class SafariTest extends TestCase
             ->with($mappedVersion)
             ->willReturn(null);
 
-        \assert($logger instanceof LoggerInterface);
-        \assert($versionFactory instanceof VersionFactoryInterface);
-        \assert($safariHelper instanceof SafariInterface);
+        assert($logger instanceof LoggerInterface);
+        assert($versionFactory instanceof VersionFactoryInterface);
+        assert($safariHelper instanceof SafariInterface);
         $object = new Safari($logger, $versionFactory, $safariHelper);
 
         $detectedVersion = $object->detectVersion('Mozilla/5.0 (Linux; U; Android 4.2.2; ru-ru; ImPAD 9708 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30');
@@ -224,9 +219,6 @@ final class SafariTest extends TestCase
         self::assertNull($detectedVersion->getVersion());
     }
 
-    /**
-     * @return void
-     */
     public function testDetectVersionFailThird(): void
     {
         $exception = new NotNumericException('set failed');
@@ -287,9 +279,9 @@ final class SafariTest extends TestCase
             ->with($mappedVersionOne)
             ->willReturn('1.0');
 
-        \assert($logger instanceof LoggerInterface);
-        \assert($versionFactory instanceof VersionFactoryInterface);
-        \assert($safariHelper instanceof SafariInterface);
+        assert($logger instanceof LoggerInterface);
+        assert($versionFactory instanceof VersionFactoryInterface);
+        assert($safariHelper instanceof SafariInterface);
         $object = new Safari($logger, $versionFactory, $safariHelper);
 
         $detectedVersion = $object->detectVersion('Mozilla/5.0 (Linux; U; Android 4.2.2; ru-ru; ImPAD 9708 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30');

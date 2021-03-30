@@ -9,17 +9,13 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetector\Version;
 
 use Psr\Log\LoggerInterface;
 
 final class TridentFactory implements TridentFactoryInterface
 {
-    /**
-     * @param \Psr\Log\LoggerInterface $logger
-     *
-     * @return \BrowserDetector\Version\Trident
-     */
     public function __invoke(LoggerInterface $logger): Trident
     {
         return new Trident(

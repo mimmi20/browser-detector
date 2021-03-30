@@ -9,36 +9,31 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetectorTest\Version\Helper;
 
 use BrowserDetector\Version\Helper\Safari;
 use BrowserDetector\Version\VersionFactory;
+use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
+use SebastianBergmann\RecursionContext\InvalidArgumentException;
+use UnexpectedValueException;
 
 final class SafariTest extends TestCase
 {
-    /** @var \BrowserDetector\Version\Helper\Safari */
-    private $object;
+    private Safari $object;
 
-    /**
-     * @return void
-     */
     protected function setUp(): void
     {
         $this->object = new Safari();
     }
 
     /**
+     * @throws InvalidArgumentException
+     * @throws ExpectationFailedException
+     * @throws UnexpectedValueException
+     *
      * @dataProvider providerVersion
-     *
-     * @param string      $version
-     * @param string|null $expectedVersion
-     *
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
-     * @throws \PHPUnit\Framework\ExpectationFailedException
-     * @throws \UnexpectedValueException
-     *
-     * @return void
      */
     public function testMapSafariVersion(string $version, ?string $expectedVersion): void
     {
@@ -47,7 +42,7 @@ final class SafariTest extends TestCase
     }
 
     /**
-     * @return array[]
+     * @return array<int, array<int, string|null>>
      */
     public function providerVersion(): array
     {

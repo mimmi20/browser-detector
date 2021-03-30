@@ -9,6 +9,7 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetectorTest\Loader;
 
 use BrowserDetector\Loader\CompanyLoaderInterface;
@@ -16,19 +17,22 @@ use BrowserDetector\Loader\Helper\DataInterface;
 use BrowserDetector\Loader\NotFoundException;
 use BrowserDetector\Loader\PlatformLoader;
 use BrowserDetector\Version\Test;
+use PHPUnit\Framework\Exception;
+use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\InvalidArgumentException;
 use Psr\Log\LoggerInterface;
 use UaResult\Company\CompanyInterface;
 use UaResult\Os\OsInterface;
+use UnexpectedValueException;
+
+use function assert;
 
 final class PlatformLoaderTest extends TestCase
 {
     /**
-     * @throws \BrowserDetector\Loader\NotFoundException
-     * @throws \UnexpectedValueException
-     *
-     * @return void
+     * @throws NotFoundException
+     * @throws UnexpectedValueException
      */
     public function testInvokeNotInCache(): void
     {
@@ -82,9 +86,9 @@ final class PlatformLoaderTest extends TestCase
             ->expects(self::never())
             ->method('load');
 
-        \assert($logger instanceof LoggerInterface);
-        \assert($companyLoader instanceof CompanyLoaderInterface);
-        \assert($initData instanceof DataInterface);
+        assert($logger instanceof LoggerInterface);
+        assert($companyLoader instanceof CompanyLoaderInterface);
+        assert($initData instanceof DataInterface);
         $object = new PlatformLoader(
             $logger,
             $initData,
@@ -98,10 +102,8 @@ final class PlatformLoaderTest extends TestCase
     }
 
     /**
-     * @throws \BrowserDetector\Loader\NotFoundException
-     * @throws \UnexpectedValueException
-     *
-     * @return void
+     * @throws NotFoundException
+     * @throws UnexpectedValueException
      */
     public function testInvokeNullInCache(): void
     {
@@ -155,9 +157,9 @@ final class PlatformLoaderTest extends TestCase
             ->expects(self::never())
             ->method('load');
 
-        \assert($logger instanceof LoggerInterface);
-        \assert($companyLoader instanceof CompanyLoaderInterface);
-        \assert($initData instanceof DataInterface);
+        assert($logger instanceof LoggerInterface);
+        assert($companyLoader instanceof CompanyLoaderInterface);
+        assert($initData instanceof DataInterface);
         $object = new PlatformLoader(
             $logger,
             $initData,
@@ -172,13 +174,11 @@ final class PlatformLoaderTest extends TestCase
 
     /**
      * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
-     * @throws \PHPUnit\Framework\ExpectationFailedException
-     * @throws \PHPUnit\Framework\Exception
-     * @throws \BrowserDetector\Loader\NotFoundException
+     * @throws ExpectationFailedException
+     * @throws Exception
+     * @throws NotFoundException
      * @throws \InvalidArgumentException
-     * @throws \UnexpectedValueException
-     *
-     * @return void
+     * @throws UnexpectedValueException
      */
     public function testInvokeNoVersion(): void
     {
@@ -244,9 +244,9 @@ final class PlatformLoaderTest extends TestCase
             ->with('unknown')
             ->willReturn($company);
 
-        \assert($logger instanceof LoggerInterface);
-        \assert($companyLoader instanceof CompanyLoaderInterface);
-        \assert($initData instanceof DataInterface);
+        assert($logger instanceof LoggerInterface);
+        assert($companyLoader instanceof CompanyLoaderInterface);
+        assert($initData instanceof DataInterface);
         $object = new PlatformLoader(
             $logger,
             $initData,
@@ -260,13 +260,11 @@ final class PlatformLoaderTest extends TestCase
 
     /**
      * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
-     * @throws \PHPUnit\Framework\ExpectationFailedException
-     * @throws \PHPUnit\Framework\Exception
-     * @throws \BrowserDetector\Loader\NotFoundException
+     * @throws ExpectationFailedException
+     * @throws Exception
+     * @throws NotFoundException
      * @throws \InvalidArgumentException
-     * @throws \UnexpectedValueException
-     *
-     * @return void
+     * @throws UnexpectedValueException
      */
     public function testInvokeVersionSet(): void
     {
@@ -332,9 +330,9 @@ final class PlatformLoaderTest extends TestCase
             ->with('unknown')
             ->willReturn($company);
 
-        \assert($logger instanceof LoggerInterface);
-        \assert($companyLoader instanceof CompanyLoaderInterface);
-        \assert($initData instanceof DataInterface);
+        assert($logger instanceof LoggerInterface);
+        assert($companyLoader instanceof CompanyLoaderInterface);
+        assert($initData instanceof DataInterface);
         $object = new PlatformLoader(
             $logger,
             $initData,
@@ -348,13 +346,11 @@ final class PlatformLoaderTest extends TestCase
 
     /**
      * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
-     * @throws \PHPUnit\Framework\ExpectationFailedException
-     * @throws \PHPUnit\Framework\Exception
-     * @throws \BrowserDetector\Loader\NotFoundException
+     * @throws ExpectationFailedException
+     * @throws Exception
+     * @throws NotFoundException
      * @throws \InvalidArgumentException
-     * @throws \UnexpectedValueException
-     *
-     * @return void
+     * @throws UnexpectedValueException
      */
     public function testInvokeGenericVersion(): void
     {
@@ -420,9 +416,9 @@ final class PlatformLoaderTest extends TestCase
             ->with('unknown')
             ->willReturn($company);
 
-        \assert($logger instanceof LoggerInterface);
-        \assert($companyLoader instanceof CompanyLoaderInterface);
-        \assert($initData instanceof DataInterface);
+        assert($logger instanceof LoggerInterface);
+        assert($companyLoader instanceof CompanyLoaderInterface);
+        assert($initData instanceof DataInterface);
         $object = new PlatformLoader(
             $logger,
             $initData,
@@ -438,13 +434,11 @@ final class PlatformLoaderTest extends TestCase
 
     /**
      * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
-     * @throws \PHPUnit\Framework\ExpectationFailedException
-     * @throws \PHPUnit\Framework\Exception
-     * @throws \BrowserDetector\Loader\NotFoundException
+     * @throws ExpectationFailedException
+     * @throws Exception
+     * @throws NotFoundException
      * @throws \InvalidArgumentException
-     * @throws \UnexpectedValueException
-     *
-     * @return void
+     * @throws UnexpectedValueException
      */
     public function testInvokeVersion(): void
     {
@@ -510,9 +504,9 @@ final class PlatformLoaderTest extends TestCase
             ->with('unknown')
             ->willReturn($company);
 
-        \assert($logger instanceof LoggerInterface);
-        \assert($companyLoader instanceof CompanyLoaderInterface);
-        \assert($initData instanceof DataInterface);
+        assert($logger instanceof LoggerInterface);
+        assert($companyLoader instanceof CompanyLoaderInterface);
+        assert($initData instanceof DataInterface);
         $object = new PlatformLoader(
             $logger,
             $initData,

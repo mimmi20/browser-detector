@@ -9,17 +9,13 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetector\Version;
 
 use Psr\Log\LoggerInterface;
 
 final class MicrosoftInternetExplorerFactory implements MicrosoftInternetExplorerFactoryInterface
 {
-    /**
-     * @param \Psr\Log\LoggerInterface $logger
-     *
-     * @return \BrowserDetector\Version\MicrosoftInternetExplorer
-     */
     public function __invoke(LoggerInterface $logger): MicrosoftInternetExplorer
     {
         $versionFactory = new VersionFactory();

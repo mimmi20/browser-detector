@@ -9,17 +9,13 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetector\Version;
 
 use Psr\Log\LoggerInterface;
 
 final class ObigoQFactory implements ObigoQFactoryInterface
 {
-    /**
-     * @param \Psr\Log\LoggerInterface $logger
-     *
-     * @return \BrowserDetector\Version\ObigoQ
-     */
     public function __invoke(LoggerInterface $logger): ObigoQ
     {
         return new ObigoQ(

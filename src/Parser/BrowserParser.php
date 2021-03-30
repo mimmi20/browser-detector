@@ -9,27 +9,30 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetector\Parser;
 
 use BrowserDetector\Loader\BrowserLoaderFactoryInterface;
 use BrowserDetector\Loader\BrowserLoaderInterface;
+use BrowserDetector\Loader\NotFoundException;
 use BrowserDetector\Parser\Helper\RulefileParserInterface;
+use SplFileInfo;
+use UaResult\Browser\BrowserInterface;
+use UaResult\Engine\EngineInterface;
+use UnexpectedValueException;
+
+use function assert;
+use function get_class;
+use function sprintf;
 
 final class BrowserParser implements BrowserParserInterface
 {
-    /** @var \BrowserDetector\Loader\BrowserLoaderFactoryInterface */
-    private $loaderFactory;
-
-    /** @var \BrowserDetector\Parser\Helper\RulefileParserInterface */
-    private $fileParser;
-
     private const GENERIC_FILE  = __DIR__ . '/../../data/factories/browsers.json';
     private const SPECIFIC_FILE = __DIR__ . '/../../data/factories/browsers/%s.json';
+    private BrowserLoaderFactoryInterface $loaderFactory;
 
-    /**
-     * @param \BrowserDetector\Loader\BrowserLoaderFactoryInterface  $loaderFactory
-     * @param \BrowserDetector\Parser\Helper\RulefileParserInterface $fileParser
-     */
+    private RulefileParserInterface $fileParser;
+
     public function __construct(
         BrowserLoaderFactoryInterface $loaderFactory,
         RulefileParserInterface $fileParser
@@ -41,23 +44,21 @@ final class BrowserParser implements BrowserParserInterface
     /**
      * Gets the information about the browser by User Agent
      *
-     * @param string $useragent
+     * @return array<int, (BrowserInterface|EngineInterface|null)>
      *
-     * @throws \BrowserDetector\Loader\NotFoundException
-     * @throws \UnexpectedValueException
-     *
-     * @return array
+     * @throws NotFoundException
+     * @throws UnexpectedValueException
      */
     public function parse(string $useragent): array
     {
         $mode = $this->fileParser->parseFile(
-            new \SplFileInfo(self::GENERIC_FILE),
+            new SplFileInfo(self::GENERIC_FILE),
             $useragent,
             'unknown'
         );
 
         $key = $this->fileParser->parseFile(
-            new \SplFileInfo(sprintf(self::SPECIFIC_FILE, $mode)),
+            new SplFileInfo(sprintf(self::SPECIFIC_FILE, $mode)),
             $useragent,
             'unknown'
         );
@@ -66,20 +67,17 @@ final class BrowserParser implements BrowserParserInterface
     }
 
     /**
-     * @param string $key
-     * @param string $useragent
+     * @return array<int, (BrowserInterface|EngineInterface|null)>
      *
-     * @throws \BrowserDetector\Loader\NotFoundException
-     * @throws \UnexpectedValueException
-     *
-     * @return array
+     * @throws NotFoundException
+     * @throws UnexpectedValueException
      */
     public function load(string $key, string $useragent = ''): array
     {
         $loaderFactory = $this->loaderFactory;
 
         $loader = $loaderFactory();
-        \assert($loader instanceof BrowserLoaderInterface, sprintf('$loader should be an instance of %s, but is %s', BrowserLoaderInterface::class, get_class($loader)));
+        assert($loader instanceof BrowserLoaderInterface, sprintf('$loader should be an instance of %s, but is %s', BrowserLoaderInterface::class, get_class($loader)));
 
         return $loader->load($key, $useragent);
     }

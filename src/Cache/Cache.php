@@ -9,20 +9,24 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetector\Cache;
 
 use Psr\SimpleCache\CacheInterface as PsrCacheInterface;
+use Psr\SimpleCache\InvalidArgumentException;
+
+use function array_key_exists;
+use function is_array;
+use function serialize;
+use function unserialize;
 
 final class Cache implements CacheInterface
 {
-    /** @var \Psr\SimpleCache\CacheInterface */
-    private $cache;
+    private \Psr\SimpleCache\CacheInterface $cache;
 
     /**
      * Constructor class, checks for the existence of (and loads) the cache and
      * if needed updated the definitions
-     *
-     * @param \Psr\SimpleCache\CacheInterface $adapter
      */
     public function __construct(PsrCacheInterface $adapter)
     {
@@ -32,11 +36,9 @@ final class Cache implements CacheInterface
     /**
      * Get an item.
      *
-     * @param string $cacheId
-     *
-     * @throws \Psr\SimpleCache\InvalidArgumentException
-     *
      * @return mixed Data on success, null on failure
+     *
+     * @throws InvalidArgumentException
      */
     public function getItem(string $cacheId)
     {
@@ -59,9 +61,9 @@ final class Cache implements CacheInterface
      * @param string $cacheId The cache id
      * @param mixed  $content The content to store
      *
-     * @throws \Psr\SimpleCache\InvalidArgumentException
-     *
      * @return bool whether the file was correctly written to the disk
+     *
+     * @throws InvalidArgumentException
      */
     public function setItem(string $cacheId, $content): bool
     {
@@ -77,11 +79,7 @@ final class Cache implements CacheInterface
     /**
      * Test if an item exists.
      *
-     * @param string $cacheId
-     *
-     * @throws \Psr\SimpleCache\InvalidArgumentException
-     *
-     * @return bool
+     * @throws InvalidArgumentException
      */
     public function hasItem(string $cacheId): bool
     {

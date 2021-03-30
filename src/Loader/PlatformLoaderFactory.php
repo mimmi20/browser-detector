@@ -9,6 +9,7 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetector\Loader;
 
 use BrowserDetector\Loader\Helper\Data;
@@ -20,24 +21,14 @@ final class PlatformLoaderFactory implements PlatformLoaderFactoryInterface
 {
     public const DATA_PATH = __DIR__ . '/../../data/platforms';
 
-    /** @var \Psr\Log\LoggerInterface */
-    private $logger;
+    private LoggerInterface $logger;
 
-    /** @var \JsonClass\JsonInterface */
-    private $jsonParser;
+    private JsonInterface $jsonParser;
 
-    /** @var \BrowserDetector\Loader\CompanyLoaderInterface */
-    private $companyLoader;
+    private CompanyLoaderInterface $companyLoader;
 
-    /** @var \BrowserDetector\Loader\Helper\FilterInterface */
-    private $filter;
+    private FilterInterface $filter;
 
-    /**
-     * @param \Psr\Log\LoggerInterface                       $logger
-     * @param \JsonClass\JsonInterface                       $jsonParser
-     * @param \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader
-     * @param \BrowserDetector\Loader\Helper\FilterInterface $filter
-     */
     public function __construct(
         LoggerInterface $logger,
         JsonInterface $jsonParser,
@@ -50,12 +41,9 @@ final class PlatformLoaderFactory implements PlatformLoaderFactoryInterface
         $this->filter        = $filter;
     }
 
-    /**
-     * @return PlatformLoaderInterface
-     */
     public function __invoke(): PlatformLoaderInterface
     {
-        /** @var \BrowserDetector\Loader\PlatformLoaderInterface|null $loader */
+        /** @var PlatformLoaderInterface|null $loader */
         static $loader = null;
 
         if (null !== $loader) {

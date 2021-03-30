@@ -9,12 +9,10 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetector\Parser;
 
 interface PlatformParserFactoryInterface
 {
-    /**
-     * @return PlatformParserInterface
-     */
     public function __invoke(): PlatformParserInterface;
 }

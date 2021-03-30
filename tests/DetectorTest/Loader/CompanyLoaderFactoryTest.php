@@ -9,23 +9,28 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetectorTest\Loader;
 
 use BrowserDetector\Loader\CompanyLoaderFactory;
 use BrowserDetector\Loader\CompanyLoaderInterface;
 use BrowserDetector\Loader\Helper\FilterInterface;
+use Iterator;
 use JsonClass\JsonInterface;
+use PHPUnit\Framework\Exception;
+use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
+use SebastianBergmann\RecursionContext\InvalidArgumentException;
+
+use function assert;
 
 final class CompanyLoaderFactoryTest extends TestCase
 {
     /**
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
-     * @throws \PHPUnit\Framework\ExpectationFailedException
-     * @throws \PHPUnit\Framework\Exception
+     * @throws InvalidArgumentException
+     * @throws ExpectationFailedException
+     * @throws Exception
      * @throws \InvalidArgumentException
-     *
-     * @return void
      */
     public function testInvoke(): void
     {
@@ -37,7 +42,7 @@ final class CompanyLoaderFactoryTest extends TestCase
             ->method('decode')
             ->willReturn([]);
 
-        $iterator = $this->createMock(\Iterator::class);
+        $iterator = $this->createMock(Iterator::class);
         $filter   = $this->getMockBuilder(FilterInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
@@ -47,8 +52,8 @@ final class CompanyLoaderFactoryTest extends TestCase
             ->with(CompanyLoaderFactory::DATA_PATH, 'json')
             ->willReturn($iterator);
 
-        \assert($jsonParser instanceof JsonInterface);
-        \assert($filter instanceof FilterInterface);
+        assert($jsonParser instanceof JsonInterface);
+        assert($filter instanceof FilterInterface);
         $factory = new CompanyLoaderFactory($jsonParser, $filter);
         $object  = $factory();
 

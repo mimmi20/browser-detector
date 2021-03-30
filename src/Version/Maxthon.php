@@ -9,9 +9,12 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetector\Version;
 
 use Psr\Log\LoggerInterface;
+
+use function mb_strpos;
 
 final class Maxthon implements VersionDetectorInterface
 {
@@ -19,16 +22,10 @@ final class Maxthon implements VersionDetectorInterface
     public const SEARCH_OLD = ['MyIE'];
     public const REGEX      = '/^v?(?<major>\d+)(?:[-|\.](?<minor>\d+))?(?:[-|\.](?<micro>\d+))?(?:[-|\.](?<patch>\d+))?(?:[-|\.](?<micropatch>\d+))?(?:[-_.+ ]?(?<stability>rc|alpha|a|beta|b|patch|pl?|stable|dev|d)[-_.+ ]?(?<build>\d*))?.*$/i';
 
-    /** @var \Psr\Log\LoggerInterface */
-    private $logger;
+    private LoggerInterface $logger;
 
-    /** @var \BrowserDetector\Version\VersionFactoryInterface */
-    private $versionFactory;
+    private VersionFactoryInterface $versionFactory;
 
-    /**
-     * @param \Psr\Log\LoggerInterface                         $logger
-     * @param \BrowserDetector\Version\VersionFactoryInterface $versionFactory
-     */
     public function __construct(LoggerInterface $logger, VersionFactoryInterface $versionFactory)
     {
         $this->logger         = $logger;
@@ -37,10 +34,6 @@ final class Maxthon implements VersionDetectorInterface
 
     /**
      * returns the version of the operating system/platform
-     *
-     * @param string $useragent
-     *
-     * @return \BrowserDetector\Version\VersionInterface
      */
     public function detectVersion(string $useragent): VersionInterface
     {

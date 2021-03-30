@@ -9,30 +9,31 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetector\Parser;
+
+use BrowserDetector\Loader\NotFoundException;
+use UaResult\Browser\BrowserInterface;
+use UaResult\Engine\EngineInterface;
+use UnexpectedValueException;
 
 interface BrowserParserInterface
 {
     /**
      * Gets the information about the browser by User Agent
      *
-     * @param string $useragent
+     * @return array<int, BrowserInterface|EngineInterface|null>
      *
-     * @throws \BrowserDetector\Loader\NotFoundException
-     * @throws \UnexpectedValueException
-     *
-     * @return array
+     * @throws NotFoundException
+     * @throws UnexpectedValueException
      */
-    public function parse(string $useragent);
+    public function parse(string $useragent): array;
 
     /**
-     * @param string $key
-     * @param string $useragent
+     * @return array<int, BrowserInterface|EngineInterface|null>
      *
-     * @throws \BrowserDetector\Loader\NotFoundException
-     * @throws \UnexpectedValueException
-     *
-     * @return array
+     * @throws NotFoundException
+     * @throws UnexpectedValueException
      */
     public function load(string $key, string $useragent = ''): array;
 }

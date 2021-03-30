@@ -9,27 +9,29 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetector\Factory;
 
 use BrowserDetector\Loader\CompanyLoaderInterface;
 use BrowserDetector\Loader\NotFoundException;
 use BrowserDetector\Version\VersionFactoryInterface;
 use Psr\Log\LoggerInterface;
+use stdClass;
 use UaResult\Company\Company;
 use UaResult\Engine\Engine;
 use UaResult\Engine\EngineInterface;
+use UnexpectedValueException;
+
+use function array_key_exists;
+use function assert;
+use function is_string;
 
 final class EngineFactory
 {
     use VersionFactoryTrait;
 
-    /** @var \BrowserDetector\Loader\CompanyLoaderInterface */
-    private $companyLoader;
+    private CompanyLoaderInterface $companyLoader;
 
-    /**
-     * @param \BrowserDetector\Loader\CompanyLoaderInterface   $companyLoader
-     * @param \BrowserDetector\Version\VersionFactoryInterface $versionFactory
-     */
     public function __construct(CompanyLoaderInterface $companyLoader, VersionFactoryInterface $versionFactory)
     {
         $this->companyLoader  = $companyLoader;
@@ -37,14 +39,10 @@ final class EngineFactory
     }
 
     /**
-     * @param \Psr\Log\LoggerInterface $logger
-     * @param array                    $data
-     * @param string                   $useragent
+     * @param array<string, (string|stdClass|null)> $data
      *
-     * @throws \BrowserDetector\Loader\NotFoundException
-     * @throws \UnexpectedValueException
-     *
-     * @return \UaResult\Engine\EngineInterface
+     * @throws NotFoundException
+     * @throws UnexpectedValueException
      */
     public function fromArray(LoggerInterface $logger, array $data, string $useragent): EngineInterface
     {
@@ -53,7 +51,10 @@ final class EngineFactory
         assert(array_key_exists('version', $data), '"version" property is required');
 
         $name    = $data['name'];
-        $version = $this->getVersion($data, $useragent, $logger);
+        $version = $this->getVersion($data['version'], $useragent, $logger);
+
+        assert(is_string($name) || null === $name);
+        assert(is_string($data['manufacturer']));
 
         try {
             $manufacturer = $this->companyLoader->load($data['manufacturer'], $useragent);

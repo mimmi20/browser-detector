@@ -9,14 +9,13 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetector\Parser;
 
 interface EngineParserFactoryInterface
 {
     /**
      * Gets the information about the engine by User Agent
-     *
-     * @return \BrowserDetector\Parser\EngineParserInterface
      */
     public function __invoke(): EngineParserInterface;
 }

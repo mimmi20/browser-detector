@@ -9,6 +9,7 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetector\Loader;
 
 use BrowserDetector\Factory\DeviceFactory;
@@ -16,27 +17,21 @@ use BrowserDetector\Factory\DisplayFactory;
 use BrowserDetector\Loader\Helper\DataInterface;
 use BrowserDetector\Parser\PlatformParserInterface;
 use Psr\Log\LoggerInterface;
+use UaDeviceType\TypeLoader;
+use UaResult\Device\DeviceInterface;
+use UaResult\Os\OsInterface;
+use UnexpectedValueException;
 
 final class DeviceLoader implements DeviceLoaderInterface
 {
-    /** @var \Psr\Log\LoggerInterface */
-    private $logger;
+    private LoggerInterface $logger;
 
-    /** @var \BrowserDetector\Parser\PlatformParserInterface */
-    private $platformParser;
+    private PlatformParserInterface $platformParser;
 
-    /** @var \BrowserDetector\Loader\Helper\DataInterface */
-    private $initData;
+    private DataInterface $initData;
 
-    /** @var \BrowserDetector\Loader\CompanyLoaderInterface */
-    private $companyLoader;
+    private CompanyLoaderInterface $companyLoader;
 
-    /**
-     * @param \Psr\Log\LoggerInterface                        $logger
-     * @param \BrowserDetector\Loader\Helper\DataInterface    $initData
-     * @param \BrowserDetector\Loader\CompanyLoaderInterface  $companyLoader
-     * @param \BrowserDetector\Parser\PlatformParserInterface $platformParser
-     */
     public function __construct(
         LoggerInterface $logger,
         DataInterface $initData,
@@ -53,13 +48,10 @@ final class DeviceLoader implements DeviceLoaderInterface
     }
 
     /**
-     * @param string $key
-     * @param string $useragent
+     * @return array<int, (OsInterface|DeviceInterface|null)>
      *
-     * @throws \BrowserDetector\Loader\NotFoundException
-     * @throws \UnexpectedValueException
-     *
-     * @return array
+     * @throws NotFoundException
+     * @throws UnexpectedValueException
      */
     public function load(string $key, string $useragent = ''): array
     {
@@ -79,16 +71,17 @@ final class DeviceLoader implements DeviceLoaderInterface
         if (null !== $platformKey) {
             try {
                 $platform = $this->platformParser->load($platformKey, $useragent);
-            } catch (\UnexpectedValueException $e) {
+            } catch (UnexpectedValueException $e) {
                 $this->logger->warning($e);
             }
         }
 
         $deviceFactory = new DeviceFactory(
             $this->companyLoader,
-            new \UaDeviceType\TypeLoader(),
+            new TypeLoader(),
             new DisplayFactory()
         );
+
         $device = $deviceFactory->fromArray($this->logger, (array) $deviceData, $useragent);
 
         return [$device, $platform];

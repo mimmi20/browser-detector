@@ -9,6 +9,7 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetector\Loader;
 
 use BrowserDetector\Loader\Helper\Data;
@@ -20,24 +21,14 @@ final class EngineLoaderFactory implements EngineLoaderFactoryInterface
 {
     public const DATA_PATH = __DIR__ . '/../../data/engines';
 
-    /** @var \Psr\Log\LoggerInterface */
-    private $logger;
+    private LoggerInterface $logger;
 
-    /** @var \JsonClass\JsonInterface */
-    private $jsonParser;
+    private JsonInterface $jsonParser;
 
-    /** @var \BrowserDetector\Loader\CompanyLoaderInterface */
-    private $companyLoader;
+    private CompanyLoaderInterface $companyLoader;
 
-    /** @var \BrowserDetector\Loader\Helper\FilterInterface */
-    private $filter;
+    private FilterInterface $filter;
 
-    /**
-     * @param \Psr\Log\LoggerInterface                       $logger
-     * @param \JsonClass\JsonInterface                       $jsonParser
-     * @param \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader
-     * @param \BrowserDetector\Loader\Helper\FilterInterface $filter
-     */
     public function __construct(
         LoggerInterface $logger,
         JsonInterface $jsonParser,
@@ -50,9 +41,6 @@ final class EngineLoaderFactory implements EngineLoaderFactoryInterface
         $this->filter        = $filter;
     }
 
-    /**
-     * @return EngineLoaderInterface
-     */
     public function __invoke(): EngineLoaderInterface
     {
         /** @var EngineLoaderInterface|null $loader */

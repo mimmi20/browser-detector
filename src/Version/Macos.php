@@ -9,11 +9,18 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetector\Version;
 
 use MacosBuild\BuildException;
 use MacosBuild\MacosBuildInterface;
 use MacosBuild\NotFoundException;
+use UnexpectedValueException;
+
+use function array_key_exists;
+use function mb_stripos;
+use function preg_match;
+use function str_replace;
 
 final class Macos implements VersionDetectorInterface
 {
@@ -129,16 +136,10 @@ final class Macos implements VersionDetectorInterface
         '/darwin\/1\.3\.1/i' => '10.0.0',
     ];
 
-    /** @var \BrowserDetector\Version\VersionFactoryInterface */
-    private $versionFactory;
+    private VersionFactoryInterface $versionFactory;
 
-    /** @var \MacosBuild\MacosBuildInterface */
-    private $macosBuild;
+    private MacosBuildInterface $macosBuild;
 
-    /**
-     * @param \BrowserDetector\Version\VersionFactoryInterface $versionFactory
-     * @param \MacosBuild\MacosBuildInterface                  $macosBuild
-     */
     public function __construct(VersionFactoryInterface $versionFactory, MacosBuildInterface $macosBuild)
     {
         $this->versionFactory = $versionFactory;
@@ -148,11 +149,7 @@ final class Macos implements VersionDetectorInterface
     /**
      * returns the version of the operating system/platform
      *
-     * @param string $useragent
-     *
-     * @throws \UnexpectedValueException
-     *
-     * @return \BrowserDetector\Version\VersionInterface
+     * @throws UnexpectedValueException
      */
     public function detectVersion(string $useragent): VersionInterface
     {

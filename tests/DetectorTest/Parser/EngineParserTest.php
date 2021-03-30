@@ -9,25 +9,30 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetectorTest\Parser;
 
 use BrowserDetector\Loader\EngineLoaderFactoryInterface;
 use BrowserDetector\Loader\EngineLoaderInterface;
 use BrowserDetector\Parser\EngineParser;
 use BrowserDetector\Parser\Helper\RulefileParserInterface;
+use PHPUnit\Framework\Exception;
+use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
+use SebastianBergmann\RecursionContext\InvalidArgumentException;
 use UaResult\Engine\EngineInterface;
+use UnexpectedValueException;
+
+use function assert;
 
 final class EngineParserTest extends TestCase
 {
     /**
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
-     * @throws \PHPUnit\Framework\ExpectationFailedException
-     * @throws \PHPUnit\Framework\Exception
-     * @throws \UnexpectedValueException
+     * @throws InvalidArgumentException
+     * @throws ExpectationFailedException
+     * @throws Exception
+     * @throws UnexpectedValueException
      * @throws \InvalidArgumentException
-     *
-     * @return void
      */
     public function testInvoke(): void
     {
@@ -60,8 +65,8 @@ final class EngineParserTest extends TestCase
             ->method('parseFile')
             ->willReturn($mode);
 
-        \assert($loaderFactory instanceof EngineLoaderFactoryInterface);
-        \assert($fileParser instanceof RulefileParserInterface);
+        assert($loaderFactory instanceof EngineLoaderFactoryInterface);
+        assert($fileParser instanceof RulefileParserInterface);
         $parser       = new EngineParser($loaderFactory, $fileParser);
         $parserResult = $parser->parse($useragent);
 
