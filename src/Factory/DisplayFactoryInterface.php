@@ -9,6 +9,7 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetector\Factory;
 
 use Psr\Log\LoggerInterface;
@@ -17,10 +18,7 @@ use UaResult\Device\DisplayInterface;
 interface DisplayFactoryInterface
 {
     /**
-     * @param \Psr\Log\LoggerInterface $logger
-     * @param array                    $data
-     *
-     * @return \UaResult\Device\DisplayInterface
+     * @param array<string, (int|bool|float|null)> $data
      */
     public function fromArray(LoggerInterface $logger, array $data): DisplayInterface;
 }

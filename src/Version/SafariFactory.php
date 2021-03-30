@@ -9,6 +9,7 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetector\Version;
 
 use BrowserDetector\Version\Helper\Safari as SafariHelper;
@@ -16,11 +17,6 @@ use Psr\Log\LoggerInterface;
 
 final class SafariFactory implements SafariFactoryInterface
 {
-    /**
-     * @param \Psr\Log\LoggerInterface $logger
-     *
-     * @return \BrowserDetector\Version\Safari
-     */
     public function __invoke(LoggerInterface $logger): Safari
     {
         return new Safari(

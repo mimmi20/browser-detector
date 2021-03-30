@@ -9,33 +9,30 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetectorTest\Helper;
 
 use BrowserDetector\Helper\MobileDevice;
+use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
+use SebastianBergmann\RecursionContext\InvalidArgumentException;
+
+use function sprintf;
 
 final class MobileDeviceTest extends TestCase
 {
-    /** @var \BrowserDetector\Helper\MobileDevice */
-    private $object;
+    private MobileDevice $object;
 
-    /**
-     * @return void
-     */
     protected function setUp(): void
     {
         $this->object = new MobileDevice();
     }
 
     /**
+     * @throws InvalidArgumentException
+     * @throws ExpectationFailedException
+     *
      * @dataProvider providerIsMobile
-     *
-     * @param string $agent
-     *
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
-     * @throws \PHPUnit\Framework\ExpectationFailedException
-     *
-     * @return void
      */
     public function testIsMobile(string $agent): void
     {
@@ -46,7 +43,7 @@ final class MobileDeviceTest extends TestCase
     }
 
     /**
-     * @return array[]
+     * @return array<int, array<int, string>>
      */
     public function providerIsMobile(): array
     {
@@ -148,14 +145,10 @@ final class MobileDeviceTest extends TestCase
     }
 
     /**
+     * @throws InvalidArgumentException
+     * @throws ExpectationFailedException
+     *
      * @dataProvider providerIsNotMobile
-     *
-     * @param string $agent
-     *
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
-     * @throws \PHPUnit\Framework\ExpectationFailedException
-     *
-     * @return void
      */
     public function testIsNotMobile(string $agent): void
     {
@@ -166,7 +159,7 @@ final class MobileDeviceTest extends TestCase
     }
 
     /**
-     * @return array[]
+     * @return array<int, array<int, string>>
      */
     public function providerIsNotMobile(): array
     {

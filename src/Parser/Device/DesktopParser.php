@@ -9,27 +9,30 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetector\Parser\Device;
 
 use BrowserDetector\Loader\DeviceLoaderFactoryInterface;
 use BrowserDetector\Loader\DeviceLoaderInterface;
+use BrowserDetector\Loader\NotFoundException;
 use BrowserDetector\Parser\Helper\RulefileParserInterface;
+use SplFileInfo;
+use UaResult\Device\DeviceInterface;
+use UaResult\Os\OsInterface;
+use UnexpectedValueException;
+
+use function assert;
+use function get_class;
+use function sprintf;
 
 final class DesktopParser implements DesktopParserInterface
 {
-    /** @var \BrowserDetector\Loader\DeviceLoaderFactoryInterface */
-    private $loaderFactory;
-
-    /** @var \BrowserDetector\Parser\Helper\RulefileParserInterface */
-    private $fileParser;
-
     private const GENERIC_FILE  = __DIR__ . '/../../../data/factories/devices/desktop.json';
     private const SPECIFIC_FILE = __DIR__ . '/../../../data/factories/devices/desktop/%s.json';
+    private DeviceLoaderFactoryInterface $loaderFactory;
 
-    /**
-     * @param \BrowserDetector\Parser\Helper\RulefileParserInterface $fileParser
-     * @param \BrowserDetector\Loader\DeviceLoaderFactoryInterface   $loaderFactory
-     */
+    private RulefileParserInterface $fileParser;
+
     public function __construct(RulefileParserInterface $fileParser, DeviceLoaderFactoryInterface $loaderFactory)
     {
         $this->loaderFactory = $loaderFactory;
@@ -39,23 +42,21 @@ final class DesktopParser implements DesktopParserInterface
     /**
      * Gets the information about the browser by User Agent
      *
-     * @param string $useragent
+     * @return array<int, (OsInterface|DeviceInterface|null)>
      *
-     * @throws \BrowserDetector\Loader\NotFoundException
-     * @throws \UnexpectedValueException
-     *
-     * @return array
+     * @throws NotFoundException
+     * @throws UnexpectedValueException
      */
     public function parse(string $useragent): array
     {
         $mode = $this->fileParser->parseFile(
-            new \SplFileInfo(self::GENERIC_FILE),
+            new SplFileInfo(self::GENERIC_FILE),
             $useragent,
             'unknown'
         );
 
         $key = $this->fileParser->parseFile(
-            new \SplFileInfo(sprintf(self::SPECIFIC_FILE, $mode)),
+            new SplFileInfo(sprintf(self::SPECIFIC_FILE, $mode)),
             $useragent,
             'unknown'
         );
@@ -64,21 +65,17 @@ final class DesktopParser implements DesktopParserInterface
     }
 
     /**
-     * @param string $company
-     * @param string $key
-     * @param string $useragent
+     * @return array<int, (OsInterface|DeviceInterface|null)>
      *
-     * @throws \BrowserDetector\Loader\NotFoundException
-     * @throws \UnexpectedValueException
-     *
-     * @return array
+     * @throws NotFoundException
+     * @throws UnexpectedValueException
      */
     public function load(string $company, string $key, string $useragent = ''): array
     {
         $loaderFactory = $this->loaderFactory;
 
         $loader = $loaderFactory($company);
-        \assert($loader instanceof DeviceLoaderInterface, sprintf('$loader should be an instance of %s, but is %s', DeviceLoaderInterface::class, get_class($loader)));
+        assert($loader instanceof DeviceLoaderInterface, sprintf('$loader should be an instance of %s, but is %s', DeviceLoaderInterface::class, get_class($loader)));
 
         return $loader->load($key, $useragent);
     }

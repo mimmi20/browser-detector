@@ -9,33 +9,36 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetector\Factory;
 
 use BrowserDetector\Loader\CompanyLoaderInterface;
 use BrowserDetector\Loader\NotFoundException;
 use BrowserDetector\Version\VersionFactoryInterface;
 use Psr\Log\LoggerInterface;
+use stdClass;
 use UaBrowserType\TypeLoaderInterface;
 use UaBrowserType\Unknown;
 use UaResult\Browser\Browser;
 use UaResult\Browser\BrowserInterface;
 use UaResult\Company\Company;
+use UnexpectedValueException;
+
+use function array_key_exists;
+use function assert;
+use function gettype;
+use function is_int;
+use function is_string;
+use function sprintf;
 
 final class BrowserFactory
 {
     use VersionFactoryTrait;
 
-    /** @var \UaBrowserType\TypeLoaderInterface */
-    private $typeLoader;
+    private TypeLoaderInterface $typeLoader;
 
-    /** @var \BrowserDetector\Loader\CompanyLoaderInterface */
-    private $companyLoader;
+    private CompanyLoaderInterface $companyLoader;
 
-    /**
-     * @param \BrowserDetector\Loader\CompanyLoaderInterface   $companyLoader
-     * @param \BrowserDetector\Version\VersionFactoryInterface $versionFactory
-     * @param \UaBrowserType\TypeLoaderInterface               $typeLoader
-     */
     public function __construct(
         CompanyLoaderInterface $companyLoader,
         VersionFactoryInterface $versionFactory,
@@ -47,14 +50,10 @@ final class BrowserFactory
     }
 
     /**
-     * @param \Psr\Log\LoggerInterface $logger
-     * @param array                    $data
-     * @param string                   $useragent
+     * @param array<string, (int|stdClass|string|null)> $data
      *
-     * @throws \BrowserDetector\Loader\NotFoundException
-     * @throws \UnexpectedValueException
-     *
-     * @return \UaResult\Browser\BrowserInterface
+     * @throws NotFoundException
+     * @throws UnexpectedValueException
      */
     public function fromArray(LoggerInterface $logger, array $data, string $useragent): BrowserInterface
     {
@@ -69,6 +68,11 @@ final class BrowserFactory
         $modus = $data['modus'];
         $bits  = $data['bits'];
 
+        assert(
+            is_string($data['type']) || null === $data['type'],
+            sprintf('"type" property is expecting a string or null, but got %s', gettype($data['type']))
+        );
+
         $type = new Unknown();
         try {
             $type = $this->typeLoader->load((string) $data['type']);
@@ -76,7 +80,13 @@ final class BrowserFactory
             $logger->info($e);
         }
 
-        $version = $this->getVersion($data, $useragent, $logger);
+        assert(!is_int($data['version']));
+        $version = $this->getVersion($data['version'], $useragent, $logger);
+
+        assert(is_string($name) || null === $name);
+        assert(is_string($modus) || null === $modus);
+        assert(is_int($bits) || null === $bits);
+        assert(is_string($data['manufacturer']));
 
         try {
             $manufacturer = $this->companyLoader->load($data['manufacturer'], $useragent);

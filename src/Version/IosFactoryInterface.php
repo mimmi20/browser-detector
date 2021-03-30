@@ -9,12 +9,10 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetector\Version;
 
 interface IosFactoryInterface
 {
-    /**
-     * @return \BrowserDetector\Version\Ios
-     */
     public function __invoke(): Ios;
 }

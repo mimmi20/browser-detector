@@ -9,6 +9,7 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetector\Parser;
 
 use BrowserDetector\Loader\CompanyLoaderInterface;
@@ -20,20 +21,12 @@ use Psr\Log\LoggerInterface;
 
 final class EngineParserFactory implements EngineParserFactoryInterface
 {
-    /** @var \Psr\Log\LoggerInterface */
-    private $logger;
+    private LoggerInterface $logger;
 
-    /** @var \JsonClass\JsonInterface */
-    private $jsonParser;
+    private JsonInterface $jsonParser;
 
-    /** @var \BrowserDetector\Loader\CompanyLoaderInterface */
-    private $companyLoader;
+    private CompanyLoaderInterface $companyLoader;
 
-    /**
-     * @param \Psr\Log\LoggerInterface                       $logger
-     * @param \JsonClass\JsonInterface                       $jsonParser
-     * @param \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader
-     */
     public function __construct(
         LoggerInterface $logger,
         JsonInterface $jsonParser,
@@ -46,8 +39,6 @@ final class EngineParserFactory implements EngineParserFactoryInterface
 
     /**
      * Gets the information about the engine by User Agent
-     *
-     * @return \BrowserDetector\Parser\EngineParserInterface
      */
     public function __invoke(): EngineParserInterface
     {

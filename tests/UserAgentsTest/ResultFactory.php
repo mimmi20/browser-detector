@@ -9,6 +9,7 @@
  */
 
 declare(strict_types = 1);
+
 namespace UserAgentsTest;
 
 use BrowserDetector\Factory\BrowserFactory;
@@ -17,6 +18,7 @@ use BrowserDetector\Factory\DisplayFactory;
 use BrowserDetector\Factory\EngineFactory;
 use BrowserDetector\Factory\PlatformFactory;
 use BrowserDetector\Loader\CompanyLoaderInterface;
+use BrowserDetector\Loader\NotFoundException;
 use BrowserDetector\RequestBuilder;
 use BrowserDetector\Version\Version;
 use BrowserDetector\Version\VersionFactory;
@@ -31,28 +33,24 @@ use UaResult\Device\Display;
 use UaResult\Engine\Engine;
 use UaResult\Os\Os;
 use UaResult\Result\Result;
+use UnexpectedValueException;
+
+use function array_key_exists;
 
 final class ResultFactory
 {
-    /** @var \BrowserDetector\Loader\CompanyLoaderInterface */
-    private $companyLoader;
+    private CompanyLoaderInterface $companyLoader;
 
-    /**
-     * @param \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader
-     */
     public function __construct(CompanyLoaderInterface $companyLoader)
     {
         $this->companyLoader = $companyLoader;
     }
 
     /**
-     * @param \Psr\Log\LoggerInterface $logger
-     * @param array                    $data
+     * @param array<string, array<string, string>> $data
      *
-     * @throws \BrowserDetector\Loader\NotFoundException
-     * @throws \UnexpectedValueException
-     *
-     * @return \UaResult\Result\Result|null
+     * @throws NotFoundException
+     * @throws UnexpectedValueException
      */
     public function fromArray(LoggerInterface $logger, array $data): ?Result
     {
@@ -72,12 +70,14 @@ final class ResultFactory
             new Unknown(),
             new Display(null, null, null, null)
         );
+
         if (array_key_exists('device', $data)) {
             $deviceFactory = new DeviceFactory(
                 $this->companyLoader,
                 new \UaDeviceType\TypeLoader(),
                 new DisplayFactory()
             );
+
             $device = $deviceFactory->fromArray($logger, (array) $data['device'], $request->getDeviceUserAgent());
         }
 
@@ -91,6 +91,7 @@ final class ResultFactory
             null,
             null
         );
+
         if (array_key_exists('browser', $data)) {
             $browser = (new BrowserFactory($this->companyLoader, $versionFactory, new TypeLoader()))->fromArray($logger, (array) $data['browser'], $browserUa);
         }
@@ -102,6 +103,7 @@ final class ResultFactory
             new Version('0'),
             null
         );
+
         if (array_key_exists('os', $data)) {
             $os = (new PlatformFactory($this->companyLoader, $versionFactory))->fromArray($logger, (array) $data['os'], $request->getPlatformUserAgent());
         }
@@ -111,6 +113,7 @@ final class ResultFactory
             new Company('Unknown', null, null),
             new Version('0')
         );
+
         if (array_key_exists('engine', $data)) {
             $engine = (new EngineFactory($this->companyLoader, $versionFactory))->fromArray($logger, (array) $data['engine'], $browserUa);
         }

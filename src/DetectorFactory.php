@@ -9,6 +9,7 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetector;
 
 use BrowserDetector\Cache\Cache;
@@ -24,27 +25,22 @@ use Psr\Log\LoggerInterface;
 use Psr\SimpleCache\CacheInterface as PsrCacheInterface;
 use UaNormalizer\NormalizerFactory;
 
+use function assert;
+use function get_class;
+use function sprintf;
+
 final class DetectorFactory
 {
-    /** @var \Psr\SimpleCache\CacheInterface */
-    private $cache;
+    private PsrCacheInterface $cache;
 
-    /** @var \Psr\Log\LoggerInterface */
-    private $logger;
+    private LoggerInterface $logger;
 
-    /**
-     * @param \Psr\SimpleCache\CacheInterface $cache
-     * @param \Psr\Log\LoggerInterface        $logger
-     */
     public function __construct(PsrCacheInterface $cache, LoggerInterface $logger)
     {
         $this->cache  = $cache;
         $this->logger = $logger;
     }
 
-    /**
-     * @return Detector
-     */
     public function __invoke(): Detector
     {
         static $detector = null;
@@ -54,7 +50,7 @@ final class DetectorFactory
             $companyLoaderFactory = new CompanyLoaderFactory($jsonParser, new Filter());
 
             $companyLoader = $companyLoaderFactory();
-            \assert($companyLoader instanceof CompanyLoader, sprintf('$companyLoader should be an instance of %s, but is %s', CompanyLoader::class, get_class($companyLoader)));
+            assert($companyLoader instanceof CompanyLoader, sprintf('$companyLoader should be an instance of %s, but is %s', CompanyLoader::class, get_class($companyLoader)));
 
             $platformParserFactory = new PlatformParserFactory($this->logger, $jsonParser, $companyLoader);
             $platformParser        = $platformParserFactory();

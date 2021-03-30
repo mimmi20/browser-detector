@@ -9,6 +9,7 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetector\Loader;
 
 use BrowserDetector\Loader\Helper\Data;
@@ -19,25 +20,16 @@ final class CompanyLoaderFactory implements CompanyLoaderFactoryInterface
 {
     public const DATA_PATH = __DIR__ . '/../../data/companies';
 
-    /** @var \JsonClass\JsonInterface */
-    private $jsonParser;
+    private JsonInterface $jsonParser;
 
-    /** @var \BrowserDetector\Loader\Helper\FilterInterface */
-    private $filter;
+    private FilterInterface $filter;
 
-    /**
-     * @param \JsonClass\JsonInterface                       $jsonParser
-     * @param \BrowserDetector\Loader\Helper\FilterInterface $filter
-     */
     public function __construct(JsonInterface $jsonParser, FilterInterface $filter)
     {
         $this->jsonParser = $jsonParser;
         $this->filter     = $filter;
     }
 
-    /**
-     * @return CompanyLoaderInterface
-     */
     public function __invoke(): CompanyLoaderInterface
     {
         /** @var CompanyLoader|null $loader */

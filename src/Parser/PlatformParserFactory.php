@@ -9,6 +9,7 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetector\Parser;
 
 use BrowserDetector\Loader\CompanyLoaderInterface;
@@ -20,20 +21,12 @@ use Psr\Log\LoggerInterface;
 
 final class PlatformParserFactory implements PlatformParserFactoryInterface
 {
-    /** @var LoggerInterface */
-    private $logger;
+    private LoggerInterface $logger;
 
-    /** @var JsonInterface */
-    private $jsonParser;
+    private JsonInterface $jsonParser;
 
-    /** @var CompanyLoaderInterface */
-    private $companyLoader;
+    private CompanyLoaderInterface $companyLoader;
 
-    /**
-     * @param \Psr\Log\LoggerInterface                       $logger
-     * @param \JsonClass\JsonInterface                       $jsonParser
-     * @param \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader
-     */
     public function __construct(
         LoggerInterface $logger,
         JsonInterface $jsonParser,
@@ -44,9 +37,6 @@ final class PlatformParserFactory implements PlatformParserFactoryInterface
         $this->companyLoader = $companyLoader;
     }
 
-    /**
-     * @return PlatformParserInterface
-     */
     public function __invoke(): PlatformParserInterface
     {
         return new PlatformParser(

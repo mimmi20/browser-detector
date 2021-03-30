@@ -9,8 +9,10 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetectorTest\Factory;
 
+use AssertionError;
 use BrowserDetector\Factory\EngineFactory;
 use BrowserDetector\Loader\CompanyLoaderInterface;
 use BrowserDetector\Loader\NotFoundException;
@@ -18,17 +20,21 @@ use BrowserDetector\Version\NullVersion;
 use BrowserDetector\Version\Version;
 use BrowserDetector\Version\VersionFactoryInterface;
 use BrowserDetector\Version\VersionInterface;
+use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
+use SebastianBergmann\RecursionContext\InvalidArgumentException;
+use stdClass;
 use UaResult\Company\CompanyInterface;
 use UaResult\Engine\EngineInterface;
+use UnexpectedValueException;
+
+use function assert;
 
 final class EngineFactoryTest extends TestCase
 {
     /**
-     * @throws \UnexpectedValueException
-     *
-     * @return void
+     * @throws UnexpectedValueException
      */
     public function testFromEmptyArray(): void
     {
@@ -46,8 +52,8 @@ final class EngineFactoryTest extends TestCase
             ->expects(self::never())
             ->method('set');
 
-        \assert($companyLoader instanceof CompanyLoaderInterface);
-        \assert($versionFactory instanceof VersionFactoryInterface);
+        assert($companyLoader instanceof CompanyLoaderInterface);
+        assert($versionFactory instanceof VersionFactoryInterface);
         $object = new EngineFactory($companyLoader, $versionFactory);
 
         $logger = $this->getMockBuilder(LoggerInterface::class)
@@ -78,23 +84,21 @@ final class EngineFactoryTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $this->expectException(\AssertionError::class);
+        $this->expectException(AssertionError::class);
         $this->expectExceptionMessage('"name" property is required');
 
-        \assert($logger instanceof LoggerInterface);
+        assert($logger instanceof LoggerInterface);
         $object->fromArray($logger, [], 'this is a test');
     }
 
     /**
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
-     * @throws \PHPUnit\Framework\ExpectationFailedException
-     * @throws \UnexpectedValueException
-     *
-     * @return void
+     * @throws InvalidArgumentException
+     * @throws ExpectationFailedException
+     * @throws UnexpectedValueException
      */
     public function testFromArrayWithVersionString(): void
     {
-        $company = $this->getMockBuilder(CompanyInterface::class)
+        $company       = $this->getMockBuilder(CompanyInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $companyLoader = $this->getMockBuilder(CompanyLoaderInterface::class)
@@ -106,8 +110,8 @@ final class EngineFactoryTest extends TestCase
             ->with('unknown')
             ->willReturn($company);
 
-        $v        = '11.2.1';
-        $version2 = $this->getMockBuilder(VersionInterface::class)
+        $v              = '11.2.1';
+        $version2       = $this->getMockBuilder(VersionInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $versionFactory = $this->getMockBuilder(VersionFactoryInterface::class)
@@ -119,8 +123,8 @@ final class EngineFactoryTest extends TestCase
             ->with($v)
             ->willReturn($version2);
 
-        \assert($companyLoader instanceof CompanyLoaderInterface);
-        \assert($versionFactory instanceof VersionFactoryInterface);
+        assert($companyLoader instanceof CompanyLoaderInterface);
+        assert($versionFactory instanceof VersionFactoryInterface);
         $object = new EngineFactory($companyLoader, $versionFactory);
 
         $logger = $this->getMockBuilder(LoggerInterface::class)
@@ -151,7 +155,7 @@ final class EngineFactoryTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        \assert($logger instanceof LoggerInterface);
+        assert($logger instanceof LoggerInterface);
         $result = $object->fromArray(
             $logger,
             ['name' => null, 'manufacturer' => 'unknown', 'version' => $v],
@@ -167,15 +171,13 @@ final class EngineFactoryTest extends TestCase
     }
 
     /**
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
-     * @throws \PHPUnit\Framework\ExpectationFailedException
-     * @throws \UnexpectedValueException
-     *
-     * @return void
+     * @throws InvalidArgumentException
+     * @throws ExpectationFailedException
+     * @throws UnexpectedValueException
      */
     public function testFromArrayWithFoundTypeAndNullObjectVersion(): void
     {
-        $company = $this->getMockBuilder(CompanyInterface::class)
+        $company       = $this->getMockBuilder(CompanyInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $companyLoader = $this->getMockBuilder(CompanyLoaderInterface::class)
@@ -187,7 +189,7 @@ final class EngineFactoryTest extends TestCase
             ->with('unknown')
             ->willReturn($company);
 
-        $v              = new \stdClass();
+        $v              = new stdClass();
         $v->value       = null;
         $versionFactory = $this->getMockBuilder(VersionFactoryInterface::class)
             ->disableOriginalConstructor()
@@ -196,8 +198,8 @@ final class EngineFactoryTest extends TestCase
             ->expects(self::never())
             ->method('set');
 
-        \assert($companyLoader instanceof CompanyLoaderInterface);
-        \assert($versionFactory instanceof VersionFactoryInterface);
+        assert($companyLoader instanceof CompanyLoaderInterface);
+        assert($versionFactory instanceof VersionFactoryInterface);
         $object = new EngineFactory($companyLoader, $versionFactory);
 
         $logger = $this->getMockBuilder(LoggerInterface::class)
@@ -228,7 +230,7 @@ final class EngineFactoryTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        \assert($logger instanceof LoggerInterface);
+        assert($logger instanceof LoggerInterface);
         $result = $object->fromArray(
             $logger,
             ['name' => null, 'manufacturer' => 'unknown', 'version' => $v],
@@ -244,15 +246,13 @@ final class EngineFactoryTest extends TestCase
     }
 
     /**
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
-     * @throws \PHPUnit\Framework\ExpectationFailedException
-     * @throws \UnexpectedValueException
-     *
-     * @return void
+     * @throws InvalidArgumentException
+     * @throws ExpectationFailedException
+     * @throws UnexpectedValueException
      */
     public function testFromArrayWithFixedVersionObject(): void
     {
-        $company = $this->getMockBuilder(CompanyInterface::class)
+        $company       = $this->getMockBuilder(CompanyInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $companyLoader = $this->getMockBuilder(CompanyLoaderInterface::class)
@@ -264,10 +264,10 @@ final class EngineFactoryTest extends TestCase
             ->with('unknown')
             ->willReturn($company);
 
-        $v2       = '11.2.1';
-        $v        = new \stdClass();
-        $v->value = $v2;
-        $version2 = $this->getMockBuilder(VersionInterface::class)
+        $v2             = '11.2.1';
+        $v              = new stdClass();
+        $v->value       = $v2;
+        $version2       = $this->getMockBuilder(VersionInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $versionFactory = $this->getMockBuilder(VersionFactoryInterface::class)
@@ -279,8 +279,8 @@ final class EngineFactoryTest extends TestCase
             ->with($v2)
             ->willReturn($version2);
 
-        \assert($companyLoader instanceof CompanyLoaderInterface);
-        \assert($versionFactory instanceof VersionFactoryInterface);
+        assert($companyLoader instanceof CompanyLoaderInterface);
+        assert($versionFactory instanceof VersionFactoryInterface);
         $object = new EngineFactory($companyLoader, $versionFactory);
 
         $logger = $this->getMockBuilder(LoggerInterface::class)
@@ -311,7 +311,7 @@ final class EngineFactoryTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        \assert($logger instanceof LoggerInterface);
+        assert($logger instanceof LoggerInterface);
         $result = $object->fromArray(
             $logger,
             ['name' => null, 'manufacturer' => 'unknown', 'version' => $v],
@@ -327,15 +327,13 @@ final class EngineFactoryTest extends TestCase
     }
 
     /**
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
-     * @throws \PHPUnit\Framework\ExpectationFailedException
-     * @throws \UnexpectedValueException
-     *
-     * @return void
+     * @throws InvalidArgumentException
+     * @throws ExpectationFailedException
+     * @throws UnexpectedValueException
      */
     public function testFromArrayWithVersionDetectionClass(): void
     {
-        $company = $this->getMockBuilder(CompanyInterface::class)
+        $company       = $this->getMockBuilder(CompanyInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $companyLoader = $this->getMockBuilder(CompanyLoaderInterface::class)
@@ -347,9 +345,9 @@ final class EngineFactoryTest extends TestCase
             ->with('unknown')
             ->willReturn($company);
 
-        $v        = new \stdClass();
-        $v->class = '\BrowserDetector\Version\Test';
-        $version2 = $this->getMockBuilder(VersionInterface::class)
+        $v              = new stdClass();
+        $v->class       = '\BrowserDetector\Version\Test';
+        $version2       = $this->getMockBuilder(VersionInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $versionFactory = $this->getMockBuilder(VersionFactoryInterface::class)
@@ -359,8 +357,8 @@ final class EngineFactoryTest extends TestCase
             ->expects(self::never())
             ->method('set');
 
-        \assert($companyLoader instanceof CompanyLoaderInterface);
-        \assert($versionFactory instanceof VersionFactoryInterface);
+        assert($companyLoader instanceof CompanyLoaderInterface);
+        assert($versionFactory instanceof VersionFactoryInterface);
         $object = new EngineFactory($companyLoader, $versionFactory);
 
         $logger = $this->getMockBuilder(LoggerInterface::class)
@@ -391,7 +389,7 @@ final class EngineFactoryTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        \assert($logger instanceof LoggerInterface);
+        assert($logger instanceof LoggerInterface);
         $result = $object->fromArray(
             $logger,
             ['name' => null, 'manufacturer' => 'unknown', 'version' => $v],
@@ -407,15 +405,13 @@ final class EngineFactoryTest extends TestCase
     }
 
     /**
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
-     * @throws \PHPUnit\Framework\ExpectationFailedException
-     * @throws \UnexpectedValueException
-     *
-     * @return void
+     * @throws InvalidArgumentException
+     * @throws ExpectationFailedException
+     * @throws UnexpectedValueException
      */
     public function testFromArrayWithVersionDetectionFactory(): void
     {
-        $company = $this->getMockBuilder(CompanyInterface::class)
+        $company       = $this->getMockBuilder(CompanyInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $companyLoader = $this->getMockBuilder(CompanyLoaderInterface::class)
@@ -427,9 +423,9 @@ final class EngineFactoryTest extends TestCase
             ->with('unknown')
             ->willReturn($company);
 
-        $v          = new \stdClass();
-        $v->factory = '\BrowserDetector\Version\TestFactory';
-        $version2   = $this->getMockBuilder(VersionInterface::class)
+        $v              = new stdClass();
+        $v->factory     = '\BrowserDetector\Version\TestFactory';
+        $version2       = $this->getMockBuilder(VersionInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $versionFactory = $this->getMockBuilder(VersionFactoryInterface::class)
@@ -439,8 +435,8 @@ final class EngineFactoryTest extends TestCase
             ->expects(self::never())
             ->method('set');
 
-        \assert($companyLoader instanceof CompanyLoaderInterface);
-        \assert($versionFactory instanceof VersionFactoryInterface);
+        assert($companyLoader instanceof CompanyLoaderInterface);
+        assert($versionFactory instanceof VersionFactoryInterface);
         $object = new EngineFactory($companyLoader, $versionFactory);
 
         $logger = $this->getMockBuilder(LoggerInterface::class)
@@ -471,7 +467,7 @@ final class EngineFactoryTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        \assert($logger instanceof LoggerInterface);
+        assert($logger instanceof LoggerInterface);
         $result = $object->fromArray(
             $logger,
             ['name' => null, 'manufacturer' => 'unknown', 'version' => $v],
@@ -488,15 +484,13 @@ final class EngineFactoryTest extends TestCase
     }
 
     /**
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
-     * @throws \PHPUnit\Framework\ExpectationFailedException
-     * @throws \UnexpectedValueException
-     *
-     * @return void
+     * @throws InvalidArgumentException
+     * @throws ExpectationFailedException
+     * @throws UnexpectedValueException
      */
     public function testFromArrayWithFixedVersionObjectAndNoSearch(): void
     {
-        $company = $this->getMockBuilder(CompanyInterface::class)
+        $company       = $this->getMockBuilder(CompanyInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $companyLoader = $this->getMockBuilder(CompanyLoaderInterface::class)
@@ -512,7 +506,7 @@ final class EngineFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
 
-        $v              = new \stdClass();
+        $v              = new stdClass();
         $v->class       = 'VersionFactory';
         $versionFactory = $this->getMockBuilder(VersionFactoryInterface::class)
             ->disableOriginalConstructor()
@@ -521,8 +515,8 @@ final class EngineFactoryTest extends TestCase
             ->expects(self::never())
             ->method('set');
 
-        \assert($companyLoader instanceof CompanyLoaderInterface);
-        \assert($versionFactory instanceof VersionFactoryInterface);
+        assert($companyLoader instanceof CompanyLoaderInterface);
+        assert($versionFactory instanceof VersionFactoryInterface);
         $object = new EngineFactory($companyLoader, $versionFactory);
 
         $logger = $this->getMockBuilder(LoggerInterface::class)
@@ -553,7 +547,7 @@ final class EngineFactoryTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        \assert($logger instanceof LoggerInterface);
+        assert($logger instanceof LoggerInterface);
         $result = $object->fromArray(
             $logger,
             ['name' => null, 'manufacturer' => 'unknown', 'version' => $v],
@@ -569,15 +563,13 @@ final class EngineFactoryTest extends TestCase
     }
 
     /**
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
-     * @throws \PHPUnit\Framework\ExpectationFailedException
-     * @throws \UnexpectedValueException
-     *
-     * @return void
+     * @throws InvalidArgumentException
+     * @throws ExpectationFailedException
+     * @throws UnexpectedValueException
      */
     public function testFromArrayWithFixedVersionObjectAndSearch(): void
     {
-        $company = $this->getMockBuilder(CompanyInterface::class)
+        $company       = $this->getMockBuilder(CompanyInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $companyLoader = $this->getMockBuilder(CompanyLoaderInterface::class)
@@ -595,7 +587,7 @@ final class EngineFactoryTest extends TestCase
 
         $useragent      = 'this is a test';
         $search         = ['abc'];
-        $v              = new \stdClass();
+        $v              = new stdClass();
         $v->class       = 'VersionFactory';
         $v->search      = $search;
         $versionFactory = $this->getMockBuilder(VersionFactoryInterface::class)
@@ -610,8 +602,8 @@ final class EngineFactoryTest extends TestCase
             ->with($useragent, $search)
             ->willReturn($version2);
 
-        \assert($companyLoader instanceof CompanyLoaderInterface);
-        \assert($versionFactory instanceof VersionFactoryInterface);
+        assert($companyLoader instanceof CompanyLoaderInterface);
+        assert($versionFactory instanceof VersionFactoryInterface);
         $object = new EngineFactory($companyLoader, $versionFactory);
 
         $logger = $this->getMockBuilder(LoggerInterface::class)
@@ -642,7 +634,7 @@ final class EngineFactoryTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        \assert($logger instanceof LoggerInterface);
+        assert($logger instanceof LoggerInterface);
         $result = $object->fromArray(
             $logger,
             ['name' => null, 'manufacturer' => 'unknown', 'version' => $v],
@@ -658,19 +650,17 @@ final class EngineFactoryTest extends TestCase
     }
 
     /**
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
-     * @throws \PHPUnit\Framework\ExpectationFailedException
-     * @throws \BrowserDetector\Loader\NotFoundException
-     * @throws \UnexpectedValueException
-     *
-     * @return void
+     * @throws InvalidArgumentException
+     * @throws ExpectationFailedException
+     * @throws NotFoundException
+     * @throws UnexpectedValueException
      */
     public function testFromEmptyArrayWithCompanyError(): void
     {
-        $companyName = 'test-company';
-        $useragent   = 'this is a test';
-        $exception   = new NotFoundException('failed');
-        $company     = $this->getMockBuilder(CompanyInterface::class)
+        $companyName   = 'test-company';
+        $useragent     = 'this is a test';
+        $exception     = new NotFoundException('failed');
+        $company       = $this->getMockBuilder(CompanyInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $companyLoader = $this->getMockBuilder(CompanyLoaderInterface::class)
@@ -682,7 +672,7 @@ final class EngineFactoryTest extends TestCase
             ->with($companyName, $useragent)
             ->willThrowException($exception);
 
-        $version = $this->getMockBuilder(VersionInterface::class)
+        $version        = $this->getMockBuilder(VersionInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $versionFactory = $this->getMockBuilder(VersionFactoryInterface::class)
@@ -694,8 +684,8 @@ final class EngineFactoryTest extends TestCase
             ->with('0')
             ->willReturn($version);
 
-        \assert($companyLoader instanceof CompanyLoaderInterface);
-        \assert($versionFactory instanceof VersionFactoryInterface);
+        assert($companyLoader instanceof CompanyLoaderInterface);
+        assert($versionFactory instanceof VersionFactoryInterface);
         $object = new EngineFactory($companyLoader, $versionFactory);
 
         $logger = $this->getMockBuilder(LoggerInterface::class)
@@ -727,7 +717,7 @@ final class EngineFactoryTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        \assert($logger instanceof LoggerInterface);
+        assert($logger instanceof LoggerInterface);
         $result = $object->fromArray(
             $logger,
             ['name' => null, 'manufacturer' => $companyName, 'version' => '0'],

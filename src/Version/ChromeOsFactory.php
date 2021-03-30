@@ -9,17 +9,13 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetector\Version;
 
 use Psr\Log\LoggerInterface;
 
 final class ChromeOsFactory implements ChromeOsFactoryInterface
 {
-    /**
-     * @param \Psr\Log\LoggerInterface $logger
-     *
-     * @return \BrowserDetector\Version\ChromeOs
-     */
     public function __invoke(LoggerInterface $logger): ChromeOs
     {
         return new ChromeOs(

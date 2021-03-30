@@ -9,20 +9,20 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetector;
 
+use Psr\Http\Message\MessageInterface;
 use Psr\Log\LoggerInterface;
 use UaRequest\GenericRequest;
+use UnexpectedValueException;
 
 interface RequestBuilderInterface
 {
     /**
-     * @param \Psr\Log\LoggerInterface                                                  $logger
-     * @param array|\Psr\Http\Message\MessageInterface|string|\UaRequest\GenericRequest $request
+     * @param array<string, string>|GenericRequest|MessageInterface|string $request
      *
-     * @throws \UnexpectedValueException
-     *
-     * @return \UaRequest\GenericRequest
+     * @throws UnexpectedValueException
      */
     public function buildRequest(LoggerInterface $logger, $request): GenericRequest;
 }

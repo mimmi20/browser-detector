@@ -9,15 +9,13 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetector\Version;
 
 use MacosBuild\MacosBuild;
 
 final class MacosFactory implements MacosFactoryInterface
 {
-    /**
-     * @return \BrowserDetector\Version\Macos
-     */
     public function __invoke(): Macos
     {
         return new Macos(

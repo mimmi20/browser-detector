@@ -9,6 +9,7 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetector;
 
 use BrowserDetector\Cache\CacheInterface;
@@ -17,7 +18,9 @@ use BrowserDetector\Parser\DeviceParserInterface;
 use BrowserDetector\Parser\EngineParserInterface;
 use BrowserDetector\Parser\PlatformParserInterface;
 use BrowserDetector\Version\Version;
+use Psr\Http\Message\MessageInterface;
 use Psr\Log\LoggerInterface;
+use Psr\SimpleCache\InvalidArgumentException;
 use UaDeviceType\Unknown;
 use UaNormalizer\Normalizer\NormalizerInterface;
 use UaRequest\GenericRequest;
@@ -33,44 +36,34 @@ use UaResult\Os\Os;
 use UaResult\Os\OsInterface;
 use UaResult\Result\Result;
 use UaResult\Result\ResultInterface;
+use UnexpectedValueException;
+
+use function assert;
+use function in_array;
+use function serialize;
+use function sha1;
 
 final class Detector implements DetectorInterface
 {
     /**
      * an logger instance
-     *
-     * @var \Psr\Log\LoggerInterface
      */
-    private $logger;
+    private LoggerInterface $logger;
 
-    /** @var \BrowserDetector\Cache\CacheInterface */
-    private $cache;
+    private CacheInterface $cache;
 
-    /** @var \BrowserDetector\Parser\DeviceParserInterface */
-    private $deviceParser;
+    private DeviceParserInterface $deviceParser;
 
-    /** @var \BrowserDetector\Parser\PlatformParserInterface */
-    private $platformParser;
+    private PlatformParserInterface $platformParser;
 
-    /** @var \BrowserDetector\Parser\BrowserParserInterface */
-    private $browserParser;
+    private BrowserParserInterface $browserParser;
 
-    /** @var \BrowserDetector\Parser\EngineParserInterface */
-    private $engineParser;
+    private EngineParserInterface $engineParser;
 
-    /** @var \UaNormalizer\Normalizer\NormalizerInterface */
-    private $normalizer;
+    private NormalizerInterface $normalizer;
 
     /**
      * sets the cache used to make the detection faster
-     *
-     * @param \Psr\Log\LoggerInterface                        $logger
-     * @param \BrowserDetector\Cache\CacheInterface           $cache
-     * @param \BrowserDetector\Parser\DeviceParserInterface   $deviceParser
-     * @param \BrowserDetector\Parser\PlatformParserInterface $platformParser
-     * @param \BrowserDetector\Parser\BrowserParserInterface  $browserParser
-     * @param \BrowserDetector\Parser\EngineParserInterface   $engineParser
-     * @param \UaNormalizer\Normalizer\NormalizerInterface    $normalizer
      */
     public function __construct(
         LoggerInterface $logger,
@@ -93,29 +86,10 @@ final class Detector implements DetectorInterface
     /**
      * Gets the information about the browser by User Agent
      *
-     * @param array|\Psr\Http\Message\MessageInterface|string|\UaRequest\GenericRequest $headers
+     * @param array<string, string>|GenericRequest|MessageInterface|string $headers
      *
-     * @throws \Psr\SimpleCache\InvalidArgumentException
-     * @throws \UnexpectedValueException
-     *
-     * @return \UaResult\Result\ResultInterface
-     *
-     * @deprecated
-     */
-    public function getBrowser($headers): ResultInterface
-    {
-        return $this->__invoke($headers);
-    }
-
-    /**
-     * Gets the information about the browser by User Agent
-     *
-     * @param array|\Psr\Http\Message\MessageInterface|string|\UaRequest\GenericRequest $headers
-     *
-     * @throws \Psr\SimpleCache\InvalidArgumentException
-     * @throws \UnexpectedValueException
-     *
-     * @return \UaResult\Result\ResultInterface
+     * @throws InvalidArgumentException
+     * @throws UnexpectedValueException
      */
     public function __invoke($headers): ResultInterface
     {
@@ -135,11 +109,21 @@ final class Detector implements DetectorInterface
     }
 
     /**
-     * @param \UaRequest\GenericRequest $request
+     * Gets the information about the browser by User Agent
      *
-     * @return \UaResult\Result\Result
+     * @deprecated
+     *
+     * @param array<string, string>|GenericRequest|MessageInterface|string $headers
+     *
+     * @throws InvalidArgumentException
+     * @throws UnexpectedValueException
      */
-    private function parse(GenericRequest $request)
+    public function getBrowser($headers): ResultInterface
+    {
+        return $this->__invoke($headers);
+    }
+
+    private function parse(GenericRequest $request): Result
     {
         $deviceUa     = $this->normalizer->normalize($request->getDeviceUserAgent());
         $deviceParser = $this->deviceParser;
@@ -163,15 +147,15 @@ final class Detector implements DetectorInterface
 
         try {
             [$device, $platform] = $deviceParser->parse($deviceUa);
-        } catch (\UnexpectedValueException $e) {
+        } catch (UnexpectedValueException $e) {
             $this->logger->warning($e);
 
             $device   = clone $defaultDevice;
             $platform = clone $defaultPlatform;
         }
 
-        \assert($device instanceof DeviceInterface);
-        \assert($platform instanceof OsInterface || null === $platform);
+        assert($device instanceof DeviceInterface);
+        assert($platform instanceof OsInterface || null === $platform);
 
         if (null === $platform) {
             $this->logger->debug('platform not detected from the device');
@@ -179,7 +163,7 @@ final class Detector implements DetectorInterface
 
             try {
                 $platform = $platformParser->parse($this->normalizer->normalize($request->getPlatformUserAgent()));
-            } catch (\UnexpectedValueException $e) {
+            } catch (UnexpectedValueException $e) {
                 $this->logger->warning($e);
                 $platform = clone $defaultPlatform;
             }
@@ -207,20 +191,20 @@ final class Detector implements DetectorInterface
 
         try {
             [$browser, $engine] = $browserParser->parse($browserUa);
-        } catch (\UnexpectedValueException $e) {
+        } catch (UnexpectedValueException $e) {
             $this->logger->error($e);
 
             $browser = clone $defaultBrowser;
             $engine  = clone $defaultEngine;
         }
 
-        \assert($browser instanceof BrowserInterface);
-        \assert($engine instanceof EngineInterface || null === $engine);
+        assert($browser instanceof BrowserInterface);
+        assert($engine instanceof EngineInterface || null === $engine);
 
         if (null !== $platform && in_array($platform->getName(), ['iOS', 'iPhone OS'], true)) {
             try {
                 $engine = $this->engineParser->load('webkit', $engineUa);
-            } catch (\UnexpectedValueException $e) {
+            } catch (UnexpectedValueException $e) {
                 $this->logger->warning($e);
 
                 $engine = clone $defaultEngine;
@@ -233,7 +217,7 @@ final class Detector implements DetectorInterface
 
             try {
                 $engine = $engineParser->parse($engineUa);
-            } catch (\UnexpectedValueException $e) {
+            } catch (UnexpectedValueException $e) {
                 $this->logger->error($e);
             }
         }

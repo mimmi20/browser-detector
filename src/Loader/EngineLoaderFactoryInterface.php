@@ -9,12 +9,10 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetector\Loader;
 
 interface EngineLoaderFactoryInterface extends SpecificLoaderFactoryInterface
 {
-    /**
-     * @return EngineLoaderInterface
-     */
     public function __invoke(): EngineLoaderInterface;
 }

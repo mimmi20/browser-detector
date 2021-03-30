@@ -9,16 +9,15 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetector\Helper;
+
+use function preg_match;
 
 final class MobileDevice implements MobileDeviceInterface
 {
     /**
      * Returns true if the give $useragent is from a mobile device
-     *
-     * @param string $useragent
-     *
-     * @return bool
      */
     public function isMobile(string $useragent): bool
     {

@@ -9,15 +9,13 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetector\Bits;
+
+use function preg_match;
 
 final class Browser implements BitsInterface
 {
-    /**
-     * @param string $useragent
-     *
-     * @return int|null
-     */
     public function getBits(string $useragent): ?int
     {
         // 32 bits on 64 bit system

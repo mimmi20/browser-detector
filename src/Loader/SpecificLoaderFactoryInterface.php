@@ -9,12 +9,10 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetector\Loader;
 
 interface SpecificLoaderFactoryInterface
 {
-    /**
-     * @return SpecificLoaderInterface
-     */
-    public function __invoke();
+    public function __invoke(): SpecificLoaderInterface;
 }

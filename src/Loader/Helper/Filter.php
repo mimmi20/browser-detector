@@ -9,22 +9,30 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetector\Loader\Helper;
+
+use Iterator;
+use RecursiveCallbackFilterIterator;
+use RecursiveDirectoryIterator;
+use RecursiveIterator;
+use RecursiveIteratorIterator;
+use SplFileInfo;
 
 final class Filter implements FilterInterface
 {
     /**
-     * @param string $path
-     * @param string $extension
-     *
-     * @return \Iterator
+     * @return Iterator<SplFileInfo>
      */
-    public function __invoke(string $path, string $extension): \Iterator
+    public function __invoke(string $path, string $extension): Iterator
     {
-        $directory = new \RecursiveDirectoryIterator($path);
-        $filter    = new \RecursiveCallbackFilterIterator(
+        $directory = new RecursiveDirectoryIterator($path);
+        $filter    = new RecursiveCallbackFilterIterator(
             $directory,
-            static function (\SplFileInfo $current, $key, \RecursiveIterator $iterator) use ($extension): bool {
+            /**
+             * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+             */
+            static function (SplFileInfo $current, $key, RecursiveIterator $iterator) use ($extension): bool {
                 // Allow recursion
                 if ($iterator->hasChildren()) {
                     return true;
@@ -39,6 +47,6 @@ final class Filter implements FilterInterface
             }
         );
 
-        return new \RecursiveIteratorIterator($filter);
+        return new RecursiveIteratorIterator($filter);
     }
 }

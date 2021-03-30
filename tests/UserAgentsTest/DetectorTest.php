@@ -9,19 +9,26 @@
  */
 
 declare(strict_types = 1);
+
 namespace UserAgentsTest;
 
+use BrowserDetector\Detector;
 use BrowserDetector\DetectorFactory;
 use BrowserDetector\Loader\CompanyLoader;
 use BrowserDetector\Loader\CompanyLoaderFactory;
 use BrowserDetector\Loader\Helper\Filter;
+use BrowserDetector\Loader\NotFoundException;
+use DateInterval;
+use Exception;
 use ExceptionalJSON\DecodeErrorException;
 use ExceptionalJSON\EncodeErrorException;
 use JsonClass\Json;
+use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
 use Psr\Log\NullLogger;
 use Psr\SimpleCache\CacheInterface;
+use Psr\SimpleCache\InvalidArgumentException;
 use Symfony\Component\Finder\Finder;
 use Symfony\Component\Finder\SplFileInfo;
 use UaResult\Browser\BrowserInterface;
@@ -30,17 +37,22 @@ use UaResult\Engine\EngineInterface;
 use UaResult\Os\OsInterface;
 use UaResult\Result\Result;
 use UaResult\Result\ResultInterface;
+use UnexpectedValueException;
+
+use function assert;
+use function get_class;
+use function sprintf;
+
+use const JSON_UNESCAPED_SLASHES;
+use const JSON_UNESCAPED_UNICODE;
 
 final class DetectorTest extends TestCase
 {
-    /** @var \BrowserDetector\Detector */
-    private $object;
+    private Detector $object;
 
     /**
      * Sets up the fixture, for example, open a network connection.
      * This method is called before a test is executed.
-     *
-     * @return void
      *
      * @coversNothing
      */
@@ -75,13 +87,15 @@ final class DetectorTest extends TestCase
             /**
              * Fetches a value from the cache.
              *
-             * @param mixed $key     the unique key of this item in the cache
-             * @param mixed $default default value to return if the key does not exist
-             *
-             * @throws \Psr\SimpleCache\InvalidArgumentException
-             *                                                   MUST be thrown if the $key string is not a legal value
+             * @param string $key     the unique key of this item in the cache
+             * @param mixed  $default default value to return if the key does not exist
              *
              * @return mixed the value of the item from the cache, or $default in case of cache miss
+             *
+             * @throws InvalidArgumentException MUST be thrown if the $key string is not a legal value
+             *
+             * @phpcsSuppress SlevomatCodingStandard.TypeHints.ParameterTypeHint.MissingNativeTypeHint
+             * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
              */
             public function get($key, $default = null)
             {
@@ -91,16 +105,18 @@ final class DetectorTest extends TestCase
             /**
              * Persists data in the cache, uniquely referenced by a key with an optional expiration TTL time.
              *
-             * @param mixed                  $key   the key of the item to store
-             * @param mixed                  $value the value of the item to store, must be serializable
-             * @param \DateInterval|int|null $ttl   Optional. The TTL value of this item. If no value is sent and
-             *                                      the driver supports TTL then the library may set a default value
-             *                                      for it or let the driver take care of that.
-             *
-             * @throws \Psr\SimpleCache\InvalidArgumentException
-             *                                                   MUST be thrown if the $key string is not a legal value
+             * @param string                $key   the key of the item to store
+             * @param mixed                 $value the value of the item to store, must be serializable
+             * @param DateInterval|int|null $ttl   Optional. The TTL value of this item. If no value is sent and
+             *                                     the driver supports TTL then the library may set a default value
+             *                                     for it or let the driver take care of that.
              *
              * @return bool true on success and false on failure
+             *
+             * @throws InvalidArgumentException MUST be thrown if the $key string is not a legal value
+             *
+             * @phpcsSuppress SlevomatCodingStandard.TypeHints.ParameterTypeHint.MissingNativeTypeHint
+             * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
              */
             public function set($key, $value, $ttl = null): bool
             {
@@ -110,12 +126,14 @@ final class DetectorTest extends TestCase
             /**
              * Delete an item from the cache by its unique key.
              *
-             * @param mixed $key the unique cache key of the item to delete
-             *
-             * @throws \Psr\SimpleCache\InvalidArgumentException
-             *                                                   MUST be thrown if the $key string is not a legal value
+             * @param string $key the unique cache key of the item to delete
              *
              * @return bool True if the item was successfully removed. False if there was an error.
+             *
+             * @throws InvalidArgumentException MUST be thrown if the $key string is not a legal value
+             *
+             * @phpcsSuppress SlevomatCodingStandard.TypeHints.ParameterTypeHint.MissingNativeTypeHint
+             * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
              */
             public function delete($key): bool
             {
@@ -135,13 +153,16 @@ final class DetectorTest extends TestCase
             /**
              * Obtains multiple cache items by their unique keys.
              *
-             * @param mixed $keys    a list of keys that can obtained in a single operation
-             * @param mixed $default default value to return for keys that do not exist
+             * @param iterable<string> $keys    a list of keys that can obtained in a single operation
+             * @param mixed            $default default value to return for keys that do not exist
              *
-             * @throws \Psr\SimpleCache\InvalidArgumentException MUST be thrown if $keys is neither an array nor a Traversable,
-             *                                                   or if any of the $keys are not a legal value
+             * @return iterable<string, mixed> A list of key => value pairs. Cache keys that do not exist or are stale will have $default as value.
              *
-             * @return iterable A list of key => value pairs. Cache keys that do not exist or are stale will have $default as value.
+             * @throws InvalidArgumentException MUST be thrown if $keys is neither an array nor a Traversable,
+             *                                  or if any of the $keys are not a legal value
+             *
+             * @phpcsSuppress SlevomatCodingStandard.TypeHints.ParameterTypeHint.MissingNativeTypeHint
+             * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
              */
             public function getMultiple($keys, $default = null): iterable
             {
@@ -151,16 +172,18 @@ final class DetectorTest extends TestCase
             /**
              * Persists a set of key => value pairs in the cache, with an optional TTL.
              *
-             * @param mixed                  $values a list of key => value pairs for a multiple-set operation
-             * @param \DateInterval|int|null $ttl    Optional. The TTL value of this item. If no value is sent and
-             *                                       the driver supports TTL then the library may set a default value
-             *                                       for it or let the driver take care of that.
-             *
-             * @throws \Psr\SimpleCache\InvalidArgumentException
-             *                                                   MUST be thrown if $values is neither an array nor a Traversable,
-             *                                                   or if any of the $values are not a legal value
+             * @param iterable<string, mixed> $values a list of key => value pairs for a multiple-set operation
+             * @param DateInterval|int|null   $ttl    Optional. The TTL value of this item. If no value is sent and
+             *                                        the driver supports TTL then the library may set a default value
+             *                                        for it or let the driver take care of that.
              *
              * @return bool true on success and false on failure
+             *
+             * @throws InvalidArgumentException MUST be thrown if $values is neither an array nor a Traversable,
+             *                                  or if any of the $values are not a legal value
+             *
+             * @phpcsSuppress SlevomatCodingStandard.TypeHints.ParameterTypeHint.MissingNativeTypeHint
+             * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
              */
             public function setMultiple($values, $ttl = null): bool
             {
@@ -170,13 +193,15 @@ final class DetectorTest extends TestCase
             /**
              * Deletes multiple cache items in a single operation.
              *
-             * @param mixed $keys a list of string-based keys to be deleted
-             *
-             * @throws \Psr\SimpleCache\InvalidArgumentException
-             *                                                   MUST be thrown if $keys is neither an array nor a Traversable,
-             *                                                   or if any of the $keys are not a legal value
+             * @param iterable<string> $keys a list of string-based keys to be deleted
              *
              * @return bool True if the items were successfully removed. False if there was an error.
+             *
+             * @throws InvalidArgumentException MUST be thrown if $keys is neither an array nor a Traversable,
+             *                                  or if any of the $keys are not a legal value
+             *
+             * @phpcsSuppress SlevomatCodingStandard.TypeHints.ParameterTypeHint.MissingNativeTypeHint
+             * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
              */
             public function deleteMultiple($keys): bool
             {
@@ -191,12 +216,12 @@ final class DetectorTest extends TestCase
              * is subject to a race condition where your has() will return true and immediately after,
              * another script can remove it making the state of your app out of date.
              *
-             * @param mixed $key the cache item key
+             * @param string $key the cache item key
              *
-             * @throws \Psr\SimpleCache\InvalidArgumentException
-             *                                                   MUST be thrown if the $key string is not a legal value
+             * @throws InvalidArgumentException MUST be thrown if the $key string is not a legal value
              *
-             * @return bool
+             * @phpcsSuppress SlevomatCodingStandard.TypeHints.ParameterTypeHint.MissingNativeTypeHint
+             * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
              */
             public function has($key): bool
             {
@@ -204,31 +229,27 @@ final class DetectorTest extends TestCase
             }
         };
 
-        \assert($logger instanceof LoggerInterface);
+        assert($logger instanceof LoggerInterface);
         $factory      = new DetectorFactory($cache, $logger);
         $this->object = $factory();
     }
 
     /**
-     * @dataProvider providerGetBrowser
+     * @param array<string, string> $headers
      *
-     * @param array  $headers
-     * @param Result $expectedResult
-     *
-     * @throws \Psr\SimpleCache\InvalidArgumentException
-     * @throws \BrowserDetector\Loader\NotFoundException
+     * @throws InvalidArgumentException
+     * @throws NotFoundException
      * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
-     * @throws \PHPUnit\Framework\ExpectationFailedException
-     * @throws \UnexpectedValueException
+     * @throws ExpectationFailedException
+     * @throws UnexpectedValueException
      *
-     * @return void
-     *
+     * @dataProvider providerGetBrowser
      * @coversNothing
      */
     public function testGetBrowser(array $headers, Result $expectedResult): void
     {
         $result = $this->object->__invoke($headers);
-        \assert($result instanceof ResultInterface, sprintf('$result should be an instance of %s, but is %s', ResultInterface::class, get_class($result)));
+        assert($result instanceof ResultInterface, sprintf('$result should be an instance of %s, but is %s', ResultInterface::class, get_class($result)));
 
         try {
             $encodedHeaders = (new Json())->encode($headers, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
@@ -300,9 +321,9 @@ final class DetectorTest extends TestCase
     }
 
     /**
-     * @throws \Exception
+     * @return array<string, array<string, (Result|array<string, string>)>>
      *
-     * @return array[]
+     * @throws Exception
      */
     public function providerGetBrowser(): array
     {
@@ -321,11 +342,11 @@ final class DetectorTest extends TestCase
         $companyLoaderFactory = new CompanyLoaderFactory($jsonParser, new Filter());
 
         $companyLoader = $companyLoaderFactory();
-        \assert($companyLoader instanceof CompanyLoader, sprintf('$companyLoader should be an instance of %s, but is %s', CompanyLoader::class, get_class($companyLoader)));
+        assert($companyLoader instanceof CompanyLoader, sprintf('$companyLoader should be an instance of %s, but is %s', CompanyLoader::class, get_class($companyLoader)));
         $resultFactory = new ResultFactory($companyLoader);
 
         foreach ($finder as $file) {
-            \assert($file instanceof SplFileInfo);
+            assert($file instanceof SplFileInfo);
 
             try {
                 $tests = (new Json())->decode(
@@ -333,7 +354,7 @@ final class DetectorTest extends TestCase
                     true
                 );
             } catch (DecodeErrorException $e) {
-                throw new \Exception(sprintf('file "%s" contains invalid json', $file->getPathname()), 0, $e);
+                throw new Exception(sprintf('file "%s" contains invalid json', $file->getPathname()), 0, $e);
             }
 
             foreach ($tests as $i => $test) {

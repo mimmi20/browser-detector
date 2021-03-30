@@ -9,21 +9,24 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetectorTest;
 
 use BrowserDetector\Detector;
 use BrowserDetector\DetectorFactory;
+use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
 use Psr\SimpleCache\CacheInterface;
+use SebastianBergmann\RecursionContext\InvalidArgumentException;
+
+use function assert;
 
 final class DetectorFactoryTest extends TestCase
 {
     /**
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
-     * @throws \PHPUnit\Framework\ExpectationFailedException
-     *
-     * @return void
+     * @throws InvalidArgumentException
+     * @throws ExpectationFailedException
      */
     public function testInvoke(): void
     {
@@ -54,8 +57,8 @@ final class DetectorFactoryTest extends TestCase
 
         $cache = $this->createMock(CacheInterface::class);
 
-        \assert($logger instanceof LoggerInterface);
-        \assert($cache instanceof CacheInterface);
+        assert($logger instanceof LoggerInterface);
+        assert($cache instanceof CacheInterface);
         $factory = new DetectorFactory($cache, $logger);
         $object  = $factory();
 

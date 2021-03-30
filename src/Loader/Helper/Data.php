@@ -9,67 +9,45 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetector\Loader\Helper;
 
 use ExceptionalJSON\DecodeErrorException;
+use Iterator;
 use JsonClass\JsonInterface;
+use RuntimeException;
+use SplFileInfo;
+use stdClass;
+
+use function array_key_exists;
+use function assert;
+use function count;
+use function file_get_contents;
+use function sprintf;
 
 final class Data implements DataInterface
 {
-    /** @var \Iterator */
-    private $finder;
+    /** @var Iterator<SplFileInfo> */
+    private Iterator $finder;
 
-    /** @var array */
-    private $items = [];
+    /** @var array<string, stdClass> */
+    private array $items = [];
 
-    /** @var bool */
-    private $initialized = false;
+    private bool $initialized = false;
 
-    /** @var \JsonClass\JsonInterface */
-    private $json;
+    private JsonInterface $json;
 
     /**
-     * @param \Iterator                $finder
-     * @param \JsonClass\JsonInterface $json
+     * @param Iterator<SplFileInfo> $finder
      */
-    public function __construct(\Iterator $finder, JsonInterface $json)
+    public function __construct(Iterator $finder, JsonInterface $json)
     {
         $this->finder = $finder;
         $this->json   = $json;
     }
 
     /**
-     * @param string $cacheId
-     *
-     * @return mixed
-     */
-    public function getItem(string $cacheId)
-    {
-        return $this->items[$cacheId] ?? null;
-    }
-
-    /**
-     * @param string $cacheId
-     *
-     * @return bool
-     */
-    public function hasItem(string $cacheId): bool
-    {
-        return array_key_exists($cacheId, $this->items);
-    }
-
-    /**
-     * @return bool
-     */
-    public function isInitialized(): bool
-    {
-        return $this->initialized;
-    }
-
-    /**
-     * @throws \RuntimeException
-     *
-     * @return void
+     * @throws RuntimeException
      */
     public function __invoke(): void
     {
@@ -78,7 +56,7 @@ final class Data implements DataInterface
         }
 
         foreach ($this->finder as $file) {
-            \assert($file instanceof \SplFileInfo);
+            assert($file instanceof SplFileInfo);
             $path    = $file->getPathname();
             $content = file_get_contents($path);
 
@@ -87,7 +65,7 @@ final class Data implements DataInterface
             try {
                 $fileData = $this->json->decode($content, false);
             } catch (DecodeErrorException $e) {
-                throw new \RuntimeException(sprintf('file "%s" contains invalid json', $path), 0, $e);
+                throw new RuntimeException(sprintf('file "%s" contains invalid json', $path), 0, $e);
             }
 
             foreach ($fileData as $key => $data) {
@@ -103,14 +81,29 @@ final class Data implements DataInterface
     }
 
     /**
+     * @return mixed
+     */
+    public function getItem(string $cacheId)
+    {
+        return $this->items[$cacheId] ?? null;
+    }
+
+    public function hasItem(string $cacheId): bool
+    {
+        return array_key_exists($cacheId, $this->items);
+    }
+
+    public function isInitialized(): bool
+    {
+        return $this->initialized;
+    }
+
+    /**
      * Count elements of an object
      *
      * @see https://php.net/manual/en/countable.count.php
      *
-     * @return int The custom count as an integer.
-     *             </p>
-     *             <p>
-     *             The return value is cast to an integer.
+     * @return int the custom count as an integer
      */
     public function count(): int
     {

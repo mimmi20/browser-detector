@@ -9,6 +9,7 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetectorTest\Version;
 
 use BrowserDetector\Version\Debian;
@@ -16,26 +17,23 @@ use BrowserDetector\Version\DebianFactory;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
 
+use function assert;
+use function get_class;
+use function sprintf;
+
 final class DebianFactoryTest extends TestCase
 {
-    /** @var \BrowserDetector\Version\DebianFactory */
-    private $object;
+    private DebianFactory $object;
 
-    /**
-     * @return void
-     */
     protected function setUp(): void
     {
         $this->object = new DebianFactory();
     }
 
-    /**
-     * @return void
-     */
     public function testInvoke(): void
     {
         $object = $this->object;
-        \assert($object instanceof DebianFactory, sprintf('$object should be an instance of %s, but is %s', DebianFactory::class, get_class($object)));
+        assert($object instanceof DebianFactory, sprintf('$object should be an instance of %s, but is %s', DebianFactory::class, get_class($object)));
         $result = $object(new NullLogger());
         self::assertInstanceOf(Debian::class, $result);
     }

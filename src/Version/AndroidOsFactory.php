@@ -9,17 +9,13 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetector\Version;
 
 use Psr\Log\LoggerInterface;
 
 final class AndroidOsFactory implements AndroidOsFactoryInterface
 {
-    /**
-     * @param \Psr\Log\LoggerInterface $logger
-     *
-     * @return \BrowserDetector\Version\AndroidOs
-     */
     public function __invoke(LoggerInterface $logger): AndroidOs
     {
         return new AndroidOs(

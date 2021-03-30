@@ -9,11 +9,17 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetector\Version;
 
 use IosBuild\BuildException;
 use IosBuild\IosBuildInterface;
 use IosBuild\NotFoundException;
+use UnexpectedValueException;
+
+use function array_key_exists;
+use function mb_stripos;
+use function preg_match;
 
 final class Ios implements VersionDetectorInterface
 {
@@ -201,16 +207,10 @@ final class Ios implements VersionDetectorInterface
         '(?<!Outlook-)iOS',
     ];
 
-    /** @var \BrowserDetector\Version\VersionFactoryInterface */
-    private $versionFactory;
+    private VersionFactoryInterface $versionFactory;
 
-    /** @var \IosBuild\IosBuildInterface */
-    private $iosBuild;
+    private IosBuildInterface $iosBuild;
 
-    /**
-     * @param \BrowserDetector\Version\VersionFactoryInterface $versionFactory
-     * @param \IosBuild\IosBuildInterface                      $iosBuild
-     */
     public function __construct(VersionFactoryInterface $versionFactory, IosBuildInterface $iosBuild)
     {
         $this->versionFactory = $versionFactory;
@@ -220,11 +220,7 @@ final class Ios implements VersionDetectorInterface
     /**
      * returns the version of the operating system/platform
      *
-     * @param string $useragent
-     *
-     * @throws \UnexpectedValueException
-     *
-     * @return \BrowserDetector\Version\VersionInterface
+     * @throws UnexpectedValueException
      */
     public function detectVersion(string $useragent): VersionInterface
     {

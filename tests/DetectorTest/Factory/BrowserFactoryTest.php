@@ -9,8 +9,10 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetectorTest\Factory;
 
+use AssertionError;
 use BrowserDetector\Factory\BrowserFactory;
 use BrowserDetector\Loader\CompanyLoaderInterface;
 use BrowserDetector\Loader\NotFoundException;
@@ -18,20 +20,24 @@ use BrowserDetector\Version\NullVersion;
 use BrowserDetector\Version\Version;
 use BrowserDetector\Version\VersionFactoryInterface;
 use BrowserDetector\Version\VersionInterface;
+use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
+use SebastianBergmann\RecursionContext\InvalidArgumentException;
+use stdClass;
 use UaBrowserType\TypeInterface;
 use UaBrowserType\TypeLoaderInterface;
 use UaBrowserType\Unknown;
 use UaResult\Browser\Browser;
 use UaResult\Company\CompanyInterface;
+use UnexpectedValueException;
+
+use function assert;
 
 final class BrowserFactoryTest extends TestCase
 {
     /**
-     * @throws \UnexpectedValueException
-     *
-     * @return void
+     * @throws UnexpectedValueException
      */
     public function testFromEmptyArray(): void
     {
@@ -52,9 +58,9 @@ final class BrowserFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
 
-        \assert($companyLoader instanceof CompanyLoaderInterface);
-        \assert($versionFactory instanceof VersionFactoryInterface);
-        \assert($typeLoader instanceof TypeLoaderInterface);
+        assert($companyLoader instanceof CompanyLoaderInterface);
+        assert($versionFactory instanceof VersionFactoryInterface);
+        assert($typeLoader instanceof TypeLoaderInterface);
         $object = new BrowserFactory($companyLoader, $versionFactory, $typeLoader);
 
         $logger = $this->getMockBuilder(LoggerInterface::class)
@@ -85,23 +91,21 @@ final class BrowserFactoryTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $this->expectException(\AssertionError::class);
+        $this->expectException(AssertionError::class);
         $this->expectExceptionMessage('"name" property is required');
 
-        \assert($logger instanceof LoggerInterface);
+        assert($logger instanceof LoggerInterface);
         $object->fromArray($logger, [], 'this is a test');
     }
 
     /**
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
-     * @throws \PHPUnit\Framework\ExpectationFailedException
-     * @throws \UnexpectedValueException
-     *
-     * @return void
+     * @throws InvalidArgumentException
+     * @throws ExpectationFailedException
+     * @throws UnexpectedValueException
      */
     public function testFromArrayWithFoundType(): void
     {
-        $company = $this->getMockBuilder(CompanyInterface::class)
+        $company       = $this->getMockBuilder(CompanyInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $companyLoader = $this->getMockBuilder(CompanyLoaderInterface::class)
@@ -120,8 +124,8 @@ final class BrowserFactoryTest extends TestCase
             ->expects(self::never())
             ->method('set');
 
-        $typeName = 1;
-        $type     = $this->getMockBuilder(TypeInterface::class)
+        $typeName   = '1';
+        $type       = $this->getMockBuilder(TypeInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $typeLoader = $this->getMockBuilder(TypeLoaderInterface::class)
@@ -130,12 +134,12 @@ final class BrowserFactoryTest extends TestCase
         $typeLoader
             ->expects(self::once())
             ->method('load')
-            ->with('1')
+            ->with($typeName)
             ->willReturn($type);
 
-        \assert($companyLoader instanceof CompanyLoaderInterface);
-        \assert($versionFactory instanceof VersionFactoryInterface);
-        \assert($typeLoader instanceof TypeLoaderInterface);
+        assert($companyLoader instanceof CompanyLoaderInterface);
+        assert($versionFactory instanceof VersionFactoryInterface);
+        assert($typeLoader instanceof TypeLoaderInterface);
         $object = new BrowserFactory($companyLoader, $versionFactory, $typeLoader);
 
         $logger = $this->getMockBuilder(LoggerInterface::class)
@@ -166,7 +170,7 @@ final class BrowserFactoryTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        \assert($logger instanceof LoggerInterface);
+        assert($logger instanceof LoggerInterface);
         $result = $object->fromArray(
             $logger,
             ['name' => null, 'manufacturer' => 'unknown', 'version' => null, 'type' => $typeName, 'bits' => null, 'modus' => null],
@@ -186,15 +190,13 @@ final class BrowserFactoryTest extends TestCase
     }
 
     /**
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
-     * @throws \PHPUnit\Framework\ExpectationFailedException
-     * @throws \UnexpectedValueException
-     *
-     * @return void
+     * @throws InvalidArgumentException
+     * @throws ExpectationFailedException
+     * @throws UnexpectedValueException
      */
     public function testFromArrayWithFoundTypeAndVersionString(): void
     {
-        $company = $this->getMockBuilder(CompanyInterface::class)
+        $company       = $this->getMockBuilder(CompanyInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $companyLoader = $this->getMockBuilder(CompanyLoaderInterface::class)
@@ -206,7 +208,7 @@ final class BrowserFactoryTest extends TestCase
             ->with('unknown')
             ->willReturn($company);
 
-        $version1 = $this->getMockBuilder(VersionInterface::class)
+        $version1       = $this->getMockBuilder(VersionInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $v              = '11.2.1';
@@ -219,8 +221,8 @@ final class BrowserFactoryTest extends TestCase
             ->with($v)
             ->willReturn($version1);
 
-        $typeName = 'unknown-type';
-        $type     = $this->getMockBuilder(TypeInterface::class)
+        $typeName   = 'unknown-type';
+        $type       = $this->getMockBuilder(TypeInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $typeLoader = $this->getMockBuilder(TypeLoaderInterface::class)
@@ -232,9 +234,9 @@ final class BrowserFactoryTest extends TestCase
             ->with($typeName)
             ->willReturn($type);
 
-        \assert($companyLoader instanceof CompanyLoaderInterface);
-        \assert($versionFactory instanceof VersionFactoryInterface);
-        \assert($typeLoader instanceof TypeLoaderInterface);
+        assert($companyLoader instanceof CompanyLoaderInterface);
+        assert($versionFactory instanceof VersionFactoryInterface);
+        assert($typeLoader instanceof TypeLoaderInterface);
         $object = new BrowserFactory($companyLoader, $versionFactory, $typeLoader);
 
         $logger = $this->getMockBuilder(LoggerInterface::class)
@@ -265,7 +267,7 @@ final class BrowserFactoryTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        \assert($logger instanceof LoggerInterface);
+        assert($logger instanceof LoggerInterface);
         $result = $object->fromArray(
             $logger,
             ['name' => null, 'manufacturer' => 'unknown', 'version' => $v, 'type' => $typeName, 'bits' => null, 'modus' => null],
@@ -285,15 +287,13 @@ final class BrowserFactoryTest extends TestCase
     }
 
     /**
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
-     * @throws \PHPUnit\Framework\ExpectationFailedException
-     * @throws \UnexpectedValueException
-     *
-     * @return void
+     * @throws InvalidArgumentException
+     * @throws ExpectationFailedException
+     * @throws UnexpectedValueException
      */
     public function testFromArrayWithFoundTypeAndNullObjectVersion(): void
     {
-        $company = $this->getMockBuilder(CompanyInterface::class)
+        $company       = $this->getMockBuilder(CompanyInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $companyLoader = $this->getMockBuilder(CompanyLoaderInterface::class)
@@ -305,7 +305,7 @@ final class BrowserFactoryTest extends TestCase
             ->with('unknown')
             ->willReturn($company);
 
-        $v              = new \stdClass();
+        $v              = new stdClass();
         $v->value       = null;
         $versionFactory = $this->getMockBuilder(VersionFactoryInterface::class)
             ->disableOriginalConstructor()
@@ -314,8 +314,8 @@ final class BrowserFactoryTest extends TestCase
             ->expects(self::never())
             ->method('set');
 
-        $typeName = 'unknown-type';
-        $type     = $this->getMockBuilder(TypeInterface::class)
+        $typeName   = 'unknown-type';
+        $type       = $this->getMockBuilder(TypeInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $typeLoader = $this->getMockBuilder(TypeLoaderInterface::class)
@@ -327,9 +327,9 @@ final class BrowserFactoryTest extends TestCase
             ->with($typeName)
             ->willReturn($type);
 
-        \assert($companyLoader instanceof CompanyLoaderInterface);
-        \assert($versionFactory instanceof VersionFactoryInterface);
-        \assert($typeLoader instanceof TypeLoaderInterface);
+        assert($companyLoader instanceof CompanyLoaderInterface);
+        assert($versionFactory instanceof VersionFactoryInterface);
+        assert($typeLoader instanceof TypeLoaderInterface);
         $object = new BrowserFactory($companyLoader, $versionFactory, $typeLoader);
 
         $logger = $this->getMockBuilder(LoggerInterface::class)
@@ -360,7 +360,7 @@ final class BrowserFactoryTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        \assert($logger instanceof LoggerInterface);
+        assert($logger instanceof LoggerInterface);
         $result = $object->fromArray(
             $logger,
             ['name' => null, 'manufacturer' => 'unknown', 'version' => $v, 'type' => $typeName, 'bits' => null, 'modus' => null],
@@ -380,15 +380,13 @@ final class BrowserFactoryTest extends TestCase
     }
 
     /**
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
-     * @throws \PHPUnit\Framework\ExpectationFailedException
-     * @throws \UnexpectedValueException
-     *
-     * @return void
+     * @throws InvalidArgumentException
+     * @throws ExpectationFailedException
+     * @throws UnexpectedValueException
      */
     public function testFromArrayWithFoundTypeAndFixedVersionObject(): void
     {
-        $company = $this->getMockBuilder(CompanyInterface::class)
+        $company       = $this->getMockBuilder(CompanyInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $companyLoader = $this->getMockBuilder(CompanyLoaderInterface::class)
@@ -400,11 +398,11 @@ final class BrowserFactoryTest extends TestCase
             ->with('unknown')
             ->willReturn($company);
 
-        $version1 = $this->getMockBuilder(VersionInterface::class)
+        $version1       = $this->getMockBuilder(VersionInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $v2             = '11.2.1';
-        $v              = new \stdClass();
+        $v              = new stdClass();
         $v->value       = $v2;
         $versionFactory = $this->getMockBuilder(VersionFactoryInterface::class)
             ->disableOriginalConstructor()
@@ -415,8 +413,8 @@ final class BrowserFactoryTest extends TestCase
             ->with($v2)
             ->willReturn($version1);
 
-        $typeName = 'unknown-type';
-        $type     = $this->getMockBuilder(TypeInterface::class)
+        $typeName   = 'unknown-type';
+        $type       = $this->getMockBuilder(TypeInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $typeLoader = $this->getMockBuilder(TypeLoaderInterface::class)
@@ -428,9 +426,9 @@ final class BrowserFactoryTest extends TestCase
             ->with($typeName)
             ->willReturn($type);
 
-        \assert($companyLoader instanceof CompanyLoaderInterface);
-        \assert($versionFactory instanceof VersionFactoryInterface);
-        \assert($typeLoader instanceof TypeLoaderInterface);
+        assert($companyLoader instanceof CompanyLoaderInterface);
+        assert($versionFactory instanceof VersionFactoryInterface);
+        assert($typeLoader instanceof TypeLoaderInterface);
         $object = new BrowserFactory($companyLoader, $versionFactory, $typeLoader);
 
         $logger = $this->getMockBuilder(LoggerInterface::class)
@@ -461,7 +459,7 @@ final class BrowserFactoryTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        \assert($logger instanceof LoggerInterface);
+        assert($logger instanceof LoggerInterface);
         $result = $object->fromArray(
             $logger,
             ['name' => null, 'manufacturer' => 'unknown', 'version' => $v, 'type' => $typeName, 'bits' => null, 'modus' => null],
@@ -481,15 +479,13 @@ final class BrowserFactoryTest extends TestCase
     }
 
     /**
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
-     * @throws \PHPUnit\Framework\ExpectationFailedException
-     * @throws \UnexpectedValueException
-     *
-     * @return void
+     * @throws InvalidArgumentException
+     * @throws ExpectationFailedException
+     * @throws UnexpectedValueException
      */
     public function testFromArrayWithFoundTypeAndVersionDetectionClass(): void
     {
-        $company = $this->getMockBuilder(CompanyInterface::class)
+        $company       = $this->getMockBuilder(CompanyInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $companyLoader = $this->getMockBuilder(CompanyLoaderInterface::class)
@@ -501,9 +497,9 @@ final class BrowserFactoryTest extends TestCase
             ->with('unknown')
             ->willReturn($company);
 
-        $v        = new \stdClass();
-        $v->class = '\BrowserDetector\Version\Test';
-        $version2 = $this->getMockBuilder(VersionInterface::class)
+        $v              = new stdClass();
+        $v->class       = '\BrowserDetector\Version\Test';
+        $version2       = $this->getMockBuilder(VersionInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $versionFactory = $this->getMockBuilder(VersionFactoryInterface::class)
@@ -513,8 +509,8 @@ final class BrowserFactoryTest extends TestCase
             ->expects(self::never())
             ->method('set');
 
-        $typeName = 'unknown-type';
-        $type     = $this->getMockBuilder(TypeInterface::class)
+        $typeName   = 'unknown-type';
+        $type       = $this->getMockBuilder(TypeInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $typeLoader = $this->getMockBuilder(TypeLoaderInterface::class)
@@ -526,9 +522,9 @@ final class BrowserFactoryTest extends TestCase
             ->with($typeName)
             ->willReturn($type);
 
-        \assert($companyLoader instanceof CompanyLoaderInterface);
-        \assert($versionFactory instanceof VersionFactoryInterface);
-        \assert($typeLoader instanceof TypeLoaderInterface);
+        assert($companyLoader instanceof CompanyLoaderInterface);
+        assert($versionFactory instanceof VersionFactoryInterface);
+        assert($typeLoader instanceof TypeLoaderInterface);
         $object = new BrowserFactory($companyLoader, $versionFactory, $typeLoader);
 
         $logger = $this->getMockBuilder(LoggerInterface::class)
@@ -559,7 +555,7 @@ final class BrowserFactoryTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        \assert($logger instanceof LoggerInterface);
+        assert($logger instanceof LoggerInterface);
         $result = $object->fromArray(
             $logger,
             ['name' => null, 'manufacturer' => 'unknown', 'version' => $v, 'type' => $typeName, 'bits' => null, 'modus' => null],
@@ -579,15 +575,13 @@ final class BrowserFactoryTest extends TestCase
     }
 
     /**
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
-     * @throws \PHPUnit\Framework\ExpectationFailedException
-     * @throws \UnexpectedValueException
-     *
-     * @return void
+     * @throws InvalidArgumentException
+     * @throws ExpectationFailedException
+     * @throws UnexpectedValueException
      */
     public function testFromArrayWithFoundTypeAndVersionDetectionFactory(): void
     {
-        $company = $this->getMockBuilder(CompanyInterface::class)
+        $company       = $this->getMockBuilder(CompanyInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $companyLoader = $this->getMockBuilder(CompanyLoaderInterface::class)
@@ -599,11 +593,8 @@ final class BrowserFactoryTest extends TestCase
             ->with('unknown')
             ->willReturn($company);
 
-        $v          = new \stdClass();
-        $v->factory = '\BrowserDetector\Version\TestFactory';
-        $version2   = $this->getMockBuilder(VersionInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $v              = new stdClass();
+        $v->factory     = '\BrowserDetector\Version\TestFactory';
         $versionFactory = $this->getMockBuilder(VersionFactoryInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
@@ -611,8 +602,8 @@ final class BrowserFactoryTest extends TestCase
             ->expects(self::never())
             ->method('set');
 
-        $typeName = 'unknown-type';
-        $type     = $this->getMockBuilder(TypeInterface::class)
+        $typeName   = 'unknown-type';
+        $type       = $this->getMockBuilder(TypeInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $typeLoader = $this->getMockBuilder(TypeLoaderInterface::class)
@@ -624,9 +615,9 @@ final class BrowserFactoryTest extends TestCase
             ->with($typeName)
             ->willReturn($type);
 
-        \assert($companyLoader instanceof CompanyLoaderInterface);
-        \assert($versionFactory instanceof VersionFactoryInterface);
-        \assert($typeLoader instanceof TypeLoaderInterface);
+        assert($companyLoader instanceof CompanyLoaderInterface);
+        assert($versionFactory instanceof VersionFactoryInterface);
+        assert($typeLoader instanceof TypeLoaderInterface);
         $object = new BrowserFactory($companyLoader, $versionFactory, $typeLoader);
 
         $logger = $this->getMockBuilder(LoggerInterface::class)
@@ -657,7 +648,7 @@ final class BrowserFactoryTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        \assert($logger instanceof LoggerInterface);
+        assert($logger instanceof LoggerInterface);
         $result = $object->fromArray(
             $logger,
             ['name' => null, 'manufacturer' => 'unknown', 'version' => $v, 'type' => $typeName, 'bits' => null, 'modus' => null],
@@ -678,15 +669,13 @@ final class BrowserFactoryTest extends TestCase
     }
 
     /**
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
-     * @throws \PHPUnit\Framework\ExpectationFailedException
-     * @throws \UnexpectedValueException
-     *
-     * @return void
+     * @throws InvalidArgumentException
+     * @throws ExpectationFailedException
+     * @throws UnexpectedValueException
      */
     public function testFromArrayWithFoundTypeAndFixedVersionObjectAndNoSearch(): void
     {
-        $company = $this->getMockBuilder(CompanyInterface::class)
+        $company       = $this->getMockBuilder(CompanyInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $companyLoader = $this->getMockBuilder(CompanyLoaderInterface::class)
@@ -698,7 +687,7 @@ final class BrowserFactoryTest extends TestCase
             ->with('unknown')
             ->willReturn($company);
 
-        $v              = new \stdClass();
+        $v              = new stdClass();
         $v->class       = 'VersionFactory';
         $versionFactory = $this->getMockBuilder(VersionFactoryInterface::class)
             ->disableOriginalConstructor()
@@ -707,8 +696,8 @@ final class BrowserFactoryTest extends TestCase
             ->expects(self::never())
             ->method('set');
 
-        $typeName = 'unknown-type';
-        $type     = $this->getMockBuilder(TypeInterface::class)
+        $typeName   = 'unknown-type';
+        $type       = $this->getMockBuilder(TypeInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $typeLoader = $this->getMockBuilder(TypeLoaderInterface::class)
@@ -720,9 +709,9 @@ final class BrowserFactoryTest extends TestCase
             ->with($typeName)
             ->willReturn($type);
 
-        \assert($companyLoader instanceof CompanyLoaderInterface);
-        \assert($versionFactory instanceof VersionFactoryInterface);
-        \assert($typeLoader instanceof TypeLoaderInterface);
+        assert($companyLoader instanceof CompanyLoaderInterface);
+        assert($versionFactory instanceof VersionFactoryInterface);
+        assert($typeLoader instanceof TypeLoaderInterface);
         $object = new BrowserFactory($companyLoader, $versionFactory, $typeLoader);
 
         $logger = $this->getMockBuilder(LoggerInterface::class)
@@ -753,7 +742,7 @@ final class BrowserFactoryTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        \assert($logger instanceof LoggerInterface);
+        assert($logger instanceof LoggerInterface);
         $result = $object->fromArray(
             $logger,
             ['name' => null, 'manufacturer' => 'unknown', 'version' => $v, 'type' => $typeName, 'bits' => null, 'modus' => null],
@@ -773,15 +762,13 @@ final class BrowserFactoryTest extends TestCase
     }
 
     /**
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
-     * @throws \PHPUnit\Framework\ExpectationFailedException
-     * @throws \UnexpectedValueException
-     *
-     * @return void
+     * @throws InvalidArgumentException
+     * @throws ExpectationFailedException
+     * @throws UnexpectedValueException
      */
     public function testFromArrayWithFoundTypeAndFixedVersionObjectAndSearch(): void
     {
-        $company = $this->getMockBuilder(CompanyInterface::class)
+        $company       = $this->getMockBuilder(CompanyInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $companyLoader = $this->getMockBuilder(CompanyLoaderInterface::class)
@@ -799,7 +786,7 @@ final class BrowserFactoryTest extends TestCase
 
         $useragent      = 'this is a test';
         $search         = ['abc'];
-        $v              = new \stdClass();
+        $v              = new stdClass();
         $v->class       = 'VersionFactory';
         $v->search      = $search;
         $versionFactory = $this->getMockBuilder(VersionFactoryInterface::class)
@@ -814,8 +801,8 @@ final class BrowserFactoryTest extends TestCase
             ->with($useragent, $search)
             ->willReturn($version2);
 
-        $typeName = 'unknown-type';
-        $type     = $this->getMockBuilder(TypeInterface::class)
+        $typeName   = 'unknown-type';
+        $type       = $this->getMockBuilder(TypeInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $typeLoader = $this->getMockBuilder(TypeLoaderInterface::class)
@@ -827,9 +814,9 @@ final class BrowserFactoryTest extends TestCase
             ->with($typeName)
             ->willReturn($type);
 
-        \assert($companyLoader instanceof CompanyLoaderInterface);
-        \assert($versionFactory instanceof VersionFactoryInterface);
-        \assert($typeLoader instanceof TypeLoaderInterface);
+        assert($companyLoader instanceof CompanyLoaderInterface);
+        assert($versionFactory instanceof VersionFactoryInterface);
+        assert($typeLoader instanceof TypeLoaderInterface);
         $object = new BrowserFactory($companyLoader, $versionFactory, $typeLoader);
 
         $logger = $this->getMockBuilder(LoggerInterface::class)
@@ -860,10 +847,17 @@ final class BrowserFactoryTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        \assert($logger instanceof LoggerInterface);
+        assert($logger instanceof LoggerInterface);
         $result = $object->fromArray(
             $logger,
-            ['name' => null, 'manufacturer' => 'unknown', 'version' => $v, 'type' => $typeName, 'bits' => null, 'modus' => null],
+            [
+                'name' => null,
+                'manufacturer' => 'unknown',
+                'version' => $v,
+                'type' => $typeName,
+                'bits' => null,
+                'modus' => null,
+            ],
             $useragent
         );
 
@@ -880,21 +874,16 @@ final class BrowserFactoryTest extends TestCase
     }
 
     /**
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
-     * @throws \PHPUnit\Framework\ExpectationFailedException
-     * @throws \BrowserDetector\Loader\NotFoundException
-     * @throws \UnexpectedValueException
-     *
-     * @return void
+     * @throws InvalidArgumentException
+     * @throws ExpectationFailedException
+     * @throws NotFoundException
+     * @throws UnexpectedValueException
      */
     public function testFromEmptyArrayWithCompanyError(): void
     {
-        $companyName = 'test-company';
-        $useragent   = 'this is a test';
-        $exception   = new NotFoundException('failed');
-        $company     = $this->getMockBuilder(CompanyInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $companyName   = 'test-company';
+        $useragent     = 'this is a test';
+        $exception     = new NotFoundException('failed');
         $companyLoader = $this->getMockBuilder(CompanyLoaderInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
@@ -911,8 +900,8 @@ final class BrowserFactoryTest extends TestCase
             ->expects(self::never())
             ->method('set');
 
-        $typeName = 'unknown-type';
-        $type     = $this->getMockBuilder(TypeInterface::class)
+        $typeName   = 'unknown-type';
+        $type       = $this->getMockBuilder(TypeInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $typeLoader = $this->getMockBuilder(TypeLoaderInterface::class)
@@ -924,9 +913,9 @@ final class BrowserFactoryTest extends TestCase
             ->with($typeName)
             ->willReturn($type);
 
-        \assert($companyLoader instanceof CompanyLoaderInterface);
-        \assert($versionFactory instanceof VersionFactoryInterface);
-        \assert($typeLoader instanceof TypeLoaderInterface);
+        assert($companyLoader instanceof CompanyLoaderInterface);
+        assert($versionFactory instanceof VersionFactoryInterface);
+        assert($typeLoader instanceof TypeLoaderInterface);
         $object = new BrowserFactory($companyLoader, $versionFactory, $typeLoader);
 
         $logger = $this->getMockBuilder(LoggerInterface::class)
@@ -958,7 +947,7 @@ final class BrowserFactoryTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        \assert($logger instanceof LoggerInterface);
+        assert($logger instanceof LoggerInterface);
         $result = $object->fromArray(
             $logger,
             ['name' => null, 'manufacturer' => $companyName, 'version' => null, 'type' => $typeName, 'bits' => null, 'modus' => null],
@@ -977,12 +966,10 @@ final class BrowserFactoryTest extends TestCase
     }
 
     /**
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
-     * @throws \PHPUnit\Framework\ExpectationFailedException
-     * @throws \BrowserDetector\Loader\NotFoundException
-     * @throws \UnexpectedValueException
-     *
-     * @return void
+     * @throws InvalidArgumentException
+     * @throws ExpectationFailedException
+     * @throws NotFoundException
+     * @throws UnexpectedValueException
      */
     public function testFromEmptyArrayWithTypeError(): void
     {
@@ -1016,9 +1003,9 @@ final class BrowserFactoryTest extends TestCase
             ->with($typeName)
             ->willThrowException($exceptionTwo);
 
-        \assert($companyLoader instanceof CompanyLoaderInterface);
-        \assert($versionFactory instanceof VersionFactoryInterface);
-        \assert($typeLoader instanceof TypeLoaderInterface);
+        assert($companyLoader instanceof CompanyLoaderInterface);
+        assert($versionFactory instanceof VersionFactoryInterface);
+        assert($typeLoader instanceof TypeLoaderInterface);
         $object = new BrowserFactory($companyLoader, $versionFactory, $typeLoader);
 
         $logger = $this->getMockBuilder(LoggerInterface::class)
@@ -1050,7 +1037,7 @@ final class BrowserFactoryTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        \assert($logger instanceof LoggerInterface);
+        assert($logger instanceof LoggerInterface);
         $result = $object->fromArray(
             $logger,
             ['name' => null, 'manufacturer' => $companyName, 'version' => null, 'type' => $typeName, 'bits' => null, 'modus' => null],

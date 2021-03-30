@@ -9,22 +9,20 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetector\Version;
 
 use Psr\Log\LoggerInterface;
 
+use function preg_match;
+use function str_replace;
+
 final class ScreamingFrog implements VersionDetectorInterface
 {
-    /** @var \Psr\Log\LoggerInterface */
-    private $logger;
+    private LoggerInterface $logger;
 
-    /** @var \BrowserDetector\Version\VersionFactoryInterface */
-    private $versionFactory;
+    private VersionFactoryInterface $versionFactory;
 
-    /**
-     * @param \Psr\Log\LoggerInterface                         $logger
-     * @param \BrowserDetector\Version\VersionFactoryInterface $versionFactory
-     */
     public function __construct(LoggerInterface $logger, VersionFactoryInterface $versionFactory)
     {
         $this->logger         = $logger;
@@ -33,10 +31,6 @@ final class ScreamingFrog implements VersionDetectorInterface
 
     /**
      * returns the version of the operating system/platform
-     *
-     * @param string $useragent
-     *
-     * @return \BrowserDetector\Version\VersionInterface
      */
     public function detectVersion(string $useragent): VersionInterface
     {

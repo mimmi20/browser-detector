@@ -9,34 +9,28 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetectorTest\Version\Helper;
 
 use BrowserDetector\Version\Helper\MicrosoftOffice;
+use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
+use SebastianBergmann\RecursionContext\InvalidArgumentException;
 
 final class MicrosoftOfficeTest extends TestCase
 {
-    /** @var \BrowserDetector\Version\Helper\MicrosoftOffice */
-    private $object;
+    private MicrosoftOffice $object;
 
-    /**
-     * @return void
-     */
     protected function setUp(): void
     {
         $this->object = new MicrosoftOffice();
     }
 
     /**
+     * @throws InvalidArgumentException
+     * @throws ExpectationFailedException
+     *
      * @dataProvider providerVersion
-     *
-     * @param string $version
-     * @param string $expectedVersion
-     *
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
-     * @throws \PHPUnit\Framework\ExpectationFailedException
-     *
-     * @return void
      */
     public function testMapOfficeVersion(string $version, string $expectedVersion): void
     {
@@ -44,7 +38,7 @@ final class MicrosoftOfficeTest extends TestCase
     }
 
     /**
-     * @return array[]
+     * @return array<int, array<int, string>>
      */
     public function providerVersion(): array
     {

@@ -9,20 +9,18 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetector\Version\Helper;
 
 use BrowserDetector\Version\VersionInterface;
+use UnexpectedValueException;
 
 interface SafariInterface
 {
     /**
      * maps different Safari Versions to a normalized format
      *
-     * @param VersionInterface $detectedVersion
-     *
-     * @throws \UnexpectedValueException
-     *
-     * @return string|null
+     * @throws UnexpectedValueException
      */
     public function mapSafariVersion(VersionInterface $detectedVersion): ?string;
 }

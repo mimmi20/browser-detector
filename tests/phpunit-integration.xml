@@ -10,11 +10,17 @@
     beStrictAboutOutputDuringTests="true"
     beStrictAboutTestsThatDoNotTestAnything="true"
     beStrictAboutTodoAnnotatedTests="true"
-    failOnWarning="true"
+    beStrictAboutResourceUsageDuringSmallTests="true"
+    failOnEmptyTestSuite="true"
+    failOnIncomplete="true"
     failOnRisky="true"
+    failOnSkipped="true"
+    failOnWarning="true"
     verbose="false"
     bootstrap="../vendor/autoload.php"
     enforceTimeLimit="false"
+    executionOrder="default"
+    resolveDependencies="true"
     >
     <php>
         <ini name="error_reporting" value="-1"/>
@@ -26,9 +32,9 @@
         <directory>./UserAgentsTest</directory>
     </testsuite>
 
-    <filter>
-        <whitelist addUncoveredFilesFromWhitelist="true" processUncoveredFilesFromWhitelist="true">
-            <directory suffix=".php">../src/</directory>
-        </whitelist>
-    </filter>
+    <coverage includeUncoveredFiles="true" processUncoveredFiles="true">
+        <include>
+            <directory suffix=".php">src/</directory>
+        </include>
+    </coverage>
 </phpunit>

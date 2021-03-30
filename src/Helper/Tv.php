@@ -9,16 +9,15 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetector\Helper;
+
+use function preg_match;
 
 final class Tv implements TvInterface
 {
     /**
      * Returns true if the give $useragent is from a tv device
-     *
-     * @param string $useragent
-     *
-     * @return bool
      */
     public function isTvDevice(string $useragent): bool
     {

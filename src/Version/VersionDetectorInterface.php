@@ -9,18 +9,17 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetector\Version;
+
+use UnexpectedValueException;
 
 interface VersionDetectorInterface
 {
     /**
      * detects the bit count by this browser from the given user agent
      *
-     * @param string $useragent
-     *
-     * @throws \UnexpectedValueException
-     *
-     * @return \BrowserDetector\Version\VersionInterface
+     * @throws UnexpectedValueException
      */
     public function detectVersion(string $useragent): VersionInterface;
 }

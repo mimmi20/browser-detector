@@ -9,6 +9,7 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetector\Parser;
 
 use BrowserDetector\Helper\DesktopInterface;
@@ -16,45 +17,36 @@ use BrowserDetector\Helper\MobileDeviceInterface;
 use BrowserDetector\Helper\TvInterface;
 use BrowserDetector\Loader\DeviceLoaderFactoryInterface;
 use BrowserDetector\Loader\DeviceLoaderInterface;
+use BrowserDetector\Loader\NotFoundException;
 use BrowserDetector\Parser\Device\DarwinParserInterface;
 use BrowserDetector\Parser\Device\DesktopParserInterface;
 use BrowserDetector\Parser\Device\MobileParserInterface;
 use BrowserDetector\Parser\Device\TvParserInterface;
+use UaResult\Device\DeviceInterface;
+use UaResult\Os\OsInterface;
+use UnexpectedValueException;
+
+use function assert;
+use function get_class;
+use function preg_match;
+use function sprintf;
 
 final class DeviceParser implements DeviceParserInterface
 {
-    /** @var \BrowserDetector\Parser\Device\DarwinParserInterface */
-    private $darwinParser;
+    private DarwinParserInterface $darwinParser;
 
-    /** @var \BrowserDetector\Parser\Device\MobileParserInterface */
-    private $mobileParser;
+    private MobileParserInterface $mobileParser;
 
-    /** @var \BrowserDetector\Parser\Device\TvParserInterface */
-    private $tvParser;
+    private TvParserInterface $tvParser;
 
-    /** @var \BrowserDetector\Parser\Device\DesktopParserInterface */
-    private $desktopParser;
+    private DesktopParserInterface $desktopParser;
 
-    /** @var \BrowserDetector\Loader\DeviceLoaderFactoryInterface */
-    private $loaderFactory;
+    private DeviceLoaderFactoryInterface $loaderFactory;
 
-    /** @var \BrowserDetector\Helper\MobileDeviceInterface */
-    private $mobileDevice;
-    /** @var \BrowserDetector\Helper\TvInterface */
-    private $tvDevice;
-    /** @var \BrowserDetector\Helper\DesktopInterface */
-    private $desktopDevice;
+    private MobileDeviceInterface $mobileDevice;
+    private TvInterface $tvDevice;
+    private DesktopInterface $desktopDevice;
 
-    /**
-     * @param \BrowserDetector\Parser\Device\DarwinParserInterface  $darwinParser
-     * @param \BrowserDetector\Parser\Device\MobileParserInterface  $mobileParser
-     * @param \BrowserDetector\Parser\Device\TvParserInterface      $tvParser
-     * @param \BrowserDetector\Parser\Device\DesktopParserInterface $desktopParser
-     * @param \BrowserDetector\Loader\DeviceLoaderFactoryInterface  $loaderFactory
-     * @param \BrowserDetector\Helper\MobileDeviceInterface         $mobileDevice
-     * @param \BrowserDetector\Helper\TvInterface                   $tvDevice
-     * @param \BrowserDetector\Helper\DesktopInterface              $desktopDevice
-     */
     public function __construct(
         DarwinParserInterface $darwinParser,
         MobileParserInterface $mobileParser,
@@ -78,12 +70,10 @@ final class DeviceParser implements DeviceParserInterface
     /**
      * Gets the information about the rendering engine by User Agent
      *
-     * @param string $useragent
+     * @return array<int, (OsInterface|DeviceInterface|null)>
      *
-     * @throws \BrowserDetector\Loader\NotFoundException
-     * @throws \UnexpectedValueException
-     *
-     * @return array
+     * @throws NotFoundException
+     * @throws UnexpectedValueException
      */
     public function parse(string $useragent): array
     {
@@ -114,21 +104,17 @@ final class DeviceParser implements DeviceParserInterface
     }
 
     /**
-     * @param string $company
-     * @param string $key
-     * @param string $useragent
+     * @return array<int, (OsInterface|DeviceInterface|null)>
      *
-     * @throws \BrowserDetector\Loader\NotFoundException
-     * @throws \UnexpectedValueException
-     *
-     * @return array
+     * @throws NotFoundException
+     * @throws UnexpectedValueException
      */
     public function load(string $company, string $key, string $useragent = ''): array
     {
         $loaderFactory = $this->loaderFactory;
 
         $loader = $loaderFactory($company);
-        \assert($loader instanceof DeviceLoaderInterface, sprintf('$loader should be an instance of %s, but is %s', DeviceLoaderInterface::class, get_class($loader)));
+        assert($loader instanceof DeviceLoaderInterface, sprintf('$loader should be an instance of %s, but is %s', DeviceLoaderInterface::class, get_class($loader)));
 
         return $loader->load($key, $useragent);
     }

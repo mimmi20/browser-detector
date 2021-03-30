@@ -9,28 +9,23 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetector\Loader\Helper;
 
-interface DataInterface extends \Countable
+use Countable;
+use RuntimeException;
+
+interface DataInterface extends Countable
 {
     /**
-     * @throws \RuntimeException
-     *
-     * @return void
+     * @throws RuntimeException
      */
     public function __invoke(): void;
 
     /**
-     * @param string $cacheId
-     *
      * @return mixed
      */
     public function getItem(string $cacheId);
 
-    /**
-     * @param string $cacheId
-     *
-     * @return bool
-     */
     public function hasItem(string $cacheId): bool;
 }

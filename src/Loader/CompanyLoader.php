@@ -9,6 +9,7 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetector\Loader;
 
 use BrowserDetector\Loader\Helper\DataInterface;
@@ -17,12 +18,8 @@ use UaResult\Company\CompanyInterface;
 
 final class CompanyLoader implements CompanyLoaderInterface
 {
-    /** @var \BrowserDetector\Loader\Helper\DataInterface */
-    private $initData;
+    private DataInterface $initData;
 
-    /**
-     * @param \BrowserDetector\Loader\Helper\DataInterface $initData
-     */
     public function __construct(DataInterface $initData)
     {
         $initData();
@@ -31,12 +28,9 @@ final class CompanyLoader implements CompanyLoaderInterface
     }
 
     /**
-     * @param string $key
-     * @param string $useragent
+     * @throws NotFoundException
      *
-     * @throws \BrowserDetector\Loader\NotFoundException
-     *
-     * @return \UaResult\Company\CompanyInterface
+     * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
      */
     public function load(string $key, string $useragent = ''): CompanyInterface
     {

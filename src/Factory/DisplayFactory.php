@@ -9,19 +9,27 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetector\Factory;
 
 use Psr\Log\LoggerInterface;
 use UaResult\Device\Display;
 use UaResult\Device\DisplayInterface;
 
+use function array_key_exists;
+use function assert;
+use function gettype;
+use function is_bool;
+use function is_float;
+use function is_int;
+use function sprintf;
+
 final class DisplayFactory implements DisplayFactoryInterface
 {
     /**
-     * @param \Psr\Log\LoggerInterface $logger
-     * @param array                    $data
+     * @param array<string, (int|bool|float|null)> $data
      *
-     * @return \UaResult\Device\DisplayInterface
+     * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
      */
     public function fromArray(LoggerInterface $logger, array $data): DisplayInterface
     {
@@ -34,6 +42,18 @@ final class DisplayFactory implements DisplayFactoryInterface
         $height = $data['height'];
         $touch  = $data['touch'];
         $size   = $data['size'];
+
+        assert(is_int($width) || null === $width);
+        assert(is_int($height) || null === $height);
+        assert(is_bool($touch) || null === $touch);
+        assert(
+            is_float($size) || is_int($size) || null === $size,
+            sprintf('"size" property is expecting a float or null, but got %s', gettype($size))
+        );
+
+        if (null !== $size) {
+            $size = (float) $size;
+        }
 
         return new Display($width, $height, $touch, $size);
     }

@@ -9,12 +9,10 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetector\Loader;
 
 interface CompanyLoaderFactoryInterface extends SpecificLoaderFactoryInterface
 {
-    /**
-     * @return CompanyLoaderInterface
-     */
     public function __invoke(): CompanyLoaderInterface;
 }

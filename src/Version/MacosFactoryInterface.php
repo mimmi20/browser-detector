@@ -9,12 +9,10 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetector\Version;
 
 interface MacosFactoryInterface
 {
-    /**
-     * @return \BrowserDetector\Version\Macos
-     */
     public function __invoke(): Macos;
 }

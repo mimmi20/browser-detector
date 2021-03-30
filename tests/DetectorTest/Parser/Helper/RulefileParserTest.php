@@ -9,6 +9,7 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetectorTest\Parser\Helper;
 
 use BrowserDetector\Parser\Helper\RulefileParser;
@@ -16,16 +17,19 @@ use ExceptionalJSON\DecodeErrorException;
 use JsonClass\JsonInterface;
 use org\bovigo\vfs\vfsStream;
 use PHPUnit\Framework\Constraint\IsInstanceOf;
+use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
+use SebastianBergmann\RecursionContext\InvalidArgumentException;
+use SplFileInfo;
+use Throwable;
+
+use function assert;
 
 final class RulefileParserTest extends TestCase
 {
     private const DATA_PATH = 'root';
 
-    /**
-     * @return void
-     */
     protected function setUp(): void
     {
         $structure = ['bot.json' => 'test-content'];
@@ -34,17 +38,15 @@ final class RulefileParserTest extends TestCase
     }
 
     /**
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
-     * @throws \PHPUnit\Framework\ExpectationFailedException
-     *
-     * @return void
+     * @throws InvalidArgumentException
+     * @throws ExpectationFailedException
      */
     public function testParseEmptyFile(): void
     {
         $content  = 'test-content';
         $fallback = 'test-fallback';
 
-        $fileInfo = $this->getMockBuilder(\SplFileInfo::class)
+        $fileInfo = $this->getMockBuilder(SplFileInfo::class)
             ->disableOriginalConstructor()
             ->getMock();
         $fileInfo
@@ -91,21 +93,19 @@ final class RulefileParserTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        \assert($jsonParser instanceof JsonInterface);
-        \assert($logger instanceof LoggerInterface);
+        assert($jsonParser instanceof JsonInterface);
+        assert($logger instanceof LoggerInterface);
         $object = new RulefileParser($jsonParser, $logger);
 
-        \assert($fileInfo instanceof \SplFileInfo);
+        assert($fileInfo instanceof SplFileInfo);
         $result = $object->parseFile($fileInfo, $useragent, $fallback);
 
         self::assertSame($fallback, $result);
     }
 
     /**
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
-     * @throws \PHPUnit\Framework\ExpectationFailedException
-     *
-     * @return void
+     * @throws InvalidArgumentException
+     * @throws ExpectationFailedException
      */
     public function testParseFileError(): void
     {
@@ -113,7 +113,7 @@ final class RulefileParserTest extends TestCase
         $fallback  = 'test-fallback';
         $exception = new DecodeErrorException(0, 'read-error', '');
 
-        $fileInfo = $this->getMockBuilder(\SplFileInfo::class)
+        $fileInfo = $this->getMockBuilder(SplFileInfo::class)
             ->disableOriginalConstructor()
             ->getMock();
         $fileInfo
@@ -150,7 +150,7 @@ final class RulefileParserTest extends TestCase
         $logger
             ->expects(self::once())
             ->method('error')
-            ->with(new IsInstanceOf(\Throwable::class));
+            ->with(new IsInstanceOf(Throwable::class));
         $logger
             ->expects(self::never())
             ->method('critical');
@@ -161,21 +161,19 @@ final class RulefileParserTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        \assert($jsonParser instanceof JsonInterface);
-        \assert($logger instanceof LoggerInterface);
+        assert($jsonParser instanceof JsonInterface);
+        assert($logger instanceof LoggerInterface);
         $object = new RulefileParser($jsonParser, $logger);
 
-        \assert($fileInfo instanceof \SplFileInfo);
+        assert($fileInfo instanceof SplFileInfo);
         $result = $object->parseFile($fileInfo, $useragent, $fallback);
 
         self::assertSame($fallback, $result);
     }
 
     /**
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
-     * @throws \PHPUnit\Framework\ExpectationFailedException
-     *
-     * @return void
+     * @throws InvalidArgumentException
+     * @throws ExpectationFailedException
      */
     public function testParseNotEmptyFile(): void
     {
@@ -186,7 +184,7 @@ final class RulefileParserTest extends TestCase
         $generic = 'test-generic';
         $rules   = ['/test-useragent/' => $mode, '/test/' => 'test-mode-2'];
 
-        $fileInfo = $this->getMockBuilder(\SplFileInfo::class)
+        $fileInfo = $this->getMockBuilder(SplFileInfo::class)
             ->disableOriginalConstructor()
             ->getMock();
         $fileInfo
@@ -233,21 +231,19 @@ final class RulefileParserTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        \assert($jsonParser instanceof JsonInterface);
-        \assert($logger instanceof LoggerInterface);
+        assert($jsonParser instanceof JsonInterface);
+        assert($logger instanceof LoggerInterface);
         $object = new RulefileParser($jsonParser, $logger);
 
-        \assert($fileInfo instanceof \SplFileInfo);
+        assert($fileInfo instanceof SplFileInfo);
         $result = $object->parseFile($fileInfo, $useragent, $fallback);
 
         self::assertSame($mode, $result);
     }
 
     /**
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
-     * @throws \PHPUnit\Framework\ExpectationFailedException
-     *
-     * @return void
+     * @throws InvalidArgumentException
+     * @throws ExpectationFailedException
      */
     public function testParseNotEmptyFile2(): void
     {
@@ -258,7 +254,7 @@ final class RulefileParserTest extends TestCase
         $generic = 'test-generic';
         $rules   = ['/test-useragent/' => $mode, '/test/' => 'test-mode-2'];
 
-        $fileInfo = $this->getMockBuilder(\SplFileInfo::class)
+        $fileInfo = $this->getMockBuilder(SplFileInfo::class)
             ->disableOriginalConstructor()
             ->getMock();
         $fileInfo
@@ -305,21 +301,19 @@ final class RulefileParserTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        \assert($jsonParser instanceof JsonInterface);
-        \assert($logger instanceof LoggerInterface);
+        assert($jsonParser instanceof JsonInterface);
+        assert($logger instanceof LoggerInterface);
         $object = new RulefileParser($jsonParser, $logger);
 
-        \assert($fileInfo instanceof \SplFileInfo);
+        assert($fileInfo instanceof SplFileInfo);
         $result = $object->parseFile($fileInfo, $useragent, $fallback);
 
         self::assertSame($generic, $result);
     }
 
     /**
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
-     * @throws \PHPUnit\Framework\ExpectationFailedException
-     *
-     * @return void
+     * @throws InvalidArgumentException
+     * @throws ExpectationFailedException
      */
     public function testParseNotEmptyFile3(): void
     {
@@ -330,7 +324,7 @@ final class RulefileParserTest extends TestCase
         $generic = 'test-generic';
         $rules   = ['/(?<!test-?)useragent/' => 'test-mode-3', '/test-useragent/' => $mode, '/test/' => 'test-mode-2'];
 
-        $fileInfo = $this->getMockBuilder(\SplFileInfo::class)
+        $fileInfo = $this->getMockBuilder(SplFileInfo::class)
             ->disableOriginalConstructor()
             ->getMock();
         $fileInfo
@@ -367,7 +361,7 @@ final class RulefileParserTest extends TestCase
         $logger
             ->expects(self::once())
             ->method('error')
-            ->with(new IsInstanceOf(\Throwable::class));
+            ->with(new IsInstanceOf(Throwable::class));
         $logger
             ->expects(self::never())
             ->method('critical');
@@ -378,21 +372,19 @@ final class RulefileParserTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        \assert($jsonParser instanceof JsonInterface);
-        \assert($logger instanceof LoggerInterface);
+        assert($jsonParser instanceof JsonInterface);
+        assert($logger instanceof LoggerInterface);
         $object = new RulefileParser($jsonParser, $logger);
 
-        \assert($fileInfo instanceof \SplFileInfo);
+        assert($fileInfo instanceof SplFileInfo);
         $result = $object->parseFile($fileInfo, $useragent, $fallback);
 
         self::assertSame($mode, $result);
     }
 
     /**
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
-     * @throws \PHPUnit\Framework\ExpectationFailedException
-     *
-     * @return void
+     * @throws InvalidArgumentException
+     * @throws ExpectationFailedException
      */
     public function testParseNotEmptyFile4(): void
     {
@@ -403,7 +395,7 @@ final class RulefileParserTest extends TestCase
         $generic = 'test-generic';
         $rules   = [1 => 'test-mode-3', '/test-useragent/' => $mode, '/test/' => 'test-mode-2'];
 
-        $fileInfo = $this->getMockBuilder(\SplFileInfo::class)
+        $fileInfo = $this->getMockBuilder(SplFileInfo::class)
             ->disableOriginalConstructor()
             ->getMock();
         $fileInfo
@@ -440,7 +432,7 @@ final class RulefileParserTest extends TestCase
         $logger
             ->expects(self::once())
             ->method('error')
-            ->with(new IsInstanceOf(\Throwable::class));
+            ->with(new IsInstanceOf(Throwable::class));
         $logger
             ->expects(self::never())
             ->method('critical');
@@ -451,27 +443,25 @@ final class RulefileParserTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        \assert($jsonParser instanceof JsonInterface);
-        \assert($logger instanceof LoggerInterface);
+        assert($jsonParser instanceof JsonInterface);
+        assert($logger instanceof LoggerInterface);
         $object = new RulefileParser($jsonParser, $logger);
 
-        \assert($fileInfo instanceof \SplFileInfo);
+        assert($fileInfo instanceof SplFileInfo);
         $result = $object->parseFile($fileInfo, $useragent, $fallback);
 
         self::assertSame($mode, $result);
     }
 
     /**
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
-     * @throws \PHPUnit\Framework\ExpectationFailedException
-     *
-     * @return void
+     * @throws InvalidArgumentException
+     * @throws ExpectationFailedException
      */
     public function testParseNotExistingFile(): void
     {
         $fallback = 'test-fallback';
 
-        $fileInfo = $this->getMockBuilder(\SplFileInfo::class)
+        $fileInfo = $this->getMockBuilder(SplFileInfo::class)
             ->disableOriginalConstructor()
             ->getMock();
         $fileInfo
@@ -506,7 +496,7 @@ final class RulefileParserTest extends TestCase
         $logger
             ->expects(self::once())
             ->method('error')
-            ->with(new IsInstanceOf(\Throwable::class));
+            ->with(new IsInstanceOf(Throwable::class));
         $logger
             ->expects(self::never())
             ->method('critical');
@@ -517,11 +507,11 @@ final class RulefileParserTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        \assert($jsonParser instanceof JsonInterface);
-        \assert($logger instanceof LoggerInterface);
+        assert($jsonParser instanceof JsonInterface);
+        assert($logger instanceof LoggerInterface);
         $object = new RulefileParser($jsonParser, $logger);
 
-        \assert($fileInfo instanceof \SplFileInfo);
+        assert($fileInfo instanceof SplFileInfo);
         $result = $object->parseFile($fileInfo, $useragent, $fallback);
 
         self::assertSame($fallback, $result);

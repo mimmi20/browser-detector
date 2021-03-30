@@ -9,14 +9,13 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetector\Parser;
 
 interface DeviceParserFactoryInterface
 {
     /**
      * Gets the information about the rendering engine by User Agent
-     *
-     * @return \BrowserDetector\Parser\DeviceParserInterface
      */
     public function __invoke(): DeviceParserInterface;
 }

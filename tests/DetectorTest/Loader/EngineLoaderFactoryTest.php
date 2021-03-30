@@ -9,25 +9,30 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetectorTest\Loader;
 
 use BrowserDetector\Loader\CompanyLoaderInterface;
 use BrowserDetector\Loader\EngineLoaderFactory;
 use BrowserDetector\Loader\EngineLoaderInterface;
 use BrowserDetector\Loader\Helper\FilterInterface;
+use Iterator;
 use JsonClass\JsonInterface;
+use PHPUnit\Framework\Exception;
+use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
+use SebastianBergmann\RecursionContext\InvalidArgumentException;
+
+use function assert;
 
 final class EngineLoaderFactoryTest extends TestCase
 {
     /**
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
-     * @throws \PHPUnit\Framework\ExpectationFailedException
-     * @throws \PHPUnit\Framework\Exception
+     * @throws InvalidArgumentException
+     * @throws ExpectationFailedException
+     * @throws Exception
      * @throws \InvalidArgumentException
-     *
-     * @return void
      */
     public function testInvoke(): void
     {
@@ -44,7 +49,7 @@ final class EngineLoaderFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
 
-        $iterator = $this->createMock(\Iterator::class);
+        $iterator = $this->createMock(Iterator::class);
         $filter   = $this->getMockBuilder(FilterInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
@@ -54,10 +59,10 @@ final class EngineLoaderFactoryTest extends TestCase
             ->with(EngineLoaderFactory::DATA_PATH, 'json')
             ->willReturn($iterator);
 
-        \assert($logger instanceof LoggerInterface);
-        \assert($jsonParser instanceof JsonInterface);
-        \assert($companyLoader instanceof CompanyLoaderInterface);
-        \assert($filter instanceof FilterInterface);
+        assert($logger instanceof LoggerInterface);
+        assert($jsonParser instanceof JsonInterface);
+        assert($companyLoader instanceof CompanyLoaderInterface);
+        assert($filter instanceof FilterInterface);
         $factory = new EngineLoaderFactory($logger, $jsonParser, $companyLoader, $filter);
         $object  = $factory();
 

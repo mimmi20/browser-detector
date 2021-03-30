@@ -9,20 +9,17 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetector\Loader;
 
 use UaResult\Os\OsInterface;
+use UnexpectedValueException;
 
 interface PlatformLoaderInterface extends SpecificLoaderInterface
 {
     /**
-     * @param string $key
-     * @param string $useragent
-     *
-     * @throws \BrowserDetector\Loader\NotFoundException
-     * @throws \UnexpectedValueException
-     *
-     * @return \UaResult\Os\OsInterface
+     * @throws NotFoundException
+     * @throws UnexpectedValueException
      */
     public function load(string $key, string $useragent = ''): OsInterface;
 }

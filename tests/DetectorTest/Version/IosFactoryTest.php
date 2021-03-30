@@ -9,32 +9,30 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetectorTest\Version;
 
 use BrowserDetector\Version\Ios;
 use BrowserDetector\Version\IosFactory;
 use PHPUnit\Framework\TestCase;
 
+use function assert;
+use function get_class;
+use function sprintf;
+
 final class IosFactoryTest extends TestCase
 {
-    /** @var \BrowserDetector\Version\IosFactory */
-    private $object;
+    private IosFactory $object;
 
-    /**
-     * @return void
-     */
     protected function setUp(): void
     {
         $this->object = new IosFactory();
     }
 
-    /**
-     * @return void
-     */
     public function testInvoke(): void
     {
         $object = $this->object;
-        \assert($object instanceof IosFactory, sprintf('$object should be an instance of %s, but is %s', IosFactory::class, get_class($object)));
+        assert($object instanceof IosFactory, sprintf('$object should be an instance of %s, but is %s', IosFactory::class, get_class($object)));
         $result = $object();
         self::assertInstanceOf(Ios::class, $result);
     }

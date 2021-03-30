@@ -9,6 +9,7 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetectorTest\Version;
 
 use BrowserDetector\Version\ObigoQ;
@@ -16,26 +17,23 @@ use BrowserDetector\Version\ObigoQFactory;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
 
+use function assert;
+use function get_class;
+use function sprintf;
+
 final class ObigoQFactoryTest extends TestCase
 {
-    /** @var \BrowserDetector\Version\ObigoQFactory */
-    private $object;
+    private ObigoQFactory $object;
 
-    /**
-     * @return void
-     */
     protected function setUp(): void
     {
         $this->object = new ObigoQFactory();
     }
 
-    /**
-     * @return void
-     */
     public function testInvoke(): void
     {
         $object = $this->object;
-        \assert($object instanceof ObigoQFactory, sprintf('$object should be an instance of %s, but is %s', ObigoQFactory::class, get_class($object)));
+        assert($object instanceof ObigoQFactory, sprintf('$object should be an instance of %s, but is %s', ObigoQFactory::class, get_class($object)));
         $result = $object(new NullLogger());
         self::assertInstanceOf(ObigoQ::class, $result);
     }

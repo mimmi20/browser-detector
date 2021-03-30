@@ -9,21 +9,24 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetector;
 
+use Psr\Http\Message\MessageInterface;
+use Psr\SimpleCache\InvalidArgumentException;
+use UaRequest\GenericRequest;
 use UaResult\Result\ResultInterface;
+use UnexpectedValueException;
 
 interface DetectorInterface
 {
     /**
      * Gets the information about the browser by User Agent
      *
-     * @param array|\Psr\Http\Message\MessageInterface|string|\UaRequest\GenericRequest $headers
+     * @param array<string, string>|GenericRequest|MessageInterface|string $headers
      *
-     * @throws \Psr\SimpleCache\InvalidArgumentException
-     * @throws \UnexpectedValueException
-     *
-     * @return \UaResult\Result\ResultInterface
+     * @throws InvalidArgumentException
+     * @throws UnexpectedValueException
      */
     public function __invoke($headers): ResultInterface;
 }

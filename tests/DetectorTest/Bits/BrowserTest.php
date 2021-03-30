@@ -9,34 +9,28 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetectorTest\Bits;
 
 use BrowserDetector\Bits\Browser;
+use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
+use SebastianBergmann\RecursionContext\InvalidArgumentException;
 
 final class BrowserTest extends TestCase
 {
-    /** @var \BrowserDetector\Bits\Browser */
-    private $object;
+    private Browser $object;
 
-    /**
-     * @return void
-     */
     protected function setUp(): void
     {
         $this->object = new Browser();
     }
 
     /**
+     * @throws InvalidArgumentException
+     * @throws ExpectationFailedException
+     *
      * @dataProvider providerGetBits
-     *
-     * @param string   $useragent
-     * @param int|null $expected
-     *
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
-     * @throws \PHPUnit\Framework\ExpectationFailedException
-     *
-     * @return void
      */
     public function testGetBits(string $useragent, ?int $expected): void
     {
@@ -49,7 +43,7 @@ final class BrowserTest extends TestCase
     }
 
     /**
-     * @return array[]
+     * @return array<int, array<string, int|string|null>>
      */
     public function providerGetBits(): array
     {

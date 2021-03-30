@@ -9,27 +9,23 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetector\Version;
 
 use BrowserDetector\Version\Helper\SafariInterface;
 use Psr\Log\LoggerInterface;
+use UnexpectedValueException;
+
+use function preg_match;
 
 final class Safari implements VersionDetectorInterface
 {
-    /** @var \Psr\Log\LoggerInterface */
-    private $logger;
+    private LoggerInterface $logger;
 
-    /** @var \BrowserDetector\Version\VersionFactoryInterface */
-    private $versionFactory;
+    private VersionFactoryInterface $versionFactory;
 
-    /** @var \BrowserDetector\Version\Helper\SafariInterface */
-    private $safariHelper;
+    private SafariInterface $safariHelper;
 
-    /**
-     * @param \Psr\Log\LoggerInterface                         $logger
-     * @param \BrowserDetector\Version\VersionFactoryInterface $versionFactory
-     * @param \BrowserDetector\Version\Helper\SafariInterface  $safariHelper
-     */
     public function __construct(LoggerInterface $logger, VersionFactoryInterface $versionFactory, SafariInterface $safariHelper)
     {
         $this->logger         = $logger;
@@ -40,11 +36,7 @@ final class Safari implements VersionDetectorInterface
     /**
      * returns the version of the operating system/platform
      *
-     * @param string $useragent
-     *
-     * @throws \UnexpectedValueException
-     *
-     * @return \BrowserDetector\Version\VersionInterface
+     * @throws UnexpectedValueException
      */
     public function detectVersion(string $useragent): VersionInterface
     {

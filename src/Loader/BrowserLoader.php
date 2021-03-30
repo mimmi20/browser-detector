@@ -9,6 +9,7 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetector\Loader;
 
 use BrowserDetector\Bits\Browser;
@@ -18,27 +19,20 @@ use BrowserDetector\Parser\EngineParserInterface;
 use BrowserDetector\Version\VersionFactory;
 use Psr\Log\LoggerInterface;
 use UaBrowserType\TypeLoader;
+use UaResult\Browser\BrowserInterface;
+use UaResult\Engine\EngineInterface;
+use UnexpectedValueException;
 
 final class BrowserLoader implements BrowserLoaderInterface
 {
-    /** @var \Psr\Log\LoggerInterface */
-    private $logger;
+    private LoggerInterface $logger;
 
-    /** @var \BrowserDetector\Parser\EngineParserInterface */
-    private $engineParser;
+    private EngineParserInterface $engineParser;
 
-    /** @var \BrowserDetector\Loader\Helper\DataInterface */
-    private $initData;
+    private DataInterface $initData;
 
-    /** @var \BrowserDetector\Loader\CompanyLoaderInterface */
-    private $companyLoader;
+    private CompanyLoaderInterface $companyLoader;
 
-    /**
-     * @param \Psr\Log\LoggerInterface                       $logger
-     * @param \BrowserDetector\Loader\Helper\DataInterface   $initData
-     * @param \BrowserDetector\Loader\CompanyLoaderInterface $companyLoader
-     * @param \BrowserDetector\Parser\EngineParserInterface  $engineParser
-     */
     public function __construct(
         LoggerInterface $logger,
         DataInterface $initData,
@@ -55,13 +49,10 @@ final class BrowserLoader implements BrowserLoaderInterface
     }
 
     /**
-     * @param string $key
-     * @param string $useragent
+     * @return array<int, (BrowserInterface|EngineInterface|null)>
      *
-     * @throws \BrowserDetector\Loader\NotFoundException
-     * @throws \UnexpectedValueException
-     *
-     * @return array
+     * @throws NotFoundException
+     * @throws UnexpectedValueException
      */
     public function load(string $key, string $useragent = ''): array
     {
@@ -84,7 +75,7 @@ final class BrowserLoader implements BrowserLoaderInterface
         if (null !== $engineKey) {
             try {
                 $engine = $this->engineParser->load($engineKey, $useragent);
-            } catch (\UnexpectedValueException $e) {
+            } catch (UnexpectedValueException $e) {
                 $this->logger->warning($e);
             }
         }

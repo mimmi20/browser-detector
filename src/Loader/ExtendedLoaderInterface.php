@@ -9,6 +9,7 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetector\Loader;
 
 /**
@@ -17,19 +18,11 @@ namespace BrowserDetector\Loader;
 interface ExtendedLoaderInterface
 {
     /**
-     * @param string $browserKey
-     * @param string $useragent
-     *
-     * @throws \BrowserDetector\Loader\NotFoundException
-     *
      * @return mixed
+     *
+     * @throws NotFoundException
      */
     public function load(string $browserKey, string $useragent = '');
 
-    /**
-     * @param string $key
-     *
-     * @return bool
-     */
     public function has(string $key): bool;
 }

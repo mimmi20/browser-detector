@@ -9,33 +9,30 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetectorTest\Helper;
 
 use BrowserDetector\Helper\Tv;
+use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
+use SebastianBergmann\RecursionContext\InvalidArgumentException;
+
+use function sprintf;
 
 final class TvTest extends TestCase
 {
-    /** @var \BrowserDetector\Helper\Tv */
-    private $object;
+    private Tv $object;
 
-    /**
-     * @return void
-     */
     protected function setUp(): void
     {
         $this->object = new Tv();
     }
 
     /**
+     * @throws InvalidArgumentException
+     * @throws ExpectationFailedException
+     *
      * @dataProvider providerIsTv
-     *
-     * @param string $agent
-     *
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
-     * @throws \PHPUnit\Framework\ExpectationFailedException
-     *
-     * @return void
      */
     public function testIsTv(string $agent): void
     {
@@ -46,7 +43,7 @@ final class TvTest extends TestCase
     }
 
     /**
-     * @return array[]
+     * @return array<int, array<int, string>>
      */
     public function providerIsTv(): array
     {
@@ -79,14 +76,10 @@ final class TvTest extends TestCase
     }
 
     /**
+     * @throws InvalidArgumentException
+     * @throws ExpectationFailedException
+     *
      * @dataProvider providerIsNotTv
-     *
-     * @param string $agent
-     *
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
-     * @throws \PHPUnit\Framework\ExpectationFailedException
-     *
-     * @return void
      */
     public function testIsNotTv(string $agent): void
     {
@@ -97,7 +90,7 @@ final class TvTest extends TestCase
     }
 
     /**
-     * @return array[]
+     * @return array<int, array<int, string>>
      */
     public function providerIsNotTv(): array
     {

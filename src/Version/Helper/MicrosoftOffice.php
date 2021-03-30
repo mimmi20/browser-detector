@@ -9,16 +9,15 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetector\Version\Helper;
+
+use function in_array;
 
 final class MicrosoftOffice
 {
     /**
      * maps the version
-     *
-     * @param string $version
-     *
-     * @return string
      */
     public function mapOfficeVersion(string $version): string
     {

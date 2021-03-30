@@ -9,6 +9,7 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetector;
 
 use Psr\Http\Message\MessageInterface;
@@ -17,15 +18,15 @@ use UaRequest\GenericRequest;
 use UaRequest\GenericRequestFactory;
 use UnexpectedValueException;
 
+use function is_array;
+use function is_string;
+
 final class RequestBuilder implements RequestBuilderInterface
 {
     /**
-     * @param \Psr\Log\LoggerInterface                                                        $logger
-     * @param array|mixed|\Psr\Http\Message\MessageInterface|string|\UaRequest\GenericRequest $request
+     * @param array<string, string>|GenericRequest|MessageInterface|mixed|string $request
      *
-     * @throws \UnexpectedValueException
-     *
-     * @return \UaRequest\GenericRequest
+     * @throws UnexpectedValueException
      */
     public function buildRequest(LoggerInterface $logger, $request): GenericRequest
     {

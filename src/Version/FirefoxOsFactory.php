@@ -9,13 +9,11 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetector\Version;
 
 final class FirefoxOsFactory implements FirefoxOsFactoryInterface
 {
-    /**
-     * @return \BrowserDetector\Version\FirefoxOs
-     */
     public function __invoke(): FirefoxOs
     {
         return new FirefoxOs(

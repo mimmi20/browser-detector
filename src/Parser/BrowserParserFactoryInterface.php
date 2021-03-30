@@ -9,14 +9,13 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetector\Parser;
 
 interface BrowserParserFactoryInterface
 {
     /**
      * Gets the information about the browser by User Agent
-     *
-     * @return BrowserParserInterface
      */
     public function __invoke(): BrowserParserInterface;
 }

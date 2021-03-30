@@ -9,18 +9,18 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetector\Loader;
+
+use UnexpectedValueException;
 
 interface SpecificLoaderInterface
 {
     /**
-     * @param string $key
-     * @param string $useragent
-     *
-     * @throws \BrowserDetector\Loader\NotFoundException
-     * @throws \UnexpectedValueException
-     *
      * @return mixed
+     *
+     * @throws NotFoundException
+     * @throws UnexpectedValueException
      */
     public function load(string $key, string $useragent = '');
 }

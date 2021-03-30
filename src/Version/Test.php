@@ -9,6 +9,7 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetector\Version;
 
 final class Test implements VersionDetectorInterface
@@ -16,9 +17,7 @@ final class Test implements VersionDetectorInterface
     /**
      * returns the version of the operating system/platform
      *
-     * @param string $useragent
-     *
-     * @return \BrowserDetector\Version\VersionInterface
+     * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
      */
     public function detectVersion(string $useragent): VersionInterface
     {

@@ -9,32 +9,26 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetector\Parser;
 
+use BrowserDetector\Loader\NotFoundException;
 use UaResult\Engine\EngineInterface;
+use UnexpectedValueException;
 
 interface EngineParserInterface
 {
     /**
      * Gets the information about the engine by User Agent
      *
-     * @param string $useragent
-     *
-     * @throws \BrowserDetector\Loader\NotFoundException
-     * @throws \UnexpectedValueException
-     *
-     * @return \UaResult\Engine\EngineInterface
+     * @throws NotFoundException
+     * @throws UnexpectedValueException
      */
     public function parse(string $useragent): EngineInterface;
 
     /**
-     * @param string $key
-     * @param string $useragent
-     *
-     * @throws \BrowserDetector\Loader\NotFoundException
-     * @throws \UnexpectedValueException
-     *
-     * @return \UaResult\Engine\EngineInterface
+     * @throws NotFoundException
+     * @throws UnexpectedValueException
      */
     public function load(string $key, string $useragent = ''): EngineInterface;
 }

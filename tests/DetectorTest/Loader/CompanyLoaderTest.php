@@ -9,13 +9,22 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetectorTest\Loader;
 
 use BrowserDetector\Loader\CompanyLoader;
 use BrowserDetector\Loader\Helper\DataInterface;
 use BrowserDetector\Loader\NotFoundException;
+use PHPUnit\Framework\Exception;
+use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
+use SebastianBergmann\RecursionContext\InvalidArgumentException;
+use stdClass;
 use UaResult\Company\CompanyInterface;
+
+use function assert;
+use function get_class;
+use function sprintf;
 
 /**
  * Test class for \BrowserDetector\Loader\CompanyLoader
@@ -23,9 +32,7 @@ use UaResult\Company\CompanyInterface;
 final class CompanyLoaderTest extends TestCase
 {
     /**
-     * @throws \BrowserDetector\Loader\NotFoundException
-     *
-     * @return void
+     * @throws NotFoundException
      */
     public function testLoadFailHasNot(): void
     {
@@ -33,7 +40,7 @@ final class CompanyLoaderTest extends TestCase
         $companyName = 'A6 Corp';
         $brand       = 'A6 Corp';
 
-        $result            = new \stdClass();
+        $result            = new stdClass();
         $result->name      = $companyName;
         $result->brandname = $brand;
 
@@ -50,7 +57,7 @@ final class CompanyLoaderTest extends TestCase
         $data->expects(self::once())
             ->method('__invoke');
 
-        \assert($data instanceof DataInterface);
+        assert($data instanceof DataInterface);
         $object = new CompanyLoader($data);
 
         $this->expectException(NotFoundException::class);
@@ -60,9 +67,7 @@ final class CompanyLoaderTest extends TestCase
     }
 
     /**
-     * @throws \BrowserDetector\Loader\NotFoundException
-     *
-     * @return void
+     * @throws NotFoundException
      */
     public function testLoadFailNullReturned(): void
     {
@@ -70,7 +75,7 @@ final class CompanyLoaderTest extends TestCase
         $companyName = 'A6 Corp';
         $brand       = 'A6 Corp';
 
-        $result            = new \stdClass();
+        $result            = new stdClass();
         $result->name      = $companyName;
         $result->brandname = $brand;
 
@@ -87,7 +92,7 @@ final class CompanyLoaderTest extends TestCase
         $data->expects(self::once())
             ->method('__invoke');
 
-        \assert($data instanceof DataInterface);
+        assert($data instanceof DataInterface);
         $object = new CompanyLoader($data);
 
         $this->expectException(NotFoundException::class);
@@ -97,13 +102,11 @@ final class CompanyLoaderTest extends TestCase
     }
 
     /**
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
-     * @throws \PHPUnit\Framework\ExpectationFailedException
-     * @throws \PHPUnit\Framework\Exception
-     * @throws \BrowserDetector\Loader\NotFoundException
+     * @throws InvalidArgumentException
+     * @throws ExpectationFailedException
+     * @throws Exception
+     * @throws NotFoundException
      * @throws \InvalidArgumentException
-     *
-     * @return void
      */
     public function testLoadAvailable(): void
     {
@@ -111,7 +114,7 @@ final class CompanyLoaderTest extends TestCase
         $companyName = 'A6 Corp';
         $brand       = 'A6 Corp';
 
-        $result            = new \stdClass();
+        $result            = new stdClass();
         $result->name      = $companyName;
         $result->brandname = $brand;
 
@@ -128,11 +131,11 @@ final class CompanyLoaderTest extends TestCase
         $data->expects(self::once())
             ->method('__invoke');
 
-        \assert($data instanceof DataInterface);
+        assert($data instanceof DataInterface);
         $object = new CompanyLoader($data);
 
         $result = $object->load($companyKey);
-        \assert($result instanceof CompanyInterface, sprintf('$result should be an instance of %s, but is %s', CompanyInterface::class, get_class($result)));
+        assert($result instanceof CompanyInterface, sprintf('$result should be an instance of %s, but is %s', CompanyInterface::class, get_class($result)));
 
         self::assertInstanceOf(CompanyInterface::class, $result);
 

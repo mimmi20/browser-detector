@@ -9,20 +9,24 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetectorTest\Cache;
 
 use BrowserDetector\Cache\Cache;
+use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use Psr\SimpleCache\CacheInterface;
+use Psr\SimpleCache\InvalidArgumentException;
+
+use function assert;
+use function serialize;
 
 final class CacheTest extends TestCase
 {
     /**
-     * @throws \Psr\SimpleCache\InvalidArgumentException
+     * @throws InvalidArgumentException
      * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
-     * @throws \PHPUnit\Framework\ExpectationFailedException
-     *
-     * @return void
+     * @throws ExpectationFailedException
      */
     public function testVersion(): void
     {
@@ -55,11 +59,9 @@ final class CacheTest extends TestCase
     }
 
     /**
-     * @throws \Psr\SimpleCache\InvalidArgumentException
+     * @throws InvalidArgumentException
      * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
-     * @throws \PHPUnit\Framework\ExpectationFailedException
-     *
-     * @return void
+     * @throws ExpectationFailedException
      */
     public function testHasNotItem(): void
     {
@@ -80,7 +82,7 @@ final class CacheTest extends TestCase
             ->method('get')
             ->willReturn(null);
 
-        \assert($adapter instanceof CacheInterface);
+        assert($adapter instanceof CacheInterface);
         $cache = new Cache($adapter);
 
         self::assertFalse($cache->setItem('version', 6012));
@@ -88,11 +90,9 @@ final class CacheTest extends TestCase
     }
 
     /**
-     * @throws \Psr\SimpleCache\InvalidArgumentException
+     * @throws InvalidArgumentException
      * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
-     * @throws \PHPUnit\Framework\ExpectationFailedException
-     *
-     * @return void
+     * @throws ExpectationFailedException
      */
     public function testHasNotItem2(): void
     {
@@ -114,7 +114,7 @@ final class CacheTest extends TestCase
             ->with('version')
             ->willReturn(null);
 
-        \assert($adapter instanceof CacheInterface);
+        assert($adapter instanceof CacheInterface);
         $cache = new Cache($adapter);
 
         self::assertFalse($cache->setItem('version', 6012));
@@ -122,11 +122,9 @@ final class CacheTest extends TestCase
     }
 
     /**
-     * @throws \Psr\SimpleCache\InvalidArgumentException
+     * @throws InvalidArgumentException
      * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
-     * @throws \PHPUnit\Framework\ExpectationFailedException
-     *
-     * @return void
+     * @throws ExpectationFailedException
      */
     public function testHasNotItem3(): void
     {
@@ -147,7 +145,7 @@ final class CacheTest extends TestCase
             ->method('get')
             ->willReturn(null);
 
-        \assert($adapter instanceof CacheInterface);
+        assert($adapter instanceof CacheInterface);
         $cache = new Cache($adapter);
 
         self::assertFalse($cache->hasItem('version'));

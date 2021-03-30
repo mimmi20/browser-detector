@@ -9,14 +9,10 @@
  */
 
 declare(strict_types = 1);
+
 namespace BrowserDetector\Loader;
 
 interface DeviceLoaderFactoryInterface
 {
-    /**
-     * @param string $company
-     *
-     * @return DeviceLoaderInterface
-     */
     public function __invoke(string $company = ''): DeviceLoaderInterface;
 }
