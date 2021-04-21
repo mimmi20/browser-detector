@@ -1,6 +1,44 @@
 [
   {
     "headers": {
+      "user-agent": "Puffin/16015 CFNetwork/974.2.1 Darwin/18.0.0"
+    },
+    "device": {
+      "deviceName": "general Apple device",
+      "marketingName": "general Apple device",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device"
+    },
+    "browser": {
+      "name": "Puffin",
+      "modus": null,
+      "version": "16015.0.0",
+      "manufacturer": "cloud-mosa",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "12.0.0",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "974.2.1",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "onesafe%20iOS%204/4302 CFNetwork/974.2.1 Darwin/18.0.0"
     },
     "device": {
@@ -3758,44 +3796,6 @@
     "engine": {
       "name": "WebKit",
       "version": "978.0.7",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Edge/44.1.5 CFNetwork/811.5.4 Darwin/16.7.0"
-    },
-    "device": {
-      "deviceName": "general Apple device",
-      "marketingName": "general Apple device",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device"
-    },
-    "browser": {
-      "name": "Edge",
-      "modus": null,
-      "version": "44.1.5",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "10.3.3",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "811.5.4",
       "manufacturer": "apple"
     }
   }

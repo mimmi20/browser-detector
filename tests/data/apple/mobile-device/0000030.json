@@ -1,6 +1,44 @@
 [
   {
     "headers": {
+      "user-agent": "Aloha/7 CFNetwork/811.5.4 Darwin/16.7.0"
+    },
+    "device": {
+      "deviceName": "general Apple device",
+      "marketingName": "general Apple device",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device"
+    },
+    "browser": {
+      "name": "CFNetwork",
+      "modus": null,
+      "version": null,
+      "manufacturer": "apple",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "10.3.3",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "811.5.4",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "NotabilityShareExtension/3804 CFNetwork/811.5.4 Darwin/16.7.0"
     },
     "device": {
@@ -153,7 +191,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Real Madrid; U; CPU OS 4_2_1 like Mac OS X; de-de) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5"
+      "user-agent": "Mozilla/5.0 (Macintosh; CPU Macintosh OS 8_0_2 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Version/8.0 Mobile/12A405 Safari/600.1.4"
     },
     "device": {
       "deviceName": "general Apple device",
@@ -171,7 +209,7 @@
     "browser": {
       "name": "Safari",
       "modus": null,
-      "version": "5.0.2",
+      "version": "8.0.0",
       "manufacturer": "apple",
       "bits": null,
       "type": "browser"
@@ -179,13 +217,13 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "4.2.1",
+      "version": "8.0.2",
       "manufacturer": "apple",
       "bits": null
     },
     "engine": {
       "name": "WebKit",
-      "version": "533.17.9",
+      "version": "600.1.4",
       "manufacturer": "apple"
     }
   }
