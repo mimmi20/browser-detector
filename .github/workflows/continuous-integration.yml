@@ -261,6 +261,39 @@ jobs:
       - name: "Run phpstan/phpstan"
         run: "vendor/bin/phpstan analyse -c phpstan.neon --memory-limit=768M --no-progress"
 
+  phpmd-linter:
+    name: "Code Analysis with PHPMD"
+
+    needs: "install"
+
+    runs-on: "${{ matrix.operating-system }}"
+
+    strategy:
+      fail-fast: false
+
+      matrix:
+        operating-system:
+          - "ubuntu-latest"
+
+        php-version:
+          - "7.4"
+
+        dependencies:
+          - ""
+
+    steps:
+      - name: "Checkout"
+        uses: "actions/checkout@v2.3.4"
+
+      - name: "Run php check code with reviewdog"
+        uses: "GeneaLabs/action-reviewdog-phpmd@1.0.2"
+        with:
+          github_token: "${{ secrets.GITHUB_TOKEN }}"
+          level: "warning"
+          reporter: "github-pr-check"
+          standard: "cleancode,codesize,controversial,design,naming,unusedcode"
+          target_directory: "src,tests"
+
   tests:
     name: "UnitTests with PHPUnit"
 
