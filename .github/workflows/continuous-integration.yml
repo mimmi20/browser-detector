@@ -389,7 +389,7 @@ jobs:
         run: "vendor/bin/phpunit -c phpunit.xml --colors --coverage-clover=.build/coverage/clover.xml --coverage-text --coverage-xml=.build/coverage/coverage-xml --log-junit=.build/coverage/phpunit.junit.xml"
 
       - name: "Upload coverage to Codecov"
-        uses: "codecov/codecov-action@v1.4.1"
+        uses: "codecov/codecov-action@v1.5.0"
         with:
           token: "${{secrets.CODECOV_TOKEN}}"
           file: ".build/coverage/clover.xml"
