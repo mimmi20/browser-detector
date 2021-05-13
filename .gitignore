@@ -17,7 +17,7 @@ cache/*
 !cache/.gitkeep
 tests/temp/*.php
 tests/temp/*.ini
-.php_cs.cache
+.php-cs-fixer.cache
 .phplint-cache
 .phpunit.result.cache
 infection-*.log
