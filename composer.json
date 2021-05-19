@@ -23,7 +23,7 @@
     }
   ],
   "require": {
-    "php": "^7.4.0 || ^8.0.0",
+    "php": "^7.4.7 || ^8.0.0",
     "ext-json": "*",
     "ext-mbstring": "*",
     "mimmi20/browser-detector-loader-interface": "^4.0.2",
@@ -42,17 +42,17 @@
   },
   "require-dev": {
     "infection/infection": "^0.23.0",
-    "laminas/laminas-diactoros": "^2.5.1",
+    "laminas/laminas-diactoros": "^2.6.0",
     "mikey179/vfsstream": "^1.6.8",
     "mimmi20/coding-standard": "^2.2.2",
     "mimmi20/json-normalizer": "^2.0.2",
     "pepakriz/phpstan-exception-rules": "^0.11.7",
     "phpstan/extension-installer": "^1.1.0",
-    "phpstan/phpstan": "^0.12.87",
+    "phpstan/phpstan": "^0.12.88",
     "phpstan/phpstan-deprecation-rules": "^0.12.6",
     "phpstan/phpstan-phpunit": "^0.12.19",
     "phpunit/phpunit": "^9.5.4",
-    "symfony/finder": "^5.2.8"
+    "symfony/finder": "^5.2.9"
   },
   "config": {
     "preferred-install": "dist",
