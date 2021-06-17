@@ -391,9 +391,9 @@ jobs:
       - name: "Upload coverage to Codecov"
         uses: "codecov/codecov-action@v1.5.2"
         with:
-          token: "${{secrets.CODECOV_TOKEN}}"
           file: ".build/coverage/clover.xml"
           flags: "phpunit,php-${{ matrix.php-version }},${{ matrix.coverage-drivers }}"
+          verbose: true
 
       - name: "Run mutation tests with infection/infection"
         run: "vendor/bin/infection --min-covered-msi=91 --min-msi=91 --coverage=.build/coverage"
