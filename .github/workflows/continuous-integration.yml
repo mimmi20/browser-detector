@@ -396,7 +396,7 @@ jobs:
           verbose: true
 
       - name: "Run mutation tests with infection/infection"
-        run: "vendor/bin/infection --min-covered-msi=91 --min-msi=91 --coverage=.build/coverage"
+        run: "vendor/bin/infection --min-covered-msi=91 --min-msi=91 --coverage=.build/coverage --logger-github"
 
   integration-tests:
     name: "Integration Tests with PHPUnit"
