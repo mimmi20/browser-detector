@@ -124,6 +124,10 @@ final class BrowserTest extends TestCase
                 'ua' => 'Mozilla/3.0 (X11; I; OSF1 V4.0 alpha)',
                 'expected' => 64,
             ],
+            [
+                'ua' => 'Mozilla/5.0 (X11; U; Linux SPARC; en-US; rv:1.5) Gecko/20041129',
+                'expected' => 32,
+            ],
         ];
     }
 }

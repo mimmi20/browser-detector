@@ -25,20 +25,15 @@ use UaDeviceType\Unknown;
 use UaNormalizer\Normalizer\NormalizerInterface;
 use UaRequest\GenericRequest;
 use UaResult\Browser\Browser;
-use UaResult\Browser\BrowserInterface;
 use UaResult\Company\Company;
 use UaResult\Device\Device;
-use UaResult\Device\DeviceInterface;
 use UaResult\Device\Display;
 use UaResult\Engine\Engine;
-use UaResult\Engine\EngineInterface;
 use UaResult\Os\Os;
-use UaResult\Os\OsInterface;
 use UaResult\Result\Result;
 use UaResult\Result\ResultInterface;
 use UnexpectedValueException;
 
-use function assert;
 use function in_array;
 use function serialize;
 use function sha1;
@@ -154,9 +149,6 @@ final class Detector implements DetectorInterface
             $platform = $defaultPlatform;
         }
 
-        assert($device instanceof DeviceInterface);
-        assert($platform instanceof OsInterface || null === $platform);
-
         if (null === $platform) {
             $this->logger->debug('platform not detected from the device');
             $platformParser = $this->platformParser;
@@ -197,9 +189,6 @@ final class Detector implements DetectorInterface
             $browser = $defaultBrowser;
             $engine  = $defaultEngine;
         }
-
-        assert($browser instanceof BrowserInterface);
-        assert($engine instanceof EngineInterface || null === $engine);
 
         if (null !== $platform && in_array($platform->getName(), ['iOS', 'iPhone OS'], true)) {
             try {
