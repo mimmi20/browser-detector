@@ -50,6 +50,7 @@ final class BrowserLoader implements BrowserLoaderInterface
 
     /**
      * @return array<int, (BrowserInterface|EngineInterface|null)>
+     * @phpstan-return array(0: BrowserInterface, 1: EngineInterface|null)
      *
      * @throws NotFoundException
      * @throws UnexpectedValueException

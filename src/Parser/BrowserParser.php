@@ -45,6 +45,7 @@ final class BrowserParser implements BrowserParserInterface
      * Gets the information about the browser by User Agent
      *
      * @return array<int, (BrowserInterface|EngineInterface|null)>
+     * @phpstan-return array(0: BrowserInterface, 1: EngineInterface|null)
      *
      * @throws NotFoundException
      * @throws UnexpectedValueException
@@ -68,6 +69,7 @@ final class BrowserParser implements BrowserParserInterface
 
     /**
      * @return array<int, (BrowserInterface|EngineInterface|null)>
+     * @phpstan-return array(0: BrowserInterface, 1: EngineInterface|null)
      *
      * @throws NotFoundException
      * @throws UnexpectedValueException

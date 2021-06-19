@@ -150,8 +150,8 @@ final class Detector implements DetectorInterface
         } catch (UnexpectedValueException $e) {
             $this->logger->warning($e);
 
-            $device   = clone $defaultDevice;
-            $platform = clone $defaultPlatform;
+            $device   = $defaultDevice;
+            $platform = $defaultPlatform;
         }
 
         assert($device instanceof DeviceInterface);
@@ -165,7 +165,7 @@ final class Detector implements DetectorInterface
                 $platform = $platformParser->parse($this->normalizer->normalize($request->getPlatformUserAgent()));
             } catch (UnexpectedValueException $e) {
                 $this->logger->warning($e);
-                $platform = clone $defaultPlatform;
+                $platform = $defaultPlatform;
             }
         }
 
@@ -194,8 +194,8 @@ final class Detector implements DetectorInterface
         } catch (UnexpectedValueException $e) {
             $this->logger->error($e);
 
-            $browser = clone $defaultBrowser;
-            $engine  = clone $defaultEngine;
+            $browser = $defaultBrowser;
+            $engine  = $defaultEngine;
         }
 
         assert($browser instanceof BrowserInterface);
@@ -207,11 +207,11 @@ final class Detector implements DetectorInterface
             } catch (UnexpectedValueException $e) {
                 $this->logger->warning($e);
 
-                $engine = clone $defaultEngine;
+                $engine = $defaultEngine;
             }
         } elseif (null === $engine) {
             $this->logger->debug('engine not detected from browser');
-            $engine = clone $defaultEngine;
+            $engine = $defaultEngine;
 
             $engineParser = $this->engineParser;
 

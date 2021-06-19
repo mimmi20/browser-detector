@@ -49,6 +49,7 @@ final class DeviceLoader implements DeviceLoaderInterface
 
     /**
      * @return array<int, (OsInterface|DeviceInterface|null)>
+     * @phpstan-return array(0:DeviceInterface, 1:OsInterface|null)
      *
      * @throws NotFoundException
      * @throws UnexpectedValueException

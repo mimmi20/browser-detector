@@ -71,6 +71,7 @@ final class DeviceParser implements DeviceParserInterface
      * Gets the information about the rendering engine by User Agent
      *
      * @return array<int, (OsInterface|DeviceInterface|null)>
+     * @phpstan-return array(0:DeviceInterface, 1:OsInterface|null)
      *
      * @throws NotFoundException
      * @throws UnexpectedValueException
@@ -105,6 +106,7 @@ final class DeviceParser implements DeviceParserInterface
 
     /**
      * @return array<int, (OsInterface|DeviceInterface|null)>
+     * @phpstan-return array(0:DeviceInterface, 1:OsInterface|null)
      *
      * @throws NotFoundException
      * @throws UnexpectedValueException

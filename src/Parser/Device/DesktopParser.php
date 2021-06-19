@@ -43,6 +43,7 @@ final class DesktopParser implements DesktopParserInterface
      * Gets the information about the browser by User Agent
      *
      * @return array<int, (OsInterface|DeviceInterface|null)>
+     * @phpstan-return array(0:DeviceInterface, 1:OsInterface|null)
      *
      * @throws NotFoundException
      * @throws UnexpectedValueException
@@ -66,6 +67,7 @@ final class DesktopParser implements DesktopParserInterface
 
     /**
      * @return array<int, (OsInterface|DeviceInterface|null)>
+     * @phpstan-return array(0:DeviceInterface, 1:OsInterface|null)
      *
      * @throws NotFoundException
      * @throws UnexpectedValueException
