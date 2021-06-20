@@ -24,9 +24,6 @@ use UaResult\Device\DeviceInterface;
 
 use function array_key_exists;
 use function assert;
-use function gettype;
-use function is_string;
-use function sprintf;
 
 /**
  * Device detection class
@@ -51,6 +48,7 @@ final class DeviceFactory
 
     /**
      * @param array<string, (string|stdClass|int|null)> $data
+     * @phpstan-param array{deviceName?: (string|null), marketingName?: (string|null), manufacturer?: string, brand?: string, type?: (string|null), display?: (array{width?: (int|null), height?: (int|null), touch?: (bool|null), size?: (int|float|null)}|stdClass|null)} $data
      */
     public function fromArray(LoggerInterface $logger, array $data, string $useragent): DeviceInterface
     {
@@ -64,19 +62,12 @@ final class DeviceFactory
         $deviceName    = null !== $data['deviceName'] && '' !== $data['deviceName'] ? $data['deviceName'] : null;
         $marketingName = null !== $data['marketingName'] && '' !== $data['marketingName'] ? $data['marketingName'] : null;
 
-        assert(
-            is_string($data['type']) || null === $data['type'],
-            sprintf('"type" property is expecting a string or null, but got %s', gettype($data['type']))
-        );
-
         $type = new Unknown();
         try {
             $type = $this->typeLoader->load((string) $data['type']);
         } catch (NotFoundException $e) {
             $logger->info($e);
         }
-
-        assert(is_string($data['manufacturer']));
 
         try {
             $manufacturer = $this->companyLoader->load($data['manufacturer'], $useragent);
@@ -90,8 +81,6 @@ final class DeviceFactory
             );
         }
 
-        assert(is_string($data['brand']));
-
         try {
             $brand = $this->companyLoader->load($data['brand'], $useragent);
         } catch (NotFoundException $e) {
@@ -104,10 +93,12 @@ final class DeviceFactory
             );
         }
 
-        $display = $this->displayFactory->fromArray($logger, (array) $data['display']);
-
-        assert(is_string($deviceName) || null === $deviceName);
-        assert(is_string($marketingName) || null === $marketingName);
+        /**
+         * @var array<string, (int|bool|float|null)> $displayData
+         * @phpstan-var array{width?: int|null, height?: int|null, touch?: bool|null, size?: int|float|null} $displayData
+         */
+        $displayData = (array) $data['display'];
+        $display     = $this->displayFactory->fromArray($logger, $displayData);
 
         return new Device($deviceName, $marketingName, $manufacturer, $brand, $type, $display);
     }

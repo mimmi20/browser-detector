@@ -26,10 +26,6 @@ use UnexpectedValueException;
 
 use function array_key_exists;
 use function assert;
-use function gettype;
-use function is_int;
-use function is_string;
-use function sprintf;
 
 final class BrowserFactory
 {
@@ -51,6 +47,7 @@ final class BrowserFactory
 
     /**
      * @param array<string, (int|stdClass|string|null)> $data
+     * @phpstan-param array{name?: string|null, manufacturer?: string, version?: stdClass|string|null, type?: string|null, bits?: int|null, modus?: string|null} $data
      *
      * @throws NotFoundException
      * @throws UnexpectedValueException
@@ -68,11 +65,6 @@ final class BrowserFactory
         $modus = $data['modus'];
         $bits  = $data['bits'];
 
-        assert(
-            is_string($data['type']) || null === $data['type'],
-            sprintf('"type" property is expecting a string or null, but got %s', gettype($data['type']))
-        );
-
         $type = new Unknown();
         try {
             $type = $this->typeLoader->load((string) $data['type']);
@@ -80,13 +72,7 @@ final class BrowserFactory
             $logger->info($e);
         }
 
-        assert(!is_int($data['version']));
         $version = $this->getVersion($data['version'], $useragent, $logger);
-
-        assert(is_string($name) || null === $name);
-        assert(is_string($modus) || null === $modus);
-        assert(is_int($bits) || null === $bits);
-        assert(is_string($data['manufacturer']));
 
         try {
             $manufacturer = $this->companyLoader->load($data['manufacturer'], $useragent);
