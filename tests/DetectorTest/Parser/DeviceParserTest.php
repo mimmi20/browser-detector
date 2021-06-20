@@ -1078,7 +1078,7 @@ final class DeviceParserTest extends TestCase
      */
     public function testInvokeDesktop(): void
     {
-        $useragent = 'test-device';
+        $useragent = 'FreeBSD Darwin';
 
         $expectedDevice = new class() implements DeviceInterface {
             public function getDeviceName(): ?string

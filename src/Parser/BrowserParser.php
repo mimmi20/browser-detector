@@ -13,7 +13,6 @@ declare(strict_types = 1);
 namespace BrowserDetector\Parser;
 
 use BrowserDetector\Loader\BrowserLoaderFactoryInterface;
-use BrowserDetector\Loader\BrowserLoaderInterface;
 use BrowserDetector\Loader\NotFoundException;
 use BrowserDetector\Parser\Helper\RulefileParserInterface;
 use SplFileInfo;
@@ -21,8 +20,6 @@ use UaResult\Browser\BrowserInterface;
 use UaResult\Engine\EngineInterface;
 use UnexpectedValueException;
 
-use function assert;
-use function get_class;
 use function sprintf;
 
 final class BrowserParser implements BrowserParserInterface
@@ -77,9 +74,7 @@ final class BrowserParser implements BrowserParserInterface
     public function load(string $key, string $useragent = ''): array
     {
         $loaderFactory = $this->loaderFactory;
-
-        $loader = $loaderFactory();
-        assert($loader instanceof BrowserLoaderInterface, sprintf('$loader should be an instance of %s, but is %s', BrowserLoaderInterface::class, get_class($loader)));
+        $loader        = $loaderFactory();
 
         return $loader->load($key, $useragent);
     }

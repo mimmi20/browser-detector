@@ -16,7 +16,6 @@ use BrowserDetector\Helper\DesktopInterface;
 use BrowserDetector\Helper\MobileDeviceInterface;
 use BrowserDetector\Helper\TvInterface;
 use BrowserDetector\Loader\DeviceLoaderFactoryInterface;
-use BrowserDetector\Loader\DeviceLoaderInterface;
 use BrowserDetector\Loader\NotFoundException;
 use BrowserDetector\Parser\Device\DarwinParserInterface;
 use BrowserDetector\Parser\Device\DesktopParserInterface;
@@ -26,10 +25,7 @@ use UaResult\Device\DeviceInterface;
 use UaResult\Os\OsInterface;
 use UnexpectedValueException;
 
-use function assert;
-use function get_class;
 use function preg_match;
-use function sprintf;
 
 final class DeviceParser implements DeviceParserInterface
 {
@@ -83,7 +79,7 @@ final class DeviceParser implements DeviceParserInterface
         }
 
         if (
-            0 === preg_match('/freebsd|raspbian/i', $useragent)
+            !preg_match('/freebsd|raspbian/i', $useragent)
             && preg_match('/darwin|cfnetwork/i', $useragent)
         ) {
             return $this->darwinParser->parse($useragent);
@@ -114,9 +110,7 @@ final class DeviceParser implements DeviceParserInterface
     public function load(string $company, string $key, string $useragent = ''): array
     {
         $loaderFactory = $this->loaderFactory;
-
-        $loader = $loaderFactory($company);
-        assert($loader instanceof DeviceLoaderInterface, sprintf('$loader should be an instance of %s, but is %s', DeviceLoaderInterface::class, get_class($loader)));
+        $loader        = $loaderFactory($company);
 
         return $loader->load($key, $useragent);
     }

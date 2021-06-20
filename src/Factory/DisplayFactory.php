@@ -39,10 +39,6 @@ final class DisplayFactory implements DisplayFactoryInterface
         $touch  = $data['touch'];
         $size   = $data['size'];
 
-        if (null !== $size) {
-            $size = (float) $size;
-        }
-
         return new Display($width, $height, $touch, $size);
     }
 }

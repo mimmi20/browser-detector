@@ -14,14 +14,11 @@ namespace BrowserDetector\Parser;
 
 use BrowserDetector\Loader\NotFoundException;
 use BrowserDetector\Loader\PlatformLoaderFactoryInterface;
-use BrowserDetector\Loader\PlatformLoaderInterface;
 use BrowserDetector\Parser\Helper\RulefileParserInterface;
 use SplFileInfo;
 use UaResult\Os\OsInterface;
 use UnexpectedValueException;
 
-use function assert;
-use function get_class;
 use function sprintf;
 
 final class PlatformParser implements PlatformParserInterface
@@ -70,9 +67,7 @@ final class PlatformParser implements PlatformParserInterface
     public function load(string $key, string $useragent = ''): OsInterface
     {
         $loaderFactory = $this->loaderFactory;
-
-        $loader = $loaderFactory();
-        assert($loader instanceof PlatformLoaderInterface, sprintf('$loader should be an instance of %s, but is %s', PlatformLoaderInterface::class, get_class($loader)));
+        $loader        = $loaderFactory();
 
         return $loader->load($key, $useragent);
     }

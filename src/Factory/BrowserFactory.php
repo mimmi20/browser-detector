@@ -22,7 +22,6 @@ use UaBrowserType\Unknown;
 use UaResult\Browser\Browser;
 use UaResult\Browser\BrowserInterface;
 use UaResult\Company\Company;
-use UnexpectedValueException;
 
 use function array_key_exists;
 use function assert;
@@ -48,9 +47,6 @@ final class BrowserFactory
     /**
      * @param array<string, (int|stdClass|string|null)> $data
      * @phpstan-param array{name?: string|null, manufacturer?: string, version?: stdClass|string|null, type?: string|null, bits?: int|null, modus?: string|null} $data
-     *
-     * @throws NotFoundException
-     * @throws UnexpectedValueException
      */
     public function fromArray(LoggerInterface $logger, array $data, string $useragent): BrowserInterface
     {

@@ -212,5 +212,8 @@ final class DataTest extends TestCase
         self::assertTrue($object->hasItem($key));
         self::assertSame($value, $object->getItem($key));
         self::assertCount(4, $object);
+
+        self::assertFalse($object->hasItem('key3'));
+        self::assertNull($object->getItem('key3'));
     }
 }
