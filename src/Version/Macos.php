@@ -155,7 +155,7 @@ final class Macos implements VersionDetectorInterface
     {
         $doMatch = preg_match('/\((?:build )?(?P<build>\d+[A-Z]\d+(?:[a-z])?)\)/i', $useragent, $matches);
 
-        if (0 < $doMatch) {
+        if ($doMatch) {
             try {
                 $buildVersion = $this->macosBuild->getVersion($matches['build']);
             } catch (BuildException | NotFoundException $e) {
@@ -169,7 +169,7 @@ final class Macos implements VersionDetectorInterface
 
         $doMatch = preg_match('/coremedia v\d+\.\d+\.\d+\.(?P<build>\d+[A-Z]\d+(?:[a-z])?)/i', $useragent, $matches);
 
-        if (0 < $doMatch) {
+        if ($doMatch) {
             try {
                 $buildVersion = $this->macosBuild->getVersion($matches['build']);
             } catch (BuildException | NotFoundException $e) {

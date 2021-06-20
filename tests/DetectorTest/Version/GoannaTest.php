@@ -89,6 +89,10 @@ final class GoannaTest extends TestCase
                 '2.0.0',
             ],
             [
+                'Goanna/20170207 Mozilla/5.0 (X11; Linux x86_64; rv:3.0) PaleMoon/27.1.0',
+                '3.0.0',
+            ],
+            [
                 'Mozilla/5.0 (X11; Linux x86_64; rv:3.0) Goanna/20170207 PaleMoon/27.1.0',
                 '3.0.0',
             ],
@@ -98,6 +102,10 @@ final class GoannaTest extends TestCase
             ],
             [
                 'Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:26.0.0b2) Goanna/20150828 Gecko/20100101 AppleWebKit/601.1.37 (KHTML, like Gecko) Version/9.0 Safari/601.1.37 PaleMoon/26.0.0b2',
+                '1.0.0',
+            ],
+            [
+                'Goanna/20150828 Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:26.0.0b2) Gecko/20100101 AppleWebKit/601.1.37 (KHTML, like Gecko) Version/9.0 Safari/601.1.37 PaleMoon/26.0.0b2',
                 '1.0.0',
             ],
         ];

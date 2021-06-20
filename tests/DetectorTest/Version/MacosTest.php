@@ -57,6 +57,10 @@ final class MacosTest extends TestCase
                 '10.13.0',
             ],
             [
+                'Darwin/17.0.0 Mail/3445.1.3 CFNetwork/887 (x86_64)',
+                '10.13.0',
+            ],
+            [
                 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10) AppleWebKit/534.48.3 (KHTML like Gecko) Version/5.1 Safari/534.48.3',
                 '10.0.0',
             ],

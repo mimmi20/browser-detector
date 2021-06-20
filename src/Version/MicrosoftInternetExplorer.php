@@ -63,7 +63,7 @@ final class MicrosoftInternetExplorer implements VersionDetectorInterface
 
         $doMatch = preg_match('/MSIE (?P<version>[\d\.]+)/', $useragent, $matches);
 
-        if (0 < $doMatch) {
+        if ($doMatch) {
             try {
                 return $this->versionFactory->set($matches['version']);
             } catch (NotNumericException $e) {

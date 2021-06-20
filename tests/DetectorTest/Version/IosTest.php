@@ -61,6 +61,10 @@ final class IosTest extends TestCase
                 '10.2.0',
             ],
             [
+                'Darwin/16.3.0 TestApp/1.0 CFNetwork/808.2.16',
+                '10.2.0',
+            ],
+            [
                 'Mozilla/5.0 (iPad; CPU OS 7_1 like Mac OS X) AppleWebKit/537.51.2 (KHTML, like Gecko) CriOS/42.0.2311.47 Mobile/11D167 Safari/9537.53',
                 '7.1.0',
             ],
@@ -83,6 +87,14 @@ final class IosTest extends TestCase
             [
                 'Apple-iPhone9C4/1602.92',
                 '12.1.0',
+            ],
+            [
+                'Apple-iPhone3C1/902.206 Test',
+                null,
+            ],
+            [
+                'Apple-iPhone9C4/1602.92 Test',
+                null,
             ],
             [
                 'Mozilla/5.0 (iPad; CPU OS 7_1 like Mac OS X) AppleWebKit/537.51.2 (KHTML, like Gecko) CriOS/42.0.2311.47 Mobile/1X7 Safari/9537.53',

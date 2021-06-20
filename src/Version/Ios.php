@@ -226,13 +226,13 @@ final class Ios implements VersionDetectorInterface
     {
         $doMatch = preg_match('/CPU like Mac OS X/', $useragent);
 
-        if (0 < $doMatch) {
+        if ($doMatch) {
             return $this->versionFactory->set('1.0');
         }
 
         $doMatch = preg_match('/mobile\/(?P<build>\d+[A-Z]\d+(?:[a-z])?)/i', $useragent, $matches);
 
-        if (0 < $doMatch) {
+        if ($doMatch) {
             try {
                 $buildVersion = $this->iosBuild->getVersion($matches['build']);
             } catch (BuildException | NotFoundException $e) {
@@ -246,7 +246,7 @@ final class Ios implements VersionDetectorInterface
 
         $doMatch = preg_match('/applecoremedia\/\d+\.\d+\.\d+\.(?P<build>\d+[A-Z]\d+(?:[a-z])?)/i', $useragent, $matches);
 
-        if (0 < $doMatch) {
+        if ($doMatch) {
             try {
                 $buildVersion = $this->iosBuild->getVersion($matches['build']);
             } catch (BuildException | NotFoundException $e) {
@@ -268,7 +268,7 @@ final class Ios implements VersionDetectorInterface
 
         $doMatch = preg_match('/^apple-(?:iphone|ip[ao]d)\d+[c,_]\d+\/(?P<build>[\d\.]+)$/i', $useragent, $matches);
 
-        if (0 < $doMatch) {
+        if ($doMatch) {
             if (array_key_exists($matches['build'], self::BUILD_MAP)) {
                 return $this->versionFactory->set(self::BUILD_MAP[$matches['build']]);
             }

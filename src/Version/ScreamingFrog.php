@@ -36,7 +36,7 @@ final class ScreamingFrog implements VersionDetectorInterface
     {
         $doMatch = preg_match('/Screaming Frog SEO Spider\/\d+,\d/', $useragent);
 
-        if (0 < $doMatch) {
+        if ($doMatch) {
             $useragent = str_replace(',', '.', $useragent);
         }
 
