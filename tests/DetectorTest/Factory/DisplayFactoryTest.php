@@ -188,4 +188,67 @@ final class DisplayFactoryTest extends TestCase
         self::assertTrue($result->toArray()['touch']);
         self::assertSame((float) $size, $result->toArray()['size']);
     }
+
+    /**
+     * @throws InvalidArgumentException
+     * @throws ExpectationFailedException
+     */
+    public function testFromArrayWithNullSize(): void
+    {
+        $logger = $this->getMockBuilder(LoggerInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $logger
+            ->expects(self::never())
+            ->method('debug');
+        $logger
+            ->expects(self::never())
+            ->method('info');
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::never())
+            ->method('warning');
+        $logger
+            ->expects(self::never())
+            ->method('error');
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
+
+        $width  = 1280;
+        $height = 1920;
+
+        $object = new DisplayFactory();
+
+        $size  = null;
+        $touch = true;
+
+        assert($logger instanceof LoggerInterface);
+        $result = $object->fromArray($logger, ['width' => $width, 'height' => $height, 'touch' => $touch, 'size' => $size]);
+
+        self::assertInstanceOf(DisplayInterface::class, $result);
+        self::assertSame($width, $result->getWidth());
+        self::assertSame($height, $result->getHeight());
+        self::assertTrue($result->hasTouch());
+        self::assertNull($result->getSize());
+
+        self::assertIsArray($result->toArray());
+        self::assertArrayHasKey('width', $result->toArray());
+        self::assertArrayHasKey('height', $result->toArray());
+        self::assertArrayHasKey('touch', $result->toArray());
+        self::assertArrayHasKey('size', $result->toArray());
+
+        self::assertSame($width, $result->toArray()['width']);
+        self::assertSame($height, $result->toArray()['height']);
+        self::assertTrue($result->toArray()['touch']);
+        self::assertNull($result->toArray()['size']);
+    }
 }

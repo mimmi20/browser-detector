@@ -21,22 +21,22 @@ final class Desktop implements DesktopInterface
      */
     public function isDesktopDevice(string $useragent): bool
     {
-        if (0 < preg_match('/windows ?(phone|iot|mobile|ce)|iemobile|lumia|xblwp7|zunewp7|wpdesktop|mobile version|microsoft windows; ppc| wds |wpos:|netgem|xoom/i', $useragent)) {
+        if (preg_match('/windows ?(phone|iot|mobile|ce)|iemobile|lumia|xblwp7|zunewp7|wpdesktop|mobile version|microsoft windows; ppc| wds |wpos:|netgem|xoom/i', $useragent)) {
             return false;
         }
 
         // windows
-        if (0 < preg_match('/davclnt|revolt|microsoft outlook|wmplayer|lavf|nsplayer|windows|win(10|8|7|vista|xp|2000|98|95|nt|3[12]|me|9x)|barca|cygwin|the bat!/i', $useragent)) {
+        if (preg_match('/davclnt|revolt|microsoft outlook|wmplayer|lavf|nsplayer|windows|win(10|8|7|vista|xp|2000|98|95|nt|3[12]|me|9x)|barca|cygwin|the bat!/i', $useragent)) {
             return true;
         }
 
         // linux
-        if (0 < preg_match('/linux|debian|ubuntu|cros|tinybrowser/i', $useragent)) {
+        if (preg_match('/linux|debian|ubuntu|cros|tinybrowser/i', $useragent)) {
             return true;
         }
 
         // macOS
-        if (0 < preg_match('/macintosh|darwin|mac(_powerpc|book|mini|pro)|(for|ppc) mac|mac ?os|integrity|camino|pubsub|(os\=|i|power)mac/i', $useragent)) {
+        if (preg_match('/macintosh|darwin|mac(_powerpc|book|mini|pro)|(for|ppc) mac|mac ?os|integrity|camino|pubsub|(os\=|i|power)mac/i', $useragent)) {
             return true;
         }
 

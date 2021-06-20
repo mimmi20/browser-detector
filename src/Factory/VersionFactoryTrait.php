@@ -37,8 +37,6 @@ trait VersionFactoryTrait
      */
     private function getVersion($version, string $useragent, LoggerInterface $logger): VersionInterface
     {
-        assert(is_string($version) || $version instanceof stdClass || null === $version);
-
         if (is_string($version)) {
             return $this->versionFactory->set($version);
         }
@@ -73,7 +71,6 @@ trait VersionFactoryTrait
 
         if ('VersionFactory' !== $className) {
             $versionDetector = new $className();
-            assert($versionDetector instanceof VersionDetectorInterface, sprintf('$versionDetector should be an instance of %s, but is %s', VersionDetectorInterface::class, get_class($versionDetector)));
 
             return $versionDetector->detectVersion($useragent);
         }

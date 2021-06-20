@@ -64,12 +64,14 @@ final class BrowserFactory
         $name  = $data['name'];
         $modus = $data['modus'];
         $bits  = $data['bits'];
+        $type  = new Unknown();
 
-        $type = new Unknown();
-        try {
-            $type = $this->typeLoader->load((string) $data['type']);
-        } catch (NotFoundException $e) {
-            $logger->info($e);
+        if (null !== $data['type']) {
+            try {
+                $type = $this->typeLoader->load($data['type']);
+            } catch (NotFoundException $e) {
+                $logger->info($e);
+            }
         }
 
         $version = $this->getVersion($data['version'], $useragent, $logger);

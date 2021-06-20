@@ -35,7 +35,7 @@ final class WindowsPhoneOs implements VersionDetectorInterface
      */
     public function detectVersion(string $useragent): VersionInterface
     {
-        if (0 < preg_match('/xblwp7|zunewp7/i', $useragent)) {
+        if (preg_match('/xblwp7|zunewp7/i', $useragent)) {
             try {
                 return $this->versionFactory->set('7.5.0');
             } catch (NotNumericException $e) {
@@ -45,7 +45,7 @@ final class WindowsPhoneOs implements VersionDetectorInterface
             return new NullVersion();
         }
 
-        if (0 < preg_match('/wds (?P<version>[\d.]+)/i', $useragent, $matches)) {
+        if (preg_match('/wds (?P<version>[\d.]+)/i', $useragent, $matches)) {
             try {
                 return $this->versionFactory->set($matches['version']);
             } catch (NotNumericException $e) {
@@ -55,8 +55,8 @@ final class WindowsPhoneOs implements VersionDetectorInterface
             return new NullVersion();
         }
 
-        if (0 < preg_match('/wpdesktop/i', $useragent)) {
-            if (0 < preg_match('/windows nt 6\.3/i', $useragent)) {
+        if (preg_match('/wpdesktop/i', $useragent)) {
+            if (preg_match('/windows nt 6\.3/i', $useragent)) {
                 try {
                     return $this->versionFactory->set('8.1.0');
                 } catch (NotNumericException $e) {
@@ -64,7 +64,7 @@ final class WindowsPhoneOs implements VersionDetectorInterface
                 }
             }
 
-            if (0 < preg_match('/windows nt 6\.2/i', $useragent)) {
+            if (preg_match('/windows nt 6\.2/i', $useragent)) {
                 try {
                     return $this->versionFactory->set('8.0.0');
                 } catch (NotNumericException $e) {
