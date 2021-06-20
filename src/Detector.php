@@ -25,20 +25,15 @@ use UaDeviceType\Unknown;
 use UaNormalizer\Normalizer\NormalizerInterface;
 use UaRequest\GenericRequest;
 use UaResult\Browser\Browser;
-use UaResult\Browser\BrowserInterface;
 use UaResult\Company\Company;
 use UaResult\Device\Device;
-use UaResult\Device\DeviceInterface;
 use UaResult\Device\Display;
 use UaResult\Engine\Engine;
-use UaResult\Engine\EngineInterface;
 use UaResult\Os\Os;
-use UaResult\Os\OsInterface;
 use UaResult\Result\Result;
 use UaResult\Result\ResultInterface;
 use UnexpectedValueException;
 
-use function assert;
 use function in_array;
 use function serialize;
 use function sha1;
@@ -150,12 +145,9 @@ final class Detector implements DetectorInterface
         } catch (UnexpectedValueException $e) {
             $this->logger->warning($e);
 
-            $device   = clone $defaultDevice;
-            $platform = clone $defaultPlatform;
+            $device   = $defaultDevice;
+            $platform = $defaultPlatform;
         }
-
-        assert($device instanceof DeviceInterface);
-        assert($platform instanceof OsInterface || null === $platform);
 
         if (null === $platform) {
             $this->logger->debug('platform not detected from the device');
@@ -165,7 +157,7 @@ final class Detector implements DetectorInterface
                 $platform = $platformParser->parse($this->normalizer->normalize($request->getPlatformUserAgent()));
             } catch (UnexpectedValueException $e) {
                 $this->logger->warning($e);
-                $platform = clone $defaultPlatform;
+                $platform = $defaultPlatform;
             }
         }
 
@@ -194,12 +186,9 @@ final class Detector implements DetectorInterface
         } catch (UnexpectedValueException $e) {
             $this->logger->error($e);
 
-            $browser = clone $defaultBrowser;
-            $engine  = clone $defaultEngine;
+            $browser = $defaultBrowser;
+            $engine  = $defaultEngine;
         }
-
-        assert($browser instanceof BrowserInterface);
-        assert($engine instanceof EngineInterface || null === $engine);
 
         if (null !== $platform && in_array($platform->getName(), ['iOS', 'iPhone OS'], true)) {
             try {
@@ -207,11 +196,11 @@ final class Detector implements DetectorInterface
             } catch (UnexpectedValueException $e) {
                 $this->logger->warning($e);
 
-                $engine = clone $defaultEngine;
+                $engine = $defaultEngine;
             }
         } elseif (null === $engine) {
             $this->logger->debug('engine not detected from browser');
-            $engine = clone $defaultEngine;
+            $engine = $defaultEngine;
 
             $engineParser = $this->engineParser;
 

@@ -41,7 +41,7 @@ final class FirefoxOs implements VersionDetectorInterface
      */
     public function detectVersion(string $useragent): VersionInterface
     {
-        if (0 === preg_match('/rv:(?P<version>\d+\.\d+)/', $useragent, $matches)) {
+        if (!preg_match('/rv:(?P<version>\d+\.\d+)/', $useragent, $matches)) {
             return new NullVersion();
         }
 

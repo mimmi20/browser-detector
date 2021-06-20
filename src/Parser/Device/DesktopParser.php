@@ -13,7 +13,6 @@ declare(strict_types = 1);
 namespace BrowserDetector\Parser\Device;
 
 use BrowserDetector\Loader\DeviceLoaderFactoryInterface;
-use BrowserDetector\Loader\DeviceLoaderInterface;
 use BrowserDetector\Loader\NotFoundException;
 use BrowserDetector\Parser\Helper\RulefileParserInterface;
 use SplFileInfo;
@@ -21,8 +20,6 @@ use UaResult\Device\DeviceInterface;
 use UaResult\Os\OsInterface;
 use UnexpectedValueException;
 
-use function assert;
-use function get_class;
 use function sprintf;
 
 final class DesktopParser implements DesktopParserInterface
@@ -43,6 +40,7 @@ final class DesktopParser implements DesktopParserInterface
      * Gets the information about the browser by User Agent
      *
      * @return array<int, (OsInterface|DeviceInterface|null)>
+     * @phpstan-return array(0:DeviceInterface, 1:OsInterface|null)
      *
      * @throws NotFoundException
      * @throws UnexpectedValueException
@@ -66,6 +64,7 @@ final class DesktopParser implements DesktopParserInterface
 
     /**
      * @return array<int, (OsInterface|DeviceInterface|null)>
+     * @phpstan-return array(0:DeviceInterface, 1:OsInterface|null)
      *
      * @throws NotFoundException
      * @throws UnexpectedValueException
@@ -73,9 +72,7 @@ final class DesktopParser implements DesktopParserInterface
     public function load(string $company, string $key, string $useragent = ''): array
     {
         $loaderFactory = $this->loaderFactory;
-
-        $loader = $loaderFactory($company);
-        assert($loader instanceof DeviceLoaderInterface, sprintf('$loader should be an instance of %s, but is %s', DeviceLoaderInterface::class, get_class($loader)));
+        $loader        = $loaderFactory($company);
 
         return $loader->load($key, $useragent);
     }

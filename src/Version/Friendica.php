@@ -36,7 +36,7 @@ final class Friendica implements VersionDetectorInterface
         $matches = [];
         $doMatch = preg_match('/Friendica \'[^\']*\' (?P<version>\d+[\d\.\_\-\+abcdehlprstv]*).*/', $useragent, $matches);
 
-        if (0 < $doMatch) {
+        if ($doMatch) {
             try {
                 return $this->versionFactory->set($matches['version']);
             } catch (NotNumericException $e) {

@@ -44,7 +44,7 @@ final class Safari implements VersionDetectorInterface
 
         $doMatch = preg_match('/(?:Version|Safari)\/(?P<version>[\d\.]+)/', $useragent, $matches);
 
-        if (0 < $doMatch) {
+        if ($doMatch) {
             try {
                 $version = $this->versionFactory->set($matches['version']);
             } catch (NotNumericException $e) {

@@ -13,18 +13,13 @@ declare(strict_types = 1);
 namespace BrowserDetector\Factory;
 
 use BrowserDetector\Version\NullVersion;
-use BrowserDetector\Version\VersionDetectorInterface;
 use BrowserDetector\Version\VersionFactoryInterface;
 use BrowserDetector\Version\VersionInterface;
 use Psr\Log\LoggerInterface;
 use stdClass;
-use UnexpectedValueException;
 
-use function assert;
-use function get_class;
 use function is_array;
 use function is_string;
-use function sprintf;
 
 trait VersionFactoryTrait
 {
@@ -32,13 +27,9 @@ trait VersionFactoryTrait
 
     /**
      * @param stdClass|string|null $version
-     *
-     * @throws UnexpectedValueException
      */
     private function getVersion($version, string $useragent, LoggerInterface $logger): VersionInterface
     {
-        assert(is_string($version) || $version instanceof stdClass || null === $version);
-
         if (is_string($version)) {
             return $this->versionFactory->set($version);
         }
@@ -63,17 +54,14 @@ trait VersionFactoryTrait
         }
 
         if (is_string($factoryName)) {
-            $factory = new $factoryName();
-
+            $factory         = new $factoryName();
             $versionDetector = $factory($logger);
-            assert($versionDetector instanceof VersionDetectorInterface, sprintf('$versionDetector should be an instance of %s, but is %s', VersionDetectorInterface::class, get_class($versionDetector)));
 
             return $versionDetector->detectVersion($useragent);
         }
 
         if ('VersionFactory' !== $className) {
             $versionDetector = new $className();
-            assert($versionDetector instanceof VersionDetectorInterface, sprintf('$versionDetector should be an instance of %s, but is %s', VersionDetectorInterface::class, get_class($versionDetector)));
 
             return $versionDetector->detectVersion($useragent);
         }

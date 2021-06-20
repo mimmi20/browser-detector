@@ -24,6 +24,7 @@ use BrowserDetector\Version\Version;
 use BrowserDetector\Version\VersionFactory;
 use Psr\Log\LoggerInterface;
 use Psr\Log\NullLogger;
+use stdClass;
 use UaBrowserType\TypeLoader;
 use UaDeviceType\Unknown;
 use UaResult\Browser\Browser;
@@ -48,6 +49,7 @@ final class ResultFactory
 
     /**
      * @param array<string, array<string, string>> $data
+     * @phpstan-param array{headers?: array<string, string>, device?: (stdClass|array{deviceName?: (string|null), marketingName?: (string|null), manufacturer?: string, brand?: string, type?: (string|null), display?: (null|array{width?: (int|null), height?: (int|null), touch?: (bool|null), size?: (int|float|null)}|stdClass)}), browser?: (stdClass|array{name?: (string|null), manufacturer?: string, version?: (stdClass|string|null), type?: (string|null), bits?: (int|null), modus?: (string|null)}), os?: (stdClass|array{name?: (string|null), marketingName?: (string|null), manufacturer?: string, version?: (stdClass|string|null), bits?: (int|null)}), engine?: (stdClass|array{name?: (string|null), manufacturer?: string, version?: (stdClass|string|null)})} $data
      *
      * @throws NotFoundException
      * @throws UnexpectedValueException

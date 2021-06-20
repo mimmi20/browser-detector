@@ -20,11 +20,9 @@ use stdClass;
 use UaResult\Company\Company;
 use UaResult\Engine\Engine;
 use UaResult\Engine\EngineInterface;
-use UnexpectedValueException;
 
 use function array_key_exists;
 use function assert;
-use function is_string;
 
 final class EngineFactory
 {
@@ -40,9 +38,7 @@ final class EngineFactory
 
     /**
      * @param array<string, (string|stdClass|null)> $data
-     *
-     * @throws NotFoundException
-     * @throws UnexpectedValueException
+     * @phpstan-param array{name?: string|null, manufacturer?: string, version?: stdClass|string|null} $data
      */
     public function fromArray(LoggerInterface $logger, array $data, string $useragent): EngineInterface
     {
@@ -52,9 +48,6 @@ final class EngineFactory
 
         $name    = $data['name'];
         $version = $this->getVersion($data['version'], $useragent, $logger);
-
-        assert(is_string($name) || null === $name);
-        assert(is_string($data['manufacturer']));
 
         try {
             $manufacturer = $this->companyLoader->load($data['manufacturer'], $useragent);

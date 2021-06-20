@@ -23,6 +23,7 @@ interface DeviceParserInterface
      * Gets the information about the browser by User Agent
      *
      * @return array<int, (OsInterface|DeviceInterface|null)>
+     * @phpstan-return array(0:DeviceInterface, 1:OsInterface|null)
      *
      * @throws NotFoundException
      * @throws UnexpectedValueException
@@ -31,6 +32,7 @@ interface DeviceParserInterface
 
     /**
      * @return array<int, (OsInterface|DeviceInterface|null)>
+     * @phpstan-return array(0:DeviceInterface, 1:OsInterface|null)
      *
      * @throws NotFoundException
      * @throws UnexpectedValueException

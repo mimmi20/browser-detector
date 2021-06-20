@@ -13,7 +13,6 @@ declare(strict_types = 1);
 namespace BrowserDetector;
 
 use BrowserDetector\Cache\Cache;
-use BrowserDetector\Loader\CompanyLoader;
 use BrowserDetector\Loader\CompanyLoaderFactory;
 use BrowserDetector\Loader\Helper\Filter;
 use BrowserDetector\Parser\BrowserParserFactory;
@@ -24,10 +23,6 @@ use JsonClass\Json;
 use Psr\Log\LoggerInterface;
 use Psr\SimpleCache\CacheInterface as PsrCacheInterface;
 use UaNormalizer\NormalizerFactory;
-
-use function assert;
-use function get_class;
-use function sprintf;
 
 final class DetectorFactory
 {
@@ -50,7 +45,6 @@ final class DetectorFactory
             $companyLoaderFactory = new CompanyLoaderFactory($jsonParser, new Filter());
 
             $companyLoader = $companyLoaderFactory();
-            assert($companyLoader instanceof CompanyLoader, sprintf('$companyLoader should be an instance of %s, but is %s', CompanyLoader::class, get_class($companyLoader)));
 
             $platformParserFactory = new PlatformParserFactory($this->logger, $jsonParser, $companyLoader);
             $platformParser        = $platformParserFactory();

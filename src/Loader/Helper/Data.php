@@ -20,7 +20,6 @@ use SplFileInfo;
 use stdClass;
 
 use function array_key_exists;
-use function assert;
 use function count;
 use function file_get_contents;
 use function sprintf;
@@ -56,11 +55,12 @@ final class Data implements DataInterface
         }
 
         foreach ($this->finder as $file) {
-            assert($file instanceof SplFileInfo);
             $path    = $file->getPathname();
-            $content = file_get_contents($path);
+            $content = @file_get_contents($path);
 
-            assert(false !== $content, sprintf('could not read file "%s"', $path));
+            if (false === $content) {
+                throw new RuntimeException(sprintf('could not read file "%s"', $path));
+            }
 
             try {
                 $fileData = $this->json->decode($content, false);

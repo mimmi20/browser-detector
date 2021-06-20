@@ -78,7 +78,6 @@ final class DataTest extends TestCase
         $jsonParser = $this->getMockBuilder(JsonInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
-
         $jsonParser
             ->expects(self::once())
             ->method('decode')
@@ -91,6 +90,57 @@ final class DataTest extends TestCase
 
         $this->expectException(RuntimeException::class);
         $this->expectExceptionMessage('file "vfs://root/bot.json" contains invalid json');
+        $this->expectExceptionCode(0);
+        $object();
+    }
+
+    public function testInvokeFail2(): void
+    {
+        $file = $this->getMockBuilder(SplFileInfo::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $file
+            ->expects(self::once())
+            ->method('getPathname')
+            ->willReturn(vfsStream::url(self::DATA_PATH . '/bot2.json'));
+
+        $iterator = $this->getMockBuilder(Iterator::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $iterator
+            ->expects(self::once())
+            ->method('current')
+            ->willReturn($file);
+        $iterator
+            ->expects(self::once())
+            ->method('valid')
+            ->willReturnCallback(
+                static function (): bool {
+                    static $i = 0;
+                    $return   = false;
+                    if (0 === $i) {
+                        $return = true;
+                    }
+
+                    ++$i;
+
+                    return $return;
+                }
+            );
+
+        $jsonParser = $this->getMockBuilder(JsonInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $jsonParser
+            ->expects(self::never())
+            ->method('decode');
+
+        assert($iterator instanceof Iterator);
+        assert($jsonParser instanceof JsonInterface);
+        $object = new Data($iterator, $jsonParser);
+
+        $this->expectException(RuntimeException::class);
+        $this->expectExceptionMessage('could not read file "vfs://root/bot2.json"');
         $this->expectExceptionCode(0);
         $object();
     }
@@ -162,5 +212,8 @@ final class DataTest extends TestCase
         self::assertTrue($object->hasItem($key));
         self::assertSame($value, $object->getItem($key));
         self::assertCount(4, $object);
+
+        self::assertFalse($object->hasItem('key3'));
+        self::assertNull($object->getItem('key3'));
     }
 }

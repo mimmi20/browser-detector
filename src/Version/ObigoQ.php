@@ -35,7 +35,7 @@ final class ObigoQ implements VersionDetectorInterface
     {
         $doMatch = preg_match('/ObigoInternetBrowser\/Q[0O]?(?P<version>[\d.]+)/', $useragent, $matches);
 
-        if (0 < $doMatch) {
+        if ($doMatch) {
             try {
                 return $this->versionFactory->set($matches['version']);
             } catch (NotNumericException $e) {
@@ -45,7 +45,7 @@ final class ObigoQ implements VersionDetectorInterface
 
         $doMatch = preg_match('/(?:obigo-browser|teleca|obigo)[\-\/]q[0o]?(?P<version>[\d.]+)/i', $useragent, $matches);
 
-        if (0 < $doMatch) {
+        if ($doMatch) {
             try {
                 return $this->versionFactory->set($matches['version']);
             } catch (NotNumericException $e) {

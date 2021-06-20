@@ -21,36 +21,36 @@ final class MobileDevice implements MobileDeviceInterface
      */
     public function isMobile(string $useragent): bool
     {
-        if (0 < preg_match('/wpdesktop|zunewp7|xblwp7|windows (phone|mobile|ce)|polaris/i', $useragent)) {
+        if (preg_match('/wpdesktop|zunewp7|xblwp7|windows (phone|mobile|ce)|polaris/i', $useragent)) {
             return true;
         }
 
-        if (0 < preg_match('/xbox|googletv|eeepc|smart-?tv|sonydtv|hbbtv|gxt_dongle_3188|apple tv|mxl661l32|nettv|crkey|lenovog780|windows iot|netcast|raspbian|bravia|tablet pc [12]\.|automobile|netgem|wordpress|webos\.tv|lgwebostv|; ?lge? ?;(?!.*(sprint|boost))/i', $useragent)) {
+        if (preg_match('/xbox|googletv|eeepc|smart-?tv|sonydtv|hbbtv|gxt_dongle_3188|apple tv|mxl661l32|nettv|crkey|lenovog780|windows iot|netcast|raspbian|bravia|tablet pc [12]\.|automobile|netgem|wordpress|webos\.tv|lgwebostv|; ?lge? ?;(?!.*(sprint|boost))/i', $useragent)) {
             return false;
         }
 
-        if (0 < preg_match('/iphone.*windows nt.*micromessenger/i', $useragent)) {
+        if (preg_match('/iphone.*windows nt.*micromessenger/i', $useragent)) {
             return true;
         }
 
-        if (0 < preg_match('/windows nt.*arm;/i', $useragent)) {
+        if (preg_match('/windows nt.*arm;/i', $useragent)) {
             return true;
         }
 
         // ignore mobile safari token if windows nt token is available
-        if (0 < preg_match('/windows nt.*(mobile safari|opera mobi|iphone)/i', $useragent)) {
+        if (preg_match('/windows nt.*(mobile safari|opera mobi|iphone)/i', $useragent)) {
             return false;
         }
 
-        if (0 < preg_match('/Puffin\/[\d\.]+WD/', $useragent)) {
+        if (preg_match('/Puffin\/[\d\.]+WD/', $useragent)) {
             return false;
         }
 
-        if (0 < preg_match('/UCWEB|Puffin\/[\d\.]+[AIWM][TP]?|TBD\d{4}|TBD[BCG]\d{3,4}/', $useragent)) {
+        if (preg_match('/UCWEB|Puffin\/[\d\.]+[AIWM][TP]?|TBD\d{4}|TBD[BCG]\d{3,4}/', $useragent)) {
             return true;
         }
 
-        if (0 < preg_match('/fbid\/desktop/i', $useragent)) {
+        if (preg_match('/fbid\/desktop/i', $useragent)) {
             return false;
         }
 

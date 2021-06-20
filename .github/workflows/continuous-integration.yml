@@ -8,7 +8,7 @@ name: "Continuous Integration"
 
 env:
   PHP_EXTENSIONS: "json, mbstring, opcache"
-  PHP_INI_VALUES: "opcache.enable=1, opcache.enable_cli=1, zend.assertions=1, assert.exception=On"
+  PHP_INI_VALUES: "opcache.enable=1, opcache.enable_cli=1, opcache.fast_shutdown=0, zend.assertions=1, assert.exception=On"
 
 jobs:
   validate:
@@ -396,7 +396,7 @@ jobs:
           verbose: true
 
       - name: "Run mutation tests with infection/infection"
-        run: "vendor/bin/infection --min-covered-msi=91 --min-msi=91 --coverage=.build/coverage"
+        run: "vendor/bin/infection --min-covered-msi=96 --min-msi=96 --git-diff-filter=AM --git-diff-base=origin/$GITHUB_BASE_REF --coverage=.build/coverage --logger-github"
 
   integration-tests:
     name: "Integration Tests with PHPUnit"

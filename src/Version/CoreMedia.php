@@ -35,7 +35,7 @@ final class CoreMedia implements VersionDetectorInterface
     {
         $doMatch = preg_match('/(?:CoreMedia v|AppleCoreMedia\/)(?P<major>\d+)\.(?P<minor>\d+)\.(?P<micro>\d+)/', $useragent, $matchesFirst);
 
-        if (0 < $doMatch) {
+        if ($doMatch) {
             try {
                 return $this->versionFactory->set(
                     $matchesFirst['major'] . '.' . $matchesFirst['minor'] . '.' . $matchesFirst['micro']

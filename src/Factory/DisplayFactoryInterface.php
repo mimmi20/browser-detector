@@ -19,6 +19,7 @@ interface DisplayFactoryInterface
 {
     /**
      * @param array<string, (int|bool|float|null)> $data
+     * @phpstan-param array{width?: int|null, height?: int|null, touch?: bool|null, size?: int|float|null} $data
      */
     public function fromArray(LoggerInterface $logger, array $data): DisplayInterface;
 }

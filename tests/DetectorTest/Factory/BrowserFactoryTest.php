@@ -30,15 +30,11 @@ use UaBrowserType\TypeLoaderInterface;
 use UaBrowserType\Unknown;
 use UaResult\Browser\Browser;
 use UaResult\Company\CompanyInterface;
-use UnexpectedValueException;
 
 use function assert;
 
 final class BrowserFactoryTest extends TestCase
 {
-    /**
-     * @throws UnexpectedValueException
-     */
     public function testFromEmptyArray(): void
     {
         $companyLoader = $this->getMockBuilder(CompanyLoaderInterface::class)
@@ -101,7 +97,6 @@ final class BrowserFactoryTest extends TestCase
     /**
      * @throws InvalidArgumentException
      * @throws ExpectationFailedException
-     * @throws UnexpectedValueException
      */
     public function testFromArrayWithFoundType(): void
     {
@@ -192,7 +187,6 @@ final class BrowserFactoryTest extends TestCase
     /**
      * @throws InvalidArgumentException
      * @throws ExpectationFailedException
-     * @throws UnexpectedValueException
      */
     public function testFromArrayWithFoundTypeAndVersionString(): void
     {
@@ -289,7 +283,6 @@ final class BrowserFactoryTest extends TestCase
     /**
      * @throws InvalidArgumentException
      * @throws ExpectationFailedException
-     * @throws UnexpectedValueException
      */
     public function testFromArrayWithFoundTypeAndNullObjectVersion(): void
     {
@@ -382,7 +375,6 @@ final class BrowserFactoryTest extends TestCase
     /**
      * @throws InvalidArgumentException
      * @throws ExpectationFailedException
-     * @throws UnexpectedValueException
      */
     public function testFromArrayWithFoundTypeAndFixedVersionObject(): void
     {
@@ -481,7 +473,6 @@ final class BrowserFactoryTest extends TestCase
     /**
      * @throws InvalidArgumentException
      * @throws ExpectationFailedException
-     * @throws UnexpectedValueException
      */
     public function testFromArrayWithFoundTypeAndVersionDetectionClass(): void
     {
@@ -577,7 +568,6 @@ final class BrowserFactoryTest extends TestCase
     /**
      * @throws InvalidArgumentException
      * @throws ExpectationFailedException
-     * @throws UnexpectedValueException
      */
     public function testFromArrayWithFoundTypeAndVersionDetectionFactory(): void
     {
@@ -671,7 +661,6 @@ final class BrowserFactoryTest extends TestCase
     /**
      * @throws InvalidArgumentException
      * @throws ExpectationFailedException
-     * @throws UnexpectedValueException
      */
     public function testFromArrayWithFoundTypeAndFixedVersionObjectAndNoSearch(): void
     {
@@ -764,7 +753,6 @@ final class BrowserFactoryTest extends TestCase
     /**
      * @throws InvalidArgumentException
      * @throws ExpectationFailedException
-     * @throws UnexpectedValueException
      */
     public function testFromArrayWithFoundTypeAndFixedVersionObjectAndSearch(): void
     {
@@ -876,8 +864,6 @@ final class BrowserFactoryTest extends TestCase
     /**
      * @throws InvalidArgumentException
      * @throws ExpectationFailedException
-     * @throws NotFoundException
-     * @throws UnexpectedValueException
      */
     public function testFromEmptyArrayWithCompanyError(): void
     {
@@ -968,8 +954,6 @@ final class BrowserFactoryTest extends TestCase
     /**
      * @throws InvalidArgumentException
      * @throws ExpectationFailedException
-     * @throws NotFoundException
-     * @throws UnexpectedValueException
      */
     public function testFromEmptyArrayWithTypeError(): void
     {

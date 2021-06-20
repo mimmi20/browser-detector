@@ -37,7 +37,7 @@ final class Goanna implements VersionDetectorInterface
         // lastest version: version on "Goanna" token
         $doMatch = preg_match('/Goanna\/(?P<version>\d\.[\d\.]*)/', $useragent, $matchesFirst);
 
-        if (0 < $doMatch) {
+        if ($doMatch) {
             try {
                 return $this->versionFactory->set($matchesFirst['version']);
             } catch (NotNumericException $e) {
@@ -50,7 +50,7 @@ final class Goanna implements VersionDetectorInterface
         // second version: version on "rv:" token
         $doMatch = preg_match('/rv\:(?P<version>\d\.[\d\.]*)/', $useragent, $matchesSecond);
 
-        if (0 < $doMatch && false !== mb_stripos($useragent, 'goanna')) {
+        if ($doMatch && false !== mb_stripos($useragent, 'goanna')) {
             try {
                 return $this->versionFactory->set($matchesSecond['version']);
             } catch (NotNumericException $e) {

@@ -25,8 +25,6 @@ use UnexpectedValueException;
 
 use function array_key_exists;
 use function assert;
-use function is_int;
-use function is_string;
 use function version_compare;
 
 final class PlatformFactory
@@ -43,6 +41,7 @@ final class PlatformFactory
 
     /**
      * @param array<string, (string|stdClass|int|null)> $data
+     * @phpstan-param array{name?: string|null, marketingName?: string|null, manufacturer?: string, version?: stdClass|string|null, bits?: int|null} $data
      *
      * @throws NotFoundException
      * @throws UnexpectedValueException
@@ -59,13 +58,7 @@ final class PlatformFactory
         $marketingName = $data['marketingName'];
         $bits          = $data['bits'];
 
-        assert(!is_int($data['version']));
         $version = $this->getVersion($data['version'], $useragent, $logger);
-
-        assert(is_string($name) || null === $name);
-        assert(is_string($marketingName) || null === $marketingName);
-        assert(is_int($bits) || null === $bits);
-        assert(is_string($data['manufacturer']));
 
         try {
             $manufacturer = $this->companyLoader->load($data['manufacturer'], $useragent);

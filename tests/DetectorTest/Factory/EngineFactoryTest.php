@@ -27,15 +27,11 @@ use SebastianBergmann\RecursionContext\InvalidArgumentException;
 use stdClass;
 use UaResult\Company\CompanyInterface;
 use UaResult\Engine\EngineInterface;
-use UnexpectedValueException;
 
 use function assert;
 
 final class EngineFactoryTest extends TestCase
 {
-    /**
-     * @throws UnexpectedValueException
-     */
     public function testFromEmptyArray(): void
     {
         $companyLoader = $this->getMockBuilder(CompanyLoaderInterface::class)
@@ -94,7 +90,6 @@ final class EngineFactoryTest extends TestCase
     /**
      * @throws InvalidArgumentException
      * @throws ExpectationFailedException
-     * @throws UnexpectedValueException
      */
     public function testFromArrayWithVersionString(): void
     {
@@ -173,7 +168,6 @@ final class EngineFactoryTest extends TestCase
     /**
      * @throws InvalidArgumentException
      * @throws ExpectationFailedException
-     * @throws UnexpectedValueException
      */
     public function testFromArrayWithFoundTypeAndNullObjectVersion(): void
     {
@@ -248,7 +242,6 @@ final class EngineFactoryTest extends TestCase
     /**
      * @throws InvalidArgumentException
      * @throws ExpectationFailedException
-     * @throws UnexpectedValueException
      */
     public function testFromArrayWithFixedVersionObject(): void
     {
@@ -329,7 +322,6 @@ final class EngineFactoryTest extends TestCase
     /**
      * @throws InvalidArgumentException
      * @throws ExpectationFailedException
-     * @throws UnexpectedValueException
      */
     public function testFromArrayWithVersionDetectionClass(): void
     {
@@ -407,7 +399,6 @@ final class EngineFactoryTest extends TestCase
     /**
      * @throws InvalidArgumentException
      * @throws ExpectationFailedException
-     * @throws UnexpectedValueException
      */
     public function testFromArrayWithVersionDetectionFactory(): void
     {
@@ -425,9 +416,6 @@ final class EngineFactoryTest extends TestCase
 
         $v              = new stdClass();
         $v->factory     = '\BrowserDetector\Version\TestFactory';
-        $version2       = $this->getMockBuilder(VersionInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
         $versionFactory = $this->getMockBuilder(VersionFactoryInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
@@ -486,7 +474,6 @@ final class EngineFactoryTest extends TestCase
     /**
      * @throws InvalidArgumentException
      * @throws ExpectationFailedException
-     * @throws UnexpectedValueException
      */
     public function testFromArrayWithFixedVersionObjectAndNoSearch(): void
     {
@@ -501,10 +488,6 @@ final class EngineFactoryTest extends TestCase
             ->method('load')
             ->with('unknown')
             ->willReturn($company);
-
-        $version1 = $this->getMockBuilder(VersionInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
 
         $v              = new stdClass();
         $v->class       = 'VersionFactory';
@@ -565,7 +548,6 @@ final class EngineFactoryTest extends TestCase
     /**
      * @throws InvalidArgumentException
      * @throws ExpectationFailedException
-     * @throws UnexpectedValueException
      */
     public function testFromArrayWithFixedVersionObjectAndSearch(): void
     {
@@ -652,17 +634,12 @@ final class EngineFactoryTest extends TestCase
     /**
      * @throws InvalidArgumentException
      * @throws ExpectationFailedException
-     * @throws NotFoundException
-     * @throws UnexpectedValueException
      */
     public function testFromEmptyArrayWithCompanyError(): void
     {
         $companyName   = 'test-company';
         $useragent     = 'this is a test';
         $exception     = new NotFoundException('failed');
-        $company       = $this->getMockBuilder(CompanyInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
         $companyLoader = $this->getMockBuilder(CompanyLoaderInterface::class)
             ->disableOriginalConstructor()
             ->getMock();

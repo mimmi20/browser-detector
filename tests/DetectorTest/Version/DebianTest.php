@@ -81,7 +81,7 @@ final class DebianTest extends TestCase
     {
         return [
             [
-                'Mozilla/5.0 (X11; U; Linux i686; de-de@euro) AppleWebKit/531.2+ (KHTML, like Gecko) Version/5.0 Safari/531.2+ Debian/squeeze (2.30.6-1) Epiphany/2.30.6',
+                'Mozilla/5.0 (X11; U; Linux i686; de-de@euro) AppleWebKit/531.2+ (KHTML, like Gecko) Version/5.0 Safari/531.2+ Debian/SQUEEZE (2.30.6-1) Epiphany/2.30.6',
                 '6.0.0',
             ],
             [
