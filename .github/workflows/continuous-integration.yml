@@ -23,7 +23,7 @@ jobs:
 
       matrix:
         operating-system:
-          - "ubuntu-latest"
+          - "ubuntu-20.04"
 
         php-version:
           - "7.4"
@@ -64,7 +64,8 @@ jobs:
 
       matrix:
         operating-system:
-          - "ubuntu-latest"
+          - "ubuntu-18.04"
+          - "ubuntu-20.04"
 
         php-version:
           - "7.4"
@@ -118,7 +119,7 @@ jobs:
 
       matrix:
         operating-system:
-          - "ubuntu-latest"
+          - "ubuntu-20.04"
 
         php-version:
           - "7.4"
@@ -170,7 +171,7 @@ jobs:
 
       matrix:
         operating-system:
-          - "ubuntu-latest"
+          - "ubuntu-20.04"
 
         php-version:
           - "7.4"
@@ -223,7 +224,7 @@ jobs:
 
       matrix:
         operating-system:
-          - "ubuntu-latest"
+          - "ubuntu-20.04"
 
         php-version:
           - "7.4"
@@ -275,9 +276,10 @@ jobs:
 
       matrix:
         operating-system:
-          - "ubuntu-latest"
-          - "windows-latest"
-          - "macos-latest"
+          - "ubuntu-18.04"
+          - "ubuntu-20.04"
+          - "windows-2019"
+          - "macos-10.15"
 
         php-version:
           - "7.4"
@@ -289,13 +291,13 @@ jobs:
           - false
 
         include:
-          - operating-system: "ubuntu-latest"
+          - operating-system: "ubuntu-20.04"
             php-version: "8.0"
             continue-on-error: true
-          - operating-system: "windows-latest"
+          - operating-system: "windows-2019"
             php-version: "8.0"
             continue-on-error: true
-          - operating-system: "macos-latest"
+          - operating-system: "macos-10.15"
             php-version: "8.0"
             continue-on-error: true
 
@@ -343,7 +345,7 @@ jobs:
 
       matrix:
         operating-system:
-          - "ubuntu-latest"
+          - "ubuntu-20.04"
 
         php-version:
           - "7.4"
@@ -353,7 +355,6 @@ jobs:
 
         coverage-drivers:
           - "xdebug"
-          - "pcov"
 
     steps:
       - name: "Checkout"
@@ -412,7 +413,7 @@ jobs:
 
       matrix:
         operating-system:
-          - "ubuntu-latest"
+          - "ubuntu-20.04"
 
         php-version:
           - "7.4"
