@@ -120,7 +120,7 @@ final class Detector implements DetectorInterface
 
     private function parse(GenericRequest $request): Result
     {
-        $deviceUa     = $this->normalizer->normalize($request->getDeviceUserAgent());
+        $deviceUa     = (string) $this->normalizer->normalize($request->getDeviceUserAgent());
         $deviceParser = $this->deviceParser;
 
         $defaultDevice = new Device(
@@ -154,7 +154,7 @@ final class Detector implements DetectorInterface
             $platformParser = $this->platformParser;
 
             try {
-                $platform = $platformParser->parse($this->normalizer->normalize($request->getPlatformUserAgent()));
+                $platform = $platformParser->parse((string) $this->normalizer->normalize($request->getPlatformUserAgent()));
             } catch (UnexpectedValueException $e) {
                 $this->logger->warning($e);
                 $platform = $defaultPlatform;
@@ -178,8 +178,8 @@ final class Detector implements DetectorInterface
             new Version('0')
         );
 
-        $browserUa = $this->normalizer->normalize($request->getBrowserUserAgent());
-        $engineUa  = $this->normalizer->normalize($request->getEngineUserAgent());
+        $browserUa = (string) $this->normalizer->normalize($request->getBrowserUserAgent());
+        $engineUa  = (string) $this->normalizer->normalize($request->getEngineUserAgent());
 
         try {
             [$browser, $engine] = $browserParser->parse($browserUa);
