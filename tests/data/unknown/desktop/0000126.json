@@ -1,44 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "curl/7.18.0 (i386-sun-solaris2) libcurl/7.18.0 OpenSSL/0.9.8h zlib/1.2.3 libidn/1.11"
-    },
-    "device": {
-      "deviceName": "general Desktop",
-      "marketingName": "general Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop"
-    },
-    "browser": {
-      "name": "cURL",
-      "modus": null,
-      "version": "7.18.0",
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "bot"
-    },
-    "os": {
-      "name": "Solaris",
-      "marketingName": "Solaris",
-      "version": "2.0.0",
-      "manufacturer": "oracle",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "curl/7.18.0 (i386-portbld-freebsd7.1) libcurl/7.18.0 OpenSSL/0.9.8j zlib/1.2.3 libidn/1.9"
     },
     "device": {
@@ -629,7 +591,7 @@
       "modus": null,
       "version": "7.15.1",
       "manufacturer": "unknown",
-      "bits": null,
+      "bits": 32,
       "type": "bot"
     },
     "os": {
@@ -637,7 +599,7 @@
       "marketingName": "Solaris",
       "version": "2.8.0",
       "manufacturer": "oracle",
-      "bits": null
+      "bits": 32
     },
     "engine": {
       "name": null,
@@ -933,7 +895,7 @@
       "modus": null,
       "version": "7.13.2",
       "manufacturer": "unknown",
-      "bits": null,
+      "bits": 32,
       "type": "bot"
     },
     "os": {
@@ -941,7 +903,7 @@
       "marketingName": "Solaris",
       "version": "2.8.0",
       "manufacturer": "oracle",
-      "bits": null
+      "bits": 32
     },
     "engine": {
       "name": null,
@@ -3796,6 +3758,44 @@
     "engine": {
       "name": "Gecko",
       "version": "1.6.0-beta",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; U; AIX 000C1FCF4C00; en-US; rv:1.4) Gecko/20030811"
+    },
+    "device": {
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop"
+    },
+    "browser": {
+      "name": "Mozilla",
+      "modus": null,
+      "version": "5.0.0",
+      "manufacturer": "mozilla-foundation",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "AIX",
+      "marketingName": "AIX",
+      "version": "000.0.0",
+      "manufacturer": "ibm",
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "1.4.0",
       "manufacturer": "mozilla-foundation"
     }
   }

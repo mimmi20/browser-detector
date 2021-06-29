@@ -1,6 +1,44 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Windows; U; Windows NT 6.0; de; rv:1.9.2.6) Gecko/20100625 Firefox/19.0 (de) Anonymisiert durch AlMiSoft Browser-Anonymisierer 77707596"
+    },
+    "device": {
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop"
+    },
+    "browser": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "19.0.0",
+      "manufacturer": "mozilla-foundation",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Windows NT 6.0",
+      "marketingName": "Windows Vista",
+      "version": "6.0.0",
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "1.9.2.6",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Windows; U; ; de; rv:1.9.2.6) Gecko/20100625 Firefox/28.0 (de) Anonymisiert durch AlMiSoft Browser-Anonymisierer 48557236"
     },
     "device": {
@@ -1273,7 +1311,7 @@
     "browser": {
       "name": "Conkeror",
       "modus": null,
-      "version": "1.0.0-patch",
+      "version": "1.0.0-dev",
       "manufacturer": "unknown",
       "bits": null,
       "type": "browser"
@@ -3759,44 +3797,6 @@
       "name": "Gecko",
       "version": "6.0.2",
       "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (X11; FreeBSD 8.3-STABLE i386) Presto/2.12.388 Version/12.16"
-    },
-    "device": {
-      "deviceName": "general Desktop",
-      "marketingName": "general Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop"
-    },
-    "browser": {
-      "name": "Opera",
-      "modus": null,
-      "version": "12.16.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "FreeBSD",
-      "marketingName": "FreeBSD",
-      "version": "8.3.0",
-      "manufacturer": "free-bsd-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.12.388",
-      "manufacturer": "opera"
     }
   }
 ]

@@ -1,6 +1,158 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (X11; Linux x86_64) Cobalt/16.161623-devel (unlike Gecko) V8/6.5.254.28 Starboard/6"
+    },
+    "device": {
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop"
+    },
+    "browser": {
+      "name": "Cobalt Application Container",
+      "modus": null,
+      "version": "16.161623.0-dev",
+      "manufacturer": "google",
+      "bits": 64,
+      "type": "application"
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": 64
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "rest-client/2.0.0 (linux-gnu x86_64) ruby/2.4.4p296"
+    },
+    "device": {
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop"
+    },
+    "browser": {
+      "name": "Generic Ruby Crawler",
+      "modus": null,
+      "version": "2.4.4-patch+296",
+      "manufacturer": "unknown",
+      "bits": 64,
+      "type": "bot"
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": 64
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; Linux x86_64) Cobalt/16.163657-devel (unlike Gecko) V8/6.5.254.28 Starboard/6, _DESKTOP__/ (, , )"
+    },
+    "device": {
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop"
+    },
+    "browser": {
+      "name": "Cobalt Application Container",
+      "modus": null,
+      "version": "16.163657.0-dev",
+      "manufacturer": "google",
+      "bits": 64,
+      "type": "application"
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": 64
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla 5.0 (Windows NT 5.2; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0"
+    },
+    "device": {
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop"
+    },
+    "browser": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "55.0.0",
+      "manufacturer": "mozilla-foundation",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Windows NT 5.2",
+      "marketingName": "Windows XP",
+      "version": "5.2.0",
+      "manufacturer": "microsoft",
+      "bits": 64
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "55.0.0",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/2017.10 Iridium/2017.10 Safari/537.36 Chrome/61.0.3163.100"
     },
     "device": {
@@ -2312,7 +2464,7 @@
     "os": {
       "name": "FreeBSD",
       "marketingName": "FreeBSD",
-      "version": "4.10.0-patch",
+      "version": "4.10.0-dev",
       "manufacturer": "free-bsd-foundation",
       "bits": null
     },
@@ -2988,7 +3140,7 @@
     "browser": {
       "name": "Links",
       "modus": null,
-      "version": "0.97.0-patch",
+      "version": "0.97.0-dev+3",
       "manufacturer": "mikulas-patocka",
       "bits": null,
       "type": "browser"
@@ -3026,7 +3178,7 @@
     "browser": {
       "name": "Links",
       "modus": null,
-      "version": "0.99.0-patch",
+      "version": "0.99.0-dev+14",
       "manufacturer": "mikulas-patocka",
       "bits": null,
       "type": "browser"
@@ -3064,7 +3216,7 @@
     "browser": {
       "name": "Links",
       "modus": null,
-      "version": "0.99.0-patch",
+      "version": "0.99.0-dev+8",
       "manufacturer": "mikulas-patocka",
       "bits": null,
       "type": "browser"
@@ -3140,7 +3292,7 @@
     "browser": {
       "name": "Links",
       "modus": null,
-      "version": "2.1.0-patch",
+      "version": "2.1.0-dev+14",
       "manufacturer": "mikulas-patocka",
       "bits": null,
       "type": "browser"
@@ -3178,7 +3330,7 @@
     "browser": {
       "name": "Links",
       "modus": null,
-      "version": "2.1.0-patch",
+      "version": "2.1.0-dev+14",
       "manufacturer": "mikulas-patocka",
       "bits": null,
       "type": "browser"
@@ -3216,7 +3368,7 @@
     "browser": {
       "name": "Links",
       "modus": null,
-      "version": "2.1.0-patch",
+      "version": "2.1.0-dev+15",
       "manufacturer": "mikulas-patocka",
       "bits": null,
       "type": "browser"
@@ -3254,7 +3406,7 @@
     "browser": {
       "name": "Links",
       "modus": null,
-      "version": "2.1.0-patch",
+      "version": "2.1.0-dev+15",
       "manufacturer": "mikulas-patocka",
       "bits": 64,
       "type": "browser"
@@ -3650,158 +3802,6 @@
       "name": "Gecko",
       "version": "1.6.0",
       "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/24.4 (X11; I; Linux 2.4 i686; U)  [en-ES]"
-    },
-    "device": {
-      "deviceName": "Linux Desktop",
-      "marketingName": "Linux Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop"
-    },
-    "browser": {
-      "name": "Mozilla",
-      "modus": null,
-      "version": "24.4.0",
-      "manufacturer": "mozilla-foundation",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/3.04 (X11; I; SunOS 5.5.1 sun4u) via HTTP/1.0 depraved-midget.onlinescanner.com/"
-    },
-    "device": {
-      "deviceName": "general Desktop",
-      "marketingName": "general Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop"
-    },
-    "browser": {
-      "name": "Mozilla",
-      "modus": null,
-      "version": "3.04.0",
-      "manufacturer": "mozilla-foundation",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "SunOS",
-      "marketingName": "SunOS",
-      "version": "5.5.1",
-      "manufacturer": "oracle",
-      "bits": null
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; Mozilla 4; Linux; Maxthon)"
-    },
-    "device": {
-      "deviceName": "Linux Desktop",
-      "marketingName": "Linux Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop"
-    },
-    "browser": {
-      "name": "Maxthon",
-      "modus": null,
-      "version": null,
-      "manufacturer": "maxthon",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; NetBSD)"
-    },
-    "device": {
-      "deviceName": "general Desktop",
-      "marketingName": "general Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop"
-    },
-    "browser": {
-      "name": "Internet Explorer",
-      "modus": null,
-      "version": "6.0.0",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "NetBSD",
-      "marketingName": "NetBSD",
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": "Trident",
-      "version": null,
-      "manufacturer": "microsoft"
     }
   }
 ]

@@ -1,6 +1,44 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10_5_8; de-de) AppleWebKit/531.22.7 (KHTML, like Gecko)"
+    },
+    "device": {
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop"
+    },
+    "browser": {
+      "name": "Safari",
+      "modus": null,
+      "version": null,
+      "manufacturer": "apple",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": "10.5.8",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "531.22.7",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_5_8) AppleWebKit/535.7 (KHTML, like Gecko) Chrome/16.0.912.75 Safari/535.7"
     },
     "device": {
@@ -2655,7 +2693,7 @@
     },
     "engine": {
       "name": "Gecko",
-      "version": "1.9.2.16-patch",
+      "version": "1.9.2.16-dev",
       "manufacturer": "mozilla-foundation"
     }
   },
@@ -3758,44 +3796,6 @@
     "engine": {
       "name": "WebKit",
       "version": "534.7.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Airmail 1.2 rv:211 (Macintosh; Mac OS X 10.9.1; de_DE)"
-    },
-    "device": {
-      "deviceName": "Macintosh",
-      "marketingName": "Macintosh",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop"
-    },
-    "browser": {
-      "name": "Airmail",
-      "modus": null,
-      "version": "1.2.0",
-      "manufacturer": "bloop",
-      "bits": null,
-      "type": "email-client"
-    },
-    "os": {
-      "name": "Mac OS X",
-      "marketingName": "Mac OS X",
-      "version": "10.9.1",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
       "manufacturer": "apple"
     }
   }

@@ -1,44 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (iPod; CPU iPhone OS 6_0_1 like Mac OS X; de-de) AppleWebKit/536.26 (KHTML, like Gecko) CriOS/23.0.1271.91 Mobile/10A523 Safari/8536.25"
-    },
-    "device": {
-      "deviceName": "iPod Touch",
-      "marketingName": "iPod Touch",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-media-player"
-    },
-    "browser": {
-      "name": "Chrome for iOS",
-      "modus": null,
-      "version": "23.0.1271.91",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "6.0.1",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "536.26.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (iPod; CPU iPhone OS 6_0_1 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Mobile/10A523 [FBAN/FBIOS;FBAV/5.1;FBBV/68414;FBDV/iPod4,1;FBMD/iPod touch;FBSN/iPhone OS;FBSV/6.0.1;FBSS/2; FBCR/;FBID/phone;FBLC/de_DE]"
     },
     "device": {
@@ -1235,7 +1197,7 @@
     "browser": {
       "name": "iTunes",
       "modus": null,
-      "version": "5.1.1",
+      "version": "3.0.0",
       "manufacturer": "apple",
       "bits": null,
       "type": "application"
@@ -2269,7 +2231,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.1.0-beta+4",
+      "version": "11.1.1",
       "manufacturer": "apple",
       "bits": null
     },
@@ -3796,6 +3758,44 @@
     "engine": {
       "name": "WebKit",
       "version": "601.1.46",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPod touch; CPU iPhone OS 11_1_1 like Mac OS X) AppleWebKit/604.3.5 (KHTML, like Gecko) Mobile/15B150 Snapchat/10.22.2.0 (iPod7,1; iOS 11.1.1; gzip)"
+    },
+    "device": {
+      "deviceName": "iPod Touch 7,1",
+      "marketingName": "iPod Touch (6th Gen.)",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 1136,
+        "height": 640,
+        "touch": true,
+        "size": 4
+      },
+      "type": "mobile-media-player"
+    },
+    "browser": {
+      "name": "Snapchat",
+      "modus": null,
+      "version": "10.22.2.0",
+      "manufacturer": "snap",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.1.1",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "604.3.5",
       "manufacturer": "apple"
     }
   }

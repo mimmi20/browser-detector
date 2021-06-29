@@ -1205,7 +1205,7 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "6.0.1",
+      "version": "23.0.0",
       "manufacturer": "google",
       "bits": null
     },
@@ -1813,7 +1813,7 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "8.1.0",
+      "version": "27.0.0",
       "manufacturer": "google",
       "bits": null
     },
@@ -1965,7 +1965,7 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "7.1.2",
+      "version": "25.0.0",
       "manufacturer": "google",
       "bits": null
     },
@@ -2124,6 +2124,44 @@
     "engine": {
       "name": "Blink",
       "version": "87.0.4280.101",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; Venus_V3_5570) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.105 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Venus V3 5570",
+      "marketingName": "Venus V3 5570",
+      "manufacturer": "vestel",
+      "brand": "vestel",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "89.0.4389.105",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "89.0.4389.105",
       "manufacturer": "google"
     }
   }

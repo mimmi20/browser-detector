@@ -1,120 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "RubyBrowser/45.7.12 (iPhone; iOS 14.0; Scale/3.00)"
-    },
-    "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "RubyBrowser",
-      "modus": null,
-      "version": "45.7.12",
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "14.0.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/123.0.328412499 Mobile/17G80 Safari/604.1"
-    },
-    "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Google App",
-      "modus": null,
-      "version": "123.0.328412499",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "13.6.1",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 11_4_1 like Mac OS X) AppleWebKit/604.1.34 (KHTML, like Gecko) GSA/77.0.255294728 Mobile/15G77 Safari/604.1"
-    },
-    "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Google App",
-      "modus": null,
-      "version": "77.0.255294728",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.4.1",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "604.1.34",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 12_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/122.1.328371734 Mobile/16G102 Safari/604.1"
     },
     "device": {
@@ -255,7 +141,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.1.0-beta+4",
+      "version": "11.1.1",
       "manufacturer": "apple",
       "bits": null
     },
@@ -1281,7 +1167,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "12.4.0",
+      "version": "12.4.1",
       "manufacturer": "apple",
       "bits": null
     },
@@ -1319,7 +1205,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "12.4.0",
+      "version": "12.4.1",
       "manufacturer": "apple",
       "bits": null
     },
@@ -2611,7 +2497,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "12.4.0",
+      "version": "12.4.1",
       "manufacturer": "apple",
       "bits": null
     },
@@ -3181,7 +3067,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "12.4.0",
+      "version": "12.4.1",
       "manufacturer": "apple",
       "bits": null
     },
@@ -3796,6 +3682,120 @@
     "engine": {
       "name": "WebKit",
       "version": "602.1.50",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/132.0.339365841 Mobile/15E148 Safari/604.1"
+    },
+    "device": {
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Google App",
+      "modus": null,
+      "version": "132.0.339365841",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.3.0",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0 EdgiOS/45.10.3 Mobile/15E148 Safari/605.1.15"
+    },
+    "device": {
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Edge Mobile for iOS",
+      "modus": null,
+      "version": "45.10.3",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.3.0",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "RubyBrowser/45.10.3 (iPhone; iOS 14.1; Scale/2.00)"
+    },
+    "device": {
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "RubyBrowser",
+      "modus": null,
+      "version": "45.10.3",
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "14.1.0",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
       "manufacturer": "apple"
     }
   }

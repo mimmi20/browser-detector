@@ -65,7 +65,7 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": null,
+      "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
     },
@@ -445,7 +445,7 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": null,
+      "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
     },
@@ -723,6 +723,82 @@
   },
   {
     "headers": {
+      "user-agent": "RhythmDisplayAdSDK-E-Android SAMSUNG-SGH-I717-2.3.6-43074"
+    },
+    "device": {
+      "deviceName": "SGH-I717",
+      "marketingName": "Galaxy Note LTE (AT&T)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 5.3
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": null,
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": null,
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "RhythmDisplayAdSDK-E-Android SAMSUNG-SGH-I727-2.3.6-43074"
+    },
+    "device": {
+      "deviceName": "SGH-I727",
+      "marketingName": "Galaxy S2 Skyrocket",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 4.3
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": null,
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": null,
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Instagram 5.1.7 Android (18/4.3; 320dpi; 720x1280; samsung; SGH-I747M; d2can; qcom; en_CA)"
     },
     "device": {
@@ -735,6 +811,44 @@
         "height": 720,
         "touch": true,
         "size": 4.8
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": null,
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "18.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "RhythmDisplayAdSDK-E-Android SAMSUNG-SGH-I777-2.3.4-43074"
+    },
+    "device": {
+      "deviceName": "SGH-I777",
+      "marketingName": "Galaxy S2",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 4.3
       },
       "type": "smartphone"
     },
@@ -1319,7 +1433,7 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": null,
+      "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
     },
@@ -1433,7 +1547,7 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": null,
+      "version": "15.0.0",
       "manufacturer": "google",
       "bits": null
     },
@@ -2041,7 +2155,7 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": null,
+      "version": "17.0.0",
       "manufacturer": "google",
       "bits": null
     },
@@ -2079,7 +2193,7 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": null,
+      "version": "17.0.0",
       "manufacturer": "google",
       "bits": null
     },
@@ -2155,7 +2269,7 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": null,
+      "version": "19.0.0",
       "manufacturer": "google",
       "bits": null
     },
@@ -2193,7 +2307,7 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": null,
+      "version": "18.0.0",
       "manufacturer": "google",
       "bits": null
     },
@@ -2535,7 +2649,7 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": null,
+      "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
     },
@@ -2573,7 +2687,7 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": null,
+      "version": "18.0.0",
       "manufacturer": "google",
       "bits": null
     },
@@ -3661,120 +3775,6 @@
         "height": 720,
         "touch": true,
         "size": 5.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Samsung Browser",
-      "modus": null,
-      "version": "4.2.0",
-      "manufacturer": "samsung",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "6.0.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "44.0.2403.133",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; SAMSUNG SM-N9200 Build/MMB29K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/4.2 Chrome/44.0.2403.133 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "SM-N9200",
-      "marketingName": "Galaxy Note 5 Duos (China)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 2560,
-        "height": 1440,
-        "touch": true,
-        "size": 5.7
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Samsung Browser",
-      "modus": null,
-      "version": "4.2.0",
-      "manufacturer": "samsung",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "6.0.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "44.0.2403.133",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; SAMSUNG SM-N9208 Build/MMB29K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/4.2 Chrome/44.0.2403.133 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "SM-N9208",
-      "marketingName": "Galaxy Note 5 LTE (Taiwan)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 2560,
-        "height": 1440,
-        "touch": true,
-        "size": 5.7
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Samsung Browser",
-      "modus": null,
-      "version": "4.2.0",
-      "manufacturer": "samsung",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "6.0.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "44.0.2403.133",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; SAMSUNG SM-N920L Build/MMB29K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/4.2 Chrome/44.0.2403.133 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "SM-N920L",
-      "marketingName": "Galaxy Note 5 LTE (Korea)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 2560,
-        "height": 1440,
-        "touch": true,
-        "size": 5.7
       },
       "type": "smartphone"
     },

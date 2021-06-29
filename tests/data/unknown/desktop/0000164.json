@@ -1,6 +1,44 @@
 [
   {
     "headers": {
+      "user-agent": "ia_archiver/1.8 (Windows 1.0; )"
+    },
+    "device": {
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop"
+    },
+    "browser": {
+      "name": "Internet Archive Bot",
+      "modus": null,
+      "version": "1.8.0",
+      "manufacturer": "archive.org",
+      "bits": null,
+      "type": "bot"
+    },
+    "os": {
+      "name": "Windows",
+      "marketingName": "Windows",
+      "version": null,
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "ia_archiver/7.8 (Windows 4.1; )"
     },
     "device": {
@@ -3752,44 +3790,6 @@
       "name": "Ubuntu",
       "marketingName": "Ubuntu",
       "version": "5.6.0",
-      "manufacturer": "canonical",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": null,
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "WMV-SYSTEMS/1.2 (compatible; Mozilla; MSIE; Opera; Netscape; Chrome)/Apache/2.2.8 (Ubuntu) PHP/5.2.4-2ubuntu5.5 with Suhosin-Patch|"
-    },
-    "device": {
-      "deviceName": "general Desktop",
-      "marketingName": "general Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": null,
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Ubuntu",
-      "marketingName": "Ubuntu",
-      "version": "5.5.0",
       "manufacturer": "canonical",
       "bits": null
     },

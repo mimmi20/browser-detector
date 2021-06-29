@@ -1,6 +1,44 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/603.3.8 (KHTML, like Gecko)"
+    },
+    "device": {
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop"
+    },
+    "browser": {
+      "name": "Apple Mail",
+      "modus": null,
+      "version": null,
+      "manufacturer": "apple",
+      "bits": null,
+      "type": "email-client"
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": "10.10.5",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "603.3.8",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_36_89) AppleWebKit/532.85.48 (KHTML, like Gecko) Chrome/57.4.9790.5062 Safari/534.56"
     },
     "device": {
@@ -3758,44 +3796,6 @@
     "engine": {
       "name": "WebKit",
       "version": "673.5.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "iCoreService (unknown version) CFNetwork/673.3 Darwin/13.4.0 (x86_64) (iMac14%2C4)"
-    },
-    "device": {
-      "deviceName": "iMac",
-      "marketingName": "iMac",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop"
-    },
-    "browser": {
-      "name": "CFNetwork",
-      "modus": null,
-      "version": null,
-      "manufacturer": "apple",
-      "bits": 64,
-      "type": "application"
-    },
-    "os": {
-      "name": "Mac OS X",
-      "marketingName": "Mac OS X",
-      "version": "10.9.4",
-      "manufacturer": "apple",
-      "bits": 64
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "673.3.0",
       "manufacturer": "apple"
     }
   }

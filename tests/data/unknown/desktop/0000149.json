@@ -1,44 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; MSIE 10.0; Windows 95; Anonymisiert durch AlMiSoft Browser-Maulkorb 28868327; Trident/6.0; Avant Browser)"
-    },
-    "device": {
-      "deviceName": "Windows Desktop",
-      "marketingName": "Windows Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop"
-    },
-    "browser": {
-      "name": "Avant",
-      "modus": null,
-      "version": null,
-      "manufacturer": "avant-force",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Windows 95",
-      "marketingName": "Windows 95",
-      "version": "95.0.0",
-      "manufacturer": "microsoft",
-      "bits": null
-    },
-    "engine": {
-      "name": "Trident",
-      "version": "6.0.0",
-      "manufacturer": "microsoft"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/535.4 (KHTML, like Gecko) Chrome/13.0.782.41 Safari/535.4"
     },
     "device": {
@@ -2185,7 +2147,7 @@
     "browser": {
       "name": "Conkeror",
       "modus": null,
-      "version": "1.0.0-patch",
+      "version": "1.0.0-dev",
       "manufacturer": "unknown",
       "bits": null,
       "type": "browser"
@@ -3797,6 +3759,44 @@
       "name": "WebKit",
       "version": "535.3.0",
       "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/9.80 (Windows 98; U; de) Presto/2.10.289 Version/12.00"
+    },
+    "device": {
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop"
+    },
+    "browser": {
+      "name": "Opera",
+      "modus": null,
+      "version": "12.00.0",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Windows 98",
+      "marketingName": "Windows 98",
+      "version": "98.0.0",
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.10.289",
+      "manufacturer": "opera"
     }
   }
 ]
