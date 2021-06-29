@@ -1045,45 +1045,7 @@
     "browser": {
       "name": "iTunes",
       "modus": null,
-      "version": "4.2.1",
-      "manufacturer": "apple",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": null,
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "iTunes-iPod/6.1.6 (4; 8GB; dt:71)"
-    },
-    "device": {
-      "deviceName": "iPod Touch",
-      "marketingName": "iPod Touch",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-media-player"
-    },
-    "browser": {
-      "name": "iTunes",
-      "modus": null,
-      "version": "6.1.6",
+      "version": "2.0.0",
       "manufacturer": "apple",
       "bits": null,
       "type": "application"
@@ -3796,6 +3758,44 @@
     "engine": {
       "name": "WebKit",
       "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPod touch; CPU iPhone OS 10_2 like Mac OS X) AppleWebKit/602.1.32 (KHTML, like Gecko) Mobile/14C92 Twitter for iPhone"
+    },
+    "device": {
+      "deviceName": "iPod Touch",
+      "marketingName": "iPod Touch",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-media-player"
+    },
+    "browser": {
+      "name": "Twitter App",
+      "modus": null,
+      "version": null,
+      "manufacturer": "twitter",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "10.2.0",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "602.1.32",
       "manufacturer": "apple"
     }
   }
