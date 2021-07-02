@@ -20,10 +20,24 @@ use UnexpectedValueException;
 use function array_key_exists;
 use function mb_stripos;
 use function preg_match;
-use function var_dump;
 
 final class Ios implements VersionDetectorInterface
 {
+    public const SEARCHES    = [
+        'IphoneOSX',
+        'CPU OS_?',
+        'CPU iOS',
+        'CPU iPad OS',
+        'iPhone OS\;FBSV',
+        'iPhone OS',
+        'iPhone_OS',
+        'IUC\(U\;iOS',
+        'iPh OS',
+        'iosv',
+        'iPad\/',
+        'iPhone\/',
+        '(?<!Outlook-)iOS',
+    ];
     private const DARWIN_MAP = [
         '/darwin\/19/i' => '13.0',
         '/darwin\/18\.7/i' => '12.4',
@@ -192,22 +206,6 @@ final class Ios implements VersionDetectorInterface
         '1603.50' => '12.1.1',
     ];
 
-    private const SEARCHES = [
-        'IphoneOSX',
-        'CPU OS_?',
-        'CPU iOS',
-        'CPU iPad OS',
-        'iPhone OS\;FBSV',
-        'iPhone OS',
-        'iPhone_OS',
-        'IUC\(U\;iOS',
-        'iPh OS',
-        'iosv',
-        'iPad\/',
-        'iPhone\/',
-        '(?<!Outlook-)iOS',
-    ];
-
     private VersionFactoryInterface $versionFactory;
 
     private IosBuildInterface $iosBuild;
@@ -281,7 +279,6 @@ final class Ios implements VersionDetectorInterface
             try {
                 $buildVersion = $this->iosBuild->getVersion($matches['build']);
             } catch (BuildException | NotFoundException $e) {
-                var_dump($e);
                 $buildVersion = false;
             }
 

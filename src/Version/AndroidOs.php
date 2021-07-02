@@ -66,6 +66,8 @@ final class AndroidOs implements VersionDetectorInterface
                 return $this->versionFactory->set($matches['version']);
             } catch (NotNumericException $e) {
                 $this->logger->info($e);
+
+                return new NullVersion();
             }
         }
 

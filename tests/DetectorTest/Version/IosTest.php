@@ -14,13 +14,18 @@ namespace BrowserDetectorTest\Version;
 
 use BrowserDetector\Version\Ios;
 use BrowserDetector\Version\VersionFactory;
+use BrowserDetector\Version\VersionFactoryInterface;
 use BrowserDetector\Version\VersionInterface;
 use Exception;
 use IosBuild\IosBuild;
+use IosBuild\IosBuildInterface;
+use IosBuild\NotFoundException;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use SebastianBergmann\RecursionContext\InvalidArgumentException;
 use UnexpectedValueException;
+
+use function assert;
 
 final class IosTest extends TestCase
 {
@@ -133,5 +138,41 @@ final class IosTest extends TestCase
                 '6.1.3',
             ],
         ];
+    }
+
+    public function testDetectVersionFail(): void
+    {
+        $useragent = 'iOS/6.1.3 (10B329) dataaccessd/1.0';
+        $exception = new NotFoundException('not found');
+        $version   = $this->createMock(VersionInterface::class);
+
+        $versionFactory = $this->getMockBuilder(VersionFactoryInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $versionFactory
+            ->expects(self::once())
+            ->method('detectVersion')
+            ->with($useragent, Ios::SEARCHES)
+            ->willReturn($version);
+        $versionFactory
+            ->expects(self::never())
+            ->method('set');
+
+        $iosBuild = $this->getMockBuilder(IosBuildInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $iosBuild
+            ->expects(self::once())
+            ->method('getVersion')
+            ->with('10B329')
+            ->willThrowException($exception);
+
+        assert($versionFactory instanceof VersionFactoryInterface);
+        $object = new Ios($versionFactory, $iosBuild);
+
+        $detectedVersion = $object->detectVersion($useragent);
+
+        self::assertInstanceOf(VersionInterface::class, $detectedVersion);
+        self::assertSame($version, $detectedVersion);
     }
 }

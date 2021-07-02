@@ -337,4 +337,57 @@ final class AndroidOsTest extends TestCase
         self::assertInstanceOf(NullVersion::class, $detectedVersion);
         self::assertNull($detectedVersion->getVersion());
     }
+
+    public function testDetectVersionFailFifth(): void
+    {
+        $useragent = 'Mozilla/5.0 (Linux; Android 4.4.4; SM-G850F Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36 Instagram 19.1.0.31.91 Android (19/4.4.4; 320dpi; 720x1280; samsung; SM-G850F; slte; universal5430; ar_AE)';
+        $exception = new NotNumericException('set failed');
+        $logger    = $this->getMockBuilder(LoggerInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $logger
+            ->expects(self::never())
+            ->method('debug');
+        $logger
+            ->expects(self::once())
+            ->method('info')
+            ->with($exception);
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::never())
+            ->method('warning');
+        $logger
+            ->expects(self::never())
+            ->method('error');
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
+
+        $versionFactory = $this->getMockBuilder(VersionFactoryInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $versionFactory
+            ->expects(self::once())
+            ->method('set')
+            ->with('4.4.4')
+            ->willThrowException($exception);
+
+        assert($logger instanceof LoggerInterface);
+        assert($versionFactory instanceof VersionFactoryInterface);
+        $object = new AndroidOs($logger, $versionFactory);
+
+        $detectedVersion = $object->detectVersion($useragent);
+
+        self::assertInstanceOf(VersionInterface::class, $detectedVersion);
+        self::assertInstanceOf(NullVersion::class, $detectedVersion);
+        self::assertNull($detectedVersion->getVersion());
+    }
 }
