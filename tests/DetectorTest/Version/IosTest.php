@@ -120,6 +120,18 @@ final class IosTest extends TestCase
                 'com.google.GoogleMobile/46.0.0 iPhone/12.4 hw/iPhone10_4',
                 '12.4.0',
             ],
+            [
+                'iOS/6.1.3 (10B329) dataaccessd/1.0',
+                '6.1.3',
+            ],
+            [
+                'Mozilla/5.0 (iPhone; CPU iPhone OS 6_1_3 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Mobile/10B329',
+                '6.1.3',
+            ],
+            [
+                'Mozilla/5.0 (iPhone; CPU iPhone OS 4_1_1 like Mac OS X) AppleWebKit/533.17.9 (KHTML, like Gecko) Mobile/10B329',
+                '6.1.3',
+            ],
         ];
     }
 }

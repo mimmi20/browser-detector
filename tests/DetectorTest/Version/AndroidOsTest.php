@@ -116,6 +116,10 @@ final class AndroidOsTest extends TestCase
                 '{version:6.1937.3-arm64-v8a,platform:server_android,osversion:8.0.0}',
                 '8.0.0',
             ],
+            [
+                'Mozilla/5.0 (Linux; Android 4.4.4; SM-G850F Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36 Instagram 19.1.0.31.91 Android (19/4.4.4; 320dpi; 720x1280; samsung; SM-G850F; slte; universal5430; ar_AE)',
+                '4.4.4',
+            ],
         ];
     }
 

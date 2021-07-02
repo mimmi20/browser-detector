@@ -20,6 +20,7 @@ use UnexpectedValueException;
 use function array_key_exists;
 use function mb_stripos;
 use function preg_match;
+use function var_dump;
 
 final class Ios implements VersionDetectorInterface
 {
@@ -271,6 +272,21 @@ final class Ios implements VersionDetectorInterface
         if ($doMatch) {
             if (array_key_exists($matches['build'], self::BUILD_MAP)) {
                 return $this->versionFactory->set(self::BUILD_MAP[$matches['build']]);
+            }
+        }
+
+        $doMatch = preg_match('/ios\/\d+[\d\.]+ \((?P<build>\d+[A-Z]\d+(?:[a-z])?)\)/i', $useragent, $matches);
+
+        if ($doMatch) {
+            try {
+                $buildVersion = $this->iosBuild->getVersion($matches['build']);
+            } catch (BuildException | NotFoundException $e) {
+                var_dump($e);
+                $buildVersion = false;
+            }
+
+            if (false !== $buildVersion) {
+                return $this->versionFactory->set($buildVersion);
             }
         }
 
