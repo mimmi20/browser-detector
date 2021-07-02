@@ -61,6 +61,16 @@ final class AndroidOs implements VersionDetectorInterface
             return $this->versionFactory->set('6.0');
         }
 
+        if (preg_match('/Android \(\d+\/(?P<version>\d+[\d\.]+)/', $useragent, $matches)) {
+            try {
+                return $this->versionFactory->set($matches['version']);
+            } catch (NotNumericException $e) {
+                $this->logger->info($e);
+
+                return new NullVersion();
+            }
+        }
+
         try {
             $detectedVersion = $this->versionFactory->detectVersion($useragent, self::SEARCHES);
         } catch (NotNumericException $e) {

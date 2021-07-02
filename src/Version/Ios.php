@@ -23,6 +23,21 @@ use function preg_match;
 
 final class Ios implements VersionDetectorInterface
 {
+    public const SEARCHES    = [
+        'IphoneOSX',
+        'CPU OS_?',
+        'CPU iOS',
+        'CPU iPad OS',
+        'iPhone OS\;FBSV',
+        'iPhone OS',
+        'iPhone_OS',
+        'IUC\(U\;iOS',
+        'iPh OS',
+        'iosv',
+        'iPad\/',
+        'iPhone\/',
+        '(?<!Outlook-)iOS',
+    ];
     private const DARWIN_MAP = [
         '/darwin\/19/i' => '13.0',
         '/darwin\/18\.7/i' => '12.4',
@@ -191,22 +206,6 @@ final class Ios implements VersionDetectorInterface
         '1603.50' => '12.1.1',
     ];
 
-    private const SEARCHES = [
-        'IphoneOSX',
-        'CPU OS_?',
-        'CPU iOS',
-        'CPU iPad OS',
-        'iPhone OS\;FBSV',
-        'iPhone OS',
-        'iPhone_OS',
-        'IUC\(U\;iOS',
-        'iPh OS',
-        'iosv',
-        'iPad\/',
-        'iPhone\/',
-        '(?<!Outlook-)iOS',
-    ];
-
     private VersionFactoryInterface $versionFactory;
 
     private IosBuildInterface $iosBuild;
@@ -271,6 +270,20 @@ final class Ios implements VersionDetectorInterface
         if ($doMatch) {
             if (array_key_exists($matches['build'], self::BUILD_MAP)) {
                 return $this->versionFactory->set(self::BUILD_MAP[$matches['build']]);
+            }
+        }
+
+        $doMatch = preg_match('/ios\/\d+[\d\.]+ \((?P<build>\d+[A-Z]\d+(?:[a-z])?)\)/i', $useragent, $matches);
+
+        if ($doMatch) {
+            try {
+                $buildVersion = $this->iosBuild->getVersion($matches['build']);
+            } catch (BuildException | NotFoundException $e) {
+                $buildVersion = false;
+            }
+
+            if (false !== $buildVersion) {
+                return $this->versionFactory->set($buildVersion);
             }
         }
 
