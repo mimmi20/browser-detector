@@ -2687,121 +2687,7 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "18.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "534.30.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.2.2; en-us; HUAWEI P6-U06 Build/HuaweiP6-U06) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 Instagram 10.0.1 Android (17/4.2.2; 320dpi; 720x1184; HUAWEI/Huawei; HUAWEI P6-U06; hwp6-u06; k3v2oem1; en_US)"
-    },
-    "device": {
-      "deviceName": "P6-U06",
-      "marketingName": "Ascend P6",
-      "manufacturer": "huawei",
-      "brand": "huawei",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 4.7
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Android Webkit",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "17.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "534.30.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.2.2; en-gb; HUAWEI Y330-U11 Build/HuaweiY330-U11) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 Instagram 10.12.0 Android (17/4.2.2; 240dpi; 480x800; HUAWEI/Huawei; HUAWEI Y330-U11; hwY330-U11; mt6572; en_GB)"
-    },
-    "device": {
-      "deviceName": "Y330-U11",
-      "marketingName": "Ascend Y330",
-      "manufacturer": "huawei",
-      "brand": "huawei",
-      "display": {
-        "width": 800,
-        "height": 480,
-        "touch": true,
-        "size": 4
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Android Webkit",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "17.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "534.30.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.2.2; en-us; HUAWEI Y600-U20 Build/HUAWEIY600-U20) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 Instagram 10.11.0 Android (17/4.2.2; 240dpi; 480x854; HUAWEI; HUAWEI Y600-U20; HWY600-U; mt6572; en_US)"
-    },
-    "device": {
-      "deviceName": "Y600-U20",
-      "marketingName": "Ascend Y600",
-      "manufacturer": "huawei",
-      "brand": "huawei",
-      "display": {
-        "width": 854,
-        "height": 480,
-        "touch": true,
-        "size": 5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Android Webkit",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "17.0.0",
+      "version": "4.3.0",
       "manufacturer": "google",
       "bits": null
     },
@@ -3790,6 +3676,120 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "7.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "58.0.3029.83",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0; ALE-L21 Build/HuaweiALE-L21) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Iron Safari/537.36"
+    },
+    "device": {
+      "deviceName": "ALE-L21",
+      "marketingName": "P8 Lite (2016)",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Iron",
+      "modus": null,
+      "version": "56.0.2924.87",
+      "manufacturer": "srware",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "56.0.2924.87",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; HUAWEI VNS-L31 Build/HUAWEIVNS-L31) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 YaBrowser/17.3.2.414.00 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "VNS-L31",
+      "marketingName": "P9 Lite",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.2
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "modus": null,
+      "version": "17.3.2.414.00",
+      "manufacturer": "yandex",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "56.0.2924.87",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0; HUAWEI GRA-UL10 Build/HUAWEIGRA-UL10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.83 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "GRA-UL10",
+      "marketingName": "P8",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.2
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "58.0.3029.83",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.0",
       "manufacturer": "google",
       "bits": null
     },

@@ -1,82 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; SM-T970) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.101 Safari/537.36 comdirect/1.0 (appVersion:20.12.0;deviceType:mobile)"
-    },
-    "device": {
-      "deviceName": "SM-T970",
-      "marketingName": "Galaxy Tab S7 PlusWi-Fi",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 2800,
-        "height": 1752,
-        "touch": true,
-        "size": 12.4
-      },
-      "type": "tablet"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "87.0.4280.101",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "87.0.4280.101",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.1; SAMSUNG SM-P550) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/13.0 Chrome/83.0.4103.106 Safari/537.36 comdirect/1.0 (appVersion:20.12.0;deviceType:mobile)"
-    },
-    "device": {
-      "deviceName": "SM-P550",
-      "marketingName": "Galaxy Tab A 9.7 Wi-Fi with S Pen",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "display": {
-        "width": 1024,
-        "height": 768,
-        "touch": true,
-        "size": 9.7
-      },
-      "type": "tablet"
-    },
-    "browser": {
-      "name": "Samsung Browser",
-      "modus": null,
-      "version": "13.0.0",
-      "manufacturer": "samsung",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "7.1.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "83.0.4103.106",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Dalvik/2.1.0 (Linux; U; Android 10; SM-T720 Build/QP1A.190711.020) comdirect/1.0 (appVersion:20.12.0;deviceType:mobile)"
     },
     "device": {
@@ -3796,6 +3720,82 @@
     "engine": {
       "name": "Blink",
       "version": "88.0.4324.152",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; SAMSUNG SM-P600) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/13.2 Chrome/83.0.4103.106 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "SM-P600",
+      "marketingName": "Galaxy Note 10.1 2014 Edition Wi-Fi",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 2560,
+        "height": 1600,
+        "touch": true,
+        "size": 10.1
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Samsung Browser",
+      "modus": null,
+      "version": "13.2.0",
+      "manufacturer": "samsung",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "83.0.4103.106",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; SAMSUNG SM-T580) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/13.2 Chrome/83.0.4103.106 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "SM-T580",
+      "marketingName": "Galaxy Tab A (2016, 10.1,  Wi-Fi)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": 10.1
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Samsung Browser",
+      "modus": null,
+      "version": "13.2.0",
+      "manufacturer": "samsung",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "83.0.4103.106",
       "manufacturer": "google"
     }
   }

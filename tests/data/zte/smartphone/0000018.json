@@ -863,7 +863,7 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "23.0.0",
+      "version": "6.0.0",
       "manufacturer": "google",
       "bits": null
     },
@@ -2163,44 +2163,6 @@
       "name": "Blink",
       "version": "50.0.2661.89",
       "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.2.2; de-de; ZTE Blade L2 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 Instagram 27.0.0.11.97 Android (17/4.2.2; 240dpi; 480x854; ZTE; ZTE Blade L2; P182A10; mt6582; de_DE)"
-    },
-    "device": {
-      "deviceName": "Blade L2",
-      "marketingName": "Blade L2",
-      "manufacturer": "zte",
-      "brand": "zte",
-      "display": {
-        "width": 854,
-        "height": 480,
-        "touch": true,
-        "size": 5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Android Webkit",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "17.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "534.30.0",
-      "manufacturer": "apple"
     }
   },
   {
@@ -3796,6 +3758,44 @@
     "engine": {
       "name": "Blink",
       "version": "64.0.3282.137",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; ZTE B2017G Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "B2017G",
+      "marketingName": "Axon 7 Mini",
+      "manufacturer": "zte",
+      "brand": "zte",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.2
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "56.0.2924.87",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "56.0.2924.87",
       "manufacturer": "google"
     }
   }
