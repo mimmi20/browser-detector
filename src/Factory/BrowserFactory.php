@@ -65,7 +65,7 @@ final class BrowserFactory
         if (null !== $data['type']) {
             try {
                 $type = $this->typeLoader->load($data['type']);
-            } catch (NotFoundException $e) {
+            } catch (\UaBrowserType\NotFoundException $e) {
                 $logger->info($e);
             }
         }

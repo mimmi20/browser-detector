@@ -977,7 +977,7 @@ final class BrowserFactoryTest extends TestCase
             ->method('set');
 
         $typeName     = 'unknown-type';
-        $exceptionTwo = new NotFoundException('type not found');
+        $exceptionTwo = new \UaBrowserType\NotFoundException('type not found');
         $typeLoader   = $this->getMockBuilder(TypeLoaderInterface::class)
             ->disableOriginalConstructor()
             ->getMock();

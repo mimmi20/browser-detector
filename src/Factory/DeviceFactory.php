@@ -65,7 +65,7 @@ final class DeviceFactory
         $type = new Unknown();
         try {
             $type = $this->typeLoader->load((string) $data['type']);
-        } catch (NotFoundException $e) {
+        } catch (\UaDeviceType\NotFoundException $e) {
             $logger->info($e);
         }
 

@@ -323,7 +323,7 @@ final class DeviceFactoryTest extends TestCase
         $manufacturerParam = 'test-manufacturer';
         $brandParam        = 'test-brand';
         $companyException  = new NotFoundException('company failed');
-        $typeException     = new NotFoundException('type failed');
+        $typeException     = new \UaDeviceType\NotFoundException('type failed');
 
         $companyLoader = $this->getMockBuilder(CompanyLoaderInterface::class)
             ->disableOriginalConstructor()
