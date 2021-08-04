@@ -37,8 +37,4 @@
             <directory suffix=".php">src/</directory>
         </include>
     </coverage>
-
-    <logging>
-        <text outputFile="php://stdout"/>
-    </logging>
 </phpunit>
