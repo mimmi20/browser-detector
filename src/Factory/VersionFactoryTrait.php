@@ -12,6 +12,7 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Factory;
 
+use BrowserDetector\Version\NotNumericException;
 use BrowserDetector\Version\NullVersion;
 use BrowserDetector\Version\VersionFactoryInterface;
 use BrowserDetector\Version\VersionInterface;
@@ -30,11 +31,17 @@ trait VersionFactoryTrait
      */
     private function getVersion($version, string $useragent, LoggerInterface $logger): VersionInterface
     {
-        if (is_string($version)) {
-            return $this->versionFactory->set($version);
-        }
-
         $versionClass = new NullVersion();
+
+        if (is_string($version)) {
+            try {
+                return $this->versionFactory->set($version);
+            } catch (NotNumericException $e) {
+                $this->logger->error($e);
+
+                return $versionClass;
+            }
+        }
 
         if (null === $version) {
             return $versionClass;
@@ -43,7 +50,13 @@ trait VersionFactoryTrait
         $value = $version->value ?? null;
 
         if (null !== $value) {
-            return $this->versionFactory->set((string) $value);
+            try {
+                return $this->versionFactory->set((string) $value);
+            } catch (NotNumericException $e) {
+                $this->logger->error($e);
+
+                return $versionClass;
+            }
         }
 
         $className   = $version->class ?? null;
@@ -70,6 +83,12 @@ trait VersionFactoryTrait
             return $versionClass;
         }
 
-        return $this->versionFactory->detectVersion($useragent, $version->search);
+        try {
+            return $this->versionFactory->detectVersion($useragent, $version->search);
+        } catch (NotNumericException $e) {
+            $this->logger->error($e);
+        }
+
+        return $versionClass;
     }
 }

@@ -12,6 +12,8 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Version;
 
+use Psr\Log\LoggerInterface;
+
 use function preg_match;
 use function version_compare;
 
@@ -29,10 +31,13 @@ final class FirefoxOs implements VersionDetectorInterface
         '18.0' => '1.0',
     ];
 
+    private LoggerInterface $logger;
+
     private VersionFactoryInterface $versionFactory;
 
-    public function __construct(VersionFactoryInterface $versionFactory)
+    public function __construct(LoggerInterface $logger, VersionFactoryInterface $versionFactory)
     {
+        $this->logger         = $logger;
         $this->versionFactory = $versionFactory;
     }
 
@@ -46,8 +51,16 @@ final class FirefoxOs implements VersionDetectorInterface
         }
 
         foreach (self::SEARCHES as $engineVersion => $osVersion) {
-            if (version_compare($matches['version'], $engineVersion, '>=')) {
+            if (!version_compare($matches['version'], $engineVersion, '>=')) {
+                continue;
+            }
+
+            try {
                 return $this->versionFactory->set($osVersion);
+            } catch (NotNumericException $e) {
+                $this->logger->info($e);
+
+                return new NullVersion();
             }
         }
 

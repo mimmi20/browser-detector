@@ -17,6 +17,7 @@ use BrowserDetector\Factory\BrowserFactory;
 use BrowserDetector\Loader\CompanyLoaderInterface;
 use BrowserDetector\Loader\NotFoundException;
 use BrowserDetector\Version\NullVersion;
+use BrowserDetector\Version\TestFactory;
 use BrowserDetector\Version\Version;
 use BrowserDetector\Version\VersionFactoryInterface;
 use BrowserDetector\Version\VersionInterface;
@@ -30,8 +31,7 @@ use UaBrowserType\TypeLoaderInterface;
 use UaBrowserType\Unknown;
 use UaResult\Browser\Browser;
 use UaResult\Company\CompanyInterface;
-
-use function assert;
+use UnexpectedValueException;
 
 final class BrowserFactoryTest extends TestCase
 {
@@ -53,11 +53,6 @@ final class BrowserFactoryTest extends TestCase
         $typeLoader = $this->getMockBuilder(TypeLoaderInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
-
-        assert($companyLoader instanceof CompanyLoaderInterface);
-        assert($versionFactory instanceof VersionFactoryInterface);
-        assert($typeLoader instanceof TypeLoaderInterface);
-        $object = new BrowserFactory($companyLoader, $versionFactory, $typeLoader);
 
         $logger = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
@@ -87,11 +82,12 @@ final class BrowserFactoryTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
+        $object = new BrowserFactory($companyLoader, $versionFactory, $typeLoader, $logger);
+
         $this->expectException(AssertionError::class);
         $this->expectExceptionMessage('"name" property is required');
 
-        assert($logger instanceof LoggerInterface);
-        $object->fromArray($logger, [], 'this is a test');
+        $object->fromArray([], 'this is a test');
     }
 
     /**
@@ -132,11 +128,6 @@ final class BrowserFactoryTest extends TestCase
             ->with($typeName)
             ->willReturn($type);
 
-        assert($companyLoader instanceof CompanyLoaderInterface);
-        assert($versionFactory instanceof VersionFactoryInterface);
-        assert($typeLoader instanceof TypeLoaderInterface);
-        $object = new BrowserFactory($companyLoader, $versionFactory, $typeLoader);
-
         $logger = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
@@ -165,9 +156,9 @@ final class BrowserFactoryTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        assert($logger instanceof LoggerInterface);
+        $object = new BrowserFactory($companyLoader, $versionFactory, $typeLoader, $logger);
+
         $result = $object->fromArray(
-            $logger,
             ['name' => null, 'manufacturer' => 'unknown', 'version' => null, 'type' => $typeName, 'bits' => null, 'modus' => null],
             'this is a test'
         );
@@ -228,11 +219,6 @@ final class BrowserFactoryTest extends TestCase
             ->with($typeName)
             ->willReturn($type);
 
-        assert($companyLoader instanceof CompanyLoaderInterface);
-        assert($versionFactory instanceof VersionFactoryInterface);
-        assert($typeLoader instanceof TypeLoaderInterface);
-        $object = new BrowserFactory($companyLoader, $versionFactory, $typeLoader);
-
         $logger = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
@@ -261,9 +247,9 @@ final class BrowserFactoryTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        assert($logger instanceof LoggerInterface);
+        $object = new BrowserFactory($companyLoader, $versionFactory, $typeLoader, $logger);
+
         $result = $object->fromArray(
-            $logger,
             ['name' => null, 'manufacturer' => 'unknown', 'version' => $v, 'type' => $typeName, 'bits' => null, 'modus' => null],
             'this is a test'
         );
@@ -320,11 +306,6 @@ final class BrowserFactoryTest extends TestCase
             ->with($typeName)
             ->willReturn($type);
 
-        assert($companyLoader instanceof CompanyLoaderInterface);
-        assert($versionFactory instanceof VersionFactoryInterface);
-        assert($typeLoader instanceof TypeLoaderInterface);
-        $object = new BrowserFactory($companyLoader, $versionFactory, $typeLoader);
-
         $logger = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
@@ -353,9 +334,9 @@ final class BrowserFactoryTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        assert($logger instanceof LoggerInterface);
+        $object = new BrowserFactory($companyLoader, $versionFactory, $typeLoader, $logger);
+
         $result = $object->fromArray(
-            $logger,
             ['name' => null, 'manufacturer' => 'unknown', 'version' => $v, 'type' => $typeName, 'bits' => null, 'modus' => null],
             'this is a test'
         );
@@ -418,11 +399,6 @@ final class BrowserFactoryTest extends TestCase
             ->with($typeName)
             ->willReturn($type);
 
-        assert($companyLoader instanceof CompanyLoaderInterface);
-        assert($versionFactory instanceof VersionFactoryInterface);
-        assert($typeLoader instanceof TypeLoaderInterface);
-        $object = new BrowserFactory($companyLoader, $versionFactory, $typeLoader);
-
         $logger = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
@@ -451,9 +427,9 @@ final class BrowserFactoryTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        assert($logger instanceof LoggerInterface);
+        $object = new BrowserFactory($companyLoader, $versionFactory, $typeLoader, $logger);
+
         $result = $object->fromArray(
-            $logger,
             ['name' => null, 'manufacturer' => 'unknown', 'version' => $v, 'type' => $typeName, 'bits' => null, 'modus' => null],
             'this is a test'
         );
@@ -489,7 +465,7 @@ final class BrowserFactoryTest extends TestCase
             ->willReturn($company);
 
         $v              = new stdClass();
-        $v->class       = '\BrowserDetector\Version\Test';
+        $v->factory     = TestFactory::class;
         $version2       = $this->getMockBuilder(VersionInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
@@ -512,11 +488,6 @@ final class BrowserFactoryTest extends TestCase
             ->method('load')
             ->with($typeName)
             ->willReturn($type);
-
-        assert($companyLoader instanceof CompanyLoaderInterface);
-        assert($versionFactory instanceof VersionFactoryInterface);
-        assert($typeLoader instanceof TypeLoaderInterface);
-        $object = new BrowserFactory($companyLoader, $versionFactory, $typeLoader);
 
         $logger = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
@@ -546,9 +517,9 @@ final class BrowserFactoryTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        assert($logger instanceof LoggerInterface);
+        $object = new BrowserFactory($companyLoader, $versionFactory, $typeLoader, $logger);
+
         $result = $object->fromArray(
-            $logger,
             ['name' => null, 'manufacturer' => 'unknown', 'version' => $v, 'type' => $typeName, 'bits' => null, 'modus' => null],
             'this is a test'
         );
@@ -568,6 +539,7 @@ final class BrowserFactoryTest extends TestCase
     /**
      * @throws InvalidArgumentException
      * @throws ExpectationFailedException
+     * @throws UnexpectedValueException
      */
     public function testFromArrayWithFoundTypeAndVersionDetectionFactory(): void
     {
@@ -605,11 +577,6 @@ final class BrowserFactoryTest extends TestCase
             ->with($typeName)
             ->willReturn($type);
 
-        assert($companyLoader instanceof CompanyLoaderInterface);
-        assert($versionFactory instanceof VersionFactoryInterface);
-        assert($typeLoader instanceof TypeLoaderInterface);
-        $object = new BrowserFactory($companyLoader, $versionFactory, $typeLoader);
-
         $logger = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
@@ -638,9 +605,9 @@ final class BrowserFactoryTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        assert($logger instanceof LoggerInterface);
+        $object = new BrowserFactory($companyLoader, $versionFactory, $typeLoader, $logger);
+
         $result = $object->fromArray(
-            $logger,
             ['name' => null, 'manufacturer' => 'unknown', 'version' => $v, 'type' => $typeName, 'bits' => null, 'modus' => null],
             'this is a test'
         );
@@ -698,11 +665,6 @@ final class BrowserFactoryTest extends TestCase
             ->with($typeName)
             ->willReturn($type);
 
-        assert($companyLoader instanceof CompanyLoaderInterface);
-        assert($versionFactory instanceof VersionFactoryInterface);
-        assert($typeLoader instanceof TypeLoaderInterface);
-        $object = new BrowserFactory($companyLoader, $versionFactory, $typeLoader);
-
         $logger = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
@@ -731,9 +693,9 @@ final class BrowserFactoryTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        assert($logger instanceof LoggerInterface);
+        $object = new BrowserFactory($companyLoader, $versionFactory, $typeLoader, $logger);
+
         $result = $object->fromArray(
-            $logger,
             ['name' => null, 'manufacturer' => 'unknown', 'version' => $v, 'type' => $typeName, 'bits' => null, 'modus' => null],
             'this is a test'
         );
@@ -802,11 +764,6 @@ final class BrowserFactoryTest extends TestCase
             ->with($typeName)
             ->willReturn($type);
 
-        assert($companyLoader instanceof CompanyLoaderInterface);
-        assert($versionFactory instanceof VersionFactoryInterface);
-        assert($typeLoader instanceof TypeLoaderInterface);
-        $object = new BrowserFactory($companyLoader, $versionFactory, $typeLoader);
-
         $logger = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
@@ -835,9 +792,9 @@ final class BrowserFactoryTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        assert($logger instanceof LoggerInterface);
+        $object = new BrowserFactory($companyLoader, $versionFactory, $typeLoader, $logger);
+
         $result = $object->fromArray(
-            $logger,
             [
                 'name' => null,
                 'manufacturer' => 'unknown',
@@ -899,11 +856,6 @@ final class BrowserFactoryTest extends TestCase
             ->with($typeName)
             ->willReturn($type);
 
-        assert($companyLoader instanceof CompanyLoaderInterface);
-        assert($versionFactory instanceof VersionFactoryInterface);
-        assert($typeLoader instanceof TypeLoaderInterface);
-        $object = new BrowserFactory($companyLoader, $versionFactory, $typeLoader);
-
         $logger = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
@@ -933,9 +885,9 @@ final class BrowserFactoryTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        assert($logger instanceof LoggerInterface);
+        $object = new BrowserFactory($companyLoader, $versionFactory, $typeLoader, $logger);
+
         $result = $object->fromArray(
-            $logger,
             ['name' => null, 'manufacturer' => $companyName, 'version' => null, 'type' => $typeName, 'bits' => null, 'modus' => null],
             $useragent
         );
@@ -987,11 +939,6 @@ final class BrowserFactoryTest extends TestCase
             ->with($typeName)
             ->willThrowException($exceptionTwo);
 
-        assert($companyLoader instanceof CompanyLoaderInterface);
-        assert($versionFactory instanceof VersionFactoryInterface);
-        assert($typeLoader instanceof TypeLoaderInterface);
-        $object = new BrowserFactory($companyLoader, $versionFactory, $typeLoader);
-
         $logger = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
@@ -1021,9 +968,9 @@ final class BrowserFactoryTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        assert($logger instanceof LoggerInterface);
+        $object = new BrowserFactory($companyLoader, $versionFactory, $typeLoader, $logger);
+
         $result = $object->fromArray(
-            $logger,
             ['name' => null, 'manufacturer' => $companyName, 'version' => null, 'type' => $typeName, 'bits' => null, 'modus' => null],
             $useragent
         );

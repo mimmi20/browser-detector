@@ -36,21 +36,25 @@ final class DeviceFactory
 
     private DisplayFactoryInterface $displayFactory;
 
+    private LoggerInterface $logger;
+
     public function __construct(
         CompanyLoaderInterface $companyLoader,
         TypeLoaderInterface $typeLoader,
-        DisplayFactoryInterface $displayFactory
+        DisplayFactoryInterface $displayFactory,
+        LoggerInterface $logger
     ) {
         $this->companyLoader  = $companyLoader;
         $this->typeLoader     = $typeLoader;
         $this->displayFactory = $displayFactory;
+        $this->logger         = $logger;
     }
 
     /**
      * @param array<string, (string|stdClass|int|null)> $data
      * @phpstan-param array{deviceName?: (string|null), marketingName?: (string|null), manufacturer?: string, brand?: string, type?: (string|null), display?: (array{width?: (int|null), height?: (int|null), touch?: (bool|null), size?: (int|float|null)}|stdClass|null)} $data
      */
-    public function fromArray(LoggerInterface $logger, array $data, string $useragent): DeviceInterface
+    public function fromArray(array $data, string $useragent): DeviceInterface
     {
         assert(array_key_exists('deviceName', $data), '"deviceName" property is required');
         assert(array_key_exists('marketingName', $data), '"marketingName" property is required');
@@ -66,13 +70,13 @@ final class DeviceFactory
         try {
             $type = $this->typeLoader->load((string) $data['type']);
         } catch (\UaDeviceType\NotFoundException $e) {
-            $logger->info($e);
+            $this->logger->info($e);
         }
 
         try {
             $manufacturer = $this->companyLoader->load($data['manufacturer'], $useragent);
         } catch (NotFoundException $e) {
-            $logger->info($e);
+            $this->logger->info($e);
 
             $manufacturer = new Company(
                 'unknown',
@@ -84,7 +88,7 @@ final class DeviceFactory
         try {
             $brand = $this->companyLoader->load($data['brand'], $useragent);
         } catch (NotFoundException $e) {
-            $logger->info($e);
+            $this->logger->info($e);
 
             $brand = new Company(
                 'unknown',
@@ -98,7 +102,7 @@ final class DeviceFactory
          * @phpstan-var array{width?: int|null, height?: int|null, touch?: bool|null, size?: int|float|null} $displayData
          */
         $displayData = (array) $data['display'];
-        $display     = $this->displayFactory->fromArray($logger, $displayData);
+        $display     = $this->displayFactory->fromArray($this->logger, $displayData);
 
         return new Device($deviceName, $marketingName, $manufacturer, $brand, $type, $display);
     }

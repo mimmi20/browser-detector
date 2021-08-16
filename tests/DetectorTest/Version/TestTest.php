@@ -16,6 +16,7 @@ use BrowserDetector\Version\Test;
 use BrowserDetector\Version\VersionInterface;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
+use Psr\Log\NullLogger;
 use SebastianBergmann\RecursionContext\InvalidArgumentException;
 use UnexpectedValueException;
 
@@ -30,7 +31,7 @@ final class TestTest extends TestCase
      */
     public function testTestdetectVersion(string $useragent, ?string $expectedVersion): void
     {
-        $object = new Test();
+        $object = new Test(new NullLogger());
 
         $detectedVersion = $object->detectVersion($useragent);
 

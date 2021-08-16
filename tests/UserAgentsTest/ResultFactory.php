@@ -20,6 +20,7 @@ use BrowserDetector\Factory\PlatformFactory;
 use BrowserDetector\Loader\CompanyLoaderInterface;
 use BrowserDetector\Loader\NotFoundException;
 use BrowserDetector\RequestBuilder;
+use BrowserDetector\Version\NotNumericException;
 use BrowserDetector\Version\Version;
 use BrowserDetector\Version\VersionFactory;
 use Psr\Log\LoggerInterface;
@@ -42,9 +43,12 @@ final class ResultFactory
 {
     private CompanyLoaderInterface $companyLoader;
 
-    public function __construct(CompanyLoaderInterface $companyLoader)
+    private LoggerInterface $logger;
+
+    public function __construct(CompanyLoaderInterface $companyLoader, LoggerInterface $logger)
     {
         $this->companyLoader = $companyLoader;
+        $this->logger        = $logger;
     }
 
     /**
@@ -53,6 +57,7 @@ final class ResultFactory
      *
      * @throws NotFoundException
      * @throws UnexpectedValueException
+     * @throws NotNumericException
      */
     public function fromArray(LoggerInterface $logger, array $data): ?Result
     {
@@ -77,10 +82,11 @@ final class ResultFactory
             $deviceFactory = new DeviceFactory(
                 $this->companyLoader,
                 new \UaDeviceType\TypeLoader(),
-                new DisplayFactory()
+                new DisplayFactory(),
+                $logger
             );
 
-            $device = $deviceFactory->fromArray($logger, (array) $data['device'], $request->getDeviceUserAgent());
+            $device = $deviceFactory->fromArray((array) $data['device'], $request->getDeviceUserAgent());
         }
 
         $browserUa = $request->getBrowserUserAgent();
@@ -95,7 +101,7 @@ final class ResultFactory
         );
 
         if (array_key_exists('browser', $data)) {
-            $browser = (new BrowserFactory($this->companyLoader, $versionFactory, new TypeLoader()))->fromArray($logger, (array) $data['browser'], $browserUa);
+            $browser = (new BrowserFactory($this->companyLoader, $versionFactory, new TypeLoader(), $this->logger))->fromArray((array) $data['browser'], $browserUa);
         }
 
         $os = new Os(
@@ -107,7 +113,7 @@ final class ResultFactory
         );
 
         if (array_key_exists('os', $data)) {
-            $os = (new PlatformFactory($this->companyLoader, $versionFactory))->fromArray($logger, (array) $data['os'], $request->getPlatformUserAgent());
+            $os = (new PlatformFactory($this->companyLoader, $versionFactory, $this->logger))->fromArray((array) $data['os'], $request->getPlatformUserAgent());
         }
 
         $engine = new Engine(
@@ -117,7 +123,7 @@ final class ResultFactory
         );
 
         if (array_key_exists('engine', $data)) {
-            $engine = (new EngineFactory($this->companyLoader, $versionFactory))->fromArray($logger, (array) $data['engine'], $browserUa);
+            $engine = (new EngineFactory($this->companyLoader, $versionFactory, $this->logger))->fromArray((array) $data['engine'], $browserUa);
         }
 
         return new Result($headers, $device, $os, $browser, $engine);

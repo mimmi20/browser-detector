@@ -19,6 +19,7 @@ use BrowserDetector\Parser\BrowserParserInterface;
 use BrowserDetector\Parser\DeviceParserInterface;
 use BrowserDetector\Parser\EngineParserInterface;
 use BrowserDetector\Parser\PlatformParserInterface;
+use BrowserDetector\Version\NotNumericException;
 use Laminas\Diactoros\ServerRequestFactory;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
@@ -440,6 +441,7 @@ final class DetectorTest extends TestCase
     /**
      * @throws InvalidArgumentException
      * @throws UnexpectedValueException
+     * @throws NotNumericException
      */
     public function testGetBrowserFromInvalid(): void
     {

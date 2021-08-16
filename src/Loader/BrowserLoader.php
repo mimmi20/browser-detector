@@ -81,7 +81,7 @@ final class BrowserLoader implements BrowserLoaderInterface
             }
         }
 
-        $browser = (new BrowserFactory($this->companyLoader, new VersionFactory(), new TypeLoader()))->fromArray($this->logger, (array) $browserData, $useragent);
+        $browser = (new BrowserFactory($this->companyLoader, new VersionFactory(), new TypeLoader(), $this->logger))->fromArray((array) $browserData, $useragent);
 
         return [$browser, $engine];
     }

@@ -118,6 +118,10 @@ final class MicrosoftInternetExplorerTest extends TestCase
         ];
     }
 
+    /**
+     * @throws UnexpectedValueException
+     * @throws NotNumericException
+     */
     public function testDetectVersionFail(): void
     {
         $useragent = 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; SearchToolbar 1.2; GTB7.0)';
@@ -181,6 +185,9 @@ final class MicrosoftInternetExplorerTest extends TestCase
         self::assertNull($detectedVersion->getVersion());
     }
 
+    /**
+     * @throws UnexpectedValueException
+     */
     public function testDetectVersionFailSecond(): void
     {
         $useragent = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Siemens A/S; .NET CLR 1.0.3705; .NET CLR 1.1.4322)';

@@ -17,6 +17,7 @@ use BrowserDetector\Version\VersionFactory;
 use BrowserDetector\Version\VersionInterface;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
+use Psr\Log\LoggerInterface;
 use SebastianBergmann\RecursionContext\InvalidArgumentException;
 use UnexpectedValueException;
 
@@ -31,7 +32,35 @@ final class FirefoxOsTest extends TestCase
      */
     public function testTestdetectVersion(string $useragent, ?string $expectedVersion): void
     {
-        $object = new FirefoxOs(new VersionFactory());
+        $logger = $this->getMockBuilder(LoggerInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $logger
+            ->expects(self::never())
+            ->method('debug');
+        $logger
+            ->expects(self::never())
+            ->method('info');
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::never())
+            ->method('warning');
+        $logger
+            ->expects(self::never())
+            ->method('error');
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
+
+        $object = new FirefoxOs($logger, new VersionFactory());
 
         $detectedVersion = $object->detectVersion($useragent);
 

@@ -95,6 +95,9 @@ final class CoreMediaTest extends TestCase
         ];
     }
 
+    /**
+     * @throws UnexpectedValueException
+     */
     public function testDetectVersionFail(): void
     {
         $exception = new NotNumericException('set failed');

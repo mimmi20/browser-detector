@@ -10,18 +10,19 @@ parameters:
     - %currentWorkingDirectory%/vendor/autoload.php
     - %currentWorkingDirectory%/vendor/squizlabs/php_codesniffer/autoload.php
     - %currentWorkingDirectory%/vendor/squizlabs/php_codesniffer/src/Util/Tokens.php
-  exceptionRules:
-    reportUnusedCatchesOfUncheckedExceptions: true
-    uncheckedExceptions: []
+  checkGenericClassInNonGenericObjectType: false
   checkMissingIterableValueType: false
   treatPhpDocTypesAsCertain: false
-  excludes_analyse:
-    - */tests/*/data/*
+  implicitThrows: false
+  exceptions:
+    checkedExceptionRegexes:
+      - '#Exception#'
+      - '#Throwable#'
+    check:
+      missingCheckedExceptionInThrows: true
+      tooWideThrowType: true
   ignoreErrors:
-    - '~MockObject~'
     - '~Parameter #1 \$headers of method BrowserDetector\\Detector::__invoke\(\) expects array<string, string>\|Psr\\Http\\Message\\MessageInterface\|string\|UaRequest\\GenericRequest, stdClass given~'
     - '~Parameter #1 \$message of method Psr\\Log\\LoggerInterface::.* expects string, .*Exception given~'
     - '~is not subtype of Throwable~'
     - '~Call to deprecated method getBrowser\(\) of class BrowserDetector\\Detector~'
-    - '~Useless \@throws~'
-    - '~Missing \@throws~'

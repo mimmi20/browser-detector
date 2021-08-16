@@ -98,6 +98,9 @@ final class SafariTest extends TestCase
         ];
     }
 
+    /**
+     * @throws UnexpectedValueException
+     */
     public function testDetectVersionFail(): void
     {
         $exception = new NotNumericException('set failed');
@@ -158,6 +161,10 @@ final class SafariTest extends TestCase
         self::assertNull($detectedVersion->getVersion());
     }
 
+    /**
+     * @throws UnexpectedValueException
+     * @throws NotNumericException
+     */
     public function testDetectVersionFailSecond(): void
     {
         $logger = $this->getMockBuilder(LoggerInterface::class)
@@ -219,6 +226,10 @@ final class SafariTest extends TestCase
         self::assertNull($detectedVersion->getVersion());
     }
 
+    /**
+     * @throws UnexpectedValueException
+     * @throws NotNumericException
+     */
     public function testDetectVersionFailThird(): void
     {
         $exception = new NotNumericException('set failed');

@@ -13,12 +13,14 @@ declare(strict_types = 1);
 namespace BrowserDetector\Version;
 
 use MacosBuild\MacosBuild;
+use Psr\Log\LoggerInterface;
 
 final class MacosFactory implements MacosFactoryInterface
 {
-    public function __invoke(): Macos
+    public function __invoke(LoggerInterface $logger): Macos
     {
         return new Macos(
+            $logger,
             new VersionFactory(),
             new MacosBuild()
         );

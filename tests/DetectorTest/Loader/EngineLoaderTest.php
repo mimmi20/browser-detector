@@ -16,7 +16,7 @@ use BrowserDetector\Loader\CompanyLoaderInterface;
 use BrowserDetector\Loader\EngineLoader;
 use BrowserDetector\Loader\Helper\DataInterface;
 use BrowserDetector\Loader\NotFoundException;
-use BrowserDetector\Version\Test;
+use BrowserDetector\Version\TestFactory;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
@@ -391,7 +391,7 @@ final class EngineLoaderTest extends TestCase
             ->willReturn(true);
 
         $engineData = (object) [
-            'version' => (object) ['class' => Test::class],
+            'version' => (object) ['factory' => TestFactory::class],
             'manufacturer' => 'unknown',
             'name' => null,
         ];

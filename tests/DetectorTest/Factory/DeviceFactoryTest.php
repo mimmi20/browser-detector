@@ -29,8 +29,6 @@ use UaResult\Company\CompanyInterface;
 use UaResult\Device\Device;
 use UaResult\Device\DisplayInterface;
 
-use function assert;
-
 final class DeviceFactoryTest extends TestCase
 {
     public function testFromEmptyArray(): void
@@ -56,11 +54,6 @@ final class DeviceFactoryTest extends TestCase
         $displayFactory
             ->expects(self::never())
             ->method('fromArray');
-
-        assert($companyLoader instanceof CompanyLoaderInterface);
-        assert($typeLoader instanceof TypeLoaderInterface);
-        assert($displayFactory instanceof DisplayFactoryInterface);
-        $object = new DeviceFactory($companyLoader, $typeLoader, $displayFactory);
 
         $logger = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
@@ -90,11 +83,12 @@ final class DeviceFactoryTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
+        $object = new DeviceFactory($companyLoader, $typeLoader, $displayFactory, $logger);
+
         $this->expectException(AssertionError::class);
         $this->expectExceptionMessage('"deviceName" property is required');
 
-        assert($logger instanceof LoggerInterface);
-        $object->fromArray($logger, [], $useragent);
+        $object->fromArray([], $useragent);
     }
 
     /**
@@ -169,14 +163,9 @@ final class DeviceFactoryTest extends TestCase
             ->with($logger, $displayParam)
             ->willReturn($display);
 
-        assert($companyLoader instanceof CompanyLoaderInterface);
-        assert($typeLoader instanceof TypeLoaderInterface);
-        assert($displayFactory instanceof DisplayFactoryInterface);
-        $object = new DeviceFactory($companyLoader, $typeLoader, $displayFactory);
+        $object = new DeviceFactory($companyLoader, $typeLoader, $displayFactory, $logger);
 
-        assert($logger instanceof LoggerInterface);
         $result = $object->fromArray(
-            $logger,
             ['deviceName' => '', 'marketingName' => '', 'manufacturer' => 'unknown', 'brand' => 'unknown', 'type' => null, 'display' => null],
             $useragent
         );
@@ -277,10 +266,7 @@ final class DeviceFactoryTest extends TestCase
             ->with($logger, $displayParam)
             ->willReturn($display);
 
-        assert($companyLoader instanceof CompanyLoaderInterface);
-        assert($typeLoader instanceof TypeLoaderInterface);
-        assert($displayFactory instanceof DisplayFactoryInterface);
-        $object = new DeviceFactory($companyLoader, $typeLoader, $displayFactory);
+        $object = new DeviceFactory($companyLoader, $typeLoader, $displayFactory, $logger);
 
         $data = [
             'deviceName' => $deviceName,
@@ -291,8 +277,7 @@ final class DeviceFactoryTest extends TestCase
             'type' => $typeParam,
         ];
 
-        assert($logger instanceof LoggerInterface);
-        $result = $object->fromArray($logger, $data, $useragent);
+        $result = $object->fromArray($data, $useragent);
 
         self::assertInstanceOf(Device::class, $result);
         self::assertIsString($result->getDeviceName());
@@ -386,10 +371,7 @@ final class DeviceFactoryTest extends TestCase
             ->with($logger, $displayParam)
             ->willReturn($display);
 
-        assert($companyLoader instanceof CompanyLoaderInterface);
-        assert($typeLoader instanceof TypeLoaderInterface);
-        assert($displayFactory instanceof DisplayFactoryInterface);
-        $object = new DeviceFactory($companyLoader, $typeLoader, $displayFactory);
+        $object = new DeviceFactory($companyLoader, $typeLoader, $displayFactory, $logger);
 
         $data = [
             'deviceName' => $deviceName,
@@ -400,8 +382,7 @@ final class DeviceFactoryTest extends TestCase
             'type' => $typeParam,
         ];
 
-        assert($logger instanceof LoggerInterface);
-        $result = $object->fromArray($logger, $data, $useragent);
+        $result = $object->fromArray($data, $useragent);
 
         self::assertInstanceOf(Device::class, $result);
         self::assertIsString($result->getDeviceName());

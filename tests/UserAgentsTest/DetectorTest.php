@@ -18,6 +18,7 @@ use BrowserDetector\Loader\CompanyLoader;
 use BrowserDetector\Loader\CompanyLoaderFactory;
 use BrowserDetector\Loader\Helper\Filter;
 use BrowserDetector\Loader\NotFoundException;
+use BrowserDetector\Version\NotNumericException;
 use DateInterval;
 use Exception;
 use ExceptionalJSON\DecodeErrorException;
@@ -92,8 +93,6 @@ final class DetectorTest extends TestCase
              *
              * @return mixed the value of the item from the cache, or $default in case of cache miss
              *
-             * @throws InvalidArgumentException MUST be thrown if the $key string is not a legal value
-             *
              * @phpcsSuppress SlevomatCodingStandard.TypeHints.ParameterTypeHint.MissingNativeTypeHint
              * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
              */
@@ -113,8 +112,6 @@ final class DetectorTest extends TestCase
              *
              * @return bool true on success and false on failure
              *
-             * @throws InvalidArgumentException MUST be thrown if the $key string is not a legal value
-             *
              * @phpcsSuppress SlevomatCodingStandard.TypeHints.ParameterTypeHint.MissingNativeTypeHint
              * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
              */
@@ -129,8 +126,6 @@ final class DetectorTest extends TestCase
              * @param string $key the unique cache key of the item to delete
              *
              * @return bool True if the item was successfully removed. False if there was an error.
-             *
-             * @throws InvalidArgumentException MUST be thrown if the $key string is not a legal value
              *
              * @phpcsSuppress SlevomatCodingStandard.TypeHints.ParameterTypeHint.MissingNativeTypeHint
              * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
@@ -158,9 +153,6 @@ final class DetectorTest extends TestCase
              *
              * @return iterable<string, mixed> A list of key => value pairs. Cache keys that do not exist or are stale will have $default as value.
              *
-             * @throws InvalidArgumentException MUST be thrown if $keys is neither an array nor a Traversable,
-             *                                  or if any of the $keys are not a legal value
-             *
              * @phpcsSuppress SlevomatCodingStandard.TypeHints.ParameterTypeHint.MissingNativeTypeHint
              * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
              */
@@ -179,9 +171,6 @@ final class DetectorTest extends TestCase
              *
              * @return bool true on success and false on failure
              *
-             * @throws InvalidArgumentException MUST be thrown if $values is neither an array nor a Traversable,
-             *                                  or if any of the $values are not a legal value
-             *
              * @phpcsSuppress SlevomatCodingStandard.TypeHints.ParameterTypeHint.MissingNativeTypeHint
              * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
              */
@@ -196,9 +185,6 @@ final class DetectorTest extends TestCase
              * @param iterable<string> $keys a list of string-based keys to be deleted
              *
              * @return bool True if the items were successfully removed. False if there was an error.
-             *
-             * @throws InvalidArgumentException MUST be thrown if $keys is neither an array nor a Traversable,
-             *                                  or if any of the $keys are not a legal value
              *
              * @phpcsSuppress SlevomatCodingStandard.TypeHints.ParameterTypeHint.MissingNativeTypeHint
              * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
@@ -217,8 +203,6 @@ final class DetectorTest extends TestCase
              * another script can remove it making the state of your app out of date.
              *
              * @param string $key the cache item key
-             *
-             * @throws InvalidArgumentException MUST be thrown if the $key string is not a legal value
              *
              * @phpcsSuppress SlevomatCodingStandard.TypeHints.ParameterTypeHint.MissingNativeTypeHint
              * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
@@ -242,6 +226,7 @@ final class DetectorTest extends TestCase
      * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws UnexpectedValueException
+     * @throws NotNumericException
      *
      * @dataProvider providerGetBrowser
      * @coversNothing
@@ -324,6 +309,7 @@ final class DetectorTest extends TestCase
      * @return array<string, array<string, (Result|array<string, string>)>>
      *
      * @throws Exception
+     * @throws NotNumericException
      */
     public function providerGetBrowser(): array
     {
@@ -343,7 +329,7 @@ final class DetectorTest extends TestCase
 
         $companyLoader = $companyLoaderFactory();
         assert($companyLoader instanceof CompanyLoader, sprintf('$companyLoader should be an instance of %s, but is %s', CompanyLoader::class, get_class($companyLoader)));
-        $resultFactory = new ResultFactory($companyLoader);
+        $resultFactory = new ResultFactory($companyLoader, $logger);
 
         foreach ($finder as $file) {
             assert($file instanceof SplFileInfo);

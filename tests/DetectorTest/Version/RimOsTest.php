@@ -103,6 +103,9 @@ final class RimOsTest extends TestCase
         ];
     }
 
+    /**
+     * @throws UnexpectedValueException
+     */
     public function testDetectVersionFail(): void
     {
         $useragent = 'Mozilla/5.0 (BB10; Kbd) AppleWebKit/537.35+ (KHTML, like Gecko) Mobile Safari/537.35+';
@@ -156,6 +159,9 @@ final class RimOsTest extends TestCase
         self::assertNull($detectedVersion->getVersion());
     }
 
+    /**
+     * @throws UnexpectedValueException
+     */
     public function testDetectVersionFailSecond(): void
     {
         $useragent = 'Mozilla/5.0 (BB10; Kbd) AppleWebKit/537.35+ (KHTML, like Gecko) Version/10.3.3.3057 Mobile Safari/537.35+';

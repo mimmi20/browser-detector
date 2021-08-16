@@ -18,11 +18,14 @@ use RecursiveDirectoryIterator;
 use RecursiveIterator;
 use RecursiveIteratorIterator;
 use SplFileInfo;
+use UnexpectedValueException;
 
 final class Filter implements FilterInterface
 {
     /**
      * @return Iterator<SplFileInfo>
+     *
+     * @throws UnexpectedValueException
      */
     public function __invoke(string $path, string $extension): Iterator
     {

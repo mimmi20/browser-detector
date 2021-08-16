@@ -59,6 +59,6 @@ final class PlatformLoader implements PlatformLoaderInterface
 
         $platformData->bits = (new Os())->getBits($useragent);
 
-        return (new PlatformFactory($this->companyLoader, new VersionFactory()))->fromArray($this->logger, (array) $platformData, $useragent);
+        return (new PlatformFactory($this->companyLoader, new VersionFactory(), $this->logger))->fromArray((array) $platformData, $useragent);
     }
 }
