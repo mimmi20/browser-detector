@@ -227,6 +227,7 @@ final class DetectorTest extends TestCase
      * @throws ExpectationFailedException
      * @throws UnexpectedValueException
      * @throws NotNumericException
+     * @throws \ExceptionalJSON\Exception
      *
      * @dataProvider providerGetBrowser
      * @coversNothing
