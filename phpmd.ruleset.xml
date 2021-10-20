@@ -11,15 +11,21 @@
         <exclude name="ElseExpression"/>
         <exclude name="MissingImport"/>
         <exclude name="StaticAccess"/>
+        <exclude name="UndefinedVariable"/>
+        <exclude name="ErrorControlOperator"/>
     </rule>
 
     <rule ref="rulesets/codesize.xml">
         <exclude name="CyclomaticComplexity"/>
         <exclude name="NPathComplexity"/>
+        <exclude name="ExcessiveMethodLength"/>
     </rule>
 
     <rule ref="rulesets/controversial.xml"/>
-    <rule ref="rulesets/design.xml"/>
+
+    <rule ref="rulesets/design.xml">
+        <exclude name="CouplingBetweenObjects"/>
+    </rule>
 
     <rule ref="rulesets/naming.xml/ConstantNamingConventions"/>
 
