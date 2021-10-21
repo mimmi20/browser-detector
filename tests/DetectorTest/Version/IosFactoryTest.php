@@ -15,6 +15,7 @@ namespace BrowserDetectorTest\Version;
 use BrowserDetector\Version\Ios;
 use BrowserDetector\Version\IosFactory;
 use PHPUnit\Framework\TestCase;
+use Psr\Log\NullLogger;
 
 use function assert;
 use function get_class;
@@ -33,7 +34,7 @@ final class IosFactoryTest extends TestCase
     {
         $object = $this->object;
         assert($object instanceof IosFactory, sprintf('$object should be an instance of %s, but is %s', IosFactory::class, get_class($object)));
-        $result = $object();
+        $result = $object(new NullLogger());
         self::assertInstanceOf(Ios::class, $result);
     }
 }

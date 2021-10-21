@@ -15,6 +15,7 @@ namespace BrowserDetector\Version;
 use MacosBuild\BuildException;
 use MacosBuild\MacosBuildInterface;
 use MacosBuild\NotFoundException;
+use Psr\Log\LoggerInterface;
 use UnexpectedValueException;
 
 use function array_key_exists;
@@ -136,12 +137,15 @@ final class Macos implements VersionDetectorInterface
         '/darwin\/1\.3\.1/i' => '10.0.0',
     ];
 
+    private LoggerInterface $logger;
+
     private VersionFactoryInterface $versionFactory;
 
     private MacosBuildInterface $macosBuild;
 
-    public function __construct(VersionFactoryInterface $versionFactory, MacosBuildInterface $macosBuild)
+    public function __construct(LoggerInterface $logger, VersionFactoryInterface $versionFactory, MacosBuildInterface $macosBuild)
     {
+        $this->logger         = $logger;
         $this->versionFactory = $versionFactory;
         $this->macosBuild     = $macosBuild;
     }
@@ -163,7 +167,13 @@ final class Macos implements VersionDetectorInterface
             }
 
             if (false !== $buildVersion) {
-                return $this->versionFactory->set($buildVersion);
+                try {
+                    return $this->versionFactory->set($buildVersion);
+                } catch (NotNumericException $e) {
+                    $this->logger->info($e);
+
+                    return new NullVersion();
+                }
             }
         }
 
@@ -177,24 +187,50 @@ final class Macos implements VersionDetectorInterface
             }
 
             if (false !== $buildVersion) {
-                return $this->versionFactory->set($buildVersion);
+                try {
+                    return $this->versionFactory->set($buildVersion);
+                } catch (NotNumericException $e) {
+                    $this->logger->info($e);
+
+                    return new NullVersion();
+                }
             }
         }
 
         if (false !== mb_stripos($useragent, 'darwin')) {
             foreach (self::DARWIN_MAP as $rule => $version) {
-                if (preg_match($rule, $useragent)) {
+                if (!preg_match($rule, $useragent)) {
+                    continue;
+                }
+
+                try {
                     return $this->versionFactory->set($version);
+                } catch (NotNumericException $e) {
+                    $this->logger->info($e);
+
+                    return new NullVersion();
                 }
             }
         }
 
         $searches = ['Mac OS X Version', 'Mac OS X v', 'Mac OS X', 'OS X', 'os=mac '];
 
-        $detectedVersion = $this->versionFactory->detectVersion(str_replace(',', '.', $useragent), $searches);
+        try {
+            $detectedVersion = $this->versionFactory->detectVersion(str_replace(',', '.', $useragent), $searches);
+        } catch (NotNumericException $e) {
+            $this->logger->info($e);
+
+            return new NullVersion();
+        }
 
         if (null !== $detectedVersion->getVersion(VersionInterface::IGNORE_MINOR) && preg_match('/(?P<major>\d{2})(?P<minor>\d{2})(?P<micro>\d)/', $detectedVersion->getVersion(VersionInterface::IGNORE_MINOR), $versions)) {
-            return $this->versionFactory->set($versions['major'] . '.' . $versions['minor'] . '.' . $versions['micro']);
+            try {
+                return $this->versionFactory->set($versions['major'] . '.' . $versions['minor'] . '.' . $versions['micro']);
+            } catch (NotNumericException $e) {
+                $this->logger->info($e);
+
+                return new NullVersion();
+            }
         }
 
         if (null !== $detectedVersion->getVersion(VersionInterface::IGNORE_MINOR) && preg_match('/(?P<major>\d{2})(?P<minor>\d)(?P<micro>\d)?/', $detectedVersion->getVersion(VersionInterface::IGNORE_MINOR), $versions)) {
@@ -204,7 +240,13 @@ final class Macos implements VersionDetectorInterface
                 $version .= '.' . $versions['micro'];
             }
 
-            return $this->versionFactory->set($version);
+            try {
+                return $this->versionFactory->set($version);
+            } catch (NotNumericException $e) {
+                $this->logger->info($e);
+
+                return new NullVersion();
+            }
         }
 
         return $detectedVersion;

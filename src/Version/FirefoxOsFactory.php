@@ -12,11 +12,14 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Version;
 
+use Psr\Log\LoggerInterface;
+
 final class FirefoxOsFactory implements FirefoxOsFactoryInterface
 {
-    public function __invoke(): FirefoxOs
+    public function __invoke(LoggerInterface $logger): FirefoxOs
     {
         return new FirefoxOs(
+            $logger,
             new VersionFactory()
         );
     }

@@ -12,7 +12,9 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Version;
 
+use Psr\Log\LoggerInterface;
+
 interface MacosFactoryInterface
 {
-    public function __invoke(): Macos;
+    public function __invoke(LoggerInterface $logger): Macos;
 }

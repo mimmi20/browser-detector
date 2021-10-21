@@ -13,6 +13,7 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest\Version\Helper;
 
 use BrowserDetector\Version\Helper\Safari;
+use BrowserDetector\Version\NotNumericException;
 use BrowserDetector\Version\VersionFactory;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
@@ -32,6 +33,7 @@ final class SafariTest extends TestCase
      * @throws InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws UnexpectedValueException
+     * @throws NotNumericException
      *
      * @dataProvider providerVersion
      */

@@ -16,11 +16,8 @@ use Psr\Log\LoggerInterface;
 
 final class TestFactory implements TestFactoryInterface
 {
-    /**
-     * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
-     */
     public function __invoke(LoggerInterface $logger): Test
     {
-        return new Test();
+        return new Test($logger);
     }
 }

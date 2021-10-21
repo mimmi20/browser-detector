@@ -107,6 +107,9 @@ final class ObigoQTest extends TestCase
         ];
     }
 
+    /**
+     * @throws UnexpectedValueException
+     */
     public function testDetectVersionFail(): void
     {
         $exception = new NotNumericException('set failed');
@@ -159,6 +162,9 @@ final class ObigoQTest extends TestCase
         self::assertNull($detectedVersion->getVersion());
     }
 
+    /**
+     * @throws UnexpectedValueException
+     */
     public function testDetectVersionFailSecond(): void
     {
         $exception = new NotNumericException('set failed');

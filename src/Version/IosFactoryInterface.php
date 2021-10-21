@@ -12,7 +12,9 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Version;
 
+use Psr\Log\LoggerInterface;
+
 interface IosFactoryInterface
 {
-    public function __invoke(): Ios;
+    public function __invoke(LoggerInterface $logger): Ios;
 }

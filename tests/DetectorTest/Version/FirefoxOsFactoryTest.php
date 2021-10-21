@@ -15,6 +15,7 @@ namespace BrowserDetectorTest\Version;
 use BrowserDetector\Version\FirefoxOs;
 use BrowserDetector\Version\FirefoxOsFactory;
 use PHPUnit\Framework\TestCase;
+use Psr\Log\NullLogger;
 
 use function assert;
 use function get_class;
@@ -33,7 +34,7 @@ final class FirefoxOsFactoryTest extends TestCase
     {
         $object = $this->object;
         assert($object instanceof FirefoxOsFactory, sprintf('$object should be an instance of %s, but is %s', FirefoxOsFactory::class, get_class($object)));
-        $result = $object();
+        $result = $object(new NullLogger());
         self::assertInstanceOf(FirefoxOs::class, $result);
     }
 }

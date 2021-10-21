@@ -56,6 +56,6 @@ final class EngineLoader implements EngineLoaderInterface
             throw new NotFoundException('the engine with key "' . $key . '" was not found');
         }
 
-        return (new EngineFactory($this->companyLoader, new VersionFactory()))->fromArray($this->logger, (array) $engineData, $useragent);
+        return (new EngineFactory($this->companyLoader, new VersionFactory(), $this->logger))->fromArray((array) $engineData, $useragent);
     }
 }

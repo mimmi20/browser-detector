@@ -32,6 +32,7 @@ final class WindowsPhoneOsTest extends TestCase
      * @throws InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws UnexpectedValueException
+     * @throws UnexpectedValueException
      *
      * @dataProvider providerVersion
      */
@@ -119,6 +120,9 @@ final class WindowsPhoneOsTest extends TestCase
         ];
     }
 
+    /**
+     * @throws UnexpectedValueException
+     */
     public function testDetectVersionFail(): void
     {
         $useragent = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0; XBLWP7; ZuneWP7)';
@@ -172,6 +176,9 @@ final class WindowsPhoneOsTest extends TestCase
         self::assertNull($detectedVersion->getVersion());
     }
 
+    /**
+     * @throws UnexpectedValueException
+     */
     public function testDetectVersionFailSecond(): void
     {
         $useragent = 'UCWEB/2.0 (Windows; U; wds 8.10; en-IN; NOKIA; RM-914_im_india_269) U2/1.0.0 UCBrowser/4.1.0.504 U2/1.0.0 Mobile';
@@ -225,6 +232,9 @@ final class WindowsPhoneOsTest extends TestCase
         self::assertNull($detectedVersion->getVersion());
     }
 
+    /**
+     * @throws UnexpectedValueException
+     */
     public function testDetectVersionFailThird(): void
     {
         $useragent = 'Mozilla/5.0 (Windows NT 6.2; ARM; Trident/7.0; Touch; rv:11.0; WPDesktop; Lumia 630; Orange) like Gecko';
@@ -278,6 +288,9 @@ final class WindowsPhoneOsTest extends TestCase
         self::assertNull($detectedVersion->getVersion());
     }
 
+    /**
+     * @throws UnexpectedValueException
+     */
     public function testDetectVersionFailForth(): void
     {
         $useragent = 'Mozilla/5.0 (Windows NT 6.3; ARM; Trident/7.0; Touch; rv:11.0; WPDesktop; Lumia 928) like Gecko';
@@ -331,6 +344,9 @@ final class WindowsPhoneOsTest extends TestCase
         self::assertNull($detectedVersion->getVersion());
     }
 
+    /**
+     * @throws UnexpectedValueException
+     */
     public function testDetectVersionFailFifth(): void
     {
         $useragent = 'Mozilla/5.0 (Windows Phone 8.1; ARM; Trident/7.0; Touch; rv:11.0; IEMobile/11.0; NOKIA; Lumia 520; Vodafone ES) like Gecko';

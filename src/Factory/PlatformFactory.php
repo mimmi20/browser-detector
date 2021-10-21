@@ -33,10 +33,16 @@ final class PlatformFactory
 
     private CompanyLoaderInterface $companyLoader;
 
-    public function __construct(CompanyLoaderInterface $companyLoader, VersionFactoryInterface $versionFactory)
-    {
+    private LoggerInterface $logger;
+
+    public function __construct(
+        CompanyLoaderInterface $companyLoader,
+        VersionFactoryInterface $versionFactory,
+        LoggerInterface $logger
+    ) {
         $this->companyLoader  = $companyLoader;
         $this->versionFactory = $versionFactory;
+        $this->logger         = $logger;
     }
 
     /**
@@ -46,7 +52,7 @@ final class PlatformFactory
      * @throws NotFoundException
      * @throws UnexpectedValueException
      */
-    public function fromArray(LoggerInterface $logger, array $data, string $useragent): OsInterface
+    public function fromArray(array $data, string $useragent): OsInterface
     {
         assert(array_key_exists('name', $data), '"name" property is required');
         assert(array_key_exists('marketingName', $data), '"marketingName" property is required');
@@ -58,12 +64,12 @@ final class PlatformFactory
         $marketingName = $data['marketingName'];
         $bits          = $data['bits'];
 
-        $version = $this->getVersion($data['version'], $useragent, $logger);
+        $version = $this->getVersion($data['version'], $useragent, $this->logger);
 
         try {
             $manufacturer = $this->companyLoader->load($data['manufacturer'], $useragent);
         } catch (NotFoundException $e) {
-            $logger->info($e);
+            $this->logger->info($e);
 
             $manufacturer = new Company(
                 'unknown',

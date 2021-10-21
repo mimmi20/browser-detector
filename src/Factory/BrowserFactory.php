@@ -34,21 +34,25 @@ final class BrowserFactory
 
     private CompanyLoaderInterface $companyLoader;
 
+    private LoggerInterface $logger;
+
     public function __construct(
         CompanyLoaderInterface $companyLoader,
         VersionFactoryInterface $versionFactory,
-        TypeLoaderInterface $typeLoader
+        TypeLoaderInterface $typeLoader,
+        LoggerInterface $logger
     ) {
         $this->companyLoader  = $companyLoader;
         $this->versionFactory = $versionFactory;
         $this->typeLoader     = $typeLoader;
+        $this->logger         = $logger;
     }
 
     /**
      * @param array<string, (int|stdClass|string|null)> $data
      * @phpstan-param array{name?: string|null, manufacturer?: string, version?: stdClass|string|null, type?: string|null, bits?: int|null, modus?: string|null} $data
      */
-    public function fromArray(LoggerInterface $logger, array $data, string $useragent): BrowserInterface
+    public function fromArray(array $data, string $useragent): BrowserInterface
     {
         assert(array_key_exists('name', $data), '"name" property is required');
         assert(array_key_exists('manufacturer', $data), '"manufacturer" property is required');
@@ -66,16 +70,16 @@ final class BrowserFactory
             try {
                 $type = $this->typeLoader->load($data['type']);
             } catch (\UaBrowserType\NotFoundException $e) {
-                $logger->info($e);
+                $this->logger->info($e);
             }
         }
 
-        $version = $this->getVersion($data['version'], $useragent, $logger);
+        $version = $this->getVersion($data['version'], $useragent, $this->logger);
 
         try {
             $manufacturer = $this->companyLoader->load($data['manufacturer'], $useragent);
         } catch (NotFoundException $e) {
-            $logger->info($e);
+            $this->logger->info($e);
 
             $manufacturer = new Company(
                 'unknown',

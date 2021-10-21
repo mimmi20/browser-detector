@@ -17,11 +17,13 @@ use BrowserDetector\Parser\BrowserParserInterface;
 use BrowserDetector\Parser\DeviceParserInterface;
 use BrowserDetector\Parser\EngineParserInterface;
 use BrowserDetector\Parser\PlatformParserInterface;
+use BrowserDetector\Version\NotNumericException;
 use BrowserDetector\Version\Version;
 use Psr\Http\Message\MessageInterface;
 use Psr\Log\LoggerInterface;
 use Psr\SimpleCache\InvalidArgumentException;
 use UaDeviceType\Unknown;
+use UaNormalizer\Normalizer\Exception;
 use UaNormalizer\Normalizer\NormalizerInterface;
 use UaRequest\GenericRequest;
 use UaResult\Browser\Browser;
@@ -85,6 +87,7 @@ final class Detector implements DetectorInterface
      *
      * @throws InvalidArgumentException
      * @throws UnexpectedValueException
+     * @throws NotNumericException
      */
     public function __invoke($headers): ResultInterface
     {
@@ -112,17 +115,27 @@ final class Detector implements DetectorInterface
      *
      * @throws InvalidArgumentException
      * @throws UnexpectedValueException
+     * @throws NotNumericException
      */
     public function getBrowser($headers): ResultInterface
     {
         return $this->__invoke($headers);
     }
 
+    /**
+     * @throws NotNumericException
+     */
     private function parse(GenericRequest $request): Result
     {
-        $deviceUa     = (string) $this->normalizer->normalize($request->getDeviceUserAgent());
-        $deviceParser = $this->deviceParser;
+        try {
+            $deviceUa = (string) $this->normalizer->normalize($request->getDeviceUserAgent());
+        } catch (Exception $e) {
+            $this->logger->error($e);
 
+            $deviceUa = '';
+        }
+
+        $deviceParser  = $this->deviceParser;
         $defaultDevice = new Device(
             null,
             null,
@@ -178,8 +191,13 @@ final class Detector implements DetectorInterface
             new Version('0')
         );
 
-        $browserUa = (string) $this->normalizer->normalize($request->getBrowserUserAgent());
-        $engineUa  = (string) $this->normalizer->normalize($request->getEngineUserAgent());
+        try {
+            $browserUa = (string) $this->normalizer->normalize($request->getBrowserUserAgent());
+        } catch (Exception $e) {
+            $this->logger->error($e);
+
+            $browserUa = '';
+        }
 
         try {
             [$browser, $engine] = $browserParser->parse($browserUa);
@@ -188,6 +206,14 @@ final class Detector implements DetectorInterface
 
             $browser = $defaultBrowser;
             $engine  = $defaultEngine;
+        }
+
+        try {
+            $engineUa = (string) $this->normalizer->normalize($request->getEngineUserAgent());
+        } catch (Exception $e) {
+            $this->logger->error($e);
+
+            $engineUa = '';
         }
 
         if (null !== $platform && in_array($platform->getName(), ['iOS', 'iPhone OS'], true)) {

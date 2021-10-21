@@ -17,7 +17,7 @@ use BrowserDetector\Loader\CompanyLoaderInterface;
 use BrowserDetector\Loader\Helper\DataInterface;
 use BrowserDetector\Loader\NotFoundException;
 use BrowserDetector\Parser\EngineParserInterface;
-use BrowserDetector\Version\Test;
+use BrowserDetector\Version\TestFactory;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
@@ -514,7 +514,7 @@ final class BrowserLoaderTest extends TestCase
             ->willReturn(true);
 
         $browserData = (object) [
-            'version' => (object) ['class' => Test::class],
+            'version' => (object) ['factory' => TestFactory::class],
             'manufacturer' => 'unknown',
             'type' => 'unknown',
             'engine' => 'unknown',
