@@ -3432,5 +3432,43 @@
       "version": "15.15254.0",
       "manufacturer": "microsoft"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; Nokia X10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.80 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "X",
+      "marketingName": "X",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 4
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "94.0.4606.80",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "94.0.4606.80",
+      "manufacturer": "google"
+    }
   }
 ]
