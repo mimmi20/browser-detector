@@ -17,10 +17,13 @@ use BrowserDetector\Factory\DisplayFactory;
 use BrowserDetector\Loader\Helper\DataInterface;
 use BrowserDetector\Parser\PlatformParserInterface;
 use Psr\Log\LoggerInterface;
+use stdClass;
 use UaDeviceType\TypeLoader;
 use UaResult\Device\DeviceInterface;
 use UaResult\Os\OsInterface;
 use UnexpectedValueException;
+
+use function assert;
 
 final class DeviceLoader implements DeviceLoaderInterface
 {
@@ -65,6 +68,8 @@ final class DeviceLoader implements DeviceLoaderInterface
         if (null === $deviceData) {
             throw new NotFoundException('the device with key "' . $key . '" was not found');
         }
+
+        assert($deviceData instanceof stdClass);
 
         $platformKey = $deviceData->platform;
         $platform    = null;
