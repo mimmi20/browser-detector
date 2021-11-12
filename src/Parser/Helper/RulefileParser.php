@@ -13,13 +13,15 @@ declare(strict_types = 1);
 namespace BrowserDetector\Parser\Helper;
 
 use Exception;
-use ExceptionalJSON\DecodeErrorException;
+use JsonClass\DecodeErrorException;
 use JsonClass\JsonInterface;
 use Psr\Log\LoggerInterface;
 use SplFileInfo;
 
 use function array_keys;
+use function assert;
 use function file_get_contents;
+use function is_array;
 use function is_int;
 use function preg_last_error;
 use function preg_match;
@@ -54,6 +56,8 @@ final class RulefileParser implements RulefileParserInterface
                     $content,
                     true
                 );
+
+                assert(is_array($factories));
 
                 $mode  = $factories['generic'] ?? $fallback;
                 $rules = $factories['rules'] ?? [];

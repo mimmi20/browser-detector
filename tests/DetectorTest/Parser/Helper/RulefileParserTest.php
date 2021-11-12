@@ -13,7 +13,7 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest\Parser\Helper;
 
 use BrowserDetector\Parser\Helper\RulefileParser;
-use ExceptionalJSON\DecodeErrorException;
+use JsonClass\DecodeErrorException;
 use JsonClass\JsonInterface;
 use org\bovigo\vfs\vfsStream;
 use PHPUnit\Framework\Constraint\IsInstanceOf;
@@ -111,7 +111,7 @@ final class RulefileParserTest extends TestCase
     {
         $content   = "[]\n";
         $fallback  = 'test-fallback';
-        $exception = new DecodeErrorException(0, 'read-error', '');
+        $exception = new DecodeErrorException('read-error', 0);
 
         $fileInfo = $this->getMockBuilder(SplFileInfo::class)
             ->disableOriginalConstructor()

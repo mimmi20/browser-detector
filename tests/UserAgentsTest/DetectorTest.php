@@ -21,8 +21,8 @@ use BrowserDetector\Loader\NotFoundException;
 use BrowserDetector\Version\NotNumericException;
 use DateInterval;
 use Exception;
-use ExceptionalJSON\DecodeErrorException;
-use ExceptionalJSON\EncodeErrorException;
+use JsonClass\DecodeErrorException;
+use JsonClass\EncodeErrorException;
 use JsonClass\Json;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
@@ -42,6 +42,7 @@ use UnexpectedValueException;
 
 use function assert;
 use function get_class;
+use function is_iterable;
 use function sprintf;
 
 use const JSON_UNESCAPED_SLASHES;
@@ -227,7 +228,6 @@ final class DetectorTest extends TestCase
      * @throws ExpectationFailedException
      * @throws UnexpectedValueException
      * @throws NotNumericException
-     * @throws \ExceptionalJSON\Exception
      *
      * @dataProvider providerGetBrowser
      * @coversNothing
@@ -343,6 +343,8 @@ final class DetectorTest extends TestCase
             } catch (DecodeErrorException $e) {
                 throw new Exception(sprintf('file "%s" contains invalid json', $file->getPathname()), 0, $e);
             }
+
+            assert(is_iterable($tests));
 
             foreach ($tests as $i => $test) {
                 $expectedResult = $resultFactory->fromArray($logger, $test);

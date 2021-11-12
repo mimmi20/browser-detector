@@ -14,12 +14,13 @@ namespace BrowserDetectorTest\Loader\Helper;
 
 use ArrayIterator;
 use BrowserDetector\Loader\Helper\Data;
-use ExceptionalJSON\DecodeErrorException;
 use Iterator;
+use JsonClass\DecodeErrorException;
 use JsonClass\JsonInterface;
 use org\bovigo\vfs\vfsStream;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
+use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
 use RuntimeException;
 use SebastianBergmann\RecursionContext\InvalidArgumentException;
@@ -82,7 +83,7 @@ final class DataTest extends TestCase
             ->expects(self::once())
             ->method('decode')
             ->with('{"key": "value"}', false, 512, 0)
-            ->will(self::throwException(new DecodeErrorException(0, 'error', '')));
+            ->will(self::throwException(new DecodeErrorException('error', 0)));
 
         assert($iterator instanceof Iterator);
         assert($jsonParser instanceof JsonInterface);
@@ -161,6 +162,7 @@ final class DataTest extends TestCase
             ->method('getPathname')
             ->willReturnOnConsecutiveCalls(vfsStream::url(self::DATA_PATH . '/bot.json'), vfsStream::url(self::DATA_PATH . '/tool.json'));
 
+        /** @var ArrayIterator<SplFileInfo>&MockObject $iterator */
         $iterator = $this->getMockBuilder(ArrayIterator::class)
             ->disableOriginalConstructor()
             ->getMock();
@@ -198,7 +200,7 @@ final class DataTest extends TestCase
             ->withConsecutive(['{"key": "value"}', false, 512, 0], ['{"key2": "value2"}', false, 512, 0])
             ->willReturnOnConsecutiveCalls([$key => $value, 'generic' => 'test', 'generic2' => 'test2'], ['generic' => 'test', 'generic2' => 'test2', 'new' => 'newValue']);
 
-        assert($iterator instanceof Iterator);
+        assert($iterator instanceof ArrayIterator);
         assert($jsonParser instanceof JsonInterface);
         $object = new Data($iterator, $jsonParser);
 
