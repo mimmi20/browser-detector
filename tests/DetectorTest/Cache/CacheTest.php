@@ -23,6 +23,9 @@ use function serialize;
 
 final class CacheTest extends TestCase
 {
+    private const VERSION  = 6012;
+    private const CACHE_ID = 'version';
+
     /**
      * @throws InvalidArgumentException
      * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
@@ -30,32 +33,29 @@ final class CacheTest extends TestCase
      */
     public function testVersion(): void
     {
-        $version = 6012;
-        $cacheId = 'version';
-
         $adapter = $this->getMockBuilder(CacheInterface::class)
             ->disableOriginalClone()
             ->getMock();
         $adapter
             ->expects(self::once())
             ->method('set')
-            ->with($cacheId, ['content' => serialize($version)])
+            ->with(self::CACHE_ID, ['content' => serialize(self::VERSION)])
             ->willReturn(true);
         $adapter
             ->expects(self::once())
             ->method('has')
-            ->with($cacheId)
+            ->with(self::CACHE_ID)
             ->willReturn(true);
         $adapter
             ->expects(self::once())
             ->method('get')
-            ->with($cacheId)
-            ->willReturn(['content' => serialize($version)]);
+            ->with(self::CACHE_ID)
+            ->willReturn(['content' => serialize(self::VERSION)]);
 
         $cache = new Cache($adapter);
 
-        $cache->setItem($cacheId, $version);
-        self::assertSame($version, $cache->getItem($cacheId));
+        $cache->setItem(self::CACHE_ID, self::VERSION);
+        self::assertSame(self::VERSION, $cache->getItem(self::CACHE_ID));
     }
 
     /**

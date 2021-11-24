@@ -29,6 +29,10 @@ use function assert;
 
 final class BrowserParserTest extends TestCase
 {
+    private const USERAGENT = 'test-agent';
+    private const MODE      = 'test-mode';
+    private const KEY       = 'test-key';
+
     /**
      * @throws InvalidArgumentException
      * @throws ExpectationFailedException
@@ -36,10 +40,6 @@ final class BrowserParserTest extends TestCase
      */
     public function testInvoke(): void
     {
-        $useragent = 'test-agent';
-        $mode      = 'test-mode';
-        $key       = 'test-key';
-
         $expectedBrowser = new class() implements BrowserInterface {
             public function getName(): ?string
             {
@@ -189,7 +189,7 @@ final class BrowserParserTest extends TestCase
         $loader
             ->expects(self::once())
             ->method('load')
-            ->with($key, $useragent)
+            ->with(self::KEY, self::USERAGENT)
             ->willReturn($expectedResult);
 
         $loaderFactory = $this->getMockBuilder(BrowserLoaderFactoryInterface::class)
@@ -206,12 +206,12 @@ final class BrowserParserTest extends TestCase
         $fileParser
             ->expects(self::exactly(2))
             ->method('parseFile')
-            ->willReturnOnConsecutiveCalls($mode, $key);
+            ->willReturnOnConsecutiveCalls(self::MODE, self::KEY);
 
         assert($loaderFactory instanceof BrowserLoaderFactoryInterface);
         assert($fileParser instanceof RulefileParserInterface);
         $parser       = new BrowserParser($loaderFactory, $fileParser);
-        $parserResult = $parser->parse($useragent);
+        $parserResult = $parser->parse(self::USERAGENT);
 
         self::assertSame($expectedResult, $parserResult);
     }

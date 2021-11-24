@@ -35,6 +35,9 @@ use function sprintf;
 
 final class BrowserLoaderTest extends TestCase
 {
+    private const USERAGENT  = 'test/1.0';
+    private const ENGINE_KEY = 'unknown';
+
     /**
      * @throws NotFoundException
      * @throws UnexpectedValueException
@@ -415,14 +418,11 @@ final class BrowserLoaderTest extends TestCase
             ->method('hasItem')
             ->with('test-key')
             ->willReturn(true);
-
-        $useragent   = 'test/1.0';
-        $engineKey   = 'unknown';
         $browserData = (object) [
             'version' => (object) ['class' => 'VersionFactory', 'search' => ['test']],
             'manufacturer' => 'unknown',
             'type' => 'unknown',
-            'engine' => $engineKey,
+            'engine' => self::ENGINE_KEY,
             'name' => null,
             'modus' => null,
         ];
@@ -443,7 +443,7 @@ final class BrowserLoaderTest extends TestCase
         $engineParser
             ->expects(self::once())
             ->method('load')
-            ->with($engineKey, $useragent)
+            ->with(self::ENGINE_KEY, self::USERAGENT)
             ->willThrowException($exception);
 
         assert($logger instanceof LoggerInterface);
@@ -457,7 +457,7 @@ final class BrowserLoaderTest extends TestCase
             $engineParser
         );
 
-        $result = $object->load('test-key', $useragent);
+        $result = $object->load('test-key', self::USERAGENT);
 
         self::assertIsArray($result);
         self::assertArrayHasKey(0, $result);

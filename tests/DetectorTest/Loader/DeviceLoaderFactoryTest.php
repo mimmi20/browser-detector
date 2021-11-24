@@ -29,6 +29,8 @@ use function assert;
 
 final class DeviceLoaderFactoryTest extends TestCase
 {
+    private const COMPANY = 'test-company';
+
     /**
      * @throws InvalidArgumentException
      * @throws ExpectationFailedException
@@ -37,8 +39,6 @@ final class DeviceLoaderFactoryTest extends TestCase
      */
     public function testInvoke(): void
     {
-        $company = 'test-company';
-
         $logger     = $this->createMock(LoggerInterface::class);
         $jsonParser = $this->getMockBuilder(JsonInterface::class)
             ->disableOriginalConstructor()
@@ -63,7 +63,7 @@ final class DeviceLoaderFactoryTest extends TestCase
         $filter
             ->expects(self::once())
             ->method('__invoke')
-            ->with(DeviceLoaderFactory::DATA_PATH . $company, 'json')
+            ->with(DeviceLoaderFactory::DATA_PATH . self::COMPANY, 'json')
             ->willReturn($iterator);
 
         assert($logger instanceof LoggerInterface);
@@ -72,11 +72,11 @@ final class DeviceLoaderFactoryTest extends TestCase
         assert($platformParser instanceof PlatformParserInterface);
         assert($filter instanceof FilterInterface);
         $factory = new DeviceLoaderFactory($logger, $jsonParser, $companyLoader, $platformParser, $filter);
-        $object  = $factory($company);
+        $object  = $factory(self::COMPANY);
 
         self::assertInstanceOf(DeviceLoaderInterface::class, $object);
 
-        $objectTwo = $factory($company);
+        $objectTwo = $factory(self::COMPANY);
 
         self::assertInstanceOf(DeviceLoaderInterface::class, $objectTwo);
         self::assertSame($objectTwo, $object);

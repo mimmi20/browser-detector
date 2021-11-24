@@ -24,20 +24,19 @@ use SplFileInfo;
 final class FilterTest extends TestCase
 {
     private const DATA_PATH = 'root';
+    private const STRUCTURE = [
+        'dir' => [
+            '.gitkeep' => '',
+            '.json' => '{}',
+            'bot.txt' => 'some text',
+            'bot.json' => '{"key": "value"}',
+            'tool.json' => '{"key2": "value2"}',
+        ],
+    ];
 
     protected function setUp(): void
     {
-        $structure = [
-            'dir' => [
-                '.gitkeep' => '',
-                '.json' => '{}',
-                'bot.txt' => 'some text',
-                'bot.json' => '{"key": "value"}',
-                'tool.json' => '{"key2": "value2"}',
-            ],
-        ];
-
-        vfsStream::setup(self::DATA_PATH, null, $structure);
+        vfsStream::setup(self::DATA_PATH, null, self::STRUCTURE);
     }
 
     /**

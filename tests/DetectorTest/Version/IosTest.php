@@ -28,6 +28,8 @@ use UnexpectedValueException;
 
 final class IosTest extends TestCase
 {
+    private const USERAGENT = 'iOS/6.1.3 (10B329) dataaccessd/1.0';
+
     /**
      * @throws Exception
      * @throws InvalidArgumentException
@@ -172,7 +174,6 @@ final class IosTest extends TestCase
      */
     public function testDetectVersionFail(): void
     {
-        $useragent = 'iOS/6.1.3 (10B329) dataaccessd/1.0';
         $exception = new NotFoundException('not found');
         $version   = $this->createMock(VersionInterface::class);
 
@@ -182,7 +183,7 @@ final class IosTest extends TestCase
         $versionFactory
             ->expects(self::once())
             ->method('detectVersion')
-            ->with($useragent, Ios::SEARCHES)
+            ->with(self::USERAGENT, Ios::SEARCHES)
             ->willReturn($version);
         $versionFactory
             ->expects(self::never())
@@ -227,7 +228,7 @@ final class IosTest extends TestCase
 
         $object = new Ios($logger, $versionFactory, $iosBuild);
 
-        $detectedVersion = $object->detectVersion($useragent);
+        $detectedVersion = $object->detectVersion(self::USERAGENT);
 
         self::assertInstanceOf(VersionInterface::class, $detectedVersion);
         self::assertSame($version, $detectedVersion);

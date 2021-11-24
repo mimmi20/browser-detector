@@ -27,6 +27,10 @@ use function assert;
 
 final class PlatformParserTest extends TestCase
 {
+    private const USERAGENT = 'test-agent';
+    private const MODE      = 'test-mode';
+    private const KEY       = 'test-key';
+
     /**
      * @throws InvalidArgumentException
      * @throws ExpectationFailedException
@@ -36,10 +40,7 @@ final class PlatformParserTest extends TestCase
      */
     public function testInvoke(): void
     {
-        $useragent = 'test-agent';
-        $mode      = 'test-mode';
-        $key       = 'test-key';
-        $result    = $this->createMock(OsInterface::class);
+        $result = $this->createMock(OsInterface::class);
 
         $loader = $this->getMockBuilder(PlatformLoaderInterface::class)
             ->disableOriginalConstructor()
@@ -47,7 +48,7 @@ final class PlatformParserTest extends TestCase
         $loader
             ->expects(self::once())
             ->method('load')
-            ->with($key, $useragent)
+            ->with(self::KEY, self::USERAGENT)
             ->willReturn($result);
 
         $loaderFactory = $this->getMockBuilder(PlatformLoaderFactoryInterface::class)
@@ -64,12 +65,12 @@ final class PlatformParserTest extends TestCase
         $fileParser
             ->expects(self::exactly(2))
             ->method('parseFile')
-            ->willReturnOnConsecutiveCalls($mode, $key);
+            ->willReturnOnConsecutiveCalls(self::MODE, self::KEY);
 
         assert($loaderFactory instanceof PlatformLoaderFactoryInterface);
         assert($fileParser instanceof RulefileParserInterface);
         $parser       = new PlatformParser($loaderFactory, $fileParser);
-        $parserResult = $parser->parse($useragent);
+        $parserResult = $parser->parse(self::USERAGENT);
 
         self::assertSame($result, $parserResult);
     }

@@ -29,6 +29,8 @@ use function assert;
 
 final class DarwinParserTest extends TestCase
 {
+    private const USERAGENT = 'test-useragent';
+
     /**
      * @throws InvalidArgumentException
      * @throws ExpectationFailedException
@@ -36,7 +38,6 @@ final class DarwinParserTest extends TestCase
      */
     public function testInvoke(): void
     {
-        $useragent    = 'test-useragent';
         $expectedMode = 'test-mode';
 
         $expectedDevice = new class() implements DeviceInterface {
@@ -162,7 +163,7 @@ final class DarwinParserTest extends TestCase
         $mockLoader
             ->expects(self::once())
             ->method('load')
-            ->with($expectedMode, $useragent)
+            ->with($expectedMode, self::USERAGENT)
             ->willReturn($expectedResult);
 
         $mockLoaderFactory = $this->getMockBuilder(DeviceLoaderFactoryInterface::class)
@@ -186,6 +187,6 @@ final class DarwinParserTest extends TestCase
         assert($mockLoaderFactory instanceof DeviceLoaderFactoryInterface);
         $object = new DarwinParser($fileParser, $mockLoaderFactory);
 
-        self::assertSame($expectedResult, $object->parse($useragent));
+        self::assertSame($expectedResult, $object->parse(self::USERAGENT));
     }
 }

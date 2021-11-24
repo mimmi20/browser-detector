@@ -43,6 +43,7 @@ use function sha1;
 
 final class Detector implements DetectorInterface
 {
+    private const UNKNOWN = 'unknown';
     /**
      * an logger instance
      */
@@ -143,8 +144,8 @@ final class Detector implements DetectorInterface
         $defaultDevice = new Device(
             null,
             null,
-            new Company('unknown', null, null),
-            new Company('unknown', null, null),
+            new Company(self::UNKNOWN, null, null),
+            new Company(self::UNKNOWN, null, null),
             new Unknown(),
             new Display(null, null, null, null)
         );
@@ -152,7 +153,7 @@ final class Detector implements DetectorInterface
         $defaultPlatform = new Os(
             null,
             null,
-            new Company('unknown', null, null),
+            new Company(self::UNKNOWN, null, null),
             new Version('0'),
             null
         );
@@ -182,7 +183,7 @@ final class Detector implements DetectorInterface
 
         $defaultBrowser = new Browser(
             null,
-            new Company('unknown', null, null),
+            new Company(self::UNKNOWN, null, null),
             new Version('0'),
             new \UaBrowserType\Unknown(),
             null,
@@ -191,7 +192,7 @@ final class Detector implements DetectorInterface
 
         $defaultEngine = new Engine(
             null,
-            new Company('unknown', null, null),
+            new Company(self::UNKNOWN, null, null),
             new Version('0')
         );
 

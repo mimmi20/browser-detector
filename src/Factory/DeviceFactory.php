@@ -30,6 +30,8 @@ use function assert;
  */
 final class DeviceFactory
 {
+    private const DEVICE_NAME    = 'deviceName';
+    private const MARKETING_NAME = 'marketingName';
     private TypeLoaderInterface $typeLoader;
 
     private CompanyLoaderInterface $companyLoader;
@@ -56,15 +58,15 @@ final class DeviceFactory
      */
     public function fromArray(array $data, string $useragent): DeviceInterface
     {
-        assert(array_key_exists('deviceName', $data), '"deviceName" property is required');
-        assert(array_key_exists('marketingName', $data), '"marketingName" property is required');
+        assert(array_key_exists(self::DEVICE_NAME, $data), '"deviceName" property is required');
+        assert(array_key_exists(self::MARKETING_NAME, $data), '"marketingName" property is required');
         assert(array_key_exists('manufacturer', $data), '"manufacturer" property is required');
         assert(array_key_exists('brand', $data), '"brand" property is required');
         assert(array_key_exists('type', $data), '"type" property is required');
         assert(array_key_exists('display', $data), '"display" property is required');
 
-        $deviceName    = null !== $data['deviceName'] && '' !== $data['deviceName'] ? $data['deviceName'] : null;
-        $marketingName = null !== $data['marketingName'] && '' !== $data['marketingName'] ? $data['marketingName'] : null;
+        $deviceName    = null !== $data[self::DEVICE_NAME] && '' !== $data[self::DEVICE_NAME] ? $data[self::DEVICE_NAME] : null;
+        $marketingName = null !== $data[self::MARKETING_NAME] && '' !== $data[self::MARKETING_NAME] ? $data[self::MARKETING_NAME] : null;
 
         $type = new Unknown();
         try {

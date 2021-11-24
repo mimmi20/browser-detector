@@ -29,12 +29,11 @@ use function assert;
 final class RulefileParserTest extends TestCase
 {
     private const DATA_PATH = 'root';
+    private const STRUCTURE = ['bot.json' => 'test-content'];
 
     protected function setUp(): void
     {
-        $structure = ['bot.json' => 'test-content'];
-
-        vfsStream::setup(self::DATA_PATH, null, $structure);
+        vfsStream::setup(self::DATA_PATH, null, self::STRUCTURE);
     }
 
     /**

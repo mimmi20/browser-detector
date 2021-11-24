@@ -22,6 +22,7 @@ use function unserialize;
 
 final class Cache implements CacheInterface
 {
+    private const CONTENT = 'content';
     private \Psr\SimpleCache\CacheInterface $cache;
 
     /**
@@ -48,11 +49,11 @@ final class Cache implements CacheInterface
 
         $data = $this->cache->get($cacheId);
 
-        if (!is_array($data) || !array_key_exists('content', $data)) {
+        if (!is_array($data) || !array_key_exists(self::CONTENT, $data)) {
             return null;
         }
 
-        return unserialize($data['content']);
+        return unserialize($data[self::CONTENT]);
     }
 
     /**
@@ -69,7 +70,7 @@ final class Cache implements CacheInterface
     {
         // Get the whole PHP code
         $data = [
-            'content' => serialize($content),
+            self::CONTENT => serialize($content),
         ];
 
         // Save and return

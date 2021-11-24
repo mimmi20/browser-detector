@@ -41,6 +41,7 @@ use function array_key_exists;
 
 final class ResultFactory
 {
+    private const UNKNOWN = 'Unknown';
     private CompanyLoaderInterface $companyLoader;
 
     private LoggerInterface $logger;
@@ -65,15 +66,15 @@ final class ResultFactory
             return null;
         }
 
-        $headers        = (array) $data['headers'];
+        $headers        = $data['headers'];
         $request        = (new RequestBuilder())->buildRequest(new NullLogger(), $headers);
         $versionFactory = new VersionFactory();
 
         $device = new Device(
             null,
             null,
-            new Company('Unknown', null, null),
-            new Company('Unknown', null, null),
+            new Company(self::UNKNOWN, null, null),
+            new Company(self::UNKNOWN, null, null),
             new Unknown(),
             new Display(null, null, null, null)
         );
@@ -93,7 +94,7 @@ final class ResultFactory
 
         $browser = new Browser(
             null,
-            new Company('Unknown', null, null),
+            new Company(self::UNKNOWN, null, null),
             new Version('0'),
             new \UaBrowserType\Unknown(),
             null,
@@ -107,7 +108,7 @@ final class ResultFactory
         $os = new Os(
             null,
             null,
-            new Company('Unknown', null, null),
+            new Company(self::UNKNOWN, null, null),
             new Version('0'),
             null
         );
@@ -118,7 +119,7 @@ final class ResultFactory
 
         $engine = new Engine(
             null,
-            new Company('Unknown', null, null),
+            new Company(self::UNKNOWN, null, null),
             new Version('0')
         );
 

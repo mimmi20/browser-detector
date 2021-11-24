@@ -136,6 +136,8 @@ final class Macos implements VersionDetectorInterface
         '/darwin\/1\.4\.1/i' => '10.1.0',
         '/darwin\/1\.3\.1/i' => '10.0.0',
     ];
+    private const MICRO      = 'micro';
+    private const SEARCHES   = ['Mac OS X Version', 'Mac OS X v', 'Mac OS X', 'OS X', 'os=mac '];
 
     private LoggerInterface $logger;
 
@@ -213,10 +215,8 @@ final class Macos implements VersionDetectorInterface
             }
         }
 
-        $searches = ['Mac OS X Version', 'Mac OS X v', 'Mac OS X', 'OS X', 'os=mac '];
-
         try {
-            $detectedVersion = $this->versionFactory->detectVersion(str_replace(',', '.', $useragent), $searches);
+            $detectedVersion = $this->versionFactory->detectVersion(str_replace(',', '.', $useragent), self::SEARCHES);
         } catch (NotNumericException $e) {
             $this->logger->info($e);
 
@@ -225,7 +225,7 @@ final class Macos implements VersionDetectorInterface
 
         if (null !== $detectedVersion->getVersion(VersionInterface::IGNORE_MINOR) && preg_match('/(?P<major>\d{2})(?P<minor>\d{2})(?P<micro>\d)/', $detectedVersion->getVersion(VersionInterface::IGNORE_MINOR), $versions)) {
             try {
-                return $this->versionFactory->set($versions['major'] . '.' . $versions['minor'] . '.' . $versions['micro']);
+                return $this->versionFactory->set($versions['major'] . '.' . $versions['minor'] . '.' . $versions[self::MICRO]);
             } catch (NotNumericException $e) {
                 $this->logger->info($e);
 
@@ -236,8 +236,8 @@ final class Macos implements VersionDetectorInterface
         if (null !== $detectedVersion->getVersion(VersionInterface::IGNORE_MINOR) && preg_match('/(?P<major>\d{2})(?P<minor>\d)(?P<micro>\d)?/', $detectedVersion->getVersion(VersionInterface::IGNORE_MINOR), $versions)) {
             $version = $versions['major'] . '.' . $versions['minor'];
 
-            if (array_key_exists('micro', $versions)) {
-                $version .= '.' . $versions['micro'];
+            if (array_key_exists(self::MICRO, $versions)) {
+                $version .= '.' . $versions[self::MICRO];
             }
 
             try {

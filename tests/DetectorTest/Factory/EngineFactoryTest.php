@@ -32,6 +32,11 @@ use UnexpectedValueException;
 
 final class EngineFactoryTest extends TestCase
 {
+    private const V            = '11.2.1';
+    private const V2           = '11.2.1';
+    private const SEARCH       = ['abc'];
+    private const COMPANY_NAME = 'test-company';
+
     public function testFromEmptyArray(): void
     {
         $companyLoader = $this->getMockBuilder(CompanyLoaderInterface::class)
@@ -101,8 +106,6 @@ final class EngineFactoryTest extends TestCase
             ->method('load')
             ->with('unknown')
             ->willReturn($company);
-
-        $v              = '11.2.1';
         $version2       = $this->getMockBuilder(VersionInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
@@ -112,7 +115,7 @@ final class EngineFactoryTest extends TestCase
         $versionFactory
             ->expects(self::once())
             ->method('set')
-            ->with($v)
+            ->with(self::V)
             ->willReturn($version2);
 
         $logger = $this->getMockBuilder(LoggerInterface::class)
@@ -146,7 +149,7 @@ final class EngineFactoryTest extends TestCase
         $object = new EngineFactory($companyLoader, $versionFactory, $logger);
 
         $result = $object->fromArray(
-            ['name' => null, 'manufacturer' => 'unknown', 'version' => $v],
+            ['name' => null, 'manufacturer' => 'unknown', 'version' => self::V],
             'this is a test'
         );
 
@@ -245,10 +248,8 @@ final class EngineFactoryTest extends TestCase
             ->method('load')
             ->with('unknown')
             ->willReturn($company);
-
-        $v2             = '11.2.1';
         $v              = new stdClass();
-        $v->value       = $v2;
+        $v->value       = self::V2;
         $version2       = $this->getMockBuilder(VersionInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
@@ -258,7 +259,7 @@ final class EngineFactoryTest extends TestCase
         $versionFactory
             ->expects(self::once())
             ->method('set')
-            ->with($v2)
+            ->with(self::V2)
             ->willReturn($version2);
 
         $logger = $this->getMockBuilder(LoggerInterface::class)
@@ -542,10 +543,9 @@ final class EngineFactoryTest extends TestCase
             ->getMock();
 
         $useragent      = 'this is a test';
-        $search         = ['abc'];
         $v              = new stdClass();
         $v->class       = 'VersionFactory';
-        $v->search      = $search;
+        $v->search      = self::SEARCH;
         $versionFactory = $this->getMockBuilder(VersionFactoryInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
@@ -555,7 +555,7 @@ final class EngineFactoryTest extends TestCase
         $versionFactory
             ->expects(self::once())
             ->method('detectVersion')
-            ->with($useragent, $search)
+            ->with($useragent, self::SEARCH)
             ->willReturn($version2);
 
         $logger = $this->getMockBuilder(LoggerInterface::class)
@@ -607,7 +607,6 @@ final class EngineFactoryTest extends TestCase
      */
     public function testFromEmptyArrayWithCompanyError(): void
     {
-        $companyName   = 'test-company';
         $useragent     = 'this is a test';
         $exception     = new NotFoundException('failed');
         $companyLoader = $this->getMockBuilder(CompanyLoaderInterface::class)
@@ -616,7 +615,7 @@ final class EngineFactoryTest extends TestCase
         $companyLoader
             ->expects(self::once())
             ->method('load')
-            ->with($companyName, $useragent)
+            ->with(self::COMPANY_NAME, $useragent)
             ->willThrowException($exception);
 
         $version        = $this->getMockBuilder(VersionInterface::class)
@@ -663,7 +662,7 @@ final class EngineFactoryTest extends TestCase
         $object = new EngineFactory($companyLoader, $versionFactory, $logger);
 
         $result = $object->fromArray(
-            ['name' => null, 'manufacturer' => $companyName, 'version' => '0'],
+            ['name' => null, 'manufacturer' => self::COMPANY_NAME, 'version' => '0'],
             $useragent
         );
 

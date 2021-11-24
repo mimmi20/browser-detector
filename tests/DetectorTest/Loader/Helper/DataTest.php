@@ -31,15 +31,16 @@ use function assert;
 final class DataTest extends TestCase
 {
     private const DATA_PATH = 'root';
+    private const STRUCTURE = [
+        'bot.json' => '{"key": "value"}',
+        'tool.json' => '{"key2": "value2"}',
+    ];
+    private const KEY       = 'rules';
+    private const VALUE     = 'abc';
 
     protected function setUp(): void
     {
-        $structure = [
-            'bot.json' => '{"key": "value"}',
-            'tool.json' => '{"key2": "value2"}',
-        ];
-
-        vfsStream::setup(self::DATA_PATH, null, $structure);
+        vfsStream::setup(self::DATA_PATH, null, self::STRUCTURE);
     }
 
     public function testInvokeFail(): void
@@ -191,14 +192,11 @@ final class DataTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
 
-        $key   = 'rules';
-        $value = 'abc';
-
         $jsonParser
             ->expects(self::exactly(2))
             ->method('decode')
             ->withConsecutive(['{"key": "value"}', false, 512, 0], ['{"key2": "value2"}', false, 512, 0])
-            ->willReturnOnConsecutiveCalls([$key => $value, 'generic' => 'test', 'generic2' => 'test2'], ['generic' => 'test', 'generic2' => 'test2', 'new' => 'newValue']);
+            ->willReturnOnConsecutiveCalls([self::KEY => self::VALUE, 'generic' => 'test', 'generic2' => 'test2'], ['generic' => 'test', 'generic2' => 'test2', 'new' => 'newValue']);
 
         assert($iterator instanceof ArrayIterator);
         assert($jsonParser instanceof JsonInterface);
@@ -211,8 +209,8 @@ final class DataTest extends TestCase
         $object();
 
         self::assertTrue($object->isInitialized());
-        self::assertTrue($object->hasItem($key));
-        self::assertSame($value, $object->getItem($key));
+        self::assertTrue($object->hasItem(self::KEY));
+        self::assertSame(self::VALUE, $object->getItem(self::KEY));
         self::assertCount(4, $object);
 
         self::assertFalse($object->hasItem('key3'));

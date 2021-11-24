@@ -29,6 +29,9 @@ use function assert;
 
 final class TvParserTest extends TestCase
 {
+    private const USERAGENT    = 'test-useragent';
+    private const GENERIC_MODE = 'genericMode';
+
     /**
      * @throws InvalidArgumentException
      * @throws ExpectationFailedException
@@ -36,7 +39,6 @@ final class TvParserTest extends TestCase
      */
     public function testInvoke(): void
     {
-        $useragent    = 'test-useragent';
         $expectedMode = 'test-mode';
 
         $expectedDevice = new class() implements DeviceInterface {
@@ -155,7 +157,6 @@ final class TvParserTest extends TestCase
         };
 
         $expectedResult = [$expectedDevice];
-        $genericMode    = 'genericMode';
 
         $mockLoader = $this->getMockBuilder(DeviceLoaderInterface::class)
             ->disableOriginalConstructor()
@@ -163,7 +164,7 @@ final class TvParserTest extends TestCase
         $mockLoader
             ->expects(self::once())
             ->method('load')
-            ->with($expectedMode, $useragent)
+            ->with($expectedMode, self::USERAGENT)
             ->willReturn($expectedResult);
 
         $mockLoaderFactory = $this->getMockBuilder(DeviceLoaderFactoryInterface::class)
@@ -172,7 +173,7 @@ final class TvParserTest extends TestCase
         $mockLoaderFactory
             ->expects(self::once())
             ->method('__invoke')
-            ->with($genericMode)
+            ->with(self::GENERIC_MODE)
             ->willReturn($mockLoader);
 
         $fileParser = $this->getMockBuilder(RulefileParserInterface::class)
@@ -181,12 +182,12 @@ final class TvParserTest extends TestCase
         $fileParser
             ->expects(self::exactly(2))
             ->method('parseFile')
-            ->willReturnOnConsecutiveCalls($genericMode, $expectedMode);
+            ->willReturnOnConsecutiveCalls(self::GENERIC_MODE, $expectedMode);
 
         assert($fileParser instanceof RulefileParserInterface);
         assert($mockLoaderFactory instanceof DeviceLoaderFactoryInterface);
         $object = new TvParser($fileParser, $mockLoaderFactory);
 
-        self::assertSame($expectedResult, $object->parse($useragent));
+        self::assertSame($expectedResult, $object->parse(self::USERAGENT));
     }
 }

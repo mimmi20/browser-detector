@@ -32,6 +32,8 @@ use UnexpectedValueException;
 
 final class PlatformFactoryTest extends TestCase
 {
+    private const SEARCH = ['abc'];
+
     /**
      * @throws UnexpectedValueException
      */
@@ -255,9 +257,6 @@ final class PlatformFactoryTest extends TestCase
             ->with('unknown')
             ->willReturn($company);
 
-        $version1       = $this->getMockBuilder(VersionInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
         $v2             = '11.2.1';
         $v              = new stdClass();
         $v->value       = $v2;
@@ -336,9 +335,6 @@ final class PlatformFactoryTest extends TestCase
             ->with('unknown')
             ->willReturn($company);
 
-        $version1       = $this->getMockBuilder(VersionInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
         $v2             = '11.2';
         $v              = new stdClass();
         $v->value       = 11.2;
@@ -494,9 +490,6 @@ final class PlatformFactoryTest extends TestCase
 
         $v              = new stdClass();
         $v->factory     = '\BrowserDetector\Version\TestFactory';
-        $version2       = $this->getMockBuilder(VersionInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
         $versionFactory = $this->getMockBuilder(VersionFactoryInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
@@ -645,10 +638,9 @@ final class PlatformFactoryTest extends TestCase
             ->getMock();
 
         $useragent      = 'this is a test';
-        $search         = ['abc'];
         $v              = new stdClass();
         $v->class       = 'VersionFactory';
-        $v->search      = $search;
+        $v->search      = self::SEARCH;
         $versionFactory = $this->getMockBuilder(VersionFactoryInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
@@ -658,7 +650,7 @@ final class PlatformFactoryTest extends TestCase
         $versionFactory
             ->expects(self::once())
             ->method('detectVersion')
-            ->with($useragent, $search)
+            ->with($useragent, self::SEARCH)
             ->willReturn($version2);
 
         $logger = $this->getMockBuilder(LoggerInterface::class)
@@ -716,9 +708,6 @@ final class PlatformFactoryTest extends TestCase
         $companyName   = 'test-company';
         $useragent     = 'this is a test';
         $exception     = new NotFoundException('failed');
-        $company       = $this->getMockBuilder(CompanyInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
         $companyLoader = $this->getMockBuilder(CompanyLoaderInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
@@ -1233,9 +1222,6 @@ final class PlatformFactoryTest extends TestCase
             ->with($companyName, $useragent)
             ->willReturn($company);
 
-        $version1 = $this->getMockBuilder(VersionInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
         $v        = '3.0';
         $version2 = $this->getMockBuilder(VersionInterface::class)
             ->disableOriginalConstructor()

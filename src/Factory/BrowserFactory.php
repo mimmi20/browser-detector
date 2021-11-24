@@ -30,6 +30,8 @@ final class BrowserFactory
 {
     use VersionFactoryTrait;
 
+    private const TYPE = 'type';
+
     private TypeLoaderInterface $typeLoader;
 
     private CompanyLoaderInterface $companyLoader;
@@ -57,7 +59,7 @@ final class BrowserFactory
         assert(array_key_exists('name', $data), '"name" property is required');
         assert(array_key_exists('manufacturer', $data), '"manufacturer" property is required');
         assert(array_key_exists('version', $data), '"version" property is required');
-        assert(array_key_exists('type', $data), '"type" property is required');
+        assert(array_key_exists(self::TYPE, $data), '"type" property is required');
         assert(array_key_exists('bits', $data), '"bits" property is required');
         assert(array_key_exists('modus', $data), '"modus" property is required');
 
@@ -66,9 +68,9 @@ final class BrowserFactory
         $bits  = $data['bits'];
         $type  = new Unknown();
 
-        if (null !== $data['type']) {
+        if (null !== $data[self::TYPE]) {
             try {
-                $type = $this->typeLoader->load($data['type']);
+                $type = $this->typeLoader->load($data[self::TYPE]);
             } catch (\UaBrowserType\NotFoundException $e) {
                 $this->logger->info($e);
             }

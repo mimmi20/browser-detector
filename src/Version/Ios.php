@@ -206,6 +206,7 @@ final class Ios implements VersionDetectorInterface
         '1602.92' => '12.1',
         '1603.50' => '12.1.1',
     ];
+    private const BUILD     = 'build';
 
     private LoggerInterface $logger;
 
@@ -243,7 +244,7 @@ final class Ios implements VersionDetectorInterface
 
         if ($doMatch) {
             try {
-                $buildVersion = $this->iosBuild->getVersion($matches['build']);
+                $buildVersion = $this->iosBuild->getVersion($matches[self::BUILD]);
             } catch (BuildException | NotFoundException $e) {
                 $buildVersion = false;
             }
@@ -263,7 +264,7 @@ final class Ios implements VersionDetectorInterface
 
         if ($doMatch) {
             try {
-                $buildVersion = $this->iosBuild->getVersion($matches['build']);
+                $buildVersion = $this->iosBuild->getVersion($matches[self::BUILD]);
             } catch (BuildException | NotFoundException $e) {
                 $buildVersion = false;
             }
@@ -297,15 +298,13 @@ final class Ios implements VersionDetectorInterface
 
         $doMatch = preg_match('/^apple-(?:iphone|ip[ao]d)\d+[c,_]\d+\/(?P<build>[\d\.]+)$/i', $useragent, $matches);
 
-        if ($doMatch) {
-            if (array_key_exists($matches['build'], self::BUILD_MAP)) {
-                try {
-                    return $this->versionFactory->set(self::BUILD_MAP[$matches['build']]);
-                } catch (NotNumericException $e) {
-                    $this->logger->info($e);
+        if ($doMatch && array_key_exists($matches[self::BUILD], self::BUILD_MAP)) {
+            try {
+                return $this->versionFactory->set(self::BUILD_MAP[$matches[self::BUILD]]);
+            } catch (NotNumericException $e) {
+                $this->logger->info($e);
 
-                    return new NullVersion();
-                }
+                return new NullVersion();
             }
         }
 
@@ -313,7 +312,7 @@ final class Ios implements VersionDetectorInterface
 
         if ($doMatch) {
             try {
-                $buildVersion = $this->iosBuild->getVersion($matches['build']);
+                $buildVersion = $this->iosBuild->getVersion($matches[self::BUILD]);
             } catch (BuildException | NotFoundException $e) {
                 $buildVersion = false;
             }

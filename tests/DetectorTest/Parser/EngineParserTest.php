@@ -27,6 +27,9 @@ use function assert;
 
 final class EngineParserTest extends TestCase
 {
+    private const USERAGENT = 'test-agent';
+    private const MODE      = 'test-mode';
+
     /**
      * @throws InvalidArgumentException
      * @throws ExpectationFailedException
@@ -36,9 +39,7 @@ final class EngineParserTest extends TestCase
      */
     public function testInvoke(): void
     {
-        $useragent = 'test-agent';
-        $mode      = 'test-mode';
-        $result    = $this->createMock(EngineInterface::class);
+        $result = $this->createMock(EngineInterface::class);
 
         $loader = $this->getMockBuilder(EngineLoaderInterface::class)
             ->disableOriginalConstructor()
@@ -46,7 +47,7 @@ final class EngineParserTest extends TestCase
         $loader
             ->expects(self::once())
             ->method('load')
-            ->with($mode, $useragent)
+            ->with(self::MODE, self::USERAGENT)
             ->willReturn($result);
 
         $loaderFactory = $this->getMockBuilder(EngineLoaderFactoryInterface::class)
@@ -63,12 +64,12 @@ final class EngineParserTest extends TestCase
         $fileParser
             ->expects(self::once())
             ->method('parseFile')
-            ->willReturn($mode);
+            ->willReturn(self::MODE);
 
         assert($loaderFactory instanceof EngineLoaderFactoryInterface);
         assert($fileParser instanceof RulefileParserInterface);
         $parser       = new EngineParser($loaderFactory, $fileParser);
-        $parserResult = $parser->parse($useragent);
+        $parserResult = $parser->parse(self::USERAGENT);
 
         self::assertSame($result, $parserResult);
     }

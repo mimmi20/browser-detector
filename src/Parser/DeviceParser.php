@@ -29,6 +29,7 @@ use function preg_match;
 
 final class DeviceParser implements DeviceParserInterface
 {
+    private const UNKNOWN = 'unknown';
     private DarwinParserInterface $darwinParser;
 
     private MobileParserInterface $mobileParser;
@@ -75,7 +76,7 @@ final class DeviceParser implements DeviceParserInterface
     public function parse(string $useragent): array
     {
         if (preg_match('/new-sogou-spider|zollard|socialradarbot|microsoft office protocol discovery|powermarks|archivebot|marketwirebot|microsoft-cryptoapi|pad-bot|james bot|winhttp|jobboerse|<|>|online-versicherungsportal\.info|versicherungssuchmaschine\.net|microsearch|microsoft data access|microsoft url control|infegyatlas|msie or firefox mutant|semantic-visions\.com crawler|labs\.topsy\.com\/butterfly|dolphin http client|google wireless transcoder|commoncrawler|ipodder|tripadvisor|nokia wap gateway|outclicksbot/i', $useragent)) {
-            return $this->load('unknown', 'unknown', $useragent);
+            return $this->load(self::UNKNOWN, self::UNKNOWN, $useragent);
         }
 
         if (
@@ -97,7 +98,7 @@ final class DeviceParser implements DeviceParserInterface
             return $this->desktopParser->parse($useragent);
         }
 
-        return $this->load('unknown', 'unknown', $useragent);
+        return $this->load(self::UNKNOWN, self::UNKNOWN, $useragent);
     }
 
     /**

@@ -35,6 +35,10 @@ use UnexpectedValueException;
 
 final class BrowserFactoryTest extends TestCase
 {
+    private const V      = '11.2.1';
+    private const V2     = '11.2.1';
+    private const SEARCH = ['abc'];
+
     public function testFromEmptyArray(): void
     {
         $companyLoader = $this->getMockBuilder(CompanyLoaderInterface::class)
@@ -196,14 +200,13 @@ final class BrowserFactoryTest extends TestCase
         $version1       = $this->getMockBuilder(VersionInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
-        $v              = '11.2.1';
         $versionFactory = $this->getMockBuilder(VersionFactoryInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $versionFactory
             ->expects(self::once())
             ->method('set')
-            ->with($v)
+            ->with(self::V)
             ->willReturn($version1);
 
         $typeName   = 'unknown-type';
@@ -250,7 +253,7 @@ final class BrowserFactoryTest extends TestCase
         $object = new BrowserFactory($companyLoader, $versionFactory, $typeLoader, $logger);
 
         $result = $object->fromArray(
-            ['name' => null, 'manufacturer' => 'unknown', 'version' => $v, 'type' => $typeName, 'bits' => null, 'modus' => null],
+            ['name' => null, 'manufacturer' => 'unknown', 'version' => self::V, 'type' => $typeName, 'bits' => null, 'modus' => null],
             'this is a test'
         );
 
@@ -374,16 +377,15 @@ final class BrowserFactoryTest extends TestCase
         $version1       = $this->getMockBuilder(VersionInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
-        $v2             = '11.2.1';
         $v              = new stdClass();
-        $v->value       = $v2;
+        $v->value       = self::V2;
         $versionFactory = $this->getMockBuilder(VersionFactoryInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
         $versionFactory
             ->expects(self::once())
             ->method('set')
-            ->with($v2)
+            ->with(self::V2)
             ->willReturn($version1);
 
         $typeName   = 'unknown-type';
@@ -735,10 +737,9 @@ final class BrowserFactoryTest extends TestCase
             ->getMock();
 
         $useragent      = 'this is a test';
-        $search         = ['abc'];
         $v              = new stdClass();
         $v->class       = 'VersionFactory';
-        $v->search      = $search;
+        $v->search      = self::SEARCH;
         $versionFactory = $this->getMockBuilder(VersionFactoryInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
@@ -748,7 +749,7 @@ final class BrowserFactoryTest extends TestCase
         $versionFactory
             ->expects(self::once())
             ->method('detectVersion')
-            ->with($useragent, $search)
+            ->with($useragent, self::SEARCH)
             ->willReturn($version2);
 
         $typeName   = 'unknown-type';
