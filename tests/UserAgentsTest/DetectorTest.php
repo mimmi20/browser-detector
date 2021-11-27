@@ -349,7 +349,7 @@ final class DetectorTest extends TestCase
             foreach ($tests as $i => $test) {
                 $expectedResult = $resultFactory->fromArray($logger, $test);
 
-                if (null === $expectedResult) {
+                if (!$expectedResult instanceof Result) {
                     continue;
                 }
 
