@@ -297,15 +297,13 @@ final class Ios implements VersionDetectorInterface
 
         $doMatch = preg_match('/^apple-(?:iphone|ip[ao]d)\d+[c,_]\d+\/(?P<build>[\d\.]+)$/i', $useragent, $matches);
 
-        if ($doMatch) {
-            if (array_key_exists($matches['build'], self::BUILD_MAP)) {
-                try {
-                    return $this->versionFactory->set(self::BUILD_MAP[$matches['build']]);
-                } catch (NotNumericException $e) {
-                    $this->logger->info($e);
+        if ($doMatch && array_key_exists($matches['build'], self::BUILD_MAP)) {
+            try {
+                return $this->versionFactory->set(self::BUILD_MAP[$matches['build']]);
+            } catch (NotNumericException $e) {
+                $this->logger->info($e);
 
-                    return new NullVersion();
-                }
+                return new NullVersion();
             }
         }
 
