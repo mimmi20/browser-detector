@@ -1,25 +1,101 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; KFARWI Build/LMY47O) AppleWebKit/537.36 (KHTML, like Gecko) Silk/50.2.1 like Chrome/50.0.2661.89 Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; KFFOWI Build/LVY48F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.91 Safari/537.36"
     },
     "device": {
-      "deviceName": "KFARWI",
-      "marketingName": "Fire HD 6 (4th Gen.)",
+      "deviceName": "KFFOWI",
+      "marketingName": "Fire (5th Gen.)",
+      "manufacturer": "amazon",
+      "brand": "amazon",
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "size": 7.4
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "55.0.2883.91",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "55.0.2883.91",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; KFFOWI Build/LVY48F) AppleWebKit/537.36 (KHTML, like Gecko) Silk/55.1.62 like Chrome/55.0.2883.91 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "KFFOWI",
+      "marketingName": "Fire (5th Gen.)",
+      "manufacturer": "amazon",
+      "brand": "amazon",
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "size": 7.4
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Silk",
+      "modus": null,
+      "version": "55.1.62",
+      "manufacturer": "amazon",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "55.0.2883.91",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; KFGIWI Build/LVY48F) AppleWebKit/537.36 (KHTML, like Gecko) Silk/55.1.62 like Chrome/55.0.2883.91 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "KFGIWI",
+      "marketingName": "Fire HD 8 (2016)",
       "manufacturer": "amazon",
       "brand": "amazon",
       "display": {
         "width": 1280,
         "height": 800,
         "touch": true,
-        "size": 6
+        "size": 8
       },
       "type": "tablet"
     },
     "browser": {
       "name": "Silk",
       "modus": null,
-      "version": "50.2.1",
+      "version": "55.1.62",
       "manufacturer": "amazon",
       "bits": null,
       "type": "transcoder"
@@ -33,31 +109,31 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "50.0.2661.89",
+      "version": "55.0.2883.91",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; KFSAWI Build/LMY47O) AppleWebKit/537.36 (KHTML, like Gecko) Silk/50.2.1 like Chrome/50.0.2661.89 Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; KFTBWI Build/LVY48F) AppleWebKit/537.36 (KHTML, like Gecko) Silk/55.1.62 like Chrome/55.0.2883.91 Safari/537.36"
     },
     "device": {
-      "deviceName": "KFSAWI",
-      "marketingName": "Fire HDX 8.9 (4th Gen.)",
+      "deviceName": "KFTBWI",
+      "marketingName": "Fire HD 10 (5th Gen.)",
       "manufacturer": "amazon",
       "brand": "amazon",
       "display": {
-        "width": 2560,
-        "height": 1600,
+        "width": 1280,
+        "height": 800,
         "touch": true,
-        "size": 8.9
+        "size": 10.1
       },
       "type": "tablet"
     },
     "browser": {
       "name": "Silk",
       "modus": null,
-      "version": "50.2.1",
+      "version": "55.1.62",
       "manufacturer": "amazon",
       "bits": null,
       "type": "transcoder"
@@ -71,13 +147,13 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "50.0.2661.89",
+      "version": "55.0.2883.91",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.4.3; de-de; KFTHWI Build/KTU84M) AppleWebKit/537.36 (KHTML, like Gecko) Silk/3.41 like Chrome/37.0.2026.117 Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.3; KFTHWI Build/KTU84M) AppleWebKit/537.36 (KHTML, like Gecko) Silk/55.1.62 like Chrome/55.0.2883.91 Safari/537.36"
     },
     "device": {
       "deviceName": "KFTHWI",
@@ -95,7 +171,7 @@
     "browser": {
       "name": "Silk",
       "modus": null,
-      "version": "3.41.0",
+      "version": "55.1.62",
       "manufacturer": "amazon",
       "bits": null,
       "type": "transcoder"
@@ -109,127 +185,13 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "37.0.2026.117",
+      "version": "55.0.2883.91",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.4.3; de-de; KFSOWI Build/KTU84M) AppleWebKit/537.36 (KHTML, like Gecko) Silk/3.41 like Chrome/37.0.2026.117 Safari/537.36"
-    },
-    "device": {
-      "deviceName": "KFSOWI",
-      "marketingName": "Kindle Fire HD 7 (3rd Gen., Wi-Fi)",
-      "manufacturer": "amazon",
-      "brand": "amazon",
-      "display": {
-        "width": 1280,
-        "height": 800,
-        "touch": true,
-        "size": 7
-      },
-      "type": "tablet"
-    },
-    "browser": {
-      "name": "Silk",
-      "modus": null,
-      "version": "3.41.0",
-      "manufacturer": "amazon",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.4.3",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "37.0.2026.117",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.0.3; KFTT Build/IML74K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.122 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "KFTT",
-      "marketingName": "Kindle Fire HD 7 (2nd Gen.)",
-      "manufacturer": "amazon",
-      "brand": "amazon",
-      "display": {
-        "width": 1280,
-        "height": 800,
-        "touch": true,
-        "size": 7
-      },
-      "type": "tablet"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "35.0.1916.122",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.0.3",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "35.0.1916.122",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.0.3; de-de; KFOT Build/IML74K) AppleWebKit/537.36 (KHTML, like Gecko) Silk/3.41 like Chrome/37.0.2026.117 Safari/537.36"
-    },
-    "device": {
-      "deviceName": "KFOT",
-      "marketingName": "Kindle Fire (2nd Gen.)",
-      "manufacturer": "amazon",
-      "brand": "amazon",
-      "display": {
-        "width": 1024,
-        "height": 600,
-        "touch": true,
-        "size": 7
-      },
-      "type": "tablet"
-    },
-    "browser": {
-      "name": "Silk",
-      "modus": null,
-      "version": "3.41.0",
-      "manufacturer": "amazon",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.0.3",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "37.0.2026.117",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.4.3; de-de; KFASWI Build/KTU84M) AppleWebKit/537.36 (KHTML, like Gecko) Silk/3.41 like Chrome/37.0.2026.117 Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; KFASWI Build/LVY48F) AppleWebKit/537.36 (KHTML, like Gecko) Silk/55.1.62 like Chrome/55.0.2883.91 Safari/537.36"
     },
     "device": {
       "deviceName": "KFASWI",
@@ -247,7 +209,7 @@
     "browser": {
       "name": "Silk",
       "modus": null,
-      "version": "3.41.0",
+      "version": "55.1.62",
       "manufacturer": "amazon",
       "bits": null,
       "type": "transcoder"
@@ -255,57 +217,57 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "4.4.3",
+      "version": "5.1.1",
       "manufacturer": "google",
       "bits": null
     },
     "engine": {
       "name": "Blink",
-      "version": "37.0.2026.117",
+      "version": "55.0.2883.91",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.4.3; de-de; KFTHWI Build/KTU84M) AppleWebKit/537.16 (KHTML, like Gecko) Version/4.0 Safari/537.16"
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.0.3; KFOT Build/IML74K) AppleWebKit/537.36 (KHTML, like Gecko) Silk/55.1.62 like Chrome/55.0.2883.91 Safari/537.36"
     },
     "device": {
-      "deviceName": "KFTHWI",
-      "marketingName": "Kindle Fire HDX 7 (3rd Gen., Wi-Fi)",
+      "deviceName": "KFOT",
+      "marketingName": "Kindle Fire (2nd Gen.)",
       "manufacturer": "amazon",
       "brand": "amazon",
       "display": {
-        "width": 1920,
-        "height": 1200,
+        "width": 1024,
+        "height": 600,
         "touch": true,
         "size": 7
       },
       "type": "tablet"
     },
     "browser": {
-      "name": "Android Webkit",
+      "name": "Silk",
       "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "google",
+      "version": "55.1.62",
+      "manufacturer": "amazon",
       "bits": null,
-      "type": "browser"
+      "type": "transcoder"
     },
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "4.4.3",
+      "version": "4.0.3",
       "manufacturer": "google",
       "bits": null
     },
     "engine": {
-      "name": "WebKit",
-      "version": "537.16.0",
-      "manufacturer": "apple"
+      "name": "Blink",
+      "version": "55.0.2883.91",
+      "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.0.3; de-de; KFTT Build/IML74K) AppleWebKit/537.36 (KHTML, like Gecko) Silk/3.39 like Chrome/34.0.1847.137 Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.0.3; KFTT Build/IML74K) AppleWebKit/537.36 (KHTML, like Gecko) Silk/55.1.62 like Chrome/55.0.2883.91 Safari/537.36"
     },
     "device": {
       "deviceName": "KFTT",
@@ -323,7 +285,7 @@
     "browser": {
       "name": "Silk",
       "modus": null,
-      "version": "3.39.0",
+      "version": "55.1.62",
       "manufacturer": "amazon",
       "bits": null,
       "type": "transcoder"
@@ -337,51 +299,13 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "34.0.1847.137",
+      "version": "55.0.2883.91",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; de-de; KFTHWI Build/JDQ39) AppleWebKit/535.19 (KHTML, like Gecko) Silk/3.8 Safari/535.19 Silk-Accelerated=true"
-    },
-    "device": {
-      "deviceName": "KFTHWI",
-      "marketingName": "Kindle Fire HDX 7 (3rd Gen., Wi-Fi)",
-      "manufacturer": "amazon",
-      "brand": "amazon",
-      "display": {
-        "width": 1920,
-        "height": 1200,
-        "touch": true,
-        "size": 7
-      },
-      "type": "tablet"
-    },
-    "browser": {
-      "name": "Silk",
-      "modus": null,
-      "version": "3.8.0",
-      "manufacturer": "amazon",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": null,
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "535.19.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.4.3; de-de; KFSOWI Build/KTU84M) AppleWebKit/537.36 (KHTML, like Gecko) Silk/3.40 like Chrome/37.0.2026.117 Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.3; KFSOWI Build/KTU84M) AppleWebKit/537.36 (KHTML, like Gecko) Silk/55.1.62 like Chrome/55.0.2883.91 Safari/537.36"
     },
     "device": {
       "deviceName": "KFSOWI",
@@ -399,7 +323,7 @@
     "browser": {
       "name": "Silk",
       "modus": null,
-      "version": "3.40.0",
+      "version": "55.1.62",
       "manufacturer": "amazon",
       "bits": null,
       "type": "transcoder"
@@ -413,13 +337,13 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "37.0.2026.117",
+      "version": "55.0.2883.91",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.0.4; de-de; KFJWI Build/IMM76D) AppleWebKit/537.36 (KHTML, like Gecko) Silk/3.41 like Chrome/37.0.2026.117 Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.0.4; KFJWI Build/IMM76D) AppleWebKit/537.36 (KHTML, like Gecko) Silk/55.1.62 like Chrome/55.0.2883.91 Safari/537.36"
     },
     "device": {
       "deviceName": "KFJWI",
@@ -437,7 +361,7 @@
     "browser": {
       "name": "Silk",
       "modus": null,
-      "version": "3.41.0",
+      "version": "55.1.62",
       "manufacturer": "amazon",
       "bits": null,
       "type": "transcoder"
@@ -451,31 +375,31 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "37.0.2026.117",
+      "version": "55.0.2883.91",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.4.2; de-de; KFASWI Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Silk/3.31 like Chrome/34.0.1847.137 Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; KFMEWI Build/LVY48F) AppleWebKit/537.36 (KHTML, like Gecko) Silk/55.1.62 like Chrome/55.0.2883.91 Safari/537.36"
     },
     "device": {
-      "deviceName": "KFASWI",
-      "marketingName": "Fire HD 7 (4th Gen.)",
+      "deviceName": "KFMEWI",
+      "marketingName": "Fire HD 8 (5th Gen.)",
       "manufacturer": "amazon",
       "brand": "amazon",
       "display": {
         "width": 1280,
         "height": 800,
         "touch": true,
-        "size": 7
+        "size": 8
       },
       "type": "tablet"
     },
     "browser": {
       "name": "Silk",
       "modus": null,
-      "version": "3.31.0",
+      "version": "55.1.62",
       "manufacturer": "amazon",
       "bits": null,
       "type": "transcoder"
@@ -483,513 +407,19 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "4.4.2",
+      "version": "5.1.1",
       "manufacturer": "google",
       "bits": null
     },
     "engine": {
       "name": "Blink",
-      "version": "34.0.1847.137",
+      "version": "55.0.2883.91",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Dalvik/1.6.0 (Linux; U; Android 4.0.3; KFTT Build/IML74K)"
-    },
-    "device": {
-      "deviceName": "KFTT",
-      "marketingName": "Kindle Fire HD 7 (2nd Gen.)",
-      "manufacturer": "amazon",
-      "brand": "amazon",
-      "display": {
-        "width": 1280,
-        "height": 800,
-        "touch": true,
-        "size": 7
-      },
-      "type": "tablet"
-    },
-    "browser": {
-      "name": "Dalvik",
-      "modus": null,
-      "version": "1.6.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.0.3",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.4.3; de-de; KFARWI Build/KTU84M) AppleWebKit/537.36 (KHTML, like Gecko) Silk/3.41 like Chrome/37.0.2026.117 Safari/537.36"
-    },
-    "device": {
-      "deviceName": "KFARWI",
-      "marketingName": "Fire HD 6 (4th Gen.)",
-      "manufacturer": "amazon",
-      "brand": "amazon",
-      "display": {
-        "width": 1280,
-        "height": 800,
-        "touch": true,
-        "size": 6
-      },
-      "type": "tablet"
-    },
-    "browser": {
-      "name": "Silk",
-      "modus": null,
-      "version": "3.41.0",
-      "manufacturer": "amazon",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.4.3",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "37.0.2026.117",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.0.3; de-de; KFTT Build/IML74K) AppleWebKit/537.36 (KHTML, like Gecko) Silk/3.35 like Chrome/34.0.1847.137 Safari/537.36"
-    },
-    "device": {
-      "deviceName": "KFTT",
-      "marketingName": "Kindle Fire HD 7 (2nd Gen.)",
-      "manufacturer": "amazon",
-      "brand": "amazon",
-      "display": {
-        "width": 1280,
-        "height": 800,
-        "touch": true,
-        "size": 7
-      },
-      "type": "tablet"
-    },
-    "browser": {
-      "name": "Silk",
-      "modus": null,
-      "version": "3.35.0",
-      "manufacturer": "amazon",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.0.3",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "34.0.1847.137",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.4.3; de-de; KFAPWI Build/KTU84M) AppleWebKit/537.36 (KHTML, like Gecko) Silk/3.41 like Chrome/37.0.2026.117 Safari/537.36"
-    },
-    "device": {
-      "deviceName": "KFAPWI",
-      "marketingName": "Kindle Fire HDX 8.9 (3rd Gen.)",
-      "manufacturer": "amazon",
-      "brand": "amazon",
-      "display": {
-        "width": 2560,
-        "height": 1600,
-        "touch": true,
-        "size": 8.9
-      },
-      "type": "tablet"
-    },
-    "browser": {
-      "name": "Silk",
-      "modus": null,
-      "version": "3.41.0",
-      "manufacturer": "amazon",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.4.3",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "37.0.2026.117",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.4.2; de-de; KFSOWI Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Silk/3.33 like Chrome/34.0.1847.137 Safari/537.36"
-    },
-    "device": {
-      "deviceName": "KFSOWI",
-      "marketingName": "Kindle Fire HD 7 (3rd Gen., Wi-Fi)",
-      "manufacturer": "amazon",
-      "brand": "amazon",
-      "display": {
-        "width": 1280,
-        "height": 800,
-        "touch": true,
-        "size": 7
-      },
-      "type": "tablet"
-    },
-    "browser": {
-      "name": "Silk",
-      "modus": null,
-      "version": "3.33.0",
-      "manufacturer": "amazon",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.4.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "34.0.1847.137",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; de-de; KFOT Build/IML74K) AppleWebKit/535.19 (KHTML, like Gecko) Silk/3.4 Safari/535.19 Silk-Accelerated=true"
-    },
-    "device": {
-      "deviceName": "KFOT",
-      "marketingName": "Kindle Fire (2nd Gen.)",
-      "manufacturer": "amazon",
-      "brand": "amazon",
-      "display": {
-        "width": 1024,
-        "height": 600,
-        "touch": true,
-        "size": 7
-      },
-      "type": "tablet"
-    },
-    "browser": {
-      "name": "Silk",
-      "modus": null,
-      "version": "3.4.0",
-      "manufacturer": "amazon",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": null,
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "535.19.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.0.3; de-de; KFOT Build/IML74K) AppleWebKit/537.36 (KHTML, like Gecko) Silk/3.39 like Chrome/34.0.1847.137 Safari/537.36"
-    },
-    "device": {
-      "deviceName": "KFOT",
-      "marketingName": "Kindle Fire (2nd Gen.)",
-      "manufacturer": "amazon",
-      "brand": "amazon",
-      "display": {
-        "width": 1024,
-        "height": 600,
-        "touch": true,
-        "size": 7
-      },
-      "type": "tablet"
-    },
-    "browser": {
-      "name": "Silk",
-      "modus": null,
-      "version": "3.39.0",
-      "manufacturer": "amazon",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.0.3",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "34.0.1847.137",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.4.2; de-de; KFSOWI Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Silk/3.31 like Chrome/34.0.1847.137 Safari/537.36"
-    },
-    "device": {
-      "deviceName": "KFSOWI",
-      "marketingName": "Kindle Fire HD 7 (3rd Gen., Wi-Fi)",
-      "manufacturer": "amazon",
-      "brand": "amazon",
-      "display": {
-        "width": 1280,
-        "height": 800,
-        "touch": true,
-        "size": 7
-      },
-      "type": "tablet"
-    },
-    "browser": {
-      "name": "Silk",
-      "modus": null,
-      "version": "3.31.0",
-      "manufacturer": "amazon",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.4.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "34.0.1847.137",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.3; KFAPWI Build/KTU84M) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/34.0.0.0 Safari/537.36"
-    },
-    "device": {
-      "deviceName": "KFAPWI",
-      "marketingName": "Kindle Fire HDX 8.9 (3rd Gen.)",
-      "manufacturer": "amazon",
-      "brand": "amazon",
-      "display": {
-        "width": 2560,
-        "height": 1600,
-        "touch": true,
-        "size": 8.9
-      },
-      "type": "tablet"
-    },
-    "browser": {
-      "name": "Android WebView",
-      "modus": null,
-      "version": "34.0.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.4.3",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "34.0.0.0",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.3; KFTHWI Build/KTU84M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.102 Safari/537.36"
-    },
-    "device": {
-      "deviceName": "KFTHWI",
-      "marketingName": "Kindle Fire HDX 7 (3rd Gen., Wi-Fi)",
-      "manufacturer": "amazon",
-      "brand": "amazon",
-      "display": {
-        "width": 1920,
-        "height": 1200,
-        "touch": true,
-        "size": 7
-      },
-      "type": "tablet"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "38.0.2125.102",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.4.3",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "38.0.2125.102",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.2.2; de-de; KFSOWI Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Silk/3.32 like Chrome/34.0.1847.137 Safari/537.36"
-    },
-    "device": {
-      "deviceName": "KFSOWI",
-      "marketingName": "Kindle Fire HD 7 (3rd Gen., Wi-Fi)",
-      "manufacturer": "amazon",
-      "brand": "amazon",
-      "display": {
-        "width": 1280,
-        "height": 800,
-        "touch": true,
-        "size": 7
-      },
-      "type": "tablet"
-    },
-    "browser": {
-      "name": "Silk",
-      "modus": null,
-      "version": "3.32.0",
-      "manufacturer": "amazon",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.2.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "34.0.1847.137",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.0.3; KFOT Build/IML74K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.93 Safari/537.36"
-    },
-    "device": {
-      "deviceName": "KFOT",
-      "marketingName": "Kindle Fire (2nd Gen.)",
-      "manufacturer": "amazon",
-      "brand": "amazon",
-      "display": {
-        "width": 1024,
-        "height": 600,
-        "touch": true,
-        "size": 7
-      },
-      "type": "tablet"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "39.0.2171.93",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.0.3",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "39.0.2171.93",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.3; KFASWI Build/KTU84M) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/34.0.0.0 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "KFASWI",
-      "marketingName": "Fire HD 7 (4th Gen.)",
-      "manufacturer": "amazon",
-      "brand": "amazon",
-      "display": {
-        "width": 1280,
-        "height": 800,
-        "touch": true,
-        "size": 7
-      },
-      "type": "tablet"
-    },
-    "browser": {
-      "name": "Android WebView",
-      "modus": null,
-      "version": "34.0.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.4.3",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "34.0.0.0",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.3; KFSAWI Build/KTU84M) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/34.0.0.0 Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; KFSAWI Build/LVY48F) AppleWebKit/537.36 (KHTML, like Gecko) Silk/54.4.4 like Chrome/54.0.2840.85 Safari/537.36"
     },
     "device": {
       "deviceName": "KFSAWI",
@@ -1005,47 +435,47 @@
       "type": "tablet"
     },
     "browser": {
-      "name": "Android WebView",
+      "name": "Silk",
       "modus": null,
-      "version": "34.0.0.0",
-      "manufacturer": "google",
+      "version": "54.4.4",
+      "manufacturer": "amazon",
       "bits": null,
-      "type": "browser"
+      "type": "transcoder"
     },
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "4.4.3",
+      "version": "5.1.1",
       "manufacturer": "google",
       "bits": null
     },
     "engine": {
       "name": "Blink",
-      "version": "34.0.0.0",
+      "version": "54.0.2840.85",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.3; KFARWI Build/KTU84M) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/34.0.0.0 Mobile Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; KFSAWI Build/LVY48F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.91 Safari/537.36"
     },
     "device": {
-      "deviceName": "KFARWI",
-      "marketingName": "Fire HD 6 (4th Gen.)",
+      "deviceName": "KFSAWI",
+      "marketingName": "Fire HDX 8.9 (4th Gen.)",
       "manufacturer": "amazon",
       "brand": "amazon",
       "display": {
-        "width": 1280,
-        "height": 800,
+        "width": 2560,
+        "height": 1600,
         "touch": true,
-        "size": 6
+        "size": 8.9
       },
       "type": "tablet"
     },
     "browser": {
-      "name": "Android WebView",
+      "name": "Chrome",
       "modus": null,
-      "version": "34.0.0.0",
+      "version": "55.0.2883.91",
       "manufacturer": "google",
       "bits": null,
       "type": "browser"
@@ -1053,19 +483,19 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "4.4.3",
+      "version": "5.1.1",
       "manufacturer": "google",
       "bits": null
     },
     "engine": {
       "name": "Blink",
-      "version": "34.0.0.0",
+      "version": "55.0.2883.91",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (X11; Linux x86_64; U; de-de) AppleWebKit/537.36 (KHTML, like Gecko) Silk/3.41 like Chrome/37.0.2026.117 Safari/537.36"
+      "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Silk/54.4.4 like Chrome/54.0.2840.85 Safari/537.36"
     },
     "device": {
       "deviceName": "Kindle",
@@ -1083,7 +513,7 @@
     "browser": {
       "name": "Silk",
       "modus": null,
-      "version": "3.41.0",
+      "version": "54.4.4",
       "manufacturer": "amazon",
       "bits": 64,
       "type": "transcoder"
@@ -1097,127 +527,13 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "37.0.2026.117",
+      "version": "54.0.2840.85",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.3; KFSOWI Build/KTU84M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.93 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "KFSOWI",
-      "marketingName": "Kindle Fire HD 7 (3rd Gen., Wi-Fi)",
-      "manufacturer": "amazon",
-      "brand": "amazon",
-      "display": {
-        "width": 1280,
-        "height": 800,
-        "touch": true,
-        "size": 7
-      },
-      "type": "tablet"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "39.0.2171.93",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.4.3",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "39.0.2171.93",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; de-de; KFTT Build/IML74K) AppleWebKit/535.19 (KHTML, like Gecko) Silk/3.17 Safari/535.19 Silk-Accelerated=true"
-    },
-    "device": {
-      "deviceName": "KFTT",
-      "marketingName": "Kindle Fire HD 7 (2nd Gen.)",
-      "manufacturer": "amazon",
-      "brand": "amazon",
-      "display": {
-        "width": 1280,
-        "height": 800,
-        "touch": true,
-        "size": 7
-      },
-      "type": "tablet"
-    },
-    "browser": {
-      "name": "Silk",
-      "modus": null,
-      "version": "3.17.0",
-      "manufacturer": "amazon",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": null,
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "535.19.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.0.3; de-de; KFTT Build/IML74K) AppleWebKit/537.36 (KHTML, like Gecko) Silk/3.32 like Chrome/34.0.1847.137 Safari/537.36"
-    },
-    "device": {
-      "deviceName": "KFTT",
-      "marketingName": "Kindle Fire HD 7 (2nd Gen.)",
-      "manufacturer": "amazon",
-      "brand": "amazon",
-      "display": {
-        "width": 1280,
-        "height": 800,
-        "touch": true,
-        "size": 7
-      },
-      "type": "tablet"
-    },
-    "browser": {
-      "name": "Silk",
-      "modus": null,
-      "version": "3.32.0",
-      "manufacturer": "amazon",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.0.3",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "34.0.1847.137",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.3; KFAPWI Build/KTU84M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.141 Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; KFAPWI Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.85 Safari/537.36"
     },
     "device": {
       "deviceName": "KFAPWI",
@@ -1235,7 +551,83 @@
     "browser": {
       "name": "Chrome",
       "modus": null,
-      "version": "35.0.1916.141",
+      "version": "54.0.2840.85",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "54.0.2840.85",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; KFARWI Build/LVY48F) AppleWebKit/537.36 (KHTML, like Gecko) Silk/55.1.62 like Chrome/55.0.2883.91 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "KFARWI",
+      "marketingName": "Fire HD 6 (4th Gen.)",
+      "manufacturer": "amazon",
+      "brand": "amazon",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 6
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Silk",
+      "modus": null,
+      "version": "55.1.62",
+      "manufacturer": "amazon",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "55.0.2883.91",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.3; KFTHWI Build/KTU84M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.91 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "KFTHWI",
+      "marketingName": "Kindle Fire HDX 7 (3rd Gen., Wi-Fi)",
+      "manufacturer": "amazon",
+      "brand": "amazon",
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": 7
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "55.0.2883.91",
       "manufacturer": "google",
       "bits": null,
       "type": "browser"
@@ -1249,13 +641,241 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "35.0.1916.141",
+      "version": "55.0.2883.91",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; de-de; KFTT Build/IML74K) AppleWebKit/535.19 (KHTML, like Gecko) Silk/3.4 Safari/535.19 Silk-Accelerated=true"
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.3; KFAPWI Build/KTU84M) AppleWebKit/537.36 (KHTML, like Gecko) Silk/55.2.6 like Chrome/55.0.2883.91 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "KFAPWI",
+      "marketingName": "Kindle Fire HDX 8.9 (3rd Gen.)",
+      "manufacturer": "amazon",
+      "brand": "amazon",
+      "display": {
+        "width": 2560,
+        "height": 1600,
+        "touch": true,
+        "size": 8.9
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Silk",
+      "modus": null,
+      "version": "55.2.6",
+      "manufacturer": "amazon",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.3",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "55.0.2883.91",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; KFGIWI Build/LVY48F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.91 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "KFGIWI",
+      "marketingName": "Fire HD 8 (2016)",
+      "manufacturer": "amazon",
+      "brand": "amazon",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 8
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "55.0.2883.91",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "55.0.2883.91",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.0.3; en-us; KFTT Build/IML74K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30 [FB_IAB/FB4A;FBAV/98.0.0.18.70;]"
+    },
+    "device": {
+      "deviceName": "KFTT",
+      "marketingName": "Kindle Fire HD 7 (2nd Gen.)",
+      "manufacturer": "amazon",
+      "brand": "amazon",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 7
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "98.0.0.18.70",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.0.3",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.0.3; en-us; KFOT Build/IML74K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30 [FB_IAB/FB4A;FBAV/98.0.0.18.70;]"
+    },
+    "device": {
+      "deviceName": "KFOT",
+      "marketingName": "Kindle Fire (2nd Gen.)",
+      "manufacturer": "amazon",
+      "brand": "amazon",
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "size": 7
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "98.0.0.18.70",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.0.3",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.3; KFTHWI Build/KTU84M) AppleWebKit/537.36 (KHTML, like Gecko) Silk/56.1.61 like Chrome/56.0.2924.87 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "KFTHWI",
+      "marketingName": "Kindle Fire HDX 7 (3rd Gen., Wi-Fi)",
+      "manufacturer": "amazon",
+      "brand": "amazon",
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": 7
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Silk",
+      "modus": null,
+      "version": "56.1.61",
+      "manufacturer": "amazon",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.3",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "56.0.2924.87",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; KFASWI Build/LVY48F) AppleWebKit/537.36 (KHTML, like Gecko) Silk/56.1.61 like Chrome/56.0.2924.87 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "KFASWI",
+      "marketingName": "Fire HD 7 (4th Gen.)",
+      "manufacturer": "amazon",
+      "brand": "amazon",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 7
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Silk",
+      "modus": null,
+      "version": "56.1.61",
+      "manufacturer": "amazon",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "56.0.2924.87",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.0.3; KFTT Build/IML74K) AppleWebKit/537.36 (KHTML, like Gecko) Silk/56.1.61 like Chrome/56.0.2924.87 Safari/537.36"
     },
     "device": {
       "deviceName": "KFTT",
@@ -1273,7 +893,7 @@
     "browser": {
       "name": "Silk",
       "modus": null,
-      "version": "3.4.0",
+      "version": "56.1.61",
       "manufacturer": "amazon",
       "bits": null,
       "type": "transcoder"
@@ -1281,19 +901,171 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": null,
+      "version": "4.0.3",
       "manufacturer": "google",
       "bits": null
     },
     "engine": {
-      "name": "WebKit",
-      "version": "535.19.0",
-      "manufacturer": "apple"
+      "name": "Blink",
+      "version": "56.0.2924.87",
+      "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; de-de; KFJWI Build/IMM76D) AppleWebKit/535.19 (KHTML, like Gecko) Silk/3.14 Safari/535.19 Silk-Accelerated=true"
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.3; KFSOWI Build/KTU84M) AppleWebKit/537.36 (KHTML, like Gecko) Silk/56.1.61 like Chrome/56.0.2924.87 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "KFSOWI",
+      "marketingName": "Kindle Fire HD 7 (3rd Gen., Wi-Fi)",
+      "manufacturer": "amazon",
+      "brand": "amazon",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 7
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Silk",
+      "modus": null,
+      "version": "56.1.61",
+      "manufacturer": "amazon",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.3",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "56.0.2924.87",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; KFFOWI Build/LVY48F) AppleWebKit/537.36 (KHTML, like Gecko) Silk/56.1.61 like Chrome/56.0.2924.87 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "KFFOWI",
+      "marketingName": "Fire (5th Gen.)",
+      "manufacturer": "amazon",
+      "brand": "amazon",
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "size": 7.4
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Silk",
+      "modus": null,
+      "version": "56.1.61",
+      "manufacturer": "amazon",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "56.0.2924.87",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; KFGIWI Build/LVY48F) AppleWebKit/537.36 (KHTML, like Gecko) Silk/56.1.61 like Chrome/56.0.2924.87 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "KFGIWI",
+      "marketingName": "Fire HD 8 (2016)",
+      "manufacturer": "amazon",
+      "brand": "amazon",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 8
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Silk",
+      "modus": null,
+      "version": "56.1.61",
+      "manufacturer": "amazon",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "56.0.2924.87",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; KFTBWI Build/LVY48F) AppleWebKit/537.36 (KHTML, like Gecko) Silk/56.1.61 like Chrome/56.0.2924.87 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "KFTBWI",
+      "marketingName": "Fire HD 10 (5th Gen.)",
+      "manufacturer": "amazon",
+      "brand": "amazon",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 10.1
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Silk",
+      "modus": null,
+      "version": "56.1.61",
+      "manufacturer": "amazon",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "56.0.2924.87",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.0.4; KFJWI Build/IMM76D) AppleWebKit/537.36 (KHTML, like Gecko) Silk/56.1.61 like Chrome/56.0.2924.87 Safari/537.36"
     },
     "device": {
       "deviceName": "KFJWI",
@@ -1311,7 +1083,7 @@
     "browser": {
       "name": "Silk",
       "modus": null,
-      "version": "3.14.0",
+      "version": "56.1.61",
       "manufacturer": "amazon",
       "bits": null,
       "type": "transcoder"
@@ -1319,19 +1091,133 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": null,
+      "version": "4.0.4",
       "manufacturer": "google",
       "bits": null
     },
     "engine": {
-      "name": "WebKit",
-      "version": "535.19.0",
-      "manufacturer": "apple"
+      "name": "Blink",
+      "version": "56.0.2924.87",
+      "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.0.3; de-de; KFOT Build/IML74K) AppleWebKit/537.36 (KHTML, like Gecko) Silk/3.32 like Chrome/34.0.1847.137 Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; KFMEWI Build/LVY48F) AppleWebKit/537.36 (KHTML, like Gecko) Silk/56.1.61 like Chrome/56.0.2924.87 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "KFMEWI",
+      "marketingName": "Fire HD 8 (5th Gen.)",
+      "manufacturer": "amazon",
+      "brand": "amazon",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 8
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Silk",
+      "modus": null,
+      "version": "56.1.61",
+      "manufacturer": "amazon",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "56.0.2924.87",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.3; KFAPWI Build/KTU84M) AppleWebKit/537.36 (KHTML, like Gecko) Silk/56.1.61 like Chrome/56.0.2924.87 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "KFAPWI",
+      "marketingName": "Kindle Fire HDX 8.9 (3rd Gen.)",
+      "manufacturer": "amazon",
+      "brand": "amazon",
+      "display": {
+        "width": 2560,
+        "height": 1600,
+        "touch": true,
+        "size": 8.9
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Silk",
+      "modus": null,
+      "version": "56.1.61",
+      "manufacturer": "amazon",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.3",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "56.0.2924.87",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; KFSAWI Build/LVY48F) AppleWebKit/537.36 (KHTML, like Gecko) Silk/56.1.61 like Chrome/56.0.2924.87 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "KFSAWI",
+      "marketingName": "Fire HDX 8.9 (4th Gen.)",
+      "manufacturer": "amazon",
+      "brand": "amazon",
+      "display": {
+        "width": 2560,
+        "height": 1600,
+        "touch": true,
+        "size": 8.9
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Silk",
+      "modus": null,
+      "version": "56.1.61",
+      "manufacturer": "amazon",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "56.0.2924.87",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.0.3; KFOT Build/IML74K) AppleWebKit/537.36 (KHTML, like Gecko) Silk/56.1.61 like Chrome/56.0.2924.87 Safari/537.36"
     },
     "device": {
       "deviceName": "KFOT",
@@ -1349,7 +1235,7 @@
     "browser": {
       "name": "Silk",
       "modus": null,
-      "version": "3.32.0",
+      "version": "56.1.61",
       "manufacturer": "amazon",
       "bits": null,
       "type": "transcoder"
@@ -1363,13 +1249,51 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "34.0.1847.137",
+      "version": "56.0.2924.87",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.0.2; Amazon Tate Build/LRX22G) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/37.0.0.0 Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; KFARWI Build/LVY48F) AppleWebKit/537.36 (KHTML, like Gecko) Silk/56.1.61 like Chrome/56.0.2924.87 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "KFARWI",
+      "marketingName": "Fire HD 6 (4th Gen.)",
+      "manufacturer": "amazon",
+      "brand": "amazon",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 6
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Silk",
+      "modus": null,
+      "version": "56.1.61",
+      "manufacturer": "amazon",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "56.0.2924.87",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.4; Amazon Tate Build/KTU84Q) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.91 Safari/537.36"
     },
     "device": {
       "deviceName": "Tate",
@@ -1385,465 +1309,9 @@
       "type": "tablet"
     },
     "browser": {
-      "name": "Android WebView",
-      "modus": null,
-      "version": "37.0.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.0.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "37.0.0.0",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.4.3; de-de; KFSAWI Build/KTU84M) AppleWebKit/537.36 (KHTML, like Gecko) Silk/3.41 like Chrome/37.0.2026.117 Safari/537.36"
-    },
-    "device": {
-      "deviceName": "KFSAWI",
-      "marketingName": "Fire HDX 8.9 (4th Gen.)",
-      "manufacturer": "amazon",
-      "brand": "amazon",
-      "display": {
-        "width": 2560,
-        "height": 1600,
-        "touch": true,
-        "size": 8.9
-      },
-      "type": "tablet"
-    },
-    "browser": {
-      "name": "Silk",
-      "modus": null,
-      "version": "3.41.0",
-      "manufacturer": "amazon",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.4.3",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "37.0.2026.117",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.4.3; de-de; KFSOWI Build/KTU84M) AppleWebKit/537.36 (KHTML, like Gecko) Silk/3.44 like Chrome/37.0.2026.117 Safari/537.36"
-    },
-    "device": {
-      "deviceName": "KFSOWI",
-      "marketingName": "Kindle Fire HD 7 (3rd Gen., Wi-Fi)",
-      "manufacturer": "amazon",
-      "brand": "amazon",
-      "display": {
-        "width": 1280,
-        "height": 800,
-        "touch": true,
-        "size": 7
-      },
-      "type": "tablet"
-    },
-    "browser": {
-      "name": "Silk",
-      "modus": null,
-      "version": "3.44.0",
-      "manufacturer": "amazon",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.4.3",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "37.0.2026.117",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.0.3; de-de; KFOT Build/IML74K) AppleWebKit/537.36 (KHTML, like Gecko) Silk/3.44 like Chrome/37.0.2026.117 Safari/537.36"
-    },
-    "device": {
-      "deviceName": "KFOT",
-      "marketingName": "Kindle Fire (2nd Gen.)",
-      "manufacturer": "amazon",
-      "brand": "amazon",
-      "display": {
-        "width": 1024,
-        "height": 600,
-        "touch": true,
-        "size": 7
-      },
-      "type": "tablet"
-    },
-    "browser": {
-      "name": "Silk",
-      "modus": null,
-      "version": "3.44.0",
-      "manufacturer": "amazon",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.0.3",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "37.0.2026.117",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.4.3; de-de; KFASWI Build/KTU84M) AppleWebKit/537.36 (KHTML, like Gecko) Silk/3.44 like Chrome/37.0.2026.117 Safari/537.36"
-    },
-    "device": {
-      "deviceName": "KFASWI",
-      "marketingName": "Fire HD 7 (4th Gen.)",
-      "manufacturer": "amazon",
-      "brand": "amazon",
-      "display": {
-        "width": 1280,
-        "height": 800,
-        "touch": true,
-        "size": 7
-      },
-      "type": "tablet"
-    },
-    "browser": {
-      "name": "Silk",
-      "modus": null,
-      "version": "3.44.0",
-      "manufacturer": "amazon",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.4.3",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "37.0.2026.117",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.0.3; de-de; KFTT Build/IML74K) AppleWebKit/537.36 (KHTML, like Gecko) Silk/3.44 like Chrome/37.0.2026.117 Safari/537.36"
-    },
-    "device": {
-      "deviceName": "KFTT",
-      "marketingName": "Kindle Fire HD 7 (2nd Gen.)",
-      "manufacturer": "amazon",
-      "brand": "amazon",
-      "display": {
-        "width": 1280,
-        "height": 800,
-        "touch": true,
-        "size": 7
-      },
-      "type": "tablet"
-    },
-    "browser": {
-      "name": "Silk",
-      "modus": null,
-      "version": "3.44.0",
-      "manufacturer": "amazon",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.0.3",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "37.0.2026.117",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.4.3; de-de; KFTHWI Build/KTU84M) AppleWebKit/537.36 (KHTML, like Gecko) Silk/3.44 like Chrome/37.0.2026.117 Safari/537.36"
-    },
-    "device": {
-      "deviceName": "KFTHWI",
-      "marketingName": "Kindle Fire HDX 7 (3rd Gen., Wi-Fi)",
-      "manufacturer": "amazon",
-      "brand": "amazon",
-      "display": {
-        "width": 1920,
-        "height": 1200,
-        "touch": true,
-        "size": 7
-      },
-      "type": "tablet"
-    },
-    "browser": {
-      "name": "Silk",
-      "modus": null,
-      "version": "3.44.0",
-      "manufacturer": "amazon",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.4.3",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "37.0.2026.117",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.4.3; de-de; KFSAWI Build/KTU84M) AppleWebKit/537.36 (KHTML, like Gecko) Silk/3.44 like Chrome/37.0.2026.117 Safari/537.36"
-    },
-    "device": {
-      "deviceName": "KFSAWI",
-      "marketingName": "Fire HDX 8.9 (4th Gen.)",
-      "manufacturer": "amazon",
-      "brand": "amazon",
-      "display": {
-        "width": 2560,
-        "height": 1600,
-        "touch": true,
-        "size": 8.9
-      },
-      "type": "tablet"
-    },
-    "browser": {
-      "name": "Silk",
-      "modus": null,
-      "version": "3.44.0",
-      "manufacturer": "amazon",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.4.3",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "37.0.2026.117",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.0.3; de-de; KFTT Build/IML74K) AppleWebKit/537.36 (KHTML, like Gecko) Silk/3.30 like Chrome/34.0.1847.137 Safari/537.36"
-    },
-    "device": {
-      "deviceName": "KFTT",
-      "marketingName": "Kindle Fire HD 7 (2nd Gen.)",
-      "manufacturer": "amazon",
-      "brand": "amazon",
-      "display": {
-        "width": 1280,
-        "height": 800,
-        "touch": true,
-        "size": 7
-      },
-      "type": "tablet"
-    },
-    "browser": {
-      "name": "Silk",
-      "modus": null,
-      "version": "3.30.0",
-      "manufacturer": "amazon",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.0.3",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "34.0.1847.137",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.0.4; de-de; KFJWI Build/IMM76D) AppleWebKit/537.36 (KHTML, like Gecko) Silk/3.44 like Chrome/37.0.2026.117 Safari/537.36"
-    },
-    "device": {
-      "deviceName": "KFJWI",
-      "marketingName": "Kindle Fire HD 8.9 (2nd Gen., Wi-Fi)",
-      "manufacturer": "amazon",
-      "brand": "amazon",
-      "display": {
-        "width": 1920,
-        "height": 1200,
-        "touch": true,
-        "size": 8.9
-      },
-      "type": "tablet"
-    },
-    "browser": {
-      "name": "Silk",
-      "modus": null,
-      "version": "3.44.0",
-      "manufacturer": "amazon",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.0.4",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "37.0.2026.117",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.4.3; de-de; KFSOWI Build/KTU84M) AppleWebKit/537.36 (KHTML, like Gecko) Silk/3.37 like Chrome/34.0.1847.137 Safari/537.36"
-    },
-    "device": {
-      "deviceName": "KFSOWI",
-      "marketingName": "Kindle Fire HD 7 (3rd Gen., Wi-Fi)",
-      "manufacturer": "amazon",
-      "brand": "amazon",
-      "display": {
-        "width": 1280,
-        "height": 800,
-        "touch": true,
-        "size": 7
-      },
-      "type": "tablet"
-    },
-    "browser": {
-      "name": "Silk",
-      "modus": null,
-      "version": "3.37.0",
-      "manufacturer": "amazon",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.4.3",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "34.0.1847.137",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.4.3; de-de; KFAPWI Build/KTU84M) AppleWebKit/537.36 (KHTML, like Gecko) Silk/3.44 like Chrome/37.0.2026.117 Safari/537.36"
-    },
-    "device": {
-      "deviceName": "KFAPWI",
-      "marketingName": "Kindle Fire HDX 8.9 (3rd Gen.)",
-      "manufacturer": "amazon",
-      "brand": "amazon",
-      "display": {
-        "width": 2560,
-        "height": 1600,
-        "touch": true,
-        "size": 8.9
-      },
-      "type": "tablet"
-    },
-    "browser": {
-      "name": "Silk",
-      "modus": null,
-      "version": "3.44.0",
-      "manufacturer": "amazon",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.4.3",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "37.0.2026.117",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.3; KFTHWI Build/KTU84M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.69 Safari/537.36"
-    },
-    "device": {
-      "deviceName": "KFTHWI",
-      "marketingName": "Kindle Fire HDX 7 (3rd Gen., Wi-Fi)",
-      "manufacturer": "amazon",
-      "brand": "amazon",
-      "display": {
-        "width": 1920,
-        "height": 1200,
-        "touch": true,
-        "size": 7
-      },
-      "type": "tablet"
-    },
-    "browser": {
       "name": "Chrome",
       "modus": null,
-      "version": "40.0.2214.69",
+      "version": "55.0.2883.91",
       "manufacturer": "google",
       "bits": null,
       "type": "browser"
@@ -1851,721 +1319,37 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "4.4.3",
+      "version": "4.4.4",
       "manufacturer": "google",
       "bits": null
     },
     "engine": {
       "name": "Blink",
-      "version": "40.0.2214.69",
+      "version": "55.0.2883.91",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.4.3; de-de; KFSOWI Build/KTU84M) AppleWebKit/537.36 (KHTML, like Gecko) Silk/3.45 like Chrome/37.0.2026.117 Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; KFGIWI Build/LVY48F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.91 Safari/537.36 OPR/42.4.2246.113571"
     },
     "device": {
-      "deviceName": "KFSOWI",
-      "marketingName": "Kindle Fire HD 7 (3rd Gen., Wi-Fi)",
+      "deviceName": "KFGIWI",
+      "marketingName": "Fire HD 8 (2016)",
       "manufacturer": "amazon",
       "brand": "amazon",
       "display": {
         "width": 1280,
         "height": 800,
         "touch": true,
-        "size": 7
-      },
-      "type": "tablet"
-    },
-    "browser": {
-      "name": "Silk",
-      "modus": null,
-      "version": "3.45.0",
-      "manufacturer": "amazon",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.4.3",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "37.0.2026.117",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.4.3; de-de; KFTHWI Build/KTU84M) AppleWebKit/537.36 (KHTML, like Gecko) Silk/3.45 like Chrome/37.0.2026.117 Safari/537.36"
-    },
-    "device": {
-      "deviceName": "KFTHWI",
-      "marketingName": "Kindle Fire HDX 7 (3rd Gen., Wi-Fi)",
-      "manufacturer": "amazon",
-      "brand": "amazon",
-      "display": {
-        "width": 1920,
-        "height": 1200,
-        "touch": true,
-        "size": 7
-      },
-      "type": "tablet"
-    },
-    "browser": {
-      "name": "Silk",
-      "modus": null,
-      "version": "3.45.0",
-      "manufacturer": "amazon",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.4.3",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "37.0.2026.117",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.4.3; de-de; KFASWI Build/KTU84M) AppleWebKit/537.36 (KHTML, like Gecko) Silk/3.45 like Chrome/37.0.2026.117 Safari/537.36"
-    },
-    "device": {
-      "deviceName": "KFASWI",
-      "marketingName": "Fire HD 7 (4th Gen.)",
-      "manufacturer": "amazon",
-      "brand": "amazon",
-      "display": {
-        "width": 1280,
-        "height": 800,
-        "touch": true,
-        "size": 7
-      },
-      "type": "tablet"
-    },
-    "browser": {
-      "name": "Silk",
-      "modus": null,
-      "version": "3.45.0",
-      "manufacturer": "amazon",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.4.3",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "37.0.2026.117",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (X11; U; Linux armv7l like Android; en-us) AppleWebKit/531.2+ (KHTML, like Gecko) Version/5.0 Safari/533.2+ Kindle/3.0+"
-    },
-    "device": {
-      "deviceName": "Kindle",
-      "marketingName": "Kindle",
-      "manufacturer": "amazon",
-      "brand": "amazon",
-      "display": {
-        "width": 800,
-        "height": 600,
-        "touch": true,
-        "size": null
-      },
-      "type": "tablet"
-    },
-    "browser": {
-      "name": "Kindle",
-      "modus": null,
-      "version": "3.0.0",
-      "manufacturer": "amazon",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": null,
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "531.2.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.0.3; de-de; KFTT Build/IML74K) AppleWebKit/537.36 (KHTML, like Gecko) Silk/3.45 like Chrome/37.0.2026.117 Safari/537.36"
-    },
-    "device": {
-      "deviceName": "KFTT",
-      "marketingName": "Kindle Fire HD 7 (2nd Gen.)",
-      "manufacturer": "amazon",
-      "brand": "amazon",
-      "display": {
-        "width": 1280,
-        "height": 800,
-        "touch": true,
-        "size": 7
-      },
-      "type": "tablet"
-    },
-    "browser": {
-      "name": "Silk",
-      "modus": null,
-      "version": "3.45.0",
-      "manufacturer": "amazon",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.0.3",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "37.0.2026.117",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; de-de; KFTT Build/IML74K) AppleWebKit/535.19 (KHTML, like Gecko) Silk/3.19 Safari/535.19 Silk-Accelerated=true"
-    },
-    "device": {
-      "deviceName": "KFTT",
-      "marketingName": "Kindle Fire HD 7 (2nd Gen.)",
-      "manufacturer": "amazon",
-      "brand": "amazon",
-      "display": {
-        "width": 1280,
-        "height": 800,
-        "touch": true,
-        "size": 7
-      },
-      "type": "tablet"
-    },
-    "browser": {
-      "name": "Silk",
-      "modus": null,
-      "version": "3.19.0",
-      "manufacturer": "amazon",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": null,
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "535.19.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.3; KFTHWI Build/KTU84M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.59 Safari/537.36"
-    },
-    "device": {
-      "deviceName": "KFTHWI",
-      "marketingName": "Kindle Fire HDX 7 (3rd Gen., Wi-Fi)",
-      "manufacturer": "amazon",
-      "brand": "amazon",
-      "display": {
-        "width": 1920,
-        "height": 1200,
-        "touch": true,
-        "size": 7
-      },
-      "type": "tablet"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "39.0.2171.59",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.4.3",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "39.0.2171.59",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.0.3; de-de; KFOT Build/IML74K) AppleWebKit/537.36 (KHTML, like Gecko) Silk/3.45 like Chrome/37.0.2026.117 Safari/537.36"
-    },
-    "device": {
-      "deviceName": "KFOT",
-      "marketingName": "Kindle Fire (2nd Gen.)",
-      "manufacturer": "amazon",
-      "brand": "amazon",
-      "display": {
-        "width": 1024,
-        "height": 600,
-        "touch": true,
-        "size": 7
-      },
-      "type": "tablet"
-    },
-    "browser": {
-      "name": "Silk",
-      "modus": null,
-      "version": "3.45.0",
-      "manufacturer": "amazon",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.0.3",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "37.0.2026.117",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.0.3; KFOT Build/IML74K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.117 Safari/537.36"
-    },
-    "device": {
-      "deviceName": "KFOT",
-      "marketingName": "Kindle Fire (2nd Gen.)",
-      "manufacturer": "amazon",
-      "brand": "amazon",
-      "display": {
-        "width": 1024,
-        "height": 600,
-        "touch": true,
-        "size": 7
-      },
-      "type": "tablet"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "37.0.2062.117",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.0.3",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "37.0.2062.117",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.4.3; de-de; KFASWI Build/KTU84M) AppleWebKit/537.36 (KHTML, like Gecko) Silk/3.46 like Chrome/37.0.2026.117 Safari/537.36"
-    },
-    "device": {
-      "deviceName": "KFASWI",
-      "marketingName": "Fire HD 7 (4th Gen.)",
-      "manufacturer": "amazon",
-      "brand": "amazon",
-      "display": {
-        "width": 1280,
-        "height": 800,
-        "touch": true,
-        "size": 7
-      },
-      "type": "tablet"
-    },
-    "browser": {
-      "name": "Silk",
-      "modus": null,
-      "version": "3.46.0",
-      "manufacturer": "amazon",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.4.3",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "37.0.2026.117",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.0.3; de-de; KFOT Build/IML74K) AppleWebKit/537.36 (KHTML, like Gecko) Silk/3.46 like Chrome/37.0.2026.117 Safari/537.36"
-    },
-    "device": {
-      "deviceName": "KFOT",
-      "marketingName": "Kindle Fire (2nd Gen.)",
-      "manufacturer": "amazon",
-      "brand": "amazon",
-      "display": {
-        "width": 1024,
-        "height": 600,
-        "touch": true,
-        "size": 7
-      },
-      "type": "tablet"
-    },
-    "browser": {
-      "name": "Silk",
-      "modus": null,
-      "version": "3.46.0",
-      "manufacturer": "amazon",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.0.3",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "37.0.2026.117",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.4.3; de-de; KFAPWI Build/KTU84M) AppleWebKit/537.36 (KHTML, like Gecko) Silk/3.46 like Chrome/37.0.2026.117 Safari/537.36"
-    },
-    "device": {
-      "deviceName": "KFAPWI",
-      "marketingName": "Kindle Fire HDX 8.9 (3rd Gen.)",
-      "manufacturer": "amazon",
-      "brand": "amazon",
-      "display": {
-        "width": 2560,
-        "height": 1600,
-        "touch": true,
-        "size": 8.9
-      },
-      "type": "tablet"
-    },
-    "browser": {
-      "name": "Silk",
-      "modus": null,
-      "version": "3.46.0",
-      "manufacturer": "amazon",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.4.3",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "37.0.2026.117",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; de-de; KFOT Build/IML74K) AppleWebKit/535.19 (KHTML, like Gecko) Silk/3.0 Safari/535.19 Silk-Accelerated=true"
-    },
-    "device": {
-      "deviceName": "KFOT",
-      "marketingName": "Kindle Fire (2nd Gen.)",
-      "manufacturer": "amazon",
-      "brand": "amazon",
-      "display": {
-        "width": 1024,
-        "height": 600,
-        "touch": true,
-        "size": 7
-      },
-      "type": "tablet"
-    },
-    "browser": {
-      "name": "Silk",
-      "modus": null,
-      "version": "3.0.0",
-      "manufacturer": "amazon",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": null,
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "535.19.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.0.4; de-de; KFJWI Build/IMM76D) AppleWebKit/537.36 (KHTML, like Gecko) Silk/3.45 like Chrome/37.0.2026.117 Safari/537.36"
-    },
-    "device": {
-      "deviceName": "KFJWI",
-      "marketingName": "Kindle Fire HD 8.9 (2nd Gen., Wi-Fi)",
-      "manufacturer": "amazon",
-      "brand": "amazon",
-      "display": {
-        "width": 1920,
-        "height": 1200,
-        "touch": true,
-        "size": 8.9
-      },
-      "type": "tablet"
-    },
-    "browser": {
-      "name": "Silk",
-      "modus": null,
-      "version": "3.45.0",
-      "manufacturer": "amazon",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.0.4",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "37.0.2026.117",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.4.3; de-de; KFARWI Build/KTU84M) AppleWebKit/537.36 (KHTML, like Gecko) Silk/3.46 like Chrome/37.0.2026.117 Safari/537.36"
-    },
-    "device": {
-      "deviceName": "KFARWI",
-      "marketingName": "Fire HD 6 (4th Gen.)",
-      "manufacturer": "amazon",
-      "brand": "amazon",
-      "display": {
-        "width": 1280,
-        "height": 800,
-        "touch": true,
-        "size": 6
-      },
-      "type": "tablet"
-    },
-    "browser": {
-      "name": "Silk",
-      "modus": null,
-      "version": "3.46.0",
-      "manufacturer": "amazon",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.4.3",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "37.0.2026.117",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.0.3; de-de; KFTT Build/IML74K) AppleWebKit/537.36 (KHTML, like Gecko) Silk/3.23 like Chrome/34.0.1847.137 Safari/537.36"
-    },
-    "device": {
-      "deviceName": "KFTT",
-      "marketingName": "Kindle Fire HD 7 (2nd Gen.)",
-      "manufacturer": "amazon",
-      "brand": "amazon",
-      "display": {
-        "width": 1280,
-        "height": 800,
-        "touch": true,
-        "size": 7
-      },
-      "type": "tablet"
-    },
-    "browser": {
-      "name": "Silk",
-      "modus": null,
-      "version": "3.23.0",
-      "manufacturer": "amazon",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.0.3",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "34.0.1847.137",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.4.3; de-de; KFSAWI Build/KTU84M) AppleWebKit/537.36 (KHTML, like Gecko) Silk/3.45 like Chrome/37.0.2026.117 Safari/537.36"
-    },
-    "device": {
-      "deviceName": "KFSAWI",
-      "marketingName": "Fire HDX 8.9 (4th Gen.)",
-      "manufacturer": "amazon",
-      "brand": "amazon",
-      "display": {
-        "width": 2560,
-        "height": 1600,
-        "touch": true,
-        "size": 8.9
-      },
-      "type": "tablet"
-    },
-    "browser": {
-      "name": "Silk",
-      "modus": null,
-      "version": "3.45.0",
-      "manufacturer": "amazon",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.4.3",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "37.0.2026.117",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; de-de; KFTT Build/IML74K) AppleWebKit/535.19 (KHTML, like Gecko) Silk/2.9 Safari/535.19 Silk-Accelerated=true"
-    },
-    "device": {
-      "deviceName": "KFTT",
-      "marketingName": "Kindle Fire HD 7 (2nd Gen.)",
-      "manufacturer": "amazon",
-      "brand": "amazon",
-      "display": {
-        "width": 1280,
-        "height": 800,
-        "touch": true,
-        "size": 7
-      },
-      "type": "tablet"
-    },
-    "browser": {
-      "name": "Silk",
-      "modus": null,
-      "version": "2.9.0",
-      "manufacturer": "amazon",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": null,
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "535.19.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.3; KFSOWI Build/KTU84M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.89 Safari/537.36 OPR/27.0.1698.89115"
-    },
-    "device": {
-      "deviceName": "KFSOWI",
-      "marketingName": "Kindle Fire HD 7 (3rd Gen., Wi-Fi)",
-      "manufacturer": "amazon",
-      "brand": "amazon",
-      "display": {
-        "width": 1280,
-        "height": 800,
-        "touch": true,
-        "size": 7
+        "size": 8
       },
       "type": "tablet"
     },
     "browser": {
       "name": "Opera Mobile",
       "modus": null,
-      "version": "27.0.1698.89115",
+      "version": "42.4.2246.113571",
       "manufacturer": "opera",
       "bits": null,
       "type": "browser"
@@ -2573,265 +1357,37 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "4.4.3",
+      "version": "5.1.1",
       "manufacturer": "google",
       "bits": null
     },
     "engine": {
       "name": "Blink",
-      "version": "40.0.2214.89",
+      "version": "55.0.2883.91",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.3; KFSAWI Build/KTU84M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.93 Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; KFGIWI Build/LVY48F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
     },
     "device": {
-      "deviceName": "KFSAWI",
-      "marketingName": "Fire HDX 8.9 (4th Gen.)",
-      "manufacturer": "amazon",
-      "brand": "amazon",
-      "display": {
-        "width": 2560,
-        "height": 1600,
-        "touch": true,
-        "size": 8.9
-      },
-      "type": "tablet"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "39.0.2171.93",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.4.3",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "39.0.2171.93",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.0.3; KFTT Build/IML74K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.96 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "KFTT",
-      "marketingName": "Kindle Fire HD 7 (2nd Gen.)",
+      "deviceName": "KFGIWI",
+      "marketingName": "Fire HD 8 (2016)",
       "manufacturer": "amazon",
       "brand": "amazon",
       "display": {
         "width": 1280,
         "height": 800,
         "touch": true,
-        "size": 7
+        "size": 8
       },
       "type": "tablet"
     },
     "browser": {
       "name": "Chrome",
       "modus": null,
-      "version": "41.0.2272.96",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.0.3",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "41.0.2272.96",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (X11; Linux x86_64; U; de-de) AppleWebKit/537.36 (KHTML, like Gecko) Silk/3.48 like Chrome/39.0.2171.93 Safari/537.36"
-    },
-    "device": {
-      "deviceName": "Kindle",
-      "marketingName": "Kindle",
-      "manufacturer": "amazon",
-      "brand": "amazon",
-      "display": {
-        "width": 800,
-        "height": 600,
-        "touch": true,
-        "size": null
-      },
-      "type": "tablet"
-    },
-    "browser": {
-      "name": "Silk",
-      "modus": null,
-      "version": "3.48.0",
-      "manufacturer": "amazon",
-      "bits": 64,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": null,
-      "manufacturer": "google",
-      "bits": 64
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "39.0.2171.93",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Dalvik/1.6.0 (Linux; U; Android 4.4.3; KFASWI Build/KTU84M)"
-    },
-    "device": {
-      "deviceName": "KFASWI",
-      "marketingName": "Fire HD 7 (4th Gen.)",
-      "manufacturer": "amazon",
-      "brand": "amazon",
-      "display": {
-        "width": 1280,
-        "height": 800,
-        "touch": true,
-        "size": 7
-      },
-      "type": "tablet"
-    },
-    "browser": {
-      "name": "Dalvik",
-      "modus": null,
-      "version": "1.6.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.4.3",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.4.3; de-de; KFAPWI Build/KTU84M) AppleWebKit/537.36 (KHTML, like Gecko) Silk/3.68 like Chrome/39.0.2171.93 Safari/537.36"
-    },
-    "device": {
-      "deviceName": "KFAPWI",
-      "marketingName": "Kindle Fire HDX 8.9 (3rd Gen.)",
-      "manufacturer": "amazon",
-      "brand": "amazon",
-      "display": {
-        "width": 2560,
-        "height": 1600,
-        "touch": true,
-        "size": 8.9
-      },
-      "type": "tablet"
-    },
-    "browser": {
-      "name": "Silk",
-      "modus": null,
-      "version": "3.68.0",
-      "manufacturer": "amazon",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.4.3",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "39.0.2171.93",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Dalvik/1.6.0 (Linux; U; Android 4.4.3; KFSOWI Build/KTU84M)"
-    },
-    "device": {
-      "deviceName": "KFSOWI",
-      "marketingName": "Kindle Fire HD 7 (3rd Gen., Wi-Fi)",
-      "manufacturer": "amazon",
-      "brand": "amazon",
-      "display": {
-        "width": 1280,
-        "height": 800,
-        "touch": true,
-        "size": 7
-      },
-      "type": "tablet"
-    },
-    "browser": {
-      "name": "Dalvik",
-      "modus": null,
-      "version": "1.6.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.4.3",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; Amazon Tate Build/LVY48F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.94 Safari/537.36"
-    },
-    "device": {
-      "deviceName": "Tate",
-      "marketingName": "Tate",
-      "manufacturer": "amazon",
-      "brand": "amazon",
-      "display": {
-        "width": 800,
-        "height": 480,
-        "touch": true,
-        "size": 7
-      },
-      "type": "tablet"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "45.0.2454.94",
+      "version": "56.0.2924.87",
       "manufacturer": "google",
       "bits": null,
       "type": "browser"
@@ -2845,69 +1401,31 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "45.0.2454.94",
+      "version": "56.0.2924.87",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.3; KFARWI Build/KTU84M) AppleWebKit/537.36 (KHTML, like Gecko) Silk/44.2.49 like Chrome/44.0.2403.133 Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; KFFOWI Build/LVY48F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
     },
     "device": {
-      "deviceName": "KFARWI",
-      "marketingName": "Fire HD 6 (4th Gen.)",
+      "deviceName": "KFFOWI",
+      "marketingName": "Fire (5th Gen.)",
       "manufacturer": "amazon",
       "brand": "amazon",
       "display": {
-        "width": 1280,
-        "height": 800,
+        "width": 1024,
+        "height": 600,
         "touch": true,
-        "size": 6
-      },
-      "type": "tablet"
-    },
-    "browser": {
-      "name": "Silk",
-      "modus": null,
-      "version": "44.2.49",
-      "manufacturer": "amazon",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.4.3",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "44.0.2403.133",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.3; KFTHWI Build/KTU84M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.133 Safari/537.36"
-    },
-    "device": {
-      "deviceName": "KFTHWI",
-      "marketingName": "Kindle Fire HDX 7 (3rd Gen., Wi-Fi)",
-      "manufacturer": "amazon",
-      "brand": "amazon",
-      "display": {
-        "width": 1920,
-        "height": 1200,
-        "touch": true,
-        "size": 7
+        "size": 7.4
       },
       "type": "tablet"
     },
     "browser": {
       "name": "Chrome",
       "modus": null,
-      "version": "44.0.2403.133",
+      "version": "56.0.2924.87",
       "manufacturer": "google",
       "bits": null,
       "type": "browser"
@@ -2915,133 +1433,95 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "4.4.3",
+      "version": "5.1.1",
       "manufacturer": "google",
       "bits": null
     },
     "engine": {
       "name": "Blink",
-      "version": "44.0.2403.133",
+      "version": "56.0.2924.87",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.3; KFAPWI Build/KTU84M) AppleWebKit/537.36 (KHTML, like Gecko) Silk/44.2.49 like Chrome/44.0.2403.133 Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; KFTBWI Build/LVY48F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.78 Safari/537.36"
     },
     "device": {
-      "deviceName": "KFAPWI",
-      "marketingName": "Kindle Fire HDX 8.9 (3rd Gen.)",
-      "manufacturer": "amazon",
-      "brand": "amazon",
-      "display": {
-        "width": 2560,
-        "height": 1600,
-        "touch": true,
-        "size": 8.9
-      },
-      "type": "tablet"
-    },
-    "browser": {
-      "name": "Silk",
-      "modus": null,
-      "version": "44.2.49",
-      "manufacturer": "amazon",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.4.3",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "44.0.2403.133",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.3; KFSOWI Build/KTU84M) AppleWebKit/537.36 (KHTML, like Gecko) Silk/45.1.99 like Chrome/45.0.2454.94 Safari/537.36"
-    },
-    "device": {
-      "deviceName": "KFSOWI",
-      "marketingName": "Kindle Fire HD 7 (3rd Gen., Wi-Fi)",
+      "deviceName": "KFTBWI",
+      "marketingName": "Fire HD 10 (5th Gen.)",
       "manufacturer": "amazon",
       "brand": "amazon",
       "display": {
         "width": 1280,
         "height": 800,
         "touch": true,
-        "size": 7
+        "size": 10.1
       },
       "type": "tablet"
     },
     "browser": {
-      "name": "Silk",
+      "name": "Chrome",
       "modus": null,
-      "version": "45.1.99",
-      "manufacturer": "amazon",
+      "version": "43.0.2357.78",
+      "manufacturer": "google",
       "bits": null,
-      "type": "transcoder"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "4.4.3",
+      "version": "5.1.1",
       "manufacturer": "google",
       "bits": null
     },
     "engine": {
       "name": "Blink",
-      "version": "45.0.2454.94",
+      "version": "43.0.2357.78",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.0.3; de-de; KFTT Build/IML74K) AppleWebKit/537.36 (KHTML, like Gecko) Silk/3.69 like Chrome/39.0.2171.93 Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; KFFOWI Build/LVY48F; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/49.0.2623.105 Safari/537.36 [FB_IAB/FB4A;FBAV/103.0.0.20.72;]"
     },
     "device": {
-      "deviceName": "KFTT",
-      "marketingName": "Kindle Fire HD 7 (2nd Gen.)",
+      "deviceName": "KFFOWI",
+      "marketingName": "Fire (5th Gen.)",
       "manufacturer": "amazon",
       "brand": "amazon",
       "display": {
-        "width": 1280,
-        "height": 800,
+        "width": 1024,
+        "height": 600,
         "touch": true,
-        "size": 7
+        "size": 7.4
       },
       "type": "tablet"
     },
     "browser": {
-      "name": "Silk",
+      "name": "Facebook App",
       "modus": null,
-      "version": "3.69.0",
-      "manufacturer": "amazon",
+      "version": "103.0.0.20.72",
+      "manufacturer": "facebook",
       "bits": null,
-      "type": "transcoder"
+      "type": "application"
     },
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "4.0.3",
+      "version": "5.1.1",
       "manufacturer": "google",
       "bits": null
     },
     "engine": {
       "name": "Blink",
-      "version": "39.0.2171.93",
+      "version": "49.0.2623.105",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.0.3; de-de; KFOT Build/IML74K) AppleWebKit/537.36 (KHTML, like Gecko) Silk/3.69 like Chrome/39.0.2171.93 Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.0.3; KFOT Build/IML74K) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.133 Safari/535.19"
     },
     "device": {
       "deviceName": "KFOT",
@@ -3057,12 +1537,12 @@
       "type": "tablet"
     },
     "browser": {
-      "name": "Silk",
+      "name": "Chrome",
       "modus": null,
-      "version": "3.69.0",
-      "manufacturer": "amazon",
+      "version": "18.0.1025.133",
+      "manufacturer": "google",
       "bits": null,
-      "type": "transcoder"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
@@ -3072,94 +1552,56 @@
       "bits": null
     },
     "engine": {
-      "name": "Blink",
-      "version": "39.0.2171.93",
-      "manufacturer": "google"
+      "name": "WebKit",
+      "version": "535.19.0",
+      "manufacturer": "apple"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.3; KFTHWI Build/KTU84M) AppleWebKit/537.36 (KHTML, like Gecko) Silk/45.1.99 like Chrome/45.0.2454.94 Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.2.1; Amazon Kindle Fire2 Build/JOP40D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.94 Safari/537.36"
     },
     "device": {
-      "deviceName": "KFTHWI",
-      "marketingName": "Kindle Fire HDX 7 (3rd Gen., Wi-Fi)",
+      "deviceName": "Kindle Fire 2",
+      "marketingName": "Kindle Fire (2nd Gen.)",
       "manufacturer": "amazon",
       "brand": "amazon",
       "display": {
-        "width": 1920,
-        "height": 1200,
+        "width": 1024,
+        "height": 600,
         "touch": true,
         "size": 7
       },
       "type": "tablet"
     },
     "browser": {
-      "name": "Silk",
+      "name": "Chrome",
       "modus": null,
-      "version": "45.1.99",
-      "manufacturer": "amazon",
+      "version": "28.0.1500.94",
+      "manufacturer": "google",
       "bits": null,
-      "type": "transcoder"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "4.4.3",
+      "version": "4.2.1",
       "manufacturer": "google",
       "bits": null
     },
     "engine": {
       "name": "Blink",
-      "version": "45.0.2454.94",
+      "version": "28.0.1500.94",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.3; KFAPWI Build/KTU84M) AppleWebKit/537.36 (KHTML, like Gecko) Silk/45.1.99 like Chrome/45.0.2454.94 Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.0.3; KFTT Build/IML74K) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166 Mobile Safari/535.19"
     },
     "device": {
-      "deviceName": "KFAPWI",
-      "marketingName": "Kindle Fire HDX 8.9 (3rd Gen.)",
-      "manufacturer": "amazon",
-      "brand": "amazon",
-      "display": {
-        "width": 2560,
-        "height": 1600,
-        "touch": true,
-        "size": 8.9
-      },
-      "type": "tablet"
-    },
-    "browser": {
-      "name": "Silk",
-      "modus": null,
-      "version": "45.1.99",
-      "manufacturer": "amazon",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.4.3",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "45.0.2454.94",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.3; KFASWI Build/KTU84M) AppleWebKit/537.36 (KHTML, like Gecko) Silk/45.1.99 like Chrome/45.0.2454.94 Safari/537.36"
-    },
-    "device": {
-      "deviceName": "KFASWI",
-      "marketingName": "Fire HD 7 (4th Gen.)",
+      "deviceName": "KFTT",
+      "marketingName": "Kindle Fire HD 7 (2nd Gen.)",
       "manufacturer": "amazon",
       "brand": "amazon",
       "display": {
@@ -3171,105 +1613,29 @@
       "type": "tablet"
     },
     "browser": {
-      "name": "Silk",
+      "name": "Chrome",
       "modus": null,
-      "version": "45.1.99",
-      "manufacturer": "amazon",
+      "version": "18.0.1025.166",
+      "manufacturer": "google",
       "bits": null,
-      "type": "transcoder"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "4.4.3",
+      "version": "4.0.3",
       "manufacturer": "google",
       "bits": null
     },
     "engine": {
-      "name": "Blink",
-      "version": "45.0.2454.94",
-      "manufacturer": "google"
+      "name": "WebKit",
+      "version": "535.19.0",
+      "manufacturer": "apple"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.3; KFARWI Build/KTU84M) AppleWebKit/537.36 (KHTML, like Gecko) Silk/45.1.99 like Chrome/45.0.2454.94 Safari/537.36"
-    },
-    "device": {
-      "deviceName": "KFARWI",
-      "marketingName": "Fire HD 6 (4th Gen.)",
-      "manufacturer": "amazon",
-      "brand": "amazon",
-      "display": {
-        "width": 1280,
-        "height": 800,
-        "touch": true,
-        "size": 6
-      },
-      "type": "tablet"
-    },
-    "browser": {
-      "name": "Silk",
-      "modus": null,
-      "version": "45.1.99",
-      "manufacturer": "amazon",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.4.3",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "45.0.2454.94",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.3; KFSAWI Build/KTU84M) AppleWebKit/537.36 (KHTML, like Gecko) Silk/45.1.99 like Chrome/45.0.2454.94 Safari/537.36"
-    },
-    "device": {
-      "deviceName": "KFSAWI",
-      "marketingName": "Fire HDX 8.9 (4th Gen.)",
-      "manufacturer": "amazon",
-      "brand": "amazon",
-      "display": {
-        "width": 2560,
-        "height": 1600,
-        "touch": true,
-        "size": 8.9
-      },
-      "type": "tablet"
-    },
-    "browser": {
-      "name": "Silk",
-      "modus": null,
-      "version": "45.1.99",
-      "manufacturer": "amazon",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.4.3",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "45.0.2454.94",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.0.4; de-de; KFJWI Build/IMM76D) AppleWebKit/537.36 (KHTML, like Gecko) Silk/3.69 like Chrome/39.0.2171.93 Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.0.4; KFJWI Build/IMM76D) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.133 Safari/535.19"
     },
     "device": {
       "deviceName": "KFJWI",
@@ -3285,12 +1651,12 @@
       "type": "tablet"
     },
     "browser": {
-      "name": "Silk",
+      "name": "Chrome",
       "modus": null,
-      "version": "3.69.0",
-      "manufacturer": "amazon",
+      "version": "18.0.1025.133",
+      "manufacturer": "google",
       "bits": null,
-      "type": "transcoder"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
@@ -3300,14 +1666,14 @@
       "bits": null
     },
     "engine": {
-      "name": "Blink",
-      "version": "39.0.2171.93",
-      "manufacturer": "google"
+      "name": "WebKit",
+      "version": "535.19.0",
+      "manufacturer": "apple"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.4; Amazon Kindle Fire HD Build/KRT16S) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; KFSOWI Build/JDQ39) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166 Mobile Safari/535.19"
     },
     "device": {
       "deviceName": "KFSOWI",
@@ -3323,85 +1689,9 @@
       "type": "tablet"
     },
     "browser": {
-      "name": "Android WebView",
-      "modus": null,
-      "version": "30.0.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.4.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "30.0.0.0",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.1; KFFOWI Build/LMY47O) AppleWebKit/537.36 (KHTML, like Gecko) Silk/44.2.28 like Chrome/44.0.2403.128 Safari/537.36"
-    },
-    "device": {
-      "deviceName": "KFFOWI",
-      "marketingName": "Fire (5th Gen.)",
-      "manufacturer": "amazon",
-      "brand": "amazon",
-      "display": {
-        "width": 1024,
-        "height": 600,
-        "touch": true,
-        "size": 7.4
-      },
-      "type": "tablet"
-    },
-    "browser": {
-      "name": "Silk",
-      "modus": null,
-      "version": "44.2.28",
-      "manufacturer": "amazon",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.1.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "44.0.2403.128",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.3; KFAPWI Build/KTU84M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.111 Safari/537.36"
-    },
-    "device": {
-      "deviceName": "KFAPWI",
-      "marketingName": "Kindle Fire HDX 8.9 (3rd Gen.)",
-      "manufacturer": "amazon",
-      "brand": "amazon",
-      "display": {
-        "width": 2560,
-        "height": 1600,
-        "touch": true,
-        "size": 8.9
-      },
-      "type": "tablet"
-    },
-    "browser": {
       "name": "Chrome",
       "modus": null,
-      "version": "42.0.2311.111",
+      "version": "18.0.1025.166",
       "manufacturer": "google",
       "bits": null,
       "type": "browser"
@@ -3409,19 +1699,19 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "4.4.3",
+      "version": "4.2.2",
       "manufacturer": "google",
       "bits": null
     },
     "engine": {
-      "name": "Blink",
-      "version": "42.0.2311.111",
-      "manufacturer": "google"
+      "name": "WebKit",
+      "version": "535.19.0",
+      "manufacturer": "apple"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; KFTHWI Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.76 Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; KFTHWI Build/JDQ39) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166  Safari/535.19"
     },
     "device": {
       "deviceName": "KFTHWI",
@@ -3439,7 +1729,7 @@
     "browser": {
       "name": "Chrome",
       "modus": null,
-      "version": "46.0.2490.76",
+      "version": "18.0.1025.166",
       "manufacturer": "google",
       "bits": null,
       "type": "browser"
@@ -3452,32 +1742,32 @@
       "bits": null
     },
     "engine": {
-      "name": "Blink",
-      "version": "46.0.2490.76",
-      "manufacturer": "google"
+      "name": "WebKit",
+      "version": "535.19.0",
+      "manufacturer": "apple"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.1; KFFOWI Build/LMY47O) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/41.10.500.0153 Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; KFAPWI Build/JDQ39) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.58 Safari/537.31"
     },
     "device": {
-      "deviceName": "KFFOWI",
-      "marketingName": "Fire (5th Gen.)",
+      "deviceName": "KFAPWI",
+      "marketingName": "Kindle Fire HDX 8.9 (3rd Gen.)",
       "manufacturer": "amazon",
       "brand": "amazon",
       "display": {
-        "width": 1024,
-        "height": 600,
+        "width": 2560,
+        "height": 1600,
         "touch": true,
-        "size": 7.4
+        "size": 8.9
       },
       "type": "tablet"
     },
     "browser": {
-      "name": "Android WebView",
+      "name": "Chrome",
       "modus": null,
-      "version": "41.10.500.0153",
+      "version": "26.0.1410.58",
       "manufacturer": "google",
       "bits": null,
       "type": "browser"
@@ -3485,133 +1775,19 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "5.1.0",
+      "version": "4.2.2",
       "manufacturer": "google",
       "bits": null
     },
     "engine": {
-      "name": "Blink",
-      "version": "41.10.500.0153",
-      "manufacturer": "google"
+      "name": "WebKit",
+      "version": "537.31.0",
+      "manufacturer": "apple"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.1; KFTBWI Build/LMY47O) AppleWebKit/537.36 (KHTML, like Gecko) Silk/45.1.99 like Chrome/45.0.2454.94 Safari/537.36"
-    },
-    "device": {
-      "deviceName": "KFTBWI",
-      "marketingName": "Fire HD 10 (5th Gen.)",
-      "manufacturer": "amazon",
-      "brand": "amazon",
-      "display": {
-        "width": 1280,
-        "height": 800,
-        "touch": true,
-        "size": 10.1
-      },
-      "type": "tablet"
-    },
-    "browser": {
-      "name": "Silk",
-      "modus": null,
-      "version": "45.1.99",
-      "manufacturer": "amazon",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.1.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "45.0.2454.94",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.1; KFTBWI Build/LMY47O) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/41.10.500.0153 Safari/537.36"
-    },
-    "device": {
-      "deviceName": "KFTBWI",
-      "marketingName": "Fire HD 10 (5th Gen.)",
-      "manufacturer": "amazon",
-      "brand": "amazon",
-      "display": {
-        "width": 1280,
-        "height": 800,
-        "touch": true,
-        "size": 10.1
-      },
-      "type": "tablet"
-    },
-    "browser": {
-      "name": "Android WebView",
-      "modus": null,
-      "version": "41.10.500.0153",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.1.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "41.10.500.0153",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.3; KFSOWI Build/KTU84M) AppleWebKit/537.36 (KHTML, like Gecko) Silk/46.2.33 like Chrome/46.0.2490.80 Safari/537.36"
-    },
-    "device": {
-      "deviceName": "KFSOWI",
-      "marketingName": "Kindle Fire HD 7 (3rd Gen., Wi-Fi)",
-      "manufacturer": "amazon",
-      "brand": "amazon",
-      "display": {
-        "width": 1280,
-        "height": 800,
-        "touch": true,
-        "size": 7
-      },
-      "type": "tablet"
-    },
-    "browser": {
-      "name": "Silk",
-      "modus": null,
-      "version": "46.2.33",
-      "manufacturer": "amazon",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.4.3",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "46.0.2490.80",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.4; Amazon Jem Build/KTU84Q) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.76 Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; Amazon Jem Build/KVT49L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.114 Safari/537.36"
     },
     "device": {
       "deviceName": "Jem",
@@ -3629,7 +1805,7 @@
     "browser": {
       "name": "Chrome",
       "modus": null,
-      "version": "46.0.2490.76",
+      "version": "34.0.1847.114",
       "manufacturer": "google",
       "bits": null,
       "type": "browser"
@@ -3637,19 +1813,361 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "4.4.4",
+      "version": "4.4.2",
       "manufacturer": "google",
       "bits": null
     },
     "engine": {
       "name": "Blink",
-      "version": "46.0.2490.76",
+      "version": "34.0.1847.114",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.3; KFSOWI Build/KTU84M) AppleWebKit/537.36 (KHTML, like Gecko) Silk/46.3.1 like Chrome/46.0.2490.80 Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.0.3; Amazon Kindle Fire Build/MR1) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166 Safari/535.19"
+    },
+    "device": {
+      "deviceName": "D01400",
+      "marketingName": "Kindle Fire",
+      "manufacturer": "amazon",
+      "brand": "amazon",
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "size": 7
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "18.0.1025.166",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.0.3",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "535.19.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; Amazon Kindle Fire HD Build/JDQ39E) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.58 Safari/537.31"
+    },
+    "device": {
+      "deviceName": "KFSOWI",
+      "marketingName": "Kindle Fire HD 7 (3rd Gen., Wi-Fi)",
+      "manufacturer": "amazon",
+      "brand": "amazon",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 7
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "26.0.1410.58",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.31.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; KFMEWI Build/LVY48F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "KFMEWI",
+      "marketingName": "Fire HD 8 (5th Gen.)",
+      "manufacturer": "amazon",
+      "brand": "amazon",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 8
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "56.0.2924.87",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "56.0.2924.87",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.3; KFTHWI Build/KTU84M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36 OPR/37.0.2192.105088"
+    },
+    "device": {
+      "deviceName": "KFTHWI",
+      "marketingName": "Kindle Fire HDX 7 (3rd Gen., Wi-Fi)",
+      "manufacturer": "amazon",
+      "brand": "amazon",
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": 7
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "37.0.2192.105088",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.3",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "50.0.2661.94",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; KFGIWI Build/LVY48F) AppleWebKit/537.36 (KHTML, like Gecko) Silk/57.1.109 like Chrome/57.0.2987.132 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "KFGIWI",
+      "marketingName": "Fire HD 8 (2016)",
+      "manufacturer": "amazon",
+      "brand": "amazon",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 8
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Silk",
+      "modus": null,
+      "version": "57.1.109",
+      "manufacturer": "amazon",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "57.0.2987.132",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.0.4; KFJWI Build/IMM76D) AppleWebKit/537.36 (KHTML, like Gecko) Silk/57.1.109 like Chrome/57.0.2987.132 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "KFJWI",
+      "marketingName": "Kindle Fire HD 8.9 (2nd Gen., Wi-Fi)",
+      "manufacturer": "amazon",
+      "brand": "amazon",
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": 8.9
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Silk",
+      "modus": null,
+      "version": "57.1.109",
+      "manufacturer": "amazon",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.0.4",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "57.0.2987.132",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; KFFOWI Build/LVY48F) AppleWebKit/537.36 (KHTML, like Gecko) Silk/57.1.109 like Chrome/57.0.2987.132 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "KFFOWI",
+      "marketingName": "Fire (5th Gen.)",
+      "manufacturer": "amazon",
+      "brand": "amazon",
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "size": 7.4
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Silk",
+      "modus": null,
+      "version": "57.1.109",
+      "manufacturer": "amazon",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "57.0.2987.132",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; KFARWI Build/LVY48F) AppleWebKit/537.36 (KHTML, like Gecko) Silk/57.1.109 like Chrome/57.0.2987.132 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "KFARWI",
+      "marketingName": "Fire HD 6 (4th Gen.)",
+      "manufacturer": "amazon",
+      "brand": "amazon",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 6
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Silk",
+      "modus": null,
+      "version": "57.1.109",
+      "manufacturer": "amazon",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "57.0.2987.132",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.0.3; KFTT Build/IML74K) AppleWebKit/537.36 (KHTML, like Gecko) Silk/57.2.2 like Chrome/57.0.2987.132 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "KFTT",
+      "marketingName": "Kindle Fire HD 7 (2nd Gen.)",
+      "manufacturer": "amazon",
+      "brand": "amazon",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 7
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Silk",
+      "modus": null,
+      "version": "57.2.2",
+      "manufacturer": "amazon",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.0.3",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "57.0.2987.132",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.3; KFSOWI Build/KTU84M) AppleWebKit/537.36 (KHTML, like Gecko) Silk/57.1.109 like Chrome/57.0.2987.132 Safari/537.36"
     },
     "device": {
       "deviceName": "KFSOWI",
@@ -3667,7 +2185,7 @@
     "browser": {
       "name": "Silk",
       "modus": null,
-      "version": "46.3.1",
+      "version": "57.1.109",
       "manufacturer": "amazon",
       "bits": null,
       "type": "transcoder"
@@ -3681,13 +2199,51 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "46.0.2490.80",
+      "version": "57.0.2987.132",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.3; KFASWI Build/KTU84M) AppleWebKit/537.36 (KHTML, like Gecko) Silk/46.3.1 like Chrome/46.0.2490.80 Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; KFGIWI Build/LVY48F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.132 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "KFGIWI",
+      "marketingName": "Fire HD 8 (2016)",
+      "manufacturer": "amazon",
+      "brand": "amazon",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 8
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "57.0.2987.132",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "57.0.2987.132",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; KFASWI Build/LVY48F) AppleWebKit/537.36 (KHTML, like Gecko) Silk/57.1.109 like Chrome/57.0.2987.132 Safari/537.36"
     },
     "device": {
       "deviceName": "KFASWI",
@@ -3705,7 +2261,7 @@
     "browser": {
       "name": "Silk",
       "modus": null,
-      "version": "46.3.1",
+      "version": "57.1.109",
       "manufacturer": "amazon",
       "bits": null,
       "type": "transcoder"
@@ -3713,57 +2269,19 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "4.4.3",
+      "version": "5.1.1",
       "manufacturer": "google",
       "bits": null
     },
     "engine": {
       "name": "Blink",
-      "version": "46.0.2490.80",
+      "version": "57.0.2987.132",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.3; KFASWI Build/KTU84M) AppleWebKit/537.36 (KHTML, like Gecko) Silk/46.2.33 like Chrome/46.0.2490.80 Safari/537.36"
-    },
-    "device": {
-      "deviceName": "KFASWI",
-      "marketingName": "Fire HD 7 (4th Gen.)",
-      "manufacturer": "amazon",
-      "brand": "amazon",
-      "display": {
-        "width": 1280,
-        "height": 800,
-        "touch": true,
-        "size": 7
-      },
-      "type": "tablet"
-    },
-    "browser": {
-      "name": "Silk",
-      "modus": null,
-      "version": "46.2.33",
-      "manufacturer": "amazon",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.4.3",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "46.0.2490.80",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.3; KFTHWI Build/KTU84M) AppleWebKit/537.36 (KHTML, like Gecko) Silk/46.3.1 like Chrome/46.0.2490.80 Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.3; KFTHWI Build/KTU84M) AppleWebKit/537.36 (KHTML, like Gecko) Silk/57.1.109 like Chrome/57.0.2987.132 Safari/537.36"
     },
     "device": {
       "deviceName": "KFTHWI",
@@ -3781,7 +2299,7 @@
     "browser": {
       "name": "Silk",
       "modus": null,
-      "version": "46.3.1",
+      "version": "57.1.109",
       "manufacturer": "amazon",
       "bits": null,
       "type": "transcoder"
@@ -3795,7 +2313,1489 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "46.0.2490.80",
+      "version": "57.0.2987.132",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.0.3; KFOT Build/IML74K) AppleWebKit/537.36 (KHTML, like Gecko) Silk/57.2.2 like Chrome/57.0.2987.132 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "KFOT",
+      "marketingName": "Kindle Fire (2nd Gen.)",
+      "manufacturer": "amazon",
+      "brand": "amazon",
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "size": 7
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Silk",
+      "modus": null,
+      "version": "57.2.2",
+      "manufacturer": "amazon",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.0.3",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "57.0.2987.132",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.3; KFSOWI Build/KTU84M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "KFSOWI",
+      "marketingName": "Kindle Fire HD 7 (3rd Gen., Wi-Fi)",
+      "manufacturer": "amazon",
+      "brand": "amazon",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 7
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "56.0.2924.87",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.3",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "56.0.2924.87",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; KFTBWI Build/LVY48F) AppleWebKit/537.36 (KHTML, like Gecko) Silk/57.1.109 like Chrome/57.0.2987.132 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "KFTBWI",
+      "marketingName": "Fire HD 10 (5th Gen.)",
+      "manufacturer": "amazon",
+      "brand": "amazon",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 10.1
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Silk",
+      "modus": null,
+      "version": "57.1.109",
+      "manufacturer": "amazon",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "57.0.2987.132",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; KFMEWI Build/LVY48F) AppleWebKit/537.36 (KHTML, like Gecko) Silk/57.1.109 like Chrome/57.0.2987.132 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "KFMEWI",
+      "marketingName": "Fire HD 8 (5th Gen.)",
+      "manufacturer": "amazon",
+      "brand": "amazon",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 8
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Silk",
+      "modus": null,
+      "version": "57.1.109",
+      "manufacturer": "amazon",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "57.0.2987.132",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.3; KFAPWI Build/KTU84M) AppleWebKit/537.36 (KHTML, like Gecko) Silk/57.1.109 like Chrome/57.0.2987.132 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "KFAPWI",
+      "marketingName": "Kindle Fire HDX 8.9 (3rd Gen.)",
+      "manufacturer": "amazon",
+      "brand": "amazon",
+      "display": {
+        "width": 2560,
+        "height": 1600,
+        "touch": true,
+        "size": 8.9
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Silk",
+      "modus": null,
+      "version": "57.1.109",
+      "manufacturer": "amazon",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.3",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "57.0.2987.132",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; KFFOWI Build/LVY48F; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/49.0.2623.105 Safari/537.36 [FB_IAB/MESSENGER;FBAV/113.0.0.21.70;]"
+    },
+    "device": {
+      "deviceName": "KFFOWI",
+      "marketingName": "Fire (5th Gen.)",
+      "manufacturer": "amazon",
+      "brand": "amazon",
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "size": 7.4
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Facebook Messenger App",
+      "modus": null,
+      "version": "113.0.0.21.70",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "49.0.2623.105",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; KFFOWI Build/LVY48F) AppleWebKit/537.36 (KHTML, like Gecko) Silk/58.1.81 like Chrome/58.0.3029.83 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "KFFOWI",
+      "marketingName": "Fire (5th Gen.)",
+      "manufacturer": "amazon",
+      "brand": "amazon",
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "size": 7.4
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Silk",
+      "modus": null,
+      "version": "58.1.81",
+      "manufacturer": "amazon",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "58.0.3029.83",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.3; KFTHWI Build/KTU84M) AppleWebKit/537.36 (KHTML, like Gecko) Silk/58.1.81 like Chrome/58.0.3029.83 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "KFTHWI",
+      "marketingName": "Kindle Fire HDX 7 (3rd Gen., Wi-Fi)",
+      "manufacturer": "amazon",
+      "brand": "amazon",
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": 7
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Silk",
+      "modus": null,
+      "version": "58.1.81",
+      "manufacturer": "amazon",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.3",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "58.0.3029.83",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; KFASWI Build/LVY48F) AppleWebKit/537.36 (KHTML, like Gecko) Silk/58.1.81 like Chrome/58.0.3029.83 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "KFASWI",
+      "marketingName": "Fire HD 7 (4th Gen.)",
+      "manufacturer": "amazon",
+      "brand": "amazon",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 7
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Silk",
+      "modus": null,
+      "version": "58.1.81",
+      "manufacturer": "amazon",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "58.0.3029.83",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; KFTBWI Build/LVY48F) AppleWebKit/537.36 (KHTML, like Gecko) Silk/58.1.81 like Chrome/58.0.3029.83 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "KFTBWI",
+      "marketingName": "Fire HD 10 (5th Gen.)",
+      "manufacturer": "amazon",
+      "brand": "amazon",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 10.1
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Silk",
+      "modus": null,
+      "version": "58.1.81",
+      "manufacturer": "amazon",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "58.0.3029.83",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.3; KFSOWI Build/KTU84M) AppleWebKit/537.36 (KHTML, like Gecko) Silk/58.1.81 like Chrome/58.0.3029.83 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "KFSOWI",
+      "marketingName": "Kindle Fire HD 7 (3rd Gen., Wi-Fi)",
+      "manufacturer": "amazon",
+      "brand": "amazon",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 7
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Silk",
+      "modus": null,
+      "version": "58.1.81",
+      "manufacturer": "amazon",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.3",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "58.0.3029.83",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.0.3; KFOT Build/IML74K) AppleWebKit/537.36 (KHTML, like Gecko) Silk/58.1.81 like Chrome/58.0.3029.83 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "KFOT",
+      "marketingName": "Kindle Fire (2nd Gen.)",
+      "manufacturer": "amazon",
+      "brand": "amazon",
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "size": 7
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Silk",
+      "modus": null,
+      "version": "58.1.81",
+      "manufacturer": "amazon",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.0.3",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "58.0.3029.83",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.0.3; KFTT Build/IML74K) AppleWebKit/537.36 (KHTML, like Gecko) Silk/58.1.81 like Chrome/58.0.3029.83 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "KFTT",
+      "marketingName": "Kindle Fire HD 7 (2nd Gen.)",
+      "manufacturer": "amazon",
+      "brand": "amazon",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 7
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Silk",
+      "modus": null,
+      "version": "58.1.81",
+      "manufacturer": "amazon",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.0.3",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "58.0.3029.83",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U;Android 4.0.4; en-us; Silk/1.1.0-84) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.133 Safari/535.19 Silk-Accelerated=true"
+    },
+    "device": {
+      "deviceName": "Kindle",
+      "marketingName": "Kindle",
+      "manufacturer": "amazon",
+      "brand": "amazon",
+      "display": {
+        "width": 800,
+        "height": 600,
+        "touch": true,
+        "size": null
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Silk",
+      "modus": null,
+      "version": "1.1.0.84",
+      "manufacturer": "amazon",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.0.4",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "535.19.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; KFGIWI Build/LVY48F) AppleWebKit/537.36 (KHTML, like Gecko) Silk/58.2.6 like Chrome/58.0.3029.83 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "KFGIWI",
+      "marketingName": "Fire HD 8 (2016)",
+      "manufacturer": "amazon",
+      "brand": "amazon",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 8
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Silk",
+      "modus": null,
+      "version": "58.2.6",
+      "manufacturer": "amazon",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "58.0.3029.83",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; KFARWI Build/LVY48F) AppleWebKit/537.36 (KHTML, like Gecko) Silk/58.2.6 like Chrome/58.0.3029.83 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "KFARWI",
+      "marketingName": "Fire HD 6 (4th Gen.)",
+      "manufacturer": "amazon",
+      "brand": "amazon",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 6
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Silk",
+      "modus": null,
+      "version": "58.2.6",
+      "manufacturer": "amazon",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "58.0.3029.83",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.0.4; KFJWI Build/IMM76D) AppleWebKit/537.36 (KHTML, like Gecko) Silk/58.2.6 like Chrome/58.0.3029.83 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "KFJWI",
+      "marketingName": "Kindle Fire HD 8.9 (2nd Gen., Wi-Fi)",
+      "manufacturer": "amazon",
+      "brand": "amazon",
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": 8.9
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Silk",
+      "modus": null,
+      "version": "58.2.6",
+      "manufacturer": "amazon",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.0.4",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "58.0.3029.83",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; KFMEWI Build/LVY48F) AppleWebKit/537.36 (KHTML, like Gecko) Silk/58.2.6 like Chrome/58.0.3029.83 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "KFMEWI",
+      "marketingName": "Fire HD 8 (5th Gen.)",
+      "manufacturer": "amazon",
+      "brand": "amazon",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 8
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Silk",
+      "modus": null,
+      "version": "58.2.6",
+      "manufacturer": "amazon",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "58.0.3029.83",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.3; KFAPWI Build/KTU84M) AppleWebKit/537.36 (KHTML, like Gecko) Silk/58.2.6 like Chrome/58.0.3029.83 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "KFAPWI",
+      "marketingName": "Kindle Fire HDX 8.9 (3rd Gen.)",
+      "manufacturer": "amazon",
+      "brand": "amazon",
+      "display": {
+        "width": 2560,
+        "height": 1600,
+        "touch": true,
+        "size": 8.9
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Silk",
+      "modus": null,
+      "version": "58.2.6",
+      "manufacturer": "amazon",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.3",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "58.0.3029.83",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.4; Kindle Fire HDX 7 Build/KTU84Q) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.83 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "KFTHWI",
+      "marketingName": "Kindle Fire HDX 7 (3rd Gen., Wi-Fi)",
+      "manufacturer": "amazon",
+      "brand": "amazon",
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": 7
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "58.0.3029.83",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.4",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "58.0.3029.83",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; KFFOWI Build/LVY48F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.83 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "KFFOWI",
+      "marketingName": "Fire (5th Gen.)",
+      "manufacturer": "amazon",
+      "brand": "amazon",
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "size": 7.4
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "58.0.3029.83",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "58.0.3029.83",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; KFMEWI Build/LVY48F) AppleWebKit/537.36 (KHTML, like Gecko) Silk/59.1.92 like Chrome/59.0.3071.92 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "KFMEWI",
+      "marketingName": "Fire HD 8 (5th Gen.)",
+      "manufacturer": "amazon",
+      "brand": "amazon",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 8
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Silk",
+      "modus": null,
+      "version": "59.1.92",
+      "manufacturer": "amazon",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "59.0.3071.92",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; KFASWI Build/LVY48F) AppleWebKit/537.36 (KHTML, like Gecko) Silk/59.1.92 like Chrome/59.0.3071.92 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "KFASWI",
+      "marketingName": "Fire HD 7 (4th Gen.)",
+      "manufacturer": "amazon",
+      "brand": "amazon",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 7
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Silk",
+      "modus": null,
+      "version": "59.1.92",
+      "manufacturer": "amazon",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "59.0.3071.92",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; KFFOWI Build/LVY48F) AppleWebKit/537.36 (KHTML, like Gecko) Silk/59.1.92 like Chrome/59.0.3071.92 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "KFFOWI",
+      "marketingName": "Fire (5th Gen.)",
+      "manufacturer": "amazon",
+      "brand": "amazon",
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "size": 7.4
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Silk",
+      "modus": null,
+      "version": "59.1.92",
+      "manufacturer": "amazon",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "59.0.3071.92",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; KFSAWI Build/LVY48F) AppleWebKit/537.36 (KHTML, like Gecko) Silk/59.1.92 like Chrome/59.0.3071.92 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "KFSAWI",
+      "marketingName": "Fire HDX 8.9 (4th Gen.)",
+      "manufacturer": "amazon",
+      "brand": "amazon",
+      "display": {
+        "width": 2560,
+        "height": 1600,
+        "touch": true,
+        "size": 8.9
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Silk",
+      "modus": null,
+      "version": "59.1.92",
+      "manufacturer": "amazon",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "59.0.3071.92",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.0.4; KFJWI Build/IMM76D) AppleWebKit/537.36 (KHTML, like Gecko) Silk/59.2.2 like Chrome/59.0.3071.92 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "KFJWI",
+      "marketingName": "Kindle Fire HD 8.9 (2nd Gen., Wi-Fi)",
+      "manufacturer": "amazon",
+      "brand": "amazon",
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": 8.9
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Silk",
+      "modus": null,
+      "version": "59.2.2",
+      "manufacturer": "amazon",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.0.4",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "59.0.3071.92",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; KFDOWI Build/LVY48F) AppleWebKit/537.36 (KHTML, like Gecko) Silk/58.2.6 like Chrome/58.0.3029.83 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "KFDOWI",
+      "marketingName": "Fire HD 8 (2017)",
+      "manufacturer": "amazon",
+      "brand": "amazon",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 7.1
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Silk",
+      "modus": null,
+      "version": "58.2.6",
+      "manufacturer": "amazon",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "58.0.3029.83",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; KFGIWI Build/LVY48F) AppleWebKit/537.36 (KHTML, like Gecko) Silk/59.1.92 like Chrome/59.0.3071.92 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "KFGIWI",
+      "marketingName": "Fire HD 8 (2016)",
+      "manufacturer": "amazon",
+      "brand": "amazon",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 8
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Silk",
+      "modus": null,
+      "version": "59.1.92",
+      "manufacturer": "amazon",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "59.0.3071.92",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.3; KFSOWI Build/KTU84M) AppleWebKit/537.36 (KHTML, like Gecko) Silk/59.2.2 like Chrome/59.0.3071.92 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "KFSOWI",
+      "marketingName": "Kindle Fire HD 7 (3rd Gen., Wi-Fi)",
+      "manufacturer": "amazon",
+      "brand": "amazon",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 7
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Silk",
+      "modus": null,
+      "version": "59.2.2",
+      "manufacturer": "amazon",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.3",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "59.0.3071.92",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.3; KFTHWI Build/KTU84M) AppleWebKit/537.36 (KHTML, like Gecko) Silk/59.2.2 like Chrome/59.0.3071.92 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "KFTHWI",
+      "marketingName": "Kindle Fire HDX 7 (3rd Gen., Wi-Fi)",
+      "manufacturer": "amazon",
+      "brand": "amazon",
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": 7
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Silk",
+      "modus": null,
+      "version": "59.2.2",
+      "manufacturer": "amazon",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.3",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "59.0.3071.92",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; KFTBWI Build/LVY48F) AppleWebKit/537.36 (KHTML, like Gecko) Silk/59.1.92 like Chrome/59.0.3071.92 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "KFTBWI",
+      "marketingName": "Fire HD 10 (5th Gen.)",
+      "manufacturer": "amazon",
+      "brand": "amazon",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 10.1
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Silk",
+      "modus": null,
+      "version": "59.1.92",
+      "manufacturer": "amazon",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "59.0.3071.92",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.0.3; KFTT Build/IML74K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.138 Safari/537.36 OPR/22.0.1485.78487"
+    },
+    "device": {
+      "deviceName": "KFTT",
+      "marketingName": "Kindle Fire HD 7 (2nd Gen.)",
+      "manufacturer": "amazon",
+      "brand": "amazon",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 7
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "22.0.1485.78487",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.0.3",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "35.0.1916.138",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.3; KFSOWI Build/KTU84M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.122 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "KFSOWI",
+      "marketingName": "Kindle Fire HD 7 (3rd Gen., Wi-Fi)",
+      "manufacturer": "amazon",
+      "brand": "amazon",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 7
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "35.0.1916.122",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.3",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "35.0.1916.122",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.4; Amazon Jem Build/KTU84Q) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.93 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Jem",
+      "marketingName": "Kindle Fire HD 7",
+      "manufacturer": "amazon",
+      "brand": "amazon",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 7
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "39.0.2171.93",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.4",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "39.0.2171.93",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.4; Amazon Tate Build/KTU84Q) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.59 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Tate",
+      "marketingName": "Tate",
+      "manufacturer": "amazon",
+      "brand": "amazon",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 7
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "39.0.2171.59",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.4",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "39.0.2171.59",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.3; KFTHWI Build/KTU84M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.86 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "KFTHWI",
+      "marketingName": "Kindle Fire HDX 7 (3rd Gen., Wi-Fi)",
+      "manufacturer": "amazon",
+      "brand": "amazon",
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": 7
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "35.0.1916.86",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.3",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "35.0.1916.86",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; Linux x86_64; U; de-de) AppleWebKit/537.36 (KHTML, like Gecko) Silk/3.39 like Chrome/34.0.1847.137 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Kindle",
+      "marketingName": "Kindle",
+      "manufacturer": "amazon",
+      "brand": "amazon",
+      "display": {
+        "width": 800,
+        "height": 600,
+        "touch": true,
+        "size": null
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Silk",
+      "modus": null,
+      "version": "3.39.0",
+      "manufacturer": "amazon",
+      "bits": 64,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": null,
+      "manufacturer": "google",
+      "bits": 64
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "34.0.1847.137",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.2.2; de-de; KFAPWI Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30"
+    },
+    "device": {
+      "deviceName": "KFAPWI",
+      "marketingName": "Kindle Fire HDX 8.9 (3rd Gen.)",
+      "manufacturer": "amazon",
+      "brand": "amazon",
+      "display": {
+        "width": 2560,
+        "height": 1600,
+        "touch": true,
+        "size": 8.9
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.0.4; KFJWI Build/IMM76D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.116 Safari/537.36 OPR/21.0.1437.74904"
+    },
+    "device": {
+      "deviceName": "KFJWI",
+      "marketingName": "Kindle Fire HD 8.9 (2nd Gen., Wi-Fi)",
+      "manufacturer": "amazon",
+      "brand": "amazon",
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": 8.9
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "21.0.1437.74904",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.0.4",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "34.0.1847.116",
       "manufacturer": "google"
     }
   }
