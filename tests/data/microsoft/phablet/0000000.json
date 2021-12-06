@@ -378,5 +378,43 @@
       "version": "12.10240.0",
       "manufacturer": "microsoft"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows Phone 10.0; Android 4.2; Microsoft; Lumia 950 XL) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Mobile Safari/537.36 Edge/12.10240"
+    },
+    "device": {
+      "deviceName": "Lumia 950 XL",
+      "marketingName": "Lumia 950 XL",
+      "manufacturer": "microsoft",
+      "brand": "microsoft",
+      "display": {
+        "width": 2560,
+        "height": 1440,
+        "touch": true,
+        "size": 5.7
+      },
+      "type": "phablet"
+    },
+    "browser": {
+      "name": "Edge Mobile",
+      "modus": null,
+      "version": "12.10240.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Windows Phone OS",
+      "marketingName": "Windows Phone OS",
+      "version": "10.0.0",
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": "Edge",
+      "version": "12.10240.0",
+      "manufacturer": "microsoft"
+    }
   }
 ]
