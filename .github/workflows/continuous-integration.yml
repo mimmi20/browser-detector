@@ -45,10 +45,13 @@ jobs:
           extensions: "${{ env.PHP_EXTENSIONS }}"
           ini-values: "${{ env.PHP_INI_VALUES }}"
           coverage: "none"
-          tools: "composer:v2, composer-normalize"
+          tools: "composer:v2"
 
       - name: "Validate composer.json"
         run: "composer validate --strict"
+
+      - name: "Run composer-normalize"
+        run: "composer normalize --dry-run"
 
   install:
     name: "Install dependencies"
