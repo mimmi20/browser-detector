@@ -239,7 +239,7 @@ final class DetectorTest extends TestCase
 
         try {
             $encodedHeaders = (new Json())->encode($headers, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
-        } catch (\ExceptionalJSON\EncodeErrorException $e) {
+        } catch (EncodeErrorException $e) {
             $encodedHeaders = '< failed to encode headers >';
         }
 
