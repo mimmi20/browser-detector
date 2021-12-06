@@ -34,9 +34,12 @@ jobs:
     steps:
       - name: "Checkout"
         uses: "actions/checkout@v2.4.0"
+        with:
+          # Disabling shallow clone is recommended for improving relevancy of reporting
+          fetch-depth: 0
 
       - name: "Install PHP"
-        uses: "shivammathur/setup-php@2.15.0"
+        uses: "shivammathur/setup-php@2.16.0"
         with:
           php-version: "${{ matrix.php-version }}"
           extensions: "${{ env.PHP_EXTENSIONS }}"
@@ -78,9 +81,12 @@ jobs:
     steps:
       - name: "Checkout"
         uses: "actions/checkout@v2.4.0"
+        with:
+          # Disabling shallow clone is recommended for improving relevancy of reporting
+          fetch-depth: 0
 
       - name: "Install PHP"
-        uses: "shivammathur/setup-php@2.15.0"
+        uses: "shivammathur/setup-php@2.16.0"
         with:
           php-version: "${{ matrix.php-version }}"
           extensions: "${{ env.PHP_EXTENSIONS }}"
@@ -93,7 +99,7 @@ jobs:
         run: "echo \"::set-output name=directory::$(composer config cache-dir)\""
 
       - name: "Cache dependencies installed with composer"
-        uses: "actions/cache@v2.1.6"
+        uses: "actions/cache@v2.1.7"
         with:
           path: "${{ steps.determine-composer-cache-directory.outputs.directory }}"
           key: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-${{ hashFiles('composer.lock') }}"
@@ -130,9 +136,12 @@ jobs:
     steps:
       - name: "Checkout"
         uses: "actions/checkout@v2.4.0"
+        with:
+          # Disabling shallow clone is recommended for improving relevancy of reporting
+          fetch-depth: 0
 
       - name: "Install PHP"
-        uses: "shivammathur/setup-php@2.15.0"
+        uses: "shivammathur/setup-php@2.16.0"
         with:
           php-version: "${{ matrix.php-version }}"
           extensions: "${{ env.PHP_EXTENSIONS }}"
@@ -145,7 +154,7 @@ jobs:
         run: "echo \"::set-output name=directory::$(composer config cache-dir)\""
 
       - name: "Cache dependencies installed with composer"
-        uses: "actions/cache@v2.1.6"
+        uses: "actions/cache@v2.1.7"
         with:
           path: "${{ steps.determine-composer-cache-directory.outputs.directory }}"
           key: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-${{ hashFiles('composer.lock') }}"
@@ -182,9 +191,12 @@ jobs:
     steps:
       - name: "Checkout"
         uses: "actions/checkout@v2.4.0"
+        with:
+          # Disabling shallow clone is recommended for improving relevancy of reporting
+          fetch-depth: 0
 
       - name: "Install PHP"
-        uses: "shivammathur/setup-php@2.15.0"
+        uses: "shivammathur/setup-php@2.16.0"
         with:
           php-version: "${{ matrix.php-version }}"
           extensions: "${{ env.PHP_EXTENSIONS }}"
@@ -197,7 +209,7 @@ jobs:
         run: "echo \"::set-output name=directory::$(composer config cache-dir)\""
 
       - name: "Cache dependencies installed with composer"
-        uses: "actions/cache@v2.1.6"
+        uses: "actions/cache@v2.1.7"
         with:
           path: "${{ steps.determine-composer-cache-directory.outputs.directory }}"
           key: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-${{ hashFiles('composer.lock') }}"
@@ -232,9 +244,12 @@ jobs:
     steps:
       - name: "Checkout"
         uses: "actions/checkout@v2.4.0"
+        with:
+          # Disabling shallow clone is recommended for improving relevancy of reporting
+          fetch-depth: 0
 
       - name: "Install PHP"
-        uses: "shivammathur/setup-php@2.15.0"
+        uses: "shivammathur/setup-php@2.16.0"
         with:
           php-version: "${{ matrix.php-version }}"
           extensions: "${{ env.PHP_EXTENSIONS }}"
@@ -247,7 +262,7 @@ jobs:
         run: "echo \"::set-output name=directory::$(composer config cache-dir)\""
 
       - name: "Cache dependencies installed with composer"
-        uses: "actions/cache@v2.1.6"
+        uses: "actions/cache@v2.1.7"
         with:
           path: "${{ steps.determine-composer-cache-directory.outputs.directory }}"
           key: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-${{ hashFiles('composer.lock') }}"
@@ -284,15 +299,74 @@ jobs:
     steps:
       - name: "Checkout"
         uses: "actions/checkout@v2.4.0"
+        with:
+          # Disabling shallow clone is recommended for improving relevancy of reporting
+          fetch-depth: 0
 
       - name: "Install PHP"
-        uses: "shivammathur/setup-php@2.15.0"
+        uses: "shivammathur/setup-php@2.16.0"
         with:
           php-version: "${{ matrix.php-version }}"
           extensions: "${{ env.PHP_EXTENSIONS }}"
           ini-values: "${{ env.PHP_INI_VALUES }}"
           coverage: "none"
           tools: "composer:v2, phpmd"
+
+      - name: "Determine composer cache directory"
+        id: "determine-composer-cache-directory"
+        run: "echo \"::set-output name=directory::$(composer config cache-dir)\""
+
+      - name: "Cache dependencies installed with composer"
+        uses: "actions/cache@v2.1.7"
+        with:
+          path: "${{ steps.determine-composer-cache-directory.outputs.directory }}"
+          key: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-${{ hashFiles('composer.lock') }}"
+          restore-keys: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-"
+
+      - name: "Update dependencies with composer"
+        run: "composer update --optimize-autoloader --prefer-dist --prefer-stable --no-progress --no-interaction -v --ansi ${{ matrix.dependencies }}"
+
+      - name: "Run phpmd/phpmd"
+        run: "phpmd src github phpmd.ruleset.xml"
+
+  rector:
+    name: "Checks with Rector"
+
+    needs: "validate"
+
+    runs-on: "${{ matrix.operating-system }}"
+
+    continue-on-error: false
+
+    strategy:
+      fail-fast: false
+
+      matrix:
+        operating-system:
+          - "ubuntu-18.04"
+          - "ubuntu-20.04"
+
+        php-version:
+          - "7.4"
+
+        dependencies:
+          - ""
+
+    steps:
+      - name: "Checkout"
+        uses: "actions/checkout@v2.4.0"
+        with:
+          # Disabling shallow clone is recommended for improving relevancy of reporting
+          fetch-depth: 0
+
+      - name: "Install PHP"
+        uses: "shivammathur/setup-php@2.16.0"
+        with:
+          php-version: "${{ matrix.php-version }}"
+          extensions: "${{ env.PHP_EXTENSIONS }}"
+          ini-values: "${{ env.PHP_INI_VALUES }}"
+          coverage: "none"
+          tools: "composer:v2"
 
       - name: "Determine composer cache directory"
         id: "determine-composer-cache-directory"
@@ -308,8 +382,8 @@ jobs:
       - name: "Update dependencies with composer"
         run: "composer update --optimize-autoloader --prefer-dist --prefer-stable --no-progress --no-interaction -v --ansi ${{ matrix.dependencies }}"
 
-      - name: "Run phpmd/phpmd"
-        run: "phpmd src github phpmd.ruleset.xml"
+      - name: "Run checks with rector/rector"
+        run: "vendor/bin/rector process src tests --dry-run --no-diffs --ansi"
 
   tests:
     name: "UnitTests with PHPUnit"
@@ -338,9 +412,12 @@ jobs:
     steps:
       - name: "Checkout"
         uses: "actions/checkout@v2.4.0"
+        with:
+          # Disabling shallow clone is recommended for improving relevancy of reporting
+          fetch-depth: 0
 
       - name: "Install PHP"
-        uses: "shivammathur/setup-php@2.15.0"
+        uses: "shivammathur/setup-php@2.16.0"
         with:
           php-version: "${{ matrix.php-version }}"
           extensions: "${{ env.PHP_EXTENSIONS }}"
@@ -353,7 +430,7 @@ jobs:
         run: "echo \"::set-output name=directory::$(composer config cache-dir)\""
 
       - name: "Cache dependencies installed with composer"
-        uses: "actions/cache@v2.1.6"
+        uses: "actions/cache@v2.1.7"
         with:
           path: "${{ steps.determine-composer-cache-directory.outputs.directory }}"
           key: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-${{ hashFiles('composer.lock') }}"
@@ -393,9 +470,12 @@ jobs:
     steps:
       - name: "Checkout"
         uses: "actions/checkout@v2.4.0"
+        with:
+          # Disabling shallow clone is recommended for improving relevancy of reporting
+          fetch-depth: 0
 
       - name: "Install PHP"
-        uses: "shivammathur/setup-php@2.15.0"
+        uses: "shivammathur/setup-php@2.16.0"
         with:
           php-version: "${{ matrix.php-version }}"
           extensions: "${{ env.PHP_EXTENSIONS }}"
@@ -408,7 +488,7 @@ jobs:
         run: "echo \"::set-output name=directory::$(composer config cache-dir)\""
 
       - name: "Cache dependencies installed with composer"
-        uses: "actions/cache@v2.1.6"
+        uses: "actions/cache@v2.1.7"
         with:
           path: "${{ steps.determine-composer-cache-directory.outputs.directory }}"
           key: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-${{ hashFiles('composer.lock') }}"
@@ -458,9 +538,12 @@ jobs:
     steps:
       - name: "Checkout"
         uses: "actions/checkout@v2.4.0"
+        with:
+          # Disabling shallow clone is recommended for improving relevancy of reporting
+          fetch-depth: 0
 
       - name: "Install PHP"
-        uses: "shivammathur/setup-php@2.15.0"
+        uses: "shivammathur/setup-php@2.16.0"
         with:
           php-version: "${{ matrix.php-version }}"
           extensions: "${{ env.PHP_EXTENSIONS }}"
@@ -473,7 +556,7 @@ jobs:
         run: "echo \"::set-output name=directory::$(composer config cache-dir)\""
 
       - name: "Cache dependencies installed with composer"
-        uses: "actions/cache@v2.1.6"
+        uses: "actions/cache@v2.1.7"
         with:
           path: "${{ steps.determine-composer-cache-directory.outputs.directory }}"
           key: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-${{ hashFiles('composer.lock') }}"

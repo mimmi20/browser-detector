@@ -1,501 +1,7 @@
 [
   {
     "headers": {
-      "user-agent": "iTube 2.15 (iPhone; iPhone OS 7.0; en_US)"
-    },
-    "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Mobile Safari UIWebView",
-      "modus": null,
-      "version": null,
-      "manufacturer": "apple",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "7.0.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "UCWEB/2.0 (iOS; U; iPh OS 5_0_1; zh-CN; iPh4,1) U2/1.0.0 UCBrowser/9.0.1.284 U2/1.0.0 Mobile"
-    },
-    "device": {
-      "deviceName": "iPhone 4,1",
-      "marketingName": "iPhone 4S",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 960,
-        "height": 640,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "9.0.1.284",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "5.0.1",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "UCWEB/2.0 (iOS; U; iPh OS 7_0_4; ru; iPh3,1) U2/1.0.0 UCBrowser/9.0.0.260 U2/1.0.0 Mobile"
-    },
-    "device": {
-      "deviceName": "iPhone 2,1",
-      "marketingName": "iPhone 4",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 960,
-        "height": 640,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "9.0.0.260",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "7.0.4",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "UCWEB/2.0 (iOS; U; iPh OS 7_0_4; zh-CN; iPh4,1) U2/1.0.0 UCBrowser/9.0.1.284 U2/1.0.0 Mobile"
-    },
-    "device": {
-      "deviceName": "iPhone 4,1",
-      "marketingName": "iPhone 4S",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 960,
-        "height": 640,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "9.0.1.284",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "7.0.4",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Island for iPhone/1.95 CFNetwork/672.0.2 Darwin/14.0.0"
-    },
-    "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Mobile Safari UIWebView",
-      "modus": null,
-      "version": null,
-      "manufacturer": "apple",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "7.0.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "672.0.2",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Appcelerator Titanium/2.1.2.GA (iPhone/6.1.2; iPhone OS; de_DE;)"
-    },
-    "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Mobile Safari UIWebView",
-      "modus": null,
-      "version": null,
-      "manufacturer": "apple",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "6.1.2",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "server-bag [iPhone OS,6.1,10B144,iPhone3,2]"
-    },
-    "device": {
-      "deviceName": "iPhone 3,2",
-      "marketingName": "iPhone 4",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 960,
-        "height": 640,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Mobile Safari UIWebView",
-      "modus": null,
-      "version": null,
-      "manufacturer": "apple",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": null,
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "StoreKitUIService/1.0 iOS/7.0 model/iPhone3,1 (4; dt:27)"
-    },
-    "device": {
-      "deviceName": "iPhone 2,1",
-      "marketingName": "iPhone 4",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 960,
-        "height": 640,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Mobile Safari UIWebView",
-      "modus": null,
-      "version": null,
-      "manufacturer": "apple",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "7.0.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "UCWEB/3.0 (iPhone; CPU OS_6; en-US)AppleWebKit/534.1 U3/3.0.0 Mobile"
-    },
-    "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "3.0.0",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "6.0.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "534.1.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "MQQBrowser/39 Mozilla/5.0 (iPhone 4S; CPU iPhone OS 6_0_1 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Mobile/10A523 Safari/7534.48.3"
-    },
-    "device": {
-      "deviceName": "iPhone 4,1",
-      "marketingName": "iPhone 4S",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 960,
-        "height": 640,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "QQ Browser",
-      "modus": null,
-      "version": "39.0.0",
-      "manufacturer": "tencent",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "6.0.1",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "536.26.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "MQQBrowser/391 Mozilla/5.0 (iPhone 4S; CPU iPhone OS 5_0 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Mobile/9A334 Safari/7534.48.3"
-    },
-    "device": {
-      "deviceName": "iPhone 4,1",
-      "marketingName": "iPhone 4S",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 960,
-        "height": 640,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "QQ Browser",
-      "modus": null,
-      "version": "391.0.0",
-      "manufacturer": "tencent",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "5.0.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "534.46.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Dolphin 7.4 (iPhone; iPhone OS 7.0.2; de_DE)"
-    },
-    "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Dolfin",
-      "modus": null,
-      "version": "7.4.0",
-      "manufacturer": "mopotab",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "7.0.2",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Dolphin 7.5.1 (iPhone; iPhone OS 7.0.3; de_DE)"
-    },
-    "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Dolfin",
-      "modus": null,
-      "version": "7.5.1",
-      "manufacturer": "mopotab",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "7.0.3",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_2_1 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) CriOS/57.0.2987.100 Mobile/14D27 Safari/602.1"
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_5 like Mac OS X) AppleWebKit/601.1 (KHTML, like Gecko) CriOS/62.0.3202.60 Mobile/13G36 Safari/601.1.46"
     },
     "device": {
       "deviceName": "iPhone",
@@ -513,7 +19,7 @@
     "browser": {
       "name": "Chrome for iOS",
       "modus": null,
-      "version": "57.0.2987.100",
+      "version": "62.0.3202.60",
       "manufacturer": "google",
       "bits": null,
       "type": "browser"
@@ -521,365 +27,23 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "10.2.1",
+      "version": "9.3.5",
       "manufacturer": "apple",
       "bits": null
     },
     "engine": {
       "name": "WebKit",
-      "version": "602.1.50",
+      "version": "601.1.0",
       "manufacturer": "apple"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_1_1 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) CriOS/57.0.2987.100 Mobile/14B100 Safari/602.1"
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_3 like Mac OS X) AppleWebKit/603.3.8 (KHTML, like Gecko) Mobile/14G60 [FBAN/FBIOS;FBAV/146.0.0.73.91;FBBV/75938921;FBDV/iPhone8,1;FBMD/iPhone;FBSN/iOS;FBSV/10.3.3;FBSS/2;FBCR/o2-de;FBID/phone;FBLC/de_DE;FBOP/5;FBRV/75938921]"
     },
     "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome for iOS",
-      "modus": null,
-      "version": "57.0.2987.100",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "10.1.1",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "602.1.50",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_0_1 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) CriOS/57.0.2987.100 Mobile/14A403 Safari/602.1"
-    },
-    "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome for iOS",
-      "modus": null,
-      "version": "57.0.2987.100",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "10.0.1",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "602.1.50",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 8_3 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) FxiOS/5.3 Mobile/12F70 Safari/600.1.4"
-    },
-    "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Firefox Mobile for iOS",
-      "modus": null,
-      "version": "5.3.0",
-      "manufacturer": "mozilla-foundation",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "8.3.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "600.1.4",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 9_0_2 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) GSA/23.1.148956103 Mobile/13A452 Safari/600.1.4"
-    },
-    "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Google App",
-      "modus": null,
-      "version": "23.1.148956103",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "9.0.2",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "600.1.4",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_2 like Mac OS X) AppleWebKit/602.3.12 (KHTML, like Gecko) Mobile/14C92 QQ/6.6.9.412 V1_IPH_SQ_6.6.9_1_APP_A Pixel/750 Core/UIWebView NetType/4G"
-    },
-    "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "QQ-App",
-      "modus": null,
-      "version": "6.6.9.412",
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "10.2.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "602.3.12",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_3 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) OPiOS/14.0.0.104835 Mobile/14E5260b Safari/9537.53"
-    },
-    "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Opera Mini for iOS",
-      "modus": null,
-      "version": "14.0.0.104835",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "10.3.0-beta+4",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "603.1.30",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "com.google.GoogleMobile/23.1.0 iPhone/10.2.1 hw/iPhone7_2"
-    },
-    "device": {
-      "deviceName": "iPhone 7,2",
-      "marketingName": "iPhone 6",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 1334,
-        "height": 750,
-        "touch": true,
-        "size": 4.7
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Google Mobile App",
-      "modus": null,
-      "version": "23.1.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "10.2.1",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_2_1 like Mac OS X) AppleWebKit/602.4.6 (KHTML, like Gecko) Mobile/14D27 [FBAN/MessengerForiOS;FBAV/108.0.0.36.70;FBBV/51642321;FBDV/iPhone9,3;FBMD/iPhone;FBSN/iOS;FBSV/10.2.1;FBSS/2;FBCR/Telekom.de;FBID/phone;FBLC/de_DE;FBOP/5;FBRV/0]"
-    },
-    "device": {
-      "deviceName": "iPhone 9,3",
-      "marketingName": "iPhone 7",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 1334,
-        "height": 750,
-        "touch": true,
-        "size": 4.7
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Facebook Messenger App",
-      "modus": null,
-      "version": "108.0.0.36.70",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "10.2.1",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "602.4.6",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_2 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) GSA/16.0.124986583 Mobile/14C92 Safari/600.1.4"
-    },
-    "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Google App",
-      "modus": null,
-      "version": "16.0.124986583",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "10.2.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "600.1.4",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_2_1 like Mac OS X) AppleWebKit/602.4.6 (KHTML, like Gecko) Mobile/14D27 [FBAN/FBIOS;FBAV/84.0.0.36.37;FBBV/52496792;FBDV/iPhone9,3;FBMD/iPhone;FBSN/iOS;FBSV/10.2.1;FBSS/2;FBCR/OrangeB;FBID/phone;FBLC/nl_NL;FBOP/5;FBRV/0]"
-    },
-    "device": {
-      "deviceName": "iPhone 9,3",
-      "marketingName": "iPhone 7",
+      "deviceName": "iPhone 8,1",
+      "marketingName": "iPhone 6S",
       "manufacturer": "apple",
       "brand": "apple",
       "display": {
@@ -893,7 +57,7 @@
     "browser": {
       "name": "Facebook App",
       "modus": null,
-      "version": "84.0.0.36.37",
+      "version": "146.0.0.73.91",
       "manufacturer": "facebook",
       "bits": null,
       "type": "application"
@@ -901,23 +65,23 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "10.2.1",
+      "version": "10.3.3",
       "manufacturer": "apple",
       "bits": null
     },
     "engine": {
       "name": "WebKit",
-      "version": "602.4.6",
+      "version": "603.3.8",
       "manufacturer": "apple"
     }
   },
   {
     "headers": {
-      "user-agent": "com.google.GoogleMobile/23.1.0 iPhone/10.1.1 hw/iPhone7_2"
+      "user-agent": "com.google.GoogleMobile/28.0.0 iPhone/11.0 hw/iPhone9_3"
     },
     "device": {
-      "deviceName": "iPhone 7,2",
-      "marketingName": "iPhone 6",
+      "deviceName": "iPhone 9,3",
+      "marketingName": "iPhone 7",
       "manufacturer": "apple",
       "brand": "apple",
       "display": {
@@ -931,7 +95,7 @@
     "browser": {
       "name": "Google Mobile App",
       "modus": null,
-      "version": "23.1.0",
+      "version": "28.0.0",
       "manufacturer": "google",
       "bits": null,
       "type": "application"
@@ -939,7 +103,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "10.1.1",
+      "version": "11.0.0",
       "manufacturer": "apple",
       "bits": null
     },
@@ -951,7 +115,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_2_1 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) GSA/24.1.151204851 Mobile/14D27 Safari/602.1"
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_5 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) GSA/37.1.171590344 Mobile/13G36 Safari/601.1"
     },
     "device": {
       "deviceName": "iPhone",
@@ -969,197 +133,7 @@
     "browser": {
       "name": "Google App",
       "modus": null,
-      "version": "24.1.151204851",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "10.2.1",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "602.1.50",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_2_1 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) GSA/24.0.150344369 Mobile/14D27 Safari/602.1"
-    },
-    "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Google App",
-      "modus": null,
-      "version": "24.0.150344369",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "10.2.1",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "602.1.50",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_2 like Mac OS X) AppleWebKit/601.1 (KHTML, like Gecko) CriOS/57.0.2987.100 Mobile/13F69 Safari/601.1.46"
-    },
-    "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome for iOS",
-      "modus": null,
-      "version": "57.0.2987.100",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "9.3.2",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "601.1.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_3 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) CriOS/57.0.2987.100 Mobile/14E277 Safari/602.1"
-    },
-    "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome for iOS",
-      "modus": null,
-      "version": "57.0.2987.100",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "10.3.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "602.1.50",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_1_1 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) GSA/24.0.150344369 Mobile/14B100 Safari/602.1"
-    },
-    "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Google App",
-      "modus": null,
-      "version": "24.0.150344369",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "10.1.1",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "602.1.50",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_5 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) GSA/24.0.150344369 Mobile/13G36 Safari/601.1"
-    },
-    "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Google App",
-      "modus": null,
-      "version": "24.0.150344369",
+      "version": "37.1.171590344",
       "manufacturer": "google",
       "bits": null,
       "type": "application"
@@ -1179,7 +153,45 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_2_1 like Mac OS X) AppleWebKit/602.4.6 (KHTML, like Gecko) Mobile/14D27 [FBAN/FBIOS;FBAV/85.0.0.34.62;FBBV/53195005;FBDV/iPhone7,2;FBMD/iPhone;FBSN/iOS;FBSV/10.2.1;FBSS/2;FBCR/Telekom.de;FBID/phone;FBLC/en_US;FBOP/5;FBRV/0]"
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_3 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Mobile/15A432 [FBAN/FBIOS;FBAV/146.0.0.73.91;FBBV/75938921;FBDV/iPhone9,1;FBMD/iPhone;FBSN/iOS;FBSV/11.0.3;FBSS/2;FBCR/Vodafone.de;FBID/phone;FBLC/de_DE;FBOP/5;FBRV/0]"
+    },
+    "device": {
+      "deviceName": "iPhone 9,1",
+      "marketingName": "iPhone 7",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 1334,
+        "height": 750,
+        "touch": true,
+        "size": 4.7
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "146.0.0.73.91",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.0.3",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "604.1.38",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_3 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Mobile/15A432 [FBAN/FBIOS;FBAV/146.0.0.73.91;FBBV/75938921;FBDV/iPhone7,2;FBMD/iPhone;FBSN/iOS;FBSV/11.0.3;FBSS/2;FBCR/E-Plus;FBID/phone;FBLC/en_GB;FBOP/5;FBRV/0]"
     },
     "device": {
       "deviceName": "iPhone 7,2",
@@ -1197,7 +209,7 @@
     "browser": {
       "name": "Facebook App",
       "modus": null,
-      "version": "85.0.0.34.62",
+      "version": "146.0.0.73.91",
       "manufacturer": "facebook",
       "bits": null,
       "type": "application"
@@ -1205,19 +217,95 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "10.2.1",
+      "version": "11.0.3",
       "manufacturer": "apple",
       "bits": null
     },
     "engine": {
       "name": "WebKit",
-      "version": "602.4.6",
+      "version": "604.1.38",
       "manufacturer": "apple"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_0_2 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) GSA/24.0.150344369 Mobile/14A456 Safari/602.1"
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_2 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Mobile/15A421 [FBAN/FBIOS;FBAV/145.0.0.59.86;FBBV/74951375;FBDV/iPhone8,4;FBMD/iPhone;FBSN/iOS;FBSV/11.0.2;FBSS/2;FBCR/o2-de;FBID/phone;FBLC/de_DE;FBOP/5;FBRV/0]"
+    },
+    "device": {
+      "deviceName": "iPhone 8,4",
+      "marketingName": "iPhone SE",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 1334,
+        "height": 750,
+        "touch": true,
+        "size": 4
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "145.0.0.59.86",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.0.2",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "604.1.38",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_3 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Mobile/15A432 [FBAN/FBIOS;FBAV/145.0.0.59.86;FBBV/74951375;FBDV/iPhone9,3;FBMD/iPhone;FBSN/iOS;FBSV/11.0.3;FBSS/2;FBCR/Telekom.de;FBID/phone;FBLC/de_DE;FBOP/5;FBRV/0]"
+    },
+    "device": {
+      "deviceName": "iPhone 9,3",
+      "marketingName": "iPhone 7",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 1334,
+        "height": 750,
+        "touch": true,
+        "size": 4.7
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "145.0.0.59.86",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.0.3",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "604.1.38",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_3 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) CriOS/62.0.3202.60 Mobile/14G60 Safari/602.1"
     },
     "device": {
       "deviceName": "iPhone",
@@ -1233,29 +321,67 @@
       "type": "smartphone"
     },
     "browser": {
-      "name": "Google App",
+      "name": "Chrome for iOS",
       "modus": null,
-      "version": "24.0.150344369",
+      "version": "62.0.3202.60",
       "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "10.3.3",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "603.1.30",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_3 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Mobile/15A432 [FBAN/FBIOS;FBAV/146.0.0.73.91;FBBV/75938921;FBDV/iPhone8,4;FBMD/iPhone;FBSN/iOS;FBSV/11.0.3;FBSS/2;FBCR/Telekom.de;FBID/phone;FBLC/de_DE;FBOP/5;FBRV/75938921]"
+    },
+    "device": {
+      "deviceName": "iPhone 8,4",
+      "marketingName": "iPhone SE",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 1334,
+        "height": 750,
+        "touch": true,
+        "size": 4
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "146.0.0.73.91",
+      "manufacturer": "facebook",
       "bits": null,
       "type": "application"
     },
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "10.0.2",
+      "version": "11.0.3",
       "manufacturer": "apple",
       "bits": null
     },
     "engine": {
       "name": "WebKit",
-      "version": "602.1.50",
+      "version": "604.1.38",
       "manufacturer": "apple"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_2_1 like Mac OS X) AppleWebKit/602.4.6 (KHTML, like Gecko) Mobile/14D27 [FBAN/FBIOS;FBAV/84.0.0.36.37;FBBV/52496792;FBDV/iPhone8,1;FBMD/iPhone;FBSN/iOS;FBSV/10.2.1;FBSS/2;FBCR/Telekom.de;FBID/phone;FBLC/en_GB;FBOP/5;FBRV/0]"
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_3 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Mobile/15A432 [FBAN/FBIOS;FBAV/146.0.0.73.91;FBBV/75938921;FBDV/iPhone8,1;FBMD/iPhone;FBSN/iOS;FBSV/11.0.3;FBSS/2;FBCR/Vodafone.de;FBID/phone;FBLC/en_US;FBOP/5;FBRV/75938921]"
     },
     "device": {
       "deviceName": "iPhone 8,1",
@@ -1273,7 +399,7 @@
     "browser": {
       "name": "Facebook App",
       "modus": null,
-      "version": "84.0.0.36.37",
+      "version": "146.0.0.73.91",
       "manufacturer": "facebook",
       "bits": null,
       "type": "application"
@@ -1281,289 +407,23 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "10.2.1",
+      "version": "11.0.3",
       "manufacturer": "apple",
       "bits": null
     },
     "engine": {
       "name": "WebKit",
-      "version": "602.4.6",
+      "version": "604.1.38",
       "manufacturer": "apple"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 8_3 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) GSA/23.1.148956103 Mobile/12F70 Safari/600.1.4"
+      "user-agent": "com.google.GoogleMobile/37.1.0 iPhone/11.0.3 hw/iPhone8_1"
     },
     "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Google App",
-      "modus": null,
-      "version": "23.1.148956103",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "8.3.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "600.1.4",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) GSA/23.1.148956103 Mobile/13B143 Safari/600.1.4"
-    },
-    "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Google App",
-      "modus": null,
-      "version": "23.1.148956103",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "9.1.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "600.1.4",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_3 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) GSA/24.1.151204851 Mobile/14E277 Safari/602.1"
-    },
-    "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Google App",
-      "modus": null,
-      "version": "24.1.151204851",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "10.3.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "602.1.50",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_2_1 like Mac OS X) AppleWebKit/601.1 (KHTML, like Gecko) CriOS/49.0.2623.73 Mobile/14D27 Safari/601.1.46"
-    },
-    "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome for iOS",
-      "modus": null,
-      "version": "49.0.2623.73",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "10.2.1",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "601.1.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_2 like Mac OS X) AppleWebKit/603.2.1 (KHTML, like Gecko) Version/10.0 Mobile/14F5065b Safari/602.1"
-    },
-    "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Safari",
-      "modus": null,
-      "version": "10.0.0",
-      "manufacturer": "apple",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "10.3.2-beta+1",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "603.2.1",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_0_2 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) GSA/24.1.151204851 Mobile/14A456 Safari/602.1"
-    },
-    "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Google App",
-      "modus": null,
-      "version": "24.1.151204851",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "10.0.2",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "602.1.50",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 9_2_1 like Mac OS X) AppleWebKit/601.1 (KHTML, like Gecko) CriOS/57.0.2987.137 Mobile/13D15 Safari/601.1.46"
-    },
-    "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome for iOS",
-      "modus": null,
-      "version": "57.0.2987.137",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "9.2.1",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "601.1.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "com.google.GoogleMobile/24.0.0 iPhone/10.2.1 hw/iPhone7_2"
-    },
-    "device": {
-      "deviceName": "iPhone 7,2",
-      "marketingName": "iPhone 6",
+      "deviceName": "iPhone 8,1",
+      "marketingName": "iPhone 6S",
       "manufacturer": "apple",
       "brand": "apple",
       "display": {
@@ -1577,7 +437,7 @@
     "browser": {
       "name": "Google Mobile App",
       "modus": null,
-      "version": "24.0.0",
+      "version": "37.1.0",
       "manufacturer": "google",
       "bits": null,
       "type": "application"
@@ -1585,7 +445,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "10.2.1",
+      "version": "11.0.3",
       "manufacturer": "apple",
       "bits": null
     },
@@ -1597,25 +457,101 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 9_2 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) GSA/24.0.150344369 Mobile/13C75 Safari/601.1"
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_3 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Mobile/15A432 [FBAN/MessengerForiOS;FBAV/140.0.0.65.91;FBBV/75768478;FBDV/iPhone6,1;FBMD/iPhone;FBSN/iOS;FBSV/11.0.3;FBSS/2;FBCR/Vodafone.de;FBID/phone;FBLC/en_GB;FBOP/5;FBRV/0]"
     },
     "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
+      "deviceName": "iPhone 6,1",
+      "marketingName": "iPhone 5S",
       "manufacturer": "apple",
       "brand": "apple",
       "display": {
-        "width": 480,
-        "height": 320,
+        "width": 1136,
+        "height": 640,
         "touch": true,
-        "size": 3.5
+        "size": 4
       },
       "type": "smartphone"
     },
     "browser": {
-      "name": "Google App",
+      "name": "Facebook Messenger App",
       "modus": null,
-      "version": "24.0.150344369",
+      "version": "140.0.0.65.91",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.0.3",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "604.1.38",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_3 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Mobile/15A432 [FBAN/FBIOS;FBAV/146.0.0.73.91;FBBV/75938921;FBDV/iPhone6,2;FBMD/iPhone;FBSN/iOS;FBSV/11.0.3;FBSS/2;FBCR/E-Plus;FBID/phone;FBLC/en_GB;FBOP/5;FBRV/0]"
+    },
+    "device": {
+      "deviceName": "iPhone 6,2",
+      "marketingName": "iPhone 5S",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 1136,
+        "height": 640,
+        "touch": true,
+        "size": 4
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "146.0.0.73.91",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.0.3",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "604.1.38",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "com.google.GoogleMobile/37.1.0 iPhone/11.0.3 hw/iPhone9_3"
+    },
+    "device": {
+      "deviceName": "iPhone 9,3",
+      "marketingName": "iPhone 7",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 1334,
+        "height": 750,
+        "touch": true,
+        "size": 4.7
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Google Mobile App",
+      "modus": null,
+      "version": "37.1.0",
       "manufacturer": "google",
       "bits": null,
       "type": "application"
@@ -1623,19 +559,19 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "9.2.0",
+      "version": "11.0.3",
       "manufacturer": "apple",
       "bits": null
     },
     "engine": {
       "name": "WebKit",
-      "version": "601.1.46",
+      "version": null,
       "manufacturer": "apple"
     }
   },
   {
     "headers": {
-      "user-agent": "Snapchat/10.4.2.0 (iPhone8,1; iOS 10.2; gzip)"
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_3 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Mobile/15A432 [FBAN/MessengerForiOS;FBAV/139.0.0.66.86;FBBV/75131998;FBDV/iPhone8,1;FBMD/iPhone;FBSN/iOS;FBSV/11.0.3;FBSS/2;FBCR/E-Plus;FBID/phone;FBLC/en_GB;FBOP/5;FBRV/0]"
     },
     "device": {
       "deviceName": "iPhone 8,1",
@@ -1651,67 +587,29 @@
       "type": "smartphone"
     },
     "browser": {
-      "name": "Snapchat",
+      "name": "Facebook Messenger App",
       "modus": null,
-      "version": "10.4.2.0",
-      "manufacturer": "snap",
+      "version": "139.0.0.66.86",
+      "manufacturer": "facebook",
       "bits": null,
       "type": "application"
     },
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "10.2.0",
+      "version": "11.0.3",
       "manufacturer": "apple",
       "bits": null
     },
     "engine": {
       "name": "WebKit",
-      "version": null,
+      "version": "604.1.38",
       "manufacturer": "apple"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_2_1 like Mac OS X) AppleWebKit/601.1 (KHTML, like Gecko) CriOS/52.0.2743.84 Mobile/14D27 Safari/601.1.46"
-    },
-    "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome for iOS",
-      "modus": null,
-      "version": "52.0.2743.84",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "10.2.1",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "601.1.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_1_1 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) GSA/24.1.151204851 Mobile/14B100 Safari/602.1"
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_3 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) GSA/26.0.154727556 Mobile/15A432 Safari/602.1"
     },
     "device": {
       "deviceName": "iPhone",
@@ -1729,7 +627,7 @@
     "browser": {
       "name": "Google App",
       "modus": null,
-      "version": "24.1.151204851",
+      "version": "26.0.154727556",
       "manufacturer": "google",
       "bits": null,
       "type": "application"
@@ -1737,7 +635,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "10.1.1",
+      "version": "11.0.3",
       "manufacturer": "apple",
       "bits": null
     },
@@ -1749,7 +647,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) GSA/24.1.151204851 Mobile/13G35 Safari/601.1"
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_3 like Mac OS X) AppleWebKit/604.1.34 (KHTML, like Gecko) GSA/38.0.172903409 Mobile/15A432 Safari/604.1"
     },
     "device": {
       "deviceName": "iPhone",
@@ -1767,7 +665,7 @@
     "browser": {
       "name": "Google App",
       "modus": null,
-      "version": "24.1.151204851",
+      "version": "38.0.172903409",
       "manufacturer": "google",
       "bits": null,
       "type": "application"
@@ -1775,19 +673,57 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "9.3.4",
+      "version": "11.0.3",
       "manufacturer": "apple",
       "bits": null
     },
     "engine": {
       "name": "WebKit",
-      "version": "601.1.46",
+      "version": "604.1.34",
       "manufacturer": "apple"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 8_2 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) GSA/23.1.148956103 Mobile/12D508 Safari/600.1.4"
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_3 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Mobile/15A432 [FBAN/FBIOS;FBAV/147.0.0.46.81;FBBV/76961488;FBDV/iPhone6,2;FBMD/iPhone;FBSN/iOS;FBSV/11.0.3;FBSS/2;FBCR/E-Plus;FBID/phone;FBLC/hu_HU;FBOP/5;FBRV/0]"
+    },
+    "device": {
+      "deviceName": "iPhone 6,2",
+      "marketingName": "iPhone 5S",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 1136,
+        "height": 640,
+        "touch": true,
+        "size": 4
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "147.0.0.46.81",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.0.3",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "604.1.38",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_0_2 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/14A456 Safari/602.1 AlohaBrowser/2.0"
     },
     "device": {
       "deviceName": "iPhone",
@@ -1803,48 +739,10 @@
       "type": "smartphone"
     },
     "browser": {
-      "name": "Google App",
+      "name": "Aloha Browser",
       "modus": null,
-      "version": "23.1.148956103",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "8.2.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "600.1.4",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_0_2 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) FxiOS/1.4 Mobile/14A456 Safari/602.1.50"
-    },
-    "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Firefox Mobile for iOS",
-      "modus": null,
-      "version": "1.4.0",
-      "manufacturer": "mozilla-foundation",
+      "version": "2.0.0",
+      "manufacturer": "aloha-mobile",
       "bits": null,
       "type": "browser"
     },
@@ -1863,121 +761,121 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_1 like Mac OS X) AppleWebKit/602.2.14 (KHTML, like Gecko) FxiOS/5.0 Mobile/14B72 Safari/602.2.14"
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_3 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Mobile/15A432 [FBAN/FBIOS;FBAV/147.0.0.46.81;FBBV/76961488;FBDV/iPhone7,2;FBMD/iPhone;FBSN/iOS;FBSV/11.0.3;FBSS/2;FBCR/o2-de;FBID/phone;FBLC/de_DE;FBOP/5;FBRV/0]"
     },
     "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
+      "deviceName": "iPhone 7,2",
+      "marketingName": "iPhone 6",
       "manufacturer": "apple",
       "brand": "apple",
       "display": {
-        "width": 480,
-        "height": 320,
+        "width": 1334,
+        "height": 750,
         "touch": true,
-        "size": 3.5
+        "size": 4.7
       },
       "type": "smartphone"
     },
     "browser": {
-      "name": "Firefox Mobile for iOS",
+      "name": "Facebook App",
       "modus": null,
-      "version": "5.0.0",
-      "manufacturer": "mozilla-foundation",
+      "version": "147.0.0.46.81",
+      "manufacturer": "facebook",
       "bits": null,
-      "type": "browser"
+      "type": "application"
     },
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "10.1.0",
+      "version": "11.0.3",
       "manufacturer": "apple",
       "bits": null
     },
     "engine": {
       "name": "WebKit",
-      "version": "602.2.14",
+      "version": "604.1.38",
       "manufacturer": "apple"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_2_1 like Mac OS X) AppleWebKit/602.4.6 (KHTML, like Gecko) FxiOS/1.4 Mobile/14D27 Safari/602.4.6"
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_3 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Mobile/15A432 [FBAN/MessengerForiOS;FBAV/141.0.0.47.79;FBBV/76976257;FBDV/iPhone8,1;FBMD/iPhone;FBSN/iOS;FBSV/11.0.3;FBSS/2;FBCR/E-Plus;FBID/phone;FBLC/en_GB;FBOP/5;FBRV/0]"
     },
     "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
+      "deviceName": "iPhone 8,1",
+      "marketingName": "iPhone 6S",
       "manufacturer": "apple",
       "brand": "apple",
       "display": {
-        "width": 480,
-        "height": 320,
+        "width": 1334,
+        "height": 750,
         "touch": true,
-        "size": 3.5
+        "size": 4.7
       },
       "type": "smartphone"
     },
     "browser": {
-      "name": "Firefox Mobile for iOS",
+      "name": "Facebook Messenger App",
       "modus": null,
-      "version": "1.4.0",
-      "manufacturer": "mozilla-foundation",
+      "version": "141.0.0.47.79",
+      "manufacturer": "facebook",
       "bits": null,
-      "type": "browser"
+      "type": "application"
     },
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "10.2.1",
+      "version": "11.0.3",
       "manufacturer": "apple",
       "bits": null
     },
     "engine": {
       "name": "WebKit",
-      "version": "602.4.6",
+      "version": "604.1.38",
       "manufacturer": "apple"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 8_2 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) FxiOS/2.1 Mobile/12D508 Safari/600.1.4"
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 11_1 like Mac OS X) AppleWebKit/604.3.5 (KHTML, like Gecko) Mobile/15B93 [FBAN/FBIOS;FBAV/147.0.0.46.81;FBBV/76961488;FBDV/iPhone10,4;FBMD/iPhone;FBSN/iOS;FBSV/11.1;FBSS/2;FBCR/Telekom.de;FBID/phone;FBLC/de_DE;FBOP/5;FBRV/0]"
     },
     "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
+      "deviceName": "iPhone 10,4",
+      "marketingName": "iPhone 8",
       "manufacturer": "apple",
       "brand": "apple",
       "display": {
-        "width": 480,
-        "height": 320,
+        "width": 1334,
+        "height": 750,
         "touch": true,
-        "size": 3.5
+        "size": 4.7
       },
       "type": "smartphone"
     },
     "browser": {
-      "name": "Firefox Mobile for iOS",
+      "name": "Facebook App",
       "modus": null,
-      "version": "2.1.0",
-      "manufacturer": "mozilla-foundation",
+      "version": "147.0.0.46.81",
+      "manufacturer": "facebook",
       "bits": null,
-      "type": "browser"
+      "type": "application"
     },
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "8.2.0",
+      "version": "11.1.0-beta+5",
       "manufacturer": "apple",
       "bits": null
     },
     "engine": {
       "name": "WebKit",
-      "version": "600.1.4",
+      "version": "604.3.5",
       "manufacturer": "apple"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 8_3 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) FxiOS/5.0 Mobile/12F70 Safari/600.1.4"
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_5 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) GSA/38.0.172903409 Mobile/13G36 Safari/601.1"
     },
     "device": {
       "deviceName": "iPhone",
@@ -1993,131 +891,17 @@
       "type": "smartphone"
     },
     "browser": {
-      "name": "Firefox Mobile for iOS",
+      "name": "Google App",
       "modus": null,
-      "version": "5.0.0",
-      "manufacturer": "mozilla-foundation",
+      "version": "38.0.172903409",
+      "manufacturer": "google",
       "bits": null,
-      "type": "browser"
+      "type": "application"
     },
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "8.3.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "600.1.4",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 8_4 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) FxiOS/1.2 Mobile/12H143 Safari/600.1.4"
-    },
-    "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Firefox Mobile for iOS",
-      "modus": null,
-      "version": "1.2.0",
-      "manufacturer": "mozilla-foundation",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "8.4.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "600.1.4",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 8_4_1 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) FxiOS/4.0 Mobile/12H321 Safari/600.1.4"
-    },
-    "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Firefox Mobile for iOS",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "mozilla-foundation",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "8.4.1",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "600.1.4",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 9_0 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) FxiOS/1.4 Mobile/13A344 Safari/601.1.46"
-    },
-    "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Firefox Mobile for iOS",
-      "modus": null,
-      "version": "1.4.0",
-      "manufacturer": "mozilla-foundation",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "9.0.0",
+      "version": "9.3.5",
       "manufacturer": "apple",
       "bits": null
     },
@@ -2129,7 +913,121 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 9_0 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) FxiOS/4.0 Mobile/13A344 Safari/601.1.46"
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_3 like Mac OS X) AppleWebKit/603.3.8 (KHTML, like Gecko) Mobile/14G60 [FBAN/FBIOS;FBAV/146.0.0.73.91;FBBV/75938921;FBDV/iPhone5,2;FBMD/iPhone;FBSN/iOS;FBSV/10.3.3;FBSS/2;FBCR/Vodafone.de;FBID/phone;FBLC/de_DE;FBOP/5;FBRV/0]"
+    },
+    "device": {
+      "deviceName": "iPhone 5,2",
+      "marketingName": "iPhone 5",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 1136,
+        "height": 640,
+        "touch": true,
+        "size": 4
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "146.0.0.73.91",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "10.3.3",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "603.3.8",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_3 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Mobile/15A432 [FBAN/FBIOS;FBAV/147.0.0.46.81;FBBV/76961488;FBDV/iPhone8,1;FBMD/iPhone;FBSN/iOS;FBSV/11.0.3;FBSS/2;FBCR/Vodafone.de;FBID/phone;FBLC/de_DE;FBOP/5;FBRV/0]"
+    },
+    "device": {
+      "deviceName": "iPhone 8,1",
+      "marketingName": "iPhone 6S",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 1334,
+        "height": 750,
+        "touch": true,
+        "size": 4.7
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "147.0.0.46.81",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.0.3",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "604.1.38",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_3 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Mobile/15A432 [FBAN/FBIOS;FBAV/147.0.0.46.81;FBBV/76961488;FBDV/iPhone9,3;FBMD/iPhone;FBSN/iOS;FBSV/11.0.3;FBSS/2;FBCR/Telekom.de;FBID/phone;FBLC/de_DE;FBOP/5;FBRV/76961488]"
+    },
+    "device": {
+      "deviceName": "iPhone 9,3",
+      "marketingName": "iPhone 7",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 1334,
+        "height": 750,
+        "touch": true,
+        "size": 4.7
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "147.0.0.46.81",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.0.3",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "604.1.38",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_3 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) GSA/38.0.172903409 Mobile/14G60 Safari/602.1"
     },
     "device": {
       "deviceName": "iPhone",
@@ -2145,29 +1043,105 @@
       "type": "smartphone"
     },
     "browser": {
-      "name": "Firefox Mobile for iOS",
+      "name": "Google App",
       "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "mozilla-foundation",
+      "version": "38.0.172903409",
+      "manufacturer": "google",
       "bits": null,
-      "type": "browser"
+      "type": "application"
     },
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "9.0.0",
+      "version": "10.3.3",
       "manufacturer": "apple",
       "bits": null
     },
     "engine": {
       "name": "WebKit",
-      "version": "601.1.46",
+      "version": "602.1.50",
       "manufacturer": "apple"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) FxiOS/6.1 Mobile/13B143 Safari/601.1.46"
+      "user-agent": "com.google.GoogleMobile/38.0.0 iPhone/11.1 hw/iPhone8_1"
+    },
+    "device": {
+      "deviceName": "iPhone 8,1",
+      "marketingName": "iPhone 6S",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 1334,
+        "height": 750,
+        "touch": true,
+        "size": 4.7
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Google Mobile App",
+      "modus": null,
+      "version": "38.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.1.0",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_3 like Mac OS X) AppleWebKit/603.3.8 (KHTML, like Gecko) Mobile/14G60 [FBAN/FBIOS;FBAV/147.0.0.46.81;FBBV/76961488;FBDV/iPhone6,2;FBMD/iPhone;FBSN/iOS;FBSV/10.3.3;FBSS/2;FBCR/o2-de;FBID/phone;FBLC/de_DE;FBOP/5;FBRV/0]"
+    },
+    "device": {
+      "deviceName": "iPhone 6,2",
+      "marketingName": "iPhone 5S",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 1136,
+        "height": 640,
+        "touch": true,
+        "size": 4
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "147.0.0.46.81",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "10.3.3",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "603.3.8",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_3 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko)"
     },
     "device": {
       "deviceName": "iPhone",
@@ -2183,29 +1157,67 @@
       "type": "smartphone"
     },
     "browser": {
-      "name": "Firefox Mobile for iOS",
+      "name": "Apple Mail",
       "modus": null,
-      "version": "6.1.0",
-      "manufacturer": "mozilla-foundation",
+      "version": null,
+      "manufacturer": "apple",
+      "bits": null,
+      "type": "email-client"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.0.3",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "604.1.38",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_3 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) CriOS/56.0.2924.79 Mobile/15A432 Safari/602.1"
+    },
+    "device": {
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome for iOS",
+      "modus": null,
+      "version": "56.0.2924.79",
+      "manufacturer": "google",
       "bits": null,
       "type": "browser"
     },
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "9.1.0",
+      "version": "11.0.3",
       "manufacturer": "apple",
       "bits": null
     },
     "engine": {
       "name": "WebKit",
-      "version": "601.1.46",
+      "version": "602.1.50",
       "manufacturer": "apple"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_2 like Mac OS X; en) AppleWebKit/601.1.46 (KHTML, like Gecko) Coast/5.04.110603 Mobile/13F69 Safari/7534.48.3"
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Coast/5.04.110603 Mobile/15A372 Safari/7534.48.3"
     },
     "device": {
       "deviceName": "iPhone",
@@ -2231,23 +1243,61 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "9.3.2",
+      "version": "11.0.0",
       "manufacturer": "apple",
       "bits": null
     },
     "engine": {
       "name": "WebKit",
-      "version": "601.1.46",
+      "version": "604.1.38",
       "manufacturer": "apple"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_3 like Mac OS X) AppleWebKit/603.1.20 (KHTML, like Gecko) Mobile/14E5230e [FBAN/FBIOS;FBAV/53.0.0.36.140;FBBV/27547874;FBRV/0;FBDV/iPhone6,1;FBMD/iPhone;FBSN/iPhone OS;FBSV/10.3;FBSS/2;FBCR/Sprint;FBID/phone;FBLC/en_US;FBOP/5]"
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_3 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) GSA/24.1.151204851 Mobile/15A432 Safari/602.1"
     },
     "device": {
-      "deviceName": "iPhone 6,1",
-      "marketingName": "iPhone 5S",
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Google App",
+      "modus": null,
+      "version": "24.1.151204851",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.0.3",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "602.1.50",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_3 like Mac OS X) AppleWebKit/603.3.8 (KHTML, like Gecko) Mobile/14G60 [FBAN/FBIOS;FBAV/147.0.0.46.81;FBBV/76961488;FBDV/iPhone5,2;FBMD/iPhone;FBSN/iOS;FBSV/10.3.3;FBSS/2;FBCR/Vodafone.de;FBID/phone;FBLC/de_DE;FBOP/5;FBRV/76961488]"
+    },
+    "device": {
+      "deviceName": "iPhone 5,2",
+      "marketingName": "iPhone 5",
       "manufacturer": "apple",
       "brand": "apple",
       "display": {
@@ -2261,7 +1311,7 @@
     "browser": {
       "name": "Facebook App",
       "modus": null,
-      "version": "53.0.0.36.140",
+      "version": "147.0.0.46.81",
       "manufacturer": "facebook",
       "bits": null,
       "type": "application"
@@ -2269,19 +1319,57 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "10.3.0-beta+1",
+      "version": "10.3.3",
       "manufacturer": "apple",
       "bits": null
     },
     "engine": {
       "name": "WebKit",
-      "version": "603.1.20",
+      "version": "603.3.8",
       "manufacturer": "apple"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_3 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) CriOS/55.0.2883.79 Mobile/14E5230e Safari/602.1"
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_3 like Mac OS X) AppleWebKit/603.3.8 (KHTML, like Gecko) Mobile/14G60 [FBAN/FBIOS;FBAV/147.0.0.46.81;FBBV/76961488;FBDV/iPhone7,2;FBMD/iPhone;FBSN/iOS;FBSV/10.3.3;FBSS/2;FBCR/E-Plus;FBID/phone;FBLC/tr_TR;FBOP/5;FBRV/76961488]"
+    },
+    "device": {
+      "deviceName": "iPhone 7,2",
+      "marketingName": "iPhone 6",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 1334,
+        "height": 750,
+        "touch": true,
+        "size": 4.7
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "147.0.0.46.81",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "10.3.3",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "603.3.8",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 11_1 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) CriOS/55.0.2883.79 Mobile/15B93 Safari/602.1"
     },
     "device": {
       "deviceName": "iPhone",
@@ -2307,7 +1395,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "10.3.0-beta+1",
+      "version": "11.1.0-beta+5",
       "manufacturer": "apple",
       "bits": null
     },
@@ -2319,87 +1407,11 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU OS 10_3 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) 1Password/6.5.3 (like Version/10.3 Mobile/14E5277a Safari/600.1.4)"
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_3 like Mac OS X) AppleWebKit/603.3.8 (KHTML, like Gecko) Mobile/14G60 [FBAN/FBIOS;FBAV/146.0.0.73.91;FBBV/75938921;FBDV/iPhone9,3;FBMD/iPhone;FBSN/iOS;FBSV/10.3.3;FBSS/2;FBCR/o2-de;FBID/phone;FBLC/pl_PL;FBOP/5;FBRV/75938921]"
     },
     "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "1Password",
-      "modus": null,
-      "version": "6.5.3",
-      "manufacturer": "agile-bits",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "10.3.0-beta+7",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "600.1.4",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU OS 10_2_1 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) 1Password/6.5.3 (like Version/10.2.1 Mobile/14D27 Safari/600.1.4)"
-    },
-    "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "1Password",
-      "modus": null,
-      "version": "6.5.3",
-      "manufacturer": "agile-bits",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "10.2.1",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "600.1.4",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_1 like Mac OS X) AppleWebKit/602.2.14 (KHTML, like Gecko) Mobile/14B72 Instagram 10.11.0 (iPhone8,1; iOS 10_1; en_US; en-US; scale=2.00; gamut=normal; 750x1334)"
-    },
-    "device": {
-      "deviceName": "iPhone 8,1",
-      "marketingName": "iPhone 6S",
+      "deviceName": "iPhone 9,3",
+      "marketingName": "iPhone 7",
       "manufacturer": "apple",
       "brand": "apple",
       "display": {
@@ -2411,9 +1423,9 @@
       "type": "smartphone"
     },
     "browser": {
-      "name": "Instagram App",
+      "name": "Facebook App",
       "modus": null,
-      "version": "10.11.0",
+      "version": "146.0.0.73.91",
       "manufacturer": "facebook",
       "bits": null,
       "type": "application"
@@ -2421,19 +1433,57 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "10.1.0",
+      "version": "10.3.3",
       "manufacturer": "apple",
       "bits": null
     },
     "engine": {
       "name": "WebKit",
-      "version": "602.2.14",
+      "version": "603.3.8",
       "manufacturer": "apple"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_3 like Mac OS X) AppleWebKit/603.1.23 (KHTML, like Gecko) Mobile/14E5239e Instagram 10.8.0 (iPhone7,2; iOS 10_3; en_US; en-US; scale=2.00; gamut=normal; 750x1334)"
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 11_1 like Mac OS X) AppleWebKit/604.3.5 (KHTML, like Gecko) Mobile/15B93 [FBAN/FBIOS;FBAV/148.0.0.45.64;FBBV/78032376;FBDV/iPhone9,3;FBMD/iPhone;FBSN/iOS;FBSV/11.1;FBSS/2;FBCR/1&1;FBID/phone;FBLC/de_DE;FBOP/5;FBRV/0]"
+    },
+    "device": {
+      "deviceName": "iPhone 9,3",
+      "marketingName": "iPhone 7",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 1334,
+        "height": 750,
+        "touch": true,
+        "size": 4.7
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "148.0.0.45.64",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.1.0-beta+5",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "604.3.5",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_3 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Mobile/15A432 [FBAN/FBIOS;FBAV/148.0.0.45.64;FBBV/78032376;FBDV/iPhone7,2;FBMD/iPhone;FBSN/iOS;FBSV/11.0.3;FBSS/2;FBCR/o2-de;FBID/phone;FBLC/de_DE;FBOP/5;FBRV/78032376]"
     },
     "device": {
       "deviceName": "iPhone 7,2",
@@ -2449,9 +1499,9 @@
       "type": "smartphone"
     },
     "browser": {
-      "name": "Instagram App",
+      "name": "Facebook App",
       "modus": null,
-      "version": "10.8.0",
+      "version": "148.0.0.45.64",
       "manufacturer": "facebook",
       "bits": null,
       "type": "application"
@@ -2459,95 +1509,19 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "10.3.0-beta+2",
+      "version": "11.0.3",
       "manufacturer": "apple",
       "bits": null
     },
     "engine": {
       "name": "WebKit",
-      "version": "603.1.23",
+      "version": "604.1.38",
       "manufacturer": "apple"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 8_0_2 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Mobile/12A405 Instagram 7.4.0 (iPhone6,1; iPhone OS 8_0_2; en_US; en)"
-    },
-    "device": {
-      "deviceName": "iPhone 6,1",
-      "marketingName": "iPhone 5S",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 1136,
-        "height": 640,
-        "touch": true,
-        "size": 4
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "7.4.0",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "8.0.2",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "600.1.4",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 8_1 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Mobile/12B411 Instagram 10.4.0 (iPhone7,2; iPhone OS 8_1; en_US; en; scale=2.00; gamut=normal; 750x1334)"
-    },
-    "device": {
-      "deviceName": "iPhone 7,2",
-      "marketingName": "iPhone 6",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 1334,
-        "height": 750,
-        "touch": true,
-        "size": 4.7
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "10.4.0",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "8.1.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "600.1.4",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 8_4_1 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Mobile/12H321 Instagram 10.7.0 (iPhone6,2; iPhone OS 8_4_1; he_US; he; scale=2.00; gamut=normal; 640x1136)"
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_2 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Mobile/15A421 [FBAN/FBIOS;FBAV/148.0.0.45.64;FBBV/78032376;FBDV/iPhone6,2;FBMD/iPhone;FBSN/iOS;FBSV/11.0.2;FBSS/2;FBCR/E-Plus;FBID/phone;FBLC/de_DE;FBOP/5;FBRV/79551509]"
     },
     "device": {
       "deviceName": "iPhone 6,2",
@@ -2563,9 +1537,9 @@
       "type": "smartphone"
     },
     "browser": {
-      "name": "Instagram App",
+      "name": "Facebook App",
       "modus": null,
-      "version": "10.7.0",
+      "version": "148.0.0.45.64",
       "manufacturer": "facebook",
       "bits": null,
       "type": "application"
@@ -2573,23 +1547,99 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "8.4.1",
+      "version": "11.0.2",
       "manufacturer": "apple",
       "bits": null
     },
     "engine": {
       "name": "WebKit",
-      "version": "600.1.4",
+      "version": "604.1.38",
       "manufacturer": "apple"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13B143 Instagram 10.3.0 (iPhone5,4; iPhone OS 9_1; nl_BE; nl-BE; scale=2.00; gamut=normal; 640x1136)"
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_3 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) FxiOS/10.1b7709 Mobile/15A432 Safari/604.1.38"
     },
     "device": {
-      "deviceName": "iPhone 5,4",
-      "marketingName": "iPhone 5C",
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Firefox Mobile for iOS",
+      "modus": null,
+      "version": "10.1.0-beta+7709",
+      "manufacturer": "mozilla-foundation",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.0.3",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "604.1.38",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 11_1 like Mac OS X) AppleWebKit/604.3.5 (KHTML, like Gecko) Mobile/15B93 [FBAN/FBIOS;FBAV/148.0.0.45.64;FBBV/78032376;FBDV/iPhone8,1;FBMD/iPhone;FBSN/iOS;FBSV/11.1;FBSS/2;FBCR/Vodafone.de;FBID/phone;FBLC/de_DE;FBOP/5;FBRV/0]"
+    },
+    "device": {
+      "deviceName": "iPhone 8,1",
+      "marketingName": "iPhone 6S",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 1334,
+        "height": 750,
+        "touch": true,
+        "size": 4.7
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "148.0.0.45.64",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.1.0-beta+5",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "604.3.5",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_3 like Mac OS X) AppleWebKit/603.3.8 (KHTML, like Gecko) Mobile/14G60 [FBAN/FBIOS;FBAV/81.0.0.63.70;FBBV/50791291;FBRV/0;FBDV/iPhone5,1;FBMD/iPhone;FBSN/iOS;FBSV/10.3.3;FBSS/2;FBCR/Vodafone.de;FBID/phone;FBLC/de_DE;FBOP/5]"
+    },
+    "device": {
+      "deviceName": "iPhone 5,1",
+      "marketingName": "iPhone 5",
       "manufacturer": "apple",
       "brand": "apple",
       "display": {
@@ -2601,9 +1651,47 @@
       "type": "smartphone"
     },
     "browser": {
-      "name": "Instagram App",
+      "name": "Facebook App",
       "modus": null,
-      "version": "10.3.0",
+      "version": "81.0.0.63.70",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "10.3.3",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "603.3.8",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13B143 [FBAN/FBIOS;FBAV/86.0.0.48.52;FBBV/53842252;FBDV/iPhone8,1;FBMD/iPhone;FBSN/iPhone OS;FBSV/9.1;FBSS/2;FBCR/Telekom.de;FBID/phone;FBLC/de_DE;FBOP/5;FBRV/0]"
+    },
+    "device": {
+      "deviceName": "iPhone 8,1",
+      "marketingName": "iPhone 6S",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 1334,
+        "height": 750,
+        "touch": true,
+        "size": 4.7
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "86.0.0.48.52",
       "manufacturer": "facebook",
       "bits": null,
       "type": "application"
@@ -2623,11 +1711,11 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 9_2_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13D15 Instagram 7.9.0 (iPhone5,3; iPhone OS 9_2_1; en_US; en-US; scale=2.00; 640x1136)"
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 7_0_4 like Mac OS X) AppleWebKit/537.51.1 (KHTML, like Gecko) Mobile/11B554a iPhone6,1 BingWeb/5.4.917.20150129"
     },
     "device": {
-      "deviceName": "iPhone 5,3",
-      "marketingName": "iPhone 5C",
+      "deviceName": "iPhone 6,1",
+      "marketingName": "iPhone 5S",
       "manufacturer": "apple",
       "brand": "apple",
       "display": {
@@ -2639,17 +1727,207 @@
       "type": "smartphone"
     },
     "browser": {
-      "name": "Instagram App",
+      "name": "BingWeb App",
       "modus": null,
-      "version": "7.9.0",
-      "manufacturer": "facebook",
+      "version": "5.4.917.20150129",
+      "manufacturer": "microsoft",
       "bits": null,
       "type": "application"
     },
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "9.2.1",
+      "version": "7.0.4",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.51.1",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_2_1 like Mac OS X) AppleWebKit/600.1.3 (KHTML, like Gecko) Version/8.0 Mobile/12A4345d Safari/600.1.4 iphone6 BingWeb/6.11.3.0"
+    },
+    "device": {
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "BingWeb App",
+      "modus": null,
+      "version": "6.11.3.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "8.0.0-beta+5",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "600.1.3",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 11_1_1 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) CriOS/57.0.2987.100 Mobile/15B150 Safari/602.1"
+    },
+    "device": {
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome for iOS",
+      "modus": null,
+      "version": "57.0.2987.100",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.1.1",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "602.1.50",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 11_1 like Mac OS X) AppleWebKit/604.1.34 (KHTML, like Gecko) GSA/39.0.175034278 Mobile/15B93 Safari/604.1"
+    },
+    "device": {
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Google App",
+      "modus": null,
+      "version": "39.0.175034278",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.1.0-beta+5",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "604.1.34",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_3 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) GSA/39.0.175034278 Mobile/14G60 Safari/602.1"
+    },
+    "device": {
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Google App",
+      "modus": null,
+      "version": "39.0.175034278",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "10.3.3",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "602.1.50",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_3 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) GSA/39.0.175034278 Mobile/13G34 Safari/601.1"
+    },
+    "device": {
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Google App",
+      "modus": null,
+      "version": "39.0.175034278",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "9.3.3",
       "manufacturer": "apple",
       "bits": null
     },
@@ -2661,7 +1939,83 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13E238 Instagram 10.3.0 (iPhone6,2; iPhone OS 9_3_1; de_AT; de-AT; scale=2.00; gamut=normal; 640x1136)"
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_3 like Mac OS X) AppleWebKit/603.3.8 (KHTML, like Gecko) FxiOS/10.1b7709 Mobile/14G60 Safari/603.3.8"
+    },
+    "device": {
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Firefox Mobile for iOS",
+      "modus": null,
+      "version": "10.1.0-beta+7709",
+      "manufacturer": "mozilla-foundation",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "10.3.3",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "603.3.8",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_3 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Mobile/15A432 [FBAN/FBIOS;FBAV/149.0.0.39.64;FBBV/79173879;FBDV/iPhone8,1;FBMD/iPhone;FBSN/iOS;FBSV/11.0.3;FBSS/2;FBCR/o2-de;FBID/phone;FBLC/tr_TR;FBOP/5;FBRV/79173879]"
+    },
+    "device": {
+      "deviceName": "iPhone 8,1",
+      "marketingName": "iPhone 6S",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 1334,
+        "height": 750,
+        "touch": true,
+        "size": 4.7
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "149.0.0.39.64",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.0.3",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "604.1.38",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 11_1_1 like Mac OS X) AppleWebKit/604.3.5 (KHTML, like Gecko) Mobile/15B150 [FBAN/FBIOS;FBAV/150.0.0.32.132;FBBV/80278251;FBDV/iPhone6,2;FBMD/iPhone;FBSN/iOS;FBSV/11.1.1;FBSS/2;FBCR/E-Plus;FBID/phone;FBLC/de_DE;FBOP/5;FBRV/80278251]"
     },
     "device": {
       "deviceName": "iPhone 6,2",
@@ -2677,9 +2031,1719 @@
       "type": "smartphone"
     },
     "browser": {
-      "name": "Instagram App",
+      "name": "Facebook App",
       "modus": null,
-      "version": "10.3.0",
+      "version": "150.0.0.32.132",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.1.1",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "604.3.5",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 11_1_1 like Mac OS X) AppleWebKit/604.3.5 (KHTML, like Gecko) Mobile/15B150 [FBAN/FBIOS;FBAV/150.0.0.32.132;FBBV/80278251;FBDV/iPhone9,3;FBMD/iPhone;FBSN/iOS;FBSV/11.1.1;FBSS/2;FBCR/o2-de;FBID/phone;FBLC/de_DE;FBOP/5;FBRV/80278251]"
+    },
+    "device": {
+      "deviceName": "iPhone 9,3",
+      "marketingName": "iPhone 7",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 1334,
+        "height": 750,
+        "touch": true,
+        "size": 4.7
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "150.0.0.32.132",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.1.1",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "604.3.5",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_3 like Mac OS X) AppleWebKit/603.3.8 (KHTML, like Gecko) Mobile/14G60 [FBAN/FBIOS;FBAV/150.0.0.32.132;FBBV/80278251;FBDV/iPhone8,1;FBMD/iPhone;FBSN/iOS;FBSV/10.3.3;FBSS/2;FBCR/E-Plus;FBID/phone;FBLC/en_GB;FBOP/5;FBRV/80278251]"
+    },
+    "device": {
+      "deviceName": "iPhone 8,1",
+      "marketingName": "iPhone 6S",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 1334,
+        "height": 750,
+        "touch": true,
+        "size": 4.7
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "150.0.0.32.132",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "10.3.3",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "603.3.8",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_3 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Mobile/15A432 [FBAN/FBIOS;FBAV/150.0.0.32.132;FBBV/80278251;FBDV/iPhone10,4;FBMD/iPhone;FBSN/iOS;FBSV/11.0.3;FBSS/2;FBCR/Vodafone.de;FBID/phone;FBLC/de_DE;FBOP/5;FBRV/80278251]"
+    },
+    "device": {
+      "deviceName": "iPhone 10,4",
+      "marketingName": "iPhone 8",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 1334,
+        "height": 750,
+        "touch": true,
+        "size": 4.7
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "150.0.0.32.132",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.0.3",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "604.1.38",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 11_1_2 like Mac OS X) AppleWebKit/604.3.5 (KHTML, like Gecko) Mobile/15B202 [FBAN/FBIOS;FBAV/150.0.0.32.132;FBBV/80278251;FBDV/iPhone7,2;FBMD/iPhone;FBSN/iOS;FBSV/11.1.2;FBSS/2;FBCR/Vodafone.de;FBID/phone;FBLC/en_GB;FBOP/5;FBRV/0]"
+    },
+    "device": {
+      "deviceName": "iPhone 7,2",
+      "marketingName": "iPhone 6",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 1334,
+        "height": 750,
+        "touch": true,
+        "size": 4.7
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "150.0.0.32.132",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.1.1",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "604.3.5",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_3 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) GSA/25.0.152548370 Mobile/15A432 Safari/602.1"
+    },
+    "device": {
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Google App",
+      "modus": null,
+      "version": "25.0.152548370",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.0.3",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "602.1.50",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_3 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Mobile/15A432 [FBAN/FBIOS;FBAV/149.0.0.39.64;FBBV/79173879;FBDV/iPhone7,2;FBMD/iPhone;FBSN/iOS;FBSV/11.0.3;FBSS/2;FBCR/Vodafone.de;FBID/phone;FBLC/hu_HU;FBOP/5;FBRV/0]"
+    },
+    "device": {
+      "deviceName": "iPhone 7,2",
+      "marketingName": "iPhone 6",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 1334,
+        "height": 750,
+        "touch": true,
+        "size": 4.7
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "149.0.0.39.64",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.0.3",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "604.1.38",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_2_1 like Mac OS X) AppleWebKit/602.4.6 (KHTML, like Gecko) Mobile/14D27 (Ecosia ios@3.0.1.533)"
+    },
+    "device": {
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Ecosia",
+      "modus": null,
+      "version": "3.0.1.533",
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "10.2.1",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "602.4.6",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 11_1_2 like Mac OS X) AppleWebKit/604.3.5 (KHTML, like Gecko) Mobile/15B202 [FBAN/FBIOS;FBAV/150.0.0.32.132;FBBV/80278251;FBDV/iPhone8,1;FBMD/iPhone;FBSN/iOS;FBSV/11.1.2;FBSS/2;FBCR/E-Plus;FBID/phone;FBLC/en_GB;FBOP/5;FBRV/0]"
+    },
+    "device": {
+      "deviceName": "iPhone 8,1",
+      "marketingName": "iPhone 6S",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 1334,
+        "height": 750,
+        "touch": true,
+        "size": 4.7
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "150.0.0.32.132",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.1.1",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "604.3.5",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "com.google.GoogleMobile/39.0.0 iPhone/11.1.2 hw/iPhone8_4"
+    },
+    "device": {
+      "deviceName": "iPhone 8,4",
+      "marketingName": "iPhone SE",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 1334,
+        "height": 750,
+        "touch": true,
+        "size": 4
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Google Mobile App",
+      "modus": null,
+      "version": "39.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.1.2",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "com.google.GoogleMobile/39.0.0 iPhone/11.1.2 hw/iPhone7_2"
+    },
+    "device": {
+      "deviceName": "iPhone 7,2",
+      "marketingName": "iPhone 6",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 1334,
+        "height": 750,
+        "touch": true,
+        "size": 4.7
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Google Mobile App",
+      "modus": null,
+      "version": "39.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.1.2",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 11_1 like Mac OS X) AppleWebKit/604.3.5 (KHTML, like Gecko) Mobile/15B93 (Ecosia ios@3.0.1.533)"
+    },
+    "device": {
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Ecosia",
+      "modus": null,
+      "version": "3.0.1.533",
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.1.0-beta+5",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "604.3.5",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 11_1_1 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) LinkedIn/9.10.1248.2 Version/10.0 Mobile/15B150 Safari/602.1"
+    },
+    "device": {
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Safari",
+      "modus": null,
+      "version": "10.0.0",
+      "manufacturer": "apple",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.1.1",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "602.1.50",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_3 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) GSA/8.0.57838 Mobile/15A432 Safari/600.1.4"
+    },
+    "device": {
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Google App",
+      "modus": null,
+      "version": "8.0.57838",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.0.3",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "600.1.4",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "QwantMobile/2.0 (iPhone; CPU iPhone OS 11_1_2 like Mac OS X) AppleWebKit/604.3.5 (KHTML, like Gecko) QwantiOS/2.0.0b1 Mobile/15B202 Safari/604.3.5"
+    },
+    "device": {
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Safari",
+      "modus": null,
+      "version": "5.0.0",
+      "manufacturer": "apple",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.1.1",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "604.3.5",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "com.google.GoogleMobile/39.0.0 iPhone/11.1.2 hw/iPhone6_2"
+    },
+    "device": {
+      "deviceName": "iPhone 6,2",
+      "marketingName": "iPhone 5S",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 1136,
+        "height": 640,
+        "touch": true,
+        "size": 4
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Google Mobile App",
+      "modus": null,
+      "version": "39.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.1.2",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_3 like Mac OS X) AppleWebKit/603.3.8 (KHTML, like Gecko) Mobile/14G60 [FBAN/FBIOS;FBAV/150.0.0.32.132;FBBV/80278251;FBDV/iPhone5,2;FBMD/iPhone;FBSN/iOS;FBSV/10.3.3;FBSS/2;FBCR/Telekom.de;FBID/phone;FBLC/de_DE;FBOP/5;FBRV/0]"
+    },
+    "device": {
+      "deviceName": "iPhone 5,2",
+      "marketingName": "iPhone 5",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 1136,
+        "height": 640,
+        "touch": true,
+        "size": 4
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "150.0.0.32.132",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "10.3.3",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "603.3.8",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 11_1_2 like Mac OS X) AppleWebKit/604.1.34 (KHTML, like Gecko) GSA/40.1.177082287 Mobile/15B202 Safari/604.1"
+    },
+    "device": {
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Google App",
+      "modus": null,
+      "version": "40.1.177082287",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.1.1",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "604.1.34",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_2 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) GSA/40.1.177082287 Mobile/14F89 Safari/602.1"
+    },
+    "device": {
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Google App",
+      "modus": null,
+      "version": "40.1.177082287",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "10.3.2",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "602.1.50",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 11_2 like Mac OS X) AppleWebKit/604.4.7 (KHTML, like Gecko) Mobile/15C114 [FBAN/FBIOS;FBAV/151.0.0.61.202;FBBV/82156572;FBDV/iPhone9,3;FBMD/iPhone;FBSN/iOS;FBSV/11.2;FBSS/2;FBCR/Vodafone.de;FBID/phone;FBLC/de_DE;FBOP/5;FBRV/82156572]"
+    },
+    "device": {
+      "deviceName": "iPhone 9,3",
+      "marketingName": "iPhone 7",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 1334,
+        "height": 750,
+        "touch": true,
+        "size": 4.7
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "151.0.0.61.202",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.2.0",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "604.4.7",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_3 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) GSA/17.0.128207670 Mobile/15A432 Safari/600.1.4"
+    },
+    "device": {
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Google App",
+      "modus": null,
+      "version": "17.0.128207670",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.0.3",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "600.1.4",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_3 like Mac OS X) AppleWebKit/603.3.8 (KHTML, like Gecko) AlohaBrowser/2.0.3b5 Mobile/14G60"
+    },
+    "device": {
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Aloha Browser",
+      "modus": null,
+      "version": "2.0.3-beta+5",
+      "manufacturer": "aloha-mobile",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "10.3.3",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "603.3.8",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; U; CPU iPhone OS) (compatible; Googlebot-Mobile/2.1;  http://www.google.com/bot.html)"
+    },
+    "device": {
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Google Bot Mobile",
+      "modus": null,
+      "version": "2.1.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "bot"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": null,
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_2 like Mac OS X) AppleWebKit/603.2.4 (KHTML, like Gecko) Mobile/14F89 [FBAN/FBIOS;FBAV/148.0.0.45.64;FBBV/78032376;FBDV/iPhone8,1;FBMD/iPhone;FBSN/iOS;FBSV/10.3.2;FBSS/2;FBCR/Vodafone.de;FBID/phone;FBLC/de_DE;FBOP/5;FBRV/0]"
+    },
+    "device": {
+      "deviceName": "iPhone 8,1",
+      "marketingName": "iPhone 6S",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 1334,
+        "height": 750,
+        "touch": true,
+        "size": 4.7
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "148.0.0.45.64",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "10.3.2",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "603.2.4",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_1_1 like Mac OS X) AppleWebKit/602.2.14 (KHTML, like Gecko) Mobile/14B100 [FBAN/FBIOS;FBAV/146.0.0.73.91;FBBV/75938921;FBDV/iPhone5,2;FBMD/iPhone;FBSN/iOS;FBSV/10.1.1;FBSS/2;FBCR/E-Plus;FBID/phone;FBLC/de_DE;FBOP/5;FBRV/75938921]"
+    },
+    "device": {
+      "deviceName": "iPhone 5,2",
+      "marketingName": "iPhone 5",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 1136,
+        "height": 640,
+        "touch": true,
+        "size": 4
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "146.0.0.73.91",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "10.1.1",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "602.2.14",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 11_1_1 like Mac OS X) AppleWebKit/604.3.5 (KHTML, like Gecko) Mobile/15B150 [FBAN/FBIOS;FBAV/150.0.0.32.132;FBBV/80278251;FBDV/iPhone8,4;FBMD/iPhone;FBSN/iOS;FBSV/11.1.1;FBSS/2;FBCR/1&1;FBID/phone;FBLC/de_DE;FBOP/5;FBRV/81545913]"
+    },
+    "device": {
+      "deviceName": "iPhone 8,4",
+      "marketingName": "iPhone SE",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 1334,
+        "height": 750,
+        "touch": true,
+        "size": 4
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "150.0.0.32.132",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.1.1",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "604.3.5",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 11_1_1 like Mac OS X) AppleWebKit/604.3.5 (KHTML, like Gecko) AlohaBrowser/2.0.3b5 Mobile/15B150"
+    },
+    "device": {
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Aloha Browser",
+      "modus": null,
+      "version": "2.0.3-beta+5",
+      "manufacturer": "aloha-mobile",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.1.1",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "604.3.5",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "com.google.GoogleMobile/40.1.0 iPhone/11.1.1 hw/iPhone6_2"
+    },
+    "device": {
+      "deviceName": "iPhone 6,2",
+      "marketingName": "iPhone 5S",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 1136,
+        "height": 640,
+        "touch": true,
+        "size": 4
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Google Mobile App",
+      "modus": null,
+      "version": "40.1.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.1.1",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 11_1_2 like Mac OS X) AppleWebKit/604.3.5 (KHTML, like Gecko) Mobile/15B202 [FBAN/FBIOS;FBAV/151.0.0.61.202;FBBV/82156572;FBDV/iPhone8,1;FBMD/iPhone;FBSN/iOS;FBSV/11.1.2;FBSS/2;FBCR/1&1;FBID/phone;FBLC/de_DE;FBOP/5;FBRV/0]"
+    },
+    "device": {
+      "deviceName": "iPhone 8,1",
+      "marketingName": "iPhone 6S",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 1334,
+        "height": 750,
+        "touch": true,
+        "size": 4.7
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "151.0.0.61.202",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.1.1",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "604.3.5",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_5 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) GSA/40.1.177082287 Mobile/13G36 Safari/601.1"
+    },
+    "device": {
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Google App",
+      "modus": null,
+      "version": "40.1.177082287",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "9.3.5",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "601.1.46",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Mobile/14E304 (Ecosia ios@3.0.1.533)"
+    },
+    "device": {
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Ecosia",
+      "modus": null,
+      "version": "3.0.1.533",
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "10.3.1",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "603.1.30",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 11_1_2 like Mac OS X) AppleWebKit/604.3.5 (KHTML, like Gecko) Mobile/15B202 [FBAN/FBIOS;FBAV/151.0.0.61.202;FBBV/82156572;FBDV/iPhone10,4;FBMD/iPhone;FBSN/iOS;FBSV/11.1.2;FBSS/2;FBCR/Telekom.de;FBID/phone;FBLC/de_DE;FBOP/5;FBRV/83160404]"
+    },
+    "device": {
+      "deviceName": "iPhone 10,4",
+      "marketingName": "iPhone 8",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 1334,
+        "height": 750,
+        "touch": true,
+        "size": 4.7
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "151.0.0.61.202",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.1.1",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "604.3.5",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 11_2 like Mac OS X) AppleWebKit/604.4.7 (KHTML, like Gecko) Mobile/15C114 [FBAN/FBIOS;FBAV/151.0.0.61.202;FBBV/82156572;FBDV/iPhone7,2;FBMD/iPhone;FBSN/iOS;FBSV/11.2;FBSS/2;FBCR/Telekom.de;FBID/phone;FBLC/de_DE;FBOP/5;FBRV/0]"
+    },
+    "device": {
+      "deviceName": "iPhone 7,2",
+      "marketingName": "iPhone 6",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 1334,
+        "height": 750,
+        "touch": true,
+        "size": 4.7
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "151.0.0.61.202",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.2.0",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "604.4.7",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_3 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) GSA/15.1.122860578 Mobile/15A432 Safari/600.1.4"
+    },
+    "device": {
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Google App",
+      "modus": null,
+      "version": "15.1.122860578",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.0.3",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "600.1.4",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_3 like Mac OS X) AppleWebKit/603.3.8 (KHTML, like Gecko) Mobile/14G60 [FBAN/FBIOS;FBAV/151.0.0.61.202;FBBV/82156572;FBDV/iPhone7,2;FBMD/iPhone;FBSN/iOS;FBSV/10.3.3;FBSS/2;FBCR/Vodafone.de;FBID/phone;FBLC/de_DE;FBOP/5;FBRV/83160404]"
+    },
+    "device": {
+      "deviceName": "iPhone 7,2",
+      "marketingName": "iPhone 6",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 1334,
+        "height": 750,
+        "touch": true,
+        "size": 4.7
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "151.0.0.61.202",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "10.3.3",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "603.3.8",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 11_1_2 like Mac OS X) AppleWebKit/604.3.5 (KHTML, like Gecko) Mobile/15B202 [FBAN/FBIOS;FBAV/151.0.0.61.202;FBBV/82156572;FBDV/iPhone8,4;FBMD/iPhone;FBSN/iOS;FBSV/11.1.2;FBSS/2;FBCR/Telekom.de;FBID/phone;FBLC/de_DE;FBOP/5;FBRV/83319780]"
+    },
+    "device": {
+      "deviceName": "iPhone 8,4",
+      "marketingName": "iPhone SE",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 1334,
+        "height": 750,
+        "touch": true,
+        "size": 4
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "151.0.0.61.202",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.1.1",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "604.3.5",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_0_2 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Mobile/14A456 [FBAN/FBIOS;FBAV/90.0.0.51.69;FBBV/56254015;FBDV/iPhone6,2;FBMD/iPhone;FBSN/iOS;FBSV/10.0.2;FBSS/2;FBCR/E-Plus;FBID/phone;FBLC/de_DE;FBOP/5;FBRV/56885534]"
+    },
+    "device": {
+      "deviceName": "iPhone 6,2",
+      "marketingName": "iPhone 5S",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 1136,
+        "height": 640,
+        "touch": true,
+        "size": 4
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "90.0.0.51.69",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "10.0.2",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "602.1.50",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 11_1_2 like Mac OS X) AppleWebKit/604.3.5 (KHTML, like Gecko) Mobile/15B202 [FBAN/FBIOS;FBAV/151.0.0.61.202;FBBV/82156572;FBDV/iPhone6,2;FBMD/iPhone;FBSN/iOS;FBSV/11.1.2;FBSS/2;FBCR/E-Plus;FBID/phone;FBLC/de_DE;FBOP/5;FBRV/83319780]"
+    },
+    "device": {
+      "deviceName": "iPhone 6,2",
+      "marketingName": "iPhone 5S",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 1136,
+        "height": 640,
+        "touch": true,
+        "size": 4
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "151.0.0.61.202",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.1.1",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "604.3.5",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_5 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G36 [FBAN/FBIOS;FBAV/57.0.0.41.136;FBBV/31395714;FBRV/0;FBDV/iPhone4,1;FBMD/iPhone;FBSN/iPhone OS;FBSV/9.3.5;FBSS/2;FBCR/Vodafone.de;FBID/phone;FBLC/de_DE;FBOP/5]"
+    },
+    "device": {
+      "deviceName": "iPhone 4,1",
+      "marketingName": "iPhone 4S",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 960,
+        "height": 640,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "57.0.0.41.136",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "9.3.5",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "601.1.46",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_2_1 like Mac OS X) AppleWebKit/602.4.6 (KHTML, like Gecko) Mobile/14D27 [FBAN/FBIOS;FBAV/147.0.0.46.81;FBBV/76961488;FBDV/iPhone8,1;FBMD/iPhone;FBSN/iOS;FBSV/10.2.1;FBSS/2;FBCR/Vodafone.de;FBID/phone;FBLC/de_DE;FBOP/5;FBRV/76961488]"
+    },
+    "device": {
+      "deviceName": "iPhone 8,1",
+      "marketingName": "iPhone 6S",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 1334,
+        "height": 750,
+        "touch": true,
+        "size": 4.7
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "147.0.0.46.81",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "10.2.1",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "602.4.6",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_3 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Mobile/15A432 [FBAN/FBIOS;FBAV/149.0.0.39.64;FBBV/79173879;FBDV/iPhone9,3;FBMD/iPhone;FBSN/iOS;FBSV/11.0.3;FBSS/2;FBCR/Telekom.de;FBID/phone;FBLC/de_DE;FBOP/5;FBRV/80647340]"
+    },
+    "device": {
+      "deviceName": "iPhone 9,3",
+      "marketingName": "iPhone 7",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 1334,
+        "height": 750,
+        "touch": true,
+        "size": 4.7
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "149.0.0.39.64",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.0.3",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "604.1.38",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_2 like Mac OS X) AppleWebKit/602.3.12 (KHTML, like Gecko) Mobile/14C92 [FBAN/FBIOS;FBAV/150.0.0.32.132;FBBV/80278251;FBDV/iPhone8,4;FBMD/iPhone;FBSN/iOS;FBSV/10.2;FBSS/2;FBCR/Vodafone.de;FBID/phone;FBLC/de_DE;FBOP/5;FBRV/82362498]"
+    },
+    "device": {
+      "deviceName": "iPhone 8,4",
+      "marketingName": "iPhone SE",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 1334,
+        "height": 750,
+        "touch": true,
+        "size": 4
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "150.0.0.32.132",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "10.2.0",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "602.3.12",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_2 like Mac OS X) AppleWebKit/603.2.4 (KHTML, like Gecko) Mobile/14F89 [FBAN/FBIOS;FBAV/151.0.0.61.202;FBBV/82156572;FBDV/iPhone8,1;FBMD/iPhone;FBSN/iOS;FBSV/10.3.2;FBSS/2;FBCR/Vodafone.de;FBID/phone;FBLC/de_DE;FBOP/5;FBRV/83319780]"
+    },
+    "device": {
+      "deviceName": "iPhone 8,1",
+      "marketingName": "iPhone 6S",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 1334,
+        "height": 750,
+        "touch": true,
+        "size": 4.7
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "151.0.0.61.202",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "10.3.2",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "603.2.4",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 11_1_2 like Mac OS X) AppleWebKit/604.3.5 (KHTML, like Gecko) Mobile/15B202 [FBAN/FBIOS;FBAV/137.0.0.44.48;FBBV/68333368;FBDV/iPhone7,2;FBMD/iPhone;FBSN/iOS;FBSV/11.1.2;FBSS/2;FBCR/Vodafone.de;FBID/phone;FBLC/de_DE;FBOP/5;FBRV/69203816]"
+    },
+    "device": {
+      "deviceName": "iPhone 7,2",
+      "marketingName": "iPhone 6",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 1334,
+        "height": 750,
+        "touch": true,
+        "size": 4.7
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "137.0.0.44.48",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.1.1",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "604.3.5",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_3 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Mobile/15A432 [FBAN/FBIOS;FBAV/88.1.0.64.70;FBBV/55330959;FBDV/iPhone7,2;FBMD/iPhone;FBSN/iOS;FBSV/11.0.3;FBSS/2;FBCR/Telekom.de;FBID/phone;FBLC/de_DE;FBOP/5;FBRV/55506002]"
+    },
+    "device": {
+      "deviceName": "iPhone 7,2",
+      "marketingName": "iPhone 6",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 1334,
+        "height": 750,
+        "touch": true,
+        "size": 4.7
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "88.1.0.64.70",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.0.3",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "604.1.38",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13E238 [FBAN/FBIOS;FBAV/151.0.0.61.202;FBBV/82156572;FBDV/iPhone8,1;FBMD/iPhone;FBSN/iPhone OS;FBSV/9.3.1;FBSS/2;FBCR/Telekom.de;FBID/phone;FBLC/de_DE;FBOP/5;FBRV/83160404]"
+    },
+    "device": {
+      "deviceName": "iPhone 8,1",
+      "marketingName": "iPhone 6S",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "display": {
+        "width": 1334,
+        "height": 750,
+        "touch": true,
+        "size": 4.7
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "151.0.0.61.202",
       "manufacturer": "facebook",
       "bits": null,
       "type": "application"
@@ -2699,391 +3763,11 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_3 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Mobile/14E5260b Version/10.3 Safari/8536.25 Mobicip/1947694464"
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_2 like Mac OS X) AppleWebKit/603.2.4 (KHTML, like Gecko) Mobile/14F89 [FBAN/FBIOS;FBAV/151.0.0.61.202;FBBV/82156572;FBDV/iPhone9,3;FBMD/iPhone;FBSN/iOS;FBSV/10.3.2;FBSS/2;FBCR/Vodafone.de;FBID/phone;FBLC/de_DE;FBOP/5;FBRV/83319780]"
     },
     "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Safari",
-      "modus": null,
-      "version": null,
-      "manufacturer": "apple",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "10.3.0-beta+4",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "603.1.30",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Pandora/8.3 (iPhone; iOS 10.2; Scale/2.00)"
-    },
-    "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Mobile Safari UIWebView",
-      "modus": null,
-      "version": null,
-      "manufacturer": "apple",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "10.2.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU OS 9_3_5 like Mac OS X; en-US)"
-    },
-    "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Mobile Safari UIWebView",
-      "modus": null,
-      "version": null,
-      "manufacturer": "apple",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "9.3.5",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_2_1 like Mac OS X) AppleWebKit/602.4.6 (KHTML, like Gecko) YaBrowser/16.3.3.4 YaApp_iOS/3.11"
-    },
-    "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Yandex Browser",
-      "modus": null,
-      "version": "16.3.3.4",
-      "manufacturer": "yandex",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "10.2.1",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "602.4.6",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_1_1 like Mac OS X) AppleWebKit/602.2.14 (KHTML, like Gecko) AppleNews/608.5 Version/2.1"
-    },
-    "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "AppleNews",
-      "modus": null,
-      "version": "2.1.0",
-      "manufacturer": "apple",
-      "bits": null,
-      "type": "feed-reader"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "10.1.1",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "602.2.14",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_2 like Mac OS X) AppleWebKit/602.3.12 (KHTML, like Gecko) AppleNews/750 Version/2.2"
-    },
-    "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "AppleNews",
-      "modus": null,
-      "version": "2.2.0",
-      "manufacturer": "apple",
-      "bits": null,
-      "type": "feed-reader"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "10.2.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "602.3.12",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_3 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) AppleNews/996 Version/2.3"
-    },
-    "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "AppleNews",
-      "modus": null,
-      "version": "2.3.0",
-      "manufacturer": "apple",
-      "bits": null,
-      "type": "feed-reader"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "10.3.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "603.1.30",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone 3GS; CPU iPhone OS 6_1_2 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 MQQBrowser/5.0.4 Mobile/10B146 Safari/8536.25"
-    },
-    "device": {
-      "deviceName": "iPhone 2,1",
-      "marketingName": "iPhone 3GS",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "QQ Browser",
-      "modus": null,
-      "version": "5.0.4",
-      "manufacturer": "tencent",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "6.1.2",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "536.26.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone 5ATT; CPU iPhone OS 7_0_6 like Mac OS X) AppleWebKit/537.51.1 (KHTML, like Gecko) Version/6.0 MQQBrowser/5.1.1 Mobile/11B651 Safari/8536.25"
-    },
-    "device": {
-      "deviceName": "iPhone 5,1",
-      "marketingName": "iPhone 5",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 1136,
-        "height": 640,
-        "touch": true,
-        "size": 4
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "QQ Browser",
-      "modus": null,
-      "version": "5.1.1",
-      "manufacturer": "tencent",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "7.0.6",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "537.51.1",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone 5CGSM; CPU iPhone OS 7_1_1 like Mac OS X) AppleWebKit/537.51.2 (KHTML, like Gecko) Version/6.0 MQQBrowser/5.2.1 Mobile/11D201 Safari/8536.25"
-    },
-    "device": {
-      "deviceName": "iPhone 5,3",
-      "marketingName": "iPhone 5C",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 1136,
-        "height": 640,
-        "touch": true,
-        "size": 4
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "QQ Browser",
-      "modus": null,
-      "version": "5.2.1",
-      "manufacturer": "tencent",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "7.1.1",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "537.51.2",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone 6s; CPU iPhone OS 10_0_2 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/6.0 MQQBrowser/6.9 Mobile/14A456 Safari/8536.25"
-    },
-    "device": {
-      "deviceName": "iPhone 8,1",
-      "marketingName": "iPhone 6S",
+      "deviceName": "iPhone 9,3",
+      "marketingName": "iPhone 7",
       "manufacturer": "apple",
       "brand": "apple",
       "display": {
@@ -3095,351 +3779,9 @@
       "type": "smartphone"
     },
     "browser": {
-      "name": "QQ Browser",
+      "name": "Facebook App",
       "modus": null,
-      "version": "6.9.0",
-      "manufacturer": "tencent",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "10.0.2",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "602.1.50",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_2_1 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) coc_coc_browser/61.4.104 Mobile/14D27 Safari/602.1"
-    },
-    "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Coc Coc Browser",
-      "modus": null,
-      "version": "61.4.104",
-      "manufacturer": "coc-coc-company",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "10.2.1",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "602.1.50",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_1_1 like Mac OS X) AppleWebKit/602.2.14 (KHTML, like Gecko) Mobile/14B100 Safari/602.2.14 Sleipnir/4.3.2m"
-    },
-    "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Safari",
-      "modus": null,
-      "version": "5.0.0",
-      "manufacturer": "apple",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "10.1.1",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "602.2.14",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_2 like Mac OS X) AppleWebKit/602.3.12 (KHTML, like Gecko) Mobile/14C92 Safari/602.3.12 Sleipnir/4.3.2m"
-    },
-    "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Safari",
-      "modus": null,
-      "version": "5.0.0",
-      "manufacturer": "apple",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "10.2.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "602.3.12",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 9_3 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13E234 Safari/601.1.46 Sleipnir/4.3.2m"
-    },
-    "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Safari",
-      "modus": null,
-      "version": "5.0.0",
-      "manufacturer": "apple",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "9.3.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "601.1.46",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "iTunes-iPhone/5.0.1 (6; 64GB)"
-    },
-    "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "iTunes",
-      "modus": null,
-      "version": "6.0.0",
-      "manufacturer": "apple",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "5.0.1",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "iTunes-iPhone/5.1 (6; 16GB; dt:73)"
-    },
-    "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "iTunes",
-      "modus": null,
-      "version": "6.0.0",
-      "manufacturer": "apple",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "5.1.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_2_1 like Mac OS X) AppleWebKit/602.4.6 (KHTML, like Gecko) FxiOS/7.0b2330 Mobile/14D27 Safari/602.4.6"
-    },
-    "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Firefox Mobile for iOS",
-      "modus": null,
-      "version": "7.0.0-beta+2330",
-      "manufacturer": "mozilla-foundation",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "10.2.1",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "602.4.6",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) FxiOS/7.0b2330 Mobile/14E304 Safari/603.1.30"
-    },
-    "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Firefox Mobile for iOS",
-      "modus": null,
-      "version": "7.0.0-beta+2330",
-      "manufacturer": "mozilla-foundation",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "10.3.1",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "603.1.30",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Mobile/14E304 [FBAN/MessengerForiOS;FBAV/112.0.0.36.70;FBBV/54364624;FBDV/iPhone6,2;FBMD/iPhone;FBSN/iOS;FBSV/10.3.1;FBSS/2;FBCR/E-Plus;FBID/phone;FBLC/de_DE;FBOP/5;FBRV/0]"
-    },
-    "device": {
-      "deviceName": "iPhone 6,2",
-      "marketingName": "iPhone 5S",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 1136,
-        "height": 640,
-        "touch": true,
-        "size": 4
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Facebook Messenger App",
-      "modus": null,
-      "version": "112.0.0.36.70",
+      "version": "151.0.0.61.202",
       "manufacturer": "facebook",
       "bits": null,
       "type": "application"
@@ -3447,355 +3789,13 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "10.3.1",
+      "version": "10.3.2",
       "manufacturer": "apple",
       "bits": null
     },
     "engine": {
       "name": "WebKit",
-      "version": "603.1.30",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_0 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Mobile/14A346 Listia/2.43"
-    },
-    "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Listia",
-      "modus": null,
-      "version": "2.43.0",
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "10.0.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "602.1.50",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_0 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Mobile/14A346 Listia/2.44"
-    },
-    "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Listia",
-      "modus": null,
-      "version": "2.44.0",
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "10.0.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "602.1.50",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_0_2 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Mobile/14A456 Listia/2.40"
-    },
-    "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Listia",
-      "modus": null,
-      "version": "2.40.0",
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "10.0.2",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "602.1.50",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_0_2 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Mobile/14A456 Listia/2.41"
-    },
-    "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Listia",
-      "modus": null,
-      "version": "2.41.0",
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "10.0.2",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "602.1.50",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_0_2 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Mobile/14A456 Listia/2.42"
-    },
-    "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Listia",
-      "modus": null,
-      "version": "2.42.0",
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "10.0.2",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "602.1.50",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_1_1 like Mac OS X) AppleWebKit/602.2.14 (KHTML, like Gecko) Mobile/14B100 Listia/2.43"
-    },
-    "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Listia",
-      "modus": null,
-      "version": "2.43.0",
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "10.1.1",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "602.2.14",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_1_1 like Mac OS X) AppleWebKit/602.2.14 (KHTML, like Gecko) Mobile/14B100 Listia/2.44"
-    },
-    "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Listia",
-      "modus": null,
-      "version": "2.44.0",
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "10.1.1",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "602.2.14",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_1_1 like Mac OS X) AppleWebKit/602.2.14 (KHTML, like Gecko) Mobile/14B100 Listia/2.45"
-    },
-    "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Listia",
-      "modus": null,
-      "version": "2.45.0",
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "10.1.1",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "602.2.14",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_2 like Mac OS X) AppleWebKit/602.3.12 (KHTML, like Gecko) Mobile/14C92 Listia/2.24"
-    },
-    "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Listia",
-      "modus": null,
-      "version": "2.24.0",
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "10.2.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "602.3.12",
+      "version": "603.2.4",
       "manufacturer": "apple"
     }
   }
