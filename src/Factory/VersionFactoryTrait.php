@@ -14,12 +14,16 @@ namespace BrowserDetector\Factory;
 
 use BrowserDetector\Version\NotNumericException;
 use BrowserDetector\Version\NullVersion;
+use BrowserDetector\Version\VersionDetectorInterface;
 use BrowserDetector\Version\VersionFactoryInterface;
 use BrowserDetector\Version\VersionInterface;
 use Psr\Log\LoggerInterface;
 use stdClass;
+use UnexpectedValueException;
 
+use function assert;
 use function is_array;
+use function is_callable;
 use function is_string;
 
 trait VersionFactoryTrait
@@ -67,16 +71,31 @@ trait VersionFactoryTrait
         }
 
         if (is_string($factoryName)) {
-            $factory         = new $factoryName();
+            $factory = new $factoryName();
+            assert(is_callable($factory));
             $versionDetector = $factory($logger);
+            assert($versionDetector instanceof VersionDetectorInterface);
 
-            return $versionDetector->detectVersion($useragent);
+            try {
+                return $versionDetector->detectVersion($useragent);
+            } catch (UnexpectedValueException $e) {
+                $this->logger->error($e);
+            }
+
+            return $versionClass;
         }
 
         if ('VersionFactory' !== $className) {
             $versionDetector = new $className();
+            assert($versionDetector instanceof VersionDetectorInterface);
 
-            return $versionDetector->detectVersion($useragent);
+            try {
+                return $versionDetector->detectVersion($useragent);
+            } catch (UnexpectedValueException $e) {
+                $this->logger->error($e);
+            }
+
+            return $versionClass;
         }
 
         if (!is_array($version->search ?? null)) {

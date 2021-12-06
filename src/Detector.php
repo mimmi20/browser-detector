@@ -36,6 +36,7 @@ use UaResult\Result\Result;
 use UaResult\Result\ResultInterface;
 use UnexpectedValueException;
 
+use function assert;
 use function in_array;
 use function serialize;
 use function sha1;
@@ -96,7 +97,10 @@ final class Detector implements DetectorInterface
         $key = sha1(serialize($request->getFilteredHeaders()));
 
         if ($this->cache->hasItem($key)) {
-            return $this->cache->getItem($key);
+            $item = $this->cache->getItem($key);
+            assert($item instanceof ResultInterface);
+
+            return $item;
         }
 
         $item = $this->parse($request);

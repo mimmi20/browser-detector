@@ -13,8 +13,11 @@ declare(strict_types = 1);
 namespace BrowserDetector\Loader;
 
 use BrowserDetector\Loader\Helper\DataInterface;
+use stdClass;
 use UaResult\Company\Company;
 use UaResult\Company\CompanyInterface;
+
+use function assert;
 
 final class CompanyLoader implements CompanyLoaderInterface
 {
@@ -43,6 +46,8 @@ final class CompanyLoader implements CompanyLoaderInterface
         if (null === $companyData) {
             throw new NotFoundException('the company with key "' . $key . '" was not found');
         }
+
+        assert($companyData instanceof stdClass);
 
         return new Company(
             $key,

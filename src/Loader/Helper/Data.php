@@ -12,16 +12,18 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Loader\Helper;
 
-use ExceptionalJSON\DecodeErrorException;
 use Iterator;
+use JsonClass\DecodeErrorException;
 use JsonClass\JsonInterface;
 use RuntimeException;
 use SplFileInfo;
 use stdClass;
 
 use function array_key_exists;
+use function assert;
 use function count;
 use function file_get_contents;
+use function is_array;
 use function sprintf;
 
 final class Data implements DataInterface
@@ -68,12 +70,14 @@ final class Data implements DataInterface
                 throw new RuntimeException(sprintf('file "%s" contains invalid json', $path), 0, $e);
             }
 
-            foreach ($fileData as $key => $data) {
+            assert(is_array($fileData) || $fileData instanceof stdClass);
+
+            foreach ((array) $fileData as $key => $data) {
                 if (array_key_exists($key, $this->items)) {
                     continue;
                 }
 
-                $this->items[$key] = $data;
+                $this->items[(string) $key] = $data;
             }
         }
 

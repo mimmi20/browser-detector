@@ -33,7 +33,7 @@ jobs:
 
     steps:
       - name: "Checkout"
-        uses: "actions/checkout@v2.3.5"
+        uses: "actions/checkout@v2.4.0"
 
       - name: "Install PHP"
         uses: "shivammathur/setup-php@2.15.0"
@@ -77,7 +77,7 @@ jobs:
 
     steps:
       - name: "Checkout"
-        uses: "actions/checkout@v2.3.5"
+        uses: "actions/checkout@v2.4.0"
 
       - name: "Install PHP"
         uses: "shivammathur/setup-php@2.15.0"
@@ -129,7 +129,7 @@ jobs:
 
     steps:
       - name: "Checkout"
-        uses: "actions/checkout@v2.3.5"
+        uses: "actions/checkout@v2.4.0"
 
       - name: "Install PHP"
         uses: "shivammathur/setup-php@2.15.0"
@@ -181,7 +181,7 @@ jobs:
 
     steps:
       - name: "Checkout"
-        uses: "actions/checkout@v2.3.5"
+        uses: "actions/checkout@v2.4.0"
 
       - name: "Install PHP"
         uses: "shivammathur/setup-php@2.15.0"
@@ -231,7 +231,7 @@ jobs:
 
     steps:
       - name: "Checkout"
-        uses: "actions/checkout@v2.3.5"
+        uses: "actions/checkout@v2.4.0"
 
       - name: "Install PHP"
         uses: "shivammathur/setup-php@2.15.0"
@@ -283,7 +283,7 @@ jobs:
 
     steps:
       - name: "Checkout"
-        uses: "actions/checkout@v2.3.4"
+        uses: "actions/checkout@v2.4.0"
 
       - name: "Install PHP"
         uses: "shivammathur/setup-php@2.15.0"
@@ -337,7 +337,7 @@ jobs:
 
     steps:
       - name: "Checkout"
-        uses: "actions/checkout@v2.3.5"
+        uses: "actions/checkout@v2.4.0"
 
       - name: "Install PHP"
         uses: "shivammathur/setup-php@2.15.0"
@@ -392,7 +392,7 @@ jobs:
 
     steps:
       - name: "Checkout"
-        uses: "actions/checkout@v2.3.5"
+        uses: "actions/checkout@v2.4.0"
 
       - name: "Install PHP"
         uses: "shivammathur/setup-php@2.15.0"
@@ -431,7 +431,7 @@ jobs:
           verbose: false
 
       - name: "Run mutation tests with infection/infection"
-        run: "infection -s --min-covered-msi=96 --min-msi=92 --coverage=.build/coverage --logger-github"
+        run: "infection -s --min-covered-msi=95 --min-msi=90 --coverage=.build/coverage --logger-github"
 
   integration-tests:
     name: "Integration Tests with PHPUnit"
@@ -457,7 +457,7 @@ jobs:
 
     steps:
       - name: "Checkout"
-        uses: "actions/checkout@v2.3.5"
+        uses: "actions/checkout@v2.4.0"
 
       - name: "Install PHP"
         uses: "shivammathur/setup-php@2.15.0"

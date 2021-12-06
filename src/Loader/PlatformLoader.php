@@ -17,8 +17,11 @@ use BrowserDetector\Factory\PlatformFactory;
 use BrowserDetector\Loader\Helper\DataInterface;
 use BrowserDetector\Version\VersionFactory;
 use Psr\Log\LoggerInterface;
+use stdClass;
 use UaResult\Os\OsInterface;
 use UnexpectedValueException;
+
+use function assert;
 
 final class PlatformLoader implements PlatformLoaderInterface
 {
@@ -56,6 +59,8 @@ final class PlatformLoader implements PlatformLoaderInterface
         if (null === $platformData) {
             throw new NotFoundException('the platform with key "' . $key . '" was not found');
         }
+
+        assert($platformData instanceof stdClass);
 
         $platformData->bits = (new Os())->getBits($useragent);
 

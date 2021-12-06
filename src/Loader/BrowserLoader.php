@@ -18,10 +18,13 @@ use BrowserDetector\Loader\Helper\DataInterface;
 use BrowserDetector\Parser\EngineParserInterface;
 use BrowserDetector\Version\VersionFactory;
 use Psr\Log\LoggerInterface;
+use stdClass;
 use UaBrowserType\TypeLoader;
 use UaResult\Browser\BrowserInterface;
 use UaResult\Engine\EngineInterface;
 use UnexpectedValueException;
+
+use function assert;
 
 final class BrowserLoader implements BrowserLoaderInterface
 {
@@ -66,6 +69,8 @@ final class BrowserLoader implements BrowserLoaderInterface
         if (null === $browserData) {
             throw new NotFoundException('the browser with key "' . $key . '" was not found');
         }
+
+        assert($browserData instanceof stdClass);
 
         $browserData->bits  = (new Browser())->getBits($useragent);
         $browserData->modus = null;
