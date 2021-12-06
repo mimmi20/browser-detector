@@ -50,9 +50,6 @@ jobs:
       - name: "Validate composer.json"
         run: "composer validate --strict"
 
-      - name: "Run composer-normalize"
-        run: "composer-normalize --dry-run"
-
   install:
     name: "Install dependencies"
 
