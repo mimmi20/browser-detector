@@ -8,7 +8,13 @@ name: "Continuous Integration"
 
 env:
   PHP_EXTENSIONS: "json, opcache, mbstring"
-  PHP_INI_VALUES: "opcache.enable=1, opcache.enable_cli=1, opcache.fast_shutdown=0, zend.assertions=1, assert.exception=On, intl.default_locale=de, intl.use_exceptions=1"
+  PHP_INI_VALUES: "opcache.enable=1, opcache.enable_cli=1, opcache.fast_shutdown=0, zend.assertions=1, assert.exception=On, intl.default_locale=de, intl.use_exceptions=1, zend.exception_ignore_args=0"
+  COMPOSER_OPTIONS: "--optimize-autoloader --prefer-dist --prefer-stable -v"
+  TOOLS: "composer:v2"
+
+concurrency:
+  group: ${{ github.head_ref }}
+  cancel-in-progress: true
 
 jobs:
   validate:
@@ -28,8 +34,45 @@ jobs:
         php-version:
           - "7.4"
 
-        dependencies:
-          - ""
+    steps:
+      - name: "Checkout"
+        uses: "actions/checkout@v2.4.0"
+        with:
+          # Disabling shallow clone is recommended for improving relevancy of reporting
+          fetch-depth: 0
+
+      - name: "Install PHP"
+        uses: "shivammathur/setup-php@2.16.0"
+        with:
+          php-version: "${{ matrix.php-version }}"
+          extensions: "${{ env.PHP_EXTENSIONS }}"
+          ini-values: "${{ env.PHP_INI_VALUES }}"
+          coverage: "none"
+          tools: "${{ env.TOOLS }}"
+
+      - name: "Validate composer.json"
+        run: "composer validate --strict"
+
+  lint:
+    name: "Linting"
+
+    needs: "validate"
+
+    runs-on: "${{ matrix.operating-system }}"
+
+    continue-on-error: false
+
+    strategy:
+      fail-fast: false
+
+      matrix:
+        operating-system:
+          - "ubuntu-20.04"
+
+        php-version:
+          - "7.4"
+          - "8.0"
+          - "8.1"
 
     steps:
       - name: "Checkout"
@@ -45,13 +88,15 @@ jobs:
           extensions: "${{ env.PHP_EXTENSIONS }}"
           ini-values: "${{ env.PHP_INI_VALUES }}"
           coverage: "none"
-          tools: "composer:v2, composer-normalize"
+          tools: "${{ env.TOOLS }}"
 
-      - name: "Validate composer.json"
-        run: "composer validate --strict"
+      - name: "Lint PHP"
+        if: "${{ matrix.php-version == '7.4' }}"
+        uses: "overtrue/phplint@7.4"
 
-      - name: "Run composer-normalize"
-        run: "composer-normalize --dry-run"
+      - name: "Lint PHP"
+        if: "${{ matrix.php-version != '7.4' }}"
+        uses: "overtrue/phplint@8.0"
 
   install:
     name: "Install dependencies"
@@ -76,8 +121,8 @@ jobs:
           - "8.1"
 
         dependencies:
-          - "--prefer-lowest"
-          - ""
+          - "highest"
+          - "lowest"
 
     steps:
       - name: "Checkout"
@@ -93,21 +138,13 @@ jobs:
           extensions: "${{ env.PHP_EXTENSIONS }}"
           ini-values: "${{ env.PHP_INI_VALUES }}"
           coverage: "none"
-          tools: "composer:v2"
-
-      - name: "Determine composer cache directory"
-        id: "determine-composer-cache-directory"
-        run: "echo \"::set-output name=directory::$(composer config cache-dir)\""
-
-      - name: "Cache dependencies installed with composer"
-        uses: "actions/cache@v2.1.7"
-        with:
-          path: "${{ steps.determine-composer-cache-directory.outputs.directory }}"
-          key: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-${{ hashFiles('composer.lock') }}"
-          restore-keys: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-"
+          tools: "${{ env.TOOLS }}"
 
       - name: "Update dependencies with composer"
-        run: "composer update --optimize-autoloader --prefer-dist --prefer-stable --no-progress --no-interaction -v --ansi ${{ matrix.dependencies }}"
+        uses: "ramsey/composer-install@v1"
+        with:
+          dependency-versions: "${{ matrix.dependencies }}"
+          composer-options: "${{ env.COMPOSER_OPTIONS }}"
 
       - name: "Check dependencies with composer"
         run: "composer outdated --direct"
@@ -115,7 +152,7 @@ jobs:
   php-cs-fixer:
     name: "Check Coding Standards with PHP-CS-Fixer"
 
-    needs: "validate"
+    needs: "lint"
 
     runs-on: "${{ matrix.operating-system }}"
 
@@ -132,7 +169,7 @@ jobs:
           - "7.4"
 
         dependencies:
-          - ""
+          - "highest"
 
     steps:
       - name: "Checkout"
@@ -148,21 +185,13 @@ jobs:
           extensions: "${{ env.PHP_EXTENSIONS }}"
           ini-values: "${{ env.PHP_INI_VALUES }}"
           coverage: "none"
-          tools: "composer:v2, cs2pr"
-
-      - name: "Determine composer cache directory"
-        id: "determine-composer-cache-directory"
-        run: "echo \"::set-output name=directory::$(composer config cache-dir)\""
-
-      - name: "Cache dependencies installed with composer"
-        uses: "actions/cache@v2.1.7"
-        with:
-          path: "${{ steps.determine-composer-cache-directory.outputs.directory }}"
-          key: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-${{ hashFiles('composer.lock') }}"
-          restore-keys: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-"
+          tools: "${{ env.TOOLS }}, cs2pr"
 
       - name: "Update dependencies with composer"
-        run: "composer update --optimize-autoloader --prefer-dist --prefer-stable --no-progress --no-interaction -v --ansi ${{ matrix.dependencies }}"
+        uses: "ramsey/composer-install@v1"
+        with:
+          dependency-versions: "${{ matrix.dependencies }}"
+          composer-options: "${{ env.COMPOSER_OPTIONS }}"
 
       - name: "Run friendsofphp/php-cs-fixer"
         run: "vendor/bin/php-cs-fixer fix --dry-run --format=checkstyle | cs2pr"
@@ -170,7 +199,7 @@ jobs:
   phpcs:
     name: "Check Coding Standards with PHPCS"
 
-    needs: "validate"
+    needs: "lint"
 
     runs-on: "${{ matrix.operating-system }}"
 
@@ -187,7 +216,7 @@ jobs:
           - "7.4"
 
         dependencies:
-          - ""
+          - "highest"
 
     steps:
       - name: "Checkout"
@@ -203,21 +232,13 @@ jobs:
           extensions: "${{ env.PHP_EXTENSIONS }}"
           ini-values: "${{ env.PHP_INI_VALUES }}"
           coverage: "none"
-          tools: "composer:v2, cs2pr"
-
-      - name: "Determine composer cache directory"
-        id: "determine-composer-cache-directory"
-        run: "echo \"::set-output name=directory::$(composer config cache-dir)\""
-
-      - name: "Cache dependencies installed with composer"
-        uses: "actions/cache@v2.1.7"
-        with:
-          path: "${{ steps.determine-composer-cache-directory.outputs.directory }}"
-          key: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-${{ hashFiles('composer.lock') }}"
-          restore-keys: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-"
+          tools: "${{ env.TOOLS }}, cs2pr"
 
       - name: "Update dependencies with composer"
-        run: "composer update --optimize-autoloader --prefer-dist --prefer-stable --no-progress --no-interaction -v --ansi ${{ matrix.dependencies }}"
+        uses: "ramsey/composer-install@v1"
+        with:
+          dependency-versions: "${{ matrix.dependencies }}"
+          composer-options: "${{ env.COMPOSER_OPTIONS }}"
 
       - name: "Run squizlabs/php_codesniffer"
         run: "vendor/bin/phpcs --report=checkstyle -q | cs2pr"
@@ -225,7 +246,7 @@ jobs:
   static-code-analysis:
     name: "Static Code Analysis with PHPStan"
 
-    needs: "validate"
+    needs: "lint"
 
     runs-on: "${{ matrix.operating-system }}"
 
@@ -240,7 +261,7 @@ jobs:
           - "7.4"
 
         dependencies:
-          - ""
+          - "highest"
 
     steps:
       - name: "Checkout"
@@ -256,21 +277,13 @@ jobs:
           extensions: "${{ env.PHP_EXTENSIONS }}"
           ini-values: "${{ env.PHP_INI_VALUES }}"
           coverage: "none"
-          tools: "composer:v2"
-
-      - name: "Determine composer cache directory"
-        id: "determine-composer-cache-directory"
-        run: "echo \"::set-output name=directory::$(composer config cache-dir)\""
-
-      - name: "Cache dependencies installed with composer"
-        uses: "actions/cache@v2.1.7"
-        with:
-          path: "${{ steps.determine-composer-cache-directory.outputs.directory }}"
-          key: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-${{ hashFiles('composer.lock') }}"
-          restore-keys: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-"
+          tools: "${{ env.TOOLS }}"
 
       - name: "Update dependencies with composer"
-        run: "composer update --optimize-autoloader --prefer-dist --prefer-stable --no-progress --no-interaction -v --ansi ${{ matrix.dependencies }}"
+        uses: "ramsey/composer-install@v1"
+        with:
+          dependency-versions: "${{ matrix.dependencies }}"
+          composer-options: "${{ env.COMPOSER_OPTIONS }}"
 
       - name: "Run phpstan/phpstan"
         run: "vendor/bin/phpstan analyse -c phpstan.neon --memory-limit=768M --no-progress"
@@ -278,7 +291,7 @@ jobs:
   phpmd:
     name: "Check Rules with PHPMD"
 
-    needs: "validate"
+    needs: "lint"
 
     runs-on: "${{ matrix.operating-system }}"
 
@@ -295,7 +308,7 @@ jobs:
           - "7.4"
 
         dependencies:
-          - ""
+          - "highest"
 
     steps:
       - name: "Checkout"
@@ -311,85 +324,21 @@ jobs:
           extensions: "${{ env.PHP_EXTENSIONS }}"
           ini-values: "${{ env.PHP_INI_VALUES }}"
           coverage: "none"
-          tools: "composer:v2, phpmd"
-
-      - name: "Determine composer cache directory"
-        id: "determine-composer-cache-directory"
-        run: "echo \"::set-output name=directory::$(composer config cache-dir)\""
-
-      - name: "Cache dependencies installed with composer"
-        uses: "actions/cache@v2.1.7"
-        with:
-          path: "${{ steps.determine-composer-cache-directory.outputs.directory }}"
-          key: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-${{ hashFiles('composer.lock') }}"
-          restore-keys: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-"
+          tools: "${{ env.TOOLS }}, phpmd"
 
       - name: "Update dependencies with composer"
-        run: "composer update --optimize-autoloader --prefer-dist --prefer-stable --no-progress --no-interaction -v --ansi ${{ matrix.dependencies }}"
+        uses: "ramsey/composer-install@v1"
+        with:
+          dependency-versions: "${{ matrix.dependencies }}"
+          composer-options: "${{ env.COMPOSER_OPTIONS }}"
 
       - name: "Run phpmd/phpmd"
         run: "phpmd src github phpmd.ruleset.xml"
 
-  rector:
-    name: "Checks with Rector"
-
-    needs: "validate"
-
-    runs-on: "${{ matrix.operating-system }}"
-
-    continue-on-error: false
-
-    strategy:
-      fail-fast: false
-
-      matrix:
-        operating-system:
-          - "ubuntu-18.04"
-          - "ubuntu-20.04"
-
-        php-version:
-          - "7.4"
-
-        dependencies:
-          - ""
-
-    steps:
-      - name: "Checkout"
-        uses: "actions/checkout@v2.4.0"
-        with:
-          # Disabling shallow clone is recommended for improving relevancy of reporting
-          fetch-depth: 0
-
-      - name: "Install PHP"
-        uses: "shivammathur/setup-php@2.16.0"
-        with:
-          php-version: "${{ matrix.php-version }}"
-          extensions: "${{ env.PHP_EXTENSIONS }}"
-          ini-values: "${{ env.PHP_INI_VALUES }}"
-          coverage: "none"
-          tools: "composer:v2"
-
-      - name: "Determine composer cache directory"
-        id: "determine-composer-cache-directory"
-        run: "echo \"::set-output name=directory::$(composer config cache-dir)\""
-
-      - name: "Cache dependencies installed with composer"
-        uses: "actions/cache@v2.1.6"
-        with:
-          path: "${{ steps.determine-composer-cache-directory.outputs.directory }}"
-          key: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-${{ hashFiles('composer.lock') }}"
-          restore-keys: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-"
-
-      - name: "Update dependencies with composer"
-        run: "composer update --optimize-autoloader --prefer-dist --prefer-stable --no-progress --no-interaction -v --ansi ${{ matrix.dependencies }}"
-
-      - name: "Run checks with rector/rector"
-        run: "vendor/bin/rector process src tests --dry-run --no-diffs --ansi"
-
   tests:
     name: "UnitTests with PHPUnit"
 
-    needs: "validate"
+    needs: "lint"
 
     runs-on: "${{ matrix.operating-system }}"
 
@@ -409,7 +358,7 @@ jobs:
           - "8.1"
 
         dependencies:
-          - ""
+          - "highest"
 
     steps:
       - name: "Checkout"
@@ -425,21 +374,13 @@ jobs:
           extensions: "${{ env.PHP_EXTENSIONS }}"
           ini-values: "${{ env.PHP_INI_VALUES }}"
           coverage: "none"
-          tools: "composer:v2"
-
-      - name: "Determine composer cache directory"
-        id: "determine-composer-cache-directory"
-        run: "echo \"::set-output name=directory::$(composer config cache-dir)\""
-
-      - name: "Cache dependencies installed with composer"
-        uses: "actions/cache@v2.1.7"
-        with:
-          path: "${{ steps.determine-composer-cache-directory.outputs.directory }}"
-          key: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-${{ hashFiles('composer.lock') }}"
-          restore-keys: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-"
+          tools: "${{ env.TOOLS }}"
 
       - name: "Update dependencies with composer"
-        run: "composer update --optimize-autoloader --prefer-dist --prefer-stable --no-progress --no-interaction -v --ansi ${{ matrix.dependencies }}"
+        uses: "ramsey/composer-install@v1"
+        with:
+          dependency-versions: "${{ matrix.dependencies }}"
+          composer-options: "${{ env.COMPOSER_OPTIONS }}"
 
       - name: "Run unit tests with phpunit/phpunit"
         run: "vendor/bin/phpunit -c phpunit.xml --verbose --no-coverage"
@@ -464,7 +405,7 @@ jobs:
           - "7.4"
 
         dependencies:
-          - ""
+          - "highest"
 
         coverage-drivers:
           - "xdebug"
@@ -483,21 +424,13 @@ jobs:
           extensions: "${{ env.PHP_EXTENSIONS }}"
           ini-values: "${{ env.PHP_INI_VALUES }}"
           coverage: "${{ matrix.coverage-drivers }}"
-          tools: "composer:v2, infection"
-
-      - name: "Determine composer cache directory"
-        id: "determine-composer-cache-directory"
-        run: "echo \"::set-output name=directory::$(composer config cache-dir)\""
-
-      - name: "Cache dependencies installed with composer"
-        uses: "actions/cache@v2.1.7"
-        with:
-          path: "${{ steps.determine-composer-cache-directory.outputs.directory }}"
-          key: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-${{ hashFiles('composer.lock') }}"
-          restore-keys: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-"
+          tools: "${{ env.TOOLS }}, infection"
 
       - name: "Update dependencies with composer"
-        run: "composer update --optimize-autoloader --prefer-dist --prefer-stable --no-progress --no-interaction -v --ansi ${{ matrix.dependencies }}"
+        uses: "ramsey/composer-install@v1"
+        with:
+          dependency-versions: "${{ matrix.dependencies }}"
+          composer-options: "${{ env.COMPOSER_OPTIONS }}"
 
       - name: "Create cache directory for phpunit/phpunit"
         run: "mkdir -p .build/coverage"
@@ -535,7 +468,7 @@ jobs:
           - "7.4"
 
         dependencies:
-          - ""
+          - "highest"
 
     steps:
       - name: "Checkout"
@@ -551,21 +484,13 @@ jobs:
           extensions: "${{ env.PHP_EXTENSIONS }}"
           ini-values: "${{ env.PHP_INI_VALUES }}"
           coverage: "none"
-          tools: "composer:v2"
-
-      - name: "Determine composer cache directory"
-        id: "determine-composer-cache-directory"
-        run: "echo \"::set-output name=directory::$(composer config cache-dir)\""
-
-      - name: "Cache dependencies installed with composer"
-        uses: "actions/cache@v2.1.7"
-        with:
-          path: "${{ steps.determine-composer-cache-directory.outputs.directory }}"
-          key: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-${{ hashFiles('composer.lock') }}"
-          restore-keys: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-"
+          tools: "${{ env.TOOLS }}"
 
       - name: "Update dependencies with composer"
-        run: "composer update --optimize-autoloader --prefer-dist --prefer-stable --no-progress --no-interaction -vv --ansi ${{ matrix.dependencies }}"
+        uses: "ramsey/composer-install@v1"
+        with:
+          dependency-versions: "${{ matrix.dependencies }}"
+          composer-options: "${{ env.COMPOSER_OPTIONS }}"
 
       - name: "Run integration tests with phpunit/phpunit"
         run: "vendor/bin/phpunit -c tests/phpunit-integration.xml --no-coverage --colors --verbose"
