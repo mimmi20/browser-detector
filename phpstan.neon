@@ -8,8 +8,8 @@ parameters:
     - tests
   scanFiles:
     - %currentWorkingDirectory%/vendor/autoload.php
-    - %currentWorkingDirectory%/vendor/squizlabs/php_codesniffer/autoload.php
-    - %currentWorkingDirectory%/vendor/squizlabs/php_codesniffer/src/Util/Tokens.php
+    - %currentWorkingDirectory%/vendor-bin/phpcs/vendor/squizlabs/php_codesniffer/autoload.php
+    - %currentWorkingDirectory%/vendor-bin/phpcs/vendor/squizlabs/php_codesniffer/src/Util/Tokens.php
   checkGenericClassInNonGenericObjectType: false
   checkMissingIterableValueType: false
   treatPhpDocTypesAsCertain: false
