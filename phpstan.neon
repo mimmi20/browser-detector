@@ -10,6 +10,7 @@ parameters:
     - %currentWorkingDirectory%/vendor/autoload.php
     - %currentWorkingDirectory%/vendor-bin/phpcs/vendor/squizlabs/php_codesniffer/autoload.php
     - %currentWorkingDirectory%/vendor-bin/phpcs/vendor/squizlabs/php_codesniffer/src/Util/Tokens.php
+    - %currentWorkingDirectory%/vendor-bin/phpunit/vendor/autoload.php
   checkGenericClassInNonGenericObjectType: false
   checkMissingIterableValueType: false
   treatPhpDocTypesAsCertain: false
