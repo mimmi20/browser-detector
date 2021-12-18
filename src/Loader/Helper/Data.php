@@ -90,6 +90,9 @@ final class Data implements DataInterface
         $this->initialized = true;
     }
 
+    /**
+     * @return mixed
+     */
     public function getItem(string $cacheId)
     {
         return $this->items[$cacheId] ?? null;

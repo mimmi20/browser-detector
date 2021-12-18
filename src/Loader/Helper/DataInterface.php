@@ -22,7 +22,10 @@ interface DataInterface extends Countable
      */
     public function __invoke(): void;
 
-    public function getItem(string $cacheId): mixed;
+    /**
+     * @return mixed
+     */
+    public function getItem(string $cacheId);
 
     public function hasItem(string $cacheId): bool;
 }
