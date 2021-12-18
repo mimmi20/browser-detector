@@ -15,7 +15,6 @@ namespace BrowserDetector\Parser;
 use BrowserDetector\Loader\EngineLoaderFactoryInterface;
 use BrowserDetector\Loader\NotFoundException;
 use BrowserDetector\Parser\Helper\RulefileParserInterface;
-use SplFileInfo;
 use UaResult\Engine\EngineInterface;
 use UnexpectedValueException;
 
@@ -43,7 +42,7 @@ final class EngineParser implements EngineParserInterface
     public function parse(string $useragent): EngineInterface
     {
         $key = $this->fileParser->parseFile(
-            new SplFileInfo(self::GENERIC_FILE),
+            self::GENERIC_FILE,
             $useragent,
             'unknown'
         );

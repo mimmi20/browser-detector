@@ -388,7 +388,7 @@ jobs:
           composer-options: "${{ env.COMPOSER_OPTIONS }}"
 
       - name: "Run unit tests with phpunit/phpunit"
-        run: "vendor/bin/phpunit -c phpunit.xml --verbose --no-coverage"
+        run: "vendor/bin/phpunit -c phpunit.xml --verbose --no-coverage --testsuite UnitTests"
 
   code-coverage:
     name: "Code Coverage with PHPUnit"
@@ -441,7 +441,7 @@ jobs:
         run: "mkdir -p .build/coverage"
 
       - name: "Collect code coverage with Xdebug and phpunit/phpunit"
-        run: "vendor/bin/phpunit -c phpunit.xml --verbose --coverage-clover=.build/coverage/clover.xml --coverage-text --coverage-xml=.build/coverage/coverage-xml --log-junit=.build/coverage/phpunit.junit.xml"
+        run: "vendor/bin/phpunit -c phpunit.xml --verbose --coverage-clover=.build/coverage/clover.xml --coverage-text --coverage-xml=.build/coverage/coverage-xml --log-junit=.build/coverage/phpunit.junit.xml --testsuite UnitTests"
 
       - name: "Upload coverage to Codecov"
         uses: "codecov/codecov-action@v2.1.0"
@@ -498,7 +498,7 @@ jobs:
           composer-options: "${{ env.COMPOSER_OPTIONS }}"
 
       - name: "Run integration tests with phpunit/phpunit"
-        run: "vendor/bin/phpunit -c tests/phpunit-integration.xml --no-coverage --colors --verbose"
+        run: "vendor/bin/phpunit -c phpunit.xml --no-coverage --colors --verbose --testsuite IntegrationTests"
 
   roave-backwards-compatibility-check:
     name: "Check for Backward Compatibility breaks"

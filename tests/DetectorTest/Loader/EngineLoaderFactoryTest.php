@@ -15,16 +15,11 @@ namespace BrowserDetectorTest\Loader;
 use BrowserDetector\Loader\CompanyLoaderInterface;
 use BrowserDetector\Loader\EngineLoaderFactory;
 use BrowserDetector\Loader\EngineLoaderInterface;
-use BrowserDetector\Loader\Helper\FilterInterface;
-use Iterator;
-use JsonClass\JsonInterface;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
 use SebastianBergmann\RecursionContext\InvalidArgumentException;
-
-use function assert;
 
 final class EngineLoaderFactoryTest extends TestCase
 {
@@ -36,34 +31,13 @@ final class EngineLoaderFactoryTest extends TestCase
      */
     public function testInvoke(): void
     {
-        $logger     = $this->createMock(LoggerInterface::class);
-        $jsonParser = $this->getMockBuilder(JsonInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
-        $jsonParser
-            ->expects(self::any())
-            ->method('decode')
-            ->willReturn([]);
+        $logger = $this->createMock(LoggerInterface::class);
 
         $companyLoader = $this->getMockBuilder(CompanyLoaderInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
 
-        $iterator = $this->createMock(Iterator::class);
-        $filter   = $this->getMockBuilder(FilterInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
-        $filter
-            ->expects(self::once())
-            ->method('__invoke')
-            ->with(EngineLoaderFactory::DATA_PATH, 'json')
-            ->willReturn($iterator);
-
-        assert($logger instanceof LoggerInterface);
-        assert($jsonParser instanceof JsonInterface);
-        assert($companyLoader instanceof CompanyLoaderInterface);
-        assert($filter instanceof FilterInterface);
-        $factory = new EngineLoaderFactory($logger, $jsonParser, $companyLoader, $filter);
+        $factory = new EngineLoaderFactory($logger, $companyLoader);
         $object  = $factory();
 
         self::assertInstanceOf(EngineLoaderInterface::class, $object);

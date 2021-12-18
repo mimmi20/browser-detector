@@ -13,9 +13,7 @@ declare(strict_types = 1);
 namespace BrowserDetector\Loader;
 
 use BrowserDetector\Loader\Helper\Data;
-use BrowserDetector\Loader\Helper\FilterInterface;
 use BrowserDetector\Parser\EngineParserInterface;
-use JsonClass\JsonInterface;
 use Psr\Log\LoggerInterface;
 
 final class BrowserLoaderFactory implements BrowserLoaderFactoryInterface
@@ -24,45 +22,33 @@ final class BrowserLoaderFactory implements BrowserLoaderFactoryInterface
 
     private LoggerInterface $logger;
 
-    private JsonInterface $jsonParser;
-
     private EngineParserInterface $engineParser;
 
     private CompanyLoaderInterface $companyLoader;
 
-    private FilterInterface $filter;
+    private ?BrowserLoader $loader = null;
 
     public function __construct(
         LoggerInterface $logger,
-        JsonInterface $jsonParser,
         CompanyLoaderInterface $companyLoader,
-        EngineParserInterface $engineParser,
-        FilterInterface $filter
+        EngineParserInterface $engineParser
     ) {
         $this->logger        = $logger;
-        $this->jsonParser    = $jsonParser;
         $this->companyLoader = $companyLoader;
         $this->engineParser  = $engineParser;
-        $this->filter        = $filter;
     }
 
     public function __invoke(): BrowserLoaderInterface
     {
-        /** @var BrowserLoader|null $loader */
-        static $loader = null;
-
-        if (null !== $loader) {
-            return $loader;
+        if (null === $this->loader) {
+            $this->loader = new BrowserLoader(
+                $this->logger,
+                new Data(self::DATA_PATH, 'json'),
+                $this->companyLoader,
+                $this->engineParser
+            );
         }
 
-        $filter = $this->filter;
-        $loader = new BrowserLoader(
-            $this->logger,
-            new Data($filter(self::DATA_PATH, 'json'), $this->jsonParser),
-            $this->companyLoader,
-            $this->engineParser
-        );
-
-        return $loader;
+        return $this->loader;
     }
 }

@@ -15,7 +15,6 @@ namespace BrowserDetector\Parser;
 use BrowserDetector\Loader\BrowserLoaderFactoryInterface;
 use BrowserDetector\Loader\NotFoundException;
 use BrowserDetector\Parser\Helper\RulefileParserInterface;
-use SplFileInfo;
 use UaResult\Browser\BrowserInterface;
 use UaResult\Engine\EngineInterface;
 use UnexpectedValueException;
@@ -50,13 +49,13 @@ final class BrowserParser implements BrowserParserInterface
     public function parse(string $useragent): array
     {
         $mode = $this->fileParser->parseFile(
-            new SplFileInfo(self::GENERIC_FILE),
+            self::GENERIC_FILE,
             $useragent,
             'unknown'
         );
 
         $key = $this->fileParser->parseFile(
-            new SplFileInfo(sprintf(self::SPECIFIC_FILE, $mode)),
+            sprintf(self::SPECIFIC_FILE, $mode),
             $useragent,
             'unknown'
         );

@@ -16,14 +16,11 @@ use BrowserDetector\Loader\CompanyLoaderInterface;
 use BrowserDetector\Parser\EngineParser;
 use BrowserDetector\Parser\EngineParserFactory;
 use BrowserDetector\Parser\EngineParserInterface;
-use JsonClass\JsonInterface;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
 use SebastianBergmann\RecursionContext\InvalidArgumentException;
-
-use function assert;
 
 final class EngineParserFactoryTest extends TestCase
 {
@@ -36,13 +33,9 @@ final class EngineParserFactoryTest extends TestCase
     public function testInvoke(): void
     {
         $logger        = $this->createMock(LoggerInterface::class);
-        $jsonParser    = $this->createMock(JsonInterface::class);
         $companyLoader = $this->createMock(CompanyLoaderInterface::class);
 
-        assert($logger instanceof LoggerInterface);
-        assert($jsonParser instanceof JsonInterface);
-        assert($companyLoader instanceof CompanyLoaderInterface);
-        $factory = new EngineParserFactory($logger, $jsonParser, $companyLoader);
+        $factory = new EngineParserFactory($logger, $companyLoader);
 
         $parser = $factory();
 

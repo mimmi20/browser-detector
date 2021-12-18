@@ -13,8 +13,6 @@ declare(strict_types = 1);
 namespace BrowserDetector\Loader;
 
 use BrowserDetector\Loader\Helper\Data;
-use BrowserDetector\Loader\Helper\FilterInterface;
-use JsonClass\JsonInterface;
 use Psr\Log\LoggerInterface;
 
 final class PlatformLoaderFactory implements PlatformLoaderFactoryInterface
@@ -23,40 +21,30 @@ final class PlatformLoaderFactory implements PlatformLoaderFactoryInterface
 
     private LoggerInterface $logger;
 
-    private JsonInterface $jsonParser;
-
     private CompanyLoaderInterface $companyLoader;
 
-    private FilterInterface $filter;
+    private ?PlatformLoaderInterface $loader = null;
 
     public function __construct(
         LoggerInterface $logger,
-        JsonInterface $jsonParser,
-        CompanyLoaderInterface $companyLoader,
-        FilterInterface $filter
+        CompanyLoaderInterface $companyLoader
     ) {
         $this->logger        = $logger;
-        $this->jsonParser    = $jsonParser;
         $this->companyLoader = $companyLoader;
-        $this->filter        = $filter;
     }
 
     public function __invoke(): PlatformLoaderInterface
     {
-        /** @var PlatformLoaderInterface|null $loader */
-        static $loader = null;
-
-        if (null !== $loader) {
-            return $loader;
+        if (null !== $this->loader) {
+            return $this->loader;
         }
 
-        $filter = $this->filter;
-        $loader = new PlatformLoader(
+        $this->loader = new PlatformLoader(
             $this->logger,
-            new Data($filter(self::DATA_PATH, 'json'), $this->jsonParser),
+            new Data(self::DATA_PATH, 'json'),
             $this->companyLoader
         );
 
-        return $loader;
+        return $this->loader;
     }
 }

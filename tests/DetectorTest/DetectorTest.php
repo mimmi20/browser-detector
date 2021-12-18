@@ -526,13 +526,6 @@ final class DetectorTest extends TestCase
             ->expects(self::never())
             ->method('normalize');
 
-        assert($logger instanceof LoggerInterface);
-        assert($cache instanceof CacheInterface);
-        assert($deviceParser instanceof DeviceParserInterface);
-        assert($platformParser instanceof PlatformParserInterface);
-        assert($browserParser instanceof BrowserParserInterface);
-        assert($engineParser instanceof EngineParserInterface);
-        assert($normalizer instanceof NormalizerInterface);
         $object = new Detector(
             $logger,
             $cache,

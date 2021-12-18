@@ -13,9 +13,7 @@ declare(strict_types = 1);
 namespace BrowserDetector\Loader;
 
 use BrowserDetector\Loader\Helper\Data;
-use BrowserDetector\Loader\Helper\FilterInterface;
 use BrowserDetector\Parser\PlatformParserInterface;
-use JsonClass\JsonInterface;
 use Psr\Log\LoggerInterface;
 
 use function array_key_exists;
@@ -26,45 +24,36 @@ final class DeviceLoaderFactory implements DeviceLoaderFactoryInterface
 
     private LoggerInterface $logger;
 
-    private JsonInterface $jsonParser;
-
     private PlatformParserInterface $platformParser;
 
     private CompanyLoaderInterface $companyLoader;
 
-    private FilterInterface $filter;
+    /** @var DeviceLoaderInterface[] */
+    private array $loader = [];
 
     public function __construct(
         LoggerInterface $logger,
-        JsonInterface $jsonParser,
         CompanyLoaderInterface $companyLoader,
-        PlatformParserInterface $platformParser,
-        FilterInterface $filter
+        PlatformParserInterface $platformParser
     ) {
         $this->logger         = $logger;
-        $this->jsonParser     = $jsonParser;
         $this->companyLoader  = $companyLoader;
         $this->platformParser = $platformParser;
-        $this->filter         = $filter;
     }
 
     public function __invoke(string $company = ''): DeviceLoaderInterface
     {
-        /** @var DeviceLoaderInterface[] $loader */
-        static $loader = [];
-
-        if (array_key_exists($company, $loader)) {
-            return $loader[$company];
+        if (array_key_exists($company, $this->loader)) {
+            return $this->loader[$company];
         }
 
-        $filter           = $this->filter;
-        $loader[$company] = new DeviceLoader(
+        $this->loader[$company] = new DeviceLoader(
             $this->logger,
-            new Data($filter(self::DATA_PATH . $company, 'json'), $this->jsonParser),
+            new Data(self::DATA_PATH . $company, 'json'),
             $this->companyLoader,
             $this->platformParser
         );
 
-        return $loader[$company];
+        return $this->loader[$company];
     }
 }
