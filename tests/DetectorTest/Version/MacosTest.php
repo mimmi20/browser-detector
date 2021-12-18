@@ -478,4 +478,74 @@ final class MacosTest extends TestCase
         self::assertInstanceOf(VersionInterface::class, $detectedVersion);
         self::assertInstanceOf(NullVersion::class, $detectedVersion);
     }
+
+    /**
+     * @throws UnexpectedValueException
+     */
+    public function testDetectVersionFail6(): void
+    {
+        $useragent = 'QuickTime/7.6 (qtver=7.6;cpu=IA32;os=Mac 10,5,7)';
+        $exception = new NotNumericException('not numeric');
+        $version   = $this->getMockBuilder(VersionInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $version
+            ->expects(self::never())
+            ->method('getVersion');
+
+        $versionFactory = $this->getMockBuilder(VersionFactoryInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $versionFactory
+            ->expects(self::once())
+            ->method('detectVersion')
+            ->with('QuickTime/7.6 (qtver=7.6;cpu=IA32;os=Mac 10.5.7)', Macos::SEARCHES)
+            ->willThrowException($exception);
+        $versionFactory
+            ->expects(self::never())
+            ->method('set');
+
+        $macosBuild = $this->getMockBuilder(MacosBuildInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $macosBuild
+            ->expects(self::never())
+            ->method('getVersion');
+
+        $logger = $this->getMockBuilder(LoggerInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $logger
+            ->expects(self::never())
+            ->method('debug');
+        $logger
+            ->expects(self::once())
+            ->method('info')
+            ->with($exception);
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::never())
+            ->method('warning');
+        $logger
+            ->expects(self::never())
+            ->method('error');
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
+
+        $object = new Macos($logger, $versionFactory, $macosBuild);
+
+        $detectedVersion = $object->detectVersion($useragent);
+
+        self::assertInstanceOf(VersionInterface::class, $detectedVersion);
+        self::assertInstanceOf(NullVersion::class, $detectedVersion);
+    }
 }
