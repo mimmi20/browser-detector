@@ -75,4 +75,43 @@ final class DataTest extends TestCase
         self::assertFalse($object->hasItem('key3'));
         self::assertNull($object->getItem('key3'));
     }
+
+    /**
+     * @throws InvalidArgumentException
+     * @throws ExpectationFailedException
+     * @throws Exception
+     * @throws \InvalidArgumentException
+     */
+    public function testInvokeSuccess2(): void
+    {
+        $structure = [
+            'valid' => [
+                'tool.json' => '{"rules": "abc"}',
+                'tool2.json' => '{"rules": "abc2", "key3": "value3"}',
+            ],
+        ];
+
+        vfsStream::setup(self::DATA_PATH, null, $structure);
+
+        $key   = 'rules';
+        $value = 'abc';
+
+        $object = new Data(vfsStream::url(self::DATA_PATH . '/valid'), 'json');
+
+        self::assertFalse($object->isInitialized());
+
+        $object();
+
+        self::assertTrue($object->isInitialized());
+
+        $object();
+
+        self::assertTrue($object->isInitialized());
+        self::assertTrue($object->hasItem($key));
+        self::assertSame($value, $object->getItem($key));
+        self::assertCount(2, $object);
+
+        self::assertTrue($object->hasItem('key3'));
+        self::assertSame('value3', $object->getItem('key3'));
+    }
 }
