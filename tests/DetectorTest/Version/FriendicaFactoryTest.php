@@ -18,7 +18,6 @@ use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
 
 use function assert;
-use function get_class;
 use function sprintf;
 
 final class FriendicaFactoryTest extends TestCase
@@ -33,7 +32,7 @@ final class FriendicaFactoryTest extends TestCase
     public function testInvoke(): void
     {
         $object = $this->object;
-        assert($object instanceof FriendicaFactory, sprintf('$object should be an instance of %s, but is %s', FriendicaFactory::class, get_class($object)));
+        assert($object instanceof FriendicaFactory, sprintf('$object should be an instance of %s, but is %s', FriendicaFactory::class, $object::class));
         $result = $object(new NullLogger());
         self::assertInstanceOf(Friendica::class, $result);
     }

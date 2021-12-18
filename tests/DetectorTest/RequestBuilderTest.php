@@ -26,7 +26,6 @@ use UaRequest\GenericRequestFactory;
 use UnexpectedValueException;
 
 use function assert;
-use function get_class;
 use function sprintf;
 
 final class RequestBuilderTest extends TestCase
@@ -78,7 +77,7 @@ final class RequestBuilderTest extends TestCase
 
         assert($logger instanceof LoggerInterface);
         $result = $this->object->buildRequest($logger, $useragent);
-        assert($result instanceof GenericRequest, sprintf('$result should be an instance of %s, but is %s', GenericRequest::class, get_class($result)));
+        assert($result instanceof GenericRequest, sprintf('$result should be an instance of %s, but is %s', GenericRequest::class, $result::class));
 
         self::assertInstanceOf(GenericRequest::class, $result);
     }
@@ -128,7 +127,7 @@ final class RequestBuilderTest extends TestCase
         $request        = $requestFactory->createRequestFromPsr7Message($message);
 
         $result = $this->object->buildRequest($logger, $request);
-        assert($result instanceof GenericRequest, sprintf('$result should be an instance of %s, but is %s', GenericRequest::class, get_class($result)));
+        assert($result instanceof GenericRequest, sprintf('$result should be an instance of %s, but is %s', GenericRequest::class, $result::class));
 
         self::assertInstanceOf(GenericRequest::class, $result);
     }
@@ -178,7 +177,7 @@ final class RequestBuilderTest extends TestCase
         $request        = $requestFactory->createRequestFromPsr7Message($message);
 
         $result = $this->object->buildRequest($logger, $request);
-        assert($result instanceof GenericRequest, sprintf('$result should be an instance of %s, but is %s', GenericRequest::class, get_class($result)));
+        assert($result instanceof GenericRequest, sprintf('$result should be an instance of %s, but is %s', GenericRequest::class, $result::class));
 
         self::assertInstanceOf(GenericRequest::class, $result);
     }

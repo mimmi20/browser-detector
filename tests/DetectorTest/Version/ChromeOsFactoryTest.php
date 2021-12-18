@@ -18,7 +18,6 @@ use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
 
 use function assert;
-use function get_class;
 use function sprintf;
 
 final class ChromeOsFactoryTest extends TestCase
@@ -33,7 +32,7 @@ final class ChromeOsFactoryTest extends TestCase
     public function testInvoke(): void
     {
         $object = $this->object;
-        assert($object instanceof ChromeOsFactory, sprintf('$object should be an instance of %s, but is %s', ChromeOsFactory::class, get_class($object)));
+        assert($object instanceof ChromeOsFactory, sprintf('$object should be an instance of %s, but is %s', ChromeOsFactory::class, $object::class));
         $result = $object(new NullLogger());
         self::assertInstanceOf(ChromeOs::class, $result);
     }

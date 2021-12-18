@@ -28,7 +28,6 @@ use UaResult\Engine\EngineInterface;
 use UnexpectedValueException;
 
 use function assert;
-use function get_class;
 use function gettype;
 use function is_object;
 use function sprintf;
@@ -558,7 +557,7 @@ final class BrowserLoaderTest extends TestCase
             sprintf(
                 '$browserResult should be an instance of %s, but is %s',
                 BrowserInterface::class,
-                is_object($browserResult) ? get_class($browserResult) : gettype($browserResult)
+                is_object($browserResult) ? $browserResult::class : gettype($browserResult)
             )
         );
 
@@ -571,7 +570,7 @@ final class BrowserLoaderTest extends TestCase
             sprintf(
                 '$engineResult should be an instance of %s, but is %s',
                 EngineInterface::class,
-                is_object($engineResult) ? get_class($engineResult) : gettype($engineResult)
+                is_object($engineResult) ? $engineResult::class : gettype($engineResult)
             )
         );
 

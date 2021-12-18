@@ -23,7 +23,6 @@ use stdClass;
 use UaResult\Company\CompanyInterface;
 
 use function assert;
-use function get_class;
 use function sprintf;
 
 /**
@@ -135,7 +134,7 @@ final class CompanyLoaderTest extends TestCase
         $object = new CompanyLoader($data);
 
         $result = $object->load($companyKey);
-        assert($result instanceof CompanyInterface, sprintf('$result should be an instance of %s, but is %s', CompanyInterface::class, get_class($result)));
+        assert($result instanceof CompanyInterface, sprintf('$result should be an instance of %s, but is %s', CompanyInterface::class, $result::class));
 
         self::assertInstanceOf(CompanyInterface::class, $result);
 

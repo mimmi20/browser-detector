@@ -38,7 +38,6 @@ use UaResult\Result\ResultInterface;
 use UnexpectedValueException;
 
 use function assert;
-use function get_class;
 use function sprintf;
 
 final class DetectorTest extends TestCase
@@ -166,7 +165,7 @@ final class DetectorTest extends TestCase
         );
 
         $result = $object->getBrowser($useragent);
-        assert($result instanceof ResultInterface, sprintf('$result should be an instance of %s, but is %s', ResultInterface::class, get_class($result)));
+        assert($result instanceof ResultInterface, sprintf('$result should be an instance of %s, but is %s', ResultInterface::class, $result::class));
 
         self::assertInstanceOf(ResultInterface::class, $result);
         self::assertSame($device, $result->getDevice());
@@ -302,7 +301,7 @@ final class DetectorTest extends TestCase
         $request        = $requestFactory->createRequestFromPsr7Message($message);
 
         $result = $object->__invoke($request);
-        assert($result instanceof ResultInterface, sprintf('$result should be an instance of %s, but is %s', ResultInterface::class, get_class($result)));
+        assert($result instanceof ResultInterface, sprintf('$result should be an instance of %s, but is %s', ResultInterface::class, $result::class));
 
         self::assertInstanceOf(ResultInterface::class, $result);
         self::assertSame($device, $result->getDevice());
@@ -427,13 +426,13 @@ final class DetectorTest extends TestCase
         $request        = $requestFactory->createRequestFromPsr7Message($message);
 
         $result = $object($request);
-        assert($result instanceof ResultInterface, sprintf('$result should be an instance of %s, but is %s', ResultInterface::class, get_class($result)));
+        assert($result instanceof ResultInterface, sprintf('$result should be an instance of %s, but is %s', ResultInterface::class, $result::class));
 
         self::assertInstanceOf(ResultInterface::class, $result);
         self::assertSame($mockResult, $result);
 
         $result2 = $object->__invoke($message);
-        assert($result2 instanceof ResultInterface, sprintf('$result2 should be an instance of %s, but is %s', ResultInterface::class, get_class($result2)));
+        assert($result2 instanceof ResultInterface, sprintf('$result2 should be an instance of %s, but is %s', ResultInterface::class, $result2::class));
 
         self::assertSame($result, $result2);
     }
@@ -665,7 +664,7 @@ final class DetectorTest extends TestCase
         );
 
         $result = $object->__invoke($useragent);
-        assert($result instanceof ResultInterface, sprintf('$result should be an instance of %s, but is %s', ResultInterface::class, get_class($result)));
+        assert($result instanceof ResultInterface, sprintf('$result should be an instance of %s, but is %s', ResultInterface::class, $result::class));
 
         self::assertInstanceOf(ResultInterface::class, $result);
         self::assertSame($device, $result->getDevice());
@@ -797,7 +796,7 @@ final class DetectorTest extends TestCase
         );
 
         $result = $object->__invoke([Constants::HEADER_HTTP_USERAGENT => $useragent]);
-        assert($result instanceof ResultInterface, sprintf('$result should be an instance of %s, but is %s', ResultInterface::class, get_class($result)));
+        assert($result instanceof ResultInterface, sprintf('$result should be an instance of %s, but is %s', ResultInterface::class, $result::class));
 
         self::assertInstanceOf(ResultInterface::class, $result);
         self::assertSame($device, $result->getDevice());
@@ -935,7 +934,7 @@ final class DetectorTest extends TestCase
         $message = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => [$useragent]]);
 
         $result = $object->__invoke($message);
-        assert($result instanceof ResultInterface, sprintf('$result should be an instance of %s, but is %s', ResultInterface::class, get_class($result)));
+        assert($result instanceof ResultInterface, sprintf('$result should be an instance of %s, but is %s', ResultInterface::class, $result::class));
 
         self::assertInstanceOf(ResultInterface::class, $result);
         self::assertSame($device, $result->getDevice());
@@ -1069,7 +1068,7 @@ final class DetectorTest extends TestCase
         $message = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => [$useragent]]);
 
         $result = $object->__invoke($message);
-        assert($result instanceof ResultInterface, sprintf('$result should be an instance of %s, but is %s', ResultInterface::class, get_class($result)));
+        assert($result instanceof ResultInterface, sprintf('$result should be an instance of %s, but is %s', ResultInterface::class, $result::class));
 
         self::assertInstanceOf(ResultInterface::class, $result);
         self::assertSame($browser, $result->getBrowser());
@@ -1202,7 +1201,7 @@ final class DetectorTest extends TestCase
         $message = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => [$useragent]]);
 
         $result = $object->__invoke($message);
-        assert($result instanceof ResultInterface, sprintf('$result should be an instance of %s, but is %s', ResultInterface::class, get_class($result)));
+        assert($result instanceof ResultInterface, sprintf('$result should be an instance of %s, but is %s', ResultInterface::class, $result::class));
 
         self::assertInstanceOf(ResultInterface::class, $result);
         //self::assertSame($device, $result->getDevice());
@@ -1348,7 +1347,7 @@ final class DetectorTest extends TestCase
         $message = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => [$useragent]]);
 
         $result = $object->__invoke($message);
-        assert($result instanceof ResultInterface, sprintf('$result should be an instance of %s, but is %s', ResultInterface::class, get_class($result)));
+        assert($result instanceof ResultInterface, sprintf('$result should be an instance of %s, but is %s', ResultInterface::class, $result::class));
 
         self::assertInstanceOf(ResultInterface::class, $result);
         self::assertSame($device, $result->getDevice());
@@ -1490,7 +1489,7 @@ final class DetectorTest extends TestCase
         $message = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => [$useragent]]);
 
         $result = $object->__invoke($message);
-        assert($result instanceof ResultInterface, sprintf('$result should be an instance of %s, but is %s', ResultInterface::class, get_class($result)));
+        assert($result instanceof ResultInterface, sprintf('$result should be an instance of %s, but is %s', ResultInterface::class, $result::class));
 
         self::assertInstanceOf(ResultInterface::class, $result);
         self::assertSame($device, $result->getDevice());
@@ -1641,7 +1640,7 @@ final class DetectorTest extends TestCase
         $message = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => [$useragent]]);
 
         $result = $object->__invoke($message);
-        assert($result instanceof ResultInterface, sprintf('$result should be an instance of %s, but is %s', ResultInterface::class, get_class($result)));
+        assert($result instanceof ResultInterface, sprintf('$result should be an instance of %s, but is %s', ResultInterface::class, $result::class));
 
         self::assertInstanceOf(ResultInterface::class, $result);
         self::assertSame($device, $result->getDevice());
@@ -1787,7 +1786,7 @@ final class DetectorTest extends TestCase
         $message = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => [$useragent]]);
 
         $result = $object->__invoke($message);
-        assert($result instanceof ResultInterface, sprintf('$result should be an instance of %s, but is %s', ResultInterface::class, get_class($result)));
+        assert($result instanceof ResultInterface, sprintf('$result should be an instance of %s, but is %s', ResultInterface::class, $result::class));
 
         self::assertInstanceOf(ResultInterface::class, $result);
         self::assertSame($device, $result->getDevice());
@@ -1933,7 +1932,7 @@ final class DetectorTest extends TestCase
         $message = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => [$useragent]]);
 
         $result = $object->__invoke($message);
-        assert($result instanceof ResultInterface, sprintf('$result should be an instance of %s, but is %s', ResultInterface::class, get_class($result)));
+        assert($result instanceof ResultInterface, sprintf('$result should be an instance of %s, but is %s', ResultInterface::class, $result::class));
 
         self::assertInstanceOf(ResultInterface::class, $result);
         self::assertSame($device, $result->getDevice());
@@ -2083,7 +2082,7 @@ final class DetectorTest extends TestCase
         $message = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => [$useragent]]);
 
         $result = $object->__invoke($message);
-        assert($result instanceof ResultInterface, sprintf('$result should be an instance of %s, but is %s', ResultInterface::class, get_class($result)));
+        assert($result instanceof ResultInterface, sprintf('$result should be an instance of %s, but is %s', ResultInterface::class, $result::class));
 
         self::assertInstanceOf(ResultInterface::class, $result);
         self::assertSame($device, $result->getDevice());
@@ -2232,7 +2231,7 @@ final class DetectorTest extends TestCase
         $message = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => [$useragent]]);
 
         $result = $object->__invoke($message);
-        assert($result instanceof ResultInterface, sprintf('$result should be an instance of %s, but is %s', ResultInterface::class, get_class($result)));
+        assert($result instanceof ResultInterface, sprintf('$result should be an instance of %s, but is %s', ResultInterface::class, $result::class));
 
         self::assertInstanceOf(ResultInterface::class, $result);
         self::assertSame($device, $result->getDevice());
@@ -2379,7 +2378,7 @@ final class DetectorTest extends TestCase
         $message = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => [$useragent]]);
 
         $result = $object->__invoke($message);
-        assert($result instanceof ResultInterface, sprintf('$result should be an instance of %s, but is %s', ResultInterface::class, get_class($result)));
+        assert($result instanceof ResultInterface, sprintf('$result should be an instance of %s, but is %s', ResultInterface::class, $result::class));
 
         self::assertInstanceOf(ResultInterface::class, $result);
         self::assertSame($device, $result->getDevice());

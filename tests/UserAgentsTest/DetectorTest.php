@@ -40,7 +40,6 @@ use UaResult\Result\ResultInterface;
 use UnexpectedValueException;
 
 use function assert;
-use function get_class;
 use function file_get_contents;
 use function is_array;
 use function is_iterable;
@@ -240,7 +239,7 @@ final class DetectorTest extends TestCase
     public function testGetBrowser(array $headers, Result $expectedResult): void
     {
         $result = $this->object->__invoke($headers);
-        assert($result instanceof ResultInterface, sprintf('$result should be an instance of %s, but is %s', ResultInterface::class, get_class($result)));
+        assert($result instanceof ResultInterface, sprintf('$result should be an instance of %s, but is %s', ResultInterface::class, $result::class));
 
         try {
             $encodedHeaders = json_encode($headers, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_THROW_ON_ERROR);
@@ -328,7 +327,7 @@ final class DetectorTest extends TestCase
         $companyLoaderFactory = new CompanyLoaderFactory();
 
         $companyLoader = $companyLoaderFactory();
-        assert($companyLoader instanceof CompanyLoader, sprintf('$companyLoader should be an instance of %s, but is %s', CompanyLoader::class, get_class($companyLoader)));
+        assert($companyLoader instanceof CompanyLoader, sprintf('$companyLoader should be an instance of %s, but is %s', CompanyLoader::class, $companyLoader::class));
         $resultFactory = new ResultFactory($companyLoader, $logger);
 
         foreach ($files as $file) {

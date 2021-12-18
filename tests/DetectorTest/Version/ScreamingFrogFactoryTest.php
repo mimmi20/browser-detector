@@ -18,7 +18,6 @@ use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
 
 use function assert;
-use function get_class;
 use function sprintf;
 
 final class ScreamingFrogFactoryTest extends TestCase
@@ -33,7 +32,7 @@ final class ScreamingFrogFactoryTest extends TestCase
     public function testInvoke(): void
     {
         $object = $this->object;
-        assert($object instanceof ScreamingFrogFactory, sprintf('$object should be an instance of %s, but is %s', ScreamingFrogFactory::class, get_class($object)));
+        assert($object instanceof ScreamingFrogFactory, sprintf('$object should be an instance of %s, but is %s', ScreamingFrogFactory::class, $object::class));
         $result = $object(new NullLogger());
         self::assertInstanceOf(ScreamingFrog::class, $result);
     }
