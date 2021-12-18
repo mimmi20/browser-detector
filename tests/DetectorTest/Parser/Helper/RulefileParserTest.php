@@ -176,4 +176,153 @@ final class RulefileParserTest extends TestCase
 
         self::assertSame($fallback, $result);
     }
+
+    /**
+     * @throws InvalidArgumentException
+     * @throws ExpectationFailedException
+     */
+    public function testParseNotEmptyFile(): void
+    {
+        $structure = ['bot.json' => '{"generic": "test-generic", "rules": {"/test-useragent/": "test-mode", "/test/": "test-mode-2"}}'];
+
+        vfsStream::setup(self::DATA_PATH, null, $structure);
+
+        $fallback = 'test-fallback';
+
+        $useragent = 'test-useragent';
+
+        $logger = $this->getMockBuilder(LoggerInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $logger
+            ->expects(self::never())
+            ->method('debug');
+        $logger
+            ->expects(self::never())
+            ->method('info');
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::never())
+            ->method('warning');
+        $logger
+            ->expects(self::never())
+            ->method('error');
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
+
+        $object = new RulefileParser($logger);
+
+        $result = $object->parseFile(vfsStream::url(self::DATA_PATH . '/bot.json'), $useragent, $fallback);
+
+        self::assertSame('test-mode', $result);
+    }
+
+    /**
+     * @throws InvalidArgumentException
+     * @throws ExpectationFailedException
+     */
+    public function testParseNotEmptyFile2(): void
+    {
+        $structure = ['bot2.json' => '{"generic": "test-generic", "rules": {"1": "test-mode-3", "/test-useragent/": "test-mode", "/test/": "test-mode-2"}}'];
+
+        vfsStream::setup(self::DATA_PATH, null, $structure);
+
+        $fallback = 'test-fallback';
+
+        $useragent = 'test-useragent';
+
+        $logger = $this->getMockBuilder(LoggerInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $logger
+            ->expects(self::never())
+            ->method('debug');
+        $logger
+            ->expects(self::never())
+            ->method('info');
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::never())
+            ->method('warning');
+        $logger
+            ->expects(self::once())
+            ->method('error')
+            ->with(new IsInstanceOf(Throwable::class));
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
+
+        $object = new RulefileParser($logger);
+
+        $result = $object->parseFile(vfsStream::url(self::DATA_PATH . '/bot2.json'), $useragent, $fallback);
+
+        self::assertSame('test-mode', $result);
+    }
+
+    /**
+     * @throws InvalidArgumentException
+     * @throws ExpectationFailedException
+     */
+    public function testParseNotEmptyFile3(): void
+    {
+        $structure = ['bot2.json' => '{"generic": "test-generic", "rules": {"/(?<!test-?)useragent/": "test-mode-3", "/test-useragent/": "test-mode", "/test/": "test-mode-2"}}'];
+
+        vfsStream::setup(self::DATA_PATH, null, $structure);
+
+        $fallback = 'test-fallback';
+
+        $useragent = 'test-useragent';
+
+        $logger = $this->getMockBuilder(LoggerInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $logger
+            ->expects(self::never())
+            ->method('debug');
+        $logger
+            ->expects(self::never())
+            ->method('info');
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::never())
+            ->method('warning');
+        $logger
+            ->expects(self::once())
+            ->method('error')
+            ->with(new IsInstanceOf(Throwable::class));
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
+
+        $object = new RulefileParser($logger);
+
+        $result = $object->parseFile(vfsStream::url(self::DATA_PATH . '/bot2.json'), $useragent, $fallback);
+
+        self::assertSame('test-mode', $result);
+    }
 }
