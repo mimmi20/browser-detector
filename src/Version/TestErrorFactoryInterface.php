@@ -14,13 +14,7 @@ namespace BrowserDetector\Version;
 
 use Psr\Log\LoggerInterface;
 
-final class TestFactory implements TestFactoryInterface
+interface TestErrorFactoryInterface
 {
-    /**
-     * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
-     */
-    public function __invoke(LoggerInterface $logger): Test
-    {
-        return new Test();
-    }
+    public function __invoke(LoggerInterface $logger): TestError;
 }

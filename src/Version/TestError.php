@@ -12,15 +12,17 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Version;
 
-use Psr\Log\LoggerInterface;
+use UnexpectedValueException;
 
-final class TestFactory implements TestFactoryInterface
+final class TestError implements VersionDetectorInterface
 {
     /**
+     * returns the version of the operating system/platform
+     *
      * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
      */
-    public function __invoke(LoggerInterface $logger): Test
+    public function detectVersion(string $useragent): VersionInterface
     {
-        return new Test();
+        throw new UnexpectedValueException('error');
     }
 }

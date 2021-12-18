@@ -12,30 +12,17 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Version;
 
-use Psr\Log\LoggerInterface;
-
 final class Test implements VersionDetectorInterface
 {
-    private LoggerInterface $logger;
-
-    public function __construct(LoggerInterface $logger)
-    {
-        $this->logger = $logger;
-    }
-
     /**
      * returns the version of the operating system/platform
+     *
+     * @throws NotNumericException
      *
      * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
      */
     public function detectVersion(string $useragent): VersionInterface
     {
-        try {
-            return new Version('1', '11', '111', '1111', '11111');
-        } catch (NotNumericException $e) {
-            $this->logger->info($e);
-
-            return new NullVersion();
-        }
+        return new Version('1', '11', '111', '1111', '11111');
     }
 }

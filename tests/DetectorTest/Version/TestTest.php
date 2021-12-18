@@ -12,11 +12,11 @@ declare(strict_types = 1);
 
 namespace BrowserDetectorTest\Version;
 
+use BrowserDetector\Version\NotNumericException;
 use BrowserDetector\Version\Test;
 use BrowserDetector\Version\VersionInterface;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
-use Psr\Log\NullLogger;
 use SebastianBergmann\RecursionContext\InvalidArgumentException;
 use UnexpectedValueException;
 
@@ -26,12 +26,13 @@ final class TestTest extends TestCase
      * @throws InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws UnexpectedValueException
+     * @throws NotNumericException
      *
      * @dataProvider providerVersion
      */
     public function testTestdetectVersion(string $useragent, ?string $expectedVersion): void
     {
-        $object = new Test(new NullLogger());
+        $object = new Test();
 
         $detectedVersion = $object->detectVersion($useragent);
 
