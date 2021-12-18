@@ -40,8 +40,8 @@ use UaResult\Result\ResultInterface;
 use UnexpectedValueException;
 
 use function assert;
-use function get_class;
 use function file_get_contents;
+use function get_class;
 use function is_array;
 use function is_iterable;
 use function is_string;
