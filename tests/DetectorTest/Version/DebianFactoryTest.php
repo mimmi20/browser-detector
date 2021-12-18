@@ -18,6 +18,7 @@ use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
 
 use function assert;
+use function get_class;
 use function sprintf;
 
 final class DebianFactoryTest extends TestCase
@@ -32,7 +33,7 @@ final class DebianFactoryTest extends TestCase
     public function testInvoke(): void
     {
         $object = $this->object;
-        assert($object instanceof DebianFactory, sprintf('$object should be an instance of %s, but is %s', DebianFactory::class, $object::class));
+        assert($object instanceof DebianFactory, sprintf('$object should be an instance of %s, but is %s', DebianFactory::class, get_class($object)));
         $result = $object(new NullLogger());
         self::assertInstanceOf(Debian::class, $result);
     }

@@ -18,6 +18,7 @@ use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
 
 use function assert;
+use function get_class;
 use function sprintf;
 
 final class MaxthonFactoryTest extends TestCase
@@ -32,7 +33,7 @@ final class MaxthonFactoryTest extends TestCase
     public function testInvoke(): void
     {
         $object = $this->object;
-        assert($object instanceof MaxthonFactory, sprintf('$object should be an instance of %s, but is %s', MaxthonFactory::class, $object::class));
+        assert($object instanceof MaxthonFactory, sprintf('$object should be an instance of %s, but is %s', MaxthonFactory::class, get_class($object)));
         $result = $object(new NullLogger());
         self::assertInstanceOf(Maxthon::class, $result);
     }

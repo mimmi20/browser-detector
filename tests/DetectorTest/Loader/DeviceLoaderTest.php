@@ -28,6 +28,7 @@ use UaResult\Os\OsInterface;
 use UnexpectedValueException;
 
 use function assert;
+use function get_class;
 use function gettype;
 use function is_object;
 use function sprintf;
@@ -472,7 +473,7 @@ final class DeviceLoaderTest extends TestCase
             sprintf(
                 '$deviceResult should be an instance of %s, but is %s',
                 DeviceInterface::class,
-                is_object($deviceResult) ? $deviceResult::class : gettype($deviceResult)
+                is_object($deviceResult) ? get_class($deviceResult) : gettype($deviceResult)
             )
         );
 
@@ -486,7 +487,7 @@ final class DeviceLoaderTest extends TestCase
             sprintf(
                 '$platformResult should be an instance of %s, but is %s',
                 OsInterface::class,
-                is_object($platformResult) ? $platformResult::class : gettype($platformResult)
+                is_object($platformResult) ? get_class($platformResult) : gettype($platformResult)
             )
         );
 
