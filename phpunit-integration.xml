@@ -2,7 +2,7 @@
 
 <phpunit
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="../vendor/phpunit/phpunit/phpunit.xsd"
+    xsi:noNamespaceSchemaLocation="vendor/phpunit/phpunit/phpunit.xsd"
     backupGlobals="false"
     backupStaticAttributes="false"
     beStrictAboutChangesToGlobalState="true"
@@ -17,7 +17,7 @@
     failOnSkipped="true"
     failOnWarning="true"
     verbose="false"
-    bootstrap="../vendor/autoload.php"
+    bootstrap="vendor/autoload.php"
     enforceTimeLimit="false"
     executionOrder="default"
     resolveDependencies="true"
@@ -30,7 +30,7 @@
 
     <testsuites>
         <testsuite name="IntegrationTests">
-            <directory>./UserAgentsTest</directory>
+            <directory>tests/UserAgentsTest</directory>
         </testsuite>
     </testsuites>
 
