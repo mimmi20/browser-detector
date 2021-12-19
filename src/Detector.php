@@ -25,7 +25,7 @@ use Psr\SimpleCache\InvalidArgumentException;
 use UaDeviceType\Unknown;
 use UaNormalizer\Normalizer\Exception;
 use UaNormalizer\Normalizer\NormalizerInterface;
-use UaRequest\GenericRequest;
+use UaRequest\GenericRequestInterface;
 use UaResult\Browser\Browser;
 use UaResult\Company\Company;
 use UaResult\Device\Device;
@@ -84,7 +84,7 @@ final class Detector implements DetectorInterface
     /**
      * Gets the information about the browser by User Agent
      *
-     * @param array<string, string>|GenericRequest|MessageInterface|string $headers
+     * @param array<string, string>|GenericRequestInterface|MessageInterface|string $headers
      *
      * @throws InvalidArgumentException
      * @throws UnexpectedValueException
@@ -115,21 +115,21 @@ final class Detector implements DetectorInterface
      *
      * @deprecated
      *
-     * @param array<string, string>|GenericRequest|MessageInterface|string $headers
+     * @param array<string, string>|GenericRequestInterface|MessageInterface|string $request
      *
      * @throws InvalidArgumentException
      * @throws UnexpectedValueException
      * @throws NotNumericException
      */
-    public function getBrowser($headers): ResultInterface
+    public function getBrowser($request): ResultInterface
     {
-        return $this->__invoke($headers);
+        return $this->__invoke($request);
     }
 
     /**
      * @throws NotNumericException
      */
-    private function parse(GenericRequest $request): Result
+    private function parse(GenericRequestInterface $request): Result
     {
         try {
             $deviceUa = (string) $this->normalizer->normalize($request->getDeviceUserAgent());

@@ -30,6 +30,7 @@ use stdClass;
 use UaNormalizer\Normalizer\NormalizerInterface;
 use UaRequest\Constants;
 use UaRequest\GenericRequestFactory;
+use UaRequest\GenericRequestInterface;
 use UaResult\Browser\BrowserInterface;
 use UaResult\Device\DeviceInterface;
 use UaResult\Engine\EngineInterface;
@@ -148,13 +149,6 @@ final class DetectorTest extends TestCase
             ->with($useragent)
             ->willReturn($normalizedUseragent);
 
-        assert($logger instanceof LoggerInterface);
-        assert($cache instanceof CacheInterface);
-        assert($deviceParser instanceof DeviceParserInterface);
-        assert($platformParser instanceof PlatformParserInterface);
-        assert($browserParser instanceof BrowserParserInterface);
-        assert($engineParser instanceof EngineParserInterface);
-        assert($normalizer instanceof NormalizerInterface);
         $object = new Detector(
             $logger,
             $cache,
@@ -280,13 +274,6 @@ final class DetectorTest extends TestCase
             ->with($useragent)
             ->willReturn($normalizedUseragent);
 
-        assert($logger instanceof LoggerInterface);
-        assert($cache instanceof CacheInterface);
-        assert($deviceParser instanceof DeviceParserInterface);
-        assert($platformParser instanceof PlatformParserInterface);
-        assert($browserParser instanceof BrowserParserInterface);
-        assert($engineParser instanceof EngineParserInterface);
-        assert($normalizer instanceof NormalizerInterface);
         $object = new Detector(
             $logger,
             $cache,
@@ -405,13 +392,6 @@ final class DetectorTest extends TestCase
             ->expects(self::never())
             ->method('normalize');
 
-        assert($logger instanceof LoggerInterface);
-        assert($cache instanceof CacheInterface);
-        assert($deviceParser instanceof DeviceParserInterface);
-        assert($platformParser instanceof PlatformParserInterface);
-        assert($browserParser instanceof BrowserParserInterface);
-        assert($engineParser instanceof EngineParserInterface);
-        assert($normalizer instanceof NormalizerInterface);
         $object = new Detector(
             $logger,
             $cache,
@@ -647,13 +627,6 @@ final class DetectorTest extends TestCase
             ->with($useragent)
             ->willReturn($normalizedUseragent);
 
-        assert($logger instanceof LoggerInterface);
-        assert($cache instanceof CacheInterface);
-        assert($deviceParser instanceof DeviceParserInterface);
-        assert($platformParser instanceof PlatformParserInterface);
-        assert($browserParser instanceof BrowserParserInterface);
-        assert($engineParser instanceof EngineParserInterface);
-        assert($normalizer instanceof NormalizerInterface);
         $object = new Detector(
             $logger,
             $cache,
@@ -779,13 +752,6 @@ final class DetectorTest extends TestCase
             ->with($useragent)
             ->willReturn($normalizedUseragent);
 
-        assert($logger instanceof LoggerInterface);
-        assert($cache instanceof CacheInterface);
-        assert($deviceParser instanceof DeviceParserInterface);
-        assert($platformParser instanceof PlatformParserInterface);
-        assert($browserParser instanceof BrowserParserInterface);
-        assert($engineParser instanceof EngineParserInterface);
-        assert($normalizer instanceof NormalizerInterface);
         $object = new Detector(
             $logger,
             $cache,
@@ -915,13 +881,6 @@ final class DetectorTest extends TestCase
             ->with($useragent)
             ->willReturn($normalizedUseragent);
 
-        assert($logger instanceof LoggerInterface);
-        assert($cache instanceof CacheInterface);
-        assert($deviceParser instanceof DeviceParserInterface);
-        assert($platformParser instanceof PlatformParserInterface);
-        assert($browserParser instanceof BrowserParserInterface);
-        assert($engineParser instanceof EngineParserInterface);
-        assert($normalizer instanceof NormalizerInterface);
         $object = new Detector(
             $logger,
             $cache,
@@ -1049,13 +1008,6 @@ final class DetectorTest extends TestCase
             ->with($useragent)
             ->willReturn($normalizedUseragent);
 
-        assert($logger instanceof LoggerInterface);
-        assert($cache instanceof CacheInterface);
-        assert($deviceParser instanceof DeviceParserInterface);
-        assert($platformParser instanceof PlatformParserInterface);
-        assert($browserParser instanceof BrowserParserInterface);
-        assert($engineParser instanceof EngineParserInterface);
-        assert($normalizer instanceof NormalizerInterface);
         $object = new Detector(
             $logger,
             $cache,
@@ -1066,7 +1018,24 @@ final class DetectorTest extends TestCase
             $normalizer
         );
 
-        $message = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => [$useragent]]);
+        $message = $this->getMockBuilder(GenericRequestInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $message
+            ->expects(self::once())
+            ->method('getDeviceUserAgent')
+            ->willReturn($useragent);
+        $message
+            ->expects(self::never())
+            ->method('getPlatformUserAgent');
+        $message
+            ->expects(self::once())
+            ->method('getBrowserUserAgent')
+            ->willReturn($useragent);
+        $message
+            ->expects(self::once())
+            ->method('getEngineUserAgent')
+            ->willReturn($useragent);
 
         $result = $object->__invoke($message);
         assert($result instanceof ResultInterface, sprintf('$result should be an instance of %s, but is %s', ResultInterface::class, get_class($result)));
@@ -1182,13 +1151,6 @@ final class DetectorTest extends TestCase
             ->with($useragent)
             ->willReturn($normalizedUseragent);
 
-        assert($logger instanceof LoggerInterface);
-        assert($cache instanceof CacheInterface);
-        assert($deviceParser instanceof DeviceParserInterface);
-        assert($platformParser instanceof PlatformParserInterface);
-        assert($browserParser instanceof BrowserParserInterface);
-        assert($engineParser instanceof EngineParserInterface);
-        assert($normalizer instanceof NormalizerInterface);
         $object = new Detector(
             $logger,
             $cache,
@@ -1199,7 +1161,24 @@ final class DetectorTest extends TestCase
             $normalizer
         );
 
-        $message = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => [$useragent]]);
+        $message = $this->getMockBuilder(GenericRequestInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $message
+            ->expects(self::once())
+            ->method('getDeviceUserAgent')
+            ->willReturn($useragent);
+        $message
+            ->expects(self::never())
+            ->method('getPlatformUserAgent');
+        $message
+            ->expects(self::once())
+            ->method('getBrowserUserAgent')
+            ->willReturn($useragent);
+        $message
+            ->expects(self::once())
+            ->method('getEngineUserAgent')
+            ->willReturn($useragent);
 
         $result = $object->__invoke($message);
         assert($result instanceof ResultInterface, sprintf('$result should be an instance of %s, but is %s', ResultInterface::class, get_class($result)));
@@ -1328,13 +1307,6 @@ final class DetectorTest extends TestCase
             ->with($useragent)
             ->willReturn($normalizedUseragent);
 
-        assert($logger instanceof LoggerInterface);
-        assert($cache instanceof CacheInterface);
-        assert($deviceParser instanceof DeviceParserInterface);
-        assert($platformParser instanceof PlatformParserInterface);
-        assert($browserParser instanceof BrowserParserInterface);
-        assert($engineParser instanceof EngineParserInterface);
-        assert($normalizer instanceof NormalizerInterface);
         $object = new Detector(
             $logger,
             $cache,
@@ -1345,7 +1317,24 @@ final class DetectorTest extends TestCase
             $normalizer
         );
 
-        $message = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => [$useragent]]);
+        $message = $this->getMockBuilder(GenericRequestInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $message
+            ->expects(self::once())
+            ->method('getDeviceUserAgent')
+            ->willReturn($useragent);
+        $message
+            ->expects(self::never())
+            ->method('getPlatformUserAgent');
+        $message
+            ->expects(self::once())
+            ->method('getBrowserUserAgent')
+            ->willReturn($useragent);
+        $message
+            ->expects(self::once())
+            ->method('getEngineUserAgent')
+            ->willReturn($useragent);
 
         $result = $object->__invoke($message);
         assert($result instanceof ResultInterface, sprintf('$result should be an instance of %s, but is %s', ResultInterface::class, get_class($result)));
@@ -1470,13 +1459,6 @@ final class DetectorTest extends TestCase
             ->with($useragent)
             ->willReturn($normalizedUseragent);
 
-        assert($logger instanceof LoggerInterface);
-        assert($cache instanceof CacheInterface);
-        assert($deviceParser instanceof DeviceParserInterface);
-        assert($platformParser instanceof PlatformParserInterface);
-        assert($browserParser instanceof BrowserParserInterface);
-        assert($engineParser instanceof EngineParserInterface);
-        assert($normalizer instanceof NormalizerInterface);
         $object = new Detector(
             $logger,
             $cache,
@@ -1487,7 +1469,24 @@ final class DetectorTest extends TestCase
             $normalizer
         );
 
-        $message = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => [$useragent]]);
+        $message = $this->getMockBuilder(GenericRequestInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $message
+            ->expects(self::once())
+            ->method('getDeviceUserAgent')
+            ->willReturn($useragent);
+        $message
+            ->expects(self::never())
+            ->method('getPlatformUserAgent');
+        $message
+            ->expects(self::once())
+            ->method('getBrowserUserAgent')
+            ->willReturn($useragent);
+        $message
+            ->expects(self::once())
+            ->method('getEngineUserAgent')
+            ->willReturn($useragent);
 
         $result = $object->__invoke($message);
         assert($result instanceof ResultInterface, sprintf('$result should be an instance of %s, but is %s', ResultInterface::class, get_class($result)));
@@ -1621,13 +1620,6 @@ final class DetectorTest extends TestCase
             ->with($useragent)
             ->willReturn($normalizedUseragent);
 
-        assert($logger instanceof LoggerInterface);
-        assert($cache instanceof CacheInterface);
-        assert($deviceParser instanceof DeviceParserInterface);
-        assert($platformParser instanceof PlatformParserInterface);
-        assert($browserParser instanceof BrowserParserInterface);
-        assert($engineParser instanceof EngineParserInterface);
-        assert($normalizer instanceof NormalizerInterface);
         $object = new Detector(
             $logger,
             $cache,
@@ -1638,7 +1630,24 @@ final class DetectorTest extends TestCase
             $normalizer
         );
 
-        $message = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => [$useragent]]);
+        $message = $this->getMockBuilder(GenericRequestInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $message
+            ->expects(self::once())
+            ->method('getDeviceUserAgent')
+            ->willReturn($useragent);
+        $message
+            ->expects(self::never())
+            ->method('getPlatformUserAgent');
+        $message
+            ->expects(self::once())
+            ->method('getBrowserUserAgent')
+            ->willReturn($useragent);
+        $message
+            ->expects(self::once())
+            ->method('getEngineUserAgent')
+            ->willReturn($useragent);
 
         $result = $object->__invoke($message);
         assert($result instanceof ResultInterface, sprintf('$result should be an instance of %s, but is %s', ResultInterface::class, get_class($result)));
@@ -1767,13 +1776,6 @@ final class DetectorTest extends TestCase
             ->with($useragent)
             ->willReturn($normalizedUseragent);
 
-        assert($logger instanceof LoggerInterface);
-        assert($cache instanceof CacheInterface);
-        assert($deviceParser instanceof DeviceParserInterface);
-        assert($platformParser instanceof PlatformParserInterface);
-        assert($browserParser instanceof BrowserParserInterface);
-        assert($engineParser instanceof EngineParserInterface);
-        assert($normalizer instanceof NormalizerInterface);
         $object = new Detector(
             $logger,
             $cache,
@@ -1784,7 +1786,24 @@ final class DetectorTest extends TestCase
             $normalizer
         );
 
-        $message = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => [$useragent]]);
+        $message = $this->getMockBuilder(GenericRequestInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $message
+            ->expects(self::once())
+            ->method('getDeviceUserAgent')
+            ->willReturn($useragent);
+        $message
+            ->expects(self::never())
+            ->method('getPlatformUserAgent');
+        $message
+            ->expects(self::once())
+            ->method('getBrowserUserAgent')
+            ->willReturn($useragent);
+        $message
+            ->expects(self::once())
+            ->method('getEngineUserAgent')
+            ->willReturn($useragent);
 
         $result = $object->__invoke($message);
         assert($result instanceof ResultInterface, sprintf('$result should be an instance of %s, but is %s', ResultInterface::class, get_class($result)));
@@ -1913,13 +1932,6 @@ final class DetectorTest extends TestCase
             ->with($useragent)
             ->willReturn($normalizedUseragent);
 
-        assert($logger instanceof LoggerInterface);
-        assert($cache instanceof CacheInterface);
-        assert($deviceParser instanceof DeviceParserInterface);
-        assert($platformParser instanceof PlatformParserInterface);
-        assert($browserParser instanceof BrowserParserInterface);
-        assert($engineParser instanceof EngineParserInterface);
-        assert($normalizer instanceof NormalizerInterface);
         $object = new Detector(
             $logger,
             $cache,
@@ -1930,7 +1942,24 @@ final class DetectorTest extends TestCase
             $normalizer
         );
 
-        $message = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => [$useragent]]);
+        $message = $this->getMockBuilder(GenericRequestInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $message
+            ->expects(self::once())
+            ->method('getDeviceUserAgent')
+            ->willReturn($useragent);
+        $message
+            ->expects(self::never())
+            ->method('getPlatformUserAgent');
+        $message
+            ->expects(self::once())
+            ->method('getBrowserUserAgent')
+            ->willReturn($useragent);
+        $message
+            ->expects(self::once())
+            ->method('getEngineUserAgent')
+            ->willReturn($useragent);
 
         $result = $object->__invoke($message);
         assert($result instanceof ResultInterface, sprintf('$result should be an instance of %s, but is %s', ResultInterface::class, get_class($result)));
@@ -2063,13 +2092,6 @@ final class DetectorTest extends TestCase
             ->with($useragent)
             ->willReturn($normalizedUseragent);
 
-        assert($logger instanceof LoggerInterface);
-        assert($cache instanceof CacheInterface);
-        assert($deviceParser instanceof DeviceParserInterface);
-        assert($platformParser instanceof PlatformParserInterface);
-        assert($browserParser instanceof BrowserParserInterface);
-        assert($engineParser instanceof EngineParserInterface);
-        assert($normalizer instanceof NormalizerInterface);
         $object = new Detector(
             $logger,
             $cache,
@@ -2080,7 +2102,24 @@ final class DetectorTest extends TestCase
             $normalizer
         );
 
-        $message = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => [$useragent]]);
+        $message = $this->getMockBuilder(GenericRequestInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $message
+            ->expects(self::once())
+            ->method('getDeviceUserAgent')
+            ->willReturn($useragent);
+        $message
+            ->expects(self::never())
+            ->method('getPlatformUserAgent');
+        $message
+            ->expects(self::once())
+            ->method('getBrowserUserAgent')
+            ->willReturn($useragent);
+        $message
+            ->expects(self::once())
+            ->method('getEngineUserAgent')
+            ->willReturn($useragent);
 
         $result = $object->__invoke($message);
         assert($result instanceof ResultInterface, sprintf('$result should be an instance of %s, but is %s', ResultInterface::class, get_class($result)));
@@ -2212,13 +2251,6 @@ final class DetectorTest extends TestCase
             ->with($useragent)
             ->willReturn($normalizedUseragent);
 
-        assert($logger instanceof LoggerInterface);
-        assert($cache instanceof CacheInterface);
-        assert($deviceParser instanceof DeviceParserInterface);
-        assert($platformParser instanceof PlatformParserInterface);
-        assert($browserParser instanceof BrowserParserInterface);
-        assert($engineParser instanceof EngineParserInterface);
-        assert($normalizer instanceof NormalizerInterface);
         $object = new Detector(
             $logger,
             $cache,
@@ -2229,7 +2261,25 @@ final class DetectorTest extends TestCase
             $normalizer
         );
 
-        $message = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => [$useragent]]);
+        $message = $this->getMockBuilder(GenericRequestInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $message
+            ->expects(self::once())
+            ->method('getDeviceUserAgent')
+            ->willReturn($useragent);
+        $message
+            ->expects(self::once())
+            ->method('getPlatformUserAgent')
+            ->willReturn($useragent);
+        $message
+            ->expects(self::once())
+            ->method('getBrowserUserAgent')
+            ->willReturn($useragent);
+        $message
+            ->expects(self::once())
+            ->method('getEngineUserAgent')
+            ->willReturn($useragent);
 
         $result = $object->__invoke($message);
         assert($result instanceof ResultInterface, sprintf('$result should be an instance of %s, but is %s', ResultInterface::class, get_class($result)));
@@ -2359,13 +2409,6 @@ final class DetectorTest extends TestCase
             ->with($useragent)
             ->willReturn($normalizedUseragent);
 
-        assert($logger instanceof LoggerInterface);
-        assert($cache instanceof CacheInterface);
-        assert($deviceParser instanceof DeviceParserInterface);
-        assert($platformParser instanceof PlatformParserInterface);
-        assert($browserParser instanceof BrowserParserInterface);
-        assert($engineParser instanceof EngineParserInterface);
-        assert($normalizer instanceof NormalizerInterface);
         $object = new Detector(
             $logger,
             $cache,
@@ -2376,7 +2419,188 @@ final class DetectorTest extends TestCase
             $normalizer
         );
 
-        $message = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => [$useragent]]);
+        $message = $this->getMockBuilder(GenericRequestInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $message
+            ->expects(self::once())
+            ->method('getDeviceUserAgent')
+            ->willReturn($useragent);
+        $message
+            ->expects(self::once())
+            ->method('getPlatformUserAgent')
+            ->willReturn($useragent);
+        $message
+            ->expects(self::once())
+            ->method('getBrowserUserAgent')
+            ->willReturn($useragent);
+        $message
+            ->expects(self::once())
+            ->method('getEngineUserAgent')
+            ->willReturn($useragent);
+
+        $result = $object->__invoke($message);
+        assert($result instanceof ResultInterface, sprintf('$result should be an instance of %s, but is %s', ResultInterface::class, get_class($result)));
+
+        self::assertInstanceOf(ResultInterface::class, $result);
+        self::assertSame($device, $result->getDevice());
+        //self::assertSame($os, $result->getOs());
+        self::assertSame($browser, $result->getBrowser());
+        self::assertSame($engine, $result->getEngine());
+
+        self::assertInstanceOf(DeviceInterface::class, $result->getDevice());
+        self::assertSame('testDevice', $result->getDevice()->getDeviceName());
+        self::assertSame('test-engine', $result->getEngine()->getName());
+
+        self::assertNull($result->getOs()->getName());
+        self::assertNull($result->getOs()->getMarketingName());
+        self::assertNull($result->getOs()->getBits());
+    }
+
+    /**
+     * @throws InvalidArgumentException
+     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
+     * @throws ExpectationFailedException
+     * @throws Exception
+     * @throws \InvalidArgumentException
+     * @throws UnexpectedValueException
+     */
+    public function testGetDeviceWithoutPlatformAndError2(): void
+    {
+        $useragent = 'testagent';
+
+        $exception = new \UaNormalizer\Normalizer\Exception('test');
+
+        $logger = $this->getMockBuilder(LoggerInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $logger
+            ->expects(self::exactly(3))
+            ->method('debug');
+        $logger
+            ->expects(self::never())
+            ->method('info');
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::once())
+            ->method('warning');
+        $logger
+            ->expects(self::exactly(3))
+            ->method('error')
+            ->with($exception);
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
+
+        $device = $this->getMockBuilder(DeviceInterface::class)->getMock();
+        $device->expects(self::once())
+            ->method('getDeviceName')
+            ->willReturn('testDevice');
+
+        $deviceParser = $this->getMockBuilder(DeviceParserInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $deviceParser
+            ->expects(self::once())
+            ->method('parse')
+            ->with('')
+            ->willReturn([$device, null]);
+
+        $platformParser = $this->getMockBuilder(PlatformParserInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $platformParser
+            ->expects(self::never())
+            ->method('parse');
+
+        $browser = $this->createMock(BrowserInterface::class);
+        $engine  = $this->getMockBuilder(EngineInterface::class)->getMock();
+        $engine->expects(self::once())
+            ->method('getName')
+            ->willReturn('test-engine');
+
+        $browserParser = $this->getMockBuilder(BrowserParserInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $browserParser
+            ->expects(self::once())
+            ->method('parse')
+            ->with('')
+            ->willReturn([$browser, null]);
+
+        $engineParser = $this->getMockBuilder(EngineParserInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $engineParser
+            ->expects(self::once())
+            ->method('parse')
+            ->with('')
+            ->willReturn($engine);
+        $engineParser
+            ->expects(self::never())
+            ->method('load');
+
+        $cache = $this->getMockBuilder(CacheInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $cache
+            ->expects(self::once())
+            ->method('hasItem')
+            ->willReturn(false);
+        $cache
+            ->expects(self::never())
+            ->method('getItem');
+        $cache
+            ->expects(self::once())
+            ->method('setItem')
+            ->willReturn(false);
+
+        $normalizer = $this->getMockBuilder(NormalizerInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $normalizer
+            ->expects(self::exactly(4))
+            ->method('normalize')
+            ->with($useragent)
+            ->willThrowException($exception);
+
+        $object = new Detector(
+            $logger,
+            $cache,
+            $deviceParser,
+            $platformParser,
+            $browserParser,
+            $engineParser,
+            $normalizer
+        );
+
+        $message = $this->getMockBuilder(GenericRequestInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $message
+            ->expects(self::once())
+            ->method('getDeviceUserAgent')
+            ->willReturn($useragent);
+        $message
+            ->expects(self::once())
+            ->method('getPlatformUserAgent')
+            ->willReturn($useragent);
+        $message
+            ->expects(self::once())
+            ->method('getBrowserUserAgent')
+            ->willReturn($useragent);
+        $message
+            ->expects(self::once())
+            ->method('getEngineUserAgent')
+            ->willReturn($useragent);
 
         $result = $object->__invoke($message);
         assert($result instanceof ResultInterface, sprintf('$result should be an instance of %s, but is %s', ResultInterface::class, get_class($result)));
