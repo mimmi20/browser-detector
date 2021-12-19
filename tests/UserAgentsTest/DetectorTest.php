@@ -23,6 +23,7 @@ use Exception;
 use JsonException;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
+use Psr\Log\AbstractLogger;
 use Psr\Log\LoggerInterface;
 use Psr\Log\NullLogger;
 use Psr\SimpleCache\CacheInterface;
@@ -52,46 +53,48 @@ use function sprintf;
 use const JSON_THROW_ON_ERROR;
 use const JSON_UNESCAPED_SLASHES;
 use const JSON_UNESCAPED_UNICODE;
+use const PHP_EOL;
 
 /**
  * @infection-ignore-all
  */
 final class DetectorTest extends TestCase
 {
+    private static DetectorFactory $factory;
     private Detector $object;
 
-    /**
-     * Sets up the fixture, for example, open a network connection.
-     * This method is called before a test is executed.
-     *
-     * @coversNothing
-     */
-    protected function setUp(): void
+    public static function setUpBeforeClass(): void
     {
-        $logger = $this->getMockBuilder(LoggerInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
-        $logger
-            ->expects(self::never())
-            ->method('info');
-        $logger
-            ->expects(self::never())
-            ->method('notice');
-        $logger
-            ->expects(self::never())
-            ->method('warning');
-        $logger
-            ->expects(self::never())
-            ->method('error');
-        $logger
-            ->expects(self::never())
-            ->method('critical');
-        $logger
-            ->expects(self::never())
-            ->method('alert');
-        $logger
-            ->expects(self::never())
-            ->method('emergency');
+        $logger = new class() extends AbstractLogger {
+            /**
+             * Detailed debug information.
+             *
+             * @param string  $message
+             * @param mixed[] $context
+             *
+             * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+             * @phpcsSuppress SlevomatCodingStandard.TypeHints.ParameterTypeHint.MissingNativeTypeHint
+             */
+            public function debug($message, array $context = []): void
+            {
+                // do nothing here
+            }
+
+            /**
+             * Logs with an arbitrary level.
+             *
+             * @param int|string $level
+             * @param string     $message
+             * @param mixed[]    $context
+             *
+             * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+             * @phpcsSuppress SlevomatCodingStandard.TypeHints.ParameterTypeHint.MissingNativeTypeHint
+             */
+            public function log($level, $message, array $context = []): void
+            {
+                echo '[', $level, '] ', $message, PHP_EOL;
+            }
+        };
 
         $cache = new class() implements CacheInterface {
             /**
@@ -223,8 +226,18 @@ final class DetectorTest extends TestCase
         };
 
         assert($logger instanceof LoggerInterface);
-        $factory      = new DetectorFactory($cache, $logger);
-        $this->object = $factory();
+        self::$factory = new DetectorFactory($cache, $logger);
+    }
+
+    /**
+     * Sets up the fixture, for example, open a network connection.
+     * This method is called before a test is executed.
+     *
+     * @coversNothing
+     */
+    protected function setUp(): void
+    {
+        $this->object = (self::$factory)();
     }
 
     /**
