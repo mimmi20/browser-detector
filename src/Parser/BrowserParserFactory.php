@@ -14,16 +14,12 @@ namespace BrowserDetector\Parser;
 
 use BrowserDetector\Loader\BrowserLoaderFactory;
 use BrowserDetector\Loader\CompanyLoaderInterface;
-use BrowserDetector\Loader\Helper\Filter;
 use BrowserDetector\Parser\Helper\RulefileParser;
-use JsonClass\JsonInterface;
 use Psr\Log\LoggerInterface;
 
 final class BrowserParserFactory implements BrowserParserFactoryInterface
 {
     private LoggerInterface $logger;
-
-    private JsonInterface $jsonParser;
 
     private CompanyLoaderInterface $companyLoader;
 
@@ -31,12 +27,10 @@ final class BrowserParserFactory implements BrowserParserFactoryInterface
 
     public function __construct(
         LoggerInterface $logger,
-        JsonInterface $jsonParser,
         CompanyLoaderInterface $companyLoader,
         EngineParserInterface $engineParser
     ) {
         $this->logger        = $logger;
-        $this->jsonParser    = $jsonParser;
         $this->companyLoader = $companyLoader;
         $this->engineParser  = $engineParser;
     }
@@ -47,8 +41,8 @@ final class BrowserParserFactory implements BrowserParserFactoryInterface
     public function __invoke(): BrowserParserInterface
     {
         return new BrowserParser(
-            new BrowserLoaderFactory($this->logger, $this->jsonParser, $this->companyLoader, $this->engineParser, new Filter()),
-            new RulefileParser($this->jsonParser, $this->logger)
+            new BrowserLoaderFactory($this->logger, $this->companyLoader, $this->engineParser),
+            new RulefileParser($this->logger)
         );
     }
 }

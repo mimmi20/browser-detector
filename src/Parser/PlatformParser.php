@@ -15,7 +15,6 @@ namespace BrowserDetector\Parser;
 use BrowserDetector\Loader\NotFoundException;
 use BrowserDetector\Loader\PlatformLoaderFactoryInterface;
 use BrowserDetector\Parser\Helper\RulefileParserInterface;
-use SplFileInfo;
 use UaResult\Os\OsInterface;
 use UnexpectedValueException;
 
@@ -46,13 +45,13 @@ final class PlatformParser implements PlatformParserInterface
     public function parse(string $useragent): OsInterface
     {
         $mode = $this->fileParser->parseFile(
-            new SplFileInfo(self::GENERIC_FILE),
+            self::GENERIC_FILE,
             $useragent,
             'unknown'
         );
 
         $key = $this->fileParser->parseFile(
-            new SplFileInfo(sprintf(self::SPECIFIC_FILE, $mode)),
+            sprintf(self::SPECIFIC_FILE, $mode),
             $useragent,
             'unknown'
         );

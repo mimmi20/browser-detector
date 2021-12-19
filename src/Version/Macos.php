@@ -25,6 +25,7 @@ use function str_replace;
 
 final class Macos implements VersionDetectorInterface
 {
+    public const SEARCHES    = ['Mac OS X Version', 'Mac OS X v', 'Mac OS X', 'OS X', 'os=mac '];
     private const DARWIN_MAP = [
         '/darwin\/19/i' => '10.15.0',
         '/darwin\/18\.[67]/i' => '10.14.6',
@@ -213,39 +214,41 @@ final class Macos implements VersionDetectorInterface
             }
         }
 
-        $searches = ['Mac OS X Version', 'Mac OS X v', 'Mac OS X', 'OS X', 'os=mac '];
-
         try {
-            $detectedVersion = $this->versionFactory->detectVersion(str_replace(',', '.', $useragent), $searches);
+            $detectedVersion = $this->versionFactory->detectVersion(str_replace(',', '.', $useragent), self::SEARCHES);
         } catch (NotNumericException $e) {
             $this->logger->info($e);
 
             return new NullVersion();
         }
 
-        if (null !== $detectedVersion->getVersion(VersionInterface::IGNORE_MINOR) && preg_match('/(?P<major>\d{2})(?P<minor>\d{2})(?P<micro>\d)/', $detectedVersion->getVersion(VersionInterface::IGNORE_MINOR), $versions)) {
-            try {
-                return $this->versionFactory->set($versions['major'] . '.' . $versions['minor'] . '.' . $versions['micro']);
-            } catch (NotNumericException $e) {
-                $this->logger->info($e);
+        $versionNumber = $detectedVersion->getVersion(VersionInterface::IGNORE_MINOR);
 
-                return new NullVersion();
-            }
-        }
+        if (null !== $versionNumber) {
+            if (preg_match('/(?P<major>\d{2})(?P<minor>\d{2})(?P<micro>\d)/', $versionNumber, $versions)) {
+                try {
+                    return $this->versionFactory->set($versions['major'] . '.' . $versions['minor'] . '.' . $versions['micro']);
+                } catch (NotNumericException $e) {
+                    $this->logger->info($e);
 
-        if (null !== $detectedVersion->getVersion(VersionInterface::IGNORE_MINOR) && preg_match('/(?P<major>\d{2})(?P<minor>\d)(?P<micro>\d)?/', $detectedVersion->getVersion(VersionInterface::IGNORE_MINOR), $versions)) {
-            $version = $versions['major'] . '.' . $versions['minor'];
-
-            if (array_key_exists('micro', $versions)) {
-                $version .= '.' . $versions['micro'];
+                    return new NullVersion();
+                }
             }
 
-            try {
-                return $this->versionFactory->set($version);
-            } catch (NotNumericException $e) {
-                $this->logger->info($e);
+            if (preg_match('/(?P<major>\d{2})(?P<minor>\d)(?P<micro>\d)?/', $versionNumber, $versions)) {
+                $version = $versions['major'] . '.' . $versions['minor'];
 
-                return new NullVersion();
+                if (array_key_exists('micro', $versions)) {
+                    $version .= '.' . $versions['micro'];
+                }
+
+                try {
+                    return $this->versionFactory->set($version);
+                } catch (NotNumericException $e) {
+                    $this->logger->info($e);
+
+                    return new NullVersion();
+                }
             }
         }
 

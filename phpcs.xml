@@ -12,6 +12,7 @@
     <!-- inherit rules from: -->
     <rule ref="mimmi20-cs">
         <exclude name="PSR12.Classes.AnonClassDeclaration.SpaceAfterKeyword"/>
+        <exclude name="SlevomatCodingStandard.Classes.ModernClassNameReference.ClassNameReferencedViaFunctionCall"/>
     </rule>
 
     <!-- Paths to check -->

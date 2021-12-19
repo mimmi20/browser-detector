@@ -13,35 +13,29 @@ declare(strict_types = 1);
 namespace BrowserDetector\Parser;
 
 use BrowserDetector\Loader\CompanyLoaderInterface;
-use BrowserDetector\Loader\Helper\Filter;
 use BrowserDetector\Loader\PlatformLoaderFactory;
 use BrowserDetector\Parser\Helper\RulefileParser;
-use JsonClass\JsonInterface;
 use Psr\Log\LoggerInterface;
 
 final class PlatformParserFactory implements PlatformParserFactoryInterface
 {
     private LoggerInterface $logger;
 
-    private JsonInterface $jsonParser;
-
     private CompanyLoaderInterface $companyLoader;
 
     public function __construct(
         LoggerInterface $logger,
-        JsonInterface $jsonParser,
         CompanyLoaderInterface $companyLoader
     ) {
         $this->logger        = $logger;
-        $this->jsonParser    = $jsonParser;
         $this->companyLoader = $companyLoader;
     }
 
     public function __invoke(): PlatformParserInterface
     {
         return new PlatformParser(
-            new PlatformLoaderFactory($this->logger, $this->jsonParser, $this->companyLoader, new Filter()),
-            new RulefileParser($this->jsonParser, $this->logger)
+            new PlatformLoaderFactory($this->logger, $this->companyLoader),
+            new RulefileParser($this->logger)
         );
     }
 }

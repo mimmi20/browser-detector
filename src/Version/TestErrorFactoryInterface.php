@@ -10,15 +10,11 @@
 
 declare(strict_types = 1);
 
-namespace BrowserDetector\Loader\Helper;
+namespace BrowserDetector\Version;
 
-use Iterator;
-use Symfony\Component\Finder\SplFileInfo;
+use Psr\Log\LoggerInterface;
 
-interface FilterInterface
+interface TestErrorFactoryInterface
 {
-    /**
-     * @return Iterator<SplFileInfo>
-     */
-    public function __invoke(string $path, string $extension): Iterator;
+    public function __invoke(LoggerInterface $logger): TestError;
 }

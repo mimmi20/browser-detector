@@ -39,6 +39,9 @@ use UnexpectedValueException;
 
 use function array_key_exists;
 
+/**
+ * @infection-ignore-all
+ */
 final class ResultFactory
 {
     private CompanyLoaderInterface $companyLoader;

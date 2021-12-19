@@ -14,15 +14,15 @@ namespace BrowserDetector;
 
 use Psr\Http\Message\MessageInterface;
 use Psr\Log\LoggerInterface;
-use UaRequest\GenericRequest;
+use UaRequest\GenericRequestInterface;
 use UnexpectedValueException;
 
 interface RequestBuilderInterface
 {
     /**
-     * @param array<string, string>|GenericRequest|MessageInterface|string $request
+     * @param array<string, string>|GenericRequestInterface|MessageInterface|string $request
      *
      * @throws UnexpectedValueException
      */
-    public function buildRequest(LoggerInterface $logger, $request): GenericRequest;
+    public function buildRequest(LoggerInterface $logger, $request): GenericRequestInterface;
 }

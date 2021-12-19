@@ -13,7 +13,10 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest\Version;
 
 use BrowserDetector\Version\FirefoxOs;
+use BrowserDetector\Version\NotNumericException;
+use BrowserDetector\Version\NullVersion;
 use BrowserDetector\Version\VersionFactory;
+use BrowserDetector\Version\VersionFactoryInterface;
 use BrowserDetector\Version\VersionInterface;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
@@ -123,5 +126,62 @@ final class FirefoxOsTest extends TestCase
                 null,
             ],
         ];
+    }
+
+    /**
+     * @throws UnexpectedValueException
+     */
+    public function testDetectVersionFail(): void
+    {
+        $useragent = 'Mozilla/5.0 (Mobile; ALCATELOneTouch6015X SVN:01004P MMS:1.1; rv:34.0) Gecko/34.0 Firefox/34.0';
+        $exception = new NotNumericException('set failed');
+        $logger    = $this->getMockBuilder(LoggerInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $logger
+            ->expects(self::never())
+            ->method('debug');
+        $logger
+            ->expects(self::once())
+            ->method('info')
+            ->with($exception);
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::never())
+            ->method('warning');
+        $logger
+            ->expects(self::never())
+            ->method('error');
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
+
+        $versionFactory = $this->getMockBuilder(VersionFactoryInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $versionFactory
+            ->expects(self::never())
+            ->method('detectVersion');
+        $versionFactory
+            ->expects(self::once())
+            ->method('set')
+            ->with('2.1')
+            ->willThrowException($exception);
+
+        $object = new FirefoxOs($logger, $versionFactory);
+
+        $detectedVersion = $object->detectVersion($useragent);
+
+        self::assertInstanceOf(VersionInterface::class, $detectedVersion);
+        self::assertInstanceOf(NullVersion::class, $detectedVersion);
+        self::assertNull($detectedVersion->getVersion());
     }
 }

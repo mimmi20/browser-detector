@@ -451,7 +451,7 @@ jobs:
           verbose: false
 
       - name: "Run mutation tests with infection/infection"
-        run: "infection -s --min-covered-msi=95 --min-msi=90 --coverage=.build/coverage --logger-github"
+        run: "infection -s --min-covered-msi=93 --min-msi=90 --coverage=.build/coverage --logger-github"
 
   integration-tests:
     name: "Integration Tests with PHPUnit"
@@ -498,7 +498,7 @@ jobs:
           composer-options: "${{ env.COMPOSER_OPTIONS }}"
 
       - name: "Run integration tests with phpunit/phpunit"
-        run: "vendor/bin/phpunit -c tests/phpunit-integration.xml --no-coverage --colors --verbose"
+        run: "vendor/bin/phpunit -c phpunit-integration.xml --no-coverage --colors --verbose"
 
   roave-backwards-compatibility-check:
     name: "Check for Backward Compatibility breaks"

@@ -17,14 +17,11 @@ use BrowserDetector\Parser\DeviceParser;
 use BrowserDetector\Parser\DeviceParserFactory;
 use BrowserDetector\Parser\DeviceParserInterface;
 use BrowserDetector\Parser\PlatformParserInterface;
-use JsonClass\JsonInterface;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
 use SebastianBergmann\RecursionContext\InvalidArgumentException;
-
-use function assert;
 
 final class DeviceParserFactoryTest extends TestCase
 {
@@ -37,15 +34,10 @@ final class DeviceParserFactoryTest extends TestCase
     public function testInvoke(): void
     {
         $logger         = $this->createMock(LoggerInterface::class);
-        $jsonParser     = $this->createMock(JsonInterface::class);
         $companyLoader  = $this->createMock(CompanyLoaderInterface::class);
         $platformParser = $this->createMock(PlatformParserInterface::class);
 
-        assert($logger instanceof LoggerInterface);
-        assert($jsonParser instanceof JsonInterface);
-        assert($companyLoader instanceof CompanyLoaderInterface);
-        assert($platformParser instanceof PlatformParserInterface);
-        $factory = new DeviceParserFactory($logger, $jsonParser, $companyLoader, $platformParser);
+        $factory = new DeviceParserFactory($logger, $companyLoader, $platformParser);
 
         $parser = $factory();
 

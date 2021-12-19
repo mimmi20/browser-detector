@@ -17,20 +17,16 @@ use BrowserDetector\Helper\MobileDevice;
 use BrowserDetector\Helper\Tv;
 use BrowserDetector\Loader\CompanyLoaderInterface;
 use BrowserDetector\Loader\DeviceLoaderFactory;
-use BrowserDetector\Loader\Helper\Filter;
 use BrowserDetector\Parser\Device\DarwinParser;
 use BrowserDetector\Parser\Device\DesktopParser;
 use BrowserDetector\Parser\Device\MobileParser;
 use BrowserDetector\Parser\Device\TvParser;
 use BrowserDetector\Parser\Helper\RulefileParser;
-use JsonClass\JsonInterface;
 use Psr\Log\LoggerInterface;
 
 final class DeviceParserFactory implements DeviceParserFactoryInterface
 {
     private LoggerInterface $logger;
-
-    private JsonInterface $jsonParser;
 
     private CompanyLoaderInterface $companyLoader;
 
@@ -38,12 +34,10 @@ final class DeviceParserFactory implements DeviceParserFactoryInterface
 
     public function __construct(
         LoggerInterface $logger,
-        JsonInterface $jsonParser,
         CompanyLoaderInterface $companyLoader,
         PlatformParserInterface $platformParser
     ) {
         $this->logger         = $logger;
-        $this->jsonParser     = $jsonParser;
         $this->companyLoader  = $companyLoader;
         $this->platformParser = $platformParser;
     }
@@ -53,8 +47,8 @@ final class DeviceParserFactory implements DeviceParserFactoryInterface
      */
     public function __invoke(): DeviceParserInterface
     {
-        $loaderFactory = new DeviceLoaderFactory($this->logger, $this->jsonParser, $this->companyLoader, $this->platformParser, new Filter());
-        $fileParser    = new RulefileParser($this->jsonParser, $this->logger);
+        $loaderFactory = new DeviceLoaderFactory($this->logger, $this->companyLoader, $this->platformParser);
+        $fileParser    = new RulefileParser($this->logger);
         $darwinParser  = new DarwinParser($fileParser, $loaderFactory);
         $mobileParser  = new MobileParser($fileParser, $loaderFactory);
         $tvParser      = new TvParser($fileParser, $loaderFactory);

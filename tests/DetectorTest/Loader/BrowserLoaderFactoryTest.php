@@ -15,17 +15,12 @@ namespace BrowserDetectorTest\Loader;
 use BrowserDetector\Loader\BrowserLoaderFactory;
 use BrowserDetector\Loader\BrowserLoaderInterface;
 use BrowserDetector\Loader\CompanyLoaderInterface;
-use BrowserDetector\Loader\Helper\FilterInterface;
 use BrowserDetector\Parser\EngineParserInterface;
-use Iterator;
-use JsonClass\JsonInterface;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
 use SebastianBergmann\RecursionContext\InvalidArgumentException;
-
-use function assert;
 
 final class BrowserLoaderFactoryTest extends TestCase
 {
@@ -37,14 +32,7 @@ final class BrowserLoaderFactoryTest extends TestCase
      */
     public function testInvoke(): void
     {
-        $logger     = $this->createMock(LoggerInterface::class);
-        $jsonParser = $this->getMockBuilder(JsonInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
-        $jsonParser
-            ->expects(self::any())
-            ->method('decode')
-            ->willReturn([]);
+        $logger = $this->createMock(LoggerInterface::class);
 
         $companyLoader = $this->getMockBuilder(CompanyLoaderInterface::class)
             ->disableOriginalConstructor()
@@ -54,22 +42,7 @@ final class BrowserLoaderFactoryTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock();
 
-        $iterator = $this->createMock(Iterator::class);
-        $filter   = $this->getMockBuilder(FilterInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
-        $filter
-            ->expects(self::once())
-            ->method('__invoke')
-            ->with(BrowserLoaderFactory::DATA_PATH, 'json')
-            ->willReturn($iterator);
-
-        assert($logger instanceof LoggerInterface);
-        assert($jsonParser instanceof JsonInterface);
-        assert($companyLoader instanceof CompanyLoaderInterface);
-        assert($engineParser instanceof EngineParserInterface);
-        assert($filter instanceof FilterInterface);
-        $factory = new BrowserLoaderFactory($logger, $jsonParser, $companyLoader, $engineParser, $filter);
+        $factory = new BrowserLoaderFactory($logger, $companyLoader, $engineParser);
         $object  = $factory();
 
         self::assertInstanceOf(BrowserLoaderInterface::class, $object);

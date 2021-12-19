@@ -32,16 +32,15 @@
         <ini name="intl.use_exceptions" value="1"/>
     </php>
 
-    <testsuite name="BrowserDetector Test Suite">
-        <directory>tests/DetectorTest/</directory>
-    </testsuite>
+    <testsuites>
+        <testsuite name="UnitTests">
+            <directory>tests/DetectorTest/</directory>
+        </testsuite>
+    </testsuites>
 
     <coverage includeUncoveredFiles="true" processUncoveredFiles="true">
         <include>
             <directory suffix=".php">src/</directory>
         </include>
-        <report>
-            <text outputFile="php://stdout" showUncoveredFiles="true" showOnlySummary="false"/>
-        </report>
     </coverage>
 </phpunit>

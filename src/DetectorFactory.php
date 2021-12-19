@@ -14,12 +14,10 @@ namespace BrowserDetector;
 
 use BrowserDetector\Cache\Cache;
 use BrowserDetector\Loader\CompanyLoaderFactory;
-use BrowserDetector\Loader\Helper\Filter;
 use BrowserDetector\Parser\BrowserParserFactory;
 use BrowserDetector\Parser\DeviceParserFactory;
 use BrowserDetector\Parser\EngineParserFactory;
 use BrowserDetector\Parser\PlatformParserFactory;
-use JsonClass\Json;
 use Psr\Log\LoggerInterface;
 use Psr\SimpleCache\CacheInterface as PsrCacheInterface;
 use UaNormalizer\NormalizerFactory;
@@ -30,6 +28,8 @@ final class DetectorFactory
 
     private LoggerInterface $logger;
 
+    private ?Detector $detector = null;
+
     public function __construct(PsrCacheInterface $cache, LoggerInterface $logger)
     {
         $this->cache  = $cache;
@@ -38,25 +38,22 @@ final class DetectorFactory
 
     public function __invoke(): Detector
     {
-        static $detector = null;
-
-        if (null === $detector) {
-            $jsonParser           = new Json();
-            $companyLoaderFactory = new CompanyLoaderFactory($jsonParser, new Filter());
+        if (null === $this->detector) {
+            $companyLoaderFactory = new CompanyLoaderFactory();
 
             $companyLoader = $companyLoaderFactory();
 
-            $platformParserFactory = new PlatformParserFactory($this->logger, $jsonParser, $companyLoader);
+            $platformParserFactory = new PlatformParserFactory($this->logger, $companyLoader);
             $platformParser        = $platformParserFactory();
-            $deviceParserFactory   = new DeviceParserFactory($this->logger, $jsonParser, $companyLoader, $platformParser);
+            $deviceParserFactory   = new DeviceParserFactory($this->logger, $companyLoader, $platformParser);
             $deviceParser          = $deviceParserFactory();
-            $engineParserFactory   = new EngineParserFactory($this->logger, $jsonParser, $companyLoader);
+            $engineParserFactory   = new EngineParserFactory($this->logger, $companyLoader);
             $engineParser          = $engineParserFactory();
-            $browserParserFactory  = new BrowserParserFactory($this->logger, $jsonParser, $companyLoader, $engineParser);
+            $browserParserFactory  = new BrowserParserFactory($this->logger, $companyLoader, $engineParser);
             $browserParser         = $browserParserFactory();
             $normalizer            = (new NormalizerFactory())->build();
 
-            $detector = new Detector(
+            $this->detector = new Detector(
                 $this->logger,
                 new Cache($this->cache),
                 $deviceParser,
@@ -67,6 +64,6 @@ final class DetectorFactory
             );
         }
 
-        return $detector;
+        return $this->detector;
     }
 }

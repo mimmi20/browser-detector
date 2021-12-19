@@ -12,11 +12,11 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Loader\Helper;
 
-use Iterator;
-use JsonClass\DecodeErrorException;
-use JsonClass\JsonInterface;
+use JsonException;
+use RecursiveDirectoryIterator;
+use RecursiveIteratorIterator;
+use RegexIterator;
 use RuntimeException;
-use SplFileInfo;
 use stdClass;
 
 use function array_key_exists;
@@ -24,27 +24,26 @@ use function assert;
 use function count;
 use function file_get_contents;
 use function is_array;
+use function is_string;
+use function json_decode;
 use function sprintf;
+
+use const JSON_THROW_ON_ERROR;
 
 final class Data implements DataInterface
 {
-    /** @var Iterator<SplFileInfo> */
-    private Iterator $finder;
+    private string $path;
+    private string $extension;
 
     /** @var array<string, stdClass> */
     private array $items = [];
 
     private bool $initialized = false;
 
-    private JsonInterface $json;
-
-    /**
-     * @param Iterator<SplFileInfo> $finder
-     */
-    public function __construct(Iterator $finder, JsonInterface $json)
+    public function __construct(string $path, string $extension)
     {
-        $this->finder = $finder;
-        $this->json   = $json;
+        $this->path      = $path;
+        $this->extension = $extension;
     }
 
     /**
@@ -56,18 +55,25 @@ final class Data implements DataInterface
             return;
         }
 
-        foreach ($this->finder as $file) {
-            $path    = $file->getPathname();
-            $content = @file_get_contents($path);
+        $iterator = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($this->path));
+        $files    = new RegexIterator($iterator, '/^.+\.' . $this->extension . '$/i', RegexIterator::GET_MATCH);
+
+        foreach ($files as $file) {
+            assert(is_array($file));
+
+            $file = $file[0];
+            assert(is_string($file));
+
+            $content = @file_get_contents($file);
 
             if (false === $content) {
-                throw new RuntimeException(sprintf('could not read file "%s"', $path));
+                throw new RuntimeException(sprintf('could not read file "%s"', $file));
             }
 
             try {
-                $fileData = $this->json->decode($content, false);
-            } catch (DecodeErrorException $e) {
-                throw new RuntimeException(sprintf('file "%s" contains invalid json', $path), 0, $e);
+                $fileData = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
+            } catch (JsonException $e) {
+                throw new RuntimeException(sprintf('file "%s" contains invalid json', $file), 0, $e);
             }
 
             assert(is_array($fileData) || $fileData instanceof stdClass);

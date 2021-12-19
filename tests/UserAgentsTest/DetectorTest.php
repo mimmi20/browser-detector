@@ -16,22 +16,22 @@ use BrowserDetector\Detector;
 use BrowserDetector\DetectorFactory;
 use BrowserDetector\Loader\CompanyLoader;
 use BrowserDetector\Loader\CompanyLoaderFactory;
-use BrowserDetector\Loader\Helper\Filter;
 use BrowserDetector\Loader\NotFoundException;
 use BrowserDetector\Version\NotNumericException;
 use DateInterval;
 use Exception;
-use JsonClass\DecodeErrorException;
-use JsonClass\EncodeErrorException;
-use JsonClass\Json;
+use JsonException;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
+use Psr\Log\AbstractLogger;
 use Psr\Log\LoggerInterface;
 use Psr\Log\NullLogger;
 use Psr\SimpleCache\CacheInterface;
 use Psr\SimpleCache\InvalidArgumentException;
-use Symfony\Component\Finder\Finder;
-use Symfony\Component\Finder\SplFileInfo;
+use RecursiveDirectoryIterator;
+use RecursiveIteratorIterator;
+use RegexIterator;
+use RuntimeException;
 use UaResult\Browser\BrowserInterface;
 use UaResult\Device\DeviceInterface;
 use UaResult\Engine\EngineInterface;
@@ -41,49 +41,60 @@ use UaResult\Result\ResultInterface;
 use UnexpectedValueException;
 
 use function assert;
+use function file_get_contents;
 use function get_class;
+use function is_array;
 use function is_iterable;
+use function is_string;
+use function json_decode;
+use function json_encode;
 use function sprintf;
 
+use const JSON_THROW_ON_ERROR;
 use const JSON_UNESCAPED_SLASHES;
 use const JSON_UNESCAPED_UNICODE;
+use const PHP_EOL;
 
+/**
+ * @infection-ignore-all
+ */
 final class DetectorTest extends TestCase
 {
+    private static DetectorFactory $factory;
     private Detector $object;
 
-    /**
-     * Sets up the fixture, for example, open a network connection.
-     * This method is called before a test is executed.
-     *
-     * @coversNothing
-     */
-    protected function setUp(): void
+    public static function setUpBeforeClass(): void
     {
-        $logger = $this->getMockBuilder(LoggerInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
-        $logger
-            ->expects(self::never())
-            ->method('info');
-        $logger
-            ->expects(self::never())
-            ->method('notice');
-        $logger
-            ->expects(self::never())
-            ->method('warning');
-        $logger
-            ->expects(self::never())
-            ->method('error');
-        $logger
-            ->expects(self::never())
-            ->method('critical');
-        $logger
-            ->expects(self::never())
-            ->method('alert');
-        $logger
-            ->expects(self::never())
-            ->method('emergency');
+        $logger = new class() extends AbstractLogger {
+            /**
+             * Detailed debug information.
+             *
+             * @param string  $message
+             * @param mixed[] $context
+             *
+             * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+             * @phpcsSuppress SlevomatCodingStandard.TypeHints.ParameterTypeHint.MissingNativeTypeHint
+             */
+            public function debug($message, array $context = []): void
+            {
+                // do nothing here
+            }
+
+            /**
+             * Logs with an arbitrary level.
+             *
+             * @param int|string $level
+             * @param string     $message
+             * @param mixed[]    $context
+             *
+             * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+             * @phpcsSuppress SlevomatCodingStandard.TypeHints.ParameterTypeHint.MissingNativeTypeHint
+             */
+            public function log($level, $message, array $context = []): void
+            {
+                echo '[', $level, '] ', $message, PHP_EOL;
+            }
+        };
 
         $cache = new class() implements CacheInterface {
             /**
@@ -215,8 +226,18 @@ final class DetectorTest extends TestCase
         };
 
         assert($logger instanceof LoggerInterface);
-        $factory      = new DetectorFactory($cache, $logger);
-        $this->object = $factory();
+        self::$factory = new DetectorFactory($cache, $logger);
+    }
+
+    /**
+     * Sets up the fixture, for example, open a network connection.
+     * This method is called before a test is executed.
+     *
+     * @coversNothing
+     */
+    protected function setUp(): void
+    {
+        $this->object = (self::$factory)();
     }
 
     /**
@@ -238,8 +259,8 @@ final class DetectorTest extends TestCase
         assert($result instanceof ResultInterface, sprintf('$result should be an instance of %s, but is %s', ResultInterface::class, get_class($result)));
 
         try {
-            $encodedHeaders = (new Json())->encode($headers, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
-        } catch (EncodeErrorException $e) {
+            $encodedHeaders = json_encode($headers, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_THROW_ON_ERROR);
+        } catch (JsonException $e) {
             $encodedHeaders = '< failed to encode headers >';
         }
 
@@ -314,34 +335,39 @@ final class DetectorTest extends TestCase
      */
     public function providerGetBrowser(): array
     {
-        $finder = new Finder();
-        $finder->files();
-        $finder->name('*.json');
-        $finder->ignoreDotFiles(true);
-        $finder->ignoreVCS(true);
-        $finder->ignoreUnreadableDirs();
-        $finder->in('tests/data/');
+        $iterator = new RecursiveIteratorIterator(new RecursiveDirectoryIterator('tests/data/'));
+        $files    = new RegexIterator($iterator, '/^.+\.json$/i', RegexIterator::GET_MATCH);
 
-        $data       = [];
-        $logger     = new NullLogger();
-        $jsonParser = new Json();
+        $data   = [];
+        $logger = new NullLogger();
 
-        $companyLoaderFactory = new CompanyLoaderFactory($jsonParser, new Filter());
+        $companyLoaderFactory = new CompanyLoaderFactory();
 
         $companyLoader = $companyLoaderFactory();
         assert($companyLoader instanceof CompanyLoader, sprintf('$companyLoader should be an instance of %s, but is %s', CompanyLoader::class, get_class($companyLoader)));
         $resultFactory = new ResultFactory($companyLoader, $logger);
 
-        foreach ($finder as $file) {
-            assert($file instanceof SplFileInfo);
+        foreach ($files as $file) {
+            assert(is_array($file));
+
+            $file = $file[0];
+            assert(is_string($file));
+
+            $content = @file_get_contents($file);
+
+            if (false === $content) {
+                throw new RuntimeException(sprintf('could not read file "%s"', $file));
+            }
 
             try {
-                $tests = (new Json())->decode(
-                    $file->getContents(),
-                    true
+                $tests = json_decode(
+                    $content,
+                    true,
+                    512,
+                    JSON_THROW_ON_ERROR
                 );
-            } catch (DecodeErrorException $e) {
-                throw new Exception(sprintf('file "%s" contains invalid json', $file->getPathname()), 0, $e);
+            } catch (JsonException $e) {
+                throw new Exception(sprintf('file "%s" contains invalid json', $file), 0, $e);
             }
 
             assert(is_iterable($tests));
@@ -353,7 +379,7 @@ final class DetectorTest extends TestCase
                     continue;
                 }
 
-                $index = sprintf('file:%s test:%d', $file->getRelativePathname(), $i);
+                $index = sprintf('file:%s test:%d', $file, $i);
 
                 $data[$index] = [
                     'headers' => $expectedResult->getHeaders(),

@@ -2,7 +2,7 @@
 
 <phpunit
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="../vendor/phpunit/phpunit/phpunit.xsd"
+    xsi:noNamespaceSchemaLocation="vendor/phpunit/phpunit/phpunit.xsd"
     backupGlobals="false"
     backupStaticAttributes="false"
     beStrictAboutChangesToGlobalState="true"
@@ -17,7 +17,7 @@
     failOnSkipped="true"
     failOnWarning="true"
     verbose="false"
-    bootstrap="../vendor/autoload.php"
+    bootstrap="vendor/autoload.php"
     enforceTimeLimit="false"
     executionOrder="default"
     resolveDependencies="true"
@@ -28,9 +28,11 @@
         <ini name="date.timezone" value="UTC"/>
     </php>
 
-    <testsuite name="BrowserDetector Test Suite">
-        <directory>./UserAgentsTest</directory>
-    </testsuite>
+    <testsuites>
+        <testsuite name="IntegrationTests">
+            <directory>tests/UserAgentsTest</directory>
+        </testsuite>
+    </testsuites>
 
     <coverage includeUncoveredFiles="true" processUncoveredFiles="true">
         <include>
