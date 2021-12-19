@@ -498,7 +498,7 @@ jobs:
           composer-options: "${{ env.COMPOSER_OPTIONS }}"
 
       - name: "Run integration tests with phpunit/phpunit"
-        run: "vendor/bin/phpunit -c phpunit-integration.xml --no-coverage --colors --verbose --debug"
+        run: "vendor/bin/phpunit -c phpunit-integration.xml --no-coverage --colors --verbose"
 
   roave-backwards-compatibility-check:
     name: "Check for Backward Compatibility breaks"
