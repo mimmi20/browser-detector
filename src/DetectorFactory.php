@@ -28,6 +28,8 @@ final class DetectorFactory
 
     private LoggerInterface $logger;
 
+    private ?Detector $detector = null;
+
     public function __construct(PsrCacheInterface $cache, LoggerInterface $logger)
     {
         $this->cache  = $cache;
@@ -36,9 +38,7 @@ final class DetectorFactory
 
     public function __invoke(): Detector
     {
-        static $detector = null;
-
-        if (null === $detector) {
+        if (null === $this->detector) {
             $companyLoaderFactory = new CompanyLoaderFactory();
 
             $companyLoader = $companyLoaderFactory();
@@ -53,7 +53,7 @@ final class DetectorFactory
             $browserParser         = $browserParserFactory();
             $normalizer            = (new NormalizerFactory())->build();
 
-            $detector = new Detector(
+            $this->detector = new Detector(
                 $this->logger,
                 new Cache($this->cache),
                 $deviceParser,
@@ -64,6 +64,6 @@ final class DetectorFactory
             );
         }
 
-        return $detector;
+        return $this->detector;
     }
 }

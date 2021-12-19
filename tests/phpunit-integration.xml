@@ -2,7 +2,7 @@
 
 <phpunit
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="vendor/phpunit/phpunit/phpunit.xsd"
+    xsi:noNamespaceSchemaLocation="../vendor/phpunit/phpunit/phpunit.xsd"
     backupGlobals="false"
     backupStaticAttributes="false"
     beStrictAboutChangesToGlobalState="true"
@@ -17,7 +17,7 @@
     failOnSkipped="true"
     failOnWarning="true"
     verbose="false"
-    bootstrap="vendor/autoload.php"
+    bootstrap="../vendor/autoload.php"
     enforceTimeLimit="false"
     executionOrder="default"
     resolveDependencies="true"
@@ -26,15 +26,11 @@
         <ini name="error_reporting" value="-1"/>
         <ini name="memory_limit" value="-1"/>
         <ini name="date.timezone" value="UTC"/>
-        <ini name="zend.assertions" value="1"/>
-        <ini name="assert.exception" value="On"/>
-        <ini name="intl.default_locale" value="de"/>
-        <ini name="intl.use_exceptions" value="1"/>
     </php>
 
     <testsuites>
-        <testsuite name="UnitTests">
-            <directory>tests/DetectorTest/</directory>
+        <testsuite name="IntegrationTests">
+            <directory>./UserAgentsTest</directory>
         </testsuite>
     </testsuites>
 
