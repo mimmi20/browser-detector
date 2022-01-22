@@ -11,6 +11,7 @@
     beStrictAboutTestsThatDoNotTestAnything="true"
     beStrictAboutTodoAnnotatedTests="true"
     beStrictAboutResourceUsageDuringSmallTests="true"
+    convertDeprecationsToExceptions="true"
     failOnEmptyTestSuite="true"
     failOnIncomplete="true"
     failOnRisky="true"
