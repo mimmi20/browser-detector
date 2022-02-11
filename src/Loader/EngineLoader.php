@@ -16,6 +16,7 @@ use BrowserDetector\Factory\EngineFactory;
 use BrowserDetector\Loader\Helper\DataInterface;
 use BrowserDetector\Version\VersionFactory;
 use Psr\Log\LoggerInterface;
+use stdClass;
 use UaResult\Engine\EngineInterface;
 use UnexpectedValueException;
 
@@ -56,6 +57,12 @@ final class EngineLoader implements EngineLoaderInterface
             throw new NotFoundException('the engine with key "' . $key . '" was not found');
         }
 
-        return (new EngineFactory($this->companyLoader, new VersionFactory(), $this->logger))->fromArray((array) $engineData, $useragent);
+        /**
+         * @var array<string, (string|stdClass|null)> $engineDataArray
+         * @phpstan-var array{name?: (string|null), manufacturer?: string, version?: (stdClass|string|null)} $engineDataArray
+         */
+        $engineDataArray = (array) $engineData;
+
+        return (new EngineFactory($this->companyLoader, new VersionFactory(), $this->logger))->fromArray($engineDataArray, $useragent);
     }
 }
