@@ -2,7 +2,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2021, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2022, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -13,7 +13,7 @@ declare(strict_types = 1);
 $header = <<<'EOF'
     This file is part of the browser-detector package.
 
-    Copyright (c) 2012-2021, Thomas Mueller <mimmi20@live.de>
+    Copyright (c) 2012-2022, Thomas Mueller <mimmi20@live.de>
 
     For the full copyright and license information, please view the LICENSE
     file that was distributed with this source code.
@@ -43,6 +43,10 @@ return $config
                     'separate' => 'bottom',
                 ],
                 'php_unit_strict' => ['assertions' => ['assertAttributeEquals', 'assertAttributeNotEquals', 'assertNotEquals']],
+                '@PHP80Migration' => false,
+                '@PHP80Migration:risky' => false,
+                '@PHP74Migration' => true,
+                '@PHP74Migration:risky' => true,
             ]
         )
     )

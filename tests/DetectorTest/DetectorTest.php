@@ -2,7 +2,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2021, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2022, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -1184,8 +1184,8 @@ final class DetectorTest extends TestCase
         assert($result instanceof ResultInterface, sprintf('$result should be an instance of %s, but is %s', ResultInterface::class, get_class($result)));
 
         self::assertInstanceOf(ResultInterface::class, $result);
-        //self::assertSame($device, $result->getDevice());
-        //self::assertSame($os, $result->getOs());
+        // self::assertSame($device, $result->getDevice());
+        // self::assertSame($os, $result->getOs());
         self::assertSame($browser, $result->getBrowser());
         self::assertSame($engine, $result->getEngine());
 
@@ -1495,7 +1495,7 @@ final class DetectorTest extends TestCase
         self::assertSame($device, $result->getDevice());
         self::assertSame($os, $result->getOs());
         self::assertSame($browser, $result->getBrowser());
-        //self::assertSame($engine, $result->getEngine());
+        // self::assertSame($engine, $result->getEngine());
 
         self::assertInstanceOf(DeviceInterface::class, $result->getDevice());
         self::assertSame('testDevice', $result->getDevice()->getDeviceName());
@@ -1812,7 +1812,7 @@ final class DetectorTest extends TestCase
         self::assertSame($device, $result->getDevice());
         self::assertSame($os, $result->getOs());
         self::assertSame($browser, $result->getBrowser());
-        //self::assertSame($engine, $result->getEngine());
+        // self::assertSame($engine, $result->getEngine());
 
         self::assertInstanceOf(DeviceInterface::class, $result->getDevice());
         self::assertSame('testDevice', $result->getDevice()->getDeviceName());
@@ -1968,7 +1968,7 @@ final class DetectorTest extends TestCase
         self::assertSame($device, $result->getDevice());
         self::assertSame($os, $result->getOs());
         self::assertSame($browser, $result->getBrowser());
-        //self::assertSame($engine, $result->getEngine());
+        // self::assertSame($engine, $result->getEngine());
 
         self::assertInstanceOf(DeviceInterface::class, $result->getDevice());
         self::assertSame('testDevice', $result->getDevice()->getDeviceName());
@@ -2127,8 +2127,8 @@ final class DetectorTest extends TestCase
         self::assertInstanceOf(ResultInterface::class, $result);
         self::assertSame($device, $result->getDevice());
         self::assertSame($os, $result->getOs());
-        //self::assertSame($browser, $result->getBrowser());
-        //self::assertSame($engine, $result->getEngine());
+        // self::assertSame($browser, $result->getBrowser());
+        // self::assertSame($engine, $result->getEngine());
 
         self::assertInstanceOf(DeviceInterface::class, $result->getDevice());
         self::assertInstanceOf(BrowserInterface::class, $result->getBrowser());
@@ -2444,7 +2444,7 @@ final class DetectorTest extends TestCase
 
         self::assertInstanceOf(ResultInterface::class, $result);
         self::assertSame($device, $result->getDevice());
-        //self::assertSame($os, $result->getOs());
+        // self::assertSame($os, $result->getOs());
         self::assertSame($browser, $result->getBrowser());
         self::assertSame($engine, $result->getEngine());
 
@@ -2607,7 +2607,7 @@ final class DetectorTest extends TestCase
 
         self::assertInstanceOf(ResultInterface::class, $result);
         self::assertSame($device, $result->getDevice());
-        //self::assertSame($os, $result->getOs());
+        // self::assertSame($os, $result->getOs());
         self::assertSame($browser, $result->getBrowser());
         self::assertSame($engine, $result->getEngine());
 

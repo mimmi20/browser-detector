@@ -2,7 +2,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2021, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2022, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -1175,6 +1175,6 @@ final class EngineFactoryTest extends TestCase
         self::assertInstanceOf(VersionInterface::class, $result->getVersion());
         self::assertSame($version, $result->getVersion());
         self::assertInstanceOf(CompanyInterface::class, $result->getManufacturer());
-        //static::assertEquals($company, $result->getManufacturer());
+        // static::assertEquals($company, $result->getManufacturer());
     }
 }
