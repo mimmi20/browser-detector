@@ -19,6 +19,7 @@ use BrowserDetector\Version\VersionFactory;
 use BrowserDetector\Version\VersionFactoryInterface;
 use BrowserDetector\Version\VersionInterface;
 use PHPUnit\Framework\Attributes\DataProvider;
+use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
@@ -95,7 +96,10 @@ final class MaxthonTest extends TestCase
         ];
     }
 
-    /** @throws UnexpectedValueException */
+    /**
+     * @throws ExpectationFailedException
+     * @throws Exception
+     */
     public function testDetectVersionFail(): void
     {
         $useragent = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; MyIE2; .NET CLR 2.0.50727)';
@@ -149,7 +153,10 @@ final class MaxthonTest extends TestCase
         self::assertNull($detectedVersion->getVersion());
     }
 
-    /** @throws UnexpectedValueException */
+    /**
+     * @throws ExpectationFailedException
+     * @throws Exception
+     */
     public function testDetectVersionFailSecond(): void
     {
         $useragent = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; MyIE 2.0 Beta 4; User-agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; http://bsalsa.com) )';
@@ -210,7 +217,10 @@ final class MaxthonTest extends TestCase
         self::assertNull($detectedVersion->getVersion());
     }
 
-    /** @throws UnexpectedValueException */
+    /**
+     * @throws ExpectationFailedException
+     * @throws Exception
+     */
     public function testDetectVersionFailThird(): void
     {
         $useragent = 'Mozilla/5.0 (Linux; Android 4.4.2; LIFETAB_S1033X Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Safari/537.36 MxBrowser/4.4.2.1000';

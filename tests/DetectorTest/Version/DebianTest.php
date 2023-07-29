@@ -19,6 +19,7 @@ use BrowserDetector\Version\VersionFactory;
 use BrowserDetector\Version\VersionFactoryInterface;
 use BrowserDetector\Version\VersionInterface;
 use PHPUnit\Framework\Attributes\DataProvider;
+use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
@@ -95,7 +96,10 @@ final class DebianTest extends TestCase
         ];
     }
 
-    /** @throws UnexpectedValueException */
+    /**
+     * @throws ExpectationFailedException
+     * @throws Exception
+     */
     public function testDetectVersionFail(): void
     {
         $useragent = 'Mozilla/5.0 (X11; U; Linux i686; de-de@euro) AppleWebKit/531.2+ (KHTML, like Gecko) Version/5.0 Safari/531.2+ Debian/squeeze (2.30.6-1) Epiphany/2.30.6';
@@ -149,7 +153,10 @@ final class DebianTest extends TestCase
         self::assertNull($detectedVersion->getVersion());
     }
 
-    /** @throws UnexpectedValueException */
+    /**
+     * @throws ExpectationFailedException
+     * @throws Exception
+     */
     public function testDetectVersionFailSecond(): void
     {
         $useragent = 'Mozilla/5.0 (Macintosh; ARM Mac OS X) AppleWebKit/538.15 (KHTML, like Gecko) Safari/538.15 Version/6.0 Debian/8.0 (1:3.8.2.0-0) Epiphany/3.8.2';

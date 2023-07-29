@@ -14,6 +14,7 @@ namespace BrowserDetectorTest;
 
 use BrowserDetector\Detector;
 use BrowserDetector\DetectorFactory;
+use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
@@ -23,7 +24,10 @@ use function assert;
 
 final class DetectorFactoryTest extends TestCase
 {
-    /** @throws ExpectationFailedException */
+    /**
+     * @throws ExpectationFailedException
+     * @throws Exception
+     */
     public function testInvoke(): void
     {
         $logger = $this->getMockBuilder(LoggerInterface::class)

@@ -13,6 +13,7 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest\Cache;
 
 use BrowserDetector\Cache\Cache;
+use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use Psr\SimpleCache\CacheInterface;
@@ -26,6 +27,7 @@ final class CacheTest extends TestCase
     /**
      * @throws InvalidArgumentException
      * @throws ExpectationFailedException
+     * @throws Exception
      */
     public function testVersion(): void
     {
@@ -60,6 +62,7 @@ final class CacheTest extends TestCase
     /**
      * @throws InvalidArgumentException
      * @throws ExpectationFailedException
+     * @throws Exception
      */
     public function testHasNotItem(): void
     {
@@ -90,6 +93,7 @@ final class CacheTest extends TestCase
     /**
      * @throws InvalidArgumentException
      * @throws ExpectationFailedException
+     * @throws Exception
      */
     public function testHasNotItem2(): void
     {
@@ -121,6 +125,7 @@ final class CacheTest extends TestCase
     /**
      * @throws InvalidArgumentException
      * @throws ExpectationFailedException
+     * @throws Exception
      */
     public function testHasNotItem3(): void
     {

@@ -96,7 +96,10 @@ final class EngineFactoryTest extends TestCase
         $object->fromArray([], 'this is a test');
     }
 
-    /** @throws ExpectationFailedException */
+    /**
+     * @throws ExpectationFailedException
+     * @throws Exception
+     */
     public function testFromArrayWithVersionString(): void
     {
         $company       = $this->getMockBuilder(CompanyInterface::class)
@@ -172,7 +175,7 @@ final class EngineFactoryTest extends TestCase
 
     /**
      * @throws ExpectationFailedException
-     * @throws UnexpectedValueException
+     * @throws Exception
      */
     public function testFromArrayWithVersionString2(): void
     {
@@ -250,7 +253,7 @@ final class EngineFactoryTest extends TestCase
 
     /**
      * @throws ExpectationFailedException
-     * @throws UnexpectedValueException
+     * @throws Exception
      */
     public function testFromArrayWithFoundTypeAndNullObjectVersion(): void
     {
@@ -322,7 +325,10 @@ final class EngineFactoryTest extends TestCase
         self::assertSame($company, $result->getManufacturer());
     }
 
-    /** @throws ExpectationFailedException */
+    /**
+     * @throws ExpectationFailedException
+     * @throws Exception
+     */
     public function testFromArrayWithFixedVersionObject(): void
     {
         $company       = $this->getMockBuilder(CompanyInterface::class)
@@ -400,7 +406,7 @@ final class EngineFactoryTest extends TestCase
 
     /**
      * @throws ExpectationFailedException
-     * @throws UnexpectedValueException
+     * @throws Exception
      */
     public function testFromArrayWithFixedVersionObject2(): void
     {
@@ -478,7 +484,10 @@ final class EngineFactoryTest extends TestCase
         self::assertSame($company, $result->getManufacturer());
     }
 
-    /** @throws ExpectationFailedException */
+    /**
+     * @throws ExpectationFailedException
+     * @throws Exception
+     */
     public function testFromArrayWithVersionDetectionClass(): void
     {
         $company       = $this->getMockBuilder(CompanyInterface::class)
@@ -553,7 +562,7 @@ final class EngineFactoryTest extends TestCase
 
     /**
      * @throws ExpectationFailedException
-     * @throws UnexpectedValueException
+     * @throws Exception
      */
     public function testFromArrayWithVersionDetectionFactory(): void
     {
@@ -627,7 +636,7 @@ final class EngineFactoryTest extends TestCase
 
     /**
      * @throws ExpectationFailedException
-     * @throws UnexpectedValueException
+     * @throws Exception
      */
     public function testFromArrayWithVersionDetectionFactory2(): void
     {
@@ -702,7 +711,7 @@ final class EngineFactoryTest extends TestCase
 
     /**
      * @throws ExpectationFailedException
-     * @throws UnexpectedValueException
+     * @throws Exception
      */
     public function testFromArrayWithFixedVersionObjectAndNoSearch(): void
     {
@@ -776,7 +785,7 @@ final class EngineFactoryTest extends TestCase
 
     /**
      * @throws ExpectationFailedException
-     * @throws UnexpectedValueException
+     * @throws Exception
      */
     public function testFromArrayWithFixedVersionObjectAndNoSearch2(): void
     {
@@ -850,7 +859,7 @@ final class EngineFactoryTest extends TestCase
 
     /**
      * @throws ExpectationFailedException
-     * @throws UnexpectedValueException
+     * @throws Exception
      */
     public function testFromArrayWithFixedVersionObjectAndNoSearch3(): void
     {
@@ -923,7 +932,10 @@ final class EngineFactoryTest extends TestCase
         self::assertSame($company, $result->getManufacturer());
     }
 
-    /** @throws ExpectationFailedException */
+    /**
+     * @throws ExpectationFailedException
+     * @throws Exception
+     */
     public function testFromArrayWithFixedVersionObjectAndSearch(): void
     {
         $company       = $this->getMockBuilder(CompanyInterface::class)
@@ -1004,7 +1016,7 @@ final class EngineFactoryTest extends TestCase
 
     /**
      * @throws ExpectationFailedException
-     * @throws UnexpectedValueException
+     * @throws Exception
      */
     public function testFromArrayWithFixedVersionObjectAndSearch2(): void
     {
@@ -1084,7 +1096,10 @@ final class EngineFactoryTest extends TestCase
         self::assertSame($company, $result->getManufacturer());
     }
 
-    /** @throws ExpectationFailedException */
+    /**
+     * @throws ExpectationFailedException
+     * @throws Exception
+     */
     public function testFromEmptyArrayWithCompanyError(): void
     {
         $companyName   = 'test-company';

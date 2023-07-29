@@ -19,6 +19,7 @@ use BrowserDetector\Version\VersionFactoryInterface;
 use BrowserDetector\Version\VersionInterface;
 use BrowserDetector\Version\WindowsMobileOs;
 use PHPUnit\Framework\Attributes\DataProvider;
+use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
@@ -95,7 +96,10 @@ final class WindowsMobileOsTest extends TestCase
         ];
     }
 
-    /** @throws UnexpectedValueException */
+    /**
+     * @throws ExpectationFailedException
+     * @throws Exception
+     */
     public function testDetectVersionFail(): void
     {
         $useragent = 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.2) Gecko/20100222 Firefox/3.6 Kylo/0.6.1.70394';
@@ -149,7 +153,10 @@ final class WindowsMobileOsTest extends TestCase
         self::assertNull($detectedVersion->getVersion());
     }
 
-    /** @throws UnexpectedValueException */
+    /**
+     * @throws ExpectationFailedException
+     * @throws Exception
+     */
     public function testDetectVersionFailSecond(): void
     {
         $useragent = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_HD2_T8585; Windows Phone 6.5)';

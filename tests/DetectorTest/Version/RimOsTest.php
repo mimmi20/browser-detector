@@ -19,6 +19,7 @@ use BrowserDetector\Version\VersionFactory;
 use BrowserDetector\Version\VersionFactoryInterface;
 use BrowserDetector\Version\VersionInterface;
 use PHPUnit\Framework\Attributes\DataProvider;
+use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
@@ -103,7 +104,10 @@ final class RimOsTest extends TestCase
         ];
     }
 
-    /** @throws UnexpectedValueException */
+    /**
+     * @throws ExpectationFailedException
+     * @throws Exception
+     */
     public function testDetectVersionFail(): void
     {
         $useragent = 'Mozilla/5.0 (BB10; Kbd) AppleWebKit/537.35+ (KHTML, like Gecko) Mobile Safari/537.35+';
@@ -157,7 +161,10 @@ final class RimOsTest extends TestCase
         self::assertNull($detectedVersion->getVersion());
     }
 
-    /** @throws UnexpectedValueException */
+    /**
+     * @throws ExpectationFailedException
+     * @throws Exception
+     */
     public function testDetectVersionFailSecond(): void
     {
         $useragent = 'Mozilla/5.0 (BB10; Kbd) AppleWebKit/537.35+ (KHTML, like Gecko) Version/10.3.3.3057 Mobile Safari/537.35+';

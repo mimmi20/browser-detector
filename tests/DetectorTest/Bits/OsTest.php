@@ -14,6 +14,7 @@ namespace BrowserDetectorTest\Bits;
 
 use BrowserDetector\Bits\Os;
 use PHPUnit\Framework\Attributes\DataProvider;
+use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 
@@ -27,7 +28,10 @@ final class OsTest extends TestCase
         $this->object = new Os();
     }
 
-    /** @throws ExpectationFailedException */
+    /**
+     * @throws ExpectationFailedException
+     * @throws Exception
+     */
     #[DataProvider('providerGetBits')]
     public function testGetBits(string $useragent, int | null $expected): void
     {

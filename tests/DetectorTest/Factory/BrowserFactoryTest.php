@@ -106,7 +106,7 @@ final class BrowserFactoryTest extends TestCase
 
     /**
      * @throws ExpectationFailedException
-     * @throws UnexpectedValueException
+     * @throws Exception
      */
     public function testFromArrayWithFoundType(): void
     {
@@ -193,7 +193,10 @@ final class BrowserFactoryTest extends TestCase
         self::assertSame($company, $result->getManufacturer());
     }
 
-    /** @throws ExpectationFailedException */
+    /**
+     * @throws ExpectationFailedException
+     * @throws Exception
+     */
     public function testFromArrayWithFoundTypeAndVersionString(): void
     {
         $company       = $this->getMockBuilder(CompanyInterface::class)
@@ -286,7 +289,7 @@ final class BrowserFactoryTest extends TestCase
 
     /**
      * @throws ExpectationFailedException
-     * @throws UnexpectedValueException
+     * @throws Exception
      */
     public function testFromArrayWithFoundTypeAndVersionString2(): void
     {
@@ -381,7 +384,7 @@ final class BrowserFactoryTest extends TestCase
 
     /**
      * @throws ExpectationFailedException
-     * @throws UnexpectedValueException
+     * @throws Exception
      */
     public function testFromArrayWithFoundTypeAndNullObjectVersion(): void
     {
@@ -470,7 +473,10 @@ final class BrowserFactoryTest extends TestCase
         self::assertSame($company, $result->getManufacturer());
     }
 
-    /** @throws ExpectationFailedException */
+    /**
+     * @throws ExpectationFailedException
+     * @throws Exception
+     */
     public function testFromArrayWithFoundTypeAndFixedVersionObject(): void
     {
         $company       = $this->getMockBuilder(CompanyInterface::class)
@@ -565,7 +571,7 @@ final class BrowserFactoryTest extends TestCase
 
     /**
      * @throws ExpectationFailedException
-     * @throws UnexpectedValueException
+     * @throws Exception
      */
     public function testFromArrayWithFoundTypeAndFixedVersionObject2(): void
     {
@@ -660,7 +666,10 @@ final class BrowserFactoryTest extends TestCase
         self::assertSame($company, $result->getManufacturer());
     }
 
-    /** @throws ExpectationFailedException */
+    /**
+     * @throws ExpectationFailedException
+     * @throws Exception
+     */
     public function testFromArrayWithFoundTypeAndVersionDetectionClass(): void
     {
         $company       = $this->getMockBuilder(CompanyInterface::class)
@@ -752,7 +761,7 @@ final class BrowserFactoryTest extends TestCase
 
     /**
      * @throws ExpectationFailedException
-     * @throws UnexpectedValueException
+     * @throws Exception
      */
     public function testFromArrayWithFoundTypeAndVersionDetectionFactory(): void
     {
@@ -843,7 +852,7 @@ final class BrowserFactoryTest extends TestCase
 
     /**
      * @throws ExpectationFailedException
-     * @throws UnexpectedValueException
+     * @throws Exception
      */
     public function testFromArrayWithFoundTypeAndVersionDetectionFactory2(): void
     {
@@ -933,10 +942,7 @@ final class BrowserFactoryTest extends TestCase
         self::assertSame($company, $result->getManufacturer());
     }
 
-    /**
-     * @throws ExpectationFailedException
-     * @throws UnexpectedValueException
-     */
+    /** @throws ExpectationFailedException */
     public function testFromArrayWithFoundTypeAndFixedVersionObjectAndNoSearch(): void
     {
         $company       = $this->getMockBuilder(CompanyInterface::class)
@@ -1026,7 +1032,7 @@ final class BrowserFactoryTest extends TestCase
 
     /**
      * @throws ExpectationFailedException
-     * @throws UnexpectedValueException
+     * @throws Exception
      */
     public function testFromArrayWithFoundTypeAndFixedVersionObjectAndNoSearch2(): void
     {
@@ -1117,7 +1123,7 @@ final class BrowserFactoryTest extends TestCase
 
     /**
      * @throws ExpectationFailedException
-     * @throws UnexpectedValueException
+     * @throws Exception
      */
     public function testFromArrayWithFoundTypeAndFixedVersionObjectAndNoSearch3(): void
     {
@@ -1207,7 +1213,10 @@ final class BrowserFactoryTest extends TestCase
         self::assertSame($company, $result->getManufacturer());
     }
 
-    /** @throws ExpectationFailedException */
+    /**
+     * @throws ExpectationFailedException
+     * @throws Exception
+     */
     public function testFromArrayWithFoundTypeAndFixedVersionObjectAndSearch(): void
     {
         $company       = $this->getMockBuilder(CompanyInterface::class)
@@ -1312,7 +1321,7 @@ final class BrowserFactoryTest extends TestCase
 
     /**
      * @throws ExpectationFailedException
-     * @throws UnexpectedValueException
+     * @throws Exception
      */
     public function testFromArrayWithFoundTypeAndFixedVersionObjectAndSearch2(): void
     {
@@ -1418,7 +1427,7 @@ final class BrowserFactoryTest extends TestCase
 
     /**
      * @throws ExpectationFailedException
-     * @throws UnexpectedValueException
+     * @throws Exception
      */
     public function testFromEmptyArrayWithCompanyError(): void
     {
@@ -1507,7 +1516,7 @@ final class BrowserFactoryTest extends TestCase
 
     /**
      * @throws ExpectationFailedException
-     * @throws UnexpectedValueException
+     * @throws Exception
      */
     public function testFromEmptyArrayWithTypeError(): void
     {

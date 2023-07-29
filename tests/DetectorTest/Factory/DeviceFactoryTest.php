@@ -96,7 +96,10 @@ final class DeviceFactoryTest extends TestCase
         $object->fromArray([], $useragent);
     }
 
-    /** @throws ExpectationFailedException */
+    /**
+     * @throws ExpectationFailedException
+     * @throws Exception
+     */
     public function testFromArrayWithoutData(): void
     {
         $useragent     = 'this is a test';
@@ -186,7 +189,10 @@ final class DeviceFactoryTest extends TestCase
         self::assertSame($company, $result->getBrand());
     }
 
-    /** @throws ExpectationFailedException */
+    /**
+     * @throws ExpectationFailedException
+     * @throws Exception
+     */
     public function testFromArrayWithData(): void
     {
         $useragent     = 'this is a test';
@@ -308,7 +314,10 @@ final class DeviceFactoryTest extends TestCase
         self::assertSame($brand, $result->getBrand());
     }
 
-    /** @throws ExpectationFailedException */
+    /**
+     * @throws ExpectationFailedException
+     * @throws Exception
+     */
     public function testFromArrayWithDataFailure(): void
     {
         $useragent     = 'this is a test';

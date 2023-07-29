@@ -67,7 +67,10 @@ final class DisplayFactoryTest extends TestCase
         $object->fromArray($logger, []);
     }
 
-    /** @throws ExpectationFailedException */
+    /**
+     * @throws ExpectationFailedException
+     * @throws Exception
+     */
     public function testFromArray(): void
     {
         $logger = $this->getMockBuilder(LoggerInterface::class)
@@ -130,7 +133,10 @@ final class DisplayFactoryTest extends TestCase
         self::assertSame($size, $result->toArray()['size']);
     }
 
-    /** @throws ExpectationFailedException */
+    /**
+     * @throws ExpectationFailedException
+     * @throws Exception
+     */
     public function testFromArrayWithIntSize(): void
     {
         $logger = $this->getMockBuilder(LoggerInterface::class)
@@ -193,7 +199,10 @@ final class DisplayFactoryTest extends TestCase
         self::assertSame((float) $size, $result->toArray()['size']);
     }
 
-    /** @throws ExpectationFailedException */
+    /**
+     * @throws ExpectationFailedException
+     * @throws Exception
+     */
     public function testFromArrayWithNullSize(): void
     {
         $logger = $this->getMockBuilder(LoggerInterface::class)

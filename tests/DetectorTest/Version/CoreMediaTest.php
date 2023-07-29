@@ -19,6 +19,7 @@ use BrowserDetector\Version\VersionFactory;
 use BrowserDetector\Version\VersionFactoryInterface;
 use BrowserDetector\Version\VersionInterface;
 use PHPUnit\Framework\Attributes\DataProvider;
+use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
@@ -31,6 +32,7 @@ final class CoreMediaTest extends TestCase
     /**
      * @throws ExpectationFailedException
      * @throws UnexpectedValueException
+     * @throws Exception
      */
     #[DataProvider('providerVersion')]
     public function testDetectVersion(string $useragent, string | null $expectedVersion): void
@@ -95,7 +97,10 @@ final class CoreMediaTest extends TestCase
         ];
     }
 
-    /** @throws UnexpectedValueException */
+    /**
+     * @throws ExpectationFailedException
+     * @throws Exception
+     */
     public function testDetectVersionFail(): void
     {
         $exception = new NotNumericException('set failed');
