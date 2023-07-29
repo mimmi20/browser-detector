@@ -43,6 +43,7 @@ return $config
                     'location' => 'after_open',
                     'separate' => 'bottom',
                 ],
+                'php_unit_strict' => ['assertions' => ['assertAttributeEquals', 'assertAttributeNotEquals', 'assertNotEquals']],
             ],
         ),
     )

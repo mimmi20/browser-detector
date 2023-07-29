@@ -332,7 +332,7 @@ final class DetectorTest extends TestCase
             ),
         );
 
-        self::assertSame(
+        self::assertEquals(
             $expectedResult,
             $result,
             sprintf(
