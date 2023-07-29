@@ -2,7 +2,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2022, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2023, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -18,10 +18,10 @@ use BrowserDetector\Version\RimOs;
 use BrowserDetector\Version\VersionFactory;
 use BrowserDetector\Version\VersionFactoryInterface;
 use BrowserDetector\Version\VersionInterface;
+use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
-use SebastianBergmann\RecursionContext\InvalidArgumentException;
 use UnexpectedValueException;
 
 use function assert;
@@ -29,13 +29,11 @@ use function assert;
 final class RimOsTest extends TestCase
 {
     /**
-     * @throws InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws UnexpectedValueException
-     *
-     * @dataProvider providerVersion
      */
-    public function testTestdetectVersion(string $useragent, ?string $expectedVersion): void
+    #[DataProvider('providerVersion')]
+    public function testTestdetectVersion(string $useragent, string | null $expectedVersion): void
     {
         $logger = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
@@ -76,8 +74,10 @@ final class RimOsTest extends TestCase
 
     /**
      * @return array<int, array<int, string|null>>
+     *
+     * @throws void
      */
-    public function providerVersion(): array
+    public static function providerVersion(): array
     {
         return [
             [
@@ -103,9 +103,7 @@ final class RimOsTest extends TestCase
         ];
     }
 
-    /**
-     * @throws UnexpectedValueException
-     */
+    /** @throws UnexpectedValueException */
     public function testDetectVersionFail(): void
     {
         $useragent = 'Mozilla/5.0 (BB10; Kbd) AppleWebKit/537.35+ (KHTML, like Gecko) Mobile Safari/537.35+';
@@ -159,9 +157,7 @@ final class RimOsTest extends TestCase
         self::assertNull($detectedVersion->getVersion());
     }
 
-    /**
-     * @throws UnexpectedValueException
-     */
+    /** @throws UnexpectedValueException */
     public function testDetectVersionFailSecond(): void
     {
         $useragent = 'Mozilla/5.0 (BB10; Kbd) AppleWebKit/537.35+ (KHTML, like Gecko) Version/10.3.3.3057 Mobile Safari/537.35+';
@@ -201,7 +197,10 @@ final class RimOsTest extends TestCase
         $versionFactory
             ->expects(self::once())
             ->method('detectVersion')
-            ->with($useragent, ['Version', 'BlackBerry[0-9a-z]+', 'BlackBerry; [0-9a-z]+\/', 'BlackBerrySimulator'])
+            ->with(
+                $useragent,
+                ['Version', 'BlackBerry[0-9a-z]+', 'BlackBerry; [0-9a-z]+\/', 'BlackBerrySimulator'],
+            )
             ->willThrowException($exception);
         $versionFactory
             ->expects(self::never())

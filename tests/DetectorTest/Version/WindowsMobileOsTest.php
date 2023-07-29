@@ -2,7 +2,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2022, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2023, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -18,10 +18,10 @@ use BrowserDetector\Version\VersionFactory;
 use BrowserDetector\Version\VersionFactoryInterface;
 use BrowserDetector\Version\VersionInterface;
 use BrowserDetector\Version\WindowsMobileOs;
+use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
-use SebastianBergmann\RecursionContext\InvalidArgumentException;
 use UnexpectedValueException;
 
 use function assert;
@@ -29,13 +29,11 @@ use function assert;
 final class WindowsMobileOsTest extends TestCase
 {
     /**
-     * @throws InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws UnexpectedValueException
-     *
-     * @dataProvider providerVersion
      */
-    public function testTestdetectVersion(string $useragent, ?string $expectedVersion): void
+    #[DataProvider('providerVersion')]
+    public function testTestdetectVersion(string $useragent, string | null $expectedVersion): void
     {
         $logger = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
@@ -76,8 +74,10 @@ final class WindowsMobileOsTest extends TestCase
 
     /**
      * @return array<int, array<int, string>>
+     *
+     * @throws void
      */
-    public function providerVersion(): array
+    public static function providerVersion(): array
     {
         return [
             [
@@ -95,9 +95,7 @@ final class WindowsMobileOsTest extends TestCase
         ];
     }
 
-    /**
-     * @throws UnexpectedValueException
-     */
+    /** @throws UnexpectedValueException */
     public function testDetectVersionFail(): void
     {
         $useragent = 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.2) Gecko/20100222 Firefox/3.6 Kylo/0.6.1.70394';
@@ -151,9 +149,7 @@ final class WindowsMobileOsTest extends TestCase
         self::assertNull($detectedVersion->getVersion());
     }
 
-    /**
-     * @throws UnexpectedValueException
-     */
+    /** @throws UnexpectedValueException */
     public function testDetectVersionFailSecond(): void
     {
         $useragent = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_HD2_T8585; Windows Phone 6.5)';

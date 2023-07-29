@@ -2,7 +2,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2022, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2023, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -18,16 +18,12 @@ use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
 use Psr\SimpleCache\CacheInterface;
-use SebastianBergmann\RecursionContext\InvalidArgumentException;
 
 use function assert;
 
 final class DetectorFactoryTest extends TestCase
 {
-    /**
-     * @throws InvalidArgumentException
-     * @throws ExpectationFailedException
-     */
+    /** @throws ExpectationFailedException */
     public function testInvoke(): void
     {
         $logger = $this->getMockBuilder(LoggerInterface::class)

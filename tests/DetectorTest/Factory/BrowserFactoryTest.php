@@ -2,7 +2,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2022, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2023, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -26,11 +26,12 @@ use BrowserDetector\Version\Version;
 use BrowserDetector\Version\VersionFactoryInterface;
 use BrowserDetector\Version\VersionInterface;
 use PHPUnit\Framework\Constraint\IsInstanceOf;
+use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
-use SebastianBergmann\RecursionContext\InvalidArgumentException;
 use stdClass;
+use Stringable;
 use UaBrowserType\TypeInterface;
 use UaBrowserType\TypeLoaderInterface;
 use UaBrowserType\Unknown;
@@ -40,6 +41,10 @@ use UnexpectedValueException;
 
 final class BrowserFactoryTest extends TestCase
 {
+    /**
+     * @throws ExpectationFailedException
+     * @throws Exception
+     */
     public function testFromEmptyArray(): void
     {
         $companyLoader = $this->getMockBuilder(CompanyLoaderInterface::class)
@@ -100,7 +105,6 @@ final class BrowserFactoryTest extends TestCase
     }
 
     /**
-     * @throws InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws UnexpectedValueException
      */
@@ -173,7 +177,7 @@ final class BrowserFactoryTest extends TestCase
 
         $result = $object->fromArray(
             ['name' => null, 'manufacturer' => 'unknown', 'version' => null, 'type' => $typeName, 'bits' => null, 'modus' => null],
-            'this is a test'
+            'this is a test',
         );
 
         self::assertInstanceOf(Browser::class, $result);
@@ -189,10 +193,7 @@ final class BrowserFactoryTest extends TestCase
         self::assertSame($company, $result->getManufacturer());
     }
 
-    /**
-     * @throws InvalidArgumentException
-     * @throws ExpectationFailedException
-     */
+    /** @throws ExpectationFailedException */
     public function testFromArrayWithFoundTypeAndVersionString(): void
     {
         $company       = $this->getMockBuilder(CompanyInterface::class)
@@ -268,7 +269,7 @@ final class BrowserFactoryTest extends TestCase
 
         $result = $object->fromArray(
             ['name' => null, 'manufacturer' => 'unknown', 'version' => $v, 'type' => $typeName, 'bits' => null, 'modus' => null],
-            'this is a test'
+            'this is a test',
         );
 
         self::assertInstanceOf(Browser::class, $result);
@@ -284,7 +285,6 @@ final class BrowserFactoryTest extends TestCase
     }
 
     /**
-     * @throws InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws UnexpectedValueException
      */
@@ -363,7 +363,7 @@ final class BrowserFactoryTest extends TestCase
 
         $result = $object->fromArray(
             ['name' => null, 'manufacturer' => 'unknown', 'version' => $v, 'type' => $typeName, 'bits' => null, 'modus' => null],
-            'this is a test'
+            'this is a test',
         );
 
         self::assertInstanceOf(Browser::class, $result);
@@ -380,7 +380,6 @@ final class BrowserFactoryTest extends TestCase
     }
 
     /**
-     * @throws InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws UnexpectedValueException
      */
@@ -455,7 +454,7 @@ final class BrowserFactoryTest extends TestCase
 
         $result = $object->fromArray(
             ['name' => null, 'manufacturer' => 'unknown', 'version' => $v, 'type' => $typeName, 'bits' => null, 'modus' => null],
-            'this is a test'
+            'this is a test',
         );
 
         self::assertInstanceOf(Browser::class, $result);
@@ -471,10 +470,7 @@ final class BrowserFactoryTest extends TestCase
         self::assertSame($company, $result->getManufacturer());
     }
 
-    /**
-     * @throws InvalidArgumentException
-     * @throws ExpectationFailedException
-     */
+    /** @throws ExpectationFailedException */
     public function testFromArrayWithFoundTypeAndFixedVersionObject(): void
     {
         $company       = $this->getMockBuilder(CompanyInterface::class)
@@ -552,7 +548,7 @@ final class BrowserFactoryTest extends TestCase
 
         $result = $object->fromArray(
             ['name' => null, 'manufacturer' => 'unknown', 'version' => $v, 'type' => $typeName, 'bits' => null, 'modus' => null],
-            'this is a test'
+            'this is a test',
         );
 
         self::assertInstanceOf(Browser::class, $result);
@@ -568,7 +564,6 @@ final class BrowserFactoryTest extends TestCase
     }
 
     /**
-     * @throws InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws UnexpectedValueException
      */
@@ -649,7 +644,7 @@ final class BrowserFactoryTest extends TestCase
 
         $result = $object->fromArray(
             ['name' => null, 'manufacturer' => 'unknown', 'version' => $v, 'type' => $typeName, 'bits' => null, 'modus' => null],
-            'this is a test'
+            'this is a test',
         );
 
         self::assertInstanceOf(Browser::class, $result);
@@ -665,10 +660,7 @@ final class BrowserFactoryTest extends TestCase
         self::assertSame($company, $result->getManufacturer());
     }
 
-    /**
-     * @throws InvalidArgumentException
-     * @throws ExpectationFailedException
-     */
+    /** @throws ExpectationFailedException */
     public function testFromArrayWithFoundTypeAndVersionDetectionClass(): void
     {
         $company       = $this->getMockBuilder(CompanyInterface::class)
@@ -743,7 +735,7 @@ final class BrowserFactoryTest extends TestCase
 
         $result = $object->fromArray(
             ['name' => null, 'manufacturer' => 'unknown', 'version' => $v, 'type' => $typeName, 'bits' => null, 'modus' => null],
-            'this is a test'
+            'this is a test',
         );
 
         self::assertInstanceOf(Browser::class, $result);
@@ -759,7 +751,6 @@ final class BrowserFactoryTest extends TestCase
     }
 
     /**
-     * @throws InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws UnexpectedValueException
      */
@@ -834,7 +825,7 @@ final class BrowserFactoryTest extends TestCase
 
         $result = $object->fromArray(
             ['name' => null, 'manufacturer' => 'unknown', 'version' => $v, 'type' => $typeName, 'bits' => null, 'modus' => null],
-            'this is a test'
+            'this is a test',
         );
 
         self::assertInstanceOf(Browser::class, $result);
@@ -851,7 +842,6 @@ final class BrowserFactoryTest extends TestCase
     }
 
     /**
-     * @throws InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws UnexpectedValueException
      */
@@ -927,7 +917,7 @@ final class BrowserFactoryTest extends TestCase
 
         $result = $object->fromArray(
             ['name' => null, 'manufacturer' => 'unknown', 'version' => $v, 'type' => $typeName, 'bits' => null, 'modus' => null],
-            'this is a test'
+            'this is a test',
         );
 
         self::assertInstanceOf(Browser::class, $result);
@@ -944,7 +934,6 @@ final class BrowserFactoryTest extends TestCase
     }
 
     /**
-     * @throws InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws UnexpectedValueException
      */
@@ -1019,7 +1008,7 @@ final class BrowserFactoryTest extends TestCase
 
         $result = $object->fromArray(
             ['name' => null, 'manufacturer' => 'unknown', 'version' => $v, 'type' => $typeName, 'bits' => null, 'modus' => null],
-            'this is a test'
+            'this is a test',
         );
 
         self::assertInstanceOf(Browser::class, $result);
@@ -1036,7 +1025,6 @@ final class BrowserFactoryTest extends TestCase
     }
 
     /**
-     * @throws InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws UnexpectedValueException
      */
@@ -1111,7 +1099,7 @@ final class BrowserFactoryTest extends TestCase
 
         $result = $object->fromArray(
             ['name' => null, 'manufacturer' => 'unknown', 'version' => $v, 'type' => $typeName, 'bits' => null, 'modus' => null],
-            'this is a test'
+            'this is a test',
         );
 
         self::assertInstanceOf(Browser::class, $result);
@@ -1128,7 +1116,6 @@ final class BrowserFactoryTest extends TestCase
     }
 
     /**
-     * @throws InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws UnexpectedValueException
      */
@@ -1204,7 +1191,7 @@ final class BrowserFactoryTest extends TestCase
 
         $result = $object->fromArray(
             ['name' => null, 'manufacturer' => 'unknown', 'version' => $v, 'type' => $typeName, 'bits' => null, 'modus' => null],
-            'this is a test'
+            'this is a test',
         );
 
         self::assertInstanceOf(Browser::class, $result);
@@ -1220,10 +1207,7 @@ final class BrowserFactoryTest extends TestCase
         self::assertSame($company, $result->getManufacturer());
     }
 
-    /**
-     * @throws InvalidArgumentException
-     * @throws ExpectationFailedException
-     */
+    /** @throws ExpectationFailedException */
     public function testFromArrayWithFoundTypeAndFixedVersionObjectAndSearch(): void
     {
         $company       = $this->getMockBuilder(CompanyInterface::class)
@@ -1311,7 +1295,7 @@ final class BrowserFactoryTest extends TestCase
                 'bits' => null,
                 'modus' => null,
             ],
-            $useragent
+            $useragent,
         );
 
         self::assertInstanceOf(Browser::class, $result);
@@ -1327,7 +1311,6 @@ final class BrowserFactoryTest extends TestCase
     }
 
     /**
-     * @throws InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws UnexpectedValueException
      */
@@ -1417,7 +1400,7 @@ final class BrowserFactoryTest extends TestCase
                 'bits' => null,
                 'modus' => null,
             ],
-            $useragent
+            $useragent,
         );
 
         self::assertInstanceOf(Browser::class, $result);
@@ -1434,7 +1417,6 @@ final class BrowserFactoryTest extends TestCase
     }
 
     /**
-     * @throws InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws UnexpectedValueException
      */
@@ -1508,7 +1490,7 @@ final class BrowserFactoryTest extends TestCase
 
         $result = $object->fromArray(
             ['name' => null, 'manufacturer' => $companyName, 'version' => null, 'type' => $typeName, 'bits' => null, 'modus' => null],
-            $useragent
+            $useragent,
         );
 
         self::assertInstanceOf(Browser::class, $result);
@@ -1524,7 +1506,6 @@ final class BrowserFactoryTest extends TestCase
     }
 
     /**
-     * @throws InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws UnexpectedValueException
      */
@@ -1569,10 +1550,20 @@ final class BrowserFactoryTest extends TestCase
         $logger
             ->expects(self::never())
             ->method('debug');
+        $matcher = self::exactly(2);
         $logger
-            ->expects(self::exactly(2))
+            ->expects($matcher)
             ->method('info')
-            ->withConsecutive([$exceptionTwo], [$exception]);
+            ->willReturnCallback(
+                static function (string | Stringable $message, array $context = []) use ($matcher, $exceptionTwo, $exception): void {
+                    match ($matcher->numberOfInvocations()) {
+                        1 => self::assertSame($exceptionTwo, $message),
+                default => self::assertSame($exception, $message),
+                    };
+
+                    self::assertSame([], $context);
+                },
+            );
         $logger
             ->expects(self::never())
             ->method('notice');
@@ -1596,7 +1587,7 @@ final class BrowserFactoryTest extends TestCase
 
         $result = $object->fromArray(
             ['name' => null, 'manufacturer' => $companyName, 'version' => null, 'type' => $typeName, 'bits' => null, 'modus' => null],
-            $useragent
+            $useragent,
         );
 
         self::assertInstanceOf(Browser::class, $result);

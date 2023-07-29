@@ -2,7 +2,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2022, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2023, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -17,11 +17,12 @@ use BrowserDetector\Factory\DeviceFactory;
 use BrowserDetector\Factory\DisplayFactoryInterface;
 use BrowserDetector\Loader\CompanyLoaderInterface;
 use BrowserDetector\Loader\NotFoundException;
+use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
-use SebastianBergmann\RecursionContext\InvalidArgumentException;
 use stdClass;
+use Stringable;
 use UaDeviceType\TypeInterface;
 use UaDeviceType\TypeLoaderInterface;
 use UaDeviceType\Unknown;
@@ -31,6 +32,10 @@ use UaResult\Device\DisplayInterface;
 
 final class DeviceFactoryTest extends TestCase
 {
+    /**
+     * @throws ExpectationFailedException
+     * @throws Exception
+     */
     public function testFromEmptyArray(): void
     {
         $useragent     = 'this is a test';
@@ -91,10 +96,7 @@ final class DeviceFactoryTest extends TestCase
         $object->fromArray([], $useragent);
     }
 
-    /**
-     * @throws InvalidArgumentException
-     * @throws ExpectationFailedException
-     */
+    /** @throws ExpectationFailedException */
     public function testFromArrayWithoutData(): void
     {
         $useragent     = 'this is a test';
@@ -167,7 +169,7 @@ final class DeviceFactoryTest extends TestCase
 
         $result = $object->fromArray(
             ['deviceName' => '', 'marketingName' => '', 'manufacturer' => 'unknown', 'brand' => 'unknown', 'type' => null, 'display' => null],
-            $useragent
+            $useragent,
         );
 
         self::assertInstanceOf(Device::class, $result);
@@ -184,10 +186,7 @@ final class DeviceFactoryTest extends TestCase
         self::assertSame($company, $result->getBrand());
     }
 
-    /**
-     * @throws InvalidArgumentException
-     * @throws ExpectationFailedException
-     */
+    /** @throws ExpectationFailedException */
     public function testFromArrayWithData(): void
     {
         $useragent     = 'this is a test';
@@ -206,11 +205,25 @@ final class DeviceFactoryTest extends TestCase
         $companyLoader = $this->getMockBuilder(CompanyLoaderInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
+        $matcher       = self::exactly(2);
         $companyLoader
-            ->expects(self::exactly(2))
+            ->expects($matcher)
             ->method('load')
-            ->withConsecutive([$manufacturerParam, $useragent], [$brandParam, $useragent])
-            ->willReturnOnConsecutiveCalls($manufacturer, $brand);
+            ->willReturnCallback(
+                static function (string $key, string $useragentParam = '') use ($matcher, $manufacturerParam, $brandParam, $useragent, $manufacturer, $brand): CompanyInterface {
+                    match ($matcher->numberOfInvocations()) {
+                        1 => self::assertSame($manufacturerParam, $key),
+                default => self::assertSame($brandParam, $key),
+                    };
+
+                    self::assertSame($useragent, $useragentParam);
+
+                    return match ($matcher->numberOfInvocations()) {
+                        1 => $manufacturer,
+                default => $brand,
+                    };
+                },
+            );
 
         $typeParam  = '1';
         $type       = $this->getMockBuilder(TypeInterface::class)
@@ -295,10 +308,7 @@ final class DeviceFactoryTest extends TestCase
         self::assertSame($brand, $result->getBrand());
     }
 
-    /**
-     * @throws InvalidArgumentException
-     * @throws ExpectationFailedException
-     */
+    /** @throws ExpectationFailedException */
     public function testFromArrayWithDataFailure(): void
     {
         $useragent     = 'this is a test';
@@ -313,11 +323,22 @@ final class DeviceFactoryTest extends TestCase
         $companyLoader = $this->getMockBuilder(CompanyLoaderInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
+        $matcher       = self::exactly(2);
         $companyLoader
-            ->expects(self::exactly(2))
+            ->expects($matcher)
             ->method('load')
-            ->withConsecutive([$manufacturerParam, $useragent], [$brandParam, $useragent])
-            ->willThrowException($companyException);
+            ->willReturnCallback(
+                static function (string $key, string $useragentParam = '') use ($matcher, $manufacturerParam, $brandParam, $useragent, $companyException): CompanyInterface {
+                    match ($matcher->numberOfInvocations()) {
+                        1 => self::assertSame($manufacturerParam, $key),
+                default => self::assertSame($brandParam, $key),
+                    };
+
+                    self::assertSame($useragent, $useragentParam);
+
+                    throw $companyException;
+                },
+            );
 
         $typeParam  = '1';
         $typeLoader = $this->getMockBuilder(TypeLoaderInterface::class)
@@ -335,10 +356,20 @@ final class DeviceFactoryTest extends TestCase
         $logger
             ->expects(self::never())
             ->method('debug');
+        $matcher = self::exactly(3);
         $logger
-            ->expects(self::exactly(3))
+            ->expects($matcher)
             ->method('info')
-            ->withConsecutive([$typeException], [$companyException], [$companyException]);
+            ->willReturnCallback(
+                static function (string | Stringable $message, array $context = []) use ($matcher, $typeException, $companyException): void {
+                    match ($matcher->numberOfInvocations()) {
+                        1 => self::assertSame($typeException, $message),
+                default => self::assertSame($companyException, $message),
+                    };
+
+                    self::assertSame([], $context);
+                },
+            );
         $logger
             ->expects(self::never())
             ->method('notice');

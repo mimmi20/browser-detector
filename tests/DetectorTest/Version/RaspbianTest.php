@@ -2,7 +2,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2022, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2023, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -18,10 +18,10 @@ use BrowserDetector\Version\Raspbian;
 use BrowserDetector\Version\VersionFactory;
 use BrowserDetector\Version\VersionFactoryInterface;
 use BrowserDetector\Version\VersionInterface;
+use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
-use SebastianBergmann\RecursionContext\InvalidArgumentException;
 use UnexpectedValueException;
 
 use function assert;
@@ -29,13 +29,11 @@ use function assert;
 final class RaspbianTest extends TestCase
 {
     /**
-     * @throws InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws UnexpectedValueException
-     *
-     * @dataProvider providerVersion
      */
-    public function testTestdetectVersion(string $useragent, ?string $expectedVersion): void
+    #[DataProvider('providerVersion')]
+    public function testTestdetectVersion(string $useragent, string | null $expectedVersion): void
     {
         $logger = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
@@ -76,8 +74,10 @@ final class RaspbianTest extends TestCase
 
     /**
      * @return array<int, array<int, string|null>>
+     *
+     * @throws void
      */
-    public function providerVersion(): array
+    public static function providerVersion(): array
     {
         return [
             [
@@ -95,9 +95,7 @@ final class RaspbianTest extends TestCase
         ];
     }
 
-    /**
-     * @throws UnexpectedValueException
-     */
+    /** @throws UnexpectedValueException */
     public function testDetectVersionFail(): void
     {
         $exception = new NotNumericException('set failed');
@@ -143,7 +141,9 @@ final class RaspbianTest extends TestCase
         assert($versionFactory instanceof VersionFactoryInterface);
         $object = new Raspbian($logger, $versionFactory);
 
-        $detectedVersion = $object->detectVersion('Mozilla/5.0 (Macintosh; ARM Mac OS X) AppleWebKit/538.15 (KHTML, like Gecko) Safari/538.15 Version/6.0 Raspbian/8.0 (1:3.8.2.0-0rpi27rpi1g) Epiphany/3.8.2');
+        $detectedVersion = $object->detectVersion(
+            'Mozilla/5.0 (Macintosh; ARM Mac OS X) AppleWebKit/538.15 (KHTML, like Gecko) Safari/538.15 Version/6.0 Raspbian/8.0 (1:3.8.2.0-0rpi27rpi1g) Epiphany/3.8.2',
+        );
 
         self::assertInstanceOf(VersionInterface::class, $detectedVersion);
         self::assertInstanceOf(NullVersion::class, $detectedVersion);

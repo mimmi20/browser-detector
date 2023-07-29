@@ -2,7 +2,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2022, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2023, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -22,23 +22,21 @@ use Exception;
 use IosBuild\IosBuild;
 use IosBuild\IosBuildInterface;
 use IosBuild\NotFoundException;
+use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
-use SebastianBergmann\RecursionContext\InvalidArgumentException;
 use UnexpectedValueException;
 
 final class IosTest extends TestCase
 {
     /**
      * @throws Exception
-     * @throws InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws UnexpectedValueException
-     *
-     * @dataProvider providerVersion
      */
-    public function testTestdetectVersion(string $useragent, ?string $expectedVersion): void
+    #[DataProvider('providerVersion')]
+    public function testTestdetectVersion(string $useragent, string | null $expectedVersion): void
     {
         $logger = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
@@ -78,8 +76,10 @@ final class IosTest extends TestCase
 
     /**
      * @return array<int, array<int, string|null>>
+     *
+     * @throws void
      */
-    public function providerVersion(): array
+    public static function providerVersion(): array
     {
         return [
             [
@@ -169,9 +169,7 @@ final class IosTest extends TestCase
         ];
     }
 
-    /**
-     * @throws UnexpectedValueException
-     */
+    /** @throws UnexpectedValueException */
     public function testDetectVersionFail(): void
     {
         $useragent = 'iOS/6.1.3 (10B329) dataaccessd/1.0';
@@ -235,9 +233,7 @@ final class IosTest extends TestCase
         self::assertSame($version, $detectedVersion);
     }
 
-    /**
-     * @throws UnexpectedValueException
-     */
+    /** @throws UnexpectedValueException */
     public function testDetectVersionFail2(): void
     {
         $useragent = 'Mozilla/5.0 (iPod; U; CPU like Mac OS X; de-de) AppleWebKit/420.1 (KHTML, like Gecko) Version/3.0 Mobile/3B48b Safari/419.3';
@@ -299,9 +295,7 @@ final class IosTest extends TestCase
         self::assertInstanceOf(NullVersion::class, $detectedVersion);
     }
 
-    /**
-     * @throws UnexpectedValueException
-     */
+    /** @throws UnexpectedValueException */
     public function testDetectVersionFail3(): void
     {
         $useragent = 'Mozilla/5.0 (iPad; CPU OS 8_1 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) CriOS/42.0.2311.47 Mobile/12B401 Safari/600.1.4';
@@ -366,9 +360,7 @@ final class IosTest extends TestCase
         self::assertInstanceOf(NullVersion::class, $detectedVersion);
     }
 
-    /**
-     * @throws UnexpectedValueException
-     */
+    /** @throws UnexpectedValueException */
     public function testDetectVersionFail4(): void
     {
         $useragent = 'AppleCoreMedia/1.0.0.12D5480a (iPad; U; CPU OS 8_2 like Mac OS X; sv_se)';
@@ -433,9 +425,7 @@ final class IosTest extends TestCase
         self::assertInstanceOf(NullVersion::class, $detectedVersion);
     }
 
-    /**
-     * @throws UnexpectedValueException
-     */
+    /** @throws UnexpectedValueException */
     public function testDetectVersionFail5(): void
     {
         $useragent = 'TestApp/1.0 CFNetwork/808.2.16 Darwin/16.3.0';
@@ -498,9 +488,7 @@ final class IosTest extends TestCase
         self::assertInstanceOf(NullVersion::class, $detectedVersion);
     }
 
-    /**
-     * @throws UnexpectedValueException
-     */
+    /** @throws UnexpectedValueException */
     public function testDetectVersionFail6(): void
     {
         $useragent = 'Apple-iPhone3C1/902.206';
@@ -563,9 +551,7 @@ final class IosTest extends TestCase
         self::assertInstanceOf(NullVersion::class, $detectedVersion);
     }
 
-    /**
-     * @throws UnexpectedValueException
-     */
+    /** @throws UnexpectedValueException */
     public function testDetectVersionFail7(): void
     {
         $useragent = 'iOS/6.1.3 (10B329) dataaccessd/1.0';
@@ -630,9 +616,7 @@ final class IosTest extends TestCase
         self::assertInstanceOf(NullVersion::class, $detectedVersion);
     }
 
-    /**
-     * @throws UnexpectedValueException
-     */
+    /** @throws UnexpectedValueException */
     public function testDetectVersionFail8(): void
     {
         $useragent = 'Mozilla/5.0 (iPad; CPU OS 8_1 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) CriOS/42.0.2311.47 Mobile Safari/600.1.4';
@@ -694,9 +678,7 @@ final class IosTest extends TestCase
         self::assertInstanceOf(NullVersion::class, $detectedVersion);
     }
 
-    /**
-     * @throws UnexpectedValueException
-     */
+    /** @throws UnexpectedValueException */
     public function testDetectVersionFail9(): void
     {
         $useragent = 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_10 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Version/8.0 Mobile Safari/600.1.4';

@@ -2,7 +2,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2022, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2023, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -18,10 +18,10 @@ use BrowserDetector\Version\NullVersion;
 use BrowserDetector\Version\VersionFactory;
 use BrowserDetector\Version\VersionFactoryInterface;
 use BrowserDetector\Version\VersionInterface;
+use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
-use SebastianBergmann\RecursionContext\InvalidArgumentException;
 use UnexpectedValueException;
 
 use function assert;
@@ -29,13 +29,11 @@ use function assert;
 final class MaxthonTest extends TestCase
 {
     /**
-     * @throws InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws UnexpectedValueException
-     *
-     * @dataProvider providerVersion
      */
-    public function testTestdetectVersion(string $useragent, ?string $expectedVersion): void
+    #[DataProvider('providerVersion')]
+    public function testTestdetectVersion(string $useragent, string | null $expectedVersion): void
     {
         $logger = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
@@ -76,8 +74,10 @@ final class MaxthonTest extends TestCase
 
     /**
      * @return array<int, array<int, string>>
+     *
+     * @throws void
      */
-    public function providerVersion(): array
+    public static function providerVersion(): array
     {
         return [
             [
@@ -95,9 +95,7 @@ final class MaxthonTest extends TestCase
         ];
     }
 
-    /**
-     * @throws UnexpectedValueException
-     */
+    /** @throws UnexpectedValueException */
     public function testDetectVersionFail(): void
     {
         $useragent = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; MyIE2; .NET CLR 2.0.50727)';
@@ -151,9 +149,7 @@ final class MaxthonTest extends TestCase
         self::assertNull($detectedVersion->getVersion());
     }
 
-    /**
-     * @throws UnexpectedValueException
-     */
+    /** @throws UnexpectedValueException */
     public function testDetectVersionFailSecond(): void
     {
         $useragent = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; MyIE 2.0 Beta 4; User-agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; http://bsalsa.com) )';
@@ -214,9 +210,7 @@ final class MaxthonTest extends TestCase
         self::assertNull($detectedVersion->getVersion());
     }
 
-    /**
-     * @throws UnexpectedValueException
-     */
+    /** @throws UnexpectedValueException */
     public function testDetectVersionFailThird(): void
     {
         $useragent = 'Mozilla/5.0 (Linux; Android 4.4.2; LIFETAB_S1033X Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Safari/537.36 MxBrowser/4.4.2.1000';

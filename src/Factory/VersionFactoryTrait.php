@@ -2,7 +2,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2022, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2023, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -30,11 +30,12 @@ trait VersionFactoryTrait
 {
     private VersionFactoryInterface $versionFactory;
 
-    /**
-     * @param stdClass|string|null $version
-     */
-    private function getVersion($version, string $useragent, LoggerInterface $logger): VersionInterface
-    {
+    /** @throws void */
+    private function getVersion(
+        stdClass | string | null $version,
+        string $useragent,
+        LoggerInterface $logger,
+    ): VersionInterface {
         $versionClass = new NullVersion();
 
         if (is_string($version)) {
@@ -47,13 +48,13 @@ trait VersionFactoryTrait
             }
         }
 
-        if (null === $version) {
+        if ($version === null) {
             return $versionClass;
         }
 
         $value = $version->value ?? null;
 
-        if (null !== $value) {
+        if ($value !== null) {
             try {
                 return $this->versionFactory->set((string) $value);
             } catch (NotNumericException $e) {
@@ -85,7 +86,7 @@ trait VersionFactoryTrait
             return $versionClass;
         }
 
-        if ('VersionFactory' !== $className) {
+        if ($className !== 'VersionFactory') {
             $versionDetector = new $className();
             assert($versionDetector instanceof VersionDetectorInterface);
 

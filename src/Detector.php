@@ -2,7 +2,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2022, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2023, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -44,41 +44,23 @@ use function sha1;
 final class Detector implements DetectorInterface
 {
     /**
-     * an logger instance
-     */
-    private LoggerInterface $logger;
-
-    private CacheInterface $cache;
-
-    private DeviceParserInterface $deviceParser;
-
-    private PlatformParserInterface $platformParser;
-
-    private BrowserParserInterface $browserParser;
-
-    private EngineParserInterface $engineParser;
-
-    private NormalizerInterface $normalizer;
-
-    /**
      * sets the cache used to make the detection faster
+     *
+     * @throws void
      */
     public function __construct(
-        LoggerInterface $logger,
-        CacheInterface $cache,
-        DeviceParserInterface $deviceParser,
-        PlatformParserInterface $platformParser,
-        BrowserParserInterface $browserParser,
-        EngineParserInterface $engineParser,
-        NormalizerInterface $normalizer
+        /**
+         * an logger instance
+         */
+        private readonly LoggerInterface $logger,
+        private readonly CacheInterface $cache,
+        private readonly DeviceParserInterface $deviceParser,
+        private readonly PlatformParserInterface $platformParser,
+        private readonly BrowserParserInterface $browserParser,
+        private readonly EngineParserInterface $engineParser,
+        private readonly NormalizerInterface $normalizer,
     ) {
-        $this->logger         = $logger;
-        $this->cache          = $cache;
-        $this->deviceParser   = $deviceParser;
-        $this->platformParser = $platformParser;
-        $this->browserParser  = $browserParser;
-        $this->engineParser   = $engineParser;
-        $this->normalizer     = $normalizer;
+        // nothing to do
     }
 
     /**
@@ -90,7 +72,21 @@ final class Detector implements DetectorInterface
      * @throws UnexpectedValueException
      * @throws NotNumericException
      */
-    public function __invoke($headers): ResultInterface
+    public function __invoke(array | GenericRequestInterface | MessageInterface | string $headers): ResultInterface
+    {
+        return $this->getBrowser($headers);
+    }
+
+    /**
+     * Gets the information about the browser by User Agent
+     *
+     * @param array<string, string>|GenericRequestInterface|MessageInterface|string $headers
+     *
+     * @throws InvalidArgumentException
+     * @throws UnexpectedValueException
+     * @throws NotNumericException
+     */
+    public function getBrowser(array | GenericRequestInterface | MessageInterface | string $headers): ResultInterface
     {
         $request = (new RequestBuilder())->buildRequest($this->logger, $headers);
 
@@ -110,25 +106,7 @@ final class Detector implements DetectorInterface
         return $item;
     }
 
-    /**
-     * Gets the information about the browser by User Agent
-     *
-     * @deprecated
-     *
-     * @param array<string, string>|GenericRequestInterface|MessageInterface|string $request
-     *
-     * @throws InvalidArgumentException
-     * @throws UnexpectedValueException
-     * @throws NotNumericException
-     */
-    public function getBrowser($request): ResultInterface
-    {
-        return $this->__invoke($request);
-    }
-
-    /**
-     * @throws NotNumericException
-     */
+    /** @throws NotNumericException */
     private function parse(GenericRequestInterface $request): Result
     {
         try {
@@ -146,7 +124,7 @@ final class Detector implements DetectorInterface
             new Company('unknown', null, null),
             new Company('unknown', null, null),
             new Unknown(),
-            new Display(null, null, null, null)
+            new Display(null, null, null, null),
         );
 
         $defaultPlatform = new Os(
@@ -154,7 +132,7 @@ final class Detector implements DetectorInterface
             null,
             new Company('unknown', null, null),
             new Version('0'),
-            null
+            null,
         );
 
         try {
@@ -166,12 +144,14 @@ final class Detector implements DetectorInterface
             $platform = $defaultPlatform;
         }
 
-        if (null === $platform) {
+        if ($platform === null) {
             $this->logger->debug('platform not detected from the device');
             $platformParser = $this->platformParser;
 
             try {
-                $platform = $platformParser->parse((string) $this->normalizer->normalize($request->getPlatformUserAgent()));
+                $platform = $platformParser->parse(
+                    (string) $this->normalizer->normalize($request->getPlatformUserAgent()),
+                );
             } catch (UnexpectedValueException $e) {
                 $this->logger->warning($e);
                 $platform = $defaultPlatform;
@@ -186,13 +166,13 @@ final class Detector implements DetectorInterface
             new Version('0'),
             new \UaBrowserType\Unknown(),
             null,
-            null
+            null,
         );
 
         $defaultEngine = new Engine(
             null,
             new Company('unknown', null, null),
-            new Version('0')
+            new Version('0'),
         );
 
         try {
@@ -220,7 +200,7 @@ final class Detector implements DetectorInterface
             $engineUa = '';
         }
 
-        if (null !== $platform && in_array($platform->getName(), ['iOS', 'iPhone OS'], true)) {
+        if ($platform !== null && in_array($platform->getName(), ['iOS', 'iPhone OS'], true)) {
             try {
                 $engine = $this->engineParser->load('webkit', $engineUa);
             } catch (UnexpectedValueException $e) {
@@ -228,7 +208,7 @@ final class Detector implements DetectorInterface
 
                 $engine = $defaultEngine;
             }
-        } elseif (null === $engine) {
+        } elseif ($engine === null) {
             $this->logger->debug('engine not detected from browser');
             $engine = $defaultEngine;
 
@@ -246,7 +226,7 @@ final class Detector implements DetectorInterface
             $device,
             $platform,
             $browser,
-            $engine
+            $engine,
         );
     }
 }

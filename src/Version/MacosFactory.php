@@ -2,7 +2,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2022, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2023, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -17,12 +17,13 @@ use Psr\Log\LoggerInterface;
 
 final class MacosFactory implements MacosFactoryInterface
 {
+    /** @throws void */
     public function __invoke(LoggerInterface $logger): Macos
     {
         return new Macos(
             $logger,
             new VersionFactory(),
-            new MacosBuild()
+            new MacosBuild(),
         );
     }
 }

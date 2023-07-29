@@ -2,7 +2,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2022, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2023, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -22,15 +22,12 @@ use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
-use SebastianBergmann\RecursionContext\InvalidArgumentException;
 use UaResult\Device\DeviceInterface;
 use UaResult\Os\OsInterface;
 use UnexpectedValueException;
 
 use function assert;
-use function get_class;
-use function gettype;
-use function is_object;
+use function get_debug_type;
 use function sprintf;
 
 final class DeviceLoaderTest extends TestCase
@@ -95,12 +92,7 @@ final class DeviceLoaderTest extends TestCase
         assert($companyLoader instanceof CompanyLoaderInterface);
         assert($platformParser instanceof PlatformParserInterface);
         assert($initData instanceof DataInterface);
-        $object = new DeviceLoader(
-            $logger,
-            $initData,
-            $companyLoader,
-            $platformParser
-        );
+        $object = new DeviceLoader($logger, $initData, $companyLoader, $platformParser);
 
         $this->expectException(NotFoundException::class);
         $this->expectExceptionMessage('the device with key "test-key" was not found');
@@ -168,12 +160,7 @@ final class DeviceLoaderTest extends TestCase
         assert($companyLoader instanceof CompanyLoaderInterface);
         assert($platformParser instanceof PlatformParserInterface);
         assert($initData instanceof DataInterface);
-        $object = new DeviceLoader(
-            $logger,
-            $initData,
-            $companyLoader,
-            $platformParser
-        );
+        $object = new DeviceLoader($logger, $initData, $companyLoader, $platformParser);
 
         $this->expectException(NotFoundException::class);
         $this->expectExceptionMessage('the device with key "test-key" was not found');
@@ -182,11 +169,9 @@ final class DeviceLoaderTest extends TestCase
     }
 
     /**
-     * @throws InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws Exception
      * @throws NotFoundException
-     * @throws \InvalidArgumentException
      * @throws UnexpectedValueException
      */
     public function testInvokeNoVersion(): void
@@ -257,12 +242,7 @@ final class DeviceLoaderTest extends TestCase
         assert($companyLoader instanceof CompanyLoaderInterface);
         assert($platformParser instanceof PlatformParserInterface);
         assert($initData instanceof DataInterface);
-        $object = new DeviceLoader(
-            $logger,
-            $initData,
-            $companyLoader,
-            $platformParser
-        );
+        $object = new DeviceLoader($logger, $initData, $companyLoader, $platformParser);
 
         $result = $object->load('test-key', 'test-ua');
 
@@ -274,11 +254,9 @@ final class DeviceLoaderTest extends TestCase
     }
 
     /**
-     * @throws InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws Exception
      * @throws NotFoundException
-     * @throws \InvalidArgumentException
      * @throws UnexpectedValueException
      */
     public function testInvokeGenericVersionAndPlatformInvalidException(): void
@@ -356,12 +334,7 @@ final class DeviceLoaderTest extends TestCase
         assert($companyLoader instanceof CompanyLoaderInterface);
         assert($platformParser instanceof PlatformParserInterface);
         assert($initData instanceof DataInterface);
-        $object = new DeviceLoader(
-            $logger,
-            $initData,
-            $companyLoader,
-            $platformParser
-        );
+        $object = new DeviceLoader($logger, $initData, $companyLoader, $platformParser);
 
         $result = $object->load('test-key', 'test/1.0');
 
@@ -373,11 +346,9 @@ final class DeviceLoaderTest extends TestCase
     }
 
     /**
-     * @throws InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws Exception
      * @throws NotFoundException
-     * @throws \InvalidArgumentException
      * @throws UnexpectedValueException
      */
     public function testInvokeVersionAndPlatform(): void
@@ -455,12 +426,7 @@ final class DeviceLoaderTest extends TestCase
         assert($companyLoader instanceof CompanyLoaderInterface);
         assert($platformParser instanceof PlatformParserInterface);
         assert($initData instanceof DataInterface);
-        $object = new DeviceLoader(
-            $logger,
-            $initData,
-            $companyLoader,
-            $platformParser
-        );
+        $object = new DeviceLoader($logger, $initData, $companyLoader, $platformParser);
 
         $result = $object->load('test-key', 'test/1.0');
 
@@ -473,8 +439,8 @@ final class DeviceLoaderTest extends TestCase
             sprintf(
                 '$deviceResult should be an instance of %s, but is %s',
                 DeviceInterface::class,
-                is_object($deviceResult) ? get_class($deviceResult) : gettype($deviceResult)
-            )
+                get_debug_type($deviceResult),
+            ),
         );
 
         self::assertInstanceOf(DeviceInterface::class, $deviceResult);
@@ -487,8 +453,8 @@ final class DeviceLoaderTest extends TestCase
             sprintf(
                 '$platformResult should be an instance of %s, but is %s',
                 OsInterface::class,
-                is_object($platformResult) ? get_class($platformResult) : gettype($platformResult)
-            )
+                get_debug_type($platformResult),
+            ),
         );
 
         self::assertInstanceOf(OsInterface::class, $platformResult);

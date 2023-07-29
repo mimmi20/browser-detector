@@ -2,7 +2,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2022, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2023, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -16,7 +16,8 @@ use function preg_match;
 
 final class Os implements BitsInterface
 {
-    public function getBits(string $useragent): ?int
+    /** @throws void */
+    public function getBits(string $useragent): int | null
     {
         if (preg_match('/x64|win64|wow64|x86_64|amd64|ppc64|sparc64|osf1|arm_64/i', $useragent)) {
             return 64;

@@ -2,7 +2,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2022, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2023, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -89,11 +89,7 @@ final class PlatformLoaderTest extends TestCase
         assert($logger instanceof LoggerInterface);
         assert($companyLoader instanceof CompanyLoaderInterface);
         assert($initData instanceof DataInterface);
-        $object = new PlatformLoader(
-            $logger,
-            $initData,
-            $companyLoader
-        );
+        $object = new PlatformLoader($logger, $initData, $companyLoader);
 
         $this->expectException(NotFoundException::class);
         $this->expectExceptionMessage('the platform with key "test-key" was not found');
@@ -160,11 +156,7 @@ final class PlatformLoaderTest extends TestCase
         assert($logger instanceof LoggerInterface);
         assert($companyLoader instanceof CompanyLoaderInterface);
         assert($initData instanceof DataInterface);
-        $object = new PlatformLoader(
-            $logger,
-            $initData,
-            $companyLoader
-        );
+        $object = new PlatformLoader($logger, $initData, $companyLoader);
 
         $this->expectException(NotFoundException::class);
         $this->expectExceptionMessage('the platform with key "test-key" was not found');
@@ -173,11 +165,9 @@ final class PlatformLoaderTest extends TestCase
     }
 
     /**
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws Exception
      * @throws NotFoundException
-     * @throws \InvalidArgumentException
      * @throws UnexpectedValueException
      */
     public function testInvokeNoVersion(): void
@@ -247,11 +237,7 @@ final class PlatformLoaderTest extends TestCase
         assert($logger instanceof LoggerInterface);
         assert($companyLoader instanceof CompanyLoaderInterface);
         assert($initData instanceof DataInterface);
-        $object = new PlatformLoader(
-            $logger,
-            $initData,
-            $companyLoader
-        );
+        $object = new PlatformLoader($logger, $initData, $companyLoader);
 
         $result = $object->load('test-key', 'test-ua');
 
@@ -259,11 +245,9 @@ final class PlatformLoaderTest extends TestCase
     }
 
     /**
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws Exception
      * @throws NotFoundException
-     * @throws \InvalidArgumentException
      * @throws UnexpectedValueException
      */
     public function testInvokeVersionSet(): void
@@ -333,11 +317,7 @@ final class PlatformLoaderTest extends TestCase
         assert($logger instanceof LoggerInterface);
         assert($companyLoader instanceof CompanyLoaderInterface);
         assert($initData instanceof DataInterface);
-        $object = new PlatformLoader(
-            $logger,
-            $initData,
-            $companyLoader
-        );
+        $object = new PlatformLoader($logger, $initData, $companyLoader);
 
         $result = $object->load('test-key', 'test-ua');
 
@@ -345,11 +325,9 @@ final class PlatformLoaderTest extends TestCase
     }
 
     /**
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws Exception
      * @throws NotFoundException
-     * @throws \InvalidArgumentException
      * @throws UnexpectedValueException
      */
     public function testInvokeGenericVersion(): void
@@ -419,11 +397,7 @@ final class PlatformLoaderTest extends TestCase
         assert($logger instanceof LoggerInterface);
         assert($companyLoader instanceof CompanyLoaderInterface);
         assert($initData instanceof DataInterface);
-        $object = new PlatformLoader(
-            $logger,
-            $initData,
-            $companyLoader
-        );
+        $object = new PlatformLoader($logger, $initData, $companyLoader);
 
         $result = $object->load('test-key', 'test/10.12');
 
@@ -433,11 +407,9 @@ final class PlatformLoaderTest extends TestCase
     }
 
     /**
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws Exception
      * @throws NotFoundException
-     * @throws \InvalidArgumentException
      * @throws UnexpectedValueException
      */
     public function testInvokeVersion(): void
@@ -507,11 +479,7 @@ final class PlatformLoaderTest extends TestCase
         assert($logger instanceof LoggerInterface);
         assert($companyLoader instanceof CompanyLoaderInterface);
         assert($initData instanceof DataInterface);
-        $object = new PlatformLoader(
-            $logger,
-            $initData,
-            $companyLoader
-        );
+        $object = new PlatformLoader($logger, $initData, $companyLoader);
 
         $result = $object->load('test-key', 'test/12.0');
 

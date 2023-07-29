@@ -2,7 +2,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2022, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2023, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -16,20 +16,16 @@ use Psr\Http\Message\MessageInterface;
 use Psr\Log\LoggerInterface;
 use UaRequest\GenericRequestFactory;
 use UaRequest\GenericRequestInterface;
-use UnexpectedValueException;
 
 use function is_array;
-use function is_string;
 
 final class RequestBuilder implements RequestBuilderInterface
 {
-    /**
-     * @param array<string, string>|GenericRequestInterface|MessageInterface|mixed|string $request
-     *
-     * @throws UnexpectedValueException
-     */
-    public function buildRequest(LoggerInterface $logger, $request): GenericRequestInterface
-    {
+    /** @throws void */
+    public function buildRequest(
+        LoggerInterface $logger,
+        array | GenericRequestInterface | MessageInterface | string $request,
+    ): GenericRequestInterface {
         if ($request instanceof GenericRequestInterface) {
             $logger->debug('request object used as is');
 
@@ -50,14 +46,8 @@ final class RequestBuilder implements RequestBuilderInterface
             return $requestFactory->createRequestFromArray($request);
         }
 
-        if (is_string($request)) {
-            $logger->debug('request object created from string');
+        $logger->debug('request object created from string');
 
-            return $requestFactory->createRequestFromString($request);
-        }
-
-        throw new UnexpectedValueException(
-            'the request parameter has to be a string, an array or an instance of \Psr\Http\Message\MessageInterface or an instance of \UaRequest\GenericRequestInterface'
-        );
+        return $requestFactory->createRequestFromString($request);
     }
 }

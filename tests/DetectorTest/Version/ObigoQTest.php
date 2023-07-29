@@ -2,7 +2,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2022, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2023, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -18,10 +18,10 @@ use BrowserDetector\Version\ObigoQ;
 use BrowserDetector\Version\VersionFactory;
 use BrowserDetector\Version\VersionFactoryInterface;
 use BrowserDetector\Version\VersionInterface;
+use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
-use SebastianBergmann\RecursionContext\InvalidArgumentException;
 use UnexpectedValueException;
 
 use function assert;
@@ -29,13 +29,11 @@ use function assert;
 final class ObigoQTest extends TestCase
 {
     /**
-     * @throws InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws UnexpectedValueException
-     *
-     * @dataProvider providerVersion
      */
-    public function testTestdetectVersion(string $useragent, ?string $expectedVersion): void
+    #[DataProvider('providerVersion')]
+    public function testTestdetectVersion(string $useragent, string | null $expectedVersion): void
     {
         $logger = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
@@ -76,8 +74,10 @@ final class ObigoQTest extends TestCase
 
     /**
      * @return array<int, array<int, string|null>>
+     *
+     * @throws void
      */
-    public function providerVersion(): array
+    public static function providerVersion(): array
     {
         return [
             [
@@ -107,9 +107,7 @@ final class ObigoQTest extends TestCase
         ];
     }
 
-    /**
-     * @throws UnexpectedValueException
-     */
+    /** @throws UnexpectedValueException */
     public function testDetectVersionFail(): void
     {
         $exception = new NotNumericException('set failed');
@@ -155,16 +153,16 @@ final class ObigoQTest extends TestCase
         assert($versionFactory instanceof VersionFactoryInterface);
         $object = new ObigoQ($logger, $versionFactory);
 
-        $detectedVersion = $object->detectVersion('ALCATEL_TRIBE_3075A/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q05A');
+        $detectedVersion = $object->detectVersion(
+            'ALCATEL_TRIBE_3075A/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q05A',
+        );
 
         self::assertInstanceOf(VersionInterface::class, $detectedVersion);
         self::assertInstanceOf(NullVersion::class, $detectedVersion);
         self::assertNull($detectedVersion->getVersion());
     }
 
-    /**
-     * @throws UnexpectedValueException
-     */
+    /** @throws UnexpectedValueException */
     public function testDetectVersionFailSecond(): void
     {
         $exception = new NotNumericException('set failed');
@@ -210,7 +208,9 @@ final class ObigoQTest extends TestCase
         assert($versionFactory instanceof VersionFactoryInterface);
         $object = new ObigoQ($logger, $versionFactory);
 
-        $detectedVersion = $object->detectVersion('LG-GT505/v10a Browser/Teleca-Q7.1 MMS/LG-MMS-V1.0/1.2 MediaPlayer/LGPlayer/1.0 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1');
+        $detectedVersion = $object->detectVersion(
+            'LG-GT505/v10a Browser/Teleca-Q7.1 MMS/LG-MMS-V1.0/1.2 MediaPlayer/LGPlayer/1.0 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1',
+        );
 
         self::assertInstanceOf(VersionInterface::class, $detectedVersion);
         self::assertInstanceOf(NullVersion::class, $detectedVersion);

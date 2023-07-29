@@ -2,7 +2,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2022, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2023, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -15,29 +15,28 @@ namespace BrowserDetectorTest\Version\Helper;
 use BrowserDetector\Version\Helper\Safari;
 use BrowserDetector\Version\NotNumericException;
 use BrowserDetector\Version\VersionFactory;
+use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
-use SebastianBergmann\RecursionContext\InvalidArgumentException;
 use UnexpectedValueException;
 
 final class SafariTest extends TestCase
 {
     private Safari $object;
 
+    /** @throws void */
     protected function setUp(): void
     {
         $this->object = new Safari();
     }
 
     /**
-     * @throws InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws UnexpectedValueException
      * @throws NotNumericException
-     *
-     * @dataProvider providerVersion
      */
-    public function testMapSafariVersion(string $version, ?string $expectedVersion): void
+    #[DataProvider('providerVersion')]
+    public function testMapSafariVersion(string $version, string | null $expectedVersion): void
     {
         $versionObj = (new VersionFactory())->set($version);
         self::assertSame($expectedVersion, $this->object->mapSafariVersion($versionObj));
@@ -45,8 +44,10 @@ final class SafariTest extends TestCase
 
     /**
      * @return array<int, array<int, string|null>>
+     *
+     * @throws void
      */
-    public function providerVersion(): array
+    public static function providerVersion(): array
     {
         return [
             ['3.0', '3.0.0'],

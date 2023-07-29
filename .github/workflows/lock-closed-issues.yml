@@ -2,7 +2,8 @@ name: Lock closed issue
 
 on:
   issues:
-    types: [closed]
+    types:
+      - "closed"
 
 jobs:
   lock:

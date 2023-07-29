@@ -2,7 +2,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2022, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2023, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -70,14 +70,26 @@ final class Safari implements SafariInterface
      *
      * @throws UnexpectedValueException
      */
-    public function mapSafariVersion(VersionInterface $detectedVersion): ?string
+    public function mapSafariVersion(VersionInterface $detectedVersion): string | null
     {
-        if (in_array($detectedVersion->getVersion(VersionInterface::IGNORE_MICRO), self::REGULAR_VERSIONS, true)) {
+        if (
+            in_array(
+                $detectedVersion->getVersion(VersionInterface::IGNORE_MICRO),
+                self::REGULAR_VERSIONS,
+                true,
+            )
+        ) {
             return $detectedVersion->getVersion();
         }
 
         foreach (self::MAP_VERSIONS as $engineVersion => $osVersion) {
-            if (version_compare((string) $detectedVersion->getVersion(VersionInterface::IGNORE_MICRO), (string) $engineVersion, '>=')) {
+            if (
+                version_compare(
+                    (string) $detectedVersion->getVersion(VersionInterface::IGNORE_MICRO),
+                    (string) $engineVersion,
+                    '>=',
+                )
+            ) {
                 return $osVersion;
             }
         }

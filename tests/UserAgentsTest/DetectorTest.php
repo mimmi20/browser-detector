@@ -2,7 +2,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2022, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2023, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -16,11 +16,12 @@ use BrowserDetector\Detector;
 use BrowserDetector\DetectorFactory;
 use BrowserDetector\Loader\CompanyLoader;
 use BrowserDetector\Loader\CompanyLoaderFactory;
-use BrowserDetector\Loader\NotFoundException;
 use BrowserDetector\Version\NotNumericException;
 use DateInterval;
 use Exception;
 use JsonException;
+use PHPUnit\Framework\Attributes\CoversNothing;
+use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\AbstractLogger;
@@ -32,17 +33,16 @@ use RecursiveDirectoryIterator;
 use RecursiveIteratorIterator;
 use RegexIterator;
 use RuntimeException;
+use Stringable;
 use UaResult\Browser\BrowserInterface;
 use UaResult\Device\DeviceInterface;
 use UaResult\Engine\EngineInterface;
 use UaResult\Os\OsInterface;
 use UaResult\Result\Result;
 use UaResult\Result\ResultInterface;
-use UnexpectedValueException;
 
 use function assert;
 use function file_get_contents;
-use function get_class;
 use function is_array;
 use function is_iterable;
 use function is_string;
@@ -55,27 +55,26 @@ use const JSON_UNESCAPED_SLASHES;
 use const JSON_UNESCAPED_UNICODE;
 use const PHP_EOL;
 
-/**
- * @infection-ignore-all
- */
+/** @infection-ignore-all */
 final class DetectorTest extends TestCase
 {
     private static DetectorFactory $factory;
     private Detector $object;
 
+    /** @throws void */
     public static function setUpBeforeClass(): void
     {
-        $logger = new class() extends AbstractLogger {
+        $logger = new class () extends AbstractLogger {
             /**
              * Detailed debug information.
              *
-             * @param string  $message
-             * @param mixed[] $context
+             * @param array<mixed> $context
+             *
+             * @throws void
              *
              * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
-             * @phpcsSuppress SlevomatCodingStandard.TypeHints.ParameterTypeHint.MissingNativeTypeHint
              */
-            public function debug($message, array $context = []): void
+            public function debug(string | Stringable $message, array $context = []): void
             {
                 // do nothing here
             }
@@ -83,20 +82,21 @@ final class DetectorTest extends TestCase
             /**
              * Logs with an arbitrary level.
              *
-             * @param int|string $level
-             * @param string     $message
-             * @param mixed[]    $context
+             * @param int|string   $level
+             * @param array<mixed> $context
+             *
+             * @throws void
              *
              * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
              * @phpcsSuppress SlevomatCodingStandard.TypeHints.ParameterTypeHint.MissingNativeTypeHint
              */
-            public function log($level, $message, array $context = []): void
+            public function log($level, string | Stringable $message, array $context = []): void
             {
                 echo '[', $level, '] ', $message, PHP_EOL;
             }
         };
 
-        $cache = new class() implements CacheInterface {
+        $cache = new class () implements CacheInterface {
             /**
              * Fetches a value from the cache.
              *
@@ -105,10 +105,11 @@ final class DetectorTest extends TestCase
              *
              * @return mixed the value of the item from the cache, or $default in case of cache miss
              *
-             * @phpcsSuppress SlevomatCodingStandard.TypeHints.ParameterTypeHint.MissingNativeTypeHint
+             * @throws void
+             *
              * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
              */
-            public function get($key, $default = null)
+            public function get(string $key, mixed $default = null): mixed
             {
                 return null;
             }
@@ -124,10 +125,11 @@ final class DetectorTest extends TestCase
              *
              * @return bool true on success and false on failure
              *
-             * @phpcsSuppress SlevomatCodingStandard.TypeHints.ParameterTypeHint.MissingNativeTypeHint
+             * @throws void
+             *
              * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
              */
-            public function set($key, $value, $ttl = null): bool
+            public function set(string $key, mixed $value, int | DateInterval | null $ttl = null): bool
             {
                 return false;
             }
@@ -139,10 +141,11 @@ final class DetectorTest extends TestCase
              *
              * @return bool True if the item was successfully removed. False if there was an error.
              *
-             * @phpcsSuppress SlevomatCodingStandard.TypeHints.ParameterTypeHint.MissingNativeTypeHint
+             * @throws void
+             *
              * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
              */
-            public function delete($key): bool
+            public function delete(string $key): bool
             {
                 return false;
             }
@@ -151,6 +154,8 @@ final class DetectorTest extends TestCase
              * Wipes clean the entire cache's keys.
              *
              * @return bool true on success and false on failure
+             *
+             * @throws void
              */
             public function clear(): bool
             {
@@ -165,10 +170,11 @@ final class DetectorTest extends TestCase
              *
              * @return iterable<string, mixed> A list of key => value pairs. Cache keys that do not exist or are stale will have $default as value.
              *
-             * @phpcsSuppress SlevomatCodingStandard.TypeHints.ParameterTypeHint.MissingNativeTypeHint
+             * @throws void
+             *
              * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
              */
-            public function getMultiple($keys, $default = null): iterable
+            public function getMultiple(iterable $keys, mixed $default = null): iterable
             {
                 return [];
             }
@@ -183,10 +189,11 @@ final class DetectorTest extends TestCase
              *
              * @return bool true on success and false on failure
              *
-             * @phpcsSuppress SlevomatCodingStandard.TypeHints.ParameterTypeHint.MissingNativeTypeHint
+             * @throws void
+             *
              * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
              */
-            public function setMultiple($values, $ttl = null): bool
+            public function setMultiple(iterable $values, int | DateInterval | null $ttl = null): bool
             {
                 return false;
             }
@@ -198,10 +205,11 @@ final class DetectorTest extends TestCase
              *
              * @return bool True if the items were successfully removed. False if there was an error.
              *
-             * @phpcsSuppress SlevomatCodingStandard.TypeHints.ParameterTypeHint.MissingNativeTypeHint
+             * @throws void
+             *
              * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
              */
-            public function deleteMultiple($keys): bool
+            public function deleteMultiple(iterable $keys): bool
             {
                 return false;
             }
@@ -216,10 +224,11 @@ final class DetectorTest extends TestCase
              *
              * @param string $key the cache item key
              *
-             * @phpcsSuppress SlevomatCodingStandard.TypeHints.ParameterTypeHint.MissingNativeTypeHint
+             * @throws void
+             *
              * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
              */
-            public function has($key): bool
+            public function has(string $key): bool
             {
                 return false;
             }
@@ -233,8 +242,9 @@ final class DetectorTest extends TestCase
      * Sets up the fixture, for example, open a network connection.
      * This method is called before a test is executed.
      *
-     * @coversNothing
+     * @throws void
      */
+    #[CoversNothing]
     protected function setUp(): void
     {
         $this->object = (self::$factory)();
@@ -244,23 +254,28 @@ final class DetectorTest extends TestCase
      * @param array<string, string> $headers
      *
      * @throws InvalidArgumentException
-     * @throws NotFoundException
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
      * @throws ExpectationFailedException
-     * @throws UnexpectedValueException
-     * @throws NotNumericException
-     *
-     * @dataProvider providerGetBrowser
-     * @coversNothing
      */
+    #[DataProvider('providerGetBrowser')]
+    #[CoversNothing]
     public function testGetBrowser(array $headers, Result $expectedResult): void
     {
-        $result = $this->object->__invoke($headers);
-        assert($result instanceof ResultInterface, sprintf('$result should be an instance of %s, but is %s', ResultInterface::class, get_class($result)));
+        $result = ($this->object)($headers);
+        assert(
+            $result instanceof ResultInterface,
+            sprintf(
+                '$result should be an instance of %s, but is %s',
+                ResultInterface::class,
+                $result::class,
+            ),
+        );
 
         try {
-            $encodedHeaders = json_encode($headers, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_THROW_ON_ERROR);
-        } catch (JsonException $e) {
+            $encodedHeaders = json_encode(
+                $headers,
+                JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_THROW_ON_ERROR,
+            );
+        } catch (JsonException) {
             $encodedHeaders = '< failed to encode headers >';
         }
 
@@ -269,8 +284,8 @@ final class DetectorTest extends TestCase
             $result,
             sprintf(
                 'found result is not an instance of "\UaResult\Result\ResultInterface" for headers %s',
-                $encodedHeaders
-            )
+                $encodedHeaders,
+            ),
         );
 
         $foundBrowser = $result->getBrowser();
@@ -280,8 +295,8 @@ final class DetectorTest extends TestCase
             $foundBrowser,
             sprintf(
                 'found browser is not an instance of "\UaResult\Browser\BrowserInterface" for headers %s',
-                $encodedHeaders
-            )
+                $encodedHeaders,
+            ),
         );
 
         $foundEngine = $result->getEngine();
@@ -291,8 +306,8 @@ final class DetectorTest extends TestCase
             $foundEngine,
             sprintf(
                 'found engine is not an instance of "\UaResult\Engine\EngineInterface" for headers %s',
-                $encodedHeaders
-            )
+                $encodedHeaders,
+            ),
         );
 
         $foundPlatform = $result->getOs();
@@ -302,8 +317,8 @@ final class DetectorTest extends TestCase
             $foundPlatform,
             sprintf(
                 'found platform is not an instance of "\UaResult\Os\OsInterface" for headers %s',
-                $encodedHeaders
-            )
+                $encodedHeaders,
+            ),
         );
 
         $foundDevice = $result->getDevice();
@@ -313,27 +328,28 @@ final class DetectorTest extends TestCase
             $foundDevice,
             sprintf(
                 'found result is not an instance of "\UaResult\Device\DeviceInterface" for headers %s',
-                $encodedHeaders
-            )
+                $encodedHeaders,
+            ),
         );
 
-        self::assertEquals(
+        self::assertSame(
             $expectedResult,
             $result,
             sprintf(
                 'detection result mismatch for headers %s',
-                $encodedHeaders
-            )
+                $encodedHeaders,
+            ),
         );
     }
 
     /**
-     * @return array<string, array<string, (Result|array<string, string>)>>
+     * @return array<string, array<string, (array<string, string>|Result)>>
      *
      * @throws Exception
      * @throws NotNumericException
+     * @throws RuntimeException
      */
-    public function providerGetBrowser(): array
+    public static function providerGetBrowser(): array
     {
         $iterator = new RecursiveIteratorIterator(new RecursiveDirectoryIterator('tests/data/'));
         $files    = new RegexIterator($iterator, '/^.+\.json$/i', RegexIterator::GET_MATCH);
@@ -344,7 +360,14 @@ final class DetectorTest extends TestCase
         $companyLoaderFactory = new CompanyLoaderFactory();
 
         $companyLoader = $companyLoaderFactory();
-        assert($companyLoader instanceof CompanyLoader, sprintf('$companyLoader should be an instance of %s, but is %s', CompanyLoader::class, get_class($companyLoader)));
+        assert(
+            $companyLoader instanceof CompanyLoader,
+            sprintf(
+                '$companyLoader should be an instance of %s, but is %s',
+                CompanyLoader::class,
+                $companyLoader::class,
+            ),
+        );
         $resultFactory = new ResultFactory($companyLoader, $logger);
 
         foreach ($files as $file) {
@@ -355,17 +378,12 @@ final class DetectorTest extends TestCase
 
             $content = @file_get_contents($file);
 
-            if (false === $content) {
+            if ($content === false) {
                 throw new RuntimeException(sprintf('could not read file "%s"', $file));
             }
 
             try {
-                $tests = json_decode(
-                    $content,
-                    true,
-                    512,
-                    JSON_THROW_ON_ERROR
-                );
+                $tests = json_decode($content, true, 512, JSON_THROW_ON_ERROR);
             } catch (JsonException $e) {
                 throw new Exception(sprintf('file "%s" contains invalid json', $file), 0, $e);
             }

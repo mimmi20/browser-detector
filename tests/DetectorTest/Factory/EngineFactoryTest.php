@@ -2,7 +2,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2022, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2023, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -26,10 +26,10 @@ use BrowserDetector\Version\Version;
 use BrowserDetector\Version\VersionFactoryInterface;
 use BrowserDetector\Version\VersionInterface;
 use PHPUnit\Framework\Constraint\IsInstanceOf;
+use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
-use SebastianBergmann\RecursionContext\InvalidArgumentException;
 use stdClass;
 use UaResult\Company\CompanyInterface;
 use UaResult\Engine\EngineInterface;
@@ -37,6 +37,10 @@ use UnexpectedValueException;
 
 final class EngineFactoryTest extends TestCase
 {
+    /**
+     * @throws ExpectationFailedException
+     * @throws Exception
+     */
     public function testFromEmptyArray(): void
     {
         $companyLoader = $this->getMockBuilder(CompanyLoaderInterface::class)
@@ -92,10 +96,7 @@ final class EngineFactoryTest extends TestCase
         $object->fromArray([], 'this is a test');
     }
 
-    /**
-     * @throws InvalidArgumentException
-     * @throws ExpectationFailedException
-     */
+    /** @throws ExpectationFailedException */
     public function testFromArrayWithVersionString(): void
     {
         $company       = $this->getMockBuilder(CompanyInterface::class)
@@ -158,7 +159,7 @@ final class EngineFactoryTest extends TestCase
 
         $result = $object->fromArray(
             ['name' => null, 'manufacturer' => 'unknown', 'version' => $v],
-            'this is a test'
+            'this is a test',
         );
 
         self::assertInstanceOf(EngineInterface::class, $result);
@@ -170,7 +171,6 @@ final class EngineFactoryTest extends TestCase
     }
 
     /**
-     * @throws InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws UnexpectedValueException
      */
@@ -236,7 +236,7 @@ final class EngineFactoryTest extends TestCase
 
         $result = $object->fromArray(
             ['name' => null, 'manufacturer' => 'unknown', 'version' => $v],
-            'this is a test'
+            'this is a test',
         );
 
         self::assertInstanceOf(EngineInterface::class, $result);
@@ -249,7 +249,6 @@ final class EngineFactoryTest extends TestCase
     }
 
     /**
-     * @throws InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws UnexpectedValueException
      */
@@ -311,7 +310,7 @@ final class EngineFactoryTest extends TestCase
 
         $result = $object->fromArray(
             ['name' => null, 'manufacturer' => 'unknown', 'version' => $v],
-            'this is a test'
+            'this is a test',
         );
 
         self::assertInstanceOf(EngineInterface::class, $result);
@@ -323,10 +322,7 @@ final class EngineFactoryTest extends TestCase
         self::assertSame($company, $result->getManufacturer());
     }
 
-    /**
-     * @throws InvalidArgumentException
-     * @throws ExpectationFailedException
-     */
+    /** @throws ExpectationFailedException */
     public function testFromArrayWithFixedVersionObject(): void
     {
         $company       = $this->getMockBuilder(CompanyInterface::class)
@@ -391,7 +387,7 @@ final class EngineFactoryTest extends TestCase
 
         $result = $object->fromArray(
             ['name' => null, 'manufacturer' => 'unknown', 'version' => $v],
-            'this is a test'
+            'this is a test',
         );
 
         self::assertInstanceOf(EngineInterface::class, $result);
@@ -403,7 +399,6 @@ final class EngineFactoryTest extends TestCase
     }
 
     /**
-     * @throws InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws UnexpectedValueException
      */
@@ -471,7 +466,7 @@ final class EngineFactoryTest extends TestCase
 
         $result = $object->fromArray(
             ['name' => null, 'manufacturer' => 'unknown', 'version' => $v],
-            'this is a test'
+            'this is a test',
         );
 
         self::assertInstanceOf(EngineInterface::class, $result);
@@ -483,10 +478,7 @@ final class EngineFactoryTest extends TestCase
         self::assertSame($company, $result->getManufacturer());
     }
 
-    /**
-     * @throws InvalidArgumentException
-     * @throws ExpectationFailedException
-     */
+    /** @throws ExpectationFailedException */
     public function testFromArrayWithVersionDetectionClass(): void
     {
         $company       = $this->getMockBuilder(CompanyInterface::class)
@@ -548,7 +540,7 @@ final class EngineFactoryTest extends TestCase
 
         $result = $object->fromArray(
             ['name' => null, 'manufacturer' => 'unknown', 'version' => $v],
-            'this is a test'
+            'this is a test',
         );
 
         self::assertInstanceOf(EngineInterface::class, $result);
@@ -560,7 +552,6 @@ final class EngineFactoryTest extends TestCase
     }
 
     /**
-     * @throws InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws UnexpectedValueException
      */
@@ -622,7 +613,7 @@ final class EngineFactoryTest extends TestCase
 
         $result = $object->fromArray(
             ['name' => null, 'manufacturer' => 'unknown', 'version' => $v],
-            'this is a test'
+            'this is a test',
         );
 
         self::assertInstanceOf(EngineInterface::class, $result);
@@ -635,7 +626,6 @@ final class EngineFactoryTest extends TestCase
     }
 
     /**
-     * @throws InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws UnexpectedValueException
      */
@@ -698,7 +688,7 @@ final class EngineFactoryTest extends TestCase
 
         $result = $object->fromArray(
             ['name' => null, 'manufacturer' => 'unknown', 'version' => $v],
-            'this is a test'
+            'this is a test',
         );
 
         self::assertInstanceOf(EngineInterface::class, $result);
@@ -711,7 +701,6 @@ final class EngineFactoryTest extends TestCase
     }
 
     /**
-     * @throws InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws UnexpectedValueException
      */
@@ -773,7 +762,7 @@ final class EngineFactoryTest extends TestCase
 
         $result = $object->fromArray(
             ['name' => null, 'manufacturer' => 'unknown', 'version' => $v],
-            'this is a test'
+            'this is a test',
         );
 
         self::assertInstanceOf(EngineInterface::class, $result);
@@ -786,7 +775,6 @@ final class EngineFactoryTest extends TestCase
     }
 
     /**
-     * @throws InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws UnexpectedValueException
      */
@@ -848,7 +836,7 @@ final class EngineFactoryTest extends TestCase
 
         $result = $object->fromArray(
             ['name' => null, 'manufacturer' => 'unknown', 'version' => $v],
-            'this is a test'
+            'this is a test',
         );
 
         self::assertInstanceOf(EngineInterface::class, $result);
@@ -861,7 +849,6 @@ final class EngineFactoryTest extends TestCase
     }
 
     /**
-     * @throws InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws UnexpectedValueException
      */
@@ -924,7 +911,7 @@ final class EngineFactoryTest extends TestCase
 
         $result = $object->fromArray(
             ['name' => null, 'manufacturer' => 'unknown', 'version' => $v],
-            'this is a test'
+            'this is a test',
         );
 
         self::assertInstanceOf(EngineInterface::class, $result);
@@ -936,10 +923,7 @@ final class EngineFactoryTest extends TestCase
         self::assertSame($company, $result->getManufacturer());
     }
 
-    /**
-     * @throws InvalidArgumentException
-     * @throws ExpectationFailedException
-     */
+    /** @throws ExpectationFailedException */
     public function testFromArrayWithFixedVersionObjectAndSearch(): void
     {
         $company       = $this->getMockBuilder(CompanyInterface::class)
@@ -1007,7 +991,7 @@ final class EngineFactoryTest extends TestCase
 
         $result = $object->fromArray(
             ['name' => null, 'manufacturer' => 'unknown', 'version' => $v],
-            $useragent
+            $useragent,
         );
 
         self::assertInstanceOf(EngineInterface::class, $result);
@@ -1019,7 +1003,6 @@ final class EngineFactoryTest extends TestCase
     }
 
     /**
-     * @throws InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws UnexpectedValueException
      */
@@ -1089,7 +1072,7 @@ final class EngineFactoryTest extends TestCase
 
         $result = $object->fromArray(
             ['name' => null, 'manufacturer' => 'unknown', 'version' => $v],
-            $useragent
+            $useragent,
         );
 
         self::assertInstanceOf(EngineInterface::class, $result);
@@ -1101,10 +1084,7 @@ final class EngineFactoryTest extends TestCase
         self::assertSame($company, $result->getManufacturer());
     }
 
-    /**
-     * @throws InvalidArgumentException
-     * @throws ExpectationFailedException
-     */
+    /** @throws ExpectationFailedException */
     public function testFromEmptyArrayWithCompanyError(): void
     {
         $companyName   = 'test-company';
@@ -1167,7 +1147,7 @@ final class EngineFactoryTest extends TestCase
 
         $result = $object->fromArray(
             ['name' => null, 'manufacturer' => $companyName, 'version' => '0'],
-            $useragent
+            $useragent,
         );
 
         self::assertInstanceOf(EngineInterface::class, $result);

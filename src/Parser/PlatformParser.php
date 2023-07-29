@@ -2,7 +2,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2022, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2023, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -22,18 +22,16 @@ use function sprintf;
 
 final class PlatformParser implements PlatformParserInterface
 {
-    private const GENERIC_FILE  = __DIR__ . '/../../data/factories/platforms.json';
+    private const GENERIC_FILE = __DIR__ . '/../../data/factories/platforms.json';
+
     private const SPECIFIC_FILE = __DIR__ . '/../../data/factories/platforms/%s.json';
-    private PlatformLoaderFactoryInterface $loaderFactory;
 
-    private RulefileParserInterface $fileParser;
-
+    /** @throws void */
     public function __construct(
-        PlatformLoaderFactoryInterface $loaderFactory,
-        RulefileParserInterface $fileParser
+        private readonly PlatformLoaderFactoryInterface $loaderFactory,
+        private readonly RulefileParserInterface $fileParser,
     ) {
-        $this->loaderFactory = $loaderFactory;
-        $this->fileParser    = $fileParser;
+        // nothing to do
     }
 
     /**
@@ -44,16 +42,12 @@ final class PlatformParser implements PlatformParserInterface
      */
     public function parse(string $useragent): OsInterface
     {
-        $mode = $this->fileParser->parseFile(
-            self::GENERIC_FILE,
-            $useragent,
-            'unknown'
-        );
+        $mode = $this->fileParser->parseFile(self::GENERIC_FILE, $useragent, 'unknown');
 
         $key = $this->fileParser->parseFile(
             sprintf(self::SPECIFIC_FILE, $mode),
             $useragent,
-            'unknown'
+            'unknown',
         );
 
         return $this->load($key, $useragent);

@@ -2,7 +2,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2022, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2023, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -21,16 +21,13 @@ use UnexpectedValueException;
 final class EngineParser implements EngineParserInterface
 {
     private const GENERIC_FILE = __DIR__ . '/../../data/factories/engines.json';
-    private EngineLoaderFactoryInterface $loaderFactory;
 
-    private RulefileParserInterface $fileParser;
-
+    /** @throws void */
     public function __construct(
-        EngineLoaderFactoryInterface $loaderFactory,
-        RulefileParserInterface $fileParser
+        private readonly EngineLoaderFactoryInterface $loaderFactory,
+        private readonly RulefileParserInterface $fileParser,
     ) {
-        $this->loaderFactory = $loaderFactory;
-        $this->fileParser    = $fileParser;
+        // nothing to do
     }
 
     /**
@@ -41,11 +38,7 @@ final class EngineParser implements EngineParserInterface
      */
     public function parse(string $useragent): EngineInterface
     {
-        $key = $this->fileParser->parseFile(
-            self::GENERIC_FILE,
-            $useragent,
-            'unknown'
-        );
+        $key = $this->fileParser->parseFile(self::GENERIC_FILE, $useragent, 'unknown');
 
         return $this->load($key, $useragent);
     }

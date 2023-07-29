@@ -33,8 +33,8 @@
   name: "stale"
   description: "no activity"
 - color: b60205
-  name: "BC Break"
-  description: ""
+  name: "bc break"
+  description: "BC Break"
 - color: f4e99c
   name: "maintenance"
   description: "Maintenance"
@@ -53,36 +53,44 @@
 - color: 0075ca
   name: "documentation"
   description: "Improvements or additions to documentation"
+- color: 84175d
+  name: "major"
+  description: "Major change"
+- color: d86c28
+  name: "minor"
+  description: "Minor change"
+- color: 0a9b47
+  name: "patch"
+  description: "Patch"
 
 # other Labels to mimmi20/BrowserDetector
 - color: b0b1fc
   name: "new browser"
-  description: ""
+  description: "new Browser"
 - color: bfdadc
   name: "new device"
-  description: ""
+  description: "new Device"
 - color: dcffb2
   name: "new engine"
-  description: ""
+  description: "new Engine"
 - color: 408c09
   name: "new platform"
-  description: ""
+  description: "new Platform"
 - color: e85f9c
   name: "new test"
-  description: ""
+  description: "new Test"
 - color: 5319e7
   name: "update browser"
-  description: ""
+  description: "update Browser"
 - color: ed956d
   name: "update device"
-  description: ""
+  description: "update Device"
 - color: e886e4
   name: "update engine"
-  description: ""
+  description: "update Engine"
 - color: fc445c
   name: "update platform"
-  description: ""
+  description: "update Platform"
 - color: e3ffaf
   name: "update test"
-  description: ""
-
+  description: "update Test"

@@ -2,7 +2,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2022, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2023, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -13,9 +13,9 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest\Helper;
 
 use BrowserDetector\Helper\Tv;
+use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
-use SebastianBergmann\RecursionContext\InvalidArgumentException;
 
 use function sprintf;
 
@@ -23,29 +23,28 @@ final class TvTest extends TestCase
 {
     private Tv $object;
 
+    /** @throws void */
     protected function setUp(): void
     {
         $this->object = new Tv();
     }
 
-    /**
-     * @throws InvalidArgumentException
-     * @throws ExpectationFailedException
-     *
-     * @dataProvider providerIsTv
-     */
+    /** @throws ExpectationFailedException */
+    #[DataProvider('providerIsTv')]
     public function testIsTv(string $agent): void
     {
         self::assertTrue(
             $this->object->isTvDevice($agent),
-            sprintf('isMobile detected to FALSE instead of expected TRUE for UA "%s"', $agent)
+            sprintf('isMobile detected to FALSE instead of expected TRUE for UA "%s"', $agent),
         );
     }
 
     /**
      * @return array<int, array<int, string>>
+     *
+     * @throws void
      */
-    public function providerIsTv(): array
+    public static function providerIsTv(): array
     {
         return [
             ['dlink.dsm380'],
@@ -75,24 +74,22 @@ final class TvTest extends TestCase
         ];
     }
 
-    /**
-     * @throws InvalidArgumentException
-     * @throws ExpectationFailedException
-     *
-     * @dataProvider providerIsNotTv
-     */
+    /** @throws ExpectationFailedException */
+    #[DataProvider('providerIsNotTv')]
     public function testIsNotTv(string $agent): void
     {
         self::assertFalse(
             $this->object->isTvDevice($agent),
-            sprintf('isMobile detected to TRUE instead of expected FALSE for UA "%s"', $agent)
+            sprintf('isMobile detected to TRUE instead of expected FALSE for UA "%s"', $agent),
         );
     }
 
     /**
      * @return array<int, array<int, string>>
+     *
+     * @throws void
      */
-    public function providerIsNotTv(): array
+    public static function providerIsNotTv(): array
     {
         return [
             ['Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) MxNitro/1.0.0.2000 Chrome/35.0.1849.0 Safari/537.36'],

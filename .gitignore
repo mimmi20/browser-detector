@@ -20,5 +20,8 @@ tests/temp/*.ini
 .php-cs-fixer.cache
 .phplint-cache
 .phpunit.result.cache
+.phpcs.cache
 infection-*.log
 rewrite*.php
+.reports/
+*.bak

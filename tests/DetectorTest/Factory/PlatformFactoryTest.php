@@ -2,7 +2,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2022, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2023, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -29,7 +29,6 @@ use PHPUnit\Framework\Constraint\IsInstanceOf;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
-use SebastianBergmann\RecursionContext\InvalidArgumentException;
 use stdClass;
 use UaResult\Company\CompanyInterface;
 use UaResult\Os\OsInterface;
@@ -37,9 +36,7 @@ use UnexpectedValueException;
 
 final class PlatformFactoryTest extends TestCase
 {
-    /**
-     * @throws UnexpectedValueException
-     */
+    /** @throws UnexpectedValueException */
     public function testFromEmptyArray(): void
     {
         $companyLoader = $this->getMockBuilder(CompanyLoaderInterface::class)
@@ -96,7 +93,6 @@ final class PlatformFactoryTest extends TestCase
     }
 
     /**
-     * @throws InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws UnexpectedValueException
      */
@@ -162,7 +158,7 @@ final class PlatformFactoryTest extends TestCase
 
         $result = $object->fromArray(
             ['name' => null, 'marketingName' => null, 'manufacturer' => 'unknown', 'version' => $v, 'bits' => null],
-            'this is a test'
+            'this is a test',
         );
 
         self::assertInstanceOf(OsInterface::class, $result);
@@ -176,7 +172,6 @@ final class PlatformFactoryTest extends TestCase
     }
 
     /**
-     * @throws InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws UnexpectedValueException
      */
@@ -242,7 +237,7 @@ final class PlatformFactoryTest extends TestCase
 
         $result = $object->fromArray(
             ['name' => null, 'marketingName' => null, 'manufacturer' => 'unknown', 'version' => $v, 'bits' => null],
-            'this is a test'
+            'this is a test',
         );
 
         self::assertInstanceOf(OsInterface::class, $result);
@@ -257,7 +252,6 @@ final class PlatformFactoryTest extends TestCase
     }
 
     /**
-     * @throws InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws UnexpectedValueException
      */
@@ -319,7 +313,7 @@ final class PlatformFactoryTest extends TestCase
 
         $result = $object->fromArray(
             ['name' => null, 'marketingName' => null, 'manufacturer' => 'unknown', 'version' => $v, 'bits' => null],
-            'this is a test'
+            'this is a test',
         );
 
         self::assertInstanceOf(OsInterface::class, $result);
@@ -333,7 +327,6 @@ final class PlatformFactoryTest extends TestCase
     }
 
     /**
-     * @throws InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws UnexpectedValueException
      */
@@ -401,7 +394,7 @@ final class PlatformFactoryTest extends TestCase
 
         $result = $object->fromArray(
             ['name' => null, 'marketingName' => null, 'manufacturer' => 'unknown', 'version' => $v, 'bits' => null],
-            'this is a test'
+            'this is a test',
         );
 
         self::assertInstanceOf(OsInterface::class, $result);
@@ -414,7 +407,6 @@ final class PlatformFactoryTest extends TestCase
     }
 
     /**
-     * @throws InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws UnexpectedValueException
      */
@@ -482,7 +474,7 @@ final class PlatformFactoryTest extends TestCase
 
         $result = $object->fromArray(
             ['name' => null, 'marketingName' => null, 'manufacturer' => 'unknown', 'version' => $v, 'bits' => null],
-            'this is a test'
+            'this is a test',
         );
 
         self::assertInstanceOf(OsInterface::class, $result);
@@ -496,7 +488,6 @@ final class PlatformFactoryTest extends TestCase
     }
 
     /**
-     * @throws InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws UnexpectedValueException
      */
@@ -564,7 +555,7 @@ final class PlatformFactoryTest extends TestCase
 
         $result = $object->fromArray(
             ['name' => null, 'marketingName' => null, 'manufacturer' => 'unknown', 'version' => $v, 'bits' => null],
-            'this is a test'
+            'this is a test',
         );
 
         self::assertInstanceOf(OsInterface::class, $result);
@@ -577,7 +568,6 @@ final class PlatformFactoryTest extends TestCase
     }
 
     /**
-     * @throws InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws UnexpectedValueException
      */
@@ -642,7 +632,7 @@ final class PlatformFactoryTest extends TestCase
 
         $result = $object->fromArray(
             ['name' => null, 'marketingName' => null, 'manufacturer' => 'unknown', 'version' => $v, 'bits' => null],
-            'this is a test'
+            'this is a test',
         );
 
         self::assertInstanceOf(OsInterface::class, $result);
@@ -655,7 +645,6 @@ final class PlatformFactoryTest extends TestCase
     }
 
     /**
-     * @throws InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws UnexpectedValueException
      */
@@ -717,7 +706,7 @@ final class PlatformFactoryTest extends TestCase
 
         $result = $object->fromArray(
             ['name' => null, 'marketingName' => null, 'manufacturer' => 'unknown', 'version' => $v, 'bits' => null],
-            'this is a test'
+            'this is a test',
         );
 
         self::assertInstanceOf(OsInterface::class, $result);
@@ -731,7 +720,6 @@ final class PlatformFactoryTest extends TestCase
     }
 
     /**
-     * @throws InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws UnexpectedValueException
      */
@@ -794,7 +782,7 @@ final class PlatformFactoryTest extends TestCase
 
         $result = $object->fromArray(
             ['name' => null, 'marketingName' => null, 'manufacturer' => 'unknown', 'version' => $v, 'bits' => null],
-            'this is a test'
+            'this is a test',
         );
 
         self::assertInstanceOf(OsInterface::class, $result);
@@ -808,7 +796,6 @@ final class PlatformFactoryTest extends TestCase
     }
 
     /**
-     * @throws InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws UnexpectedValueException
      */
@@ -870,7 +857,7 @@ final class PlatformFactoryTest extends TestCase
 
         $result = $object->fromArray(
             ['name' => null, 'marketingName' => null, 'manufacturer' => 'unknown', 'version' => $v, 'bits' => null],
-            'this is a test'
+            'this is a test',
         );
 
         self::assertInstanceOf(OsInterface::class, $result);
@@ -884,7 +871,6 @@ final class PlatformFactoryTest extends TestCase
     }
 
     /**
-     * @throws InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws UnexpectedValueException
      */
@@ -946,7 +932,7 @@ final class PlatformFactoryTest extends TestCase
 
         $result = $object->fromArray(
             ['name' => null, 'marketingName' => null, 'manufacturer' => 'unknown', 'version' => $v, 'bits' => null],
-            'this is a test'
+            'this is a test',
         );
 
         self::assertInstanceOf(OsInterface::class, $result);
@@ -960,7 +946,6 @@ final class PlatformFactoryTest extends TestCase
     }
 
     /**
-     * @throws InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws UnexpectedValueException
      */
@@ -1023,7 +1008,7 @@ final class PlatformFactoryTest extends TestCase
 
         $result = $object->fromArray(
             ['name' => null, 'marketingName' => null, 'manufacturer' => 'unknown', 'version' => $v, 'bits' => null],
-            'this is a test'
+            'this is a test',
         );
 
         self::assertInstanceOf(OsInterface::class, $result);
@@ -1037,7 +1022,6 @@ final class PlatformFactoryTest extends TestCase
     }
 
     /**
-     * @throws InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws UnexpectedValueException
      */
@@ -1108,7 +1092,7 @@ final class PlatformFactoryTest extends TestCase
 
         $result = $object->fromArray(
             ['name' => null, 'marketingName' => null, 'manufacturer' => 'unknown', 'version' => $v, 'bits' => null],
-            $useragent
+            $useragent,
         );
 
         self::assertInstanceOf(OsInterface::class, $result);
@@ -1121,7 +1105,6 @@ final class PlatformFactoryTest extends TestCase
     }
 
     /**
-     * @throws InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws UnexpectedValueException
      */
@@ -1191,7 +1174,7 @@ final class PlatformFactoryTest extends TestCase
 
         $result = $object->fromArray(
             ['name' => null, 'marketingName' => null, 'manufacturer' => 'unknown', 'version' => $v, 'bits' => null],
-            $useragent
+            $useragent,
         );
 
         self::assertInstanceOf(OsInterface::class, $result);
@@ -1205,7 +1188,6 @@ final class PlatformFactoryTest extends TestCase
     }
 
     /**
-     * @throws InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws NotFoundException
      * @throws UnexpectedValueException
@@ -1272,7 +1254,7 @@ final class PlatformFactoryTest extends TestCase
 
         $result = $object->fromArray(
             ['name' => null, 'marketingName' => null, 'manufacturer' => $companyName, 'version' => '0', 'bits' => null],
-            $useragent
+            $useragent,
         );
 
         self::assertInstanceOf(OsInterface::class, $result);
@@ -1284,7 +1266,6 @@ final class PlatformFactoryTest extends TestCase
     }
 
     /**
-     * @throws InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws UnexpectedValueException
      */
@@ -1358,7 +1339,7 @@ final class PlatformFactoryTest extends TestCase
 
         $result = $object->fromArray(
             ['name' => $platformName, 'marketingName' => null, 'manufacturer' => $companyName, 'version' => $v, 'bits' => null],
-            $useragent
+            $useragent,
         );
 
         self::assertInstanceOf(OsInterface::class, $result);
@@ -1373,7 +1354,6 @@ final class PlatformFactoryTest extends TestCase
     }
 
     /**
-     * @throws InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws UnexpectedValueException
      */
@@ -1447,7 +1427,7 @@ final class PlatformFactoryTest extends TestCase
 
         $result = $object->fromArray(
             ['name' => $platformName, 'marketingName' => null, 'manufacturer' => $companyName, 'version' => $v, 'bits' => null],
-            $useragent
+            $useragent,
         );
 
         self::assertInstanceOf(OsInterface::class, $result);
@@ -1461,7 +1441,6 @@ final class PlatformFactoryTest extends TestCase
     }
 
     /**
-     * @throws InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws UnexpectedValueException
      */
@@ -1535,7 +1514,7 @@ final class PlatformFactoryTest extends TestCase
 
         $result = $object->fromArray(
             ['name' => $platformName, 'marketingName' => null, 'manufacturer' => $companyName, 'version' => $v, 'bits' => null],
-            $useragent
+            $useragent,
         );
 
         self::assertInstanceOf(OsInterface::class, $result);
@@ -1550,7 +1529,6 @@ final class PlatformFactoryTest extends TestCase
     }
 
     /**
-     * @throws InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws UnexpectedValueException
      */
@@ -1624,7 +1602,7 @@ final class PlatformFactoryTest extends TestCase
 
         $result = $object->fromArray(
             ['name' => $platformName, 'marketingName' => null, 'manufacturer' => $companyName, 'version' => $v, 'bits' => null],
-            $useragent
+            $useragent,
         );
 
         self::assertInstanceOf(OsInterface::class, $result);
@@ -1638,7 +1616,6 @@ final class PlatformFactoryTest extends TestCase
     }
 
     /**
-     * @throws InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws UnexpectedValueException
      */
@@ -1712,7 +1689,7 @@ final class PlatformFactoryTest extends TestCase
 
         $result = $object->fromArray(
             ['name' => $platformName, 'marketingName' => null, 'manufacturer' => $companyName, 'version' => $v, 'bits' => null],
-            $useragent
+            $useragent,
         );
 
         self::assertInstanceOf(OsInterface::class, $result);
@@ -1726,7 +1703,6 @@ final class PlatformFactoryTest extends TestCase
     }
 
     /**
-     * @throws InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws UnexpectedValueException
      */
@@ -1800,7 +1776,7 @@ final class PlatformFactoryTest extends TestCase
 
         $result = $object->fromArray(
             ['name' => $platformName, 'marketingName' => null, 'manufacturer' => $companyName, 'version' => $v, 'bits' => null],
-            $useragent
+            $useragent,
         );
 
         self::assertInstanceOf(OsInterface::class, $result);

@@ -2,7 +2,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2022, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2023, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -89,11 +89,7 @@ final class EngineLoaderTest extends TestCase
         assert($logger instanceof LoggerInterface);
         assert($companyLoader instanceof CompanyLoaderInterface);
         assert($initData instanceof DataInterface);
-        $object = new EngineLoader(
-            $logger,
-            $initData,
-            $companyLoader
-        );
+        $object = new EngineLoader($logger, $initData, $companyLoader);
 
         $this->expectException(NotFoundException::class);
         $this->expectExceptionMessage('the engine with key "test-key" was not found');
@@ -160,11 +156,7 @@ final class EngineLoaderTest extends TestCase
         assert($logger instanceof LoggerInterface);
         assert($companyLoader instanceof CompanyLoaderInterface);
         assert($initData instanceof DataInterface);
-        $object = new EngineLoader(
-            $logger,
-            $initData,
-            $companyLoader
-        );
+        $object = new EngineLoader($logger, $initData, $companyLoader);
 
         $this->expectException(NotFoundException::class);
         $this->expectExceptionMessage('the engine with key "test-key" was not found');
@@ -173,11 +165,9 @@ final class EngineLoaderTest extends TestCase
     }
 
     /**
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws Exception
      * @throws NotFoundException
-     * @throws \InvalidArgumentException
      * @throws UnexpectedValueException
      */
     public function testInvokeNoVersion(): void
@@ -246,11 +236,7 @@ final class EngineLoaderTest extends TestCase
         assert($logger instanceof LoggerInterface);
         assert($companyLoader instanceof CompanyLoaderInterface);
         assert($initData instanceof DataInterface);
-        $object = new EngineLoader(
-            $logger,
-            $initData,
-            $companyLoader
-        );
+        $object = new EngineLoader($logger, $initData, $companyLoader);
 
         $result = $object->load('test-key', 'test-ua');
 
@@ -258,11 +244,9 @@ final class EngineLoaderTest extends TestCase
     }
 
     /**
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws Exception
      * @throws NotFoundException
-     * @throws \InvalidArgumentException
      * @throws UnexpectedValueException
      */
     public function testInvokeGenericVersion(): void
@@ -331,11 +315,7 @@ final class EngineLoaderTest extends TestCase
         assert($logger instanceof LoggerInterface);
         assert($companyLoader instanceof CompanyLoaderInterface);
         assert($initData instanceof DataInterface);
-        $object = new EngineLoader(
-            $logger,
-            $initData,
-            $companyLoader
-        );
+        $object = new EngineLoader($logger, $initData, $companyLoader);
 
         $result = $object->load('test-key', 'test-ua');
 
@@ -343,11 +323,9 @@ final class EngineLoaderTest extends TestCase
     }
 
     /**
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws Exception
      * @throws NotFoundException
-     * @throws \InvalidArgumentException
      * @throws UnexpectedValueException
      */
     public function testInvokeVersion(): void
@@ -417,11 +395,7 @@ final class EngineLoaderTest extends TestCase
         assert($logger instanceof LoggerInterface);
         assert($companyLoader instanceof CompanyLoaderInterface);
         assert($initData instanceof DataInterface);
-        $object = new EngineLoader(
-            $logger,
-            $initData,
-            $companyLoader
-        );
+        $object = new EngineLoader($logger, $initData, $companyLoader);
 
         $result = $object->load('test-key', 'test-ua');
 

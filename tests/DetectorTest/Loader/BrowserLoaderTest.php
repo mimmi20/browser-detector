@@ -2,7 +2,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2022, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2023, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -22,15 +22,12 @@ use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
-use SebastianBergmann\RecursionContext\InvalidArgumentException;
 use UaResult\Browser\BrowserInterface;
 use UaResult\Engine\EngineInterface;
 use UnexpectedValueException;
 
 use function assert;
-use function get_class;
-use function gettype;
-use function is_object;
+use function get_debug_type;
 use function sprintf;
 
 final class BrowserLoaderTest extends TestCase
@@ -95,12 +92,7 @@ final class BrowserLoaderTest extends TestCase
         assert($companyLoader instanceof CompanyLoaderInterface);
         assert($engineParser instanceof EngineParserInterface);
         assert($initData instanceof DataInterface);
-        $object = new BrowserLoader(
-            $logger,
-            $initData,
-            $companyLoader,
-            $engineParser
-        );
+        $object = new BrowserLoader($logger, $initData, $companyLoader, $engineParser);
 
         $this->expectException(NotFoundException::class);
         $this->expectExceptionMessage('the browser with key "test-key" was not found');
@@ -168,12 +160,7 @@ final class BrowserLoaderTest extends TestCase
         assert($companyLoader instanceof CompanyLoaderInterface);
         assert($engineParser instanceof EngineParserInterface);
         assert($initData instanceof DataInterface);
-        $object = new BrowserLoader(
-            $logger,
-            $initData,
-            $companyLoader,
-            $engineParser
-        );
+        $object = new BrowserLoader($logger, $initData, $companyLoader, $engineParser);
 
         $this->expectException(NotFoundException::class);
         $this->expectExceptionMessage('the browser with key "test-key" was not found');
@@ -182,11 +169,9 @@ final class BrowserLoaderTest extends TestCase
     }
 
     /**
-     * @throws InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws Exception
      * @throws NotFoundException
-     * @throws \InvalidArgumentException
      * @throws UnexpectedValueException
      */
     public function testInvokeNoVersion(): void
@@ -255,12 +240,7 @@ final class BrowserLoaderTest extends TestCase
         assert($companyLoader instanceof CompanyLoaderInterface);
         assert($engineParser instanceof EngineParserInterface);
         assert($initData instanceof DataInterface);
-        $object = new BrowserLoader(
-            $logger,
-            $initData,
-            $companyLoader,
-            $engineParser
-        );
+        $object = new BrowserLoader($logger, $initData, $companyLoader, $engineParser);
 
         $result = $object->load('test-key', 'test-ua');
 
@@ -272,11 +252,9 @@ final class BrowserLoaderTest extends TestCase
     }
 
     /**
-     * @throws InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws Exception
      * @throws NotFoundException
-     * @throws \InvalidArgumentException
      * @throws UnexpectedValueException
      */
     public function testInvokeGenericVersionAndEngineException(): void
@@ -348,12 +326,7 @@ final class BrowserLoaderTest extends TestCase
         assert($companyLoader instanceof CompanyLoaderInterface);
         assert($engineParser instanceof EngineParserInterface);
         assert($initData instanceof DataInterface);
-        $object = new BrowserLoader(
-            $logger,
-            $initData,
-            $companyLoader,
-            $engineParser
-        );
+        $object = new BrowserLoader($logger, $initData, $companyLoader, $engineParser);
 
         $result = $object->load('test-key', 'test/1.0');
 
@@ -365,11 +338,9 @@ final class BrowserLoaderTest extends TestCase
     }
 
     /**
-     * @throws InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws Exception
      * @throws NotFoundException
-     * @throws \InvalidArgumentException
      * @throws UnexpectedValueException
      */
     public function testInvokeGenericVersionAndEngineInvalidException(): void
@@ -450,12 +421,7 @@ final class BrowserLoaderTest extends TestCase
         assert($companyLoader instanceof CompanyLoaderInterface);
         assert($engineParser instanceof EngineParserInterface);
         assert($initData instanceof DataInterface);
-        $object = new BrowserLoader(
-            $logger,
-            $initData,
-            $companyLoader,
-            $engineParser
-        );
+        $object = new BrowserLoader($logger, $initData, $companyLoader, $engineParser);
 
         $result = $object->load('test-key', $useragent);
 
@@ -467,11 +433,9 @@ final class BrowserLoaderTest extends TestCase
     }
 
     /**
-     * @throws InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws Exception
      * @throws NotFoundException
-     * @throws \InvalidArgumentException
      * @throws UnexpectedValueException
      */
     public function testInvokeVersionAndEngine(): void
@@ -540,12 +504,7 @@ final class BrowserLoaderTest extends TestCase
         assert($companyLoader instanceof CompanyLoaderInterface);
         assert($engineParser instanceof EngineParserInterface);
         assert($initData instanceof DataInterface);
-        $object = new BrowserLoader(
-            $logger,
-            $initData,
-            $companyLoader,
-            $engineParser
-        );
+        $object = new BrowserLoader($logger, $initData, $companyLoader, $engineParser);
 
         $result = $object->load('test-key', 'test/1.0');
 
@@ -558,8 +517,8 @@ final class BrowserLoaderTest extends TestCase
             sprintf(
                 '$browserResult should be an instance of %s, but is %s',
                 BrowserInterface::class,
-                is_object($browserResult) ? get_class($browserResult) : gettype($browserResult)
-            )
+                get_debug_type($browserResult),
+            ),
         );
 
         self::assertInstanceOf(BrowserInterface::class, $browserResult);
@@ -571,8 +530,8 @@ final class BrowserLoaderTest extends TestCase
             sprintf(
                 '$engineResult should be an instance of %s, but is %s',
                 EngineInterface::class,
-                is_object($engineResult) ? get_class($engineResult) : gettype($engineResult)
-            )
+                get_debug_type($engineResult),
+            ),
         );
 
         self::assertInstanceOf(EngineInterface::class, $engineResult);

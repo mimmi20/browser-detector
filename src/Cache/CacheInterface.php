@@ -2,7 +2,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2022, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2023, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -26,7 +26,7 @@ interface CacheInterface
      *
      * @throws InvalidArgumentException
      */
-    public function getItem(string $cacheId);
+    public function getItem(string $cacheId): mixed;
 
     /**
      * save the content into an php file
@@ -38,7 +38,7 @@ interface CacheInterface
      *
      * @throws InvalidArgumentException
      */
-    public function setItem(string $cacheId, $content): bool;
+    public function setItem(string $cacheId, mixed $content): bool;
 
     /**
      * Test if an item exists.

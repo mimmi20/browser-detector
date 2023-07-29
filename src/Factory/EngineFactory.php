@@ -2,7 +2,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2022, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2023, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -28,23 +28,20 @@ final class EngineFactory
 {
     use VersionFactoryTrait;
 
-    private CompanyLoaderInterface $companyLoader;
-
-    private LoggerInterface $logger;
-
+    /** @throws void */
     public function __construct(
-        CompanyLoaderInterface $companyLoader,
+        private readonly CompanyLoaderInterface $companyLoader,
         VersionFactoryInterface $versionFactory,
-        LoggerInterface $logger
+        private readonly LoggerInterface $logger,
     ) {
-        $this->companyLoader  = $companyLoader;
         $this->versionFactory = $versionFactory;
-        $this->logger         = $logger;
     }
 
     /**
-     * @param array<string, (string|stdClass|null)> $data
+     * @param array<string, (stdClass|string|null)> $data
      * @phpstan-param array{name?: string|null, manufacturer?: string, version?: stdClass|string|null} $data
+     *
+     * @throws void
      */
     public function fromArray(array $data, string $useragent): EngineInterface
     {
@@ -60,11 +57,7 @@ final class EngineFactory
         } catch (NotFoundException $e) {
             $this->logger->info($e);
 
-            $manufacturer = new Company(
-                'unknown',
-                null,
-                null
-            );
+            $manufacturer = new Company('unknown', null, null);
         }
 
         return new Engine($name, $manufacturer, $version);

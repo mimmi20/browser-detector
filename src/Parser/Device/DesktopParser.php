@@ -2,7 +2,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2022, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2023, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -23,47 +23,43 @@ use function sprintf;
 
 final class DesktopParser implements DesktopParserInterface
 {
-    private const GENERIC_FILE  = __DIR__ . '/../../../data/factories/devices/desktop.json';
+    private const GENERIC_FILE = __DIR__ . '/../../../data/factories/devices/desktop.json';
+
     private const SPECIFIC_FILE = __DIR__ . '/../../../data/factories/devices/desktop/%s.json';
-    private DeviceLoaderFactoryInterface $loaderFactory;
 
-    private RulefileParserInterface $fileParser;
-
-    public function __construct(RulefileParserInterface $fileParser, DeviceLoaderFactoryInterface $loaderFactory)
-    {
-        $this->loaderFactory = $loaderFactory;
-        $this->fileParser    = $fileParser;
+    /** @throws void */
+    public function __construct(
+        private readonly RulefileParserInterface $fileParser,
+        private readonly DeviceLoaderFactoryInterface $loaderFactory,
+    ) {
+        // nothing to do
     }
 
     /**
      * Gets the information about the browser by User Agent
      *
-     * @return array<int, (OsInterface|DeviceInterface|null)>
-     * @phpstan-return array(0:DeviceInterface, 1:OsInterface|null)
+     * @return array<int, (DeviceInterface|OsInterface|null)>
+     * @phpstan-return array{0:DeviceInterface, 1:OsInterface|null}
      *
      * @throws NotFoundException
      * @throws UnexpectedValueException
      */
     public function parse(string $useragent): array
     {
-        $mode = $this->fileParser->parseFile(
-            self::GENERIC_FILE,
-            $useragent,
-            'unknown'
-        );
+        $mode = $this->fileParser->parseFile(self::GENERIC_FILE, $useragent, 'unknown');
 
         $key = $this->fileParser->parseFile(
             sprintf(self::SPECIFIC_FILE, $mode),
             $useragent,
-            'unknown'
+            'unknown',
         );
 
         return $this->load($mode, $key, $useragent);
     }
 
     /**
-     * @return array<int, (OsInterface|DeviceInterface|null)>
-     * @phpstan-return array(0:DeviceInterface, 1:OsInterface|null)
+     * @return array<int, (DeviceInterface|OsInterface|null)>
+     * @phpstan-return array{0:DeviceInterface, 1:OsInterface|null}
      *
      * @throws NotFoundException
      * @throws UnexpectedValueException

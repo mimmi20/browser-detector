@@ -2,7 +2,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2022, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2023, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -25,7 +25,8 @@ use function str_replace;
 
 final class Macos implements VersionDetectorInterface
 {
-    public const SEARCHES    = ['Mac OS X Version', 'Mac OS X v', 'Mac OS X', 'OS X', 'os=mac '];
+    public const SEARCHES = ['Mac OS X Version', 'Mac OS X v', 'Mac OS X', 'OS X', 'os=mac '];
+
     private const DARWIN_MAP = [
         '/darwin\/19/i' => '10.15.0',
         '/darwin\/18\.[67]/i' => '10.14.6',
@@ -138,17 +139,13 @@ final class Macos implements VersionDetectorInterface
         '/darwin\/1\.3\.1/i' => '10.0.0',
     ];
 
-    private LoggerInterface $logger;
-
-    private VersionFactoryInterface $versionFactory;
-
-    private MacosBuildInterface $macosBuild;
-
-    public function __construct(LoggerInterface $logger, VersionFactoryInterface $versionFactory, MacosBuildInterface $macosBuild)
-    {
-        $this->logger         = $logger;
-        $this->versionFactory = $versionFactory;
-        $this->macosBuild     = $macosBuild;
+    /** @throws void */
+    public function __construct(
+        private readonly LoggerInterface $logger,
+        private readonly VersionFactoryInterface $versionFactory,
+        private readonly MacosBuildInterface $macosBuild,
+    ) {
+        // nothing to do
     }
 
     /**
@@ -158,7 +155,11 @@ final class Macos implements VersionDetectorInterface
      */
     public function detectVersion(string $useragent): VersionInterface
     {
-        $doMatch = preg_match('/\((?:build )?(?P<build>\d+[A-Z]\d+(?:[a-z])?)\)/i', $useragent, $matches);
+        $doMatch = preg_match(
+            '/\((?:build )?(?P<build>\d+[A-Z]\d+(?:[a-z])?)\)/i',
+            $useragent,
+            $matches,
+        );
 
         if ($doMatch) {
             try {
@@ -167,7 +168,7 @@ final class Macos implements VersionDetectorInterface
                 $buildVersion = false;
             }
 
-            if (false !== $buildVersion) {
+            if ($buildVersion !== false) {
                 try {
                     return $this->versionFactory->set($buildVersion);
                 } catch (NotNumericException $e) {
@@ -178,7 +179,11 @@ final class Macos implements VersionDetectorInterface
             }
         }
 
-        $doMatch = preg_match('/coremedia v\d+\.\d+\.\d+\.(?P<build>\d+[A-Z]\d+(?:[a-z])?)/i', $useragent, $matches);
+        $doMatch = preg_match(
+            '/coremedia v\d+\.\d+\.\d+\.(?P<build>\d+[A-Z]\d+(?:[a-z])?)/i',
+            $useragent,
+            $matches,
+        );
 
         if ($doMatch) {
             try {
@@ -187,7 +192,7 @@ final class Macos implements VersionDetectorInterface
                 $buildVersion = false;
             }
 
-            if (false !== $buildVersion) {
+            if ($buildVersion !== false) {
                 try {
                     return $this->versionFactory->set($buildVersion);
                 } catch (NotNumericException $e) {
@@ -198,7 +203,7 @@ final class Macos implements VersionDetectorInterface
             }
         }
 
-        if (false !== mb_stripos($useragent, 'darwin')) {
+        if (mb_stripos($useragent, 'darwin') !== false) {
             foreach (self::DARWIN_MAP as $rule => $version) {
                 if (!preg_match($rule, $useragent)) {
                     continue;
@@ -215,7 +220,10 @@ final class Macos implements VersionDetectorInterface
         }
 
         try {
-            $detectedVersion = $this->versionFactory->detectVersion(str_replace(',', '.', $useragent), self::SEARCHES);
+            $detectedVersion = $this->versionFactory->detectVersion(
+                str_replace(',', '.', $useragent),
+                self::SEARCHES,
+            );
         } catch (NotNumericException $e) {
             $this->logger->info($e);
 
@@ -224,10 +232,14 @@ final class Macos implements VersionDetectorInterface
 
         $versionNumber = $detectedVersion->getVersion(VersionInterface::IGNORE_MINOR);
 
-        if (null !== $versionNumber) {
-            if (preg_match('/(?P<major>\d{2})(?P<minor>\d{2})(?P<micro>\d)/', $versionNumber, $versions)) {
+        if ($versionNumber !== null) {
+            if (
+                preg_match('/(?P<major>\d{2})(?P<minor>\d{2})(?P<micro>\d)/', $versionNumber, $versions)
+            ) {
                 try {
-                    return $this->versionFactory->set($versions['major'] . '.' . $versions['minor'] . '.' . $versions['micro']);
+                    return $this->versionFactory->set(
+                        $versions['major'] . '.' . $versions['minor'] . '.' . $versions['micro'],
+                    );
                 } catch (NotNumericException $e) {
                     $this->logger->info($e);
 
@@ -235,7 +247,9 @@ final class Macos implements VersionDetectorInterface
                 }
             }
 
-            if (preg_match('/(?P<major>\d{2})(?P<minor>\d)(?P<micro>\d)?/', $versionNumber, $versions)) {
+            if (
+                preg_match('/(?P<major>\d{2})(?P<minor>\d)(?P<micro>\d)?/', $versionNumber, $versions)
+            ) {
                 $version = $versions['major'] . '.' . $versions['minor'];
 
                 if (array_key_exists('micro', $versions)) {

@@ -2,7 +2,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2022, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2023, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -28,32 +28,19 @@ use function assert;
 
 final class BrowserLoader implements BrowserLoaderInterface
 {
-    private LoggerInterface $logger;
-
-    private EngineParserInterface $engineParser;
-
-    private DataInterface $initData;
-
-    private CompanyLoaderInterface $companyLoader;
-
+    /** @throws void */
     public function __construct(
-        LoggerInterface $logger,
-        DataInterface $initData,
-        CompanyLoaderInterface $companyLoader,
-        EngineParserInterface $engineParser
+        private readonly LoggerInterface $logger,
+        private readonly DataInterface $initData,
+        private readonly CompanyLoaderInterface $companyLoader,
+        private readonly EngineParserInterface $engineParser,
     ) {
-        $this->logger        = $logger;
-        $this->engineParser  = $engineParser;
-        $this->companyLoader = $companyLoader;
-
         $initData();
-
-        $this->initData = $initData;
     }
 
     /**
      * @return array<int, (BrowserInterface|EngineInterface|null)>
-     * @phpstan-return array(0: BrowserInterface, 1: EngineInterface|null)
+     * @phpstan-return array{0: BrowserInterface, 1: EngineInterface|null}
      *
      * @throws NotFoundException
      * @throws UnexpectedValueException
@@ -66,7 +53,7 @@ final class BrowserLoader implements BrowserLoaderInterface
 
         $browserData = $this->initData->getItem($key);
 
-        if (null === $browserData) {
+        if ($browserData === null) {
             throw new NotFoundException('the browser with key "' . $key . '" was not found');
         }
 
@@ -78,7 +65,7 @@ final class BrowserLoader implements BrowserLoaderInterface
         $engineKey = $browserData->engine;
         $engine    = null;
 
-        if (null !== $engineKey) {
+        if ($engineKey !== null) {
             try {
                 $engine = $this->engineParser->load($engineKey, $useragent);
             } catch (UnexpectedValueException $e) {
@@ -86,7 +73,12 @@ final class BrowserLoader implements BrowserLoaderInterface
             }
         }
 
-        $browser = (new BrowserFactory($this->companyLoader, new VersionFactory(), new TypeLoader(), $this->logger))->fromArray((array) $browserData, $useragent);
+        $browser = (new BrowserFactory(
+            $this->companyLoader,
+            new VersionFactory(),
+            new TypeLoader(),
+            $this->logger,
+        ))->fromArray((array) $browserData, $useragent);
 
         return [$browser, $engine];
     }

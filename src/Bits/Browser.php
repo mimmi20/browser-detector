@@ -2,7 +2,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2022, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2023, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -16,9 +16,10 @@ use function preg_match;
 
 final class Browser implements BitsInterface
 {
-    public function getBits(string $useragent): ?int
+    /** @throws void */
+    public function getBits(string $useragent): int | null
     {
-        // 32 bits on 64 bit system
+        // 32 bits on 64-bit system
         if (preg_match('/i686 on x86_64|i686 \(x86_64\)/i', $useragent)) {
             return 32;
         }
@@ -32,12 +33,12 @@ final class Browser implements BitsInterface
             return 32;
         }
 
-        // old deprecated 16 bit windows systems
+        // old deprecated 16-bit Windows systems
         if (preg_match('/win3\.1|windows 3\.1/i', $useragent)) {
             return 16;
         }
 
-        // old deprecated 8 bit systems
+        // old deprecated 8-bit systems
         if (preg_match('/cp\/m|8-bit/i', $useragent)) {
             return 8;
         }
