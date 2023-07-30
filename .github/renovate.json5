@@ -1,0 +1,73 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+
+  "extends": ["github>whitesource/merge-confidence:beta"],
+
+  "enabled": false,
+  "assignees": [
+    "mimmi20"
+  ],
+  "automerge": false,
+  "commitBody": "Signed-off-by: {{{gitAuthor}}}",
+  "commitBodyTable": true,
+  "dependencyDashboard": false,
+  "enabledManagers": ["composer", "github-actions", "npm"],
+  "ignoreUnstable": true,
+  "labels": [
+    "dependencies",
+    "patch"
+  ],
+  "lockFileMaintenance": {
+    "enabled": false
+  },
+  "platformAutomerge": false,
+  "prBodyColumns": [
+    "Package",
+    "Change",
+    "Type",
+    "Update"
+  ],
+  "prBodyDefinitions": {
+    "Package": "`{{{depName}}}`",
+    "Type": "{{{depType}}}",
+    "Update": "{{{updateType}}}",
+    "Change": "[{{#if displayFrom}}`{{{displayFrom}}}` -> {{else}}{{#if currentValue}}`{{{currentValue}}}` -> {{/if}}{{/if}}{{#if displayTo}}`{{{displayTo}}}`{{else}}`{{{newValue}}}`{{/if}}]({{#if depName}}https://renovatebot.com/diffs/npm/{{replace '/' '%2f' depName}}/{{{currentVersion}}}/{{{newVersion}}}{{/if}})"
+  },
+  "prCreation": "immediate",
+  "rangeStrategy": "bump",
+  "rebaseWhen": "behind-base-branch",
+  "reviewers": [
+    "mimmi20"
+  ],
+  "rollbackPrs": true,
+  "schedule": ["at 4:00 am on Tuesday"],
+  "semanticCommits": "disabled",
+  "separateMajorMinor": true,
+  "separateMinorPatch": false,
+  "timezone": "Europe/Berlin",
+  "updateLockFiles": false,
+  "updateNotScheduled": false,
+  "packageRules": [
+    {
+      "groupName": "all non-major dependencies",
+      "groupSlug": "all-minor-patch-dependencies",
+      "matchPackagePatterns": [
+        "*"
+      ],
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ]
+    },
+    {
+      "groupName": "PHP",
+      "matchPackageNames": ["php"],
+      "allowedVersions": "^8.1",
+      "ignoreUnstable": false,
+      "rangeStrategy": "widen"
+    }
+  ],
+  "vulnerabilityAlerts": {
+    "enabled": true
+  }
+}

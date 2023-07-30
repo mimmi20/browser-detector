@@ -2,7 +2,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2022, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2023, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -24,32 +24,37 @@ use UaNormalizer\NormalizerFactory;
 
 final class DetectorFactory
 {
-    private PsrCacheInterface $cache;
+    private Detector | null $detector = null;
 
-    private LoggerInterface $logger;
-
-    private ?Detector $detector = null;
-
-    public function __construct(PsrCacheInterface $cache, LoggerInterface $logger)
+    /** @throws void */
+    public function __construct(private readonly PsrCacheInterface $cache, private readonly LoggerInterface $logger)
     {
-        $this->cache  = $cache;
-        $this->logger = $logger;
+        // nothing to do
     }
 
+    /** @throws void */
     public function __invoke(): Detector
     {
-        if (null === $this->detector) {
+        if ($this->detector === null) {
             $companyLoaderFactory = new CompanyLoaderFactory();
 
             $companyLoader = $companyLoaderFactory();
 
             $platformParserFactory = new PlatformParserFactory($this->logger, $companyLoader);
             $platformParser        = $platformParserFactory();
-            $deviceParserFactory   = new DeviceParserFactory($this->logger, $companyLoader, $platformParser);
+            $deviceParserFactory   = new DeviceParserFactory(
+                $this->logger,
+                $companyLoader,
+                $platformParser,
+            );
             $deviceParser          = $deviceParserFactory();
             $engineParserFactory   = new EngineParserFactory($this->logger, $companyLoader);
             $engineParser          = $engineParserFactory();
-            $browserParserFactory  = new BrowserParserFactory($this->logger, $companyLoader, $engineParser);
+            $browserParserFactory  = new BrowserParserFactory(
+                $this->logger,
+                $companyLoader,
+                $engineParser,
+            );
             $browserParser         = $browserParserFactory();
             $normalizer            = (new NormalizerFactory())->build();
 
@@ -60,7 +65,7 @@ final class DetectorFactory
                 $platformParser,
                 $browserParser,
                 $engineParser,
-                $normalizer
+                $normalizer,
             );
         }
 

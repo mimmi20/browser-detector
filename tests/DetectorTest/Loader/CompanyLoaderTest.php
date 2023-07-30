@@ -2,7 +2,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2022, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2023, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -18,12 +18,10 @@ use BrowserDetector\Loader\NotFoundException;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
-use SebastianBergmann\RecursionContext\InvalidArgumentException;
 use stdClass;
 use UaResult\Company\CompanyInterface;
 
 use function assert;
-use function get_class;
 use function sprintf;
 
 /**
@@ -31,9 +29,7 @@ use function sprintf;
  */
 final class CompanyLoaderTest extends TestCase
 {
-    /**
-     * @throws NotFoundException
-     */
+    /** @throws NotFoundException */
     public function testLoadFailHasNot(): void
     {
         $companyKey  = 'A6Corp';
@@ -66,18 +62,10 @@ final class CompanyLoaderTest extends TestCase
         $object->load($companyKey);
     }
 
-    /**
-     * @throws NotFoundException
-     */
+    /** @throws NotFoundException */
     public function testLoadFailNullReturned(): void
     {
-        $companyKey  = 'A6Corp';
-        $companyName = 'A6 Corp';
-        $brand       = 'A6 Corp';
-
-        $result            = new stdClass();
-        $result->name      = $companyName;
-        $result->brandname = $brand;
+        $companyKey = 'A6Corp';
 
         $data = $this->getMockBuilder(DataInterface::class)
             ->disableOriginalConstructor()
@@ -102,11 +90,9 @@ final class CompanyLoaderTest extends TestCase
     }
 
     /**
-     * @throws InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws Exception
      * @throws NotFoundException
-     * @throws \InvalidArgumentException
      */
     public function testLoadAvailable(): void
     {
@@ -135,19 +121,26 @@ final class CompanyLoaderTest extends TestCase
         $object = new CompanyLoader($data);
 
         $result = $object->load($companyKey);
-        assert($result instanceof CompanyInterface, sprintf('$result should be an instance of %s, but is %s', CompanyInterface::class, get_class($result)));
+        assert(
+            $result instanceof CompanyInterface,
+            sprintf(
+                '$result should be an instance of %s, but is %s',
+                CompanyInterface::class,
+                $result::class,
+            ),
+        );
 
         self::assertInstanceOf(CompanyInterface::class, $result);
 
         self::assertSame(
             $companyName,
             $result->getName(),
-            'Expected Company name to be "' . $companyName . '" (was "' . $result->getName() . '")'
+            'Expected Company name to be "' . $companyName . '" (was "' . $result->getName() . '")',
         );
         self::assertSame(
             $brand,
             $result->getBrandName(),
-            'Expected brand name to be "' . $brand . '" (was "' . $result->getBrandName() . '")'
+            'Expected brand name to be "' . $brand . '" (was "' . $result->getBrandName() . '")',
         );
     }
 }

@@ -2,7 +2,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2022, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2023, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -32,23 +32,17 @@ use const JSON_THROW_ON_ERROR;
 
 final class Data implements DataInterface
 {
-    private string $path;
-    private string $extension;
-
     /** @var array<string, stdClass> */
-    private array $items = [];
-
+    private array $items      = [];
     private bool $initialized = false;
 
-    public function __construct(string $path, string $extension)
+    /** @throws void */
+    public function __construct(private readonly string $path, private readonly string $extension)
     {
-        $this->path      = $path;
-        $this->extension = $extension;
+        // nothing to do
     }
 
-    /**
-     * @throws RuntimeException
-     */
+    /** @throws RuntimeException */
     public function __invoke(): void
     {
         if ($this->initialized) {
@@ -56,7 +50,11 @@ final class Data implements DataInterface
         }
 
         $iterator = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($this->path));
-        $files    = new RegexIterator($iterator, '/^.+\.' . $this->extension . '$/i', RegexIterator::GET_MATCH);
+        $files    = new RegexIterator(
+            $iterator,
+            '/^.+\.' . $this->extension . '$/i',
+            RegexIterator::GET_MATCH,
+        );
 
         foreach ($files as $file) {
             assert(is_array($file));
@@ -66,7 +64,7 @@ final class Data implements DataInterface
 
             $content = @file_get_contents($file);
 
-            if (false === $content) {
+            if ($content === false) {
                 throw new RuntimeException(sprintf('could not read file "%s"', $file));
             }
 
@@ -90,19 +88,19 @@ final class Data implements DataInterface
         $this->initialized = true;
     }
 
-    /**
-     * @return mixed
-     */
-    public function getItem(string $cacheId)
+    /** @throws void */
+    public function getItem(string $cacheId): mixed
     {
         return $this->items[$cacheId] ?? null;
     }
 
+    /** @throws void */
     public function hasItem(string $cacheId): bool
     {
         return array_key_exists($cacheId, $this->items);
     }
 
+    /** @throws void */
     public function isInitialized(): bool
     {
         return $this->initialized;
@@ -114,6 +112,8 @@ final class Data implements DataInterface
      * @see https://php.net/manual/en/countable.count.php
      *
      * @return int the custom count as an integer
+     *
+     * @throws void
      */
     public function count(): int
     {

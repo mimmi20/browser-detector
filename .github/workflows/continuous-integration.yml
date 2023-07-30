@@ -1,355 +1,43 @@
 # https://help.github.com/en/categories/automating-your-workflow-with-github-actions
 
+name: "Continuous Integration"
+
 on:
   - pull_request
   - push
 
-name: "Continuous Integration"
+permissions:
+  contents: read
 
-env:
-  PHP_EXTENSIONS: "json, opcache, mbstring"
-  PHP_INI_VALUES: "opcache.enable=1, opcache.fast_shutdown=0, zend.assertions=1, assert.exception=On, intl.default_locale=de, intl.use_exceptions=1, zend.exception_ignore_args=0"
-  COMPOSER_OPTIONS: "--optimize-autoloader --prefer-dist --prefer-stable -v"
-  TOOLS: "composer:v2"
+concurrency:
+  group: "${{ github.event_name }}-${{ github.workflow }}-${{ github.head_ref || github.run_id }}-${{ github.ref }}"
+  cancel-in-progress: true
 
 jobs:
-  validate:
-    name: "Validate composer"
-
-    runs-on: "${{ matrix.operating-system }}"
-
-    continue-on-error: false
-
-    strategy:
-      fail-fast: false
-
-      matrix:
-        operating-system:
-          - "ubuntu-20.04"
-
-        php-version:
-          - "7.4"
-
-    steps:
-      - name: "Checkout"
-        uses: "actions/checkout@v3"
-        with:
-          # Disabling shallow clone is recommended for improving relevancy of reporting
-          fetch-depth: 0
-
-      - name: "Install PHP"
-        uses: "shivammathur/setup-php@2.18.0"
-        with:
-          php-version: "${{ matrix.php-version }}"
-          extensions: "${{ env.PHP_EXTENSIONS }}"
-          ini-values: "${{ env.PHP_INI_VALUES }}"
-          coverage: "none"
-          tools: "${{ env.TOOLS }}"
-
-      - name: "Validate composer.json"
-        run: "composer validate --strict"
-
-  lint:
-    name: "Linting"
-
-    needs: "validate"
-
-    runs-on: "${{ matrix.operating-system }}"
-
-    continue-on-error: false
-
-    strategy:
-      fail-fast: false
-
-      matrix:
-        operating-system:
-          - "ubuntu-20.04"
-
-        php-version:
-          - "7.4"
-          - "8.0"
-          - "8.1"
-
-    steps:
-      - name: "Checkout"
-        uses: "actions/checkout@v3"
-        with:
-          # Disabling shallow clone is recommended for improving relevancy of reporting
-          fetch-depth: 0
-
-      - name: "Install PHP"
-        uses: "shivammathur/setup-php@2.18.0"
-        with:
-          php-version: "${{ matrix.php-version }}"
-          extensions: "${{ env.PHP_EXTENSIONS }}"
-          ini-values: "${{ env.PHP_INI_VALUES }}"
-          coverage: "none"
-          tools: "${{ env.TOOLS }}"
-
-      - name: "Lint PHP"
-        if: "${{ matrix.php-version == '7.4' }}"
-        uses: "overtrue/phplint@7.4"
-
-      - name: "Lint PHP"
-        if: "${{ matrix.php-version != '7.4' }}"
-        uses: "overtrue/phplint@8.0"
-
-  install:
-    name: "Install dependencies"
-
-    needs: "validate"
-
-    runs-on: "${{ matrix.operating-system }}"
-
-    continue-on-error: ${{ matrix.experimental }}
-
-    strategy:
-      fail-fast: false
-
-      matrix:
-        operating-system:
-          - "ubuntu-18.04"
-          - "ubuntu-20.04"
-
-        php-version:
-          - "7.4"
-          - "8.0"
-          - "8.1"
-
-        dependencies:
-          - "highest"
-          - "lowest"
-
-        experimental: [false]
-
-        include:
-          - operating-system: "ubuntu-20.04"
-            php-version: "8.2"
-            dependencies: "highest"
-            experimental: true
-          - operating-system: "ubuntu-20.04"
-            php-version: "8.2"
-            dependencies: "lowest"
-            experimental: true
-
-    steps:
-      - name: "Checkout"
-        uses: "actions/checkout@v3"
-        with:
-          # Disabling shallow clone is recommended for improving relevancy of reporting
-          fetch-depth: 0
-
-      - name: "Install PHP"
-        uses: "shivammathur/setup-php@2.18.0"
-        with:
-          php-version: "${{ matrix.php-version }}"
-          extensions: "${{ env.PHP_EXTENSIONS }}"
-          ini-values: "${{ env.PHP_INI_VALUES }}"
-          coverage: "none"
-          tools: "${{ env.TOOLS }}"
-
-      - name: "Update dependencies with composer"
-        uses: "ramsey/composer-install@v1"
-        with:
-          dependency-versions: "${{ matrix.dependencies }}"
-          composer-options: "${{ env.COMPOSER_OPTIONS }}"
-
-      - name: "Check dependencies with composer"
-        run: "composer outdated --direct"
-
-  php-cs-fixer:
-    name: "Check Coding Standards with PHP-CS-Fixer"
-
-    needs: "lint"
-
-    runs-on: "${{ matrix.operating-system }}"
-
-    continue-on-error: false
-
-    strategy:
-      fail-fast: false
-
-      matrix:
-        operating-system:
-          - "ubuntu-20.04"
-
-        php-version:
-          - "7.4"
-
-        dependencies:
-          - "highest"
-
-    steps:
-      - name: "Checkout"
-        uses: "actions/checkout@v3"
-        with:
-          # Disabling shallow clone is recommended for improving relevancy of reporting
-          fetch-depth: 0
-
-      - name: "Install PHP"
-        uses: "shivammathur/setup-php@2.18.0"
-        with:
-          php-version: "${{ matrix.php-version }}"
-          extensions: "${{ env.PHP_EXTENSIONS }}"
-          ini-values: "${{ env.PHP_INI_VALUES }}"
-          coverage: "none"
-          tools: "${{ env.TOOLS }}, cs2pr"
-
-      - name: "Update dependencies with composer"
-        uses: "ramsey/composer-install@v1"
-        with:
-          dependency-versions: "${{ matrix.dependencies }}"
-          composer-options: "${{ env.COMPOSER_OPTIONS }}"
-
-      - name: "Run friendsofphp/php-cs-fixer"
-        run: "vendor/bin/php-cs-fixer fix --dry-run --format=checkstyle | cs2pr"
-
-  phpcs:
-    name: "Check Coding Standards with PHPCS"
-
-    needs: "lint"
-
-    runs-on: "${{ matrix.operating-system }}"
-
-    continue-on-error: false
-
-    strategy:
-      fail-fast: false
-
-      matrix:
-        operating-system:
-          - "ubuntu-20.04"
-
-        php-version:
-          - "7.4"
-
-        dependencies:
-          - "highest"
-
-    steps:
-      - name: "Checkout"
-        uses: "actions/checkout@v3"
-        with:
-          # Disabling shallow clone is recommended for improving relevancy of reporting
-          fetch-depth: 0
-
-      - name: "Install PHP"
-        uses: "shivammathur/setup-php@2.18.0"
-        with:
-          php-version: "${{ matrix.php-version }}"
-          extensions: "${{ env.PHP_EXTENSIONS }}"
-          ini-values: "${{ env.PHP_INI_VALUES }}"
-          coverage: "none"
-          tools: "${{ env.TOOLS }}, cs2pr"
-
-      - name: "Update dependencies with composer"
-        uses: "ramsey/composer-install@v1"
-        with:
-          dependency-versions: "${{ matrix.dependencies }}"
-          composer-options: "${{ env.COMPOSER_OPTIONS }}"
-
-      - name: "Run squizlabs/php_codesniffer"
-        run: "vendor/bin/phpcs --report=checkstyle -q | cs2pr"
-
-  static-code-analysis:
-    name: "Static Code Analysis with PHPStan"
-
-    needs: "lint"
-
-    runs-on: "${{ matrix.operating-system }}"
-
-    strategy:
-      fail-fast: false
-
-      matrix:
-        operating-system:
-          - "ubuntu-20.04"
-
-        php-version:
-          - "7.4"
-
-        dependencies:
-          - "highest"
-
-    steps:
-      - name: "Checkout"
-        uses: "actions/checkout@v3"
-        with:
-          # Disabling shallow clone is recommended for improving relevancy of reporting
-          fetch-depth: 0
-
-      - name: "Install PHP"
-        uses: "shivammathur/setup-php@2.18.0"
-        with:
-          php-version: "${{ matrix.php-version }}"
-          extensions: "${{ env.PHP_EXTENSIONS }}"
-          ini-values: "${{ env.PHP_INI_VALUES }}"
-          coverage: "none"
-          tools: "${{ env.TOOLS }}"
-
-      - name: "Update dependencies with composer"
-        uses: "ramsey/composer-install@v1"
-        with:
-          dependency-versions: "${{ matrix.dependencies }}"
-          composer-options: "${{ env.COMPOSER_OPTIONS }}"
-
-      - name: "Run phpstan/phpstan"
-        run: "vendor/bin/phpstan analyse -c phpstan.neon --memory-limit=768M --no-progress"
-
-  phpmd:
-    name: "Check Rules with PHPMD"
-
-    needs: "lint"
-
-    runs-on: "${{ matrix.operating-system }}"
-
-    continue-on-error: false
-
-    strategy:
-      fail-fast: false
-
-      matrix:
-        operating-system:
-          - "ubuntu-20.04"
-
-        php-version:
-          - "7.4"
-
-        dependencies:
-          - "highest"
-
-    steps:
-      - name: "Checkout"
-        uses: "actions/checkout@v3"
-        with:
-          # Disabling shallow clone is recommended for improving relevancy of reporting
-          fetch-depth: 0
-
-      - name: "Install PHP"
-        uses: "shivammathur/setup-php@2.18.0"
-        with:
-          php-version: "${{ matrix.php-version }}"
-          extensions: "${{ env.PHP_EXTENSIONS }}"
-          ini-values: "${{ env.PHP_INI_VALUES }}"
-          coverage: "none"
-          tools: "${{ env.TOOLS }}, phpmd"
-
-      - name: "Update dependencies with composer"
-        uses: "ramsey/composer-install@v1"
-        with:
-          dependency-versions: "${{ matrix.dependencies }}"
-          composer-options: "${{ env.COMPOSER_OPTIONS }}"
-
-      - name: "Run phpmd/phpmd"
-        run: "phpmd src github phpmd.ruleset.xml"
+  ci:
+    name: "Run CI"
+
+    uses: "mimmi20/mimmi20/.github/workflows/ci.yml@main"
+    with:
+      extensions: "ctype, curl, json, opcache, dom, mbstring, intl, simplexml, tokenizer, xml, xmlwriter"
+      ini-values: "opcache.enable=1, opcache.fast_shutdown=0, zend.assertions=1, assert.exception=On, intl.default_locale=de, intl.use_exceptions=1, zend.exception_ignore_args=0"
+      composer-options: "--optimize-autoloader --prefer-dist --prefer-stable -v"
+      composer-outdated-option: ""
+      skip-phpstan: false
+      skip-phplint: false
+      skip-rector: false
+      skip-phpmd: false
+      skip-psalm: true
+    secrets:
+      envPAT: "${{ secrets.GITHUB_TOKEN }}"
 
   tests:
     name: "UnitTests with PHPUnit"
 
-    needs: "lint"
+    needs: "ci"
 
     runs-on: "${{ matrix.operating-system }}"
-
+    timeout-minutes: 10
     continue-on-error: false
 
     strategy:
@@ -357,16 +45,13 @@ jobs:
 
       matrix:
         operating-system:
-          - "ubuntu-18.04"
           - "ubuntu-20.04"
 
         php-version:
-          - "7.4"
-          - "8.0"
           - "8.1"
+          - "8.2"
 
         dependencies:
-          - "highest"
           - "lowest"
 
     steps:
@@ -375,24 +60,30 @@ jobs:
         with:
           # Disabling shallow clone is recommended for improving relevancy of reporting
           fetch-depth: 0
+          lfs: false
+          persist-credentials: false
 
       - name: "Install PHP"
-        uses: "shivammathur/setup-php@2.18.0"
+        uses: "shivammathur/setup-php@2.25.4"
         with:
           php-version: "${{ matrix.php-version }}"
-          extensions: "${{ env.PHP_EXTENSIONS }}"
-          ini-values: "${{ env.PHP_INI_VALUES }}"
+          extensions: "json, opcache, dom, mbstring, intl, simplexml, tokenizer, xml, xmlwriter, curl"
+          ini-values: "opcache.enable=1, opcache.fast_shutdown=0, zend.assertions=1, assert.exception=On, intl.default_locale=de, intl.use_exceptions=1, zend.exception_ignore_args=0"
           coverage: "none"
-          tools: "${{ env.TOOLS }}"
+          tools: "composer:v2"
+        env:
+          fail-fast: true
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          phpts: "ts"
 
       - name: "Update dependencies with composer"
-        uses: "ramsey/composer-install@v1"
+        uses: "ramsey/composer-install@2.2.0"
         with:
           dependency-versions: "${{ matrix.dependencies }}"
-          composer-options: "${{ env.COMPOSER_OPTIONS }}"
+          composer-options: "--optimize-autoloader --prefer-dist --prefer-stable -v"
 
       - name: "Run unit tests with phpunit/phpunit"
-        run: "vendor/bin/phpunit -c phpunit.xml --verbose --no-coverage"
+        run: "vendor/bin/phpunit -c phpunit.xml --no-coverage"
 
   code-coverage:
     name: "Code Coverage with PHPUnit"
@@ -400,7 +91,7 @@ jobs:
     needs: "tests"
 
     runs-on: "${{ matrix.operating-system }}"
-
+    timeout-minutes: 10
     continue-on-error: false
 
     strategy:
@@ -408,20 +99,13 @@ jobs:
 
       matrix:
         operating-system:
-          - "ubuntu-18.04"
           - "ubuntu-20.04"
 
         php-version:
-          - "7.4"
-          - "8.0"
           - "8.1"
 
         dependencies:
-          - "highest"
           - "lowest"
-
-        coverage-drivers:
-          - "xdebug"
 
     steps:
       - name: "Checkout"
@@ -429,37 +113,45 @@ jobs:
         with:
           # Disabling shallow clone is recommended for improving relevancy of reporting
           fetch-depth: 0
+          lfs: false
+          persist-credentials: false
 
       - name: "Install PHP"
-        uses: "shivammathur/setup-php@2.18.0"
+        uses: "shivammathur/setup-php@2.25.4"
         with:
           php-version: "${{ matrix.php-version }}"
-          extensions: "${{ env.PHP_EXTENSIONS }}"
-          ini-values: "${{ env.PHP_INI_VALUES }}"
-          coverage: "${{ matrix.coverage-drivers }}"
-          tools: "${{ env.TOOLS }}, infection"
+          extensions: "json, opcache, dom, mbstring, intl, simplexml, tokenizer, xml, xmlwriter, curl"
+          ini-values: "opcache.enable=1, opcache.fast_shutdown=0, zend.assertions=1, assert.exception=On, intl.default_locale=de, intl.use_exceptions=1, zend.exception_ignore_args=0, xdebug.mode=coverage"
+          coverage: "xdebug"
+          tools: "composer:v2"
+        env:
+          fail-fast: true
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          phpts: "ts"
 
       - name: "Update dependencies with composer"
-        uses: "ramsey/composer-install@v1"
+        uses: "ramsey/composer-install@2.2.0"
         with:
           dependency-versions: "${{ matrix.dependencies }}"
-          composer-options: "${{ env.COMPOSER_OPTIONS }}"
+          composer-options: "--optimize-autoloader --prefer-dist --prefer-stable -v"
 
       - name: "Create cache directory for phpunit/phpunit"
         run: "mkdir -p .build/coverage"
 
       - name: "Collect code coverage with Xdebug and phpunit/phpunit"
-        run: "vendor/bin/phpunit -c phpunit.xml --verbose --coverage-clover=.build/coverage/clover.xml --coverage-text --coverage-xml=.build/coverage/coverage-xml --log-junit=.build/coverage/phpunit.junit.xml"
+        run: "vendor/bin/phpunit -c phpunit.xml --coverage-clover=.build/coverage/clover.xml --coverage-text --coverage-xml=.build/coverage/coverage-xml --log-junit=.build/coverage/phpunit.junit.xml"
 
       - name: "Upload coverage to Codecov"
-        uses: "codecov/codecov-action@v2.1.0"
+        uses: "codecov/codecov-action@v3.1.4"
         with:
           file: ".build/coverage/clover.xml"
-          flags: "phpunit,php-${{ matrix.php-version }},${{ matrix.coverage-drivers }},${{ matrix.php-version }},${{ matrix.operating-system }}"
+          flags: "phpunit,php-${{ matrix.php-version }},${{ matrix.operating-system }}"
           verbose: false
 
       - name: "Run mutation tests with infection/infection"
-        run: "infection -s --min-covered-msi=93 --min-msi=90 --coverage=.build/coverage --logger-github"
+        env:
+          STRYKER_DASHBOARD_API_KEY: ${{ secrets.STRYKER_DASHBOARD_API_KEY }}
+        run: "vendor/bin/infection --show-mutations --only-covered --min-covered-msi=94 --min-msi=94 --coverage=.build/coverage --logger-github --no-progress -vv"
 
   integration-tests:
     name: "Integration Tests with PHPUnit"
@@ -478,10 +170,10 @@ jobs:
           - "ubuntu-20.04"
 
         php-version:
-          - "7.4"
+          - "8.1"
 
         dependencies:
-          - "highest"
+          - "lowest"
 
     steps:
       - name: "Checkout"
@@ -489,21 +181,51 @@ jobs:
         with:
           # Disabling shallow clone is recommended for improving relevancy of reporting
           fetch-depth: 0
+          lfs: false
+          persist-credentials: false
 
       - name: "Install PHP"
-        uses: "shivammathur/setup-php@2.18.0"
+        uses: "shivammathur/setup-php@2.25.4"
         with:
           php-version: "${{ matrix.php-version }}"
-          extensions: "${{ env.PHP_EXTENSIONS }}"
-          ini-values: "${{ env.PHP_INI_VALUES }}"
-          coverage: "none"
-          tools: "${{ env.TOOLS }}"
+          extensions: "json, opcache, dom, mbstring, intl, simplexml, tokenizer, xml, xmlwriter, curl"
+          ini-values: "opcache.enable=1, opcache.fast_shutdown=0, zend.assertions=1, assert.exception=On, intl.default_locale=de, intl.use_exceptions=1, zend.exception_ignore_args=0, xdebug.mode=coverage"
+          coverage: "xdebug"
+          tools: "composer:v2"
+        env:
+          fail-fast: true
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          phpts: "ts"
 
       - name: "Update dependencies with composer"
-        uses: "ramsey/composer-install@v1"
+        uses: "ramsey/composer-install@2.2.0"
         with:
           dependency-versions: "${{ matrix.dependencies }}"
-          composer-options: "${{ env.COMPOSER_OPTIONS }}"
+          composer-options: "--optimize-autoloader --prefer-dist --prefer-stable -v"
 
       - name: "Run integration tests with phpunit/phpunit"
-        run: "vendor/bin/phpunit -c phpunit-integration.xml --no-coverage --colors --verbose"
+        run: "vendor/bin/phpunit -c phpunit-integration.xml --no-coverage --colors"
+
+  # This is a meta job to avoid to have to constantly change the protection rules
+  # whenever we touch the matrix.
+  tests-status:
+    name: "Unit & Integration Tests Status"
+
+    runs-on: "ubuntu-22.04"
+
+    if: always()
+
+    needs:
+      - "ci"
+      - "tests"
+      - "code-coverage"
+      - "integration-tests"
+
+    steps:
+      - name: Successful run
+        if: ${{ !(contains(needs.*.result, 'failure')) }}
+        run: exit 0
+
+      - name: Failing run
+        if: ${{ contains(needs.*.result, 'failure') }}
+        run: exit 1

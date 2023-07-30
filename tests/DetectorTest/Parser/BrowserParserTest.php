@@ -2,7 +2,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2022, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2023, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -19,7 +19,6 @@ use BrowserDetector\Parser\Helper\RulefileParserInterface;
 use BrowserDetector\Version\VersionInterface;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
-use SebastianBergmann\RecursionContext\InvalidArgumentException;
 use UaBrowserType\TypeInterface;
 use UaResult\Browser\BrowserInterface;
 use UaResult\Company\CompanyInterface;
@@ -30,7 +29,6 @@ use function assert;
 final class BrowserParserTest extends TestCase
 {
     /**
-     * @throws InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws UnexpectedValueException
      */
@@ -40,131 +38,158 @@ final class BrowserParserTest extends TestCase
         $mode      = 'test-mode';
         $key       = 'test-key';
 
-        $expectedBrowser = new class() implements BrowserInterface {
-            public function getName(): ?string
+        $expectedBrowser = new class () implements BrowserInterface {
+            /** @throws void */
+            public function getName(): string | null
             {
                 return null;
             }
 
+            /** @throws void */
             public function getManufacturer(): CompanyInterface
             {
-                return new class() implements CompanyInterface {
+                return new class () implements CompanyInterface {
+                    /** @throws void */
                     public function getType(): string
                     {
                         return '';
                     }
 
-                    public function getName(): ?string
+                    /** @throws void */
+                    public function getName(): string | null
                     {
                         return null;
                     }
 
-                    public function getBrandName(): ?string
+                    /** @throws void */
+                    public function getBrandName(): string | null
                     {
                         return null;
                     }
                 };
             }
 
-            public function getModus(): ?string
+            /** @throws void */
+            public function getModus(): string | null
             {
                 return null;
             }
 
+            /** @throws void */
             public function getVersion(): VersionInterface
             {
-                return new class() implements VersionInterface {
+                return new class () implements VersionInterface {
                     /**
+                     * @throws void
+                     *
                      * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
                      */
-                    public function getVersion(int $mode = self::COMPLETE): ?string
+                    public function getVersion(int $mode = self::COMPLETE): string | null
                     {
                         return null;
                     }
 
                     /**
                      * @return array<string, string|null>
+                     *
+                     * @throws void
                      */
                     public function toArray(): array
                     {
                         return [];
                     }
 
-                    public function getMajor(): ?string
+                    /** @throws void */
+                    public function getMajor(): string | null
                     {
                         return null;
                     }
 
-                    public function getMinor(): ?string
+                    /** @throws void */
+                    public function getMinor(): string | null
                     {
                         return null;
                     }
 
-                    public function getMicro(): ?string
+                    /** @throws void */
+                    public function getMicro(): string | null
                     {
                         return null;
                     }
 
-                    public function getPatch(): ?string
+                    /** @throws void */
+                    public function getPatch(): string | null
                     {
                         return null;
                     }
 
-                    public function getMicropatch(): ?string
+                    /** @throws void */
+                    public function getMicropatch(): string | null
                     {
                         return null;
                     }
 
-                    public function getBuild(): ?string
+                    /** @throws void */
+                    public function getBuild(): string | null
                     {
                         return null;
                     }
 
-                    public function getStability(): ?string
+                    /** @throws void */
+                    public function getStability(): string | null
                     {
                         return null;
                     }
 
-                    public function isAlpha(): ?bool
+                    /** @throws void */
+                    public function isAlpha(): bool | null
                     {
                         return false;
                     }
 
-                    public function isBeta(): ?bool
+                    /** @throws void */
+                    public function isBeta(): bool | null
                     {
                         return false;
                     }
                 };
             }
 
-            public function getBits(): ?int
+            /** @throws void */
+            public function getBits(): int | null
             {
                 return null;
             }
 
+            /** @throws void */
             public function getType(): TypeInterface
             {
-                return new class() implements TypeInterface {
+                return new class () implements TypeInterface {
+                    /** @throws void */
                     public function getType(): string
                     {
                         return '';
                     }
 
-                    public function getName(): ?string
+                    /** @throws void */
+                    public function getName(): string | null
                     {
                         return null;
                     }
 
+                    /** @throws void */
                     public function isBot(): bool
                     {
                         return false;
                     }
 
+                    /** @throws void */
                     public function isSyndicationReader(): bool
                     {
                         return false;
                     }
 
+                    /** @throws void */
                     public function isTranscoder(): bool
                     {
                         return false;
@@ -174,6 +199,8 @@ final class BrowserParserTest extends TestCase
 
             /**
              * @return array<string, int|string|null>
+             *
+             * @throws void
              */
             public function toArray(): array
             {

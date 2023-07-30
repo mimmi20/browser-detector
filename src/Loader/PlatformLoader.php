@@ -2,7 +2,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2022, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2023, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -25,23 +25,13 @@ use function assert;
 
 final class PlatformLoader implements PlatformLoaderInterface
 {
-    private LoggerInterface $logger;
-
-    private DataInterface $initData;
-
-    private CompanyLoaderInterface $companyLoader;
-
+    /** @throws void */
     public function __construct(
-        LoggerInterface $logger,
-        DataInterface $initData,
-        CompanyLoaderInterface $companyLoader
+        private readonly LoggerInterface $logger,
+        private readonly DataInterface $initData,
+        private readonly CompanyLoaderInterface $companyLoader,
     ) {
-        $this->logger        = $logger;
-        $this->companyLoader = $companyLoader;
-
         $initData();
-
-        $this->initData = $initData;
     }
 
     /**
@@ -56,7 +46,7 @@ final class PlatformLoader implements PlatformLoaderInterface
 
         $platformData = $this->initData->getItem($key);
 
-        if (null === $platformData) {
+        if ($platformData === null) {
             throw new NotFoundException('the platform with key "' . $key . '" was not found');
         }
 
@@ -64,6 +54,10 @@ final class PlatformLoader implements PlatformLoaderInterface
 
         $platformData->bits = (new Os())->getBits($useragent);
 
-        return (new PlatformFactory($this->companyLoader, new VersionFactory(), $this->logger))->fromArray((array) $platformData, $useragent);
+        return (new PlatformFactory(
+            $this->companyLoader,
+            new VersionFactory(),
+            $this->logger,
+        ))->fromArray((array) $platformData, $useragent);
     }
 }

@@ -2,7 +2,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2022, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2023, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -13,9 +13,9 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest\Helper;
 
 use BrowserDetector\Helper\Desktop;
+use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
-use SebastianBergmann\RecursionContext\InvalidArgumentException;
 
 use function sprintf;
 
@@ -23,29 +23,28 @@ final class DesktopTest extends TestCase
 {
     private Desktop $object;
 
+    /** @throws void */
     protected function setUp(): void
     {
         $this->object = new Desktop();
     }
 
-    /**
-     * @throws InvalidArgumentException
-     * @throws ExpectationFailedException
-     *
-     * @dataProvider providerIsDesktop
-     */
+    /** @throws ExpectationFailedException */
+    #[DataProvider('providerIsDesktop')]
     public function testIsDesktop(string $agent): void
     {
         self::assertTrue(
             $this->object->isDesktopDevice($agent),
-            sprintf('isMobile detected to FALSE instead of expected TRUE for UA "%s"', $agent)
+            sprintf('isMobile detected to FALSE instead of expected TRUE for UA "%s"', $agent),
         );
     }
 
     /**
      * @return array<int, array<int, string>>
+     *
+     * @throws void
      */
-    public function providerIsDesktop(): array
+    public static function providerIsDesktop(): array
     {
         return [
             ['Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) MxNitro/1.0.0.2000 Chrome/35.0.1849.0 Safari/537.36'],
@@ -99,24 +98,22 @@ final class DesktopTest extends TestCase
         ];
     }
 
-    /**
-     * @throws InvalidArgumentException
-     * @throws ExpectationFailedException
-     *
-     * @dataProvider providerIsNoDesktop
-     */
+    /** @throws ExpectationFailedException */
+    #[DataProvider('providerIsNoDesktop')]
     public function testIsNoDesktop(string $agent): void
     {
         self::assertFalse(
             $this->object->isDesktopDevice($agent),
-            sprintf('isMobile detected to TRUE instead of expected FALSE for UA "%s"', $agent)
+            sprintf('isMobile detected to TRUE instead of expected FALSE for UA "%s"', $agent),
         );
     }
 
     /**
      * @return array<int, array<int, string>>
+     *
+     * @throws void
      */
-    public function providerIsNoDesktop(): array
+    public static function providerIsNoDesktop(): array
     {
         return [
             ['Mozilla/5.0 (Mobile; ALCATELOneTouch4012X/SVN 01010B; rv:18.1) Gecko/18.1 Firefox/18.1'],

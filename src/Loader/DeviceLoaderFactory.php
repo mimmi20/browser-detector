@@ -2,7 +2,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2022, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2023, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -22,25 +22,19 @@ final class DeviceLoaderFactory implements DeviceLoaderFactoryInterface
 {
     public const DATA_PATH = __DIR__ . '/../../data/devices/';
 
-    private LoggerInterface $logger;
-
-    private PlatformParserInterface $platformParser;
-
-    private CompanyLoaderInterface $companyLoader;
-
-    /** @var DeviceLoaderInterface[] */
+    /** @var array<DeviceLoaderInterface> */
     private array $loader = [];
 
+    /** @throws void */
     public function __construct(
-        LoggerInterface $logger,
-        CompanyLoaderInterface $companyLoader,
-        PlatformParserInterface $platformParser
+        private readonly LoggerInterface $logger,
+        private readonly CompanyLoaderInterface $companyLoader,
+        private readonly PlatformParserInterface $platformParser,
     ) {
-        $this->logger         = $logger;
-        $this->companyLoader  = $companyLoader;
-        $this->platformParser = $platformParser;
+        // nothing to do
     }
 
+    /** @throws void */
     public function __invoke(string $company = ''): DeviceLoaderInterface
     {
         if (array_key_exists($company, $this->loader)) {
@@ -51,7 +45,7 @@ final class DeviceLoaderFactory implements DeviceLoaderFactoryInterface
             $this->logger,
             new Data(self::DATA_PATH . $company, 'json'),
             $this->companyLoader,
-            $this->platformParser
+            $this->platformParser,
         );
 
         return $this->loader[$company];

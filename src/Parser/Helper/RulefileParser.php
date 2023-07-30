@@ -2,7 +2,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2022, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2023, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -30,20 +30,20 @@ use const JSON_THROW_ON_ERROR;
 
 final class RulefileParser implements RulefileParserInterface
 {
-    private LoggerInterface $logger;
-
-    public function __construct(LoggerInterface $logger)
+    /** @throws void */
+    public function __construct(private readonly LoggerInterface $logger)
     {
-        $this->logger = $logger;
+        // nothing to do
     }
 
+    /** @throws void */
     public function parseFile(string $file, string $useragent, string $fallback): string
     {
         $content = @file_get_contents($file);
 
-        if (false === $content) {
+        if ($content === false) {
             $this->logger->error(
-                new Exception(sprintf('could not load file %s', $file))
+                new Exception(sprintf('could not load file %s', $file)),
             );
 
             $mode  = $fallback;
@@ -58,7 +58,7 @@ final class RulefileParser implements RulefileParserInterface
                 $rules = $factories['rules'] ?? [];
             } catch (JsonException $e) {
                 $this->logger->error(
-                    new Exception(sprintf('could not decode content of file %s', $file), 0, $e)
+                    new Exception(sprintf('could not decode content of file %s', $file), 0, $e),
                 );
 
                 $mode  = $fallback;
@@ -69,20 +69,24 @@ final class RulefileParser implements RulefileParserInterface
         foreach (array_keys($rules) as $rule) {
             if (is_int($rule)) {
                 $this->logger->error(
-                    new Exception(sprintf('invalid rule "%s" found in file %s', $rule, $file))
+                    new Exception(sprintf('invalid rule "%s" found in file %s', $rule, $file)),
                 );
+
                 continue;
             }
 
             $match = @preg_match($rule, $useragent);
 
-            if (false === $match) {
+            if ($match === false) {
                 $error = preg_last_error();
                 $this->logger->error(
-                    new Exception(sprintf('could not match rule "%s" of file %s: %s', $rule, $file, $error))
+                    new Exception(
+                        sprintf('could not match rule "%s" of file %s: %s', $rule, $file, $error),
+                    ),
                 );
             } elseif (0 < $match) {
                 $mode = $rules[$rule];
+
                 break;
             }
         }

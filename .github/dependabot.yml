@@ -17,21 +17,16 @@ updates:
       - "mimmi20"
     labels:
       - "dependencies"
+      - "patch"
     versioning-strategy: increase
     commit-message:
       include: "scope"
       prefix: "composer"
-    ignore:
-      - dependency-name: "psr/log"
-        versions:
-          - ">= 0"
-      - dependency-name: "psr/simple-cache"
-        versions:
-          - ">= 0"
-#      - dependency-name: symfony/finder
+#    ignore:
+#      - dependency-name: infection/infection
 #        versions:
 #          - ">= 0"
-#      - dependency-name: laminas/laminas-diactoros
+#      - dependency-name: phpunit/phpunit
 #        versions:
 #          - ">= 0"
 
@@ -49,6 +44,6 @@ updates:
       - "mimmi20"
     labels:
       - "dependencies"
+      - "patch"
     commit-message:
-      include: "scope"
       prefix: "github-actions"

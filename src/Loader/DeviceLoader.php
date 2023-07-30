@@ -2,7 +2,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2022, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2023, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -27,32 +27,19 @@ use function assert;
 
 final class DeviceLoader implements DeviceLoaderInterface
 {
-    private LoggerInterface $logger;
-
-    private PlatformParserInterface $platformParser;
-
-    private DataInterface $initData;
-
-    private CompanyLoaderInterface $companyLoader;
-
+    /** @throws void */
     public function __construct(
-        LoggerInterface $logger,
-        DataInterface $initData,
-        CompanyLoaderInterface $companyLoader,
-        PlatformParserInterface $platformParser
+        private readonly LoggerInterface $logger,
+        private readonly DataInterface $initData,
+        private readonly CompanyLoaderInterface $companyLoader,
+        private readonly PlatformParserInterface $platformParser,
     ) {
-        $this->logger         = $logger;
-        $this->platformParser = $platformParser;
-        $this->companyLoader  = $companyLoader;
-
         $initData();
-
-        $this->initData = $initData;
     }
 
     /**
-     * @return array<int, (OsInterface|DeviceInterface|null)>
-     * @phpstan-return array(0:DeviceInterface, 1:OsInterface|null)
+     * @return array<int, (DeviceInterface|OsInterface|null)>
+     * @phpstan-return array{0:DeviceInterface, 1:OsInterface|null}
      *
      * @throws NotFoundException
      * @throws UnexpectedValueException
@@ -65,7 +52,7 @@ final class DeviceLoader implements DeviceLoaderInterface
 
         $deviceData = $this->initData->getItem($key);
 
-        if (null === $deviceData) {
+        if ($deviceData === null) {
             throw new NotFoundException('the device with key "' . $key . '" was not found');
         }
 
@@ -74,7 +61,7 @@ final class DeviceLoader implements DeviceLoaderInterface
         $platformKey = $deviceData->platform;
         $platform    = null;
 
-        if (null !== $platformKey) {
+        if ($platformKey !== null) {
             try {
                 $platform = $this->platformParser->load($platformKey, $useragent);
             } catch (UnexpectedValueException $e) {
@@ -86,7 +73,7 @@ final class DeviceLoader implements DeviceLoaderInterface
             $this->companyLoader,
             new TypeLoader(),
             new DisplayFactory(),
-            $this->logger
+            $this->logger,
         );
 
         $device = $deviceFactory->fromArray((array) $deviceData, $useragent);

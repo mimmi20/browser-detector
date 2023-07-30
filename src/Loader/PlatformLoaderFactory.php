@@ -2,7 +2,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2022, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2023, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -19,30 +19,27 @@ final class PlatformLoaderFactory implements PlatformLoaderFactoryInterface
 {
     public const DATA_PATH = __DIR__ . '/../../data/platforms';
 
-    private LoggerInterface $logger;
+    private PlatformLoaderInterface | null $loader = null;
 
-    private CompanyLoaderInterface $companyLoader;
-
-    private ?PlatformLoaderInterface $loader = null;
-
+    /** @throws void */
     public function __construct(
-        LoggerInterface $logger,
-        CompanyLoaderInterface $companyLoader
+        private readonly LoggerInterface $logger,
+        private readonly CompanyLoaderInterface $companyLoader,
     ) {
-        $this->logger        = $logger;
-        $this->companyLoader = $companyLoader;
+        // nothing to do
     }
 
+    /** @throws void */
     public function __invoke(): PlatformLoaderInterface
     {
-        if (null !== $this->loader) {
+        if ($this->loader !== null) {
             return $this->loader;
         }
 
         $this->loader = new PlatformLoader(
             $this->logger,
             new Data(self::DATA_PATH, 'json'),
-            $this->companyLoader
+            $this->companyLoader,
         );
 
         return $this->loader;

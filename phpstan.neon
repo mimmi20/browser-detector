@@ -1,18 +1,90 @@
 parameters:
   level: max
+
   parallel:
     maximumNumberOfProcesses: 1
     processTimeout: 200.0
+
   paths:
     - src
     - tests
+
   scanFiles:
     - %currentWorkingDirectory%/vendor/autoload.php
     - %currentWorkingDirectory%/vendor/squizlabs/php_codesniffer/autoload.php
     - %currentWorkingDirectory%/vendor/squizlabs/php_codesniffer/src/Util/Tokens.php
-  checkGenericClassInNonGenericObjectType: false
-  checkMissingIterableValueType: false
+
+  # reports occurrences of type-checking functions always evaluated to true
+  checkAlwaysTrueCheckTypeFunctionCall: false
+
+  # reports instanceof occurrences always evaluated to true
+  checkAlwaysTrueInstanceof: false
+
+  # reports === and !== occurrences always evaluated to true
+  checkAlwaysTrueStrictComparison: true
+
+  # enable stricter analysis of benevolent union types
+  checkBenevolentUnionTypes: true
+
+  # reports use of dynamic properties as undefined
+  checkDynamicProperties: true
+
+  # reports code paths with missing return statement in functions and methods with @return mixed PHPDoc
+  checkExplicitMixedMissingReturn: true
+
+  # reports function and method calls with incorrect name case
+  checkFunctionNameCase: true
+
+  # it requires type variables always be specified in typehints
+  checkGenericClassInNonGenericObjectType: true
+
+  # be strict about values with an unspecified (implicit mixed) type
+  checkImplicitMixed: false
+
+  # reports references to built-in classes with incorrect name case
+  checkInternalClassCaseSensitivity: true
+
+  # require that callable signatures are specified
+  checkMissingCallableSignature: true
+
+  # checks for missing typehints in iterables
+  checkMissingIterableValueType: true
+
+  # reports return typehints that could be narrowed down because some of the listed types are never returned
+  checkTooWideReturnTypesInProtectedAndPublicMethods: true
+
+  # reports properties with native types that weren’t initialized in the class constructor
+  checkUninitializedProperties: true
+
+  # doesn’t require typehints for properties if the types can be inferred from constructor injection
+  inferPrivatePropertyTypeFromConstructor: false
+
+  # prevents reading key and value variables set in foreach when iterating over a non-empty array
+  polluteScopeWithAlwaysIterableForeach: false
+
+  # prevents reading variables set in for loop initial statement and while loop condition after the loop
+  polluteScopeWithLoopInitialAssignments: false
+
+  # report always true last condition in a series of elseif branches and match expression arms
+  reportAlwaysTrueInLastCondition: true
+
+  # reports violations of parameter type contravariance and return type covariance
+  reportMaybesInMethodSignatures: false
+
+  # reports violations of property type invariance
+  reportMaybesInPropertyPhpDocTypes: false
+
+  # reports violations of parameter type contravariance and return type covariance in static methods
+  reportStaticMethodSignatures: true
+
+  #
+  reportWrongPhpDocTypeInVarTag: true
+
+  # differentiate between PHPDoc and native types (if false)
   treatPhpDocTypesAsCertain: false
+
+  tipsOfTheDay: false
+
   exceptions:
     implicitThrows: false
     checkedExceptionRegexes:
@@ -21,8 +93,7 @@ parameters:
     check:
       missingCheckedExceptionInThrows: true
       tooWideThrowType: true
-  ignoreErrors:
-    - '~Parameter #1 \$headers of method BrowserDetector\\Detector::__invoke\(\) expects array<string, string>\|Psr\\Http\\Message\\MessageInterface\|string\|UaRequest\\GenericRequestInterface, stdClass given~'
-    - '~Parameter #1 \$message of method Psr\\Log\\LoggerInterface::.* expects string, .*Exception given~'
-    - '~is not subtype of Throwable~'
-    - '~Call to deprecated method getBrowser\(\) of class BrowserDetector\\Detector~'
+
+#  ignoreErrors:
+#    - '~Parameter #1 \$headers of method BrowserDetector\\Detector::__invoke\(\) expects array<string, string>\|Psr\\Http\\Message\\MessageInterface\|string\|UaRequest\\GenericRequestInterface, stdClass given~'
+#    - '~Call to deprecated method getBrowser\(\) of class BrowserDetector\\Detector~'

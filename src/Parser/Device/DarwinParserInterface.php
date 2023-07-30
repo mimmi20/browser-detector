@@ -2,7 +2,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2022, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2023, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -23,8 +23,8 @@ interface DarwinParserInterface extends DeviceParserInterface
     /**
      * Gets the information about the browser by User Agent
      *
-     * @return array<int, (OsInterface|DeviceInterface|null)>
-     * @phpstan-return array(0:DeviceInterface, 1:OsInterface|null)
+     * @return array<int, (DeviceInterface|OsInterface|null)>
+     * @phpstan-return array{0:DeviceInterface, 1:OsInterface|null}
      *
      * @throws NotFoundException
      * @throws UnexpectedValueException
@@ -32,8 +32,8 @@ interface DarwinParserInterface extends DeviceParserInterface
     public function parse(string $useragent): array;
 
     /**
-     * @return array<int, (OsInterface|DeviceInterface|null)>
-     * @phpstan-return array(0:DeviceInterface, 1:OsInterface|null)
+     * @return array<int, (DeviceInterface|OsInterface|null)>
+     * @phpstan-return array{0:DeviceInterface, 1:OsInterface|null}
      *
      * @throws NotFoundException
      * @throws UnexpectedValueException

@@ -2,7 +2,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2022, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2023, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -13,9 +13,9 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest\Helper;
 
 use BrowserDetector\Helper\MobileDevice;
+use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
-use SebastianBergmann\RecursionContext\InvalidArgumentException;
 
 use function sprintf;
 
@@ -23,29 +23,28 @@ final class MobileDeviceTest extends TestCase
 {
     private MobileDevice $object;
 
+    /** @throws void */
     protected function setUp(): void
     {
         $this->object = new MobileDevice();
     }
 
-    /**
-     * @throws InvalidArgumentException
-     * @throws ExpectationFailedException
-     *
-     * @dataProvider providerIsMobile
-     */
+    /** @throws ExpectationFailedException */
+    #[DataProvider('providerIsMobile')]
     public function testIsMobile(string $agent): void
     {
         self::assertTrue(
             $this->object->isMobile($agent),
-            sprintf('isMobile detected to FALSE instead of expected TRUE for UA "%s"', $agent)
+            sprintf('isMobile detected to FALSE instead of expected TRUE for UA "%s"', $agent),
         );
     }
 
     /**
      * @return array<int, array<int, string>>
+     *
+     * @throws void
      */
-    public function providerIsMobile(): array
+    public static function providerIsMobile(): array
     {
         return [
             ['Mozilla/5.0 (Mobile; ALCATELOneTouch4012X/SVN 01010B; rv:18.1) Gecko/18.1 Firefox/18.1'],
@@ -144,24 +143,22 @@ final class MobileDeviceTest extends TestCase
         ];
     }
 
-    /**
-     * @throws InvalidArgumentException
-     * @throws ExpectationFailedException
-     *
-     * @dataProvider providerIsNotMobile
-     */
+    /** @throws ExpectationFailedException */
+    #[DataProvider('providerIsNotMobile')]
     public function testIsNotMobile(string $agent): void
     {
         self::assertFalse(
             $this->object->isMobile($agent),
-            sprintf('isMobile detected to TRUE instead of expected FALSE for UA "%s"', $agent)
+            sprintf('isMobile detected to TRUE instead of expected FALSE for UA "%s"', $agent),
         );
     }
 
     /**
      * @return array<int, array<int, string>>
+     *
+     * @throws void
      */
-    public function providerIsNotMobile(): array
+    public static function providerIsNotMobile(): array
     {
         return [
             ['Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) MxNitro/1.0.0.2000 Chrome/35.0.1849.0 Safari/537.36'],

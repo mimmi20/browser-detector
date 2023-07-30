@@ -2,7 +2,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2022, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2023, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -21,10 +21,10 @@ use BrowserDetector\Version\Version;
 use BrowserDetector\Version\VersionFactory;
 use BrowserDetector\Version\VersionFactoryInterface;
 use BrowserDetector\Version\VersionInterface;
+use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
-use SebastianBergmann\RecursionContext\InvalidArgumentException;
 use UnexpectedValueException;
 
 use function assert;
@@ -32,13 +32,11 @@ use function assert;
 final class SafariTest extends TestCase
 {
     /**
-     * @throws InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws UnexpectedValueException
-     *
-     * @dataProvider providerVersion
      */
-    public function testTestdetectVersion(string $useragent, ?string $expectedVersion): void
+    #[DataProvider('providerVersion')]
+    public function testTestdetectVersion(string $useragent, string | null $expectedVersion): void
     {
         $logger = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
@@ -79,8 +77,10 @@ final class SafariTest extends TestCase
 
     /**
      * @return array<int, array<int, string|null>>
+     *
+     * @throws void
      */
-    public function providerVersion(): array
+    public static function providerVersion(): array
     {
         return [
             [
@@ -98,9 +98,7 @@ final class SafariTest extends TestCase
         ];
     }
 
-    /**
-     * @throws UnexpectedValueException
-     */
+    /** @throws UnexpectedValueException */
     public function testDetectVersionFail(): void
     {
         $exception = new NotNumericException('set failed');
@@ -154,7 +152,9 @@ final class SafariTest extends TestCase
         assert($safariHelper instanceof SafariInterface);
         $object = new Safari($logger, $versionFactory, $safariHelper);
 
-        $detectedVersion = $object->detectVersion('Mozilla/5.0 (Linux; U; Android 4.2.2; ru-ru; ImPAD 9708 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30');
+        $detectedVersion = $object->detectVersion(
+            'Mozilla/5.0 (Linux; U; Android 4.2.2; ru-ru; ImPAD 9708 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
+        );
 
         self::assertInstanceOf(VersionInterface::class, $detectedVersion);
         self::assertInstanceOf(NullVersion::class, $detectedVersion);
@@ -219,7 +219,9 @@ final class SafariTest extends TestCase
         assert($safariHelper instanceof SafariInterface);
         $object = new Safari($logger, $versionFactory, $safariHelper);
 
-        $detectedVersion = $object->detectVersion('Mozilla/5.0 (Linux; U; Android 4.2.2; ru-ru; ImPAD 9708 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30');
+        $detectedVersion = $object->detectVersion(
+            'Mozilla/5.0 (Linux; U; Android 4.2.2; ru-ru; ImPAD 9708 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
+        );
 
         self::assertInstanceOf(VersionInterface::class, $detectedVersion);
         self::assertInstanceOf(NullVersion::class, $detectedVersion);
@@ -266,20 +268,23 @@ final class SafariTest extends TestCase
         $versionFactory   = $this->getMockBuilder(VersionFactoryInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
+        $matcher          = self::exactly(2);
         $versionFactory
-            ->expects(self::exactly(2))
+            ->expects($matcher)
             ->method('set')
-            ->withConsecutive(['4.0'], ['1.0'])
-            ->willReturnCallback(static function () use ($mappedVersionOne, $exception): Version {
-                static $i = 0;
+            ->willReturnCallback(
+                static function (string $version) use ($matcher, $mappedVersionOne, $exception): Version {
+                    match ($matcher->numberOfInvocations()) {
+                        1 => self::assertSame('4.0', $version),
+                default => self::assertSame('1.0', $version),
+                    };
 
-                ++$i;
-                if (1 === $i) {
-                    return $mappedVersionOne;
-                }
-
-                throw $exception;
-            });
+                    return match ($matcher->numberOfInvocations()) {
+                        1 => $mappedVersionOne,
+                default => throw $exception,
+                    };
+                },
+            );
 
         $safariHelper = $this->getMockBuilder(SafariInterface::class)
             ->disableOriginalConstructor()
@@ -295,7 +300,9 @@ final class SafariTest extends TestCase
         assert($safariHelper instanceof SafariInterface);
         $object = new Safari($logger, $versionFactory, $safariHelper);
 
-        $detectedVersion = $object->detectVersion('Mozilla/5.0 (Linux; U; Android 4.2.2; ru-ru; ImPAD 9708 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30');
+        $detectedVersion = $object->detectVersion(
+            'Mozilla/5.0 (Linux; U; Android 4.2.2; ru-ru; ImPAD 9708 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
+        );
 
         self::assertInstanceOf(VersionInterface::class, $detectedVersion);
         self::assertInstanceOf(NullVersion::class, $detectedVersion);

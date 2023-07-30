@@ -2,7 +2,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2022, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2023, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -21,10 +21,10 @@ use BrowserDetector\Version\VersionDetectorInterface;
 use BrowserDetector\Version\VersionFactory;
 use BrowserDetector\Version\VersionFactoryInterface;
 use BrowserDetector\Version\VersionInterface;
+use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
-use SebastianBergmann\RecursionContext\InvalidArgumentException;
 use UnexpectedValueException;
 
 use function assert;
@@ -32,13 +32,11 @@ use function assert;
 final class MicrosoftInternetExplorerTest extends TestCase
 {
     /**
-     * @throws InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws UnexpectedValueException
-     *
-     * @dataProvider providerVersion
      */
-    public function testTestdetectVersion(string $useragent, ?string $expectedVersion): void
+    #[DataProvider('providerVersion')]
+    public function testTestdetectVersion(string $useragent, string | null $expectedVersion): void
     {
         $logger = $this->getMockBuilder(LoggerInterface::class)
             ->disableOriginalConstructor()
@@ -69,7 +67,11 @@ final class MicrosoftInternetExplorerTest extends TestCase
             ->method('emergency');
 
         assert($logger instanceof LoggerInterface);
-        $object = new MicrosoftInternetExplorer($logger, new VersionFactory(), new Trident($logger, new VersionFactory()));
+        $object = new MicrosoftInternetExplorer(
+            $logger,
+            new VersionFactory(),
+            new Trident($logger, new VersionFactory()),
+        );
 
         $detectedVersion = $object->detectVersion($useragent);
 
@@ -79,8 +81,10 @@ final class MicrosoftInternetExplorerTest extends TestCase
 
     /**
      * @return array<int, array<int, string|null>>
+     *
+     * @throws void
      */
-    public function providerVersion(): array
+    public static function providerVersion(): array
     {
         return [
             [
@@ -158,11 +162,20 @@ final class MicrosoftInternetExplorerTest extends TestCase
         $versionFactory = $this->getMockBuilder(VersionFactoryInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
+        $matcher        = self::exactly(6);
         $versionFactory
-            ->expects(self::exactly(6))
+            ->expects($matcher)
             ->method('set')
-            ->withConsecutive(['11.0'], ['11.0'], ['10.0'], ['9.0'], ['8.0'], ['8.0'])
-            ->willThrowException($exception);
+            ->willReturnCallback(static function (string $version) use ($matcher, $exception): void {
+                match ($matcher->numberOfInvocations()) {
+                    1, 2 => self::assertSame('11.0', $version),
+                    3 => self::assertSame('10.0', $version),
+                    4 => self::assertSame('9.0', $version),
+                    default => self::assertSame('8.0', $version),
+                };
+
+                throw $exception;
+            });
 
         $trident = $this->getMockBuilder(VersionDetectorInterface::class)
             ->disableOriginalConstructor()
@@ -185,9 +198,7 @@ final class MicrosoftInternetExplorerTest extends TestCase
         self::assertNull($detectedVersion->getVersion());
     }
 
-    /**
-     * @throws UnexpectedValueException
-     */
+    /** @throws UnexpectedValueException */
     public function testDetectVersionFailSecond(): void
     {
         $useragent = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Siemens A/S; .NET CLR 1.0.3705; .NET CLR 1.1.4322)';

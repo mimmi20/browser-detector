@@ -2,7 +2,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2022, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2023, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -20,17 +20,13 @@ use function preg_match;
 
 final class Safari implements VersionDetectorInterface
 {
-    private LoggerInterface $logger;
-
-    private VersionFactoryInterface $versionFactory;
-
-    private SafariInterface $safariHelper;
-
-    public function __construct(LoggerInterface $logger, VersionFactoryInterface $versionFactory, SafariInterface $safariHelper)
-    {
-        $this->logger         = $logger;
-        $this->versionFactory = $versionFactory;
-        $this->safariHelper   = $safariHelper;
+    /** @throws void */
+    public function __construct(
+        private readonly LoggerInterface $logger,
+        private readonly VersionFactoryInterface $versionFactory,
+        private readonly SafariInterface $safariHelper,
+    ) {
+        // nothing to do
     }
 
     /**
@@ -55,7 +51,7 @@ final class Safari implements VersionDetectorInterface
 
             $mappedVersion = $this->safariHelper->mapSafariVersion($version);
 
-            if (null === $mappedVersion) {
+            if ($mappedVersion === null) {
                 return new NullVersion();
             }
 

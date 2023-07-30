@@ -2,7 +2,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2022, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2023, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -29,52 +29,37 @@ use function preg_match;
 
 final class DeviceParser implements DeviceParserInterface
 {
-    private DarwinParserInterface $darwinParser;
-
-    private MobileParserInterface $mobileParser;
-
-    private TvParserInterface $tvParser;
-
-    private DesktopParserInterface $desktopParser;
-
-    private DeviceLoaderFactoryInterface $loaderFactory;
-
-    private MobileDeviceInterface $mobileDevice;
-    private TvInterface $tvDevice;
-    private DesktopInterface $desktopDevice;
-
+    /** @throws void */
     public function __construct(
-        DarwinParserInterface $darwinParser,
-        MobileParserInterface $mobileParser,
-        TvParserInterface $tvParser,
-        DesktopParserInterface $desktopParser,
-        DeviceLoaderFactoryInterface $loaderFactory,
-        MobileDeviceInterface $mobileDevice,
-        TvInterface $tvDevice,
-        DesktopInterface $desktopDevice
+        private readonly DarwinParserInterface $darwinParser,
+        private readonly MobileParserInterface $mobileParser,
+        private readonly TvParserInterface $tvParser,
+        private readonly DesktopParserInterface $desktopParser,
+        private readonly DeviceLoaderFactoryInterface $loaderFactory,
+        private readonly MobileDeviceInterface $mobileDevice,
+        private readonly TvInterface $tvDevice,
+        private readonly DesktopInterface $desktopDevice,
     ) {
-        $this->darwinParser  = $darwinParser;
-        $this->mobileParser  = $mobileParser;
-        $this->tvParser      = $tvParser;
-        $this->desktopParser = $desktopParser;
-        $this->loaderFactory = $loaderFactory;
-        $this->mobileDevice  = $mobileDevice;
-        $this->tvDevice      = $tvDevice;
-        $this->desktopDevice = $desktopDevice;
+        // nothing to do
     }
 
     /**
      * Gets the information about the rendering engine by User Agent
      *
-     * @return array<int, (OsInterface|DeviceInterface|null)>
-     * @phpstan-return array(0:DeviceInterface, 1:OsInterface|null)
+     * @return array<int, (DeviceInterface|OsInterface|null)>
+     * @phpstan-return array{0:DeviceInterface, 1:OsInterface|null}
      *
      * @throws NotFoundException
      * @throws UnexpectedValueException
      */
     public function parse(string $useragent): array
     {
-        if (preg_match('/new-sogou-spider|zollard|socialradarbot|microsoft office protocol discovery|powermarks|archivebot|marketwirebot|microsoft-cryptoapi|pad-bot|james bot|winhttp|jobboerse|<|>|online-versicherungsportal\.info|versicherungssuchmaschine\.net|microsearch|microsoft data access|microsoft url control|infegyatlas|msie or firefox mutant|semantic-visions\.com crawler|labs\.topsy\.com\/butterfly|dolphin http client|google wireless transcoder|commoncrawler|ipodder|tripadvisor|nokia wap gateway|outclicksbot/i', $useragent)) {
+        if (
+            preg_match(
+                '/new-sogou-spider|zollard|socialradarbot|microsoft office protocol discovery|powermarks|archivebot|marketwirebot|microsoft-cryptoapi|pad-bot|james bot|winhttp|jobboerse|<|>|online-versicherungsportal\.info|versicherungssuchmaschine\.net|microsearch|microsoft data access|microsoft url control|infegyatlas|msie or firefox mutant|semantic-visions\.com crawler|labs\.topsy\.com\/butterfly|dolphin http client|google wireless transcoder|commoncrawler|ipodder|tripadvisor|nokia wap gateway|outclicksbot/i',
+                $useragent,
+            )
+        ) {
             return $this->load('unknown', 'unknown', $useragent);
         }
 
@@ -101,8 +86,8 @@ final class DeviceParser implements DeviceParserInterface
     }
 
     /**
-     * @return array<int, (OsInterface|DeviceInterface|null)>
-     * @phpstan-return array(0:DeviceInterface, 1:OsInterface|null)
+     * @return array<int, (DeviceInterface|OsInterface|null)>
+     * @phpstan-return array{0:DeviceInterface, 1:OsInterface|null}
      *
      * @throws NotFoundException
      * @throws UnexpectedValueException

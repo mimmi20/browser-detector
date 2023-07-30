@@ -2,7 +2,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2022, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2023, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -26,7 +26,6 @@ use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
 use Psr\SimpleCache\InvalidArgumentException;
-use stdClass;
 use UaNormalizer\Normalizer\NormalizerInterface;
 use UaRequest\Constants;
 use UaRequest\GenericRequestFactory;
@@ -39,17 +38,15 @@ use UaResult\Result\ResultInterface;
 use UnexpectedValueException;
 
 use function assert;
-use function get_class;
 use function sprintf;
 
 final class DetectorTest extends TestCase
 {
     /**
      * @throws InvalidArgumentException
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws Exception
-     * @throws \InvalidArgumentException
+     * @throws NotNumericException
      * @throws UnexpectedValueException
      */
     public function testGetBrowserFromUaOld(): void
@@ -156,11 +153,18 @@ final class DetectorTest extends TestCase
             $platformParser,
             $browserParser,
             $engineParser,
-            $normalizer
+            $normalizer,
         );
 
         $result = $object->getBrowser($useragent);
-        assert($result instanceof ResultInterface, sprintf('$result should be an instance of %s, but is %s', ResultInterface::class, get_class($result)));
+        assert(
+            $result instanceof ResultInterface,
+            sprintf(
+                '$result should be an instance of %s, but is %s',
+                ResultInterface::class,
+                $result::class,
+            ),
+        );
 
         self::assertInstanceOf(ResultInterface::class, $result);
         self::assertSame($device, $result->getDevice());
@@ -171,11 +175,8 @@ final class DetectorTest extends TestCase
 
     /**
      * @throws InvalidArgumentException
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws Exception
-     * @throws \InvalidArgumentException
-     * @throws UnexpectedValueException
      */
     public function testGetBrowserFromGenericRequest(): void
     {
@@ -281,15 +282,24 @@ final class DetectorTest extends TestCase
             $platformParser,
             $browserParser,
             $engineParser,
-            $normalizer
+            $normalizer,
         );
 
-        $message        = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => [$useragent]]);
+        $message        = ServerRequestFactory::fromGlobals(
+            [Constants::HEADER_HTTP_USERAGENT => [$useragent]],
+        );
         $requestFactory = new GenericRequestFactory();
         $request        = $requestFactory->createRequestFromPsr7Message($message);
 
-        $result = $object->__invoke($request);
-        assert($result instanceof ResultInterface, sprintf('$result should be an instance of %s, but is %s', ResultInterface::class, get_class($result)));
+        $result = $object($request);
+        assert(
+            $result instanceof ResultInterface,
+            sprintf(
+                '$result should be an instance of %s, but is %s',
+                ResultInterface::class,
+                $result::class,
+            ),
+        );
 
         self::assertInstanceOf(ResultInterface::class, $result);
         self::assertSame($device, $result->getDevice());
@@ -300,11 +310,8 @@ final class DetectorTest extends TestCase
 
     /**
      * @throws InvalidArgumentException
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws Exception
-     * @throws \InvalidArgumentException
-     * @throws UnexpectedValueException
      */
     public function testGetBrowserFromGenericRequest2(): void
     {
@@ -399,136 +406,45 @@ final class DetectorTest extends TestCase
             $platformParser,
             $browserParser,
             $engineParser,
-            $normalizer
+            $normalizer,
         );
 
-        $message        = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => [$useragent]]);
+        $message        = ServerRequestFactory::fromGlobals(
+            [Constants::HEADER_HTTP_USERAGENT => [$useragent]],
+        );
         $requestFactory = new GenericRequestFactory();
         $request        = $requestFactory->createRequestFromPsr7Message($message);
 
         $result = $object($request);
-        assert($result instanceof ResultInterface, sprintf('$result should be an instance of %s, but is %s', ResultInterface::class, get_class($result)));
+        assert(
+            $result instanceof ResultInterface,
+            sprintf(
+                '$result should be an instance of %s, but is %s',
+                ResultInterface::class,
+                $result::class,
+            ),
+        );
 
         self::assertInstanceOf(ResultInterface::class, $result);
         self::assertSame($mockResult, $result);
 
-        $result2 = $object->__invoke($message);
-        assert($result2 instanceof ResultInterface, sprintf('$result2 should be an instance of %s, but is %s', ResultInterface::class, get_class($result2)));
+        $result2 = $object($message);
+        assert(
+            $result2 instanceof ResultInterface,
+            sprintf(
+                '$result2 should be an instance of %s, but is %s',
+                ResultInterface::class,
+                $result2::class,
+            ),
+        );
 
         self::assertSame($result, $result2);
     }
 
     /**
      * @throws InvalidArgumentException
-     * @throws UnexpectedValueException
-     * @throws NotNumericException
-     */
-    public function testGetBrowserFromInvalid(): void
-    {
-        $logger = $this->getMockBuilder(LoggerInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
-        $logger
-            ->expects(self::never())
-            ->method('debug');
-        $logger
-            ->expects(self::never())
-            ->method('info');
-        $logger
-            ->expects(self::never())
-            ->method('notice');
-        $logger
-            ->expects(self::never())
-            ->method('warning');
-        $logger
-            ->expects(self::never())
-            ->method('error');
-        $logger
-            ->expects(self::never())
-            ->method('critical');
-        $logger
-            ->expects(self::never())
-            ->method('alert');
-        $logger
-            ->expects(self::never())
-            ->method('emergency');
-
-        $deviceParser = $this->getMockBuilder(DeviceParserInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
-        $deviceParser
-            ->expects(self::never())
-            ->method('parse');
-
-        $platformParser = $this->getMockBuilder(PlatformParserInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
-        $platformParser
-            ->expects(self::never())
-            ->method('parse');
-
-        $browserParser = $this->getMockBuilder(BrowserParserInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
-        $browserParser
-            ->expects(self::never())
-            ->method('parse');
-
-        $engineParser = $this->getMockBuilder(EngineParserInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
-        $engineParser
-            ->expects(self::never())
-            ->method('parse');
-        $engineParser
-            ->expects(self::never())
-            ->method('load');
-
-        $cache = $this->getMockBuilder(CacheInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
-        $cache
-            ->expects(self::never())
-            ->method('hasItem')
-            ->willReturn(false);
-        $cache
-            ->expects(self::never())
-            ->method('getItem');
-        $cache
-            ->expects(self::never())
-            ->method('setItem')
-            ->willReturn(false);
-
-        $normalizer = $this->getMockBuilder(NormalizerInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
-        $normalizer
-            ->expects(self::never())
-            ->method('normalize');
-
-        $object = new Detector(
-            $logger,
-            $cache,
-            $deviceParser,
-            $platformParser,
-            $browserParser,
-            $engineParser,
-            $normalizer
-        );
-
-        $this->expectException(UnexpectedValueException::class);
-        $this->expectExceptionMessage('the request parameter has to be a string, an array or an instance of \Psr\Http\Message\MessageInterface');
-
-        $object->__invoke(new stdClass());
-    }
-
-    /**
-     * @throws InvalidArgumentException
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws Exception
-     * @throws \InvalidArgumentException
-     * @throws UnexpectedValueException
      */
     public function testGetBrowserFromUa(): void
     {
@@ -634,11 +550,18 @@ final class DetectorTest extends TestCase
             $platformParser,
             $browserParser,
             $engineParser,
-            $normalizer
+            $normalizer,
         );
 
-        $result = $object->__invoke($useragent);
-        assert($result instanceof ResultInterface, sprintf('$result should be an instance of %s, but is %s', ResultInterface::class, get_class($result)));
+        $result = $object($useragent);
+        assert(
+            $result instanceof ResultInterface,
+            sprintf(
+                '$result should be an instance of %s, but is %s',
+                ResultInterface::class,
+                $result::class,
+            ),
+        );
 
         self::assertInstanceOf(ResultInterface::class, $result);
         self::assertSame($device, $result->getDevice());
@@ -649,11 +572,8 @@ final class DetectorTest extends TestCase
 
     /**
      * @throws InvalidArgumentException
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws Exception
-     * @throws \InvalidArgumentException
-     * @throws UnexpectedValueException
      */
     public function testGetBrowserFromArray(): void
     {
@@ -759,11 +679,18 @@ final class DetectorTest extends TestCase
             $platformParser,
             $browserParser,
             $engineParser,
-            $normalizer
+            $normalizer,
         );
 
-        $result = $object->__invoke([Constants::HEADER_HTTP_USERAGENT => $useragent]);
-        assert($result instanceof ResultInterface, sprintf('$result should be an instance of %s, but is %s', ResultInterface::class, get_class($result)));
+        $result = $object([Constants::HEADER_HTTP_USERAGENT => $useragent]);
+        assert(
+            $result instanceof ResultInterface,
+            sprintf(
+                '$result should be an instance of %s, but is %s',
+                ResultInterface::class,
+                $result::class,
+            ),
+        );
 
         self::assertInstanceOf(ResultInterface::class, $result);
         self::assertSame($device, $result->getDevice());
@@ -774,11 +701,8 @@ final class DetectorTest extends TestCase
 
     /**
      * @throws InvalidArgumentException
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws Exception
-     * @throws \InvalidArgumentException
-     * @throws UnexpectedValueException
      */
     public function testGetBrowserFromPsr7Message(): void
     {
@@ -888,13 +812,22 @@ final class DetectorTest extends TestCase
             $platformParser,
             $browserParser,
             $engineParser,
-            $normalizer
+            $normalizer,
         );
 
-        $message = ServerRequestFactory::fromGlobals([Constants::HEADER_HTTP_USERAGENT => [$useragent]]);
+        $message = ServerRequestFactory::fromGlobals(
+            [Constants::HEADER_HTTP_USERAGENT => [$useragent]],
+        );
 
-        $result = $object->__invoke($message);
-        assert($result instanceof ResultInterface, sprintf('$result should be an instance of %s, but is %s', ResultInterface::class, get_class($result)));
+        $result = $object($message);
+        assert(
+            $result instanceof ResultInterface,
+            sprintf(
+                '$result should be an instance of %s, but is %s',
+                ResultInterface::class,
+                $result::class,
+            ),
+        );
 
         self::assertInstanceOf(ResultInterface::class, $result);
         self::assertSame($device, $result->getDevice());
@@ -908,11 +841,8 @@ final class DetectorTest extends TestCase
 
     /**
      * @throws InvalidArgumentException
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws Exception
-     * @throws \InvalidArgumentException
-     * @throws UnexpectedValueException
      */
     public function testGetBrowserFromUnknownDevice(): void
     {
@@ -1015,7 +945,7 @@ final class DetectorTest extends TestCase
             $platformParser,
             $browserParser,
             $engineParser,
-            $normalizer
+            $normalizer,
         );
 
         $message = $this->getMockBuilder(GenericRequestInterface::class)
@@ -1037,8 +967,15 @@ final class DetectorTest extends TestCase
             ->method('getEngineUserAgent')
             ->willReturn($useragent);
 
-        $result = $object->__invoke($message);
-        assert($result instanceof ResultInterface, sprintf('$result should be an instance of %s, but is %s', ResultInterface::class, get_class($result)));
+        $result = $object($message);
+        assert(
+            $result instanceof ResultInterface,
+            sprintf(
+                '$result should be an instance of %s, but is %s',
+                ResultInterface::class,
+                $result::class,
+            ),
+        );
 
         self::assertInstanceOf(ResultInterface::class, $result);
         self::assertSame($browser, $result->getBrowser());
@@ -1051,11 +988,8 @@ final class DetectorTest extends TestCase
 
     /**
      * @throws InvalidArgumentException
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws Exception
-     * @throws \InvalidArgumentException
-     * @throws UnexpectedValueException
      */
     public function testGetBrowserFromUnknownDeviceAndPlatform(): void
     {
@@ -1158,7 +1092,7 @@ final class DetectorTest extends TestCase
             $platformParser,
             $browserParser,
             $engineParser,
-            $normalizer
+            $normalizer,
         );
 
         $message = $this->getMockBuilder(GenericRequestInterface::class)
@@ -1180,8 +1114,15 @@ final class DetectorTest extends TestCase
             ->method('getEngineUserAgent')
             ->willReturn($useragent);
 
-        $result = $object->__invoke($message);
-        assert($result instanceof ResultInterface, sprintf('$result should be an instance of %s, but is %s', ResultInterface::class, get_class($result)));
+        $result = $object($message);
+        assert(
+            $result instanceof ResultInterface,
+            sprintf(
+                '$result should be an instance of %s, but is %s',
+                ResultInterface::class,
+                $result::class,
+            ),
+        );
 
         self::assertInstanceOf(ResultInterface::class, $result);
         // self::assertSame($device, $result->getDevice());
@@ -1196,11 +1137,8 @@ final class DetectorTest extends TestCase
 
     /**
      * @throws InvalidArgumentException
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws Exception
-     * @throws \InvalidArgumentException
-     * @throws UnexpectedValueException
      */
     public function testGetBrowserWithoutEngine(): void
     {
@@ -1314,7 +1252,7 @@ final class DetectorTest extends TestCase
             $platformParser,
             $browserParser,
             $engineParser,
-            $normalizer
+            $normalizer,
         );
 
         $message = $this->getMockBuilder(GenericRequestInterface::class)
@@ -1336,8 +1274,15 @@ final class DetectorTest extends TestCase
             ->method('getEngineUserAgent')
             ->willReturn($useragent);
 
-        $result = $object->__invoke($message);
-        assert($result instanceof ResultInterface, sprintf('$result should be an instance of %s, but is %s', ResultInterface::class, get_class($result)));
+        $result = $object($message);
+        assert(
+            $result instanceof ResultInterface,
+            sprintf(
+                '$result should be an instance of %s, but is %s',
+                ResultInterface::class,
+                $result::class,
+            ),
+        );
 
         self::assertInstanceOf(ResultInterface::class, $result);
         self::assertSame($device, $result->getDevice());
@@ -1352,11 +1297,8 @@ final class DetectorTest extends TestCase
 
     /**
      * @throws InvalidArgumentException
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws Exception
-     * @throws \InvalidArgumentException
-     * @throws UnexpectedValueException
      */
     public function testGetBrowserWithoutEngine2(): void
     {
@@ -1466,7 +1408,7 @@ final class DetectorTest extends TestCase
             $platformParser,
             $browserParser,
             $engineParser,
-            $normalizer
+            $normalizer,
         );
 
         $message = $this->getMockBuilder(GenericRequestInterface::class)
@@ -1488,8 +1430,15 @@ final class DetectorTest extends TestCase
             ->method('getEngineUserAgent')
             ->willReturn($useragent);
 
-        $result = $object->__invoke($message);
-        assert($result instanceof ResultInterface, sprintf('$result should be an instance of %s, but is %s', ResultInterface::class, get_class($result)));
+        $result = $object($message);
+        assert(
+            $result instanceof ResultInterface,
+            sprintf(
+                '$result should be an instance of %s, but is %s',
+                ResultInterface::class,
+                $result::class,
+            ),
+        );
 
         self::assertInstanceOf(ResultInterface::class, $result);
         self::assertSame($device, $result->getDevice());
@@ -1504,11 +1453,8 @@ final class DetectorTest extends TestCase
 
     /**
      * @throws InvalidArgumentException
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws Exception
-     * @throws \InvalidArgumentException
-     * @throws UnexpectedValueException
      */
     public function testGetBrowserWithoutEngineIos(): void
     {
@@ -1627,7 +1573,7 @@ final class DetectorTest extends TestCase
             $platformParser,
             $browserParser,
             $engineParser,
-            $normalizer
+            $normalizer,
         );
 
         $message = $this->getMockBuilder(GenericRequestInterface::class)
@@ -1649,8 +1595,15 @@ final class DetectorTest extends TestCase
             ->method('getEngineUserAgent')
             ->willReturn($useragent);
 
-        $result = $object->__invoke($message);
-        assert($result instanceof ResultInterface, sprintf('$result should be an instance of %s, but is %s', ResultInterface::class, get_class($result)));
+        $result = $object($message);
+        assert(
+            $result instanceof ResultInterface,
+            sprintf(
+                '$result should be an instance of %s, but is %s',
+                ResultInterface::class,
+                $result::class,
+            ),
+        );
 
         self::assertInstanceOf(ResultInterface::class, $result);
         self::assertSame($device, $result->getDevice());
@@ -1666,11 +1619,8 @@ final class DetectorTest extends TestCase
 
     /**
      * @throws InvalidArgumentException
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws Exception
-     * @throws \InvalidArgumentException
-     * @throws UnexpectedValueException
      */
     public function testGetBrowserWithoutEngineIosFail(): void
     {
@@ -1783,7 +1733,7 @@ final class DetectorTest extends TestCase
             $platformParser,
             $browserParser,
             $engineParser,
-            $normalizer
+            $normalizer,
         );
 
         $message = $this->getMockBuilder(GenericRequestInterface::class)
@@ -1805,8 +1755,15 @@ final class DetectorTest extends TestCase
             ->method('getEngineUserAgent')
             ->willReturn($useragent);
 
-        $result = $object->__invoke($message);
-        assert($result instanceof ResultInterface, sprintf('$result should be an instance of %s, but is %s', ResultInterface::class, get_class($result)));
+        $result = $object($message);
+        assert(
+            $result instanceof ResultInterface,
+            sprintf(
+                '$result should be an instance of %s, but is %s',
+                ResultInterface::class,
+                $result::class,
+            ),
+        );
 
         self::assertInstanceOf(ResultInterface::class, $result);
         self::assertSame($device, $result->getDevice());
@@ -1822,11 +1779,8 @@ final class DetectorTest extends TestCase
 
     /**
      * @throws InvalidArgumentException
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws Exception
-     * @throws \InvalidArgumentException
-     * @throws UnexpectedValueException
      */
     public function testGetBrowserWithoutEngineIosFail2(): void
     {
@@ -1939,7 +1893,7 @@ final class DetectorTest extends TestCase
             $platformParser,
             $browserParser,
             $engineParser,
-            $normalizer
+            $normalizer,
         );
 
         $message = $this->getMockBuilder(GenericRequestInterface::class)
@@ -1961,8 +1915,15 @@ final class DetectorTest extends TestCase
             ->method('getEngineUserAgent')
             ->willReturn($useragent);
 
-        $result = $object->__invoke($message);
-        assert($result instanceof ResultInterface, sprintf('$result should be an instance of %s, but is %s', ResultInterface::class, get_class($result)));
+        $result = $object($message);
+        assert(
+            $result instanceof ResultInterface,
+            sprintf(
+                '$result should be an instance of %s, but is %s',
+                ResultInterface::class,
+                $result::class,
+            ),
+        );
 
         self::assertInstanceOf(ResultInterface::class, $result);
         self::assertSame($device, $result->getDevice());
@@ -1978,11 +1939,8 @@ final class DetectorTest extends TestCase
 
     /**
      * @throws InvalidArgumentException
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws Exception
-     * @throws \InvalidArgumentException
-     * @throws UnexpectedValueException
      */
     public function testGetBrowserWithBrowserFactoryFail(): void
     {
@@ -2099,7 +2057,7 @@ final class DetectorTest extends TestCase
             $platformParser,
             $browserParser,
             $engineParser,
-            $normalizer
+            $normalizer,
         );
 
         $message = $this->getMockBuilder(GenericRequestInterface::class)
@@ -2121,8 +2079,15 @@ final class DetectorTest extends TestCase
             ->method('getEngineUserAgent')
             ->willReturn($useragent);
 
-        $result = $object->__invoke($message);
-        assert($result instanceof ResultInterface, sprintf('$result should be an instance of %s, but is %s', ResultInterface::class, get_class($result)));
+        $result = $object($message);
+        assert(
+            $result instanceof ResultInterface,
+            sprintf(
+                '$result should be an instance of %s, but is %s',
+                ResultInterface::class,
+                $result::class,
+            ),
+        );
 
         self::assertInstanceOf(ResultInterface::class, $result);
         self::assertSame($device, $result->getDevice());
@@ -2138,11 +2103,8 @@ final class DetectorTest extends TestCase
 
     /**
      * @throws InvalidArgumentException
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws Exception
-     * @throws \InvalidArgumentException
-     * @throws UnexpectedValueException
      */
     public function testGetDeviceWithoutPlatform(): void
     {
@@ -2258,7 +2220,7 @@ final class DetectorTest extends TestCase
             $platformParser,
             $browserParser,
             $engineParser,
-            $normalizer
+            $normalizer,
         );
 
         $message = $this->getMockBuilder(GenericRequestInterface::class)
@@ -2281,8 +2243,15 @@ final class DetectorTest extends TestCase
             ->method('getEngineUserAgent')
             ->willReturn($useragent);
 
-        $result = $object->__invoke($message);
-        assert($result instanceof ResultInterface, sprintf('$result should be an instance of %s, but is %s', ResultInterface::class, get_class($result)));
+        $result = $object($message);
+        assert(
+            $result instanceof ResultInterface,
+            sprintf(
+                '$result should be an instance of %s, but is %s',
+                ResultInterface::class,
+                $result::class,
+            ),
+        );
 
         self::assertInstanceOf(ResultInterface::class, $result);
         self::assertSame($device, $result->getDevice());
@@ -2297,11 +2266,8 @@ final class DetectorTest extends TestCase
 
     /**
      * @throws InvalidArgumentException
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws Exception
-     * @throws \InvalidArgumentException
-     * @throws UnexpectedValueException
      */
     public function testGetDeviceWithoutPlatformAndError(): void
     {
@@ -2416,7 +2382,7 @@ final class DetectorTest extends TestCase
             $platformParser,
             $browserParser,
             $engineParser,
-            $normalizer
+            $normalizer,
         );
 
         $message = $this->getMockBuilder(GenericRequestInterface::class)
@@ -2439,8 +2405,15 @@ final class DetectorTest extends TestCase
             ->method('getEngineUserAgent')
             ->willReturn($useragent);
 
-        $result = $object->__invoke($message);
-        assert($result instanceof ResultInterface, sprintf('$result should be an instance of %s, but is %s', ResultInterface::class, get_class($result)));
+        $result = $object($message);
+        assert(
+            $result instanceof ResultInterface,
+            sprintf(
+                '$result should be an instance of %s, but is %s',
+                ResultInterface::class,
+                $result::class,
+            ),
+        );
 
         self::assertInstanceOf(ResultInterface::class, $result);
         self::assertSame($device, $result->getDevice());
@@ -2459,11 +2432,8 @@ final class DetectorTest extends TestCase
 
     /**
      * @throws InvalidArgumentException
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws Exception
-     * @throws \InvalidArgumentException
-     * @throws UnexpectedValueException
      */
     public function testGetDeviceWithoutPlatformAndError2(): void
     {
@@ -2579,7 +2549,7 @@ final class DetectorTest extends TestCase
             $platformParser,
             $browserParser,
             $engineParser,
-            $normalizer
+            $normalizer,
         );
 
         $message = $this->getMockBuilder(GenericRequestInterface::class)
@@ -2602,8 +2572,15 @@ final class DetectorTest extends TestCase
             ->method('getEngineUserAgent')
             ->willReturn($useragent);
 
-        $result = $object->__invoke($message);
-        assert($result instanceof ResultInterface, sprintf('$result should be an instance of %s, but is %s', ResultInterface::class, get_class($result)));
+        $result = $object($message);
+        assert(
+            $result instanceof ResultInterface,
+            sprintf(
+                '$result should be an instance of %s, but is %s',
+                ResultInterface::class,
+                $result::class,
+            ),
+        );
 
         self::assertInstanceOf(ResultInterface::class, $result);
         self::assertSame($device, $result->getDevice());

@@ -2,7 +2,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2022, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2023, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -12,7 +12,6 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Cache;
 
-use Psr\SimpleCache\CacheInterface as PsrCacheInterface;
 use Psr\SimpleCache\InvalidArgumentException;
 
 use function array_key_exists;
@@ -22,15 +21,15 @@ use function unserialize;
 
 final class Cache implements CacheInterface
 {
-    private \Psr\SimpleCache\CacheInterface $cache;
-
     /**
      * Constructor class, checks for the existence of (and loads) the cache and
-     * if needed updated the definitions
+     * if needed, updated the definitions
+     *
+     * @throws void
      */
-    public function __construct(PsrCacheInterface $adapter)
+    public function __construct(private readonly \Psr\SimpleCache\CacheInterface $cache)
     {
-        $this->cache = $adapter;
+        // nothing to do
     }
 
     /**
@@ -40,7 +39,7 @@ final class Cache implements CacheInterface
      *
      * @throws InvalidArgumentException
      */
-    public function getItem(string $cacheId)
+    public function getItem(string $cacheId): mixed
     {
         if (!$this->cache->has($cacheId)) {
             return null;
@@ -65,7 +64,7 @@ final class Cache implements CacheInterface
      *
      * @throws InvalidArgumentException
      */
-    public function setItem(string $cacheId, $content): bool
+    public function setItem(string $cacheId, mixed $content): bool
     {
         // Get the whole PHP code
         $data = [

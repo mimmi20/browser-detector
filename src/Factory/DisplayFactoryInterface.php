@@ -2,7 +2,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2022, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2023, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -18,8 +18,10 @@ use UaResult\Device\DisplayInterface;
 interface DisplayFactoryInterface
 {
     /**
-     * @param array<string, (int|bool|float|null)> $data
+     * @param array<string, (bool|float|int|null)> $data
      * @phpstan-param array{width?: int|null, height?: int|null, touch?: bool|null, size?: int|float|null} $data
+     *
+     * @throws void
      */
     public function fromArray(LoggerInterface $logger, array $data): DisplayInterface;
 }

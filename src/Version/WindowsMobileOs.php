@@ -2,7 +2,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2022, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2023, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -21,22 +21,25 @@ final class WindowsMobileOs implements VersionDetectorInterface
 {
     public const SEARCHES = ['Windows Mobile', 'Windows Phone'];
 
-    private LoggerInterface $logger;
-
-    private VersionFactoryInterface $versionFactory;
-
-    public function __construct(LoggerInterface $logger, VersionFactoryInterface $versionFactory)
-    {
-        $this->logger         = $logger;
-        $this->versionFactory = $versionFactory;
+    /** @throws void */
+    public function __construct(
+        private readonly LoggerInterface $logger,
+        private readonly VersionFactoryInterface $versionFactory,
+    ) {
+        // nothing to do
     }
 
     /**
      * returns the version of the operating system/platform
+     *
+     * @throws void
      */
     public function detectVersion(string $useragent): VersionInterface
     {
-        if (false !== mb_stripos($useragent, 'windows nt 5.1') && !preg_match('/windows mobile|windows phone/i', $useragent)) {
+        if (
+            mb_stripos($useragent, 'windows nt 5.1') !== false
+            && !preg_match('/windows mobile|windows phone/i', $useragent)
+        ) {
             try {
                 return $this->versionFactory->set('6.0');
             } catch (NotNumericException $e) {

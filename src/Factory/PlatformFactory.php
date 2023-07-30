@@ -2,7 +2,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2022, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2023, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -31,22 +31,17 @@ final class PlatformFactory
 {
     use VersionFactoryTrait;
 
-    private CompanyLoaderInterface $companyLoader;
-
-    private LoggerInterface $logger;
-
+    /** @throws void */
     public function __construct(
-        CompanyLoaderInterface $companyLoader,
+        private readonly CompanyLoaderInterface $companyLoader,
         VersionFactoryInterface $versionFactory,
-        LoggerInterface $logger
+        private readonly LoggerInterface $logger,
     ) {
-        $this->companyLoader  = $companyLoader;
         $this->versionFactory = $versionFactory;
-        $this->logger         = $logger;
     }
 
     /**
-     * @param array<string, (string|stdClass|int|null)> $data
+     * @param array<string, (int|stdClass|string|null)> $data
      * @phpstan-param array{name?: string|null, marketingName?: string|null, manufacturer?: string, version?: stdClass|string|null, bits?: int|null} $data
      *
      * @throws NotFoundException
@@ -71,22 +66,18 @@ final class PlatformFactory
         } catch (NotFoundException $e) {
             $this->logger->info($e);
 
-            $manufacturer = new Company(
-                'unknown',
-                null,
-                null
-            );
+            $manufacturer = new Company('unknown', null, null);
         }
 
-        if (null !== $version->getVersion(VersionInterface::IGNORE_MICRO)) {
+        if ($version->getVersion(VersionInterface::IGNORE_MICRO) !== null) {
             if (
-                'Mac OS X' === $name
+                $name === 'Mac OS X'
                 && version_compare($version->getVersion(VersionInterface::IGNORE_MICRO), '10.12', '>=')
             ) {
                 $name          = 'macOS';
                 $marketingName = 'macOS';
             } elseif (
-                'iOS' === $name
+                $name === 'iOS'
                 && version_compare($version->getVersion(VersionInterface::IGNORE_MICRO), '4.0', '<')
                 && version_compare($version->getVersion(VersionInterface::IGNORE_MICRO), '0.0', '>')
             ) {

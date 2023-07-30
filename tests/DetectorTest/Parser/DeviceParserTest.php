@@ -2,7 +2,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2022, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2023, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -24,7 +24,6 @@ use BrowserDetector\Parser\Device\TvParserInterface;
 use BrowserDetector\Parser\DeviceParser;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
-use SebastianBergmann\RecursionContext\InvalidArgumentException;
 use UaDeviceType\TypeInterface;
 use UaResult\Company\CompanyInterface;
 use UaResult\Device\DeviceInterface;
@@ -36,7 +35,6 @@ use function assert;
 final class DeviceParserTest extends TestCase
 {
     /**
-     * @throws InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws UnexpectedValueException
      */
@@ -46,105 +44,126 @@ final class DeviceParserTest extends TestCase
         $key       = 'unknown';
         $useragent = '<device-test>';
 
-        $expectedDevice = new class() implements DeviceInterface {
-            public function getDeviceName(): ?string
+        $expectedDevice = new class () implements DeviceInterface {
+            /** @throws void */
+            public function getDeviceName(): string | null
             {
                 return null;
             }
 
+            /** @throws void */
             public function getBrand(): CompanyInterface
             {
-                return new class() implements CompanyInterface {
+                return new class () implements CompanyInterface {
+                    /** @throws void */
                     public function getType(): string
                     {
                         return '';
                     }
 
-                    public function getName(): ?string
+                    /** @throws void */
+                    public function getName(): string | null
                     {
                         return null;
                     }
 
-                    public function getBrandName(): ?string
+                    /** @throws void */
+                    public function getBrandName(): string | null
                     {
                         return null;
                     }
                 };
             }
 
+            /** @throws void */
             public function getManufacturer(): CompanyInterface
             {
-                return new class() implements CompanyInterface {
+                return new class () implements CompanyInterface {
+                    /** @throws void */
                     public function getType(): string
                     {
                         return '';
                     }
 
-                    public function getName(): ?string
+                    /** @throws void */
+                    public function getName(): string | null
                     {
                         return null;
                     }
 
-                    public function getBrandName(): ?string
+                    /** @throws void */
+                    public function getBrandName(): string | null
                     {
                         return null;
                     }
                 };
             }
 
-            public function getMarketingName(): ?string
+            /** @throws void */
+            public function getMarketingName(): string | null
             {
                 return null;
             }
 
-            public function getDisplay(): ?DisplayInterface
+            /** @throws void */
+            public function getDisplay(): DisplayInterface | null
             {
                 return null;
             }
 
+            /** @throws void */
             public function getType(): TypeInterface
             {
-                return new class() implements TypeInterface {
+                return new class () implements TypeInterface {
+                    /** @throws void */
                     public function getType(): string
                     {
                         return '';
                     }
 
-                    public function getName(): ?string
+                    /** @throws void */
+                    public function getName(): string | null
                     {
                         return null;
                     }
 
+                    /** @throws void */
                     public function isMobile(): bool
                     {
                         return false;
                     }
 
+                    /** @throws void */
                     public function isDesktop(): bool
                     {
                         return false;
                     }
 
+                    /** @throws void */
                     public function isConsole(): bool
                     {
                         return false;
                     }
 
+                    /** @throws void */
                     public function isTv(): bool
                     {
                         return false;
                     }
 
+                    /** @throws void */
                     public function isPhone(): bool
                     {
                         return false;
                     }
 
+                    /** @throws void */
                     public function isTablet(): bool
                     {
                         return false;
                     }
 
+                    /** @throws void */
                     public function getDescription(): string
                     {
                         return '';
@@ -154,6 +173,8 @@ final class DeviceParserTest extends TestCase
 
             /**
              * @return array<string, array<string, bool|float|int>|string|null>
+             *
+             * @throws void
              */
             public function toArray(): array
             {
@@ -238,14 +259,22 @@ final class DeviceParserTest extends TestCase
         assert($mobileDevice instanceof MobileDeviceInterface);
         assert($tvDevice instanceof TvInterface);
         assert($desktopDevice instanceof DesktopInterface);
-        $object = new DeviceParser($darwinParser, $mobileParser, $tvParser, $desktopParser, $loaderFactory, $mobileDevice, $tvDevice, $desktopDevice);
+        $object = new DeviceParser(
+            $darwinParser,
+            $mobileParser,
+            $tvParser,
+            $desktopParser,
+            $loaderFactory,
+            $mobileDevice,
+            $tvDevice,
+            $desktopDevice,
+        );
         $result = $object->parse($useragent);
 
         self::assertSame($expectedResult, $result);
     }
 
     /**
-     * @throws InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws UnexpectedValueException
      */
@@ -255,105 +284,126 @@ final class DeviceParserTest extends TestCase
         $key       = 'unknown';
         $useragent = 'Mozilla/5.0 (compatible; Zollard; Linux)';
 
-        $expectedDevice = new class() implements DeviceInterface {
-            public function getDeviceName(): ?string
+        $expectedDevice = new class () implements DeviceInterface {
+            /** @throws void */
+            public function getDeviceName(): string | null
             {
                 return null;
             }
 
+            /** @throws void */
             public function getBrand(): CompanyInterface
             {
-                return new class() implements CompanyInterface {
+                return new class () implements CompanyInterface {
+                    /** @throws void */
                     public function getType(): string
                     {
                         return '';
                     }
 
-                    public function getName(): ?string
+                    /** @throws void */
+                    public function getName(): string | null
                     {
                         return null;
                     }
 
-                    public function getBrandName(): ?string
+                    /** @throws void */
+                    public function getBrandName(): string | null
                     {
                         return null;
                     }
                 };
             }
 
+            /** @throws void */
             public function getManufacturer(): CompanyInterface
             {
-                return new class() implements CompanyInterface {
+                return new class () implements CompanyInterface {
+                    /** @throws void */
                     public function getType(): string
                     {
                         return '';
                     }
 
-                    public function getName(): ?string
+                    /** @throws void */
+                    public function getName(): string | null
                     {
                         return null;
                     }
 
-                    public function getBrandName(): ?string
+                    /** @throws void */
+                    public function getBrandName(): string | null
                     {
                         return null;
                     }
                 };
             }
 
-            public function getMarketingName(): ?string
+            /** @throws void */
+            public function getMarketingName(): string | null
             {
                 return null;
             }
 
-            public function getDisplay(): ?DisplayInterface
+            /** @throws void */
+            public function getDisplay(): DisplayInterface | null
             {
                 return null;
             }
 
+            /** @throws void */
             public function getType(): TypeInterface
             {
-                return new class() implements TypeInterface {
+                return new class () implements TypeInterface {
+                    /** @throws void */
                     public function getType(): string
                     {
                         return '';
                     }
 
-                    public function getName(): ?string
+                    /** @throws void */
+                    public function getName(): string | null
                     {
                         return null;
                     }
 
+                    /** @throws void */
                     public function isMobile(): bool
                     {
                         return false;
                     }
 
+                    /** @throws void */
                     public function isDesktop(): bool
                     {
                         return false;
                     }
 
+                    /** @throws void */
                     public function isConsole(): bool
                     {
                         return false;
                     }
 
+                    /** @throws void */
                     public function isTv(): bool
                     {
                         return false;
                     }
 
+                    /** @throws void */
                     public function isPhone(): bool
                     {
                         return false;
                     }
 
+                    /** @throws void */
                     public function isTablet(): bool
                     {
                         return false;
                     }
 
+                    /** @throws void */
                     public function getDescription(): string
                     {
                         return '';
@@ -363,6 +413,8 @@ final class DeviceParserTest extends TestCase
 
             /**
              * @return array<string, array<string, bool|float|int>|string|null>
+             *
+             * @throws void
              */
             public function toArray(): array
             {
@@ -447,14 +499,22 @@ final class DeviceParserTest extends TestCase
         assert($mobileDevice instanceof MobileDeviceInterface);
         assert($tvDevice instanceof TvInterface);
         assert($desktopDevice instanceof DesktopInterface);
-        $object = new DeviceParser($darwinParser, $mobileParser, $tvParser, $desktopParser, $loaderFactory, $mobileDevice, $tvDevice, $desktopDevice);
+        $object = new DeviceParser(
+            $darwinParser,
+            $mobileParser,
+            $tvParser,
+            $desktopParser,
+            $loaderFactory,
+            $mobileDevice,
+            $tvDevice,
+            $desktopDevice,
+        );
         $result = $object->parse($useragent);
 
         self::assertSame($expectedResult, $result);
     }
 
     /**
-     * @throws InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws UnexpectedValueException
      */
@@ -462,105 +522,126 @@ final class DeviceParserTest extends TestCase
     {
         $useragent = 'test-Darwin';
 
-        $expectedDevice = new class() implements DeviceInterface {
-            public function getDeviceName(): ?string
+        $expectedDevice = new class () implements DeviceInterface {
+            /** @throws void */
+            public function getDeviceName(): string | null
             {
                 return null;
             }
 
+            /** @throws void */
             public function getBrand(): CompanyInterface
             {
-                return new class() implements CompanyInterface {
+                return new class () implements CompanyInterface {
+                    /** @throws void */
                     public function getType(): string
                     {
                         return '';
                     }
 
-                    public function getName(): ?string
+                    /** @throws void */
+                    public function getName(): string | null
                     {
                         return null;
                     }
 
-                    public function getBrandName(): ?string
+                    /** @throws void */
+                    public function getBrandName(): string | null
                     {
                         return null;
                     }
                 };
             }
 
+            /** @throws void */
             public function getManufacturer(): CompanyInterface
             {
-                return new class() implements CompanyInterface {
+                return new class () implements CompanyInterface {
+                    /** @throws void */
                     public function getType(): string
                     {
                         return '';
                     }
 
-                    public function getName(): ?string
+                    /** @throws void */
+                    public function getName(): string | null
                     {
                         return null;
                     }
 
-                    public function getBrandName(): ?string
+                    /** @throws void */
+                    public function getBrandName(): string | null
                     {
                         return null;
                     }
                 };
             }
 
-            public function getMarketingName(): ?string
+            /** @throws void */
+            public function getMarketingName(): string | null
             {
                 return null;
             }
 
-            public function getDisplay(): ?DisplayInterface
+            /** @throws void */
+            public function getDisplay(): DisplayInterface | null
             {
                 return null;
             }
 
+            /** @throws void */
             public function getType(): TypeInterface
             {
-                return new class() implements TypeInterface {
+                return new class () implements TypeInterface {
+                    /** @throws void */
                     public function getType(): string
                     {
                         return '';
                     }
 
-                    public function getName(): ?string
+                    /** @throws void */
+                    public function getName(): string | null
                     {
                         return null;
                     }
 
+                    /** @throws void */
                     public function isMobile(): bool
                     {
                         return false;
                     }
 
+                    /** @throws void */
                     public function isDesktop(): bool
                     {
                         return false;
                     }
 
+                    /** @throws void */
                     public function isConsole(): bool
                     {
                         return false;
                     }
 
+                    /** @throws void */
                     public function isTv(): bool
                     {
                         return false;
                     }
 
+                    /** @throws void */
                     public function isPhone(): bool
                     {
                         return false;
                     }
 
+                    /** @throws void */
                     public function isTablet(): bool
                     {
                         return false;
                     }
 
+                    /** @throws void */
                     public function getDescription(): string
                     {
                         return '';
@@ -570,6 +651,8 @@ final class DeviceParserTest extends TestCase
 
             /**
              * @return array<string, array<string, bool|float|int>|string|null>
+             *
+             * @throws void
              */
             public function toArray(): array
             {
@@ -652,14 +735,22 @@ final class DeviceParserTest extends TestCase
         assert($mobileDevice instanceof MobileDeviceInterface);
         assert($tvDevice instanceof TvInterface);
         assert($desktopDevice instanceof DesktopInterface);
-        $object = new DeviceParser($darwinParser, $mobileParser, $tvParser, $desktopParser, $loaderFactory, $mobileDevice, $tvDevice, $desktopDevice);
+        $object = new DeviceParser(
+            $darwinParser,
+            $mobileParser,
+            $tvParser,
+            $desktopParser,
+            $loaderFactory,
+            $mobileDevice,
+            $tvDevice,
+            $desktopDevice,
+        );
         $result = $object->parse($useragent);
 
         self::assertSame($expectedResult, $result);
     }
 
     /**
-     * @throws InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws UnexpectedValueException
      */
@@ -667,105 +758,126 @@ final class DeviceParserTest extends TestCase
     {
         $useragent = 'test-device';
 
-        $expectedDevice = new class() implements DeviceInterface {
-            public function getDeviceName(): ?string
+        $expectedDevice = new class () implements DeviceInterface {
+            /** @throws void */
+            public function getDeviceName(): string | null
             {
                 return null;
             }
 
+            /** @throws void */
             public function getBrand(): CompanyInterface
             {
-                return new class() implements CompanyInterface {
+                return new class () implements CompanyInterface {
+                    /** @throws void */
                     public function getType(): string
                     {
                         return '';
                     }
 
-                    public function getName(): ?string
+                    /** @throws void */
+                    public function getName(): string | null
                     {
                         return null;
                     }
 
-                    public function getBrandName(): ?string
+                    /** @throws void */
+                    public function getBrandName(): string | null
                     {
                         return null;
                     }
                 };
             }
 
+            /** @throws void */
             public function getManufacturer(): CompanyInterface
             {
-                return new class() implements CompanyInterface {
+                return new class () implements CompanyInterface {
+                    /** @throws void */
                     public function getType(): string
                     {
                         return '';
                     }
 
-                    public function getName(): ?string
+                    /** @throws void */
+                    public function getName(): string | null
                     {
                         return null;
                     }
 
-                    public function getBrandName(): ?string
+                    /** @throws void */
+                    public function getBrandName(): string | null
                     {
                         return null;
                     }
                 };
             }
 
-            public function getMarketingName(): ?string
+            /** @throws void */
+            public function getMarketingName(): string | null
             {
                 return null;
             }
 
-            public function getDisplay(): ?DisplayInterface
+            /** @throws void */
+            public function getDisplay(): DisplayInterface | null
             {
                 return null;
             }
 
+            /** @throws void */
             public function getType(): TypeInterface
             {
-                return new class() implements TypeInterface {
+                return new class () implements TypeInterface {
+                    /** @throws void */
                     public function getType(): string
                     {
                         return '';
                     }
 
-                    public function getName(): ?string
+                    /** @throws void */
+                    public function getName(): string | null
                     {
                         return null;
                     }
 
+                    /** @throws void */
                     public function isMobile(): bool
                     {
                         return false;
                     }
 
+                    /** @throws void */
                     public function isDesktop(): bool
                     {
                         return false;
                     }
 
+                    /** @throws void */
                     public function isConsole(): bool
                     {
                         return false;
                     }
 
+                    /** @throws void */
                     public function isTv(): bool
                     {
                         return false;
                     }
 
+                    /** @throws void */
                     public function isPhone(): bool
                     {
                         return false;
                     }
 
+                    /** @throws void */
                     public function isTablet(): bool
                     {
                         return false;
                     }
 
+                    /** @throws void */
                     public function getDescription(): string
                     {
                         return '';
@@ -775,6 +887,8 @@ final class DeviceParserTest extends TestCase
 
             /**
              * @return array<string, array<string, bool|float|int>|string|null>
+             *
+             * @throws void
              */
             public function toArray(): array
             {
@@ -858,14 +972,22 @@ final class DeviceParserTest extends TestCase
         assert($mobileDevice instanceof MobileDeviceInterface);
         assert($tvDevice instanceof TvInterface);
         assert($desktopDevice instanceof DesktopInterface);
-        $object = new DeviceParser($darwinParser, $mobileParser, $tvParser, $desktopParser, $loaderFactory, $mobileDevice, $tvDevice, $desktopDevice);
+        $object = new DeviceParser(
+            $darwinParser,
+            $mobileParser,
+            $tvParser,
+            $desktopParser,
+            $loaderFactory,
+            $mobileDevice,
+            $tvDevice,
+            $desktopDevice,
+        );
         $result = $object->parse($useragent);
 
         self::assertSame($expectedResult, $result);
     }
 
     /**
-     * @throws InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws UnexpectedValueException
      */
@@ -873,105 +995,126 @@ final class DeviceParserTest extends TestCase
     {
         $useragent = 'test-device';
 
-        $expectedDevice = new class() implements DeviceInterface {
-            public function getDeviceName(): ?string
+        $expectedDevice = new class () implements DeviceInterface {
+            /** @throws void */
+            public function getDeviceName(): string | null
             {
                 return null;
             }
 
+            /** @throws void */
             public function getBrand(): CompanyInterface
             {
-                return new class() implements CompanyInterface {
+                return new class () implements CompanyInterface {
+                    /** @throws void */
                     public function getType(): string
                     {
                         return '';
                     }
 
-                    public function getName(): ?string
+                    /** @throws void */
+                    public function getName(): string | null
                     {
                         return null;
                     }
 
-                    public function getBrandName(): ?string
+                    /** @throws void */
+                    public function getBrandName(): string | null
                     {
                         return null;
                     }
                 };
             }
 
+            /** @throws void */
             public function getManufacturer(): CompanyInterface
             {
-                return new class() implements CompanyInterface {
+                return new class () implements CompanyInterface {
+                    /** @throws void */
                     public function getType(): string
                     {
                         return '';
                     }
 
-                    public function getName(): ?string
+                    /** @throws void */
+                    public function getName(): string | null
                     {
                         return null;
                     }
 
-                    public function getBrandName(): ?string
+                    /** @throws void */
+                    public function getBrandName(): string | null
                     {
                         return null;
                     }
                 };
             }
 
-            public function getMarketingName(): ?string
+            /** @throws void */
+            public function getMarketingName(): string | null
             {
                 return null;
             }
 
-            public function getDisplay(): ?DisplayInterface
+            /** @throws void */
+            public function getDisplay(): DisplayInterface | null
             {
                 return null;
             }
 
+            /** @throws void */
             public function getType(): TypeInterface
             {
-                return new class() implements TypeInterface {
+                return new class () implements TypeInterface {
+                    /** @throws void */
                     public function getType(): string
                     {
                         return '';
                     }
 
-                    public function getName(): ?string
+                    /** @throws void */
+                    public function getName(): string | null
                     {
                         return null;
                     }
 
+                    /** @throws void */
                     public function isMobile(): bool
                     {
                         return false;
                     }
 
+                    /** @throws void */
                     public function isDesktop(): bool
                     {
                         return false;
                     }
 
+                    /** @throws void */
                     public function isConsole(): bool
                     {
                         return false;
                     }
 
+                    /** @throws void */
                     public function isTv(): bool
                     {
                         return false;
                     }
 
+                    /** @throws void */
                     public function isPhone(): bool
                     {
                         return false;
                     }
 
+                    /** @throws void */
                     public function isTablet(): bool
                     {
                         return false;
                     }
 
+                    /** @throws void */
                     public function getDescription(): string
                     {
                         return '';
@@ -981,6 +1124,8 @@ final class DeviceParserTest extends TestCase
 
             /**
              * @return array<string, array<string, bool|float|int>|string|null>
+             *
+             * @throws void
              */
             public function toArray(): array
             {
@@ -1065,14 +1210,22 @@ final class DeviceParserTest extends TestCase
         assert($mobileDevice instanceof MobileDeviceInterface);
         assert($tvDevice instanceof TvInterface);
         assert($desktopDevice instanceof DesktopInterface);
-        $object = new DeviceParser($darwinParser, $mobileParser, $tvParser, $desktopParser, $loaderFactory, $mobileDevice, $tvDevice, $desktopDevice);
+        $object = new DeviceParser(
+            $darwinParser,
+            $mobileParser,
+            $tvParser,
+            $desktopParser,
+            $loaderFactory,
+            $mobileDevice,
+            $tvDevice,
+            $desktopDevice,
+        );
         $result = $object->parse($useragent);
 
         self::assertSame($expectedResult, $result);
     }
 
     /**
-     * @throws InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws UnexpectedValueException
      */
@@ -1080,105 +1233,126 @@ final class DeviceParserTest extends TestCase
     {
         $useragent = 'FreeBSD Darwin';
 
-        $expectedDevice = new class() implements DeviceInterface {
-            public function getDeviceName(): ?string
+        $expectedDevice = new class () implements DeviceInterface {
+            /** @throws void */
+            public function getDeviceName(): string | null
             {
                 return null;
             }
 
+            /** @throws void */
             public function getBrand(): CompanyInterface
             {
-                return new class() implements CompanyInterface {
+                return new class () implements CompanyInterface {
+                    /** @throws void */
                     public function getType(): string
                     {
                         return '';
                     }
 
-                    public function getName(): ?string
+                    /** @throws void */
+                    public function getName(): string | null
                     {
                         return null;
                     }
 
-                    public function getBrandName(): ?string
+                    /** @throws void */
+                    public function getBrandName(): string | null
                     {
                         return null;
                     }
                 };
             }
 
+            /** @throws void */
             public function getManufacturer(): CompanyInterface
             {
-                return new class() implements CompanyInterface {
+                return new class () implements CompanyInterface {
+                    /** @throws void */
                     public function getType(): string
                     {
                         return '';
                     }
 
-                    public function getName(): ?string
+                    /** @throws void */
+                    public function getName(): string | null
                     {
                         return null;
                     }
 
-                    public function getBrandName(): ?string
+                    /** @throws void */
+                    public function getBrandName(): string | null
                     {
                         return null;
                     }
                 };
             }
 
-            public function getMarketingName(): ?string
+            /** @throws void */
+            public function getMarketingName(): string | null
             {
                 return null;
             }
 
-            public function getDisplay(): ?DisplayInterface
+            /** @throws void */
+            public function getDisplay(): DisplayInterface | null
             {
                 return null;
             }
 
+            /** @throws void */
             public function getType(): TypeInterface
             {
-                return new class() implements TypeInterface {
+                return new class () implements TypeInterface {
+                    /** @throws void */
                     public function getType(): string
                     {
                         return '';
                     }
 
-                    public function getName(): ?string
+                    /** @throws void */
+                    public function getName(): string | null
                     {
                         return null;
                     }
 
+                    /** @throws void */
                     public function isMobile(): bool
                     {
                         return false;
                     }
 
+                    /** @throws void */
                     public function isDesktop(): bool
                     {
                         return false;
                     }
 
+                    /** @throws void */
                     public function isConsole(): bool
                     {
                         return false;
                     }
 
+                    /** @throws void */
                     public function isTv(): bool
                     {
                         return false;
                     }
 
+                    /** @throws void */
                     public function isPhone(): bool
                     {
                         return false;
                     }
 
+                    /** @throws void */
                     public function isTablet(): bool
                     {
                         return false;
                     }
 
+                    /** @throws void */
                     public function getDescription(): string
                     {
                         return '';
@@ -1188,6 +1362,8 @@ final class DeviceParserTest extends TestCase
 
             /**
              * @return array<string, array<string, bool|float|int>|string|null>
+             *
+             * @throws void
              */
             public function toArray(): array
             {
@@ -1273,14 +1449,22 @@ final class DeviceParserTest extends TestCase
         assert($mobileDevice instanceof MobileDeviceInterface);
         assert($tvDevice instanceof TvInterface);
         assert($desktopDevice instanceof DesktopInterface);
-        $object = new DeviceParser($darwinParser, $mobileParser, $tvParser, $desktopParser, $loaderFactory, $mobileDevice, $tvDevice, $desktopDevice);
+        $object = new DeviceParser(
+            $darwinParser,
+            $mobileParser,
+            $tvParser,
+            $desktopParser,
+            $loaderFactory,
+            $mobileDevice,
+            $tvDevice,
+            $desktopDevice,
+        );
         $result = $object->parse($useragent);
 
         self::assertSame($expectedResult, $result);
     }
 
     /**
-     * @throws InvalidArgumentException
      * @throws ExpectationFailedException
      * @throws UnexpectedValueException
      */
@@ -1290,105 +1474,126 @@ final class DeviceParserTest extends TestCase
         $key       = 'unknown';
         $useragent = 'test-device';
 
-        $expectedDevice = new class() implements DeviceInterface {
-            public function getDeviceName(): ?string
+        $expectedDevice = new class () implements DeviceInterface {
+            /** @throws void */
+            public function getDeviceName(): string | null
             {
                 return null;
             }
 
+            /** @throws void */
             public function getBrand(): CompanyInterface
             {
-                return new class() implements CompanyInterface {
+                return new class () implements CompanyInterface {
+                    /** @throws void */
                     public function getType(): string
                     {
                         return '';
                     }
 
-                    public function getName(): ?string
+                    /** @throws void */
+                    public function getName(): string | null
                     {
                         return null;
                     }
 
-                    public function getBrandName(): ?string
+                    /** @throws void */
+                    public function getBrandName(): string | null
                     {
                         return null;
                     }
                 };
             }
 
+            /** @throws void */
             public function getManufacturer(): CompanyInterface
             {
-                return new class() implements CompanyInterface {
+                return new class () implements CompanyInterface {
+                    /** @throws void */
                     public function getType(): string
                     {
                         return '';
                     }
 
-                    public function getName(): ?string
+                    /** @throws void */
+                    public function getName(): string | null
                     {
                         return null;
                     }
 
-                    public function getBrandName(): ?string
+                    /** @throws void */
+                    public function getBrandName(): string | null
                     {
                         return null;
                     }
                 };
             }
 
-            public function getMarketingName(): ?string
+            /** @throws void */
+            public function getMarketingName(): string | null
             {
                 return null;
             }
 
-            public function getDisplay(): ?DisplayInterface
+            /** @throws void */
+            public function getDisplay(): DisplayInterface | null
             {
                 return null;
             }
 
+            /** @throws void */
             public function getType(): TypeInterface
             {
-                return new class() implements TypeInterface {
+                return new class () implements TypeInterface {
+                    /** @throws void */
                     public function getType(): string
                     {
                         return '';
                     }
 
-                    public function getName(): ?string
+                    /** @throws void */
+                    public function getName(): string | null
                     {
                         return null;
                     }
 
+                    /** @throws void */
                     public function isMobile(): bool
                     {
                         return false;
                     }
 
+                    /** @throws void */
                     public function isDesktop(): bool
                     {
                         return false;
                     }
 
+                    /** @throws void */
                     public function isConsole(): bool
                     {
                         return false;
                     }
 
+                    /** @throws void */
                     public function isTv(): bool
                     {
                         return false;
                     }
 
+                    /** @throws void */
                     public function isPhone(): bool
                     {
                         return false;
                     }
 
+                    /** @throws void */
                     public function isTablet(): bool
                     {
                         return false;
                     }
 
+                    /** @throws void */
                     public function getDescription(): string
                     {
                         return '';
@@ -1398,6 +1603,8 @@ final class DeviceParserTest extends TestCase
 
             /**
              * @return array<string, array<string, bool|float|int>|string|null>
+             *
+             * @throws void
              */
             public function toArray(): array
             {
@@ -1485,7 +1692,16 @@ final class DeviceParserTest extends TestCase
         assert($mobileDevice instanceof MobileDeviceInterface);
         assert($tvDevice instanceof TvInterface);
         assert($desktopDevice instanceof DesktopInterface);
-        $object = new DeviceParser($darwinParser, $mobileParser, $tvParser, $desktopParser, $loaderFactory, $mobileDevice, $tvDevice, $desktopDevice);
+        $object = new DeviceParser(
+            $darwinParser,
+            $mobileParser,
+            $tvParser,
+            $desktopParser,
+            $loaderFactory,
+            $mobileDevice,
+            $tvDevice,
+            $desktopDevice,
+        );
         $result = $object->parse($useragent);
 
         self::assertSame($expectedResult, $result);

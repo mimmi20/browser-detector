@@ -2,7 +2,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2022, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2023, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -24,7 +24,7 @@ use function preg_match;
 
 final class Ios implements VersionDetectorInterface
 {
-    public const SEARCHES    = [
+    public const SEARCHES = [
         'IphoneOSX',
         'CPU OS_?',
         'CPU iOS',
@@ -39,6 +39,7 @@ final class Ios implements VersionDetectorInterface
         'iPhone\/',
         '(?<!Outlook-)iOS',
     ];
+
     private const DARWIN_MAP = [
         '/darwin\/19/i' => '13.0',
         '/darwin\/18\.7/i' => '12.4',
@@ -207,17 +208,13 @@ final class Ios implements VersionDetectorInterface
         '1603.50' => '12.1.1',
     ];
 
-    private LoggerInterface $logger;
-
-    private VersionFactoryInterface $versionFactory;
-
-    private IosBuildInterface $iosBuild;
-
-    public function __construct(LoggerInterface $logger, VersionFactoryInterface $versionFactory, IosBuildInterface $iosBuild)
-    {
-        $this->logger         = $logger;
-        $this->versionFactory = $versionFactory;
-        $this->iosBuild       = $iosBuild;
+    /** @throws void */
+    public function __construct(
+        private readonly LoggerInterface $logger,
+        private readonly VersionFactoryInterface $versionFactory,
+        private readonly IosBuildInterface $iosBuild,
+    ) {
+        // nothing to do
     }
 
     /**
@@ -248,7 +245,7 @@ final class Ios implements VersionDetectorInterface
                 $buildVersion = false;
             }
 
-            if (false !== $buildVersion) {
+            if ($buildVersion !== false) {
                 try {
                     return $this->versionFactory->set($buildVersion);
                 } catch (NotNumericException $e) {
@@ -259,7 +256,11 @@ final class Ios implements VersionDetectorInterface
             }
         }
 
-        $doMatch = preg_match('/applecoremedia\/\d+\.\d+\.\d+\.(?P<build>\d+[A-Z]\d+(?:[a-z])?)/i', $useragent, $matches);
+        $doMatch = preg_match(
+            '/applecoremedia\/\d+\.\d+\.\d+\.(?P<build>\d+[A-Z]\d+(?:[a-z])?)/i',
+            $useragent,
+            $matches,
+        );
 
         if ($doMatch) {
             try {
@@ -268,7 +269,7 @@ final class Ios implements VersionDetectorInterface
                 $buildVersion = false;
             }
 
-            if (false !== $buildVersion) {
+            if ($buildVersion !== false) {
                 try {
                     return $this->versionFactory->set($buildVersion);
                 } catch (NotNumericException $e) {
@@ -279,7 +280,7 @@ final class Ios implements VersionDetectorInterface
             }
         }
 
-        if (false !== mb_stripos($useragent, 'darwin')) {
+        if (mb_stripos($useragent, 'darwin') !== false) {
             foreach (self::DARWIN_MAP as $rule => $version) {
                 if (!preg_match($rule, $useragent)) {
                     continue;
@@ -295,7 +296,11 @@ final class Ios implements VersionDetectorInterface
             }
         }
 
-        $doMatch = preg_match('/^apple-(?:iphone|ip[ao]d)\d+[c,_]\d+\/(?P<build>[\d\.]+)$/i', $useragent, $matches);
+        $doMatch = preg_match(
+            '/^apple-(?:iphone|ip[ao]d)\d+[c,_]\d+\/(?P<build>[\d\.]+)$/i',
+            $useragent,
+            $matches,
+        );
 
         if ($doMatch && array_key_exists($matches['build'], self::BUILD_MAP)) {
             try {
@@ -307,7 +312,11 @@ final class Ios implements VersionDetectorInterface
             }
         }
 
-        $doMatch = preg_match('/ios\/\d+[\d\.]+ \((?P<build>\d+[A-Z]\d+(?:[a-z])?)\)/i', $useragent, $matches);
+        $doMatch = preg_match(
+            '/ios\/\d+[\d\.]+ \((?P<build>\d+[A-Z]\d+(?:[a-z])?)\)/i',
+            $useragent,
+            $matches,
+        );
 
         if ($doMatch) {
             try {
@@ -316,7 +325,7 @@ final class Ios implements VersionDetectorInterface
                 $buildVersion = false;
             }
 
-            if (false !== $buildVersion) {
+            if ($buildVersion !== false) {
                 try {
                     return $this->versionFactory->set($buildVersion);
                 } catch (NotNumericException $e) {
@@ -335,7 +344,7 @@ final class Ios implements VersionDetectorInterface
             return new NullVersion();
         }
 
-        if ('10.10' === $detectedVersion->getVersion(VersionInterface::IGNORE_MICRO)) {
+        if ($detectedVersion->getVersion(VersionInterface::IGNORE_MICRO) === '10.10') {
             try {
                 return $this->versionFactory->set('8.0.0');
             } catch (NotNumericException $e) {

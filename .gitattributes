@@ -5,6 +5,7 @@
 *.js             text eol=lf
 *.css            text eol=lf
 *.json           text eol=lf
+*.json5          text eol=lf
 *.lock           text eol=lf
 *.html           text eol=lf
 *.php            text eol=lf
@@ -15,25 +16,31 @@
 *.txt            text eol=lf
 *.ini            text eol=lf
 *.sh             text eol=lf
+*.stub           text eol=lf
 *.tmp            text eol=lf
-LICENSE          text eol=lf
 
 # binary files
 *.zip            -text binary
 
 # files/folders to ignore
-/.*                  export-ignore
-.editorconfig        export-ignore text eol=lf
-.gitattributes       export-ignore text eol=lf
-.gitignore           export-ignore text eol=lf
-.php-cs-fixer.php    export-ignore text eol=lf
-codecov.yml          export-ignore text eol=lf
-infection.json       export-ignore text eol=lf
-phpcs.xml            export-ignore text eol=lf
-phpmd.ruleset.xml    export-ignore text eol=lf
-phpstan.neon         export-ignore text eol=lf
-phpunit.xml          export-ignore text eol=lf
-rector.php           export-ignore text eol=lf
-/cache               export-ignore
-/tests               export-ignore
-/.github             export-ignore
+/.*                       export-ignore
+.github/CODEOWNERS        export-ignore text eol=lf
+.editorconfig             export-ignore text eol=lf
+.gitattributes            export-ignore text eol=lf
+.gitignore                export-ignore text eol=lf
+.markdown-link-check.json export-ignore text eol=lf
+.mega-linter.yml          export-ignore text eol=lf
+.php-cs-fixer.php         export-ignore text eol=lf
+.phplint.yml              export-ignore text eol=lf
+.yamllint.yml             export-ignore text eol=lf
+codecov.yml               export-ignore text eol=lf
+infection.json            export-ignore text eol=lf
+infection.json5           export-ignore text eol=lf
+phpcs.xml                 export-ignore text eol=lf
+phpmd.ruleset.xml         export-ignore text eol=lf
+phpstan.neon              export-ignore text eol=lf
+phpunit.xml               export-ignore text eol=lf
+psalm.xml                 export-ignore text eol=lf
+rector.php                export-ignore text eol=lf
+/tests                    export-ignore
+/.github                  export-ignore

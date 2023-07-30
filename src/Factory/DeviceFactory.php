@@ -2,7 +2,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2022, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2023, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -30,29 +30,21 @@ use function assert;
  */
 final class DeviceFactory
 {
-    private TypeLoaderInterface $typeLoader;
-
-    private CompanyLoaderInterface $companyLoader;
-
-    private DisplayFactoryInterface $displayFactory;
-
-    private LoggerInterface $logger;
-
+    /** @throws void */
     public function __construct(
-        CompanyLoaderInterface $companyLoader,
-        TypeLoaderInterface $typeLoader,
-        DisplayFactoryInterface $displayFactory,
-        LoggerInterface $logger
+        private readonly CompanyLoaderInterface $companyLoader,
+        private readonly TypeLoaderInterface $typeLoader,
+        private readonly DisplayFactoryInterface $displayFactory,
+        private readonly LoggerInterface $logger,
     ) {
-        $this->companyLoader  = $companyLoader;
-        $this->typeLoader     = $typeLoader;
-        $this->displayFactory = $displayFactory;
-        $this->logger         = $logger;
+        // nothing to do
     }
 
     /**
-     * @param array<string, (string|stdClass|int|null)> $data
+     * @param array<string, (int|stdClass|string|null)> $data
      * @phpstan-param array{deviceName?: (string|null), marketingName?: (string|null), manufacturer?: string, brand?: string, type?: (string|null), display?: (array{width?: (int|null), height?: (int|null), touch?: (bool|null), size?: (int|float|null)}|stdClass|null)} $data
+     *
+     * @throws void
      */
     public function fromArray(array $data, string $useragent): DeviceInterface
     {
@@ -63,10 +55,15 @@ final class DeviceFactory
         assert(array_key_exists('type', $data), '"type" property is required');
         assert(array_key_exists('display', $data), '"display" property is required');
 
-        $deviceName    = null !== $data['deviceName'] && '' !== $data['deviceName'] ? $data['deviceName'] : null;
-        $marketingName = null !== $data['marketingName'] && '' !== $data['marketingName'] ? $data['marketingName'] : null;
+        $deviceName    = $data['deviceName'] !== null && $data['deviceName'] !== ''
+            ? $data['deviceName']
+            : null;
+        $marketingName = $data['marketingName'] !== null && $data['marketingName'] !== ''
+            ? $data['marketingName']
+            : null;
 
         $type = new Unknown();
+
         try {
             $type = $this->typeLoader->load((string) $data['type']);
         } catch (\UaDeviceType\NotFoundException $e) {
@@ -78,11 +75,7 @@ final class DeviceFactory
         } catch (NotFoundException $e) {
             $this->logger->info($e);
 
-            $manufacturer = new Company(
-                'unknown',
-                null,
-                null
-            );
+            $manufacturer = new Company('unknown', null, null);
         }
 
         try {
@@ -90,15 +83,11 @@ final class DeviceFactory
         } catch (NotFoundException $e) {
             $this->logger->info($e);
 
-            $brand = new Company(
-                'unknown',
-                null,
-                null
-            );
+            $brand = new Company('unknown', null, null);
         }
 
         /**
-         * @var array<string, (int|bool|float|null)> $displayData
+         * @var array<string, (bool|float|int|null)> $displayData
          * @phpstan-var array{width?: int|null, height?: int|null, touch?: bool|null, size?: int|float|null} $displayData
          */
         $displayData = (array) $data['display'];

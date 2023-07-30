@@ -2,7 +2,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2022, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2023, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -23,41 +23,35 @@ use function sprintf;
 
 final class BrowserParser implements BrowserParserInterface
 {
-    private const GENERIC_FILE  = __DIR__ . '/../../data/factories/browsers.json';
+    private const GENERIC_FILE = __DIR__ . '/../../data/factories/browsers.json';
+
     private const SPECIFIC_FILE = __DIR__ . '/../../data/factories/browsers/%s.json';
-    private BrowserLoaderFactoryInterface $loaderFactory;
 
-    private RulefileParserInterface $fileParser;
-
+    /** @throws void */
     public function __construct(
-        BrowserLoaderFactoryInterface $loaderFactory,
-        RulefileParserInterface $fileParser
+        private readonly BrowserLoaderFactoryInterface $loaderFactory,
+        private readonly RulefileParserInterface $fileParser,
     ) {
-        $this->loaderFactory = $loaderFactory;
-        $this->fileParser    = $fileParser;
+        // nothing to do
     }
 
     /**
      * Gets the information about the browser by User Agent
      *
      * @return array<int, (BrowserInterface|EngineInterface|null)>
-     * @phpstan-return array(0: BrowserInterface, 1: EngineInterface|null)
+     * @phpstan-return array{0: BrowserInterface, 1: EngineInterface|null}
      *
      * @throws NotFoundException
      * @throws UnexpectedValueException
      */
     public function parse(string $useragent): array
     {
-        $mode = $this->fileParser->parseFile(
-            self::GENERIC_FILE,
-            $useragent,
-            'unknown'
-        );
+        $mode = $this->fileParser->parseFile(self::GENERIC_FILE, $useragent, 'unknown');
 
         $key = $this->fileParser->parseFile(
             sprintf(self::SPECIFIC_FILE, $mode),
             $useragent,
-            'unknown'
+            'unknown',
         );
 
         return $this->load($key, $useragent);
@@ -65,7 +59,7 @@ final class BrowserParser implements BrowserParserInterface
 
     /**
      * @return array<int, (BrowserInterface|EngineInterface|null)>
-     * @phpstan-return array(0: BrowserInterface, 1: EngineInterface|null)
+     * @phpstan-return array{0: BrowserInterface, 1: EngineInterface|null}
      *
      * @throws NotFoundException
      * @throws UnexpectedValueException

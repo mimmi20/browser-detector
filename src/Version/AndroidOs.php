@@ -2,7 +2,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2022, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2023, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -36,14 +36,12 @@ final class AndroidOs implements VersionDetectorInterface
         'platform:server_android,osversion:',
     ];
 
-    private LoggerInterface $logger;
-
-    private VersionFactoryInterface $versionFactory;
-
-    public function __construct(LoggerInterface $logger, VersionFactoryInterface $versionFactory)
-    {
-        $this->logger         = $logger;
-        $this->versionFactory = $versionFactory;
+    /** @throws void */
+    public function __construct(
+        private readonly LoggerInterface $logger,
+        private readonly VersionFactoryInterface $versionFactory,
+    ) {
+        // nothing to do
     }
 
     /**
@@ -53,7 +51,7 @@ final class AndroidOs implements VersionDetectorInterface
      */
     public function detectVersion(string $useragent): VersionInterface
     {
-        if (false !== mb_stripos($useragent, 'android 2.1-update1')) {
+        if (mb_stripos($useragent, 'android 2.1-update1') !== false) {
             try {
                 return $this->versionFactory->set('2.1.1');
             } catch (NotNumericException $e) {
@@ -63,7 +61,7 @@ final class AndroidOs implements VersionDetectorInterface
             }
         }
 
-        if (false !== mb_stripos($useragent, 'android m;')) {
+        if (mb_stripos($useragent, 'android m;') !== false) {
             try {
                 return $this->versionFactory->set('6.0');
             } catch (NotNumericException $e) {
@@ -91,7 +89,7 @@ final class AndroidOs implements VersionDetectorInterface
             return new NullVersion();
         }
 
-        if (null !== $detectedVersion->getVersion()) {
+        if ($detectedVersion->getVersion() !== null) {
             return $detectedVersion;
         }
 
@@ -105,7 +103,7 @@ final class AndroidOs implements VersionDetectorInterface
             return new NullVersion();
         }
 
-        if (false !== mb_stripos($useragent, 'gingerbread')) {
+        if (mb_stripos($useragent, 'gingerbread') !== false) {
             try {
                 return $this->versionFactory->set('2.3.0');
             } catch (NotNumericException $e) {
@@ -115,7 +113,7 @@ final class AndroidOs implements VersionDetectorInterface
             return new NullVersion();
         }
 
-        if (false !== mb_stripos($useragent, 'android eclair')) {
+        if (mb_stripos($useragent, 'android eclair') !== false) {
             try {
                 return $this->versionFactory->set('2.1.0');
             } catch (NotNumericException $e) {

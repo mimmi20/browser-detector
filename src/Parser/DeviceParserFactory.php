@@ -2,7 +2,7 @@
 /**
  * This file is part of the browser-detector package.
  *
- * Copyright (c) 2012-2022, Thomas Mueller <mimmi20@live.de>
+ * Copyright (c) 2012-2023, Thomas Mueller <mimmi20@live.de>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -26,28 +26,27 @@ use Psr\Log\LoggerInterface;
 
 final class DeviceParserFactory implements DeviceParserFactoryInterface
 {
-    private LoggerInterface $logger;
-
-    private CompanyLoaderInterface $companyLoader;
-
-    private PlatformParserInterface $platformParser;
-
+    /** @throws void */
     public function __construct(
-        LoggerInterface $logger,
-        CompanyLoaderInterface $companyLoader,
-        PlatformParserInterface $platformParser
+        private readonly LoggerInterface $logger,
+        private readonly CompanyLoaderInterface $companyLoader,
+        private readonly PlatformParserInterface $platformParser,
     ) {
-        $this->logger         = $logger;
-        $this->companyLoader  = $companyLoader;
-        $this->platformParser = $platformParser;
+        // nothing to do
     }
 
     /**
      * Gets the information about the rendering engine by User Agent
+     *
+     * @throws void
      */
     public function __invoke(): DeviceParserInterface
     {
-        $loaderFactory = new DeviceLoaderFactory($this->logger, $this->companyLoader, $this->platformParser);
+        $loaderFactory = new DeviceLoaderFactory(
+            $this->logger,
+            $this->companyLoader,
+            $this->platformParser,
+        );
         $fileParser    = new RulefileParser($this->logger);
         $darwinParser  = new DarwinParser($fileParser, $loaderFactory);
         $mobileParser  = new MobileParser($fileParser, $loaderFactory);
@@ -62,7 +61,7 @@ final class DeviceParserFactory implements DeviceParserFactoryInterface
             $loaderFactory,
             new MobileDevice(),
             new Tv(),
-            new Desktop()
+            new Desktop(),
         );
     }
 }
