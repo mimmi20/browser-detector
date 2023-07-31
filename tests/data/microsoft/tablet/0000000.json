@@ -454,5 +454,43 @@
       "version": "6.0.0",
       "manufacturer": "microsoft"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Microsoft Office OneNote/16.0.13328.20478 (Windows/10.0; Desktop x64; en-GB; Universal app; Microsoft Corporation/Surface Pro 4)"
+    },
+    "device": {
+      "deviceName": "Surface Pro 4",
+      "marketingName": "Surface Pro 4",
+      "manufacturer": "microsoft",
+      "brand": "microsoft",
+      "display": {
+        "width": 2736,
+        "height": 1824,
+        "touch": true,
+        "size": 12.3
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "OneNote",
+      "modus": null,
+      "version": "16.0.13328.20478",
+      "manufacturer": "microsoft",
+      "bits": 64,
+      "type": "application"
+    },
+    "os": {
+      "name": "Windows",
+      "marketingName": "Windows",
+      "version": null,
+      "manufacturer": "microsoft",
+      "bits": 64
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
   }
 ]

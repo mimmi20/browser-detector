@@ -1563,8 +1563,8 @@
     "headers": {
       "user-agent": "Opera/9.80 (BREW; Opera Mini/5.1/27.2338; U; xx) Presto/2.8.119 320X240 Pantech TXT8045",
       "x-operamini-features": "advanced, download",
-      "x-operamini-phone": "Pantech # TXT8045",
-      "x-operamini-phone-ua": "Pantech TXT8045"
+      "x-operamini-phone-ua": "Pantech TXT8045",
+      "x-operamini-phone": "Pantech # TXT8045"
     },
     "device": {
       "deviceName": null,
@@ -1604,8 +1604,8 @@
     "headers": {
       "user-agent": "Opera/9.80 (BREW; Opera Mini/6.0.0/27.2354; U; xx) Presto/2.8.119 240X320 Casio C781",
       "x-operamini-features": "advanced, download, file_system, folding",
-      "x-operamini-phone": "Casio # C781",
-      "x-operamini-phone-ua": "Casio C781"
+      "x-operamini-phone-ua": "Casio C781",
+      "x-operamini-phone": "Casio # C781"
     },
     "device": {
       "deviceName": null,
@@ -1644,10 +1644,10 @@
   {
     "headers": {
       "user-agent": "Opera/9.80 (J2ME/MIDP; Opera Mini/4.5.33867/35.3088; U; xx) Presto/2.8.119 Version/11.10",
-      "device-stock-ua": "PhilipsX2300/W1245_V12 ThreadX_OS/4.0 MOCOR/W12 Release/11.08.2012 Browser/Dorado1.0",
-      "x-operamini-features": "advanced, httpping, routing, folding, file_system",
       "x-operamini-phone": "? # ?",
-      "x-operamini-phone-ua": "PhilipsX2300/W1245_V12 ThreadX_OS/4.0 MOCOR/W12 Release/11.08.2012 Browser/Dorado1.0"
+      "x-operamini-phone-ua": "PhilipsX2300/W1245_V12 ThreadX_OS/4.0 MOCOR/W12 Release/11.08.2012 Browser/Dorado1.0",
+      "x-operamini-features": "advanced, httpping, routing, folding, file_system",
+      "device-stock-ua": "PhilipsX2300/W1245_V12 ThreadX_OS/4.0 MOCOR/W12 Release/11.08.2012 Browser/Dorado1.0"
     },
     "device": {
       "deviceName": null,
@@ -1687,9 +1687,9 @@
     "headers": {
       "user-agent": "Opera/9.80 (Windows Mobile; Opera Mini/5.1.21595/32.1214; U; xx) Presto/2.8.119 Version/11.10",
       "device-stock-ua": "Motorola",
-      "x-operamini-features": "httpping, advanced, download, file_system",
       "x-operamini-phone": "Motorola # A1000",
-      "x-operamini-phone-ua": "Motorola"
+      "x-operamini-phone-ua": "Motorola",
+      "x-operamini-features": "httpping, advanced, download, file_system"
     },
     "device": {
       "deviceName": null,

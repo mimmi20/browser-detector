@@ -159,9 +159,9 @@
   {
     "headers": {
       "user-agent": "Opera/9.80 (X11; Linux zvav; U; xx) Presto/2.8.119 Version/11.10",
-      "x-operamini-features": "httpping, advanced, routing, folding, touch, camera, file_system",
       "x-operamini-phone": "RIM # BlackBerry 8520",
-      "x-operamini-phone-ua": "BlackBerry8520/5.0.0.1036 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/613"
+      "x-operamini-phone-ua": "BlackBerry8520/5.0.0.1036 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/613",
+      "x-operamini-features": "httpping, advanced, routing, folding, touch, camera, file_system"
     },
     "device": {
       "deviceName": "BlackBerry 8520",
@@ -201,9 +201,9 @@
     "headers": {
       "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/4.4.26736/34.818; U; xx) Presto/2.8.119 Version/11.10",
       "device-stock-ua": "BlackBerry9700/5.0.0.235 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/1",
-      "x-operamini-features": "httpping, advanced, routing, folding",
       "x-operamini-phone": "BlackBerry # 9700",
-      "x-operamini-phone-ua": "BlackBerry9700/5.0.0.235 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/1"
+      "x-operamini-phone-ua": "BlackBerry9700/5.0.0.235 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/1",
+      "x-operamini-features": "httpping, advanced, routing, folding"
     },
     "device": {
       "deviceName": "BlackBerry 9700",
@@ -243,9 +243,9 @@
     "headers": {
       "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/4.6.32744/32.1214; U; xx) Presto/2.8.119 Version/11.10",
       "device-stock-ua": "BlackBerry9300",
-      "x-operamini-features": "httpping, advanced, routing, file_system, folding",
       "x-operamini-phone": "Blackberry # 9300",
-      "x-operamini-phone-ua": "BlackBerry9300"
+      "x-operamini-phone-ua": "BlackBerry9300",
+      "x-operamini-features": "httpping, advanced, routing, file_system, folding"
     },
     "device": {
       "deviceName": "BlackBerry 9300",
@@ -285,9 +285,9 @@
     "headers": {
       "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/8.0.35667/35.3781; U; xx) Presto/2.8.119 Version/11.10",
       "device-stock-ua": "BlackBerry8530/5.0.0.973 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/105",
-      "x-operamini-features": "advanced, httpping, folding, file_system, touch, camera, routing",
       "x-operamini-phone": "? # ?",
-      "x-operamini-phone-ua": "BlackBerry8530/5.0.0.973 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/105"
+      "x-operamini-phone-ua": "BlackBerry8530/5.0.0.973 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/105",
+      "x-operamini-features": "advanced, httpping, folding, file_system, touch, camera, routing"
     },
     "device": {
       "deviceName": "BlackBerry 8530",
@@ -435,6 +435,165 @@
       "name": "Presto",
       "version": "2.5.25",
       "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "UCWEB/2.0(BlackBerry; U; 5.2.0.57; en-us; 9000/5.2.0.57) U2/1.0.0 UCBrowser/8.1.0.216 U2/1.0.0 Mobile"
+    },
+    "device": {
+      "deviceName": "BlackBerry 9000",
+      "marketingName": "BlackBerry Bold 9000",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": false,
+        "size": 2.6
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "8.1.0.216",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": null,
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "U2",
+      "version": "1.0.0",
+      "manufacturer": "ucweb"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "UCWEB/2.0(BlackBerry; U; 4.2.0.424; en-us; 9630/4.2.0.424) U2/1.0.0 UCBrowser/8.1.0.216 U2/1.0.0 Mobile"
+    },
+    "device": {
+      "deviceName": "BlackBerry 9630",
+      "marketingName": "BlackBerry Tour 9630",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": 480,
+        "height": 360,
+        "touch": false,
+        "size": 2.4
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "8.1.0.216",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": null,
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "U2",
+      "version": "1.0.0",
+      "manufacturer": "ucweb"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "UCWEB/2.0(BlackBerry; U; 5.1.0.532; en-us; 9860/5.1.0.532) U2/1.0.0 UCBrowser/8.1.0.216 U2/1.0.0 Mobile"
+    },
+    "device": {
+      "deviceName": "BlackBerry 9860",
+      "marketingName": "BlackBerry Torch 9860",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 3.7
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "8.1.0.216",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": null,
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "U2",
+      "version": "1.0.0",
+      "manufacturer": "ucweb"
+    }
+  },
+  {
+    "headers": {
+      "device-stock-ua": "Mozilla/5.0 (BlackBerry; U; BlackBerry 9900; de) AppleWebKit/534.11+ (KHTML, like Gecko) Version/7.1.0.1033 Mobile Safari/534.11+",
+      "forwarded": "for=\"77.183.131.99:50060\"",
+      "save-data": "on",
+      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/8.0.35667/191.299; U; de) Presto/2.12.423 Version/12.16",
+      "x-clacks-overhead": "GNU ph",
+      "x-operamini-features": "advanced, camera, file_system, folding, httpping, pingback, routing, touch, viewport",
+      "x-operamini-phone": "BlackBerry #",
+      "x-operamini-phone-ua": "Mozilla/5.0 (BlackBerry; U; BlackBerry 9900; de) AppleWebKit/534.11+ (KHTML, like Gecko) Version/7.1.0.1033 Mobile Safari/534.11+"
+    },
+    "device": {
+      "deviceName": "BlackBerry 9900",
+      "marketingName": "BlackBerry Bold Touch 9900",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "display": {
+        "width": 640,
+        "height": 480,
+        "touch": true,
+        "size": 2.8
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Opera Mini",
+      "modus": null,
+      "version": "8.0.35667",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "7.1.0.1033",
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.11.0",
+      "manufacturer": "apple"
     }
   }
 ]

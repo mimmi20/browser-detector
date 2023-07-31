@@ -2848,5 +2848,43 @@
       "version": "40.15254.603",
       "manufacturer": "microsoft"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "UCWEB/2.0 (Windows; U; wds 10.0; en-US; Microsoft; RM-1099_1014) U2/1.0.0 UCBrowser/4.2.1.541 U2/1.0.0 Mobile"
+    },
+    "device": {
+      "deviceName": "RM-1099",
+      "marketingName": "Lumia 430",
+      "manufacturer": "microsoft",
+      "brand": "microsoft",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 4
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "4.2.1.541",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Windows Phone OS",
+      "marketingName": "Windows Phone OS",
+      "version": "10.0.0",
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "engine": {
+      "name": "U2",
+      "version": "1.0.0",
+      "manufacturer": "ucweb"
+    }
   }
 ]
