@@ -264,5 +264,43 @@
       "version": "75.0.3770.101",
       "manufacturer": "google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1; Beeline Tab Fast 2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Tab",
+      "marketingName": "Tab",
+      "manufacturer": "beeline",
+      "brand": "beeline",
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "size": 7
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "94.0.4606.71",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "94.0.4606.71",
+      "manufacturer": "google"
+    }
   }
 ]

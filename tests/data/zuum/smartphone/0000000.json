@@ -302,5 +302,271 @@
       "version": "37.0.0.0",
       "manufacturer": "google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Dalvik/1.6.0 (Linux; U; Android 4.4.2; ZUUM_E60 Build/KOT49H)"
+    },
+    "device": {
+      "deviceName": "E60",
+      "marketingName": "E60",
+      "manufacturer": "zuum",
+      "brand": "zuum",
+      "display": {
+        "width": 854,
+        "height": 480,
+        "touch": true,
+        "size": 6
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Dalvik",
+      "modus": null,
+      "version": "1.6.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Dalvik/2.1.0 (Linux; U; Android 6.0; STEDI Build/MRA58K)"
+    },
+    "device": {
+      "deviceName": "Stedi",
+      "marketingName": "Stedi",
+      "manufacturer": "zuum",
+      "brand": "zuum",
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 4
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Dalvik",
+      "modus": null,
+      "version": "2.1.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; MAGNO Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/84.0.4147.125 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Magno",
+      "marketingName": "Magno",
+      "manufacturer": "zuum",
+      "brand": "zuum",
+      "display": {
+        "width": 960,
+        "height": 540,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "84.0.4147.125",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "84.0.4147.125",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; MAGNO PLUS) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.83 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Magno",
+      "marketingName": "Magno",
+      "manufacturer": "zuum",
+      "brand": "zuum",
+      "display": {
+        "width": 960,
+        "height": 540,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "83.0.4103.83",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "83.0.4103.83",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; MAGNO C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Magno",
+      "marketingName": "Magno",
+      "manufacturer": "zuum",
+      "brand": "zuum",
+      "display": {
+        "width": 960,
+        "height": 540,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "81.0.4044.138",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.1.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "81.0.4044.138",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; MAGNO C1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.62 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Magno",
+      "marketingName": "Magno",
+      "manufacturer": "zuum",
+      "brand": "zuum",
+      "display": {
+        "width": 960,
+        "height": 540,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "93.0.4577.62",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "93.0.4577.62",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; MAGNO-S) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.85 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Magno",
+      "marketingName": "Magno",
+      "manufacturer": "zuum",
+      "brand": "zuum",
+      "display": {
+        "width": 960,
+        "height": 540,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "94.0.4606.85",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "94.0.4606.85",
+      "manufacturer": "google"
+    }
   }
 ]

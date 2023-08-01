@@ -1,7 +1,45 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; Mi 9 Lite) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Mobile Safari/537.36"
+      "user-agent": "Mozilla%2F5.0+%28Linux%3B+U%3B+Android+7.1.2%3B+de-de%3B+Redmi+4X+Build%2FN2G47H%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Version%2F4.0+Chrome%2F89.0.4389.116+Mobile+Safari%2F537.36+XiaoMi%2FMiuiBrowser%2F13.2.2-go"
+    },
+    "device": {
+      "deviceName": "Redmi 4X",
+      "marketingName": "Redmi 4X",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Miui Browser",
+      "modus": null,
+      "version": "13.2.2",
+      "manufacturer": "xiaomi",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.1.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla%2F5.0+%28Linux%3B+U%3B+Android+11%3B+de-de%3B+Mi+9+Lite+Build%2FRKQ1.200826.002%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Version%2F4.0+Chrome%2F89.0.4389.116+Mobile+Safari%2F537.36+XiaoMi%2FMiuiBrowser%2F13.10.0-gn"
     },
     "device": {
       "deviceName": "Mi 9 Lite",
@@ -17,9 +55,291 @@
       "type": "smartphone"
     },
     "browser": {
+      "name": "Miui Browser",
+      "modus": null,
+      "version": "13.10.0",
+      "manufacturer": "xiaomi",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; Mi 9T Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.134 Mobile Safari/537.36 OPR/70.3.3653.66287"
+    },
+    "device": {
+      "deviceName": "Mi 9T Pro",
+      "marketingName": "Mi 9T Pro",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.39
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "70.3.3653.66287",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla%2F5.0+%28Linux%3B+U%3B+Android+10%3B+de-de%3B+Mi+9T+Build%2FQKQ1.190825.002%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Version%2F4.0+Chrome%2F89.0.4389.116+Mobile+Safari%2F537.36+XiaoMi%2FMiuiBrowser%2F13.6.0-gn"
+    },
+    "device": {
+      "deviceName": "Mi 9T",
+      "marketingName": "Mi 9T",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 2280,
+        "height": 1080,
+        "touch": true,
+        "size": 6.39
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Miui Browser",
+      "modus": null,
+      "version": "13.6.0",
+      "manufacturer": "xiaomi",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.2; Redmi 4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.111 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Redmi 4",
+      "marketingName": "Redmi 4",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
       "name": "Chrome",
       "modus": null,
-      "version": "94.0.4606.61",
+      "version": "76.0.3809.111",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.1.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "76.0.3809.111",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "same-origin",
+      "sec-fetch-user": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; Mi MIX 2 Build/RQ3A.211001.001) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/102.0.5005.78 Mobile Safari/537.36",
+      "x-requested-with": "org.lineageos.jelly"
+    },
+    "device": {
+      "deviceName": "Mi Mix 2",
+      "marketingName": "Mi Mix 2",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 2160,
+        "height": 1080,
+        "touch": true,
+        "size": 6
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "none",
+      "sec-fetch-user": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; Mi MIX 2 Build/RQ3A.211001.001) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/102.0.5005.78 Mobile Safari/537.36",
+      "x-requested-with": "org.lineageos.jelly"
+    },
+    "device": {
+      "deviceName": "Mi Mix 2",
+      "marketingName": "Mi Mix 2",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 2160,
+        "height": 1080,
+        "touch": true,
+        "size": 6
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "same-origin",
+      "sec-fetch-user": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 11; MI 9 Build/RKQ1.200826.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/103.0.5060.71 Mobile Safari/537.36 OPR/63.0.2254.62069",
+      "x-requested-with": "com.opera.mini.native"
+    },
+    "device": {
+      "deviceName": "Mi 9",
+      "marketingName": "Mi 9",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 2280,
+        "height": 1080,
+        "touch": true,
+        "size": 6.39
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Opera",
+      "modus": null,
+      "version": null,
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; Redmi 8A Build/QKQ1.191014.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/87.0.4280.101 Mobile Safari/537.36",
+      "http-x-requested-with": "de.twokit.video.tv.cast.browser.lg"
+    },
+    "device": {
+      "deviceName": "Redmi 8",
+      "marketingName": "Redmi 8",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 1520,
+        "height": 720,
+        "touch": true,
+        "size": 6.22
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "87.0.4280.101",
       "manufacturer": "google",
       "bits": null,
       "type": "browser"
@@ -33,13 +353,545 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "94.0.4606.61",
+      "version": "87.0.4280.101",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; MI 8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Mobile Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; Redmi 4 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.111 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Redmi 4",
+      "marketingName": "Redmi 4",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "81.0.4044.111",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "81.0.4044.111",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "UCWEB/2.0 (MIDP-2.0; U; Adr 7.1.2; en-US; Redmi_4A) U2/1.0.0 UCBrowser/10.7.9.856 U2/1.0.0 Mobile"
+    },
+    "device": {
+      "deviceName": "Redmi 4A",
+      "marketingName": "Redmi 4A",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "10.7.9.856",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.1.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "U2",
+      "version": "1.0.0",
+      "manufacturer": "ucweb"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "UCWEB/2.0 (MIDP-2.0; U; Adr 7.1.2; en-US; Redmi_4X) U2/1.0.0 UCBrowser/11.1.2.1113 U2/1.0.0 Mobile"
+    },
+    "device": {
+      "deviceName": "Redmi 4X",
+      "marketingName": "Redmi 4X",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "11.1.2.1113",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.1.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "U2",
+      "version": "1.0.0",
+      "manufacturer": "ucweb"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "UCWEB/2.0 (MIDP-2.0; U; Adr 6.0.1; ru; Redmi_3X) U2/1.0.0 UCBrowser/11.1.2.1113 U2/1.0.0 Mobile"
+    },
+    "device": {
+      "deviceName": "Redmi 3X",
+      "marketingName": "Redmi 3X",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "11.1.2.1113",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "U2",
+      "version": "1.0.0",
+      "manufacturer": "ucweb"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.2; Redmi Y1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Redmi Y1",
+      "marketingName": "Redmi Y1",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "102.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.1.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; M2001J2G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "M2001J2G",
+      "marketingName": "Mi 10 5G",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.67
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "90.0.4430.93",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "90.0.4430.93",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 6.0.1; ru-ru; MI 4LTE Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/89.0.4389.116 Mobile Safari/537.36 XiaoMi/MiuiBrowser/13.6.2-go"
+    },
+    "device": {
+      "deviceName": "Mi 4 LTE",
+      "marketingName": "Mi 4 LTE",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Miui Browser",
+      "modus": null,
+      "version": "13.6.2",
+      "manufacturer": "xiaomi",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "89.0.4389.116",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; Xiaomi Redmi 8A/8A Dual) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.61 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Redmi 8",
+      "marketingName": "Redmi 8",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 1520,
+        "height": 720,
+        "touch": true,
+        "size": 6.22
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "101.0.4951.61",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "UCWEB/2.0 (MIDP-2.0; U; Adr 8.1.0; ru; Redmi_6A) U2/1.0.0 UCBrowser/9.2.0.419 U2/1.0.0 Mobile"
+    },
+    "device": {
+      "deviceName": "Redmi 6A",
+      "marketingName": "Redmi 6A",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 1440,
+        "height": 720,
+        "touch": true,
+        "size": 5.45
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "9.2.0.419",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.1.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "U2",
+      "version": "1.0.0",
+      "manufacturer": "ucweb"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "UCWEB/2.0 (MIDP-2.0; U; Adr 8.1.0; ru; Redmi_6) U2/1.0.0 UCBrowser/9.0.1.379 U2/1.0.0 Mobile"
+    },
+    "device": {
+      "deviceName": "Redmi 6",
+      "marketingName": "Redmi 6",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 1440,
+        "height": 720,
+        "touch": true,
+        "size": 5.45
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "9.0.1.379",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.1.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "U2",
+      "version": "1.0.0",
+      "manufacturer": "ucweb"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; Redmi 9T NFC) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Mi 9T",
+      "marketingName": "Mi 9T",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 2280,
+        "height": 1080,
+        "touch": true,
+        "size": 6.39
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "104.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.1; MI MAX 2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Mi Max 2",
+      "marketingName": "Mi Max 2",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 6.4
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "104.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; MI 9) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.134 Mobile Safari/537.36 OPR/70.3.3653.66287"
+    },
+    "device": {
+      "deviceName": "Mi 9",
+      "marketingName": "Mi 9",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 2280,
+        "height": 1080,
+        "touch": true,
+        "size": 6.39
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "70.3.3653.66287",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; POCOPHONE F1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Pocophone F1",
+      "marketingName": "Pocophone F1",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 2246,
+        "height": 1080,
+        "touch": true,
+        "size": 6.18
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "104.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; MI 8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.61 Mobile Safari/537.36"
     },
     "device": {
       "deviceName": "MI 8",
@@ -57,7 +909,7 @@
     "browser": {
       "name": "Chrome",
       "modus": null,
-      "version": "94.0.4606.71",
+      "version": "101.0.4951.61",
       "manufacturer": "google",
       "bits": null,
       "type": "browser"
@@ -70,14 +922,432 @@
       "bits": null
     },
     "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; MI 9 Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/103.0.5060.129 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Mi 9",
+      "marketingName": "Mi 9",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 2280,
+        "height": 1080,
+        "touch": true,
+        "size": 6.39
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "103.0.5060.129",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; MI 9 Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/104.0.5112.69 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Mi 9",
+      "marketingName": "Mi 9",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 2280,
+        "height": 1080,
+        "touch": true,
+        "size": 6.39
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "104.0.5112.69",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; MI 9) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Mi 9",
+      "marketingName": "Mi 9",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 2280,
+        "height": 1080,
+        "touch": true,
+        "size": 6.39
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "104.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; Mi 9 Lite Build/QKQ1.190828.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/104.0.5112.69 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Mi 9 Lite",
+      "marketingName": "Mi 9 Lite",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.39
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "104.0.5112.69",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 11; de-de; Redmi Note 8T Build/RKQ1.201004.002) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/89.0.4389.116 Mobile Safari/537.36 XiaoMi/MiuiBrowser/13.11.1-gn"
+    },
+    "device": {
+      "deviceName": "Redmi Note 8T",
+      "marketingName": "Redmi Note 8T",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.3
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Miui Browser",
+      "modus": null,
+      "version": "13.11.1",
+      "manufacturer": "xiaomi",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
       "name": "Blink",
-      "version": "94.0.4606.71",
+      "version": "89.0.4389.116",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; Mi A2 Lite) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.82 Mobile Safari/537.36"
+      "user-agent": "Mozilla%2F5.0+%28Linux%3B+U%3B+Android+11%3B+de-de%3B+Redmi+Note+8T+Build%2FRKQ1.201004.002%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Version%2F4.0+Chrome%2F89.0.4389.116+Mobile+Safari%2F537.36+XiaoMi%2FMiuiBrowser%2F13.11.1-gn"
+    },
+    "device": {
+      "deviceName": "Redmi Note 8T",
+      "marketingName": "Redmi Note 8T",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.3
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Miui Browser",
+      "modus": null,
+      "version": "13.11.1",
+      "manufacturer": "xiaomi",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; Mi MIX 2S Build/QKQ1.190828.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/103.0.5060.129 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Mi Mix 2S",
+      "marketingName": "Mi Mix 2S",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 2160,
+        "height": 1080,
+        "touch": true,
+        "size": 5.99
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "103.0.5060.129",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; Mi 9T Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Mi 9T Pro",
+      "marketingName": "Mi 9T Pro",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.39
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "105.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; Mi 9 SE) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Mi 9 SE",
+      "marketingName": "Mi 9 SE",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 2280,
+        "height": 1080,
+        "touch": true,
+        "size": 5.97
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "104.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 10; de-de; Redmi 8 Build/QKQ1.191014.001) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/89.0.4389.116 Mobile Safari/537.36 XiaoMi/MiuiBrowser/13.11.1-gn"
+    },
+    "device": {
+      "deviceName": "Redmi 8",
+      "marketingName": "Redmi 8",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 1520,
+        "height": 720,
+        "touch": true,
+        "size": 6.22
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Miui Browser",
+      "modus": null,
+      "version": "13.11.1",
+      "manufacturer": "xiaomi",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "89.0.4389.116",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; Mi 9 Lite) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Mi 9 Lite",
+      "marketingName": "Mi 9 Lite",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.39
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "104.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; Mi A2 Lite) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Mobile Safari/537.36"
     },
     "device": {
       "deviceName": "MI A2 Lite",
@@ -95,7 +1365,7 @@
     "browser": {
       "name": "Chrome",
       "modus": null,
-      "version": "93.0.4577.82",
+      "version": "104.0.0.0",
       "manufacturer": "google",
       "bits": null,
       "type": "browser"
@@ -108,356 +1378,14 @@
       "bits": null
     },
     "engine": {
-      "name": "Blink",
-      "version": "93.0.4577.82",
-      "manufacturer": "google"
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; POCOPHONE F1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "Pocophone F1",
-      "marketingName": "Pocophone F1",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
-      "display": {
-        "width": 2246,
-        "height": 1080,
-        "touch": true,
-        "size": 6.18
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "94.0.4606.61",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "94.0.4606.61",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 11; Mi MIX 2S) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.99 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "Mi Mix 2S",
-      "marketingName": "Mi Mix 2S",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
-      "display": {
-        "width": 2160,
-        "height": 1080,
-        "touch": true,
-        "size": 5.99
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "93.0.4577.99",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "11.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "93.0.4577.99",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 11; MI 8 Lite) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.82 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "MI 8 Lite",
-      "marketingName": "MI 8 Lite",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
-      "display": {
-        "width": 2280,
-        "height": 1080,
-        "touch": true,
-        "size": 6.26
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "93.0.4577.82",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "11.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "93.0.4577.82",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 11; Mi 9T Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "Mi 9T Pro",
-      "marketingName": "Mi 9T Pro",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
-      "display": {
-        "width": 2340,
-        "height": 1080,
-        "touch": true,
-        "size": 6.39
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "94.0.4606.61",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "11.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "94.0.4606.61",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 11; MI 9) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "Mi 9",
-      "marketingName": "Mi 9",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
-      "display": {
-        "width": 2280,
-        "height": 1080,
-        "touch": true,
-        "size": 6.39
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "94.0.4606.61",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "11.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "94.0.4606.61",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; Mi MIX 2S) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "Mi Mix 2S",
-      "marketingName": "Mi Mix 2S",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
-      "display": {
-        "width": 2160,
-        "height": 1080,
-        "touch": true,
-        "size": 5.99
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "94.0.4606.61",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "94.0.4606.61",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; Mi 9T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "Mi 9T",
-      "marketingName": "Mi 9T",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
-      "display": {
-        "width": 2280,
-        "height": 1080,
-        "touch": true,
-        "size": 6.39
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "94.0.4606.61",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "94.0.4606.61",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; Mi 9 SE) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "Mi 9 SE",
-      "marketingName": "Mi 9 SE",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
-      "display": {
-        "width": 2280,
-        "height": 1080,
-        "touch": true,
-        "size": 5.97
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "94.0.4606.61",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "94.0.4606.61",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 11; Mi 9 SE) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "Mi 9 SE",
-      "marketingName": "Mi 9 SE",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
-      "display": {
-        "width": 2280,
-        "height": 1080,
-        "touch": true,
-        "size": 5.97
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "94.0.4606.61",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "11.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "94.0.4606.61",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; Redmi 8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Mobile Safari/537.36"
+      "user-agent": "Mozilla%2F5.0+%28Linux%3B+U%3B+Android+10%3B+de-de%3B+Redmi+8+Build%2FQKQ1.191014.001%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Version%2F4.0+Chrome%2F89.0.4389.116+Mobile+Safari%2F537.36+XiaoMi%2FMiuiBrowser%2F13.11.1-gn"
     },
     "device": {
       "deviceName": "Redmi 8",
@@ -473,123 +1401,9 @@
       "type": "smartphone"
     },
     "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "94.0.4606.61",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "94.0.4606.61",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 10; de-de; Mi MIX 2S Build/QKQ1.190828.002) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/89.0.4389.116 Mobile Safari/537.36 XiaoMi/MiuiBrowser/12.13.0-gn"
-    },
-    "device": {
-      "deviceName": "Mi Mix 2S",
-      "marketingName": "Mi Mix 2S",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
-      "display": {
-        "width": 2160,
-        "height": 1080,
-        "touch": true,
-        "size": 5.99
-      },
-      "type": "smartphone"
-    },
-    "browser": {
       "name": "Miui Browser",
       "modus": null,
-      "version": "12.13.0",
-      "manufacturer": "xiaomi",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "89.0.4389.116",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 9; Redmi Note 8T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "Redmi Note 8T",
-      "marketingName": "Redmi Note 8T",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
-      "display": {
-        "width": 2340,
-        "height": 1080,
-        "touch": true,
-        "size": 6.3
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "94.0.4606.61",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "9.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "94.0.4606.61",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla%2F5.0+%28Linux%3B+U%3B+Android+10%3B+de-de%3B+Mi+MIX+2S+Build%2FQKQ1.190828.002%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Version%2F4.0+Chrome%2F89.0.4389.116+Mobile+Safari%2F537.36+XiaoMi%2FMiuiBrowser%2F12.13.0-gn"
-    },
-    "device": {
-      "deviceName": "Mi Mix 2S",
-      "marketingName": "Mi Mix 2S",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
-      "display": {
-        "width": 2160,
-        "height": 1080,
-        "touch": true,
-        "size": 5.99
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Miui Browser",
-      "modus": null,
-      "version": "12.13.0",
+      "version": "13.11.1",
       "manufacturer": "xiaomi",
       "bits": null,
       "type": "browser"
@@ -609,311 +1423,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 9; ar-eg; Redmi 8 Build/PKQ1.190319.001) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/79.0.3945.147 Mobile Safari/537.36 XiaoMi/MiuiBrowser/12.12.1-go comdirect/1.0 (appVersion:21.9.1;deviceName:nokia 8;deviceType:mobile)"
-    },
-    "device": {
-      "deviceName": "Redmi 8",
-      "marketingName": "Redmi 8",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
-      "display": {
-        "width": 1520,
-        "height": 720,
-        "touch": true,
-        "size": 6.22
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Miui Browser",
-      "modus": null,
-      "version": "12.12.1",
-      "manufacturer": "xiaomi",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "9.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "79.0.3945.147",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; MI MAX 3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Mobile Safari/537.36 comdirect/1.0 (appVersion:21.9.1;deviceName:nokia 3;deviceType:mobile)"
-    },
-    "device": {
-      "deviceName": "Mi Max 3",
-      "marketingName": "Mi Max 3",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
-      "display": {
-        "width": 2160,
-        "height": 1080,
-        "touch": true,
-        "size": 6.9
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "94.0.4606.71",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "8.1.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "94.0.4606.71",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 11; Mi A3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "Mi A3",
-      "marketingName": "Mi A3",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
-      "display": {
-        "width": 1560,
-        "height": 720,
-        "touch": true,
-        "size": 6.09
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "94.0.4606.71",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "11.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "94.0.4606.71",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; Redmi 4A) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "Redmi 4A",
-      "marketingName": "Redmi 4A",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 5
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "94.0.4606.61",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "6.0.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "94.0.4606.61",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; Redmi 7A Build/QKQ1.191014.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/93.0.4577.82 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "Redmi 7A",
-      "marketingName": "Redmi 7A",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
-      "display": {
-        "width": 1440,
-        "height": 720,
-        "touch": true,
-        "size": 5.45
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Android WebView",
-      "modus": null,
-      "version": "93.0.4577.82",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "93.0.4577.82",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; POCOPHONE F1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.181 Mobile Safari/537.36 (Ecosia android@88.0.4324.181)"
-    },
-    "device": {
-      "deviceName": "Pocophone F1",
-      "marketingName": "Pocophone F1",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
-      "display": {
-        "width": 2246,
-        "height": 1080,
-        "touch": true,
-        "size": 6.18
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Ecosia",
-      "modus": null,
-      "version": "88.0.4324.181",
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "88.0.4324.181",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 11; de-de; Mi 9 SE Build/RKQ1.200826.002) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/89.0.4389.116 Mobile Safari/537.36 XiaoMi/MiuiBrowser/12.13.0-gn"
-    },
-    "device": {
-      "deviceName": "Mi 9 SE",
-      "marketingName": "Mi 9 SE",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
-      "display": {
-        "width": 2280,
-        "height": 1080,
-        "touch": true,
-        "size": 5.97
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Miui Browser",
-      "modus": null,
-      "version": "12.13.0",
-      "manufacturer": "xiaomi",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "11.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "89.0.4389.116",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; Mi 9T Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "Mi 9T Pro",
-      "marketingName": "Mi 9T Pro",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
-      "display": {
-        "width": 2340,
-        "height": 1080,
-        "touch": true,
-        "size": 6.39
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "94.0.4606.71",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "94.0.4606.71",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 9; MI 6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Mobile Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; MI 6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Mobile Safari/537.36"
     },
     "device": {
       "deviceName": "MI 6",
@@ -931,7 +1441,7 @@
     "browser": {
       "name": "Chrome",
       "modus": null,
-      "version": "92.0.4515.131",
+      "version": "104.0.0.0",
       "manufacturer": "google",
       "bits": null,
       "type": "browser"
@@ -944,32 +1454,32 @@
       "bits": null
     },
     "engine": {
-      "name": "Blink",
-      "version": "92.0.4515.131",
-      "manufacturer": "google"
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 11; Mi 9T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Mobile Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; POCOPHONE F1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "Mi 9T",
-      "marketingName": "Mi 9T",
+      "deviceName": "Pocophone F1",
+      "marketingName": "Pocophone F1",
       "manufacturer": "xiaomi",
       "brand": "xiaomi",
       "display": {
-        "width": 2280,
+        "width": 2246,
         "height": 1080,
         "touch": true,
-        "size": 6.39
+        "size": 6.18
       },
       "type": "smartphone"
     },
     "browser": {
       "name": "Chrome",
       "modus": null,
-      "version": "94.0.4606.71",
+      "version": "105.0.0.0",
       "manufacturer": "google",
       "bits": null,
       "type": "browser"
@@ -977,37 +1487,37 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "11.0.0",
+      "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
     },
     "engine": {
-      "name": "Blink",
-      "version": "94.0.4606.71",
-      "manufacturer": "google"
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; MI 9) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Mobile Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; MI 6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "Mi 9",
-      "marketingName": "Mi 9",
+      "deviceName": "MI 6",
+      "marketingName": "MI 6",
       "manufacturer": "xiaomi",
       "brand": "xiaomi",
       "display": {
-        "width": 2280,
+        "width": 1920,
         "height": 1080,
         "touch": true,
-        "size": 6.39
+        "size": 5.15
       },
       "type": "smartphone"
     },
     "browser": {
       "name": "Chrome",
       "modus": null,
-      "version": "94.0.4606.71",
+      "version": "105.0.0.0",
       "manufacturer": "google",
       "bits": null,
       "type": "browser"
@@ -1015,95 +1525,19 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "10.0.0",
+      "version": "9.0.0",
       "manufacturer": "google",
       "bits": null
     },
     "engine": {
-      "name": "Blink",
-      "version": "94.0.4606.71",
-      "manufacturer": "google"
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 10; MI 9 Build/QKQ1.190825.002) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/10.2 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "Mi 9",
-      "marketingName": "Mi 9",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
-      "display": {
-        "width": 2280,
-        "height": 1080,
-        "touch": true,
-        "size": 6.39
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "QQ Browser",
-      "modus": null,
-      "version": "10.2.0",
-      "manufacturer": "tencent",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "66.0.3359.126",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 10; Redmi K20 Pro Premium Edition Build/QKQ1.190825.002) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.108 Quark/3.8.5.129 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "Redmi K20 Pro",
-      "marketingName": "Redmi K20 Pro",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
-      "display": {
-        "width": 2340,
-        "height": 1080,
-        "touch": true,
-        "size": 6.39
-      },
-      "type": "smartphone"
-    },
-    "browser": {
-      "name": "Android WebView",
-      "modus": null,
-      "version": "57.0.2987.108",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "57.0.2987.108",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Dalvik/2.1.0 (Linux; U; Android 9; Redmi Note 8T MIUI/V10.3.1.0.PCXEUVF)"
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; Redmi Note 8T Build/PKQ1.190616.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/104.0.5112.97 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/381.0.0.29.105;]"
     },
     "device": {
       "deviceName": "Redmi Note 8T",
@@ -1119,12 +1553,12 @@
       "type": "smartphone"
     },
     "browser": {
-      "name": "Miui Browser",
+      "name": "Facebook App",
       "modus": null,
-      "version": "10.3.1.0",
-      "manufacturer": "xiaomi",
+      "version": "381.0.0.29.105",
+      "manufacturer": "facebook",
       "bits": null,
-      "type": "browser"
+      "type": "application"
     },
     "os": {
       "name": "Android",
@@ -1135,32 +1569,146 @@
     },
     "engine": {
       "name": "WebKit",
-      "version": null,
+      "version": "537.36.0",
       "manufacturer": "apple"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla%2F5.0+%28Linux%3B+U%3B+Android+11%3B+de-de%3B+Mi+9+SE+Build%2FRKQ1.200826.002%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Version%2F4.0+Chrome%2F89.0.4389.116+Mobile+Safari%2F537.36+XiaoMi%2FMiuiBrowser%2F12.13.0-gn"
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; POCOPHONE F1 Build/QKQ1.190828.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/104.0.5112.97 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "Mi 9 SE",
-      "marketingName": "Mi 9 SE",
+      "deviceName": "Pocophone F1",
+      "marketingName": "Pocophone F1",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 2246,
+        "height": 1080,
+        "touch": true,
+        "size": 6.18
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "104.0.5112.97",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; MI 8 Pro Build/QKQ1.190828.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/104.0.5112.97 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "MI 8 Pro",
+      "marketingName": "MI 8 Pro",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 2248,
+        "height": 1080,
+        "touch": true,
+        "size": 6.21
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "104.0.5112.97",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; MI 8 Lite) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "MI 8 Lite",
+      "marketingName": "MI 8 Lite",
       "manufacturer": "xiaomi",
       "brand": "xiaomi",
       "display": {
         "width": 2280,
         "height": 1080,
         "touch": true,
-        "size": 5.97
+        "size": 6.26
       },
       "type": "smartphone"
     },
     "browser": {
-      "name": "Miui Browser",
+      "name": "Chrome",
       "modus": null,
-      "version": "12.13.0",
+      "version": "104.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; Redmi Note 8T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Redmi Note 8T",
+      "marketingName": "Redmi Note 8T",
       "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.3
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "104.0.0.0",
+      "manufacturer": "google",
       "bits": null,
       "type": "browser"
     },
@@ -1179,7 +1727,121 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 9; Redmi 8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Mobile Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; MI 8 Lite Build/QKQ1.190910.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/104.0.5112.97 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "MI 8 Lite",
+      "marketingName": "MI 8 Lite",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 2280,
+        "height": 1080,
+        "touch": true,
+        "size": 6.26
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "104.0.5112.97",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; Mi 9T Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Mi 9T Pro",
+      "marketingName": "Mi 9T Pro",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.39
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "104.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; Mi 9 Lite) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Mi 9 Lite",
+      "marketingName": "Mi 9 Lite",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.39
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "104.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; Redmi 8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Mobile Safari/537.36"
     },
     "device": {
       "deviceName": "Redmi 8",
@@ -1197,7 +1859,83 @@
     "browser": {
       "name": "Chrome",
       "modus": null,
-      "version": "94.0.4606.71",
+      "version": "104.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; Redmi Note 8T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Redmi Note 8T",
+      "marketingName": "Redmi Note 8T",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.3
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "104.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; Redmi Note 8T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Redmi Note 8T",
+      "marketingName": "Redmi Note 8T",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.3
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "104.0.0.0",
       "manufacturer": "google",
       "bits": null,
       "type": "browser"
@@ -1210,18 +1948,208 @@
       "bits": null
     },
     "engine": {
-      "name": "Blink",
-      "version": "94.0.4606.71",
-      "manufacturer": "google"
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 9; Mi MIX 3 5G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.85 Mobile Safari/537.36 comdirect/1.0 (appVersion:21.10.0;deviceName:nokia 3;deviceType:mobile)"
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; Redmi Note 8T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "Mi Mix 3",
-      "marketingName": "Mi Mix 3",
+      "deviceName": "Redmi Note 8T",
+      "marketingName": "Redmi Note 8T",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.3
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "105.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; Mi A3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Mi A3",
+      "marketingName": "Mi A3",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 1560,
+        "height": 720,
+        "touch": true,
+        "size": 6.09
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "104.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; MI 9) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Mi 9",
+      "marketingName": "Mi 9",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 2280,
+        "height": 1080,
+        "touch": true,
+        "size": 6.39
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "104.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; Mi 9 SE) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Mi 9 SE",
+      "marketingName": "Mi 9 SE",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 2280,
+        "height": 1080,
+        "touch": true,
+        "size": 5.97
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "103.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; Mi A2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Mi A2",
+      "marketingName": "Mi A2",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 2160,
+        "height": 1080,
+        "touch": true,
+        "size": 5.99
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "104.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; Mi 9T Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.41 Mobile Safari/537.36 (Ecosia android@101.0.4951.41)"
+    },
+    "device": {
+      "deviceName": "Mi 9T Pro",
+      "marketingName": "Mi 9T Pro",
       "manufacturer": "xiaomi",
       "brand": "xiaomi",
       "display": {
@@ -1233,29 +2161,29 @@
       "type": "smartphone"
     },
     "browser": {
-      "name": "Chrome",
+      "name": "Ecosia",
       "modus": null,
-      "version": "94.0.4606.85",
-      "manufacturer": "google",
+      "version": "101.0.4951.41",
+      "manufacturer": "unknown",
       "bits": null,
       "type": "browser"
     },
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "9.0.0",
+      "version": "11.0.0",
       "manufacturer": "google",
       "bits": null
     },
     "engine": {
       "name": "Blink",
-      "version": "94.0.4606.85",
+      "version": "101.0.4951.41",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 9; Mi A1 Build/PKQ1.180917.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.108 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/249.0.0.47.118;] comdirect/1.0 (appVersion:21.10.0;deviceType:mobile)"
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; Mi A1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Mobile Safari/537.36"
     },
     "device": {
       "deviceName": "MI A1",
@@ -1271,12 +2199,88 @@
       "type": "smartphone"
     },
     "browser": {
-      "name": "Facebook App",
+      "name": "Chrome",
       "modus": null,
-      "version": "249.0.0.47.118",
-      "manufacturer": "facebook",
+      "version": "104.0.0.0",
+      "manufacturer": "google",
       "bits": null,
-      "type": "application"
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; Redmi 8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Redmi 8",
+      "marketingName": "Redmi 8",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 1520,
+        "height": 720,
+        "touch": true,
+        "size": 6.22
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "105.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 9; de-de; Redmi 6A Build/PPR1.180610.011) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/89.0.4389.116 Mobile Safari/537.36 XiaoMi/MiuiBrowser/13.6.2-go"
+    },
+    "device": {
+      "deviceName": "Redmi 6A",
+      "marketingName": "Redmi 6A",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 1440,
+        "height": 720,
+        "touch": true,
+        "size": 5.45
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Miui Browser",
+      "modus": null,
+      "version": "13.6.2",
+      "manufacturer": "xiaomi",
+      "bits": null,
+      "type": "browser"
     },
     "os": {
       "name": "Android",
@@ -1287,13 +2291,13 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "78.0.3904.108",
+      "version": "89.0.4389.116",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.2; Redmi 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.85 Mobile Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; Redmi 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Mobile Safari/537.36"
     },
     "device": {
       "deviceName": "Redmi 5",
@@ -1311,7 +2315,83 @@
     "browser": {
       "name": "Chrome",
       "modus": null,
-      "version": "94.0.4606.85",
+      "version": "104.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.1.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; Redmi 6A) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Redmi 6A",
+      "marketingName": "Redmi 6A",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 1440,
+        "height": 720,
+        "touch": true,
+        "size": 5.45
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "104.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.2; Redmi 4X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Redmi 4X",
+      "marketingName": "Redmi 4X",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "104.0.0.0",
       "manufacturer": "google",
       "bits": null,
       "type": "browser"
@@ -1324,33 +2404,261 @@
       "bits": null
     },
     "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; Redmi Note 8T) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/18.0 Chrome/99.0.4844.88 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Redmi Note 8T",
+      "marketingName": "Redmi Note 8T",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.3
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Samsung Browser",
+      "modus": null,
+      "version": "18.0.0",
+      "manufacturer": "samsung",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
       "name": "Blink",
-      "version": "94.0.4606.85",
+      "version": "99.0.4844.88",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 10; de-de; MI 8 Lite Build/QKQ1.190910.002) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/89.0.4389.116 Mobile Safari/537.36 XiaoMi/MiuiBrowser/12.13.2-gn"
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; Mi 9 SE) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "MI 8 Lite",
-      "marketingName": "MI 8 Lite",
+      "deviceName": "Mi 9 SE",
+      "marketingName": "Mi 9 SE",
       "manufacturer": "xiaomi",
       "brand": "xiaomi",
       "display": {
         "width": 2280,
         "height": 1080,
         "touch": true,
+        "size": 5.97
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "105.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; Mi 9 Lite) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Mi 9 Lite",
+      "marketingName": "Mi 9 Lite",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.39
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "105.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; MI 6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "MI 6",
+      "marketingName": "MI 6",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.15
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "103.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; Mi A3) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/17.0 Chrome/96.0.4664.104 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Mi A3",
+      "marketingName": "Mi A3",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 1560,
+        "height": 720,
+        "touch": true,
+        "size": 6.09
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Samsung Browser",
+      "modus": null,
+      "version": "17.0.0",
+      "manufacturer": "samsung",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "96.0.4664.104",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; MI 6) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/18.0 Chrome/99.0.4844.88 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "MI 6",
+      "marketingName": "MI 6",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.15
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Samsung Browser",
+      "modus": null,
+      "version": "18.0.0",
+      "manufacturer": "samsung",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "99.0.4844.88",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; Redmi 7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Redmi 7",
+      "marketingName": "Redmi 7",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 1520,
+        "height": 720,
+        "touch": true,
         "size": 6.26
       },
       "type": "smartphone"
     },
     "browser": {
-      "name": "Miui Browser",
+      "name": "Chrome",
       "modus": null,
-      "version": "12.13.2",
-      "manufacturer": "xiaomi",
+      "version": "104.0.0.0",
+      "manufacturer": "google",
       "bits": null,
       "type": "browser"
     },
@@ -1362,14 +2670,14 @@
       "bits": null
     },
     "engine": {
-      "name": "Blink",
-      "version": "89.0.4389.116",
-      "manufacturer": "google"
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 11; Mi 9T Build/RQ3A.211001.001) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Mobile Safari/537.36 OPT/2.9"
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; Mi 9T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Mobile Safari/537.36"
     },
     "device": {
       "deviceName": "Mi 9T",
@@ -1385,50 +2693,202 @@
       "type": "smartphone"
     },
     "browser": {
-      "name": "Opera Touch",
+      "name": "Chrome",
       "modus": null,
-      "version": "2.9.0",
-      "manufacturer": "opera",
+      "version": "104.0.0.0",
+      "manufacturer": "google",
       "bits": null,
       "type": "browser"
     },
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "11.0.0",
+      "version": "9.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; Redmi 5) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/15.0 Chrome/90.0.4430.210 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Redmi 5",
+      "marketingName": "Redmi 5",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 1440,
+        "height": 720,
+        "touch": true,
+        "size": 5.7
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Samsung Browser",
+      "modus": null,
+      "version": "15.0.0",
+      "manufacturer": "samsung",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.1.0",
       "manufacturer": "google",
       "bits": null
     },
     "engine": {
       "name": "Blink",
-      "version": "94.0.4606.71",
+      "version": "90.0.4430.210",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 10; MI 9 Build/QKQ1.190825.002) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.108 UCBrowser/13.0.0.1080 Mobile Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; Redmi 6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "Mi 9",
-      "marketingName": "Mi 9",
+      "deviceName": "Redmi 6",
+      "marketingName": "Redmi 6",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 1440,
+        "height": 720,
+        "touch": true,
+        "size": 5.45
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "104.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; Mi A1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.129 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "MI A1",
+      "marketingName": "MI A1",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "103.0.5060.129",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; Mi MIX 2S) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Mi Mix 2S",
+      "marketingName": "Mi Mix 2S",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 2160,
+        "height": 1080,
+        "touch": true,
+        "size": 5.99
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "104.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; Mi A2 Lite) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.41 Mobile Safari/537.36 (Ecosia android@101.0.4951.41)"
+    },
+    "device": {
+      "deviceName": "MI A2 Lite",
+      "marketingName": "MI A2 Lite",
       "manufacturer": "xiaomi",
       "brand": "xiaomi",
       "display": {
         "width": 2280,
         "height": 1080,
         "touch": true,
-        "size": 6.39
+        "size": 5.8
       },
       "type": "smartphone"
     },
     "browser": {
-      "name": "UC Browser",
+      "name": "Ecosia",
       "modus": null,
-      "version": "13.0.0.1080",
-      "manufacturer": "ucweb",
+      "version": "101.0.4951.41",
+      "manufacturer": "unknown",
       "bits": null,
-      "type": "transcoder"
+      "type": "browser"
     },
     "os": {
       "name": "Android",
@@ -1439,17 +2899,17 @@
     },
     "engine": {
       "name": "Blink",
-      "version": "78.0.3904.108",
+      "version": "101.0.4951.41",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; Redmi 5 Plus) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.85 Mobile Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; Mi MIX 2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "Redmi 5 Plus",
-      "marketingName": "Redmi 5 Plus",
+      "deviceName": "Mi Mix 2",
+      "marketingName": "Mi Mix 2",
       "manufacturer": "xiaomi",
       "brand": "xiaomi",
       "display": {
@@ -1463,7 +2923,7 @@
     "browser": {
       "name": "Chrome",
       "modus": null,
-      "version": "94.0.4606.85",
+      "version": "104.0.0.0",
       "manufacturer": "google",
       "bits": null,
       "type": "browser"
@@ -1471,23 +2931,61 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "8.1.0",
+      "version": "9.0.0",
       "manufacturer": "google",
       "bits": null
     },
     "engine": {
-      "name": "Blink",
-      "version": "94.0.4606.85",
-      "manufacturer": "google"
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; Redmi 3S) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.62 Mobile Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; Mi 9T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Mobile Safari/537.36"
     },
     "device": {
-      "deviceName": "Redmi 3S",
-      "marketingName": "Redmi 3S",
+      "deviceName": "Mi 9T",
+      "marketingName": "Mi 9T",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 2280,
+        "height": 1080,
+        "touch": true,
+        "size": 6.39
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "104.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; Redmi Go Build/OPM1.171019.026) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.129 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Redmi Go",
+      "marketingName": "Redmi Go",
       "manufacturer": "xiaomi",
       "brand": "xiaomi",
       "display": {
@@ -1501,7 +2999,7 @@
     "browser": {
       "name": "Chrome",
       "modus": null,
-      "version": "93.0.4577.62",
+      "version": "103.0.5060.129",
       "manufacturer": "google",
       "bits": null,
       "type": "browser"
@@ -1509,19 +3007,589 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "6.0.1",
+      "version": "8.1.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; Mi 9T Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Mi 9T Pro",
+      "marketingName": "Mi 9T Pro",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.39
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "102.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; Redmi 7A) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Redmi 7A",
+      "marketingName": "Redmi 7A",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 1440,
+        "height": 720,
+        "touch": true,
+        "size": 5.45
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "104.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla%2F5.0+%28Linux%3B+U%3B+Android+9%3B+de-de%3B+Redmi+6A+Build%2FPPR1.180610.011%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Version%2F4.0+Chrome%2F89.0.4389.116+Mobile+Safari%2F537.36+XiaoMi%2FMiuiBrowser%2F13.6.2-go"
+    },
+    "device": {
+      "deviceName": "Redmi 6A",
+      "marketingName": "Redmi 6A",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 1440,
+        "height": 720,
+        "touch": true,
+        "size": 5.45
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Miui Browser",
+      "modus": null,
+      "version": "13.6.2",
+      "manufacturer": "xiaomi",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; Redmi 8 Series) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.58 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Redmi 8",
+      "marketingName": "Redmi 8",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 1520,
+        "height": 720,
+        "touch": true,
+        "size": 6.22
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "99.0.4844.58",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
       "manufacturer": "google",
       "bits": null
     },
     "engine": {
       "name": "Blink",
-      "version": "93.0.4577.62",
+      "version": "99.0.4844.58",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla%2F5.0+%28Linux%3B+U%3B+Android+10%3B+de-de%3B+MI+8+Lite+Build%2FQKQ1.190910.002%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Version%2F4.0+Chrome%2F89.0.4389.116+Mobile+Safari%2F537.36+XiaoMi%2FMiuiBrowser%2F12.13.2-gn"
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; Redmi 9T, Note 9 4G, 9 Power) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.87 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Mi 9T",
+      "marketingName": "Mi 9T",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 2280,
+        "height": 1080,
+        "touch": true,
+        "size": 6.39
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "97.0.4692.87",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "97.0.4692.87",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; Mi 9T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Mi 9T",
+      "marketingName": "Mi 9T",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 2280,
+        "height": 1080,
+        "touch": true,
+        "size": 6.39
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "106.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; Redmi Note 8T Build/RKQ1.201004.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Redmi Note 8T",
+      "marketingName": "Redmi Note 8T",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.3
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "105.0.5195.136",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; MIX 3 The Palace Museum Edition) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Mi Mix 3",
+      "marketingName": "Mi Mix 3",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.39
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "106.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; Mi A2 Lite) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "MI A2 Lite",
+      "marketingName": "MI A2 Lite",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 2280,
+        "height": 1080,
+        "touch": true,
+        "size": 5.8
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "106.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; Redmi 7 Build/QKQ1.191008.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Redmi 7",
+      "marketingName": "Redmi 7",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 1520,
+        "height": 720,
+        "touch": true,
+        "size": 6.26
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "105.0.5195.136",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 8.1.0; de-de; Redmi 5 Build/OPM1.171019.026) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/89.0.4389.116 Mobile Safari/537.36 XiaoMi/MiuiBrowser/13.6.2-go"
+    },
+    "device": {
+      "deviceName": "Redmi 5",
+      "marketingName": "Redmi 5",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 1440,
+        "height": 720,
+        "touch": true,
+        "size": 5.7
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Miui Browser",
+      "modus": null,
+      "version": "13.6.2",
+      "manufacturer": "xiaomi",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.1.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "89.0.4389.116",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla%2F5.0+%28Linux%3B+U%3B+Android+8.1.0%3B+de-de%3B+Redmi+5+Build%2FOPM1.171019.026%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Version%2F4.0+Chrome%2F89.0.4389.116+Mobile+Safari%2F537.36+XiaoMi%2FMiuiBrowser%2F13.6.2-go"
+    },
+    "device": {
+      "deviceName": "Redmi 5",
+      "marketingName": "Redmi 5",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 1440,
+        "height": 720,
+        "touch": true,
+        "size": 5.7
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Miui Browser",
+      "modus": null,
+      "version": "13.6.2",
+      "manufacturer": "xiaomi",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.1.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; Mi 9T Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.97 Mobile Safari/537.36 OPR/71.3.3718.67322"
+    },
+    "device": {
+      "deviceName": "Mi 9T Pro",
+      "marketingName": "Mi 9T Pro",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.39
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "71.3.3718.67322",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; Mi A1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "MI A1",
+      "marketingName": "MI A1",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "105.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; Mi 9T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Mi 9T",
+      "marketingName": "Mi 9T",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 2280,
+        "height": 1080,
+        "touch": true,
+        "size": 6.39
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "105.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; MI 8 Lite) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Mobile Safari/537.36"
     },
     "device": {
       "deviceName": "MI 8 Lite",
@@ -1537,10 +3605,200 @@
       "type": "smartphone"
     },
     "browser": {
-      "name": "Miui Browser",
+      "name": "Chrome",
       "modus": null,
-      "version": "12.13.2",
+      "version": "105.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; Mi 9T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Mi 9T",
+      "marketingName": "Mi 9T",
       "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 2280,
+        "height": 1080,
+        "touch": true,
+        "size": 6.39
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "105.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; MI 9) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Mi 9",
+      "marketingName": "Mi 9",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 2280,
+        "height": 1080,
+        "touch": true,
+        "size": 6.39
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "105.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; POCOPHONE F1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.41 Mobile Safari/537.36 (Ecosia android@101.0.4951.41)"
+    },
+    "device": {
+      "deviceName": "Pocophone F1",
+      "marketingName": "Pocophone F1",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 2246,
+        "height": 1080,
+        "touch": true,
+        "size": 6.18
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Ecosia",
+      "modus": null,
+      "version": "101.0.4951.41",
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "101.0.4951.41",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; MI 9 Build/RKQ1.200826.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Mi 9",
+      "marketingName": "Mi 9",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 2280,
+        "height": 1080,
+        "touch": true,
+        "size": 6.39
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "105.0.5195.136",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; Mi MIX 2S) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Mi Mix 2S",
+      "marketingName": "Mi Mix 2S",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "display": {
+        "width": 2160,
+        "height": 1080,
+        "touch": true,
+        "size": 5.99
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "105.0.0.0",
+      "manufacturer": "google",
       "bits": null,
       "type": "browser"
     },

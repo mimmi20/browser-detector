@@ -264,5 +264,43 @@
       "version": null,
       "manufacturer": "access"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; PS20J) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Playstation 2",
+      "marketingName": "Playstation 2",
+      "manufacturer": "sony",
+      "brand": "sony",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv-console"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "110.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "CellOS",
+      "marketingName": "CellOS",
+      "version": null,
+      "manufacturer": "sony",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
   }
 ]

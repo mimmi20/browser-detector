@@ -226,5 +226,81 @@
       "version": "30.0.0.0",
       "manufacturer": "google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.4; reeder_A8i_Quad) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.96 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "A8i",
+      "marketingName": "A8i",
+      "manufacturer": "reeder",
+      "brand": "reeder",
+      "display": {
+        "width": 1024,
+        "height": 768,
+        "touch": true,
+        "size": 7.85
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "78.0.3904.96",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.4",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "78.0.3904.96",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; reeder A8i Q2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.92 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "A8i",
+      "marketingName": "A8i",
+      "manufacturer": "reeder",
+      "brand": "reeder",
+      "display": {
+        "width": 1024,
+        "height": 768,
+        "touch": true,
+        "size": 7.85
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "77.0.3865.92",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "77.0.3865.92",
+      "manufacturer": "google"
+    }
   }
 ]

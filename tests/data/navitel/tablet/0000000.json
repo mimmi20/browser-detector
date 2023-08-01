@@ -36,5 +36,43 @@
       "version": "30.0.0.0",
       "manufacturer": "google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; NAVITEL A730) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.99 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "A730",
+      "marketingName": "A730",
+      "manufacturer": "navitel",
+      "brand": "navitel",
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "size": 7
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "71.0.3578.99",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "71.0.3578.99",
+      "manufacturer": "google"
+    }
   }
 ]

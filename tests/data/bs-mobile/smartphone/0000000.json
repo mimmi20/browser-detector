@@ -36,5 +36,81 @@
       "version": "534.30.0",
       "manufacturer": "apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1; RUNE II) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.62 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Rune",
+      "marketingName": "Rune",
+      "manufacturer": "bs-mobile",
+      "brand": "bs-mobile",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "78.0.3904.62",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "78.0.3904.62",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1; RUNE III) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.136 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Rune",
+      "marketingName": "Rune",
+      "manufacturer": "bs-mobile",
+      "brand": "bs-mobile",
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "79.0.3945.136",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "79.0.3945.136",
+      "manufacturer": "google"
+    }
   }
 ]

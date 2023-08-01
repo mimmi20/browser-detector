@@ -682,5 +682,43 @@
       "version": "61.0.3163.98",
       "manufacturer": "google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1; AIRIS TM50QZ) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.105 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "TM50QZ",
+      "marketingName": "TM50QZ",
+      "manufacturer": "airis",
+      "brand": "airis",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "89.0.4389.105",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "89.0.4389.105",
+      "manufacturer": "google"
+    }
   }
 ]

@@ -340,5 +340,43 @@
       "version": "534.30.0",
       "manufacturer": "apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; EA1002) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.101 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "A1002",
+      "marketingName": "A1002",
+      "manufacturer": "lexand",
+      "brand": "lexand",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": null
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "98.0.4758.101",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "98.0.4758.101",
+      "manufacturer": "google"
+    }
   }
 ]

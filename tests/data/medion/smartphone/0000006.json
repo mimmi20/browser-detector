@@ -1,7 +1,259 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; MEDION B5530 Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.98 Mobile Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; B5532) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "B5532",
+      "marketingName": "B5532",
+      "manufacturer": "medion",
+      "brand": "medion",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "96.0.4664.45",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "96.0.4664.45",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1; MEDION P5004) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.89 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Life P5004",
+      "marketingName": "Life P5004",
+      "manufacturer": "medion",
+      "brand": "medion",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "76.0.3809.89",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "76.0.3809.89",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1; MEDION P5005) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.89 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Life P5005",
+      "marketingName": "Life P5005",
+      "manufacturer": "medion",
+      "brand": "medion",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "76.0.3809.89",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "76.0.3809.89",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1; MEDION X6001) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.136 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Life X6001",
+      "marketingName": "Life X6001",
+      "manufacturer": "medion",
+      "brand": "medion",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 6
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "79.0.3945.136",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "79.0.3945.136",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "4",
+      "dpr": "3.375",
+      "viewport-width": "980",
+      "rtt": "100",
+      "downlink": "7.95",
+      "ect": "4g",
+      "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"98\", \"Google Chrome\";v=\"98\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"7.0.0\"",
+      "sec-ch-ua-model": "\"B5532\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version-list": "\" Not A;Brand\";v=\"99.0.0.0\", \"Chromium\";v=\"98.0.4758.101\", \"Google Chrome\";v=\"98.0.4758.101\"",
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; B5532) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.101 Mobile Safari/537.36",
+      "sec-fetch-site": "none",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-dest": "document"
+    },
+    "device": {
+      "deviceName": "B5532",
+      "marketingName": "B5532",
+      "manufacturer": "medion",
+      "brand": "medion",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "98.0.4758.101",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "98.0.4758.101",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua": "\"Google Chrome\";v=\"89\", \"Chromium\";v=\"89\", \";Not A Brand\";v=\"99\"",
+      "sec-ch-ua-mobile": "?1",
+      "save-data": "on",
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; MEDION S5004) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.105 Mobile Safari/537.36",
+      "sec-fetch-site": "cross-site",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-user": "?1",
+      "sec-fetch-dest": "document"
+    },
+    "device": {
+      "deviceName": "Life S5004",
+      "marketingName": "Life S5004",
+      "manufacturer": "medion",
+      "brand": "medion",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "89.0.4389.105",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "89.0.4389.105",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; MEDION B5530) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Mobile Safari/537.36"
     },
     "device": {
       "deviceName": "B5530",
@@ -19,7 +271,7 @@
     "browser": {
       "name": "Chrome",
       "modus": null,
-      "version": "52.0.2743.98",
+      "version": "106.0.0.0",
       "manufacturer": "google",
       "bits": null,
       "type": "browser"
@@ -32,8 +284,84 @@
       "bits": null
     },
     "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1; MEDION E4504) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.74 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Life E4504",
+      "marketingName": "Life E4504",
+      "manufacturer": "medion",
+      "brand": "medion",
+      "display": {
+        "width": 854,
+        "height": 480,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "95.0.4638.74",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
       "name": "Blink",
-      "version": "52.0.2743.98",
+      "version": "95.0.4638.74",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1; MEDION E5020) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.74 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "E5020",
+      "marketingName": "Life E5020",
+      "manufacturer": "medion",
+      "brand": "medion",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "95.0.4638.74",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "95.0.4638.74",
       "manufacturer": "google"
     }
   }

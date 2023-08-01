@@ -1675,9 +1675,9 @@
   {
     "headers": {
       "user-agent": "UNTRUSTED/1.0/HS-T39_TD/1.0 Release/03.03.2011 Threadx/4.0 Mocor/W10 Browser/NF4.0 Profile/MIDP-2.0 Config/CLDC-1.1",
-      "x-ucbrowser-device": "Jblend",
+      "x-ucbrowser-ua": "pf(Java);la(en-US);re(U2/1.0.0);dv(Jblend);pr(UCBrowser/9.4.1.377);ov(MIDP-2.0);pi(240*320);ss(240*320);up(U2/1.0.0);er(U);bt(GJ);pm(1);bv(0);nm(0);im(0);sr(0);nt(99);",
       "x-ucbrowser-device-ua": "?",
-      "x-ucbrowser-ua": "pf(Java);la(en-US);re(U2/1.0.0);dv(Jblend);pr(UCBrowser/9.4.1.377);ov(MIDP-2.0);pi(240*320);ss(240*320);up(U2/1.0.0);er(U);bt(GJ);pm(1);bv(0);nm(0);im(0);sr(0);nt(99);"
+      "x-ucbrowser-device": "Jblend"
     },
     "device": {
       "deviceName": "general Mobile device",
@@ -1795,9 +1795,9 @@
     "headers": {
       "user-agent": "Opera/9.80 (Bada; Opera Mini/6.5/31.1395; U; xx) Presto/2.8.119 Version/11.10",
       "device-stock-ua": "Mozilla/5.0 (Bada 2.0.0)",
-      "x-operamini-features": "advanced, routing, viewport, touch, file_system, download",
       "x-operamini-phone": "? # ?",
-      "x-operamini-phone-ua": "Mozilla/5.0 (Bada 2.0.0)"
+      "x-operamini-phone-ua": "Mozilla/5.0 (Bada 2.0.0)",
+      "x-operamini-features": "advanced, routing, viewport, touch, file_system, download"
     },
     "device": {
       "deviceName": "general Mobile device",
@@ -1838,8 +1838,8 @@
       "user-agent": "Opera/9.80 (BREW; Opera Mini/4.2.99/34.1244; U; xx) Presto/2.8.119 Version/11.10",
       "device-stock-ua": "NativeOperaMini(Haier;Native Opera Mini/4.2.99;id;BREW 3.1.5)",
       "x-operamini-features": "httpping, advanced, download, file_system, folding",
-      "x-operamini-phone": "? # ?",
-      "x-operamini-phone-ua": "NativeOperaMini(Haier;Native Opera Mini/4.2.99;id;BREW 3.1.5)"
+      "x-operamini-phone-ua": "NativeOperaMini(Haier;Native Opera Mini/4.2.99;id;BREW 3.1.5)",
+      "x-operamini-phone": "? # ?"
     },
     "device": {
       "deviceName": "general Mobile device",
@@ -1918,9 +1918,9 @@
     "headers": {
       "user-agent": "Opera/9.80 (MAUI Runtime; Opera Mini/4.4.31223/31.1448; U; xx) Presto/2.8.119 Version/11.10",
       "device-stock-ua": "OperaMini(MAUI_MRE;Opera Mini/4.4.31223;en)",
-      "x-operamini-features": "advanced, routing, download, file_system, folding",
+      "x-operamini-phone-ua": "OperaMini(MAUI_MRE;Opera Mini/4.4.31223;en)",
       "x-operamini-phone": "? # ?",
-      "x-operamini-phone-ua": "OperaMini(MAUI_MRE;Opera Mini/4.4.31223;en)"
+      "x-operamini-features": "advanced, routing, download, file_system, folding"
     },
     "device": {
       "deviceName": "general Mobile device",
@@ -1959,10 +1959,10 @@
   {
     "headers": {
       "user-agent": "Opera/9.80 (MAUI Runtime; Opera Mini/4.4.31223/34.1606; U; xx) Presto/2.8.119 Version/11.10",
-      "device-stock-ua": "OperaMini(Fucus/Unknown;Opera Mini/4.4.31223;en)",
+      "x-operamini-phone-ua": "OperaMini(Fucus/Unknown;Opera Mini/4.4.31223;en)",
       "x-operamini-features": "advanced, httpping, routing, file_system, folding, download",
       "x-operamini-phone": "? # ?",
-      "x-operamini-phone-ua": "OperaMini(Fucus/Unknown;Opera Mini/4.4.31223;en)"
+      "device-stock-ua": "OperaMini(Fucus/Unknown;Opera Mini/4.4.31223;en)"
     },
     "device": {
       "deviceName": "general Mobile device",
@@ -2002,9 +2002,9 @@
     "headers": {
       "user-agent": "Opera/9.80 (MAUI Runtime; Opera Mini/6.1.27412/35.3781; U; xx) Presto/2.8.119 Version/11.10",
       "device-stock-ua": "NativeOperaMini(MRE_VER_3000;240X320;MT6256;V/;Opera Mini/6.1.27412;en)",
-      "x-operamini-features": "advanced, httpping, routing, download, file_system, folding",
+      "x-operamini-phone-ua": "NativeOperaMini(MRE_VER_3000;240X320;MT6256;V/;Opera Mini/6.1.27412;en)",
       "x-operamini-phone": "? # ?",
-      "x-operamini-phone-ua": "NativeOperaMini(MRE_VER_3000;240X320;MT6256;V/;Opera Mini/6.1.27412;en)"
+      "x-operamini-features": "advanced, httpping, routing, download, file_system, folding"
     },
     "device": {
       "deviceName": "general Mobile device",
@@ -2043,10 +2043,10 @@
   {
     "headers": {
       "user-agent": "Opera/9.80 (MTK; Opera Mini/2.1198/34.1445; U; xx) Presto/2.8.119 Version/11.10",
-      "device-stock-ua": "NativeOperaMini(MTK;Native Opera Mini/4.2.1198;fr)",
       "x-operamini-features": "httpping, advanced, routing, folding, file_system, download",
       "x-operamini-phone": "? # ?",
-      "x-operamini-phone-ua": "NativeOperaMini(MTK;Native Opera Mini/4.2.1198;fr)"
+      "x-operamini-phone-ua": "NativeOperaMini(MTK;Native Opera Mini/4.2.1198;fr)",
+      "device-stock-ua": "NativeOperaMini(MTK;Native Opera Mini/4.2.1198;fr)"
     },
     "device": {
       "deviceName": "general Mobile device",
@@ -2127,10 +2127,10 @@
   {
     "headers": {
       "user-agent": "Opera/9.80 (MTK; Opera Mini/7.0.32977/34.1576; U; xx) Presto/2.8.119 Version/11.10",
-      "device-stock-ua": "NativeOperaMini(MTK/Unknown;Opera Mini/7.0.32977;en-US)",
+      "x-operamini-phone-ua": "NativeOperaMini(MTK/Unknown;Opera Mini/7.0.32977;en-US)",
       "x-operamini-features": "httpping, advanced, routing, folding, file_system, download",
       "x-operamini-phone": "? # ?",
-      "x-operamini-phone-ua": "NativeOperaMini(MTK/Unknown;Opera Mini/7.0.32977;en-US)"
+      "device-stock-ua": "NativeOperaMini(MTK/Unknown;Opera Mini/7.0.32977;en-US)"
     },
     "device": {
       "deviceName": "general Mobile device",
@@ -2169,10 +2169,10 @@
   {
     "headers": {
       "user-agent": "Opera/9.80 (SpreadTrum; Opera Mini/4.4.29625/34.1970; U; xx) Presto/2.8.119 Version/11.10",
-      "device-stock-ua": "NativeOperaMini(Spreadtrum/Unknown;Native Opera Mini/4.4.29625;pt)",
-      "x-operamini-features": "httpping, advanced, routing, folding, file_system, download",
       "x-operamini-phone": "? # ?",
-      "x-operamini-phone-ua": "NativeOperaMini(Spreadtrum/Unknown;Native Opera Mini/4.4.29625;pt)"
+      "x-operamini-phone-ua": "NativeOperaMini(Spreadtrum/Unknown;Native Opera Mini/4.4.29625;pt)",
+      "x-operamini-features": "httpping, advanced, routing, folding, file_system, download",
+      "device-stock-ua": "NativeOperaMini(Spreadtrum/Unknown;Native Opera Mini/4.4.29625;pt)"
     },
     "device": {
       "deviceName": "general Mobile device",
@@ -2212,9 +2212,9 @@
     "headers": {
       "user-agent": "Opera/9.80 (SpreadTrum; Opera Mini/4.4.31227/34.1088; U; xx) Presto/2.8.119 Version/11.10",
       "device-stock-ua": "NativeOperaMini(Spreadtrum/HW Version:        SC6531_OPENPHONE;Native Opera Mini/4.4.31227;en)",
-      "x-operamini-features": "advanced, httpping, routing, file_system, download, folding",
+      "x-operamini-phone-ua": "NativeOperaMini(Spreadtrum/HW Version:        SC6531_OPENPHONE;Native Opera Mini/4.4.31227;en)",
       "x-operamini-phone": "? # ?",
-      "x-operamini-phone-ua": "NativeOperaMini(Spreadtrum/HW Version:        SC6531_OPENPHONE;Native Opera Mini/4.4.31227;en)"
+      "x-operamini-features": "advanced, httpping, routing, file_system, download, folding"
     },
     "device": {
       "deviceName": "general Mobile device",
@@ -2253,10 +2253,10 @@
   {
     "headers": {
       "user-agent": "Opera/9.80 (VRE; Opera Mini/4.2/32.1312; U; xx) Presto/2.8.119 Version/11.10",
-      "device-stock-ua": "ReksioVRE(196683)",
-      "x-operamini-features": "httpping, advanced, folding, file_system, download",
+      "x-operamini-phone-ua": "ReksioVRE(196683)",
       "x-operamini-phone": "? # ?",
-      "x-operamini-phone-ua": "ReksioVRE(196683)"
+      "x-operamini-features": "httpping, advanced, folding, file_system, download",
+      "device-stock-ua": "ReksioVRE(196683)"
     },
     "device": {
       "deviceName": "general Mobile device",

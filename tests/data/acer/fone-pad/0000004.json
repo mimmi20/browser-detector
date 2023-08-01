@@ -2544,5 +2544,161 @@
       "version": "88.0.4324.152",
       "manufacturer": "google"
     }
+  },
+  {
+    "headers": {
+      "device-memory": "1",
+      "dpr": "1.162500023841858",
+      "viewport-width": "980",
+      "rtt": "50",
+      "downlink": "10",
+      "ect": "4g",
+      "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"102\", \"Google Chrome\";v=\"102\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"7.0.0\"",
+      "sec-ch-ua-model": "\"B1-7A0\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version-list": "\" Not A;Brand\";v=\"99.0.0.0\", \"Chromium\";v=\"102.0.5005.78\", \"Google Chrome\";v=\"102.0.5005.78\"",
+      "dnt": "1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; B1-7A0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Mobile Safari/537.36",
+      "sec-fetch-site": "same-origin",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-user": "?1",
+      "sec-fetch-dest": "document"
+    },
+    "device": {
+      "deviceName": "B1-7A0",
+      "marketingName": "Iconia One 7",
+      "manufacturer": "acer",
+      "brand": "acer",
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "size": 7
+      },
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "102.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0; A1-734 Build/MRA58K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/44.0.2403.119 Mobile Safari/537.36 Instagram 200.0.0.29.121 Android (23/6.0; 213dpi; 720x1216; Acer/acer; A1-734; acer_barricade; mt6735; ru_RU; 310093317)"
+    },
+    "device": {
+      "deviceName": "A1-734",
+      "marketingName": "Iconia Talk S",
+      "manufacturer": "acer",
+      "brand": "acer",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 7
+      },
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "200.0.0.29.121",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "44.0.2403.119",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "2",
+      "downlink": "5.9",
+      "dpr": "1.3312500715255737",
+      "ect": "4g",
+      "rtt": "50",
+      "sec-ch-device-memory": "2",
+      "sec-ch-dpr": "1.3312500715255737",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-ua": "\"Chromium\";v=\"106\", \"Google Chrome\";v=\"106\", \"Not;A=Brand\";v=\"99\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version": "\"106.0.5249.126\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"A1-734\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"6.0.0\"",
+      "sec-ch-viewport-height": "551",
+      "sec-ch-viewport-width": "980",
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "same-origin",
+      "sec-fetch-user": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0; A1-734) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "980"
+    },
+    "device": {
+      "deviceName": "A1-734",
+      "marketingName": "Iconia Talk S",
+      "manufacturer": "acer",
+      "brand": "acer",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 7
+      },
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "106.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
   }
 ]

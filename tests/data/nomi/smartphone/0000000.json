@@ -340,5 +340,81 @@
       "version": "70.0.3538.32",
       "manufacturer": "google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0; Nomi i5011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.80 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "i5011",
+      "marketingName": "Evo M1",
+      "manufacturer": "nomi",
+      "brand": "nomi",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "92.0.4515.80",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "symbian-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "92.0.4515.80",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1; NOMI 6 PLUS) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "6 Plus",
+      "marketingName": "6 Plus",
+      "manufacturer": "nomi",
+      "brand": "nomi",
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "86.0.4240.75",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "86.0.4240.75",
+      "manufacturer": "google"
+    }
   }
 ]

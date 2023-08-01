@@ -74,5 +74,43 @@
       "version": "64.0.3282.137",
       "manufacturer": "google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; GT6000) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 YaBrowser/18.11.2.730.00 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "GT6000",
+      "marketingName": "GT6000",
+      "manufacturer": "gretel",
+      "brand": "gretel",
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "modus": null,
+      "version": "18.11.2.730.00",
+      "manufacturer": "yandex",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "70.0.3538.102",
+      "manufacturer": "google"
+    }
   }
 ]

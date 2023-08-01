@@ -112,5 +112,43 @@
       "version": "534.13.0",
       "manufacturer": "apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.0.4; PantechP4100 Build/IMM76I) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.111 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "P4100",
+      "marketingName": "Element",
+      "manufacturer": "pantech",
+      "brand": "pantech",
+      "display": {
+        "width": 1024,
+        "height": 768,
+        "touch": true,
+        "size": 8
+      },
+      "type": "fone-pad"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "42.0.2311.111",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.0.4",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "42.0.2311.111",
+      "manufacturer": "google"
+    }
   }
 ]

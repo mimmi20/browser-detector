@@ -682,5 +682,81 @@
       "version": "58.0.3029.83",
       "manufacturer": "google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0; Cinemax-Force Build/MRA58K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/51.0.2704.81 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Cinemax Force",
+      "marketingName": "Cinemax Force",
+      "manufacturer": "zen-mobile",
+      "brand": "zen-mobile",
+      "display": {
+        "width": 854,
+        "height": 480,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "51.0.2704.81",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "51.0.2704.81",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0; Admire_Dragon Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36 OPR/48.1.2331.132804"
+    },
+    "device": {
+      "deviceName": "Admire Dragon",
+      "marketingName": "Admire Dragon",
+      "manufacturer": "zen-mobile",
+      "brand": "zen-mobile",
+      "display": {
+        "width": 854,
+        "height": 480,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone"
+    },
+    "browser": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "48.1.2331.132804",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "69.0.3497.100",
+      "manufacturer": "google"
+    }
   }
 ]

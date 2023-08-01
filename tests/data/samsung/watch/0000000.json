@@ -416,5 +416,119 @@
       "version": "538.1.0",
       "manufacturer": "apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Tizen 5.5; SAMSUNG SM-R800) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/2.0 Chrome/69.0.3497.106 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "SM-R800",
+      "marketingName": "Gear S4",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 360,
+        "height": 360,
+        "touch": true,
+        "size": 1.3
+      },
+      "type": "watch"
+    },
+    "browser": {
+      "name": "Samsung Browser",
+      "modus": null,
+      "version": "2.0.0",
+      "manufacturer": "samsung",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Tizen",
+      "marketingName": "Tizen",
+      "version": "5.5.0",
+      "manufacturer": "linux-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "69.0.3497.106",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Tizen 4.0; SAMSUNG SM-R760) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/2.0 Chrome/56.0.2924.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "SM-R760",
+      "marketingName": "Gear S3 Frontier",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 360,
+        "height": 360,
+        "touch": true,
+        "size": 1.3
+      },
+      "type": "watch"
+    },
+    "browser": {
+      "name": "Samsung Browser",
+      "modus": null,
+      "version": "2.0.0",
+      "manufacturer": "samsung",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Tizen",
+      "marketingName": "Tizen",
+      "version": "4.0.0",
+      "manufacturer": "linux-foundation",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "56.0.2924.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; SM-S9110) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "GT-S9110",
+      "marketingName": "Watchphone",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": true,
+        "size": 1.76
+      },
+      "type": "watch"
+    },
+    "browser": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "112.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
   }
 ]

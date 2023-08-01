@@ -3722,5 +3722,81 @@
       "version": "42.0.2311.111",
       "manufacturer": "google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.0.4; AT100 Build/IMM76D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.107 Safari/537.36 OPR/29.0.1809.93516"
+    },
+    "device": {
+      "deviceName": "AT100",
+      "marketingName": "AT100",
+      "manufacturer": "toshiba",
+      "brand": "toshiba",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 10.1
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "29.0.1809.93516",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.0.4",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "42.0.2311.107",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.0.4; fr-fr; AT100 Build/IMM76D) AppleWebKit/537.16 (KHTML, like Gecko) Version/4.0 Safari/537.16 Chrome/33.0.0.0"
+    },
+    "device": {
+      "deviceName": "AT100",
+      "marketingName": "AT100",
+      "manufacturer": "toshiba",
+      "brand": "toshiba",
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 10.1
+      },
+      "type": "tablet"
+    },
+    "browser": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "33.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.0.4",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "33.0.0.0",
+      "manufacturer": "google"
+    }
   }
 ]

@@ -112,5 +112,45 @@
       "version": "30.0.0.0",
       "manufacturer": "google"
     }
+  },
+  {
+    "headers": {
+      "lcp": "1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; de-; tolino shine 3/15.3.2) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Mobile Safari/537.36 BROWSER OS_BUILD/KOT49H.90498.db4d36c",
+      "x-requested-with": "de.telekom.epub"
+    },
+    "device": {
+      "deviceName": "Tolino Shine",
+      "marketingName": "Tolino Shine",
+      "manufacturer": "longshine",
+      "brand": "weltbild",
+      "display": {
+        "width": 1024,
+        "height": 768,
+        "touch": true,
+        "size": null
+      },
+      "type": "ebook-reader"
+    },
+    "browser": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown"
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.2",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
   }
 ]

@@ -796,5 +796,43 @@
       "version": null,
       "manufacturer": "access"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm; Android 5.1; Ursus A310) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4597.1 YaBrowser/20.8.3.71.01 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "A310",
+      "marketingName": "A310",
+      "manufacturer": "zte",
+      "brand": "cricket",
+      "display": {
+        "width": 120,
+        "height": 120,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone"
+    },
+    "browser": {
+      "name": "Yandex Browser",
+      "modus": null,
+      "version": "20.8.3.71.01",
+      "manufacturer": "yandex",
+      "bits": null,
+      "type": "browser"
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "94.0.4597.1",
+      "manufacturer": "google"
+    }
   }
 ]
