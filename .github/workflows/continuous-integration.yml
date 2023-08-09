@@ -28,6 +28,7 @@ jobs:
       skip-rector: false
       skip-phpmd: false
       skip-psalm: true
+      skip-composer-ununsed: true
     secrets:
       envPAT: "${{ secrets.GITHUB_TOKEN }}"
 
@@ -74,7 +75,7 @@ jobs:
         env:
           fail-fast: true
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          phpts: "ts"
+          phpts: "nts"
 
       - name: "Update dependencies with composer"
         uses: "ramsey/composer-install@2.2.0"
@@ -127,7 +128,7 @@ jobs:
         env:
           fail-fast: true
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          phpts: "ts"
+          phpts: "nts"
 
       - name: "Update dependencies with composer"
         uses: "ramsey/composer-install@2.2.0"

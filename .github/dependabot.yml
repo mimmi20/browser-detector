@@ -4,24 +4,46 @@ version: 2
 
 updates:
   - package-ecosystem: "composer"
+
     directory: "/"
+
     schedule:
       interval: "weekly"
       day: "wednesday"
       time: "07:00"
       timezone: "Europe/Berlin"
+
+    groups:
+      # Specify a name for the group, which will be used in pull request titles
+      # and branch names
+      minor-patch-dependencies:
+        # Define patterns to include dependencies in the group (based on
+        # dependency name)
+        patterns:
+          - "*"
+        # exclude-patterns:
+        #   - "gc_ruboconfig"
+
     open-pull-requests-limit: 10
+
     reviewers:
       - "mimmi20"
+
     assignees:
       - "mimmi20"
+
     labels:
       - "dependencies"
       - "patch"
-    versioning-strategy: increase
+
+    versioning-strategy: "increase"
+
+    target-branch: "master"
+
     commit-message:
       include: "scope"
       prefix: "composer"
+
 #    ignore:
 #      - dependency-name: infection/infection
 #        versions:
@@ -31,19 +53,39 @@ updates:
 #          - ">= 0"
 
   - package-ecosystem: "github-actions"
+
     directory: "/"
+
     schedule:
       interval: "weekly"
       day: "wednesday"
       time: "07:00"
       timezone: "Europe/Berlin"
+
+    groups:
+      # Specify a name for the group, which will be used in pull request titles
+      # and branch names
+      minor-patch-dependencies:
+        # Define patterns to include dependencies in the group (based on
+        # dependency name)
+        patterns:
+          - "*"
+        # exclude-patterns:
+        #   - "gc_ruboconfig"
+
     open-pull-requests-limit: 10
+
     reviewers:
       - "mimmi20"
+
     assignees:
       - "mimmi20"
+
     labels:
       - "dependencies"
       - "patch"
+
+    target-branch: "master"
+
     commit-message:
       prefix: "github-actions"
