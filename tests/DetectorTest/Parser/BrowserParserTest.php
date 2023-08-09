@@ -233,7 +233,7 @@ final class BrowserParserTest extends TestCase
         $fileParser
             ->expects(self::exactly(2))
             ->method('parseFile')
-            ->willReturnOnConsecutiveCalls($mode, $key);
+            ->willReturn($mode, $key);
 
         assert($loaderFactory instanceof BrowserLoaderFactoryInterface);
         assert($fileParser instanceof RulefileParserInterface);

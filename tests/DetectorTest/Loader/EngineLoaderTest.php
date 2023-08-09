@@ -76,7 +76,7 @@ final class EngineLoaderTest extends TestCase
             ->expects(self::never())
             ->method('getItem')
             ->with('test-key')
-            ->will(self::throwException(new InvalidArgumentException('fail')));
+            ->willThrowException(new InvalidArgumentException('fail'));
 
         $companyLoader = $this->getMockBuilder(CompanyLoaderInterface::class)
             ->disableOriginalConstructor()

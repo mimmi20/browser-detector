@@ -201,7 +201,7 @@ final class DarwinParserTest extends TestCase
         $fileParser
             ->expects(self::exactly(2))
             ->method('parseFile')
-            ->willReturnOnConsecutiveCalls('genericMode', $expectedMode);
+            ->willReturn('genericMode', $expectedMode);
 
         assert($fileParser instanceof RulefileParserInterface);
         assert($mockLoaderFactory instanceof DeviceLoaderFactoryInterface);

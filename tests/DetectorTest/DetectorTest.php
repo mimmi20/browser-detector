@@ -883,7 +883,7 @@ final class DetectorTest extends TestCase
             ->expects(self::once())
             ->method('parse')
             ->with($normalizedUseragent)
-            ->will(self::throwException(new NotFoundException('test')));
+            ->willThrowException(new NotFoundException('test'));
 
         $platformParser = $this->getMockBuilder(PlatformParserInterface::class)
             ->disableOriginalConstructor()
@@ -1030,7 +1030,7 @@ final class DetectorTest extends TestCase
             ->expects(self::once())
             ->method('parse')
             ->with($normalizedUseragent)
-            ->will(self::throwException(new NotFoundException('test')));
+            ->willThrowException(new NotFoundException('test'));
 
         $platformParser = $this->getMockBuilder(PlatformParserInterface::class)
             ->disableOriginalConstructor()
@@ -1372,7 +1372,7 @@ final class DetectorTest extends TestCase
             ->expects(self::once())
             ->method('parse')
             ->with($normalizedUseragent)
-            ->will(self::throwException(new NotFoundException('test')));
+            ->willThrowException(new NotFoundException('test'));
         $engineParser
             ->expects(self::never())
             ->method('load');
@@ -1700,7 +1700,7 @@ final class DetectorTest extends TestCase
             ->expects(self::once())
             ->method('load')
             ->with('webkit', $normalizedUseragent)
-            ->will(self::throwException(new UnexpectedValueException('parsing failed')));
+            ->willThrowException(new UnexpectedValueException('parsing failed'));
 
         $cache = $this->getMockBuilder(CacheInterface::class)
             ->disableOriginalConstructor()
@@ -1860,7 +1860,7 @@ final class DetectorTest extends TestCase
             ->expects(self::once())
             ->method('load')
             ->with('webkit', $normalizedUseragent)
-            ->will(self::throwException(new NotFoundException('something not found')));
+            ->willThrowException(new NotFoundException('something not found'));
 
         $cache = $this->getMockBuilder(CacheInterface::class)
             ->disableOriginalConstructor()
