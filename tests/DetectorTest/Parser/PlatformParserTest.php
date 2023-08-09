@@ -61,7 +61,7 @@ final class PlatformParserTest extends TestCase
         $fileParser
             ->expects(self::exactly(2))
             ->method('parseFile')
-            ->willReturnOnConsecutiveCalls($mode, $key);
+            ->willReturn($mode, $key);
 
         assert($loaderFactory instanceof PlatformLoaderFactoryInterface);
         assert($fileParser instanceof RulefileParserInterface);
