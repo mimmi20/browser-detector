@@ -1,4 +1,4 @@
-name: cleanup caches by a branch
+name: "Cleanup caches by a branch"
 on:
   pull_request:
     types:
@@ -7,7 +7,7 @@ on:
 
 jobs:
   cleanup:
-    runs-on: ubuntu-latest
+    runs-on: "ubuntu-20.04"
     steps:
       - name: "Checkout"
         uses: "actions/checkout@v3"
@@ -36,4 +36,4 @@ jobs:
           done
           echo "Done"
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: "${{ secrets.GITHUB_TOKEN }}"

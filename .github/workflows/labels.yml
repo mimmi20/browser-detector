@@ -20,7 +20,7 @@ jobs:
     permissions:
       issues: write
 
-    runs-on: ubuntu-latest
+    runs-on: "ubuntu-22.04"
 
     steps:
       - name: "Checkout"
@@ -33,7 +33,7 @@ jobs:
 
       - uses: "micnncim/action-label-syncer@v1.3.0"
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GITHUB_REPOSITORY: ${{ github.repository }}
+          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+          GITHUB_REPOSITORY: "${{ github.repository }}"
         with:
-          manifest: .github/labels.yml
+          manifest: ".github/labels.yml"

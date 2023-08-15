@@ -7,8 +7,8 @@ on:
 
 jobs:
   lock:
-    runs-on: ubuntu-latest
+    runs-on: "ubuntu-22.04"
     steps:
-      - uses: Dunning-Kruger/lock-issues@v1.1
+      - uses: "Dunning-Kruger/lock-issues@v1.1"
         with:
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          repo-token: "${{ secrets.GITHUB_TOKEN }}"
