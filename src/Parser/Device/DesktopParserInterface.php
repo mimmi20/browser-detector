@@ -14,8 +14,6 @@ namespace BrowserDetector\Parser\Device;
 
 use BrowserDetector\Loader\NotFoundException;
 use BrowserDetector\Parser\DeviceParserInterface;
-use UaResult\Device\DeviceInterface;
-use UaResult\Os\OsInterface;
 use UnexpectedValueException;
 
 interface DesktopParserInterface extends DeviceParserInterface
@@ -23,20 +21,16 @@ interface DesktopParserInterface extends DeviceParserInterface
     /**
      * Gets the information about the browser by User Agent
      *
-     * @return array<int, (DeviceInterface|OsInterface|null)>
-     * @phpstan-return array{0:DeviceInterface, 1:OsInterface|null}
-     *
-     * @throws NotFoundException
-     * @throws UnexpectedValueException
+     * @throws void
      */
-    public function parse(string $useragent): array;
+    public function parse(string $useragent): string;
 
     /**
-     * @return array<int, (DeviceInterface|OsInterface|null)>
-     * @phpstan-return array{0:DeviceInterface, 1:OsInterface|null}
+     * @return array<int, (array<mixed>|string|null)>
+     * @phpstan-return array{0:array{deviceName: string|null, marketingName: string|null, manufacturer: string|null, brand: string|null, dualOrientation: bool|null, simCount: int|null, display: array{width: int|null, height: int|null, touch: bool|null, size: float|null}, type: string}, 1:string|null}
      *
      * @throws NotFoundException
      * @throws UnexpectedValueException
      */
-    public function load(string $company, string $key, string $useragent = ''): array;
+    public function load(string $company, string $key): array;
 }

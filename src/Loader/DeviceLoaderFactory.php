@@ -13,7 +13,6 @@ declare(strict_types = 1);
 namespace BrowserDetector\Loader;
 
 use BrowserDetector\Loader\Helper\Data;
-use BrowserDetector\Parser\PlatformParserInterface;
 use Psr\Log\LoggerInterface;
 
 use function array_key_exists;
@@ -29,7 +28,6 @@ final class DeviceLoaderFactory implements DeviceLoaderFactoryInterface
     public function __construct(
         private readonly LoggerInterface $logger,
         private readonly CompanyLoaderInterface $companyLoader,
-        private readonly PlatformParserInterface $platformParser,
     ) {
         // nothing to do
     }
@@ -45,7 +43,6 @@ final class DeviceLoaderFactory implements DeviceLoaderFactoryInterface
             $this->logger,
             new Data(self::DATA_PATH . $company, 'json'),
             $this->companyLoader,
-            $this->platformParser,
         );
 
         return $this->loader[$company];

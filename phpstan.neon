@@ -94,6 +94,9 @@ parameters:
       missingCheckedExceptionInThrows: true
       tooWideThrowType: true
 
-#  ignoreErrors:
-#    - '~Parameter #1 \$headers of method BrowserDetector\\Detector::__invoke\(\) expects array<string, string>\|Psr\\Http\\Message\\MessageInterface\|string\|UaRequest\\GenericRequestInterface, stdClass given~'
+  ignoreErrors:
+#    - '~Parameter #1 \$headers of method BrowserDetector\\Detector::__invoke\(\) expects array<string, string>\|Psr\\Http\\Message\\MessageInterface\|string\|BrowserDetector\\GenericRequestInterface, stdClass given~'
+#    - '~Parameter #1 \$message of method Psr\\Log\\LoggerInterface::.* expects string, .*Exception given~'
+#    - '~is not subtype of Throwable~'
 #    - '~Call to deprecated method getBrowser\(\) of class BrowserDetector\\Detector~'
+#    - '~is never read, only written~'

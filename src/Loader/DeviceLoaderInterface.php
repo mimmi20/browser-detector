@@ -12,18 +12,16 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Loader;
 
-use UaResult\Device\DeviceInterface;
-use UaResult\Os\OsInterface;
 use UnexpectedValueException;
 
 interface DeviceLoaderInterface extends SpecificLoaderInterface
 {
     /**
-     * @return array<int, (DeviceInterface|OsInterface|null)>
-     * @phpstan-return array{0:DeviceInterface, 1:OsInterface|null}
+     * @return array<int, (array<mixed>|string|null)>
+     * @phpstan-return array{0:array{deviceName: string|null, marketingName: string|null, manufacturer: string|null, brand: string|null, dualOrientation: bool|null, simCount: int|null, display: array{width: int|null, height: int|null, touch: bool|null, size: float|null}, type: string}, 1:string|null}
      *
      * @throws NotFoundException
      * @throws UnexpectedValueException
      */
-    public function load(string $key, string $useragent = ''): array;
+    public function load(string $key): array;
 }

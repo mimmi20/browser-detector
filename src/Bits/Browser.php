@@ -19,7 +19,7 @@ final class Browser implements BitsInterface
     /** @throws void */
     public function getBits(string $useragent): int | null
     {
-        // 32 bits on 64-bit system
+        // 32 bits on a 64-bit system
         if (preg_match('/i686 on x86_64|i686 \(x86_64\)/i', $useragent)) {
             return 32;
         }

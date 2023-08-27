@@ -14,13 +14,12 @@ namespace BrowserDetector;
 
 use Psr\Http\Message\MessageInterface;
 use Psr\Log\LoggerInterface;
-use UaRequest\GenericRequestInterface;
 use UnexpectedValueException;
 
 interface RequestBuilderInterface
 {
     /**
-     * @param array<string, string>|GenericRequestInterface|MessageInterface|string $request
+     * @param array<non-empty-string, non-empty-string>|GenericRequestInterface|MessageInterface|string $request
      *
      * @throws UnexpectedValueException
      */

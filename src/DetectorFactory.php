@@ -42,21 +42,13 @@ final class DetectorFactory
 
             $platformParserFactory = new PlatformParserFactory($this->logger, $companyLoader);
             $platformParser        = $platformParserFactory();
-            $deviceParserFactory   = new DeviceParserFactory(
-                $this->logger,
-                $companyLoader,
-                $platformParser,
-            );
+            $deviceParserFactory   = new DeviceParserFactory($this->logger, $companyLoader);
             $deviceParser          = $deviceParserFactory();
             $engineParserFactory   = new EngineParserFactory($this->logger, $companyLoader);
             $engineParser          = $engineParserFactory();
-            $browserParserFactory  = new BrowserParserFactory(
-                $this->logger,
-                $companyLoader,
-                $engineParser,
-            );
+            $browserParserFactory  = new BrowserParserFactory($this->logger, $companyLoader);
             $browserParser         = $browserParserFactory();
-            $normalizer            = (new NormalizerFactory())->build();
+            $normalizerFactory     = new NormalizerFactory();
 
             $this->detector = new Detector(
                 $this->logger,
@@ -65,7 +57,7 @@ final class DetectorFactory
                 $platformParser,
                 $browserParser,
                 $engineParser,
-                $normalizer,
+                $normalizerFactory,
             );
         }
 

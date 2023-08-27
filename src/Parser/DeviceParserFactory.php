@@ -30,7 +30,6 @@ final class DeviceParserFactory implements DeviceParserFactoryInterface
     public function __construct(
         private readonly LoggerInterface $logger,
         private readonly CompanyLoaderInterface $companyLoader,
-        private readonly PlatformParserInterface $platformParser,
     ) {
         // nothing to do
     }
@@ -42,11 +41,7 @@ final class DeviceParserFactory implements DeviceParserFactoryInterface
      */
     public function __invoke(): DeviceParserInterface
     {
-        $loaderFactory = new DeviceLoaderFactory(
-            $this->logger,
-            $this->companyLoader,
-            $this->platformParser,
-        );
+        $loaderFactory = new DeviceLoaderFactory($this->logger, $this->companyLoader);
         $fileParser    = new RulefileParser($this->logger);
         $darwinParser  = new DarwinParser($fileParser, $loaderFactory);
         $mobileParser  = new MobileParser($fileParser, $loaderFactory);

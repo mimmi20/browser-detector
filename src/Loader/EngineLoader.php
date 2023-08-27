@@ -12,30 +12,39 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Loader;
 
-use BrowserDetector\Factory\EngineFactory;
 use BrowserDetector\Loader\Helper\DataInterface;
 use BrowserDetector\Version\VersionFactory;
 use Psr\Log\LoggerInterface;
 use stdClass;
-use UaResult\Engine\EngineInterface;
 use UnexpectedValueException;
+
+use function array_key_exists;
+use function assert;
 
 final class EngineLoader implements EngineLoaderInterface
 {
+    use VersionFactoryTrait;
+
+    public const DATA_PATH = __DIR__ . '/../../data/engines';
+
     /** @throws void */
     public function __construct(
         private readonly LoggerInterface $logger,
         private readonly DataInterface $initData,
         private readonly CompanyLoaderInterface $companyLoader,
     ) {
+        $this->versionFactory = new VersionFactory();
+
         $initData();
     }
 
     /**
+     * @return array{name: string|null, version: string|null, manufacturer: string}
+     *
      * @throws NotFoundException
      * @throws UnexpectedValueException
      */
-    public function load(string $key, string $useragent = ''): EngineInterface
+    public function load(string $key, string $useragent = ''): array
     {
         if (!$this->initData->hasItem($key)) {
             throw new NotFoundException('the engine with key "' . $key . '" was not found');
@@ -47,16 +56,27 @@ final class EngineLoader implements EngineLoaderInterface
             throw new NotFoundException('the engine with key "' . $key . '" was not found');
         }
 
-        /**
-         * @var array<string, (stdClass|string|null)> $engineDataArray
-         * @phpstan-var array{name?: (string|null), manufacturer?: string, version?: (stdClass|string|null)} $engineDataArray
-         */
-        $engineDataArray = (array) $engineData;
+        /** @phpstan-var array{name: (string|null), manufacturer: string, version: (stdClass|string|null)} $data */
+        $data = (array) $engineData;
 
-        return (new EngineFactory(
-            $this->companyLoader,
-            new VersionFactory(),
-            $this->logger,
-        ))->fromArray($engineDataArray, $useragent);
+        assert(array_key_exists('name', $data), '"name" property is required');
+        assert(array_key_exists('manufacturer', $data), '"manufacturer" property is required');
+        assert(array_key_exists('version', $data), '"version" property is required');
+
+        $name         = $data['name'];
+        $version      = $this->getVersion($data['version'], $useragent, $this->logger);
+        $manufacturer = ['type' => 'unknown'];
+
+        try {
+            $manufacturer = $this->companyLoader->load($data['manufacturer']);
+        } catch (NotFoundException $e) {
+            $this->logger->info($e);
+        }
+
+        return [
+            'name' => $name,
+            'version' => $version->getVersion(),
+            'manufacturer' => $manufacturer['type'],
+        ];
     }
 }

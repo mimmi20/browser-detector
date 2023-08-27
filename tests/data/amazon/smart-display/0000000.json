@@ -8,6 +8,8 @@
       "marketingName": "Echo Show",
       "manufacturer": "amazon",
       "brand": "amazon",
+      "dualOrientation": null,
+      "simCount": null,
       "display": {
         "width": 1024,
         "height": 600,
@@ -16,7 +18,7 @@
       },
       "type": "smart-display"
     },
-    "browser": {
+    "client": {
       "name": "Android WebView",
       "modus": null,
       "version": "59.0.3071.125",

@@ -21,8 +21,6 @@ use BrowserDetector\Parser\Device\DarwinParserInterface;
 use BrowserDetector\Parser\Device\DesktopParserInterface;
 use BrowserDetector\Parser\Device\MobileParserInterface;
 use BrowserDetector\Parser\Device\TvParserInterface;
-use UaResult\Device\DeviceInterface;
-use UaResult\Os\OsInterface;
 use UnexpectedValueException;
 
 use function preg_match;
@@ -46,13 +44,9 @@ final class DeviceParser implements DeviceParserInterface
     /**
      * Gets the information about the rendering engine by User Agent
      *
-     * @return array<int, (DeviceInterface|OsInterface|null)>
-     * @phpstan-return array{0:DeviceInterface, 1:OsInterface|null}
-     *
-     * @throws NotFoundException
-     * @throws UnexpectedValueException
+     * @throws void
      */
-    public function parse(string $useragent): array
+    public function parse(string $useragent): string
     {
         if (
             preg_match(
@@ -60,7 +54,7 @@ final class DeviceParser implements DeviceParserInterface
                 $useragent,
             )
         ) {
-            return $this->load('unknown', 'unknown', $useragent);
+            return 'unknown=unknown';
         }
 
         if (
@@ -82,21 +76,21 @@ final class DeviceParser implements DeviceParserInterface
             return $this->desktopParser->parse($useragent);
         }
 
-        return $this->load('unknown', 'unknown', $useragent);
+        return 'unknown=unknown';
     }
 
     /**
-     * @return array<int, (DeviceInterface|OsInterface|null)>
-     * @phpstan-return array{0:DeviceInterface, 1:OsInterface|null}
+     * @return array<int, (array<mixed>|string|null)>
+     * @phpstan-return array{0:array{deviceName: string|null, marketingName: string|null, manufacturer: string|null, brand: string|null, dualOrientation: bool|null, simCount: int|null, display: array{width: int|null, height: int|null, touch: bool|null, size: float|null}, type: string}, 1:string|null}
      *
      * @throws NotFoundException
      * @throws UnexpectedValueException
      */
-    public function load(string $company, string $key, string $useragent = ''): array
+    public function load(string $company, string $key): array
     {
         $loaderFactory = $this->loaderFactory;
         $loader        = $loaderFactory($company);
 
-        return $loader->load($key, $useragent);
+        return $loader->load($key);
     }
 }

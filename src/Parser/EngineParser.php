@@ -12,10 +12,9 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Parser;
 
-use BrowserDetector\Loader\EngineLoaderFactoryInterface;
+use BrowserDetector\Loader\EngineLoaderInterface;
 use BrowserDetector\Loader\NotFoundException;
 use BrowserDetector\Parser\Helper\RulefileParserInterface;
-use UaResult\Engine\EngineInterface;
 use UnexpectedValueException;
 
 final class EngineParser implements EngineParserInterface
@@ -24,7 +23,7 @@ final class EngineParser implements EngineParserInterface
 
     /** @throws void */
     public function __construct(
-        private readonly EngineLoaderFactoryInterface $loaderFactory,
+        private readonly EngineLoaderInterface $loader,
         private readonly RulefileParserInterface $fileParser,
     ) {
         // nothing to do
@@ -33,25 +32,21 @@ final class EngineParser implements EngineParserInterface
     /**
      * Gets the information about the engine by User Agent
      *
-     * @throws NotFoundException
-     * @throws UnexpectedValueException
+     * @throws void
      */
-    public function parse(string $useragent): EngineInterface
+    public function parse(string $useragent): string
     {
-        $key = $this->fileParser->parseFile(self::GENERIC_FILE, $useragent, 'unknown');
-
-        return $this->load($key, $useragent);
+        return $this->fileParser->parseFile(self::GENERIC_FILE, $useragent, 'unknown');
     }
 
     /**
+     * @return array{name: string|null, version: string|null, manufacturer: string}
+     *
      * @throws NotFoundException
      * @throws UnexpectedValueException
      */
-    public function load(string $key, string $useragent = ''): EngineInterface
+    public function load(string $key, string $useragent = ''): array
     {
-        $loaderFactory = $this->loaderFactory;
-        $loader        = $loaderFactory();
-
-        return $loader->load($key, $useragent);
+        return $this->loader->load($key, $useragent);
     }
 }

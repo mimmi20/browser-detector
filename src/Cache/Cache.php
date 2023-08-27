@@ -21,12 +21,7 @@ use function unserialize;
 
 final class Cache implements CacheInterface
 {
-    /**
-     * Constructor class, checks for the existence of (and loads) the cache and
-     * if needed, updated the definitions
-     *
-     * @throws void
-     */
+    /** @throws void */
     public function __construct(private readonly \Psr\SimpleCache\CacheInterface $cache)
     {
         // nothing to do

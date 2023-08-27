@@ -12,14 +12,15 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Loader;
 
-use UaResult\Engine\EngineInterface;
 use UnexpectedValueException;
 
 interface EngineLoaderInterface extends SpecificLoaderInterface
 {
     /**
+     * @return array{name: string|null, version: string|null, manufacturer: string}
+     *
      * @throws NotFoundException
      * @throws UnexpectedValueException
      */
-    public function load(string $key, string $useragent = ''): EngineInterface;
+    public function load(string $key, string $useragent = ''): array;
 }

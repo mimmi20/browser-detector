@@ -43,7 +43,9 @@
           "brand": {
             "type": "string"
           },
-          "display": {
+          "dualOrientation": null,
+    "simCount": null,
+    "display": {
             "type": "object",
             "properties": {
               "width": {

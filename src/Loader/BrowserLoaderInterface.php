@@ -12,15 +12,12 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Loader;
 
-use UaResult\Browser\BrowserInterface;
-use UaResult\Engine\EngineInterface;
 use UnexpectedValueException;
 
 interface BrowserLoaderInterface extends SpecificLoaderInterface
 {
     /**
-     * @return array<int, (BrowserInterface|EngineInterface|null)>
-     * @phpstan-return array{0: BrowserInterface, 1: EngineInterface|null}
+     * @return array{0: array{name: string|null, modus: string|null, version: string|null, manufacturer: string, bits: int|null, type: string}, 1: string|null}
      *
      * @throws NotFoundException
      * @throws UnexpectedValueException

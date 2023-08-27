@@ -12,7 +12,7 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Loader;
 
-interface CompanyLoaderFactoryInterface extends SpecificLoaderFactoryInterface
+interface CompanyLoaderFactoryInterface
 {
     /** @throws void */
     public function __invoke(): CompanyLoaderInterface;

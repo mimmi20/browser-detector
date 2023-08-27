@@ -13,7 +13,6 @@ declare(strict_types = 1);
 namespace BrowserDetector\Parser;
 
 use BrowserDetector\Loader\NotFoundException;
-use UaResult\Os\OsInterface;
 use UnexpectedValueException;
 
 interface PlatformParserInterface
@@ -21,14 +20,15 @@ interface PlatformParserInterface
     /**
      * Gets the information about the browser by User Agent
      *
-     * @throws NotFoundException
-     * @throws UnexpectedValueException
+     * @throws void
      */
-    public function parse(string $useragent): OsInterface;
+    public function parse(string $useragent): string;
 
     /**
+     * @return array{name: string|null, marketingName: string|null, version: string|null, manufacturer: string, bits: int|null}
+     *
      * @throws NotFoundException
      * @throws UnexpectedValueException
      */
-    public function load(string $key, string $useragent = ''): OsInterface;
+    public function load(string $key, string $useragent = ''): array;
 }
