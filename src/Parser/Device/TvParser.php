@@ -27,8 +27,8 @@ final class TvParser implements TvParserInterface
 
     /** @throws void */
     public function __construct(
-        private RulefileParserInterface $fileParser,
-        private DeviceLoaderFactoryInterface $loaderFactory,
+        private readonly RulefileParserInterface $fileParser,
+        private readonly DeviceLoaderFactoryInterface $loaderFactory,
     ) {
     }
 

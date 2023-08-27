@@ -25,7 +25,7 @@ final class Useragent implements HeaderInterface
 {
     use HeaderTrait;
 
-    private string $normalizedValue;
+    private readonly string $normalizedValue;
 
     /** @throws Exception */
     public function __construct(

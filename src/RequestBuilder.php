@@ -22,7 +22,6 @@ use Laminas\Diactoros\ServerRequestFactory;
 use Psr\Http\Message\MessageInterface;
 use Psr\Log\LoggerInterface;
 use UaNormalizer\NormalizerFactory;
-use UnexpectedValueException;
 
 use function array_change_key_case;
 use function array_filter;
@@ -51,7 +50,7 @@ final class RequestBuilder implements RequestBuilderInterface
     /**
      * @param array<non-empty-string, non-empty-string>|GenericRequestInterface|MessageInterface|string $request
      *
-     * @throws UnexpectedValueException
+     * @throws void
      */
     public function buildRequest(
         LoggerInterface $logger,
@@ -75,15 +74,9 @@ final class RequestBuilder implements RequestBuilderInterface
             return $this->createRequestFromArray($request);
         }
 
-        if (is_string($request)) {
-            $logger->debug('request object created from string');
+        $logger->debug('request object created from string');
 
-            return $this->createRequestFromString($request);
-        }
-
-        throw new UnexpectedValueException(
-            'the request parameter has to be a string, an array or an instance of \Psr\Http\Message\MessageInterface or an instance of \BrowserDetector\GenericRequestInterface',
-        );
+        return $this->createRequestFromString($request);
     }
 
     /**

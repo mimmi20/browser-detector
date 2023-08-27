@@ -27,8 +27,8 @@ final class MobileParser implements MobileParserInterface
 
     /** @throws void */
     public function __construct(
-        private RulefileParserInterface $fileParser,
-        private DeviceLoaderFactoryInterface $loaderFactory,
+        private readonly RulefileParserInterface $fileParser,
+        private readonly DeviceLoaderFactoryInterface $loaderFactory,
     ) {
     }
 

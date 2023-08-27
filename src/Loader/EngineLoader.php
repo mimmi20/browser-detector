@@ -56,7 +56,7 @@ final class EngineLoader implements EngineLoaderInterface
             throw new NotFoundException('the engine with key "' . $key . '" was not found');
         }
 
-        /** @phpstan-var array{name?: (string|null), manufacturer?: string, version?: (stdClass|string|null)} $data */
+        /** @phpstan-var array{name: (string|null), manufacturer: string, version: (stdClass|string|null)} $data */
         $data = (array) $engineData;
 
         assert(array_key_exists('name', $data), '"name" property is required');
@@ -67,12 +67,10 @@ final class EngineLoader implements EngineLoaderInterface
         $version      = $this->getVersion($data['version'], $useragent, $this->logger);
         $manufacturer = ['type' => 'unknown'];
 
-        if ($data['manufacturer'] !== null) {
-            try {
-                $manufacturer = $this->companyLoader->load($data['manufacturer']);
-            } catch (NotFoundException $e) {
-                $this->logger->info($e);
-            }
+        try {
+            $manufacturer = $this->companyLoader->load($data['manufacturer']);
+        } catch (NotFoundException $e) {
+            $this->logger->info($e);
         }
 
         return [
