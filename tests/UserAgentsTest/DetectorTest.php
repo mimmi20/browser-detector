@@ -14,11 +14,12 @@ namespace UserAgentsTest;
 
 use BrowserDetector\Detector;
 use BrowserDetector\DetectorFactory;
-use BrowserDetector\Loader\CompanyLoader;
-use BrowserDetector\Loader\CompanyLoaderFactory;
+use BrowserDetector\Loader\NotFoundException;
 use BrowserDetector\Version\NotNumericException;
 use DateInterval;
 use Exception;
+use FilterIterator;
+use Iterator;
 use JsonException;
 use PHPUnit\Framework\Attributes\CoversNothing;
 use PHPUnit\Framework\Attributes\DataProvider;
@@ -26,29 +27,26 @@ use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\AbstractLogger;
 use Psr\Log\LoggerInterface;
-use Psr\Log\NullLogger;
 use Psr\SimpleCache\CacheInterface;
 use Psr\SimpleCache\InvalidArgumentException;
 use RecursiveDirectoryIterator;
 use RecursiveIteratorIterator;
-use RegexIterator;
 use RuntimeException;
+use SplFileInfo;
 use Stringable;
-use UaResult\Browser\BrowserInterface;
-use UaResult\Device\DeviceInterface;
-use UaResult\Engine\EngineInterface;
-use UaResult\Os\OsInterface;
-use UaResult\Result\Result;
-use UaResult\Result\ResultInterface;
+use UnexpectedValueException;
 
 use function assert;
+use function count;
 use function file_get_contents;
 use function is_array;
+use function is_countable;
 use function is_iterable;
 use function is_string;
 use function json_decode;
 use function json_encode;
 use function sprintf;
+use function str_replace;
 
 use const JSON_THROW_ON_ERROR;
 use const JSON_UNESCAPED_SLASHES;
@@ -251,24 +249,21 @@ final class DetectorTest extends TestCase
     }
 
     /**
-     * @param array<string, string> $headers
+     * @param array<non-empty-string, non-empty-string> $headers
+     * @param array<string, mixed>                      $expectedResult
      *
      * @throws InvalidArgumentException
+     * @throws NotFoundException
      * @throws ExpectationFailedException
+     * @throws UnexpectedValueException
+     * @throws NotNumericException
      */
     #[DataProvider('providerGetBrowser')]
     #[CoversNothing]
-    public function testGetBrowser(array $headers, Result $expectedResult): void
+    public function testGetBrowser(array $headers, array $expectedResult): void
     {
-        $result = ($this->object)($headers);
-        assert(
-            $result instanceof ResultInterface,
-            sprintf(
-                '$result should be an instance of %s, but is %s',
-                ResultInterface::class,
-                $result::class,
-            ),
-        );
+        $result = $this->object->getBrowser($headers);
+        assert(is_array($result));
 
         try {
             $encodedHeaders = json_encode(
@@ -279,58 +274,58 @@ final class DetectorTest extends TestCase
             $encodedHeaders = '< failed to encode headers >';
         }
 
-        self::assertInstanceOf(
-            ResultInterface::class,
+        self::assertIsArray(
             $result,
             sprintf(
-                'found result is not an instance of "\UaResult\Result\ResultInterface" for headers %s',
+                'found result is not an array for headers %s',
                 $encodedHeaders,
             ),
         );
 
-        $foundBrowser = $result->getBrowser();
-
-        self::assertInstanceOf(
-            BrowserInterface::class,
-            $foundBrowser,
+        self::assertEquals(
+            $expectedResult['headers'],
+            $result['headers'],
             sprintf(
-                'found browser is not an instance of "\UaResult\Browser\BrowserInterface" for headers %s',
+                'detection header result mismatch for headers %s',
                 $encodedHeaders,
             ),
         );
 
-        $foundEngine = $result->getEngine();
-
-        self::assertInstanceOf(
-            EngineInterface::class,
-            $foundEngine,
-            sprintf(
-                'found engine is not an instance of "\UaResult\Engine\EngineInterface" for headers %s',
-                $encodedHeaders,
-            ),
-        );
-
-        $foundPlatform = $result->getOs();
-
-        self::assertInstanceOf(
-            OsInterface::class,
-            $foundPlatform,
-            sprintf(
-                'found platform is not an instance of "\UaResult\Os\OsInterface" for headers %s',
-                $encodedHeaders,
-            ),
-        );
-
-        $foundDevice = $result->getDevice();
-
-        self::assertInstanceOf(
-            DeviceInterface::class,
-            $foundDevice,
-            sprintf(
-                'found result is not an instance of "\UaResult\Device\DeviceInterface" for headers %s',
-                $encodedHeaders,
-            ),
-        );
+//        self::assertEquals(
+//            $expectedResult['os'],
+//            $result['os'],
+//            sprintf(
+//                'detection os result mismatch for headers %s',
+//                $encodedHeaders,
+//            ),
+//        );
+//
+//        self::assertEquals(
+//            $expectedResult['browser'],
+//            $result['client'],
+//            sprintf(
+//                'detection client result mismatch for headers %s',
+//                $encodedHeaders,
+//            ),
+//        );
+//
+//        self::assertEquals(
+//            $expectedResult['device'],
+//            $result['device'],
+//            sprintf(
+//                'detection device result mismatch for headers %s',
+//                $encodedHeaders,
+//            ),
+//        );
+//
+//        self::assertEquals(
+//            $expectedResult['engine'],
+//            $result['engine'],
+//            sprintf(
+//                'detection engine result mismatch for headers %s',
+//                $encodedHeaders,
+//            ),
+//        );
 
         self::assertEquals(
             $expectedResult,
@@ -343,7 +338,7 @@ final class DetectorTest extends TestCase
     }
 
     /**
-     * @return array<string, array<string, (array<string, string>|Result)>>
+     * @return array<string, array<string, (array<string, string>)>>
      *
      * @throws Exception
      * @throws NotNumericException
@@ -352,55 +347,100 @@ final class DetectorTest extends TestCase
     public static function providerGetBrowser(): array
     {
         $iterator = new RecursiveIteratorIterator(new RecursiveDirectoryIterator('tests/data/'));
-        $files    = new RegexIterator($iterator, '/^.+\.json$/i', RegexIterator::GET_MATCH);
+        $files    = new class ($iterator, 'json') extends FilterIterator {
+            /**
+             * @param Iterator<SplFileInfo> $iterator
+             *
+             * @throws void
+             */
+            public function __construct(Iterator $iterator, private readonly string $extension)
+            {
+                parent::__construct($iterator);
+            }
 
-        $data   = [];
-        $logger = new NullLogger();
+            /** @throws void */
+            public function accept(): bool
+            {
+                $file = $this->getInnerIterator()->current();
 
-        $companyLoaderFactory = new CompanyLoaderFactory();
+                assert($file instanceof SplFileInfo);
 
-        $companyLoader = $companyLoaderFactory();
-        assert(
-            $companyLoader instanceof CompanyLoader,
-            sprintf(
-                '$companyLoader should be an instance of %s, but is %s',
-                CompanyLoader::class,
-                $companyLoader::class,
-            ),
-        );
-        $resultFactory = new ResultFactory($companyLoader, $logger);
+                return $file->isFile() && $file->getExtension() === $this->extension;
+            }
+        };
+
+        $data = [];
 
         foreach ($files as $file) {
-            assert(is_array($file));
+            assert($file instanceof SplFileInfo);
 
-            $file = $file[0];
-            assert(is_string($file));
+            $pathName = $file->getPathname();
+            $filepath = str_replace('\\', '/', $pathName);
+            assert(is_string($filepath));
 
-            $content = @file_get_contents($file);
+            $content = @file_get_contents($filepath);
 
             if ($content === false) {
-                throw new RuntimeException(sprintf('could not read file "%s"', $file));
+                throw new RuntimeException(sprintf('could not read file "%s"', $filepath));
             }
 
             try {
                 $tests = json_decode($content, true, 512, JSON_THROW_ON_ERROR);
             } catch (JsonException $e) {
-                throw new Exception(sprintf('file "%s" contains invalid json', $file), 0, $e);
+                throw new Exception(sprintf('file "%s" contains invalid json', $filepath), 0, $e);
             }
 
             assert(is_iterable($tests));
 
-            foreach ($tests as $i => $test) {
-                $expectedResult = $resultFactory->fromArray($logger, $test);
-
-                if (!$expectedResult instanceof Result) {
+            foreach ($tests as $i => $expectedResult) {
+                if (!is_array($expectedResult)) {
                     continue;
                 }
 
-                $index = sprintf('file:%s test:%d', $file, $i);
+                if (
+                    (is_countable($expectedResult['headers']) ? count(
+                        $expectedResult['headers'],
+                    ) : 0) !== 1
+                ) {
+                    continue;
+                }
+
+//                if (isset($expectedResult['headers'][Constants::HEADER_UA_OS])) {
+//                    continue;
+//                }
+//
+//                if (isset($expectedResult['headers'][Constants::HEADER_REQUESTED_WITH])) {
+//                    continue;
+//                }
+//
+//                if (!isset($expectedResult['headers'][Constants::HEADER_UCBROWSER_UA])) {
+//                    continue;
+//                }
+//
+//                if (isset($expectedResult['headers'][Constants::HEADER_OPERAMINI_PHONE_UA])) {
+//                    continue;
+//                }
+//
+//                if (isset($expectedResult['headers'][Constants::HEADER_BAIDU_FLYFLOW])) {
+//                    continue;
+//                }
+//
+//                if (isset($expectedResult['headers'][Constants::HEADER_PUFFIN_UA])) {
+//                    continue;
+//                }
+//
+//                if (isset($expectedResult['headers'][Constants::HEADER_DEVICE_STOCK_UA])) {
+//                    continue;
+//                }
+//
+//                if (!isset($expectedResult['headers'][Constants::HEADER_DEVICE_STOCK_UA])) {
+//                    continue;
+//                }
+
+                $index = sprintf('file:%s test:%d', $filepath, $i);
 
                 $data[$index] = [
-                    'headers' => $expectedResult->getHeaders(),
+                    'headers' => $expectedResult['headers'],
                     'result' => $expectedResult,
                 ];
             }

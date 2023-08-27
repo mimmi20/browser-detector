@@ -12,11 +12,9 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Parser;
 
-use BrowserDetector\Loader\BrowserLoaderFactoryInterface;
+use BrowserDetector\Loader\BrowserLoaderInterface;
 use BrowserDetector\Loader\NotFoundException;
 use BrowserDetector\Parser\Helper\RulefileParserInterface;
-use UaResult\Browser\BrowserInterface;
-use UaResult\Engine\EngineInterface;
 use UnexpectedValueException;
 
 use function sprintf;
@@ -29,7 +27,7 @@ final class BrowserParser implements BrowserParserInterface
 
     /** @throws void */
     public function __construct(
-        private readonly BrowserLoaderFactoryInterface $loaderFactory,
+        private readonly BrowserLoaderInterface $loader,
         private readonly RulefileParserInterface $fileParser,
     ) {
         // nothing to do
@@ -38,37 +36,27 @@ final class BrowserParser implements BrowserParserInterface
     /**
      * Gets the information about the browser by User Agent
      *
-     * @return array<int, (BrowserInterface|EngineInterface|null)>
-     * @phpstan-return array{0: BrowserInterface, 1: EngineInterface|null}
-     *
-     * @throws NotFoundException
-     * @throws UnexpectedValueException
+     * @throws void
      */
-    public function parse(string $useragent): array
+    public function parse(string $useragent): string
     {
         $mode = $this->fileParser->parseFile(self::GENERIC_FILE, $useragent, 'unknown');
 
-        $key = $this->fileParser->parseFile(
+        return $this->fileParser->parseFile(
             sprintf(self::SPECIFIC_FILE, $mode),
             $useragent,
             'unknown',
         );
-
-        return $this->load($key, $useragent);
     }
 
     /**
-     * @return array<int, (BrowserInterface|EngineInterface|null)>
-     * @phpstan-return array{0: BrowserInterface, 1: EngineInterface|null}
+     * @return array{0: array{name: string|null, modus: string|null, version: string|null, manufacturer: string, bits: int|null, type: string}, 1: string|null}
      *
      * @throws NotFoundException
      * @throws UnexpectedValueException
      */
     public function load(string $key, string $useragent = ''): array
     {
-        $loaderFactory = $this->loaderFactory;
-        $loader        = $loaderFactory();
-
-        return $loader->load($key, $useragent);
+        return $this->loader->load($key, $useragent);
     }
 }

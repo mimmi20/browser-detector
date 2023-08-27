@@ -12,17 +12,14 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Loader;
 
-use BrowserDetector\Factory\DeviceFactory;
-use BrowserDetector\Factory\DisplayFactory;
 use BrowserDetector\Loader\Helper\DataInterface;
-use BrowserDetector\Parser\PlatformParserInterface;
 use Psr\Log\LoggerInterface;
 use stdClass;
 use UaDeviceType\TypeLoader;
-use UaResult\Device\DeviceInterface;
-use UaResult\Os\OsInterface;
+use UaDeviceType\Unknown;
 use UnexpectedValueException;
 
+use function array_key_exists;
 use function assert;
 
 final class DeviceLoader implements DeviceLoaderInterface
@@ -32,19 +29,18 @@ final class DeviceLoader implements DeviceLoaderInterface
         private readonly LoggerInterface $logger,
         private readonly DataInterface $initData,
         private readonly CompanyLoaderInterface $companyLoader,
-        private readonly PlatformParserInterface $platformParser,
     ) {
         $initData();
     }
 
     /**
-     * @return array<int, (DeviceInterface|OsInterface|null)>
-     * @phpstan-return array{0:DeviceInterface, 1:OsInterface|null}
+     * @return array<int, (array<mixed>|string|null)>
+     * @phpstan-return array{0:array{deviceName: string|null, marketingName: string|null, manufacturer: string|null, brand: string|null, dualOrientation: bool|null, simCount: int|null, display: array{width: int|null, height: int|null, touch: bool|null, size: float|null}, type: string}, 1:string|null}
      *
      * @throws NotFoundException
      * @throws UnexpectedValueException
      */
-    public function load(string $key, string $useragent = ''): array
+    public function load(string $key): array
     {
         if (!$this->initData->hasItem($key)) {
             throw new NotFoundException('the device with key "' . $key . '" was not found');
@@ -58,26 +54,79 @@ final class DeviceLoader implements DeviceLoaderInterface
 
         assert($deviceData instanceof stdClass);
 
-        $platformKey = $deviceData->platform;
-        $platform    = null;
+        $device = $this->fromArray((array) $deviceData);
 
-        if ($platformKey !== null) {
-            try {
-                $platform = $this->platformParser->load($platformKey, $useragent);
-            } catch (UnexpectedValueException $e) {
-                $this->logger->warning($e);
-            }
+        return [$device, $deviceData->platform];
+    }
+
+    /**
+     * @param array<string, (int|stdClass|string|null)> $data
+     * @phpstan-param array{deviceName?: (string|null), marketingName?: (string|null), manufacturer?: string, brand?: string, type?: (string|null), display?: (array{width?: (int|null), height?: (int|null), touch?: (bool|null), size?: (int|float|null)}|stdClass|null)} $data
+     *
+     * @return array{deviceName: string|null, marketingName: string|null, manufacturer: string|null, brand: string|null, dualOrientation: bool|null, simCount: int|null, display: array{width: int|null, height: int|null, touch: bool|null, size: float|null}, type: string}
+     *
+     * @throws void
+     */
+    public function fromArray(array $data): array
+    {
+        assert(array_key_exists('deviceName', $data), '"deviceName" property is required');
+        assert(array_key_exists('marketingName', $data), '"marketingName" property is required');
+        assert(array_key_exists('manufacturer', $data), '"manufacturer" property is required');
+        assert(array_key_exists('brand', $data), '"brand" property is required');
+        assert(array_key_exists('type', $data), '"type" property is required');
+        assert(array_key_exists('display', $data), '"display" property is required');
+
+        $deviceName    = $data['deviceName'] !== null && $data['deviceName'] !== ''
+            ? $data['deviceName']
+            : null;
+        $marketingName = $data['marketingName'] !== null && $data['marketingName'] !== ''
+            ? $data['marketingName']
+            : null;
+
+        $type = new Unknown();
+
+        try {
+            $type = (new TypeLoader())->load((string) $data['type']);
+        } catch (\UaDeviceType\NotFoundException $e) {
+            $this->logger->info($e);
         }
 
-        $deviceFactory = new DeviceFactory(
-            $this->companyLoader,
-            new TypeLoader(),
-            new DisplayFactory(),
-            $this->logger,
-        );
+        $manufacturer = ['type' => 'unknown'];
 
-        $device = $deviceFactory->fromArray((array) $deviceData, $useragent);
+        try {
+            $manufacturer = $this->companyLoader->load($data['manufacturer']);
+        } catch (NotFoundException $e) {
+            $this->logger->info($e);
+        }
 
-        return [$device, $platform];
+        $brand = ['type' => 'unknown'];
+
+        try {
+            $brand = $this->companyLoader->load($data['brand']);
+        } catch (NotFoundException $e) {
+            $this->logger->info($e);
+        }
+
+        /**
+         * @var array<string, (bool|float|int|null)> $displayData
+         * @phpstan-var array{width?: int|null, height?: int|null, touch?: bool|null, size?: int|float|null} $displayData
+         */
+        $displayData = (array) $data['display'];
+
+        assert(array_key_exists('width', $displayData), '"width" property is required');
+        assert(array_key_exists('height', $displayData), '"height" property is required');
+        assert(array_key_exists('touch', $displayData), '"touch" property is required');
+        assert(array_key_exists('size', $displayData), '"size" property is required');
+
+        return [
+            'deviceName' => $deviceName,
+            'marketingName' => $marketingName,
+            'manufacturer' => $manufacturer['type'],
+            'brand' => $brand['type'],
+            'dualOrientation' => $data['dualOrientation'] ?? null,
+            'simCount' => $data['simCount'] ?? null,
+            'display' => $displayData,
+            'type' => $type->getType(),
+        ];
     }
 }

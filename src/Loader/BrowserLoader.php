@@ -13,34 +13,38 @@ declare(strict_types = 1);
 namespace BrowserDetector\Loader;
 
 use BrowserDetector\Bits\Browser;
-use BrowserDetector\Factory\BrowserFactory;
 use BrowserDetector\Loader\Helper\DataInterface;
-use BrowserDetector\Parser\EngineParserInterface;
 use BrowserDetector\Version\VersionFactory;
 use Psr\Log\LoggerInterface;
 use stdClass;
 use UaBrowserType\TypeLoader;
-use UaResult\Browser\BrowserInterface;
-use UaResult\Engine\EngineInterface;
+use UaBrowserType\Unknown;
 use UnexpectedValueException;
 
+use function array_key_exists;
 use function assert;
+use function is_int;
+use function is_string;
 
 final class BrowserLoader implements BrowserLoaderInterface
 {
+    use VersionFactoryTrait;
+
+    public const DATA_PATH = __DIR__ . '/../../data/browsers';
+
     /** @throws void */
     public function __construct(
         private readonly LoggerInterface $logger,
         private readonly DataInterface $initData,
         private readonly CompanyLoaderInterface $companyLoader,
-        private readonly EngineParserInterface $engineParser,
     ) {
+        $this->versionFactory = new VersionFactory();
+
         $initData();
     }
 
     /**
-     * @return array<int, (BrowserInterface|EngineInterface|null)>
-     * @phpstan-return array{0: BrowserInterface, 1: EngineInterface|null}
+     * @return array{0: array{name: string|null, modus: string|null, version: string|null, manufacturer: string, bits: int|null, type: string}, 1: string|null}
      *
      * @throws NotFoundException
      * @throws UnexpectedValueException
@@ -62,24 +66,82 @@ final class BrowserLoader implements BrowserLoaderInterface
         $browserData->bits  = (new Browser())->getBits($useragent);
         $browserData->modus = null;
 
-        $engineKey = $browserData->engine;
-        $engine    = null;
+        return [
+            $this->fromArray((array) $browserData, $useragent),
+            $browserData->engine,
+        ];
+    }
 
-        if ($engineKey !== null) {
+    /**
+     * @param array<string, int|string|null> $data
+     *
+     * @return array{name: string|null, modus: string|null, version: string|null, manufacturer: string, bits: int|null, type: string}
+     *
+     * @throws UnexpectedValueException
+     */
+    public function fromArray(array $data, string $useragent = ''): array
+    {
+        // var_dump($data);
+        assert(
+            array_key_exists('name', $data) && (is_string($data['name']) || $data['name'] === null),
+            '"name" property is required',
+        );
+        assert(
+            array_key_exists('manufacturer', $data) && (is_string(
+                $data['manufacturer'],
+            ) || $data['manufacturer'] === null),
+            '"manufacturer" property is required',
+        );
+        assert(
+            array_key_exists('version', $data) && (is_string(
+                $data['version'],
+            ) || $data['version'] === null || $data['version'] instanceof stdClass),
+            '"version" property is required',
+        );
+        assert(
+            array_key_exists('type', $data) && (is_string($data['type']) || $data['type'] === null),
+            '"type" property is required',
+        );
+        assert(
+            array_key_exists('bits', $data) && (is_int($data['bits']) || $data['bits'] === null),
+            '"bits" property is required',
+        );
+        assert(
+            array_key_exists('modus', $data) && (is_string($data['modus']) || $data['modus'] === null),
+            '"modus" property is required',
+        );
+
+        $name  = $data['name'];
+        $modus = $data['modus'];
+        $bits  = $data['bits'];
+        $type  = new Unknown();
+
+        if ($data['type'] !== null) {
             try {
-                $engine = $this->engineParser->load($engineKey, $useragent);
-            } catch (UnexpectedValueException $e) {
-                $this->logger->warning($e);
+                $type = (new TypeLoader())->load($data['type']);
+            } catch (\UaBrowserType\NotFoundException $e) {
+                $this->logger->info($e);
             }
         }
 
-        $browser = (new BrowserFactory(
-            $this->companyLoader,
-            new VersionFactory(),
-            new TypeLoader(),
-            $this->logger,
-        ))->fromArray((array) $browserData, $useragent);
+        $version      = $this->getVersion($data['version'], $useragent, $this->logger);
+        $manufacturer = ['type' => 'unknown'];
 
-        return [$browser, $engine];
+        if ($data['manufacturer'] !== null) {
+            try {
+                $manufacturer = $this->companyLoader->load($data['manufacturer']);
+            } catch (NotFoundException $e) {
+                $this->logger->info($e);
+            }
+        }
+
+        return [
+            'name' => $name,
+            'modus' => $modus,
+            'version' => $version->getVersion(),
+            'manufacturer' => $manufacturer['type'],
+            'bits' => $bits,
+            'type' => $type->getType(),
+        ];
     }
 }

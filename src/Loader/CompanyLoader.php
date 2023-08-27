@@ -14,8 +14,6 @@ namespace BrowserDetector\Loader;
 
 use BrowserDetector\Loader\Helper\DataInterface;
 use stdClass;
-use UaResult\Company\Company;
-use UaResult\Company\CompanyInterface;
 
 use function assert;
 
@@ -28,11 +26,11 @@ final class CompanyLoader implements CompanyLoaderInterface
     }
 
     /**
-     * @throws NotFoundException
+     * @return array{type: string, name: string|null, brandname: string|null}
      *
-     * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+     * @throws NotFoundException
      */
-    public function load(string $key, string $useragent = ''): CompanyInterface
+    public function load(string $key): array
     {
         if (!$this->initData->hasItem($key)) {
             throw new NotFoundException('the company with key "' . $key . '" was not found');
@@ -46,6 +44,10 @@ final class CompanyLoader implements CompanyLoaderInterface
 
         assert($companyData instanceof stdClass);
 
-        return new Company($key, $companyData->name, $companyData->brandname);
+        return [
+            'type' => $key,
+            'name' => $companyData->name,
+            'brandname' => $companyData->brandname,
+        ];
     }
 }

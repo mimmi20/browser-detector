@@ -8,6 +8,8 @@
       "marketingName": "TB714",
       "manufacturer": "acme",
       "brand": "acme",
+      "dualOrientation": null,
+      "simCount": null,
       "display": {
         "width": 854,
         "height": 480,
@@ -16,7 +18,7 @@
       },
       "type": "tablet"
     },
-    "browser": {
+    "client": {
       "name": "Android WebView",
       "modus": null,
       "version": "30.0.0.0",

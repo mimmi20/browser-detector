@@ -20,5 +20,5 @@ interface SpecificLoaderInterface
      * @throws NotFoundException
      * @throws UnexpectedValueException
      */
-    public function load(string $key, string $useragent = ''): mixed;
+    public function load(string $key): mixed;
 }

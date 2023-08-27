@@ -12,10 +12,12 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Loader;
 
-use UaResult\Company\CompanyInterface;
-
-interface CompanyLoaderInterface extends SpecificLoaderInterface
+interface CompanyLoaderInterface
 {
-    /** @throws NotFoundException */
-    public function load(string $key, string $useragent = ''): CompanyInterface;
+    /**
+     * @return array{type: string, name: string|null, brandname: string|null}
+     *
+     * @throws NotFoundException
+     */
+    public function load(string $key): array;
 }

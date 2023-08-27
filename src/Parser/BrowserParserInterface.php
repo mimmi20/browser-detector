@@ -13,8 +13,6 @@ declare(strict_types = 1);
 namespace BrowserDetector\Parser;
 
 use BrowserDetector\Loader\NotFoundException;
-use UaResult\Browser\BrowserInterface;
-use UaResult\Engine\EngineInterface;
 use UnexpectedValueException;
 
 interface BrowserParserInterface
@@ -22,17 +20,13 @@ interface BrowserParserInterface
     /**
      * Gets the information about the browser by User Agent
      *
-     * @return array<int, BrowserInterface|EngineInterface|null>
-     * @phpstan-return array{0: BrowserInterface, 1: EngineInterface|null}
-     *
      * @throws NotFoundException
      * @throws UnexpectedValueException
      */
-    public function parse(string $useragent): array;
+    public function parse(string $useragent): string;
 
     /**
-     * @return array<int, BrowserInterface|EngineInterface|null>
-     * @phpstan-return array{0: BrowserInterface, 1: EngineInterface|null}
+     * @return array{0: array{name: string|null, modus: string|null, version: string|null, manufacturer: string, bits: int|null, type: string}, 1: string|null}
      *
      * @throws NotFoundException
      * @throws UnexpectedValueException

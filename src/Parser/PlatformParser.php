@@ -13,9 +13,8 @@ declare(strict_types = 1);
 namespace BrowserDetector\Parser;
 
 use BrowserDetector\Loader\NotFoundException;
-use BrowserDetector\Loader\PlatformLoaderFactoryInterface;
+use BrowserDetector\Loader\PlatformLoaderInterface;
 use BrowserDetector\Parser\Helper\RulefileParserInterface;
-use UaResult\Os\OsInterface;
 use UnexpectedValueException;
 
 use function sprintf;
@@ -28,7 +27,7 @@ final class PlatformParser implements PlatformParserInterface
 
     /** @throws void */
     public function __construct(
-        private readonly PlatformLoaderFactoryInterface $loaderFactory,
+        private readonly PlatformLoaderInterface $loader,
         private readonly RulefileParserInterface $fileParser,
     ) {
         // nothing to do
@@ -37,31 +36,27 @@ final class PlatformParser implements PlatformParserInterface
     /**
      * Gets the information about the browser by User Agent
      *
-     * @throws NotFoundException
-     * @throws UnexpectedValueException
+     * @throws void
      */
-    public function parse(string $useragent): OsInterface
+    public function parse(string $useragent): string
     {
         $mode = $this->fileParser->parseFile(self::GENERIC_FILE, $useragent, 'unknown');
 
-        $key = $this->fileParser->parseFile(
+        return $this->fileParser->parseFile(
             sprintf(self::SPECIFIC_FILE, $mode),
             $useragent,
             'unknown',
         );
-
-        return $this->load($key, $useragent);
     }
 
     /**
+     * @return array{name: string|null, marketingName: string|null, version: string|null, manufacturer: string, bits: int|null}
+     *
      * @throws NotFoundException
      * @throws UnexpectedValueException
      */
-    public function load(string $key, string $useragent = ''): OsInterface
+    public function load(string $key, string $useragent = ''): array
     {
-        $loaderFactory = $this->loaderFactory;
-        $loader        = $loaderFactory();
-
-        return $loader->load($key, $useragent);
+        return $this->loader->load($key, $useragent);
     }
 }
