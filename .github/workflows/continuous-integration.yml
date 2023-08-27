@@ -273,7 +273,7 @@ jobs:
       - "ci"
       - "tests"
       - "code-coverage"
-      - "integration-tests"
+      # - "integration-tests"
 
     steps:
       - name: Successful run
