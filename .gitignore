@@ -24,5 +24,9 @@ tests/temp/*.ini
 infection-*.log
 rewrite*.php
 .reports/
+node_modules/
 .build/
+package-lock.json
+.reports
 *.bak
+*.txt

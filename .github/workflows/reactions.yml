@@ -1,6 +1,8 @@
 # https://help.github.com/en/categories/automating-your-workflow-with-github-actions
 
-name: 'Reaction Comments'
+# file-version: 1.0
+
+name: "Reaction Comments"
 
 on:
   issue_comment:
