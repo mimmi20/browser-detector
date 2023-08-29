@@ -105,7 +105,7 @@ final class Detector implements DetectorInterface
         $result = [
             'headers' => $request->getHeaders(),
             'device' => [
-                'name' => null,
+                'deviceName' => null,
                 'marketingName' => null,
                 'manufacturer' => null,
                 'brand' => null,
@@ -118,6 +118,7 @@ final class Detector implements DetectorInterface
                     'size' => null,
                 ],
                 'type' => null,
+                'ismobile' => null,
             ],
             'os' => [
                 'name' => null,
@@ -133,6 +134,7 @@ final class Detector implements DetectorInterface
                 'manufacturer' => null,
                 'bits' => null,
                 'type' => null,
+                'isbot' => null,
             ],
             'engine' => [
                 'name' => null,

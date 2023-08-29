@@ -1,4 +1,8 @@
-name: Lock closed issue
+# https://help.github.com/en/categories/automating-your-workflow-with-github-actions
+
+# file-version: 1.0
+
+name: "Lock closed issue"
 
 on:
   issues:

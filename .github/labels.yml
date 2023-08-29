@@ -1,4 +1,6 @@
 ---
+# file-version: 1.0
+
 # Default GitHub labels
 - color: "ee0701"
   name: "bug"
@@ -63,7 +65,7 @@
   name: "patch"
   description: "Patch"
 
-# other Labels to mimmi20/BrowserDetector
+# other Labels
 - color: "b0b1fc"
   name: "new browser"
   description: "new Browser"

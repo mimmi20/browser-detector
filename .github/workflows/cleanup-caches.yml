@@ -1,4 +1,9 @@
+# https://help.github.com/en/categories/automating-your-workflow-with-github-actions
+
+# file-version: 1.0
+
 name: "Cleanup caches by a branch"
+
 on:
   pull_request:
     types:
