@@ -427,6 +427,18 @@
     },
     "engine": "webkit"
   },
+  "podcaster": {
+    "name": "Podcaster",
+    "manufacturer": "unknown",
+    "type": "multimedia-player",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Podcaster"
+      ]
+    },
+    "engine": null
+  },
   "podcastone": {
     "name": "PodcastOne",
     "manufacturer": "unknown",

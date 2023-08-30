@@ -80,6 +80,18 @@
     },
     "engine": null
   },
+  "ucbrowser turbo": {
+    "name": "UC Browser Turbo",
+    "manufacturer": "ucweb",
+    "type": "transcoder",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "UCTurbo"
+      ]
+    },
+    "engine": null
+  },
   "novarra-vision": {
     "name": "Vision",
     "manufacturer": "novarra",

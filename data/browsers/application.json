@@ -426,6 +426,18 @@
     },
     "engine": "webkit"
   },
+  "electron": {
+    "name": "Electron",
+    "manufacturer": "microsoft",
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Electron"
+      ]
+    },
+    "engine": null
+  },
   "elluminate live": {
     "name": "Elluminate Live",
     "manufacturer": "blackboard",
@@ -1543,6 +1555,18 @@
       "search": null
     },
     "engine": "webkit"
+  },
+  "vs code": {
+    "name": "Visual Studio Code",
+    "manufacturer": "microsoft",
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Code"
+      ]
+    },
+    "engine": null
   },
   "apple webkit service": {
     "name": "Webkit Service",

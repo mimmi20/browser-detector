@@ -1499,6 +1499,18 @@
     },
     "engine": "webkit"
   },
+  "heytapbrowser": {
+    "name": "HeyTapBrowser",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "HeyTapBrowser"
+      ]
+    },
+    "engine": null
+  },
   "hitpad": {
     "name": "Hitpad",
     "manufacturer": "unknown",
@@ -1953,6 +1965,18 @@
       ]
     },
     "engine": "webkit"
+  },
+  "kik": {
+    "name": "Kik",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Kik"
+      ]
+    },
+    "engine": null
   },
   "kindle": {
     "name": "Kindle",
@@ -2459,8 +2483,8 @@
     "engine": "webkit"
   },
   "mz browser": {
-    "name": "Mz Browser",
-    "manufacturer": "unknown",
+    "name": "Meizu Browser",
+    "manufacturer": "meizu",
     "type": "browser",
     "version": {
       "class": "VersionFactory",
@@ -2700,6 +2724,18 @@
     },
     "engine": "blink"
   },
+  "odd browser": {
+    "name": "Odd Browser",
+    "manufacturer": "nasai",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Odd"
+      ]
+    },
+    "engine": "webkit"
+  },
   "odyssey web browser": {
     "name": "Odyssey Web Browser",
     "manufacturer": "fabien coeurjoly",
@@ -2801,6 +2837,18 @@
       "class": "VersionFactory",
       "search": [
         "OMI"
+      ]
+    },
+    "engine": null
+  },
+  "opera gx": {
+    "name": "Opera GX",
+    "manufacturer": "opera",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "OPX"
       ]
     },
     "engine": null
@@ -3022,6 +3070,18 @@
       ]
     },
     "engine": "gecko"
+  },
+  "phoenix browser": {
+    "name": "Phoenix Browser",
+    "manufacturer": "cloudview-technology",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "PHX"
+      ]
+    },
+    "engine": null
   },
   "pirate browser": {
     "name": "Pirate Browser",
@@ -3710,6 +3770,18 @@
     },
     "engine": "unknown"
   },
+  "sraf": {
+    "name": "Sraf",
+    "manufacturer": "seraphic",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "SRAF"
+      ]
+    },
+    "engine": null
+  },
   "stainless": {
     "name": "Stainless",
     "manufacturer": "mesa",
@@ -3832,6 +3904,18 @@
     },
     "engine": "webkit"
   },
+  "tbrowser": {
+    "name": "TBrowser",
+    "manufacturer": "browser-edson-thiago",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Tbrowser"
+      ]
+    },
+    "engine": null
+  },
   "t-online browser": {
     "name": "T-Online Browser",
     "manufacturer": "unknown",
@@ -3897,6 +3981,18 @@
       ]
     },
     "engine": "webkit"
+  },
+  "teslabrowser": {
+    "name": "TeslaBrowser",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "TeslaBrowser"
+      ]
+    },
+    "engine": null
   },
   "theworld": {
     "name": "TheWorld Browser",
@@ -4255,6 +4351,30 @@
       "class": "VersionFactory",
       "search": [
         "YaBrowser"
+      ]
+    },
+    "engine": null
+  },
+  "yabrowser-lite": {
+    "name": "Yandex Browser Lite",
+    "manufacturer": "yandex",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "YaBrowser"
+      ]
+    },
+    "engine": null
+  },
+  "ya-search-browser": {
+    "name": "Yandex Search Browser",
+    "manufacturer": "yandex",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "YaSearchBrowser"
       ]
     },
     "engine": null
