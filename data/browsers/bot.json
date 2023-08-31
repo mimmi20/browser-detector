@@ -885,6 +885,18 @@
     },
     "engine": "unknown"
   },
+  "bingsearch": {
+    "name": "Bing Search",
+    "manufacturer": "microsoft",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "BingSapphire"
+      ]
+    },
+    "engine": null
+  },
   "bitlybot": {
     "name": "BitlyBot",
     "manufacturer": "unknown",
@@ -5160,6 +5172,18 @@
     },
     "engine": "unknown"
   },
+  "naver-adsbot": {
+    "name": "AdsBot Naver",
+    "manufacturer": "nhn-corporation",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "AdsBot\\-Naver"
+      ]
+    },
+    "engine": null
+  },
   "naverbot": {
     "name": "NaverBot",
     "manufacturer": "nhn-corporation",
@@ -5172,6 +5196,18 @@
       ]
     },
     "engine": "unknown"
+  },
+  "naver": {
+    "name": "Naver",
+    "manufacturer": "nhn-corporation",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Naver"
+      ]
+    },
+    "engine": null
   },
   "nbot": {
     "name": "nbot",

@@ -547,6 +547,18 @@
     },
     "engine": "webkit"
   },
+  "procast": {
+    "name": "Procast",
+    "manufacturer": "dsa-solutions",
+    "type": "multimedia-player",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Procast"
+      ]
+    },
+    "engine": "webkit"
+  },
   "quicktime": {
     "name": "Quicktime",
     "manufacturer": "apple",

@@ -2365,6 +2365,19 @@
     },
     "engine": null
   },
+  "mobile lenovo browser": {
+    "name": "Mobile Lenovo Browser",
+    "manufacturer": "lenovo",
+    "bits": 32,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "MobileLenovoBrowser"
+      ]
+    },
+    "engine": "blink"
+  },
   "mobile safari uiwebview": {
     "name": "Mobile Safari UIWebView",
     "manufacturer": "apple",
@@ -3296,6 +3309,18 @@
     },
     "engine": "blink"
   },
+  "quick search tv": {
+    "name": "Quick Search TV",
+    "manufacturer": "aosp-studio-apps",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Quick Search TV"
+      ]
+    },
+    "engine": null
+  },
   "qh-browser": {
     "name": "Quick Heal Browser",
     "manufacturer": "quick-heal",
@@ -3457,6 +3482,18 @@
       "class": "VersionFactory",
       "search": [
         "Salam Browser"
+      ]
+    },
+    "engine": "blink"
+  },
+  "salamweb": {
+    "name": "SalamWeb",
+    "manufacturer": "salamweb",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "SalamWeb"
       ]
     },
     "engine": "blink"
@@ -4374,7 +4411,8 @@
     "version": {
       "class": "VersionFactory",
       "search": [
-        "YaSearchBrowser"
+        "YaSearchBrowser",
+        "YandexSearchBrowser"
       ]
     },
     "engine": null
