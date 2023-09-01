@@ -921,6 +921,18 @@
     },
     "engine": "gecko"
   },
+  "dalvik": {
+    "name": "Dalvik",
+    "manufacturer": "google",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Dalvik"
+      ]
+    },
+    "engine": "webkit"
+  },
   "darwin browser": {
     "name": "Darwin Browser",
     "manufacturer": "unknown",

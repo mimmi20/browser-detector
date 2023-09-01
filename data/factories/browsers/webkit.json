@@ -43,7 +43,7 @@
     "/gsa/i": "google app",
     "/1passwordthumbs/i": "1passwordthumbs",
     "/1password/i": "1password",
-    "/alohabrowser/i": "aloha-browser",
+    "/alohabrowser|aloha\\//i": "aloha-browser",
     "/bingweb/i": "bingweb",
     "/klar\\/|focus\\//i": "firefox klar",
     "/edgios/i": "edge mobile for ios",

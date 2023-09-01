@@ -35,6 +35,18 @@
     },
     "engine": "unknown"
   },
+  "2ip bot": {
+    "name": "2ip bot",
+    "manufacturer": "barzmann-internet-solutions",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "2ip bot"
+      ]
+    },
+    "engine": "unknown"
+  },
   "360spider": {
     "name": "360Spider",
     "manufacturer": "qihoo",
@@ -481,18 +493,6 @@
       "class": "VersionFactory",
       "search": [
         "Synapse"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "apache-httpclient": {
-    "name": "Apache-HttpClient",
-    "manufacturer": "apache",
-    "type": "bot",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "Apache\\-HttpClient"
       ]
     },
     "engine": "unknown"
@@ -1167,6 +1167,18 @@
       "class": "VersionFactory",
       "search": [
         "BWC"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "bytespider": {
+    "name": "Bytespider",
+    "manufacturer": "bytedance",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Bytespider"
       ]
     },
     "engine": "unknown"

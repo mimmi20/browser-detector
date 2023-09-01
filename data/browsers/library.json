@@ -1,0 +1,14 @@
+{
+  "apache-httpclient": {
+    "name": "Apache-HttpClient",
+    "manufacturer": "apache",
+    "type": "library",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Apache\\-HttpClient"
+      ]
+    },
+    "engine": "unknown"
+  }
+}
