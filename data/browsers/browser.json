@@ -351,6 +351,42 @@
     },
     "engine": null
   },
+  "avast secure browser": {
+    "name": "Avast Secure Browser",
+    "manufacturer": "avast-software",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Avast"
+      ]
+    },
+    "engine": null
+  },
+  "avg secure browser": {
+    "name": "AVG Secure Browser",
+    "manufacturer": "avast-software",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "AVG"
+      ]
+    },
+    "engine": null
+  },
+  "ccleaner browser": {
+    "name": "CCleaner Browser",
+    "manufacturer": "piriform",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "CCleaner"
+      ]
+    },
+    "engine": null
+  },
   "aviator": {
     "name": "Aviator",
     "manufacturer": "whitehat",
@@ -1059,6 +1095,19 @@
     },
     "engine": null
   },
+  "duckduck app": {
+    "name": "DuckDuckGo Privacy Browser",
+    "manufacturer": "duck-duck-go",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "DDG\\-Android\\-",
+        "DuckDuckGo"
+      ]
+    },
+    "engine": null
+  },
   "ecosia": {
     "name": "Ecosia",
     "manufacturer": "unknown",
@@ -1120,6 +1169,18 @@
       ]
     },
     "engine": "webkit"
+  },
+  "edge webview": {
+    "name": "Edge WebView",
+    "manufacturer": "microsoft",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "EdgW"
+      ]
+    },
+    "engine": null
   },
   "ekioh browser": {
     "name": "Ekioh Browser",
@@ -1678,18 +1739,6 @@
       ]
     },
     "engine": "webkit"
-  },
-  "iceape": {
-    "name": "Iceape",
-    "manufacturer": "software-in-the-public-interest",
-    "type": "browser",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "Iceape"
-      ]
-    },
-    "engine": "gecko"
   },
   "icecat": {
     "name": "IceCat",
@@ -3552,19 +3601,6 @@
       "search": null
     },
     "engine": "unknown"
-  },
-  "seamonkey": {
-    "name": "SeaMonkey",
-    "manufacturer": "mozilla-foundation",
-    "type": "browser",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "SeaMonkey",
-        "Seamonkey"
-      ]
-    },
-    "engine": "gecko"
   },
   "hp secure web browser": {
     "name": "Secure Web Browser",

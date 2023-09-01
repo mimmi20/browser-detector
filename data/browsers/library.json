@@ -10,5 +10,55 @@
       ]
     },
     "engine": "unknown"
+  },
+  "dart": {
+    "name": "Dart",
+    "manufacturer": "google",
+    "type": "library",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Dart"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "go httpclient": {
+    "name": "GO HttpClient",
+    "manufacturer": "google",
+    "type": "library",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Go\\-http\\-client",
+        "Go"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "guzzle http client": {
+    "name": "Guzzle Http Client",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "GuzzleHttp",
+        "Guzzle"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "java": {
+    "name": "Java Standard Library",
+    "manufacturer": "oracle",
+    "type": "library",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Java"
+      ]
+    },
+    "engine": "unknown"
   }
 }

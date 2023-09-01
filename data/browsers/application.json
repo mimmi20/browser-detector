@@ -414,18 +414,6 @@
     },
     "engine": "webkit"
   },
-  "duckduck app": {
-    "name": "DuckDuck App",
-    "manufacturer": "duck-duck-go",
-    "type": "application",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "DDG\\-Android\\-"
-      ]
-    },
-    "engine": null
-  },
   "eb iphone/ipad app": {
     "name": "EB iPhone/IPad App",
     "manufacturer": "unknown",
@@ -459,16 +447,6 @@
       "search": null
     },
     "engine": "unknown"
-  },
-  "evernote app": {
-    "name": "Evernote App",
-    "manufacturer": "evernote",
-    "type": "application",
-    "version": {
-      "class": null,
-      "search": null
-    },
-    "engine": "webkit"
   },
   "excel": {
     "name": "Excel",
@@ -593,6 +571,18 @@
     },
     "engine": "unknown"
   },
+  "hi-search": {
+    "name": "HiSearch",
+    "manufacturer": "huawei",
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "HiSearch"
+      ]
+    },
+    "engine": null
+  },
   "goodreader": {
     "name": "GoodReader",
     "manufacturer": "unknown",
@@ -612,7 +602,8 @@
     "version": {
       "class": "VersionFactory",
       "search": [
-        "GSA"
+        "GSA",
+        "GoogleApp"
       ]
     },
     "engine": null
@@ -787,6 +778,18 @@
     },
     "engine": "unknown"
   },
+  "keeper": {
+    "name": "Keeper Passwort Manager",
+    "manufacturer": "keeper",
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Keeper"
+      ]
+    },
+    "engine": "unknown"
+  },
   "kioclient": {
     "name": "kioclient",
     "manufacturer": "kde",
@@ -807,6 +810,19 @@
       "class": "VersionFactory",
       "search": [
         "LibreOffice"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "linkedin-app": {
+    "name": "LinkedIn",
+    "manufacturer": "linked-in",
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "LinkedInApp",
+        "\\[LinkedInApp\\]"
       ]
     },
     "engine": "unknown"
@@ -1880,6 +1896,28 @@
       "search": [
         "Zite"
       ]
+    },
+    "engine": null
+  },
+  "teams": {
+    "name": "Teams",
+    "manufacturer": "microsoft",
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Teams"
+      ]
+    },
+    "engine": null
+  },
+  "anti-browser-spy": {
+    "name": "AntiBrowserSpy",
+    "manufacturer": "abelssoft",
+    "type": "application",
+    "version": {
+      "class": null,
+      "search": null
     },
     "engine": null
   }

@@ -1,0 +1,24 @@
+{
+  "lighthouse": {
+    "name": "Lighthouse",
+    "manufacturer": "google",
+    "type": "site-monitor",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Lighthouse"
+      ]
+    },
+    "engine": null
+  },
+  "webpagetest": {
+    "name": "WebPagetest",
+    "manufacturer": "wpo-foundation",
+    "type": "site-monitor",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": null
+  }
+}

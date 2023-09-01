@@ -439,6 +439,18 @@
     },
     "engine": "unknown"
   },
+  "amazon bot": {
+    "name": "Amazon Bot",
+    "manufacturer": "amazon",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Amazonbot"
+      ]
+    },
+    "engine": "unknown"
+  },
   "anonymizied": {
     "name": "Anonymizied",
     "manufacturer": "unknown",
@@ -2834,19 +2846,6 @@
     },
     "engine": "unknown"
   },
-  "go httpclient": {
-    "name": "GO HttpClient",
-    "manufacturer": "google",
-    "type": "bot",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "Go\\-http\\-client",
-        "Go"
-      ]
-    },
-    "engine": "unknown"
-  },
   "gobliobot": {
     "name": "GoblioBot",
     "manufacturer": "unknown",
@@ -3171,6 +3170,30 @@
     },
     "engine": "unknown"
   },
+  "google-read-aloud": {
+    "name": "Google Read Aloud",
+    "manufacturer": "google",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Google-Read-Aloud"
+      ]
+    },
+    "engine": null
+  },
+  "google-safety": {
+    "name": "Google-Safety",
+    "manufacturer": "google",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Google\\-Safety"
+      ]
+    },
+    "engine": null
+  },
   "google-site-verification": {
     "name": "Google-Site-Verification",
     "manufacturer": "google",
@@ -3206,6 +3229,16 @@
       ]
     },
     "engine": "unknown"
+  },
+  "gmail-image-proxy": {
+    "name": "Gmail Image Proxy",
+    "manufacturer": "google",
+    "type": "bot",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": null
   },
   "goose-extractor": {
     "name": "goose-extractor",
@@ -3309,19 +3342,6 @@
       "class": "VersionFactory",
       "search": [
         "GurujiBot"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "guzzle http client": {
-    "name": "Guzzle Http Client",
-    "manufacturer": "unknown",
-    "type": "bot",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "GuzzleHttp",
-        "Guzzle"
       ]
     },
     "engine": "unknown"
@@ -3918,6 +3938,18 @@
     },
     "engine": "unknown"
   },
+  "ioncrawl": {
+    "name": "Ionos Crawler",
+    "manufacturer": "ionos",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "IonCrawl"
+      ]
+    },
+    "engine": "unknown"
+  },
   "ipv4scan": {
     "name": "IPv4Scan",
     "manufacturer": "ipv4scan",
@@ -4018,18 +4050,6 @@
       "class": "VersionFactory",
       "search": [
         "fr-crawler"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "java": {
-    "name": "Java Standard Library",
-    "manufacturer": "oracle",
-    "type": "bot",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "Java"
       ]
     },
     "engine": "unknown"
@@ -5606,7 +5626,7 @@
   },
   "optimizer bot": {
     "name": "Optimizer Bot",
-    "manufacturer": "unknown",
+    "manufacturer": "sistrix",
     "type": "bot",
     "version": {
       "class": null,
@@ -8407,7 +8427,8 @@
     "version": {
       "class": "VersionFactory",
       "search": [
-        "uMBot\\-LN"
+        "uMBot\\-LN",
+        "um-LN"
       ]
     },
     "engine": "unknown"
@@ -9138,16 +9159,6 @@
     },
     "engine": "unknown"
   },
-  "webpagetest": {
-    "name": "WebPagetest",
-    "manufacturer": "wpo-foundation",
-    "type": "bot",
-    "version": {
-      "class": null,
-      "search": null
-    },
-    "engine": null
-  },
   "webringchecker": {
     "name": "WebRingChecker",
     "manufacturer": "unknown",
@@ -9863,7 +9874,7 @@
     },
     "engine": "unknown"
   },
-  "yandeximages": {
+  "yandex-images": {
     "name": "Yandex Image Search",
     "manufacturer": "yandex",
     "type": "bot",
@@ -9885,6 +9896,16 @@
     },
     "engine": "unknown"
   },
+  "yandex-news": {
+    "name": "Yandex News",
+    "manufacturer": "yandex",
+    "type": "bot",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
   "yandexbot": {
     "name": "YandexBot",
     "manufacturer": "yandex",
@@ -9893,6 +9914,30 @@
       "class": "VersionFactory",
       "search": [
         "YandexBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "yandex-favicons": {
+    "name": "Yandex Favicons Bot",
+    "manufacturer": "yandex",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "YandexFavicons"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "yandex-image-resizer": {
+    "name": "Yandex Image Resizer",
+    "manufacturer": "yandex",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "YandexImageResizer"
       ]
     },
     "engine": "unknown"
@@ -10068,6 +10113,18 @@
       "class": "VersionFactory",
       "search": [
         "ZumBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "cookiebot": {
+    "name": "Cookiebot",
+    "manufacturer": "usercentrics",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Cookiebot"
       ]
     },
     "engine": "unknown"

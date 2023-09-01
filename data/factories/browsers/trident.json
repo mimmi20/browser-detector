@@ -77,7 +77,8 @@
     "/espial|escape/i": "espial tv browser",
     "/camino/i": "camino",
     "/ibrowse/i": "ibrowse",
-    "/webpro/i": "web pro"
+    "/webpro(?!d)/i": "web pro",
+    "/sitekiosk/": "sitekiosk"
   },
   "generic": "internet explorer"
 }
