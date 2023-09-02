@@ -393,18 +393,6 @@
     },
     "engine": "unknown"
   },
-  "alexa site audit": {
-    "name": "Alexa Site Audit",
-    "manufacturer": "alexa-internet",
-    "type": "bot",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "alexa site audit"
-      ]
-    },
-    "engine": "unknown"
-  },
   "alexabot": {
     "name": "Alexabot",
     "manufacturer": "alexa-internet",
@@ -1659,18 +1647,6 @@
       "class": "VersionFactory",
       "search": [
         "Curb"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "curl": {
-    "name": "cURL",
-    "manufacturer": "unknown",
-    "type": "bot",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "curl"
       ]
     },
     "engine": "unknown"
@@ -3182,6 +3158,18 @@
     },
     "engine": null
   },
+  "google-ads-conversions": {
+    "name": "Google Ads Conversions",
+    "manufacturer": "google",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Google-Ads-Conversions"
+      ]
+    },
+    "engine": null
+  },
   "google-safety": {
     "name": "Google-Safety",
     "manufacturer": "google",
@@ -3475,18 +3463,6 @@
       "class": "VersionFactory",
       "search": [
         "htdig"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "html validator": {
-    "name": "HTML Validator",
-    "manufacturer": "web-design-group",
-    "type": "bot",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "WDG_Validator"
       ]
     },
     "engine": "unknown"
@@ -5533,18 +5509,6 @@
     },
     "engine": "unknown"
   },
-  "okhttp": {
-    "name": "okhttp",
-    "manufacturer": "unknown",
-    "type": "bot",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "okhttp"
-      ]
-    },
-    "engine": "unknown"
-  },
   "online link validator": {
     "name": "online link validator",
     "manufacturer": "dead-links",
@@ -6270,43 +6234,6 @@
       "class": "VersionFactory",
       "search": [
         "PycURL"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "python": {
-    "name": "Python",
-    "manufacturer": "python-software-foundation",
-    "type": "bot",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "Python",
-        "python\\-requests"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "python-requests": {
-    "name": "python-requests",
-    "manufacturer": "python-software-foundation",
-    "type": "bot",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "python\\-requests"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "python-urllib": {
-    "name": "Python-urllib",
-    "manufacturer": "python-software-foundation",
-    "type": "bot",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "Python\\-urllib"
       ]
     },
     "engine": "unknown"
@@ -8338,6 +8265,18 @@
     },
     "engine": "unknown"
   },
+  "telegrambot": {
+    "name": "TelegramBot",
+    "manufacturer": "telegram",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "TelegramBot"
+      ]
+    },
+    "engine": "unknown"
+  },
   "twitturls": {
     "name": "Twitturls",
     "manufacturer": "unknown",
@@ -8826,18 +8765,6 @@
       "class": "VersionFactory",
       "search": [
         "W3C_Unicorn"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "w3c validator": {
-    "name": "W3C Validator",
-    "manufacturer": "w3c",
-    "type": "bot",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "W3C_Validator"
       ]
     },
     "engine": "unknown"
@@ -10128,5 +10055,77 @@
       ]
     },
     "engine": "unknown"
+  },
+  "leakix": {
+    "name": "LeakIX",
+    "manufacturer": "badaas",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "l9scan",
+        "LeakIX"
+      ]
+    },
+    "engine": null
+  },
+  "chatgpt-user-bot": {
+    "name": "ChatGPT User Bot",
+    "manufacturer": "openai",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "ChatGPT-User"
+      ]
+    },
+    "engine": null
+  },
+  "gpt-bot": {
+    "name": "GPT Bot",
+    "manufacturer": "openai",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "GPTBot"
+      ]
+    },
+    "engine": null
+  },
+  "researchscan": {
+    "name": "researchscan",
+    "manufacturer": "rwth-aachen",
+    "type": "bot",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "repo-lookout-bot": {
+    "name": "RepoLookoutBot",
+    "manufacturer": "crissy-field",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "RepoLookoutBot",
+        "RepoLookoutBot\\/v"
+      ]
+    },
+    "engine": null
+  },
+  "zoominfobot": {
+    "name": "Zoominfobot",
+    "manufacturer": "zoom-information",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "ZoominfoBot"
+      ]
+    },
+    "engine": null
   }
 }

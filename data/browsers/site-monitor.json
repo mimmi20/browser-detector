@@ -20,5 +20,17 @@
       "search": null
     },
     "engine": null
+  },
+  "alexa site audit": {
+    "name": "Alexa Site Audit",
+    "manufacturer": "alexa-internet",
+    "type": "site-monitor",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "alexa site audit"
+      ]
+    },
+    "engine": "unknown"
   }
 }

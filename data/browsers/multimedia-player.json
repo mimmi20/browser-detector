@@ -817,5 +817,20 @@
       ]
     },
     "engine": "trident"
+  },
+  "itunes": {
+    "name": "iTunes",
+    "manufacturer": "apple",
+    "type": "multimedia-player",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "iTunes\\-iPhone",
+        "iTunes\\-iPad",
+        "iTunes\\-iPod",
+        "iTunes"
+      ]
+    },
+    "engine": "webkit"
   }
 }

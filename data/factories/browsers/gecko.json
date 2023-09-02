@@ -57,6 +57,7 @@
     "/mobicip/i": "mobicip",
     "/novarra-vision/i": "novarra-vision",
     "/tenfourfox/i": "tenfourfox",
+    "/archive\\.org\\.ua crawler|archive\\.org_bot/i": "internet archive",
     "/mozilla\\/5\\.0 \\(windows; rv:.*\\) gecko\\/.* firefox\\/.*/i": "thumbnail.ws bot",
     "/classilla/i": "classilla",
     "/^pb[0-9]+/i": "pirate browser",
@@ -93,6 +94,8 @@
     "/aolshield/i": "aol shield",
     "/netpositive/i": "netpositive",
     "/playstation|psp /i": "playstation browser",
+    "/researchscan/i": "researchscan",
+    "/seolizer/i": "seolizer",
     "/android/i": "android webkit",
     "/mozilla/i": "mozilla"
   },

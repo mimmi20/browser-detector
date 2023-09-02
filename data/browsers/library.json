@@ -60,5 +60,79 @@
       ]
     },
     "engine": "unknown"
+  },
+  "python-urllib": {
+    "name": "Python-urllib",
+    "manufacturer": "python-software-foundation",
+    "type": "library",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Python\\-urllib"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "python": {
+    "name": "Python",
+    "manufacturer": "python-software-foundation",
+    "type": "library",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Python",
+        "python\\-requests"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "curl": {
+    "name": "cURL",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "curl"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "axios": {
+    "name": "Axios",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Axios",
+        "axios"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "okhttp": {
+    "name": "okhttp",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "okhttp"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "python-requests": {
+    "name": "python-requests",
+    "manufacturer": "python-software-foundation",
+    "type": "library",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "python\\-requests"
+      ]
+    },
+    "engine": "unknown"
   }
 }
