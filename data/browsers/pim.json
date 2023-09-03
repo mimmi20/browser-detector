@@ -57,5 +57,17 @@
       ]
     },
     "engine": "gecko"
+  },
+  "mailspring": {
+    "name": "Mailspring",
+    "manufacturer": "foundry-376",
+    "type": "pim",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Mailspring"
+      ]
+    },
+    "engine": null
   }
 }

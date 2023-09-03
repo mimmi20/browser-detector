@@ -1970,7 +1970,8 @@
     "version": {
       "class": "VersionFactory",
       "search": [
-        "DuckDuckBot"
+        "DuckDuckBot",
+        "DuckDuckBot-Https"
       ]
     },
     "engine": "unknown"
@@ -3194,6 +3195,18 @@
     },
     "engine": "unknown"
   },
+  "google-page-renderer": {
+    "name": "Google-PageRenderer",
+    "manufacturer": "google",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Google\\-PageRenderer"
+      ]
+    },
+    "engine": "unknown"
+  },
   "googlebot-news": {
     "name": "Googlebot-News",
     "manufacturer": "google",
@@ -3523,6 +3536,18 @@
       "class": "VersionFactory",
       "search": [
         "HubSpot Webcrawler"
+      ]
+    },
+    "engine": null
+  },
+  "hubspot-connect": {
+    "name": "HubSpot Connect",
+    "manufacturer": "hubspot-inc",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "HubSpot Connect"
       ]
     },
     "engine": null
@@ -4038,18 +4063,6 @@
       "class": "VersionFactory",
       "search": [
         "Jeode"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "jigsaw css validator": {
-    "name": "Jigsaw CSS Validator",
-    "manufacturer": "w3c",
-    "type": "bot",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "Jigsaw"
       ]
     },
     "engine": "unknown"
@@ -5261,6 +5274,18 @@
     },
     "engine": "unknown"
   },
+  "netcraft survey agent": {
+    "name": "Netcraft Survey Agent",
+    "manufacturer": "netcraft",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "NetcraftSurveyAgent"
+      ]
+    },
+    "engine": "unknown"
+  },
   "netestate ne crawler": {
     "name": "netEstate NE Crawler",
     "manufacturer": "net-estate",
@@ -5998,18 +6023,6 @@
       ]
     },
     "engine": "unknown"
-  },
-  "pingdom": {
-    "name": "Pingdom",
-    "manufacturer": "pingdom",
-    "type": "bot",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "Pingdom\\.com\\_bot\\_version\\_"
-      ]
-    },
-    "engine": "gecko"
   },
   "pinterest bot": {
     "name": "Pinterest Bot",
@@ -9663,6 +9676,18 @@
     },
     "engine": "unknown"
   },
+  "xovionpagecrawler": {
+    "name": "XoviOnpageCrawler",
+    "manufacturer": "xovi",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "XoviOnpageCrawler"
+      ]
+    },
+    "engine": "unknown"
+  },
   "xspider": {
     "name": "XSpider",
     "manufacturer": "unknown",
@@ -10127,5 +10152,404 @@
       ]
     },
     "engine": null
+  },
+  "a-little-client": {
+    "name": "ALittle Client",
+    "manufacturer": "unknown",
+    "type": "bot",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "check-mark-network": {
+    "name": "CheckMarkNetwork",
+    "manufacturer": "exipert",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "CheckMarkNetwork"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "chrome privacy preserving prefetch proxy": {
+    "name": "Chrome Privacy Preserving Prefetch Proxy",
+    "manufacturer": "unknown",
+    "type": "bot",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "dnb-crawler-analytics": {
+    "name": "DnBCrawler-Analytics",
+    "manufacturer": "unknown",
+    "type": "bot",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "domain-stats-bot": {
+    "name": "DomainStatsBot",
+    "manufacturer": "domainstats",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "DomainStatsBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "download demon": {
+    "name": "Download Demon",
+    "manufacturer": "unknown",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Download Demon"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "expanse": {
+    "name": "Expanse",
+    "manufacturer": "palo-alto",
+    "type": "bot",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "gulper-web-bot": {
+    "name": "Gulper Web Bot",
+    "manufacturer": "stony brook university",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Gulper Web Bot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "jugendschutzprogramm-crawler": {
+    "name": "Jugendschutzprogramm-Crawler",
+    "manufacturer": "jus-prog",
+    "type": "bot",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "jusprog-domain-crawler": {
+    "name": "JusProg - Domain Crawler",
+    "manufacturer": "jus-prog",
+    "type": "bot",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "kozmonavt": {
+    "name": "Kozmonavt",
+    "manufacturer": "unknown",
+    "type": "bot",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "madbbot": {
+    "name": "MADBbot",
+    "manufacturer": "madb",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "MADBbot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "mediatoolkitbot": {
+    "name": "Mediatoolkitbot",
+    "manufacturer": "degordian",
+    "type": "bot",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "urlsumabot": {
+    "name": "URLSuMaBot",
+    "manufacturer": "degordian",
+    "type": "bot",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "built-with crawler": {
+    "name": "BuiltWith Crawler",
+    "manufacturer": "builtwith",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "BW"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "kstandbot": {
+    "name": "KStandBot",
+    "manufacturer": "keywords-standings",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "KStandBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "awariobot": {
+    "name": "AwarioBot",
+    "manufacturer": "seo-powersuite",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "AwarioBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "barkrowler": {
+    "name": "Barkrowler",
+    "manufacturer": "babbar",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Barkrowler"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "bitsightbot": {
+    "name": "BitSightBot",
+    "manufacturer": "unknown",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "BitSightBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "censysinspect": {
+    "name": "CensysInspect",
+    "manufacturer": "censys",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "CensysInspect"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "dataforseobot": {
+    "name": "DataForSeoBot",
+    "manufacturer": "dataforseo",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "DataForSeoBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "dataprovider-spider": {
+    "name": "Dataprovider Spider",
+    "manufacturer": "dataprovider",
+    "type": "bot",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "dmbot": {
+    "name": "Dmbot",
+    "manufacturer": "unknown",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Dmbot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "internet-measurement": {
+    "name": "InternetMeasurement",
+    "manufacturer": "sharashka",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "InternetMeasurement"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "lets-encrypt-validation": {
+    "name": "Let's Encrypt Validation",
+    "manufacturer": "isrg",
+    "type": "bot",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "megaindex-crawler": {
+    "name": "MegaIndex Crawler",
+    "manufacturer": "unknown",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "MegaIndex\\.ru"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "neevabot": {
+    "name": "Neevabot",
+    "manufacturer": "neeva",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Neevabot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "onbbot": {
+    "name": "ONBbot",
+    "manufacturer": "oesterreichische nationalbibliothek",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "ONBbot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "orbbot": {
+    "name": "Orbbot",
+    "manufacturer": "unknown",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Orbbot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "seekportbot": {
+    "name": "SeekportBot",
+    "manufacturer": "sistrix",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "SeekportBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "surdotlybot": {
+    "name": "SurdotlyBot",
+    "manufacturer": "sur.ly",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "SurdotlyBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "velenpublicwebcrawler": {
+    "name": "Velen Public WebCrawler",
+    "manufacturer": "unknown",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "VelenPublicWebCrawler",
+        "VelenPublicWebDownloader"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "webwikibot": {
+    "name": "WebwikiBot",
+    "manufacturer": "webwiki",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "WebwikiBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "yak": {
+    "name": "YaK",
+    "manufacturer": "linkfluence",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "YaK"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "siteauditbot": {
+    "name": "SiteAuditBot",
+    "manufacturer": "semrush",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "SiteAuditBot"
+      ]
+    },
+    "engine": "unknown"
   }
 }

@@ -32,5 +32,20 @@
       ]
     },
     "engine": "unknown"
+  },
+  "pingdom": {
+    "name": "Pingdom",
+    "manufacturer": "pingdom",
+    "type": "site-monitor",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Pingdom\\.com\\_bot\\_version\\_",
+        "PingdomPageSpeed",
+        "PingdomTMS",
+        "pingbot"
+      ]
+    },
+    "engine": "gecko"
   }
 }

@@ -1627,7 +1627,8 @@
     "version": {
       "class": "VersionFactory",
       "search": [
-        "HuaweiBrowser"
+        "HuaweiBrowser",
+        "HBPC"
       ]
     },
     "engine": null
@@ -4488,5 +4489,42 @@
       ]
     },
     "engine": "webkit"
+  },
+  "web-explorer": {
+    "name": "Web Explorer",
+    "manufacturer": "kawe-apps",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Web Explorer",
+        "webexplorer"
+      ]
+    },
+    "engine": null
+  },
+  "silk": {
+    "name": "Silk",
+    "manufacturer": "amazon",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Silk"
+      ]
+    },
+    "engine": null
+  },
+  "smart lenovo browser": {
+    "name": "Smart Lenovo Browser",
+    "manufacturer": "lenovo",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "SLBrowser"
+      ]
+    },
+    "engine": null
   }
 }
