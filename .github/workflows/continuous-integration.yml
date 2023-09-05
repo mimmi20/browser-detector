@@ -16,21 +16,41 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  ci:
-    name: "Run CI"
+  validate:
+    name: "Validate Project"
 
-    uses: "mimmi20/mimmi20/.github/workflows/ci.yml@main"
+    uses: "mimmi20/ci/.github/workflows/validate.yml@master"
+    with:
+      extensions: "curl, iconv, mbstring, intl, dom, simplexml, tokenizer, xml, xmlwriter"
+      ini-values: "opcache.enable=1, opcache.fast_shutdown=0, zend.assertions=1, assert.exception=On, intl.default_locale=de, intl.use_exceptions=1, zend.exception_ignore_args=0"
+      composer-options: "--optimize-autoloader --prefer-dist --prefer-stable -v"
+      skip-phplint: true
+
+  install:
+    name: "Install Project"
+
+    needs: "validate"
+
+    uses: "mimmi20/ci/.github/workflows/install.yml@master"
     with:
       extensions: "curl, iconv, mbstring, intl, dom, simplexml, tokenizer, xml, xmlwriter"
       ini-values: "opcache.enable=1, opcache.fast_shutdown=0, zend.assertions=1, assert.exception=On, intl.default_locale=de, intl.use_exceptions=1, zend.exception_ignore_args=0"
       composer-options: "--optimize-autoloader --prefer-dist --prefer-stable -v"
       composer-outdated-option: ""
-      skip-phpstan: false
-      skip-phplint: false
-      skip-rector: false
-      skip-phpmd: false
-    secrets:
-      envPAT: "${{ secrets.GITHUB_TOKEN }}"
+
+  analytics:
+    name: "Project Analysis"
+
+    needs: "install"
+
+    uses: "mimmi20/ci/.github/workflows/analytics.yml@master"
+    with:
+      extensions: "curl, iconv, mbstring, intl, dom, simplexml, tokenizer, xml, xmlwriter"
+      ini-values: "opcache.enable=1, opcache.fast_shutdown=0, zend.assertions=1, assert.exception=On, intl.default_locale=de, intl.use_exceptions=1, zend.exception_ignore_args=0"
+      composer-options: "--optimize-autoloader --prefer-dist --prefer-stable -v"
+      skip-phpstan: true
+      skip-rector: true
+      skip-phpmd: true
 
   check-composer:
     name: "Check composer dependencies"
@@ -41,7 +61,7 @@ jobs:
 
     continue-on-error: false
 
-    needs: "ci"
+    needs: "analytics"
 
     strategy:
       fail-fast: false
@@ -89,7 +109,7 @@ jobs:
   tests:
     name: "UnitTests with PHPUnit"
 
-    needs: "ci"
+    needs: "analytics"
 
     runs-on: "${{ matrix.operating-system }}"
 
@@ -278,8 +298,6 @@ jobs:
     if: always()
 
     needs:
-      - "ci"
-      - "tests"
       - "code-coverage"
       # - "integration-tests"
 
