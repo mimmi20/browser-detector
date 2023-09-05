@@ -61,7 +61,7 @@ jobs:
 
     continue-on-error: false
 
-    needs: "analytics"
+    needs: "validate"
 
     strategy:
       fail-fast: false
