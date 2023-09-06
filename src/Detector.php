@@ -149,33 +149,42 @@ final class Detector implements DetectorInterface
             static fn (HeaderInterface $header): bool => $header->hasDeviceCode(),
         );
 
-        $deviceHeader = reset($headersWithDeviceCode);
-        assert($deviceHeader instanceof HeaderInterface);
-
-        $deviceCodename   = $deviceHeader->getDeviceCode();
+        $deviceHeader     = reset($headersWithDeviceCode);
         $platformCodename = null;
 
-        if ($deviceCodename !== null) {
-            $parts = explode('=', $deviceCodename, 2);
+        if ($deviceHeader instanceof HeaderInterface) {
+            $deviceCodename = $deviceHeader->getDeviceCode();
 
-            [$device, $platformCodename] = $this->deviceParser->load($parts[0], $parts[1]);
+            if ($deviceCodename !== null) {
+                $parts = explode('=', $deviceCodename, 2);
 
-            $result['device'] = $device;
-        }
+                [$device, $platformCodename] = $this->deviceParser->load($parts[0], $parts[1]);
 
-        $platformHeader = clone $deviceHeader;
+                $result['device'] = $device;
+            }
 
-        /* detect platform */
-        if ($platformCodename === null) {
-            $headersWithPlatformName = array_filter(
-                $request->getFilteredHeaders(),
-                static fn (HeaderInterface $header): bool => $header->hasPlatformCode(),
+            $platformHeader = clone $deviceHeader;
+
+            /* detect platform */
+            if ($platformCodename === null) {
+                $headersWithPlatformName = array_filter(
+                    $request->getFilteredHeaders(),
+                    static fn (HeaderInterface $header): bool => $header->hasPlatformCode(),
+                );
+
+                $platformHeader = reset($headersWithPlatformName);
+                assert($platformHeader instanceof HeaderInterface);
+
+                $platformCodename = $platformHeader->getPlatformCode();
+            }
+        } else {
+            throw new UnexpectedValueException(
+                sprintf(
+                    'The %s header "%s" does not contain device information',
+                    get_debug_type($deviceHeader),
+                    $deviceHeader->getValue()
+                ),
             );
-
-            $platformHeader = reset($headersWithPlatformName);
-            assert($platformHeader instanceof HeaderInterface);
-
-            $platformCodename = $platformHeader->getPlatformCode();
         }
 
         if ($platformCodename !== null) {
