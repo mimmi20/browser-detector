@@ -180,9 +180,8 @@ final class Detector implements DetectorInterface
         } else {
             throw new UnexpectedValueException(
                 sprintf(
-                    'The %s header "%s" does not contain device information',
-                    get_debug_type($deviceHeader),
-                    $deviceHeader->getValue()
+                    'The %s header does not contain device information',
+                    get_debug_type($deviceHeader)
                 ),
             );
         }
