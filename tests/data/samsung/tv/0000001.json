@@ -16,15 +16,8 @@
         "touch": false,
         "size": null
       },
-      "type": "tv"
-    },
-    "client": {
-      "name": "Android WebView",
-      "modus": null,
-      "version": "99.100.4844.73",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "tv",
+      "ismobile": false
     },
     "os": {
       "name": "Linux",
@@ -32,6 +25,15 @@
       "version": null,
       "manufacturer": "linux-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "Quick Search TV",
+      "modus": null,
+      "version": "22.03.14",
+      "manufacturer": "aosp-studio-apps",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",

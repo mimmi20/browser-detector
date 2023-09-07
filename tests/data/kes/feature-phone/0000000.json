@@ -16,15 +16,8 @@
         "touch": false,
         "size": null
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "NetFront",
-      "modus": null,
-      "version": "3.3.0",
-      "manufacturer": "access",
-      "bits": null,
-      "type": "browser"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "JavaOS",
@@ -32,6 +25,15 @@
       "version": null,
       "manufacturer": "sun-microsystems",
       "bits": null
+    },
+    "client": {
+      "name": "NetFront",
+      "modus": null,
+      "version": "3.3.0",
+      "manufacturer": "access",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "NetFront",
@@ -56,15 +58,8 @@
         "touch": false,
         "size": null
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "NetFront",
-      "modus": null,
-      "version": "3.4.0",
-      "manufacturer": "access",
-      "bits": null,
-      "type": "browser"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "JavaOS",
@@ -72,6 +67,15 @@
       "version": null,
       "manufacturer": "sun-microsystems",
       "bits": null
+    },
+    "client": {
+      "name": "NetFront",
+      "modus": null,
+      "version": "3.4.0",
+      "manufacturer": "access",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "NetFront",

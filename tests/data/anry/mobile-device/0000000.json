@@ -16,15 +16,8 @@
         "touch": true,
         "size": null
       },
-      "type": "mobile-device"
-    },
-    "client": {
-      "name": "Opera Mobile",
-      "modus": null,
-      "version": "53.1.2569.142848",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
+      "type": "mobile-device",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -32,6 +25,15 @@
       "version": "7.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "53.1.2569.142848",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -56,15 +58,8 @@
         "touch": true,
         "size": null
       },
-      "type": "mobile-device"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "86.0.4240.110",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "mobile-device",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -72,6 +67,15 @@
       "version": "8.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "86.0.4240.110",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -96,15 +100,8 @@
         "touch": true,
         "size": null
       },
-      "type": "mobile-device"
-    },
-    "client": {
-      "name": "Android WebView",
-      "modus": null,
-      "version": "110.0.5481.65",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "mobile-device",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -113,10 +110,19 @@
       "manufacturer": "google",
       "bits": null
     },
+    "client": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "110.0.5481.65",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
     "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
+      "name": "Blink",
+      "version": "110.0.5481.65",
+      "manufacturer": "google"
     }
   }
 ]

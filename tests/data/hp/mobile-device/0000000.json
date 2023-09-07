@@ -16,15 +16,8 @@
         "touch": true,
         "size": null
       },
-      "type": "mobile-device"
-    },
-    "client": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
+      "type": "mobile-device",
+      "ismobile": true
     },
     "os": {
       "name": null,
@@ -32,6 +25,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -56,15 +58,8 @@
         "touch": true,
         "size": null
       },
-      "type": "mobile-device"
-    },
-    "client": {
-      "name": "Android Webkit",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "mobile-device",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -72,6 +67,15 @@
       "version": "2.3.6",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -96,15 +100,8 @@
         "touch": true,
         "size": null
       },
-      "type": "mobile-device"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "51.0.2704.81",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "mobile-device",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -112,6 +109,15 @@
       "version": "5.1.1",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "51.0.2704.81",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -136,15 +142,8 @@
         "touch": true,
         "size": null
       },
-      "type": "mobile-device"
-    },
-    "client": {
-      "name": "IEMobile",
-      "modus": null,
-      "version": "7.11.0",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "browser"
+      "type": "mobile-device",
+      "ismobile": true
     },
     "os": {
       "name": "Windows CE",
@@ -152,6 +151,15 @@
       "version": null,
       "manufacturer": "microsoft",
       "bits": null
+    },
+    "client": {
+      "name": "IEMobile",
+      "modus": null,
+      "version": "7.11.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Trident",
@@ -176,15 +184,8 @@
         "touch": true,
         "size": null
       },
-      "type": "mobile-device"
-    },
-    "client": {
-      "name": "IEMobile",
-      "modus": null,
-      "version": "7.11.0",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "browser"
+      "type": "mobile-device",
+      "ismobile": true
     },
     "os": {
       "name": "Windows CE",
@@ -192,6 +193,15 @@
       "version": null,
       "manufacturer": "microsoft",
       "bits": null
+    },
+    "client": {
+      "name": "IEMobile",
+      "modus": null,
+      "version": "7.11.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Trident",
@@ -216,15 +226,8 @@
         "touch": true,
         "size": null
       },
-      "type": "mobile-device"
-    },
-    "client": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "7.7.1.88",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
+      "type": "mobile-device",
+      "ismobile": true
     },
     "os": {
       "name": "Windows CE",
@@ -232,6 +235,15 @@
       "version": null,
       "manufacturer": "microsoft",
       "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "7.7.1.88",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
     },
     "engine": {
       "name": "Trident",
@@ -256,15 +268,8 @@
         "touch": true,
         "size": null
       },
-      "type": "mobile-device"
-    },
-    "client": {
-      "name": "Internet Explorer",
-      "modus": null,
-      "version": "4.01.0",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "browser"
+      "type": "mobile-device",
+      "ismobile": true
     },
     "os": {
       "name": "Windows CE",
@@ -272,6 +277,15 @@
       "version": null,
       "manufacturer": "microsoft",
       "bits": null
+    },
+    "client": {
+      "name": "Internet Explorer",
+      "modus": null,
+      "version": "4.01.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Trident",
@@ -296,15 +310,8 @@
         "touch": true,
         "size": null
       },
-      "type": "mobile-device"
-    },
-    "client": {
-      "name": "Internet Explorer",
-      "modus": null,
-      "version": "4.01.0",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "browser"
+      "type": "mobile-device",
+      "ismobile": true
     },
     "os": {
       "name": "Windows CE",
@@ -312,6 +319,15 @@
       "version": null,
       "manufacturer": "microsoft",
       "bits": null
+    },
+    "client": {
+      "name": "Internet Explorer",
+      "modus": null,
+      "version": "4.01.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Trident",
@@ -336,15 +352,8 @@
         "touch": true,
         "size": null
       },
-      "type": "mobile-device"
-    },
-    "client": {
-      "name": "IEMobile",
-      "modus": null,
-      "version": "7.11.0",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "browser"
+      "type": "mobile-device",
+      "ismobile": true
     },
     "os": {
       "name": "Windows CE",
@@ -352,6 +361,15 @@
       "version": null,
       "manufacturer": "microsoft",
       "bits": null
+    },
+    "client": {
+      "name": "IEMobile",
+      "modus": null,
+      "version": "7.11.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Trident",
@@ -376,15 +394,8 @@
         "touch": true,
         "size": null
       },
-      "type": "mobile-device"
-    },
-    "client": {
-      "name": "IEMobile",
-      "modus": null,
-      "version": "7.6.0",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "browser"
+      "type": "mobile-device",
+      "ismobile": true
     },
     "os": {
       "name": "Windows CE",
@@ -392,6 +403,15 @@
       "version": null,
       "manufacturer": "microsoft",
       "bits": null
+    },
+    "client": {
+      "name": "IEMobile",
+      "modus": null,
+      "version": "7.6.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Trident",
@@ -416,15 +436,8 @@
         "touch": true,
         "size": null
       },
-      "type": "mobile-device"
-    },
-    "client": {
-      "name": "Opera Mobile",
-      "modus": null,
-      "version": "15142.0.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
+      "type": "mobile-device",
+      "ismobile": true
     },
     "os": {
       "name": "Windows Mobile OS",
@@ -432,6 +445,15 @@
       "version": null,
       "manufacturer": "microsoft",
       "bits": null
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "15142.0.0",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Presto",
@@ -456,15 +478,8 @@
         "touch": true,
         "size": null
       },
-      "type": "mobile-device"
-    },
-    "client": {
-      "name": "Internet Explorer",
-      "modus": null,
-      "version": "4.01.0",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "browser"
+      "type": "mobile-device",
+      "ismobile": true
     },
     "os": {
       "name": "Windows CE",
@@ -472,6 +487,15 @@
       "version": null,
       "manufacturer": "microsoft",
       "bits": null
+    },
+    "client": {
+      "name": "Internet Explorer",
+      "modus": null,
+      "version": "4.01.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Trident",
@@ -496,15 +520,8 @@
         "touch": true,
         "size": null
       },
-      "type": "mobile-device"
-    },
-    "client": {
-      "name": "IEMobile",
-      "modus": null,
-      "version": "6.12.0",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "browser"
+      "type": "mobile-device",
+      "ismobile": true
     },
     "os": {
       "name": "Windows CE",
@@ -512,6 +529,15 @@
       "version": null,
       "manufacturer": "microsoft",
       "bits": null
+    },
+    "client": {
+      "name": "IEMobile",
+      "modus": null,
+      "version": "6.12.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Trident",
@@ -536,15 +562,8 @@
         "touch": true,
         "size": null
       },
-      "type": "mobile-device"
-    },
-    "client": {
-      "name": "IEMobile",
-      "modus": null,
-      "version": "6.12.0",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "browser"
+      "type": "mobile-device",
+      "ismobile": true
     },
     "os": {
       "name": "Windows CE",
@@ -552,6 +571,15 @@
       "version": null,
       "manufacturer": "microsoft",
       "bits": null
+    },
+    "client": {
+      "name": "IEMobile",
+      "modus": null,
+      "version": "6.12.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Trident",
@@ -576,15 +604,8 @@
         "touch": true,
         "size": null
       },
-      "type": "mobile-device"
-    },
-    "client": {
-      "name": "Blazer",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "palm",
-      "bits": null,
-      "type": "browser"
+      "type": "mobile-device",
+      "ismobile": true
     },
     "os": {
       "name": "Windows 98",
@@ -592,6 +613,15 @@
       "version": "98.0.0",
       "manufacturer": "microsoft",
       "bits": null
+    },
+    "client": {
+      "name": "Blazer",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "palm",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Trident",
@@ -616,15 +646,8 @@
         "touch": true,
         "size": null
       },
-      "type": "mobile-device"
-    },
-    "client": {
-      "name": "Blazer",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "palm",
-      "bits": null,
-      "type": "browser"
+      "type": "mobile-device",
+      "ismobile": true
     },
     "os": {
       "name": "Windows 98",
@@ -632,6 +655,15 @@
       "version": "98.0.0",
       "manufacturer": "microsoft",
       "bits": null
+    },
+    "client": {
+      "name": "Blazer",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "palm",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Trident",
@@ -656,15 +688,8 @@
         "touch": true,
         "size": null
       },
-      "type": "mobile-device"
-    },
-    "client": {
-      "name": "Blazer",
-      "modus": null,
-      "version": "4.5.0",
-      "manufacturer": "palm",
-      "bits": null,
-      "type": "browser"
+      "type": "mobile-device",
+      "ismobile": true
     },
     "os": {
       "name": "Windows 98",
@@ -672,6 +697,15 @@
       "version": "98.0.0",
       "manufacturer": "microsoft",
       "bits": null
+    },
+    "client": {
+      "name": "Blazer",
+      "modus": null,
+      "version": "4.5.0",
+      "manufacturer": "palm",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Trident",
@@ -696,15 +730,8 @@
         "touch": true,
         "size": null
       },
-      "type": "mobile-device"
-    },
-    "client": {
-      "name": "Blazer",
-      "modus": null,
-      "version": "4.5.0",
-      "manufacturer": "palm",
-      "bits": null,
-      "type": "browser"
+      "type": "mobile-device",
+      "ismobile": true
     },
     "os": {
       "name": "Windows 98",
@@ -712,6 +739,15 @@
       "version": "98.0.0",
       "manufacturer": "microsoft",
       "bits": null
+    },
+    "client": {
+      "name": "Blazer",
+      "modus": null,
+      "version": "4.5.0",
+      "manufacturer": "palm",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Trident",
@@ -736,15 +772,8 @@
         "touch": true,
         "size": null
       },
-      "type": "mobile-device"
-    },
-    "client": {
-      "name": "Blazer",
-      "modus": null,
-      "version": "4.5.0",
-      "manufacturer": "palm",
-      "bits": null,
-      "type": "browser"
+      "type": "mobile-device",
+      "ismobile": true
     },
     "os": {
       "name": "Windows 98",
@@ -752,6 +781,15 @@
       "version": "98.0.0",
       "manufacturer": "microsoft",
       "bits": null
+    },
+    "client": {
+      "name": "Blazer",
+      "modus": null,
+      "version": "4.5.0",
+      "manufacturer": "palm",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Trident",
@@ -776,15 +814,8 @@
         "touch": true,
         "size": null
       },
-      "type": "mobile-device"
-    },
-    "client": {
-      "name": "Blazer",
-      "modus": null,
-      "version": "4.5.0",
-      "manufacturer": "palm",
-      "bits": null,
-      "type": "browser"
+      "type": "mobile-device",
+      "ismobile": true
     },
     "os": {
       "name": "Windows 98",
@@ -792,6 +823,15 @@
       "version": "98.0.0",
       "manufacturer": "microsoft",
       "bits": null
+    },
+    "client": {
+      "name": "Blazer",
+      "modus": null,
+      "version": "4.5.0",
+      "manufacturer": "palm",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Trident",
@@ -816,15 +856,8 @@
         "touch": true,
         "size": null
       },
-      "type": "mobile-device"
-    },
-    "client": {
-      "name": "Blazer",
-      "modus": null,
-      "version": "4.5.0",
-      "manufacturer": "palm",
-      "bits": null,
-      "type": "browser"
+      "type": "mobile-device",
+      "ismobile": true
     },
     "os": {
       "name": "Windows 98",
@@ -832,6 +865,15 @@
       "version": "98.0.0",
       "manufacturer": "microsoft",
       "bits": null
+    },
+    "client": {
+      "name": "Blazer",
+      "modus": null,
+      "version": "4.5.0",
+      "manufacturer": "palm",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Trident",
@@ -856,15 +898,8 @@
         "touch": true,
         "size": null
       },
-      "type": "mobile-device"
-    },
-    "client": {
-      "name": "Internet Explorer",
-      "modus": null,
-      "version": "4.01.0",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "browser"
+      "type": "mobile-device",
+      "ismobile": true
     },
     "os": {
       "name": "Windows CE",
@@ -872,6 +907,15 @@
       "version": null,
       "manufacturer": "microsoft",
       "bits": null
+    },
+    "client": {
+      "name": "Internet Explorer",
+      "modus": null,
+      "version": "4.01.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Trident",
@@ -896,15 +940,8 @@
         "touch": true,
         "size": null
       },
-      "type": "mobile-device"
-    },
-    "client": {
-      "name": "Internet Explorer",
-      "modus": null,
-      "version": "4.01.0",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "browser"
+      "type": "mobile-device",
+      "ismobile": true
     },
     "os": {
       "name": "Windows CE",
@@ -912,6 +949,15 @@
       "version": null,
       "manufacturer": "microsoft",
       "bits": null
+    },
+    "client": {
+      "name": "Internet Explorer",
+      "modus": null,
+      "version": "4.01.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Trident",
@@ -936,15 +982,8 @@
         "touch": true,
         "size": null
       },
-      "type": "mobile-device"
-    },
-    "client": {
-      "name": "NetFront",
-      "modus": null,
-      "version": "3.1.0",
-      "manufacturer": "access",
-      "bits": null,
-      "type": "browser"
+      "type": "mobile-device",
+      "ismobile": true
     },
     "os": {
       "name": "JavaOS",
@@ -952,6 +991,15 @@
       "version": null,
       "manufacturer": "sun-microsystems",
       "bits": null
+    },
+    "client": {
+      "name": "NetFront",
+      "modus": null,
+      "version": "3.1.0",
+      "manufacturer": "access",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "NetFront",
@@ -976,15 +1024,8 @@
         "touch": true,
         "size": null
       },
-      "type": "mobile-device"
-    },
-    "client": {
-      "name": "Android Webkit",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "mobile-device",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -992,6 +1033,15 @@
       "version": "4.2.2",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -1016,15 +1066,8 @@
         "touch": true,
         "size": null
       },
-      "type": "mobile-device"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "93.1.0.19.102",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "mobile-device",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -1032,6 +1075,15 @@
       "version": "8.1.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "93.1.0.19.102",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -1056,15 +1108,8 @@
         "touch": true,
         "size": null
       },
-      "type": "mobile-device"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "74.0.3729.136",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "mobile-device",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -1072,6 +1117,15 @@
       "version": "9.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "74.0.3729.136",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -1096,15 +1150,8 @@
         "touch": true,
         "size": null
       },
-      "type": "mobile-device"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "79.0.3945.45",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "mobile-device",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -1112,6 +1159,15 @@
       "version": "9.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "79.0.3945.45",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -1136,15 +1192,8 @@
         "touch": true,
         "size": null
       },
-      "type": "mobile-device"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "79.0.3945.136",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "mobile-device",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -1152,6 +1201,15 @@
       "version": "6.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "79.0.3945.136",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",

@@ -16,15 +16,8 @@
         "touch": true,
         "size": 6.52
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "85.0.4183.127",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -32,6 +25,15 @@
       "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "85.0.4183.127",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -56,15 +58,8 @@
         "touch": true,
         "size": 6.52
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "86.0.4240.110",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -72,6 +67,15 @@
       "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "86.0.4240.110",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -96,15 +100,8 @@
         "touch": true,
         "size": 6.52
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "87.0.4280.101",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -112,6 +109,15 @@
       "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "87.0.4280.101",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -136,15 +142,8 @@
         "touch": true,
         "size": 6.52
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "88.0.4324.181",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -152,6 +151,15 @@
       "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "88.0.4324.181",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -176,15 +184,8 @@
         "touch": true,
         "size": 6.52
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "89.0.4389.105",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -192,6 +193,15 @@
       "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "89.0.4389.105",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -216,15 +226,8 @@
         "touch": true,
         "size": 6.52
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "90.0.4430.91",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -232,6 +235,15 @@
       "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "90.0.4430.91",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -256,15 +268,8 @@
         "touch": true,
         "size": 6.52
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "91.0.4472.101",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -272,6 +277,15 @@
       "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "91.0.4472.101",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -296,15 +310,8 @@
         "touch": true,
         "size": 6.52
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "92.0.4515.115",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -312,6 +319,15 @@
       "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "92.0.4515.115",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -336,15 +352,8 @@
         "touch": true,
         "size": 6.52
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "81.0.4044.138",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -352,6 +361,15 @@
       "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "81.0.4044.138",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -376,15 +394,8 @@
         "touch": true,
         "size": 6.52
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "94.0.4606.61",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -392,6 +403,15 @@
       "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "94.0.4606.61",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -416,15 +436,8 @@
         "touch": true,
         "size": 6.52
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "93.0.4577.82",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -432,6 +445,15 @@
       "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "93.0.4577.82",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -456,15 +478,8 @@
         "touch": true,
         "size": 6.52
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "96.0.4664.45",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -472,6 +487,15 @@
       "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "96.0.4664.45",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -496,15 +520,8 @@
         "touch": true,
         "size": 6.52
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "97.0.4692.70",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -512,6 +529,15 @@
       "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "97.0.4692.70",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -536,15 +562,8 @@
         "touch": true,
         "size": 6.52
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "352.0.0.21.117",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -552,6 +571,15 @@
       "version": "11.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "352.0.0.21.117",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -576,15 +604,8 @@
         "touch": true,
         "size": 6.52
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "100.0.4896.58",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -593,10 +614,19 @@
       "manufacturer": "google",
       "bits": null
     },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "100.0.4896.58",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
     "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
+      "name": "Blink",
+      "version": "100.0.4896.58",
+      "manufacturer": "google"
     }
   },
   {
@@ -616,15 +646,8 @@
         "touch": true,
         "size": 6.52
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "103.0.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -633,10 +656,19 @@
       "manufacturer": "google",
       "bits": null
     },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "103.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
     "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
+      "name": "Blink",
+      "version": "103.0.0.0",
+      "manufacturer": "google"
     }
   },
   {
@@ -656,15 +688,8 @@
         "touch": true,
         "size": 6.52
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Opera Mobile",
-      "modus": null,
-      "version": "70.3.3653.66287",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -673,10 +698,145 @@
       "manufacturer": "google",
       "bits": null
     },
+    "client": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "70.3.3653.66287",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
     "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
+      "name": "Blink",
+      "version": "102.0.5005.134",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "4",
+      "downlink": "7.8",
+      "dpr": "2",
+      "ect": "4g",
+      "origin": "https://www.geld.de",
+      "rtt": "50",
+      "sec-ch-device-memory": "4",
+      "sec-ch-dpr": "2",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-ua": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\"",
+      "sec-ch-ua-full-version": "\"103.0.5060.71\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"Note 9P\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"10.0.0\"",
+      "sec-ch-viewport-width": "360",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; Note 9P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "360",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "deviceName": "Note 9P",
+      "marketingName": "Note 9P",
+      "manufacturer": "ulefone",
+      "brand": "ulefone",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1600,
+        "height": 720,
+        "touch": true,
+        "size": 6.52
+      },
+      "type": "phablet",
+      "ismobile": true
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "103.0.0.0",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "103.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "4",
+      "downlink": "9.2",
+      "dpr": "2",
+      "ect": "4g",
+      "origin": "https://www.geld.de",
+      "rtt": "0",
+      "sec-ch-device-memory": "4",
+      "sec-ch-dpr": "2",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-ua": "\"OperaMobile\";v=\"70\", \"Chromium\";v=\"102\", \" Not A;Brand\";v=\"99\", \"Opera\";v=\"88\"",
+      "sec-ch-ua-full-version": "\"102.0.5005.134\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"Note 9P\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"11\"",
+      "sec-ch-viewport-width": "360",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; Note 9P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.134 Mobile Safari/537.36 OPR/70.3.3653.66287",
+      "viewport-width": "360",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "deviceName": "Note 9P",
+      "marketingName": "Note 9P",
+      "manufacturer": "ulefone",
+      "brand": "ulefone",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1600,
+        "height": 720,
+        "touch": true,
+        "size": 6.52
+      },
+      "type": "phablet",
+      "ismobile": true
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "70.3.3653.66287",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "102.0.5005.134",
+      "manufacturer": "google"
     }
   },
   {
@@ -696,15 +856,8 @@
         "touch": true,
         "size": 6.52
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "105.0.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -713,10 +866,19 @@
       "manufacturer": "google",
       "bits": null
     },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "105.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
     "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
+      "name": "Blink",
+      "version": "105.0.0.0",
+      "manufacturer": "google"
     }
   },
   {
@@ -736,15 +898,8 @@
         "touch": true,
         "size": 6.52
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "104.0.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -753,10 +908,19 @@
       "manufacturer": "google",
       "bits": null
     },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "104.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
     "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
+      "name": "Blink",
+      "version": "104.0.0.0",
+      "manufacturer": "google"
     }
   },
   {
@@ -776,15 +940,8 @@
         "touch": true,
         "size": 6.52
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Android WebView",
-      "modus": null,
-      "version": "81.0.4044.138",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -792,6 +949,15 @@
       "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "81.0.4044.138",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -816,15 +982,8 @@
         "touch": true,
         "size": 6.52
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Google App",
-      "modus": null,
-      "version": null,
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -832,6 +991,15 @@
       "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Bing Search",
+      "modus": null,
+      "version": "23.4.401013302",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": "Blink",
@@ -861,15 +1029,8 @@
         "touch": true,
         "size": 6.52
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -878,10 +1039,19 @@
       "manufacturer": "google",
       "bits": null
     },
-    "engine": {
+    "client": {
       "name": null,
-      "version": null,
-      "manufacturer": "unknown"
+      "modus": null,
+      "version": "23.4.401013302",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "87.0.4280.101",
+      "manufacturer": "google"
     }
   },
   {
@@ -906,15 +1076,8 @@
         "touch": true,
         "size": 6.52
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -923,10 +1086,72 @@
       "manufacturer": "google",
       "bits": null
     },
-    "engine": {
+    "client": {
       "name": null,
-      "version": null,
-      "manufacturer": "unknown"
+      "modus": null,
+      "version": "81.0.4044.138",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "81.0.4044.138",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "4",
+      "downlink": "9.2",
+      "dpr": "2",
+      "ect": "4g",
+      "origin": "https://www.geld.de",
+      "rtt": "0",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; Note 9P Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/81.0.4044.138 Mobile Safari/537.36",
+      "viewport-width": "360",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "deviceName": "Note 9P",
+      "marketingName": "Note 9P",
+      "manufacturer": "ulefone",
+      "brand": "ulefone",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1600,
+        "height": 720,
+        "touch": true,
+        "size": 6.52
+      },
+      "type": "phablet",
+      "ismobile": true
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "81.0.4044.138",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "81.0.4044.138",
+      "manufacturer": "google"
     }
   },
   {
@@ -951,15 +1176,8 @@
         "touch": true,
         "size": 6.52
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -968,10 +1186,211 @@
       "manufacturer": "google",
       "bits": null
     },
-    "engine": {
+    "client": {
       "name": null,
-      "version": null,
-      "manufacturer": "unknown"
+      "modus": null,
+      "version": "81.0.4044.138",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "81.0.4044.138",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "4",
+      "downlink": "9.5",
+      "dpr": "2",
+      "ect": "4g",
+      "origin": "https://www.geld.de",
+      "rtt": "100",
+      "sec-ch-device-memory": "4",
+      "sec-ch-dpr": "2",
+      "sec-ch-prefers-color-scheme": "dark",
+      "sec-ch-ua": "\"Google Chrome\";v=\"105\", \"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"105\"",
+      "sec-ch-ua-full-version": "\"105.0.5195.77\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"Note 9P\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"11.0.0\"",
+      "sec-ch-viewport-height": "668",
+      "sec-ch-viewport-width": "360",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; Note 9P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "360",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "deviceName": "Note 9P",
+      "marketingName": "Note 9P",
+      "manufacturer": "ulefone",
+      "brand": "ulefone",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1600,
+        "height": 720,
+        "touch": true,
+        "size": 6.52
+      },
+      "type": "phablet",
+      "ismobile": true
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "105.0.0.0",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "105.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "4",
+      "downlink": "5.05",
+      "dpr": "2",
+      "ect": "4g",
+      "origin": "https://www.geld.de",
+      "rtt": "100",
+      "sec-ch-device-memory": "4",
+      "sec-ch-dpr": "2",
+      "sec-ch-prefers-color-scheme": "dark",
+      "sec-ch-ua": "\"Google Chrome\";v=\"105\", \"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"105\"",
+      "sec-ch-ua-full-version": "\"105.0.5195.77\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"Note 9P\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"11.0.0\"",
+      "sec-ch-viewport-height": "668",
+      "sec-ch-viewport-width": "360",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; Note 9P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "360",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "deviceName": "Note 9P",
+      "marketingName": "Note 9P",
+      "manufacturer": "ulefone",
+      "brand": "ulefone",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1600,
+        "height": 720,
+        "touch": true,
+        "size": 6.52
+      },
+      "type": "phablet",
+      "ismobile": true
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "105.0.0.0",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "105.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "4",
+      "downlink": "2.4",
+      "dpr": "2",
+      "ect": "4g",
+      "origin": "https://www.geld.de",
+      "rtt": "150",
+      "sec-ch-device-memory": "4",
+      "sec-ch-dpr": "2",
+      "sec-ch-prefers-color-scheme": "dark",
+      "sec-ch-ua": "\"Google Chrome\";v=\"105\", \"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"105\"",
+      "sec-ch-ua-full-version": "\"105.0.5195.77\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"Note 9P\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"11.0.0\"",
+      "sec-ch-viewport-height": "668",
+      "sec-ch-viewport-width": "360",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; Note 9P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "360",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "deviceName": "Note 9P",
+      "marketingName": "Note 9P",
+      "manufacturer": "ulefone",
+      "brand": "ulefone",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1600,
+        "height": 720,
+        "touch": true,
+        "size": 6.52
+      },
+      "type": "phablet",
+      "ismobile": true
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "105.0.0.0",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "105.0.0.0",
+      "manufacturer": "google"
     }
   },
   {
@@ -991,15 +1410,8 @@
         "touch": true,
         "size": 6.52
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "103.0.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -1008,10 +1420,19 @@
       "manufacturer": "google",
       "bits": null
     },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "103.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
     "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
+      "name": "Blink",
+      "version": "103.0.0.0",
+      "manufacturer": "google"
     }
   },
   {
@@ -1031,15 +1452,8 @@
         "touch": true,
         "size": 6.52
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "111.0.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -1048,10 +1462,84 @@
       "manufacturer": "google",
       "bits": null
     },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "111.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
     "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
+      "name": "Blink",
+      "version": "111.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "4",
+      "downlink": "1.65",
+      "dpr": "2",
+      "ect": "4g",
+      "origin": "https://www.geld.de",
+      "rtt": "150",
+      "sec-ch-device-memory": "4",
+      "sec-ch-dpr": "2",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Google Chrome\";v=\"111\", \"Not(A:Brand\";v=\"8\", \"Chromium\";v=\"111\"",
+      "sec-ch-ua-full-version": "\"111.0.5563.58\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"Note 9P\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"11.0.0\"",
+      "sec-ch-viewport-height": "700",
+      "sec-ch-viewport-width": "360",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; Note 9P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "360",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "deviceName": "Note 9P",
+      "marketingName": "Note 9P",
+      "manufacturer": "ulefone",
+      "brand": "ulefone",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1600,
+        "height": 720,
+        "touch": true,
+        "size": 6.52
+      },
+      "type": "phablet",
+      "ismobile": true
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "111.0.0.0",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "111.0.0.0",
+      "manufacturer": "google"
     }
   }
 ]

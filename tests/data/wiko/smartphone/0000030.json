@@ -1,6 +1,132 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; HEYOU20PLUS) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.73 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Plus",
+      "marketingName": "Plus",
+      "manufacturer": "wiko",
+      "brand": "wiko",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "99.0.4844.73",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "99.0.4844.73",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; W_K300S) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.81 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "WK300",
+      "marketingName": "Jerry 3",
+      "manufacturer": "wiko",
+      "brand": "wiko",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 960,
+        "height": 480,
+        "touch": true,
+        "size": 5.45
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.1.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "85.0.4183.81",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "85.0.4183.81",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; Hope10 Plus) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+    },
+    "device": {
+      "deviceName": "Plus",
+      "marketingName": "Plus",
+      "manufacturer": "wiko",
+      "brand": "wiko",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "103.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "103.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 11; 10L-PLUS) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36"
     },
     "device": {
@@ -16,15 +142,8 @@
         "touch": true,
         "size": 5
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "100.0.4896.127",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -33,10 +152,19 @@
       "manufacturer": "google",
       "bits": null
     },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "100.0.4896.127",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
     "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
+      "name": "Blink",
+      "version": "100.0.4896.127",
+      "manufacturer": "google"
     }
   },
   {
@@ -56,15 +184,8 @@
         "touch": true,
         "size": 5
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Android WebView",
-      "modus": null,
-      "version": "103.0.5060.70",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -73,10 +194,19 @@
       "manufacturer": "google",
       "bits": null
     },
+    "client": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "103.0.5060.70",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
     "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
+      "name": "Blink",
+      "version": "103.0.5060.70",
+      "manufacturer": "google"
     }
   },
   {
@@ -96,15 +226,8 @@
         "touch": true,
         "size": 5.7
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "103.0.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -113,10 +236,19 @@
       "manufacturer": "google",
       "bits": null
     },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "103.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
     "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
+      "name": "Blink",
+      "version": "103.0.0.0",
+      "manufacturer": "google"
     }
   },
   {
@@ -136,15 +268,8 @@
         "touch": true,
         "size": 5.2
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "103.0.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -153,10 +278,19 @@
       "manufacturer": "google",
       "bits": null
     },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "103.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
     "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
+      "name": "Blink",
+      "version": "103.0.0.0",
+      "manufacturer": "google"
     }
   },
   {
@@ -176,15 +310,8 @@
         "touch": true,
         "size": 6.52
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "103.0.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -193,10 +320,19 @@
       "manufacturer": "google",
       "bits": null
     },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "103.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
     "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
+      "name": "Blink",
+      "version": "103.0.0.0",
+      "manufacturer": "google"
     }
   },
   {
@@ -216,15 +352,8 @@
         "touch": true,
         "size": 5
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "103.0.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -233,10 +362,19 @@
       "manufacturer": "google",
       "bits": null
     },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "103.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
     "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
+      "name": "Blink",
+      "version": "103.0.0.0",
+      "manufacturer": "google"
     }
   },
   {
@@ -256,15 +394,8 @@
         "touch": true,
         "size": 5.99
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "101.0.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -273,10 +404,19 @@
       "manufacturer": "google",
       "bits": null
     },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "101.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
     "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
+      "name": "Blink",
+      "version": "101.0.0.0",
+      "manufacturer": "google"
     }
   },
   {
@@ -296,15 +436,8 @@
         "touch": true,
         "size": 6.26
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "97.0.4692.98",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -312,6 +445,15 @@
       "version": "9.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "97.0.4692.98",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -336,15 +478,8 @@
         "touch": true,
         "size": 6
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "103.0.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -353,10 +488,19 @@
       "manufacturer": "google",
       "bits": null
     },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "103.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
     "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
+      "name": "Blink",
+      "version": "103.0.0.0",
+      "manufacturer": "google"
     }
   },
   {
@@ -376,15 +520,8 @@
         "touch": true,
         "size": 6.52
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "102.0.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -393,10 +530,19 @@
       "manufacturer": "google",
       "bits": null
     },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "102.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
     "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
+      "name": "Blink",
+      "version": "102.0.0.0",
+      "manufacturer": "google"
     }
   },
   {
@@ -416,15 +562,8 @@
         "touch": true,
         "size": 5.45
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "103.0.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -433,10 +572,19 @@
       "manufacturer": "google",
       "bits": null
     },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "103.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
     "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
+      "name": "Blink",
+      "version": "103.0.0.0",
+      "manufacturer": "google"
     }
   },
   {
@@ -456,15 +604,8 @@
         "touch": true,
         "size": 6.09
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "103.0.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -473,10 +614,19 @@
       "manufacturer": "google",
       "bits": null
     },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "103.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
     "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
+      "name": "Blink",
+      "version": "103.0.0.0",
+      "manufacturer": "google"
     }
   },
   {
@@ -496,15 +646,8 @@
         "touch": true,
         "size": 5
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Android WebView",
-      "modus": null,
-      "version": "95.0.4638.74",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -512,6 +655,15 @@
       "version": "5.1.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "95.0.4638.74",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -536,15 +688,8 @@
         "touch": true,
         "size": 5
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Android WebView",
-      "modus": null,
-      "version": "66.0.3359.126",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -552,6 +697,15 @@
       "version": "8.1.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "66.0.3359.126",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -576,15 +730,8 @@
         "touch": true,
         "size": null
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "103.0.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -593,10 +740,19 @@
       "manufacturer": "google",
       "bits": null
     },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "103.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
     "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
+      "name": "Blink",
+      "version": "103.0.0.0",
+      "manufacturer": "google"
     }
   },
   {
@@ -616,15 +772,8 @@
         "touch": true,
         "size": 6.26
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Opera Mobile",
-      "modus": null,
-      "version": "70.3.3653.66287",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -633,10 +782,19 @@
       "manufacturer": "google",
       "bits": null
     },
+    "client": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "70.3.3653.66287",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
     "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
+      "name": "Blink",
+      "version": "102.0.5005.134",
+      "manufacturer": "google"
     }
   },
   {
@@ -656,15 +814,8 @@
         "touch": true,
         "size": 5.45
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "102.0.5005.98",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -673,10 +824,192 @@
       "manufacturer": "google",
       "bits": null
     },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "102.0.5005.98",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
     "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
+      "name": "Blink",
+      "version": "102.0.5005.98",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "2",
+      "downlink": "10",
+      "dpr": "2.075",
+      "ect": "4g",
+      "origin": "https://www.geld.de",
+      "rtt": "50",
+      "sec-ch-device-memory": "2",
+      "sec-ch-dpr": "2.075",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-ua": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\"",
+      "sec-ch-ua-full-version": "\"103.0.5060.129\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"W_C800\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"8.0.0\"",
+      "sec-ch-viewport-width": "347",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.0.0; W_C800) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "347",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "deviceName": "WC800",
+      "marketingName": "View 2",
+      "manufacturer": "wiko",
+      "brand": "wiko",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1528,
+        "height": 720,
+        "touch": true,
+        "size": 6
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "103.0.0.0",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "103.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "2",
+      "downlink": "10",
+      "dpr": "2.075",
+      "ect": "4g",
+      "origin": "https://www.geld.de",
+      "rtt": "100",
+      "sec-ch-device-memory": "2",
+      "sec-ch-dpr": "2.075",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-ua": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\"",
+      "sec-ch-ua-full-version": "\"103.0.5060.129\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"W_C800\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"8.0.0\"",
+      "sec-ch-viewport-width": "347",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.0.0; W_C800) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "347",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "deviceName": "WC800",
+      "marketingName": "View 2",
+      "manufacturer": "wiko",
+      "brand": "wiko",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1528,
+        "height": 720,
+        "touch": true,
+        "size": 6
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "103.0.0.0",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "103.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "0.5",
+      "dpr": "1.5",
+      "origin": "https://www.geld.de",
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; Sunny3 Build/OPM2.171019.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 Mobile Safari/537.36",
+      "viewport-width": "320",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "deviceName": "Sunny 3",
+      "marketingName": "Sunny 3",
+      "manufacturer": "wiko",
+      "brand": "wiko",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 854,
+        "height": 480,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.1.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "66.0.3359.126",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "66.0.3359.126",
+      "manufacturer": "google"
     }
   },
   {
@@ -697,15 +1030,8 @@
         "touch": true,
         "size": 5
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Google Bot",
-      "modus": null,
-      "version": null,
-      "manufacturer": "google",
-      "bits": null,
-      "type": "bot"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -713,6 +1039,15 @@
       "version": "8.1.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "66.0.3359.126",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
     },
     "engine": {
       "name": "Blink",
@@ -722,12 +1057,207 @@
   },
   {
     "headers": {
-      "sec-fetch-dest": "document",
-      "sec-fetch-mode": "navigate",
+      "device-memory": "2",
+      "downlink": "8.4",
+      "dpr": "2",
+      "ect": "4g",
+      "origin": "https://www.geld.de",
+      "rtt": "50",
+      "sec-ch-device-memory": "2",
+      "sec-ch-dpr": "2",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-ua": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\"",
+      "sec-ch-ua-full-version": "\"103.0.5060.129\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"HARRY\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"7.0.0\"",
+      "sec-ch-viewport-width": "360",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
       "sec-fetch-site": "same-origin",
-      "sec-fetch-user": "?1",
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.1; Y10 plus Build/LMY47I; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/95.0.4638.74 Mobile Safari/537.36",
-      "x-requested-with": "com.android.browser"
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; HARRY) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "360",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "deviceName": "Harry",
+      "marketingName": "Harry",
+      "manufacturer": "wiko",
+      "brand": "wiko",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "103.0.0.0",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "103.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "4",
+      "downlink": "9.6",
+      "dpr": "1.75",
+      "ect": "4g",
+      "origin": "https://www.geld.de",
+      "rtt": "100",
+      "sec-ch-device-memory": "4",
+      "sec-ch-dpr": "1.75",
+      "sec-ch-prefers-color-scheme": "dark",
+      "sec-ch-ua": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\"",
+      "sec-ch-ua-full-version": "\"103.0.5060.71\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"W-V850-EEA\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"10.0.0\"",
+      "sec-ch-viewport-width": "412",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; W-V850-EEA) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "412",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "deviceName": "W-V850-EEA",
+      "marketingName": "W-V850-EEA",
+      "manufacturer": "wiko",
+      "brand": "wiko",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "103.0.0.0",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "103.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "2",
+      "downlink": "5.1",
+      "dpr": "2",
+      "ect": "4g",
+      "origin": "https://www.geld.de",
+      "rtt": "100",
+      "sec-ch-device-memory": "2",
+      "sec-ch-dpr": "2",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-ua": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\"",
+      "sec-ch-ua-full-version": "\"103.0.5060.71\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"W-V600\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"8.1.0\"",
+      "sec-ch-viewport-width": "360",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; W-V600) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "360",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "deviceName": "W-V600",
+      "marketingName": "Tommy 3 Plus",
+      "manufacturer": "wiko",
+      "brand": "wiko",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1440,
+        "height": 720,
+        "touch": true,
+        "size": 5.45
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.1.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "103.0.0.0",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "103.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "8",
+      "downlink": "10",
+      "dpr": "3",
+      "ect": "4g",
+      "origin": "https://www.geld.de",
+      "rtt": "50",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; S88Plus) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Mobile Safari/537.36",
+      "viewport-width": "360",
+      "x-requested-with": "XMLHttpRequest"
     },
     "device": {
       "deviceName": "Plus",
@@ -742,15 +1272,118 @@
         "touch": true,
         "size": 5
       },
-      "type": "smartphone"
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google",
+      "bits": null
     },
     "client": {
-      "name": "Android Webkit",
+      "name": null,
       "modus": null,
-      "version": null,
-      "manufacturer": "google",
+      "version": "83.0.4103.106",
+      "manufacturer": null,
       "bits": null,
-      "type": "browser"
+      "type": null,
+      "isbot": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "83.0.4103.106",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "2",
+      "downlink": "7.15",
+      "dpr": "1.75",
+      "ect": "4g",
+      "origin": "https://www.geld.de",
+      "rtt": "100",
+      "sec-ch-device-memory": "2",
+      "sec-ch-dpr": "1.75",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-ua": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\"",
+      "sec-ch-ua-full-version": "\"103.0.5060.70\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"W-V730-EEA\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"10.0.0\"",
+      "sec-ch-viewport-width": "412",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; W-V730-EEA) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "412",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "deviceName": "W-V730-EEA",
+      "marketingName": "View 4 Lite",
+      "manufacturer": "wiko",
+      "brand": "wiko",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1600,
+        "height": 720,
+        "touch": true,
+        "size": 6.52
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "103.0.0.0",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "103.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "origin": "https://www.geld.de",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1; Y10 plus Build/LMY47I; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/95.0.4638.74 Mobile Safari/537.36",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "deviceName": "Plus",
+      "marketingName": "Plus",
+      "manufacturer": "wiko",
+      "brand": "wiko",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -759,10 +1392,304 @@
       "manufacturer": "google",
       "bits": null
     },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "95.0.4638.74",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
+    },
     "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
+      "name": "Blink",
+      "version": "95.0.4638.74",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "same-origin",
+      "sec-fetch-user": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; W-K510-EEA Build/PPR1.181008.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.98 Mobile Safari/537.36",
+      "x-requested-with": "com.google.android.apps.searchlite"
+    },
+    "device": {
+      "deviceName": "W-K510-EEA",
+      "marketingName": "Y60",
+      "manufacturer": "wiko",
+      "brand": "wiko",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 960,
+        "height": 480,
+        "touch": true,
+        "size": 5.45
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "102.0.5005.98",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "102.0.5005.98",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "none",
+      "sec-fetch-user": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; W-K510-EEA Build/PPR1.181008.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.98 Mobile Safari/537.36",
+      "x-requested-with": "com.google.android.apps.searchlite"
+    },
+    "device": {
+      "deviceName": "W-K510-EEA",
+      "marketingName": "Y60",
+      "manufacturer": "wiko",
+      "brand": "wiko",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 960,
+        "height": 480,
+        "touch": true,
+        "size": 5.45
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "102.0.5005.98",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "102.0.5005.98",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "2",
+      "downlink": "7.55",
+      "dpr": "2.25",
+      "ect": "4g",
+      "origin": "https://www.geld.de",
+      "rtt": "100",
+      "sec-ch-device-memory": "2",
+      "sec-ch-dpr": "2.25",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-ua": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\"",
+      "sec-ch-ua-full-version": "\"103.0.5060.53\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"W-V800-EEA\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"9.0.0\"",
+      "sec-ch-viewport-width": "320",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; W-V800-EEA) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "320",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "deviceName": "W-V800-EEA",
+      "marketingName": "View 3 Lite",
+      "manufacturer": "wiko",
+      "brand": "wiko",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1560,
+        "height": 720,
+        "touch": true,
+        "size": 6.09
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "103.0.0.0",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "103.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "2",
+      "downlink": "3.35",
+      "dpr": "1.75",
+      "ect": "4g",
+      "origin": "https://www.geld.de",
+      "rtt": "100",
+      "save-data": "on",
+      "sec-ch-device-memory": "2",
+      "sec-ch-dpr": "1.75",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-ua": "\" Not;A Brand\";v=\"99\", \"Google Chrome\";v=\"97\", \"Chromium\";v=\"97\"",
+      "sec-ch-ua-full-version": "\"97.0.4692.98\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"W-P311-EEA\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"9.0.0\"",
+      "sec-ch-viewport-width": "412",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; W-P311-EEA) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.98 Mobile Safari/537.36",
+      "viewport-width": "412",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "deviceName": "W-P311-EEA",
+      "marketingName": "View 3",
+      "manufacturer": "wiko",
+      "brand": "wiko",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1520,
+        "height": 720,
+        "touch": true,
+        "size": 6.26
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "97.0.4692.98",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "97.0.4692.98",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "2",
+      "downlink": "3.35",
+      "dpr": "1.75",
+      "ect": "4g",
+      "origin": "https://www.geld.de",
+      "rtt": "200",
+      "save-data": "on",
+      "sec-ch-device-memory": "2",
+      "sec-ch-dpr": "1.75",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-ua": "\" Not;A Brand\";v=\"99\", \"Google Chrome\";v=\"97\", \"Chromium\";v=\"97\"",
+      "sec-ch-ua-full-version": "\"97.0.4692.98\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"W-P311-EEA\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"9.0.0\"",
+      "sec-ch-viewport-width": "412",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; W-P311-EEA) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.98 Mobile Safari/537.36",
+      "viewport-width": "412",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "deviceName": "W-P311-EEA",
+      "marketingName": "View 3",
+      "manufacturer": "wiko",
+      "brand": "wiko",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1520,
+        "height": 720,
+        "touch": true,
+        "size": 6.26
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "97.0.4692.98",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "97.0.4692.98",
+      "manufacturer": "google"
     }
   },
   {
@@ -782,15 +1709,8 @@
         "touch": true,
         "size": 5
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "73.0.3683.90",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -798,6 +1718,15 @@
       "version": "5.1.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "73.0.3683.90",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -822,15 +1751,8 @@
         "touch": true,
         "size": 5.2
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Opera Mobile",
-      "modus": null,
-      "version": "35.0.2254.127759",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -838,6 +1760,15 @@
       "version": "8.1.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "35.0.2254.127759",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -862,15 +1793,8 @@
         "touch": true,
         "size": 5.2
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "104.0.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -879,10 +1803,19 @@
       "manufacturer": "google",
       "bits": null
     },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "104.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
     "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
+      "name": "Blink",
+      "version": "104.0.0.0",
+      "manufacturer": "google"
     }
   },
   {
@@ -902,15 +1835,8 @@
         "touch": true,
         "size": 5
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "103.0.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -919,10 +1845,19 @@
       "manufacturer": "google",
       "bits": null
     },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "103.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
     "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
+      "name": "Blink",
+      "version": "103.0.0.0",
+      "manufacturer": "google"
     }
   },
   {
@@ -942,15 +1877,8 @@
         "touch": true,
         "size": 6.26
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "104.0.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -959,10 +1887,19 @@
       "manufacturer": "google",
       "bits": null
     },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "104.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
     "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
+      "name": "Blink",
+      "version": "104.0.0.0",
+      "manufacturer": "google"
     }
   },
   {
@@ -982,15 +1919,8 @@
         "touch": true,
         "size": 5.45
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "104.0.5112.97",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -999,10 +1929,19 @@
       "manufacturer": "google",
       "bits": null
     },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "104.0.5112.97",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
     "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
+      "name": "Blink",
+      "version": "104.0.5112.97",
+      "manufacturer": "google"
     }
   },
   {
@@ -1022,15 +1961,8 @@
         "touch": true,
         "size": 6.26
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "103.0.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -1039,10 +1971,19 @@
       "manufacturer": "google",
       "bits": null
     },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "103.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
     "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
+      "name": "Blink",
+      "version": "103.0.0.0",
+      "manufacturer": "google"
     }
   },
   {
@@ -1062,15 +2003,8 @@
         "touch": true,
         "size": 5.45
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "104.0.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -1079,10 +2013,19 @@
       "manufacturer": "google",
       "bits": null
     },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "104.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
     "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
+      "name": "Blink",
+      "version": "104.0.0.0",
+      "manufacturer": "google"
     }
   },
   {
@@ -1102,15 +2045,8 @@
         "touch": true,
         "size": 6.52
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "104.0.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -1119,10 +2055,19 @@
       "manufacturer": "google",
       "bits": null
     },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "104.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
     "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
+      "name": "Blink",
+      "version": "104.0.0.0",
+      "manufacturer": "google"
     }
   },
   {
@@ -1142,15 +2087,8 @@
         "touch": true,
         "size": 5
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "104.0.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -1159,10 +2097,19 @@
       "manufacturer": "google",
       "bits": null
     },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "104.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
     "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
+      "name": "Blink",
+      "version": "104.0.0.0",
+      "manufacturer": "google"
     }
   },
   {
@@ -1182,15 +2129,8 @@
         "touch": true,
         "size": 6.26
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "104.0.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -1199,10 +2139,19 @@
       "manufacturer": "google",
       "bits": null
     },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "104.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
     "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
+      "name": "Blink",
+      "version": "104.0.0.0",
+      "manufacturer": "google"
     }
   },
   {
@@ -1222,15 +2171,8 @@
         "touch": true,
         "size": 5
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "85.0.4183.101",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -1238,6 +2180,15 @@
       "version": "6.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "85.0.4183.101",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -1262,15 +2213,8 @@
         "touch": true,
         "size": 5
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "104.0.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -1279,10 +2223,19 @@
       "manufacturer": "google",
       "bits": null
     },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "104.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
     "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
+      "name": "Blink",
+      "version": "104.0.0.0",
+      "manufacturer": "google"
     }
   },
   {
@@ -1302,15 +2255,8 @@
         "touch": true,
         "size": 5
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Yandex Browser",
-      "modus": null,
-      "version": "22.1.5.99.00",
-      "manufacturer": "yandex",
-      "bits": 64,
-      "type": "browser"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -1318,6 +2264,15 @@
       "version": "9.0.0",
       "manufacturer": "google",
       "bits": 64
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "modus": null,
+      "version": "22.1.5.99.00",
+      "manufacturer": "yandex",
+      "bits": 64,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -1342,15 +2297,8 @@
         "touch": true,
         "size": 5
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "105.0.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -1359,10 +2307,19 @@
       "manufacturer": "google",
       "bits": null
     },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "105.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
     "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
+      "name": "Blink",
+      "version": "105.0.0.0",
+      "manufacturer": "google"
     }
   },
   {
@@ -1382,15 +2339,8 @@
         "touch": true,
         "size": 5
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "84.0.4147.125",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -1398,6 +2348,15 @@
       "version": "8.1.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "84.0.4147.125",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -1422,15 +2381,8 @@
         "touch": true,
         "size": 5
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "77.0.3865.116",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -1438,6 +2390,15 @@
       "version": "4.4.2",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "77.0.3865.116",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -1462,15 +2423,8 @@
         "touch": true,
         "size": 5
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "78.0.3904.90",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -1478,6 +2432,15 @@
       "version": "5.1.1",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "78.0.3904.90",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -1502,15 +2465,8 @@
         "touch": true,
         "size": 5
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "75.0.3770.101",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -1518,6 +2474,15 @@
       "version": "5.1.1",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "75.0.3770.101",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -1542,15 +2507,8 @@
         "touch": true,
         "size": 5.2
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "106.0.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -1559,10 +2517,19 @@
       "manufacturer": "google",
       "bits": null
     },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "106.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
     "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
+      "name": "Blink",
+      "version": "106.0.0.0",
+      "manufacturer": "google"
     }
   },
   {
@@ -1582,15 +2549,8 @@
         "touch": true,
         "size": 6.09
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "105.0.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -1599,10 +2559,19 @@
       "manufacturer": "google",
       "bits": null
     },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "105.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
     "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
+      "name": "Blink",
+      "version": "105.0.0.0",
+      "manufacturer": "google"
     }
   },
   {
@@ -1622,15 +2591,8 @@
         "touch": true,
         "size": 5.99
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "106.0.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -1639,10 +2601,19 @@
       "manufacturer": "google",
       "bits": null
     },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "106.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
     "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
+      "name": "Blink",
+      "version": "106.0.0.0",
+      "manufacturer": "google"
     }
   },
   {
@@ -1662,15 +2633,8 @@
         "touch": true,
         "size": 6.26
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "106.0.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -1679,10 +2643,19 @@
       "manufacturer": "google",
       "bits": null
     },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "106.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
     "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
+      "name": "Blink",
+      "version": "106.0.0.0",
+      "manufacturer": "google"
     }
   },
   {
@@ -1702,15 +2675,8 @@
         "touch": true,
         "size": 5.45
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "106.0.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -1719,10 +2685,19 @@
       "manufacturer": "google",
       "bits": null
     },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "106.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
     "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
+      "name": "Blink",
+      "version": "106.0.0.0",
+      "manufacturer": "google"
     }
   },
   {
@@ -1742,15 +2717,8 @@
         "touch": true,
         "size": 5.7
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "105.0.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -1759,10 +2727,19 @@
       "manufacturer": "google",
       "bits": null
     },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "105.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
     "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
+      "name": "Blink",
+      "version": "105.0.0.0",
+      "manufacturer": "google"
     }
   },
   {
@@ -1782,15 +2759,8 @@
         "touch": true,
         "size": 5.7
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "106.0.5249.79",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -1799,10 +2769,19 @@
       "manufacturer": "google",
       "bits": null
     },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "106.0.5249.79",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
     "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
+      "name": "Blink",
+      "version": "106.0.5249.79",
+      "manufacturer": "google"
     }
   },
   {
@@ -1822,15 +2801,8 @@
         "touch": true,
         "size": 6.26
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "105.0.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -1839,10 +2811,19 @@
       "manufacturer": "google",
       "bits": null
     },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "105.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
     "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
+      "name": "Blink",
+      "version": "105.0.0.0",
+      "manufacturer": "google"
     }
   },
   {
@@ -1862,15 +2843,8 @@
         "touch": true,
         "size": 5.7
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "105.0.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -1879,10 +2853,19 @@
       "manufacturer": "google",
       "bits": null
     },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "105.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
     "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
+      "name": "Blink",
+      "version": "105.0.0.0",
+      "manufacturer": "google"
     }
   },
   {
@@ -1902,15 +2885,8 @@
         "touch": true,
         "size": 5
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "106.0.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -1919,10 +2895,19 @@
       "manufacturer": "google",
       "bits": null
     },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "106.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
     "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
+      "name": "Blink",
+      "version": "106.0.0.0",
+      "manufacturer": "google"
     }
   },
   {
@@ -1942,15 +2927,8 @@
         "touch": true,
         "size": 5
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "106.0.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -1959,10 +2937,19 @@
       "manufacturer": "google",
       "bits": null
     },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "106.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
     "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
+      "name": "Blink",
+      "version": "106.0.0.0",
+      "manufacturer": "google"
     }
   },
   {
@@ -1982,15 +2969,8 @@
         "touch": true,
         "size": 6.52
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "105.0.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -1999,10 +2979,19 @@
       "manufacturer": "google",
       "bits": null
     },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "105.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
     "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
+      "name": "Blink",
+      "version": "105.0.0.0",
+      "manufacturer": "google"
     }
   },
   {
@@ -2022,15 +3011,8 @@
         "touch": true,
         "size": 6.52
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "106.0.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -2039,10 +3021,19 @@
       "manufacturer": "google",
       "bits": null
     },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "106.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
     "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
+      "name": "Blink",
+      "version": "106.0.0.0",
+      "manufacturer": "google"
     }
   },
   {
@@ -2062,15 +3053,8 @@
         "touch": true,
         "size": 6
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "105.0.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -2079,10 +3063,19 @@
       "manufacturer": "google",
       "bits": null
     },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "105.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
     "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
+      "name": "Blink",
+      "version": "105.0.0.0",
+      "manufacturer": "google"
     }
   },
   {
@@ -2102,15 +3095,8 @@
         "touch": true,
         "size": 6.52
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "106.0.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -2119,10 +3105,19 @@
       "manufacturer": "google",
       "bits": null
     },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "106.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
     "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
+      "name": "Blink",
+      "version": "106.0.0.0",
+      "manufacturer": "google"
     }
   },
   {
@@ -2142,15 +3137,8 @@
         "touch": true,
         "size": 6.52
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "105.0.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -2159,10 +3147,467 @@
       "manufacturer": "google",
       "bits": null
     },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "105.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
     "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
+      "name": "Blink",
+      "version": "105.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "2",
+      "downlink": "4.6",
+      "dpr": "1.9125",
+      "ect": "4g",
+      "origin": "https://www.geld.de",
+      "rtt": "150",
+      "sec-ch-device-memory": "2",
+      "sec-ch-dpr": "1.9125",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-ua": "\"Google Chrome\";v=\"105\", \"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"105\"",
+      "sec-ch-ua-full-version": "\"105.0.5195.136\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"W-P311-EEA\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"9.0.0\"",
+      "sec-ch-viewport-height": "659",
+      "sec-ch-viewport-width": "377",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; W-P311-EEA) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "377",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "deviceName": "W-P311-EEA",
+      "marketingName": "View 3",
+      "manufacturer": "wiko",
+      "brand": "wiko",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1520,
+        "height": 720,
+        "touch": true,
+        "size": 6.26
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "105.0.0.0",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "105.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "2",
+      "downlink": "1.45",
+      "dpr": "1.9125",
+      "ect": "4g",
+      "origin": "https://www.geld.de",
+      "rtt": "150",
+      "sec-ch-device-memory": "2",
+      "sec-ch-dpr": "1.9125",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-ua": "\"Google Chrome\";v=\"105\", \"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"105\"",
+      "sec-ch-ua-full-version": "\"105.0.5195.136\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"W-P311-EEA\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"9.0.0\"",
+      "sec-ch-viewport-height": "659",
+      "sec-ch-viewport-width": "377",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; W-P311-EEA) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "377",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "deviceName": "W-P311-EEA",
+      "marketingName": "View 3",
+      "manufacturer": "wiko",
+      "brand": "wiko",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1520,
+        "height": 720,
+        "touch": true,
+        "size": 6.26
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "105.0.0.0",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "105.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "2",
+      "downlink": "6.85",
+      "dpr": "1.9125",
+      "ect": "4g",
+      "origin": "https://www.geld.de",
+      "rtt": "150",
+      "sec-ch-device-memory": "2",
+      "sec-ch-dpr": "1.9125",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-ua": "\"Google Chrome\";v=\"105\", \"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"105\"",
+      "sec-ch-ua-full-version": "\"105.0.5195.136\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"W-P311-EEA\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"9.0.0\"",
+      "sec-ch-viewport-height": "659",
+      "sec-ch-viewport-width": "377",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; W-P311-EEA) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "377",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "deviceName": "W-P311-EEA",
+      "marketingName": "View 3",
+      "manufacturer": "wiko",
+      "brand": "wiko",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1520,
+        "height": 720,
+        "touch": true,
+        "size": 6.26
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "105.0.0.0",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "105.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "2",
+      "downlink": "1.7",
+      "dpr": "2",
+      "ect": "4g",
+      "origin": "https://www.geld.de",
+      "rtt": "100",
+      "sec-ch-device-memory": "2",
+      "sec-ch-dpr": "2",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-ua": "\"Chromium\";v=\"106\", \"Google Chrome\";v=\"106\", \"Not;A=Brand\";v=\"99\"",
+      "sec-ch-ua-full-version": "\"106.0.5249.126\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"W-V720-EEA\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"9.0.0\"",
+      "sec-ch-viewport-height": "592",
+      "sec-ch-viewport-width": "360",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; W-V720-EEA) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "360",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "deviceName": "W-V720-EEA",
+      "marketingName": "Y80",
+      "manufacturer": "wiko",
+      "brand": "wiko",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1440,
+        "height": 720,
+        "touch": true,
+        "size": 5.99
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "106.0.0.0",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "106.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "2",
+      "downlink": "6.85",
+      "dpr": "2.075",
+      "ect": "4g",
+      "origin": "https://www.geld.de",
+      "rtt": "100",
+      "sec-ch-device-memory": "2",
+      "sec-ch-dpr": "2.075",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-ua": "\"Chromium\";v=\"106\", \"Google Chrome\";v=\"106\", \"Not;A=Brand\";v=\"99\"",
+      "sec-ch-ua-full-version": "\"106.0.5249.126\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"W-V830-EEA\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"10.0.0\"",
+      "sec-ch-viewport-height": "643",
+      "sec-ch-viewport-width": "347",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; W-V830-EEA) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "347",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "deviceName": "W-V830-EEA",
+      "marketingName": "View 4",
+      "manufacturer": "wiko",
+      "brand": "wiko",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1600,
+        "height": 720,
+        "touch": true,
+        "size": 6.52
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "106.0.0.0",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "106.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "2",
+      "downlink": "5.25",
+      "dpr": "1.75",
+      "ect": "4g",
+      "origin": "https://www.geld.de",
+      "rtt": "100",
+      "sec-ch-device-memory": "2",
+      "sec-ch-dpr": "1.75",
+      "sec-ch-prefers-color-scheme": "dark",
+      "sec-ch-ua": "\"Chromium\";v=\"106\", \"Google Chrome\";v=\"106\", \"Not;A=Brand\";v=\"99\"",
+      "sec-ch-ua-full-version": "\"106.0.5249.126\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"W-V730-EEA\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"10.0.0\"",
+      "sec-ch-viewport-height": "782",
+      "sec-ch-viewport-width": "412",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; W-V730-EEA) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "412",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "deviceName": "W-V730-EEA",
+      "marketingName": "View 4 Lite",
+      "manufacturer": "wiko",
+      "brand": "wiko",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1600,
+        "height": 720,
+        "touch": true,
+        "size": 6.52
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "106.0.0.0",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "106.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "4",
+      "downlink": "8.45",
+      "dpr": "2.875",
+      "ect": "4g",
+      "origin": "https://www.geld.de",
+      "rtt": "50",
+      "sec-ch-device-memory": "4",
+      "sec-ch-dpr": "2.875",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-ua": "\"Chromium\";v=\"106\", \"Google Chrome\";v=\"106\", \"Not;A=Brand\";v=\"99\"",
+      "sec-ch-ua-full-version": "\"106.0.5249.79\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"W-P611-EEA\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"9.0.0\"",
+      "sec-ch-viewport-height": "681",
+      "sec-ch-viewport-width": "376",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; W-P611-EEA) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "376",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "deviceName": "W-P611-EEA",
+      "marketingName": "View 3 Pro",
+      "manufacturer": "wiko",
+      "brand": "wiko",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.26
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "106.0.0.0",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "106.0.0.0",
+      "manufacturer": "google"
     }
   },
   {
@@ -2187,15 +3632,8 @@
         "touch": true,
         "size": 5.7
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Google Bot",
-      "modus": null,
-      "version": null,
-      "manufacturer": "google",
-      "bits": null,
-      "type": "bot"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -2204,10 +3642,617 @@
       "manufacturer": "google",
       "bits": null
     },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "106.0.5249.79",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
+    },
     "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
+      "name": "Blink",
+      "version": "106.0.5249.79",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "none",
+      "sec-fetch-user": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; W_K400 Build/O11019) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.5249.79 Mobile Safari/537.36",
+      "x-requested-with": "com.google.android.apps.searchlite"
+    },
+    "device": {
+      "deviceName": "Lenny 5",
+      "marketingName": "Lenny 5",
+      "manufacturer": "wiko",
+      "brand": "wiko",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1440,
+        "height": 720,
+        "touch": true,
+        "size": 5.7
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.1.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "106.0.5249.79",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "106.0.5249.79",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "4",
+      "downlink": "8.2",
+      "dpr": "2",
+      "ect": "4g",
+      "origin": "https://www.geld.de",
+      "rtt": "100",
+      "sec-ch-device-memory": "4",
+      "sec-ch-dpr": "2",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-ua": "\"Chromium\";v=\"104\", \" Not A;Brand\";v=\"99\", \"Google Chrome\";v=\"104\"",
+      "sec-ch-ua-full-version": "\"104.0.5112.97\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"A80Plus\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"10.0.0\"",
+      "sec-ch-viewport-width": "360",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; A80Plus) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "360",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "deviceName": "Plus",
+      "marketingName": "Plus",
+      "manufacturer": "wiko",
+      "brand": "wiko",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "104.0.0.0",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "104.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "2",
+      "downlink": "9.6",
+      "dpr": "2.25",
+      "ect": "4g",
+      "origin": "https://www.geld.de",
+      "rtt": "50",
+      "sec-ch-device-memory": "2",
+      "sec-ch-dpr": "2.25",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-ua": "\"Google Chrome\";v=\"105\", \"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"105\"",
+      "sec-ch-ua-full-version": "\"105.0.5195.136\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"W_P130\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"8.1.0\"",
+      "sec-ch-viewport-height": "512",
+      "sec-ch-viewport-width": "320",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; W_P130) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "320",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "deviceName": "WP130",
+      "marketingName": "View Go",
+      "manufacturer": "wiko",
+      "brand": "wiko",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1440,
+        "height": 720,
+        "touch": true,
+        "size": 5.7
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.1.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "105.0.0.0",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "105.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "4",
+      "downlink": "4.5",
+      "dpr": "1.75",
+      "ect": "4g",
+      "origin": "https://www.geld.de",
+      "rtt": "100",
+      "sec-ch-device-memory": "4",
+      "sec-ch-dpr": "1.75",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-ua": "\"Google Chrome\";v=\"105\", \"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"105\"",
+      "sec-ch-ua-full-version": "\"105.0.5195.79\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"W_C860\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"8.0.0\"",
+      "sec-ch-viewport-height": "695",
+      "sec-ch-viewport-width": "412",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.0.0; W_C860) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "412",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "deviceName": "WC860",
+      "marketingName": "View 2 Pro",
+      "manufacturer": "wiko",
+      "brand": "wiko",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1528,
+        "height": 720,
+        "touch": true,
+        "size": 6
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "105.0.0.0",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "105.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "2",
+      "downlink": "4.5",
+      "dpr": "1.9125",
+      "ect": "4g",
+      "origin": "https://www.geld.de",
+      "rtt": "100",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\", \"Google Chrome\";v=\"96\"",
+      "sec-ch-ua-full-version": "\"96.0.4664.104\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"W-V730-EEA\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"10.0.0\"",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; W-V730-EEA) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.104 Mobile Safari/537.36",
+      "viewport-width": "377",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "deviceName": "W-V730-EEA",
+      "marketingName": "View 4 Lite",
+      "manufacturer": "wiko",
+      "brand": "wiko",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1600,
+        "height": 720,
+        "touch": true,
+        "size": 6.52
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "96.0.4664.104",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "96.0.4664.104",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "origin": "https://www.geld.de",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; W-K510-EEA Build/PPR1.181008.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.97 Mobile Safari/537.36",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "deviceName": "W-K510-EEA",
+      "marketingName": "Y60",
+      "manufacturer": "wiko",
+      "brand": "wiko",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 960,
+        "height": 480,
+        "touch": true,
+        "size": 5.45
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "104.0.5112.97",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "104.0.5112.97",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "4",
+      "downlink": "2.9",
+      "dpr": "2.625",
+      "ect": "4g",
+      "origin": "https://www.geld.de",
+      "rtt": "100",
+      "save-data": "on",
+      "sec-ch-device-memory": "4",
+      "sec-ch-dpr": "2.625",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-ua": "\"Chromium\";v=\"104\", \" Not A;Brand\";v=\"99\", \"Google Chrome\";v=\"104\"",
+      "sec-ch-ua-full-version": "\"104.0.5112.97\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"W-P611-EEA\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"9.0.0\"",
+      "sec-ch-viewport-width": "412",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; W-P611-EEA) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "412",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "deviceName": "W-P611-EEA",
+      "marketingName": "View 3 Pro",
+      "manufacturer": "wiko",
+      "brand": "wiko",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.26
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "104.0.0.0",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "104.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "2",
+      "downlink": "3.05",
+      "dpr": "1.75",
+      "ect": "4g",
+      "origin": "https://www.geld.de",
+      "rtt": "100",
+      "sec-ch-device-memory": "2",
+      "sec-ch-dpr": "1.75",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-ua": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\"",
+      "sec-ch-ua-full-version": "\"103.0.5060.71\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"W-P311-EEA\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"9.0.0\"",
+      "sec-ch-viewport-width": "412",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; W-P311-EEA) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "412",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "deviceName": "W-P311-EEA",
+      "marketingName": "View 3",
+      "manufacturer": "wiko",
+      "brand": "wiko",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1520,
+        "height": 720,
+        "touch": true,
+        "size": 6.26
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "103.0.0.0",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "103.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "2",
+      "downlink": "3.75",
+      "dpr": "1.75",
+      "ect": "4g",
+      "origin": "https://www.geld.de",
+      "rtt": "100",
+      "sec-ch-device-memory": "2",
+      "sec-ch-dpr": "1.75",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-ua": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\"",
+      "sec-ch-ua-full-version": "\"103.0.5060.71\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"W-P311-EEA\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"9.0.0\"",
+      "sec-ch-viewport-width": "412",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; W-P311-EEA) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "412",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "deviceName": "W-P311-EEA",
+      "marketingName": "View 3",
+      "manufacturer": "wiko",
+      "brand": "wiko",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1520,
+        "height": 720,
+        "touch": true,
+        "size": 6.26
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "103.0.0.0",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "103.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "2",
+      "downlink": "5.25",
+      "dpr": "1.75",
+      "ect": "4g",
+      "origin": "https://www.geld.de",
+      "rtt": "50",
+      "sec-ch-device-memory": "2",
+      "sec-ch-dpr": "1.75",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-ua": "\"Chromium\";v=\"104\", \" Not A;Brand\";v=\"99\", \"Google Chrome\";v=\"104\"",
+      "sec-ch-ua-full-version": "\"104.0.5112.69\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"W-V830-EEA\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"10.0.0\"",
+      "sec-ch-viewport-width": "412",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; W-V830-EEA) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "412",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "deviceName": "W-V830-EEA",
+      "marketingName": "View 4",
+      "manufacturer": "wiko",
+      "brand": "wiko",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1600,
+        "height": 720,
+        "touch": true,
+        "size": 6.52
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "104.0.0.0",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "104.0.0.0",
+      "manufacturer": "google"
     }
   },
   {
@@ -2228,15 +4273,8 @@
         "touch": true,
         "size": 5.45
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Google Bot",
-      "modus": null,
-      "version": null,
-      "manufacturer": "google",
-      "bits": null,
-      "type": "bot"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -2244,6 +4282,65 @@
       "version": "9.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "74.0.3729.136",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "74.0.3729.136",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "1",
+      "downlink": "10",
+      "dpr": "1.5",
+      "ect": "4g",
+      "origin": "https://www.geld.de",
+      "rtt": "0",
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; W-K510-EEA Build/PPR1.181008.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.136 Mobile Safari/537.36",
+      "viewport-width": "320",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "deviceName": "W-K510-EEA",
+      "marketingName": "Y60",
+      "manufacturer": "wiko",
+      "brand": "wiko",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 960,
+        "height": 480,
+        "touch": true,
+        "size": 5.45
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "74.0.3729.136",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
     },
     "engine": {
       "name": "Blink",
@@ -2268,15 +4365,8 @@
         "touch": true,
         "size": null
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "106.0.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -2285,10 +4375,19 @@
       "manufacturer": "google",
       "bits": null
     },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "106.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
     "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
+      "name": "Blink",
+      "version": "106.0.0.0",
+      "manufacturer": "google"
     }
   },
   {
@@ -2308,15 +4407,8 @@
         "touch": true,
         "size": 5.45
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "107.0.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -2325,10 +4417,19 @@
       "manufacturer": "google",
       "bits": null
     },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "107.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
     "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
+      "name": "Blink",
+      "version": "107.0.0.0",
+      "manufacturer": "google"
     }
   },
   {
@@ -2348,15 +4449,8 @@
         "touch": true,
         "size": 6.26
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "107.0.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -2365,10 +4459,19 @@
       "manufacturer": "google",
       "bits": null
     },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "107.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
     "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
+      "name": "Blink",
+      "version": "107.0.0.0",
+      "manufacturer": "google"
     }
   },
   {
@@ -2388,15 +4491,8 @@
         "touch": true,
         "size": 5.7
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "107.0.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -2405,10 +4501,19 @@
       "manufacturer": "google",
       "bits": null
     },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "107.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
     "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
+      "name": "Blink",
+      "version": "107.0.0.0",
+      "manufacturer": "google"
     }
   },
   {
@@ -2428,15 +4533,8 @@
         "touch": true,
         "size": 5
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "107.0.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -2445,10 +4543,211 @@
       "manufacturer": "google",
       "bits": null
     },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "107.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
     "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
+      "name": "Blink",
+      "version": "107.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "1",
+      "downlink": "8.9",
+      "dpr": "1.5",
+      "ect": "4g",
+      "origin": "https://www.geld.de",
+      "rtt": "50",
+      "sec-ch-device-memory": "1",
+      "sec-ch-dpr": "1.5",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-ua": "\"Google Chrome\";v=\"107\", \"Chromium\";v=\"107\", \"Not=A?Brand\";v=\"24\"",
+      "sec-ch-ua-full-version": "\"107.0.5304.91\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"W-K510-EEA\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"9.0.0\"",
+      "sec-ch-viewport-height": "512",
+      "sec-ch-viewport-width": "320",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; W-K510-EEA) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "320",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "deviceName": "W-K510-EEA",
+      "marketingName": "Y60",
+      "manufacturer": "wiko",
+      "brand": "wiko",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 960,
+        "height": 480,
+        "touch": true,
+        "size": 5.45
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "107.0.0.0",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "107.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "1",
+      "downlink": "6.75",
+      "dpr": "1.5",
+      "ect": "4g",
+      "origin": "https://www.geld.de",
+      "rtt": "50",
+      "sec-ch-device-memory": "1",
+      "sec-ch-dpr": "1.5",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-ua": "\"Google Chrome\";v=\"107\", \"Chromium\";v=\"107\", \"Not=A?Brand\";v=\"24\"",
+      "sec-ch-ua-full-version": "\"107.0.5304.91\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"W-K510-EEA\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"9.0.0\"",
+      "sec-ch-viewport-height": "512",
+      "sec-ch-viewport-width": "320",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; W-K510-EEA) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "320",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "deviceName": "W-K510-EEA",
+      "marketingName": "Y60",
+      "manufacturer": "wiko",
+      "brand": "wiko",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 960,
+        "height": 480,
+        "touch": true,
+        "size": 5.45
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "107.0.0.0",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "107.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "1",
+      "downlink": "7.85",
+      "dpr": "2",
+      "ect": "4g",
+      "origin": "https://www.geld.de",
+      "rtt": "50",
+      "sec-ch-device-memory": "1",
+      "sec-ch-dpr": "2",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-ua": "\"Google Chrome\";v=\"107\", \"Chromium\";v=\"107\", \"Not=A?Brand\";v=\"24\"",
+      "sec-ch-ua-full-version": "\"107.0.5304.91\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"W_K400\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"8.1.0\"",
+      "sec-ch-viewport-height": "592",
+      "sec-ch-viewport-width": "360",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; W_K400) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "360",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "deviceName": "Lenny 5",
+      "marketingName": "Lenny 5",
+      "manufacturer": "wiko",
+      "brand": "wiko",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1440,
+        "height": 720,
+        "touch": true,
+        "size": 5.7
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.1.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "107.0.0.0",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "107.0.0.0",
+      "manufacturer": "google"
     }
   },
   {
@@ -2468,15 +4767,8 @@
         "touch": true,
         "size": 5
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Android WebView",
-      "modus": null,
-      "version": "107.0.5304.91",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -2485,10 +4777,19 @@
       "manufacturer": "google",
       "bits": null
     },
+    "client": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "107.0.5304.91",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
     "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
+      "name": "Blink",
+      "version": "107.0.5304.91",
+      "manufacturer": "google"
     }
   },
   {
@@ -2508,15 +4809,8 @@
         "touch": true,
         "size": 5.99
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "107.0.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -2525,1604 +4819,18 @@
       "manufacturer": "google",
       "bits": null
     },
-    "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.0; RAINBOW LITE Build/LRX21M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "Rainbow Lite",
-      "marketingName": "Rainbow Lite",
-      "manufacturer": "wiko",
-      "brand": "wiko",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 854,
-        "height": 480,
-        "touch": true,
-        "size": 5
-      },
-      "type": "smartphone"
-    },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome",
       "modus": null,
-      "version": "56.0.2924.87",
+      "version": "107.0.0.0",
       "manufacturer": "google",
       "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.0.0",
-      "manufacturer": "google",
-      "bits": null
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
-      "version": "56.0.2924.87",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 11; Max80 Plus) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "Plus",
-      "marketingName": "Plus",
-      "manufacturer": "wiko",
-      "brand": "wiko",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 5
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
       "version": "107.0.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "11.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 8.0.0; W_C800 Build/OPR1.170623.032; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/107.0.5304.141 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "WC800",
-      "marketingName": "View 2",
-      "manufacturer": "wiko",
-      "brand": "wiko",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1528,
-        "height": 720,
-        "touch": true,
-        "size": 6
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Android WebView",
-      "modus": null,
-      "version": "107.0.5304.141",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "8.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; W-V830-EEA) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "W-V830-EEA",
-      "marketingName": "View 4",
-      "manufacturer": "wiko",
-      "brand": "wiko",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1600,
-        "height": 720,
-        "touch": true,
-        "size": 6.52
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "108.0.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; U PULSE LITE) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "U Pulse Lite",
-      "marketingName": "U Pulse Lite",
-      "manufacturer": "wiko",
-      "brand": "wiko",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 5.2
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "108.0.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "7.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 9; W-V800-EEA) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "W-V800-EEA",
-      "marketingName": "View 3 Lite",
-      "manufacturer": "wiko",
-      "brand": "wiko",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1560,
-        "height": 720,
-        "touch": true,
-        "size": 6.09
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "108.0.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "9.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; W-V730-EEA) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "W-V730-EEA",
-      "marketingName": "View 4 Lite",
-      "manufacturer": "wiko",
-      "brand": "wiko",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1600,
-        "height": 720,
-        "touch": true,
-        "size": 6.52
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "107.0.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 9; W-K510-EEA Build/PPR1.181008.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.5359.128 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "W-K510-EEA",
-      "marketingName": "Y60",
-      "manufacturer": "wiko",
-      "brand": "wiko",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 960,
-        "height": 480,
-        "touch": true,
-        "size": 5.45
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "108.0.5359.128",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "9.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 9; W-V720-EEA) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "W-V720-EEA",
-      "marketingName": "Y80",
-      "manufacturer": "wiko",
-      "brand": "wiko",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1440,
-        "height": 720,
-        "touch": true,
-        "size": 5.99
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "108.0.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "9.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 9; W-V800-EEA) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "W-V800-EEA",
-      "marketingName": "View 3 Lite",
-      "manufacturer": "wiko",
-      "brand": "wiko",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1560,
-        "height": 720,
-        "touch": true,
-        "size": 6.09
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "107.0.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "9.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; W-V850-EEA) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "W-V850-EEA",
-      "marketingName": "W-V850-EEA",
-      "manufacturer": "wiko",
-      "brand": "wiko",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "108.0.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; Lenny4 Plus) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "Lenny 4 Plus",
-      "marketingName": "Lenny 4 Plus",
-      "manufacturer": "wiko",
-      "brand": "wiko",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 5.5
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "108.0.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "7.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; W-V830-EEA Build/QP1A.190711.020) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.5304.141 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "W-V830-EEA",
-      "marketingName": "View 4",
-      "manufacturer": "wiko",
-      "brand": "wiko",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1600,
-        "height": 720,
-        "touch": true,
-        "size": 6.52
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "107.0.5304.141",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 9; W-P611-EEA) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "W-P611-EEA",
-      "marketingName": "View 3 Pro",
-      "manufacturer": "wiko",
-      "brand": "wiko",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 2340,
-        "height": 1080,
-        "touch": true,
-        "size": 6.26
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "108.0.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "9.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 9; W-V720-EEA) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "W-V720-EEA",
-      "marketingName": "Y80",
-      "manufacturer": "wiko",
-      "brand": "wiko",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1440,
-        "height": 720,
-        "touch": true,
-        "size": 5.99
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "107.0.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "9.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.2; View Prime) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "View Prime",
-      "marketingName": "View Prime",
-      "manufacturer": "wiko",
-      "brand": "wiko",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1440,
-        "height": 720,
-        "touch": true,
-        "size": 5.7
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "108.0.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "7.1.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "sec-fetch-dest": "document",
-      "sec-fetch-mode": "navigate",
-      "sec-fetch-site": "none",
-      "sec-fetch-user": "?1",
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; W-V830-EEA Build/QP1A.190711.020) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.5304.141 Mobile Safari/537.36",
-      "x-requested-with": "mark.via.gp"
-    },
-    "device": {
-      "deviceName": "W-V830-EEA",
-      "marketingName": "View 4",
-      "manufacturer": "wiko",
-      "brand": "wiko",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1600,
-        "height": 720,
-        "touch": true,
-        "size": 6.52
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "device-memory": "1",
-      "downlink": "9.15",
-      "dpr": "1.5",
-      "ect": "4g",
-      "rtt": "50",
-      "sec-ch-device-memory": "1",
-      "sec-ch-dpr": "1.5",
-      "sec-ch-prefers-color-scheme": "light",
-      "sec-ch-ua": "\"Chromium\";v=\"106\", \"Google Chrome\";v=\"106\", \"Not;A=Brand\";v=\"99\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-full-version": "\"106.0.5249.126\"",
-      "sec-ch-ua-mobile": "?1",
-      "sec-ch-ua-model": "\"JERRY\"",
-      "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua-platform-version": "\"6.0.0\"",
-      "sec-ch-viewport-height": "1744",
-      "sec-ch-viewport-width": "980",
-      "sec-fetch-dest": "document",
-      "sec-fetch-mode": "navigate",
-      "sec-fetch-site": "cross-site",
-      "sec-fetch-user": "?1",
-      "user-agent": "Mozilla/5.0 (Linux; Android 6.0; JERRY) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Mobile Safari/537.36",
-      "viewport-width": "980"
-    },
-    "device": {
-      "deviceName": "Jerry",
-      "marketingName": "Jerry",
-      "manufacturer": "wiko",
-      "brand": "wiko",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 854,
-        "height": 480,
-        "touch": true,
-        "size": 5
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "106.0.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "6.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "device-memory": "4",
-      "downlink": "4.7",
-      "dpr": "1.75",
-      "ect": "4g",
-      "rtt": "200",
-      "sec-ch-device-memory": "4",
-      "sec-ch-dpr": "1.75",
-      "sec-ch-prefers-color-scheme": "light",
-      "sec-ch-ua": "\"Google Chrome\";v=\"107\", \"Chromium\";v=\"107\", \"Not=A?Brand\";v=\"24\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-full-version": "\"107.0.5304.105\"",
-      "sec-ch-ua-mobile": "?1",
-      "sec-ch-ua-model": "\"W-V850-EEA\"",
-      "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua-platform-version": "\"10.0.0\"",
-      "sec-ch-viewport-height": "0",
-      "sec-fetch-dest": "document",
-      "sec-fetch-mode": "navigate",
-      "sec-fetch-site": "none",
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; W-V850-EEA) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "W-V850-EEA",
-      "marketingName": "W-V850-EEA",
-      "manufacturer": "wiko",
-      "brand": "wiko",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "107.0.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "device-memory": "2",
-      "downlink": "9.9",
-      "dpr": "2",
-      "ect": "4g",
-      "rtt": "100",
-      "sec-ch-device-memory": "2",
-      "sec-ch-dpr": "2",
-      "sec-ch-prefers-color-scheme": "light",
-      "sec-ch-ua": "\"Google Chrome\";v=\"107\", \"Chromium\";v=\"107\", \"Not=A?Brand\";v=\"24\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-full-version": "\"107.0.5304.105\"",
-      "sec-ch-ua-mobile": "?1",
-      "sec-ch-ua-model": "\"View\"",
-      "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua-platform-version": "\"7.1.2\"",
-      "sec-ch-viewport-height": "1612",
-      "sec-ch-viewport-width": "980",
-      "sec-fetch-dest": "document",
-      "sec-fetch-mode": "navigate",
-      "sec-fetch-site": "same-origin",
-      "sec-fetch-user": "?1",
-      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.2; View) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Mobile Safari/537.36",
-      "viewport-width": "980"
-    },
-    "device": {
-      "deviceName": "View",
-      "marketingName": "View",
-      "manufacturer": "wiko",
-      "brand": "wiko",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1440,
-        "height": 720,
-        "touch": true,
-        "size": 5.7
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "107.0.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "7.1.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "device-memory": "2",
-      "downlink": "7.45",
-      "dpr": "1.7",
-      "ect": "4g",
-      "origin": "https://www.geld.de",
-      "rtt": "100",
-      "sec-ch-device-memory": "2",
-      "sec-ch-dpr": "1.7",
-      "sec-ch-prefers-color-scheme": "light",
-      "sec-ch-ua": "\"Google Chrome\";v=\"107\", \"Chromium\";v=\"107\", \"Not=A?Brand\";v=\"24\"",
-      "sec-ch-ua-full-version": "\"107.0.5304.105\"",
-      "sec-ch-ua-mobile": "?1",
-      "sec-ch-ua-model": "\"View2 Go\"",
-      "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua-platform-version": "\"8.1.0\"",
-      "sec-ch-viewport-height": "749",
-      "sec-ch-viewport-width": "424",
-      "sec-fetch-dest": "empty",
-      "sec-fetch-mode": "cors",
-      "sec-fetch-site": "same-origin",
-      "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; View2 Go) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Mobile Safari/537.36",
-      "viewport-width": "424",
-      "x-requested-with": "XMLHttpRequest"
-    },
-    "device": {
-      "deviceName": "View 2 Go",
-      "marketingName": "View 2 Go",
-      "manufacturer": "wiko",
-      "brand": "wiko",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1512,
-        "height": 720,
-        "touch": true,
-        "size": 5.93
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "107.0.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "8.1.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "device-memory": "4",
-      "downlink": "5.65",
-      "dpr": "2.25",
-      "ect": "4g",
-      "origin": "https://www.geld.de",
-      "rtt": "100",
-      "sec-ch-device-memory": "4",
-      "sec-ch-dpr": "2.25",
-      "sec-ch-prefers-color-scheme": "light",
-      "sec-ch-ua": "\"Google Chrome\";v=\"107\", \"Chromium\";v=\"107\", \"Not=A?Brand\";v=\"24\"",
-      "sec-ch-ua-full-version": "\"107.0.5304.105\"",
-      "sec-ch-ua-mobile": "?1",
-      "sec-ch-ua-model": "\"View Prime\"",
-      "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua-platform-version": "\"7.1.2\"",
-      "sec-ch-viewport-height": "512",
-      "sec-ch-viewport-width": "320",
-      "sec-fetch-dest": "empty",
-      "sec-fetch-mode": "cors",
-      "sec-fetch-site": "same-origin",
-      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.2; View Prime) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Mobile Safari/537.36",
-      "viewport-width": "320",
-      "x-requested-with": "XMLHttpRequest"
-    },
-    "device": {
-      "deviceName": "View Prime",
-      "marketingName": "View Prime",
-      "manufacturer": "wiko",
-      "brand": "wiko",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1440,
-        "height": 720,
-        "touch": true,
-        "size": 5.7
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "107.0.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "7.1.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 11; AURA PLUS JLO) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "Plus",
-      "marketingName": "Plus",
-      "manufacturer": "wiko",
-      "brand": "wiko",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 5
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "108.0.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "11.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 12; M40 Plus_EEA) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
-    },
-    "device": {
-      "deviceName": "Plus",
-      "marketingName": "Plus",
-      "manufacturer": "wiko",
-      "brand": "wiko",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 5
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "108.0.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "12.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; Tab10Plus) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "Plus",
-      "marketingName": "Plus",
-      "manufacturer": "wiko",
-      "brand": "wiko",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 5
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "102.0.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "8.1.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.2; View) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "View",
-      "marketingName": "View",
-      "manufacturer": "wiko",
-      "brand": "wiko",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1440,
-        "height": 720,
-        "touch": true,
-        "size": 5.7
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "109.0.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "7.1.2",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 9; W-V800-EEA) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "W-V800-EEA",
-      "marketingName": "View 3 Lite",
-      "manufacturer": "wiko",
-      "brand": "wiko",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1560,
-        "height": 720,
-        "touch": true,
-        "size": 6.09
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "109.0.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "9.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; W-V830-EEA) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "W-V830-EEA",
-      "marketingName": "View 4",
-      "manufacturer": "wiko",
-      "brand": "wiko",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1600,
-        "height": 720,
-        "touch": true,
-        "size": 6.52
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "109.0.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 9; W-P611-EEA) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.5249.126 Mobile Safari/537.36 OPR/72.5.3767.69342"
-    },
-    "device": {
-      "deviceName": "W-P611-EEA",
-      "marketingName": "View 3 Pro",
-      "manufacturer": "wiko",
-      "brand": "wiko",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 2340,
-        "height": 1080,
-        "touch": true,
-        "size": 6.26
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Opera Mobile",
-      "modus": null,
-      "version": "72.5.3767.69342",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "9.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; WC300) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "WC300",
-      "marketingName": "View Lite",
-      "manufacturer": "wiko",
-      "brand": "wiko",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1440,
-        "height": 720,
-        "touch": true,
-        "size": 5.45
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "108.0.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "8.1.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; W-V600) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "W-V600",
-      "marketingName": "Tommy 3 Plus",
-      "manufacturer": "wiko",
-      "brand": "wiko",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1440,
-        "height": 720,
-        "touch": true,
-        "size": 5.45
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "109.0.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "8.1.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; Lenny4 Plus) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "Lenny 4 Plus",
-      "marketingName": "Lenny 4 Plus",
-      "manufacturer": "wiko",
-      "brand": "wiko",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 5.5
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "103.0.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "7.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; W-V850-EEA) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.5249.126 Mobile Safari/537.36 OPR/72.5.3767.69342"
-    },
-    "device": {
-      "deviceName": "W-V850-EEA",
-      "marketingName": "W-V850-EEA",
-      "manufacturer": "wiko",
-      "brand": "wiko",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Opera Mobile",
-      "modus": null,
-      "version": "72.5.3767.69342",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; PULP 4G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.105 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "Pulp 4G",
-      "marketingName": "Pulp 4G",
-      "manufacturer": "wiko",
-      "brand": "wiko",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 5
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "89.0.4389.105",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.1.1",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "89.0.4389.105",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 12; VIA F30 Plus) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "Plus",
-      "marketingName": "Plus",
-      "manufacturer": "wiko",
-      "brand": "wiko",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 5
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "109.0.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "12.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; IS3Plus) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.185 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "Plus",
-      "marketingName": "Plus",
-      "manufacturer": "wiko",
-      "brand": "wiko",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 5
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "86.0.4240.185",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "8.1.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "86.0.4240.185",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 10; zh-CN; BLM-00 Build/HUAWEIBLM-00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/69.0.3497.100 UWS/3.22.1.228 Mobile Safari/537.36 AliApp(DingTalk/6.5.30) com.alibaba.android.rimet/25293052 Channel/227200 language/zh-CN abi/64 Pad/APad Hmos/1 UT4Aplus/0.2.25 colorScheme/light"
-    },
-    "device": {
-      "deviceName": "Plus",
-      "marketingName": "Plus",
-      "manufacturer": "wiko",
-      "brand": "wiko",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 5
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Android WebView",
-      "modus": null,
-      "version": "69.0.3497.100",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "69.0.3497.100",
       "manufacturer": "google"
     }
   }

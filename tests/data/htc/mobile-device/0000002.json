@@ -16,15 +16,8 @@
         "touch": true,
         "size": null
       },
-      "type": "mobile-device"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "91.0.4472.120",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "mobile-device",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -32,6 +25,15 @@
       "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "91.0.4472.120",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -56,15 +58,8 @@
         "touch": true,
         "size": null
       },
-      "type": "mobile-device"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "76.0.3809.132",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "mobile-device",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -72,6 +67,15 @@
       "version": "5.0.1",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "76.0.3809.132",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -96,15 +100,8 @@
         "touch": true,
         "size": null
       },
-      "type": "mobile-device"
-    },
-    "client": {
-      "name": "Android Webkit",
-      "modus": null,
-      "version": "3.1.2",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "mobile-device",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -112,6 +109,15 @@
       "version": "1.5.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "3.1.2",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -154,15 +160,8 @@
         "touch": true,
         "size": null
       },
-      "type": "mobile-device"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "96.0.4664.104",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "mobile-device",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -170,6 +169,15 @@
       "version": "9.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "96.0.4664.104",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
     },
     "engine": {
       "name": "Blink",
@@ -213,15 +221,8 @@
         "touch": true,
         "size": null
       },
-      "type": "mobile-device"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "96.0.4664.104",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "mobile-device",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -229,6 +230,15 @@
       "version": "9.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "96.0.4664.104",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -253,15 +263,8 @@
         "touch": true,
         "size": null
       },
-      "type": "mobile-device"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "80.0.3987.119",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "mobile-device",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -269,6 +272,15 @@
       "version": "4.4.2",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "80.0.3987.119",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -293,15 +305,8 @@
         "touch": true,
         "size": null
       },
-      "type": "mobile-device"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "106.0.0.0",
-      "manufacturer": "google",
-      "bits": 64,
-      "type": "browser"
+      "type": "mobile-device",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -310,10 +315,19 @@
       "manufacturer": "google",
       "bits": 64
     },
+    "client": {
+      "name": "Yandex Search Browser",
+      "modus": null,
+      "version": "22.116.0",
+      "manufacturer": "yandex",
+      "bits": 64,
+      "type": "browser",
+      "isbot": false
+    },
     "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
+      "name": "Blink",
+      "version": "106.0.0.0",
+      "manufacturer": "google"
     }
   }
 ]

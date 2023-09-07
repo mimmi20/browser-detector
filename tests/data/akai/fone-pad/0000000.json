@@ -16,15 +16,8 @@
         "touch": true,
         "size": 7
       },
-      "type": "fone-pad"
-    },
-    "client": {
-      "name": "radio.de App",
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "multimedia-player"
+      "type": "fone-pad",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -32,6 +25,15 @@
       "version": "6.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "radio.de App",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "multimedia-player",
+      "isbot": false
     },
     "engine": {
       "name": null,

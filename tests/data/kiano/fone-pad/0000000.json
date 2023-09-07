@@ -16,15 +16,8 @@
         "touch": true,
         "size": null
       },
-      "type": "fone-pad"
-    },
-    "client": {
-      "name": "Android WebView",
-      "modus": null,
-      "version": "39.0.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "fone-pad",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -32,6 +25,15 @@
       "version": "5.1.1",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "39.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -56,15 +58,8 @@
         "touch": true,
         "size": null
       },
-      "type": "fone-pad"
-    },
-    "client": {
-      "name": "Android Webkit",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "fone-pad",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -72,6 +67,15 @@
       "version": "4.1.1",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -96,15 +100,8 @@
         "touch": true,
         "size": null
       },
-      "type": "fone-pad"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "52.0.2743.98",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "fone-pad",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -112,6 +109,15 @@
       "version": "4.2.2",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "52.0.2743.98",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -136,15 +142,8 @@
         "touch": true,
         "size": null
       },
-      "type": "fone-pad"
-    },
-    "client": {
-      "name": "Android Webkit",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "fone-pad",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -152,6 +151,15 @@
       "version": "4.2.2",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -176,15 +184,8 @@
         "touch": true,
         "size": null
       },
-      "type": "fone-pad"
-    },
-    "client": {
-      "name": "Android Webkit",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "fone-pad",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -192,6 +193,15 @@
       "version": "4.2.2",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -216,15 +226,8 @@
         "touch": true,
         "size": null
       },
-      "type": "fone-pad"
-    },
-    "client": {
-      "name": "Android WebView",
-      "modus": null,
-      "version": "30.0.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "fone-pad",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -232,6 +235,15 @@
       "version": "4.4.2",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "30.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -256,15 +268,8 @@
         "touch": true,
         "size": null
       },
-      "type": "fone-pad"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "38.0.2125.102",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "fone-pad",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -272,6 +277,15 @@
       "version": "4.2.2",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "38.0.2125.102",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -296,15 +310,8 @@
         "touch": true,
         "size": null
       },
-      "type": "fone-pad"
-    },
-    "client": {
-      "name": "Opera Mobile",
-      "modus": null,
-      "version": "27.0.1698.89115",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
+      "type": "fone-pad",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -312,6 +319,15 @@
       "version": "4.2.2",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "27.0.1698.89115",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -336,15 +352,8 @@
         "touch": true,
         "size": null
       },
-      "type": "fone-pad"
-    },
-    "client": {
-      "name": "Android WebView",
-      "modus": null,
-      "version": "30.0.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "fone-pad",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -352,6 +361,15 @@
       "version": "4.4.2",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "30.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -376,15 +394,8 @@
         "touch": true,
         "size": null
       },
-      "type": "fone-pad"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "49.0.2623.105",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "fone-pad",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -392,6 +403,15 @@
       "version": "5.1.1",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "49.0.2623.105",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -416,15 +436,8 @@
         "touch": true,
         "size": null
       },
-      "type": "fone-pad"
-    },
-    "client": {
-      "name": "Android Webkit",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "fone-pad",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -432,6 +445,15 @@
       "version": "4.2.2",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -456,15 +478,8 @@
         "touch": true,
         "size": 7
       },
-      "type": "fone-pad"
-    },
-    "client": {
-      "name": "CM Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "cheetah-mobile",
-      "bits": null,
-      "type": "browser"
+      "type": "fone-pad",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -472,6 +487,15 @@
       "version": "4.4.2",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "CM Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "cheetah-mobile",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -496,15 +520,8 @@
         "touch": true,
         "size": null
       },
-      "type": "fone-pad"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "41.0.2272.92",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "fone-pad",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -512,6 +529,15 @@
       "version": "4.4.2",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "41.0.2272.92",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -536,15 +562,8 @@
         "touch": true,
         "size": null
       },
-      "type": "fone-pad"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "40.0.2214.109",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "fone-pad",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -552,6 +571,15 @@
       "version": "4.4.2",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "40.0.2214.109",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -576,15 +604,8 @@
         "touch": true,
         "size": null
       },
-      "type": "fone-pad"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "18.0.1025.166",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "fone-pad",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -592,6 +613,15 @@
       "version": "4.1.1",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "18.0.1025.166",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -616,15 +646,8 @@
         "touch": true,
         "size": null
       },
-      "type": "fone-pad"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "51.0.2704.81",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "fone-pad",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -632,6 +655,15 @@
       "version": "5.1.1",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "51.0.2704.81",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -656,15 +688,8 @@
         "touch": true,
         "size": null
       },
-      "type": "fone-pad"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "53.0.2785.124",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "fone-pad",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -672,6 +697,15 @@
       "version": "4.4.2",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "53.0.2785.124",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -696,15 +730,8 @@
         "touch": true,
         "size": null
       },
-      "type": "fone-pad"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "55.0.2883.91",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "fone-pad",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -712,6 +739,15 @@
       "version": "5.1.1",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "55.0.2883.91",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -736,15 +772,8 @@
         "touch": true,
         "size": null
       },
-      "type": "fone-pad"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "47.0.2526.83",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "fone-pad",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -752,6 +781,15 @@
       "version": "4.4.2",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "47.0.2526.83",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -776,15 +814,8 @@
         "touch": true,
         "size": null
       },
-      "type": "fone-pad"
-    },
-    "client": {
-      "name": "CM Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "cheetah-mobile",
-      "bits": null,
-      "type": "browser"
+      "type": "fone-pad",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -792,6 +823,15 @@
       "version": "4.2.2",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "CM Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "cheetah-mobile",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -816,15 +856,8 @@
         "touch": true,
         "size": null
       },
-      "type": "fone-pad"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "39.0.2171.59",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "fone-pad",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -832,6 +865,15 @@
       "version": "4.2.2",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "39.0.2171.59",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -856,15 +898,8 @@
         "touch": true,
         "size": null
       },
-      "type": "fone-pad"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "46.0.2490.76",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "fone-pad",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -872,6 +907,15 @@
       "version": "4.2.2",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "46.0.2490.76",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",

@@ -1,6 +1,1437 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/211.1.447770393 Mobile/19E258 Safari/604.1 OcIdWebView ({\\"
+    },
+    "device": {
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "15.4.1",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Google App",
+      "modus": null,
+      "version": "211.1.447770393",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_8_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/209.1.445234187 Mobile/18H107 Safari/604.1"
+    },
+    "device": {
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "14.8.1",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Google App",
+      "modus": null,
+      "version": "209.1.445234187",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/216.0.453113025 Mobile/15E148 Safari/604.1"
+    },
+    "device": {
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.3.0",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Google App",
+      "modus": null,
+      "version": "216.0.453113025",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/101.0  Mobile/15E148 Safari/605.1.15"
+    },
+    "device": {
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.3.0",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Firefox Mobile for iOS",
+      "modus": null,
+      "version": "101.0.0",
+      "manufacturer": "mozilla-foundation",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_8 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/102.0.5005.87 Mobile/15E148 Safari/604.1"
+    },
+    "device": {
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.3.0",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome for iOS",
+      "modus": null,
+      "version": "102.0.5005.87",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/215.1.452881003 Mobile/15E148 Safari/604.1"
+    },
+    "device": {
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.3.0",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Google App",
+      "modus": null,
+      "version": "215.1.452881003",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/213.0.449417121 Mobile/15E148 Safari/604.1"
+    },
+    "device": {
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.3.0",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Google App",
+      "modus": null,
+      "version": "213.0.449417121",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/214.5.452145058 Mobile/15E148 Safari/604.1"
+    },
+    "device": {
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.3.0",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Google App",
+      "modus": null,
+      "version": "214.5.452145058",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) EdgiOS/102.0.1245.30 Version/15.0 Mobile/15E148 Safari/604.1"
+    },
+    "device": {
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.3.0",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Edge Mobile for iOS",
+      "modus": null,
+      "version": "102.0.1245.30",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/213.0.449417121 Mobile/19F77 Safari/604.1"
+    },
+    "device": {
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "15.5.0",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Google App",
+      "modus": null,
+      "version": "213.0.449417121",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU OS 15_4_1 like Mac OS X; en-US)",
+      "sec-fetch-site": "cross-site",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-dest": "document"
+    },
+    "device": {
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "15.4.1",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Mobile Safari UIWebView",
+      "modus": null,
+      "version": null,
+      "manufacturer": "apple",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/212.0.448263198 Mobile/15E148 Safari/604.1"
+    },
+    "device": {
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.3.0",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Google App",
+      "modus": null,
+      "version": "212.0.448263198",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/19E258 [FBAN/FBIOS;FBAV/367.0.0.32.108;FBBV/370195497;FBDV/iPhone13,3;FBMD/iPhone;FBSN/iOS;FBSV/15.4.1;FBSS/3;FBID/phone;FBLC/de_DE;FBOP/5;FBRV/0]"
+    },
+    "device": {
+      "deviceName": "iPhone 13,3",
+      "marketingName": "iPhone 12 Pro",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 2532,
+        "height": 1170,
+        "touch": true,
+        "size": 6.1
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "15.4.1",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "367.0.0.32.108",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/19E258 [FBAN/FBIOS;FBAV/366.1.0.28.110;FBBV/369237969;FBDV/iPhone13,3;FBMD/iPhone;FBSN/iOS;FBSV/15.4.1;FBSS/3;FBID/phone;FBLC/de_DE;FBOP/5;FBRV/370856038]"
+    },
+    "device": {
+      "deviceName": "iPhone 13,3",
+      "marketingName": "iPhone 12 Pro",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 2532,
+        "height": 1170,
+        "touch": true,
+        "size": 6.1
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "15.4.1",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "366.1.0.28.110",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_8 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 234.0.0.19.114 (iPhone12,1; iOS 14_8; de_DE; de-DE; scale=2.00; 828x1792; 368521586)"
+    },
+    "device": {
+      "deviceName": "iPhone 12,1",
+      "marketingName": "iPhone 11",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1792,
+        "height": 828,
+        "touch": true,
+        "size": 6.1
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.3.0",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "234.0.0.19.114",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 234.0.0.19.114 (iPhone14,5; iOS 15_3_1; de_FR; de-FR; scale=3.00; 1170x2532; 368521586)"
+    },
+    "device": {
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.3.0",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "234.0.0.19.114",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 237.0.0.9.103 (iPhone12,8; iOS 15_5; en_DE; en-DE; scale=2.00; 750x1334; 372720523) NW/3"
+    },
+    "device": {
+      "deviceName": "iPhone 12,8",
+      "marketingName": "iPhone SE (2nd Gen.)",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1334,
+        "height": 750,
+        "touch": true,
+        "size": 4.7
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.3.0",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "237.0.0.9.103",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 12_5_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 238.0.0.13.112 (iPhone7,2; iOS 12_5_5; de_DE; de-DE; scale=2.00; 750x1334; 374251869)"
+    },
+    "device": {
+      "deviceName": "iPhone 7,2",
+      "marketingName": "iPhone 6",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1334,
+        "height": 750,
+        "touch": true,
+        "size": 4.7
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.3.0",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "238.0.0.13.112",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 237.0.0.9.103 (iPhone11,8; iOS 15_5; de_DE; de-DE; scale=2.00; 828x1792; 372720523)"
+    },
+    "device": {
+      "deviceName": "iPhone 11,8",
+      "marketingName": "iPhone XR",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1792,
+        "height": 828,
+        "touch": true,
+        "size": 6.1
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.3.0",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "237.0.0.9.103",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 235.0.0.23.107 (iPhone11,2; iOS 14_3; de_DE; de-DE; scale=3.00; 1125x2436; 369998259)"
+    },
+    "device": {
+      "deviceName": "iPhone 11,2",
+      "marketingName": "iPhone XS",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 2436,
+        "height": 1125,
+        "touch": true,
+        "size": 5.8
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.3.0",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "235.0.0.23.107",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 237.0.0.9.103 (iPhone14,3; iOS 15_4_1; de_DE; de; scale=3.00; 1284x2778; 372720523)"
+    },
+    "device": {
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.3.0",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "237.0.0.9.103",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/215.1.452881003 Mobile/19F77 Safari/604.1 OcIdWebView ({\\"
+    },
+    "device": {
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "15.5.0",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Google App",
+      "modus": null,
+      "version": "215.1.452881003",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/214.5.452145058 Mobile/19F77 Safari/604.1 OcIdWebView ({\\"
+    },
+    "device": {
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "15.5.0",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Google App",
+      "modus": null,
+      "version": "214.5.452145058",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 239.2.0.17.109 (iPhone10,4; iOS 14_1; ru_BY; ru-BY; scale=2.00; 750x1334; 376668393)"
+    },
+    "device": {
+      "deviceName": "iPhone 10,4",
+      "marketingName": "iPhone 8",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1334,
+        "height": 750,
+        "touch": true,
+        "size": 4.7
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.3.0",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "239.2.0.17.109",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) EdgiOS/103.0.1264.77 Version/15.0 Mobile/15E148 Safari/604.1"
+    },
+    "device": {
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.3.0",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Edge Mobile for iOS",
+      "modus": null,
+      "version": "103.0.1264.77",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/103.0.5060.63 Mobile/15E148 Safari/604.1"
+    },
+    "device": {
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.3.0",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome for iOS",
+      "modus": null,
+      "version": "103.0.5060.63",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/219.0.457350353 Mobile/15E148 Safari/604.1"
+    },
+    "device": {
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.3.0",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Google App",
+      "modus": null,
+      "version": "219.0.457350353",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/218.0.456502374 Mobile/15E148 Safari/604.1"
+    },
+    "device": {
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.3.0",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Google App",
+      "modus": null,
+      "version": "218.0.456502374",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/102.0  Mobile/15E148 Safari/605.1.15"
+    },
+    "device": {
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.3.0",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Firefox Mobile for iOS",
+      "modus": null,
+      "version": "102.0.0",
+      "manufacturer": "mozilla-foundation",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 242.0.0.7.110 (iPhone13,2; iOS 15_4; de_DE; de-DE; scale=3.00; 1170x2532; 380322996)"
+    },
+    "device": {
+      "deviceName": "iPhone 13,2",
+      "marketingName": "iPhone 12",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 2532,
+        "height": 1170,
+        "touch": true,
+        "size": 6.1
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.3.0",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "242.0.0.7.110",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 241.1.0.17.112 (iPhone13,1; iOS 15_5; de_DE; de-DE; scale=2.88; 1080x2338; 379986242) NW/3"
+    },
+    "device": {
+      "deviceName": "iPhone 13,1",
+      "marketingName": "iPhone 12 Mini",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 5.4
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.3.0",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "241.1.0.17.112",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 241.0.0.16.112 (iPhone13,2; iOS 15_5; de_DE; de-DE; scale=3.00; 1170x2532; 379007631)"
+    },
+    "device": {
+      "deviceName": "iPhone 13,2",
+      "marketingName": "iPhone 12",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 2532,
+        "height": 1170,
+        "touch": true,
+        "size": 6.1
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.3.0",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "241.0.0.16.112",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/217.0.454508427 Mobile/15E148 Safari/604.1"
+    },
+    "device": {
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.3.0",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Google App",
+      "modus": null,
+      "version": "217.0.454508427",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/222.1.463240275 Mobile/15E148 Safari/604.1"
+    },
+    "device": {
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.3.0",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Google App",
+      "modus": null,
+      "version": "222.1.463240275",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 239.2.0.17.109 (iPhone14,2; iOS 15_5; de_DE; de-DE; scale=3.00; 1170x2532; 376668393)"
     },
     "device": {
@@ -16,15 +1447,8 @@
         "touch": true,
         "size": 3.5
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "239.2.0.17.109",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -32,6 +1456,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "239.2.0.17.109",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -56,15 +1489,8 @@
         "touch": true,
         "size": 3.5
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Google App",
-      "modus": null,
-      "version": "221.0.461030601",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -72,6 +1498,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Google App",
+      "modus": null,
+      "version": "221.0.461030601",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -96,15 +1531,8 @@
         "touch": true,
         "size": 3.5
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "245.0.0.13.110",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -112,6 +1540,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "245.0.0.13.110",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -136,15 +1573,8 @@
         "touch": true,
         "size": 3.5
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "13.7.2.1636",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -152,6 +1582,15 @@
       "version": "15.1.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "13.7.2.1636",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -176,15 +1615,8 @@
         "touch": true,
         "size": 6.1
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "244.0.0.12.112",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -192,6 +1624,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "244.0.0.12.112",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -216,15 +1657,8 @@
         "touch": true,
         "size": 6.1
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "244.0.0.12.112",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -232,6 +1666,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "244.0.0.12.112",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -256,15 +1699,8 @@
         "touch": true,
         "size": 3.5
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "244.0.0.12.112",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -272,6 +1708,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "244.0.0.12.112",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -296,15 +1741,8 @@
         "touch": true,
         "size": 6.1
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "243.1.0.14.111",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -312,6 +1750,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "243.1.0.14.111",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -336,15 +1783,8 @@
         "touch": true,
         "size": 3.5
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "243.1.0.14.111",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -352,6 +1792,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "243.1.0.14.111",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -376,15 +1825,8 @@
         "touch": true,
         "size": 6.1
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "376.0.0.27.108",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -392,6 +1834,15 @@
       "version": "15.5.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "376.0.0.27.108",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -416,15 +1867,8 @@
         "touch": true,
         "size": 6.1
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "376.0.0.27.108",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -432,6 +1876,15 @@
       "version": "15.5.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "376.0.0.27.108",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -456,15 +1909,8 @@
         "touch": true,
         "size": 3.5
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Google App",
-      "modus": null,
-      "version": "219.0.457350353",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -472,6 +1918,15 @@
       "version": "15.5.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Google App",
+      "modus": null,
+      "version": "219.0.457350353",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -496,15 +1951,8 @@
         "touch": true,
         "size": 3.5
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Google App",
-      "modus": null,
-      "version": "221.0.461030601",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -512,6 +1960,15 @@
       "version": "15.5.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Google App",
+      "modus": null,
+      "version": "221.0.461030601",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -536,15 +1993,8 @@
         "touch": true,
         "size": 3.5
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Google App",
-      "modus": null,
-      "version": "218.0.456502374",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -552,6 +2002,15 @@
       "version": "15.5.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Google App",
+      "modus": null,
+      "version": "218.0.456502374",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -576,15 +2035,8 @@
         "touch": true,
         "size": 3.5
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Google App",
-      "modus": null,
-      "version": "216.0.453113025",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -592,6 +2044,15 @@
       "version": "15.5.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Google App",
+      "modus": null,
+      "version": "216.0.453113025",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -616,15 +2077,8 @@
         "touch": true,
         "size": 3.5
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Google App",
-      "modus": null,
-      "version": "217.0.454508427",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -632,6 +2086,15 @@
       "version": "15.4.1",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Google App",
+      "modus": null,
+      "version": "217.0.454508427",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -656,15 +2119,8 @@
         "touch": true,
         "size": 3.5
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Google App",
-      "modus": null,
-      "version": "222.1.463240275",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -672,6 +2128,15 @@
       "version": "15.5.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Google App",
+      "modus": null,
+      "version": "222.1.463240275",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -696,7 +2161,15 @@
         "touch": true,
         "size": 4.7
       },
-      "type": "smartphone"
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.3.0",
+      "manufacturer": "apple",
+      "bits": null
     },
     "client": {
       "name": "Instagram App",
@@ -704,14 +2177,8 @@
       "version": "241.1.0.17.112",
       "manufacturer": "facebook",
       "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
-      "manufacturer": "apple",
-      "bits": null
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -721,47 +2188,9 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_5 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G36 [FBAN/MessengerForiOS;FBAV/205.0.0.45.108;FBBV/144617131;FBDV/iPhone6,1;FBMD/iPhone;FBSN/iPhone OS;FBSV/9.3.5;FBSS/2;FBCR/Vodafone;FBID/phone;FBLC/en_US;FBOP/5]"
-    },
-    "device": {
-      "deviceName": "iPhone 6,1",
-      "marketingName": "iPhone 5S",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1136,
-        "height": 640,
-        "touch": true,
-        "size": 4
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Facebook Messenger App",
-      "modus": null,
-      "version": "205.0.0.45.108",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "9.3.5",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "601.1.46",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/104.0.5112.99 Mobile/15E148 Safari/604.1"
+      "origin": "https://www.geld.de",
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/171.0.387713930 Mobile/15E148 Safari/604.1",
+      "x-requested-with": "XMLHttpRequest"
     },
     "device": {
       "deviceName": "iPhone",
@@ -776,15 +2205,8 @@
         "touch": true,
         "size": 3.5
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Chrome for iOS",
-      "modus": null,
-      "version": "104.0.5112.99",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -792,6 +2214,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "171.0.387713930",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
     },
     "engine": {
       "name": "WebKit",
@@ -801,7 +2232,9 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/103.1  Mobile/15E148 Safari/605.1.15"
+      "origin": "https://www.geld.de",
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/222.1.463240275 Mobile/15E148 Safari/604.1",
+      "x-requested-with": "XMLHttpRequest"
     },
     "device": {
       "deviceName": "iPhone",
@@ -816,15 +2249,8 @@
         "touch": true,
         "size": 3.5
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Firefox Mobile for iOS",
-      "modus": null,
-      "version": "103.1.0",
-      "manufacturer": "mozilla-foundation",
-      "bits": null,
-      "type": "browser"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -832,6 +2258,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "222.1.463240275",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
     },
     "engine": {
       "name": "WebKit",
@@ -841,7 +2276,9 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/223.0.463913120 Mobile/15E148 Safari/604.1"
+      "origin": "https://www.geld.de",
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/102.2  Mobile/15E148 Safari/605.1.15",
+      "x-requested-with": "XMLHttpRequest"
     },
     "device": {
       "deviceName": "iPhone",
@@ -856,15 +2293,8 @@
         "touch": true,
         "size": 3.5
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Google App",
-      "modus": null,
-      "version": "223.0.463913120",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -872,6 +2302,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "102.2.0",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
     },
     "engine": {
       "name": "WebKit",
@@ -881,47 +2320,22 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 245.0.0.13.110 (iPhone13,2; iOS 15_6; de_DE; de-DE; scale=3.00; 1170x2532; 384816942)"
-    },
-    "device": {
-      "deviceName": "iPhone 13,2",
-      "marketingName": "iPhone 12",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 2532,
-        "height": 1170,
-        "touch": true,
-        "size": 6.1
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "245.0.0.13.110",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_2_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Safari Line/12.6.0"
+      "device-memory": "8",
+      "downlink": "4.55",
+      "dpr": "1",
+      "ect": "4g",
+      "origin": "https://www.geld.de",
+      "rtt": "100",
+      "sec-ch-device-memory": "8",
+      "sec-ch-dpr": "1",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-viewport-width": "375",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_8_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.1.2 Mobile/15E148 Safari/604.1",
+      "viewport-width": "375",
+      "x-requested-with": "XMLHttpRequest"
     },
     "device": {
       "deviceName": "iPhone",
@@ -936,15 +2350,8 @@
         "touch": true,
         "size": 3.5
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Line Browser",
-      "modus": null,
-      "version": "12.6.0",
-      "manufacturer": "line",
-      "bits": null,
-      "type": "browser"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -953,1055 +2360,39 @@
       "manufacturer": "apple",
       "bits": null
     },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/225.0.466661455 Mobile/15E148 Safari/604.1"
-    },
-    "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
     "client": {
-      "name": "Google App",
-      "modus": null,
-      "version": "225.0.466661455",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 248.1.0.13.112 (iPhone10,1; iOS 15_6; de_DE; de-DE; scale=2.00; 750x1334; 390885564) NW/3"
-    },
-    "device": {
-      "deviceName": "iPhone 10,1",
-      "marketingName": "iPhone 8",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1334,
-        "height": 750,
-        "touch": true,
-        "size": 4.7
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "248.1.0.13.112",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 248.0.0.13.109 (iPhone9,1; iOS 15_6; de_DE; de-DE; scale=2.00; 750x1334; 389935066)"
-    },
-    "device": {
-      "deviceName": "iPhone 9,1",
-      "marketingName": "iPhone 7",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1334,
-        "height": 750,
-        "touch": true,
-        "size": 4.7
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "248.0.0.13.109",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/224.0.464443240 Mobile/15E148 Safari/604.1"
-    },
-    "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Google App",
-      "modus": null,
-      "version": "224.0.464443240",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 248.0.0.13.109 (iPhone13,3; iOS 15_4; de_DE; de-DE; scale=3.00; 1170x2532; 389935066)"
-    },
-    "device": {
-      "deviceName": "iPhone 13,3",
-      "marketingName": "iPhone 12 Pro",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 2532,
-        "height": 1170,
-        "touch": true,
-        "size": 6.1
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "248.0.0.13.109",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 247.1.0.12.111 (iPhone13,3; iOS 15_6; de_DE; de-DE; scale=3.00; 1170x2532; 388767001)"
-    },
-    "device": {
-      "deviceName": "iPhone 13,3",
-      "marketingName": "iPhone 12 Pro",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 2532,
-        "height": 1170,
-        "touch": true,
-        "size": 6.1
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "247.1.0.12.111",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 247.1.0.12.111 (iPhone12,1; iOS 15_6; de_DE; de-DE; scale=2.00; 828x1792; 388767001)"
-    },
-    "device": {
-      "deviceName": "iPhone 12,1",
-      "marketingName": "iPhone 11",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1792,
-        "height": 828,
-        "touch": true,
-        "size": 6.1
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "247.1.0.12.111",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 245.0.0.13.110 (iPhone9,3; iOS 15_1; de_DE; de-DE; scale=2.00; 750x1334; 384816942)"
-    },
-    "device": {
-      "deviceName": "iPhone 9,3",
-      "marketingName": "iPhone 7",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1334,
-        "height": 750,
-        "touch": true,
-        "size": 4.7
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "245.0.0.13.110",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/227.1.470269224 Mobile/15E148 Safari/604.1"
-    },
-    "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Google App",
-      "modus": null,
-      "version": "227.1.470269224",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/105.0.5195.100 Mobile/15E148 Safari/604.1"
-    },
-    "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Chrome for iOS",
-      "modus": null,
-      "version": "105.0.5195.100",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 250.0.0.14.109 (iPhone12,8; iOS 15_6_1; de_DE; de-DE; scale=2.00; 750x1334; 393561736)"
-    },
-    "device": {
-      "deviceName": "iPhone 12,8",
-      "marketingName": "iPhone SE (2nd Gen.)",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1334,
-        "height": 750,
-        "touch": true,
-        "size": 4.7
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "250.0.0.14.109",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/104 Mobile/15E148 Version/15.0"
-    },
-    "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Firefox Mobile for iOS",
-      "modus": null,
-      "version": "104.0.0",
-      "manufacturer": "mozilla-foundation",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 250.0.0.14.109 (iPhone11,8; iOS 14_6; de_DE; de-DE; scale=2.00; 828x1792; 393561736) NW/3"
-    },
-    "device": {
-      "deviceName": "iPhone 11,8",
-      "marketingName": "iPhone XR",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1792,
-        "height": 828,
-        "touch": true,
-        "size": 6.1
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "250.0.0.14.109",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/226.2.468926351 Mobile/15E148 Safari/604.1"
-    },
-    "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Google App",
-      "modus": null,
-      "version": "226.2.468926351",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 249.0.0.15.107 (iPhone14,5; iOS 15_6_1; de_DE; de-DE; scale=3.00; 1170x2532; 392223771)"
-    },
-    "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "249.0.0.15.107",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_4_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 249.0.0.15.107 (iPhone12,1; iOS 14_4_2; de_DE; de; scale=2.00; 828x1792; 392223771)"
-    },
-    "device": {
-      "deviceName": "iPhone 12,1",
-      "marketingName": "iPhone 11",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1792,
-        "height": 828,
-        "touch": true,
-        "size": 6.1
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "249.0.0.15.107",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) EdgiOS/104.0.1293.63 Version/15.0 Mobile/15E148 Safari/604.1"
-    },
-    "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Edge Mobile for iOS",
-      "modus": null,
-      "version": "104.0.1293.63",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/80.0.262003652 Mobile/19G71 Safari/604.1"
-    },
-    "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Google App",
-      "modus": null,
-      "version": "80.0.262003652",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "15.6.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 LightSpeed [FBAN/MessengerLiteForiOS;FBAV/371.0.0.13.103;FBBV/384960008;FBDV/iPhone11,8;FBMD/iPhone;FBSN/iOS;FBSV/15.5;FBSS/2;FBCR/;FBID/phone;FBLC/de;FBOP/0]"
-    },
-    "device": {
-      "deviceName": "iPhone 11,8",
-      "marketingName": "iPhone XR",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1792,
-        "height": 828,
-        "touch": true,
-        "size": 6.1
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Facebook Messenger App",
-      "modus": null,
-      "version": "371.0.0.13.103",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/225.0.466661455 Mobile/19G71 Safari/604.1"
-    },
-    "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Google App",
-      "modus": null,
-      "version": "225.0.466661455",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "15.6.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/223.0.463913120 Mobile/19F77 Safari/604.1 OcIdWebView ({\\"
-    },
-    "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Google App",
-      "modus": null,
-      "version": "223.0.463913120",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "15.5.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/224.0.464443240 Mobile/19G71 Safari/604.1 OcIdWebView ({\\"
-    },
-    "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Google App",
-      "modus": null,
-      "version": "224.0.464443240",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "15.6.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/227.1.470269224 Mobile/19G82 Safari/604.1"
-    },
-    "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Google App",
-      "modus": null,
-      "version": "227.1.470269224",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "15.6.1",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_4_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/225.0.466661455 Mobile/18D70 Safari/604.1 OcIdWebView ({\\"
-    },
-    "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Google App",
-      "modus": null,
-      "version": "225.0.466661455",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "14.4.2",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/105.0 Mobile/15E148 Safari/605.1.15"
-    },
-    "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Firefox Mobile for iOS",
-      "modus": null,
-      "version": "105.0.0",
-      "manufacturer": "mozilla-foundation",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Spotify/8.7.70 iOS/16.0 (iPhone14,7)"
-    },
-    "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Mobile Safari UIWebView",
+      "name": null,
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": null,
       "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "16.0.0",
-      "manufacturer": "apple",
-      "bits": null
+      "type": null,
+      "isbot": null
     },
     "engine": {
       "name": "WebKit",
-      "version": null,
+      "version": "605.1.15",
       "manufacturer": "apple"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/106.0.5249.92 Mobile/15E148 Safari/604.1"
+      "device-memory": "8",
+      "downlink": "8.3",
+      "dpr": "1",
+      "ect": "4g",
+      "origin": "https://www.geld.de",
+      "rtt": "0",
+      "sec-ch-device-memory": "8",
+      "sec-ch-dpr": "1",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-viewport-width": "375",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.4 Mobile/15E148 Safari/604.1",
+      "viewport-width": "375",
+      "x-requested-with": "XMLHttpRequest"
     },
     "device": {
       "deviceName": "iPhone",
@@ -2016,15 +2407,8 @@
         "touch": true,
         "size": 3.5
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Chrome for iOS",
-      "modus": null,
-      "version": "106.0.5249.92",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -2033,165 +2417,14 @@
       "manufacturer": "apple",
       "bits": null
     },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/235.0.482074324 Mobile/15E148 Safari/604.1"
-    },
-    "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
     "client": {
-      "name": "Google App",
-      "modus": null,
-      "version": "235.0.482074324",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/234.1.481780343 Mobile/15E148 Safari/604.1"
-    },
-    "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Google App",
-      "modus": null,
-      "version": "234.1.481780343",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) EdgiOS/105.0.1343.53 Version/16.0 Mobile/15E148 Safari/604.1"
-    },
-    "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Edge Mobile for iOS",
-      "modus": null,
-      "version": "105.0.1343.53",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/20A362 [FBAN/FBIOS;FBDV/iPhone11,8;FBMD/iPhone;FBSN/iOS;FBSV/16.0;FBSS/2;FBID/phone;FBLC/de_DE;FBOP/5]"
-    },
-    "device": {
-      "deviceName": "iPhone 11,8",
-      "marketingName": "iPhone XR",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1792,
-        "height": 828,
-        "touch": true,
-        "size": 6.1
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Facebook App",
+      "name": null,
       "modus": null,
       "version": null,
-      "manufacturer": "facebook",
+      "manufacturer": null,
       "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "16.0.0",
-      "manufacturer": "apple",
-      "bits": null
+      "type": null,
+      "isbot": null
     },
     "engine": {
       "name": "WebKit",
@@ -2201,7 +2434,22 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/232.0.476785961 Mobile/15E148 Safari/604.1"
+      "device-memory": "8",
+      "downlink": "4.9",
+      "dpr": "1",
+      "ect": "4g",
+      "origin": "https://www.geld.de",
+      "rtt": "200",
+      "sec-ch-device-memory": "8",
+      "sec-ch-dpr": "1",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-viewport-width": "375",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/222.1.463240275 Mobile/15E148 Safari/604.1",
+      "viewport-width": "375",
+      "x-requested-with": "XMLHttpRequest"
     },
     "device": {
       "deviceName": "iPhone",
@@ -2216,15 +2464,8 @@
         "touch": true,
         "size": 3.5
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Google App",
-      "modus": null,
-      "version": "232.0.476785961",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -2232,6 +2473,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "222.1.463240275",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
     },
     "engine": {
       "name": "WebKit",
@@ -2241,7 +2491,22 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU OS 16_0 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) 1Password/7.9.9 (like Version/16.0 Mobile/20A362 Safari/600.1.4)"
+      "device-memory": "8",
+      "downlink": "4.9",
+      "dpr": "1",
+      "ect": "4g",
+      "origin": "https://www.geld.de",
+      "rtt": "100",
+      "sec-ch-device-memory": "8",
+      "sec-ch-dpr": "1",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-viewport-width": "375",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.5 Mobile/15E148 Safari/604.1",
+      "viewport-width": "375",
+      "x-requested-with": "XMLHttpRequest"
     },
     "device": {
       "deviceName": "iPhone",
@@ -2256,55 +2521,8 @@
         "touch": true,
         "size": 3.5
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "1Password",
-      "modus": null,
-      "version": "7.9.9",
-      "manufacturer": "agile-bits",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "16.0.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "600.1.4",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 253.0.0.19.114 (iPhone13,1; iOS 16_0; de_DE; de-DE; scale=2.88; 1080x2338; 399676583)"
-    },
-    "device": {
-      "deviceName": "iPhone 13,1",
-      "marketingName": "iPhone 12 Mini",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 2340,
-        "height": 1080,
-        "touch": true,
-        "size": 5.4
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "253.0.0.19.114",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -2313,245 +2531,14 @@
       "manufacturer": "apple",
       "bits": null
     },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 255.1.0.18.105 (iPhone11,8; iOS 16_0; de_DE; de-DE; scale=2.00; 828x1792; 405816327)"
-    },
-    "device": {
-      "deviceName": "iPhone 11,8",
-      "marketingName": "iPhone XR",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1792,
-        "height": 828,
-        "touch": true,
-        "size": 6.1
-      },
-      "type": "smartphone"
-    },
     "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "255.1.0.18.105",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_0_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 255.1.0.18.105 (iPhone14,2; iOS 16_0_2; de_DE; de-DE; scale=3.00; 1170x2532; 405816327)"
-    },
-    "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "255.1.0.18.105",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/231.0.475926209 Mobile/15E148 Safari/604.1"
-    },
-    "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Google App",
-      "modus": null,
-      "version": "231.0.475926209",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 254.0.0.15.109 (iPhone14,5; iOS 16_0; de_DE; de-DE; scale=3.00; 1170x2532; 401726258)"
-    },
-    "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "254.0.0.15.109",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 254.0.0.15.109 (iPhone12,1; iOS 16_0; de_DE; de-DE; scale=2.00; 828x1792; 401726258)"
-    },
-    "device": {
-      "deviceName": "iPhone 12,1",
-      "marketingName": "iPhone 11",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1792,
-        "height": 828,
-        "touch": true,
-        "size": 6.1
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "254.0.0.15.109",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/20A362 [FBAN/FBIOS;FBDV/iPhone13,3;FBMD/iPhone;FBSN/iOS;FBSV/16.0;FBSS/3;FBID/phone;FBLC/de_DE;FBOP/5]"
-    },
-    "device": {
-      "deviceName": "iPhone 13,3",
-      "marketingName": "iPhone 12 Pro",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 2532,
-        "height": 1170,
-        "touch": true,
-        "size": 6.1
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Facebook App",
+      "name": null,
       "modus": null,
       "version": null,
-      "manufacturer": "facebook",
+      "manufacturer": null,
       "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "16.0.0",
-      "manufacturer": "apple",
-      "bits": null
+      "type": null,
+      "isbot": null
     },
     "engine": {
       "name": "WebKit",
@@ -2561,87 +2548,9 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 254.0.0.15.109 (iPhone13,2; iOS 16_0; de_DE; de-DE; scale=3.00; 1170x2532; 401726258)"
-    },
-    "device": {
-      "deviceName": "iPhone 13,2",
-      "marketingName": "iPhone 12",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 2532,
-        "height": 1170,
-        "touch": true,
-        "size": 6.1
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "254.0.0.15.109",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 254.0.0.15.109 (iPhone11,8; iOS 15_6_1; de_DE; de-DE; scale=2.00; 828x1792; 401726258)"
-    },
-    "device": {
-      "deviceName": "iPhone 11,8",
-      "marketingName": "iPhone XR",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1792,
-        "height": 828,
-        "touch": true,
-        "size": 6.1
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "254.0.0.15.109",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/230.1.475637890 Mobile/15E148 Safari/604.1"
+      "origin": "https://www.geld.de",
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1",
+      "x-requested-with": "XMLHttpRequest"
     },
     "device": {
       "deviceName": "iPhone",
@@ -2656,15 +2565,8 @@
         "touch": true,
         "size": 3.5
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Google App",
-      "modus": null,
-      "version": "230.1.475637890",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -2672,6 +2574,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "13.0.3",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
     },
     "engine": {
       "name": "WebKit",
@@ -2681,47 +2592,9 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 254.0.0.15.109 (iPhone11,2; iOS 16_0; de_DE; de-DE; scale=3.00; 1125x2436; 401726258)"
-    },
-    "device": {
-      "deviceName": "iPhone 11,2",
-      "marketingName": "iPhone XS",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 2436,
-        "height": 1125,
-        "touch": true,
-        "size": 5.8
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "254.0.0.15.109",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/228.0.471065565 Mobile/15E148 Safari/604.1"
+      "origin": "https://www.geld.de",
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/102.2  Mobile/15E148 Safari/605.1.15",
+      "x-requested-with": "XMLHttpRequest"
     },
     "device": {
       "deviceName": "iPhone",
@@ -2736,15 +2609,8 @@
         "touch": true,
         "size": 3.5
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Google App",
-      "modus": null,
-      "version": "228.0.471065565",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -2752,6 +2618,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "102.2.0",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
     },
     "engine": {
       "name": "WebKit",
@@ -2761,7 +2636,9 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/230.1.475637890 Mobile/19G82 Safari/604.1"
+      "origin": "https://www.geld.de",
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/222.1.463240275 Mobile/15E148 Safari/604.1",
+      "x-requested-with": "XMLHttpRequest"
     },
     "device": {
       "deviceName": "iPhone",
@@ -2776,22 +2653,24 @@
         "touch": true,
         "size": 3.5
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Google App",
-      "modus": null,
-      "version": "230.1.475637890",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "15.6.1",
+      "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "222.1.463240275",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
     },
     "engine": {
       "name": "WebKit",
@@ -2801,7 +2680,9 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 253.0.0.19.114 (iPhone14,2; iOS 16_0; de_DE; de-DE; scale=3.00; 1170x2532; 399676583) NW/3"
+      "origin": "https://www.geld.de",
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_8 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/222.1.463240275 Mobile/15E148 Safari/604.1",
+      "x-requested-with": "XMLHttpRequest"
     },
     "device": {
       "deviceName": "iPhone",
@@ -2816,15 +2697,8 @@
         "touch": true,
         "size": 3.5
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "253.0.0.19.114",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -2832,6 +2706,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "222.1.463240275",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
     },
     "engine": {
       "name": "WebKit",
@@ -2841,7 +2724,9 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/228.0.471065565 Mobile/19G82 Safari/604.1"
+      "origin": "https://www.geld.de",
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/103.0.5060.63 Mobile/15E148 Safari/604.1",
+      "x-requested-with": "XMLHttpRequest"
     },
     "device": {
       "deviceName": "iPhone",
@@ -2856,22 +2741,24 @@
         "touch": true,
         "size": 3.5
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Google App",
-      "modus": null,
-      "version": "228.0.471065565",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "15.6.1",
+      "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "103.0.5060.63",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
     },
     "engine": {
       "name": "WebKit",
@@ -2881,7 +2768,9 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 257.1.0.13.119 (iPhone14,2; iOS 16_0; de_DE; de-DE; scale=3.00; 1170x2532; 409247554)"
+      "origin": "https://www.geld.de",
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/222.1.463240275 Mobile/15E148 Safari/604.1",
+      "x-requested-with": "XMLHttpRequest"
     },
     "device": {
       "deviceName": "iPhone",
@@ -2896,15 +2785,8 @@
         "touch": true,
         "size": 3.5
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "257.1.0.13.119",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -2912,6 +2794,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "222.1.463240275",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
     },
     "engine": {
       "name": "WebKit",
@@ -2921,7 +2812,22 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_0_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/106 Mobile/15E148 Version/15.0"
+      "device-memory": "8",
+      "downlink": "3.3",
+      "dpr": "2",
+      "ect": "4g",
+      "origin": "https://www.geld.de",
+      "rtt": "50",
+      "sec-ch-device-memory": "8",
+      "sec-ch-dpr": "2",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-viewport-width": "414",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1",
+      "viewport-width": "414",
+      "x-requested-with": "XMLHttpRequest"
     },
     "device": {
       "deviceName": "iPhone",
@@ -2936,792 +2842,36 @@
         "touch": true,
         "size": 3.5
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Firefox Mobile for iOS",
-      "modus": null,
-      "version": "106.0.0",
-      "manufacturer": "mozilla-foundation",
-      "bits": null,
-      "type": "browser"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "10.3.1",
       "manufacturer": "apple",
       "bits": null
     },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "AlohaBrowserApp/4.3.0 (iPhone; iOS 16.0.3; Scale/3.00)"
-    },
-    "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
     "client": {
-      "name": "Aloha Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "aloha-mobile",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "16.0.3",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/230.1.475637890 Mobile/20A362 Safari/604.1"
-    },
-    "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Google App",
-      "modus": null,
-      "version": "230.1.475637890",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "16.0.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 252.1.0.19.111 (iPhone11,2; iOS 15_6_1; de_DE; de-DE; scale=3.00; 1125x2436; 397943498)"
-    },
-    "device": {
-      "deviceName": "iPhone 11,2",
-      "marketingName": "iPhone XS",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 2436,
-        "height": 1125,
-        "touch": true,
-        "size": 5.8
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "252.1.0.19.111",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/19G82 [FBAN/FBIOS;FBAV/384.0.0.36.110;FBBV/397976485;FBDV/iPhone12,1;FBMD/iPhone;FBSN/iOS;FBSV/15.6.1;FBSS/2;FBID/phone;FBLC/de_DE;FBOP/5;FBRV/0]"
-    },
-    "device": {
-      "deviceName": "iPhone 12,1",
-      "marketingName": "iPhone 11",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1792,
-        "height": 828,
-        "touch": true,
-        "size": 6.1
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "384.0.0.36.110",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "15.6.1",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 253.0.0.19.114 (iPhone13,3; iOS 16_0; de_DE; de-DE; scale=3.00; 1170x2532; 399676583) NW/3"
-    },
-    "device": {
-      "deviceName": "iPhone 13,3",
-      "marketingName": "iPhone 12 Pro",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 2532,
-        "height": 1170,
-        "touch": true,
-        "size": 6.1
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "253.0.0.19.114",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 251.0.0.7.107 (iPhone12,1; iOS 15_6_1; de_DE; de-DE; scale=2.00; 828x1792; 394980221) NW/3"
-    },
-    "device": {
-      "deviceName": "iPhone 12,1",
-      "marketingName": "iPhone 11",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1792,
-        "height": 828,
-        "touch": true,
-        "size": 6.1
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "251.0.0.7.107",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_2_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 251.0.0.7.107 (iPhone13,1; iOS 15_2_1; de_DE; de-DE; scale=3.38; 1080x2338; 394980221)"
-    },
-    "device": {
-      "deviceName": "iPhone 13,1",
-      "marketingName": "iPhone 12 Mini",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 2340,
-        "height": 1080,
-        "touch": true,
-        "size": 5.4
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "251.0.0.7.107",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 251.0.0.7.107 (iPhone13,2; iOS 15_6_1; de_DE; de-DE; scale=3.00; 1170x2532; 394980221)"
-    },
-    "device": {
-      "deviceName": "iPhone 13,2",
-      "marketingName": "iPhone 12",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 2532,
-        "height": 1170,
-        "touch": true,
-        "size": 6.1
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "251.0.0.7.107",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 251.0.0.7.107 (iPhone14,3; iOS 15_6_1; de_DE; de; scale=3.00; 1284x2778; 394980221)"
-    },
-    "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "251.0.0.7.107",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_0_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 257.1.0.13.119 (iPhone13,1; iOS 16_0_2; de_DE; de-DE; scale=2.88; 1080x2338; 409247554)"
-    },
-    "device": {
-      "deviceName": "iPhone 13,1",
-      "marketingName": "iPhone 12 Mini",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 2340,
-        "height": 1080,
-        "touch": true,
-        "size": 5.4
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "257.1.0.13.119",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_0_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 257.1.0.13.119 (iPhone13,2; iOS 16_0_2; de_DE; de-DE; scale=3.00; 1170x2532; 409247554)"
-    },
-    "device": {
-      "deviceName": "iPhone 13,2",
-      "marketingName": "iPhone 12",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 2532,
-        "height": 1170,
-        "touch": true,
-        "size": 6.1
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "257.1.0.13.119",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 257.1.0.13.119 (iPhone12,1; iOS 15_6_1; de_DE; de-DE; scale=2.00; 828x1792; 409247554)"
-    },
-    "device": {
-      "deviceName": "iPhone 12,1",
-      "marketingName": "iPhone 11",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1792,
-        "height": 828,
-        "touch": true,
-        "size": 6.1
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "257.1.0.13.119",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/233.0.478398274 Mobile/15E148 Safari/604.1"
-    },
-    "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Google App",
-      "modus": null,
-      "version": "233.0.478398274",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_0_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/234.0.480739195 Mobile/20A392 Safari/604.1 OcIdWebView ({\\"
-    },
-    "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Google App",
-      "modus": null,
-      "version": "234.0.480739195",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "16.0.3",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 255.1.0.18.105 (iPhone13,3; iOS 15_6; de_DE; de-DE; scale=3.00; 1170x2532; 405816327)"
-    },
-    "device": {
-      "deviceName": "iPhone 13,3",
-      "marketingName": "iPhone 12 Pro",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 2532,
-        "height": 1170,
-        "touch": true,
-        "size": 6.1
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "255.1.0.18.105",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 255.1.0.18.105 (iPhone12,1; iOS 15_6_1; de_DE; de-DE; scale=2.00; 828x1792; 405816327)"
-    },
-    "device": {
-      "deviceName": "iPhone 12,1",
-      "marketingName": "iPhone 11",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1792,
-        "height": 828,
-        "touch": true,
-        "size": 6.1
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "255.1.0.18.105",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_0_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 248.1.0.13.112 (iPhone13,2; iOS 16_0_2; de_DE; de-DE; scale=3.00; 1170x2532; 390885564)"
-    },
-    "device": {
-      "deviceName": "iPhone 13,2",
-      "marketingName": "iPhone 12",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 2532,
-        "height": 1170,
-        "touch": true,
-        "size": 6.1
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "248.1.0.13.112",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_0_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 255.1.0.18.105 (iPhone12,8; iOS 16_0_2; de_DE; de-DE; scale=2.00; 750x1334; 405816327)"
-    },
-    "device": {
-      "deviceName": "iPhone 12,8",
-      "marketingName": "iPhone SE (2nd Gen.)",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1334,
-        "height": 750,
-        "touch": true,
-        "size": 4.7
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "255.1.0.18.105",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone14,3; U; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19A346 Safari/602.1"
-    },
-    "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Safari",
+      "name": null,
       "modus": null,
       "version": "10.0.0",
-      "manufacturer": "apple",
+      "manufacturer": null,
       "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "15.0.0",
-      "manufacturer": "apple",
-      "bits": null
+      "type": null,
+      "isbot": null
     },
     "engine": {
       "name": "WebKit",
-      "version": "602.1.50",
+      "version": "603.1.30",
       "manufacturer": "apple"
     }
   },
   {
     "headers": {
-      "user-agent": "com.tinyspeck.chatlyio/22.10.40 (iPhone; iOS 16.0; Scale/3.00)"
+      "origin": "https://www.geld.de",
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.6 Mobile/15E148 DuckDuckGo/7 Safari/605.1.15",
+      "x-requested-with": "XMLHttpRequest"
     },
     "device": {
       "deviceName": "iPhone",
@@ -3736,55 +2886,8 @@
         "touch": true,
         "size": 3.5
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "chatlyio App",
-      "modus": null,
-      "version": "22.10.40",
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "16.0.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/107.0.5304.66 Mobile/15E148 Safari/604.1"
-    },
-    "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Chrome for iOS",
-      "modus": null,
-      "version": "107.0.5304.66",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -3793,6 +2896,15 @@
       "manufacturer": "apple",
       "bits": null
     },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "7.0.0",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
+    },
     "engine": {
       "name": "WebKit",
       "version": "605.1.15",
@@ -3801,7 +2913,9 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) EdgiOS/106.0.1370.47 Version/15.0 Mobile/15E148 Safari/604.1"
+      "origin": "https://www.geld.de",
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 12_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1.1 Mobile/15E148 Safari/604.1",
+      "x-requested-with": "XMLHttpRequest"
     },
     "device": {
       "deviceName": "iPhone",
@@ -3816,15 +2930,8 @@
         "touch": true,
         "size": 3.5
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Edge Mobile for iOS",
-      "modus": null,
-      "version": "106.0.1370.47",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "browser"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -3833,135 +2940,26 @@
       "manufacturer": "apple",
       "bits": null
     },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/233.0.478398274 Mobile/20A362 Safari/604.1 OcIdWebView ({\\"
-    },
-    "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
     "client": {
-      "name": "Google App",
-      "modus": null,
-      "version": "233.0.478398274",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "16.0.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/233.0.478398274 Mobile/19G82 Safari/604.1"
-    },
-    "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Google App",
-      "modus": null,
-      "version": "233.0.478398274",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "15.6.1",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Microsoft Office Word/2.65.905 (iOS/16.0.2; Phone; de-DE; AppStore; Apple/iPhone14,5)"
-    },
-    "device": {
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "AppStore App",
+      "name": null,
       "modus": null,
       "version": null,
-      "manufacturer": "apple",
+      "manufacturer": null,
       "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "16.0.2",
-      "manufacturer": "apple",
-      "bits": null
+      "type": null,
+      "isbot": null
     },
     "engine": {
       "name": "WebKit",
-      "version": null,
+      "version": "605.1.15",
       "manufacturer": "apple"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_0_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/232.0.476785961 Mobile/20A380 Safari/604.1"
+      "origin": "https://www.geld.de",
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/222.0.462210365 Mobile/15E148 Safari/604.1",
+      "x-requested-with": "XMLHttpRequest"
     },
     "device": {
       "deviceName": "iPhone",
@@ -3976,22 +2974,1388 @@
         "touch": true,
         "size": 3.5
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Google App",
-      "modus": null,
-      "version": "232.0.476785961",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "16.0.2",
+      "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "222.0.462210365",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "origin": "https://www.geld.de",
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/102.0  Mobile/15E148 Safari/605.1.15",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.3.0",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "102.0.0",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "origin": "https://www.geld.de",
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/103.0.5060.63 Mobile/15E148 Safari/604.1",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.3.0",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "103.0.5060.63",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "origin": "https://www.geld.de",
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/103.0.5060.63 Mobile/15E148 Safari/604.1",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.3.0",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "103.0.5060.63",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "origin": "https://www.geld.de",
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/222.0.462210365 Mobile/15E148 Safari/604.1",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.3.0",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "222.0.462210365",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "origin": "https://www.geld.de",
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/221.0.461030601 Mobile/15E148 Safari/604.1",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.3.0",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "221.0.461030601",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "origin": "https://www.geld.de",
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/123.4.330040034 Mobile/15E148 Safari/604.1",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.3.0",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "123.4.330040034",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "origin": "https://www.geld.de",
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.6 Mobile/15E148 Snapchat/11.88.0.37 (like Safari/8613.3.9.0.5, panda)",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.3.0",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "11.88.0.37",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "origin": "https://www.geld.de",
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/221.0.461030601 Mobile/15E148 Safari/604.1",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.3.0",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "221.0.461030601",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "origin": "https://www.geld.de",
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_8 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/162.0.375868988 Mobile/15E148 Safari/604.1",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.3.0",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "162.0.375868988",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "origin": "https://www.geld.de",
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_8 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.8 Mobile/15E148 DuckDuckGo/7 Safari/605.1.15",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.3.0",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "7.0.0",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "origin": "https://www.geld.de",
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_5_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.5 Mobile/15E148 DuckDuckGo/7 Safari/605.1.15",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.3.0",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "7.0.0",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "origin": "https://www.geld.de",
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/102.0  Mobile/15E148 Safari/605.1.15",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.3.0",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "102.0.0",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "origin": "https://www.geld.de",
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/167.0.382489606 Mobile/15E148 Safari/604.1",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.3.0",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "167.0.382489606",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "origin": "https://www.geld.de",
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/80.0.3987.95 Mobile/15E148 Safari/604.1",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.3.0",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "80.0.3987.95",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "origin": "https://www.geld.de",
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_2_1 like Mac OS X) AppleWebKit/602.4.6 (KHTML, like Gecko) Version/10.0 Mobile/14D27 Safari/602.1",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "10.2.1",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "10.0.0",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "602.4.6",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "origin": "https://www.geld.de",
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/103.0.5060.63 Mobile/15E148 Safari/604.1",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.3.0",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "103.0.5060.63",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "origin": "https://www.geld.de",
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/221.0.461030601 Mobile/15E148 Safari/604.1",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.3.0",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "221.0.461030601",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "origin": "https://www.geld.de",
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/210.0.444145502 Mobile/15E148 Safari/604.1",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.3.0",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "210.0.444145502",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "origin": "https://www.geld.de",
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/123.0.328412499 Mobile/15E148 Safari/604.1",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.3.0",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "123.0.328412499",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "origin": "https://www.geld.de",
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/221.0.461030601 Mobile/15E148 Safari/604.1",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.3.0",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "221.0.461030601",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "origin": "https://www.geld.de",
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/221.0.461030601 Mobile/15E148 Safari/604.1",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.3.0",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "221.0.461030601",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "origin": "https://www.geld.de",
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/186.1.410104828 Mobile/15E148 Safari/604.1",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.3.0",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "186.1.410104828",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "origin": "https://www.geld.de",
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/102 Mobile/15E148 Version/15.0",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.3.0",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "102.0.0",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "origin": "https://www.geld.de",
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Safari/605.1.15",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.3.0",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "5.0.0",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "origin": "https://www.geld.de",
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/221.0.461030601 Mobile/15E148 Safari/604.1",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.3.0",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "221.0.461030601",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "origin": "https://www.geld.de",
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) EdgiOS/102.0.1245.39 Version/15.0 Mobile/15E148 Safari/604.1",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.3.0",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "102.0.1245.39",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "origin": "https://www.geld.de",
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/219.0.457350353 Mobile/15E148 Safari/604.1",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.3.0",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "219.0.457350353",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "origin": "https://www.geld.de",
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/219.0.457350353 Mobile/15E148 Safari/604.1",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.3.0",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "219.0.457350353",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "origin": "https://www.geld.de",
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/95.0.4638.50 Mobile/15E148 Safari/604.1",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.3.0",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "95.0.4638.50",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "origin": "https://www.geld.de",
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) EdgiOS/103.0.1264.60 Version/15.0 Mobile/15E148 Safari/604.1",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.3.0",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "103.0.1264.60",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "origin": "https://www.geld.de",
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_8_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Safari/605.1.15",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.3.0",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "5.0.0",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
     },
     "engine": {
       "name": "WebKit",

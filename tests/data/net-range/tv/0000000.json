@@ -16,15 +16,8 @@
         "touch": false,
         "size": null
       },
-      "type": "tv"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "30.0.1599.114",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "tv",
+      "ismobile": false
     },
     "os": {
       "name": "Linux",
@@ -32,6 +25,15 @@
       "version": null,
       "manufacturer": "linux-foundation",
       "bits": 64
+    },
+    "client": {
+      "name": "Sraf",
+      "modus": null,
+      "version": "3.0.0",
+      "manufacturer": "seraphic",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -56,15 +58,8 @@
         "touch": false,
         "size": null
       },
-      "type": "tv"
-    },
-    "client": {
-      "name": "Opera",
-      "modus": null,
-      "version": "12.00.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
+      "type": "tv",
+      "ismobile": false
     },
     "os": {
       "name": "Linux",
@@ -72,6 +67,15 @@
       "version": null,
       "manufacturer": "linux-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "Opera",
+      "modus": null,
+      "version": "12.00.0",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Presto",
@@ -96,15 +100,8 @@
         "touch": false,
         "size": null
       },
-      "type": "tv"
-    },
-    "client": {
-      "name": "Safari",
-      "modus": null,
-      "version": null,
-      "manufacturer": "apple",
-      "bits": null,
-      "type": "browser"
+      "type": "tv",
+      "ismobile": false
     },
     "os": {
       "name": "Linux",
@@ -112,6 +109,15 @@
       "version": null,
       "manufacturer": "linux-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "Safari",
+      "modus": null,
+      "version": null,
+      "manufacturer": "apple",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -136,15 +142,8 @@
         "touch": false,
         "size": null
       },
-      "type": "tv"
-    },
-    "client": {
-      "name": "Safari",
-      "modus": null,
-      "version": null,
-      "manufacturer": "apple",
-      "bits": null,
-      "type": "browser"
+      "type": "tv",
+      "ismobile": false
     },
     "os": {
       "name": "Linux",
@@ -152,6 +151,15 @@
       "version": null,
       "manufacturer": "linux-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "Safari",
+      "modus": null,
+      "version": null,
+      "manufacturer": "apple",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -176,15 +184,8 @@
         "touch": false,
         "size": null
       },
-      "type": "tv"
-    },
-    "client": {
-      "name": "Opera",
-      "modus": null,
-      "version": "11.50.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
+      "type": "tv",
+      "ismobile": false
     },
     "os": {
       "name": "Linux",
@@ -192,6 +193,15 @@
       "version": null,
       "manufacturer": "linux-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "Opera",
+      "modus": null,
+      "version": "11.50.0",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Presto",
@@ -216,15 +226,8 @@
         "touch": false,
         "size": null
       },
-      "type": "tv"
-    },
-    "client": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
+      "type": "tv",
+      "ismobile": false
     },
     "os": {
       "name": "Linux",
@@ -232,6 +235,15 @@
       "version": null,
       "manufacturer": "linux-foundation",
       "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -256,15 +268,8 @@
         "touch": false,
         "size": null
       },
-      "type": "tv"
-    },
-    "client": {
-      "name": "NetFront",
-      "modus": null,
-      "version": null,
-      "manufacturer": "access",
-      "bits": null,
-      "type": "browser"
+      "type": "tv",
+      "ismobile": false
     },
     "os": {
       "name": "Linux",
@@ -272,6 +277,15 @@
       "version": null,
       "manufacturer": "linux-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "NetFront",
+      "modus": null,
+      "version": null,
+      "manufacturer": "access",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -296,15 +310,8 @@
         "touch": false,
         "size": null
       },
-      "type": "tv"
-    },
-    "client": {
-      "name": "Safari",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "apple",
-      "bits": null,
-      "type": "browser"
+      "type": "tv",
+      "ismobile": false
     },
     "os": {
       "name": "Linux",
@@ -312,6 +319,15 @@
       "version": null,
       "manufacturer": "linux-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "Safari",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "apple",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -336,15 +352,8 @@
         "touch": false,
         "size": null
       },
-      "type": "tv"
-    },
-    "client": {
-      "name": "Safari",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "apple",
-      "bits": null,
-      "type": "browser"
+      "type": "tv",
+      "ismobile": false
     },
     "os": {
       "name": "Linux",
@@ -352,6 +361,15 @@
       "version": null,
       "manufacturer": "linux-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "Safari",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "apple",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -376,15 +394,8 @@
         "touch": false,
         "size": null
       },
-      "type": "tv"
-    },
-    "client": {
-      "name": "Safari",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "apple",
-      "bits": 64,
-      "type": "browser"
+      "type": "tv",
+      "ismobile": false
     },
     "os": {
       "name": "Linux",
@@ -392,6 +403,15 @@
       "version": null,
       "manufacturer": "linux-foundation",
       "bits": 64
+    },
+    "client": {
+      "name": "Safari",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "apple",
+      "bits": 64,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -416,15 +436,8 @@
         "touch": false,
         "size": null
       },
-      "type": "tv"
-    },
-    "client": {
-      "name": "Opera",
-      "modus": null,
-      "version": null,
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
+      "type": "tv",
+      "ismobile": false
     },
     "os": {
       "name": "Linux",
@@ -432,6 +445,15 @@
       "version": null,
       "manufacturer": "linux-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "Opera",
+      "modus": null,
+      "version": null,
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Presto",
@@ -456,15 +478,8 @@
         "touch": false,
         "size": null
       },
-      "type": "tv"
-    },
-    "client": {
-      "name": "NetFront NX",
-      "modus": null,
-      "version": "2.1.0",
-      "manufacturer": "access",
-      "bits": null,
-      "type": "browser"
+      "type": "tv",
+      "ismobile": false
     },
     "os": {
       "name": "Linux",
@@ -472,6 +487,15 @@
       "version": null,
       "manufacturer": "linux-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "NetFront NX",
+      "modus": null,
+      "version": "2.1.0",
+      "manufacturer": "access",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -496,15 +520,8 @@
         "touch": false,
         "size": null
       },
-      "type": "tv"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "19.77.34.5",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "tv",
+      "ismobile": false
     },
     "os": {
       "name": "Linux",
@@ -512,6 +529,15 @@
       "version": null,
       "manufacturer": "linux-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "19.77.34.5",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -536,15 +562,8 @@
         "touch": false,
         "size": null
       },
-      "type": "tv"
-    },
-    "client": {
-      "name": "Opera Devices",
-      "modus": null,
-      "version": "4.2.12.31",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
+      "type": "tv",
+      "ismobile": false
     },
     "os": {
       "name": "Linux",
@@ -552,6 +571,15 @@
       "version": null,
       "manufacturer": "linux-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "Opera Devices",
+      "modus": null,
+      "version": "4.2.12.31",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",

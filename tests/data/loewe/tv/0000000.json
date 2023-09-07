@@ -16,15 +16,8 @@
         "touch": false,
         "size": null
       },
-      "type": "tv"
-    },
-    "client": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
+      "type": "tv",
+      "ismobile": false
     },
     "os": {
       "name": "Linux",
@@ -32,6 +25,15 @@
       "version": null,
       "manufacturer": "linux-foundation",
       "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -56,15 +58,8 @@
         "touch": false,
         "size": null
       },
-      "type": "tv"
-    },
-    "client": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
+      "type": "tv",
+      "ismobile": false
     },
     "os": {
       "name": "Linux",
@@ -72,6 +67,15 @@
       "version": null,
       "manufacturer": "linux-foundation",
       "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -96,15 +100,8 @@
         "touch": false,
         "size": null
       },
-      "type": "tv"
-    },
-    "client": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
+      "type": "tv",
+      "ismobile": false
     },
     "os": {
       "name": "Linux",
@@ -112,6 +109,15 @@
       "version": null,
       "manufacturer": "linux-foundation",
       "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -136,15 +142,8 @@
         "touch": false,
         "size": null
       },
-      "type": "tv"
-    },
-    "client": {
-      "name": "Opera",
-      "modus": null,
-      "version": "11.60.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
+      "type": "tv",
+      "ismobile": false
     },
     "os": {
       "name": "Linux",
@@ -152,6 +151,15 @@
       "version": null,
       "manufacturer": "linux-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "Opera",
+      "modus": null,
+      "version": "11.60.0",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Presto",
@@ -176,15 +184,8 @@
         "touch": false,
         "size": null
       },
-      "type": "tv"
-    },
-    "client": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
+      "type": "tv",
+      "ismobile": false
     },
     "os": {
       "name": "Linux",
@@ -192,6 +193,15 @@
       "version": null,
       "manufacturer": "linux-foundation",
       "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -216,15 +226,8 @@
         "touch": false,
         "size": null
       },
-      "type": "tv"
-    },
-    "client": {
-      "name": "Opera",
-      "modus": null,
-      "version": "11.60.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
+      "type": "tv",
+      "ismobile": false
     },
     "os": {
       "name": "Linux",
@@ -232,6 +235,15 @@
       "version": null,
       "manufacturer": "linux-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "Opera",
+      "modus": null,
+      "version": "11.60.0",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Presto",
@@ -256,15 +268,8 @@
         "touch": false,
         "size": null
       },
-      "type": "tv"
-    },
-    "client": {
-      "name": "Opera",
-      "modus": null,
-      "version": "12.51.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
+      "type": "tv",
+      "ismobile": false
     },
     "os": {
       "name": "Maemo",
@@ -272,6 +277,15 @@
       "version": null,
       "manufacturer": "linux-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "Opera",
+      "modus": null,
+      "version": "12.51.0",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Presto",
@@ -296,15 +310,8 @@
         "touch": false,
         "size": null
       },
-      "type": "tv"
-    },
-    "client": {
-      "name": "Opera",
-      "modus": null,
-      "version": "10.60.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
+      "type": "tv",
+      "ismobile": false
     },
     "os": {
       "name": "Linux",
@@ -312,6 +319,15 @@
       "version": null,
       "manufacturer": "linux-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "Opera",
+      "modus": null,
+      "version": "10.60.0",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Presto",
@@ -336,15 +352,8 @@
         "touch": false,
         "size": null
       },
-      "type": "tv"
-    },
-    "client": {
-      "name": "Opera",
-      "modus": null,
-      "version": "36.0.2128.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
+      "type": "tv",
+      "ismobile": false
     },
     "os": {
       "name": "Linux",
@@ -352,6 +361,15 @@
       "version": null,
       "manufacturer": "linux-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "Opera",
+      "modus": null,
+      "version": "36.0.2128.0",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -376,15 +394,8 @@
         "touch": false,
         "size": null
       },
-      "type": "tv"
-    },
-    "client": {
-      "name": "Opera",
-      "modus": null,
-      "version": "10.60.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
+      "type": "tv",
+      "ismobile": false
     },
     "os": {
       "name": "Linux",
@@ -392,6 +403,15 @@
       "version": null,
       "manufacturer": "linux-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "Opera",
+      "modus": null,
+      "version": "10.60.0",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Presto",
@@ -416,15 +436,8 @@
         "touch": false,
         "size": null
       },
-      "type": "tv"
-    },
-    "client": {
-      "name": "Opera",
-      "modus": null,
-      "version": "12.10.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
+      "type": "tv",
+      "ismobile": false
     },
     "os": {
       "name": "Linux",
@@ -432,6 +445,15 @@
       "version": null,
       "manufacturer": "linux-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "Opera",
+      "modus": null,
+      "version": "12.10.0",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Presto",
@@ -456,15 +478,8 @@
         "touch": false,
         "size": null
       },
-      "type": "tv"
-    },
-    "client": {
-      "name": "Opera",
-      "modus": null,
-      "version": "12.10.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
+      "type": "tv",
+      "ismobile": false
     },
     "os": {
       "name": "Linux",
@@ -472,6 +487,15 @@
       "version": null,
       "manufacturer": "linux-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "Opera",
+      "modus": null,
+      "version": "12.10.0",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Presto",
@@ -496,15 +520,8 @@
         "touch": false,
         "size": null
       },
-      "type": "tv"
-    },
-    "client": {
-      "name": "Opera",
-      "modus": null,
-      "version": "12.50.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
+      "type": "tv",
+      "ismobile": false
     },
     "os": {
       "name": "Linux",
@@ -512,6 +529,15 @@
       "version": null,
       "manufacturer": "linux-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "Opera",
+      "modus": null,
+      "version": "12.50.0",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Presto",
@@ -536,15 +562,8 @@
         "touch": false,
         "size": null
       },
-      "type": "tv"
-    },
-    "client": {
-      "name": "Opera",
-      "modus": null,
-      "version": "12.50.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
+      "type": "tv",
+      "ismobile": false
     },
     "os": {
       "name": "Linux",
@@ -552,6 +571,15 @@
       "version": null,
       "manufacturer": "linux-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "Opera",
+      "modus": null,
+      "version": "12.50.0",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Presto",
@@ -576,15 +604,8 @@
         "touch": false,
         "size": null
       },
-      "type": "tv"
-    },
-    "client": {
-      "name": "Opera",
-      "modus": null,
-      "version": "46.0.2207.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
+      "type": "tv",
+      "ismobile": false
     },
     "os": {
       "name": "Linux",
@@ -592,6 +613,15 @@
       "version": null,
       "manufacturer": "linux-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "Opera",
+      "modus": null,
+      "version": "46.0.2207.0",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -616,15 +646,8 @@
         "touch": false,
         "size": null
       },
-      "type": "tv"
-    },
-    "client": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
+      "type": "tv",
+      "ismobile": false
     },
     "os": {
       "name": "Linux",
@@ -632,6 +655,15 @@
       "version": null,
       "manufacturer": "linux-foundation",
       "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -656,15 +688,8 @@
         "touch": false,
         "size": null
       },
-      "type": "tv"
-    },
-    "client": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
+      "type": "tv",
+      "ismobile": false
     },
     "os": {
       "name": "Linux",
@@ -672,6 +697,15 @@
       "version": null,
       "manufacturer": "linux-foundation",
       "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -696,15 +730,8 @@
         "touch": false,
         "size": 55
       },
-      "type": "tv"
-    },
-    "client": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
+      "type": "tv",
+      "ismobile": false
     },
     "os": {
       "name": "Maemo",
@@ -712,6 +739,15 @@
       "version": null,
       "manufacturer": "linux-foundation",
       "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -736,15 +772,8 @@
         "touch": false,
         "size": null
       },
-      "type": "tv"
-    },
-    "client": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
+      "type": "tv",
+      "ismobile": false
     },
     "os": {
       "name": "Linux",
@@ -752,6 +781,15 @@
       "version": null,
       "manufacturer": "linux-foundation",
       "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -776,15 +814,8 @@
         "touch": false,
         "size": null
       },
-      "type": "tv"
-    },
-    "client": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
+      "type": "tv",
+      "ismobile": false
     },
     "os": {
       "name": "Linux",
@@ -792,6 +823,15 @@
       "version": null,
       "manufacturer": "linux-foundation",
       "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -816,15 +856,8 @@
         "touch": false,
         "size": null
       },
-      "type": "tv"
-    },
-    "client": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
+      "type": "tv",
+      "ismobile": false
     },
     "os": {
       "name": "Linux",
@@ -832,6 +865,15 @@
       "version": null,
       "manufacturer": "linux-foundation",
       "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -856,15 +898,8 @@
         "touch": false,
         "size": null
       },
-      "type": "tv"
-    },
-    "client": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
+      "type": "tv",
+      "ismobile": false
     },
     "os": {
       "name": "Linux",
@@ -872,6 +907,15 @@
       "version": null,
       "manufacturer": "linux-foundation",
       "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -896,15 +940,8 @@
         "touch": false,
         "size": 55
       },
-      "type": "tv"
-    },
-    "client": {
-      "name": "Opera",
-      "modus": null,
-      "version": "46.0.2207.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
+      "type": "tv",
+      "ismobile": false
     },
     "os": {
       "name": "Maemo",
@@ -912,6 +949,15 @@
       "version": null,
       "manufacturer": "linux-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "Opera",
+      "modus": null,
+      "version": "46.0.2207.0",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",

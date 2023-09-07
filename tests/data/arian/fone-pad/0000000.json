@@ -16,15 +16,8 @@
         "touch": true,
         "size": 7
       },
-      "type": "fone-pad"
-    },
-    "client": {
-      "name": "Yandex Search App",
-      "modus": null,
-      "version": "7.45.0",
-      "manufacturer": "yandex",
-      "bits": null,
-      "type": "application"
+      "type": "fone-pad",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -32,6 +25,15 @@
       "version": "7.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Yandex Search Browser",
+      "modus": null,
+      "version": "7.45.0",
+      "manufacturer": "yandex",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -56,15 +58,8 @@
         "touch": true,
         "size": 10.1
       },
-      "type": "fone-pad"
-    },
-    "client": {
-      "name": "Yandex Search App",
-      "modus": null,
-      "version": "7.45.0",
-      "manufacturer": "yandex",
-      "bits": null,
-      "type": "application"
+      "type": "fone-pad",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -72,6 +67,15 @@
       "version": "7.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Yandex Search Browser",
+      "modus": null,
+      "version": "7.45.0",
+      "manufacturer": "yandex",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",

@@ -16,15 +16,8 @@
         "touch": true,
         "size": 7.8
       },
-      "type": "fone-pad"
-    },
-    "client": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "12.11.8.1186",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
+      "type": "fone-pad",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -32,6 +25,15 @@
       "version": "4.2.2",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "12.11.8.1186",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",

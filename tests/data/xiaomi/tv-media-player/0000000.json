@@ -16,15 +16,8 @@
         "touch": false,
         "size": null
       },
-      "type": "tv-media-player"
-    },
-    "client": {
-      "name": "Motorola Internet Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "motorola",
-      "bits": null,
-      "type": "browser"
+      "type": "tv-media-player",
+      "ismobile": false
     },
     "os": {
       "name": "Android",
@@ -32,6 +25,15 @@
       "version": "4.4.2",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Motorola Internet Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "motorola",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -56,15 +58,8 @@
         "touch": false,
         "size": null
       },
-      "type": "tv-media-player"
-    },
-    "client": {
-      "name": "Dalvik",
-      "modus": null,
-      "version": "2.1.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
+      "type": "tv-media-player",
+      "ismobile": false
     },
     "os": {
       "name": "Android",
@@ -72,6 +67,15 @@
       "version": "6.0.1",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Dalvik",
+      "modus": null,
+      "version": "2.1.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -96,15 +100,8 @@
         "touch": false,
         "size": null
       },
-      "type": "tv-media-player"
-    },
-    "client": {
-      "name": "Dalvik",
-      "modus": null,
-      "version": "2.1.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
+      "type": "tv-media-player",
+      "ismobile": false
     },
     "os": {
       "name": "Android",
@@ -112,6 +109,15 @@
       "version": "7.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Dalvik",
+      "modus": null,
+      "version": "2.1.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -136,15 +142,8 @@
         "touch": false,
         "size": null
       },
-      "type": "tv-media-player"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "78.0.3904.90",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "tv-media-player",
+      "ismobile": false
     },
     "os": {
       "name": "Android",
@@ -152,6 +151,15 @@
       "version": "5.1.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "78.0.3904.90",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -176,15 +184,8 @@
         "touch": false,
         "size": null
       },
-      "type": "tv-media-player"
-    },
-    "client": {
-      "name": "Android WebView",
-      "modus": null,
-      "version": "62.0.3202.97",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "tv-media-player",
+      "ismobile": false
     },
     "os": {
       "name": "Android",
@@ -192,6 +193,15 @@
       "version": "4.4.2",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "62.0.3202.97",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",

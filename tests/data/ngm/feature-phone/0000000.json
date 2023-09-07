@@ -16,15 +16,8 @@
         "touch": true,
         "size": null
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "Obigo Q",
-      "modus": null,
-      "version": "3.0.0",
-      "manufacturer": "obigo",
-      "bits": null,
-      "type": "browser"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "JavaOS",
@@ -32,6 +25,15 @@
       "version": null,
       "manufacturer": "sun-microsystems",
       "bits": null
+    },
+    "client": {
+      "name": "Obigo Q",
+      "modus": null,
+      "version": "3.0.0",
+      "manufacturer": "obigo",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Teleca",

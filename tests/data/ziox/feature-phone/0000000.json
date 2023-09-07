@@ -16,15 +16,8 @@
         "touch": false,
         "size": 2.4
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "WAP Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "wap-browser"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "JavaOS",
@@ -32,6 +25,15 @@
       "version": null,
       "manufacturer": "sun-microsystems",
       "bits": null
+    },
+    "client": {
+      "name": "WAP Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "wap-browser",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -56,15 +58,8 @@
         "touch": false,
         "size": 1.8
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "WAP Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "wap-browser"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "JavaOS",
@@ -72,6 +67,15 @@
       "version": null,
       "manufacturer": "sun-microsystems",
       "bits": null
+    },
+    "client": {
+      "name": "WAP Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "wap-browser",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -96,15 +100,8 @@
         "touch": false,
         "size": 2.4
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "SEMC-Browser",
-      "modus": null,
-      "version": "4.0.3",
-      "manufacturer": "sony-ericsson",
-      "bits": null,
-      "type": "browser"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "JavaOS",
@@ -112,6 +109,15 @@
       "version": null,
       "manufacturer": "sun-microsystems",
       "bits": null
+    },
+    "client": {
+      "name": "SEMC-Browser",
+      "modus": null,
+      "version": "4.0.3",
+      "manufacturer": "sony-ericsson",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": null,

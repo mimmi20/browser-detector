@@ -16,15 +16,8 @@
         "touch": true,
         "size": null
       },
-      "type": "mobile-device"
-    },
-    "client": {
-      "name": "Baidu Box App",
-      "modus": null,
-      "version": "6.7.0",
-      "manufacturer": "baidu",
-      "bits": null,
-      "type": "application"
+      "type": "mobile-device",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -32,6 +25,15 @@
       "version": "4.3.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Baidu Box App",
+      "modus": null,
+      "version": "6.7.0",
+      "manufacturer": "baidu",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "T5",

@@ -16,15 +16,8 @@
         "touch": false,
         "size": null
       },
-      "type": "desktop"
-    },
-    "client": {
-      "name": "Internet Explorer",
-      "modus": null,
-      "version": "9.0.0",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "browser"
+      "type": "desktop",
+      "ismobile": false
     },
     "os": {
       "name": "Windows NT 6.1",
@@ -32,6 +25,15 @@
       "version": "6.1.0",
       "manufacturer": "microsoft",
       "bits": 64
+    },
+    "client": {
+      "name": "Internet Explorer",
+      "modus": null,
+      "version": "9.0.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Trident",
@@ -56,15 +58,8 @@
         "touch": false,
         "size": null
       },
-      "type": "desktop"
-    },
-    "client": {
-      "name": "Office",
-      "modus": null,
-      "version": "12.0.0",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "application"
+      "type": "desktop",
+      "ismobile": false
     },
     "os": {
       "name": "Windows NT 6.1",
@@ -72,31 +67,6 @@
       "version": "6.1.0",
       "manufacturer": "microsoft",
       "bits": 64
-    },
-    "engine": {
-      "name": "Trident",
-      "version": "7.0.0",
-      "manufacturer": "microsoft"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; MAFSJS)"
-    },
-    "device": {
-      "deviceName": "PC",
-      "marketingName": "PC",
-      "manufacturer": "fujitsu",
-      "brand": "fujitsu",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop"
     },
     "client": {
       "name": "Internet Explorer",
@@ -104,14 +74,8 @@
       "version": "11.0.0",
       "manufacturer": "microsoft",
       "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Windows NT 6.1",
-      "marketingName": "Windows 7",
-      "version": "6.1.0",
-      "manufacturer": "microsoft",
-      "bits": 64
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Trident",
@@ -136,15 +100,8 @@
         "touch": false,
         "size": null
       },
-      "type": "desktop"
-    },
-    "client": {
-      "name": "Internet Explorer",
-      "modus": null,
-      "version": "11.0.0",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "browser"
+      "type": "desktop",
+      "ismobile": false
     },
     "os": {
       "name": "Windows NT 6.3",
@@ -152,6 +109,15 @@
       "version": "6.3.0",
       "manufacturer": "microsoft",
       "bits": 64
+    },
+    "client": {
+      "name": "Internet Explorer",
+      "modus": null,
+      "version": "11.0.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Trident",
@@ -176,15 +142,8 @@
         "touch": false,
         "size": null
       },
-      "type": "desktop"
-    },
-    "client": {
-      "name": "Internet Explorer",
-      "modus": null,
-      "version": "10.0.0",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "browser"
+      "type": "desktop",
+      "ismobile": false
     },
     "os": {
       "name": "Windows NT 6.1",
@@ -192,6 +151,15 @@
       "version": "6.1.0",
       "manufacturer": "microsoft",
       "bits": 64
+    },
+    "client": {
+      "name": "Internet Explorer",
+      "modus": null,
+      "version": "10.0.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Trident",
@@ -216,15 +184,8 @@
         "touch": false,
         "size": null
       },
-      "type": "desktop"
-    },
-    "client": {
-      "name": "Windows Live Mail",
-      "modus": null,
-      "version": "7.0.0",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "email-client"
+      "type": "desktop",
+      "ismobile": false
     },
     "os": {
       "name": "Windows NT 6.1",
@@ -232,6 +193,15 @@
       "version": "6.1.0",
       "manufacturer": "microsoft",
       "bits": 64
+    },
+    "client": {
+      "name": "Windows Live Mail",
+      "modus": null,
+      "version": "7.0.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "email-client",
+      "isbot": false
     },
     "engine": {
       "name": "Trident",
@@ -256,15 +226,8 @@
         "touch": false,
         "size": null
       },
-      "type": "desktop"
-    },
-    "client": {
-      "name": "Internet Explorer",
-      "modus": null,
-      "version": "8.0.0",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "browser"
+      "type": "desktop",
+      "ismobile": false
     },
     "os": {
       "name": "Windows NT 6.1",
@@ -272,6 +235,15 @@
       "version": "6.1.0",
       "manufacturer": "microsoft",
       "bits": null
+    },
+    "client": {
+      "name": "Internet Explorer",
+      "modus": null,
+      "version": "8.0.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Trident",
@@ -296,15 +268,8 @@
         "touch": false,
         "size": null
       },
-      "type": "desktop"
-    },
-    "client": {
-      "name": "Outlook",
-      "modus": null,
-      "version": "15.0.4815",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "email-client"
+      "type": "desktop",
+      "ismobile": false
     },
     "os": {
       "name": "Windows NT 6.1",
@@ -312,6 +277,15 @@
       "version": "6.1.0",
       "manufacturer": "microsoft",
       "bits": 64
+    },
+    "client": {
+      "name": "Outlook",
+      "modus": null,
+      "version": "15.0.4815",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "email-client",
+      "isbot": false
     },
     "engine": {
       "name": "Trident",
@@ -336,15 +310,8 @@
         "touch": false,
         "size": null
       },
-      "type": "desktop"
-    },
-    "client": {
-      "name": "Internet Explorer",
-      "modus": null,
-      "version": "11.0.0",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "browser"
+      "type": "desktop",
+      "ismobile": false
     },
     "os": {
       "name": "Windows NT 10.0",
@@ -353,45 +320,14 @@
       "manufacturer": "microsoft",
       "bits": 64
     },
-    "engine": {
-      "name": "Trident",
-      "version": "7.0.0",
-      "manufacturer": "microsoft"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Win64; x64; Trident/7.0; .NET CLR 2.0.50727; SLCC2; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; InfoPath.3; Tablet PC 2.0; GWX:DOWNLOADED; MAFSJS; ms-office; MSOffice 15)"
-    },
-    "device": {
-      "deviceName": "PC",
-      "marketingName": "PC",
-      "manufacturer": "fujitsu",
-      "brand": "fujitsu",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop"
-    },
     "client": {
-      "name": "Office",
+      "name": "Internet Explorer",
       "modus": null,
-      "version": "15.0.0",
+      "version": "11.0.0",
       "manufacturer": "microsoft",
-      "bits": 64,
-      "type": "application"
-    },
-    "os": {
-      "name": "Windows NT 6.1",
-      "marketingName": "Windows 7",
-      "version": "6.1.0",
-      "manufacturer": "microsoft",
-      "bits": 64
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Trident",
@@ -416,15 +352,8 @@
         "touch": false,
         "size": null
       },
-      "type": "desktop"
-    },
-    "client": {
-      "name": "Outlook",
-      "modus": null,
-      "version": "15.0.4805",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "email-client"
+      "type": "desktop",
+      "ismobile": false
     },
     "os": {
       "name": "Windows NT 10.0",
@@ -432,6 +361,15 @@
       "version": "10.0.0",
       "manufacturer": "microsoft",
       "bits": 64
+    },
+    "client": {
+      "name": "Outlook",
+      "modus": null,
+      "version": "15.0.4805",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "email-client",
+      "isbot": false
     },
     "engine": {
       "name": "Trident",
@@ -456,15 +394,8 @@
         "touch": false,
         "size": null
       },
-      "type": "desktop"
-    },
-    "client": {
-      "name": "Outlook",
-      "modus": null,
-      "version": "14.0.7167",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "email-client"
+      "type": "desktop",
+      "ismobile": false
     },
     "os": {
       "name": "Windows NT 6.1",
@@ -472,6 +403,15 @@
       "version": "6.1.0",
       "manufacturer": "microsoft",
       "bits": 64
+    },
+    "client": {
+      "name": "Outlook",
+      "modus": null,
+      "version": "14.0.7167",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "email-client",
+      "isbot": false
     },
     "engine": {
       "name": "Trident",
@@ -496,15 +436,8 @@
         "touch": false,
         "size": null
       },
-      "type": "desktop"
-    },
-    "client": {
-      "name": "Internet Explorer",
-      "modus": null,
-      "version": "11.0.0",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "browser"
+      "type": "desktop",
+      "ismobile": false
     },
     "os": {
       "name": "Windows NT 6.2",
@@ -512,6 +445,15 @@
       "version": "6.2.0",
       "manufacturer": "microsoft",
       "bits": 64
+    },
+    "client": {
+      "name": "Internet Explorer",
+      "modus": null,
+      "version": "11.0.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Trident",
@@ -536,15 +478,8 @@
         "touch": false,
         "size": null
       },
-      "type": "desktop"
-    },
-    "client": {
-      "name": "Windows Live Mail",
-      "modus": null,
-      "version": "7.0.0",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "email-client"
+      "type": "desktop",
+      "ismobile": false
     },
     "os": {
       "name": "Windows NT 6.2",
@@ -552,6 +487,15 @@
       "version": "6.2.0",
       "manufacturer": "microsoft",
       "bits": 64
+    },
+    "client": {
+      "name": "Windows Live Mail",
+      "modus": null,
+      "version": "7.0.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "email-client",
+      "isbot": false
     },
     "engine": {
       "name": "Trident",
@@ -576,15 +520,8 @@
         "touch": false,
         "size": null
       },
-      "type": "desktop"
-    },
-    "client": {
-      "name": "Windows Live Mail",
-      "modus": null,
-      "version": "7.0.0",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "email-client"
+      "type": "desktop",
+      "ismobile": false
     },
     "os": {
       "name": "Windows NT 6.1",
@@ -592,6 +529,15 @@
       "version": "6.1.0",
       "manufacturer": "microsoft",
       "bits": 64
+    },
+    "client": {
+      "name": "Windows Live Mail",
+      "modus": null,
+      "version": "7.0.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "email-client",
+      "isbot": false
     },
     "engine": {
       "name": "Trident",
@@ -616,15 +562,8 @@
         "touch": false,
         "size": null
       },
-      "type": "desktop"
-    },
-    "client": {
-      "name": "Outlook",
-      "modus": null,
-      "version": "14.0.7165",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "email-client"
+      "type": "desktop",
+      "ismobile": false
     },
     "os": {
       "name": "Windows NT 6.1",
@@ -632,6 +571,15 @@
       "version": "6.1.0",
       "manufacturer": "microsoft",
       "bits": 64
+    },
+    "client": {
+      "name": "Outlook",
+      "modus": null,
+      "version": "14.0.7165",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "email-client",
+      "isbot": false
     },
     "engine": {
       "name": "Trident",
@@ -656,15 +604,8 @@
         "touch": false,
         "size": null
       },
-      "type": "desktop"
-    },
-    "client": {
-      "name": "Outlook",
-      "modus": null,
-      "version": "15.0.4771",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "email-client"
+      "type": "desktop",
+      "ismobile": false
     },
     "os": {
       "name": "Windows NT 6.3",
@@ -672,6 +613,15 @@
       "version": "6.3.0",
       "manufacturer": "microsoft",
       "bits": 64
+    },
+    "client": {
+      "name": "Outlook",
+      "modus": null,
+      "version": "15.0.4771",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "email-client",
+      "isbot": false
     },
     "engine": {
       "name": "Trident",
@@ -696,15 +646,8 @@
         "touch": false,
         "size": null
       },
-      "type": "desktop"
-    },
-    "client": {
-      "name": "Outlook",
-      "modus": null,
-      "version": "15.0.4771",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "email-client"
+      "type": "desktop",
+      "ismobile": false
     },
     "os": {
       "name": "Windows NT 10.0",
@@ -712,6 +655,15 @@
       "version": "10.0.0",
       "manufacturer": "microsoft",
       "bits": 64
+    },
+    "client": {
+      "name": "Outlook",
+      "modus": null,
+      "version": "15.0.4771",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "email-client",
+      "isbot": false
     },
     "engine": {
       "name": "Trident",
@@ -736,15 +688,8 @@
         "touch": false,
         "size": null
       },
-      "type": "desktop"
-    },
-    "client": {
-      "name": "Outlook",
-      "modus": null,
-      "version": "14.0.7162",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "email-client"
+      "type": "desktop",
+      "ismobile": false
     },
     "os": {
       "name": "Windows NT 6.2",
@@ -753,49 +698,18 @@
       "manufacturer": "microsoft",
       "bits": 64
     },
+    "client": {
+      "name": "Outlook",
+      "modus": null,
+      "version": "14.0.7162",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "email-client",
+      "isbot": false
+    },
     "engine": {
       "name": "Trident",
       "version": "7.0.0",
-      "manufacturer": "microsoft"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; MAFS; ms-office; MSOffice 14)"
-    },
-    "device": {
-      "deviceName": "PC",
-      "marketingName": "PC",
-      "manufacturer": "fujitsu",
-      "brand": "fujitsu",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop"
-    },
-    "client": {
-      "name": "Office",
-      "modus": null,
-      "version": "14.0.0",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Windows NT 6.1",
-      "marketingName": "Windows 7",
-      "version": "6.1.0",
-      "manufacturer": "microsoft",
-      "bits": 64
-    },
-    "engine": {
-      "name": "Trident",
-      "version": "5.0.0",
       "manufacturer": "microsoft"
     }
   },
@@ -816,15 +730,8 @@
         "touch": false,
         "size": null
       },
-      "type": "desktop"
-    },
-    "client": {
-      "name": "AOL Desktop",
-      "modus": null,
-      "version": null,
-      "manufacturer": "aol",
-      "bits": null,
-      "type": "application"
+      "type": "desktop",
+      "ismobile": false
     },
     "os": {
       "name": "Windows NT 6.1",
@@ -832,6 +739,15 @@
       "version": "6.1.0",
       "manufacturer": "microsoft",
       "bits": 64
+    },
+    "client": {
+      "name": "AOL Desktop",
+      "modus": null,
+      "version": null,
+      "manufacturer": "aol",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "Trident",
@@ -856,15 +772,8 @@
         "touch": false,
         "size": null
       },
-      "type": "desktop"
-    },
-    "client": {
-      "name": "Outlook",
-      "modus": null,
-      "version": "15.0.4727",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "email-client"
+      "type": "desktop",
+      "ismobile": false
     },
     "os": {
       "name": "Windows NT 6.2",
@@ -873,45 +782,14 @@
       "manufacturer": "microsoft",
       "bits": 64
     },
-    "engine": {
-      "name": "Trident",
-      "version": "7.0.0",
-      "manufacturer": "microsoft"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; MAFS; AskTbAVR-4/5.15.26.45268; BRI/2; GWX:QUALIFIED; ms-office; MSOffice 14)"
-    },
-    "device": {
-      "deviceName": "PC",
-      "marketingName": "PC",
-      "manufacturer": "fujitsu",
-      "brand": "fujitsu",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop"
-    },
     "client": {
-      "name": "Office",
+      "name": "Outlook",
       "modus": null,
-      "version": "14.0.0",
+      "version": "15.0.4727",
       "manufacturer": "microsoft",
       "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Windows NT 6.1",
-      "marketingName": "Windows 7",
-      "version": "6.1.0",
-      "manufacturer": "microsoft",
-      "bits": 64
+      "type": "email-client",
+      "isbot": false
     },
     "engine": {
       "name": "Trident",
@@ -936,15 +814,8 @@
         "touch": false,
         "size": null
       },
-      "type": "desktop"
-    },
-    "client": {
-      "name": "Lunascape",
-      "modus": null,
-      "version": "6.9.3.27400",
-      "manufacturer": "lunascape",
-      "bits": null,
-      "type": "browser"
+      "type": "desktop",
+      "ismobile": false
     },
     "os": {
       "name": "Windows NT 6.1",
@@ -952,6 +823,15 @@
       "version": "6.1.0",
       "manufacturer": "microsoft",
       "bits": 64
+    },
+    "client": {
+      "name": "Lunascape",
+      "modus": null,
+      "version": "6.9.3.27400",
+      "manufacturer": "lunascape",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Trident",
@@ -976,15 +856,8 @@
         "touch": false,
         "size": null
       },
-      "type": "desktop"
-    },
-    "client": {
-      "name": "Windows Live Mail",
-      "modus": null,
-      "version": "7.0.0",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "email-client"
+      "type": "desktop",
+      "ismobile": false
     },
     "os": {
       "name": "Windows NT 6.1",
@@ -992,6 +865,15 @@
       "version": "6.1.0",
       "manufacturer": "microsoft",
       "bits": 64
+    },
+    "client": {
+      "name": "Windows Live Mail",
+      "modus": null,
+      "version": "7.0.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "email-client",
+      "isbot": false
     },
     "engine": {
       "name": "Trident",
@@ -1016,15 +898,8 @@
         "touch": false,
         "size": null
       },
-      "type": "desktop"
-    },
-    "client": {
-      "name": "Outlook",
-      "modus": null,
-      "version": "15.0.4727",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "email-client"
+      "type": "desktop",
+      "ismobile": false
     },
     "os": {
       "name": "Windows NT 6.1",
@@ -1032,6 +907,15 @@
       "version": "6.1.0",
       "manufacturer": "microsoft",
       "bits": 64
+    },
+    "client": {
+      "name": "Outlook",
+      "modus": null,
+      "version": "15.0.4727",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "email-client",
+      "isbot": false
     },
     "engine": {
       "name": "Trident",
@@ -1056,15 +940,8 @@
         "touch": false,
         "size": null
       },
-      "type": "desktop"
-    },
-    "client": {
-      "name": "Internet Explorer",
-      "modus": null,
-      "version": "10.0.0",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "browser"
+      "type": "desktop",
+      "ismobile": false
     },
     "os": {
       "name": "Windows NT 6.2",
@@ -1073,49 +950,18 @@
       "manufacturer": "microsoft",
       "bits": 64
     },
+    "client": {
+      "name": "Internet Explorer",
+      "modus": null,
+      "version": "10.0.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
     "engine": {
       "name": "Trident",
       "version": "6.0.0",
-      "manufacturer": "microsoft"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; MAFS; MSOffice 12)"
-    },
-    "device": {
-      "deviceName": "PC",
-      "marketingName": "PC",
-      "manufacturer": "fujitsu",
-      "brand": "fujitsu",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop"
-    },
-    "client": {
-      "name": "Office",
-      "modus": null,
-      "version": "12.0.0",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Windows NT 6.1",
-      "marketingName": "Windows 7",
-      "version": "6.1.0",
-      "manufacturer": "microsoft",
-      "bits": 64
-    },
-    "engine": {
-      "name": "Trident",
-      "version": "5.0.0",
       "manufacturer": "microsoft"
     }
   },
@@ -1136,15 +982,8 @@
         "touch": false,
         "size": null
       },
-      "type": "desktop"
-    },
-    "client": {
-      "name": "Outlook",
-      "modus": null,
-      "version": "14.0.7164",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "email-client"
+      "type": "desktop",
+      "ismobile": false
     },
     "os": {
       "name": "Windows NT 6.1",
@@ -1152,6 +991,15 @@
       "version": "6.1.0",
       "manufacturer": "microsoft",
       "bits": 64
+    },
+    "client": {
+      "name": "Outlook",
+      "modus": null,
+      "version": "14.0.7164",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "email-client",
+      "isbot": false
     },
     "engine": {
       "name": "Trident",
@@ -1161,7 +1009,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/6.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; MAFS; InfoPath.2; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; MSOffice 12)"
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; MAFS; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; InfoPath.2; anonymized by Abelssoft 735634108; MSOffice 12)"
     },
     "device": {
       "deviceName": "PC",
@@ -1176,15 +1024,8 @@
         "touch": false,
         "size": null
       },
-      "type": "desktop"
-    },
-    "client": {
-      "name": "Office",
-      "modus": null,
-      "version": "12.0.0",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "application"
+      "type": "desktop",
+      "ismobile": false
     },
     "os": {
       "name": "Windows NT 6.1",
@@ -1193,9 +1034,18 @@
       "manufacturer": "microsoft",
       "bits": 64
     },
+    "client": {
+      "name": "AntiBrowserSpy",
+      "modus": null,
+      "version": null,
+      "manufacturer": "abelssoft",
+      "bits": null,
+      "type": "application",
+      "isbot": false
+    },
     "engine": {
       "name": "Trident",
-      "version": "6.0.0",
+      "version": "7.0.0",
       "manufacturer": "microsoft"
     }
   },
@@ -1216,15 +1066,8 @@
         "touch": false,
         "size": null
       },
-      "type": "desktop"
-    },
-    "client": {
-      "name": "Outlook",
-      "modus": null,
-      "version": "15.0.4745",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "email-client"
+      "type": "desktop",
+      "ismobile": false
     },
     "os": {
       "name": "Windows NT 6.1",
@@ -1232,6 +1075,15 @@
       "version": "6.1.0",
       "manufacturer": "microsoft",
       "bits": 64
+    },
+    "client": {
+      "name": "Outlook",
+      "modus": null,
+      "version": "15.0.4745",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "email-client",
+      "isbot": false
     },
     "engine": {
       "name": "Trident",
@@ -1256,15 +1108,8 @@
         "touch": false,
         "size": null
       },
-      "type": "desktop"
-    },
-    "client": {
-      "name": "T-Online Browser",
-      "modus": null,
-      "version": "6.13.0",
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "browser"
+      "type": "desktop",
+      "ismobile": false
     },
     "os": {
       "name": "Windows NT 6.1",
@@ -1272,6 +1117,15 @@
       "version": "6.1.0",
       "manufacturer": "microsoft",
       "bits": 64
+    },
+    "client": {
+      "name": "T-Online Browser",
+      "modus": null,
+      "version": "6.13.0",
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Trident",
@@ -1296,15 +1150,8 @@
         "touch": false,
         "size": null
       },
-      "type": "desktop"
-    },
-    "client": {
-      "name": "Zune",
-      "modus": null,
-      "version": "4.7.0",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "multimedia-player"
+      "type": "desktop",
+      "ismobile": false
     },
     "os": {
       "name": "Windows NT 6.1",
@@ -1312,6 +1159,15 @@
       "version": "6.1.0",
       "manufacturer": "microsoft",
       "bits": 64
+    },
+    "client": {
+      "name": "Zune",
+      "modus": null,
+      "version": "4.7.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "multimedia-player",
+      "isbot": false
     },
     "engine": {
       "name": "Trident",
@@ -1336,7 +1192,15 @@
         "touch": false,
         "size": null
       },
-      "type": "desktop"
+      "type": "desktop",
+      "ismobile": false
+    },
+    "os": {
+      "name": "Windows NT 6.2",
+      "marketingName": "Windows 8",
+      "version": "6.2.0",
+      "manufacturer": "microsoft",
+      "bits": 64
     },
     "client": {
       "name": "T-Online Browser",
@@ -1344,54 +1208,8 @@
       "version": "6.13.0",
       "manufacturer": "unknown",
       "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Windows NT 6.2",
-      "marketingName": "Windows 8",
-      "version": "6.2.0",
-      "manufacturer": "microsoft",
-      "bits": 64
-    },
-    "engine": {
-      "name": "Trident",
-      "version": "7.0.0",
-      "manufacturer": "microsoft"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.2; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; MAFSJS; ms-office; MSOffice 14)"
-    },
-    "device": {
-      "deviceName": "PC",
-      "marketingName": "PC",
-      "manufacturer": "fujitsu",
-      "brand": "fujitsu",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop"
-    },
-    "client": {
-      "name": "Office",
-      "modus": null,
-      "version": "14.0.0",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Windows NT 6.2",
-      "marketingName": "Windows 8",
-      "version": "6.2.0",
-      "manufacturer": "microsoft",
-      "bits": 64
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Trident",
@@ -1416,15 +1234,8 @@
         "touch": false,
         "size": null
       },
-      "type": "desktop"
-    },
-    "client": {
-      "name": "Windows Live Mail",
-      "modus": null,
-      "version": "7.0.0",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "email-client"
+      "type": "desktop",
+      "ismobile": false
     },
     "os": {
       "name": "Windows NT 6.2",
@@ -1432,6 +1243,15 @@
       "version": "6.2.0",
       "manufacturer": "microsoft",
       "bits": 64
+    },
+    "client": {
+      "name": "Windows Live Mail",
+      "modus": null,
+      "version": "7.0.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "email-client",
+      "isbot": false
     },
     "engine": {
       "name": "Trident",
@@ -1456,15 +1276,8 @@
         "touch": false,
         "size": null
       },
-      "type": "desktop"
-    },
-    "client": {
-      "name": "Outlook",
-      "modus": null,
-      "version": "14.0.6025",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "email-client"
+      "type": "desktop",
+      "ismobile": false
     },
     "os": {
       "name": "Windows NT 6.2",
@@ -1472,6 +1285,15 @@
       "version": "6.2.0",
       "manufacturer": "microsoft",
       "bits": 64
+    },
+    "client": {
+      "name": "Outlook",
+      "modus": null,
+      "version": "14.0.6025",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "email-client",
+      "isbot": false
     },
     "engine": {
       "name": "Trident",
@@ -1496,15 +1318,8 @@
         "touch": false,
         "size": null
       },
-      "type": "desktop"
-    },
-    "client": {
-      "name": "Avant",
-      "modus": null,
-      "version": null,
-      "manufacturer": "avant-force",
-      "bits": null,
-      "type": "browser"
+      "type": "desktop",
+      "ismobile": false
     },
     "os": {
       "name": "Windows NT 10.0",
@@ -1513,45 +1328,14 @@
       "manufacturer": "microsoft",
       "bits": 64
     },
-    "engine": {
-      "name": "Trident",
-      "version": "7.0.0",
-      "manufacturer": "microsoft"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.2; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; MAFSJS; MSOffice 12)"
-    },
-    "device": {
-      "deviceName": "PC",
-      "marketingName": "PC",
-      "manufacturer": "fujitsu",
-      "brand": "fujitsu",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop"
-    },
     "client": {
-      "name": "Office",
+      "name": "Avant",
       "modus": null,
-      "version": "12.0.0",
-      "manufacturer": "microsoft",
+      "version": null,
+      "manufacturer": "avant-force",
       "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Windows NT 6.2",
-      "marketingName": "Windows 8",
-      "version": "6.2.0",
-      "manufacturer": "microsoft",
-      "bits": 64
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Trident",
@@ -1576,15 +1360,8 @@
         "touch": false,
         "size": null
       },
-      "type": "desktop"
-    },
-    "client": {
-      "name": "Outlook",
-      "modus": null,
-      "version": "14.0.7113",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "email-client"
+      "type": "desktop",
+      "ismobile": false
     },
     "os": {
       "name": "Windows NT 6.2",
@@ -1592,6 +1369,15 @@
       "version": "6.2.0",
       "manufacturer": "microsoft",
       "bits": 64
+    },
+    "client": {
+      "name": "Outlook",
+      "modus": null,
+      "version": "14.0.7113",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "email-client",
+      "isbot": false
     },
     "engine": {
       "name": "Trident",
@@ -1616,15 +1402,8 @@
         "touch": false,
         "size": null
       },
-      "type": "desktop"
-    },
-    "client": {
-      "name": "Outlook",
-      "modus": null,
-      "version": "15.0.4667",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "email-client"
+      "type": "desktop",
+      "ismobile": false
     },
     "os": {
       "name": "Windows NT 6.2",
@@ -1633,50 +1412,19 @@
       "manufacturer": "microsoft",
       "bits": 64
     },
+    "client": {
+      "name": "Outlook",
+      "modus": null,
+      "version": "15.0.4667",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "email-client",
+      "isbot": false
+    },
     "engine": {
       "name": "Trident",
       "version": "6.0.0",
       "manufacturer": "microsoft"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; MAFS; FunWebProducts; AlexaToolbar/amzni-3.0; BRI/2)"
-    },
-    "device": {
-      "deviceName": "PC",
-      "marketingName": "PC",
-      "manufacturer": "fujitsu",
-      "brand": "fujitsu",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop"
-    },
-    "client": {
-      "name": "Web Pro",
-      "modus": null,
-      "version": null,
-      "manufacturer": "palm",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Windows NT 6.1",
-      "marketingName": "Windows 7",
-      "version": "6.1.0",
-      "manufacturer": "microsoft",
-      "bits": 64
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
     }
   },
   {
@@ -1696,15 +1444,8 @@
         "touch": false,
         "size": null
       },
-      "type": "desktop"
-    },
-    "client": {
-      "name": "Avant",
-      "modus": null,
-      "version": null,
-      "manufacturer": "avant-force",
-      "bits": null,
-      "type": "browser"
+      "type": "desktop",
+      "ismobile": false
     },
     "os": {
       "name": "Windows NT 6.1",
@@ -1713,49 +1454,18 @@
       "manufacturer": "microsoft",
       "bits": 64
     },
+    "client": {
+      "name": "Avant",
+      "modus": null,
+      "version": null,
+      "manufacturer": "avant-force",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
     "engine": {
       "name": "Trident",
       "version": "7.0.0",
-      "manufacturer": "microsoft"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.2; WOW64; Trident/6.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; InfoPath.2; MAFSJS; MSOffice 12)"
-    },
-    "device": {
-      "deviceName": "PC",
-      "marketingName": "PC",
-      "manufacturer": "fujitsu",
-      "brand": "fujitsu",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop"
-    },
-    "client": {
-      "name": "Office",
-      "modus": null,
-      "version": "12.0.0",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Windows NT 6.2",
-      "marketingName": "Windows 8",
-      "version": "6.2.0",
-      "manufacturer": "microsoft",
-      "bits": 64
-    },
-    "engine": {
-      "name": "Trident",
-      "version": "6.0.0",
       "manufacturer": "microsoft"
     }
   },
@@ -1776,15 +1486,8 @@
         "touch": false,
         "size": null
       },
-      "type": "desktop"
-    },
-    "client": {
-      "name": "Internet Explorer with Chromeframe",
-      "modus": null,
-      "version": "10.0.0",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "browser"
+      "type": "desktop",
+      "ismobile": false
     },
     "os": {
       "name": "Windows NT 6.2",
@@ -1792,6 +1495,15 @@
       "version": "6.2.0",
       "manufacturer": "microsoft",
       "bits": 64
+    },
+    "client": {
+      "name": "Internet Explorer with Chromeframe",
+      "modus": null,
+      "version": "10.0.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -1816,15 +1528,8 @@
         "touch": false,
         "size": null
       },
-      "type": "desktop"
-    },
-    "client": {
-      "name": "Outlook",
-      "modus": null,
-      "version": "14.0.7113",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "email-client"
+      "type": "desktop",
+      "ismobile": false
     },
     "os": {
       "name": "Windows NT 6.1",
@@ -1832,6 +1537,15 @@
       "version": "6.1.0",
       "manufacturer": "microsoft",
       "bits": 64
+    },
+    "client": {
+      "name": "Outlook",
+      "modus": null,
+      "version": "14.0.7113",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "email-client",
+      "isbot": false
     },
     "engine": {
       "name": "Trident",
@@ -1856,7 +1570,15 @@
         "touch": false,
         "size": null
       },
-      "type": "desktop"
+      "type": "desktop",
+      "ismobile": false
+    },
+    "os": {
+      "name": "Windows NT 6.1",
+      "marketingName": "Windows 7",
+      "version": "6.1.0",
+      "manufacturer": "microsoft",
+      "bits": 64
     },
     "client": {
       "name": "Zune",
@@ -1864,98 +1586,12 @@
       "version": "4.7.0",
       "manufacturer": "microsoft",
       "bits": null,
-      "type": "multimedia-player"
-    },
-    "os": {
-      "name": "Windows NT 6.1",
-      "marketingName": "Windows 7",
-      "version": "6.1.0",
-      "manufacturer": "microsoft",
-      "bits": 64
+      "type": "multimedia-player",
+      "isbot": false
     },
     "engine": {
       "name": "Trident",
       "version": "6.0.0",
-      "manufacturer": "microsoft"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/4.0; GTB7.5; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; MAFS; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; MSOffice 12)"
-    },
-    "device": {
-      "deviceName": "PC",
-      "marketingName": "PC",
-      "manufacturer": "fujitsu",
-      "brand": "fujitsu",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop"
-    },
-    "client": {
-      "name": "Office",
-      "modus": null,
-      "version": "12.0.0",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Windows NT 6.1",
-      "marketingName": "Windows 7",
-      "version": "6.1.0",
-      "manufacturer": "microsoft",
-      "bits": 64
-    },
-    "engine": {
-      "name": "Trident",
-      "version": "4.0.0",
-      "manufacturer": "microsoft"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; MAFS; .NET4.0C; ms-office; MSOffice 14)"
-    },
-    "device": {
-      "deviceName": "PC",
-      "marketingName": "PC",
-      "manufacturer": "fujitsu",
-      "brand": "fujitsu",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop"
-    },
-    "client": {
-      "name": "Office",
-      "modus": null,
-      "version": "14.0.0",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Windows NT 6.1",
-      "marketingName": "Windows 7",
-      "version": "6.1.0",
-      "manufacturer": "microsoft",
-      "bits": null
-    },
-    "engine": {
-      "name": "Trident",
-      "version": "4.0.0",
       "manufacturer": "microsoft"
     }
   },
@@ -1976,15 +1612,8 @@
         "touch": false,
         "size": null
       },
-      "type": "desktop"
-    },
-    "client": {
-      "name": "Windows Live Mail",
-      "modus": null,
-      "version": "7.0.0",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "email-client"
+      "type": "desktop",
+      "ismobile": false
     },
     "os": {
       "name": "Windows NT 6.1",
@@ -1992,6 +1621,15 @@
       "version": "6.1.0",
       "manufacturer": "microsoft",
       "bits": null
+    },
+    "client": {
+      "name": "Windows Live Mail",
+      "modus": null,
+      "version": "7.0.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "email-client",
+      "isbot": false
     },
     "engine": {
       "name": "Trident",
@@ -2016,15 +1654,8 @@
         "touch": false,
         "size": null
       },
-      "type": "desktop"
-    },
-    "client": {
-      "name": "Internet Explorer with Chromeframe",
-      "modus": null,
-      "version": "11.0.0",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "browser"
+      "type": "desktop",
+      "ismobile": false
     },
     "os": {
       "name": "Windows NT 6.3",
@@ -2032,6 +1663,15 @@
       "version": "6.3.0",
       "manufacturer": "microsoft",
       "bits": 64
+    },
+    "client": {
+      "name": "Internet Explorer with Chromeframe",
+      "modus": null,
+      "version": "11.0.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -2056,7 +1696,15 @@
         "touch": false,
         "size": null
       },
-      "type": "desktop"
+      "type": "desktop",
+      "ismobile": false
+    },
+    "os": {
+      "name": "Windows NT 6.1",
+      "marketingName": "Windows 7",
+      "version": "6.1.0",
+      "manufacturer": "microsoft",
+      "bits": 64
     },
     "client": {
       "name": "Zune",
@@ -2064,98 +1712,12 @@
       "version": "4.7.0",
       "manufacturer": "microsoft",
       "bits": null,
-      "type": "multimedia-player"
-    },
-    "os": {
-      "name": "Windows NT 6.1",
-      "marketingName": "Windows 7",
-      "version": "6.1.0",
-      "manufacturer": "microsoft",
-      "bits": 64
+      "type": "multimedia-player",
+      "isbot": false
     },
     "engine": {
       "name": "Trident",
       "version": "5.0.0",
-      "manufacturer": "microsoft"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/6.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; MAFSJS; ms-office; MSOffice 15)"
-    },
-    "device": {
-      "deviceName": "PC",
-      "marketingName": "PC",
-      "manufacturer": "fujitsu",
-      "brand": "fujitsu",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop"
-    },
-    "client": {
-      "name": "Office",
-      "modus": null,
-      "version": "15.0.0",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Windows NT 6.1",
-      "marketingName": "Windows 7",
-      "version": "6.1.0",
-      "manufacturer": "microsoft",
-      "bits": 64
-    },
-    "engine": {
-      "name": "Trident",
-      "version": "6.0.0",
-      "manufacturer": "microsoft"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.2; WOW64; Trident/6.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; Tablet PC 2.0; MAFSJS; ms-office; MSOffice 14)"
-    },
-    "device": {
-      "deviceName": "PC",
-      "marketingName": "PC",
-      "manufacturer": "fujitsu",
-      "brand": "fujitsu",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop"
-    },
-    "client": {
-      "name": "Office",
-      "modus": null,
-      "version": "14.0.0",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Windows NT 6.2",
-      "marketingName": "Windows 8",
-      "version": "6.2.0",
-      "manufacturer": "microsoft",
-      "bits": 64
-    },
-    "engine": {
-      "name": "Trident",
-      "version": "6.0.0",
       "manufacturer": "microsoft"
     }
   },
@@ -2176,7 +1738,15 @@
         "touch": false,
         "size": null
       },
-      "type": "desktop"
+      "type": "desktop",
+      "ismobile": false
+    },
+    "os": {
+      "name": "Windows NT 6.1",
+      "marketingName": "Windows 7",
+      "version": "6.1.0",
+      "manufacturer": "microsoft",
+      "bits": 64
     },
     "client": {
       "name": "T-Online Browser",
@@ -2184,54 +1754,8 @@
       "version": "6.13.0",
       "manufacturer": "unknown",
       "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Windows NT 6.1",
-      "marketingName": "Windows 7",
-      "version": "6.1.0",
-      "manufacturer": "microsoft",
-      "bits": 64
-    },
-    "engine": {
-      "name": "Trident",
-      "version": "6.0.0",
-      "manufacturer": "microsoft"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/6.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; MAFS; AskTbORJ/5.15.2.23037; ms-office; MSOffice 14)"
-    },
-    "device": {
-      "deviceName": "PC",
-      "marketingName": "PC",
-      "manufacturer": "fujitsu",
-      "brand": "fujitsu",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop"
-    },
-    "client": {
-      "name": "Office",
-      "modus": null,
-      "version": "14.0.0",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Windows NT 6.1",
-      "marketingName": "Windows 7",
-      "version": "6.1.0",
-      "manufacturer": "microsoft",
-      "bits": 64
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Trident",
@@ -2256,15 +1780,8 @@
         "touch": false,
         "size": null
       },
-      "type": "desktop"
-    },
-    "client": {
-      "name": "Windows Live Mail",
-      "modus": null,
-      "version": "7.0.0",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "email-client"
+      "type": "desktop",
+      "ismobile": false
     },
     "os": {
       "name": "Windows NT 6.2",
@@ -2272,6 +1789,15 @@
       "version": "6.2.0",
       "manufacturer": "microsoft",
       "bits": 64
+    },
+    "client": {
+      "name": "Windows Live Mail",
+      "modus": null,
+      "version": "7.0.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "email-client",
+      "isbot": false
     },
     "engine": {
       "name": "Trident",
@@ -2296,15 +1822,8 @@
         "touch": false,
         "size": null
       },
-      "type": "desktop"
-    },
-    "client": {
-      "name": "AOL Desktop",
-      "modus": null,
-      "version": null,
-      "manufacturer": "aol",
-      "bits": null,
-      "type": "application"
+      "type": "desktop",
+      "ismobile": false
     },
     "os": {
       "name": "Windows NT 6.1",
@@ -2312,6 +1831,15 @@
       "version": "6.1.0",
       "manufacturer": "microsoft",
       "bits": 64
+    },
+    "client": {
+      "name": "AOL Desktop",
+      "modus": null,
+      "version": null,
+      "manufacturer": "aol",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "Trident",
@@ -2336,15 +1864,8 @@
         "touch": false,
         "size": null
       },
-      "type": "desktop"
-    },
-    "client": {
-      "name": "Maxthon",
-      "modus": null,
-      "version": "3.0.0",
-      "manufacturer": "maxthon",
-      "bits": null,
-      "type": "browser"
+      "type": "desktop",
+      "ismobile": false
     },
     "os": {
       "name": "Windows NT 6.1",
@@ -2352,6 +1873,15 @@
       "version": "6.1.0",
       "manufacturer": "microsoft",
       "bits": 64
+    },
+    "client": {
+      "name": "Maxthon",
+      "modus": null,
+      "version": "3.0.0",
+      "manufacturer": "maxthon",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Trident",
@@ -2376,15 +1906,8 @@
         "touch": false,
         "size": null
       },
-      "type": "desktop"
-    },
-    "client": {
-      "name": "Maxthon",
-      "modus": null,
-      "version": "3.0.0",
-      "manufacturer": "maxthon",
-      "bits": null,
-      "type": "browser"
+      "type": "desktop",
+      "ismobile": false
     },
     "os": {
       "name": "Windows NT 6.1",
@@ -2392,6 +1915,15 @@
       "version": "6.1.0",
       "manufacturer": "microsoft",
       "bits": 64
+    },
+    "client": {
+      "name": "Maxthon",
+      "modus": null,
+      "version": "3.0.0",
+      "manufacturer": "maxthon",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Trident",
@@ -2416,15 +1948,8 @@
         "touch": false,
         "size": null
       },
-      "type": "desktop"
-    },
-    "client": {
-      "name": "Avant",
-      "modus": null,
-      "version": null,
-      "manufacturer": "avant-force",
-      "bits": null,
-      "type": "browser"
+      "type": "desktop",
+      "ismobile": false
     },
     "os": {
       "name": "Windows NT 6.1",
@@ -2432,6 +1957,57 @@
       "version": "6.1.0",
       "manufacturer": "microsoft",
       "bits": 64
+    },
+    "client": {
+      "name": "Avant",
+      "modus": null,
+      "version": null,
+      "manufacturer": "avant-force",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Trident",
+      "version": "5.0.0",
+      "manufacturer": "microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; MAFS; BRI/2; tb-webde/2.1.0; anonymized by Abelssoft 1738045852)"
+    },
+    "device": {
+      "deviceName": "PC",
+      "marketingName": "PC",
+      "manufacturer": "fujitsu",
+      "brand": "fujitsu",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false
+    },
+    "os": {
+      "name": "Windows NT 6.1",
+      "marketingName": "Windows 7",
+      "version": "6.1.0",
+      "manufacturer": "microsoft",
+      "bits": 64
+    },
+    "client": {
+      "name": "AntiBrowserSpy",
+      "modus": null,
+      "version": null,
+      "manufacturer": "abelssoft",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "Trident",
@@ -2456,15 +2032,8 @@
         "touch": false,
         "size": null
       },
-      "type": "desktop"
-    },
-    "client": {
-      "name": "Internet Explorer",
-      "modus": null,
-      "version": "8.0.0",
-      "manufacturer": "microsoft",
-      "bits": 64,
-      "type": "browser"
+      "type": "desktop",
+      "ismobile": false
     },
     "os": {
       "name": "Windows NT 6.2",
@@ -2472,6 +2041,15 @@
       "version": "6.2.0",
       "manufacturer": "microsoft",
       "bits": 64
+    },
+    "client": {
+      "name": "Internet Explorer",
+      "modus": null,
+      "version": "8.0.0",
+      "manufacturer": "microsoft",
+      "bits": 64,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Trident",
@@ -2496,15 +2074,8 @@
         "touch": false,
         "size": null
       },
-      "type": "desktop"
-    },
-    "client": {
-      "name": "AOL Desktop",
-      "modus": null,
-      "version": null,
-      "manufacturer": "aol",
-      "bits": null,
-      "type": "application"
+      "type": "desktop",
+      "ismobile": false
     },
     "os": {
       "name": "Windows NT 6.1",
@@ -2512,6 +2083,15 @@
       "version": "6.1.0",
       "manufacturer": "microsoft",
       "bits": 64
+    },
+    "client": {
+      "name": "AOL Desktop",
+      "modus": null,
+      "version": null,
+      "manufacturer": "aol",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "Trident",
@@ -2536,15 +2116,8 @@
         "touch": false,
         "size": null
       },
-      "type": "desktop"
-    },
-    "client": {
-      "name": "Zune",
-      "modus": null,
-      "version": "4.7.0",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "multimedia-player"
+      "type": "desktop",
+      "ismobile": false
     },
     "os": {
       "name": "Windows NT 6.2",
@@ -2552,6 +2125,15 @@
       "version": "6.2.0",
       "manufacturer": "microsoft",
       "bits": 64
+    },
+    "client": {
+      "name": "Zune",
+      "modus": null,
+      "version": "4.7.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "multimedia-player",
+      "isbot": false
     },
     "engine": {
       "name": "Trident",
@@ -2576,15 +2158,8 @@
         "touch": false,
         "size": null
       },
-      "type": "desktop"
-    },
-    "client": {
-      "name": "Zune",
-      "modus": null,
-      "version": "4.7.0",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "multimedia-player"
+      "type": "desktop",
+      "ismobile": false
     },
     "os": {
       "name": "Windows NT 6.1",
@@ -2592,6 +2167,15 @@
       "version": "6.1.0",
       "manufacturer": "microsoft",
       "bits": 64
+    },
+    "client": {
+      "name": "Zune",
+      "modus": null,
+      "version": "4.7.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "multimedia-player",
+      "isbot": false
     },
     "engine": {
       "name": "Trident",
@@ -2616,15 +2200,8 @@
         "touch": false,
         "size": null
       },
-      "type": "desktop"
-    },
-    "client": {
-      "name": "Avant",
-      "modus": null,
-      "version": null,
-      "manufacturer": "avant-force",
-      "bits": null,
-      "type": "browser"
+      "type": "desktop",
+      "ismobile": false
     },
     "os": {
       "name": "Windows NT 6.2",
@@ -2633,49 +2210,18 @@
       "manufacturer": "microsoft",
       "bits": 64
     },
+    "client": {
+      "name": "Avant",
+      "modus": null,
+      "version": null,
+      "manufacturer": "avant-force",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
     "engine": {
       "name": "Trident",
       "version": "6.0.0",
-      "manufacturer": "microsoft"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; MAFS; AskTbAVR-W1/5.12.5.17700; InfoPath.2; Internet Explorer anonymized by Abelssoft 1074554680; Crazy Browser 3.0.5)"
-    },
-    "device": {
-      "deviceName": "PC",
-      "marketingName": "PC",
-      "manufacturer": "fujitsu",
-      "brand": "fujitsu",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop"
-    },
-    "client": {
-      "name": "Crazy Browser",
-      "modus": null,
-      "version": "3.0.5",
-      "manufacturer": "crazy-browser",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Windows NT 6.1",
-      "marketingName": "Windows 7",
-      "version": "6.1.0",
-      "manufacturer": "microsoft",
-      "bits": 64
-    },
-    "engine": {
-      "name": "Trident",
-      "version": "5.0.0",
       "manufacturer": "microsoft"
     }
   },
@@ -2696,15 +2242,8 @@
         "touch": false,
         "size": null
       },
-      "type": "desktop"
-    },
-    "client": {
-      "name": "Outlook",
-      "modus": null,
-      "version": "16.0.9029",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "email-client"
+      "type": "desktop",
+      "ismobile": false
     },
     "os": {
       "name": "Windows NT 6.1",
@@ -2712,6 +2251,15 @@
       "version": "6.1.0",
       "manufacturer": "microsoft",
       "bits": 64
+    },
+    "client": {
+      "name": "Outlook",
+      "modus": null,
+      "version": "16.0.9029",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "email-client",
+      "isbot": false
     },
     "engine": {
       "name": "Trident",

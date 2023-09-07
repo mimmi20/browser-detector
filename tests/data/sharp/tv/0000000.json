@@ -16,15 +16,8 @@
         "touch": false,
         "size": null
       },
-      "type": "tv"
-    },
-    "client": {
-      "name": "Espial TV Browser",
-      "modus": null,
-      "version": "6.1.5",
-      "manufacturer": "espial-group",
-      "bits": null,
-      "type": "browser"
+      "type": "tv",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -32,6 +25,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Espial TV Browser",
+      "modus": null,
+      "version": "6.1.5",
+      "manufacturer": "espial-group",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -56,15 +58,8 @@
         "touch": false,
         "size": null
       },
-      "type": "tv"
-    },
-    "client": {
-      "name": "Opera",
-      "modus": null,
-      "version": "12.51.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
+      "type": "tv",
+      "ismobile": false
     },
     "os": {
       "name": "Linux",
@@ -72,6 +67,15 @@
       "version": null,
       "manufacturer": "linux-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "Opera",
+      "modus": null,
+      "version": "12.51.0",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Presto",
@@ -96,15 +100,8 @@
         "touch": false,
         "size": null
       },
-      "type": "tv"
-    },
-    "client": {
-      "name": "Darwin Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "browser"
+      "type": "tv",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -112,6 +109,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Darwin Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -136,15 +142,8 @@
         "touch": false,
         "size": null
       },
-      "type": "tv"
-    },
-    "client": {
-      "name": "Espial TV Browser",
-      "modus": null,
-      "version": "6.0.4",
-      "manufacturer": "espial-group",
-      "bits": null,
-      "type": "browser"
+      "type": "tv",
+      "ismobile": false
     },
     "os": {
       "name": "Linux",
@@ -152,6 +151,15 @@
       "version": null,
       "manufacturer": "linux-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "Espial TV Browser",
+      "modus": null,
+      "version": "6.0.4",
+      "manufacturer": "espial-group",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -176,15 +184,8 @@
         "touch": false,
         "size": null
       },
-      "type": "tv"
-    },
-    "client": {
-      "name": "NetFront",
-      "modus": null,
-      "version": "4.1.0",
-      "manufacturer": "access",
-      "bits": null,
-      "type": "browser"
+      "type": "tv",
+      "ismobile": false
     },
     "os": {
       "name": "Linux",
@@ -192,6 +193,15 @@
       "version": null,
       "manufacturer": "linux-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "NetFront",
+      "modus": null,
+      "version": "4.1.0",
+      "manufacturer": "access",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "NetFront",

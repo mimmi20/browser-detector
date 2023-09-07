@@ -16,15 +16,8 @@
         "touch": false,
         "size": null
       },
-      "type": "tv"
-    },
-    "client": {
-      "name": "ANTGalio",
-      "modus": null,
-      "version": "3.3.0.26.04",
-      "manufacturer": "ant",
-      "bits": null,
-      "type": "browser"
+      "type": "tv",
+      "ismobile": false
     },
     "os": {
       "name": "Linux",
@@ -32,6 +25,15 @@
       "version": null,
       "manufacturer": "linux-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "ANTGalio",
+      "modus": null,
+      "version": "3.3.0.26.04",
+      "manufacturer": "ant",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -56,15 +58,8 @@
         "touch": false,
         "size": null
       },
-      "type": "tv"
-    },
-    "client": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
+      "type": "tv",
+      "ismobile": false
     },
     "os": {
       "name": "Linux",
@@ -72,6 +67,15 @@
       "version": null,
       "manufacturer": "linux-foundation",
       "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -96,15 +100,8 @@
         "touch": false,
         "size": null
       },
-      "type": "tv"
-    },
-    "client": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
+      "type": "tv",
+      "ismobile": false
     },
     "os": {
       "name": "Linux",
@@ -112,6 +109,15 @@
       "version": null,
       "manufacturer": "linux-foundation",
       "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -136,15 +142,8 @@
         "touch": false,
         "size": null
       },
-      "type": "tv"
-    },
-    "client": {
-      "name": "Safari",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "apple",
-      "bits": null,
-      "type": "browser"
+      "type": "tv",
+      "ismobile": false
     },
     "os": {
       "name": "Maemo",
@@ -152,6 +151,15 @@
       "version": null,
       "manufacturer": "linux-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "Safari",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "apple",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -176,15 +184,8 @@
         "touch": false,
         "size": null
       },
-      "type": "tv"
-    },
-    "client": {
-      "name": "Safari",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "apple",
-      "bits": null,
-      "type": "browser"
+      "type": "tv",
+      "ismobile": false
     },
     "os": {
       "name": "Maemo",
@@ -192,6 +193,15 @@
       "version": null,
       "manufacturer": "linux-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "Safari",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "apple",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -216,15 +226,8 @@
         "touch": false,
         "size": null
       },
-      "type": "tv"
-    },
-    "client": {
-      "name": "Safari",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "apple",
-      "bits": null,
-      "type": "browser"
+      "type": "tv",
+      "ismobile": false
     },
     "os": {
       "name": "Maemo",
@@ -232,6 +235,15 @@
       "version": null,
       "manufacturer": "linux-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "Safari",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "apple",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -256,15 +268,8 @@
         "touch": false,
         "size": null
       },
-      "type": "tv"
-    },
-    "client": {
-      "name": "Safari",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "apple",
-      "bits": 64,
-      "type": "browser"
+      "type": "tv",
+      "ismobile": false
     },
     "os": {
       "name": "Linux",
@@ -272,6 +277,15 @@
       "version": null,
       "manufacturer": "linux-foundation",
       "bits": 64
+    },
+    "client": {
+      "name": "Safari",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "apple",
+      "bits": 64,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -296,15 +310,8 @@
         "touch": false,
         "size": null
       },
-      "type": "tv"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "29.0.1547.62",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "tv",
+      "ismobile": false
     },
     "os": {
       "name": "Android",
@@ -312,6 +319,15 @@
       "version": "4.2.2",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "29.0.1547.62",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -336,15 +352,8 @@
         "touch": false,
         "size": null
       },
-      "type": "tv"
-    },
-    "client": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
+      "type": "tv",
+      "ismobile": false
     },
     "os": {
       "name": "Linux",
@@ -352,6 +361,15 @@
       "version": null,
       "manufacturer": "linux-foundation",
       "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -376,15 +394,8 @@
         "touch": false,
         "size": 49.7
       },
-      "type": "tv"
-    },
-    "client": {
-      "name": "Dalvik",
-      "modus": null,
-      "version": "2.1.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
+      "type": "tv",
+      "ismobile": false
     },
     "os": {
       "name": "Android",
@@ -392,6 +403,15 @@
       "version": "7.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Dalvik",
+      "modus": null,
+      "version": "2.1.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -416,15 +436,8 @@
         "touch": false,
         "size": 49.7
       },
-      "type": "tv"
-    },
-    "client": {
-      "name": "Dalvik",
-      "modus": null,
-      "version": "2.1.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
+      "type": "tv",
+      "ismobile": false
     },
     "os": {
       "name": "Android",
@@ -432,6 +445,15 @@
       "version": "6.0.1",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Dalvik",
+      "modus": null,
+      "version": "2.1.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -456,15 +478,8 @@
         "touch": false,
         "size": 49.7
       },
-      "type": "tv"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "77.0.3865.92",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "tv",
+      "ismobile": false
     },
     "os": {
       "name": "Android",
@@ -472,6 +487,15 @@
       "version": "8.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "77.0.3865.92",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",

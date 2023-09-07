@@ -1,6 +1,426 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (AmigaOS; AmigaOS 53.26 PowerPC; rv:2.0.1) Gecko/20120327 Firefox/4.0.1"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false
+    },
+    "os": {
+      "name": "Amiga OS",
+      "marketingName": "Amiga OS",
+      "version": "53.26.0",
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "4.0.1",
+      "manufacturer": "mozilla-foundation",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "2.0.1",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; Origyn Web Browser; U; AmigaOS 4.0; xx) AppleWebKit/534.0 (KHTML, like Gecko, Safari/534.0) OWB/3.32"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false
+    },
+    "os": {
+      "name": "Amiga OS",
+      "marketingName": "Amiga OS",
+      "version": "4.0.0",
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Origyn Web Browser",
+      "modus": null,
+      "version": "3.32.0",
+      "manufacturer": "sand-labs",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.0.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "OWB/3.12 (AmigaOS 4.1; ppc; U)"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false
+    },
+    "os": {
+      "name": "Amiga OS",
+      "marketingName": "Amiga OS",
+      "version": "4.1.0",
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (i386; AROS 0.0; Odyssey Web Browser; rv:1.23) AppleWebKit/538.1 (KHTML, like Gecko) OWB/1.23 Safari/538.1"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Odyssey Web Browser",
+      "modus": null,
+      "version": "1.23.0",
+      "manufacturer": "fabien coeurjoly",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "538.1.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/1.1N (X11; I; BSD/386 uname failed)"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false
+    },
+    "os": {
+      "name": "BSD",
+      "marketingName": "BSD",
+      "version": "386.0.0",
+      "manufacturer": "berkley-university",
+      "bits": null
+    },
+    "client": {
+      "name": "Mozilla",
+      "modus": null,
+      "version": "1.1.0",
+      "manufacturer": "mozilla-foundation",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/1.1N (X11; I; BSD/OS 2.0 i386)"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false
+    },
+    "os": {
+      "name": "BSD",
+      "marketingName": "BSD",
+      "version": null,
+      "manufacturer": "berkley-university",
+      "bits": null
+    },
+    "client": {
+      "name": "Mozilla",
+      "modus": null,
+      "version": "1.1.0",
+      "manufacturer": "mozilla-foundation",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; DragonFly x86_64; rv:36.0) Gecko/20100101 Firefox/36.0 SeaMonkey/2.33.1"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false
+    },
+    "os": {
+      "name": "DragonFly BSD",
+      "marketingName": "DragonFly BSD",
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 64
+    },
+    "client": {
+      "name": "SeaMonkey",
+      "modus": null,
+      "version": "2.33.1",
+      "manufacturer": "mozilla-foundation",
+      "bits": 64,
+      "type": "pim",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "36.0.0",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; elementary OS Luna i686) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1495.0 Maxthon/0.9.1.0 beta Safari/537.36"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": null
+    },
+    "client": {
+      "name": "Maxthon",
+      "modus": null,
+      "version": "0.9.1.0",
+      "manufacturer": "maxthon",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "28.0.1495.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; U; Webster 0.1; Syllable) AppleWebKit/420+ (KHTML, like Gecko)"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false
+    },
+    "os": {
+      "name": "Syllable",
+      "marketingName": "Syllable",
+      "version": null,
+      "manufacturer": "syllable",
+      "bits": null
+    },
+    "client": {
+      "name": "Safari",
+      "modus": null,
+      "version": null,
+      "manufacturer": "apple",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "420.0.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/1.1I (X11; I; NEWS-OS 6.1.1 news5000)"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": null
+    },
+    "client": {
+      "name": "Mozilla",
+      "modus": null,
+      "version": "1.1.0",
+      "manufacturer": "mozilla-foundation",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (X11; U; GENIX 4.1 MG-200/NS32332; en-US; rv:4.7.1.1) Gecko/20080815 SeaMonkey/1.2.3"
     },
     "device": {
@@ -16,15 +436,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "SeaMonkey",
-      "modus": null,
-      "version": "1.2.3",
-      "manufacturer": "mozilla-foundation",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": "Linux",
@@ -32,6 +445,15 @@
       "version": null,
       "manufacturer": "linux-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "SeaMonkey",
+      "modus": null,
+      "version": "1.2.3",
+      "manufacturer": "mozilla-foundation",
+      "bits": null,
+      "type": "pim",
+      "isbot": false
     },
     "engine": {
       "name": "Gecko",
@@ -56,15 +478,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Mozilla",
-      "modus": null,
-      "version": "4.01.0",
-      "manufacturer": "mozilla-foundation",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": "Windows 3.1",
@@ -72,6 +487,15 @@
       "version": "3.1.0",
       "manufacturer": "microsoft",
       "bits": null
+    },
+    "client": {
+      "name": "Mozilla",
+      "modus": null,
+      "version": "4.01.0",
+      "manufacturer": "mozilla-foundation",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Gecko",
@@ -96,15 +520,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Edge",
-      "modus": null,
-      "version": "16.17035.0",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": "Windows IoT 10.0",
@@ -112,6 +529,15 @@
       "version": "10.0.0",
       "manufacturer": "microsoft",
       "bits": null
+    },
+    "client": {
+      "name": "Edge",
+      "modus": null,
+      "version": "16.17035.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Edge",
@@ -136,15 +562,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Safari",
-      "modus": null,
-      "version": "5.0.0",
-      "manufacturer": "apple",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -152,6 +571,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Safari",
+      "modus": null,
+      "version": "5.0.0",
+      "manufacturer": "apple",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -176,15 +604,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "13.0.782.220",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -192,6 +613,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "13.0.782.220",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -216,15 +646,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "19.0.1048.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -232,6 +655,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "19.0.1048.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -256,15 +688,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "jig browser web",
-      "modus": null,
-      "version": "5.0.5",
-      "manufacturer": "w3c",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -272,6 +697,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "jig browser web",
+      "modus": null,
+      "version": "5.0.5",
+      "manufacturer": "w3c",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -296,15 +730,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "jig browser web",
-      "modus": null,
-      "version": "8.1.6",
-      "manufacturer": "w3c",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -312,6 +739,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "jig browser web",
+      "modus": null,
+      "version": "8.1.6",
+      "manufacturer": "w3c",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -336,15 +772,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "jig browser web",
-      "modus": null,
-      "version": "4.0.4",
-      "manufacturer": "w3c",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -352,6 +781,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "jig browser web",
+      "modus": null,
+      "version": "4.0.4",
+      "manufacturer": "w3c",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -376,15 +814,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Mozilla",
-      "modus": null,
-      "version": "3.0.0",
-      "manufacturer": "mozilla-foundation",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": "RISC OS",
@@ -392,6 +823,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Mozilla",
+      "modus": null,
+      "version": "3.0.0",
+      "manufacturer": "mozilla-foundation",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Gecko",
@@ -416,15 +856,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "5.1.0.21",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -432,6 +865,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "5.1.0.21",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -456,15 +898,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Chromium",
-      "modus": null,
-      "version": "24.0.1312.52",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": "Linux",
@@ -472,6 +907,15 @@
       "version": null,
       "manufacturer": "linux-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "Chromium",
+      "modus": null,
+      "version": "24.0.1312.52",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -496,15 +940,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Safari",
-      "modus": null,
-      "version": null,
-      "manufacturer": "apple",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -512,6 +949,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Safari",
+      "modus": null,
+      "version": null,
+      "manufacturer": "apple",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -536,15 +982,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Blackberry Playbook Browser",
-      "modus": null,
-      "version": "10.0.4.102",
-      "manufacturer": "rim",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -552,6 +991,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Blackberry Playbook Browser",
+      "modus": null,
+      "version": "10.0.4.102",
+      "manufacturer": "rim",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -576,15 +1024,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "11.0.696.77",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": "Android",
@@ -592,6 +1033,15 @@
       "version": "4.0.4",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "11.0.696.77",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -616,15 +1066,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Safari",
-      "modus": null,
-      "version": null,
-      "manufacturer": "apple",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -632,6 +1075,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Safari",
+      "modus": null,
+      "version": null,
+      "manufacturer": "apple",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -656,15 +1108,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Opera",
-      "modus": null,
-      "version": "9.70.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": "Maemo",
@@ -672,6 +1117,15 @@
       "version": null,
       "manufacturer": "linux-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "Opera",
+      "modus": null,
+      "version": "9.70.0",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Presto",
@@ -696,15 +1150,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Roku DVP",
-      "modus": null,
-      "version": "3100.0.0",
-      "manufacturer": "roku",
-      "bits": null,
-      "type": "multimedia-player"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -712,6 +1159,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Roku DVP",
+      "modus": null,
+      "version": "3100.0.0",
+      "manufacturer": "roku",
+      "bits": null,
+      "type": "multimedia-player",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -736,15 +1192,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Roku DVP",
-      "modus": null,
-      "version": "4.9.0",
-      "manufacturer": "roku",
-      "bits": null,
-      "type": "multimedia-player"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -752,6 +1201,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Roku DVP",
+      "modus": null,
+      "version": "4.9.0",
+      "manufacturer": "roku",
+      "bits": null,
+      "type": "multimedia-player",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -776,15 +1234,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "IBrowse",
-      "modus": null,
-      "version": "15.9.0",
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": "Fedora Linux",
@@ -792,6 +1243,15 @@
       "version": null,
       "manufacturer": "redhat",
       "bits": null
+    },
+    "client": {
+      "name": "IBrowse",
+      "modus": null,
+      "version": "15.9.0",
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -816,15 +1276,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Chrome for iOS",
-      "modus": null,
-      "version": "7.18.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -832,6 +1285,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome for iOS",
+      "modus": null,
+      "version": "7.18.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -856,15 +1318,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Netscape",
-      "modus": null,
-      "version": "18.20.0",
-      "manufacturer": "netscape",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -872,6 +1327,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Netscape",
+      "modus": null,
+      "version": "18.20.0",
+      "manufacturer": "netscape",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Gecko",
@@ -896,15 +1360,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Netscape",
-      "modus": null,
-      "version": "16.15.0",
-      "manufacturer": "netscape",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": "Amiga OS",
@@ -912,6 +1369,15 @@
       "version": "3.3.0",
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Netscape",
+      "modus": null,
+      "version": "16.15.0",
+      "manufacturer": "netscape",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Gecko",
@@ -936,15 +1402,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "IBrowse",
-      "modus": null,
-      "version": "9.4.0",
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -952,6 +1411,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "IBrowse",
+      "modus": null,
+      "version": "9.4.0",
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -976,15 +1444,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "SeaMonkey",
-      "modus": null,
-      "version": "11.3.0",
-      "manufacturer": "mozilla-foundation",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": "Fedora Linux",
@@ -992,6 +1453,15 @@
       "version": null,
       "manufacturer": "redhat",
       "bits": null
+    },
+    "client": {
+      "name": "SeaMonkey",
+      "modus": null,
+      "version": "11.3.0",
+      "manufacturer": "mozilla-foundation",
+      "bits": null,
+      "type": "pim",
+      "isbot": false
     },
     "engine": {
       "name": "Gecko",
@@ -1016,15 +1486,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Maxthon",
-      "modus": null,
-      "version": "14.18.0",
-      "manufacturer": "maxthon",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -1032,6 +1495,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Maxthon",
+      "modus": null,
+      "version": "14.18.0",
+      "manufacturer": "maxthon",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -1056,15 +1528,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "SeaMonkey",
-      "modus": null,
-      "version": "12.17.0",
-      "manufacturer": "mozilla-foundation",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": "Fedora Linux",
@@ -1072,6 +1537,15 @@
       "version": null,
       "manufacturer": "redhat",
       "bits": null
+    },
+    "client": {
+      "name": "SeaMonkey",
+      "modus": null,
+      "version": "12.17.0",
+      "manufacturer": "mozilla-foundation",
+      "bits": null,
+      "type": "pim",
+      "isbot": false
     },
     "engine": {
       "name": "Gecko",
@@ -1096,15 +1570,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "IBrowse",
-      "modus": null,
-      "version": "1.9.0",
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -1112,6 +1579,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "IBrowse",
+      "modus": null,
+      "version": "1.9.0",
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -1136,15 +1612,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Firefox",
-      "modus": null,
-      "version": "6.11.0",
-      "manufacturer": "mozilla-foundation",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": "Amiga OS",
@@ -1152,6 +1621,15 @@
       "version": "5.7.0",
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "6.11.0",
+      "manufacturer": "mozilla-foundation",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Gecko",
@@ -1176,15 +1654,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "PHP",
-      "modus": null,
-      "version": "7.1.13.1+0",
-      "manufacturer": "php-group",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -1192,6 +1663,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "PHP",
+      "modus": null,
+      "version": "7.1.13.1+0",
+      "manufacturer": "php-group",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -1216,15 +1696,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Headless Chrome",
-      "modus": null,
-      "version": "64.0.3264.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -1232,6 +1705,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Headless Chrome",
+      "modus": null,
+      "version": "64.0.3264.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -1256,15 +1738,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "JamesBOT",
-      "modus": null,
-      "version": null,
-      "manufacturer": "geskimo",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": "Windows NT 10.0",
@@ -1272,6 +1747,15 @@
       "version": "10.0.0",
       "manufacturer": "microsoft",
       "bits": 64
+    },
+    "client": {
+      "name": "JamesBOT",
+      "modus": null,
+      "version": null,
+      "manufacturer": "geskimo",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -1296,15 +1780,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Thunderbird",
-      "modus": null,
-      "version": null,
-      "manufacturer": "mozilla-foundation",
-      "bits": null,
-      "type": "email-client"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -1312,6 +1789,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Thunderbird",
+      "modus": null,
+      "version": null,
+      "manufacturer": "mozilla-foundation",
+      "bits": null,
+      "type": "email-client",
+      "isbot": false
     },
     "engine": {
       "name": "Gecko",
@@ -1336,15 +1822,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Chromium",
-      "modus": null,
-      "version": null,
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -1352,6 +1831,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Chromium",
+      "modus": null,
+      "version": null,
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Presto",
@@ -1376,15 +1864,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "SemrushBot",
-      "modus": null,
-      "version": "2.0.0-beta",
-      "manufacturer": "semrush",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -1392,6 +1873,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "SemrushBot",
+      "modus": null,
+      "version": "2.0.0-beta",
+      "manufacturer": "semrush",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -1416,15 +1906,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Screaming Frog SEO Spider",
-      "modus": null,
-      "version": "9.0.0",
-      "manufacturer": "screaming-frog",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -1432,6 +1915,57 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Screaming Frog SEO Spider",
+      "modus": null,
+      "version": "9.0.0",
+      "manufacturer": "screaming-frog",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "axios/0.17.1"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Axios",
+      "modus": null,
+      "version": "0.17.1",
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "library",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -1456,15 +1990,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "OutclicksBot",
-      "modus": null,
-      "version": "2.0.0",
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -1473,10 +2000,61 @@
       "manufacturer": "unknown",
       "bits": null
     },
+    "client": {
+      "name": "OutclicksBot",
+      "modus": null,
+      "version": "2.0.0",
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
+    },
     "engine": {
       "name": null,
       "version": null,
       "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 Gecko/20100101 Firefox/32.0"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "32.0.0",
+      "manufacturer": "mozilla-foundation",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla-foundation"
     }
   },
   {
@@ -1496,15 +2074,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "OutclicksBot",
-      "modus": null,
-      "version": "2.0.0",
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": "Linux",
@@ -1513,6 +2084,15 @@
       "manufacturer": "linux-foundation",
       "bits": null
     },
+    "client": {
+      "name": "OutclicksBot",
+      "modus": null,
+      "version": "2.0.0",
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
+    },
     "engine": {
       "name": null,
       "version": null,
@@ -1521,7 +2101,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; DuckDuckBot-Https/1.1; +https://duckduckgo.com/duckduckbot)"
+      "user-agent": "VelenPublicWebCrawler/0.1"
     },
     "device": {
       "deviceName": null,
@@ -1536,15 +2116,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "DuckDuck Bot",
-      "modus": null,
-      "version": null,
-      "manufacturer": "duck-duck-go",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -1552,6 +2125,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Velen Public WebCrawler",
+      "modus": null,
+      "version": "0.1.0",
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -1561,7 +2143,7 @@
   },
   {
     "headers": {
-      "user-agent": "Firefox/59.0.2 (x86 en-US); anonymized by Abelssoft 1629278751"
+      "user-agent": "VelenPublicWebCrawler (velen.io)"
     },
     "device": {
       "deviceName": null,
@@ -1576,15 +2158,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Firefox",
-      "modus": null,
-      "version": "59.0.2",
-      "manufacturer": "mozilla-foundation",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -1593,10 +2168,799 @@
       "manufacturer": "unknown",
       "bits": null
     },
-    "engine": {
-      "name": "Gecko",
+    "client": {
+      "name": "Velen Public WebCrawler",
+      "modus": null,
       "version": null,
-      "manufacturer": "mozilla-foundation"
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HUAWEI; W2-U00)",
+      "baidu-flyflow": "Microsoft Windows NT 8.10.14219.0;4.0.30508.0;HUAWEI;HUAWEI W2-U00;4a1b5d7105057f0c0208d83c699276ff92cedbff;2.5.0.12"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": null,
+      "brand": null,
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": null,
+        "size": null
+      },
+      "type": null,
+      "ismobile": null
+    },
+    "os": {
+      "name": "Windows Phone OS",
+      "marketingName": "Windows Phone OS",
+      "version": "8.0.0",
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "client": {
+      "name": "IEMobile",
+      "modus": null,
+      "version": "10.0.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Trident",
+      "version": "6.0.0",
+      "manufacturer": "microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 625)",
+      "baidu-flyflow": "Microsoft Windows CE 8.10.14219.0;4.0.30508.0;NOKIA;RM-941_eu_belarus_russia_215;d0be80b1a6380df0429cef6d36f56a9b318115fe;1.0.3.3"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": null,
+      "brand": null,
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": null,
+        "size": null
+      },
+      "type": null,
+      "ismobile": null
+    },
+    "os": {
+      "name": "Windows Phone OS",
+      "marketingName": "Windows Phone OS",
+      "version": "7.5.0",
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "client": {
+      "name": "IEMobile",
+      "modus": null,
+      "version": "9.0.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Trident",
+      "version": "5.0.0",
+      "manufacturer": "microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.8.0.7) Gecko/20060909 Firefox/1.5.0.7 MG (Novarra-Vision/6.1)",
+      "x-device-user-agent": "Nokia6288/2.0 (05.94) Profile/MIDP-2.0 Configuration/CLDC-1.1"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": null,
+      "brand": null,
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": null,
+        "size": null
+      },
+      "type": null,
+      "ismobile": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation",
+      "bits": null
+    },
+    "client": {
+      "name": "Vision",
+      "modus": null,
+      "version": "6.1.0",
+      "manufacturer": "novarra",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/8.0.35659/35.6497; U; xx) Presto/2.8.119 Version/11.10",
+      "x-operamini-phone": "RIM # BlackBerry 8520"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": null,
+      "brand": null,
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": null,
+        "size": null
+      },
+      "type": null,
+      "ismobile": null
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": null,
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera Mini",
+      "modus": null,
+      "version": "8.0.35659",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.8.119",
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/9.80 (J2ME/MIDP; Opera Mini/8.0.35626/35.6368; U; xx) Presto/2.8.119 Version/11.10",
+      "x-operamini-phone": "Samsung # GT-S8500"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": null,
+      "brand": null,
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": null,
+        "size": null
+      },
+      "type": null,
+      "ismobile": null
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera Mini",
+      "modus": null,
+      "version": "8.0.35626",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.8.119",
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/8.0.35659/35.6497; U; xx) Presto/2.8.119 Version/11.10",
+      "x-operamini-phone": "RIM # BlackBerry 8520",
+      "x-operamini-phone-ua": "BlackBerry8520/5.0.0.681 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/613"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": null,
+      "brand": null,
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": null,
+        "size": null
+      },
+      "type": null,
+      "ismobile": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": null,
+      "bits": null
+    },
+    "client": {
+      "name": "Opera Mini",
+      "modus": null,
+      "version": "8.0.35659",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.8.119",
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/9.80 (J2ME/MIDP; Opera Mini/8.0.35626/35.7382; U; xx) Presto/2.8.119 Version/11.10",
+      "x-operamini-phone-ua": "Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-S5380D/S5380DZHLB1; U; Bada/2.0; zh-cn) AppleWebKit/534.20 (KHTML, like Gecko) Dolfin/3.0 Mobile HVGA SMM-MMS/1.2.0 OPN-B",
+      "device-stock-ua": "Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-S5380D/S5380DZHLB1; U; Bada/2.0; zh-cn) AppleWebKit/534.20 (KHTML, like Gecko) Dolfin/3.0 Mobile HVGA SMM-MMS/1.2.0 OPN-B"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": null,
+      "brand": null,
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": null,
+        "size": null
+      },
+      "type": null,
+      "ismobile": null
+    },
+    "os": {
+      "name": "Bada",
+      "marketingName": "Bada",
+      "version": "2.0.0",
+      "manufacturer": "samsung",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera Mini",
+      "modus": null,
+      "version": "8.0.35626",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": null
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/9.80 (Windows Mobile; Opera Mini/5.1.21594/37.6116; U; xx) Presto/2.12.423 Version/12.16",
+      "x-operamini-phone": "HTC # Touch Pro/T7272/TyTn III",
+      "x-operamini-phone-ua": "HTC_Touch_Pro_T7272"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": null,
+      "brand": null,
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": null,
+        "size": null
+      },
+      "type": null,
+      "ismobile": null
+    },
+    "os": {
+      "name": "Windows Mobile OS",
+      "marketingName": "Windows Mobile OS",
+      "version": null,
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera Mini",
+      "modus": null,
+      "version": "5.1.21594",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.12.423",
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; U; Linux x86_64; xx) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/30.0.1599.114 Safari/537.36",
+      "x-puffin-ua": "iPhone OS/iPad4,1/1536x2048"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": null,
+      "brand": null,
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": null,
+        "size": null
+      },
+      "type": null,
+      "ismobile": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": null,
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "30.0.1599.114",
+      "manufacturer": "google",
+      "bits": 64,
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; U; Linux x86_64; xx) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/30.0.1599.114 Safari/537.36 Puffin/4.0.4.931AP",
+      "x-puffin-ua": "Android/D6503/1080x1776"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": null,
+      "brand": null,
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": null,
+        "size": null
+      },
+      "type": null,
+      "ismobile": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": null,
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": "Puffin",
+      "modus": null,
+      "version": "4.0.4.931",
+      "manufacturer": "cloud-mosa",
+      "bits": 64,
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; U; Linux x86_64; xx) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/30.0.1599.114 Safari/537.36 Puffin/4.1.4IP",
+      "x-puffin-ua": "iPhone OS/iPhone6,1/320x568"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": null,
+      "brand": null,
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": null,
+        "size": null
+      },
+      "type": null,
+      "ismobile": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": null,
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Puffin",
+      "modus": null,
+      "version": "4.1.4",
+      "manufacturer": "cloud-mosa",
+      "bits": 64,
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.2.2; xx; Lenovo A369i Build/JDQ39) AppleWebKit/534.31 (KHTML, like Gecko) UCBrowser/9.1.0.297 U3/0.8.0 Mobile Safari/534.31",
+      "x-ucbrowser-ua": "pf(Linux);la(en-US);re(AppleWebKit/534.31 (KHTML, like Gecko));dv(Lenovo A369i Build/JDQ39);pr(UCBrowser/9.1.0.297);ov(Android 4.2.2);pi(480*762);ss(480*762);up(U3/0.8.0);er(U);bt(GZ);pm(1);bv(1);nm(0);im(0);sr(0);nt(3);"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": null,
+      "brand": null,
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": null,
+        "size": null
+      },
+      "type": null,
+      "ismobile": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": null,
+      "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "9.1.0.297",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": null
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 7_1_2 like Mac OS X; xx) AppleWebKit/537.51.1 (KHTML, like Gecko) Mobile/11D257 UCBrowser/10.2.0.517 Mobile",
+      "x-ucbrowser-ua": "dv(iPh4,1);pr(UCBrowser/10.2.0.517);ov(7_1_2);ss(320x416);bt(UC);pm(0);bv(0);nm(0);im(0);nt(1);"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": null,
+      "brand": null,
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": null,
+        "size": null
+      },
+      "type": null,
+      "ismobile": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": null,
+      "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "10.2.0.517",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.51.1",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "NokiaE72-1/UCWEB8.9.0.253/28/999",
+      "x-ucbrowser-ua": "pf(Symbian);er(U);la(zh-CN);up(U2/1.0.0);re(U2/1.0.0);dv(NokiaE72-1);pr(UCBrowser/8.9.0.253);ov(S60V3);pi(320*240);ss(320*240);bt(UC);pm(1);bv(0);nm(0);im(0);sr(2);nt(2)"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": null,
+      "brand": null,
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": null,
+        "size": null
+      },
+      "type": null,
+      "ismobile": null
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "symbian-foundation",
+      "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "8.9.0.253",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": null
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "UCWEB/2.0 (Windows; U; wds 7.10; en-US; NOKIA; Lumia 710) U2/1.0.0 UCBrowser/3.2.0.340 U2/1.0.0 Mobile",
+      "x-ucbrowser-ua": "pf(Windows);la(en-US);re(U2/1.0.0);dv(NOKIA Lumia 710);pr(UCBrowser/3.2.0.340);ov(wds 7.10);pi(480*800);ss(480*800);er(U);bt(GJ);nm(0);im(0);sr(0);nt(2);up(U2/1.0.0);pm(1);"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": null,
+      "brand": null,
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": null,
+        "size": null
+      },
+      "type": null,
+      "ismobile": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": null,
+      "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "3.2.0.340",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": null
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0; SLCC2;.NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.2) UCBrowser/8.6.0.199/84/352 UNTRUSTED/1.0 3gpp-gba",
+      "x-ucbrowser-phone-ua": "nokia701",
+      "x-ucbrowser-phone": "nokia701"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": null,
+      "brand": null,
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": null,
+        "size": null
+      },
+      "type": null,
+      "ismobile": null
+    },
+    "os": {
+      "name": "Windows NT 6.1",
+      "marketingName": "Windows 7",
+      "version": "6.1.0",
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "8.6.0.199",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Trident",
+      "version": "4.0.0",
+      "manufacturer": "microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "NokiaC3-01/5.0 (06.05) Profile/MIDP-2.1 Configuration/CLDC-1.1 UCWEB/2.0(Java; U; MIDP-2.0; xx; nokiac3-01) U2/1.0.0 UCBrowser/8.8.0.227 U2/1.0.0 Mobile UNTRUSTED/1.0",
+      "x-ucbrowser-phone-ua": "nokiac3-01",
+      "x-ucbrowser-phone": "nokiac3-01"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": null,
+      "brand": null,
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": null,
+        "size": null
+      },
+      "type": null,
+      "ismobile": null
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "symbian-foundation",
+      "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "8.8.0.227",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
+    },
+    "engine": {
+      "name": "U2",
+      "version": "1.0.0",
+      "manufacturer": "ucweb"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "UCWEB/2.0 (MIDP-2.0; U; Adr 4.2.2; xx; TECNO_S3) U2/1.0.0 UCBrowser/8.8.1.359 U2/1.0.0 Mobile",
+      "x-ucbrowser-ua": "pf(Linux);la(en-US);re(U2/1.0.0);dv(TECNO_S3);pr(UCBrowser/8.8.1.359);ov(4.2.2);pi(320*480);ss(320*480);up(U2/1.0.0);er(U);bt(GJ);pm(1);nm(0);im(0);sr(2);nt(99);",
+      "x-ucbrowser-device-ua": "Mozilla/5.0 (Linux; U; Android 4.2.2; en-us; TECNO S3 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": null,
+      "brand": null,
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": null,
+        "size": null
+      },
+      "type": null,
+      "ismobile": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": null,
+      "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "8.8.1.359",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": null
     }
   },
   {
@@ -1608,25 +2972,18 @@
     "device": {
       "deviceName": null,
       "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
+      "manufacturer": null,
+      "brand": null,
       "dualOrientation": null,
       "simCount": null,
       "display": {
         "width": null,
         "height": null,
-        "touch": false,
+        "touch": null,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "8.7.1.234",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
+      "type": null,
+      "ismobile": null
     },
     "os": {
       "name": "JavaOS",
@@ -1634,6 +2991,15 @@
       "version": null,
       "manufacturer": "sun-microsystems",
       "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "8.7.1.234",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
     },
     "engine": {
       "name": "U2",
@@ -1643,33 +3009,528 @@
   },
   {
     "headers": {
-      "user-agent": "Opera/9.80 (BREW; Opera Mini/5.1/27.2338; U; xx) Presto/2.8.119 320X240 Pantech TXT8045",
-      "x-operamini-features": "advanced, download",
-      "x-operamini-phone-ua": "Pantech TXT8045",
-      "x-operamini-phone": "Pantech # TXT8045"
+      "user-agent": "Nokia200/2.0 (11.95) Profile/MIDP-2.1 Configuration/CLDC-1.1 UCWEB/2.0 (Java; U; MIDP-2.0; xx; Nokia200) U2/1.0.0 UCBrowser/9.4.1.377 U2/1.0.0 Mobile",
+      "x-ucbrowser-ua": "pf(Java);la(en-US);re(U2/1.0.0);dv(Nokia200);pr(UCBrowser/9.4.1.377);ov(MIDP-2.0);pi(320*240);ss(320*240);up(U2/1.0.0);er(U);bt(GJ);pm(1);bv(0);nm(0);im(0);sr(0);nt(1);",
+      "x-ucbrowser-device-ua": "Mozilla/5.0 (Series40; Nokia200/11.81; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/3.7.0.0.11",
+      "x-ucbrowser-device": "nokia#200"
     },
     "device": {
       "deviceName": null,
       "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
+      "manufacturer": null,
+      "brand": null,
       "dualOrientation": null,
       "simCount": null,
       "display": {
         "width": null,
         "height": null,
-        "touch": false,
+        "touch": null,
         "size": null
       },
-      "type": "unknown"
+      "type": null,
+      "ismobile": null
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "9.4.1.377",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": null
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SonyEricssonJ108i/R7EA Profile/MIDP-2.1 Configuration/CLDC-1.1 UNTRUSTED/1.0 UCWEB/2.0(Java; U; MIDP-2.0; xx; sonyericssonj108i) U2/1.0.0 UCBrowser/8.8.0.227 U2/1.0.0 Mobile",
+      "x-ucbrowser-phone-ua": "sonyericssonj108i",
+      "x-ucbrowser-phone": "sonyericssonj108i",
+      "x-ucbrowser-ua": "pf(Java);la(en-US);re(U2/1.0.0);dv(sonyericssonj108i);pr(UCBrowser/8.8.0.227);ov(MIDP-2.0);pi(240*320);ss(240*320);up(U2/1.0.0);er(U);bt(GJ);pm(1);bv(0);nm(0);im(0);sr(0);nt(99);"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": null,
+      "brand": null,
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": null,
+        "size": null
+      },
+      "type": null,
+      "ismobile": null
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "8.8.0.227",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": null
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "UCWEB/2.0 (Symbian; U; S60 V3; xx; NOKIA6120c) U2/1.0.0 UCBrowser/9.2.0.336 U2/1.0.0 Mobile",
+      "x-ucbrowser-device": "NOKIA # 6120c",
+      "x-ucbrowser-device-ua": "Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NOKIA6120c/07.20; Profile/MIDP-2.0 Configuration/CLDC-1.1) AppleWebKit/413 (KHTML, like Gecko) Safari/413",
+      "x-ucbrowser-ua": "pf(Symbian);er(U);la(en-US);up(U2/1.0.0);re(U2/1.0.0);dv(NOKIA6120c);pr(UCBrowser/9.2.0.336);ov(S60V3);pi(240*320);ss(240*320);bt(GJ);pm(1);bv(0);nm(0);im(0);sr(2);nt(1)"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": null,
+      "brand": null,
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": null,
+        "size": null
+      },
+      "type": null,
+      "ismobile": null
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "symbian-foundation",
+      "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "9.2.0.336",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": null
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/9.80 (Android; Opera Mini/7.8.35214/34.1571; U; xx) Presto/2.8.119 Version/11.10",
+      "device-stock-ua": "Mozilla/5.0 (Linux; U; Android 4.2.5; zh-cn; MI 2SC Build/YunOS) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30",
+      "x-operamini-phone": "Android #",
+      "x-operamini-phone-ua": "Mozilla/5.0 (Linux; U; Android 4.2.5; zh-cn; MI 2SC Build/YunOS) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30",
+      "x-operamini-features": "advanced, httpping, routing, camera, viewport, file_system, folding, touch, download"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": null,
+      "brand": null,
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": null,
+        "size": null
+      },
+      "type": null,
+      "ismobile": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.5",
+      "manufacturer": "google",
+      "bits": null
     },
     "client": {
       "name": "Opera Mini",
       "modus": null,
-      "version": "5.1.0",
+      "version": "7.8.35214",
       "manufacturer": "opera",
       "bits": null,
-      "type": "transcoder"
+      "type": "transcoder",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": null
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/9.80 (J2ME/MIDP; Opera Mini/4.5.33867/35.3527; U; xx) Presto/2.8.119 Version/11.10",
+      "device-stock-ua": "Mozilla/5.0 (Series40; Nokia501/11.1.1/java_runtime_version=Nokia_Asha_1_1_1; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/3.9.0.0.22",
+      "x-operamini-phone": "? # ?",
+      "x-operamini-phone-ua": "Mozilla/5.0 (Series40; Nokia501/11.1.1/java_runtime_version=Nokia_Asha_1_1_1; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/3.9.0.0.22",
+      "x-operamini-features": "httpping, advanced, routing, folding, touch, file_system"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": null,
+      "brand": null,
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": null,
+        "size": null
+      },
+      "type": null,
+      "ismobile": null
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera Mini",
+      "modus": null,
+      "version": "4.5.33867",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": null
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/9.80 (J2ME/MIDP; Opera Mini/7.1.32052/34.1394; U; xx) Presto/2.8.119 Version/11.10",
+      "device-stock-ua": "Mozilla/5.0 (Series40; Nokia501/11.1.1/java_runtime_version=Nokia_Asha_1_1_1; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/3.1.1.0.27",
+      "x-operamini-phone": "? # ?",
+      "x-operamini-phone-ua": "Mozilla/5.0 (Series40; Nokia501/11.1.1/java_runtime_version=Nokia_Asha_1_1_1; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/3.1.1.0.27",
+      "x-operamini-features": "httpping, advanced, routing, touch, camera, file_system, folding"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": null,
+      "brand": null,
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": null,
+        "size": null
+      },
+      "type": null,
+      "ismobile": null
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera Mini",
+      "modus": null,
+      "version": "7.1.32052",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": null
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/9.80 (J2ME/MIDP; Opera Mini/7.1.32052/32.1151; U; xx) Presto/2.8.119 Version/11.10",
+      "device-stock-ua": "SAMSUNG-GT-S8500",
+      "x-operamini-phone": "Samsung # GT-S8500",
+      "x-operamini-phone-ua": "SAMSUNG-GT-S8500",
+      "x-operamini-features": "httpping, advanced, routing, file_system, folding, camera, touch"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": null,
+      "brand": null,
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": null,
+        "size": null
+      },
+      "type": null,
+      "ismobile": null
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera Mini",
+      "modus": null,
+      "version": "7.1.32052",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.8.119",
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/9.80 (X11; Linux zvav; U; xx) Presto/2.8.119 Version/11.10",
+      "x-operamini-phone": "RIM # BlackBerry 8520",
+      "x-operamini-phone-ua": "BlackBerry8520/5.0.0.1036 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/613",
+      "x-operamini-features": "httpping, advanced, routing, folding, touch, camera, file_system"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": null,
+      "brand": null,
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": null,
+        "size": null
+      },
+      "type": null,
+      "ismobile": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": null,
+      "bits": null
+    },
+    "client": {
+      "name": "Opera",
+      "modus": null,
+      "version": "11.10.0",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.8.119",
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/4.4.26736/34.818; U; xx) Presto/2.8.119 Version/11.10",
+      "device-stock-ua": "BlackBerry9700/5.0.0.235 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/1",
+      "x-operamini-phone": "BlackBerry # 9700",
+      "x-operamini-phone-ua": "BlackBerry9700/5.0.0.235 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/1",
+      "x-operamini-features": "httpping, advanced, routing, folding"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": null,
+      "brand": null,
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": null,
+        "size": null
+      },
+      "type": null,
+      "ismobile": null
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "5.0.0.235",
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera Mini",
+      "modus": null,
+      "version": "4.4.26736",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.8.119",
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/4.6.32744/32.1214; U; xx) Presto/2.8.119 Version/11.10",
+      "device-stock-ua": "BlackBerry9300",
+      "x-operamini-phone": "Blackberry # 9300",
+      "x-operamini-phone-ua": "BlackBerry9300",
+      "x-operamini-features": "httpping, advanced, routing, file_system, folding"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": null,
+      "brand": null,
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": null,
+        "size": null
+      },
+      "type": null,
+      "ismobile": null
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "0.0.0",
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera Mini",
+      "modus": null,
+      "version": "4.6.32744",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.8.119",
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/9.80 (BlackBerry; Opera Mini/8.0.35667/35.3781; U; xx) Presto/2.8.119 Version/11.10",
+      "device-stock-ua": "BlackBerry8530/5.0.0.973 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/105",
+      "x-operamini-phone": "? # ?",
+      "x-operamini-phone-ua": "BlackBerry8530/5.0.0.973 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/105",
+      "x-operamini-features": "advanced, httpping, folding, file_system, touch, camera, routing"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": null,
+      "brand": null,
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": null,
+        "size": null
+      },
+      "type": null,
+      "ismobile": null
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "5.0.0.973",
+      "manufacturer": "rim",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera Mini",
+      "modus": null,
+      "version": "8.0.35667",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.8.119",
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/9.80 (BREW; Opera Mini/5.0/27.2354; U; xx) Presto/2.8.119 320X240 Samsung SCH-U380",
+      "x-operamini-features": "advanced, download, file_system, folding",
+      "x-operamini-phone-ua": "Samsung SCH-U380",
+      "x-operamini-phone": "Samsung # SCH-U380"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": null,
+      "brand": null,
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": null,
+        "size": null
+      },
+      "type": null,
+      "ismobile": null
     },
     "os": {
       "name": "Brew",
@@ -1677,6 +3538,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Opera Mini",
+      "modus": null,
+      "version": "5.0.0",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
     },
     "engine": {
       "name": "Presto",
@@ -1694,25 +3564,18 @@
     "device": {
       "deviceName": null,
       "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
+      "manufacturer": null,
+      "brand": null,
       "dualOrientation": null,
       "simCount": null,
       "display": {
         "width": null,
         "height": null,
-        "touch": false,
+        "touch": null,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "6.0.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
+      "type": null,
+      "ismobile": null
     },
     "os": {
       "name": "Brew",
@@ -1720,6 +3583,332 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Opera Mini",
+      "modus": null,
+      "version": "6.0.0",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.8.119",
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/9.80 (J2ME/MIDP; Opera Mini/4.4.31891/34.1526; U; xx) Presto/2.8.119 Version/11.10",
+      "x-operamini-phone": "? # ?",
+      "device-stock-ua": "Mozilla/5.0_(Smartfren-E781A/E2_SQID_V0.1.6; U; REX/4.3;BREW/3.1.5.189; Profile/MIDP-2.0_Configuration/CLDC-1.1; 240*320; CTC/2.0)_Obigo Browser/Q7",
+      "x-operamini-features": "httpping, advanced, routing, folding",
+      "x-operamini-phone-ua": "Mozilla/5.0_(Smartfren-E781A/E2_SQID_V0.1.6; U; REX/4.3;BREW/3.1.5.189; Profile/MIDP-2.0_Configuration/CLDC-1.1; 240*320; CTC/2.0)_Obigo Browser/Q7"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": null,
+      "brand": null,
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": null,
+        "size": null
+      },
+      "type": null,
+      "ismobile": null
+    },
+    "os": {
+      "name": "Brew",
+      "marketingName": "Brew",
+      "version": "3.1.5.189",
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera Mini",
+      "modus": null,
+      "version": "4.4.31891",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.8.119",
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/9.80 (J2ME/MIDP; Opera Mini/7.1.32052/34.1016; U; xx) Presto/2.8.119 Version/11.10",
+      "device-stock-ua": "Mozilla/4.0 (Brew MP 1.0.2; U; en-us; Kyocera; NetFront/4.1/AMB) Sprint E4255",
+      "x-operamini-phone-ua": "Mozilla/4.0 (Brew MP 1.0.2; U; en-us; Kyocera; NetFront/4.1/AMB) Sprint E4255",
+      "x-operamini-phone": "? # ?",
+      "x-operamini-features": "advanced, httpping, routing, folding, file_system, camera"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": null,
+      "brand": null,
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": null,
+        "size": null
+      },
+      "type": null,
+      "ismobile": null
+    },
+    "os": {
+      "name": "Brew",
+      "marketingName": "Brew",
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera Mini",
+      "modus": null,
+      "version": "7.1.32052",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.8.119",
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/9.80 (J2ME/MIDP; Opera Mini/7.1.32052/34.1853; U; xx) Presto/2.8.119 Version/11.10",
+      "x-operamini-phone-ua": "Mozilla/4.0 (BREW 3.1.5; U; en-us; Sanyo; NetFront/3.5.1/AMB) Sprint SCP-6760",
+      "device-stock-ua": "Mozilla/4.0 (BREW 3.1.5; U; en-us; Sanyo; NetFront/3.5.1/AMB) Sprint SCP-6760",
+      "x-operamini-features": "advanced, httpping, routing, file_system, folding, camera",
+      "x-operamini-phone": "? # ?"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": null,
+      "brand": null,
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": null,
+        "size": null
+      },
+      "type": null,
+      "ismobile": null
+    },
+    "os": {
+      "name": "Brew",
+      "marketingName": "Brew",
+      "version": "3.1.5",
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera Mini",
+      "modus": null,
+      "version": "7.1.32052",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.8.119",
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; U; Linux x86_64; xx) AppleWebKit/534.35 (KHTML, like Gecko)  Chrome/11.0.696.65 Safari/534.35 Puffin/2.0.7961",
+      "x-puffin-ua": "iPhone OS/iPhone 3GS/320x480"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": null,
+      "brand": null,
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": null,
+        "size": null
+      },
+      "type": null,
+      "ismobile": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": null,
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Puffin",
+      "modus": null,
+      "version": "2.0.7961",
+      "manufacturer": "cloud-mosa",
+      "bits": 64,
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.35.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; Google Wireless Transcoder;)",
+      "x-original-user-agent": "Mozilla/5.0 (iPhone; U; CPU like Mac OS X; en) AppleWebKit/420.1 (KHTML, like Gecko) Version/3.0 Mobile/4A93 Safari/419.3",
+      "x-device-user-agent": "Mozilla/5.0 (iPhone; U; CPU like Mac OS X; en) AppleWebKit/420.1 (KHTML, like Gecko) Version/3.0 Mobile/4A93 Safari/419.3"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": null,
+      "brand": null,
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": null,
+        "size": null
+      },
+      "type": null,
+      "ismobile": null
+    },
+    "os": {
+      "name": "iPhone OS",
+      "marketingName": "iPhone OS",
+      "version": "1.0.0",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Safari",
+      "modus": null,
+      "version": "3.0.0",
+      "manufacturer": "apple",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "420.1.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/9.80 (J2ME/MIDP; Opera Mini/4.2.14912/34.818; U; xx) Presto/2.8.119 Version/11.10",
+      "x-operamini-phone": "Apple # iPhone",
+      "x-operamini-features": "advanced, file_system, folding",
+      "x-operamini-phone-ua": "Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_3_3 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8J2 Safari/6533.18.5",
+      "device-stock-ua": "Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_3_3 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8J2 Safari/6533.18.5"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": null,
+      "brand": null,
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": null,
+        "size": null
+      },
+      "type": null,
+      "ismobile": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "4.3.3",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera Mini",
+      "modus": null,
+      "version": "4.2.14912",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/9.80 (MAUI Runtime; Opera Mini/4.4.31762/35.3312; U; xx) Presto/2.8.119 Version/11.10",
+      "x-operamini-phone-ua": "OperaMini(Lava-Discover135;Opera Mini/4.4.31762;en)",
+      "x-operamini-phone": "? # ?",
+      "device-stock-ua": "OperaMini(Lava-Discover135;Opera Mini/4.4.31762;en)",
+      "x-operamini-features": "httpping, advanced, routing, file_system, download, folding"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": null,
+      "brand": null,
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": null,
+        "size": null
+      },
+      "type": null,
+      "ismobile": null
+    },
+    "os": {
+      "name": "MRE",
+      "marketingName": "MAUI Runtime Environment",
+      "version": null,
+      "manufacturer": "mediatek",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera Mini",
+      "modus": null,
+      "version": "4.4.31762",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
     },
     "engine": {
       "name": "Presto",
@@ -1738,25 +3927,18 @@
     "device": {
       "deviceName": null,
       "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
+      "manufacturer": null,
+      "brand": null,
       "dualOrientation": null,
       "simCount": null,
       "display": {
         "width": null,
         "height": null,
-        "touch": false,
+        "touch": null,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "4.5.33867",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
+      "type": null,
+      "ismobile": null
     },
     "os": {
       "name": "JavaOS",
@@ -1764,6 +3946,15 @@
       "version": null,
       "manufacturer": "sun-microsystems",
       "bits": null
+    },
+    "client": {
+      "name": "Opera Mini",
+      "modus": null,
+      "version": "4.5.33867",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
     },
     "engine": {
       "name": "Presto",
@@ -1773,26 +3964,34 @@
   },
   {
     "headers": {
-      "user-agent": "Opera/9.80 (Windows Mobile; Opera Mini/5.1.21595/32.1214; U; xx) Presto/2.8.119 Version/11.10",
-      "device-stock-ua": "Motorola",
-      "x-operamini-phone": "Motorola # A1000",
-      "x-operamini-phone-ua": "Motorola",
-      "x-operamini-features": "httpping, advanced, download, file_system"
+      "user-agent": "Opera/9.80 (Windows Mobile; Opera Mini/5.1.21595/34.1606; U; xx) Presto/2.8.119 Version/11.10",
+      "device-stock-ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_HD2_T8585; Windows Phone 6.5)",
+      "x-operamini-phone": "HTC # HD2",
+      "x-operamini-phone-ua": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_HD2_T8585; Windows Phone 6.5)",
+      "x-operamini-features": "httpping, advanced, routing, file_system, download"
     },
     "device": {
       "deviceName": null,
       "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
+      "manufacturer": null,
+      "brand": null,
       "dualOrientation": null,
       "simCount": null,
       "display": {
         "width": null,
         "height": null,
-        "touch": false,
+        "touch": null,
         "size": null
       },
-      "type": "unknown"
+      "type": null,
+      "ismobile": null
+    },
+    "os": {
+      "name": "Windows Phone OS",
+      "marketingName": "Windows Phone OS",
+      "version": "6.5.0",
+      "manufacturer": "microsoft",
+      "bits": null
     },
     "client": {
       "name": "Opera Mini",
@@ -1800,19 +3999,145 @@
       "version": "5.1.21595",
       "manufacturer": "opera",
       "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Windows Mobile OS",
-      "marketingName": "Windows Mobile OS",
-      "version": null,
-      "manufacturer": "microsoft",
-      "bits": null
+      "type": "transcoder",
+      "isbot": false
     },
     "engine": {
       "name": "Presto",
       "version": "2.8.119",
       "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0; IEMobile/10.0; WPDesktop) baidubrowser/2.5.0.12 (Baidu; P3 8.0.10512)",
+      "baidu-flyflow": "Microsoft Windows NT 8.0.10512.0;4.0.50829.0;NOKIA;RM-822_apac_prc_204;ca23bc5b9a1777612837b43014640b3cce62fc50;2.5.0.12"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": null,
+      "brand": null,
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": null,
+        "size": null
+      },
+      "type": null,
+      "ismobile": null
+    },
+    "os": {
+      "name": "Windows Phone OS",
+      "marketingName": "Windows Phone OS",
+      "version": "8.0.0",
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "client": {
+      "name": "Baidu Browser",
+      "modus": null,
+      "version": "2.5.0.12",
+      "manufacturer": "baidu",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Trident",
+      "version": "6.0.0",
+      "manufacturer": "microsoft"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; A620e)",
+      "x-ucbrowser-ua": "pf(Windows);la(zh-CN);re(U2/1.0.0);dv(HTC A620e);pr(UCBrowser/3.4.1.407);ov(wds 8.10);pi(480*800);ss(480*800);er(U);bt(UC);nm(0);im(0);sr(2);nt(2);pm(0);"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": null,
+      "brand": null,
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": null,
+        "size": null
+      },
+      "type": null,
+      "ismobile": null
+    },
+    "os": {
+      "name": "Windows Phone OS",
+      "marketingName": "Windows Phone OS",
+      "version": "8.10.0",
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "3.4.1.407",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": null
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/9.80 (Windows Mobile; Opera Mini/5.1.21594/35.2989; U; xx) Presto/2.8.119 Version/11.10",
+      "device-stock-ua": "Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 710)",
+      "x-operamini-phone": "? # ?",
+      "x-operamini-phone-ua": "Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 710)",
+      "x-operamini-features": "httpping, advanced, routing, download, file_system"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": null,
+      "brand": null,
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": null,
+        "size": null
+      },
+      "type": null,
+      "ismobile": null
+    },
+    "os": {
+      "name": "Windows Phone OS",
+      "marketingName": "Windows Phone OS",
+      "version": "7.5.0",
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "client": {
+      "name": "Opera Mini",
+      "modus": null,
+      "version": "5.1.21594",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": null
     }
   },
   {
@@ -1832,15 +4157,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Firefox",
-      "modus": null,
-      "version": "4.0.1",
-      "manufacturer": "mozilla-foundation",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": "Windows",
@@ -1848,6 +4166,15 @@
       "version": null,
       "manufacturer": "microsoft",
       "bits": null
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "4.0.1",
+      "manufacturer": "mozilla-foundation",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Gecko",
@@ -1872,15 +4199,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Mozilla",
-      "modus": null,
-      "version": "5.5.0",
-      "manufacturer": "mozilla-foundation",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": "Amiga OS",
@@ -1888,6 +4208,15 @@
       "version": "1337.0.0",
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Mozilla",
+      "modus": null,
+      "version": "5.5.0",
+      "manufacturer": "mozilla-foundation",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Gecko",
@@ -1912,15 +4241,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "AmigaVoyager",
-      "modus": null,
-      "version": null,
-      "manufacturer": "vaporware",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": "Amiga OS",
@@ -1928,6 +4250,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "AmigaVoyager",
+      "modus": null,
+      "version": null,
+      "manufacturer": "vaporware",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -1952,15 +4283,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Fresco",
-      "modus": null,
-      "version": "1.20.0",
-      "manufacturer": "ant",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": "RISC OS",
@@ -1969,2050 +4293,19 @@
       "manufacturer": "unknown",
       "bits": null
     },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Arexx ( ; ; AmigaOS 3.0)"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
     "client": {
-      "name": null,
+      "name": "Fresco",
       "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
+      "version": "1.20.0",
+      "manufacturer": "ant",
       "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": "Amiga OS",
-      "marketingName": "Amiga OS",
-      "version": "3.0.0",
-      "manufacturer": "unknown",
-      "bits": null
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": null,
       "version": null,
       "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Arexx (compatible; MSIE 6.0; AmigaOS5.0)"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Internet Explorer",
-      "modus": null,
-      "version": "6.0.0",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Amiga OS",
-      "marketingName": "Amiga OS",
-      "version": "5.0.0",
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": "Trident",
-      "version": null,
-      "manufacturer": "microsoft"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/2.0 (compatible; MSIE 1.0; Commodore64)"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Internet Explorer",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": "Trident",
-      "version": null,
-      "manufacturer": "microsoft"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/2.0 (compatible; MSIE 2.0; Commodore64)"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Internet Explorer",
-      "modus": null,
-      "version": "2.0.0",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": "Trident",
-      "version": null,
-      "manufacturer": "microsoft"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "alpha/06 (compatible; IBrowse; AmigaOS)"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "IBrowse",
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Amiga OS",
-      "marketingName": "Amiga OS",
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Jakarta Commons-HttpClient"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Jakarta Commons-HttpClient",
-      "modus": null,
-      "version": null,
-      "manufacturer": "apache",
-      "bits": null,
-      "type": "bot"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; Konqueror/3.0.1 (CVS >= 20020327); Linux) Linspire (Lindows, Inc.)"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Konqueror",
-      "modus": null,
-      "version": "3.0.1",
-      "manufacturer": "kde",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "KHTML",
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "AmigaOS 5.0"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "client": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": "Amiga OS",
-      "marketingName": "Amiga OS",
-      "version": "5.0.0",
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/0.001 (uncompatible; TuringOS; Turing Machine; 0.001; en-US)"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Mozilla",
-      "modus": null,
-      "version": "0.001.0",
-      "manufacturer": "mozilla-foundation",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.0 (AmigaOS 3.1)"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Mozilla",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "mozilla-foundation",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Amiga OS",
-      "marketingName": "Amiga OS",
-      "version": "3.1.0",
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; AmigaOs)"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Internet Explorer",
-      "modus": null,
-      "version": "6.0.0",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Amiga OS",
-      "marketingName": "Amiga OS",
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": "Trident",
-      "version": null,
-      "manufacturer": "microsoft"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (AmigaOS 3.5, Amiga, 0wnx0r3d by eric) Gecko/20020604"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Mozilla",
-      "modus": null,
-      "version": "5.0.0",
-      "manufacturer": "mozilla-foundation",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Amiga OS",
-      "marketingName": "Amiga OS",
-      "version": "3.5.0",
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (U; PPC; en) Gecko"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Mozilla",
-      "modus": null,
-      "version": "5.0.0",
-      "manufacturer": "mozilla-foundation",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Macintosh",
-      "marketingName": "Macintosh",
-      "version": null,
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (X11; U; DragonFly i386; en-US; rv:1.7.5) Gecko/20041112 Foobar/6.0"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Mozilla",
-      "modus": null,
-      "version": "5.0.0",
-      "manufacturer": "mozilla-foundation",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "DragonFly BSD",
-      "marketingName": "DragonFly BSD",
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": "1.7.5",
-      "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (X11; U; System/V-POSIX alpha; rv:1.7.3) Gecko/20041001 Firefox/0.10.1"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Firefox",
-      "modus": null,
-      "version": "0.10.1",
-      "manufacturer": "mozilla-foundation",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": "1.7.3",
-      "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (U; en-US; rv:0.9.9) Gecko/20020311"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Mozilla",
-      "modus": null,
-      "version": "5.0.0",
-      "manufacturer": "mozilla-foundation",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": "0.9.9",
-      "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/6.0 (X11; U; Linux 2.6.13 i686; en-US; rv:1.2.9) Gecko/20050612 MSIE (Debian FAST Browser) v15.23 - All rights reserved - Unix - </td></tr></table> Error Processing table...<br> Line <b>43<b><br>"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Internet Explorer",
-      "modus": null,
-      "version": null,
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Unix",
-      "marketingName": "Unix",
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": "Trident",
-      "version": null,
-      "manufacturer": "microsoft"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Idefix hic erat!; Fenestra 50a.Chr.n.; la; rv:1.5a) Gecko/20030728 Mozilla Firebird/0.6.1"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Firebird",
-      "modus": null,
-      "version": "0.6.1",
-      "manufacturer": "mozilla-foundation",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": "1.5.0-alpha",
-      "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.6) Gecko/20040206 Firefox/0.8 - <<http://LocusMeus.com/ - Els>>"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Firefox",
-      "modus": null,
-      "version": "0.8.0",
-      "manufacturer": "mozilla-foundation",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Windows NT 5.1",
-      "marketingName": "Windows XP",
-      "version": "5.1.0",
-      "manufacturer": "microsoft",
-      "bits": null
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": "1.6.0",
-      "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "<a href=http://www.khrap.org>Best website about travels.(New Zealand, Thailand, Bolivia)</a alt=Windows NT 5.0 Firefox/1.0>"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Firefox",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "mozilla-foundation",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Windows NT 5.0",
-      "marketingName": "Windows 2000",
-      "version": "5.0.0",
-      "manufacturer": "microsoft",
-      "bits": null
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Amiga OS; U; Amiga OS 5.3; en-US; rv:5.3) Gecko/20040707 Firefox/1.0"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Firefox",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "mozilla-foundation",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": "5.3.0",
-      "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (X11; U; Slackware; en-US; rv:1.7.5) Gecko/20041107 Firefox/1.0"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Firefox",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "mozilla-foundation",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Slackware Linux",
-      "marketingName": "Slackware Linux",
-      "version": null,
-      "manufacturer": "slackware",
-      "bits": null
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": "1.7.5",
-      "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Netscape 1.22 (Win16; I)"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Netscape",
-      "modus": null,
-      "version": "1.22.0",
-      "manufacturer": "netscape",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Windows 3.1",
-      "marketingName": "Windows 3.1",
-      "version": "3.1.0",
-      "manufacturer": "microsoft",
-      "bits": null
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/5.02 (alpha 06; AmigaOS)  [en]"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Opera",
-      "modus": null,
-      "version": "5.02.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Amiga OS",
-      "marketingName": "Amiga OS",
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": null,
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/7.54 (AmigaOS 5.1; U) [en]"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Opera",
-      "modus": null,
-      "version": "7.54.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Amiga OS",
-      "marketingName": "Amiga OS",
-      "version": "5.1.0",
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": null,
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; Slackware)"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Internet Explorer",
-      "modus": null,
-      "version": "6.0.0",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Slackware Linux",
-      "marketingName": "Slackware Linux",
-      "version": null,
-      "manufacturer": "slackware",
-      "bits": null
-    },
-    "engine": {
-      "name": "Trident",
-      "version": null,
-      "manufacturer": "microsoft"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Veczilla/0.35beta (X11; U; UNICOS/mk 21164a(EV5.6) Cray T3E; en-US; m18) Gecko/20020202 Netscape6/6.5"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Netscape",
-      "modus": null,
-      "version": "6.5.0",
-      "manufacturer": "netscape",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Veczilla/0.35beta (X11; U; UNICOS/mk 21164a(EV5.6) Cray T3E; en-US; m18) Gecko/20040329"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Firefox",
-      "modus": null,
-      "version": null,
-      "manufacturer": "mozilla-foundation",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "OutclicksBot/4 +https://www.outclicks.net/agent/rRTGJTg4MlObdBb51PuzhDXaWD2BEuYiCJB4NYOe89C"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "OutclicksBot",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "bot"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (X11; x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "57.0.2987.98",
-      "manufacturer": "google",
-      "bits": 64,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": 64
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "57.0.2987.98",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/15.0"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Mozilla",
-      "modus": null,
-      "version": "15.0.0",
-      "manufacturer": "mozilla-foundation",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "OutclicksBot/4 +https://www.outclicks.net/agent/4MTe02o0eAfSWERKdafo5swQ5d9Kza1e3JrpwkXcePa0MjgaeSXYOBeLHMrlDkt4D"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "OutclicksBot",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "bot"
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Thumbor/6.4.2"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Thumbor",
-      "modus": null,
-      "version": "6.4.2",
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "bot"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (X11; U; X11; en-US; Valve Steam Tenfoot/1352503901; ) AppleWebKit/535.15 (KHTML, like Gecko) Chrome/18.0.989.0 Safari/535.11"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "18.0.989.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "535.15.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; Origyn Web Browser; AmigaOS 4.1; PPC; U) AppleWebKit/525.1+ (KHTML, like Gecko, Safari/525.1+)"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Origyn Web Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "sand-labs",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Amiga OS",
-      "marketingName": "Amiga OS",
-      "version": "4.1.0",
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "525.1.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "<Mozilla/5.0 (Windows NT 6.1; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0.2990>"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Firefox",
-      "modus": null,
-      "version": "57.0.2990",
-      "manufacturer": "mozilla-foundation",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Windows NT 6.1",
-      "marketingName": "Windows 7",
-      "version": "6.1.0",
-      "manufacturer": "microsoft",
-      "bits": 64
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": "57.0.0",
-      "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Slackbot 1.0 (+https://api.slack.com/robots)"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Slackbot",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "slack",
-      "bits": null,
-      "type": "bot"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Chrome 67.0.3396.87"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "67.0.3396.87",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "check_http/v2.2 (monitoring-plugins 2.2)"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Nagios",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nagios-enterprises",
-      "bits": null,
-      "type": "bot"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Java/10.0.2"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Java Standard Library",
-      "modus": null,
-      "version": "10.0.2",
-      "manufacturer": "oracle",
-      "bits": null,
-      "type": "bot"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "AlohaBrowser/2.6.0 (com.alohabrowser.alohabrowser; build:11; iOS 11.4.1) Alamofire/4.7.2"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Aloha Browser",
-      "modus": null,
-      "version": "2.6.0",
-      "manufacturer": "aloha-mobile",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": null,
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Screaming Frog SEO Spider/10.1"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Screaming Frog SEO Spider",
-      "modus": null,
-      "version": "10.1.0",
-      "manufacturer": "screaming-frog",
-      "bits": null,
-      "type": "bot"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36 (Refindbot/1.0)"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Refindbot",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "refind",
-      "bits": null,
-      "type": "bot"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36 <a href=\"http://fapwww.mobi/\">xxx porn</a>"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "57.0.2987.98",
-      "manufacturer": "google",
-      "bits": 64,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Windows NT 10.0",
-      "marketingName": "Windows 10",
-      "version": "10.0.0",
-      "manufacturer": "microsoft",
-      "bits": 64
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "57.0.2987.98",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (X11; DragonFly x86_64; rv:52.0) Gecko/20100101 Firefox/52.0"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Firefox",
-      "modus": null,
-      "version": "52.0.0",
-      "manufacturer": "mozilla-foundation",
-      "bits": 64,
-      "type": "browser"
-    },
-    "os": {
-      "name": "DragonFly BSD",
-      "marketingName": "DragonFly BSD",
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 64
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": "52.0.0",
-      "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 ({PLATFORM}) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{VERSION} Safari/537.36"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": null,
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (en-US) AppleWebKit/537.36 (KHTML, like Gecko; Google-Assess) Chrome/34.0.1847.116 Safari/537.36"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Google DMCA Takedown Tool Bot",
-      "modus": null,
-      "version": null,
-      "manufacturer": "google",
-      "bits": null,
-      "type": "bot"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "34.0.1847.116",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Firefox/62.0.3 (x86 de); anonymized by Abelssoft 152378206"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Firefox",
-      "modus": null,
-      "version": "62.0.3",
-      "manufacturer": "mozilla-foundation",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (X11; U; DragonFly i386; de; rv:1.9.1b2) Gecko/20081201 Firefox/52.7.0"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Firefox",
-      "modus": null,
-      "version": "52.7.0",
-      "manufacturer": "mozilla-foundation",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "DragonFly BSD",
-      "marketingName": "DragonFly BSD",
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": "1.9.1-beta+2",
-      "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (SIMON SMITH NT 10.0; WOW64; forensic@evestigator.com.au) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.2526.73 Safari/537.36"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "67.0.2526.73",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 64
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "67.0.2526.73",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 12_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) WorxWeb/18.11.0(build 18.11.0.6) Mobile/16B92 Safari/605.1<tabid-CBC25F7C-073F-4087-8788-FA814052EC92>"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Safari",
-      "modus": null,
-      "version": "5.0.0",
-      "manufacturer": "apple",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "12.1.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
     }
   }
 ]

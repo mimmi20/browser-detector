@@ -16,15 +16,8 @@
         "touch": false,
         "size": null
       },
-      "type": "mobile-device"
-    },
-    "client": {
-      "name": "Android Webkit",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "mobile-device",
+      "ismobile": true
     },
     "os": {
       "name": "JavaOS",
@@ -32,6 +25,15 @@
       "version": null,
       "manufacturer": "sun-microsystems",
       "bits": null
+    },
+    "client": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -56,15 +58,8 @@
         "touch": false,
         "size": null
       },
-      "type": "mobile-device"
-    },
-    "client": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
+      "type": "mobile-device",
+      "ismobile": true
     },
     "os": {
       "name": "JavaOS",
@@ -72,6 +67,15 @@
       "version": null,
       "manufacturer": "sun-microsystems",
       "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -96,15 +100,8 @@
         "touch": false,
         "size": null
       },
-      "type": "mobile-device"
-    },
-    "client": {
-      "name": "Crawler",
-      "modus": null,
-      "version": null,
-      "manufacturer": "linkfluence",
-      "bits": null,
-      "type": "bot"
+      "type": "mobile-device",
+      "ismobile": true
     },
     "os": {
       "name": "JavaOS",
@@ -112,6 +109,15 @@
       "version": null,
       "manufacturer": "sun-microsystems",
       "bits": null
+    },
+    "client": {
+      "name": "Crawler",
+      "modus": null,
+      "version": null,
+      "manufacturer": "linkfluence",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -136,15 +142,8 @@
         "touch": false,
         "size": null
       },
-      "type": "mobile-device"
-    },
-    "client": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
+      "type": "mobile-device",
+      "ismobile": true
     },
     "os": {
       "name": "JavaOS",
@@ -152,6 +151,15 @@
       "version": null,
       "manufacturer": "sun-microsystems",
       "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown",
+      "isbot": false
     },
     "engine": {
       "name": null,

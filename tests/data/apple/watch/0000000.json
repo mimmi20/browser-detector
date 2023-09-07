@@ -16,15 +16,8 @@
         "touch": true,
         "size": 1.5
       },
-      "type": "watch"
-    },
-    "client": {
-      "name": "CoreMedia",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "apple",
-      "bits": null,
-      "type": "multimedia-player"
+      "type": "watch",
+      "ismobile": true
     },
     "os": {
       "name": "watchOS",
@@ -32,6 +25,15 @@
       "version": "5.0.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "CoreMedia",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "apple",
+      "bits": null,
+      "type": "multimedia-player",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -56,15 +58,8 @@
         "touch": true,
         "size": 1.5
       },
-      "type": "watch"
-    },
-    "client": {
-      "name": "CoreMedia",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "apple",
-      "bits": null,
-      "type": "multimedia-player"
+      "type": "watch",
+      "ismobile": true
     },
     "os": {
       "name": "watchOS",
@@ -72,6 +67,15 @@
       "version": "7.1.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "CoreMedia",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "apple",
+      "bits": null,
+      "type": "multimedia-player",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",

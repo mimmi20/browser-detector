@@ -16,15 +16,8 @@
         "touch": true,
         "size": 7.85
       },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Sailfish Browser",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "jolla",
-      "bits": null,
-      "type": "browser"
+      "type": "tablet",
+      "ismobile": true
     },
     "os": {
       "name": "SailfishOS",
@@ -32,6 +25,15 @@
       "version": null,
       "manufacturer": "jolla",
       "bits": null
+    },
+    "client": {
+      "name": "Sailfish Browser",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "jolla",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Gecko",

@@ -1,6 +1,552 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 9_3_5 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G36 [FBAN/MessengerForiOS;FBAV/164.0.0.60.91;FBBV/105889540;FBDV/iPad3,1;FBMD/iPad;FBSN/iPhone OS;FBSV/9.3.5;FBSS/2;FBCR/;FBID/tablet;FBLC/en_GB;FBOP/5;FBRV/0]"
+    },
+    "device": {
+      "deviceName": "iPad 3,1",
+      "marketingName": "iPad 3",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 2048,
+        "height": 1536,
+        "touch": true,
+        "size": 9.7
+      },
+      "type": "tablet",
+      "ismobile": true
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "9.3.5",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Facebook Messenger App",
+      "modus": null,
+      "version": "164.0.0.60.91",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "601.1.46",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 11_2_6 like Mac OS X) AppleWebKit/604.5.6 (KHTML, like Gecko) Mobile/15D100 [FBAN/FBIOS;FBAV/164.0.0.56.96;FBBV/98434650;FBDV/iPad4,4;FBMD/iPad;FBSN/iOS;FBSV/11.2.6;FBSS/2;FBCR/;FBID/tablet;FBLC/en_GB;FBOP/5;FBRV/98434650]"
+    },
+    "device": {
+      "deviceName": "iPad 4,4",
+      "marketingName": "iPad mini 2",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 2048,
+        "height": 1536,
+        "touch": true,
+        "size": 7.9
+      },
+      "type": "tablet",
+      "ismobile": true
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.2.6",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "164.0.0.56.96",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "604.5.6",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 11_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E216 [FBAN/FBIOS;FBAV/168.0.0.57.90;FBBV/103647182;FBDV/iPad6,3;FBMD/iPad;FBSN/iOS;FBSV/11.3;FBSS/2;FBCR/;FBID/tablet;FBLC/en_GB;FBOP/5;FBRV/0]"
+    },
+    "device": {
+      "deviceName": "iPad 6,3",
+      "marketingName": "iPad Pro (9.7)",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 2048,
+        "height": 1536,
+        "touch": true,
+        "size": 9.7
+      },
+      "type": "tablet",
+      "ismobile": true
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.3.0",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "168.0.0.57.90",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 11_2_5 like Mac OS X) AppleWebKit/604.5.6 (KHTML, like Gecko) Mobile/15D60 [FBAN/FBIOS;FBAV/98.0.0.48.70;FBBV/62465497;FBDV/iPad5,1;FBMD/iPad;FBSN/iOS;FBSV/11.2.5;FBSS/2;FBCR/;FBID/tablet;FBLC/en_GB;FBOP/5;FBRV/62465497]"
+    },
+    "device": {
+      "deviceName": "iPad 5,1",
+      "marketingName": "iPad mini 4",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 2048,
+        "height": 1536,
+        "touch": true,
+        "size": 7.9
+      },
+      "type": "tablet",
+      "ismobile": true
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.2.5",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "98.0.0.48.70",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "604.5.6",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 10_2 like Mac OS X) AppleWebKit/602.3.12 (KHTML, like Gecko) Mobile/14C92 [FBAN/FBIOS;FBAV/164.0.0.56.96;FBBV/98434650;FBDV/iPad4,1;FBMD/iPad;FBSN/iOS;FBSV/10.2;FBSS/2;FBCR/;FBID/tablet;FBLC/en_GB;FBOP/5;FBRV/98434650]"
+    },
+    "device": {
+      "deviceName": "iPad 4,1",
+      "marketingName": "iPad Air",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 2048,
+        "height": 1536,
+        "touch": true,
+        "size": 9.7
+      },
+      "type": "tablet",
+      "ismobile": true
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "10.2.0",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "164.0.0.56.96",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "602.3.12",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 9_3_5 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G36 [FBAN/FBIOS;FBAV/168.0.0.57.90;FBBV/103647182;FBDV/iPad2,5;FBMD/iPad;FBSN/iPhone OS;FBSV/9.3.5;FBSS/1;FBCR/;FBID/tablet;FBLC/en_GB;FBOP/5;FBRV/0]"
+    },
+    "device": {
+      "deviceName": "iPad 2,5",
+      "marketingName": "iPad mini",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1024,
+        "height": 768,
+        "touch": true,
+        "size": 7.9
+      },
+      "type": "tablet",
+      "ismobile": true
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "9.3.5",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "168.0.0.57.90",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "601.1.46",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 11_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E216 [FBAN/MessengerForiOS;FBAV/164.0.0.60.91;FBBV/105889540;FBDV/iPad4,4;FBMD/iPad;FBSN/iOS;FBSV/11.3;FBSS/2;FBCR/;FBID/tablet;FBLC/en_GB;FBOP/5;FBRV/0]"
+    },
+    "device": {
+      "deviceName": "iPad 4,4",
+      "marketingName": "iPad mini 2",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 2048,
+        "height": 1536,
+        "touch": true,
+        "size": 7.9
+      },
+      "type": "tablet",
+      "ismobile": true
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.3.0",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Facebook Messenger App",
+      "modus": null,
+      "version": "164.0.0.60.91",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 11_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E302 [FBAN/FBIOS;FBAV/169.0.0.50.95;FBBV/104829965;FBDV/iPad6,7;FBMD/iPad;FBSN/iOS;FBSV/11.3.1;FBSS/2;FBCR/;FBID/tablet;FBLC/en_US;FBOP/5;FBRV/0]"
+    },
+    "device": {
+      "deviceName": "iPad 6,7",
+      "marketingName": "iPad Pro (12.9)",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 2732,
+        "height": 2048,
+        "touch": true,
+        "size": 12.9
+      },
+      "type": "tablet",
+      "ismobile": true
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.3.0",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "169.0.0.50.95",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 11_2_6 like Mac OS X) AppleWebKit/604.5.6 (KHTML, like Gecko) Mobile/15D100 [FBAN/MessengerForiOS;FBAV/159.0.0.56.96;FBBV/99681318;FBDV/iPad6,11;FBMD/iPad;FBSN/iOS;FBSV/11.2.6;FBSS/2;FBCR/;FBID/tablet;FBLC/en_US;FBOP/5;FBRV/0]"
+    },
+    "device": {
+      "deviceName": "iPad 6,11",
+      "marketingName": "iPad (9.7, 5th Gen.)",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 2732,
+        "height": 2048,
+        "touch": true,
+        "size": 9.7
+      },
+      "type": "tablet",
+      "ismobile": true
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.2.6",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Facebook Messenger App",
+      "modus": null,
+      "version": "159.0.0.56.96",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "604.5.6",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 11_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E216 [FBAN/FBIOS;FBAV/170.0.0.60.91;FBBV/105964764;FBDV/iPad5,1;FBMD/iPad;FBSN/iOS;FBSV/11.3;FBSS/2;FBCR/;FBID/tablet;FBLC/en_GB;FBOP/5;FBRV/0]"
+    },
+    "device": {
+      "deviceName": "iPad 5,1",
+      "marketingName": "iPad mini 4",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 2048,
+        "height": 1536,
+        "touch": true,
+        "size": 7.9
+      },
+      "type": "tablet",
+      "ismobile": true
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.3.0",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "170.0.0.60.91",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 11_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E216 [FBAN/FBIOS;FBAV/168.0.0.57.90;FBBV/103647182;FBDV/iPad5,3;FBMD/iPad;FBSN/iOS;FBSV/11.3;FBSS/2;FBCR/;FBID/tablet;FBLC/en_GB;FBOP/5;FBRV/0]"
+    },
+    "device": {
+      "deviceName": "iPad 5,3",
+      "marketingName": "iPad Air 2",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 2048,
+        "height": 1536,
+        "touch": true,
+        "size": 9.7
+      },
+      "type": "tablet",
+      "ismobile": true
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.3.0",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "168.0.0.57.90",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Mobile/15A372 [FBAN/FBIOS;FBAV/170.1.0.80.91;FBBV/106613464;FBDV/iPad5,3;FBMD/iPad;FBSN/iOS;FBSV/11.0;FBSS/2;FBCR/;FBID/tablet;FBLC/en_GB;FBOP/5;FBRV/0]"
+    },
+    "device": {
+      "deviceName": "iPad 5,3",
+      "marketingName": "iPad Air 2",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 2048,
+        "height": 1536,
+        "touch": true,
+        "size": 9.7
+      },
+      "type": "tablet",
+      "ismobile": true
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.0.0",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "170.1.0.80.91",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "604.1.38",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 12_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/89.2.287201133 Mobile/15E148 Safari/605.1"
+    },
+    "device": {
+      "deviceName": "iPad",
+      "marketingName": "iPad",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1024,
+        "height": 768,
+        "touch": true,
+        "size": 9.7
+      },
+      "type": "tablet",
+      "ismobile": true
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.3.0",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Google App",
+      "modus": null,
+      "version": "89.2.287201133",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (iPad; CPU OS 13_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0 YaBrowser/19.12.2.263.11 Mobile/15E148 Safari/604.1 comdirect/1.0 (appVersion:19.12.0;deviceName:apple ipad;deviceType:tablet)"
     },
     "device": {
@@ -16,15 +562,8 @@
         "touch": true,
         "size": 9.7
       },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Yandex Browser",
-      "modus": null,
-      "version": "19.12.2.263.11",
-      "manufacturer": "yandex",
-      "bits": null,
-      "type": "browser"
+      "type": "tablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -32,6 +571,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "modus": null,
+      "version": "19.12.2.263.11",
+      "manufacturer": "yandex",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -56,15 +604,8 @@
         "touch": true,
         "size": 9.7
       },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Google App",
-      "modus": null,
-      "version": "12.0.68608",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
+      "type": "tablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -72,6 +613,15 @@
       "version": "12.3.1",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Google App",
+      "modus": null,
+      "version": "12.0.68608",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -96,15 +646,8 @@
         "touch": true,
         "size": 9.7
       },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Chrome for iOS",
-      "modus": null,
-      "version": "65.0.3325.152",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "tablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -112,6 +655,15 @@
       "version": "13.2.2",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome for iOS",
+      "modus": null,
+      "version": "65.0.3325.152",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -136,15 +688,8 @@
         "touch": true,
         "size": 9.7
       },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Google App",
-      "modus": null,
-      "version": "89.2.287201133",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
+      "type": "tablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -152,6 +697,15 @@
       "version": "13.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Google App",
+      "modus": null,
+      "version": "89.2.287201133",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -176,15 +730,8 @@
         "touch": true,
         "size": 9.7
       },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Google App",
-      "modus": null,
-      "version": "58.0.212077146",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
+      "type": "tablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -192,6 +739,15 @@
       "version": "13.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Google App",
+      "modus": null,
+      "version": "58.0.212077146",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -216,15 +772,8 @@
         "touch": true,
         "size": 9.7
       },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Google App",
-      "modus": null,
-      "version": "11.1.66360",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
+      "type": "tablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -232,6 +781,15 @@
       "version": "12.2.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Google App",
+      "modus": null,
+      "version": "11.1.66360",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -256,15 +814,8 @@
         "touch": true,
         "size": 9.7
       },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Google Mobile App",
-      "modus": null,
-      "version": "42.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
+      "type": "tablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -272,6 +823,15 @@
       "version": "9.3.5",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Google Mobile App",
+      "modus": null,
+      "version": "42.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -296,15 +856,8 @@
         "touch": true,
         "size": 9.7
       },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Firefox Mobile for iOS",
-      "modus": null,
-      "version": "21.0.0",
-      "manufacturer": "mozilla-foundation",
-      "bits": null,
-      "type": "browser"
+      "type": "tablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -312,6 +865,15 @@
       "version": "13.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Firefox Mobile for iOS",
+      "modus": null,
+      "version": "21.0.0",
+      "manufacturer": "mozilla-foundation",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -336,15 +898,8 @@
         "touch": true,
         "size": 9.7
       },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Google App",
-      "modus": null,
-      "version": "91.1.292041477",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
+      "type": "tablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -352,6 +907,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Google App",
+      "modus": null,
+      "version": "91.1.292041477",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -376,15 +940,8 @@
         "touch": true,
         "size": 9.7
       },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Google App",
-      "modus": null,
-      "version": "90.2.291178541",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
+      "type": "tablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -392,6 +949,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Google App",
+      "modus": null,
+      "version": "90.2.291178541",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -416,15 +982,8 @@
         "touch": true,
         "size": 9.7
       },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Google App",
-      "modus": null,
-      "version": "38.0.172903409",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
+      "type": "tablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -432,6 +991,15 @@
       "version": "12.4.1",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Google App",
+      "modus": null,
+      "version": "38.0.172903409",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -456,15 +1024,8 @@
         "touch": true,
         "size": 9.7
       },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Google App",
-      "modus": null,
-      "version": "90.2.291178541",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
+      "type": "tablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -472,6 +1033,15 @@
       "version": "12.4.1",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Google App",
+      "modus": null,
+      "version": "90.2.291178541",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -496,15 +1066,8 @@
         "touch": true,
         "size": 9.7
       },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Google App",
-      "modus": null,
-      "version": "24.0.150344369",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
+      "type": "tablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -512,6 +1075,15 @@
       "version": "13.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Google App",
+      "modus": null,
+      "version": "24.0.150344369",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -536,15 +1108,8 @@
         "touch": true,
         "size": 9.7
       },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Google App",
-      "modus": null,
-      "version": "44.0.187102957",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
+      "type": "tablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -552,6 +1117,15 @@
       "version": "12.4.1",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Google App",
+      "modus": null,
+      "version": "44.0.187102957",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -576,15 +1150,8 @@
         "touch": true,
         "size": 9.7
       },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Google App",
-      "modus": null,
-      "version": "89.2.287201133",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
+      "type": "tablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -592,6 +1159,15 @@
       "version": "12.4.1",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Google App",
+      "modus": null,
+      "version": "89.2.287201133",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -616,15 +1192,8 @@
         "touch": true,
         "size": 9.7
       },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Google App",
-      "modus": null,
-      "version": "51.1.199221351",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
+      "type": "tablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -632,6 +1201,15 @@
       "version": "13.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Google App",
+      "modus": null,
+      "version": "51.1.199221351",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -656,15 +1234,8 @@
         "touch": true,
         "size": 9.7
       },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Chrome for iOS",
-      "modus": null,
-      "version": "80.0.3987.88",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "tablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -672,6 +1243,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome for iOS",
+      "modus": null,
+      "version": "80.0.3987.88",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -696,15 +1276,8 @@
         "touch": true,
         "size": 9.7
       },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Google App",
-      "modus": null,
-      "version": "91.1.292041477",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
+      "type": "tablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -712,6 +1285,15 @@
       "version": "12.4.1",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Google App",
+      "modus": null,
+      "version": "91.1.292041477",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -736,15 +1318,8 @@
         "touch": true,
         "size": 9.7
       },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Firefox Mobile for iOS",
-      "modus": null,
-      "version": "21.0.0",
-      "manufacturer": "mozilla-foundation",
-      "bits": null,
-      "type": "browser"
+      "type": "tablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -752,6 +1327,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Firefox Mobile for iOS",
+      "modus": null,
+      "version": "21.0.0",
+      "manufacturer": "mozilla-foundation",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -776,15 +1360,8 @@
         "touch": true,
         "size": 9.7
       },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Google App",
-      "modus": null,
-      "version": "74.1.250942683",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
+      "type": "tablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -792,6 +1369,15 @@
       "version": "13.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Google App",
+      "modus": null,
+      "version": "74.1.250942683",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -816,15 +1402,8 @@
         "touch": true,
         "size": 9.7
       },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Google App",
-      "modus": null,
-      "version": "93.2.294114169",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
+      "type": "tablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -832,6 +1411,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Google App",
+      "modus": null,
+      "version": "93.2.294114169",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -856,15 +1444,8 @@
         "touch": true,
         "size": 9.7
       },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Google App",
-      "modus": null,
-      "version": "43.0.185608249",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
+      "type": "tablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -872,6 +1453,15 @@
       "version": "12.4.1",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Google App",
+      "modus": null,
+      "version": "43.0.185608249",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -896,15 +1486,8 @@
         "touch": true,
         "size": 10.2
       },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": null,
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "tablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -912,6 +1495,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": null,
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -936,15 +1528,8 @@
         "touch": true,
         "size": 9.7
       },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Google App",
-      "modus": null,
-      "version": "94.0.294702951",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
+      "type": "tablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -952,6 +1537,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Google App",
+      "modus": null,
+      "version": "94.0.294702951",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -976,15 +1570,8 @@
         "touch": true,
         "size": 9.7
       },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "257.0.0.46.115",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "tablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -992,6 +1579,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "257.0.0.46.115",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -1016,15 +1612,8 @@
         "touch": true,
         "size": 9.7
       },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Safari",
-      "modus": null,
-      "version": "11.0.0",
-      "manufacturer": "apple",
-      "bits": null,
-      "type": "browser"
+      "type": "tablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -1032,6 +1621,15 @@
       "version": "9.3.2",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Safari",
+      "modus": null,
+      "version": "11.0.0",
+      "manufacturer": "apple",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -1056,15 +1654,8 @@
         "touch": true,
         "size": 9.7
       },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Google App",
-      "modus": null,
-      "version": "94.0.294702951",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
+      "type": "tablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -1072,6 +1663,15 @@
       "version": "13.3.1",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Google App",
+      "modus": null,
+      "version": "94.0.294702951",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -1096,15 +1696,8 @@
         "touch": true,
         "size": 9.7
       },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Google App",
-      "modus": null,
-      "version": "93.2.294114169",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
+      "type": "tablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -1112,6 +1705,15 @@
       "version": "13.3.1",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Google App",
+      "modus": null,
+      "version": "93.2.294114169",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -1136,15 +1738,8 @@
         "touch": true,
         "size": 10.5
       },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": null,
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "tablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -1152,6 +1747,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": null,
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -1176,15 +1780,8 @@
         "touch": true,
         "size": 9.7
       },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "207.0.0.48.100",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "tablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -1192,6 +1789,15 @@
       "version": "12.0.1",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "207.0.0.48.100",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -1216,15 +1822,8 @@
         "touch": true,
         "size": 9.7
       },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "130.0.0.15.120",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "tablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -1232,6 +1831,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "130.0.0.15.120",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -1256,15 +1864,8 @@
         "touch": true,
         "size": 9.7
       },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Google App",
-      "modus": null,
-      "version": "95.0.296015020",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
+      "type": "tablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -1272,6 +1873,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Google App",
+      "modus": null,
+      "version": "95.0.296015020",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -1296,15 +1906,8 @@
         "touch": true,
         "size": 9.7
       },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Google App",
-      "modus": null,
-      "version": "34.0.166534940",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
+      "type": "tablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -1312,6 +1915,15 @@
       "version": "13.3.1",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Google App",
+      "modus": null,
+      "version": "34.0.166534940",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -1336,15 +1948,8 @@
         "touch": true,
         "size": 9.7
       },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Facebook Messenger App",
-      "modus": null,
-      "version": null,
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "tablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -1352,6 +1957,15 @@
       "version": "9.3.5",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Facebook Messenger App",
+      "modus": null,
+      "version": null,
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -1376,15 +1990,8 @@
         "touch": true,
         "size": 9.7
       },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Google App",
-      "modus": null,
-      "version": "96.0.297407227",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
+      "type": "tablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -1392,6 +1999,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Google App",
+      "modus": null,
+      "version": "96.0.297407227",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -1416,15 +2032,8 @@
         "touch": true,
         "size": 9.7
       },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Google App",
-      "modus": null,
-      "version": "96.0.297407227",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
+      "type": "tablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -1432,6 +2041,15 @@
       "version": "12.4.1",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Google App",
+      "modus": null,
+      "version": "96.0.297407227",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -1456,15 +2074,8 @@
         "touch": true,
         "size": 9.7
       },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Google App",
-      "modus": null,
-      "version": "14.1.119979954",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
+      "type": "tablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -1472,6 +2083,15 @@
       "version": "13.2.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Google App",
+      "modus": null,
+      "version": "14.1.119979954",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -1496,15 +2116,8 @@
         "touch": true,
         "size": 9.7
       },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Google App",
-      "modus": null,
-      "version": "96.0.297407227",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
+      "type": "tablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -1512,6 +2125,15 @@
       "version": "13.3.1",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Google App",
+      "modus": null,
+      "version": "96.0.297407227",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -1536,15 +2158,8 @@
         "touch": true,
         "size": 12.9
       },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "133.0.0.20.118",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "tablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -1552,6 +2167,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "133.0.0.20.118",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -1576,15 +2200,8 @@
         "touch": true,
         "size": 9.7
       },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Google App",
-      "modus": null,
-      "version": "98.0.300355889",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
+      "type": "tablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -1592,6 +2209,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Google App",
+      "modus": null,
+      "version": "98.0.300355889",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -1616,15 +2242,8 @@
         "touch": true,
         "size": 9.7
       },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Google App",
-      "modus": null,
-      "version": "97.0.298258560",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
+      "type": "tablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -1632,6 +2251,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Google App",
+      "modus": null,
+      "version": "97.0.298258560",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -1656,15 +2284,8 @@
         "touch": true,
         "size": 9.7
       },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Google App",
-      "modus": null,
-      "version": "97.0.298258560",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
+      "type": "tablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -1672,6 +2293,15 @@
       "version": "13.3.1",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Google App",
+      "modus": null,
+      "version": "97.0.298258560",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -1696,15 +2326,8 @@
         "touch": true,
         "size": 9.7
       },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Google App",
-      "modus": null,
-      "version": "37.1.171590344",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
+      "type": "tablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -1712,6 +2335,15 @@
       "version": "12.4.1",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Google App",
+      "modus": null,
+      "version": "37.1.171590344",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -1736,15 +2368,8 @@
         "touch": true,
         "size": 9.7
       },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Google App",
-      "modus": null,
-      "version": "98.0.300355889",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
+      "type": "tablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -1752,6 +2377,15 @@
       "version": "13.3.1",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Google App",
+      "modus": null,
+      "version": "98.0.300355889",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -1776,15 +2410,8 @@
         "touch": true,
         "size": 9.7
       },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Google App",
-      "modus": null,
-      "version": "99.0.302108490",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
+      "type": "tablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -1792,6 +2419,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Google App",
+      "modus": null,
+      "version": "99.0.302108490",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -1816,15 +2452,8 @@
         "touch": true,
         "size": 9.7
       },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Google App",
-      "modus": null,
-      "version": "99.0.302108490",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
+      "type": "tablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -1832,6 +2461,15 @@
       "version": "12.4.1",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Google App",
+      "modus": null,
+      "version": "99.0.302108490",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -1856,15 +2494,8 @@
         "touch": true,
         "size": 9.7
       },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Google App",
-      "modus": null,
-      "version": "56.0.208290612",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
+      "type": "tablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -1872,6 +2503,15 @@
       "version": "13.1.2",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Google App",
+      "modus": null,
+      "version": "56.0.208290612",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -1896,15 +2536,8 @@
         "touch": true,
         "size": 9.7
       },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Google App",
-      "modus": null,
-      "version": "100.0.302345841",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
+      "type": "tablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -1912,6 +2545,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Google App",
+      "modus": null,
+      "version": "100.0.302345841",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -1936,15 +2578,8 @@
         "touch": true,
         "size": 7.9
       },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": null,
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "tablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -1952,6 +2587,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": null,
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -1976,15 +2620,8 @@
         "touch": true,
         "size": 9.7
       },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Google App",
-      "modus": null,
-      "version": "100.0.302345841",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
+      "type": "tablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -1992,6 +2629,15 @@
       "version": "13.4.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Google App",
+      "modus": null,
+      "version": "100.0.302345841",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -2016,15 +2662,8 @@
         "touch": true,
         "size": 9.7
       },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Flipboard App",
-      "modus": null,
-      "version": "4.2.32",
-      "manufacturer": "flipboard",
-      "bits": null,
-      "type": "application"
+      "type": "tablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -2032,6 +2671,15 @@
       "version": "12.1.1",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Flipboard App",
+      "modus": null,
+      "version": "4.2.32",
+      "manufacturer": "flipboard",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -2056,15 +2704,8 @@
         "touch": true,
         "size": 9.7
       },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "135.1.0.23.118",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "tablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -2072,6 +2713,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "135.1.0.23.118",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -2096,15 +2746,8 @@
         "touch": true,
         "size": 9.7
       },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "135.1.0.23.118",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "tablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -2112,6 +2755,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "135.1.0.23.118",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -2136,15 +2788,8 @@
         "touch": true,
         "size": 12.9
       },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": null,
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "tablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -2152,6 +2797,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": null,
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -2176,15 +2830,8 @@
         "touch": true,
         "size": 7.9
       },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": null,
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "tablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -2192,6 +2839,15 @@
       "version": "9.3.5",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": null,
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -2216,15 +2872,8 @@
         "touch": true,
         "size": 12.9
       },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "198.0.0.57.101",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "tablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -2232,6 +2881,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "198.0.0.57.101",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -2256,15 +2914,8 @@
         "touch": true,
         "size": 9.7
       },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "175.0.0.47.102",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "tablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -2272,6 +2923,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "175.0.0.47.102",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -2296,15 +2956,8 @@
         "touch": true,
         "size": 10.5
       },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": null,
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "tablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -2312,6 +2965,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": null,
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -2336,15 +2998,8 @@
         "touch": true,
         "size": 9.7
       },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Coast",
-      "modus": null,
-      "version": "5.04.110603",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "application"
+      "type": "tablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -2352,6 +3007,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Coast",
+      "modus": null,
+      "version": "5.04.110603",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -2376,15 +3040,8 @@
         "touch": true,
         "size": 9.7
       },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Safari",
-      "modus": null,
-      "version": null,
-      "manufacturer": "apple",
-      "bits": null,
-      "type": "browser"
+      "type": "tablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -2392,6 +3049,15 @@
       "version": "10.3.3",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Safari",
+      "modus": null,
+      "version": null,
+      "manufacturer": "apple",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -2416,15 +3082,8 @@
         "touch": true,
         "size": 9.7
       },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Diigo Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "diigo",
-      "bits": null,
-      "type": "browser"
+      "type": "tablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -2432,6 +3091,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Diigo Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "diigo",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -2456,15 +3124,8 @@
         "touch": true,
         "size": 9.7
       },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Coc Coc Browser",
-      "modus": null,
-      "version": "83.0.190",
-      "manufacturer": "coc-coc-company",
-      "bits": null,
-      "type": "browser"
+      "type": "tablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -2472,6 +3133,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Coc Coc Browser",
+      "modus": null,
+      "version": "83.0.190",
+      "manufacturer": "coc-coc-company",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -2496,15 +3166,8 @@
         "touch": true,
         "size": 9.7
       },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Google App",
-      "modus": null,
-      "version": "101.0.303750571",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
+      "type": "tablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -2512,6 +3175,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Google App",
+      "modus": null,
+      "version": "101.0.303750571",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -2536,15 +3208,8 @@
         "touch": true,
         "size": 9.7
       },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Google App",
-      "modus": null,
-      "version": "102.0.304944559",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
+      "type": "tablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -2552,6 +3217,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Google App",
+      "modus": null,
+      "version": "102.0.304944559",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -2576,15 +3250,8 @@
         "touch": true,
         "size": 9.7
       },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Chrome for iOS",
-      "modus": null,
-      "version": "81.0.4044.62",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "tablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -2592,6 +3259,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome for iOS",
+      "modus": null,
+      "version": "81.0.4044.62",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -2616,15 +3292,8 @@
         "touch": true,
         "size": 12.9
       },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "136.0.0.22.123",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "tablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -2632,6 +3301,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "136.0.0.22.123",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -2656,15 +3334,8 @@
         "touch": true,
         "size": 9.7
       },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "136.0.0.22.123",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "tablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -2672,6 +3343,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "136.0.0.22.123",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -2696,15 +3376,8 @@
         "touch": true,
         "size": 10.5
       },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "136.0.0.22.123",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "tablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -2712,6 +3385,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "136.0.0.22.123",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -2736,15 +3418,8 @@
         "touch": true,
         "size": 12.9
       },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "136.0.0.22.123",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "tablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -2752,6 +3427,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "136.0.0.22.123",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -2776,15 +3460,8 @@
         "touch": true,
         "size": 9.7
       },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "136.0.0.22.123",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "tablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -2792,6 +3469,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "136.0.0.22.123",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -2816,15 +3502,8 @@
         "touch": true,
         "size": 7.9
       },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "135.1.0.23.118",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "tablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -2832,6 +3511,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "135.1.0.23.118",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -2856,15 +3544,8 @@
         "touch": true,
         "size": 10.5
       },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "135.1.0.23.118",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "tablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -2872,6 +3553,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "135.1.0.23.118",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -2896,15 +3586,8 @@
         "touch": true,
         "size": 9.7
       },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "136.0.0.22.123",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "tablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -2912,6 +3595,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "136.0.0.22.123",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -2936,15 +3628,8 @@
         "touch": true,
         "size": 12.9
       },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": null,
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "tablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -2952,6 +3637,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": null,
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -2976,15 +3670,8 @@
         "touch": true,
         "size": 9.7
       },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "135.1.0.23.118",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "tablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -2992,6 +3679,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "135.1.0.23.118",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -3016,15 +3712,8 @@
         "touch": true,
         "size": 10.5
       },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "137.0.0.30.124",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "tablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -3032,6 +3721,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "137.0.0.30.124",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -3056,15 +3754,8 @@
         "touch": true,
         "size": 11
       },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "137.0.0.30.124",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "tablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -3072,6 +3763,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "137.0.0.30.124",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -3096,15 +3796,8 @@
         "touch": true,
         "size": 10.2
       },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "137.0.0.30.124",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "tablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -3112,6 +3805,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "137.0.0.30.124",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -3136,15 +3838,8 @@
         "touch": true,
         "size": 9.7
       },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "137.0.0.30.124",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "tablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -3152,6 +3847,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "137.0.0.30.124",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -3176,15 +3880,8 @@
         "touch": true,
         "size": 9.7
       },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": null,
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "tablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -3192,6 +3889,15 @@
       "version": "9.3.5",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": null,
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -3216,15 +3922,8 @@
         "touch": true,
         "size": 9.7
       },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "137.0.0.30.124",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "tablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -3232,6 +3931,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "137.0.0.30.124",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -3256,15 +3964,8 @@
         "touch": true,
         "size": 9.7
       },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "136.0.0.22.123",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "tablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -3272,6 +3973,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "136.0.0.22.123",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -3296,15 +4006,8 @@
         "touch": true,
         "size": 9.7
       },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Google App",
-      "modus": null,
-      "version": "48.0.193557427",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
+      "type": "tablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -3312,6 +4015,15 @@
       "version": "13.3.1",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Google App",
+      "modus": null,
+      "version": "48.0.193557427",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -3336,15 +4048,8 @@
         "touch": true,
         "size": 9.7
       },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "RubyBrowser",
-      "modus": null,
-      "version": "45.2.16",
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "browser"
+      "type": "tablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -3352,6 +4057,15 @@
       "version": "13.4.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "RubyBrowser",
+      "modus": null,
+      "version": "45.2.16",
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -3376,15 +4090,8 @@
         "touch": true,
         "size": 9.7
       },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Google App",
-      "modus": null,
-      "version": "101.0.303750571",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
+      "type": "tablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -3392,6 +4099,15 @@
       "version": "13.4.1",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Google App",
+      "modus": null,
+      "version": "101.0.303750571",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -3416,15 +4132,8 @@
         "touch": true,
         "size": 10.5
       },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Google Mobile App",
-      "modus": null,
-      "version": "101.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
+      "type": "tablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -3432,6 +4141,15 @@
       "version": "13.4.1",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Google Mobile App",
+      "modus": null,
+      "version": "101.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -3456,15 +4174,8 @@
         "touch": true,
         "size": 9.7
       },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "RubyBrowser",
-      "modus": null,
-      "version": "45.2.16",
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "browser"
+      "type": "tablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -3473,529 +4184,18 @@
       "manufacturer": "apple",
       "bits": null
     },
+    "client": {
+      "name": "RubyBrowser",
+      "modus": null,
+      "version": "45.2.16",
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 12_4_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 137.0.0.30.124 (iPad4,4; iOS 12_4_5; de_DE; de-DE; scale=2.00; 750x1334; 208685371) comdirect/1.0 (appVersion:20.4.0;deviceName:apple iphone;deviceType:mobile)"
-    },
-    "device": {
-      "deviceName": "iPad 4,4",
-      "marketingName": "iPad mini 2",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 2048,
-        "height": 1536,
-        "touch": true,
-        "size": 7.9
-      },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "137.0.0.30.124",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPad; CPU OS 12_1_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) CriOS/59.0.3071.102 Mobile/16C50 Safari/602.1"
-    },
-    "device": {
-      "deviceName": "iPad",
-      "marketingName": "iPad",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1024,
-        "height": 768,
-        "touch": true,
-        "size": 9.7
-      },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Chrome for iOS",
-      "modus": null,
-      "version": "59.0.3071.102",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "12.1.1",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "603.1.30",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPad; CPU OS 13_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/102.0.304944559 Mobile/17E255 Safari/604.1"
-    },
-    "device": {
-      "deviceName": "iPad",
-      "marketingName": "iPad",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1024,
-        "height": 768,
-        "touch": true,
-        "size": 9.7
-      },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Google App",
-      "modus": null,
-      "version": "102.0.304944559",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "13.4.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPad; CPU OS 13_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/105.0.307913796 Mobile/15E148 Safari/604.1"
-    },
-    "device": {
-      "deviceName": "iPad",
-      "marketingName": "iPad",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1024,
-        "height": 768,
-        "touch": true,
-        "size": 9.7
-      },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Google App",
-      "modus": null,
-      "version": "105.0.307913796",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPad; CPU OS 12_4_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0 EdgiOS/45.3.19 Mobile/15E148 Safari/605.1.15"
-    },
-    "device": {
-      "deviceName": "iPad",
-      "marketingName": "iPad",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1024,
-        "height": 768,
-        "touch": true,
-        "size": 9.7
-      },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Edge Mobile for iOS",
-      "modus": null,
-      "version": "45.3.19",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPad; CPU OS 13_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 140.0.0.25.126 (iPad5,3; iOS 13_4_1; de_DE; de-DE; scale=2.00; 1334x750; 212235464)"
-    },
-    "device": {
-      "deviceName": "iPad 5,3",
-      "marketingName": "iPad Air 2",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 2048,
-        "height": 1536,
-        "touch": true,
-        "size": 9.7
-      },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "140.0.0.25.126",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPad; CPU OS 13_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/105.0.307913796 Mobile/17E262 Safari/604.1"
-    },
-    "device": {
-      "deviceName": "iPad",
-      "marketingName": "iPad",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1024,
-        "height": 768,
-        "touch": true,
-        "size": 9.7
-      },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Google App",
-      "modus": null,
-      "version": "105.0.307913796",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "13.4.1",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPad; CPU OS 13_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 140.0.0.25.126 (iPad7,5; iOS 13_4_1; de_DE; de-DE; scale=2.00; 1334x750; 212235464) comdirect/1.0 (appVersion:20.4.0;deviceName:apple ipad;deviceType:tablet)"
-    },
-    "device": {
-      "deviceName": "iPad 7,5",
-      "marketingName": "iPad 6 (9.7)",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 2048,
-        "height": 1536,
-        "touch": true,
-        "size": 9.7
-      },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "140.0.0.25.126",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPad; CPU OS 13_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/107.0.310639584 Mobile/15E148 Safari/604.1"
-    },
-    "device": {
-      "deviceName": "iPad",
-      "marketingName": "iPad",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1024,
-        "height": 768,
-        "touch": true,
-        "size": 9.7
-      },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Google App",
-      "modus": null,
-      "version": "107.0.310639584",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPad; CPU OS 13_4_1 like Mac OS X) AppleWebKit/604.1.34 (KHTML, like Gecko) GSA/60.0.215960477 Mobile/17E262 Safari/604.1"
-    },
-    "device": {
-      "deviceName": "iPad",
-      "marketingName": "iPad",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1024,
-        "height": 768,
-        "touch": true,
-        "size": 9.7
-      },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Google App",
-      "modus": null,
-      "version": "60.0.215960477",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "13.4.1",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "604.1.34",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPad; CPU OS 12_4_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/107.0.310639584 Mobile/16G161 Safari/604.1"
-    },
-    "device": {
-      "deviceName": "iPad",
-      "marketingName": "iPad",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1024,
-        "height": 768,
-        "touch": true,
-        "size": 9.7
-      },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Google App",
-      "modus": null,
-      "version": "107.0.310639584",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "12.4.1",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPad; CPU OS 9_1 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/9.0 Mobile/10A5355d Safari/8536.25"
-    },
-    "device": {
-      "deviceName": "iPad",
-      "marketingName": "iPad",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1024,
-        "height": 768,
-        "touch": true,
-        "size": 9.7
-      },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Safari",
-      "modus": null,
-      "version": "9.0.0",
-      "manufacturer": "apple",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "6.0.0-beta+3",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "536.26.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPad; CPU OS 13_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/83.0.4103.63 Mobile/15E148 Safari/604.1"
-    },
-    "device": {
-      "deviceName": "iPad",
-      "marketingName": "iPad",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1024,
-        "height": 768,
-        "touch": true,
-        "size": 9.7
-      },
-      "type": "tablet"
-    },
-    "client": {
-      "name": "Chrome for iOS",
-      "modus": null,
-      "version": "83.0.4103.63",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
       "manufacturer": "apple"
     }
   }

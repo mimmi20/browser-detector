@@ -16,15 +16,8 @@
         "touch": false,
         "size": null
       },
-      "type": "tv-console"
-    },
-    "client": {
-      "name": "NintendoBrowser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nintendo",
-      "bits": null,
-      "type": "browser"
+      "type": "tv-console",
+      "ismobile": false
     },
     "os": {
       "name": "Nintendo OS",
@@ -32,6 +25,15 @@
       "version": null,
       "manufacturer": "nintendo",
       "bits": null
+    },
+    "client": {
+      "name": "NintendoBrowser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "nintendo",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Presto",
@@ -56,15 +58,8 @@
         "touch": false,
         "size": null
       },
-      "type": "tv-console"
-    },
-    "client": {
-      "name": "NintendoBrowser",
-      "modus": null,
-      "version": "1.0.0.7494",
-      "manufacturer": "nintendo",
-      "bits": null,
-      "type": "browser"
+      "type": "tv-console",
+      "ismobile": false
     },
     "os": {
       "name": "Nintendo OS",
@@ -72,6 +67,15 @@
       "version": null,
       "manufacturer": "nintendo",
       "bits": null
+    },
+    "client": {
+      "name": "NintendoBrowser",
+      "modus": null,
+      "version": "1.0.0.7494",
+      "manufacturer": "nintendo",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -96,15 +100,8 @@
         "touch": false,
         "size": null
       },
-      "type": "tv-console"
-    },
-    "client": {
-      "name": "NintendoBrowser",
-      "modus": null,
-      "version": "2.1.0.9559",
-      "manufacturer": "nintendo",
-      "bits": null,
-      "type": "browser"
+      "type": "tv-console",
+      "ismobile": false
     },
     "os": {
       "name": "Nintendo OS",
@@ -112,6 +109,15 @@
       "version": null,
       "manufacturer": "nintendo",
       "bits": null
+    },
+    "client": {
+      "name": "NintendoBrowser",
+      "modus": null,
+      "version": "2.1.0.9559",
+      "manufacturer": "nintendo",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -136,15 +142,8 @@
         "touch": false,
         "size": null
       },
-      "type": "tv-console"
-    },
-    "client": {
-      "name": "NintendoBrowser",
-      "modus": null,
-      "version": "4.1.0.9584",
-      "manufacturer": "nintendo",
-      "bits": null,
-      "type": "browser"
+      "type": "tv-console",
+      "ismobile": false
     },
     "os": {
       "name": "Nintendo OS",
@@ -152,6 +151,15 @@
       "version": null,
       "manufacturer": "nintendo",
       "bits": null
+    },
+    "client": {
+      "name": "NintendoBrowser",
+      "modus": null,
+      "version": "4.1.0.9584",
+      "manufacturer": "nintendo",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -176,15 +184,8 @@
         "touch": false,
         "size": null
       },
-      "type": "tv-console"
-    },
-    "client": {
-      "name": "Mobile Safari UIWebView",
-      "modus": null,
-      "version": null,
-      "manufacturer": "apple",
-      "bits": null,
-      "type": "browser"
+      "type": "tv-console",
+      "ismobile": false
     },
     "os": {
       "name": "Nintendo OS",
@@ -192,6 +193,15 @@
       "version": null,
       "manufacturer": "nintendo",
       "bits": null
+    },
+    "client": {
+      "name": "Mobile Safari UIWebView",
+      "modus": null,
+      "version": null,
+      "manufacturer": "apple",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -216,15 +226,8 @@
         "touch": false,
         "size": null
       },
-      "type": "tv-console"
-    },
-    "client": {
-      "name": "NintendoBrowser",
-      "modus": null,
-      "version": "3.1.1.9577",
-      "manufacturer": "nintendo",
-      "bits": null,
-      "type": "browser"
+      "type": "tv-console",
+      "ismobile": false
     },
     "os": {
       "name": "Nintendo OS",
@@ -232,6 +235,15 @@
       "version": null,
       "manufacturer": "nintendo",
       "bits": null
+    },
+    "client": {
+      "name": "NintendoBrowser",
+      "modus": null,
+      "version": "3.1.1.9577",
+      "manufacturer": "nintendo",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -256,15 +268,8 @@
         "touch": false,
         "size": null
       },
-      "type": "tv-console"
-    },
-    "client": {
-      "name": "Google Translate",
-      "modus": null,
-      "version": null,
-      "manufacturer": "google",
-      "bits": null,
-      "type": "bot"
+      "type": "tv-console",
+      "ismobile": false
     },
     "os": {
       "name": "Nintendo OS",
@@ -272,6 +277,15 @@
       "version": null,
       "manufacturer": "nintendo",
       "bits": null
+    },
+    "client": {
+      "name": "Google Translate",
+      "modus": null,
+      "version": null,
+      "manufacturer": "google",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -296,15 +310,8 @@
         "touch": false,
         "size": null
       },
-      "type": "tv-console"
-    },
-    "client": {
-      "name": "NetFront NX",
-      "modus": null,
-      "version": "2.1.0.8.8",
-      "manufacturer": "access",
-      "bits": null,
-      "type": "browser"
+      "type": "tv-console",
+      "ismobile": false
     },
     "os": {
       "name": "Nintendo OS",
@@ -312,6 +319,15 @@
       "version": null,
       "manufacturer": "nintendo",
       "bits": null
+    },
+    "client": {
+      "name": "NetFront NX",
+      "modus": null,
+      "version": "2.1.0.8.8",
+      "manufacturer": "access",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -336,15 +352,8 @@
         "touch": false,
         "size": null
       },
-      "type": "tv-console"
-    },
-    "client": {
-      "name": "NetFront NX",
-      "modus": null,
-      "version": null,
-      "manufacturer": "access",
-      "bits": null,
-      "type": "browser"
+      "type": "tv-console",
+      "ismobile": false
     },
     "os": {
       "name": "Nintendo OS",
@@ -352,6 +361,15 @@
       "version": null,
       "manufacturer": "nintendo",
       "bits": null
+    },
+    "client": {
+      "name": "NetFront NX",
+      "modus": null,
+      "version": null,
+      "manufacturer": "access",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -376,15 +394,8 @@
         "touch": false,
         "size": null
       },
-      "type": "tv-console"
-    },
-    "client": {
-      "name": "NintendoBrowser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nintendo",
-      "bits": null,
-      "type": "browser"
+      "type": "tv-console",
+      "ismobile": false
     },
     "os": {
       "name": "Nintendo OS",
@@ -392,6 +403,15 @@
       "version": null,
       "manufacturer": "nintendo",
       "bits": null
+    },
+    "client": {
+      "name": "NintendoBrowser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "nintendo",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",

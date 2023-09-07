@@ -16,15 +16,8 @@
         "touch": false,
         "size": null
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "WAP Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "wap-browser"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "JavaOS",
@@ -32,6 +25,15 @@
       "version": null,
       "manufacturer": "sun-microsystems",
       "bits": null
+    },
+    "client": {
+      "name": "WAP Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "wap-browser",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -56,15 +58,8 @@
         "touch": true,
         "size": 2.6
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "MAUI Wap Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "wap-browser"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "JavaOS",
@@ -72,6 +67,15 @@
       "version": null,
       "manufacturer": "sun-microsystems",
       "bits": null
+    },
+    "client": {
+      "name": "MAUI Wap Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "wap-browser",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -96,15 +100,8 @@
         "touch": false,
         "size": null
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "9.4.0.342",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "JavaOS",
@@ -112,6 +109,15 @@
       "version": null,
       "manufacturer": "sun-microsystems",
       "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "9.4.0.342",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
     },
     "engine": {
       "name": "U2",
@@ -136,15 +142,8 @@
         "touch": false,
         "size": 1.8
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "WAP Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "wap-browser"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "JavaOS",
@@ -152,6 +151,15 @@
       "version": null,
       "manufacturer": "sun-microsystems",
       "bits": null
+    },
+    "client": {
+      "name": "WAP Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "wap-browser",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -176,15 +184,8 @@
         "touch": false,
         "size": 2.4
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "WAP Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "wap-browser"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "JavaOS",
@@ -192,6 +193,15 @@
       "version": null,
       "manufacturer": "sun-microsystems",
       "bits": null
+    },
+    "client": {
+      "name": "WAP Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "wap-browser",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -216,15 +226,8 @@
         "touch": false,
         "size": 1.8
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "WAP Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "wap-browser"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "JavaOS",
@@ -232,6 +235,15 @@
       "version": null,
       "manufacturer": "sun-microsystems",
       "bits": null
+    },
+    "client": {
+      "name": "WAP Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "wap-browser",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -256,15 +268,8 @@
         "touch": false,
         "size": 2.4
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "WAP Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "wap-browser"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "JavaOS",
@@ -272,6 +277,15 @@
       "version": null,
       "manufacturer": "sun-microsystems",
       "bits": null
+    },
+    "client": {
+      "name": "WAP Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "wap-browser",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -296,15 +310,8 @@
         "touch": false,
         "size": 3
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "MAUI Wap Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "wap-browser"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "JavaOS",
@@ -312,6 +319,15 @@
       "version": null,
       "manufacturer": "sun-microsystems",
       "bits": null
+    },
+    "client": {
+      "name": "MAUI Wap Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "wap-browser",
+      "isbot": false
     },
     "engine": {
       "name": null,

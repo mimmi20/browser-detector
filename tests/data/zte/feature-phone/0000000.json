@@ -16,15 +16,8 @@
         "touch": false,
         "size": null
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "Openwave Mobile Browser",
-      "modus": null,
-      "version": "6.3.0.7",
-      "manufacturer": "myriad",
-      "bits": null,
-      "type": "browser"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "JavaOS",
@@ -32,6 +25,15 @@
       "version": null,
       "manufacturer": "sun-microsystems",
       "bits": null
+    },
+    "client": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "6.3.0.7",
+      "manufacturer": "myriad",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -56,15 +58,8 @@
         "touch": false,
         "size": null
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "9.4.1.377",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "JavaOS",
@@ -72,6 +67,15 @@
       "version": null,
       "manufacturer": "sun-microsystems",
       "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "9.4.1.377",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
     },
     "engine": {
       "name": "U2",
@@ -96,15 +100,8 @@
         "touch": false,
         "size": 2.4
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "5.1.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "Brew",
@@ -112,6 +109,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Opera Mini",
+      "modus": null,
+      "version": "5.1.0",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
     },
     "engine": {
       "name": "Presto",
@@ -136,15 +142,8 @@
         "touch": false,
         "size": null
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": null,
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "JavaOS",
@@ -152,6 +151,15 @@
       "version": null,
       "manufacturer": "sun-microsystems",
       "bits": null
+    },
+    "client": {
+      "name": "Opera Mini",
+      "modus": null,
+      "version": null,
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
     },
     "engine": {
       "name": "Presto",
@@ -176,15 +184,8 @@
         "touch": false,
         "size": null
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "Obigo Q",
-      "modus": null,
-      "version": "3.0.0",
-      "manufacturer": "obigo",
-      "bits": null,
-      "type": "browser"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "JavaOS",
@@ -192,6 +193,15 @@
       "version": null,
       "manufacturer": "sun-microsystems",
       "bits": null
+    },
+    "client": {
+      "name": "Obigo Q",
+      "modus": null,
+      "version": "3.0.0",
+      "manufacturer": "obigo",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Teleca",
@@ -216,15 +226,8 @@
         "touch": false,
         "size": null
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "Android Webkit",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "JavaOS",
@@ -232,6 +235,15 @@
       "version": null,
       "manufacturer": "sun-microsystems",
       "bits": null
+    },
+    "client": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -256,15 +268,8 @@
         "touch": false,
         "size": null
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "Android Webkit",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "JavaOS",
@@ -272,6 +277,15 @@
       "version": null,
       "manufacturer": "sun-microsystems",
       "bits": null
+    },
+    "client": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -296,15 +310,8 @@
         "touch": false,
         "size": null
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "Obigo Q",
-      "modus": null,
-      "version": "7.3.0",
-      "manufacturer": "obigo",
-      "bits": null,
-      "type": "browser"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "JavaOS",
@@ -312,6 +319,15 @@
       "version": null,
       "manufacturer": "sun-microsystems",
       "bits": null
+    },
+    "client": {
+      "name": "Obigo Q",
+      "modus": null,
+      "version": "7.3.0",
+      "manufacturer": "obigo",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Teleca",
@@ -336,15 +352,8 @@
         "touch": false,
         "size": 2
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "NetFront",
-      "modus": null,
-      "version": "3.5.0",
-      "manufacturer": "access",
-      "bits": null,
-      "type": "browser"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "JavaOS",
@@ -352,6 +361,15 @@
       "version": null,
       "manufacturer": "sun-microsystems",
       "bits": null
+    },
+    "client": {
+      "name": "NetFront",
+      "modus": null,
+      "version": "3.5.0",
+      "manufacturer": "access",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "NetFront",
@@ -376,15 +394,8 @@
         "touch": false,
         "size": 2.4
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "NetFront",
-      "modus": null,
-      "version": "4.2.0",
-      "manufacturer": "access",
-      "bits": null,
-      "type": "browser"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "JavaOS",
@@ -392,6 +403,15 @@
       "version": null,
       "manufacturer": "sun-microsystems",
       "bits": null
+    },
+    "client": {
+      "name": "NetFront",
+      "modus": null,
+      "version": "4.2.0",
+      "manufacturer": "access",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "NetFront",
@@ -416,15 +436,8 @@
         "touch": false,
         "size": 2.4
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "Obigo Q",
-      "modus": null,
-      "version": "3.0.0",
-      "manufacturer": "obigo",
-      "bits": null,
-      "type": "browser"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "JavaOS",
@@ -432,6 +445,15 @@
       "version": null,
       "manufacturer": "sun-microsystems",
       "bits": null
+    },
+    "client": {
+      "name": "Obigo Q",
+      "modus": null,
+      "version": "3.0.0",
+      "manufacturer": "obigo",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Teleca",
@@ -456,15 +478,8 @@
         "touch": false,
         "size": 2
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "NetFront",
-      "modus": null,
-      "version": "3.4.0",
-      "manufacturer": "access",
-      "bits": null,
-      "type": "browser"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "JavaOS",
@@ -472,6 +487,15 @@
       "version": null,
       "manufacturer": "sun-microsystems",
       "bits": null
+    },
+    "client": {
+      "name": "NetFront",
+      "modus": null,
+      "version": "3.4.0",
+      "manufacturer": "access",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "NetFront",
@@ -496,15 +520,8 @@
         "touch": false,
         "size": 2
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "NetFront",
-      "modus": null,
-      "version": "3.2.0",
-      "manufacturer": "access",
-      "bits": null,
-      "type": "browser"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "JavaOS",
@@ -512,6 +529,15 @@
       "version": null,
       "manufacturer": "sun-microsystems",
       "bits": null
+    },
+    "client": {
+      "name": "NetFront",
+      "modus": null,
+      "version": "3.2.0",
+      "manufacturer": "access",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "NetFront",
@@ -536,15 +562,8 @@
         "touch": false,
         "size": 2
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "NetFront",
-      "modus": null,
-      "version": "3.2.0",
-      "manufacturer": "access",
-      "bits": null,
-      "type": "browser"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "JavaOS",
@@ -552,6 +571,15 @@
       "version": null,
       "manufacturer": "sun-microsystems",
       "bits": null
+    },
+    "client": {
+      "name": "NetFront",
+      "modus": null,
+      "version": "3.2.0",
+      "manufacturer": "access",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "NetFront",
@@ -576,15 +604,8 @@
         "touch": false,
         "size": null
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "Vision",
-      "modus": null,
-      "version": "7.3.0",
-      "manufacturer": "novarra",
-      "bits": null,
-      "type": "transcoder"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "JavaOS",
@@ -592,6 +613,15 @@
       "version": null,
       "manufacturer": "sun-microsystems",
       "bits": null
+    },
+    "client": {
+      "name": "Vision",
+      "modus": null,
+      "version": "7.3.0",
+      "manufacturer": "novarra",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -616,15 +646,8 @@
         "touch": false,
         "size": null
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "Openwave Mobile Browser",
-      "modus": null,
-      "version": "4.1.27-alpha+2",
-      "manufacturer": "myriad",
-      "bits": null,
-      "type": "browser"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "JavaOS",
@@ -632,6 +655,15 @@
       "version": null,
       "manufacturer": "sun-microsystems",
       "bits": null
+    },
+    "client": {
+      "name": "Openwave Mobile Browser",
+      "modus": null,
+      "version": "4.1.27-alpha+2",
+      "manufacturer": "myriad",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -656,15 +688,8 @@
         "touch": false,
         "size": 2.1
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "NetFront",
-      "modus": null,
-      "version": "3.4.0",
-      "manufacturer": "access",
-      "bits": null,
-      "type": "browser"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "JavaOS",
@@ -672,6 +697,15 @@
       "version": null,
       "manufacturer": "sun-microsystems",
       "bits": null
+    },
+    "client": {
+      "name": "NetFront",
+      "modus": null,
+      "version": "3.4.0",
+      "manufacturer": "access",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "NetFront",
@@ -696,15 +730,8 @@
         "touch": false,
         "size": 2.4
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "QQbrowser Mini",
-      "modus": null,
-      "version": "3.1.0",
-      "manufacturer": "tencent",
-      "bits": null,
-      "type": "browser"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "Brew",
@@ -712,6 +739,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "QQbrowser Mini",
+      "modus": null,
+      "version": "3.1.0",
+      "manufacturer": "tencent",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -736,15 +772,8 @@
         "touch": false,
         "size": 2.4
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "Polaris",
-      "modus": null,
-      "version": null,
-      "manufacturer": "infraware",
-      "bits": null,
-      "type": "application"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "JavaOS",
@@ -752,6 +781,15 @@
       "version": null,
       "manufacturer": "sun-microsystems",
       "bits": null
+    },
+    "client": {
+      "name": "Polaris",
+      "modus": null,
+      "version": null,
+      "manufacturer": "infraware",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -776,15 +814,8 @@
         "touch": false,
         "size": 2.4
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "NetFront",
-      "modus": null,
-      "version": "3.5.0",
-      "manufacturer": "access",
-      "bits": null,
-      "type": "browser"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "JavaOS",
@@ -792,6 +823,15 @@
       "version": null,
       "manufacturer": "sun-microsystems",
       "bits": null
+    },
+    "client": {
+      "name": "NetFront",
+      "modus": null,
+      "version": "3.5.0",
+      "manufacturer": "access",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "NetFront",
@@ -816,15 +856,8 @@
         "touch": false,
         "size": 2.4
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "NetFront",
-      "modus": null,
-      "version": "3.5.0",
-      "manufacturer": "access",
-      "bits": null,
-      "type": "browser"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "JavaOS",
@@ -832,6 +865,15 @@
       "version": null,
       "manufacturer": "sun-microsystems",
       "bits": null
+    },
+    "client": {
+      "name": "NetFront",
+      "modus": null,
+      "version": "3.5.0",
+      "manufacturer": "access",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "NetFront",
@@ -856,15 +898,8 @@
         "touch": false,
         "size": null
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "Yandex Browser",
-      "modus": null,
-      "version": "20.8.3.71.01",
-      "manufacturer": "yandex",
-      "bits": null,
-      "type": "browser"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "JavaOS",
@@ -872,6 +907,15 @@
       "version": null,
       "manufacturer": "sun-microsystems",
       "bits": null
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "modus": null,
+      "version": "20.8.3.71.01",
+      "manufacturer": "yandex",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",

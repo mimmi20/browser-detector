@@ -16,15 +16,8 @@
         "touch": false,
         "size": 40
       },
-      "type": "tv"
-    },
-    "client": {
-      "name": "Android WebView",
-      "modus": null,
-      "version": "51.0.2704.91",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "tv",
+      "ismobile": false
     },
     "os": {
       "name": "Android",
@@ -32,6 +25,15 @@
       "version": "7.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "51.0.2704.91",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",

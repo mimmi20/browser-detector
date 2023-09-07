@@ -1,6 +1,174 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; JSN-L22) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4557.4 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "JSN-L22",
+      "marketingName": "Honor 8X Dual SIM",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.5
+      },
+      "type": "phablet",
+      "ismobile": true
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "93.0.4557.4",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "93.0.4557.4",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; LIO-AN00P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.88 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "LIO-AN00",
+      "marketingName": "Mate 30 Pro 5G",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 2400,
+        "height": 1176,
+        "touch": true,
+        "size": 6.53
+      },
+      "type": "phablet",
+      "ismobile": true
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "91.0.4472.88",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "91.0.4472.88",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; STK-L22) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.105 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "STK-L22",
+      "marketingName": "Y9 Prime (2019)",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.59
+      },
+      "type": "phablet",
+      "ismobile": true
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "89.0.4389.105",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "89.0.4389.105",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; P8_Max) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.81 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "DAV-701L",
+      "marketingName": "P8 Max",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 6.8
+      },
+      "type": "phablet",
+      "ismobile": true
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "85.0.4183.81",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "85.0.4183.81",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 10; LIO-AN00m) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.96 Mobile Safari/537.36"
     },
     "device": {
@@ -16,15 +184,8 @@
         "touch": true,
         "size": 6.53
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "78.0.3904.96",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -32,6 +193,15 @@
       "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "78.0.3904.96",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -56,15 +226,8 @@
         "touch": true,
         "size": 6.59
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Mz Browser",
-      "modus": null,
-      "version": "2.1.022",
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -72,6 +235,15 @@
       "version": "9.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Meizu Browser",
+      "modus": null,
+      "version": "2.1.022",
+      "manufacturer": "meizu",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -96,15 +268,8 @@
         "touch": true,
         "size": 6.58
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "94.0.4606.85",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -112,6 +277,15 @@
       "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "94.0.4606.85",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -136,15 +310,8 @@
         "touch": true,
         "size": 6.53
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "97.0.4692.98",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -152,6 +319,15 @@
       "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "97.0.4692.98",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -176,15 +352,8 @@
         "touch": true,
         "size": 6.5
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Ecosia",
-      "modus": null,
-      "version": "88.0.4324.181",
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -192,6 +361,15 @@
       "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Ecosia",
+      "modus": null,
+      "version": "88.0.4324.181",
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -216,15 +394,8 @@
         "touch": true,
         "size": 6.58
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "332.0.0.23.111",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -232,6 +403,15 @@
       "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "332.0.0.23.111",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -256,15 +436,8 @@
         "touch": true,
         "size": 6.53
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Android WebView",
-      "modus": null,
-      "version": "96.0.4664.45",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -272,6 +445,15 @@
       "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Edge WebView",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -296,15 +478,8 @@
         "touch": true,
         "size": 6.58
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "210.0.0.28.71",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -312,6 +487,15 @@
       "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "210.0.0.28.71",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -336,15 +520,8 @@
         "touch": true,
         "size": 6.5
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Android WebView",
-      "modus": null,
-      "version": "95.0.4638.74",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -352,6 +529,15 @@
       "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "95.0.4638.74",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -376,15 +562,8 @@
         "touch": true,
         "size": 6.59
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Android WebView",
-      "modus": null,
-      "version": "95.0.4638.74",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -392,6 +571,15 @@
       "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "95.0.4638.74",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -416,15 +604,8 @@
         "touch": true,
         "size": 6.58
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Samsung Browser",
-      "modus": null,
-      "version": "14.2.0",
-      "manufacturer": "samsung",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -432,6 +613,15 @@
       "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Samsung Browser",
+      "modus": null,
+      "version": "14.2.0",
+      "manufacturer": "samsung",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -456,15 +646,8 @@
         "touch": true,
         "size": 6.59
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "97.0.4692.87",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -472,6 +655,15 @@
       "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "97.0.4692.87",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -496,15 +688,8 @@
         "touch": true,
         "size": 6.5
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Ecosia",
-      "modus": null,
-      "version": "88.0.4324.181",
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -512,6 +697,15 @@
       "version": "8.1.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Ecosia",
+      "modus": null,
+      "version": "88.0.4324.181",
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -536,15 +730,8 @@
         "touch": true,
         "size": 6.5
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "97.0.4692.70",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -552,6 +739,15 @@
       "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "97.0.4692.70",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -576,15 +772,8 @@
         "touch": true,
         "size": 6.5
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "97.0.4692.87",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -592,6 +781,15 @@
       "version": "9.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "97.0.4692.87",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -616,15 +814,8 @@
         "touch": true,
         "size": 6.7
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "HuaweiBrowser",
-      "modus": null,
-      "version": "12.0.0.303",
-      "manufacturer": "huawei",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -632,6 +823,15 @@
       "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "HuaweiBrowser",
+      "modus": null,
+      "version": "12.0.0.303",
+      "manufacturer": "huawei",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -656,15 +856,8 @@
         "touch": true,
         "size": 6.58
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Opera Mobile",
-      "modus": null,
-      "version": "62.1.2254.60552",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -672,6 +865,15 @@
       "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "62.1.2254.60552",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -696,15 +898,8 @@
         "touch": true,
         "size": 6.5
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "81.0.4044.138",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -712,6 +907,15 @@
       "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "81.0.4044.138",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -736,15 +940,8 @@
         "touch": true,
         "size": 7.2
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "97.0.4692.87",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -752,6 +949,15 @@
       "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "97.0.4692.87",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -776,15 +982,8 @@
         "touch": true,
         "size": 6.5
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Aloha Browser",
-      "modus": null,
-      "version": "3.11.1",
-      "manufacturer": "aloha-mobile",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -792,6 +991,15 @@
       "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Aloha Browser",
+      "modus": null,
+      "version": "3.11.1",
+      "manufacturer": "aloha-mobile",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -816,15 +1024,8 @@
         "touch": true,
         "size": 6.59
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "HuaweiBrowser",
-      "modus": null,
-      "version": "12.0.0.303",
-      "manufacturer": "huawei",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -832,6 +1033,15 @@
       "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "HuaweiBrowser",
+      "modus": null,
+      "version": "12.0.0.303",
+      "manufacturer": "huawei",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -856,15 +1066,8 @@
         "touch": true,
         "size": 7.2
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "97.0.4692.87",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -872,6 +1075,15 @@
       "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "97.0.4692.87",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -896,15 +1108,8 @@
         "touch": true,
         "size": 6.7
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "HuaweiBrowser",
-      "modus": null,
-      "version": "12.0.0.303",
-      "manufacturer": "huawei",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -912,6 +1117,15 @@
       "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "HuaweiBrowser",
+      "modus": null,
+      "version": "12.0.0.303",
+      "manufacturer": "huawei",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -936,15 +1150,8 @@
         "touch": true,
         "size": 6.58
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Opera Mobile",
-      "modus": null,
-      "version": "66.2.3445.62346",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -952,6 +1159,15 @@
       "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "66.2.3445.62346",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -976,15 +1192,8 @@
         "touch": true,
         "size": 6.76
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "97.0.4692.98",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -992,6 +1201,15 @@
       "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "97.0.4692.98",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -1016,15 +1234,8 @@
         "touch": true,
         "size": 6.58
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Edge Mobile for Android",
-      "modus": null,
-      "version": "97.0.1072.62",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -1032,6 +1243,15 @@
       "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Edge Mobile for Android",
+      "modus": null,
+      "version": "97.0.1072.62",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -1056,15 +1276,8 @@
         "touch": true,
         "size": 7.2
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "97.0.4692.98",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -1072,6 +1285,15 @@
       "version": "9.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "97.0.4692.98",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -1096,15 +1318,8 @@
         "touch": true,
         "size": 6.53
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "97.0.4692.87",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -1112,6 +1327,15 @@
       "version": "9.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "97.0.4692.87",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -1136,15 +1360,8 @@
         "touch": true,
         "size": 6.5
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "HuaweiBrowser",
-      "modus": null,
-      "version": "12.0.0.303",
-      "manufacturer": "huawei",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -1152,6 +1369,15 @@
       "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "HuaweiBrowser",
+      "modus": null,
+      "version": "12.0.0.303",
+      "manufacturer": "huawei",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -1176,15 +1402,8 @@
         "touch": true,
         "size": 6.53
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "98.0.4758.87",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -1192,6 +1411,15 @@
       "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "98.0.4758.87",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -1216,15 +1444,8 @@
         "touch": true,
         "size": 6.53
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "97.0.4692.98",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -1232,6 +1453,15 @@
       "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "97.0.4692.98",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -1256,15 +1486,8 @@
         "touch": true,
         "size": 6.58
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "HuaweiBrowser",
-      "modus": null,
-      "version": "12.0.0.303",
-      "manufacturer": "huawei",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -1272,6 +1495,15 @@
       "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "HuaweiBrowser",
+      "modus": null,
+      "version": "12.0.0.303",
+      "manufacturer": "huawei",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -1296,15 +1528,8 @@
         "touch": true,
         "size": 6.5
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "98.0.4758.87",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -1312,6 +1537,15 @@
       "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "98.0.4758.87",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -1336,15 +1570,8 @@
         "touch": true,
         "size": 6.58
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "348.0.0.39.118",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -1352,6 +1579,15 @@
       "version": null,
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "348.0.0.39.118",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -1376,15 +1612,8 @@
         "touch": true,
         "size": 6.53
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Opera Mobile",
-      "modus": null,
-      "version": "66.2.3445.62346",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -1392,6 +1621,15 @@
       "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "66.2.3445.62346",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -1416,15 +1654,8 @@
         "touch": true,
         "size": 6.59
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "350.1.0.29.106",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -1432,6 +1663,15 @@
       "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "350.1.0.29.106",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -1456,15 +1696,8 @@
         "touch": true,
         "size": 6.58
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "348.0.0.39.118",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -1472,6 +1705,15 @@
       "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "348.0.0.39.118",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -1496,15 +1738,8 @@
         "touch": true,
         "size": 6.5
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "219.0.0.12.117",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -1512,6 +1747,15 @@
       "version": "28.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "219.0.0.12.117",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -1536,15 +1780,8 @@
         "touch": true,
         "size": 6.7
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "323.0.0.46.119",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -1552,6 +1789,15 @@
       "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "323.0.0.46.119",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -1576,15 +1822,8 @@
         "touch": true,
         "size": 6.53
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "98.0.4758.87",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -1592,6 +1831,15 @@
       "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "98.0.4758.87",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -1616,15 +1864,8 @@
         "touch": true,
         "size": 6.59
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "98.0.4758.87",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -1632,6 +1873,15 @@
       "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "98.0.4758.87",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -1656,15 +1906,8 @@
         "touch": true,
         "size": 6.7
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "347.0.0.28.237",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -1672,6 +1915,15 @@
       "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "347.0.0.28.237",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -1696,15 +1948,8 @@
         "touch": true,
         "size": 6.58
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "323.0.0.46.119",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -1712,6 +1957,15 @@
       "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "323.0.0.46.119",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -1736,15 +1990,8 @@
         "touch": true,
         "size": 6.5
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "345.0.0.34.118",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -1752,6 +1999,15 @@
       "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "345.0.0.34.118",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -1776,15 +2032,8 @@
         "touch": true,
         "size": 6.59
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "353.0.0.34.116",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -1792,6 +2041,15 @@
       "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "353.0.0.34.116",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -1816,15 +2074,8 @@
         "touch": true,
         "size": 7.2
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Edge Mobile for Android",
-      "modus": null,
-      "version": "97.0.1072.69",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -1832,6 +2083,15 @@
       "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Edge Mobile for Android",
+      "modus": null,
+      "version": "97.0.1072.69",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -1856,15 +2116,8 @@
         "touch": true,
         "size": 7.2
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "98.0.4758.87",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -1872,6 +2125,15 @@
       "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "98.0.4758.87",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -1896,15 +2158,8 @@
         "touch": true,
         "size": 6.58
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "348.0.0.39.118",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -1912,6 +2167,15 @@
       "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "348.0.0.39.118",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -1936,15 +2200,8 @@
         "touch": true,
         "size": 6.59
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "352.0.0.21.117",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -1952,6 +2209,15 @@
       "version": "9.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "352.0.0.21.117",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -1976,15 +2242,8 @@
         "touch": true,
         "size": 6.7
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "90.0.4430.210",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -1992,6 +2251,15 @@
       "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "90.0.4430.210",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -2016,15 +2284,8 @@
         "touch": true,
         "size": 6.5
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "345.0.0.34.118",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -2032,6 +2293,15 @@
       "version": null,
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "345.0.0.34.118",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -2056,15 +2326,8 @@
         "touch": true,
         "size": 6.59
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Android WebView",
-      "modus": null,
-      "version": "98.0.4758.101",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -2072,6 +2335,15 @@
       "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "98.0.4758.101",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -2096,15 +2368,8 @@
         "touch": true,
         "size": 6.53
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Android WebView",
-      "modus": null,
-      "version": "98.0.4758.101",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -2112,6 +2377,15 @@
       "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "98.0.4758.101",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -2136,15 +2410,8 @@
         "touch": true,
         "size": 6.53
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "98.0.4758.101",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -2152,6 +2419,15 @@
       "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "98.0.4758.101",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -2176,15 +2452,8 @@
         "touch": true,
         "size": 6.5
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Android WebView",
-      "modus": null,
-      "version": "88.0.4324.93",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -2192,6 +2461,15 @@
       "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "88.0.4324.93",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -2216,15 +2494,8 @@
         "touch": true,
         "size": 7.2
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "98.0.4758.87",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -2232,6 +2503,15 @@
       "version": "9.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "98.0.4758.87",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -2256,15 +2536,8 @@
         "touch": true,
         "size": 6.5
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "98.0.4758.101",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -2272,6 +2545,15 @@
       "version": "9.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "98.0.4758.101",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -2296,15 +2578,8 @@
         "touch": true,
         "size": 6.5
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "WeChat App",
-      "modus": null,
-      "version": "0.0.0",
-      "manufacturer": "tencent",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -2312,6 +2587,15 @@
       "version": "9.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "WeChat App",
+      "modus": null,
+      "version": "0.0.0",
+      "manufacturer": "tencent",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -2336,15 +2620,8 @@
         "touch": true,
         "size": 6.6
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "HuaweiBrowser",
-      "modus": null,
-      "version": "12.0.2.301",
-      "manufacturer": "huawei",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -2352,6 +2629,15 @@
       "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "HuaweiBrowser",
+      "modus": null,
+      "version": "12.0.2.301",
+      "manufacturer": "huawei",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -2376,15 +2662,8 @@
         "touch": true,
         "size": 6.6
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "HuaweiBrowser",
-      "modus": null,
-      "version": "12.0.3.310",
-      "manufacturer": "huawei",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -2392,6 +2671,15 @@
       "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "HuaweiBrowser",
+      "modus": null,
+      "version": "12.0.3.310",
+      "manufacturer": "huawei",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -2416,15 +2704,8 @@
         "touch": true,
         "size": 6.76
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Android WebView",
-      "modus": null,
-      "version": "88.0.4324.93",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -2432,6 +2713,15 @@
       "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "88.0.4324.93",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -2456,15 +2746,8 @@
         "touch": true,
         "size": 6.7
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "89.0.4389.105",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -2472,6 +2755,15 @@
       "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "89.0.4389.105",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -2496,15 +2788,8 @@
         "touch": true,
         "size": 6.59
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Ecosia",
-      "modus": null,
-      "version": "94.0.4606.85",
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -2512,6 +2797,15 @@
       "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Ecosia",
+      "modus": null,
+      "version": "94.0.4606.85",
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -2536,15 +2830,8 @@
         "touch": true,
         "size": 6.53
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "13.7.0.1132",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -2552,6 +2839,15 @@
       "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "13.7.0.1132",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -2596,15 +2892,8 @@
         "touch": true,
         "size": 7.2
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "99.0.4844.58",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -2612,6 +2901,15 @@
       "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "99.0.4844.58",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -2642,15 +2940,8 @@
         "touch": true,
         "size": 6.58
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -2659,10 +2950,19 @@
       "manufacturer": "google",
       "bits": null
     },
-    "engine": {
+    "client": {
       "name": null,
-      "version": null,
-      "manufacturer": "unknown"
+      "modus": null,
+      "version": "12.0.1.302",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "88.0.4324.93",
+      "manufacturer": "google"
     }
   },
   {
@@ -2682,15 +2982,8 @@
         "touch": true,
         "size": 6.53
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "99.0.4844.58",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -2698,6 +2991,15 @@
       "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "99.0.4844.58",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -2722,15 +3024,8 @@
         "touch": true,
         "size": 7.2
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "98.0.4758.101",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -2738,6 +3033,15 @@
       "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "98.0.4758.101",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -2762,15 +3066,8 @@
         "touch": true,
         "size": 6.59
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "98.0.4758.101",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -2778,6 +3075,15 @@
       "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "98.0.4758.101",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -2802,15 +3108,8 @@
         "touch": true,
         "size": 6.5
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "99.0.4844.58",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -2818,6 +3117,15 @@
       "version": "9.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "99.0.4844.58",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -2842,15 +3150,8 @@
         "touch": true,
         "size": 7.2
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Android WebView",
-      "modus": null,
-      "version": "98.0.4758.101",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -2858,6 +3159,15 @@
       "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "98.0.4758.101",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -2883,15 +3193,8 @@
         "touch": true,
         "size": 6.5
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -2900,10 +3203,19 @@
       "manufacturer": "google",
       "bits": null
     },
-    "engine": {
+    "client": {
       "name": null,
-      "version": null,
-      "manufacturer": "unknown"
+      "modus": null,
+      "version": "97.0.4692.98",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "97.0.4692.98",
+      "manufacturer": "google"
     }
   },
   {
@@ -2923,15 +3235,8 @@
         "touch": true,
         "size": 6.59
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Android WebView",
-      "modus": null,
-      "version": "99.0.4844.73",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -2939,6 +3244,15 @@
       "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Edge WebView",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -2963,15 +3277,8 @@
         "touch": true,
         "size": 6.59
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "99.0.4844.58",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -2979,6 +3286,15 @@
       "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "99.0.4844.58",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -3003,15 +3319,8 @@
         "touch": true,
         "size": 6.59
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "99.0.4844.58",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -3019,6 +3328,15 @@
       "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "99.0.4844.58",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -3043,15 +3361,8 @@
         "touch": true,
         "size": 6.5
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "99.0.4844.58",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -3059,6 +3370,15 @@
       "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "99.0.4844.58",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -3083,15 +3403,8 @@
         "touch": true,
         "size": 6.59
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Opera Mobile",
-      "modus": null,
-      "version": "67.1.3508.63168",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -3099,6 +3412,15 @@
       "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "67.1.3508.63168",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -3123,15 +3445,8 @@
         "touch": true,
         "size": 7.2
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "99.0.4844.73",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -3139,6 +3454,15 @@
       "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "99.0.4844.73",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -3163,15 +3487,8 @@
         "touch": true,
         "size": 6.7
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "HuaweiBrowser",
-      "modus": null,
-      "version": "10.1.2.320",
-      "manufacturer": "huawei",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -3179,6 +3496,15 @@
       "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "HuaweiBrowser",
+      "modus": null,
+      "version": "10.1.2.320",
+      "manufacturer": "huawei",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -3208,15 +3534,8 @@
         "touch": true,
         "size": 6.7
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -3225,10 +3544,19 @@
       "manufacturer": "google",
       "bits": null
     },
-    "engine": {
+    "client": {
       "name": null,
-      "version": null,
-      "manufacturer": "unknown"
+      "modus": null,
+      "version": "12.0.1.302",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "78.0.3904.108",
+      "manufacturer": "google"
     }
   },
   {
@@ -3253,15 +3581,8 @@
         "touch": true,
         "size": 6.7
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -3270,10 +3591,19 @@
       "manufacturer": "google",
       "bits": null
     },
-    "engine": {
+    "client": {
       "name": null,
-      "version": null,
-      "manufacturer": "unknown"
+      "modus": null,
+      "version": "10.1.2.320",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "78.0.3904.108",
+      "manufacturer": "google"
     }
   },
   {
@@ -3293,15 +3623,8 @@
         "touch": true,
         "size": 6.59
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "100.0.4896.58",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -3310,10 +3633,19 @@
       "manufacturer": "google",
       "bits": null
     },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "100.0.4896.58",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
     "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
+      "name": "Blink",
+      "version": "100.0.4896.58",
+      "manufacturer": "google"
     }
   },
   {
@@ -3333,15 +3665,8 @@
         "touch": true,
         "size": 6.53
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "227.0.0.12.117",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -3349,6 +3674,15 @@
       "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "227.0.0.12.117",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -3373,15 +3707,8 @@
         "touch": true,
         "size": 6.53
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "100.0.4896.58",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -3390,10 +3717,19 @@
       "manufacturer": "google",
       "bits": null
     },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "100.0.4896.58",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
     "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
+      "name": "Blink",
+      "version": "100.0.4896.58",
+      "manufacturer": "google"
     }
   },
   {
@@ -3413,15 +3749,8 @@
         "touch": true,
         "size": 6.7
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "98.0.4758.101",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -3429,6 +3758,15 @@
       "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "98.0.4758.101",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -3453,15 +3791,8 @@
         "touch": true,
         "size": 6.5
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Opera Mobile",
-      "modus": null,
-      "version": "67.1.3508.63168",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -3469,6 +3800,15 @@
       "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "67.1.3508.63168",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -3493,15 +3833,8 @@
         "touch": true,
         "size": 6.5
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Opera Mobile",
-      "modus": null,
-      "version": "66.2.3445.62346",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -3509,6 +3842,15 @@
       "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "66.2.3445.62346",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -3533,15 +3875,8 @@
         "touch": true,
         "size": 6.58
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Dalvik",
-      "modus": null,
-      "version": "2.1.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -3549,6 +3884,15 @@
       "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Dalvik",
+      "modus": null,
+      "version": "2.1.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -3574,15 +3918,8 @@
         "touch": true,
         "size": 6.7
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -3591,10 +3928,19 @@
       "manufacturer": "google",
       "bits": null
     },
-    "engine": {
+    "client": {
       "name": null,
-      "version": null,
-      "manufacturer": "unknown"
+      "modus": null,
+      "version": "78.0.3904.108",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "78.0.3904.108",
+      "manufacturer": "google"
     }
   },
   {
@@ -3614,15 +3960,8 @@
         "touch": true,
         "size": 6.59
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "HuaweiBrowser",
-      "modus": null,
-      "version": "12.0.0.303",
-      "manufacturer": "huawei",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -3630,6 +3969,15 @@
       "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "HuaweiBrowser",
+      "modus": null,
+      "version": "12.0.0.303",
+      "manufacturer": "huawei",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -3654,15 +4002,8 @@
         "touch": true,
         "size": 6.53
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Android WebView",
-      "modus": null,
-      "version": "100.0.4896.127",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -3671,10 +4012,19 @@
       "manufacturer": "google",
       "bits": null
     },
+    "client": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "100.0.4896.127",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
     "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
+      "name": "Blink",
+      "version": "100.0.4896.127",
+      "manufacturer": "google"
     }
   },
   {
@@ -3694,15 +4044,8 @@
         "touch": true,
         "size": 6.5
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "100.0.4896.79",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -3711,10 +4054,19 @@
       "manufacturer": "google",
       "bits": null
     },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "100.0.4896.79",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
     "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
+      "name": "Blink",
+      "version": "100.0.4896.79",
+      "manufacturer": "google"
     }
   },
   {
@@ -3734,15 +4086,8 @@
         "touch": true,
         "size": 6.76
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "100.0.4896.58",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -3751,10 +4096,19 @@
       "manufacturer": "google",
       "bits": null
     },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "100.0.4896.58",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
     "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
+      "name": "Blink",
+      "version": "100.0.4896.58",
+      "manufacturer": "google"
     }
   },
   {
@@ -3774,15 +4128,8 @@
         "touch": true,
         "size": 6.76
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Opera Mobile",
-      "modus": null,
-      "version": "68.2.3557.64219",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -3790,6 +4137,15 @@
       "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "modus": null,
+      "version": "68.2.3557.64219",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -3814,15 +4170,8 @@
         "touch": true,
         "size": 6.59
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Android WebView",
-      "modus": null,
-      "version": "99.0.4844.88",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -3830,6 +4179,15 @@
       "version": "10.0.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Android WebView",
+      "modus": null,
+      "version": "99.0.4844.88",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -3854,7 +4212,15 @@
         "touch": true,
         "size": 6.5
       },
-      "type": "phablet"
+      "type": "phablet",
+      "ismobile": true
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google",
+      "bits": null
     },
     "client": {
       "name": "Android WebView",
@@ -3862,179 +4228,13 @@
       "version": "100.0.4896.127",
       "manufacturer": "google",
       "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 9; JSN-L21) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "JSN-L21",
-      "marketingName": "Honor 8X",
-      "manufacturer": "huawei",
-      "brand": "huawei",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 2340,
-        "height": 1080,
-        "touch": true,
-        "size": 6.5
-      },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "100.0.4896.127",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "9.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; STK-LX1 Build/HONORSTK-LX1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/3211 MMWEBSDK/20220303 Mobile Safari/537.36 MMWEBID/3035 MicroMessenger/8.0.21.2120(0x28001553) Process/toolsmp WeChat/arm64 Weixin NetType/4G Language/de ABI/arm64"
-    },
-    "device": {
-      "deviceName": "STK-LX1",
-      "marketingName": "P Smart Z",
-      "manufacturer": "huawei",
-      "brand": "huawei",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 2316,
-        "height": 1080,
-        "touch": true,
-        "size": 6.59
-      },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "WeChat App",
-      "modus": null,
-      "version": "0.0.0",
-      "manufacturer": "tencent",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google",
-      "bits": null
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
-      "version": "86.0.4240.99",
+      "version": "100.0.4896.127",
       "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; HMA-L09) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.79 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "HMA-L09",
-      "marketingName": "Mate 20",
-      "manufacturer": "huawei",
-      "brand": "huawei",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 2244,
-        "height": 1080,
-        "touch": true,
-        "size": 6.53
-      },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "100.0.4896.79",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; HMA-L29) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.41 Mobile Safari/537.36"
-    },
-    "device": {
-      "deviceName": "HMA-L29",
-      "marketingName": "Mate 20",
-      "manufacturer": "huawei",
-      "brand": "huawei",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 2244,
-        "height": 1080,
-        "touch": true,
-        "size": 6.53
-      },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "101.0.4951.41",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
     }
   }
 ]

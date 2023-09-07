@@ -16,15 +16,8 @@
         "touch": true,
         "size": null
       },
-      "type": "fone-pad"
-    },
-    "client": {
-      "name": "Blackberry Playbook Browser",
-      "modus": null,
-      "version": "7.2.1.0",
-      "manufacturer": "rim",
-      "bits": null,
-      "type": "browser"
+      "type": "fone-pad",
+      "ismobile": true
     },
     "os": {
       "name": "RIM Tablet OS",
@@ -32,6 +25,15 @@
       "version": "2.1.0",
       "manufacturer": "rim",
       "bits": null
+    },
+    "client": {
+      "name": "Blackberry Playbook Browser",
+      "modus": null,
+      "version": "7.2.1.0",
+      "manufacturer": "rim",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -56,15 +58,8 @@
         "touch": true,
         "size": null
       },
-      "type": "fone-pad"
-    },
-    "client": {
-      "name": "Android Webkit",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "fone-pad",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -72,6 +67,15 @@
       "version": "2.3.3",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -96,15 +100,8 @@
         "touch": true,
         "size": null
       },
-      "type": "fone-pad"
-    },
-    "client": {
-      "name": "Blackberry Playbook Browser",
-      "modus": null,
-      "version": "0.0.1",
-      "manufacturer": "rim",
-      "bits": null,
-      "type": "browser"
+      "type": "fone-pad",
+      "ismobile": true
     },
     "os": {
       "name": "RIM Tablet OS",
@@ -112,6 +109,15 @@
       "version": "1.0.0",
       "manufacturer": "rim",
       "bits": null
+    },
+    "client": {
+      "name": "Blackberry Playbook Browser",
+      "modus": null,
+      "version": "0.0.1",
+      "manufacturer": "rim",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -136,15 +142,8 @@
         "touch": true,
         "size": null
       },
-      "type": "fone-pad"
-    },
-    "client": {
-      "name": "Android Webkit",
-      "modus": null,
-      "version": null,
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "fone-pad",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -152,6 +151,15 @@
       "version": "2.3.3",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": null,
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -176,15 +184,8 @@
         "touch": true,
         "size": null
       },
-      "type": "fone-pad"
-    },
-    "client": {
-      "name": "Blackberry Playbook Browser",
-      "modus": null,
-      "version": "7.2.0.1",
-      "manufacturer": "rim",
-      "bits": null,
-      "type": "browser"
+      "type": "fone-pad",
+      "ismobile": true
     },
     "os": {
       "name": "RIM Tablet OS",
@@ -192,6 +193,15 @@
       "version": "2.0.1",
       "manufacturer": "rim",
       "bits": null
+    },
+    "client": {
+      "name": "Blackberry Playbook Browser",
+      "modus": null,
+      "version": "7.2.0.1",
+      "manufacturer": "rim",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -216,15 +226,8 @@
         "touch": true,
         "size": null
       },
-      "type": "fone-pad"
-    },
-    "client": {
-      "name": "Blackberry Playbook Browser",
-      "modus": null,
-      "version": "7.1.0.7",
-      "manufacturer": "rim",
-      "bits": null,
-      "type": "browser"
+      "type": "fone-pad",
+      "ismobile": true
     },
     "os": {
       "name": "RIM Tablet OS",
@@ -232,6 +235,15 @@
       "version": "1.0.0",
       "manufacturer": "rim",
       "bits": null
+    },
+    "client": {
+      "name": "Blackberry Playbook Browser",
+      "modus": null,
+      "version": "7.1.0.7",
+      "manufacturer": "rim",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -256,15 +268,8 @@
         "touch": true,
         "size": null
       },
-      "type": "fone-pad"
-    },
-    "client": {
-      "name": "Dolfin",
-      "modus": null,
-      "version": "10.0.0",
-      "manufacturer": "mopotab",
-      "bits": null,
-      "type": "browser"
+      "type": "fone-pad",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -272,6 +277,15 @@
       "version": "4.1.2",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Dolfin",
+      "modus": null,
+      "version": "10.0.0",
+      "manufacturer": "mopotab",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -296,15 +310,8 @@
         "touch": true,
         "size": null
       },
-      "type": "fone-pad"
-    },
-    "client": {
-      "name": "Skyfire",
-      "modus": null,
-      "version": "5.0.1",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
+      "type": "fone-pad",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -312,6 +319,15 @@
       "version": "4.1.2",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Skyfire",
+      "modus": null,
+      "version": "5.0.1",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",

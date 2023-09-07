@@ -16,15 +16,8 @@
         "touch": true,
         "size": 1.6
       },
-      "type": "watch"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "19.77.34.5",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "watch",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -32,6 +25,15 @@
       "version": "5.0.2",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "19.77.34.5",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",

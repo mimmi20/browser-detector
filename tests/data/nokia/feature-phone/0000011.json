@@ -16,15 +16,8 @@
         "touch": false,
         "size": 2.1
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "1.1.5005",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "JavaOS",
@@ -32,6 +25,15 @@
       "version": null,
       "manufacturer": "sun-microsystems",
       "bits": null
+    },
+    "client": {
+      "name": "Opera Mini",
+      "modus": null,
+      "version": "1.1.5005",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
     },
     "engine": {
       "name": "Presto",
@@ -56,15 +58,8 @@
         "touch": false,
         "size": 2.2
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "Symbian OS",
@@ -72,6 +67,15 @@
       "version": null,
       "manufacturer": "symbian-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -96,15 +100,8 @@
         "touch": true,
         "size": 3.2
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "Symbian OS",
@@ -112,6 +109,15 @@
       "version": null,
       "manufacturer": "symbian-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -136,15 +142,8 @@
         "touch": false,
         "size": null
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "Symbian OS",
@@ -152,6 +151,15 @@
       "version": null,
       "manufacturer": "symbian-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -176,15 +184,8 @@
         "touch": true,
         "size": null
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "Symbian OS",
@@ -192,6 +193,15 @@
       "version": null,
       "manufacturer": "symbian-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -216,15 +226,8 @@
         "touch": false,
         "size": 2.2
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "9.4.1.377",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "JavaOS",
@@ -232,6 +235,15 @@
       "version": null,
       "manufacturer": "sun-microsystems",
       "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "9.4.1.377",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
     },
     "engine": {
       "name": "U2",
@@ -256,15 +268,8 @@
         "touch": false,
         "size": 2.4
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "Symbian OS",
@@ -272,6 +277,15 @@
       "version": null,
       "manufacturer": "symbian-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -296,15 +310,8 @@
         "touch": true,
         "size": null
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "8.8.0.227",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "Symbian OS",
@@ -312,6 +319,15 @@
       "version": null,
       "manufacturer": "symbian-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "8.8.0.227",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
     },
     "engine": {
       "name": "U2",
@@ -336,15 +352,8 @@
         "touch": false,
         "size": 2.4
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "JavaOS",
@@ -352,6 +361,15 @@
       "version": null,
       "manufacturer": "sun-microsystems",
       "bits": null
+    },
+    "client": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "nokia",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -376,15 +394,8 @@
         "touch": false,
         "size": 2.4
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "Symbian OS",
@@ -392,6 +403,15 @@
       "version": null,
       "manufacturer": "symbian-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "nokia",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -416,15 +436,8 @@
         "touch": true,
         "size": 3.5
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "Symbian OS",
@@ -432,6 +445,15 @@
       "version": null,
       "manufacturer": "symbian-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "nokia",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -456,15 +478,8 @@
         "touch": true,
         "size": 2.46
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "Safari",
-      "modus": null,
-      "version": "3.0.0",
-      "manufacturer": "apple",
-      "bits": null,
-      "type": "browser"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "Symbian OS",
@@ -472,6 +487,15 @@
       "version": null,
       "manufacturer": "symbian-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "Safari",
+      "modus": null,
+      "version": "3.0.0",
+      "manufacturer": "apple",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -496,15 +520,8 @@
         "touch": true,
         "size": 2.46
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "Symbian OS",
@@ -512,6 +529,15 @@
       "version": null,
       "manufacturer": "symbian-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "nokia",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -536,15 +562,8 @@
         "touch": true,
         "size": 3.2
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "Symbian OS",
@@ -552,6 +571,15 @@
       "version": null,
       "manufacturer": "symbian-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "nokia",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -576,15 +604,8 @@
         "touch": false,
         "size": null
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "Symbian OS",
@@ -592,6 +613,15 @@
       "version": null,
       "manufacturer": "symbian-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "nokia",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -616,15 +646,8 @@
         "touch": true,
         "size": null
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "Symbian OS",
@@ -632,6 +655,15 @@
       "version": null,
       "manufacturer": "symbian-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "nokia",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -656,15 +688,8 @@
         "touch": false,
         "size": null
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "Symbian OS",
@@ -672,6 +697,15 @@
       "version": null,
       "manufacturer": "symbian-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "nokia",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -696,15 +730,8 @@
         "touch": true,
         "size": 3
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "Nokia Proxy Browser",
-      "modus": null,
-      "version": "4.0.0.0.45",
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "transcoder"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "Symbian OS",
@@ -712,6 +739,15 @@
       "version": null,
       "manufacturer": "symbian-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "Nokia Proxy Browser",
+      "modus": null,
+      "version": "4.0.0.0.45",
+      "manufacturer": "nokia",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
     },
     "engine": {
       "name": "Gecko",
@@ -736,15 +772,8 @@
         "touch": true,
         "size": null
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "Nokia Proxy Browser",
-      "modus": null,
-      "version": "4.0.0.0.45",
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "transcoder"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "Symbian OS",
@@ -752,6 +781,15 @@
       "version": null,
       "manufacturer": "symbian-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "Nokia Proxy Browser",
+      "modus": null,
+      "version": "4.0.0.0.45",
+      "manufacturer": "nokia",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
     },
     "engine": {
       "name": "Gecko",
@@ -776,15 +814,8 @@
         "touch": true,
         "size": 3
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "OneBrowser",
-      "modus": null,
-      "version": "3.1.0",
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "browser"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "Nokia OS",
@@ -792,6 +823,15 @@
       "version": null,
       "manufacturer": "nokia",
       "bits": null
+    },
+    "client": {
+      "name": "OneBrowser",
+      "modus": null,
+      "version": "3.1.0",
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -816,15 +856,8 @@
         "touch": false,
         "size": null
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "Geos",
@@ -832,6 +865,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "nokia",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -856,15 +898,8 @@
         "touch": false,
         "size": 1.8
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "Nokia Proxy Browser",
-      "modus": null,
-      "version": "2.0.2.68.14",
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "transcoder"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "JavaOS",
@@ -872,6 +907,15 @@
       "version": null,
       "manufacturer": "sun-microsystems",
       "bits": null
+    },
+    "client": {
+      "name": "Nokia Proxy Browser",
+      "modus": null,
+      "version": "2.0.2.68.14",
+      "manufacturer": "nokia",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
     },
     "engine": {
       "name": "Gecko",
@@ -896,15 +940,8 @@
         "touch": false,
         "size": 2.36
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "8.5.0.183",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "Symbian OS",
@@ -912,6 +949,15 @@
       "version": null,
       "manufacturer": "symbian-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "8.5.0.183",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -936,7 +982,15 @@
         "touch": true,
         "size": 2.4
       },
-      "type": "feature-phone"
+      "type": "feature-phone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "Nokia OS",
+      "marketingName": "Nokia OS",
+      "version": null,
+      "manufacturer": "nokia",
+      "bits": null
     },
     "client": {
       "name": "UC Browser Mini",
@@ -944,189 +998,13 @@
       "version": "10.7.8.806",
       "manufacturer": "ucweb",
       "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Nokia OS",
-      "marketingName": "Nokia OS",
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null
+      "type": "transcoder",
+      "isbot": false
     },
     "engine": {
       "name": "U2",
       "version": "1.0.0",
       "manufacturer": "ucweb"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.8.0.7) Gecko/20060909 Firefox/1.5.0.7 MG (Novarra-Vision/6.1)",
-      "x-device-user-agent": "Nokia6288/2.0 (05.94) Profile/MIDP-2.0 Configuration/CLDC-1.1"
-    },
-    "device": {
-      "deviceName": "6288",
-      "marketingName": "6288",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": 2.2
-      },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "Vision",
-      "modus": null,
-      "version": "6.1.0",
-      "manufacturer": "novarra",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "NokiaE72-1/UCWEB8.9.0.253/28/999",
-      "x-ucbrowser-ua": "pf(Symbian);er(U);la(zh-CN);up(U2/1.0.0);re(U2/1.0.0);dv(NokiaE72-1);pr(UCBrowser/8.9.0.253);ov(S60V3);pi(320*240);ss(320*240);bt(UC);pm(1);bv(0);nm(0);im(0);sr(2);nt(2)"
-    },
-    "device": {
-      "deviceName": "E72",
-      "marketingName": "E72",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": 2.4
-      },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "8.9.0.253",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "symbian-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "U2",
-      "version": "1.0.0",
-      "manufacturer": "ucweb"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (J2ME/MIDP; Opera Mini/4.5.33867/35.3527; U; xx) Presto/2.8.119 Version/11.10",
-      "device-stock-ua": "Mozilla/5.0 (Series40; Nokia501/11.1.1/java_runtime_version=Nokia_Asha_1_1_1; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/3.9.0.0.22",
-      "x-operamini-phone": "? # ?",
-      "x-operamini-phone-ua": "Mozilla/5.0 (Series40; Nokia501/11.1.1/java_runtime_version=Nokia_Asha_1_1_1; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/3.9.0.0.22",
-      "x-operamini-features": "httpping, advanced, routing, folding, touch, file_system"
-    },
-    "device": {
-      "deviceName": "501",
-      "marketingName": "Asha 501",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": true,
-        "size": 3
-      },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "4.5.33867",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Nokia OS",
-      "marketingName": "Nokia OS",
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (J2ME/MIDP; Opera Mini/7.1.32052/34.1394; U; xx) Presto/2.8.119 Version/11.10",
-      "device-stock-ua": "Mozilla/5.0 (Series40; Nokia501/11.1.1/java_runtime_version=Nokia_Asha_1_1_1; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/3.1.1.0.27",
-      "x-operamini-phone": "? # ?",
-      "x-operamini-phone-ua": "Mozilla/5.0 (Series40; Nokia501/11.1.1/java_runtime_version=Nokia_Asha_1_1_1; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/3.1.1.0.27",
-      "x-operamini-features": "httpping, advanced, routing, touch, camera, file_system, folding"
-    },
-    "device": {
-      "deviceName": "501",
-      "marketingName": "Asha 501",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": true,
-        "size": 3
-      },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "7.1.32052",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Nokia OS",
-      "marketingName": "Nokia OS",
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla-foundation"
     }
   },
   {
@@ -1146,15 +1024,8 @@
         "touch": false,
         "size": 2
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": null,
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "Symbian OS",
@@ -1162,6 +1033,15 @@
       "version": null,
       "manufacturer": "symbian-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "Opera Mini",
+      "modus": null,
+      "version": null,
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
     },
     "engine": {
       "name": "Presto",
@@ -1186,15 +1066,8 @@
         "touch": false,
         "size": 2.1
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "Internet Explorer",
-      "modus": null,
-      "version": "5.5.0",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "browser"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "Symbian OS",
@@ -1202,6 +1075,15 @@
       "version": null,
       "manufacturer": "symbian-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "Internet Explorer",
+      "modus": null,
+      "version": "5.5.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Trident",
@@ -1226,15 +1108,8 @@
         "touch": false,
         "size": 2.1
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "Google Wap Proxy",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "bot"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "Symbian OS",
@@ -1242,6 +1117,15 @@
       "version": null,
       "manufacturer": "symbian-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "Google Wap Proxy",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -1266,15 +1150,8 @@
         "touch": false,
         "size": null
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "Google Wap Proxy",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "bot"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "JavaOS",
@@ -1282,6 +1159,15 @@
       "version": null,
       "manufacturer": "sun-microsystems",
       "bits": null
+    },
+    "client": {
+      "name": "Google Wap Proxy",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -1306,15 +1192,8 @@
         "touch": false,
         "size": 2.1
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "Opera",
-      "modus": null,
-      "version": "6.10.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "Symbian OS",
@@ -1322,6 +1201,15 @@
       "version": null,
       "manufacturer": "symbian-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "Opera",
+      "modus": null,
+      "version": "6.10.0",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Presto",
@@ -1346,15 +1234,8 @@
         "touch": false,
         "size": null
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "Nokia Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nokia",
-      "bits": null,
-      "type": "browser"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "Symbian OS",
@@ -1362,6 +1243,15 @@
       "version": null,
       "manufacturer": "symbian-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "Nokia Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "nokia",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -1386,15 +1276,8 @@
         "touch": false,
         "size": 4
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "Firefox",
-      "modus": null,
-      "version": "48.0.0",
-      "manufacturer": "mozilla-foundation",
-      "bits": null,
-      "type": "browser"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "kaios",
@@ -1402,6 +1285,15 @@
       "version": "2.5.1",
       "manufacturer": "kaios",
       "bits": null
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "48.0.0",
+      "manufacturer": "mozilla-foundation",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Gecko",
@@ -1426,15 +1318,8 @@
         "touch": false,
         "size": null
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "9.5.0.449",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "Nokia OS",
@@ -1442,6 +1327,15 @@
       "version": null,
       "manufacturer": "nokia",
       "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "9.5.0.449",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -1466,15 +1360,8 @@
         "touch": false,
         "size": null
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "8.7.0.218",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "Nokia OS",
@@ -1482,6 +1369,15 @@
       "version": null,
       "manufacturer": "nokia",
       "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "8.7.0.218",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
     },
     "engine": {
       "name": "U2",
@@ -1506,15 +1402,8 @@
         "touch": false,
         "size": 2.4
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "8.6.0.199",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "Symbian OS",
@@ -1522,6 +1411,15 @@
       "version": null,
       "manufacturer": "symbian-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "8.6.0.199",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -1546,15 +1444,8 @@
         "touch": false,
         "size": 2.4
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "7.7.1.88",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "Symbian OS",
@@ -1562,6 +1453,15 @@
       "version": null,
       "manufacturer": "symbian-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "7.7.1.88",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -1586,15 +1486,8 @@
         "touch": false,
         "size": null
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "Android Webkit",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "Symbian OS",
@@ -1602,6 +1495,15 @@
       "version": null,
       "manufacturer": "symbian-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -1626,15 +1528,8 @@
         "touch": true,
         "size": 3.2
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "UC Browser Mini",
-      "modus": null,
-      "version": "11.0.6.1040",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "Symbian OS",
@@ -1642,6 +1537,15 @@
       "version": null,
       "manufacturer": "symbian-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "UC Browser Mini",
+      "modus": null,
+      "version": "11.0.6.1040",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
     },
     "engine": {
       "name": "U2",
@@ -1666,15 +1570,8 @@
         "touch": true,
         "size": 3.5
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "UC Browser Mini",
-      "modus": null,
-      "version": "11.0.6.1040",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "Symbian OS",
@@ -1682,6 +1579,15 @@
       "version": null,
       "manufacturer": "symbian-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "UC Browser Mini",
+      "modus": null,
+      "version": "11.0.6.1040",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
     },
     "engine": {
       "name": "U2",
@@ -1706,15 +1612,8 @@
         "touch": false,
         "size": 2.2
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "8.4.0.159",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "Nokia OS",
@@ -1722,6 +1621,15 @@
       "version": null,
       "manufacturer": "nokia",
       "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "8.4.0.159",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
     },
     "engine": {
       "name": "Trident",
@@ -1746,15 +1654,8 @@
         "touch": false,
         "size": 1.8
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "87.0.4280.101",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "Nokia OS",
@@ -1762,6 +1663,15 @@
       "version": null,
       "manufacturer": "nokia",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "87.0.4280.101",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -1786,15 +1696,8 @@
         "touch": false,
         "size": 2
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "Firefox",
-      "modus": null,
-      "version": "48.0.0",
-      "manufacturer": "mozilla-foundation",
-      "bits": null,
-      "type": "browser"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "Symbian OS",
@@ -1802,6 +1705,15 @@
       "version": null,
       "manufacturer": "symbian-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "48.0.0",
+      "manufacturer": "mozilla-foundation",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Gecko",
@@ -1826,15 +1738,8 @@
         "touch": false,
         "size": null
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "66.0.3359.117",
-      "manufacturer": "google",
-      "bits": 64,
-      "type": "browser"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "JavaOS",
@@ -1842,6 +1747,15 @@
       "version": null,
       "manufacturer": "sun-microsystems",
       "bits": 64
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "66.0.3359.117",
+      "manufacturer": "google",
+      "bits": 64,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -1866,15 +1780,8 @@
         "touch": false,
         "size": null
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "7.4.0.65",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "Nokia OS",
@@ -1882,6 +1789,15 @@
       "version": null,
       "manufacturer": "nokia",
       "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "7.4.0.65",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -1906,15 +1822,8 @@
         "touch": false,
         "size": null
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "7.7.1.88",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "JavaOS",
@@ -1922,6 +1831,15 @@
       "version": null,
       "manufacturer": "sun-microsystems",
       "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "7.7.1.88",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -1946,15 +1864,8 @@
         "touch": false,
         "size": 2.2
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "7.7.1.88",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "Nokia OS",
@@ -1962,6 +1873,15 @@
       "version": null,
       "manufacturer": "nokia",
       "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "7.7.1.88",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -1986,15 +1906,8 @@
         "touch": false,
         "size": null
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "7.8.0.95",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "Symbian OS",
@@ -2002,6 +1915,15 @@
       "version": null,
       "manufacturer": "symbian-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "7.8.0.95",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -2026,15 +1948,8 @@
         "touch": false,
         "size": 2.2
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "7.9.0.102",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "Symbian OS",
@@ -2042,6 +1957,15 @@
       "version": null,
       "manufacturer": "symbian-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "7.9.0.102",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -2066,15 +1990,8 @@
         "touch": false,
         "size": null
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "7.9.0.102",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "Symbian OS",
@@ -2082,6 +1999,15 @@
       "version": null,
       "manufacturer": "symbian-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "7.9.0.102",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -2106,15 +2032,8 @@
         "touch": true,
         "size": 3.2
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "7.9.0.102",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "Symbian OS",
@@ -2122,6 +2041,15 @@
       "version": null,
       "manufacturer": "symbian-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "7.9.0.102",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -2146,15 +2074,8 @@
         "touch": false,
         "size": 1.8
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "7.9.0.102",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "Nokia OS",
@@ -2162,6 +2083,15 @@
       "version": null,
       "manufacturer": "nokia",
       "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "7.9.0.102",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
     },
     "engine": {
       "name": "Trident",
@@ -2186,15 +2116,8 @@
         "touch": false,
         "size": 2.2
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "7.9.0.102",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "Nokia OS",
@@ -2202,6 +2125,15 @@
       "version": null,
       "manufacturer": "nokia",
       "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "7.9.0.102",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -2226,15 +2158,8 @@
         "touch": false,
         "size": 2.4
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "8.0.3.107",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "Symbian OS",
@@ -2242,6 +2167,15 @@
       "version": null,
       "manufacturer": "symbian-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "8.0.3.107",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -2266,15 +2200,8 @@
         "touch": true,
         "size": 2.4
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "8.0.3.107",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "Nokia OS",
@@ -2282,6 +2209,15 @@
       "version": null,
       "manufacturer": "nokia",
       "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "8.0.3.107",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -2306,15 +2242,8 @@
         "touch": true,
         "size": 3.2
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "8.2.0.132",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "Symbian OS",
@@ -2322,6 +2251,15 @@
       "version": null,
       "manufacturer": "symbian-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "8.2.0.132",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -2346,15 +2284,8 @@
         "touch": true,
         "size": null
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "8.2.1.144",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "Nokia OS",
@@ -2362,6 +2293,15 @@
       "version": null,
       "manufacturer": "nokia",
       "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "8.2.1.144",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -2386,15 +2326,8 @@
         "touch": false,
         "size": 2.2
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "8.2.1.144",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "Nokia OS",
@@ -2402,6 +2335,15 @@
       "version": null,
       "manufacturer": "nokia",
       "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "8.2.1.144",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -2426,15 +2368,8 @@
         "touch": false,
         "size": null
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "8.3.0.154",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "Symbian OS",
@@ -2442,6 +2377,15 @@
       "version": null,
       "manufacturer": "symbian-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "8.3.0.154",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -2466,15 +2410,8 @@
         "touch": true,
         "size": null
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "8.3.0.154",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "Nokia OS",
@@ -2482,6 +2419,15 @@
       "version": null,
       "manufacturer": "nokia",
       "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "8.3.0.154",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -2506,15 +2452,8 @@
         "touch": false,
         "size": 1.8
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "8.3.0.154",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "Nokia OS",
@@ -2522,6 +2461,15 @@
       "version": null,
       "manufacturer": "nokia",
       "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "8.3.0.154",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -2546,15 +2494,8 @@
         "touch": true,
         "size": 2
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "8.3.0.154",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "Nokia OS",
@@ -2562,6 +2503,15 @@
       "version": null,
       "manufacturer": "nokia",
       "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "8.3.0.154",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -2586,15 +2536,8 @@
         "touch": false,
         "size": 2.2
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "8.3.0.154",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "Nokia OS",
@@ -2602,6 +2545,15 @@
       "version": null,
       "manufacturer": "nokia",
       "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "8.3.0.154",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -2626,15 +2578,8 @@
         "touch": false,
         "size": 2.4
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "8.3.1.161",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "Nokia OS",
@@ -2642,6 +2587,15 @@
       "version": null,
       "manufacturer": "nokia",
       "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "8.3.1.161",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -2666,15 +2620,8 @@
         "touch": true,
         "size": 2.4
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "8.3.1.161",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "Nokia OS",
@@ -2682,6 +2629,15 @@
       "version": null,
       "manufacturer": "nokia",
       "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "8.3.1.161",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -2706,15 +2662,8 @@
         "touch": false,
         "size": 2.2
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "8.4.0.159",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "Nokia OS",
@@ -2722,6 +2671,15 @@
       "version": null,
       "manufacturer": "nokia",
       "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "8.4.0.159",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -2746,15 +2704,8 @@
         "touch": false,
         "size": null
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "8.5.0.185",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "JavaOS",
@@ -2762,6 +2713,15 @@
       "version": null,
       "manufacturer": "sun-microsystems",
       "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "8.5.0.185",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
     },
     "engine": {
       "name": "Trident",
@@ -2786,15 +2746,8 @@
         "touch": false,
         "size": null
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "8.5.0.185",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "JavaOS",
@@ -2802,6 +2755,15 @@
       "version": null,
       "manufacturer": "sun-microsystems",
       "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "8.5.0.185",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -2826,15 +2788,8 @@
         "touch": true,
         "size": 3.2
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "8.6.0.199",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "Symbian OS",
@@ -2842,6 +2797,15 @@
       "version": null,
       "manufacturer": "symbian-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "8.6.0.199",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -2866,15 +2830,8 @@
         "touch": false,
         "size": 2.4
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "8.6.0.199",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "Symbian OS",
@@ -2882,6 +2839,15 @@
       "version": null,
       "manufacturer": "symbian-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "8.6.0.199",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -2906,15 +2872,8 @@
         "touch": true,
         "size": 2.4
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "8.6.0.199",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "Nokia OS",
@@ -2922,6 +2881,15 @@
       "version": null,
       "manufacturer": "nokia",
       "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "8.6.0.199",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -2946,15 +2914,8 @@
         "touch": true,
         "size": null
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "8.7.0.218",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "Nokia OS",
@@ -2962,6 +2923,15 @@
       "version": null,
       "manufacturer": "nokia",
       "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "8.7.0.218",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
     },
     "engine": {
       "name": "U2",
@@ -2986,15 +2956,8 @@
         "touch": false,
         "size": null
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "8.7.0.218",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "JavaOS",
@@ -3002,6 +2965,15 @@
       "version": null,
       "manufacturer": "sun-microsystems",
       "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "8.7.0.218",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
     },
     "engine": {
       "name": "U2",
@@ -3026,15 +2998,8 @@
         "touch": false,
         "size": 2.4
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "8.7.1.234",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "Nokia OS",
@@ -3042,6 +3007,15 @@
       "version": null,
       "manufacturer": "nokia",
       "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "8.7.1.234",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
     },
     "engine": {
       "name": "U2",
@@ -3066,15 +3040,8 @@
         "touch": false,
         "size": null
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "8.7.1.234",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "Symbian OS",
@@ -3082,6 +3049,15 @@
       "version": null,
       "manufacturer": "symbian-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "8.7.1.234",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
     },
     "engine": {
       "name": "U2",
@@ -3106,15 +3082,8 @@
         "touch": false,
         "size": 2.2
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "8.7.1.234",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "JavaOS",
@@ -3122,6 +3091,15 @@
       "version": null,
       "manufacturer": "sun-microsystems",
       "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "8.7.1.234",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
     },
     "engine": {
       "name": "U2",
@@ -3146,15 +3124,8 @@
         "touch": false,
         "size": 2.4
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "8.7.1.234",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "Symbian OS",
@@ -3162,6 +3133,15 @@
       "version": null,
       "manufacturer": "symbian-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "8.7.1.234",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
     },
     "engine": {
       "name": "U2",
@@ -3186,15 +3166,8 @@
         "touch": false,
         "size": 2.36
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "8.8.0.245",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "Symbian OS",
@@ -3202,6 +3175,57 @@
       "version": null,
       "manufacturer": "symbian-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "8.8.0.245",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
+    },
+    "engine": {
+      "name": "U2",
+      "version": "1.0.0",
+      "manufacturer": "ucweb"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "UCWEB/2.0(Symbian; U; S60 V3; en-US; NokiaE72-1) U2/1.0.0 UCBrowser/8.8.0.245 U2/1.0.0 Mobile"
+    },
+    "device": {
+      "deviceName": "E72",
+      "marketingName": "E72",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.4
+      },
+      "type": "feature-phone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "symbian-foundation",
+      "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "8.8.0.245",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
     },
     "engine": {
       "name": "U2",
@@ -3226,15 +3250,8 @@
         "touch": false,
         "size": 1.8
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "8.8.1.252",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "Nokia OS",
@@ -3242,6 +3259,15 @@
       "version": null,
       "manufacturer": "nokia",
       "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "8.8.1.252",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
     },
     "engine": {
       "name": "U2",
@@ -3266,15 +3292,8 @@
         "touch": false,
         "size": null
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "8.8.1.252",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "Symbian OS",
@@ -3282,6 +3301,15 @@
       "version": null,
       "manufacturer": "symbian-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "8.8.1.252",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
     },
     "engine": {
       "name": "U2",
@@ -3306,15 +3334,8 @@
         "touch": false,
         "size": 2.4
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "8.9.0.251",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "Nokia OS",
@@ -3322,6 +3343,15 @@
       "version": null,
       "manufacturer": "nokia",
       "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "8.9.0.251",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
     },
     "engine": {
       "name": "U2",
@@ -3346,15 +3376,8 @@
         "touch": true,
         "size": null
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "8.9.0.251",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "Nokia OS",
@@ -3362,6 +3385,15 @@
       "version": null,
       "manufacturer": "nokia",
       "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "8.9.0.251",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
     },
     "engine": {
       "name": "U2",
@@ -3386,15 +3418,8 @@
         "touch": false,
         "size": 2
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "8.9.0.251",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "Nokia OS",
@@ -3402,6 +3427,15 @@
       "version": null,
       "manufacturer": "nokia",
       "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "8.9.0.251",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
     },
     "engine": {
       "name": "U2",
@@ -3426,15 +3460,8 @@
         "touch": false,
         "size": 2.6
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "8.9.0.277",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "Symbian OS",
@@ -3442,6 +3469,15 @@
       "version": null,
       "manufacturer": "symbian-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "8.9.0.277",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
     },
     "engine": {
       "name": "U2",
@@ -3466,15 +3502,8 @@
         "touch": true,
         "size": null
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "8.9.0.277",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "Symbian OS",
@@ -3482,6 +3511,15 @@
       "version": null,
       "manufacturer": "symbian-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "8.9.0.277",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
     },
     "engine": {
       "name": "U2",
@@ -3506,15 +3544,8 @@
         "touch": false,
         "size": 2.4
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "9.4.1.377",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "Nokia OS",
@@ -3522,6 +3553,15 @@
       "version": null,
       "manufacturer": "nokia",
       "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "9.4.1.377",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -3546,15 +3586,8 @@
         "touch": false,
         "size": 1.8
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "91.0.4472.164",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "Nokia OS",
@@ -3562,6 +3595,15 @@
       "version": null,
       "manufacturer": "nokia",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "91.0.4472.164",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -3586,15 +3628,8 @@
         "touch": true,
         "size": null
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "93.0.4577.82",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "Symbian OS",
@@ -3602,6 +3637,15 @@
       "version": null,
       "manufacturer": "symbian-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "93.0.4577.82",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -3626,15 +3670,8 @@
         "touch": false,
         "size": null
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "98.0.4758.101",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "Symbian OS",
@@ -3642,6 +3679,15 @@
       "version": null,
       "manufacturer": "symbian-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "98.0.4758.101",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -3666,15 +3712,8 @@
         "touch": false,
         "size": 1.8
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "103.0.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "Nokia OS",
@@ -3683,10 +3722,19 @@
       "manufacturer": "nokia",
       "bits": null
     },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "103.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
     "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
+      "name": "Blink",
+      "version": "103.0.0.0",
+      "manufacturer": "google"
     }
   },
   {
@@ -3711,15 +3759,8 @@
         "touch": false,
         "size": 1.8
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "Google Bot",
-      "modus": null,
-      "version": null,
-      "manufacturer": "google",
-      "bits": null,
-      "type": "bot"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "Nokia OS",
@@ -3728,10 +3769,19 @@
       "manufacturer": "nokia",
       "bits": null
     },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "103.0.5060.71",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
+    },
     "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
+      "name": "Blink",
+      "version": "103.0.5060.71",
+      "manufacturer": "google"
     }
   },
   {
@@ -3751,15 +3801,8 @@
         "touch": false,
         "size": 1.8
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "102.0.5005.78",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "Nokia OS",
@@ -3768,10 +3811,19 @@
       "manufacturer": "nokia",
       "bits": null
     },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "102.0.5005.78",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
     "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
+      "name": "Blink",
+      "version": "102.0.5005.78",
+      "manufacturer": "google"
     }
   },
   {
@@ -3791,15 +3843,8 @@
         "touch": false,
         "size": 1.8
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "105.0.5195.136",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "Nokia OS",
@@ -3808,57 +3853,19 @@
       "manufacturer": "nokia",
       "bits": null
     },
-    "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "device-stock-ua": "Mozilla/5.0 (SymbianOS/9.4; U; Series60/5.0 Nokia5230/51.0.002; Profile/MIDP-2.1 Configuration/CLDC-1.1; de) AppleWebKit/525 (KHTML, like Gecko) NokiaBrowser/7.3.1.33",
-      "forwarded": "for=\"109.43.112.143:24854\"",
-      "save-data": "on",
-      "user-agent": "Opera/9.80 (Series 60; Opera Mini/7.1.32453/191.278; U; de) Presto/2.12.423 Version/12.16",
-      "x-clacks-overhead": "GNU ph",
-      "x-operamini-features": "advanced, download, file_system, folding, httpping, pingback, routing, touch, viewport",
-      "x-operamini-phone": "Nokia #",
-      "x-operamini-phone-ua": "Mozilla/5.0 (SymbianOS/9.4; U; Series60/5.0 Nokia5230/51.0.002; Profile/MIDP-2.1 Configuration/CLDC-1.1; de) AppleWebKit/525 (KHTML, like Gecko) NokiaBrowser/7.3.1.33"
-    },
-    "device": {
-      "deviceName": "5230",
-      "marketingName": "Nuron",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 640,
-        "height": 360,
-        "touch": true,
-        "size": 3.2
-      },
-      "type": "feature-phone"
-    },
     "client": {
-      "name": "Opera Mini",
+      "name": "Chrome",
       "modus": null,
-      "version": "7.1.32453",
-      "manufacturer": "opera",
+      "version": "105.0.5195.136",
+      "manufacturer": "google",
       "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "symbian-foundation",
-      "bits": null
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
-      "name": "WebKit",
-      "version": "525.0.0",
-      "manufacturer": "apple"
+      "name": "Blink",
+      "version": "105.0.5195.136",
+      "manufacturer": "google"
     }
   },
   {
@@ -3878,15 +3885,8 @@
         "touch": false,
         "size": null
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "94.0.4606.71",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "Symbian OS",
@@ -3894,6 +3894,15 @@
       "version": null,
       "manufacturer": "symbian-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "94.0.4606.71",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -3918,15 +3927,8 @@
         "touch": false,
         "size": 1.8
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "85.0.4183.127",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "Nokia OS",
@@ -3934,6 +3936,15 @@
       "version": null,
       "manufacturer": "nokia",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "85.0.4183.127",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -3958,15 +3969,8 @@
         "touch": false,
         "size": null
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "110.0.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "Symbian OS",
@@ -3975,10 +3979,19 @@
       "manufacturer": "symbian-foundation",
       "bits": null
     },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "110.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
     "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
+      "name": "Blink",
+      "version": "110.0.0.0",
+      "manufacturer": "google"
     }
   },
   {
@@ -3998,15 +4011,8 @@
         "touch": false,
         "size": 1.8
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "94.0.4606.85",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "Nokia OS",
@@ -4015,9 +4021,165 @@
       "manufacturer": "nokia",
       "bits": null
     },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "94.0.4606.85",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
     "engine": {
       "name": "Blink",
       "version": "94.0.4606.85",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; Nokia C22 Build/TP1A.220624.014) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.196 Mobile Safari/537.36"
+    },
+    "device": {
+      "deviceName": "C2-00",
+      "marketingName": "C2",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 160,
+        "height": 128,
+        "touch": false,
+        "size": 1.8
+      },
+      "type": "feature-phone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "Nokia OS",
+      "marketingName": "Nokia OS",
+      "version": null,
+      "manufacturer": "nokia",
+      "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "114.0.5735.196",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "114.0.5735.196",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "2",
+      "downlink": "9.8",
+      "dpr": "1.75",
+      "ect": "4g",
+      "rtt": "0",
+      "sec-ch-device-memory": "2",
+      "sec-ch-dpr": "1.75",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-viewport-height": "763",
+      "sec-ch-viewport-width": "412",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; Nokia C22 Build/TP1A.220624.014) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.196 Mobile Safari/537.36",
+      "viewport-width": "412",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "deviceName": "C2-00",
+      "marketingName": "C2",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 160,
+        "height": 128,
+        "touch": false,
+        "size": 1.8
+      },
+      "type": "feature-phone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "Nokia OS",
+      "marketingName": "Nokia OS",
+      "version": null,
+      "manufacturer": "nokia",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "114.0.5735.196",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "114.0.5735.196",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "none",
+      "sec-fetch-user": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; Nokia C22 Build/TP1A.220624.014) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.196 Mobile Safari/537.36",
+      "x-requested-with": "com.google.android.apps.searchlite"
+    },
+    "device": {
+      "deviceName": "C2-00",
+      "marketingName": "C2",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 160,
+        "height": 128,
+        "touch": false,
+        "size": 1.8
+      },
+      "type": "feature-phone",
+      "ismobile": true
+    },
+    "os": {
+      "name": "Nokia OS",
+      "marketingName": "Nokia OS",
+      "version": null,
+      "manufacturer": "nokia",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "114.0.5735.196",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "114.0.5735.196",
       "manufacturer": "google"
     }
   }

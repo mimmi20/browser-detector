@@ -16,15 +16,8 @@
         "touch": false,
         "size": null
       },
-      "type": "tv-media-player"
-    },
-    "client": {
-      "name": "LG Browser",
-      "modus": null,
-      "version": "4.1.4",
-      "manufacturer": "lg",
-      "bits": null,
-      "type": "browser"
+      "type": "tv-media-player",
+      "ismobile": false
     },
     "os": {
       "name": "NetCast",
@@ -32,6 +25,15 @@
       "version": null,
       "manufacturer": "lg",
       "bits": null
+    },
+    "client": {
+      "name": "LG Browser",
+      "modus": null,
+      "version": "4.1.4",
+      "manufacturer": "lg",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -56,15 +58,8 @@
         "touch": false,
         "size": null
       },
-      "type": "tv-media-player"
-    },
-    "client": {
-      "name": "LG Browser",
-      "modus": null,
-      "version": "4.1.4",
-      "manufacturer": "lg",
-      "bits": null,
-      "type": "browser"
+      "type": "tv-media-player",
+      "ismobile": false
     },
     "os": {
       "name": "NetCast",
@@ -72,6 +67,15 @@
       "version": null,
       "manufacturer": "lg",
       "bits": null
+    },
+    "client": {
+      "name": "LG Browser",
+      "modus": null,
+      "version": "4.1.4",
+      "manufacturer": "lg",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -96,15 +100,8 @@
         "touch": false,
         "size": null
       },
-      "type": "tv-media-player"
-    },
-    "client": {
-      "name": "LG Browser",
-      "modus": null,
-      "version": "4.1.4",
-      "manufacturer": "lg",
-      "bits": null,
-      "type": "browser"
+      "type": "tv-media-player",
+      "ismobile": false
     },
     "os": {
       "name": "Maemo",
@@ -112,6 +109,15 @@
       "version": null,
       "manufacturer": "linux-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "LG Browser",
+      "modus": null,
+      "version": "4.1.4",
+      "manufacturer": "lg",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",

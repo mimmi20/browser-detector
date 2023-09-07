@@ -1,6 +1,342 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (URLfilterDB-crawler/1.1) ufdb/1.0"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "URLfilterDB Crawler",
+      "modus": null,
+      "version": "1.1.0",
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; OpenHoseBot/2.1; +http://www.openhose.org/bot.html)"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "OpenHoseBot",
+      "modus": null,
+      "version": "2.1.0",
+      "manufacturer": "openhose",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Blogshares Spiders (Renewed V1.65)"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Blogshares Spiders",
+      "modus": null,
+      "version": "1.65.0",
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "QuickiWiki/1.0 (http://www.quickiwiki.com; admin@quickiwiki.com) BasedOnNodeJs/0.10.23"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "QuickiWiki Bot",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "quicki-wiki",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; metager2-verification-bot; +http://metager2.de/technology.php)"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "metager2-verification-bot",
+      "modus": null,
+      "version": null,
+      "manufacturer": "suma-ev",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; DomainSigmaCrawler/0.1; +http://domainsigma.com/robot)"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "DomainSigmaCrawler",
+      "modus": null,
+      "version": "0.1.0",
+      "manufacturer": "domain-sigma",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "curl/7.35.0"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "cURL",
+      "modus": null,
+      "version": "7.35.0",
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "library",
+      "isbot": true
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/4.0 (compatible; Powermarks/3.5; Windows 95/98/2000/NT)"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false
+    },
+    "os": {
+      "name": "Windows 95",
+      "marketingName": "Windows 95",
+      "version": "95.0.0",
+      "manufacturer": "microsoft",
+      "bits": null
+    },
+    "client": {
+      "name": "Powermarks",
+      "modus": null,
+      "version": "3.5.0",
+      "manufacturer": "kaylon-technologies",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "BigBozz/BigBozz-2.2.1"
     },
     "device": {
@@ -16,15 +352,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "BigBozz - Financial Search",
-      "modus": null,
-      "version": "2.2.1",
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -32,6 +361,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "BigBozz - Financial Search",
+      "modus": null,
+      "version": "2.2.1",
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -56,15 +394,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "ECCP",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -72,6 +403,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "ECCP",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -96,15 +436,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Crawler",
-      "modus": null,
-      "version": "0.9.0",
-      "manufacturer": "linkfluence",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -112,6 +445,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Crawler",
+      "modus": null,
+      "version": "0.9.0",
+      "manufacturer": "linkfluence",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -136,15 +478,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "WebIndex",
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -152,6 +487,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "WebIndex",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": "WebKit",
@@ -176,15 +520,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Prince",
-      "modus": null,
-      "version": "7.1.0",
-      "manufacturer": "yes-logic",
-      "bits": null,
-      "type": "application"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -192,6 +529,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Prince",
+      "modus": null,
+      "version": "7.1.0",
+      "manufacturer": "yes-logic",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -216,15 +562,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "ArchiveBot",
-      "modus": null,
-      "version": null,
-      "manufacturer": "archive-team",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": "Windows NT 6.1",
@@ -232,6 +571,15 @@
       "version": "6.1.0",
       "manufacturer": "microsoft",
       "bits": 64
+    },
+    "client": {
+      "name": "ArchiveBot",
+      "modus": null,
+      "version": null,
+      "manufacturer": "archive-team",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -256,15 +604,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Smartsite HTTPClient",
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -272,6 +613,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Smartsite HTTPClient",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -296,15 +646,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "jig browser web",
-      "modus": null,
-      "version": "1.0.4",
-      "manufacturer": "w3c",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -312,6 +655,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "jig browser web",
+      "modus": null,
+      "version": "1.0.4",
+      "manufacturer": "w3c",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -336,15 +688,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "A6-Indexer",
-      "modus": null,
-      "version": null,
-      "manufacturer": "a6corp",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -352,6 +697,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "A6-Indexer",
+      "modus": null,
+      "version": null,
+      "manufacturer": "a6corp",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -376,15 +730,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "AdSense Snapshot Bot",
-      "modus": null,
-      "version": null,
-      "manufacturer": "google",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -392,6 +739,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "AdSense Snapshot Bot",
+      "modus": null,
+      "version": null,
+      "manufacturer": "google",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -416,15 +772,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Amazon CloudFront",
-      "modus": null,
-      "version": null,
-      "manufacturer": "amazon",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -432,6 +781,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Amazon CloudFront",
+      "modus": null,
+      "version": null,
+      "manufacturer": "amazon",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -456,15 +814,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Arachnida Web Crawler",
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -472,6 +823,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Arachnida Web Crawler",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -496,15 +856,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "bandscraper",
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -512,6 +865,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "bandscraper",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -536,15 +898,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "BitlyBot",
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -552,6 +907,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "BitlyBot",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -576,15 +940,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "cars-app-browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -592,6 +949,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "cars-app-browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -616,15 +982,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "EventMachine HttpClient",
-      "modus": null,
-      "version": null,
-      "manufacturer": "ilya-grigorik",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -632,6 +991,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "EventMachine HttpClient",
+      "modus": null,
+      "version": null,
+      "manufacturer": "ilya-grigorik",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -656,15 +1024,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Goldfire Server",
-      "modus": null,
-      "version": null,
-      "manufacturer": "invention-machine",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -672,6 +1033,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Goldfire Server",
+      "modus": null,
+      "version": null,
+      "manufacturer": "invention-machine",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -696,15 +1066,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "HggH Screenshot System with PhantomJS",
-      "modus": null,
-      "version": null,
-      "manufacturer": "jonas-genannt",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -712,6 +1075,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "HggH Screenshot System with PhantomJS",
+      "modus": null,
+      "version": null,
+      "manufacturer": "jonas-genannt",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -736,15 +1108,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "IBM Connections",
-      "modus": null,
-      "version": "4.5.0",
-      "manufacturer": "ibm",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -752,6 +1117,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "IBM Connections",
+      "modus": null,
+      "version": "4.5.0",
+      "manufacturer": "ibm",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -776,15 +1150,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "InAGist URL Resolver",
-      "modus": null,
-      "version": null,
-      "manufacturer": "iyotta-software",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -792,6 +1159,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "InAGist URL Resolver",
+      "modus": null,
+      "version": null,
+      "manufacturer": "iyotta-software",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -816,15 +1192,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Jeode",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -832,6 +1201,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Jeode",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -856,15 +1234,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "krakenjs",
-      "modus": null,
-      "version": "0.6.0",
-      "manufacturer": "paypal",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -872,6 +1243,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "krakenjs",
+      "modus": null,
+      "version": "0.6.0",
+      "manufacturer": "paypal",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -896,15 +1276,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Livelap Crawler",
-      "modus": null,
-      "version": "0.2.0",
-      "manufacturer": "paypal",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -912,6 +1285,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Livelap Crawler",
+      "modus": null,
+      "version": "0.2.0",
+      "manufacturer": "paypal",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -936,15 +1318,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Locubot",
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -952,6 +1327,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Locubot",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -976,15 +1360,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "MailChimp",
-      "modus": null,
-      "version": null,
-      "manufacturer": "the-rocket-science-group",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -992,6 +1369,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "MailChimp",
+      "modus": null,
+      "version": null,
+      "manufacturer": "the-rocket-science-group",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -1016,15 +1402,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "MixBot",
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -1032,6 +1411,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "MixBot",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -1056,15 +1444,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "BuSecurityProject",
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -1072,6 +1453,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "BuSecurityProject",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -1096,15 +1486,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "focuseekbot",
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -1112,6 +1495,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "focuseekbot",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -1136,15 +1528,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Internet Explorer",
-      "modus": null,
-      "version": "8.0.0",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -1152,6 +1537,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Internet Explorer",
+      "modus": null,
+      "version": "8.0.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Trident",
@@ -1176,15 +1570,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Texis Webscript",
-      "modus": null,
-      "version": null,
-      "manufacturer": "thunderstone-software",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -1192,6 +1579,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Texis Webscript",
+      "modus": null,
+      "version": null,
+      "manufacturer": "thunderstone-software",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -1216,15 +1612,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "vBulletin SEO Bot",
-      "modus": null,
-      "version": null,
-      "manufacturer": "vbseo",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -1232,6 +1621,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "vBulletin SEO Bot",
+      "modus": null,
+      "version": null,
+      "manufacturer": "vbseo",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -1256,15 +1654,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Firefox",
-      "modus": null,
-      "version": "2.0.0",
-      "manufacturer": "mozilla-foundation",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -1272,6 +1663,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "2.0.0",
+      "manufacturer": "mozilla-foundation",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Gecko",
@@ -1296,15 +1696,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "bnf.fr Bot",
-      "modus": null,
-      "version": null,
-      "manufacturer": "bibliotheque-nationale-de-france",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -1312,6 +1705,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "bnf.fr Bot",
+      "modus": null,
+      "version": null,
+      "manufacturer": "bibliotheque-nationale-de-france",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": "WebKit",
@@ -1336,15 +1738,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Mignify Bot",
-      "modus": null,
-      "version": "1.10.8",
-      "manufacturer": "internet-memory-research",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -1352,6 +1747,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Mignify Bot",
+      "modus": null,
+      "version": "1.10.8",
+      "manufacturer": "internet-memory-research",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -1376,15 +1780,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "JobdiggerSpider",
-      "modus": null,
-      "version": null,
-      "manufacturer": "job-digger",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -1392,6 +1789,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "JobdiggerSpider",
+      "modus": null,
+      "version": null,
+      "manufacturer": "job-digger",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -1416,15 +1822,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "kgbody",
-      "modus": null,
-      "version": "2.0.0",
-      "manufacturer": "ntt-resonant",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -1432,6 +1831,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "kgbody",
+      "modus": null,
+      "version": "2.0.0",
+      "manufacturer": "ntt-resonant",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -1456,15 +1864,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "kulturarw3",
-      "modus": null,
-      "version": null,
-      "manufacturer": "national-library-of-sweden",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -1472,6 +1873,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "kulturarw3",
+      "modus": null,
+      "version": null,
+      "manufacturer": "national-library-of-sweden",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -1496,15 +1906,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Lucidworks Bot",
-      "modus": null,
-      "version": null,
-      "manufacturer": "lucidworks",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -1512,6 +1915,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Lucidworks Bot",
+      "modus": null,
+      "version": null,
+      "manufacturer": "lucidworks",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -1536,15 +1948,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "MerchantCentricBot",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -1552,6 +1957,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "MerchantCentricBot",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -1576,15 +1990,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "MarketwireBot",
-      "modus": null,
-      "version": null,
-      "manufacturer": "marketwire",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": "Windows NT",
@@ -1592,6 +1999,15 @@
       "version": null,
       "manufacturer": "microsoft",
       "bits": null
+    },
+    "client": {
+      "name": "MarketwireBot",
+      "modus": null,
+      "version": null,
+      "manufacturer": "marketwire",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -1616,15 +2032,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Nett.io bot",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "nett.io",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -1632,6 +2041,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Nett.io bot",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "nett.io",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -1656,15 +2074,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Internet Explorer",
-      "modus": null,
-      "version": "9.0.0",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -1672,6 +2083,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Internet Explorer",
+      "modus": null,
+      "version": "9.0.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Trident",
@@ -1696,15 +2116,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "SemanticBot",
-      "modus": null,
-      "version": "1.1.0",
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -1712,6 +2125,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "SemanticBot",
+      "modus": null,
+      "version": "1.1.0",
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -1736,15 +2158,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "vkShare",
-      "modus": null,
-      "version": null,
-      "manufacturer": "vk",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -1752,6 +2167,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "vkShare",
+      "modus": null,
+      "version": null,
+      "manufacturer": "vk",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -1776,15 +2200,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "YioopBot",
-      "modus": null,
-      "version": null,
-      "manufacturer": "yioop",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -1792,6 +2209,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "YioopBot",
+      "modus": null,
+      "version": null,
+      "manufacturer": "yioop",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -1816,15 +2242,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "zitebot",
-      "modus": null,
-      "version": null,
-      "manufacturer": "flipboard",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -1832,6 +2251,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "zitebot",
+      "modus": null,
+      "version": null,
+      "manufacturer": "flipboard",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -1856,15 +2284,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "acapbot",
-      "modus": null,
-      "version": "0.1.0",
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -1872,6 +2293,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "acapbot",
+      "modus": null,
+      "version": "0.1.0",
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -1896,15 +2326,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Google Adwords DisplayAds WebRender",
-      "modus": null,
-      "version": null,
-      "manufacturer": "google",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -1912,6 +2335,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Google Adwords DisplayAds WebRender",
+      "modus": null,
+      "version": null,
+      "manufacturer": "google",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -1936,15 +2368,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "PageFreezer",
-      "modus": null,
-      "version": null,
-      "manufacturer": "page-freezer-software",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -1952,6 +2377,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "PageFreezer",
+      "modus": null,
+      "version": null,
+      "manufacturer": "page-freezer-software",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -1976,15 +2410,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "RebelMouse",
-      "modus": null,
-      "version": "0.1.0",
-      "manufacturer": "rebelmouse",
-      "bits": null,
-      "type": "application"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -1992,6 +2419,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "RebelMouse",
+      "modus": null,
+      "version": "0.1.0",
+      "manufacturer": "rebelmouse",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -2016,15 +2452,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "ShowyouBot",
-      "modus": null,
-      "version": null,
-      "manufacturer": "remixation",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -2032,6 +2461,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "ShowyouBot",
+      "modus": null,
+      "version": null,
+      "manufacturer": "remixation",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -2056,15 +2494,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "WebRingChecker",
-      "modus": null,
-      "version": "1.71.0",
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -2072,6 +2503,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "WebRingChecker",
+      "modus": null,
+      "version": "1.71.0",
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -2096,15 +2536,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Mail.Ru",
-      "modus": null,
-      "version": "2.0.0",
-      "manufacturer": "mail.ru",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -2112,6 +2545,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Mail.Ru",
+      "modus": null,
+      "version": "2.0.0",
+      "manufacturer": "mail.ru",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": "Gecko",
@@ -2136,15 +2578,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Finderlein Research Crawler",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -2152,6 +2587,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Finderlein Research Crawler",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -2176,15 +2620,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Esribot",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "esri.hu",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -2192,6 +2629,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Esribot",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "esri.hu",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -2216,15 +2662,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "chlooe Bot",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "asia-ws-wetwork",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -2232,6 +2671,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "chlooe Bot",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "asia-ws-wetwork",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -2256,15 +2704,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "SeeBot",
-      "modus": null,
-      "version": "2.0.0",
-      "manufacturer": "seegnify",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -2272,6 +2713,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "SeeBot",
+      "modus": null,
+      "version": "2.0.0",
+      "manufacturer": "seegnify",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -2296,15 +2746,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Cookie Reports Bot",
-      "modus": null,
-      "version": "0.1.0",
-      "manufacturer": "cookie-reports-limited",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -2312,6 +2755,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Cookie Reports Bot",
+      "modus": null,
+      "version": "0.1.0",
+      "manufacturer": "cookie-reports-limited",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -2336,15 +2788,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Elmer",
-      "modus": null,
-      "version": null,
-      "manufacturer": "thing-link-oy",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -2352,6 +2797,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Elmer",
+      "modus": null,
+      "version": null,
+      "manufacturer": "thing-link-oy",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -2376,15 +2830,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Iframely Bot",
-      "modus": null,
-      "version": "0.7.1",
-      "manufacturer": "itteco",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -2392,6 +2839,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Iframely Bot",
+      "modus": null,
+      "version": "0.7.1",
+      "manufacturer": "itteco",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -2416,15 +2872,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "MetaInspector",
-      "modus": null,
-      "version": "3.0.0",
-      "manufacturer": "jaime-iniesta",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -2432,6 +2881,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "MetaInspector",
+      "modus": null,
+      "version": "3.0.0",
+      "manufacturer": "jaime-iniesta",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -2456,15 +2914,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Microsoft CryptoAPI",
-      "modus": null,
-      "version": "6.1.0",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": "ChromeOS",
@@ -2472,6 +2923,15 @@
       "version": null,
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Microsoft CryptoAPI",
+      "modus": null,
+      "version": "6.1.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -2496,15 +2956,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Digg Bot",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "news.me",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -2512,6 +2965,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Digg Bot",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "news.me",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -2536,15 +2998,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "AjaxSnapBot",
-      "modus": null,
-      "version": null,
-      "manufacturer": "tockify",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -2552,6 +3007,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "AjaxSnapBot",
+      "modus": null,
+      "version": null,
+      "manufacturer": "tockify",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -2576,15 +3040,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "CrawlRobot",
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -2592,6 +3049,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "CrawlRobot",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -2616,15 +3082,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Owler Bot",
-      "modus": null,
-      "version": "0.4.0",
-      "manufacturer": "owler",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -2632,6 +3091,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Owler Bot",
+      "modus": null,
+      "version": "0.4.0",
+      "manufacturer": "owler",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -2656,15 +3124,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "pub-crawler",
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -2672,6 +3133,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "pub-crawler",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -2696,15 +3166,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Reverse IP Lookup",
-      "modus": null,
-      "version": "4.00.0",
-      "manufacturer": "binarymonkey",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -2712,6 +3175,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Reverse IP Lookup",
+      "modus": null,
+      "version": "4.00.0",
+      "manufacturer": "binarymonkey",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -2736,15 +3208,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "OWASP_SECRET_BROWSER",
-      "modus": null,
-      "version": "3.0.0",
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -2752,6 +3217,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "OWASP_SECRET_BROWSER",
+      "modus": null,
+      "version": "3.0.0",
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -2776,15 +3250,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "SMRF URL Expander",
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -2792,6 +3259,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "SMRF URL Expander",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -2816,15 +3292,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Speedy Spider",
-      "modus": null,
-      "version": null,
-      "manufacturer": "entireweb",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -2832,6 +3301,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Speedy Spider",
+      "modus": null,
+      "version": null,
+      "manufacturer": "entireweb",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -2856,15 +3334,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Superarama.com - BOT",
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -2872,6 +3343,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Superarama.com - BOT",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -2896,15 +3376,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "WNMbot",
-      "modus": null,
-      "version": "0.4.0",
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -2912,6 +3385,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "WNMbot",
+      "modus": null,
+      "version": "0.4.0",
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -2936,15 +3418,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Website Explorer",
-      "modus": null,
-      "version": "0.9.9.9",
-      "manufacturer": "umechando",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -2952,6 +3427,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Website Explorer",
+      "modus": null,
+      "version": "0.9.9.9",
+      "manufacturer": "umechando",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -2976,15 +3460,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "city-map screenshot service",
-      "modus": null,
-      "version": null,
-      "manufacturer": "city-map-internet-marketing",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -2992,6 +3469,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "city-map screenshot service",
+      "modus": null,
+      "version": null,
+      "manufacturer": "city-map-internet-marketing",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -3016,15 +3502,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "gosquared-thumbnailer",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "go-squared",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -3032,6 +3511,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "gosquared-thumbnailer",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "go-squared",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -3056,15 +3544,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "optivo NetHelper",
-      "modus": null,
-      "version": null,
-      "manufacturer": "optivo",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -3072,6 +3553,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "optivo NetHelper",
+      "modus": null,
+      "version": null,
+      "manufacturer": "optivo",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -3096,15 +3586,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Screenshot Bot",
-      "modus": null,
-      "version": null,
-      "manufacturer": "pr-cy",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -3112,6 +3595,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Screenshot Bot",
+      "modus": null,
+      "version": null,
+      "manufacturer": "pr-cy",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -3136,15 +3628,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Kraken",
-      "modus": null,
-      "version": "0.1.0",
-      "manufacturer": "linkfluence",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -3152,6 +3637,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Kraken",
+      "modus": null,
+      "version": "0.1.0",
+      "manufacturer": "linkfluence",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -3176,15 +3670,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Begun Advertising Bot",
-      "modus": null,
-      "version": "3.0.0",
-      "manufacturer": "begun",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -3192,6 +3679,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Begun Advertising Bot",
+      "modus": null,
+      "version": "3.0.0",
+      "manufacturer": "begun",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -3216,15 +3712,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "SetLinks.ru Crawler",
-      "modus": null,
-      "version": "1.2.0",
-      "manufacturer": "set-links",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -3232,6 +3721,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "SetLinks.ru Crawler",
+      "modus": null,
+      "version": "1.2.0",
+      "manufacturer": "set-links",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -3256,15 +3754,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Nagios",
-      "modus": null,
-      "version": "1.4.16",
-      "manufacturer": "nagios-enterprises",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -3272,6 +3763,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Nagios",
+      "modus": null,
+      "version": "1.4.16",
+      "manufacturer": "nagios-enterprises",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -3296,15 +3796,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Nagios",
-      "modus": null,
-      "version": "2.0.0",
-      "manufacturer": "nagios-enterprises",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -3312,6 +3805,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Nagios",
+      "modus": null,
+      "version": "2.0.0",
+      "manufacturer": "nagios-enterprises",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -3336,15 +3838,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "MegaIndex Bot",
-      "modus": null,
-      "version": "2.0.0",
-      "manufacturer": "mega-index",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -3352,6 +3847,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "MegaIndex Crawler",
+      "modus": null,
+      "version": "2.0.0",
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -3376,15 +3880,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "DAWINCI ANTIPLAG SPIDER",
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -3392,6 +3889,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "DAWINCI ANTIPLAG SPIDER",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -3416,15 +3922,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "AccServer",
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -3432,6 +3931,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "AccServer",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -3456,15 +3964,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "SafeSearch microdata crawler",
-      "modus": null,
-      "version": null,
-      "manufacturer": "avira-operations",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -3472,6 +3973,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "SafeSearch microdata crawler",
+      "modus": null,
+      "version": null,
+      "manufacturer": "avira-operations",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -3496,15 +4006,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "AdvBot",
-      "modus": null,
-      "version": "2.0.0",
-      "manufacturer": "adv-bot",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -3512,6 +4015,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "AdvBot",
+      "modus": null,
+      "version": "2.0.0",
+      "manufacturer": "adv-bot",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -3536,15 +4048,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "WiseNut search engine crawler",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "look-smart",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -3552,6 +4057,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "WiseNut search engine crawler",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "look-smart",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -3576,15 +4090,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "HyperCrawl",
-      "modus": null,
-      "version": "0.2.0",
-      "manufacturer": "seograph",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -3592,6 +4099,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "HyperCrawl",
+      "modus": null,
+      "version": "0.2.0",
+      "manufacturer": "seograph",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -3616,7 +4132,15 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
+      "type": "unknown",
+      "ismobile": false
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
     },
     "client": {
       "name": "iZSearch Bot",
@@ -3624,54 +4148,8 @@
       "version": null,
       "manufacturer": "iz-search",
       "bits": null,
-      "type": "bot"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/2.0 (compatible; ARCHIVE.ORG.UA crawler)"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Internet Archive",
-      "modus": null,
-      "version": null,
-      "manufacturer": "archive.org",
-      "bits": null,
-      "type": "bot"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -3696,7 +4174,15 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
+      "type": "unknown",
+      "ismobile": false
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
     },
     "client": {
       "name": "worldwebheritage.org Bot",
@@ -3704,294 +4190,8 @@
       "version": "1.0.0",
       "manufacturer": "go-daddy",
       "bits": null,
-      "type": "bot"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.6) Gecko/20070725 Firefox/2.0.0.6 - James BOT - WebCrawler http://cognitiveseo.com/bot.html"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "JamesBOT",
-      "modus": null,
-      "version": null,
-      "manufacturer": "geskimo",
-      "bits": null,
-      "type": "bot"
-    },
-    "os": {
-      "name": "Windows NT 5.1",
-      "marketingName": "Windows XP",
-      "version": "5.1.0",
-      "manufacturer": "microsoft",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; TestCrawler)"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "TestCrawler",
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "bot"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "PycURL/7.22.0"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "PycURL",
-      "modus": null,
-      "version": "7.22.0",
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "bot"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; Win32; WinHttp.WinHttpRequest.5)"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "WinHttp",
-      "modus": null,
-      "version": "5.0.0",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "bot"
-    },
-    "os": {
-      "name": "Windows",
-      "marketingName": "Windows",
-      "version": null,
-      "manufacturer": "microsoft",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "TrendWinHttp/"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "TrendWinHttp",
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "bot"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "MnoGoSearch/3.3.15"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "MnoGoSearch",
-      "modus": null,
-      "version": "3.3.15",
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "bot"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (X11; U; Linux Core i7-4980HQ; de; rv:32.0; compatible; Jobboerse.com; http://www.xn--jobbrse-d1a.com) Gecko/20100401 Firefox/24.0"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "JobBoerse Bot",
-      "modus": null,
-      "version": null,
-      "manufacturer": "jobboerse",
-      "bits": null,
-      "type": "bot"
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
