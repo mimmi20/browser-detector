@@ -151,6 +151,18 @@
     },
     "engine": "webkit"
   },
+  "atom": {
+    "name": "Atom",
+    "manufacturer": "github",
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Atom"
+      ]
+    },
+    "engine": null
+  },
   "baidu box app": {
     "name": "Baidu Box App",
     "manufacturer": "baidu",
@@ -235,6 +247,18 @@
       ]
     },
     "engine": "blink"
+  },
+  "bonprix app": {
+    "name": "bonprix App",
+    "manufacturer": "bonprix",
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "bonprix mobile App"
+      ]
+    },
+    "engine": null
   },
   "booking.com app": {
     "name": "Booking.com App",
@@ -366,18 +390,6 @@
     },
     "engine": "unknown"
   },
-  "dalvik": {
-    "name": "Dalvik",
-    "manufacturer": "google",
-    "type": "application",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "Dalvik"
-      ]
-    },
-    "engine": "webkit"
-  },
   "douban app": {
     "name": "douban App",
     "manufacturer": "unknown",
@@ -402,18 +414,6 @@
     },
     "engine": "webkit"
   },
-  "duckduck app": {
-    "name": "DuckDuck App",
-    "manufacturer": "duck-duck-go",
-    "type": "application",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "DDG\\-Android\\-"
-      ]
-    },
-    "engine": null
-  },
   "eb iphone/ipad app": {
     "name": "EB iPhone/IPad App",
     "manufacturer": "unknown",
@@ -426,6 +426,18 @@
     },
     "engine": "webkit"
   },
+  "electron": {
+    "name": "Electron",
+    "manufacturer": "microsoft",
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Electron"
+      ]
+    },
+    "engine": null
+  },
   "elluminate live": {
     "name": "Elluminate Live",
     "manufacturer": "blackboard",
@@ -435,16 +447,6 @@
       "search": null
     },
     "engine": "unknown"
-  },
-  "evernote app": {
-    "name": "Evernote App",
-    "manufacturer": "evernote",
-    "type": "application",
-    "version": {
-      "class": null,
-      "search": null
-    },
-    "engine": "webkit"
   },
   "excel": {
     "name": "Excel",
@@ -569,6 +571,18 @@
     },
     "engine": "unknown"
   },
+  "hi-search": {
+    "name": "HiSearch",
+    "manufacturer": "huawei",
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "HiSearch"
+      ]
+    },
+    "engine": null
+  },
   "goodreader": {
     "name": "GoodReader",
     "manufacturer": "unknown",
@@ -588,7 +602,8 @@
     "version": {
       "class": "VersionFactory",
       "search": [
-        "GSA"
+        "GSA",
+        "GoogleApp"
       ]
     },
     "engine": null
@@ -602,6 +617,16 @@
       "search": [
         "GoogleMobile"
       ]
+    },
+    "engine": null
+  },
+  "google search lite": {
+    "name": "Google Go",
+    "manufacturer": "google",
+    "type": "application",
+    "version": {
+      "class": null,
+      "search": null
     },
     "engine": null
   },
@@ -696,21 +721,6 @@
     },
     "engine": "webkit"
   },
-  "itunes": {
-    "name": "iTunes",
-    "manufacturer": "apple",
-    "type": "application",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "iTunes\\-iPhone",
-        "iTunes\\-iPad",
-        "iTunes\\-iPod",
-        "iTunes"
-      ]
-    },
-    "engine": "webkit"
-  },
   "iweb": {
     "name": "iWeb",
     "manufacturer": "apple",
@@ -720,6 +730,16 @@
       "search": null
     },
     "engine": "webkit"
+  },
+  "jj2go": {
+    "name": "Jack & Jones to go",
+    "manufacturer": "bestseller",
+    "type": "application",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": null
   },
   "kamelio app": {
     "name": "Kamelio App",
@@ -743,6 +763,18 @@
     },
     "engine": "unknown"
   },
+  "keeper": {
+    "name": "Keeper Password Manager",
+    "manufacturer": "keeper",
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Keeper"
+      ]
+    },
+    "engine": "unknown"
+  },
   "kioclient": {
     "name": "kioclient",
     "manufacturer": "kde",
@@ -763,6 +795,19 @@
       "class": "VersionFactory",
       "search": [
         "LibreOffice"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "linkedin-app": {
+    "name": "LinkedIn",
+    "manufacturer": "linked-in",
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "LinkedInApp",
+        "\\[LinkedInApp\\]"
       ]
     },
     "engine": "unknown"
@@ -1159,18 +1204,6 @@
     },
     "engine": "unknown"
   },
-  "reeder": {
-    "name": "Reeder",
-    "manufacturer": "unknown",
-    "type": "application",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "Reeder"
-      ]
-    },
-    "engine": "webkit"
-  },
   "rocky chatwork mobile": {
     "name": "Rocky ChatWork Mobile",
     "manufacturer": "chat-work",
@@ -1440,6 +1473,19 @@
     },
     "engine": null
   },
+  "tiktok": {
+    "name": "Tiktok",
+    "manufacturer": "tiktok",
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "AppName\\/musical_ly app_version",
+        "TikTok"
+      ]
+    },
+    "engine": null
+  },
   "tubetv": {
     "name": "TubeTV",
     "manufacturer": "chimoosoft",
@@ -1471,6 +1517,18 @@
     "version": {
       "class": null,
       "search": null
+    },
+    "engine": "webkit"
+  },
+  "twinkle": {
+    "name": "twinkle",
+    "manufacturer": "michel-de-boer",
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "twinkle"
+      ]
     },
     "engine": "webkit"
   },
@@ -1543,6 +1601,18 @@
       "search": null
     },
     "engine": "webkit"
+  },
+  "vs code": {
+    "name": "Visual Studio Code",
+    "manufacturer": "microsoft",
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Code"
+      ]
+    },
+    "engine": null
   },
   "apple webkit service": {
     "name": "Webkit Service",
@@ -1798,6 +1868,40 @@
       "class": "VersionFactory",
       "search": [
         "Zite"
+      ]
+    },
+    "engine": null
+  },
+  "teams": {
+    "name": "Teams",
+    "manufacturer": "microsoft",
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Teams"
+      ]
+    },
+    "engine": null
+  },
+  "anti-browser-spy": {
+    "name": "AntiBrowserSpy",
+    "manufacturer": "abelssoft",
+    "type": "application",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "kakaotalk": {
+    "name": "KAKAOTALK",
+    "manufacturer": "kakao",
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "KAKAOTALK"
       ]
     },
     "engine": null

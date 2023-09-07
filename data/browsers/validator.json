@@ -1,0 +1,38 @@
+{
+  "w3c validator": {
+    "name": "W3C Validator",
+    "manufacturer": "w3c",
+    "type": "validator",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "W3C_Validator"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "html validator": {
+    "name": "HTML Validator",
+    "manufacturer": "web-design-group",
+    "type": "validator",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "WDG_Validator"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "jigsaw css validator": {
+    "name": "Jigsaw CSS Validator",
+    "manufacturer": "w3c",
+    "type": "validator",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Jigsaw"
+      ]
+    },
+    "engine": "unknown"
+  }
+}

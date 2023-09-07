@@ -16,15 +16,8 @@
         "touch": true,
         "size": 5.96
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Edge Mobile",
-      "modus": null,
-      "version": "14.14393.0",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "browser"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "Windows Phone OS",
@@ -32,6 +25,15 @@
       "version": "10.0.0",
       "manufacturer": "microsoft",
       "bits": null
+    },
+    "client": {
+      "name": "Edge Mobile",
+      "modus": null,
+      "version": "14.14393.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Edge",
@@ -56,15 +58,8 @@
         "touch": true,
         "size": 5.96
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Edge Mobile",
-      "modus": null,
-      "version": "15.15063.0",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "browser"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "Windows Phone OS",
@@ -72,6 +67,15 @@
       "version": "10.0.0",
       "manufacturer": "microsoft",
       "bits": null
+    },
+    "client": {
+      "name": "Edge Mobile",
+      "modus": null,
+      "version": "15.15063.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Edge",
@@ -96,15 +100,8 @@
         "touch": true,
         "size": 5.96
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "IEMobile",
-      "modus": null,
-      "version": "10.0.0",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "browser"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "Windows Phone OS",
@@ -112,6 +109,15 @@
       "version": "8.0.0",
       "manufacturer": "microsoft",
       "bits": null
+    },
+    "client": {
+      "name": "IEMobile",
+      "modus": null,
+      "version": "10.0.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Trident",

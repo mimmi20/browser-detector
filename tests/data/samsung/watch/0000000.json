@@ -16,15 +16,8 @@
         "touch": true,
         "size": 1.76
       },
-      "type": "watch"
-    },
-    "client": {
-      "name": "NetFront",
-      "modus": null,
-      "version": "3.4.0",
-      "manufacturer": "access",
-      "bits": null,
-      "type": "browser"
+      "type": "watch",
+      "ismobile": true
     },
     "os": {
       "name": "JavaOS",
@@ -32,6 +25,15 @@
       "version": null,
       "manufacturer": "sun-microsystems",
       "bits": null
+    },
+    "client": {
+      "name": "NetFront",
+      "modus": null,
+      "version": "3.4.0",
+      "manufacturer": "access",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "NetFront",
@@ -56,15 +58,8 @@
         "touch": true,
         "size": 1.2
       },
-      "type": "watch"
-    },
-    "client": {
-      "name": "Tizen Browser",
-      "modus": null,
-      "version": "2.3.2.2",
-      "manufacturer": "linux-foundation",
-      "bits": null,
-      "type": "browser"
+      "type": "watch",
+      "ismobile": true
     },
     "os": {
       "name": "Tizen",
@@ -72,6 +67,15 @@
       "version": "2.3.2.2",
       "manufacturer": "linux-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "Tizen Browser",
+      "modus": null,
+      "version": "2.3.2.2",
+      "manufacturer": "linux-foundation",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -96,15 +100,8 @@
         "touch": true,
         "size": 1.63
       },
-      "type": "watch"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "19.77.34.5",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "watch",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -112,6 +109,15 @@
       "version": "4.4.0",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "19.77.34.5",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -136,15 +142,8 @@
         "touch": true,
         "size": 1.63
       },
-      "type": "watch"
-    },
-    "client": {
-      "name": "Android Webkit",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "watch",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -152,6 +151,15 @@
       "version": "4.2.2",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -176,15 +184,8 @@
         "touch": true,
         "size": 2
       },
-      "type": "watch"
-    },
-    "client": {
-      "name": "Tizen Browser",
-      "modus": null,
-      "version": "2.2.1.3",
-      "manufacturer": "linux-foundation",
-      "bits": null,
-      "type": "browser"
+      "type": "watch",
+      "ismobile": true
     },
     "os": {
       "name": "Tizen",
@@ -192,6 +193,15 @@
       "version": "2.2.1.3",
       "manufacturer": "linux-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "Tizen Browser",
+      "modus": null,
+      "version": "2.2.1.3",
+      "manufacturer": "linux-foundation",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -216,15 +226,8 @@
         "touch": true,
         "size": 2
       },
-      "type": "watch"
-    },
-    "client": {
-      "name": "Tizen Browser",
-      "modus": null,
-      "version": "2.2.1.3",
-      "manufacturer": "linux-foundation",
-      "bits": null,
-      "type": "browser"
+      "type": "watch",
+      "ismobile": true
     },
     "os": {
       "name": "Tizen",
@@ -232,6 +235,15 @@
       "version": "2.2.1.3",
       "manufacturer": "linux-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "Tizen Browser",
+      "modus": null,
+      "version": "2.2.1.3",
+      "manufacturer": "linux-foundation",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -256,15 +268,8 @@
         "touch": true,
         "size": 2
       },
-      "type": "watch"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "34.0.1847.76",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "watch",
+      "ismobile": true
     },
     "os": {
       "name": "Tizen",
@@ -272,6 +277,15 @@
       "version": "2.2.1.3",
       "manufacturer": "linux-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "34.0.1847.76",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -296,15 +310,8 @@
         "touch": true,
         "size": 1.3
       },
-      "type": "watch"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "56.0.2924.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "watch",
+      "ismobile": true
     },
     "os": {
       "name": "Tizen",
@@ -312,6 +319,15 @@
       "version": "4.0.0",
       "manufacturer": "linux-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "56.0.2924.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -336,15 +352,8 @@
         "touch": true,
         "size": 1.3
       },
-      "type": "watch"
-    },
-    "client": {
-      "name": "Samsung Browser",
-      "modus": null,
-      "version": "2.0.0",
-      "manufacturer": "samsung",
-      "bits": null,
-      "type": "browser"
+      "type": "watch",
+      "ismobile": true
     },
     "os": {
       "name": "Tizen",
@@ -352,6 +361,15 @@
       "version": "4.0.0",
       "manufacturer": "linux-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "Samsung Browser",
+      "modus": null,
+      "version": "2.0.0",
+      "manufacturer": "samsung",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -376,15 +394,8 @@
         "touch": true,
         "size": 1.4
       },
-      "type": "watch"
-    },
-    "client": {
-      "name": "Samsung Browser",
-      "modus": null,
-      "version": "2.0.0",
-      "manufacturer": "samsung",
-      "bits": null,
-      "type": "browser"
+      "type": "watch",
+      "ismobile": true
     },
     "os": {
       "name": "Tizen",
@@ -392,6 +403,15 @@
       "version": "4.0.0",
       "manufacturer": "linux-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "Samsung Browser",
+      "modus": null,
+      "version": "2.0.0",
+      "manufacturer": "samsung",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -416,15 +436,8 @@
         "touch": true,
         "size": 1.3
       },
-      "type": "watch"
-    },
-    "client": {
-      "name": "Tizen Browser",
-      "modus": null,
-      "version": "2.3.2.3",
-      "manufacturer": "linux-foundation",
-      "bits": null,
-      "type": "browser"
+      "type": "watch",
+      "ismobile": true
     },
     "os": {
       "name": "Tizen",
@@ -432,6 +445,15 @@
       "version": "2.3.2.3",
       "manufacturer": "linux-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "Tizen Browser",
+      "modus": null,
+      "version": "2.3.2.3",
+      "manufacturer": "linux-foundation",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -456,15 +478,8 @@
         "touch": true,
         "size": 1.3
       },
-      "type": "watch"
-    },
-    "client": {
-      "name": "Samsung Browser",
-      "modus": null,
-      "version": "2.0.0",
-      "manufacturer": "samsung",
-      "bits": null,
-      "type": "browser"
+      "type": "watch",
+      "ismobile": true
     },
     "os": {
       "name": "Tizen",
@@ -472,6 +487,15 @@
       "version": "5.5.0",
       "manufacturer": "linux-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "Samsung Browser",
+      "modus": null,
+      "version": "2.0.0",
+      "manufacturer": "samsung",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -496,15 +520,8 @@
         "touch": true,
         "size": 1.3
       },
-      "type": "watch"
-    },
-    "client": {
-      "name": "Samsung Browser",
-      "modus": null,
-      "version": "2.0.0",
-      "manufacturer": "samsung",
-      "bits": null,
-      "type": "browser"
+      "type": "watch",
+      "ismobile": true
     },
     "os": {
       "name": "Tizen",
@@ -512,6 +529,15 @@
       "version": "4.0.0",
       "manufacturer": "linux-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "Samsung Browser",
+      "modus": null,
+      "version": "2.0.0",
+      "manufacturer": "samsung",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -536,15 +562,8 @@
         "touch": true,
         "size": 1.76
       },
-      "type": "watch"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "112.0.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "watch",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -553,10 +572,19 @@
       "manufacturer": "google",
       "bits": null
     },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "112.0.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
     "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
+      "name": "Blink",
+      "version": "112.0.0.0",
+      "manufacturer": "google"
     }
   }
 ]

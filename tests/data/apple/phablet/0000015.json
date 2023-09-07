@@ -1,46 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_2_1 like Mac OS X) AppleWebKit/602.4.6 (KHTML, like Gecko) Mobile/14D27 [FBAN/FBIOS;FBAV/78.0.0.40.70;FBBV/48784289;FBRV/0;FBDV/iPhone8,2;FBMD/iPhone;FBSN/iOS;FBSV/10.2.1;FBSS/3;FBCR/AT&T;FBID/phone;FBLC/en_US;FBOP/5]"
-    },
-    "device": {
-      "deviceName": "iPhone 8,2",
-      "marketingName": "iPhone 6S Plus",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5.5
-      },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "78.0.0.40.70",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "10.2.1",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "602.4.6",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Linux UPnP/1.0 Sonos/54.2-72031 (ICRU_iPhone11,6)"
     },
     "device": {
@@ -56,15 +16,8 @@
         "touch": true,
         "size": 6.5
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Mobile Safari UIWebView",
-      "modus": null,
-      "version": null,
-      "manufacturer": "apple",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -72,6 +25,15 @@
       "version": null,
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Mobile Safari UIWebView",
+      "modus": null,
+      "version": null,
+      "manufacturer": "apple",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -96,15 +58,8 @@
         "touch": true,
         "size": 5.8
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Mobile Safari UIWebView",
-      "modus": null,
-      "version": null,
-      "manufacturer": "apple",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -112,6 +67,15 @@
       "version": null,
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Mobile Safari UIWebView",
+      "modus": null,
+      "version": null,
+      "manufacturer": "apple",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -136,15 +100,8 @@
         "touch": true,
         "size": 6.7
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "169.0.0.21.133",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -152,6 +109,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "169.0.0.21.133",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -176,15 +142,8 @@
         "touch": true,
         "size": 5.5
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "210.0.0.16.67",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -192,6 +151,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "210.0.0.16.67",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -216,15 +184,8 @@
         "touch": true,
         "size": 5.5
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Facebook Messenger App",
-      "modus": null,
-      "version": "335.1.0.54.71",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -232,6 +193,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Facebook Messenger App",
+      "modus": null,
+      "version": "335.1.0.54.71",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -256,15 +226,8 @@
         "touch": true,
         "size": 5.8
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "218.0.0.6.105",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -272,6 +235,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "218.0.0.6.105",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -296,15 +268,8 @@
         "touch": true,
         "size": 6.7
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "216.0.0.12.135",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -312,6 +277,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "216.0.0.12.135",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -336,15 +310,8 @@
         "touch": true,
         "size": 5.8
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "216.0.0.12.135",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -352,6 +319,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "216.0.0.12.135",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -376,15 +352,8 @@
         "touch": true,
         "size": 5.8
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": null,
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -392,6 +361,15 @@
       "version": "15.1.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": null,
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -416,15 +394,8 @@
         "touch": true,
         "size": 6.7
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": null,
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -432,6 +403,15 @@
       "version": "14.8.1",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": null,
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -456,15 +436,8 @@
         "touch": true,
         "size": 5.8
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "217.0.0.7.470",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -472,6 +445,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "217.0.0.7.470",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -496,15 +478,8 @@
         "touch": true,
         "size": 6.5
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "216.0.0.12.135",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -512,6 +487,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "216.0.0.12.135",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -536,15 +520,8 @@
         "touch": true,
         "size": 6.5
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": null,
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -552,6 +529,15 @@
       "version": "14.8.1",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": null,
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -576,15 +562,8 @@
         "touch": true,
         "size": 6.7
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "346.0.0.68.119",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -592,6 +571,15 @@
       "version": "15.1.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "346.0.0.68.119",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -616,15 +604,8 @@
         "touch": true,
         "size": 6.5
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": null,
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -632,6 +613,15 @@
       "version": "15.1.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": null,
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -656,15 +646,8 @@
         "touch": true,
         "size": 5.5
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": null,
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -672,6 +655,15 @@
       "version": "14.8.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": null,
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -696,15 +688,8 @@
         "touch": true,
         "size": 6.5
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": null,
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -712,6 +697,15 @@
       "version": "15.1.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": null,
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -736,15 +730,8 @@
         "touch": true,
         "size": 5.8
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "215.1.0.19.356",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -752,6 +739,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "215.1.0.19.356",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -776,15 +772,8 @@
         "touch": true,
         "size": 5.5
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": null,
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -792,6 +781,15 @@
       "version": "14.4.2",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": null,
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -816,15 +814,8 @@
         "touch": true,
         "size": 5.8
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": null,
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -832,6 +823,15 @@
       "version": "15.1.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": null,
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -856,15 +856,8 @@
         "touch": true,
         "size": 5.5
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": null,
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -872,6 +865,15 @@
       "version": "15.1.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": null,
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -896,15 +898,8 @@
         "touch": true,
         "size": 5.8
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": null,
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -912,6 +907,15 @@
       "version": "14.8.1",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": null,
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -936,15 +940,8 @@
         "touch": true,
         "size": 5.5
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": null,
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -952,6 +949,15 @@
       "version": "14.8.1",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": null,
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -976,15 +982,8 @@
         "touch": true,
         "size": 5.8
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": null,
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -992,6 +991,15 @@
       "version": "15.1.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": null,
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -1016,15 +1024,8 @@
         "touch": true,
         "size": 6.5
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "214.0.0.36.111",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -1032,6 +1033,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "214.0.0.36.111",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -1056,15 +1066,8 @@
         "touch": true,
         "size": 6.7
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "213.1.0.22.117",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -1072,6 +1075,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "213.1.0.22.117",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -1096,15 +1108,8 @@
         "touch": true,
         "size": 6.5
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Facebook Messenger App",
-      "modus": null,
-      "version": "342.2.0.44.109",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -1112,6 +1117,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Facebook Messenger App",
+      "modus": null,
+      "version": "342.2.0.44.109",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -1136,15 +1150,8 @@
         "touch": true,
         "size": 5.5
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "216.0.0.12.135",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -1152,6 +1159,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "216.0.0.12.135",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -1176,15 +1192,8 @@
         "touch": true,
         "size": 6.7
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "217.0.0.7.470",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -1192,6 +1201,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "217.0.0.7.470",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -1216,15 +1234,8 @@
         "touch": true,
         "size": 5.5
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": null,
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -1232,6 +1243,15 @@
       "version": "15.1.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": null,
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -1256,15 +1276,8 @@
         "touch": true,
         "size": 5.8
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "219.0.0.11.117",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -1272,6 +1285,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "219.0.0.11.117",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -1296,15 +1318,8 @@
         "touch": true,
         "size": 5.8
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "219.0.0.11.117",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -1312,6 +1327,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "219.0.0.11.117",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -1336,15 +1360,8 @@
         "touch": true,
         "size": 6.7
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "220.0.0.8.117",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -1352,6 +1369,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "220.0.0.8.117",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -1376,15 +1402,8 @@
         "touch": true,
         "size": 5.8
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "220.0.0.8.117",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -1392,6 +1411,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "220.0.0.8.117",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -1416,15 +1444,8 @@
         "touch": true,
         "size": 5.8
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "220.0.0.8.117",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -1432,6 +1453,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "220.0.0.8.117",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -1456,15 +1486,8 @@
         "touch": true,
         "size": 5.8
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": null,
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -1472,6 +1495,15 @@
       "version": "15.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": null,
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -1496,15 +1528,8 @@
         "touch": true,
         "size": 6.7
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "219.0.0.11.117",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -1512,6 +1537,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "219.0.0.11.117",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -1536,15 +1570,8 @@
         "touch": true,
         "size": 6.5
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "220.0.0.8.117",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -1552,6 +1579,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "220.0.0.8.117",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -1576,15 +1612,8 @@
         "touch": true,
         "size": 5.8
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "221.0.0.9.115",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -1592,6 +1621,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "221.0.0.9.115",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -1616,15 +1654,8 @@
         "touch": true,
         "size": 5.5
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": null,
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -1632,6 +1663,15 @@
       "version": "15.2.1",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": null,
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -1656,15 +1696,8 @@
         "touch": true,
         "size": 5.5
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "221.0.0.9.115",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -1672,6 +1705,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "221.0.0.9.115",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -1696,15 +1738,8 @@
         "touch": true,
         "size": 6.5
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": null,
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -1712,6 +1747,15 @@
       "version": "14.6.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": null,
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -1736,15 +1780,8 @@
         "touch": true,
         "size": 5.5
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": null,
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -1752,6 +1789,15 @@
       "version": "14.8.1",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": null,
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -1776,15 +1822,8 @@
         "touch": true,
         "size": 5.8
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "221.0.0.9.115",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -1792,6 +1831,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "221.0.0.9.115",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -1816,15 +1864,8 @@
         "touch": true,
         "size": 5.5
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": null,
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -1832,6 +1873,15 @@
       "version": "15.2.1",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": null,
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -1856,15 +1906,8 @@
         "touch": true,
         "size": 5.8
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "223.0.0.11.104",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -1872,6 +1915,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "223.0.0.11.104",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -1896,15 +1948,8 @@
         "touch": true,
         "size": 6.7
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "224.0.0.12.115",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -1912,6 +1957,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "224.0.0.12.115",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -1936,15 +1990,8 @@
         "touch": true,
         "size": 6.5
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "223.0.0.11.104",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -1952,6 +1999,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "223.0.0.11.104",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -1976,15 +2032,8 @@
         "touch": true,
         "size": 6.7
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "225.0.0.9.115",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -1992,6 +2041,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "225.0.0.9.115",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -2016,15 +2074,8 @@
         "touch": true,
         "size": 5.8
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Facebook Messenger App",
-      "modus": null,
-      "version": "352.0.0.22.112",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -2032,6 +2083,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Facebook Messenger App",
+      "modus": null,
+      "version": "352.0.0.22.112",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -2056,15 +2116,8 @@
         "touch": true,
         "size": 5.8
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "362.0.0.37.104",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -2072,6 +2125,15 @@
       "version": "15.4.1",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "362.0.0.37.104",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -2096,15 +2158,8 @@
         "touch": true,
         "size": 5.8
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "230.0.0.20.113",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -2112,6 +2167,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "230.0.0.20.113",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -2136,15 +2200,8 @@
         "touch": true,
         "size": 6.5
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "230.0.0.20.113",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -2152,6 +2209,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "230.0.0.20.113",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -2176,15 +2242,8 @@
         "touch": true,
         "size": 5.8
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "365.0.0.26.108",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -2192,6 +2251,15 @@
       "version": "15.4.1",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "365.0.0.26.108",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -2216,15 +2284,8 @@
         "touch": true,
         "size": 5.8
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "235.1.0.24.107",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -2232,6 +2293,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "235.1.0.24.107",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -2256,15 +2326,8 @@
         "touch": true,
         "size": 5.8
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "233.1.0.4.112",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -2272,6 +2335,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "233.1.0.4.112",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -2296,15 +2368,8 @@
         "touch": true,
         "size": 5.8
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "236.0.0.19.111",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -2312,6 +2377,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "236.0.0.19.111",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -2336,15 +2410,8 @@
         "touch": true,
         "size": 5.5
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "226.0.0.13.117",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -2352,6 +2419,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "226.0.0.13.117",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -2376,15 +2452,8 @@
         "touch": true,
         "size": 5.5
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "244.0.0.12.112",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -2392,6 +2461,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "244.0.0.12.112",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -2416,15 +2494,8 @@
         "touch": true,
         "size": 5.8
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "241.1.0.17.112",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -2432,6 +2503,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "241.1.0.17.112",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -2456,15 +2536,8 @@
         "touch": true,
         "size": 5.8
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "239.2.0.17.109",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -2472,6 +2545,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "239.2.0.17.109",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -2496,15 +2578,8 @@
         "touch": true,
         "size": 5.8
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "248.0.0.13.109",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -2512,6 +2587,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "248.0.0.13.109",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -2536,15 +2620,8 @@
         "touch": true,
         "size": 6.5
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "245.0.0.13.110",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -2552,6 +2629,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "245.0.0.13.110",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -2576,15 +2662,8 @@
         "touch": true,
         "size": 5.8
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "250.0.0.14.109",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -2592,6 +2671,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "250.0.0.14.109",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -2616,15 +2704,8 @@
         "touch": true,
         "size": 5.5
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "248.1.0.13.112",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -2632,6 +2713,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "248.1.0.13.112",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -2656,15 +2746,8 @@
         "touch": true,
         "size": 5.8
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "380.0.0.29.110",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -2672,6 +2755,15 @@
       "version": "15.6.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "380.0.0.29.110",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -2696,15 +2788,8 @@
         "touch": true,
         "size": 5.8
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "255.0.0.16.105",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -2712,6 +2797,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "255.0.0.16.105",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -2736,15 +2830,8 @@
         "touch": true,
         "size": 5.8
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "254.0.0.15.109",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -2752,6 +2839,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "254.0.0.15.109",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -2776,15 +2872,8 @@
         "touch": true,
         "size": 6.7
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "254.0.0.15.109",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -2792,6 +2881,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "254.0.0.15.109",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -2816,15 +2914,8 @@
         "touch": true,
         "size": 5.8
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "179.0.0.28.118",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -2832,6 +2923,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "179.0.0.28.118",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -2856,15 +2956,8 @@
         "touch": true,
         "size": 6.7
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "252.1.0.19.111",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -2872,6 +2965,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "252.1.0.19.111",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -2896,15 +2998,8 @@
         "touch": true,
         "size": 5.8
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "253.0.0.19.114",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -2912,6 +3007,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "253.0.0.19.114",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -2936,15 +3040,8 @@
         "touch": true,
         "size": 5.8
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "251.0.0.7.107",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -2952,6 +3049,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "251.0.0.7.107",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -2976,15 +3082,8 @@
         "touch": true,
         "size": 6.7
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "255.1.0.18.105",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -2992,6 +3091,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "255.1.0.18.105",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -3016,15 +3124,8 @@
         "touch": true,
         "size": 5.8
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": "349.0.0.39.465",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -3032,6 +3133,15 @@
       "version": "15.6.1",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": "349.0.0.39.465",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -3056,15 +3166,8 @@
         "touch": true,
         "size": 6.5
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "255.1.0.18.105",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -3072,6 +3175,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "255.1.0.18.105",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -3096,15 +3208,8 @@
         "touch": true,
         "size": 5.8
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "254.0.0.15.109",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -3112,6 +3217,59 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "254.0.0.15.109",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "origin": "https://www.geld.de",
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 253.0.0.19.114 (iPhone12,3; iOS 15_6_1; tr_TR; tr-TR; scale=3.00; 1125x2436; 399676583)",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "deviceName": "iPhone 12,3",
+      "marketingName": "iPhone 11 Pro",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 2436,
+        "height": 1125,
+        "touch": true,
+        "size": 5.8
+      },
+      "type": "phablet",
+      "ismobile": true
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.3.0",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "253.0.0.19.114",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
     },
     "engine": {
       "name": "WebKit",
@@ -3136,15 +3294,8 @@
         "touch": true,
         "size": 5.8
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "243.1.0.14.111",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -3152,6 +3303,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "243.1.0.14.111",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -3176,15 +3336,8 @@
         "touch": true,
         "size": 6.7
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "261.0.0.18.106",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -3192,6 +3345,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "261.0.0.18.106",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -3216,15 +3378,8 @@
         "touch": true,
         "size": 6.7
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": null,
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -3232,6 +3387,15 @@
       "version": "16.1.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": null,
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -3256,15 +3420,8 @@
         "touch": true,
         "size": 6.5
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "266.0.0.10.105",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -3272,6 +3429,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "266.0.0.10.105",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -3296,15 +3462,8 @@
         "touch": true,
         "size": 5.8
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "264.3.0.19.104",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -3312,6 +3471,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "264.3.0.19.104",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -3336,15 +3504,8 @@
         "touch": true,
         "size": 6.5
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "265.0.0.13.302",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -3352,6 +3513,59 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "265.0.0.13.302",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "origin": "https://www.geld.de",
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/20D47 [FBAN/FBIOS;FBDV/iPhone13,4;FBMD/iPhone;FBSN/iOS;FBSV/16.3;FBSS/3;FBID/phone;FBLC/de_DE;FBOP/5]",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "deviceName": "iPhone 13,4",
+      "marketingName": "iPhone 12 Pro Max",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 2778,
+        "height": 1284,
+        "touch": true,
+        "size": 6.7
+      },
+      "type": "phablet",
+      "ismobile": true
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "16.3.0",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
     },
     "engine": {
       "name": "WebKit",
@@ -3376,15 +3590,8 @@
         "touch": true,
         "size": 6.5
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Safari",
-      "modus": null,
-      "version": null,
-      "manufacturer": "apple",
-      "bits": null,
-      "type": "browser"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -3392,6 +3599,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Safari",
+      "modus": null,
+      "version": null,
+      "manufacturer": "apple",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -3416,15 +3632,8 @@
         "touch": true,
         "size": 5.8
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Quora App",
-      "modus": null,
-      "version": "8.0.0",
-      "manufacturer": "quora",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -3432,6 +3641,15 @@
       "version": "14.0.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Quora App",
+      "modus": null,
+      "version": "8.0.0",
+      "manufacturer": "quora",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -3456,15 +3674,8 @@
         "touch": true,
         "size": 5.8
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Facebook Messenger App",
-      "modus": null,
-      "version": "394.0.0.28.70",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -3472,6 +3683,59 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Facebook Messenger App",
+      "modus": null,
+      "version": "394.0.0.28.70",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "origin": "https://www.geld.de",
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_8_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 LightSpeed [FBAN/MessengerLiteForiOS;FBAV/394.0.0.28.70;FBBV/442967208;FBDV/iPhone12,3;FBMD/iPhone;FBSN/iOS;FBSV/14.8.1;FBSS/3;FBCR/;FBID/phone;FBLC/de;FBOP/0]",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "deviceName": "iPhone 12,3",
+      "marketingName": "iPhone 11 Pro",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 2436,
+        "height": 1125,
+        "touch": true,
+        "size": 5.8
+      },
+      "type": "phablet",
+      "ismobile": true
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.3.0",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "394.0.0.28.70",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
     },
     "engine": {
       "name": "WebKit",
@@ -3496,15 +3760,8 @@
         "touch": true,
         "size": 6.5
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "276.1.0.14.103",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -3512,6 +3769,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "276.1.0.14.103",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -3536,15 +3802,8 @@
         "touch": true,
         "size": 5.8
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "273.0.0.16.70",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -3552,6 +3811,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "273.0.0.16.70",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -3576,15 +3844,8 @@
         "touch": true,
         "size": 5.5
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Facebook App",
-      "modus": null,
-      "version": null,
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -3592,6 +3853,15 @@
       "version": "12.5.7",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Facebook App",
+      "modus": null,
+      "version": null,
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -3616,15 +3886,8 @@
         "touch": true,
         "size": 5.8
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "278.0.0.19.115",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -3632,6 +3895,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "278.0.0.19.115",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -3658,15 +3930,8 @@
         "touch": true,
         "size": 5.8
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "272.0.0.14.74",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -3674,6 +3939,57 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "272.0.0.14.74",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_1_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 272.0.0.14.74 (iPhone10,3; iOS 16_1_1; de_DE; de-DE; scale=3.00; 1125x2436; 450101762) NW/3"
+    },
+    "device": {
+      "deviceName": "iPhone 10,3",
+      "marketingName": "iPhone X",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 2436,
+        "height": 1125,
+        "touch": true,
+        "size": 5.8
+      },
+      "type": "phablet",
+      "ismobile": true
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.3.0",
+      "manufacturer": "apple",
+      "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "272.0.0.14.74",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -3698,15 +4014,8 @@
         "touch": true,
         "size": 5.8
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "279.0.0.17.112",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -3714,6 +4023,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "279.0.0.17.112",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -3738,15 +4056,8 @@
         "touch": true,
         "size": 5.8
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "285.0.0.13.63",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -3754,6 +4065,15 @@
       "version": "16.5.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "285.0.0.13.63",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -3778,15 +4098,8 @@
         "touch": true,
         "size": 5.8
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "285.0.0.13.63",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -3794,6 +4107,15 @@
       "version": "16.4.1",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "285.0.0.13.63",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -3818,15 +4140,8 @@
         "touch": true,
         "size": 6.5
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "237.0.0.9.103",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -3834,6 +4149,15 @@
       "version": "11.3.0",
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "Instagram App",
+      "modus": null,
+      "version": "237.0.0.9.103",
+      "manufacturer": "facebook",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -3858,15 +4182,8 @@
         "touch": true,
         "size": 5.8
       },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "283.0.0.16.103",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
+      "type": "phablet",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -3875,125 +4192,14 @@
       "manufacturer": "apple",
       "bits": null
     },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 283.0.0.16.103 (iPhone12,5; iOS 16_4_1; de_DE; de; scale=3.00; 1242x2688; 474411477) NW/3"
-    },
-    "device": {
-      "deviceName": "iPhone 12,5",
-      "marketingName": "iPhone 11 Pro Max",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 2688,
-        "height": 1242,
-        "touch": true,
-        "size": 6.5
-      },
-      "type": "phablet"
-    },
     "client": {
       "name": "Instagram App",
       "modus": null,
       "version": "283.0.0.16.103",
       "manufacturer": "facebook",
       "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 283.0.0.16.103 (iPhone11,6; iOS 16_4_1; de_DE; de-DE; scale=3.00; 1242x2688; 474411477)"
-    },
-    "device": {
-      "deviceName": "iPhone 11,6",
-      "marketingName": "iPhone XS Max",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 2688,
-        "height": 1242,
-        "touch": true,
-        "size": 6.5
-      },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "283.0.0.16.103",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
-      "manufacturer": "apple",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_5_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/20F75 Instagram 289.1.0.21.50 (iPhone13,4; iOS 16_5_1; de_DE; de; scale=3.00; 1284x2778; 489311218)"
-    },
-    "device": {
-      "deviceName": "iPhone 13,4",
-      "marketingName": "iPhone 12 Pro Max",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 2778,
-        "height": 1284,
-        "touch": true,
-        "size": 6.7
-      },
-      "type": "phablet"
-    },
-    "client": {
-      "name": "Instagram App",
-      "modus": null,
-      "version": "289.1.0.21.50",
-      "manufacturer": "facebook",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "16.5.1",
-      "manufacturer": "apple",
-      "bits": null
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",

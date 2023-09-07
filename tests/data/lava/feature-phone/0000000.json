@@ -16,15 +16,8 @@
         "touch": false,
         "size": null
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "WAP Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "wap-browser"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "JavaOS",
@@ -32,6 +25,15 @@
       "version": null,
       "manufacturer": "sun-microsystems",
       "bits": null
+    },
+    "client": {
+      "name": "WAP Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "wap-browser",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -56,15 +58,8 @@
         "touch": false,
         "size": 2.4
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "Dorado WAP Browser",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "dorado",
-      "bits": null,
-      "type": "wap-browser"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "JavaOS",
@@ -72,6 +67,15 @@
       "version": null,
       "manufacturer": "sun-microsystems",
       "bits": null
+    },
+    "client": {
+      "name": "Dorado WAP Browser",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "dorado",
+      "bits": null,
+      "type": "wap-browser",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -96,15 +100,8 @@
         "touch": false,
         "size": 2.8
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "JavaOS",
@@ -112,6 +109,15 @@
       "version": null,
       "manufacturer": "sun-microsystems",
       "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -136,15 +142,8 @@
         "touch": true,
         "size": 3.5
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "MAUI Wap Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "wap-browser"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "MRE",
@@ -152,6 +151,15 @@
       "version": "3.1.00.1536",
       "manufacturer": "mediatek",
       "bits": null
+    },
+    "client": {
+      "name": "MAUI Wap Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "wap-browser",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -176,15 +184,8 @@
         "touch": true,
         "size": 3.5
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "MAUI Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "browser"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "JavaOS",
@@ -192,6 +193,15 @@
       "version": null,
       "manufacturer": "sun-microsystems",
       "bits": null
+    },
+    "client": {
+      "name": "MAUI Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -216,15 +226,8 @@
         "touch": true,
         "size": 2.8
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "Dorado WAP Browser",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "dorado",
-      "bits": null,
-      "type": "wap-browser"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "JavaOS",
@@ -232,6 +235,15 @@
       "version": null,
       "manufacturer": "sun-microsystems",
       "bits": null
+    },
+    "client": {
+      "name": "Dorado WAP Browser",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "dorado",
+      "bits": null,
+      "type": "wap-browser",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -256,15 +268,8 @@
         "touch": false,
         "size": 2.8
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "Dorado WAP Browser",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "dorado",
-      "bits": null,
-      "type": "wap-browser"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "JavaOS",
@@ -272,6 +277,15 @@
       "version": null,
       "manufacturer": "sun-microsystems",
       "bits": null
+    },
+    "client": {
+      "name": "Dorado WAP Browser",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "dorado",
+      "bits": null,
+      "type": "wap-browser",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -296,15 +310,8 @@
         "touch": false,
         "size": 2.8
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "MAUI Wap Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "wap-browser"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "JavaOS",
@@ -312,6 +319,15 @@
       "version": null,
       "manufacturer": "sun-microsystems",
       "bits": null
+    },
+    "client": {
+      "name": "MAUI Wap Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "wap-browser",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -336,15 +352,8 @@
         "touch": false,
         "size": 2.4
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "JavaOS",
@@ -352,6 +361,15 @@
       "version": null,
       "manufacturer": "sun-microsystems",
       "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -376,15 +394,8 @@
         "touch": false,
         "size": 2.8
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "Dorado WAP Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "dorado",
-      "bits": null,
-      "type": "wap-browser"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "JavaOS",
@@ -393,54 +404,19 @@
       "manufacturer": "sun-microsystems",
       "bits": null
     },
+    "client": {
+      "name": "Dorado WAP Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "dorado",
+      "bits": null,
+      "type": "wap-browser",
+      "isbot": false
+    },
     "engine": {
       "name": null,
       "version": null,
       "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (MAUI Runtime; Opera Mini/4.4.31762/35.3312; U; xx) Presto/2.8.119 Version/11.10",
-      "x-operamini-phone-ua": "OperaMini(Lava-Discover135;Opera Mini/4.4.31762;en)",
-      "x-operamini-phone": "? # ?",
-      "device-stock-ua": "OperaMini(Lava-Discover135;Opera Mini/4.4.31762;en)",
-      "x-operamini-features": "httpping, advanced, routing, file_system, download, folding"
-    },
-    "device": {
-      "deviceName": "Discover 135",
-      "marketingName": "Discover 135",
-      "manufacturer": "lava",
-      "brand": "lava",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "Opera Mini",
-      "modus": null,
-      "version": "4.4.31762",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "transcoder"
-    },
-    "os": {
-      "name": "MRE",
-      "marketingName": "MAUI Runtime Environment",
-      "version": null,
-      "manufacturer": "mediatek",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.8.119",
-      "manufacturer": "opera"
     }
   },
   {
@@ -460,15 +436,8 @@
         "touch": false,
         "size": 2.4
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "Dorado WAP Browser",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "dorado",
-      "bits": null,
-      "type": "wap-browser"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "JavaOS",
@@ -476,6 +445,15 @@
       "version": null,
       "manufacturer": "sun-microsystems",
       "bits": null
+    },
+    "client": {
+      "name": "Dorado WAP Browser",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "dorado",
+      "bits": null,
+      "type": "wap-browser",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -500,15 +478,8 @@
         "touch": true,
         "size": 2.8
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "MAUI Wap Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "wap-browser"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "MRE",
@@ -516,6 +487,15 @@
       "version": "3.1.00.2048",
       "manufacturer": "mediatek",
       "bits": null
+    },
+    "client": {
+      "name": "MAUI Wap Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "wap-browser",
+      "isbot": false
     },
     "engine": {
       "name": null,

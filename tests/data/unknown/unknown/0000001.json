@@ -1,6 +1,132 @@
 [
   {
     "headers": {
+      "user-agent": "SEOENGWorldBot/1.0 (+http://www.seoengine.com/seoengbot.htm)"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "DBot",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "get-download",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; SEOkicks-Robot; +http://www.seokicks.de/robot.html)"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "SEOkicks Robot",
+      "modus": null,
+      "version": null,
+      "manufacturer": "torsten-rueckert",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; SISTRIX Crawler; http://crawler.sistrix.net/)"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Sistrix Crawler",
+      "modus": null,
+      "version": null,
+      "manufacturer": "sistrix",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Scrapy/1.0.3.post6+g2d688cd (+http://scrapy.org)"
     },
     "device": {
@@ -16,15 +142,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Scrapy",
-      "modus": null,
-      "version": "1.0.3",
-      "manufacturer": "scrapy.org",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -32,6 +151,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Scrapy",
+      "modus": null,
+      "version": "1.0.3",
+      "manufacturer": "scrapy.org",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -56,15 +184,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Screaming Frog SEO Spider",
-      "modus": null,
-      "version": "2.22.0",
-      "manufacturer": "screaming-frog",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -72,6 +193,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Screaming Frog SEO Spider",
+      "modus": null,
+      "version": "2.22.0",
+      "manufacturer": "screaming-frog",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -96,15 +226,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "ScreenerBot",
-      "modus": null,
-      "version": "2.0.0",
-      "manufacturer": "screener-bot",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -112,6 +235,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "ScreenerBot",
+      "modus": null,
+      "version": "2.0.0",
+      "manufacturer": "screener-bot",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -136,15 +268,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "SemrushBot",
-      "modus": null,
-      "version": "0.97.0",
-      "manufacturer": "semrush",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -152,6 +277,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "SemrushBot",
+      "modus": null,
+      "version": "0.97.0",
+      "manufacturer": "semrush",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -176,15 +310,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "SeznamBot",
-      "modus": null,
-      "version": "3.1.0",
-      "manufacturer": "seznam",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -192,6 +319,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "SeznamBot",
+      "modus": null,
+      "version": "3.1.0",
+      "manufacturer": "seznam",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -216,15 +352,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "SimplePie",
-      "modus": null,
-      "version": "1.2.1-dev",
-      "manufacturer": "ryan-parman",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -232,6 +361,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "SimplePie",
+      "modus": null,
+      "version": "1.2.1-dev",
+      "manufacturer": "ryan-parman",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -256,15 +394,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Slackbot-Link-Expanding",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "slack",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -272,6 +403,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Slackbot-Link-Expanding",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "slack",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -296,15 +436,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Sogou Spider",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "sogou",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": "Windows 98",
@@ -312,6 +445,15 @@
       "version": "98.0.0",
       "manufacturer": "microsoft",
       "bits": null
+    },
+    "client": {
+      "name": "Sogou Spider",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "sogou",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -336,15 +478,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Sogou Web Spider",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "sogou",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -352,6 +487,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Sogou Web Spider",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "sogou",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -376,15 +520,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Sosospider",
-      "modus": null,
-      "version": null,
-      "manufacturer": "soso",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -392,6 +529,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Sosospider",
+      "modus": null,
+      "version": null,
+      "manufacturer": "soso",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -416,15 +562,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Superfeedr Bot",
-      "modus": null,
-      "version": "2.0.0",
-      "manufacturer": "superfeedr",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -432,6 +571,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Superfeedr Bot",
+      "modus": null,
+      "version": "2.0.0",
+      "manufacturer": "superfeedr",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -456,15 +604,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Twitterbot",
-      "modus": null,
-      "version": null,
-      "manufacturer": "twitter",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -472,6 +613,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "TelegramBot",
+      "modus": null,
+      "version": null,
+      "manufacturer": "telegram",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -496,15 +646,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "TinEye Bot",
-      "modus": null,
-      "version": "0.02.0",
-      "manufacturer": "idee",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -512,6 +655,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "TinEye Bot",
+      "modus": null,
+      "version": "0.02.0",
+      "manufacturer": "idee",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": "WebKit",
@@ -536,15 +688,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Tiny Tiny RSS",
-      "modus": null,
-      "version": "1.10.0",
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -552,6 +697,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Tiny Tiny RSS",
+      "modus": null,
+      "version": "1.10.0",
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": "WebKit",
@@ -576,15 +730,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "TurnitinBot",
-      "modus": null,
-      "version": "3.0.0",
-      "manufacturer": "iparadigms",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -592,6 +739,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "TurnitinBot",
+      "modus": null,
+      "version": "3.0.0",
+      "manufacturer": "iparadigms",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -616,15 +772,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "TweetedTimes Bot",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "tweeted-times",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -632,6 +781,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "TweetedTimes Bot",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "tweeted-times",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -656,15 +814,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Tweetmeme Bot",
-      "modus": null,
-      "version": "3.0.0",
-      "manufacturer": "datasift",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -672,6 +823,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Tweetmeme Bot",
+      "modus": null,
+      "version": "3.0.0",
+      "manufacturer": "datasift",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -696,15 +856,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Twitterbot",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "twitter",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -712,6 +865,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Twitterbot",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "twitter",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -736,15 +898,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "URLAppendBot",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "profound-networks",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -752,6 +907,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "URLAppendBot",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "profound-networks",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -776,15 +940,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "UniversalFeedParser",
-      "modus": null,
-      "version": "5.2.1",
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -792,6 +949,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "UniversalFeedParser",
+      "modus": null,
+      "version": "5.2.1",
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -816,15 +982,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "UptimeRobot",
-      "modus": null,
-      "version": "2.0.0",
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -832,6 +991,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "UptimeRobot",
+      "modus": null,
+      "version": "2.0.0",
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -856,15 +1024,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Vagabondo",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "wise-guys.nl",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -872,6 +1033,57 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Vagabondo",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "wise-guys.nl",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Jigsaw/2.3.0 W3C_CSS_Validator_JFouffa/2.0 (See <http://validator.w3.org/services>)"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Jigsaw CSS Validator",
+      "modus": null,
+      "version": "2.3.0",
+      "manufacturer": "w3c",
+      "bits": null,
+      "type": "validator",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -896,15 +1108,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "W3C I18n Checker",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "w3c",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -912,6 +1117,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "W3C I18n Checker",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "w3c",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -936,15 +1150,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "W3C-checklink",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "w3c",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -952,6 +1159,57 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "W3C-checklink",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "w3c",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "W3C_Validator/1.3 http://validator.w3.org/services"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "W3C Validator",
+      "modus": null,
+      "version": "1.3.0",
+      "manufacturer": "w3c",
+      "bits": null,
+      "type": "validator",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -976,15 +1234,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "W3C Unicorn",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "w3c",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -992,6 +1243,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "W3C Unicorn",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "w3c",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -1016,15 +1276,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Wappalyzer",
-      "modus": null,
-      "version": null,
-      "manufacturer": "elbert-alias",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -1032,6 +1285,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Wappalyzer",
+      "modus": null,
+      "version": null,
+      "manufacturer": "elbert-alias",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -1056,15 +1318,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "WeSEE:Search",
-      "modus": null,
-      "version": "0.1.0",
-      "manufacturer": "wesee",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -1072,6 +1327,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "WeSEE:Search",
+      "modus": null,
+      "version": "0.1.0",
+      "manufacturer": "wesee",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -1096,15 +1360,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "WordPress",
-      "modus": null,
-      "version": "4.7.2",
-      "manufacturer": "wordpress",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -1112,6 +1369,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "WordPress",
+      "modus": null,
+      "version": "4.7.2",
+      "manufacturer": "wordpress",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -1136,15 +1402,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Yahoo Ad Monitoring",
-      "modus": null,
-      "version": null,
-      "manufacturer": "yahoo",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -1152,6 +1411,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Yahoo Ad Monitoring",
+      "modus": null,
+      "version": null,
+      "manufacturer": "yahoo",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -1176,15 +1444,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Yahoo Link Preview",
-      "modus": null,
-      "version": null,
-      "manufacturer": "yahoo",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -1192,6 +1453,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Yahoo Link Preview",
+      "modus": null,
+      "version": null,
+      "manufacturer": "yahoo",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -1216,15 +1486,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Yahoo Slingstone",
-      "modus": null,
-      "version": null,
-      "manufacturer": "yahoo",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -1232,6 +1495,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Yahoo Slingstone",
+      "modus": null,
+      "version": null,
+      "manufacturer": "yahoo",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -1256,15 +1528,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Slurp",
-      "modus": null,
-      "version": null,
-      "manufacturer": "yahoo",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -1272,6 +1537,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Slurp",
+      "modus": null,
+      "version": null,
+      "manufacturer": "yahoo",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -1296,15 +1570,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "YandexBot",
-      "modus": null,
-      "version": "3.0.0",
-      "manufacturer": "yandex",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -1312,6 +1579,99 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "YandexBot",
+      "modus": null,
+      "version": "3.0.0",
+      "manufacturer": "yandex",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; YandexFavicons/1.0; +http://yandex.com/bots)"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Favicons Bot",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "yandex",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; YandexImageResizer/2.0; +http://yandex.com/bots)"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex Image Resizer",
+      "modus": null,
+      "version": "2.0.0",
+      "manufacturer": "yandex",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -1336,15 +1696,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Yandex Image Search",
-      "modus": null,
-      "version": "3.0.0",
-      "manufacturer": "yandex",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -1352,6 +1705,57 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Yandex Image Search",
+      "modus": null,
+      "version": "3.0.0",
+      "manufacturer": "yandex",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; YandexNews/3.0; +http://yandex.com/bots)"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Yandex News",
+      "modus": null,
+      "version": null,
+      "manufacturer": "yandex",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -1376,15 +1780,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Yandex News Links",
-      "modus": null,
-      "version": null,
-      "manufacturer": "yandex",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -1392,6 +1789,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Yandex News Links",
+      "modus": null,
+      "version": null,
+      "manufacturer": "yandex",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -1416,15 +1822,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "NaverBot",
-      "modus": null,
-      "version": "1.1.0",
-      "manufacturer": "nhn-corporation",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -1432,6 +1831,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "NaverBot",
+      "modus": null,
+      "version": "1.1.0",
+      "manufacturer": "nhn-corporation",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -1456,15 +1864,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "YoudaoBot",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -1472,6 +1873,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "YoudaoBot",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -1496,15 +1906,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "YOURLS",
-      "modus": null,
-      "version": "1.5.1",
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -1512,6 +1915,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "YOURLS",
+      "modus": null,
+      "version": "1.5.1",
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -1536,15 +1948,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Zookabot",
-      "modus": null,
-      "version": "2.5.0",
-      "manufacturer": "zookabot",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -1552,6 +1957,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Zookabot",
+      "modus": null,
+      "version": "2.5.0",
+      "manufacturer": "zookabot",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -1576,15 +1990,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "ZumBot",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "zum-internet-corp",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -1592,6 +1999,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "ZumBot",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "zum-internet-corp",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -1616,15 +2032,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "AhrefsBot",
-      "modus": null,
-      "version": null,
-      "manufacturer": "ahrefs",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -1632,6 +2041,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "AhrefsBot",
+      "modus": null,
+      "version": null,
+      "manufacturer": "ahrefs",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -1656,15 +2074,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "AhrefsBot",
-      "modus": null,
-      "version": "3.1.0",
-      "manufacturer": "ahrefs",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -1672,6 +2083,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "AhrefsBot",
+      "modus": null,
+      "version": "3.1.0",
+      "manufacturer": "ahrefs",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -1696,15 +2116,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "AhrefsBot",
-      "modus": null,
-      "version": "5.0.0",
-      "manufacturer": "ahrefs",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -1712,6 +2125,57 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "AhrefsBot",
+      "modus": null,
+      "version": "5.0.0",
+      "manufacturer": "ahrefs",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; archive.org_bot +http://www.archive.org/details/archive.org_bot)"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Internet Archive",
+      "modus": null,
+      "version": null,
+      "manufacturer": "archive.org",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -1736,15 +2200,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Internet Archive Special Archiver",
-      "modus": null,
-      "version": "3.1.1",
-      "manufacturer": "archive.org",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -1752,6 +2209,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Internet Archive Special Archiver",
+      "modus": null,
+      "version": "3.1.1",
+      "manufacturer": "archive.org",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -1776,15 +2242,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "CCBot",
-      "modus": null,
-      "version": "2.0.0",
-      "manufacturer": "common-crawl-foundation",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -1792,6 +2251,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "CCBot",
+      "modus": null,
+      "version": "2.0.0",
+      "manufacturer": "common-crawl-foundation",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -1816,15 +2284,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Download Accelerator",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -1832,6 +2293,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Download Accelerator",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -1856,15 +2326,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "zgrab",
-      "modus": null,
-      "version": "0.0.0",
-      "manufacturer": "rwth-aachen",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -1872,6 +2335,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "zgrab",
+      "modus": null,
+      "version": "0.0.0",
+      "manufacturer": "rwth-aachen",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -1896,15 +2368,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "AmigaVoyager",
-      "modus": null,
-      "version": "3.2.0",
-      "manufacturer": "vaporware",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": "Amiga OS",
@@ -1912,6 +2377,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "AmigaVoyager",
+      "modus": null,
+      "version": "3.2.0",
+      "manufacturer": "vaporware",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -1936,15 +2410,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "SeaMonkey",
-      "modus": null,
-      "version": "1.1.15",
-      "manufacturer": "mozilla-foundation",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": "Amiga OS",
@@ -1952,6 +2419,15 @@
       "version": "1.3.0",
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "SeaMonkey",
+      "modus": null,
+      "version": "1.1.15",
+      "manufacturer": "mozilla-foundation",
+      "bits": null,
+      "type": "pim",
+      "isbot": false
     },
     "engine": {
       "name": "Gecko",
@@ -1976,15 +2452,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "IBrowse",
-      "modus": null,
-      "version": "2.4.0",
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": "Amiga OS",
@@ -1992,6 +2461,15 @@
       "version": "3.9.0",
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "IBrowse",
+      "modus": null,
+      "version": "2.4.0",
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -2016,15 +2494,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "IBrowse",
-      "modus": null,
-      "version": "3.0.0",
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": "Amiga OS",
@@ -2032,6 +2503,15 @@
       "version": "4.0.0",
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "IBrowse",
+      "modus": null,
+      "version": "3.0.0",
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -2056,15 +2536,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Firefox",
-      "modus": null,
-      "version": "26.0.0",
-      "manufacturer": "mozilla-foundation",
-      "bits": 64,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": "Gentoo Linux",
@@ -2072,6 +2545,15 @@
       "version": null,
       "manufacturer": "gentoo",
       "bits": 64
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "26.0.0",
+      "manufacturer": "mozilla-foundation",
+      "bits": 64,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Gecko",
@@ -2096,15 +2578,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Charon",
-      "modus": null,
-      "version": null,
-      "manufacturer": "vita-nuova",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": "Inferno OS",
@@ -2112,6 +2587,15 @@
       "version": null,
       "manufacturer": "vita-nuova",
       "bits": null
+    },
+    "client": {
+      "name": "Charon",
+      "modus": null,
+      "version": null,
+      "manufacturer": "vita-nuova",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -2136,15 +2620,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "wget",
-      "modus": null,
-      "version": "1.11.4",
-      "manufacturer": "free-software-foundation",
-      "bits": null,
-      "type": "offline-browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": "Redhat Linux",
@@ -2152,6 +2629,15 @@
       "version": null,
       "manufacturer": "redhat",
       "bits": null
+    },
+    "client": {
+      "name": "wget",
+      "modus": null,
+      "version": "1.11.4",
+      "manufacturer": "free-software-foundation",
+      "bits": null,
+      "type": "offline-browser",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -2176,15 +2662,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "ABrowse",
-      "modus": null,
-      "version": "0.6.0",
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": "Syllable",
@@ -2192,6 +2671,15 @@
       "version": null,
       "manufacturer": "syllable",
       "bits": null
+    },
+    "client": {
+      "name": "ABrowse",
+      "modus": null,
+      "version": "0.6.0",
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -2216,15 +2704,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Teleca-Obigo",
-      "modus": null,
-      "version": null,
-      "manufacturer": "obigo",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -2232,6 +2713,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Teleca-Obigo",
+      "modus": null,
+      "version": null,
+      "manufacturer": "obigo",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -2256,15 +2746,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": "MRE",
@@ -2272,6 +2755,15 @@
       "version": null,
       "manufacturer": "mediatek",
       "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -2296,15 +2788,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "jig browser web",
-      "modus": null,
-      "version": "7.3.7",
-      "manufacturer": "w3c",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -2312,6 +2797,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "jig browser web",
+      "modus": null,
+      "version": "7.3.7",
+      "manufacturer": "w3c",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -2336,15 +2830,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": "Linux",
@@ -2352,6 +2839,15 @@
       "version": null,
       "manufacturer": "linux-foundation",
       "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -2376,15 +2872,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Player FM",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nuvomondo",
-      "bits": null,
-      "type": "multimedia-player"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -2392,6 +2881,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Player FM",
+      "modus": null,
+      "version": null,
+      "manufacturer": "nuvomondo",
+      "bits": null,
+      "type": "multimedia-player",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -2416,15 +2914,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "okhttp",
-      "modus": null,
-      "version": "2.7.5",
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -2432,6 +2923,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "okhttp",
+      "modus": null,
+      "version": "2.7.5",
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "library",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -2456,15 +2956,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "WebTV/MSNTV",
-      "modus": null,
-      "version": "1.2.0",
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -2472,6 +2965,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "WebTV/MSNTV",
+      "modus": null,
+      "version": "1.2.0",
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -2496,15 +2998,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "iTunes",
-      "modus": null,
-      "version": null,
-      "manufacturer": "apple",
-      "bits": null,
-      "type": "application"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -2512,6 +3007,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "iTunes",
+      "modus": null,
+      "version": null,
+      "manufacturer": "apple",
+      "bits": null,
+      "type": "multimedia-player",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -2536,15 +3040,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Roku DVP",
-      "modus": null,
-      "version": "5.2.0",
-      "manufacturer": "roku",
-      "bits": null,
-      "type": "multimedia-player"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -2552,6 +3049,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Roku DVP",
+      "modus": null,
+      "version": "5.2.0",
+      "manufacturer": "roku",
+      "bits": null,
+      "type": "multimedia-player",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -2576,15 +3082,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Mozilla",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "mozilla-foundation",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -2592,6 +3091,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Mozilla",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "mozilla-foundation",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Gecko",
@@ -2616,15 +3124,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Mozilla",
-      "modus": null,
-      "version": "3.01.0",
-      "manufacturer": "mozilla-foundation",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -2632,6 +3133,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Mozilla",
+      "modus": null,
+      "version": "3.01.0",
+      "manufacturer": "mozilla-foundation",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Gecko",
@@ -2656,15 +3166,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "HotJava",
-      "modus": null,
-      "version": "1.1.2",
-      "manufacturer": "sun-microsystems",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": "JavaOS",
@@ -2672,6 +3175,15 @@
       "version": null,
       "manufacturer": "sun-microsystems",
       "bits": null
+    },
+    "client": {
+      "name": "HotJava",
+      "modus": null,
+      "version": "1.1.2",
+      "manufacturer": "sun-microsystems",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -2696,15 +3208,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Oregano",
-      "modus": null,
-      "version": "1.10.0",
-      "manufacturer": "oregan",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": "RISC OS",
@@ -2712,6 +3217,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Oregano",
+      "modus": null,
+      "version": "1.10.0",
+      "manufacturer": "oregan",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -2736,15 +3250,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Mozilla",
-      "modus": null,
-      "version": "4.01.0",
-      "manufacturer": "mozilla-foundation",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": "RISC OS",
@@ -2752,6 +3259,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Mozilla",
+      "modus": null,
+      "version": "4.01.0",
+      "manufacturer": "mozilla-foundation",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Gecko",
@@ -2776,15 +3292,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Fresco",
-      "modus": null,
-      "version": "2.17.0",
-      "manufacturer": "ant",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": "RISC OS",
@@ -2792,6 +3301,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Fresco",
+      "modus": null,
+      "version": "2.17.0",
+      "manufacturer": "ant",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -2816,15 +3334,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Internet Explorer",
-      "modus": null,
-      "version": "6.0.0",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": "Windows NT 5.0",
@@ -2832,6 +3343,15 @@
       "version": "5.0.0",
       "manufacturer": "microsoft",
       "bits": null
+    },
+    "client": {
+      "name": "Internet Explorer",
+      "modus": null,
+      "version": "6.0.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Trident",
@@ -2856,15 +3376,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Y!J-Agent",
-      "modus": null,
-      "version": null,
-      "manufacturer": "yahoo-japan",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -2872,6 +3385,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Y!J-Agent",
+      "modus": null,
+      "version": null,
+      "manufacturer": "yahoo-japan",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -2896,15 +3418,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Yahoo! Japan",
-      "modus": null,
-      "version": null,
-      "manufacturer": "yahoo-japan",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -2912,6 +3427,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Yahoo! Japan",
+      "modus": null,
+      "version": null,
+      "manufacturer": "yahoo-japan",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -2936,15 +3460,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "R6 CommentReader",
-      "modus": null,
-      "version": null,
-      "manufacturer": "salesforce",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -2952,6 +3469,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "R6 CommentReader",
+      "modus": null,
+      "version": null,
+      "manufacturer": "salesforce",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -2976,15 +3502,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "R6 FeedFetcher",
-      "modus": null,
-      "version": null,
-      "manufacturer": "salesforce",
-      "bits": null,
-      "type": "bot-syndication-reader"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -2992,6 +3511,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "R6 FeedFetcher",
+      "modus": null,
+      "version": null,
+      "manufacturer": "salesforce",
+      "bits": null,
+      "type": "bot-syndication-reader",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -3016,15 +3544,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "AhrefsBot",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "ahrefs",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -3032,6 +3553,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "AhrefsBot",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "ahrefs",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -3056,15 +3586,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Hatena",
-      "modus": null,
-      "version": null,
-      "manufacturer": "hatena",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -3072,6 +3595,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Hatena",
+      "modus": null,
+      "version": null,
+      "manufacturer": "hatena",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -3096,15 +3628,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Ichiro Bot",
-      "modus": null,
-      "version": "3.0.0",
-      "manufacturer": "ichiro",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -3112,6 +3637,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Ichiro Bot",
+      "modus": null,
+      "version": "3.0.0",
+      "manufacturer": "ichiro",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -3136,15 +3670,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "gooblog",
-      "modus": null,
-      "version": null,
-      "manufacturer": "ntt-resonant",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -3152,6 +3679,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "gooblog",
+      "modus": null,
+      "version": null,
+      "manufacturer": "ntt-resonant",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -3176,15 +3712,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Livedoor FeedFetcher",
-      "modus": null,
-      "version": "0.01.0",
-      "manufacturer": "nhn-corporation",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -3192,6 +3721,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Livedoor FeedFetcher",
+      "modus": null,
+      "version": "0.01.0",
+      "manufacturer": "nhn-corporation",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -3216,15 +3754,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Crawler",
-      "modus": null,
-      "version": "2.00.0",
-      "manufacturer": "linkfluence",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -3232,6 +3763,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Crawler",
+      "modus": null,
+      "version": "2.00.0",
+      "manufacturer": "linkfluence",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -3256,15 +3796,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Google App Engine",
-      "modus": null,
-      "version": null,
-      "manufacturer": "google",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -3272,6 +3805,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Google App Engine",
+      "modus": null,
+      "version": null,
+      "manufacturer": "google",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -3296,15 +3838,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Google Web Preview",
-      "modus": null,
-      "version": null,
-      "manufacturer": "google",
-      "bits": null,
-      "type": "bot-trancoder"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -3312,6 +3847,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Google Web Preview",
+      "modus": null,
+      "version": null,
+      "manufacturer": "google",
+      "bits": null,
+      "type": "bot-trancoder",
+      "isbot": true
     },
     "engine": {
       "name": "WebKit",
@@ -3336,15 +3880,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "nbot",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -3352,6 +3889,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "nbot",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -3376,15 +3922,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Tweetmeme Bot",
-      "modus": null,
-      "version": "2.11.0",
-      "manufacturer": "datasift",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -3392,6 +3931,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Tweetmeme Bot",
+      "modus": null,
+      "version": "2.11.0",
+      "manufacturer": "datasift",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -3416,15 +3964,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Apache-HttpClient",
-      "modus": null,
-      "version": null,
-      "manufacturer": "apache",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": "JavaOS",
@@ -3432,6 +3973,15 @@
       "version": null,
       "manufacturer": "sun-microsystems",
       "bits": null
+    },
+    "client": {
+      "name": "Apache-HttpClient",
+      "modus": null,
+      "version": null,
+      "manufacturer": "apache",
+      "bits": null,
+      "type": "library",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -3456,15 +4006,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Livedoor",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nhn-corporation",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -3472,6 +4015,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Livedoor",
+      "modus": null,
+      "version": null,
+      "manufacturer": "nhn-corporation",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -3496,15 +4048,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Jakarta Commons-HttpClient",
-      "modus": null,
-      "version": "3.0.0",
-      "manufacturer": "apache",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -3512,6 +4057,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Jakarta Commons-HttpClient",
+      "modus": null,
+      "version": "3.0.0",
+      "manufacturer": "apache",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -3536,15 +4090,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Java Standard Library",
-      "modus": null,
-      "version": "1.5.0.17",
-      "manufacturer": "oracle",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": "JavaOS",
@@ -3552,6 +4099,15 @@
       "version": null,
       "manufacturer": "sun-microsystems",
       "bits": null
+    },
+    "client": {
+      "name": "Java Standard Library",
+      "modus": null,
+      "version": "1.5.0.17",
+      "manufacturer": "oracle",
+      "bits": null,
+      "type": "library",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -3576,15 +4132,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Java Standard Library",
-      "modus": null,
-      "version": null,
-      "manufacturer": "oracle",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": "JavaOS",
@@ -3592,6 +4141,15 @@
       "version": null,
       "manufacturer": "sun-microsystems",
       "bits": null
+    },
+    "client": {
+      "name": "Java Standard Library",
+      "modus": null,
+      "version": null,
+      "manufacturer": "oracle",
+      "bits": null,
+      "type": "library",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -3616,7 +4174,15 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
+      "type": "unknown",
+      "ismobile": false
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
     },
     "client": {
       "name": "libwww",
@@ -3624,379 +4190,13 @@
       "version": "5.835.0",
       "manufacturer": "unknown",
       "bits": null,
-      "type": "bot"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
       "version": null,
       "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "WWW-Mechanize/1.64"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "WWW-Mechanize",
-      "modus": null,
-      "version": "1.64.0",
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "bot"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Ruby"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Generic Ruby Crawler",
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "bot"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Typhoeus - https://github.com/typhoeus/typhoeus"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Typhoeus",
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "bot"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Python-urllib/1.16"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Python-urllib",
-      "modus": null,
-      "version": "1.16.0",
-      "manufacturer": "python-software-foundation",
-      "bits": null,
-      "type": "bot"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "PHP/5.2.13"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "PHP",
-      "modus": null,
-      "version": "5.2.13",
-      "manufacturer": "php-group",
-      "bits": null,
-      "type": "bot"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "PECL::HTTP/1.7.4 (PHP/5.4.4)"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "PECL::HTTP",
-      "modus": null,
-      "version": "1.7.4",
-      "manufacturer": "php-group",
-      "bits": null,
-      "type": "bot"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "WordPress/3.2.1; http://www.painlog.jp"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "WordPress",
-      "modus": null,
-      "version": "3.2.1",
-      "manufacturer": "wordpress",
-      "bits": null,
-      "type": "bot"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "CakePHP"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "CakePHP",
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "bot"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; KDDI-CA3B) Opera 8.60 [ja]"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Opera",
-      "modus": null,
-      "version": "8.60.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": "Presto",
-      "version": null,
-      "manufacturer": "opera"
     }
   }
 ]

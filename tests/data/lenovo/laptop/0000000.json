@@ -16,15 +16,8 @@
         "touch": false,
         "size": 15.6
       },
-      "type": "laptop"
-    },
-    "client": {
-      "name": "UC Browser",
-      "modus": null,
-      "version": "8.4.0.159",
-      "manufacturer": "ucweb",
-      "bits": null,
-      "type": "transcoder"
+      "type": "laptop",
+      "ismobile": false
     },
     "os": {
       "name": "JavaOS",
@@ -32,6 +25,15 @@
       "version": null,
       "manufacturer": "sun-microsystems",
       "bits": null
+    },
+    "client": {
+      "name": "UC Browser",
+      "modus": null,
+      "version": "8.4.0.159",
+      "manufacturer": "ucweb",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -56,15 +58,8 @@
         "touch": false,
         "size": 15.6
       },
-      "type": "laptop"
-    },
-    "client": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
+      "type": "laptop",
+      "ismobile": false
     },
     "os": {
       "name": "JavaOS",
@@ -72,6 +67,15 @@
       "version": null,
       "manufacturer": "sun-microsystems",
       "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -96,15 +100,8 @@
         "touch": false,
         "size": 15.6
       },
-      "type": "laptop"
-    },
-    "client": {
-      "name": "OneNote",
-      "modus": null,
-      "version": "16.0.11601.20174",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "application"
+      "type": "laptop",
+      "ismobile": false
     },
     "os": {
       "name": "Windows",
@@ -112,6 +109,15 @@
       "version": null,
       "manufacturer": "microsoft",
       "bits": 64
+    },
+    "client": {
+      "name": "OneNote",
+      "modus": null,
+      "version": "16.0.11601.20174",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": null,

@@ -16,15 +16,8 @@
         "touch": false,
         "size": 2.4
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "Dorado WAP Browser",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "dorado",
-      "bits": null,
-      "type": "wap-browser"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "JavaOS",
@@ -32,6 +25,15 @@
       "version": null,
       "manufacturer": "sun-microsystems",
       "bits": null
+    },
+    "client": {
+      "name": "Dorado WAP Browser",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "dorado",
+      "bits": null,
+      "type": "wap-browser",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -56,15 +58,8 @@
         "touch": false,
         "size": 1.8
       },
-      "type": "feature-phone"
-    },
-    "client": {
-      "name": "Dorado WAP Browser",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "dorado",
-      "bits": null,
-      "type": "wap-browser"
+      "type": "feature-phone",
+      "ismobile": true
     },
     "os": {
       "name": "JavaOS",
@@ -72,6 +67,15 @@
       "version": null,
       "manufacturer": "sun-microsystems",
       "bits": null
+    },
+    "client": {
+      "name": "Dorado WAP Browser",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "dorado",
+      "bits": null,
+      "type": "wap-browser",
+      "isbot": false
     },
     "engine": {
       "name": null,

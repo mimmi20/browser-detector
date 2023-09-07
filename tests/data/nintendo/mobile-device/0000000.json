@@ -16,15 +16,8 @@
         "touch": false,
         "size": null
       },
-      "type": "mobile-device"
-    },
-    "client": {
-      "name": "Mozilla",
-      "modus": null,
-      "version": "20.02.0",
-      "manufacturer": "mozilla-foundation",
-      "bits": null,
-      "type": "browser"
+      "type": "mobile-device",
+      "ismobile": true
     },
     "os": {
       "name": "Nintendo OS",
@@ -32,6 +25,15 @@
       "version": null,
       "manufacturer": "nintendo",
       "bits": null
+    },
+    "client": {
+      "name": "Mozilla",
+      "modus": null,
+      "version": "20.02.0",
+      "manufacturer": "mozilla-foundation",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Gecko",

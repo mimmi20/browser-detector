@@ -1,6 +1,258 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; MegaIndex.com/2.0; +http://megaindex.com/crawler)"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "MegaIndex Crawler",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (R2D2; rv:44.0) Gecko/20100101 Firefox/44.0"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "44.0.0",
+      "manufacturer": "mozilla-foundation",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "44.0.0",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "DomainCrawler/1.0"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "DomainCrawler",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "41.0) Gecko/20100101 Firefox/41.0"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "41.0.0",
+      "manufacturer": "mozilla-foundation",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HTTPClient/1.0 (2.7.1, ruby 2.2.3 (2015-08-18))"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Generic Ruby Crawler",
+      "modus": null,
+      "version": "2.2.3",
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.3; de-<?; GT-I9300 Build/JSS15J) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.3.0",
+      "manufacturer": "google",
+      "bits": null
+    },
+    "client": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "microSearch-Crawler/V1.0.0.730"
     },
     "device": {
@@ -16,15 +268,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Crawler",
-      "modus": null,
-      "version": null,
-      "manufacturer": "linkfluence",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": "ChromeOS",
@@ -32,6 +277,15 @@
       "version": null,
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Crawler",
+      "modus": null,
+      "version": null,
+      "manufacturer": "linkfluence",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -56,7 +310,15 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
+      "type": "unknown",
+      "ismobile": false
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
     },
     "client": {
       "name": "Firefox",
@@ -64,54 +326,8 @@
       "version": "6.0.0-alpha+2",
       "manufacturer": "mozilla-foundation",
       "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Firefox/42.0 (x86 de); anonymized by Abelssoft 553722667"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Firefox",
-      "modus": null,
-      "version": "42.0.0",
-      "manufacturer": "mozilla-foundation",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Gecko",
@@ -136,15 +352,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "33.0.1750.154",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -152,6 +361,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "33.0.1750.154",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -176,15 +394,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "MetaInspector",
-      "modus": null,
-      "version": "5.0.1",
-      "manufacturer": "jaime-iniesta",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -192,6 +403,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "MetaInspector",
+      "modus": null,
+      "version": "5.0.1",
+      "manufacturer": "jaime-iniesta",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -216,15 +436,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Edge",
-      "modus": null,
-      "version": "13.9200.0",
-      "manufacturer": "microsoft",
-      "bits": 64,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -232,6 +445,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": 64
+    },
+    "client": {
+      "name": "Edge",
+      "modus": null,
+      "version": "13.9200.0",
+      "manufacturer": "microsoft",
+      "bits": 64,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Edge",
@@ -256,15 +478,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Firefox",
-      "modus": null,
-      "version": null,
-      "manufacturer": "mozilla-foundation",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -273,10 +488,61 @@
       "manufacturer": "unknown",
       "bits": null
     },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": null,
+      "manufacturer": "mozilla-foundation",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
     "engine": {
       "name": "Gecko",
       "version": null,
       "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HubSpot Connect 2.0 (http://dev.hubspot.com/)"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "HubSpot Connect",
+      "modus": null,
+      "version": "2.0.0",
+      "manufacturer": "hubspot-inc",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
     }
   },
   {
@@ -296,15 +562,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Firefox",
-      "modus": null,
-      "version": "22.0.0",
-      "manufacturer": "mozilla-foundation",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -312,6 +571,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "22.0.0",
+      "manufacturer": "mozilla-foundation",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Gecko",
@@ -336,15 +604,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Wayback Archive Bot",
-      "modus": null,
-      "version": null,
-      "manufacturer": "archive.org",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -352,6 +613,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Wayback Archive Bot",
+      "modus": null,
+      "version": null,
+      "manufacturer": "archive.org",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -376,15 +646,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Firefox",
-      "modus": null,
-      "version": "38.0.0",
-      "manufacturer": "mozilla-foundation",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -393,49 +656,18 @@
       "manufacturer": "unknown",
       "bits": null
     },
-    "engine": {
-      "name": "Gecko",
-      "version": "38.0.0",
-      "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Firefox/37.0 (x64 de); anonymized by Abelssoft 1413475252"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
     "client": {
       "name": "Firefox",
       "modus": null,
-      "version": "37.0.0",
+      "version": "38.0.0",
       "manufacturer": "mozilla-foundation",
-      "bits": 64,
-      "type": "browser"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 64
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Gecko",
-      "version": null,
+      "version": "38.0.0",
       "manufacturer": "mozilla-foundation"
     }
   },
@@ -456,15 +688,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "nbot",
-      "modus": null,
-      "version": "0.01.0",
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -472,6 +697,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "nbot",
+      "modus": null,
+      "version": "0.01.0",
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -496,15 +730,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Internet Explorer",
-      "modus": null,
-      "version": "11.0.0",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -512,6 +739,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Internet Explorer",
+      "modus": null,
+      "version": "11.0.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Trident",
@@ -536,15 +772,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Infegy Bot",
-      "modus": null,
-      "version": null,
-      "manufacturer": "infegy",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -553,10 +782,61 @@
       "manufacturer": "unknown",
       "bits": null
     },
+    "client": {
+      "name": "Infegy Bot",
+      "modus": null,
+      "version": null,
+      "manufacturer": "infegy",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
+    },
     "engine": {
       "name": "Blink",
       "version": "43.0.2357.81",
       "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/4.0 Firefox 9.0.1"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "9.0.1",
+      "manufacturer": "mozilla-foundation",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla-foundation"
     }
   },
   {
@@ -576,15 +856,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Typo3",
-      "modus": null,
-      "version": "4.7.20",
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -592,6 +865,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Typo3",
+      "modus": null,
+      "version": "4.7.20",
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -616,15 +898,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Safari",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "apple",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -632,6 +907,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Safari",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "apple",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -656,15 +940,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Dolphin smalltalk http client",
-      "modus": null,
-      "version": null,
-      "manufacturer": "steve-waring",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": "Android",
@@ -673,50 +950,19 @@
       "manufacturer": "google",
       "bits": null
     },
+    "client": {
+      "name": "Dolphin smalltalk http client",
+      "modus": null,
+      "version": null,
+      "manufacturer": "steve-waring",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
+    },
     "engine": {
       "name": null,
       "version": null,
       "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Firefox/38.0 (x64 de); anonymized by Abelssoft 1725594697"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Firefox",
-      "modus": null,
-      "version": "38.0.0",
-      "manufacturer": "mozilla-foundation",
-      "bits": 64,
-      "type": "browser"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 64
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla-foundation"
     }
   },
   {
@@ -736,15 +982,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Firefox",
-      "modus": null,
-      "version": "2.0.0.13",
-      "manufacturer": "mozilla-foundation",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -752,6 +991,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "2.0.0.13",
+      "manufacturer": "mozilla-foundation",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Gecko",
@@ -776,15 +1024,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "43.0.2357.93",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -792,6 +1033,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "43.0.2357.93",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -816,15 +1066,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Fast Webcrawler",
-      "modus": null,
-      "version": "3.7.0",
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -832,6 +1075,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Fast Webcrawler",
+      "modus": null,
+      "version": "3.7.0",
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -856,15 +1108,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "mbot",
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -872,6 +1117,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "mbot",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -896,15 +1150,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Edge",
-      "modus": null,
-      "version": "12.9200.0",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -912,6 +1159,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Edge",
+      "modus": null,
+      "version": "12.9200.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Edge",
@@ -936,15 +1192,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Internet Explorer",
-      "modus": null,
-      "version": "6.0.0",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": "Windows NT 5.1",
@@ -952,6 +1201,15 @@
       "version": "5.1.0",
       "manufacturer": "microsoft",
       "bits": null
+    },
+    "client": {
+      "name": "Internet Explorer",
+      "modus": null,
+      "version": "6.0.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Trident",
@@ -976,15 +1234,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "WordPress",
-      "modus": null,
-      "version": "1.5.1.2",
-      "manufacturer": "wordpress",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -992,6 +1243,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "WordPress",
+      "modus": null,
+      "version": "1.5.1.2",
+      "manufacturer": "wordpress",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -1016,15 +1276,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "PHP",
-      "modus": null,
-      "version": "0.7.4",
-      "manufacturer": "php-group",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -1032,6 +1285,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "PHP",
+      "modus": null,
+      "version": "0.7.4",
+      "manufacturer": "php-group",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -1056,15 +1318,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Mozilla",
-      "modus": null,
-      "version": "5.0.0",
-      "manufacturer": "mozilla-foundation",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": "Fedora Linux",
@@ -1072,6 +1327,15 @@
       "version": null,
       "manufacturer": "redhat",
       "bits": null
+    },
+    "client": {
+      "name": "Mozilla",
+      "modus": null,
+      "version": "5.0.0",
+      "manufacturer": "mozilla-foundation",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Gecko",
@@ -1096,15 +1360,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "AOL Desktop",
-      "modus": null,
-      "version": null,
-      "manufacturer": "aol",
-      "bits": null,
-      "type": "application"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": "Fedora Linux",
@@ -1112,6 +1369,15 @@
       "version": null,
       "manufacturer": "redhat",
       "bits": null
+    },
+    "client": {
+      "name": "AOL Desktop",
+      "modus": null,
+      "version": null,
+      "manufacturer": "aol",
+      "bits": null,
+      "type": "application",
+      "isbot": false
     },
     "engine": {
       "name": "Trident",
@@ -1136,15 +1402,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Internet Explorer",
-      "modus": null,
-      "version": "7.0.0",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -1152,6 +1411,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Internet Explorer",
+      "modus": null,
+      "version": "7.0.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Trident",
@@ -1176,15 +1444,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Safari",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "apple",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -1192,6 +1453,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Safari",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "apple",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -1216,15 +1486,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Firefox",
-      "modus": null,
-      "version": "34.0.0",
-      "manufacturer": "mozilla-foundation",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -1232,6 +1495,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "34.0.0",
+      "manufacturer": "mozilla-foundation",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Gecko",
@@ -1256,7 +1528,15 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
+      "type": "unknown",
+      "ismobile": false
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
     },
     "client": {
       "name": "WWW-Mechanize",
@@ -1264,59 +1544,13 @@
       "version": "0.9.2",
       "manufacturer": "unknown",
       "bits": null,
-      "type": "bot"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": "WebKit",
       "version": null,
       "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Firefox/33.0 (x86 de); anonymized by Abelssoft 1051383074"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Firefox",
-      "modus": null,
-      "version": "33.0.0",
-      "manufacturer": "mozilla-foundation",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla-foundation"
     }
   },
   {
@@ -1336,15 +1570,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Safari",
-      "modus": null,
-      "version": null,
-      "manufacturer": "apple",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -1352,6 +1579,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Safari",
+      "modus": null,
+      "version": null,
+      "manufacturer": "apple",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -1376,15 +1612,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Internet Explorer",
-      "modus": null,
-      "version": "9.0.0",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": "JavaOS",
@@ -1392,6 +1621,15 @@
       "version": null,
       "manufacturer": "sun-microsystems",
       "bits": null
+    },
+    "client": {
+      "name": "Internet Explorer",
+      "modus": null,
+      "version": "9.0.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Trident",
@@ -1416,15 +1654,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Internet Explorer",
-      "modus": null,
-      "version": "6.0.0",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": "Windows NT",
@@ -1433,50 +1664,19 @@
       "manufacturer": "microsoft",
       "bits": null
     },
+    "client": {
+      "name": "Internet Explorer",
+      "modus": null,
+      "version": "6.0.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
     "engine": {
       "name": "Trident",
       "version": null,
       "manufacturer": "microsoft"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Firefox/26.0 (de); anonymized by Abelssoft 674940923"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Firefox",
-      "modus": null,
-      "version": "26.0.0",
-      "manufacturer": "mozilla-foundation",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla-foundation"
     }
   },
   {
@@ -1496,7 +1696,15 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
+      "type": "unknown",
+      "ismobile": false
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
     },
     "client": {
       "name": "Thunderbird",
@@ -1504,54 +1712,8 @@
       "version": "38.0.1",
       "manufacturer": "mozilla-foundation",
       "bits": null,
-      "type": "email-client"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Firefox/34.0.5 (x86 de); anonymized by Abelssoft 1400855984"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Firefox",
-      "modus": null,
-      "version": "34.0.5",
-      "manufacturer": "mozilla-foundation",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
+      "type": "email-client",
+      "isbot": false
     },
     "engine": {
       "name": "Gecko",
@@ -1576,15 +1738,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Charlotte",
-      "modus": null,
-      "version": "1.0.0-beta",
-      "manufacturer": "searchme",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -1592,6 +1747,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Charlotte",
+      "modus": null,
+      "version": "1.0.0-beta",
+      "manufacturer": "searchme",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -1616,15 +1780,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Internet Explorer",
-      "modus": null,
-      "version": "8.0.0",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -1632,6 +1789,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Internet Explorer",
+      "modus": null,
+      "version": "8.0.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Trident",
@@ -1656,15 +1822,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": "Windows 3.1",
@@ -1672,6 +1831,15 @@
       "version": "3.1.0",
       "manufacturer": "microsoft",
       "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -1696,15 +1864,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Google Image Search",
-      "modus": null,
-      "version": null,
-      "manufacturer": "google",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -1712,6 +1873,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Google Image Search",
+      "modus": null,
+      "version": null,
+      "manufacturer": "google",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -1736,15 +1906,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "archive-de.com bot",
-      "modus": null,
-      "version": "1.1.0",
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -1752,6 +1915,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "archive-de.com bot",
+      "modus": null,
+      "version": "1.1.0",
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -1776,15 +1948,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "doccheckbot",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -1792,6 +1957,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "doccheckbot",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -1816,15 +1990,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "PHP",
-      "modus": null,
-      "version": null,
-      "manufacturer": "php-group",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": "Windows",
@@ -1832,6 +1999,15 @@
       "version": null,
       "manufacturer": "microsoft",
       "bits": null
+    },
+    "client": {
+      "name": "PHP",
+      "modus": null,
+      "version": null,
+      "manufacturer": "php-group",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -1856,15 +2032,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "44.0.2403.133",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -1872,6 +2041,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "44.0.2403.133",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -1896,15 +2074,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Opera",
-      "modus": null,
-      "version": "8.0.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": "Linux",
@@ -1912,6 +2083,15 @@
       "version": null,
       "manufacturer": "linux-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "Opera",
+      "modus": null,
+      "version": "8.0.0",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Presto",
@@ -1936,15 +2116,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Firefox",
-      "modus": null,
-      "version": "4.1.0",
-      "manufacturer": "mozilla-foundation",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -1952,6 +2125,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "4.1.0",
+      "manufacturer": "mozilla-foundation",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Gecko",
@@ -1976,15 +2158,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "WPScan",
-      "modus": null,
-      "version": "2.7.0",
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -1992,6 +2167,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "WPScan",
+      "modus": null,
+      "version": "2.7.0",
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -2016,15 +2200,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Web Downloader",
-      "modus": null,
-      "version": "6.5.0",
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -2032,6 +2209,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Web Downloader",
+      "modus": null,
+      "version": "6.5.0",
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -2056,15 +2242,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "46.0.2490.76",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -2072,6 +2251,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "46.0.2490.76",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -2096,15 +2284,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": "BSD",
@@ -2112,6 +2293,15 @@
       "version": null,
       "manufacturer": "berkley-university",
       "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -2136,15 +2326,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "LibaoBrowser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "kingsoft",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -2152,6 +2335,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "LibaoBrowser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "kingsoft",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Trident",
@@ -2176,15 +2368,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Outlook",
-      "modus": null,
-      "version": null,
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "email-client"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -2192,6 +2377,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Outlook",
+      "modus": null,
+      "version": null,
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "email-client",
+      "isbot": false
     },
     "engine": {
       "name": "Trident",
@@ -2216,7 +2410,15 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
+      "type": "unknown",
+      "ismobile": false
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
     },
     "client": {
       "name": "Screaming Frog SEO Spider",
@@ -2224,139 +2426,13 @@
       "version": "3.2.0",
       "manufacturer": "screaming-frog",
       "bits": null,
-      "type": "bot"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
       "version": null,
       "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Firefox/28.0 (de); anonymized by Abelssoft 478847623"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Firefox",
-      "modus": null,
-      "version": "28.0.0",
-      "manufacturer": "mozilla-foundation",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Firefox/24.0 (de); anonymized by Abelssoft 298666885"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Firefox",
-      "modus": null,
-      "version": "24.0.0",
-      "manufacturer": "mozilla-foundation",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Firefox/15.0.1 (de); anonymized by Abelssoft 1513252607"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Firefox",
-      "modus": null,
-      "version": "15.0.1",
-      "manufacturer": "mozilla-foundation",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla-foundation"
     }
   },
   {
@@ -2376,15 +2452,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "PEAR HTTP_Request2",
-      "modus": null,
-      "version": "0.5.2",
-      "manufacturer": "php-group",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -2392,6 +2461,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "PEAR HTTP_Request2",
+      "modus": null,
+      "version": "0.5.2",
+      "manufacturer": "php-group",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -2416,15 +2494,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "CM Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "cheetah-mobile",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -2432,6 +2503,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "CM Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "cheetah-mobile",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -2456,15 +2536,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Thunderbird",
-      "modus": null,
-      "version": "1.5.0.12",
-      "manufacturer": "mozilla-foundation",
-      "bits": null,
-      "type": "email-client"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": "Linux",
@@ -2472,6 +2545,15 @@
       "version": null,
       "manufacturer": "linux-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "Thunderbird",
+      "modus": null,
+      "version": "1.5.0.12",
+      "manufacturer": "mozilla-foundation",
+      "bits": null,
+      "type": "email-client",
+      "isbot": false
     },
     "engine": {
       "name": "Gecko",
@@ -2496,15 +2578,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Firefox",
-      "modus": null,
-      "version": "31.0.1342",
-      "manufacturer": "mozilla-foundation",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": "Windows NT 6.1",
@@ -2512,6 +2587,15 @@
       "version": "6.1.0",
       "manufacturer": "microsoft",
       "bits": 64
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "31.0.1342",
+      "manufacturer": "mozilla-foundation",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Gecko",
@@ -2536,15 +2620,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Asynchronous HTTP Client",
-      "modus": null,
-      "version": "2.0.0",
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -2552,6 +2629,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Asynchronous HTTP Client",
+      "modus": null,
+      "version": "2.0.0",
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -2576,15 +2662,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "YandexBot",
-      "modus": null,
-      "version": null,
-      "manufacturer": "yandex",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -2592,6 +2671,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "YandexBot",
+      "modus": null,
+      "version": null,
+      "manufacturer": "yandex",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -2616,15 +2704,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "crawler4j",
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": "Brew",
@@ -2632,6 +2713,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "crawler4j",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -2656,15 +2746,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Firefox",
-      "modus": null,
-      "version": "2.0.0.9",
-      "manufacturer": "mozilla-foundation",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": "Linux",
@@ -2672,6 +2755,15 @@
       "version": null,
       "manufacturer": "linux-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "2.0.0.9",
+      "manufacturer": "mozilla-foundation",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Gecko",
@@ -2696,15 +2788,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "WooRank",
-      "modus": null,
-      "version": null,
-      "manufacturer": "woo-rank",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -2712,6 +2797,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "WooRank",
+      "modus": null,
+      "version": null,
+      "manufacturer": "woo-rank",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -2736,15 +2830,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": null,
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -2752,6 +2839,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": null,
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -2776,15 +2872,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Bing Preview",
-      "modus": null,
-      "version": "1.0.0-beta",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -2792,6 +2881,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Bing Preview",
+      "modus": null,
+      "version": "1.0.0-beta",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -2816,15 +2914,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Thumbor",
-      "modus": null,
-      "version": "4.8.6",
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -2832,6 +2923,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Thumbor",
+      "modus": null,
+      "version": "4.8.6",
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -2856,15 +2956,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Mozilla",
-      "modus": null,
-      "version": "1.8.0",
-      "manufacturer": "mozilla-foundation",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -2872,6 +2965,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Mozilla",
+      "modus": null,
+      "version": "1.8.0",
+      "manufacturer": "mozilla-foundation",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Gecko",
@@ -2896,15 +2998,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Netscape",
-      "modus": null,
-      "version": "4.76.0",
-      "manufacturer": "netscape",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -2912,6 +3007,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Netscape",
+      "modus": null,
+      "version": "4.76.0",
+      "manufacturer": "netscape",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Gecko",
@@ -2936,15 +3040,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "AhrefsBot",
-      "modus": null,
-      "version": "2.0.0",
-      "manufacturer": "ahrefs",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -2952,6 +3049,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "AhrefsBot",
+      "modus": null,
+      "version": "2.0.0",
+      "manufacturer": "ahrefs",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -2976,15 +3082,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "45.0.2454.84",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -2992,6 +3091,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "45.0.2454.84",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -3016,15 +3124,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Opera",
-      "modus": null,
-      "version": "11.00.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -3032,6 +3133,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Opera",
+      "modus": null,
+      "version": "11.00.0",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Presto",
@@ -3056,15 +3166,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Firefox",
-      "modus": null,
-      "version": "39.0.0",
-      "manufacturer": "mozilla-foundation",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -3072,6 +3175,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": 64
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "39.0.0",
+      "manufacturer": "mozilla-foundation",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Gecko",
@@ -3096,15 +3208,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "NetPositive",
-      "modus": null,
-      "version": "2.2.0",
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -3112,6 +3217,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "NetPositive",
+      "modus": null,
+      "version": "2.2.0",
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -3136,15 +3250,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "44.0.2403",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": "Windows NT 6.3",
@@ -3153,10 +3260,61 @@
       "manufacturer": "microsoft",
       "bits": 64
     },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "44.0.2403",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
     "engine": {
       "name": "Blink",
       "version": "44.0.2403",
       "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SeobilityBot (SEO-Check; http://bit.ly/1dJuuzs)"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "SeobilityBot",
+      "modus": null,
+      "version": null,
+      "manufacturer": "seobility",
+      "bits": null,
+      "type": "seo-analytics",
+      "isbot": true
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
     }
   },
   {
@@ -3176,15 +3334,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Internet Explorer",
-      "modus": null,
-      "version": "10.0.0",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -3192,6 +3343,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Internet Explorer",
+      "modus": null,
+      "version": "10.0.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Trident",
@@ -3216,15 +3376,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Firefox",
-      "modus": null,
-      "version": "24.0.0",
-      "manufacturer": "mozilla-foundation",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -3233,10 +3386,61 @@
       "manufacturer": "unknown",
       "bits": null
     },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "24.0.0",
+      "manufacturer": "mozilla-foundation",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
     "engine": {
       "name": "Gecko",
       "version": "24.0.0",
       "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "LinkWalker/3.0 (http://www.brandprotect.com)"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "LinkWalker",
+      "modus": null,
+      "version": "3.0.0",
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
     }
   },
   {
@@ -3256,15 +3460,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Firefox",
-      "modus": null,
-      "version": "31.0.0",
-      "manufacturer": "mozilla-foundation",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -3272,6 +3469,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "31.0.0",
+      "manufacturer": "mozilla-foundation",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Gecko",
@@ -3296,15 +3502,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Maxthon",
-      "modus": null,
-      "version": "3.0.8.2",
-      "manufacturer": "maxthon",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -3312,6 +3511,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Maxthon",
+      "modus": null,
+      "version": "3.0.8.2",
+      "manufacturer": "maxthon",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -3336,15 +3544,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "YaCy Bot",
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": 64,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": "JavaOS",
@@ -3352,6 +3553,15 @@
       "version": null,
       "manufacturer": "sun-microsystems",
       "bits": 64
+    },
+    "client": {
+      "name": "YaCy Bot",
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": 64,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -3376,15 +3586,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Thumbor",
-      "modus": null,
-      "version": "5.2.1",
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -3392,6 +3595,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Thumbor",
+      "modus": null,
+      "version": "5.2.1",
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -3416,15 +3628,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Mozilla",
-      "modus": null,
-      "version": "3.0.0",
-      "manufacturer": "mozilla-foundation",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": "Windows 3.1",
@@ -3432,6 +3637,15 @@
       "version": "3.1.0",
       "manufacturer": "microsoft",
       "bits": null
+    },
+    "client": {
+      "name": "Mozilla",
+      "modus": null,
+      "version": "3.0.0",
+      "manufacturer": "mozilla-foundation",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Gecko",
@@ -3456,15 +3670,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Jakarta Commons-HttpClient",
-      "modus": null,
-      "version": "2.0.0",
-      "manufacturer": "apache",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -3472,6 +3679,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Jakarta Commons-HttpClient",
+      "modus": null,
+      "version": "2.0.0",
+      "manufacturer": "apache",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -3496,15 +3712,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Firefox",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "mozilla-foundation",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -3512,6 +3721,57 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "mozilla-foundation",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 Gecko Firefox/46.0"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "46.0.0",
+      "manufacturer": "mozilla-foundation",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Gecko",
@@ -3536,15 +3796,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Scrapy",
-      "modus": null,
-      "version": null,
-      "manufacturer": "scrapy.org",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -3552,6 +3805,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Scrapy",
+      "modus": null,
+      "version": null,
+      "manufacturer": "scrapy.org",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -3576,15 +3838,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "BingBot",
-      "modus": null,
-      "version": "3.0.0-alpha",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -3592,6 +3847,57 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "BingBot",
+      "modus": null,
+      "version": "3.0.0-alpha",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; XoviOnpageCrawler; +http://www.xovi.de/)"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "XoviOnpageCrawler",
+      "modus": null,
+      "version": null,
+      "manufacturer": "xovi",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -3616,15 +3922,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "IstellaBot",
-      "modus": null,
-      "version": null,
-      "manufacturer": "tiscali",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -3632,6 +3931,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "IstellaBot",
+      "modus": null,
+      "version": null,
+      "manufacturer": "tiscali",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -3656,15 +3964,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Opera",
-      "modus": null,
-      "version": "10.10.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -3673,10 +3974,103 @@
       "manufacturer": "unknown",
       "bits": null
     },
+    "client": {
+      "name": "Opera",
+      "modus": null,
+      "version": "10.10.0",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
     "engine": {
       "name": "Presto",
       "version": null,
       "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "36.0) Gecko/20100101 Firefox/36.0"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "36.0.0",
+      "manufacturer": "mozilla-foundation",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "33.0) Gecko/20100101 Firefox/33.0"
+    },
+    "device": {
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "33.0.0",
+      "manufacturer": "mozilla-foundation",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla-foundation"
     }
   },
   {
@@ -3696,15 +4090,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Firefox",
-      "modus": null,
-      "version": "30.0.0",
-      "manufacturer": "mozilla-foundation",
-      "bits": null,
-      "type": "browser"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -3712,6 +4099,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "30.0.0",
+      "manufacturer": "mozilla-foundation",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Gecko",
@@ -3736,15 +4132,8 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Owler Bot",
-      "modus": null,
-      "version": null,
-      "manufacturer": "owler",
-      "bits": null,
-      "type": "bot"
+      "type": "unknown",
+      "ismobile": false
     },
     "os": {
       "name": null,
@@ -3752,6 +4141,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Owler Bot",
+      "modus": null,
+      "version": null,
+      "manufacturer": "owler",
+      "bits": null,
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,
@@ -3776,7 +4174,15 @@
         "touch": false,
         "size": null
       },
-      "type": "unknown"
+      "type": "unknown",
+      "ismobile": false
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null
     },
     "client": {
       "name": "Crawler",
@@ -3784,214 +4190,8 @@
       "version": "20140709.0.0",
       "manufacturer": "linkfluence",
       "bits": null,
-      "type": "bot"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "27.3) Gecko/20130101 Firefox/27.3"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "Firefox",
-      "modus": null,
-      "version": "27.3.0",
-      "manufacturer": "mozilla-foundation",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (X11;) AppleWebKit/534.34 (KHTML, like Gecko) kded/4.11.5 Safari/534.34"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "kded",
-      "modus": null,
-      "version": "4.11.5",
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "browser"
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "linux-foundation",
-      "bits": null
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "534.34.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Dragonfly File Reader"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "client": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": "DragonFly BSD",
-      "marketingName": "DragonFly BSD",
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/2.0 (Compatible; AOL-IWENG 3.0; Win16)"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "client": {
-      "name": "AOL Desktop",
-      "modus": null,
-      "version": null,
-      "manufacturer": "aol",
-      "bits": null,
-      "type": "application"
-    },
-    "os": {
-      "name": "Windows 3.1",
-      "marketingName": "Windows 3.1",
-      "version": "3.1.0",
-      "manufacturer": "microsoft",
-      "bits": null
-    },
-    "engine": {
-      "name": "Trident",
-      "version": null,
-      "manufacturer": "microsoft"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "WorldBrewBot/2.1 (+http://www.marketbrew.com/)"
-    },
-    "device": {
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown"
-    },
-    "client": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
-    },
-    "os": {
-      "name": "Brew",
-      "marketingName": "Brew",
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null
+      "type": "bot",
+      "isbot": true
     },
     "engine": {
       "name": null,

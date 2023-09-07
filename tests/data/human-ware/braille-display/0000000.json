@@ -16,15 +16,8 @@
         "touch": false,
         "size": null
       },
-      "type": "braille-display"
-    },
-    "client": {
-      "name": "IEMobile",
-      "modus": null,
-      "version": "7.11.0",
-      "manufacturer": "microsoft",
-      "bits": null,
-      "type": "browser"
+      "type": "braille-display",
+      "ismobile": false
     },
     "os": {
       "name": "Windows CE",
@@ -32,6 +25,15 @@
       "version": null,
       "manufacturer": "microsoft",
       "bits": null
+    },
+    "client": {
+      "name": "IEMobile",
+      "modus": null,
+      "version": "7.11.0",
+      "manufacturer": "microsoft",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Trident",

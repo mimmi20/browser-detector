@@ -351,6 +351,42 @@
     },
     "engine": null
   },
+  "avast secure browser": {
+    "name": "Avast Secure Browser",
+    "manufacturer": "avast-software",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Avast"
+      ]
+    },
+    "engine": null
+  },
+  "avg secure browser": {
+    "name": "AVG Secure Browser",
+    "manufacturer": "avast-software",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "AVG"
+      ]
+    },
+    "engine": null
+  },
+  "ccleaner browser": {
+    "name": "CCleaner Browser",
+    "manufacturer": "piriform",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "CCleaner"
+      ]
+    },
+    "engine": null
+  },
   "aviator": {
     "name": "Aviator",
     "manufacturer": "whitehat",
@@ -921,6 +957,18 @@
     },
     "engine": "gecko"
   },
+  "dalvik": {
+    "name": "Dalvik",
+    "manufacturer": "google",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Dalvik"
+      ]
+    },
+    "engine": "webkit"
+  },
   "darwin browser": {
     "name": "Darwin Browser",
     "manufacturer": "unknown",
@@ -1047,6 +1095,19 @@
     },
     "engine": null
   },
+  "duckduck app": {
+    "name": "DuckDuckGo Privacy Browser",
+    "manufacturer": "duck-duck-go",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "DDG\\-Android\\-",
+        "DuckDuckGo"
+      ]
+    },
+    "engine": null
+  },
   "ecosia": {
     "name": "Ecosia",
     "manufacturer": "unknown",
@@ -1108,6 +1169,18 @@
       ]
     },
     "engine": "webkit"
+  },
+  "edge webview": {
+    "name": "Edge WebView",
+    "manufacturer": "microsoft",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "EdgW"
+      ]
+    },
+    "engine": null
   },
   "ekioh browser": {
     "name": "Ekioh Browser",
@@ -1499,6 +1572,18 @@
     },
     "engine": "webkit"
   },
+  "heytapbrowser": {
+    "name": "HeyTapBrowser",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "HeyTapBrowser"
+      ]
+    },
+    "engine": null
+  },
   "hitpad": {
     "name": "Hitpad",
     "manufacturer": "unknown",
@@ -1542,7 +1627,8 @@
     "version": {
       "class": "VersionFactory",
       "search": [
-        "HuaweiBrowser"
+        "HuaweiBrowser",
+        "HBPC"
       ]
     },
     "engine": null
@@ -1654,18 +1740,6 @@
       ]
     },
     "engine": "webkit"
-  },
-  "iceape": {
-    "name": "Iceape",
-    "manufacturer": "software-in-the-public-interest",
-    "type": "browser",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "Iceape"
-      ]
-    },
-    "engine": "gecko"
   },
   "icecat": {
     "name": "IceCat",
@@ -1953,6 +2027,18 @@
       ]
     },
     "engine": "webkit"
+  },
+  "kik": {
+    "name": "Kik",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Kik"
+      ]
+    },
+    "engine": null
   },
   "kindle": {
     "name": "Kindle",
@@ -2341,6 +2427,19 @@
     },
     "engine": null
   },
+  "mobile lenovo browser": {
+    "name": "Mobile Lenovo Browser",
+    "manufacturer": "lenovo",
+    "bits": 32,
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "MobileLenovoBrowser"
+      ]
+    },
+    "engine": "blink"
+  },
   "mobile safari uiwebview": {
     "name": "Mobile Safari UIWebView",
     "manufacturer": "apple",
@@ -2459,8 +2558,8 @@
     "engine": "webkit"
   },
   "mz browser": {
-    "name": "Mz Browser",
-    "manufacturer": "unknown",
+    "name": "Meizu Browser",
+    "manufacturer": "meizu",
     "type": "browser",
     "version": {
       "class": "VersionFactory",
@@ -2700,6 +2799,18 @@
     },
     "engine": "blink"
   },
+  "odd browser": {
+    "name": "Odd Browser",
+    "manufacturer": "nasai",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Odd"
+      ]
+    },
+    "engine": "webkit"
+  },
   "odyssey web browser": {
     "name": "Odyssey Web Browser",
     "manufacturer": "fabien coeurjoly",
@@ -2801,6 +2912,18 @@
       "class": "VersionFactory",
       "search": [
         "OMI"
+      ]
+    },
+    "engine": null
+  },
+  "opera gx": {
+    "name": "Opera GX",
+    "manufacturer": "opera",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "OPX"
       ]
     },
     "engine": null
@@ -3023,6 +3146,18 @@
     },
     "engine": "gecko"
   },
+  "phoenix browser": {
+    "name": "Phoenix Browser",
+    "manufacturer": "cloudview-technology",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "PHX"
+      ]
+    },
+    "engine": null
+  },
   "pirate browser": {
     "name": "Pirate Browser",
     "manufacturer": "pirate-bay",
@@ -3236,6 +3371,18 @@
     },
     "engine": "blink"
   },
+  "quick search tv": {
+    "name": "Quick Search TV",
+    "manufacturer": "aosp-studio-apps",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Quick Search TV"
+      ]
+    },
+    "engine": null
+  },
   "qh-browser": {
     "name": "Quick Heal Browser",
     "manufacturer": "quick-heal",
@@ -3401,6 +3548,18 @@
     },
     "engine": "blink"
   },
+  "salamweb": {
+    "name": "SalamWeb",
+    "manufacturer": "salamweb",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "SalamWeb"
+      ]
+    },
+    "engine": "blink"
+  },
   "samsung": {
     "name": "samsung",
     "manufacturer": "samsung",
@@ -3443,19 +3602,6 @@
       "search": null
     },
     "engine": "unknown"
-  },
-  "seamonkey": {
-    "name": "SeaMonkey",
-    "manufacturer": "mozilla-foundation",
-    "type": "browser",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "SeaMonkey",
-        "Seamonkey"
-      ]
-    },
-    "engine": "gecko"
   },
   "hp secure web browser": {
     "name": "Secure Web Browser",
@@ -3710,6 +3856,18 @@
     },
     "engine": "unknown"
   },
+  "sraf": {
+    "name": "Sraf",
+    "manufacturer": "seraphic",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "SRAF"
+      ]
+    },
+    "engine": null
+  },
   "stainless": {
     "name": "Stainless",
     "manufacturer": "mesa",
@@ -3832,6 +3990,18 @@
     },
     "engine": "webkit"
   },
+  "tbrowser": {
+    "name": "TBrowser",
+    "manufacturer": "browser-edson-thiago",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Tbrowser"
+      ]
+    },
+    "engine": null
+  },
   "t-online browser": {
     "name": "T-Online Browser",
     "manufacturer": "unknown",
@@ -3897,6 +4067,18 @@
       ]
     },
     "engine": "webkit"
+  },
+  "teslabrowser": {
+    "name": "TeslaBrowser",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "TeslaBrowser"
+      ]
+    },
+    "engine": null
   },
   "theworld": {
     "name": "TheWorld Browser",
@@ -4259,6 +4441,31 @@
     },
     "engine": null
   },
+  "yabrowser-lite": {
+    "name": "Yandex Browser Lite",
+    "manufacturer": "yandex",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "YaBrowser"
+      ]
+    },
+    "engine": null
+  },
+  "ya-search-browser": {
+    "name": "Yandex Search Browser",
+    "manufacturer": "yandex",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "YaSearchBrowser",
+        "YandexSearchBrowser"
+      ]
+    },
+    "engine": null
+  },
   "yowser": {
     "name": "Yowser",
     "manufacturer": "unknown",
@@ -4282,5 +4489,42 @@
       ]
     },
     "engine": "webkit"
+  },
+  "web-explorer": {
+    "name": "Web Explorer",
+    "manufacturer": "kawe-apps",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Web Explorer",
+        "webexplorer"
+      ]
+    },
+    "engine": null
+  },
+  "silk": {
+    "name": "Silk",
+    "manufacturer": "amazon",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Silk"
+      ]
+    },
+    "engine": null
+  },
+  "smart lenovo browser": {
+    "name": "Smart Lenovo Browser",
+    "manufacturer": "lenovo",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "SLBrowser"
+      ]
+    },
+    "engine": null
   }
 }

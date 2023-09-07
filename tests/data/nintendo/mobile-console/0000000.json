@@ -16,15 +16,8 @@
         "touch": false,
         "size": null
       },
-      "type": "mobile-console"
-    },
-    "client": {
-      "name": "NintendoBrowser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nintendo",
-      "bits": null,
-      "type": "browser"
+      "type": "mobile-console",
+      "ismobile": true
     },
     "os": {
       "name": "Nintendo OS",
@@ -32,6 +25,15 @@
       "version": null,
       "manufacturer": "nintendo",
       "bits": null
+    },
+    "client": {
+      "name": "NintendoBrowser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "nintendo",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "NetFront",
@@ -56,15 +58,8 @@
         "touch": false,
         "size": null
       },
-      "type": "mobile-console"
-    },
-    "client": {
-      "name": null,
-      "modus": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "bits": null,
-      "type": "unknown"
+      "type": "mobile-console",
+      "ismobile": true
     },
     "os": {
       "name": null,
@@ -72,6 +67,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "bits": null,
+      "type": "unknown",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -96,15 +100,8 @@
         "touch": false,
         "size": null
       },
-      "type": "mobile-console"
-    },
-    "client": {
-      "name": "Opera",
-      "modus": null,
-      "version": "9.50.0",
-      "manufacturer": "opera",
-      "bits": null,
-      "type": "browser"
+      "type": "mobile-console",
+      "ismobile": true
     },
     "os": {
       "name": null,
@@ -112,6 +109,15 @@
       "version": null,
       "manufacturer": "unknown",
       "bits": null
+    },
+    "client": {
+      "name": "Opera",
+      "modus": null,
+      "version": "9.50.0",
+      "manufacturer": "opera",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Presto",
@@ -136,15 +142,8 @@
         "touch": false,
         "size": 4.88
       },
-      "type": "mobile-console"
-    },
-    "client": {
-      "name": "NintendoBrowser",
-      "modus": null,
-      "version": "1.6.10147",
-      "manufacturer": "nintendo",
-      "bits": null,
-      "type": "browser"
+      "type": "mobile-console",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -152,6 +151,15 @@
       "version": null,
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "NintendoBrowser",
+      "modus": null,
+      "version": "1.6.10147",
+      "manufacturer": "nintendo",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -176,15 +184,8 @@
         "touch": true,
         "size": 6.2
       },
-      "type": "mobile-console"
-    },
-    "client": {
-      "name": "NintendoBrowser",
-      "modus": null,
-      "version": "5.1.0.13341",
-      "manufacturer": "nintendo",
-      "bits": null,
-      "type": "browser"
+      "type": "mobile-console",
+      "ismobile": true
     },
     "os": {
       "name": "Nintendo Switch OS",
@@ -192,6 +193,15 @@
       "version": null,
       "manufacturer": "nintendo",
       "bits": null
+    },
+    "client": {
+      "name": "NintendoBrowser",
+      "modus": null,
+      "version": "5.1.0.13341",
+      "manufacturer": "nintendo",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -216,15 +226,8 @@
         "touch": false,
         "size": null
       },
-      "type": "mobile-console"
-    },
-    "client": {
-      "name": "NintendoBrowser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "nintendo",
-      "bits": null,
-      "type": "browser"
+      "type": "mobile-console",
+      "ismobile": true
     },
     "os": {
       "name": "iOS",
@@ -232,6 +235,15 @@
       "version": null,
       "manufacturer": "apple",
       "bits": null
+    },
+    "client": {
+      "name": "NintendoBrowser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "nintendo",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -256,15 +268,8 @@
         "touch": true,
         "size": 6.2
       },
-      "type": "mobile-console"
-    },
-    "client": {
-      "name": "NintendoBrowser",
-      "modus": null,
-      "version": "5.1.0.19907",
-      "manufacturer": "nintendo",
-      "bits": null,
-      "type": "browser"
+      "type": "mobile-console",
+      "ismobile": true
     },
     "os": {
       "name": "Nintendo Switch OS",
@@ -272,6 +277,15 @@
       "version": null,
       "manufacturer": "nintendo",
       "bits": null
+    },
+    "client": {
+      "name": "NintendoBrowser",
+      "modus": null,
+      "version": "5.1.0.19907",
+      "manufacturer": "nintendo",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",

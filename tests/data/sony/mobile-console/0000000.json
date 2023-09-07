@@ -16,15 +16,8 @@
         "touch": true,
         "size": null
       },
-      "type": "mobile-console"
-    },
-    "client": {
-      "name": "Playstation Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "sony",
-      "bits": null,
-      "type": "browser"
+      "type": "mobile-console",
+      "ismobile": true
     },
     "os": {
       "name": "JavaOS",
@@ -32,6 +25,15 @@
       "version": null,
       "manufacturer": "sun-microsystems",
       "bits": null
+    },
+    "client": {
+      "name": "Playstation Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "sony",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -56,15 +58,8 @@
         "touch": true,
         "size": null
       },
-      "type": "mobile-console"
-    },
-    "client": {
-      "name": "Playstation Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "sony",
-      "bits": null,
-      "type": "browser"
+      "type": "mobile-console",
+      "ismobile": true
     },
     "os": {
       "name": "JavaOS",
@@ -72,6 +67,15 @@
       "version": null,
       "manufacturer": "sun-microsystems",
       "bits": null
+    },
+    "client": {
+      "name": "Playstation Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "sony",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -96,15 +100,8 @@
         "touch": true,
         "size": null
       },
-      "type": "mobile-console"
-    },
-    "client": {
-      "name": "Playstation Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "sony",
-      "bits": null,
-      "type": "browser"
+      "type": "mobile-console",
+      "ismobile": true
     },
     "os": {
       "name": "JavaOS",
@@ -112,6 +109,15 @@
       "version": null,
       "manufacturer": "sun-microsystems",
       "bits": null
+    },
+    "client": {
+      "name": "Playstation Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "sony",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -136,15 +142,8 @@
         "touch": true,
         "size": null
       },
-      "type": "mobile-console"
-    },
-    "client": {
-      "name": "Playstation Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "sony",
-      "bits": null,
-      "type": "browser"
+      "type": "mobile-console",
+      "ismobile": true
     },
     "os": {
       "name": "JavaOS",
@@ -152,6 +151,15 @@
       "version": null,
       "manufacturer": "sun-microsystems",
       "bits": null
+    },
+    "client": {
+      "name": "Playstation Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "sony",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -176,15 +184,8 @@
         "touch": true,
         "size": null
       },
-      "type": "mobile-console"
-    },
-    "client": {
-      "name": "Vision",
-      "modus": null,
-      "version": "7.3.0",
-      "manufacturer": "novarra",
-      "bits": null,
-      "type": "transcoder"
+      "type": "mobile-console",
+      "ismobile": true
     },
     "os": {
       "name": "JavaOS",
@@ -192,6 +193,15 @@
       "version": null,
       "manufacturer": "sun-microsystems",
       "bits": null
+    },
+    "client": {
+      "name": "Vision",
+      "modus": null,
+      "version": "7.3.0",
+      "manufacturer": "novarra",
+      "bits": null,
+      "type": "transcoder",
+      "isbot": false
     },
     "engine": {
       "name": null,
@@ -216,15 +226,8 @@
         "touch": true,
         "size": null
       },
-      "type": "mobile-console"
-    },
-    "client": {
-      "name": "Playstation Browser",
-      "modus": null,
-      "version": null,
-      "manufacturer": "sony",
-      "bits": null,
-      "type": "browser"
+      "type": "mobile-console",
+      "ismobile": true
     },
     "os": {
       "name": "JavaOS",
@@ -232,6 +235,15 @@
       "version": null,
       "manufacturer": "sun-microsystems",
       "bits": null
+    },
+    "client": {
+      "name": "Playstation Browser",
+      "modus": null,
+      "version": null,
+      "manufacturer": "sony",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Trident",

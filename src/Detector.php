@@ -30,9 +30,12 @@ use function array_filter;
 use function array_key_exists;
 use function assert;
 use function explode;
+use function get_debug_type;
 use function in_array;
 use function is_array;
 use function reset;
+use function sprintf;
+use function var_export;
 
 final class Detector implements DetectorInterface
 {
@@ -149,11 +152,20 @@ final class Detector implements DetectorInterface
             static fn (HeaderInterface $header): bool => $header->hasDeviceCode(),
         );
 
-        $deviceHeader = reset($headersWithDeviceCode);
-        assert($deviceHeader instanceof HeaderInterface);
-
-        $deviceCodename   = $deviceHeader->getDeviceCode();
+        $deviceHeader     = reset($headersWithDeviceCode);
         $platformCodename = null;
+
+        if (!$deviceHeader instanceof HeaderInterface) {
+            throw new UnexpectedValueException(
+                sprintf(
+                    'The %s header does not contain device information: %s',
+                    get_debug_type($deviceHeader),
+                    var_export($request->getFilteredHeaders(), true),
+                ),
+            );
+        }
+
+        $deviceCodename = $deviceHeader->getDeviceCode();
 
         if ($deviceCodename !== null) {
             $parts = explode('=', $deviceCodename, 2);
@@ -163,7 +175,7 @@ final class Detector implements DetectorInterface
             $result['device'] = $device;
         }
 
-        $platformHeader = clone $deviceHeader;
+        $platformHeader = null;
 
         /* detect platform */
         if ($platformCodename === null) {
@@ -173,12 +185,20 @@ final class Detector implements DetectorInterface
             );
 
             $platformHeader = reset($headersWithPlatformName);
-            assert($platformHeader instanceof HeaderInterface);
 
-            $platformCodename = $platformHeader->getPlatformCode();
+            if (
+                !$platformHeader instanceof HeaderInterface
+                && $deviceHeader instanceof HeaderInterface
+            ) {
+                $platformHeader = clone $deviceHeader;
+            }
+
+            if ($platformHeader instanceof HeaderInterface) {
+                $platformCodename = $platformHeader->getPlatformCode();
+            }
         }
 
-        if ($platformCodename !== null) {
+        if ($platformCodename !== null && $platformHeader instanceof HeaderInterface) {
             $result['os'] = $this->platformParser->load($platformCodename, $platformHeader->getValue());
 
             if (

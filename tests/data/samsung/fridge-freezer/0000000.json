@@ -16,15 +16,8 @@
         "touch": true,
         "size": 21.5
       },
-      "type": "fridge-freezer"
-    },
-    "client": {
-      "name": "Tizen Browser",
-      "modus": null,
-      "version": "2.3.0",
-      "manufacturer": "linux-foundation",
-      "bits": null,
-      "type": "browser"
+      "type": "fridge-freezer",
+      "ismobile": false
     },
     "os": {
       "name": "Tizen",
@@ -32,6 +25,15 @@
       "version": "2.3.0",
       "manufacturer": "linux-foundation",
       "bits": null
+    },
+    "client": {
+      "name": "Tizen Browser",
+      "modus": null,
+      "version": "2.3.0",
+      "manufacturer": "linux-foundation",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",

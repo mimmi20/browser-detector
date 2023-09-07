@@ -16,15 +16,8 @@
         "touch": true,
         "size": null
       },
-      "type": "mobile-device"
-    },
-    "client": {
-      "name": "Sailfish Browser",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "jolla",
-      "bits": null,
-      "type": "browser"
+      "type": "mobile-device",
+      "ismobile": true
     },
     "os": {
       "name": "SailfishOS",
@@ -32,6 +25,15 @@
       "version": null,
       "manufacturer": "jolla",
       "bits": null
+    },
+    "client": {
+      "name": "Sailfish Browser",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "jolla",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Gecko",
@@ -56,15 +58,8 @@
         "touch": true,
         "size": null
       },
-      "type": "mobile-device"
-    },
-    "client": {
-      "name": "Sailfish Browser",
-      "modus": null,
-      "version": "1.2.3",
-      "manufacturer": "jolla",
-      "bits": null,
-      "type": "browser"
+      "type": "mobile-device",
+      "ismobile": true
     },
     "os": {
       "name": "SailfishOS",
@@ -72,6 +67,15 @@
       "version": null,
       "manufacturer": "jolla",
       "bits": null
+    },
+    "client": {
+      "name": "Sailfish Browser",
+      "modus": null,
+      "version": "1.2.3",
+      "manufacturer": "jolla",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Gecko",
@@ -96,15 +100,8 @@
         "touch": true,
         "size": null
       },
-      "type": "mobile-device"
-    },
-    "client": {
-      "name": "Sailfish Browser",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "jolla",
-      "bits": null,
-      "type": "browser"
+      "type": "mobile-device",
+      "ismobile": true
     },
     "os": {
       "name": "SailfishOS",
@@ -112,6 +109,15 @@
       "version": null,
       "manufacturer": "jolla",
       "bits": null
+    },
+    "client": {
+      "name": "Sailfish Browser",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "jolla",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Gecko",
@@ -136,15 +142,8 @@
         "touch": true,
         "size": null
       },
-      "type": "mobile-device"
-    },
-    "client": {
-      "name": "Firefox",
-      "modus": null,
-      "version": "60.0.0",
-      "manufacturer": "mozilla-foundation",
-      "bits": null,
-      "type": "browser"
+      "type": "mobile-device",
+      "ismobile": true
     },
     "os": {
       "name": "SailfishOS",
@@ -152,6 +151,15 @@
       "version": null,
       "manufacturer": "jolla",
       "bits": null
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "60.0.0",
+      "manufacturer": "mozilla-foundation",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Gecko",
@@ -176,15 +184,8 @@
         "touch": true,
         "size": null
       },
-      "type": "mobile-device"
-    },
-    "client": {
-      "name": "Chrome",
-      "modus": null,
-      "version": "89.0.4389.86",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "mobile-device",
+      "ismobile": true
     },
     "os": {
       "name": "SailfishOS",
@@ -192,6 +193,15 @@
       "version": null,
       "manufacturer": "jolla",
       "bits": null
+    },
+    "client": {
+      "name": "Chrome",
+      "modus": null,
+      "version": "89.0.4389.86",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Blink",
@@ -216,15 +226,8 @@
         "touch": true,
         "size": null
       },
-      "type": "mobile-device"
-    },
-    "client": {
-      "name": "Sailfish Browser",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "jolla",
-      "bits": null,
-      "type": "browser"
+      "type": "mobile-device",
+      "ismobile": true
     },
     "os": {
       "name": "SailfishOS",
@@ -232,6 +235,15 @@
       "version": null,
       "manufacturer": "jolla",
       "bits": null
+    },
+    "client": {
+      "name": "Sailfish Browser",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "jolla",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Gecko",
@@ -256,15 +268,8 @@
         "touch": true,
         "size": null
       },
-      "type": "mobile-device"
-    },
-    "client": {
-      "name": "Sailfish Browser",
-      "modus": null,
-      "version": "1.0.0",
-      "manufacturer": "jolla",
-      "bits": null,
-      "type": "browser"
+      "type": "mobile-device",
+      "ismobile": true
     },
     "os": {
       "name": "SailfishOS",
@@ -272,6 +277,15 @@
       "version": null,
       "manufacturer": "jolla",
       "bits": null
+    },
+    "client": {
+      "name": "Sailfish Browser",
+      "modus": null,
+      "version": "1.0.0",
+      "manufacturer": "jolla",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Gecko",
@@ -296,15 +310,8 @@
         "touch": true,
         "size": null
       },
-      "type": "mobile-device"
-    },
-    "client": {
-      "name": "Firefox",
-      "modus": null,
-      "version": "60.0.0",
-      "manufacturer": "mozilla-foundation",
-      "bits": null,
-      "type": "browser"
+      "type": "mobile-device",
+      "ismobile": true
     },
     "os": {
       "name": "SailfishOS",
@@ -312,6 +319,15 @@
       "version": null,
       "manufacturer": "jolla",
       "bits": null
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "60.0.0",
+      "manufacturer": "mozilla-foundation",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Gecko",
@@ -341,15 +357,8 @@
         "touch": true,
         "size": null
       },
-      "type": "mobile-device"
-    },
-    "client": {
-      "name": "Firefox",
-      "modus": null,
-      "version": "60.0.0",
-      "manufacturer": "mozilla-foundation",
-      "bits": null,
-      "type": "browser"
+      "type": "mobile-device",
+      "ismobile": true
     },
     "os": {
       "name": "SailfishOS",
@@ -357,6 +366,15 @@
       "version": null,
       "manufacturer": "jolla",
       "bits": null
+    },
+    "client": {
+      "name": null,
+      "modus": null,
+      "version": "60.0.0",
+      "manufacturer": null,
+      "bits": null,
+      "type": null,
+      "isbot": null
     },
     "engine": {
       "name": "Gecko",
@@ -385,15 +403,8 @@
         "touch": true,
         "size": null
       },
-      "type": "mobile-device"
-    },
-    "client": {
-      "name": "Firefox",
-      "modus": null,
-      "version": "60.0.0",
-      "manufacturer": "mozilla-foundation",
-      "bits": null,
-      "type": "browser"
+      "type": "mobile-device",
+      "ismobile": true
     },
     "os": {
       "name": "SailfishOS",
@@ -401,6 +412,15 @@
       "version": null,
       "manufacturer": "jolla",
       "bits": null
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "60.0.0",
+      "manufacturer": "mozilla-foundation",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Gecko",
@@ -429,15 +449,8 @@
         "touch": true,
         "size": null
       },
-      "type": "mobile-device"
-    },
-    "client": {
-      "name": "Firefox",
-      "modus": null,
-      "version": "60.0.0",
-      "manufacturer": "mozilla-foundation",
-      "bits": null,
-      "type": "browser"
+      "type": "mobile-device",
+      "ismobile": true
     },
     "os": {
       "name": "SailfishOS",
@@ -445,6 +458,15 @@
       "version": null,
       "manufacturer": "jolla",
       "bits": null
+    },
+    "client": {
+      "name": "Firefox",
+      "modus": null,
+      "version": "60.0.0",
+      "manufacturer": "mozilla-foundation",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "Gecko",

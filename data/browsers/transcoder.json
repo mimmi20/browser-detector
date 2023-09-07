@@ -35,18 +35,6 @@
     },
     "engine": null
   },
-  "silk": {
-    "name": "Silk",
-    "manufacturer": "amazon",
-    "type": "transcoder",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "Silk"
-      ]
-    },
-    "engine": null
-  },
   "ucbrowser": {
     "name": "UC Browser",
     "manufacturer": "ucweb",
@@ -76,6 +64,18 @@
         "UBrowser",
         "UCWEB",
         "Browser"
+      ]
+    },
+    "engine": null
+  },
+  "ucbrowser turbo": {
+    "name": "UC Browser Turbo",
+    "manufacturer": "ucweb",
+    "type": "transcoder",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "UCTurbo"
       ]
     },
     "engine": null

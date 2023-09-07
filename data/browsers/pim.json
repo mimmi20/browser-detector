@@ -1,0 +1,73 @@
+{
+  "em-client": {
+    "name": "eM Client",
+    "manufacturer": "em-client",
+    "type": "pim",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "eM Client"
+      ]
+    },
+    "engine": null
+  },
+  "evernote app": {
+    "name": "Evernote App",
+    "manufacturer": "evernote",
+    "type": "pim",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "webkit"
+  },
+  "seamonkey": {
+    "name": "SeaMonkey",
+    "manufacturer": "mozilla-foundation",
+    "type": "pim",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "SeaMonkey",
+        "Seamonkey"
+      ]
+    },
+    "engine": "gecko"
+  },
+  "spark-desktop": {
+    "name": "SparkDesktop",
+    "manufacturer": "spark-mail",
+    "type": "pim",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "SparkDesktop"
+      ]
+    },
+    "engine": null
+  },
+  "iceape": {
+    "name": "Iceape",
+    "manufacturer": "software-in-the-public-interest",
+    "type": "pim",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Iceape"
+      ]
+    },
+    "engine": "gecko"
+  },
+  "mailspring": {
+    "name": "Mailspring",
+    "manufacturer": "foundry-376",
+    "type": "pim",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Mailspring"
+      ]
+    },
+    "engine": null
+  }
+}

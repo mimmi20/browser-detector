@@ -427,6 +427,18 @@
     },
     "engine": "webkit"
   },
+  "podcaster": {
+    "name": "Podcaster",
+    "manufacturer": "unknown",
+    "type": "multimedia-player",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Podcaster"
+      ]
+    },
+    "engine": null
+  },
   "podcastone": {
     "name": "PodcastOne",
     "manufacturer": "unknown",
@@ -531,6 +543,18 @@
       "class": "VersionFactory",
       "search": [
         "PodWrangler"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "procast": {
+    "name": "Procast",
+    "manufacturer": "dsa-solutions",
+    "type": "multimedia-player",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Procast"
       ]
     },
     "engine": "webkit"
@@ -793,5 +817,20 @@
       ]
     },
     "engine": "trident"
+  },
+  "itunes": {
+    "name": "iTunes",
+    "manufacturer": "apple",
+    "type": "multimedia-player",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "iTunes\\-iPhone",
+        "iTunes\\-iPad",
+        "iTunes\\-iPod",
+        "iTunes"
+      ]
+    },
+    "engine": "webkit"
   }
 }

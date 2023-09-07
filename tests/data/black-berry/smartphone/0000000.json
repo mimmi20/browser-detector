@@ -16,15 +16,8 @@
         "touch": true,
         "size": null
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "black-berry",
-      "modus": null,
-      "version": "10.1.0.4651",
-      "manufacturer": "rim",
-      "bits": null,
-      "type": "browser"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "RIM OS",
@@ -32,6 +25,15 @@
       "version": "10.1.0.4651",
       "manufacturer": "rim",
       "bits": null
+    },
+    "client": {
+      "name": "black-berry",
+      "modus": null,
+      "version": "10.1.0.4651",
+      "manufacturer": "rim",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -56,15 +58,8 @@
         "touch": true,
         "size": 4.2
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "black-berry",
-      "modus": null,
-      "version": "10.1.0.4633",
-      "manufacturer": "rim",
-      "bits": null,
-      "type": "browser"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "RIM OS",
@@ -72,6 +67,15 @@
       "version": "10.1.0.4633",
       "manufacturer": "rim",
       "bits": null
+    },
+    "client": {
+      "name": "black-berry",
+      "modus": null,
+      "version": "10.1.0.4633",
+      "manufacturer": "rim",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -96,15 +100,8 @@
         "touch": true,
         "size": null
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "black-berry",
-      "modus": null,
-      "version": null,
-      "manufacturer": "rim",
-      "bits": null,
-      "type": "browser"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "RIM OS",
@@ -112,6 +109,15 @@
       "version": "10.0.0",
       "manufacturer": "rim",
       "bits": null
+    },
+    "client": {
+      "name": "black-berry",
+      "modus": null,
+      "version": null,
+      "manufacturer": "rim",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -136,15 +142,8 @@
         "touch": true,
         "size": 3.1
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "Android Webkit",
-      "modus": null,
-      "version": "4.0.0",
-      "manufacturer": "google",
-      "bits": null,
-      "type": "browser"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "Android",
@@ -152,6 +151,15 @@
       "version": "4.2.2",
       "manufacturer": "google",
       "bits": null
+    },
+    "client": {
+      "name": "Android Webkit",
+      "modus": null,
+      "version": "4.0.0",
+      "manufacturer": "google",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
@@ -176,15 +184,8 @@
         "touch": true,
         "size": 4.2
       },
-      "type": "smartphone"
-    },
-    "client": {
-      "name": "black-berry",
-      "modus": null,
-      "version": "10.0.9.2372",
-      "manufacturer": "rim",
-      "bits": null,
-      "type": "browser"
+      "type": "smartphone",
+      "ismobile": true
     },
     "os": {
       "name": "RIM OS",
@@ -192,6 +193,15 @@
       "version": "10.0.9.2372",
       "manufacturer": "rim",
       "bits": null
+    },
+    "client": {
+      "name": "black-berry",
+      "modus": null,
+      "version": "10.0.9.2372",
+      "manufacturer": "rim",
+      "bits": null,
+      "type": "browser",
+      "isbot": false
     },
     "engine": {
       "name": "WebKit",
