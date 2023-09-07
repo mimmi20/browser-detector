@@ -162,21 +162,6 @@ final class Detector implements DetectorInterface
 
                 $result['device'] = $device;
             }
-
-            $platformHeader = clone $deviceHeader;
-
-            /* detect platform */
-            if ($platformCodename === null) {
-                $headersWithPlatformName = array_filter(
-                    $request->getFilteredHeaders(),
-                    static fn (HeaderInterface $header): bool => $header->hasPlatformCode(),
-                );
-
-                $platformHeader = reset($headersWithPlatformName);
-                assert($platformHeader instanceof HeaderInterface);
-
-                $platformCodename = $platformHeader->getPlatformCode();
-            }
         } else {
             throw new UnexpectedValueException(
                 sprintf(
@@ -184,6 +169,24 @@ final class Detector implements DetectorInterface
                     get_debug_type($deviceHeader)
                 ),
             );
+        }
+
+        /* detect platform */
+        if ($platformCodename === null) {
+            $headersWithPlatformName = array_filter(
+                $request->getFilteredHeaders(),
+                static fn (HeaderInterface $header): bool => $header->hasPlatformCode(),
+            );
+
+            $platformHeader = reset($headersWithPlatformName);
+
+            if (!$platformHeader instanceof HeaderInterface && $deviceHeader instanceof HeaderInterface) {
+                $platformHeader = clone $deviceHeader;
+            }
+
+            if ($platformHeader instanceof HeaderInterface) {
+                $platformCodename = $platformHeader->getPlatformCode();
+            }
         }
 
         if ($platformCodename !== null) {
