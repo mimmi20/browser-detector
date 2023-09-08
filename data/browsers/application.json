@@ -472,18 +472,6 @@
     },
     "engine": null
   },
-  "flipboard app": {
-    "name": "Flipboard App",
-    "manufacturer": "flipboard",
-    "type": "application",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "Flipboard"
-      ]
-    },
-    "engine": "webkit"
-  },
   "flixster app": {
     "name": "Flixster App",
     "manufacturer": "flixster",
@@ -519,18 +507,6 @@
       ]
     },
     "engine": "unknown"
-  },
-  "hi-search": {
-    "name": "HiSearch",
-    "manufacturer": "huawei",
-    "type": "application",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "HiSearch"
-      ]
-    },
-    "engine": null
   },
   "goodreader": {
     "name": "GoodReader",
@@ -684,18 +660,6 @@
     "version": {
       "class": null,
       "search": null
-    },
-    "engine": "unknown"
-  },
-  "keeper": {
-    "name": "Keeper Password Manager",
-    "manufacturer": "keeper",
-    "type": "application",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "Keeper"
-      ]
     },
     "engine": "unknown"
   },

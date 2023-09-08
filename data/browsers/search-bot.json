@@ -182,5 +182,103 @@
       ]
     },
     "engine": null
+  },
+  "duckduck bot": {
+    "name": "DuckDuck Bot",
+    "manufacturer": "duck-duck-go",
+    "type": "search-bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "DuckDuckBot",
+        "DuckDuckBot-Https"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "duckduck favicons bot": {
+    "name": "DuckDuck Favicons Bot",
+    "manufacturer": "duck-duck-go",
+    "type": "search-bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "DuckDuckGo\\-Favicons\\-Bot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "google image search": {
+    "name": "Google Image Search",
+    "manufacturer": "google",
+    "type": "search-bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Googlebot\\-Image"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "googlebot-news": {
+    "name": "Googlebot-News",
+    "manufacturer": "google",
+    "type": "search-bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Googlebot\\-News"
+      ]
+    },
+    "engine": null
+  },
+  "googlebot-video": {
+    "name": "Googlebot-Video",
+    "manufacturer": "google",
+    "type": "search-bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Googlebot\\-Video"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "bing preview": {
+    "name": "Bing Preview",
+    "manufacturer": "microsoft",
+    "type": "search-bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "BingPreview"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "baidu image search": {
+    "name": "Baidu Image Search",
+    "manufacturer": "baidu",
+    "type": "search-bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Baiduspider-image"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "baiduspider": {
+    "name": "BaiduSpider",
+    "manufacturer": "baidu",
+    "type": "search-bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "baiduspider",
+        "Baiduspider"
+      ]
+    },
+    "engine": "unknown"
   }
 }

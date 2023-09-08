@@ -540,5 +540,73 @@
       ]
     },
     "engine": "unknown"
+  },
+  "amazon bot": {
+    "name": "Amazon Bot",
+    "manufacturer": "amazon",
+    "type": "crawler",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Amazonbot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "google image proxy": {
+    "name": "Google Image Proxy",
+    "manufacturer": "google",
+    "type": "crawler",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "GoogleImageProxy"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "dataprovider-spider": {
+    "name": "Dataprovider Spider",
+    "manufacturer": "dataprovider",
+    "type": "crawler",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "megaindex-crawler": {
+    "name": "MegaIndex Crawler",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "MegaIndex\\.ru"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "screaming frog seo spider": {
+    "name": "Screaming Frog SEO Spider",
+    "manufacturer": "screaming-frog",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\ScreamingFrogFactory",
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "netestate ne crawler": {
+    "name": "netEstate NE Crawler",
+    "manufacturer": "net-estate",
+    "type": "crawler",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "netEstate NE Crawler"
+      ]
+    },
+    "engine": "unknown"
   }
 }

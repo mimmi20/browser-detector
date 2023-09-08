@@ -403,18 +403,6 @@
     },
     "engine": "unknown"
   },
-  "amazon bot": {
-    "name": "Amazon Bot",
-    "manufacturer": "amazon",
-    "type": "bot",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "Amazonbot"
-      ]
-    },
-    "engine": "unknown"
-  },
   "anonymizied": {
     "name": "Anonymizied",
     "manufacturer": "unknown",
@@ -704,18 +692,6 @@
     },
     "engine": "unknown"
   },
-  "baidu image search": {
-    "name": "Baidu Image Search",
-    "manufacturer": "baidu",
-    "type": "bot",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "Baiduspider-image"
-      ]
-    },
-    "engine": "unknown"
-  },
   "baidu mobile search": {
     "name": "Baidu Mobile Search",
     "manufacturer": "baidu",
@@ -734,19 +710,6 @@
       "class": "VersionFactory",
       "search": [
         "BaiduMobaider"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "baiduspider": {
-    "name": "BaiduSpider",
-    "manufacturer": "baidu",
-    "type": "bot",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "baiduspider",
-        "Baiduspider"
       ]
     },
     "engine": "unknown"
@@ -806,18 +769,6 @@
       "search": [
         "BigBozz\\-",
         "BigBozz"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "bing preview": {
-    "name": "Bing Preview",
-    "manufacturer": "microsoft",
-    "type": "bot",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "BingPreview"
       ]
     },
     "engine": "unknown"
@@ -1552,18 +1503,6 @@
     },
     "engine": "unknown"
   },
-  "curl php": {
-    "name": "cURL PHP",
-    "manufacturer": "team-haxx",
-    "type": "bot",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "Curl\\/PHP"
-      ]
-    },
-    "engine": "unknown"
-  },
   "cydral web image search": {
     "name": "Cydral Web Image Search",
     "manufacturer": "unknown",
@@ -1848,31 +1787,6 @@
       "class": "VersionFactory",
       "search": [
         "masscan"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "duckduck bot": {
-    "name": "DuckDuck Bot",
-    "manufacturer": "duck-duck-go",
-    "type": "bot",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "DuckDuckBot",
-        "DuckDuckBot-Https"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "duckduck favicons bot": {
-    "name": "DuckDuck Favicons Bot",
-    "manufacturer": "duck-duck-go",
-    "type": "bot",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "DuckDuckGo\\-Favicons\\-Bot"
       ]
     },
     "engine": "unknown"
@@ -2191,18 +2105,6 @@
       "class": "VersionFactory",
       "search": [
         "facebookplatform"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "facebookexternalhit": {
-    "name": "FacebookExternalHit",
-    "manufacturer": "facebook",
-    "type": "bot",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "facebookexternalhit"
       ]
     },
     "engine": "unknown"
@@ -2864,30 +2766,6 @@
     },
     "engine": "unknown"
   },
-  "google image proxy": {
-    "name": "Google Image Proxy",
-    "manufacturer": "google",
-    "type": "bot",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "GoogleImageProxy"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "google image search": {
-    "name": "Google Image Search",
-    "manufacturer": "google",
-    "type": "bot",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "Googlebot\\-Image"
-      ]
-    },
-    "engine": "unknown"
-  },
   "google images relinker": {
     "name": "google images relinker",
     "manufacturer": "unknown",
@@ -3054,30 +2932,6 @@
       "class": "VersionFactory",
       "search": [
         "Google\\-PageRenderer"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "googlebot-news": {
-    "name": "Googlebot-News",
-    "manufacturer": "google",
-    "type": "bot",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "Googlebot\\-News"
-      ]
-    },
-    "engine": null
-  },
-  "googlebot-video": {
-    "name": "Googlebot-Video",
-    "manufacturer": "google",
-    "type": "bot",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "Googlebot\\-Video"
       ]
     },
     "engine": "unknown"
@@ -4186,19 +4040,6 @@
     },
     "engine": "unknown"
   },
-  "linkedinbot": {
-    "name": "LinkedInBot",
-    "manufacturer": "linked-in",
-    "type": "bot",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "com\\.linkedin",
-        "LinkedInBot"
-      ]
-    },
-    "engine": "unknown"
-  },
   "linklint": {
     "name": "LinkLint",
     "manufacturer": "unknown",
@@ -5018,18 +4859,6 @@
     },
     "engine": "unknown"
   },
-  "netestate ne crawler": {
-    "name": "netEstate NE Crawler",
-    "manufacturer": "net-estate",
-    "type": "bot",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "netEstate NE Crawler"
-      ]
-    },
-    "engine": "unknown"
-  },
   "netlyzer fastprobe": {
     "name": "NetLyzer FastProbe",
     "manufacturer": "unknown",
@@ -5577,30 +5406,6 @@
     },
     "engine": "unknown"
   },
-  "pear http_request": {
-    "name": "PEAR HTTP_Request",
-    "manufacturer": "php-group",
-    "type": "bot",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "HTTP_Request"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "pear http_request2": {
-    "name": "PEAR HTTP_Request2",
-    "manufacturer": "php-group",
-    "type": "bot",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "HTTP_Request2"
-      ]
-    },
-    "engine": "unknown"
-  },
   "pearltrees bot": {
     "name": "Pearltrees Bot",
     "manufacturer": "unknown",
@@ -5609,18 +5414,6 @@
       "class": "VersionFactory",
       "search": [
         "Pearltrees"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "pecl http client": {
-    "name": "PECL::HTTP",
-    "manufacturer": "php-group",
-    "type": "bot",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "PECL::HTTP"
       ]
     },
     "engine": "unknown"
@@ -5655,19 +5448,6 @@
       "class": "VersionFactory",
       "search": [
         "Photon"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "php": {
-    "name": "PHP",
-    "manufacturer": "php-group",
-    "type": "bot",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "PHP",
-        "PHP\\-SOAP"
       ]
     },
     "engine": "unknown"
@@ -6179,18 +5959,6 @@
     },
     "engine": "webkit"
   },
-  "riddler": {
-    "name": "Riddler",
-    "manufacturer": "riddler",
-    "type": "bot",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "Riddler"
-      ]
-    },
-    "engine": "unknown"
-  },
   "ripper": {
     "name": "Ripper",
     "manufacturer": "unknown",
@@ -6423,16 +6191,6 @@
         "scraper",
         "scraper v"
       ]
-    },
-    "engine": "unknown"
-  },
-  "screaming frog seo spider": {
-    "name": "Screaming Frog SEO Spider",
-    "manufacturer": "screaming-frog",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\ScreamingFrogFactory",
-      "search": null
     },
     "engine": "unknown"
   },
@@ -6762,19 +6520,6 @@
       "class": "VersionFactory",
       "search": [
         "Sitemap Generator"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "skypeuripreview": {
-    "name": "SkypeUriPreview",
-    "manufacturer": "microsoft",
-    "type": "bot",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "SkypeUriPreview",
-        "Preview"
       ]
     },
     "engine": "unknown"
@@ -7829,30 +7574,6 @@
       "class": "VersionFactory",
       "search": [
         "Twingly Recon"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "twitterbot": {
-    "name": "Twitterbot",
-    "manufacturer": "twitter",
-    "type": "bot",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "Twitterbot"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "telegrambot": {
-    "name": "TelegramBot",
-    "manufacturer": "telegram",
-    "type": "bot",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "TelegramBot"
       ]
     },
     "engine": "unknown"
@@ -9475,18 +9196,6 @@
     },
     "engine": "unknown"
   },
-  "zgrab": {
-    "name": "zgrab",
-    "manufacturer": "rwth-aachen",
-    "type": "bot",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "zgrab"
-      ]
-    },
-    "engine": "unknown"
-  },
   "zitebot": {
     "name": "zitebot",
     "manufacturer": "flipboard",
@@ -9590,16 +9299,6 @@
     },
     "engine": "unknown"
   },
-  "chrome privacy preserving prefetch proxy": {
-    "name": "Chrome Privacy Preserving Prefetch Proxy",
-    "manufacturer": "unknown",
-    "type": "bot",
-    "version": {
-      "class": null,
-      "search": null
-    },
-    "engine": "unknown"
-  },
   "dnb-crawler-analytics": {
     "name": "DnBCrawler-Analytics",
     "manufacturer": "unknown",
@@ -9619,16 +9318,6 @@
       "search": [
         "Download Demon"
       ]
-    },
-    "engine": "unknown"
-  },
-  "expanse": {
-    "name": "Expanse",
-    "manufacturer": "palo-alto",
-    "type": "bot",
-    "version": {
-      "class": null,
-      "search": null
     },
     "engine": "unknown"
   },
@@ -9710,40 +9399,6 @@
     },
     "engine": "unknown"
   },
-  "bitsightbot": {
-    "name": "BitSightBot",
-    "manufacturer": "unknown",
-    "type": "bot",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "BitSightBot"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "censysinspect": {
-    "name": "CensysInspect",
-    "manufacturer": "censys",
-    "type": "bot",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "CensysInspect"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "dataprovider-spider": {
-    "name": "Dataprovider Spider",
-    "manufacturer": "dataprovider",
-    "type": "bot",
-    "version": {
-      "class": null,
-      "search": null
-    },
-    "engine": "unknown"
-  },
   "dmbot": {
     "name": "Dmbot",
     "manufacturer": "unknown",
@@ -9763,18 +9418,6 @@
     "version": {
       "class": null,
       "search": null
-    },
-    "engine": "unknown"
-  },
-  "megaindex-crawler": {
-    "name": "MegaIndex Crawler",
-    "manufacturer": "unknown",
-    "type": "bot",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "MegaIndex\\.ru"
-      ]
     },
     "engine": "unknown"
   },

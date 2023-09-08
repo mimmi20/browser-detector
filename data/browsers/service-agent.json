@@ -1,0 +1,25 @@
+{
+  "chrome privacy preserving prefetch proxy": {
+    "name": "Chrome Privacy Preserving Prefetch Proxy",
+    "manufacturer": "unknown",
+    "type": "service-agent",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "skypeuripreview": {
+    "name": "SkypeUriPreview",
+    "manufacturer": "microsoft",
+    "type": "service-agent",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "SkypeUriPreview",
+        "Preview"
+      ]
+    },
+    "engine": "unknown"
+  }
+}

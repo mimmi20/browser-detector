@@ -146,5 +146,66 @@
       ]
     },
     "engine": "unknown"
+  },
+  "curl php": {
+    "name": "cURL PHP",
+    "manufacturer": "team-haxx",
+    "type": "library",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Curl\\/PHP"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "pear http_request": {
+    "name": "PEAR HTTP_Request",
+    "manufacturer": "php-group",
+    "type": "library",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "HTTP_Request"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "pear http_request2": {
+    "name": "PEAR HTTP_Request2",
+    "manufacturer": "php-group",
+    "type": "library",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "HTTP_Request2"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "pecl http client": {
+    "name": "PECL::HTTP",
+    "manufacturer": "php-group",
+    "type": "library",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "PECL::HTTP"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "php": {
+    "name": "PHP",
+    "manufacturer": "php-group",
+    "type": "library",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "PHP",
+        "PHP\\-SOAP"
+      ]
+    },
+    "engine": "unknown"
   }
 }

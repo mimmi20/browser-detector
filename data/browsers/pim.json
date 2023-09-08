@@ -105,5 +105,17 @@
       "search": null
     },
     "engine": "webkit"
+  },
+  "outlook-express": {
+    "name": "Windows Live Mail",
+    "manufacturer": "microsoft",
+    "type": "pim",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Outlook-Express"
+      ]
+    },
+    "engine": "trident"
   }
 }

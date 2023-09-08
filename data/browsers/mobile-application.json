@@ -147,5 +147,41 @@
       ]
     },
     "engine": null
+  },
+  "keeper": {
+    "name": "Keeper Password Manager",
+    "manufacturer": "keeper",
+    "type": "mobile-application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Keeper"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "hi-search": {
+    "name": "HiSearch",
+    "manufacturer": "huawei",
+    "type": "mobile-application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "HiSearch"
+      ]
+    },
+    "engine": null
+  },
+  "flipboard app": {
+    "name": "Flipboard App",
+    "manufacturer": "flipboard",
+    "type": "mobile-application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Flipboard"
+      ]
+    },
+    "engine": "webkit"
   }
 }
