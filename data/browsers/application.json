@@ -98,8 +98,10 @@
     "manufacturer": "aol",
     "type": "application",
     "version": {
-      "class": null,
-      "search": null
+      "class": "VersionFactory",
+      "search": [
+        "ADG"
+      ]
     },
     "engine": "trident"
   },

@@ -280,5 +280,27 @@
       ]
     },
     "engine": "unknown"
+  },
+  "openindex-spider": {
+    "name": "OpenindexSpider",
+    "manufacturer": "openindex",
+    "type": "search-bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "OpenindexSpider"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "yacybot": {
+    "name": "YaCy Bot",
+    "manufacturer": "unknown",
+    "type": "search-bot",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
   }
 }

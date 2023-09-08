@@ -4772,7 +4772,18 @@
     "version": {
       "class": "VersionFactory",
       "search": [
-        "nagios\\-plugins",
+        "nagios\\-plugins"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "nagios-check-http": {
+    "name": "Nagios Check Http",
+    "manufacturer": "nagios-enterprises",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
         "check_http"
       ]
     },
@@ -7410,18 +7421,6 @@
     },
     "engine": "unknown"
   },
-  "trendiction bot": {
-    "name": "Trendiction Bot",
-    "manufacturer": "unknown",
-    "type": "bot",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "trendictionbot"
-      ]
-    },
-    "engine": "unknown"
-  },
   "trendwinhttp": {
     "name": "TrendWinHttp",
     "manufacturer": "unknown",
@@ -8993,16 +8992,6 @@
     },
     "engine": "unknown"
   },
-  "yacybot": {
-    "name": "YaCy Bot",
-    "manufacturer": "unknown",
-    "type": "bot",
-    "version": {
-      "class": null,
-      "search": null
-    },
-    "engine": "unknown"
-  },
   "yadowscrawler": {
     "name": "YadowsCrawler",
     "manufacturer": "unknown",
@@ -9453,6 +9442,80 @@
       "class": "VersionFactory",
       "search": [
         "SiteAuditBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "relemind-bot": {
+    "name": "relemindbot",
+    "manufacturer": "relemind",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "relemindbot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "phxbot": {
+    "name": "PhxBot",
+    "manufacturer": "proton",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "PhxBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "hgf-alpha-x-crawl": {
+    "name": "hgfAlphaXCrawl",
+    "manufacturer": "universitaet-passau",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "hgfAlphaXCrawl"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "crawlboy": {
+    "name": "Crawlboy",
+    "manufacturer": "unknown",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Crawlboy",
+        "crawler_eb_germany_"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "digital-shadows-bot": {
+    "name": "DigitalShadowsBot",
+    "manufacturer": "digital-shadows",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "DigitalShadowsBot",
+        "digitalshadowsbot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "webprosbot": {
+    "name": "webprosbot",
+    "manufacturer": "webpros",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "webprosbot"
       ]
     },
     "engine": "unknown"

@@ -396,14 +396,15 @@
     },
     "engine": "unknown"
   },
-  "proximic": {
-    "name": "proximic",
-    "manufacturer": "proximic",
+  "comscore": {
+    "name": "Comscore Crawler",
+    "manufacturer": "comscore",
     "type": "crawler",
     "version": {
       "class": "VersionFactory",
       "search": [
-        "proximic"
+        "proximic",
+        "comscore"
       ]
     },
     "engine": "unknown"
@@ -605,6 +606,30 @@
       "class": "VersionFactory",
       "search": [
         "netEstate NE Crawler"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "brightedge crawler": {
+    "name": "BrightEdge Crawler",
+    "manufacturer": "brightedge",
+    "type": "crawler",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "BrightEdge Crawler"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "trendiction bot": {
+    "name": "Trendiction Bot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "trendictionbot"
       ]
     },
     "engine": "unknown"
