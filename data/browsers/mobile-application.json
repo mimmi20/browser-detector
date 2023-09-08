@@ -1,0 +1,151 @@
+{
+  "1password": {
+    "name": "1Password",
+    "manufacturer": "agile-bits",
+    "type": "mobile-application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "1Password"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "google app": {
+    "name": "Google App",
+    "manufacturer": "google",
+    "type": "mobile-application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "GSA",
+        "GoogleApp"
+      ]
+    },
+    "engine": null
+  },
+  "wechat app": {
+    "name": "WeChat App",
+    "manufacturer": "tencent",
+    "type": "mobile-application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "MicroMessenger"
+      ]
+    },
+    "engine": null
+  },
+  "snapchat app": {
+    "name": "Snapchat",
+    "manufacturer": "snap",
+    "type": "mobile-application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Snapchat"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "instagram app": {
+    "name": "Instagram App",
+    "manufacturer": "facebook",
+    "type": "mobile-application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Instagram"
+      ]
+    },
+    "engine": null
+  },
+  "linkedin-app": {
+    "name": "LinkedIn",
+    "manufacturer": "linked-in",
+    "type": "mobile-application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "LinkedInApp",
+        "\\[LinkedInApp\\]"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "xing app": {
+    "name": "XING App",
+    "manufacturer": "xing",
+    "type": "mobile-application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "XING"
+      ]
+    },
+    "engine": null
+  },
+  "kakaotalk": {
+    "name": "KAKAOTALK",
+    "manufacturer": "kakao",
+    "type": "mobile-application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "KAKAOTALK"
+      ]
+    },
+    "engine": null
+  },
+  "facebook app": {
+    "name": "Facebook App",
+    "manufacturer": "facebook",
+    "type": "mobile-application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "FBAV",
+        "facebookexternalhit"
+      ]
+    },
+    "engine": null
+  },
+  "facebook groups": {
+    "name": "Facebook Groups App",
+    "manufacturer": "facebook",
+    "type": "mobile-application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Facebook",
+        "FBAV"
+      ]
+    },
+    "engine": null
+  },
+  "facebook messenger app": {
+    "name": "Facebook Messenger App",
+    "manufacturer": "facebook",
+    "type": "mobile-application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Facebook",
+        "FBAV"
+      ]
+    },
+    "engine": null
+  },
+  "whatsapp": {
+    "name": "WhatsApp",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "WhatsApp"
+      ]
+    },
+    "engine": null
+  }
+}

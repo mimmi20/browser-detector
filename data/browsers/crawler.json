@@ -1,0 +1,544 @@
+{
+  "2ip bot": {
+    "name": "2ip bot",
+    "manufacturer": "barzmann-internet-solutions",
+    "type": "crawler",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "2ip bot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "ccbot": {
+    "name": "CCBot",
+    "manufacturer": "common-crawl-foundation",
+    "type": "crawler",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "CCBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "domain-stats-bot": {
+    "name": "DomainStatsBot",
+    "manufacturer": "domainstats",
+    "type": "crawler",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "DomainStatsBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "iframely bot": {
+    "name": "Iframely Bot",
+    "manufacturer": "itteco",
+    "type": "crawler",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Iframely"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "ioncrawl": {
+    "name": "Ionos Crawler",
+    "manufacturer": "ionos",
+    "type": "crawler",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "IonCrawl"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "kozmonavt": {
+    "name": "Kozmonavt",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "linkwalker": {
+    "name": "LinkWalker",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "LinkWalker"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "mediatoolkitbot": {
+    "name": "Mediatoolkitbot",
+    "manufacturer": "degordian",
+    "type": "crawler",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "petalbot": {
+    "name": "PetalBot",
+    "manufacturer": "aspiegel",
+    "type": "crawler",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "PetalBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "applebot": {
+    "name": "Applebot",
+    "manufacturer": "apple",
+    "type": "crawler",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Applebot"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "built-with crawler": {
+    "name": "BuiltWith Crawler",
+    "manufacturer": "builtwith",
+    "type": "crawler",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "BW"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "cookiebot": {
+    "name": "Cookiebot",
+    "manufacturer": "usercentrics",
+    "type": "crawler",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Cookiebot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "ahrefsbot": {
+    "name": "AhrefsBot",
+    "manufacturer": "ahrefs",
+    "type": "crawler",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "AhrefsBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "blexbot": {
+    "name": "BLEXBot",
+    "manufacturer": "webmeup",
+    "type": "crawler",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "BLEXBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "barkrowler": {
+    "name": "Barkrowler",
+    "manufacturer": "babbar",
+    "type": "crawler",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Barkrowler"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "dataforseobot": {
+    "name": "DataForSeoBot",
+    "manufacturer": "dataforseo",
+    "type": "crawler",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "DataForSeoBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "dotbot": {
+    "name": "DotBot",
+    "manufacturer": "seomoz",
+    "type": "crawler",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "DotBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "exabot": {
+    "name": "Exabot",
+    "manufacturer": "dassault-systemes",
+    "type": "crawler",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Exabot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "internet-measurement": {
+    "name": "InternetMeasurement",
+    "manufacturer": "sharashka",
+    "type": "crawler",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "InternetMeasurement"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "metajobbot": {
+    "name": "MetaJobBot",
+    "manufacturer": "manfred-schauer",
+    "type": "crawler",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "MetaJobBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "mixrankbot": {
+    "name": "MixrankBot",
+    "manufacturer": "online-media-group",
+    "type": "crawler",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "MixrankBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "optimizer bot": {
+    "name": "Optimizer Bot",
+    "manufacturer": "sistrix",
+    "type": "crawler",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "pinterest bot": {
+    "name": "Pinterest Bot",
+    "manufacturer": "pinterest",
+    "type": "crawler",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Pinterestbot"
+      ]
+    },
+    "engine": null
+  },
+  "qwantify": {
+    "name": "Qwantify",
+    "manufacturer": "qwant",
+    "type": "crawler",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Qwantify"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "seokicks robot": {
+    "name": "SEOkicks Robot",
+    "manufacturer": "torsten-rueckert",
+    "type": "crawler",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "seekportbot": {
+    "name": "SeekportBot",
+    "manufacturer": "sistrix",
+    "type": "crawler",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "SeekportBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "semrushbot": {
+    "name": "SemrushBot",
+    "manufacturer": "semrush",
+    "type": "crawler",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "SemrushBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "surdotlybot": {
+    "name": "SurdotlyBot",
+    "manufacturer": "sur.ly",
+    "type": "crawler",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "SurdotlyBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "velenpublicwebcrawler": {
+    "name": "Velen Public WebCrawler",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "VelenPublicWebCrawler",
+        "VelenPublicWebDownloader"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "webwikibot": {
+    "name": "WebwikiBot",
+    "manufacturer": "webwiki",
+    "type": "crawler",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "WebwikiBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "yak": {
+    "name": "YaK",
+    "manufacturer": "linkfluence",
+    "type": "crawler",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "YaK"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "yahoo link preview": {
+    "name": "Yahoo Link Preview",
+    "manufacturer": "yahoo",
+    "type": "crawler",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "internet archive": {
+    "name": "Internet Archive",
+    "manufacturer": "archive.org",
+    "type": "crawler",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "internet archive bot": {
+    "name": "Internet Archive Bot",
+    "manufacturer": "archive.org",
+    "type": "crawler",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "ia_archiver"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "proximic": {
+    "name": "proximic",
+    "manufacturer": "proximic",
+    "type": "crawler",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "proximic"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "umbot": {
+    "name": "uMBot",
+    "manufacturer": "ubermetrics-technologies",
+    "type": "crawler",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "uMBot\\-LN",
+        "um-LN"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "chatgpt-user-bot": {
+    "name": "ChatGPT User Bot",
+    "manufacturer": "openai",
+    "type": "crawler",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "ChatGPT-User"
+      ]
+    },
+    "engine": null
+  },
+  "gpt-bot": {
+    "name": "GPT Bot",
+    "manufacturer": "openai",
+    "type": "crawler",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "GPTBot"
+      ]
+    },
+    "engine": null
+  },
+  "researchscan": {
+    "name": "researchscan",
+    "manufacturer": "rwth-aachen",
+    "type": "crawler",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "repo-lookout-bot": {
+    "name": "RepoLookoutBot",
+    "manufacturer": "crissy-field",
+    "type": "crawler",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "RepoLookoutBot",
+        "RepoLookoutBot\\/v"
+      ]
+    },
+    "engine": null
+  },
+  "scrapy": {
+    "name": "Scrapy",
+    "manufacturer": "scrapy.org",
+    "type": "crawler",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Scrapy"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "slackbot": {
+    "name": "Slackbot",
+    "manufacturer": "slack",
+    "type": "crawler",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Slackbot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "slackbot-link-expanding": {
+    "name": "Slackbot-Link-Expanding",
+    "manufacturer": "slack",
+    "type": "crawler",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Slackbot\\-LinkExpanding"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "zoominfobot": {
+    "name": "Zoominfobot",
+    "manufacturer": "zoom-information",
+    "type": "crawler",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "ZoominfoBot"
+      ]
+    },
+    "engine": null
+  },
+  "bitlybot": {
+    "name": "BitlyBot",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "bitlybot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "nutch": {
+    "name": "Nutch",
+    "manufacturer": "apache",
+    "type": "crawler",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Nutch",
+        "Nutch\\-"
+      ]
+    },
+    "engine": "unknown"
+  }
+}

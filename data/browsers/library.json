@@ -134,5 +134,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "pycurl": {
+    "name": "PycURL",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "PycURL"
+      ]
+    },
+    "engine": "unknown"
   }
 }

@@ -11,16 +11,6 @@
     },
     "engine": "webkit"
   },
-  "apple mail": {
-    "name": "Apple Mail",
-    "manufacturer": "apple",
-    "type": "email-client",
-    "version": {
-      "class": null,
-      "search": null
-    },
-    "engine": "webkit"
-  },
   "cronomail": {
     "name": "CronoMail",
     "manufacturer": "unknown",
@@ -117,19 +107,6 @@
     },
     "engine": "unknown"
   },
-  "outlook": {
-    "name": "Outlook",
-    "manufacturer": "microsoft",
-    "type": "email-client",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "microsoft office outlook",
-        "microsoft outlook"
-      ]
-    },
-    "engine": null
-  },
   "outlook social connector": {
     "name": "Outlook Social Connector",
     "manufacturer": "microsoft",
@@ -152,19 +129,6 @@
       "class": "VersionFactory",
       "search": [
         "Postbox"
-      ]
-    },
-    "engine": "gecko"
-  },
-  "thunderbird": {
-    "name": "Thunderbird",
-    "manufacturer": "mozilla-foundation",
-    "type": "email-client",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "Thunderbird\\-Portable",
-        "Thunderbird"
       ]
     },
     "engine": "gecko"
