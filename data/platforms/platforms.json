@@ -1358,5 +1358,16 @@
       "class": null,
       "search": null
     }
+  },
+  "harmony-os": {
+    "name": "HarmonyOS",
+    "marketingName": "HarmonyOS",
+    "manufacturer": "unknown",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "HarmonyOS"
+      ]
+    }
   }
 }

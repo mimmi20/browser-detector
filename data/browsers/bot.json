@@ -274,30 +274,6 @@
     },
     "engine": "unknown"
   },
-  "adsbot google": {
-    "name": "AdsBot Google",
-    "manufacturer": "google",
-    "type": "bot",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "AdsBot\\-Google"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "adsbot google-mobile": {
-    "name": "AdsBot Google-Mobile",
-    "manufacturer": "google",
-    "type": "bot",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "AdsBot\\-Google\\-Mobile"
-      ]
-    },
-    "engine": "unknown"
-  },
   "adsense snapshot bot": {
     "name": "AdSense Snapshot Bot",
     "manufacturer": "google",
@@ -2241,18 +2217,6 @@
     },
     "engine": "unknown"
   },
-  "feedly feed fetcher": {
-    "name": "feedly Feed Fetcher",
-    "manufacturer": "feedly.com",
-    "type": "bot",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "Feedly"
-      ]
-    },
-    "engine": "unknown"
-  },
   "fetch-stream": {
     "name": "FetchStream",
     "manufacturer": "unknown",
@@ -3108,19 +3072,6 @@
       "class": "VersionFactory",
       "search": [
         "Hatena::Bookmark"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "heritrix": {
-    "name": "Heritrix",
-    "manufacturer": "unknown",
-    "type": "bot",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "heritrix",
-        "Heritrix"
       ]
     },
     "engine": "unknown"
@@ -6663,18 +6614,6 @@
     },
     "engine": "unknown"
   },
-  "sogou web spider": {
-    "name": "Sogou Web Spider",
-    "manufacturer": "sogou",
-    "type": "bot",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "Sogou web spider"
-      ]
-    },
-    "engine": "unknown"
-  },
   "solomonobot": {
     "name": "SolomonoBot",
     "manufacturer": "unknown",
@@ -8563,19 +8502,6 @@
     },
     "engine": "trident"
   },
-  "winhttp": {
-    "name": "WinHttp",
-    "manufacturer": "microsoft",
-    "type": "bot",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "WinHttpRequest",
-        "WinHttpRequest\\."
-      ]
-    },
-    "engine": "unknown"
-  },
   "winkbot": {
     "name": "WinkBot",
     "manufacturer": "unknown",
@@ -9516,6 +9442,98 @@
       "class": "VersionFactory",
       "search": [
         "webprosbot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "bsbot": {
+    "name": "BSbot",
+    "manufacturer": "unknown",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "BSbot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "bidtellect": {
+    "name": "Bidtellect",
+    "manufacturer": "bidtellect",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Bidtellect"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "df bot": {
+    "name": "DF Bot",
+    "manufacturer": "unknown",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "DF Bot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "domcopbot": {
+    "name": "DomCopBot",
+    "manufacturer": "domcop",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "DomCopBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "globalgoalsdirectorybot": {
+    "name": "GlobalGoalsDirectoryBot",
+    "manufacturer": "domcop",
+    "type": "bot",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "gregarius": {
+    "name": "Gregarius",
+    "manufacturer": "unknown",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Gregarius"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "magellan": {
+    "name": "Magellan",
+    "manufacturer": "unknown",
+    "type": "bot",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "isscyberriskcrawler": {
+    "name": "ISS Cyber Risk Crawler",
+    "manufacturer": "unknown",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "ISSCyberRiskCrawler"
       ]
     },
     "engine": "unknown"

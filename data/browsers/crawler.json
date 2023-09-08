@@ -633,5 +633,40 @@
       ]
     },
     "engine": "unknown"
+  },
+  "heritrix": {
+    "name": "Heritrix",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "heritrix",
+        "Heritrix"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "arquivo-web-crawler": {
+    "name": "Arquivo Web Crawler",
+    "manufacturer": "arquivo",
+    "type": "crawler",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Arquivo-web-crawler"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "eff crawler": {
+    "name": "EFF crawler",
+    "manufacturer": "electronic-frontier-foundation",
+    "type": "crawler",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
   }
 }

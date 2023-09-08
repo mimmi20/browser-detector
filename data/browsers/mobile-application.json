@@ -183,5 +183,65 @@
       ]
     },
     "engine": "webkit"
+  },
+  "baidu box app": {
+    "name": "Baidu Box App",
+    "manufacturer": "baidu",
+    "type": "mobile-application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "baiduboxapp"
+      ]
+    },
+    "engine": null
+  },
+  "baidu box app lite": {
+    "name": "Baidu Box App Lite",
+    "manufacturer": "baidu",
+    "type": "mobile-application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "lite baiduboxapp"
+      ]
+    },
+    "engine": null
+  },
+  "microsoft-start": {
+    "name": "start",
+    "manufacturer": "microsoft",
+    "type": "mobile-application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "NewsSapphire"
+      ]
+    },
+    "engine": null
+  },
+  "spotify app": {
+    "name": "Spotify",
+    "manufacturer": "spotify",
+    "type": "mobile-application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Spotify"
+      ]
+    },
+    "engine": null
+  },
+  "daum-app": {
+    "name": "Daum App",
+    "manufacturer": "kakao",
+    "type": "mobile-application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "DaumApps"
+      ]
+    },
+    "engine": null
   }
 }

@@ -302,5 +302,53 @@
       "search": null
     },
     "engine": "unknown"
+  },
+  "sogou web spider": {
+    "name": "Sogou Web Spider",
+    "manufacturer": "sogou",
+    "type": "search-bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Sogou web spider"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "adsbot google": {
+    "name": "AdsBot Google",
+    "manufacturer": "google",
+    "type": "search-bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "AdsBot\\-Google"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "adsbot google-mobile": {
+    "name": "AdsBot Google-Mobile",
+    "manufacturer": "google",
+    "type": "search-bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "AdsBot\\-Google\\-Mobile"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "google-inspectiontool": {
+    "name": "Google-InspectionTool",
+    "manufacturer": "google",
+    "type": "search-bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Google-InspectionTool"
+      ]
+    },
+    "engine": "unknown"
   }
 }

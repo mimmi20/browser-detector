@@ -103,7 +103,7 @@
         "ADG"
       ]
     },
-    "engine": "trident"
+    "engine": null
   },
   "appcent": {
     "name": "Appcent",
@@ -149,30 +149,6 @@
       "class": "VersionFactory",
       "search": [
         "Atom"
-      ]
-    },
-    "engine": null
-  },
-  "baidu box app": {
-    "name": "Baidu Box App",
-    "manufacturer": "baidu",
-    "type": "application",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "baiduboxapp"
-      ]
-    },
-    "engine": null
-  },
-  "baidu box app lite": {
-    "name": "Baidu Box App Lite",
-    "manufacturer": "baidu",
-    "type": "application",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "lite baiduboxapp"
       ]
     },
     "engine": null

@@ -217,5 +217,18 @@
       "search": null
     },
     "engine": "unknown"
+  },
+  "winhttp": {
+    "name": "WinHttp",
+    "manufacturer": "microsoft",
+    "type": "library",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "WinHttpRequest",
+        "WinHttpRequest\\."
+      ]
+    },
+    "engine": "unknown"
   }
 }

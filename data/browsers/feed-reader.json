@@ -187,5 +187,17 @@
       ]
     },
     "engine": "webkit"
+  },
+  "feedly feed fetcher": {
+    "name": "feedly Feed Fetcher",
+    "manufacturer": "feedly.com",
+    "type": "feed-reader",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Feedly"
+      ]
+    },
+    "engine": "unknown"
   }
 }
