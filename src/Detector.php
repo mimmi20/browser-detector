@@ -33,6 +33,7 @@ use function explode;
 use function get_debug_type;
 use function in_array;
 use function is_array;
+use function mb_strtolower;
 use function reset;
 use function sprintf;
 use function var_export;
@@ -248,7 +249,7 @@ final class Detector implements DetectorInterface
             $result['client'] = $browser;
         }
 
-        if (in_array($result['os']['name'], ['iOS'], true)) {
+        if (in_array(mb_strtolower($result['os']['name'] ?? ''), ['ios'], true)) {
             $engineCodename = 'webkit';
         }
 
