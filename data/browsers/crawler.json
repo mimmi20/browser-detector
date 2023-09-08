@@ -668,5 +668,27 @@
       "search": null
     },
     "engine": "unknown"
+  },
+  "webprosbot": {
+    "name": "webprosbot",
+    "manufacturer": "webpros",
+    "type": "crawler",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "webprosbot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "ez publish link validator": {
+    "name": "eZ Publish Link Validator",
+    "manufacturer": "ez-systems",
+    "type": "crawler",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
   }
 }
