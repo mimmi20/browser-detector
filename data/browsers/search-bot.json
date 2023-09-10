@@ -350,5 +350,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "360spider": {
+    "name": "360Spider",
+    "manufacturer": "qihoo",
+    "type": "search-bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "360Spider"
+      ]
+    },
+    "engine": "webkit"
   }
 }

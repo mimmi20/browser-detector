@@ -35,18 +35,6 @@
     },
     "engine": "unknown"
   },
-  "360spider": {
-    "name": "360Spider",
-    "manufacturer": "qihoo",
-    "type": "bot",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "360Spider"
-      ]
-    },
-    "engine": "webkit"
-  },
   "80legs": {
     "name": "80Legs",
     "manufacturer": "unknown",
@@ -3186,18 +3174,6 @@
     },
     "engine": null
   },
-  "hubspot-connect": {
-    "name": "HubSpot Connect",
-    "manufacturer": "hubspot-inc",
-    "type": "bot",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "HubSpot Connect"
-      ]
-    },
-    "engine": null
-  },
   "hypercrawl": {
     "name": "HyperCrawl",
     "manufacturer": "seograph",
@@ -4293,18 +4269,6 @@
     },
     "engine": "unknown"
   },
-  "mechanize": {
-    "name": "Mechanize",
-    "manufacturer": "unknown",
-    "type": "bot",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "Mechanize"
-      ]
-    },
-    "engine": "webkit"
-  },
   "mediobot": {
     "name": "Mediobot",
     "manufacturer": "unknown",
@@ -4818,18 +4782,6 @@
     "version": {
       "class": null,
       "search": null
-    },
-    "engine": "unknown"
-  },
-  "netpositive": {
-    "name": "NetPositive",
-    "manufacturer": "unknown",
-    "type": "bot",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "NetPositive"
-      ]
     },
     "engine": "unknown"
   },
@@ -5521,18 +5473,6 @@
       "class": "VersionFactory",
       "search": [
         "PostRank"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "powermarks": {
-    "name": "Powermarks",
-    "manufacturer": "kaylon-technologies",
-    "type": "bot",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "Powermarks"
       ]
     },
     "engine": "unknown"
@@ -9470,18 +9410,6 @@
     },
     "engine": "unknown"
   },
-  "gregarius": {
-    "name": "Gregarius",
-    "manufacturer": "unknown",
-    "type": "bot",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "Gregarius"
-      ]
-    },
-    "engine": "unknown"
-  },
   "magellan": {
     "name": "Magellan",
     "manufacturer": "unknown",
@@ -9500,6 +9428,18 @@
       "class": "VersionFactory",
       "search": [
         "ISSCyberRiskCrawler"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "yisouspider": {
+    "name": "YisouSpider",
+    "manufacturer": "sm.cn",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "YisouSpider"
       ]
     },
     "engine": "unknown"

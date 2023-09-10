@@ -243,5 +243,17 @@
       ]
     },
     "engine": null
+  },
+  "blitz": {
+    "name": "Blitz",
+    "manufacturer": "blitz",
+    "type": "mobile-application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Blitz"
+      ]
+    },
+    "engine": null
   }
 }

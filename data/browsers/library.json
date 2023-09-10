@@ -242,5 +242,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "mechanize": {
+    "name": "Mechanize",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Mechanize"
+      ]
+    },
+    "engine": "webkit"
   }
 }

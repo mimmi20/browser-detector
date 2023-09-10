@@ -669,6 +669,16 @@
     },
     "engine": "unknown"
   },
+  "eff do not track verifier": {
+    "name": "EFF Do Not Track Verifier",
+    "manufacturer": "electronic-frontier-foundation",
+    "type": "crawler",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
   "webprosbot": {
     "name": "webprosbot",
     "manufacturer": "webpros",
@@ -690,5 +700,17 @@
       "search": null
     },
     "engine": "unknown"
+  },
+  "hubspot-connect": {
+    "name": "HubSpot Connect",
+    "manufacturer": "hubspot-inc",
+    "type": "crawler",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "HubSpot Connect"
+      ]
+    },
+    "engine": null
   }
 }

@@ -358,7 +358,8 @@
     "version": {
       "class": "VersionFactory",
       "search": [
-        "Avast"
+        "Avast",
+        "AvastSecureBrowser"
       ]
     },
     "engine": null
@@ -801,6 +802,18 @@
       "class": "VersionFactory",
       "search": [
         "Chromium"
+      ]
+    },
+    "engine": null
+  },
+  "chromium gost": {
+    "name": "Chromium GOST",
+    "manufacturer": "crypto-pro",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Chrome"
       ]
     },
     "engine": null
@@ -4579,14 +4592,62 @@
     },
     "engine": null
   },
-  "avast secure browser": {
-    "name": "Avast Secure Browser",
-    "manufacturer": "avast-software",
+  "netpositive": {
+    "name": "NetPositive",
+    "manufacturer": "unknown",
     "type": "browser",
     "version": {
       "class": "VersionFactory",
       "search": [
-        "AvastSecureBrowser"
+        "NetPositive"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "powermarks": {
+    "name": "Powermarks",
+    "manufacturer": "kaylon-technologies",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Powermarks"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "ubrowser": {
+    "name": "UBrowser",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "UBrowser"
+      ]
+    },
+    "engine": null
+  },
+  "aol shield pro": {
+    "name": "AOL Shield Pro",
+    "manufacturer": "aol",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "AOLShield"
+      ]
+    },
+    "engine": null
+  },
+  "craving-explorer": {
+    "name": "Craving Explorer",
+    "manufacturer": "t-craft",
+    "type": "browser",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "CravingExplorer"
       ]
     },
     "engine": null
