@@ -43,5 +43,19 @@
       ]
     },
     "engine": "unknown"
+  },
+  "wordpress": {
+    "name": "WordPress",
+    "manufacturer": "wordpress",
+    "type": "service-agent",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "WordPress",
+        "WordPress\\-B\\-",
+        "WordPress\\-Do\\-P\\-"
+      ]
+    },
+    "engine": "unknown"
   }
 }

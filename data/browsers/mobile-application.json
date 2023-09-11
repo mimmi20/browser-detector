@@ -255,5 +255,17 @@
       ]
     },
     "engine": null
+  },
+  "google mobile app": {
+    "name": "Google Mobile App",
+    "manufacturer": "google",
+    "type": "mobile-application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "GoogleMobile"
+      ]
+    },
+    "engine": null
   }
 }

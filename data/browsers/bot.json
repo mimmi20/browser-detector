@@ -3848,19 +3848,6 @@
     },
     "engine": "unknown"
   },
-  "libwww": {
-    "name": "libwww",
-    "manufacturer": "unknown",
-    "type": "bot",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "libwww",
-        "libwww\\-perl"
-      ]
-    },
-    "engine": "unknown"
-  },
   "lightningquail": {
     "name": "Lightningquail",
     "manufacturer": "unknown",
@@ -4690,18 +4677,6 @@
       "class": "VersionFactory",
       "search": [
         "nagios\\-plugins"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "nagios-check-http": {
-    "name": "Nagios Check Http",
-    "manufacturer": "nagios-enterprises",
-    "type": "bot",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "check_http"
       ]
     },
     "engine": "unknown"
@@ -7694,16 +7669,6 @@
     },
     "engine": "unknown"
   },
-  "validator.nu/lv": {
-    "name": "Validator.nu/LV",
-    "manufacturer": "w3c",
-    "type": "bot",
-    "version": {
-      "class": null,
-      "search": null
-    },
-    "engine": "unknown"
-  },
   "vbulletin bot": {
     "name": "vBulletin Bot",
     "manufacturer": "vbseo",
@@ -8514,20 +8479,6 @@
     },
     "engine": "unknown"
   },
-  "wordpress": {
-    "name": "WordPress",
-    "manufacturer": "wordpress",
-    "type": "bot",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "WordPress",
-        "WordPress\\-B\\-",
-        "WordPress\\-Do\\-P\\-"
-      ]
-    },
-    "engine": "unknown"
-  },
   "woriobot": {
     "name": "woriobot",
     "manufacturer": "flipboard",
@@ -8963,8 +8914,10 @@
     "manufacturer": "yisou",
     "type": "bot",
     "version": {
-      "class": null,
-      "search": null
+      "class": "VersionFactory",
+      "search": [
+        "YisouSpider"
+      ]
     },
     "engine": "unknown"
   },
@@ -9431,18 +9384,6 @@
     },
     "engine": "unknown"
   },
-  "yisouspider": {
-    "name": "YisouSpider",
-    "manufacturer": "sm.cn",
-    "type": "bot",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "YisouSpider"
-      ]
-    },
-    "engine": "unknown"
-  },
   "unimatrix-zero": {
     "name": "Unimatrix-Zero",
     "manufacturer": "unknown",
@@ -9558,6 +9499,85 @@
       "search": [
         "websusebot"
       ]
+    },
+    "engine": "unknown"
+  },
+  "quora bot": {
+    "name": "Quora Bot",
+    "manufacturer": "quora",
+    "type": "application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Quora-Bot"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "scamadviser-external-hit": {
+    "name": "Scamadviser External Hit",
+    "manufacturer": "unknown",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "ScamadviserExternalHit"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "schober-impressums-crawler": {
+    "name": "Schober Impressumscrawler",
+    "manufacturer": "schober-information",
+    "type": "bot",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "sitelockspider": {
+    "name": "SiteLockSpider",
+    "manufacturer": "unknown",
+    "type": "bot",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "site-score-bot": {
+    "name": "SiteScoreBot",
+    "manufacturer": "unknown",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "SiteScoreBot",
+        "SiteScoreBot v"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "slack-img-proxy": {
+    "name": "Slack ImgProxy",
+    "manufacturer": "slack",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Slack-ImgProxy"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "snap url preview service": {
+    "name": "Snap URL Preview Service",
+    "manufacturer": "snap",
+    "type": "bot",
+    "version": {
+      "class": null,
+      "search": null
     },
     "engine": "unknown"
   }

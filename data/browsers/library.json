@@ -265,6 +265,55 @@
         "jsdom"
       ]
     },
-    "engine": "webkit"
+    "engine": null
+  },
+  "aiohttp": {
+    "name": "aiohttp",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "aiohttp"
+      ]
+    },
+    "engine": null
+  },
+  "libwww": {
+    "name": "libwww",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "libwww",
+        "libwww\\-perl"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "lua-resty-http": {
+    "name": "lua-resty-http",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "lua-resty-http"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "python-httpx": {
+    "name": "python-httpx",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "python-httpx"
+      ]
+    },
+    "engine": "unknown"
   }
 }

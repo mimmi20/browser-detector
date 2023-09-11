@@ -610,6 +610,18 @@
     },
     "engine": "unknown"
   },
+  "netestate impressums-crawler": {
+    "name": "netEstate Impressumscrawler",
+    "manufacturer": "net-estate",
+    "type": "crawler",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "netEstate Impressumscrawler"
+      ]
+    },
+    "engine": "unknown"
+  },
   "brightedge crawler": {
     "name": "BrightEdge Crawler",
     "manufacturer": "brightedge",
@@ -762,13 +774,25 @@
     "engine": "unknown"
   },
   "nice-crawler": {
-    "name": "unknown",
-    "manufacturer": "start.me",
+    "name": "Nicecrawler",
+    "manufacturer": "unknown",
     "type": "crawler",
     "version": {
       "class": "VersionFactory",
       "search": [
         "Nicecrawler"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "serpstatbot": {
+    "name": "serpstatbot",
+    "manufacturer": "serpstat",
+    "type": "crawler",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "serpstatbot"
       ]
     },
     "engine": "unknown"
