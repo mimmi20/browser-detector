@@ -10,7 +10,7 @@
     "/raspbian|debian.*rpi/i": "raspbian",
     "/debian/i": "debian",
     "/centos/i": "cent os linux",
-    "/cros|windows aarch64/i": "chromeos",
+    "/(?<!i)cros|windows aarch64/i": "chromeos",
     "/joli os/i": "joli os",
     "/mandriva/i": "mandriva linux",
     "/suse/i": "suse linux",

@@ -44,5 +44,18 @@
       ]
     },
     "engine": "unknown"
+  },
+  "leakix": {
+    "name": "LeakIX",
+    "manufacturer": "badaas",
+    "type": "security-checker",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "l9scan",
+        "LeakIX"
+      ]
+    },
+    "engine": null
   }
 }

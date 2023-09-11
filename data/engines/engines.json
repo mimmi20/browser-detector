@@ -49,11 +49,8 @@
     "name": "Gecko",
     "manufacturer": "mozilla-foundation",
     "version": {
-      "class": "VersionFactory",
-      "search": [
-        "rv:",
-        "Gecko"
-      ]
+      "factory": "\\BrowserDetector\\Version\\GeckoFactory",
+      "search": null
     }
   },
   "goanna": {

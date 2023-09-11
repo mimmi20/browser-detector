@@ -712,5 +712,65 @@
       ]
     },
     "engine": null
+  },
+  "semantic-scholar-bot": {
+    "name": "SemanticScholarBot",
+    "manufacturer": "allen-institute",
+    "type": "crawler",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "SemanticScholarBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "femtosearch-bot": {
+    "name": "FemtosearchBot",
+    "manufacturer": "grier forensics",
+    "type": "crawler",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "FemtosearchBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "headline bot": {
+    "name": "headline bot",
+    "manufacturer": "e.ventures",
+    "type": "crawler",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "ev-crawler"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "startme-bot": {
+    "name": "startmebot",
+    "manufacturer": "start.me",
+    "type": "crawler",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "startmebot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "nice-crawler": {
+    "name": "unknown",
+    "manufacturer": "start.me",
+    "type": "crawler",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Nicecrawler"
+      ]
+    },
+    "engine": "unknown"
   }
 }

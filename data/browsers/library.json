@@ -254,5 +254,17 @@
       ]
     },
     "engine": "webkit"
+  },
+  "jsdom": {
+    "name": "jsdom",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "jsdom"
+      ]
+    },
+    "engine": "webkit"
   }
 }

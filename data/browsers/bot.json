@@ -2842,6 +2842,18 @@
     },
     "engine": null
   },
+  "google-apps-script": {
+    "name": "Google Apps Script",
+    "manufacturer": "google",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Google-Apps-Script"
+      ]
+    },
+    "engine": null
+  },
   "google-safety": {
     "name": "Google-Safety",
     "manufacturer": "google",
@@ -9097,19 +9109,6 @@
     },
     "engine": "unknown"
   },
-  "leakix": {
-    "name": "LeakIX",
-    "manufacturer": "badaas",
-    "type": "bot",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "l9scan",
-        "LeakIX"
-      ]
-    },
-    "engine": null
-  },
   "a-little-client": {
     "name": "ALittle Client",
     "manufacturer": "unknown",
@@ -9440,6 +9439,124 @@
       "class": "VersionFactory",
       "search": [
         "YisouSpider"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "unimatrix-zero": {
+    "name": "Unimatrix-Zero",
+    "manufacturer": "unknown",
+    "type": "bot",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "dongle-emulator-bot": {
+    "name": "DongleEmulatorBot",
+    "manufacturer": "torus",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "DongleEmulatorBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "reverse-engineering-bot": {
+    "name": "ReverseEngineeringBot",
+    "manufacturer": "torus",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "ReverseEngineeringBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "decompilation-bot": {
+    "name": "DecompilationBot",
+    "manufacturer": "torus",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "DecompilationBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "torus-bot": {
+    "name": "TorusBot",
+    "manufacturer": "torus",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "TorusBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "geedo-bot": {
+    "name": "GeedoBot",
+    "manufacturer": "geedo.com",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "GeedoBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "netpeak-checker-bot": {
+    "name": "NetpeakCheckerBot",
+    "manufacturer": "netpeak",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "NetpeakCheckerBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "stract-bot": {
+    "name": "StractBot",
+    "manufacturer": "unknown",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "StractBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "well-known-bot": {
+    "name": "WellKnownBot",
+    "manufacturer": "braedon vickers",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "WellKnownBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "websuse-bot": {
+    "name": "websusebot",
+    "manufacturer": "unknown",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "websusebot"
       ]
     },
     "engine": "unknown"
