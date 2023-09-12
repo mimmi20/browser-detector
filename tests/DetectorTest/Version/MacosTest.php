@@ -37,9 +37,7 @@ final class MacosTest extends TestCase
     #[DataProvider('providerVersion')]
     public function testTestdetectVersion(string $useragent, string | null $expectedVersion): void
     {
-        $logger = $this->getMockBuilder(LoggerInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $logger = $this->createMock(LoggerInterface::class);
         $logger
             ->expects(self::never())
             ->method('debug');
@@ -139,9 +137,7 @@ final class MacosTest extends TestCase
         $exception = new NotNumericException('not numeric');
         $version   = '10.11.3-beta+2';
 
-        $versionFactory = $this->getMockBuilder(VersionFactoryInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $versionFactory = $this->createMock(VersionFactoryInterface::class);
         $versionFactory
             ->expects(self::never())
             ->method('detectVersion');
@@ -151,18 +147,14 @@ final class MacosTest extends TestCase
             ->with($version)
             ->willThrowException($exception);
 
-        $macosBuild = $this->getMockBuilder(MacosBuildInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $macosBuild = $this->createMock(MacosBuildInterface::class);
         $macosBuild
             ->expects(self::once())
             ->method('getVersion')
             ->with('15D13b')
             ->willReturn($version);
 
-        $logger = $this->getMockBuilder(LoggerInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $logger = $this->createMock(LoggerInterface::class);
         $logger
             ->expects(self::never())
             ->method('debug');
@@ -204,9 +196,7 @@ final class MacosTest extends TestCase
         $exception = new NotNumericException('not numeric');
         $version   = '10.11.3-beta+2';
 
-        $versionFactory = $this->getMockBuilder(VersionFactoryInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $versionFactory = $this->createMock(VersionFactoryInterface::class);
         $versionFactory
             ->expects(self::never())
             ->method('detectVersion');
@@ -216,18 +206,14 @@ final class MacosTest extends TestCase
             ->with($version)
             ->willThrowException($exception);
 
-        $macosBuild = $this->getMockBuilder(MacosBuildInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $macosBuild = $this->createMock(MacosBuildInterface::class);
         $macosBuild
             ->expects(self::once())
             ->method('getVersion')
             ->with('10K540')
             ->willReturn($version);
 
-        $logger = $this->getMockBuilder(LoggerInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $logger = $this->createMock(LoggerInterface::class);
         $logger
             ->expects(self::never())
             ->method('debug');
@@ -269,9 +255,7 @@ final class MacosTest extends TestCase
         $exception = new NotNumericException('not numeric');
         $version   = '10.13.0';
 
-        $versionFactory = $this->getMockBuilder(VersionFactoryInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $versionFactory = $this->createMock(VersionFactoryInterface::class);
         $versionFactory
             ->expects(self::never())
             ->method('detectVersion');
@@ -281,16 +265,12 @@ final class MacosTest extends TestCase
             ->with($version)
             ->willThrowException($exception);
 
-        $macosBuild = $this->getMockBuilder(MacosBuildInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $macosBuild = $this->createMock(MacosBuildInterface::class);
         $macosBuild
             ->expects(self::never())
             ->method('getVersion');
 
-        $logger = $this->getMockBuilder(LoggerInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $logger = $this->createMock(LoggerInterface::class);
         $logger
             ->expects(self::never())
             ->method('debug');
@@ -330,18 +310,14 @@ final class MacosTest extends TestCase
     {
         $useragent = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10102) AppleWebKit/640.3.18 (KHTML like Gecko) Version/10.0.2 Safari/640.3.18';
         $exception = new NotNumericException('not numeric');
-        $version   = $this->getMockBuilder(VersionInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $version   = $this->createMock(VersionInterface::class);
         $version
             ->expects(self::once())
             ->method('getVersion')
             ->with(VersionInterface::IGNORE_MINOR)
             ->willReturn('10102');
 
-        $versionFactory = $this->getMockBuilder(VersionFactoryInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $versionFactory = $this->createMock(VersionFactoryInterface::class);
         $versionFactory
             ->expects(self::once())
             ->method('detectVersion')
@@ -353,16 +329,12 @@ final class MacosTest extends TestCase
             ->with('10.10.2')
             ->willThrowException($exception);
 
-        $macosBuild = $this->getMockBuilder(MacosBuildInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $macosBuild = $this->createMock(MacosBuildInterface::class);
         $macosBuild
             ->expects(self::never())
             ->method('getVersion');
 
-        $logger = $this->getMockBuilder(LoggerInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $logger = $this->createMock(LoggerInterface::class);
         $logger
             ->expects(self::never())
             ->method('debug');
@@ -402,18 +374,14 @@ final class MacosTest extends TestCase
     {
         $useragent = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 1084) AppleWebKit/536.29.13 (KHTML like Gecko) Version/6.0.4 Safari/536.29.13';
         $exception = new NotNumericException('not numeric');
-        $version   = $this->getMockBuilder(VersionInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $version   = $this->createMock(VersionInterface::class);
         $version
             ->expects(self::once())
             ->method('getVersion')
             ->with(VersionInterface::IGNORE_MINOR)
             ->willReturn('1084');
 
-        $versionFactory = $this->getMockBuilder(VersionFactoryInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $versionFactory = $this->createMock(VersionFactoryInterface::class);
         $versionFactory
             ->expects(self::once())
             ->method('detectVersion')
@@ -425,16 +393,12 @@ final class MacosTest extends TestCase
             ->with('10.8.4')
             ->willThrowException($exception);
 
-        $macosBuild = $this->getMockBuilder(MacosBuildInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $macosBuild = $this->createMock(MacosBuildInterface::class);
         $macosBuild
             ->expects(self::never())
             ->method('getVersion');
 
-        $logger = $this->getMockBuilder(LoggerInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $logger = $this->createMock(LoggerInterface::class);
         $logger
             ->expects(self::never())
             ->method('debug');
@@ -474,16 +438,12 @@ final class MacosTest extends TestCase
     {
         $useragent = 'QuickTime/7.6 (qtver=7.6;cpu=IA32;os=Mac 10,5,7)';
         $exception = new NotNumericException('not numeric');
-        $version   = $this->getMockBuilder(VersionInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $version   = $this->createMock(VersionInterface::class);
         $version
             ->expects(self::never())
             ->method('getVersion');
 
-        $versionFactory = $this->getMockBuilder(VersionFactoryInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $versionFactory = $this->createMock(VersionFactoryInterface::class);
         $versionFactory
             ->expects(self::once())
             ->method('detectVersion')
@@ -493,16 +453,12 @@ final class MacosTest extends TestCase
             ->expects(self::never())
             ->method('set');
 
-        $macosBuild = $this->getMockBuilder(MacosBuildInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $macosBuild = $this->createMock(MacosBuildInterface::class);
         $macosBuild
             ->expects(self::never())
             ->method('getVersion');
 
-        $logger = $this->getMockBuilder(LoggerInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $logger = $this->createMock(LoggerInterface::class);
         $logger
             ->expects(self::never())
             ->method('debug');

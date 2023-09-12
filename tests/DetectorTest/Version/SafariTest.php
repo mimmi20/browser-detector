@@ -38,9 +38,7 @@ final class SafariTest extends TestCase
     #[DataProvider('providerVersion')]
     public function testTestdetectVersion(string $useragent, string | null $expectedVersion): void
     {
-        $logger = $this->getMockBuilder(LoggerInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $logger = $this->createMock(LoggerInterface::class);
         $logger
             ->expects(self::never())
             ->method('debug');
@@ -102,9 +100,7 @@ final class SafariTest extends TestCase
     public function testDetectVersionFail(): void
     {
         $exception = new NotNumericException('set failed');
-        $logger    = $this->getMockBuilder(LoggerInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $logger    = $this->createMock(LoggerInterface::class);
         $logger
             ->expects(self::never())
             ->method('debug');
@@ -131,18 +127,14 @@ final class SafariTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $versionFactory = $this->getMockBuilder(VersionFactoryInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $versionFactory = $this->createMock(VersionFactoryInterface::class);
         $versionFactory
             ->expects(self::once())
             ->method('set')
             ->with('4.0')
             ->willThrowException($exception);
 
-        $safariHelper = $this->getMockBuilder(SafariInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $safariHelper = $this->createMock(SafariInterface::class);
         $safariHelper
             ->expects(self::never())
             ->method('mapSafariVersion');
@@ -167,9 +159,7 @@ final class SafariTest extends TestCase
      */
     public function testDetectVersionFailSecond(): void
     {
-        $logger = $this->getMockBuilder(LoggerInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $logger = $this->createMock(LoggerInterface::class);
         $logger
             ->expects(self::never())
             ->method('debug');
@@ -196,18 +186,14 @@ final class SafariTest extends TestCase
             ->method('emergency');
 
         $mappedVersion  = new Version('2');
-        $versionFactory = $this->getMockBuilder(VersionFactoryInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $versionFactory = $this->createMock(VersionFactoryInterface::class);
         $versionFactory
             ->expects(self::once())
             ->method('set')
             ->with('4.0')
             ->willReturn($mappedVersion);
 
-        $safariHelper = $this->getMockBuilder(SafariInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $safariHelper = $this->createMock(SafariInterface::class);
         $safariHelper
             ->expects(self::once())
             ->method('mapSafariVersion')
@@ -235,9 +221,7 @@ final class SafariTest extends TestCase
     public function testDetectVersionFailThird(): void
     {
         $exception = new NotNumericException('set failed');
-        $logger    = $this->getMockBuilder(LoggerInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $logger    = $this->createMock(LoggerInterface::class);
         $logger
             ->expects(self::never())
             ->method('debug');
@@ -265,9 +249,7 @@ final class SafariTest extends TestCase
             ->method('emergency');
 
         $mappedVersionOne = new Version('2');
-        $versionFactory   = $this->getMockBuilder(VersionFactoryInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $versionFactory   = $this->createMock(VersionFactoryInterface::class);
         $matcher          = self::exactly(2);
         $versionFactory
             ->expects($matcher)
@@ -286,9 +268,7 @@ final class SafariTest extends TestCase
                 },
             );
 
-        $safariHelper = $this->getMockBuilder(SafariInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $safariHelper = $this->createMock(SafariInterface::class);
         $safariHelper
             ->expects(self::once())
             ->method('mapSafariVersion')

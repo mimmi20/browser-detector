@@ -12,11 +12,13 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Loader\Helper;
 
+use FilterIterator;
+use Iterator;
 use JsonException;
 use RecursiveDirectoryIterator;
 use RecursiveIteratorIterator;
-use RegexIterator;
 use RuntimeException;
+use SplFileInfo;
 use stdClass;
 
 use function array_key_exists;
@@ -27,6 +29,7 @@ use function is_array;
 use function is_string;
 use function json_decode;
 use function sprintf;
+use function str_replace;
 
 use const JSON_THROW_ON_ERROR;
 
@@ -50,19 +53,36 @@ final class Data implements DataInterface
         }
 
         $iterator = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($this->path));
-        $files    = new RegexIterator(
-            $iterator,
-            '/^.+\.' . $this->extension . '$/i',
-            RegexIterator::GET_MATCH,
-        );
+        $files    = new class ($iterator, $this->extension) extends FilterIterator {
+            /**
+             * @param Iterator<SplFileInfo> $iterator
+             *
+             * @throws void
+             */
+            public function __construct(Iterator $iterator, private readonly string $extension)
+            {
+                parent::__construct($iterator);
+            }
+
+            /** @throws void */
+            public function accept(): bool
+            {
+                $file = $this->getInnerIterator()->current();
+
+                assert($file instanceof SplFileInfo);
+
+                return $file->isFile() && $file->getExtension() === $this->extension;
+            }
+        };
 
         foreach ($files as $file) {
-            assert(is_array($file));
+            assert($file instanceof SplFileInfo);
 
-            $file = $file[0];
-            assert(is_string($file));
+            $pathName = $file->getPathname();
+            $filepath = str_replace('\\', '/', $pathName);
+            assert(is_string($filepath));
 
-            $content = @file_get_contents($file);
+            $content = @file_get_contents($filepath);
 
             if ($content === false) {
                 throw new RuntimeException(sprintf('could not read file "%s"', $file));
@@ -77,11 +97,13 @@ final class Data implements DataInterface
             assert(is_array($fileData) || $fileData instanceof stdClass);
 
             foreach ((array) $fileData as $key => $data) {
-                if (array_key_exists($key, $this->items)) {
+                $stringKey = (string) $key;
+
+                if (array_key_exists($stringKey, $this->items)) {
                     continue;
                 }
 
-                $this->items[(string) $key] = $data;
+                $this->items[$stringKey] = $data;
             }
         }
 

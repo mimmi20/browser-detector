@@ -38,9 +38,7 @@ final class MicrosoftInternetExplorerTest extends TestCase
     #[DataProvider('providerVersion')]
     public function testTestdetectVersion(string $useragent, string | null $expectedVersion): void
     {
-        $logger = $this->getMockBuilder(LoggerInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $logger = $this->createMock(LoggerInterface::class);
         $logger
             ->expects(self::never())
             ->method('debug');
@@ -130,9 +128,7 @@ final class MicrosoftInternetExplorerTest extends TestCase
     {
         $useragent = 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; SearchToolbar 1.2; GTB7.0)';
         $exception = new NotNumericException('set failed');
-        $logger    = $this->getMockBuilder(LoggerInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $logger    = $this->createMock(LoggerInterface::class);
         $logger
             ->expects(self::never())
             ->method('debug');
@@ -159,9 +155,7 @@ final class MicrosoftInternetExplorerTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $versionFactory = $this->getMockBuilder(VersionFactoryInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $versionFactory = $this->createMock(VersionFactoryInterface::class);
         $matcher        = self::exactly(6);
         $versionFactory
             ->expects($matcher)
@@ -177,9 +171,7 @@ final class MicrosoftInternetExplorerTest extends TestCase
                 throw $exception;
             });
 
-        $trident = $this->getMockBuilder(VersionDetectorInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $trident = $this->createMock(VersionDetectorInterface::class);
         $trident
             ->expects(self::once())
             ->method('detectVersion')
@@ -203,9 +195,7 @@ final class MicrosoftInternetExplorerTest extends TestCase
     {
         $useragent = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Siemens A/S; .NET CLR 1.0.3705; .NET CLR 1.1.4322)';
         $exception = new NotNumericException('set failed');
-        $logger    = $this->getMockBuilder(LoggerInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $logger    = $this->createMock(LoggerInterface::class);
         $logger
             ->expects(self::never())
             ->method('debug');
@@ -232,18 +222,14 @@ final class MicrosoftInternetExplorerTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $versionFactory = $this->getMockBuilder(VersionFactoryInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $versionFactory = $this->createMock(VersionFactoryInterface::class);
         $versionFactory
             ->expects(self::once())
             ->method('set')
             ->with('6.0')
             ->willThrowException($exception);
 
-        $trident = $this->getMockBuilder(VersionDetectorInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $trident = $this->createMock(VersionDetectorInterface::class);
         $trident
             ->expects(self::once())
             ->method('detectVersion')
