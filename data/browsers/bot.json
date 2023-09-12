@@ -9452,18 +9452,6 @@
     },
     "engine": "unknown"
   },
-  "quora bot": {
-    "name": "Quora Bot",
-    "manufacturer": "quora",
-    "type": "application",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "Quora-Bot"
-      ]
-    },
-    "engine": "webkit"
-  },
   "scamadviser-external-hit": {
     "name": "Scamadviser External Hit",
     "manufacturer": "unknown",
@@ -9521,9 +9509,153 @@
     },
     "engine": "unknown"
   },
-  "snap url preview service": {
-    "name": "Snap URL Preview Service",
-    "manufacturer": "snap",
+  "pocket-image-cache": {
+    "name": "PocketImageCache",
+    "manufacturer": "read-it-later",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "PocketImageCache"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "pocket-parser": {
+    "name": "PocketParser",
+    "manufacturer": "read-it-later",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "PocketParser"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "pumoxbot": {
+    "name": "Pumoxbot",
+    "manufacturer": "unknown",
+    "type": "bot",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "spiderbot": {
+    "name": "spiderbot",
+    "manufacturer": "unknown",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Spider_Bot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "vsu-search-spider": {
+    "name": "VsuSearchSpider",
+    "manufacturer": "unknown",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "VsuSearchSpider"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "you-bot": {
+    "name": "YouBot",
+    "manufacturer": "su-sea",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "YouBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "adstxtlab.com crawler": {
+    "name": "adstxtlab.com Crawler",
+    "manufacturer": "jaohawi",
+    "type": "bot",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "cortex": {
+    "name": "cortex",
+    "manufacturer": "facebook",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "cortex"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "adreview": {
+    "name": "adreview",
+    "manufacturer": "facebook",
+    "type": "bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "adreview"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "finbot": {
+    "name": "finbot",
+    "manufacturer": "finax",
+    "type": "bot",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "hokifybot": {
+    "name": "hokifyBot",
+    "manufacturer": "unknown",
+    "type": "bot",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "jaddjabot": {
+    "name": "jaddjabot",
+    "manufacturer": "unknown",
+    "type": "bot",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "onlinestreet bot": {
+    "name": "onlinestreet Bot",
+    "manufacturer": "hello-world-digital",
+    "type": "bot",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "wp_is_mobile": {
+    "name": "wp_is_mobile",
+    "manufacturer": "unknown",
     "type": "bot",
     "version": {
       "class": null,

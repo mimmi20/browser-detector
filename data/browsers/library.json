@@ -315,5 +315,30 @@
       ]
     },
     "engine": "unknown"
+  },
+  "wget": {
+    "name": "wget",
+    "manufacturer": "free-software-foundation",
+    "type": "library",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Wget",
+        "wget"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "aria2": {
+    "name": "aria2",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "aria2"
+      ]
+    },
+    "engine": "unknown"
   }
 }

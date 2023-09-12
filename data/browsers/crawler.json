@@ -808,5 +808,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "quora bot": {
+    "name": "Quora Bot",
+    "manufacturer": "quora",
+    "type": "crawler",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Quora-Bot"
+      ]
+    },
+    "engine": null
   }
 }
