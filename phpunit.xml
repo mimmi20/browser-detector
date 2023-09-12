@@ -16,7 +16,7 @@
     failOnWarning="true"
     bootstrap="vendor/autoload.php"
     enforceTimeLimit="false"
-    executionOrder="random"
+    executionOrder="default"
     resolveDependencies="true"
     colors="true"
     cacheDirectory="./.reports/.coverage-cache"

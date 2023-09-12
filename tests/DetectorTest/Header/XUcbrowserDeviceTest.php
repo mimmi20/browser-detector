@@ -1,0 +1,92 @@
+<?php
+/**
+ * This file is part of the browser-detector package.
+ *
+ * Copyright (c) 2012-2023, Thomas Mueller <mimmi20@live.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+declare(strict_types = 1);
+
+namespace BrowserDetectorTest\Header;
+
+use BrowserDetector\Header\XUcbrowserDevice;
+use PHPUnit\Framework\Attributes\DataProvider;
+use PHPUnit\Framework\ExpectationFailedException;
+use PHPUnit\Framework\TestCase;
+
+use function sprintf;
+
+final class XUcbrowserDeviceTest extends TestCase
+{
+    /** @throws ExpectationFailedException */
+    #[DataProvider('providerUa')]
+    public function testData(string $ua, bool $hasDeviceInfo): void
+    {
+        $header = new XUcbrowserDevice($ua);
+
+        self::assertSame($ua, $header->getValue(), sprintf('header mismatch for ua "%s"', $ua));
+        self::assertSame(
+            $hasDeviceInfo,
+            $header->hasDeviceCode(),
+            sprintf('device info mismatch for ua "%s"', $ua),
+        );
+        self::assertFalse($header->hasDeviceName(), sprintf('device info mismatch for ua "%s"', $ua));
+        self::assertFalse(
+            $header->hasDeviceArchitecture(),
+            sprintf('device info mismatch for ua "%s"', $ua),
+        );
+        self::assertFalse(
+            $header->hasDeviceIsMobile(),
+            sprintf('device info mismatch for ua "%s"', $ua),
+        );
+        self::assertFalse(
+            $header->hasDeviceBitness(),
+            sprintf('device info mismatch for ua "%s"', $ua),
+        );
+        self::assertFalse($header->hasClientCode(), sprintf('browser info mismatch for ua "%s"', $ua));
+        self::assertFalse(
+            $header->hasPlatformCode(),
+            sprintf('platform info mismatch for ua "%s"', $ua),
+        );
+        self::assertFalse(
+            $header->hasPlatformVersion(),
+            sprintf('platform info mismatch for ua "%s"', $ua),
+        );
+        self::assertFalse($header->hasEngineCode(), sprintf('engine info mismatch for ua "%s"', $ua));
+    }
+
+    /**
+     * @return array<int, array<int, bool|string>>
+     *
+     * @throws void
+     */
+    public static function providerUa(): array
+    {
+        return [
+            ['nokia#200', true],
+            ['nokia#C2-01', true],
+            ['samsung#-GT-C3312', true],
+            ['j2me', false],
+            ['nokia#501', true],
+            ['nokia#C7-00', true],
+            ['samsung#-GT-S3850', true],
+            ['samsung#-GT-S5250', true],
+            ['samsung#-GT-S8600', true],
+            ['NOKIA # 6120c', true],
+            ['Nokia # E7-00', true],
+            ['Jblend', false],
+            ['nokia#501s', true],
+            ['nokia#503s', true],
+            ['nokia#Asha230DualSIM', true],
+            ['samsung#-gt-s5380d', true],
+            ['samsung#-GT-S5380K', true],
+            ['samsung#-GT-S5253', true],
+            ['tcl#-C616', true],
+            ['maui e800', true],
+            ['Opera', false],
+        ];
+    }
+}

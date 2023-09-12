@@ -22,7 +22,9 @@ final class XRequestedWith implements HeaderInterface
     /** @throws void */
     public function hasClientCode(): bool
     {
-        return preg_match('/xmlhttprequest|fake/i', $this->value) !== false;
+        $match = preg_match('/xmlhttprequest|fake/i', $this->value);
+
+        return $match === 0;
     }
 
     /** @throws void */

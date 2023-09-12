@@ -87,15 +87,17 @@ final class BrowserLoader implements BrowserLoaderInterface
             '"name" property is required',
         );
         assert(
-            array_key_exists('manufacturer', $data) && (is_string(
-                $data['manufacturer'],
-            ) || $data['manufacturer'] === null),
+            array_key_exists('manufacturer', $data)
+            && (is_string($data['manufacturer']) || $data['manufacturer'] === null),
             '"manufacturer" property is required',
         );
         assert(
-            array_key_exists('version', $data) && (is_string(
-                $data['version'],
-            ) || $data['version'] === null || $data['version'] instanceof stdClass),
+            array_key_exists('version', $data)
+            && (
+                is_string($data['version'])
+                || $data['version'] === null
+                || $data['version'] instanceof stdClass
+            ),
             '"version" property is required',
         );
         assert(
