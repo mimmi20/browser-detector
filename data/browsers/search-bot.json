@@ -362,5 +362,19 @@
       ]
     },
     "engine": "webkit"
+  },
+  "linkdex bot": {
+    "name": "Linkdex Bot",
+    "manufacturer": "linkdex",
+    "type": "search-bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "linkdex\\.com",
+        "linkdex\\.com\\/v",
+        "linkdexbot"
+      ]
+    },
+    "engine": "unknown"
   }
 }

@@ -47,5 +47,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "magpie crawler": {
+    "name": "Magpie Crawler",
+    "manufacturer": "brandwatch",
+    "type": "social-media-agent",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "magpie\\-crawler"
+      ]
+    },
+    "engine": "unknown"
   }
 }

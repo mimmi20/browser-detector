@@ -3942,20 +3942,6 @@
     },
     "engine": "unknown"
   },
-  "linkdex bot": {
-    "name": "Linkdex Bot",
-    "manufacturer": "linkdex",
-    "type": "bot",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "linkdex\\.com",
-        "linkdex\\.com\\/v",
-        "linkdexbot"
-      ]
-    },
-    "engine": "unknown"
-  },
   "linklint": {
     "name": "LinkLint",
     "manufacturer": "unknown",
@@ -4177,18 +4163,6 @@
       "class": "VersionFactory",
       "search": [
         "MacInroy Privacy Auditors"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "magpie crawler": {
-    "name": "Magpie Crawler",
-    "manufacturer": "brandwatch",
-    "type": "bot",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "magpie\\-crawler"
       ]
     },
     "engine": "unknown"
@@ -7325,18 +7299,6 @@
     },
     "engine": "unknown"
   },
-  "turnitinbot": {
-    "name": "TurnitinBot",
-    "manufacturer": "iparadigms",
-    "type": "bot",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "TurnitinBot"
-      ]
-    },
-    "engine": "unknown"
-  },
   "tweetbot": {
     "name": "Tweetbot",
     "manufacturer": "unknown",
@@ -7533,18 +7495,6 @@
       "class": "VersionFactory",
       "search": [
         "UnisterTesting"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "unity web player": {
-    "name": "Unity Web Player",
-    "manufacturer": "unity-technologies",
-    "type": "bot",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "UnityPlayer"
       ]
     },
     "engine": "unknown"

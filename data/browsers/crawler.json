@@ -796,5 +796,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "turnitinbot": {
+    "name": "TurnitinBot",
+    "manufacturer": "iparadigms",
+    "type": "crawler",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "TurnitinBot"
+      ]
+    },
+    "engine": "unknown"
   }
 }

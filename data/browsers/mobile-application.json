@@ -110,6 +110,18 @@
     },
     "engine": null
   },
+  "facebook lite": {
+    "name": "Facebook Lite",
+    "manufacturer": "facebook",
+    "type": "mobile-application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "FBAV"
+      ]
+    },
+    "engine": null
+  },
   "facebook groups": {
     "name": "Facebook Groups App",
     "manufacturer": "facebook",
@@ -125,6 +137,19 @@
   },
   "facebook messenger app": {
     "name": "Facebook Messenger App",
+    "manufacturer": "facebook",
+    "type": "mobile-application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Facebook",
+        "FBAV"
+      ]
+    },
+    "engine": null
+  },
+  "facebook messenger lite": {
+    "name": "Facebook Messenger Lite",
     "manufacturer": "facebook",
     "type": "mobile-application",
     "version": {
@@ -267,5 +292,17 @@
       ]
     },
     "engine": null
+  },
+  "unity web player": {
+    "name": "Unity Web Player",
+    "manufacturer": "unity-technologies",
+    "type": "mobile-application",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "UnityPlayer"
+      ]
+    },
+    "engine": "unknown"
   }
 }
