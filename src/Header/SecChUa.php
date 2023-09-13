@@ -33,7 +33,7 @@ final class SecChUa implements HeaderInterface
     {
         $list = $this->sort();
 
-        if ($list === null) {
+        if ($list === null || $list === []) {
             return null;
         }
 
@@ -73,7 +73,7 @@ final class SecChUa implements HeaderInterface
     {
         $list = $this->sort();
 
-        if ($list === null) {
+        if ($list === null || $list === []) {
             return null;
         }
 

@@ -126,6 +126,7 @@ final class SecChUaTest extends TestCase
             ['" Not A;Brand";v="99", "Chromium";v="102", "Microsoft Edge";v="102"', 'edge mobile', '102'],
             ['" Not A;Brand";v="99", "Chromium";v="101", "Opera";v="101"', 'opera', '101'],
             ['" Not A;Brand";v="99", "Chromium";v="100", "Yandex";v="22"', 'yabrowser', '22'],
+            ['""', null, null],
         ];
     }
 }

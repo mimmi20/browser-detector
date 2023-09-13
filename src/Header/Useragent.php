@@ -208,6 +208,6 @@ final class Useragent implements HeaderInterface
             return null;
         }
 
-        return $engine['version'];
+        return $engine['version'] ?? null;
     }
 }
