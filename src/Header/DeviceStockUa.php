@@ -32,19 +32,30 @@ final class DeviceStockUa implements HeaderInterface
     /** @throws void */
     public function hasClientCode(): bool
     {
-        return (bool) preg_match('/opera mini/i', $this->value);
+        return (bool) preg_match('/opera mini|iemobile/i', $this->value);
     }
 
     /** @throws void */
-    public function getClientCode(): string
+    public function getClientCode(): string | null
     {
-        return 'opera mini';
+        $matches = [];
+
+        if (preg_match('/(?P<client>opera mini|iemobile)/i', $this->value, $matches)) {
+            $code = mb_strtolower($matches['client']);
+
+            return match ($code) {
+                'opera mini', 'iemobile' => $code,
+                default => null,
+            };
+        }
+
+        return null;
     }
 
     /** @throws void */
     public function hasClientVersion(): bool
     {
-        return (bool) preg_match('/opera mini\/[\d\.]+/i', $this->value);
+        return (bool) preg_match('/(?:opera mini|iemobile)\/[\d\.]+/i', $this->value);
     }
 
     /** @throws void */
@@ -52,7 +63,7 @@ final class DeviceStockUa implements HeaderInterface
     {
         $matches = [];
 
-        if (preg_match('/opera mini\/(?P<version>[\d\.]+)/i', $this->value, $matches)) {
+        if (preg_match('/(?:opera mini|iemobile)\/(?P<version>[\d\.]+)/i', $this->value, $matches)) {
             return $matches['version'];
         }
 
@@ -89,6 +100,7 @@ final class DeviceStockUa implements HeaderInterface
                 'iphone os' => 'ios',
                 'mtk' => 'nucleus os',
                 'windows phone os', 'windows phone' => 'windows phone',
+                'brew mp' => 'brew',
                 default => null,
             };
         }

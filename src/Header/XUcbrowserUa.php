@@ -44,13 +44,15 @@ final class XUcbrowserUa implements HeaderInterface
         $matches = [];
 
         if (
-            preg_match('/pr\((?P<browser>[^\/)]+)(?:\/[\d.]+)?\);/', $this->value, $matches)
-            && isset($matches['browser'])
+            preg_match('/pr\((?P<client>[^\/)]+)(?:\/[\d.]+)?\);/', $this->value, $matches)
+            && isset($matches['client'])
         ) {
-            switch ($matches['browser']) {
-                case 'UCBrowser':
-                    return 'ucbrowser';
-            }
+            $code = mb_strtolower($matches['client']);
+
+            return match ($code) {
+                'ucbrowser' => $code,
+                default => null,
+            };
         }
 
         return null;

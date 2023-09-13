@@ -12,6 +12,8 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Header;
 
+use function trim;
+
 final class SecChUaArch implements HeaderInterface
 {
     use HeaderTrait;
@@ -20,5 +22,17 @@ final class SecChUaArch implements HeaderInterface
     public function hasDeviceArchitecture(): bool
     {
         return true;
+    }
+
+    /** @throws void */
+    public function getDeviceArchitecture(): string | null
+    {
+        $value = trim($this->value, '"');
+
+        if ($value === '') {
+            return null;
+        }
+
+        return $value;
     }
 }

@@ -49,30 +49,87 @@ final class UseragentTest extends TestCase
             $normalizerFactory,
         );
 
-        self::assertSame($ua, $header->getValue(), sprintf('header mismatch for ua "%s"', $ua));
-        self::assertTrue($header->hasDeviceCode(), sprintf('device info mismatch for ua "%s"', $ua));
-        self::assertFalse($header->hasDeviceName(), sprintf('device info mismatch for ua "%s"', $ua));
+        self::assertSame($ua, $header->getValue(), sprintf('value mismatch for ua "%s"', $ua));
+        self::assertSame(
+            $ua,
+            $header->getNormalizedValue(),
+            sprintf('value mismatch for ua "%s"', $ua),
+        );
         self::assertFalse(
             $header->hasDeviceArchitecture(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
-        self::assertFalse(
-            $header->hasDeviceIsMobile(),
+        self::assertNull(
+            $header->getDeviceArchitecture(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
         self::assertFalse(
             $header->hasDeviceBitness(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
+        self::assertNull(
+            $header->getDeviceBitness(),
+            sprintf('device info mismatch for ua "%s"', $ua),
+        );
+        self::assertFalse(
+            $header->hasDeviceIsMobile(),
+            sprintf('device info mismatch for ua "%s"', $ua),
+        );
+        self::assertNull(
+            $header->getDeviceIsMobile(),
+            sprintf('device info mismatch for ua "%s"', $ua),
+        );
+        self::assertFalse($header->hasDeviceName(), sprintf('device info mismatch for ua "%s"', $ua));
+        self::assertNull(
+            $header->getDeviceName(),
+            sprintf('device info mismatch for ua "%s"', $ua),
+        );
+        self::assertTrue($header->hasDeviceCode(), sprintf('device info mismatch for ua "%s"', $ua));
+        self::assertNull(
+            $header->getDeviceCode(),
+            sprintf('device info mismatch for ua "%s"', $ua),
+        );
         self::assertTrue($header->hasClientCode(), sprintf('browser info mismatch for ua "%s"', $ua));
+        self::assertNull(
+            $header->getClientCode(),
+            sprintf('browser info mismatch for ua "%s"', $ua),
+        );
+        self::assertTrue(
+            $header->hasClientVersion(),
+            sprintf('browser info mismatch for ua "%s"', $ua),
+        );
+        self::assertNull(
+            $header->getClientVersion(),
+            sprintf('browser info mismatch for ua "%s"', $ua),
+        );
         self::assertTrue(
             $header->hasPlatformCode(),
+            sprintf('platform info mismatch for ua "%s"', $ua),
+        );
+        self::assertNull(
+            $header->getPlatformCode(),
             sprintf('platform info mismatch for ua "%s"', $ua),
         );
         self::assertTrue(
             $header->hasPlatformVersion(),
             sprintf('platform info mismatch for ua "%s"', $ua),
         );
+        self::assertNull(
+            $header->getPlatformVersion(),
+            sprintf('platform info mismatch for ua "%s"', $ua),
+        );
         self::assertTrue($header->hasEngineCode(), sprintf('engine info mismatch for ua "%s"', $ua));
+        self::assertNull(
+            $header->getEngineCode(),
+            sprintf('engine info mismatch for ua "%s"', $ua),
+        );
+        self::assertTrue(
+            $header->hasEngineVersion(),
+            sprintf('engine info mismatch for ua "%s"', $ua),
+        );
+        self::assertNull(
+            $header->getEngineVersion(),
+            sprintf('engine info mismatch for ua "%s"', $ua),
+        );
     }
 }

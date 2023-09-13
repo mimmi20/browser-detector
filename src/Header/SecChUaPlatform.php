@@ -12,6 +12,9 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Header;
 
+use function mb_strtolower;
+use function trim;
+
 final class SecChUaPlatform implements HeaderInterface
 {
     use HeaderTrait;
@@ -25,6 +28,19 @@ final class SecChUaPlatform implements HeaderInterface
     /** @throws void */
     public function getPlatformCode(): string | null
     {
-        return null;
+        $value = trim($this->value, '"');
+
+        if ($value === '') {
+            return null;
+        }
+
+        $code = mb_strtolower($value);
+
+        return match ($code) {
+            'android', 'windows', 'linux', 'chromeos' => $code,
+            'macos' => 'mac os x',
+            'chrome os' => 'chromeos',
+            default => null,
+        };
     }
 }

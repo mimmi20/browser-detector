@@ -12,6 +12,8 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Header;
 
+use function trim;
+
 final class SecChUaFullVersion implements HeaderInterface
 {
     use HeaderTrait;
@@ -32,5 +34,17 @@ final class SecChUaFullVersion implements HeaderInterface
     public function hasClientVersion(): bool
     {
         return true;
+    }
+
+    /** @throws void */
+    public function getClientVersion(): string | null
+    {
+        $value = trim($this->value, '"');
+
+        if ($value === '') {
+            return null;
+        }
+
+        return $value;
     }
 }

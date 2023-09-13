@@ -32,13 +32,25 @@ interface HeaderInterface
     public function hasDeviceArchitecture(): bool;
 
     /** @throws void */
+    public function getDeviceArchitecture(): string | null;
+
+    /** @throws void */
     public function hasDeviceBitness(): bool;
+
+    /** @throws void */
+    public function getDeviceBitness(): string | null;
 
     /** @throws void */
     public function hasDeviceIsMobile(): bool;
 
     /** @throws void */
+    public function getDeviceIsMobile(): bool | null;
+
+    /** @throws void */
     public function hasDeviceName(): bool;
+
+    /** @throws void */
+    public function getDeviceName(): string | null;
 
     /** @throws void */
     public function hasDeviceCode(): bool;
