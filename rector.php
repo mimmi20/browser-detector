@@ -11,13 +11,13 @@
 declare(strict_types = 1);
 
 use Rector\Config\RectorConfig;
+use Rector\DeadCode\Rector\ClassMethod\RemoveUnusedPromotedPropertyRector;
 use Rector\DeadCode\Rector\If_\RemoveAlwaysTrueIfConditionRector;
 use Rector\DeadCode\Rector\If_\RemoveDeadInstanceOfRector;
 use Rector\DeadCode\Rector\StaticCall\RemoveParentCallWithoutParentRector;
 use Rector\Php71\Rector\FuncCall\CountOnNullRector;
 use Rector\Php81\Rector\Array_\FirstClassCallableRector;
 use Rector\Php81\Rector\FuncCall\NullToStrictStringFuncCallArgRector;
-use Rector\Php81\Rector\Property\ReadOnlyPropertyRector;
 use Rector\PHPUnit\Set\PHPUnitSetList;
 use Rector\Set\ValueObject\LevelSetList;
 use Rector\Set\ValueObject\SetList;
@@ -49,8 +49,8 @@ return static function (RectorConfig $rectorConfig): void {
     );
 
     $rectorConfig->skip([
-        ReadOnlyPropertyRector::class => [
-            __DIR__ . '/src/LaminasRbacFactory.php',
+        RemoveUnusedPromotedPropertyRector::class => [
+            __DIR__ . '/src/Detector.php',
         ],
     ]);
 };
