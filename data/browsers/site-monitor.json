@@ -47,5 +47,17 @@
       ]
     },
     "engine": "gecko"
+  },
+  "nagios-check-http": {
+    "name": "Nagios Check Http",
+    "manufacturer": "nagios-enterprises",
+    "type": "site-monitor",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "check_http"
+      ]
+    },
+    "engine": "unknown"
   }
 }

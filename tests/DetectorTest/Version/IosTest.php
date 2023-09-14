@@ -38,9 +38,7 @@ final class IosTest extends TestCase
     #[DataProvider('providerVersion')]
     public function testTestdetectVersion(string $useragent, string | null $expectedVersion): void
     {
-        $logger = $this->getMockBuilder(LoggerInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $logger = $this->createMock(LoggerInterface::class);
         $logger
             ->expects(self::never())
             ->method('debug');
@@ -176,9 +174,7 @@ final class IosTest extends TestCase
         $exception = new NotFoundException('not found');
         $version   = $this->createMock(VersionInterface::class);
 
-        $versionFactory = $this->getMockBuilder(VersionFactoryInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $versionFactory = $this->createMock(VersionFactoryInterface::class);
         $versionFactory
             ->expects(self::once())
             ->method('detectVersion')
@@ -188,18 +184,14 @@ final class IosTest extends TestCase
             ->expects(self::never())
             ->method('set');
 
-        $iosBuild = $this->getMockBuilder(IosBuildInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $iosBuild = $this->createMock(IosBuildInterface::class);
         $iosBuild
             ->expects(self::once())
             ->method('getVersion')
             ->with('10B329')
             ->willThrowException($exception);
 
-        $logger = $this->getMockBuilder(LoggerInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $logger = $this->createMock(LoggerInterface::class);
         $logger
             ->expects(self::never())
             ->method('debug');
@@ -239,9 +231,7 @@ final class IosTest extends TestCase
         $useragent = 'Mozilla/5.0 (iPod; U; CPU like Mac OS X; de-de) AppleWebKit/420.1 (KHTML, like Gecko) Version/3.0 Mobile/3B48b Safari/419.3';
         $exception = new NotNumericException('not numeric');
 
-        $versionFactory = $this->getMockBuilder(VersionFactoryInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $versionFactory = $this->createMock(VersionFactoryInterface::class);
         $versionFactory
             ->expects(self::never())
             ->method('detectVersion');
@@ -251,16 +241,12 @@ final class IosTest extends TestCase
             ->with('1.0')
             ->willThrowException($exception);
 
-        $iosBuild = $this->getMockBuilder(IosBuildInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $iosBuild = $this->createMock(IosBuildInterface::class);
         $iosBuild
             ->expects(self::never())
             ->method('getVersion');
 
-        $logger = $this->getMockBuilder(LoggerInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $logger = $this->createMock(LoggerInterface::class);
         $logger
             ->expects(self::never())
             ->method('debug');
@@ -302,9 +288,7 @@ final class IosTest extends TestCase
         $exception = new NotNumericException('not numeric');
         $version   = '6.1.3';
 
-        $versionFactory = $this->getMockBuilder(VersionFactoryInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $versionFactory = $this->createMock(VersionFactoryInterface::class);
         $versionFactory
             ->expects(self::never())
             ->method('detectVersion');
@@ -314,18 +298,14 @@ final class IosTest extends TestCase
             ->with($version)
             ->willThrowException($exception);
 
-        $iosBuild = $this->getMockBuilder(IosBuildInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $iosBuild = $this->createMock(IosBuildInterface::class);
         $iosBuild
             ->expects(self::once())
             ->method('getVersion')
             ->with('12B401')
             ->willReturn($version);
 
-        $logger = $this->getMockBuilder(LoggerInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $logger = $this->createMock(LoggerInterface::class);
         $logger
             ->expects(self::never())
             ->method('debug');
@@ -367,9 +347,7 @@ final class IosTest extends TestCase
         $exception = new NotNumericException('not numeric');
         $version   = '6.1.3';
 
-        $versionFactory = $this->getMockBuilder(VersionFactoryInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $versionFactory = $this->createMock(VersionFactoryInterface::class);
         $versionFactory
             ->expects(self::never())
             ->method('detectVersion');
@@ -379,18 +357,14 @@ final class IosTest extends TestCase
             ->with($version)
             ->willThrowException($exception);
 
-        $iosBuild = $this->getMockBuilder(IosBuildInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $iosBuild = $this->createMock(IosBuildInterface::class);
         $iosBuild
             ->expects(self::once())
             ->method('getVersion')
             ->with('12D5480a')
             ->willReturn($version);
 
-        $logger = $this->getMockBuilder(LoggerInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $logger = $this->createMock(LoggerInterface::class);
         $logger
             ->expects(self::never())
             ->method('debug');
@@ -432,9 +406,7 @@ final class IosTest extends TestCase
         $exception = new NotNumericException('not numeric');
         $version   = '10.2';
 
-        $versionFactory = $this->getMockBuilder(VersionFactoryInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $versionFactory = $this->createMock(VersionFactoryInterface::class);
         $versionFactory
             ->expects(self::never())
             ->method('detectVersion');
@@ -444,16 +416,12 @@ final class IosTest extends TestCase
             ->with($version)
             ->willThrowException($exception);
 
-        $iosBuild = $this->getMockBuilder(IosBuildInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $iosBuild = $this->createMock(IosBuildInterface::class);
         $iosBuild
             ->expects(self::never())
             ->method('getVersion');
 
-        $logger = $this->getMockBuilder(LoggerInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $logger = $this->createMock(LoggerInterface::class);
         $logger
             ->expects(self::never())
             ->method('debug');
@@ -495,9 +463,7 @@ final class IosTest extends TestCase
         $exception = new NotNumericException('not numeric');
         $version   = '5.1.1';
 
-        $versionFactory = $this->getMockBuilder(VersionFactoryInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $versionFactory = $this->createMock(VersionFactoryInterface::class);
         $versionFactory
             ->expects(self::never())
             ->method('detectVersion');
@@ -507,16 +473,12 @@ final class IosTest extends TestCase
             ->with($version)
             ->willThrowException($exception);
 
-        $iosBuild = $this->getMockBuilder(IosBuildInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $iosBuild = $this->createMock(IosBuildInterface::class);
         $iosBuild
             ->expects(self::never())
             ->method('getVersion');
 
-        $logger = $this->getMockBuilder(LoggerInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $logger = $this->createMock(LoggerInterface::class);
         $logger
             ->expects(self::never())
             ->method('debug');
@@ -558,9 +520,7 @@ final class IosTest extends TestCase
         $exception = new NotNumericException('not numeric');
         $version   = '5.1.1';
 
-        $versionFactory = $this->getMockBuilder(VersionFactoryInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $versionFactory = $this->createMock(VersionFactoryInterface::class);
         $versionFactory
             ->expects(self::never())
             ->method('detectVersion');
@@ -570,18 +530,14 @@ final class IosTest extends TestCase
             ->with($version)
             ->willThrowException($exception);
 
-        $iosBuild = $this->getMockBuilder(IosBuildInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $iosBuild = $this->createMock(IosBuildInterface::class);
         $iosBuild
             ->expects(self::once())
             ->method('getVersion')
             ->with('10B329')
             ->willReturn($version);
 
-        $logger = $this->getMockBuilder(LoggerInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $logger = $this->createMock(LoggerInterface::class);
         $logger
             ->expects(self::never())
             ->method('debug');
@@ -622,9 +578,7 @@ final class IosTest extends TestCase
         $useragent = 'Mozilla/5.0 (iPad; CPU OS 8_1 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) CriOS/42.0.2311.47 Mobile Safari/600.1.4';
         $exception = new NotNumericException('not numeric');
 
-        $versionFactory = $this->getMockBuilder(VersionFactoryInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $versionFactory = $this->createMock(VersionFactoryInterface::class);
         $versionFactory
             ->expects(self::once())
             ->method('detectVersion')
@@ -634,16 +588,12 @@ final class IosTest extends TestCase
             ->expects(self::never())
             ->method('set');
 
-        $iosBuild = $this->getMockBuilder(IosBuildInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $iosBuild = $this->createMock(IosBuildInterface::class);
         $iosBuild
             ->expects(self::never())
             ->method('getVersion');
 
-        $logger = $this->getMockBuilder(LoggerInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $logger = $this->createMock(LoggerInterface::class);
         $logger
             ->expects(self::never())
             ->method('debug');
@@ -683,18 +633,14 @@ final class IosTest extends TestCase
     {
         $useragent = 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_10 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Version/8.0 Mobile Safari/600.1.4';
         $exception = new NotNumericException('not numeric');
-        $version   = $this->getMockBuilder(VersionInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $version   = $this->createMock(VersionInterface::class);
         $version
             ->expects(self::once())
             ->method('getVersion')
             ->with(VersionInterface::IGNORE_MICRO)
             ->willReturn('10.10');
 
-        $versionFactory = $this->getMockBuilder(VersionFactoryInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $versionFactory = $this->createMock(VersionFactoryInterface::class);
         $versionFactory
             ->expects(self::once())
             ->method('detectVersion')
@@ -706,16 +652,12 @@ final class IosTest extends TestCase
             ->with('8.0.0')
             ->willThrowException($exception);
 
-        $iosBuild = $this->getMockBuilder(IosBuildInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $iosBuild = $this->createMock(IosBuildInterface::class);
         $iosBuild
             ->expects(self::never())
             ->method('getVersion');
 
-        $logger = $this->getMockBuilder(LoggerInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $logger = $this->createMock(LoggerInterface::class);
         $logger
             ->expects(self::never())
             ->method('debug');

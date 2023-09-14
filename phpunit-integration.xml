@@ -20,6 +20,7 @@
     resolveDependencies="true"
     colors="true"
     cacheDirectory="./.reports/.coverage-cache"
+    columns="123"
 >
     <php>
         <ini name="error_reporting" value="-1"/>
@@ -28,8 +29,6 @@
         <ini name="assert.exception" value="On"/>
         <ini name="intl.default_locale" value="de"/>
         <ini name="intl.use_exceptions" value="1"/>
-
-        <env name="COLUMNS" value="100" force="true"/>
     </php>
 
     <source>

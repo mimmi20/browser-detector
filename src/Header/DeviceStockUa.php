@@ -32,19 +32,30 @@ final class DeviceStockUa implements HeaderInterface
     /** @throws void */
     public function hasClientCode(): bool
     {
-        return (bool) preg_match('/opera mini/i', $this->value);
+        return (bool) preg_match('/opera mini|iemobile/i', $this->value);
     }
 
     /** @throws void */
-    public function getClientCode(): string
+    public function getClientCode(): string | null
     {
-        return 'opera mini';
+        $matches = [];
+
+        if (preg_match('/(?P<client>opera mini|iemobile)/i', $this->value, $matches)) {
+            $code = mb_strtolower($matches['client']);
+
+            return match ($code) {
+                'opera mini', 'iemobile' => $code,
+                default => null,
+            };
+        }
+
+        return null;
     }
 
     /** @throws void */
     public function hasClientVersion(): bool
     {
-        return (bool) preg_match('/opera mini\/[\d\.]+/i', $this->value);
+        return (bool) preg_match('/(?:opera mini|iemobile)\/[\d\.]+/i', $this->value);
     }
 
     /** @throws void */
@@ -52,7 +63,7 @@ final class DeviceStockUa implements HeaderInterface
     {
         $matches = [];
 
-        if (preg_match('/opera mini\/(?P<version>[\d\.]+)/i', $this->value, $matches)) {
+        if (preg_match('/(?:opera mini|iemobile)\/(?P<version>[\d\.]+)/i', $this->value, $matches)) {
             return $matches['version'];
         }
 
@@ -63,7 +74,7 @@ final class DeviceStockUa implements HeaderInterface
     public function hasPlatformCode(): bool
     {
         return (bool) preg_match(
-            '/bada|android|blackberry|brew|iphone os|mre|windows phone(?: os)?|mtk/i',
+            '/bada|android|blackberry|brew(?: mp)?|iphone os|mre|windows phone(?: os)?|mtk/i',
             $this->value,
         );
     }
@@ -75,31 +86,23 @@ final class DeviceStockUa implements HeaderInterface
 
         if (
             preg_match(
-                '/(?P<platform>bada|android|blackberry|brew|iphone os|mre|windows phone(?: os)?|mtk)/i',
+                '/(?P<platform>bada|android|blackberry|brew(?: mp)?|iphone os|mre|windows phone(?: os)?|mtk)/i',
                 $this->value,
                 $matches,
             )
             && isset($matches['platform'])
         ) {
-            switch (mb_strtolower($matches['platform'])) {
-                case 'bada':
-                    return 'bada';
-                case 'android':
-                    return 'android';
-                case 'blackberry':
-                    return 'rim os';
-                case 'brew':
-                    return 'brew';
-                case 'iphone os':
-                    return 'ios';
-                case 'mre':
-                    return 'mre';
-                case 'mtk':
-                    return 'nucleus os';
-                case 'windows phone os':
-                case 'windows phone':
-                    return 'windows phone';
-            }
+            $code = mb_strtolower($matches['platform']);
+
+            return match ($code) {
+                'bada', 'android', 'brew', 'mre' => $code,
+                'blackberry' => 'rim os',
+                'iphone os' => 'ios',
+                'mtk' => 'nucleus os',
+                'windows phone os', 'windows phone' => 'windows phone',
+                'brew mp' => 'brew',
+                default => null,
+            };
         }
 
         return null;
@@ -109,7 +112,7 @@ final class DeviceStockUa implements HeaderInterface
     public function hasPlatformVersion(): bool
     {
         return (bool) preg_match(
-            '/(bada|android|blackberry\d{4}|brew|iphone os|windows phone(?: os)?)[\/ ][\d._]+/i',
+            '/(bada|android|blackberry\d{4}|brew(?: mp)?|iphone os|windows phone(?: os)?)[\/ ][\d._]+/i',
             $this->value,
         );
     }
@@ -125,7 +128,7 @@ final class DeviceStockUa implements HeaderInterface
 
         if (
             preg_match(
-                '/(?:bada|android|blackberry\d{4}|brew|iphone os|windows phone(?: os)?)[\/ ](?P<version>[\d._]+)/i',
+                '/(?:bada|android|blackberry\d{4}|brew(?: mp)?|iphone os|windows phone(?: os)?)[\/ ](?P<version>[\d._]+)/i',
                 $this->value,
                 $matches,
             )

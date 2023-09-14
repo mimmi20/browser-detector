@@ -134,5 +134,211 @@
       ]
     },
     "engine": "unknown"
+  },
+  "pycurl": {
+    "name": "PycURL",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "PycURL"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "curl php": {
+    "name": "cURL PHP",
+    "manufacturer": "team-haxx",
+    "type": "library",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Curl\\/PHP"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "pear http_request": {
+    "name": "PEAR HTTP_Request",
+    "manufacturer": "php-group",
+    "type": "library",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "HTTP_Request"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "pear http_request2": {
+    "name": "PEAR HTTP_Request2",
+    "manufacturer": "php-group",
+    "type": "library",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "HTTP_Request2"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "pecl http client": {
+    "name": "PECL::HTTP",
+    "manufacturer": "php-group",
+    "type": "library",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "PECL::HTTP"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "php": {
+    "name": "PHP",
+    "manufacturer": "php-group",
+    "type": "library",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "PHP",
+        "PHP\\-SOAP"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "got": {
+    "name": "got",
+    "manufacturer": "sindre sorhus",
+    "type": "library",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "winhttp": {
+    "name": "WinHttp",
+    "manufacturer": "microsoft",
+    "type": "library",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "WinHttpRequest",
+        "WinHttpRequest\\."
+      ]
+    },
+    "engine": "unknown"
+  },
+  "node-fetch": {
+    "name": "node-fetch",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "node\\-fetch"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "mechanize": {
+    "name": "Mechanize",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Mechanize"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "jsdom": {
+    "name": "jsdom",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "jsdom"
+      ]
+    },
+    "engine": null
+  },
+  "aiohttp": {
+    "name": "aiohttp",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "aiohttp"
+      ]
+    },
+    "engine": null
+  },
+  "libwww": {
+    "name": "libwww",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "libwww",
+        "libwww\\-perl"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "lua-resty-http": {
+    "name": "lua-resty-http",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "lua-resty-http"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "python-httpx": {
+    "name": "python-httpx",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "python-httpx"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "wget": {
+    "name": "wget",
+    "manufacturer": "free-software-foundation",
+    "type": "library",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Wget",
+        "wget"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "aria2": {
+    "name": "aria2",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "aria2"
+      ]
+    },
+    "engine": "unknown"
   }
 }

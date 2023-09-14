@@ -30,12 +30,10 @@ use function array_filter;
 use function array_key_exists;
 use function assert;
 use function explode;
-use function get_debug_type;
 use function in_array;
 use function is_array;
+use function mb_strtolower;
 use function reset;
-use function sprintf;
-use function var_export;
 
 final class Detector implements DetectorInterface
 {
@@ -80,7 +78,7 @@ final class Detector implements DetectorInterface
             $this->normalizerFactory,
         );
 
-        $request = $requestBuilder->buildRequest($this->logger, $headers);
+        $request = $requestBuilder->buildRequest($headers);
         $cacheId = $request->getHash();
 
         if ($this->cache->hasItem($cacheId)) {
@@ -154,18 +152,11 @@ final class Detector implements DetectorInterface
 
         $deviceHeader     = reset($headersWithDeviceCode);
         $platformCodename = null;
+        $deviceCodename   = null;
 
-        if (!$deviceHeader instanceof HeaderInterface) {
-            throw new UnexpectedValueException(
-                sprintf(
-                    'The %s header does not contain device information: %s',
-                    get_debug_type($deviceHeader),
-                    var_export($request->getFilteredHeaders(), true),
-                ),
-            );
+        if ($deviceHeader instanceof HeaderInterface) {
+            $deviceCodename = $deviceHeader->getDeviceCode();
         }
-
-        $deviceCodename = $deviceHeader->getDeviceCode();
 
         if ($deviceCodename !== null) {
             $parts = explode('=', $deviceCodename, 2);
@@ -248,7 +239,7 @@ final class Detector implements DetectorInterface
             $result['client'] = $browser;
         }
 
-        if (in_array($result['os']['name'], ['iOS'], true)) {
+        if (in_array(mb_strtolower($result['os']['name'] ?? ''), ['ios'], true)) {
             $engineCodename = 'webkit';
         }
 

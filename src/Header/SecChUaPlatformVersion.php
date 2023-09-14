@@ -12,6 +12,8 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Header;
 
+use function trim;
+
 final class SecChUaPlatformVersion implements HeaderInterface
 {
     use HeaderTrait;
@@ -20,5 +22,21 @@ final class SecChUaPlatformVersion implements HeaderInterface
     public function hasPlatformVersion(): bool
     {
         return true;
+    }
+
+    /**
+     * @throws void
+     *
+     * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+     */
+    public function getPlatformVersion(string | null $code = null): string | null
+    {
+        $value = trim($this->value, '"');
+
+        if ($value === '') {
+            return null;
+        }
+
+        return $value;
     }
 }

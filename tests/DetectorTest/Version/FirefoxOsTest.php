@@ -34,9 +34,7 @@ final class FirefoxOsTest extends TestCase
     #[DataProvider('providerVersion')]
     public function testTestdetectVersion(string $useragent, string | null $expectedVersion): void
     {
-        $logger = $this->getMockBuilder(LoggerInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $logger = $this->createMock(LoggerInterface::class);
         $logger
             ->expects(self::never())
             ->method('debug');
@@ -137,9 +135,7 @@ final class FirefoxOsTest extends TestCase
     {
         $useragent = 'Mozilla/5.0 (Mobile; ALCATELOneTouch6015X SVN:01004P MMS:1.1; rv:34.0) Gecko/34.0 Firefox/34.0';
         $exception = new NotNumericException('set failed');
-        $logger    = $this->getMockBuilder(LoggerInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $logger    = $this->createMock(LoggerInterface::class);
         $logger
             ->expects(self::never())
             ->method('debug');
@@ -166,9 +162,7 @@ final class FirefoxOsTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $versionFactory = $this->getMockBuilder(VersionFactoryInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $versionFactory = $this->createMock(VersionFactoryInterface::class);
         $versionFactory
             ->expects(self::never())
             ->method('detectVersion');

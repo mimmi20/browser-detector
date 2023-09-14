@@ -36,9 +36,7 @@ final class MaxthonTest extends TestCase
     #[DataProvider('providerVersion')]
     public function testTestdetectVersion(string $useragent, string | null $expectedVersion): void
     {
-        $logger = $this->getMockBuilder(LoggerInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $logger = $this->createMock(LoggerInterface::class);
         $logger
             ->expects(self::never())
             ->method('debug');
@@ -104,9 +102,7 @@ final class MaxthonTest extends TestCase
     {
         $useragent = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; MyIE2; .NET CLR 2.0.50727)';
         $exception = new NotNumericException('set failed');
-        $logger    = $this->getMockBuilder(LoggerInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $logger    = $this->createMock(LoggerInterface::class);
         $logger
             ->expects(self::never())
             ->method('debug');
@@ -133,9 +129,7 @@ final class MaxthonTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $versionFactory = $this->getMockBuilder(VersionFactoryInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $versionFactory = $this->createMock(VersionFactoryInterface::class);
         $versionFactory
             ->expects(self::once())
             ->method('set')
@@ -161,9 +155,7 @@ final class MaxthonTest extends TestCase
     {
         $useragent = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; MyIE 2.0 Beta 4; User-agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; http://bsalsa.com) )';
         $exception = new NotNumericException('set failed');
-        $logger    = $this->getMockBuilder(LoggerInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $logger    = $this->createMock(LoggerInterface::class);
         $logger
             ->expects(self::never())
             ->method('debug');
@@ -190,9 +182,7 @@ final class MaxthonTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $versionFactory = $this->getMockBuilder(VersionFactoryInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $versionFactory = $this->createMock(VersionFactoryInterface::class);
         $versionFactory
             ->expects(self::once())
             ->method('detectVersion')
@@ -225,9 +215,7 @@ final class MaxthonTest extends TestCase
     {
         $useragent = 'Mozilla/5.0 (Linux; Android 4.4.2; LIFETAB_S1033X Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Safari/537.36 MxBrowser/4.4.2.1000';
         $exception = new NotNumericException('set failed');
-        $logger    = $this->getMockBuilder(LoggerInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $logger    = $this->createMock(LoggerInterface::class);
         $logger
             ->expects(self::never())
             ->method('debug');
@@ -254,9 +242,7 @@ final class MaxthonTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $versionFactory = $this->getMockBuilder(VersionFactoryInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $versionFactory = $this->createMock(VersionFactoryInterface::class);
         $versionFactory
             ->expects(self::once())
             ->method('detectVersion')

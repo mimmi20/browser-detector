@@ -13,7 +13,6 @@ declare(strict_types = 1);
 namespace BrowserDetector;
 
 use Psr\Http\Message\MessageInterface;
-use Psr\Log\LoggerInterface;
 use UnexpectedValueException;
 
 interface RequestBuilderInterface
@@ -24,7 +23,6 @@ interface RequestBuilderInterface
      * @throws UnexpectedValueException
      */
     public function buildRequest(
-        LoggerInterface $logger,
         array | GenericRequestInterface | MessageInterface | string $request,
     ): GenericRequestInterface;
 }

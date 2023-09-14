@@ -49,10 +49,8 @@
     "name": "Gecko",
     "manufacturer": "mozilla-foundation",
     "version": {
-      "class": "VersionFactory",
-      "search": [
-        "rv:"
-      ]
+      "factory": "\\BrowserDetector\\Version\\GeckoFactory",
+      "search": null
     }
   },
   "goanna": {
@@ -186,6 +184,14 @@
         "CFNetwork",
         "Browser\\/AppleWebKit"
       ]
+    }
+  },
+  "elektra": {
+    "name": "Elektra",
+    "manufacturer": "unknown",
+    "version": {
+      "class": null,
+      "search": null
     }
   }
 }

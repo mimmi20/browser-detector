@@ -121,8 +121,8 @@ final class DeviceLoader implements DeviceLoaderInterface
         return [
             'deviceName' => $deviceName,
             'marketingName' => $marketingName,
-            'manufacturer' => $manufacturer['type'],
-            'brand' => $brand['type'],
+            'manufacturer' => $manufacturer['type'] ?? null,
+            'brand' => $brand['type'] ?? null,
             'dualOrientation' => $data['dualOrientation'] ?? null,
             'simCount' => $data['simCount'] ?? null,
             'display' => $displayData,

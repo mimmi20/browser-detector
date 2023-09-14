@@ -1,0 +1,61 @@
+{
+  "expanse": {
+    "name": "Expanse",
+    "manufacturer": "palo-alto",
+    "type": "security-checker",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "bitsightbot": {
+    "name": "BitSightBot",
+    "manufacturer": "unknown",
+    "type": "security-checker",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "BitSightBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "censysinspect": {
+    "name": "CensysInspect",
+    "manufacturer": "censys",
+    "type": "security-checker",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "CensysInspect"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "zgrab": {
+    "name": "zgrab",
+    "manufacturer": "rwth-aachen",
+    "type": "security-checker",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "zgrab"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "leakix": {
+    "name": "LeakIX",
+    "manufacturer": "badaas",
+    "type": "security-checker",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "l9scan",
+        "LeakIX"
+      ]
+    },
+    "engine": null
+  }
+}

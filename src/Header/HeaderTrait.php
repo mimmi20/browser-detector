@@ -50,9 +50,21 @@ trait HeaderTrait
     }
 
     /** @throws void */
+    public function getDeviceArchitecture(): string | null
+    {
+        return null;
+    }
+
+    /** @throws void */
     public function hasDeviceBitness(): bool
     {
         return false;
+    }
+
+    /** @throws void */
+    public function getDeviceBitness(): string | null
+    {
+        return null;
     }
 
     /** @throws void */
@@ -62,9 +74,21 @@ trait HeaderTrait
     }
 
     /** @throws void */
+    public function getDeviceIsMobile(): bool | null
+    {
+        return null;
+    }
+
+    /** @throws void */
     public function hasDeviceName(): bool
     {
         return false;
+    }
+
+    /** @throws void */
+    public function getDeviceName(): string | null
+    {
+        return null;
     }
 
     /** @throws void */

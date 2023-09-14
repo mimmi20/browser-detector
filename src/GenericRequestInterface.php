@@ -32,16 +32,4 @@ interface GenericRequestInterface
 
     /** @throws void */
     public function getHash(): string;
-
-    /** @throws void */
-    public function getBrowserUserAgent(): string;
-
-    /** @throws void */
-    public function getDeviceUserAgent(): string;
-
-    /** @throws void */
-    public function getPlatformUserAgent(): string;
-
-    /** @throws void */
-    public function getEngineUserAgent(): string;
 }

@@ -30,9 +30,7 @@ final class DetectorFactoryTest extends TestCase
      */
     public function testInvoke(): void
     {
-        $logger = $this->getMockBuilder(LoggerInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $logger = $this->createMock(LoggerInterface::class);
         $logger
             ->expects(self::never())
             ->method('info');

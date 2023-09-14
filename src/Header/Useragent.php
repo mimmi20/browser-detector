@@ -60,9 +60,15 @@ final class Useragent implements HeaderInterface
     }
 
     /** @throws void */
-    public function getDeviceCode(): string
+    public function getDeviceCode(): string | null
     {
-        return $this->deviceParser->parse($this->normalizedValue);
+        $code = $this->deviceParser->parse($this->normalizedValue);
+
+        if ($code === '') {
+            return null;
+        }
+
+        return $code;
     }
 
     /** @throws void */
@@ -75,7 +81,13 @@ final class Useragent implements HeaderInterface
     public function getClientCode(): string | null
     {
         try {
-            return $this->browserParser->parse($this->normalizedValue);
+            $code = $this->browserParser->parse($this->normalizedValue);
+
+            if ($code === '') {
+                return null;
+            }
+
+            return $code;
         } catch (NotFoundException | UnexpectedValueException) {
             // do nothing
         }
@@ -94,6 +106,10 @@ final class Useragent implements HeaderInterface
     {
         try {
             $code = $this->browserParser->parse($this->normalizedValue);
+
+            if ($code === '') {
+                return null;
+            }
         } catch (NotFoundException | UnexpectedValueException) {
             return null;
         }
@@ -104,7 +120,7 @@ final class Useragent implements HeaderInterface
             return null;
         }
 
-        return $browser['version'];
+        return $browser['version'] ?? null;
     }
 
     /** @throws void */
@@ -114,9 +130,15 @@ final class Useragent implements HeaderInterface
     }
 
     /** @throws void */
-    public function getPlatformCode(): string
+    public function getPlatformCode(): string | null
     {
-        return $this->platformParser->parse($this->normalizedValue);
+        $code = $this->platformParser->parse($this->normalizedValue);
+
+        if ($code === '') {
+            return null;
+        }
+
+        return $code;
     }
 
     /** @throws void */
@@ -130,6 +152,10 @@ final class Useragent implements HeaderInterface
     {
         if ($code === null) {
             $code = $this->platformParser->parse($this->normalizedValue);
+
+            if ($code === '') {
+                return null;
+            }
         }
 
         try {
@@ -138,7 +164,7 @@ final class Useragent implements HeaderInterface
             return null;
         }
 
-        return $platform['version'];
+        return $platform['version'] ?? null;
     }
 
     /** @throws void */
@@ -148,9 +174,15 @@ final class Useragent implements HeaderInterface
     }
 
     /** @throws void */
-    public function getEngineCode(): string
+    public function getEngineCode(): string | null
     {
-        return $this->engineParser->parse($this->normalizedValue);
+        $code = $this->engineParser->parse($this->normalizedValue);
+
+        if ($code === '') {
+            return null;
+        }
+
+        return $code;
     }
 
     /** @throws void */
@@ -164,6 +196,10 @@ final class Useragent implements HeaderInterface
     {
         if ($code === null) {
             $code = $this->engineParser->parse($this->normalizedValue);
+
+            if ($code === '') {
+                return null;
+            }
         }
 
         try {
@@ -172,6 +208,6 @@ final class Useragent implements HeaderInterface
             return null;
         }
 
-        return $engine['version'];
+        return $engine['version'] ?? null;
     }
 }

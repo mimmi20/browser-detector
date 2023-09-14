@@ -44,13 +44,15 @@ final class XUcbrowserUa implements HeaderInterface
         $matches = [];
 
         if (
-            preg_match('/pr\((?P<browser>[^\/)]+)(?:\/[\d.]+)?\);/', $this->value, $matches)
-            && isset($matches['browser'])
+            preg_match('/pr\((?P<client>[^\/)]+)(?:\/[\d.]+)?\);/', $this->value, $matches)
+            && isset($matches['client'])
         ) {
-            switch ($matches['browser']) {
-                case 'UCBrowser':
-                    return 'ucbrowser';
-            }
+            $code = mb_strtolower($matches['client']);
+
+            return match ($code) {
+                'ucbrowser' => $code,
+                default => null,
+            };
         }
 
         return null;
@@ -77,7 +79,17 @@ final class XUcbrowserUa implements HeaderInterface
     /** @throws void */
     public function hasPlatformCode(): bool
     {
-        return (bool) preg_match('/ov\([^)]+\);/', $this->value);
+        if (
+            preg_match('/pf\((?P<platform>[^)]+)\);/i', $this->value, $matches)
+            && isset($matches['platform'])
+        ) {
+            return match (mb_strtolower($matches['platform'])) {
+                'linux', 'symbian', '42', '44', 'windows', 'java' => true,
+                default => false,
+            };
+        }
+
+        return false;
     }
 
     /** @throws void */
@@ -89,14 +101,15 @@ final class XUcbrowserUa implements HeaderInterface
             preg_match('/ov\((?P<platform>[^)]+)\);/i', $this->value, $matches)
             && isset($matches['platform'])
         ) {
-            switch (mb_strtolower($matches['platform'])) {
-                case 'midp-2.0':
-                    return 'java';
-                case 's60v3':
-                    return 'symbian';
-                case 'wds 8.10':
-                    return 'windows phone';
-            }
+            $code = mb_strtolower($matches['platform']);
+
+            return match ($code) {
+                'symbian', 'java' => $code,
+                'windows' => 'windows phone',
+                '42', '44' => 'ios',
+                'linux' => 'android',
+                default => null,
+            };
         }
 
         return null;
@@ -105,7 +118,14 @@ final class XUcbrowserUa implements HeaderInterface
     /** @throws void */
     public function hasPlatformVersion(): bool
     {
-        return (bool) preg_match('/ov\((?:wds )?[\d_.]+\);/', $this->value);
+        if (
+            preg_match('/ov\((?P<version>[^)]+)\);/i', $this->value, $matches)
+            && isset($matches['version'])
+        ) {
+            return (bool) preg_match('/^(?:(wds|android) )?[\d_.]+$/i', $matches['version']);
+        }
+
+        return false;
     }
 
     /**
@@ -118,7 +138,7 @@ final class XUcbrowserUa implements HeaderInterface
         $matches = [];
 
         if (
-            preg_match('/ov\((?:wds )?(?P<version>[\d_.]+)\);/i', $this->value, $matches)
+            preg_match('/ov\((?:(wds|android) )?(?P<version>[\d_.]+)\);/i', $this->value, $matches)
             && isset($matches['version'])
         ) {
             return str_replace('_', '.', $matches['version']);

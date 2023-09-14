@@ -37,9 +37,7 @@ final class CoreMediaTest extends TestCase
     #[DataProvider('providerVersion')]
     public function testDetectVersion(string $useragent, string | null $expectedVersion): void
     {
-        $logger = $this->getMockBuilder(LoggerInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $logger = $this->createMock(LoggerInterface::class);
         $logger
             ->expects(self::never())
             ->method('debug');
@@ -104,9 +102,7 @@ final class CoreMediaTest extends TestCase
     public function testDetectVersionFail(): void
     {
         $exception = new NotNumericException('set failed');
-        $logger    = $this->getMockBuilder(LoggerInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $logger    = $this->createMock(LoggerInterface::class);
         $logger
             ->expects(self::never())
             ->method('debug');
@@ -133,9 +129,7 @@ final class CoreMediaTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $versionFactory = $this->getMockBuilder(VersionFactoryInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $versionFactory = $this->createMock(VersionFactoryInterface::class);
         $versionFactory
             ->expects(self::once())
             ->method('set')

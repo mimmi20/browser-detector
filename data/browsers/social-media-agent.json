@@ -1,0 +1,63 @@
+{
+  "linkedinbot": {
+    "name": "LinkedInBot",
+    "manufacturer": "linked-in",
+    "type": "social-media-agent",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "com\\.linkedin",
+        "LinkedInBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "twitterbot": {
+    "name": "Twitterbot",
+    "manufacturer": "twitter",
+    "type": "social-media-agent",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Twitterbot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "telegrambot": {
+    "name": "TelegramBot",
+    "manufacturer": "telegram",
+    "type": "social-media-agent",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "TelegramBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "facebookexternalhit": {
+    "name": "FacebookExternalHit",
+    "manufacturer": "facebook",
+    "type": "social-media-agent",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "facebookexternalhit"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "magpie crawler": {
+    "name": "Magpie Crawler",
+    "manufacturer": "brandwatch",
+    "type": "social-media-agent",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "magpie\\-crawler"
+      ]
+    },
+    "engine": "unknown"
+  }
+}

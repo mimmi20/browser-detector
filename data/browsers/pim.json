@@ -69,5 +69,53 @@
       ]
     },
     "engine": null
+  },
+  "outlook": {
+    "name": "Outlook",
+    "manufacturer": "microsoft",
+    "type": "pim",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "microsoft office outlook",
+        "microsoft outlook"
+      ]
+    },
+    "engine": null
+  },
+  "thunderbird": {
+    "name": "Thunderbird",
+    "manufacturer": "mozilla-foundation",
+    "type": "pim",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Thunderbird\\-Portable",
+        "Thunderbird"
+      ]
+    },
+    "engine": "gecko"
+  },
+  "apple mail": {
+    "name": "Apple Mail",
+    "manufacturer": "apple",
+    "type": "pim",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "webkit"
+  },
+  "outlook-express": {
+    "name": "Windows Live Mail",
+    "manufacturer": "microsoft",
+    "type": "pim",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Outlook-Express"
+      ]
+    },
+    "engine": "trident"
   }
 }

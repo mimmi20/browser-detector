@@ -1,0 +1,380 @@
+{
+  "bytespider": {
+    "name": "Bytespider",
+    "manufacturer": "bytedance",
+    "type": "search-bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Bytespider"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "googlebot": {
+    "name": "Google Bot",
+    "manufacturer": "google",
+    "type": "search-bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Googlebot",
+        "Googlebot v",
+        "Google"
+      ]
+    },
+    "engine": null
+  },
+  "mj12bot": {
+    "name": "MJ12bot",
+    "manufacturer": "majestic-12",
+    "type": "search-bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "MJ12bot\\/v",
+        "MJ12bot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "mojeekbot": {
+    "name": "MojeekBot",
+    "manufacturer": "mojeek",
+    "type": "search-bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "MojeekBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "neevabot": {
+    "name": "Neevabot",
+    "manufacturer": "neeva",
+    "type": "search-bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Neevabot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "netcraft survey agent": {
+    "name": "Netcraft Survey Agent",
+    "manufacturer": "netcraft",
+    "type": "search-bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "NetcraftSurveyAgent"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "seznambot": {
+    "name": "SeznamBot",
+    "manufacturer": "seznam",
+    "type": "search-bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "SeznamBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "yandexbot": {
+    "name": "YandexBot",
+    "manufacturer": "yandex",
+    "type": "search-bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "YandexBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "yandex-news": {
+    "name": "Yandex News",
+    "manufacturer": "yandex",
+    "type": "search-bot",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "yandex-favicons": {
+    "name": "Yandex Favicons Bot",
+    "manufacturer": "yandex",
+    "type": "search-bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "YandexFavicons"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "yandex-image-resizer": {
+    "name": "Yandex Image Resizer",
+    "manufacturer": "yandex",
+    "type": "search-bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "YandexImageResizer"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "yandex-images": {
+    "name": "Yandex Image Search",
+    "manufacturer": "yandex",
+    "type": "search-bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "YandexImages"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "bingbot": {
+    "name": "BingBot",
+    "manufacturer": "microsoft",
+    "type": "search-bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "bingbot",
+        "Bing",
+        "Bing for iPad",
+        "msnbot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "obot": {
+    "name": "oBot",
+    "manufacturer": "ibm",
+    "type": "search-bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "oBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "google-ads-conversions": {
+    "name": "Google Ads Conversions",
+    "manufacturer": "google",
+    "type": "search-bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Google-Ads-Conversions"
+      ]
+    },
+    "engine": null
+  },
+  "duckduck bot": {
+    "name": "DuckDuck Bot",
+    "manufacturer": "duck-duck-go",
+    "type": "search-bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "DuckDuckBot",
+        "DuckDuckBot-Https"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "duckduck favicons bot": {
+    "name": "DuckDuck Favicons Bot",
+    "manufacturer": "duck-duck-go",
+    "type": "search-bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "DuckDuckGo\\-Favicons\\-Bot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "google image search": {
+    "name": "Google Image Search",
+    "manufacturer": "google",
+    "type": "search-bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Googlebot\\-Image"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "googlebot-news": {
+    "name": "Googlebot-News",
+    "manufacturer": "google",
+    "type": "search-bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Googlebot\\-News"
+      ]
+    },
+    "engine": null
+  },
+  "googlebot-video": {
+    "name": "Googlebot-Video",
+    "manufacturer": "google",
+    "type": "search-bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Googlebot\\-Video"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "bing preview": {
+    "name": "Bing Preview",
+    "manufacturer": "microsoft",
+    "type": "search-bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "BingPreview"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "baidu image search": {
+    "name": "Baidu Image Search",
+    "manufacturer": "baidu",
+    "type": "search-bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Baiduspider-image"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "baiduspider": {
+    "name": "BaiduSpider",
+    "manufacturer": "baidu",
+    "type": "search-bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "baiduspider",
+        "Baiduspider"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "openindex-spider": {
+    "name": "OpenindexSpider",
+    "manufacturer": "openindex",
+    "type": "search-bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "OpenindexSpider"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "yacybot": {
+    "name": "YaCy Bot",
+    "manufacturer": "unknown",
+    "type": "search-bot",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "sogou web spider": {
+    "name": "Sogou Web Spider",
+    "manufacturer": "sogou",
+    "type": "search-bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Sogou web spider"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "adsbot google": {
+    "name": "AdsBot Google",
+    "manufacturer": "google",
+    "type": "search-bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "AdsBot\\-Google"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "adsbot google-mobile": {
+    "name": "AdsBot Google-Mobile",
+    "manufacturer": "google",
+    "type": "search-bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "AdsBot\\-Google\\-Mobile"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "google-inspectiontool": {
+    "name": "Google-InspectionTool",
+    "manufacturer": "google",
+    "type": "search-bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Google-InspectionTool"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "360spider": {
+    "name": "360Spider",
+    "manufacturer": "qihoo",
+    "type": "search-bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "360Spider"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "linkdex bot": {
+    "name": "Linkdex Bot",
+    "manufacturer": "linkdex",
+    "type": "search-bot",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "linkdex\\.com",
+        "linkdex\\.com\\/v",
+        "linkdexbot"
+      ]
+    },
+    "engine": "unknown"
+  }
+}

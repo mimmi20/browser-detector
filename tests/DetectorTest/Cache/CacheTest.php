@@ -34,9 +34,7 @@ final class CacheTest extends TestCase
         $version = 6012;
         $cacheId = 'version';
 
-        $adapter = $this->getMockBuilder(CacheInterface::class)
-            ->disableOriginalClone()
-            ->getMock();
+        $adapter = $this->createMock(CacheInterface::class);
         $adapter
             ->expects(self::once())
             ->method('set')
@@ -66,9 +64,7 @@ final class CacheTest extends TestCase
      */
     public function testHasNotItem(): void
     {
-        $adapter = $this->getMockBuilder(CacheInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $adapter = $this->createMock(CacheInterface::class);
         $adapter
             ->expects(self::once())
             ->method('has')
@@ -97,9 +93,7 @@ final class CacheTest extends TestCase
      */
     public function testHasNotItem2(): void
     {
-        $adapter = $this->getMockBuilder(CacheInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $adapter = $this->createMock(CacheInterface::class);
         $adapter
             ->expects(self::once())
             ->method('has')
@@ -129,9 +123,7 @@ final class CacheTest extends TestCase
      */
     public function testHasNotItem3(): void
     {
-        $adapter = $this->getMockBuilder(CacheInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $adapter = $this->createMock(CacheInterface::class);
         $adapter
             ->expects(self::once())
             ->method('has')

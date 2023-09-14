@@ -36,9 +36,7 @@ final class WindowsMobileOsTest extends TestCase
     #[DataProvider('providerVersion')]
     public function testTestdetectVersion(string $useragent, string | null $expectedVersion): void
     {
-        $logger = $this->getMockBuilder(LoggerInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $logger = $this->createMock(LoggerInterface::class);
         $logger
             ->expects(self::never())
             ->method('debug');
@@ -104,9 +102,7 @@ final class WindowsMobileOsTest extends TestCase
     {
         $useragent = 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.2) Gecko/20100222 Firefox/3.6 Kylo/0.6.1.70394';
         $exception = new NotNumericException('set failed');
-        $logger    = $this->getMockBuilder(LoggerInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $logger    = $this->createMock(LoggerInterface::class);
         $logger
             ->expects(self::never())
             ->method('debug');
@@ -133,9 +129,7 @@ final class WindowsMobileOsTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $versionFactory = $this->getMockBuilder(VersionFactoryInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $versionFactory = $this->createMock(VersionFactoryInterface::class);
         $versionFactory
             ->expects(self::once())
             ->method('set')
@@ -161,9 +155,7 @@ final class WindowsMobileOsTest extends TestCase
     {
         $useragent = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_HD2_T8585; Windows Phone 6.5)';
         $exception = new NotNumericException('set failed');
-        $logger    = $this->getMockBuilder(LoggerInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $logger    = $this->createMock(LoggerInterface::class);
         $logger
             ->expects(self::never())
             ->method('debug');
@@ -190,9 +182,7 @@ final class WindowsMobileOsTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $versionFactory = $this->getMockBuilder(VersionFactoryInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
+        $versionFactory = $this->createMock(VersionFactoryInterface::class);
         $versionFactory
             ->expects(self::once())
             ->method('detectVersion')

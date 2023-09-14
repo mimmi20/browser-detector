@@ -20,7 +20,6 @@ use BrowserDetector\Parser\PlatformParserInterface;
 use Laminas\Diactoros\HeaderSecurity;
 use Laminas\Diactoros\ServerRequestFactory;
 use Psr\Http\Message\MessageInterface;
-use Psr\Log\LoggerInterface;
 use UaNormalizer\NormalizerFactory;
 
 use function array_change_key_case;
@@ -53,28 +52,19 @@ final class RequestBuilder implements RequestBuilderInterface
      * @throws void
      */
     public function buildRequest(
-        LoggerInterface $logger,
         array | GenericRequestInterface | MessageInterface | string $request,
     ): GenericRequestInterface {
         if ($request instanceof GenericRequestInterface) {
-            $logger->debug('request object used as is');
-
             return $request;
         }
 
         if ($request instanceof MessageInterface) {
-            $logger->debug('request object created from PSR-7 http message');
-
             return $this->createRequestFromPsr7Message($request);
         }
 
         if (is_array($request)) {
-            $logger->debug('request object created from array');
-
             return $this->createRequestFromArray($request);
         }
-
-        $logger->debug('request object created from string');
 
         return $this->createRequestFromString($request);
     }

@@ -21,4 +21,10 @@ final class SecChUaMobile implements HeaderInterface
     {
         return true;
     }
+
+    /** @throws void */
+    public function getDeviceIsMobile(): bool
+    {
+        return $this->value === '1' || $this->value === '?1' || $this->value === '"?1"';
+    }
 }

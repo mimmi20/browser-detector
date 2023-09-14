@@ -1,0 +1,81 @@
+{
+  "chrome privacy preserving prefetch proxy": {
+    "name": "Chrome Privacy Preserving Prefetch Proxy",
+    "manufacturer": "unknown",
+    "type": "service-agent",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "skypeuripreview": {
+    "name": "SkypeUriPreview",
+    "manufacturer": "microsoft",
+    "type": "service-agent",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "SkypeUriPreview",
+        "Preview"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "wordpress.com mshots": {
+    "name": "WordPress.com mShots",
+    "manufacturer": "microsoft",
+    "type": "service-agent",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "discordbot": {
+    "name": "Discordbot",
+    "manufacturer": "discord",
+    "type": "service-agent",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "Discordbot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "wordpress": {
+    "name": "WordPress",
+    "manufacturer": "wordpress",
+    "type": "service-agent",
+    "version": {
+      "class": "VersionFactory",
+      "search": [
+        "WordPress",
+        "WordPress\\-B\\-",
+        "WordPress\\-Do\\-P\\-"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "snap url preview service": {
+    "name": "Snap URL Preview Service",
+    "manufacturer": "snap",
+    "type": "service-agent",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "yahoomail-proxy": {
+    "name": "YahooMail Proxy",
+    "manufacturer": "yahoo",
+    "type": "service-agent",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  }
+}

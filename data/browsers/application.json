@@ -1,16 +1,4 @@
 {
-  "1password": {
-    "name": "1Password",
-    "manufacturer": "agile-bits",
-    "type": "application",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "1Password"
-      ]
-    },
-    "engine": "webkit"
-  },
   "1passwordthumbs": {
     "name": "1PasswordThumbs",
     "manufacturer": "agile-bits",
@@ -110,10 +98,12 @@
     "manufacturer": "aol",
     "type": "application",
     "version": {
-      "class": null,
-      "search": null
+      "class": "VersionFactory",
+      "search": [
+        "ADG"
+      ]
     },
-    "engine": "trident"
+    "engine": null
   },
   "appcent": {
     "name": "Appcent",
@@ -159,30 +149,6 @@
       "class": "VersionFactory",
       "search": [
         "Atom"
-      ]
-    },
-    "engine": null
-  },
-  "baidu box app": {
-    "name": "Baidu Box App",
-    "manufacturer": "baidu",
-    "type": "application",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "baiduboxapp"
-      ]
-    },
-    "engine": null
-  },
-  "baidu box app lite": {
-    "name": "Baidu Box App Lite",
-    "manufacturer": "baidu",
-    "type": "application",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "lite baiduboxapp"
       ]
     },
     "engine": null
@@ -460,45 +426,6 @@
     },
     "engine": "unknown"
   },
-  "facebook app": {
-    "name": "Facebook App",
-    "manufacturer": "facebook",
-    "type": "application",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "FBAV",
-        "facebookexternalhit"
-      ]
-    },
-    "engine": null
-  },
-  "facebook groups": {
-    "name": "Facebook Groups App",
-    "manufacturer": "facebook",
-    "type": "application",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "Facebook",
-        "FBAV"
-      ]
-    },
-    "engine": null
-  },
-  "facebook messenger app": {
-    "name": "Facebook Messenger App",
-    "manufacturer": "facebook",
-    "type": "application",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "Facebook",
-        "FBAV"
-      ]
-    },
-    "engine": null
-  },
   "fastbrowser": {
     "name": "FastBrowser",
     "manufacturer": "unknown",
@@ -522,18 +449,6 @@
       ]
     },
     "engine": null
-  },
-  "flipboard app": {
-    "name": "Flipboard App",
-    "manufacturer": "flipboard",
-    "type": "application",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "Flipboard"
-      ]
-    },
-    "engine": "webkit"
   },
   "flixster app": {
     "name": "Flixster App",
@@ -571,18 +486,6 @@
     },
     "engine": "unknown"
   },
-  "hi-search": {
-    "name": "HiSearch",
-    "manufacturer": "huawei",
-    "type": "application",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "HiSearch"
-      ]
-    },
-    "engine": null
-  },
   "goodreader": {
     "name": "GoodReader",
     "manufacturer": "unknown",
@@ -594,31 +497,6 @@
       ]
     },
     "engine": "webkit"
-  },
-  "google app": {
-    "name": "Google App",
-    "manufacturer": "google",
-    "type": "application",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "GSA",
-        "GoogleApp"
-      ]
-    },
-    "engine": null
-  },
-  "google mobile app": {
-    "name": "Google Mobile App",
-    "manufacturer": "google",
-    "type": "application",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "GoogleMobile"
-      ]
-    },
-    "engine": null
   },
   "google search lite": {
     "name": "Google Go",
@@ -668,18 +546,6 @@
       "class": "VersionFactory",
       "search": [
         "icatcher"
-      ]
-    },
-    "engine": null
-  },
-  "instagram app": {
-    "name": "Instagram App",
-    "manufacturer": "facebook",
-    "type": "application",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "Instagram"
       ]
     },
     "engine": null
@@ -763,18 +629,6 @@
     },
     "engine": "unknown"
   },
-  "keeper": {
-    "name": "Keeper Password Manager",
-    "manufacturer": "keeper",
-    "type": "application",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "Keeper"
-      ]
-    },
-    "engine": "unknown"
-  },
   "kioclient": {
     "name": "kioclient",
     "manufacturer": "kde",
@@ -795,19 +649,6 @@
       "class": "VersionFactory",
       "search": [
         "LibreOffice"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "linkedin-app": {
-    "name": "LinkedIn",
-    "manufacturer": "linked-in",
-    "type": "application",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "LinkedInApp",
-        "\\[LinkedInApp\\]"
       ]
     },
     "engine": "unknown"
@@ -1366,18 +1207,6 @@
     },
     "engine": "webkit"
   },
-  "snapchat app": {
-    "name": "Snapchat",
-    "manufacturer": "snap",
-    "type": "application",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "Snapchat"
-      ]
-    },
-    "engine": "webkit"
-  },
   "sogou-search": {
     "name": "SogouSearch App",
     "manufacturer": "sogou",
@@ -1636,18 +1465,6 @@
     },
     "engine": "unknown"
   },
-  "wechat app": {
-    "name": "WeChat App",
-    "manufacturer": "tencent",
-    "type": "application",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "MicroMessenger"
-      ]
-    },
-    "engine": null
-  },
   "weibo app": {
     "name": "Weibo App",
     "manufacturer": "sina-weibo",
@@ -1655,18 +1472,6 @@
     "version": {
       "class": null,
       "search": null
-    },
-    "engine": null
-  },
-  "whatsapp": {
-    "name": "WhatsApp",
-    "manufacturer": "unknown",
-    "type": "application",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "WhatsApp"
-      ]
     },
     "engine": null
   },
@@ -1742,18 +1547,6 @@
       ]
     },
     "engine": "webkit"
-  },
-  "xing app": {
-    "name": "XING App",
-    "manufacturer": "xing",
-    "type": "application",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "XING"
-      ]
-    },
-    "engine": null
   },
   "yahoo finance app": {
     "name": "Yahoo Finance App",
@@ -1891,18 +1684,6 @@
     "version": {
       "class": null,
       "search": null
-    },
-    "engine": null
-  },
-  "kakaotalk": {
-    "name": "KAKAOTALK",
-    "manufacturer": "kakao",
-    "type": "application",
-    "version": {
-      "class": "VersionFactory",
-      "search": [
-        "KAKAOTALK"
-      ]
     },
     "engine": null
   }

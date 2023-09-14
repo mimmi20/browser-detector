@@ -12,6 +12,8 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Header;
 
+use function trim;
+
 final class SecChUaBitness implements HeaderInterface
 {
     use HeaderTrait;
@@ -20,5 +22,17 @@ final class SecChUaBitness implements HeaderInterface
     public function hasDeviceBitness(): bool
     {
         return true;
+    }
+
+    /** @throws void */
+    public function getDeviceBitness(): string | null
+    {
+        $value = trim($this->value, '"');
+
+        if ($value === '') {
+            return null;
+        }
+
+        return $value;
     }
 }
