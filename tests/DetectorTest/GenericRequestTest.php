@@ -128,11 +128,12 @@ final class GenericRequestTest extends TestCase
     public function testToarraySimple(): void
     {
         $userAgent = 'testUA';
-        $headers   = [Constants::HEADER_HTTP_USERAGENT => $userAgent];
+        $headers   = [Constants::HEADER_HTTP_USERAGENT => $userAgent, 'HTTP_X_TEST' => 'test', 'HTTP_X_TEST_2' => ''];
 
         $header = $this->createMock(HeaderInterface::class);
-        $header->expects(self::never())
-            ->method('getValue');
+        $header->expects(self::once())
+            ->method('getValue')
+            ->willReturn($userAgent);
         $header->expects(self::never())
             ->method('hasPlatformCode');
         $header->expects(self::never())
@@ -152,9 +153,13 @@ final class GenericRequestTest extends TestCase
 
         assert($loader instanceof HeaderLoaderInterface);
         $original = new GenericRequest(ServerRequestFactory::fromGlobals($headers), $loader);
-        $array    = $original->getHeaders();
 
-        self::assertSame([Constants::HEADER_USERAGENT => $userAgent], $array);
+        self::assertSame(
+            [Constants::HEADER_USERAGENT => $userAgent, 'x-test' => 'test'],
+            $original->getHeaders(),
+        );
+        self::assertSame([Constants::HEADER_USERAGENT => $header], $original->getFilteredHeaders());
+        self::assertSame('65f857531eabdc37d27f0bce4f03f36863cf88e7', $original->getHash());
     }
 
     /** @throws Exception */
@@ -171,8 +176,9 @@ final class GenericRequestTest extends TestCase
         ];
 
         $header1 = $this->createMock(HeaderInterface::class);
-        $header1->expects(self::never())
-            ->method('getValue');
+        $header1->expects(self::once())
+            ->method('getValue')
+            ->willReturn($browserUa);
         $header1->expects(self::never())
             ->method('hasPlatformCode');
         $header1->expects(self::never())
@@ -181,8 +187,9 @@ final class GenericRequestTest extends TestCase
             ->method('hasDeviceCode');
 
         $header2 = $this->createMock(HeaderInterface::class);
-        $header2->expects(self::never())
-            ->method('getValue');
+        $header2->expects(self::once())
+            ->method('getValue')
+            ->willReturn($deviceUa);
         $header2->expects(self::never())
             ->method('hasPlatformCode');
         $header2->expects(self::never())
@@ -191,8 +198,9 @@ final class GenericRequestTest extends TestCase
             ->method('hasDeviceCode');
 
         $header3 = $this->createMock(HeaderInterface::class);
-        $header3->expects(self::never())
-            ->method('getValue');
+        $header3->expects(self::once())
+            ->method('getValue')
+            ->willReturn($userAgent);
         $header3->expects(self::never())
             ->method('hasPlatformCode');
         $header3->expects(self::never())
@@ -239,6 +247,7 @@ final class GenericRequestTest extends TestCase
         $resultHeaders = $original->getFilteredHeaders();
 
         self::assertSame($expectedHeaders, $resultHeaders);
+        self::assertSame('230c34f734fa2f80c81be71068dd4ccad2dc0ff2', $original->getHash());
     }
 
     /** @throws Exception */
@@ -274,6 +283,7 @@ final class GenericRequestTest extends TestCase
         $resultHeaders = $original->getFilteredHeaders();
 
         self::assertSame($expectedHeaders, $resultHeaders);
+        self::assertSame('8739602554c7f3241958e3cc9b57fdecb474d508', $original->getHash());
     }
 
     /** @throws Exception */
@@ -291,8 +301,9 @@ final class GenericRequestTest extends TestCase
         ];
 
         $header1 = $this->createMock(HeaderInterface::class);
-        $header1->expects(self::never())
-            ->method('getValue');
+        $header1->expects(self::once())
+            ->method('getValue')
+            ->willReturn($browserUa);
         $header1->expects(self::never())
             ->method('hasPlatformCode');
         $header1->expects(self::never())
@@ -301,8 +312,9 @@ final class GenericRequestTest extends TestCase
             ->method('hasDeviceCode');
 
         $header2 = $this->createMock(HeaderInterface::class);
-        $header2->expects(self::never())
-            ->method('getValue');
+        $header2->expects(self::once())
+            ->method('getValue')
+            ->willReturn($userAgent);
         $header2->expects(self::never())
             ->method('hasPlatformCode');
         $header2->expects(self::never())
@@ -348,6 +360,7 @@ final class GenericRequestTest extends TestCase
         $resultHeaders = $original->getFilteredHeaders();
 
         self::assertSame($expectedHeaders, $resultHeaders);
+        self::assertSame('f7191df756b36dcfd684d6976dbbebb180da9410', $original->getHash());
     }
 
     /** @throws Exception */
@@ -366,8 +379,9 @@ final class GenericRequestTest extends TestCase
         ];
 
         $header1 = $this->createMock(HeaderInterface::class);
-        $header1->expects(self::never())
-            ->method('getValue');
+        $header1->expects(self::once())
+            ->method('getValue')
+            ->willReturn($browserUa);
         $header1->expects(self::never())
             ->method('hasPlatformCode');
         $header1->expects(self::never())
@@ -376,8 +390,9 @@ final class GenericRequestTest extends TestCase
             ->method('hasDeviceCode');
 
         $header2 = $this->createMock(HeaderInterface::class);
-        $header2->expects(self::never())
-            ->method('getValue');
+        $header2->expects(self::once())
+            ->method('getValue')
+            ->willReturn($userAgent);
         $header2->expects(self::never())
             ->method('hasPlatformCode');
         $header2->expects(self::never())
@@ -450,5 +465,6 @@ final class GenericRequestTest extends TestCase
         $resultHeaders = $original->getFilteredHeaders();
 
         self::assertSame($expectedHeaders, $resultHeaders);
+        self::assertSame('f7191df756b36dcfd684d6976dbbebb180da9410', $original->getHash());
     }
 }

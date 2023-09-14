@@ -12,7 +12,8 @@ declare(strict_types = 1);
 
 namespace BrowserDetectorTest;
 
-use BrowserDetector\GenericRequest;
+use BrowserDetector\GenericRequestInterface;
+use BrowserDetector\Header\HeaderInterface;
 use BrowserDetector\Parser\BrowserParserInterface;
 use BrowserDetector\Parser\DeviceParserInterface;
 use BrowserDetector\Parser\EngineParserInterface;
@@ -33,7 +34,7 @@ final class RequestBuilderTest extends TestCase
      * @throws ExpectationFailedException
      * @throws Exception
      */
-    public function testGetBrowserFromUaString(): void
+    public function testBuildRequestFromUaString(): void
     {
         $useragent = 'testagent';
 
@@ -53,15 +54,15 @@ final class RequestBuilderTest extends TestCase
 
         $result = $object->buildRequest($useragent);
         assert(
-            $result instanceof GenericRequest,
+            $result instanceof GenericRequestInterface,
             sprintf(
                 '$result should be an instance of %s, but is %s',
-                GenericRequest::class,
+                GenericRequestInterface::class,
                 $result::class,
             ),
         );
 
-        self::assertInstanceOf(GenericRequest::class, $result);
+        self::assertInstanceOf(GenericRequestInterface::class, $result);
         self::assertSame(['user-agent' => $useragent], $result->getHeaders());
     }
 
@@ -69,7 +70,7 @@ final class RequestBuilderTest extends TestCase
      * @throws ExpectationFailedException
      * @throws Exception
      */
-    public function testGetBrowserFromHeaderArray(): void
+    public function testBuildRequestFromHeaderArray(): void
     {
         $useragent = 'testagent';
 
@@ -91,15 +92,15 @@ final class RequestBuilderTest extends TestCase
             ['user-agent' => $useragent, 1 => $useragent . "\r" . $useragent, 'x-test' => $useragent . "\r\n" . $useragent],
         );
         assert(
-            $result instanceof GenericRequest,
+            $result instanceof GenericRequestInterface,
             sprintf(
                 '$result should be an instance of %s, but is %s',
-                GenericRequest::class,
+                GenericRequestInterface::class,
                 $result::class,
             ),
         );
 
-        self::assertInstanceOf(GenericRequest::class, $result);
+        self::assertInstanceOf(GenericRequestInterface::class, $result);
         self::assertSame(
             ['user-agent' => $useragent, 'x-test' => $useragent . '-' . $useragent],
             $result->getHeaders(),
@@ -110,7 +111,7 @@ final class RequestBuilderTest extends TestCase
      * @throws ExpectationFailedException
      * @throws Exception
      */
-    public function testGetBrowserFromMessage(): void
+    public function testBuildRequestFromMessage(): void
     {
         $useragent = 'testagent';
 
@@ -134,18 +135,79 @@ final class RequestBuilderTest extends TestCase
 
         $result = $object->buildRequest($message);
         assert(
-            $result instanceof GenericRequest,
+            $result instanceof GenericRequestInterface,
             sprintf(
                 '$result should be an instance of %s, but is %s',
-                GenericRequest::class,
+                GenericRequestInterface::class,
                 $result::class,
             ),
         );
 
-        self::assertInstanceOf(GenericRequest::class, $result);
+        self::assertInstanceOf(GenericRequestInterface::class, $result);
         self::assertSame(
             ['user-agent' => $useragent, 'x-test' => $useragent . ' ' . $useragent],
             $result->getHeaders(),
         );
+    }
+
+    /**
+     * @throws ExpectationFailedException
+     * @throws Exception
+     */
+    public function testBuildRequestFromRequest(): void
+    {
+        $deviceParser      = $this->createMock(DeviceParserInterface::class);
+        $platformParser    = $this->createMock(PlatformParserInterface::class);
+        $browserParser     = $this->createMock(BrowserParserInterface::class);
+        $engineParser      = $this->createMock(EngineParserInterface::class);
+        $normalizerFactory = new NormalizerFactory();
+
+        $object = new RequestBuilder(
+            $deviceParser,
+            $platformParser,
+            $browserParser,
+            $engineParser,
+            $normalizerFactory,
+        );
+
+        $request = new class () implements GenericRequestInterface {
+            /**
+             * @return array<non-empty-string, non-empty-string>
+             *
+             * @throws void
+             */
+            public function getHeaders(): array
+            {
+                return [];
+            }
+
+            /**
+             * @return array<non-empty-string, HeaderInterface>
+             *
+             * @throws void
+             */
+            public function getFilteredHeaders(): array
+            {
+                return [];
+            }
+
+            /** @throws void */
+            public function getHash(): string
+            {
+                return '';
+            }
+        };
+
+        $result = $object->buildRequest($request);
+        assert(
+            $result instanceof GenericRequestInterface,
+            sprintf(
+                '$result should be an instance of %s, but is %s',
+                GenericRequestInterface::class,
+                $result::class,
+            ),
+        );
+
+        self::assertSame($request, $result);
     }
 }
