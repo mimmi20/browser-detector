@@ -118,36 +118,6 @@ final class GenericRequest implements GenericRequestInterface
     }
 
     /** @throws void */
-    public function getBrowserUserAgent(): string
-    {
-        return '';
-    }
-
-    /** @throws void */
-    public function getDeviceUserAgent(): string
-    {
-        foreach ($this->filteredHeaders as $header) {
-            if ($header->hasDeviceCode()) {
-                return $header->getValue();
-            }
-        }
-
-        return '';
-    }
-
-    /** @throws void */
-    public function getPlatformUserAgent(): string
-    {
-        return '';
-    }
-
-    /** @throws void */
-    public function getEngineUserAgent(): string
-    {
-        return '';
-    }
-
-    /** @throws void */
     private function filterHeaders(): void
     {
         $headers  = $this->headers;
