@@ -78,7 +78,7 @@ final class Detector implements DetectorInterface
             $this->normalizerFactory,
         );
 
-        $request = $requestBuilder->buildRequest($this->logger, $headers);
+        $request = $requestBuilder->buildRequest($headers);
         $cacheId = $request->getHash();
 
         if ($this->cache->hasItem($cacheId)) {
