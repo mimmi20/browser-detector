@@ -13,11 +13,15 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest\Loader\Helper;
 
 use BrowserDetector\Loader\Helper\Data;
+use InvalidArgumentException;
 use org\bovigo\vfs\vfsStream;
+use org\bovigo\vfs\vfsStreamWrapper;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use RuntimeException;
+
+use function sprintf;
 
 final class DataTest extends TestCase
 {
@@ -37,6 +41,7 @@ final class DataTest extends TestCase
         $this->expectException(RuntimeException::class);
         $this->expectExceptionMessage('file "vfs://root/invalid/bot.json" contains invalid json');
         $this->expectExceptionCode(0);
+
         $object();
     }
 
@@ -109,5 +114,39 @@ final class DataTest extends TestCase
 
         self::assertTrue($object->hasItem('key3'));
         self::assertSame('value3', $object->getItem('key3'));
+    }
+
+    /**
+     * @throws ExpectationFailedException
+     * @throws Exception
+     * @throws InvalidArgumentException
+     */
+    public function testInvokeSuccess3(): void
+    {
+        vfsStream::setup(self::DATA_PATH);
+
+        $baseDir = vfsStreamWrapper::getRoot();
+
+        $dir = vfsStream::newDirectory('valid');
+        $baseDir->addChild($dir);
+
+        $file1 = vfsStream::newFile('tool.json', 0001);
+        $file1->withContent('{"rules": "abc"}');
+
+        $file2 = vfsStream::newFile('tool2.json', 0001);
+        $file2->withContent('{"rules": "abc2", "key3": "value3"}');
+
+        $dir->addChild($file1);
+        $dir->addChild($file2);
+
+        $object = new Data($dir->url(), 'json');
+
+        self::assertFalse($object->isInitialized());
+
+        $this->expectException(RuntimeException::class);
+        $this->expectExceptionCode(0);
+        $this->expectExceptionMessage(sprintf('could not read file "%s"', $file1->url()));
+
+        $object();
     }
 }

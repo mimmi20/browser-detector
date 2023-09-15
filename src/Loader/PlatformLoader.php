@@ -14,7 +14,7 @@ namespace BrowserDetector\Loader;
 
 use BrowserDetector\Bits\Os;
 use BrowserDetector\Loader\Helper\DataInterface;
-use BrowserDetector\Version\VersionFactory;
+use BrowserDetector\Version\VersionFactoryInterface;
 use BrowserDetector\Version\VersionInterface;
 use Psr\Log\LoggerInterface;
 use stdClass;
@@ -35,8 +35,9 @@ final class PlatformLoader implements PlatformLoaderInterface
         private readonly LoggerInterface $logger,
         private readonly DataInterface $initData,
         private readonly CompanyLoaderInterface $companyLoader,
+        VersionFactoryInterface $versionFactory,
     ) {
-        $this->versionFactory = new VersionFactory();
+        $this->versionFactory = $versionFactory;
 
         $initData();
     }
@@ -75,7 +76,7 @@ final class PlatformLoader implements PlatformLoaderInterface
      * @throws NotFoundException
      * @throws UnexpectedValueException
      */
-    public function fromArray(array $data, string $useragent): array
+    private function fromArray(array $data, string $useragent): array
     {
         assert(array_key_exists('name', $data), '"name" property is required');
         assert(array_key_exists('marketingName', $data), '"marketingName" property is required');

@@ -17,6 +17,7 @@ use BrowserDetector\Loader\EngineLoader;
 use BrowserDetector\Loader\EngineLoaderInterface;
 use BrowserDetector\Loader\Helper\Data;
 use BrowserDetector\Parser\Helper\RulefileParser;
+use BrowserDetector\Version\VersionFactory;
 use Psr\Log\LoggerInterface;
 
 final class EngineParserFactory implements EngineParserFactoryInterface
@@ -43,6 +44,7 @@ final class EngineParserFactory implements EngineParserFactoryInterface
                 $this->logger,
                 new Data(EngineLoader::DATA_PATH, 'json'),
                 $this->companyLoader,
+                new VersionFactory(),
             );
         }
 

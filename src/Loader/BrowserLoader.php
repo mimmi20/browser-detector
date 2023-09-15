@@ -14,10 +14,10 @@ namespace BrowserDetector\Loader;
 
 use BrowserDetector\Bits\Browser;
 use BrowserDetector\Loader\Helper\DataInterface;
-use BrowserDetector\Version\VersionFactory;
+use BrowserDetector\Version\VersionFactoryInterface;
 use Psr\Log\LoggerInterface;
 use stdClass;
-use UaBrowserType\TypeLoader;
+use UaBrowserType\TypeLoaderInterface;
 use UaBrowserType\Unknown;
 use UnexpectedValueException;
 
@@ -37,8 +37,10 @@ final class BrowserLoader implements BrowserLoaderInterface
         private readonly LoggerInterface $logger,
         private readonly DataInterface $initData,
         private readonly CompanyLoaderInterface $companyLoader,
+        private readonly TypeLoaderInterface $typeLoader,
+        VersionFactoryInterface $versionFactory,
     ) {
-        $this->versionFactory = new VersionFactory();
+        $this->versionFactory = $versionFactory;
 
         $initData();
     }
@@ -79,9 +81,8 @@ final class BrowserLoader implements BrowserLoaderInterface
      *
      * @throws UnexpectedValueException
      */
-    public function fromArray(array $data, string $useragent = ''): array
+    private function fromArray(array $data, string $useragent = ''): array
     {
-        // var_dump($data);
         assert(
             array_key_exists('name', $data) && (is_string($data['name']) || $data['name'] === null),
             '"name" property is required',
@@ -120,7 +121,7 @@ final class BrowserLoader implements BrowserLoaderInterface
 
         if ($data['type'] !== null) {
             try {
-                $type = (new TypeLoader())->load($data['type']);
+                $type = $this->typeLoader->load($data['type']);
             } catch (\UaBrowserType\NotFoundException $e) {
                 $this->logger->info($e);
             }

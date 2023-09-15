@@ -13,7 +13,7 @@ declare(strict_types = 1);
 namespace BrowserDetector\Loader;
 
 use BrowserDetector\Loader\Helper\DataInterface;
-use BrowserDetector\Version\VersionFactory;
+use BrowserDetector\Version\VersionFactoryInterface;
 use Psr\Log\LoggerInterface;
 use stdClass;
 use UnexpectedValueException;
@@ -32,8 +32,9 @@ final class EngineLoader implements EngineLoaderInterface
         private readonly LoggerInterface $logger,
         private readonly DataInterface $initData,
         private readonly CompanyLoaderInterface $companyLoader,
+        VersionFactoryInterface $versionFactory,
     ) {
-        $this->versionFactory = new VersionFactory();
+        $this->versionFactory = $versionFactory;
 
         $initData();
     }

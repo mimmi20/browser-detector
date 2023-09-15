@@ -16,7 +16,9 @@ use BrowserDetector\Loader\BrowserLoader;
 use BrowserDetector\Loader\CompanyLoaderInterface;
 use BrowserDetector\Loader\Helper\Data;
 use BrowserDetector\Parser\Helper\RulefileParser;
+use BrowserDetector\Version\VersionFactory;
 use Psr\Log\LoggerInterface;
+use UaBrowserType\TypeLoader;
 
 final class BrowserParserFactory implements BrowserParserFactoryInterface
 {
@@ -42,6 +44,8 @@ final class BrowserParserFactory implements BrowserParserFactoryInterface
                 $this->logger,
                 new Data(BrowserLoader::DATA_PATH, 'json'),
                 $this->companyLoader,
+                new TypeLoader(),
+                new VersionFactory(),
             );
         }
 

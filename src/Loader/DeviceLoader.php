@@ -67,7 +67,7 @@ final class DeviceLoader implements DeviceLoaderInterface
      *
      * @throws void
      */
-    public function fromArray(array $data): array
+    private function fromArray(array $data): array
     {
         assert(array_key_exists('deviceName', $data), '"deviceName" property is required');
         assert(array_key_exists('marketingName', $data), '"marketingName" property is required');
