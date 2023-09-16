@@ -16,12 +16,12 @@ use Psr\Log\LoggerInterface;
 
 use function preg_match;
 
-final class Friendica implements VersionDetectorInterface
+final class Friendica implements VersionFactoryInterface
 {
     /** @throws void */
     public function __construct(
         private readonly LoggerInterface $logger,
-        private readonly VersionFactoryInterface $versionFactory,
+        private readonly VersionBuilderInterface $versionBuilder,
     ) {
         // nothing to do
     }
@@ -42,7 +42,7 @@ final class Friendica implements VersionDetectorInterface
 
         if ($doMatch) {
             try {
-                return $this->versionFactory->set($matches['version']);
+                return $this->versionBuilder->set($matches['version']);
             } catch (NotNumericException $e) {
                 $this->logger->info($e);
             }

@@ -4,7 +4,7 @@
     "manufacturer": "agile-bits",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "1PasswordThumbs"
       ]
@@ -16,7 +16,7 @@
     "manufacturer": "microsoft",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Access"
       ]
@@ -28,7 +28,7 @@
     "manufacturer": "microsoft",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Access Web Datasheet"
       ]
@@ -40,7 +40,7 @@
     "manufacturer": "adobe",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "AdobeAIR"
       ]
@@ -62,7 +62,7 @@
     "manufacturer": "unknown",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Aldiko"
       ]
@@ -74,7 +74,7 @@
     "manufacturer": "alltop",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Alltop"
       ]
@@ -86,7 +86,7 @@
     "manufacturer": "unknown",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "AndroidDownloadManager"
       ]
@@ -98,7 +98,7 @@
     "manufacturer": "aol",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "ADG"
       ]
@@ -110,7 +110,7 @@
     "manufacturer": "unknown",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Appcent"
       ]
@@ -122,7 +122,7 @@
     "manufacturer": "apple",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "AppStore"
       ]
@@ -134,7 +134,7 @@
     "manufacturer": "mlb",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "AtBat"
       ]
@@ -146,7 +146,7 @@
     "manufacturer": "github",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Atom"
       ]
@@ -158,7 +158,7 @@
     "manufacturer": "basecamp",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Basecamp3"
       ]
@@ -170,7 +170,7 @@
     "manufacturer": "unknown",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "BB_Work_Connect"
       ]
@@ -182,7 +182,7 @@
     "manufacturer": "beonex-business-services",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Beonex"
       ]
@@ -194,7 +194,7 @@
     "manufacturer": "unknown",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "BilligFluegeFinal",
         "billigFluegeFinal"
@@ -207,7 +207,7 @@
     "manufacturer": "microsoft",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "BingWeb"
       ]
@@ -219,7 +219,7 @@
     "manufacturer": "bonprix",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "bonprix mobile App"
       ]
@@ -231,7 +231,7 @@
     "manufacturer": "booking-com",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Booking.com Android App "
       ]
@@ -253,7 +253,7 @@
     "manufacturer": "unknown",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "com\\.tinyspeck\\.chatlyio"
       ]
@@ -275,7 +275,7 @@
     "manufacturer": "opera",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "OperaCoast",
         "Opera%20Coast",
@@ -289,7 +289,7 @@
     "manufacturer": "google",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Cobalt"
       ]
@@ -301,7 +301,7 @@
     "manufacturer": "coursera",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Coursera\\-Mobile"
       ]
@@ -313,7 +313,7 @@
     "manufacturer": "intel",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Crosswalk"
       ]
@@ -325,7 +325,7 @@
     "manufacturer": "gocro",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Crowsnest"
       ]
@@ -337,7 +337,7 @@
     "manufacturer": "iterate",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Cyberduck"
       ]
@@ -349,7 +349,7 @@
     "manufacturer": "cyb-eye",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "CybEye\\.com"
       ]
@@ -361,7 +361,7 @@
     "manufacturer": "unknown",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "com\\.douban\\.group"
       ]
@@ -373,7 +373,7 @@
     "manufacturer": "adobe",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Dreamweaver"
       ]
@@ -385,7 +385,7 @@
     "manufacturer": "unknown",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "eb\\-iphone"
       ]
@@ -397,7 +397,7 @@
     "manufacturer": "microsoft",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Electron"
       ]
@@ -419,7 +419,7 @@
     "manufacturer": "microsoft",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Excel"
       ]
@@ -431,7 +431,7 @@
     "manufacturer": "unknown",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "FastBrowser"
       ]
@@ -443,7 +443,7 @@
     "manufacturer": "compass",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Filebox"
       ]
@@ -455,7 +455,7 @@
     "manufacturer": "flixster",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "FlixsteriOS"
       ]
@@ -467,7 +467,7 @@
     "manufacturer": "unknown",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "FlyCast"
       ]
@@ -479,7 +479,7 @@
     "manufacturer": "microsoft",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "FrontPage"
       ]
@@ -491,7 +491,7 @@
     "manufacturer": "unknown",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "GoodReader"
       ]
@@ -543,7 +543,7 @@
     "manufacturer": "unknown",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "icatcher"
       ]
@@ -555,7 +555,7 @@
     "manufacturer": "installatron",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Version",
         "Installatron"
@@ -568,7 +568,7 @@
     "manufacturer": "instant paper",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Instapaper"
       ]
@@ -580,7 +580,7 @@
     "manufacturer": "apple",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "dataaccessd"
       ]
@@ -612,7 +612,7 @@
     "manufacturer": "kamelio",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Kamelio"
       ]
@@ -634,7 +634,7 @@
     "manufacturer": "kde",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "kioclient"
       ]
@@ -646,7 +646,7 @@
     "manufacturer": "the-document-foundation",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "LibreOffice"
       ]
@@ -658,7 +658,7 @@
     "manufacturer": "unknown",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Listia"
       ]
@@ -670,7 +670,7 @@
     "manufacturer": "unknown",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Little%20Bookmark%20Box"
       ]
@@ -682,7 +682,7 @@
     "manufacturer": "microsoft",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Lync"
       ]
@@ -694,7 +694,7 @@
     "manufacturer": "apple",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "MacAppStore"
       ]
@@ -706,7 +706,7 @@
     "manufacturer": "nhn-corporation",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "NaverMatome\\-Android"
       ]
@@ -718,7 +718,7 @@
     "manufacturer": "mobicip",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Mobicip"
       ]
@@ -740,7 +740,7 @@
     "manufacturer": "opera",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "News"
       ]
@@ -752,7 +752,7 @@
     "manufacturer": "unknown",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "NewsArticle"
       ]
@@ -764,7 +764,7 @@
     "manufacturer": "newsblur",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "NewsBlur"
       ]
@@ -776,7 +776,7 @@
     "manufacturer": "david-watanabe",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "NewsFire"
       ]
@@ -788,7 +788,7 @@
     "manufacturer": "unknown",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Nightingale"
       ]
@@ -820,7 +820,7 @@
     "manufacturer": "microsoft",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Office Mobile for Symbian",
         "Office Mobile",
@@ -835,7 +835,7 @@
     "manufacturer": "microsoft",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Office SyncProc"
       ]
@@ -847,7 +847,7 @@
     "manufacturer": "microsoft",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Office Upload Center"
       ]
@@ -859,7 +859,7 @@
     "manufacturer": "okta",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "OktaMobile"
       ]
@@ -871,7 +871,7 @@
     "manufacturer": "microsoft",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "OneNote"
       ]
@@ -883,7 +883,7 @@
     "manufacturer": "lunabee",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "onesafe%20iOS%20",
         "onesafe%20iOS"
@@ -896,7 +896,7 @@
     "manufacturer": "apache",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "OpenOffice"
       ]
@@ -908,7 +908,7 @@
     "manufacturer": "unknown",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Perfect Browser",
         "Perfect Browser\\-iPad",
@@ -922,7 +922,7 @@
     "manufacturer": "maciej-brencz",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "phantomas"
       ]
@@ -934,7 +934,7 @@
     "manufacturer": "pinterest",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Pinterest"
       ]
@@ -946,7 +946,7 @@
     "manufacturer": "infraware",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Polaris"
       ]
@@ -958,7 +958,7 @@
     "manufacturer": "microsoft",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "PowerPoint"
       ]
@@ -970,7 +970,7 @@
     "manufacturer": "yes-logic",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Prince"
       ]
@@ -992,7 +992,7 @@
     "manufacturer": "unknown",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "QQ"
       ]
@@ -1004,7 +1004,7 @@
     "manufacturer": "quora",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Quora"
       ]
@@ -1016,7 +1016,7 @@
     "manufacturer": "unknown",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "RDDocuments"
       ]
@@ -1038,7 +1038,7 @@
     "manufacturer": "rebelmouse",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "RebelMouse"
       ]
@@ -1050,7 +1050,7 @@
     "manufacturer": "chat-work",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Rocky ChatWork Mobile"
       ]
@@ -1082,7 +1082,7 @@
     "manufacturer": "salesforce",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Salesforce1"
       ]
@@ -1094,7 +1094,7 @@
     "manufacturer": "samsung",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "CrossApp"
       ]
@@ -1106,7 +1106,7 @@
     "manufacturer": "karelia-software",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Sandvox",
         "Version"
@@ -1119,7 +1119,7 @@
     "manufacturer": "schoolwires",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Schoolwires"
       ]
@@ -1131,7 +1131,7 @@
     "manufacturer": "linden-labs",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "SL Commerce Client v",
         "SL Commerce Client"
@@ -1154,7 +1154,7 @@
     "manufacturer": "shop-keep",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Shopkeep\\-Pocket"
       ]
@@ -1166,7 +1166,7 @@
     "manufacturer": "apple",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "SiriViewService"
       ]
@@ -1178,7 +1178,7 @@
     "manufacturer": "ncc-group",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "SiteCon"
       ]
@@ -1200,7 +1200,7 @@
     "manufacturer": "unknown",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "SmartSync"
       ]
@@ -1212,7 +1212,7 @@
     "manufacturer": "sogou",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "SogouSearch Android(?:[\\d\\.]+) version"
       ]
@@ -1224,7 +1224,7 @@
     "manufacturer": "sohu",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "SohuNews"
       ]
@@ -1236,7 +1236,7 @@
     "manufacturer": "sound-cloud",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "SoundCloud\\-Android",
         "SoundCloud"
@@ -1249,7 +1249,7 @@
     "manufacturer": "unknown",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "stagefright"
       ]
@@ -1261,7 +1261,7 @@
     "manufacturer": "unknown",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "SubStream"
       ]
@@ -1283,7 +1283,7 @@
     "manufacturer": "unknown",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "thebat"
       ]
@@ -1295,7 +1295,7 @@
     "manufacturer": "unknown",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "The Diary"
       ]
@@ -1307,7 +1307,7 @@
     "manufacturer": "tiktok",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "AppName\\/musical_ly app_version",
         "TikTok"
@@ -1320,7 +1320,7 @@
     "manufacturer": "chimoosoft",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "TubeTV"
       ]
@@ -1332,7 +1332,7 @@
     "manufacturer": "tumblr",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Tumblr"
       ]
@@ -1354,7 +1354,7 @@
     "manufacturer": "michel-de-boer",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "twinkle"
       ]
@@ -1366,7 +1366,7 @@
     "manufacturer": "twitter",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Twitter"
       ]
@@ -1378,7 +1378,7 @@
     "manufacturer": "ucweb",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "UCBrowserHD"
       ]
@@ -1390,7 +1390,7 @@
     "manufacturer": "rakuten",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Viber"
       ]
@@ -1402,7 +1402,7 @@
     "manufacturer": "microsoft",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Visio"
       ]
@@ -1414,7 +1414,7 @@
     "manufacturer": "unknown",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "vobsub"
       ]
@@ -1436,7 +1436,7 @@
     "manufacturer": "microsoft",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Code"
       ]
@@ -1458,7 +1458,7 @@
     "manufacturer": "boutell",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "WebThumb"
       ]
@@ -1480,7 +1480,7 @@
     "manufacturer": "wire-swiss",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Wire"
       ]
@@ -1492,7 +1492,7 @@
     "manufacturer": "wk-html-to-pdf.org",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "wkhtmltoimage"
       ]
@@ -1504,7 +1504,7 @@
     "manufacturer": "wk-html-to-pdf.org",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "wkhtmltopdf"
       ]
@@ -1516,7 +1516,7 @@
     "manufacturer": "microsoft",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Word"
       ]
@@ -1528,7 +1528,7 @@
     "manufacturer": "wordpress",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "wp\\-iphone",
         "wp\\-android"
@@ -1541,7 +1541,7 @@
     "manufacturer": "unknown",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "WorxWebAppStore"
       ]
@@ -1553,7 +1553,7 @@
     "manufacturer": "yahoo",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "YahooMobileFinance"
       ]
@@ -1565,7 +1565,7 @@
     "manufacturer": "yahoo",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "YHOO\\_Search\\_App"
       ]
@@ -1577,7 +1577,7 @@
     "manufacturer": "yahoo",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "jp\\.co\\.yahoo\\.android\\.yjtop",
         "yjapp"
@@ -1590,7 +1590,7 @@
     "manufacturer": "yahoo",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "YahooMobileMessenger"
       ]
@@ -1602,7 +1602,7 @@
     "manufacturer": "yandex",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "YandexSearch"
       ]
@@ -1614,7 +1614,7 @@
     "manufacturer": "yp",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "YPmobile"
       ]
@@ -1646,7 +1646,7 @@
     "manufacturer": "zillow",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "ZillowMap"
       ]
@@ -1658,7 +1658,7 @@
     "manufacturer": "unknown",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Zite"
       ]
@@ -1670,7 +1670,7 @@
     "manufacturer": "microsoft",
     "type": "application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Teams"
       ]

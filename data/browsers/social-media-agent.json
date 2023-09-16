@@ -4,7 +4,7 @@
     "manufacturer": "linked-in",
     "type": "social-media-agent",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "com\\.linkedin",
         "LinkedInBot"
@@ -17,7 +17,7 @@
     "manufacturer": "twitter",
     "type": "social-media-agent",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Twitterbot"
       ]
@@ -29,7 +29,7 @@
     "manufacturer": "telegram",
     "type": "social-media-agent",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "TelegramBot"
       ]
@@ -41,7 +41,7 @@
     "manufacturer": "facebook",
     "type": "social-media-agent",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "facebookexternalhit"
       ]
@@ -53,7 +53,7 @@
     "manufacturer": "brandwatch",
     "type": "social-media-agent",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "magpie\\-crawler"
       ]

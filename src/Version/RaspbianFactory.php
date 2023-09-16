@@ -21,7 +21,7 @@ final class RaspbianFactory implements RaspbianFactoryInterface
     {
         return new Raspbian(
             $logger,
-            new VersionFactory(),
+            new VersionBuilder($logger),
         );
     }
 }

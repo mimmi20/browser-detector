@@ -4,7 +4,7 @@
     "manufacturer": "andreas-roene",
     "type": "seo-analytics",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "SEOlizer"
       ]
@@ -16,7 +16,7 @@
     "manufacturer": "seobility",
     "type": "seo-analytics",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "SeobilityBot"
       ]

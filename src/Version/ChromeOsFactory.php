@@ -21,7 +21,7 @@ final class ChromeOsFactory implements ChromeOsFactoryInterface
     {
         return new ChromeOs(
             $logger,
-            new VersionFactory(),
+            new VersionBuilder($logger),
         );
     }
 }

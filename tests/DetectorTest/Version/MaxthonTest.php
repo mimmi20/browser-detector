@@ -15,7 +15,8 @@ namespace BrowserDetectorTest\Version;
 use BrowserDetector\Version\Maxthon;
 use BrowserDetector\Version\NotNumericException;
 use BrowserDetector\Version\NullVersion;
-use BrowserDetector\Version\VersionFactory;
+use BrowserDetector\Version\VersionBuilder;
+use BrowserDetector\Version\VersionBuilderInterface;
 use BrowserDetector\Version\VersionFactoryInterface;
 use BrowserDetector\Version\VersionInterface;
 use PHPUnit\Framework\Attributes\DataProvider;
@@ -63,7 +64,7 @@ final class MaxthonTest extends TestCase
             ->method('emergency');
 
         assert($logger instanceof LoggerInterface);
-        $object = new Maxthon($logger, new VersionFactory());
+        $object = new Maxthon($logger, new VersionBuilder($logger));
 
         $detectedVersion = $object->detectVersion($useragent);
 
@@ -129,16 +130,16 @@ final class MaxthonTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $versionFactory = $this->createMock(VersionFactoryInterface::class);
-        $versionFactory
+        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
             ->expects(self::once())
             ->method('set')
             ->with('2.0')
             ->willThrowException($exception);
 
         assert($logger instanceof LoggerInterface);
-        assert($versionFactory instanceof VersionFactoryInterface);
-        $object = new Maxthon($logger, $versionFactory);
+        assert($versionBuilder instanceof VersionFactoryInterface);
+        $object = new Maxthon($logger, $versionBuilder);
 
         $detectedVersion = $object->detectVersion($useragent);
 
@@ -182,23 +183,23 @@ final class MaxthonTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $versionFactory = $this->createMock(VersionFactoryInterface::class);
-        $versionFactory
+        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
             ->expects(self::once())
             ->method('detectVersion')
             ->with($useragent, Maxthon::SEARCH_OLD)
             ->willThrowException($exception);
-        $versionFactory
+        $versionBuilder
             ->expects(self::never())
             ->method('set');
-        $versionFactory
+        $versionBuilder
             ->expects(self::once())
             ->method('setRegex')
             ->with(Maxthon::REGEX);
 
         assert($logger instanceof LoggerInterface);
-        assert($versionFactory instanceof VersionFactoryInterface);
-        $object = new Maxthon($logger, $versionFactory);
+        assert($versionBuilder instanceof VersionFactoryInterface);
+        $object = new Maxthon($logger, $versionBuilder);
 
         $detectedVersion = $object->detectVersion($useragent);
 
@@ -242,19 +243,19 @@ final class MaxthonTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $versionFactory = $this->createMock(VersionFactoryInterface::class);
-        $versionFactory
+        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
             ->expects(self::once())
             ->method('detectVersion')
             ->with($useragent, Maxthon::SEARCHES)
             ->willThrowException($exception);
-        $versionFactory
+        $versionBuilder
             ->expects(self::never())
             ->method('set');
 
         assert($logger instanceof LoggerInterface);
-        assert($versionFactory instanceof VersionFactoryInterface);
-        $object = new Maxthon($logger, $versionFactory);
+        assert($versionBuilder instanceof VersionFactoryInterface);
+        $object = new Maxthon($logger, $versionBuilder);
 
         $detectedVersion = $object->detectVersion($useragent);
 

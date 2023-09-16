@@ -17,8 +17,8 @@ use BrowserDetector\Loader\CompanyLoaderInterface;
 use BrowserDetector\Loader\Helper\DataInterface;
 use BrowserDetector\Loader\NotFoundException;
 use BrowserDetector\Version\TestFactory;
-use BrowserDetector\Version\VersionFactoryInterface;
-use BrowserDetector\Version\VersionInterface;
+use BrowserDetector\Version\VersionBuilderFactory;
+use BrowserDetector\Version\VersionBuilderInterface;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
@@ -81,18 +81,18 @@ final class BrowserLoaderTest extends TestCase
             ->expects(self::never())
             ->method('load');
 
-        $versionFactory = $this->createMock(VersionFactoryInterface::class);
-        $versionFactory
+        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
             ->expects(self::never())
             ->method('setRegex');
-        $versionFactory
+        $versionBuilder
             ->expects(self::never())
             ->method('set');
-        $versionFactory
+        $versionBuilder
             ->expects(self::never())
             ->method('detectVersion');
 
-        $object = new BrowserLoader($logger, $initData, $companyLoader, $typeLoader, $versionFactory);
+        $object = new BrowserLoader($logger, $initData, $companyLoader, $typeLoader, $versionBuilder);
 
         $this->expectException(NotFoundException::class);
         $this->expectExceptionMessage('the browser with key "test-key" was not found');
@@ -155,18 +155,18 @@ final class BrowserLoaderTest extends TestCase
             ->expects(self::never())
             ->method('load');
 
-        $versionFactory = $this->createMock(VersionFactoryInterface::class);
-        $versionFactory
+        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
             ->expects(self::never())
             ->method('setRegex');
-        $versionFactory
+        $versionBuilder
             ->expects(self::never())
             ->method('set');
-        $versionFactory
+        $versionBuilder
             ->expects(self::never())
             ->method('detectVersion');
 
-        $object = new BrowserLoader($logger, $initData, $companyLoader, $typeLoader, $versionFactory);
+        $object = new BrowserLoader($logger, $initData, $companyLoader, $typeLoader, $versionBuilder);
 
         $this->expectException(NotFoundException::class);
         $this->expectExceptionMessage('the browser with key "test-key" was not found');
@@ -245,18 +245,18 @@ final class BrowserLoaderTest extends TestCase
             ->with('unknown')
             ->willReturn(new Unknown());
 
-        $versionFactory = $this->createMock(VersionFactoryInterface::class);
-        $versionFactory
+        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
             ->expects(self::never())
             ->method('setRegex');
-        $versionFactory
+        $versionBuilder
             ->expects(self::never())
             ->method('set');
-        $versionFactory
+        $versionBuilder
             ->expects(self::never())
             ->method('detectVersion');
 
-        $object = new BrowserLoader($logger, $initData, $companyLoader, $typeLoader, $versionFactory);
+        $object = new BrowserLoader($logger, $initData, $companyLoader, $typeLoader, $versionBuilder);
 
         $result = $object->load('test-key', 'test-ua');
 
@@ -321,7 +321,7 @@ final class BrowserLoaderTest extends TestCase
             ->willReturn(true);
 
         $browserData = (object) [
-            'version' => (object) ['class' => 'VersionFactory', 'search' => ['test']],
+            'version' => (object) ['factory' => '\\' . VersionBuilderFactory::class, 'search' => ['test']],
             'manufacturer' => 'unknown',
             'type' => 'unknown',
             'engine' => 'unknown',
@@ -349,27 +349,18 @@ final class BrowserLoaderTest extends TestCase
             ->with('unknown')
             ->willReturn(new Unknown());
 
-        $version = $this->createMock(VersionInterface::class);
-        $version
-            ->expects(self::once())
-            ->method('getVersion')
-            ->with(VersionInterface::COMPLETE)
-            ->willReturn('1.0.0');
-
-        $versionFactory = $this->createMock(VersionFactoryInterface::class);
-        $versionFactory
+        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
             ->expects(self::never())
             ->method('setRegex');
-        $versionFactory
+        $versionBuilder
             ->expects(self::never())
             ->method('set');
-        $versionFactory
-            ->expects(self::once())
-            ->method('detectVersion')
-            ->with('test/1.0', ['test'])
-            ->willReturn($version);
+        $versionBuilder
+            ->expects(self::never())
+            ->method('detectVersion');
 
-        $object = new BrowserLoader($logger, $initData, $companyLoader, $typeLoader, $versionFactory);
+        $object = new BrowserLoader($logger, $initData, $companyLoader, $typeLoader, $versionBuilder);
 
         $result = $object->load('test-key', 'test/1.0');
 
@@ -436,7 +427,7 @@ final class BrowserLoaderTest extends TestCase
         $useragent   = 'test/1.0';
         $engineKey   = 'unknown';
         $browserData = (object) [
-            'version' => (object) ['class' => 'VersionFactory', 'search' => ['test']],
+            'version' => (object) ['factory' => '\\' . VersionBuilderFactory::class, 'search' => ['test']],
             'manufacturer' => 'unknown',
             'type' => 'unknown',
             'engine' => $engineKey,
@@ -464,27 +455,18 @@ final class BrowserLoaderTest extends TestCase
             ->with('unknown')
             ->willReturn(new Unknown());
 
-        $version = $this->createMock(VersionInterface::class);
-        $version
-            ->expects(self::once())
-            ->method('getVersion')
-            ->with(VersionInterface::COMPLETE)
-            ->willReturn('1.0.0');
-
-        $versionFactory = $this->createMock(VersionFactoryInterface::class);
-        $versionFactory
+        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
             ->expects(self::never())
             ->method('setRegex');
-        $versionFactory
+        $versionBuilder
             ->expects(self::never())
             ->method('set');
-        $versionFactory
-            ->expects(self::once())
-            ->method('detectVersion')
-            ->with('test/1.0', ['test'])
-            ->willReturn($version);
+        $versionBuilder
+            ->expects(self::never())
+            ->method('detectVersion');
 
-        $object = new BrowserLoader($logger, $initData, $companyLoader, $typeLoader, $versionFactory);
+        $object = new BrowserLoader($logger, $initData, $companyLoader, $typeLoader, $versionBuilder);
 
         $result = $object->load('test-key', $useragent);
 
@@ -574,18 +556,18 @@ final class BrowserLoaderTest extends TestCase
             ->with('unknown')
             ->willReturn(new Unknown());
 
-        $versionFactory = $this->createMock(VersionFactoryInterface::class);
-        $versionFactory
+        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
             ->expects(self::never())
             ->method('setRegex');
-        $versionFactory
+        $versionBuilder
             ->expects(self::never())
             ->method('set');
-        $versionFactory
+        $versionBuilder
             ->expects(self::never())
             ->method('detectVersion');
 
-        $object = new BrowserLoader($logger, $initData, $companyLoader, $typeLoader, $versionFactory);
+        $object = new BrowserLoader($logger, $initData, $companyLoader, $typeLoader, $versionBuilder);
 
         $result = $object->load('test-key', 'test/1.0');
 
@@ -678,18 +660,18 @@ final class BrowserLoaderTest extends TestCase
             ->with('unknown')
             ->willReturn(new Unknown());
 
-        $versionFactory = $this->createMock(VersionFactoryInterface::class);
-        $versionFactory
+        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
             ->expects(self::never())
             ->method('setRegex');
-        $versionFactory
+        $versionBuilder
             ->expects(self::never())
             ->method('set');
-        $versionFactory
+        $versionBuilder
             ->expects(self::never())
             ->method('detectVersion');
 
-        $object = new BrowserLoader($logger, $initData, $companyLoader, $typeLoader, $versionFactory);
+        $object = new BrowserLoader($logger, $initData, $companyLoader, $typeLoader, $versionBuilder);
 
         $result = $object->load('test-key', 'test/1.0');
 
@@ -782,18 +764,18 @@ final class BrowserLoaderTest extends TestCase
             ->with('unknown')
             ->willThrowException($exception);
 
-        $versionFactory = $this->createMock(VersionFactoryInterface::class);
-        $versionFactory
+        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
             ->expects(self::never())
             ->method('setRegex');
-        $versionFactory
+        $versionBuilder
             ->expects(self::never())
             ->method('set');
-        $versionFactory
+        $versionBuilder
             ->expects(self::never())
             ->method('detectVersion');
 
-        $object = new BrowserLoader($logger, $initData, $companyLoader, $typeLoader, $versionFactory);
+        $object = new BrowserLoader($logger, $initData, $companyLoader, $typeLoader, $versionBuilder);
 
         $result = $object->load('test-key', 'test/1.0');
 

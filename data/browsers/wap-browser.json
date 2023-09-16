@@ -4,7 +4,7 @@
     "manufacturer": "dorado",
     "type": "wap-browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Dorado WAP\\-Browser"
       ]

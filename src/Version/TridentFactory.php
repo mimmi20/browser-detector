@@ -21,7 +21,7 @@ final class TridentFactory implements TridentFactoryInterface
     {
         return new Trident(
             $logger,
-            new VersionFactory(),
+            new VersionBuilder($logger),
         );
     }
 }

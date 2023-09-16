@@ -4,7 +4,7 @@
     "manufacturer": "bytedance",
     "type": "search-bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Bytespider"
       ]
@@ -16,7 +16,7 @@
     "manufacturer": "google",
     "type": "search-bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Googlebot",
         "Googlebot v",
@@ -30,7 +30,7 @@
     "manufacturer": "majestic-12",
     "type": "search-bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "MJ12bot\\/v",
         "MJ12bot"
@@ -43,7 +43,7 @@
     "manufacturer": "mojeek",
     "type": "search-bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "MojeekBot"
       ]
@@ -55,7 +55,7 @@
     "manufacturer": "neeva",
     "type": "search-bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Neevabot"
       ]
@@ -67,7 +67,7 @@
     "manufacturer": "netcraft",
     "type": "search-bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "NetcraftSurveyAgent"
       ]
@@ -79,7 +79,7 @@
     "manufacturer": "seznam",
     "type": "search-bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "SeznamBot"
       ]
@@ -91,7 +91,7 @@
     "manufacturer": "yandex",
     "type": "search-bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "YandexBot"
       ]
@@ -113,7 +113,7 @@
     "manufacturer": "yandex",
     "type": "search-bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "YandexFavicons"
       ]
@@ -125,7 +125,7 @@
     "manufacturer": "yandex",
     "type": "search-bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "YandexImageResizer"
       ]
@@ -137,7 +137,7 @@
     "manufacturer": "yandex",
     "type": "search-bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "YandexImages"
       ]
@@ -149,7 +149,7 @@
     "manufacturer": "microsoft",
     "type": "search-bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "bingbot",
         "Bing",
@@ -164,7 +164,7 @@
     "manufacturer": "ibm",
     "type": "search-bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "oBot"
       ]
@@ -176,7 +176,7 @@
     "manufacturer": "google",
     "type": "search-bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Google-Ads-Conversions"
       ]
@@ -188,7 +188,7 @@
     "manufacturer": "duck-duck-go",
     "type": "search-bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "DuckDuckBot",
         "DuckDuckBot-Https"
@@ -201,7 +201,7 @@
     "manufacturer": "duck-duck-go",
     "type": "search-bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "DuckDuckGo\\-Favicons\\-Bot"
       ]
@@ -213,7 +213,7 @@
     "manufacturer": "google",
     "type": "search-bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Googlebot\\-Image"
       ]
@@ -225,7 +225,7 @@
     "manufacturer": "google",
     "type": "search-bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Googlebot\\-News"
       ]
@@ -237,7 +237,7 @@
     "manufacturer": "google",
     "type": "search-bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Googlebot\\-Video"
       ]
@@ -249,7 +249,7 @@
     "manufacturer": "microsoft",
     "type": "search-bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "BingPreview"
       ]
@@ -261,7 +261,7 @@
     "manufacturer": "baidu",
     "type": "search-bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Baiduspider-image"
       ]
@@ -273,7 +273,7 @@
     "manufacturer": "baidu",
     "type": "search-bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "baiduspider",
         "Baiduspider"
@@ -286,7 +286,7 @@
     "manufacturer": "openindex",
     "type": "search-bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "OpenindexSpider"
       ]
@@ -308,7 +308,7 @@
     "manufacturer": "sogou",
     "type": "search-bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Sogou web spider"
       ]
@@ -320,7 +320,7 @@
     "manufacturer": "google",
     "type": "search-bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "AdsBot\\-Google"
       ]
@@ -332,7 +332,7 @@
     "manufacturer": "google",
     "type": "search-bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "AdsBot\\-Google\\-Mobile"
       ]
@@ -344,7 +344,7 @@
     "manufacturer": "google",
     "type": "search-bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Google-InspectionTool"
       ]
@@ -356,7 +356,7 @@
     "manufacturer": "qihoo",
     "type": "search-bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "360Spider"
       ]
@@ -368,7 +368,7 @@
     "manufacturer": "linkdex",
     "type": "search-bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "linkdex\\.com",
         "linkdex\\.com\\/v",

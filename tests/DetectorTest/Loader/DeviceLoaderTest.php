@@ -17,6 +17,7 @@ use BrowserDetector\Loader\DeviceLoader;
 use BrowserDetector\Loader\Helper\DataInterface;
 use BrowserDetector\Loader\NotFoundException;
 use BrowserDetector\Version\TestFactory;
+use BrowserDetector\Version\VersionBuilderFactory;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
@@ -260,7 +261,7 @@ final class DeviceLoaderTest extends TestCase
             ->willReturn(true);
 
         $deviceData = (object) [
-            'version' => (object) ['class' => 'VersionFactory', 'search' => ['test']],
+            'version' => (object) ['factory' => '\\' . VersionBuilderFactory::class, 'search' => ['test']],
             'manufacturer' => 'unknown',
             'brand' => 'unknown',
             'type' => 'unknown',

@@ -23,7 +23,7 @@ use function mb_stripos;
 use function preg_match;
 use function str_replace;
 
-final class Macos implements VersionDetectorInterface
+final class Macos implements VersionFactoryInterface
 {
     public const SEARCHES = ['Mac OS X Version', 'Mac OS X v', 'Mac OS X', 'OS X', 'os=mac '];
 
@@ -162,7 +162,7 @@ final class Macos implements VersionDetectorInterface
     /** @throws void */
     public function __construct(
         private readonly LoggerInterface $logger,
-        private readonly VersionFactoryInterface $versionFactory,
+        private readonly VersionBuilderInterface $versionBuilder,
         private readonly MacosBuildInterface $macosBuild,
     ) {
         // nothing to do
@@ -190,7 +190,7 @@ final class Macos implements VersionDetectorInterface
 
             if ($buildVersion !== false) {
                 try {
-                    return $this->versionFactory->set($buildVersion);
+                    return $this->versionBuilder->set($buildVersion);
                 } catch (NotNumericException $e) {
                     $this->logger->info($e);
 
@@ -214,7 +214,7 @@ final class Macos implements VersionDetectorInterface
 
             if ($buildVersion !== false) {
                 try {
-                    return $this->versionFactory->set($buildVersion);
+                    return $this->versionBuilder->set($buildVersion);
                 } catch (NotNumericException $e) {
                     $this->logger->info($e);
 
@@ -230,7 +230,7 @@ final class Macos implements VersionDetectorInterface
                 }
 
                 try {
-                    return $this->versionFactory->set($version);
+                    return $this->versionBuilder->set($version);
                 } catch (NotNumericException $e) {
                     $this->logger->info($e);
 
@@ -240,7 +240,7 @@ final class Macos implements VersionDetectorInterface
         }
 
         try {
-            $detectedVersion = $this->versionFactory->detectVersion(
+            $detectedVersion = $this->versionBuilder->detectVersion(
                 str_replace(',', '.', $useragent),
                 self::SEARCHES,
             );
@@ -257,7 +257,7 @@ final class Macos implements VersionDetectorInterface
                 preg_match('/(?P<major>\d{2})(?P<minor>\d{2})(?P<micro>\d)/', $versionNumber, $versions)
             ) {
                 try {
-                    return $this->versionFactory->set(
+                    return $this->versionBuilder->set(
                         $versions['major'] . '.' . $versions['minor'] . '.' . $versions['micro'],
                     );
                 } catch (NotNumericException $e) {
@@ -277,7 +277,7 @@ final class Macos implements VersionDetectorInterface
                 }
 
                 try {
-                    return $this->versionFactory->set($version);
+                    return $this->versionBuilder->set($version);
                 } catch (NotNumericException $e) {
                     $this->logger->info($e);
 

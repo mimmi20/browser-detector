@@ -4,7 +4,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "114Browser"
       ]
@@ -16,7 +16,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "115Browser"
       ]
@@ -28,7 +28,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "1stBrowser"
       ]
@@ -40,7 +40,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Mb2345Browser"
       ]
@@ -52,7 +52,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "2345chrome v",
         "2345chrome"
@@ -65,7 +65,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "2345Explorer"
       ]
@@ -77,7 +77,7 @@
     "manufacturer": "qihoo",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "360%20Browser",
         "360 Aphone Browser \\("
@@ -90,7 +90,7 @@
     "manufacturer": "qihoo",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "QIHU 360SE"
       ]
@@ -102,7 +102,7 @@
     "manufacturer": "qihoo",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "QIHU 360EE"
       ]
@@ -114,7 +114,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "ABrowse"
       ]
@@ -136,7 +136,7 @@
     "manufacturer": "vmware",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "AirWatch Browser v",
         "AirWatch Browser"
@@ -169,7 +169,7 @@
     "manufacturer": "aloha-mobile",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "AlohaBrowser"
       ]
@@ -181,7 +181,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "AltiBrowser"
       ]
@@ -193,7 +193,7 @@
     "manufacturer": "vaporware",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "AmigaVoyager"
       ]
@@ -205,7 +205,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Amigo"
       ]
@@ -227,7 +227,7 @@
     "manufacturer": "google",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Chrome"
       ]
@@ -239,7 +239,7 @@
     "manufacturer": "ant",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "ANTGalio"
       ]
@@ -251,7 +251,7 @@
     "manufacturer": "aol",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "AOLShield"
       ]
@@ -263,7 +263,7 @@
     "manufacturer": "apus-group",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "APUSBrowser"
       ]
@@ -275,7 +275,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "ArgClrInt",
         "Argclrint"
@@ -288,7 +288,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Arora"
       ]
@@ -310,7 +310,7 @@
     "manufacturer": "richard-trautvetter",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "AtomicBrowser"
       ]
@@ -322,7 +322,7 @@
     "manufacturer": "richard-trautvetter",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "AtomicLite"
       ]
@@ -344,7 +344,7 @@
     "manufacturer": "avast-software",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "ASW"
       ]
@@ -356,7 +356,7 @@
     "manufacturer": "avast-software",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Avast",
         "AvastSecureBrowser"
@@ -369,7 +369,7 @@
     "manufacturer": "avast-software",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "AVG"
       ]
@@ -381,7 +381,7 @@
     "manufacturer": "piriform",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "CCleaner"
       ]
@@ -393,7 +393,7 @@
     "manufacturer": "whitehat",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Aviator"
       ]
@@ -405,7 +405,7 @@
     "manufacturer": "avira-operations",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "AviraScout"
       ]
@@ -427,7 +427,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Awesomium"
       ]
@@ -439,7 +439,7 @@
     "manufacturer": "baidu",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "bdbrowser_i18n",
         "bdbrowser",
@@ -453,7 +453,7 @@
     "manufacturer": "baidu",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "bdbrowserhd_i18n"
       ]
@@ -465,7 +465,7 @@
     "manufacturer": "baidu",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "bdbrowser_mini"
       ]
@@ -477,7 +477,7 @@
     "manufacturer": "baidu",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "BIDUBrowser",
         "Spark"
@@ -500,7 +500,7 @@
     "manufacturer": "beamrise-team",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Beamrise"
       ]
@@ -522,7 +522,7 @@
     "manufacturer": "rim",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "BlackBerry[0-9a-z]+",
         "BlackBerrySimulator",
@@ -536,7 +536,7 @@
     "manufacturer": "rim",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Version"
       ]
@@ -548,7 +548,7 @@
     "manufacturer": "palm",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Blazer"
       ]
@@ -560,7 +560,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "bline"
       ]
@@ -572,7 +572,7 @@
     "manufacturer": "board-reader",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "BoardReader"
       ]
@@ -584,7 +584,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "BoBrowser"
       ]
@@ -596,7 +596,7 @@
     "manufacturer": "ericsson-research",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Bowser"
       ]
@@ -608,7 +608,7 @@
     "manufacturer": "boxee",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Boxee",
         "boxee"
@@ -621,7 +621,7 @@
     "manufacturer": "brave-software",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Brave"
       ]
@@ -633,7 +633,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Browse"
       ]
@@ -645,7 +645,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "BrowseX \\(",
         "BrowseX"
@@ -658,7 +658,7 @@
     "manufacturer": "browzar",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Browzar"
       ]
@@ -680,7 +680,7 @@
     "manufacturer": "mozilla-foundation",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Camino"
       ]
@@ -692,7 +692,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Cent"
       ]
@@ -714,7 +714,7 @@
     "manufacturer": "chedot",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Chedot"
       ]
@@ -726,7 +726,7 @@
     "manufacturer": "aol",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Cheshire"
       ]
@@ -738,7 +738,7 @@
     "manufacturer": "mozilla-foundation",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Chimera"
       ]
@@ -750,7 +750,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Choosy"
       ]
@@ -762,7 +762,7 @@
     "manufacturer": "google",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Chrome",
         "CrMo"
@@ -775,7 +775,7 @@
     "manufacturer": "google",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "CriOS"
       ]
@@ -787,7 +787,7 @@
     "manufacturer": "maple-studio",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "ChromePlus"
       ]
@@ -799,7 +799,7 @@
     "manufacturer": "google",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Chromium"
       ]
@@ -811,7 +811,7 @@
     "manufacturer": "crypto-pro",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Chrome"
       ]
@@ -833,7 +833,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Clipish"
       ]
@@ -845,7 +845,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "CloudSurfer"
       ]
@@ -867,7 +867,7 @@
     "manufacturer": "coc-coc-company",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "coc_coc_browser"
       ]
@@ -879,7 +879,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "CometBird"
       ]
@@ -891,7 +891,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Conkeror"
       ]
@@ -903,7 +903,7 @@
     "manufacturer": "maple-studio",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "CoolNovo"
       ]
@@ -915,7 +915,7 @@
     "manufacturer": "simao-gomes-viana",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Cornowser"
       ]
@@ -927,7 +927,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "CoRom"
       ]
@@ -939,7 +939,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "COSBrowser"
       ]
@@ -951,7 +951,7 @@
     "manufacturer": "crazy-browser",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Crazy Browser"
       ]
@@ -963,7 +963,7 @@
     "manufacturer": "8pecxstudios",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Cyberfox"
       ]
@@ -975,7 +975,7 @@
     "manufacturer": "google",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Dalvik"
       ]
@@ -997,7 +997,7 @@
     "manufacturer": "deepnet-security",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Deepnet Explorer"
       ]
@@ -1009,7 +1009,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Diga"
       ]
@@ -1021,7 +1021,7 @@
     "manufacturer": "diglo",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Diglo"
       ]
@@ -1033,7 +1033,7 @@
     "manufacturer": "diigo",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Version",
         "DiigoBrowser"
@@ -1046,7 +1046,7 @@
     "manufacturer": "dillo-project",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Dillo"
       ]
@@ -1058,7 +1058,7 @@
     "manufacturer": "mopotab",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Dolphin HD",
         "Dolphin\\/INT\\-",
@@ -1075,7 +1075,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Dooble"
       ]
@@ -1087,7 +1087,7 @@
     "manufacturer": "comodo",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Comodo Dragon",
         "Dragon",
@@ -1101,7 +1101,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "DTB"
       ]
@@ -1113,7 +1113,7 @@
     "manufacturer": "duck-duck-go",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "DDG\\-Android\\-",
         "DuckDuckGo"
@@ -1126,7 +1126,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Ecosia android@",
         "Ecosia ios@"
@@ -1139,7 +1139,7 @@
     "manufacturer": "microsoft",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Edge",
         "Edg"
@@ -1152,7 +1152,7 @@
     "manufacturer": "microsoft",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Edge"
       ]
@@ -1164,7 +1164,7 @@
     "manufacturer": "microsoft",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "EdgA"
       ]
@@ -1176,7 +1176,7 @@
     "manufacturer": "microsoft",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "EdgiOS"
       ]
@@ -1188,7 +1188,7 @@
     "manufacturer": "microsoft",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "EdgW"
       ]
@@ -1200,7 +1200,7 @@
     "manufacturer": "ekioh",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Ekioh"
       ]
@@ -1212,7 +1212,7 @@
     "manufacturer": "element-software",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Element Browser"
       ]
@@ -1224,7 +1224,7 @@
     "manufacturer": "element-software",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Elements Browser"
       ]
@@ -1236,7 +1236,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "ELinks"
       ]
@@ -1248,7 +1248,7 @@
     "manufacturer": "the-gnome-project",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Epiphany",
         "Version",
@@ -1263,7 +1263,7 @@
     "manufacturer": "espial-group",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Espial"
       ]
@@ -1275,7 +1275,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Eudora"
       ]
@@ -1287,7 +1287,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "EUI Browser"
       ]
@@ -1299,7 +1299,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Extras4iMovie"
       ]
@@ -1311,7 +1311,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "FalkMaps"
       ]
@@ -1323,7 +1323,7 @@
     "manufacturer": "mozilla-foundation",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Fennec"
       ]
@@ -1335,7 +1335,7 @@
     "manufacturer": "mozilla-foundation",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Firebird"
       ]
@@ -1347,7 +1347,7 @@
     "manufacturer": "mozilla-foundation",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Firefox",
         "Minefield",
@@ -1367,7 +1367,7 @@
     "manufacturer": "mozilla-foundation",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Focus",
         "Klar"
@@ -1380,7 +1380,7 @@
     "manufacturer": "mozilla-foundation",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "FocusiOS"
       ]
@@ -1392,7 +1392,7 @@
     "manufacturer": "mozilla-foundation",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "FxiOS"
       ]
@@ -1404,7 +1404,7 @@
     "manufacturer": "mozilla-foundation",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Rocket"
       ]
@@ -1416,7 +1416,7 @@
     "manufacturer": "arsslensoft",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Fireweb Navigator"
       ]
@@ -1428,7 +1428,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "FlameSky"
       ]
@@ -1440,7 +1440,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Flock"
       ]
@@ -1452,7 +1452,7 @@
     "manufacturer": "todd-ditchendorf",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "FluidApp",
         "Fluid"
@@ -1465,7 +1465,7 @@
     "manufacturer": "baidu",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "FlyFlow",
         "FlyFlow\\-"
@@ -1478,7 +1478,7 @@
     "manufacturer": "ant",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "ANTFresco"
       ]
@@ -1490,7 +1490,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Galeon"
       ]
@@ -1512,7 +1512,7 @@
     "manufacturer": "google",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Google Desktop"
       ]
@@ -1524,7 +1524,7 @@
     "manufacturer": "google",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Google ?Earth"
       ]
@@ -1556,7 +1556,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "HbbTV"
       ]
@@ -1568,7 +1568,7 @@
     "manufacturer": "google",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "HeadlessChrome"
       ]
@@ -1590,7 +1590,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "HeyTapBrowser"
       ]
@@ -1602,7 +1602,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Hitpad"
       ]
@@ -1614,7 +1614,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Hot Wallpapers"
       ]
@@ -1626,7 +1626,7 @@
     "manufacturer": "sun-microsystems",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "HotJava"
       ]
@@ -1638,7 +1638,7 @@
     "manufacturer": "huawei",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "HuaweiBrowser",
         "HBPC"
@@ -1651,7 +1651,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "HuohouBrowser"
       ]
@@ -1673,7 +1673,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Ibisbrowser"
       ]
@@ -1685,7 +1685,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "IBrowse"
       ]
@@ -1697,7 +1697,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "iBrowser"
       ]
@@ -1709,7 +1709,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "iBrowser\\/Mini"
       ]
@@ -1721,7 +1721,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "iBuilder"
       ]
@@ -1733,7 +1733,7 @@
     "manufacturer": "alexander-clauss",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "iCabMobile",
         "iCab"
@@ -1746,7 +1746,7 @@
     "manufacturer": "alexander-clauss",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "iCabMobile",
         "iCab"
@@ -1759,7 +1759,7 @@
     "manufacturer": "gnu",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "IceCat"
       ]
@@ -1771,7 +1771,7 @@
     "manufacturer": "software-in-the-public-interest",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Icedove"
       ]
@@ -1783,7 +1783,7 @@
     "manufacturer": "comodo",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "IceDragon"
       ]
@@ -1795,7 +1795,7 @@
     "manufacturer": "software-in-the-public-interest",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Iceowl"
       ]
@@ -1807,7 +1807,7 @@
     "manufacturer": "software-in-the-public-interest",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Iceweasel",
         "Firefox"
@@ -1830,7 +1830,7 @@
     "manufacturer": "microsoft",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "IEMobile",
         "MSIE",
@@ -1844,7 +1844,7 @@
     "manufacturer": "lunascape",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "iLunascape"
       ]
@@ -1856,7 +1856,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "InettvBrowser",
         "Version"
@@ -1889,7 +1889,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "iPick"
       ]
@@ -1901,7 +1901,7 @@
     "manufacturer": "iridium-browser-team",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Iridium"
       ]
@@ -1913,7 +1913,7 @@
     "manufacturer": "torch",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Iris"
       ]
@@ -1925,7 +1925,7 @@
     "manufacturer": "srware",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Iron",
         "Chrome"
@@ -1938,7 +1938,7 @@
     "manufacturer": "srware",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "MobileIron"
       ]
@@ -1950,7 +1950,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "iSource\\+"
       ]
@@ -1962,7 +1962,7 @@
     "manufacturer": "pivotal-labs",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Jasmine"
       ]
@@ -1974,7 +1974,7 @@
     "manufacturer": "w3c",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "jig browser web; ",
         "jig browser web",
@@ -1998,7 +1998,7 @@
     "manufacturer": "kmeleon-browser.org",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "K\\-Meleon"
       ]
@@ -2010,7 +2010,7 @@
     "manufacturer": "kmeleon-browser.org",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "K\\-Ninja"
       ]
@@ -2022,7 +2022,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Kazehakase"
       ]
@@ -2034,7 +2034,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "kded"
       ]
@@ -2046,7 +2046,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Kik"
       ]
@@ -2058,7 +2058,7 @@
     "manufacturer": "amazon",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Kindle"
       ]
@@ -2070,7 +2070,7 @@
     "manufacturer": "kinza",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Kinza"
       ]
@@ -2082,7 +2082,7 @@
     "manufacturer": "geometry",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Kiwi"
       ]
@@ -2094,7 +2094,7 @@
     "manufacturer": "kkbox",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "KKman"
       ]
@@ -2106,7 +2106,7 @@
     "manufacturer": "ashrising-phoenixes",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "KMLite"
       ]
@@ -2118,7 +2118,7 @@
     "manufacturer": "kde",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Konqueror",
         "konqueror"
@@ -2131,7 +2131,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Kuaiso"
       ]
@@ -2144,7 +2144,7 @@
     "bits": 32,
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "LeBrowser"
       ]
@@ -2156,7 +2156,7 @@
     "manufacturer": "lg",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "LG Browser"
       ]
@@ -2168,7 +2168,7 @@
     "manufacturer": "kingsoft",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "LBBROWSER"
       ]
@@ -2180,7 +2180,7 @@
     "manufacturer": "kingsoft",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "LieBaoFast"
       ]
@@ -2192,7 +2192,7 @@
     "manufacturer": "line",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Line"
       ]
@@ -2204,7 +2204,7 @@
     "manufacturer": "mikulas-patocka",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Links",
         "Links \\("
@@ -2217,7 +2217,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "lolifox"
       ]
@@ -2229,7 +2229,7 @@
     "manufacturer": "mason-larobina",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "WebKitGTK\\+"
       ]
@@ -2241,7 +2241,7 @@
     "manufacturer": "lunascape",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Lunascape"
       ]
@@ -2253,7 +2253,7 @@
     "manufacturer": "thomas-dickey",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Lynx"
       ]
@@ -2265,7 +2265,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "ExchangeWebServices",
         "Mail"
@@ -2288,7 +2288,7 @@
     "manufacturer": "gihyun-jung",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Maven"
       ]
@@ -2300,7 +2300,7 @@
     "manufacturer": "gihyun-jung",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "MavenPlus"
       ]
@@ -2322,7 +2322,7 @@
     "manufacturer": "maxthon",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "MxNitro"
       ]
@@ -2344,7 +2344,7 @@
     "manufacturer": "ilegendsoft",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Mercury3",
         "Mercury",
@@ -2358,7 +2358,7 @@
     "manufacturer": "nokia",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "MicroB",
         "Maemo Browser",
@@ -2372,7 +2372,7 @@
     "manufacturer": "christian-dywan",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Midori",
         "Midori\\-"
@@ -2385,7 +2385,7 @@
     "manufacturer": "dmkho",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "MiniBrowserMobile"
       ]
@@ -2397,7 +2397,7 @@
     "manufacturer": "mozilla-foundation",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Minimo"
       ]
@@ -2409,7 +2409,7 @@
     "manufacturer": "xiaomi",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Mint Browser"
       ]
@@ -2431,7 +2431,7 @@
     "manufacturer": "xiaomi",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "MiuiBrowser",
         "MIUI\\/V",
@@ -2446,7 +2446,7 @@
     "bits": 32,
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "MobileLenovoBrowser"
       ]
@@ -2468,7 +2468,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "MobileRSS",
         "MobileRSSFree",
@@ -2482,7 +2482,7 @@
     "manufacturer": "tesla-motors",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "QtCarBrowser"
       ]
@@ -2494,7 +2494,7 @@
     "manufacturer": "motorola",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "MIB",
         "MIB\\/BER"
@@ -2517,7 +2517,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Mozad"
       ]
@@ -2529,7 +2529,7 @@
     "manufacturer": "mozilla-foundation",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Mozilla"
       ]
@@ -2541,7 +2541,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "MultiZilla"
       ]
@@ -2553,7 +2553,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "myibrow"
       ]
@@ -2575,7 +2575,7 @@
     "manufacturer": "meizu",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "MZBrowser"
       ]
@@ -2587,7 +2587,7 @@
     "manufacturer": "netscape",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Navigator"
       ]
@@ -2609,7 +2609,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Netbox"
       ]
@@ -2621,7 +2621,7 @@
     "manufacturer": "access",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "NetFront",
         "NF",
@@ -2636,7 +2636,7 @@
     "manufacturer": "access",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "NX"
       ]
@@ -2648,7 +2648,7 @@
     "manufacturer": "access",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "NetFrontLifeBrowser"
       ]
@@ -2660,7 +2660,7 @@
     "manufacturer": "black-pixel",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "NetNewsWire"
       ]
@@ -2672,7 +2672,7 @@
     "manufacturer": "netscape",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Netscape7",
         "Netscape6",
@@ -2686,7 +2686,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "NETTV"
       ]
@@ -2698,7 +2698,7 @@
     "manufacturer": "philips",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "NewB"
       ]
@@ -2710,7 +2710,7 @@
     "manufacturer": "rambler",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Nichrome\\/self",
         "Nichrome"
@@ -2723,7 +2723,7 @@
     "manufacturer": "nine-sky",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Ninesky\\-android\\-mobile",
         "Ninesky"
@@ -2736,7 +2736,7 @@
     "manufacturer": "nintendo",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "NintendoBrowser"
       ]
@@ -2748,7 +2748,7 @@
     "manufacturer": "nokia",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "NokiaBrowser",
         "Version"
@@ -2761,7 +2761,7 @@
     "manufacturer": "nokia",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "BrowserNG"
       ]
@@ -2773,7 +2773,7 @@
     "manufacturer": "ntent",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "NTENTBrowser"
       ]
@@ -2805,7 +2805,7 @@
     "manufacturer": "facebook",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "OculusBrowser"
       ]
@@ -2817,7 +2817,7 @@
     "manufacturer": "nasai",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Odd"
       ]
@@ -2829,7 +2829,7 @@
     "manufacturer": "fabien coeurjoly",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Origyn Web Browser",
         "OWB",
@@ -2843,7 +2843,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "OffByOne"
       ]
@@ -2855,7 +2855,7 @@
     "manufacturer": "omni-development",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Version",
         "Omniweb",
@@ -2869,7 +2869,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "OneBrowser"
       ]
@@ -2881,7 +2881,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "OpenWebKitSharp"
       ]
@@ -2893,7 +2893,7 @@
     "manufacturer": "myriad",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "UP\\.Browser",
         "UP",
@@ -2908,7 +2908,7 @@
     "manufacturer": "opera",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "OPR",
         "Version",
@@ -2922,7 +2922,7 @@
     "manufacturer": "opera",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "OMI"
       ]
@@ -2934,7 +2934,7 @@
     "manufacturer": "opera",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "OPX",
         "OPRGX"
@@ -2947,7 +2947,7 @@
     "manufacturer": "opera",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "OPR",
         "Version",
@@ -2963,7 +2963,7 @@
     "manufacturer": "opera",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "MMS"
       ]
@@ -2975,7 +2975,7 @@
     "manufacturer": "opera",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "OPT"
       ]
@@ -2987,7 +2987,7 @@
     "manufacturer": "oppo",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "OppoBrowser"
       ]
@@ -2999,7 +2999,7 @@
     "manufacturer": "oregan",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Oregano"
       ]
@@ -3011,7 +3011,7 @@
     "manufacturer": "electronic-arts",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Origin"
       ]
@@ -3023,7 +3023,7 @@
     "manufacturer": "sand-labs",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Origyn Web Browser",
         "OWB"
@@ -3036,7 +3036,7 @@
     "manufacturer": "otter-browser.org",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Otter"
       ]
@@ -3048,7 +3048,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Oupeng"
       ]
@@ -3060,7 +3060,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "OupengHD"
       ]
@@ -3072,7 +3072,7 @@
     "manufacturer": "moonchild-productions",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "PaleMoon"
       ]
@@ -3084,7 +3084,7 @@
     "manufacturer": "hp",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "PalmPixi"
       ]
@@ -3096,7 +3096,7 @@
     "manufacturer": "hp",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "PalmPre"
       ]
@@ -3118,7 +3118,7 @@
     "manufacturer": "lg",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Phantom",
         "Phantom\\/V"
@@ -3131,7 +3131,7 @@
     "manufacturer": "phantom-js",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "PhantomJS"
       ]
@@ -3153,7 +3153,7 @@
     "manufacturer": "mozilla-foundation",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Phoenix"
       ]
@@ -3165,7 +3165,7 @@
     "manufacturer": "cloudview-technology",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "PHX"
       ]
@@ -3177,7 +3177,7 @@
     "manufacturer": "pirate-bay",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "PB"
       ]
@@ -3189,7 +3189,7 @@
     "manufacturer": "sony",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Playstation"
       ]
@@ -3211,7 +3211,7 @@
     "manufacturer": "weebly",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Polarity"
       ]
@@ -3223,7 +3223,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Powertv"
       ]
@@ -3235,7 +3235,7 @@
     "manufacturer": "mozilla-foundation",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Prism"
       ]
@@ -3257,7 +3257,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Pulse"
       ]
@@ -3269,7 +3269,7 @@
     "manufacturer": "tencent",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "MQQBrowser",
         "QQBrowser",
@@ -3284,7 +3284,7 @@
     "manufacturer": "tencent",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "MQQBrowser\\/Mini"
       ]
@@ -3296,7 +3296,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Qt"
       ]
@@ -3318,7 +3318,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "QtMiniBrowser"
       ]
@@ -3330,7 +3330,7 @@
     "manufacturer": "logicware",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "QtWeb Internet Browser"
       ]
@@ -3342,7 +3342,7 @@
     "manufacturer": "logicware",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "QtWebEngine"
       ]
@@ -3354,7 +3354,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "QtWebkit"
       ]
@@ -3366,7 +3366,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Quark"
       ]
@@ -3378,7 +3378,7 @@
     "manufacturer": "carlrogers",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "QuickBrowser"
       ]
@@ -3390,7 +3390,7 @@
     "manufacturer": "aosp-studio-apps",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Quick Search TV"
       ]
@@ -3412,7 +3412,7 @@
     "manufacturer": "apple",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "QuickLook"
       ]
@@ -3424,7 +3424,7 @@
     "manufacturer": "david-rosca",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "QupZilla"
       ]
@@ -3436,7 +3436,7 @@
     "manufacturer": "florian-bruhin",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "qutebrowser"
       ]
@@ -3448,7 +3448,7 @@
     "manufacturer": "qwant",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "QwantiOS",
         "QwantMobile",
@@ -3462,7 +3462,7 @@
     "manufacturer": "qword-corporation",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Qword"
       ]
@@ -3474,7 +3474,7 @@
     "manufacturer": "kde",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Version",
         "rekonq"
@@ -3487,7 +3487,7 @@
     "manufacturer": "yahoo",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "RockMelt"
       ]
@@ -3499,7 +3499,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "RubyBrowser"
       ]
@@ -3511,7 +3511,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Ruunk"
       ]
@@ -3543,7 +3543,7 @@
     "manufacturer": "jolla",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "SailfishBrowser"
       ]
@@ -3555,7 +3555,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Salam Browser"
       ]
@@ -3567,7 +3567,7 @@
     "manufacturer": "salamweb",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "SalamWeb"
       ]
@@ -3589,7 +3589,7 @@
     "manufacturer": "samsung",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "SamsungBrowser",
         "Version"
@@ -3622,7 +3622,7 @@
     "manufacturer": "hp",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "SWB\\/V",
         "SWB"
@@ -3635,7 +3635,7 @@
     "manufacturer": "sony-ericsson",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "SEMC\\-Browser"
       ]
@@ -3647,7 +3647,7 @@
     "manufacturer": "seznam",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Seznam\\.cz",
         "SznProhlizec"
@@ -3670,7 +3670,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Shiira"
       ]
@@ -3692,7 +3692,7 @@
     "manufacturer": "provisio",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "SiteKiosk"
       ]
@@ -3704,7 +3704,7 @@
     "manufacturer": "opera",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Skyfire"
       ]
@@ -3716,7 +3716,7 @@
     "manufacturer": "fenrir",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Version",
         "Sleipnir"
@@ -3729,7 +3729,7 @@
     "manufacturer": "flashpeak",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "SlimBoat"
       ]
@@ -3741,7 +3741,7 @@
     "manufacturer": "flashpeak",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "SlimBrowser"
       ]
@@ -3753,7 +3753,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "SlimerJS"
       ]
@@ -3765,7 +3765,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Slimjet"
       ]
@@ -3777,7 +3777,7 @@
     "manufacturer": "samsung",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "SmartTV",
         "SMART\\-TV",
@@ -3791,7 +3791,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Snowshoe"
       ]
@@ -3803,7 +3803,7 @@
     "manufacturer": "sogou",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "SE"
       ]
@@ -3816,7 +3816,7 @@
     "bits": 32,
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "SogouMobileBrowser"
       ]
@@ -3828,7 +3828,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Songbird"
       ]
@@ -3840,7 +3840,7 @@
     "manufacturer": "sony",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "SonyCEBrowser"
       ]
@@ -3852,7 +3852,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Spector",
         "Spector%20Pro"
@@ -3875,7 +3875,7 @@
     "manufacturer": "seraphic",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "SRAF"
       ]
@@ -3887,7 +3887,7 @@
     "manufacturer": "mesa",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Stainless"
       ]
@@ -3899,7 +3899,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Strata"
       ]
@@ -3911,7 +3911,7 @@
     "manufacturer": "mozilla-foundation",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Sunbird"
       ]
@@ -3923,7 +3923,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Sundance"
       ]
@@ -3935,7 +3935,7 @@
     "manufacturer": "zetakey-solutions",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "SunriseBrowser",
         "Sunrise"
@@ -3948,7 +3948,7 @@
     "manufacturer": "superbird",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Superbird"
       ]
@@ -3960,7 +3960,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Superswan"
       ]
@@ -3972,7 +3972,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "SurfBrowser",
         "Surf"
@@ -3985,7 +3985,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Swiftfox"
       ]
@@ -3997,7 +3997,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "SymphonyBrowser"
       ]
@@ -4009,7 +4009,7 @@
     "manufacturer": "browser-edson-thiago",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Tbrowser"
       ]
@@ -4021,7 +4021,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "TOB"
       ]
@@ -4033,7 +4033,7 @@
     "manufacturer": "obigo",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "MIC",
         "ObigoInternetBrowser",
@@ -4061,7 +4061,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Tenta"
       ]
@@ -4073,7 +4073,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Terra",
         "TerraFree",
@@ -4087,7 +4087,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "TeslaBrowser"
       ]
@@ -4109,7 +4109,7 @@
     "manufacturer": "baidu",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "tieba"
       ]
@@ -4121,7 +4121,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "TinyBrowser"
       ]
@@ -4133,7 +4133,7 @@
     "manufacturer": "linux-foundation",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Version"
       ]
@@ -4145,7 +4145,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "TizenBrowser",
         "Tizen Browser"
@@ -4168,7 +4168,7 @@
     "manufacturer": "stephen ostermiller",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "TulipChain"
       ]
@@ -4180,7 +4180,7 @@
     "manufacturer": "adaptive-bee",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "UR Browser",
         "URBrowser",
@@ -4194,7 +4194,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Vanillasurf"
       ]
@@ -4206,7 +4206,7 @@
     "manufacturer": "panasonic",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Viera",
         "SMART\\-TV"
@@ -4219,7 +4219,7 @@
     "manufacturer": "vivaldi",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Vivaldi"
       ]
@@ -4231,7 +4231,7 @@
     "manufacturer": "vivo",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "VivoBrowser"
       ]
@@ -4243,7 +4243,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "VmsMosaic"
       ]
@@ -4255,7 +4255,7 @@
     "manufacturer": "zzo38",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Vonkeror"
       ]
@@ -4267,7 +4267,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Vonnacom"
       ]
@@ -4279,7 +4279,7 @@
     "manufacturer": "sakamoto-hironori",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "w3m"
       ]
@@ -4291,7 +4291,7 @@
     "manufacturer": "waterfox-project",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "WaterFox",
         "Waterfox",
@@ -4305,7 +4305,7 @@
     "manufacturer": "palm",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "WebPro"
       ]
@@ -4317,7 +4317,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "WebianShell"
       ]
@@ -4329,7 +4329,7 @@
     "manufacturer": "hp",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Version",
         "webOS",
@@ -4343,7 +4343,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "WebOX"
       ]
@@ -4365,7 +4365,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "WebTV"
       ]
@@ -4387,7 +4387,7 @@
     "manufacturer": "nhn-corporation",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Whale"
       ]
@@ -4399,7 +4399,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "WikiBrowser"
       ]
@@ -4411,7 +4411,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "WinWAP",
         "WinWAP\\-PRO"
@@ -4424,7 +4424,7 @@
     "manufacturer": "keanu-lee",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "wkbrowser"
       ]
@@ -4436,7 +4436,7 @@
     "manufacturer": "turkcell",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "YaaniBrowser"
       ]
@@ -4448,7 +4448,7 @@
     "manufacturer": "yandex",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "YaBrowser"
       ]
@@ -4460,7 +4460,7 @@
     "manufacturer": "yandex",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "YaBrowser"
       ]
@@ -4472,7 +4472,7 @@
     "manufacturer": "yandex",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "YaSearchBrowser",
         "YandexSearchBrowser"
@@ -4485,7 +4485,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Yowser"
       ]
@@ -4497,7 +4497,7 @@
     "manufacturer": "zetakey-solutions",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Zetakey"
       ]
@@ -4509,7 +4509,7 @@
     "manufacturer": "kawe-apps",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Web Explorer",
         "webexplorer"
@@ -4522,7 +4522,7 @@
     "manufacturer": "amazon",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Silk"
       ]
@@ -4534,7 +4534,7 @@
     "manufacturer": "lenovo",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "SLBrowser"
       ]
@@ -4546,7 +4546,7 @@
     "manufacturer": "privacywall",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "PrivacyWall"
       ]
@@ -4558,7 +4558,7 @@
     "manufacturer": "ghostery",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Ghostery",
         "Ghostery:",
@@ -4573,7 +4573,7 @@
     "manufacturer": "eyeo",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "ABB"
       ]
@@ -4585,7 +4585,7 @@
     "manufacturer": "pi community",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "PiBrowser"
       ]
@@ -4597,7 +4597,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "NetPositive"
       ]
@@ -4609,7 +4609,7 @@
     "manufacturer": "kaylon-technologies",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Powermarks"
       ]
@@ -4621,7 +4621,7 @@
     "manufacturer": "unknown",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "UBrowser"
       ]
@@ -4633,7 +4633,7 @@
     "manufacturer": "aol",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "AOLShield"
       ]
@@ -4645,7 +4645,7 @@
     "manufacturer": "t-craft",
     "type": "browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "CravingExplorer"
       ]

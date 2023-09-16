@@ -4,7 +4,7 @@
     "manufacturer": "nokia",
     "type": "transcoder",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "OviBrowser"
       ]
@@ -16,7 +16,7 @@
     "manufacturer": "opera",
     "type": "transcoder",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Opera Mini"
       ]
@@ -28,7 +28,7 @@
     "manufacturer": "opera",
     "type": "transcoder",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "OPiOS"
       ]
@@ -40,7 +40,7 @@
     "manufacturer": "ucweb",
     "type": "transcoder",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "UC Browser",
         "UCBrowser",
@@ -55,7 +55,7 @@
     "manufacturer": "ucweb",
     "type": "transcoder",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "UCMini",
         "UC Browser",
@@ -71,7 +71,7 @@
     "manufacturer": "ucweb",
     "type": "transcoder",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "UCTurbo"
       ]
@@ -83,7 +83,7 @@
     "manufacturer": "novarra",
     "type": "transcoder",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Novarra\\-Vision"
       ]

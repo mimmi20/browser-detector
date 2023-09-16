@@ -16,7 +16,7 @@ use Psr\Log\LoggerInterface;
 
 use function mb_strpos;
 
-final class Maxthon implements VersionDetectorInterface
+final class Maxthon implements VersionFactoryInterface
 {
     public const SEARCHES = ['MxBrowser\\-iPhone', 'Maxthon', 'MxBrowser', 'Version'];
 
@@ -27,7 +27,7 @@ final class Maxthon implements VersionDetectorInterface
     /** @throws void */
     public function __construct(
         private readonly LoggerInterface $logger,
-        private readonly VersionFactoryInterface $versionFactory,
+        private readonly VersionBuilderInterface $versionBuilder,
     ) {
         // nothing to do
     }
@@ -41,7 +41,7 @@ final class Maxthon implements VersionDetectorInterface
     {
         if (mb_strpos($useragent, 'MyIE2') !== false) {
             try {
-                return $this->versionFactory->set('2.0');
+                return $this->versionBuilder->set('2.0');
             } catch (NotNumericException $e) {
                 $this->logger->info($e);
             }
@@ -50,10 +50,10 @@ final class Maxthon implements VersionDetectorInterface
         }
 
         if (mb_strpos($useragent, 'MyIE') !== false) {
-            $this->versionFactory->setRegex(self::REGEX);
+            $this->versionBuilder->setRegex(self::REGEX);
 
             try {
-                return $this->versionFactory->detectVersion($useragent, self::SEARCH_OLD);
+                return $this->versionBuilder->detectVersion($useragent, self::SEARCH_OLD);
             } catch (NotNumericException $e) {
                 $this->logger->info($e);
             }
@@ -62,7 +62,7 @@ final class Maxthon implements VersionDetectorInterface
         }
 
         try {
-            return $this->versionFactory->detectVersion($useragent, self::SEARCHES);
+            return $this->versionBuilder->detectVersion($useragent, self::SEARCHES);
         } catch (NotNumericException $e) {
             $this->logger->info($e);
         }

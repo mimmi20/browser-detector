@@ -4,7 +4,7 @@
     "manufacturer": "bloop",
     "type": "email-client",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Airmail"
       ]
@@ -16,7 +16,7 @@
     "manufacturer": "unknown",
     "type": "email-client",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "CronoMail"
       ]
@@ -38,7 +38,7 @@
     "manufacturer": "inboxcube",
     "type": "email-client",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Inboxcube"
       ]
@@ -50,7 +50,7 @@
     "manufacturer": "unknown",
     "type": "email-client",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Incredimail",
         "Incredimail\\-"
@@ -63,7 +63,7 @@
     "manufacturer": "kde",
     "type": "email-client",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "kmail2"
       ]
@@ -75,7 +75,7 @@
     "manufacturer": "kde",
     "type": "email-client",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "kontact"
       ]
@@ -87,7 +87,7 @@
     "manufacturer": "ibm",
     "type": "email-client",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "LotusNotes",
         "Lotus\\-Notes"
@@ -100,7 +100,7 @@
     "manufacturer": "mailbar",
     "type": "email-client",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "MailBar"
       ]
@@ -112,7 +112,7 @@
     "manufacturer": "microsoft",
     "type": "email-client",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "outlook social connector",
         "microsoft office outlook",
@@ -126,7 +126,7 @@
     "manufacturer": "postbox",
     "type": "email-client",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Postbox"
       ]
@@ -138,7 +138,7 @@
     "manufacturer": "eightloops",
     "type": "email-client",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Unibox"
       ]
@@ -150,7 +150,7 @@
     "manufacturer": "italiaonline",
     "type": "email-client",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "VirgilioMail"
       ]

@@ -17,12 +17,12 @@ use Psr\Log\LoggerInterface;
 use function array_unshift;
 use function mb_stripos;
 
-final class RimOs implements VersionDetectorInterface
+final class RimOs implements VersionFactoryInterface
 {
     /** @throws void */
     public function __construct(
         private readonly LoggerInterface $logger,
-        private readonly VersionFactoryInterface $versionFactory,
+        private readonly VersionBuilderInterface $versionBuilder,
     ) {
         // nothing to do
     }
@@ -36,7 +36,7 @@ final class RimOs implements VersionDetectorInterface
     {
         if (mb_stripos($useragent, 'bb10') !== false && mb_stripos($useragent, 'version') === false) {
             try {
-                return $this->versionFactory->set('10.0.0');
+                return $this->versionBuilder->set('10.0.0');
             } catch (NotNumericException $e) {
                 $this->logger->info($e);
             }
@@ -51,7 +51,7 @@ final class RimOs implements VersionDetectorInterface
         }
 
         try {
-            return $this->versionFactory->detectVersion($useragent, $searches);
+            return $this->versionBuilder->detectVersion($useragent, $searches);
         } catch (NotNumericException $e) {
             $this->logger->info($e);
         }

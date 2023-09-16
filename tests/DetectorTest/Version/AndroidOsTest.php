@@ -15,7 +15,8 @@ namespace BrowserDetectorTest\Version;
 use BrowserDetector\Version\AndroidOs;
 use BrowserDetector\Version\NotNumericException;
 use BrowserDetector\Version\NullVersion;
-use BrowserDetector\Version\VersionFactory;
+use BrowserDetector\Version\VersionBuilder;
+use BrowserDetector\Version\VersionBuilderInterface;
 use BrowserDetector\Version\VersionFactoryInterface;
 use BrowserDetector\Version\VersionInterface;
 use PHPUnit\Framework\Attributes\DataProvider;
@@ -62,7 +63,7 @@ final class AndroidOsTest extends TestCase
             ->method('emergency');
 
         assert($logger instanceof LoggerInterface);
-        $object = new AndroidOs($logger, new VersionFactory());
+        $object = new AndroidOs($logger, new VersionBuilder($logger));
 
         $detectedVersion = $object->detectVersion($useragent);
 
@@ -153,19 +154,19 @@ final class AndroidOsTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $versionFactory = $this->createMock(VersionFactoryInterface::class);
-        $versionFactory
+        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
             ->expects(self::once())
             ->method('detectVersion')
             ->with($useragent, AndroidOs::SEARCHES)
             ->willThrowException($exception);
-        $versionFactory
+        $versionBuilder
             ->expects(self::never())
             ->method('set');
 
         assert($logger instanceof LoggerInterface);
-        assert($versionFactory instanceof VersionFactoryInterface);
-        $object = new AndroidOs($logger, $versionFactory);
+        assert($versionBuilder instanceof VersionFactoryInterface);
+        $object = new AndroidOs($logger, $versionBuilder);
 
         $detectedVersion = $object->detectVersion($useragent);
 
@@ -206,16 +207,16 @@ final class AndroidOsTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $versionFactory = $this->createMock(VersionFactoryInterface::class);
-        $versionFactory
+        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
             ->expects(self::once())
             ->method('set')
             ->with('4.4.4')
             ->willThrowException($exception);
 
         assert($logger instanceof LoggerInterface);
-        assert($versionFactory instanceof VersionFactoryInterface);
-        $object = new AndroidOs($logger, $versionFactory);
+        assert($versionBuilder instanceof VersionFactoryInterface);
+        $object = new AndroidOs($logger, $versionBuilder);
 
         $detectedVersion = $object->detectVersion($useragent);
 
@@ -256,16 +257,16 @@ final class AndroidOsTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $versionFactory = $this->createMock(VersionFactoryInterface::class);
-        $versionFactory
+        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
             ->expects(self::once())
             ->method('set')
             ->with('2.3.0')
             ->willThrowException($exception);
 
         assert($logger instanceof LoggerInterface);
-        assert($versionFactory instanceof VersionFactoryInterface);
-        $object = new AndroidOs($logger, $versionFactory);
+        assert($versionBuilder instanceof VersionFactoryInterface);
+        $object = new AndroidOs($logger, $versionBuilder);
 
         $detectedVersion = $object->detectVersion($useragent);
 
@@ -306,16 +307,16 @@ final class AndroidOsTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $versionFactory = $this->createMock(VersionFactoryInterface::class);
-        $versionFactory
+        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
             ->expects(self::once())
             ->method('set')
             ->with('2.1.0')
             ->willThrowException($exception);
 
         assert($logger instanceof LoggerInterface);
-        assert($versionFactory instanceof VersionFactoryInterface);
-        $object = new AndroidOs($logger, $versionFactory);
+        assert($versionBuilder instanceof VersionFactoryInterface);
+        $object = new AndroidOs($logger, $versionBuilder);
 
         $detectedVersion = $object->detectVersion($useragent);
 
@@ -356,16 +357,16 @@ final class AndroidOsTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $versionFactory = $this->createMock(VersionFactoryInterface::class);
-        $versionFactory
+        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
             ->expects(self::once())
             ->method('set')
             ->with('4.4.4')
             ->willThrowException($exception);
 
         assert($logger instanceof LoggerInterface);
-        assert($versionFactory instanceof VersionFactoryInterface);
-        $object = new AndroidOs($logger, $versionFactory);
+        assert($versionBuilder instanceof VersionFactoryInterface);
+        $object = new AndroidOs($logger, $versionBuilder);
 
         $detectedVersion = $object->detectVersion($useragent);
 
@@ -406,16 +407,16 @@ final class AndroidOsTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $versionFactory = $this->createMock(VersionFactoryInterface::class);
-        $versionFactory
+        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
             ->expects(self::once())
             ->method('set')
             ->with('2.1.1')
             ->willThrowException($exception);
 
         assert($logger instanceof LoggerInterface);
-        assert($versionFactory instanceof VersionFactoryInterface);
-        $object = new AndroidOs($logger, $versionFactory);
+        assert($versionBuilder instanceof VersionFactoryInterface);
+        $object = new AndroidOs($logger, $versionBuilder);
 
         $detectedVersion = $object->detectVersion($useragent);
 
@@ -456,16 +457,16 @@ final class AndroidOsTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $versionFactory = $this->createMock(VersionFactoryInterface::class);
-        $versionFactory
+        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
             ->expects(self::once())
             ->method('set')
             ->with('6.0')
             ->willThrowException($exception);
 
         assert($logger instanceof LoggerInterface);
-        assert($versionFactory instanceof VersionFactoryInterface);
-        $object = new AndroidOs($logger, $versionFactory);
+        assert($versionBuilder instanceof VersionFactoryInterface);
+        $object = new AndroidOs($logger, $versionBuilder);
 
         $detectedVersion = $object->detectVersion($useragent);
 

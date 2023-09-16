@@ -18,7 +18,8 @@ use BrowserDetector\Version\NotNumericException;
 use BrowserDetector\Version\NullVersion;
 use BrowserDetector\Version\Safari;
 use BrowserDetector\Version\Version;
-use BrowserDetector\Version\VersionFactory;
+use BrowserDetector\Version\VersionBuilder;
+use BrowserDetector\Version\VersionBuilderInterface;
 use BrowserDetector\Version\VersionFactoryInterface;
 use BrowserDetector\Version\VersionInterface;
 use PHPUnit\Framework\Attributes\DataProvider;
@@ -65,7 +66,7 @@ final class SafariTest extends TestCase
             ->method('emergency');
 
         assert($logger instanceof LoggerInterface);
-        $object = new Safari($logger, new VersionFactory(), new SafariHelper());
+        $object = new Safari($logger, new VersionBuilder($logger), new SafariHelper());
 
         $detectedVersion = $object->detectVersion($useragent);
 
@@ -127,8 +128,8 @@ final class SafariTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $versionFactory = $this->createMock(VersionFactoryInterface::class);
-        $versionFactory
+        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
             ->expects(self::once())
             ->method('set')
             ->with('4.0')
@@ -140,9 +141,9 @@ final class SafariTest extends TestCase
             ->method('mapSafariVersion');
 
         assert($logger instanceof LoggerInterface);
-        assert($versionFactory instanceof VersionFactoryInterface);
+        assert($versionBuilder instanceof VersionFactoryInterface);
         assert($safariHelper instanceof SafariInterface);
-        $object = new Safari($logger, $versionFactory, $safariHelper);
+        $object = new Safari($logger, $versionBuilder, $safariHelper);
 
         $detectedVersion = $object->detectVersion(
             'Mozilla/5.0 (Linux; U; Android 4.2.2; ru-ru; ImPAD 9708 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
@@ -186,8 +187,8 @@ final class SafariTest extends TestCase
             ->method('emergency');
 
         $mappedVersion  = new Version('2');
-        $versionFactory = $this->createMock(VersionFactoryInterface::class);
-        $versionFactory
+        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
             ->expects(self::once())
             ->method('set')
             ->with('4.0')
@@ -201,9 +202,9 @@ final class SafariTest extends TestCase
             ->willReturn(null);
 
         assert($logger instanceof LoggerInterface);
-        assert($versionFactory instanceof VersionFactoryInterface);
+        assert($versionBuilder instanceof VersionFactoryInterface);
         assert($safariHelper instanceof SafariInterface);
-        $object = new Safari($logger, $versionFactory, $safariHelper);
+        $object = new Safari($logger, $versionBuilder, $safariHelper);
 
         $detectedVersion = $object->detectVersion(
             'Mozilla/5.0 (Linux; U; Android 4.2.2; ru-ru; ImPAD 9708 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',
@@ -249,9 +250,9 @@ final class SafariTest extends TestCase
             ->method('emergency');
 
         $mappedVersionOne = new Version('2');
-        $versionFactory   = $this->createMock(VersionFactoryInterface::class);
+        $versionBuilder   = $this->createMock(VersionBuilderInterface::class);
         $matcher          = self::exactly(2);
-        $versionFactory
+        $versionBuilder
             ->expects($matcher)
             ->method('set')
             ->willReturnCallback(
@@ -276,9 +277,9 @@ final class SafariTest extends TestCase
             ->willReturn('1.0');
 
         assert($logger instanceof LoggerInterface);
-        assert($versionFactory instanceof VersionFactoryInterface);
+        assert($versionBuilder instanceof VersionFactoryInterface);
         assert($safariHelper instanceof SafariInterface);
-        $object = new Safari($logger, $versionFactory, $safariHelper);
+        $object = new Safari($logger, $versionBuilder, $safariHelper);
 
         $detectedVersion = $object->detectVersion(
             'Mozilla/5.0 (Linux; U; Android 4.2.2; ru-ru; ImPAD 9708 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30',

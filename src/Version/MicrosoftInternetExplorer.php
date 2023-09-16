@@ -18,7 +18,7 @@ use UnexpectedValueException;
 use function preg_match;
 use function version_compare;
 
-final class MicrosoftInternetExplorer implements VersionDetectorInterface
+final class MicrosoftInternetExplorer implements VersionFactoryInterface
 {
     private const VERSIONS = [
         '8' => '11.0',
@@ -31,8 +31,8 @@ final class MicrosoftInternetExplorer implements VersionDetectorInterface
     /** @throws void */
     public function __construct(
         private readonly LoggerInterface $logger,
-        private readonly VersionFactoryInterface $versionFactory,
-        private readonly VersionDetectorInterface $trident,
+        private readonly VersionBuilderInterface $versionBuilder,
+        private readonly VersionFactoryInterface $trident,
     ) {
         // nothing to do
     }
@@ -40,20 +40,26 @@ final class MicrosoftInternetExplorer implements VersionDetectorInterface
     /**
      * returns the version of the operating system/platform
      *
-     * @throws UnexpectedValueException
+     * @throws void
      */
     public function detectVersion(string $useragent): VersionInterface
     {
-        $version = $this->trident->detectVersion($useragent);
+        try {
+            $version = $this->trident->detectVersion($useragent);
+        } catch (NotNumericException | UnexpectedValueException $e) {
+            $this->logger->info($e);
 
-        if ($version->getMajor() !== null) {
+            $version = null;
+        }
+
+        if ($version instanceof VersionInterface && $version->getMajor() !== null) {
             foreach (self::VERSIONS as $engineVersion => $ieVersion) {
                 if (!version_compare($version->getMajor(), (string) $engineVersion, '>=')) {
                     continue;
                 }
 
                 try {
-                    return $this->versionFactory->set($ieVersion);
+                    return $this->versionBuilder->set($ieVersion);
                 } catch (NotNumericException $e) {
                     $this->logger->info($e);
                 }
@@ -64,7 +70,7 @@ final class MicrosoftInternetExplorer implements VersionDetectorInterface
 
         if ($doMatch) {
             try {
-                return $this->versionFactory->set($matches['version']);
+                return $this->versionBuilder->set($matches['version']);
             } catch (NotNumericException $e) {
                 $this->logger->info($e);
             }

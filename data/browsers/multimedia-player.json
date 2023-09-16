@@ -14,7 +14,7 @@
     "manufacturer": "acast",
     "type": "multimedia-player",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Acast"
       ]
@@ -26,7 +26,7 @@
     "manufacturer": "unknown",
     "type": "multimedia-player",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "AlexaMediaPlayer"
       ]
@@ -38,7 +38,7 @@
     "manufacturer": "unknown",
     "type": "multimedia-player",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Alizee iPod"
       ]
@@ -50,7 +50,7 @@
     "manufacturer": "unknown",
     "type": "multimedia-player",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "amarok"
       ]
@@ -92,7 +92,7 @@
     "manufacturer": "beyondpod-team",
     "type": "multimedia-player",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "BeyondPod"
       ]
@@ -124,7 +124,7 @@
     "manufacturer": "deezer",
     "type": "multimedia-player",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Deezer"
       ]
@@ -136,7 +136,7 @@
     "manufacturer": "deezer",
     "type": "multimedia-player",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "DeezerJukebox"
       ]
@@ -158,7 +158,7 @@
     "manufacturer": "unknown",
     "type": "multimedia-player",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Downcast"
       ]
@@ -170,7 +170,7 @@
     "manufacturer": "eltima-software",
     "type": "multimedia-player",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "ElmediaPlayer"
       ]
@@ -182,7 +182,7 @@
     "manufacturer": "espn",
     "type": "multimedia-player",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "ESPN%20Radio",
         "ESPN Radio"
@@ -195,7 +195,7 @@
     "manufacturer": "unknown",
     "type": "multimedia-player",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "ExoPlayer"
       ]
@@ -207,7 +207,7 @@
     "manufacturer": "unknown",
     "type": "multimedia-player",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "ExoPlayerLib"
       ]
@@ -219,7 +219,7 @@
     "manufacturer": "unknown",
     "type": "multimedia-player",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Fancy Cloud Music"
       ]
@@ -231,7 +231,7 @@
     "manufacturer": "unknown",
     "type": "multimedia-player",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "FancyMusic"
       ]
@@ -243,7 +243,7 @@
     "manufacturer": "unknown",
     "type": "multimedia-player",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Free-Podcasts"
       ]
@@ -265,7 +265,7 @@
     "manufacturer": "unknown",
     "type": "multimedia-player",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "iPodder"
       ]
@@ -297,7 +297,7 @@
     "manufacturer": "xbmc-foundation",
     "type": "multimedia-player",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Kodi"
       ]
@@ -309,7 +309,7 @@
     "manufacturer": "lg",
     "type": "multimedia-player",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "LG Player"
       ]
@@ -331,7 +331,7 @@
     "manufacturer": "unknown",
     "type": "multimedia-player",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "MathPlayer"
       ]
@@ -343,7 +343,7 @@
     "manufacturer": "unknown",
     "type": "multimedia-player",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "MusicDownloader"
       ]
@@ -355,7 +355,7 @@
     "manufacturer": "unknown",
     "type": "multimedia-player",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "MusicDownloaderLite"
       ]
@@ -377,7 +377,7 @@
     "manufacturer": "nexstreaming",
     "type": "multimedia-player",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "NexPlayer"
       ]
@@ -419,7 +419,7 @@
     "manufacturer": "unknown",
     "type": "multimedia-player",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "PodcastAddict\\/v",
         "PodcastAddict"
@@ -432,7 +432,7 @@
     "manufacturer": "unknown",
     "type": "multimedia-player",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Podcaster"
       ]
@@ -444,7 +444,7 @@
     "manufacturer": "unknown",
     "type": "multimedia-player",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "PodcastOne"
       ]
@@ -456,7 +456,7 @@
     "manufacturer": "unknown",
     "type": "multimedia-player",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "PodcastRepublic"
       ]
@@ -468,7 +468,7 @@
     "manufacturer": "unknown",
     "type": "multimedia-player",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Podcasts"
       ]
@@ -480,7 +480,7 @@
     "manufacturer": "unknown",
     "type": "multimedia-player",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Podcat"
       ]
@@ -492,7 +492,7 @@
     "manufacturer": "unknown",
     "type": "multimedia-player",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "PodCruncher"
       ]
@@ -504,7 +504,7 @@
     "manufacturer": "unknown",
     "type": "multimedia-player",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Podkicker"
       ]
@@ -516,7 +516,7 @@
     "manufacturer": "unknown",
     "type": "multimedia-player",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Podkicker Classic"
       ]
@@ -528,7 +528,7 @@
     "manufacturer": "unknown",
     "type": "multimedia-player",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Podkicker Pro"
       ]
@@ -540,7 +540,7 @@
     "manufacturer": "unknown",
     "type": "multimedia-player",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "PodWrangler"
       ]
@@ -552,7 +552,7 @@
     "manufacturer": "dsa-solutions",
     "type": "multimedia-player",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Procast"
       ]
@@ -564,7 +564,7 @@
     "manufacturer": "apple",
     "type": "multimedia-player",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "qtver=",
         "Quicktime",
@@ -578,7 +578,7 @@
     "manufacturer": "qvod-technology",
     "type": "multimedia-player",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "QvodPlayerBrowser",
         "QvodPlayerBrowser:"
@@ -651,7 +651,7 @@
     "manufacturer": "roku",
     "type": "multimedia-player",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Roku\\/DVP\\-"
       ]
@@ -663,7 +663,7 @@
     "manufacturer": "dorada",
     "type": "multimedia-player",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "RSS_?Radio"
       ]
@@ -715,7 +715,7 @@
     "manufacturer": "unknown",
     "type": "multimedia-player",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "streamradio"
       ]
@@ -737,7 +737,7 @@
     "manufacturer": "unknown",
     "type": "multimedia-player",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "TopPodcasts"
       ]
@@ -749,7 +749,7 @@
     "manufacturer": "packet-video",
     "type": "multimedia-player",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "TwonkyBeamBrowser"
       ]
@@ -761,7 +761,7 @@
     "manufacturer": "video-lan",
     "type": "multimedia-player",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "VLC for iOS",
         "VLC"
@@ -774,7 +774,7 @@
     "manufacturer": "unknown",
     "type": "multimedia-player",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "WinampMPEG"
       ]
@@ -786,7 +786,7 @@
     "manufacturer": "microsoft",
     "type": "multimedia-player",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Windows\\-Media\\-Player",
         "NSPlayer"
@@ -799,7 +799,7 @@
     "manufacturer": "xbmc-foundation",
     "type": "multimedia-player",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Kodi"
       ]
@@ -811,7 +811,7 @@
     "manufacturer": "microsoft",
     "type": "multimedia-player",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Zune"
       ]
@@ -823,7 +823,7 @@
     "manufacturer": "apple",
     "type": "multimedia-player",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "iTunes\\-iPhone",
         "iTunes\\-iPad",

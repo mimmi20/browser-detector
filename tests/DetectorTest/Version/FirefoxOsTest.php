@@ -15,8 +15,8 @@ namespace BrowserDetectorTest\Version;
 use BrowserDetector\Version\FirefoxOs;
 use BrowserDetector\Version\NotNumericException;
 use BrowserDetector\Version\NullVersion;
-use BrowserDetector\Version\VersionFactory;
-use BrowserDetector\Version\VersionFactoryInterface;
+use BrowserDetector\Version\VersionBuilder;
+use BrowserDetector\Version\VersionBuilderInterface;
 use BrowserDetector\Version\VersionInterface;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\Exception;
@@ -60,7 +60,7 @@ final class FirefoxOsTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $object = new FirefoxOs($logger, new VersionFactory());
+        $object = new FirefoxOs($logger, new VersionBuilder($logger));
 
         $detectedVersion = $object->detectVersion($useragent);
 
@@ -162,17 +162,17 @@ final class FirefoxOsTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $versionFactory = $this->createMock(VersionFactoryInterface::class);
-        $versionFactory
+        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
             ->expects(self::never())
             ->method('detectVersion');
-        $versionFactory
+        $versionBuilder
             ->expects(self::once())
             ->method('set')
             ->with('2.1')
             ->willThrowException($exception);
 
-        $object = new FirefoxOs($logger, $versionFactory);
+        $object = new FirefoxOs($logger, $versionBuilder);
 
         $detectedVersion = $object->detectVersion($useragent);
 

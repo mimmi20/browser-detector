@@ -16,12 +16,12 @@ use Psr\Log\LoggerInterface;
 
 use function preg_match;
 
-final class Raspbian implements VersionDetectorInterface
+final class Raspbian implements VersionFactoryInterface
 {
     /** @throws void */
     public function __construct(
         private readonly LoggerInterface $logger,
-        private readonly VersionFactoryInterface $versionFactory,
+        private readonly VersionBuilderInterface $versionBuilder,
     ) {
         // nothing to do
     }
@@ -35,7 +35,7 @@ final class Raspbian implements VersionDetectorInterface
     {
         if (preg_match('/(?:raspbian|debian)\/(?P<version>[\d\.]+)/i', $useragent, $matches)) {
             try {
-                return $this->versionFactory->set($matches['version']);
+                return $this->versionBuilder->set($matches['version']);
             } catch (NotNumericException $e) {
                 $this->logger->info($e);
             }

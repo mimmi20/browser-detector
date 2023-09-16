@@ -17,7 +17,7 @@ use BrowserDetector\Loader\Helper\Data;
 use BrowserDetector\Loader\PlatformLoader;
 use BrowserDetector\Loader\PlatformLoaderInterface;
 use BrowserDetector\Parser\Helper\RulefileParser;
-use BrowserDetector\Version\VersionFactory;
+use BrowserDetector\Version\VersionBuilder;
 use Psr\Log\LoggerInterface;
 
 final class PlatformParserFactory implements PlatformParserFactoryInterface
@@ -40,7 +40,7 @@ final class PlatformParserFactory implements PlatformParserFactoryInterface
                 $this->logger,
                 new Data(PlatformLoader::DATA_PATH, 'json'),
                 $this->companyLoader,
-                new VersionFactory(),
+                new VersionBuilder($this->logger),
             );
         }
 

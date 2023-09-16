@@ -16,9 +16,9 @@ use BrowserDetector\Loader\CompanyLoaderInterface;
 use BrowserDetector\Loader\EngineLoader;
 use BrowserDetector\Loader\Helper\DataInterface;
 use BrowserDetector\Loader\NotFoundException;
-use BrowserDetector\Version\NullVersion;
 use BrowserDetector\Version\TestFactory;
-use BrowserDetector\Version\VersionFactoryInterface;
+use BrowserDetector\Version\VersionBuilderFactory;
+use BrowserDetector\Version\VersionBuilderInterface;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
@@ -74,18 +74,18 @@ final class EngineLoaderTest extends TestCase
             ->expects(self::never())
             ->method('load');
 
-        $versionFactory = $this->createMock(VersionFactoryInterface::class);
-        $versionFactory
+        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
             ->expects(self::never())
             ->method('setRegex');
-        $versionFactory
+        $versionBuilder
             ->expects(self::never())
             ->method('set');
-        $versionFactory
+        $versionBuilder
             ->expects(self::never())
             ->method('detectVersion');
 
-        $object = new EngineLoader($logger, $initData, $companyLoader, $versionFactory);
+        $object = new EngineLoader($logger, $initData, $companyLoader, $versionBuilder);
 
         $this->expectException(NotFoundException::class);
         $this->expectExceptionMessage('the engine with key "test-key" was not found');
@@ -143,18 +143,18 @@ final class EngineLoaderTest extends TestCase
             ->expects(self::never())
             ->method('load');
 
-        $versionFactory = $this->createMock(VersionFactoryInterface::class);
-        $versionFactory
+        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
             ->expects(self::never())
             ->method('setRegex');
-        $versionFactory
+        $versionBuilder
             ->expects(self::never())
             ->method('set');
-        $versionFactory
+        $versionBuilder
             ->expects(self::never())
             ->method('detectVersion');
 
-        $object = new EngineLoader($logger, $initData, $companyLoader, $versionFactory);
+        $object = new EngineLoader($logger, $initData, $companyLoader, $versionBuilder);
 
         $this->expectException(NotFoundException::class);
         $this->expectExceptionMessage('the engine with key "test-key" was not found');
@@ -225,18 +225,18 @@ final class EngineLoaderTest extends TestCase
             ->with('abc')
             ->willReturn($company);
 
-        $versionFactory = $this->createMock(VersionFactoryInterface::class);
-        $versionFactory
+        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
             ->expects(self::never())
             ->method('setRegex');
-        $versionFactory
+        $versionBuilder
             ->expects(self::never())
             ->method('set');
-        $versionFactory
+        $versionBuilder
             ->expects(self::never())
             ->method('detectVersion');
 
-        $object = new EngineLoader($logger, $initData, $companyLoader, $versionFactory);
+        $object = new EngineLoader($logger, $initData, $companyLoader, $versionBuilder);
 
         $result = $object->load('test-key', 'test-ua');
 
@@ -291,7 +291,7 @@ final class EngineLoaderTest extends TestCase
             ->willReturn(true);
 
         $engineData = (object) [
-            'version' => (object) ['class' => 'VersionFactory', 'search' => ['test']],
+            'version' => (object) ['factory' => '\\' . VersionBuilderFactory::class, 'search' => ['test']],
             'manufacturer' => 'abc',
             'name' => null,
         ];
@@ -311,20 +311,18 @@ final class EngineLoaderTest extends TestCase
             ->with('abc')
             ->willReturn($company);
 
-        $versionFactory = $this->createMock(VersionFactoryInterface::class);
-        $versionFactory
+        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
             ->expects(self::never())
             ->method('setRegex');
-        $versionFactory
+        $versionBuilder
             ->expects(self::never())
             ->method('set');
-        $versionFactory
-            ->expects(self::once())
-            ->method('detectVersion')
-            ->with('test-ua', ['test'])
-            ->willReturn(new NullVersion());
+        $versionBuilder
+            ->expects(self::never())
+            ->method('detectVersion');
 
-        $object = new EngineLoader($logger, $initData, $companyLoader, $versionFactory);
+        $object = new EngineLoader($logger, $initData, $companyLoader, $versionBuilder);
 
         $result = $object->load('test-key', 'test-ua');
 
@@ -399,18 +397,18 @@ final class EngineLoaderTest extends TestCase
             ->with('abc')
             ->willReturn($company);
 
-        $versionFactory = $this->createMock(VersionFactoryInterface::class);
-        $versionFactory
+        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
             ->expects(self::never())
             ->method('setRegex');
-        $versionFactory
+        $versionBuilder
             ->expects(self::never())
             ->method('set');
-        $versionFactory
+        $versionBuilder
             ->expects(self::never())
             ->method('detectVersion');
 
-        $object = new EngineLoader($logger, $initData, $companyLoader, $versionFactory);
+        $object = new EngineLoader($logger, $initData, $companyLoader, $versionBuilder);
 
         $result = $object->load('test-key', 'test-ua');
 
@@ -486,18 +484,18 @@ final class EngineLoaderTest extends TestCase
             ->with('abc')
             ->willThrowException($exeption);
 
-        $versionFactory = $this->createMock(VersionFactoryInterface::class);
-        $versionFactory
+        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
             ->expects(self::never())
             ->method('setRegex');
-        $versionFactory
+        $versionBuilder
             ->expects(self::never())
             ->method('set');
-        $versionFactory
+        $versionBuilder
             ->expects(self::never())
             ->method('detectVersion');
 
-        $object = new EngineLoader($logger, $initData, $companyLoader, $versionFactory);
+        $object = new EngineLoader($logger, $initData, $companyLoader, $versionBuilder);
 
         $result = $object->load('test-key', 'test-ua');
 

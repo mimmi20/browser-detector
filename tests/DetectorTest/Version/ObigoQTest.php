@@ -15,7 +15,8 @@ namespace BrowserDetectorTest\Version;
 use BrowserDetector\Version\NotNumericException;
 use BrowserDetector\Version\NullVersion;
 use BrowserDetector\Version\ObigoQ;
-use BrowserDetector\Version\VersionFactory;
+use BrowserDetector\Version\VersionBuilder;
+use BrowserDetector\Version\VersionBuilderInterface;
 use BrowserDetector\Version\VersionFactoryInterface;
 use BrowserDetector\Version\VersionInterface;
 use PHPUnit\Framework\Attributes\DataProvider;
@@ -63,7 +64,7 @@ final class ObigoQTest extends TestCase
             ->method('emergency');
 
         assert($logger instanceof LoggerInterface);
-        $object = new ObigoQ($logger, new VersionFactory());
+        $object = new ObigoQ($logger, new VersionBuilder($logger));
 
         $detectedVersion = $object->detectVersion($useragent);
 
@@ -140,16 +141,16 @@ final class ObigoQTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $versionFactory = $this->createMock(VersionFactoryInterface::class);
-        $versionFactory
+        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
             ->expects(self::once())
             ->method('set')
             ->with('5')
             ->willThrowException($exception);
 
         assert($logger instanceof LoggerInterface);
-        assert($versionFactory instanceof VersionFactoryInterface);
-        $object = new ObigoQ($logger, $versionFactory);
+        assert($versionBuilder instanceof VersionFactoryInterface);
+        $object = new ObigoQ($logger, $versionBuilder);
 
         $detectedVersion = $object->detectVersion(
             'ALCATEL_TRIBE_3075A/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q05A',
@@ -194,16 +195,16 @@ final class ObigoQTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $versionFactory = $this->createMock(VersionFactoryInterface::class);
-        $versionFactory
+        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
             ->expects(self::once())
             ->method('set')
             ->with('7.1')
             ->willThrowException($exception);
 
         assert($logger instanceof LoggerInterface);
-        assert($versionFactory instanceof VersionFactoryInterface);
-        $object = new ObigoQ($logger, $versionFactory);
+        assert($versionBuilder instanceof VersionFactoryInterface);
+        $object = new ObigoQ($logger, $versionBuilder);
 
         $detectedVersion = $object->detectVersion(
             'LG-GT505/v10a Browser/Teleca-Q7.1 MMS/LG-MMS-V1.0/1.2 MediaPlayer/LGPlayer/1.0 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1',

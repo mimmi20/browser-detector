@@ -22,7 +22,7 @@ final class SafariFactory implements SafariFactoryInterface
     {
         return new Safari(
             $logger,
-            new VersionFactory(),
+            new VersionBuilder($logger),
             new SafariHelper(),
         );
     }

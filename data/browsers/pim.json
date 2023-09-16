@@ -4,7 +4,7 @@
     "manufacturer": "em-client",
     "type": "pim",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "eM Client"
       ]
@@ -26,7 +26,7 @@
     "manufacturer": "mozilla-foundation",
     "type": "pim",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "SeaMonkey",
         "Seamonkey"
@@ -39,7 +39,7 @@
     "manufacturer": "spark-mail",
     "type": "pim",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "SparkDesktop"
       ]
@@ -51,7 +51,7 @@
     "manufacturer": "software-in-the-public-interest",
     "type": "pim",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Iceape"
       ]
@@ -63,7 +63,7 @@
     "manufacturer": "foundry-376",
     "type": "pim",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Mailspring"
       ]
@@ -75,7 +75,7 @@
     "manufacturer": "microsoft",
     "type": "pim",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "microsoft office outlook",
         "microsoft outlook"
@@ -88,7 +88,7 @@
     "manufacturer": "mozilla-foundation",
     "type": "pim",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Thunderbird\\-Portable",
         "Thunderbird"
@@ -111,7 +111,7 @@
     "manufacturer": "microsoft",
     "type": "pim",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Outlook-Express"
       ]

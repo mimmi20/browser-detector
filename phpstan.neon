@@ -95,9 +95,9 @@ parameters:
       tooWideThrowType: true
 
   ignoreErrors:
-    -
-      message: '~is never read, only written~'
-      path: src/Detector.php
+#    -
+#      message: '~is never read, only written~'
+#      path: src/Detector.php
     -
       message: '~Parameter #1 \$request of method BrowserDetector\\RequestBuilder::buildRequest\(\) expects array<non-empty-string, non-empty-string>~'
       path: tests/DetectorTest/RequestBuilderTest.php

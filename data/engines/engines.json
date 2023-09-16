@@ -19,7 +19,7 @@
     "name": "Blink",
     "manufacturer": "google",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Chrome"
       ]
@@ -29,7 +29,7 @@
     "name": "Clecko",
     "manufacturer": "unknown",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "rv:"
       ]
@@ -39,7 +39,7 @@
     "name": "Edge",
     "manufacturer": "microsoft",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Edge"
       ]
@@ -65,7 +65,7 @@
     "name": "KHTML",
     "manufacturer": "unknown",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "KHTML"
       ]
@@ -83,7 +83,7 @@
     "name": "Presto",
     "manufacturer": "opera",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Presto"
       ]
@@ -93,7 +93,7 @@
     "name": "Servo",
     "manufacturer": "mozilla-foundation",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Servo"
       ]
@@ -103,7 +103,7 @@
     "name": "T5",
     "manufacturer": "baidu",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "T5"
       ]
@@ -113,7 +113,7 @@
     "name": "T7",
     "manufacturer": "baidu",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "T7"
       ]
@@ -139,7 +139,7 @@
     "name": "Treco",
     "manufacturer": "arsslensoft",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "rv:"
       ]
@@ -157,7 +157,7 @@
     "name": "U2",
     "manufacturer": "ucweb",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "U2"
       ]
@@ -167,7 +167,7 @@
     "name": "U3",
     "manufacturer": "ucweb",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "U3"
       ]
@@ -177,7 +177,7 @@
     "name": "WebKit",
     "manufacturer": "apple",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "AppleWebKit",
         "WebKit",

@@ -21,7 +21,7 @@ final class AndroidOsFactory implements AndroidOsFactoryInterface
     {
         return new AndroidOs(
             $logger,
-            new VersionFactory(),
+            new VersionBuilder($logger),
         );
     }
 }

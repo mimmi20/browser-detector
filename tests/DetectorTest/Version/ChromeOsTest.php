@@ -15,7 +15,8 @@ namespace BrowserDetectorTest\Version;
 use BrowserDetector\Version\ChromeOs;
 use BrowserDetector\Version\NotNumericException;
 use BrowserDetector\Version\NullVersion;
-use BrowserDetector\Version\VersionFactory;
+use BrowserDetector\Version\VersionBuilder;
+use BrowserDetector\Version\VersionBuilderInterface;
 use BrowserDetector\Version\VersionFactoryInterface;
 use BrowserDetector\Version\VersionInterface;
 use PHPUnit\Framework\Attributes\DataProvider;
@@ -63,7 +64,7 @@ final class ChromeOsTest extends TestCase
             ->method('emergency');
 
         assert($logger instanceof LoggerInterface);
-        $object = new ChromeOs($logger, new VersionFactory());
+        $object = new ChromeOs($logger, new VersionBuilder($logger));
 
         $detectedVersion = $object->detectVersion($useragent);
 
@@ -129,16 +130,14 @@ final class ChromeOsTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $versionFactory = $this->createMock(VersionFactoryInterface::class);
-        $versionFactory
+        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
             ->expects(self::once())
             ->method('set')
             ->with('70.0.3538.22')
             ->willThrowException($exception);
 
-        assert($logger instanceof LoggerInterface);
-        assert($versionFactory instanceof VersionFactoryInterface);
-        $object = new ChromeOs($logger, $versionFactory);
+        $object = new ChromeOs($logger, $versionBuilder);
 
         $detectedVersion = $object->detectVersion(
             'Mozilla/5.0 (X11; CrOS aarch64 11021.19.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.22 Safari/537.36',
@@ -180,16 +179,16 @@ final class ChromeOsTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $versionFactory = $this->createMock(VersionFactoryInterface::class);
-        $versionFactory
+        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
             ->expects(self::once())
             ->method('set')
             ->with('14.4.0')
             ->willThrowException($exception);
 
         assert($logger instanceof LoggerInterface);
-        assert($versionFactory instanceof VersionFactoryInterface);
-        $object = new ChromeOs($logger, $versionFactory);
+        assert($versionBuilder instanceof VersionFactoryInterface);
+        $object = new ChromeOs($logger, $versionBuilder);
 
         $detectedVersion = $object->detectVersion(
             'Mozilla/5.0 (X11; CrOS x86_64 14.4.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2550.0 Safari/537.36',

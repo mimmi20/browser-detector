@@ -16,14 +16,14 @@ use Psr\Log\LoggerInterface;
 
 use function preg_match;
 
-final class Debian implements VersionDetectorInterface
+final class Debian implements VersionFactoryInterface
 {
     public const SEARCHES = ['kFreeBSD', 'Debian'];
 
     /** @throws void */
     public function __construct(
         private readonly LoggerInterface $logger,
-        private readonly VersionFactoryInterface $versionFactory,
+        private readonly VersionBuilderInterface $versionBuilder,
     ) {
         // nothing to do
     }
@@ -37,7 +37,7 @@ final class Debian implements VersionDetectorInterface
     {
         if (preg_match('/squeeze/i', $useragent)) {
             try {
-                return $this->versionFactory->set('6.0');
+                return $this->versionBuilder->set('6.0');
             } catch (NotNumericException $e) {
                 $this->logger->info($e);
             }
@@ -46,7 +46,7 @@ final class Debian implements VersionDetectorInterface
         }
 
         try {
-            return $this->versionFactory->detectVersion($useragent, self::SEARCHES);
+            return $this->versionBuilder->detectVersion($useragent, self::SEARCHES);
         } catch (NotNumericException $e) {
             $this->logger->info($e);
         }

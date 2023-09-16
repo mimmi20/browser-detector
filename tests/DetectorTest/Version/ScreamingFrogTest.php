@@ -15,7 +15,8 @@ namespace BrowserDetectorTest\Version;
 use BrowserDetector\Version\NotNumericException;
 use BrowserDetector\Version\NullVersion;
 use BrowserDetector\Version\ScreamingFrog;
-use BrowserDetector\Version\VersionFactory;
+use BrowserDetector\Version\VersionBuilder;
+use BrowserDetector\Version\VersionBuilderInterface;
 use BrowserDetector\Version\VersionFactoryInterface;
 use BrowserDetector\Version\VersionInterface;
 use PHPUnit\Framework\Attributes\DataProvider;
@@ -63,7 +64,7 @@ final class ScreamingFrogTest extends TestCase
             ->method('emergency');
 
         assert($logger instanceof LoggerInterface);
-        $object = new ScreamingFrog($logger, new VersionFactory());
+        $object = new ScreamingFrog($logger, new VersionBuilder($logger));
 
         $detectedVersion = $object->detectVersion($useragent);
 
@@ -120,16 +121,16 @@ final class ScreamingFrogTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $versionFactory = $this->createMock(VersionFactoryInterface::class);
-        $versionFactory
+        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
             ->expects(self::once())
             ->method('detectVersion')
             ->with('Screaming Frog SEO Spider/2.22', ['Screaming Frog SEO Spider'])
             ->willThrowException($exception);
 
         assert($logger instanceof LoggerInterface);
-        assert($versionFactory instanceof VersionFactoryInterface);
-        $object = new ScreamingFrog($logger, $versionFactory);
+        assert($versionBuilder instanceof VersionFactoryInterface);
+        $object = new ScreamingFrog($logger, $versionBuilder);
 
         $detectedVersion = $object->detectVersion('Screaming Frog SEO Spider/2,22');
 

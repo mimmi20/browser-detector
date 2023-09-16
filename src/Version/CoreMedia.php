@@ -16,12 +16,12 @@ use Psr\Log\LoggerInterface;
 
 use function preg_match;
 
-final class CoreMedia implements VersionDetectorInterface
+final class CoreMedia implements VersionFactoryInterface
 {
     /** @throws void */
     public function __construct(
         private readonly LoggerInterface $logger,
-        private readonly VersionFactoryInterface $versionFactory,
+        private readonly VersionBuilderInterface $versionBuilder,
     ) {
         // nothing to do
     }
@@ -41,7 +41,7 @@ final class CoreMedia implements VersionDetectorInterface
 
         if ($doMatch) {
             try {
-                return $this->versionFactory->set(
+                return $this->versionBuilder->set(
                     $matchesFirst['major'] . '.' . $matchesFirst['minor'] . '.' . $matchesFirst['micro'],
                 );
             } catch (NotNumericException $e) {

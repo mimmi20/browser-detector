@@ -19,7 +19,7 @@ use BrowserDetector\Parser\DeviceParserInterface;
 use BrowserDetector\Parser\EngineParserInterface;
 use BrowserDetector\Parser\PlatformParserInterface;
 use BrowserDetector\Version\NotNumericException;
-use BrowserDetector\Version\VersionFactory;
+use BrowserDetector\Version\VersionBuilder;
 use Psr\Http\Message\MessageInterface;
 use Psr\Log\LoggerInterface;
 use Psr\SimpleCache\InvalidArgumentException;
@@ -211,9 +211,9 @@ final class Detector implements DetectorInterface
                 $platformVersion = $platformVersionHeader->getPlatformVersion($platformCodename);
 
                 if ($platformVersion !== null) {
-                    $versionFactory = new VersionFactory();
+                    $versionBuilder = new VersionBuilder($this->logger);
 
-                    $result['os']['version'] = $versionFactory->set($platformVersion)->getVersion();
+                    $result['os']['version'] = $versionBuilder->set($platformVersion)->getVersion();
                 }
             }
         }
@@ -258,7 +258,9 @@ final class Detector implements DetectorInterface
         }
 
         if ($browserVersion !== null) {
-            $result['client']['version'] = (new VersionFactory())->set($browserVersion)->getVersion();
+            $versionBuilder = new VersionBuilder($this->logger);
+
+            $result['client']['version'] = $versionBuilder->set($browserVersion)->getVersion();
         }
 
         $engineHeader = clone $browserHeader;
@@ -298,9 +300,9 @@ final class Detector implements DetectorInterface
                 $engineVersion = $engineVersionHeader->getEngineVersion($engineCodename);
 
                 if ($engineVersion !== null) {
-                    $versionFactory = new VersionFactory();
+                    $versionBuilder = new VersionBuilder($this->logger);
 
-                    $result['engine']['version'] = $versionFactory->set($engineVersion)->getVersion();
+                    $result['engine']['version'] = $versionBuilder->set($engineVersion)->getVersion();
                 }
             }
         }

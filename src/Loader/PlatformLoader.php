@@ -14,7 +14,7 @@ namespace BrowserDetector\Loader;
 
 use BrowserDetector\Bits\Os;
 use BrowserDetector\Loader\Helper\DataInterface;
-use BrowserDetector\Version\VersionFactoryInterface;
+use BrowserDetector\Version\VersionBuilderInterface;
 use BrowserDetector\Version\VersionInterface;
 use Psr\Log\LoggerInterface;
 use stdClass;
@@ -35,9 +35,9 @@ final class PlatformLoader implements PlatformLoaderInterface
         private readonly LoggerInterface $logger,
         private readonly DataInterface $initData,
         private readonly CompanyLoaderInterface $companyLoader,
-        VersionFactoryInterface $versionFactory,
+        VersionBuilderInterface $versionBuilder,
     ) {
-        $this->versionFactory = $versionFactory;
+        $this->versionBuilder = $versionBuilder;
 
         $initData();
     }

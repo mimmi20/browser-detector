@@ -4,7 +4,7 @@
     "manufacturer": "become",
     "type": "bot-syndication-reader",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "BecomeBot"
       ]
@@ -16,7 +16,7 @@
     "manufacturer": "news.me",
     "type": "bot-syndication-reader",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Digg Feed Fetcher"
       ]
@@ -28,7 +28,7 @@
     "manufacturer": "unknown",
     "type": "bot-syndication-reader",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Feed Wrangler"
       ]
@@ -40,7 +40,7 @@
     "manufacturer": "feedly.com",
     "type": "bot-syndication-reader",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "FeedlyBot"
       ]
@@ -62,7 +62,7 @@
     "manufacturer": "google",
     "type": "bot-syndication-reader",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Feedfetcher\\-Google",
         "Feedfetcher\\-Google\\-iGoogleGadgets"
@@ -85,7 +85,7 @@
     "manufacturer": "tailrank",
     "type": "bot-syndication-reader",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Spinn3r"
       ]

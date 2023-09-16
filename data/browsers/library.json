@@ -4,7 +4,7 @@
     "manufacturer": "apache",
     "type": "library",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Apache\\-HttpClient"
       ]
@@ -16,7 +16,7 @@
     "manufacturer": "google",
     "type": "library",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Dart"
       ]
@@ -28,7 +28,7 @@
     "manufacturer": "google",
     "type": "library",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Go\\-http\\-client",
         "Go"
@@ -41,7 +41,7 @@
     "manufacturer": "unknown",
     "type": "library",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "GuzzleHttp",
         "Guzzle"
@@ -54,7 +54,7 @@
     "manufacturer": "oracle",
     "type": "library",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Java"
       ]
@@ -66,7 +66,7 @@
     "manufacturer": "python-software-foundation",
     "type": "library",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Python\\-urllib"
       ]
@@ -78,7 +78,7 @@
     "manufacturer": "python-software-foundation",
     "type": "library",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Python",
         "python\\-requests"
@@ -91,7 +91,7 @@
     "manufacturer": "unknown",
     "type": "library",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "curl"
       ]
@@ -103,7 +103,7 @@
     "manufacturer": "unknown",
     "type": "library",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Axios",
         "axios"
@@ -116,7 +116,7 @@
     "manufacturer": "unknown",
     "type": "library",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "okhttp"
       ]
@@ -128,7 +128,7 @@
     "manufacturer": "python-software-foundation",
     "type": "library",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "python\\-requests"
       ]
@@ -140,7 +140,7 @@
     "manufacturer": "unknown",
     "type": "library",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "PycURL"
       ]
@@ -152,7 +152,7 @@
     "manufacturer": "team-haxx",
     "type": "library",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Curl\\/PHP"
       ]
@@ -164,7 +164,7 @@
     "manufacturer": "php-group",
     "type": "library",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "HTTP_Request"
       ]
@@ -176,7 +176,7 @@
     "manufacturer": "php-group",
     "type": "library",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "HTTP_Request2"
       ]
@@ -188,7 +188,7 @@
     "manufacturer": "php-group",
     "type": "library",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "PECL::HTTP"
       ]
@@ -200,7 +200,7 @@
     "manufacturer": "php-group",
     "type": "library",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "PHP",
         "PHP\\-SOAP"
@@ -223,7 +223,7 @@
     "manufacturer": "microsoft",
     "type": "library",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "WinHttpRequest",
         "WinHttpRequest\\."
@@ -236,7 +236,7 @@
     "manufacturer": "unknown",
     "type": "library",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "node\\-fetch"
       ]
@@ -248,7 +248,7 @@
     "manufacturer": "unknown",
     "type": "library",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Mechanize"
       ]
@@ -260,7 +260,7 @@
     "manufacturer": "unknown",
     "type": "library",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "jsdom"
       ]
@@ -272,7 +272,7 @@
     "manufacturer": "unknown",
     "type": "library",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "aiohttp"
       ]
@@ -284,7 +284,7 @@
     "manufacturer": "unknown",
     "type": "library",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "libwww",
         "libwww\\-perl"
@@ -297,7 +297,7 @@
     "manufacturer": "unknown",
     "type": "library",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "lua-resty-http"
       ]
@@ -309,7 +309,7 @@
     "manufacturer": "unknown",
     "type": "library",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "python-httpx"
       ]
@@ -321,7 +321,7 @@
     "manufacturer": "free-software-foundation",
     "type": "library",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Wget",
         "wget"
@@ -334,7 +334,7 @@
     "manufacturer": "unknown",
     "type": "library",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "aria2"
       ]

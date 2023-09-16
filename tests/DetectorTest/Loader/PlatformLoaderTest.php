@@ -18,7 +18,8 @@ use BrowserDetector\Loader\NotFoundException;
 use BrowserDetector\Loader\PlatformLoader;
 use BrowserDetector\Version\NotNumericException;
 use BrowserDetector\Version\TestFactory;
-use BrowserDetector\Version\VersionFactoryInterface;
+use BrowserDetector\Version\VersionBuilderFactory;
+use BrowserDetector\Version\VersionBuilderInterface;
 use BrowserDetector\Version\VersionInterface;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
@@ -78,18 +79,18 @@ final class PlatformLoaderTest extends TestCase
             ->expects(self::never())
             ->method('load');
 
-        $versionFactory = $this->createMock(VersionFactoryInterface::class);
-        $versionFactory
+        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
             ->expects(self::never())
             ->method('setRegex');
-        $versionFactory
+        $versionBuilder
             ->expects(self::never())
             ->method('set');
-        $versionFactory
+        $versionBuilder
             ->expects(self::never())
             ->method('detectVersion');
 
-        $object = new PlatformLoader($logger, $initData, $companyLoader, $versionFactory);
+        $object = new PlatformLoader($logger, $initData, $companyLoader, $versionBuilder);
 
         $this->expectException(NotFoundException::class);
         $this->expectExceptionMessage('the platform with key "test-key" was not found');
@@ -147,18 +148,18 @@ final class PlatformLoaderTest extends TestCase
             ->expects(self::never())
             ->method('load');
 
-        $versionFactory = $this->createMock(VersionFactoryInterface::class);
-        $versionFactory
+        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
             ->expects(self::never())
             ->method('setRegex');
-        $versionFactory
+        $versionBuilder
             ->expects(self::never())
             ->method('set');
-        $versionFactory
+        $versionBuilder
             ->expects(self::never())
             ->method('detectVersion');
 
-        $object = new PlatformLoader($logger, $initData, $companyLoader, $versionFactory);
+        $object = new PlatformLoader($logger, $initData, $companyLoader, $versionBuilder);
 
         $this->expectException(NotFoundException::class);
         $this->expectExceptionMessage('the platform with key "test-key" was not found');
@@ -230,18 +231,18 @@ final class PlatformLoaderTest extends TestCase
             ->with('xyz')
             ->willReturn($company);
 
-        $versionFactory = $this->createMock(VersionFactoryInterface::class);
-        $versionFactory
+        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
             ->expects(self::never())
             ->method('setRegex');
-        $versionFactory
+        $versionBuilder
             ->expects(self::never())
             ->method('set');
-        $versionFactory
+        $versionBuilder
             ->expects(self::never())
             ->method('detectVersion');
 
-        $object = new PlatformLoader($logger, $initData, $companyLoader, $versionFactory);
+        $object = new PlatformLoader($logger, $initData, $companyLoader, $versionBuilder);
 
         $result = $object->load('test-key', 'test-ua');
 
@@ -338,20 +339,20 @@ final class PlatformLoaderTest extends TestCase
                 },
             );
 
-        $versionFactory = $this->createMock(VersionFactoryInterface::class);
-        $versionFactory
+        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
             ->expects(self::never())
             ->method('setRegex');
-        $versionFactory
+        $versionBuilder
             ->expects(self::once())
             ->method('set')
             ->with('1.0')
             ->willReturn($version);
-        $versionFactory
+        $versionBuilder
             ->expects(self::never())
             ->method('detectVersion');
 
-        $object = new PlatformLoader($logger, $initData, $companyLoader, $versionFactory);
+        $object = new PlatformLoader($logger, $initData, $companyLoader, $versionBuilder);
 
         $result = $object->load('test-key', 'test-ua');
 
@@ -408,7 +409,7 @@ final class PlatformLoaderTest extends TestCase
             ->willReturn(true);
 
         $platformData = (object) [
-            'version' => (object) ['class' => 'VersionFactory', 'search' => ['test']],
+            'version' => (object) ['factory' => '\\' . VersionBuilderFactory::class, 'search' => ['test']],
             'manufacturer' => 'xyz',
             'name' => 'Mac OS X',
             'marketingName' => null,
@@ -429,39 +430,18 @@ final class PlatformLoaderTest extends TestCase
             ->with('xyz')
             ->willReturn($company);
 
-        $version = $this->createMock(VersionInterface::class);
-        $matcher = self::exactly(3);
-        $version
-            ->expects($matcher)
-            ->method('getVersion')
-            ->willReturnCallback(
-                static function (int $mode) use ($matcher): string {
-                    match ($matcher->numberOfInvocations()) {
-                        1, 2 => self::assertSame(VersionInterface::IGNORE_MICRO, $mode),
-                        default => self::assertSame(VersionInterface::COMPLETE, $mode),
-                    };
-
-                    return match ($matcher->numberOfInvocations()) {
-                        1, 2 => '10.12',
-                        default => '10.12.0',
-                    };
-                },
-            );
-
-        $versionFactory = $this->createMock(VersionFactoryInterface::class);
-        $versionFactory
+        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
             ->expects(self::never())
             ->method('setRegex');
-        $versionFactory
+        $versionBuilder
             ->expects(self::never())
             ->method('set');
-        $versionFactory
-            ->expects(self::once())
-            ->method('detectVersion')
-            ->with('test/10.12', ['test'])
-            ->willReturn($version);
+        $versionBuilder
+            ->expects(self::never())
+            ->method('detectVersion');
 
-        $object = new PlatformLoader($logger, $initData, $companyLoader, $versionFactory);
+        $object = new PlatformLoader($logger, $initData, $companyLoader, $versionBuilder);
 
         $result = $object->load('test-key', 'test/10.12');
 
@@ -518,7 +498,7 @@ final class PlatformLoaderTest extends TestCase
             ->willReturn(true);
 
         $platformData = (object) [
-            'version' => (object) ['class' => 'VersionFactory', 'search' => ['test']],
+            'version' => (object) ['factory' => '\\' . VersionBuilderFactory::class, 'search' => ['test']],
             'manufacturer' => 'xyz',
             'name' => 'iOS',
             'marketingName' => null,
@@ -539,39 +519,18 @@ final class PlatformLoaderTest extends TestCase
             ->with('xyz')
             ->willReturn($company);
 
-        $version = $this->createMock(VersionInterface::class);
-        $matcher = self::exactly(4);
-        $version
-            ->expects($matcher)
-            ->method('getVersion')
-            ->willReturnCallback(
-                static function (int $mode) use ($matcher): string {
-                    match ($matcher->numberOfInvocations()) {
-                        1, 2, 3 => self::assertSame(VersionInterface::IGNORE_MICRO, $mode),
-                        default => self::assertSame(VersionInterface::COMPLETE, $mode),
-                    };
-
-                    return match ($matcher->numberOfInvocations()) {
-                        1, 2, 3 => '3.0',
-                        default => '3.0.0',
-                    };
-                },
-            );
-
-        $versionFactory = $this->createMock(VersionFactoryInterface::class);
-        $versionFactory
+        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
             ->expects(self::never())
             ->method('setRegex');
-        $versionFactory
+        $versionBuilder
             ->expects(self::never())
             ->method('set');
-        $versionFactory
-            ->expects(self::once())
-            ->method('detectVersion')
-            ->with('test/3.0', ['test'])
-            ->willReturn($version);
+        $versionBuilder
+            ->expects(self::never())
+            ->method('detectVersion');
 
-        $object = new PlatformLoader($logger, $initData, $companyLoader, $versionFactory);
+        $object = new PlatformLoader($logger, $initData, $companyLoader, $versionBuilder);
 
         $result = $object->load('test-key', 'test/3.0');
 
@@ -649,18 +608,18 @@ final class PlatformLoaderTest extends TestCase
             ->with('xyz')
             ->willReturn($company);
 
-        $versionFactory = $this->createMock(VersionFactoryInterface::class);
-        $versionFactory
+        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
             ->expects(self::never())
             ->method('setRegex');
-        $versionFactory
+        $versionBuilder
             ->expects(self::never())
             ->method('set');
-        $versionFactory
+        $versionBuilder
             ->expects(self::never())
             ->method('detectVersion');
 
-        $object = new PlatformLoader($logger, $initData, $companyLoader, $versionFactory);
+        $object = new PlatformLoader($logger, $initData, $companyLoader, $versionBuilder);
 
         $result = $object->load('test-key', 'test/12.0');
 
@@ -739,18 +698,18 @@ final class PlatformLoaderTest extends TestCase
             ->with('xyz')
             ->willThrowException($exception);
 
-        $versionFactory = $this->createMock(VersionFactoryInterface::class);
-        $versionFactory
+        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
             ->expects(self::never())
             ->method('setRegex');
-        $versionFactory
+        $versionBuilder
             ->expects(self::never())
             ->method('set');
-        $versionFactory
+        $versionBuilder
             ->expects(self::never())
             ->method('detectVersion');
 
-        $object = new PlatformLoader($logger, $initData, $companyLoader, $versionFactory);
+        $object = new PlatformLoader($logger, $initData, $companyLoader, $versionBuilder);
 
         $result = $object->load('test-key', 'test/12.0');
 
@@ -828,18 +787,18 @@ final class PlatformLoaderTest extends TestCase
             ->with('xyz')
             ->willReturn($company);
 
-        $versionFactory = $this->createMock(VersionFactoryInterface::class);
-        $versionFactory
+        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
             ->expects(self::never())
             ->method('setRegex');
-        $versionFactory
+        $versionBuilder
             ->expects(self::never())
             ->method('set');
-        $versionFactory
+        $versionBuilder
             ->expects(self::never())
             ->method('detectVersion');
 
-        $object = new PlatformLoader($logger, $initData, $companyLoader, $versionFactory);
+        $object = new PlatformLoader($logger, $initData, $companyLoader, $versionBuilder);
 
         $result = $object->load('test-key', 'test/12.0');
 
@@ -936,20 +895,20 @@ final class PlatformLoaderTest extends TestCase
                 },
             );
 
-        $versionFactory = $this->createMock(VersionFactoryInterface::class);
-        $versionFactory
+        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
             ->expects(self::never())
             ->method('setRegex');
-        $versionFactory
+        $versionBuilder
             ->expects(self::once())
             ->method('set')
             ->with('1.0')
             ->willReturn($version);
-        $versionFactory
+        $versionBuilder
             ->expects(self::never())
             ->method('detectVersion');
 
-        $object = new PlatformLoader($logger, $initData, $companyLoader, $versionFactory);
+        $object = new PlatformLoader($logger, $initData, $companyLoader, $versionBuilder);
 
         $result = $object->load('test-key', 'test/12.0');
 
@@ -1030,20 +989,20 @@ final class PlatformLoaderTest extends TestCase
             ->with('xyz')
             ->willReturn($company);
 
-        $versionFactory = $this->createMock(VersionFactoryInterface::class);
-        $versionFactory
+        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
             ->expects(self::never())
             ->method('setRegex');
-        $versionFactory
+        $versionBuilder
             ->expects(self::once())
             ->method('set')
             ->with('1.0')
             ->willThrowException($exception);
-        $versionFactory
+        $versionBuilder
             ->expects(self::never())
             ->method('detectVersion');
 
-        $object = new PlatformLoader($logger, $initData, $companyLoader, $versionFactory);
+        $object = new PlatformLoader($logger, $initData, $companyLoader, $versionBuilder);
 
         $result = $object->load('test-key', 'test/12.0');
 
@@ -1140,20 +1099,20 @@ final class PlatformLoaderTest extends TestCase
                 },
             );
 
-        $versionFactory = $this->createMock(VersionFactoryInterface::class);
-        $versionFactory
+        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
             ->expects(self::never())
             ->method('setRegex');
-        $versionFactory
+        $versionBuilder
             ->expects(self::once())
             ->method('set')
             ->with('1.0')
             ->willReturn($version);
-        $versionFactory
+        $versionBuilder
             ->expects(self::never())
             ->method('detectVersion');
 
-        $object = new PlatformLoader($logger, $initData, $companyLoader, $versionFactory);
+        $object = new PlatformLoader($logger, $initData, $companyLoader, $versionBuilder);
 
         $result = $object->load('test-key', 'test/12.0');
 
@@ -1234,20 +1193,20 @@ final class PlatformLoaderTest extends TestCase
             ->with('xyz')
             ->willReturn($company);
 
-        $versionFactory = $this->createMock(VersionFactoryInterface::class);
-        $versionFactory
+        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
             ->expects(self::never())
             ->method('setRegex');
-        $versionFactory
+        $versionBuilder
             ->expects(self::once())
             ->method('set')
             ->with('1.0')
             ->willThrowException($exception);
-        $versionFactory
+        $versionBuilder
             ->expects(self::never())
             ->method('detectVersion');
 
-        $object = new PlatformLoader($logger, $initData, $companyLoader, $versionFactory);
+        $object = new PlatformLoader($logger, $initData, $companyLoader, $versionBuilder);
 
         $result = $object->load('test-key', 'test/12.0');
 

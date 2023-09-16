@@ -4,7 +4,7 @@
     "manufacturer": "microsoft",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "MS Web Services Client Protocol"
       ]
@@ -16,7 +16,7 @@
     "manufacturer": "sistrix",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "007ac9 Crawler"
       ]
@@ -28,7 +28,7 @@
     "manufacturer": "200please",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "200PleaseBot"
       ]
@@ -40,7 +40,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "80legs",
         "80bot",
@@ -54,7 +54,7 @@
     "manufacturer": "a6corp",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "A6\\-Indexer"
       ]
@@ -66,7 +66,7 @@
     "manufacturer": "abonti",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Abonti"
       ]
@@ -78,7 +78,7 @@
     "manufacturer": "aboundex",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Aboundex"
       ]
@@ -90,7 +90,7 @@
     "manufacturer": "about-us",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "AboutUsBot"
       ]
@@ -102,7 +102,7 @@
     "manufacturer": "about-us",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "AboutUsBot Johnny5"
       ]
@@ -114,7 +114,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "acapbot"
       ]
@@ -126,7 +126,7 @@
     "manufacturer": "accoona",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Accoona\\-AI\\-Agent"
       ]
@@ -138,7 +138,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "AccServer"
       ]
@@ -150,7 +150,7 @@
     "manufacturer": "michael-schoebel",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "AcoonBot"
       ]
@@ -162,7 +162,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Ad Muncher",
         "Ad Muncher v"
@@ -175,7 +175,7 @@
     "manufacturer": "adbeat",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "adbeat\\.com"
       ]
@@ -187,7 +187,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "AdCrawler"
       ]
@@ -199,7 +199,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Add Catalog"
       ]
@@ -211,7 +211,7 @@
     "manufacturer": "add-this",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "AddThis\\.com robot"
       ]
@@ -223,7 +223,7 @@
     "manufacturer": "microsoft",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "adidxbot"
       ]
@@ -255,7 +255,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Adsbot"
       ]
@@ -267,7 +267,7 @@
     "manufacturer": "google",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Adsense\\-Snapshot\\-Google"
       ]
@@ -279,7 +279,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Advanced Email Extractor",
         "Advanced Email Extractor v"
@@ -292,7 +292,7 @@
     "manufacturer": "adv-bot",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "AdvBot"
       ]
@@ -304,7 +304,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "aiHitBot"
       ]
@@ -316,7 +316,7 @@
     "manufacturer": "tockify",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "AjaxSnapBot"
       ]
@@ -338,7 +338,7 @@
     "manufacturer": "alexa-internet",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Alexabot"
       ]
@@ -360,7 +360,7 @@
     "manufacturer": "amazon",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Amazon CloudFront"
       ]
@@ -382,7 +382,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Another Web Mining Tool"
       ]
@@ -394,7 +394,7 @@
     "manufacturer": "ant.com",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "AntBot"
       ]
@@ -406,7 +406,7 @@
     "manufacturer": "aol-soft",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "AOLbot"
       ]
@@ -418,7 +418,7 @@
     "manufacturer": "apache",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Synapse"
       ]
@@ -430,7 +430,7 @@
     "manufacturer": "apercite",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Apercite"
       ]
@@ -442,7 +442,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "ApiaryHttpClient"
       ]
@@ -454,7 +454,7 @@
     "manufacturer": "apple",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Apple\\-PubSub"
       ]
@@ -466,7 +466,7 @@
     "manufacturer": "software-in-the-public-interest",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Debian APT\\-HTTP",
         "Ubuntu APT\\-HTTP"
@@ -479,7 +479,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Arachnida Web Crawler"
       ]
@@ -491,7 +491,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "archive-de.com"
       ]
@@ -513,7 +513,7 @@
     "manufacturer": "ask",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Ask"
       ]
@@ -535,7 +535,7 @@
     "manufacturer": "ask-peter",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "AskPeterBot"
       ]
@@ -547,7 +547,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Astute SRM"
       ]
@@ -559,7 +559,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "AHC"
       ]
@@ -571,7 +571,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Athena Site Analyzer"
       ]
@@ -583,7 +583,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "ATLBLbot"
       ]
@@ -605,7 +605,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "AuditMyPC Webmaster Tool"
       ]
@@ -617,7 +617,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "AugustBot"
       ]
@@ -639,7 +639,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "awesomebot"
       ]
@@ -671,7 +671,7 @@
     "manufacturer": "baidu",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "BaiduMobaider"
       ]
@@ -683,7 +683,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "bandscraper"
       ]
@@ -695,7 +695,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "BCKLINKS"
       ]
@@ -717,7 +717,7 @@
     "manufacturer": "begun",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "BegunAdvertising"
       ]
@@ -729,7 +729,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "BigBozz\\-",
         "BigBozz"
@@ -742,7 +742,7 @@
     "manufacturer": "microsoft",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "msnbot\\-Products"
       ]
@@ -754,7 +754,7 @@
     "manufacturer": "microsoft",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "BingSapphire"
       ]
@@ -776,7 +776,7 @@
     "manufacturer": "blekko",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Blekkobot"
       ]
@@ -798,7 +798,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Blog Search"
       ]
@@ -810,7 +810,7 @@
     "manufacturer": "bloglovin",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Bloglovin"
       ]
@@ -822,7 +822,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Blogshares Spiders \\(Renewed V",
         "Blogshares Spiders"
@@ -835,7 +835,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "BND Crawler"
       ]
@@ -847,7 +847,7 @@
     "manufacturer": "bibliotheque-nationale-de-france",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "bnf.fr_bot"
       ]
@@ -859,7 +859,7 @@
     "manufacturer": "board-reader",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "BoardReader Favicon Fetcher",
         "BoardReader Favicon Fetcher "
@@ -872,7 +872,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "BoogleBot"
       ]
@@ -884,7 +884,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "bot"
       ]
@@ -896,7 +896,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "BOT"
       ]
@@ -908,7 +908,7 @@
     "manufacturer": "bot-revolt",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "revolt"
       ]
@@ -920,7 +920,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Bot\\.AraTurka\\.com"
       ]
@@ -932,7 +932,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "BrokenLinkCheck\\.com"
       ]
@@ -944,7 +944,7 @@
     "manufacturer": "browser-shots",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Browsershots"
       ]
@@ -956,7 +956,7 @@
     "manufacturer": "law.di.unimi.it",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "BUbiNG"
       ]
@@ -968,7 +968,7 @@
     "manufacturer": "dadapro",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "BuiBui\\-Bot"
       ]
@@ -980,7 +980,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "BuSecurityProject"
       ]
@@ -992,7 +992,7 @@
     "manufacturer": "topsy-labs",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Butterfly"
       ]
@@ -1004,7 +1004,7 @@
     "manufacturer": "bynergy",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "BWC"
       ]
@@ -1016,7 +1016,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "ca\\-crawler"
       ]
@@ -1038,7 +1038,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Camcrawler"
       ]
@@ -1050,7 +1050,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "CamelHttpStream"
       ]
@@ -1062,7 +1062,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Camo Asset Proxy"
       ]
@@ -1074,7 +1074,7 @@
     "manufacturer": "career-x",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "CareerBot"
       ]
@@ -1086,7 +1086,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "CareMediCom"
       ]
@@ -1098,7 +1098,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "cars\\-app\\-browser"
       ]
@@ -1110,7 +1110,7 @@
     "manufacturer": "searchme",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Charlotte"
       ]
@@ -1122,7 +1122,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "CheckLinks"
       ]
@@ -1144,7 +1144,7 @@
     "manufacturer": "asia-ws-wetwork",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "bot\\-pge\\.chlooe\\.com"
       ]
@@ -1156,7 +1156,7 @@
     "manufacturer": "city-map-internet-marketing",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "city\\-map screenshot service"
       ]
@@ -1168,7 +1168,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "ClarityDailyBot"
       ]
@@ -1180,7 +1180,7 @@
     "manufacturer": "10betterpages",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Cliqzbot"
       ]
@@ -1192,7 +1192,7 @@
     "manufacturer": "cloud-flare",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "CloudFlare\\-AlwaysOnline"
       ]
@@ -1204,7 +1204,7 @@
     "manufacturer": "cloud-flare",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Cloudflare\\-AMP"
       ]
@@ -1216,7 +1216,7 @@
     "manufacturer": "cloudinary",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Cloudinary"
       ]
@@ -1228,7 +1228,7 @@
     "manufacturer": "viderem",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "CMS Crawler"
       ]
@@ -1240,7 +1240,7 @@
     "manufacturer": "coc-coc-company",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "coccoc"
       ]
@@ -1262,7 +1262,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "commoncrawl"
       ]
@@ -1284,7 +1284,7 @@
     "manufacturer": "comodo",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Comodo Spider"
       ]
@@ -1296,7 +1296,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Comodo\\-Certificates\\-Spider"
       ]
@@ -1308,7 +1308,7 @@
     "manufacturer": "compspy",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "CompSpyBot"
       ]
@@ -1320,7 +1320,7 @@
     "manufacturer": "scrapinghub",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Contacts Crawler"
       ]
@@ -1332,7 +1332,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "ContextAd Bot"
       ]
@@ -1354,7 +1354,7 @@
     "manufacturer": "cookie-reports-limited",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "CookieReports\\.com"
       ]
@@ -1366,7 +1366,7 @@
     "manufacturer": "unister",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Core_Class_HttpClient_Cached"
       ]
@@ -1378,7 +1378,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "CoverScout"
       ]
@@ -1390,7 +1390,7 @@
     "manufacturer": "linkfluence",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Crawler"
       ]
@@ -1402,7 +1402,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "crawler4j"
       ]
@@ -1414,7 +1414,7 @@
     "manufacturer": "adnorm",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Crawllybot"
       ]
@@ -1426,7 +1426,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "CrawlRobot"
       ]
@@ -1438,7 +1438,7 @@
     "manufacturer": "crazywebcrawler",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "CRAZYWEBCRAWLER"
       ]
@@ -1460,7 +1460,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Curb"
       ]
@@ -1472,7 +1472,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "CydralSpider"
       ]
@@ -1484,7 +1484,7 @@
     "manufacturer": "daum-corporation",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Daumoa",
         "Daum"
@@ -1497,7 +1497,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "DAWINCI ANTIPLAG SPIDER"
       ]
@@ -1509,7 +1509,7 @@
     "manufacturer": "get-download",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "DBot"
       ]
@@ -1521,7 +1521,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "DCPbot"
       ]
@@ -1543,7 +1543,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "deepcrawl"
       ]
@@ -1555,7 +1555,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Delibar"
       ]
@@ -1577,7 +1577,7 @@
     "manufacturer": "news.me",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Digg"
       ]
@@ -1589,7 +1589,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Digincore bot"
       ]
@@ -1601,7 +1601,7 @@
     "manufacturer": "creative-commons",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "DiscoverEd\\/Nutch\\-",
         "DiscoverEd"
@@ -1614,7 +1614,7 @@
     "manufacturer": "discovery-engine",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "discoverybot"
       ]
@@ -1626,7 +1626,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Dispatch"
       ]
@@ -1638,7 +1638,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "DKIMRepBot"
       ]
@@ -1650,7 +1650,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "doccheckbot"
       ]
@@ -1662,7 +1662,7 @@
     "manufacturer": "steve-waring",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Dolphin http client"
       ]
@@ -1674,7 +1674,7 @@
     "manufacturer": "profound-networks",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "DomainAppender \\/",
         "DomainAppender"
@@ -1687,7 +1687,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "DomainCrawler"
       ]
@@ -1699,7 +1699,7 @@
     "manufacturer": "domains-bot",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "domainsbot"
       ]
@@ -1711,7 +1711,7 @@
     "manufacturer": "gh-software",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "DomainSCAN"
       ]
@@ -1723,7 +1723,7 @@
     "manufacturer": "domain-sigma",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "DomainSigmaCrawler"
       ]
@@ -1735,7 +1735,7 @@
     "manufacturer": "nutch-de",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Domnutch\\-Bot",
         "Nutch\\-"
@@ -1748,7 +1748,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "masscan"
       ]
@@ -1760,7 +1760,7 @@
     "manufacturer": "duedil",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "electricmonk"
       ]
@@ -1772,7 +1772,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Dulance bot"
       ]
@@ -1784,7 +1784,7 @@
     "manufacturer": "bluecoat",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Bluecoat DRTR"
       ]
@@ -1796,7 +1796,7 @@
     "manufacturer": "easou",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "EasouSpider"
       ]
@@ -1808,7 +1808,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "EasyBib AutoCite"
       ]
@@ -1820,7 +1820,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "ECCP"
       ]
@@ -1832,7 +1832,7 @@
     "manufacturer": "elefent",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Elefent"
       ]
@@ -1844,7 +1844,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "ElisaBot"
       ]
@@ -1866,7 +1866,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Embed PHP Library"
       ]
@@ -1878,7 +1878,7 @@
     "manufacturer": "embed.ly",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Embedly"
       ]
@@ -1890,7 +1890,7 @@
     "manufacturer": "esri.hu",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Esribot"
       ]
@@ -1902,7 +1902,7 @@
     "manufacturer": "eurip",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "EuripBot"
       ]
@@ -1914,7 +1914,7 @@
     "manufacturer": "evc",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "evc\\-batch"
       ]
@@ -1926,7 +1926,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "EventGuruBot"
       ]
@@ -1938,7 +1938,7 @@
     "manufacturer": "ilya-grigorik",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "EventMachine HttpClient"
       ]
@@ -1950,7 +1950,7 @@
     "manufacturer": "evernote",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Evernote Clip Resolver"
       ]
@@ -1962,7 +1962,7 @@
     "manufacturer": "everyone-social",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "EveryoneSocialBot"
       ]
@@ -1974,7 +1974,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "ExactSeek Crawler"
       ]
@@ -1986,7 +1986,7 @@
     "manufacturer": "dassault-systemes",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "ExaleadCloudView"
       ]
@@ -1998,7 +1998,7 @@
     "manufacturer": "exb",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "ExB Language Crawler"
       ]
@@ -2020,7 +2020,7 @@
     "manufacturer": "amir-krause",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Experibot\\_v"
       ]
@@ -2032,7 +2032,7 @@
     "manufacturer": "exploratodo",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Exploratodo"
       ]
@@ -2044,7 +2044,7 @@
     "manufacturer": "seomoz",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Ezooms"
       ]
@@ -2056,7 +2056,7 @@
     "manufacturer": "facebook",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "facebookplatform"
       ]
@@ -2068,7 +2068,7 @@
     "manufacturer": "facebook",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "facebookscraper"
       ]
@@ -2080,7 +2080,7 @@
     "manufacturer": "facebook",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Facebot"
       ]
@@ -2092,7 +2092,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Faraday v",
         "Faraday"
@@ -2105,7 +2105,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "FAST\\-WebCrawler"
       ]
@@ -2117,7 +2117,7 @@
     "manufacturer": "pagedesign",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "fastbot crawler beta",
         "fastbot crawler"
@@ -2130,7 +2130,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "FatBot"
       ]
@@ -2152,7 +2152,7 @@
     "manufacturer": "feedblitz",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "FeedBlitz"
       ]
@@ -2164,7 +2164,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "FeedBurner"
       ]
@@ -2176,7 +2176,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "FeedFinder"
       ]
@@ -2188,7 +2188,7 @@
     "manufacturer": "feedly.com",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "FeedlyApp"
       ]
@@ -2210,7 +2210,7 @@
     "manufacturer": "tarasco",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "FHScan Core"
       ]
@@ -2222,7 +2222,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Finderlein Research Crawler"
       ]
@@ -2234,7 +2234,7 @@
     "manufacturer": "wortschatz-uni-leipzig",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "findlinks"
       ]
@@ -2246,7 +2246,7 @@
     "manufacturer": "flipboard",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "FlipboardProxy"
       ]
@@ -2258,7 +2258,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "focuseekbot"
       ]
@@ -2270,7 +2270,7 @@
     "manufacturer": "forum-poster",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Forum Poster V",
         "Forum Poster"
@@ -2283,7 +2283,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "fr\\-crawler"
       ]
@@ -2295,7 +2295,7 @@
     "manufacturer": "free-web-monitoring",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "FreeWebMonitoring SiteChecker"
       ]
@@ -2317,7 +2317,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "FyberSpider"
       ]
@@ -2329,7 +2329,7 @@
     "manufacturer": "experian",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "GarlikCrawler"
       ]
@@ -2341,7 +2341,7 @@
     "manufacturer": "gender-analyzer",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Genderanalyzer"
       ]
@@ -2353,7 +2353,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Ruby"
       ]
@@ -2365,7 +2365,7 @@
     "manufacturer": "join-vision",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Generic Site Loader"
       ]
@@ -2377,7 +2377,7 @@
     "manufacturer": "genieo",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Genieo"
       ]
@@ -2389,7 +2389,7 @@
     "manufacturer": "genieo",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Genieo"
       ]
@@ -2411,7 +2411,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Getleft"
       ]
@@ -2433,7 +2433,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "GetPhotos"
       ]
@@ -2445,7 +2445,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "gettor"
       ]
@@ -2457,7 +2457,7 @@
     "manufacturer": "gadu-gadu",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "GG PeekBot"
       ]
@@ -2469,7 +2469,7 @@
     "manufacturer": "j-de-silva",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "GIDBot"
       ]
@@ -2481,7 +2481,7 @@
     "manufacturer": "gigablast.com",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "GigablastOpenSource"
       ]
@@ -2503,7 +2503,7 @@
     "manufacturer": "galaxy-downloads",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "GLBot"
       ]
@@ -2525,7 +2525,7 @@
     "manufacturer": "gloomar",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "GloomarBot"
       ]
@@ -2537,7 +2537,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Gluten Free Crawler"
       ]
@@ -2549,7 +2549,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "GoblioBot"
       ]
@@ -2561,7 +2561,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Godzilla"
       ]
@@ -2573,7 +2573,7 @@
     "manufacturer": "invention-machine",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Goldfire Server"
       ]
@@ -2585,7 +2585,7 @@
     "manufacturer": "compuware-apm",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "GomezAgent"
       ]
@@ -2597,7 +2597,7 @@
     "manufacturer": "ntt-resonant",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "gooblog"
       ]
@@ -2619,7 +2619,7 @@
     "manufacturer": "google",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Google\\-Adwords\\-DisplayAds\\-WebRender"
       ]
@@ -2631,7 +2631,7 @@
     "manufacturer": "google",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Google\\-Adwords\\-Express"
       ]
@@ -2653,7 +2653,7 @@
     "manufacturer": "google",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Googlebot\\-Mobile"
       ]
@@ -2665,7 +2665,7 @@
     "manufacturer": "google",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Google CHTML Proxy"
       ]
@@ -2677,7 +2677,7 @@
     "manufacturer": "google",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Assess"
       ]
@@ -2689,7 +2689,7 @@
     "manufacturer": "google",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Google\\-FontAnalysis"
       ]
@@ -2701,7 +2701,7 @@
     "manufacturer": "google",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Google\\-HTTP\\-Java\\-Client"
       ]
@@ -2723,7 +2723,7 @@
     "manufacturer": "google",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Google Keyword Suggestion"
       ]
@@ -2735,7 +2735,7 @@
     "manufacturer": "google",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Google Page Speed"
       ]
@@ -2747,7 +2747,7 @@
     "manufacturer": "google",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Google Page Speed Insights"
       ]
@@ -2769,7 +2769,7 @@
     "manufacturer": "google",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Google\\-Sitemaps"
       ]
@@ -2791,7 +2791,7 @@
     "manufacturer": "google",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "GoogleToolbar"
       ]
@@ -2813,7 +2813,7 @@
     "manufacturer": "google",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Google WAP Proxy"
       ]
@@ -2835,7 +2835,7 @@
     "manufacturer": "google",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Google-Read-Aloud"
       ]
@@ -2847,7 +2847,7 @@
     "manufacturer": "google",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Google-Apps-Script"
       ]
@@ -2859,7 +2859,7 @@
     "manufacturer": "google",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Google\\-Safety"
       ]
@@ -2871,7 +2871,7 @@
     "manufacturer": "google",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Google\\-Site\\-Verification"
       ]
@@ -2883,7 +2883,7 @@
     "manufacturer": "google",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Google\\-PageRenderer"
       ]
@@ -2905,7 +2905,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Goose"
       ]
@@ -2917,7 +2917,7 @@
     "manufacturer": "go-squared",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "gosquared\\-thumbnailer"
       ]
@@ -2929,7 +2929,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Grammarly"
       ]
@@ -2941,7 +2941,7 @@
     "manufacturer": "grapeshot",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "grapeFX"
       ]
@@ -2953,7 +2953,7 @@
     "manufacturer": "grapeshot",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "GrapeshotCrawler"
       ]
@@ -2965,7 +2965,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Grindr"
       ]
@@ -2977,7 +2977,7 @@
     "manufacturer": "group-high",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "GroupHigh"
       ]
@@ -2999,7 +2999,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "GurujiBot"
       ]
@@ -3011,7 +3011,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "GWPImages"
       ]
@@ -3023,7 +3023,7 @@
     "manufacturer": "qihoo",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "360Spider"
       ]
@@ -3035,7 +3035,7 @@
     "manufacturer": "hatena",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Hatena"
       ]
@@ -3047,7 +3047,7 @@
     "manufacturer": "hatena",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Hatena Antenna"
       ]
@@ -3059,7 +3059,7 @@
     "manufacturer": "hatena",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Hatena::Bookmark"
       ]
@@ -3071,7 +3071,7 @@
     "manufacturer": "jonas-genannt",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "HggH PhantomJS Screenshoter"
       ]
@@ -3083,7 +3083,7 @@
     "manufacturer": "hit-leap",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "HitLeap Viewer"
       ]
@@ -3095,7 +3095,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "hivaBot"
       ]
@@ -3107,7 +3107,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "HRCrawler"
       ]
@@ -3119,7 +3119,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "htdig"
       ]
@@ -3131,7 +3131,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "http\\-kit"
       ]
@@ -3143,7 +3143,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "http_requester"
       ]
@@ -3155,7 +3155,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "HTTPClient"
       ]
@@ -3167,7 +3167,7 @@
     "manufacturer": "hubspot-inc",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "HubSpot Marketing Grader"
       ]
@@ -3179,7 +3179,7 @@
     "manufacturer": "hubspot-inc",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "HubSpot Webcrawler"
       ]
@@ -3191,7 +3191,7 @@
     "manufacturer": "seograph",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "HyperCrawl"
       ]
@@ -3203,7 +3203,7 @@
     "manufacturer": "ibm",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "IC OpenGraph Crawler"
       ]
@@ -3215,7 +3215,7 @@
     "manufacturer": "icarus6",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Icarus6j"
       ]
@@ -3227,7 +3227,7 @@
     "manufacturer": "niict",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "ICC\\-Crawler"
       ]
@@ -3249,7 +3249,7 @@
     "manufacturer": "ichiro",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "ichiro"
       ]
@@ -3271,7 +3271,7 @@
     "manufacturer": "icjobs",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "iCjobs"
       ]
@@ -3283,7 +3283,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "iDownloader"
       ]
@@ -3295,7 +3295,7 @@
     "manufacturer": "iis.net",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "iisbot"
       ]
@@ -3307,7 +3307,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "ImageMobile"
       ]
@@ -3319,7 +3319,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "ImageSearcherS"
       ]
@@ -3331,7 +3331,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "ImplisenseBot"
       ]
@@ -3343,7 +3343,7 @@
     "manufacturer": "iyotta-software",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "InAGist URL Resolver"
       ]
@@ -3365,7 +3365,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Indy Library"
       ]
@@ -3387,7 +3387,7 @@
     "manufacturer": "infegy",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "InfegyAtlas"
       ]
@@ -3399,7 +3399,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Infohelfer"
       ]
@@ -3411,7 +3411,7 @@
     "manufacturer": "itam",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Infohelfer"
       ]
@@ -3423,7 +3423,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "infoX\\-WISG"
       ]
@@ -3435,7 +3435,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "InfuzApp"
       ]
@@ -3447,7 +3447,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "InsiteRobot"
       ]
@@ -3459,7 +3459,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Insitesbot"
       ]
@@ -3471,7 +3471,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "integrity"
       ]
@@ -3483,7 +3483,7 @@
     "manufacturer": "biological-networks",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "integromedb.org"
       ]
@@ -3495,7 +3495,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "isa",
         "intelligentsearchassistant"
@@ -3508,7 +3508,7 @@
     "manufacturer": "internet-archive-de",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "archive\\-de\\.com"
       ]
@@ -3520,7 +3520,7 @@
     "manufacturer": "archive.org",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "special_archiver"
       ]
@@ -3532,7 +3532,7 @@
     "manufacturer": "internet-seer",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "InternetSeer\\.com"
       ]
@@ -3544,7 +3544,7 @@
     "manufacturer": "ipv4scan",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "IPv4Scan"
       ]
@@ -3556,7 +3556,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "IRLbot"
       ]
@@ -3568,7 +3568,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "isc header collector handlers"
       ]
@@ -3580,7 +3580,7 @@
     "manufacturer": "tiscali",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "IstellaBot"
       ]
@@ -3612,7 +3612,7 @@
     "manufacturer": "apache",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Jakarta Commons\\-HttpClient"
       ]
@@ -3624,7 +3624,7 @@
     "manufacturer": "apache",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Jakarta Commons\\-HttpClient"
       ]
@@ -3636,7 +3636,7 @@
     "manufacturer": "geskimo",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "fr-crawler"
       ]
@@ -3648,7 +3648,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Jeode"
       ]
@@ -3660,7 +3660,7 @@
     "manufacturer": "jobboerse",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "findlinks"
       ]
@@ -3672,7 +3672,7 @@
     "manufacturer": "job-digger",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "JobdiggerSpider"
       ]
@@ -3684,7 +3684,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "JobRoboter"
       ]
@@ -3696,7 +3696,7 @@
     "manufacturer": "jooble",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "JoobleBot"
       ]
@@ -3708,7 +3708,7 @@
     "manufacturer": "dm-solutions",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "jupdate"
       ]
@@ -3720,7 +3720,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "JUST\\-CRAWLER"
       ]
@@ -3732,7 +3732,7 @@
     "manufacturer": "ntt-resonant",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "kgbody"
       ]
@@ -3744,7 +3744,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Kiodia Spider"
       ]
@@ -3756,7 +3756,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "kizasi-spider"
       ]
@@ -3768,7 +3768,7 @@
     "manufacturer": "komodia-inc",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "KomodiaBot"
       ]
@@ -3780,7 +3780,7 @@
     "manufacturer": "linkfluence",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Kraken"
       ]
@@ -3792,7 +3792,7 @@
     "manufacturer": "paypal",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "kraken"
       ]
@@ -3804,7 +3804,7 @@
     "manufacturer": "national-library-of-sweden",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "kulturarw3"
       ]
@@ -3816,7 +3816,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "binlar\\_",
         "larbin\\_"
@@ -3829,7 +3829,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "lbot"
       ]
@@ -3841,7 +3841,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "libcurl\\-agent"
       ]
@@ -3853,7 +3853,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Lightningquail"
       ]
@@ -3875,7 +3875,7 @@
     "manufacturer": "lightspeed-systems",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "LSSRocketCrawler"
       ]
@@ -3887,7 +3887,7 @@
     "manufacturer": "lingua-tools",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "linguatools"
       ]
@@ -3899,7 +3899,7 @@
     "manufacturer": "linguee",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Linguee Bot"
       ]
@@ -3911,7 +3911,7 @@
     "manufacturer": "pw-internet-solutions",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Link\\-Checker"
       ]
@@ -3923,7 +3923,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "link_thumbnailer"
       ]
@@ -3935,7 +3935,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "linkCheck"
       ]
@@ -3947,7 +3947,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "LinkLint\\-checkonly",
         "LinkLint"
@@ -3960,7 +3960,7 @@
     "manufacturer": "linkpad",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "LinkpadBot"
       ]
@@ -3972,7 +3972,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "LinksCrawler"
       ]
@@ -4004,7 +4004,7 @@
     "manufacturer": "lipperhey",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Lipperhey\\-Kaus\\-Australis"
       ]
@@ -4016,7 +4016,7 @@
     "manufacturer": "lipperhey",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Lipperhey SEO Service"
       ]
@@ -4028,7 +4028,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Lippershey"
       ]
@@ -4040,7 +4040,7 @@
     "manufacturer": "nhn-corporation",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "livedoor"
       ]
@@ -4052,7 +4052,7 @@
     "manufacturer": "nhn-corporation",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "livedoor FeedFetcher"
       ]
@@ -4064,7 +4064,7 @@
     "manufacturer": "nhn-corporation",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "livedoor-Mobile-Gateway"
       ]
@@ -4076,7 +4076,7 @@
     "manufacturer": "paypal",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "LivelapBot"
       ]
@@ -4088,7 +4088,7 @@
     "manufacturer": "loadtime",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "LoadTimeBot"
       ]
@@ -4100,7 +4100,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Locubot"
       ]
@@ -4112,7 +4112,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "LongURL API"
       ]
@@ -4124,7 +4124,7 @@
     "manufacturer": "language-tools",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "ltbot"
       ]
@@ -4136,7 +4136,7 @@
     "manufacturer": "ltx71",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "ltx71"
       ]
@@ -4148,7 +4148,7 @@
     "manufacturer": "lucidworks",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "LucidWorks"
       ]
@@ -4160,7 +4160,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "MacInroy Privacy Auditors"
       ]
@@ -4172,7 +4172,7 @@
     "manufacturer": "mail.ru",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Mail\\.RU_Bot\\/Fast",
         "Mail\\.RU_Bot",
@@ -4186,7 +4186,7 @@
     "manufacturer": "the-rocket-science-group",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "MailChimp\\.com"
       ]
@@ -4198,7 +4198,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Marketing Grader"
       ]
@@ -4210,7 +4210,7 @@
     "manufacturer": "marketwire",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "MarketwireBot"
       ]
@@ -4222,7 +4222,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "mbot v\\.",
         "mbot"
@@ -4235,7 +4235,7 @@
     "manufacturer": "meanpath",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "meanpathbot"
       ]
@@ -4247,7 +4247,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Mediobot"
       ]
@@ -4259,7 +4259,7 @@
     "manufacturer": "mega-index",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "MegaIndex\\.ru"
       ]
@@ -4271,7 +4271,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Melvil"
       ]
@@ -4283,7 +4283,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Melvil Favicon"
       ]
@@ -4295,7 +4295,7 @@
     "manufacturer": "internet-memory-foundation",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "memorybot"
       ]
@@ -4307,7 +4307,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "MerchantCentricBot"
       ]
@@ -4319,7 +4319,7 @@
     "manufacturer": "jan-bogutzki",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "MetaGeneratorCrawler"
       ]
@@ -4341,7 +4341,7 @@
     "manufacturer": "meta-headers",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "MetaHeadersBot"
       ]
@@ -4353,7 +4353,7 @@
     "manufacturer": "jaime-iniesta",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "MetaInspector"
       ]
@@ -4365,7 +4365,7 @@
     "manufacturer": "metauri",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "MetaURI API"
       ]
@@ -4377,7 +4377,7 @@
     "manufacturer": "microsoft",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Microsoft CryptoAPI",
         "Microsoft\\-CryptoAPI"
@@ -4390,7 +4390,7 @@
     "manufacturer": "microsoft",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Microsoft Data Access Internet Publishing Provider DAV"
       ]
@@ -4402,7 +4402,7 @@
     "manufacturer": "microsoft",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Microsoft URL Control \\- "
       ]
@@ -4414,7 +4414,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Microsoft Windows Network Diagnostics"
       ]
@@ -4426,7 +4426,7 @@
     "manufacturer": "microsoft",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Microsoft\\-WebDAV\\-MiniRedir",
         "Microsoft\\-WebDAV",
@@ -4440,7 +4440,7 @@
     "manufacturer": "internet-memory-research",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "imrbot"
       ]
@@ -4452,7 +4452,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "MixBot"
       ]
@@ -4464,7 +4464,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Mjbot"
       ]
@@ -4476,7 +4476,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "MnoGoSearch"
       ]
@@ -4488,7 +4488,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "moatbot"
       ]
@@ -4500,7 +4500,7 @@
     "manufacturer": "mono",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "MonoBot"
       ]
@@ -4512,7 +4512,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Moozilla"
       ]
@@ -4524,7 +4524,7 @@
     "manufacturer": "moreover-technologies",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Moreover"
       ]
@@ -4536,7 +4536,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "MOSBookmarks",
         "MOSBookmarks\\/v"
@@ -4549,7 +4549,7 @@
     "manufacturer": "teg-design",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "MOSBookmarks",
         "MOSBookmarks\\/v"
@@ -4562,7 +4562,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "MovableType"
       ]
@@ -4574,7 +4574,7 @@
     "manufacturer": "fairshare",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Mozilla crawl"
       ]
@@ -4586,7 +4586,7 @@
     "manufacturer": "microsoft",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Microsoft Office Protocol Discovery"
       ]
@@ -4598,7 +4598,7 @@
     "manufacturer": "microsoft",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "MS Search"
       ]
@@ -4610,7 +4610,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "MSIECrawler"
       ]
@@ -4622,7 +4622,7 @@
     "manufacturer": "microsoft",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "MsnBot\\-Media ",
         "msnbot\\-media"
@@ -4635,7 +4635,7 @@
     "manufacturer": "domain.de",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "MyEngines-Bot",
         "Version: "
@@ -4648,7 +4648,7 @@
     "manufacturer": "nagios-enterprises",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "nagios\\-plugins"
       ]
@@ -4660,7 +4660,7 @@
     "manufacturer": "nhn-corporation",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "AdsBot\\-Naver"
       ]
@@ -4672,7 +4672,7 @@
     "manufacturer": "nhn-corporation",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Naver",
         "Yeti"
@@ -4685,7 +4685,7 @@
     "manufacturer": "nhn-corporation",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Naver"
       ]
@@ -4697,7 +4697,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "nbot"
       ]
@@ -4709,7 +4709,7 @@
     "manufacturer": "nerdy-data",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "NerdyBot"
       ]
@@ -4751,7 +4751,7 @@
     "manufacturer": "net-seer",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "NetSeer crawler"
       ]
@@ -4763,7 +4763,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "NetSurf"
       ]
@@ -4775,7 +4775,7 @@
     "manufacturer": "nett.io",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Nett\\.io bot"
       ]
@@ -4797,7 +4797,7 @@
     "manufacturer": "netz-check",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "NetzCheckBot"
       ]
@@ -4809,7 +4809,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "news bot",
         "news bot "
@@ -4822,7 +4822,7 @@
     "manufacturer": "news.me",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "newsme"
       ]
@@ -4834,7 +4834,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "newspaper"
       ]
@@ -4846,7 +4846,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "NewsRack"
       ]
@@ -4858,7 +4858,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "niki-bot"
       ]
@@ -4870,7 +4870,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "nineconnections"
       ]
@@ -4882,7 +4882,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "NING"
       ]
@@ -4894,7 +4894,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "NixGibts"
       ]
@@ -4916,7 +4916,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "NoteTextView"
       ]
@@ -4958,7 +4958,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "OpenBSD ftp"
       ]
@@ -4970,7 +4970,7 @@
     "manufacturer": "openhose",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "OpenHoseBot"
       ]
@@ -4982,7 +4982,7 @@
     "manufacturer": "open-wave",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "OpenWeb"
       ]
@@ -4994,7 +4994,7 @@
     "manufacturer": "stefano-alimonti",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "OpenWebSpider v",
         "OpenWebSpider"
@@ -5017,7 +5017,7 @@
     "manufacturer": "orange",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Orangebot"
       ]
@@ -5039,7 +5039,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Orbiter"
       ]
@@ -5051,7 +5051,7 @@
     "manufacturer": "marketscore",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "OSSProxy"
       ]
@@ -5073,7 +5073,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "OutclicksBot"
       ]
@@ -5085,7 +5085,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "OWASP\\_SECRET\\_BROWSER"
       ]
@@ -5097,7 +5097,7 @@
     "manufacturer": "owler",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Owler"
       ]
@@ -5109,7 +5109,7 @@
     "manufacturer": "inbot-technology",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "PAD\\-bot"
       ]
@@ -5121,7 +5121,7 @@
     "manufacturer": "ranks.nl",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Page Analyzer v",
         "Page Analyzer"
@@ -5134,7 +5134,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Pagebull"
       ]
@@ -5146,7 +5146,7 @@
     "manufacturer": "page-freezer-software",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "PageFreezer"
       ]
@@ -5158,7 +5158,7 @@
     "manufacturer": "page-peeker",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "PPBot",
         "PagePeeker"
@@ -5181,7 +5181,7 @@
     "manufacturer": "pages-inventory",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "PagesInventory"
       ]
@@ -5193,7 +5193,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Pandora"
       ]
@@ -5205,7 +5205,7 @@
     "manufacturer": "paper.li",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "PaperLiBot"
       ]
@@ -5217,7 +5217,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Parchbot"
       ]
@@ -5229,7 +5229,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Pcore\\-HTTP\\/v",
         "Pcore\\-HTTP"
@@ -5252,7 +5252,7 @@
     "manufacturer": "pdrlabs",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "pdrlabs"
       ]
@@ -5264,7 +5264,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Pearltrees"
       ]
@@ -5276,7 +5276,7 @@
     "manufacturer": "peeplo",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Peeplo Screenshot Bot"
       ]
@@ -5298,7 +5298,7 @@
     "manufacturer": "photon-project",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Photon"
       ]
@@ -5310,7 +5310,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "PHP\\-Curl\\-Class"
       ]
@@ -5322,7 +5322,7 @@
     "manufacturer": "picmole",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "picmole"
       ]
@@ -5334,7 +5334,7 @@
     "manufacturer": "picsearch",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Picsearchbot",
         "psbot"
@@ -5347,7 +5347,7 @@
     "manufacturer": "pipl",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "PiplBot"
       ]
@@ -5359,7 +5359,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Pixray\\-Seeker"
       ]
@@ -5371,7 +5371,7 @@
     "manufacturer": "botje-com",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Plukkie"
       ]
@@ -5383,7 +5383,7 @@
     "manufacturer": "plus5files",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "\\+5Bot"
       ]
@@ -5395,7 +5395,7 @@
     "manufacturer": "plant-rob",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "pmoz\\.info ODP link checker"
       ]
@@ -5407,7 +5407,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "PodtechNetwork"
       ]
@@ -5419,7 +5419,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Pogodak"
       ]
@@ -5431,7 +5431,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "PostRank"
       ]
@@ -5443,7 +5443,7 @@
     "manufacturer": "prlog",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Prlog"
       ]
@@ -5455,7 +5455,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "profiller"
       ]
@@ -5467,7 +5467,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "ProspectB2B"
       ]
@@ -5479,7 +5479,7 @@
     "manufacturer": "proxy-base",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Proxy Gear Pro"
       ]
@@ -5501,7 +5501,7 @@
     "manufacturer": "public-library-archive",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "publiclibraryarchive",
         "publiclibraryarchive\\.org"
@@ -5514,7 +5514,7 @@
     "manufacturer": "eurofiles",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "PWBot"
       ]
@@ -5526,7 +5526,7 @@
     "manufacturer": "qihoo",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Qihoo"
       ]
@@ -5538,7 +5538,7 @@
     "manufacturer": "qualidator",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Qualidator\\.com Bot"
       ]
@@ -5560,7 +5560,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Quantcastbot"
       ]
@@ -5572,7 +5572,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "QuerySeekerSpider"
       ]
@@ -5584,7 +5584,7 @@
     "manufacturer": "quicki-wiki",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "QuickiWiki"
       ]
@@ -5596,7 +5596,7 @@
     "manufacturer": "quora",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Quora Link Preview"
       ]
@@ -5618,7 +5618,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "RamblerMail"
       ]
@@ -5630,7 +5630,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "RankActiveLinkBot"
       ]
@@ -5662,7 +5662,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Raven Link Checker"
       ]
@@ -5684,7 +5684,7 @@
     "manufacturer": "real-networks",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Realplayer"
       ]
@@ -5696,7 +5696,7 @@
     "manufacturer": "redbot",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "RED"
       ]
@@ -5708,7 +5708,7 @@
     "manufacturer": "reddit",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "redditbot"
       ]
@@ -5720,7 +5720,7 @@
     "manufacturer": "reddit",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "reddit pic scraper v",
         "reddit pic scraper"
@@ -5733,7 +5733,7 @@
     "manufacturer": "refind",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Refindbot"
       ]
@@ -5745,7 +5745,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "ResearchBot"
       ]
@@ -5757,7 +5757,7 @@
     "manufacturer": "mark-cavage",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "restify"
       ]
@@ -5769,7 +5769,7 @@
     "manufacturer": "binarymonkey",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "RevIP\\.info site analyzer v"
       ]
@@ -5781,7 +5781,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "rexyobot"
       ]
@@ -5793,7 +5793,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "RGAnalytics"
       ]
@@ -5805,7 +5805,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": []
     },
     "engine": "unknown"
@@ -5815,7 +5815,7 @@
     "manufacturer": "rival-iq",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Rival IQ"
       ]
@@ -5827,7 +5827,7 @@
     "manufacturer": "real-mac-software",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "RMSnapKit"
       ]
@@ -5839,7 +5839,7 @@
     "manufacturer": "seomoz",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "rogerbot",
         "rogerBot"
@@ -5852,7 +5852,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Rojo"
       ]
@@ -5864,7 +5864,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "ROR Sitemap Generator"
       ]
@@ -5876,7 +5876,7 @@
     "manufacturer": "note-page",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "FeedForAll rss2html\\.php v"
       ]
@@ -5898,7 +5898,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "RSSOwl"
       ]
@@ -5910,7 +5910,7 @@
     "manufacturer": "searchme",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Ruky\\-Roboter \\(Version\\: "
       ]
@@ -5942,7 +5942,7 @@
     "manufacturer": "samsung",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "samsung\\-agent"
       ]
@@ -5954,7 +5954,7 @@
     "manufacturer": "savenkeep",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "SNK Screenshot Bot"
       ]
@@ -5966,7 +5966,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "savetheworldheritage\\.org",
         "savetheworldheritage"
@@ -5979,7 +5979,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "SaveWealth"
       ]
@@ -5991,7 +5991,7 @@
     "manufacturer": "pagedesign",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Scopia Crawler"
       ]
@@ -6003,7 +6003,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Scorpionbot"
       ]
@@ -6015,7 +6015,7 @@
     "manufacturer": "blekko",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Scoutjet"
       ]
@@ -6027,7 +6027,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "scraper",
         "scraper v"
@@ -6040,7 +6040,7 @@
     "manufacturer": "screener-bot",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "ScreenerBot Crawler Beta"
       ]
@@ -6062,7 +6062,7 @@
     "manufacturer": "scrub-the-web",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Scrubby"
       ]
@@ -6084,7 +6084,7 @@
     "manufacturer": "searchteq",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "stq\\_bot"
       ]
@@ -6096,7 +6096,7 @@
     "manufacturer": "linden-labs",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "SecondLife"
       ]
@@ -6118,7 +6118,7 @@
     "manufacturer": "seegnify",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "seebot"
       ]
@@ -6130,7 +6130,7 @@
     "manufacturer": "semager",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Semager"
       ]
@@ -6142,7 +6142,7 @@
     "manufacturer": "semantic-visions",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "semantic\\-visions.com crawler"
       ]
@@ -6154,7 +6154,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "SemanticBot"
       ]
@@ -6166,7 +6166,7 @@
     "manufacturer": "seodiver",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "SEOdiver"
       ]
@@ -6178,7 +6178,7 @@
     "manufacturer": "seo-engine",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "SEOENGWorldBot"
       ]
@@ -6190,7 +6190,7 @@
     "manufacturer": "axandra",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "spbot",
         "sp_auditbot"
@@ -6203,7 +6203,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "SEOstats"
       ]
@@ -6215,7 +6215,7 @@
     "manufacturer": "set-links",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "SetLinks bot"
       ]
@@ -6227,7 +6227,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Setooz"
       ]
@@ -6239,7 +6239,7 @@
     "manufacturer": "seznam",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "SeznamScreenshotGenerator",
         "Seznam screenshot-generator"
@@ -6252,7 +6252,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Shopsalad"
       ]
@@ -6264,7 +6264,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Short URL Checker"
       ]
@@ -6276,7 +6276,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "ShortLinkTranslate"
       ]
@@ -6288,7 +6288,7 @@
     "manufacturer": "remixation",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "ShowyouBot"
       ]
@@ -6300,7 +6300,7 @@
     "manufacturer": "ryan-parman",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "SimplePie"
       ]
@@ -6312,7 +6312,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "SimpleScraper"
       ]
@@ -6324,7 +6324,7 @@
     "manufacturer": "sindice",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "sindice\\-fetcher"
       ]
@@ -6346,7 +6346,7 @@
     "manufacturer": "site-explorer",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "SiteExplorer"
       ]
@@ -6358,7 +6358,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Sitemap Generator"
       ]
@@ -6380,7 +6380,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Smartsite HTTPClient"
       ]
@@ -6392,7 +6392,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "SMRF URL Expander"
       ]
@@ -6404,7 +6404,7 @@
     "manufacturer": "similar-tech",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "SMTBot"
       ]
@@ -6416,7 +6416,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Snapbot"
       ]
@@ -6428,7 +6428,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Snoopy"
       ]
@@ -6440,7 +6440,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Snowtape"
       ]
@@ -6462,7 +6462,7 @@
     "manufacturer": "infegy",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Socialradarbot"
       ]
@@ -6474,7 +6474,7 @@
     "manufacturer": "softlist",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "SoftListBot"
       ]
@@ -6486,7 +6486,7 @@
     "manufacturer": "sogou",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Sogou\\-Spider"
       ]
@@ -6498,7 +6498,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "SolomonoBot"
       ]
@@ -6510,7 +6510,7 @@
     "manufacturer": "subshell",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Sophora Linkchecker"
       ]
@@ -6522,7 +6522,7 @@
     "manufacturer": "sophos",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "SophosAgent"
       ]
@@ -6534,7 +6534,7 @@
     "manufacturer": "sophos",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "SophosUpdateManager"
       ]
@@ -6546,7 +6546,7 @@
     "manufacturer": "soso",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Sosospider"
       ]
@@ -6558,7 +6558,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Space Bison"
       ]
@@ -6570,7 +6570,7 @@
     "manufacturer": "entireweb",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Speedy Spider"
       ]
@@ -6582,7 +6582,7 @@
     "manufacturer": "showword",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "SpellCheck Bot"
       ]
@@ -6604,7 +6604,7 @@
     "manufacturer": "spider-ling",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "SpiderLing"
       ]
@@ -6616,7 +6616,7 @@
     "manufacturer": "spiderlytics",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Spiderlytics"
       ]
@@ -6628,7 +6628,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "SPIP\\-",
         "SPIP"
@@ -6641,7 +6641,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "spray\\-can"
       ]
@@ -6653,7 +6653,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Sprinklr"
       ]
@@ -6665,7 +6665,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "SpurlBot"
       ]
@@ -6687,7 +6687,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "squidwall"
       ]
@@ -6699,7 +6699,7 @@
     "manufacturer": "declum",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Squzer"
       ]
@@ -6711,7 +6711,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Sqwidgebot"
       ]
@@ -6723,7 +6723,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "SRCCN\\!Spider"
       ]
@@ -6735,7 +6735,7 @@
     "manufacturer": "s-release",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "sReleaseBot"
       ]
@@ -6747,7 +6747,7 @@
     "manufacturer": "semantissimo",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "sSearch Crawler"
       ]
@@ -6759,7 +6759,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "SSLbot"
       ]
@@ -6771,7 +6771,7 @@
     "manufacturer": "kitsuregawa-laboratory",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Steeler"
       ]
@@ -6793,7 +6793,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Stratagems Kumo"
       ]
@@ -6805,7 +6805,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "StrategicBoardBot"
       ]
@@ -6817,7 +6817,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "StrawberryjamUrlExpander"
       ]
@@ -6829,7 +6829,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Supendobot"
       ]
@@ -6841,7 +6841,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "superagent"
       ]
@@ -6853,7 +6853,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Superarama\\.com \\- BOT"
       ]
@@ -6865,7 +6865,7 @@
     "manufacturer": "superfeedr",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Superfeedr bot"
       ]
@@ -6877,7 +6877,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Superfish"
       ]
@@ -6889,7 +6889,7 @@
     "manufacturer": "domain-tools",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "SurveyBot"
       ]
@@ -6901,7 +6901,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Svven\\-Summarizer"
       ]
@@ -6913,7 +6913,7 @@
     "manufacturer": "web-synaptics",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "SynapticWalker"
       ]
@@ -6935,7 +6935,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Synoobot"
       ]
@@ -6957,7 +6957,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Tagoobot"
       ]
@@ -6969,7 +6969,7 @@
     "manufacturer": "tailrank",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Tailrank"
       ]
@@ -6981,7 +6981,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Taproot"
       ]
@@ -6993,7 +6993,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "TasapImageRobot"
       ]
@@ -7015,7 +7015,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "test certificate info"
       ]
@@ -7047,7 +7047,7 @@
     "manufacturer": "the-old-reader",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "theoldreader"
       ]
@@ -7059,7 +7059,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "ThemeSearchAndExtraction\\-crawler"
       ]
@@ -7081,7 +7081,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "ThumbnailAgent"
       ]
@@ -7093,7 +7093,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Thumbor"
       ]
@@ -7135,7 +7135,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Thunderstone"
       ]
@@ -7147,7 +7147,7 @@
     "manufacturer": "idee",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "TinEye\\-bot",
         "TinEye"
@@ -7160,7 +7160,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Tiny Tiny RSS"
       ]
@@ -7172,7 +7172,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "TkcAutodownloader"
       ]
@@ -7184,7 +7184,7 @@
     "manufacturer": "abonti",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "TLSProber"
       ]
@@ -7196,7 +7196,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "toquo\\.es"
       ]
@@ -7208,7 +7208,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Traackr"
       ]
@@ -7220,7 +7220,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "TrafficBlazer"
       ]
@@ -7232,7 +7232,7 @@
     "manufacturer": "trend-micro",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "TrendMicro"
       ]
@@ -7244,7 +7244,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "TrendWinHttp"
       ]
@@ -7256,7 +7256,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Trove"
       ]
@@ -7268,7 +7268,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "TumblrRssSyndication"
       ]
@@ -7280,7 +7280,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "TuringMachine"
       ]
@@ -7292,7 +7292,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "TURLValidator"
       ]
@@ -7304,7 +7304,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Tweetbot"
       ]
@@ -7316,7 +7316,7 @@
     "manufacturer": "tweeted-times",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "TweetedTimes Bot"
       ]
@@ -7328,7 +7328,7 @@
     "manufacturer": "datasift",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "TweetmemeBot"
       ]
@@ -7340,7 +7340,7 @@
     "manufacturer": "tweet-minster",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Tweetminster"
       ]
@@ -7352,7 +7352,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "TwengabotDiscover"
       ]
@@ -7364,7 +7364,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Twikle"
       ]
@@ -7376,7 +7376,7 @@
     "manufacturer": "twingly",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Twingly Recon"
       ]
@@ -7388,7 +7388,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Twitturls"
       ]
@@ -7410,7 +7410,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "TYPO3"
       ]
@@ -7422,7 +7422,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "TYPO3\\-linkvalidator"
       ]
@@ -7434,7 +7434,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "TypoLinkvalidator"
       ]
@@ -7446,7 +7446,7 @@
     "manufacturer": "ucoz",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "uCrawlr"
       ]
@@ -7458,7 +7458,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "uipbot"
       ]
@@ -7470,7 +7470,7 @@
     "manufacturer": "unister",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Unisterbot"
       ]
@@ -7492,7 +7492,7 @@
     "manufacturer": "unister",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "UnisterTesting"
       ]
@@ -7504,7 +7504,7 @@
     "manufacturer": "univention",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "UCS \\(ESX\\) \\- "
       ]
@@ -7516,7 +7516,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "UniversalFeedParser"
       ]
@@ -7528,7 +7528,7 @@
     "manufacturer": "gnip",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "UnwindFetchor"
       ]
@@ -7540,7 +7540,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "UoftdbExperiment"
       ]
@@ -7552,7 +7552,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "UptimeRobot"
       ]
@@ -7564,7 +7564,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "urlgrabber"
       ]
@@ -7576,7 +7576,7 @@
     "manufacturer": "profound-networks",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "URLAppendBot"
       ]
@@ -7588,7 +7588,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "URLChecker"
       ]
@@ -7600,7 +7600,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "URLfilterDB\\-crawler"
       ]
@@ -7612,7 +7612,7 @@
     "manufacturer": "wise-guys.nl",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Vagabondo"
       ]
@@ -7634,7 +7634,7 @@
     "manufacturer": "vbseo",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "vBSEO"
       ]
@@ -7646,7 +7646,7 @@
     "manufacturer": "veooz-labs",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Veooz"
       ]
@@ -7668,7 +7668,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Viralheat"
       ]
@@ -7680,7 +7680,7 @@
     "manufacturer": "unruly-group",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "viralvideochart"
       ]
@@ -7692,7 +7692,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Virtuoso"
       ]
@@ -7704,7 +7704,7 @@
     "manufacturer": "bob-mottram",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "visionutils"
       ]
@@ -7716,7 +7716,7 @@
     "manufacturer": "vk",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "vkShare"
       ]
@@ -7738,7 +7738,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "VocusBot"
       ]
@@ -7750,7 +7750,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Voilabot",
         "VoilaBot BETA"
@@ -7773,7 +7773,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Voyager"
       ]
@@ -7785,7 +7785,7 @@
     "manufacturer": "cosmix",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "voyager"
       ]
@@ -7797,7 +7797,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Bromium Safari"
       ]
@@ -7809,7 +7809,7 @@
     "manufacturer": "w3c",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "W3C\\_I18n\\-Checker"
       ]
@@ -7821,7 +7821,7 @@
     "manufacturer": "w3c",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "W3C\\-mobileOK\\/DDC\\-"
       ]
@@ -7833,7 +7833,7 @@
     "manufacturer": "w3c",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "W3C_Unicorn"
       ]
@@ -7845,7 +7845,7 @@
     "manufacturer": "w3c",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "W3C\\-checklink"
       ]
@@ -7857,7 +7857,7 @@
     "manufacturer": "wada",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Wada\\.vn"
       ]
@@ -7879,7 +7879,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "wapstart-crawler"
       ]
@@ -7891,7 +7891,7 @@
     "manufacturer": "was-alive",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "WASALive\\-Bot"
       ]
@@ -7903,7 +7903,7 @@
     "manufacturer": "archive.org",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "waybackarchive.org"
       ]
@@ -7915,7 +7915,7 @@
     "manufacturer": "warebay",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "WBSearchBot",
         "WbSrch"
@@ -7928,7 +7928,7 @@
     "manufacturer": "zeta centauri",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "WbSrch"
       ]
@@ -7940,7 +7940,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Web Downloader"
       ]
@@ -7952,7 +7952,7 @@
     "manufacturer": "web-glance",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Webglance"
       ]
@@ -7964,7 +7964,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Web Link Validator"
       ]
@@ -7976,7 +7976,7 @@
     "manufacturer": "einsundeins",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "WEB\\.DE MailCheck"
       ]
@@ -7988,7 +7988,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Webaroo"
       ]
@@ -8000,7 +8000,7 @@
     "manufacturer": "centil-schweiz",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Webbot Vers\\."
       ]
@@ -8012,7 +8012,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Webbotru"
       ]
@@ -8024,7 +8024,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Webcapture"
       ]
@@ -8036,7 +8036,7 @@
     "manufacturer": "web-ceo",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "online\\-webceo\\-bot"
       ]
@@ -8048,7 +8048,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "WebCorp"
       ]
@@ -8080,7 +8080,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Weblide"
       ]
@@ -8092,7 +8092,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "wmtips\\.com"
       ]
@@ -8104,7 +8104,7 @@
     "manufacturer": "wmaid",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "WebMasterAid"
       ]
@@ -8116,7 +8116,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "WebmasterCoffee"
       ]
@@ -8128,7 +8128,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "WebmasterworldServerHeaderChecker"
       ]
@@ -8150,7 +8150,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "webnumbrFetcher"
       ]
@@ -8162,7 +8162,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "WebRingChecker"
       ]
@@ -8174,7 +8174,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Webscan"
       ]
@@ -8186,7 +8186,7 @@
     "manufacturer": "umechando",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Website Explorer"
       ]
@@ -8198,7 +8198,7 @@
     "manufacturer": "webthumbnail",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "WebThumbnail"
       ]
@@ -8210,7 +8210,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Websuchebot\\/Shooter"
       ]
@@ -8222,7 +8222,7 @@
     "manufacturer": "webtarantula",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "WebTarantula\\.com Crawler"
       ]
@@ -8234,7 +8234,7 @@
     "manufacturer": "apache",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Wepbot"
       ]
@@ -8246,7 +8246,7 @@
     "manufacturer": "michael-schoebel",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "DeuSu"
       ]
@@ -8258,7 +8258,7 @@
     "manufacturer": "wesee",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "WeSEE:Ads"
       ]
@@ -8270,7 +8270,7 @@
     "manufacturer": "wesee",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "WeSEE:Search"
       ]
@@ -8282,7 +8282,7 @@
     "manufacturer": "andrew-horton",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "WhatWeb"
       ]
@@ -8294,7 +8294,7 @@
     "manufacturer": "web-integration-it-service",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "WI Job Roboter Spider Version"
       ]
@@ -8306,7 +8306,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Wikimpress"
       ]
@@ -8318,7 +8318,7 @@
     "manufacturer": "microsoft",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Windows Phone Ad Client"
       ]
@@ -8340,7 +8340,7 @@
     "manufacturer": "microsoft",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Windows\\-Update\\-Agent"
       ]
@@ -8352,7 +8352,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "WinkBot"
       ]
@@ -8364,7 +8364,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "WIRE"
       ]
@@ -8376,7 +8376,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "WISEbot"
       ]
@@ -8388,7 +8388,7 @@
     "manufacturer": "look-smart",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "ZyBorg"
       ]
@@ -8410,7 +8410,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "WNMbot"
       ]
@@ -8422,7 +8422,7 @@
     "manufacturer": "woo-rank",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "woobot"
       ]
@@ -8444,7 +8444,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "WWWeasel Robot v"
       ]
@@ -8466,7 +8466,7 @@
     "manufacturer": "go-daddy",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "worldwebheritage\\.org"
       ]
@@ -8478,7 +8478,7 @@
     "manufacturer": "wotbox",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Wotbox"
       ]
@@ -8490,7 +8490,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "WPScan v"
       ]
@@ -8502,7 +8502,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "wscheck\\.com"
       ]
@@ -8514,7 +8514,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "WSP"
       ]
@@ -8526,7 +8526,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "wsr\\-agent"
       ]
@@ -8538,7 +8538,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "wume_crawler"
       ]
@@ -8550,7 +8550,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "WWW_Browser"
       ]
@@ -8562,7 +8562,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Mechanize"
       ]
@@ -8574,7 +8574,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "www4mail"
       ]
@@ -8586,7 +8586,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "WWWC"
       ]
@@ -8598,7 +8598,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "wwwster"
       ]
@@ -8620,7 +8620,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "xChaos_Arachne"
       ]
@@ -8642,7 +8642,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Xerka WebBot v"
       ]
@@ -8654,7 +8654,7 @@
     "manufacturer": "xing",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "XING\\-contenttabreceiver"
       ]
@@ -8666,7 +8666,7 @@
     "manufacturer": "xml-sitemaps",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "XML\\-Sitemaps"
       ]
@@ -8688,7 +8688,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "XmlSitemapGenerator"
       ]
@@ -8700,7 +8700,7 @@
     "manufacturer": "xovi",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "XoviBot"
       ]
@@ -8712,7 +8712,7 @@
     "manufacturer": "xovi",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "XoviOnpageCrawler"
       ]
@@ -8754,7 +8754,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "YadowsCrawler"
       ]
@@ -8766,7 +8766,7 @@
     "manufacturer": "yahoo",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Yahoo Ad monitoring"
       ]
@@ -8808,7 +8808,7 @@
     "manufacturer": "yahoo",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Yahoo Pipes"
       ]
@@ -8820,7 +8820,7 @@
     "manufacturer": "yahoo",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "YahooCacheSystem"
       ]
@@ -8852,7 +8852,7 @@
     "manufacturer": "yioop",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "YioopBot"
       ]
@@ -8864,7 +8864,7 @@
     "manufacturer": "yisou",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "YisouSpider"
       ]
@@ -8876,7 +8876,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "YodaoBot"
       ]
@@ -8888,7 +8888,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "YodaoBot\\-Image"
       ]
@@ -8900,7 +8900,7 @@
     "manufacturer": "yooz",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "yoozBot\\-"
       ]
@@ -8912,7 +8912,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "YoudaoBot"
       ]
@@ -8924,7 +8924,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "YOURLS v",
         "YOURLS"
@@ -8937,7 +8937,7 @@
     "manufacturer": "zend",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Zend_Http_Client"
       ]
@@ -8949,7 +8949,7 @@
     "manufacturer": "flipboard",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "zitebot"
       ]
@@ -8971,7 +8971,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "ZnajdzFoto\\/Image"
       ]
@@ -8993,7 +8993,7 @@
     "manufacturer": "zookabot",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Zookabot"
       ]
@@ -9005,7 +9005,7 @@
     "manufacturer": "zum-internet-corp",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "ZumBot"
       ]
@@ -9027,7 +9027,7 @@
     "manufacturer": "exipert",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "CheckMarkNetwork"
       ]
@@ -9049,7 +9049,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Download Demon"
       ]
@@ -9061,7 +9061,7 @@
     "manufacturer": "stony brook university",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Gulper Web Bot"
       ]
@@ -9093,7 +9093,7 @@
     "manufacturer": "madb",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "MADBbot"
       ]
@@ -9115,7 +9115,7 @@
     "manufacturer": "keywords-standings",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "KStandBot"
       ]
@@ -9127,7 +9127,7 @@
     "manufacturer": "seo-powersuite",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "AwarioBot"
       ]
@@ -9139,7 +9139,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Dmbot"
       ]
@@ -9161,7 +9161,7 @@
     "manufacturer": "oesterreichische nationalbibliothek",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "ONBbot"
       ]
@@ -9173,7 +9173,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Orbbot"
       ]
@@ -9185,7 +9185,7 @@
     "manufacturer": "semrush",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "SiteAuditBot"
       ]
@@ -9197,7 +9197,7 @@
     "manufacturer": "relemind",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "relemindbot"
       ]
@@ -9209,7 +9209,7 @@
     "manufacturer": "proton",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "PhxBot"
       ]
@@ -9221,7 +9221,7 @@
     "manufacturer": "universitaet-passau",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "hgfAlphaXCrawl"
       ]
@@ -9233,7 +9233,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Crawlboy",
         "crawler_eb_germany_"
@@ -9246,7 +9246,7 @@
     "manufacturer": "digital-shadows",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "DigitalShadowsBot",
         "digitalshadowsbot"
@@ -9259,7 +9259,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "BSbot"
       ]
@@ -9271,7 +9271,7 @@
     "manufacturer": "bidtellect",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Bidtellect"
       ]
@@ -9283,7 +9283,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "DF Bot"
       ]
@@ -9295,7 +9295,7 @@
     "manufacturer": "domcop",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "DomCopBot"
       ]
@@ -9327,7 +9327,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "ISSCyberRiskCrawler"
       ]
@@ -9349,7 +9349,7 @@
     "manufacturer": "torus",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "DongleEmulatorBot"
       ]
@@ -9361,7 +9361,7 @@
     "manufacturer": "torus",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "ReverseEngineeringBot"
       ]
@@ -9373,7 +9373,7 @@
     "manufacturer": "torus",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "DecompilationBot"
       ]
@@ -9385,7 +9385,7 @@
     "manufacturer": "torus",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "TorusBot"
       ]
@@ -9397,7 +9397,7 @@
     "manufacturer": "geedo.com",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "GeedoBot"
       ]
@@ -9409,7 +9409,7 @@
     "manufacturer": "netpeak",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "NetpeakCheckerBot"
       ]
@@ -9421,7 +9421,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "StractBot"
       ]
@@ -9433,7 +9433,7 @@
     "manufacturer": "braedon vickers",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "WellKnownBot"
       ]
@@ -9445,7 +9445,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "websusebot"
       ]
@@ -9457,7 +9457,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "ScamadviserExternalHit"
       ]
@@ -9489,7 +9489,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "SiteScoreBot",
         "SiteScoreBot v"
@@ -9502,7 +9502,7 @@
     "manufacturer": "slack",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Slack-ImgProxy"
       ]
@@ -9514,7 +9514,7 @@
     "manufacturer": "read-it-later",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "PocketImageCache"
       ]
@@ -9526,7 +9526,7 @@
     "manufacturer": "read-it-later",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "PocketParser"
       ]
@@ -9548,7 +9548,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Spider_Bot"
       ]
@@ -9560,7 +9560,7 @@
     "manufacturer": "unknown",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "VsuSearchSpider"
       ]
@@ -9572,7 +9572,7 @@
     "manufacturer": "su-sea",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "YouBot"
       ]
@@ -9594,7 +9594,7 @@
     "manufacturer": "facebook",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "cortex"
       ]
@@ -9606,7 +9606,7 @@
     "manufacturer": "facebook",
     "type": "bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "adreview"
       ]

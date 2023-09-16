@@ -18,7 +18,7 @@ use UnexpectedValueException;
 use function mb_stripos;
 use function preg_match;
 
-final class AndroidOs implements VersionDetectorInterface
+final class AndroidOs implements VersionFactoryInterface
 {
     public const SEARCHES = [
         'android android',
@@ -39,7 +39,7 @@ final class AndroidOs implements VersionDetectorInterface
     /** @throws void */
     public function __construct(
         private readonly LoggerInterface $logger,
-        private readonly VersionFactoryInterface $versionFactory,
+        private readonly VersionBuilderInterface $versionBuilder,
     ) {
         // nothing to do
     }
@@ -53,7 +53,7 @@ final class AndroidOs implements VersionDetectorInterface
     {
         if (mb_stripos($useragent, 'android 2.1-update1') !== false) {
             try {
-                return $this->versionFactory->set('2.1.1');
+                return $this->versionBuilder->set('2.1.1');
             } catch (NotNumericException $e) {
                 $this->logger->info($e);
 
@@ -63,7 +63,7 @@ final class AndroidOs implements VersionDetectorInterface
 
         if (mb_stripos($useragent, 'android m;') !== false) {
             try {
-                return $this->versionFactory->set('6.0');
+                return $this->versionBuilder->set('6.0');
             } catch (NotNumericException $e) {
                 $this->logger->info($e);
 
@@ -73,7 +73,7 @@ final class AndroidOs implements VersionDetectorInterface
 
         if (preg_match('/Android \(\d+\/(?P<version>\d+[\d\.]+)/', $useragent, $matches)) {
             try {
-                return $this->versionFactory->set($matches['version']);
+                return $this->versionBuilder->set($matches['version']);
             } catch (NotNumericException $e) {
                 $this->logger->info($e);
 
@@ -82,7 +82,7 @@ final class AndroidOs implements VersionDetectorInterface
         }
 
         try {
-            $detectedVersion = $this->versionFactory->detectVersion($useragent, self::SEARCHES);
+            $detectedVersion = $this->versionBuilder->detectVersion($useragent, self::SEARCHES);
         } catch (NotNumericException $e) {
             $this->logger->info($e);
 
@@ -95,7 +95,7 @@ final class AndroidOs implements VersionDetectorInterface
 
         if (preg_match('/Linux; (?P<version>\d+[\d\.]+)/', $useragent, $matches)) {
             try {
-                return $this->versionFactory->set($matches['version']);
+                return $this->versionBuilder->set($matches['version']);
             } catch (NotNumericException $e) {
                 $this->logger->info($e);
             }
@@ -105,7 +105,7 @@ final class AndroidOs implements VersionDetectorInterface
 
         if (mb_stripos($useragent, 'gingerbread') !== false) {
             try {
-                return $this->versionFactory->set('2.3.0');
+                return $this->versionBuilder->set('2.3.0');
             } catch (NotNumericException $e) {
                 $this->logger->info($e);
             }
@@ -115,7 +115,7 @@ final class AndroidOs implements VersionDetectorInterface
 
         if (mb_stripos($useragent, 'android eclair') !== false) {
             try {
-                return $this->versionFactory->set('2.1.0');
+                return $this->versionBuilder->set('2.1.0');
             } catch (NotNumericException $e) {
                 $this->logger->info($e);
             }

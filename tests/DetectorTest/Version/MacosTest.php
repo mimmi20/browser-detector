@@ -15,8 +15,8 @@ namespace BrowserDetectorTest\Version;
 use BrowserDetector\Version\Macos;
 use BrowserDetector\Version\NotNumericException;
 use BrowserDetector\Version\NullVersion;
-use BrowserDetector\Version\VersionFactory;
-use BrowserDetector\Version\VersionFactoryInterface;
+use BrowserDetector\Version\VersionBuilder;
+use BrowserDetector\Version\VersionBuilderInterface;
 use BrowserDetector\Version\VersionInterface;
 use Exception;
 use MacosBuild\MacosBuild;
@@ -63,7 +63,7 @@ final class MacosTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $object = new Macos($logger, new VersionFactory(), new MacosBuild());
+        $object = new Macos($logger, new VersionBuilder($logger), new MacosBuild());
 
         $detectedVersion = $object->detectVersion($useragent);
 
@@ -137,11 +137,11 @@ final class MacosTest extends TestCase
         $exception = new NotNumericException('not numeric');
         $version   = '10.11.3-beta+2';
 
-        $versionFactory = $this->createMock(VersionFactoryInterface::class);
-        $versionFactory
+        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
             ->expects(self::never())
             ->method('detectVersion');
-        $versionFactory
+        $versionBuilder
             ->expects(self::once())
             ->method('set')
             ->with($version)
@@ -181,7 +181,7 @@ final class MacosTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $object = new Macos($logger, $versionFactory, $macosBuild);
+        $object = new Macos($logger, $versionBuilder, $macosBuild);
 
         $detectedVersion = $object->detectVersion($useragent);
 
@@ -196,11 +196,11 @@ final class MacosTest extends TestCase
         $exception = new NotNumericException('not numeric');
         $version   = '10.11.3-beta+2';
 
-        $versionFactory = $this->createMock(VersionFactoryInterface::class);
-        $versionFactory
+        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
             ->expects(self::never())
             ->method('detectVersion');
-        $versionFactory
+        $versionBuilder
             ->expects(self::once())
             ->method('set')
             ->with($version)
@@ -240,7 +240,7 @@ final class MacosTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $object = new Macos($logger, $versionFactory, $macosBuild);
+        $object = new Macos($logger, $versionBuilder, $macosBuild);
 
         $detectedVersion = $object->detectVersion($useragent);
 
@@ -255,11 +255,11 @@ final class MacosTest extends TestCase
         $exception = new NotNumericException('not numeric');
         $version   = '10.13.0';
 
-        $versionFactory = $this->createMock(VersionFactoryInterface::class);
-        $versionFactory
+        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
             ->expects(self::never())
             ->method('detectVersion');
-        $versionFactory
+        $versionBuilder
             ->expects(self::once())
             ->method('set')
             ->with($version)
@@ -297,7 +297,7 @@ final class MacosTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $object = new Macos($logger, $versionFactory, $macosBuild);
+        $object = new Macos($logger, $versionBuilder, $macosBuild);
 
         $detectedVersion = $object->detectVersion($useragent);
 
@@ -317,13 +317,13 @@ final class MacosTest extends TestCase
             ->with(VersionInterface::IGNORE_MINOR)
             ->willReturn('10102');
 
-        $versionFactory = $this->createMock(VersionFactoryInterface::class);
-        $versionFactory
+        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
             ->expects(self::once())
             ->method('detectVersion')
             ->with($useragent, Macos::SEARCHES)
             ->willReturn($version);
-        $versionFactory
+        $versionBuilder
             ->expects(self::once())
             ->method('set')
             ->with('10.10.2')
@@ -361,7 +361,7 @@ final class MacosTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $object = new Macos($logger, $versionFactory, $macosBuild);
+        $object = new Macos($logger, $versionBuilder, $macosBuild);
 
         $detectedVersion = $object->detectVersion($useragent);
 
@@ -381,13 +381,13 @@ final class MacosTest extends TestCase
             ->with(VersionInterface::IGNORE_MINOR)
             ->willReturn('1084');
 
-        $versionFactory = $this->createMock(VersionFactoryInterface::class);
-        $versionFactory
+        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
             ->expects(self::once())
             ->method('detectVersion')
             ->with($useragent, Macos::SEARCHES)
             ->willReturn($version);
-        $versionFactory
+        $versionBuilder
             ->expects(self::once())
             ->method('set')
             ->with('10.8.4')
@@ -425,7 +425,7 @@ final class MacosTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $object = new Macos($logger, $versionFactory, $macosBuild);
+        $object = new Macos($logger, $versionBuilder, $macosBuild);
 
         $detectedVersion = $object->detectVersion($useragent);
 
@@ -443,13 +443,13 @@ final class MacosTest extends TestCase
             ->expects(self::never())
             ->method('getVersion');
 
-        $versionFactory = $this->createMock(VersionFactoryInterface::class);
-        $versionFactory
+        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
             ->expects(self::once())
             ->method('detectVersion')
             ->with('QuickTime/7.6 (qtver=7.6;cpu=IA32;os=Mac 10.5.7)', Macos::SEARCHES)
             ->willThrowException($exception);
-        $versionFactory
+        $versionBuilder
             ->expects(self::never())
             ->method('set');
 
@@ -485,7 +485,7 @@ final class MacosTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $object = new Macos($logger, $versionFactory, $macosBuild);
+        $object = new Macos($logger, $versionBuilder, $macosBuild);
 
         $detectedVersion = $object->detectVersion($useragent);
 

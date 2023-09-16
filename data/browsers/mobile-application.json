@@ -4,7 +4,7 @@
     "manufacturer": "agile-bits",
     "type": "mobile-application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "1Password"
       ]
@@ -16,7 +16,7 @@
     "manufacturer": "google",
     "type": "mobile-application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "GSA",
         "GoogleApp"
@@ -29,7 +29,7 @@
     "manufacturer": "tencent",
     "type": "mobile-application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "MicroMessenger"
       ]
@@ -41,7 +41,7 @@
     "manufacturer": "snap",
     "type": "mobile-application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Snapchat"
       ]
@@ -53,7 +53,7 @@
     "manufacturer": "facebook",
     "type": "mobile-application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Instagram"
       ]
@@ -65,7 +65,7 @@
     "manufacturer": "linked-in",
     "type": "mobile-application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "LinkedInApp",
         "\\[LinkedInApp\\]"
@@ -78,7 +78,7 @@
     "manufacturer": "xing",
     "type": "mobile-application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "XING"
       ]
@@ -90,7 +90,7 @@
     "manufacturer": "kakao",
     "type": "mobile-application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "KAKAOTALK"
       ]
@@ -102,7 +102,7 @@
     "manufacturer": "facebook",
     "type": "mobile-application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "FBAV",
         "facebookexternalhit"
@@ -115,7 +115,7 @@
     "manufacturer": "facebook",
     "type": "mobile-application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "FBAV"
       ]
@@ -127,7 +127,7 @@
     "manufacturer": "facebook",
     "type": "mobile-application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Facebook",
         "FBAV"
@@ -140,7 +140,7 @@
     "manufacturer": "facebook",
     "type": "mobile-application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Facebook",
         "FBAV"
@@ -153,7 +153,7 @@
     "manufacturer": "facebook",
     "type": "mobile-application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Facebook",
         "FBAV"
@@ -166,7 +166,7 @@
     "manufacturer": "unknown",
     "type": "mobile-application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "WhatsApp"
       ]
@@ -178,7 +178,7 @@
     "manufacturer": "keeper",
     "type": "mobile-application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Keeper"
       ]
@@ -190,7 +190,7 @@
     "manufacturer": "huawei",
     "type": "mobile-application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "HiSearch"
       ]
@@ -202,7 +202,7 @@
     "manufacturer": "flipboard",
     "type": "mobile-application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Flipboard"
       ]
@@ -214,7 +214,7 @@
     "manufacturer": "baidu",
     "type": "mobile-application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "baiduboxapp"
       ]
@@ -226,7 +226,7 @@
     "manufacturer": "baidu",
     "type": "mobile-application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "lite baiduboxapp"
       ]
@@ -238,7 +238,7 @@
     "manufacturer": "microsoft",
     "type": "mobile-application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "NewsSapphire"
       ]
@@ -250,7 +250,7 @@
     "manufacturer": "spotify",
     "type": "mobile-application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Spotify"
       ]
@@ -262,7 +262,7 @@
     "manufacturer": "kakao",
     "type": "mobile-application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "DaumApps"
       ]
@@ -274,7 +274,7 @@
     "manufacturer": "blitz",
     "type": "mobile-application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Blitz"
       ]
@@ -286,7 +286,7 @@
     "manufacturer": "google",
     "type": "mobile-application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "GoogleMobile"
       ]
@@ -298,7 +298,7 @@
     "manufacturer": "unity-technologies",
     "type": "mobile-application",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "UnityPlayer"
       ]

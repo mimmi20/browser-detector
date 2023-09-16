@@ -16,12 +16,12 @@ use Psr\Log\LoggerInterface;
 
 use function preg_match;
 
-final class Gecko implements VersionDetectorInterface
+final class Gecko implements VersionFactoryInterface
 {
     /** @throws void */
     public function __construct(
         private readonly LoggerInterface $logger,
-        private readonly VersionFactoryInterface $versionFactory,
+        private readonly VersionBuilderInterface $versionBuilder,
     ) {
         // nothing to do
     }
@@ -51,7 +51,7 @@ final class Gecko implements VersionDetectorInterface
 
         if (!empty($geckoversion) && !empty($ffversion) && $geckoversion === $ffversion) {
             try {
-                return $this->versionFactory->set($geckoversion);
+                return $this->versionBuilder->set($geckoversion);
             } catch (NotNumericException $e) {
                 $this->logger->info($e);
             }
@@ -61,7 +61,7 @@ final class Gecko implements VersionDetectorInterface
 
         if (!empty($rvversion)) {
             try {
-                return $this->versionFactory->set($rvversion);
+                return $this->versionBuilder->set($rvversion);
             } catch (NotNumericException $e) {
                 $this->logger->info($e);
             }
