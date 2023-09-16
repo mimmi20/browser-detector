@@ -43,7 +43,6 @@ final class EngineLoader implements EngineLoaderInterface
      * @return array{name: string|null, version: string|null, manufacturer: string}
      *
      * @throws NotFoundException
-     * @throws UnexpectedValueException
      */
     public function load(string $key, string $useragent = ''): array
     {
@@ -74,9 +73,17 @@ final class EngineLoader implements EngineLoaderInterface
             $this->logger->info($e);
         }
 
+        try {
+            $versionString = $version->getVersion();
+        } catch (UnexpectedValueException $e) {
+            $this->logger->info($e);
+
+            $versionString = null;
+        }
+
         return [
             'name' => $name,
-            'version' => $version->getVersion(),
+            'version' => $versionString,
             'manufacturer' => $manufacturer['type'],
         ];
     }

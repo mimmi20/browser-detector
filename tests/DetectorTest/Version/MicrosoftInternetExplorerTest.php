@@ -128,8 +128,10 @@ final class MicrosoftInternetExplorerTest extends TestCase
     public function testDetectVersionFail(): void
     {
         $useragent = 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; SearchToolbar 1.2; GTB7.0)';
+
         $exception = new NotNumericException('set failed');
-        $logger    = $this->createMock(LoggerInterface::class);
+
+        $logger = $this->createMock(LoggerInterface::class);
         $logger
             ->expects(self::never())
             ->method('debug');
@@ -189,11 +191,13 @@ final class MicrosoftInternetExplorerTest extends TestCase
     }
 
     /** @throws Exception */
-    public function testDetectVersionFailSecond(): void
+    public function testDetectVersionFail2(): void
     {
         $useragent = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Siemens A/S; .NET CLR 1.0.3705; .NET CLR 1.1.4322)';
+
         $exception = new NotNumericException('set failed');
-        $logger    = $this->createMock(LoggerInterface::class);
+
+        $logger = $this->createMock(LoggerInterface::class);
         $logger
             ->expects(self::never())
             ->method('debug');
@@ -233,6 +237,63 @@ final class MicrosoftInternetExplorerTest extends TestCase
             ->method('detectVersion')
             ->with($useragent)
             ->willReturn(new NullVersion());
+
+        $object = new MicrosoftInternetExplorer($logger, $versionBuilder, $trident);
+
+        $detectedVersion = $object->detectVersion($useragent);
+
+        self::assertInstanceOf(VersionInterface::class, $detectedVersion);
+        self::assertInstanceOf(NullVersion::class, $detectedVersion);
+        self::assertNull($detectedVersion->getVersion());
+    }
+
+    /** @throws Exception */
+    public function testDetectVersionFail3(): void
+    {
+        $useragent = 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; SearchToolbar 1.2; GTB7.0)';
+
+        $exception = new NotNumericException('set failed');
+
+        $logger = $this->createMock(LoggerInterface::class);
+        $logger
+            ->expects(self::never())
+            ->method('debug');
+        $logger
+            ->expects(self::once())
+            ->method('info')
+            ->with($exception);
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::never())
+            ->method('warning');
+        $logger
+            ->expects(self::never())
+            ->method('error');
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
+
+        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
+            ->expects(self::once())
+            ->method('set')
+            ->with('8.0')
+            ->willReturn(new NullVersion());
+
+        $trident = $this->createMock(VersionBuilderInterface::class);
+        $trident
+            ->expects(self::once())
+            ->method('detectVersion')
+            ->with($useragent)
+            ->willThrowException($exception);
 
         $object = new MicrosoftInternetExplorer($logger, $versionBuilder, $trident);
 

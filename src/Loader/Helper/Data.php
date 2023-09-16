@@ -99,7 +99,7 @@ final class Data implements DataInterface
             foreach ((array) $fileData as $key => $data) {
                 $stringKey = (string) $key;
 
-                if (array_key_exists($stringKey, $this->items)) {
+                if (array_key_exists($stringKey, $this->items) || !$data instanceof stdClass) {
                     continue;
                 }
 

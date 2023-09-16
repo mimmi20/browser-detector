@@ -42,6 +42,7 @@ use function file_get_contents;
 use function is_array;
 use function is_countable;
 use function is_iterable;
+use function is_scalar;
 use function is_string;
 use function json_decode;
 use function json_encode;
@@ -393,7 +394,7 @@ final class DetectorTest extends TestCase
             assert(is_iterable($tests));
 
             foreach ($tests as $i => $expectedResult) {
-                if (!is_array($expectedResult)) {
+                if (!is_array($expectedResult) || !is_scalar($i)) {
                     continue;
                 }
 

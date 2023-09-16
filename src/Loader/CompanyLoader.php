@@ -16,6 +16,7 @@ use BrowserDetector\Loader\Helper\DataInterface;
 use stdClass;
 
 use function assert;
+use function is_string;
 
 final class CompanyLoader implements CompanyLoaderInterface
 {
@@ -43,6 +44,8 @@ final class CompanyLoader implements CompanyLoaderInterface
         }
 
         assert($companyData instanceof stdClass);
+        assert(is_string($companyData->name) || $companyData->name === null);
+        assert(is_string($companyData->brandname) || $companyData->brandname === null);
 
         return [
             'type' => $key,

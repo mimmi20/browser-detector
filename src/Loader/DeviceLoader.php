@@ -17,10 +17,10 @@ use Psr\Log\LoggerInterface;
 use stdClass;
 use UaDeviceType\TypeLoader;
 use UaDeviceType\Unknown;
-use UnexpectedValueException;
 
 use function array_key_exists;
 use function assert;
+use function is_string;
 
 final class DeviceLoader implements DeviceLoaderInterface
 {
@@ -38,7 +38,6 @@ final class DeviceLoader implements DeviceLoaderInterface
      * @phpstan-return array{0: array{deviceName: string|null, marketingName: string|null, manufacturer: string|null, brand: string|null, dualOrientation: bool|null, simCount: int|null, display: array{width: int|null, height: int|null, touch: bool|null, size: float|null}, type: string, ismobile: bool}, 1: string|null}
      *
      * @throws NotFoundException
-     * @throws UnexpectedValueException
      */
     public function load(string $key): array
     {
@@ -55,6 +54,8 @@ final class DeviceLoader implements DeviceLoaderInterface
         assert($deviceData instanceof stdClass);
 
         $device = $this->fromArray((array) $deviceData);
+
+        assert(is_string($deviceData->platform) || $deviceData->platform === null);
 
         return [$device, $deviceData->platform];
     }

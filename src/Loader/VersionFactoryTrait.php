@@ -24,6 +24,7 @@ use UnexpectedValueException;
 use function assert;
 use function is_array;
 use function is_callable;
+use function is_scalar;
 use function is_string;
 
 trait VersionFactoryTrait
@@ -54,7 +55,7 @@ trait VersionFactoryTrait
 
         $value = $version->value ?? null;
 
-        if ($value !== null) {
+        if ($value !== null && is_scalar($value)) {
             try {
                 return $this->versionBuilder->set((string) $value);
             } catch (NotNumericException $e) {

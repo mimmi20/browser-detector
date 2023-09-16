@@ -49,7 +49,6 @@ final class BrowserLoader implements BrowserLoaderInterface
      * @return array{0: array{name: string|null, modus: string|null, version: string|null, manufacturer: string, bits: int|null, type: string, isbot: bool}, 1: string|null}
      *
      * @throws NotFoundException
-     * @throws UnexpectedValueException
      */
     public function load(string $key, string $useragent = ''): array
     {
@@ -68,6 +67,8 @@ final class BrowserLoader implements BrowserLoaderInterface
         $browserData->bits  = (new Browser())->getBits($useragent);
         $browserData->modus = null;
 
+        assert(is_string($browserData->engine) || $browserData->engine === null);
+
         return [
             $this->fromArray((array) $browserData, $useragent),
             $browserData->engine,
@@ -79,7 +80,7 @@ final class BrowserLoader implements BrowserLoaderInterface
      *
      * @return array{name: string|null, modus: string|null, version: string|null, manufacturer: string, bits: int|null, type: string, isbot: bool}
      *
-     * @throws UnexpectedValueException
+     * @throws void
      */
     private function fromArray(array $data, string $useragent = ''): array
     {
@@ -138,10 +139,18 @@ final class BrowserLoader implements BrowserLoaderInterface
             }
         }
 
+        try {
+            $versionString = $version->getVersion();
+        } catch (UnexpectedValueException $e) {
+            $this->logger->info($e);
+
+            $versionString = null;
+        }
+
         return [
             'name' => $name,
             'modus' => $modus,
-            'version' => $version->getVersion(),
+            'version' => $versionString,
             'manufacturer' => $manufacturer['type'],
             'bits' => $bits,
             'type' => $type->getType(),

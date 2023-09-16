@@ -52,13 +52,13 @@ final class DataTest extends TestCase
     public function testInvokeSuccess(): void
     {
         $structure = [
-            'valid' => ['tool.json' => '{"rules": "abc"}'],
+            'valid' => ['tool.json' => '{"rules": {"abc": "xyz"}}'],
         ];
 
         vfsStream::setup(self::DATA_PATH, null, $structure);
 
         $key   = 'rules';
-        $value = 'abc';
+        $value = ['abc' => 'xyz'];
 
         $object = new Data(vfsStream::url(self::DATA_PATH . '/valid'), 'json');
 
@@ -72,7 +72,7 @@ final class DataTest extends TestCase
 
         self::assertTrue($object->isInitialized());
         self::assertTrue($object->hasItem($key));
-        self::assertSame($value, $object->getItem($key));
+        self::assertEquals((object) $value, $object->getItem($key));
         self::assertCount(1, $object);
 
         self::assertFalse($object->hasItem('key3'));
@@ -87,15 +87,15 @@ final class DataTest extends TestCase
     {
         $structure = [
             'valid' => [
-                'tool.json' => '{"rules": "abc"}',
-                'tool2.json' => '{"rules": "abc2", "key3": "value3"}',
+                'tool.json' => '{"rules": {"abc": "xyz"}}',
+                'tool2.json' => '{"rules": {"abc2": "xyz2"}, "key3": {"abc3": "value3"}}',
             ],
         ];
 
         vfsStream::setup(self::DATA_PATH, null, $structure);
 
         $key   = 'rules';
-        $value = 'abc';
+        $value = ['abc' => 'xyz'];
 
         $object = new Data(vfsStream::url(self::DATA_PATH . '/valid'), 'json');
 
@@ -109,11 +109,11 @@ final class DataTest extends TestCase
 
         self::assertTrue($object->isInitialized());
         self::assertTrue($object->hasItem($key));
-        self::assertSame($value, $object->getItem($key));
+        self::assertEquals((object) $value, $object->getItem($key));
         self::assertCount(2, $object);
 
         self::assertTrue($object->hasItem('key3'));
-        self::assertSame('value3', $object->getItem('key3'));
+        self::assertEquals((object) ['abc3' => 'value3'], $object->getItem('key3'));
     }
 
     /**

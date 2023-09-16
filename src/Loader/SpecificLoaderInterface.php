@@ -12,13 +12,8 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Loader;
 
-use UnexpectedValueException;
-
 interface SpecificLoaderInterface
 {
-    /**
-     * @throws NotFoundException
-     * @throws UnexpectedValueException
-     */
+    /** @throws NotFoundException */
     public function load(string $key): mixed;
 }

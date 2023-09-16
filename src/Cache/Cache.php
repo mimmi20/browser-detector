@@ -16,6 +16,7 @@ use Psr\SimpleCache\InvalidArgumentException;
 
 use function array_key_exists;
 use function is_array;
+use function is_string;
 use function serialize;
 use function unserialize;
 
@@ -42,7 +43,7 @@ final class Cache implements CacheInterface
 
         $data = $this->cache->get($cacheId);
 
-        if (!is_array($data) || !array_key_exists('content', $data)) {
+        if (!is_array($data) || !array_key_exists('content', $data) || !is_string($data['content'])) {
             return null;
         }
 

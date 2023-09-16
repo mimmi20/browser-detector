@@ -39,7 +39,7 @@ parameters:
   checkGenericClassInNonGenericObjectType: true
 
   # be strict about values with an unspecified (implicit mixed) type
-  checkImplicitMixed: false
+  checkImplicitMixed: true
 
   # reports references to built-in classes with incorrect name case
   checkInternalClassCaseSensitivity: true
@@ -72,7 +72,7 @@ parameters:
   reportMaybesInMethodSignatures: false
 
   # reports violations of property type invariance
-  reportMaybesInPropertyPhpDocTypes: false
+  reportMaybesInPropertyPhpDocTypes: true
 
   # reports violations of parameter type contravariance and return type covariance in static methods
   reportStaticMethodSignatures: true
@@ -95,6 +95,8 @@ parameters:
       tooWideThrowType: true
 
   ignoreErrors:
+    - '~, array given~'
+    - '~but returns array<string, array<string, mixed>>~'
 #    -
 #      message: '~is never read, only written~'
 #      path: src/Detector.php
