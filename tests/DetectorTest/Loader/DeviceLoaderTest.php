@@ -22,9 +22,10 @@ use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
+use Stringable;
+use UaDeviceType\TypeInterface;
+use UaDeviceType\TypeLoaderInterface;
 use UnexpectedValueException;
-
-use function assert;
 
 final class DeviceLoaderTest extends TestCase
 {
@@ -73,14 +74,20 @@ final class DeviceLoaderTest extends TestCase
             ->willReturn(false);
 
         $companyLoader = $this->createMock(CompanyLoaderInterface::class);
+        $companyLoader
+            ->expects(self::never())
+            ->method('load');
 
-        assert($logger instanceof LoggerInterface);
-        assert($companyLoader instanceof CompanyLoaderInterface);
-        assert($initData instanceof DataInterface);
-        $object = new DeviceLoader($logger, $initData, $companyLoader);
+        $typeLoader = $this->createMock(TypeLoaderInterface::class);
+        $typeLoader
+            ->expects(self::never())
+            ->method('load');
+
+        $object = new DeviceLoader($logger, $initData, $companyLoader, $typeLoader);
 
         $this->expectException(NotFoundException::class);
         $this->expectExceptionMessage('the device with key "test-key" was not found');
+        $this->expectExceptionCode(0);
 
         $object->load('test-key');
     }
@@ -130,14 +137,20 @@ final class DeviceLoaderTest extends TestCase
             ->willReturn(null);
 
         $companyLoader = $this->createMock(CompanyLoaderInterface::class);
+        $companyLoader
+            ->expects(self::never())
+            ->method('load');
 
-        assert($logger instanceof LoggerInterface);
-        assert($companyLoader instanceof CompanyLoaderInterface);
-        assert($initData instanceof DataInterface);
-        $object = new DeviceLoader($logger, $initData, $companyLoader);
+        $typeLoader = $this->createMock(TypeLoaderInterface::class);
+        $typeLoader
+            ->expects(self::never())
+            ->method('load');
+
+        $object = new DeviceLoader($logger, $initData, $companyLoader, $typeLoader);
 
         $this->expectException(NotFoundException::class);
         $this->expectExceptionMessage('the device with key "test-key" was not found');
+        $this->expectExceptionCode(0);
 
         $object->load('test-key');
     }
@@ -185,8 +198,8 @@ final class DeviceLoaderTest extends TestCase
 
         $deviceData = (object) [
             'version' => (object) ['class' => null],
-            'manufacturer' => 'unknown',
-            'brand' => 'unknown',
+            'manufacturer' => 'unknown1',
+            'brand' => 'unknown2',
             'type' => 'unknown',
             'deviceName' => null,
             'marketingName' => null,
@@ -201,19 +214,66 @@ final class DeviceLoaderTest extends TestCase
             ->willReturn($deviceData);
 
         $companyLoader = $this->createMock(CompanyLoaderInterface::class);
+        $matcher       = self::exactly(2);
+        $companyLoader
+            ->expects($matcher)
+            ->method('load')
+            ->willReturnCallback(
+                static function (string $key) use ($matcher): array {
+                    match ($matcher->numberOfInvocations()) {
+                        1 => self::assertSame('unknown1', $key),
+                        default => self::assertSame('unknown2', $key),
+                    };
 
-        assert($logger instanceof LoggerInterface);
-        assert($companyLoader instanceof CompanyLoaderInterface);
-        assert($initData instanceof DataInterface);
-        $object = new DeviceLoader($logger, $initData, $companyLoader);
+                    return match ($matcher->numberOfInvocations()) {
+                        1 => ['type' => 'loaded-type-1'],
+                        default => ['type' => 'loaded-type-2'],
+                    };
+                },
+            );
+
+        $type = $this->createMock(TypeInterface::class);
+        $type
+            ->expects(self::once())
+            ->method('getType')
+            ->willReturn('device-type');
+        $type
+            ->expects(self::once())
+            ->method('isMobile')
+            ->willReturn(true);
+
+        $typeLoader = $this->createMock(TypeLoaderInterface::class);
+        $typeLoader
+            ->expects(self::once())
+            ->method('load')
+            ->with('unknown')
+            ->willReturn($type);
+
+        $object = new DeviceLoader($logger, $initData, $companyLoader, $typeLoader);
 
         $result = $object->load('test-key');
 
-        self::assertIsArray($result);
-        self::assertArrayHasKey(0, $result);
-        self::assertIsArray($result[0]);
-        self::assertArrayHasKey(1, $result);
-        self::assertNull($result[1]);
+        $expected = [
+            [
+                'deviceName' => null,
+                'marketingName' => null,
+                'manufacturer' => 'loaded-type-1',
+                'brand' => 'loaded-type-2',
+                'dualOrientation' => null,
+                'simCount' => null,
+                'display' => [
+                    'width' => null,
+                    'height' => null,
+                    'touch' => null,
+                    'size' => null,
+                ],
+                'type' => 'device-type',
+                'ismobile' => true,
+            ],
+            null,
+        ];
+
+        self::assertSame($expected, $result);
     }
 
     /**
@@ -262,8 +322,8 @@ final class DeviceLoaderTest extends TestCase
 
         $deviceData = (object) [
             'version' => (object) ['factory' => '\\' . VersionBuilderFactory::class, 'search' => ['test']],
-            'manufacturer' => 'unknown',
-            'brand' => 'unknown',
+            'manufacturer' => 'unknown1',
+            'brand' => 'unknown2',
             'type' => 'unknown',
             'deviceName' => null,
             'marketingName' => null,
@@ -278,19 +338,66 @@ final class DeviceLoaderTest extends TestCase
             ->willReturn($deviceData);
 
         $companyLoader = $this->createMock(CompanyLoaderInterface::class);
+        $matcher       = self::exactly(2);
+        $companyLoader
+            ->expects($matcher)
+            ->method('load')
+            ->willReturnCallback(
+                static function (string $key) use ($matcher): array {
+                    match ($matcher->numberOfInvocations()) {
+                        1 => self::assertSame('unknown1', $key),
+                        default => self::assertSame('unknown2', $key),
+                    };
 
-        assert($logger instanceof LoggerInterface);
-        assert($companyLoader instanceof CompanyLoaderInterface);
-        assert($initData instanceof DataInterface);
-        $object = new DeviceLoader($logger, $initData, $companyLoader);
+                    return match ($matcher->numberOfInvocations()) {
+                        1 => ['type' => 'loaded-type-1'],
+                        default => ['type' => 'loaded-type-2'],
+                    };
+                },
+            );
+
+        $type = $this->createMock(TypeInterface::class);
+        $type
+            ->expects(self::once())
+            ->method('getType')
+            ->willReturn('device-type');
+        $type
+            ->expects(self::once())
+            ->method('isMobile')
+            ->willReturn(false);
+
+        $typeLoader = $this->createMock(TypeLoaderInterface::class);
+        $typeLoader
+            ->expects(self::once())
+            ->method('load')
+            ->with('unknown')
+            ->willReturn($type);
+
+        $object = new DeviceLoader($logger, $initData, $companyLoader, $typeLoader);
 
         $result = $object->load('test-key');
 
-        self::assertIsArray($result);
-        self::assertArrayHasKey(0, $result);
-        self::assertIsArray($result[0]);
-        self::assertArrayHasKey(1, $result);
-        self::assertSame('test-platform', $result[1]);
+        $expected = [
+            [
+                'deviceName' => null,
+                'marketingName' => null,
+                'manufacturer' => 'loaded-type-1',
+                'brand' => 'loaded-type-2',
+                'dualOrientation' => null,
+                'simCount' => null,
+                'display' => [
+                    'width' => null,
+                    'height' => null,
+                    'touch' => null,
+                    'size' => null,
+                ],
+                'type' => 'device-type',
+                'ismobile' => false,
+            ],
+            'test-platform',
+        ];
+
+        self::assertSame($expected, $result);
     }
 
     /**
@@ -301,10 +408,26 @@ final class DeviceLoaderTest extends TestCase
      */
     public function testInvokeVersionAndPlatform(): void
     {
-        $logger = $this->createMock(LoggerInterface::class);
+        $typeException     = new \UaDeviceType\NotFoundException('type');
+        $companyException1 = new NotFoundException('type');
+        $companyException2 = new NotFoundException('type');
+
+        $logger  = $this->createMock(LoggerInterface::class);
+        $matcher = self::exactly(3);
         $logger
-            ->expects(self::never())
-            ->method('info');
+            ->expects($matcher)
+            ->method('info')
+            ->willReturnCallback(
+                static function (string | Stringable $message, array $context = []) use ($matcher, $typeException, $companyException1, $companyException2): void {
+                    match ($matcher->numberOfInvocations()) {
+                        1 => self::assertSame($typeException, $message),
+                        2 => self::assertSame($companyException1, $message),
+                        default => self::assertSame($companyException2, $message),
+                    };
+
+                    self::assertSame([], $context);
+                },
+            );
         $logger
             ->expects(self::never())
             ->method('notice');
@@ -336,11 +459,11 @@ final class DeviceLoaderTest extends TestCase
 
         $deviceData = (object) [
             'version' => (object) ['factory' => TestFactory::class],
-            'manufacturer' => 'unknown',
-            'brand' => 'unknown',
+            'manufacturer' => 'unknown1',
+            'brand' => 'unknown2',
             'type' => 'unknown',
             'deviceName' => 'test-device',
-            'marketingName' => null,
+            'marketingName' => 'test-device-name',
             'platform' => 'test-platform',
             'display' => ['width' => null, 'height' => null, 'touch' => null, 'size' => null],
         ];
@@ -352,22 +475,63 @@ final class DeviceLoaderTest extends TestCase
             ->willReturn($deviceData);
 
         $companyLoader = $this->createMock(CompanyLoaderInterface::class);
+        $matcher       = self::exactly(2);
+        $companyLoader
+            ->expects($matcher)
+            ->method('load')
+            ->willReturnCallback(
+                static function (string $key) use ($matcher, $companyException1, $companyException2): array {
+                    match ($matcher->numberOfInvocations()) {
+                        1 => self::assertSame('unknown1', $key),
+                        default => self::assertSame('unknown2', $key),
+                    };
 
-        assert($logger instanceof LoggerInterface);
-        assert($initData instanceof DataInterface);
-        $object = new DeviceLoader($logger, $initData, $companyLoader);
+                    match ($matcher->numberOfInvocations()) {
+                        1 => throw $companyException1,
+                        default => throw $companyException2,
+                    };
+                },
+            );
+
+        $type = $this->createMock(TypeInterface::class);
+        $type
+            ->expects(self::never())
+            ->method('getType');
+        $type
+            ->expects(self::never())
+            ->method('isMobile');
+
+        $typeLoader = $this->createMock(TypeLoaderInterface::class);
+        $typeLoader
+            ->expects(self::once())
+            ->method('load')
+            ->with('unknown')
+            ->willThrowException($typeException);
+
+        $object = new DeviceLoader($logger, $initData, $companyLoader, $typeLoader);
 
         $result = $object->load('test-key');
 
-        self::assertIsArray($result);
-        self::assertArrayHasKey(0, $result);
-        $deviceResult = $result[0];
+        $expected = [
+            [
+                'deviceName' => 'test-device',
+                'marketingName' => 'test-device-name',
+                'manufacturer' => 'unknown',
+                'brand' => 'unknown',
+                'dualOrientation' => null,
+                'simCount' => null,
+                'display' => [
+                    'width' => null,
+                    'height' => null,
+                    'touch' => null,
+                    'size' => null,
+                ],
+                'type' => 'unknown',
+                'ismobile' => false,
+            ],
+            'test-platform',
+        ];
 
-        self::assertIsArray($deviceResult);
-
-        self::assertArrayHasKey(1, $result);
-        self::assertSame('test-platform', $result[1]);
-
-        self::assertSame('test-device', $deviceResult['deviceName']);
+        self::assertSame($expected, $result);
     }
 }

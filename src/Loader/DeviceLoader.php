@@ -15,7 +15,7 @@ namespace BrowserDetector\Loader;
 use BrowserDetector\Loader\Helper\DataInterface;
 use Psr\Log\LoggerInterface;
 use stdClass;
-use UaDeviceType\TypeLoader;
+use UaDeviceType\TypeLoaderInterface;
 use UaDeviceType\Unknown;
 
 use function array_key_exists;
@@ -29,6 +29,7 @@ final class DeviceLoader implements DeviceLoaderInterface
         private readonly LoggerInterface $logger,
         private readonly DataInterface $initData,
         private readonly CompanyLoaderInterface $companyLoader,
+        private readonly TypeLoaderInterface $typeLoader,
     ) {
         $initData();
     }
@@ -87,7 +88,7 @@ final class DeviceLoader implements DeviceLoaderInterface
         $type = new Unknown();
 
         try {
-            $type = (new TypeLoader())->load((string) $data['type']);
+            $type = $this->typeLoader->load((string) $data['type']);
         } catch (\UaDeviceType\NotFoundException $e) {
             $this->logger->info($e);
         }
