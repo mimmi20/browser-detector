@@ -17,8 +17,7 @@ use BrowserDetector\Parser\BrowserParser;
 use BrowserDetector\Parser\Helper\RulefileParserInterface;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
-
-use function assert;
+use UnexpectedValueException;
 
 final class BrowserParserTest extends TestCase
 {
@@ -44,11 +43,53 @@ final class BrowserParserTest extends TestCase
             ->method('parseFile')
             ->willReturn($mode, $key);
 
-        assert($loader instanceof BrowserLoaderInterface);
-        assert($fileParser instanceof RulefileParserInterface);
         $parser       = new BrowserParser($loader, $fileParser);
         $parserResult = $parser->parse($useragent);
 
         self::assertSame($key, $parserResult);
+    }
+
+    /**
+     * @throws ExpectationFailedException
+     * @throws UnexpectedValueException
+     */
+    public function testLoad(): void
+    {
+        $useragent = 'test-agent';
+        $key       = 'test-key';
+
+        $result = [
+            [
+                'name' => null,
+                'modus' => null,
+                'version' => null,
+                'manufacturer' => 'xyz-type',
+                'bits' => null,
+                'type' => 'unknown',
+                'isbot' => false,
+            ],
+            'unknown',
+        ];
+
+        $loader = $this->getMockBuilder(BrowserLoaderInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $loader
+            ->expects(self::once())
+            ->method('load')
+            ->with($key, $useragent)
+            ->willReturn($result);
+
+        $fileParser = $this->getMockBuilder(RulefileParserInterface::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $fileParser
+            ->expects(self::never())
+            ->method('parseFile');
+
+        $parser       = new BrowserParser($loader, $fileParser);
+        $parserResult = $parser->load($key, $useragent);
+
+        self::assertSame($result, $parserResult);
     }
 }
