@@ -386,7 +386,7 @@ final class DetectorTest extends TestCase
             }
 
             try {
-                $tests = json_decode($content, true, 512, JSON_THROW_ON_ERROR);
+                $tests = json_decode(json: $content, associative: true, flags: JSON_THROW_ON_ERROR);
             } catch (JsonException $e) {
                 throw new Exception(sprintf('file "%s" contains invalid json', $filepath), 0, $e);
             }

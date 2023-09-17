@@ -116,6 +116,10 @@ final class WindowsPhoneOsTest extends TestCase
                 'ZDM/4.0; Windows Mobile 8.1',
                 '8.1.0',
             ],
+            [
+                'UCWEB/2.0 (Windows; U; WDS 7.10; en-US; NOKIA; Lumia 610) U2/1.0.0 UCBrowser/3.2.0.340 U2/1.0.0 Mobile',
+                '7.10.0',
+            ],
         ];
     }
 

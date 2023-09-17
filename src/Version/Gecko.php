@@ -42,7 +42,7 @@ final class Gecko implements VersionFactoryInterface
             return new NullVersion();
         }
 
-        preg_match('/rv\\:(?P<rvversion>[\d\.]+)/i', $useragent, $rvMatches);
+        preg_match('/rv:(?P<rvversion>[\d\.]+)/i', $useragent, $rvMatches);
         preg_match('/firefox\/(?P<ffversion>[\d\.]+)/i', $useragent, $ffMatches);
 
         $geckoversion = $geckoMatches['geckoversion'] ?? null;

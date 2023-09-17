@@ -12,15 +12,15 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Version;
 
-use IosBuild\BuildException;
 use IosBuild\IosBuildInterface;
 use IosBuild\NotFoundException;
 use Psr\Log\LoggerInterface;
 use UnexpectedValueException;
 
 use function array_key_exists;
-use function mb_stripos;
+use function mb_strtolower;
 use function preg_match;
+use function str_contains;
 
 final class Ios implements VersionFactoryInterface
 {
@@ -268,7 +268,7 @@ final class Ios implements VersionFactoryInterface
         if ($doMatch) {
             try {
                 $buildVersion = $this->iosBuild->getVersion($matches['build']);
-            } catch (BuildException | NotFoundException $e) {
+            } catch (NotFoundException) {
                 $buildVersion = false;
             }
 
@@ -292,7 +292,7 @@ final class Ios implements VersionFactoryInterface
         if ($doMatch) {
             try {
                 $buildVersion = $this->iosBuild->getVersion($matches['build']);
-            } catch (BuildException | NotFoundException $e) {
+            } catch (NotFoundException) {
                 $buildVersion = false;
             }
 
@@ -307,7 +307,7 @@ final class Ios implements VersionFactoryInterface
             }
         }
 
-        if (mb_stripos($useragent, 'darwin') !== false) {
+        if (str_contains(mb_strtolower($useragent), 'darwin')) {
             foreach (self::DARWIN_MAP as $rule => $version) {
                 if (!preg_match($rule, $useragent)) {
                     continue;
@@ -348,7 +348,7 @@ final class Ios implements VersionFactoryInterface
         if ($doMatch) {
             try {
                 $buildVersion = $this->iosBuild->getVersion($matches['build']);
-            } catch (BuildException | NotFoundException $e) {
+            } catch (NotFoundException) {
                 $buildVersion = false;
             }
 

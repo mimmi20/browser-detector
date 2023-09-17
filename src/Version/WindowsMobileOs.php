@@ -14,8 +14,9 @@ namespace BrowserDetector\Version;
 
 use Psr\Log\LoggerInterface;
 
-use function mb_stripos;
+use function mb_strtolower;
 use function preg_match;
+use function str_contains;
 
 final class WindowsMobileOs implements VersionFactoryInterface
 {
@@ -37,7 +38,7 @@ final class WindowsMobileOs implements VersionFactoryInterface
     public function detectVersion(string $useragent): VersionInterface
     {
         if (
-            mb_stripos($useragent, 'windows nt 5.1') !== false
+            str_contains(mb_strtolower($useragent), 'windows nt 5.1') !== false
             && !preg_match('/windows mobile|windows phone/i', $useragent)
         ) {
             try {

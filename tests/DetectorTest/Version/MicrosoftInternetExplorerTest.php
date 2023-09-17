@@ -303,4 +303,61 @@ final class MicrosoftInternetExplorerTest extends TestCase
         self::assertInstanceOf(NullVersion::class, $detectedVersion);
         self::assertNull($detectedVersion->getVersion());
     }
+
+    /** @throws Exception */
+    public function testDetectVersionFail4(): void
+    {
+        $useragent = 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; SearchToolbar 1.2; GTB7.0)';
+
+        $exception = new UnexpectedValueException('set failed');
+
+        $logger = $this->createMock(LoggerInterface::class);
+        $logger
+            ->expects(self::never())
+            ->method('debug');
+        $logger
+            ->expects(self::once())
+            ->method('info')
+            ->with($exception);
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::never())
+            ->method('warning');
+        $logger
+            ->expects(self::never())
+            ->method('error');
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
+
+        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
+            ->expects(self::once())
+            ->method('set')
+            ->with('8.0')
+            ->willReturn(new NullVersion());
+
+        $trident = $this->createMock(VersionBuilderInterface::class);
+        $trident
+            ->expects(self::once())
+            ->method('detectVersion')
+            ->with($useragent)
+            ->willThrowException($exception);
+
+        $object = new MicrosoftInternetExplorer($logger, $versionBuilder, $trident);
+
+        $detectedVersion = $object->detectVersion($useragent);
+
+        self::assertInstanceOf(VersionInterface::class, $detectedVersion);
+        self::assertInstanceOf(NullVersion::class, $detectedVersion);
+        self::assertNull($detectedVersion->getVersion());
+    }
 }

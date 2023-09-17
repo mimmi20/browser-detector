@@ -14,8 +14,9 @@ namespace BrowserDetector\Version;
 
 use Psr\Log\LoggerInterface;
 
-use function mb_stripos;
+use function mb_strtolower;
 use function preg_match;
+use function str_contains;
 
 final class Goanna implements VersionFactoryInterface
 {
@@ -50,7 +51,7 @@ final class Goanna implements VersionFactoryInterface
         // second version: version on "rv:" token
         $doMatch = preg_match('/rv\:(?P<version>\d\.[\d\.]*)/', $useragent, $matchesSecond);
 
-        if ($doMatch && mb_stripos($useragent, 'goanna') !== false) {
+        if ($doMatch && str_contains(mb_strtolower($useragent), 'goanna')) {
             try {
                 return $this->versionBuilder->set($matchesSecond['version']);
             } catch (NotNumericException $e) {

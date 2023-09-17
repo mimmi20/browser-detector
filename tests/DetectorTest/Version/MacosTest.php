@@ -21,6 +21,7 @@ use BrowserDetector\Version\VersionInterface;
 use Exception;
 use MacosBuild\MacosBuild;
 use MacosBuild\MacosBuildInterface;
+use MacosBuild\NotFoundException;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
@@ -161,7 +162,7 @@ final class MacosTest extends TestCase
         $logger
             ->expects(self::once())
             ->method('info')
-            ->with($exception);
+            ->with($exception, []);
         $logger
             ->expects(self::never())
             ->method('notice');
@@ -220,7 +221,7 @@ final class MacosTest extends TestCase
         $logger
             ->expects(self::once())
             ->method('info')
-            ->with($exception);
+            ->with($exception, []);
         $logger
             ->expects(self::never())
             ->method('notice');
@@ -277,7 +278,7 @@ final class MacosTest extends TestCase
         $logger
             ->expects(self::once())
             ->method('info')
-            ->with($exception);
+            ->with($exception, []);
         $logger
             ->expects(self::never())
             ->method('notice');
@@ -310,7 +311,8 @@ final class MacosTest extends TestCase
     {
         $useragent = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10102) AppleWebKit/640.3.18 (KHTML like Gecko) Version/10.0.2 Safari/640.3.18';
         $exception = new NotNumericException('not numeric');
-        $version   = $this->createMock(VersionInterface::class);
+
+        $version = $this->createMock(VersionInterface::class);
         $version
             ->expects(self::once())
             ->method('getVersion')
@@ -341,7 +343,7 @@ final class MacosTest extends TestCase
         $logger
             ->expects(self::once())
             ->method('info')
-            ->with($exception);
+            ->with($exception, []);
         $logger
             ->expects(self::never())
             ->method('notice');
@@ -374,7 +376,8 @@ final class MacosTest extends TestCase
     {
         $useragent = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 1084) AppleWebKit/536.29.13 (KHTML like Gecko) Version/6.0.4 Safari/536.29.13';
         $exception = new NotNumericException('not numeric');
-        $version   = $this->createMock(VersionInterface::class);
+
+        $version = $this->createMock(VersionInterface::class);
         $version
             ->expects(self::once())
             ->method('getVersion')
@@ -405,7 +408,7 @@ final class MacosTest extends TestCase
         $logger
             ->expects(self::once())
             ->method('info')
-            ->with($exception);
+            ->with($exception, []);
         $logger
             ->expects(self::never())
             ->method('notice');
@@ -438,7 +441,8 @@ final class MacosTest extends TestCase
     {
         $useragent = 'QuickTime/7.6 (qtver=7.6;cpu=IA32;os=Mac 10,5,7)';
         $exception = new NotNumericException('not numeric');
-        $version   = $this->createMock(VersionInterface::class);
+
+        $version = $this->createMock(VersionInterface::class);
         $version
             ->expects(self::never())
             ->method('getVersion');
@@ -465,7 +469,121 @@ final class MacosTest extends TestCase
         $logger
             ->expects(self::once())
             ->method('info')
-            ->with($exception);
+            ->with($exception, []);
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::never())
+            ->method('warning');
+        $logger
+            ->expects(self::never())
+            ->method('error');
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
+
+        $object = new Macos($logger, $versionBuilder, $macosBuild);
+
+        $detectedVersion = $object->detectVersion($useragent);
+
+        self::assertInstanceOf(VersionInterface::class, $detectedVersion);
+        self::assertInstanceOf(NullVersion::class, $detectedVersion);
+    }
+
+    /** @throws UnexpectedValueException */
+    public function testDetectVersionFail7(): void
+    {
+        $useragent = 'Downcast/2.9.11 (Mac OS X Version 10.11.3 (Build 15D13b))';
+        $exception = new NotFoundException('not numeric');
+
+        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
+            ->expects(self::once())
+            ->method('detectVersion')
+            ->with($useragent)
+            ->willReturn(new NullVersion());
+        $versionBuilder
+            ->expects(self::never())
+            ->method('set');
+
+        $macosBuild = $this->createMock(MacosBuildInterface::class);
+        $macosBuild
+            ->expects(self::once())
+            ->method('getVersion')
+            ->with('15D13b')
+            ->willThrowException($exception);
+
+        $logger = $this->createMock(LoggerInterface::class);
+        $logger
+            ->expects(self::never())
+            ->method('debug');
+        $logger
+            ->expects(self::never())
+            ->method('info');
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::never())
+            ->method('warning');
+        $logger
+            ->expects(self::never())
+            ->method('error');
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
+
+        $object = new Macos($logger, $versionBuilder, $macosBuild);
+
+        $detectedVersion = $object->detectVersion($useragent);
+
+        self::assertInstanceOf(VersionInterface::class, $detectedVersion);
+        self::assertInstanceOf(NullVersion::class, $detectedVersion);
+    }
+
+    /** @throws UnexpectedValueException */
+    public function testDetectVersionFail8(): void
+    {
+        $useragent = 'Apple Mac OS X v10.6.8 CoreMedia v1.0.4.10K540';
+        $exception = new NotFoundException('not numeric');
+
+        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
+            ->expects(self::once())
+            ->method('detectVersion')
+            ->with($useragent)
+            ->willReturn(new NullVersion());
+        $versionBuilder
+            ->expects(self::never())
+            ->method('set');
+
+        $macosBuild = $this->createMock(MacosBuildInterface::class);
+        $macosBuild
+            ->expects(self::once())
+            ->method('getVersion')
+            ->with('10K540')
+            ->willThrowException($exception);
+
+        $logger = $this->createMock(LoggerInterface::class);
+        $logger
+            ->expects(self::never())
+            ->method('debug');
+        $logger
+            ->expects(self::never())
+            ->method('info');
         $logger
             ->expects(self::never())
             ->method('notice');

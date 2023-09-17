@@ -12,15 +12,15 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Version;
 
-use MacosBuild\BuildException;
 use MacosBuild\MacosBuildInterface;
 use MacosBuild\NotFoundException;
 use Psr\Log\LoggerInterface;
 use UnexpectedValueException;
 
 use function array_key_exists;
-use function mb_stripos;
+use function mb_strtolower;
 use function preg_match;
+use function str_contains;
 use function str_replace;
 
 final class Macos implements VersionFactoryInterface
@@ -184,7 +184,7 @@ final class Macos implements VersionFactoryInterface
         if ($doMatch) {
             try {
                 $buildVersion = $this->macosBuild->getVersion($matches['build']);
-            } catch (BuildException | NotFoundException $e) {
+            } catch (NotFoundException) {
                 $buildVersion = false;
             }
 
@@ -208,7 +208,7 @@ final class Macos implements VersionFactoryInterface
         if ($doMatch) {
             try {
                 $buildVersion = $this->macosBuild->getVersion($matches['build']);
-            } catch (BuildException | NotFoundException $e) {
+            } catch (NotFoundException) {
                 $buildVersion = false;
             }
 
@@ -223,7 +223,7 @@ final class Macos implements VersionFactoryInterface
             }
         }
 
-        if (mb_stripos($useragent, 'darwin') !== false) {
+        if (str_contains(mb_strtolower($useragent), 'darwin')) {
             foreach (self::DARWIN_MAP as $rule => $version) {
                 if (!preg_match($rule, $useragent)) {
                     continue;

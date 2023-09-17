@@ -53,7 +53,7 @@ final class RulefileParser implements RulefileParserInterface
         }
 
         try {
-            $factories = json_decode($content, true, 512, JSON_THROW_ON_ERROR);
+            $factories = json_decode(json: $content, associative: true, flags: JSON_THROW_ON_ERROR);
 
             assert(is_array($factories));
 
@@ -93,7 +93,7 @@ final class RulefileParser implements RulefileParserInterface
         foreach (array_keys($rules) as $rule) {
             if (is_int($rule)) {
                 $this->logger->error(
-                    new Exception(sprintf('invalid rule "%s" found in file %s', $rule, $file)),
+                    new Exception(sprintf('invalid numeric rule "%s" found in file %s', $rule, $file)),
                 );
 
                 continue;
@@ -108,7 +108,11 @@ final class RulefileParser implements RulefileParserInterface
                         sprintf('could not match rule "%s" of file %s: %s', $rule, $file, $error),
                     ),
                 );
-            } elseif (0 < $match) {
+
+                continue;
+            }
+
+            if ($match) {
                 $mode = $rules[$rule];
 
                 break;

@@ -27,16 +27,22 @@ final class DataTest extends TestCase
 {
     private const DATA_PATH = 'root';
 
-    /** @throws void */
+    /** @throws InvalidArgumentException */
     public function testInvokeFail(): void
     {
-        $structure = [
-            'invalid' => ['bot.json' => '{\'key\': \'value\'}'],
-        ];
+        vfsStream::setup(self::DATA_PATH);
 
-        vfsStream::setup(self::DATA_PATH, null, $structure);
+        $baseDir = vfsStreamWrapper::getRoot();
 
-        $object = new Data(vfsStream::url(self::DATA_PATH . '/invalid'), 'json');
+        $dir = vfsStream::newDirectory('invalid');
+        $baseDir->addChild($dir);
+
+        $file1 = vfsStream::newFile('bot.json');
+        $file1->withContent('{\'key\': \'value\'}');
+
+        $dir->addChild($file1);
+
+        $object = new Data($dir->url(), 'json');
 
         $this->expectException(RuntimeException::class);
         $this->expectExceptionMessage('file "vfs://root/invalid/bot.json" contains invalid json');
@@ -48,19 +54,26 @@ final class DataTest extends TestCase
     /**
      * @throws ExpectationFailedException
      * @throws Exception
+     * @throws InvalidArgumentException
      */
     public function testInvokeSuccess(): void
     {
-        $structure = [
-            'valid' => ['tool.json' => '{"rules": {"abc": "xyz"}}'],
-        ];
+        vfsStream::setup(self::DATA_PATH);
 
-        vfsStream::setup(self::DATA_PATH, null, $structure);
+        $baseDir = vfsStreamWrapper::getRoot();
+
+        $dir = vfsStream::newDirectory('valid');
+        $baseDir->addChild($dir);
+
+        $file1 = vfsStream::newFile('tool.json');
+        $file1->withContent('{"rules": {"abc": "xyz"}}');
+
+        $dir->addChild($file1);
 
         $key   = 'rules';
         $value = ['abc' => 'xyz'];
 
-        $object = new Data(vfsStream::url(self::DATA_PATH . '/valid'), 'json');
+        $object = new Data($dir->url(), 'json');
 
         self::assertFalse($object->isInitialized());
 
@@ -82,22 +95,30 @@ final class DataTest extends TestCase
     /**
      * @throws ExpectationFailedException
      * @throws Exception
+     * @throws InvalidArgumentException
      */
     public function testInvokeSuccess2(): void
     {
-        $structure = [
-            'valid' => [
-                'tool.json' => '{"rules": {"abc": "xyz"}}',
-                'tool2.json' => '{"rules": {"abc2": "xyz2"}, "key3": {"abc3": "value3"}}',
-            ],
-        ];
+        vfsStream::setup(self::DATA_PATH);
 
-        vfsStream::setup(self::DATA_PATH, null, $structure);
+        $baseDir = vfsStreamWrapper::getRoot();
+
+        $dir = vfsStream::newDirectory('valid');
+        $baseDir->addChild($dir);
+
+        $file1 = vfsStream::newFile('tool.json');
+        $file1->withContent('{"rules": {"abc": "xyz"}}');
+
+        $file2 = vfsStream::newFile('tool2.json');
+        $file2->withContent('{"rules": {"abc2": "xyz2"}, "key3": {"abc3": "value3"}}');
+
+        $dir->addChild($file1);
+        $dir->addChild($file2);
 
         $key   = 'rules';
         $value = ['abc' => 'xyz'];
 
-        $object = new Data(vfsStream::url(self::DATA_PATH . '/valid'), 'json');
+        $object = new Data($dir->url(), 'json');
 
         self::assertFalse($object->isInitialized());
 
@@ -121,7 +142,7 @@ final class DataTest extends TestCase
      * @throws Exception
      * @throws InvalidArgumentException
      */
-    public function testInvokeSuccess3(): void
+    public function testInvokeFail2(): void
     {
         vfsStream::setup(self::DATA_PATH);
 
@@ -148,5 +169,63 @@ final class DataTest extends TestCase
         $this->expectExceptionMessage(sprintf('could not read file "%s"', $file1->url()));
 
         $object();
+    }
+
+    /**
+     * @throws ExpectationFailedException
+     * @throws Exception
+     * @throws InvalidArgumentException
+     */
+    public function testInvokeSuccess3(): void
+    {
+        vfsStream::setup(self::DATA_PATH);
+
+        $baseDir = vfsStreamWrapper::getRoot();
+
+        $dir = vfsStream::newDirectory('valid');
+        $baseDir->addChild($dir);
+
+        $file1 = vfsStream::newFile('tool.json');
+        $file1->withContent('{"aix": {"abc": "xyz"}}');
+
+        $file2 = vfsStream::newFile('tool2.json5');
+        $file2->withContent(
+            '{"aix": {"abc2": "xyz2"}, "amiga os": {"abc3": "value3"}, "test": "test", "42": {"abc4": "test4"}}',
+        );
+
+        $file3 = vfsStream::newFile('tool2.json');
+        $file3->withContent(
+            '{"aix": {"abc2": "xyz2"}, "amiga os": {"abc3": "value3"}, "test": "test", "42": {"abc4": "test4"}}',
+        );
+
+        $dir->addChild($file1);
+        $dir->addChild($file2);
+        $dir->addChild($file3);
+
+        $key   = 'aix';
+        $value = ['abc' => 'xyz'];
+
+        $object = new Data($dir->url(), 'json');
+
+        self::assertFalse($object->isInitialized());
+
+        $object();
+
+        self::assertTrue($object->isInitialized());
+
+        $object();
+
+        self::assertTrue($object->isInitialized());
+        self::assertTrue($object->hasItem($key));
+        self::assertEquals((object) $value, $object->getItem($key));
+        self::assertCount(3, $object);
+
+        self::assertTrue($object->hasItem('amiga os'));
+        self::assertEquals((object) ['abc3' => 'value3'], $object->getItem('amiga os'));
+
+        self::assertFalse($object->hasItem('test'));
+
+        self::assertTrue($object->hasItem('42'));
+        self::assertEquals((object) ['abc4' => 'test4'], $object->getItem('42'));
     }
 }

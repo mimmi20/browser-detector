@@ -25,7 +25,6 @@ use function array_key_exists;
 use function assert;
 use function count;
 use function file_get_contents;
-use function is_array;
 use function is_string;
 use function json_decode;
 use function sprintf;
@@ -89,12 +88,12 @@ final class Data implements DataInterface
             }
 
             try {
-                $fileData = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
+                $fileData = json_decode(json: $content, associative: false, flags: JSON_THROW_ON_ERROR);
             } catch (JsonException $e) {
                 throw new RuntimeException(sprintf('file "%s" contains invalid json', $file), 0, $e);
             }
 
-            assert(is_array($fileData) || $fileData instanceof stdClass);
+            assert($fileData instanceof stdClass);
 
             foreach ((array) $fileData as $key => $data) {
                 $stringKey = (string) $key;
