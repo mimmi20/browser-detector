@@ -102,16 +102,18 @@ final class Useragent implements HeaderInterface
     }
 
     /** @throws void */
-    public function getClientVersion(): string | null
+    public function getClientVersion(string | null $code = null): string | null
     {
-        try {
-            $code = $this->browserParser->parse($this->normalizedValue);
+        if ($code === null) {
+            try {
+                $code = $this->browserParser->parse($this->normalizedValue);
 
-            if ($code === '') {
+                if ($code === '') {
+                    return null;
+                }
+            } catch (NotFoundException | UnexpectedValueException) {
                 return null;
             }
-        } catch (NotFoundException | UnexpectedValueException) {
-            return null;
         }
 
         try {

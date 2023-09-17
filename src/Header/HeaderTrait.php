@@ -121,8 +121,12 @@ trait HeaderTrait
         return false;
     }
 
-    /** @throws void */
-    public function getClientVersion(): string | null
+    /**
+     * @throws void
+     *
+     * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+     */
+    public function getClientVersion(string | null $code = null): string | null
     {
         return null;
     }

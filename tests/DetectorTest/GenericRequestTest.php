@@ -469,9 +469,9 @@ final class GenericRequestTest extends TestCase
         $headers   = [
             Constants::HEADER_USERAGENT => [$userAgent],
             Constants::HEADER_DEVICE_STOCK_UA => [$deviceUa],
-            Constants::HEADER_UCBROWSER_UA => [$browserUa],
             'via' => ['test'],
             'x-test' => [''],
+            Constants::HEADER_UCBROWSER_UA => [$browserUa],
         ];
 
         $header1 = $this->createMock(HeaderInterface::class);
@@ -553,16 +553,16 @@ final class GenericRequestTest extends TestCase
                     match ($matcher->numberOfInvocations()) {
                         1 => self::assertSame(Constants::HEADER_USERAGENT, $name),
                         2 => self::assertSame(Constants::HEADER_DEVICE_STOCK_UA, $name),
-                        3 => self::assertSame(Constants::HEADER_UCBROWSER_UA, $name),
-                        4 => self::assertSame('via', $name),
+                        5 => self::assertSame(Constants::HEADER_UCBROWSER_UA, $name),
+                        3 => self::assertSame('via', $name),
                         default => self::assertSame('x-test', $name),
                     };
 
                     return match ($matcher->numberOfInvocations()) {
                         1 => $userAgent,
                         2 => $deviceUa,
-                        3 => $browserUa,
-                        4 => 'test',
+                        5 => $browserUa,
+                        3 => 'test',
                         default => '',
                     };
                 },

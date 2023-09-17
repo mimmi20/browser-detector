@@ -1825,7 +1825,7 @@ final class PlatformLoaderTest extends TestCase
 
                     assert($message instanceof UnexpectedValueException);
 
-                    self::assertSame((string) VersionInterface::IGNORE_MICRO, $message->getMessage());
+                    self::assertSame(VersionInterface::IGNORE_MICRO . '::[]', $message->getMessage());
                     self::assertSame(0, $message->getCode());
                     self::assertNull($message->getPrevious());
                 },
@@ -1861,6 +1861,110 @@ final class PlatformLoaderTest extends TestCase
 
         $platformData = (object) [
             'version' => (object) ['factory' => '\\' . ErrorVersionCreatorFactory::class, 'search' => 'test'],
+            'manufacturer' => 'xyz',
+            'name' => 'iOS',
+            'marketingName' => 'iOS',
+        ];
+
+        $initData
+            ->expects(self::once())
+            ->method('getItem')
+            ->with('test-key')
+            ->willReturn($platformData);
+
+        $company = ['type' => 'xyz-type'];
+
+        $companyLoader = $this->createMock(CompanyLoaderInterface::class);
+        $companyLoader
+            ->expects(self::once())
+            ->method('load')
+            ->with('xyz')
+            ->willReturn($company);
+
+        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
+            ->expects(self::never())
+            ->method('setRegex');
+        $versionBuilder
+            ->expects(self::never())
+            ->method('set');
+        $versionBuilder
+            ->expects(self::never())
+            ->method('detectVersion');
+
+        $object = new PlatformLoader($logger, $initData, $companyLoader, $versionBuilder);
+
+        $result = $object->load('test-key', 'test/3.0');
+
+        $expected = [
+            'name' => 'iOS',
+            'marketingName' => 'iOS',
+            'version' => null,
+            'manufacturer' => 'xyz-type',
+            'bits' => null,
+        ];
+
+        self::assertSame($expected, $result);
+    }
+
+    /**
+     * @throws ExpectationFailedException
+     * @throws Exception
+     * @throws NotFoundException
+     * @throws UnexpectedValueException
+     */
+    public function testInvokeGenericVersionIos3(): void
+    {
+        $logger = $this->createMock(LoggerInterface::class);
+        $logger
+            ->expects(self::once())
+            ->method('info')
+            ->willReturnCallback(
+                static function (string | Stringable $message, array $context = []): void {
+                    self::assertInstanceOf(UnexpectedValueException::class, $message);
+                    self::assertSame([], $context);
+
+                    assert($message instanceof UnexpectedValueException);
+
+                    self::assertSame(
+                        VersionInterface::IGNORE_MICRO . '::["test"]',
+                        $message->getMessage(),
+                    );
+                    self::assertSame(0, $message->getCode());
+                    self::assertNull($message->getPrevious());
+                },
+            );
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::never())
+            ->method('warning');
+        $logger
+            ->expects(self::never())
+            ->method('error');
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
+
+        $initData = $this->createMock(DataInterface::class);
+        $initData
+            ->expects(self::once())
+            ->method('__invoke');
+        $initData
+            ->expects(self::once())
+            ->method('hasItem')
+            ->with('test-key')
+            ->willReturn(true);
+
+        $platformData = (object) [
+            'version' => (object) ['factory' => '\\' . ErrorVersionCreatorFactory::class, 'search' => ['test']],
             'manufacturer' => 'xyz',
             'name' => 'iOS',
             'marketingName' => 'iOS',

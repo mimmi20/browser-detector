@@ -41,12 +41,7 @@ final class DeviceStockUa implements HeaderInterface
         $matches = [];
 
         if (preg_match('/(?P<client>opera mini|iemobile)/i', $this->value, $matches)) {
-            $code = mb_strtolower($matches['client']);
-
-            return match ($code) {
-                'opera mini', 'iemobile' => $code,
-                default => null,
-            };
+            return mb_strtolower($matches['client']);
         }
 
         return null;
@@ -58,8 +53,12 @@ final class DeviceStockUa implements HeaderInterface
         return (bool) preg_match('/(?:opera mini|iemobile)\/[\d\.]+/i', $this->value);
     }
 
-    /** @throws void */
-    public function getClientVersion(): string | null
+    /**
+     * @throws void
+     *
+     * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+     */
+    public function getClientVersion(string | null $code = null): string | null
     {
         $matches = [];
 
@@ -90,7 +89,6 @@ final class DeviceStockUa implements HeaderInterface
                 $this->value,
                 $matches,
             )
-            && isset($matches['platform'])
         ) {
             $code = mb_strtolower($matches['platform']);
 
@@ -132,7 +130,6 @@ final class DeviceStockUa implements HeaderInterface
                 $this->value,
                 $matches,
             )
-            && isset($matches['version'])
         ) {
             return str_replace('_', '.', $matches['version']);
         }
@@ -144,5 +141,49 @@ final class DeviceStockUa implements HeaderInterface
     public function hasEngineCode(): bool
     {
         return (bool) preg_match('/trident|presto|webkit|gecko/i', $this->value);
+    }
+
+    /**
+     * @throws void
+     *
+     * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+     */
+    public function getEngineCode(string | null $code = null): string | null
+    {
+        $matches = [];
+
+        if (preg_match('/(?P<engine>trident|presto|webkit|gecko)/i', $this->value, $matches)) {
+            return mb_strtolower($matches['engine']);
+        }
+
+        return null;
+    }
+
+    /** @throws void */
+    public function hasEngineVersion(): bool
+    {
+        return (bool) preg_match('/(?:trident|presto|webkit|gecko)[\/ ]([\d._]+)/i', $this->value);
+    }
+
+    /**
+     * @throws void
+     *
+     * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+     */
+    public function getEngineVersion(string | null $code = null): string | null
+    {
+        $matches = [];
+
+        if (
+            preg_match(
+                '/(?:trident|presto|webkit|gecko)[\/ ](?P<version>[\d._]+)/i',
+                $this->value,
+                $matches,
+            )
+        ) {
+            return str_replace('_', '.', $matches['version']);
+        }
+
+        return null;
     }
 }

@@ -68,7 +68,7 @@ interface HeaderInterface
     public function hasClientVersion(): bool;
 
     /** @throws void */
-    public function getClientVersion(): string | null;
+    public function getClientVersion(string | null $code = null): string | null;
 
     /** @throws void */
     public function hasPlatformCode(): bool;

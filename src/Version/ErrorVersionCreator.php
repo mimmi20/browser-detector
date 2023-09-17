@@ -12,28 +12,48 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Version;
 
+use JsonException;
 use UnexpectedValueException;
 
-final class ErrorVersionCreator implements VersionFactoryInterface
+use function json_encode;
+
+use const JSON_THROW_ON_ERROR;
+
+final class ErrorVersionCreator implements VersionBuilderInterface
 {
     /**
      * returns the version of the operating system/platform
+     *
+     * @param array<int, bool|string|null> $searches
      *
      * @throws void
      *
      * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
      */
-    public function detectVersion(string $useragent): VersionInterface
+    public function detectVersion(string $useragent, array $searches = []): VersionInterface
     {
-        return new class () implements VersionInterface {
+        return new class ($searches) implements VersionInterface {
+            /**
+             * @param array<int, bool|string|null> $searches
+             *
+             * @throws void
+             */
+            public function __construct(private readonly array $searches)
+            {
+                // nothing to do
+            }
+
             /**
              * returns the detected version
              *
              * @throws UnexpectedValueException
+             * @throws JsonException
              */
             public function getVersion(int $mode = VersionInterface::COMPLETE): string | null
             {
-                throw new UnexpectedValueException((string) $mode);
+                throw new UnexpectedValueException(
+                    $mode . '::' . json_encode($this->searches, JSON_THROW_ON_ERROR),
+                );
             }
 
             /**
@@ -100,5 +120,39 @@ final class ErrorVersionCreator implements VersionFactoryInterface
                 return false;
             }
         };
+    }
+
+    /**
+     * @throws void
+     *
+     * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+     */
+    public function setRegex(string $regex): void
+    {
+        // do nothing here
+    }
+
+    /**
+     * sets the detected version
+     *
+     * @throws void
+     *
+     * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+     */
+    public function set(string $version): VersionInterface
+    {
+        return new NullVersion();
+    }
+
+    /**
+     * @param array<string, string|null> $data
+     *
+     * @throws void
+     *
+     * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+     */
+    public static function fromArray(array $data): VersionInterface
+    {
+        return new NullVersion();
     }
 }

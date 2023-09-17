@@ -532,7 +532,7 @@ final class EngineLoaderTest extends TestCase
 
                     assert($message instanceof UnexpectedValueException);
 
-                    self::assertSame((string) VersionInterface::COMPLETE, $message->getMessage());
+                    self::assertSame(VersionInterface::COMPLETE . '::[]', $message->getMessage());
                     self::assertSame(0, $message->getCode());
                     self::assertNull($message->getPrevious());
                 },
