@@ -14,15 +14,16 @@ namespace BrowserDetector\Version;
 
 use Psr\Log\LoggerInterface;
 
-use function mb_stripos;
+use function mb_strtolower;
 use function preg_match;
+use function str_contains;
 
-final class Goanna implements VersionDetectorInterface
+final class Goanna implements VersionFactoryInterface
 {
     /** @throws void */
     public function __construct(
         private readonly LoggerInterface $logger,
-        private readonly VersionFactoryInterface $versionFactory,
+        private readonly VersionBuilderInterface $versionBuilder,
     ) {
         // nothing to do
     }
@@ -39,7 +40,7 @@ final class Goanna implements VersionDetectorInterface
 
         if ($doMatch) {
             try {
-                return $this->versionFactory->set($matchesFirst['version']);
+                return $this->versionBuilder->set($matchesFirst['version']);
             } catch (NotNumericException $e) {
                 $this->logger->info($e);
             }
@@ -50,9 +51,9 @@ final class Goanna implements VersionDetectorInterface
         // second version: version on "rv:" token
         $doMatch = preg_match('/rv\:(?P<version>\d\.[\d\.]*)/', $useragent, $matchesSecond);
 
-        if ($doMatch && mb_stripos($useragent, 'goanna') !== false) {
+        if ($doMatch && str_contains(mb_strtolower($useragent), 'goanna')) {
             try {
-                return $this->versionFactory->set($matchesSecond['version']);
+                return $this->versionBuilder->set($matchesSecond['version']);
             } catch (NotNumericException $e) {
                 $this->logger->info($e);
             }
@@ -62,7 +63,7 @@ final class Goanna implements VersionDetectorInterface
 
         try {
             // first version: uses gecko version
-            return $this->versionFactory->set('1.0');
+            return $this->versionBuilder->set('1.0');
         } catch (NotNumericException $e) {
             $this->logger->info($e);
         }

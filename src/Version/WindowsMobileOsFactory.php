@@ -21,7 +21,7 @@ final class WindowsMobileOsFactory implements WindowsMobileOsFactoryInterface
     {
         return new WindowsMobileOs(
             $logger,
-            new VersionFactory(),
+            new VersionBuilder($logger),
         );
     }
 }

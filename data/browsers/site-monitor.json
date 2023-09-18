@@ -4,7 +4,7 @@
     "manufacturer": "google",
     "type": "site-monitor",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Lighthouse"
       ]
@@ -26,7 +26,7 @@
     "manufacturer": "alexa-internet",
     "type": "site-monitor",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "alexa site audit"
       ]
@@ -38,7 +38,7 @@
     "manufacturer": "pingdom",
     "type": "site-monitor",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Pingdom\\.com\\_bot\\_version\\_",
         "PingdomPageSpeed",
@@ -53,7 +53,7 @@
     "manufacturer": "nagios-enterprises",
     "type": "site-monitor",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "check_http"
       ]

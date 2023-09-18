@@ -12,7 +12,7 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Version;
 
-final class Test implements VersionDetectorInterface
+final class Test implements VersionFactoryInterface
 {
     /**
      * returns the version of the operating system/platform

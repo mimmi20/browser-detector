@@ -15,8 +15,8 @@ namespace BrowserDetectorTest\Version;
 use BrowserDetector\Version\Ios;
 use BrowserDetector\Version\NotNumericException;
 use BrowserDetector\Version\NullVersion;
-use BrowserDetector\Version\VersionFactory;
-use BrowserDetector\Version\VersionFactoryInterface;
+use BrowserDetector\Version\VersionBuilder;
+use BrowserDetector\Version\VersionBuilderInterface;
 use BrowserDetector\Version\VersionInterface;
 use Exception;
 use IosBuild\IosBuild;
@@ -64,7 +64,7 @@ final class IosTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $object = new Ios($logger, new VersionFactory(), new IosBuild());
+        $object = new Ios($logger, new VersionBuilder($logger), new IosBuild());
 
         $detectedVersion = $object->detectVersion($useragent);
 
@@ -174,13 +174,13 @@ final class IosTest extends TestCase
         $exception = new NotFoundException('not found');
         $version   = $this->createMock(VersionInterface::class);
 
-        $versionFactory = $this->createMock(VersionFactoryInterface::class);
-        $versionFactory
+        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
             ->expects(self::once())
             ->method('detectVersion')
             ->with($useragent, Ios::SEARCHES)
             ->willReturn($version);
-        $versionFactory
+        $versionBuilder
             ->expects(self::never())
             ->method('set');
 
@@ -217,7 +217,7 @@ final class IosTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $object = new Ios($logger, $versionFactory, $iosBuild);
+        $object = new Ios($logger, $versionBuilder, $iosBuild);
 
         $detectedVersion = $object->detectVersion($useragent);
 
@@ -231,11 +231,11 @@ final class IosTest extends TestCase
         $useragent = 'Mozilla/5.0 (iPod; U; CPU like Mac OS X; de-de) AppleWebKit/420.1 (KHTML, like Gecko) Version/3.0 Mobile/3B48b Safari/419.3';
         $exception = new NotNumericException('not numeric');
 
-        $versionFactory = $this->createMock(VersionFactoryInterface::class);
-        $versionFactory
+        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
             ->expects(self::never())
             ->method('detectVersion');
-        $versionFactory
+        $versionBuilder
             ->expects(self::once())
             ->method('set')
             ->with('1.0')
@@ -253,7 +253,7 @@ final class IosTest extends TestCase
         $logger
             ->expects(self::once())
             ->method('info')
-            ->with($exception);
+            ->with($exception, []);
         $logger
             ->expects(self::never())
             ->method('notice');
@@ -273,7 +273,7 @@ final class IosTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $object = new Ios($logger, $versionFactory, $iosBuild);
+        $object = new Ios($logger, $versionBuilder, $iosBuild);
 
         $detectedVersion = $object->detectVersion($useragent);
 
@@ -288,11 +288,11 @@ final class IosTest extends TestCase
         $exception = new NotNumericException('not numeric');
         $version   = '6.1.3';
 
-        $versionFactory = $this->createMock(VersionFactoryInterface::class);
-        $versionFactory
+        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
             ->expects(self::never())
             ->method('detectVersion');
-        $versionFactory
+        $versionBuilder
             ->expects(self::once())
             ->method('set')
             ->with($version)
@@ -312,7 +312,7 @@ final class IosTest extends TestCase
         $logger
             ->expects(self::once())
             ->method('info')
-            ->with($exception);
+            ->with($exception, []);
         $logger
             ->expects(self::never())
             ->method('notice');
@@ -332,7 +332,7 @@ final class IosTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $object = new Ios($logger, $versionFactory, $iosBuild);
+        $object = new Ios($logger, $versionBuilder, $iosBuild);
 
         $detectedVersion = $object->detectVersion($useragent);
 
@@ -347,11 +347,11 @@ final class IosTest extends TestCase
         $exception = new NotNumericException('not numeric');
         $version   = '6.1.3';
 
-        $versionFactory = $this->createMock(VersionFactoryInterface::class);
-        $versionFactory
+        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
             ->expects(self::never())
             ->method('detectVersion');
-        $versionFactory
+        $versionBuilder
             ->expects(self::once())
             ->method('set')
             ->with($version)
@@ -371,7 +371,7 @@ final class IosTest extends TestCase
         $logger
             ->expects(self::once())
             ->method('info')
-            ->with($exception);
+            ->with($exception, []);
         $logger
             ->expects(self::never())
             ->method('notice');
@@ -391,7 +391,7 @@ final class IosTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $object = new Ios($logger, $versionFactory, $iosBuild);
+        $object = new Ios($logger, $versionBuilder, $iosBuild);
 
         $detectedVersion = $object->detectVersion($useragent);
 
@@ -406,11 +406,11 @@ final class IosTest extends TestCase
         $exception = new NotNumericException('not numeric');
         $version   = '10.2';
 
-        $versionFactory = $this->createMock(VersionFactoryInterface::class);
-        $versionFactory
+        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
             ->expects(self::never())
             ->method('detectVersion');
-        $versionFactory
+        $versionBuilder
             ->expects(self::once())
             ->method('set')
             ->with($version)
@@ -428,7 +428,7 @@ final class IosTest extends TestCase
         $logger
             ->expects(self::once())
             ->method('info')
-            ->with($exception);
+            ->with($exception, []);
         $logger
             ->expects(self::never())
             ->method('notice');
@@ -448,7 +448,7 @@ final class IosTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $object = new Ios($logger, $versionFactory, $iosBuild);
+        $object = new Ios($logger, $versionBuilder, $iosBuild);
 
         $detectedVersion = $object->detectVersion($useragent);
 
@@ -463,11 +463,11 @@ final class IosTest extends TestCase
         $exception = new NotNumericException('not numeric');
         $version   = '5.1.1';
 
-        $versionFactory = $this->createMock(VersionFactoryInterface::class);
-        $versionFactory
+        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
             ->expects(self::never())
             ->method('detectVersion');
-        $versionFactory
+        $versionBuilder
             ->expects(self::once())
             ->method('set')
             ->with($version)
@@ -485,7 +485,7 @@ final class IosTest extends TestCase
         $logger
             ->expects(self::once())
             ->method('info')
-            ->with($exception);
+            ->with($exception, []);
         $logger
             ->expects(self::never())
             ->method('notice');
@@ -505,7 +505,7 @@ final class IosTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $object = new Ios($logger, $versionFactory, $iosBuild);
+        $object = new Ios($logger, $versionBuilder, $iosBuild);
 
         $detectedVersion = $object->detectVersion($useragent);
 
@@ -520,11 +520,11 @@ final class IosTest extends TestCase
         $exception = new NotNumericException('not numeric');
         $version   = '5.1.1';
 
-        $versionFactory = $this->createMock(VersionFactoryInterface::class);
-        $versionFactory
+        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
             ->expects(self::never())
             ->method('detectVersion');
-        $versionFactory
+        $versionBuilder
             ->expects(self::once())
             ->method('set')
             ->with($version)
@@ -544,7 +544,7 @@ final class IosTest extends TestCase
         $logger
             ->expects(self::once())
             ->method('info')
-            ->with($exception);
+            ->with($exception, []);
         $logger
             ->expects(self::never())
             ->method('notice');
@@ -564,7 +564,7 @@ final class IosTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $object = new Ios($logger, $versionFactory, $iosBuild);
+        $object = new Ios($logger, $versionBuilder, $iosBuild);
 
         $detectedVersion = $object->detectVersion($useragent);
 
@@ -578,13 +578,13 @@ final class IosTest extends TestCase
         $useragent = 'Mozilla/5.0 (iPad; CPU OS 8_1 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) CriOS/42.0.2311.47 Mobile Safari/600.1.4';
         $exception = new NotNumericException('not numeric');
 
-        $versionFactory = $this->createMock(VersionFactoryInterface::class);
-        $versionFactory
+        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
             ->expects(self::once())
             ->method('detectVersion')
             ->with($useragent, Ios::SEARCHES)
             ->willThrowException($exception);
-        $versionFactory
+        $versionBuilder
             ->expects(self::never())
             ->method('set');
 
@@ -600,7 +600,7 @@ final class IosTest extends TestCase
         $logger
             ->expects(self::once())
             ->method('info')
-            ->with($exception);
+            ->with($exception, []);
         $logger
             ->expects(self::never())
             ->method('notice');
@@ -620,7 +620,7 @@ final class IosTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $object = new Ios($logger, $versionFactory, $iosBuild);
+        $object = new Ios($logger, $versionBuilder, $iosBuild);
 
         $detectedVersion = $object->detectVersion($useragent);
 
@@ -633,20 +633,21 @@ final class IosTest extends TestCase
     {
         $useragent = 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_10 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Version/8.0 Mobile Safari/600.1.4';
         $exception = new NotNumericException('not numeric');
-        $version   = $this->createMock(VersionInterface::class);
+
+        $version = $this->createMock(VersionInterface::class);
         $version
             ->expects(self::once())
             ->method('getVersion')
             ->with(VersionInterface::IGNORE_MICRO)
             ->willReturn('10.10');
 
-        $versionFactory = $this->createMock(VersionFactoryInterface::class);
-        $versionFactory
+        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
             ->expects(self::once())
             ->method('detectVersion')
             ->with($useragent, Ios::SEARCHES)
             ->willReturn($version);
-        $versionFactory
+        $versionBuilder
             ->expects(self::once())
             ->method('set')
             ->with('8.0.0')
@@ -664,7 +665,7 @@ final class IosTest extends TestCase
         $logger
             ->expects(self::once())
             ->method('info')
-            ->with($exception);
+            ->with($exception, []);
         $logger
             ->expects(self::never())
             ->method('notice');
@@ -684,7 +685,121 @@ final class IosTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $object = new Ios($logger, $versionFactory, $iosBuild);
+        $object = new Ios($logger, $versionBuilder, $iosBuild);
+
+        $detectedVersion = $object->detectVersion($useragent);
+
+        self::assertInstanceOf(VersionInterface::class, $detectedVersion);
+        self::assertInstanceOf(NullVersion::class, $detectedVersion);
+    }
+
+    /** @throws UnexpectedValueException */
+    public function testDetectVersionFail10(): void
+    {
+        $useragent = 'Mozilla/5.0 (iPad; CPU OS 8_1 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) CriOS/42.0.2311.47 Mobile/12B401 Safari/600.1.4';
+        $exception = new NotFoundException('not numeric');
+
+        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
+            ->expects(self::once())
+            ->method('detectVersion')
+            ->with($useragent, Ios::SEARCHES)
+            ->willReturn(new NullVersion());
+        $versionBuilder
+            ->expects(self::never())
+            ->method('set');
+
+        $iosBuild = $this->createMock(IosBuildInterface::class);
+        $iosBuild
+            ->expects(self::once())
+            ->method('getVersion')
+            ->with('12B401')
+            ->willThrowException($exception);
+
+        $logger = $this->createMock(LoggerInterface::class);
+        $logger
+            ->expects(self::never())
+            ->method('debug');
+        $logger
+            ->expects(self::never())
+            ->method('info');
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::never())
+            ->method('warning');
+        $logger
+            ->expects(self::never())
+            ->method('error');
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
+
+        $object = new Ios($logger, $versionBuilder, $iosBuild);
+
+        $detectedVersion = $object->detectVersion($useragent);
+
+        self::assertInstanceOf(VersionInterface::class, $detectedVersion);
+        self::assertInstanceOf(NullVersion::class, $detectedVersion);
+    }
+
+    /** @throws UnexpectedValueException */
+    public function testDetectVersionFail11(): void
+    {
+        $useragent = 'AppleCoreMedia/1.0.0.12D5480a (iPad; U; CPU OS 8_2 like Mac OS X; sv_se)';
+        $exception = new NotFoundException('not numeric');
+
+        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
+            ->expects(self::once())
+            ->method('detectVersion')
+            ->with($useragent, Ios::SEARCHES)
+            ->willReturn(new NullVersion());
+        $versionBuilder
+            ->expects(self::never())
+            ->method('set');
+
+        $iosBuild = $this->createMock(IosBuildInterface::class);
+        $iosBuild
+            ->expects(self::once())
+            ->method('getVersion')
+            ->with('12D5480a')
+            ->willThrowException($exception);
+
+        $logger = $this->createMock(LoggerInterface::class);
+        $logger
+            ->expects(self::never())
+            ->method('debug');
+        $logger
+            ->expects(self::never())
+            ->method('info');
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::never())
+            ->method('warning');
+        $logger
+            ->expects(self::never())
+            ->method('error');
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
+
+        $object = new Ios($logger, $versionBuilder, $iosBuild);
 
         $detectedVersion = $object->detectVersion($useragent);
 

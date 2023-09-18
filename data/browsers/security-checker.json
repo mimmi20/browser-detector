@@ -14,7 +14,7 @@
     "manufacturer": "unknown",
     "type": "security-checker",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "BitSightBot"
       ]
@@ -26,7 +26,7 @@
     "manufacturer": "censys",
     "type": "security-checker",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "CensysInspect"
       ]
@@ -38,7 +38,7 @@
     "manufacturer": "rwth-aachen",
     "type": "security-checker",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "zgrab"
       ]
@@ -50,7 +50,7 @@
     "manufacturer": "badaas",
     "type": "security-checker",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "l9scan",
         "LeakIX"

@@ -4,7 +4,7 @@
     "manufacturer": "google",
     "type": "bot-trancoder",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Mediapartners\\-Google"
       ]
@@ -16,7 +16,7 @@
     "manufacturer": "google",
     "type": "bot-trancoder",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Google Markup Tester"
       ]
@@ -28,7 +28,7 @@
     "manufacturer": "google",
     "type": "bot-trancoder",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Google Web Preview"
       ]
@@ -40,7 +40,7 @@
     "manufacturer": "google",
     "type": "bot-trancoder",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Google Web Preview Analytics"
       ]
@@ -52,7 +52,7 @@
     "manufacturer": "google",
     "type": "bot-trancoder",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Google Wireless Transcoder"
       ]

@@ -13,6 +13,9 @@ declare(strict_types = 1);
 namespace BrowserDetector\Header;
 
 use BrowserDetector\Constants;
+use BrowserDetector\Loader\BrowserLoaderInterface;
+use BrowserDetector\Loader\EngineLoaderInterface;
+use BrowserDetector\Loader\PlatformLoaderInterface;
 use BrowserDetector\NotFoundException;
 use BrowserDetector\Parser\BrowserParserInterface;
 use BrowserDetector\Parser\DeviceParserInterface;
@@ -35,6 +38,9 @@ final class HeaderLoader implements HeaderLoaderInterface
         BrowserParserInterface $browserParser,
         EngineParserInterface $engineParser,
         NormalizerFactory $normalizerFactory,
+        BrowserLoaderInterface $browserLoader,
+        PlatformLoaderInterface $platformLoader,
+        EngineLoaderInterface $engineLoader,
     ) {
         $this->factories = [
             Constants::HEADER_BAIDU_FLYFLOW => static fn (string $header): HeaderInterface => new BaiduFlyflow(
@@ -78,6 +84,9 @@ final class HeaderLoader implements HeaderLoaderInterface
                 $browserParser,
                 $engineParser,
                 $normalizerFactory,
+                $browserLoader,
+                $platformLoader,
+                $engineLoader,
             ),
             Constants::HEADER_ORIGINAL_UA => static fn (string $header): HeaderInterface => new Useragent(
                 $header,
@@ -86,6 +95,9 @@ final class HeaderLoader implements HeaderLoaderInterface
                 $browserParser,
                 $engineParser,
                 $normalizerFactory,
+                $browserLoader,
+                $platformLoader,
+                $engineLoader,
             ),
             Constants::HEADER_DEVICE_UA => static fn (string $header): HeaderInterface => new XDeviceUseragent(
                 $header,

@@ -12,14 +12,17 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Version;
 
-use UnexpectedValueException;
+use Psr\Log\LoggerInterface;
 
-interface VersionDetectorInterface
+final class ErrorVersionCreatorFactory
 {
     /**
-     * detects the bit count by this browser from the given user agent
+     * @throws void
      *
-     * @throws UnexpectedValueException
+     * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
      */
-    public function detectVersion(string $useragent): VersionInterface;
+    public function __invoke(LoggerInterface $logger): ErrorVersionCreator
+    {
+        return new ErrorVersionCreator();
+    }
 }

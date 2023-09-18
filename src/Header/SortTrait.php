@@ -25,7 +25,7 @@ use const SORT_NUMERIC;
 trait SortTrait
 {
     /**
-     * @return array<string, string>|null
+     * @return non-empty-array<string, string>|null
      *
      * @throws void
      */

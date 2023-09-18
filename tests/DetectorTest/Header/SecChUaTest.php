@@ -57,11 +57,6 @@ final class SecChUaTest extends TestCase
             $header->getDeviceIsMobile(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
-        self::assertFalse($header->hasDeviceName(), sprintf('device info mismatch for ua "%s"', $ua));
-        self::assertNull(
-            $header->getDeviceName(),
-            sprintf('device info mismatch for ua "%s"', $ua),
-        );
         self::assertFalse($header->hasDeviceCode(), sprintf('device info mismatch for ua "%s"', $ua));
         self::assertNull(
             $header->getDeviceCode(),
@@ -127,6 +122,12 @@ final class SecChUaTest extends TestCase
             ['" Not A;Brand";v="99", "Chromium";v="101", "Opera";v="101"', 'opera', '101'],
             ['" Not A;Brand";v="99", "Chromium";v="100", "Yandex";v="22"', 'yabrowser', '22'],
             ['""', null, null],
+            ['";Not A Brand";v="99", "Opera";v="80", "OperaMobile";v="66", "Chromium";v="94""', 'opera mobile', '66'],
+            ['" Not A;Brand";v="99", "Chromium";v="100", "Atom";v="22"', 'atom', '22'],
+            ['" Not A;Brand";v="99", "Chromium";v="99", "HuaweiBrowser";v="99"', 'huawei-browser', '99'],
+            ['"Chromium";v="108", "Opera GX";v="94", "Not)A;Brand";v="99"', 'opera gx', '94'],
+            ['"Chromium";v="110", "Not A(Brand";v="24", "Avast Secure Browser";v="110"', 'avast secure browser', '110'],
+            ['" Not A;Brand";v="99", "Chromium";v="100", "CCleaner Browser";v="100"', 'ccleaner browser', '100'],
         ];
     }
 }

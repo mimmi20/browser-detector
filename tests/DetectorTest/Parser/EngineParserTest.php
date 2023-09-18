@@ -12,14 +12,11 @@ declare(strict_types = 1);
 
 namespace BrowserDetectorTest\Parser;
 
-use BrowserDetector\Loader\EngineLoaderInterface;
 use BrowserDetector\Parser\EngineParser;
 use BrowserDetector\Parser\Helper\RulefileParserInterface;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
-
-use function assert;
 
 final class EngineParserTest extends TestCase
 {
@@ -32,13 +29,6 @@ final class EngineParserTest extends TestCase
         $useragent = 'test-agent';
         $mode      = 'test-mode';
 
-        $loader = $this->getMockBuilder(EngineLoaderInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
-        $loader
-            ->expects(self::never())
-            ->method('load');
-
         $fileParser = $this->getMockBuilder(RulefileParserInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
@@ -47,8 +37,7 @@ final class EngineParserTest extends TestCase
             ->method('parseFile')
             ->willReturn($mode);
 
-        assert($fileParser instanceof RulefileParserInterface);
-        $parser       = new EngineParser($loader, $fileParser);
+        $parser       = new EngineParser($fileParser);
         $parserResult = $parser->parse($useragent);
 
         self::assertSame($mode, $parserResult);

@@ -12,9 +12,6 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Parser;
 
-use BrowserDetector\Loader\NotFoundException;
-use UnexpectedValueException;
-
 interface PlatformParserInterface
 {
     /**
@@ -23,12 +20,4 @@ interface PlatformParserInterface
      * @throws void
      */
     public function parse(string $useragent): string;
-
-    /**
-     * @return array{name: string|null, marketingName: string|null, version: string|null, manufacturer: string, bits: int|null}
-     *
-     * @throws NotFoundException
-     * @throws UnexpectedValueException
-     */
-    public function load(string $key, string $useragent = ''): array;
 }

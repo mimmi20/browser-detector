@@ -12,21 +12,14 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Parser;
 
-use BrowserDetector\Loader\BrowserLoader;
-use BrowserDetector\Loader\CompanyLoaderInterface;
-use BrowserDetector\Loader\Helper\Data;
 use BrowserDetector\Parser\Helper\RulefileParser;
 use Psr\Log\LoggerInterface;
 
 final class BrowserParserFactory implements BrowserParserFactoryInterface
 {
-    private BrowserLoader | null $loader = null;
-
     /** @throws void */
-    public function __construct(
-        private readonly LoggerInterface $logger,
-        private readonly CompanyLoaderInterface $companyLoader,
-    ) {
+    public function __construct(private readonly LoggerInterface $logger)
+    {
         // nothing to do
     }
 
@@ -37,16 +30,7 @@ final class BrowserParserFactory implements BrowserParserFactoryInterface
      */
     public function __invoke(): BrowserParserInterface
     {
-        if ($this->loader === null) {
-            $this->loader = new BrowserLoader(
-                $this->logger,
-                new Data(BrowserLoader::DATA_PATH, 'json'),
-                $this->companyLoader,
-            );
-        }
-
         return new BrowserParser(
-            $this->loader,
             new RulefileParser($this->logger),
         );
     }

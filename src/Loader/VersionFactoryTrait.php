@@ -14,7 +14,7 @@ namespace BrowserDetector\Loader;
 
 use BrowserDetector\Version\NotNumericException;
 use BrowserDetector\Version\NullVersion;
-use BrowserDetector\Version\VersionDetectorInterface;
+use BrowserDetector\Version\VersionBuilderInterface;
 use BrowserDetector\Version\VersionFactoryInterface;
 use BrowserDetector\Version\VersionInterface;
 use Psr\Log\LoggerInterface;
@@ -24,11 +24,12 @@ use UnexpectedValueException;
 use function assert;
 use function is_array;
 use function is_callable;
+use function is_scalar;
 use function is_string;
 
 trait VersionFactoryTrait
 {
-    private VersionFactoryInterface $versionFactory;
+    private VersionBuilderInterface $versionBuilder;
 
     /** @throws void */
     private function getVersion(
@@ -40,7 +41,7 @@ trait VersionFactoryTrait
 
         if (is_string($version)) {
             try {
-                return $this->versionFactory->set($version);
+                return $this->versionBuilder->set($version);
             } catch (NotNumericException $e) {
                 $this->logger->error($e);
 
@@ -54,9 +55,9 @@ trait VersionFactoryTrait
 
         $value = $version->value ?? null;
 
-        if ($value !== null) {
+        if ($value !== null && is_scalar($value)) {
             try {
-                return $this->versionFactory->set((string) $value);
+                return $this->versionBuilder->set((string) $value);
             } catch (NotNumericException $e) {
                 $this->logger->error($e);
 
@@ -64,48 +65,30 @@ trait VersionFactoryTrait
             }
         }
 
-        $className   = $version->class ?? null;
         $factoryName = $version->factory ?? null;
 
-        if (!is_string($className) && !is_string($factoryName)) {
+        if (!is_string($factoryName)) {
             return $versionClass;
         }
 
-        if (is_string($factoryName)) {
-            $factory = new $factoryName();
-            assert(is_callable($factory));
-            $versionDetector = $factory($logger);
-            assert($versionDetector instanceof VersionDetectorInterface);
-
-            try {
-                return $versionDetector->detectVersion($useragent);
-            } catch (UnexpectedValueException $e) {
-                $this->logger->error($e);
-            }
-
-            return $versionClass;
-        }
-
-        if ($className !== 'VersionFactory') {
-            $versionDetector = new $className();
-            assert($versionDetector instanceof VersionDetectorInterface);
-
-            try {
-                return $versionDetector->detectVersion($useragent);
-            } catch (UnexpectedValueException $e) {
-                $this->logger->error($e);
-            }
-
-            return $versionClass;
-        }
-
-        if (!is_array($version->search ?? null)) {
-            return $versionClass;
-        }
+        $factory = new $factoryName();
+        assert(is_callable($factory));
+        $versionDetector = $factory($logger);
+        assert($versionDetector instanceof VersionFactoryInterface);
 
         try {
-            return $this->versionFactory->detectVersion($useragent, $version->search);
-        } catch (NotNumericException $e) {
+            if ($versionDetector instanceof VersionBuilderInterface) {
+                $searches = $version->search ?? [];
+
+                if (!is_array($searches)) {
+                    $searches = [];
+                }
+
+                return $versionDetector->detectVersion($useragent, $searches);
+            }
+
+            return $versionDetector->detectVersion($useragent);
+        } catch (UnexpectedValueException | NotNumericException $e) {
             $this->logger->error($e);
         }
 

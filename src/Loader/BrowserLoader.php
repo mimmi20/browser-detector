@@ -14,10 +14,10 @@ namespace BrowserDetector\Loader;
 
 use BrowserDetector\Bits\Browser;
 use BrowserDetector\Loader\Helper\DataInterface;
-use BrowserDetector\Version\VersionFactory;
+use BrowserDetector\Version\VersionBuilderInterface;
 use Psr\Log\LoggerInterface;
 use stdClass;
-use UaBrowserType\TypeLoader;
+use UaBrowserType\TypeLoaderInterface;
 use UaBrowserType\Unknown;
 use UnexpectedValueException;
 
@@ -37,8 +37,10 @@ final class BrowserLoader implements BrowserLoaderInterface
         private readonly LoggerInterface $logger,
         private readonly DataInterface $initData,
         private readonly CompanyLoaderInterface $companyLoader,
+        private readonly TypeLoaderInterface $typeLoader,
+        VersionBuilderInterface $versionBuilder,
     ) {
-        $this->versionFactory = new VersionFactory();
+        $this->versionBuilder = $versionBuilder;
 
         $initData();
     }
@@ -47,7 +49,6 @@ final class BrowserLoader implements BrowserLoaderInterface
      * @return array{0: array{name: string|null, modus: string|null, version: string|null, manufacturer: string, bits: int|null, type: string, isbot: bool}, 1: string|null}
      *
      * @throws NotFoundException
-     * @throws UnexpectedValueException
      */
     public function load(string $key, string $useragent = ''): array
     {
@@ -66,6 +67,8 @@ final class BrowserLoader implements BrowserLoaderInterface
         $browserData->bits  = (new Browser())->getBits($useragent);
         $browserData->modus = null;
 
+        assert(is_string($browserData->engine) || $browserData->engine === null);
+
         return [
             $this->fromArray((array) $browserData, $useragent),
             $browserData->engine,
@@ -77,11 +80,10 @@ final class BrowserLoader implements BrowserLoaderInterface
      *
      * @return array{name: string|null, modus: string|null, version: string|null, manufacturer: string, bits: int|null, type: string, isbot: bool}
      *
-     * @throws UnexpectedValueException
+     * @throws void
      */
-    public function fromArray(array $data, string $useragent = ''): array
+    private function fromArray(array $data, string $useragent = ''): array
     {
-        // var_dump($data);
         assert(
             array_key_exists('name', $data) && (is_string($data['name']) || $data['name'] === null),
             '"name" property is required',
@@ -120,7 +122,7 @@ final class BrowserLoader implements BrowserLoaderInterface
 
         if ($data['type'] !== null) {
             try {
-                $type = (new TypeLoader())->load($data['type']);
+                $type = $this->typeLoader->load($data['type']);
             } catch (\UaBrowserType\NotFoundException $e) {
                 $this->logger->info($e);
             }
@@ -137,10 +139,18 @@ final class BrowserLoader implements BrowserLoaderInterface
             }
         }
 
+        try {
+            $versionString = $version->getVersion();
+        } catch (UnexpectedValueException $e) {
+            $this->logger->info($e);
+
+            $versionString = null;
+        }
+
         return [
             'name' => $name,
             'modus' => $modus,
-            'version' => $version->getVersion(),
+            'version' => $versionString,
             'manufacturer' => $manufacturer['type'],
             'bits' => $bits,
             'type' => $type->getType(),

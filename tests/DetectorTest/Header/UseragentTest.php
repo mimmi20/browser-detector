@@ -13,7 +13,10 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest\Header;
 
 use BrowserDetector\Header\Useragent;
+use BrowserDetector\Loader\BrowserLoaderInterface;
+use BrowserDetector\Loader\EngineLoaderInterface;
 use BrowserDetector\Loader\NotFoundException;
+use BrowserDetector\Loader\PlatformLoaderInterface;
 use BrowserDetector\Parser\BrowserParserInterface;
 use BrowserDetector\Parser\DeviceParserInterface;
 use BrowserDetector\Parser\EngineParserInterface;
@@ -42,9 +45,6 @@ final class UseragentTest extends TestCase
             ->method('parse')
             ->with($ua)
             ->willReturn('');
-        $deviceParser
-            ->expects(self::never())
-            ->method('load');
 
         $platformParser = $this->createMock(PlatformParserInterface::class);
         $platformParser
@@ -52,9 +52,6 @@ final class UseragentTest extends TestCase
             ->method('parse')
             ->with($ua)
             ->willReturn('');
-        $platformParser
-            ->expects(self::never())
-            ->method('load');
 
         $browserParser = $this->createMock(BrowserParserInterface::class);
         $browserParser
@@ -62,9 +59,6 @@ final class UseragentTest extends TestCase
             ->method('parse')
             ->with($ua)
             ->willReturn('');
-        $browserParser
-            ->expects(self::never())
-            ->method('load');
 
         $engineParser = $this->createMock(EngineParserInterface::class);
         $engineParser
@@ -72,7 +66,19 @@ final class UseragentTest extends TestCase
             ->method('parse')
             ->with($ua)
             ->willReturn('');
-        $engineParser
+
+        $browserLoader = $this->createMock(BrowserLoaderInterface::class);
+        $browserLoader
+            ->expects(self::never())
+            ->method('load');
+
+        $platformLoader = $this->createMock(PlatformLoaderInterface::class);
+        $platformLoader
+            ->expects(self::never())
+            ->method('load');
+
+        $engineLoader = $this->createMock(EngineLoaderInterface::class);
+        $engineLoader
             ->expects(self::never())
             ->method('load');
 
@@ -85,6 +91,9 @@ final class UseragentTest extends TestCase
             $browserParser,
             $engineParser,
             $normalizerFactory,
+            $browserLoader,
+            $platformLoader,
+            $engineLoader,
         );
 
         self::assertSame($ua, $header->getValue(), sprintf('value mismatch for ua "%s"', $ua));
@@ -115,11 +124,6 @@ final class UseragentTest extends TestCase
         );
         self::assertNull(
             $header->getDeviceIsMobile(),
-            sprintf('device info mismatch for ua "%s"', $ua),
-        );
-        self::assertFalse($header->hasDeviceName(), sprintf('device info mismatch for ua "%s"', $ua));
-        self::assertNull(
-            $header->getDeviceName(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
         self::assertTrue($header->hasDeviceCode(), sprintf('device info mismatch for ua "%s"', $ua));
@@ -189,9 +193,6 @@ final class UseragentTest extends TestCase
             ->method('parse')
             ->with($ua)
             ->willReturn($deviceKey);
-        $deviceParser
-            ->expects(self::never())
-            ->method('load');
 
         $platformParser = $this->createMock(PlatformParserInterface::class);
         $platformParser
@@ -199,11 +200,6 @@ final class UseragentTest extends TestCase
             ->method('parse')
             ->with($ua)
             ->willReturn($platformKey);
-        $platformParser
-            ->expects(self::once())
-            ->method('load')
-            ->with($platformKey, $ua)
-            ->willReturn([]);
 
         $browserParser = $this->createMock(BrowserParserInterface::class);
         $browserParser
@@ -211,11 +207,6 @@ final class UseragentTest extends TestCase
             ->method('parse')
             ->with($ua)
             ->willReturn($clientKey);
-        $browserParser
-            ->expects(self::once())
-            ->method('load')
-            ->with($clientKey, $ua)
-            ->willReturn([[]]);
 
         $engineParser = $this->createMock(EngineParserInterface::class);
         $engineParser
@@ -223,7 +214,23 @@ final class UseragentTest extends TestCase
             ->method('parse')
             ->with($ua)
             ->willReturn($engineKey);
-        $engineParser
+
+        $browserLoader = $this->createMock(BrowserLoaderInterface::class);
+        $browserLoader
+            ->expects(self::once())
+            ->method('load')
+            ->with($clientKey, $ua)
+            ->willReturn([[]]);
+
+        $platformLoader = $this->createMock(PlatformLoaderInterface::class);
+        $platformLoader
+            ->expects(self::once())
+            ->method('load')
+            ->with($platformKey, $ua)
+            ->willReturn([]);
+
+        $engineLoader = $this->createMock(EngineLoaderInterface::class);
+        $engineLoader
             ->expects(self::once())
             ->method('load')
             ->with($engineKey, $ua)
@@ -238,6 +245,9 @@ final class UseragentTest extends TestCase
             $browserParser,
             $engineParser,
             $normalizerFactory,
+            $browserLoader,
+            $platformLoader,
+            $engineLoader,
         );
 
         self::assertSame($ua, $header->getValue(), sprintf('value mismatch for ua "%s"', $ua));
@@ -268,11 +278,6 @@ final class UseragentTest extends TestCase
         );
         self::assertNull(
             $header->getDeviceIsMobile(),
-            sprintf('device info mismatch for ua "%s"', $ua),
-        );
-        self::assertFalse($header->hasDeviceName(), sprintf('device info mismatch for ua "%s"', $ua));
-        self::assertNull(
-            $header->getDeviceName(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
         self::assertTrue($header->hasDeviceCode(), sprintf('device info mismatch for ua "%s"', $ua));
@@ -350,9 +355,6 @@ final class UseragentTest extends TestCase
             ->method('parse')
             ->with($ua)
             ->willReturn($deviceKey);
-        $deviceParser
-            ->expects(self::never())
-            ->method('load');
 
         $platformParser = $this->createMock(PlatformParserInterface::class);
         $platformParser
@@ -360,11 +362,6 @@ final class UseragentTest extends TestCase
             ->method('parse')
             ->with($ua)
             ->willReturn($platformKey);
-        $platformParser
-            ->expects(self::once())
-            ->method('load')
-            ->with($platformKey, $ua)
-            ->willReturn(['version' => $platformVersion]);
 
         $browserParser = $this->createMock(BrowserParserInterface::class);
         $browserParser
@@ -372,11 +369,6 @@ final class UseragentTest extends TestCase
             ->method('parse')
             ->with($ua)
             ->willReturn($clientKey);
-        $browserParser
-            ->expects(self::once())
-            ->method('load')
-            ->with($clientKey, $ua)
-            ->willReturn([['version' => $browserVersion]]);
 
         $engineParser = $this->createMock(EngineParserInterface::class);
         $engineParser
@@ -384,7 +376,23 @@ final class UseragentTest extends TestCase
             ->method('parse')
             ->with($ua)
             ->willReturn($engineKey);
-        $engineParser
+
+        $browserLoader = $this->createMock(BrowserLoaderInterface::class);
+        $browserLoader
+            ->expects(self::once())
+            ->method('load')
+            ->with($clientKey, $ua)
+            ->willReturn([['version' => $browserVersion]]);
+
+        $platformLoader = $this->createMock(PlatformLoaderInterface::class);
+        $platformLoader
+            ->expects(self::once())
+            ->method('load')
+            ->with($platformKey, $ua)
+            ->willReturn(['version' => $platformVersion]);
+
+        $engineLoader = $this->createMock(EngineLoaderInterface::class);
+        $engineLoader
             ->expects(self::once())
             ->method('load')
             ->with($engineKey, $ua)
@@ -399,6 +407,9 @@ final class UseragentTest extends TestCase
             $browserParser,
             $engineParser,
             $normalizerFactory,
+            $browserLoader,
+            $platformLoader,
+            $engineLoader,
         );
 
         self::assertSame($ua, $header->getValue(), sprintf('value mismatch for ua "%s"', $ua));
@@ -429,11 +440,6 @@ final class UseragentTest extends TestCase
         );
         self::assertNull(
             $header->getDeviceIsMobile(),
-            sprintf('device info mismatch for ua "%s"', $ua),
-        );
-        self::assertFalse($header->hasDeviceName(), sprintf('device info mismatch for ua "%s"', $ua));
-        self::assertNull(
-            $header->getDeviceName(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
         self::assertTrue($header->hasDeviceCode(), sprintf('device info mismatch for ua "%s"', $ua));
@@ -514,9 +520,6 @@ final class UseragentTest extends TestCase
             ->method('parse')
             ->with($ua)
             ->willReturn($deviceKey);
-        $deviceParser
-            ->expects(self::never())
-            ->method('load');
 
         $platformParser = $this->createMock(PlatformParserInterface::class);
         $platformParser
@@ -524,11 +527,6 @@ final class UseragentTest extends TestCase
             ->method('parse')
             ->with($ua)
             ->willReturn($platformKey);
-        $platformParser
-            ->expects(self::once())
-            ->method('load')
-            ->with($platformKey, $ua)
-            ->willReturn(['version' => $platformVersion]);
 
         $browserParser = $this->createMock(BrowserParserInterface::class);
         $browserParser
@@ -536,9 +534,6 @@ final class UseragentTest extends TestCase
             ->method('parse')
             ->with($ua)
             ->willThrowException($clientException);
-        $browserParser
-            ->expects(self::never())
-            ->method('load');
 
         $engineParser = $this->createMock(EngineParserInterface::class);
         $engineParser
@@ -546,7 +541,21 @@ final class UseragentTest extends TestCase
             ->method('parse')
             ->with($ua)
             ->willReturn($engineKey);
-        $engineParser
+
+        $browserLoader = $this->createMock(BrowserLoaderInterface::class);
+        $browserLoader
+            ->expects(self::never())
+            ->method('load');
+
+        $platformLoader = $this->createMock(PlatformLoaderInterface::class);
+        $platformLoader
+            ->expects(self::once())
+            ->method('load')
+            ->with($platformKey, $ua)
+            ->willReturn(['version' => $platformVersion]);
+
+        $engineLoader = $this->createMock(EngineLoaderInterface::class);
+        $engineLoader
             ->expects(self::once())
             ->method('load')
             ->with($engineKey, $ua)
@@ -561,6 +570,9 @@ final class UseragentTest extends TestCase
             $browserParser,
             $engineParser,
             $normalizerFactory,
+            $browserLoader,
+            $platformLoader,
+            $engineLoader,
         );
 
         self::assertSame($ua, $header->getValue(), sprintf('value mismatch for ua "%s"', $ua));
@@ -591,11 +603,6 @@ final class UseragentTest extends TestCase
         );
         self::assertNull(
             $header->getDeviceIsMobile(),
-            sprintf('device info mismatch for ua "%s"', $ua),
-        );
-        self::assertFalse($header->hasDeviceName(), sprintf('device info mismatch for ua "%s"', $ua));
-        self::assertNull(
-            $header->getDeviceName(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
         self::assertTrue($header->hasDeviceCode(), sprintf('device info mismatch for ua "%s"', $ua));
@@ -674,9 +681,6 @@ final class UseragentTest extends TestCase
             ->method('parse')
             ->with($ua)
             ->willReturn($deviceKey);
-        $deviceParser
-            ->expects(self::never())
-            ->method('load');
 
         $platformParser = $this->createMock(PlatformParserInterface::class);
         $platformParser
@@ -684,11 +688,6 @@ final class UseragentTest extends TestCase
             ->method('parse')
             ->with($ua)
             ->willReturn($platformKey);
-        $platformParser
-            ->expects(self::once())
-            ->method('load')
-            ->with($platformKey, $ua)
-            ->willReturn(['version' => $platformVersion]);
 
         $browserParser = $this->createMock(BrowserParserInterface::class);
         $browserParser
@@ -696,9 +695,6 @@ final class UseragentTest extends TestCase
             ->method('parse')
             ->with($ua)
             ->willThrowException($clientException);
-        $browserParser
-            ->expects(self::never())
-            ->method('load');
 
         $engineParser = $this->createMock(EngineParserInterface::class);
         $engineParser
@@ -706,7 +702,21 @@ final class UseragentTest extends TestCase
             ->method('parse')
             ->with($ua)
             ->willReturn($engineKey);
-        $engineParser
+
+        $browserLoader = $this->createMock(BrowserLoaderInterface::class);
+        $browserLoader
+            ->expects(self::never())
+            ->method('load');
+
+        $platformLoader = $this->createMock(PlatformLoaderInterface::class);
+        $platformLoader
+            ->expects(self::once())
+            ->method('load')
+            ->with($platformKey, $ua)
+            ->willReturn(['version' => $platformVersion]);
+
+        $engineLoader = $this->createMock(EngineLoaderInterface::class);
+        $engineLoader
             ->expects(self::once())
             ->method('load')
             ->with($engineKey, $ua)
@@ -721,6 +731,9 @@ final class UseragentTest extends TestCase
             $browserParser,
             $engineParser,
             $normalizerFactory,
+            $browserLoader,
+            $platformLoader,
+            $engineLoader,
         );
 
         self::assertSame($ua, $header->getValue(), sprintf('value mismatch for ua "%s"', $ua));
@@ -751,11 +764,6 @@ final class UseragentTest extends TestCase
         );
         self::assertNull(
             $header->getDeviceIsMobile(),
-            sprintf('device info mismatch for ua "%s"', $ua),
-        );
-        self::assertFalse($header->hasDeviceName(), sprintf('device info mismatch for ua "%s"', $ua));
-        self::assertNull(
-            $header->getDeviceName(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
         self::assertTrue($header->hasDeviceCode(), sprintf('device info mismatch for ua "%s"', $ua));
@@ -834,9 +842,6 @@ final class UseragentTest extends TestCase
             ->method('parse')
             ->with($ua)
             ->willReturn($deviceKey);
-        $deviceParser
-            ->expects(self::never())
-            ->method('load');
 
         $platformParser = $this->createMock(PlatformParserInterface::class);
         $platformParser
@@ -844,11 +849,6 @@ final class UseragentTest extends TestCase
             ->method('parse')
             ->with($ua)
             ->willReturn($platformKey);
-        $platformParser
-            ->expects(self::once())
-            ->method('load')
-            ->with($platformKey, $ua)
-            ->willThrowException($platformException);
 
         $browserParser = $this->createMock(BrowserParserInterface::class);
         $browserParser
@@ -856,11 +856,6 @@ final class UseragentTest extends TestCase
             ->method('parse')
             ->with($ua)
             ->willReturn($clientKey);
-        $browserParser
-            ->expects(self::once())
-            ->method('load')
-            ->with($clientKey, $ua)
-            ->willThrowException($clientException);
 
         $engineParser = $this->createMock(EngineParserInterface::class);
         $engineParser
@@ -868,7 +863,23 @@ final class UseragentTest extends TestCase
             ->method('parse')
             ->with($ua)
             ->willReturn($engineKey);
-        $engineParser
+
+        $browserLoader = $this->createMock(BrowserLoaderInterface::class);
+        $browserLoader
+            ->expects(self::once())
+            ->method('load')
+            ->with($clientKey, $ua)
+            ->willThrowException($clientException);
+
+        $platformLoader = $this->createMock(PlatformLoaderInterface::class);
+        $platformLoader
+            ->expects(self::once())
+            ->method('load')
+            ->with($platformKey, $ua)
+            ->willThrowException($platformException);
+
+        $engineLoader = $this->createMock(EngineLoaderInterface::class);
+        $engineLoader
             ->expects(self::once())
             ->method('load')
             ->with($engineKey, $ua)
@@ -883,6 +894,9 @@ final class UseragentTest extends TestCase
             $browserParser,
             $engineParser,
             $normalizerFactory,
+            $browserLoader,
+            $platformLoader,
+            $engineLoader,
         );
 
         self::assertSame($ua, $header->getValue(), sprintf('value mismatch for ua "%s"', $ua));
@@ -913,11 +927,6 @@ final class UseragentTest extends TestCase
         );
         self::assertNull(
             $header->getDeviceIsMobile(),
-            sprintf('device info mismatch for ua "%s"', $ua),
-        );
-        self::assertFalse($header->hasDeviceName(), sprintf('device info mismatch for ua "%s"', $ua));
-        self::assertNull(
-            $header->getDeviceName(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
         self::assertTrue($header->hasDeviceCode(), sprintf('device info mismatch for ua "%s"', $ua));
@@ -995,9 +1004,6 @@ final class UseragentTest extends TestCase
             ->method('parse')
             ->with($ua)
             ->willReturn($deviceKey);
-        $deviceParser
-            ->expects(self::never())
-            ->method('load');
 
         $platformParser = $this->createMock(PlatformParserInterface::class);
         $platformParser
@@ -1005,11 +1011,6 @@ final class UseragentTest extends TestCase
             ->method('parse')
             ->with($ua)
             ->willReturn($platformKey);
-        $platformParser
-            ->expects(self::once())
-            ->method('load')
-            ->with($platformKey, $ua)
-            ->willThrowException($platformException);
 
         $browserParser = $this->createMock(BrowserParserInterface::class);
         $browserParser
@@ -1017,11 +1018,6 @@ final class UseragentTest extends TestCase
             ->method('parse')
             ->with($ua)
             ->willReturn($clientKey);
-        $browserParser
-            ->expects(self::once())
-            ->method('load')
-            ->with($clientKey, $ua)
-            ->willThrowException($clientException);
 
         $engineParser = $this->createMock(EngineParserInterface::class);
         $engineParser
@@ -1029,7 +1025,23 @@ final class UseragentTest extends TestCase
             ->method('parse')
             ->with($ua)
             ->willReturn($engineKey);
-        $engineParser
+
+        $browserLoader = $this->createMock(BrowserLoaderInterface::class);
+        $browserLoader
+            ->expects(self::once())
+            ->method('load')
+            ->with($clientKey, $ua)
+            ->willThrowException($clientException);
+
+        $platformLoader = $this->createMock(PlatformLoaderInterface::class);
+        $platformLoader
+            ->expects(self::once())
+            ->method('load')
+            ->with($platformKey, $ua)
+            ->willThrowException($platformException);
+
+        $engineLoader = $this->createMock(EngineLoaderInterface::class);
+        $engineLoader
             ->expects(self::once())
             ->method('load')
             ->with($engineKey, $ua)
@@ -1044,6 +1056,9 @@ final class UseragentTest extends TestCase
             $browserParser,
             $engineParser,
             $normalizerFactory,
+            $browserLoader,
+            $platformLoader,
+            $engineLoader,
         );
 
         self::assertSame($ua, $header->getValue(), sprintf('value mismatch for ua "%s"', $ua));
@@ -1074,11 +1089,6 @@ final class UseragentTest extends TestCase
         );
         self::assertNull(
             $header->getDeviceIsMobile(),
-            sprintf('device info mismatch for ua "%s"', $ua),
-        );
-        self::assertFalse($header->hasDeviceName(), sprintf('device info mismatch for ua "%s"', $ua));
-        self::assertNull(
-            $header->getDeviceName(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
         self::assertTrue($header->hasDeviceCode(), sprintf('device info mismatch for ua "%s"', $ua));

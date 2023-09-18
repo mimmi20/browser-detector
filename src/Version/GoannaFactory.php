@@ -21,7 +21,7 @@ final class GoannaFactory implements GoannaFactoryInterface
     {
         return new Goanna(
             $logger,
-            new VersionFactory(),
+            new VersionBuilder($logger),
         );
     }
 }

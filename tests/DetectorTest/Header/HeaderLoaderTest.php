@@ -15,6 +15,9 @@ namespace BrowserDetectorTest\Header;
 use BrowserDetector\Constants;
 use BrowserDetector\Header\HeaderInterface;
 use BrowserDetector\Header\HeaderLoader;
+use BrowserDetector\Loader\BrowserLoaderInterface;
+use BrowserDetector\Loader\EngineLoaderInterface;
+use BrowserDetector\Loader\PlatformLoaderInterface;
 use BrowserDetector\NotFoundException;
 use BrowserDetector\Parser\BrowserParserInterface;
 use BrowserDetector\Parser\DeviceParserInterface;
@@ -34,6 +37,9 @@ final class HeaderLoaderTest extends TestCase
         $platformParser    = $this->createMock(PlatformParserInterface::class);
         $browserParser     = $this->createMock(BrowserParserInterface::class);
         $engineParser      = $this->createMock(EngineParserInterface::class);
+        $browserLoader     = $this->createMock(BrowserLoaderInterface::class);
+        $platformLoader    = $this->createMock(PlatformLoaderInterface::class);
+        $engineLoader      = $this->createMock(EngineLoaderInterface::class);
         $normalizerFactory = new NormalizerFactory();
 
         $subject = new HeaderLoader(
@@ -42,6 +48,9 @@ final class HeaderLoaderTest extends TestCase
             $browserParser,
             $engineParser,
             $normalizerFactory,
+            $browserLoader,
+            $platformLoader,
+            $engineLoader,
         );
 
         $this->expectException(NotFoundException::class);
@@ -62,6 +71,9 @@ final class HeaderLoaderTest extends TestCase
         $platformParser    = $this->createMock(PlatformParserInterface::class);
         $browserParser     = $this->createMock(BrowserParserInterface::class);
         $engineParser      = $this->createMock(EngineParserInterface::class);
+        $browserLoader     = $this->createMock(BrowserLoaderInterface::class);
+        $platformLoader    = $this->createMock(PlatformLoaderInterface::class);
+        $engineLoader      = $this->createMock(EngineLoaderInterface::class);
         $normalizerFactory = new NormalizerFactory();
 
         $subject = new HeaderLoader(
@@ -70,6 +82,9 @@ final class HeaderLoaderTest extends TestCase
             $browserParser,
             $engineParser,
             $normalizerFactory,
+            $browserLoader,
+            $platformLoader,
+            $engineLoader,
         );
 
         $header = $subject->load(Constants::HEADER_USERAGENT, $value);
@@ -85,6 +100,9 @@ final class HeaderLoaderTest extends TestCase
         $platformParser    = $this->createMock(PlatformParserInterface::class);
         $browserParser     = $this->createMock(BrowserParserInterface::class);
         $engineParser      = $this->createMock(EngineParserInterface::class);
+        $browserLoader     = $this->createMock(BrowserLoaderInterface::class);
+        $platformLoader    = $this->createMock(PlatformLoaderInterface::class);
+        $engineLoader      = $this->createMock(EngineLoaderInterface::class);
         $normalizerFactory = new NormalizerFactory();
 
         $subject = new HeaderLoader(
@@ -93,6 +111,9 @@ final class HeaderLoaderTest extends TestCase
             $browserParser,
             $engineParser,
             $normalizerFactory,
+            $browserLoader,
+            $platformLoader,
+            $engineLoader,
         );
 
         self::assertTrue($subject->has(Constants::HEADER_USERAGENT));

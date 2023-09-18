@@ -14,17 +14,18 @@ namespace BrowserDetector\Version;
 
 use Psr\Log\LoggerInterface;
 
-use function mb_stripos;
+use function mb_strtolower;
 use function preg_match;
+use function str_contains;
 
-final class WindowsMobileOs implements VersionDetectorInterface
+final class WindowsMobileOs implements VersionFactoryInterface
 {
     public const SEARCHES = ['Windows Mobile', 'Windows Phone'];
 
     /** @throws void */
     public function __construct(
         private readonly LoggerInterface $logger,
-        private readonly VersionFactoryInterface $versionFactory,
+        private readonly VersionBuilderInterface $versionBuilder,
     ) {
         // nothing to do
     }
@@ -37,11 +38,11 @@ final class WindowsMobileOs implements VersionDetectorInterface
     public function detectVersion(string $useragent): VersionInterface
     {
         if (
-            mb_stripos($useragent, 'windows nt 5.1') !== false
+            str_contains(mb_strtolower($useragent), 'windows nt 5.1') !== false
             && !preg_match('/windows mobile|windows phone/i', $useragent)
         ) {
             try {
-                return $this->versionFactory->set('6.0');
+                return $this->versionBuilder->set('6.0');
             } catch (NotNumericException $e) {
                 $this->logger->info($e);
             }
@@ -50,7 +51,7 @@ final class WindowsMobileOs implements VersionDetectorInterface
         }
 
         try {
-            return $this->versionFactory->detectVersion($useragent, self::SEARCHES);
+            return $this->versionBuilder->detectVersion($useragent, self::SEARCHES);
         } catch (NotNumericException $e) {
             $this->logger->info($e);
         }

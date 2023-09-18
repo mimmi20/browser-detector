@@ -16,12 +16,12 @@ use Psr\Log\LoggerInterface;
 
 use function preg_match;
 
-final class Puffin implements VersionDetectorInterface
+final class Puffin implements VersionFactoryInterface
 {
     /** @throws void */
     public function __construct(
         private readonly LoggerInterface $logger,
-        private readonly VersionFactoryInterface $versionFactory,
+        private readonly VersionBuilderInterface $versionBuilder,
     ) {
         // nothing to do
     }
@@ -33,11 +33,9 @@ final class Puffin implements VersionDetectorInterface
      */
     public function detectVersion(string $useragent): VersionInterface
     {
-        if (
-            (bool) preg_match('/(?:Puffin%20Free|Puffin)\/(?P<version>[\d\.]+)/', $useragent, $matches)
-        ) {
+        if (preg_match('/(?:Puffin%20Free|Puffin)\/(?P<version>[\d\.]+)/', $useragent, $matches)) {
             try {
-                return $this->versionFactory->set($matches['version']);
+                return $this->versionBuilder->set($matches['version']);
             } catch (NotNumericException $e) {
                 $this->logger->info($e);
             }

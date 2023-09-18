@@ -16,11 +16,18 @@ use BrowserDetector\Loader\BrowserLoader;
 use BrowserDetector\Loader\CompanyLoaderInterface;
 use BrowserDetector\Loader\Helper\DataInterface;
 use BrowserDetector\Loader\NotFoundException;
+use BrowserDetector\Version\ErrorVersionCreatorFactory;
 use BrowserDetector\Version\TestFactory;
+use BrowserDetector\Version\VersionBuilderFactory;
+use BrowserDetector\Version\VersionBuilderInterface;
+use BrowserDetector\Version\VersionInterface;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
+use Stringable;
+use UaBrowserType\TypeLoaderInterface;
+use UaBrowserType\Unknown;
 use UnexpectedValueException;
 
 use function assert;
@@ -67,19 +74,34 @@ final class BrowserLoaderTest extends TestCase
             ->willReturn(false);
         $initData
             ->expects(self::never())
-            ->method('getItem')
-            ->with('test-key')
-            ->willReturn(false);
+            ->method('getItem');
 
         $companyLoader = $this->createMock(CompanyLoaderInterface::class);
+        $companyLoader
+            ->expects(self::never())
+            ->method('load');
 
-        assert($logger instanceof LoggerInterface);
-        assert($companyLoader instanceof CompanyLoaderInterface);
-        assert($initData instanceof DataInterface);
-        $object = new BrowserLoader($logger, $initData, $companyLoader);
+        $typeLoader = $this->createMock(TypeLoaderInterface::class);
+        $typeLoader
+            ->expects(self::never())
+            ->method('load');
+
+        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
+            ->expects(self::never())
+            ->method('setRegex');
+        $versionBuilder
+            ->expects(self::never())
+            ->method('set');
+        $versionBuilder
+            ->expects(self::never())
+            ->method('detectVersion');
+
+        $object = new BrowserLoader($logger, $initData, $companyLoader, $typeLoader, $versionBuilder);
 
         $this->expectException(NotFoundException::class);
         $this->expectExceptionMessage('the browser with key "test-key" was not found');
+        $this->expectExceptionCode(0);
 
         $object->load('test-key', 'test-ua');
     }
@@ -129,14 +151,31 @@ final class BrowserLoaderTest extends TestCase
             ->willReturn(null);
 
         $companyLoader = $this->createMock(CompanyLoaderInterface::class);
+        $companyLoader
+            ->expects(self::never())
+            ->method('load');
 
-        assert($logger instanceof LoggerInterface);
-        assert($companyLoader instanceof CompanyLoaderInterface);
-        assert($initData instanceof DataInterface);
-        $object = new BrowserLoader($logger, $initData, $companyLoader);
+        $typeLoader = $this->createMock(TypeLoaderInterface::class);
+        $typeLoader
+            ->expects(self::never())
+            ->method('load');
+
+        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
+            ->expects(self::never())
+            ->method('setRegex');
+        $versionBuilder
+            ->expects(self::never())
+            ->method('set');
+        $versionBuilder
+            ->expects(self::never())
+            ->method('detectVersion');
+
+        $object = new BrowserLoader($logger, $initData, $companyLoader, $typeLoader, $versionBuilder);
 
         $this->expectException(NotFoundException::class);
         $this->expectExceptionMessage('the browser with key "test-key" was not found');
+        $this->expectExceptionCode(0);
 
         $object->load('test-key', 'test-ua');
     }
@@ -204,18 +243,42 @@ final class BrowserLoaderTest extends TestCase
             ->with('unknown')
             ->willReturn(['type' => 'unknown']);
 
-        assert($logger instanceof LoggerInterface);
-        assert($companyLoader instanceof CompanyLoaderInterface);
-        assert($initData instanceof DataInterface);
-        $object = new BrowserLoader($logger, $initData, $companyLoader);
+        $typeLoader = $this->createMock(TypeLoaderInterface::class);
+        $typeLoader
+            ->expects(self::once())
+            ->method('load')
+            ->with('unknown')
+            ->willReturn(new Unknown());
+
+        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
+            ->expects(self::never())
+            ->method('setRegex');
+        $versionBuilder
+            ->expects(self::never())
+            ->method('set');
+        $versionBuilder
+            ->expects(self::never())
+            ->method('detectVersion');
+
+        $object = new BrowserLoader($logger, $initData, $companyLoader, $typeLoader, $versionBuilder);
 
         $result = $object->load('test-key', 'test-ua');
 
-        self::assertIsArray($result);
-        self::assertArrayHasKey(0, $result);
-        self::assertIsArray($result[0]);
-        self::assertArrayHasKey(1, $result);
-        self::assertNull($result[1]);
+        $expected = [
+            [
+                'name' => null,
+                'modus' => null,
+                'version' => null,
+                'manufacturer' => 'unknown',
+                'bits' => null,
+                'type' => 'unknown',
+                'isbot' => false,
+            ],
+            null,
+        ];
+
+        self::assertSame($expected, $result);
     }
 
     /**
@@ -263,7 +326,7 @@ final class BrowserLoaderTest extends TestCase
             ->willReturn(true);
 
         $browserData = (object) [
-            'version' => (object) ['class' => 'VersionFactory', 'search' => ['test']],
+            'version' => (object) ['factory' => '\\' . VersionBuilderFactory::class, 'search' => ['test']],
             'manufacturer' => 'unknown',
             'type' => 'unknown',
             'engine' => 'unknown',
@@ -284,18 +347,42 @@ final class BrowserLoaderTest extends TestCase
             ->with('unknown')
             ->willReturn(['type' => 'unknown']);
 
-        assert($logger instanceof LoggerInterface);
-        assert($companyLoader instanceof CompanyLoaderInterface);
-        assert($initData instanceof DataInterface);
-        $object = new BrowserLoader($logger, $initData, $companyLoader);
+        $typeLoader = $this->createMock(TypeLoaderInterface::class);
+        $typeLoader
+            ->expects(self::once())
+            ->method('load')
+            ->with('unknown')
+            ->willReturn(new Unknown());
+
+        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
+            ->expects(self::never())
+            ->method('setRegex');
+        $versionBuilder
+            ->expects(self::never())
+            ->method('set');
+        $versionBuilder
+            ->expects(self::never())
+            ->method('detectVersion');
+
+        $object = new BrowserLoader($logger, $initData, $companyLoader, $typeLoader, $versionBuilder);
 
         $result = $object->load('test-key', 'test/1.0');
 
-        self::assertIsArray($result);
-        self::assertArrayHasKey(0, $result);
-        self::assertIsArray($result[0]);
-        self::assertArrayHasKey(1, $result);
-        self::assertSame('unknown', $result[1]);
+        $expected = [
+            [
+                'name' => null,
+                'modus' => null,
+                'version' => '1.0.0',
+                'manufacturer' => 'unknown',
+                'bits' => null,
+                'type' => 'unknown',
+                'isbot' => false,
+            ],
+            'unknown',
+        ];
+
+        self::assertSame($expected, $result);
     }
 
     /**
@@ -345,7 +432,7 @@ final class BrowserLoaderTest extends TestCase
         $useragent   = 'test/1.0';
         $engineKey   = 'unknown';
         $browserData = (object) [
-            'version' => (object) ['class' => 'VersionFactory', 'search' => ['test']],
+            'version' => (object) ['factory' => '\\' . VersionBuilderFactory::class, 'search' => ['test']],
             'manufacturer' => 'unknown',
             'type' => 'unknown',
             'engine' => $engineKey,
@@ -366,18 +453,42 @@ final class BrowserLoaderTest extends TestCase
             ->with('unknown')
             ->willReturn(['type' => 'unknown']);
 
-        assert($logger instanceof LoggerInterface);
-        assert($companyLoader instanceof CompanyLoaderInterface);
-        assert($initData instanceof DataInterface);
-        $object = new BrowserLoader($logger, $initData, $companyLoader);
+        $typeLoader = $this->createMock(TypeLoaderInterface::class);
+        $typeLoader
+            ->expects(self::once())
+            ->method('load')
+            ->with('unknown')
+            ->willReturn(new Unknown());
+
+        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
+            ->expects(self::never())
+            ->method('setRegex');
+        $versionBuilder
+            ->expects(self::never())
+            ->method('set');
+        $versionBuilder
+            ->expects(self::never())
+            ->method('detectVersion');
+
+        $object = new BrowserLoader($logger, $initData, $companyLoader, $typeLoader, $versionBuilder);
 
         $result = $object->load('test-key', $useragent);
 
-        self::assertIsArray($result);
-        self::assertArrayHasKey(0, $result);
-        self::assertIsArray($result[0]);
-        self::assertArrayHasKey(1, $result);
-        self::assertSame($engineKey, $result[1]);
+        $expected = [
+            [
+                'name' => null,
+                'modus' => null,
+                'version' => '1.0.0',
+                'manufacturer' => 'unknown',
+                'bits' => null,
+                'type' => 'unknown',
+                'isbot' => false,
+            ],
+            'unknown',
+        ];
+
+        self::assertSame($expected, $result);
     }
 
     /**
@@ -443,19 +554,365 @@ final class BrowserLoaderTest extends TestCase
             ->with('unknown')
             ->willReturn(['type' => 'unknown']);
 
-        assert($logger instanceof LoggerInterface);
-        assert($companyLoader instanceof CompanyLoaderInterface);
-        assert($initData instanceof DataInterface);
-        $object = new BrowserLoader($logger, $initData, $companyLoader);
+        $typeLoader = $this->createMock(TypeLoaderInterface::class);
+        $typeLoader
+            ->expects(self::once())
+            ->method('load')
+            ->with('unknown')
+            ->willReturn(new Unknown());
+
+        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
+            ->expects(self::never())
+            ->method('setRegex');
+        $versionBuilder
+            ->expects(self::never())
+            ->method('set');
+        $versionBuilder
+            ->expects(self::never())
+            ->method('detectVersion');
+
+        $object = new BrowserLoader($logger, $initData, $companyLoader, $typeLoader, $versionBuilder);
 
         $result = $object->load('test-key', 'test/1.0');
 
-        self::assertIsArray($result);
-        self::assertArrayHasKey(0, $result);
+        $expected = [
+            [
+                'name' => 'test-browser',
+                'modus' => null,
+                'version' => '1.11.111.1111.11111',
+                'manufacturer' => 'unknown',
+                'bits' => null,
+                'type' => 'unknown',
+                'isbot' => false,
+            ],
+            'unknown',
+        ];
 
-        self::assertIsArray($result[0]);
-        self::assertArrayHasKey(1, $result);
+        self::assertSame($expected, $result);
+    }
 
-        self::assertSame('unknown', $result[1]);
+    /**
+     * @throws ExpectationFailedException
+     * @throws Exception
+     * @throws NotFoundException
+     * @throws UnexpectedValueException
+     */
+    public function testInvokeVersionAndEngineWithException(): void
+    {
+        $exception = new NotFoundException('test');
+
+        $logger = $this->createMock(LoggerInterface::class);
+        $logger
+            ->expects(self::once())
+            ->method('info')
+            ->with($exception, []);
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::never())
+            ->method('warning');
+        $logger
+            ->expects(self::never())
+            ->method('error');
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
+
+        $initData = $this->createMock(DataInterface::class);
+        $initData
+            ->expects(self::once())
+            ->method('__invoke');
+        $initData
+            ->expects(self::once())
+            ->method('hasItem')
+            ->with('test-key')
+            ->willReturn(true);
+
+        $browserData = (object) [
+            'version' => (object) ['factory' => TestFactory::class],
+            'manufacturer' => 'unknown',
+            'type' => 'unknown',
+            'engine' => 'unknown',
+            'name' => 'test-browser',
+            'modus' => null,
+        ];
+
+        $initData
+            ->expects(self::once())
+            ->method('getItem')
+            ->with('test-key')
+            ->willReturn($browserData);
+
+        $companyLoader = $this->createMock(CompanyLoaderInterface::class);
+        $companyLoader
+            ->expects(self::once())
+            ->method('load')
+            ->with('unknown')
+            ->willThrowException($exception);
+
+        $typeLoader = $this->createMock(TypeLoaderInterface::class);
+        $typeLoader
+            ->expects(self::once())
+            ->method('load')
+            ->with('unknown')
+            ->willReturn(new Unknown());
+
+        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
+            ->expects(self::never())
+            ->method('setRegex');
+        $versionBuilder
+            ->expects(self::never())
+            ->method('set');
+        $versionBuilder
+            ->expects(self::never())
+            ->method('detectVersion');
+
+        $object = new BrowserLoader($logger, $initData, $companyLoader, $typeLoader, $versionBuilder);
+
+        $result = $object->load('test-key', 'test/1.0');
+
+        $expected = [
+            [
+                'name' => 'test-browser',
+                'modus' => null,
+                'version' => '1.11.111.1111.11111',
+                'manufacturer' => 'unknown',
+                'bits' => null,
+                'type' => 'unknown',
+                'isbot' => false,
+            ],
+            'unknown',
+        ];
+
+        self::assertSame($expected, $result);
+    }
+
+    /**
+     * @throws ExpectationFailedException
+     * @throws Exception
+     * @throws NotFoundException
+     * @throws UnexpectedValueException
+     */
+    public function testInvokeVersionAndEngineWithException2(): void
+    {
+        $exception = new \UaBrowserType\NotFoundException('test');
+
+        $logger = $this->createMock(LoggerInterface::class);
+        $logger
+            ->expects(self::once())
+            ->method('info')
+            ->with($exception, []);
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::never())
+            ->method('warning');
+        $logger
+            ->expects(self::never())
+            ->method('error');
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
+
+        $initData = $this->createMock(DataInterface::class);
+        $initData
+            ->expects(self::once())
+            ->method('__invoke');
+        $initData
+            ->expects(self::once())
+            ->method('hasItem')
+            ->with('test-key')
+            ->willReturn(true);
+
+        $browserData = (object) [
+            'version' => (object) ['factory' => TestFactory::class],
+            'manufacturer' => 'unknown',
+            'type' => 'unknown',
+            'engine' => 'unknown',
+            'name' => 'test-browser',
+            'modus' => null,
+        ];
+
+        $initData
+            ->expects(self::once())
+            ->method('getItem')
+            ->with('test-key')
+            ->willReturn($browserData);
+
+        $companyLoader = $this->createMock(CompanyLoaderInterface::class);
+        $companyLoader
+            ->expects(self::once())
+            ->method('load')
+            ->with('unknown')
+            ->willReturn(['type' => 'unknown']);
+
+        $typeLoader = $this->createMock(TypeLoaderInterface::class);
+        $typeLoader
+            ->expects(self::once())
+            ->method('load')
+            ->with('unknown')
+            ->willThrowException($exception);
+
+        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
+            ->expects(self::never())
+            ->method('setRegex');
+        $versionBuilder
+            ->expects(self::never())
+            ->method('set');
+        $versionBuilder
+            ->expects(self::never())
+            ->method('detectVersion');
+
+        $object = new BrowserLoader($logger, $initData, $companyLoader, $typeLoader, $versionBuilder);
+
+        $result = $object->load('test-key', 'test/1.0');
+
+        $expected = [
+            [
+                'name' => 'test-browser',
+                'modus' => null,
+                'version' => '1.11.111.1111.11111',
+                'manufacturer' => 'unknown',
+                'bits' => null,
+                'type' => 'unknown',
+                'isbot' => false,
+            ],
+            'unknown',
+        ];
+
+        self::assertSame($expected, $result);
+    }
+
+    /**
+     * @throws ExpectationFailedException
+     * @throws Exception
+     * @throws NotFoundException
+     * @throws UnexpectedValueException
+     */
+    public function testInvokeGenericVersion2(): void
+    {
+        $logger = $this->createMock(LoggerInterface::class);
+        $logger
+            ->expects(self::once())
+            ->method('info')
+            ->willReturnCallback(
+                static function (string | Stringable $message, array $context = []): void {
+                    self::assertInstanceOf(UnexpectedValueException::class, $message);
+                    self::assertSame([], $context);
+
+                    assert($message instanceof UnexpectedValueException);
+
+                    self::assertSame(VersionInterface::COMPLETE . '::[]', $message->getMessage());
+                    self::assertSame(0, $message->getCode());
+                    self::assertNull($message->getPrevious());
+                },
+            );
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::never())
+            ->method('warning');
+        $logger
+            ->expects(self::never())
+            ->method('error');
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
+
+        $initData = $this->createMock(DataInterface::class);
+        $initData
+            ->expects(self::once())
+            ->method('__invoke');
+        $initData
+            ->expects(self::once())
+            ->method('hasItem')
+            ->with('test-key')
+            ->willReturn(true);
+
+        $engineKey   = 'unknown';
+        $browserData = (object) [
+            'version' => (object) ['factory' => '\\' . ErrorVersionCreatorFactory::class, 'search' => 'test'],
+            'manufacturer' => 'xyz',
+            'type' => 'unknown',
+            'engine' => $engineKey,
+            'name' => null,
+            'modus' => null,
+        ];
+
+        $initData
+            ->expects(self::once())
+            ->method('getItem')
+            ->with('test-key')
+            ->willReturn($browserData);
+
+        $company = ['type' => 'xyz-type'];
+
+        $companyLoader = $this->createMock(CompanyLoaderInterface::class);
+        $companyLoader
+            ->expects(self::once())
+            ->method('load')
+            ->with('xyz')
+            ->willReturn($company);
+
+        $typeLoader = $this->createMock(TypeLoaderInterface::class);
+        $typeLoader
+            ->expects(self::once())
+            ->method('load')
+            ->with('unknown')
+            ->willReturn(new Unknown());
+
+        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
+            ->expects(self::never())
+            ->method('setRegex');
+        $versionBuilder
+            ->expects(self::never())
+            ->method('set');
+        $versionBuilder
+            ->expects(self::never())
+            ->method('detectVersion');
+
+        $object = new BrowserLoader($logger, $initData, $companyLoader, $typeLoader, $versionBuilder);
+
+        $result = $object->load('test-key', 'test/3.0');
+
+        $expected = [
+            [
+                'name' => null,
+                'modus' => null,
+                'version' => null,
+                'manufacturer' => 'xyz-type',
+                'bits' => null,
+                'type' => 'unknown',
+                'isbot' => false,
+            ],
+            'unknown',
+        ];
+
+        self::assertSame($expected, $result);
     }
 }

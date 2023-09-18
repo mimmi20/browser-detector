@@ -13,13 +13,20 @@ declare(strict_types = 1);
 namespace BrowserDetector;
 
 use BrowserDetector\Cache\Cache;
+use BrowserDetector\Loader\BrowserLoader;
 use BrowserDetector\Loader\CompanyLoaderFactory;
+use BrowserDetector\Loader\DeviceLoaderFactory;
+use BrowserDetector\Loader\EngineLoader;
+use BrowserDetector\Loader\Helper\Data;
+use BrowserDetector\Loader\PlatformLoader;
 use BrowserDetector\Parser\BrowserParserFactory;
 use BrowserDetector\Parser\DeviceParserFactory;
 use BrowserDetector\Parser\EngineParserFactory;
 use BrowserDetector\Parser\PlatformParserFactory;
+use BrowserDetector\Version\VersionBuilder;
 use Psr\Log\LoggerInterface;
 use Psr\SimpleCache\CacheInterface as PsrCacheInterface;
+use UaBrowserType\TypeLoader;
 use UaNormalizer\NormalizerFactory;
 
 final class DetectorFactory
@@ -40,24 +47,63 @@ final class DetectorFactory
 
             $companyLoader = $companyLoaderFactory();
 
-            $platformParserFactory = new PlatformParserFactory($this->logger, $companyLoader);
-            $platformParser        = $platformParserFactory();
-            $deviceParserFactory   = new DeviceParserFactory($this->logger, $companyLoader);
-            $deviceParser          = $deviceParserFactory();
-            $engineParserFactory   = new EngineParserFactory($this->logger, $companyLoader);
-            $engineParser          = $engineParserFactory();
-            $browserParserFactory  = new BrowserParserFactory($this->logger, $companyLoader);
-            $browserParser         = $browserParserFactory();
-            $normalizerFactory     = new NormalizerFactory();
-
-            $this->detector = new Detector(
+            $platformLoader = new PlatformLoader(
                 $this->logger,
-                new Cache($this->cache),
+                new Data(PlatformLoader::DATA_PATH, 'json'),
+                $companyLoader,
+                new VersionBuilder($this->logger),
+            );
+
+            $platformParserFactory = new PlatformParserFactory($this->logger);
+            $platformParser        = $platformParserFactory();
+
+            $deviceLoaderFactory = new DeviceLoaderFactory($this->logger, $companyLoader);
+
+            $deviceParserFactory = new DeviceParserFactory($this->logger);
+            $deviceParser        = $deviceParserFactory();
+
+            $engineLoader = new EngineLoader(
+                $this->logger,
+                new Data(EngineLoader::DATA_PATH, 'json'),
+                $companyLoader,
+                new VersionBuilder($this->logger),
+            );
+
+            $engineParserFactory = new EngineParserFactory($this->logger);
+            $engineParser        = $engineParserFactory();
+
+            $browserLoader = new BrowserLoader(
+                $this->logger,
+                new Data(BrowserLoader::DATA_PATH, 'json'),
+                $companyLoader,
+                new TypeLoader(),
+                new VersionBuilder($this->logger),
+            );
+
+            $browserParserFactory = new BrowserParserFactory($this->logger);
+            $browserParser        = $browserParserFactory();
+
+            $normalizerFactory = new NormalizerFactory();
+
+            $requestBuilder = new RequestBuilder(
                 $deviceParser,
                 $platformParser,
                 $browserParser,
                 $engineParser,
                 $normalizerFactory,
+                $browserLoader,
+                $platformLoader,
+                $engineLoader,
+            );
+
+            $this->detector = new Detector(
+                $this->logger,
+                new Cache($this->cache),
+                $requestBuilder,
+                $deviceLoaderFactory,
+                $platformLoader,
+                $browserLoader,
+                $engineLoader,
             );
         }
 

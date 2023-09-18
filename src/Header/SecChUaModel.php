@@ -19,13 +19,13 @@ final class SecChUaModel implements HeaderInterface
     use HeaderTrait;
 
     /** @throws void */
-    public function hasDeviceName(): bool
+    public function hasDeviceCode(): bool
     {
         return true;
     }
 
     /** @throws void */
-    public function getDeviceName(): string | null
+    public function getDeviceCode(): string | null
     {
         $value = trim($this->value, '"');
 

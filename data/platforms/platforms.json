@@ -13,7 +13,7 @@
     "marketingName": "AIX",
     "manufacturer": "ibm",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "AIX"
       ]
@@ -24,7 +24,7 @@
     "marketingName": "Amiga OS",
     "manufacturer": "unknown",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "AmigaOS"
       ]
@@ -53,7 +53,7 @@
     "marketingName": "Ark Linux",
     "manufacturer": "unknown",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Ark Linux"
       ]
@@ -100,7 +100,7 @@
     "marketingName": "Bada",
     "manufacturer": "samsung",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Bada"
       ]
@@ -111,7 +111,7 @@
     "marketingName": "BeOS",
     "manufacturer": "access",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "BeOS"
       ]
@@ -122,7 +122,7 @@
     "marketingName": "Brew",
     "manufacturer": "unknown",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "BREW; U;",
         "BREW;?"
@@ -134,7 +134,7 @@
     "marketingName": "BSD",
     "manufacturer": "berkley-university",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "BSD"
       ]
@@ -163,7 +163,7 @@
     "marketingName": "COS",
     "manufacturer": "unknown",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "COS like Android",
         "Chinese Operating System"
@@ -193,7 +193,7 @@
     "marketingName": "CyanogenMod",
     "manufacturer": "unknown",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "CyanogenMod"
       ]
@@ -222,7 +222,7 @@
     "marketingName": "Darwin",
     "manufacturer": "apple",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Darwin"
       ]
@@ -251,7 +251,7 @@
     "marketingName": "DragonFly BSD",
     "manufacturer": "unknown",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "DragonFly"
       ]
@@ -280,7 +280,7 @@
     "marketingName": "FreeBSD",
     "manufacturer": "free-bsd-foundation",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "FreeBSD",
         "freebsd"
@@ -364,7 +364,7 @@
     "marketingName": "Joli OS",
     "manufacturer": "unknown",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Joli OS"
       ]
@@ -375,7 +375,7 @@
     "marketingName": "kaios",
     "manufacturer": "kaios",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "kaios"
       ]
@@ -395,7 +395,7 @@
     "marketingName": "Kubuntu",
     "manufacturer": "canonical",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Kubuntu",
         "kubuntu"
@@ -407,7 +407,7 @@
     "marketingName": "Liberate",
     "manufacturer": "unknown",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Liberate"
       ]
@@ -427,7 +427,7 @@
     "marketingName": "Linux Mint",
     "manufacturer": "unknown",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Mint",
         "mint"
@@ -448,7 +448,7 @@
     "marketingName": "Macintosh",
     "manufacturer": "apple",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Macintosh"
       ]
@@ -459,7 +459,7 @@
     "marketingName": "Maemo",
     "manufacturer": "linux-foundation",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Maemo"
       ]
@@ -479,7 +479,7 @@
     "marketingName": "MeeGo",
     "manufacturer": "linux-foundation",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "MeeGo"
       ]
@@ -490,7 +490,7 @@
     "marketingName": "Miui OS",
     "manufacturer": "xiaomi",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "MIUI\\/V",
         "MIUI"
@@ -511,7 +511,7 @@
     "marketingName": "MocorDroid",
     "manufacturer": "unknown",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "MocorDroid"
       ]
@@ -531,7 +531,7 @@
     "marketingName": "MAUI Runtime Environment",
     "manufacturer": "mediatek",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "MRE\\\\",
         "MRE"
@@ -543,7 +543,7 @@
     "marketingName": "NetBSD",
     "manufacturer": "unknown",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "NetBSD"
       ]
@@ -590,7 +590,7 @@
     "marketingName": "Nucleus",
     "manufacturer": "accelerated-technology",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Nucleus"
       ]
@@ -601,7 +601,7 @@
     "marketingName": "OpenBSD",
     "manufacturer": "unknown",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "OpenBSD"
       ]
@@ -621,7 +621,7 @@
     "marketingName": "OpenSolaris",
     "manufacturer": "oracle",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "OpenSolaris"
       ]
@@ -632,7 +632,7 @@
     "marketingName": "OpenVMS",
     "manufacturer": "hp",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "OpenVMS"
       ]
@@ -643,7 +643,7 @@
     "marketingName": "OS/2",
     "manufacturer": "ibm",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "OS\\/2",
         "Warp"
@@ -655,7 +655,7 @@
     "marketingName": "PalmOS",
     "manufacturer": "palm",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "PalmOS"
       ]
@@ -666,7 +666,7 @@
     "marketingName": "Qtopia",
     "manufacturer": "trolltech",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Qtopia"
       ]
@@ -695,7 +695,7 @@
     "marketingName": "Remix OS",
     "manufacturer": "jide",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "RemixOS"
       ]
@@ -715,7 +715,7 @@
     "marketingName": "RIM Tablet OS",
     "manufacturer": "rim",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "RIM Tablet OS"
       ]
@@ -726,7 +726,7 @@
     "marketingName": "RISC OS",
     "manufacturer": "unknown",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "RISC"
       ]
@@ -782,7 +782,7 @@
     "marketingName": "Slackware Linux",
     "manufacturer": "slackware",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Slackware"
       ]
@@ -793,7 +793,7 @@
     "marketingName": "Solaris",
     "manufacturer": "oracle",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Solaris"
       ]
@@ -804,7 +804,7 @@
     "marketingName": "StartOS",
     "manufacturer": "ylmf",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "StartOS"
       ]
@@ -815,7 +815,7 @@
     "marketingName": "SunOS",
     "manufacturer": "oracle",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "SunOS"
       ]
@@ -862,7 +862,7 @@
     "marketingName": "Tizen",
     "manufacturer": "linux-foundation",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Tizen"
       ]
@@ -873,7 +873,7 @@
     "marketingName": "Tru64 UNIX",
     "manufacturer": "hp",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Tru64 UNIX",
         "Digital Unix"
@@ -885,7 +885,7 @@
     "marketingName": "Ubuntu",
     "manufacturer": "canonical",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Ubuntu",
         "ubuntu"
@@ -897,7 +897,7 @@
     "marketingName": "Unix",
     "manufacturer": "unknown",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Unix"
       ]
@@ -908,7 +908,7 @@
     "marketingName": "Ventana Linux",
     "manufacturer": "ventana",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Ventana Linux",
         "Ventana"
@@ -929,7 +929,7 @@
     "marketingName": "webOS",
     "manufacturer": "lg",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Web0S"
       ]
@@ -940,7 +940,7 @@
     "marketingName": "webOS",
     "manufacturer": "hp",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "WebOS",
         "webOS",
@@ -1309,7 +1309,7 @@
     "marketingName": "WyderOS",
     "manufacturer": "unknown",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "WyderOS"
       ]
@@ -1320,7 +1320,7 @@
     "marketingName": "Xubuntu",
     "manufacturer": "canonical",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Xubuntu",
         "xubuntu"
@@ -1332,7 +1332,7 @@
     "marketingName": "Yi",
     "manufacturer": "baidu",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Yi"
       ]
@@ -1343,7 +1343,7 @@
     "marketingName": "Yun OS",
     "manufacturer": "alibaba",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "YunOs",
         "AliyunOS"
@@ -1364,7 +1364,7 @@
     "marketingName": "HarmonyOS",
     "manufacturer": "unknown",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "HarmonyOS"
       ]

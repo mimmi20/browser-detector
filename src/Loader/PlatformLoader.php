@@ -14,7 +14,7 @@ namespace BrowserDetector\Loader;
 
 use BrowserDetector\Bits\Os;
 use BrowserDetector\Loader\Helper\DataInterface;
-use BrowserDetector\Version\VersionFactory;
+use BrowserDetector\Version\VersionBuilderInterface;
 use BrowserDetector\Version\VersionInterface;
 use Psr\Log\LoggerInterface;
 use stdClass;
@@ -35,8 +35,9 @@ final class PlatformLoader implements PlatformLoaderInterface
         private readonly LoggerInterface $logger,
         private readonly DataInterface $initData,
         private readonly CompanyLoaderInterface $companyLoader,
+        VersionBuilderInterface $versionBuilder,
     ) {
-        $this->versionFactory = new VersionFactory();
+        $this->versionBuilder = $versionBuilder;
 
         $initData();
     }
@@ -45,7 +46,6 @@ final class PlatformLoader implements PlatformLoaderInterface
      * @return array{name: string|null, marketingName: string|null, version: string|null, manufacturer: string, bits: int|null}
      *
      * @throws NotFoundException
-     * @throws UnexpectedValueException
      */
     public function load(string $key, string $useragent = ''): array
     {
@@ -72,10 +72,9 @@ final class PlatformLoader implements PlatformLoaderInterface
      *
      * @return array{name: string|null, marketingName: string|null, version: string|null, manufacturer: string, bits: int|null}
      *
-     * @throws NotFoundException
-     * @throws UnexpectedValueException
+     * @throws void
      */
-    public function fromArray(array $data, string $useragent): array
+    private function fromArray(array $data, string $useragent): array
     {
         assert(array_key_exists('name', $data), '"name" property is required');
         assert(array_key_exists('marketingName', $data), '"marketingName" property is required');
@@ -97,27 +96,39 @@ final class PlatformLoader implements PlatformLoaderInterface
 
         $version = $this->getVersion($data['version'], $useragent, $this->logger);
 
-        if ($version->getVersion(VersionInterface::IGNORE_MICRO) !== null) {
-            if (
-                $name === 'Mac OS X'
-                && version_compare($version->getVersion(VersionInterface::IGNORE_MICRO), '10.12', '>=')
-            ) {
-                $name          = 'macOS';
-                $marketingName = 'macOS';
-            } elseif (
-                $name === 'iOS'
-                && version_compare($version->getVersion(VersionInterface::IGNORE_MICRO), '4.0', '<')
-                && version_compare($version->getVersion(VersionInterface::IGNORE_MICRO), '0.0', '>')
-            ) {
-                $name          = 'iPhone OS';
-                $marketingName = 'iPhone OS';
+        try {
+            if ($version->getVersion(VersionInterface::IGNORE_MICRO) !== null) {
+                if (
+                    $name === 'Mac OS X'
+                    && version_compare(
+                        $version->getVersion(VersionInterface::IGNORE_MICRO),
+                        '10.12',
+                        '>=',
+                    )
+                ) {
+                    $name          = 'macOS';
+                    $marketingName = 'macOS';
+                } elseif (
+                    $name === 'iOS'
+                    && version_compare($version->getVersion(VersionInterface::IGNORE_MICRO), '4.0', '<')
+                    && version_compare($version->getVersion(VersionInterface::IGNORE_MICRO), '0.0', '>')
+                ) {
+                    $name          = 'iPhone OS';
+                    $marketingName = 'iPhone OS';
+                }
             }
+
+            $versionString = $version->getVersion();
+        } catch (UnexpectedValueException $e) {
+            $this->logger->info($e);
+
+            $versionString = null;
         }
 
         return [
             'name' => $name,
             'marketingName' => $marketingName,
-            'version' => $version->getVersion(),
+            'version' => $versionString,
             'manufacturer' => $manufacturer['type'],
             'bits' => $bits,
         ];

@@ -64,8 +64,12 @@ final class XUcbrowserUa implements HeaderInterface
         return (bool) preg_match('/pr\([^\/]+\/[\d.]+\);/', $this->value);
     }
 
-    /** @throws void */
-    public function getClientVersion(): string | null
+    /**
+     * @throws void
+     *
+     * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+     */
+    public function getClientVersion(string | null $code = null): string | null
     {
         $matches = [];
 

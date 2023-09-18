@@ -21,7 +21,7 @@ final class FriendicaFactory implements FriendicaFactoryInterface
     {
         return new Friendica(
             $logger,
-            new VersionFactory(),
+            new VersionBuilder($logger),
         );
     }
 }

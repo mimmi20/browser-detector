@@ -14,7 +14,7 @@ namespace BrowserDetector\Version;
 
 use UnexpectedValueException;
 
-final class TestError implements VersionDetectorInterface
+final class TestError implements VersionFactoryInterface
 {
     /**
      * returns the version of the operating system/platform

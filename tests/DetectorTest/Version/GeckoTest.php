@@ -15,7 +15,8 @@ namespace BrowserDetectorTest\Version;
 use BrowserDetector\Version\Gecko;
 use BrowserDetector\Version\NotNumericException;
 use BrowserDetector\Version\NullVersion;
-use BrowserDetector\Version\VersionFactory;
+use BrowserDetector\Version\VersionBuilder;
+use BrowserDetector\Version\VersionBuilderInterface;
 use BrowserDetector\Version\VersionFactoryInterface;
 use BrowserDetector\Version\VersionInterface;
 use PHPUnit\Framework\Attributes\DataProvider;
@@ -63,7 +64,7 @@ final class GeckoTest extends TestCase
             ->method('emergency');
 
         assert($logger instanceof LoggerInterface);
-        $object = new Gecko($logger, new VersionFactory());
+        $object = new Gecko($logger, new VersionBuilder($logger));
 
         $detectedVersion = $object->detectVersion($useragent);
 
@@ -72,7 +73,7 @@ final class GeckoTest extends TestCase
     }
 
     /**
-     * @return array<int, array<int, string>>
+     * @return array<int, array<int, string|null>>
      *
      * @throws void
      */
@@ -90,6 +91,34 @@ final class GeckoTest extends TestCase
             [
                 'Mozilla/5.0 (Android 13; Mobile; rv:0.0) Gecko/20100101.0 Firefox/115.0',
                 '0.0.0',
+            ],
+            [
+                'Mozilla/5.0 (Windows NT 10.0; RV:69.0) Gecko/20100101 Firefox/69.0 anonymized by Abelssoft 1855802700 Herring/100.1.6180.81',
+                '69.0.0',
+            ],
+            [
+                'Mozilla/5.0 (Android 13; Mobile; RV:109.0) Gecko/115.0 Firefox/115.0',
+                '115.0.0',
+            ],
+            [
+                'Mozilla/5.0 (Android 13; Mobile; RV:0.0) Gecko/20100101.0 Firefox/115.0',
+                '0.0.0',
+            ],
+            [
+                'Mozilla/5.0 (Windows NT 10.0; RV:69.0) Gecko/20100101 Firefox69.0 anonymized by Abelssoft 1855802700 Herring/100.1.6180.81',
+                '69.0.0',
+            ],
+            [
+                'Mozilla/5.0 (Windows NT 10.0; RV:69.0) Gecko20100101 Firefox/69.0 anonymized by Abelssoft 1855802700 Herring/100.1.6180.81',
+                null,
+            ],
+            [
+                'Mozilla/5.0 (Android 13; Mobile; RV:109.0) Gecko115.0 Firefox/115.0',
+                null,
+            ],
+            [
+                'Mozilla/5.0 (Android 13; Mobile; RV:109.0) Gecko/115.0 Firefox115.0',
+                '109.0.0',
             ],
         ];
     }
@@ -129,16 +158,16 @@ final class GeckoTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $versionFactory = $this->createMock(VersionFactoryInterface::class);
-        $versionFactory
+        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
             ->expects(self::once())
             ->method('set')
             ->with('69.0')
             ->willThrowException($exception);
 
         assert($logger instanceof LoggerInterface);
-        assert($versionFactory instanceof VersionFactoryInterface);
-        $object = new Gecko($logger, $versionFactory);
+        assert($versionBuilder instanceof VersionFactoryInterface);
+        $object = new Gecko($logger, $versionBuilder);
 
         $detectedVersion = $object->detectVersion($useragent);
 
@@ -182,16 +211,16 @@ final class GeckoTest extends TestCase
             ->expects(self::never())
             ->method('emergency');
 
-        $versionFactory = $this->createMock(VersionFactoryInterface::class);
-        $versionFactory
+        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
             ->expects(self::once())
             ->method('set')
             ->with('115.0')
             ->willThrowException($exception);
 
         assert($logger instanceof LoggerInterface);
-        assert($versionFactory instanceof VersionFactoryInterface);
-        $object = new Gecko($logger, $versionFactory);
+        assert($versionBuilder instanceof VersionFactoryInterface);
+        $object = new Gecko($logger, $versionBuilder);
 
         $detectedVersion = $object->detectVersion($useragent);
 

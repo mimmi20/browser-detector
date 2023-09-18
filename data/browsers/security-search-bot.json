@@ -4,7 +4,7 @@
     "manufacturer": "riddler",
     "type": "security-search-bot",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Riddler"
       ]

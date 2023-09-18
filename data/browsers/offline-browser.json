@@ -4,7 +4,7 @@
     "manufacturer": "xavier-roche",
     "type": "offline-browser",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "HTTrack"
       ]

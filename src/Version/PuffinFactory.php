@@ -21,7 +21,7 @@ final class PuffinFactory implements PuffinFactoryInterface
     {
         return new Puffin(
             $logger,
-            new VersionFactory(),
+            new VersionBuilder($logger),
         );
     }
 }

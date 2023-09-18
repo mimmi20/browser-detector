@@ -12,6 +12,7 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Header;
 
+use function array_key_first;
 use function current;
 use function key;
 use function mb_strtolower;
@@ -37,14 +38,7 @@ final class SecChUa implements HeaderInterface
             return null;
         }
 
-        $code    = reset($list);
-        $version = current($list);
-        $key     = key($list);
-
-        if ($code === false || $version === false || $key === null) {
-            return null;
-        }
-
+        $key  = array_key_first($list);
         $code = mb_strtolower($key);
 
         if ($code === 'chromium') {
@@ -57,7 +51,7 @@ final class SecChUa implements HeaderInterface
             'yandex' => 'yabrowser',
             'microsoft edge' => 'edge mobile',
             'google chrome' => 'chrome',
-            'chromium', 'opera', 'atom', 'opera gx', 'avast secure browser', 'ccleaner browser' => $code,
+            'opera', 'atom', 'opera gx', 'avast secure browser', 'ccleaner browser' => $code,
             default => null,
         };
     }
@@ -69,7 +63,7 @@ final class SecChUa implements HeaderInterface
     }
 
     /** @throws void */
-    public function getClientVersion(): string | null
+    public function getClientVersion(string | null $code = null): string | null
     {
         $list = $this->sort();
 
@@ -77,13 +71,9 @@ final class SecChUa implements HeaderInterface
             return null;
         }
 
-        $code    = reset($list);
+        reset($list);
         $version = current($list);
         $key     = key($list);
-
-        if ($code === false || $version === false || $key === null) {
-            return null;
-        }
 
         $code = mb_strtolower($key);
 

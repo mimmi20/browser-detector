@@ -232,7 +232,7 @@ jobs:
       - name: "Run mutation tests with infection/infection"
         env:
           STRYKER_DASHBOARD_API_KEY: ${{ secrets.STRYKER_DASHBOARD_API_KEY }}
-        run: "vendor/bin/infection --show-mutations --only-covered --min-covered-msi=84 --min-msi=84 --coverage=.build/coverage --logger-github --no-progress -vv"
+        run: "vendor/bin/infection --show-mutations --only-covered --min-covered-msi=89 --min-msi=89 --coverage=.build/coverage --logger-github --no-progress -vv"
 
   integration-tests:
     name: "Integration Tests with PHPUnit"

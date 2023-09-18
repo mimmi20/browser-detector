@@ -14,6 +14,9 @@ namespace BrowserDetectorTest;
 
 use BrowserDetector\GenericRequestInterface;
 use BrowserDetector\Header\HeaderInterface;
+use BrowserDetector\Loader\BrowserLoaderInterface;
+use BrowserDetector\Loader\EngineLoaderInterface;
+use BrowserDetector\Loader\PlatformLoaderInterface;
 use BrowserDetector\Parser\BrowserParserInterface;
 use BrowserDetector\Parser\DeviceParserInterface;
 use BrowserDetector\Parser\EngineParserInterface;
@@ -42,6 +45,9 @@ final class RequestBuilderTest extends TestCase
         $platformParser    = $this->createMock(PlatformParserInterface::class);
         $browserParser     = $this->createMock(BrowserParserInterface::class);
         $engineParser      = $this->createMock(EngineParserInterface::class);
+        $browserLoader     = $this->createMock(BrowserLoaderInterface::class);
+        $platformLoader    = $this->createMock(PlatformLoaderInterface::class);
+        $engineLoader      = $this->createMock(EngineLoaderInterface::class);
         $normalizerFactory = new NormalizerFactory();
 
         $object = new RequestBuilder(
@@ -50,6 +56,9 @@ final class RequestBuilderTest extends TestCase
             $browserParser,
             $engineParser,
             $normalizerFactory,
+            $browserLoader,
+            $platformLoader,
+            $engineLoader,
         );
 
         $result = $object->buildRequest($useragent);
@@ -78,6 +87,9 @@ final class RequestBuilderTest extends TestCase
         $platformParser    = $this->createMock(PlatformParserInterface::class);
         $browserParser     = $this->createMock(BrowserParserInterface::class);
         $engineParser      = $this->createMock(EngineParserInterface::class);
+        $browserLoader     = $this->createMock(BrowserLoaderInterface::class);
+        $platformLoader    = $this->createMock(PlatformLoaderInterface::class);
+        $engineLoader      = $this->createMock(EngineLoaderInterface::class);
         $normalizerFactory = new NormalizerFactory();
 
         $object = new RequestBuilder(
@@ -86,6 +98,9 @@ final class RequestBuilderTest extends TestCase
             $browserParser,
             $engineParser,
             $normalizerFactory,
+            $browserLoader,
+            $platformLoader,
+            $engineLoader,
         );
 
         $result = $object->buildRequest(
@@ -119,6 +134,9 @@ final class RequestBuilderTest extends TestCase
         $platformParser    = $this->createMock(PlatformParserInterface::class);
         $browserParser     = $this->createMock(BrowserParserInterface::class);
         $engineParser      = $this->createMock(EngineParserInterface::class);
+        $browserLoader     = $this->createMock(BrowserLoaderInterface::class);
+        $platformLoader    = $this->createMock(PlatformLoaderInterface::class);
+        $engineLoader      = $this->createMock(EngineLoaderInterface::class);
         $normalizerFactory = new NormalizerFactory();
 
         $object = new RequestBuilder(
@@ -127,6 +145,9 @@ final class RequestBuilderTest extends TestCase
             $browserParser,
             $engineParser,
             $normalizerFactory,
+            $browserLoader,
+            $platformLoader,
+            $engineLoader,
         );
 
         $message = ServerRequestFactory::fromGlobals(
@@ -160,6 +181,9 @@ final class RequestBuilderTest extends TestCase
         $platformParser    = $this->createMock(PlatformParserInterface::class);
         $browserParser     = $this->createMock(BrowserParserInterface::class);
         $engineParser      = $this->createMock(EngineParserInterface::class);
+        $browserLoader     = $this->createMock(BrowserLoaderInterface::class);
+        $platformLoader    = $this->createMock(PlatformLoaderInterface::class);
+        $engineLoader      = $this->createMock(EngineLoaderInterface::class);
         $normalizerFactory = new NormalizerFactory();
 
         $object = new RequestBuilder(
@@ -168,6 +192,9 @@ final class RequestBuilderTest extends TestCase
             $browserParser,
             $engineParser,
             $normalizerFactory,
+            $browserLoader,
+            $platformLoader,
+            $engineLoader,
         );
 
         $request = new class () implements GenericRequestInterface {

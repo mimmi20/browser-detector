@@ -13,6 +13,9 @@ declare(strict_types = 1);
 namespace BrowserDetector;
 
 use BrowserDetector\Header\HeaderLoader;
+use BrowserDetector\Loader\BrowserLoaderInterface;
+use BrowserDetector\Loader\EngineLoaderInterface;
+use BrowserDetector\Loader\PlatformLoaderInterface;
 use BrowserDetector\Parser\BrowserParserInterface;
 use BrowserDetector\Parser\DeviceParserInterface;
 use BrowserDetector\Parser\EngineParserInterface;
@@ -26,9 +29,8 @@ use function array_change_key_case;
 use function array_filter;
 use function is_array;
 use function is_string;
-use function mb_strpos;
-use function mb_strtoupper;
 use function preg_replace;
+use function str_starts_with;
 
 use const ARRAY_FILTER_USE_BOTH;
 use const CASE_UPPER;
@@ -42,6 +44,9 @@ final class RequestBuilder implements RequestBuilderInterface
         private readonly BrowserParserInterface $browserParser,
         private readonly EngineParserInterface $engineParser,
         private readonly NormalizerFactory $normalizerFactory,
+        private readonly BrowserLoaderInterface $browserLoader,
+        private readonly PlatformLoaderInterface $platformLoader,
+        private readonly EngineLoaderInterface $engineLoader,
     ) {
         // nothing to do
     }
@@ -102,10 +107,8 @@ final class RequestBuilder implements RequestBuilderInterface
 
         $headers = [];
 
-        foreach (array_change_key_case($filteredHeaders, CASE_UPPER) as $header => $value) {
-            $upperCaseHeader = mb_strtoupper($header);
-
-            if (mb_strpos($upperCaseHeader, 'HTTP_') === false) {
+        foreach (array_change_key_case($filteredHeaders, CASE_UPPER) as $upperCaseHeader => $value) {
+            if (!str_starts_with($upperCaseHeader, 'HTTP_')) {
                 $upperCaseHeader = 'HTTP_' . $upperCaseHeader;
             }
 
@@ -136,6 +139,9 @@ final class RequestBuilder implements RequestBuilderInterface
                 $this->browserParser,
                 $this->engineParser,
                 $this->normalizerFactory,
+                $this->browserLoader,
+                $this->platformLoader,
+                $this->engineLoader,
             ),
         );
     }

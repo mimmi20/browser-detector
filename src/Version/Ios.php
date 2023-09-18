@@ -12,17 +12,17 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Version;
 
-use IosBuild\BuildException;
 use IosBuild\IosBuildInterface;
 use IosBuild\NotFoundException;
 use Psr\Log\LoggerInterface;
 use UnexpectedValueException;
 
 use function array_key_exists;
-use function mb_stripos;
+use function mb_strtolower;
 use function preg_match;
+use function str_contains;
 
-final class Ios implements VersionDetectorInterface
+final class Ios implements VersionFactoryInterface
 {
     public const SEARCHES = [
         'IphoneOSX',
@@ -238,7 +238,7 @@ final class Ios implements VersionDetectorInterface
     /** @throws void */
     public function __construct(
         private readonly LoggerInterface $logger,
-        private readonly VersionFactoryInterface $versionFactory,
+        private readonly VersionBuilderInterface $versionBuilder,
         private readonly IosBuildInterface $iosBuild,
     ) {
         // nothing to do
@@ -255,7 +255,7 @@ final class Ios implements VersionDetectorInterface
 
         if ($doMatch) {
             try {
-                return $this->versionFactory->set('1.0');
+                return $this->versionBuilder->set('1.0');
             } catch (NotNumericException $e) {
                 $this->logger->info($e);
 
@@ -268,13 +268,13 @@ final class Ios implements VersionDetectorInterface
         if ($doMatch) {
             try {
                 $buildVersion = $this->iosBuild->getVersion($matches['build']);
-            } catch (BuildException | NotFoundException $e) {
+            } catch (NotFoundException) {
                 $buildVersion = false;
             }
 
             if ($buildVersion !== false) {
                 try {
-                    return $this->versionFactory->set($buildVersion);
+                    return $this->versionBuilder->set($buildVersion);
                 } catch (NotNumericException $e) {
                     $this->logger->info($e);
 
@@ -292,13 +292,13 @@ final class Ios implements VersionDetectorInterface
         if ($doMatch) {
             try {
                 $buildVersion = $this->iosBuild->getVersion($matches['build']);
-            } catch (BuildException | NotFoundException $e) {
+            } catch (NotFoundException) {
                 $buildVersion = false;
             }
 
             if ($buildVersion !== false) {
                 try {
-                    return $this->versionFactory->set($buildVersion);
+                    return $this->versionBuilder->set($buildVersion);
                 } catch (NotNumericException $e) {
                     $this->logger->info($e);
 
@@ -307,14 +307,14 @@ final class Ios implements VersionDetectorInterface
             }
         }
 
-        if (mb_stripos($useragent, 'darwin') !== false) {
+        if (str_contains(mb_strtolower($useragent), 'darwin')) {
             foreach (self::DARWIN_MAP as $rule => $version) {
                 if (!preg_match($rule, $useragent)) {
                     continue;
                 }
 
                 try {
-                    return $this->versionFactory->set($version);
+                    return $this->versionBuilder->set($version);
                 } catch (NotNumericException $e) {
                     $this->logger->info($e);
 
@@ -331,7 +331,7 @@ final class Ios implements VersionDetectorInterface
 
         if ($doMatch && array_key_exists($matches['build'], self::BUILD_MAP)) {
             try {
-                return $this->versionFactory->set(self::BUILD_MAP[$matches['build']]);
+                return $this->versionBuilder->set(self::BUILD_MAP[$matches['build']]);
             } catch (NotNumericException $e) {
                 $this->logger->info($e);
 
@@ -348,13 +348,13 @@ final class Ios implements VersionDetectorInterface
         if ($doMatch) {
             try {
                 $buildVersion = $this->iosBuild->getVersion($matches['build']);
-            } catch (BuildException | NotFoundException $e) {
+            } catch (NotFoundException) {
                 $buildVersion = false;
             }
 
             if ($buildVersion !== false) {
                 try {
-                    return $this->versionFactory->set($buildVersion);
+                    return $this->versionBuilder->set($buildVersion);
                 } catch (NotNumericException $e) {
                     $this->logger->info($e);
 
@@ -364,7 +364,7 @@ final class Ios implements VersionDetectorInterface
         }
 
         try {
-            $detectedVersion = $this->versionFactory->detectVersion($useragent, self::SEARCHES);
+            $detectedVersion = $this->versionBuilder->detectVersion($useragent, self::SEARCHES);
         } catch (NotNumericException $e) {
             $this->logger->info($e);
 
@@ -373,7 +373,7 @@ final class Ios implements VersionDetectorInterface
 
         if ($detectedVersion->getVersion(VersionInterface::IGNORE_MICRO) === '10.10') {
             try {
-                return $this->versionFactory->set('8.0.0');
+                return $this->versionBuilder->set('8.0.0');
             } catch (NotNumericException $e) {
                 $this->logger->info($e);
 

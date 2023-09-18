@@ -14,7 +14,7 @@
     "manufacturer": "microsoft",
     "type": "service-agent",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "SkypeUriPreview",
         "Preview"
@@ -37,7 +37,7 @@
     "manufacturer": "discord",
     "type": "service-agent",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Discordbot"
       ]
@@ -49,7 +49,7 @@
     "manufacturer": "wordpress",
     "type": "service-agent",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "WordPress",
         "WordPress\\-B\\-",

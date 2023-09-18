@@ -17,7 +17,7 @@ use Psr\Log\LoggerInterface;
 use function preg_match;
 use function version_compare;
 
-final class FirefoxOs implements VersionDetectorInterface
+final class FirefoxOs implements VersionFactoryInterface
 {
     private const SEARCHES = [
         '44.0' => '2.5',
@@ -34,7 +34,7 @@ final class FirefoxOs implements VersionDetectorInterface
     /** @throws void */
     public function __construct(
         private readonly LoggerInterface $logger,
-        private readonly VersionFactoryInterface $versionFactory,
+        private readonly VersionBuilderInterface $versionBuilder,
     ) {
         // nothing to do
     }
@@ -56,7 +56,7 @@ final class FirefoxOs implements VersionDetectorInterface
             }
 
             try {
-                return $this->versionFactory->set($osVersion);
+                return $this->versionBuilder->set($osVersion);
             } catch (NotNumericException $e) {
                 $this->logger->info($e);
 

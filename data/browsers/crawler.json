@@ -4,7 +4,7 @@
     "manufacturer": "barzmann-internet-solutions",
     "type": "crawler",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "2ip bot"
       ]
@@ -16,7 +16,7 @@
     "manufacturer": "common-crawl-foundation",
     "type": "crawler",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "CCBot"
       ]
@@ -28,7 +28,7 @@
     "manufacturer": "domainstats",
     "type": "crawler",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "DomainStatsBot"
       ]
@@ -40,7 +40,7 @@
     "manufacturer": "itteco",
     "type": "crawler",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Iframely"
       ]
@@ -52,7 +52,7 @@
     "manufacturer": "ionos",
     "type": "crawler",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "IonCrawl"
       ]
@@ -74,7 +74,7 @@
     "manufacturer": "unknown",
     "type": "crawler",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "LinkWalker"
       ]
@@ -96,7 +96,7 @@
     "manufacturer": "aspiegel",
     "type": "crawler",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "PetalBot"
       ]
@@ -108,7 +108,7 @@
     "manufacturer": "apple",
     "type": "crawler",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Applebot"
       ]
@@ -120,7 +120,7 @@
     "manufacturer": "builtwith",
     "type": "crawler",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "BW"
       ]
@@ -132,7 +132,7 @@
     "manufacturer": "usercentrics",
     "type": "crawler",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Cookiebot"
       ]
@@ -144,7 +144,7 @@
     "manufacturer": "ahrefs",
     "type": "crawler",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "AhrefsBot"
       ]
@@ -156,7 +156,7 @@
     "manufacturer": "webmeup",
     "type": "crawler",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "BLEXBot"
       ]
@@ -168,7 +168,7 @@
     "manufacturer": "babbar",
     "type": "crawler",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Barkrowler"
       ]
@@ -180,7 +180,7 @@
     "manufacturer": "dataforseo",
     "type": "crawler",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "DataForSeoBot"
       ]
@@ -192,7 +192,7 @@
     "manufacturer": "seomoz",
     "type": "crawler",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "DotBot"
       ]
@@ -204,7 +204,7 @@
     "manufacturer": "dassault-systemes",
     "type": "crawler",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Exabot"
       ]
@@ -216,7 +216,7 @@
     "manufacturer": "sharashka",
     "type": "crawler",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "InternetMeasurement"
       ]
@@ -228,7 +228,7 @@
     "manufacturer": "manfred-schauer",
     "type": "crawler",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "MetaJobBot"
       ]
@@ -240,7 +240,7 @@
     "manufacturer": "online-media-group",
     "type": "crawler",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "MixrankBot"
       ]
@@ -262,7 +262,7 @@
     "manufacturer": "pinterest",
     "type": "crawler",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Pinterestbot"
       ]
@@ -274,7 +274,7 @@
     "manufacturer": "qwant",
     "type": "crawler",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Qwantify"
       ]
@@ -296,7 +296,7 @@
     "manufacturer": "sistrix",
     "type": "crawler",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "SeekportBot"
       ]
@@ -308,7 +308,7 @@
     "manufacturer": "semrush",
     "type": "crawler",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "SemrushBot"
       ]
@@ -320,7 +320,7 @@
     "manufacturer": "sur.ly",
     "type": "crawler",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "SurdotlyBot"
       ]
@@ -332,7 +332,7 @@
     "manufacturer": "unknown",
     "type": "crawler",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "VelenPublicWebCrawler",
         "VelenPublicWebDownloader"
@@ -345,7 +345,7 @@
     "manufacturer": "webwiki",
     "type": "crawler",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "WebwikiBot"
       ]
@@ -357,7 +357,7 @@
     "manufacturer": "linkfluence",
     "type": "crawler",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "YaK"
       ]
@@ -389,7 +389,7 @@
     "manufacturer": "archive.org",
     "type": "crawler",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "ia_archiver"
       ]
@@ -401,7 +401,7 @@
     "manufacturer": "comscore",
     "type": "crawler",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "proximic",
         "comscore"
@@ -414,7 +414,7 @@
     "manufacturer": "ubermetrics-technologies",
     "type": "crawler",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "uMBot\\-LN",
         "um-LN"
@@ -427,7 +427,7 @@
     "manufacturer": "openai",
     "type": "crawler",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "ChatGPT-User"
       ]
@@ -439,7 +439,7 @@
     "manufacturer": "openai",
     "type": "crawler",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "GPTBot"
       ]
@@ -461,7 +461,7 @@
     "manufacturer": "crissy-field",
     "type": "crawler",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "RepoLookoutBot",
         "RepoLookoutBot\\/v"
@@ -474,7 +474,7 @@
     "manufacturer": "scrapy.org",
     "type": "crawler",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Scrapy"
       ]
@@ -486,7 +486,7 @@
     "manufacturer": "slack",
     "type": "crawler",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Slackbot"
       ]
@@ -498,7 +498,7 @@
     "manufacturer": "slack",
     "type": "crawler",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Slackbot\\-LinkExpanding"
       ]
@@ -510,7 +510,7 @@
     "manufacturer": "zoom-information",
     "type": "crawler",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "ZoominfoBot"
       ]
@@ -522,7 +522,7 @@
     "manufacturer": "unknown",
     "type": "crawler",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "bitlybot"
       ]
@@ -534,7 +534,7 @@
     "manufacturer": "apache",
     "type": "crawler",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Nutch",
         "Nutch\\-"
@@ -547,7 +547,7 @@
     "manufacturer": "amazon",
     "type": "crawler",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Amazonbot"
       ]
@@ -559,7 +559,7 @@
     "manufacturer": "google",
     "type": "crawler",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "GoogleImageProxy"
       ]
@@ -581,7 +581,7 @@
     "manufacturer": "unknown",
     "type": "crawler",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "MegaIndex\\.ru"
       ]
@@ -603,7 +603,7 @@
     "manufacturer": "net-estate",
     "type": "crawler",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "netEstate NE Crawler"
       ]
@@ -615,7 +615,7 @@
     "manufacturer": "net-estate",
     "type": "crawler",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "netEstate Impressumscrawler"
       ]
@@ -627,7 +627,7 @@
     "manufacturer": "brightedge",
     "type": "crawler",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "BrightEdge Crawler"
       ]
@@ -639,7 +639,7 @@
     "manufacturer": "unknown",
     "type": "crawler",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "trendictionbot"
       ]
@@ -651,7 +651,7 @@
     "manufacturer": "unknown",
     "type": "crawler",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "heritrix",
         "Heritrix"
@@ -664,7 +664,7 @@
     "manufacturer": "arquivo",
     "type": "crawler",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Arquivo-web-crawler"
       ]
@@ -696,7 +696,7 @@
     "manufacturer": "webpros",
     "type": "crawler",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "webprosbot"
       ]
@@ -718,7 +718,7 @@
     "manufacturer": "hubspot-inc",
     "type": "crawler",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "HubSpot Connect"
       ]
@@ -730,7 +730,7 @@
     "manufacturer": "allen-institute",
     "type": "crawler",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "SemanticScholarBot"
       ]
@@ -742,7 +742,7 @@
     "manufacturer": "grier forensics",
     "type": "crawler",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "FemtosearchBot"
       ]
@@ -754,7 +754,7 @@
     "manufacturer": "e.ventures",
     "type": "crawler",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "ev-crawler"
       ]
@@ -766,7 +766,7 @@
     "manufacturer": "start.me",
     "type": "crawler",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "startmebot"
       ]
@@ -778,7 +778,7 @@
     "manufacturer": "unknown",
     "type": "crawler",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Nicecrawler"
       ]
@@ -790,7 +790,7 @@
     "manufacturer": "serpstat",
     "type": "crawler",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "serpstatbot"
       ]
@@ -802,7 +802,7 @@
     "manufacturer": "iparadigms",
     "type": "crawler",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "TurnitinBot"
       ]
@@ -814,7 +814,7 @@
     "manufacturer": "quora",
     "type": "crawler",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Quora-Bot"
       ]

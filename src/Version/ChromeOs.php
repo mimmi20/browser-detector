@@ -16,12 +16,12 @@ use Psr\Log\LoggerInterface;
 
 use function preg_match;
 
-final class ChromeOs implements VersionDetectorInterface
+final class ChromeOs implements VersionFactoryInterface
 {
     /** @throws void */
     public function __construct(
         private readonly LoggerInterface $logger,
-        private readonly VersionFactoryInterface $versionFactory,
+        private readonly VersionBuilderInterface $versionBuilder,
     ) {
         // nothing to do
     }
@@ -41,7 +41,7 @@ final class ChromeOs implements VersionDetectorInterface
             )
         ) {
             try {
-                return $this->versionFactory->set($firstMatches['version']);
+                return $this->versionBuilder->set($firstMatches['version']);
             } catch (NotNumericException $e) {
                 $this->logger->info($e);
             }
@@ -51,7 +51,7 @@ final class ChromeOs implements VersionDetectorInterface
 
         if (preg_match('/CrOS [a-z0-9_]+ (?P<version>\d+[\d\.]+)/', $useragent, $secondMatches)) {
             try {
-                return $this->versionFactory->set($secondMatches['version']);
+                return $this->versionBuilder->set($secondMatches['version']);
             } catch (NotNumericException $e) {
                 $this->logger->info($e);
             }

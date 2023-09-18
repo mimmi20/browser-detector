@@ -12,10 +12,7 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Parser\Device;
 
-use BrowserDetector\Loader\DeviceLoaderFactoryInterface;
-use BrowserDetector\Loader\NotFoundException;
 use BrowserDetector\Parser\Helper\RulefileParserInterface;
-use UnexpectedValueException;
 
 use function sprintf;
 
@@ -26,10 +23,9 @@ final class TvParser implements TvParserInterface
     private const SPECIFIC_FILE = __DIR__ . '/../../../data/factories/devices/tv/%s.json';
 
     /** @throws void */
-    public function __construct(
-        private readonly RulefileParserInterface $fileParser,
-        private readonly DeviceLoaderFactoryInterface $loaderFactory,
-    ) {
+    public function __construct(private readonly RulefileParserInterface $fileParser)
+    {
+        // nothing to do
     }
 
     /**
@@ -48,20 +44,5 @@ final class TvParser implements TvParserInterface
         );
 
         return $company . '=' . $key;
-    }
-
-    /**
-     * @return array<int, (array<mixed>|bool|string|null)>
-     * @phpstan-return array{0: array{deviceName: string|null, marketingName: string|null, manufacturer: string|null, brand: string|null, dualOrientation: bool|null, simCount: int|null, display: array{width: int|null, height: int|null, touch: bool|null, size: float|null}, type: string, ismobile: bool}, 1: string|null}
-     *
-     * @throws NotFoundException
-     * @throws UnexpectedValueException
-     */
-    public function load(string $company, string $key): array
-    {
-        $loaderFactory = $this->loaderFactory;
-        $loader        = $loaderFactory($company);
-
-        return $loader->load($key);
     }
 }

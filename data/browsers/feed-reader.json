@@ -4,7 +4,7 @@
     "manufacturer": "kde",
     "type": "feed-reader",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Akregator"
       ]
@@ -16,7 +16,7 @@
     "manufacturer": "apple",
     "type": "feed-reader",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Version",
         "AppleNews",
@@ -30,7 +30,7 @@
     "manufacturer": "che-bin-liu",
     "type": "feed-reader",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "FeeddlerRSS",
         "FeeddlerPro"
@@ -43,7 +43,7 @@
     "manufacturer": "google",
     "type": "feed-reader",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "NS"
       ]
@@ -55,7 +55,7 @@
     "manufacturer": "unknown",
     "type": "feed-reader",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Gregarius"
       ]
@@ -67,7 +67,7 @@
     "manufacturer": "lars windolf",
     "type": "feed-reader",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Liferea"
       ]
@@ -79,7 +79,7 @@
     "manufacturer": "line",
     "type": "feed-reader",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "LDNReader"
       ]
@@ -91,7 +91,7 @@
     "manufacturer": "unknown",
     "type": "feed-reader",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "MagpieRSS"
       ]
@@ -103,7 +103,7 @@
     "manufacturer": "andreas krennmair",
     "type": "feed-reader",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "newsbeuter"
       ]
@@ -115,7 +115,7 @@
     "manufacturer": "newsblur",
     "type": "feed-reader",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "NewsBlur Feed Fetcher"
       ]
@@ -157,7 +157,7 @@
     "manufacturer": "unknown",
     "type": "feed-reader",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "sfFeedReader"
       ]
@@ -169,7 +169,7 @@
     "manufacturer": "microsoft",
     "type": "feed-reader",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Windows\\-RSS\\-Platform"
       ]
@@ -181,7 +181,7 @@
     "manufacturer": "unknown",
     "type": "feed-reader",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Reeder"
       ]
@@ -193,7 +193,7 @@
     "manufacturer": "feedly.com",
     "type": "feed-reader",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Feedly"
       ]

@@ -4,7 +4,7 @@
     "manufacturer": "w3c",
     "type": "validator",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "W3C_Validator"
       ]
@@ -16,7 +16,7 @@
     "manufacturer": "web-design-group",
     "type": "validator",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "WDG_Validator"
       ]
@@ -28,7 +28,7 @@
     "manufacturer": "w3c",
     "type": "validator",
     "version": {
-      "class": "VersionFactory",
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Jigsaw"
       ]

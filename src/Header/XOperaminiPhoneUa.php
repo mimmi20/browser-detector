@@ -51,8 +51,12 @@ final class XOperaminiPhoneUa implements HeaderInterface
         return (bool) preg_match('/opera mini\/[\d\.]+/i', $this->value);
     }
 
-    /** @throws void */
-    public function getClientVersion(): string | null
+    /**
+     * @throws void
+     *
+     * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+     */
+    public function getClientVersion(string | null $code = null): string | null
     {
         $matches = [];
 

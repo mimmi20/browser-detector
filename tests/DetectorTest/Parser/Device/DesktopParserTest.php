@@ -12,14 +12,11 @@ declare(strict_types = 1);
 
 namespace BrowserDetectorTest\Parser\Device;
 
-use BrowserDetector\Loader\DeviceLoaderFactoryInterface;
 use BrowserDetector\Loader\DeviceLoaderInterface;
 use BrowserDetector\Parser\Device\DesktopParser;
 use BrowserDetector\Parser\Helper\RulefileParserInterface;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
-
-use function assert;
 
 final class DesktopParserTest extends TestCase
 {
@@ -37,13 +34,6 @@ final class DesktopParserTest extends TestCase
             ->expects(self::never())
             ->method('load');
 
-        $mockLoaderFactory = $this->getMockBuilder(DeviceLoaderFactoryInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
-        $mockLoaderFactory
-            ->expects(self::never())
-            ->method('__invoke');
-
         $fileParser = $this->getMockBuilder(RulefileParserInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
@@ -52,9 +42,7 @@ final class DesktopParserTest extends TestCase
             ->method('parseFile')
             ->willReturn($genericMode, $expectedMode);
 
-        assert($fileParser instanceof RulefileParserInterface);
-        assert($mockLoaderFactory instanceof DeviceLoaderFactoryInterface);
-        $object = new DesktopParser($fileParser, $mockLoaderFactory);
+        $object = new DesktopParser($fileParser);
 
         self::assertSame($genericMode . '=' . $expectedMode, $object->parse($useragent));
     }

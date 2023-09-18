@@ -58,7 +58,50 @@ $result = $detector($the_user_agent);
 
 ## The result
 
-The `getBrowser` function and the `__invoke` function return a [ua-result](https://github.com/mimmi20/ua-result) object.
+The `getBrowser` function returns a array with this structure
+
+```php
+[
+    'headers' => [],
+    'device' => [
+        'deviceName' => null,
+        'marketingName' => null,
+        'manufacturer' => null,
+        'brand' => null,
+        'dualOrientation' => null,
+        'simCount' => null,
+        'display' => [
+            'width' => null,
+            'height' => null,
+            'touch' => null,
+            'size' => null,
+        ],
+        'type' => null,
+        'ismobile' => null,
+    ],
+    'os' => [
+        'name' => null,
+        'marketingName' => null,
+        'version' => null,
+        'manufacturer' => null,
+        'bits' => null,
+    ],
+    'client' => [
+        'name' => null,
+        'modus' => null,
+        'version' => null,
+        'manufacturer' => null,
+        'bits' => null,
+        'type' => null,
+        'isbot' => null,
+    ],
+    'engine' => [
+        'name' => null,
+        'version' => null,
+        'manufacturer' => null,
+    ],
+]
+```
 
 ## Issues and feature requests
 

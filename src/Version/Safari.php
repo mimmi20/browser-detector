@@ -18,12 +18,12 @@ use UnexpectedValueException;
 
 use function preg_match;
 
-final class Safari implements VersionDetectorInterface
+final class Safari implements VersionFactoryInterface
 {
     /** @throws void */
     public function __construct(
         private readonly LoggerInterface $logger,
-        private readonly VersionFactoryInterface $versionFactory,
+        private readonly VersionBuilderInterface $versionBuilder,
         private readonly SafariInterface $safariHelper,
     ) {
         // nothing to do
@@ -42,7 +42,7 @@ final class Safari implements VersionDetectorInterface
 
         if ($doMatch) {
             try {
-                $version = $this->versionFactory->set($matches['version']);
+                $version = $this->versionBuilder->set($matches['version']);
             } catch (NotNumericException $e) {
                 $this->logger->info($e);
 
@@ -56,7 +56,7 @@ final class Safari implements VersionDetectorInterface
             }
 
             try {
-                return $this->versionFactory->set($mappedVersion);
+                return $this->versionBuilder->set($mappedVersion);
             } catch (NotNumericException $e) {
                 $this->logger->info($e);
             }

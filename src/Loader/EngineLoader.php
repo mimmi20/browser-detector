@@ -13,7 +13,7 @@ declare(strict_types = 1);
 namespace BrowserDetector\Loader;
 
 use BrowserDetector\Loader\Helper\DataInterface;
-use BrowserDetector\Version\VersionFactory;
+use BrowserDetector\Version\VersionBuilderInterface;
 use Psr\Log\LoggerInterface;
 use stdClass;
 use UnexpectedValueException;
@@ -32,8 +32,9 @@ final class EngineLoader implements EngineLoaderInterface
         private readonly LoggerInterface $logger,
         private readonly DataInterface $initData,
         private readonly CompanyLoaderInterface $companyLoader,
+        VersionBuilderInterface $versionBuilder,
     ) {
-        $this->versionFactory = new VersionFactory();
+        $this->versionBuilder = $versionBuilder;
 
         $initData();
     }
@@ -42,7 +43,6 @@ final class EngineLoader implements EngineLoaderInterface
      * @return array{name: string|null, version: string|null, manufacturer: string}
      *
      * @throws NotFoundException
-     * @throws UnexpectedValueException
      */
     public function load(string $key, string $useragent = ''): array
     {
@@ -73,9 +73,17 @@ final class EngineLoader implements EngineLoaderInterface
             $this->logger->info($e);
         }
 
+        try {
+            $versionString = $version->getVersion();
+        } catch (UnexpectedValueException $e) {
+            $this->logger->info($e);
+
+            $versionString = null;
+        }
+
         return [
             'name' => $name,
-            'version' => $version->getVersion(),
+            'version' => $versionString,
             'manufacturer' => $manufacturer['type'],
         ];
     }

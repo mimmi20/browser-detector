@@ -42,6 +42,7 @@ use function file_get_contents;
 use function is_array;
 use function is_countable;
 use function is_iterable;
+use function is_scalar;
 use function is_string;
 use function json_decode;
 use function json_encode;
@@ -256,7 +257,6 @@ final class DetectorTest extends TestCase
      * @throws NotFoundException
      * @throws ExpectationFailedException
      * @throws UnexpectedValueException
-     * @throws NotNumericException
      */
     #[DataProvider('providerGetBrowser')]
     #[CoversNothing]
@@ -385,7 +385,7 @@ final class DetectorTest extends TestCase
             }
 
             try {
-                $tests = json_decode($content, true, 512, JSON_THROW_ON_ERROR);
+                $tests = json_decode(json: $content, associative: true, flags: JSON_THROW_ON_ERROR);
             } catch (JsonException $e) {
                 throw new Exception(sprintf('file "%s" contains invalid json', $filepath), 0, $e);
             }
@@ -393,7 +393,7 @@ final class DetectorTest extends TestCase
             assert(is_iterable($tests));
 
             foreach ($tests as $i => $expectedResult) {
-                if (!is_array($expectedResult)) {
+                if (!is_array($expectedResult) || !is_scalar($i)) {
                     continue;
                 }
 

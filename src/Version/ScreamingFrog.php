@@ -17,12 +17,12 @@ use Psr\Log\LoggerInterface;
 use function preg_match;
 use function str_replace;
 
-final class ScreamingFrog implements VersionDetectorInterface
+final class ScreamingFrog implements VersionFactoryInterface
 {
     /** @throws void */
     public function __construct(
         private readonly LoggerInterface $logger,
-        private readonly VersionFactoryInterface $versionFactory,
+        private readonly VersionBuilderInterface $versionBuilder,
     ) {
         // nothing to do
     }
@@ -41,7 +41,7 @@ final class ScreamingFrog implements VersionDetectorInterface
         }
 
         try {
-            return $this->versionFactory->detectVersion($useragent, ['Screaming Frog SEO Spider']);
+            return $this->versionBuilder->detectVersion($useragent, ['Screaming Frog SEO Spider']);
         } catch (NotNumericException $e) {
             $this->logger->info($e);
         }

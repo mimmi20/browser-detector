@@ -14,6 +14,7 @@ namespace BrowserDetector\Loader;
 
 use BrowserDetector\Loader\Helper\Data;
 use Psr\Log\LoggerInterface;
+use UaDeviceType\TypeLoader;
 
 use function array_key_exists;
 
@@ -43,6 +44,7 @@ final class DeviceLoaderFactory implements DeviceLoaderFactoryInterface
             $this->logger,
             new Data(self::DATA_PATH . $company, 'json'),
             $this->companyLoader,
+            new TypeLoader(),
         );
 
         return $this->loader[$company];

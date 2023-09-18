@@ -12,13 +12,10 @@ declare(strict_types = 1);
 
 namespace BrowserDetectorTest\Parser\Device;
 
-use BrowserDetector\Loader\DeviceLoaderFactoryInterface;
 use BrowserDetector\Parser\Device\TvParser;
 use BrowserDetector\Parser\Helper\RulefileParserInterface;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
-
-use function assert;
 
 final class TvParserTest extends TestCase
 {
@@ -29,13 +26,6 @@ final class TvParserTest extends TestCase
         $expectedMode = 'test-mode';
         $genericMode  = 'genericMode';
 
-        $mockLoaderFactory = $this->getMockBuilder(DeviceLoaderFactoryInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
-        $mockLoaderFactory
-            ->expects(self::never())
-            ->method('__invoke');
-
         $fileParser = $this->getMockBuilder(RulefileParserInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
@@ -44,9 +34,7 @@ final class TvParserTest extends TestCase
             ->method('parseFile')
             ->willReturn($genericMode, $expectedMode);
 
-        assert($fileParser instanceof RulefileParserInterface);
-        assert($mockLoaderFactory instanceof DeviceLoaderFactoryInterface);
-        $object = new TvParser($fileParser, $mockLoaderFactory);
+        $object = new TvParser($fileParser);
 
         self::assertSame($genericMode . '=' . $expectedMode, $object->parse($useragent));
     }

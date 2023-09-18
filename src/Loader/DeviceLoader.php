@@ -15,12 +15,12 @@ namespace BrowserDetector\Loader;
 use BrowserDetector\Loader\Helper\DataInterface;
 use Psr\Log\LoggerInterface;
 use stdClass;
-use UaDeviceType\TypeLoader;
+use UaDeviceType\TypeLoaderInterface;
 use UaDeviceType\Unknown;
-use UnexpectedValueException;
 
 use function array_key_exists;
 use function assert;
+use function is_string;
 
 final class DeviceLoader implements DeviceLoaderInterface
 {
@@ -29,16 +29,16 @@ final class DeviceLoader implements DeviceLoaderInterface
         private readonly LoggerInterface $logger,
         private readonly DataInterface $initData,
         private readonly CompanyLoaderInterface $companyLoader,
+        private readonly TypeLoaderInterface $typeLoader,
     ) {
         $initData();
     }
 
     /**
      * @return array<int, (array<mixed>|string|null)>
-     * @phpstan-return array{0: array{deviceName: string|null, marketingName: string|null, manufacturer: string|null, brand: string|null, dualOrientation: bool|null, simCount: int|null, display: array{width: int|null, height: int|null, touch: bool|null, size: float|null}, type: string, ismobile: bool}, 1: string|null}
+     * @phpstan-return array{0: array{deviceName: string|null, marketingName: string|null, manufacturer: string|null, brand: string|null, dualOrientation: bool|null, simCount: int|null, display: array{width: int|null, height: int|null, touch: bool|null, size: float|null}, type: string, ismobile: bool, istv: bool}, 1: string|null}
      *
      * @throws NotFoundException
-     * @throws UnexpectedValueException
      */
     public function load(string $key): array
     {
@@ -56,6 +56,8 @@ final class DeviceLoader implements DeviceLoaderInterface
 
         $device = $this->fromArray((array) $deviceData);
 
+        assert(is_string($deviceData->platform) || $deviceData->platform === null);
+
         return [$device, $deviceData->platform];
     }
 
@@ -63,11 +65,11 @@ final class DeviceLoader implements DeviceLoaderInterface
      * @param array<string, (int|stdClass|string|null)> $data
      * @phpstan-param array{deviceName?: (string|null), marketingName?: (string|null), manufacturer?: string, brand?: string, type?: (string|null), display?: (array{width?: (int|null), height?: (int|null), touch?: (bool|null), size?: (int|float|null)}|stdClass|null)} $data
      *
-     * @return array{deviceName: string|null, marketingName: string|null, manufacturer: string|null, brand: string|null, dualOrientation: bool|null, simCount: int|null, display: array{width: int|null, height: int|null, touch: bool|null, size: float|null}, type: string, ismobile: bool}
+     * @return array{deviceName: string|null, marketingName: string|null, manufacturer: string|null, brand: string|null, dualOrientation: bool|null, simCount: int|null, display: array{width: int|null, height: int|null, touch: bool|null, size: float|null}, type: string, ismobile: bool, istv: bool}
      *
      * @throws void
      */
-    public function fromArray(array $data): array
+    private function fromArray(array $data): array
     {
         assert(array_key_exists('deviceName', $data), '"deviceName" property is required');
         assert(array_key_exists('marketingName', $data), '"marketingName" property is required');
@@ -86,7 +88,7 @@ final class DeviceLoader implements DeviceLoaderInterface
         $type = new Unknown();
 
         try {
-            $type = (new TypeLoader())->load((string) $data['type']);
+            $type = $this->typeLoader->load((string) $data['type']);
         } catch (\UaDeviceType\NotFoundException $e) {
             $this->logger->info($e);
         }
@@ -128,6 +130,7 @@ final class DeviceLoader implements DeviceLoaderInterface
             'display' => $displayData,
             'type' => $type->getType(),
             'ismobile' => $type->isMobile(),
+            'istv' => $type->isTv(),
         ];
     }
 }
