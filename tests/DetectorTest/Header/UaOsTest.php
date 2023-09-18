@@ -62,11 +62,6 @@ final class UaOsTest extends TestCase
             $header->getDeviceIsMobile(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
-        self::assertFalse($header->hasDeviceName(), sprintf('device info mismatch for ua "%s"', $ua));
-        self::assertNull(
-            $header->getDeviceName(),
-            sprintf('device info mismatch for ua "%s"', $ua),
-        );
         self::assertFalse($header->hasDeviceCode(), sprintf('device info mismatch for ua "%s"', $ua));
         self::assertNull(
             $header->getDeviceCode(),

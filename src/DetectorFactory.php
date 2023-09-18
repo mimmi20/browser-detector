@@ -50,14 +50,22 @@ final class DetectorFactory
             $browserParser         = $browserParserFactory();
             $normalizerFactory     = new NormalizerFactory();
 
-            $this->detector = new Detector(
-                $this->logger,
-                new Cache($this->cache),
+            $requestBuilder = new RequestBuilder(
                 $deviceParser,
                 $platformParser,
                 $browserParser,
                 $engineParser,
                 $normalizerFactory,
+            );
+
+            $this->detector = new Detector(
+                $this->logger,
+                new Cache($this->cache),
+                $requestBuilder,
+                $deviceParser,
+                $platformParser,
+                $browserParser,
+                $engineParser,
             );
         }
 

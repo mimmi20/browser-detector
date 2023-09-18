@@ -57,17 +57,12 @@ final class SecChUaFullVersionTest extends TestCase
             $header->getDeviceIsMobile(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
-        self::assertFalse($header->hasDeviceName(), sprintf('device info mismatch for ua "%s"', $ua));
-        self::assertNull(
-            $header->getDeviceName(),
-            sprintf('device info mismatch for ua "%s"', $ua),
-        );
         self::assertFalse($header->hasDeviceCode(), sprintf('device info mismatch for ua "%s"', $ua));
         self::assertNull(
             $header->getDeviceCode(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
-        self::assertTrue($header->hasClientCode(), sprintf('browser info mismatch for ua "%s"', $ua));
+        self::assertFalse($header->hasClientCode(), sprintf('browser info mismatch for ua "%s"', $ua));
         self::assertNull(
             $header->getClientCode(),
             sprintf('browser info mismatch for ua "%s"', $ua),

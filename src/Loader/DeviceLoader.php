@@ -36,7 +36,7 @@ final class DeviceLoader implements DeviceLoaderInterface
 
     /**
      * @return array<int, (array<mixed>|string|null)>
-     * @phpstan-return array{0: array{deviceName: string|null, marketingName: string|null, manufacturer: string|null, brand: string|null, dualOrientation: bool|null, simCount: int|null, display: array{width: int|null, height: int|null, touch: bool|null, size: float|null}, type: string, ismobile: bool}, 1: string|null}
+     * @phpstan-return array{0: array{deviceName: string|null, marketingName: string|null, manufacturer: string|null, brand: string|null, dualOrientation: bool|null, simCount: int|null, display: array{width: int|null, height: int|null, touch: bool|null, size: float|null}, type: string, ismobile: bool, istv: bool}, 1: string|null}
      *
      * @throws NotFoundException
      */
@@ -65,7 +65,7 @@ final class DeviceLoader implements DeviceLoaderInterface
      * @param array<string, (int|stdClass|string|null)> $data
      * @phpstan-param array{deviceName?: (string|null), marketingName?: (string|null), manufacturer?: string, brand?: string, type?: (string|null), display?: (array{width?: (int|null), height?: (int|null), touch?: (bool|null), size?: (int|float|null)}|stdClass|null)} $data
      *
-     * @return array{deviceName: string|null, marketingName: string|null, manufacturer: string|null, brand: string|null, dualOrientation: bool|null, simCount: int|null, display: array{width: int|null, height: int|null, touch: bool|null, size: float|null}, type: string, ismobile: bool}
+     * @return array{deviceName: string|null, marketingName: string|null, manufacturer: string|null, brand: string|null, dualOrientation: bool|null, simCount: int|null, display: array{width: int|null, height: int|null, touch: bool|null, size: float|null}, type: string, ismobile: bool, istv: bool}
      *
      * @throws void
      */
@@ -130,6 +130,7 @@ final class DeviceLoader implements DeviceLoaderInterface
             'display' => $displayData,
             'type' => $type->getType(),
             'ismobile' => $type->isMobile(),
+            'istv' => $type->isTv(),
         ];
     }
 }

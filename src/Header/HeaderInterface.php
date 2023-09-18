@@ -47,12 +47,6 @@ interface HeaderInterface
     public function getDeviceIsMobile(): bool | null;
 
     /** @throws void */
-    public function hasDeviceName(): bool;
-
-    /** @throws void */
-    public function getDeviceName(): string | null;
-
-    /** @throws void */
     public function hasDeviceCode(): bool;
 
     /** @throws void */

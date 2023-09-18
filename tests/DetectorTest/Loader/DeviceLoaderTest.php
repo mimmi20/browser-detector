@@ -269,6 +269,7 @@ final class DeviceLoaderTest extends TestCase
                 ],
                 'type' => 'device-type',
                 'ismobile' => true,
+                'istv' => false,
             ],
             null,
         ];
@@ -393,6 +394,7 @@ final class DeviceLoaderTest extends TestCase
                 ],
                 'type' => 'device-type',
                 'ismobile' => false,
+                'istv' => false,
             ],
             'test-platform',
         ];
@@ -528,6 +530,7 @@ final class DeviceLoaderTest extends TestCase
                 ],
                 'type' => 'unknown',
                 'ismobile' => false,
+                'istv' => false,
             ],
             'test-platform',
         ];

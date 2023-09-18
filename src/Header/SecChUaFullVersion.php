@@ -19,18 +19,6 @@ final class SecChUaFullVersion implements HeaderInterface
     use HeaderTrait;
 
     /** @throws void */
-    public function hasClientCode(): bool
-    {
-        return true;
-    }
-
-    /** @throws void */
-    public function getClientCode(): string | null
-    {
-        return null;
-    }
-
-    /** @throws void */
     public function hasClientVersion(): bool
     {
         return true;

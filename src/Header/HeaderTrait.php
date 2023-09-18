@@ -80,18 +80,6 @@ trait HeaderTrait
     }
 
     /** @throws void */
-    public function hasDeviceName(): bool
-    {
-        return false;
-    }
-
-    /** @throws void */
-    public function getDeviceName(): string | null
-    {
-        return null;
-    }
-
-    /** @throws void */
     public function hasDeviceCode(): bool
     {
         return false;

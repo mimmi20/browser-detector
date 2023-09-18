@@ -257,7 +257,6 @@ final class DetectorTest extends TestCase
      * @throws NotFoundException
      * @throws ExpectationFailedException
      * @throws UnexpectedValueException
-     * @throws NotNumericException
      */
     #[DataProvider('providerGetBrowser')]
     #[CoversNothing]
