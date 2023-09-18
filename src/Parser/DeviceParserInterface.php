@@ -12,9 +12,6 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Parser;
 
-use BrowserDetector\Loader\NotFoundException;
-use UnexpectedValueException;
-
 interface DeviceParserInterface
 {
     /**
@@ -23,13 +20,4 @@ interface DeviceParserInterface
      * @throws void
      */
     public function parse(string $useragent): string;
-
-    /**
-     * @return array<int, (array<mixed>|bool|string|null)>
-     * @phpstan-return array{0: array{deviceName: string|null, marketingName: string|null, manufacturer: string|null, brand: string|null, dualOrientation: bool|null, simCount: int|null, display: array{width: int|null, height: int|null, touch: bool|null, size: float|null}, type: string, ismobile: bool, istv: bool}, 1: string|null}
-     *
-     * @throws NotFoundException
-     * @throws UnexpectedValueException
-     */
-    public function load(string $company, string $key): array;
 }

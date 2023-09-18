@@ -12,23 +12,14 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Parser;
 
-use BrowserDetector\Loader\CompanyLoaderInterface;
-use BrowserDetector\Loader\EngineLoader;
-use BrowserDetector\Loader\EngineLoaderInterface;
-use BrowserDetector\Loader\Helper\Data;
 use BrowserDetector\Parser\Helper\RulefileParser;
-use BrowserDetector\Version\VersionBuilder;
 use Psr\Log\LoggerInterface;
 
 final class EngineParserFactory implements EngineParserFactoryInterface
 {
-    private EngineLoaderInterface | null $loader = null;
-
     /** @throws void */
-    public function __construct(
-        private readonly LoggerInterface $logger,
-        private readonly CompanyLoaderInterface $companyLoader,
-    ) {
+    public function __construct(private readonly LoggerInterface $logger)
+    {
         // nothing to do
     }
 
@@ -39,17 +30,7 @@ final class EngineParserFactory implements EngineParserFactoryInterface
      */
     public function __invoke(): EngineParserInterface
     {
-        if ($this->loader === null) {
-            $this->loader = new EngineLoader(
-                $this->logger,
-                new Data(EngineLoader::DATA_PATH, 'json'),
-                $this->companyLoader,
-                new VersionBuilder($this->logger),
-            );
-        }
-
         return new EngineParser(
-            $this->loader,
             new RulefileParser($this->logger),
         );
     }

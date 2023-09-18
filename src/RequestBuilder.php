@@ -13,6 +13,9 @@ declare(strict_types = 1);
 namespace BrowserDetector;
 
 use BrowserDetector\Header\HeaderLoader;
+use BrowserDetector\Loader\BrowserLoaderInterface;
+use BrowserDetector\Loader\EngineLoaderInterface;
+use BrowserDetector\Loader\PlatformLoaderInterface;
 use BrowserDetector\Parser\BrowserParserInterface;
 use BrowserDetector\Parser\DeviceParserInterface;
 use BrowserDetector\Parser\EngineParserInterface;
@@ -41,6 +44,9 @@ final class RequestBuilder implements RequestBuilderInterface
         private readonly BrowserParserInterface $browserParser,
         private readonly EngineParserInterface $engineParser,
         private readonly NormalizerFactory $normalizerFactory,
+        private readonly BrowserLoaderInterface $browserLoader,
+        private readonly PlatformLoaderInterface $platformLoader,
+        private readonly EngineLoaderInterface $engineLoader,
     ) {
         // nothing to do
     }
@@ -133,6 +139,9 @@ final class RequestBuilder implements RequestBuilderInterface
                 $this->browserParser,
                 $this->engineParser,
                 $this->normalizerFactory,
+                $this->browserLoader,
+                $this->platformLoader,
+                $this->engineLoader,
             ),
         );
     }

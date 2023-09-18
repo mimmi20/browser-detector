@@ -12,13 +12,11 @@ declare(strict_types = 1);
 
 namespace BrowserDetectorTest\Parser\Device;
 
-use BrowserDetector\Loader\DeviceLoaderFactoryInterface;
 use BrowserDetector\Loader\DeviceLoaderInterface;
 use BrowserDetector\Parser\Device\DesktopParser;
 use BrowserDetector\Parser\Helper\RulefileParserInterface;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
-use UnexpectedValueException;
 
 final class DesktopParserTest extends TestCase
 {
@@ -36,13 +34,6 @@ final class DesktopParserTest extends TestCase
             ->expects(self::never())
             ->method('load');
 
-        $mockLoaderFactory = $this->getMockBuilder(DeviceLoaderFactoryInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
-        $mockLoaderFactory
-            ->expects(self::never())
-            ->method('__invoke');
-
         $fileParser = $this->getMockBuilder(RulefileParserInterface::class)
             ->disableOriginalConstructor()
             ->getMock();
@@ -51,68 +42,8 @@ final class DesktopParserTest extends TestCase
             ->method('parseFile')
             ->willReturn($genericMode, $expectedMode);
 
-        $object = new DesktopParser($fileParser, $mockLoaderFactory);
+        $object = new DesktopParser($fileParser);
 
         self::assertSame($genericMode . '=' . $expectedMode, $object->parse($useragent));
-    }
-
-    /**
-     * @throws ExpectationFailedException
-     * @throws UnexpectedValueException
-     */
-    public function testLoad(): void
-    {
-        $company = 'unknown';
-        $key     = 'unknown';
-
-        $result = [
-            [
-                'deviceName' => null,
-                'marketingName' => null,
-                'manufacturer' => 'loaded-type-1',
-                'brand' => 'loaded-type-2',
-                'dualOrientation' => null,
-                'simCount' => null,
-                'display' => [
-                    'width' => null,
-                    'height' => null,
-                    'touch' => null,
-                    'size' => null,
-                ],
-                'type' => 'device-type',
-                'ismobile' => true,
-            ],
-            null,
-        ];
-
-        $fileParser = $this->getMockBuilder(RulefileParserInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
-        $fileParser
-            ->expects(self::never())
-            ->method('parseFile');
-
-        $loader = $this->getMockBuilder(DeviceLoaderInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
-        $loader
-            ->expects(self::once())
-            ->method('load')
-            ->with($key)
-            ->willReturn($result);
-
-        $loaderFactory = $this->getMockBuilder(DeviceLoaderFactoryInterface::class)
-            ->disableOriginalConstructor()
-            ->getMock();
-        $loaderFactory
-            ->expects(self::once())
-            ->method('__invoke')
-            ->with($company)
-            ->willReturn($loader);
-
-        $object       = new DesktopParser($fileParser, $loaderFactory);
-        $parserResult = $object->load($company, $key);
-
-        self::assertSame($result, $parserResult);
     }
 }

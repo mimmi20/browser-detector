@@ -12,7 +12,6 @@ declare(strict_types = 1);
 
 namespace BrowserDetectorTest\Parser;
 
-use BrowserDetector\Loader\CompanyLoaderInterface;
 use BrowserDetector\Parser\PlatformParser;
 use BrowserDetector\Parser\PlatformParserFactory;
 use BrowserDetector\Parser\PlatformParserInterface;
@@ -29,10 +28,9 @@ final class PlatformParserFactoryTest extends TestCase
      */
     public function testInvoke(): void
     {
-        $logger        = $this->createMock(LoggerInterface::class);
-        $companyLoader = $this->createMock(CompanyLoaderInterface::class);
+        $logger = $this->createMock(LoggerInterface::class);
 
-        $factory = new PlatformParserFactory($logger, $companyLoader);
+        $factory = new PlatformParserFactory($logger);
 
         $parser = $factory();
 

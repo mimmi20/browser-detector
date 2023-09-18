@@ -66,7 +66,7 @@ final class GenericRequest implements GenericRequestInterface
     private array $filteredHeaders = [];
 
     /** @throws void */
-    public function __construct(MessageInterface $message, private readonly HeaderLoaderInterface $loader)
+    public function __construct(MessageInterface $message, private readonly HeaderLoaderInterface $headerLoader)
     {
         foreach (array_keys($message->getHeaders()) as $header) {
             if (!is_string($header) || $header === '') {
@@ -128,7 +128,7 @@ final class GenericRequest implements GenericRequestInterface
 
         foreach ($filtered as $header) {
             try {
-                $headerObj = $this->loader->load($header, $this->headers[$header]);
+                $headerObj = $this->headerLoader->load($header, $this->headers[$header]);
             } catch (NotFoundException) {
                 continue;
             }

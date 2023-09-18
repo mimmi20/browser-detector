@@ -12,10 +12,7 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Parser;
 
-use BrowserDetector\Loader\NotFoundException;
-use BrowserDetector\Loader\PlatformLoaderInterface;
 use BrowserDetector\Parser\Helper\RulefileParserInterface;
-use UnexpectedValueException;
 
 use function sprintf;
 
@@ -26,10 +23,8 @@ final class PlatformParser implements PlatformParserInterface
     private const SPECIFIC_FILE = __DIR__ . '/../../data/factories/platforms/%s.json';
 
     /** @throws void */
-    public function __construct(
-        private readonly PlatformLoaderInterface $loader,
-        private readonly RulefileParserInterface $fileParser,
-    ) {
+    public function __construct(private readonly RulefileParserInterface $fileParser)
+    {
         // nothing to do
     }
 
@@ -47,16 +42,5 @@ final class PlatformParser implements PlatformParserInterface
             $useragent,
             'unknown',
         );
-    }
-
-    /**
-     * @return array{name: string|null, marketingName: string|null, version: string|null, manufacturer: string, bits: int|null}
-     *
-     * @throws NotFoundException
-     * @throws UnexpectedValueException
-     */
-    public function load(string $key, string $useragent = ''): array
-    {
-        return $this->loader->load($key, $useragent);
     }
 }

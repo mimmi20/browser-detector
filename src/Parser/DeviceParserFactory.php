@@ -15,8 +15,6 @@ namespace BrowserDetector\Parser;
 use BrowserDetector\Helper\Desktop;
 use BrowserDetector\Helper\MobileDevice;
 use BrowserDetector\Helper\Tv;
-use BrowserDetector\Loader\CompanyLoaderInterface;
-use BrowserDetector\Loader\DeviceLoaderFactory;
 use BrowserDetector\Parser\Device\DarwinParser;
 use BrowserDetector\Parser\Device\DesktopParser;
 use BrowserDetector\Parser\Device\MobileParser;
@@ -27,10 +25,8 @@ use Psr\Log\LoggerInterface;
 final class DeviceParserFactory implements DeviceParserFactoryInterface
 {
     /** @throws void */
-    public function __construct(
-        private readonly LoggerInterface $logger,
-        private readonly CompanyLoaderInterface $companyLoader,
-    ) {
+    public function __construct(private readonly LoggerInterface $logger)
+    {
         // nothing to do
     }
 
@@ -41,19 +37,17 @@ final class DeviceParserFactory implements DeviceParserFactoryInterface
      */
     public function __invoke(): DeviceParserInterface
     {
-        $loaderFactory = new DeviceLoaderFactory($this->logger, $this->companyLoader);
         $fileParser    = new RulefileParser($this->logger);
-        $darwinParser  = new DarwinParser($fileParser, $loaderFactory);
-        $mobileParser  = new MobileParser($fileParser, $loaderFactory);
-        $tvParser      = new TvParser($fileParser, $loaderFactory);
-        $desktopParser = new DesktopParser($fileParser, $loaderFactory);
+        $darwinParser  = new DarwinParser($fileParser);
+        $mobileParser  = new MobileParser($fileParser);
+        $tvParser      = new TvParser($fileParser);
+        $desktopParser = new DesktopParser($fileParser);
 
         return new DeviceParser(
             $darwinParser,
             $mobileParser,
             $tvParser,
             $desktopParser,
-            $loaderFactory,
             new MobileDevice(),
             new Tv(),
             new Desktop(),

@@ -12,40 +12,21 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Parser;
 
-use BrowserDetector\Loader\CompanyLoaderInterface;
-use BrowserDetector\Loader\Helper\Data;
-use BrowserDetector\Loader\PlatformLoader;
-use BrowserDetector\Loader\PlatformLoaderInterface;
 use BrowserDetector\Parser\Helper\RulefileParser;
-use BrowserDetector\Version\VersionBuilder;
 use Psr\Log\LoggerInterface;
 
 final class PlatformParserFactory implements PlatformParserFactoryInterface
 {
-    private PlatformLoaderInterface | null $loader = null;
-
     /** @throws void */
-    public function __construct(
-        private readonly LoggerInterface $logger,
-        private readonly CompanyLoaderInterface $companyLoader,
-    ) {
+    public function __construct(private readonly LoggerInterface $logger)
+    {
         // nothing to do
     }
 
     /** @throws void */
     public function __invoke(): PlatformParserInterface
     {
-        if ($this->loader === null) {
-            $this->loader = new PlatformLoader(
-                $this->logger,
-                new Data(PlatformLoader::DATA_PATH, 'json'),
-                $this->companyLoader,
-                new VersionBuilder($this->logger),
-            );
-        }
-
         return new PlatformParser(
-            $this->loader,
             new RulefileParser($this->logger),
         );
     }

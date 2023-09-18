@@ -14,10 +14,10 @@ namespace BrowserDetector;
 
 use BrowserDetector\Cache\CacheInterface;
 use BrowserDetector\Header\HeaderInterface;
-use BrowserDetector\Parser\BrowserParserInterface;
-use BrowserDetector\Parser\DeviceParserInterface;
-use BrowserDetector\Parser\EngineParserInterface;
-use BrowserDetector\Parser\PlatformParserInterface;
+use BrowserDetector\Loader\BrowserLoaderInterface;
+use BrowserDetector\Loader\DeviceLoaderFactoryInterface;
+use BrowserDetector\Loader\EngineLoaderInterface;
+use BrowserDetector\Loader\PlatformLoaderInterface;
 use BrowserDetector\Version\NotNumericException;
 use BrowserDetector\Version\VersionBuilder;
 use Psr\Http\Message\MessageInterface;
@@ -47,10 +47,10 @@ final class Detector implements DetectorInterface
         private readonly LoggerInterface $logger,
         private readonly CacheInterface $cache,
         private readonly RequestBuilder $requestBuilder,
-        private readonly DeviceParserInterface $deviceParser,
-        private readonly PlatformParserInterface $platformParser,
-        private readonly BrowserParserInterface $browserParser,
-        private readonly EngineParserInterface $engineParser,
+        private readonly DeviceLoaderFactoryInterface $deviceLoaderFactory,
+        private readonly PlatformLoaderInterface $platformLoader,
+        private readonly BrowserLoaderInterface $browserLoader,
+        private readonly EngineLoaderInterface $engineLoader,
     ) {
         // nothing to do
     }
@@ -288,7 +288,7 @@ final class Detector implements DetectorInterface
 
         if ($engineCodename !== null) {
             try {
-                $engine = $this->engineParser->load(
+                $engine = $this->engineLoader->load(
                     key: $engineCodename,
                     useragent: $engineHeader instanceof HeaderInterface ? $engineHeader->getValue() : '',
                 );
@@ -353,7 +353,7 @@ final class Detector implements DetectorInterface
 
         if ($clientCodename !== null) {
             try {
-                [$client, $engineCodenameFromClient] = $this->browserParser->load(
+                [$client, $engineCodenameFromClient] = $this->browserLoader->load(
                     key: $clientCodename,
                     useragent: $clientHeader instanceof HeaderInterface ? $clientHeader->getValue() : '',
                 );
@@ -436,7 +436,7 @@ final class Detector implements DetectorInterface
 
         if ($platformCodename !== null) {
             try {
-                $platform = $this->platformParser->load(
+                $platform = $this->platformLoader->load(
                     key: $platformCodename,
                     useragent: $platformHeader instanceof HeaderInterface ? $platformHeader->getValue() : '',
                 );
@@ -480,10 +480,9 @@ final class Detector implements DetectorInterface
             [$company, $key] = explode('=', $deviceCodename, 2);
 
             try {
-                [$device, $platformCodenameFromDevice] = $this->deviceParser->load(
-                    company: $company,
-                    key: $key,
-                );
+                $deviceLoader = ($this->deviceLoaderFactory)($company);
+
+                [$device, $platformCodenameFromDevice] = $deviceLoader->load($key);
 
                 return [
                     $device['deviceName'],

@@ -12,7 +12,6 @@ declare(strict_types = 1);
 
 namespace BrowserDetectorTest\Parser;
 
-use BrowserDetector\Loader\CompanyLoaderInterface;
 use BrowserDetector\Parser\EngineParser;
 use BrowserDetector\Parser\EngineParserFactory;
 use BrowserDetector\Parser\EngineParserInterface;
@@ -29,10 +28,9 @@ final class EngineParserFactoryTest extends TestCase
      */
     public function testInvoke(): void
     {
-        $logger        = $this->createMock(LoggerInterface::class);
-        $companyLoader = $this->createMock(CompanyLoaderInterface::class);
+        $logger = $this->createMock(LoggerInterface::class);
 
-        $factory = new EngineParserFactory($logger, $companyLoader);
+        $factory = new EngineParserFactory($logger);
 
         $parser = $factory();
 
