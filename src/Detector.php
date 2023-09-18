@@ -46,7 +46,7 @@ final class Detector implements DetectorInterface
          */
         private readonly LoggerInterface $logger,
         private readonly CacheInterface $cache,
-        private readonly RequestBuilder $requestBuilder,
+        private readonly RequestBuilderInterface $requestBuilder,
         private readonly DeviceLoaderFactoryInterface $deviceLoaderFactory,
         private readonly PlatformLoaderInterface $platformLoader,
         private readonly BrowserLoaderInterface $browserLoader,
@@ -93,18 +93,20 @@ final class Detector implements DetectorInterface
     {
         $engineCodename = null;
 
+        $filteredHeaders = $request->getFilteredHeaders();
+
         /* detect device */
-        $deviceIsMobile = $this->getDeviceIsMobile($request);
+        $deviceIsMobile = $this->getDeviceIsMobile($filteredHeaders);
 
         [$deviceName, $deviceMarketingName, $deviceManufacturer, $brand, $dualOrientation, $simCount, $display, $deviceType, $deviceIsMobileFromDevice, $deviceIsTv, $platformCodenameFromDevice] = $this->getDeviceData(
-            $request,
-            $deviceIsMobile,
+            filteredHeaders: $filteredHeaders,
+            deviceIsMobile: $deviceIsMobile,
         );
 
         /* detect platform */
         [$platformName, $platformMarketingName, $platformManufacturer, $platformVersion] = $this->getPlatformData(
-            $request,
-            $platformCodenameFromDevice,
+            filteredHeaders: $filteredHeaders,
+            platformCodenameFromDevice: $platformCodenameFromDevice,
         );
 
         if (in_array(mb_strtolower($platformName ?? ''), ['ios'], true)) {
@@ -113,12 +115,12 @@ final class Detector implements DetectorInterface
 
         /* detect client */
         [$clientName, $modus, $clientVersion, $clientManufacturer, $clientType, $isBot, $engineCodenameFromClient] = $this->getClientData(
-            $request,
+            filteredHeaders: $filteredHeaders,
         );
 
         /* detect engine */
         [$engineName, $engineVersion, $engineManufaturer] = $this->getEngineData(
-            request: $request,
+            filteredHeaders: $filteredHeaders,
             engineCodename: $engineCodename,
             engineCodenameFromClient: $engineCodenameFromClient,
         );
@@ -126,7 +128,7 @@ final class Detector implements DetectorInterface
         return [
             'headers' => $request->getHeaders(),
             'device' => [
-                'architecture' => $this->getDeviceArchitecture($request),
+                'architecture' => $this->getDeviceArchitecture($filteredHeaders),
                 'deviceName' => $deviceName,
                 'marketingName' => $deviceMarketingName,
                 'manufacturer' => $deviceManufacturer,
@@ -137,7 +139,7 @@ final class Detector implements DetectorInterface
                 'type' => $deviceType,
                 'ismobile' => $deviceIsMobile ?? $deviceIsMobileFromDevice,
                 'istv' => $deviceIsTv,
-                'bits' => $this->getDeviceBitness($request),
+                'bits' => $this->getDeviceBitness($filteredHeaders),
             ],
             'os' => [
                 'name' => $platformName,
@@ -173,11 +175,15 @@ final class Detector implements DetectorInterface
         return $version->getVersion();
     }
 
-    /** @throws void */
-    private function getDeviceArchitecture(GenericRequestInterface $request): string | null
+    /**
+     * @param array<non-empty-string, HeaderInterface> $filteredHeaders
+     *
+     * @throws void
+     */
+    private function getDeviceArchitecture(array $filteredHeaders): string | null
     {
         $headersWithDeviceArchitecture = array_filter(
-            $request->getFilteredHeaders(),
+            $filteredHeaders,
             static fn (HeaderInterface $header): bool => $header->hasDeviceArchitecture(),
         );
 
@@ -190,11 +196,15 @@ final class Detector implements DetectorInterface
         return null;
     }
 
-    /** @throws void */
-    private function getDeviceBitness(GenericRequestInterface $request): int | null
+    /**
+     * @param array<non-empty-string, HeaderInterface> $filteredHeaders
+     *
+     * @throws void
+     */
+    private function getDeviceBitness(array $filteredHeaders): int | null
     {
         $headersWithDeviceBitness = array_filter(
-            $request->getFilteredHeaders(),
+            $filteredHeaders,
             static fn (HeaderInterface $header): bool => $header->hasDeviceBitness(),
         );
 
@@ -211,11 +221,15 @@ final class Detector implements DetectorInterface
         return null;
     }
 
-    /** @throws void */
-    private function getDeviceIsMobile(GenericRequestInterface $request): bool | null
+    /**
+     * @param array<non-empty-string, HeaderInterface> $filteredHeaders
+     *
+     * @throws void
+     */
+    private function getDeviceIsMobile(array $filteredHeaders): bool | null
     {
         $headersWithDeviceMobile = array_filter(
-            $request->getFilteredHeaders(),
+            $filteredHeaders,
             static fn (HeaderInterface $header): bool => $header->hasDeviceIsMobile(),
         );
 
@@ -229,13 +243,15 @@ final class Detector implements DetectorInterface
     }
 
     /**
+     * @param array<non-empty-string, HeaderInterface> $filteredHeaders
+     *
      * @throws NotNumericException
      * @throws UnexpectedValueException
      */
-    private function getEngineVersion(GenericRequestInterface $request, string | null $engineCodename): string | null
+    private function getEngineVersion(array $filteredHeaders, string | null $engineCodename): string | null
     {
         $headersWithEngineVersion = array_filter(
-            $request->getFilteredHeaders(),
+            $filteredHeaders,
             static fn (HeaderInterface $header): bool => $header->hasEngineVersion(),
         );
 
@@ -251,12 +267,14 @@ final class Detector implements DetectorInterface
     /**
      * detect the engine data
      *
+     * @param array<non-empty-string, HeaderInterface> $filteredHeaders
+     *
      * @return array{0: string|null, 1: string|null, 2: string|null}
      *
      * @throws void
      */
     private function getEngineData(
-        GenericRequestInterface $request,
+        array $filteredHeaders,
         string | null $engineCodename,
         string | null $engineCodenameFromClient,
     ): array {
@@ -265,7 +283,7 @@ final class Detector implements DetectorInterface
 
         if ($engineCodename === null) {
             $headersWithEngineName = array_filter(
-                $request->getFilteredHeaders(),
+                $filteredHeaders,
                 static fn (HeaderInterface $header): bool => $header->hasEngineCode(),
             );
 
@@ -281,7 +299,7 @@ final class Detector implements DetectorInterface
         }
 
         try {
-            $engineVersion = $this->getEngineVersion($request, $engineCodename);
+            $engineVersion = $this->getEngineVersion($filteredHeaders, $engineCodename);
         } catch (NotNumericException | UnexpectedValueException $e) {
             $this->logger->info($e);
         }
@@ -303,13 +321,15 @@ final class Detector implements DetectorInterface
     }
 
     /**
+     * @param array<non-empty-string, HeaderInterface> $filteredHeaders
+     *
      * @throws NotNumericException
      * @throws UnexpectedValueException
      */
-    private function getClientVersion(GenericRequestInterface $request, string | null $clientCodename): string | null
+    private function getClientVersion(array $filteredHeaders, string | null $clientCodename): string | null
     {
         $headersWithClientVersion = array_filter(
-            $request->getFilteredHeaders(),
+            $filteredHeaders,
             static fn (HeaderInterface $header): bool => $header->hasClientVersion(),
         );
 
@@ -325,17 +345,19 @@ final class Detector implements DetectorInterface
     /**
      * detect the client data
      *
+     * @param array<non-empty-string, HeaderInterface> $filteredHeaders
+     *
      * @return array{0: string|null, 1: string|null, 2: string|null, 3: string|null, 4: string|null, 5: bool, 6: string|null}
      *
      * @throws void
      */
-    private function getClientData(GenericRequestInterface $request): array
+    private function getClientData(array $filteredHeaders): array
     {
         $clientCodename = null;
         $clientVersion  = null;
 
         $headersWithClientCode = array_filter(
-            $request->getFilteredHeaders(),
+            $filteredHeaders,
             static fn (HeaderInterface $header): bool => $header->hasClientCode(),
         );
 
@@ -346,7 +368,7 @@ final class Detector implements DetectorInterface
         }
 
         try {
-            $clientVersion = $this->getClientVersion($request, $clientCodename);
+            $clientVersion = $this->getClientVersion($filteredHeaders, $clientCodename);
         } catch (NotNumericException | UnexpectedValueException $e) {
             $this->logger->info($e);
         }
@@ -376,15 +398,15 @@ final class Detector implements DetectorInterface
     }
 
     /**
+     * @param array<non-empty-string, HeaderInterface> $filteredHeaders
+     *
      * @throws NotNumericException
      * @throws UnexpectedValueException
      */
-    private function getPlatformVersion(
-        GenericRequestInterface $request,
-        string | null $platformCodename,
-    ): string | null {
+    private function getPlatformVersion(array $filteredHeaders, string | null $platformCodename): string | null
+    {
         $headersWithPlatformVersion = array_filter(
-            $request->getFilteredHeaders(),
+            $filteredHeaders,
             static fn (HeaderInterface $header): bool => $header->hasPlatformVersion(),
         );
 
@@ -402,19 +424,19 @@ final class Detector implements DetectorInterface
     /**
      * detect the platform data
      *
+     * @param array<non-empty-string, HeaderInterface> $filteredHeaders
+     *
      * @return array{0: string|null, 1: string|null, 2: string|null, 3: string|null}
      *
      * @throws void
      */
-    private function getPlatformData(
-        GenericRequestInterface $request,
-        string | null $platformCodenameFromDevice,
-    ): array {
+    private function getPlatformData(array $filteredHeaders, string | null $platformCodenameFromDevice): array
+    {
         $platformCodename = null;
         $platformVersion  = null;
 
         $headersWithPlatformCode = array_filter(
-            $request->getFilteredHeaders(),
+            $filteredHeaders,
             static fn (HeaderInterface $header): bool => $header->hasPlatformCode(),
         );
 
@@ -429,7 +451,7 @@ final class Detector implements DetectorInterface
         }
 
         try {
-            $platformVersion = $this->getPlatformVersion($request, $platformCodename);
+            $platformVersion = $this->getPlatformVersion($filteredHeaders, $platformCodename);
         } catch (NotNumericException | UnexpectedValueException $e) {
             $this->logger->info($e);
         }
@@ -458,14 +480,16 @@ final class Detector implements DetectorInterface
     /**
      * detect the device data
      *
+     * @param array<non-empty-string, HeaderInterface> $filteredHeaders
+     *
      * @return array{0: string|null, 1: string|null, 2: string|null, 3: string|null, 4: bool|null, 5: int|null, 6: array{width: int|null, height: int|null, touch: bool|null, size: float|null}, 7: string|null, 8: bool, 9: bool, 10: string|null}
      *
      * @throws void
      */
-    private function getDeviceData(GenericRequestInterface $request, bool | null $deviceIsMobile): array
+    private function getDeviceData(array $filteredHeaders, bool | null $deviceIsMobile): array
     {
         $headersWithDeviceCode = array_filter(
-            $request->getFilteredHeaders(),
+            $filteredHeaders,
             static fn (HeaderInterface $header): bool => $header->hasDeviceCode(),
         );
 
