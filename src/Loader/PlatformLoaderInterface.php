@@ -12,15 +12,12 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Loader;
 
-use UnexpectedValueException;
-
 interface PlatformLoaderInterface
 {
     /**
      * @return array{name: string|null, marketingName: string|null, version: string|null, manufacturer: string, bits: int|null}
      *
      * @throws NotFoundException
-     * @throws UnexpectedValueException
      */
     public function load(string $key, string $useragent = ''): array;
 }

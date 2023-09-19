@@ -331,7 +331,7 @@ final class Detector implements DetectorInterface
         $clientVersionHeader = reset($headersWithClientVersion);
 
         if ($clientVersionHeader instanceof HeaderInterface) {
-            return $this->getVersion($clientVersionHeader->getEngineVersion($clientCodename));
+            return $this->getVersion($clientVersionHeader->getClientVersion($clientCodename));
         }
 
         return null;
@@ -409,7 +409,7 @@ final class Detector implements DetectorInterface
 
         if ($platformHeaderVerion instanceof HeaderInterface) {
             return $this->getVersion(
-                $platformHeaderVerion->getEngineVersion($platformCodename),
+                $platformHeaderVerion->getPlatformVersion($platformCodename),
             );
         }
 
