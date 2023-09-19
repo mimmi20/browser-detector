@@ -91,8 +91,7 @@ final class Detector implements DetectorInterface
      */
     private function parse(GenericRequestInterface $request): array
     {
-        $engineCodename = null;
-
+        $engineCodename  = null;
         $filteredHeaders = $request->getFilteredHeaders();
 
         /* detect device */

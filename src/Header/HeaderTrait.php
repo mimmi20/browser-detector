@@ -62,7 +62,7 @@ trait HeaderTrait
     }
 
     /** @throws void */
-    public function getDeviceBitness(): string | null
+    public function getDeviceBitness(): int | null
     {
         return null;
     }

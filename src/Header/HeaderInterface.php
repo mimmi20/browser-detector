@@ -38,7 +38,7 @@ interface HeaderInterface
     public function hasDeviceBitness(): bool;
 
     /** @throws void */
-    public function getDeviceBitness(): string | null;
+    public function getDeviceBitness(): int | null;
 
     /** @throws void */
     public function hasDeviceIsMobile(): bool;

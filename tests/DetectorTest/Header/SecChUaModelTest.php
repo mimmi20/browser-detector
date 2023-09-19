@@ -115,9 +115,9 @@ final class SecChUaModelTest extends TestCase
     public static function providerUa(): array
     {
         return [
-            ['"A100"', 'A100'],
-            ['"B1-860A"', 'B1-860A'],
-            ['"Redmi Note 9 Pro"', 'Redmi Note 9 Pro'],
+            ['"A100"', 'acer=acer a100'],
+            ['"B1-860A"', 'acer=acer b1-860a'],
+            ['"Redmi Note 9 Pro"', 'xiaomi=xiaomi redmi note 9 pro'],
             ['""', null],
         ];
     }
