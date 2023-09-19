@@ -210,11 +210,7 @@ final class Detector implements DetectorInterface
         $deviceBitnessHeader = reset($headersWithDeviceBitness);
 
         if ($deviceBitnessHeader instanceof HeaderInterface) {
-            $bitness = $deviceBitnessHeader->getDeviceBitness();
-
-            if ($bitness !== null) {
-                return (int) $bitness;
-            }
+            return $deviceBitnessHeader->getDeviceBitness();
         }
 
         return null;
