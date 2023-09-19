@@ -29,12 +29,7 @@ final class SecChUaModel implements HeaderInterface
     public function getDeviceCode(): string | null
     {
         $value = trim($this->value, '"');
-
-        if ($value === '') {
-            return null;
-        }
-
-        $code = mb_strtolower($value);
+        $code  = mb_strtolower($value);
 
         return match ($code) {
             // LG
@@ -42,10 +37,10 @@ final class SecChUaModel implements HeaderInterface
             // Acer
             'a100' => 'acer=acer a100',
             'a1-734' => 'acer=acer a1-734',
-            'b3-a32' => 'acer=acer b3-a32',
             'a3-a40' => 'acer=acer a3-a40',
             'b1-7a0' => 'acer=acer b1-7a0',
             'b1-860a' => 'acer=acer b1-860a',
+            'b3-a32' => 'acer=acer b3-a32',
             'b3-a40' => 'acer=acer b3-a40',
             // AllCall
             'atom' => 'allcall=allcall atom',
