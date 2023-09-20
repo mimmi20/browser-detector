@@ -133,6 +133,16 @@ final class XRequestedWithTest extends TestCase
             ['derek.iSurf', true, null],
             ['com.aliyun.mobile.browser', true, 'aliyun-browser'],
             ['XMLHttpRequest', false, null],
+            ['com.tinyspeck.chatlyio', true, 'chatlyio app'],
+            ['com.douban.group', true, 'douban app'],
+            ['com.linkedin', true, 'linkedinbot'],
+            ['com.google.android.apps.magazines', true, 'google play newsstand'],
+            ['com.google.googlemobile', true, 'google mobile app'],
+            ['com.google.android.youtube', true, 'youtube app'],
+            ['com.apple.mobilenotes', true, 'apple mobilenotes'],
+            ['com.apple.notes', true, 'apple notes app'],
+            ['com.google.googleplus', true, 'google+ app'],
+            ['com.apple.webkit', true, 'apple webkit service'],
         ];
     }
 }

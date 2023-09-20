@@ -91,8 +91,7 @@ final class Detector implements DetectorInterface
      */
     private function parse(GenericRequestInterface $request): array
     {
-        $engineCodename = null;
-
+        $engineCodename  = null;
         $filteredHeaders = $request->getFilteredHeaders();
 
         /* detect device */
@@ -211,11 +210,7 @@ final class Detector implements DetectorInterface
         $deviceBitnessHeader = reset($headersWithDeviceBitness);
 
         if ($deviceBitnessHeader instanceof HeaderInterface) {
-            $bitness = $deviceBitnessHeader->getDeviceBitness();
-
-            if ($bitness !== null) {
-                return (int) $bitness;
-            }
+            return $deviceBitnessHeader->getDeviceBitness();
         }
 
         return null;
@@ -336,7 +331,7 @@ final class Detector implements DetectorInterface
         $clientVersionHeader = reset($headersWithClientVersion);
 
         if ($clientVersionHeader instanceof HeaderInterface) {
-            return $this->getVersion($clientVersionHeader->getEngineVersion($clientCodename));
+            return $this->getVersion($clientVersionHeader->getClientVersion($clientCodename));
         }
 
         return null;
@@ -414,7 +409,7 @@ final class Detector implements DetectorInterface
 
         if ($platformHeaderVerion instanceof HeaderInterface) {
             return $this->getVersion(
-                $platformHeaderVerion->getEngineVersion($platformCodename),
+                $platformHeaderVerion->getPlatformVersion($platformCodename),
             );
         }
 

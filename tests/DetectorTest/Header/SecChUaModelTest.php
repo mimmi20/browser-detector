@@ -115,9 +115,27 @@ final class SecChUaModelTest extends TestCase
     public static function providerUa(): array
     {
         return [
-            ['"A100"', 'A100'],
-            ['"B1-860A"', 'B1-860A'],
-            ['"Redmi Note 9 Pro"', 'Redmi Note 9 Pro'],
+            ['"A100"', 'acer=acer a100'],
+            ['"B1-860A"', 'acer=acer b1-860a'],
+            ['"Redmi Note 9 Pro"', 'xiaomi=xiaomi redmi note 9 pro'],
+            ['"LM-G710"', 'lg=lg lm-g710'],
+            ['"A1-734"', 'acer=acer a1-734'],
+            ['"A3-A40"', 'acer=acer a3-a40'],
+            ['"B1-7A0"', 'acer=acer b1-7a0'],
+            ['"B1-860A"', 'acer=acer b1-860a'],
+            ['"B3-A32"', 'acer=acer b3-a32'],
+            ['"B3-A40"', 'acer=acer b3-a40'],
+            ['"Atom"', 'allcall=allcall atom'],
+            ['"KFKAWI"', 'amazon=amazon kfkawi'],
+            ['"KFGIWI"', 'amazon=amazon kfgiwi'],
+            ['"KFFOWI"', 'amazon=amazon kffowi'],
+            ['"KFMUWI"', 'amazon=amazon kfmuwi'],
+            ['"KFDOWI"', 'amazon=amazon kfdowi'],
+            ['"P024"', 'asus=asus p024'],
+            ['"ASUS_X00DD"', 'asus=asus x00dd'],
+            ['"Nexus 7"', 'google=google nexus 7'],
+            ['"AC2003"', 'oneplus=oneplus ac2003'],
+            ['"CPH2065"', 'oppo=oppo cph2065'],
             ['""', null],
         ];
     }

@@ -30,8 +30,7 @@ $detectorFactory = new \BrowserDetector\DetectorFactory($cache, $logger);
 $detector        = $detectorFactory();
 
 // get the result
-$result = $detector->getBrowser($request); // (deprecated)
-$result = $detector($request);
+$result = $detector->getBrowser($request);
 ```
 
 The request parameter may be a string, an array or a PSR-7 compatible message.
@@ -44,7 +43,7 @@ The request parameter may be a string, an array or a PSR-7 compatible message.
 $detectorFactory = new \BrowserDetector\DetectorFactory($cache, $logger);
 $detector        = $detectorFactory();
 
-$result = $detector($_SERVER);
+$result = $detector->getBrowser($_SERVER);
 ```
 
 ### Using a sample useragent
@@ -53,17 +52,18 @@ $result = $detector($_SERVER);
 $detectorFactory = new \BrowserDetector\DetectorFactory($cache, $logger);
 $detector        = $detectorFactory();
 
-$result = $detector($the_user_agent);
+$result = $detector->getBrowser($the_user_agent);
 ```
 
 ## The result
 
-The `getBrowser` function returns a array with this structure
+The `getBrowser` function returns an array with this structure
 
 ```php
 [
     'headers' => [],
     'device' => [
+        'architecture' => null,
         'deviceName' => null,
         'marketingName' => null,
         'manufacturer' => null,
@@ -78,20 +78,20 @@ The `getBrowser` function returns a array with this structure
         ],
         'type' => null,
         'ismobile' => null,
+        'istv' => null,
+        'bits' => null,
     ],
     'os' => [
         'name' => null,
         'marketingName' => null,
         'version' => null,
         'manufacturer' => null,
-        'bits' => null,
     ],
     'client' => [
         'name' => null,
         'modus' => null,
         'version' => null,
         'manufacturer' => null,
-        'bits' => null,
         'type' => null,
         'isbot' => null,
     ],

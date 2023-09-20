@@ -243,7 +243,7 @@
     "/^mail|mozilla\\/5\\.0.*\\(.*(cpu iphone os|cpu os) \\d+(_|\\.)\\d+.* like mac os x.*\\) applewebkit.* \\(khtml, like gecko\\)$|^mozilla\\/5\\.0 \\(macintosh; intel mac os x.*\\) applewebkit.* \\(khtml, like gecko\\)$|^mozilla\\/5\\.0 \\(windows.*\\) applewebkit.* \\(khtml, like gecko\\)$/i": "apple mail",
     "/playbook/i": "blackberry playbook tablet",
     "/flycast/i": "flycast",
-    "/bb10|blackberry/i": "blackberry",
+    "/bb10; ?(kbd|touch)|blackberry/i": "blackberry",
     "/wetab-browser/i": "wetab browser",
     "/profiller/i": "profiller",
     "/wkhtmltopdf/i": "wkhtmltopdf",

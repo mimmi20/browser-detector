@@ -23,7 +23,7 @@ final class SecChUaBitnessTest extends TestCase
 {
     /** @throws ExpectationFailedException */
     #[DataProvider('providerUa')]
-    public function testData(string $ua, string | null $bits): void
+    public function testData(string $ua, int | null $bits): void
     {
         $header = new SecChUaBitness($ua);
 
@@ -105,15 +105,15 @@ final class SecChUaBitnessTest extends TestCase
     }
 
     /**
-     * @return array<int, array<int, string|null>>
+     * @return array<int, array<int, int|string|null>>
      *
      * @throws void
      */
     public static function providerUa(): array
     {
         return [
-            ['64', '64'],
-            ['"64"', '64'],
+            ['64', 64],
+            ['"64"', 64],
             ['""', null],
         ];
     }

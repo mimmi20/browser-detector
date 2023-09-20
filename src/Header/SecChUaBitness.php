@@ -25,7 +25,7 @@ final class SecChUaBitness implements HeaderInterface
     }
 
     /** @throws void */
-    public function getDeviceBitness(): string | null
+    public function getDeviceBitness(): int | null
     {
         $value = trim($this->value, '"');
 
@@ -33,6 +33,6 @@ final class SecChUaBitness implements HeaderInterface
             return null;
         }
 
-        return $value;
+        return (int) $value;
     }
 }

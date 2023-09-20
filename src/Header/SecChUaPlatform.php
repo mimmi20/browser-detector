@@ -29,12 +29,7 @@ final class SecChUaPlatform implements HeaderInterface
     public function getPlatformCode(): string | null
     {
         $value = trim($this->value, '"');
-
-        if ($value === '') {
-            return null;
-        }
-
-        $code = mb_strtolower($value);
+        $code  = mb_strtolower($value);
 
         return match ($code) {
             'android', 'windows', 'linux', 'chromeos' => $code,
