@@ -117,5 +117,17 @@
       ]
     },
     "engine": "trident"
+  },
+  "kik": {
+    "name": "Kik",
+    "manufacturer": "unknown",
+    "type": "pim",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Kik"
+      ]
+    },
+    "engine": null
   }
 }

@@ -1363,14 +1363,25 @@
     "engine": null
   },
   "firefox klar": {
+    "name": "Firefox Klar",
+    "manufacturer": "mozilla-foundation",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Klar"
+      ]
+    },
+    "engine": null
+  },
+  "firefox focus": {
     "name": "Firefox Focus",
     "manufacturer": "mozilla-foundation",
     "type": "browser",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
-        "Focus",
-        "Klar"
+        "Focus"
       ]
     },
     "engine": null
@@ -2040,18 +2051,6 @@
       ]
     },
     "engine": "webkit"
-  },
-  "kik": {
-    "name": "Kik",
-    "manufacturer": "unknown",
-    "type": "browser",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Kik"
-      ]
-    },
-    "engine": null
   },
   "kindle": {
     "name": "Kindle",
@@ -3250,7 +3249,7 @@
       "factory": "\\BrowserDetector\\Version\\PuffinFactory",
       "search": null
     },
-    "engine": "webkit"
+    "engine": null
   },
   "pulse": {
     "name": "Pulse",
@@ -4658,6 +4657,68 @@
     "type": "browser",
     "version": {
       "class": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "via-browser": {
+    "name": "Via Browser",
+    "manufacturer": "tu-yafeng",
+    "type": "browser",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "tv-browser-internet": {
+    "name": "TV-Browser Internet",
+    "manufacturer": "hayer",
+    "type": "browser",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "ume-browser": {
+    "name": "Ume Browser",
+    "manufacturer": "ume-tech",
+    "type": "browser",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "foss-browser": {
+    "name": "Foss Browser",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "odin-browser": {
+    "name": "Odin Browser",
+    "manufacturer": "hisense",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Odin"
+      ]
+    },
+    "engine": null
+  },
+  "x-browser": {
+    "name": "XBrowser",
+    "manufacturer": "byteman.su",
+    "type": "browser",
+    "version": {
+      "factory": null,
       "search": null
     },
     "engine": null
