@@ -263,6 +263,23 @@ final class XRequestedWithTest extends TestCase
             ['net.onecook.browser', true, 'stargon-browser'],
             ['phx.hot.browser', true, 'anka-browser'],
             ['org.torproject.android', true, 'orbot'],
+            ['web.browser.dragon', true, 'dragon-browser'],
+            ['org.easyweb.browser', true, 'easy-browser'],
+            ['com.sharkeeapp.browser', true, 'sharkee-browser'],
+            ['com.mobiu.browser', true, 'lark-browser'],
+            ['com.qflair.browserq', true, 'pluma-browser'],
+            ['com.noxgroup.app.browser', true, 'nox-browser'],
+            ['com.jio.web', true, 'jio-sphere'],
+            ['com.cookiegames.smartcookie', true, 'smartcookieweb-privacy-browser'],
+            ['org.lineageos.jelly', true, 'jelly-browser'],
+            ['com.oceanhero.search', true, 'ocean-hero-app'],
+            ['com.oryon.multitasking', true, 'multitasking-app'],
+            ['net.fast.web.browser', true, 'web-browser-web-explorer'],
+            ['com.bestvideodownloader.newvideodownloader', true, 'all-video-downloader'],
+            ['com.yiyinkuang.searchboard', true, 'search+-for-google'],
+            ['com.aeroinsta.android', true, 'aero-insta'],
+            ['com.cliqz.browser', true, 'cliqz-browser'],
+            ['com.appssppa.idesktoppcbrowser', true, 'idesktop-pc-browser'],
         ];
     }
 }
