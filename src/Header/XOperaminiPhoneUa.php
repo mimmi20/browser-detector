@@ -12,6 +12,11 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Header;
 
+use BrowserDetector\Parser\DeviceParserInterface;
+use BrowserDetector\Parser\EngineParserInterface;
+use UaNormalizer\Normalizer\Exception;
+use UaNormalizer\NormalizerFactory;
+
 use function in_array;
 use function mb_strtolower;
 use function preg_match;
@@ -19,6 +24,22 @@ use function preg_match;
 final class XOperaminiPhoneUa implements HeaderInterface
 {
     use HeaderTrait;
+
+    private readonly string $normalizedValue;
+
+    /** @throws Exception */
+    public function __construct(
+        string $value,
+        private readonly DeviceParserInterface $deviceParser,
+        private readonly EngineParserInterface $engineParser,
+        private readonly NormalizerFactory $normalizerFactory,
+    ) {
+        $this->value = $value;
+
+        $normalizer = $this->normalizerFactory->build();
+
+        $this->normalizedValue = $normalizer->normalize($value);
+    }
 
     /** @throws void */
     public function hasDeviceCode(): bool
@@ -28,9 +49,21 @@ final class XOperaminiPhoneUa implements HeaderInterface
         }
 
         return (bool) preg_match(
-            '/samsung|nokia|blackberry|smartfren|sprint|iphone|lava|gionee|philips|htc|pantech|lg|casio|zte|mi 2sc/i',
+            '/samsung|nokia|blackberry|smartfren|sprint|iphone|lava|gionee|philips|htc|pantech|lg|casio|zte|mi 2sc|sm-g900f|gt-i9000|gt-s5830i|sne-lx1/i',
             $this->value,
         );
+    }
+
+    /** @throws void */
+    public function getDeviceCode(): string | null
+    {
+        $code = $this->deviceParser->parse($this->normalizedValue);
+
+        if ($code === '') {
+            return null;
+        }
+
+        return $code;
     }
 
     /** @throws void */
@@ -79,6 +112,28 @@ final class XOperaminiPhoneUa implements HeaderInterface
     /** @throws void */
     public function getPlatformCode(): string | null
     {
+        $matches = [];
+
+        if (
+            preg_match(
+                '/(?P<platform>bada|android|blackberry|brew|iphone|mre|windows( ce)?|mtk)/i',
+                $this->value,
+                $matches,
+            )
+            && isset($matches['platform'])
+        ) {
+            $code = mb_strtolower($matches['platform']);
+
+            return match ($code) {
+                'bada', 'android', 'brew', 'mre', 'windows ce' => $code,
+                'blackberry' => 'rim os',
+                'windows' => 'windows phone',
+                'iphone' => 'ios',
+                'mtk' => 'nucleus os',
+                default => null,
+            };
+        }
+
         return null;
     }
 
@@ -86,5 +141,17 @@ final class XOperaminiPhoneUa implements HeaderInterface
     public function hasEngineCode(): bool
     {
         return (bool) preg_match('/trident|presto|webkit|gecko/i', $this->value);
+    }
+
+    /** @throws void */
+    public function getEngineCode(string | null $code = null): string | null
+    {
+        $code = $this->engineParser->parse($this->normalizedValue);
+
+        if ($code === '') {
+            return null;
+        }
+
+        return $code;
     }
 }

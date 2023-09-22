@@ -12,11 +12,32 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Header;
 
+use BrowserDetector\Parser\DeviceParserInterface;
+use BrowserDetector\Parser\PlatformParserInterface;
+use UaNormalizer\Normalizer\Exception;
+use UaNormalizer\NormalizerFactory;
+
 use function preg_match;
 
 final class XUcbrowserDeviceUa implements HeaderInterface
 {
     use HeaderTrait;
+
+    private readonly string $normalizedValue;
+
+    /** @throws Exception */
+    public function __construct(
+        string $value,
+        private readonly DeviceParserInterface $deviceParser,
+        private readonly PlatformParserInterface $platformParser,
+        private readonly NormalizerFactory $normalizerFactory,
+    ) {
+        $this->value = $value;
+
+        $normalizer = $this->normalizerFactory->build();
+
+        $this->normalizedValue = $normalizer->normalize($value);
+    }
 
     /** @throws void */
     public function hasDeviceCode(): bool
@@ -25,18 +46,19 @@ final class XUcbrowserDeviceUa implements HeaderInterface
     }
 
     /** @throws void */
-    public function hasClientCode(): bool
+    public function getDeviceCode(): string | null
     {
-        return (bool) preg_match(
-            '/msie|dorado|safari|obigo|netfront|s40ovibrowser|dolfin|(?<!browser\/)opera(?!\/9\.80| mobi)|blackberry/i',
-            $this->value,
-        );
-    }
+        if ($this->value === '?') {
+            return null;
+        }
 
-    /** @throws void */
-    public function getClientCode(): string | null
-    {
-        return null;
+        $code = $this->deviceParser->parse($this->normalizedValue);
+
+        if ($code === '') {
+            return null;
+        }
+
+        return $code;
     }
 
     /** @throws void */
@@ -51,6 +73,16 @@ final class XUcbrowserDeviceUa implements HeaderInterface
     /** @throws void */
     public function getPlatformCode(): string | null
     {
-        return null;
+        if ($this->value === '?') {
+            return null;
+        }
+
+        $code = $this->platformParser->parse($this->normalizedValue);
+
+        if ($code === '') {
+            return null;
+        }
+
+        return $code;
     }
 }

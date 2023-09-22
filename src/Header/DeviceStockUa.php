@@ -12,6 +12,8 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Header;
 
+use BrowserDetector\Parser\DeviceParserInterface;
+
 use function mb_strtolower;
 use function preg_match;
 use function str_replace;
@@ -21,12 +23,39 @@ final class DeviceStockUa implements HeaderInterface
     use HeaderTrait;
 
     /** @throws void */
+    public function __construct(string $value, private readonly DeviceParserInterface $deviceParser)
+    {
+        $this->value = $value;
+    }
+
+    /** @throws void */
     public function hasDeviceCode(): bool
     {
         return (bool) preg_match(
             '/samsung|nokia|blackberry|smartfren|sprint|iphone|lava|gionee|philips|htc|mi 2sc/i',
             $this->value,
         );
+    }
+
+    /** @throws void */
+    public function getDeviceCode(): string | null
+    {
+        if (
+            !preg_match(
+                '/samsung|nokia|blackberry|smartfren|sprint|iphone|lava|gionee|philips|htc|mi 2sc/i',
+                $this->value,
+            )
+        ) {
+            return null;
+        }
+
+        $code = $this->deviceParser->parse($this->value);
+
+        if ($code === '') {
+            return null;
+        }
+
+        return $code;
     }
 
     /** @throws void */

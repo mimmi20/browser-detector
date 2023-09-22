@@ -23,8 +23,13 @@ final class XPuffinUaTest extends TestCase
 {
     /** @throws ExpectationFailedException */
     #[DataProvider('providerUa')]
-    public function testData(string $ua, bool $hasDeviceInfo, bool $hasPlatformInfo, string | null $platformCode): void
-    {
+    public function testData(
+        string $ua,
+        bool $hasDeviceInfo,
+        string | null $deviceInfo,
+        bool $hasPlatformInfo,
+        string | null $platformCode,
+    ): void {
         $header = new XPuffinUa($ua);
 
         self::assertSame($ua, $header->getValue(), sprintf('value mismatch for ua "%s"', $ua));
@@ -62,7 +67,8 @@ final class XPuffinUaTest extends TestCase
             $header->hasDeviceCode(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
-        self::assertNull(
+        self::assertSame(
+            $deviceInfo,
             $header->getDeviceCode(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
@@ -120,19 +126,19 @@ final class XPuffinUaTest extends TestCase
     public static function providerUa(): array
     {
         return [
-            ['iPhone OS/iPad4,1/1536x2048', true, true, 'ios'],
-            ['Android/D6503/1080x1776', true, true, 'android'],
-            ['Android/SM-G900F/1080x1920', true, true, 'android'],
-            ['Android/Nexus 10/1600x2464', true, true, 'android'],
-            ['Android/SAMSUNG-SM-N910A/1440x2560', true, true, 'android'],
-            ['Android/bq Edison/1280x752', true, true, 'android'],
-            ['iPhone OS/iPhone6,1/320x568', true, true, 'ios'],
-            ['Android/LenovoA3300-HV/600x976', true, true, 'android'],
-            ['Android/SM-T310/1280x800', true, true, 'android'],
-            ['iPhone OS/iPhone7,1/1242x2208', true, true, 'ios'],
-            ['iPhone OS/iPad4,1/1024x768', true, true, 'ios'],
-            ['iPhone OS/iPhone 3GS/320x480', true, true, 'ios'],
-            ['fake OS/iPhone 3GS/320x480', true, false, null],
+            ['iPhone OS/iPad4,1/1536x2048', true, 'apple=apple ipad 4,1', true, 'ios'],
+            ['Android/D6503/1080x1776', true, 'sony=sony d6503', true, 'android'],
+            ['Android/SM-G900F/1080x1920', true, 'samsung=samsung sm-g900f', true, 'android'],
+            ['Android/Nexus 10/1600x2464', true, 'google=google nexus 10', true, 'android'],
+            ['Android/SAMSUNG-SM-N910A/1440x2560', true, 'samsung=samsung sm-n910a', true, 'android'],
+            ['Android/bq Edison/1280x752', true, 'bq=bq edison', true, 'android'],
+            ['iPhone OS/iPhone6,1/320x568', true, 'apple=apple iphone 6,1', true, 'ios'],
+            ['Android/LenovoA3300-HV/600x976', true, 'lenovo=lenovo a3300-hv', true, 'android'],
+            ['Android/SM-T310/1280x800', true, 'samsung=samsung sm-t310', true, 'android'],
+            ['iPhone OS/iPhone7,1/1242x2208', true, 'apple=apple iphone 7,1', true, 'ios'],
+            ['iPhone OS/iPad4,1/1024x768', true, 'apple=apple ipad 4,1', true, 'ios'],
+            ['iPhone OS/iPhone 3GS/320x480', true, 'apple=apple iphone 2,1', true, 'ios'],
+            ['fake OS/iPhone 3GS/320x480', false, null, false, null],
         ];
     }
 }

@@ -45,9 +45,11 @@ final class HeaderLoader implements HeaderLoaderInterface
         $this->factories = [
             Constants::HEADER_BAIDU_FLYFLOW => static fn (string $header): HeaderInterface => new BaiduFlyflow(
                 $header,
+                $deviceParser,
             ),
             Constants::HEADER_DEVICE_STOCK_UA => static fn (string $header): HeaderInterface => new DeviceStockUa(
                 $header,
+                $deviceParser,
             ),
             Constants::HEADER_SEC_CH_UA => static fn (string $header): HeaderInterface => new SecChUa(
                 $header,
@@ -101,12 +103,17 @@ final class HeaderLoader implements HeaderLoaderInterface
             ),
             Constants::HEADER_DEVICE_UA => static fn (string $header): HeaderInterface => new XDeviceUseragent(
                 $header,
+                $deviceParser,
+                $normalizerFactory,
             ),
             Constants::HEADER_OPERAMINI_PHONE => static fn (string $header): HeaderInterface => new XOperaminiPhone(
                 $header,
             ),
             Constants::HEADER_OPERAMINI_PHONE_UA => static fn (string $header): HeaderInterface => new XOperaminiPhoneUa(
                 $header,
+                $deviceParser,
+                $engineParser,
+                $normalizerFactory,
             ),
             Constants::HEADER_PUFFIN_UA => static fn (string $header): HeaderInterface => new XPuffinUa(
                 $header,
@@ -116,9 +123,14 @@ final class HeaderLoader implements HeaderLoaderInterface
             ),
             Constants::HEADER_UCBROWSER_DEVICE => static fn (string $header): HeaderInterface => new XUcbrowserDevice(
                 $header,
+                $deviceParser,
+                $normalizerFactory,
             ),
             Constants::HEADER_UCBROWSER_DEVICE_UA => static fn (string $header): HeaderInterface => new XUcbrowserDeviceUa(
                 $header,
+                $deviceParser,
+                $platformParser,
+                $normalizerFactory,
             ),
             Constants::HEADER_UCBROWSER_PHONE => static fn (string $header): HeaderInterface => new XUcbrowserPhone(
                 $header,
@@ -128,6 +140,7 @@ final class HeaderLoader implements HeaderLoaderInterface
             ),
             Constants::HEADER_UCBROWSER_UA => static fn (string $header): HeaderInterface => new XUcbrowserUa(
                 $header,
+                $deviceParser,
             ),
         ];
     }

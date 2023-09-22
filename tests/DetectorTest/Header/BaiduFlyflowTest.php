@@ -13,10 +13,12 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest\Header;
 
 use BrowserDetector\Header\BaiduFlyflow;
+use BrowserDetector\Parser\DeviceParserInterface;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 
+use function preg_match;
 use function sprintf;
 
 final class BaiduFlyflowTest extends TestCase
@@ -25,7 +27,21 @@ final class BaiduFlyflowTest extends TestCase
     #[DataProvider('providerUa')]
     public function testData(string $ua, bool $hasDeviceInfo): void
     {
-        $header = new BaiduFlyflow($ua);
+        $deviceCode = 'test-device-code';
+        $searchCode = false;
+
+        if (!preg_match('/;htc;htc;/i', $ua)) {
+            $searchCode = true;
+        }
+
+        $deviceParser = $this->createMock(DeviceParserInterface::class);
+        $deviceParser
+            ->expects($searchCode ? self::once() : self::never())
+            ->method('parse')
+            ->with($searchCode)
+            ->willReturn($deviceCode);
+
+        $header = new BaiduFlyflow($ua, $deviceParser);
 
         self::assertSame($ua, $header->getValue(), sprintf('value mismatch for ua "%s"', $ua));
         self::assertSame(
@@ -62,7 +78,8 @@ final class BaiduFlyflowTest extends TestCase
             $header->hasDeviceCode(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
-        self::assertNull(
+        self::assertSame(
+            $searchCode ? $deviceCode : null,
             $header->getDeviceCode(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );

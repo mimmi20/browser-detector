@@ -41,22 +41,15 @@ final class GenericRequest implements GenericRequestInterface
         Constants::HEADER_UCBROWSER_DEVICE,
         Constants::HEADER_UCBROWSER_PHONE_UA,
         Constants::HEADER_UCBROWSER_PHONE,
-        Constants::HEADER_DEVICE_STOCK_UA,
-        Constants::HEADER_SKYFIRE_PHONE,
         Constants::HEADER_OPERAMINI_PHONE_UA,
+        Constants::HEADER_DEVICE_STOCK_UA,
         Constants::HEADER_OPERAMINI_PHONE,
-        Constants::HEADER_SKYFIRE_VERSION,
-        Constants::HEADER_BLUECOAT_VIA,
-        Constants::HEADER_BOLT_PHONE_UA,
-        Constants::HEADER_MOBILE_UA,
         Constants::HEADER_REQUESTED_WITH,
         Constants::HEADER_ORIGINAL_UA,
         Constants::HEADER_UA_OS,
         Constants::HEADER_BAIDU_FLYFLOW,
         Constants::HEADER_PUFFIN_UA,
         Constants::HEADER_USERAGENT,
-        Constants::HEADER_WAP_PROFILE,
-        Constants::HEADER_NB_CONTENT,
     ];
 
     /** @var array<non-empty-string, non-empty-string> */

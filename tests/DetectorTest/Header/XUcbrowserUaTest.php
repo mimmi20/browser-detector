@@ -13,10 +13,12 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest\Header;
 
 use BrowserDetector\Header\XUcbrowserUa;
+use BrowserDetector\Parser\DeviceParserInterface;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 
+use function preg_match;
 use function sprintf;
 
 final class XUcbrowserUaTest extends TestCase
@@ -35,7 +37,27 @@ final class XUcbrowserUaTest extends TestCase
         string | null $platformVersion,
         bool $hasEngineInfo,
     ): void {
-        $header = new XUcbrowserUa($ua);
+        $deviceCode = 'test-device-code';
+        $searchCode = null;
+
+        $matches = [];
+
+        if (
+            preg_match('/dv\((?P<device>[^)]+)\);/', $ua, $matches)
+            && $matches['device'] !== 'j2me'
+            && $matches['device'] !== 'Opera'
+        ) {
+            $searchCode = $matches['device'];
+        }
+
+        $deviceParser = $this->createMock(DeviceParserInterface::class);
+        $deviceParser
+            ->expects($searchCode === null ? self::never() : self::once())
+            ->method('parse')
+            ->with($searchCode)
+            ->willReturn($deviceCode);
+
+        $header = new XUcbrowserUa($ua, $deviceParser);
 
         self::assertSame($ua, $header->getValue(), sprintf('value mismatch for ua "%s"', $ua));
         self::assertSame(
@@ -72,7 +94,8 @@ final class XUcbrowserUaTest extends TestCase
             $header->hasDeviceCode(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
-        self::assertNull(
+        self::assertSame(
+            $searchCode === null ? null : $deviceCode,
             $header->getDeviceCode(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );

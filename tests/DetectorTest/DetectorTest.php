@@ -252,7 +252,6 @@ final class DetectorTest extends TestCase
             ],
             'client' => [
                 'name' => null,
-                'modus' => null,
                 'version' => null,
                 'manufacturer' => null,
                 'type' => null,
@@ -478,7 +477,6 @@ final class DetectorTest extends TestCase
             ],
             'client' => [
                 'name' => null,
-                'modus' => null,
                 'version' => null,
                 'manufacturer' => null,
                 'type' => null,
@@ -703,7 +701,6 @@ final class DetectorTest extends TestCase
             ],
             'client' => [
                 'name' => null,
-                'modus' => null,
                 'version' => null,
                 'manufacturer' => null,
                 'type' => null,
@@ -927,7 +924,6 @@ final class DetectorTest extends TestCase
             ],
             'client' => [
                 'name' => null,
-                'modus' => null,
                 'version' => null,
                 'manufacturer' => null,
                 'type' => null,
@@ -1153,7 +1149,6 @@ final class DetectorTest extends TestCase
             ],
             'client' => [
                 'name' => null,
-                'modus' => null,
                 'version' => null,
                 'manufacturer' => null,
                 'type' => null,
@@ -1270,7 +1265,6 @@ final class DetectorTest extends TestCase
                     'marketingName' => 'Android',
                     'version' => null,
                     'manufacturer' => 'google',
-                    'bits' => null,
                 ],
             );
 
@@ -1420,7 +1414,6 @@ final class DetectorTest extends TestCase
             ],
             'client' => [
                 'name' => null,
-                'modus' => null,
                 'version' => null,
                 'manufacturer' => null,
                 'type' => null,
@@ -1663,7 +1656,6 @@ final class DetectorTest extends TestCase
             ],
             'client' => [
                 'name' => null,
-                'modus' => null,
                 'version' => null,
                 'manufacturer' => null,
                 'type' => null,
@@ -1780,7 +1772,6 @@ final class DetectorTest extends TestCase
                     'marketingName' => 'Linux',
                     'version' => null,
                     'manufacturer' => 'linux-foundation',
-                    'bits' => null,
                 ],
             );
 
@@ -1938,7 +1929,6 @@ final class DetectorTest extends TestCase
             ],
             'client' => [
                 'name' => null,
-                'modus' => null,
                 'version' => null,
                 'manufacturer' => null,
                 'type' => null,
@@ -2205,7 +2195,6 @@ final class DetectorTest extends TestCase
             ],
             'client' => [
                 'name' => null,
-                'modus' => null,
                 'version' => null,
                 'manufacturer' => null,
                 'type' => null,
@@ -2323,7 +2312,6 @@ final class DetectorTest extends TestCase
                     'marketingName' => 'Linux',
                     'version' => null,
                     'manufacturer' => 'linux-foundation',
-                    'bits' => null,
                 ],
             );
 
@@ -2480,7 +2468,6 @@ final class DetectorTest extends TestCase
             ],
             'client' => [
                 'name' => null,
-                'modus' => null,
                 'version' => null,
                 'manufacturer' => null,
                 'type' => null,
@@ -2598,7 +2585,6 @@ final class DetectorTest extends TestCase
                     'marketingName' => 'Linux',
                     'version' => null,
                     'manufacturer' => 'linux-foundation',
-                    'bits' => null,
                 ],
             );
 
@@ -2748,7 +2734,6 @@ final class DetectorTest extends TestCase
             ],
             'client' => [
                 'name' => 'Android WebView',
-                'modus' => null,
                 'version' => null,
                 'manufacturer' => 'google',
                 'type' => 'browser',
@@ -2838,10 +2823,8 @@ final class DetectorTest extends TestCase
                 [
                     [
                         'name' => 'Android WebView',
-                        'modus' => null,
                         'version' => null,
                         'manufacturer' => 'google',
-                        'bits' => null,
                         'type' => 'browser',
                         'isbot' => false,
                     ],
@@ -2992,7 +2975,6 @@ final class DetectorTest extends TestCase
             ],
             'client' => [
                 'name' => null,
-                'modus' => null,
                 'version' => null,
                 'manufacturer' => null,
                 'type' => null,
@@ -3226,7 +3208,6 @@ final class DetectorTest extends TestCase
             ],
             'client' => [
                 'name' => 'Android WebView',
-                'modus' => null,
                 'version' => $clientVersion,
                 'manufacturer' => 'google',
                 'type' => 'browser',
@@ -3316,10 +3297,8 @@ final class DetectorTest extends TestCase
                 [
                     [
                         'name' => 'Android WebView',
-                        'modus' => null,
                         'version' => null,
                         'manufacturer' => 'google',
-                        'bits' => null,
                         'type' => 'browser',
                         'isbot' => true,
                     ],
@@ -3485,7 +3464,6 @@ final class DetectorTest extends TestCase
             ],
             'client' => [
                 'name' => 'Android WebView',
-                'modus' => null,
                 'version' => $clientVersion,
                 'manufacturer' => 'google',
                 'type' => 'browser',
@@ -3575,10 +3553,8 @@ final class DetectorTest extends TestCase
                 [
                     [
                         'name' => 'Android WebView',
-                        'modus' => null,
                         'version' => null,
                         'manufacturer' => 'google',
-                        'bits' => null,
                         'type' => 'browser',
                         'isbot' => true,
                     ],
@@ -3745,7 +3721,6 @@ final class DetectorTest extends TestCase
             ],
             'client' => [
                 'name' => 'Android WebView',
-                'modus' => null,
                 'version' => null,
                 'manufacturer' => 'google',
                 'type' => 'browser',
@@ -3836,10 +3811,8 @@ final class DetectorTest extends TestCase
                 [
                     [
                         'name' => 'Android WebView',
-                        'modus' => null,
                         'version' => null,
                         'manufacturer' => 'google',
-                        'bits' => null,
                         'type' => 'browser',
                         'isbot' => true,
                     ],
@@ -4005,7 +3978,6 @@ final class DetectorTest extends TestCase
             ],
             'client' => [
                 'name' => 'Android WebView',
-                'modus' => null,
                 'version' => $clientVersion,
                 'manufacturer' => 'google',
                 'type' => 'browser',
@@ -4092,7 +4064,6 @@ final class DetectorTest extends TestCase
                     'marketingName' => 'iOS',
                     'version' => null,
                     'manufacturer' => 'apple',
-                    'bits' => null,
                 ],
             );
 
@@ -4105,10 +4076,8 @@ final class DetectorTest extends TestCase
                 [
                     [
                         'name' => 'Android WebView',
-                        'modus' => null,
                         'version' => null,
                         'manufacturer' => 'google',
-                        'bits' => null,
                         'type' => 'browser',
                         'isbot' => true,
                     ],
@@ -4276,7 +4245,6 @@ final class DetectorTest extends TestCase
             ],
             'client' => [
                 'name' => 'Android WebView',
-                'modus' => null,
                 'version' => $clientVersion,
                 'manufacturer' => 'google',
                 'type' => 'browser',
@@ -4364,7 +4332,6 @@ final class DetectorTest extends TestCase
                     'marketingName' => 'iOS',
                     'version' => null,
                     'manufacturer' => 'apple',
-                    'bits' => null,
                 ],
             );
 
@@ -4377,10 +4344,8 @@ final class DetectorTest extends TestCase
                 [
                     [
                         'name' => 'Android WebView',
-                        'modus' => null,
                         'version' => null,
                         'manufacturer' => 'google',
-                        'bits' => null,
                         'type' => 'browser',
                         'isbot' => true,
                     ],
@@ -4541,7 +4506,6 @@ final class DetectorTest extends TestCase
             ],
             'client' => [
                 'name' => 'Android WebView',
-                'modus' => null,
                 'version' => $clientVersion,
                 'manufacturer' => 'google',
                 'type' => 'browser',
@@ -4629,7 +4593,6 @@ final class DetectorTest extends TestCase
                     'marketingName' => 'iOS',
                     'version' => null,
                     'manufacturer' => 'apple',
-                    'bits' => null,
                 ],
             );
 
@@ -4642,10 +4605,8 @@ final class DetectorTest extends TestCase
                 [
                     [
                         'name' => 'Android WebView',
-                        'modus' => null,
                         'version' => null,
                         'manufacturer' => 'google',
-                        'bits' => null,
                         'type' => 'browser',
                         'isbot' => true,
                     ],
@@ -4812,7 +4773,6 @@ final class DetectorTest extends TestCase
             ],
             'client' => [
                 'name' => 'Android WebView',
-                'modus' => null,
                 'version' => $clientVersion,
                 'manufacturer' => 'google',
                 'type' => 'browser',
@@ -4900,7 +4860,6 @@ final class DetectorTest extends TestCase
                     'marketingName' => 'iOS',
                     'version' => null,
                     'manufacturer' => 'apple',
-                    'bits' => null,
                 ],
             );
 
@@ -4913,10 +4872,8 @@ final class DetectorTest extends TestCase
                 [
                     [
                         'name' => 'Android WebView',
-                        'modus' => null,
                         'version' => null,
                         'manufacturer' => 'google',
-                        'bits' => null,
                         'type' => 'browser',
                         'isbot' => true,
                     ],
@@ -5083,7 +5040,6 @@ final class DetectorTest extends TestCase
             ],
             'client' => [
                 'name' => 'Android WebView',
-                'modus' => null,
                 'version' => null,
                 'manufacturer' => 'google',
                 'type' => 'browser',
@@ -5174,10 +5130,8 @@ final class DetectorTest extends TestCase
                 [
                     [
                         'name' => 'Android WebView',
-                        'modus' => null,
                         'version' => null,
                         'manufacturer' => 'google',
-                        'bits' => null,
                         'type' => 'browser',
                         'isbot' => true,
                     ],

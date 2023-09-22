@@ -12,6 +12,8 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Header;
 
+use BrowserDetector\Parser\DeviceParserInterface;
+
 use function preg_match;
 
 final class BaiduFlyflow implements HeaderInterface
@@ -19,10 +21,32 @@ final class BaiduFlyflow implements HeaderInterface
     use HeaderTrait;
 
     /** @throws void */
+    public function __construct(string $value, private readonly DeviceParserInterface $deviceParser)
+    {
+        $this->value = $value;
+    }
+
+    /** @throws void */
     public function hasDeviceCode(): bool
     {
         $hasMatch = preg_match('/;htc;htc;/i', $this->value);
 
         return !$hasMatch;
+    }
+
+    /** @throws void */
+    public function getDeviceCode(): string | null
+    {
+        if (preg_match('/;htc;htc;/i', $this->value)) {
+            return null;
+        }
+
+        $code = $this->deviceParser->parse($this->value);
+
+        if ($code === '') {
+            return null;
+        }
+
+        return $code;
     }
 }

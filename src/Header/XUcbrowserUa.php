@@ -12,6 +12,8 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Header;
 
+use BrowserDetector\Parser\DeviceParserInterface;
+
 use function mb_strtolower;
 use function preg_match;
 use function str_replace;
@@ -19,6 +21,12 @@ use function str_replace;
 final class XUcbrowserUa implements HeaderInterface
 {
     use HeaderTrait;
+
+    /** @throws void */
+    public function __construct(string $value, private readonly DeviceParserInterface $deviceParser)
+    {
+        $this->value = $value;
+    }
 
     /** @throws void */
     public function hasDeviceCode(): bool
@@ -30,6 +38,28 @@ final class XUcbrowserUa implements HeaderInterface
         }
 
         return $matches['device'] !== 'j2me' && $matches['device'] !== 'Opera';
+    }
+
+    /** @throws void */
+    public function getDeviceCode(): string | null
+    {
+        $matches = [];
+
+        if (!preg_match('/dv\((?P<device>[^)]+)\);/', $this->value, $matches)) {
+            return null;
+        }
+
+        if ($matches['device'] === 'j2me' || $matches['device'] === 'Opera') {
+            return null;
+        }
+
+        $code = $this->deviceParser->parse($matches['device']);
+
+        if ($code === '') {
+            return null;
+        }
+
+        return $code;
     }
 
     /** @throws void */
