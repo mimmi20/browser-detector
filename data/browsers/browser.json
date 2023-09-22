@@ -47,6 +47,16 @@
     },
     "engine": "blink"
   },
+  "2345-browser-hd": {
+    "name": "2345 Browser HD",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "blink"
+  },
   "2345 chrome": {
     "name": "2345 Chrome",
     "manufacturer": "unknown",
@@ -5098,6 +5108,46 @@
   "incognito-browser": {
     "name": "Incognito Browser",
     "manufacturer": "coin-circle",
+    "type": "browser",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "office-browser": {
+    "name": "Office Browser",
+    "manufacturer": "morris",
+    "type": "browser",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "internet-web-browser": {
+    "name": "Internet Web Browser",
+    "manufacturer": "miada",
+    "type": "browser",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "thor-browser": {
+    "name": "Thor",
+    "manufacturer": "remmer-wilts",
+    "type": "browser",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "fiery-browser": {
+    "name": "Fiery Browser",
+    "manufacturer": "video-download-studio",
     "type": "browser",
     "version": {
       "factory": null,
