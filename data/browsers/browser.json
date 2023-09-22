@@ -3978,7 +3978,7 @@
   },
   "surfbrowser": {
     "name": "SurfBrowser",
-    "manufacturer": "unknown",
+    "manufacturer": "gl9",
     "type": "browser",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
@@ -4978,6 +4978,36 @@
   "idesktop-pc-browser": {
     "name": "iDesktop PC Browser",
     "manufacturer": "workable-apps",
+    "type": "browser",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "private-browser-web-browser": {
+    "name": "Private Browser - Web Browser",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "bloket-browser": {
+    "name": "Bloket Browser",
+    "manufacturer": "common-computer",
+    "type": "browser",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "pure-browser": {
+    "name": "Pure Browser",
+    "manufacturer": "unknown",
     "type": "browser",
     "version": {
       "factory": null,
