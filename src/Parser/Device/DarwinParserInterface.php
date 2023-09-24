@@ -17,7 +17,9 @@ use BrowserDetector\Parser\DeviceParserInterface;
 interface DarwinParserInterface extends DeviceParserInterface
 {
     /**
-     * Gets the information about the browser by User Agent
+     * Gets the information about the device by User Agent
+     *
+     * @return non-empty-string
      *
      * @throws void
      */

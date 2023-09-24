@@ -29,7 +29,9 @@ final class DarwinParser implements DarwinParserInterface
     }
 
     /**
-     * Gets the information about the browser by User Agent
+     * Gets the information about the device by User Agent
+     *
+     * @return non-empty-string
      *
      * @throws void
      */
