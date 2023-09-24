@@ -85,7 +85,7 @@ final class Detector implements DetectorInterface
     }
 
     /**
-     * @return array{headers: array<non-empty-string, non-empty-string>, device: array{architecture: string|null, deviceName: string|null, marketingName: string|null, manufacturer: string|null, brand: string|null, dualOrientation: bool|null, simCount: int|null, display: array{width: int|null, height: int|null, touch: bool|null, size: float|null}, type: string|null, ismobile: bool, istv: bool, bits: int|null}, os: array{name: string|null, marketingName: string|null, version: string|null, manufacturer: string|null}, client: array{name: string|null, modus: string|null, version: string|null, manufacturer: string|null, type: string|null, isbot: bool}, engine: array{name: string|null, version: string|null, manufacturer: string|null}}
+     * @return array{headers: array<non-empty-string, non-empty-string>, device: array{architecture: string|null, deviceName: string|null, marketingName: string|null, manufacturer: string|null, brand: string|null, dualOrientation: bool|null, simCount: int|null, display: array{width: int|null, height: int|null, touch: bool|null, size: float|null}, type: string|null, ismobile: bool, istv: bool, bits: int|null}, os: array{name: string|null, marketingName: string|null, version: string|null, manufacturer: string|null}, client: array{name: string|null, version: string|null, manufacturer: string|null, type: string|null, isbot: bool}, engine: array{name: string|null, version: string|null, manufacturer: string|null}}
      *
      * @throws void
      */
@@ -113,7 +113,7 @@ final class Detector implements DetectorInterface
         }
 
         /* detect client */
-        [$clientName, $modus, $clientVersion, $clientManufacturer, $clientType, $isBot, $engineCodenameFromClient] = $this->getClientData(
+        [$clientName, $clientVersion, $clientManufacturer, $clientType, $isBot, $engineCodenameFromClient] = $this->getClientData(
             filteredHeaders: $filteredHeaders,
         );
 
@@ -148,7 +148,6 @@ final class Detector implements DetectorInterface
             ],
             'client' => [
                 'name' => $clientName,
-                'modus' => $modus,
                 'version' => $clientVersion,
                 'manufacturer' => $clientManufacturer,
                 'type' => $clientType,
@@ -342,7 +341,7 @@ final class Detector implements DetectorInterface
      *
      * @param array<non-empty-string, HeaderInterface> $filteredHeaders
      *
-     * @return array{0: string|null, 1: string|null, 2: string|null, 3: string|null, 4: string|null, 5: bool, 6: string|null}
+     * @return array{0: string|null, 1: string|null, 2: string|null, 3: string|null, 4: bool, 5: string|null}
      *
      * @throws void
      */
@@ -377,7 +376,6 @@ final class Detector implements DetectorInterface
 
                 return [
                     $client['name'],
-                    $client['modus'],
                     $clientVersion ?? $client['version'],
                     $client['manufacturer'],
                     $client['type'],
@@ -389,7 +387,7 @@ final class Detector implements DetectorInterface
             }
         }
 
-        return [null, null, $clientVersion, null, null, false, null];
+        return [null, $clientVersion, null, null, false, null];
     }
 
     /**

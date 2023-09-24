@@ -12,7 +12,6 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Loader;
 
-use BrowserDetector\Bits\Browser;
 use BrowserDetector\Loader\Helper\DataInterface;
 use BrowserDetector\Version\VersionBuilderInterface;
 use Psr\Log\LoggerInterface;
@@ -23,7 +22,6 @@ use UnexpectedValueException;
 
 use function array_key_exists;
 use function assert;
-use function is_int;
 use function is_string;
 
 final class BrowserLoader implements BrowserLoaderInterface
@@ -46,7 +44,7 @@ final class BrowserLoader implements BrowserLoaderInterface
     }
 
     /**
-     * @return array{0: array{name: string|null, modus: string|null, version: string|null, manufacturer: string, bits: int|null, type: string, isbot: bool}, 1: string|null}
+     * @return array{0: array{name: string|null, version: string|null, manufacturer: string, type: string, isbot: bool}, 1: string|null}
      *
      * @throws NotFoundException
      */
@@ -64,9 +62,6 @@ final class BrowserLoader implements BrowserLoaderInterface
 
         assert($browserData instanceof stdClass);
 
-        $browserData->bits  = (new Browser())->getBits($useragent);
-        $browserData->modus = null;
-
         assert(is_string($browserData->engine) || $browserData->engine === null);
 
         return [
@@ -78,7 +73,7 @@ final class BrowserLoader implements BrowserLoaderInterface
     /**
      * @param array<string, int|string|null> $data
      *
-     * @return array{name: string|null, modus: string|null, version: string|null, manufacturer: string, bits: int|null, type: string, isbot: bool}
+     * @return array{name: string|null, version: string|null, manufacturer: string, type: string, isbot: bool}
      *
      * @throws void
      */
@@ -106,19 +101,9 @@ final class BrowserLoader implements BrowserLoaderInterface
             array_key_exists('type', $data) && (is_string($data['type']) || $data['type'] === null),
             '"type" property is required',
         );
-        assert(
-            array_key_exists('bits', $data) && (is_int($data['bits']) || $data['bits'] === null),
-            '"bits" property is required',
-        );
-        assert(
-            array_key_exists('modus', $data) && (is_string($data['modus']) || $data['modus'] === null),
-            '"modus" property is required',
-        );
 
-        $name  = $data['name'];
-        $modus = $data['modus'];
-        $bits  = $data['bits'];
-        $type  = new Unknown();
+        $name = $data['name'];
+        $type = new Unknown();
 
         if ($data['type'] !== null) {
             try {
@@ -149,10 +134,8 @@ final class BrowserLoader implements BrowserLoaderInterface
 
         return [
             'name' => $name,
-            'modus' => $modus,
             'version' => $versionString,
             'manufacturer' => $manufacturer['type'],
-            'bits' => $bits,
             'type' => $type->getType(),
             'isbot' => $type->isBot(),
         ];

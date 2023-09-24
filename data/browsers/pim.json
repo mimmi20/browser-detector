@@ -117,5 +117,57 @@
       ]
     },
     "engine": "trident"
+  },
+  "kik": {
+    "name": "Kik",
+    "manufacturer": "unknown",
+    "type": "pim",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Kik"
+      ]
+    },
+    "engine": null
+  },
+  "telekom-mail": {
+    "name": "Telekom Mail",
+    "manufacturer": "telekom",
+    "type": "pim",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "freenet-mail": {
+    "name": "freenet Mail",
+    "manufacturer": "freenet.de",
+    "type": "pim",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "einsundeins-mail": {
+    "name": "1&1 Mail",
+    "manufacturer": "einsundeins",
+    "type": "pim",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "gmx-mail": {
+    "name": "GMX Mail",
+    "manufacturer": "einsundeins",
+    "type": "pim",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
   }
 }

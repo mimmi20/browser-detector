@@ -13,19 +13,39 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest\Header;
 
 use BrowserDetector\Header\XDeviceUseragent;
+use BrowserDetector\Parser\DeviceParserInterface;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
+use UaNormalizer\Normalizer\Exception;
+use UaNormalizer\NormalizerFactory;
 
 use function sprintf;
 
 final class XDeviceUseragentTest extends TestCase
 {
-    /** @throws ExpectationFailedException */
+    /**
+     * @throws ExpectationFailedException
+     * @throws Exception
+     */
     #[DataProvider('providerUa')]
     public function testData(string $ua, bool $hasDeviceInfo): void
     {
-        $header = new XDeviceUseragent($ua);
+        $deviceCode = 'test-device-code';
+
+        $normalizerFactory = new NormalizerFactory();
+        $normalizer        = $normalizerFactory->build();
+
+        $normalitedUa = $normalizer->normalize($ua);
+
+        $deviceParser = $this->createMock(DeviceParserInterface::class);
+        $deviceParser
+            ->expects(self::once())
+            ->method('parse')
+            ->with($normalitedUa)
+            ->willReturn($deviceCode);
+
+        $header = new XDeviceUseragent($ua, $deviceParser, $normalizerFactory);
 
         self::assertSame($ua, $header->getValue(), sprintf('value mismatch for ua "%s"', $ua));
         self::assertSame(
@@ -62,7 +82,8 @@ final class XDeviceUseragentTest extends TestCase
             $header->hasDeviceCode(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
-        self::assertNull(
+        self::assertSame(
+            $deviceCode,
             $header->getDeviceCode(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );

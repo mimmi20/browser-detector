@@ -1,0 +1,44 @@
+[
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Win64; x64; Trident/5.0) AppEngine-Google; (+http://code.google.com/appengine; appid: s~kindle-11)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Kindle",
+      "marketingName": "Kindle",
+      "manufacturer": "amazon",
+      "brand": "amazon",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 800,
+        "height": 600,
+        "touch": true,
+        "size": null
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows",
+      "marketingName": "Windows",
+      "version": "7.0.0",
+      "manufacturer": "microsoft"
+    },
+    "client": {
+      "name": "Google App Engine",
+      "version": null,
+      "manufacturer": "google",
+      "type": "bot",
+      "isbot": true
+    },
+    "engine": {
+      "name": "Trident",
+      "version": "5.0.0",
+      "manufacturer": "microsoft"
+    }
+  }
+]

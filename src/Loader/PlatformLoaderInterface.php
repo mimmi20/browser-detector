@@ -15,7 +15,7 @@ namespace BrowserDetector\Loader;
 interface PlatformLoaderInterface
 {
     /**
-     * @return array{name: string|null, marketingName: string|null, version: string|null, manufacturer: string, bits: int|null}
+     * @return array{name: string|null, marketingName: string|null, version: string|null, manufacturer: string}
      *
      * @throws NotFoundException
      */

@@ -1,0 +1,48 @@
+[
+  {
+    "headers": {
+      "sec-fetch-dest": "image",
+      "sec-fetch-mode": "no-cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; CPH1907) AppleWebKit/537.36 (KHTML, like Gecko) Soul/4.0 Chrome/102.0.5005.125 Mobile Safari/537.36",
+      "x-requested-with": "com.mycompany.app.soulbrowser"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "CPH1907",
+      "marketingName": "Reno 2",
+      "manufacturer": "bbk",
+      "brand": "oppo",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.5
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Soul Browser",
+      "version": null,
+      "manufacturer": "soul-soft",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "102.0.5005.125",
+      "manufacturer": "google"
+    }
+  }
+]

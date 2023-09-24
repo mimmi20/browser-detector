@@ -227,7 +227,6 @@ final class BrowserLoaderTest extends TestCase
             'type' => 'unknown',
             'engine' => null,
             'name' => null,
-            'modus' => null,
         ];
 
         $initData
@@ -268,10 +267,8 @@ final class BrowserLoaderTest extends TestCase
         $expected = [
             [
                 'name' => null,
-                'modus' => null,
                 'version' => null,
                 'manufacturer' => 'unknown',
-                'bits' => null,
                 'type' => 'unknown',
                 'isbot' => false,
             ],
@@ -331,7 +328,6 @@ final class BrowserLoaderTest extends TestCase
             'type' => 'unknown',
             'engine' => 'unknown',
             'name' => null,
-            'modus' => null,
         ];
 
         $initData
@@ -372,10 +368,8 @@ final class BrowserLoaderTest extends TestCase
         $expected = [
             [
                 'name' => null,
-                'modus' => null,
                 'version' => '1.0.0',
                 'manufacturer' => 'unknown',
-                'bits' => null,
                 'type' => 'unknown',
                 'isbot' => false,
             ],
@@ -437,7 +431,6 @@ final class BrowserLoaderTest extends TestCase
             'type' => 'unknown',
             'engine' => $engineKey,
             'name' => null,
-            'modus' => null,
         ];
 
         $initData
@@ -478,10 +471,8 @@ final class BrowserLoaderTest extends TestCase
         $expected = [
             [
                 'name' => null,
-                'modus' => null,
                 'version' => '1.0.0',
                 'manufacturer' => 'unknown',
-                'bits' => null,
                 'type' => 'unknown',
                 'isbot' => false,
             ],
@@ -538,7 +529,6 @@ final class BrowserLoaderTest extends TestCase
             'type' => 'unknown',
             'engine' => 'unknown',
             'name' => 'test-browser',
-            'modus' => null,
         ];
 
         $initData
@@ -579,10 +569,8 @@ final class BrowserLoaderTest extends TestCase
         $expected = [
             [
                 'name' => 'test-browser',
-                'modus' => null,
                 'version' => '1.11.111.1111.11111',
                 'manufacturer' => 'unknown',
-                'bits' => null,
                 'type' => 'unknown',
                 'isbot' => false,
             ],
@@ -642,7 +630,6 @@ final class BrowserLoaderTest extends TestCase
             'type' => 'unknown',
             'engine' => 'unknown',
             'name' => 'test-browser',
-            'modus' => null,
         ];
 
         $initData
@@ -683,10 +670,8 @@ final class BrowserLoaderTest extends TestCase
         $expected = [
             [
                 'name' => 'test-browser',
-                'modus' => null,
                 'version' => '1.11.111.1111.11111',
                 'manufacturer' => 'unknown',
-                'bits' => null,
                 'type' => 'unknown',
                 'isbot' => false,
             ],
@@ -746,7 +731,6 @@ final class BrowserLoaderTest extends TestCase
             'type' => 'unknown',
             'engine' => 'unknown',
             'name' => 'test-browser',
-            'modus' => null,
         ];
 
         $initData
@@ -787,10 +771,8 @@ final class BrowserLoaderTest extends TestCase
         $expected = [
             [
                 'name' => 'test-browser',
-                'modus' => null,
                 'version' => '1.11.111.1111.11111',
                 'manufacturer' => 'unknown',
-                'bits' => null,
                 'type' => 'unknown',
                 'isbot' => false,
             ],
@@ -860,7 +842,6 @@ final class BrowserLoaderTest extends TestCase
             'type' => 'unknown',
             'engine' => $engineKey,
             'name' => null,
-            'modus' => null,
         ];
 
         $initData
@@ -903,10 +884,8 @@ final class BrowserLoaderTest extends TestCase
         $expected = [
             [
                 'name' => null,
-                'modus' => null,
                 'version' => null,
                 'manufacturer' => 'xyz-type',
-                'bits' => null,
                 'type' => 'unknown',
                 'isbot' => false,
             ],

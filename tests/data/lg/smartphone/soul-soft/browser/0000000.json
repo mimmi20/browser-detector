@@ -1,0 +1,50 @@
+[
+  {
+    "headers": {
+      "access-control-allow-origin": "*",
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "none",
+      "sec-fetch-user": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; LM-G810) AppleWebKit/537.36 (KHTML, like Gecko) Soul/4.0 Chrome/108.0.5359.128 Mobile Safari/537.36",
+      "x-requested-with": "com.mycompany.app.soulbrowser"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "LM-G810",
+      "marketingName": "G8S ThinQ",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 2248,
+        "height": 1080,
+        "touch": true,
+        "size": 6.2
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Soul Browser",
+      "version": null,
+      "manufacturer": "soul-soft",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "108.0.5359.128",
+      "manufacturer": "google"
+    }
+  }
+]

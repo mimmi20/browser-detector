@@ -258,7 +258,6 @@ final class PlatformLoaderTest extends TestCase
             'marketingName' => null,
             'version' => null,
             'manufacturer' => 'xyz-type',
-            'bits' => null,
         ];
 
         self::assertSame($expected, $result);
@@ -368,7 +367,6 @@ final class PlatformLoaderTest extends TestCase
             'marketingName' => null,
             'version' => '1.0.0',
             'manufacturer' => 'xyz-type',
-            'bits' => null,
         ];
 
         self::assertSame($expected, $result);
@@ -457,7 +455,6 @@ final class PlatformLoaderTest extends TestCase
             'marketingName' => 'macOS',
             'version' => '10.12.0',
             'manufacturer' => 'xyz-type',
-            'bits' => null,
         ];
 
         self::assertSame($expected, $result);
@@ -546,7 +543,6 @@ final class PlatformLoaderTest extends TestCase
             'marketingName' => 'iPhone OS',
             'version' => '3.0.0',
             'manufacturer' => 'xyz-type',
-            'bits' => null,
         ];
 
         self::assertSame($expected, $result);
@@ -635,7 +631,6 @@ final class PlatformLoaderTest extends TestCase
             'marketingName' => null,
             'version' => '1.11.111.1111.11111',
             'manufacturer' => 'xyz-type',
-            'bits' => null,
         ];
 
         self::assertSame($expected, $result);
@@ -725,7 +720,6 @@ final class PlatformLoaderTest extends TestCase
             'marketingName' => null,
             'version' => '1.11.111.1111.11111',
             'manufacturer' => 'unknown',
-            'bits' => null,
         ];
 
         self::assertSame($expected, $result);
@@ -814,7 +808,6 @@ final class PlatformLoaderTest extends TestCase
             'marketingName' => null,
             'version' => null,
             'manufacturer' => 'xyz-type',
-            'bits' => null,
         ];
 
         self::assertSame($expected, $result);
@@ -924,7 +917,6 @@ final class PlatformLoaderTest extends TestCase
             'marketingName' => null,
             'version' => '1.0.0',
             'manufacturer' => 'xyz-type',
-            'bits' => null,
         ];
 
         self::assertSame($expected, $result);
@@ -1018,7 +1010,6 @@ final class PlatformLoaderTest extends TestCase
             'marketingName' => null,
             'version' => null,
             'manufacturer' => 'xyz-type',
-            'bits' => null,
         ];
 
         self::assertSame($expected, $result);
@@ -1128,7 +1119,6 @@ final class PlatformLoaderTest extends TestCase
             'marketingName' => null,
             'version' => '1.0.0',
             'manufacturer' => 'xyz-type',
-            'bits' => null,
         ];
 
         self::assertSame($expected, $result);
@@ -1222,7 +1212,6 @@ final class PlatformLoaderTest extends TestCase
             'marketingName' => null,
             'version' => null,
             'manufacturer' => 'xyz-type',
-            'bits' => null,
         ];
 
         self::assertSame($expected, $result);
@@ -1312,7 +1301,6 @@ final class PlatformLoaderTest extends TestCase
             'marketingName' => null,
             'version' => null,
             'manufacturer' => 'xyz-type',
-            'bits' => null,
         ];
 
         self::assertSame($expected, $result);
@@ -1402,7 +1390,6 @@ final class PlatformLoaderTest extends TestCase
             'marketingName' => null,
             'version' => '2.5.0',
             'manufacturer' => 'xyz-type',
-            'bits' => null,
         ];
 
         self::assertSame($expected, $result);
@@ -1512,7 +1499,6 @@ final class PlatformLoaderTest extends TestCase
             'marketingName' => null,
             'version' => '1.0.0',
             'manufacturer' => 'xyz-type',
-            'bits' => null,
         ];
 
         self::assertSame($expected, $result);
@@ -1622,7 +1608,6 @@ final class PlatformLoaderTest extends TestCase
             'marketingName' => null,
             'version' => '1.2.0',
             'manufacturer' => 'xyz-type',
-            'bits' => null,
         ];
 
         self::assertSame($expected, $result);
@@ -1711,7 +1696,6 @@ final class PlatformLoaderTest extends TestCase
             'marketingName' => null,
             'version' => null,
             'manufacturer' => 'xyz-type',
-            'bits' => null,
         ];
 
         self::assertSame($expected, $result);
@@ -1800,7 +1784,6 @@ final class PlatformLoaderTest extends TestCase
             'marketingName' => null,
             'version' => null,
             'manufacturer' => 'xyz-type',
-            'bits' => null,
         ];
 
         self::assertSame($expected, $result);
@@ -1901,7 +1884,6 @@ final class PlatformLoaderTest extends TestCase
             'marketingName' => 'iOS',
             'version' => null,
             'manufacturer' => 'xyz-type',
-            'bits' => null,
         ];
 
         self::assertSame($expected, $result);
@@ -2005,7 +1987,6 @@ final class PlatformLoaderTest extends TestCase
             'marketingName' => 'iOS',
             'version' => null,
             'manufacturer' => 'xyz-type',
-            'bits' => null,
         ];
 
         self::assertSame($expected, $result);

@@ -13,19 +13,47 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest\Header;
 
 use BrowserDetector\Header\XUcbrowserDevice;
+use BrowserDetector\Parser\DeviceParserInterface;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
+use UaNormalizer\Normalizer\Exception;
+use UaNormalizer\NormalizerFactory;
 
+use function in_array;
+use function mb_strtolower;
 use function sprintf;
 
 final class XUcbrowserDeviceTest extends TestCase
 {
-    /** @throws ExpectationFailedException */
+    /**
+     * @throws ExpectationFailedException
+     * @throws Exception
+     */
     #[DataProvider('providerUa')]
     public function testData(string $ua, bool $hasDeviceInfo): void
     {
-        $header = new XUcbrowserDevice($ua);
+        $deviceCode = 'test-device-code';
+
+        $normalizerFactory = new NormalizerFactory();
+        $normalizer        = $normalizerFactory->build();
+
+        $normalitedUa = $normalizer->normalize($ua);
+
+        $deviceParser = $this->createMock(DeviceParserInterface::class);
+        $deviceParser
+            ->expects(
+                in_array(
+                    mb_strtolower($ua),
+                    ['j2me', 'opera', 'jblend'],
+                    true,
+                ) ? self::never() : self::once(),
+            )
+            ->method('parse')
+            ->with($normalitedUa)
+            ->willReturn($deviceCode);
+
+        $header = new XUcbrowserDevice($ua, $deviceParser, $normalizerFactory);
 
         self::assertSame($ua, $header->getValue(), sprintf('value mismatch for ua "%s"', $ua));
         self::assertSame(
@@ -62,7 +90,8 @@ final class XUcbrowserDeviceTest extends TestCase
             $header->hasDeviceCode(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
-        self::assertNull(
+        self::assertSame(
+            in_array(mb_strtolower($ua), ['j2me', 'opera', 'jblend'], true) ? null : $deviceCode,
             $header->getDeviceCode(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );

@@ -1,0 +1,44 @@
+[
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Maemo; Linux; U; Sailfish; Mobile; rv:38.0) Gecko/38.0 Firefox/38.0 SailfishBrowser/1.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "SailfishOS",
+      "marketingName": "SailfishOS",
+      "version": null,
+      "manufacturer": "jolla"
+    },
+    "client": {
+      "name": "Sailfish Browser",
+      "version": "1.0.0",
+      "manufacturer": "jolla",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "38.0.0",
+      "manufacturer": "mozilla-foundation"
+    }
+  }
+]

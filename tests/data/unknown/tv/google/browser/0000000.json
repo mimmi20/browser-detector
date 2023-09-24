@@ -1,0 +1,926 @@
+[
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Linux mips) AppleWebKit/537.36; (KHTML, like Gecko) Chromium/30.0.1599.114 Safari/537.36) SRAF/3.0 HbbTV/1.1.1 (+TRICKMODE; NEXUS; Nexus_AN01; sw-01; hw-01); CE-HTML/1.0 FXM-U2FsdGVkX19KzkbV2AlV9wD4Wll3i/WqDABHHofC6fx7E1pN31bVBZxXdu6yy0MQ-END"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general TV device",
+      "marketingName": "general TV device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation"
+    },
+    "client": {
+      "name": "Chromium",
+      "version": "30.0.1599.114",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HbbTV/1.1.1 (Linux; U; Android 4.2.2; de)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general TV device",
+      "marketingName": "general TV device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Android Webkit",
+      "version": null,
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HbbTV/1.1.1 (Linux; U; Android 4.2.2; de;)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general TV device",
+      "marketingName": "general TV device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Android Webkit",
+      "version": null,
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HbbTV/1.1.1 (Linux; U; Android 4.2.2; en)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general TV device",
+      "marketingName": "general TV device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Android Webkit",
+      "version": null,
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HbbTV/1.1.1 (Linux; U; Android 4.2.2; en;)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general TV device",
+      "marketingName": "general TV device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Android Webkit",
+      "version": null,
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HbbTV/1.1.1 (Linux; U; Android 4.2.2; en-us)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general TV device",
+      "marketingName": "general TV device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Android Webkit",
+      "version": null,
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HbbTV/1.1.1 (Linux; U; Android 4.2.2; en-us;)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general TV device",
+      "marketingName": "general TV device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Android Webkit",
+      "version": null,
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HbbTV/1.1.1 (Linux; U; Android 4.2.2; fr)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general TV device",
+      "marketingName": "general TV device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Android Webkit",
+      "version": null,
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HbbTV/1.1.1 (Linux; U; Android 4.2.2; fr;)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general TV device",
+      "marketingName": "general TV device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Android Webkit",
+      "version": null,
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HbbTV/1.1.1 (Linux; U; Android 4.2.2; it)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general TV device",
+      "marketingName": "general TV device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Android Webkit",
+      "version": null,
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HbbTV/1.1.1 (Linux; U; Android 4.2.2; it;)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general TV device",
+      "marketingName": "general TV device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Android Webkit",
+      "version": null,
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Linux mips) AppleWebKit/537.36; (KHTML, like Gecko) Chromium/30.0.1599.114 Safari/537.36) SRAF/3.0 HbbTV/1.1.1 (+TRICKMODE; NEXUS; Nexus_AN01; sw-01; hw-01); CE-HTML/1.0 FXM-U2FsdGVkX1/A/ks8pNurJUvZ8rsYMLd1DvkzZCjVMY7Y67AMXj94ArzSaHStYiT8-END"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general TV device",
+      "marketingName": "general TV device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation"
+    },
+    "client": {
+      "name": "Chromium",
+      "version": "30.0.1599.114",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Linux mips) AppleWebKit/537.36; (KHTML, like Gecko) Chromium/30.0.1599.114 Safari/537.36) SRAF/3.0 HbbTV/1.1.1 (+TRICKMODE; NEXUS; Nexus_AN01; sw-01; hw-01); CE-HTML/1.0 FXM-U2FsdGVkX1/BKNh9pLTEdu27Q990Ib8IXWELN4R+3k4StEdgIJJFqXx4m+W8/PLI-END"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general TV device",
+      "marketingName": "general TV device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation"
+    },
+    "client": {
+      "name": "Chromium",
+      "version": "30.0.1599.114",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Linux mips) AppleWebKit/537.36; (KHTML, like Gecko) Chromium/30.0.1599.114 Safari/537.36) SRAF/3.0 HbbTV/1.1.1 (+TRICKMODE; NEXUS; Nexus_AN01; sw-01; hw-01); CE-HTML/1.0 FXM-U2FsdGVkX1/BufaT9E4vkmM2M+AVEFn2GFtGY4KmpXQjVL0bGX89yUHzX/vl3rG7-END"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general TV device",
+      "marketingName": "general TV device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation"
+    },
+    "client": {
+      "name": "Chromium",
+      "version": "30.0.1599.114",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Linux mips) AppleWebKit/537.36; (KHTML, like Gecko) Chromium/30.0.1599.114 Safari/537.36) SRAF/3.0 HbbTV/1.1.1 (+TRICKMODE; NEXUS; Nexus_AN01; sw-01; hw-01); CE-HTML/1.0 FXM-U2FsdGVkX19sCP585NaRDeF953iESTJLJec6SlZNDNcfT912zqpgAZzT4fcldB2S-END"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general TV device",
+      "marketingName": "general TV device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation"
+    },
+    "client": {
+      "name": "Chromium",
+      "version": "30.0.1599.114",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Linux mips) AppleWebKit/537.36; (KHTML, like Gecko) Chromium/30.0.1599.114 Safari/537.36) SRAF/3.0 HbbTV/1.1.1 (+TRICKMODE; UMC; 50_148Z; Oct 13 2014; MS6308); CE-HTML/1.0 FXM-U2FsdGVkX18UAZKlaOVwGGILrGXOA4+dFAsgc5Bxf28P1MSkh2kEtytsFBAogayz-END"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general TV device",
+      "marketingName": "general TV device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation"
+    },
+    "client": {
+      "name": "Chromium",
+      "version": "30.0.1599.114",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Linux mips) AppleWebKit/537.36; (KHTML, like Gecko) Chromium/30.0.1599.114 Safari/537.36) SRAF/3.0 HbbTV/1.1.1 (+TRICKMODE; NEXUS; Nexus_AN01; sw-01; hw-01); CE-HTML/1.0 FXM-U2FsdGVkX1+uDb9p5oNewnQSpdj0otcCjxoTQJH2AhZcpp2NX4OOTVPMuY+gaD3C-END"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general TV device",
+      "marketingName": "general TV device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation"
+    },
+    "client": {
+      "name": "Chromium",
+      "version": "30.0.1599.114",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (DirectFB; Linux sh4) AppleWebKit/537.6+ (KHTML, like Gecko) Chromium/17.0.963.56 Chrome/17.0.963.56 Safari/537.6+HbbTV/1.1.1 (;iWedia;Teatro;3.0;;)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general TV device",
+      "marketingName": "general TV device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation"
+    },
+    "client": {
+      "name": "Chromium",
+      "version": "17.0.963.56",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.6.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; Linux armv8l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.91 Safari/537.36 HbbTV/1.5.1 ( DRM; SWTV; SKWE20E21; 1.09.001; 2.001; com.swtv.skwe20e21; )"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general TV device",
+      "marketingName": "general TV device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Maemo",
+      "marketingName": "Maemo",
+      "version": null,
+      "manufacturer": "linux-foundation"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "55.0.2883.91",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "55.0.2883.91",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; Linux armv8l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.91 Safari/537.36 HbbTV/1.5.1 ( DRM; MTC; 2K_Android_TV_V01; V0.24.7.2.M001; MS66830-ZC01-01; Reference_2K19;) FVC/4.0 (MTC; Reference_2K19;)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general TV device",
+      "marketingName": "general TV device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": null,
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "55.0.2883.91",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "55.0.2883.91",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; Linux armv8l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.91 Safari/537.36 HbbTV/1.5.1 ( DRM; MTC; 4K_Android_TV_V01; 1.001; MS68860-ZC01-01; Reference_2K19;) FVC/4.0 (MTC; Reference_2K19;)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general TV device",
+      "marketingName": "general TV device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": null,
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "55.0.2883.91",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "55.0.2883.91",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; Linux armv8l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.91 Safari/537.36 HbbTV/1.5.1 ( DRM; MediaTek; MT5887v1; 1.000; 0000-1111 2222-3333; Reference_2K19;) FVC/4.0 (MediaTek; Reference_2K19;) LaTivu_3.0.0_2019"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general TV device",
+      "marketingName": "general TV device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Maemo",
+      "marketingName": "Maemo",
+      "version": null,
+      "manufacturer": "linux-foundation"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "55.0.2883.91",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "55.0.2883.91",
+      "manufacturer": "google"
+    }
+  }
+]

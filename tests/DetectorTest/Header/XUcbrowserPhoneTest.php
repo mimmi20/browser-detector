@@ -23,8 +23,13 @@ final class XUcbrowserPhoneTest extends TestCase
 {
     /** @throws ExpectationFailedException */
     #[DataProvider('providerUa')]
-    public function testData(string $ua, bool $hasDeviceInfo, bool $hasBrowserInfo): void
-    {
+    public function testData(
+        string $ua,
+        bool $hasDeviceInfo,
+        string | null $deviceCode,
+        bool $hasClientInfo,
+        string | null $clientCode,
+    ): void {
         $header = new XUcbrowserPhone($ua);
 
         self::assertSame($ua, $header->getValue(), sprintf('value mismatch for ua "%s"', $ua));
@@ -62,16 +67,18 @@ final class XUcbrowserPhoneTest extends TestCase
             $header->hasDeviceCode(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
-        self::assertNull(
+        self::assertSame(
+            $deviceCode,
             $header->getDeviceCode(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
         self::assertSame(
-            $hasBrowserInfo,
+            $hasClientInfo,
             $header->hasClientCode(),
             sprintf('browser info mismatch for ua "%s"', $ua),
         );
-        self::assertNull(
+        self::assertSame(
+            $clientCode,
             $header->getClientCode(),
             sprintf('browser info mismatch for ua "%s"', $ua),
         );
@@ -115,20 +122,20 @@ final class XUcbrowserPhoneTest extends TestCase
     }
 
     /**
-     * @return array<int, array<int, bool|string>>
+     * @return array<int, array<int, bool|string|null>>
      *
      * @throws void
      */
     public static function providerUa(): array
     {
         return [
-            ['maui browser', false, true],
-            ['nokia701', true, false],
-            ['sunmicro', false, false],
-            ['nokiac3-01', true, false],
-            ['nokia305', true, false],
-            ['gt-s5233s', true, false],
-            ['sonyericssonj108i', true, false],
+            ['maui browser', false, null, true, 'maui browser'],
+            ['nokia701', true, 'nokia=nokia 701', false, null],
+            ['sunmicro', false, null, false, null],
+            ['nokiac3-01', true, 'nokia=nokia c3-01', false, null],
+            ['nokia305', true, 'nokia=nokia 305', false, null],
+            ['gt-s5233s', true, 'samsung=samsung gt-s5233s', false, null],
+            ['sonyericssonj108i', true, 'sony=sonyericsson j108i', false, null],
         ];
     }
 }

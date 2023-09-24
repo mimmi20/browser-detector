@@ -26,6 +26,25 @@ final class XUcbrowserPhoneUa implements HeaderInterface
     }
 
     /** @throws void */
+    public function getDeviceCode(): string | null
+    {
+        if (in_array(mb_strtolower($this->value), ['j2me', 'opera', 'jblend'], true)) {
+            return null;
+        }
+
+        $code = mb_strtolower($this->value);
+
+        return match ($code) {
+            'nokia701' => 'nokia=nokia 701',
+            'nokiac3-01' => 'nokia=nokia c3-01',
+            'nokia305' => 'nokia=nokia 305',
+            'gt-s5233s' => 'samsung=samsung gt-s5233s',
+            'sonyericssonj108i' => 'sony=sonyericsson j108i',
+            default => null,
+        };
+    }
+
+    /** @throws void */
     public function hasClientCode(): bool
     {
         return $this->value === 'maui browser';
@@ -34,6 +53,6 @@ final class XUcbrowserPhoneUa implements HeaderInterface
     /** @throws void */
     public function getClientCode(): string | null
     {
-        return null;
+        return $this->value === 'maui browser' ? 'maui browser' : null;
     }
 }
