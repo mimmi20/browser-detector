@@ -1,0 +1,926 @@
+[
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; SHIELD Tablet Build/MRA58K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/51.0.2704.81 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Shield Tablet",
+      "marketingName": "Shield Tablet",
+      "manufacturer": "nvidia",
+      "brand": "nvidia",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": 8
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Android WebView",
+      "version": "51.0.2704.81",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "51.0.2704.81",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; SHIELD Tablet K1 Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.132 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Shield K1",
+      "marketingName": "Shield K1",
+      "manufacturer": "nvidia",
+      "brand": "nvidia",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": null
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "57.0.2987.132",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "57.0.2987.132",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; SHIELD Tablet K1 Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Shield K1",
+      "marketingName": "Shield K1",
+      "manufacturer": "nvidia",
+      "brand": "nvidia",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": null
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Android WebView",
+      "version": "57.0.2987.132",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "57.0.2987.132",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; SHIELD Tablet Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Shield Tablet",
+      "marketingName": "Shield Tablet",
+      "manufacturer": "nvidia",
+      "brand": "nvidia",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": 8
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "56.0.2924.87",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "56.0.2924.87",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; SHIELD Tablet Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Shield Tablet",
+      "marketingName": "Shield Tablet",
+      "manufacturer": "nvidia",
+      "brand": "nvidia",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": 8
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Android WebView",
+      "version": "56.0.2924.87",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "56.0.2924.87",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; SHIELD Tablet K1 Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/58.0.3029.83 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Shield K1",
+      "marketingName": "Shield K1",
+      "manufacturer": "nvidia",
+      "brand": "nvidia",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": null
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Android WebView",
+      "version": "58.0.3029.83",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "58.0.3029.83",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; SHIELD Tablet K1 Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/60.0.3112.116 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Shield K1",
+      "marketingName": "Shield K1",
+      "manufacturer": "nvidia",
+      "brand": "nvidia",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": null
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Android WebView",
+      "version": "60.0.3112.116",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "60.0.3112.116",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; SHIELD Tablet Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.132 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Shield Tablet",
+      "marketingName": "Shield Tablet",
+      "manufacturer": "nvidia",
+      "brand": "nvidia",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": 8
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "57.0.2987.132",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "57.0.2987.132",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; SHIELD Tablet K1 Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/59.0.3071.125 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Shield K1",
+      "marketingName": "Shield K1",
+      "manufacturer": "nvidia",
+      "brand": "nvidia",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": null
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Android WebView",
+      "version": "59.0.3071.125",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "59.0.3071.125",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; SHIELD Tablet Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Shield Tablet",
+      "marketingName": "Shield Tablet",
+      "manufacturer": "nvidia",
+      "brand": "nvidia",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": 8
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "62.0.3202.84",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "62.0.3202.84",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; SHIELD Tablet Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.98 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Shield Tablet",
+      "marketingName": "Shield Tablet",
+      "manufacturer": "nvidia",
+      "brand": "nvidia",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": 8
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "61.0.3163.98",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "61.0.3163.98",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; SHIELD Tablet Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.116 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Shield Tablet",
+      "marketingName": "Shield Tablet",
+      "manufacturer": "nvidia",
+      "brand": "nvidia",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": 8
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "60.0.3112.116",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "60.0.3112.116",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; SHIELD Tablet K1 Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/62.0.3202.84 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Shield K1",
+      "marketingName": "Shield K1",
+      "manufacturer": "nvidia",
+      "brand": "nvidia",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": null
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Android WebView",
+      "version": "62.0.3202.84",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "62.0.3202.84",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; SHIELD Tablet K1 Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.109 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Shield K1",
+      "marketingName": "Shield K1",
+      "manufacturer": "nvidia",
+      "brand": "nvidia",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": null
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "65.0.3325.109",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "65.0.3325.109",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; SHIELD Tablet K1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.99 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Shield K1",
+      "marketingName": "Shield K1",
+      "manufacturer": "nvidia",
+      "brand": "nvidia",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": null
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "80.0.3987.99",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "80.0.3987.99",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1; TegraNote-P1640) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.93 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "P1640",
+      "marketingName": "TegraNote",
+      "manufacturer": "nvidia",
+      "brand": "nvidia",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 7
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "79.0.3945.93",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "79.0.3945.93",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; SHIELD Tablet K1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36 comdirect/1.0 (appVersion:20.4.0;deviceName:lenovo k1;deviceType:tablet)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Shield K1",
+      "marketingName": "Shield K1",
+      "manufacturer": "nvidia",
+      "brand": "nvidia",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": null
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "81.0.4044.138",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "81.0.4044.138",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; SHIELD Tablet K1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Shield K1",
+      "marketingName": "Shield K1",
+      "manufacturer": "nvidia",
+      "brand": "nvidia",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": null
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "86.0.4240.198",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "86.0.4240.198",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; SHIELD Tablet) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Shield Tablet",
+      "marketingName": "Shield Tablet",
+      "manufacturer": "nvidia",
+      "brand": "nvidia",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": 8
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.2",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "74.0.3729.157",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "74.0.3729.157",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1; SHIELD Build/LMY47N; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/53.0.2785.97 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Shield Tablet",
+      "marketingName": "Shield Tablet",
+      "manufacturer": "nvidia",
+      "brand": "nvidia",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": 8
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Android WebView",
+      "version": "53.0.2785.97",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "53.0.2785.97",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; wx_na_wf) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.74 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "WX NA WF",
+      "marketingName": "Shield Tablet",
+      "manufacturer": "nvidia",
+      "brand": "nvidia",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": 8
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "95.0.4638.74",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "95.0.4638.74",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; SHIELD Tablet K1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Shield K1",
+      "marketingName": "Shield K1",
+      "manufacturer": "nvidia",
+      "brand": "nvidia",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": null
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "104.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "104.0.0.0",
+      "manufacturer": "google"
+    }
+  }
+]

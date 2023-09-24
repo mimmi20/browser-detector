@@ -1,0 +1,968 @@
+[
+  {
+    "headers": {
+      "user-agent": "XBMC/9.04-beta1 r19639 (Windows; Windows XP Professional Service Pack 2 build 2600; http://www.xbmc.org)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows NT",
+      "marketingName": "Windows XP",
+      "version": "5.1.0",
+      "manufacturer": "microsoft"
+    },
+    "client": {
+      "name": "XBMC Media Center",
+      "version": null,
+      "manufacturer": "xbmc-foundation",
+      "type": "multimedia-player",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Kodi/16.1 (Windows NT 10.0; WOW64) App_Bitness/32 Version/16.1-Git:20160424-c327c53"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows",
+      "marketingName": "Windows",
+      "version": "10.0.0",
+      "manufacturer": "microsoft"
+    },
+    "client": {
+      "name": "Kodi Media Center",
+      "version": "16.1.0",
+      "manufacturer": "xbmc-foundation",
+      "type": "multimedia-player",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Kodi/17.0-BETA1 (Windows NT 10.0; WOW64) App_Bitness/32 Version/17.0-BETA1-Git:20160821-81d5d26"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows",
+      "marketingName": "Windows",
+      "version": "10.0.0",
+      "manufacturer": "microsoft"
+    },
+    "client": {
+      "name": "Kodi Media Center",
+      "version": "17.0.0-beta+1",
+      "manufacturer": "xbmc-foundation",
+      "type": "multimedia-player",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "XBMC/13.2 Git:20140817-0f3db05 (Linux; Debian GNU/Linux 7.0 (wheezy); 3.12.21 armv6l; http://xbmc.org)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Debian",
+      "marketingName": "Debian",
+      "version": null,
+      "manufacturer": "software-in-the-public-interest"
+    },
+    "client": {
+      "name": "XBMC Media Center",
+      "version": null,
+      "manufacturer": "xbmc-foundation",
+      "type": "multimedia-player",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Kodi/14.2-RC1 (Windows NT 10.0; WOW64) App_Bitness/32 Version/14.2-RC1-Git:20150311-e7ba06f"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows",
+      "marketingName": "Windows",
+      "version": "10.0.0",
+      "manufacturer": "microsoft"
+    },
+    "client": {
+      "name": "Kodi Media Center",
+      "version": "14.2.0-RC+1",
+      "manufacturer": "xbmc-foundation",
+      "type": "multimedia-player",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Kodi/14.0-RC3 (Windows NT 6.1; WOW64) App_Bitness/32 Version/14.0-RC3-Git:20141208-bdf56d0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows",
+      "marketingName": "Windows",
+      "version": "7.0.0",
+      "manufacturer": "microsoft"
+    },
+    "client": {
+      "name": "Kodi Media Center",
+      "version": "14.0.0-RC+3",
+      "manufacturer": "xbmc-foundation",
+      "type": "multimedia-player",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Kodi/14.1 (X11; Linux x86_64) Arch Linux/0.0 App_Bitness/64 Version/14.1-Git:Unknown"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation"
+    },
+    "client": {
+      "name": "Kodi Media Center",
+      "version": "14.1.0",
+      "manufacturer": "xbmc-foundation",
+      "type": "multimedia-player",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "XBMC/13.2 Git:0f3db05 (Linux; TLBB-OE (official) - Version: 2.0.0; 3.10.40 armv7l; http://xbmc.org)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation"
+    },
+    "client": {
+      "name": "XBMC Media Center",
+      "version": null,
+      "manufacturer": "xbmc-foundation",
+      "type": "multimedia-player",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "XBMC/13.0 Git:20140505-f42f5b5 (Windows NT 6.0; http://xbmc.org)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows NT 6.0",
+      "marketingName": "Windows Vista",
+      "version": "6.0.0",
+      "manufacturer": "microsoft"
+    },
+    "client": {
+      "name": "XBMC Media Center",
+      "version": null,
+      "manufacturer": "xbmc-foundation",
+      "type": "multimedia-player",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "XBMC/14.0-ALPHA3 (Windows NT 6.1; WOW64) XBMC_BITNESS/32 Version/14.0-ALPHA3-Git:20140831-d6c3ef3"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows",
+      "marketingName": "Windows",
+      "version": "7.0.0",
+      "manufacturer": "microsoft"
+    },
+    "client": {
+      "name": "XBMC Media Center",
+      "version": null,
+      "manufacturer": "xbmc-foundation",
+      "type": "multimedia-player",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Kodi/15.0-ALPHA1 (Windows NT 6.1; WOW64) App_Bitness/32 Version/15.0-ALPHA1-Git:20150228-5dc1a55"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows",
+      "marketingName": "Windows",
+      "version": "7.0.0",
+      "manufacturer": "microsoft"
+    },
+    "client": {
+      "name": "Kodi Media Center",
+      "version": "15.0.0-alpha+1",
+      "manufacturer": "xbmc-foundation",
+      "type": "multimedia-player",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Kodi/14.1 (X11; Linux armv6l) Raspbian GNU/Linux/7 HW_RaspberryPi/1.0 App_Bitness/32 Version/14.1-Git:2015-02-02-81c4046-dirty"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Raspbian",
+      "marketingName": "Raspbian",
+      "version": null,
+      "manufacturer": "software-in-the-public-interest"
+    },
+    "client": {
+      "name": "Kodi Media Center",
+      "version": "14.1.0",
+      "manufacturer": "xbmc-foundation",
+      "type": "multimedia-player",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "XBMC/13.0 Git:20140505-f42f5b5 (Windows NT 6.3; http://xbmc.org)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows",
+      "marketingName": "Windows",
+      "version": "8.1.0",
+      "manufacturer": "microsoft"
+    },
+    "client": {
+      "name": "XBMC Media Center",
+      "version": null,
+      "manufacturer": "xbmc-foundation",
+      "type": "multimedia-player",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Kodi/14.2-RC1 (Windows NT 5.1; WOW64) App_Bitness/32 Version/14.2-RC1-Git:20150311-e7ba06f"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows NT",
+      "marketingName": "Windows XP",
+      "version": "5.1.0",
+      "manufacturer": "microsoft"
+    },
+    "client": {
+      "name": "Kodi Media Center",
+      "version": "14.2.0-RC+1",
+      "manufacturer": "xbmc-foundation",
+      "type": "multimedia-player",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Kodi/14.1 (Windows NT 6.0) App_Bitness/32 Version/14.1-Git:20150129-38e4046"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows NT 6.0",
+      "marketingName": "Windows Vista",
+      "version": "6.0.0",
+      "manufacturer": "microsoft"
+    },
+    "client": {
+      "name": "Kodi Media Center",
+      "version": "14.1.0",
+      "manufacturer": "xbmc-foundation",
+      "type": "multimedia-player",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Kodi/14.0 (Windows NT 6.2; WOW64) App_Bitness/32 Version/14.0-Git:20141223-ad747d9"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows",
+      "marketingName": "Windows",
+      "version": "8.0.0",
+      "manufacturer": "microsoft"
+    },
+    "client": {
+      "name": "Kodi Media Center",
+      "version": "14.0.0",
+      "manufacturer": "xbmc-foundation",
+      "type": "multimedia-player",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Kodi/14.2-RC1 (X11; Linux i686) Ubuntu/14.04 App_Bitness/32 Version/14.2-RC1-Git:e7ba06f"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Ubuntu",
+      "marketingName": "Ubuntu",
+      "version": "14.04.0",
+      "manufacturer": "canonical"
+    },
+    "client": {
+      "name": "Kodi Media Center",
+      "version": "14.2.0-RC+1",
+      "manufacturer": "xbmc-foundation",
+      "type": "multimedia-player",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Kodi/15.0-ALPHA1 (Windows NT 6.3; WOW64) App_Bitness/32 Version/15.0-ALPHA1-Git:20150108-dc4d753"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows",
+      "marketingName": "Windows",
+      "version": "8.1.0",
+      "manufacturer": "microsoft"
+    },
+    "client": {
+      "name": "Kodi Media Center",
+      "version": "15.0.0-alpha+1",
+      "manufacturer": "xbmc-foundation",
+      "type": "multimedia-player",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "XBMC/13.1 Git:f2acae7 (Linux; Ubuntu 13.10; 3.11.0-26-generic i686; http://xbmc.org)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Ubuntu",
+      "marketingName": "Ubuntu",
+      "version": "13.10.0",
+      "manufacturer": "canonical"
+    },
+    "client": {
+      "name": "XBMC Media Center",
+      "version": null,
+      "manufacturer": "xbmc-foundation",
+      "type": "multimedia-player",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Kodi/15.0-ALPHA1 (Windows NT 10.0; WOW64) App_Bitness/32 Version/15.0-ALPHA1-Git:20150228-5dc1a55"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows",
+      "marketingName": "Windows",
+      "version": "10.0.0",
+      "manufacturer": "microsoft"
+    },
+    "client": {
+      "name": "Kodi Media Center",
+      "version": "15.0.0-alpha+1",
+      "manufacturer": "xbmc-foundation",
+      "type": "multimedia-player",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Kodi/17.6 (Windows NT 6.1; WOW64) App_Bitness/32 Version/17.6-Git:20171114-a9a7a20"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows",
+      "marketingName": "Windows",
+      "version": "7.0.0",
+      "manufacturer": "microsoft"
+    },
+    "client": {
+      "name": "Kodi Media Center",
+      "version": "17.6.0",
+      "manufacturer": "xbmc-foundation",
+      "type": "multimedia-player",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Kodi/15.2 (X11; Linux x86_64) OpenELEC/6.0 App_Bitness/64 Version/15.2-Git:02e7013"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation"
+    },
+    "client": {
+      "name": "Kodi Media Center",
+      "version": "15.2.0",
+      "manufacturer": "xbmc-foundation",
+      "type": "multimedia-player",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Kodi/17.6 (X11; Linux x86_64) LibreELEC/8.2 App_Bitness/64 Version/17.6-Git:a9a7a20"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation"
+    },
+    "client": {
+      "name": "Kodi Media Center",
+      "version": "17.6.0",
+      "manufacturer": "xbmc-foundation",
+      "type": "multimedia-player",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  }
+]

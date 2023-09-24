@@ -1,0 +1,1553 @@
+[
+  {
+    "headers": {
+      "device-memory": "4",
+      "downlink": "4.7",
+      "dpr": "1.75",
+      "ect": "4g",
+      "rtt": "50",
+      "sec-ch-device-memory": "4",
+      "sec-ch-dpr": "1.75",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"115\", \"Chromium\";v=\"115\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version": "\"115.0.5790.138\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-model": "\"22081283G\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"13.0.0\"",
+      "sec-ch-viewport-height": "1380",
+      "sec-ch-viewport-width": "980",
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "same-origin",
+      "sec-fetch-user": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36",
+      "viewport-width": "980"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Tablet",
+      "marketingName": "general Tablet",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "115.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "115.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "2",
+      "downlink": "4.75",
+      "dpr": "1.75",
+      "ect": "4g",
+      "rtt": "200",
+      "sec-ch-device-memory": "2",
+      "sec-ch-dpr": "1.75",
+      "sec-ch-prefers-color-scheme": "dark",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"115\", \"Chromium\";v=\"115\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version": "\"115.0.5790.138\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-model": "\"SM-T500\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"12.0.0\"",
+      "sec-ch-viewport-height": "975",
+      "sec-ch-viewport-width": "686",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36",
+      "viewport-width": "686",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Tablet",
+      "marketingName": "general Tablet",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "115.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "115.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "2",
+      "downlink": "3.95",
+      "dpr": "1.95035",
+      "ect": "4g",
+      "rtt": "100",
+      "sec-ch-device-memory": "2",
+      "sec-ch-dpr": "1.95035",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"8\", \"Chromium\";v=\"114\", \"Google Chrome\";v=\"114\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version": "\"114.0.5735.196\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-model": "\"SM-T510\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"11.0.0\"",
+      "sec-ch-viewport-height": "880",
+      "sec-ch-viewport-width": "615",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+      "viewport-width": "615",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Tablet",
+      "marketingName": "general Tablet",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "114.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "114.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "2",
+      "downlink": "7.1",
+      "dpr": "1.75",
+      "ect": "4g",
+      "rtt": "100",
+      "sec-ch-device-memory": "2",
+      "sec-ch-dpr": "1.75",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"8\", \"Chromium\";v=\"114\", \"Google Chrome\";v=\"114\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version": "\"114.0.5735.196\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-model": "\"SM-T580\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"8.1.0\"",
+      "sec-ch-viewport-height": "1010",
+      "sec-ch-viewport-width": "686",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+      "viewport-width": "686",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Tablet",
+      "marketingName": "general Tablet",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "114.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "114.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "2",
+      "downlink": "7.2",
+      "dpr": "2",
+      "ect": "4g",
+      "rtt": "150",
+      "sec-ch-device-memory": "2",
+      "sec-ch-dpr": "2",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"115\", \"Chromium\";v=\"115\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version": "\"115.0.5790.138\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-model": "\"SM-T580\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"8.1.0\"",
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "cross-site",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Tablet",
+      "marketingName": "general Tablet",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "115.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "115.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "2",
+      "downlink": "4.1",
+      "dpr": "1.5",
+      "ect": "4g",
+      "rtt": "100",
+      "sec-ch-device-memory": "2",
+      "sec-ch-dpr": "1.5",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"8\", \"Chromium\";v=\"114\", \"Google Chrome\";v=\"114\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version": "\"114.0.5735.196\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-model": "\"SM-T510\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"11.0.0\"",
+      "sec-ch-viewport-height": "0",
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "cross-site",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Tablet",
+      "marketingName": "general Tablet",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "114.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "114.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "2",
+      "downlink": "0.25",
+      "dpr": "1.5",
+      "ect": "2g",
+      "rtt": "1950",
+      "sec-ch-device-memory": "2",
+      "sec-ch-dpr": "1.5",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"115\", \"Chromium\";v=\"115\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version": "\"115.0.5790.138\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-model": "\"SM-T590\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"10.0.0\"",
+      "sec-ch-viewport-height": "508",
+      "sec-ch-viewport-width": "980",
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "same-origin",
+      "sec-fetch-user": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36",
+      "viewport-width": "980"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Tablet",
+      "marketingName": "general Tablet",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "115.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "115.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "1",
+      "downlink": "7.6",
+      "dpr": "1",
+      "ect": "4g",
+      "rtt": "100",
+      "sec-ch-device-memory": "1",
+      "sec-ch-dpr": "1",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"115\", \"Chromium\";v=\"115\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version": "\"115.0.5790.138\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-model": "\"SM-T550\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"7.1.1\"",
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "cross-site",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Tablet",
+      "marketingName": "general Tablet",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "115.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "115.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "2",
+      "downlink": "5.05",
+      "dpr": "1.5",
+      "ect": "4g",
+      "rtt": "150",
+      "sec-ch-device-memory": "2",
+      "sec-ch-dpr": "1.5",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"115\", \"Chromium\";v=\"115\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version": "\"115.0.5790.138\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-model": "\"Lenovo TB-X606F\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"10.0.0\"",
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "cross-site",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Tablet",
+      "marketingName": "general Tablet",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "115.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "115.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "2",
+      "downlink": "4.45",
+      "dpr": "1.3312500715255737",
+      "ect": "4g",
+      "rtt": "50",
+      "sec-ch-device-memory": "2",
+      "sec-ch-dpr": "1.3312500715255737",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"8\", \"Chromium\";v=\"114\", \"Google Chrome\";v=\"114\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version": "\"114.0.5735.227\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-model": "\"Trekstor Surftab theatre S11\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"9.0.0\"",
+      "sec-ch-viewport-height": "437",
+      "sec-ch-viewport-width": "980",
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "cross-site",
+      "sec-fetch-user": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+      "viewport-width": "980"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Tablet",
+      "marketingName": "general Tablet",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "114.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "114.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "2",
+      "downlink": "6.55",
+      "dpr": "1.5",
+      "ect": "4g",
+      "rtt": "100",
+      "sec-ch-device-memory": "2",
+      "sec-ch-dpr": "1.5",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"8\", \"Chromium\";v=\"114\", \"Google Chrome\";v=\"114\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version": "\"114.0.5735.196\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-model": "\"SM-T585\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"8.1.0\"",
+      "sec-ch-viewport-height": "1460",
+      "sec-ch-viewport-width": "980",
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "same-origin",
+      "sec-fetch-user": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+      "viewport-width": "980"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Tablet",
+      "marketingName": "general Tablet",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "114.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "114.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua": "\"Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"115\", \"Chromium\";v=\"115\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "cross-site",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Tablet",
+      "marketingName": "general Tablet",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "115.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "115.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "8",
+      "downlink": "10",
+      "dpr": "1.7625",
+      "ect": "4g",
+      "rtt": "250",
+      "sec-ch-device-memory": "8",
+      "sec-ch-dpr": "1.7625",
+      "sec-ch-prefers-color-scheme": "dark",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Google Chrome\";v=\"113\", \"Chromium\";v=\"113\", \"Not-A.Brand\";v=\"24\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version": "\"113.0.5672.162\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-model": "\"SM-N975F\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"12.0.0\"",
+      "sec-ch-viewport-height": "1102",
+      "sec-ch-viewport-width": "613",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36",
+      "viewport-width": "613",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Tablet",
+      "marketingName": "general Tablet",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "113.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "113.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "4",
+      "downlink": "5.3",
+      "dpr": "2.5",
+      "ect": "4g",
+      "rtt": "50",
+      "sec-ch-device-memory": "4",
+      "sec-ch-dpr": "2.5",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"8\", \"Chromium\";v=\"114\", \"Google Chrome\";v=\"114\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version": "\"114.0.5735.196\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-model": "\"CMR-W09\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"9.0.0\"",
+      "sec-ch-viewport-height": "871",
+      "sec-ch-viewport-width": "640",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+      "viewport-width": "640",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Tablet",
+      "marketingName": "general Tablet",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "114.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "114.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "4",
+      "downlink": "3.7",
+      "dpr": "2.25",
+      "ect": "4g",
+      "rtt": "100",
+      "sec-ch-device-memory": "4",
+      "sec-ch-dpr": "2.25",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"8\", \"Chromium\";v=\"114\", \"Google Chrome\";v=\"114\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version": "\"114.0.5735.227\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-model": "\"21051182G\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"13.0.0\"",
+      "sec-ch-viewport-height": "1000",
+      "sec-ch-viewport-width": "712",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+      "viewport-width": "712",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Tablet",
+      "marketingName": "general Tablet",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "114.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "114.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "8",
+      "downlink": "10",
+      "dpr": "1.7625000476837158",
+      "ect": "4g",
+      "rtt": "250",
+      "sec-ch-device-memory": "8",
+      "sec-ch-dpr": "1.7625000476837158",
+      "sec-ch-prefers-color-scheme": "dark",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Google Chrome\";v=\"113\", \"Chromium\";v=\"113\", \"Not-A.Brand\";v=\"24\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version": "\"113.0.5672.162\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-model": "\"SM-N975F\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"12.0.0\"",
+      "sec-ch-viewport-height": "1762",
+      "sec-ch-viewport-width": "980",
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "same-origin",
+      "sec-fetch-user": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36",
+      "viewport-width": "980"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Tablet",
+      "marketingName": "general Tablet",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "113.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "113.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "2",
+      "downlink": "3.3",
+      "dpr": "1.5",
+      "ect": "4g",
+      "rtt": "150",
+      "sec-ch-device-memory": "2",
+      "sec-ch-dpr": "1.5",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"8\", \"Chromium\";v=\"114\", \"Google Chrome\";v=\"114\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version": "\"114.0.5735.196\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-model": "\"KFTRWI\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"9.0.0\"",
+      "sec-ch-viewport-height": "1362",
+      "sec-ch-viewport-width": "980",
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "same-origin",
+      "sec-fetch-user": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+      "viewport-width": "980"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Tablet",
+      "marketingName": "general Tablet",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "114.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "114.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "4",
+      "downlink": "6.25",
+      "dpr": "2.5",
+      "ect": "4g",
+      "rtt": "50",
+      "sec-ch-device-memory": "4",
+      "sec-ch-dpr": "2.5",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"8\", \"Chromium\";v=\"114\", \"Google Chrome\";v=\"114\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version": "\"114.0.5735.196\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-model": "\"CMR-W09\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"9.0.0\"",
+      "sec-ch-viewport-height": "1334",
+      "sec-ch-viewport-width": "980",
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "same-origin",
+      "sec-fetch-user": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+      "viewport-width": "980"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Tablet",
+      "marketingName": "general Tablet",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "114.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "114.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "4",
+      "downlink": "8.55",
+      "dpr": "2.125",
+      "ect": "4g",
+      "rtt": "50",
+      "sec-ch-device-memory": "4",
+      "sec-ch-dpr": "2.125",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"8\", \"Chromium\";v=\"114\", \"Google Chrome\";v=\"114\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version": "\"114.0.5735.196\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-model": "\"SM-T733\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"13.0.0\"",
+      "sec-ch-viewport-height": "1391",
+      "sec-ch-viewport-width": "980",
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "same-origin",
+      "sec-fetch-user": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+      "viewport-width": "980"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Tablet",
+      "marketingName": "general Tablet",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "114.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "114.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "4",
+      "downlink": "2.65",
+      "dpr": "2.25",
+      "ect": "4g",
+      "rtt": "150",
+      "sec-ch-device-memory": "4",
+      "sec-ch-dpr": "2.25",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"8\", \"Chromium\";v=\"114\", \"Google Chrome\";v=\"114\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version": "\"114.0.5735.196\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-model": "\"SM-T720\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"11.0.0\"",
+      "sec-ch-viewport-height": "468",
+      "sec-ch-viewport-width": "980",
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "same-origin",
+      "sec-fetch-user": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+      "viewport-width": "980"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Tablet",
+      "marketingName": "general Tablet",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "114.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "114.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "1",
+      "downlink": "1.45",
+      "dpr": "1",
+      "ect": "3g",
+      "rtt": "550",
+      "sec-ch-device-memory": "1",
+      "sec-ch-dpr": "1",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Google Chrome\";v=\"113\", \"Chromium\";v=\"113\", \"Not-A.Brand\";v=\"24\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version": "\"113.0.5672.163\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-model": "\"SM-T550\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"7.1.1\"",
+      "sec-ch-viewport-height": "1194",
+      "sec-ch-viewport-width": "980",
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "same-origin",
+      "sec-fetch-user": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36",
+      "viewport-width": "980"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Tablet",
+      "marketingName": "general Tablet",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "113.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "113.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "8",
+      "downlink": "10",
+      "dpr": "2.60625",
+      "ect": "4g",
+      "rtt": "50",
+      "sec-ch-device-memory": "8",
+      "sec-ch-dpr": "2.60625",
+      "sec-ch-prefers-color-scheme": "dark",
+      "sec-ch-prefers-reduced-motion": "reduce",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"8\", \"Chromium\";v=\"114\", \"Google Chrome\";v=\"114\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version": "\"114.0.5735.196\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-model": "\"SM-F926B\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"13.0.0\"",
+      "sec-ch-viewport-height": "670",
+      "sec-ch-viewport-width": "679",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+      "viewport-width": "679",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Tablet",
+      "marketingName": "general Tablet",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "114.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "114.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "8",
+      "downlink": "8.1",
+      "dpr": "2.125",
+      "ect": "4g",
+      "rtt": "100",
+      "sec-ch-device-memory": "8",
+      "sec-ch-dpr": "2.125",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-prefers-reduced-motion": "reduce",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"8\", \"Chromium\";v=\"114\", \"Google Chrome\";v=\"114\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version": "\"114.0.5735.196\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-model": "\"SM-X806B\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"13.0.0\"",
+      "sec-ch-viewport-height": "1404",
+      "sec-ch-viewport-width": "980",
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "same-origin",
+      "sec-fetch-user": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+      "viewport-width": "980"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Tablet",
+      "marketingName": "general Tablet",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "114.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "114.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "2",
+      "downlink": "5.45",
+      "dpr": "1.5",
+      "ect": "4g",
+      "rtt": "200",
+      "sec-ch-device-memory": "2",
+      "sec-ch-dpr": "1.5",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"8\", \"Chromium\";v=\"114\", \"Google Chrome\";v=\"114\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version": "\"114.0.5735.196\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-model": "\"LIFETAB P1071X\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"10.0.0\"",
+      "sec-ch-viewport-height": "484",
+      "sec-ch-viewport-width": "980",
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "same-origin",
+      "sec-fetch-user": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+      "viewport-width": "980"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Tablet",
+      "marketingName": "general Tablet",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "114.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "114.0.0.0",
+      "manufacturer": "google"
+    }
+  }
+]

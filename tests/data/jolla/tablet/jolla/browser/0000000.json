@@ -1,0 +1,44 @@
+[
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Maemo; Linux; U; Jolla; Sailfish; Tablet; rv:31.0) Gecko/31.0 Firefox/31.0 SailfishBrowser/1.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Tablet",
+      "marketingName": "Tablet",
+      "manufacturer": "jolla",
+      "brand": "jolla",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 2048,
+        "height": 1536,
+        "touch": true,
+        "size": 7.85
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "SailfishOS",
+      "marketingName": "SailfishOS",
+      "version": null,
+      "manufacturer": "jolla"
+    },
+    "client": {
+      "name": "Sailfish Browser",
+      "version": "1.0.0",
+      "manufacturer": "jolla",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "31.0.0",
+      "manufacturer": "mozilla-foundation"
+    }
+  }
+]

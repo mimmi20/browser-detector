@@ -1,0 +1,6465 @@
+[
+  {
+    "headers": {
+      "device-memory": "4",
+      "downlink": "2.1",
+      "dpr": "2.8125",
+      "ect": "4g",
+      "origin": "https://www.geld.de",
+      "rtt": "150",
+      "sec-ch-device-memory": "4",
+      "sec-ch-dpr": "2.8125",
+      "sec-ch-prefers-color-scheme": "dark",
+      "sec-ch-ua": "\"Google Chrome\";v=\"105\", \"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"105\"",
+      "sec-ch-ua-full-version": "\"105.0.5195.136\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-A336B\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"13.0.0\"",
+      "sec-ch-viewport-height": "721",
+      "sec-ch-viewport-width": "384",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; SM-A336B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "384",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "105.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "105.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "8",
+      "downlink": "4.3",
+      "dpr": "3",
+      "ect": "4g",
+      "rtt": "50",
+      "save-data": "on",
+      "sec-ch-device-memory": "8",
+      "sec-ch-dpr": "3",
+      "sec-ch-prefers-color-scheme": "dark",
+      "sec-ch-ua": "\"Google Chrome\";v=\"105\", \"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"105\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version": "\"105.0.5195.136\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-F711B\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"13.0.0\"",
+      "sec-ch-viewport-height": "2396",
+      "sec-ch-viewport-width": "980",
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "same-origin",
+      "sec-fetch-user": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; SM-F711B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "980"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "105.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "105.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "8",
+      "downlink": "4.25",
+      "dpr": "3",
+      "ect": "4g",
+      "origin": "https://www.geld.de",
+      "rtt": "50",
+      "save-data": "on",
+      "sec-ch-device-memory": "8",
+      "sec-ch-dpr": "3",
+      "sec-ch-prefers-color-scheme": "dark",
+      "sec-ch-ua": "\"Google Chrome\";v=\"105\", \"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"105\"",
+      "sec-ch-ua-full-version": "\"105.0.5195.136\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-F711B\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"13.0.0\"",
+      "sec-ch-viewport-height": "745",
+      "sec-ch-viewport-width": "360",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; SM-F711B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "360",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "105.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "105.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "4",
+      "downlink": "1.4",
+      "dpr": "2.8125",
+      "ect": "3g",
+      "origin": "https://www.geld.de",
+      "rtt": "250",
+      "sec-ch-device-memory": "4",
+      "sec-ch-dpr": "2.8125",
+      "sec-ch-prefers-color-scheme": "dark",
+      "sec-ch-ua": "\"Google Chrome\";v=\"105\", \"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"105\"",
+      "sec-ch-ua-full-version": "\"105.0.5195.136\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-A336B\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"13.0.0\"",
+      "sec-ch-viewport-height": "721",
+      "sec-ch-viewport-width": "384",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; SM-A336B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "384",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "105.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "105.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "4",
+      "downlink": "4.9",
+      "dpr": "2.8125",
+      "ect": "4g",
+      "origin": "https://www.geld.de",
+      "rtt": "100",
+      "sec-ch-device-memory": "4",
+      "sec-ch-dpr": "2.8125",
+      "sec-ch-prefers-color-scheme": "dark",
+      "sec-ch-ua": "\"Google Chrome\";v=\"107\", \"Chromium\";v=\"107\", \"Not=A?Brand\";v=\"24\"",
+      "sec-ch-ua-full-version": "\"107.0.5304.105\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-G780G\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"13.0.0\"",
+      "sec-ch-viewport-height": "718",
+      "sec-ch-viewport-width": "384",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; SM-G780G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "384",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "107.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "107.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "8",
+      "downlink": "1.75",
+      "dpr": "2.8125",
+      "ect": "4g",
+      "origin": "https://www.geld.de",
+      "rtt": "100",
+      "sec-ch-device-memory": "8",
+      "sec-ch-dpr": "2.8125",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"",
+      "sec-ch-ua-full-version": "\"108.0.5359.128\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-S906B\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"12.0.0\"",
+      "sec-ch-viewport-height": "702",
+      "sec-ch-viewport-width": "384",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-S906B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "384",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "108.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "108.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "none",
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-A127F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "107.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "107.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "4",
+      "downlink": "3.7",
+      "dpr": "2.8125",
+      "ect": "4g",
+      "rtt": "200",
+      "sec-ch-device-memory": "4",
+      "sec-ch-dpr": "2.8125",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-ua": "\"Chromium\";v=\"104\", \" Not A;Brand\";v=\"99\", \"Google Chrome\";v=\"104\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version": "\"104.0.5112.97\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-A528B\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"11.0.0\"",
+      "sec-ch-viewport-width": "980",
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "none",
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; SM-A528B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "980"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "104.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "104.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "4",
+      "downlink": "2.35",
+      "dpr": "2.8125",
+      "ect": "4g",
+      "rtt": "100",
+      "sec-ch-device-memory": "4",
+      "sec-ch-dpr": "2.8125",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-ua": "\"Chromium\";v=\"104\", \" Not A;Brand\";v=\"99\", \"Google Chrome\";v=\"104\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version": "\"104.0.5112.97\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-A528B\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"11.0.0\"",
+      "sec-ch-viewport-width": "980",
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "none",
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; SM-A528B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "980"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "104.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "104.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "8",
+      "downlink": "4.05",
+      "dpr": "3",
+      "ect": "4g",
+      "origin": "https://www.geld.de",
+      "rtt": "200",
+      "sec-ch-device-memory": "8",
+      "sec-ch-dpr": "3",
+      "sec-ch-prefers-color-scheme": "dark",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"",
+      "sec-ch-ua-full-version": "\"108.0.5359.79\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-S901B\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"13.0.0\"",
+      "sec-ch-viewport-height": "649",
+      "sec-ch-viewport-width": "360",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; SM-S901B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "360",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "108.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "108.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "4",
+      "downlink": "1.4",
+      "dpr": "2.8125",
+      "ect": "4g",
+      "origin": "https://www.geld.de",
+      "rtt": "50",
+      "sec-ch-device-memory": "4",
+      "sec-ch-dpr": "2.8125",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-ua": "\"Chromium\";v=\"104\", \" Not A;Brand\";v=\"99\", \"Google Chrome\";v=\"104\"",
+      "sec-ch-ua-full-version": "\"104.0.5112.97\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-A528B\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"11.0.0\"",
+      "sec-ch-viewport-width": "384",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; SM-A528B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "384",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "104.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "104.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "4",
+      "downlink": "3.25",
+      "dpr": "2.8125",
+      "ect": "4g",
+      "origin": "https://www.geld.de",
+      "rtt": "50",
+      "sec-ch-device-memory": "4",
+      "sec-ch-dpr": "2.8125",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"",
+      "sec-ch-ua-full-version": "\"108.0.5359.128\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-A336B\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"12.0.0\"",
+      "sec-ch-viewport-height": "721",
+      "sec-ch-viewport-width": "384",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-A336B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "384",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "108.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "108.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "4",
+      "downlink": "2.9",
+      "dpr": "2.8125",
+      "ect": "4g",
+      "rtt": "50",
+      "sec-ch-device-memory": "4",
+      "sec-ch-dpr": "2.8125",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version": "\"108.0.5359.128\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-A336B\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"12.0.0\"",
+      "sec-ch-viewport-height": "1983",
+      "sec-ch-viewport-width": "980",
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "cross-site",
+      "sec-fetch-user": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-A336B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "980"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "108.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "108.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "4",
+      "downlink": "1.3",
+      "dpr": "2.8125",
+      "ect": "4g",
+      "rtt": "50",
+      "sec-ch-device-memory": "4",
+      "sec-ch-dpr": "2.8125",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-ua": "\"Chromium\";v=\"104\", \" Not A;Brand\";v=\"99\", \"Google Chrome\";v=\"104\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version": "\"104.0.5112.97\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-A528B\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"11.0.0\"",
+      "sec-ch-viewport-width": "980",
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "none",
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; SM-A528B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "980"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "104.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "104.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "4",
+      "downlink": "7.8",
+      "dpr": "2.8125",
+      "ect": "4g",
+      "rtt": "100",
+      "sec-ch-device-memory": "4",
+      "sec-ch-dpr": "2.8125",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-ua": "\"Chromium\";v=\"106\", \"Google Chrome\";v=\"106\", \"Not;A=Brand\";v=\"99\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version": "\"106.0.5249.126\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-A336B\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"12.0.0\"",
+      "sec-ch-viewport-height": "2178",
+      "sec-ch-viewport-width": "980",
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "same-origin",
+      "sec-fetch-user": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-A336B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "980"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "106.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "106.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "4",
+      "downlink": "8.8",
+      "dpr": "2.8125",
+      "ect": "4g",
+      "origin": "https://www.geld.de",
+      "rtt": "100",
+      "sec-ch-device-memory": "4",
+      "sec-ch-dpr": "2.8125",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-ua": "\"Chromium\";v=\"106\", \"Google Chrome\";v=\"106\", \"Not;A=Brand\";v=\"99\"",
+      "sec-ch-ua-full-version": "\"106.0.5249.126\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-A336B\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"12.0.0\"",
+      "sec-ch-viewport-height": "721",
+      "sec-ch-viewport-width": "384",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-A336B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "384",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "106.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "106.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "4",
+      "downlink": "1.75",
+      "dpr": "2",
+      "ect": "4g",
+      "rtt": "200",
+      "sec-ch-device-memory": "4",
+      "sec-ch-dpr": "2",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version": "\"108.0.5359.128\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-A127F\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"12.0.0\"",
+      "sec-ch-viewport-height": "0",
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "none",
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-A127F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "108.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "108.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "4",
+      "downlink": "2.05",
+      "dpr": "2.8125",
+      "ect": "4g",
+      "rtt": "200",
+      "sec-ch-device-memory": "4",
+      "sec-ch-dpr": "2.8125",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-ua": "\"Chromium\";v=\"104\", \" Not A;Brand\";v=\"99\", \"Google Chrome\";v=\"104\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version": "\"104.0.5112.97\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-A528B\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"11.0.0\"",
+      "sec-ch-viewport-width": "980",
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "same-origin",
+      "sec-fetch-user": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; SM-A528B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "980"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "104.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "104.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "2",
+      "downlink": "5.8",
+      "dpr": "1.875",
+      "ect": "4g",
+      "origin": "https://www.geld.de",
+      "rtt": "150",
+      "sec-ch-device-memory": "2",
+      "sec-ch-dpr": "1.875",
+      "sec-ch-prefers-color-scheme": "dark",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"",
+      "sec-ch-ua-full-version": "\"108.0.5359.79\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-A125F\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"12.0.0\"",
+      "sec-ch-viewport-height": "726",
+      "sec-ch-viewport-width": "384",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-A125F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "384",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "108.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "108.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "2",
+      "downlink": "5.7",
+      "dpr": "1.875",
+      "ect": "4g",
+      "rtt": "50",
+      "sec-ch-device-memory": "2",
+      "sec-ch-dpr": "1.875",
+      "sec-ch-prefers-color-scheme": "dark",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version": "\"108.0.5359.79\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-A125F\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"12.0.0\"",
+      "sec-ch-viewport-height": "1853",
+      "sec-ch-viewport-width": "980",
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "same-origin",
+      "sec-fetch-user": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-A125F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "980"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "108.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "108.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "4",
+      "downlink": "0.75",
+      "dpr": "2.8125",
+      "ect": "3g",
+      "rtt": "450",
+      "sec-ch-device-memory": "4",
+      "sec-ch-dpr": "2.8125",
+      "sec-ch-prefers-color-scheme": "dark",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version": "\"108.0.5359.128\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-A528B\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"11.0.0\"",
+      "sec-ch-viewport-height": "1832",
+      "sec-ch-viewport-width": "980",
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "same-origin",
+      "sec-fetch-user": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; SM-A528B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "980"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "108.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "108.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "4",
+      "downlink": "1.5",
+      "dpr": "2.8125",
+      "ect": "3g",
+      "origin": "https://www.geld.de",
+      "rtt": "450",
+      "sec-ch-device-memory": "4",
+      "sec-ch-dpr": "2.8125",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"",
+      "sec-ch-ua-full-version": "\"108.0.5359.128\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-A528B\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"13.0.0\"",
+      "sec-ch-viewport-height": "718",
+      "sec-ch-viewport-width": "384",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; SM-A528B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "384",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "108.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "108.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "4",
+      "downlink": "7.2",
+      "dpr": "2.8125",
+      "ect": "4g",
+      "rtt": "50",
+      "sec-ch-device-memory": "4",
+      "sec-ch-dpr": "2.8125",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version": "\"108.0.5359.79\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-A528B\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"12.0.0\"",
+      "sec-ch-viewport-height": "1832",
+      "sec-ch-viewport-width": "980",
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "same-origin",
+      "sec-fetch-user": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-A528B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "980"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "108.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "108.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "4",
+      "downlink": "9.25",
+      "dpr": "1.875",
+      "ect": "4g",
+      "origin": "https://www.geld.de",
+      "rtt": "50",
+      "sec-ch-device-memory": "4",
+      "sec-ch-dpr": "1.875",
+      "sec-ch-prefers-color-scheme": "dark",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"",
+      "sec-ch-ua-full-version": "\"108.0.5359.128\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-A225F\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"13.0.0\"",
+      "sec-ch-viewport-height": "719",
+      "sec-ch-viewport-width": "384",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; SM-A225F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "384",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "108.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "108.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "8",
+      "downlink": "3.4",
+      "dpr": "3.375",
+      "ect": "4g",
+      "origin": "https://www.geld.de",
+      "rtt": "50",
+      "sec-ch-device-memory": "8",
+      "sec-ch-dpr": "3.375",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"",
+      "sec-ch-ua-full-version": "\"108.0.5359.128\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-F711B\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"13.0.0\"",
+      "sec-ch-viewport-height": "651",
+      "sec-ch-viewport-width": "320",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; SM-F711B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "320",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "108.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "108.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "8",
+      "downlink": "8.9",
+      "dpr": "2.625",
+      "ect": "4g",
+      "origin": "https://www.geld.de",
+      "rtt": "150",
+      "sec-ch-device-memory": "8",
+      "sec-ch-dpr": "2.625",
+      "sec-ch-prefers-color-scheme": "dark",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"",
+      "sec-ch-ua-full-version": "\"108.0.5359.128\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-F936B\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"13.0.0\"",
+      "sec-ch-viewport-height": "746",
+      "sec-ch-viewport-width": "345",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; SM-F936B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "345",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "108.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "108.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "8",
+      "downlink": "8.7",
+      "dpr": "2",
+      "ect": "4g",
+      "origin": "https://www.geld.de",
+      "rtt": "50",
+      "sec-ch-device-memory": "8",
+      "sec-ch-dpr": "2",
+      "sec-ch-prefers-color-scheme": "dark",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"",
+      "sec-ch-ua-full-version": "\"108.0.5359.128\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-S908B\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"13.0.0\"",
+      "sec-ch-viewport-height": "643",
+      "sec-ch-viewport-width": "360",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; SM-S908B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "360",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "108.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "108.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "2",
+      "downlink": "9.6",
+      "dpr": "1.875",
+      "ect": "4g",
+      "origin": "https://www.geld.de",
+      "rtt": "100",
+      "sec-ch-device-memory": "2",
+      "sec-ch-dpr": "1.875",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"",
+      "sec-ch-ua-full-version": "\"108.0.5359.128\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-A127F\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"12.0.0\"",
+      "sec-ch-viewport-height": "726",
+      "sec-ch-viewport-width": "384",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-A127F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "384",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "108.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "108.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "4",
+      "downlink": "7.6",
+      "dpr": "2.8125",
+      "ect": "4g",
+      "origin": "https://www.geld.de",
+      "rtt": "100",
+      "sec-ch-device-memory": "4",
+      "sec-ch-dpr": "2.8125",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-ua": "\"Google Chrome\";v=\"107\", \"Chromium\";v=\"107\", \"Not=A?Brand\";v=\"24\"",
+      "sec-ch-ua-full-version": "\"107.0.5304.141\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-A336B\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"12.0.0\"",
+      "sec-ch-viewport-height": "721",
+      "sec-ch-viewport-width": "384",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-A336B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "384",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "107.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "107.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "8",
+      "downlink": "0.35",
+      "dpr": "2.625",
+      "ect": "3g",
+      "origin": "https://www.geld.de",
+      "rtt": "700",
+      "sec-ch-device-memory": "8",
+      "sec-ch-dpr": "2.625",
+      "sec-ch-prefers-color-scheme": "dark",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"",
+      "sec-ch-ua-full-version": "\"108.0.5359.128\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-S901B\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"13.0.0\"",
+      "sec-ch-viewport-height": "709",
+      "sec-ch-viewport-width": "412",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; SM-S901B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "412",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "108.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "108.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "8",
+      "downlink": "7.45",
+      "dpr": "2.625",
+      "ect": "4g",
+      "rtt": "150",
+      "sec-ch-device-memory": "8",
+      "sec-ch-dpr": "2.625",
+      "sec-ch-prefers-color-scheme": "dark",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version": "\"108.0.5359.128\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-F936B\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"13.0.0\"",
+      "sec-ch-viewport-height": "2119",
+      "sec-ch-viewport-width": "980",
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "same-origin",
+      "sec-fetch-user": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; SM-F936B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "980"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "108.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "108.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "4",
+      "downlink": "5.7",
+      "dpr": "2.125",
+      "ect": "4g",
+      "rtt": "50",
+      "sec-ch-device-memory": "4",
+      "sec-ch-dpr": "2.125",
+      "sec-ch-prefers-color-scheme": "dark",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version": "\"108.0.5359.128\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-model": "\"SM-T733\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"13.0.0\"",
+      "sec-ch-viewport-height": "502",
+      "sec-ch-viewport-width": "980",
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "same-origin",
+      "sec-fetch-user": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; SM-T733) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36",
+      "viewport-width": "980"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "108.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "108.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "2",
+      "downlink": "8.85",
+      "dpr": "1.875",
+      "ect": "4g",
+      "rtt": "100",
+      "sec-ch-device-memory": "2",
+      "sec-ch-dpr": "1.875",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version": "\"108.0.5359.128\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-A127F\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"12.0.0\"",
+      "sec-ch-viewport-height": "1853",
+      "sec-ch-viewport-width": "980",
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "same-origin",
+      "sec-fetch-user": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-A127F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "980"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "108.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "108.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "4",
+      "downlink": "5.6",
+      "dpr": "1.875",
+      "ect": "4g",
+      "rtt": "50",
+      "sec-ch-device-memory": "4",
+      "sec-ch-dpr": "1.875",
+      "sec-ch-prefers-color-scheme": "dark",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version": "\"108.0.5359.79\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-A125F\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"11.0.0\"",
+      "sec-ch-viewport-height": "1853",
+      "sec-ch-viewport-width": "980",
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "same-origin",
+      "sec-fetch-user": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; SM-A125F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "980"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "108.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "108.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "2",
+      "downlink": "5.85",
+      "dpr": "1.5",
+      "ect": "4g",
+      "rtt": "100",
+      "save-data": "on",
+      "sec-ch-device-memory": "2",
+      "sec-ch-dpr": "1.5",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-ua": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version": "\"103.0.5060.71\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-model": "\"SM-X205\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"12.0.0\"",
+      "sec-ch-viewport-width": "980",
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "same-origin",
+      "sec-fetch-user": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-X205) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36",
+      "viewport-width": "980"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "103.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "103.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "8",
+      "downlink": "1.3",
+      "dpr": "2.625",
+      "ect": "3g",
+      "origin": "https://www.geld.de",
+      "rtt": "400",
+      "sec-ch-device-memory": "8",
+      "sec-ch-dpr": "2.625",
+      "sec-ch-prefers-color-scheme": "dark",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"",
+      "sec-ch-ua-full-version": "\"108.0.5359.128\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-S901B\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"13.0.0\"",
+      "sec-ch-viewport-height": "709",
+      "sec-ch-viewport-width": "412",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; SM-S901B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "412",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "108.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "108.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "8",
+      "downlink": "1.35",
+      "dpr": "2.625",
+      "ect": "3g",
+      "rtt": "400",
+      "sec-ch-device-memory": "8",
+      "sec-ch-dpr": "2.625",
+      "sec-ch-prefers-color-scheme": "dark",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version": "\"108.0.5359.128\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-S901B\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"13.0.0\"",
+      "sec-ch-viewport-height": "1686",
+      "sec-ch-viewport-width": "980",
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "same-origin",
+      "sec-fetch-user": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; SM-S901B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "980"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "108.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "108.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "4",
+      "downlink": "4.2",
+      "dpr": "2.8125",
+      "ect": "4g",
+      "origin": "https://www.geld.de",
+      "rtt": "50",
+      "sec-ch-device-memory": "4",
+      "sec-ch-dpr": "2.8125",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"",
+      "sec-ch-ua-full-version": "\"108.0.5359.128\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-A528B\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"13.0.0\"",
+      "sec-ch-viewport-height": "644",
+      "sec-ch-viewport-width": "384",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; SM-A528B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "384",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "108.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "108.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "4",
+      "downlink": "2.75",
+      "dpr": "2.8125",
+      "ect": "4g",
+      "origin": "https://www.geld.de",
+      "rtt": "250",
+      "save-data": "on",
+      "sec-ch-device-memory": "4",
+      "sec-ch-dpr": "2.8125",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"",
+      "sec-ch-ua-full-version": "\"108.0.5359.128\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-A528B\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"13.0.0\"",
+      "sec-ch-viewport-height": "718",
+      "sec-ch-viewport-width": "384",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; SM-A528B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "384",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "108.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "108.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "4",
+      "downlink": "3.65",
+      "dpr": "1.875",
+      "ect": "4g",
+      "origin": "https://www.geld.de",
+      "rtt": "100",
+      "save-data": "on",
+      "sec-ch-device-memory": "4",
+      "sec-ch-dpr": "1.875",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-ua": "\"Google Chrome\";v=\"107\", \"Chromium\";v=\"107\", \"Not=A?Brand\";v=\"24\"",
+      "sec-ch-ua-full-version": "\"107.0.5304.105\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-A127F\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"11.0.0\"",
+      "sec-ch-viewport-height": "727",
+      "sec-ch-viewport-width": "384",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; SM-A127F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "384",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "107.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "107.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "4",
+      "downlink": "1.3",
+      "dpr": "1.875",
+      "ect": "3g",
+      "origin": "https://www.geld.de",
+      "rtt": "400",
+      "save-data": "on",
+      "sec-ch-device-memory": "4",
+      "sec-ch-dpr": "1.875",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-ua": "\"Google Chrome\";v=\"107\", \"Chromium\";v=\"107\", \"Not=A?Brand\";v=\"24\"",
+      "sec-ch-ua-full-version": "\"107.0.5304.105\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-A127F\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"11.0.0\"",
+      "sec-ch-viewport-height": "727",
+      "sec-ch-viewport-width": "384",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; SM-A127F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "384",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "107.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "107.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "8",
+      "downlink": "3.95",
+      "dpr": "3",
+      "ect": "4g",
+      "origin": "https://www.geld.de",
+      "rtt": "100",
+      "sec-ch-device-memory": "8",
+      "sec-ch-dpr": "3",
+      "sec-ch-prefers-color-scheme": "dark",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"",
+      "sec-ch-ua-full-version": "\"108.0.5359.128\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-F711B\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"13.0.0\"",
+      "sec-ch-viewport-height": "745",
+      "sec-ch-viewport-width": "360",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; SM-F711B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "360",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "108.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "108.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "4",
+      "downlink": "3.2",
+      "dpr": "1.875",
+      "ect": "4g",
+      "origin": "https://www.geld.de",
+      "rtt": "250",
+      "save-data": "on",
+      "sec-ch-device-memory": "4",
+      "sec-ch-dpr": "1.875",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-ua": "\"Google Chrome\";v=\"107\", \"Chromium\";v=\"107\", \"Not=A?Brand\";v=\"24\"",
+      "sec-ch-ua-full-version": "\"107.0.5304.105\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-A127F\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"11.0.0\"",
+      "sec-ch-viewport-height": "727",
+      "sec-ch-viewport-width": "384",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; SM-A127F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "384",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "107.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "107.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "4",
+      "downlink": "3.75",
+      "dpr": "1.875",
+      "ect": "4g",
+      "rtt": "100",
+      "save-data": "on",
+      "sec-ch-device-memory": "4",
+      "sec-ch-dpr": "1.875",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-ua": "\"Google Chrome\";v=\"107\", \"Chromium\";v=\"107\", \"Not=A?Brand\";v=\"24\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version": "\"107.0.5304.105\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-A127F\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"11.0.0\"",
+      "sec-ch-viewport-height": "1998",
+      "sec-ch-viewport-width": "980",
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "same-origin",
+      "sec-fetch-user": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; SM-A127F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "980"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "107.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "107.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "4",
+      "downlink": "1.3",
+      "dpr": "1.875",
+      "ect": "3g",
+      "rtt": "400",
+      "save-data": "on",
+      "sec-ch-device-memory": "4",
+      "sec-ch-dpr": "1.875",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-ua": "\"Google Chrome\";v=\"107\", \"Chromium\";v=\"107\", \"Not=A?Brand\";v=\"24\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version": "\"107.0.5304.105\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-A127F\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"11.0.0\"",
+      "sec-ch-viewport-height": "1855",
+      "sec-ch-viewport-width": "980",
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "same-origin",
+      "sec-fetch-user": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; SM-A127F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "980"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "107.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "107.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "4",
+      "downlink": "2.85",
+      "dpr": "2.8125",
+      "ect": "4g",
+      "origin": "https://www.geld.de",
+      "rtt": "200",
+      "save-data": "on",
+      "sec-ch-device-memory": "4",
+      "sec-ch-dpr": "2.8125",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"",
+      "sec-ch-ua-full-version": "\"108.0.5359.128\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-A528B\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"13.0.0\"",
+      "sec-ch-viewport-height": "644",
+      "sec-ch-viewport-width": "384",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; SM-A528B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "384",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "108.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "108.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "4",
+      "downlink": "2.85",
+      "dpr": "2.8125",
+      "ect": "4g",
+      "rtt": "250",
+      "save-data": "on",
+      "sec-ch-device-memory": "4",
+      "sec-ch-dpr": "2.8125",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version": "\"108.0.5359.128\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-A528B\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"13.0.0\"",
+      "sec-ch-viewport-height": "1978",
+      "sec-ch-viewport-width": "980",
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "same-origin",
+      "sec-fetch-user": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; SM-A528B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "980"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "108.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "108.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "8",
+      "downlink": "9.3",
+      "dpr": "2.25",
+      "ect": "4g",
+      "origin": "https://www.geld.de",
+      "rtt": "100",
+      "sec-ch-device-memory": "8",
+      "sec-ch-dpr": "2.25",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"",
+      "sec-ch-ua-full-version": "\"108.0.5359.128\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-S908B\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"13.0.0\"",
+      "sec-ch-viewport-height": "560",
+      "sec-ch-viewport-width": "320",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; SM-S908B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "320",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "108.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "108.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "4",
+      "downlink": "8.35",
+      "dpr": "3.1875",
+      "ect": "4g",
+      "origin": "https://www.geld.de",
+      "rtt": "100",
+      "sec-ch-device-memory": "4",
+      "sec-ch-dpr": "3.1875",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"",
+      "sec-ch-ua-full-version": "\"108.0.5359.79\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-A226B\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"13.0.0\"",
+      "sec-ch-viewport-height": "612",
+      "sec-ch-viewport-width": "339",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; SM-A226B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "339",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "108.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "108.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "4",
+      "downlink": "3.4",
+      "dpr": "2.625",
+      "ect": "4g",
+      "origin": "https://www.geld.de",
+      "rtt": "200",
+      "sec-ch-device-memory": "4",
+      "sec-ch-dpr": "2.625",
+      "sec-ch-prefers-color-scheme": "dark",
+      "sec-ch-ua": "\"Google Chrome\";v=\"107\", \"Chromium\";v=\"107\", \"Not=A?Brand\";v=\"24\"",
+      "sec-ch-ua-full-version": "\"107.0.5304.105\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-M526BR\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"13.0.0\"",
+      "sec-ch-viewport-height": "776",
+      "sec-ch-viewport-width": "412",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; SM-M526BR) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "412",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "107.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "107.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "4",
+      "downlink": "9.7",
+      "dpr": "1.875",
+      "ect": "4g",
+      "origin": "https://www.geld.de",
+      "rtt": "50",
+      "save-data": "on",
+      "sec-ch-device-memory": "4",
+      "sec-ch-dpr": "1.875",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"",
+      "sec-ch-ua-full-version": "\"108.0.5359.79\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-A326B\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"12.0.0\"",
+      "sec-ch-viewport-height": "722",
+      "sec-ch-viewport-width": "384",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-A326B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "384",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "108.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "108.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "8",
+      "downlink": "6.95",
+      "dpr": "2.8125",
+      "ect": "4g",
+      "origin": "https://www.geld.de",
+      "rtt": "150",
+      "sec-ch-device-memory": "8",
+      "sec-ch-dpr": "2.8125",
+      "sec-ch-prefers-color-scheme": "dark",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"",
+      "sec-ch-ua-full-version": "\"108.0.5359.128\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-S906B\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"13.0.0\"",
+      "sec-ch-viewport-height": "702",
+      "sec-ch-viewport-width": "384",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; SM-S906B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "384",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "108.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "108.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "4",
+      "downlink": "9.35",
+      "dpr": "3.1875",
+      "ect": "4g",
+      "rtt": "100",
+      "sec-ch-device-memory": "4",
+      "sec-ch-dpr": "3.1875",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version": "\"108.0.5359.79\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-A226B\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"13.0.0\"",
+      "sec-ch-viewport-height": "1769",
+      "sec-ch-viewport-width": "980",
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "same-origin",
+      "sec-fetch-user": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; SM-A226B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "980"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "108.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "108.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "4",
+      "downlink": "9.55",
+      "dpr": "1.875",
+      "ect": "4g",
+      "rtt": "50",
+      "save-data": "on",
+      "sec-ch-device-memory": "4",
+      "sec-ch-dpr": "1.875",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-ua": "\"Google Chrome\";v=\"107\", \"Chromium\";v=\"107\", \"Not=A?Brand\";v=\"24\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version": "\"107.0.5304.105\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-A125F\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"11.0.0\"",
+      "sec-ch-viewport-height": "1853",
+      "sec-ch-viewport-width": "980",
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "same-origin",
+      "sec-fetch-user": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; SM-A125F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "980"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "107.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "107.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "4",
+      "downlink": "3.3",
+      "dpr": "3",
+      "ect": "4g",
+      "rtt": "150",
+      "sec-ch-device-memory": "4",
+      "sec-ch-dpr": "3",
+      "sec-ch-prefers-color-scheme": "dark",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version": "\"108.0.5359.128\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-A536B\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"13.0.0\"",
+      "sec-ch-viewport-height": "1816",
+      "sec-ch-viewport-width": "980",
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "same-origin",
+      "sec-fetch-user": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; SM-A536B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "980"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "108.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "108.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "4",
+      "downlink": "4.65",
+      "dpr": "1.875",
+      "ect": "4g",
+      "rtt": "150",
+      "save-data": "on",
+      "sec-ch-device-memory": "4",
+      "sec-ch-dpr": "1.875",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version": "\"108.0.5359.79\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-A326B\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"12.0.0\"",
+      "sec-ch-viewport-height": "1843",
+      "sec-ch-viewport-width": "980",
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "same-origin",
+      "sec-fetch-user": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-A326B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "980"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "108.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "108.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "4",
+      "downlink": "4.1",
+      "dpr": "1.875",
+      "ect": "4g",
+      "origin": "https://www.geld.de",
+      "rtt": "100",
+      "save-data": "on",
+      "sec-ch-device-memory": "4",
+      "sec-ch-dpr": "1.875",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"",
+      "sec-ch-ua-full-version": "\"108.0.5359.79\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-A326B\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"12.0.0\"",
+      "sec-ch-viewport-height": "722",
+      "sec-ch-viewport-width": "384",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-A326B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "384",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "108.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "108.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "4",
+      "downlink": "3.9",
+      "dpr": "2.625",
+      "ect": "4g",
+      "rtt": "250",
+      "sec-ch-device-memory": "4",
+      "sec-ch-dpr": "2.625",
+      "sec-ch-prefers-color-scheme": "dark",
+      "sec-ch-ua": "\"Google Chrome\";v=\"107\", \"Chromium\";v=\"107\", \"Not=A?Brand\";v=\"24\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version": "\"107.0.5304.105\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-M526BR\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"13.0.0\"",
+      "sec-ch-viewport-height": "1846",
+      "sec-ch-viewport-width": "980",
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "same-origin",
+      "sec-fetch-user": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; SM-M526BR) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "980"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "107.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "107.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "4",
+      "downlink": "5.65",
+      "dpr": "2.625",
+      "ect": "4g",
+      "rtt": "200",
+      "sec-ch-device-memory": "4",
+      "sec-ch-dpr": "2.625",
+      "sec-ch-prefers-color-scheme": "dark",
+      "sec-ch-ua": "\"Google Chrome\";v=\"107\", \"Chromium\";v=\"107\", \"Not=A?Brand\";v=\"24\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version": "\"107.0.5304.105\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-M526BR\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"13.0.0\"",
+      "sec-ch-viewport-height": "1846",
+      "sec-ch-viewport-width": "980",
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "same-origin",
+      "sec-fetch-user": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; SM-M526BR) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "980"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "107.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "107.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "4",
+      "downlink": "8.4",
+      "dpr": "2.8125",
+      "ect": "4g",
+      "origin": "https://www.geld.de",
+      "rtt": "50",
+      "sec-ch-device-memory": "4",
+      "sec-ch-dpr": "2.8125",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"",
+      "sec-ch-ua-full-version": "\"108.0.5359.79\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-A226B\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"13.0.0\"",
+      "sec-ch-viewport-height": "712",
+      "sec-ch-viewport-width": "384",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; SM-A226B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "384",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "108.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "108.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "4",
+      "downlink": "8.7",
+      "dpr": "2.125",
+      "ect": "4g",
+      "origin": "https://www.geld.de",
+      "rtt": "100",
+      "sec-ch-device-memory": "4",
+      "sec-ch-dpr": "2.125",
+      "sec-ch-prefers-color-scheme": "dark",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"",
+      "sec-ch-ua-full-version": "\"108.0.5359.128\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-A326B\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"12.0.0\"",
+      "sec-ch-viewport-height": "624",
+      "sec-ch-viewport-width": "339",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-A326B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "339",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "108.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "108.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "4",
+      "downlink": "4.2",
+      "dpr": "2.8125",
+      "ect": "4g",
+      "origin": "https://www.geld.de",
+      "rtt": "200",
+      "sec-ch-device-memory": "4",
+      "sec-ch-dpr": "2.8125",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-ua": "\"Google Chrome\";v=\"107\", \"Chromium\";v=\"107\", \"Not=A?Brand\";v=\"24\"",
+      "sec-ch-ua-full-version": "\"107.0.5304.141\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-A528B\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"12.0.0\"",
+      "sec-ch-viewport-height": "718",
+      "sec-ch-viewport-width": "384",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-A528B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "384",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "107.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "107.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "4",
+      "downlink": "1.85",
+      "dpr": "1.875",
+      "ect": "4g",
+      "origin": "https://www.geld.de",
+      "rtt": "100",
+      "sec-ch-device-memory": "4",
+      "sec-ch-dpr": "1.875",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"",
+      "sec-ch-ua-full-version": "\"108.0.5359.128\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-A125F\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"11.0.0\"",
+      "sec-ch-viewport-height": "726",
+      "sec-ch-viewport-width": "384",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; SM-A125F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "384",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "108.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "108.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "4",
+      "downlink": "7.75",
+      "dpr": "2.125",
+      "ect": "4g",
+      "rtt": "100",
+      "sec-ch-device-memory": "4",
+      "sec-ch-dpr": "2.125",
+      "sec-ch-prefers-color-scheme": "dark",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version": "\"108.0.5359.128\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-A326B\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"12.0.0\"",
+      "sec-ch-viewport-height": "1804",
+      "sec-ch-viewport-width": "980",
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "same-origin",
+      "sec-fetch-user": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-A326B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "980"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "108.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "108.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "4",
+      "downlink": "4.65",
+      "dpr": "2.8125",
+      "ect": "4g",
+      "origin": "https://www.geld.de",
+      "rtt": "100",
+      "sec-ch-device-memory": "4",
+      "sec-ch-dpr": "2.8125",
+      "sec-ch-prefers-color-scheme": "dark",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"",
+      "sec-ch-ua-full-version": "\"108.0.5359.128\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-A336B\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"13.0.0\"",
+      "sec-ch-viewport-height": "721",
+      "sec-ch-viewport-width": "384",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; SM-A336B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "384",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "108.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "108.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "8",
+      "downlink": "6.95",
+      "dpr": "2.625",
+      "ect": "4g",
+      "rtt": "50",
+      "sec-ch-device-memory": "8",
+      "sec-ch-dpr": "2.625",
+      "sec-ch-prefers-color-scheme": "dark",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version": "\"108.0.5359.79\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-S901B\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"13.0.0\"",
+      "sec-ch-viewport-height": "1801",
+      "sec-ch-viewport-width": "980",
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "same-origin",
+      "sec-fetch-user": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; SM-S901B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "980"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "108.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "108.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "4",
+      "downlink": "1.3",
+      "dpr": "3",
+      "ect": "4g",
+      "origin": "https://www.geld.de",
+      "rtt": "200",
+      "sec-ch-device-memory": "4",
+      "sec-ch-dpr": "3",
+      "sec-ch-prefers-color-scheme": "dark",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"",
+      "sec-ch-ua-full-version": "\"108.0.5359.79\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-G780G\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"12.0.0\"",
+      "sec-ch-viewport-height": "667",
+      "sec-ch-viewport-width": "360",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-G780G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "360",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "108.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "108.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "4",
+      "downlink": "6.85",
+      "dpr": "1.875",
+      "ect": "4g",
+      "origin": "https://www.geld.de",
+      "rtt": "50",
+      "sec-ch-device-memory": "4",
+      "sec-ch-dpr": "1.875",
+      "sec-ch-prefers-color-scheme": "dark",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"",
+      "sec-ch-ua-full-version": "\"108.0.5359.128\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-A127F\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"12.0.0\"",
+      "sec-ch-viewport-height": "759",
+      "sec-ch-viewport-width": "384",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-A127F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "384",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "108.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "108.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "8",
+      "downlink": "1.55",
+      "dpr": "3",
+      "ect": "3g",
+      "rtt": "300",
+      "sec-ch-device-memory": "8",
+      "sec-ch-dpr": "3",
+      "sec-ch-prefers-color-scheme": "dark",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version": "\"108.0.5359.79\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-S901B\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"13.0.0\"",
+      "sec-ch-viewport-height": "1857",
+      "sec-ch-viewport-width": "980",
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "same-origin",
+      "sec-fetch-user": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; SM-S901B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "980"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "108.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "108.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "8",
+      "downlink": "4.3",
+      "dpr": "3",
+      "ect": "4g",
+      "origin": "https://www.geld.de",
+      "rtt": "200",
+      "save-data": "on",
+      "sec-ch-device-memory": "8",
+      "sec-ch-dpr": "3",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"",
+      "sec-ch-ua-full-version": "\"108.0.5359.79\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-G990B2\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"13.0.0\"",
+      "sec-ch-viewport-height": "643",
+      "sec-ch-viewport-width": "360",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; SM-G990B2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "360",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "108.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "108.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "8",
+      "downlink": "1.3",
+      "dpr": "3",
+      "ect": "3g",
+      "origin": "https://www.geld.de",
+      "rtt": "600",
+      "sec-ch-device-memory": "8",
+      "sec-ch-dpr": "3",
+      "sec-ch-prefers-color-scheme": "dark",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"",
+      "sec-ch-ua-full-version": "\"108.0.5359.79\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-F711B\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"13.0.0\"",
+      "sec-ch-viewport-height": "745",
+      "sec-ch-viewport-width": "360",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; SM-F711B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "360",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "108.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "108.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "4",
+      "downlink": "6.8",
+      "dpr": "2",
+      "ect": "4g",
+      "origin": "https://www.geld.de",
+      "rtt": "100",
+      "save-data": "on",
+      "sec-ch-device-memory": "4",
+      "sec-ch-dpr": "2",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"",
+      "sec-ch-ua-full-version": "\"108.0.5359.79\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-A326B\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"12.0.0\"",
+      "sec-ch-viewport-height": "668",
+      "sec-ch-viewport-width": "360",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-A326B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "360",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "108.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "108.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "8",
+      "downlink": "7.35",
+      "dpr": "2.625",
+      "ect": "4g",
+      "origin": "https://www.geld.de",
+      "rtt": "150",
+      "sec-ch-device-memory": "8",
+      "sec-ch-dpr": "2.625",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"",
+      "sec-ch-ua-full-version": "\"108.0.5359.79\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-A525F\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"13.0.0\"",
+      "sec-ch-viewport-height": "777",
+      "sec-ch-viewport-width": "412",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; SM-A525F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "412",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "108.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "108.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "8",
+      "downlink": "4.7",
+      "dpr": "3",
+      "ect": "4g",
+      "rtt": "200",
+      "save-data": "on",
+      "sec-ch-device-memory": "8",
+      "sec-ch-dpr": "3",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version": "\"108.0.5359.79\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-G990B2\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"13.0.0\"",
+      "sec-ch-viewport-height": "1750",
+      "sec-ch-viewport-width": "980",
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "same-origin",
+      "sec-fetch-user": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; SM-G990B2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "980"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "108.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "108.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "2",
+      "downlink": "8.75",
+      "dpr": "1.875",
+      "ect": "4g",
+      "rtt": "100",
+      "sec-ch-device-memory": "2",
+      "sec-ch-dpr": "1.875",
+      "sec-ch-prefers-color-scheme": "dark",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version": "\"108.0.5359.79\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-A025F\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"12.0.0\"",
+      "sec-ch-viewport-height": "0",
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "none",
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-A025F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "108.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "108.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "2",
+      "downlink": "5.45",
+      "dpr": "1.875",
+      "ect": "4g",
+      "rtt": "50",
+      "sec-ch-device-memory": "2",
+      "sec-ch-dpr": "1.875",
+      "sec-ch-prefers-color-scheme": "dark",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version": "\"108.0.5359.79\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-A025F\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"12.0.0\"",
+      "sec-ch-viewport-height": "0",
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "none",
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-A025F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "108.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "108.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "4",
+      "downlink": "8.55",
+      "dpr": "1.875",
+      "ect": "4g",
+      "origin": "https://www.geld.de",
+      "rtt": "100",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; SM-A127F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36",
+      "viewport-width": "384",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "87.0.4280.141",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "87.0.4280.141",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "8",
+      "downlink": "6.2",
+      "dpr": "3.75",
+      "ect": "4g",
+      "rtt": "100",
+      "sec-ch-device-memory": "8",
+      "sec-ch-dpr": "3.75",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version": "\"108.0.5359.79\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-S908B\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"13.0.0\"",
+      "sec-ch-viewport-height": "1769",
+      "sec-ch-viewport-width": "980",
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "same-origin",
+      "sec-fetch-user": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; SM-S908B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "980"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "108.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "108.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "4",
+      "downlink": "7.85",
+      "dpr": "1.875",
+      "ect": "4g",
+      "origin": "https://www.geld.de",
+      "rtt": "100",
+      "sec-ch-device-memory": "4",
+      "sec-ch-dpr": "1.875",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"",
+      "sec-ch-ua-full-version": "\"108.0.5359.79\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-A125F\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"12.0.0\"",
+      "sec-ch-viewport-height": "726",
+      "sec-ch-viewport-width": "384",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-A125F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "384",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "108.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "108.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "4",
+      "downlink": "6.95",
+      "dpr": "2",
+      "ect": "4g",
+      "rtt": "100",
+      "save-data": "on",
+      "sec-ch-device-memory": "4",
+      "sec-ch-dpr": "2",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version": "\"108.0.5359.79\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-A326B\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"12.0.0\"",
+      "sec-ch-viewport-height": "1818",
+      "sec-ch-viewport-width": "980",
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "same-origin",
+      "sec-fetch-user": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-A326B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "980"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "108.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "108.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "4",
+      "downlink": "4.75",
+      "dpr": "2.8125",
+      "ect": "4g",
+      "origin": "https://www.geld.de",
+      "rtt": "100",
+      "sec-ch-device-memory": "4",
+      "sec-ch-dpr": "2.8125",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"",
+      "sec-ch-ua-full-version": "\"108.0.5359.79\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-A135F\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"12.0.0\"",
+      "sec-ch-viewport-height": "729",
+      "sec-ch-viewport-width": "384",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-A135F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "384",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "108.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "108.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "4",
+      "downlink": "4.7",
+      "dpr": "1.875",
+      "ect": "4g",
+      "origin": "https://www.geld.de",
+      "rtt": "150",
+      "sec-ch-device-memory": "4",
+      "sec-ch-dpr": "1.875",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"",
+      "sec-ch-ua-full-version": "\"108.0.5359.79\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-A326B\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"11.0.0\"",
+      "sec-ch-viewport-height": "726",
+      "sec-ch-viewport-width": "384",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; SM-A326B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "384",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "108.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "108.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "4",
+      "downlink": "5.55",
+      "dpr": "1.875",
+      "ect": "4g",
+      "origin": "https://www.geld.de",
+      "rtt": "50",
+      "sec-ch-device-memory": "4",
+      "sec-ch-dpr": "1.875",
+      "sec-ch-prefers-color-scheme": "dark",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"",
+      "sec-ch-ua-full-version": "\"108.0.5359.79\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-A326B\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"13.0.0\"",
+      "sec-ch-viewport-height": "722",
+      "sec-ch-viewport-width": "384",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; SM-A326B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "384",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "108.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "108.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "8",
+      "downlink": "3.8",
+      "dpr": "2.8125",
+      "ect": "4g",
+      "origin": "https://www.geld.de",
+      "rtt": "200",
+      "sec-ch-device-memory": "8",
+      "sec-ch-dpr": "2.8125",
+      "sec-ch-prefers-color-scheme": "dark",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"",
+      "sec-ch-ua-full-version": "\"108.0.5359.79\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-S908B\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"13.0.0\"",
+      "sec-ch-viewport-height": "693",
+      "sec-ch-viewport-width": "384",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; SM-S908B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "384",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "108.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "108.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "2",
+      "downlink": "1.05",
+      "dpr": "1.75",
+      "ect": "3g",
+      "origin": "https://www.geld.de",
+      "rtt": "850",
+      "sec-ch-device-memory": "2",
+      "sec-ch-dpr": "1.75",
+      "sec-ch-prefers-color-scheme": "dark",
+      "sec-ch-ua": "\"Google Chrome\";v=\"107\", \"Chromium\";v=\"107\", \"Not=A?Brand\";v=\"24\"",
+      "sec-ch-ua-full-version": "\"107.0.5304.105\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-A025G\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"11.0.0\"",
+      "sec-ch-viewport-height": "785",
+      "sec-ch-viewport-width": "412",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; SM-A025G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "412",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "107.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "107.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "4",
+      "downlink": "5.35",
+      "dpr": "2.625",
+      "ect": "4g",
+      "origin": "https://www.geld.de",
+      "rtt": "300",
+      "sec-ch-device-memory": "4",
+      "sec-ch-dpr": "2.625",
+      "sec-ch-prefers-color-scheme": "dark",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"",
+      "sec-ch-ua-full-version": "\"108.0.5359.79\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-A526B\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"12.0.0\"",
+      "sec-ch-viewport-height": "777",
+      "sec-ch-viewport-width": "412",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-A526B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "412",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "108.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "108.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "4",
+      "downlink": "5.1",
+      "dpr": "1.875",
+      "ect": "4g",
+      "rtt": "200",
+      "sec-ch-device-memory": "4",
+      "sec-ch-dpr": "1.875",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version": "\"108.0.5359.79\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-A326B\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"11.0.0\"",
+      "sec-ch-viewport-height": "1853",
+      "sec-ch-viewport-width": "980",
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "same-origin",
+      "sec-fetch-user": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; SM-A326B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "980"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "108.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "108.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "8",
+      "downlink": "3.75",
+      "dpr": "2.8125",
+      "ect": "4g",
+      "rtt": "200",
+      "sec-ch-device-memory": "8",
+      "sec-ch-dpr": "2.8125",
+      "sec-ch-prefers-color-scheme": "dark",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version": "\"108.0.5359.79\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-S908B\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"13.0.0\"",
+      "sec-ch-viewport-height": "1769",
+      "sec-ch-viewport-width": "980",
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "same-origin",
+      "sec-fetch-user": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; SM-S908B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "980"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "108.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "108.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "4",
+      "downlink": "8.45",
+      "dpr": "3.375",
+      "ect": "4g",
+      "rtt": "50",
+      "sec-ch-device-memory": "4",
+      "sec-ch-dpr": "3.375",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version": "\"108.0.5359.79\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-A528B\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"13.0.0\"",
+      "sec-ch-viewport-height": "0",
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "none",
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; SM-A528B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "108.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "108.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "4",
+      "downlink": "4.9",
+      "dpr": "2.625",
+      "ect": "4g",
+      "rtt": "250",
+      "sec-ch-device-memory": "4",
+      "sec-ch-dpr": "2.625",
+      "sec-ch-prefers-color-scheme": "dark",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version": "\"108.0.5359.79\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-A526B\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"12.0.0\"",
+      "sec-ch-viewport-height": "0",
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "none",
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-A526B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "108.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "108.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "4",
+      "downlink": "6",
+      "dpr": "1.875",
+      "ect": "4g",
+      "rtt": "50",
+      "sec-ch-device-memory": "4",
+      "sec-ch-dpr": "1.875",
+      "sec-ch-prefers-color-scheme": "dark",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version": "\"108.0.5359.79\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-A326B\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"13.0.0\"",
+      "sec-ch-viewport-height": "1843",
+      "sec-ch-viewport-width": "980",
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "same-origin",
+      "sec-fetch-user": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; SM-A326B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "980"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "108.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "108.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "2",
+      "downlink": "1.25",
+      "dpr": "2.8125",
+      "ect": "3g",
+      "origin": "https://www.geld.de",
+      "rtt": "550",
+      "sec-ch-device-memory": "2",
+      "sec-ch-dpr": "2.8125",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-ua": "\"Google Chrome\";v=\"107\", \"Chromium\";v=\"107\", \"Not=A?Brand\";v=\"24\"",
+      "sec-ch-ua-full-version": "\"107.0.5304.105\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-A137F\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"12.0.0\"",
+      "sec-ch-viewport-height": "729",
+      "sec-ch-viewport-width": "384",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-A137F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "384",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "107.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "107.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "2",
+      "downlink": "1",
+      "dpr": "1.75",
+      "ect": "3g",
+      "rtt": "600",
+      "sec-ch-device-memory": "2",
+      "sec-ch-dpr": "1.75",
+      "sec-ch-prefers-color-scheme": "dark",
+      "sec-ch-ua": "\"Google Chrome\";v=\"107\", \"Chromium\";v=\"107\", \"Not=A?Brand\";v=\"24\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version": "\"107.0.5304.105\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-A025G\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"11.0.0\"",
+      "sec-ch-viewport-height": "1867",
+      "sec-ch-viewport-width": "980",
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "same-origin",
+      "sec-fetch-user": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; SM-A025G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "980"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "107.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "107.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "4",
+      "downlink": "9.2",
+      "dpr": "3",
+      "ect": "4g",
+      "origin": "https://www.geld.de",
+      "rtt": "50",
+      "save-data": "on",
+      "sec-ch-device-memory": "4",
+      "sec-ch-dpr": "3",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"",
+      "sec-ch-ua-full-version": "\"108.0.5359.79\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-G780G\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"12.0.0\"",
+      "sec-ch-viewport-height": "667",
+      "sec-ch-viewport-width": "360",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-G780G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "360",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "108.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "108.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "4",
+      "downlink": "8.9",
+      "dpr": "3",
+      "ect": "4g",
+      "origin": "https://www.geld.de",
+      "rtt": "150",
+      "sec-ch-device-memory": "4",
+      "sec-ch-dpr": "3",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"",
+      "sec-ch-ua-full-version": "\"108.0.5359.79\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-G780G\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"12.0.0\"",
+      "sec-ch-viewport-height": "667",
+      "sec-ch-viewport-width": "360",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-G780G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "360",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "108.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "108.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "8",
+      "downlink": "4.85",
+      "dpr": "3",
+      "ect": "4g",
+      "origin": "https://www.geld.de",
+      "rtt": "50",
+      "sec-ch-prefers-color-scheme": "dark",
+      "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\", \"Google Chrome\";v=\"96\"",
+      "sec-ch-ua-full-version": "\"96.0.4664.104\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-S901B\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"12.0.0\"",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-S901B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.104 Mobile Safari/537.36",
+      "viewport-width": "360",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "96.0.4664.104",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "96.0.4664.104",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "4",
+      "downlink": "7.95",
+      "dpr": "3",
+      "ect": "4g",
+      "origin": "https://www.geld.de",
+      "rtt": "100",
+      "save-data": "on",
+      "sec-ch-device-memory": "4",
+      "sec-ch-dpr": "3",
+      "sec-ch-prefers-color-scheme": "dark",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"",
+      "sec-ch-ua-full-version": "\"108.0.5359.79\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-G780G\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"13.0.0\"",
+      "sec-ch-viewport-height": "667",
+      "sec-ch-viewport-width": "360",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; SM-G780G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "360",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "108.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "108.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "4",
+      "downlink": "1.35",
+      "dpr": "3",
+      "ect": "3g",
+      "origin": "https://www.geld.de",
+      "rtt": "750",
+      "sec-ch-device-memory": "4",
+      "sec-ch-dpr": "3",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Google Chrome\";v=\"108\"",
+      "sec-ch-ua-full-version": "\"108.0.5359.79\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-G780G\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"12.0.0\"",
+      "sec-ch-viewport-height": "667",
+      "sec-ch-viewport-width": "360",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-G780G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "360",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "108.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "108.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "8",
+      "downlink": "7.8",
+      "dpr": "3",
+      "ect": "4g",
+      "origin": "https://www.geld.de",
+      "rtt": "50",
+      "sec-ch-prefers-color-scheme": "dark",
+      "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\", \"Google Chrome\";v=\"96\"",
+      "sec-ch-ua-full-version": "\"96.0.4664.104\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-S901B\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"12.0.0\"",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-S901B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.104 Mobile Safari/537.36",
+      "viewport-width": "360",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "96.0.4664.104",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "96.0.4664.104",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "8",
+      "downlink": "4.95",
+      "dpr": "3",
+      "ect": "4g",
+      "rtt": "50",
+      "sec-ch-prefers-color-scheme": "dark",
+      "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\", \"Google Chrome\";v=\"96\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version": "\"96.0.4664.104\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-S901B\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"12.0.0\"",
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "same-origin",
+      "sec-fetch-user": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-S901B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.104 Mobile Safari/537.36",
+      "viewport-width": "980"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Samsung device",
+      "marketingName": "general Samsung device",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "96.0.4664.104",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "96.0.4664.104",
+      "manufacturer": "google"
+    }
+  }
+]
