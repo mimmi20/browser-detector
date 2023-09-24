@@ -60,6 +60,8 @@ final class SecChUaModel implements HeaderInterface
             'cph2065' => 'oppo=oppo cph2065',
             // Xiaomi
             'redmi note 9 pro' => 'xiaomi=xiaomi redmi note 9 pro',
+            // ZTE
+            'zte a2121e' => 'zte=zte a2121e',
             default => null,
         };
     }
