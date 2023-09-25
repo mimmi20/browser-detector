@@ -31,9 +31,18 @@ final class XUcbrowserDeviceTest extends TestCase
      * @throws Exception
      */
     #[DataProvider('providerUa')]
-    public function testData(string $ua, bool $hasDeviceInfo): void
+    public function testData(string $ua, bool $hasDeviceInfo, string $deviceCode): void
     {
-        $deviceCode = 'test-device-code';
+        $searchCode = true;
+        $isNull     = false;
+
+        if (in_array(mb_strtolower($ua), ['j2me', 'opera', 'jblend'], true)) {
+            $searchCode = false;
+        }
+
+        if (!$searchCode || $deviceCode === '') {
+            $isNull = true;
+        }
 
         $normalizerFactory = new NormalizerFactory();
         $normalizer        = $normalizerFactory->build();
@@ -42,13 +51,7 @@ final class XUcbrowserDeviceTest extends TestCase
 
         $deviceParser = $this->createMock(DeviceParserInterface::class);
         $deviceParser
-            ->expects(
-                in_array(
-                    mb_strtolower($ua),
-                    ['j2me', 'opera', 'jblend'],
-                    true,
-                ) ? self::never() : self::once(),
-            )
+            ->expects(!$searchCode ? self::never() : self::once())
             ->method('parse')
             ->with($normalitedUa)
             ->willReturn($deviceCode);
@@ -91,7 +94,7 @@ final class XUcbrowserDeviceTest extends TestCase
             sprintf('device info mismatch for ua "%s"', $ua),
         );
         self::assertSame(
-            in_array(mb_strtolower($ua), ['j2me', 'opera', 'jblend'], true) ? null : $deviceCode,
+            !$isNull ? $deviceCode : null,
             $header->getDeviceCode(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
@@ -147,27 +150,27 @@ final class XUcbrowserDeviceTest extends TestCase
     public static function providerUa(): array
     {
         return [
-            ['nokia#200', true],
-            ['nokia#C2-01', true],
-            ['samsung#-GT-C3312', true],
-            ['j2me', false],
-            ['nokia#501', true],
-            ['nokia#C7-00', true],
-            ['samsung#-GT-S3850', true],
-            ['samsung#-GT-S5250', true],
-            ['samsung#-GT-S8600', true],
-            ['NOKIA # 6120c', true],
-            ['Nokia # E7-00', true],
-            ['Jblend', false],
-            ['nokia#501s', true],
-            ['nokia#503s', true],
-            ['nokia#Asha230DualSIM', true],
-            ['samsung#-gt-s5380d', true],
-            ['samsung#-GT-S5380K', true],
-            ['samsung#-GT-S5253', true],
-            ['tcl#-C616', true],
-            ['maui e800', true],
-            ['Opera', false],
+            ['nokia#200', true, '200'],
+            ['nokia#C2-01', true, 'C2-01'],
+            ['samsung#-GT-C3312', true, 'GT-C3312'],
+            ['j2me', false, ''],
+            ['nokia#501', true, '501'],
+            ['nokia#C7-00', true, 'C7-00'],
+            ['samsung#-GT-S3850', true, 'GT-S3850'],
+            ['samsung#-GT-S5250', true, 'GT-S5250'],
+            ['samsung#-GT-S8600', true, 'GT-S8600'],
+            ['NOKIA # 6120c', true, '6120c'],
+            ['Nokia # E7-00', true, 'E7-00'],
+            ['Jblend', false, ''],
+            ['nokia#501s', true, '501s'],
+            ['nokia#503s', true, '503s'],
+            ['nokia#Asha230DualSIM', true, ''],
+            ['samsung#-gt-s5380d', true, 'gt-s5380d'],
+            ['samsung#-GT-S5380K', true, 'GT-S5380K'],
+            ['samsung#-GT-S5253', true, 'GT-S5253'],
+            ['tcl#-C616', true, 'C616'],
+            ['maui e800', true, 'e800'],
+            ['Opera', false, ''],
         ];
     }
 }

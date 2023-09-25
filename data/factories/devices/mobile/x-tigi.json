@@ -1,14 +1,25 @@
 {
   "rules": {
+    "/x[ _]?tigi[ _]?a2/i": "x-tigi a2",
+    "/x[ _]?tigi[ _]?a1/i": "x-tigi a1",
+    "/photo[ _]?p20/i": "x-tigi photo p20",
     "/photo[ _]?p16/i": "x-tigi photo p16",
     "/photo[ _]?p11/i": "x-tigi photo p11",
     "/joy[ _]?10[ _]?pro/i": "x-tigi joy 10 pro",
     "/joy[ _]?10/i": "x-tigi joy 10",
+    "/joy[ _]?7[ _]?mate/i": "x-tigi joy 7 mate",
     "/joy[ _]?7[ _]?max/i": "x-tigi joy 7 max",
+    "/joy[ _]?7[ _]?tv/i": "x-tigi joy 7 tv",
     "/j110/i": "x-tigi j110",
     "/g530/i": "x-tigi g530",
+    "/v33/i": "x-tigi v33",
     "/v28[ _]?lte/i": "x-tigi v28 lte",
-    "/v19/i": "x-tigi v19"
+    "/v21/i": "x-tigi v21",
+    "/v19/i": "x-tigi v19",
+    "/v18[ _]?pro/i": "x-tigi v18 pro",
+    "/v18/i": "x-tigi v18",
+    "/v16/i": "x-tigi v16",
+    "/v15/i": "x-tigi v15"
   },
   "generic": "general x-tigi device"
 }

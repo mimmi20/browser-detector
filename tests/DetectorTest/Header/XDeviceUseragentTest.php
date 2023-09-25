@@ -29,9 +29,13 @@ final class XDeviceUseragentTest extends TestCase
      * @throws Exception
      */
     #[DataProvider('providerUa')]
-    public function testData(string $ua, bool $hasDeviceInfo): void
+    public function testData(string $ua, bool $hasDeviceInfo, string $deviceCode): void
     {
-        $deviceCode = 'test-device-code';
+        $isNull = false;
+
+        if ($deviceCode === '') {
+            $isNull = true;
+        }
 
         $normalizerFactory = new NormalizerFactory();
         $normalizer        = $normalizerFactory->build();
@@ -83,7 +87,7 @@ final class XDeviceUseragentTest extends TestCase
             sprintf('device info mismatch for ua "%s"', $ua),
         );
         self::assertSame(
-            $deviceCode,
+            !$isNull ? $deviceCode : null,
             $header->getDeviceCode(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
@@ -139,8 +143,8 @@ final class XDeviceUseragentTest extends TestCase
     public static function providerUa(): array
     {
         return [
-            ['Nokia6288/2.0 (05.94) Profile/MIDP-2.0 Configuration/CLDC-1.1', true],
-            ['Mozilla/5.0 (iPhone; U; CPU like Mac OS X; en) AppleWebKit/420.1 (KHTML, like Gecko) Version/3.0 Mobile/4A93 Safari/419.3', true],
+            ['Nokia6288/2.0 (05.94) Profile/MIDP-2.0 Configuration/CLDC-1.1', true, ''],
+            ['Mozilla/5.0 (iPhone; U; CPU like Mac OS X; en) AppleWebKit/420.1 (KHTML, like Gecko) Version/3.0 Mobile/4A93 Safari/419.3', true, 'iPhone'],
         ];
     }
 }

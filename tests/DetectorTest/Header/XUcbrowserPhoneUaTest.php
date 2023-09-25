@@ -136,6 +136,7 @@ final class XUcbrowserPhoneUaTest extends TestCase
             ['nokia305', true, 'nokia=nokia 305', false, null],
             ['gt-s5233s', true, 'samsung=samsung gt-s5233s', false, null],
             ['sonyericssonj108i', true, 'sony=sonyericsson j108i', false, null],
+            ['wrong', true, null, false, null],
         ];
     }
 }
