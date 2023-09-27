@@ -101,8 +101,17 @@ final class SecChUaModel implements HeaderInterface
             '2201117tg' => 'xiaomi=xiaomi 2201117tg',
             '21121119sc' => 'xiaomi=xiaomi 21121119sc',
             '21091116ac' => 'xiaomi=xiaomi 21091116ac',
+            '21081111rg' => 'xiaomi=xiaomi 21081111rg',
+            '2201116sg' => 'xiaomi=xiaomi 2201116sg',
+            '2109119dg' => 'xiaomi=xiaomi 2109119dg',
+            '2107113sg' => 'xiaomi=xiaomi 2107113sg',
+            '2201117sy' => 'xiaomi=xiaomi 2201117sy',
+            '21061119dg' => 'xiaomi=xiaomi 21061119dg',
+            '21061119ag' => 'xiaomi=xiaomi 21061119ag',
             // ZTE
             'zte a2121e' => 'zte=zte a2121e',
+            'zte blade 10 vita' => 'zte=zte blade 10 vita',
+            'zte blade a3 2020' => 'zte=zte blade a3 2020',
             // Samsung
             'sm-a405fn' => 'samsung=samsung sm-a405fn',
             'sm-a415f' => 'samsung=samsung sm-a415f',

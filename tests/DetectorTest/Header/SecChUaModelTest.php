@@ -185,6 +185,15 @@ final class SecChUaModelTest extends TestCase
             ['"IN2023"', 'oneplus=oneplus in2023'],
             ['"LYA-L09"', 'huawei=huawei lya-l09'],
             ['"Mi 9 SE"', 'xiaomi=xiaomi mi 9 se'],
+            ['"ZTE Blade 10 Vita"', 'zte=zte blade 10 vita'],
+            ['"ZTE Blade A3 2020"', 'zte=zte blade a3 2020'],
+            ['"21081111RG"', 'xiaomi=xiaomi 21081111rg'],
+            ['"2201116SG"', 'xiaomi=xiaomi 2201116sg'],
+            ['"2109119DG"', 'xiaomi=xiaomi 2109119dg'],
+            ['"2107113SG"', 'xiaomi=xiaomi 2107113sg'],
+            ['"2201117SY"', 'xiaomi=xiaomi 2201117sy'],
+            ['"21061119DG"', 'xiaomi=xiaomi 21061119dg'],
+            ['"21061119AG"', 'xiaomi=xiaomi 21061119ag'],
             ['""', null],
         ];
     }

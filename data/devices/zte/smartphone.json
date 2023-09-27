@@ -596,13 +596,29 @@
     "marketingName": "Blade",
     "manufacturer": "zte",
     "brand": "zte",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 800,
       "height": 480,
       "touch": true,
       "size": 3.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "zte v880h": {
+    "deviceName": "V880H",
+    "marketingName": "Blade G2",
+    "manufacturer": "zte",
+    "brand": "zte",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 854,
+      "height": 480,
+      "touch": true,
+      "size": 4.5
     },
     "type": "smartphone",
     "platform": "android"
@@ -1679,13 +1695,13 @@
     "type": "smartphone",
     "platform": "android"
   },
-  "zte blade v10 vita": {
-    "deviceName": "Blade V10 Vita",
+  "zte v1000": {
+    "deviceName": "V1000",
     "marketingName": "Blade V10 Vita",
     "manufacturer": "zte",
     "brand": "zte",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 1520,
       "height": 720,
@@ -4004,13 +4020,29 @@
     "marketingName": "Nubia M2",
     "manufacturer": "zte",
     "brand": "zte",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 1920,
       "height": 1080,
       "touch": true,
       "size": 5.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "zte nubia n11": {
+    "deviceName": "Nubia N11",
+    "marketingName": "Nubia N11",
+    "manufacturer": "zte",
+    "brand": "zte",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 854,
+      "height": 480,
+      "touch": true,
+      "size": 6
     },
     "type": "smartphone",
     "platform": "android"
@@ -4676,8 +4708,8 @@
     "marketingName": "Nubia Z9 Mini",
     "manufacturer": "zte",
     "brand": "zte",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 1920,
       "height": 1080,
@@ -6063,6 +6095,22 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "zte v5 pro": {
+    "deviceName": "V5 Pro",
+    "marketingName": "V5 Pro",
+    "manufacturer": "zte",
+    "brand": "zte",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": 5.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "zte v6500": {
     "deviceName": "V6500",
     "marketingName": "V6500",
@@ -6513,14 +6561,30 @@
   },
   "zte z836bl": {
     "deviceName": "Z836BL",
-    "marketingName": "ZFive 2 LTE",
+    "marketingName": "ZFive 2 LTE (US)",
     "manufacturer": "zte",
     "brand": "zte",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
-      "width": 854,
-      "height": 480,
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "zte z836f": {
+    "deviceName": "Z836F",
+    "marketingName": "ZFive 2",
+    "manufacturer": "zte",
+    "brand": "zte",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1280,
+      "height": 720,
       "touch": true,
       "size": 5
     },
@@ -6529,11 +6593,11 @@
   },
   "zte z837vl": {
     "deviceName": "Z837VL",
-    "marketingName": "Zfive 2 LTE",
+    "marketingName": "ZFive 2 LTE (US)",
     "manufacturer": "zte",
     "brand": "zte",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1280,
       "height": 720,
@@ -6991,6 +7055,70 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "zte blade a51ru": {
+    "deviceName": "Blade A51RU",
+    "marketingName": "Blade A51RU",
+    "manufacturer": "zte",
+    "brand": "zte",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1600,
+      "height": 720,
+      "touch": true,
+      "size": 6.52
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "zte blade a51 lite": {
+    "deviceName": "Blade A51 Lite",
+    "marketingName": "Blade A51 Lite",
+    "manufacturer": "zte",
+    "brand": "zte",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1560,
+      "height": 720,
+      "touch": true,
+      "size": 6.09
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "zte blade a31 lite": {
+    "deviceName": "Blade A31 Lite",
+    "marketingName": "Blade A31 Lite",
+    "manufacturer": "zte",
+    "brand": "zte",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 960,
+      "height": 480,
+      "touch": true,
+      "size": 5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "zte blade a51 lite ru": {
+    "deviceName": "Blade A51 Lite RU",
+    "marketingName": "Blade A51 Lite RU",
+    "manufacturer": "zte",
+    "brand": "zte",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1560,
+      "height": 720,
+      "touch": true,
+      "size": 6.09
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "zte blade a52ru": {
     "deviceName": "Blade A52RU",
     "marketingName": "Blade A52RU",
@@ -7147,6 +7275,166 @@
       "height": 720,
       "touch": true,
       "size": 6.09
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "zte blade a3 2019": {
+    "deviceName": "Blade A3 (2019)",
+    "marketingName": "Blade A3 (2019)",
+    "manufacturer": "zte",
+    "brand": "zte",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 960,
+      "height": 480,
+      "touch": true,
+      "size": 5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "zte blade a31ru": {
+    "deviceName": "Blade A31RU",
+    "marketingName": "Blade A31RU",
+    "manufacturer": "zte",
+    "brand": "zte",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1440,
+      "height": 720,
+      "touch": true,
+      "size": 5.45
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "zte blade a31": {
+    "deviceName": "Blade A31",
+    "marketingName": "Blade A31",
+    "manufacturer": "zte",
+    "brand": "zte",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1440,
+      "height": 720,
+      "touch": true,
+      "size": 5.45
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "zte blade c370": {
+    "deviceName": "Blade C370",
+    "marketingName": "Blade C370",
+    "manufacturer": "zte",
+    "brand": "zte",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 854,
+      "height": 480,
+      "touch": true,
+      "size": 5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "zte blade a3 lite": {
+    "deviceName": "Blade A3 Lite",
+    "marketingName": "Blade A3 Lite",
+    "manufacturer": "zte",
+    "brand": "zte",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 960,
+      "height": 480,
+      "touch": true,
+      "size": 5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "zte blade v0920": {
+    "deviceName": "Blade V0920",
+    "marketingName": "Blade V9 Vita",
+    "manufacturer": "zte",
+    "brand": "zte",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1440,
+      "height": 720,
+      "touch": true,
+      "size": 5.45
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "zte nx521j": {
+    "deviceName": "NX521J",
+    "marketingName": "Nubia Z9 Mini",
+    "manufacturer": "zte",
+    "brand": "zte",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": 5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "zte a2022pg": {
+    "deviceName": "A2022PG",
+    "marketingName": "Axon 30 Ultra 5G",
+    "manufacturer": "zte",
+    "brand": "zte",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.67
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "zte a2022p": {
+    "deviceName": "A2022P",
+    "marketingName": "Axon 30 Ultra 5G",
+    "manufacturer": "zte",
+    "brand": "zte",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.67
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "zte a2020ru pro": {
+    "deviceName": "A2020RU Pro",
+    "marketingName": "Axon 10 Pro",
+    "manufacturer": "zte",
+    "brand": "zte",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2340,
+      "height": 1080,
+      "touch": true,
+      "size": 6.47
     },
     "type": "smartphone",
     "platform": "android"
