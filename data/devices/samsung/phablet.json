@@ -2100,8 +2100,8 @@
     "marketingName": "Galaxy S20 FE 4G",
     "manufacturer": "samsung",
     "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 2400,
       "height": 1080,
@@ -2109,6 +2109,22 @@
       "size": 6.5
     },
     "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sm-g780g": {
+    "deviceName": "SM-G780G",
+    "marketingName": "Galaxy S20 FE 4G",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.5
+    },
+    "type": "smartphone",
     "platform": "android"
   },
   "samsung sm-g781w": {

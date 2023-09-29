@@ -194,6 +194,18 @@ final class SecChUaModelTest extends TestCase
             ['"2201117SY"', 'xiaomi=xiaomi 2201117sy'],
             ['"21061119DG"', 'xiaomi=xiaomi 21061119dg'],
             ['"21061119AG"', 'xiaomi=xiaomi 21061119ag'],
+            ['"SM-S901B"', 'samsung=samsung sm-s901b'],
+            ['"SM-S901U"', 'samsung=samsung sm-s901u'],
+            ['"SM-S901U1"', 'samsung=samsung sm-s901u1'],
+            ['"SM-S918B"', 'samsung=samsung sm-s918b'],
+            ['"SM-S908B"', 'samsung=samsung sm-s908b'],
+            ['"SM-S908U"', 'samsung=samsung sm-s908u'],
+            ['"SM-S908U1"', 'samsung=samsung sm-s908u1'],
+            ['"SM-G780G"', 'samsung=samsung sm-g780g'],
+            ['"SM-A536B"', 'samsung=samsung sm-a536b'],
+            ['"SM-A528B"', 'samsung=samsung sm-a528b'],
+            ['"SM-A135F"', 'samsung=samsung sm-a135f'],
+            ['"Pixel 7 Pro"', 'google=google pixel 7 pro'],
             ['""', null],
         ];
     }

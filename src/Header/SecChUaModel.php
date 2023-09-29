@@ -55,6 +55,7 @@ final class SecChUaModel implements HeaderInterface
             'asus_x00dd' => 'asus=asus x00dd',
             // Google
             'nexus 7' => 'google=google nexus 7',
+            'pixel 7 pro' => 'google=google pixel 7 pro',
             // OnePlus
             'ac2003' => 'oneplus=oneplus ac2003',
             'in2023' => 'oneplus=oneplus in2023',
@@ -119,6 +120,17 @@ final class SecChUaModel implements HeaderInterface
             'sm-a515f' => 'samsung=samsung sm-a515f',
             'sm-g960f' => 'samsung=samsung sm-g960f',
             'sm-g965f' => 'samsung=samsung sm-g965f',
+            'sm-s901b' => 'samsung=samsung sm-s901b',
+            'sm-s901u' => 'samsung=samsung sm-s901u',
+            'sm-s901u1' => 'samsung=samsung sm-s901u1',
+            'sm-s918b' => 'samsung=samsung sm-s918b',
+            'sm-s908b' => 'samsung=samsung sm-s908b',
+            'sm-s908u' => 'samsung=samsung sm-s908u',
+            'sm-s908u1' => 'samsung=samsung sm-s908u1',
+            'sm-g780g' => 'samsung=samsung sm-g780g',
+            'sm-a536b' => 'samsung=samsung sm-a536b',
+            'sm-a528b' => 'samsung=samsung sm-a528b',
+            'sm-a135f' => 'samsung=samsung sm-a135f',
             // Huawei
             'mar-lx1b' => 'huawei=huawei mar-lx1b',
             'lya-l09' => 'huawei=huawei lya-l09',
