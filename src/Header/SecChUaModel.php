@@ -50,6 +50,8 @@ final class SecChUaModel implements HeaderInterface
             'kffowi' => 'amazon=amazon kffowi',
             'kfmuwi' => 'amazon=amazon kfmuwi',
             'kfdowi' => 'amazon=amazon kfdowi',
+            'kftrwi' => 'amazon=amazon kftrwi',
+            'kftrpwi' => 'amazon=amazon kftrpwi',
             // Asus
             'p024' => 'asus=asus p024',
             'asus_x00dd' => 'asus=asus x00dd',
@@ -109,10 +111,16 @@ final class SecChUaModel implements HeaderInterface
             '2201117sy' => 'xiaomi=xiaomi 2201117sy',
             '21061119dg' => 'xiaomi=xiaomi 21061119dg',
             '21061119ag' => 'xiaomi=xiaomi 21061119ag',
+            'm2003j15sc' => 'xiaomi=xiaomi m2003j15sc',
+            '2210132g' => 'xiaomi=xiaomi 2210132g',
+            '22081212ug' => 'xiaomi=xiaomi 22081212ug',
+            'm2010j19cg' => 'xiaomi=xiaomi m2010j19cg',
+            '21051182g' => 'xiaomi=xiaomi 21051182g',
             // ZTE
             'zte a2121e' => 'zte=zte a2121e',
             'zte blade 10 vita' => 'zte=zte blade 10 vita',
             'zte blade a3 2020' => 'zte=zte blade a3 2020',
+            'zte 8045' => 'zte=zte 8045',
             // Samsung
             'sm-a405fn' => 'samsung=samsung sm-a405fn',
             'sm-a415f' => 'samsung=samsung sm-a415f',
@@ -131,10 +139,18 @@ final class SecChUaModel implements HeaderInterface
             'sm-a536b' => 'samsung=samsung sm-a536b',
             'sm-a528b' => 'samsung=samsung sm-a528b',
             'sm-a135f' => 'samsung=samsung sm-a135f',
+            'sm-t510' => 'samsung=samsung sm-t510',
+            'sm-t970' => 'samsung=samsung sm-t970',
+            'sm-t580' => 'samsung=samsung sm-t580',
+            'sm-t550' => 'samsung=samsung sm-t550',
+            'sm-t813' => 'samsung=samsung sm-t813',
             // Huawei
             'mar-lx1b' => 'huawei=huawei mar-lx1b',
             'lya-l09' => 'huawei=huawei lya-l09',
             'vog-l29' => 'huawei=huawei vog-l29',
+            // Lenovo
+            'lenovo tb-x304f' => 'lenovo=lenovo tb-x304f',
+            'x1030x' => 'lenovo=lenovo x1030x',
             default => null,
         };
     }
