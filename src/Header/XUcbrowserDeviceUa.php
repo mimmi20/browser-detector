@@ -64,6 +64,10 @@ final class XUcbrowserDeviceUa implements HeaderInterface
     /** @throws void */
     public function hasPlatformCode(): bool
     {
+        if ($this->value === '?') {
+            return false;
+        }
+
         return (bool) preg_match(
             '/bada|android|blackberry|brew|iphone|mre|windows|mtk|symbian/i',
             $this->value,

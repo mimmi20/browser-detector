@@ -555,8 +555,8 @@
       "marketingName": "Axon 10 Pro",
       "manufacturer": "zte",
       "brand": "zte",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 2340,
         "height": 1080,
@@ -639,8 +639,8 @@
       "marketingName": "Axon 10 Pro",
       "manufacturer": "zte",
       "brand": "zte",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 2340,
         "height": 1080,
@@ -710,6 +710,48 @@
     "engine": {
       "name": "Blink",
       "version": "103.0.5060.129",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; ZTE A7020) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Mobile Safari/537.36 EdgA/107.0.1418.43"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "A7020",
+      "marketingName": "Blade A7S 2020",
+      "manufacturer": "zte",
+      "brand": "zte",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1560,
+        "height": 720,
+        "touch": true,
+        "size": 6.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Edge Mobile for Android",
+      "version": "107.0.1418.43",
+      "manufacturer": "microsoft",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "107.0.0.0",
       "manufacturer": "google"
     }
   }

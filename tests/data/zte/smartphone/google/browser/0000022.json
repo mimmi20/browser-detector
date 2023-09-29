@@ -1,48 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; ZTE Blade A462 Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Blade A462",
-      "marketingName": "Blade A462",
-      "manufacturer": "zte",
-      "brand": "zte",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 854,
-        "height": 480,
-        "touch": true,
-        "size": 5
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "6.0.1",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Chrome",
-      "version": "63.0.3239.111",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "63.0.3239.111",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; ZTE Blade A462 Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36"
     },
     "device": {
@@ -258,11 +216,11 @@
     "device": {
       "architecture": null,
       "deviceName": "Z837VL",
-      "marketingName": "Zfive 2 LTE",
+      "marketingName": "ZFive 2 LTE (US)",
       "manufacturer": "zte",
       "brand": "zte",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1280,
         "height": 720,
@@ -1899,8 +1857,8 @@
       "marketingName": "Nubia M2",
       "manufacturer": "zte",
       "brand": "zte",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 1920,
         "height": 1080,
@@ -2361,8 +2319,8 @@
       "marketingName": "Blade A7 (2019)",
       "manufacturer": "zte",
       "brand": "zte",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 1560,
         "height": 720,
@@ -2487,8 +2445,8 @@
       "marketingName": "Blade V10 Vita",
       "manufacturer": "zte",
       "brand": "zte",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 1520,
         "height": 720,
@@ -2697,8 +2655,8 @@
       "marketingName": "Axon 10 Pro",
       "manufacturer": "zte",
       "brand": "zte",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 2340,
         "height": 1080,
@@ -2823,8 +2781,8 @@
       "marketingName": "Axon 10 Pro",
       "manufacturer": "zte",
       "brand": "zte",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 2340,
         "height": 1080,
@@ -3075,8 +3033,8 @@
       "marketingName": "Axon 10 Pro",
       "manufacturer": "zte",
       "brand": "zte",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 2340,
         "height": 1080,
@@ -3327,8 +3285,8 @@
       "marketingName": "Blade V10 Vita",
       "manufacturer": "zte",
       "brand": "zte",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 1520,
         "height": 720,
@@ -3453,8 +3411,8 @@
       "marketingName": "Blade A7 (2019)",
       "manufacturer": "zte",
       "brand": "zte",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 1560,
         "height": 720,
@@ -3579,8 +3537,8 @@
       "marketingName": "Axon 10 Pro",
       "manufacturer": "zte",
       "brand": "zte",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 2340,
         "height": 1080,
@@ -3915,8 +3873,8 @@
       "marketingName": "Nubia M2",
       "manufacturer": "zte",
       "brand": "zte",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 1920,
         "height": 1080,
@@ -4196,6 +4154,48 @@
     "engine": {
       "name": "Blink",
       "version": "80.0.3987.99",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0; ZTE BLADE V7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.119 Mobile Safari/537.36 comdirect/1.0 (appVersion:20.2.1;deviceName:zte v880;deviceType:mobile)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Blade V7",
+      "marketingName": "Blade V7",
+      "manufacturer": "zte",
+      "brand": "zte",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.2
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "80.0.3987.119",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "80.0.3987.119",
       "manufacturer": "google"
     }
   }

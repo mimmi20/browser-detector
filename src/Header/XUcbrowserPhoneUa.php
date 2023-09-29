@@ -28,7 +28,7 @@ final class XUcbrowserPhoneUa implements HeaderInterface
     /** @throws void */
     public function getDeviceCode(): string | null
     {
-        if (in_array(mb_strtolower($this->value), ['j2me', 'opera', 'jblend'], true)) {
+        if (in_array(mb_strtolower($this->value), ['maui browser', 'sunmicro'], true)) {
             return null;
         }
 

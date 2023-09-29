@@ -1,6 +1,48 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.0.4; CT910 Build/IMM76D) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.123 Mobile Safari/537.22"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Mobile Phone",
+      "marketingName": "general Mobile Phone",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.0.4",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "25.0.1364.123",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.22.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 4.1.2; A19Q Build/JZO54K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.90 Mobile Safari/537.36"
     },
     "device": {
@@ -4142,48 +4184,6 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "2.3.3",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Android Webkit",
-      "version": "4.0.0",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "533.1.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.2.1; En-mx; Inspire HD Build/FRG83D) AppleWebKit/533.1 (KHTML, Like Gecko) Version/4.0 Mobile Safari/533.1"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Mobile Phone",
-      "marketingName": "general Mobile Phone",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "2.2.1",
       "manufacturer": "google"
     },
     "client": {

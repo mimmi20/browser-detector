@@ -4,8 +4,8 @@
     "marketingName": "Ace",
     "manufacturer": "micromax",
     "brand": "yu",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 1440,
       "height": 720,
@@ -52,8 +52,8 @@
     "marketingName": "Yunique 2",
     "manufacturer": "yu",
     "brand": "yu",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 1280,
       "height": 720,
@@ -155,6 +155,38 @@
       "height": 1440,
       "touch": true,
       "size": 5.2
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "yu yu5551": {
+    "deviceName": "YU5551",
+    "marketingName": "Yureka 2",
+    "manufacturer": "yu",
+    "brand": "yu",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": 5.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "yu yu5012": {
+    "deviceName": "YU5012",
+    "marketingName": "Yunique 2 Plus",
+    "manufacturer": "yu",
+    "brand": "micromax",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 5
     },
     "type": "smartphone",
     "platform": "android"

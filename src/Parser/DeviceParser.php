@@ -38,7 +38,9 @@ final class DeviceParser implements DeviceParserInterface
     }
 
     /**
-     * Gets the information about the rendering engine by User Agent
+     * Gets the information about the device by User Agent
+     *
+     * @return non-empty-string
      *
      * @throws void
      */

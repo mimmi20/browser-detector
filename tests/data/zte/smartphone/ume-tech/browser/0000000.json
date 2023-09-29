@@ -14,8 +14,8 @@
       "marketingName": "Blade A7 (2019)",
       "manufacturer": "zte",
       "brand": "zte",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 1560,
         "height": 720,
@@ -57,17 +57,17 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "Blade",
-      "marketingName": "Blade",
+      "deviceName": "Blade A51",
+      "marketingName": "Blade A51",
       "manufacturer": "zte",
       "brand": "zte",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
-        "width": 800,
-        "height": 480,
+        "width": 1600,
+        "height": 720,
         "touch": true,
-        "size": 3.5
+        "size": 6.52
       },
       "type": "smartphone",
       "ismobile": true,
@@ -151,17 +151,17 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "Blade",
-      "marketingName": "Blade",
+      "deviceName": "Blade A31",
+      "marketingName": "Blade A31",
       "manufacturer": "zte",
       "brand": "zte",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
-        "width": 800,
-        "height": 480,
+        "width": 1440,
+        "height": 720,
         "touch": true,
-        "size": 3.5
+        "size": 5.45
       },
       "type": "smartphone",
       "ismobile": true,
@@ -285,6 +285,53 @@
     "headers": {
       "sec-fetch-dest": "document",
       "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "cross-site",
+      "sec-fetch-user": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; ZTE 8010 Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/103.0.5060.71 Mobile Safari/537.36",
+      "x-requested-with": "com.ume.browser.cust"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "8010",
+      "marketingName": "Blade V2020 Smart",
+      "manufacturer": "zte",
+      "brand": "zte",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1640,
+        "height": 720,
+        "touch": true,
+        "size": 6.82
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Ume Browser",
+      "version": null,
+      "manufacturer": "ume-tech",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "103.0.5060.71",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
       "sec-fetch-site": "same-origin",
       "sec-fetch-user": "?1",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; ZTE Blade V1000 Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/103.0.5060.71 Mobile Safari/537.36",
@@ -334,22 +381,22 @@
       "sec-fetch-mode": "navigate",
       "sec-fetch-site": "cross-site",
       "sec-fetch-user": "?1",
-      "user-agent": "Mozilla/5.0 (Linux; Android 11; ZTE Blade A51 Build/RP1A.201005.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/102.0.5005.125 Mobile Safari/537.36",
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; ZTE 8030 Build/RP1A.201005.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/102.0.5005.125 Mobile Safari/537.36",
       "x-requested-with": "com.ume.browser.cust"
     },
     "device": {
       "architecture": null,
-      "deviceName": "Blade",
-      "marketingName": "Blade",
+      "deviceName": "8030",
+      "marketingName": "Blade V30 Vita",
       "manufacturer": "zte",
       "brand": "zte",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
-        "width": 800,
-        "height": 480,
+        "width": 1640,
+        "height": 720,
         "touch": true,
-        "size": 3.5
+        "size": 6.82
       },
       "type": "smartphone",
       "ismobile": true,
@@ -372,6 +419,100 @@
     "engine": {
       "name": "Blink",
       "version": "102.0.5005.125",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "cross-site",
+      "sec-fetch-user": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; ZTE Blade A51 Build/RP1A.201005.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/102.0.5005.125 Mobile Safari/537.36",
+      "x-requested-with": "com.ume.browser.cust"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Blade A51",
+      "marketingName": "Blade A51",
+      "manufacturer": "zte",
+      "brand": "zte",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1600,
+        "height": 720,
+        "touch": true,
+        "size": 6.52
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Ume Browser",
+      "version": null,
+      "manufacturer": "ume-tech",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "102.0.5005.125",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "cross-site",
+      "sec-fetch-user": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; ZTE A7020 Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.79 Mobile Safari/537.36",
+      "x-requested-with": "com.ume.browser.cust"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "A7020",
+      "marketingName": "Blade A7S 2020",
+      "manufacturer": "zte",
+      "brand": "zte",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1560,
+        "height": 720,
+        "touch": true,
+        "size": 6.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Ume Browser",
+      "version": null,
+      "manufacturer": "ume-tech",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "105.0.5195.79",
       "manufacturer": "google"
     }
   },
@@ -438,8 +579,8 @@
       "marketingName": "Blade V10 Vita",
       "manufacturer": "zte",
       "brand": "zte",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 1520,
         "height": 720,
@@ -517,6 +658,101 @@
     "headers": {
       "sec-fetch-dest": "document",
       "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "cross-site",
+      "sec-fetch-user": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; ZTE A7030 Build/RP1A.201005.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.79 Mobile Safari/537.36",
+      "x-requested-with": "com.ume.browser.cust"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "A7030",
+      "marketingName": "Blade A71 2021 LTE (LATAM)",
+      "manufacturer": "zte",
+      "brand": "zte",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1600,
+        "height": 720,
+        "touch": true,
+        "size": 6.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Ume Browser",
+      "version": null,
+      "manufacturer": "ume-tech",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "105.0.5195.79",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "none",
+      "sec-fetch-user": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; ZTE 8030 Build/RP1A.201005.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36",
+      "x-requested-with": "com.ume.browser.cust",
+      "x-wap-profile": "https://res-www.zte.com.cn/bigmediafiles/device/uaprof/ZTE_8030.xml"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "8030",
+      "marketingName": "Blade V30 Vita",
+      "manufacturer": "zte",
+      "brand": "zte",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1640,
+        "height": 720,
+        "touch": true,
+        "size": 6.82
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Ume Browser",
+      "version": null,
+      "manufacturer": "ume-tech",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "97.0.4692.98",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
       "sec-fetch-site": "none",
       "sec-fetch-user": "?1",
       "user-agent": "Mozilla/5.0 (Linux; Android 6.0; ZTE BLADE V7 LITE Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/104.0.5112.97 Mobile Safari/537.36",
@@ -558,6 +794,54 @@
     "engine": {
       "name": "Blink",
       "version": "104.0.5112.97",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "none",
+      "sec-fetch-user": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; ZTE A7020 Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/107.0.5304.91 Mobile Safari/537.36",
+      "x-requested-with": "com.ume.browser.cust",
+      "x-wap-profile": "https://res-www.zte.com.cn/bigmediafiles/device/uaprof/ZTE_A7020.xml"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "A7020",
+      "marketingName": "Blade A7S 2020",
+      "manufacturer": "zte",
+      "brand": "zte",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1560,
+        "height": 720,
+        "touch": true,
+        "size": 6.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Ume Browser",
+      "version": null,
+      "manufacturer": "ume-tech",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "107.0.5304.91",
       "manufacturer": "google"
     }
   }

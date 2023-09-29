@@ -10,7 +10,7 @@
     "/zp990\\+/i": "zopo zp990+",
     "/zp990/i": "zopo zp990",
     "/zp980\\+/i": "zopo zp980 plus",
-    "/zp980|zopo 980/i": "zopo zp980",
+    "/zp980|zopo[_ ]980/i": "zopo zp980",
     "/zp960| c2 /i": "zopo zp960",
     "/zp955/i": "zopo zp955",
     "/zp952/i": "zopo zp952",
@@ -46,7 +46,11 @@
     "/zp200\\+/i": "zopo zp200+",
     "/zp200/i": "zopo zp200",
     "/zp100/i": "zopo zp100",
-    "/hero ?1/i": "zopo hero 1"
+    "/hero ?1/i": "zopo hero 1",
+    "/one[_ ]y/i": "zopo one y",
+    "/one[_ ]t/i": "zopo one t",
+    "/one[_ ]p/i": "zopo one p",
+    "/ZOPO[_ ]C2/i": "zopo c2"
   },
   "generic": "general zopo device"
 }

@@ -1773,8 +1773,8 @@
       "marketingName": "Blade",
       "manufacturer": "zte",
       "brand": "zte",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 800,
         "height": 480,
@@ -2865,8 +2865,8 @@
       "marketingName": "Nubia Z9 Mini",
       "manufacturer": "zte",
       "brand": "zte",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 1920,
         "height": 1080,
@@ -3277,6 +3277,90 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 11; en-US; ZTE A7030RU Build/RP1A.201005.001) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.108 UCBrowser/13.4.0.1306 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "A7030",
+      "marketingName": "Blade A71 2021 LTE (LATAM)",
+      "manufacturer": "zte",
+      "brand": "zte",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1600,
+        "height": 720,
+        "touch": true,
+        "size": 6.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "UC Browser",
+      "version": "13.4.0.1306",
+      "manufacturer": "ucweb",
+      "type": "transcoder",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "78.0.3904.108",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 9; ZTE A7000 Build/PPR1.180610.011) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.108 UCBrowser/12.8.8.1068 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "A7000",
+      "marketingName": "Blade A7 (2019)",
+      "manufacturer": "zte",
+      "brand": "zte",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1560,
+        "height": 720,
+        "touch": true,
+        "size": 6.09
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "UC Browser",
+      "version": "12.8.8.1068",
+      "manufacturer": "ucweb",
+      "type": "transcoder",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "57.0.2987.108",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 9; ZTE Blade V10 Vita Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/96.0.4664.45 Mobile Safari/537.36",
       "x-requested-with": "com.UCMobile.intl"
     },
@@ -3286,8 +3370,8 @@
       "marketingName": "Blade V10 Vita",
       "manufacturer": "zte",
       "brand": "zte",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 1520,
         "height": 720,

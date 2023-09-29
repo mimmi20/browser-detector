@@ -841,6 +841,48 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 11; M2101K9AG) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.164 YaBrowser/21.6.6.55.00 SA/3 Mobile Safari/537.36 comdirect/1.0 (appVersion:21.8.5;deviceName:nokia 3;deviceType:mobile)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "M2101K9AG",
+      "marketingName": "Mi 11 Lite",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.55
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "version": "21.6.6.55.00",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "91.0.4472.164",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 9; Redmi Note 8T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.135 YaApp_Android/20.80 YaSearchBrowser/20.80 BroPP/1.0 SA/1 Mobile Safari/537.36"
     },
     "device": {
@@ -1088,6 +1130,90 @@
     "engine": {
       "name": "Blink",
       "version": "90.0.4430.216",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 11; M2101K9AI) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.164 YaBrowser/21.6.6.55.00 SA/3 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "M2101K9AI",
+      "marketingName": "Mi 11 Lite",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.55
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "version": "21.6.6.55.00",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "91.0.4472.164",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 11; 220333QNY) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 YaApp_Android/22.50.1 YaSearchBrowser/22.50.1 BroPP/1.0 SA/3 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "220333QNY",
+      "marketingName": "Redmi 10C",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1650,
+        "height": 720,
+        "touch": true,
+        "size": 6.71
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Yandex Search Browser",
+      "version": "22.50.1",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "100.0.4896.127",
       "manufacturer": "google"
     }
   },
@@ -1349,6 +1475,181 @@
     "engine": {
       "name": "Blink",
       "version": "101.0.4951.41",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 11; M2102J20SG) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.102 YaBrowser/22.9.1.97.00 (beta) SA/3 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "M2102J20SG",
+      "marketingName": "Poco X3 Pro",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.67
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "version": "22.9.1.97.00",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "104.0.5112.102",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Yandex\";v=\"23\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "cross-site",
+      "sec-fetch-user": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 12; M2012K11AG) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 YaBrowser/23.1.4.84.00 SA/3 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "M2012K11AG",
+      "marketingName": "Poco F3",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.67
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "version": "23.1.4.84.00",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "108.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 13; M2103K19G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 YaBrowser/23.3.5.83.00 SA/3 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "M2103K19G",
+      "marketingName": "Redmi Note 10 5G",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "version": "23.3.5.83.00",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "110.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 11; Mi Note 10 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 YaBrowser/23.7.4.94.00 SA/3 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Mi Note 10 Pro",
+      "marketingName": "Mi Note 10 Pro",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.47
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "version": "23.7.4.94.00",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "114.0.0.0",
       "manufacturer": "google"
     }
   }

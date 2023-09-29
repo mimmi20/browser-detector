@@ -1,90 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; Nubia Z11 mini s) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.62 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "NX549J",
-      "marketingName": "Nubia Z11 Mini S",
-      "manufacturer": "zte",
-      "brand": "zte",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5.2
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "8.1.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Chrome",
-      "version": "78.0.3904.62",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "78.0.3904.62",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 9; ZTE Blade A5 2019 Build/PPR1.180610.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.81 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Blade A5 (2019)",
-      "marketingName": "Blade A5 (2019)",
-      "manufacturer": "zte",
-      "brand": "zte",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1440,
-        "height": 720,
-        "touch": true,
-        "size": 5.45
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "9.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Chrome",
-      "version": "85.0.4183.81",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "85.0.4183.81",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 9; ZTE Blade A5 2019 Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/85.0.4183.81 Mobile Safari/537.36 NSTNWV/3.13.325783178.release.go"
     },
     "device": {
@@ -681,8 +597,8 @@
       "marketingName": "Blade A7 (2019)",
       "manufacturer": "zte",
       "brand": "zte",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 1560,
         "height": 720,
@@ -933,8 +849,8 @@
       "marketingName": "Blade A7 (2019)",
       "manufacturer": "zte",
       "brand": "zte",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 1560,
         "height": 720,
@@ -971,17 +887,17 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "Blade",
-      "marketingName": "Blade",
+      "deviceName": "Blade A5 (2020)",
+      "marketingName": "Blade A5 (2020)",
       "manufacturer": "zte",
       "brand": "zte",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
-        "width": 800,
-        "height": 480,
+        "width": 1560,
+        "height": 720,
         "touch": true,
-        "size": 3.5
+        "size": 6.09
       },
       "type": "smartphone",
       "ismobile": true,
@@ -1101,8 +1017,8 @@
       "marketingName": "Axon 10 Pro",
       "manufacturer": "zte",
       "brand": "zte",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 2340,
         "height": 1080,
@@ -1227,8 +1143,8 @@
       "marketingName": "Blade A7 (2019)",
       "manufacturer": "zte",
       "brand": "zte",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 1560,
         "height": 720,
@@ -1387,6 +1303,48 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; ZTE Blade A3 Lite) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.101 Mobile Safari/537.36 comdirect/1.0 (appVersion:20.9.0;deviceName:zte v880;deviceType:mobile)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Blade A3 Lite",
+      "marketingName": "Blade A3 Lite",
+      "manufacturer": "zte",
+      "brand": "zte",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 960,
+        "height": 480,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "85.0.4183.101",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "85.0.4183.101",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 9; ZTE 2050) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.127 Mobile Safari/537.36"
     },
     "device": {
@@ -1508,6 +1466,48 @@
     "engine": {
       "name": "Blink",
       "version": "85.0.4183.101",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; ZTE Blade A3 2020 Build/PPR1.180610.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.81 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Blade A3 (2020)",
+      "marketingName": "Blade A3 (2020)",
+      "manufacturer": "zte",
+      "brand": "zte",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1440,
+        "height": 720,
+        "touch": true,
+        "size": 5.45
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "85.0.4183.81",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "85.0.4183.81",
       "manufacturer": "google"
     }
   },
@@ -2235,8 +2235,8 @@
       "marketingName": "Blade A7 (2019)",
       "manufacturer": "zte",
       "brand": "zte",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 1560,
         "height": 720,
@@ -2483,17 +2483,17 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "Blade",
-      "marketingName": "Blade",
+      "deviceName": "Blade A3 (2020)",
+      "marketingName": "Blade A3 (2020)",
       "manufacturer": "zte",
       "brand": "zte",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
-        "width": 800,
-        "height": 480,
+        "width": 1440,
+        "height": 720,
         "touch": true,
-        "size": 3.5
+        "size": 5.45
       },
       "type": "smartphone",
       "ismobile": true,
@@ -2823,8 +2823,8 @@
       "marketingName": "Axon 10 Pro",
       "manufacturer": "zte",
       "brand": "zte",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 2340,
         "height": 1080,
@@ -3075,8 +3075,8 @@
       "marketingName": "Blade V10 Vita",
       "manufacturer": "zte",
       "brand": "zte",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 1520,
         "height": 720,
@@ -3369,8 +3369,8 @@
       "marketingName": "Nubia M2",
       "manufacturer": "zte",
       "brand": "zte",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 1920,
         "height": 1080,
@@ -3621,8 +3621,8 @@
       "marketingName": "Blade A7 (2019)",
       "manufacturer": "zte",
       "brand": "zte",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 1560,
         "height": 720,
@@ -3642,6 +3642,48 @@
     },
     "client": {
       "name": "Android WebView",
+      "version": "86.0.4240.110",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "86.0.4240.110",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; ZTE Blade A5 2020) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.110 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Blade A5 (2020)",
+      "marketingName": "Blade A5 (2020)",
+      "manufacturer": "zte",
+      "brand": "zte",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1560,
+        "height": 720,
+        "touch": true,
+        "size": 6.09
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
       "version": "86.0.4240.110",
       "manufacturer": "google",
       "type": "browser",
@@ -3831,8 +3873,8 @@
       "marketingName": "Axon 10 Pro",
       "manufacturer": "zte",
       "brand": "zte",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 2340,
         "height": 1080,
@@ -3873,8 +3915,8 @@
       "marketingName": "Blade V10 Vita",
       "manufacturer": "zte",
       "brand": "zte",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 1520,
         "height": 720,
@@ -4121,17 +4163,17 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "Blade V",
-      "marketingName": "Blade V",
+      "deviceName": "Blade V0920",
+      "marketingName": "Blade V9 Vita",
       "manufacturer": "zte",
       "brand": "zte",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
-        "width": 800,
-        "height": 480,
+        "width": 1440,
+        "height": 720,
         "touch": true,
-        "size": 4
+        "size": 5.45
       },
       "type": "smartphone",
       "ismobile": true,
@@ -4154,48 +4196,6 @@
     "engine": {
       "name": "Blink",
       "version": "80.0.3987.132",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 9; ZTE Blade A5 2019 Build/PPR1.180610.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.86 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Blade A5 (2019)",
-      "marketingName": "Blade A5 (2019)",
-      "manufacturer": "zte",
-      "brand": "zte",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1440,
-        "height": 720,
-        "touch": true,
-        "size": 5.45
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "9.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Chrome",
-      "version": "87.0.4280.86",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "87.0.4280.86",
       "manufacturer": "google"
     }
   }

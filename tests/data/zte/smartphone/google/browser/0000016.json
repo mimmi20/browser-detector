@@ -1,48 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.1; Z982 Build/NMF26V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Z982",
-      "marketingName": "Blade Z Max",
-      "manufacturer": "zte",
-      "brand": "zte",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 6
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "7.1.1",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Chrome",
-      "version": "69.0.3497.100",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "69.0.3497.100",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 7.1.1; Z899VL Build/NMF26V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36"
     },
     "device": {
@@ -1266,11 +1224,11 @@
     "device": {
       "architecture": null,
       "deviceName": "Z837VL",
-      "marketingName": "Zfive 2 LTE",
+      "marketingName": "ZFive 2 LTE (US)",
       "manufacturer": "zte",
       "brand": "zte",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1280,
         "height": 720,
@@ -1854,11 +1812,11 @@
     "device": {
       "architecture": null,
       "deviceName": "Z837VL",
-      "marketingName": "Zfive 2 LTE",
+      "marketingName": "ZFive 2 LTE (US)",
       "manufacturer": "zte",
       "brand": "zte",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1280,
         "height": 720,
@@ -4196,6 +4154,48 @@
     "engine": {
       "name": "Blink",
       "version": "64.0.3282.137",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; Z717VL Build/LMY47V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/42.0.2311.137 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Z717VL",
+      "marketingName": "Citrine LTE",
+      "manufacturer": "zte",
+      "brand": "zte",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": 4
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Android WebView",
+      "version": "42.0.2311.137",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "42.0.2311.137",
       "manufacturer": "google"
     }
   }

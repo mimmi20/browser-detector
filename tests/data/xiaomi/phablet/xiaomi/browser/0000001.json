@@ -1471,48 +1471,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla%2F5.0+%28Linux%3B+U%3B+Android+9%3B+de-de%3B+Mi+Note+10+Build%2FPKQ1.190302.001%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Version%2F4.0+Chrome%2F71.0.3578.141+Mobile+Safari%2F537.36+XiaoMi%2FMiuiBrowser%2F11.3.4-g"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "MI Note",
-      "marketingName": "MI Note",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5.7
-      },
-      "type": "phablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "9.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Miui Browser",
-      "version": "11.3.4",
-      "manufacturer": "xiaomi",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; U; Android 8.1.0; en-in; Redmi Note 5 Pro Build/OPM1.171019.011) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/71.0.3578.141 Mobile Safari/537.36 XiaoMi/MiuiBrowser/11.3.4-g"
     },
     "device": {
@@ -1676,6 +1634,48 @@
     "engine": {
       "name": "WebKit",
       "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla%2F5.0+%28Linux%3B+U%3B+Android+9%3B+de-de%3B+Redmi+Note+8+Build%2FPKQ1.190616.001%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Version%2F4.0+Chrome%2F71.0.3578.141+Mobile+Safari%2F537.36+XiaoMi%2FMiuiBrowser%2F11.4.3-g"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "MI Note",
+      "marketingName": "MI Note",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.7
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Miui Browser",
+      "version": "11.4.3",
+      "manufacturer": "xiaomi",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
       "manufacturer": "apple"
     }
   },
@@ -2563,90 +2563,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 9; de-de; Mi Note 10 Build/PKQ1.190302.001) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/71.0.3578.141 Mobile Safari/537.36 XiaoMi/MiuiBrowser/12.1.5-g"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "MI Note",
-      "marketingName": "MI Note",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5.7
-      },
-      "type": "phablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "9.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Miui Browser",
-      "version": "12.1.5",
-      "manufacturer": "xiaomi",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "71.0.3578.141",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla%2F5.0+%28Linux%3B+U%3B+Android+9%3B+de-de%3B+Mi+Note+10+Build%2FPKQ1.190302.001%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Version%2F4.0+Chrome%2F71.0.3578.141+Mobile+Safari%2F537.36+XiaoMi%2FMiuiBrowser%2F12.1.5-g"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "MI Note",
-      "marketingName": "MI Note",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5.7
-      },
-      "type": "phablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "9.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Miui Browser",
-      "version": "12.1.5",
-      "manufacturer": "xiaomi",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; U; Android 7.0; de-de; Redmi Note 4 Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/71.0.3578.141 Mobile Safari/537.36 XiaoMi/MiuiBrowser/12.1.5-g"
     },
     "device": {
@@ -2719,6 +2635,90 @@
     "client": {
       "name": "Miui Browser",
       "version": "12.1.5",
+      "manufacturer": "xiaomi",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 9; de-de; Redmi Note 8 Build/PKQ1.190616.001) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/71.0.3578.141 Mobile Safari/537.36 XiaoMi/MiuiBrowser/12.2.1-g"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "MI Note",
+      "marketingName": "MI Note",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.7
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Miui Browser",
+      "version": "12.2.1",
+      "manufacturer": "xiaomi",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "71.0.3578.141",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla%2F5.0+%28Linux%3B+U%3B+Android+9%3B+de-de%3B+Redmi+Note+8+Build%2FPKQ1.190616.001%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Version%2F4.0+Chrome%2F71.0.3578.141+Mobile+Safari%2F537.36+XiaoMi%2FMiuiBrowser%2F12.2.1-g"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "MI Note",
+      "marketingName": "MI Note",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.7
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Miui Browser",
+      "version": "12.2.1",
       "manufacturer": "xiaomi",
       "type": "browser",
       "isbot": false
@@ -2845,48 +2845,6 @@
     "client": {
       "name": "Miui Browser",
       "version": "12.1.5",
-      "manufacturer": "xiaomi",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "71.0.3578.141",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 10; de-de; Mi Note 10 Lite Build/QKQ1.190825.002) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/71.0.3578.141 Mobile Safari/537.36 XiaoMi/MiuiBrowser/12.2.6-g comdirect/1.0 (appVersion:20.5.4;deviceType:mobile)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "MI Note",
-      "marketingName": "MI Note",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5.7
-      },
-      "type": "phablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Miui Browser",
-      "version": "12.2.6",
       "manufacturer": "xiaomi",
       "type": "browser",
       "isbot": false
@@ -3193,48 +3151,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla%2F5.0+%28Linux%3B+U%3B+Android+10%3B+de-de%3B+Mi+Note+10+Lite+Build%2FQKQ1.190825.002%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Version%2F4.0+Chrome%2F71.0.3578.141+Mobile+Safari%2F537.36+XiaoMi%2FMiuiBrowser%2F12.4.4-g"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "MI Note",
-      "marketingName": "MI Note",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5.7
-      },
-      "type": "phablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Miui Browser",
-      "version": "12.4.4",
-      "manufacturer": "xiaomi",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "537.36.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; U; Android 10; de-de; Redmi Note 7 Build/QKQ1.190910.002) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/71.0.3578.141 Mobile Safari/537.36 XiaoMi/MiuiBrowser/12.4.4-g"
     },
     "device": {
@@ -3292,6 +3208,90 @@
         "height": 1080,
         "touch": true,
         "size": 6.3
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Miui Browser",
+      "version": "12.4.4",
+      "manufacturer": "xiaomi",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 10; de-de; Redmi Note 9 Build/QP1A.190711.020) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/71.0.3578.141 Mobile Safari/537.36 XiaoMi/MiuiBrowser/12.4.4-g"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "MI Note",
+      "marketingName": "MI Note",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.7
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Miui Browser",
+      "version": "12.4.4",
+      "manufacturer": "xiaomi",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "71.0.3578.141",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla%2F5.0+%28Linux%3B+U%3B+Android+10%3B+de-de%3B+Redmi+Note+9+Build%2FQP1A.190711.020%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Version%2F4.0+Chrome%2F71.0.3578.141+Mobile+Safari%2F537.36+XiaoMi%2FMiuiBrowser%2F12.4.4-g"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "MI Note",
+      "marketingName": "MI Note",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.7
       },
       "type": "phablet",
       "ismobile": true,
@@ -3483,48 +3483,6 @@
       "name": "WebKit",
       "version": null,
       "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 10; de-de; Mi 10 Lite 5G Build/QKQ1.191222.002) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/71.0.3578.141 Mobile Safari/537.36 XiaoMi/MiuiBrowser/12.5.2-gn comdirect/1.0 (appVersion:20.9.2;deviceType:mobile)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Mi 10",
-      "marketingName": "Mi 10",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 2340,
-        "height": 1080,
-        "touch": true,
-        "size": 6.67
-      },
-      "type": "phablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Miui Browser",
-      "version": "12.5.2",
-      "manufacturer": "xiaomi",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "71.0.3578.141",
-      "manufacturer": "google"
     }
   },
   {
@@ -4113,6 +4071,48 @@
       "name": "WebKit",
       "version": null,
       "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 10; de-de; Mi 10 Build/QKQ1.191117.002) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/71.0.3578.141 Mobile Safari/537.36 XiaoMi/MiuiBrowser/12.7.0-gn"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Mi 10",
+      "marketingName": "Mi 10",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.67
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Miui Browser",
+      "version": "12.7.0",
+      "manufacturer": "xiaomi",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "71.0.3578.141",
+      "manufacturer": "google"
     }
   },
   {

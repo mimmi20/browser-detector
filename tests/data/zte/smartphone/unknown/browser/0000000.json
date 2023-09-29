@@ -597,8 +597,8 @@
       "marketingName": "Blade A7 (2019)",
       "manufacturer": "zte",
       "brand": "zte",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 1560,
         "height": 720,
@@ -765,8 +765,8 @@
       "marketingName": "Axon 10 Pro",
       "manufacturer": "zte",
       "brand": "zte",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 2340,
         "height": 1080,
@@ -1143,8 +1143,8 @@
       "marketingName": "Blade A7 (2019)",
       "manufacturer": "zte",
       "brand": "zte",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 1560,
         "height": 720,
@@ -1395,8 +1395,8 @@
       "marketingName": "Blade A7 (2019)",
       "manufacturer": "zte",
       "brand": "zte",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 1560,
         "height": 720,
@@ -1429,6 +1429,90 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 11; zh-CN; NX667J Build/RKQ1.210503.001) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.108 Quark/5.2.5.187 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "NX667J",
+      "marketingName": "Nubia Z30 Pro",
+      "manufacturer": "zte",
+      "brand": "zte",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.67
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Quark",
+      "version": "5.2.5.187",
+      "manufacturer": "unknown",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "78.0.3904.108",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 10; zh-CN; ZTE A2121 Build/QKQ1.200913.002) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.108 Quark/4.6.6.164 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "A2121",
+      "marketingName": "Axon 20 5G",
+      "manufacturer": "zte",
+      "brand": "zte",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2460,
+        "height": 1080,
+        "touch": true,
+        "size": 6.92
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Quark",
+      "version": "4.6.6.164",
+      "manufacturer": "unknown",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "78.0.3904.108",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 10; ZTE A2020G Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.181 Mobile Safari/537.36 (Ecosia android@88.0.4324.181)"
     },
     "device": {
@@ -1437,8 +1521,8 @@
       "marketingName": "Axon 10 Pro",
       "manufacturer": "zte",
       "brand": "zte",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 2340,
         "height": 1080,
@@ -1486,8 +1570,8 @@
       "marketingName": "Axon 10 Pro",
       "manufacturer": "zte",
       "brand": "zte",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 2340,
         "height": 1080,
@@ -1557,6 +1641,174 @@
     "engine": {
       "name": "Blink",
       "version": "101.0.4951.41",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; ZTE A2121E) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.41 Mobile Safari/537.36 (Ecosia android@101.0.4951.41)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "A2121E",
+      "marketingName": "Axon 20 5G",
+      "manufacturer": "zte",
+      "brand": "zte",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2460,
+        "height": 1080,
+        "touch": true,
+        "size": 6.92
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Ecosia",
+      "version": "101.0.4951.41",
+      "manufacturer": "unknown",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "101.0.4951.41",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 12; zh-CN; NX702J Build/SKQ1.220502.001) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.108 Quark/5.8.2.221 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "NX702J",
+      "marketingName": "Nubia Z40S Pro",
+      "manufacturer": "zte",
+      "brand": "zte",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.67
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Quark",
+      "version": "5.8.2.221",
+      "manufacturer": "unknown",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "78.0.3904.108",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 11; zh-CN; ZTE 8031 Build/RP1A.201005.001) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.108 Quark/6.0.0.230 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "8031",
+      "marketingName": "Blade V2022 4G",
+      "manufacturer": "zte",
+      "brand": "zte",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1640,
+        "height": 720,
+        "touch": true,
+        "size": 6.82
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Quark",
+      "version": "6.0.0.230",
+      "manufacturer": "unknown",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "78.0.3904.108",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; ZTE A7030) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.181 Mobile Safari/537.36 (Ecosia android@88.0.4324.181)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "A7030",
+      "marketingName": "Blade A71 2021 LTE (LATAM)",
+      "manufacturer": "zte",
+      "brand": "zte",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1600,
+        "height": 720,
+        "touch": true,
+        "size": 6.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Ecosia",
+      "version": "88.0.4324.181",
+      "manufacturer": "unknown",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "88.0.4324.181",
       "manufacturer": "google"
     }
   },
@@ -1650,17 +1902,17 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "Blade",
-      "marketingName": "Blade",
+      "deviceName": "Blade A31",
+      "marketingName": "Blade A31",
       "manufacturer": "zte",
       "brand": "zte",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
-        "width": 800,
-        "height": 480,
+        "width": 1440,
+        "height": 720,
         "touch": true,
-        "size": 3.5
+        "size": 5.45
       },
       "type": "smartphone",
       "ismobile": true,
@@ -1713,6 +1965,48 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "9.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Ecosia",
+      "version": "101.0.4951.41",
+      "manufacturer": "unknown",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "101.0.4951.41",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; ZTE Blade A51) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.41 Mobile Safari/537.36 (Ecosia android@101.0.4951.41)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Blade A51",
+      "marketingName": "Blade A51",
+      "manufacturer": "zte",
+      "brand": "zte",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1600,
+        "height": 720,
+        "touch": true,
+        "size": 6.52
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
       "manufacturer": "google"
     },
     "client": {

@@ -757,48 +757,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 2.3.6; X501_USA_Cricket Build/GRK39F) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.40 Mobile Safari/537.31 OPR/14.0.1074.54070"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "X501",
-      "marketingName": "Groove",
-      "manufacturer": "zte",
-      "brand": "zte",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.2
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "2.3.6",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Opera Mobile",
-      "version": "14.0.1074.54070",
-      "manufacturer": "opera",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "537.31.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 2.3.5; ZTE-N910 Build/GRJ90) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.58 Mobile Safari/537.31 OPR/14.0.1074.57453"
     },
     "device": {
@@ -1689,8 +1647,8 @@
       "marketingName": "Nubia Z9 Mini",
       "manufacturer": "zte",
       "brand": "zte",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 1920,
         "height": 1080,
@@ -2403,8 +2361,8 @@
       "marketingName": "Blade A7 (2019)",
       "manufacturer": "zte",
       "brand": "zte",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 1560,
         "height": 720,
@@ -2781,8 +2739,8 @@
       "marketingName": "Blade A7 (2019)",
       "manufacturer": "zte",
       "brand": "zte",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 1560,
         "height": 720,
@@ -2907,8 +2865,8 @@
       "marketingName": "Blade A7 (2019)",
       "manufacturer": "zte",
       "brand": "zte",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 1560,
         "height": 720,
@@ -2991,8 +2949,8 @@
       "marketingName": "Axon 10 Pro",
       "manufacturer": "zte",
       "brand": "zte",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 2340,
         "height": 1080,
@@ -3243,8 +3201,8 @@
       "marketingName": "Axon 10 Pro",
       "manufacturer": "zte",
       "brand": "zte",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 2340,
         "height": 1080,
@@ -3327,8 +3285,8 @@
       "marketingName": "Blade V10 Vita",
       "manufacturer": "zte",
       "brand": "zte",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 1520,
         "height": 720,
@@ -3495,8 +3453,8 @@
       "marketingName": "Axon 10 Pro",
       "manufacturer": "zte",
       "brand": "zte",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 2340,
         "height": 1080,
@@ -3621,8 +3579,8 @@
       "marketingName": "Axon 10 Pro",
       "manufacturer": "zte",
       "brand": "zte",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 2340,
         "height": 1080,
@@ -3743,17 +3701,17 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "Blade",
-      "marketingName": "Blade",
+      "deviceName": "Blade A7 (2020)",
+      "marketingName": "Blade A7 (2020)",
       "manufacturer": "zte",
       "brand": "zte",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
-        "width": 800,
-        "height": 480,
+        "width": 1560,
+        "height": 720,
         "touch": true,
-        "size": 3.5
+        "size": 6.09
       },
       "type": "smartphone",
       "ismobile": true,
@@ -3806,6 +3764,48 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "8.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "version": "63.3.3216.58675",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "89.0.4389.105",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; ZTE A2020N3 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.105 Mobile Safari/537.36 OPR/63.3.3216.58675"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "A2020N3 Pro",
+      "marketingName": "Axon 10 Pro",
+      "manufacturer": "zte",
+      "brand": "zte",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.47
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
       "manufacturer": "google"
     },
     "client": {
@@ -3915,8 +3915,8 @@
       "marketingName": "Blade A7 (2019)",
       "manufacturer": "zte",
       "brand": "zte",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 1560,
         "height": 720,
@@ -4117,6 +4117,48 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; ZTE A7020) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.127 Mobile Safari/537.36 OPR/60.3.3004.55692"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "A7020",
+      "marketingName": "Blade A7S 2020",
+      "manufacturer": "zte",
+      "brand": "zte",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1560,
+        "height": 720,
+        "touch": true,
+        "size": 6.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "version": "60.3.3004.55692",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "85.0.4183.127",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; NX505J Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Mobile Safari/537.36 OPT/2.6"
     },
     "device": {
@@ -4154,48 +4196,6 @@
     "engine": {
       "name": "Blink",
       "version": "84.0.4147.125",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.2; NX507J) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.127 Mobile Safari/537.36 OPR/60.3.3004.55692"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "NX507J",
-      "marketingName": "Nubia Z7 Mini",
-      "manufacturer": "zte",
-      "brand": "zte",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "7.1.2",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Opera Mobile",
-      "version": "60.3.3004.55692",
-      "manufacturer": "opera",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "85.0.4183.127",
       "manufacturer": "google"
     }
   }

@@ -1,6 +1,174 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.2; Redmi 4 Build/N2G47H; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Redmi 4",
+      "marketingName": "Redmi 4",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.1.2",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Android WebView",
+      "version": "66.0.3359.126",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "66.0.3359.126",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.2; Redmi 5A Build/N2G47H; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/64.0.3282.137 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Redmi 5A",
+      "marketingName": "Redmi 5A",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.1.2",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Android WebView",
+      "version": "64.0.3282.137",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "64.0.3282.137",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.2; Redmi Y1 Build/N2G47H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.109 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Redmi Y1",
+      "marketingName": "Redmi Y1",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.1.2",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "65.0.3325.109",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "65.0.3325.109",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; 2014818 Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.109 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Hongmi 2 3G",
+      "marketingName": "Hongmi 2 3G",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "65.0.3325.109",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "65.0.3325.109",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; Redmi 4 Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.109 Mobile Safari/537.36"
     },
     "device": {
@@ -1563,8 +1731,8 @@
       "marketingName": "Mi Mix 3",
       "manufacturer": "xiaomi",
       "brand": "xiaomi",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 2340,
         "height": 1080,
@@ -1979,15 +2147,15 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "Redmi 4",
-      "marketingName": "Redmi 4",
+      "deviceName": "Redmi 4 Prime",
+      "marketingName": "Redmi 4 Prime",
       "manufacturer": "xiaomi",
       "brand": "xiaomi",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
-        "width": 1280,
-        "height": 720,
+        "width": 1920,
+        "height": 1080,
         "touch": true,
         "size": 5
       },
@@ -2200,6 +2368,48 @@
         "height": 1080,
         "touch": true,
         "size": 5.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "80.0.3987.87",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "80.0.3987.87",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; Mi Note 10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.87 Mobile Safari/537.36 comdirect/1.0 (appVersion:20.1.1;deviceType:mobile)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Mi Note 10",
+      "marketingName": "Mi Note 10",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.47
       },
       "type": "smartphone",
       "ismobile": true,
@@ -2810,6 +3020,48 @@
     "engine": {
       "name": "Blink",
       "version": "80.0.3987.87",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; Mi MIX 3 5G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.136 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Mi Mix 3 5G",
+      "marketingName": "Mi Mix 3 5G",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.39
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "79.0.3945.136",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "79.0.3945.136",
       "manufacturer": "google"
     }
   },
@@ -3449,12 +3701,12 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "Mi Mix 3",
-      "marketingName": "Mi Mix 3",
+      "deviceName": "Mi Mix 3 5G",
+      "marketingName": "Mi Mix 3 5G",
       "manufacturer": "xiaomi",
       "brand": "xiaomi",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 2340,
         "height": 1080,
@@ -3944,258 +4196,6 @@
     "engine": {
       "name": "Blink",
       "version": "80.0.3987.117",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 9; MI MAX 3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.117 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Mi Max 3",
-      "marketingName": "Mi Max 3",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 2160,
-        "height": 1080,
-        "touch": true,
-        "size": 6.9
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "9.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Chrome",
-      "version": "80.0.3987.117",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "80.0.3987.117",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 9; Redmi 6A) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.99 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Redmi 6A",
-      "marketingName": "Redmi 6A",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1440,
-        "height": 720,
-        "touch": true,
-        "size": 5.45
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "9.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Chrome",
-      "version": "80.0.3987.99",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "80.0.3987.99",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 9; Redmi S2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.99 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Redmi S2",
-      "marketingName": "Redmi S2",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1440,
-        "height": 720,
-        "touch": true,
-        "size": 5.99
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "9.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Chrome",
-      "version": "80.0.3987.99",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "80.0.3987.99",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 9; Redmi 7A) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.99 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Redmi 7A",
-      "marketingName": "Redmi 7A",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1440,
-        "height": 720,
-        "touch": true,
-        "size": 5.45
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "9.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Chrome",
-      "version": "80.0.3987.99",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "80.0.3987.99",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Dalvik/2.1.0 (Linux; U; Android 9; Mi A2 Build/PKQ1.180904.001) comdirect/1.0 (appVersion:20.2.0;deviceType:mobile)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Mi A2",
-      "marketingName": "Mi A2",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 2160,
-        "height": 1080,
-        "touch": true,
-        "size": 5.99
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "9.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Dalvik",
-      "version": "2.1.0",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 9; Redmi 6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.119 Mobile Safari/537.36 comdirect/1.0 (appVersion:20.2.1;deviceName:nokia 6;deviceType:mobile)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Redmi 6",
-      "marketingName": "Redmi 6",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1440,
-        "height": 720,
-        "touch": true,
-        "size": 5.45
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "9.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Chrome",
-      "version": "80.0.3987.119",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "80.0.3987.119",
       "manufacturer": "google"
     }
   }

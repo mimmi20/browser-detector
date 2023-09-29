@@ -51,8 +51,8 @@
       "marketingName": "Blade V10 Vita",
       "manufacturer": "zte",
       "brand": "zte",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 1520,
         "height": 720,
@@ -93,8 +93,8 @@
       "marketingName": "Axon 10 Pro",
       "manufacturer": "zte",
       "brand": "zte",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 2340,
         "height": 1080,
@@ -177,8 +177,8 @@
       "marketingName": "Axon 10 Pro",
       "manufacturer": "zte",
       "brand": "zte",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 2340,
         "height": 1080,
@@ -219,8 +219,8 @@
       "marketingName": "Blade A7 (2019)",
       "manufacturer": "zte",
       "brand": "zte",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 1560,
         "height": 720,
@@ -933,8 +933,8 @@
       "marketingName": "Blade A7 (2019)",
       "manufacturer": "zte",
       "brand": "zte",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 1560,
         "height": 720,
@@ -1433,17 +1433,17 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "Blade",
-      "marketingName": "Blade",
+      "deviceName": "Blade A7 (2020)",
+      "marketingName": "Blade A7 (2020)",
       "manufacturer": "zte",
       "brand": "zte",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
-        "width": 800,
-        "height": 480,
+        "width": 1560,
+        "height": 720,
         "touch": true,
-        "size": 3.5
+        "size": 6.09
       },
       "type": "smartphone",
       "ismobile": true,
@@ -1513,6 +1513,90 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; ZTE 8030 Build/RP1A.201005.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/96.0.4664.104 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/348.0.0.39.118;]"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "8030",
+      "marketingName": "Blade V30 Vita",
+      "manufacturer": "zte",
+      "brand": "zte",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1640,
+        "height": 720,
+        "touch": true,
+        "size": 6.82
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Facebook App",
+      "version": "348.0.0.39.118",
+      "manufacturer": "facebook",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "96.0.4664.104",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; ZTE A7020 Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/96.0.4664.92 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/347.0.0.28.237;]"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "A7020",
+      "marketingName": "Blade A7S 2020",
+      "manufacturer": "zte",
+      "brand": "zte",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1560,
+        "height": 720,
+        "touch": true,
+        "size": 6.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Facebook App",
+      "version": "347.0.0.28.237",
+      "manufacturer": "facebook",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "96.0.4664.92",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 10; ZTE Blade V1000 Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/96.0.4664.92 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/347.0.0.28.237;]"
     },
     "device": {
@@ -1555,21 +1639,147 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; ZTE A7030 Build/RP1A.201005.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/96.0.4664.45 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/345.0.0.34.118;]"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "A7030",
+      "marketingName": "Blade A71 2021 LTE (LATAM)",
+      "manufacturer": "zte",
+      "brand": "zte",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1600,
+        "height": 720,
+        "touch": true,
+        "size": 6.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Facebook App",
+      "version": "345.0.0.34.118",
+      "manufacturer": "facebook",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "96.0.4664.45",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; ZTE 9030 Build/RP1A.201005.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/98.0.4758.87 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/352.0.0.21.117;]"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "9030",
+      "marketingName": "Blade V30",
+      "manufacturer": "zte",
+      "brand": "zte",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.7
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Facebook App",
+      "version": "352.0.0.21.117",
+      "manufacturer": "facebook",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "98.0.4758.87",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; ZTE A7030 Build/RP1A.201005.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/98.0.4758.87 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/353.0.0.34.116;]"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "A7030",
+      "marketingName": "Blade A71 2021 LTE (LATAM)",
+      "manufacturer": "zte",
+      "brand": "zte",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1600,
+        "height": 720,
+        "touch": true,
+        "size": 6.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Facebook App",
+      "version": "353.0.0.34.116",
+      "manufacturer": "facebook",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "98.0.4758.87",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 9; ZTE Blade A3 2020 Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/98.0.4758.87 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/353.0.0.34.116;]"
     },
     "device": {
       "architecture": null,
-      "deviceName": "Blade",
-      "marketingName": "Blade",
+      "deviceName": "Blade A3 (2020)",
+      "marketingName": "Blade A3 (2020)",
       "manufacturer": "zte",
       "brand": "zte",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
-        "width": 800,
-        "height": 480,
+        "width": 1440,
+        "height": 720,
         "touch": true,
-        "size": 3.5
+        "size": 5.45
       },
       "type": "smartphone",
       "ismobile": true,
@@ -1643,17 +1853,17 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "Blade",
-      "marketingName": "Blade",
+      "deviceName": "Blade A3 (2020)",
+      "marketingName": "Blade A3 (2020)",
       "manufacturer": "zte",
       "brand": "zte",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
-        "width": 800,
-        "height": 480,
+        "width": 1440,
+        "height": 720,
         "touch": true,
-        "size": 3.5
+        "size": 5.45
       },
       "type": "smartphone",
       "ismobile": true,
@@ -1723,6 +1933,48 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; ZTE 8030 Build/RP1A.201005.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.79 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/383.1.0.25.106;]"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "8030",
+      "marketingName": "Blade V30 Vita",
+      "manufacturer": "zte",
+      "brand": "zte",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1640,
+        "height": 720,
+        "touch": true,
+        "size": 6.82
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Facebook App",
+      "version": "383.1.0.25.106",
+      "manufacturer": "facebook",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "105.0.5195.79",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; ZTE BLADE V9 Build/OPM1.171019.026; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/104.0.5112.69 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/381.0.0.29.105;]"
     },
     "device": {
@@ -1769,17 +2021,17 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "Blade",
-      "marketingName": "Blade",
+      "deviceName": "Blade A51",
+      "marketingName": "Blade A51",
       "manufacturer": "zte",
       "brand": "zte",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
-        "width": 800,
-        "height": 480,
+        "width": 1600,
+        "height": 720,
         "touch": true,
-        "size": 3.5
+        "size": 6.52
       },
       "type": "smartphone",
       "ismobile": true,
@@ -1811,17 +2063,17 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "Blade",
-      "marketingName": "Blade",
+      "deviceName": "Blade A51",
+      "marketingName": "Blade A51",
       "manufacturer": "zte",
       "brand": "zte",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
-        "width": 800,
-        "height": 480,
+        "width": 1600,
+        "height": 720,
         "touch": true,
-        "size": 3.5
+        "size": 6.52
       },
       "type": "smartphone",
       "ismobile": true,

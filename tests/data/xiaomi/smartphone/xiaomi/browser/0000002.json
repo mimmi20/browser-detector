@@ -471,8 +471,8 @@
       "marketingName": "Mi Mix 3",
       "manufacturer": "xiaomi",
       "brand": "xiaomi",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 2340,
         "height": 1080,
@@ -1395,8 +1395,8 @@
       "marketingName": "Mi Mix 3",
       "manufacturer": "xiaomi",
       "brand": "xiaomi",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 2340,
         "height": 1080,
@@ -2319,8 +2319,8 @@
       "marketingName": "Mi Mix 3",
       "manufacturer": "xiaomi",
       "brand": "xiaomi",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 2340,
         "height": 1080,
@@ -2361,8 +2361,8 @@
       "marketingName": "Mi Mix 3",
       "manufacturer": "xiaomi",
       "brand": "xiaomi",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 2340,
         "height": 1080,
@@ -4159,21 +4159,21 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.4.4; en-us; MI 3W Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/46.0.2490.85 Mobile Safari/537.36 XiaoMi/MiuiBrowser/2.1.1"
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 9; de-de; Mi MIX 3 5G Build/PKQ1.190321.001) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/71.0.3578.141 Mobile Safari/537.36 XiaoMi/MiuiBrowser/11.3.4-g"
     },
     "device": {
       "architecture": null,
-      "deviceName": "MI 3W",
-      "marketingName": "MI 3W",
+      "deviceName": "Mi Mix 3 5G",
+      "marketingName": "Mi Mix 3 5G",
       "manufacturer": "xiaomi",
       "brand": "xiaomi",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
-        "width": 1920,
+        "width": 2340,
         "height": 1080,
         "touch": true,
-        "size": 5
+        "size": 6.39
       },
       "type": "smartphone",
       "ismobile": true,
@@ -4183,19 +4183,19 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "4.4.4",
+      "version": "9.0.0",
       "manufacturer": "google"
     },
     "client": {
       "name": "Miui Browser",
-      "version": "2.1.1",
+      "version": "11.3.4",
       "manufacturer": "xiaomi",
       "type": "browser",
       "isbot": false
     },
     "engine": {
       "name": "Blink",
-      "version": "46.0.2490.85",
+      "version": "71.0.3578.141",
       "manufacturer": "google"
     }
   }
