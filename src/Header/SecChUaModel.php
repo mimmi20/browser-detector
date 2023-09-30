@@ -131,6 +131,7 @@ final class SecChUaModel implements HeaderInterface
             '220733sg' => 'xiaomi=xiaomi 220733sg',
             'mi note 10 lite' => 'xiaomi=xiaomi mi note 10 lite',
             'mi note 10 pro' => 'xiaomi=xiaomi mi note 10 pro',
+            '22101316ug' => 'xiaomi=xiaomi 22101316ug',
             // ZTE
             'zte a2121e' => 'zte=zte a2121e',
             'zte blade 10 vita' => 'zte=zte blade 10 vita',
@@ -177,6 +178,13 @@ final class SecChUaModel implements HeaderInterface
             'sm-g990b2' => 'samsung=samsung sm-g990b2',
             'sm-g990e' => 'samsung=samsung sm-g990e',
             'sm-a125f' => 'samsung=samsung sm-a125f',
+            'sm-p619' => 'samsung=samsung sm-p619',
+            'sm-p613' => 'samsung=samsung sm-p613',
+            'sm-a136b' => 'samsung=samsung sm-a136b',
+            'sm-g736b' => 'samsung=samsung sm-g736b',
+            'sm-f711b' => 'samsung=samsung sm-f711b',
+            'sm-f711u' => 'samsung=samsung sm-f711u',
+            'sm-a225f' => 'samsung=samsung sm-a225f',
             // Huawei
             'mar-lx1b' => 'huawei=huawei mar-lx1b',
             'lya-l09' => 'huawei=huawei lya-l09',
@@ -193,6 +201,7 @@ final class SecChUaModel implements HeaderInterface
             'surface duo' => 'microsoft=microsoft surface duo',
             // realme
             'rmx3085' => 'realme=realme rmx3085',
+            'rmx3231' => 'realme=realme rmx3231',
             default => null,
         };
     }

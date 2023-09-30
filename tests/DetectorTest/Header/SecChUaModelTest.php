@@ -260,6 +260,15 @@ final class SecChUaModelTest extends TestCase
             ['"CPH2211"', 'oppo=oppo cph2211'],
             ['"CPH2271"', 'oppo=oppo cph2271'],
             ['"RMX3085"', 'realme=realme rmx3085'],
+            ['"SM-P619"', 'samsung=samsung sm-p619'],
+            ['"SM-P613"', 'samsung=samsung sm-p613'],
+            ['"SM-A136B"', 'samsung=samsung sm-a136b'],
+            ['"22101316UG"', 'xiaomi=xiaomi 22101316ug'],
+            ['"RMX3231"', 'realme=realme rmx3231'],
+            ['"SM-G736B"', 'samsung=samsung sm-g736b'],
+            ['"SM-F711B"', 'samsung=samsung sm-f711b'],
+            ['"SM-F711U"', 'samsung=samsung sm-f711u'],
+            ['"SM-A225F"', 'samsung=samsung sm-a225f'],
             ['""', null],
         ];
     }
