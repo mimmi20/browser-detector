@@ -144,6 +144,8 @@ final class SecChUaModel implements HeaderInterface
             'sm-t580' => 'samsung=samsung sm-t580',
             'sm-t550' => 'samsung=samsung sm-t550',
             'sm-t813' => 'samsung=samsung sm-t813',
+            'sm-a336b' => 'samsung=samsung sm-a336b',
+            'sm-a336e' => 'samsung=samsung sm-a336e',
             // Huawei
             'mar-lx1b' => 'huawei=huawei mar-lx1b',
             'lya-l09' => 'huawei=huawei lya-l09',
@@ -151,6 +153,8 @@ final class SecChUaModel implements HeaderInterface
             // Lenovo
             'lenovo tb-x304f' => 'lenovo=lenovo tb-x304f',
             'x1030x' => 'lenovo=lenovo x1030x',
+            // Nokia
+            'nokia g50' => 'nokia=nokia g50',
             default => null,
         };
     }
