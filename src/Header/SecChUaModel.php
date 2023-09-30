@@ -57,8 +57,16 @@ final class SecChUaModel implements HeaderInterface
             'asus_x00dd' => 'asus=asus x00dd',
             // Google
             'nexus 7' => 'google=google nexus 7',
-            'pixel 7 pro' => 'google=google pixel 7 pro',
+            'pixel 3' => 'google=google pixel 3',
+            'pixel 3a' => 'google=google pixel 3a',
             'pixel 4 xl' => 'google=google pixel 4 xl',
+            'pixel 4a (5g)' => 'google=google pixel 4a 5g',
+            'pixel 5' => 'google=google pixel 5',
+            'pixel 6' => 'google=google pixel 6',
+            'pixel 6a' => 'google=google pixel 6a',
+            'pixel 6 pro' => 'google=google pixel 6 pro',
+            'pixel 7' => 'google=google pixel 7',
+            'pixel 7 pro' => 'google=google pixel 7 pro',
             // OnePlus
             'ac2003' => 'oneplus=oneplus ac2003',
             'in2023' => 'oneplus=oneplus in2023',
@@ -122,6 +130,7 @@ final class SecChUaModel implements HeaderInterface
             'zte blade 10 vita' => 'zte=zte blade 10 vita',
             'zte blade a3 2020' => 'zte=zte blade a3 2020',
             'zte 8045' => 'zte=zte 8045',
+            'zte a2322g' => 'zte=zte a2322g',
             // Samsung
             'sm-a405fn' => 'samsung=samsung sm-a405fn',
             'sm-a415f' => 'samsung=samsung sm-a415f',

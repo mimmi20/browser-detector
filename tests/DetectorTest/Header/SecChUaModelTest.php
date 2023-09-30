@@ -227,6 +227,15 @@ final class SecChUaModelTest extends TestCase
             ['"Surface Duo"', 'microsoft=microsoft surface duo'],
             ['"SM-A127F"', 'samsung=samsung sm-a127f'],
             ['"Pixel 4 XL"', 'google=google pixel 4 xl'],
+            ['"Pixel 6"', 'google=google pixel 6'],
+            ['"Pixel 6 Pro"', 'google=google pixel 6 pro'],
+            ['"Pixel 6a"', 'google=google pixel 6a'],
+            ['"ZTE A2322G"', 'zte=zte a2322g'],
+            ['"Pixel 4a (5G)"', 'google=google pixel 4a 5g'],
+            ['"Pixel 7"', 'google=google pixel 7'],
+            ['"Pixel 3a"', 'google=google pixel 3a'],
+            ['"Pixel 3"', 'google=google pixel 3'],
+            ['"Pixel 5"', 'google=google pixel 5'],
             ['""', null],
         ];
     }
