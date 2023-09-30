@@ -157,6 +157,19 @@ final class SecChUaModel implements HeaderInterface
             'sm-a336b' => 'samsung=samsung sm-a336b',
             'sm-a336e' => 'samsung=samsung sm-a336e',
             'sm-a127f' => 'samsung=samsung sm-a127f',
+            'sm-g525f' => 'samsung=samsung sm-g525f',
+            'sm-a226br' => 'samsung=samsung sm-a226br',
+            'sm-a226b' => 'samsung=samsung sm-a226b',
+            'sm-a546b' => 'samsung=samsung sm-a546b',
+            'sm-t220' => 'samsung=samsung sm-t220',
+            'sm-t225' => 'samsung=samsung sm-t225',
+            'sm-t225n' => 'samsung=samsung sm-t225n',
+            'sm-a326b' => 'samsung=samsung sm-a326b',
+            'sm-a326u' => 'samsung=samsung sm-a326u',
+            'sm-a725f' => 'samsung=samsung sm-a725f',
+            'sm-g990b' => 'samsung=samsung sm-g990b',
+            'sm-g990b2' => 'samsung=samsung sm-g990b2',
+            'sm-g990e' => 'samsung=samsung sm-g990e',
             // Huawei
             'mar-lx1b' => 'huawei=huawei mar-lx1b',
             'lya-l09' => 'huawei=huawei lya-l09',
@@ -166,6 +179,7 @@ final class SecChUaModel implements HeaderInterface
             'x1030x' => 'lenovo=lenovo x1030x',
             // Nokia
             'nokia g50' => 'nokia=nokia g50',
+            'nokia g20' => 'nokia=nokia g20',
             // Microsoft
             'surface duo' => 'microsoft=microsoft surface duo',
             default => null,
