@@ -224,6 +224,8 @@ final class SecChUaModelTest extends TestCase
             ['"Nokia G50"', 'nokia=nokia g50'],
             ['"SM-A336B"', 'samsung=samsung sm-a336b'],
             ['"SM-A336E"', 'samsung=samsung sm-a336e'],
+            ['"Surface Duo"', 'microsoft=microsoft surface duo'],
+            ['"SM-A127F"', 'samsung=samsung sm-a127f'],
             ['""', null],
         ];
     }
