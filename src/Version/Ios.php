@@ -263,26 +263,6 @@ final class Ios implements VersionFactoryInterface
             }
         }
 
-        $doMatch = preg_match('/mobile\/(?P<build>\d+[A-Z]\d+(?:[a-z])?)/i', $useragent, $matches);
-
-        if ($doMatch) {
-            try {
-                $buildVersion = $this->iosBuild->getVersion($matches['build']);
-            } catch (NotFoundException) {
-                $buildVersion = false;
-            }
-
-            if ($buildVersion !== false) {
-                try {
-                    return $this->versionBuilder->set($buildVersion);
-                } catch (NotNumericException $e) {
-                    $this->logger->info($e);
-
-                    return new NullVersion();
-                }
-            }
-        }
-
         $doMatch = preg_match(
             '/applecoremedia\/\d+\.\d+\.\d+\.(?P<build>\d+[A-Z]\d+(?:[a-z])?)/i',
             $useragent,
