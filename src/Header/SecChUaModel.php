@@ -58,6 +58,7 @@ final class SecChUaModel implements HeaderInterface
             // Google
             'nexus 7' => 'google=google nexus 7',
             'pixel 7 pro' => 'google=google pixel 7 pro',
+            'pixel 4 xl' => 'google=google pixel 4 xl',
             // OnePlus
             'ac2003' => 'oneplus=oneplus ac2003',
             'in2023' => 'oneplus=oneplus in2023',
