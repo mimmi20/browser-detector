@@ -250,6 +250,16 @@ final class SecChUaModelTest extends TestCase
             ['"SM-G990B"', 'samsung=samsung sm-g990b'],
             ['"SM-G990B2"', 'samsung=samsung sm-g990b2'],
             ['"SM-G990E"', 'samsung=samsung sm-g990e'],
+            ['"NEN-LX1"', 'huawei=huawei nen-lx1'],
+            ['"22011119UY"', 'xiaomi=xiaomi 22011119uy'],
+            ['"Lenovo YT-J706F"', 'lenovo=lenovo yt-j706f'],
+            ['"SM-A125F"', 'samsung=samsung sm-a125f'],
+            ['"220733SG"', 'xiaomi=xiaomi 220733sg'],
+            ['"Mi Note 10 Lite"', 'xiaomi=xiaomi mi note 10 lite'],
+            ['"Mi Note 10 Pro"', 'xiaomi=xiaomi mi note 10 pro'],
+            ['"CPH2211"', 'oppo=oppo cph2211'],
+            ['"CPH2271"', 'oppo=oppo cph2271'],
+            ['"RMX3085"', 'realme=realme rmx3085'],
             ['""', null],
         ];
     }

@@ -72,6 +72,8 @@ final class SecChUaModel implements HeaderInterface
             'in2023' => 'oneplus=oneplus in2023',
             // Oppo
             'cph2065' => 'oppo=oppo cph2065',
+            'cph2211' => 'oppo=oppo cph2211',
+            'cph2271' => 'oppo=oppo cph2271',
             // Xiaomi
             'redmi note 9 pro' => 'xiaomi=xiaomi redmi note 9 pro',
             'redmi note 8 pro' => 'xiaomi=xiaomi redmi note 8 pro',
@@ -125,6 +127,10 @@ final class SecChUaModel implements HeaderInterface
             '22081212ug' => 'xiaomi=xiaomi 22081212ug',
             'm2010j19cg' => 'xiaomi=xiaomi m2010j19cg',
             '21051182g' => 'xiaomi=xiaomi 21051182g',
+            '22011119uy' => 'xiaomi=xiaomi 22011119uy',
+            '220733sg' => 'xiaomi=xiaomi 220733sg',
+            'mi note 10 lite' => 'xiaomi=xiaomi mi note 10 lite',
+            'mi note 10 pro' => 'xiaomi=xiaomi mi note 10 pro',
             // ZTE
             'zte a2121e' => 'zte=zte a2121e',
             'zte blade 10 vita' => 'zte=zte blade 10 vita',
@@ -170,18 +176,23 @@ final class SecChUaModel implements HeaderInterface
             'sm-g990b' => 'samsung=samsung sm-g990b',
             'sm-g990b2' => 'samsung=samsung sm-g990b2',
             'sm-g990e' => 'samsung=samsung sm-g990e',
+            'sm-a125f' => 'samsung=samsung sm-a125f',
             // Huawei
             'mar-lx1b' => 'huawei=huawei mar-lx1b',
             'lya-l09' => 'huawei=huawei lya-l09',
             'vog-l29' => 'huawei=huawei vog-l29',
+            'nen-lx1' => 'huawei=huawei nen-lx1',
             // Lenovo
             'lenovo tb-x304f' => 'lenovo=lenovo tb-x304f',
+            'lenovo yt-j706f' => 'lenovo=lenovo yt-j706f',
             'x1030x' => 'lenovo=lenovo x1030x',
             // Nokia
             'nokia g50' => 'nokia=nokia g50',
             'nokia g20' => 'nokia=nokia g20',
             // Microsoft
             'surface duo' => 'microsoft=microsoft surface duo',
+            // realme
+            'rmx3085' => 'realme=realme rmx3085',
             default => null,
         };
     }
