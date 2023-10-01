@@ -45,7 +45,7 @@ final class MobileDevice implements MobileDeviceInterface
         }
 
         // ignore mobile safari token if windows nt token is available
-        if (preg_match('/windows nt.*(mobile safari|opera mobi|iphone)/i', $useragent)) {
+        if (preg_match('/windows nt.*(mobile safari|opera mobi|iphone|openwave)/i', $useragent)) {
             return false;
         }
 

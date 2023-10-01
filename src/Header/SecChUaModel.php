@@ -189,11 +189,18 @@ final class SecChUaModel implements HeaderInterface
             'sm-a146p' => 'samsung=samsung sm-a146p',
             'sm-a236b' => 'samsung=samsung sm-a236b',
             'sm-a525f' => 'samsung=samsung sm-a525f',
+            'sm-f731b' => 'samsung=samsung sm-f731b',
+            'sm-f926b' => 'samsung=samsung sm-f926b',
+            'sm-s906b' => 'samsung=samsung sm-s906b',
+            'sm-s911b' => 'samsung=samsung sm-s911b',
+            'sm-s916b' => 'samsung=samsung sm-s916b',
             // Huawei
             'mar-lx1b' => 'huawei=huawei mar-lx1b',
             'lya-l09' => 'huawei=huawei lya-l09',
             'vog-l29' => 'huawei=huawei vog-l29',
             'nen-lx1' => 'huawei=huawei nen-lx1',
+            'ppa-lx1' => 'huawei=huawei ppa-lx1',
+            'jad-lx9' => 'huawei=huawei jad-lx9',
             // Lenovo
             'lenovo tb-x304f' => 'lenovo=lenovo tb-x304f',
             'lenovo yt-j706f' => 'lenovo=lenovo yt-j706f',
@@ -206,6 +213,8 @@ final class SecChUaModel implements HeaderInterface
             // realme
             'rmx3085' => 'realme=realme rmx3085',
             'rmx3231' => 'realme=realme rmx3231',
+            // Motorola
+            'moto g200 5g' => 'motorola=motorola moto g200 5g',
             default => null,
         };
     }
