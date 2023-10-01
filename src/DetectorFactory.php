@@ -24,6 +24,7 @@ use BrowserDetector\Parser\DeviceParserFactory;
 use BrowserDetector\Parser\EngineParserFactory;
 use BrowserDetector\Parser\PlatformParserFactory;
 use BrowserDetector\Version\VersionBuilder;
+use BrowserDetector\Version\VersionBuilderFactory;
 use Psr\Log\LoggerInterface;
 use Psr\SimpleCache\CacheInterface as PsrCacheInterface;
 use UaBrowserType\TypeLoader;
@@ -104,6 +105,7 @@ final class DetectorFactory
                 $platformLoader,
                 $browserLoader,
                 $engineLoader,
+                new VersionBuilderFactory(),
             );
         }
 

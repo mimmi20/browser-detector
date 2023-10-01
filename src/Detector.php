@@ -19,7 +19,7 @@ use BrowserDetector\Loader\DeviceLoaderFactoryInterface;
 use BrowserDetector\Loader\EngineLoaderInterface;
 use BrowserDetector\Loader\PlatformLoaderInterface;
 use BrowserDetector\Version\NotNumericException;
-use BrowserDetector\Version\VersionBuilder;
+use BrowserDetector\Version\VersionBuilderFactoryInterface;
 use BrowserDetector\Version\VersionInterface;
 use Psr\Http\Message\MessageInterface;
 use Psr\Log\LoggerInterface;
@@ -53,6 +53,7 @@ final class Detector implements DetectorInterface
         private readonly PlatformLoaderInterface $platformLoader,
         private readonly BrowserLoaderInterface $browserLoader,
         private readonly EngineLoaderInterface $engineLoader,
+        private readonly VersionBuilderFactoryInterface $versionBuilderFactory,
     ) {
         // nothing to do
     }
@@ -113,7 +114,7 @@ final class Detector implements DetectorInterface
         if (in_array(mb_strtolower($platformName ?? ''), ['ios'], true)) {
             $engineCodename = 'webkit';
 
-            $versionBuilder = new VersionBuilder($this->logger);
+            $versionBuilder = ($this->versionBuilderFactory)($this->logger);
 
             try {
                 $version    = $versionBuilder->set((string) $platformVersion);
@@ -187,7 +188,7 @@ final class Detector implements DetectorInterface
      */
     private function getVersion(string | null $inputVersion): string | null
     {
-        $versionBuilder = new VersionBuilder($this->logger);
+        $versionBuilder = ($this->versionBuilderFactory)($this->logger);
         $version        = $versionBuilder->set($inputVersion ?? '');
 
         return $version->getVersion();
