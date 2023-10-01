@@ -1716,5 +1716,17 @@
       "search": null
     },
     "engine": null
+  },
+  "bingsearch": {
+    "name": "Bing Search",
+    "manufacturer": "microsoft",
+    "type": "application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "BingSapphire"
+      ]
+    },
+    "engine": null
   }
 }

@@ -4758,8 +4758,10 @@
     "manufacturer": "soul-soft",
     "type": "browser",
     "version": {
-      "factory": null,
-      "search": null
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Soul"
+      ]
     },
     "engine": null
   },

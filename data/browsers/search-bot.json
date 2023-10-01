@@ -376,5 +376,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "yandex-mobile-bot": {
+    "name": "Yandex Mobile Bot",
+    "manufacturer": "yandex",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "YandexMobileBot"
+      ]
+    },
+    "engine": "unknown"
   }
 }

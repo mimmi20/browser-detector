@@ -5,7 +5,7 @@
     "/commoncrawler|msie or firefox mutant|not on windows server/i": "unknown",
     "/symb(?:ian|os)|series ?[346]0|s60v[35]|nokia7230/i": "symbian",
     "/maemo|(?<!no)tizen|like android|remix|bada|meego|sailfish|chinese operating system|cos;|\\(cos [0-9]|android; cos/i": "maemo",
-    "/bsd|dragonfly/i": "bsd",
+    "/bsd(?:k\\/)|dragonfly/i": "bsd",
     "/web[o0]s|hpwos/i": "webos",
     "/hp-?ux|irix|aix|unix|osf1|openvms/i": "unix",
     "/MIUI/": "android",
