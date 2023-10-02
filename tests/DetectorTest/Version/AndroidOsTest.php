@@ -123,6 +123,10 @@ final class AndroidOsTest extends TestCase
                 'Mozilla/5.0 (Linux; Android 9; Redmi 8 Build/PKQ1.190319.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.166 Mobile Safari/537.36 Instagram 296.0.0.35.109 Android (28/9; 320dpi; 720x1369; Xiaomi; Redmi 8; olive; qcom; de_DE; 505599009)',
                 '9.0.0',
             ],
+            [
+                'Instagram 5.0.2 Android (15/4.0.4; 240dpi; 480x800; AIRIS; TM450; AIRIS_TM450; qcom; es_ES)',
+                '4.0.4',
+            ],
         ];
     }
 
@@ -332,7 +336,7 @@ final class AndroidOsTest extends TestCase
     /** @throws UnexpectedValueException */
     public function testDetectVersionFailFifth(): void
     {
-        $useragent = 'Mozilla/5.0 (Linux; Android 4.4.4; SM-G850F Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36 Instagram 19.1.0.31.91 Android (19/4.4.4; 320dpi; 720x1280; samsung; SM-G850F; slte; universal5430; ar_AE)';
+        $useragent = 'Instagram 5.0.2 Android (15/4.0.4; 240dpi; 480x800; AIRIS; TM450; AIRIS_TM450; qcom; es_ES)';
         $exception = new NotNumericException('set failed');
         $logger    = $this->createMock(LoggerInterface::class);
         $logger
@@ -365,7 +369,7 @@ final class AndroidOsTest extends TestCase
         $versionBuilder
             ->expects(self::once())
             ->method('set')
-            ->with('4.4.4')
+            ->with('4.0.4')
             ->willThrowException($exception);
 
         assert($logger instanceof LoggerInterface);
