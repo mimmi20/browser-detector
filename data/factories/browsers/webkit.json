@@ -197,6 +197,7 @@
     "/qwant(mobile)?\\/|qwantios/i": "qwant-mobile",
     "/ecosia/i": "ecosia",
     "/yandexmobilebot/i": "yandex-mobile-bot",
+    "/^client\\//i": "client-app",
     "/(?:like android|windows ce|symbos).*safari/i": "safari",
     "/samsungbrowser/i": "samsungbrowser",
     "/google web preview/i": "google web preview",

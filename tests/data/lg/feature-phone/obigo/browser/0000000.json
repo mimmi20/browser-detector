@@ -2101,6 +2101,48 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Vodafone/1.0/LG-GC900/V10b Browser/Obigo-Q7.1 MMS/LG-MMS-V1.0/1.2 MediaPlayer/LGPlayer/1.0 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "GC900",
+      "marketingName": "Viewty Smart",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "dualOrientation": false,
+      "simCount": 1,
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": false,
+        "size": 3
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems"
+    },
+    "client": {
+      "name": "Obigo Q",
+      "version": "7.1.0",
+      "manufacturer": "obigo",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Teleca",
+      "version": null,
+      "manufacturer": "obigo"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "LG-GD310/V100 Obigo/WAP2.0 Profile/MIDP-2.1 Configuration/CLDC-1.1"
     },
     "device": {
@@ -4147,48 +4189,6 @@
     "client": {
       "name": "Teleca-Obigo",
       "version": null,
-      "manufacturer": "obigo",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Teleca",
-      "version": null,
-      "manufacturer": "obigo"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Vodafone/1.0/LG-KM900/V10l Browser/Obigo-Q7.1 MMS/LG-MMS-V1.0/1.2"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "KM900",
-      "marketingName": "Arena",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 800,
-        "height": 480,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems"
-    },
-    "client": {
-      "name": "Obigo Q",
-      "version": "7.1.0",
       "manufacturer": "obigo",
       "type": "browser",
       "isbot": false

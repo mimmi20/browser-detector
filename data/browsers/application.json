@@ -93,18 +93,6 @@
     },
     "engine": "webkit"
   },
-  "aol desktop": {
-    "name": "AOL Desktop",
-    "manufacturer": "aol",
-    "type": "application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "ADG"
-      ]
-    },
-    "engine": null
-  },
   "appcent": {
     "name": "Appcent",
     "manufacturer": "unknown",
@@ -1725,6 +1713,30 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "BingSapphire"
+      ]
+    },
+    "engine": null
+  },
+  "taobao": {
+    "name": "Taobao",
+    "manufacturer": "alibaba",
+    "type": "application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "AliApp\\(TB"
+      ]
+    },
+    "engine": null
+  },
+  "client-app": {
+    "name": "Client",
+    "manufacturer": "unknown",
+    "type": "application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Client"
       ]
     },
     "engine": null

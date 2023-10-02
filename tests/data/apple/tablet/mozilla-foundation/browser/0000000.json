@@ -739,7 +739,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "10.3.0-beta+2",
+      "version": "10.3.0",
       "manufacturer": "apple"
     },
     "client": {
@@ -823,7 +823,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "10.3.2-beta+1",
+      "version": "10.3.2",
       "manufacturer": "apple"
     },
     "client": {
@@ -1621,7 +1621,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.1.1",
+      "version": "11.1.2",
       "manufacturer": "apple"
     },
     "client": {
@@ -1705,7 +1705,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.0.0-beta+2",
+      "version": "11.0.0",
       "manufacturer": "apple"
     },
     "client": {
@@ -1747,7 +1747,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.1.1",
+      "version": "11.1.2",
       "manufacturer": "apple"
     },
     "client": {
@@ -2815,48 +2815,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (iPad; CPU OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/15.1b14275 Mobile/15E148 Safari/605.1.15"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "iPad",
-      "marketingName": "iPad",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1024,
-        "height": 768,
-        "touch": true,
-        "size": 9.7
-      },
-      "type": "tablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
-      "manufacturer": "apple"
-    },
-    "client": {
-      "name": "Firefox Mobile for iOS",
-      "version": "15.1.0-beta+14275",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (iPad; CPU OS 12_1_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/2.1.0b4 Mobile/16D39 Safari/605.1.15"
     },
     "device": {
@@ -2923,54 +2881,12 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "12.2.0",
       "manufacturer": "apple"
     },
     "client": {
       "name": "Firefox Mobile for iOS",
       "version": "16.0.0-beta+14732",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPad; CPU OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/8.1.2 Mobile/15E148 Safari/605.1.15"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "iPad",
-      "marketingName": "iPad",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1024,
-        "height": 768,
-        "touch": true,
-        "size": 9.7
-      },
-      "type": "tablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
-      "manufacturer": "apple"
-    },
-    "client": {
-      "name": "Firefox Mobile for iOS",
-      "version": "8.1.2",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
       "isbot": false
@@ -3025,7 +2941,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (iPad; CPU OS 12_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/17.2b15268 Mobile/15E148 Safari/605.1.15"
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 11_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/16.2b14898 Mobile/15G77 Safari/605.1.15"
     },
     "device": {
       "architecture": null,
@@ -3049,12 +2965,12 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "11.4.1",
       "manufacturer": "apple"
     },
     "client": {
       "name": "Firefox Mobile for iOS",
-      "version": "17.2.0-beta+15268",
+      "version": "16.2.0-beta+14898",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
       "isbot": false
@@ -3067,7 +2983,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (iPad; CPU OS 12_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/16.2b14898 Mobile/16B92 Safari/605.1.15"
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 11_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/15.0b13894 Mobile/15G77 Safari/605.1.15"
     },
     "device": {
       "architecture": null,
@@ -3091,12 +3007,12 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "12.1.0",
+      "version": "11.4.1",
       "manufacturer": "apple"
     },
     "client": {
       "name": "Firefox Mobile for iOS",
-      "version": "16.2.0-beta+14898",
+      "version": "15.0.0-beta+13894",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
       "isbot": false
@@ -3133,7 +3049,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "12.3.1",
       "manufacturer": "apple"
     },
     "client": {
@@ -3175,12 +3091,54 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "12.4.0",
       "manufacturer": "apple"
     },
     "client": {
       "name": "Firefox Mobile for iOS",
       "version": "6.0.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 11_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/18.2b15817 Mobile/15G77 Safari/605.1.15"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPad",
+      "marketingName": "iPad",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1024,
+        "height": 768,
+        "touch": true,
+        "size": 9.7
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.4.1",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "Firefox Mobile for iOS",
+      "version": "18.2.0-beta+15817",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
       "isbot": false
@@ -3217,7 +3175,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "12.4.1",
       "manufacturer": "apple"
     },
     "client": {
@@ -3235,7 +3193,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (iPad; CPU OS 12_1_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/18.2b15817 Mobile/16D57 Safari/605.1.15"
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 13_1_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/19.0b16042 Mobile/15E148 Safari/605.1.15"
     },
     "device": {
       "architecture": null,
@@ -3257,14 +3215,14 @@
       "bits": null
     },
     "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "12.1.4",
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "13.1.1",
       "manufacturer": "apple"
     },
     "client": {
       "name": "Firefox Mobile for iOS",
-      "version": "18.2.0-beta+15817",
+      "version": "19.0.0-beta+16042",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
       "isbot": false
@@ -3277,7 +3235,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (iPad; CPU OS 12_0_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/19.1b16203 Mobile/16A404 Safari/605.1.15"
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 13_1_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/8.1.3 Mobile/15E148 Safari/605.1.15"
     },
     "device": {
       "architecture": null,
@@ -3299,14 +3257,140 @@
       "bits": null
     },
     "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "12.0.1",
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "13.1.3",
       "manufacturer": "apple"
     },
     "client": {
       "name": "Firefox Mobile for iOS",
-      "version": "19.1.0-beta+16203",
+      "version": "8.1.3",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 13_1_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/6.0 Mobile/15E148 Safari/605.1.15"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPad",
+      "marketingName": "iPad",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1024,
+        "height": 768,
+        "touch": true,
+        "size": 9.7
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "13.1.3",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "Firefox Mobile for iOS",
+      "version": "6.0.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 13_2_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/13b2 Mobile/15E148 Safari/605.1.15"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPad",
+      "marketingName": "iPad",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1024,
+        "height": 768,
+        "touch": true,
+        "size": 9.7
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "13.2.2",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "Firefox Mobile for iOS",
+      "version": "13.0.0-beta+2",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/14.0b12646 Mobile/15E148 Safari/605.1.15"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPad",
+      "marketingName": "iPad",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1024,
+        "height": 768,
+        "touch": true,
+        "size": 9.7
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "13.2.3",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "Firefox Mobile for iOS",
+      "version": "14.0.0-beta+12646",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
       "isbot": false
@@ -3361,48 +3445,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (iPad; CPU OS 12_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/2.1.0b4 Mobile/15E148 Safari/605.1.15"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "iPad",
-      "marketingName": "iPad",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1024,
-        "height": 768,
-        "touch": true,
-        "size": 9.7
-      },
-      "type": "tablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
-      "manufacturer": "apple"
-    },
-    "client": {
-      "name": "Firefox Mobile for iOS",
-      "version": "2.1.0-beta+4",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (iPad; CPU OS 10_2_1 like Mac OS X) AppleWebKit/602.4.6 (KHTML, like Gecko) Focus/3.0.1 Mobile/14D27"
     },
     "device": {
@@ -3445,6 +3487,48 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 13_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/17.3b15323 Mobile/15E148 Safari/605.1.15"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPad",
+      "marketingName": "iPad",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1024,
+        "height": 768,
+        "touch": true,
+        "size": 9.7
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "13.3.0",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "Firefox Mobile for iOS",
+      "version": "17.3.0-beta+15323",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (iPad; CPU OS 13_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/21.0 Version/13.0.3 Safari/605.1.15"
     },
     "device": {
@@ -3467,8 +3551,8 @@
       "bits": null
     },
     "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
       "version": "13.3.0",
       "manufacturer": "apple"
     },
@@ -3487,7 +3571,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (iPad; CPU OS 13_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/21.0 Mobile/15E148 Safari/605.1.15"
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 13_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/2.1.0b4 Mobile/15E148 Safari/605.1.15 comdirect/1.0 (appVersion:20.3.0;deviceName:apple ipad;deviceType:tablet)"
     },
     "device": {
       "architecture": null,
@@ -3509,14 +3593,14 @@
       "bits": null
     },
     "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "13.3.1",
       "manufacturer": "apple"
     },
     "client": {
       "name": "Firefox Mobile for iOS",
-      "version": "21.0.0",
+      "version": "2.1.0-beta+4",
       "manufacturer": "mozilla-foundation",
       "type": "browser",
       "isbot": false
@@ -3593,9 +3677,9 @@
       "bits": null
     },
     "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "14.2.0",
       "manufacturer": "apple"
     },
     "client": {
@@ -3650,6 +3734,48 @@
     "engine": {
       "name": "WebKit",
       "version": "604.4.7",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 14_8_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/18.1b15719 Mobile/15E148 Safari/605.1.15"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPad",
+      "marketingName": "iPad",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1024,
+        "height": 768,
+        "touch": true,
+        "size": 9.7
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "14.8.1",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "Firefox Mobile for iOS",
+      "version": "18.1.0-beta+15719",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
       "manufacturer": "apple"
     }
   },
@@ -3761,9 +3887,9 @@
       "bits": null
     },
     "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "16.4.1",
       "manufacturer": "apple"
     },
     "client": {
@@ -3889,7 +4015,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "12.5.7",
       "manufacturer": "apple"
     },
     "client": {

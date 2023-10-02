@@ -5156,5 +5156,17 @@
       "search": null
     },
     "engine": null
+  },
+  "aol desktop": {
+    "name": "AOL Desktop",
+    "manufacturer": "aol",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "ADG"
+      ]
+    },
+    "engine": null
   }
 }

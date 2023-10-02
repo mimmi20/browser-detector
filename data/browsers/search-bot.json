@@ -183,6 +183,18 @@
     },
     "engine": null
   },
+  "google-ads-qualify": {
+    "name": "Google Ads Qualify",
+    "manufacturer": "google",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Google-Ads-Qualify"
+      ]
+    },
+    "engine": null
+  },
   "duckduck bot": {
     "name": "DuckDuck Bot",
     "manufacturer": "duck-duck-go",

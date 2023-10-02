@@ -1,6 +1,174 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 11_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E302 [FBAN/FBIOS;FBAV/154.0.0.34.386;FBBV/87041355;FBDV/iPhone9,4;FBMD/iPhone;FBSN/iOS;FBSV/11.3.1;FBSS/3;FBCR/Three;FBID/phone;FBLC/en_GB;FBOP/5;FBRV/88069422]"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPhone 9,4",
+      "marketingName": "iPhone 7 Plus",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.3.0",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "Facebook App",
+      "version": "154.0.0.34.386",
+      "manufacturer": "facebook",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 [FBAN/FBIOS;FBAV/251.0.0.50.110;FBBV/188958159;FBDV/iPhone10,5;FBMD/iPhone;FBSN/iOS;FBSV/13.3;FBSS/3;FBID/phone;FBLC/de_DE;FBOP/5;FBRV/190291779;FBCR/Telekom.de]"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPhone 10,5",
+      "marketingName": "iPhone 8 Plus",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "13.3.0",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "Facebook App",
+      "version": "251.0.0.50.110",
+      "manufacturer": "facebook",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 [FBAN/FBIOS;FBAV/252.3.0.27.349;FBBV/192722719;FBDV/iPhone11,6;FBMD/iPhone;FBSN/iOS;FBSV/13.3;FBSS/3;FBID/phone;FBLC/de_DE;FBOP/5;FBRV/193575309;FBCR/o2-de]"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPhone 11,6",
+      "marketingName": "iPhone XS Max",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 2688,
+        "height": 1242,
+        "touch": true,
+        "size": 6.5
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "13.3.0",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "Facebook App",
+      "version": "252.3.0.27.349",
+      "manufacturer": "facebook",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 [FBAN/FBIOS;FBDV/iPhone8,2;FBMD/iPhone;FBSN/iOS;FBSV/13.3;FBSS/3;FBID/phone;FBLC/en_GB;FBOP/5;FBCR/o2-de]"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPhone 8,2",
+      "marketingName": "iPhone 6S Plus",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "13.3.0",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "Facebook App",
+      "version": null,
+      "manufacturer": "facebook",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 125.0.0.18.125 (iPhone10,6; iOS 13_3; tr_VI; tr-VI; scale=3.00; 1125x2436; 193828684)"
     },
     "device": {
@@ -25,7 +193,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "13.3.0",
       "manufacturer": "apple"
     },
     "client": {
@@ -67,7 +235,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "13.3.0",
       "manufacturer": "apple"
     },
     "client": {
@@ -109,7 +277,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "13.3.0",
       "manufacturer": "apple"
     },
     "client": {
@@ -151,7 +319,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "13.3.0",
       "manufacturer": "apple"
     },
     "client": {
@@ -235,7 +403,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "13.3.0",
       "manufacturer": "apple"
     },
     "client": {
@@ -277,7 +445,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "13.3.0",
       "manufacturer": "apple"
     },
     "client": {
@@ -337,6 +505,48 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 126.0.0.13.120 (iPhone10,6; iOS 13_3_1; de_DE; de; scale=3.00; 1125x2436; 194985111)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPhone 10,6",
+      "marketingName": "iPhone X",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 2436,
+        "height": 1125,
+        "touch": true,
+        "size": 5.8
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "13.3.1",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "Instagram App",
+      "version": "126.0.0.13.120",
+      "manufacturer": "facebook",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 128.0.0.19.119 (iPhone10,6; iOS 13_3_1; de_DE; de-DE; scale=3.00; 1125x2436; 197357527)"
     },
     "device": {
@@ -361,7 +571,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "13.3.1",
       "manufacturer": "apple"
     },
     "client": {
@@ -403,7 +613,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "13.3.1",
       "manufacturer": "apple"
     },
     "client": {
@@ -445,7 +655,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "13.3.1",
       "manufacturer": "apple"
     },
     "client": {
@@ -487,7 +697,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "13.3.0",
       "manufacturer": "apple"
     },
     "client": {
@@ -529,7 +739,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "13.3.1",
       "manufacturer": "apple"
     },
     "client": {
@@ -571,7 +781,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "13.3.1",
       "manufacturer": "apple"
     },
     "client": {
@@ -613,7 +823,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "13.3.1",
       "manufacturer": "apple"
     },
     "client": {
@@ -655,7 +865,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "13.3.1",
       "manufacturer": "apple"
     },
     "client": {
@@ -697,7 +907,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "13.3.0",
       "manufacturer": "apple"
     },
     "client": {
@@ -739,7 +949,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "13.3.1",
       "manufacturer": "apple"
     },
     "client": {
@@ -781,7 +991,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "13.3.1",
       "manufacturer": "apple"
     },
     "client": {
@@ -823,7 +1033,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "13.3.1",
       "manufacturer": "apple"
     },
     "client": {
@@ -865,7 +1075,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "13.3.1",
       "manufacturer": "apple"
     },
     "client": {
@@ -907,7 +1117,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "13.3.1",
       "manufacturer": "apple"
     },
     "client": {
@@ -949,7 +1159,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "13.3.0",
       "manufacturer": "apple"
     },
     "client": {
@@ -991,7 +1201,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "13.3.1",
       "manufacturer": "apple"
     },
     "client": {
@@ -1033,7 +1243,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "13.3.1",
       "manufacturer": "apple"
     },
     "client": {
@@ -1075,54 +1285,12 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "13.3.1",
       "manufacturer": "apple"
     },
     "client": {
       "name": "Instagram App",
       "version": "132.1.0.21.129",
-      "manufacturer": "facebook",
-      "type": "mobile-application",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 12_4_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 [FBAN/FBIOS;FBDV/iPhone7,1;FBMD/iPhone;FBSN/iOS;FBSV/12.4.5;FBSS/3;FBID/phone;FBLC/de_DE;FBOP/5;FBCR/o2-de]"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "iPhone 7,1",
-      "marketingName": "iPhone 6 Plus",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5.5
-      },
-      "type": "phablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
-      "manufacturer": "apple"
-    },
-    "client": {
-      "name": "Facebook App",
-      "version": null,
       "manufacturer": "facebook",
       "type": "mobile-application",
       "isbot": false
@@ -1159,7 +1327,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "13.3.1",
       "manufacturer": "apple"
     },
     "client": {
@@ -1201,7 +1369,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "13.3.1",
       "manufacturer": "apple"
     },
     "client": {
@@ -1243,7 +1411,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "13.3.1",
       "manufacturer": "apple"
     },
     "client": {
@@ -1285,7 +1453,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "13.3.1",
       "manufacturer": "apple"
     },
     "client": {
@@ -1327,7 +1495,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "13.3.1",
       "manufacturer": "apple"
     },
     "client": {
@@ -1369,7 +1537,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "13.4.0",
       "manufacturer": "apple"
     },
     "client": {
@@ -1411,7 +1579,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "13.3.1",
       "manufacturer": "apple"
     },
     "client": {
@@ -1453,7 +1621,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "13.3.1",
       "manufacturer": "apple"
     },
     "client": {
@@ -1495,7 +1663,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "13.3.1",
       "manufacturer": "apple"
     },
     "client": {
@@ -1537,7 +1705,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "13.4.0",
       "manufacturer": "apple"
     },
     "client": {
@@ -1579,7 +1747,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "13.3.1",
       "manufacturer": "apple"
     },
     "client": {
@@ -1621,7 +1789,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "13.3.1",
       "manufacturer": "apple"
     },
     "client": {
@@ -1663,7 +1831,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "13.3.1",
       "manufacturer": "apple"
     },
     "client": {
@@ -1705,7 +1873,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "13.4.0",
       "manufacturer": "apple"
     },
     "client": {
@@ -1747,7 +1915,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "13.3.1",
       "manufacturer": "apple"
     },
     "client": {
@@ -1789,7 +1957,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "13.3.1",
       "manufacturer": "apple"
     },
     "client": {
@@ -1831,7 +1999,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "13.3.1",
       "manufacturer": "apple"
     },
     "client": {
@@ -1873,7 +2041,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "13.3.1",
       "manufacturer": "apple"
     },
     "client": {
@@ -1915,7 +2083,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "13.3.1",
       "manufacturer": "apple"
     },
     "client": {
@@ -1957,7 +2125,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "13.3.1",
       "manufacturer": "apple"
     },
     "client": {
@@ -1999,7 +2167,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "13.4.0",
       "manufacturer": "apple"
     },
     "client": {
@@ -2041,7 +2209,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "13.4.1",
       "manufacturer": "apple"
     },
     "client": {
@@ -2083,7 +2251,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "13.3.1",
       "manufacturer": "apple"
     },
     "client": {
@@ -2125,7 +2293,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "13.3.1",
       "manufacturer": "apple"
     },
     "client": {
@@ -2167,7 +2335,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "13.3.1",
       "manufacturer": "apple"
     },
     "client": {
@@ -2209,7 +2377,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "13.4.0",
       "manufacturer": "apple"
     },
     "client": {
@@ -2251,7 +2419,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "13.4.1",
       "manufacturer": "apple"
     },
     "client": {
@@ -2293,7 +2461,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "13.3.1",
       "manufacturer": "apple"
     },
     "client": {
@@ -2335,7 +2503,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "13.3.1",
       "manufacturer": "apple"
     },
     "client": {
@@ -2377,7 +2545,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "13.3.1",
       "manufacturer": "apple"
     },
     "client": {
@@ -2419,7 +2587,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "13.3.1",
       "manufacturer": "apple"
     },
     "client": {
@@ -2461,7 +2629,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "13.3.1",
       "manufacturer": "apple"
     },
     "client": {
@@ -2503,7 +2671,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "13.3.1",
       "manufacturer": "apple"
     },
     "client": {
@@ -2545,7 +2713,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "13.3.1",
       "manufacturer": "apple"
     },
     "client": {
@@ -2605,6 +2773,48 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 12_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 136.0.0.22.123 (iPhone11,6; iOS 12_4_1; de_DE; de-DE; scale=3.31; 1242x2689; 207451752) comdirect/1.0 (appVersion:20.3.0;deviceName:apple iphone;deviceType:mobile)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPhone 11,6",
+      "marketingName": "iPhone XS Max",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 2688,
+        "height": 1242,
+        "touch": true,
+        "size": 6.5
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "12.4.1",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "Instagram App",
+      "version": "136.0.0.22.123",
+      "manufacturer": "facebook",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 136.0.0.22.123 (iPhone9,4; iOS 13_3_1; de_DE; de; scale=2.61; 1080x1920; 207451752) comdirect/1.0 (appVersion:20.3.0;deviceName:apple iphone;deviceType:mobile)"
     },
     "device": {
@@ -2629,12 +2839,54 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "13.3.1",
       "manufacturer": "apple"
     },
     "client": {
       "name": "Instagram App",
       "version": "136.0.0.22.123",
+      "manufacturer": "facebook",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 135.1.0.23.118 (iPhone11,6; iOS 12_2; de_DE; de-DE; scale=3.31; 1242x2689; 206833405) comdirect/1.0 (appVersion:20.3.0;deviceName:apple iphone;deviceType:mobile)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPhone 11,6",
+      "marketingName": "iPhone XS Max",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 2688,
+        "height": 1242,
+        "touch": true,
+        "size": 6.5
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "12.2.0",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "Instagram App",
+      "version": "135.1.0.23.118",
       "manufacturer": "facebook",
       "type": "mobile-application",
       "isbot": false
@@ -2671,7 +2923,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "13.4.0",
       "manufacturer": "apple"
     },
     "client": {
@@ -2713,7 +2965,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "13.3.1",
       "manufacturer": "apple"
     },
     "client": {
@@ -2755,7 +3007,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "13.3.1",
       "manufacturer": "apple"
     },
     "client": {
@@ -2797,7 +3049,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "13.3.1",
       "manufacturer": "apple"
     },
     "client": {
@@ -2839,12 +3091,54 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "13.3.1",
       "manufacturer": "apple"
     },
     "client": {
       "name": "Instagram App",
       "version": "132.1.0.21.129",
+      "manufacturer": "facebook",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 12_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 136.0.0.22.123 (iPhone10,6; iOS 12_4; de_DE; de-DE; scale=3.00; 1125x2436; 207451752) NW/1 comdirect/1.0 (appVersion:20.3.0;deviceName:apple iphone;deviceType:mobile)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPhone 10,6",
+      "marketingName": "iPhone X",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 2436,
+        "height": 1125,
+        "touch": true,
+        "size": 5.8
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "12.4.0",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "Instagram App",
+      "version": "136.0.0.22.123",
       "manufacturer": "facebook",
       "type": "mobile-application",
       "isbot": false
@@ -2881,7 +3175,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "13.3.1",
       "manufacturer": "apple"
     },
     "client": {
@@ -2923,7 +3217,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "13.4.0",
       "manufacturer": "apple"
     },
     "client": {
@@ -2965,7 +3259,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "12.4.1",
       "manufacturer": "apple"
     },
     "client": {
@@ -3007,7 +3301,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "13.3.1",
       "manufacturer": "apple"
     },
     "client": {
@@ -3049,7 +3343,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "13.3.1",
       "manufacturer": "apple"
     },
     "client": {
@@ -3091,7 +3385,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "13.3.1",
       "manufacturer": "apple"
     },
     "client": {
@@ -3133,7 +3427,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "13.4.1",
       "manufacturer": "apple"
     },
     "client": {
@@ -3175,7 +3469,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "13.4.1",
       "manufacturer": "apple"
     },
     "client": {
@@ -3217,7 +3511,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "13.4.0",
       "manufacturer": "apple"
     },
     "client": {
@@ -3259,7 +3553,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "13.4.1",
       "manufacturer": "apple"
     },
     "client": {
@@ -3301,7 +3595,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "13.4.1",
       "manufacturer": "apple"
     },
     "client": {
@@ -3343,7 +3637,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "12.4.5",
       "manufacturer": "apple"
     },
     "client": {
@@ -3385,7 +3679,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "13.3.1",
       "manufacturer": "apple"
     },
     "client": {
@@ -3469,7 +3763,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "13.3.1",
       "manufacturer": "apple"
     },
     "client": {
@@ -3511,7 +3805,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "13.4.1",
       "manufacturer": "apple"
     },
     "client": {
@@ -3553,7 +3847,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "13.4.1",
       "manufacturer": "apple"
     },
     "client": {
@@ -3595,7 +3889,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "13.3.1",
       "manufacturer": "apple"
     },
     "client": {
@@ -3637,7 +3931,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "13.3.1",
       "manufacturer": "apple"
     },
     "client": {
@@ -3679,7 +3973,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "13.3.1",
       "manufacturer": "apple"
     },
     "client": {
@@ -3721,54 +4015,12 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "13.4.1",
       "manufacturer": "apple"
     },
     "client": {
       "name": "Instagram App",
       "version": "140.0.0.25.126",
-      "manufacturer": "facebook",
-      "type": "mobile-application",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 12_1_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/16D57 Instagram 118.0.0.25.121 (iPhone10,6; iOS 12_1_4; de_DE; de-DE; scale=3.00; 1125x2436; 180988914)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "iPhone 10,6",
-      "marketingName": "iPhone X",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 2436,
-        "height": 1125,
-        "touch": true,
-        "size": 5.8
-      },
-      "type": "phablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "12.1.4",
-      "manufacturer": "apple"
-    },
-    "client": {
-      "name": "Instagram App",
-      "version": "118.0.0.25.121",
       "manufacturer": "facebook",
       "type": "mobile-application",
       "isbot": false
@@ -3805,7 +4057,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "13.4.1",
       "manufacturer": "apple"
     },
     "client": {
@@ -3847,7 +4099,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "13.3.1",
       "manufacturer": "apple"
     },
     "client": {
@@ -3889,7 +4141,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "13.3.1",
       "manufacturer": "apple"
     },
     "client": {
@@ -3931,258 +4183,6 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
-      "manufacturer": "apple"
-    },
-    "client": {
-      "name": "Instagram App",
-      "version": "142.0.0.22.109",
-      "manufacturer": "facebook",
-      "type": "mobile-application",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 142.0.0.22.109 (iPhone12,3; iOS 13_4_1; de_DE; de-DE; scale=3.00; 1125x2436; 214888322) comdirect/1.0 (appVersion:20.5.2;deviceName:apple iphone;deviceType:mobile)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "iPhone 12,3",
-      "marketingName": "iPhone 11 Pro",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 2436,
-        "height": 1125,
-        "touch": true,
-        "size": 5.8
-      },
-      "type": "phablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
-      "manufacturer": "apple"
-    },
-    "client": {
-      "name": "Instagram App",
-      "version": "142.0.0.22.109",
-      "manufacturer": "facebook",
-      "type": "mobile-application",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 142.0.0.22.109 (iPhone12,5; iOS 13_5; de_DE; de-DE; scale=3.00; 1242x2688; 214888322) comdirect/1.0 (appVersion:20.5.2;deviceName:apple iphone;deviceType:mobile)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "iPhone 12,5",
-      "marketingName": "iPhone 11 Pro Max",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 2688,
-        "height": 1242,
-        "touch": true,
-        "size": 6.5
-      },
-      "type": "phablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
-      "manufacturer": "apple"
-    },
-    "client": {
-      "name": "Instagram App",
-      "version": "142.0.0.22.109",
-      "manufacturer": "facebook",
-      "type": "mobile-application",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 140.0.0.25.126 (iPhone9,4; iOS 13_4_1; de_DE; de-DE; scale=2.61; 1080x1920; 212235464) comdirect/1.0 (appVersion:20.5.2;deviceName:apple iphone;deviceType:mobile)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "iPhone 9,4",
-      "marketingName": "iPhone 7 Plus",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5.5
-      },
-      "type": "phablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
-      "manufacturer": "apple"
-    },
-    "client": {
-      "name": "Instagram App",
-      "version": "140.0.0.25.126",
-      "manufacturer": "facebook",
-      "type": "mobile-application",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 142.0.0.22.109 (iPhone11,6; iOS 13_4_1; de_DE; de-DE; scale=3.00; 1242x2688; 214888322)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "iPhone 11,6",
-      "marketingName": "iPhone XS Max",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 2688,
-        "height": 1242,
-        "touch": true,
-        "size": 6.5
-      },
-      "type": "phablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
-      "manufacturer": "apple"
-    },
-    "client": {
-      "name": "Instagram App",
-      "version": "142.0.0.22.109",
-      "manufacturer": "facebook",
-      "type": "mobile-application",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 141.0.0.24.117 (iPhone12,3; iOS 13_5; de_DE; de-DE; scale=3.00; 1125x2436; 213579552) comdirect/1.0 (appVersion:20.5.2;deviceName:apple iphone;deviceType:mobile)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "iPhone 12,3",
-      "marketingName": "iPhone 11 Pro",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 2436,
-        "height": 1125,
-        "touch": true,
-        "size": 5.8
-      },
-      "type": "phablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
-      "manufacturer": "apple"
-    },
-    "client": {
-      "name": "Instagram App",
-      "version": "141.0.0.24.117",
-      "manufacturer": "facebook",
-      "type": "mobile-application",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Instagram 142.0.0.22.109 (iPhone10,6; iOS 13_4_1; de_DE; de-DE; scale=3.00; 1125x2436; 214888322) AppleWebKit/420+ comdirect/1.0 (appVersion:20.5.2)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "iPhone 10,6",
-      "marketingName": "iPhone X",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 2436,
-        "height": 1125,
-        "touch": true,
-        "size": 5.8
-      },
-      "type": "phablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
       "version": "13.4.1",
       "manufacturer": "apple"
     },
@@ -4195,7 +4195,7 @@
     },
     "engine": {
       "name": "WebKit",
-      "version": "420.0.0",
+      "version": "605.1.15",
       "manufacturer": "apple"
     }
   }

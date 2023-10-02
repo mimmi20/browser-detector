@@ -820,5 +820,73 @@
       ]
     },
     "engine": null
+  },
+  "adstxtlab.com crawler": {
+    "name": "adstxtlab.com Crawler",
+    "manufacturer": "jaohawi",
+    "type": "crawler",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "sprinklr": {
+    "name": "Sprinklr",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Sprinklr"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "internet archive special archiver": {
+    "name": "Internet Archive Special Archiver",
+    "manufacturer": "archive.org",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "special_archiver"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "gmail-image-proxy": {
+    "name": "Gmail Image Proxy",
+    "manufacturer": "google",
+    "type": "crawler",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "t3-versions-bot": {
+    "name": "t3versionsBot",
+    "manufacturer": "torben hansen",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "t3versionsBot"
+      ]
+    },
+    "engine": null
+  },
+  "asana": {
+    "name": "Asana",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Asana"
+      ]
+    },
+    "engine": null
   }
 }

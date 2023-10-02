@@ -2878,16 +2878,6 @@
     },
     "engine": "unknown"
   },
-  "gmail-image-proxy": {
-    "name": "Gmail Image Proxy",
-    "manufacturer": "google",
-    "type": "bot",
-    "version": {
-      "class": null,
-      "search": null
-    },
-    "engine": null
-  },
   "goose-extractor": {
     "name": "goose-extractor",
     "manufacturer": "unknown",
@@ -3499,18 +3489,6 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "archive\\-de\\.com"
-      ]
-    },
-    "engine": "unknown"
-  },
-  "internet archive special archiver": {
-    "name": "Internet Archive Special Archiver",
-    "manufacturer": "archive.org",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "special_archiver"
       ]
     },
     "engine": "unknown"
@@ -6636,18 +6614,6 @@
     },
     "engine": "unknown"
   },
-  "sprinklr": {
-    "name": "Sprinklr",
-    "manufacturer": "unknown",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Sprinklr"
-      ]
-    },
-    "engine": "unknown"
-  },
   "spurlbot": {
     "name": "SpurlBot",
     "manufacturer": "unknown",
@@ -9567,16 +9533,6 @@
     },
     "engine": "unknown"
   },
-  "adstxtlab.com crawler": {
-    "name": "adstxtlab.com Crawler",
-    "manufacturer": "jaohawi",
-    "type": "bot",
-    "version": {
-      "class": null,
-      "search": null
-    },
-    "engine": "unknown"
-  },
   "cortex": {
     "name": "cortex",
     "manufacturer": "facebook",
@@ -9648,6 +9604,93 @@
     "version": {
       "class": null,
       "search": null
+    },
+    "engine": "unknown"
+  },
+  "webgains-bot": {
+    "name": "Webgains Bot",
+    "manufacturer": "webgains",
+    "type": "bot",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "generic-spider": {
+    "name": "generic spider",
+    "manufacturer": "unknown",
+    "type": "bot",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "tiny-test-bot": {
+    "name": "Tiny Test Bot",
+    "manufacturer": "unknown",
+    "type": "bot",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "sidetrade indexer bot": {
+    "name": "Sidetrade indexer Bot",
+    "manufacturer": "unknown",
+    "type": "bot",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "ryte-bot": {
+    "name": "RyteBot",
+    "manufacturer": "ryte",
+    "type": "bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "RyteBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "impact radius compliance bot": {
+    "name": "Impact Radius Compliance Bot",
+    "manufacturer": "unknown",
+    "type": "bot",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "screpy-bot": {
+    "name": "ScrepyBot",
+    "manufacturer": "unknown",
+    "type": "bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "screpybot",
+        "ScrepyBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "gais-bot": {
+    "name": "Gaisbot",
+    "manufacturer": "unknown",
+    "type": "bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Gaisbot"
+      ]
     },
     "engine": "unknown"
   }

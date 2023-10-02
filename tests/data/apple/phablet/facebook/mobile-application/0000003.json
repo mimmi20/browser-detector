@@ -25,7 +25,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.1.1",
+      "version": "11.1.2",
       "manufacturer": "apple"
     },
     "client": {
@@ -319,7 +319,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "12.1.0-beta+3",
+      "version": "12.1.0",
       "manufacturer": "apple"
     },
     "client": {
@@ -403,7 +403,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "12.1.0-beta+1",
+      "version": "12.1.0",
       "manufacturer": "apple"
     },
     "client": {
@@ -1243,7 +1243,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "12.1.0-beta+1",
+      "version": "12.1.0",
       "manufacturer": "apple"
     },
     "client": {
@@ -2251,7 +2251,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.1.1",
+      "version": "11.1.2",
       "manufacturer": "apple"
     },
     "client": {
@@ -3469,7 +3469,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "12.2.0",
       "manufacturer": "apple"
     },
     "client": {
@@ -3721,7 +3721,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "12.2.0",
       "manufacturer": "apple"
     },
     "client": {
@@ -3865,48 +3865,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 88.0.0.17.98 (iPhone10,6; iOS 12_2; de_DE; de; scale=3.00; gamut=wide; 1125x2436; 148910483)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "iPhone 10,6",
-      "marketingName": "iPhone X",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 2436,
-        "height": 1125,
-        "touch": true,
-        "size": 5.8
-      },
-      "type": "phablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
-      "manufacturer": "apple"
-    },
-    "client": {
-      "name": "Instagram App",
-      "version": "88.0.0.17.98",
-      "manufacturer": "facebook",
-      "type": "mobile-application",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 12_1_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/16D57 Instagram 88.0.0.17.98 (iPhone11,6; iOS 12_1_4; de_DE; de-DE; scale=3.00; gamut=wide; 1242x2688; 148910483)"
     },
     "device": {
@@ -3937,48 +3895,6 @@
     "client": {
       "name": "Instagram App",
       "version": "88.0.0.17.98",
-      "manufacturer": "facebook",
-      "type": "mobile-application",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 83.0.0.14.111 (iPhone10,5; iOS 12_2; de_DE; de-DE; scale=2.61; gamut=wide; 1080x1920; 144072094)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "iPhone 10,5",
-      "marketingName": "iPhone 8 Plus",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5.5
-      },
-      "type": "phablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
-      "manufacturer": "apple"
-    },
-    "client": {
-      "name": "Instagram App",
-      "version": "83.0.0.14.111",
       "manufacturer": "facebook",
       "type": "mobile-application",
       "isbot": false
@@ -4141,7 +4057,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "12.2.0",
       "manufacturer": "apple"
     },
     "client": {
@@ -4183,12 +4099,96 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "12.2.0",
       "manufacturer": "apple"
     },
     "client": {
       "name": "Facebook Messenger App",
       "version": null,
+      "manufacturer": "facebook",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 12_1_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/16C104 Instagram 82.0.0.15.119 (iPhone7,1; iOS 12_1_2; de_DE; de-DE; scale=2.88; gamut=normal; 1080x1920; 143293442)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPhone 7,1",
+      "marketingName": "iPhone 6 Plus",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "12.1.2",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "Instagram App",
+      "version": "82.0.0.15.119",
+      "manufacturer": "facebook",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 89.0.0.14.100 (iPhone10,6; iOS 12_2; de_AT; de-AT; scale=3.00; gamut=normal; 1125x2436; 149781277)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPhone 10,6",
+      "marketingName": "iPhone X",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 2436,
+        "height": 1125,
+        "touch": true,
+        "size": 5.8
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "12.2.0",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "Instagram App",
+      "version": "89.0.0.14.100",
       "manufacturer": "facebook",
       "type": "mobile-application",
       "isbot": false

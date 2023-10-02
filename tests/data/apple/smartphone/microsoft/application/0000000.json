@@ -235,7 +235,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "8.0.0-beta+5",
+      "version": "10.2.1",
       "manufacturer": "apple"
     },
     "client": {
@@ -277,7 +277,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "12.2.0",
       "manufacturer": "apple"
     },
     "client": {
@@ -295,7 +295,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 12_1_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0 Mobile/16D57 Safari/605.1.15 BingWeb/6.36.8.0"
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/11.0 Mobile/15F79 Safari/605.1.15 BingWeb/6.36.8.0"
     },
     "device": {
       "architecture": null,
@@ -319,7 +319,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "12.1.4",
+      "version": "11.4.0",
       "manufacturer": "apple"
     },
     "client": {
@@ -463,6 +463,48 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.6 Mobile/15E148 Safari/605.1.15 BingSapphire/1.0.390615002"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "14.6.0",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "Bing Search",
+      "version": "1.0.390615002",
+      "manufacturer": "microsoft",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Microsoft Office Word/2.52.803 (iOS/14.7.1; Phone; de-DE; AppStore; Apple/iPhone13,2)"
     },
     "device": {
@@ -547,6 +589,48 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_0_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0.1 Mobile/15E148 Safari/605.1.15 BingSapphire/1.0.390714008"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "15.0.1",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "Bing Search",
+      "version": "1.0.390714008",
+      "manufacturer": "microsoft",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Microsoft Office Word/2.54.1003 (iOS/15.1; Phone; de-DE; AppStore; Apple/iPhone13,2)"
     },
     "device": {
@@ -593,17 +677,17 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
+      "deviceName": "iPhone 14,5",
+      "marketingName": "iPhone 13",
       "manufacturer": "apple",
       "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
-        "width": 480,
-        "height": 320,
+        "width": 2532,
+        "height": 1170,
         "touch": true,
-        "size": 3.5
+        "size": 6.1
       },
       "type": "smartphone",
       "ismobile": true,
@@ -635,17 +719,17 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
+      "deviceName": "iPhone 14,5",
+      "marketingName": "iPhone 13",
       "manufacturer": "apple",
       "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
-        "width": 480,
-        "height": 320,
+        "width": 2532,
+        "height": 1170,
         "touch": true,
-        "size": 3.5
+        "size": 6.1
       },
       "type": "smartphone",
       "ismobile": true,
@@ -668,6 +752,48 @@
     "engine": {
       "name": "WebKit",
       "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.2 Mobile/15E148 Safari/605.1.15 BingSapphire/1.0.410118008"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "16.2.0",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "Bing Search",
+      "version": "1.0.410118008",
+      "manufacturer": "microsoft",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
       "manufacturer": "apple"
     }
   }

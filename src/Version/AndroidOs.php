@@ -71,6 +71,16 @@ final class AndroidOs implements VersionFactoryInterface
             }
         }
 
+        if (preg_match('/Linux; Android (?P<version>\d+[\d\.]*);/', $useragent, $matches)) {
+            try {
+                return $this->versionBuilder->set($matches['version']);
+            } catch (NotNumericException $e) {
+                $this->logger->info($e);
+
+                return new NullVersion();
+            }
+        }
+
         if (preg_match('/Android \(\d+\/(?P<version>\d+[\d\.]+)/', $useragent, $matches)) {
             try {
                 return $this->versionBuilder->set($matches['version']);

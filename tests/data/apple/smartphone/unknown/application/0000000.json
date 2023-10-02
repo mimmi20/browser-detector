@@ -235,7 +235,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "10.3.0-beta+1",
+      "version": "10.3.0",
       "manufacturer": "apple"
     },
     "client": {
@@ -781,7 +781,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.0.0-beta+2",
+      "version": "11.0.0",
       "manufacturer": "apple"
     },
     "client": {
@@ -823,7 +823,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0-beta+3",
+      "version": "11.3.0",
       "manufacturer": "apple"
     },
     "client": {
@@ -949,7 +949,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "10.3.0-beta+1",
+      "version": "10.3.0",
       "manufacturer": "apple"
     },
     "client": {
@@ -1033,7 +1033,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "12.0.0-beta+2",
+      "version": "12.0.0",
       "manufacturer": "apple"
     },
     "client": {
@@ -1214,6 +1214,48 @@
     "engine": {
       "name": "WebKit",
       "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 12_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.3 Mobile/15E148 Safari/ RDDocuments/6.9.1.622"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "12.3.0",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "RDDocuments App",
+      "version": "6.9.1.622",
+      "manufacturer": "unknown",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
       "manufacturer": "apple"
     }
   },
