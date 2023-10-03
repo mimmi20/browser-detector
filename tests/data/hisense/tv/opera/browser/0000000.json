@@ -127,6 +127,48 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.0.0; HAT4KDTV Build/OTT1.180130.001) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36 OPR/46.0.2207.0 OMI/4.13.2.294.Martell-5.19 Model/Hisense-MT5660"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "HAT4KDTV",
+      "marketingName": "HAT4KDTV",
+      "manufacturer": "hisense",
+      "brand": "hisense",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 3840,
+        "height": 2160,
+        "touch": false,
+        "size": 58
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Opera Devices",
+      "version": "4.13.2.294",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "67.0.3396.99",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.140 Safari/537.36 OPR/46.0.2207.0 OMI/4.21.1.75.Honey.64 HbbTV/1.5.1 ( DRM;Hisense;SmartTV_2021;V0000.01.00E.K1111;50ADEVTOOL;SmartTV_2021;) FVC/5.0 (Hisense;SmartTV_2021;) LaTivu_1.0.1_2021"
     },
     "device": {
@@ -206,6 +248,132 @@
     "engine": {
       "name": "Blink",
       "version": "84.0.4147.140",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36 OPR/40.0.2207.0 OMI/4.9.0.183.Catcher.151 Model/Hisense-MSD6586 (Hisense;HU55A6107UW;V0000.01.00a.N0412) MST6586"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "HU55A6107UW",
+      "marketingName": "HU55A6107UW",
+      "manufacturer": "hisense",
+      "brand": "hisense",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 3840,
+        "height": 2160,
+        "touch": false,
+        "size": 54.6
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Maemo",
+      "marketingName": "Maemo",
+      "version": null,
+      "manufacturer": "linux-foundation"
+    },
+    "client": {
+      "name": "Opera Devices",
+      "version": "4.9.0.183",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "53.0.2785.143",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36 OPR/40.0.2207.0 OMI/4.9.0.183.Catcher.151 Model/Hisense-MSD6586 (Hisense;HU55A6100UW;V0000.01.00a.N0412) MST6586"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "HU55A6100UW",
+      "marketingName": "HU55A6100UW",
+      "manufacturer": "hisense",
+      "brand": "hisense",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 3840,
+        "height": 2160,
+        "touch": false,
+        "size": 54.6
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Maemo",
+      "marketingName": "Maemo",
+      "version": null,
+      "manufacturer": "linux-foundation"
+    },
+    "client": {
+      "name": "Opera Devices",
+      "version": "4.9.0.183",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "53.0.2785.143",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36 OPR/40.0.2207.0 OMI/4.9.0.183.Catcher.151 Model/Hisense-MSD6586 (Hisense;HU50A6107UW;V0000.01.00a.N0412) MST6586"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "HU50A6107UW",
+      "marketingName": "HU50A6107UW",
+      "manufacturer": "hisense",
+      "brand": "hisense",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 3840,
+        "height": 2160,
+        "touch": false,
+        "size": 49.5
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Maemo",
+      "marketingName": "Maemo",
+      "version": null,
+      "manufacturer": "linux-foundation"
+    },
+    "client": {
+      "name": "Opera Devices",
+      "version": "4.9.0.183",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "53.0.2785.143",
       "manufacturer": "google"
     }
   }

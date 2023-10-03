@@ -4159,21 +4159,21 @@
   },
   {
     "headers": {
-      "user-agent": "Callpod Keeper for Android 1.0 (10.6.1/278) Dalvik/2.1.0 (Linux; U; Android 5.1.1; SM-P600 Build/LMY47X)"
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.4; SM-T113 Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.92 Safari/537.36"
     },
     "device": {
       "architecture": null,
-      "deviceName": "SM-P600",
-      "marketingName": "Galaxy Note 10.1 2014 Edition Wi-Fi",
+      "deviceName": "SM-T113",
+      "marketingName": "Galaxy Tab 3 7.0 Lite",
       "manufacturer": "samsung",
       "brand": "samsung",
       "dualOrientation": null,
       "simCount": null,
       "display": {
-        "width": 2560,
-        "height": 1600,
+        "width": 1024,
+        "height": 600,
         "touch": true,
-        "size": 10.1
+        "size": 7
       },
       "type": "tablet",
       "ismobile": true,
@@ -4183,20 +4183,20 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "1.0.0",
+      "version": "4.4.4",
       "manufacturer": "google"
     },
     "client": {
-      "name": "Dalvik",
-      "version": "2.1.0",
+      "name": "Chrome",
+      "version": "59.0.3071.92",
       "manufacturer": "google",
       "type": "browser",
       "isbot": false
     },
     "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
+      "name": "Blink",
+      "version": "59.0.3071.92",
+      "manufacturer": "google"
     }
   }
 ]
