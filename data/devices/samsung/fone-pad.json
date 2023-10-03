@@ -2929,11 +2929,27 @@
   },
   "samsung sm-t825": {
     "deviceName": "SM-T825",
-    "marketingName": "Galaxy Tab S3 (9.7) LTE",
+    "marketingName": "Galaxy Tab S3 (9.7, LTE)",
     "manufacturer": "samsung",
     "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2048,
+      "height": 1536,
+      "touch": true,
+      "size": 9.7
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "samsung sm-t825y": {
+    "deviceName": "SM-T825Y",
+    "marketingName": "Galaxy Tab S3 (9.7, LTE)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 2048,
       "height": 1536,
@@ -3281,7 +3297,7 @@
   },
   "samsung sm-t515": {
     "deviceName": "SM-T515",
-    "marketingName": "Tab A 10.1 LTE (2019)",
+    "marketingName": "Galaxy Tab A 10.1 LTE (2019)",
     "manufacturer": "samsung",
     "brand": "samsung",
     "dualOrientation": null,
@@ -3355,6 +3371,22 @@
       "height": 1200,
       "touch": true,
       "size": 10.4
+    },
+    "type": "fone-pad",
+    "platform": null
+  },
+  "samsung sm-t725": {
+    "deviceName": "SM-T725",
+    "marketingName": "Galaxy Tab S5e LTE",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2560,
+      "height": 1600,
+      "touch": true,
+      "size": 10.5
     },
     "type": "fone-pad",
     "platform": null

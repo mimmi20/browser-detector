@@ -513,7 +513,7 @@
   },
   "samsung sm-t230nu": {
     "deviceName": "SM-T230NU",
-    "marketingName": "Galaxy Tab 4 7.0 (Wi-Fi) 8GB",
+    "marketingName": "Galaxy Tab 4 7.0 Wi-Fi 8GB",
     "manufacturer": "samsung",
     "brand": "samsung",
     "dualOrientation": null,
@@ -1169,11 +1169,11 @@
   },
   "samsung sm-t820": {
     "deviceName": "SM-T820",
-    "marketingName": "Galaxy Tab S3 (9.7)",
+    "marketingName": "Galaxy Tab S3 (9.7, Wi-Fi)",
     "manufacturer": "samsung",
     "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 0,
     "display": {
       "width": 2048,
       "height": 1536,
@@ -1185,11 +1185,11 @@
   },
   "samsung sm-t820n": {
     "deviceName": "SM-T820N",
-    "marketingName": "Galaxy Tab S3 (9.7)",
+    "marketingName": "Galaxy Tab S3 (9.7, Wi-Fi)",
     "manufacturer": "samsung",
     "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 0,
     "display": {
       "width": 2048,
       "height": 1536,
@@ -1217,27 +1217,11 @@
   },
   "samsung sm-t720": {
     "deviceName": "SM-T720",
-    "marketingName": "Galaxy Tab S5e",
+    "marketingName": "Galaxy Tab S5e Wi-Fi",
     "manufacturer": "samsung",
     "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
-    "display": {
-      "width": 2560,
-      "height": 1600,
-      "touch": true,
-      "size": 10.5
-    },
-    "type": "tablet",
-    "platform": null
-  },
-  "samsung sm-t725": {
-    "deviceName": "SM-T725",
-    "marketingName": "Galaxy Tab S5e",
-    "manufacturer": "samsung",
-    "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 0,
     "display": {
       "width": 2560,
       "height": 1600,
@@ -1249,7 +1233,7 @@
   },
   "samsung sm-t860": {
     "deviceName": "SM-T860",
-    "marketingName": "Galaxy Tab S6 (Wi-Fi)",
+    "marketingName": "Galaxy Tab S6 Wi-Fi",
     "manufacturer": "samsung",
     "brand": "samsung",
     "dualOrientation": null,
@@ -1281,7 +1265,7 @@
   },
   "samsung sm-t870": {
     "deviceName": "SM-T870",
-    "marketingName": "Galaxy Tab S7 (Wi-Fi)",
+    "marketingName": "Galaxy Tab S7 Wi-Fi",
     "manufacturer": "samsung",
     "brand": "samsung",
     "dualOrientation": null,
@@ -1297,7 +1281,7 @@
   },
   "samsung sm-t970": {
     "deviceName": "SM-T970",
-    "marketingName": "Galaxy Tab S7 PlusWi-Fi",
+    "marketingName": "Galaxy Tab S7 Plus Wi-Fi",
     "manufacturer": "samsung",
     "brand": "samsung",
     "dualOrientation": null,
@@ -1393,7 +1377,7 @@
   },
   "samsung sm-t510": {
     "deviceName": "SM-T510",
-    "marketingName": "Tab A 10.1 Wi-Fi (2019)",
+    "marketingName": "Galaxy Tab A 10.1 Wi-Fi (2019)",
     "manufacturer": "samsung",
     "brand": "samsung",
     "dualOrientation": null,

@@ -465,7 +465,7 @@
   },
   "xiaomi m2006c3lvg": {
     "deviceName": "M2006C3LVG",
-    "marketingName": "Redmi 9AT Standard Edition",
+    "marketingName": "Redmi 9AT",
     "manufacturer": "xiaomi",
     "brand": "xiaomi",
     "dualOrientation": true,
@@ -514,22 +514,6 @@
   "xiaomi m2006c3mng": {
     "deviceName": "M2006C3MNG",
     "marketingName": "Redmi 9C NFC (Global)",
-    "manufacturer": "xiaomi",
-    "brand": "xiaomi",
-    "dualOrientation": true,
-    "simCount": 2,
-    "display": {
-      "width": 1600,
-      "height": 720,
-      "touch": true,
-      "size": 6.5
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
-  "xiaomi m2006c3lvg": {
-    "deviceName": "M2006C3LVG",
-    "marketingName": "Redmi 9AT",
     "manufacturer": "xiaomi",
     "brand": "xiaomi",
     "dualOrientation": true,
@@ -907,6 +891,22 @@
       "height": 1440,
       "touch": true,
       "size": 6.73
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "xiaomi 13": {
+    "deviceName": "13",
+    "marketingName": "13",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.36
     },
     "type": "phablet",
     "platform": "android"
