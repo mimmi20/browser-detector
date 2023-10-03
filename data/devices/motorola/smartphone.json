@@ -2516,6 +2516,22 @@
     "marketingName": "Moto G5 Plus",
     "manufacturer": "motorola",
     "brand": "motorola",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": 5.2
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "motorola xt1681": {
+    "deviceName": "XT1681",
+    "marketingName": "Moto G5 Plus",
+    "manufacturer": "motorola",
+    "brand": "motorola",
     "dualOrientation": null,
     "simCount": null,
     "display": {
@@ -2532,8 +2548,8 @@
     "marketingName": "Moto G5 Plus",
     "manufacturer": "motorola",
     "brand": "motorola",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 1920,
       "height": 1080,
@@ -2545,11 +2561,11 @@
   },
   "motorola xt1686": {
     "deviceName": "XT1686",
-    "marketingName": "Moto G5 Plus",
+    "marketingName": "Moto G5 Plus (India)",
     "manufacturer": "motorola",
     "brand": "motorola",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1920,
       "height": 1080,
@@ -2561,11 +2577,11 @@
   },
   "motorola xt1687": {
     "deviceName": "XT1687",
-    "marketingName": "Moto G5 Plus",
+    "marketingName": "Moto G5 Plus (USA)",
     "manufacturer": "motorola",
     "brand": "motorola",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1920,
       "height": 1080,
@@ -4859,6 +4875,70 @@
       "height": 720,
       "touch": true,
       "size": 4.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "motorola edge 30 fusion": {
+    "deviceName": "Edge 30 Fusion",
+    "marketingName": "Edge 30 Fusion",
+    "manufacturer": "motorola",
+    "brand": "motorola",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.55
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "motorola thinkphone": {
+    "deviceName": "ThinkPhone",
+    "marketingName": "ThinkPhone",
+    "manufacturer": "motorola",
+    "brand": "motorola",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.6
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "motorola moto g200 5g": {
+    "deviceName": "Moto G200 5G",
+    "marketingName": "Moto G200 5G",
+    "manufacturer": "motorola",
+    "brand": "motorola",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2460,
+      "height": 1080,
+      "touch": true,
+      "size": 6.8
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "motorola moto e7 plus": {
+    "deviceName": "Moto E7 Plus",
+    "marketingName": "Moto E7 Plus",
+    "manufacturer": "motorola",
+    "brand": "motorola",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1600,
+      "height": 720,
+      "touch": true,
+      "size": 6.5
     },
     "type": "smartphone",
     "platform": "android"

@@ -1,6 +1,48 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (X11; U; CrOS i686 0.9.128; en-US) AppleWebKit/534.10 (KHTML, like Gecko) Chrome/8.0.552.339 Safari/534.10"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "ChromeOS",
+      "marketingName": "ChromeOS",
+      "version": "0.9.128",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "8.0.552.339",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.10.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/50.0.2661.86 Safari/537.36"
     },
     "device": {
@@ -317,10 +359,10 @@
       "bits": null
     },
     "os": {
-      "name": "FreeBSD",
-      "marketingName": "FreeBSD",
+      "name": "Linux",
+      "marketingName": "Linux",
       "version": null,
-      "manufacturer": "free-bsd-foundation"
+      "manufacturer": "linux-foundation"
     },
     "client": {
       "name": "Chrome",
@@ -1745,10 +1787,10 @@
       "bits": null
     },
     "os": {
-      "name": "FreeBSD",
-      "marketingName": "FreeBSD",
+      "name": "Linux",
+      "marketingName": "Linux",
       "version": null,
-      "manufacturer": "free-bsd-foundation"
+      "manufacturer": "linux-foundation"
     },
     "client": {
       "name": "Chrome",
@@ -2249,10 +2291,10 @@
       "bits": null
     },
     "os": {
-      "name": "FreeBSD",
-      "marketingName": "FreeBSD",
+      "name": "Linux",
+      "marketingName": "Linux",
       "version": null,
-      "manufacturer": "free-bsd-foundation"
+      "manufacturer": "linux-foundation"
     },
     "client": {
       "name": "Chrome",
@@ -2333,10 +2375,10 @@
       "bits": null
     },
     "os": {
-      "name": "OpenBSD",
-      "marketingName": "OpenBSD",
+      "name": "Linux",
+      "marketingName": "Linux",
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "linux-foundation"
     },
     "client": {
       "name": "Chrome",
@@ -4154,48 +4196,6 @@
     "engine": {
       "name": "Blink",
       "version": "38.0.876.0",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Windows; U; Windows 95; en-US) AppleWebKit/533.4 (KHTML, like Gecko) Chrome/43.0.2357.81 Anonymisiert durch AlMiSoft Browser-Anonymisierer 25022451"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Windows Desktop",
-      "marketingName": "Windows Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Windows 95",
-      "marketingName": "Windows 95",
-      "version": "95.0.0",
-      "manufacturer": "microsoft"
-    },
-    "client": {
-      "name": "Chrome",
-      "version": "43.0.2357.81",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "43.0.2357.81",
       "manufacturer": "google"
     }
   }

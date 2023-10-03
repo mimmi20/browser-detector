@@ -723,8 +723,8 @@
       "marketingName": "8 Pro (5G, Europe)",
       "manufacturer": "bbk",
       "brand": "oneplus",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 3168,
         "height": 1440,
@@ -849,8 +849,8 @@
       "marketingName": "8 Pro (5G, Europe)",
       "manufacturer": "bbk",
       "brand": "oneplus",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 3168,
         "height": 1440,
@@ -1227,8 +1227,8 @@
       "marketingName": "8 Pro (5G, Europe)",
       "manufacturer": "bbk",
       "brand": "oneplus",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 3168,
         "height": 1440,
@@ -1983,8 +1983,8 @@
       "marketingName": "8 Pro (5G, Europe)",
       "manufacturer": "bbk",
       "brand": "oneplus",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 3168,
         "height": 1440,
@@ -2025,8 +2025,8 @@
       "marketingName": "8 Pro (5G, Europe)",
       "manufacturer": "bbk",
       "brand": "oneplus",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 3168,
         "height": 1440,
@@ -2235,8 +2235,8 @@
       "marketingName": "8 Pro (5G, Europe)",
       "manufacturer": "bbk",
       "brand": "oneplus",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 3168,
         "height": 1440,
@@ -2487,8 +2487,8 @@
       "marketingName": "8 Pro (5G, Europe)",
       "manufacturer": "bbk",
       "brand": "oneplus",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 3168,
         "height": 1440,
@@ -2798,8 +2798,8 @@
       "marketingName": "8 Pro (5G, Europe)",
       "manufacturer": "bbk",
       "brand": "oneplus",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 3168,
         "height": 1440,
@@ -2966,8 +2966,8 @@
       "marketingName": "8 Pro (5G, Europe)",
       "manufacturer": "bbk",
       "brand": "oneplus",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 3168,
         "height": 1440,
@@ -3344,8 +3344,8 @@
       "marketingName": "8 Pro (5G, Europe)",
       "manufacturer": "bbk",
       "brand": "oneplus",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 3168,
         "height": 1440,
@@ -3554,8 +3554,8 @@
       "marketingName": "8 Pro (5G, Europe)",
       "manufacturer": "bbk",
       "brand": "oneplus",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 3168,
         "height": 1440,
@@ -3734,8 +3734,8 @@
       "marketingName": "8 Pro (5G, Europe)",
       "manufacturer": "bbk",
       "brand": "oneplus",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 3168,
         "height": 1440,
@@ -3931,6 +3931,174 @@
     "engine": {
       "name": "Blink",
       "version": "114.0.5735.196",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; IN2023 Build/RKQ1.211119.001) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.5563.116 Mobile Safari/537.36 OPX/2.1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "IN2023",
+      "marketingName": "8 Pro (5G, Europe)",
+      "manufacturer": "bbk",
+      "brand": "oneplus",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 3168,
+        "height": 1440,
+        "touch": true,
+        "size": 6.78
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Opera GX",
+      "version": "2.1.0",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "111.0.5563.116",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 11; RMX2101 Build/RKQ1.201217.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/116.0.0.0 Mobile Safari/537.36 OPR/73.0.2254.68181"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "RMX2101",
+      "marketingName": "C17",
+      "manufacturer": "bbk",
+      "brand": "realme",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1600,
+        "height": 720,
+        "touch": true,
+        "size": 6.5
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "version": "73.0.2254.68181",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "116.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; HD1903) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.167 Mobile Safari/537.36 OPR/77.2.4095.74586"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "HD1903",
+      "marketingName": "7T Standard Edition Dual SIM",
+      "manufacturer": "bbk",
+      "brand": "oneplus",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.6
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "version": "77.2.4095.74586",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "115.0.5790.167",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; CPH2025) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.167 Mobile Safari/537.36 OPR/77.0.4095.74331"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "CPH2025",
+      "marketingName": "Find X2 Pro 5G",
+      "manufacturer": "bbk",
+      "brand": "oppo",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 3168,
+        "height": 1440,
+        "touch": true,
+        "size": 6.7
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "version": "77.0.4095.74331",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "115.0.5790.167",
       "manufacturer": "google"
     }
   }

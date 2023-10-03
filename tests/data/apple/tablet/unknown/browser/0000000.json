@@ -485,8 +485,8 @@
       "bits": null
     },
     "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
       "version": "13.1.2",
       "manufacturer": "apple"
     },
@@ -527,8 +527,8 @@
       "bits": null
     },
     "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
       "version": "13.1.3",
       "manufacturer": "apple"
     },
@@ -542,48 +542,6 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPad; CPU OS 13_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 (Ecosia ios@4.0.10.813) Safari/605 comdirect/1.0 (appVersion:20.3.0;deviceName:apple ipad;deviceType:tablet)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "iPad",
-      "marketingName": "iPad",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1024,
-        "height": 768,
-        "touch": true,
-        "size": 9.7
-      },
-      "type": "tablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
-      "manufacturer": "apple"
-    },
-    "client": {
-      "name": "Ecosia",
-      "version": "4.0.10.813",
-      "manufacturer": "unknown",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
       "manufacturer": "apple"
     }
   },
@@ -611,8 +569,8 @@
       "bits": null
     },
     "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
       "version": "13.4.0",
       "manufacturer": "apple"
     },
@@ -673,6 +631,48 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 14_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Version/13.1 (Ecosia ios@4.0.25.852) Safari/604.1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPad",
+      "marketingName": "iPad",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1024,
+        "height": 768,
+        "touch": true,
+        "size": 9.7
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "14.0.0",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "Ecosia",
+      "version": "4.0.25.852",
+      "manufacturer": "unknown",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "RubyBrowser/45.8.14 (iPad; iOS 14.0.1; Scale/2.00)"
     },
     "device": {
@@ -695,8 +695,8 @@
       "bits": null
     },
     "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
       "version": "14.0.1",
       "manufacturer": "apple"
     },
@@ -710,48 +710,6 @@
     "engine": {
       "name": "WebKit",
       "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPad; CPU OS 14_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) (Ecosia ios@4.0.6.795)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "iPad",
-      "marketingName": "iPad",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1024,
-        "height": 768,
-        "touch": true,
-        "size": 9.7
-      },
-      "type": "tablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "14.1.0",
-      "manufacturer": "apple"
-    },
-    "client": {
-      "name": "Ecosia",
-      "version": "4.0.6.795",
-      "manufacturer": "unknown",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
       "manufacturer": "apple"
     }
   },
@@ -779,8 +737,8 @@
       "bits": null
     },
     "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
       "version": "14.2.0",
       "manufacturer": "apple"
     },
@@ -863,8 +821,8 @@
       "bits": null
     },
     "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
       "version": "14.3.0",
       "manufacturer": "apple"
     },
@@ -925,6 +883,48 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 15_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Version/13.1 (Ecosia ios@4.1.7.870) Safari/604.1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPad",
+      "marketingName": "iPad",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1024,
+        "height": 768,
+        "touch": true,
+        "size": 9.7
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "15.1.0",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "Ecosia",
+      "version": "4.1.7.870",
+      "manufacturer": "unknown",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "RubyBrowser/46.3.30 (iPad; iOS 15.1; Scale/2.00)"
     },
     "device": {
@@ -947,8 +947,8 @@
       "bits": null
     },
     "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
       "version": "15.1.0",
       "manufacturer": "apple"
     },

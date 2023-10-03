@@ -40,5 +40,47 @@
       "version": "537.22.0",
       "manufacturer": "apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; 32LEA73T2SM) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.185 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "32LEA73T2SM",
+      "marketingName": "32LEA73T2SM",
+      "manufacturer": "sony",
+      "brand": "sony",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 1366,
+        "height": 768,
+        "touch": false,
+        "size": 32
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "86.0.4240.185",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "86.0.4240.185",
+      "manufacturer": "google"
+    }
   }
 ]

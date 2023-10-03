@@ -140,6 +140,7 @@ final class MobileDeviceTest extends TestCase
             ['NetFront/4.2 (BMP 1.0.4; U; en-us; LG; NetFront/4.2/AMB) Boost LG272 MMP/2.0 Profile/MIDP-2.1 Configuration/CLDC-1.1'],
             ['Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; LG; LG-C900)'],
             ['POLARIS/6.01 (BREW 3.1.5; U; en-us; LG; LX265; POLARIS/6.01/WAP) MMP/2.0 profile/MIDP-2.1 Configuration/CLDC-1.1'],
+            ['Mozilla/5.0 (CLT-L29 19.0.0.300) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36'],
         ];
     }
 
@@ -214,6 +215,7 @@ final class MobileDeviceTest extends TestCase
             ['Mozilla/5.0 (Unknown; Linux armv7l) AppleWebKit/537.1+ Hybridcast/1.0(;00E091;LGwebOSTV;1;0;)0'],
             ['Mozilla/5.0 (Unknown; Linux armv7l) AppleWebKit/537.1+ (KHTML, like Gecko) Safari/537.1+ OHTV/1.0 ( ;LGE ;GLOBAL-PLAT4 ;02.22.01 ;0x00000001'],
             ['Mozilla/5.0 (iPhone; CPU iPhone OS 8_0_2 like Mac OS X) (Windows NT 6.1; WOW64) AppleWebKit/600.1.4 (KHTML, like Gecko) Mobile Safari/537.36'],
+            ['Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.203 OpenWave/96.4.5253.54'],
         ];
     }
 }

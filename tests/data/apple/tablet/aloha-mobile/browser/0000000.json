@@ -211,7 +211,91 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 13_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Version/13.3 Safari/604.1 AlohaBrowser/2.16.0b7"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPad",
+      "marketingName": "iPad",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1024,
+        "height": 768,
+        "touch": true,
+        "size": 9.7
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "13.3.0",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "Aloha Browser",
+      "version": "2.16.0-beta+7",
+      "manufacturer": "aloha-mobile",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "AlohaBrowser/2.21.3 (iPad; iOS 13.5.1; Scale/2.00)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPad",
+      "marketingName": "iPad",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1024,
+        "height": 768,
+        "touch": true,
+        "size": 9.7
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "13.5.1",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "Aloha Browser",
+      "version": "2.21.3",
+      "manufacturer": "aloha-mobile",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPad; CPU iPhone OS 10_3_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Version/10.3.3 Safari/605.1.15 AlohaBrowser/2.20.0"
     },
     "device": {
       "architecture": null,
@@ -235,19 +319,61 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "13.5.1",
+      "version": "10.3.3",
       "manufacturer": "apple"
     },
     "client": {
       "name": "Aloha Browser",
-      "version": "2.21.3",
+      "version": "2.20.0",
       "manufacturer": "aloha-mobile",
       "type": "browser",
       "isbot": false
     },
     "engine": {
       "name": "WebKit",
-      "version": null,
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPad; CPU iPhone OS 14_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Version/14.1 Safari/605.1.15 AlohaBrowser/2.23.4"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPad",
+      "marketingName": "iPad",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1024,
+        "height": 768,
+        "touch": true,
+        "size": 9.7
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "14.1.0",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "Aloha Browser",
+      "version": "2.23.4",
+      "manufacturer": "aloha-mobile",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
       "manufacturer": "apple"
     }
   },
@@ -275,8 +401,8 @@
       "bits": null
     },
     "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
       "version": "14.1.0",
       "manufacturer": "apple"
     },
@@ -317,9 +443,9 @@
       "bits": null
     },
     "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "14.2.0",
       "manufacturer": "apple"
     },
     "client": {
@@ -359,8 +485,8 @@
       "bits": null
     },
     "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
       "version": "14.2.0",
       "manufacturer": "apple"
     },
@@ -374,6 +500,48 @@
     "engine": {
       "name": "WebKit",
       "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPad; CPU iPhone OS 12_5_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Version/12.5.4 Safari/605.1.15 AlohaBrowser/3.2.5"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPad",
+      "marketingName": "iPad",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1024,
+        "height": 768,
+        "touch": true,
+        "size": 9.7
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "12.5.4",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "Aloha Browser",
+      "version": "3.2.5",
+      "manufacturer": "aloha-mobile",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
       "manufacturer": "apple"
     }
   },
@@ -443,8 +611,8 @@
       "bits": null
     },
     "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
       "version": "15.1.0",
       "manufacturer": "apple"
     },
@@ -485,9 +653,9 @@
       "bits": null
     },
     "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "15.5.0",
       "manufacturer": "apple"
     },
     "client": {
@@ -527,8 +695,8 @@
       "bits": null
     },
     "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
       "version": "15.4.1",
       "manufacturer": "apple"
     },
@@ -542,6 +710,48 @@
     "engine": {
       "name": "WebKit",
       "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPad; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Version/15.0 Safari/605.1.15 AlohaBrowser/2.22.3"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPad",
+      "marketingName": "iPad",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1024,
+        "height": 768,
+        "touch": true,
+        "size": 9.7
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "15.0.0",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "Aloha Browser",
+      "version": "2.22.3",
+      "manufacturer": "aloha-mobile",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
       "manufacturer": "apple"
     }
   },
@@ -569,8 +779,8 @@
       "bits": null
     },
     "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
       "version": "15.0.0",
       "manufacturer": "apple"
     },
@@ -584,6 +794,48 @@
     "engine": {
       "name": "WebKit",
       "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPad; CPU iPhone OS 16_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Version/16.3.1 Safari/605.1.15 AlohaBrowser/4.5.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPad",
+      "marketingName": "iPad",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1024,
+        "height": 768,
+        "touch": true,
+        "size": 9.7
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "16.3.1",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "Aloha Browser",
+      "version": "4.5.0",
+      "manufacturer": "aloha-mobile",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
       "manufacturer": "apple"
     }
   }

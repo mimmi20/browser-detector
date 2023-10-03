@@ -1261,6 +1261,48 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; Pixel 4 XL) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.96 Mobile Safari/537.36 comdirect/1.0 (appVersion:19.11.0;deviceName:google pixel xl;deviceType:mobile)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Pixel 4 XL",
+      "marketingName": "Pixel 4 XL",
+      "manufacturer": "google",
+      "brand": "google",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 3040,
+        "height": 1440,
+        "touch": true,
+        "size": 6.3
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "78.0.3904.96",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "78.0.3904.96",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 10; Pixel 3 XL Build/QP1A.191105.003; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.96 Mobile Safari/537.36"
     },
     "device": {
@@ -1391,17 +1433,17 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "Pixel",
-      "marketingName": "Pixel",
+      "deviceName": "Pixel 4 XL",
+      "marketingName": "Pixel 4 XL",
       "manufacturer": "google",
       "brand": "google",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
-        "width": 1920,
-        "height": 1080,
+        "width": 3040,
+        "height": 1440,
         "touch": true,
-        "size": 5
+        "size": 6.3
       },
       "type": "smartphone",
       "ismobile": true,
@@ -1433,17 +1475,17 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "Pixel",
-      "marketingName": "Pixel",
+      "deviceName": "Pixel 4 XL",
+      "marketingName": "Pixel 4 XL",
       "manufacturer": "google",
       "brand": "google",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
-        "width": 1920,
-        "height": 1080,
+        "width": 3040,
+        "height": 1440,
         "touch": true,
-        "size": 5
+        "size": 6.3
       },
       "type": "smartphone",
       "ismobile": true,
@@ -1475,17 +1517,17 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "Pixel",
-      "marketingName": "Pixel",
+      "deviceName": "Pixel 4 XL",
+      "marketingName": "Pixel 4 XL",
       "manufacturer": "google",
       "brand": "google",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
-        "width": 1920,
-        "height": 1080,
+        "width": 3040,
+        "height": 1440,
         "touch": true,
-        "size": 5
+        "size": 6.3
       },
       "type": "smartphone",
       "ismobile": true,
@@ -1727,17 +1769,17 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "Pixel",
-      "marketingName": "Pixel",
+      "deviceName": "Pixel 4 XL",
+      "marketingName": "Pixel 4 XL",
       "manufacturer": "google",
       "brand": "google",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
-        "width": 1920,
-        "height": 1080,
+        "width": 3040,
+        "height": 1440,
         "touch": true,
-        "size": 5
+        "size": 6.3
       },
       "type": "smartphone",
       "ismobile": true,
@@ -2063,6 +2105,48 @@
     },
     "device": {
       "architecture": null,
+      "deviceName": "Pixel 4 XL",
+      "marketingName": "Pixel 4 XL",
+      "manufacturer": "google",
+      "brand": "google",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 3040,
+        "height": 1440,
+        "touch": true,
+        "size": 6.3
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Android WebView",
+      "version": "79.0.3945.93",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "79.0.3945.93",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; Pixel 4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.93 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
       "deviceName": "Pixel",
       "marketingName": "Pixel",
       "manufacturer": "google",
@@ -2087,7 +2171,7 @@
       "manufacturer": "google"
     },
     "client": {
-      "name": "Android WebView",
+      "name": "Chrome",
       "version": "79.0.3945.93",
       "manufacturer": "google",
       "type": "browser",
@@ -4112,90 +4196,6 @@
     "engine": {
       "name": "Blink",
       "version": "66.0.3359.126",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 8.0.0; Pixel XL Build/OPR3.170623.013; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/62.0.3202.84 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Pixel XL",
-      "marketingName": "Pixel XL",
-      "manufacturer": "google",
-      "brand": "google",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 2560,
-        "height": 1440,
-        "touch": true,
-        "size": 5.5
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "8.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Android WebView",
-      "version": "62.0.3202.84",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "62.0.3202.84",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 8.0.0; Pixel 2 Build/OPD1.170816.025; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/62.0.3202.84 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Pixel 2",
-      "marketingName": "Pixel 2",
-      "manufacturer": "google",
-      "brand": "google",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "8.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Android WebView",
-      "version": "62.0.3202.84",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "62.0.3202.84",
       "manufacturer": "google"
     }
   }

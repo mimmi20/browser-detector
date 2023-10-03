@@ -1,6 +1,90 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 9_3_5 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G36 [FBAN/FBIOS;FBAV/55.0.0.40.137;FBBV/29582208;FBRV/0;FBDV/iPad5,3;FBMD/iPad;FBSN/iPhone OS;FBSV/9.3.5;FBSS/2;FBCR/;FBID/tablet;FBLC/nl_NL;FBOP/5]"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPad 5,3",
+      "marketingName": "iPad Air 2",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 2048,
+        "height": 1536,
+        "touch": true,
+        "size": 9.7
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "9.3.5",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "Facebook App",
+      "version": "55.0.0.40.137",
+      "manufacturer": "facebook",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "601.1.46",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 9_3_2 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13F69 [FBAN/FBIOS;FBAV/58.0.0.49.140;FBBV/32437772;FBRV/0;FBDV/iPad5,3;FBMD/iPad;FBSN/iPhone OS;FBSV/9.3.2;FBSS/2;FBCR/;FBID/tablet;FBLC/en_GB;FBOP/5]"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPad 5,3",
+      "marketingName": "iPad Air 2",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 2048,
+        "height": 1536,
+        "touch": true,
+        "size": 9.7
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "9.3.2",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "Facebook App",
+      "version": "58.0.0.49.140",
+      "manufacturer": "facebook",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "601.1.46",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (iPad; CPU OS 9_3_5 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G36 [FBAN/FBIOS;FBAV/88.1.0.64.70;FBBV/55330959;FBDV/iPad2,5;FBMD/iPad;FBSN/iPhone OS;FBSV/9.3.5;FBSS/1;FBCR/;FBID/tablet;FBLC/en_GB;FBOP/5;FBRV/55330959]"
     },
     "device": {
@@ -2713,7 +2797,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "10.1.0-beta+1",
+      "version": "10.1.0",
       "manufacturer": "apple"
     },
     "client": {
@@ -4105,90 +4189,6 @@
     "client": {
       "name": "Facebook Messenger App",
       "version": "87.0.0.24.69",
-      "manufacturer": "facebook",
-      "type": "mobile-application",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "601.1.46",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPad; CPU OS 10_2_1 like Mac OS X) AppleWebKit/602.4.6 (KHTML, like Gecko) Mobile/14D27 [FBAN/FBIOS;FBAV/80.0.0.43.69;FBBV/49927368;FBRV/49927368;FBDV/iPad5,3;FBMD/iPad;FBSN/iOS;FBSV/10.2.1;FBSS/2;FBCR/;FBID/tablet;FBLC/en_US;FBOP/45]"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "iPad 5,3",
-      "marketingName": "iPad Air 2",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 2048,
-        "height": 1536,
-        "touch": true,
-        "size": 9.7
-      },
-      "type": "tablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "10.2.1",
-      "manufacturer": "apple"
-    },
-    "client": {
-      "name": "Facebook App",
-      "version": "80.0.0.43.69",
-      "manufacturer": "facebook",
-      "type": "mobile-application",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "602.4.6",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPad; CPU OS 9_3_5 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G36 [FBAN/MessengerForiOS;FBAV/90.0.0.24.70;FBBV/39954546;FBRV/0;FBDV/iPad2,5;FBMD/iPad;FBSN/iPhone OS;FBSV/9.3.5;FBSS/1;FBCR/;FBID/tablet;FBLC/en_GB;FBOP/5]"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "iPad 2,5",
-      "marketingName": "iPad mini",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1024,
-        "height": 768,
-        "touch": true,
-        "size": 7.9
-      },
-      "type": "tablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "9.3.5",
-      "manufacturer": "apple"
-    },
-    "client": {
-      "name": "Facebook Messenger App",
-      "version": "90.0.0.24.70",
       "manufacturer": "facebook",
       "type": "mobile-application",
       "isbot": false

@@ -65,9 +65,9 @@
       "bits": null
     },
     "os": {
-      "name": "iPhone OS",
-      "marketingName": "iPhone OS",
-      "version": "3.2.0",
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "5.1.0",
       "manufacturer": "apple"
     },
     "client": {
@@ -149,9 +149,9 @@
       "bits": null
     },
     "os": {
-      "name": "iPhone OS",
-      "marketingName": "iPhone OS",
-      "version": "3.2.0",
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "5.1.0",
       "manufacturer": "apple"
     },
     "client": {
@@ -193,7 +193,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "6.0.0",
+      "version": "8.2.0",
       "manufacturer": "apple"
     },
     "client": {
@@ -235,7 +235,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "6.0.0",
+      "version": "8.1.0",
       "manufacturer": "apple"
     },
     "client": {
@@ -277,7 +277,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "6.0.0",
+      "version": "7.0.0",
       "manufacturer": "apple"
     },
     "client": {
@@ -361,7 +361,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "6.0.0",
+      "version": "8.1.0",
       "manufacturer": "apple"
     },
     "client": {
@@ -571,7 +571,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "6.0.0",
+      "version": "10.1.0",
       "manufacturer": "apple"
     },
     "client": {
@@ -613,7 +613,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "6.0.0",
+      "version": "10.2.0",
       "manufacturer": "apple"
     },
     "client": {
@@ -631,7 +631,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (iPad; U; CPU OS 8_4 like Mac OS X; zh-CN; iPad3,1) AppleWebKit/534.46 (KHTML, like Gecko) UCBrowser/2.9.3.730 U3/ Mobile/10A403 Safari/7543.48.3"
+      "user-agent": "Mozilla/5.0(iPad; U;CPU OS 6_1 like Mac OS X; zh-CN; iPad3,1) AppleWebKit/534.46 (KHTML, like Gecko) UCBrowser/2.2.1.335 U3/1 Safari/7543.48.3"
     },
     "device": {
       "architecture": null,
@@ -655,12 +655,12 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "6.0.0",
+      "version": "6.1.0",
       "manufacturer": "apple"
     },
     "client": {
       "name": "UC Browser",
-      "version": "2.9.3.730",
+      "version": "2.2.1.335",
       "manufacturer": "ucweb",
       "type": "transcoder",
       "isbot": false
@@ -757,48 +757,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (iPad; U; CPU OS 7 like Mac OS X; zh-CN; iPad4,1) AppleWebKit/534.46 (KHTML, like Gecko) UCBrowser/2.3.0.346 U3/1 Safari/7543.48.3"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "iPad 4,1",
-      "marketingName": "iPad Air",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 2048,
-        "height": 1536,
-        "touch": true,
-        "size": 9.7
-      },
-      "type": "tablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "7.0.0",
-      "manufacturer": "apple"
-    },
-    "client": {
-      "name": "UC Browser",
-      "version": "2.3.0.346",
-      "manufacturer": "ucweb",
-      "type": "transcoder",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "534.46.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0(iPad; U;CPU OS 7 like Mac OS X; zh-CN; iPad4,4) AppleWebKit/534.46 (KHTML, like Gecko) UCBrowser/2.0.1.280 U3/0.8.0 Safari/7543.48.3"
     },
     "device": {
@@ -883,6 +841,48 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0(iPad; U;CPU OS 6 like Mac OS X; zh-CN; iPad3,4) AppleWebKit/534.46 (KHTML, like Gecko) UCBrowser/2.0.1.280 U3/0.8.0 Safari/7543.48.3"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPad 3,4",
+      "marketingName": "iPad 4",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 2048,
+        "height": 1536,
+        "touch": true,
+        "size": 9.7
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "6.0.0",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "UC Browser",
+      "version": "2.0.1.280",
+      "manufacturer": "ucweb",
+      "type": "transcoder",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.46.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "UCWEB/2.0 (iOS; U; iPad OS 6_1_2; xx; iPad2,4) U2/1.0.0 UCBrowser/9.2.0.312 U2/1.0.0 Mobile"
     },
     "device": {
@@ -949,7 +949,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "6.0.0",
+      "version": "10.3.0",
       "manufacturer": "apple"
     },
     "client": {
@@ -991,7 +991,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "6.0.0",
+      "version": "10.3.0",
       "manufacturer": "apple"
     },
     "client": {
@@ -1033,7 +1033,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "6.0.0",
+      "version": "9.2.0",
       "manufacturer": "apple"
     },
     "client": {

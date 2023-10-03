@@ -403,7 +403,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "9.3.5",
+      "version": "10.3.2",
       "manufacturer": "apple"
     },
     "client": {
@@ -697,7 +697,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.1.1",
+      "version": "11.1.2",
       "manufacturer": "apple"
     },
     "client": {
@@ -1789,7 +1789,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "13.4.1",
       "manufacturer": "apple"
     },
     "client": {
@@ -1999,12 +1999,96 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "13.7.0",
       "manufacturer": "apple"
     },
     "client": {
       "name": "Snapchat",
       "version": "11.1.0.65",
+      "manufacturer": "snap",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.1 Mobile/15E148 Snapchat/11.6.3.52 (like Safari/604.1)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "14.2.0",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "Snapchat",
+      "version": "11.6.3.52",
+      "manufacturer": "snap",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.1 Mobile/15E148 Snapchat/11.62.0.36 (like Safari/8612.2.9.0.20, panda)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "15.1.0",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "Snapchat",
+      "version": "11.62.0.36",
       "manufacturer": "snap",
       "type": "mobile-application",
       "isbot": false
@@ -2041,7 +2125,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "16.3.1",
       "manufacturer": "apple"
     },
     "client": {
@@ -2083,7 +2167,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "16.1.1",
       "manufacturer": "apple"
     },
     "client": {

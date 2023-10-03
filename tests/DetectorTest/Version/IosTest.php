@@ -86,7 +86,7 @@ final class IosTest extends TestCase
             ],
             [
                 'Mozilla/5.0 (iPad; CPU OS 8_1 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) CriOS/42.0.2311.47 Mobile/12B401 Safari/600.1.4',
-                '8.1.0-beta+1',
+                '8.1.0',
             ],
             [
                 'TestApp/1.0 CFNetwork/808.2.16 Darwin/16.3.0',
@@ -162,7 +162,7 @@ final class IosTest extends TestCase
             ],
             [
                 'Mozilla/5.0 (iPhone; CPU iPhone OS 4_1_1 like Mac OS X) AppleWebKit/533.17.9 (KHTML, like Gecko) Mobile/10B329',
-                '6.1.3',
+                '4.1.1',
             ],
         ];
     }
@@ -245,65 +245,6 @@ final class IosTest extends TestCase
         $iosBuild
             ->expects(self::never())
             ->method('getVersion');
-
-        $logger = $this->createMock(LoggerInterface::class);
-        $logger
-            ->expects(self::never())
-            ->method('debug');
-        $logger
-            ->expects(self::once())
-            ->method('info')
-            ->with($exception, []);
-        $logger
-            ->expects(self::never())
-            ->method('notice');
-        $logger
-            ->expects(self::never())
-            ->method('warning');
-        $logger
-            ->expects(self::never())
-            ->method('error');
-        $logger
-            ->expects(self::never())
-            ->method('critical');
-        $logger
-            ->expects(self::never())
-            ->method('alert');
-        $logger
-            ->expects(self::never())
-            ->method('emergency');
-
-        $object = new Ios($logger, $versionBuilder, $iosBuild);
-
-        $detectedVersion = $object->detectVersion($useragent);
-
-        self::assertInstanceOf(VersionInterface::class, $detectedVersion);
-        self::assertInstanceOf(NullVersion::class, $detectedVersion);
-    }
-
-    /** @throws UnexpectedValueException */
-    public function testDetectVersionFail3(): void
-    {
-        $useragent = 'Mozilla/5.0 (iPad; CPU OS 8_1 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) CriOS/42.0.2311.47 Mobile/12B401 Safari/600.1.4';
-        $exception = new NotNumericException('not numeric');
-        $version   = '6.1.3';
-
-        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
-        $versionBuilder
-            ->expects(self::never())
-            ->method('detectVersion');
-        $versionBuilder
-            ->expects(self::once())
-            ->method('set')
-            ->with($version)
-            ->willThrowException($exception);
-
-        $iosBuild = $this->createMock(IosBuildInterface::class);
-        $iosBuild
-            ->expects(self::once())
-            ->method('getVersion')
-            ->with('12B401')
-            ->willReturn($version);
 
         $logger = $this->createMock(LoggerInterface::class);
         $logger
@@ -666,63 +607,6 @@ final class IosTest extends TestCase
             ->expects(self::once())
             ->method('info')
             ->with($exception, []);
-        $logger
-            ->expects(self::never())
-            ->method('notice');
-        $logger
-            ->expects(self::never())
-            ->method('warning');
-        $logger
-            ->expects(self::never())
-            ->method('error');
-        $logger
-            ->expects(self::never())
-            ->method('critical');
-        $logger
-            ->expects(self::never())
-            ->method('alert');
-        $logger
-            ->expects(self::never())
-            ->method('emergency');
-
-        $object = new Ios($logger, $versionBuilder, $iosBuild);
-
-        $detectedVersion = $object->detectVersion($useragent);
-
-        self::assertInstanceOf(VersionInterface::class, $detectedVersion);
-        self::assertInstanceOf(NullVersion::class, $detectedVersion);
-    }
-
-    /** @throws UnexpectedValueException */
-    public function testDetectVersionFail10(): void
-    {
-        $useragent = 'Mozilla/5.0 (iPad; CPU OS 8_1 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) CriOS/42.0.2311.47 Mobile/12B401 Safari/600.1.4';
-        $exception = new NotFoundException('not numeric');
-
-        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
-        $versionBuilder
-            ->expects(self::once())
-            ->method('detectVersion')
-            ->with($useragent, Ios::SEARCHES)
-            ->willReturn(new NullVersion());
-        $versionBuilder
-            ->expects(self::never())
-            ->method('set');
-
-        $iosBuild = $this->createMock(IosBuildInterface::class);
-        $iosBuild
-            ->expects(self::once())
-            ->method('getVersion')
-            ->with('12B401')
-            ->willThrowException($exception);
-
-        $logger = $this->createMock(LoggerInterface::class);
-        $logger
-            ->expects(self::never())
-            ->method('debug');
-        $logger
-            ->expects(self::never())
-            ->method('info');
         $logger
             ->expects(self::never())
             ->method('notice');

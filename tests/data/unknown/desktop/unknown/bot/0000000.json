@@ -149,8 +149,8 @@
       "bits": null
     },
     "os": {
-      "name": "OpenBSD",
-      "marketingName": "OpenBSD",
+      "name": null,
+      "marketingName": null,
       "version": null,
       "manufacturer": "unknown"
     },
@@ -1123,6 +1123,48 @@
     "client": {
       "name": "URLfilterDB Crawler",
       "version": "1.0.0",
+      "manufacturer": "unknown",
+      "type": "bot",
+      "isbot": true
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "TelemetrySpider2/0.1 linux"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation"
+    },
+    "client": {
+      "name": "generic spider",
+      "version": null,
       "manufacturer": "unknown",
       "type": "bot",
       "isbot": true

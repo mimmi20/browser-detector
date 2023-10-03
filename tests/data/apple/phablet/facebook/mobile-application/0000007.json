@@ -1,6 +1,132 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_1_1 like Mac OS X) AppleWebKit/602.2.14 (KHTML, like Gecko) Mobile/14B100 [FBAN/FBIOS;FBAV/93.0.0.49.65;FBBV/58440824;FBDV/iPhone8,2;FBMD/iPhone;FBSN/iOS;FBSV/10.1.1;FBSS/3;FBCR/O2;FBID/phone;FBLC/en_GB;FBOP/5;FBRV/0]"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPhone 8,2",
+      "marketingName": "iPhone 6S Plus",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "10.1.1",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "Facebook App",
+      "version": "93.0.0.49.65",
+      "manufacturer": "facebook",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "602.2.14",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_2_1 like Mac OS X) AppleWebKit/602.4.6 (KHTML, like Gecko) Mobile/14D27 [FBAN/FBIOS;FBAV/88.1.0.64.70;FBBV/55330959;FBDV/iPhone8,2;FBMD/iPhone;FBSN/iOS;FBSV/10.2.1;FBSS/3;FBCR/Three;FBID/phone;FBLC/en_GB;FBOP/5;FBRV/0]"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPhone 8,2",
+      "marketingName": "iPhone 6S Plus",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "10.2.1",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "Facebook App",
+      "version": "88.1.0.64.70",
+      "manufacturer": "facebook",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "602.4.6",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_5 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G36 [FBAN/MessengerForiOS;FBAV/89.0.0.30.69;FBBV/39433806;FBRV/0;FBDV/iPhone8,2;FBMD/iPhone;FBSN/iPhone OS;FBSV/9.3.5;FBSS/3;FBCR/O2;FBID/phone;FBLC/en_GB;FBOP/5]"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPhone 8,2",
+      "marketingName": "iPhone 6S Plus",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "9.3.5",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "Facebook Messenger App",
+      "version": "89.0.0.30.69",
+      "manufacturer": "facebook",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "601.1.46",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_0_2 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Mobile/14A456 [FBAN/FBIOS;FBAV/59.0.0.51.142;FBBV/33266808;FBRV/0;FBDV/iPhone7,1;FBMD/iPhone;FBSN/iPhone OS;FBSV/10.0.2;FBSS/3;FBCR/Three;FBID/phone;FBLC/en_US;FBOP/5]"
     },
     "device": {
@@ -3763,7 +3889,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.1.1",
+      "version": "11.1.2",
       "manufacturer": "apple"
     },
     "client": {
@@ -3889,7 +4015,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "10.3.3-beta+6",
+      "version": "10.3.3",
       "manufacturer": "apple"
     },
     "client": {
@@ -4070,132 +4196,6 @@
     "engine": {
       "name": "WebKit",
       "version": "603.1.30",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_2_1 like Mac OS X) AppleWebKit/602.4.6 (KHTML, like Gecko) Mobile/14D27 [FBAN/FBIOS;FBAV/157.0.0.42.96;FBBV/90008621;FBDV/iPhone7,1;FBMD/iPhone;FBSN/iOS;FBSV/10.2.1;FBSS/3;FBCR/O2;FBID/phone;FBLC/en_GB;FBOP/5;FBRV/90882214]"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "iPhone 7,1",
-      "marketingName": "iPhone 6 Plus",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5.5
-      },
-      "type": "phablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "10.2.1",
-      "manufacturer": "apple"
-    },
-    "client": {
-      "name": "Facebook App",
-      "version": "157.0.0.42.96",
-      "manufacturer": "facebook",
-      "type": "mobile-application",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "602.4.6",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Mobile/14E304 [FBAN/MessengerForiOS;FBAV/127.0.0.45.71;FBBV/65328635;FBDV/iPhone8,2;FBMD/iPhone;FBSN/iOS;FBSV/10.3.1;FBSS/3;FBCR/Three;FBID/phone;FBLC/en_GB;FBOP/5;FBRV/0]"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "iPhone 8,2",
-      "marketingName": "iPhone 6S Plus",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5.5
-      },
-      "type": "phablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "10.3.1",
-      "manufacturer": "apple"
-    },
-    "client": {
-      "name": "Facebook Messenger App",
-      "version": "127.0.0.45.71",
-      "manufacturer": "facebook",
-      "type": "mobile-application",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "603.1.30",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_3 like Mac OS X) AppleWebKit/603.3.8 (KHTML, like Gecko) Mobile/14G60 [FBAN/FBIOS;FBAV/139.0.0.46.90;FBBV/70207865;FBDV/iPhone8,2;FBMD/iPhone;FBSN/iOS;FBSV/10.3.3;FBSS/3;FBCR/TelenorBG;FBID/phone;FBLC/en_US;FBOP/5;FBRV/70207865]"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "iPhone 8,2",
-      "marketingName": "iPhone 6S Plus",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5.5
-      },
-      "type": "phablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "10.3.3",
-      "manufacturer": "apple"
-    },
-    "client": {
-      "name": "Facebook App",
-      "version": "139.0.0.46.90",
-      "manufacturer": "facebook",
-      "type": "mobile-application",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "603.3.8",
       "manufacturer": "apple"
     }
   }

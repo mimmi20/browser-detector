@@ -93,8 +93,8 @@
       "marketingName": "Mate 20 X",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 2244,
         "height": 1080,
@@ -261,8 +261,8 @@
       "marketingName": "P40 Pro 5G",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 2640,
         "height": 1200,
@@ -471,8 +471,8 @@
       "marketingName": "P40 Pro 5G",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 2640,
         "height": 1200,
@@ -513,8 +513,8 @@
       "marketingName": "P40 Pro 5G",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 2640,
         "height": 1200,
@@ -552,11 +552,11 @@
     "device": {
       "architecture": null,
       "deviceName": "ELS-N39",
-      "marketingName": "P40 Pro 5G",
+      "marketingName": "P40 Pro Plus 5G",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 2640,
         "height": 1200,
@@ -594,11 +594,11 @@
     "device": {
       "architecture": null,
       "deviceName": "ELS-N39",
-      "marketingName": "P40 Pro 5G",
+      "marketingName": "P40 Pro Plus 5G",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 2640,
         "height": 1200,
@@ -678,11 +678,11 @@
     "device": {
       "architecture": null,
       "deviceName": "ELS-N39",
-      "marketingName": "P40 Pro 5G",
+      "marketingName": "P40 Pro Plus 5G",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 2640,
         "height": 1200,
@@ -739,7 +739,7 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "28.0.0",
+      "version": "9.0.0",
       "manufacturer": "google"
     },
     "client": {
@@ -762,16 +762,16 @@
     "device": {
       "architecture": null,
       "deviceName": "PPA-LX2",
-      "marketingName": "P Smart (2021)",
+      "marketingName": "P smart 4G (2021)",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 2400,
         "height": 1080,
         "touch": true,
-        "size": 6.7
+        "size": 6.67
       },
       "type": "phablet",
       "ismobile": true,
@@ -804,16 +804,16 @@
     "device": {
       "architecture": null,
       "deviceName": "PPA-LX2",
-      "marketingName": "P Smart (2021)",
+      "marketingName": "P smart 4G (2021)",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 2400,
         "height": 1080,
         "touch": true,
-        "size": 6.7
+        "size": 6.67
       },
       "type": "phablet",
       "ismobile": true,
@@ -849,8 +849,8 @@
       "marketingName": "P40 Pro 5G",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 2640,
         "height": 1200,
@@ -975,8 +975,8 @@
       "marketingName": "P40 Pro 5G",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 2640,
         "height": 1200,
@@ -1140,16 +1140,16 @@
     "device": {
       "architecture": null,
       "deviceName": "PPA-LX2",
-      "marketingName": "P Smart (2021)",
+      "marketingName": "P smart 4G (2021)",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 2400,
         "height": 1080,
         "touch": true,
-        "size": 6.7
+        "size": 6.67
       },
       "type": "phablet",
       "ismobile": true,
@@ -1340,6 +1340,48 @@
     "engine": {
       "name": "Blink",
       "version": "110.0.5481.185",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; STK-L21 Build/HUAWEISTK-L21; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/79.0.3945.116 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/266.0.0.64.124;]"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "STK-L21",
+      "marketingName": "Y9 Prime (2019)",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.59
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Facebook App",
+      "version": "266.0.0.64.124",
+      "manufacturer": "facebook",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "79.0.3945.116",
       "manufacturer": "google"
     }
   }

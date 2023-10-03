@@ -500,8 +500,8 @@
     "marketingName": "Mate 20 X",
     "manufacturer": "huawei",
     "brand": "huawei",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 2244,
       "height": 1080,
@@ -516,8 +516,8 @@
     "marketingName": "Mate 20 X",
     "manufacturer": "huawei",
     "brand": "huawei",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 2244,
       "height": 1080,
@@ -532,8 +532,8 @@
     "marketingName": "Mate 20 X",
     "manufacturer": "huawei",
     "brand": "huawei",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 2244,
       "height": 1080,
@@ -548,8 +548,8 @@
     "marketingName": "Mate 20 X 5G",
     "manufacturer": "huawei",
     "brand": "huawei",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 2244,
       "height": 1080,
@@ -564,8 +564,8 @@
     "marketingName": "Mate 20 X 5G",
     "manufacturer": "huawei",
     "brand": "huawei",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 2244,
       "height": 1080,
@@ -993,16 +993,32 @@
   },
   "huawei ppa-lx2": {
     "deviceName": "PPA-LX2",
-    "marketingName": "P Smart (2021)",
+    "marketingName": "P smart 4G (2021)",
     "manufacturer": "huawei",
     "brand": "huawei",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 2400,
       "height": 1080,
       "touch": true,
-      "size": 6.7
+      "size": 6.67
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "huawei ppa-lx1": {
+    "deviceName": "PPA-LX1",
+    "marketingName": "P smart 4G (2021)",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.67
     },
     "type": "phablet",
     "platform": "android"
@@ -1044,8 +1060,8 @@
     "marketingName": "P40 Pro 5G",
     "manufacturer": "huawei",
     "brand": "huawei",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 2640,
       "height": 1200,
@@ -1057,11 +1073,11 @@
   },
   "huawei els-an10": {
     "deviceName": "ELS-AN10",
-    "marketingName": "P40 Pro 5G",
+    "marketingName": "P40 Pro Plus 5G",
     "manufacturer": "huawei",
     "brand": "huawei",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 2640,
       "height": 1200,
@@ -1076,8 +1092,8 @@
     "marketingName": "P40 Pro 5G",
     "manufacturer": "huawei",
     "brand": "huawei",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 2640,
       "height": 1200,
@@ -1089,11 +1105,11 @@
   },
   "huawei els-n39": {
     "deviceName": "ELS-N39",
-    "marketingName": "P40 Pro 5G",
+    "marketingName": "P40 Pro Plus 5G",
     "manufacturer": "huawei",
     "brand": "huawei",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 2640,
       "height": 1200,
@@ -1108,8 +1124,8 @@
     "marketingName": "P40 Pro 5G",
     "manufacturer": "huawei",
     "brand": "huawei",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 2640,
       "height": 1200,
@@ -1124,8 +1140,8 @@
     "marketingName": "P40 Pro 5G",
     "manufacturer": "huawei",
     "brand": "huawei",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 2640,
       "height": 1200,

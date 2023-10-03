@@ -1,11 +1,7 @@
 [
   {
     "headers": {
-      "sec-fetch-dest": "image",
-      "sec-fetch-mode": "no-cors",
-      "sec-fetch-site": "same-origin",
-      "user-agent": "Mozilla/5.0 (Linux; Android 11; CPH1907) AppleWebKit/537.36 (KHTML, like Gecko) Soul/4.0 Chrome/102.0.5005.125 Mobile Safari/537.36",
-      "x-requested-with": "com.mycompany.app.soulbrowser"
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; CPH1907) AppleWebKit/537.36 (KHTML, like Gecko) Soul/4.0 Chrome/102.0.5005.125 Mobile Safari/537.36"
     },
     "device": {
       "architecture": null,
@@ -34,7 +30,7 @@
     },
     "client": {
       "name": "Soul Browser",
-      "version": null,
+      "version": "4.0.0",
       "manufacturer": "soul-soft",
       "type": "browser",
       "isbot": false

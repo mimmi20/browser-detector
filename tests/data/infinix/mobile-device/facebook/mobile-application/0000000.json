@@ -43,7 +43,7 @@
   },
   {
     "headers": {
-      "user-agent": "Dalvik/2.1.0 (Linux; U; Android 12; Infinix X669 Build/SP1A.210812.016) [FBAN/Orca-Android;FBAV/377.0.0.13.101;FBPN/com.facebook.orca;FBLC/en_US;FBBV/396116327;FBCR/MTN;FBMF/INFINIX;FBBD/Infinix;FBDV/Infinix X669;FBSV/12;FBCA/armeabi-v7a:armeabi;FBDM/{density=2.0,width=720,height=1444};FB_FW/1;]"
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; Infinix X652B Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.106 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/278.0.0.51.119;]"
     },
     "device": {
       "architecture": null,
@@ -67,20 +67,20 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "12.0.0",
+      "version": "9.0.0",
       "manufacturer": "google"
     },
     "client": {
-      "name": "Facebook Messenger App",
-      "version": "377.0.0.13.101",
+      "name": "Facebook App",
+      "version": "278.0.0.51.119",
       "manufacturer": "facebook",
       "type": "mobile-application",
       "isbot": false
     },
     "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
+      "name": "Blink",
+      "version": "83.0.4103.106",
+      "manufacturer": "google"
     }
   }
 ]

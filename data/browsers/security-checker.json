@@ -57,5 +57,25 @@
       ]
     },
     "engine": null
+  },
+  "nmap": {
+    "name": "nmap",
+    "manufacturer": "unknown",
+    "type": "security-checker",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "nmap-scripting-engine": {
+    "name": "Nmap Scripting Engine",
+    "manufacturer": "unknown",
+    "type": "security-checker",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
   }
 }

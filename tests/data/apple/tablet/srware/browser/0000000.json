@@ -127,7 +127,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (iPad; CPU OS 12_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MobileIron/2.8.0 Version/12.4.1 Safari/605.1.15"
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 13_5_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MobileIron/2.9.1 Version/13.5.1 Safari/605.1.15 comdirect/1.0 (appVersion:20.6.0;deviceName:apple ipad;deviceType:tablet)"
     },
     "device": {
       "architecture": null,
@@ -149,14 +149,56 @@
       "bits": null
     },
     "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "13.5.1",
       "manufacturer": "apple"
     },
     "client": {
       "name": "Iron Mobile",
-      "version": "2.8.0",
+      "version": "2.9.1",
+      "manufacturer": "srware",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 14_5_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MobileIron/2.13.0 Version/14.5.1 Safari/605.1.15"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPad",
+      "marketingName": "iPad",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1024,
+        "height": 768,
+        "touch": true,
+        "size": 9.7
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "14.5.1",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "Iron Mobile",
+      "version": "2.13.0",
       "manufacturer": "srware",
       "type": "browser",
       "isbot": false

@@ -821,10 +821,10 @@
       "bits": null
     },
     "os": {
-      "name": "FreeBSD",
-      "marketingName": "FreeBSD",
+      "name": null,
+      "marketingName": null,
       "version": null,
-      "manufacturer": "free-bsd-foundation"
+      "manufacturer": "unknown"
     },
     "client": {
       "name": "Konqueror",
@@ -905,10 +905,10 @@
       "bits": null
     },
     "os": {
-      "name": "FreeBSD",
-      "marketingName": "FreeBSD",
+      "name": null,
+      "marketingName": null,
       "version": null,
-      "manufacturer": "free-bsd-foundation"
+      "manufacturer": "unknown"
     },
     "client": {
       "name": "Konqueror",
@@ -1177,48 +1177,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; Konqueror/4.5; NetBSD 5.0.2; X11; amd64; en_US) KHTML/4.5.4 (like Gecko)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Desktop",
-      "marketingName": "general Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "NetBSD",
-      "marketingName": "NetBSD",
-      "version": "5.0.2",
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "Konqueror",
-      "version": "4.5.0",
-      "manufacturer": "kde",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "KHTML",
-      "version": "4.5.4",
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (compatible; Konqueror/4.1; DragonFly) KHTML/4.1.4 (like Gecko)"
     },
     "device": {
@@ -1243,48 +1201,6 @@
     "os": {
       "name": "DragonFly BSD",
       "marketingName": "DragonFly BSD",
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "Konqueror",
-      "version": "4.1.0",
-      "manufacturer": "kde",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "KHTML",
-      "version": "4.1.4",
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; Konqueror/4.1; OpenBSD) KHTML/4.1.4 (like Gecko)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Desktop",
-      "marketingName": "general Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "OpenBSD",
-      "marketingName": "OpenBSD",
       "version": null,
       "manufacturer": "unknown"
     },
@@ -1367,10 +1283,10 @@
       "bits": null
     },
     "os": {
-      "name": "NetBSD",
-      "marketingName": "NetBSD",
-      "version": "4.0.0",
-      "manufacturer": "unknown"
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation"
     },
     "client": {
       "name": "Konqueror",
@@ -1451,10 +1367,10 @@
       "bits": null
     },
     "os": {
-      "name": "FreeBSD",
-      "marketingName": "FreeBSD",
+      "name": "Linux",
+      "marketingName": "Linux",
       "version": null,
-      "manufacturer": "free-bsd-foundation"
+      "manufacturer": "linux-foundation"
     },
     "client": {
       "name": "Konqueror",
@@ -1535,10 +1451,10 @@
       "bits": null
     },
     "os": {
-      "name": "BSD",
-      "marketingName": "BSD",
+      "name": "Linux",
+      "marketingName": "Linux",
       "version": null,
-      "manufacturer": "berkley-university"
+      "manufacturer": "linux-foundation"
     },
     "client": {
       "name": "rekonq",
@@ -1849,48 +1765,6 @@
   },
   {
     "headers": {
-      "user-agent": "*Konqueror/3.5*OpenBSD*"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Desktop",
-      "marketingName": "general Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "OpenBSD",
-      "marketingName": "OpenBSD",
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "Konqueror",
-      "version": "3.5.0",
-      "manufacturer": "kde",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "KHTML",
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/3.0 (compatible; Konqueror 3; BeOS; SV1)"
     },
     "device": {
@@ -1921,48 +1795,6 @@
     "client": {
       "name": "Konqueror",
       "version": "3.0.0",
-      "manufacturer": "kde",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "KHTML",
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Konqueror/3.2; (Konqueror/3.2; en_US, fr_FR, fr) (KHTML, like Gecko)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Desktop",
-      "marketingName": "general Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "Konqueror",
-      "version": "3.2.0",
       "manufacturer": "kde",
       "type": "browser",
       "isbot": false
@@ -2059,90 +1891,6 @@
   },
   {
     "headers": {
-      "user-agent": "del.icio.us-thumbnails/1.0 Mozilla/5.0 (compatible; Konqueror/3.4; FreeBSD) KHTML/3.4.2 (like Gecko)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Desktop",
-      "marketingName": "general Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "FreeBSD",
-      "marketingName": "FreeBSD",
-      "version": null,
-      "manufacturer": "free-bsd-foundation"
-    },
-    "client": {
-      "name": "Konqueror",
-      "version": "3.4.0",
-      "manufacturer": "kde",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "KHTML",
-      "version": "3.4.2",
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; Konqueror; FreeBSD; http://www.cartedaffaire.net/)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Desktop",
-      "marketingName": "general Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "FreeBSD",
-      "marketingName": "FreeBSD",
-      "version": null,
-      "manufacturer": "free-bsd-foundation"
-    },
-    "client": {
-      "name": "Konqueror",
-      "version": null,
-      "manufacturer": "kde",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "KHTML",
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (compatible; Konqueror/4.4; Windows 6.1; i686; en_US) KHTML/4.4.4 (like Gecko)"
     },
     "device": {
@@ -2180,48 +1928,6 @@
     "engine": {
       "name": "KHTML",
       "version": "4.4.4",
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; Konqueror/4.2) KHTML/4.2.4 (like Gecko)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Desktop",
-      "marketingName": "general Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "Konqueror",
-      "version": "4.2.0",
-      "manufacturer": "kde",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "KHTML",
-      "version": "4.2.4",
       "manufacturer": "unknown"
     }
   },
@@ -2269,7 +1975,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; Konqueror/3.5; X11) KHTML/3.5.2 (like Gecko)"
+      "user-agent": "Mozilla/5.0 (compatible; Konqueror/3; FreeBSD; X11; i386; en_US)"
     },
     "device": {
       "architecture": null,
@@ -2298,14 +2004,14 @@
     },
     "client": {
       "name": "Konqueror",
-      "version": "3.5.0",
+      "version": "3.0.0",
       "manufacturer": "kde",
       "type": "browser",
       "isbot": false
     },
     "engine": {
       "name": "KHTML",
-      "version": "3.5.2",
+      "version": null,
       "manufacturer": "unknown"
     }
   },
@@ -2375,8 +2081,8 @@
       "bits": null
     },
     "os": {
-      "name": "Debian with FreeBSD Kernel",
-      "marketingName": "Debian with FreeBSD Kernel",
+      "name": "Debian",
+      "marketingName": "Debian",
       "version": null,
       "manufacturer": "software-in-the-public-interest"
     },
@@ -2390,48 +2096,6 @@
     "engine": {
       "name": "KHTML",
       "version": "3.5.9",
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; Konqueror/3.5; FreeBSD 6.2-RELEASE) KHTML/3.5.6 (like Gecko)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Desktop",
-      "marketingName": "general Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "FreeBSD",
-      "marketingName": "FreeBSD",
-      "version": "6.2.0",
-      "manufacturer": "free-bsd-foundation"
-    },
-    "client": {
-      "name": "Konqueror",
-      "version": "3.5.0",
-      "manufacturer": "kde",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "KHTML",
-      "version": "3.5.6",
       "manufacturer": "unknown"
     }
   },
@@ -2516,216 +2180,6 @@
     "engine": {
       "name": "KHTML",
       "version": "3.4.1",
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; Konqueror/3.3; FreeBSD 5.3-RELEASE; X11; i386; nl, en_US) (KHTML, like Gecko)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Desktop",
-      "marketingName": "general Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "FreeBSD",
-      "marketingName": "FreeBSD",
-      "version": "5.3.0",
-      "manufacturer": "free-bsd-foundation"
-    },
-    "client": {
-      "name": "Konqueror",
-      "version": "3.3.0",
-      "manufacturer": "kde",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "KHTML",
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; Konqueror/3.2; NetBSD) (KHTML, like Gecko)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Desktop",
-      "marketingName": "general Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "NetBSD",
-      "marketingName": "NetBSD",
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "Konqueror",
-      "version": "3.2.0",
-      "manufacturer": "kde",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "KHTML",
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; Konqueror/3.2; FreeBSD 4.10-STABLE) (KHTML"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Desktop",
-      "marketingName": "general Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "FreeBSD",
-      "marketingName": "FreeBSD",
-      "version": "4.10.0",
-      "manufacturer": "free-bsd-foundation"
-    },
-    "client": {
-      "name": "Konqueror",
-      "version": "3.2.0",
-      "manufacturer": "kde",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "KHTML",
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; Konqueror/3.1; X11; i686)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Desktop",
-      "marketingName": "general Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "linux-foundation"
-    },
-    "client": {
-      "name": "Konqueror",
-      "version": "3.1.0",
-      "manufacturer": "kde",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "KHTML",
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; Konqueror/2.2.2; FreeBSD)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Desktop",
-      "marketingName": "general Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "FreeBSD",
-      "marketingName": "FreeBSD",
-      "version": null,
-      "manufacturer": "free-bsd-foundation"
-    },
-    "client": {
-      "name": "Konqueror",
-      "version": "2.2.2",
-      "manufacturer": "kde",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "KHTML",
-      "version": null,
       "manufacturer": "unknown"
     }
   },
@@ -3697,90 +3151,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (compatible Konqueror/3.5 NetBSD 3.0 X11) KHTML/3.5.2 (like Gecko)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Desktop",
-      "marketingName": "general Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "NetBSD",
-      "marketingName": "NetBSD",
-      "version": "3.0.0",
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "Konqueror",
-      "version": "3.5.0",
-      "manufacturer": "kde",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "KHTML",
-      "version": "3.5.2",
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (X11; BSD Four) AppleWebKit/534.34 (KHTML, like Gecko) konqueror/4.10.5 Safari/534.34"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Desktop",
-      "marketingName": "general Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "BSD",
-      "marketingName": "BSD",
-      "version": null,
-      "manufacturer": "berkley-university"
-    },
-    "client": {
-      "name": "Konqueror",
-      "version": "4.10.5",
-      "manufacturer": "kde",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "534.34.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (X11; Cygwin) AppleWebKit/534.34 (KHTML, like Gecko) konqueror/4.13.3 Safari/534.34"
     },
     "device": {
@@ -3819,90 +3189,6 @@
       "name": "WebKit",
       "version": "534.34.0",
       "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; Konqueror/3.5; NetBSD) KHTML/3.5.10 (like Gecko)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Desktop",
-      "marketingName": "general Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "NetBSD",
-      "marketingName": "NetBSD",
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "Konqueror",
-      "version": "3.5.0",
-      "manufacturer": "kde",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "KHTML",
-      "version": "3.5.10",
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; Konqueror/3.3; OpenBSD 3.6; X11; i386; ja) (KHTML, like Gecko)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Desktop",
-      "marketingName": "general Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "OpenBSD",
-      "marketingName": "OpenBSD",
-      "version": "3.6.0",
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "Konqueror",
-      "version": "3.3.0",
-      "manufacturer": "kde",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "KHTML",
-      "version": null,
-      "manufacturer": "unknown"
     }
   },
   {
@@ -4189,6 +3475,720 @@
     "client": {
       "name": "Konqueror",
       "version": "16.3.0",
+      "manufacturer": "kde",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "KHTML",
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Konqueror/20.20 (DeLi Linux 7.0; sq_AL;)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation"
+    },
+    "client": {
+      "name": "Konqueror",
+      "version": "20.20.0",
+      "manufacturer": "kde",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "KHTML",
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Konqueror/15.12 (Ubuntu 6.6; ar_OM;)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Ubuntu",
+      "marketingName": "Ubuntu",
+      "version": "6.6.0",
+      "manufacturer": "canonical"
+    },
+    "client": {
+      "name": "Konqueror",
+      "version": "15.12.0",
+      "manufacturer": "kde",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "KHTML",
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Konqueror/14.1 (BeOS 6.3; ar_DZ;)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "BeOS",
+      "marketingName": "BeOS",
+      "version": "6.3.0",
+      "manufacturer": "access"
+    },
+    "client": {
+      "name": "Konqueror",
+      "version": "14.1.0",
+      "manufacturer": "kde",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "KHTML",
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Konqueror/15.1 (OS 10.5 1.8; nl;)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "Konqueror",
+      "version": "15.1.0",
+      "manufacturer": "kde",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "KHTML",
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Konqueror/7.17 (Edubuntu 2.4; en_MT;)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Ubuntu",
+      "marketingName": "Ubuntu",
+      "version": "2.4.0",
+      "manufacturer": "canonical"
+    },
+    "client": {
+      "name": "Konqueror",
+      "version": "7.17.0",
+      "manufacturer": "kde",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "KHTML",
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; Konqueror/3.1; CYGWIN_NT-5.1)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows NT",
+      "marketingName": "Windows XP",
+      "version": "5.1.0",
+      "manufacturer": "microsoft"
+    },
+    "client": {
+      "name": "Konqueror",
+      "version": "3.1.0",
+      "manufacturer": "kde",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "KHTML",
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/6.0 (compatible; Konqueror/4.2; i686 FreeBSD 6.4; 20060308)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "Konqueror",
+      "version": "4.2.0",
+      "manufacturer": "kde",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "KHTML",
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.9.5 Chrome/56.0.2924.122 Safari/537.36 Konqueror (WebEnginePart)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation"
+    },
+    "client": {
+      "name": "Konqueror",
+      "version": null,
+      "manufacturer": "kde",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "56.0.2924.122",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.34 (KHTML, like Gecko) konqueror/5.0.97 Safari/534.34"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation"
+    },
+    "client": {
+      "name": "Konqueror",
+      "version": "5.0.97",
+      "manufacturer": "kde",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.34.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.11.3 Chrome/65.0.3325.230 Safari/537.36 Konqueror (WebEnginePart)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation"
+    },
+    "client": {
+      "name": "Konqueror",
+      "version": null,
+      "manufacturer": "kde",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "65.0.3325.230",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Konqueror/1.6 (Windows Vista 5.5; en_IN;)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows NT 6.0",
+      "marketingName": "Windows Vista",
+      "version": "6.0.0",
+      "manufacturer": "microsoft"
+    },
+    "client": {
+      "name": "Konqueror",
+      "version": "1.6.0",
+      "manufacturer": "kde",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "KHTML",
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.12.4 Chrome/69.0.3497.128 Safari/537.36 Konqueror (WebEnginePart)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation"
+    },
+    "client": {
+      "name": "Konqueror",
+      "version": null,
+      "manufacturer": "kde",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "69.0.3497.128",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.14.1 Chrome/77.0.3865.129 Safari/537.36 Konqueror (WebEnginePart)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation"
+    },
+    "client": {
+      "name": "Konqueror",
+      "version": null,
+      "manufacturer": "kde",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "77.0.3865.129",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.10.1 Chrome/61.0.3163.140 Safari/537.36 Konqueror (WebEnginePart)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation"
+    },
+    "client": {
+      "name": "Konqueror",
+      "version": null,
+      "manufacturer": "kde",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "61.0.3163.140",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.15.0 Chrome/80.0.3987.163 Safari/537.36 Konqueror (WebEnginePart)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation"
+    },
+    "client": {
+      "name": "Konqueror",
+      "version": null,
+      "manufacturer": "kde",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "80.0.3987.163",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.15.2 Chrome/87.0.4280.144 Safari/537.36 Konqueror (WebEnginePart)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation"
+    },
+    "client": {
+      "name": "Konqueror",
+      "version": null,
+      "manufacturer": "kde",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "87.0.4280.144",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; Linux x86_64) KIO/5.85 konqueror/21.04.3"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation"
+    },
+    "client": {
+      "name": "Konqueror",
+      "version": "21.04.3",
       "manufacturer": "kde",
       "type": "browser",
       "isbot": false

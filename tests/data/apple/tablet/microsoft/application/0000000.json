@@ -65,8 +65,8 @@
       "bits": null
     },
     "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
       "version": "14.2.0",
       "manufacturer": "apple"
     },
@@ -107,8 +107,8 @@
       "bits": null
     },
     "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
       "version": "14.2.0",
       "manufacturer": "apple"
     },
@@ -149,8 +149,8 @@
       "bits": null
     },
     "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
       "version": "14.3.0",
       "manufacturer": "apple"
     },
@@ -191,8 +191,8 @@
       "bits": null
     },
     "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
       "version": "13.7.0",
       "manufacturer": "apple"
     },
@@ -233,8 +233,8 @@
       "bits": null
     },
     "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
       "version": "14.0.0",
       "manufacturer": "apple"
     },
@@ -275,8 +275,8 @@
       "bits": null
     },
     "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
       "version": "14.4.0",
       "manufacturer": "apple"
     },
@@ -290,6 +290,90 @@
     "engine": {
       "name": "WebKit",
       "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 15_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.4.1 Mobile/15E148 Safari/605.1.15 BingSapphire/1.0.400423002"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPad",
+      "marketingName": "iPad",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1024,
+        "height": 768,
+        "touch": true,
+        "size": 9.7
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "15.4.1",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "Bing Search",
+      "version": "1.0.400423002",
+      "manufacturer": "microsoft",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPad; CPU iPad OS 16_5_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.5.1 Mobile/15E148 Safari/605.1.15 BingSapphire/1.0.410622001"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPad",
+      "marketingName": "iPad",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1024,
+        "height": 768,
+        "touch": true,
+        "size": 9.7
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "16.5.1",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "Bing Search",
+      "version": "1.0.410622001",
+      "manufacturer": "microsoft",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
       "manufacturer": "apple"
     }
   }

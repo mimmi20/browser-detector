@@ -823,7 +823,49 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "8.1.3",
+      "version": "813.0.0",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "QQ Browser",
+      "version": "6.0.1",
+      "manufacturer": "tencent",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "600.1.4",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone 6p; CPU iPhone OS 8_1_1 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Version/6.0 MQQBrowser/6.0.1 Mobile/12B436 Safari/8536.25"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPhone 7,2",
+      "marketingName": "iPhone 6",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1334,
+        "height": 750,
+        "touch": true,
+        "size": 4.7
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "8.1.1",
       "manufacturer": "apple"
     },
     "client": {
@@ -1033,7 +1075,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "8.4.0",
+      "version": "84.0.0",
       "manufacturer": "apple"
     },
     "client": {
@@ -2227,6 +2269,48 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone 5SGLOBAL; CPU iPhone OS 812 like Mac OS X) AppleWebKit/600.1.4 (KHTML like Gecko) Version/6.0 MQQBrowser/5.6 Mobile/12B440 Safari/8536.25"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPhone 6,1",
+      "marketingName": "iPhone 5S",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1136,
+        "height": 640,
+        "touch": true,
+        "size": 4
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "812.0.0",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "QQ Browser",
+      "version": "5.6.0",
+      "manufacturer": "tencent",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "600.1.4",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (iPhone 84; CPU iPhone OS 10_3_3 like Mac OS X) AppleWebKit/603.3.8 (KHTML, like Gecko) Version/10.0 MQQBrowser/7.8.0 Mobile/14G60 Safari/8536.25 MttCustomUA/2 QBWebViewType/1 WKType/1"
     },
     "device": {
@@ -2293,7 +2377,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "12.0.0-beta+6",
+      "version": "12.0.0",
       "manufacturer": "apple"
     },
     "client": {
@@ -2419,7 +2503,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "12.3.1",
       "manufacturer": "apple"
     },
     "client": {

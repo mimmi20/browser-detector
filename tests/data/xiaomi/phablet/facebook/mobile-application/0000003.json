@@ -1,6 +1,90 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; Redmi Note 9 Pro Build/RKQ1.200826.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/352.0.0.21.117;]"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Redmi Note 9 Pro",
+      "marketingName": "Redmi Note 9 Pro",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.67
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Facebook App",
+      "version": "352.0.0.21.117",
+      "manufacturer": "facebook",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "97.0.4692.98",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; M2003J15SC Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/352.0.0.21.117;]"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "M2003J15SC",
+      "marketingName": "Redmi Note 9",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.53
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Facebook App",
+      "version": "352.0.0.21.117",
+      "manufacturer": "facebook",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "97.0.4692.98",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 9; Redmi Note 5 Build/PKQ1.180904.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/352.0.0.21.117;]"
     },
     "device": {
@@ -762,11 +846,11 @@
     "device": {
       "architecture": null,
       "deviceName": "M2003J15SC",
-      "marketingName": "Redmi 10X 4G",
+      "marketingName": "Redmi Note 9",
       "manufacturer": "xiaomi",
       "brand": "xiaomi",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 2340,
         "height": 1080,
@@ -1014,11 +1098,11 @@
     "device": {
       "architecture": null,
       "deviceName": "M2003J15SC",
-      "marketingName": "Redmi 10X 4G",
+      "marketingName": "Redmi Note 9",
       "manufacturer": "xiaomi",
       "brand": "xiaomi",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 2340,
         "height": 1080,
@@ -1139,17 +1223,17 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "MI Note",
-      "marketingName": "MI Note",
+      "deviceName": "Redmi Note 8",
+      "marketingName": "Redmi Note 8",
       "manufacturer": "xiaomi",
       "brand": "xiaomi",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
-        "width": 1920,
+        "width": 2340,
         "height": 1080,
         "touch": true,
-        "size": 5.7
+        "size": 6.3
       },
       "type": "phablet",
       "ismobile": true,
@@ -1224,11 +1308,11 @@
     "device": {
       "architecture": null,
       "deviceName": "M2003J15SC",
-      "marketingName": "Redmi 10X 4G",
+      "marketingName": "Redmi Note 9",
       "manufacturer": "xiaomi",
       "brand": "xiaomi",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 2340,
         "height": 1080,
@@ -1266,9 +1350,9 @@
     "device": {
       "architecture": null,
       "deviceName": "M2007J20CG",
-      "marketingName": "Poco X3 NFC",
+      "marketingName": "X3 NFC",
       "manufacturer": "xiaomi",
-      "brand": "xiaomi",
+      "brand": "poco",
       "dualOrientation": null,
       "simCount": null,
       "display": {
@@ -1479,8 +1563,8 @@
       "marketingName": "Redmi 9C NFC (Global)",
       "manufacturer": "xiaomi",
       "brand": "xiaomi",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 1600,
         "height": 720,
@@ -1518,11 +1602,11 @@
     "device": {
       "architecture": null,
       "deviceName": "M2003J15SC",
-      "marketingName": "Redmi 10X 4G",
+      "marketingName": "Redmi Note 9",
       "manufacturer": "xiaomi",
       "brand": "xiaomi",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 2340,
         "height": 1080,
@@ -1770,11 +1854,11 @@
     "device": {
       "architecture": null,
       "deviceName": "M2006C3LVG",
-      "marketingName": "Redmi 9AT Standard Edition",
+      "marketingName": "Redmi 9AT",
       "manufacturer": "xiaomi",
       "brand": "xiaomi",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 1600,
         "height": 720,
@@ -2106,11 +2190,11 @@
     "device": {
       "architecture": null,
       "deviceName": "M2003J15SC",
-      "marketingName": "Redmi 10X 4G",
+      "marketingName": "Redmi Note 9",
       "manufacturer": "xiaomi",
       "brand": "xiaomi",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 2340,
         "height": 1080,
@@ -2232,11 +2316,11 @@
     "device": {
       "architecture": null,
       "deviceName": "M2003J15SC",
-      "marketingName": "Redmi 10X 4G",
+      "marketingName": "Redmi Note 9",
       "manufacturer": "xiaomi",
       "brand": "xiaomi",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 2340,
         "height": 1080,
@@ -2274,11 +2358,11 @@
     "device": {
       "architecture": null,
       "deviceName": "M2003J15SC",
-      "marketingName": "Redmi 10X 4G",
+      "marketingName": "Redmi Note 9",
       "manufacturer": "xiaomi",
       "brand": "xiaomi",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 2340,
         "height": 1080,
@@ -2358,11 +2442,11 @@
     "device": {
       "architecture": null,
       "deviceName": "M2003J15SC",
-      "marketingName": "Redmi 10X 4G",
+      "marketingName": "Redmi Note 9",
       "manufacturer": "xiaomi",
       "brand": "xiaomi",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 2340,
         "height": 1080,
@@ -2526,11 +2610,11 @@
     "device": {
       "architecture": null,
       "deviceName": "M2003J15SC",
-      "marketingName": "Redmi 10X 4G",
+      "marketingName": "Redmi Note 9",
       "manufacturer": "xiaomi",
       "brand": "xiaomi",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 2340,
         "height": 1080,
@@ -2865,17 +2949,17 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "MI Note",
-      "marketingName": "MI Note",
+      "deviceName": "Redmi Note 8",
+      "marketingName": "Redmi Note 8",
       "manufacturer": "xiaomi",
       "brand": "xiaomi",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
-        "width": 1920,
+        "width": 2340,
         "height": 1080,
         "touch": true,
-        "size": 5.7
+        "size": 6.3
       },
       "type": "phablet",
       "ismobile": true,
@@ -2885,7 +2969,7 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "28.0.0",
+      "version": "9.0.0",
       "manufacturer": "google"
     },
     "client": {
@@ -3034,11 +3118,11 @@
     "device": {
       "architecture": null,
       "deviceName": "M2003J15SC",
-      "marketingName": "Redmi 10X 4G",
+      "marketingName": "Redmi Note 9",
       "manufacturer": "xiaomi",
       "brand": "xiaomi",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 2340,
         "height": 1080,
@@ -3285,17 +3369,17 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "MI Note",
-      "marketingName": "MI Note",
+      "deviceName": "Redmi Note 8",
+      "marketingName": "Redmi Note 8",
       "manufacturer": "xiaomi",
       "brand": "xiaomi",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
-        "width": 1920,
+        "width": 2340,
         "height": 1080,
         "touch": true,
-        "size": 5.7
+        "size": 6.3
       },
       "type": "phablet",
       "ismobile": true,
@@ -3318,6 +3402,90 @@
     "engine": {
       "name": "Blink",
       "version": "115.0.5790.166",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; M2003J15SC Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.110 Mobile Safari/537.36 Instagram 164.0.0.46.123 Android (29/10; 440dpi; 1080x2196; Xiaomi/Redmi; M2003J15SC; merlinnfc; mt6768; ru_RU; 252055945)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "M2003J15SC",
+      "marketingName": "Redmi Note 9",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.53
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Instagram App",
+      "version": "164.0.0.46.123",
+      "manufacturer": "facebook",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "86.0.4240.110",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; Redmi Note 8 Build/PKQ1.190616.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.110 Mobile Safari/537.36 Instagram 164.0.0.46.123 Android (28/9; 440dpi; 1080x2130; Xiaomi/xiaomi; Redmi Note 8; ginkgo; qcom; es_US; 252055945)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Redmi Note 8",
+      "marketingName": "Redmi Note 8",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.3
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Instagram App",
+      "version": "164.0.0.46.123",
+      "manufacturer": "facebook",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "86.0.4240.110",
       "manufacturer": "google"
     }
   }

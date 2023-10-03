@@ -1369,5 +1369,25 @@
         "HarmonyOS"
       ]
     }
+  },
+  "arch-linux": {
+    "name": "ArchLinux",
+    "marketingName": "ArchLinux",
+    "manufacturer": "unknown",
+    "version": {
+      "factory": null,
+      "search": null
+    }
+  },
+  "pardus": {
+    "name": "Pardus",
+    "marketingName": "Pardus",
+    "manufacturer": "unknown",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Pardus"
+      ]
+    }
   }
 }

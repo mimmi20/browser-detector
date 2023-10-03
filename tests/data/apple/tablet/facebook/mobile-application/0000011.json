@@ -1,6 +1,90 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 10_1_1 like Mac OS X) AppleWebKit/602.2.14 (KHTML, like Gecko) Mobile/14B100 [FBAN/FBIOS;FBAV/163.0.0.54.96;FBBV/96876057;FBDV/iPad4,1;FBMD/iPad;FBSN/iOS;FBSV/10.1.1;FBSS/2;FBCR/;FBID/tablet;FBLC/en_GB;FBOP/5;FBRV/96876057]"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPad 4,1",
+      "marketingName": "iPad Air",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 2048,
+        "height": 1536,
+        "touch": true,
+        "size": 9.7
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "10.1.1",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "Facebook App",
+      "version": "163.0.0.54.96",
+      "manufacturer": "facebook",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "602.2.14",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 11_2_5 like Mac OS X) AppleWebKit/604.5.6 (KHTML, like Gecko) Mobile/15D60 [FBAN/FBIOS;FBAV/162.0.0.47.94;FBBV/95649710;FBDV/iPad6,11;FBMD/iPad;FBSN/iOS;FBSV/11.2.5;FBSS/2;FBCR/;FBID/tablet;FBLC/en_GB;FBOP/5;FBRV/0]"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPad 6,11",
+      "marketingName": "iPad (9.7, 5th Gen.)",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 2732,
+        "height": 2048,
+        "touch": true,
+        "size": 9.7
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.2.5",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "Facebook App",
+      "version": "162.0.0.47.94",
+      "manufacturer": "facebook",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "604.5.6",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (iPad; CPU OS 11_2_6 like Mac OS X) AppleWebKit/604.5.6 (KHTML, like Gecko) Mobile/15D100 [FBAN/FBIOS;FBAV/170.1.0.80.91;FBBV/106613464;FBDV/iPad6,11;FBMD/iPad;FBSN/iOS;FBSV/11.2.6;FBSS/2;FBCR/;FBID/tablet;FBLC/en_GB;FBOP/5;FBRV/0]"
     },
     "device": {
@@ -193,7 +277,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.1.1",
+      "version": "11.1.2",
       "manufacturer": "apple"
     },
     "client": {
@@ -1621,7 +1705,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.1.1",
+      "version": "11.1.2",
       "manufacturer": "apple"
     },
     "client": {
@@ -1831,7 +1915,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.1.1",
+      "version": "11.1.2",
       "manufacturer": "apple"
     },
     "client": {
@@ -2585,9 +2669,9 @@
       "bits": null
     },
     "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "13.3.1",
       "manufacturer": "apple"
     },
     "client": {
@@ -2627,9 +2711,9 @@
       "bits": null
     },
     "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "13.3.1",
       "manufacturer": "apple"
     },
     "client": {
@@ -2669,9 +2753,9 @@
       "bits": null
     },
     "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "13.3.1",
       "manufacturer": "apple"
     },
     "client": {
@@ -2753,9 +2837,9 @@
       "bits": null
     },
     "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "13.3.1",
       "manufacturer": "apple"
     },
     "client": {
@@ -2837,9 +2921,9 @@
       "bits": null
     },
     "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "13.3.0",
       "manufacturer": "apple"
     },
     "client": {
@@ -2879,9 +2963,9 @@
       "bits": null
     },
     "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "13.4.0",
       "manufacturer": "apple"
     },
     "client": {
@@ -2921,9 +3005,9 @@
       "bits": null
     },
     "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "13.4.0",
       "manufacturer": "apple"
     },
     "client": {
@@ -2963,9 +3047,9 @@
       "bits": null
     },
     "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "13.4.0",
       "manufacturer": "apple"
     },
     "client": {
@@ -3005,9 +3089,9 @@
       "bits": null
     },
     "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "13.4.0",
       "manufacturer": "apple"
     },
     "client": {
@@ -3089,9 +3173,9 @@
       "bits": null
     },
     "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "13.3.1",
       "manufacturer": "apple"
     },
     "client": {
@@ -3131,9 +3215,9 @@
       "bits": null
     },
     "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "13.3.0",
       "manufacturer": "apple"
     },
     "client": {
@@ -3173,9 +3257,9 @@
       "bits": null
     },
     "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "13.3.1",
       "manufacturer": "apple"
     },
     "client": {
@@ -3215,9 +3299,9 @@
       "bits": null
     },
     "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "13.3.1",
       "manufacturer": "apple"
     },
     "client": {
@@ -3257,9 +3341,9 @@
       "bits": null
     },
     "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "13.4.0",
       "manufacturer": "apple"
     },
     "client": {
@@ -3299,9 +3383,9 @@
       "bits": null
     },
     "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "13.4.0",
       "manufacturer": "apple"
     },
     "client": {
@@ -3341,9 +3425,9 @@
       "bits": null
     },
     "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "13.4.0",
       "manufacturer": "apple"
     },
     "client": {
@@ -3383,9 +3467,9 @@
       "bits": null
     },
     "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "13.4.0",
       "manufacturer": "apple"
     },
     "client": {
@@ -3427,7 +3511,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "12.4.5",
       "manufacturer": "apple"
     },
     "client": {
@@ -3467,9 +3551,9 @@
       "bits": null
     },
     "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "13.4.0",
       "manufacturer": "apple"
     },
     "client": {
@@ -3509,9 +3593,9 @@
       "bits": null
     },
     "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "13.4.0",
       "manufacturer": "apple"
     },
     "client": {
@@ -3551,9 +3635,9 @@
       "bits": null
     },
     "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "13.3.1",
       "manufacturer": "apple"
     },
     "client": {
@@ -3595,7 +3679,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "12.4.6",
       "manufacturer": "apple"
     },
     "client": {
@@ -3635,9 +3719,9 @@
       "bits": null
     },
     "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "13.3.1",
       "manufacturer": "apple"
     },
     "client": {
@@ -3677,9 +3761,9 @@
       "bits": null
     },
     "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "13.3.1",
       "manufacturer": "apple"
     },
     "client": {
@@ -3719,9 +3803,9 @@
       "bits": null
     },
     "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "13.3.1",
       "manufacturer": "apple"
     },
     "client": {
@@ -3761,9 +3845,9 @@
       "bits": null
     },
     "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "13.3.1",
       "manufacturer": "apple"
     },
     "client": {
@@ -3845,9 +3929,9 @@
       "bits": null
     },
     "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "13.3.1",
       "manufacturer": "apple"
     },
     "client": {
@@ -3887,9 +3971,9 @@
       "bits": null
     },
     "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "13.3.1",
       "manufacturer": "apple"
     },
     "client": {
@@ -3931,7 +4015,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "12.4.5",
       "manufacturer": "apple"
     },
     "client": {
@@ -3971,9 +4055,9 @@
       "bits": null
     },
     "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "13.4.1",
       "manufacturer": "apple"
     },
     "client": {
@@ -4013,9 +4097,9 @@
       "bits": null
     },
     "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "13.4.1",
       "manufacturer": "apple"
     },
     "client": {
@@ -4057,7 +4141,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "12.4.6",
       "manufacturer": "apple"
     },
     "client": {
@@ -4097,98 +4181,14 @@
       "bits": null
     },
     "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "13.4.1",
       "manufacturer": "apple"
     },
     "client": {
       "name": "Instagram App",
       "version": "142.0.0.22.109",
-      "manufacturer": "facebook",
-      "type": "mobile-application",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPad; CPU OS 10_3_3 like Mac OS X) AppleWebKit/603.3.8 (KHTML, like Gecko) Mobile/14G60 [FBAN/FBIOS;FBDV/iPad3,4;FBMD/iPad;FBSN/iOS;FBSV/10.3.3;FBSS/2;FBID/tablet;FBLC/de_DE;FBOP/5] comdirect/1.0 (appVersion:20.5.2;deviceName:apple ipad;deviceType:tablet)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "iPad 3,4",
-      "marketingName": "iPad 4",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 2048,
-        "height": 1536,
-        "touch": true,
-        "size": 9.7
-      },
-      "type": "tablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "10.3.3",
-      "manufacturer": "apple"
-    },
-    "client": {
-      "name": "Facebook App",
-      "version": null,
-      "manufacturer": "facebook",
-      "type": "mobile-application",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "603.3.8",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPad; CPU OS 12_1_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/16D57 [FBAN/FBIOS;FBDV/iPad6,11;FBMD/iPad;FBSN/iOS;FBSV/12.1.4;FBSS/2;FBID/tablet;FBLC/tr_TR;FBOP/5] comdirect/1.0 (appVersion:20.5.2;deviceName:apple ipad;deviceType:tablet)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "iPad 6,11",
-      "marketingName": "iPad (9.7, 5th Gen.)",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 2732,
-        "height": 2048,
-        "touch": true,
-        "size": 9.7
-      },
-      "type": "tablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "12.1.4",
-      "manufacturer": "apple"
-    },
-    "client": {
-      "name": "Facebook App",
-      "version": null,
       "manufacturer": "facebook",
       "type": "mobile-application",
       "isbot": false

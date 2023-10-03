@@ -2100,8 +2100,8 @@
     "marketingName": "Galaxy S20 FE 4G",
     "manufacturer": "samsung",
     "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 2400,
       "height": 1080,
@@ -2109,6 +2109,22 @@
       "size": 6.5
     },
     "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sm-g780g": {
+    "deviceName": "SM-G780G",
+    "marketingName": "Galaxy S20 FE 4G",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.5
+    },
+    "type": "smartphone",
     "platform": "android"
   },
   "samsung sm-g781w": {
@@ -2971,6 +2987,150 @@
       "height": 1080,
       "touch": true,
       "size": 6.7
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sm-g990b": {
+    "deviceName": "SM-G990B",
+    "marketingName": "Galaxy S21 FE 5G",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2340,
+      "height": 1080,
+      "touch": true,
+      "size": 6.4
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sm-g990b2": {
+    "deviceName": "SM-G990B2",
+    "marketingName": "Galaxy S21 FE 5G",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2340,
+      "height": 1080,
+      "touch": true,
+      "size": 6.4
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sm-g990u": {
+    "deviceName": "SM-G990U",
+    "marketingName": "Galaxy S21 FE 5G (USA)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2340,
+      "height": 1080,
+      "touch": true,
+      "size": 6.4
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sm-g990u1": {
+    "deviceName": "SM-G990U1",
+    "marketingName": "Galaxy S21 FE 5G (USA unlocked)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2340,
+      "height": 1080,
+      "touch": true,
+      "size": 6.4
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sm-g990u2": {
+    "deviceName": "SM-G990U2",
+    "marketingName": "Galaxy S21 FE 5G (USA)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2340,
+      "height": 1080,
+      "touch": true,
+      "size": 6.4
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sm-g990w": {
+    "deviceName": "SM-G990W",
+    "marketingName": "Galaxy S21 FE 5G (Canada)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2340,
+      "height": 1080,
+      "touch": true,
+      "size": 6.4
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sm-g990w2": {
+    "deviceName": "SM-G990W2",
+    "marketingName": "Galaxy S21 FE 5G (Canada)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2340,
+      "height": 1080,
+      "touch": true,
+      "size": 6.4
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sm-g990e": {
+    "deviceName": "SM-G990E",
+    "marketingName": "Galaxy S21 FE 5G",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2340,
+      "height": 1080,
+      "touch": true,
+      "size": 6.4
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sm-g9900": {
+    "deviceName": "SM-G9900",
+    "marketingName": "Galaxy S21 FE 5G (China)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2340,
+      "height": 1080,
+      "touch": true,
+      "size": 6.4
     },
     "type": "phablet",
     "platform": "android"

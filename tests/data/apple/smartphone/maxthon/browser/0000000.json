@@ -1177,6 +1177,48 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_3_2 like Mac OS X; xx)Maxthon AppleWebKit/525.18.1 (KHTML, like Gecko) Version/3.1.1 Mobile/5G77 Safari/525.20"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "4.3.2",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "Maxthon",
+      "version": "3.1.1",
+      "manufacturer": "maxthon",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "525.18.1",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "MxBrowser-iPhone/40 CFNetwork/672.0.8 Darwin/14.0.0"
     },
     "device": {
@@ -1795,6 +1837,48 @@
     "client": {
       "name": "Maxthon",
       "version": "322.0.0",
+      "manufacturer": "maxthon",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "1410.0.3",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "MxBrowser-iPhone/325 CFNetwork/1410.0.3 Darwin/22.6.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "16.6.0",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "Maxthon",
+      "version": "325.0.0",
       "manufacturer": "maxthon",
       "type": "browser",
       "isbot": false

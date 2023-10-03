@@ -449,16 +449,32 @@
   },
   "zte a2019g pro": {
     "deviceName": "A2019G Pro",
-    "marketingName": "Axon Pro",
+    "marketingName": "Axon 9 Pro",
     "manufacturer": "zte",
     "brand": "zte",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
-      "width": 1920,
+      "width": 2248,
       "height": 1080,
       "touch": true,
-      "size": 5.5
+      "size": 6.21
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "zte a2019 pro": {
+    "deviceName": "A2019 Pro",
+    "marketingName": "Axon 9 Pro",
+    "manufacturer": "zte",
+    "brand": "zte",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2248,
+      "height": 1080,
+      "touch": true,
+      "size": 6.21
     },
     "type": "smartphone",
     "platform": "android"
@@ -6831,6 +6847,22 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "zte a2022": {
+    "deviceName": "A2022",
+    "marketingName": "Axon 30 Pro 5G",
+    "manufacturer": "zte",
+    "brand": "zte",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.67
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "zte 8031": {
     "deviceName": "8031",
     "marketingName": "Blade V2022 4G",
@@ -7451,6 +7483,134 @@
       "height": 1080,
       "touch": true,
       "size": 6.47
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "zte nx712j": {
+    "deviceName": "NX712J",
+    "marketingName": "Nubia Z50 Ultra",
+    "manufacturer": "zte",
+    "brand": "zte",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2480,
+      "height": 1116,
+      "touch": true,
+      "size": 6.8
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "zte 8140n": {
+    "deviceName": "8140N",
+    "marketingName": "Blade V41 Vita",
+    "manufacturer": "zte",
+    "brand": "zte",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2408,
+      "height": 1080,
+      "touch": true,
+      "size": 6.6
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "zte 8045": {
+    "deviceName": "8045",
+    "marketingName": "Blade V40 Vita",
+    "manufacturer": "zte",
+    "brand": "zte",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1600,
+      "height": 720,
+      "touch": true,
+      "size": 6.75
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "zte a2322g": {
+    "deviceName": "A2322G",
+    "marketingName": "Axon 30 5G",
+    "manufacturer": "zte",
+    "brand": "zte",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2460,
+      "height": 1080,
+      "touch": true,
+      "size": 6.92
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "zte a2322": {
+    "deviceName": "A2322",
+    "marketingName": "Axon 30 5G",
+    "manufacturer": "zte",
+    "brand": "zte",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2460,
+      "height": 1080,
+      "touch": true,
+      "size": 6.92
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "zte v1050": {
+    "deviceName": "V1050",
+    "marketingName": "Blade 20",
+    "manufacturer": "zte",
+    "brand": "zte",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1560,
+      "height": 720,
+      "touch": true,
+      "size": 6.49
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "zte nx666j": {
+    "deviceName": "NX666J",
+    "marketingName": "Nubia Red Magic 6R",
+    "manufacturer": "zte",
+    "brand": "zte",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.67
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "zte a0616": {
+    "deviceName": "A0616",
+    "marketingName": "Blade A3",
+    "manufacturer": "zte",
+    "brand": "zte",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 5.5
     },
     "type": "smartphone",
     "platform": "android"

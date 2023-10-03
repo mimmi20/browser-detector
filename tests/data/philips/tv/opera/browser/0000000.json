@@ -177,8 +177,8 @@
       "marketingName": "QM163E",
       "manufacturer": "philips",
       "brand": "philips",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 0,
       "display": {
         "width": 3840,
         "height": 2160,
@@ -345,8 +345,8 @@
       "marketingName": "QM163E",
       "manufacturer": "philips",
       "brand": "philips",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 0,
       "display": {
         "width": 3840,
         "height": 2160,
@@ -585,6 +585,48 @@
       "name": "Presto",
       "version": "2.12.407",
       "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Andr0id 8.0; QM163E Build/OPR5.170623.014) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.112 Safari/537.36 OPR/32.0.2128.0 OMI/4.8.0.142.Racer2.51"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "QM163E",
+      "marketingName": "QM163E",
+      "manufacturer": "philips",
+      "brand": "philips",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 3840,
+        "height": 2160,
+        "touch": false,
+        "size": 49
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Opera Devices",
+      "version": "4.8.0.142",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "49.0.2623.112",
+      "manufacturer": "google"
     }
   }
 ]

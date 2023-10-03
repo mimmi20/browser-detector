@@ -403,7 +403,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "9.1.0-beta+5",
+      "version": "9.1.0",
       "manufacturer": "apple"
     },
     "client": {
@@ -416,6 +416,90 @@
     "engine": {
       "name": "WebKit",
       "version": "601.1.46",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_1_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0 Mobile/15E148 Safari/605.1 NAVER(inapp; search; 700; 10.20.0; 11PROMAX)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "13.1.2",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "Naver",
+      "version": null,
+      "manufacturer": "nhn-corporation",
+      "type": "bot",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 71 like Mac OS X) AppleWebKit/537.51.2 (KHTML like Gecko) Mobile/11D167 NAVER(inapp; search; 370; 5.7.1; 5)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "71.0.0",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "Naver",
+      "version": null,
+      "manufacturer": "nhn-corporation",
+      "type": "bot",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.51.2",
       "manufacturer": "apple"
     }
   },
@@ -487,7 +571,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "4.3.5",
+      "version": "435.0.0",
       "manufacturer": "apple"
     },
     "client": {
@@ -500,6 +584,90 @@
     "engine": {
       "name": "WebKit",
       "version": "533.17.9",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_1_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.1 Mobile/15E148 Safari/605.1 NAVER(inapp; search; 1000; 11.8.10; 12PROMAX)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "15.1.1",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "Naver",
+      "version": null,
+      "manufacturer": "nhn-corporation",
+      "type": "bot",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0 Mobile/15E148 Safari/605.1 NAVER(inapp; search; 900; 11.2.5; 12)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "14.5.0",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "Naver",
+      "version": null,
+      "manufacturer": "nhn-corporation",
+      "type": "bot",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
       "manufacturer": "apple"
     }
   }

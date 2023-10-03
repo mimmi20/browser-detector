@@ -1,48 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (X11; Linux x86_64; rv:34.0) Gecko/20100101 Firefox/34.0 SeaMonkey/2.31"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Linux Desktop",
-      "marketingName": "Linux Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "linux-foundation"
-    },
-    "client": {
-      "name": "SeaMonkey",
-      "version": "2.31.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "pim",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": "34.0.0",
-      "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:6.0.2) Gecko/20110902 Thunderbird/6.0.2"
     },
     "device": {
@@ -1241,10 +1199,10 @@
       "bits": null
     },
     "os": {
-      "name": "FreeBSD",
-      "marketingName": "FreeBSD",
+      "name": "Linux",
+      "marketingName": "Linux",
       "version": null,
-      "manufacturer": "free-bsd-foundation"
+      "manufacturer": "linux-foundation"
     },
     "client": {
       "name": "Thunderbird",
@@ -1829,10 +1787,10 @@
       "bits": null
     },
     "os": {
-      "name": "FreeBSD",
-      "marketingName": "FreeBSD",
+      "name": "Linux",
+      "marketingName": "Linux",
       "version": null,
-      "manufacturer": "free-bsd-foundation"
+      "manufacturer": "linux-foundation"
     },
     "client": {
       "name": "SeaMonkey",
@@ -2269,48 +2227,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (X11; OpenBSD i686; rv:33.0) Gecko/20100101 Firefox/33.0 SeaMonkey/2.30"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Desktop",
-      "marketingName": "general Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "OpenBSD",
-      "marketingName": "OpenBSD",
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "SeaMonkey",
-      "version": "2.30.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "pim",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": "33.0.0",
-      "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:12.0) Gecko/20120429 SeaMonkey/2.9.1"
     },
     "device": {
@@ -2627,10 +2543,10 @@
       "bits": null
     },
     "os": {
-      "name": "OpenBSD",
-      "marketingName": "OpenBSD",
+      "name": "Linux",
+      "marketingName": "Linux",
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "linux-foundation"
     },
     "client": {
       "name": "SeaMonkey",
@@ -2810,48 +2726,6 @@
     "engine": {
       "name": "Gecko",
       "version": "49.0.0",
-      "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (X11; FreeBSD i386; rv:43.0) Gecko/20100101 Firefox/43.0 SeaMonkey/2.40"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Desktop",
-      "marketingName": "general Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "FreeBSD",
-      "marketingName": "FreeBSD",
-      "version": null,
-      "manufacturer": "free-bsd-foundation"
-    },
-    "client": {
-      "name": "SeaMonkey",
-      "version": "2.40.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "pim",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": "43.0.0",
       "manufacturer": "mozilla-foundation"
     }
   },
@@ -3635,10 +3509,10 @@
       "bits": null
     },
     "os": {
-      "name": "FreeBSD",
-      "marketingName": "FreeBSD",
+      "name": "Linux",
+      "marketingName": "Linux",
       "version": null,
-      "manufacturer": "free-bsd-foundation"
+      "manufacturer": "linux-foundation"
     },
     "client": {
       "name": "SeaMonkey",
@@ -4196,6 +4070,132 @@
     "engine": {
       "name": "Gecko",
       "version": "19.0.0",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 6.3; WOW64; rv:33.0) Gecko/20100101 Thunderbird/33.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows",
+      "marketingName": "Windows",
+      "version": "8.1.0",
+      "manufacturer": "microsoft"
+    },
+    "client": {
+      "name": "Thunderbird",
+      "version": "33.0.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "pim",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "33.0.0",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows; U; Win98; de; rv:1.8.1.24) Gecko/20100228 Thunderbird/2.0.0.24"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows 98",
+      "marketingName": "Windows 98",
+      "version": "98.0.0",
+      "manufacturer": "microsoft"
+    },
+    "client": {
+      "name": "Thunderbird",
+      "version": "2.0.0.24",
+      "manufacturer": "mozilla-foundation",
+      "type": "pim",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "1.8.1.24",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 6.3; WOW64; rv:35.0) Gecko/20100101 Thunderbird/35.0a2"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows",
+      "marketingName": "Windows",
+      "version": "8.1.0",
+      "manufacturer": "microsoft"
+    },
+    "client": {
+      "name": "Thunderbird",
+      "version": "35.0.0-alpha+2",
+      "manufacturer": "mozilla-foundation",
+      "type": "pim",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "35.0.0",
       "manufacturer": "mozilla-foundation"
     }
   }

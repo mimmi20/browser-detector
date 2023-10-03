@@ -109,7 +109,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "7.0.0-beta+6",
+      "version": "7.0.0",
       "manufacturer": "apple"
     },
     "client": {
@@ -1135,48 +1135,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU OS 9_0_2 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) CriOS/38.0.2125.59 Mobile/12A405 Safari/600.1.4"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "iPhone",
-      "marketingName": "iPhone",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.5
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "8.0.2",
-      "manufacturer": "apple"
-    },
-    "client": {
-      "name": "Chrome for iOS",
-      "version": "38.0.2125.59",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "600.1.4",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/537.51.2 (KHTML, like Gecko) CriOS/37.0.2062.52 Mobile/13B143 Safari/9537.53"
     },
     "device": {
@@ -1802,6 +1760,48 @@
     "engine": {
       "name": "WebKit",
       "version": "537.51.1",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 8_3 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) CriOS/38.0.2125.67 Mobile/12F70 Safari/600.1.4"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "8.3.0",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "Chrome for iOS",
+      "version": "38.0.2125.67",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "600.1.4",
       "manufacturer": "apple"
     }
   },
@@ -3007,7 +3007,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "10.0.0-beta+1",
+      "version": "10.0.0",
       "manufacturer": "apple"
     },
     "client": {
@@ -3133,7 +3133,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "10.0.0-beta+8",
+      "version": "10.0.0",
       "manufacturer": "apple"
     },
     "client": {
@@ -3763,7 +3763,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "10.3.2-beta+1",
+      "version": "10.3.2",
       "manufacturer": "apple"
     },
     "client": {
@@ -4141,7 +4141,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "5.1.1",
+      "version": "511.0.0",
       "manufacturer": "apple"
     },
     "client": {
@@ -4159,7 +4159,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 6_0_1 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) CriOS/34.0.1847.18 Mobile/10A525 Safari/8536.25"
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 601 like Mac OS X) AppleWebKit/536.26 (KHTML like Gecko) CriOS/36.0.1985.57 Mobile/10A525 Safari/8536.25"
     },
     "device": {
       "architecture": null,
@@ -4183,12 +4183,12 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "6.0.1",
+      "version": "601.0.0",
       "manufacturer": "apple"
     },
     "client": {
       "name": "Chrome for iOS",
-      "version": "34.0.1847.18",
+      "version": "36.0.1985.57",
       "manufacturer": "google",
       "type": "browser",
       "isbot": false

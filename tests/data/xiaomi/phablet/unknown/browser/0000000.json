@@ -425,17 +425,17 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "MI Note",
-      "marketingName": "MI Note",
+      "deviceName": "Redmi Note 8",
+      "marketingName": "Redmi Note 8",
       "manufacturer": "xiaomi",
       "brand": "xiaomi",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
-        "width": 1920,
+        "width": 2340,
         "height": 1080,
         "touch": true,
-        "size": 5.7
+        "size": 6.3
       },
       "type": "phablet",
       "ismobile": true,
@@ -510,11 +510,11 @@
     "device": {
       "architecture": null,
       "deviceName": "M2003J15SC",
-      "marketingName": "Redmi 10X 4G",
+      "marketingName": "Redmi Note 9",
       "manufacturer": "xiaomi",
       "brand": "xiaomi",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 2340,
         "height": 1080,
@@ -1350,11 +1350,11 @@
     "device": {
       "architecture": null,
       "deviceName": "M2003J15SC",
-      "marketingName": "Redmi 10X 4G",
+      "marketingName": "Redmi Note 9",
       "manufacturer": "xiaomi",
       "brand": "xiaomi",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 2340,
         "height": 1080,
@@ -1433,17 +1433,17 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "MI Note",
-      "marketingName": "MI Note",
+      "deviceName": "Redmi Note 8",
+      "marketingName": "Redmi Note 8",
       "manufacturer": "xiaomi",
       "brand": "xiaomi",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
-        "width": 1920,
+        "width": 2340,
         "height": 1080,
         "touch": true,
-        "size": 5.7
+        "size": 6.3
       },
       "type": "phablet",
       "ismobile": true,
@@ -1560,9 +1560,9 @@
     "device": {
       "architecture": null,
       "deviceName": "M2007J20CG",
-      "marketingName": "Poco X3 NFC",
+      "marketingName": "X3 NFC",
       "manufacturer": "xiaomi",
-      "brand": "xiaomi",
+      "brand": "poco",
       "dualOrientation": null,
       "simCount": null,
       "display": {
@@ -1602,9 +1602,9 @@
     "device": {
       "architecture": null,
       "deviceName": "M2007J20CG",
-      "marketingName": "Poco X3 NFC",
+      "marketingName": "X3 NFC",
       "manufacturer": "xiaomi",
-      "brand": "xiaomi",
+      "brand": "poco",
       "dualOrientation": null,
       "simCount": null,
       "display": {
@@ -2105,17 +2105,59 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "MI Note",
-      "marketingName": "MI Note",
+      "deviceName": "Redmi Note 8",
+      "marketingName": "Redmi Note 8",
       "manufacturer": "xiaomi",
       "brand": "xiaomi",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
-        "width": 1920,
+        "width": 2340,
         "height": 1080,
         "touch": true,
-        "size": 5.7
+        "size": 6.3
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Ecosia",
+      "version": "88.0.4324.181",
+      "manufacturer": "unknown",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "88.0.4324.181",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; Redmi Note 7 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.181 Mobile Safari/537.36 (Ecosia android@88.0.4324.181)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Redmi Note 7 Pro",
+      "marketingName": "Redmi Note 7 Pro",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.3
       },
       "type": "phablet",
       "ismobile": true,
@@ -2273,17 +2315,17 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "MI Note",
-      "marketingName": "MI Note",
+      "deviceName": "Redmi Note 8",
+      "marketingName": "Redmi Note 8",
       "manufacturer": "xiaomi",
       "brand": "xiaomi",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
-        "width": 1920,
+        "width": 2340,
         "height": 1080,
         "touch": true,
-        "size": 5.7
+        "size": 6.3
       },
       "type": "phablet",
       "ismobile": true,
@@ -2362,8 +2404,8 @@
       "marketingName": "Redmi 9C NFC (Global)",
       "manufacturer": "xiaomi",
       "brand": "xiaomi",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 1600,
         "height": 720,
@@ -2653,9 +2695,9 @@
     "device": {
       "architecture": null,
       "deviceName": "M2007J20CG",
-      "marketingName": "Poco X3 NFC",
+      "marketingName": "X3 NFC",
       "manufacturer": "xiaomi",
-      "brand": "xiaomi",
+      "brand": "poco",
       "dualOrientation": null,
       "simCount": null,
       "display": {
@@ -2821,9 +2863,9 @@
     "device": {
       "architecture": null,
       "deviceName": "M2007J20CG",
-      "marketingName": "Poco X3 NFC",
+      "marketingName": "X3 NFC",
       "manufacturer": "xiaomi",
-      "brand": "xiaomi",
+      "brand": "poco",
       "dualOrientation": null,
       "simCount": null,
       "display": {
@@ -2947,11 +2989,11 @@
     "device": {
       "architecture": null,
       "deviceName": "M2003J15SC",
-      "marketingName": "Redmi 10X 4G",
+      "marketingName": "Redmi Note 9",
       "manufacturer": "xiaomi",
       "brand": "xiaomi",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 2340,
         "height": 1080,
@@ -3030,17 +3072,17 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "MI Note",
-      "marketingName": "MI Note",
+      "deviceName": "Redmi Note 8",
+      "marketingName": "Redmi Note 8",
       "manufacturer": "xiaomi",
       "brand": "xiaomi",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
-        "width": 1920,
+        "width": 2340,
         "height": 1080,
         "touch": true,
-        "size": 5.7
+        "size": 6.3
       },
       "type": "phablet",
       "ismobile": true,
@@ -3241,9 +3283,9 @@
     "device": {
       "architecture": null,
       "deviceName": "M2007J20CG",
-      "marketingName": "Poco X3 NFC",
+      "marketingName": "X3 NFC",
       "manufacturer": "xiaomi",
-      "brand": "xiaomi",
+      "brand": "poco",
       "dualOrientation": null,
       "simCount": null,
       "display": {
@@ -3273,6 +3315,48 @@
     "engine": {
       "name": "Blink",
       "version": "101.0.4951.41",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; 2201122G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.0.0 Mobile Safari/537.36 (Ecosia android@101.0.4951.41)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "2201122G",
+      "marketingName": "12 Pro",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 3200,
+        "height": 1440,
+        "touch": true,
+        "size": 6.73
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Ecosia",
+      "version": "101.0.4951.41",
+      "manufacturer": "unknown",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "101.0.0.0",
       "manufacturer": "google"
     }
   },

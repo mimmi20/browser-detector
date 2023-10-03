@@ -4758,8 +4758,10 @@
     "manufacturer": "soul-soft",
     "type": "browser",
     "version": {
-      "factory": null,
-      "search": null
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Soul"
+      ]
     },
     "engine": null
   },
@@ -5152,6 +5154,18 @@
     "version": {
       "factory": null,
       "search": null
+    },
+    "engine": null
+  },
+  "aol desktop": {
+    "name": "AOL Desktop",
+    "manufacturer": "aol",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "ADG"
+      ]
     },
     "engine": null
   }

@@ -241,9 +241,9 @@
   },
   "xiaomi m2007j20cg": {
     "deviceName": "M2007J20CG",
-    "marketingName": "Poco X3 NFC",
+    "marketingName": "X3 NFC",
     "manufacturer": "xiaomi",
-    "brand": "xiaomi",
+    "brand": "poco",
     "dualOrientation": null,
     "simCount": null,
     "display": {
@@ -257,9 +257,9 @@
   },
   "xiaomi m2007j20ct": {
     "deviceName": "M2007J20CT",
-    "marketingName": "Poco X3 NFC",
+    "marketingName": "X3 NFC",
     "manufacturer": "xiaomi",
-    "brand": "xiaomi",
+    "brand": "poco",
     "dualOrientation": null,
     "simCount": null,
     "display": {
@@ -273,9 +273,9 @@
   },
   "xiaomi poco x3 nfc": {
     "deviceName": "Poco X3 NFC",
-    "marketingName": "Poco X3 NFC",
+    "marketingName": "X3 NFC",
     "manufacturer": "xiaomi",
-    "brand": "xiaomi",
+    "brand": "poco",
     "dualOrientation": null,
     "simCount": null,
     "display": {
@@ -305,11 +305,11 @@
   },
   "xiaomi m2003j15sc": {
     "deviceName": "M2003J15SC",
-    "marketingName": "Redmi 10X 4G",
+    "marketingName": "Redmi Note 9",
     "manufacturer": "xiaomi",
     "brand": "xiaomi",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 2340,
       "height": 1080,
@@ -321,11 +321,11 @@
   },
   "xiaomi m2003j15sg": {
     "deviceName": "M2003J15SG",
-    "marketingName": "Redmi 10X 4G",
+    "marketingName": "Redmi Note 9",
     "manufacturer": "xiaomi",
     "brand": "xiaomi",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 2340,
       "height": 1080,
@@ -337,11 +337,11 @@
   },
   "xiaomi m2003j15ss": {
     "deviceName": "M2003J15SS",
-    "marketingName": "Redmi 10X 4G",
+    "marketingName": "Redmi Note 9",
     "manufacturer": "xiaomi",
     "brand": "xiaomi",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 2340,
       "height": 1080,
@@ -468,8 +468,8 @@
     "marketingName": "Redmi 9AT Standard Edition",
     "manufacturer": "xiaomi",
     "brand": "xiaomi",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 1600,
       "height": 720,
@@ -516,8 +516,24 @@
     "marketingName": "Redmi 9C NFC (Global)",
     "manufacturer": "xiaomi",
     "brand": "xiaomi",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1600,
+      "height": 720,
+      "touch": true,
+      "size": 6.5
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "xiaomi m2006c3lvg": {
+    "deviceName": "M2006C3LVG",
+    "marketingName": "Redmi 9AT",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 1600,
       "height": 720,
@@ -799,6 +815,22 @@
     "type": "phablet",
     "platform": "android"
   },
+  "xiaomi redmi note 7 pro": {
+    "deviceName": "Redmi Note 7 Pro",
+    "marketingName": "Redmi Note 7 Pro",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2340,
+      "height": 1080,
+      "touch": true,
+      "size": 6.3
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
   "xiaomi redmi note 8 pro": {
     "deviceName": "Redmi Note 8 Pro",
     "marketingName": "Redmi Note 8 Pro",
@@ -815,6 +847,22 @@
     "type": "phablet",
     "platform": "android"
   },
+  "xiaomi redmi note 8": {
+    "deviceName": "Redmi Note 8",
+    "marketingName": "Redmi Note 8",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2340,
+      "height": 1080,
+      "touch": true,
+      "size": 6.3
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
   "xiaomi redmi note 9 pro": {
     "deviceName": "Redmi Note 9 Pro",
     "marketingName": "Redmi Note 9 Pro",
@@ -827,6 +875,166 @@
       "height": 1080,
       "touch": true,
       "size": 6.67
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "xiaomi redmi note 9": {
+    "deviceName": "Redmi Note 9",
+    "marketingName": "Redmi Note 9",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2340,
+      "height": 1080,
+      "touch": true,
+      "size": 6.53
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "xiaomi 13 pro": {
+    "deviceName": "13 Pro",
+    "marketingName": "13 Pro",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 3200,
+      "height": 1440,
+      "touch": true,
+      "size": 6.73
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "xiaomi 2210132g": {
+    "deviceName": "2210132G",
+    "marketingName": "13 Pro",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 3200,
+      "height": 1440,
+      "touch": true,
+      "size": 6.73
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "xiaomi 2210132c": {
+    "deviceName": "2210132C",
+    "marketingName": "13 Pro",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 3200,
+      "height": 1440,
+      "touch": true,
+      "size": 6.73
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "xiaomi 12t pro": {
+    "deviceName": "12T Pro",
+    "marketingName": "12T Pro",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2712,
+      "height": 1220,
+      "touch": true,
+      "size": 6.67
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "xiaomi 22081212ug": {
+    "deviceName": "22081212UG",
+    "marketingName": "12T Pro",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2712,
+      "height": 1220,
+      "touch": true,
+      "size": 6.67
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "xiaomi 22081212g": {
+    "deviceName": "22081212G",
+    "marketingName": "12T Pro",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2712,
+      "height": 1220,
+      "touch": true,
+      "size": 6.67
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "xiaomi 12 pro": {
+    "deviceName": "12 Pro",
+    "marketingName": "12 Pro",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 3200,
+      "height": 1440,
+      "touch": true,
+      "size": 6.73
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "xiaomi 2201122c": {
+    "deviceName": "2201122C",
+    "marketingName": "12 Pro",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 3200,
+      "height": 1440,
+      "touch": true,
+      "size": 6.73
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "xiaomi 2201122g": {
+    "deviceName": "2201122G",
+    "marketingName": "12 Pro",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 3200,
+      "height": 1440,
+      "touch": true,
+      "size": 6.73
     },
     "type": "phablet",
     "platform": "android"

@@ -3257,10 +3257,10 @@
       "bits": null
     },
     "os": {
-      "name": "Debian with FreeBSD Kernel",
-      "marketingName": "Debian with FreeBSD Kernel",
+      "name": "Linux",
+      "marketingName": "Linux",
       "version": null,
-      "manufacturer": "software-in-the-public-interest"
+      "manufacturer": "linux-foundation"
     },
     "client": {
       "name": "Iceweasel",
@@ -3398,6 +3398,48 @@
     "engine": {
       "name": "Gecko",
       "version": "24.0.0",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.0.2) Gecko/2008090211 Ubuntu/9.04 (jaunty) Iceweasel/3.0.2"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Ubuntu",
+      "marketingName": "Ubuntu",
+      "version": "9.04.0",
+      "manufacturer": "canonical"
+    },
+    "client": {
+      "name": "Iceweasel",
+      "version": "3.0.2",
+      "manufacturer": "software-in-the-public-interest",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "1.9.0.2",
       "manufacturer": "mozilla-foundation"
     }
   }

@@ -340,5 +340,27 @@
       ]
     },
     "engine": "unknown"
+  },
+  "unirest-java": {
+    "name": "unirest for java",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "unirest-java"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "fasthttp": {
+    "name": "fasthttp",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
   }
 }

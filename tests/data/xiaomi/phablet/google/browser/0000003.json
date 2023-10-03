@@ -677,17 +677,17 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "MI Note",
-      "marketingName": "MI Note",
+      "deviceName": "Redmi Note 8",
+      "marketingName": "Redmi Note 8",
       "manufacturer": "xiaomi",
       "brand": "xiaomi",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
-        "width": 1920,
+        "width": 2340,
         "height": 1080,
         "touch": true,
-        "size": 5.7
+        "size": 6.3
       },
       "type": "phablet",
       "ismobile": true,

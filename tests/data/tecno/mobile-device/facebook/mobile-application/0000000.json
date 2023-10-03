@@ -258,48 +258,6 @@
   },
   {
     "headers": {
-      "user-agent": "Dalvik/2.1.0 (Linux; U; Android 12; TECNO KI5k Build/SP1A.210812.016) [FBAN/Orca-Android;FBAV/377.0.0.13.101;FBPN/com.facebook.orca;FBLC/en_US;FBBV/396116327;FBCR/Orange L;FBMF/TECNO;FBBD/TECNO;FBDV/TECNO KI5k;FBSV/12;FBCA/armeabi-v7a:armeabi;FBDM/{density=2.0,width=720,height=1444};FB_FW/1;]"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Tecno device",
-      "marketingName": "general Tecno device",
-      "manufacturer": "tecno",
-      "brand": "tecno",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "12.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Facebook Messenger App",
-      "version": "377.0.0.13.101",
-      "manufacturer": "facebook",
-      "type": "mobile-application",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "SupportsFresco=1 modular=3 Dalvik/2.1.0 (Linux; U; Android 11; TECNO KG5j Build/RP1A.200720.011) [FBAN/EMA;FBBV/495550935;FBAV/364.0.0.14.77;FBDV/TECNO KG5j;FBSV/11;FBCX/OkHttp3;FBDM/{density=2.0}]"
     },
     "device": {
@@ -426,7 +384,91 @@
   },
   {
     "headers": {
-      "user-agent": "Dalvik/2.1.0 (Linux; U; Android 12; TECNO KI5k Build/SP1A.210812.016) [FBAN/Orca-Android;FBAV/377.0.0.13.101;FBPN/com.facebook.orca;FBLC/en_US;FBBV/396116327;FBCR/LoneStar;FBMF/TECNO;FBBD/TECNO;FBDV/TECNO KI5k;FBSV/12;FBCA/armeabi-v7a:armeabi;FBDM/{density=2.0,width=720,height=1444};FB_FW/1;]"
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0; TECNO S1 Build/MRA58K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/55.0.2883.91 Mobile Safari/537.36[FBAN/EMA;FBLC/en_US;FBAV/58.0.0.8.140;]"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Tecno device",
+      "marketingName": "general Tecno device",
+      "manufacturer": "tecno",
+      "brand": "tecno",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Facebook Lite",
+      "version": "58.0.0.8.140",
+      "manufacturer": "facebook",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "55.0.2883.91",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; TECNO KD6 Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/80.0.3987.99 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/267.1.0.46.120;]"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Tecno device",
+      "marketingName": "general Tecno device",
+      "manufacturer": "tecno",
+      "brand": "tecno",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Facebook App",
+      "version": "267.1.0.46.120",
+      "manufacturer": "facebook",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "80.0.3987.99",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SupportsFresco=1 modular=3 Dalvik/2.1.0 (Linux; U; Android 12; TECNO BF6 Build/SP1A.210812.001) [FBAN/EMA;FBBV/509523294;FBAV/370.0.0.16.116;FBDV/TECNO BF6;FBSV/12;FBCX/OkHttp3;FBDM/{density=2.0}]"
     },
     "device": {
       "architecture": null,
@@ -454,8 +496,92 @@
       "manufacturer": "google"
     },
     "client": {
-      "name": "Facebook Messenger App",
-      "version": "377.0.0.13.101",
+      "name": "Facebook Lite",
+      "version": "370.0.0.16.116",
+      "manufacturer": "facebook",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; TECNO LF7 Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/116.0.0.0 Mobile Safari/537.36 [FBAN/FB4A;FBAV/429.0.0.27.114;FBBV/507988376;FBDM/{density=3.0,width=1080,height=2208};FBLC/en_US;FBRV/511644173;FBCR/55301;FBMF/TECNO;FBBD/TECNO;FBPN/com.facebook.katana;FBDV/TECNO LF7;FBSV/12;FBOP/1;FBCA/arm64-v8a:;]"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Tecno device",
+      "marketingName": "general Tecno device",
+      "manufacturer": "tecno",
+      "brand": "tecno",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Facebook App",
+      "version": "429.0.0.27.114",
+      "manufacturer": "facebook",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "116.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SupportsFresco=1 modular=3 Dalvik/2.1.0 (Linux; U; Android 12; TECNO BF6 Build/SP1A.210812.001) [FBAN/EMA;FBBV/426325710;FBAV/332.0.0.22.108;FBDV/TECNO BF6;FBSV/12;FBCX/OkHttp3;FBDM/{density=2.0}]"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Tecno device",
+      "marketingName": "general Tecno device",
+      "manufacturer": "tecno",
+      "brand": "tecno",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Facebook Lite",
+      "version": "332.0.0.22.108",
       "manufacturer": "facebook",
       "type": "mobile-application",
       "isbot": false

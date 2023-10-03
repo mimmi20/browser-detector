@@ -1033,7 +1033,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.0.0-beta+2",
+      "version": "11.0.0",
       "manufacturer": "apple"
     },
     "client": {
@@ -2017,6 +2017,132 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (iPad; U; CPU OS 60 like Mac OS X; en-us) AppleWebKit/534.46.0 (KHTML like Gecko) CriOS/19.0.1084.60 Mobile/10A403 Safari/7534.48.3"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPad",
+      "marketingName": "iPad",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1024,
+        "height": 768,
+        "touch": true,
+        "size": 9.7
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "60.0.0",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "Chrome for iOS",
+      "version": "19.0.1084.60",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.46.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 60 like Mac OS X; en-us) AppleWebKit/534.46.0 (KHTML like Gecko) CriOS/21.0.1180.80 Mobile/10A5376e Safari/7534.48.3"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPad",
+      "marketingName": "iPad",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1024,
+        "height": 768,
+        "touch": true,
+        "size": 9.7
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "60.0.0",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "Chrome for iOS",
+      "version": "21.0.1180.80",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.46.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 601 like Mac OS X; en) AppleWebKit/536.26 (KHTML like Gecko) CriOS/23.0.1271.91 Mobile/10A523 Safari/8536.25"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPad",
+      "marketingName": "iPad",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1024,
+        "height": 768,
+        "touch": true,
+        "size": 9.7
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "601.0.0",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "Chrome for iOS",
+      "version": "23.0.1271.91",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "536.26.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (iPad; CPU OS 11_0_3 like Mac OS X) AppleWebKit/604.1.34 (KHTML, like Gecko) CriOS/62.0.3202.60 Mobile/15A432 Safari/604.1"
     },
     "device": {
@@ -2227,6 +2353,48 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (iPad; CPI OS 6_1_3 linke Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) CriOS/27.0.1453.10 Mobile/10B329 Safari/8536.25"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPad",
+      "marketingName": "iPad",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1024,
+        "height": 768,
+        "touch": true,
+        "size": 9.7
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "27.0.1453.10",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "Chrome for iOS",
+      "version": "27.0.1453.10",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "536.26.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (iPad; CPU OS 9_3_5 like Mac OS X) AppleWebKit/601.1 (KHTML, like Gecko) CriOS/63.0.3239.73 Mobile/13G36 Safari/601.1.46"
     },
     "device": {
@@ -2419,7 +2587,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.0.0-beta+1",
+      "version": "11.0.0",
       "manufacturer": "apple"
     },
     "client": {
@@ -3050,7 +3218,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "12.0.0-beta+2",
+      "version": "12.0.0",
       "manufacturer": "apple"
     },
     "client": {
@@ -3302,7 +3470,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "12.0.0",
       "manufacturer": "apple"
     },
     "client": {
@@ -3428,7 +3596,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "12.0.0",
       "manufacturer": "apple"
     },
     "client": {
@@ -3638,7 +3806,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "12.1.0",
       "manufacturer": "apple"
     },
     "client": {
@@ -3722,7 +3890,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "11.4.0",
       "manufacturer": "apple"
     },
     "client": {
@@ -3866,48 +4034,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (iPad; CPU OS 12_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/71."
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "iPad",
-      "marketingName": "iPad",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1024,
-        "height": 768,
-        "touch": true,
-        "size": 9.7
-      },
-      "type": "tablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "12.1.0",
-      "manufacturer": "apple"
-    },
-    "client": {
-      "name": "Chrome for iOS",
-      "version": "71.0.0",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (iPad; CPU OS 12_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) CriOS/60.0.3112.89 Mobile/16B92 Safari/602.1"
     },
     "device": {
@@ -3974,7 +4100,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "12.1.0",
       "manufacturer": "apple"
     },
     "client": {
@@ -4058,138 +4184,12 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.3.0",
+      "version": "12.1.0",
       "manufacturer": "apple"
     },
     "client": {
       "name": "Chrome for iOS",
       "version": "73.0.3683.68",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPad; CPU OS 10_1_1 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) CriOS/70.0.3538.75 Mobile/14B100 Safari/602.1"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "iPad",
-      "marketingName": "iPad",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1024,
-        "height": 768,
-        "touch": true,
-        "size": 9.7
-      },
-      "type": "tablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "10.1.1",
-      "manufacturer": "apple"
-    },
-    "client": {
-      "name": "Chrome for iOS",
-      "version": "70.0.3538.75",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "602.1.50",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPad; CPU OS 11_4 like Mac OS X) AppleWebKit/604.1.34 (KHTML, like Gecko) CriOS/73.0.3683.68 Mobile/15E148 Safari/604.1"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "iPad",
-      "marketingName": "iPad",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1024,
-        "height": 768,
-        "touch": true,
-        "size": 9.7
-      },
-      "type": "tablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
-      "manufacturer": "apple"
-    },
-    "client": {
-      "name": "Chrome for iOS",
-      "version": "73.0.3683.68",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "604.1.34",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPad; CPU OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/74.0.3729.121 Mobile/15E148 Safari/605.1"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "iPad",
-      "marketingName": "iPad",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1024,
-        "height": 768,
-        "touch": true,
-        "size": 9.7
-      },
-      "type": "tablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
-      "manufacturer": "apple"
-    },
-    "client": {
-      "name": "Chrome for iOS",
-      "version": "74.0.3729.121",
       "manufacturer": "google",
       "type": "browser",
       "isbot": false

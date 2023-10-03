@@ -235,7 +235,7 @@
     "os": {
       "name": "iOS",
       "marketingName": "iOS",
-      "version": "11.0.0-beta+9",
+      "version": "11.0.0",
       "manufacturer": "apple"
     },
     "client": {
@@ -283,48 +283,6 @@
     "client": {
       "name": "Flipboard App",
       "version": "4.2.32",
-      "manufacturer": "flipboard",
-      "type": "mobile-application",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (iPad; CPU OS 12_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Flipboard/4.2.48"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "iPad",
-      "marketingName": "iPad",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1024,
-        "height": 768,
-        "touch": true,
-        "size": 9.7
-      },
-      "type": "tablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "11.3.0",
-      "manufacturer": "apple"
-    },
-    "client": {
-      "name": "Flipboard App",
-      "version": "4.2.48",
       "manufacturer": "flipboard",
       "type": "mobile-application",
       "isbot": false

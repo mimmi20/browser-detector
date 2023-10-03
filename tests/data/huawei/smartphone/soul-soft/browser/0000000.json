@@ -35,7 +35,7 @@
     },
     "client": {
       "name": "Soul Browser",
-      "version": null,
+      "version": "4.0.0",
       "manufacturer": "soul-soft",
       "type": "browser",
       "isbot": false
@@ -48,12 +48,7 @@
   },
   {
     "headers": {
-      "sec-fetch-dest": "document",
-      "sec-fetch-mode": "navigate",
-      "sec-fetch-site": "same-origin",
-      "sec-fetch-user": "?1",
-      "user-agent": "Mozilla/5.0 (Linux; Android 9; STF-L09) AppleWebKit/537.36 (KHTML, like Gecko) Soul/4.0 Chrome/108.0.5359.128 Mobile Safari/537.36",
-      "x-requested-with": "com.mycompany.app.soulbrowser"
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; STF-L09) AppleWebKit/537.36 (KHTML, like Gecko) Soul/4.0 Chrome/108.0.5359.128 Mobile Safari/537.36"
     },
     "device": {
       "architecture": null,
@@ -82,7 +77,7 @@
     },
     "client": {
       "name": "Soul Browser",
-      "version": null,
+      "version": "4.0.0",
       "manufacturer": "soul-soft",
       "type": "browser",
       "isbot": false
