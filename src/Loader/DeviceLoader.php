@@ -14,6 +14,7 @@ namespace BrowserDetector\Loader;
 
 use BrowserDetector\Loader\Helper\DataInterface;
 use Psr\Log\LoggerInterface;
+use RuntimeException;
 use stdClass;
 use UaDeviceType\TypeLoaderInterface;
 use UaDeviceType\Unknown;
@@ -24,7 +25,7 @@ use function is_string;
 
 final class DeviceLoader implements DeviceLoaderInterface
 {
-    /** @throws void */
+    /** @throws RuntimeException */
     public function __construct(
         private readonly LoggerInterface $logger,
         private readonly DataInterface $initData,

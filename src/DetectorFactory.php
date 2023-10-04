@@ -27,6 +27,7 @@ use BrowserDetector\Version\VersionBuilder;
 use BrowserDetector\Version\VersionBuilderFactory;
 use Psr\Log\LoggerInterface;
 use Psr\SimpleCache\CacheInterface as PsrCacheInterface;
+use RuntimeException;
 use UaBrowserType\TypeLoader;
 use UaNormalizer\NormalizerFactory;
 
@@ -40,7 +41,7 @@ final class DetectorFactory
         // nothing to do
     }
 
-    /** @throws void */
+    /** @throws RuntimeException */
     public function __invoke(): Detector
     {
         if ($this->detector === null) {

@@ -18,6 +18,7 @@ use BrowserDetector\Loader\NotFoundException;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
+use RuntimeException;
 use stdClass;
 
 use function assert;
@@ -27,7 +28,10 @@ use function assert;
  */
 final class CompanyLoaderTest extends TestCase
 {
-    /** @throws NotFoundException */
+    /**
+     * @throws NotFoundException
+     * @throws RuntimeException
+     */
     public function testLoadFailHasNot(): void
     {
         $companyKey  = 'A6Corp';
@@ -58,7 +62,10 @@ final class CompanyLoaderTest extends TestCase
         $object->load($companyKey);
     }
 
-    /** @throws NotFoundException */
+    /**
+     * @throws NotFoundException
+     * @throws RuntimeException
+     */
     public function testLoadFailNullReturned(): void
     {
         $companyKey = 'A6Corp';
@@ -87,6 +94,7 @@ final class CompanyLoaderTest extends TestCase
      * @throws ExpectationFailedException
      * @throws Exception
      * @throws NotFoundException
+     * @throws RuntimeException
      */
     public function testLoadAvailable(): void
     {

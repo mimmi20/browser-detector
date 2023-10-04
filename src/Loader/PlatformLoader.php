@@ -16,6 +16,7 @@ use BrowserDetector\Loader\Helper\DataInterface;
 use BrowserDetector\Version\VersionBuilderInterface;
 use BrowserDetector\Version\VersionInterface;
 use Psr\Log\LoggerInterface;
+use RuntimeException;
 use stdClass;
 use UnexpectedValueException;
 
@@ -29,7 +30,7 @@ final class PlatformLoader implements PlatformLoaderInterface
 
     public const DATA_PATH = __DIR__ . '/../../data/platforms';
 
-    /** @throws void */
+    /** @throws RuntimeException */
     public function __construct(
         private readonly LoggerInterface $logger,
         private readonly DataInterface $initData,

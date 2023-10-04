@@ -13,6 +13,7 @@ declare(strict_types = 1);
 namespace BrowserDetector\Loader;
 
 use BrowserDetector\Loader\Helper\DataInterface;
+use RuntimeException;
 use stdClass;
 
 use function assert;
@@ -20,7 +21,7 @@ use function is_string;
 
 final class CompanyLoader implements CompanyLoaderInterface
 {
-    /** @throws void */
+    /** @throws RuntimeException */
     public function __construct(private readonly DataInterface $initData)
     {
         $initData();

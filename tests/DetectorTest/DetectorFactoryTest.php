@@ -19,6 +19,7 @@ use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
 use Psr\SimpleCache\CacheInterface;
+use RuntimeException;
 
 use function assert;
 
@@ -27,6 +28,7 @@ final class DetectorFactoryTest extends TestCase
     /**
      * @throws ExpectationFailedException
      * @throws Exception
+     * @throws RuntimeException
      */
     public function testInvoke(): void
     {
