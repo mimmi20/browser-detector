@@ -271,22 +271,6 @@
     "type": "phablet",
     "platform": "android"
   },
-  "xiaomi poco x3 nfc": {
-    "deviceName": "Poco X3 NFC",
-    "marketingName": "X3 NFC",
-    "manufacturer": "xiaomi",
-    "brand": "poco",
-    "dualOrientation": null,
-    "simCount": null,
-    "display": {
-      "width": 2400,
-      "height": 1080,
-      "touch": true,
-      "size": 6.67
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
   "xiaomi pocophone f2 pro": {
     "deviceName": "Pocophone F2 Pro",
     "marketingName": "Pocophone F2 Pro",
@@ -454,22 +438,6 @@
     "brand": "xiaomi",
     "dualOrientation": null,
     "simCount": null,
-    "display": {
-      "width": 1600,
-      "height": 720,
-      "touch": true,
-      "size": 6.5
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
-  "xiaomi m2006c3lvg": {
-    "deviceName": "M2006C3LVG",
-    "marketingName": "Redmi 9AT",
-    "manufacturer": "xiaomi",
-    "brand": "xiaomi",
-    "dualOrientation": true,
-    "simCount": 2,
     "display": {
       "width": 1600,
       "height": 720,
@@ -895,22 +863,6 @@
     "type": "phablet",
     "platform": "android"
   },
-  "xiaomi 13": {
-    "deviceName": "13",
-    "marketingName": "13",
-    "manufacturer": "xiaomi",
-    "brand": "xiaomi",
-    "dualOrientation": true,
-    "simCount": 1,
-    "display": {
-      "width": 2400,
-      "height": 1080,
-      "touch": true,
-      "size": 6.36
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
   "xiaomi 2210132g": {
     "deviceName": "2210132G",
     "marketingName": "13 Pro",
@@ -1035,6 +987,598 @@
       "height": 1440,
       "touch": true,
       "size": 6.73
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "xiaomi 2201116tg": {
+    "deviceName": "2201116TG",
+    "marketingName": "Redmi Note 11 Pro 4G",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.67
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "xiaomi 2201116ti": {
+    "deviceName": "2201116TI",
+    "marketingName": "Redmi Note 11 Pro 4G",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.67
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "xiaomi mi note 10 pro": {
+    "deviceName": "Mi Note 10 Pro",
+    "marketingName": "Mi Note 10 Pro",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2340,
+      "height": 1080,
+      "touch": true,
+      "size": 6.47
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "xiaomi m1908c3jgg": {
+    "deviceName": "M1908C3JGG",
+    "marketingName": "Redmi Note 8 (2021)",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2340,
+      "height": 1080,
+      "touch": true,
+      "size": 6.3
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "xiaomi redmi note 8 2021": {
+    "deviceName": "Redmi Note 8 (2021)",
+    "marketingName": "Redmi Note 8 (2021)",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2340,
+      "height": 1080,
+      "touch": true,
+      "size": 6.3
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "xiaomi redmi note 12 pro plus 5g": {
+    "deviceName": "Redmi Note 12 Pro Plus 5G",
+    "marketingName": "Redmi Note 12 Pro Plus 5G",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.67
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "xiaomi redmi note 12 pro 5g": {
+    "deviceName": "Redmi Note 12 Pro 5G",
+    "marketingName": "Redmi Note 12 Pro 5G",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.67
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "xiaomi 22101316c": {
+    "deviceName": "22101316C",
+    "marketingName": "Redmi Note 12 Pro 5G",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.67
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "xiaomi 22101316i": {
+    "deviceName": "22101316I",
+    "marketingName": "Redmi Note 12 Pro 5G",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.67
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "xiaomi 22101316g": {
+    "deviceName": "22101316G",
+    "marketingName": "Redmi Note 12 Pro 5G",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.67
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "xiaomi 23013rk75c": {
+    "deviceName": "23013RK75C",
+    "marketingName": "Redmi Note 12 Pro 5G",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.67
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "xiaomi 22101316ucp": {
+    "deviceName": "22101316UCP",
+    "marketingName": "Redmi Note 12 Pro Plus 5G",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.67
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "xiaomi 22101316ug": {
+    "deviceName": "22101316UG",
+    "marketingName": "Redmi Note 12 Pro Plus 5G",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.67
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "xiaomi 2201117ty": {
+    "deviceName": "2201117TY",
+    "marketingName": "Redmi Note 11",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.43
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "xiaomi 2201117tg": {
+    "deviceName": "2201117TG",
+    "marketingName": "Redmi Note 11",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.43
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "xiaomi 2201117ti": {
+    "deviceName": "2201117TI",
+    "marketingName": "Redmi Note 11",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.43
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "xiaomi 2201117tl": {
+    "deviceName": "2201117TL",
+    "marketingName": "Redmi Note 11",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.43
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "xiaomi 21091116ac": {
+    "deviceName": "21091116AC",
+    "marketingName": "Redmi Note 11 (China)",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.6
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "xiaomi redmi note 11": {
+    "deviceName": "Redmi Note 11",
+    "marketingName": "Redmi Note 11",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.43
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "xiaomi 21121119sc": {
+    "deviceName": "21121119SC",
+    "marketingName": "Redmi Note 11 4G",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.5
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "xiaomi 2201116sg": {
+    "deviceName": "2201116SG",
+    "marketingName": "Redmi Note 11 Pro 5G",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.67
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "xiaomi 21091116i": {
+    "deviceName": "21091116I",
+    "marketingName": "Redmi Note 11 Pro 5G",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.67
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "xiaomi redmi note 11 pro 5g": {
+    "deviceName": "Redmi Note 11 Pro 5G",
+    "marketingName": "Redmi Note 11 Pro 5G",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.67
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "xiaomi m2103k19g": {
+    "deviceName": "M2103K19G",
+    "marketingName": "Redmi Note 10 5G",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.5
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "xiaomi m2103k19c": {
+    "deviceName": "M2103K19C",
+    "marketingName": "Redmi Note 10 5G",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.5
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "xiaomi redmi note 10 5g": {
+    "deviceName": "Redmi Note 10 5G",
+    "marketingName": "Redmi Note 10 5G",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.5
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "xiaomi m2101k6g": {
+    "deviceName": "M2101K6G",
+    "marketingName": "Redmi Note 10 Pro",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.67
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "xiaomi m2101k6r": {
+    "deviceName": "M2101K6R",
+    "marketingName": "Redmi Note 10 Pro",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.67
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "xiaomi redmi note 10 pro": {
+    "deviceName": "Redmi Note 10 Pro",
+    "marketingName": "Redmi Note 10 Pro",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.67
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "xiaomi m2101k6p": {
+    "deviceName": "M2101K6P",
+    "marketingName": "Redmi Note 10 Pro (India)",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.67
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "xiaomi mi note 10 lite": {
+    "deviceName": "Mi Note 10 Lite",
+    "marketingName": "Mi Note 10 Lite",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2340,
+      "height": 1080,
+      "touch": true,
+      "size": 6.47
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "xiaomi redmi note 8t": {
+    "deviceName": "Redmi Note 8T",
+    "marketingName": "Redmi Note 8T",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "dualOrientation": null,
+    "simCount": null,
+    "display": {
+      "width": 2340,
+      "height": 1080,
+      "touch": true,
+      "size": 6.3
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "xiaomi 2201117sy": {
+    "deviceName": "2201117SY",
+    "marketingName": "Redmi Note 11S",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.43
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "xiaomi 2201117sg": {
+    "deviceName": "2201117SG",
+    "marketingName": "Redmi Note 11S",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.43
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "xiaomi 2201117si": {
+    "deviceName": "2201117SI",
+    "marketingName": "Redmi Note 11S",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.43
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "xiaomi 2201117sl": {
+    "deviceName": "2201117SL",
+    "marketingName": "Redmi Note 11S",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.43
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "xiaomi redmi note 11s": {
+    "deviceName": "Redmi Note 11S",
+    "marketingName": "Redmi Note 11S",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.43
     },
     "type": "phablet",
     "platform": "android"

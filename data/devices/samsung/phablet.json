@@ -1727,150 +1727,6 @@
     "type": "phablet",
     "platform": "android"
   },
-  "samsung sc-04l": {
-    "deviceName": "SC-04L",
-    "marketingName": "Galaxy S10+ Dual SIM",
-    "manufacturer": "samsung",
-    "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
-    "display": {
-      "width": 3040,
-      "height": 1440,
-      "touch": true,
-      "size": 6.4
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
-  "samsung sm-g975d": {
-    "deviceName": "SM-G975D",
-    "marketingName": "Galaxy S10+ Dual SIM",
-    "manufacturer": "samsung",
-    "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
-    "display": {
-      "width": 3040,
-      "height": 1440,
-      "touch": true,
-      "size": 6.4
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
-  "samsung sm-g975x": {
-    "deviceName": "SM-G975X",
-    "marketingName": "Galaxy S10+ Dual SIM",
-    "manufacturer": "samsung",
-    "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
-    "display": {
-      "width": 3040,
-      "height": 1440,
-      "touch": true,
-      "size": 6.4
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
-  "samsung sm-g975w": {
-    "deviceName": "SM-G975W",
-    "marketingName": "Galaxy S10+ Dual SIM (Canada)",
-    "manufacturer": "samsung",
-    "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
-    "display": {
-      "width": 3040,
-      "height": 1440,
-      "touch": true,
-      "size": 6.4
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
-  "samsung sm-g975f": {
-    "deviceName": "SM-G975F",
-    "marketingName": "Galaxy S10+ Dual SIM (Global)",
-    "manufacturer": "samsung",
-    "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
-    "display": {
-      "width": 3040,
-      "height": 1440,
-      "touch": true,
-      "size": 6.4
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
-  "samsung sm-g975n": {
-    "deviceName": "SM-G975N",
-    "marketingName": "Galaxy S10+ Dual SIM (Korea)",
-    "manufacturer": "samsung",
-    "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
-    "display": {
-      "width": 3040,
-      "height": 1440,
-      "touch": true,
-      "size": 6.4
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
-  "samsung sm-g9750": {
-    "deviceName": "SM-G9750",
-    "marketingName": "Galaxy S10+ Dual SIM (LATAM, Brazil, China)",
-    "manufacturer": "samsung",
-    "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
-    "display": {
-      "width": 3040,
-      "height": 1440,
-      "touch": true,
-      "size": 6.4
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
-  "samsung sm-g975u": {
-    "deviceName": "SM-G975U",
-    "marketingName": "Galaxy S10+ Dual SIM (USA)",
-    "manufacturer": "samsung",
-    "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
-    "display": {
-      "width": 3040,
-      "height": 1440,
-      "touch": true,
-      "size": 6.4
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
-  "samsung sm-g975u1": {
-    "deviceName": "SM-G975U1",
-    "marketingName": "Galaxy S10+ Dual SIM (USA)",
-    "manufacturer": "samsung",
-    "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
-    "display": {
-      "width": 3040,
-      "height": 1440,
-      "touch": true,
-      "size": 6.4
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
   "samsung sm-g980": {
     "deviceName": "SM-G980",
     "marketingName": "Galaxy S20 4G",
@@ -2060,7 +1916,7 @@
       "touch": true,
       "size": 6.5
     },
-    "type": "smartphone",
+    "type": "phablet",
     "platform": "android"
   },
   "samsung sm-g781w": {
@@ -3067,6 +2923,230 @@
       "height": 1080,
       "touch": true,
       "size": 6.4
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung scl22": {
+    "deviceName": "SCL22",
+    "marketingName": "Galaxy Note 3 LTE",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": null,
+    "simCount": null,
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": 5.7
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sm-n9005": {
+    "deviceName": "SM-N9005",
+    "marketingName": "Galaxy Note 3 LTE",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": null,
+    "simCount": null,
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": 5.7
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sm-n900j": {
+    "deviceName": "SM-N900J",
+    "marketingName": "Galaxy Note 3 LTE",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": null,
+    "simCount": null,
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": 5.7
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sm-n900a": {
+    "deviceName": "SM-N900A",
+    "marketingName": "Galaxy Note 3 LTE (AT&T)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": null,
+    "simCount": null,
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": 5.7
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sm-n900p": {
+    "deviceName": "SM-N900P",
+    "marketingName": "Galaxy Note 3 LTE (Sprint)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": null,
+    "simCount": null,
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": 5.7
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sm-n900t": {
+    "deviceName": "SM-N900T",
+    "marketingName": "Galaxy Note 3 LTE (T-Mobile)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": null,
+    "simCount": null,
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": 5.7
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sm-n900v": {
+    "deviceName": "SM-N900V",
+    "marketingName": "Galaxy Note 3 LTE (Verizon)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": null,
+    "simCount": null,
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": 5.7
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sc-01k": {
+    "deviceName": "SC-01K",
+    "marketingName": "Galaxy Note 8",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": null,
+    "simCount": null,
+    "display": {
+      "width": 2960,
+      "height": 1440,
+      "touch": true,
+      "size": 6.3
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sm-n9500": {
+    "deviceName": "SM-N9500",
+    "marketingName": "Galaxy Note 8",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": null,
+    "simCount": null,
+    "display": {
+      "width": 2960,
+      "height": 1440,
+      "touch": true,
+      "size": 6.3
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sm-n950d": {
+    "deviceName": "SM-N950D",
+    "marketingName": "Galaxy Note 8",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": null,
+    "simCount": null,
+    "display": {
+      "width": 2960,
+      "height": 1440,
+      "touch": true,
+      "size": 6.3
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sm-n950fd": {
+    "deviceName": "SM-N950FD",
+    "marketingName": "Galaxy Note 8",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": null,
+    "simCount": null,
+    "display": {
+      "width": 2960,
+      "height": 1440,
+      "touch": true,
+      "size": 6.3
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sm-n950n": {
+    "deviceName": "SM-N950N",
+    "marketingName": "Galaxy Note 8",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": null,
+    "simCount": null,
+    "display": {
+      "width": 2960,
+      "height": 1440,
+      "touch": true,
+      "size": 6.3
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sm-n950u1": {
+    "deviceName": "SM-N950U1",
+    "marketingName": "Galaxy Note 8",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": null,
+    "simCount": null,
+    "display": {
+      "width": 2960,
+      "height": 1440,
+      "touch": true,
+      "size": 6.3
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sm-n950w": {
+    "deviceName": "SM-N950W",
+    "marketingName": "Galaxy Note 8",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": null,
+    "simCount": null,
+    "display": {
+      "width": 2960,
+      "height": 1440,
+      "touch": true,
+      "size": 6.3
     },
     "type": "phablet",
     "platform": "android"
