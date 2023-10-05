@@ -1615,102 +1615,6 @@
     "type": "phablet",
     "platform": "android"
   },
-  "samsung sm-g9770": {
-    "deviceName": "SM-G9770",
-    "marketingName": "Galaxy S10 5G (China)",
-    "manufacturer": "samsung",
-    "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
-    "display": {
-      "width": 3040,
-      "height": 1440,
-      "touch": true,
-      "size": 6.7
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
-  "samsung sm-g977b": {
-    "deviceName": "SM-G977B",
-    "marketingName": "Galaxy S10 5G (Global)",
-    "manufacturer": "samsung",
-    "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
-    "display": {
-      "width": 3040,
-      "height": 1440,
-      "touch": true,
-      "size": 6.7
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
-  "samsung sm-g977n": {
-    "deviceName": "SM-G977N",
-    "marketingName": "Galaxy S10 5G (Korea)",
-    "manufacturer": "samsung",
-    "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
-    "display": {
-      "width": 3040,
-      "height": 1440,
-      "touch": true,
-      "size": 6.7
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
-  "samsung sm-g977p": {
-    "deviceName": "SM-G977P",
-    "marketingName": "Galaxy S10 5G (Sprint)",
-    "manufacturer": "samsung",
-    "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
-    "display": {
-      "width": 3040,
-      "height": 1440,
-      "touch": true,
-      "size": 6.7
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
-  "samsung sm-g977t": {
-    "deviceName": "SM-G977T",
-    "marketingName": "Galaxy S10 5G (T-Mobile)",
-    "manufacturer": "samsung",
-    "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
-    "display": {
-      "width": 3040,
-      "height": 1440,
-      "touch": true,
-      "size": 6.7
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
-  "samsung sm-g977u": {
-    "deviceName": "SM-G977U",
-    "marketingName": "Galaxy S10 5G (USA)",
-    "manufacturer": "samsung",
-    "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
-    "display": {
-      "width": 3040,
-      "height": 1440,
-      "touch": true,
-      "size": 6.7
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
   "samsung sm-g770f": {
     "deviceName": "SM-G770F",
     "marketingName": "Galaxy S10 Lite",
@@ -3142,6 +3046,70 @@
     "brand": "samsung",
     "dualOrientation": null,
     "simCount": null,
+    "display": {
+      "width": 2960,
+      "height": 1440,
+      "touch": true,
+      "size": 6.3
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sm-n950u": {
+    "deviceName": "SM-N950U",
+    "marketingName": "Galaxy Note 8 (US Unlocked)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2960,
+      "height": 1440,
+      "touch": true,
+      "size": 6.3
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sm-n950f": {
+    "deviceName": "SM-N950F",
+    "marketingName": "Galaxy Note 8 Dual SIM",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2960,
+      "height": 1440,
+      "touch": true,
+      "size": 6.3
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung scv37": {
+    "deviceName": "SCV37",
+    "marketingName": "Galaxy Note 8 WiMAX 2+",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2960,
+      "height": 1440,
+      "touch": true,
+      "size": 6.3
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sm-n950j": {
+    "deviceName": "SM-N950J",
+    "marketingName": "Galaxy Note 8 WiMAX 2+",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 2960,
       "height": 1440,
