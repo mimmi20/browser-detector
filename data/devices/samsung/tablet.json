@@ -1105,11 +1105,11 @@
   },
   "samsung sm-t810": {
     "deviceName": "SM-T810",
-    "marketingName": "Galaxy Tab S2 (9.7, 2015,  Wi-Fi)",
+    "marketingName": "Galaxy Tab S2 9.7 Wi-Fi (2015)",
     "manufacturer": "samsung",
     "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 0,
     "display": {
       "width": 2048,
       "height": 1536,
@@ -1121,11 +1121,27 @@
   },
   "samsung sm-t813": {
     "deviceName": "SM-T813",
-    "marketingName": "Galaxy Tab S2 (9.7, 2016,  Wi-Fi)",
+    "marketingName": "Galaxy Tab S2 9.7 Wi-Fi (2016)",
     "manufacturer": "samsung",
     "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 2048,
+      "height": 1536,
+      "touch": true,
+      "size": 9.7
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "samsung sm-t813n": {
+    "deviceName": "SM-T813N",
+    "marketingName": "Galaxy Tab S2 9.7 Wi-Fi (2016)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 0,
     "display": {
       "width": 2048,
       "height": 1536,
