@@ -464,7 +464,7 @@
     "/(?:adr|android) 4\\.0.* j1000(?: +build|[;\\/\\)])/i": "jixin",
     "/a1303|a309w|m651cy|m811|e1109_v73|z15a|709v82_jbla198|mid4010/i": "china-phone",
     "/i101mtk|rk31sdk|rk312x|m701c|a13-mid|twd[ _]mid|j-q8d|m006-q|um-a13|tp73g|baoxue|adm8000kp|m94|mc706|t950s|mz1001h1cw1-mf|mt104|wt7023/i": "china-tablet",
-    "/A5000|(?<!REVVLPLUS) [CDEFGIJ][0-9]{4}(?: +Build|[;\\/\\)])|SGP[0-9]{3}|X[ML][0-9]{2}[th]|(?<!\\\\)[SLW]T[0-9]{2}|(?<!\\\\|S)MT[0-9]{2}(?!\\d)|[SM]K[0-9]{2}|SO-[0-9]{2}[BCDEFGHKLM]|[ (?:]PS[234]/": "sony",
+    "/A5000|(?<!REVVLPLUS) [CDEFGIJ][0-9]{4}(?: +Build|[;\\/\\)])|SGP[0-9]{3}|X[ML][0-9]{2}[th]|(?<!\\\\)[SLW]T[0-9]{2}|(?<!\\\\|S)MT[0-9]{2}(?!\\d)|[SM]K[0-9]{2}|SO-[0-9]{2}[BCDEFGHKLM]|[ (?:]PS[234]|XQ-[BC][A-Z][0-9]{2}/": "sony",
     "/sphs_on_hsdroid|pure [23]|power1/i": "m-horse",
     "/lenco|lencm900hz|jeanstab-700|tab-1045/i": "lenco",
     "/wexler|tab a742|tab7id|tab 10q|(?<!ti)zen [0-9]|tab-700/i": "wexler",
