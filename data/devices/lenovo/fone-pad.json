@@ -993,11 +993,11 @@
   },
   "lenovo yt3-x90x": {
     "deviceName": "YT3-X90X",
-    "marketingName": "Yoga Tab 3 Pro 10.1",
+    "marketingName": "Yoga Tab 3 Pro 10.1 LTE",
     "manufacturer": "lenovo",
     "brand": "lenovo",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 2560,
       "height": 1600,
@@ -1012,8 +1012,8 @@
     "marketingName": "Yoga Tab 3 Pro 10.1 LTE",
     "manufacturer": "lenovo",
     "brand": "lenovo",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 2560,
       "height": 1600,
@@ -1028,15 +1028,15 @@
     "marketingName": "Yoga Tab 3 Pro 10.1 Wi-Fi",
     "manufacturer": "lenovo",
     "brand": "lenovo",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 0,
     "display": {
       "width": 2560,
       "height": 1600,
       "touch": true,
       "size": 10.1
     },
-    "type": "fone-pad",
+    "type": "tablet",
     "platform": "android"
   },
   "lenovo b8000-h": {

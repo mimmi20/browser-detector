@@ -33,11 +33,11 @@
   },
   "samsung sm-p601": {
     "deviceName": "SM-P601",
-    "marketingName": "Galaxy Note 10.1 2014 Edition 3G + Wi-Fi",
+    "marketingName": "Galaxy Note 10.1 3G (2014)",
     "manufacturer": "samsung",
     "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 2560,
       "height": 1600,
@@ -49,11 +49,11 @@
   },
   "samsung sm-p605": {
     "deviceName": "SM-P605",
-    "marketingName": "Galaxy Note 10.1 2014 Edition WI-FI + 4G LTE",
+    "marketingName": "Galaxy Note 10.1 LTE (2014)",
     "manufacturer": "samsung",
     "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 2560,
       "height": 1600,
@@ -3265,11 +3265,27 @@
   },
   "samsung sm-t677v": {
     "deviceName": "SM-T677V",
-    "marketingName": "Galaxy Tab View",
+    "marketingName": "Galaxy View 18.4 LTE (USA, Verizon)",
     "manufacturer": "samsung",
     "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": 18.4
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "samsung sm-t677a": {
+    "deviceName": "SM-T677A",
+    "marketingName": "Galaxy View 18.4 LTE (USA, AT&T)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1920,
       "height": 1080,
@@ -3281,11 +3297,27 @@
   },
   "samsung sm-t677": {
     "deviceName": "SM-T677",
-    "marketingName": "Galaxy Tab View LTE",
+    "marketingName": "Galaxy View 18.4 LTE (EMEA)",
     "manufacturer": "samsung",
     "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": 18.4
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "samsung sm-t677y": {
+    "deviceName": "SM-T677Y",
+    "marketingName": "Galaxy View 18.4 LTE (EMEA)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1920,
       "height": 1080,
