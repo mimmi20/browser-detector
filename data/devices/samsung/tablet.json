@@ -996,8 +996,8 @@
     "marketingName": "Galaxy Tab E 9.6 Wi-Fi",
     "manufacturer": "samsung",
     "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 0,
     "display": {
       "width": 1280,
       "height": 800,
@@ -1265,11 +1265,27 @@
   },
   "samsung sm-p610": {
     "deviceName": "SM-P610",
-    "marketingName": "Galaxy Tab S6 Lite 10.4 Global",
+    "marketingName": "Galaxy Tab S6 Lite 10.4 Wi-Fi",
     "manufacturer": "samsung",
     "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 2000,
+      "height": 1200,
+      "touch": true,
+      "size": 10.4
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "samsung sm-p610n": {
+    "deviceName": "SM-P610N",
+    "marketingName": "Galaxy Tab S6 Lite 10.4 Wi-Fi",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 0,
     "display": {
       "width": 2000,
       "height": 1200,
@@ -1281,11 +1297,11 @@
   },
   "samsung sm-t870": {
     "deviceName": "SM-T870",
-    "marketingName": "Galaxy Tab S7 Wi-Fi",
+    "marketingName": "Galaxy Tab S7 11.0 Wi-Fi",
     "manufacturer": "samsung",
     "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 0,
     "display": {
       "width": 2560,
       "height": 1600,
@@ -1297,11 +1313,11 @@
   },
   "samsung sm-t970": {
     "deviceName": "SM-T970",
-    "marketingName": "Galaxy Tab S7 Plus Wi-Fi",
+    "marketingName": "Galaxy Tab S7 Plus 12.4 Wi-Fi",
     "manufacturer": "samsung",
     "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 0,
     "display": {
       "width": 2800,
       "height": 1752,
@@ -1425,16 +1441,64 @@
   },
   "samsung sm-p613": {
     "deviceName": "SM-P613",
-    "marketingName": "Galaxy Tab S6 Lite Wi-Fi (2022)",
+    "marketingName": "Galaxy Tab S6 Lite 10.4 Wi-Fi (2022)",
     "manufacturer": "samsung",
     "brand": "samsung",
     "dualOrientation": true,
-    "simCount": 1,
+    "simCount": 0,
     "display": {
       "width": 2000,
       "height": 1200,
       "touch": true,
       "size": 10.4
+    },
+    "type": "tablet",
+    "platform": null
+  },
+  "samsung sm-x700": {
+    "deviceName": "SM-X700",
+    "marketingName": "Galaxy Tab S8 11.0 Wi-Fi",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 2560,
+      "height": 1600,
+      "touch": true,
+      "size": 11
+    },
+    "type": "tablet",
+    "platform": null
+  },
+  "samsung sm-x200": {
+    "deviceName": "SM-X200",
+    "marketingName": "Galaxy Tab A8 10.5 Wi-Fi (2021)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "size": 10.5
+    },
+    "type": "tablet",
+    "platform": null
+  },
+  "samsung sm-t570": {
+    "deviceName": "SM-T570",
+    "marketingName": "Galaxy Tab Active3 8.0 Wi-Fi (2021)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "size": 8
     },
     "type": "tablet",
     "platform": null

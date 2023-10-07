@@ -399,22 +399,6 @@
     "type": "phablet",
     "platform": "android"
   },
-  "samsung sm-a7156": {
-    "deviceName": "SM-A7156",
-    "marketingName": "Galaxy A71 (5G)",
-    "manufacturer": "samsung",
-    "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
-    "display": {
-      "width": 1600,
-      "height": 720,
-      "touch": true,
-      "size": 6.5
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
   "samsung sm-a7160": {
     "deviceName": "SM-A7160",
     "marketingName": "Galaxy A71 (5G)",
@@ -475,86 +459,6 @@
       "height": 720,
       "touch": true,
       "size": 6.5
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
-  "samsung sm-a7150": {
-    "deviceName": "SM-A7150",
-    "marketingName": "Galaxy A71 Standard Edition Dual SIM (2019)",
-    "manufacturer": "samsung",
-    "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
-    "display": {
-      "width": 2400,
-      "height": 1080,
-      "touch": true,
-      "size": 6.7
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
-  "samsung sm-a715fn": {
-    "deviceName": "SM-A715FN",
-    "marketingName": "Galaxy A71 Standard Edition Dual SIM (2019)",
-    "manufacturer": "samsung",
-    "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
-    "display": {
-      "width": 2400,
-      "height": 1080,
-      "touch": true,
-      "size": 6.7
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
-  "samsung sm-a715mn": {
-    "deviceName": "SM-A715MN",
-    "marketingName": "Galaxy A71 Standard Edition Dual SIM (2019)",
-    "manufacturer": "samsung",
-    "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
-    "display": {
-      "width": 2400,
-      "height": 1080,
-      "touch": true,
-      "size": 6.7
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
-  "samsung sm-a715w": {
-    "deviceName": "SM-A715W",
-    "marketingName": "Galaxy A71 Standard Edition Dual SIM (2019)",
-    "manufacturer": "samsung",
-    "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
-    "display": {
-      "width": 2400,
-      "height": 1080,
-      "touch": true,
-      "size": 6.7
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
-  "samsung sm-a715f": {
-    "deviceName": "SM-A715F",
-    "marketingName": "Galaxy A71 Standard Edition Dual SIM (2019, Global)",
-    "manufacturer": "samsung",
-    "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
-    "display": {
-      "width": 2400,
-      "height": 1080,
-      "touch": true,
-      "size": 6.7
     },
     "type": "phablet",
     "platform": "android"
@@ -1364,8 +1268,8 @@
     "marketingName": "Galaxy Note 20 Ultra 5G (Canada)",
     "manufacturer": "samsung",
     "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 3088,
       "height": 1440,
@@ -1380,8 +1284,8 @@
     "marketingName": "Galaxy Note 20 Ultra 5G (China)",
     "manufacturer": "samsung",
     "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 3088,
       "height": 1440,
@@ -1393,11 +1297,11 @@
   },
   "samsung sm-n986b": {
     "deviceName": "SM-N986B",
-    "marketingName": "Galaxy Note 20 Ultra 5G (Europe, Global)",
+    "marketingName": "Galaxy Note 20 Ultra 5G (International)",
     "manufacturer": "samsung",
     "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 3088,
       "height": 1440,
@@ -1412,8 +1316,8 @@
     "marketingName": "Galaxy Note 20 Ultra 5G (Korea)",
     "manufacturer": "samsung",
     "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 3088,
       "height": 1440,
@@ -1428,8 +1332,8 @@
     "marketingName": "Galaxy Note 20 Ultra 5G (USA)",
     "manufacturer": "samsung",
     "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 3088,
       "height": 1440,
@@ -1444,8 +1348,8 @@
     "marketingName": "Galaxy Note 20 Ultra 5G (USA, unlocked)",
     "manufacturer": "samsung",
     "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 3088,
       "height": 1440,
@@ -1611,326 +1515,6 @@
       "height": 1440,
       "touch": true,
       "size": 6.4
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
-  "samsung sm-g770f": {
-    "deviceName": "SM-G770F",
-    "marketingName": "Galaxy S10 Lite",
-    "manufacturer": "samsung",
-    "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
-    "display": {
-      "width": 2400,
-      "height": 1440,
-      "touch": true,
-      "size": 6.7
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
-  "samsung sm-g980": {
-    "deviceName": "SM-G980",
-    "marketingName": "Galaxy S20 4G",
-    "manufacturer": "samsung",
-    "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
-    "display": {
-      "width": 3200,
-      "height": 1440,
-      "touch": true,
-      "size": 6.2
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
-  "samsung sm-g980f": {
-    "deviceName": "SM-G980F",
-    "marketingName": "Galaxy S20 4G",
-    "manufacturer": "samsung",
-    "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
-    "display": {
-      "width": 3200,
-      "height": 1440,
-      "touch": true,
-      "size": 6.2
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
-  "samsung sm-g981n": {
-    "deviceName": "SM-G981N",
-    "marketingName": "Galaxy S20 5G",
-    "manufacturer": "samsung",
-    "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
-    "display": {
-      "width": 3200,
-      "height": 1440,
-      "touch": true,
-      "size": 6.2
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
-  "samsung sm-g981v": {
-    "deviceName": "SM-G981V",
-    "marketingName": "Galaxy S20 5G",
-    "manufacturer": "samsung",
-    "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
-    "display": {
-      "width": 3200,
-      "height": 1440,
-      "touch": true,
-      "size": 6.2
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
-  "samsung sm-g981w": {
-    "deviceName": "SM-G981W",
-    "marketingName": "Galaxy S20 5G (Canada)",
-    "manufacturer": "samsung",
-    "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
-    "display": {
-      "width": 3200,
-      "height": 1440,
-      "touch": true,
-      "size": 6.2
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
-  "samsung sm-g9810": {
-    "deviceName": "SM-G9810",
-    "marketingName": "Galaxy S20 5G (China, Hong Kong)",
-    "manufacturer": "samsung",
-    "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
-    "display": {
-      "width": 3200,
-      "height": 1440,
-      "touch": true,
-      "size": 6.2
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
-  "samsung sm-g981b": {
-    "deviceName": "SM-G981B",
-    "marketingName": "Galaxy S20 5G (International)",
-    "manufacturer": "samsung",
-    "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
-    "display": {
-      "width": 3200,
-      "height": 1440,
-      "touch": true,
-      "size": 6.2
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
-  "samsung sm-g981f": {
-    "deviceName": "SM-G981F",
-    "marketingName": "Galaxy S20 5G (International)",
-    "manufacturer": "samsung",
-    "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
-    "display": {
-      "width": 3200,
-      "height": 1440,
-      "touch": true,
-      "size": 6.2
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
-  "samsung sm-g981u1": {
-    "deviceName": "SM-G981U1",
-    "marketingName": "Galaxy S20 5G (USA unlocked)",
-    "manufacturer": "samsung",
-    "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
-    "display": {
-      "width": 3200,
-      "height": 1440,
-      "touch": true,
-      "size": 6.2
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
-  "samsung sm-g981u": {
-    "deviceName": "SM-G981U",
-    "marketingName": "Galaxy S20 5G (USA)",
-    "manufacturer": "samsung",
-    "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
-    "display": {
-      "width": 3200,
-      "height": 1440,
-      "touch": true,
-      "size": 6.2
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
-  "samsung sm-g780f": {
-    "deviceName": "SM-G780F",
-    "marketingName": "Galaxy S20 FE 4G",
-    "manufacturer": "samsung",
-    "brand": "samsung",
-    "dualOrientation": true,
-    "simCount": 1,
-    "display": {
-      "width": 2400,
-      "height": 1080,
-      "touch": true,
-      "size": 6.5
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
-  "samsung sm-g780g": {
-    "deviceName": "SM-G780G",
-    "marketingName": "Galaxy S20 FE 4G",
-    "manufacturer": "samsung",
-    "brand": "samsung",
-    "dualOrientation": true,
-    "simCount": 1,
-    "display": {
-      "width": 2400,
-      "height": 1080,
-      "touch": true,
-      "size": 6.5
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
-  "samsung sm-g781w": {
-    "deviceName": "SM-G781W",
-    "marketingName": "Galaxy S20 FE 5G (Canada)",
-    "manufacturer": "samsung",
-    "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
-    "display": {
-      "width": 2400,
-      "height": 1080,
-      "touch": true,
-      "size": 6.5
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
-  "samsung sm-g7810": {
-    "deviceName": "SM-G7810",
-    "marketingName": "Galaxy S20 FE 5G (China, Hong Kong)",
-    "manufacturer": "samsung",
-    "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
-    "display": {
-      "width": 2400,
-      "height": 1080,
-      "touch": true,
-      "size": 6.5
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
-  "samsung sm-g781b": {
-    "deviceName": "SM-G781B",
-    "marketingName": "Galaxy S20 FE 5G (International)",
-    "manufacturer": "samsung",
-    "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
-    "display": {
-      "width": 2400,
-      "height": 1080,
-      "touch": true,
-      "size": 6.5
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
-  "samsung sm-g781n": {
-    "deviceName": "SM-G781N",
-    "marketingName": "Galaxy S20 FE 5G (Korea)",
-    "manufacturer": "samsung",
-    "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
-    "display": {
-      "width": 2400,
-      "height": 1080,
-      "touch": true,
-      "size": 6.5
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
-  "samsung sm-g781u1": {
-    "deviceName": "SM-G781U1",
-    "marketingName": "Galaxy S20 FE 5G (USA unlocked)",
-    "manufacturer": "samsung",
-    "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
-    "display": {
-      "width": 2400,
-      "height": 1080,
-      "touch": true,
-      "size": 6.5
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
-  "samsung sm-g781u": {
-    "deviceName": "SM-G781U",
-    "marketingName": "Galaxy S20 FE 5G (USA)",
-    "manufacturer": "samsung",
-    "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
-    "display": {
-      "width": 2400,
-      "height": 1080,
-      "touch": true,
-      "size": 6.5
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
-  "samsung sm-g781v": {
-    "deviceName": "SM-G781V",
-    "marketingName": "Galaxy S20 FE 5G (Verizon)",
-    "manufacturer": "samsung",
-    "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
-    "display": {
-      "width": 2400,
-      "height": 1080,
-      "touch": true,
-      "size": 6.5
     },
     "type": "phablet",
     "platform": "android"
@@ -2401,7 +1985,7 @@
   },
   "samsung sm-n950u": {
     "deviceName": "SM-N950U",
-    "marketingName": "Galaxy Note 8 (US Unlocked)",
+    "marketingName": "Galaxy Note 8 (USA Unlocked)",
     "manufacturer": "samsung",
     "brand": "samsung",
     "dualOrientation": true,
@@ -2811,6 +2395,102 @@
       "height": 540,
       "touch": true,
       "size": 5
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sm-f721b": {
+    "deviceName": "SM-F721B",
+    "marketingName": "Galaxy Z Flip4 (International)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2640,
+      "height": 1080,
+      "touch": true,
+      "size": 6.7
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sm-f721n": {
+    "deviceName": "SM-F721N",
+    "marketingName": "Galaxy Z Flip4 (Korea)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2640,
+      "height": 1080,
+      "touch": true,
+      "size": 6.7
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sm-f721u": {
+    "deviceName": "SM-F721U",
+    "marketingName": "Galaxy Z Flip4 (USA)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2640,
+      "height": 1080,
+      "touch": true,
+      "size": 6.7
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sm-f721u1": {
+    "deviceName": "SM-F721U1",
+    "marketingName": "Galaxy Z Flip4 (USA unlocked)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2640,
+      "height": 1080,
+      "touch": true,
+      "size": 6.7
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sm-f721w": {
+    "deviceName": "SM-F721W",
+    "marketingName": "Galaxy Z Flip4 (Canada)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2640,
+      "height": 1080,
+      "touch": true,
+      "size": 6.7
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sm-f7210": {
+    "deviceName": "SM-F7210",
+    "marketingName": "Galaxy Z Flip4 (China)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2640,
+      "height": 1080,
+      "touch": true,
+      "size": 6.7
     },
     "type": "phablet",
     "platform": "android"

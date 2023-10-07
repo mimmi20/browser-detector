@@ -223,29 +223,13 @@
     "type": "tablet",
     "platform": "android"
   },
-  "huawei m2-a01l": {
-    "deviceName": "M2-A01L",
-    "marketingName": "MediaPad M2 10.0",
-    "manufacturer": "huawei",
-    "brand": "huawei",
-    "dualOrientation": null,
-    "simCount": null,
-    "display": {
-      "width": 1920,
-      "height": 1200,
-      "touch": true,
-      "size": 10.1
-    },
-    "type": "tablet",
-    "platform": "android"
-  },
   "huawei m2-a01w": {
     "deviceName": "M2-A01W",
-    "marketingName": "MediaPad M2 10.0",
+    "marketingName": "MediaPad M2 10.0 Wi-Fi",
     "manufacturer": "huawei",
     "brand": "huawei",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 0,
     "display": {
       "width": 1920,
       "height": 1200,

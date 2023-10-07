@@ -194,6 +194,20 @@ final class SecChUaModel implements HeaderInterface
             'sm-s906b' => 'samsung=samsung sm-s906b',
             'sm-s911b' => 'samsung=samsung sm-s911b',
             'sm-s916b' => 'samsung=samsung sm-s916b',
+            'sm-x706b' => 'samsung=samsung sm-x706b',
+            'sm-x700' => 'samsung=samsung sm-x700',
+            'sm-x200' => 'samsung=samsung sm-x200',
+            'sm-x205' => 'samsung=samsung sm-x205',
+            'sm-t976b' => 'samsung=samsung sm-t976b',
+            'sm-t870' => 'samsung=samsung sm-t870',
+            'sm-t875' => 'samsung=samsung sm-t875',
+            'sm-t575' => 'samsung=samsung sm-t575',
+            'sm-m325fv' => 'samsung=samsung sm-m325fv',
+            'sm-m325f' => 'samsung=samsung sm-m325f',
+            'sm-m236b' => 'samsung=samsung sm-m236b',
+            'sm-g985f' => 'samsung=samsung sm-g985f',
+            'sm-g770f' => 'samsung=samsung sm-g770f',
+            'sm-f721b' => 'samsung=samsung sm-f721b',
             // Huawei
             'mar-lx1b' => 'huawei=huawei mar-lx1b',
             'lya-l09' => 'huawei=huawei lya-l09',
@@ -215,6 +229,12 @@ final class SecChUaModel implements HeaderInterface
             'rmx3231' => 'realme=realme rmx3231',
             // Motorola
             'moto g200 5g' => 'motorola=motorola moto g200 5g',
+            // Sony
+            'xq-cc54' => 'sony=sony xq-cc54',
+            'xq-bq52' => 'sony=sony xq-bq52',
+            'xq-be52' => 'sony=sony xq-be52',
+            // Vivo
+            'v2109' => 'vivo=vivo v2109',
             default => null,
         };
     }
