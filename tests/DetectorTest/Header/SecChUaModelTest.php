@@ -299,6 +299,10 @@ final class SecChUaModelTest extends TestCase
             ['"SM-G985F"', 'samsung=samsung sm-g985f'],
             ['"SM-G770F"', 'samsung=samsung sm-g770f'],
             ['"SM-F721B"', 'samsung=samsung sm-f721b'],
+            ['"SM-A526B"', 'samsung=samsung sm-a526b'],
+            ['"SM-A526U"', 'samsung=samsung sm-a526u'],
+            ['"SM-A235F"', 'samsung=samsung sm-a235f'],
+            ['"SM-A047F"', 'samsung=samsung sm-a047f'],
             ['""', null],
         ];
     }

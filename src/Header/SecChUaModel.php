@@ -208,6 +208,10 @@ final class SecChUaModel implements HeaderInterface
             'sm-g985f' => 'samsung=samsung sm-g985f',
             'sm-g770f' => 'samsung=samsung sm-g770f',
             'sm-f721b' => 'samsung=samsung sm-f721b',
+            'sm-a526b' => 'samsung=samsung sm-a526b',
+            'sm-a526u' => 'samsung=samsung sm-a526u',
+            'sm-a235f' => 'samsung=samsung sm-a235f',
+            'sm-a047f' => 'samsung=samsung sm-a047f',
             // Huawei
             'mar-lx1b' => 'huawei=huawei mar-lx1b',
             'lya-l09' => 'huawei=huawei lya-l09',
