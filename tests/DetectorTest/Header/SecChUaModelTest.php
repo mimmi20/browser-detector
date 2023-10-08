@@ -329,6 +329,16 @@ final class SecChUaModelTest extends TestCase
             ['"23021RAA2Y"', 'xiaomi=xiaomi 23021raa2y'],
             ['"22126RN91Y"', 'xiaomi=xiaomi 22126rn91y'],
             ['"2211133G"', 'xiaomi=xiaomi 2211133g'],
+            ['"2112123AG"', 'xiaomi=xiaomi 2112123ag'],
+            ['"21091116UG"', 'xiaomi=xiaomi 21091116ug'],
+            ['"motorola razr 5G"', 'motorola=motorola razr 5g'],
+            ['"moto g42"', 'motorola=motorola moto g42'],
+            ['"moto g(60)"', 'motorola=motorola moto g60'],
+            ['"moto g(50)"', 'motorola=motorola moto g50'],
+            ['"moto g(30)"', 'motorola=motorola moto g30'],
+            ['"moto g pro"', 'motorola=motorola moto g pro'],
+            ['"moto e32(s)"', 'motorola=motorola moto e32s'],
+            ['"SM-A426B"', 'samsung=samsung sm-a426b'],
             ['""', null],
         ];
     }

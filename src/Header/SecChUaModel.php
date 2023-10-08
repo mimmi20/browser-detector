@@ -140,6 +140,8 @@ final class SecChUaModel implements HeaderInterface
             '23021raa2y' => 'xiaomi=xiaomi 23021raa2y',
             '22126rn91y' => 'xiaomi=xiaomi 22126rn91y',
             '2211133g' => 'xiaomi=xiaomi 2211133g',
+            '2112123ag' => 'xiaomi=xiaomi 2112123ag',
+            '21091116ug' => 'xiaomi=xiaomi 21091116ug',
             // ZTE
             'zte a2121e' => 'zte=zte a2121e',
             'zte blade 10 vita' => 'zte=zte blade 10 vita',
@@ -230,6 +232,7 @@ final class SecChUaModel implements HeaderInterface
             'sm-a045f' => 'samsung=samsung sm-a045f',
             'sm-a037g' => 'samsung=samsung sm-a037g',
             'sm-a037f' => 'samsung=samsung sm-a037f',
+            'sm-a426b' => 'samsung=samsung sm-a426b',
             // Huawei
             'mar-lx1b' => 'huawei=huawei mar-lx1b',
             'lya-l09' => 'huawei=huawei lya-l09',
@@ -259,6 +262,13 @@ final class SecChUaModel implements HeaderInterface
             'rmx3241' => 'realme=realme rmx3241',
             // Motorola
             'moto g200 5g' => 'motorola=motorola moto g200 5g',
+            'motorola razr 5g' => 'motorola=motorola razr 5g',
+            'moto g42' => 'motorola=motorola moto g42',
+            'moto g(60)' => 'motorola=motorola moto g60',
+            'moto g(50)' => 'motorola=motorola moto g50',
+            'moto g(30)' => 'motorola=motorola moto g30',
+            'moto g pro' => 'motorola=motorola moto g pro',
+            'moto e32(s)' => 'motorola=motorola moto e32s',
             // Sony
             'xq-cc54' => 'sony=sony xq-cc54',
             'xq-bq52' => 'sony=sony xq-bq52',

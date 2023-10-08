@@ -383,22 +383,6 @@
     "type": "phablet",
     "platform": "android"
   },
-  "samsung sm-a426b": {
-    "deviceName": "SM-A426B",
-    "marketingName": "Galaxy A42 5G",
-    "manufacturer": "samsung",
-    "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
-    "display": {
-      "width": 1600,
-      "height": 720,
-      "touch": true,
-      "size": 6.6
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
   "samsung sm-a7160": {
     "deviceName": "SM-A7160",
     "marketingName": "Galaxy A71 (5G)",
@@ -578,22 +562,6 @@
   "samsung sm-g887n": {
     "deviceName": "SM-G887N",
     "marketingName": "Galaxy A8s",
-    "manufacturer": "samsung",
-    "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
-    "display": {
-      "width": 2340,
-      "height": 1080,
-      "touch": true,
-      "size": 6.4
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
-  "samsung sm-m315f": {
-    "deviceName": "SM-M315F",
-    "marketingName": "Galaxy M31",
     "manufacturer": "samsung",
     "brand": "samsung",
     "dualOrientation": null,
@@ -817,11 +785,11 @@
   },
   "samsung sc-01m": {
     "deviceName": "SC-01M",
-    "marketingName": "Galaxy Note 10+",
+    "marketingName": "Galaxy Note 10 Plus 5G",
     "manufacturer": "samsung",
     "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 3040,
       "height": 1440,
@@ -833,11 +801,11 @@
   },
   "samsung sm-n975d": {
     "deviceName": "SM-N975D",
-    "marketingName": "Galaxy Note 10+",
+    "marketingName": "Galaxy Note 10 Plus 4G",
     "manufacturer": "samsung",
     "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 3040,
       "height": 1440,
@@ -849,11 +817,11 @@
   },
   "samsung sm-n975j": {
     "deviceName": "SM-N975J",
-    "marketingName": "Galaxy Note 10+",
+    "marketingName": "Galaxy Note 10 Plus 4G",
     "manufacturer": "samsung",
     "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 3040,
       "height": 1440,
@@ -865,11 +833,11 @@
   },
   "samsung sm-n975x": {
     "deviceName": "SM-N975X",
-    "marketingName": "Galaxy Note 10+",
+    "marketingName": "Galaxy Note 10 Plus 4G",
     "manufacturer": "samsung",
     "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 3040,
       "height": 1440,
@@ -881,11 +849,11 @@
   },
   "samsung sm-n975xu": {
     "deviceName": "SM-N975XU",
-    "marketingName": "Galaxy Note 10+",
+    "marketingName": "Galaxy Note 10 Plus 4G",
     "manufacturer": "samsung",
     "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 3040,
       "height": 1440,
@@ -897,11 +865,11 @@
   },
   "samsung sm-n975w": {
     "deviceName": "SM-N975W",
-    "marketingName": "Galaxy Note 10+ (Canada)",
+    "marketingName": "Galaxy Note 10 Plus 4G (Canada)",
     "manufacturer": "samsung",
     "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 3040,
       "height": 1440,
@@ -913,11 +881,11 @@
   },
   "samsung sm-n975f": {
     "deviceName": "SM-N975F",
-    "marketingName": "Galaxy Note 10+ (Europe)",
+    "marketingName": "Galaxy Note 10 Plus 4G (Europe)",
     "manufacturer": "samsung",
     "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 3040,
       "height": 1440,
@@ -929,11 +897,11 @@
   },
   "samsung sm-n975n": {
     "deviceName": "SM-N975N",
-    "marketingName": "Galaxy Note 10+ (Korea)",
+    "marketingName": "Galaxy Note 10 Plus 4G (Korea)",
     "manufacturer": "samsung",
     "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 3040,
       "height": 1440,
@@ -945,11 +913,11 @@
   },
   "samsung sm-n9750": {
     "deviceName": "SM-N9750",
-    "marketingName": "Galaxy Note 10+ (LATAM, Brazil, China)",
+    "marketingName": "Galaxy Note 10 Plus 4G (LATAM, Brazil, China)",
     "manufacturer": "samsung",
     "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 3040,
       "height": 1440,
@@ -961,11 +929,11 @@
   },
   "samsung sm-n975u": {
     "deviceName": "SM-N975U",
-    "marketingName": "Galaxy Note 10+ (USA)",
+    "marketingName": "Galaxy Note 10 Plus 4G (USA)",
     "manufacturer": "samsung",
     "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 3040,
       "height": 1440,
@@ -977,11 +945,11 @@
   },
   "samsung sm-n975u1": {
     "deviceName": "SM-N975U1",
-    "marketingName": "Galaxy Note 10+ (USA)",
+    "marketingName": "Galaxy Note 10 Plus 4G (USA)",
     "manufacturer": "samsung",
     "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 3040,
       "height": 1440,
@@ -993,11 +961,11 @@
   },
   "samsung sm-n976": {
     "deviceName": "SM-N976",
-    "marketingName": "Galaxy Note 10+ 5G",
+    "marketingName": "Galaxy Note 10 Plus 5G",
     "manufacturer": "samsung",
     "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 3040,
       "height": 1440,
@@ -1009,11 +977,11 @@
   },
   "samsung sm-n9760": {
     "deviceName": "SM-N9760",
-    "marketingName": "Galaxy Note 10+ 5G",
+    "marketingName": "Galaxy Note 10 Plus 5G",
     "manufacturer": "samsung",
     "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 3040,
       "height": 1440,
@@ -1025,11 +993,11 @@
   },
   "samsung sm-n976b": {
     "deviceName": "SM-N976B",
-    "marketingName": "Galaxy Note 10+ 5G",
+    "marketingName": "Galaxy Note 10 Plus 5G",
     "manufacturer": "samsung",
     "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 3040,
       "height": 1440,
@@ -1041,11 +1009,11 @@
   },
   "samsung sm-n976f": {
     "deviceName": "SM-N976F",
-    "marketingName": "Galaxy Note 10+ 5G",
+    "marketingName": "Galaxy Note 10 Plus 5G",
     "manufacturer": "samsung",
     "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 3040,
       "height": 1440,
@@ -1057,11 +1025,11 @@
   },
   "samsung sm-n976n": {
     "deviceName": "SM-N976N",
-    "marketingName": "Galaxy Note 10+ 5G",
+    "marketingName": "Galaxy Note 10 Plus 5G",
     "manufacturer": "samsung",
     "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 3040,
       "height": 1440,
@@ -1073,11 +1041,11 @@
   },
   "samsung sm-n976q": {
     "deviceName": "SM-N976Q",
-    "marketingName": "Galaxy Note 10+ 5G",
+    "marketingName": "Galaxy Note 10 Plus 5G",
     "manufacturer": "samsung",
     "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 3040,
       "height": 1440,
@@ -1089,11 +1057,11 @@
   },
   "samsung sm-n976u": {
     "deviceName": "SM-N976U",
-    "marketingName": "Galaxy Note 10+ 5G",
+    "marketingName": "Galaxy Note 10 Plus 5G",
     "manufacturer": "samsung",
     "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 3040,
       "height": 1440,
@@ -1105,11 +1073,11 @@
   },
   "samsung sm-n976v": {
     "deviceName": "SM-N976V",
-    "marketingName": "Galaxy Note 10+ 5G",
+    "marketingName": "Galaxy Note 10 Plus 5G",
     "manufacturer": "samsung",
     "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 3040,
       "height": 1440,
@@ -1121,11 +1089,11 @@
   },
   "samsung scv45": {
     "deviceName": "SCV45",
-    "marketingName": "Galaxy Note 10+ WiMAX 2+",
+    "marketingName": "Galaxy Note 10 Plus 4G WiMAX 2+",
     "manufacturer": "samsung",
     "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 3040,
       "height": 1440,
