@@ -2910,5 +2910,37 @@
     },
     "type": "smartphone",
     "platform": "android"
+  },
+  "nokia g22": {
+    "deviceName": "G22",
+    "marketingName": "G22",
+    "manufacturer": "nokia",
+    "brand": "nokia",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1600,
+      "height": 720,
+      "touch": true,
+      "size": 6.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "nokia c12": {
+    "deviceName": "C12",
+    "marketingName": "C12",
+    "manufacturer": "nokia",
+    "brand": "nokia",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1600,
+      "height": 720,
+      "touch": true,
+      "size": 6.3
+    },
+    "type": "smartphone",
+    "platform": "android"
   }
 }

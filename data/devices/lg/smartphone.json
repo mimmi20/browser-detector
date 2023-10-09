@@ -3233,11 +3233,11 @@
   },
   "lg lm-g850": {
     "deviceName": "LM-G850",
-    "marketingName": "G8 ThinQ",
+    "marketingName": "G8X ThinQ",
     "manufacturer": "lg",
     "brand": "lg",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 3120,
       "height": 1440,
@@ -11380,8 +11380,8 @@
     "marketingName": "Velvet 5G",
     "manufacturer": "lg",
     "brand": "lg",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 2460,
       "height": 1080,
@@ -11396,8 +11396,40 @@
     "marketingName": "Velvet 5G",
     "manufacturer": "lg",
     "brand": "lg",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2460,
+      "height": 1080,
+      "touch": true,
+      "size": 6.8
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "lg lm-g900em": {
+    "deviceName": "LM-G900EM",
+    "marketingName": "Velvet 5G",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2460,
+      "height": 1080,
+      "touch": true,
+      "size": 6.8
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "lg lm-g900tm": {
+    "deviceName": "LM-G900TM",
+    "marketingName": "Velvet 5G",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 2460,
       "height": 1080,
@@ -11409,11 +11441,11 @@
   },
   "lg lm-g910": {
     "deviceName": "LM-G910",
-    "marketingName": "Velvet 5G",
+    "marketingName": "Velvet 4G",
     "manufacturer": "lg",
     "brand": "lg",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 2460,
       "height": 1080,
