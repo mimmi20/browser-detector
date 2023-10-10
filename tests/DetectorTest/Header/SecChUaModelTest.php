@@ -371,6 +371,14 @@ final class SecChUaModelTest extends TestCase
             ['"moto e30"', 'motorola=motorola moto e30'],
             ['"moto e20"', 'motorola=motorola moto e20'],
             ['"WP16"', 'oukitel=oukitel wp16'],
+            ['"SM-A035F"', 'samsung=samsung sm-a035f'],
+            ['"SM-A035M"', 'samsung=samsung sm-a035m'],
+            ['"SM-A035G"', 'samsung=samsung sm-a035g'],
+            ['"SM-M225FV"', 'samsung=samsung sm-m225fv'],
+            ['"SM-A022G"', 'samsung=samsung sm-a022g'],
+            ['"SM-A022F"', 'samsung=samsung sm-a022f'],
+            ['"Pixel 4"', 'google=google pixel 4'],
+            ['"RMX3263"', 'realme=realme rmx3263'],
             ['""', null],
         ];
     }

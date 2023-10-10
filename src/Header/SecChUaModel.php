@@ -65,6 +65,7 @@ final class SecChUaModel implements HeaderInterface
             'nexus 7' => 'google=google nexus 7',
             'pixel 3' => 'google=google pixel 3',
             'pixel 3a' => 'google=google pixel 3a',
+            'pixel 4' => 'google=google pixel 4',
             'pixel 4 xl' => 'google=google pixel 4 xl',
             'pixel 4a (5g)' => 'google=google pixel 4a 5g',
             'pixel 5' => 'google=google pixel 5',
@@ -255,6 +256,12 @@ final class SecChUaModel implements HeaderInterface
             'sm-a025g' => 'samsung=samsung sm-a025g',
             'sm-a025f' => 'samsung=samsung sm-a025f',
             'sm-m135f' => 'samsung=samsung sm-m135f',
+            'sm-a035f' => 'samsung=samsung sm-a035f',
+            'sm-a035m' => 'samsung=samsung sm-a035m',
+            'sm-a035g' => 'samsung=samsung sm-a035g',
+            'sm-m225fv' => 'samsung=samsung sm-m225fv',
+            'sm-a022g' => 'samsung=samsung sm-a022g',
+            'sm-a022f' => 'samsung=samsung sm-a022f',
             // Huawei
             'mar-lx1b' => 'huawei=huawei mar-lx1b',
             'lya-l09' => 'huawei=huawei lya-l09',
@@ -287,6 +294,7 @@ final class SecChUaModel implements HeaderInterface
             'rmx3241' => 'realme=realme rmx3241',
             'rmx3501' => 'realme=realme rmx3501',
             'rmx3151' => 'realme=realme rmx3151',
+            'rmx3263' => 'realme=realme rmx3263',
             // Motorola
             'moto g200 5g' => 'motorola=motorola moto g200 5g',
             'motorola razr 5g' => 'motorola=motorola razr 5g',
