@@ -241,11 +241,11 @@
   },
   "xiaomi m2004j7ac": {
     "deviceName": "M2004J7AC",
-    "marketingName": "Redmi 10X 5G Standard Edition Dual SIM",
+    "marketingName": "Redmi 10X 5G",
     "manufacturer": "xiaomi",
     "brand": "xiaomi",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 2400,
       "height": 1080,
@@ -257,32 +257,16 @@
   },
   "xiaomi m2004j7bc": {
     "deviceName": "M2004J7BC",
-    "marketingName": "Redmi 10X Pro 5G Dual SIM",
+    "marketingName": "Redmi 10X Pro 5G",
     "manufacturer": "xiaomi",
     "brand": "xiaomi",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 2400,
       "height": 1080,
       "touch": true,
       "size": 6.6
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
-  "xiaomi m2004j19c": {
-    "deviceName": "M2004J19C",
-    "marketingName": "Redmi 9 Standard Edition Dual SIM",
-    "manufacturer": "xiaomi",
-    "brand": "xiaomi",
-    "dualOrientation": null,
-    "simCount": null,
-    "display": {
-      "width": 2340,
-      "height": 1080,
-      "touch": true,
-      "size": 6.5
     },
     "type": "phablet",
     "platform": "android"
@@ -374,22 +358,6 @@
     "brand": "xiaomi",
     "dualOrientation": null,
     "simCount": null,
-    "display": {
-      "width": 1600,
-      "height": 720,
-      "touch": true,
-      "size": 6.5
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
-  "xiaomi m2006c3mng": {
-    "deviceName": "M2006C3MNG",
-    "marketingName": "Redmi 9C NFC (Global)",
-    "manufacturer": "xiaomi",
-    "brand": "xiaomi",
-    "dualOrientation": true,
-    "simCount": 2,
     "display": {
       "width": 1600,
       "height": 720,

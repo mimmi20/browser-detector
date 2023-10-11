@@ -1,6 +1,48 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; LM-K420) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.98 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "K420",
+      "marketingName": "K10",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5.3
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "97.0.4692.98",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "97.0.4692.98",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 10; LM-X320) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.98 Mobile Safari/537.36"
     },
     "device": {
@@ -51,8 +93,8 @@
       "marketingName": "K20 (2019)",
       "manufacturer": "lg",
       "brand": "lg",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 960,
         "height": 480,
@@ -258,11 +300,11 @@
     "device": {
       "architecture": null,
       "deviceName": "LM-G850",
-      "marketingName": "G8 ThinQ",
+      "marketingName": "G8X ThinQ",
       "manufacturer": "lg",
       "brand": "lg",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 3120,
         "height": 1440,
@@ -597,8 +639,8 @@
       "marketingName": "K20 (2019)",
       "manufacturer": "lg",
       "brand": "lg",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 960,
         "height": 480,
@@ -720,11 +762,11 @@
     "device": {
       "architecture": null,
       "deviceName": "LM-G910",
-      "marketingName": "Velvet 5G",
+      "marketingName": "Velvet 4G",
       "manufacturer": "lg",
       "brand": "lg",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 2460,
         "height": 1080,
@@ -1392,11 +1434,11 @@
     "device": {
       "architecture": null,
       "deviceName": "LM-G910",
-      "marketingName": "Velvet 5G",
+      "marketingName": "Velvet 4G",
       "manufacturer": "lg",
       "brand": "lg",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 2460,
         "height": 1080,
@@ -1605,8 +1647,8 @@
       "marketingName": "Velvet 5G",
       "manufacturer": "lg",
       "brand": "lg",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 2460,
         "height": 1080,
@@ -1728,11 +1770,11 @@
     "device": {
       "architecture": null,
       "deviceName": "LM-G850",
-      "marketingName": "G8 ThinQ",
+      "marketingName": "G8X ThinQ",
       "manufacturer": "lg",
       "brand": "lg",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 3120,
         "height": 1440,
@@ -2563,11 +2605,11 @@
     "device": {
       "architecture": null,
       "deviceName": "LM-G910",
-      "marketingName": "Velvet 5G",
+      "marketingName": "Velvet 4G",
       "manufacturer": "lg",
       "brand": "lg",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 2460,
         "height": 1080,
@@ -3616,11 +3658,11 @@
     "device": {
       "architecture": null,
       "deviceName": "LM-G850",
-      "marketingName": "G8 ThinQ",
+      "marketingName": "G8X ThinQ",
       "manufacturer": "lg",
       "brand": "lg",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 3120,
         "height": 1440,
@@ -3745,8 +3787,8 @@
       "marketingName": "Velvet 5G",
       "manufacturer": "lg",
       "brand": "lg",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 2460,
         "height": 1080,
@@ -3913,8 +3955,8 @@
       "marketingName": "K20 (2019)",
       "manufacturer": "lg",
       "brand": "lg",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 960,
         "height": 480,
@@ -3952,11 +3994,11 @@
     "device": {
       "architecture": null,
       "deviceName": "LM-G850",
-      "marketingName": "G8 ThinQ",
+      "marketingName": "G8X ThinQ",
       "manufacturer": "lg",
       "brand": "lg",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 3120,
         "height": 1440,
@@ -4165,8 +4207,8 @@
       "marketingName": "Velvet 5G",
       "manufacturer": "lg",
       "brand": "lg",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 2460,
         "height": 1080,
@@ -4204,11 +4246,11 @@
     "device": {
       "architecture": null,
       "deviceName": "LM-G910",
-      "marketingName": "Velvet 5G",
+      "marketingName": "Velvet 4G",
       "manufacturer": "lg",
       "brand": "lg",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 2460,
         "height": 1080,
@@ -4236,48 +4278,6 @@
     "engine": {
       "name": "Blink",
       "version": "99.0.4844.73",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 9; LM-X420) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.101 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "LM-X420",
-      "marketingName": "K12 Plus",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": 5.7
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "9.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Chrome",
-      "version": "98.0.4758.101",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "98.0.4758.101",
       "manufacturer": "google"
     }
   }

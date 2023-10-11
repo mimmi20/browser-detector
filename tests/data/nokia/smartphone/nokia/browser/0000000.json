@@ -2777,6 +2777,48 @@
     },
     "device": {
       "architecture": null,
+      "deviceName": "X20",
+      "marketingName": "X20",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.67
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Nokia Browser",
+      "version": null,
+      "manufacturer": "nokia",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Dalvik/2.1.0 (Linux; U; Android 12; Nokia XR20 Build/SKQ1.211006.001)"
+    },
+    "device": {
+      "architecture": null,
       "deviceName": "X",
       "marketingName": "X",
       "manufacturer": "nokia",

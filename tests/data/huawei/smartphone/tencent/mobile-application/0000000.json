@@ -636,11 +636,11 @@
     "device": {
       "architecture": null,
       "deviceName": "TAG-L22",
-      "marketingName": "GR3",
+      "marketingName": "Enjoy 5s",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 1280,
         "height": 720,
@@ -765,8 +765,8 @@
       "marketingName": "Mate 9",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1920,
         "height": 1080,
@@ -1644,11 +1644,11 @@
     "device": {
       "architecture": null,
       "deviceName": "TAG-AL00",
-      "marketingName": "GR3",
+      "marketingName": "Enjoy 5s",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 1280,
         "height": 720,
@@ -1689,8 +1689,8 @@
       "marketingName": "Mate 9",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1920,
         "height": 1080,
@@ -1980,11 +1980,11 @@
     "device": {
       "architecture": null,
       "deviceName": "TAG-TL00",
-      "marketingName": "GR3",
+      "marketingName": "Enjoy 5s",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 1280,
         "height": 720,
@@ -2697,8 +2697,8 @@
       "marketingName": "Mate 9",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1920,
         "height": 1080,
@@ -2823,8 +2823,8 @@
       "marketingName": "P8 Lite (2017)",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 1920,
         "height": 1080,
@@ -2936,6 +2936,48 @@
     "engine": {
       "name": "Blink",
       "version": "66.0.3359.126",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; LGE-AN10 Build/HONORLGE-AN10; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/3211 MMWEBSDK/20220303 Mobile Safari/537.36 MMWEBID/7223 MicroMessenger/8.0.21.2120(0x2800153B) Process/toolsmp WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "LGE-AN10",
+      "marketingName": "Honor Magic4 Pro",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2848,
+        "height": 1312,
+        "touch": true,
+        "size": 6.81
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "BSD",
+      "marketingName": "BSD",
+      "version": null,
+      "manufacturer": "berkley-university"
+    },
+    "client": {
+      "name": "WeChat App",
+      "version": "0.0.0",
+      "manufacturer": "tencent",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "86.0.4240.99",
       "manufacturer": "google"
     }
   },

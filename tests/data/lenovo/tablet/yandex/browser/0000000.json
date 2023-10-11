@@ -90,11 +90,11 @@
     "device": {
       "architecture": null,
       "deviceName": "A10-70F",
-      "marketingName": "Tab 2 Wi-Fi",
+      "marketingName": "Tab 2 A10-70 Wi-Fi",
       "manufacturer": "lenovo",
       "brand": "lenovo",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 1920,
         "height": 1200,
@@ -332,6 +332,48 @@
     "engine": {
       "name": "Blink",
       "version": "38.0.2125.122",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1; Lenovo YT3-X90F Build/LMY47I) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 YaBrowser/16.6.0.8810.01 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "YT3-X90F",
+      "marketingName": "Yoga Tab 3 Pro 10.1 Wi-Fi",
+      "manufacturer": "lenovo",
+      "brand": "lenovo",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 2560,
+        "height": 1600,
+        "touch": true,
+        "size": 10.1
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "version": "16.6.0.8810.01",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "50.0.2661.102",
       "manufacturer": "google"
     }
   },
@@ -636,11 +678,11 @@
     "device": {
       "architecture": null,
       "deviceName": "TB3-X70F",
-      "marketingName": "Yoga Tab 3 10 Plus Wi-Fi",
+      "marketingName": "Tab3 10 Business Wi-Fi",
       "manufacturer": "lenovo",
       "brand": "lenovo",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 1920,
         "height": 1200,
@@ -678,11 +720,11 @@
     "device": {
       "architecture": null,
       "deviceName": "TB3-X70F",
-      "marketingName": "Yoga Tab 3 10 Plus Wi-Fi",
+      "marketingName": "Tab3 10 Business Wi-Fi",
       "manufacturer": "lenovo",
       "brand": "lenovo",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 1920,
         "height": 1200,
@@ -972,11 +1014,11 @@
     "device": {
       "architecture": null,
       "deviceName": "TB3-X70F",
-      "marketingName": "Yoga Tab 3 10 Plus Wi-Fi",
+      "marketingName": "Tab3 10 Business Wi-Fi",
       "manufacturer": "lenovo",
       "brand": "lenovo",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 1920,
         "height": 1200,

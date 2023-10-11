@@ -258,11 +258,11 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-A300FU",
-      "marketingName": "Galaxy A3 LTE",
+      "marketingName": "Galaxy A3 LTE (2015)",
       "manufacturer": "samsung",
       "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 960,
         "height": 540,
@@ -384,11 +384,11 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-G901F",
-      "marketingName": "Galaxy S5 Plus",
+      "marketingName": "Galaxy S5 LTE Plus",
       "manufacturer": "samsung",
       "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1920,
         "height": 1080,
@@ -429,8 +429,8 @@
       "marketingName": "Galaxy A5 (Europe)",
       "manufacturer": "samsung",
       "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1280,
         "height": 720,
@@ -804,7 +804,7 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-A730F",
-      "marketingName": "Galaxy A8+",
+      "marketingName": "Galaxy A8 Plus",
       "manufacturer": "samsung",
       "brand": "samsung",
       "dualOrientation": null,

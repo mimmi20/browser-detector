@@ -1644,11 +1644,11 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-T819",
-      "marketingName": "Galaxy Tab S2 Plus (9.7, 2016)",
+      "marketingName": "Galaxy Tab S2 9.7 LTE (2016)",
       "manufacturer": "samsung",
       "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 2048,
         "height": 1536,
@@ -1686,11 +1686,11 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-T819",
-      "marketingName": "Galaxy Tab S2 Plus (9.7, 2016)",
+      "marketingName": "Galaxy Tab S2 9.7 LTE (2016)",
       "manufacturer": "samsung",
       "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 2048,
         "height": 1536,
@@ -1728,11 +1728,11 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-T825",
-      "marketingName": "Galaxy Tab S3 (9.7) LTE",
+      "marketingName": "Galaxy Tab S3 (9.7, LTE)",
       "manufacturer": "samsung",
       "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 2048,
         "height": 1536,
@@ -1896,11 +1896,11 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-T819",
-      "marketingName": "Galaxy Tab S2 Plus (9.7, 2016)",
+      "marketingName": "Galaxy Tab S2 9.7 LTE (2016)",
       "manufacturer": "samsung",
       "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 2048,
         "height": 1536,
@@ -1941,8 +1941,8 @@
       "marketingName": "Galaxy Tab A7 10.4 LTE (2020)",
       "manufacturer": "samsung",
       "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 2000,
         "height": 1200,
@@ -2022,11 +2022,11 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-T976B",
-      "marketingName": "Galaxy Tab S7 Plus 5G",
+      "marketingName": "Galaxy Tab S7 Plus 12.4 5G",
       "manufacturer": "samsung",
       "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 2800,
         "height": 1752,
@@ -2064,11 +2064,11 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-T867",
-      "marketingName": "Galaxy Tab S6 (LTE)",
+      "marketingName": "Galaxy Tab S6 10.5 LTE",
       "manufacturer": "samsung",
       "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 2560,
         "height": 1600,
@@ -2106,11 +2106,11 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-T867U",
-      "marketingName": "Galaxy Tab S6 (LTE, T-Mobile)",
+      "marketingName": "Galaxy Tab S6 10.5 LTE (T-Mobile)",
       "manufacturer": "samsung",
       "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 2560,
         "height": 1600,
@@ -2151,8 +2151,8 @@
       "marketingName": "Galaxy Tab A7 10.4 LTE (2020)",
       "manufacturer": "samsung",
       "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 2000,
         "height": 1200,
@@ -2235,8 +2235,8 @@
       "marketingName": "Galaxy Tab A7 10.4 LTE (2020)",
       "manufacturer": "samsung",
       "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 2000,
         "height": 1200,
@@ -2277,8 +2277,8 @@
       "marketingName": "Galaxy Tab A7 10.4 LTE (2020)",
       "manufacturer": "samsung",
       "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 2000,
         "height": 1200,
@@ -2311,54 +2311,12 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 11; SM-T290 Build/RP1A.200720.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/110.0.5481.153 Mobile Safari/537.36 GoogleApp/14.12.12.26.arm64"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SM-T290",
-      "marketingName": "Galaxy Tab A 8.0 (2019, Global)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1280,
-        "height": 800,
-        "touch": true,
-        "size": 8
-      },
-      "type": "fone-pad",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "11.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Google App",
-      "version": "14.12.12.26",
-      "manufacturer": "google",
-      "type": "mobile-application",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "110.0.5481.153",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 11; SM-T515 Build/RP1A.200720.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/116.0.0.0 Safari/537.36 GoogleApp/14.34.24.28.arm"
     },
     "device": {
       "architecture": null,
       "deviceName": "SM-T515",
-      "marketingName": "Tab A 10.1 LTE (2019)",
+      "marketingName": "Galaxy Tab A 10.1 LTE (2019)",
       "manufacturer": "samsung",
       "brand": "samsung",
       "dualOrientation": null,

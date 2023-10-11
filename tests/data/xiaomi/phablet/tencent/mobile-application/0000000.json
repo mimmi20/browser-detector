@@ -211,21 +211,21 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; M2002J9G Build/QKQ1.191222.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.62 XWEB/2469 MMWEBSDK/200701 Mobile Safari/537.36 MMWEBID/2721 MicroMessenger/7.0.17.1701(0x27001141) Process/toolsmp WeChat/arm64 GPVersion/1 NetType/WIFI Language/en ABI/arm64 comdirect/1.0 (appVersion:20.11.1;deviceType:mobile)"
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; Redmi Note 9S Build/QKQ1.191215.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.62 XWEB/2469 MMWEBSDK/200701 Mobile Safari/537.36 MMWEBID/5433 MicroMessenger/7.0.17.1701(0x27001141) Process/tools WeChat/arm64 GPVersion/1 NetType/WIFI Language/zh_CN ABI/arm64 comdirect/1.0 (appVersion:20.11.1;deviceType:mobile)"
     },
     "device": {
       "architecture": null,
-      "deviceName": "M2002J9G",
-      "marketingName": "Mi 10 Lite Standard Edition 5G (Global, Dual SIM)",
+      "deviceName": "Redmi Note 9S",
+      "marketingName": "Redmi Note 9S",
       "manufacturer": "xiaomi",
       "brand": "xiaomi",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 2400,
         "height": 1080,
         "touch": true,
-        "size": 6.6
+        "size": 6.67
       },
       "type": "phablet",
       "ismobile": true,

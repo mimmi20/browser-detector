@@ -1,11 +1,11 @@
 {
   "amazon kfauwi": {
     "deviceName": "KFAUWI",
-    "marketingName": "Fire (2017)",
+    "marketingName": "Fire 7 (2017)",
     "manufacturer": "amazon",
     "brand": "amazon",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 0,
     "display": {
       "width": 1024,
       "height": 600,
@@ -17,11 +17,11 @@
   },
   "amazon kffowi": {
     "deviceName": "KFFOWI",
-    "marketingName": "Fire (5th Gen.)",
+    "marketingName": "Fire (2015)",
     "manufacturer": "amazon",
     "brand": "amazon",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 0,
     "display": {
       "width": 1024,
       "height": 600,
@@ -81,11 +81,11 @@
   },
   "amazon kftbwi": {
     "deviceName": "KFTBWI",
-    "marketingName": "Fire HD 10 (5th Gen.)",
+    "marketingName": "Fire HD 10 (2015)",
     "manufacturer": "amazon",
     "brand": "amazon",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 0,
     "display": {
       "width": 1280,
       "height": 800,
@@ -97,11 +97,11 @@
   },
   "amazon kfarwi": {
     "deviceName": "KFARWI",
-    "marketingName": "Fire HD 6 (4th Gen.)",
+    "marketingName": "Fire HD 6 (2014)",
     "manufacturer": "amazon",
     "brand": "amazon",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 0,
     "display": {
       "width": 1280,
       "height": 800,
@@ -113,11 +113,11 @@
   },
   "amazon kfaswi": {
     "deviceName": "KFASWI",
-    "marketingName": "Fire HD 7 (4th Gen.)",
+    "marketingName": "Fire HD 7 (2014)",
     "manufacturer": "amazon",
     "brand": "amazon",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 0,
     "display": {
       "width": 1280,
       "height": 800,
@@ -132,8 +132,8 @@
     "marketingName": "Fire HD 8 (2016)",
     "manufacturer": "amazon",
     "brand": "amazon",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 0,
     "display": {
       "width": 1280,
       "height": 800,
@@ -177,11 +177,11 @@
   },
   "amazon kfmewi": {
     "deviceName": "KFMEWI",
-    "marketingName": "Fire HD 8 (5th Gen.)",
+    "marketingName": "Fire HD 8 (2015)",
     "manufacturer": "amazon",
     "brand": "amazon",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 0,
     "display": {
       "width": 1280,
       "height": 800,
@@ -193,11 +193,11 @@
   },
   "amazon kfsawi": {
     "deviceName": "KFSAWI",
-    "marketingName": "Fire HDX 8.9 (4th Gen.)",
+    "marketingName": "Fire HDX 8.9 (2014)",
     "manufacturer": "amazon",
     "brand": "amazon",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 0,
     "display": {
       "width": 2560,
       "height": 1600,
@@ -305,11 +305,11 @@
   },
   "amazon kfsowi": {
     "deviceName": "KFSOWI",
-    "marketingName": "Kindle Fire HD 7 (3rd Gen., Wi-Fi)",
+    "marketingName": "Kindle Fire HD 7 (2013, Wi-Fi)",
     "manufacturer": "amazon",
     "brand": "amazon",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 0,
     "display": {
       "width": 1280,
       "height": 800,
@@ -337,11 +337,11 @@
   },
   "amazon kfthwi": {
     "deviceName": "KFTHWI",
-    "marketingName": "Kindle Fire HDX 7 (3rd Gen., Wi-Fi)",
+    "marketingName": "Kindle Fire HDX 7 (2013, Wi-Fi)",
     "manufacturer": "amazon",
     "brand": "amazon",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 0,
     "display": {
       "width": 1920,
       "height": 1200,
@@ -353,11 +353,11 @@
   },
   "amazon kfapwi": {
     "deviceName": "KFAPWI",
-    "marketingName": "Kindle Fire HDX 8.9 (3rd Gen.)",
+    "marketingName": "Kindle Fire HDX 8.9 (2013)",
     "manufacturer": "amazon",
     "brand": "amazon",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 0,
     "display": {
       "width": 2560,
       "height": 1600,
@@ -443,6 +443,86 @@
       "height": 800,
       "touch": true,
       "size": 8
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "amazon kfsnwi": {
+    "deviceName": "KFSNWI",
+    "marketingName": "Fire Max 11",
+    "manufacturer": "amazon",
+    "brand": "amazon",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 2000,
+      "height": 1200,
+      "touch": true,
+      "size": 11
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "amazon kfrawi": {
+    "deviceName": "KFRAWI",
+    "marketingName": "Fire HD 8 (2022)",
+    "manufacturer": "amazon",
+    "brand": "amazon",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": 8
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "amazon kfquwi": {
+    "deviceName": "KFQUWI",
+    "marketingName": "Fire 7 (2022)",
+    "manufacturer": "amazon",
+    "brand": "amazon",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "size": 7
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "amazon kfrapwi": {
+    "deviceName": "KFRAPWI",
+    "marketingName": "Fire HD 8 (2022)",
+    "manufacturer": "amazon",
+    "brand": "amazon",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": 8
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "amazon kftuwi": {
+    "deviceName": "KFTUWI",
+    "marketingName": "Fire HD 10 (2023)",
+    "manufacturer": "amazon",
+    "brand": "amazon",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "size": 10.1
     },
     "type": "tablet",
     "platform": "android"
