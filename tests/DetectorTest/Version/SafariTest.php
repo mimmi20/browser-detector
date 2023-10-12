@@ -94,6 +94,18 @@ final class SafariTest extends TestCase
                 'Mozilla/5.0 (Android; Mobile; rv:10.0.5) Gecko/10.0.5 Firefox/10.0.5 Fennec/10.0.5',
                 null,
             ],
+            [
+                'Mozilla/5.0 (iPad; CPU OS 12_1_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/16C50 Safari/605.1.15 Version/12.2.0.0.1',
+                '12.2.0.0.1',
+            ],
+            [
+                'mozilla/5.0 (macintosh; intel mac os x 10_15_7) applewebkit/605.1.15 (khtml, like gecko) version/16.3 safari/605.1.15',
+                '16.3.0',
+            ],
+            [
+                'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15',
+                '17.1.0',
+            ],
         ];
     }
 

@@ -38,7 +38,33 @@ final class Safari implements VersionFactoryInterface
     {
         $matches = [];
 
-        $doMatch = preg_match('/(?:Version|Safari)\/(?P<version>[\d\.]+)/', $useragent, $matches);
+        $doMatch = preg_match('/version\/(?P<version>[\d\.]+)/i', $useragent, $matches);
+
+        if ($doMatch) {
+            try {
+                $version = $this->versionBuilder->set($matches['version']);
+            } catch (NotNumericException $e) {
+                $this->logger->info($e);
+
+                return new NullVersion();
+            }
+
+            $mappedVersion = $this->safariHelper->mapSafariVersion($version);
+
+            if ($mappedVersion === null) {
+                return new NullVersion();
+            }
+
+            try {
+                return $this->versionBuilder->set($mappedVersion);
+            } catch (NotNumericException $e) {
+                $this->logger->info($e);
+            }
+
+            return new NullVersion();
+        }
+
+        $doMatch = preg_match('/Safari\/(?P<version>[\d\.]+)/', $useragent, $matches);
 
         if ($doMatch) {
             try {

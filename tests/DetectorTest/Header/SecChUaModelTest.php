@@ -385,7 +385,7 @@ final class SecChUaModelTest extends TestCase
             ['"N40Pro"', 'doogee=doogee n40 pro'],
             ['"M2012K11G"', 'xiaomi=xiaomi m2012k11g'],
             ['"M2007J17G"', 'xiaomi=xiaomi m2007j17g'],
-            ['"M2006C3MNG"', 'xiaomi=xiaomi m2007j17g'],
+            ['"M2006C3MNG"', 'xiaomi=xiaomi m2006c3mng'],
             ['"Lenovo TB-X306X"', 'lenovo=lenovo tb-x306x'],
             ['"Lenovo TB-X306XA"', 'lenovo=lenovo tb-x306xa'],
             ['"KFRAPWI"', 'amazon=amazon kfrapwi'],

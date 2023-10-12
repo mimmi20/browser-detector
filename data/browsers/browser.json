@@ -5168,5 +5168,29 @@
       ]
     },
     "engine": null
+  },
+  "avira-secure-browser": {
+    "name": "Avira Secure Browser",
+    "manufacturer": "avira-operations",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Avira"
+      ]
+    },
+    "engine": null
+  },
+  "norton-secure-browser": {
+    "name": "Norton Secure Browser",
+    "manufacturer": "norton-life-lock",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Norton"
+      ]
+    },
+    "engine": null
   }
 }

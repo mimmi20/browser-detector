@@ -176,6 +176,8 @@
     "/stargon/i": "stargon-browser",
     "/soul\\//i": "soul-browser",
     "/rytebot/i": "ryte-bot",
+    "/avira\\//i": "avira-secure-browser",
+    "/norton\\//i": "norton-secure-browser",
     "/(?<!agent)version[ \\/][0-9_.]+ +chrome|com\\.android\\.browser/i": "android webview",
     "/theworld/i": "theworld",
     "/(?<!u)ptst/i": "webpagetest",
