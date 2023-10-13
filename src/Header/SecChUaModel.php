@@ -281,6 +281,7 @@ final class SecChUaModel implements HeaderInterface
             'ntn-lx1' => 'huawei=huawei ntn-lx1',
             'lge-nx9' => 'huawei=huawei lge-nx9',
             'dby-w09' => 'huawei=huawei dby-w09',
+            'nam-lx9' => 'huawei=huawei nam-lx9',
             // Lenovo
             'lenovo tb-x304f' => 'lenovo=lenovo tb-x304f',
             'lenovo yt-j706f' => 'lenovo=lenovo yt-j706f',

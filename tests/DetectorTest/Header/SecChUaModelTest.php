@@ -392,6 +392,7 @@ final class SecChUaModelTest extends TestCase
             ['"KB2003"', 'oneplus=oneplus kb2003'],
             ['"CPH2269"', 'oppo=oppo cph2269'],
             ['"BE2013"', 'oneplus=oneplus be2013'],
+            ['"NAM-LX9"', 'huawei=huawei nam-lx9'],
             ['""', null],
         ];
     }
