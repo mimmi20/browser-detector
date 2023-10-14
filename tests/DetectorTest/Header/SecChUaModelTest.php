@@ -393,6 +393,17 @@ final class SecChUaModelTest extends TestCase
             ['"CPH2269"', 'oppo=oppo cph2269'],
             ['"BE2013"', 'oneplus=oneplus be2013'],
             ['"NAM-LX9"', 'huawei=huawei nam-lx9'],
+            ['"Lenovo TB-J616F"', 'lenovo=lenovo tb-j616f'],
+            ['"Lenovo TB-J616X"', 'lenovo=lenovo tb-j616x'],
+            ['"2201117PG"', 'xiaomi=xiaomi 2201117pg'],
+            ['"SM-M336B"', 'samsung=samsung sm-m336b'],
+            ['"SM-M336BU"', 'samsung=samsung sm-m336bu'],
+            ['"LE2123"', 'oneplus=oneplus le2123'],
+            ['"LE2125"', 'oneplus=oneplus le2125'],
+            ['"LE2120"', 'oneplus=oneplus le2120'],
+            ['"22071212AG"', 'xiaomi=xiaomi 22071212ag'],
+            ['"2201116PG"', 'xiaomi=xiaomi 2201116pg'],
+            ['"SM-M115F"', 'samsung=samsung sm-m115f'],
             ['""', null],
         ];
     }

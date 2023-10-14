@@ -958,5 +958,21 @@
     },
     "type": "smartphone",
     "platform": "android"
+  },
+  "cubot quest": {
+    "deviceName": "Quest",
+    "marketingName": "Quest",
+    "manufacturer": "cubot",
+    "brand": "cubot",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1440,
+      "height": 720,
+      "touch": true,
+      "size": 5.5
+    },
+    "type": "smartphone",
+    "platform": "android"
   }
 }

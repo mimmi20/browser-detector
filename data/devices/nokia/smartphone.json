@@ -127,6 +127,22 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "nokia 2.4": {
+    "deviceName": "2.4",
+    "marketingName": "2.4",
+    "manufacturer": "hmd-global",
+    "brand": "nokia",
+    "dualOrientation": null,
+    "simCount": null,
+    "display": {
+      "width": 1600,
+      "height": 720,
+      "touch": true,
+      "size": 6.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "nokia ta-1020": {
     "deviceName": "TA-1020",
     "marketingName": "3",
@@ -897,11 +913,11 @@
   },
   "nokia c7-00": {
     "deviceName": "C7-00",
-    "marketingName": "Astound",
+    "marketingName": "C7",
     "manufacturer": "nokia",
     "brand": "nokia",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": false,
+    "simCount": 1,
     "display": {
       "width": 640,
       "height": 360,

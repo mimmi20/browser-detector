@@ -1148,7 +1148,23 @@
       "touch": true,
       "size": 11
     },
-    "type": "tablet",
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "lenovo tb-j616x": {
+    "deviceName": "TB-J616X",
+    "marketingName": "Tab P11",
+    "manufacturer": "lenovo",
+    "brand": "lenovo",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2000,
+      "height": 1200,
+      "touch": true,
+      "size": 11
+    },
+    "type": "fone-pad",
     "platform": "android"
   }
 }

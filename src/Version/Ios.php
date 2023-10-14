@@ -361,6 +361,42 @@ final class Ios implements VersionFactoryInterface
             }
         }
 
+        $versionNumber = $detectedVersion->getVersion(VersionInterface::IGNORE_MINOR);
+
+        if ($versionNumber !== null) {
+            if (
+                preg_match('/(?P<major>\d{2})(?P<minor>\d{2})(?P<micro>\d)/', $versionNumber, $versions)
+            ) {
+                try {
+                    return $this->versionBuilder->set(
+                        $versions['major'] . '.' . $versions['minor'] . '.' . $versions['micro'],
+                    );
+                } catch (NotNumericException $e) {
+                    $this->logger->info($e);
+
+                    return new NullVersion();
+                }
+            }
+
+            if (
+                preg_match('/(?P<major>\d{1,2})(?P<minor>\d)(?P<micro>\d)/', $versionNumber, $versions)
+            ) {
+                $version = $versions['major'] . '.' . $versions['minor'];
+
+                if (array_key_exists('micro', $versions)) {
+                    $version .= '.' . $versions['micro'];
+                }
+
+                try {
+                    return $this->versionBuilder->set($version);
+                } catch (NotNumericException $e) {
+                    $this->logger->info($e);
+
+                    return new NullVersion();
+                }
+            }
+        }
+
         return $detectedVersion;
     }
 }

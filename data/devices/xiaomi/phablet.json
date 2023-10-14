@@ -271,102 +271,6 @@
     "type": "phablet",
     "platform": "android"
   },
-  "xiaomi m2006c3lc": {
-    "deviceName": "M2006C3LC",
-    "marketingName": "Redmi 9A (China)",
-    "manufacturer": "xiaomi",
-    "brand": "xiaomi",
-    "dualOrientation": null,
-    "simCount": null,
-    "display": {
-      "width": 1600,
-      "height": 720,
-      "touch": true,
-      "size": 6.5
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
-  "xiaomi dandelion": {
-    "deviceName": "Dandelion",
-    "marketingName": "Redmi 9A (Global)",
-    "manufacturer": "xiaomi",
-    "brand": "xiaomi",
-    "dualOrientation": null,
-    "simCount": null,
-    "display": {
-      "width": 1600,
-      "height": 720,
-      "touch": true,
-      "size": 6.5
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
-  "xiaomi m2006c3lg": {
-    "deviceName": "M2006C3LG",
-    "marketingName": "Redmi 9A (Global)",
-    "manufacturer": "xiaomi",
-    "brand": "xiaomi",
-    "dualOrientation": null,
-    "simCount": null,
-    "display": {
-      "width": 1600,
-      "height": 720,
-      "touch": true,
-      "size": 6.5
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
-  "xiaomi m2006c3li": {
-    "deviceName": "M2006C3LI",
-    "marketingName": "Redmi 9A (India)",
-    "manufacturer": "xiaomi",
-    "brand": "xiaomi",
-    "dualOrientation": null,
-    "simCount": null,
-    "display": {
-      "width": 1600,
-      "height": 720,
-      "touch": true,
-      "size": 6.5
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
-  "xiaomi m2006c3mii": {
-    "deviceName": "M2006C3MII",
-    "marketingName": "Redmi 9C",
-    "manufacturer": "xiaomi",
-    "brand": "xiaomi",
-    "dualOrientation": null,
-    "simCount": null,
-    "display": {
-      "width": 1600,
-      "height": 720,
-      "touch": true,
-      "size": 6.5
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
-  "xiaomi m2006c3mg": {
-    "deviceName": "M2006C3MG",
-    "marketingName": "Redmi 9C (Global)",
-    "manufacturer": "xiaomi",
-    "brand": "xiaomi",
-    "dualOrientation": null,
-    "simCount": null,
-    "display": {
-      "width": 1600,
-      "height": 720,
-      "touch": true,
-      "size": 6.5
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
   "xiaomi redmi k30": {
     "deviceName": "Redmi K30",
     "marketingName": "Redmi K30",
@@ -1691,6 +1595,38 @@
       "height": 1080,
       "touch": true,
       "size": 6.53
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "xiaomi m2104k10ac": {
+    "deviceName": "M2104K10AC",
+    "marketingName": "Redmi K40 Gaming Edition",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.67
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "xiaomi m2012k10c": {
+    "deviceName": "M2012K10C",
+    "marketingName": "Redmi K40 Gaming Edition",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.67
     },
     "type": "phablet",
     "platform": "android"

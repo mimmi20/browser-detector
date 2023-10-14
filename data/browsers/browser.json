@@ -2182,8 +2182,8 @@
     },
     "engine": null
   },
-  "libao browser": {
-    "name": "LibaoBrowser",
+  "cheetah-browser": {
+    "name": "Cheetah Browser",
     "manufacturer": "kingsoft",
     "type": "browser",
     "version": {
@@ -4128,8 +4128,11 @@
     "manufacturer": "phoenix-studio",
     "type": "browser",
     "version": {
-      "class": null,
-      "search": null
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "TheWorld",
+        "theworld"
+      ]
     },
     "engine": "trident"
   },
@@ -5192,5 +5195,17 @@
       ]
     },
     "engine": null
+  },
+  "mypal": {
+    "name": "Mypal",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Mypal"
+      ]
+    },
+    "engine": "gecko"
   }
 }

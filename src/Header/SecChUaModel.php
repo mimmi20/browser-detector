@@ -86,6 +86,9 @@ final class SecChUaModel implements HeaderInterface
             'hd1903' => 'oneplus=oneplus hd1903',
             'kb2003' => 'oneplus=oneplus kb2003',
             'be2013' => 'oneplus=oneplus be2013',
+            'le2123' => 'oneplus=oneplus le2123',
+            'le2125' => 'oneplus=oneplus le2125',
+            'le2120' => 'oneplus=oneplus le2120',
             // Oppo
             'cph2065' => 'oppo=oppo cph2065',
             'cph2211' => 'oppo=oppo cph2211',
@@ -169,6 +172,9 @@ final class SecChUaModel implements HeaderInterface
             'm2012k11g' => 'xiaomi=xiaomi m2012k11g',
             'm2007j17g' => 'xiaomi=xiaomi m2007j17g',
             'm2006c3mng' => 'xiaomi=xiaomi m2006c3mng',
+            '2201117pg' => 'xiaomi=xiaomi 2201117pg',
+            '22071212ag' => 'xiaomi=xiaomi 22071212ag',
+            '2201116pg' => 'xiaomi=xiaomi 2201116pg',
             // ZTE
             'zte a2121e' => 'zte=zte a2121e',
             'zte blade 10 vita' => 'zte=zte blade 10 vita',
@@ -270,6 +276,9 @@ final class SecChUaModel implements HeaderInterface
             'sm-m225fv' => 'samsung=samsung sm-m225fv',
             'sm-a022g' => 'samsung=samsung sm-a022g',
             'sm-a022f' => 'samsung=samsung sm-a022f',
+            'sm-m336b' => 'samsung=samsung sm-m336b',
+            'sm-m336bu' => 'samsung=samsung sm-m336bu',
+            'sm-m115f' => 'samsung=samsung sm-m115f',
             // Huawei
             'mar-lx1b' => 'huawei=huawei mar-lx1b',
             'lya-l09' => 'huawei=huawei lya-l09',
@@ -288,6 +297,8 @@ final class SecChUaModel implements HeaderInterface
             'x1030x' => 'lenovo=lenovo x1030x',
             'lenovo tb-x306x' => 'lenovo=lenovo tb-x306x',
             'lenovo tb-x306xa' => 'lenovo=lenovo tb-x306xa',
+            'lenovo tb-j616f' => 'lenovo=lenovo tb-j616f',
+            'lenovo tb-j616x' => 'lenovo=lenovo tb-j616x',
             // Nokia
             'nokia g50' => 'nokia=nokia g50',
             'nokia g20' => 'nokia=nokia g20',

@@ -888,5 +888,29 @@
       ]
     },
     "engine": null
+  },
+  "well-known-bot": {
+    "name": "WellKnownBot",
+    "manufacturer": "braedon vickers",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "WellKnownBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "archive-box": {
+    "name": "ArchiveBox",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "ArchiveBox"
+      ]
+    },
+    "engine": "unknown"
   }
 }

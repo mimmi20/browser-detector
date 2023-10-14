@@ -81,6 +81,26 @@ final class AndroidOs implements VersionFactoryInterface
             }
         }
 
+        if (preg_match('/Android API (?P<version>\d+)/', $useragent, $matches)) {
+            try {
+                return $this->versionBuilder->set($this->mapSdkVersion($matches['version']));
+            } catch (NotNumericException $e) {
+                $this->logger->info($e);
+
+                return new NullVersion();
+            }
+        }
+
+        if (preg_match('/(?P<version>\d+)\/tclwebkit\d+[\.\d]*/', $useragent, $matches)) {
+            try {
+                return $this->versionBuilder->set($this->mapSdkVersion($matches['version']));
+            } catch (NotNumericException $e) {
+                $this->logger->info($e);
+
+                return new NullVersion();
+            }
+        }
+
         if (preg_match('/Android \(\d+\/(?P<version>\d+[\d\.]+)/', $useragent, $matches)) {
             try {
                 return $this->versionBuilder->set($matches['version']);
@@ -132,5 +152,35 @@ final class AndroidOs implements VersionFactoryInterface
         }
 
         return new NullVersion();
+    }
+
+    /**
+     * @param string $sdkVersion
+     * @return string
+     * @throws void
+     */
+    private function mapSdkVersion(string $sdkVersion): string
+    {
+        return match ($sdkVersion) {
+            '34' => '14',
+            '33' => '13',
+            '32' => '12.1',
+            '31' => '12',
+            '30' => '11',
+            '29' => '10',
+            '28' => '9',
+            '27' => '8.1',
+            '26' => '8',
+            '25' => '7.1',
+            '24' => '7',
+            '23' => '6',
+            '22' => '5.1',
+            '21' => '5',
+            '20', '19' => '4.4',
+            '18' => '4.3',
+            '17', '16' => '4.2',
+            '15' => '4.0.3',
+            default => '0',
+        };
     }
 }

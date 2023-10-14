@@ -11969,11 +11969,27 @@
   },
   "samsung sm-m115f": {
     "deviceName": "SM-M115F",
-    "marketingName": "Galaxy M11 Dual SIM (2020, Global)",
+    "marketingName": "Galaxy M11",
     "manufacturer": "samsung",
     "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1560,
+      "height": 720,
+      "touch": true,
+      "size": 6.4
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sm-m115m": {
+    "deviceName": "SM-M115M",
+    "marketingName": "Galaxy M11",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 1560,
       "height": 720,
@@ -29323,6 +29339,54 @@
       "height": 720,
       "touch": true,
       "size": 6.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sm-m336b": {
+    "deviceName": "SM-M336B",
+    "marketingName": "Galaxy M33",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2408,
+      "height": 1080,
+      "touch": true,
+      "size": 6.6
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sm-m336bu": {
+    "deviceName": "SM-M336BU",
+    "marketingName": "Galaxy M33",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2408,
+      "height": 1080,
+      "touch": true,
+      "size": 6.6
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sm-m336k": {
+    "deviceName": "SM-M336K",
+    "marketingName": "Galaxy M33",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2408,
+      "height": 1080,
+      "touch": true,
+      "size": 6.6
     },
     "type": "smartphone",
     "platform": "android"
