@@ -291,6 +291,8 @@ final class SecChUaModel implements HeaderInterface
             'lge-nx9' => 'huawei=huawei lge-nx9',
             'dby-w09' => 'huawei=huawei dby-w09',
             'nam-lx9' => 'huawei=huawei nam-lx9',
+            'stk-lx1' => 'huawei=huawei stk-lx1',
+            'ppa-lx2' => 'huawei=huawei ppa-lx2',
             // Lenovo
             'lenovo tb-x304f' => 'lenovo=lenovo tb-x304f',
             'lenovo yt-j706f' => 'lenovo=lenovo yt-j706f',
@@ -318,6 +320,7 @@ final class SecChUaModel implements HeaderInterface
             'rmx3501' => 'realme=realme rmx3501',
             'rmx3151' => 'realme=realme rmx3151',
             'rmx3263' => 'realme=realme rmx3263',
+            'rmx3201' => 'realme=realme rmx3201',
             // Motorola
             'moto g200 5g' => 'motorola=motorola moto g200 5g',
             'motorola razr 5g' => 'motorola=motorola razr 5g',
@@ -329,6 +332,7 @@ final class SecChUaModel implements HeaderInterface
             'moto e32(s)' => 'motorola=motorola moto e32s',
             'moto e30' => 'motorola=motorola moto e30',
             'moto e20' => 'motorola=motorola moto e20',
+            'moto e40' => 'motorola=motorola moto e40',
             // Sony
             'xq-cc54' => 'sony=sony xq-cc54',
             'xq-bq52' => 'sony=sony xq-bq52',
@@ -342,8 +346,12 @@ final class SecChUaModel implements HeaderInterface
             'wp16' => 'oukitel=oukitel wp16',
             // Ulefone
             'note 6p' => 'ulefone=ulefone note 6p',
+            'armor 11t 5g' => 'ulefone=ulefone armor 11t 5g',
             // Doogee
             'n40pro' => 'doogee=doogee n40 pro',
+            's88pro' => 'doogee=doogee s88 pro',
+            // shiftphones
+            'shift6mq' => 'shift=shift shift6mq',
             default => null,
         };
     }

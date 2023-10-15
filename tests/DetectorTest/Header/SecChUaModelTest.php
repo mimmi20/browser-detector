@@ -404,6 +404,13 @@ final class SecChUaModelTest extends TestCase
             ['"22071212AG"', 'xiaomi=xiaomi 22071212ag'],
             ['"2201116PG"', 'xiaomi=xiaomi 2201116pg'],
             ['"SM-M115F"', 'samsung=samsung sm-m115f'],
+            ['"moto e40"', 'motorola=motorola moto e40'],
+            ['"Armor 11T 5G"', 'ulefone=ulefone armor 11t 5g'],
+            ['"STK-LX1"', 'huawei=huawei stk-lx1'],
+            ['"SHIFT6mq"', 'shift=shift shift6mq'],
+            ['"S88Pro"', 'doogee=doogee s88 pro'],
+            ['"RMX3201"', 'realme=realme rmx3201'],
+            ['"PPA-LX2"', 'huawei=huawei ppa-lx2'],
             ['""', null],
         ];
     }

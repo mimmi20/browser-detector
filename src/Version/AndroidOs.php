@@ -154,11 +154,7 @@ final class AndroidOs implements VersionFactoryInterface
         return new NullVersion();
     }
 
-    /**
-     * @param string $sdkVersion
-     * @return string
-     * @throws void
-     */
+    /** @throws void */
     private function mapSdkVersion(string $sdkVersion): string
     {
         return match ($sdkVersion) {
