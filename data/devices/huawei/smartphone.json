@@ -11236,8 +11236,8 @@
     "marketingName": "P40 Lite E",
     "manufacturer": "huawei",
     "brand": "huawei",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 1560,
       "height": 720,
@@ -11252,8 +11252,8 @@
     "marketingName": "P40 Lite E",
     "manufacturer": "huawei",
     "brand": "huawei",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 1560,
       "height": 720,
@@ -11268,8 +11268,24 @@
     "marketingName": "P40 Lite E",
     "manufacturer": "huawei",
     "brand": "huawei",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1560,
+      "height": 720,
+      "touch": true,
+      "size": 6.39
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "huawei art-l29n": {
+    "deviceName": "ART-L29N",
+    "marketingName": "P40 Lite E",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 1560,
       "height": 720,
@@ -14939,6 +14955,22 @@
       "height": 720,
       "touch": true,
       "size": 6.75
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "huawei cdy-nx9a": {
+    "deviceName": "CDY-NX9A",
+    "marketingName": "P40 Lite 5G",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.5
     },
     "type": "smartphone",
     "platform": "android"

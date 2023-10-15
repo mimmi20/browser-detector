@@ -89,6 +89,7 @@ final class SecChUaModel implements HeaderInterface
             'le2123' => 'oneplus=oneplus le2123',
             'le2125' => 'oneplus=oneplus le2125',
             'le2120' => 'oneplus=oneplus le2120',
+            'gm1913' => 'oneplus=oneplus gm1913',
             // Oppo
             'cph2065' => 'oppo=oppo cph2065',
             'cph2211' => 'oppo=oppo cph2211',
@@ -293,6 +294,8 @@ final class SecChUaModel implements HeaderInterface
             'nam-lx9' => 'huawei=huawei nam-lx9',
             'stk-lx1' => 'huawei=huawei stk-lx1',
             'ppa-lx2' => 'huawei=huawei ppa-lx2',
+            'agr-w09' => 'huawei=huawei agr-w09',
+            'ags3k-w09' => 'huawei=huawei ags3k-w09',
             // Lenovo
             'lenovo tb-x304f' => 'lenovo=lenovo tb-x304f',
             'lenovo yt-j706f' => 'lenovo=lenovo yt-j706f',
@@ -301,6 +304,7 @@ final class SecChUaModel implements HeaderInterface
             'lenovo tb-x306xa' => 'lenovo=lenovo tb-x306xa',
             'lenovo tb-j616f' => 'lenovo=lenovo tb-j616f',
             'lenovo tb-j616x' => 'lenovo=lenovo tb-j616x',
+            'lenovo tb-x606f' => 'lenovo=lenovo tb-x606f',
             // Nokia
             'nokia g50' => 'nokia=nokia g50',
             'nokia g20' => 'nokia=nokia g20',
@@ -337,6 +341,7 @@ final class SecChUaModel implements HeaderInterface
             'xq-cc54' => 'sony=sony xq-cc54',
             'xq-bq52' => 'sony=sony xq-bq52',
             'xq-be52' => 'sony=sony xq-be52',
+            'h8266' => 'sony=sony h8266',
             // Vivo
             'v2109' => 'vivo=vivo v2109',
             // Fairphone

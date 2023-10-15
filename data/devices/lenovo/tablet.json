@@ -895,13 +895,45 @@
     "type": "tablet",
     "platform": "android"
   },
-  "lenovo tb-x606f": {
-    "deviceName": "TB-X606F",
-    "marketingName": "Tab M10 FHD Wi-Fi (2nd Gen.)",
+  "lenovo tb-x605fc": {
+    "deviceName": "TB-X605FC",
+    "marketingName": "Tab M10 FHD REL Wi-Fi",
     "manufacturer": "lenovo",
     "brand": "lenovo",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "size": 10.1
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "lenovo tb-x606f": {
+    "deviceName": "TB-X606F",
+    "marketingName": "Tab M10 FHD Wi-Fi",
+    "manufacturer": "lenovo",
+    "brand": "lenovo",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "size": 10.3
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "lenovo tb-x606": {
+    "deviceName": "TB-X606",
+    "marketingName": "Tab M10 FHD Wi-Fi",
+    "manufacturer": "lenovo",
+    "brand": "lenovo",
+    "dualOrientation": true,
+    "simCount": 0,
     "display": {
       "width": 1920,
       "height": 1200,

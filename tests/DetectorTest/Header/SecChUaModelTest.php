@@ -411,6 +411,11 @@ final class SecChUaModelTest extends TestCase
             ['"S88Pro"', 'doogee=doogee s88 pro'],
             ['"RMX3201"', 'realme=realme rmx3201'],
             ['"PPA-LX2"', 'huawei=huawei ppa-lx2'],
+            ['"GM1913"', 'oneplus=oneplus gm1913'],
+            ['"AGR-W09"', 'huawei=huawei agr-w09'],
+            ['"AGS3K-W09"', 'huawei=huawei ags3k-w09'],
+            ['"H8266"', 'sony=sony h8266'],
+            ['"Lenovo TB-X606F"', 'lenovo=lenovo tb-x606f'],
             ['""', null],
         ];
     }
