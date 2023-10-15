@@ -351,7 +351,7 @@ final class SecChUaModel implements HeaderInterface
             'n40pro' => 'doogee=doogee n40 pro',
             's88pro' => 'doogee=doogee s88 pro',
             // shiftphones
-            'shift6mq' => 'shift=shift shift6mq',
+            'shift6mq' => 'shift-phones=shift-phones shift6mq',
             default => null,
         };
     }

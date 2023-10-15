@@ -407,7 +407,7 @@ final class SecChUaModelTest extends TestCase
             ['"moto e40"', 'motorola=motorola moto e40'],
             ['"Armor 11T 5G"', 'ulefone=ulefone armor 11t 5g'],
             ['"STK-LX1"', 'huawei=huawei stk-lx1'],
-            ['"SHIFT6mq"', 'shift=shift shift6mq'],
+            ['"SHIFT6mq"', 'shift-phones=shift-phones shift6mq'],
             ['"S88Pro"', 'doogee=doogee s88 pro'],
             ['"RMX3201"', 'realme=realme rmx3201'],
             ['"PPA-LX2"', 'huawei=huawei ppa-lx2'],
