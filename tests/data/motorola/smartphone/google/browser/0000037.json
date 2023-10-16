@@ -1,21 +1,21 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; moto g(7) plus) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.50 Mobile Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; moto e(7)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.85 Mobile Safari/537.36"
     },
     "device": {
       "architecture": null,
-      "deviceName": "Moto G7 Plus",
-      "marketingName": "Moto G7 Plus",
+      "deviceName": "XT1021",
+      "marketingName": "Moto E",
       "manufacturer": "motorola",
       "brand": "motorola",
       "dualOrientation": null,
       "simCount": null,
       "display": {
-        "width": 2270,
-        "height": 1080,
+        "width": 960,
+        "height": 540,
         "touch": true,
-        "size": 6.2
+        "size": 4.3
       },
       "type": "smartphone",
       "ismobile": true,
@@ -30,14 +30,14 @@
     },
     "client": {
       "name": "Chrome",
-      "version": "95.0.4638.50",
+      "version": "94.0.4606.85",
       "manufacturer": "google",
       "type": "browser",
       "isbot": false
     },
     "engine": {
       "name": "Blink",
-      "version": "95.0.4638.50",
+      "version": "94.0.4606.85",
       "manufacturer": "google"
     }
   },
@@ -1769,17 +1769,17 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "XT1021",
-      "marketingName": "Moto E",
+      "deviceName": "Moto E7i Power",
+      "marketingName": "Moto E7i Power",
       "manufacturer": "motorola",
       "brand": "motorola",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
-        "width": 960,
-        "height": 540,
+        "width": 1600,
+        "height": 720,
         "touch": true,
-        "size": 4.3
+        "size": 6.5
       },
       "type": "smartphone",
       "ismobile": true,

@@ -3106,5 +3106,47 @@
       "version": "605.1.15",
       "manufacturer": "apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/20G75 Instagram 296.0.0.18.107 (iPhone14,8; iOS 16_6; en_US; en; scale=3.00; 1284x2778; 505423516)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPhone 14,8",
+      "marketingName": "iPhone 14 Plus",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2778,
+        "height": 1284,
+        "touch": true,
+        "size": 6.7
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "16.6.0",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "Instagram App",
+      "version": "296.0.0.18.107",
+      "manufacturer": "facebook",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
   }
 ]

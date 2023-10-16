@@ -258,7 +258,7 @@
     "device": {
       "architecture": null,
       "deviceName": "TB-X104F",
-      "marketingName": "Tab E10 WiFi",
+      "marketingName": "Tab E10 Wi-Fi",
       "manufacturer": "lenovo",
       "brand": "lenovo",
       "dualOrientation": null,
@@ -1182,11 +1182,11 @@
     "device": {
       "architecture": null,
       "deviceName": "TB-X606F",
-      "marketingName": "Tab M10 FHD Wi-Fi (2nd Gen.)",
+      "marketingName": "Tab M10 FHD Wi-Fi",
       "manufacturer": "lenovo",
       "brand": "lenovo",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 1920,
         "height": 1200,
@@ -1350,7 +1350,7 @@
     "device": {
       "architecture": null,
       "deviceName": "TB-X505F",
-      "marketingName": "Tab M10 HD WiFi",
+      "marketingName": "Tab M10 HD Wi-Fi",
       "manufacturer": "lenovo",
       "brand": "lenovo",
       "dualOrientation": null,
@@ -1476,11 +1476,11 @@
     "device": {
       "architecture": null,
       "deviceName": "TB-X606F",
-      "marketingName": "Tab M10 FHD Wi-Fi (2nd Gen.)",
+      "marketingName": "Tab M10 FHD Wi-Fi",
       "manufacturer": "lenovo",
       "brand": "lenovo",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 1920,
         "height": 1200,
@@ -1728,11 +1728,11 @@
     "device": {
       "architecture": null,
       "deviceName": "TB-X606F",
-      "marketingName": "Tab M10 FHD Wi-Fi (2nd Gen.)",
+      "marketingName": "Tab M10 FHD Wi-Fi",
       "manufacturer": "lenovo",
       "brand": "lenovo",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 1920,
         "height": 1200,
@@ -1854,7 +1854,7 @@
     "device": {
       "architecture": null,
       "deviceName": "TB-X104F",
-      "marketingName": "Tab E10 WiFi",
+      "marketingName": "Tab E10 Wi-Fi",
       "manufacturer": "lenovo",
       "brand": "lenovo",
       "dualOrientation": null,
@@ -2484,11 +2484,11 @@
     "device": {
       "architecture": null,
       "deviceName": "TB-X306F",
-      "marketingName": "Smart Tab M10 HD (2nd Gen)",
+      "marketingName": "Smart Tab M10 HD (2nd Gen, Wi-Fi)",
       "manufacturer": "lenovo",
       "brand": "lenovo",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 1280,
         "height": 800,
@@ -2526,7 +2526,7 @@
     "device": {
       "architecture": null,
       "deviceName": "TB-X505F",
-      "marketingName": "Tab M10 HD WiFi",
+      "marketingName": "Tab M10 HD Wi-Fi",
       "manufacturer": "lenovo",
       "brand": "lenovo",
       "dualOrientation": null,
@@ -2736,11 +2736,11 @@
     "device": {
       "architecture": null,
       "deviceName": "TB-X606F",
-      "marketingName": "Tab M10 FHD Wi-Fi (2nd Gen.)",
+      "marketingName": "Tab M10 FHD Wi-Fi",
       "manufacturer": "lenovo",
       "brand": "lenovo",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 1920,
         "height": 1200,
@@ -2820,7 +2820,7 @@
     "device": {
       "architecture": null,
       "deviceName": "TB-X505F",
-      "marketingName": "Tab M10 HD WiFi",
+      "marketingName": "Tab M10 HD Wi-Fi",
       "manufacturer": "lenovo",
       "brand": "lenovo",
       "dualOrientation": null,
@@ -3156,7 +3156,7 @@
     "device": {
       "architecture": null,
       "deviceName": "TB-X505F",
-      "marketingName": "Tab M10 HD WiFi",
+      "marketingName": "Tab M10 HD Wi-Fi",
       "manufacturer": "lenovo",
       "brand": "lenovo",
       "dualOrientation": null,
@@ -3450,7 +3450,7 @@
     "device": {
       "architecture": null,
       "deviceName": "TB-X505F",
-      "marketingName": "Tab M10 HD WiFi",
+      "marketingName": "Tab M10 HD Wi-Fi",
       "manufacturer": "lenovo",
       "brand": "lenovo",
       "dualOrientation": null,
@@ -3865,48 +3865,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; Lenovo TB-X306X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.101 Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "TB-X306X",
-      "marketingName": "Smart Tab M10 HD (2nd Gen, Wi-Fi)",
-      "manufacturer": "lenovo",
-      "brand": "lenovo",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1280,
-        "height": 800,
-        "touch": true,
-        "size": 10.1
-      },
-      "type": "tablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Chrome",
-      "version": "87.0.4280.101",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "87.0.4280.101",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 7.1.1; Lenovo TB-X704F Build/NMF26F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.125 Safari/537.36"
     },
     "device": {
@@ -4038,11 +3996,11 @@
     "device": {
       "architecture": null,
       "deviceName": "TB-X606F",
-      "marketingName": "Tab M10 FHD Wi-Fi (2nd Gen.)",
+      "marketingName": "Tab M10 FHD Wi-Fi",
       "manufacturer": "lenovo",
       "brand": "lenovo",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 1920,
         "height": 1200,
@@ -4080,7 +4038,7 @@
     "device": {
       "architecture": null,
       "deviceName": "TB-X104F",
-      "marketingName": "Tab E10 WiFi",
+      "marketingName": "Tab E10 Wi-Fi",
       "manufacturer": "lenovo",
       "brand": "lenovo",
       "dualOrientation": null,
@@ -4164,7 +4122,7 @@
     "device": {
       "architecture": null,
       "deviceName": "TB-X505F",
-      "marketingName": "Tab M10 HD WiFi",
+      "marketingName": "Tab M10 HD Wi-Fi",
       "manufacturer": "lenovo",
       "brand": "lenovo",
       "dualOrientation": null,
@@ -4184,6 +4142,48 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "10.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "88.0.4324.93",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "88.0.4324.93",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; Lenovo TB-X705F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.93 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "TB-X705F",
+      "marketingName": "Tab 5 Plus",
+      "manufacturer": "lenovo",
+      "brand": "lenovo",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 10.1
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
       "manufacturer": "google"
     },
     "client": {

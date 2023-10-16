@@ -191,10 +191,10 @@
       "bits": null
     },
     "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
+      "name": "FreeBSD",
+      "marketingName": "FreeBSD",
+      "version": "5.3.0",
+      "manufacturer": "free-bsd-foundation"
     },
     "client": {
       "name": "Links",
@@ -233,10 +233,10 @@
       "bits": null
     },
     "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
+      "name": "FreeBSD",
+      "marketingName": "FreeBSD",
+      "version": "4.8.0",
+      "manufacturer": "free-bsd-foundation"
     },
     "client": {
       "name": "Links",
@@ -283,6 +283,48 @@
     "client": {
       "name": "Links",
       "version": null,
+      "manufacturer": "mikulas-patocka",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/3.0 (compatible; Links 0.83; FreeBSD 3.2-RELEASE i386; SV1; InfoPath.1)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "FreeBSD",
+      "marketingName": "FreeBSD",
+      "version": "3.2.0",
+      "manufacturer": "free-bsd-foundation"
+    },
+    "client": {
+      "name": "Links",
+      "version": "0.83.0",
       "manufacturer": "mikulas-patocka",
       "type": "browser",
       "isbot": false
@@ -463,6 +505,132 @@
   },
   {
     "headers": {
+      "user-agent": "Links (2.2; FreeBSD 7.2-RELEASE i386; 126x53)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "FreeBSD",
+      "marketingName": "FreeBSD",
+      "version": "7.2.0",
+      "manufacturer": "free-bsd-foundation"
+    },
+    "client": {
+      "name": "Links",
+      "version": "2.2.0",
+      "manufacturer": "mikulas-patocka",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Links (2.1pre9; FreeBSD 4.6-RELEASE i386; 129x41)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "FreeBSD",
+      "marketingName": "FreeBSD",
+      "version": "4.6.0",
+      "manufacturer": "free-bsd-foundation"
+    },
+    "client": {
+      "name": "Links",
+      "version": "2.1.0-dev+9",
+      "manufacturer": "mikulas-patocka",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Links (2.1pre7; OpenBSD 3.3 i386; x)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "OpenBSD",
+      "marketingName": "OpenBSD",
+      "version": "3.3.0",
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "Links",
+      "version": "2.1.0-dev+7",
+      "manufacturer": "mikulas-patocka",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Links (2.1pre3; NetBSD 1.6M macppc; x)"
     },
     "device": {
@@ -485,14 +653,56 @@
       "bits": null
     },
     "os": {
-      "name": "Macintosh",
-      "marketingName": "Macintosh",
-      "version": null,
-      "manufacturer": "apple"
+      "name": "NetBSD",
+      "marketingName": "NetBSD",
+      "version": "1.6.0",
+      "manufacturer": "unknown"
     },
     "client": {
       "name": "Links",
       "version": "2.1.0-dev+3",
+      "manufacturer": "mikulas-patocka",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Links (2.1pre21; FreeBSD 6.2-RELEASE i386; 119x34)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "FreeBSD",
+      "marketingName": "FreeBSD",
+      "version": "6.2.0",
+      "manufacturer": "free-bsd-foundation"
+    },
+    "client": {
+      "name": "Links",
+      "version": "2.1.0-dev+21",
       "manufacturer": "mikulas-patocka",
       "type": "browser",
       "isbot": false
@@ -703,6 +913,132 @@
     "client": {
       "name": "Links",
       "version": "0.98.0",
+      "manufacturer": "mikulas-patocka",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Links (0.96; OpenBSD 2.7 i386)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "OpenBSD",
+      "marketingName": "OpenBSD",
+      "version": "2.7.0",
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "Links",
+      "version": "0.96.0",
+      "manufacturer": "mikulas-patocka",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Links (2.1pre22; NetBSD 2.0.2 i386; 80x48)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "NetBSD",
+      "marketingName": "NetBSD",
+      "version": "2.0.2",
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "Links",
+      "version": "2.1.0-dev+22",
+      "manufacturer": "mikulas-patocka",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Links (2.1pre30; OpenBSD 4.3 macppc; x)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "OpenBSD",
+      "marketingName": "OpenBSD",
+      "version": "4.3.0",
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "Links",
+      "version": "2.1.0-dev+30",
       "manufacturer": "mikulas-patocka",
       "type": "browser",
       "isbot": false

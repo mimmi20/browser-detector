@@ -90,6 +90,7 @@ final class SecChUaModel implements HeaderInterface
             'le2125' => 'oneplus=oneplus le2125',
             'le2120' => 'oneplus=oneplus le2120',
             'gm1913' => 'oneplus=oneplus gm1913',
+            'be2029' => 'oneplus=oneplus be2029',
             // Oppo
             'cph2065' => 'oppo=oppo cph2065',
             'cph2211' => 'oppo=oppo cph2211',
@@ -102,6 +103,14 @@ final class SecChUaModel implements HeaderInterface
             'cph2145' => 'oppo=oppo cph2145',
             'cph2135' => 'oppo=oppo cph2135',
             'cph2269' => 'oppo=oppo cph2269',
+            'cph2173' => 'oppo=oppo cph2173',
+            'cph2179' => 'oppo=oppo cph2179',
+            'cph2219' => 'oppo=oppo cph2219',
+            'cph2333' => 'oppo=oppo cph2333',
+            'cph2305' => 'oppo=oppo cph2305',
+            'cph2247' => 'oppo=oppo cph2247',
+            'cph2375' => 'oppo=oppo cph2375',
+            'cph2307' => 'oppo=oppo cph2307',
             // Xiaomi
             'redmi note 9 pro' => 'xiaomi=xiaomi redmi note 9 pro',
             'redmi note 8 pro' => 'xiaomi=xiaomi redmi note 8 pro',
@@ -296,6 +305,9 @@ final class SecChUaModel implements HeaderInterface
             'ppa-lx2' => 'huawei=huawei ppa-lx2',
             'agr-w09' => 'huawei=huawei agr-w09',
             'ags3k-w09' => 'huawei=huawei ags3k-w09',
+            'nth-nx9' => 'huawei=huawei nth-nx9',
+            'noh-an01' => 'huawei=huawei noh-an01',
+            'hlk-l41' => 'huawei=huawei hlk-l41',
             // Lenovo
             'lenovo tb-x304f' => 'lenovo=lenovo tb-x304f',
             'lenovo yt-j706f' => 'lenovo=lenovo yt-j706f',

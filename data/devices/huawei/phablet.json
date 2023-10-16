@@ -319,6 +319,38 @@
     "type": "phablet",
     "platform": "android"
   },
+  "huawei hlk-l41": {
+    "deviceName": "HLK-L41",
+    "marketingName": "9X Pro",
+    "manufacturer": "huawei",
+    "brand": "honor",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2340,
+      "height": 1080,
+      "touch": true,
+      "size": 6.59
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "huawei hlk-l42": {
+    "deviceName": "HLK-L42",
+    "marketingName": "9X Pro",
+    "manufacturer": "huawei",
+    "brand": "honor",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2340,
+      "height": 1080,
+      "touch": true,
+      "size": 6.59
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
   "huawei tny-al00": {
     "deviceName": "TNY-AL00",
     "marketingName": "Honor Magic 2 Premium Edition",
@@ -708,8 +740,40 @@
     "marketingName": "Mate 40 Pro",
     "manufacturer": "huawei",
     "brand": "huawei",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2772,
+      "height": 1344,
+      "touch": true,
+      "size": 6.76
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "huawei noh-an00": {
+    "deviceName": "NOH-AN00",
+    "marketingName": "Mate 40 Pro",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2772,
+      "height": 1344,
+      "touch": true,
+      "size": 6.76
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "huawei noh-an01": {
+    "deviceName": "NOH-AN01",
+    "marketingName": "Mate 40 Pro",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 2772,
       "height": 1344,

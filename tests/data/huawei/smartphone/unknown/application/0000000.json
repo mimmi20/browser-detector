@@ -505,6 +505,48 @@
   },
   {
     "headers": {
+      "user-agent": "AndroidDownloadManager/10 (Linux; U; Android 10; HMA-L29 Build/HUAWEIHMA-L29) comdirect/1.0 (appVersion:20.10.3;deviceType:mobile)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "HMA-L29",
+      "marketingName": "Mate 20",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2244,
+        "height": 1080,
+        "touch": true,
+        "size": 6.53
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Android Download Manager",
+      "version": "10.0.0",
+      "manufacturer": "unknown",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "AndroidDownloadManager/10 (Linux; U; Android 10; SNE-LX1 Build/HUAWEISNE-L21)"
     },
     "device": {
