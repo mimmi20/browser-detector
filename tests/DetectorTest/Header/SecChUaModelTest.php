@@ -428,6 +428,18 @@ final class SecChUaModelTest extends TestCase
             ['"NTH-NX9"', 'huawei=huawei nth-nx9'],
             ['"NOH-AN01"', 'huawei=huawei noh-an01'],
             ['"HLK-L41"', 'huawei=huawei hlk-l41'],
+            ['"2203129G"', 'xiaomi=xiaomi 2203129g'],
+            ['"Armor X5"', 'ulefone=ulefone armor x5'],
+            ['"BAH3-W59"', 'huawei=huawei bah3-w59'],
+            ['"BAH3-W09"', 'huawei=huawei bah3-w09'],
+            ['"BAH3-L09"', 'huawei=huawei bah3-l09'],
+            ['"GT20"', 'cubot=cubot gt20'],
+            ['"HRY-LX1T"', 'huawei=huawei hry-lx1t'],
+            ['"HRY-LX1"', 'huawei=huawei hry-lx1'],
+            ['"JSN-L21"', 'huawei=huawei jsn-l21'],
+            ['"JKM-LX2"', 'huawei=huawei jkm-lx2'],
+            ['"S59Pro"', 'doogee=doogee s59 pro'],
+            ['"STK-L21"', 'huawei=huawei stk-l21'],
             ['""', null],
         ];
     }

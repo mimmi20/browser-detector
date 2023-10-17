@@ -144,6 +144,18 @@
     },
     "engine": "unknown"
   },
+  "yandex-renderresources-bot": {
+    "name": "Yandex RenderResources Bot",
+    "manufacturer": "yandex",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "YandexRenderResourcesBot"
+      ]
+    },
+    "engine": "unknown"
+  },
   "bingbot": {
     "name": "BingBot",
     "manufacturer": "microsoft",
@@ -410,5 +422,18 @@
       "search": null
     },
     "engine": "unknown"
+  },
+  "tineye bot": {
+    "name": "TinEye Crawler",
+    "manufacturer": "idee",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "TinEye\\-bot",
+        "TinEye"
+      ]
+    },
+    "engine": "webkit"
   }
 }

@@ -3164,6 +3164,18 @@
     },
     "engine": null
   },
+  "hubspot crawler": {
+    "name": "HubSpot Crawler",
+    "manufacturer": "hubspot-inc",
+    "type": "bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "HubSpot Crawler"
+      ]
+    },
+    "engine": null
+  },
   "hypercrawl": {
     "name": "HyperCrawl",
     "manufacturer": "seograph",
@@ -5213,18 +5225,6 @@
     },
     "engine": "unknown"
   },
-  "pdrlabs bot": {
-    "name": "pdrlabs Bot",
-    "manufacturer": "pdrlabs",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "pdrlabs"
-      ]
-    },
-    "engine": "unknown"
-  },
   "pearltrees bot": {
     "name": "Pearltrees Bot",
     "manufacturer": "unknown",
@@ -7092,19 +7092,6 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Thunderstone"
-      ]
-    },
-    "engine": "webkit"
-  },
-  "tineye bot": {
-    "name": "TinEye Bot",
-    "manufacturer": "idee",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "TinEye\\-bot",
-        "TinEye"
       ]
     },
     "engine": "webkit"
@@ -9678,6 +9665,54 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Gaisbot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "mindup-bot": {
+    "name": "mindUpBot",
+    "manufacturer": "mindup",
+    "type": "bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "mindUpBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "dcrawl": {
+    "name": "dcrawl",
+    "manufacturer": "unknown",
+    "type": "bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "dcrawl"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "company-spotter": {
+    "name": "companyspotter",
+    "manufacturer": "company-spotter",
+    "type": "bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "companyspotter"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "timpi-bot": {
+    "name": "Timpibot",
+    "manufacturer": "timpi",
+    "type": "bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Timpibot"
       ]
     },
     "engine": "unknown"

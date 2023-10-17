@@ -185,6 +185,7 @@ final class SecChUaModel implements HeaderInterface
             '2201117pg' => 'xiaomi=xiaomi 2201117pg',
             '22071212ag' => 'xiaomi=xiaomi 22071212ag',
             '2201116pg' => 'xiaomi=xiaomi 2201116pg',
+            '2203129g' => 'xiaomi=xiaomi 2203129g',
             // ZTE
             'zte a2121e' => 'zte=zte a2121e',
             'zte blade 10 vita' => 'zte=zte blade 10 vita',
@@ -308,6 +309,14 @@ final class SecChUaModel implements HeaderInterface
             'nth-nx9' => 'huawei=huawei nth-nx9',
             'noh-an01' => 'huawei=huawei noh-an01',
             'hlk-l41' => 'huawei=huawei hlk-l41',
+            'bah3-w59' => 'huawei=huawei bah3-w59',
+            'bah3-w09' => 'huawei=huawei bah3-w09',
+            'bah3-l09' => 'huawei=huawei bah3-l09',
+            'hry-lx1t' => 'huawei=huawei hry-lx1t',
+            'hry-lx1' => 'huawei=huawei hry-lx1',
+            'jsn-l21' => 'huawei=huawei jsn-l21',
+            'jkm-lx2' => 'huawei=huawei jkm-lx2',
+            'stk-l21' => 'huawei=huawei stk-l21',
             // Lenovo
             'lenovo tb-x304f' => 'lenovo=lenovo tb-x304f',
             'lenovo yt-j706f' => 'lenovo=lenovo yt-j706f',
@@ -364,11 +373,15 @@ final class SecChUaModel implements HeaderInterface
             // Ulefone
             'note 6p' => 'ulefone=ulefone note 6p',
             'armor 11t 5g' => 'ulefone=ulefone armor 11t 5g',
+            'armor x5' => 'ulefone=ulefone armor x5',
             // Doogee
             'n40pro' => 'doogee=doogee n40 pro',
             's88pro' => 'doogee=doogee s88 pro',
+            's59pro' => 'doogee=doogee s59 pro',
             // shiftphones
             'shift6mq' => 'shift-phones=shift-phones shift6mq',
+            // Cubot/Hafury
+            'gt20' => 'cubot=cubot gt20',
             default => null,
         };
     }

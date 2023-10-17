@@ -912,5 +912,51 @@
       ]
     },
     "engine": "unknown"
+  },
+  "colly": {
+    "name": "colly",
+    "manufacturer": "unknown",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "colly"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "zaldamo": {
+    "name": "Zaldamo",
+    "manufacturer": "zaldamo",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "ZaldamoSearchBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "intelligence-x": {
+    "name": "Intelligence X",
+    "manufacturer": "kleissner-investments",
+    "type": "crawler",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "bird-crawler-bot": {
+    "name": "Birdcrawlerbot",
+    "manufacturer": "swoppen-systems",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Birdcrawlerbot"
+      ]
+    },
+    "engine": "unknown"
   }
 }
