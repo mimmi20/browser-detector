@@ -7873,9 +7873,9 @@
   },
   "huawei bkl-al00": {
     "deviceName": "BKL-AL00",
-    "marketingName": "Honor View 10",
+    "marketingName": "View 10",
     "manufacturer": "huawei",
-    "brand": "huawei",
+    "brand": "honor",
     "dualOrientation": true,
     "simCount": 2,
     "display": {
@@ -7889,9 +7889,9 @@
   },
   "huawei bkl-al20": {
     "deviceName": "BKL-AL20",
-    "marketingName": "Honor View 10",
+    "marketingName": "View 10",
     "manufacturer": "huawei",
-    "brand": "huawei",
+    "brand": "honor",
     "dualOrientation": true,
     "simCount": 2,
     "display": {
@@ -7905,9 +7905,9 @@
   },
   "huawei bkl-l09": {
     "deviceName": "BKL-L09",
-    "marketingName": "Honor View 10",
+    "marketingName": "View 10",
     "manufacturer": "huawei",
-    "brand": "huawei",
+    "brand": "honor",
     "dualOrientation": true,
     "simCount": 2,
     "display": {
@@ -8180,8 +8180,8 @@
     "marketingName": "Maimang 5",
     "manufacturer": "huawei",
     "brand": "huawei",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 1920,
       "height": 1080,
@@ -8193,11 +8193,43 @@
   },
   "huawei mla-tl10": {
     "deviceName": "MLA-TL10",
-    "marketingName": "Maimang 5",
+    "marketingName": "G9 Plus",
     "manufacturer": "huawei",
     "brand": "huawei",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": 5.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "huawei mla-tl00": {
+    "deviceName": "MLA-TL00",
+    "marketingName": "G9 Plus",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": 5.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "huawei mla-ul00": {
+    "deviceName": "MLA-UL00",
+    "marketingName": "G9 Plus",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 1920,
       "height": 1080,
@@ -8484,8 +8516,8 @@
     "marketingName": "Mate 20 Lite",
     "manufacturer": "huawei",
     "brand": "huawei",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 2340,
       "height": 1080,
@@ -9204,8 +9236,8 @@
     "marketingName": "Nova 2 Plus",
     "manufacturer": "huawei",
     "brand": "huawei",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1920,
       "height": 1080,
@@ -9220,8 +9252,8 @@
     "marketingName": "Nova 2 Plus",
     "manufacturer": "huawei",
     "brand": "huawei",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1920,
       "height": 1080,
@@ -9236,8 +9268,8 @@
     "marketingName": "Nova 2 Plus",
     "manufacturer": "huawei",
     "brand": "huawei",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1920,
       "height": 1080,
@@ -9252,8 +9284,24 @@
     "marketingName": "Nova 2 Plus",
     "manufacturer": "huawei",
     "brand": "huawei",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": 5.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "huawei bac-l22": {
+    "deviceName": "BAC-L22",
+    "marketingName": "Nova 2 Plus",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 1920,
       "height": 1080,
@@ -9268,8 +9316,8 @@
     "marketingName": "Nova 2 Plus",
     "manufacturer": "huawei",
     "brand": "huawei",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1920,
       "height": 1080,
@@ -9281,11 +9329,11 @@
   },
   "huawei bac-l21": {
     "deviceName": "BAC-L21",
-    "marketingName": "Nova 2 Plus Dual SIM",
+    "marketingName": "Nova 2 Plus",
     "manufacturer": "huawei",
     "brand": "huawei",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 1920,
       "height": 1080,
@@ -9492,8 +9540,8 @@
     "marketingName": "Nova 3i",
     "manufacturer": "huawei",
     "brand": "huawei",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 2340,
       "height": 1080,
@@ -9508,8 +9556,24 @@
     "marketingName": "Nova 3i",
     "manufacturer": "huawei",
     "brand": "huawei",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2340,
+      "height": 1080,
+      "touch": true,
+      "size": 6.3
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "huawei ine-lx2r": {
+    "deviceName": "INE-LX2r",
+    "marketingName": "Nova 3i",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 2340,
       "height": 1080,
@@ -9524,8 +9588,8 @@
     "marketingName": "Nova 3i",
     "manufacturer": "huawei",
     "brand": "huawei",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 2340,
       "height": 1080,
@@ -10097,11 +10161,27 @@
   },
   "huawei ine-lx1": {
     "deviceName": "INE-LX1",
-    "marketingName": "P Smart+ Dual SIM",
+    "marketingName": "nova 3i",
     "manufacturer": "huawei",
     "brand": "huawei",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2340,
+      "height": 1080,
+      "touch": true,
+      "size": 6.3
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "huawei ine-lx1r": {
+    "deviceName": "INE-LX1r",
+    "marketingName": "nova 3i",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 2340,
       "height": 1080,
@@ -11876,8 +11956,8 @@
     "marketingName": "P9 Lite Mini",
     "manufacturer": "huawei",
     "brand": "huawei",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 1280,
       "height": 720,
@@ -11892,8 +11972,8 @@
     "marketingName": "P9 Lite Mini",
     "manufacturer": "huawei",
     "brand": "huawei",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 1280,
       "height": 720,
@@ -11908,8 +11988,24 @@
     "marketingName": "P9 Lite Mini",
     "manufacturer": "huawei",
     "brand": "huawei",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "huawei sla-l23": {
+    "deviceName": "SLA-L23",
+    "marketingName": "P9 Lite Mini",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 1280,
       "height": 720,
@@ -15435,6 +15531,86 @@
       "height": 1080,
       "touch": true,
       "size": 6.59
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "huawei sne-lx2": {
+    "deviceName": "SNE-LX2",
+    "marketingName": "Mate 20 Lite",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2340,
+      "height": 1080,
+      "touch": true,
+      "size": 6.3
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "huawei bkl-l04": {
+    "deviceName": "BKL-L04",
+    "marketingName": "View 10",
+    "manufacturer": "huawei",
+    "brand": "honor",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2160,
+      "height": 1080,
+      "touch": true,
+      "size": 5.99
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "huawei ask-al20": {
+    "deviceName": "ASK-AL20",
+    "marketingName": "Play 3",
+    "manufacturer": "huawei",
+    "brand": "honor",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1569,
+      "height": 720,
+      "touch": true,
+      "size": 6.39
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "huawei jer-an20": {
+    "deviceName": "JER-AN20",
+    "marketingName": "nova 7 Pro 5G",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2340,
+      "height": 1080,
+      "touch": true,
+      "size": 6.57
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "huawei jer-an10": {
+    "deviceName": "JER-AN10",
+    "marketingName": "Nova 7 Pro 5G",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2340,
+      "height": 1080,
+      "touch": true,
+      "size": 6.57
     },
     "type": "smartphone",
     "platform": "android"

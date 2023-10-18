@@ -639,22 +639,6 @@
     "type": "phablet",
     "platform": "android"
   },
-  "huawei jer-an10": {
-    "deviceName": "JER-AN10",
-    "marketingName": "Nova 7 Pro 5G",
-    "manufacturer": "huawei",
-    "brand": "huawei",
-    "dualOrientation": null,
-    "simCount": null,
-    "display": {
-      "width": 2340,
-      "height": 1080,
-      "touch": true,
-      "size": 6.57
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
   "huawei jer-tn10": {
     "deviceName": "JER-TN10",
     "marketingName": "Nova 7 Pro 5G",
@@ -692,8 +676,8 @@
     "marketingName": "Nova 7 SE",
     "manufacturer": "huawei",
     "brand": "huawei",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 2400,
       "height": 1080,
@@ -708,8 +692,40 @@
     "marketingName": "Nova 7 SE",
     "manufacturer": "huawei",
     "brand": "huawei",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.5
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "huawei cdy-an20": {
+    "deviceName": "CDY-AN20",
+    "marketingName": "Nova 7 SE",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.5
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "huawei cdy-nx9b": {
+    "deviceName": "CDY-NX9B",
+    "marketingName": "Nova 7 SE",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 2400,
       "height": 1080,

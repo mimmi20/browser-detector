@@ -958,5 +958,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "hubspot crawler": {
+    "name": "HubSpot Crawler",
+    "manufacturer": "hubspot-inc",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "HubSpot Crawler"
+      ]
+    },
+    "engine": null
   }
 }

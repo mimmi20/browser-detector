@@ -56,6 +56,7 @@ final class SecChUaModel implements HeaderInterface
             'kftrwi' => 'amazon=amazon kftrwi',
             'kftrpwi' => 'amazon=amazon kftrpwi',
             'kfrapwi' => 'amazon=amazon kfrapwi',
+            'kfonwi' => 'amazon=amazon kfonwi',
             // Asus
             'p024' => 'asus=asus p024',
             'asus_x00dd' => 'asus=asus x00dd',
@@ -91,6 +92,7 @@ final class SecChUaModel implements HeaderInterface
             'le2120' => 'oneplus=oneplus le2120',
             'gm1913' => 'oneplus=oneplus gm1913',
             'be2029' => 'oneplus=oneplus be2029',
+            'cph2399' => 'oneplus=oneplus cph2399',
             // Oppo
             'cph2065' => 'oppo=oppo cph2065',
             'cph2211' => 'oppo=oppo cph2211',
@@ -111,6 +113,10 @@ final class SecChUaModel implements HeaderInterface
             'cph2247' => 'oppo=oppo cph2247',
             'cph2375' => 'oppo=oppo cph2375',
             'cph2307' => 'oppo=oppo cph2307',
+            'cph2161' => 'oppo=oppo cph2161',
+            'cph2207' => 'oppo=oppo cph2207',
+            'cph2091' => 'oppo=oppo cph2091',
+            'cph2371' => 'oppo=oppo cph2371',
             // Xiaomi
             'redmi note 9 pro' => 'xiaomi=xiaomi redmi note 9 pro',
             'redmi note 8 pro' => 'xiaomi=xiaomi redmi note 8 pro',
@@ -290,6 +296,8 @@ final class SecChUaModel implements HeaderInterface
             'sm-m336b' => 'samsung=samsung sm-m336b',
             'sm-m336bu' => 'samsung=samsung sm-m336bu',
             'sm-m115f' => 'samsung=samsung sm-m115f',
+            'sm-t595' => 'samsung=samsung sm-t595',
+            'sm-t830' => 'samsung=samsung sm-t830',
             // Huawei
             'mar-lx1b' => 'huawei=huawei mar-lx1b',
             'lya-l09' => 'huawei=huawei lya-l09',
@@ -317,6 +325,9 @@ final class SecChUaModel implements HeaderInterface
             'jsn-l21' => 'huawei=huawei jsn-l21',
             'jkm-lx2' => 'huawei=huawei jkm-lx2',
             'stk-l21' => 'huawei=huawei stk-l21',
+            'sne-lx1' => 'huawei=huawei sne-lx1',
+            'ine-lx1' => 'huawei=huawei ine-lx1',
+            'ine-lx1r' => 'huawei=huawei ine-lx1r',
             // Lenovo
             'lenovo tb-x304f' => 'lenovo=lenovo tb-x304f',
             'lenovo yt-j706f' => 'lenovo=lenovo yt-j706f',
@@ -346,6 +357,10 @@ final class SecChUaModel implements HeaderInterface
             'rmx3151' => 'realme=realme rmx3151',
             'rmx3263' => 'realme=realme rmx3263',
             'rmx3201' => 'realme=realme rmx3201',
+            'rmx2202' => 'realme=realme rmx2202',
+            'rmx2155' => 'realme=realme rmx2155',
+            'rmx3081' => 'realme=realme rmx3081',
+            'rmx2193' => 'realme=realme rmx2193',
             // Motorola
             'moto g200 5g' => 'motorola=motorola moto g200 5g',
             'motorola razr 5g' => 'motorola=motorola razr 5g',
