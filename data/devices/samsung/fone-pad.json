@@ -3009,11 +3009,11 @@
   },
   "samsung sm-t835": {
     "deviceName": "SM-T835",
-    "marketingName": "Galaxy Tab S4 (10.5)",
+    "marketingName": "Galaxy Tab S4 10.5 LTE",
     "manufacturer": "samsung",
     "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 2560,
       "height": 1600,
@@ -3441,7 +3441,7 @@
   },
   "samsung sm-t725": {
     "deviceName": "SM-T725",
-    "marketingName": "Galaxy Tab S5e LTE",
+    "marketingName": "Galaxy Tab S5e 10.5 LTE",
     "manufacturer": "samsung",
     "brand": "samsung",
     "dualOrientation": true,
@@ -3547,6 +3547,86 @@
       "height": 1200,
       "touch": true,
       "size": 8
+    },
+    "type": "fone-pad",
+    "platform": null
+  },
+  "samsung sm-t735": {
+    "deviceName": "SM-T735",
+    "marketingName": "Galaxy Tab S7 FE 12.4 5G",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2560,
+      "height": 1600,
+      "touch": true,
+      "size": 12.4
+    },
+    "type": "fone-pad",
+    "platform": null
+  },
+  "samsung sm-t735c": {
+    "deviceName": "SM-T735C",
+    "marketingName": "Galaxy Tab S7 FE 12.4 5G",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2560,
+      "height": 1600,
+      "touch": true,
+      "size": 12.4
+    },
+    "type": "fone-pad",
+    "platform": null
+  },
+  "samsung sm-t735n": {
+    "deviceName": "SM-T735N",
+    "marketingName": "Galaxy Tab S7 FE 12.4 5G",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2560,
+      "height": 1600,
+      "touch": true,
+      "size": 12.4
+    },
+    "type": "fone-pad",
+    "platform": null
+  },
+  "samsung sm-t736b": {
+    "deviceName": "SM-T736B",
+    "marketingName": "Galaxy Tab S7 FE 12.4 5G",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2560,
+      "height": 1600,
+      "touch": true,
+      "size": 12.4
+    },
+    "type": "fone-pad",
+    "platform": null
+  },
+  "samsung sm-t736n": {
+    "deviceName": "SM-T736N",
+    "marketingName": "Galaxy Tab S7 FE 12.4 5G",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2560,
+      "height": 1600,
+      "touch": true,
+      "size": 12.4
     },
     "type": "fone-pad",
     "platform": null

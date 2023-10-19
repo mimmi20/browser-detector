@@ -1217,11 +1217,11 @@
   },
   "samsung sm-t830": {
     "deviceName": "SM-T830",
-    "marketingName": "Galaxy Tab S4 (10.5)",
+    "marketingName": "Galaxy Tab S4 10.5 Wi-Fi",
     "manufacturer": "samsung",
     "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 0,
     "display": {
       "width": 2560,
       "height": 1600,
@@ -1233,7 +1233,7 @@
   },
   "samsung sm-t720": {
     "deviceName": "SM-T720",
-    "marketingName": "Galaxy Tab S5e Wi-Fi",
+    "marketingName": "Galaxy Tab S5e 10.5 Wi-Fi",
     "manufacturer": "samsung",
     "brand": "samsung",
     "dualOrientation": true,
@@ -1518,5 +1518,37 @@
     },
     "type": "tablet",
     "platform": "android"
+  },
+  "samsung sm-t733": {
+    "deviceName": "SM-T733",
+    "marketingName": "Galaxy Tab S7 FE 12.4 Wi-Fi",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 2560,
+      "height": 1600,
+      "touch": true,
+      "size": 12.4
+    },
+    "type": "tablet",
+    "platform": null
+  },
+  "samsung sm-t730": {
+    "deviceName": "SM-T730",
+    "marketingName": "Galaxy Tab S7 FE 12.4 Wi-Fi",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 2560,
+      "height": 1600,
+      "touch": true,
+      "size": 12.4
+    },
+    "type": "tablet",
+    "platform": null
   }
 }
