@@ -64,6 +64,7 @@ final class SecChUaModel implements HeaderInterface
             'asus_i005da' => 'asus=asus i005da',
             'asus_i003d' => 'asus=asus i003d',
             'asus_i003dd' => 'asus=asus i003dd',
+            'asus_i006d' => 'asus=asus i006d',
             // Google
             'nexus 7' => 'google=google nexus 7',
             'pixel 3' => 'google=google pixel 3',
@@ -95,6 +96,7 @@ final class SecChUaModel implements HeaderInterface
             'be2029' => 'oneplus=oneplus be2029',
             'cph2399' => 'oneplus=oneplus cph2399',
             'dn2103' => 'oneplus=oneplus dn2103',
+            'eb2103' => 'oneplus=oneplus eb2103',
             // Oppo
             'cph2065' => 'oppo=oppo cph2065',
             'cph2211' => 'oppo=oppo cph2211',
@@ -121,6 +123,7 @@ final class SecChUaModel implements HeaderInterface
             'cph2371' => 'oppo=oppo cph2371',
             'cph1907' => 'oppo=oppo cph1907',
             'cph2185' => 'oppo=oppo cph2185',
+            'cph2415' => 'oppo=oppo cph2415',
             // Xiaomi
             'redmi note 9 pro' => 'xiaomi=xiaomi redmi note 9 pro',
             'redmi note 8 pro' => 'xiaomi=xiaomi redmi note 8 pro',
@@ -196,6 +199,10 @@ final class SecChUaModel implements HeaderInterface
             '22071212ag' => 'xiaomi=xiaomi 22071212ag',
             '2201116pg' => 'xiaomi=xiaomi 2201116pg',
             '2203129g' => 'xiaomi=xiaomi 2203129g',
+            '21051182c' => 'xiaomi=xiaomi 21051182c',
+            '22111317pg' => 'xiaomi=xiaomi 22111317pg',
+            'm2103k19pg' => 'xiaomi=xiaomi m2103k19pg',
+            'mi 10 pro' => 'xiaomi=xiaomi mi 10 pro 5g',
             // ZTE
             'zte a2121e' => 'zte=zte a2121e',
             'zte blade 10 vita' => 'zte=zte blade 10 vita',
@@ -387,6 +394,12 @@ final class SecChUaModel implements HeaderInterface
             'motorola one macro' => 'motorola=motorola one macro',
             'motorola defy' => 'motorola=motorola defy 2021',
             'moto g 5g' => 'motorola=motorola moto g 5g',
+            'motorola edge 20' => 'motorola=motorola edge 20 2021',
+            'motorola edge 20 lite' => 'motorola=motorola edge 20 lite',
+            'motorola edge 20 pro' => 'motorola=motorola edge 20 pro',
+            'motorola edge 30 neo' => 'motorola=motorola edge 30 neo',
+            'motorola edge 30' => 'motorola=motorola edge 30',
+            'motorola edge 30 ultra' => 'motorola=motorola edge 30 ultra',
             // Sony
             'xq-cc54' => 'sony=sony xq-cc54',
             'xq-bq52' => 'sony=sony xq-bq52',
