@@ -111,22 +111,6 @@
     "type": "phablet",
     "platform": "android"
   },
-  "xiaomi mi note 3": {
-    "deviceName": "MI Note 3",
-    "marketingName": "MI Note 3",
-    "manufacturer": "xiaomi",
-    "brand": "xiaomi",
-    "dualOrientation": null,
-    "simCount": null,
-    "display": {
-      "width": 1920,
-      "height": 1080,
-      "touch": true,
-      "size": 5.5
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
   "xiaomi mi note lte": {
     "deviceName": "MI Note LTE",
     "marketingName": "MI Note LTE",
@@ -1547,6 +1531,22 @@
       "height": 1080,
       "touch": true,
       "size": 6.67
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "xiaomi redmi note 10s": {
+    "deviceName": "Redmi Note 10S",
+    "marketingName": "Redmi Note 10S",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.43
     },
     "type": "phablet",
     "platform": "android"

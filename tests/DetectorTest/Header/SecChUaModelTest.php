@@ -496,6 +496,8 @@ final class SecChUaModelTest extends TestCase
             ['"Phone 2"', 'razer=razer phone 2'],
             ['"5024D_EEA"', 'alcatel=alcatel 5024d_eea'],
             ['"HTC Desire 19+"', 'htc=htc desire 19 plus'],
+            ['"21121210G"', 'xiaomi=xiaomi 21121210g'],
+            ['"22101320G"', 'xiaomi=xiaomi 22101320g'],
             ['""', null],
         ];
     }

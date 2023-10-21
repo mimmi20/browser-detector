@@ -203,6 +203,8 @@ final class SecChUaModel implements HeaderInterface
             '22111317pg' => 'xiaomi=xiaomi 22111317pg',
             'm2103k19pg' => 'xiaomi=xiaomi m2103k19pg',
             'mi 10 pro' => 'xiaomi=xiaomi mi 10 pro 5g',
+            '21121210g' => 'xiaomi=xiaomi 21121210g',
+            '22101320g' => 'xiaomi=xiaomi 22101320g',
             // ZTE
             'zte a2121e' => 'zte=zte a2121e',
             'zte blade 10 vita' => 'zte=zte blade 10 vita',
