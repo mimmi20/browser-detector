@@ -114,7 +114,7 @@
     },
     "client": {
       "name": "OmniWeb",
-      "version": null,
+      "version": "622.8.0",
       "manufacturer": "omni-development",
       "type": "browser",
       "isbot": false
@@ -156,7 +156,7 @@
     },
     "client": {
       "name": "OmniWeb",
-      "version": null,
+      "version": "622.8.0",
       "manufacturer": "omni-development",
       "type": "browser",
       "isbot": false
@@ -198,7 +198,7 @@
     },
     "client": {
       "name": "OmniWeb",
-      "version": null,
+      "version": "622.11.0",
       "manufacturer": "omni-development",
       "type": "browser",
       "isbot": false
@@ -324,7 +324,7 @@
     },
     "client": {
       "name": "OmniWeb",
-      "version": null,
+      "version": "5.0.0",
       "manufacturer": "omni-development",
       "type": "browser",
       "isbot": false
@@ -366,7 +366,7 @@
     },
     "client": {
       "name": "OmniWeb",
-      "version": null,
+      "version": "603.0.0",
       "manufacturer": "omni-development",
       "type": "browser",
       "isbot": false
@@ -450,7 +450,7 @@
     },
     "client": {
       "name": "OmniWeb",
-      "version": null,
+      "version": "558.48.0",
       "manufacturer": "omni-development",
       "type": "browser",
       "isbot": false
@@ -492,7 +492,7 @@
     },
     "client": {
       "name": "OmniWeb",
-      "version": null,
+      "version": "563.15.0",
       "manufacturer": "omni-development",
       "type": "browser",
       "isbot": false
@@ -534,7 +534,7 @@
     },
     "client": {
       "name": "OmniWeb",
-      "version": null,
+      "version": "622.8.0.112941",
       "manufacturer": "omni-development",
       "type": "browser",
       "isbot": false
@@ -576,7 +576,7 @@
     },
     "client": {
       "name": "OmniWeb",
-      "version": null,
+      "version": "615.0.98160",
       "manufacturer": "omni-development",
       "type": "browser",
       "isbot": false
@@ -673,6 +673,48 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Macintosh; U; PPC Mac OS X; en-US) AppleWebKit/420+ (KHTML, like Gecko, Safari) OmniWeb/v595"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": null,
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "OmniWeb",
+      "version": "595.0.0",
+      "manufacturer": "omni-development",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "420.0.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Macintosh; U; PowerPC Mac OS X 10_5_8; en-US) AppleWebKit/531.21.8+(KHTML, like Gecko, Safari/528.16) Version/5.10.3 OmniWeb/622.14.0"
     },
     "device": {
@@ -715,6 +757,342 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Macintosh; U; PPC Mac OS X; en-US) AppleWebKit/85 (KHTML, like Gecko) OmniWeb/v496"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": null,
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "OmniWeb",
+      "version": "496.0.0",
+      "manufacturer": "omni-development",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "85.0.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Macintosh; U; PPC Mac OS X; en-US) AppleWebKit/523 (KHTML, like Gecko, Safari/523.10) OmniWeb/v621.0.99313"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": null,
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "OmniWeb",
+      "version": "621.0.99313",
+      "manufacturer": "omni-development",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "523.0.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Macintosh; U; PPC Mac OS X; en-US) AppleWebKit/522  (KHTML, like Gecko, Safari/522) OmniWeb/v613.0.93354"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": null,
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "OmniWeb",
+      "version": "613.0.93354",
+      "manufacturer": "omni-development",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "522.0.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Macintosh; U; PPC Mac OS X; en-US) AppleWebKit/522  (KHTML, like Gecko, Safari/522) OmniWeb/v612.0.92227"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": null,
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "OmniWeb",
+      "version": "612.0.92227",
+      "manufacturer": "omni-development",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "522.0.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Macintosh; U; PPC Mac OS X; en-US) AppleWebKit/420  (KHTML, like Gecko, Safari/420) OmniWeb/v607.5"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": null,
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "OmniWeb",
+      "version": "607.5.0",
+      "manufacturer": "omni-development",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "420.0.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Macintosh; U; PPC Mac OS X; en-US) AppleWebKit/420  (KHTML, like Gecko, Safari/420) OmniWeb/v606"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": null,
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "OmniWeb",
+      "version": "606.0.0",
+      "manufacturer": "omni-development",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "420.0.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Macintosh; U; PPC Mac OS X; en-US) AppleWebKit/420  (KHTML, like Gecko, Safari/420) OmniWeb/v601"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": null,
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "OmniWeb",
+      "version": "601.0.0",
+      "manufacturer": "omni-development",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "420.0.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Macintosh; U; PPC Mac OS X; en-US) AppleWebKit/420  (KHTML, like Gecko, Safari) OmniWeb/v599"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": null,
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "OmniWeb",
+      "version": "599.0.0",
+      "manufacturer": "omni-development",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "420.0.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US) AppleWebKit/525.18 (KHTML, like Gecko, Safari/525.20) OmniWeb/v622.3.0.105198"
     },
     "device": {
@@ -744,7 +1122,7 @@
     },
     "client": {
       "name": "OmniWeb",
-      "version": null,
+      "version": "622.3.0.105198",
       "manufacturer": "omni-development",
       "type": "browser",
       "isbot": false
@@ -878,6 +1256,90 @@
     "engine": {
       "name": "WebKit",
       "version": "537.74.8",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Macintosh; U; PPC Mac OS X; en-US) AppleWebKit/85 (KHTML, like Gecko) OmniWeb/v549"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": null,
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "OmniWeb",
+      "version": "549.0.0",
+      "manufacturer": "omni-development",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "85.0.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Macintosh; U; PPC Mac OS X; en-US) AppleWebKit/420+ (KHTML, like Gecko, Safari/420) OmniWeb/v602"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": null,
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "OmniWeb",
+      "version": "602.0.0",
+      "manufacturer": "omni-development",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "420.0.0",
       "manufacturer": "apple"
     }
   }

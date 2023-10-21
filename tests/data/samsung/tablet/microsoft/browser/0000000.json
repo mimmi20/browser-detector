@@ -384,11 +384,11 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-T830",
-      "marketingName": "Galaxy Tab S4 (10.5)",
+      "marketingName": "Galaxy Tab S4 10.5 Wi-Fi",
       "manufacturer": "samsung",
       "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 2560,
         "height": 1600,
@@ -552,11 +552,11 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-T830",
-      "marketingName": "Galaxy Tab S4 (10.5)",
+      "marketingName": "Galaxy Tab S4 10.5 Wi-Fi",
       "manufacturer": "samsung",
       "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 2560,
         "height": 1600,
@@ -636,11 +636,11 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-T830",
-      "marketingName": "Galaxy Tab S4 (10.5)",
+      "marketingName": "Galaxy Tab S4 10.5 Wi-Fi",
       "manufacturer": "samsung",
       "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 2560,
         "height": 1600,
@@ -762,7 +762,7 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-T720",
-      "marketingName": "Galaxy Tab S5e Wi-Fi",
+      "marketingName": "Galaxy Tab S5e 10.5 Wi-Fi",
       "manufacturer": "samsung",
       "brand": "samsung",
       "dualOrientation": true,
@@ -1224,7 +1224,7 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-T720",
-      "marketingName": "Galaxy Tab S5e Wi-Fi",
+      "marketingName": "Galaxy Tab S5e 10.5 Wi-Fi",
       "manufacturer": "samsung",
       "brand": "samsung",
       "dualOrientation": true,
@@ -1266,11 +1266,11 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-T830",
-      "marketingName": "Galaxy Tab S4 (10.5)",
+      "marketingName": "Galaxy Tab S4 10.5 Wi-Fi",
       "manufacturer": "samsung",
       "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 2560,
         "height": 1600,
@@ -1560,7 +1560,7 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-T720",
-      "marketingName": "Galaxy Tab S5e Wi-Fi",
+      "marketingName": "Galaxy Tab S5e 10.5 Wi-Fi",
       "manufacturer": "samsung",
       "brand": "samsung",
       "dualOrientation": true,
@@ -1938,7 +1938,7 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-T720",
-      "marketingName": "Galaxy Tab S5e Wi-Fi",
+      "marketingName": "Galaxy Tab S5e 10.5 Wi-Fi",
       "manufacturer": "samsung",
       "brand": "samsung",
       "dualOrientation": true,
@@ -1980,7 +1980,7 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-T720",
-      "marketingName": "Galaxy Tab S5e Wi-Fi",
+      "marketingName": "Galaxy Tab S5e 10.5 Wi-Fi",
       "manufacturer": "samsung",
       "brand": "samsung",
       "dualOrientation": true,
@@ -2012,6 +2012,48 @@
     "engine": {
       "name": "Blink",
       "version": "98.0.4758.102",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; SM-T733 Build/RP1A.200720.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/98.0.4758.101 Safari/537.36 EdgW/1.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-T733",
+      "marketingName": "Galaxy Tab S7 FE 12.4 Wi-Fi",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 2560,
+        "height": 1600,
+        "touch": true,
+        "size": 12.4
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Edge WebView",
+      "version": "1.0.0",
+      "manufacturer": "microsoft",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "98.0.4758.101",
       "manufacturer": "google"
     }
   },
@@ -2185,6 +2227,48 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-T733 Build/SP2A.220305.013; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.136 Safari/537.36 EdgW/1.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-T733",
+      "marketingName": "Galaxy Tab S7 FE 12.4 Wi-Fi",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 2560,
+        "height": 1600,
+        "touch": true,
+        "size": 12.4
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Edge WebView",
+      "version": "1.0.0",
+      "manufacturer": "microsoft",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "105.0.5195.136",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; SM-T580 Build/M1AJQ; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/106.0.5249.126 Safari/537.36 EdgW/1.0"
     },
     "device": {
@@ -2232,7 +2316,7 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-T720",
-      "marketingName": "Galaxy Tab S5e Wi-Fi",
+      "marketingName": "Galaxy Tab S5e 10.5 Wi-Fi",
       "manufacturer": "samsung",
       "brand": "samsung",
       "dualOrientation": true,
@@ -2400,7 +2484,7 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-T720",
-      "marketingName": "Galaxy Tab S5e Wi-Fi",
+      "marketingName": "Galaxy Tab S5e 10.5 Wi-Fi",
       "manufacturer": "samsung",
       "brand": "samsung",
       "dualOrientation": true,

@@ -2399,7 +2399,7 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "XT1032",
+      "deviceName": "Moto G",
       "marketingName": "Moto G",
       "manufacturer": "motorola",
       "brand": "motorola",
@@ -2409,7 +2409,7 @@
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": 4.5
+        "size": 4
       },
       "type": "smartphone",
       "ismobile": true,
@@ -2651,17 +2651,17 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "XT1032",
-      "marketingName": "Moto G",
+      "deviceName": "Moto G8 Plus",
+      "marketingName": "Moto G8 Plus",
       "manufacturer": "motorola",
       "brand": "motorola",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
-        "width": 1280,
-        "height": 720,
+        "width": 2280,
+        "height": 1080,
         "touch": true,
-        "size": 4.5
+        "size": 6.3
       },
       "type": "smartphone",
       "ismobile": true,
@@ -2861,17 +2861,17 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "XT1032",
-      "marketingName": "Moto G",
+      "deviceName": "Moto G8 Plus",
+      "marketingName": "Moto G8 Plus",
       "manufacturer": "motorola",
       "brand": "motorola",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
-        "width": 1280,
-        "height": 720,
+        "width": 2280,
+        "height": 1080,
         "touch": true,
-        "size": 4.5
+        "size": 6.3
       },
       "type": "smartphone",
       "ismobile": true,
@@ -3029,17 +3029,17 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "XT1032",
-      "marketingName": "Moto G",
+      "deviceName": "Moto G8 Plus",
+      "marketingName": "Moto G8 Plus",
       "manufacturer": "motorola",
       "brand": "motorola",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
-        "width": 1280,
-        "height": 720,
+        "width": 2280,
+        "height": 1080,
         "touch": true,
-        "size": 4.5
+        "size": 6.3
       },
       "type": "smartphone",
       "ismobile": true,
@@ -3155,17 +3155,17 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "XT1032",
-      "marketingName": "Moto G",
+      "deviceName": "Moto G8 Plus",
+      "marketingName": "Moto G8 Plus",
       "manufacturer": "motorola",
       "brand": "motorola",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
-        "width": 1280,
-        "height": 720,
+        "width": 2280,
+        "height": 1080,
         "touch": true,
-        "size": 4.5
+        "size": 6.3
       },
       "type": "smartphone",
       "ismobile": true,
@@ -3407,7 +3407,49 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "XT1032",
+      "deviceName": "Moto G8 Plus",
+      "marketingName": "Moto G8 Plus",
+      "manufacturer": "motorola",
+      "brand": "motorola",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2280,
+        "height": 1080,
+        "touch": true,
+        "size": 6.3
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "version": "61.1.3076.56625",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "86.0.4240.198",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; moto g(8)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Mobile Safari/537.36 OPR/61.1.3076.56625"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Moto G",
       "marketingName": "Moto G",
       "manufacturer": "motorola",
       "brand": "motorola",
@@ -3417,7 +3459,7 @@
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": 4.5
+        "size": 4
       },
       "type": "smartphone",
       "ismobile": true,
@@ -4154,48 +4196,6 @@
     "engine": {
       "name": "Blink",
       "version": "91.0.4472.114",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; moto g(7) plus Build/QPWS30.61-21-18-7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.164 Mobile Safari/537.36 OPT/2.9"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Moto G7 Plus",
-      "marketingName": "Moto G7 Plus",
-      "manufacturer": "motorola",
-      "brand": "motorola",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 2270,
-        "height": 1080,
-        "touch": true,
-        "size": 6.2
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Opera Touch",
-      "version": "2.9.0",
-      "manufacturer": "opera",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "91.0.4472.164",
       "manufacturer": "google"
     }
   }

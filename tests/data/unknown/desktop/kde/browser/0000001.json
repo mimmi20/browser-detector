@@ -1,6 +1,48 @@
 [
   {
     "headers": {
+      "user-agent": "Konqueror/20.20 (DeLi Linux 7.0; sq_AL;)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation"
+    },
+    "client": {
+      "name": "Konqueror",
+      "version": "20.20.0",
+      "manufacturer": "kde",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "KHTML",
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Konqueror/15.12 (Ubuntu 6.6; ar_OM;)"
     },
     "device": {

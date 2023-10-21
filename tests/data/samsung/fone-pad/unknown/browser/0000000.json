@@ -510,11 +510,11 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-T835",
-      "marketingName": "Galaxy Tab S4 (10.5)",
+      "marketingName": "Galaxy Tab S4 10.5 LTE",
       "manufacturer": "samsung",
       "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 2560,
         "height": 1600,
@@ -972,7 +972,7 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-T725",
-      "marketingName": "Galaxy Tab S5e LTE",
+      "marketingName": "Galaxy Tab S5e 10.5 LTE",
       "manufacturer": "samsung",
       "brand": "samsung",
       "dualOrientation": true,
@@ -1938,7 +1938,7 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-T725",
-      "marketingName": "Galaxy Tab S5e LTE",
+      "marketingName": "Galaxy Tab S5e 10.5 LTE",
       "manufacturer": "samsung",
       "brand": "samsung",
       "dualOrientation": true,
@@ -1980,11 +1980,11 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-T835",
-      "marketingName": "Galaxy Tab S4 (10.5)",
+      "marketingName": "Galaxy Tab S4 10.5 LTE",
       "manufacturer": "samsung",
       "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 2560,
         "height": 1600,
@@ -2143,6 +2143,48 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; SM-T736B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.181 Safari/537.36 (Ecosia android@88.0.4324.181)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-T736B",
+      "marketingName": "Galaxy Tab S7 FE 12.4 5G",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2560,
+        "height": 1600,
+        "touch": true,
+        "size": 12.4
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Ecosia",
+      "version": "88.0.4324.181",
+      "manufacturer": "unknown",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "88.0.4324.181",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-T875) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.181 Safari/537.36 (Ecosia android@88.0.4324.181)"
     },
     "device": {
@@ -2232,7 +2274,7 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-T725",
-      "marketingName": "Galaxy Tab S5e LTE",
+      "marketingName": "Galaxy Tab S5e 10.5 LTE",
       "manufacturer": "samsung",
       "brand": "samsung",
       "dualOrientation": true,
@@ -2365,11 +2407,11 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-T835",
-      "marketingName": "Galaxy Tab S4 (10.5)",
+      "marketingName": "Galaxy Tab S4 10.5 LTE",
       "manufacturer": "samsung",
       "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 2560,
         "height": 1600,

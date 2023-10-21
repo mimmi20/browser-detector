@@ -631,6 +631,48 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; DN2101 Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/107.0.5304.105 Mobile Safari/537.36 GoogleApp/13.43.18.26.arm64"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "DN2101",
+      "marketingName": "Nord 2 5G",
+      "manufacturer": "bbk",
+      "brand": "oneplus",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.43
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Google App",
+      "version": "13.43.18.26",
+      "manufacturer": "google",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "107.0.5304.105",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 13; NE2213 Build/SKQ1.220617.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/108.0.5359.79 Mobile Safari/537.36 GoogleApp/13.47.8.26.arm64"
     },
     "device": {
@@ -668,6 +710,48 @@
     "engine": {
       "name": "Blink",
       "version": "108.0.5359.79",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; DN2103 Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/108.0.5359.128 Mobile Safari/537.36 GoogleApp/13.48.11.26.arm64"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "DN2103",
+      "marketingName": "Nord 2 5G",
+      "manufacturer": "bbk",
+      "brand": "oneplus",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.43
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Google App",
+      "version": "13.48.11.26",
+      "manufacturer": "google",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "108.0.5359.128",
       "manufacturer": "google"
     }
   },
@@ -757,6 +841,48 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; DN2103 Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/109.0.5414.117 Mobile Safari/537.36 GoogleApp/14.4.6.26.arm64"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "DN2103",
+      "marketingName": "Nord 2 5G",
+      "manufacturer": "bbk",
+      "brand": "oneplus",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.43
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Google App",
+      "version": "14.4.6.26",
+      "manufacturer": "google",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "109.0.5414.117",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 12; CPH2005 Build/RKQ1.211103.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/112.0.5615.135 Mobile Safari/537.36 GoogleApp/14.17.24.28.arm64"
     },
     "device": {
@@ -804,7 +930,7 @@
     "device": {
       "architecture": null,
       "deviceName": "CPH2211",
-      "marketingName": "Reno5 Z",
+      "marketingName": "Reno 5 Z",
       "manufacturer": "bbk",
       "brand": "oppo",
       "dualOrientation": true,
@@ -888,7 +1014,7 @@
     "device": {
       "architecture": null,
       "deviceName": "CPH2211",
-      "marketingName": "Reno5 Z",
+      "marketingName": "Reno 5 Z",
       "manufacturer": "bbk",
       "brand": "oppo",
       "dualOrientation": true,

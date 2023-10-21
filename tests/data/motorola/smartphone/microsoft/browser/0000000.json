@@ -635,7 +635,7 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "XT1032",
+      "deviceName": "Moto G",
       "marketingName": "Moto G",
       "manufacturer": "motorola",
       "brand": "motorola",
@@ -645,7 +645,7 @@
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": 4.5
+        "size": 4
       },
       "type": "smartphone",
       "ismobile": true,
@@ -971,17 +971,17 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "XT1032",
-      "marketingName": "Moto G",
+      "deviceName": "Moto G8 Plus",
+      "marketingName": "Moto G8 Plus",
       "manufacturer": "motorola",
       "brand": "motorola",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
-        "width": 1280,
-        "height": 720,
+        "width": 2280,
+        "height": 1080,
         "touch": true,
-        "size": 4.5
+        "size": 6.3
       },
       "type": "smartphone",
       "ismobile": true,
@@ -1139,7 +1139,7 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "XT1032",
+      "deviceName": "Moto G",
       "marketingName": "Moto G",
       "manufacturer": "motorola",
       "brand": "motorola",
@@ -1149,7 +1149,7 @@
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": 4.5
+        "size": 4
       },
       "type": "smartphone",
       "ismobile": true,
@@ -1349,17 +1349,17 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "XT1032",
-      "marketingName": "Moto G",
+      "deviceName": "Moto G8 Plus",
+      "marketingName": "Moto G8 Plus",
       "manufacturer": "motorola",
       "brand": "motorola",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
-        "width": 1280,
-        "height": 720,
+        "width": 2280,
+        "height": 1080,
         "touch": true,
-        "size": 4.5
+        "size": 6.3
       },
       "type": "smartphone",
       "ismobile": true,
@@ -1433,7 +1433,7 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "XT1032",
+      "deviceName": "Moto G",
       "marketingName": "Moto G",
       "manufacturer": "motorola",
       "brand": "motorola",
@@ -1443,7 +1443,7 @@
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": 4.5
+        "size": 4
       },
       "type": "smartphone",
       "ismobile": true,
@@ -1688,6 +1688,109 @@
   },
   {
     "headers": {
+      "device-memory": "8",
+      "dpr": "2.5",
+      "viewport-width": "980",
+      "rtt": "100",
+      "downlink": "10",
+      "ect": "4g",
+      "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"101\", \"Microsoft Edge\";v=\"101\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"12.0.0\"",
+      "sec-ch-ua-model": "\"motorola edge 20\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version-list": "\" Not A;Brand\";v=\"99.0.0.0\", \"Chromium\";v=\"101.0.1210.47\", \"Microsoft Edge\";v=\"101.0.1210.47\"",
+      "dnt": "1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; motorola edge 20) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.64 Mobile Safari/537.36 EdgA/101.0.1210.47",
+      "sec-fetch-site": "same-origin",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-user": "?1",
+      "sec-fetch-dest": "document"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Edge 20 (2021)",
+      "marketingName": "Edge 20 (2021)",
+      "manufacturer": "motorola",
+      "brand": "motorola",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.7
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Edge Mobile for Android",
+      "version": "101.0.1210.47",
+      "manufacturer": "microsoft",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "101.0.4951.64",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; motorola edge 20 Build/RRGS31.Q3-23-85-6; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/101.0.4951.61 Mobile Safari/537.36 EdgW/1.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Edge 20 (2021)",
+      "marketingName": "Edge 20 (2021)",
+      "manufacturer": "motorola",
+      "brand": "motorola",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.7
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Edge WebView",
+      "version": "1.0.0",
+      "manufacturer": "microsoft",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "101.0.4951.61",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 9; moto g(6) play Build/PPPS29.55-35-18-7; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/103.0.5060.71 Mobile Safari/537.36 EdgW/1.0"
     },
     "device": {
@@ -1902,7 +2005,7 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "XT1032",
+      "deviceName": "Moto G",
       "marketingName": "Moto G",
       "manufacturer": "motorola",
       "brand": "motorola",
@@ -1912,7 +2015,7 @@
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": 4.5
+        "size": 4
       },
       "type": "smartphone",
       "ismobile": true,
@@ -1982,6 +2085,48 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; motorola edge 30 neo) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36 EdgA/108.0.1462.76"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Edge 30 Neo",
+      "marketingName": "Edge 30 Neo",
+      "manufacturer": "motorola",
+      "brand": "motorola",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.28
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Edge Mobile for Android",
+      "version": "108.0.1462.76",
+      "manufacturer": "microsoft",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "108.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 12; moto g pro Build/S0PRS32.44-11-10-20; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/110.0.5481.64 Mobile Safari/537.36 EdgW/1.0"
     },
     "device": {
@@ -2028,17 +2173,17 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "XT1032",
-      "marketingName": "Moto G",
+      "deviceName": "Moto G8 Plus",
+      "marketingName": "Moto G8 Plus",
       "manufacturer": "motorola",
       "brand": "motorola",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
-        "width": 1280,
-        "height": 720,
+        "width": 2280,
+        "height": 1080,
         "touch": true,
-        "size": 4.5
+        "size": 6.3
       },
       "type": "smartphone",
       "ismobile": true,
@@ -2070,7 +2215,7 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "XT1032",
+      "deviceName": "Moto G",
       "marketingName": "Moto G",
       "manufacturer": "motorola",
       "brand": "motorola",
@@ -2080,7 +2225,7 @@
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": 4.5
+        "size": 4
       },
       "type": "smartphone",
       "ismobile": true,
@@ -2112,17 +2257,17 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "XT1032",
-      "marketingName": "Moto G",
+      "deviceName": "Moto G 5G",
+      "marketingName": "Moto G 5G",
       "manufacturer": "motorola",
       "brand": "motorola",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
-        "width": 1280,
-        "height": 720,
+        "width": 2400,
+        "height": 1080,
         "touch": true,
-        "size": 4.5
+        "size": 6.7
       },
       "type": "smartphone",
       "ismobile": true,

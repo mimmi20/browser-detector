@@ -498,6 +498,7 @@ final class SecChUaModelTest extends TestCase
             ['"HTC Desire 19+"', 'htc=htc desire 19 plus'],
             ['"21121210G"', 'xiaomi=xiaomi 21121210g'],
             ['"22101320G"', 'xiaomi=xiaomi 22101320g'],
+            ['"220233L2G"', 'xiaomi=xiaomi 220233l2g'],
             ['""', null],
         ];
     }

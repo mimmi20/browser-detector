@@ -1535,10 +1535,10 @@
       "bits": null
     },
     "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
+      "name": "BSD",
+      "marketingName": "BSD",
       "version": null,
-      "manufacturer": "linux-foundation"
+      "manufacturer": "berkley-university"
     },
     "client": {
       "name": "rekonq",
@@ -3739,6 +3739,48 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (X11; BSD Four) AppleWebKit/534.34 (KHTML, like Gecko) konqueror/4.10.5 Safari/534.34"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "BSD",
+      "marketingName": "BSD",
+      "version": null,
+      "manufacturer": "berkley-university"
+    },
+    "client": {
+      "name": "Konqueror",
+      "version": "4.10.5",
+      "manufacturer": "kde",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.34.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (X11; Cygwin) AppleWebKit/534.34 (KHTML, like Gecko) konqueror/4.13.3 Safari/534.34"
     },
     "device": {
@@ -4147,48 +4189,6 @@
     "client": {
       "name": "Konqueror",
       "version": "16.3.0",
-      "manufacturer": "kde",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "KHTML",
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Konqueror/20.20 (DeLi Linux 7.0; sq_AL;)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Linux Desktop",
-      "marketingName": "Linux Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "linux-foundation"
-    },
-    "client": {
-      "name": "Konqueror",
-      "version": "20.20.0",
       "manufacturer": "kde",
       "type": "browser",
       "isbot": false
