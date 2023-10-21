@@ -1550,5 +1550,53 @@
     },
     "type": "tablet",
     "platform": null
+  },
+  "samsung sm-x900": {
+    "deviceName": "SM-X900",
+    "marketingName": "Galaxy Tab S8 Ultra 14.6 Wi-Fi",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 2960,
+      "height": 1848,
+      "touch": true,
+      "size": 14.6
+    },
+    "type": "tablet",
+    "platform": null
+  },
+  "samsung sm-t530": {
+    "deviceName": "SM-T530",
+    "marketingName": "Galaxy Tab 4 10.1 Wi-Fi",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": 10.1
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "samsung sm-t530nu": {
+    "deviceName": "SM-T530NU",
+    "marketingName": "Galaxy Tab 4 10.1 Wi-Fi",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": 10.1
+    },
+    "type": "tablet",
+    "platform": "android"
   }
 }

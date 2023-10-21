@@ -487,6 +487,15 @@ final class SecChUaModelTest extends TestCase
             ['"EB2103"', 'oneplus=oneplus eb2103'],
             ['"M2103K19PG"', 'xiaomi=xiaomi m2103k19pg'],
             ['"Mi 10 Pro"', 'xiaomi=xiaomi mi 10 pro 5g'],
+            ['"Nokia G11"', 'nokia=nokia g11'],
+            ['"PGT-N19"', 'huawei=huawei pgt-n19'],
+            ['"RMX3311"', 'realme=realme rmx3311'],
+            ['"RMX3521"', 'realme=realme rmx3521'],
+            ['"SM-X900"', 'samsung=samsung sm-x900'],
+            ['"SM-X906B"', 'samsung=samsung sm-x906b'],
+            ['"Phone 2"', 'razer=razer phone 2'],
+            ['"5024D_EEA"', 'alcatel=alcatel 5024d_eea'],
+            ['"HTC Desire 19+"', 'htc=htc desire 19 plus'],
             ['""', null],
         ];
     }

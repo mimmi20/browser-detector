@@ -3281,11 +3281,11 @@
   },
   "huawei y625-u13": {
     "deviceName": "Y625-U13",
-    "marketingName": "Ascend Y625",
+    "marketingName": "Y625",
     "manufacturer": "huawei",
     "brand": "huawei",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 854,
       "height": 480,
@@ -3297,11 +3297,11 @@
   },
   "huawei y625-u21": {
     "deviceName": "Y625-U21",
-    "marketingName": "Ascend Y625",
+    "marketingName": "Y625",
     "manufacturer": "huawei",
     "brand": "huawei",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 854,
       "height": 480,
@@ -3313,11 +3313,11 @@
   },
   "huawei y625-u32": {
     "deviceName": "Y625-U32",
-    "marketingName": "Ascend Y625",
+    "marketingName": "Y625",
     "manufacturer": "huawei",
     "brand": "huawei",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 854,
       "height": 480,
@@ -3329,11 +3329,11 @@
   },
   "huawei y625-u43": {
     "deviceName": "Y625-U43",
-    "marketingName": "Ascend Y625",
+    "marketingName": "Y625",
     "manufacturer": "huawei",
     "brand": "huawei",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 854,
       "height": 480,
@@ -3345,11 +3345,11 @@
   },
   "huawei y625-u51": {
     "deviceName": "Y625-U51",
-    "marketingName": "Ascend Y625",
+    "marketingName": "Y625",
     "manufacturer": "huawei",
     "brand": "huawei",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 854,
       "height": 480,
@@ -14785,7 +14785,7 @@
   },
   "huawei lge-nx9": {
     "deviceName": "LGE-NX9",
-    "marketingName": "Honor Magic4 Pro",
+    "marketingName": "Honor Magic 4 Pro",
     "manufacturer": "huawei",
     "brand": "huawei",
     "dualOrientation": true,
@@ -14801,7 +14801,7 @@
   },
   "huawei lge-an10": {
     "deviceName": "LGE-AN10",
-    "marketingName": "Honor Magic4 Pro",
+    "marketingName": "Honor Magic 4 Pro",
     "manufacturer": "huawei",
     "brand": "huawei",
     "dualOrientation": true,
@@ -14817,7 +14817,7 @@
   },
   "huawei lge-an20": {
     "deviceName": "LGE-AN20",
-    "marketingName": "Honor Magic4 Pro",
+    "marketingName": "Honor Magic 4 Pro",
     "manufacturer": "huawei",
     "brand": "huawei",
     "dualOrientation": true,
@@ -15915,6 +15915,54 @@
       "height": 1080,
       "touch": true,
       "size": 6.67
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "huawei pgt-n19": {
+    "deviceName": "PGT-N19",
+    "marketingName": "Honor Magic 5 Pro",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2848,
+      "height": 1312,
+      "touch": true,
+      "size": 6.81
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "huawei pgt-an10": {
+    "deviceName": "PGT-AN10",
+    "marketingName": "Honor Magic 5 Pro",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2848,
+      "height": 1312,
+      "touch": true,
+      "size": 6.81
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "huawei pgt-an20": {
+    "deviceName": "PGT-AN20",
+    "marketingName": "Honor Magic 5 Pro",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2848,
+      "height": 1312,
+      "touch": true,
+      "size": 6.81
     },
     "type": "smartphone",
     "platform": "android"

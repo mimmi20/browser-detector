@@ -312,6 +312,8 @@ final class SecChUaModel implements HeaderInterface
             'sm-t835' => 'samsung=samsung sm-t835',
             'sm-t733' => 'samsung=samsung sm-t733',
             'sm-t736b' => 'samsung=samsung sm-t736b',
+            'sm-x900' => 'samsung=samsung sm-x900',
+            'sm-x906b' => 'samsung=samsung sm-x906b',
             // Huawei
             'mar-lx1b' => 'huawei=huawei mar-lx1b',
             'lya-l09' => 'huawei=huawei lya-l09',
@@ -343,6 +345,7 @@ final class SecChUaModel implements HeaderInterface
             'ine-lx1' => 'huawei=huawei ine-lx1',
             'ine-lx1r' => 'huawei=huawei ine-lx1r',
             'fne-nx9' => 'huawei=huawei fne-nx9',
+            'pgt-n19' => 'huawei=huawei pgt-n19',
             // Lenovo
             'lenovo tb-x304f' => 'lenovo=lenovo tb-x304f',
             'lenovo yt-j706f' => 'lenovo=lenovo yt-j706f',
@@ -362,6 +365,7 @@ final class SecChUaModel implements HeaderInterface
             'nokia 2.3' => 'nokia=nokia 2.3',
             'nokia 5.4' => 'nokia=nokia 5.4',
             'nokia 8.3 5g' => 'nokia=nokia 8.3 5g',
+            'nokia g11' => 'nokia=nokia g11',
             // Microsoft
             'surface duo' => 'microsoft=microsoft surface duo',
             // realme
@@ -378,6 +382,8 @@ final class SecChUaModel implements HeaderInterface
             'rmx2155' => 'realme=realme rmx2155',
             'rmx3081' => 'realme=realme rmx3081',
             'rmx2193' => 'realme=realme rmx2193',
+            'rmx3311' => 'realme=realme rmx3311',
+            'rmx3521' => 'realme=realme rmx3521',
             // Motorola
             'moto g200 5g' => 'motorola=motorola moto g200 5g',
             'motorola razr 5g' => 'motorola=motorola razr 5g',
@@ -432,6 +438,12 @@ final class SecChUaModel implements HeaderInterface
             'e940-2795-00' => 'gigaset=gigaset e940-2795-00',
             // wiko
             'w-v750bn-eea' => 'wiko=wiko w-v750bn-eea',
+            // razer
+            'phone 2' => 'razer=razer phone 2',
+            // Alcatel
+            'phone 2' => 'alcatel=alcatel 5024d_eea',
+            // HTC
+            'phone 2' => 'htc=htc desire 19 plus',
             default => null,
         };
     }

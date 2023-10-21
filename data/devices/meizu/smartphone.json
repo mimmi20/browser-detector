@@ -814,5 +814,37 @@
     },
     "type": "smartphone",
     "platform": "android"
+  },
+  "meizu 16th": {
+    "deviceName": "16th",
+    "marketingName": "16th",
+    "manufacturer": "meizu",
+    "brand": "meizu",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2160,
+      "height": 1080,
+      "touch": true,
+      "size": 6
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "meizu 16th plus": {
+    "deviceName": "16th Plus",
+    "marketingName": "16th Plus",
+    "manufacturer": "meizu",
+    "brand": "meizu",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2160,
+      "height": 1080,
+      "touch": true,
+      "size": 6.5
+    },
+    "type": "smartphone",
+    "platform": "android"
   }
 }

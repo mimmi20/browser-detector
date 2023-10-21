@@ -3518,5 +3518,37 @@
     },
     "type": "smartphone",
     "platform": "android"
+  },
+  "xiaomi poco x3 pro": {
+    "deviceName": "X3 Pro",
+    "marketingName": "X3 Pro",
+    "manufacturer": "xiaomi",
+    "brand": "poco",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.67
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "xiaomi m2012k11ac": {
+    "deviceName": "M2012K11AC",
+    "marketingName": "Redmi K40",
+    "manufacturer": "xiaomi",
+    "brand": "xiaomi",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.67
+    },
+    "type": "smartphone",
+    "platform": "android"
   }
 }
