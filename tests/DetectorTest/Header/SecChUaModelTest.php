@@ -483,7 +483,7 @@ final class SecChUaModelTest extends TestCase
             ['"21051182C"', 'xiaomi=xiaomi 21051182c'],
             ['"22111317PG"', 'xiaomi=xiaomi 22111317pg'],
             ['"ASUS_I006D"', 'asus=asus i006d'],
-            ['"CPH2415"', 'oppo=oppo cph2415'],
+            ['"CPH2415"', 'oneplus=oneplus cph2415'],
             ['"EB2103"', 'oneplus=oneplus eb2103'],
             ['"M2103K19PG"', 'xiaomi=xiaomi m2103k19pg'],
             ['"Mi 10 Pro"', 'xiaomi=xiaomi mi 10 pro 5g'],

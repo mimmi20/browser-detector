@@ -97,6 +97,7 @@ final class SecChUaModel implements HeaderInterface
             'cph2399' => 'oneplus=oneplus cph2399',
             'dn2103' => 'oneplus=oneplus dn2103',
             'eb2103' => 'oneplus=oneplus eb2103',
+            'cph2415' => 'oneplus=oneplus cph2415',
             // Oppo
             'cph2065' => 'oppo=oppo cph2065',
             'cph2211' => 'oppo=oppo cph2211',
@@ -123,7 +124,6 @@ final class SecChUaModel implements HeaderInterface
             'cph2371' => 'oppo=oppo cph2371',
             'cph1907' => 'oppo=oppo cph1907',
             'cph2185' => 'oppo=oppo cph2185',
-            'cph2415' => 'oppo=oppo cph2415',
             // Xiaomi
             'redmi note 9 pro' => 'xiaomi=xiaomi redmi note 9 pro',
             'redmi note 8 pro' => 'xiaomi=xiaomi redmi note 8 pro',
