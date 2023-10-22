@@ -127,6 +127,48 @@
   },
   {
     "headers": {
+      "user-agent": "Kodi/14.2-RC1 (Linux; Android 4.4.2; SM-T530 Build/KOT49H) Android/4.4.2 Sys_CPU/armv7l App_Bitness/32 Version/14.2-RC1-Git:2015-03-11-e7ba06f-dirty"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-T530",
+      "marketingName": "Galaxy Tab 4 10.1 Wi-Fi",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 10.1
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.2",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Kodi Media Center",
+      "version": "14.2.0-RC+1",
+      "manufacturer": "xbmc-foundation",
+      "type": "multimedia-player",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Kodi/15.0-ALPHA2 (Linux; Android 4.4.2; SM-T310 Build/KOT49H) Android/4.4.2 Sys_CPU/armv7l App_Bitness/32 Version/15.0-ALPHA2-Git:2015-03-02-613593f-dirty"
     },
     "device": {
@@ -241,6 +283,48 @@
     "client": {
       "name": "Kodi Media Center",
       "version": "14.0.0",
+      "manufacturer": "xbmc-foundation",
+      "type": "multimedia-player",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Kodi/15.0-ALPHA1 (Linux; Android 4.4.2; SM-T530NU Build/KOT49H) Android/4.4.2 Sys_CPU/armv7l App_Bitness/32 Version/15.0-ALPHA1-Git:2015-01-14-483ceb9-dirty"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-T530NU",
+      "marketingName": "Galaxy Tab 4 10.1 Wi-Fi",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 10.1
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.2",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Kodi Media Center",
+      "version": "15.0.0-alpha+1",
       "manufacturer": "xbmc-foundation",
       "type": "multimedia-player",
       "isbot": false

@@ -499,6 +499,13 @@ final class SecChUaModelTest extends TestCase
             ['"21121210G"', 'xiaomi=xiaomi 21121210g'],
             ['"22101320G"', 'xiaomi=xiaomi 22101320g'],
             ['"220233L2G"', 'xiaomi=xiaomi 220233l2g'],
+            ['"IN2015"', 'oneplus=oneplus in2015'],
+            ['"CPH2409"', 'oneplus=oneplus cph2409'],
+            ['"RMX3269"', 'realme=realme rmx3269'],
+            ['"RMX3363"', 'realme=realme rmx3363'],
+            ['"RMX3511"', 'realme=realme rmx3511'],
+            ['"RMX3301"', 'realme=realme rmx3301'],
+            ['"CPH2343"', 'oppo=oppo cph2343'],
             ['""', null],
         ];
     }

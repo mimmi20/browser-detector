@@ -1732,8 +1732,8 @@
     "marketingName": "Y30",
     "manufacturer": "bbk",
     "brand": "vivo",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 1560,
       "height": 720,
@@ -2603,6 +2603,22 @@
       "height": 1080,
       "touch": true,
       "size": 6.53
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "vivo 1939": {
+    "deviceName": "1939",
+    "marketingName": "Y30",
+    "manufacturer": "bbk",
+    "brand": "vivo",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1560,
+      "height": 720,
+      "touch": true,
+      "size": 6.47
     },
     "type": "smartphone",
     "platform": "android"

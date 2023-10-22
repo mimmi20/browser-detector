@@ -98,6 +98,8 @@ final class SecChUaModel implements HeaderInterface
             'dn2103' => 'oneplus=oneplus dn2103',
             'eb2103' => 'oneplus=oneplus eb2103',
             'cph2415' => 'oneplus=oneplus cph2415',
+            'in2015' => 'oneplus=oneplus in2015',
+            'cph2409' => 'oneplus=oneplus cph2409',
             // Oppo
             'cph2065' => 'oppo=oppo cph2065',
             'cph2211' => 'oppo=oppo cph2211',
@@ -124,6 +126,7 @@ final class SecChUaModel implements HeaderInterface
             'cph2371' => 'oppo=oppo cph2371',
             'cph1907' => 'oppo=oppo cph1907',
             'cph2185' => 'oppo=oppo cph2185',
+            'cph2343' => 'oppo=oppo cph2343',
             // Xiaomi
             'redmi note 9 pro' => 'xiaomi=xiaomi redmi note 9 pro',
             'redmi note 8 pro' => 'xiaomi=xiaomi redmi note 8 pro',
@@ -387,6 +390,10 @@ final class SecChUaModel implements HeaderInterface
             'rmx2193' => 'realme=realme rmx2193',
             'rmx3311' => 'realme=realme rmx3311',
             'rmx3521' => 'realme=realme rmx3521',
+            'rmx3269' => 'realme=realme rmx3269',
+            'rmx3363' => 'realme=realme rmx3363',
+            'rmx3511' => 'realme=realme rmx3511',
+            'rmx3301' => 'realme=realme rmx3301',
             // Motorola
             'moto g200 5g' => 'motorola=motorola moto g200 5g',
             'motorola razr 5g' => 'motorola=motorola razr 5g',
@@ -444,9 +451,9 @@ final class SecChUaModel implements HeaderInterface
             // razer
             'phone 2' => 'razer=razer phone 2',
             // Alcatel
-            'phone 2' => 'alcatel=alcatel 5024d_eea',
+            '5024d_eea' => 'alcatel=alcatel 5024d_eea',
             // HTC
-            'phone 2' => 'htc=htc desire 19 plus',
+            'htc desire 19+' => 'htc=htc desire 19 plus',
             default => null,
         };
     }

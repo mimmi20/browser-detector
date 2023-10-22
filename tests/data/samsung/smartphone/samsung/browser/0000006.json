@@ -594,16 +594,16 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-E7000",
-      "marketingName": "Galaxy E7 Duos",
+      "marketingName": "Galaxy E7 4G",
       "manufacturer": "samsung",
       "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 1280,
         "height": 720,
         "touch": true,
-        "size": null
+        "size": 4.4
       },
       "type": "smartphone",
       "ismobile": true,
