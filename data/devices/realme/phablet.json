@@ -68,8 +68,24 @@
     "marketingName": "6",
     "manufacturer": "bbk",
     "brand": "realme",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.5
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "realme rmx2003": {
+    "deviceName": "RMX2003",
+    "marketingName": "6",
+    "manufacturer": "bbk",
+    "brand": "realme",
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 2400,
       "height": 1080,
@@ -81,16 +97,16 @@
   },
   "realme rmx2021": {
     "deviceName": "RMX2021",
-    "marketingName": "6 Pro",
+    "marketingName": "C3",
     "manufacturer": "bbk",
     "brand": "realme",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
-      "width": 2400,
-      "height": 1080,
+      "width": 1600,
+      "height": 720,
       "touch": true,
-      "size": 6.6
+      "size": 6.5
     },
     "type": "phablet",
     "platform": "android"
@@ -196,8 +212,8 @@
     "marketingName": "C3",
     "manufacturer": "bbk",
     "brand": "realme",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 1560,
       "height": 720,
@@ -212,8 +228,24 @@
     "marketingName": "C3",
     "manufacturer": "bbk",
     "brand": "realme",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1560,
+      "height": 720,
+      "touch": true,
+      "size": 6.5
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "realme rmx2022": {
+    "deviceName": "RMX2022",
+    "marketingName": "C3",
+    "manufacturer": "bbk",
+    "brand": "realme",
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 1560,
       "height": 720,
@@ -324,24 +356,24 @@
     "marketingName": "X3",
     "manufacturer": "bbk",
     "brand": "realme",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 2400,
       "height": 1080,
       "touch": true,
-      "size": 6.57
+      "size": 6.6
     },
     "type": "phablet",
     "platform": "android"
   },
   "realme rmx2085": {
     "deviceName": "RMX2085",
-    "marketingName": "X3 SuperZoom Dual SIM",
+    "marketingName": "X3",
     "manufacturer": "bbk",
     "brand": "realme",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 2400,
       "height": 1080,

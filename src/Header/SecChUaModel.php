@@ -127,6 +127,8 @@ final class SecChUaModel implements HeaderInterface
             'cph1907' => 'oppo=oppo cph1907',
             'cph2185' => 'oppo=oppo cph2185',
             'cph2343' => 'oppo=oppo cph2343',
+            'cph2273' => 'oppo=oppo cph2273',
+            'cph2127' => 'oppo=oppo cph2127',
             // Xiaomi
             'redmi note 9 pro' => 'xiaomi=xiaomi redmi note 9 pro',
             'redmi note 8 pro' => 'xiaomi=xiaomi redmi note 8 pro',
@@ -394,6 +396,7 @@ final class SecChUaModel implements HeaderInterface
             'rmx3363' => 'realme=realme rmx3363',
             'rmx3511' => 'realme=realme rmx3511',
             'rmx3301' => 'realme=realme rmx3301',
+            'rmx3242' => 'realme=realme rmx3242',
             // Motorola
             'moto g200 5g' => 'motorola=motorola moto g200 5g',
             'motorola razr 5g' => 'motorola=motorola razr 5g',
@@ -423,6 +426,8 @@ final class SecChUaModel implements HeaderInterface
             'h8266' => 'sony=sony h8266',
             // Vivo
             'v2109' => 'vivo=vivo v2109',
+            'vivo 1716' => 'vivo=vivo 1716',
+            'vivo 1920' => 'vivo=vivo 1920',
             // Fairphone
             'fp4' => 'fairphone=fairphone fp4',
             'fp3' => 'fairphone=fairphone fp3',
