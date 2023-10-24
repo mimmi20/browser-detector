@@ -463,6 +463,48 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; RMX3042) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.85 Mobile Safari/537.36 OPR/66.2.3445.62346"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "RMX3042",
+      "marketingName": "V13 5G",
+      "manufacturer": "bbk",
+      "brand": "realme",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "version": "66.2.3445.62346",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "94.0.4606.85",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 11; HD1913) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.166 Mobile Safari/537.36 OPR/65.2.3381.61420"
     },
     "device": {
@@ -645,7 +687,7 @@
         "width": 2400,
         "height": 1080,
         "touch": true,
-        "size": 6.6
+        "size": 6.55
       },
       "type": "smartphone",
       "ismobile": true,
@@ -1744,7 +1786,7 @@
         "width": 2400,
         "height": 1080,
         "touch": true,
-        "size": 6.6
+        "size": 6.55
       },
       "type": "smartphone",
       "ismobile": true,
@@ -2836,7 +2878,7 @@
         "width": 2400,
         "height": 1080,
         "touch": true,
-        "size": 6.6
+        "size": 6.55
       },
       "type": "smartphone",
       "ismobile": true,
@@ -3256,7 +3298,7 @@
         "width": 2400,
         "height": 1080,
         "touch": true,
-        "size": 6.6
+        "size": 6.55
       },
       "type": "smartphone",
       "ismobile": true,
@@ -4220,48 +4262,6 @@
     "engine": {
       "name": "Blink",
       "version": "115.0.5790.166",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 13; V2109) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.196 Mobile Safari/537.36 OPR/76.2.4027.73374"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "V2109",
-      "marketingName": "Y33s",
-      "manufacturer": "bbk",
-      "brand": "vivo",
-      "dualOrientation": true,
-      "simCount": 2,
-      "display": {
-        "width": 2408,
-        "height": 1080,
-        "touch": true,
-        "size": 6.58
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "13.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Opera Mobile",
-      "version": "76.2.4027.73374",
-      "manufacturer": "opera",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "114.0.5735.196",
       "manufacturer": "google"
     }
   }

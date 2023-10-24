@@ -397,6 +397,8 @@ final class SecChUaModel implements HeaderInterface
             'rmx3511' => 'realme=realme rmx3511',
             'rmx3301' => 'realme=realme rmx3301',
             'rmx3242' => 'realme=realme rmx3242',
+            'rmx3563' => 'realme=realme rmx3563',
+            'rmx3623' => 'realme=realme rmx3623',
             // Motorola
             'moto g200 5g' => 'motorola=motorola moto g200 5g',
             'motorola razr 5g' => 'motorola=motorola razr 5g',

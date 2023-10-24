@@ -511,6 +511,8 @@ final class SecChUaModelTest extends TestCase
             ['"CPH2273"', 'oppo=oppo cph2273'],
             ['"CPH2127"', 'oppo=oppo cph2127'],
             ['"vivo 1920"', 'vivo=vivo 1920'],
+            ['"RMX3563"', 'realme=realme rmx3563'],
+            ['"RMX3623"', 'realme=realme rmx3623'],
             ['""', null],
         ];
     }

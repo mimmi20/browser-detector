@@ -177,13 +177,13 @@
       "marketingName": "V7+",
       "manufacturer": "bbk",
       "brand": "vivo",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 1440,
         "height": 720,
         "touch": true,
-        "size": null
+        "size": 5.99
       },
       "type": "smartphone",
       "ismobile": true,
@@ -2151,13 +2151,13 @@
       "marketingName": "V7+",
       "manufacturer": "bbk",
       "brand": "vivo",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 1440,
         "height": 720,
         "touch": true,
-        "size": null
+        "size": 5.99
       },
       "type": "smartphone",
       "ismobile": true,
@@ -2441,6 +2441,48 @@
     },
     "device": {
       "architecture": null,
+      "deviceName": "V2001A",
+      "marketingName": "X50 5G",
+      "manufacturer": "bbk",
+      "brand": "vivo",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2376,
+        "height": 1080,
+        "touch": true,
+        "size": 6.56
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "VivoBrowser",
+      "version": "8.0.10.1",
+      "manufacturer": "vivo",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "62.0.3202.84",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; V2002A; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36 VivoBrowser/8.0.10.0"
+    },
+    "device": {
+      "architecture": null,
       "deviceName": "V2",
       "marketingName": "V2",
       "manufacturer": "bbk",
@@ -2466,7 +2508,7 @@
     },
     "client": {
       "name": "VivoBrowser",
-      "version": "8.0.10.1",
+      "version": "8.0.10.0",
       "manufacturer": "vivo",
       "type": "browser",
       "isbot": false
@@ -2949,13 +2991,13 @@
       "marketingName": "V7+",
       "manufacturer": "bbk",
       "brand": "vivo",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 1440,
         "height": 720,
         "touch": true,
-        "size": null
+        "size": 5.99
       },
       "type": "smartphone",
       "ismobile": true,
@@ -4147,48 +4189,6 @@
     "client": {
       "name": "VivoBrowser",
       "version": "9.7.14.0",
-      "manufacturer": "vivo",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "62.0.3202.84",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; vivo X9i Build/OPM1.171019.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36 VivoBrowser/9.3.18.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "X9i",
-      "marketingName": "X9i",
-      "manufacturer": "bbk",
-      "brand": "vivo",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5.5
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "8.1.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "VivoBrowser",
-      "version": "9.3.18.0",
       "manufacturer": "vivo",
       "type": "browser",
       "isbot": false

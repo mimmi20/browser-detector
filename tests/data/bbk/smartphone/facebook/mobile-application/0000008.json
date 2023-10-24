@@ -183,7 +183,7 @@
         "width": 2400,
         "height": 1080,
         "touch": true,
-        "size": 6.6
+        "size": 6.55
       },
       "type": "smartphone",
       "ismobile": true,
@@ -687,7 +687,7 @@
         "width": 2400,
         "height": 1080,
         "touch": true,
-        "size": 6.6
+        "size": 6.55
       },
       "type": "smartphone",
       "ismobile": true,
@@ -810,10 +810,10 @@
       "dualOrientation": true,
       "simCount": 2,
       "display": {
-        "width": 3120,
-        "height": 1440,
+        "width": 2400,
+        "height": 1080,
         "touch": true,
-        "size": 6.67
+        "size": 6.55
       },
       "type": "smartphone",
       "ismobile": true,
@@ -1149,7 +1149,7 @@
         "width": 2400,
         "height": 1080,
         "touch": true,
-        "size": 6.6
+        "size": 6.55
       },
       "type": "smartphone",
       "ismobile": true,
@@ -3953,6 +3953,48 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; CPH2341 Build/SKQ1.211209.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/104.0.5112.97 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/381.0.0.29.105;]"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "CPH2341",
+      "marketingName": "F21 Pro 5G",
+      "manufacturer": "bbk",
+      "brand": "oppo",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.43
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Facebook App",
+      "version": "381.0.0.29.105",
+      "manufacturer": "facebook",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "104.0.5112.97",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 11; GM1911 Build/RKQ1.201022.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/104.0.5112.97 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/383.1.0.25.106;]"
     },
     "device": {
@@ -4158,48 +4200,6 @@
     "engine": {
       "name": "Blink",
       "version": "107.0.5304.141",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 11; BE2029 Build/RKQ1.201217.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/108.0.5359.128 Mobile Safari/537.36 [FB_IAB/Orca-Android;FBAV/390.2.0.29.103;]"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "BE2029",
-      "marketingName": "Nord N10 5G",
-      "manufacturer": "bbk",
-      "brand": "oneplus",
-      "dualOrientation": true,
-      "simCount": 2,
-      "display": {
-        "width": 2400,
-        "height": 1080,
-        "touch": true,
-        "size": 6.49
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "11.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Facebook Messenger App",
-      "version": "390.2.0.29.103",
-      "manufacturer": "facebook",
-      "type": "mobile-application",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "108.0.5359.128",
       "manufacturer": "google"
     }
   }

@@ -761,12 +761,12 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "A5010",
+      "deviceName": "5T",
       "marketingName": "5T",
       "manufacturer": "bbk",
       "brand": "oneplus",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 2160,
         "height": 1080,
@@ -1059,13 +1059,13 @@
       "marketingName": "V7+",
       "manufacturer": "bbk",
       "brand": "vivo",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 1440,
         "height": 720,
         "touch": true,
-        "size": null
+        "size": 5.99
       },
       "type": "smartphone",
       "ismobile": true,
