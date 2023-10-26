@@ -60,6 +60,8 @@ final class SecChUa implements HeaderInterface
             'yandex' => 'yabrowser',
             'microsoft edge' => 'edge mobile',
             'google chrome' => 'chrome',
+            'avastsecurebrowser' => 'avast secure browser',
+            'wavebrowser' => 'wave-browser',
             'opera', 'atom', 'opera gx', 'avast secure browser', 'ccleaner browser' => $code,
             default => null,
         };
