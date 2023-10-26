@@ -1807,18 +1807,8 @@
   },
   {
     "headers": {
-      "device-memory": "2",
-      "dpr": "1.3312500715255737",
-      "viewport-width": "980",
-      "rtt": "50",
-      "downlink": "9.05",
-      "ect": "4g",
       "sec-ch-ua": "\"Chromium\";v=\"92\", \" Not A;Brand\";v=\"99\", \"Google Chrome\";v=\"92\"",
       "sec-ch-ua-mobile": "?0",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua-platform-version": "\"8.1.0\"",
-      "sec-ch-ua-model": "\"Lenovo TB-8504X\"",
       "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; Lenovo TB-8504X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36",
       "sec-fetch-site": "cross-site",
       "sec-fetch-mode": "navigate",
@@ -1840,7 +1830,7 @@
         "size": 8
       },
       "type": "fone-pad",
-      "ismobile": true,
+      "ismobile": false,
       "istv": false,
       "bits": null
     },
@@ -1852,7 +1842,7 @@
     },
     "client": {
       "name": "Chrome",
-      "version": "92.0.4515.159",
+      "version": "92.0.0",
       "manufacturer": "google",
       "type": "browser",
       "isbot": false
@@ -2412,20 +2402,20 @@
   {
     "headers": {
       "device-memory": "2",
-      "dpr": "1.5",
+      "dpr": "1",
       "viewport-width": "980",
       "rtt": "50",
-      "downlink": "9.75",
+      "downlink": "10",
       "ect": "4g",
       "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"102\", \"Google Chrome\";v=\"102\"",
       "sec-ch-ua-mobile": "?0",
       "sec-ch-ua-arch": "\"\"",
       "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua-platform-version": "\"6.0.0\"",
-      "sec-ch-ua-model": "\"Lenovo TB3-X70L\"",
+      "sec-ch-ua-platform-version": "\"10.0.0\"",
+      "sec-ch-ua-model": "\"Lenovo TB-X306XA\"",
       "sec-ch-ua-bitness": "\"\"",
       "sec-ch-ua-full-version-list": "\" Not A;Brand\";v=\"99.0.0.0\", \"Chromium\";v=\"102.0.5005.78\", \"Google Chrome\";v=\"102.0.5005.78\"",
-      "user-agent": "Mozilla/5.0 (Linux; Android 6.0; Lenovo TB3-X70L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; Lenovo TB-X306XA) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36",
       "sec-fetch-site": "same-origin",
       "sec-fetch-mode": "navigate",
       "sec-fetch-user": "?1",
@@ -2433,32 +2423,32 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "TB3-X70L",
-      "marketingName": "Tab3 10 Business LTE",
+      "deviceName": "TB-X306XA",
+      "marketingName": "Smart Tab M10 HD (2nd Gen, LTE)",
       "manufacturer": "lenovo",
       "brand": "lenovo",
       "dualOrientation": true,
-      "simCount": 1,
+      "simCount": 0,
       "display": {
-        "width": 1920,
-        "height": 1200,
+        "width": 1280,
+        "height": 800,
         "touch": true,
         "size": 10.1
       },
       "type": "fone-pad",
-      "ismobile": true,
+      "ismobile": false,
       "istv": false,
       "bits": null
     },
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "6.0.0",
+      "version": "10.0.0",
       "manufacturer": "google"
     },
     "client": {
       "name": "Chrome",
-      "version": "102.0.0.0",
+      "version": "102.0.5005.78",
       "manufacturer": "google",
       "type": "browser",
       "isbot": false
@@ -2471,25 +2461,7 @@
   },
   {
     "headers": {
-      "device-memory": "2",
-      "dpr": "1.75",
-      "viewport-width": "980",
-      "rtt": "100",
-      "downlink": "3.2",
-      "ect": "4g",
-      "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"101\", \"Google Chrome\";v=\"101\"",
-      "sec-ch-ua-mobile": "?1",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua-platform-version": "\"10.0.0\"",
-      "sec-ch-ua-model": "\"Lenovo TB-8505XS\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-full-version-list": "\" Not A;Brand\";v=\"99.0.0.0\", \"Chromium\";v=\"101.0.4951.61\", \"Google Chrome\";v=\"101.0.4951.61\"",
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; Lenovo TB-8505XS) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.61 Mobile Safari/537.36",
-      "sec-fetch-site": "same-origin",
-      "sec-fetch-mode": "navigate",
-      "sec-fetch-user": "?1",
-      "sec-fetch-dest": "document"
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; Lenovo TB-8505XS) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.61 Mobile Safari/537.36"
     },
     "device": {
       "architecture": null,
@@ -2531,37 +2503,19 @@
   },
   {
     "headers": {
-      "device-memory": "2",
-      "dpr": "1",
-      "viewport-width": "980",
-      "rtt": "50",
-      "downlink": "10",
-      "ect": "4g",
-      "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"102\", \"Google Chrome\";v=\"102\"",
-      "sec-ch-ua-mobile": "?0",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua-platform-version": "\"10.0.0\"",
-      "sec-ch-ua-model": "\"Lenovo TB-X306XA\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-full-version-list": "\" Not A;Brand\";v=\"99.0.0.0\", \"Chromium\";v=\"102.0.5005.78\", \"Google Chrome\";v=\"102.0.5005.78\"",
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; Lenovo TB-X306XA) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36",
-      "sec-fetch-site": "same-origin",
-      "sec-fetch-mode": "navigate",
-      "sec-fetch-user": "?1",
-      "sec-fetch-dest": "document"
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0; Lenovo TB3-X70L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
     },
     "device": {
       "architecture": null,
-      "deviceName": "TB-X306XA",
-      "marketingName": "Smart Tab M10 HD (2nd Gen, LTE)",
+      "deviceName": "TB3-X70L",
+      "marketingName": "Tab3 10 Business LTE",
       "manufacturer": "lenovo",
       "brand": "lenovo",
       "dualOrientation": true,
-      "simCount": 0,
+      "simCount": 1,
       "display": {
-        "width": 1280,
-        "height": 800,
+        "width": 1920,
+        "height": 1200,
         "touch": true,
         "size": 10.1
       },
@@ -2573,7 +2527,7 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "10.0.0",
+      "version": "6.0.0",
       "manufacturer": "google"
     },
     "client": {
@@ -2586,66 +2540,6 @@
     "engine": {
       "name": "Blink",
       "version": "102.0.0.0",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "device-memory": "2",
-      "dpr": "1",
-      "viewport-width": "980",
-      "rtt": "50",
-      "downlink": "6.75",
-      "ect": "4g",
-      "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"101\", \"Google Chrome\";v=\"101\"",
-      "sec-ch-ua-mobile": "?0",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua-platform-version": "\"8.1.0\"",
-      "sec-ch-ua-model": "\"Lenovo TB-X304L\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-full-version-list": "\" Not A;Brand\";v=\"99.0.0.0\", \"Chromium\";v=\"101.0.4951.61\", \"Google Chrome\";v=\"101.0.4951.61\"",
-      "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; Lenovo TB-X304L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.61 Safari/537.36",
-      "sec-fetch-site": "same-origin",
-      "sec-fetch-mode": "navigate",
-      "sec-fetch-user": "?1",
-      "sec-fetch-dest": "document"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "TB-X304L",
-      "marketingName": "Tab 4 10 HD",
-      "manufacturer": "lenovo",
-      "brand": "lenovo",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1280,
-        "height": 800,
-        "touch": true,
-        "size": 10.1
-      },
-      "type": "fone-pad",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "8.1.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Chrome",
-      "version": "101.0.4951.61",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "101.0.4951.61",
       "manufacturer": "google"
     }
   },
@@ -2760,6 +2654,48 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "6.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "101.0.4951.61",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "101.0.4951.61",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; Lenovo TB-X304L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.61 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "TB-X304L",
+      "marketingName": "Tab 4 10 HD",
+      "manufacturer": "lenovo",
+      "brand": "lenovo",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 10.1
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.1.0",
       "manufacturer": "google"
     },
     "client": {

@@ -3575,66 +3575,7 @@
     },
     "client": {
       "name": "Opera Mobile",
-      "version": "69.3.3606.65458",
-      "manufacturer": "opera",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "100.0.4896.127",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "device-memory": "4",
-      "dpr": "2",
-      "viewport-width": "980",
-      "rtt": "50",
-      "downlink": "10",
-      "ect": "4g",
-      "sec-ch-ua": "\"Opera\";v=\"86\", \";Not A Brand\";v=\"99\", \"Chromium\";v=\"100\", \"OperaMobile\";v=\"69\"",
-      "sec-ch-ua-mobile": "?1",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua-platform-version": "\"9\"",
-      "sec-ch-ua-model": "\"SM-T820\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "user-agent": "Mozilla/5.0 (Linux; Android 9; SM-T820) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36 OPR/69.2.3606.65175",
-      "sec-fetch-site": "same-origin",
-      "sec-fetch-mode": "navigate",
-      "sec-fetch-user": "?1",
-      "sec-fetch-dest": "document"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SM-T820",
-      "marketingName": "Galaxy Tab S3 (9.7, Wi-Fi)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": true,
-      "simCount": 0,
-      "display": {
-        "width": 2048,
-        "height": 1536,
-        "touch": true,
-        "size": 9.7
-      },
-      "type": "tablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "9.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Opera Mobile",
-      "version": "69.2.3606.65175",
+      "version": "69.0.0",
       "manufacturer": "opera",
       "type": "browser",
       "isbot": false
@@ -3693,7 +3634,7 @@
     },
     "client": {
       "name": "Opera Mobile",
-      "version": "68.3.3557.64528",
+      "version": "68.0.0",
       "manufacturer": "opera",
       "type": "browser",
       "isbot": false
@@ -3701,6 +3642,48 @@
     "engine": {
       "name": "Blink",
       "version": "99.0.4844.88",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; SM-T820) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36 OPR/69.2.3606.65175"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-T820",
+      "marketingName": "Galaxy Tab S3 (9.7, Wi-Fi)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 2048,
+        "height": 1536,
+        "touch": true,
+        "size": 9.7
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "version": "69.2.3606.65175",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "100.0.4896.127",
       "manufacturer": "google"
     }
   },

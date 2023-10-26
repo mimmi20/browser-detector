@@ -3955,66 +3955,7 @@
     },
     "client": {
       "name": "Opera Mobile",
-      "version": "69.3.3606.65458",
-      "manufacturer": "opera",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "100.0.4896.127",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "device-memory": "4",
-      "dpr": "2.4750001430511475",
-      "viewport-width": "980",
-      "rtt": "50",
-      "downlink": "10",
-      "ect": "4g",
-      "sec-ch-ua": "\"Opera\";v=\"86\", \";Not A Brand\";v=\"99\", \"Chromium\";v=\"100\", \"OperaMobile\";v=\"69\"",
-      "sec-ch-ua-mobile": "?1",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua-platform-version": "\"11\"",
-      "sec-ch-ua-model": "\"Mi MIX 2S\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "user-agent": "Mozilla/5.0 (Linux; Android 11; Mi MIX 2S) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Mobile Safari/537.36 OPR/69.3.3606.65458",
-      "sec-fetch-site": "same-origin",
-      "sec-fetch-mode": "navigate",
-      "sec-fetch-user": "?1",
-      "sec-fetch-dest": "document"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Mi Mix 2S",
-      "marketingName": "Mi Mix 2S",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 2160,
-        "height": 1080,
-        "touch": true,
-        "size": 5.99
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "11.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Opera Mobile",
-      "version": "69.3.3606.65458",
+      "version": "69.0.0",
       "manufacturer": "opera",
       "type": "browser",
       "isbot": false
@@ -4118,7 +4059,7 @@
     },
     "client": {
       "name": "Opera Mobile",
-      "version": "69.3.3606.65458",
+      "version": "69.0.0",
       "manufacturer": "opera",
       "type": "browser",
       "isbot": false
@@ -4269,7 +4210,66 @@
     },
     "client": {
       "name": "Opera Mobile",
-      "version": "69.2.3606.65175",
+      "version": "69.0.0",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "100.0.4896.127",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "8",
+      "dpr": "2.75",
+      "viewport-width": "980",
+      "rtt": "100",
+      "downlink": "7.05",
+      "ect": "4g",
+      "sec-ch-ua": "\"Opera\";v=\"86\", \";Not A Brand\";v=\"99\", \"Chromium\";v=\"100\", \"OperaMobile\";v=\"69\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"10\"",
+      "sec-ch-ua-model": "\"Mi 10 Pro\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; Mi 10 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Mobile Safari/537.36 OPR/69.2.3606.65175",
+      "sec-fetch-site": "same-origin",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-user": "?1",
+      "sec-fetch-dest": "document"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Mi 10 Pro 5G",
+      "marketingName": "Mi 10 Pro 5G",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.67
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "version": "69.0.0",
       "manufacturer": "opera",
       "type": "browser",
       "isbot": false

@@ -65,6 +65,7 @@ final class SecChUaModel implements HeaderInterface
             'asus_i003d' => 'asus=asus i003d',
             'asus_i003dd' => 'asus=asus i003dd',
             'asus_i006d' => 'asus=asus i006d',
+            'zc554kl' => 'asus=asus x00id',
             // Google
             'nexus 7' => 'google=google nexus 7',
             'pixel 3' => 'google=google pixel 3',

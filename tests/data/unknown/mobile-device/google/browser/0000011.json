@@ -4135,7 +4135,7 @@
         "size": null
       },
       "type": "mobile-device",
-      "ismobile": true,
+      "ismobile": false,
       "istv": false,
       "bits": null
     },
@@ -4146,8 +4146,8 @@
       "manufacturer": "google"
     },
     "client": {
-      "name": "Android Webkit",
-      "version": null,
+      "name": "Chrome",
+      "version": "87.0.0",
       "manufacturer": "google",
       "type": "browser",
       "isbot": false

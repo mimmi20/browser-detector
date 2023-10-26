@@ -26,7 +26,16 @@ final class SecChUa implements HeaderInterface
     /** @throws void */
     public function hasClientCode(): bool
     {
-        return true;
+        $list = $this->sort();
+
+        if ($list === null || $list === []) {
+            return false;
+        }
+
+        $key  = array_key_first($list);
+        $code = mb_strtolower($key);
+
+        return $code !== 'chromium';
     }
 
     /** @throws void */
@@ -59,7 +68,16 @@ final class SecChUa implements HeaderInterface
     /** @throws void */
     public function hasClientVersion(): bool
     {
-        return true;
+        $list = $this->sort();
+
+        if ($list === null || $list === []) {
+            return false;
+        }
+
+        $key  = array_key_first($list);
+        $code = mb_strtolower($key);
+
+        return $code !== 'chromium';
     }
 
     /** @throws void */

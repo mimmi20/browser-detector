@@ -948,7 +948,7 @@
         "size": 10.1
       },
       "type": "fone-pad",
-      "ismobile": true,
+      "ismobile": false,
       "istv": false,
       "bits": null
     },
@@ -960,7 +960,7 @@
     },
     "client": {
       "name": "Chrome",
-      "version": "101.0.4951.61",
+      "version": "101.0.0",
       "manufacturer": "google",
       "type": "browser",
       "isbot": false
@@ -1124,70 +1124,6 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "10.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Chrome",
-      "version": "107.0.0.0",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "107.0.0.0",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "device-memory": "2",
-      "downlink": "8.85",
-      "dpr": "1.33125",
-      "ect": "4g",
-      "origin": "https://www.geld.de",
-      "rtt": "50",
-      "sec-ch-device-memory": "2",
-      "sec-ch-dpr": "1.33125",
-      "sec-ch-prefers-color-scheme": "light",
-      "sec-ch-ua": "\"Google Chrome\";v=\"107\", \"Chromium\";v=\"107\", \"Not=A?Brand\";v=\"24\"",
-      "sec-ch-ua-full-version": "\"107.0.5304.105\"",
-      "sec-ch-ua-mobile": "?0",
-      "sec-ch-ua-model": "\"Tab 6\"",
-      "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua-platform-version": "\"11.0.0\"",
-      "sec-ch-viewport-height": "796",
-      "sec-ch-viewport-width": "602",
-      "sec-fetch-dest": "empty",
-      "sec-fetch-mode": "cors",
-      "sec-fetch-site": "same-origin",
-      "user-agent": "Mozilla/5.0 (Linux; Android 11; Tab 6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36",
-      "viewport-width": "602",
-      "x-requested-with": "XMLHttpRequest"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Tab 6",
-      "marketingName": "Tab 6",
-      "manufacturer": "blackview",
-      "brand": "blackview",
-      "dualOrientation": true,
-      "simCount": 2,
-      "display": {
-        "width": 1280,
-        "height": 800,
-        "touch": true,
-        "size": 8
-      },
-      "type": "fone-pad",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "11.0.0",
       "manufacturer": "google"
     },
     "client": {

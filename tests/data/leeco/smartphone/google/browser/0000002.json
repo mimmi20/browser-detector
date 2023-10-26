@@ -2521,25 +2521,14 @@
   },
   {
     "headers": {
-      "device-memory": "4",
-      "dpr": "4",
-      "viewport-width": "980",
-      "rtt": "50",
-      "downlink": "10",
-      "ect": "4g",
-      "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"99\", \"Google Chrome\";v=\"99\"",
-      "sec-ch-ua-mobile": "?1",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua-platform-version": "\"6.0.1\"",
-      "sec-ch-ua-model": "\"Le X820\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-full-version-list": "\" Not A;Brand\";v=\"99.0.0.0\", \"Chromium\";v=\"99.0.4844.58\", \"Google Chrome\";v=\"99.0.4844.58\"",
       "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; Le X820) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.58 Mobile Safari/537.36",
-      "sec-fetch-site": "same-origin",
+      "sec-fetch-site": "none",
       "sec-fetch-mode": "navigate",
       "sec-fetch-user": "?1",
-      "sec-fetch-dest": "document"
+      "sec-fetch-dest": "document",
+      "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"99\", \"Google Chrome\";v=\"99\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-platform": "\"Android\""
     },
     "device": {
       "architecture": null,
@@ -2568,7 +2557,7 @@
     },
     "client": {
       "name": "Chrome",
-      "version": "99.0.4844.58",
+      "version": "99.0.0",
       "manufacturer": "google",
       "type": "browser",
       "isbot": false

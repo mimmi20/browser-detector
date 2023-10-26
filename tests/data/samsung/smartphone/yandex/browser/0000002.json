@@ -1597,20 +1597,9 @@
   },
   {
     "headers": {
-      "device-memory": "8",
-      "dpr": "3.5",
-      "viewport-width": "980",
-      "rtt": "50",
-      "downlink": "2.85",
-      "ect": "4g",
       "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"100\", \"Yandex\";v=\"22\"",
       "sec-ch-ua-mobile": "?1",
-      "sec-ch-ua-arch": "\"\"",
       "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua-platform-version": "\"12.0.0\"",
-      "sec-ch-ua-model": "\"SM-G988B\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-full-version-list": "\" Not A;Brand\";v=\"99.0.0.0\", \"Chromium\";v=\"100.0.4896.160\", \"Yandex\";v=\"22.5.3.85\"",
       "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 12; SM-G988B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.160 YaBrowser/22.5.3.85.00 SA/3 Mobile Safari/537.36",
       "sec-fetch-site": "cross-site",
       "sec-fetch-mode": "navigate",
@@ -1644,7 +1633,7 @@
     },
     "client": {
       "name": "Yandex Browser",
-      "version": "22.5.3.85.00",
+      "version": "22.0.0",
       "manufacturer": "yandex",
       "type": "browser",
       "isbot": false
@@ -1702,25 +1691,55 @@
   },
   {
     "headers": {
-      "device-memory": "4",
-      "dpr": "2.625",
-      "viewport-width": "980",
-      "rtt": "50",
-      "downlink": "10",
-      "ect": "4g",
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 11; SM-A715F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 YaApp_Android/22.50.1 YaSearchBrowser/22.50.1 BroPP/1.0 SA/3 Mobile Safari/537.36",
+      "sec-fetch-site": "none",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-dest": "document",
       "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"100\", \"Yandex\";v=\"22\"",
       "sec-ch-ua-mobile": "?1",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua-platform-version": "\"11.0.0\"",
-      "sec-ch-ua-model": "\"SM-A715F\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-full-version-list": "\" Not A;Brand\";v=\"99.0.0.0\", \"Chromium\";v=\"100.0.4896.127\", \"Yandex\";v=\"22.5.0.1706\"",
-      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 11; SM-A715F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 YaApp_Android/22.50.1 YaSearchBrowser/22.50.1 BroPP/1.0 SA/3 Mobile Safari/537.36",
-      "sec-fetch-site": "same-origin",
-      "sec-fetch-mode": "navigate",
-      "sec-fetch-user": "?1",
-      "sec-fetch-dest": "document"
+      "sec-ch-ua-platform": "\"Android\""
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-A715F",
+      "marketingName": "Galaxy A71 LTE",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.7
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "version": "22.0.0",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "100.0.4896.127",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 11; SM-A715F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 YaApp_Android/22.50.1 YaSearchBrowser/22.50.1 BroPP/1.0 SA/3 Mobile Safari/537.36"
     },
     "device": {
       "architecture": null,

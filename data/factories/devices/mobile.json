@@ -2,7 +2,7 @@
   "rules": {
     "/startrail|starxtrem|starshine|staraddict|starnaute|startext|startab/i": "sfr",
     "/hiphone/i": "hiphone",
-    "/asus(?![- \\/]nexus)|padfone|transformer|tf300t|slider sl101|me302(?:c|kl)|me301t|me371mg|me17(?:1|2v|3x)|eee_701|tpad_10|tx201la|p01t_1|(?:k0[01][0-9a-z]|z00d|z00yd|p(?:00[8acil]|01[mwyz]a?|02[123478])|z017d|za550kl|zb555kl|zb602kl|zc553kl|ze520kl|ze553kl|ze554kl|ze620kl|ast21|g553kl)(?: +build|[;\\/\\)])|(?:adr|android) [56].* p002|memopad|pegasus|1005pxd|g550kl|zs673ks|zs661ks|zs590ks/i": "asus",
+    "/asus(?![- \\/]nexus)|padfone|transformer|tf300t|slider sl101|me302(?:c|kl)|me301t|me371mg|me17(?:1|2v|3x)|eee_701|tpad_10|tx201la|p01t_1|(?:k0[01][0-9a-z]|z00d|z00yd|p(?:00[8acil]|01[mwyz]a?|02[123478])|z017d|za550kl|zb555kl|zb602kl|zc553kl|ze520kl|ze553kl|ze554kl|ze620kl|ast21|g553kl)(?: +build|[;\\/\\)])|(?:adr|android) [56].* p002|memopad|pegasus|1005pxd|g550kl|zs673ks|zs661ks|zs590ks|zc554kl/i": "asus",
     "/mypad (?:1000|750) ?hd/i": "yooz",
     "/(?:myphone|mypad|mytab)[ _][^;\\/]+(?: +build|[;\\/\\)])|cube_lte|mytab10ii|hammer active|axe[ _]m[ _]lte|(?:adr|android) 6\\.0.* c1001/i": "myphone",
     "/cube|(?:u[0-9]+gt|k8gt)|i1-3gd|i15-t[cf]l|t8-plus/i": "cube",

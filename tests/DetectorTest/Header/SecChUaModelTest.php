@@ -513,6 +513,7 @@ final class SecChUaModelTest extends TestCase
             ['"vivo 1920"', 'vivo=vivo 1920'],
             ['"RMX3563"', 'realme=realme rmx3563'],
             ['"RMX3623"', 'realme=realme rmx3623'],
+            ['"ZC554KL"', 'asus=asus x00id'],
             ['""', null],
         ];
     }

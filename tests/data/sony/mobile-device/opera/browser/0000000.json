@@ -211,69 +211,6 @@
   },
   {
     "headers": {
-      "device-memory": "4",
-      "downlink": "10",
-      "dpr": "2.875",
-      "ect": "4g",
-      "origin": "https://www.geld.de",
-      "rtt": "0",
-      "sec-ch-device-memory": "4",
-      "sec-ch-dpr": "2.875",
-      "sec-ch-prefers-color-scheme": "dark",
-      "sec-ch-ua": "\"OperaMobile\";v=\"70\", \"Chromium\";v=\"102\", \" Not A;Brand\";v=\"99\", \"Opera\";v=\"88\"",
-      "sec-ch-ua-full-version": "\"102.0.5005.134\"",
-      "sec-ch-ua-mobile": "?1",
-      "sec-ch-ua-model": "\"XQ-BT52\"",
-      "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua-platform-version": "\"12\"",
-      "sec-ch-viewport-width": "376",
-      "sec-fetch-dest": "empty",
-      "sec-fetch-mode": "cors",
-      "sec-fetch-site": "same-origin",
-      "user-agent": "Mozilla/5.0 (Linux; Android 12; XQ-BT52) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.134 Mobile Safari/537.36 OPR/70.3.3653.66287",
-      "viewport-width": "376",
-      "x-requested-with": "XMLHttpRequest"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Sony device",
-      "marketingName": "general Sony device",
-      "manufacturer": "sony",
-      "brand": "sony",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "12.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Opera Mobile",
-      "version": "70.3.3653.66287",
-      "manufacturer": "opera",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "102.0.5005.134",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
       "sec-fetch-dest": "document",
       "sec-fetch-mode": "navigate",
       "sec-fetch-site": "same-origin",
@@ -570,7 +507,7 @@
     },
     "client": {
       "name": "Opera Mobile",
-      "version": "71.0.3718.67035",
+      "version": "71.0.0",
       "manufacturer": "opera",
       "type": "browser",
       "isbot": false
@@ -578,69 +515,6 @@
     "engine": {
       "name": "Blink",
       "version": "104.0.5112.97",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "device-memory": "8",
-      "downlink": "9.4",
-      "dpr": "2.625",
-      "ect": "4g",
-      "origin": "https://www.geld.de",
-      "rtt": "0",
-      "sec-ch-device-memory": "8",
-      "sec-ch-dpr": "2.625",
-      "sec-ch-prefers-color-scheme": "dark",
-      "sec-ch-ua": "\"OperaMobile\";v=\"70\", \"Chromium\";v=\"102\", \" Not A;Brand\";v=\"99\", \"Opera\";v=\"88\"",
-      "sec-ch-ua-full-version": "\"102.0.5005.134\"",
-      "sec-ch-ua-mobile": "?1",
-      "sec-ch-ua-model": "\"XQ-BC52\"",
-      "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua-platform-version": "\"12\"",
-      "sec-ch-viewport-width": "418",
-      "sec-fetch-dest": "empty",
-      "sec-fetch-mode": "cors",
-      "sec-fetch-site": "same-origin",
-      "user-agent": "Mozilla/5.0 (Linux; Android 12; XQ-BC52) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.134 Mobile Safari/537.36 OPR/70.3.3653.66287",
-      "viewport-width": "418",
-      "x-requested-with": "XMLHttpRequest"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Sony device",
-      "marketingName": "general Sony device",
-      "manufacturer": "sony",
-      "brand": "sony",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "12.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Opera Mobile",
-      "version": "70.3.3653.66287",
-      "manufacturer": "opera",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "102.0.5005.134",
       "manufacturer": "google"
     }
   },
