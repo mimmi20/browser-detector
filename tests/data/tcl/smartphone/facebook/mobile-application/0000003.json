@@ -2949,8 +2949,8 @@
       "marketingName": "1s",
       "manufacturer": "tcl",
       "brand": "alcatel",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 1440,
         "height": 720,
@@ -3033,8 +3033,8 @@
       "marketingName": "1s",
       "manufacturer": "tcl",
       "brand": "alcatel",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 1440,
         "height": 720,
@@ -3075,8 +3075,8 @@
       "marketingName": "1s",
       "manufacturer": "tcl",
       "brand": "alcatel",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 1440,
         "height": 720,
@@ -3285,8 +3285,8 @@
       "marketingName": "1s",
       "manufacturer": "tcl",
       "brand": "alcatel",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 1440,
         "height": 720,
@@ -3327,8 +3327,8 @@
       "marketingName": "1s",
       "manufacturer": "tcl",
       "brand": "alcatel",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 1440,
         "height": 720,
@@ -3369,8 +3369,8 @@
       "marketingName": "1s",
       "manufacturer": "tcl",
       "brand": "alcatel",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 1440,
         "height": 720,
@@ -3537,8 +3537,8 @@
       "marketingName": "1s",
       "manufacturer": "tcl",
       "brand": "alcatel",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 1440,
         "height": 720,
@@ -3818,6 +3818,48 @@
     "engine": {
       "name": "Blink",
       "version": "96.0.4664.45",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; 4187D Build/RP1A.201005.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.166 Mobile Safari/537.36 Instagram 294.0.0.33.87 Android (30/11; 320dpi; 720x1368; TCL; 4187D; Jakarta_Lite_refresh; s9863a1h10_go_32b; ar_EG; 500160020)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "4187D",
+      "marketingName": "205",
+      "manufacturer": "tcl",
+      "brand": "tcl",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1520,
+        "height": 720,
+        "touch": true,
+        "size": 6.22
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Instagram App",
+      "version": "294.0.0.33.87",
+      "manufacturer": "facebook",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "115.0.5790.166",
       "manufacturer": "google"
     }
   }

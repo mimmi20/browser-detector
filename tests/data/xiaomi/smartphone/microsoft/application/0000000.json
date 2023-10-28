@@ -43,54 +43,12 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 11; M2101K7AG Build/RKQ1.201022.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/87.0.4280.141 Mobile Safari/537.36 BingSapphire/21.2.390430302"
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; M2004J19C Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.152 Mobile Safari/537.36 BingWeb/11.7.29166807"
     },
     "device": {
       "architecture": null,
-      "deviceName": "M2101K7AG",
-      "marketingName": "Redmi Note 10",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
-      "dualOrientation": true,
-      "simCount": 2,
-      "display": {
-        "width": 2400,
-        "height": 1080,
-        "touch": true,
-        "size": 6.43
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "11.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Bing Search",
-      "version": "21.2.390430302",
-      "manufacturer": "microsoft",
-      "type": "application",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "87.0.4280.141",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 11; Mi Note 10 Lite Build/RKQ1.200826.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/89.0.4389.105 Mobile Safari/537.36 BingSapphire/21.3.390601302"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Mi Note 10 Lite",
-      "marketingName": "Mi Note 10 Lite",
+      "deviceName": "M2004J19C",
+      "marketingName": "Redmi 9",
       "manufacturer": "xiaomi",
       "brand": "xiaomi",
       "dualOrientation": true,
@@ -99,7 +57,91 @@
         "width": 2340,
         "height": 1080,
         "touch": true,
-        "size": 6.47
+        "size": 6.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "BingWeb App",
+      "version": "11.7.29166807",
+      "manufacturer": "microsoft",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "88.0.4324.152",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; M2007J17G Build/QKQ1.200628.002; ) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.101 Mobile Safari/537.36 BingSapphire/21.6.390831302"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "M2007J17G",
+      "marketingName": "Mi 10T Lite 5G (Global)",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.7
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Bing Search",
+      "version": "21.6.390831302",
+      "manufacturer": "microsoft",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "83.0.4103.101",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; Mi 10 Build/RKQ1.200826.002; ) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.198 Mobile Safari/537.36 BingSapphire/21.7.391012302"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Mi 10",
+      "marketingName": "Mi 10",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.67
       },
       "type": "smartphone",
       "ismobile": true,
@@ -114,14 +156,14 @@
     },
     "client": {
       "name": "Bing Search",
-      "version": "21.3.390601302",
+      "version": "21.7.391012302",
       "manufacturer": "microsoft",
       "type": "application",
       "isbot": false
     },
     "engine": {
       "name": "Blink",
-      "version": "89.0.4389.105",
+      "version": "86.0.4240.198",
       "manufacturer": "google"
     }
   },
@@ -253,21 +295,21 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 11; M2101K7AG Build/RKQ1.201022.002; ) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/87.0.4280.141 Mobile Safari/537.36 BingSapphire/22.1.400120302"
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; M2006C3MG Build/QP1A.190711.020; ) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/87.0.4280.101 Mobile Safari/537.36 BingSapphire/22.1.400120301"
     },
     "device": {
       "architecture": null,
-      "deviceName": "M2101K7AG",
-      "marketingName": "Redmi Note 10",
+      "deviceName": "M2006C3MG",
+      "marketingName": "Redmi 9C (Global)",
       "manufacturer": "xiaomi",
       "brand": "xiaomi",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
-        "width": 2400,
-        "height": 1080,
+        "width": 1600,
+        "height": 720,
         "touch": true,
-        "size": 6.43
+        "size": 6.5
       },
       "type": "smartphone",
       "ismobile": true,
@@ -277,19 +319,19 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "11.0.0",
+      "version": "10.0.0",
       "manufacturer": "google"
     },
     "client": {
       "name": "Bing Search",
-      "version": "22.1.400120302",
+      "version": "22.1.400120301",
       "manufacturer": "microsoft",
       "type": "application",
       "isbot": false
     },
     "engine": {
       "name": "Blink",
-      "version": "87.0.4280.141",
+      "version": "87.0.4280.101",
       "manufacturer": "google"
     }
   },
@@ -342,17 +384,12 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 11; M2101K6G Build/RKQ1.200826.002; ) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/87.0.4280.141 Mobile Safari/537.36 BingSapphire/22.6.400511306",
-      "x-requested-with": "com.microsoft.bing",
-      "sec-fetch-site": "none",
-      "sec-fetch-mode": "navigate",
-      "sec-fetch-user": "?1",
-      "sec-fetch-dest": "document"
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; 2203129G Build/SKQ1.211006.001; ) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/95.0.4638.69 Mobile Safari/537.36  BingSapphire/23.2.400829306"
     },
     "device": {
       "architecture": null,
-      "deviceName": "M2101K6G",
-      "marketingName": "Redmi Note 10 Pro",
+      "deviceName": "2203129G",
+      "marketingName": "12 Lite 5G",
       "manufacturer": "xiaomi",
       "brand": "xiaomi",
       "dualOrientation": true,
@@ -361,7 +398,7 @@
         "width": 2400,
         "height": 1080,
         "touch": true,
-        "size": 6.67
+        "size": 6.55
       },
       "type": "smartphone",
       "ismobile": true,
@@ -371,138 +408,12 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "11.0.0",
+      "version": "12.0.0",
       "manufacturer": "google"
     },
     "client": {
       "name": "Bing Search",
-      "version": "22.6.400511306",
-      "manufacturer": "microsoft",
-      "type": "application",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "87.0.4280.141",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 11; M2103K19G Build/RP1A.200720.011; ) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/87.0.4280.141 Mobile Safari/537.36 BingSapphire/22.8.400616302"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "M2103K19G",
-      "marketingName": "Redmi Note 10 5G",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 2400,
-        "height": 1080,
-        "touch": true,
-        "size": 6.5
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "11.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Bing Search",
-      "version": "22.8.400616302",
-      "manufacturer": "microsoft",
-      "type": "application",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "87.0.4280.141",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 11; M2101K6G Build/RKQ1.200826.002; ) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/87.0.4280.141 Mobile Safari/537.36 BingSapphire/23.0.400815314"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "M2101K6G",
-      "marketingName": "Redmi Note 10 Pro",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
-      "dualOrientation": true,
-      "simCount": 2,
-      "display": {
-        "width": 2400,
-        "height": 1080,
-        "touch": true,
-        "size": 6.67
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "11.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Bing Search",
-      "version": "23.0.400815314",
-      "manufacturer": "microsoft",
-      "type": "application",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "87.0.4280.141",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 11; 2201117TY Build/RKQ1.211001.001; ) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/95.0.4638.69 Mobile Safari/537.36  BingSapphire/23.8.401227302"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "2201117TY",
-      "marketingName": "Redmi Note 11",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
-      "dualOrientation": true,
-      "simCount": 2,
-      "display": {
-        "width": 2400,
-        "height": 1080,
-        "touch": true,
-        "size": 6.43
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "11.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Bing Search",
-      "version": "23.8.401227302",
+      "version": "23.2.400829306",
       "manufacturer": "microsoft",
       "type": "application",
       "isbot": false
@@ -510,48 +421,6 @@
     "engine": {
       "name": "Blink",
       "version": "95.0.4638.69",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 11; M2103K19G Build/RP1A.200720.011; ) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/90.0.4430.210 Mobile Safari/537.36 BingSapphire/23.6.401128314"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "M2103K19G",
-      "marketingName": "Redmi Note 10 5G",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 2400,
-        "height": 1080,
-        "touch": true,
-        "size": 6.5
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "11.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Bing Search",
-      "version": "23.6.401128314",
-      "manufacturer": "microsoft",
-      "type": "application",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "90.0.4430.210",
       "manufacturer": "google"
     }
   },
@@ -641,63 +510,21 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 11; Redmi Note 8T Build/RKQ1.201004.002; ) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/95.0.4638.69 Mobile Safari/537.36 BingSapphire/24.1.410205314"
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; M2006C3LVG Build/QP1A.190711.020; ) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.162 Mobile Safari/537.36 BingSapphire/25.2.410515305"
     },
     "device": {
       "architecture": null,
-      "deviceName": "Redmi Note 8T",
-      "marketingName": "Redmi Note 8T",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 2340,
-        "height": 1080,
-        "touch": true,
-        "size": 6.3
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "11.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Bing Search",
-      "version": "24.1.410205314",
-      "manufacturer": "microsoft",
-      "type": "application",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "95.0.4638.69",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 12; 2201117TY Build/SKQ1.211103.001; ) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/109.0.0.0 Mobile Safari/537.36 BingSapphire/25.2.410515306"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "2201117TY",
-      "marketingName": "Redmi Note 11",
+      "deviceName": "M2006C3LVG",
+      "marketingName": "Redmi 9AT",
       "manufacturer": "xiaomi",
       "brand": "xiaomi",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
-        "width": 2400,
-        "height": 1080,
+        "width": 1600,
+        "height": 720,
         "touch": true,
-        "size": 6.43
+        "size": 6.5
       },
       "type": "smartphone",
       "ismobile": true,
@@ -707,103 +534,19 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "12.0.0",
+      "version": "10.0.0",
       "manufacturer": "google"
     },
     "client": {
       "name": "Bing Search",
-      "version": "25.2.410515306",
+      "version": "25.2.410515305",
       "manufacturer": "microsoft",
       "type": "application",
       "isbot": false
     },
     "engine": {
       "name": "Blink",
-      "version": "109.0.0.0",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 12; M2101K6G Build/SKQ1.210908.001; ) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/96.0.4664.104 Mobile Safari/537.36 BingSapphire/22.8.400531314"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "M2101K6G",
-      "marketingName": "Redmi Note 10 Pro",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
-      "dualOrientation": true,
-      "simCount": 2,
-      "display": {
-        "width": 2400,
-        "height": 1080,
-        "touch": true,
-        "size": 6.67
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "12.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Bing Search",
-      "version": "22.8.400531314",
-      "manufacturer": "microsoft",
-      "type": "application",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "96.0.4664.104",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 12; M2007J22G Build/SP1A.210812.016; ) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/114.0.0.0 Mobile Safari/537.36 BingSapphire/26.1.410824302"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "M2007J22G",
-      "marketingName": "Redmi Note 9T 5G",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
-      "dualOrientation": true,
-      "simCount": 2,
-      "display": {
-        "width": 2340,
-        "height": 1080,
-        "touch": true,
-        "size": 6.53
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "12.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Bing Search",
-      "version": "26.1.410824302",
-      "manufacturer": "microsoft",
-      "type": "application",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "114.0.0.0",
+      "version": "113.0.5672.162",
       "manufacturer": "google"
     }
   }

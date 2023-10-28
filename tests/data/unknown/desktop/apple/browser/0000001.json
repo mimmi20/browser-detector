@@ -1325,10 +1325,10 @@
       "bits": null
     },
     "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
+      "name": "NetBSD",
+      "marketingName": "NetBSD",
       "version": null,
-      "manufacturer": "linux-foundation"
+      "manufacturer": "unknown"
     },
     "client": {
       "name": "Safari",
@@ -1367,10 +1367,10 @@
       "bits": null
     },
     "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
+      "name": "NetBSD",
+      "marketingName": "NetBSD",
       "version": null,
-      "manufacturer": "linux-foundation"
+      "manufacturer": "unknown"
     },
     "client": {
       "name": "Safari",
@@ -1409,10 +1409,10 @@
       "bits": null
     },
     "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
+      "name": "NetBSD",
+      "marketingName": "NetBSD",
       "version": null,
-      "manufacturer": "linux-foundation"
+      "manufacturer": "unknown"
     },
     "client": {
       "name": "Safari",
@@ -1451,10 +1451,10 @@
       "bits": null
     },
     "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
+      "name": "NetBSD",
+      "marketingName": "NetBSD",
       "version": null,
-      "manufacturer": "linux-foundation"
+      "manufacturer": "unknown"
     },
     "client": {
       "name": "Safari",
@@ -1493,10 +1493,10 @@
       "bits": null
     },
     "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
+      "name": "NetBSD",
+      "marketingName": "NetBSD",
       "version": null,
-      "manufacturer": "linux-foundation"
+      "manufacturer": "unknown"
     },
     "client": {
       "name": "Safari",
@@ -1535,10 +1535,10 @@
       "bits": null
     },
     "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
+      "name": "NetBSD",
+      "marketingName": "NetBSD",
       "version": null,
-      "manufacturer": "linux-foundation"
+      "manufacturer": "unknown"
     },
     "client": {
       "name": "Safari",
@@ -1577,10 +1577,10 @@
       "bits": null
     },
     "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
+      "name": "NetBSD",
+      "marketingName": "NetBSD",
       "version": null,
-      "manufacturer": "linux-foundation"
+      "manufacturer": "unknown"
     },
     "client": {
       "name": "Safari",
@@ -1619,10 +1619,10 @@
       "bits": null
     },
     "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
+      "name": "NetBSD",
+      "marketingName": "NetBSD",
       "version": null,
-      "manufacturer": "linux-foundation"
+      "manufacturer": "unknown"
     },
     "client": {
       "name": "Safari",
@@ -1661,10 +1661,10 @@
       "bits": null
     },
     "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
+      "name": "NetBSD",
+      "marketingName": "NetBSD",
       "version": null,
-      "manufacturer": "linux-foundation"
+      "manufacturer": "unknown"
     },
     "client": {
       "name": "Safari",
@@ -1703,10 +1703,10 @@
       "bits": null
     },
     "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
+      "name": "NetBSD",
+      "marketingName": "NetBSD",
       "version": null,
-      "manufacturer": "linux-foundation"
+      "manufacturer": "unknown"
     },
     "client": {
       "name": "Safari",
@@ -1745,10 +1745,10 @@
       "bits": null
     },
     "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
+      "name": "NetBSD",
+      "marketingName": "NetBSD",
       "version": null,
-      "manufacturer": "linux-foundation"
+      "manufacturer": "unknown"
     },
     "client": {
       "name": "Safari",
@@ -3487,6 +3487,48 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (X11; BSD Four) AppleWebKit/534.34 (KHTML, like Gecko) webkit2png Safari/534.34"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "BSD",
+      "marketingName": "BSD",
+      "version": null,
+      "manufacturer": "berkley-university"
+    },
+    "client": {
+      "name": "Safari",
+      "version": "4.0.0",
+      "manufacturer": "apple",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.34.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Windows; U; Windows NT 6.1; de-DE) AppleWebKit/530.19.2 (KHTML, like Gecko) Version/4.0.2 Safari/530.19.1"
     },
     "device": {
@@ -4154,48 +4196,6 @@
     "engine": {
       "name": "WebKit",
       "version": "533.3.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/535.4+ (KHTML, like Gecko) Version/5.0 Safari/535.4+"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Linux Desktop",
-      "marketingName": "Linux Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "linux-foundation"
-    },
-    "client": {
-      "name": "Safari",
-      "version": "5.0.0",
-      "manufacturer": "apple",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "535.4.0",
       "manufacturer": "apple"
     }
   }

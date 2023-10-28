@@ -1,60 +1,18 @@
 [
   {
     "headers": {
-      "user-agent": "AndroidDownloadManager/10 (Linux; U; Android 10; M2007J17G Build/QKQ1.200628.002)"
+      "user-agent": "AndroidDownloadManager/11 (Linux; U; Android 11; 2201116SG Build/RKQ1.211001.001)"
     },
     "device": {
       "architecture": null,
-      "deviceName": "M2007J17G",
-      "marketingName": "Mi 10T Lite 5G (Global)",
+      "deviceName": "2201116SG",
+      "marketingName": "Redmi Note 11 Pro 5G",
       "manufacturer": "xiaomi",
       "brand": "xiaomi",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 2400,
-        "height": 1080,
-        "touch": true,
-        "size": 6.7
-      },
-      "type": "phablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Android Download Manager",
-      "version": "10.0.0",
-      "manufacturer": "unknown",
-      "type": "application",
-      "isbot": false
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "AndroidDownloadManager/10 (Linux; U; Android 10; Mi 10 Build/QKQ1.191117.002)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Mi 10",
-      "marketingName": "Mi 10",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 2340,
         "height": 1080,
         "touch": true,
         "size": 6.67
@@ -67,12 +25,12 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "10.0.0",
+      "version": "11.0.0",
       "manufacturer": "google"
     },
     "client": {
       "name": "Android Download Manager",
-      "version": "10.0.0",
+      "version": "11.0.0",
       "manufacturer": "unknown",
       "type": "application",
       "isbot": false

@@ -446,5 +446,37 @@
     },
     "type": "smartphone",
     "platform": "android"
+  },
+  "google pixel 7a": {
+    "deviceName": "Pixel 7a",
+    "marketingName": "Pixel 7a",
+    "manufacturer": "google",
+    "brand": "google",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.3
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "google pixel 4": {
+    "deviceName": "Pixel 4",
+    "marketingName": "Pixel 4",
+    "manufacturer": "google",
+    "brand": "google",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2280,
+      "height": 1080,
+      "touch": true,
+      "size": 5.7
+    },
+    "type": "smartphone",
+    "platform": "android"
   }
 }

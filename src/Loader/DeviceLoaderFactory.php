@@ -14,6 +14,7 @@ namespace BrowserDetector\Loader;
 
 use BrowserDetector\Loader\Helper\Data;
 use Psr\Log\LoggerInterface;
+use RuntimeException;
 use UaDeviceType\TypeLoader;
 
 use function array_key_exists;
@@ -33,7 +34,7 @@ final class DeviceLoaderFactory implements DeviceLoaderFactoryInterface
         // nothing to do
     }
 
-    /** @throws void */
+    /** @throws RuntimeException */
     public function __invoke(string $company = ''): DeviceLoaderInterface
     {
         if (array_key_exists($company, $this->loader)) {

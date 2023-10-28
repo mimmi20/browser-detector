@@ -30,48 +30,6 @@
     },
     "client": {
       "name": "Safari",
-      "version": "4.0.0",
-      "manufacturer": "apple",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "525.0.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SonyEricssonU1i/R1CA; Mozilla/5.0 (SymbianOS/9.4; U; Series60/5.0 Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 Safari/525"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "U1i",
-      "marketingName": "Satio",
-      "manufacturer": "sony-ericsson",
-      "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 640,
-        "height": 360,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Series 60",
-      "marketingName": "Series 60",
-      "version": null,
-      "manufacturer": "nokia"
-    },
-    "client": {
-      "name": "Safari",
       "version": "3.0.0",
       "manufacturer": "apple",
       "type": "browser",
@@ -114,90 +72,6 @@
     },
     "client": {
       "name": "Safari",
-      "version": "4.0.0",
-      "manufacturer": "apple",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "525.0.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (SymbianOS/9.2;U; Series60/5.0 SonyEricssonU8i/1.00;Profile/MIDP-2.1 Configuration/ CLDC-1.1)AppleWebKit/525 (KHTML, like Gecko) version/3.0Safari/525"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "U8i",
-      "marketingName": "Vivaz Pro",
-      "manufacturer": "sony-ericsson",
-      "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 640,
-        "height": 360,
-        "touch": true,
-        "size": 3.2
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Series 60",
-      "marketingName": "Series 60",
-      "version": null,
-      "manufacturer": "nokia"
-    },
-    "client": {
-      "name": "Safari",
-      "version": "4.0.0",
-      "manufacturer": "apple",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "525.0.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SonyEricssonU5i/R2AA; Mozilla/5.0 (SymbianOS/9.4; U; Series60/5.0 Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 Safari/525"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "U5i",
-      "marketingName": "Vivaz",
-      "manufacturer": "sony-ericsson",
-      "brand": "sony-ericsson",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 640,
-        "height": 360,
-        "touch": true,
-        "size": 3.2
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Series 60",
-      "marketingName": "Series 60",
-      "version": null,
-      "manufacturer": "nokia"
-    },
-    "client": {
-      "name": "Safari",
       "version": "3.0.0",
       "manufacturer": "apple",
       "type": "browser",
@@ -211,7 +85,7 @@
   },
   {
     "headers": {
-      "user-agent": "SonyEricssonU8i/R2EA; Mozilla/5.0 (SymbianOS/9.4; U; Series60/5.0 Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 Safari/525"
+      "user-agent": "Mozilla/5.0 (SymbianOS/9.2;U; Series60/5.0 SonyEricssonU8i/1.00;Profile/MIDP-2.1 Configuration/ CLDC-1.1)AppleWebKit/525 (KHTML, like Gecko) version/3.0Safari/525"
     },
     "device": {
       "architecture": null,

@@ -26,7 +26,16 @@ final class SecChUa implements HeaderInterface
     /** @throws void */
     public function hasClientCode(): bool
     {
-        return true;
+        $list = $this->sort();
+
+        if ($list === null || $list === []) {
+            return false;
+        }
+
+        $key  = array_key_first($list);
+        $code = mb_strtolower($key);
+
+        return $code !== 'chromium';
     }
 
     /** @throws void */
@@ -51,6 +60,8 @@ final class SecChUa implements HeaderInterface
             'yandex' => 'yabrowser',
             'microsoft edge' => 'edge mobile',
             'google chrome' => 'chrome',
+            'avastsecurebrowser' => 'avast secure browser',
+            'wavebrowser' => 'wave-browser',
             'opera', 'atom', 'opera gx', 'avast secure browser', 'ccleaner browser' => $code,
             default => null,
         };
@@ -59,7 +70,16 @@ final class SecChUa implements HeaderInterface
     /** @throws void */
     public function hasClientVersion(): bool
     {
-        return true;
+        $list = $this->sort();
+
+        if ($list === null || $list === []) {
+            return false;
+        }
+
+        $key  = array_key_first($list);
+        $code = mb_strtolower($key);
+
+        return $code !== 'chromium';
     }
 
     /** @throws void */

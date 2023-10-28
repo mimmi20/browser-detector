@@ -27,7 +27,10 @@ final class DataTest extends TestCase
 {
     private const DATA_PATH = 'root';
 
-    /** @throws InvalidArgumentException */
+    /**
+     * @throws InvalidArgumentException
+     * @throws RuntimeException
+     */
     public function testInvokeFail(): void
     {
         vfsStream::setup(self::DATA_PATH);
@@ -55,6 +58,7 @@ final class DataTest extends TestCase
      * @throws ExpectationFailedException
      * @throws Exception
      * @throws InvalidArgumentException
+     * @throws RuntimeException
      */
     public function testInvokeSuccess(): void
     {
@@ -96,6 +100,7 @@ final class DataTest extends TestCase
      * @throws ExpectationFailedException
      * @throws Exception
      * @throws InvalidArgumentException
+     * @throws RuntimeException
      */
     public function testInvokeSuccess2(): void
     {
@@ -141,6 +146,7 @@ final class DataTest extends TestCase
      * @throws ExpectationFailedException
      * @throws Exception
      * @throws InvalidArgumentException
+     * @throws RuntimeException
      */
     public function testInvokeFail2(): void
     {
@@ -175,6 +181,7 @@ final class DataTest extends TestCase
      * @throws ExpectationFailedException
      * @throws Exception
      * @throws InvalidArgumentException
+     * @throws RuntimeException
      */
     public function testInvokeSuccess3(): void
     {

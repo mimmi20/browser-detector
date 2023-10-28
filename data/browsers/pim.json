@@ -16,8 +16,10 @@
     "manufacturer": "evernote",
     "type": "pim",
     "version": {
-      "class": null,
-      "search": null
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Evernote"
+      ]
     },
     "engine": "webkit"
   },
@@ -167,6 +169,18 @@
     "version": {
       "factory": null,
       "search": null
+    },
+    "engine": null
+  },
+  "notion": {
+    "name": "Notion",
+    "manufacturer": "notion-labs",
+    "type": "pim",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Notion"
+      ]
     },
     "engine": null
   }

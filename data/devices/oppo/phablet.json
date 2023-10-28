@@ -47,22 +47,6 @@
     "type": "phablet",
     "platform": "android"
   },
-  "oppo cph2185": {
-    "deviceName": "CPH2185",
-    "marketingName": "A15",
-    "manufacturer": "bbk",
-    "brand": "oppo",
-    "dualOrientation": null,
-    "simCount": null,
-    "display": {
-      "width": 1600,
-      "height": 720,
-      "touch": true,
-      "size": 6.52
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
   "oppo cph2015": {
     "deviceName": "CPH2015",
     "marketingName": "A31",
@@ -148,8 +132,8 @@
     "marketingName": "A5 (2020)",
     "manufacturer": "bbk",
     "brand": "oppo",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 1600,
       "height": 720,
@@ -164,8 +148,8 @@
     "marketingName": "A5 (2020)",
     "manufacturer": "bbk",
     "brand": "oppo",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 1600,
       "height": 720,
@@ -292,24 +276,8 @@
     "marketingName": "A53",
     "manufacturer": "bbk",
     "brand": "oppo",
-    "dualOrientation": null,
-    "simCount": null,
-    "display": {
-      "width": 1600,
-      "height": 720,
-      "touch": true,
-      "size": 6.5
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
-  "oppo cph2135": {
-    "deviceName": "CPH2135",
-    "marketingName": "A53s",
-    "manufacturer": "bbk",
-    "brand": "oppo",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 1600,
       "height": 720,
@@ -580,8 +548,8 @@
     "marketingName": "F11 Pro",
     "manufacturer": "bbk",
     "brand": "oppo",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 2340,
       "height": 1080,
@@ -596,13 +564,13 @@
     "marketingName": "F11 Pro",
     "manufacturer": "bbk",
     "brand": "oppo",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 2340,
       "height": 1080,
       "touch": true,
-      "size": 6.5
+      "size": 6.53
     },
     "type": "phablet",
     "platform": "android"
@@ -703,22 +671,6 @@
     "type": "phablet",
     "platform": "android"
   },
-  "oppo cph2025": {
-    "deviceName": "CPH2025",
-    "marketingName": "Find X2 Pro 5G",
-    "manufacturer": "bbk",
-    "brand": "oppo",
-    "dualOrientation": null,
-    "simCount": null,
-    "display": {
-      "width": 3168,
-      "height": 1440,
-      "touch": true,
-      "size": 6.7
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
   "oppo cph1955": {
     "deviceName": "CPH1955",
     "marketingName": "K3",
@@ -740,8 +692,24 @@
     "marketingName": "Reno 10x Zoom",
     "manufacturer": "bbk",
     "brand": "oppo",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2340,
+      "height": 1080,
+      "touch": true,
+      "size": 6.6
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "oppo pcct00": {
+    "deviceName": "PCCT00",
+    "marketingName": "Reno 10x Zoom",
+    "manufacturer": "bbk",
+    "brand": "oppo",
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 2340,
       "height": 1080,
@@ -756,8 +724,8 @@
     "marketingName": "Reno 10x Zoom",
     "manufacturer": "bbk",
     "brand": "oppo",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 2340,
       "height": 1080,
@@ -767,98 +735,18 @@
     "type": "phablet",
     "platform": "android"
   },
-  "oppo cph1907": {
-    "deviceName": "CPH1907",
-    "marketingName": "Reno 2",
+  "oppo blp705": {
+    "deviceName": "BLP705",
+    "marketingName": "Reno 10x Zoom",
     "manufacturer": "bbk",
     "brand": "oppo",
-    "dualOrientation": null,
-    "simCount": null,
-    "display": {
-      "width": 2400,
-      "height": 1080,
-      "touch": true,
-      "size": 6.5
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
-  "oppo pckm00": {
-    "deviceName": "PCKM00",
-    "marketingName": "Reno 2",
-    "manufacturer": "bbk",
-    "brand": "oppo",
-    "dualOrientation": null,
-    "simCount": null,
-    "display": {
-      "width": 2400,
-      "height": 1080,
-      "touch": true,
-      "size": 6.5
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
-  "oppo pckt00": {
-    "deviceName": "PCKT00",
-    "marketingName": "Reno 2",
-    "manufacturer": "bbk",
-    "brand": "oppo",
-    "dualOrientation": null,
-    "simCount": null,
-    "display": {
-      "width": 2400,
-      "height": 1080,
-      "touch": true,
-      "size": 6.5
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
-  "oppo cph1989": {
-    "deviceName": "CPH1989",
-    "marketingName": "Reno 2 F",
-    "manufacturer": "bbk",
-    "brand": "oppo",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 2340,
       "height": 1080,
       "touch": true,
-      "size": 6.5
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
-  "oppo cph1945": {
-    "deviceName": "CPH1945",
-    "marketingName": "Reno 2 Z",
-    "manufacturer": "bbk",
-    "brand": "oppo",
-    "dualOrientation": null,
-    "simCount": null,
-    "display": {
-      "width": 2400,
-      "height": 1080,
-      "touch": true,
-      "size": 6.5
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
-  "oppo cph1951": {
-    "deviceName": "CPH1951",
-    "marketingName": "Reno 2 Z",
-    "manufacturer": "bbk",
-    "brand": "oppo",
-    "dualOrientation": null,
-    "simCount": null,
-    "display": {
-      "width": 2400,
-      "height": 1080,
-      "touch": true,
-      "size": 6.5
+      "size": 6.6
     },
     "type": "phablet",
     "platform": "android"
@@ -879,98 +767,18 @@
     "type": "phablet",
     "platform": "android"
   },
-  "oppo cph2125": {
-    "deviceName": "CPH2125",
-    "marketingName": "Reno 4 Lite",
-    "manufacturer": "bbk",
-    "brand": "oppo",
-    "dualOrientation": null,
-    "simCount": null,
-    "display": {
-      "width": 2400,
-      "height": 1080,
-      "touch": true,
-      "size": 6.72
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
-  "oppo cph2089": {
-    "deviceName": "CPH2089",
-    "marketingName": "Reno 4 Pro",
-    "manufacturer": "bbk",
-    "brand": "oppo",
-    "dualOrientation": null,
-    "simCount": null,
-    "display": {
-      "width": 2400,
-      "height": 1080,
-      "touch": true,
-      "size": 6.55
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
   "oppo cph2109": {
     "deviceName": "CPH2109",
-    "marketingName": "Reno 4 Pro",
+    "marketingName": "Reno 4 Pro 4G",
     "manufacturer": "bbk",
     "brand": "oppo",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 2400,
       "height": 1080,
       "touch": true,
       "size": 6.5
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
-  "oppo pdnm00": {
-    "deviceName": "PDNM00",
-    "marketingName": "Reno 4 Pro 5G",
-    "manufacturer": "bbk",
-    "brand": "oppo",
-    "dualOrientation": null,
-    "simCount": null,
-    "display": {
-      "width": 2400,
-      "height": 1080,
-      "touch": true,
-      "size": 6.55
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
-  "oppo pdnt00": {
-    "deviceName": "PDNT00",
-    "marketingName": "Reno 4 Pro 5G",
-    "manufacturer": "bbk",
-    "brand": "oppo",
-    "dualOrientation": null,
-    "simCount": null,
-    "display": {
-      "width": 2400,
-      "height": 1080,
-      "touch": true,
-      "size": 6.55
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
-  "oppo cph2065": {
-    "deviceName": "CPH2065",
-    "marketingName": "Reno 4 Z 5G",
-    "manufacturer": "bbk",
-    "brand": "oppo",
-    "dualOrientation": null,
-    "simCount": null,
-    "display": {
-      "width": 2400,
-      "height": 1080,
-      "touch": true,
-      "size": 6.57
     },
     "type": "phablet",
     "platform": "android"

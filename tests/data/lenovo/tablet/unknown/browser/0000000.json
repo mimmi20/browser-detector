@@ -90,11 +90,11 @@
     "device": {
       "architecture": null,
       "deviceName": "A10-70F",
-      "marketingName": "Tab 2 Wi-Fi",
+      "marketingName": "Tab 2 A10-70 Wi-Fi",
       "manufacturer": "lenovo",
       "brand": "lenovo",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 1920,
         "height": 1200,
@@ -174,11 +174,11 @@
     "device": {
       "architecture": null,
       "deviceName": "A10-70F",
-      "marketingName": "Tab 2 Wi-Fi",
+      "marketingName": "Tab 2 A10-70 Wi-Fi",
       "manufacturer": "lenovo",
       "brand": "lenovo",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 1920,
         "height": 1200,
@@ -342,11 +342,11 @@
     "device": {
       "architecture": null,
       "deviceName": "TB3-X70F",
-      "marketingName": "Yoga Tab 3 10 Plus Wi-Fi",
+      "marketingName": "Tab3 10 Business Wi-Fi",
       "manufacturer": "lenovo",
       "brand": "lenovo",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 1920,
         "height": 1200,
@@ -510,7 +510,7 @@
     "device": {
       "architecture": null,
       "deviceName": "TB-X104F",
-      "marketingName": "Tab E10 WiFi",
+      "marketingName": "Tab E10 Wi-Fi",
       "manufacturer": "lenovo",
       "brand": "lenovo",
       "dualOrientation": null,
@@ -594,11 +594,11 @@
     "device": {
       "architecture": null,
       "deviceName": "A10-70F",
-      "marketingName": "Tab 2 Wi-Fi",
+      "marketingName": "Tab 2 A10-70 Wi-Fi",
       "manufacturer": "lenovo",
       "brand": "lenovo",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 1920,
         "height": 1200,
@@ -972,11 +972,11 @@
     "device": {
       "architecture": null,
       "deviceName": "TB-X606F",
-      "marketingName": "Tab M10 FHD Wi-Fi (2nd Gen.)",
+      "marketingName": "Tab M10 FHD Wi-Fi",
       "manufacturer": "lenovo",
       "brand": "lenovo",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 1920,
         "height": 1200,
@@ -1014,7 +1014,7 @@
     "device": {
       "architecture": null,
       "deviceName": "TB-X505F",
-      "marketingName": "Tab M10 HD WiFi",
+      "marketingName": "Tab M10 HD Wi-Fi",
       "manufacturer": "lenovo",
       "brand": "lenovo",
       "dualOrientation": null,
@@ -1056,11 +1056,11 @@
     "device": {
       "architecture": null,
       "deviceName": "TB-X606F",
-      "marketingName": "Tab M10 FHD Wi-Fi (2nd Gen.)",
+      "marketingName": "Tab M10 FHD Wi-Fi",
       "manufacturer": "lenovo",
       "brand": "lenovo",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 1920,
         "height": 1200,
@@ -1140,7 +1140,7 @@
     "device": {
       "architecture": null,
       "deviceName": "TB-X104F",
-      "marketingName": "Tab E10 WiFi",
+      "marketingName": "Tab E10 Wi-Fi",
       "manufacturer": "lenovo",
       "brand": "lenovo",
       "dualOrientation": null,
@@ -1266,11 +1266,11 @@
     "device": {
       "architecture": null,
       "deviceName": "A10-70F",
-      "marketingName": "Tab 2 Wi-Fi",
+      "marketingName": "Tab 2 A10-70 Wi-Fi",
       "manufacturer": "lenovo",
       "brand": "lenovo",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 1920,
         "height": 1200,
@@ -1286,6 +1286,48 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "6.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Ecosia",
+      "version": "88.0.4324.181",
+      "manufacturer": "unknown",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "88.0.4324.181",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; Lenovo TB-J616F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.181 Safari/537.36 (Ecosia android@88.0.4324.181)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "TB-J616F",
+      "marketingName": "Tab P11 Plus",
+      "manufacturer": "lenovo",
+      "brand": "lenovo",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 2000,
+        "height": 1200,
+        "touch": true,
+        "size": 11
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
       "manufacturer": "google"
     },
     "client": {
@@ -1518,11 +1560,11 @@
     "device": {
       "architecture": null,
       "deviceName": "TB-X606F",
-      "marketingName": "Tab M10 FHD Wi-Fi (2nd Gen.)",
+      "marketingName": "Tab M10 FHD Wi-Fi",
       "manufacturer": "lenovo",
       "brand": "lenovo",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 1920,
         "height": 1200,

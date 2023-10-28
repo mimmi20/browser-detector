@@ -50,7 +50,7 @@ trait SortTrait
 
             $fullVersionList[$brand] = match ($code) {
                 'operamobile' => 3,
-                'opera', 'google chrome', 'microsoft edge', 'yandex', 'huaweibrowser', 'atom', 'opera gx', 'avast secure browser', 'ccleaner browser' => 2,
+                'opera', 'google chrome', 'microsoft edge', 'yandex', 'huaweibrowser', 'atom', 'opera gx', 'avast secure browser', 'avastsecurebrowser', 'ccleaner browser', 'wavebrowser' => 2,
                 'chromium' => 1,
                 default => 0,
             };

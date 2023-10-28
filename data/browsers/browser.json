@@ -1136,6 +1136,7 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "DDG\\-Android\\-",
+        "ddg_android",
         "DuckDuckGo"
       ]
     },
@@ -2182,8 +2183,8 @@
     },
     "engine": null
   },
-  "libao browser": {
-    "name": "LibaoBrowser",
+  "cheetah-browser": {
+    "name": "Cheetah Browser",
     "manufacturer": "kingsoft",
     "type": "browser",
     "version": {
@@ -2878,6 +2879,7 @@
       "search": [
         "Version",
         "Omniweb",
+        "OmniWeb\\/v",
         "OmniWeb"
       ]
     },
@@ -4128,8 +4130,11 @@
     "manufacturer": "phoenix-studio",
     "type": "browser",
     "version": {
-      "class": null,
-      "search": null
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "TheWorld",
+        "theworld"
+      ]
     },
     "engine": "trident"
   },
@@ -5166,6 +5171,52 @@
       "search": [
         "ADG"
       ]
+    },
+    "engine": null
+  },
+  "avira-secure-browser": {
+    "name": "Avira Secure Browser",
+    "manufacturer": "avira-operations",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Avira"
+      ]
+    },
+    "engine": null
+  },
+  "norton-secure-browser": {
+    "name": "Norton Secure Browser",
+    "manufacturer": "norton-life-lock",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Norton"
+      ]
+    },
+    "engine": null
+  },
+  "mypal": {
+    "name": "Mypal",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Mypal"
+      ]
+    },
+    "engine": "gecko"
+  },
+  "wave-browser": {
+    "name": "Wave Browser",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "factory": null,
+      "search": null
     },
     "engine": null
   }

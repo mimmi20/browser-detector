@@ -31,54 +31,6 @@
     "type": "phablet",
     "platform": "android"
   },
-  "realme rmx2030": {
-    "deviceName": "RMX2030",
-    "marketingName": "5i",
-    "manufacturer": "bbk",
-    "brand": "realme",
-    "dualOrientation": null,
-    "simCount": null,
-    "display": {
-      "width": 1600,
-      "height": 720,
-      "touch": true,
-      "size": 6.52
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
-  "realme rmx2031": {
-    "deviceName": "RMX2031",
-    "marketingName": "5i",
-    "manufacturer": "bbk",
-    "brand": "realme",
-    "dualOrientation": null,
-    "simCount": null,
-    "display": {
-      "width": 1600,
-      "height": 720,
-      "touch": true,
-      "size": 6.52
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
-  "realme rmx2032": {
-    "deviceName": "RMX2032",
-    "marketingName": "5i",
-    "manufacturer": "bbk",
-    "brand": "realme",
-    "dualOrientation": null,
-    "simCount": null,
-    "display": {
-      "width": 1600,
-      "height": 720,
-      "touch": true,
-      "size": 6.52
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
   "realme rmx1929": {
     "deviceName": "RMX1929",
     "marketingName": "5s",
@@ -116,8 +68,24 @@
     "marketingName": "6",
     "manufacturer": "bbk",
     "brand": "realme",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.5
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "realme rmx2003": {
+    "deviceName": "RMX2003",
+    "marketingName": "6",
+    "manufacturer": "bbk",
+    "brand": "realme",
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 2400,
       "height": 1080,
@@ -129,16 +97,16 @@
   },
   "realme rmx2021": {
     "deviceName": "RMX2021",
-    "marketingName": "6 Pro",
+    "marketingName": "C3",
     "manufacturer": "bbk",
     "brand": "realme",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
-      "width": 2400,
-      "height": 1080,
+      "width": 1600,
+      "height": 720,
       "touch": true,
-      "size": 6.6
+      "size": 6.5
     },
     "type": "phablet",
     "platform": "android"
@@ -239,29 +207,13 @@
     "type": "phablet",
     "platform": "android"
   },
-  "realme rmx2101": {
-    "deviceName": "RMX2101",
-    "marketingName": "C17",
-    "manufacturer": "bbk",
-    "brand": "realme",
-    "dualOrientation": null,
-    "simCount": null,
-    "display": {
-      "width": 1600,
-      "height": 720,
-      "touch": true,
-      "size": 6.5
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
   "realme rmx2020": {
     "deviceName": "RMX2020",
     "marketingName": "C3",
     "manufacturer": "bbk",
     "brand": "realme",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 1560,
       "height": 720,
@@ -276,8 +228,24 @@
     "marketingName": "C3",
     "manufacturer": "bbk",
     "brand": "realme",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1560,
+      "height": 720,
+      "touch": true,
+      "size": 6.5
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "realme rmx2022": {
+    "deviceName": "RMX2022",
+    "marketingName": "C3",
+    "manufacturer": "bbk",
+    "brand": "realme",
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 1560,
       "height": 720,
@@ -289,7 +257,39 @@
   },
   "realme rmx2040": {
     "deviceName": "RMX2040",
-    "marketingName": "Narzo 10",
+    "marketingName": "6i",
+    "manufacturer": "bbk",
+    "brand": "realme",
+    "dualOrientation": null,
+    "simCount": null,
+    "display": {
+      "width": 1600,
+      "height": 720,
+      "touch": true,
+      "size": 6.5
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "realme rmx2042": {
+    "deviceName": "RMX2042",
+    "marketingName": "6i",
+    "manufacturer": "bbk",
+    "brand": "realme",
+    "dualOrientation": null,
+    "simCount": null,
+    "display": {
+      "width": 1600,
+      "height": 720,
+      "touch": true,
+      "size": 6.5
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "realme rmx2041": {
+    "deviceName": "RMX2041",
+    "marketingName": "6i",
     "manufacturer": "bbk",
     "brand": "realme",
     "dualOrientation": null,
@@ -388,24 +388,8 @@
     "marketingName": "X3",
     "manufacturer": "bbk",
     "brand": "realme",
-    "dualOrientation": null,
-    "simCount": null,
-    "display": {
-      "width": 2400,
-      "height": 1080,
-      "touch": true,
-      "size": 6.57
-    },
-    "type": "phablet",
-    "platform": "android"
-  },
-  "realme rmx2085": {
-    "deviceName": "RMX2085",
-    "marketingName": "X3 SuperZoom Dual SIM",
-    "manufacturer": "bbk",
-    "brand": "realme",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 2400,
       "height": 1080,
@@ -415,13 +399,13 @@
     "type": "phablet",
     "platform": "android"
   },
-  "realme rmx2086": {
-    "deviceName": "RMX2086",
-    "marketingName": "X3 SuperZoom Global Dual SIM",
+  "realme rmx2085": {
+    "deviceName": "RMX2085",
+    "marketingName": "X3",
     "manufacturer": "bbk",
     "brand": "realme",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 2400,
       "height": 1080,

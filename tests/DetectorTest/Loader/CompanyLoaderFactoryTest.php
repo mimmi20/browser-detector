@@ -17,12 +17,14 @@ use BrowserDetector\Loader\CompanyLoaderInterface;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
+use RuntimeException;
 
 final class CompanyLoaderFactoryTest extends TestCase
 {
     /**
      * @throws ExpectationFailedException
      * @throws Exception
+     * @throws RuntimeException
      */
     public function testInvoke(): void
     {

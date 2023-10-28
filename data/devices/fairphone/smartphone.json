@@ -62,5 +62,37 @@
     },
     "type": "smartphone",
     "platform": "android"
+  },
+  "fairphone fp4": {
+    "deviceName": "FP4",
+    "marketingName": "FP4",
+    "manufacturer": "fairphone",
+    "brand": "fairphone",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2340,
+      "height": 1080,
+      "touch": true,
+      "size": 6.3
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "fairphone fp5": {
+    "deviceName": "FP5",
+    "marketingName": "FP5",
+    "manufacturer": "fairphone",
+    "brand": "fairphone",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2700,
+      "height": 1224,
+      "touch": true,
+      "size": 6.46
+    },
+    "type": "smartphone",
+    "platform": "android"
   }
 }

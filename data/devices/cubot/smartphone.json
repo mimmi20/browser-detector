@@ -958,5 +958,53 @@
     },
     "type": "smartphone",
     "platform": "android"
+  },
+  "cubot quest": {
+    "deviceName": "Quest",
+    "marketingName": "Quest",
+    "manufacturer": "cubot",
+    "brand": "cubot",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1440,
+      "height": 720,
+      "touch": true,
+      "size": 5.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "cubot note 7": {
+    "deviceName": "Note 7",
+    "marketingName": "Note 7",
+    "manufacturer": "cubot",
+    "brand": "cubot",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 960,
+      "height": 442,
+      "touch": true,
+      "size": 5.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "cubot gt20": {
+    "deviceName": "GT20",
+    "marketingName": "GT20",
+    "manufacturer": "cubot",
+    "brand": "hafury",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2310,
+      "height": 1080,
+      "touch": true,
+      "size": 6.4
+    },
+    "type": "smartphone",
+    "platform": "android"
   }
 }

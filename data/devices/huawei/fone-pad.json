@@ -145,11 +145,11 @@
   },
   "huawei mrx-al09": {
     "deviceName": "MRX-AL09",
-    "marketingName": "MatePad Pro",
+    "marketingName": "MatePad Pro 10.8 LTE (2019)",
     "manufacturer": "huawei",
     "brand": "huawei",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 2560,
       "height": 1600,
@@ -161,11 +161,11 @@
   },
   "huawei mrx-al19": {
     "deviceName": "MRX-AL19",
-    "marketingName": "MatePad Pro",
+    "marketingName": "MatePad Pro 10.8 LTE (2019)",
     "manufacturer": "huawei",
     "brand": "huawei",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 2560,
       "height": 1600,
@@ -292,8 +292,8 @@
     "marketingName": "MediaPad M3 Lite 10",
     "manufacturer": "huawei",
     "brand": "huawei",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1920,
       "height": 1200,
@@ -1083,6 +1083,166 @@
       "height": 1200,
       "touch": true,
       "size": 10.1
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "huawei ags3k-l09": {
+    "deviceName": "AGS3K-L09",
+    "marketingName": "MatePad T 10s LTE",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "size": 10.1
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "huawei m2-a01l": {
+    "deviceName": "M2-A01L",
+    "marketingName": "MediaPad M2 10.0 4G",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "size": 10.1
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "huawei agr-al09": {
+    "deviceName": "AGR-AL09",
+    "marketingName": "Pad X6",
+    "manufacturer": "huawei",
+    "brand": "honor",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": 9.7
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "huawei agr-l09": {
+    "deviceName": "AGR-L09",
+    "marketingName": "MatePad T 10",
+    "manufacturer": "huawei",
+    "brand": "honor",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": 9.7
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "huawei agrk-l09": {
+    "deviceName": "AGRK-L09",
+    "marketingName": "MatePad T 10",
+    "manufacturer": "huawei",
+    "brand": "honor",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": 9.7
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "huawei bah3-al00": {
+    "deviceName": "BAH3-AL00",
+    "marketingName": "MatePad 10.4 LTE",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2000,
+      "height": 1200,
+      "touch": true,
+      "size": 10.4
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "huawei bah3-an10": {
+    "deviceName": "BAH3-AN10",
+    "marketingName": "MatePad 10.4 LTE",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2000,
+      "height": 1200,
+      "touch": true,
+      "size": 10.4
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "huawei bah3-l09": {
+    "deviceName": "BAH3-L09",
+    "marketingName": "MatePad 10.4 LTE",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2000,
+      "height": 1200,
+      "touch": true,
+      "size": 10.4
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "huawei bah4-al10": {
+    "deviceName": "BAH4-AL10",
+    "marketingName": "MatePad 10.4 2022 Joy Edition 5G",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2000,
+      "height": 1200,
+      "touch": true,
+      "size": 10.4
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "huawei bah4-l09": {
+    "deviceName": "BAH4-L09",
+    "marketingName": "MatePad 10.4 2022 LTE",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2000,
+      "height": 1200,
+      "touch": true,
+      "size": 10.4
     },
     "type": "fone-pad",
     "platform": "android"

@@ -90,11 +90,11 @@
     "device": {
       "architecture": null,
       "deviceName": "LM-G850",
-      "marketingName": "G8 ThinQ",
+      "marketingName": "G8X ThinQ",
       "manufacturer": "lg",
       "brand": "lg",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 3120,
         "height": 1440,
@@ -135,8 +135,8 @@
       "marketingName": "Velvet 5G",
       "manufacturer": "lg",
       "brand": "lg",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 2460,
         "height": 1080,
@@ -169,22 +169,16 @@
   },
   {
     "headers": {
-      "sec-ch-ua": "\"Chromium\";v=\"96\", \" Not A;Brand\";v=\"99\", \"Whale\";v=\"2\"",
-      "sec-ch-ua-mobile": "?1",
-      "sec-ch-ua-platform": "\"Android\"",
-      "user-agent": "Mozilla/5.0 (Linux; Android 11; LM-G910) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.210 Whale/2.4.1.2 Mobile Safari/537.36",
-      "sec-fetch-site": "none",
-      "sec-fetch-mode": "navigate",
-      "sec-fetch-dest": "document"
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; LM-G910) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.210 Whale/2.4.1.2 Mobile Safari/537.36"
     },
     "device": {
       "architecture": null,
       "deviceName": "LM-G910",
-      "marketingName": "Velvet 5G",
+      "marketingName": "Velvet 4G",
       "manufacturer": "lg",
       "brand": "lg",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 2460,
         "height": 1080,
@@ -222,11 +216,11 @@
     "device": {
       "architecture": null,
       "deviceName": "LM-G910",
-      "marketingName": "Velvet 5G",
+      "marketingName": "Velvet 4G",
       "manufacturer": "lg",
       "brand": "lg",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 2460,
         "height": 1080,
@@ -267,8 +261,8 @@
       "marketingName": "Velvet 5G",
       "manufacturer": "lg",
       "brand": "lg",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 2460,
         "height": 1080,

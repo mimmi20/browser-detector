@@ -289,11 +289,11 @@
   },
   "lenovo a10-70l": {
     "deviceName": "A10-70L",
-    "marketingName": "Tab 2",
+    "marketingName": "Tab 2 A10-70 LTE",
     "manufacturer": "lenovo",
     "brand": "lenovo",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1920,
       "height": 1200,
@@ -593,11 +593,11 @@
   },
   "lenovo tb-x605lc": {
     "deviceName": "TB-X605LC",
-    "marketingName": "Tab 5 LTE",
+    "marketingName": "Tab M10 FHD REL LTE",
     "manufacturer": "lenovo",
-    "brand": "medion",
-    "dualOrientation": null,
-    "simCount": null,
+    "brand": "lenovo",
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1920,
       "height": 1200,
@@ -689,11 +689,11 @@
   },
   "lenovo tb-x605l": {
     "deviceName": "TB-X605L",
-    "marketingName": "Tab M10",
+    "marketingName": "Tab M10 FHD LTE",
     "manufacturer": "lenovo",
-    "brand": "medion",
-    "dualOrientation": null,
-    "simCount": null,
+    "brand": "lenovo",
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1920,
       "height": 1200,
@@ -705,11 +705,27 @@
   },
   "lenovo tb-x606x": {
     "deviceName": "TB-X606X",
-    "marketingName": "Tab M10 FHD Plus (2nd Gen, LTE)",
+    "marketingName": "Tab M10 FHD LTE",
     "manufacturer": "lenovo",
     "brand": "lenovo",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "size": 10.3
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "lenovo tb-x606v": {
+    "deviceName": "TB-X606V",
+    "marketingName": "Tab M10 FHD LTE",
+    "manufacturer": "lenovo",
+    "brand": "lenovo",
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1920,
       "height": 1200,
@@ -721,11 +737,11 @@
   },
   "lenovo tb-x606xa": {
     "deviceName": "TB-X606XA",
-    "marketingName": "Tab M10 FHD Plus (2nd Gen, LTE)",
+    "marketingName": "Tab M10 FHD LTE",
     "manufacturer": "lenovo",
     "brand": "lenovo",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1920,
       "height": 1200,
@@ -788,8 +804,8 @@
     "marketingName": "Tab3 10 Business LTE",
     "manufacturer": "lenovo",
     "brand": "lenovo",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1920,
       "height": 1200,
@@ -993,11 +1009,11 @@
   },
   "lenovo yt3-x90x": {
     "deviceName": "YT3-X90X",
-    "marketingName": "Yoga Tab 3 Pro 10.1",
+    "marketingName": "Yoga Tab 3 Pro 10.1 LTE",
     "manufacturer": "lenovo",
     "brand": "lenovo",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 2560,
       "height": 1600,
@@ -1012,8 +1028,8 @@
     "marketingName": "Yoga Tab 3 Pro 10.1 LTE",
     "manufacturer": "lenovo",
     "brand": "lenovo",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 2560,
       "height": 1600,
@@ -1028,15 +1044,15 @@
     "marketingName": "Yoga Tab 3 Pro 10.1 Wi-Fi",
     "manufacturer": "lenovo",
     "brand": "lenovo",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 0,
     "display": {
       "width": 2560,
       "height": 1600,
       "touch": true,
       "size": 10.1
     },
-    "type": "fone-pad",
+    "type": "tablet",
     "platform": "android"
   },
   "lenovo b8000-h": {
@@ -1148,7 +1164,55 @@
       "touch": true,
       "size": 11
     },
-    "type": "tablet",
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "lenovo tb-j616x": {
+    "deviceName": "TB-J616X",
+    "marketingName": "Tab P11",
+    "manufacturer": "lenovo",
+    "brand": "lenovo",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2000,
+      "height": 1200,
+      "touch": true,
+      "size": 11
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "lenovo tb-x306x": {
+    "deviceName": "TB-X306X",
+    "marketingName": "Smart Tab M10 HD (2nd Gen, LTE)",
+    "manufacturer": "lenovo",
+    "brand": "lenovo",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": 10.1
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "lenovo tb-x306xa": {
+    "deviceName": "TB-X306XA",
+    "marketingName": "Smart Tab M10 HD (2nd Gen, LTE)",
+    "manufacturer": "lenovo",
+    "brand": "lenovo",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": 10.1
+    },
+    "type": "fone-pad",
     "platform": "android"
   }
 }

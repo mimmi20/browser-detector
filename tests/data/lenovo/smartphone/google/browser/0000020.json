@@ -3197,17 +3197,17 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "A60",
-      "marketingName": "Lephone A60",
+      "deviceName": "A6010 Pro",
+      "marketingName": "A6010 Pro",
       "manufacturer": "lenovo",
       "brand": "lenovo",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
-        "width": 480,
-        "height": 320,
+        "width": 1280,
+        "height": 720,
         "touch": true,
-        "size": null
+        "size": 5
       },
       "type": "smartphone",
       "ismobile": true,

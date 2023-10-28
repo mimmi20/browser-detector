@@ -529,11 +529,11 @@
   },
   "lenovo tb-x306f": {
     "deviceName": "TB-X306F",
-    "marketingName": "Smart Tab M10 HD (2nd Gen)",
+    "marketingName": "Smart Tab M10 HD (2nd Gen, Wi-Fi)",
     "manufacturer": "lenovo",
     "brand": "lenovo",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 0,
     "display": {
       "width": 1280,
       "height": 800,
@@ -543,13 +543,29 @@
     "type": "tablet",
     "platform": "android"
   },
-  "lenovo tb-x306x": {
-    "deviceName": "TB-X306X",
+  "lenovo tb-x306fa": {
+    "deviceName": "TB-X306FA",
     "marketingName": "Smart Tab M10 HD (2nd Gen, Wi-Fi)",
     "manufacturer": "lenovo",
     "brand": "lenovo",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": 10.1
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "lenovo tb-x306nc": {
+    "deviceName": "TB-X306NC",
+    "marketingName": "Smart Tab M10 HD (2nd Gen, Wi-Fi)",
+    "manufacturer": "lenovo",
+    "brand": "lenovo",
+    "dualOrientation": true,
+    "simCount": 0,
     "display": {
       "width": 1280,
       "height": 800,
@@ -595,7 +611,7 @@
     "deviceName": "TB-X103F",
     "marketingName": "Tab 10",
     "manufacturer": "lenovo",
-    "brand": "medion",
+    "brand": "lenovo",
     "dualOrientation": null,
     "simCount": null,
     "display": {
@@ -625,11 +641,11 @@
   },
   "lenovo a7-20f": {
     "deviceName": "A7-20F",
-    "marketingName": "TAB 2",
+    "marketingName": "Tab 2 A7-20 Wi-Fi",
     "manufacturer": "lenovo",
     "brand": "lenovo",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 0,
     "display": {
       "width": 1024,
       "height": 600,
@@ -705,11 +721,11 @@
   },
   "lenovo a10-70f": {
     "deviceName": "A10-70F",
-    "marketingName": "Tab 2 Wi-Fi",
+    "marketingName": "Tab 2 A10-70 Wi-Fi",
     "manufacturer": "lenovo",
     "brand": "lenovo",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 0,
     "display": {
       "width": 1920,
       "height": 1200,
@@ -849,7 +865,7 @@
   },
   "lenovo tb-x104f": {
     "deviceName": "TB-X104F",
-    "marketingName": "Tab E10 WiFi",
+    "marketingName": "Tab E10 Wi-Fi",
     "manufacturer": "lenovo",
     "brand": "lenovo",
     "dualOrientation": null,
@@ -879,13 +895,45 @@
     "type": "tablet",
     "platform": "android"
   },
-  "lenovo tb-x606f": {
-    "deviceName": "TB-X606F",
-    "marketingName": "Tab M10 FHD Wi-Fi (2nd Gen.)",
+  "lenovo tb-x605fc": {
+    "deviceName": "TB-X605FC",
+    "marketingName": "Tab M10 FHD REL Wi-Fi",
     "manufacturer": "lenovo",
     "brand": "lenovo",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "size": 10.1
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "lenovo tb-x606f": {
+    "deviceName": "TB-X606F",
+    "marketingName": "Tab M10 FHD Wi-Fi",
+    "manufacturer": "lenovo",
+    "brand": "lenovo",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "size": 10.3
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "lenovo tb-x606": {
+    "deviceName": "TB-X606",
+    "marketingName": "Tab M10 FHD Wi-Fi",
+    "manufacturer": "lenovo",
+    "brand": "lenovo",
+    "dualOrientation": true,
+    "simCount": 0,
     "display": {
       "width": 1920,
       "height": 1200,
@@ -897,7 +945,7 @@
   },
   "lenovo tb-x505f": {
     "deviceName": "TB-X505F",
-    "marketingName": "Tab M10 HD WiFi",
+    "marketingName": "Tab M10 HD Wi-Fi",
     "manufacturer": "lenovo",
     "brand": "lenovo",
     "dualOrientation": null,
@@ -1217,11 +1265,11 @@
   },
   "lenovo tb3-x70f": {
     "deviceName": "TB3-X70F",
-    "marketingName": "Yoga Tab 3 10 Plus Wi-Fi",
+    "marketingName": "Tab3 10 Business Wi-Fi",
     "manufacturer": "lenovo",
     "brand": "lenovo",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 0,
     "display": {
       "width": 1920,
       "height": 1200,
@@ -1410,6 +1458,22 @@
   "lenovo tb-j606f": {
     "deviceName": "TB-J606F",
     "marketingName": "Tab P11",
+    "manufacturer": "lenovo",
+    "brand": "lenovo",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 2000,
+      "height": 1200,
+      "touch": true,
+      "size": 11
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "lenovo tb-j616f": {
+    "deviceName": "TB-J616F",
+    "marketingName": "Tab P11 Plus",
     "manufacturer": "lenovo",
     "brand": "lenovo",
     "dualOrientation": true,

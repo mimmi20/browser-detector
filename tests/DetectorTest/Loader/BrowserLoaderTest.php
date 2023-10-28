@@ -25,6 +25,7 @@ use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
+use RuntimeException;
 use Stringable;
 use UaBrowserType\TypeLoaderInterface;
 use UaBrowserType\Unknown;
@@ -37,6 +38,7 @@ final class BrowserLoaderTest extends TestCase
     /**
      * @throws NotFoundException
      * @throws UnexpectedValueException
+     * @throws RuntimeException
      */
     public function testInvokeNotInCache(): void
     {
@@ -109,6 +111,7 @@ final class BrowserLoaderTest extends TestCase
     /**
      * @throws NotFoundException
      * @throws UnexpectedValueException
+     * @throws RuntimeException
      */
     public function testInvokeNullInCache(): void
     {
@@ -185,6 +188,7 @@ final class BrowserLoaderTest extends TestCase
      * @throws Exception
      * @throws NotFoundException
      * @throws UnexpectedValueException
+     * @throws RuntimeException
      */
     public function testInvokeNoVersion(): void
     {
@@ -283,6 +287,7 @@ final class BrowserLoaderTest extends TestCase
      * @throws Exception
      * @throws NotFoundException
      * @throws UnexpectedValueException
+     * @throws RuntimeException
      */
     public function testInvokeGenericVersionAndEngineException(): void
     {
@@ -384,6 +389,7 @@ final class BrowserLoaderTest extends TestCase
      * @throws Exception
      * @throws NotFoundException
      * @throws UnexpectedValueException
+     * @throws RuntimeException
      */
     public function testInvokeGenericVersionAndEngineInvalidException(): void
     {
@@ -487,6 +493,7 @@ final class BrowserLoaderTest extends TestCase
      * @throws Exception
      * @throws NotFoundException
      * @throws UnexpectedValueException
+     * @throws RuntimeException
      */
     public function testInvokeVersionAndEngine(): void
     {
@@ -585,6 +592,7 @@ final class BrowserLoaderTest extends TestCase
      * @throws Exception
      * @throws NotFoundException
      * @throws UnexpectedValueException
+     * @throws RuntimeException
      */
     public function testInvokeVersionAndEngineWithException(): void
     {
@@ -686,6 +694,7 @@ final class BrowserLoaderTest extends TestCase
      * @throws Exception
      * @throws NotFoundException
      * @throws UnexpectedValueException
+     * @throws RuntimeException
      */
     public function testInvokeVersionAndEngineWithException2(): void
     {
@@ -787,6 +796,7 @@ final class BrowserLoaderTest extends TestCase
      * @throws Exception
      * @throws NotFoundException
      * @throws UnexpectedValueException
+     * @throws RuntimeException
      */
     public function testInvokeGenericVersion2(): void
     {

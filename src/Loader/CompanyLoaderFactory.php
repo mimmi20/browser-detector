@@ -13,6 +13,7 @@ declare(strict_types = 1);
 namespace BrowserDetector\Loader;
 
 use BrowserDetector\Loader\Helper\Data;
+use RuntimeException;
 
 final class CompanyLoaderFactory implements CompanyLoaderFactoryInterface
 {
@@ -20,7 +21,7 @@ final class CompanyLoaderFactory implements CompanyLoaderFactoryInterface
 
     private CompanyLoader | null $loader = null;
 
-    /** @throws void */
+    /** @throws RuntimeException */
     public function __invoke(): CompanyLoaderInterface
     {
         if ($this->loader === null) {

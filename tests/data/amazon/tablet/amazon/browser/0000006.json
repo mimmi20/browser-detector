@@ -48,11 +48,11 @@
     "device": {
       "architecture": null,
       "deviceName": "KFAUWI",
-      "marketingName": "Fire (2017)",
+      "marketingName": "Fire 7 (2017)",
       "manufacturer": "amazon",
       "brand": "amazon",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 1024,
         "height": 600,
@@ -90,11 +90,11 @@
     "device": {
       "architecture": null,
       "deviceName": "KFMEWI",
-      "marketingName": "Fire HD 8 (5th Gen.)",
+      "marketingName": "Fire HD 8 (2015)",
       "manufacturer": "amazon",
       "brand": "amazon",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 1280,
         "height": 800,
@@ -132,11 +132,11 @@
     "device": {
       "architecture": null,
       "deviceName": "KFASWI",
-      "marketingName": "Fire HD 7 (4th Gen.)",
+      "marketingName": "Fire HD 7 (2014)",
       "manufacturer": "amazon",
       "brand": "amazon",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 1280,
         "height": 800,
@@ -257,17 +257,17 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "Kindle",
-      "marketingName": "Kindle",
+      "deviceName": "KFONWI",
+      "marketingName": "Fire HD 8 (2020)",
       "manufacturer": "amazon",
       "brand": "amazon",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
-        "width": 800,
-        "height": 600,
+        "width": 1280,
+        "height": 800,
         "touch": true,
-        "size": null
+        "size": 8
       },
       "type": "tablet",
       "ismobile": true,
@@ -295,16 +295,58 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; AFTR) AppleWebKit/537.36 (KHTML, like Gecko) Silk/83.3.19 like Chrome/83.0.4103.106 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Kindle",
+      "marketingName": "Kindle",
+      "manufacturer": "amazon",
+      "brand": "amazon",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 800,
+        "height": 600,
+        "touch": true,
+        "size": null
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Silk",
+      "version": "83.3.19",
+      "manufacturer": "amazon",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "83.0.4103.106",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; KFARWI) AppleWebKit/537.36 (KHTML, like Gecko) Silk/83.4.3 like Chrome/83.0.4103.106 Safari/537.36"
     },
     "device": {
       "architecture": null,
       "deviceName": "KFARWI",
-      "marketingName": "Fire HD 6 (4th Gen.)",
+      "marketingName": "Fire HD 6 (2014)",
       "manufacturer": "amazon",
       "brand": "amazon",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 1280,
         "height": 800,
@@ -342,11 +384,11 @@
     "device": {
       "architecture": null,
       "deviceName": "KFTBWI",
-      "marketingName": "Fire HD 10 (5th Gen.)",
+      "marketingName": "Fire HD 10 (2015)",
       "manufacturer": "amazon",
       "brand": "amazon",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 1280,
         "height": 800,
@@ -426,11 +468,11 @@
     "device": {
       "architecture": null,
       "deviceName": "KFAPWI",
-      "marketingName": "Kindle Fire HDX 8.9 (3rd Gen.)",
+      "marketingName": "Kindle Fire HDX 8.9 (2013)",
       "manufacturer": "amazon",
       "brand": "amazon",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 2560,
         "height": 1600,
@@ -594,11 +636,11 @@
     "device": {
       "architecture": null,
       "deviceName": "KFAUWI",
-      "marketingName": "Fire (2017)",
+      "marketingName": "Fire 7 (2017)",
       "manufacturer": "amazon",
       "brand": "amazon",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 1024,
         "height": 600,
@@ -678,11 +720,11 @@
     "device": {
       "architecture": null,
       "deviceName": "KFFOWI",
-      "marketingName": "Fire (5th Gen.)",
+      "marketingName": "Fire (2015)",
       "manufacturer": "amazon",
       "brand": "amazon",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 1024,
         "height": 600,
@@ -762,11 +804,11 @@
     "device": {
       "architecture": null,
       "deviceName": "KFASWI",
-      "marketingName": "Fire HD 7 (4th Gen.)",
+      "marketingName": "Fire HD 7 (2014)",
       "manufacturer": "amazon",
       "brand": "amazon",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 1280,
         "height": 800,
@@ -807,8 +849,8 @@
       "marketingName": "Fire HD 8 (2016)",
       "manufacturer": "amazon",
       "brand": "amazon",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 1280,
         "height": 800,
@@ -846,11 +888,11 @@
     "device": {
       "architecture": null,
       "deviceName": "KFTBWI",
-      "marketingName": "Fire HD 10 (5th Gen.)",
+      "marketingName": "Fire HD 10 (2015)",
       "manufacturer": "amazon",
       "brand": "amazon",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 1280,
         "height": 800,
@@ -930,11 +972,11 @@
     "device": {
       "architecture": null,
       "deviceName": "KFARWI",
-      "marketingName": "Fire HD 6 (4th Gen.)",
+      "marketingName": "Fire HD 6 (2014)",
       "manufacturer": "amazon",
       "brand": "amazon",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 1280,
         "height": 800,
@@ -950,6 +992,48 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "5.1.1",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Silk",
+      "version": "84.3.5",
+      "manufacturer": "amazon",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "84.0.4147.125",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; KFONWI) AppleWebKit/537.36 (KHTML, like Gecko) Silk/84.3.5 like Chrome/84.0.4147.125 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "KFONWI",
+      "marketingName": "Fire HD 8 (2020)",
+      "manufacturer": "amazon",
+      "brand": "amazon",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 8
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
       "manufacturer": "google"
     },
     "client": {
@@ -1056,11 +1140,11 @@
     "device": {
       "architecture": null,
       "deviceName": "KFAUWI",
-      "marketingName": "Fire (2017)",
+      "marketingName": "Fire 7 (2017)",
       "manufacturer": "amazon",
       "brand": "amazon",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 1024,
         "height": 600,
@@ -1139,17 +1223,17 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "Kindle",
-      "marketingName": "Kindle",
+      "deviceName": "KFONWI",
+      "marketingName": "Fire HD 8 (2020)",
       "manufacturer": "amazon",
       "brand": "amazon",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
-        "width": 800,
-        "height": 600,
+        "width": 1280,
+        "height": 800,
         "touch": true,
-        "size": null
+        "size": 8
       },
       "type": "tablet",
       "ismobile": true,
@@ -1185,8 +1269,8 @@
       "marketingName": "Fire HD 8 (2016)",
       "manufacturer": "amazon",
       "brand": "amazon",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 1280,
         "height": 800,
@@ -1308,11 +1392,11 @@
     "device": {
       "architecture": null,
       "deviceName": "KFFOWI",
-      "marketingName": "Fire (5th Gen.)",
+      "marketingName": "Fire (2015)",
       "manufacturer": "amazon",
       "brand": "amazon",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 1024,
         "height": 600,
@@ -1476,11 +1560,11 @@
     "device": {
       "architecture": null,
       "deviceName": "KFTBWI",
-      "marketingName": "Fire HD 10 (5th Gen.)",
+      "marketingName": "Fire HD 10 (2015)",
       "manufacturer": "amazon",
       "brand": "amazon",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 1280,
         "height": 800,
@@ -1518,11 +1602,11 @@
     "device": {
       "architecture": null,
       "deviceName": "KFARWI",
-      "marketingName": "Fire HD 6 (4th Gen.)",
+      "marketingName": "Fire HD 6 (2014)",
       "manufacturer": "amazon",
       "brand": "amazon",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 1280,
         "height": 800,
@@ -1605,8 +1689,8 @@
       "marketingName": "Fire HD 8 (2016)",
       "manufacturer": "amazon",
       "brand": "amazon",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 1280,
         "height": 800,
@@ -1686,11 +1770,11 @@
     "device": {
       "architecture": null,
       "deviceName": "KFFOWI",
-      "marketingName": "Fire (5th Gen.)",
+      "marketingName": "Fire (2015)",
       "manufacturer": "amazon",
       "brand": "amazon",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 1024,
         "height": 600,
@@ -1812,11 +1896,11 @@
     "device": {
       "architecture": null,
       "deviceName": "KFAUWI",
-      "marketingName": "Fire (2017)",
+      "marketingName": "Fire 7 (2017)",
       "manufacturer": "amazon",
       "brand": "amazon",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 1024,
         "height": 600,
@@ -1853,17 +1937,17 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "Kindle",
-      "marketingName": "Kindle",
+      "deviceName": "KFONWI",
+      "marketingName": "Fire HD 8 (2020)",
       "manufacturer": "amazon",
       "brand": "amazon",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
-        "width": 800,
-        "height": 600,
+        "width": 1280,
+        "height": 800,
         "touch": true,
-        "size": null
+        "size": 8
       },
       "type": "tablet",
       "ismobile": true,
@@ -1896,11 +1980,11 @@
     "device": {
       "architecture": null,
       "deviceName": "KFTBWI",
-      "marketingName": "Fire HD 10 (5th Gen.)",
+      "marketingName": "Fire HD 10 (2015)",
       "manufacturer": "amazon",
       "brand": "amazon",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 1280,
         "height": 800,
@@ -2025,8 +2109,8 @@
       "marketingName": "Fire HD 8 (2016)",
       "manufacturer": "amazon",
       "brand": "amazon",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 1280,
         "height": 800,
@@ -2064,11 +2148,11 @@
     "device": {
       "architecture": null,
       "deviceName": "KFMEWI",
-      "marketingName": "Fire HD 8 (5th Gen.)",
+      "marketingName": "Fire HD 8 (2015)",
       "manufacturer": "amazon",
       "brand": "amazon",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 1280,
         "height": 800,
@@ -2106,11 +2190,11 @@
     "device": {
       "architecture": null,
       "deviceName": "KFASWI",
-      "marketingName": "Fire HD 7 (4th Gen.)",
+      "marketingName": "Fire HD 7 (2014)",
       "manufacturer": "amazon",
       "brand": "amazon",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 1280,
         "height": 800,
@@ -2316,11 +2400,11 @@
     "device": {
       "architecture": null,
       "deviceName": "KFFOWI",
-      "marketingName": "Fire (5th Gen.)",
+      "marketingName": "Fire (2015)",
       "manufacturer": "amazon",
       "brand": "amazon",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 1024,
         "height": 600,
@@ -2361,8 +2445,8 @@
       "marketingName": "Fire HD 8 (2016)",
       "manufacturer": "amazon",
       "brand": "amazon",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 1280,
         "height": 800,
@@ -2403,8 +2487,8 @@
       "marketingName": "Fire HD 8 (2016)",
       "manufacturer": "amazon",
       "brand": "amazon",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 1280,
         "height": 800,
@@ -2442,11 +2526,11 @@
     "device": {
       "architecture": null,
       "deviceName": "KFMEWI",
-      "marketingName": "Fire HD 8 (5th Gen.)",
+      "marketingName": "Fire HD 8 (2015)",
       "manufacturer": "amazon",
       "brand": "amazon",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 1280,
         "height": 800,
@@ -2483,17 +2567,17 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "Kindle",
-      "marketingName": "Kindle",
+      "deviceName": "KFONWI",
+      "marketingName": "Fire HD 8 (2020)",
       "manufacturer": "amazon",
       "brand": "amazon",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
-        "width": 800,
-        "height": 600,
+        "width": 1280,
+        "height": 800,
         "touch": true,
-        "size": null
+        "size": 8
       },
       "type": "tablet",
       "ismobile": true,
@@ -2526,11 +2610,11 @@
     "device": {
       "architecture": null,
       "deviceName": "KFASWI",
-      "marketingName": "Fire HD 7 (4th Gen.)",
+      "marketingName": "Fire HD 7 (2014)",
       "manufacturer": "amazon",
       "brand": "amazon",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 1280,
         "height": 800,
@@ -2568,11 +2652,11 @@
     "device": {
       "architecture": null,
       "deviceName": "KFTBWI",
-      "marketingName": "Fire HD 10 (5th Gen.)",
+      "marketingName": "Fire HD 10 (2015)",
       "manufacturer": "amazon",
       "brand": "amazon",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 1280,
         "height": 800,
@@ -2610,11 +2694,11 @@
     "device": {
       "architecture": null,
       "deviceName": "KFSAWI",
-      "marketingName": "Fire HDX 8.9 (4th Gen.)",
+      "marketingName": "Fire HDX 8.9 (2014)",
       "manufacturer": "amazon",
       "brand": "amazon",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 2560,
         "height": 1600,
@@ -2736,11 +2820,11 @@
     "device": {
       "architecture": null,
       "deviceName": "KFAUWI",
-      "marketingName": "Fire (2017)",
+      "marketingName": "Fire 7 (2017)",
       "manufacturer": "amazon",
       "brand": "amazon",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 1024,
         "height": 600,
@@ -2865,8 +2949,8 @@
       "marketingName": "Fire HD 8 (2016)",
       "manufacturer": "amazon",
       "brand": "amazon",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 1280,
         "height": 800,
@@ -2904,11 +2988,11 @@
     "device": {
       "architecture": null,
       "deviceName": "KFARWI",
-      "marketingName": "Fire HD 6 (4th Gen.)",
+      "marketingName": "Fire HD 6 (2014)",
       "manufacturer": "amazon",
       "brand": "amazon",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 1280,
         "height": 800,
@@ -2946,11 +3030,11 @@
     "device": {
       "architecture": null,
       "deviceName": "KFAUWI",
-      "marketingName": "Fire (2017)",
+      "marketingName": "Fire 7 (2017)",
       "manufacturer": "amazon",
       "brand": "amazon",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 1024,
         "height": 600,
@@ -2988,11 +3072,11 @@
     "device": {
       "architecture": null,
       "deviceName": "KFTBWI",
-      "marketingName": "Fire HD 10 (5th Gen.)",
+      "marketingName": "Fire HD 10 (2015)",
       "manufacturer": "amazon",
       "brand": "amazon",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 1280,
         "height": 800,
@@ -3030,11 +3114,11 @@
     "device": {
       "architecture": null,
       "deviceName": "KFFOWI",
-      "marketingName": "Fire (5th Gen.)",
+      "marketingName": "Fire (2015)",
       "manufacturer": "amazon",
       "brand": "amazon",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 1024,
         "height": 600,
@@ -3198,11 +3282,11 @@
     "device": {
       "architecture": null,
       "deviceName": "KFASWI",
-      "marketingName": "Fire HD 7 (4th Gen.)",
+      "marketingName": "Fire HD 7 (2014)",
       "manufacturer": "amazon",
       "brand": "amazon",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 1280,
         "height": 800,
@@ -3324,11 +3408,11 @@
     "device": {
       "architecture": null,
       "deviceName": "KFFOWI",
-      "marketingName": "Fire (5th Gen.)",
+      "marketingName": "Fire (2015)",
       "manufacturer": "amazon",
       "brand": "amazon",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 1024,
         "height": 600,
@@ -3366,11 +3450,11 @@
     "device": {
       "architecture": null,
       "deviceName": "KFASWI",
-      "marketingName": "Fire HD 7 (4th Gen.)",
+      "marketingName": "Fire HD 7 (2014)",
       "manufacturer": "amazon",
       "brand": "amazon",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 1280,
         "height": 800,
@@ -3449,17 +3533,17 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "Kindle",
-      "marketingName": "Kindle",
+      "deviceName": "KFONWI",
+      "marketingName": "Fire HD 8 (2020)",
       "manufacturer": "amazon",
       "brand": "amazon",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
-        "width": 800,
-        "height": 600,
+        "width": 1280,
+        "height": 800,
         "touch": true,
-        "size": null
+        "size": 8
       },
       "type": "tablet",
       "ismobile": true,
@@ -3495,8 +3579,8 @@
       "marketingName": "Fire HD 8 (2016)",
       "manufacturer": "amazon",
       "brand": "amazon",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 1280,
         "height": 800,
@@ -3660,11 +3744,11 @@
     "device": {
       "architecture": null,
       "deviceName": "KFTBWI",
-      "marketingName": "Fire HD 10 (5th Gen.)",
+      "marketingName": "Fire HD 10 (2015)",
       "manufacturer": "amazon",
       "brand": "amazon",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 1280,
         "height": 800,
@@ -3747,8 +3831,8 @@
       "marketingName": "Fire HD 8 (2016)",
       "manufacturer": "amazon",
       "brand": "amazon",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 1280,
         "height": 800,
@@ -3786,11 +3870,11 @@
     "device": {
       "architecture": null,
       "deviceName": "KFSAWI",
-      "marketingName": "Fire HDX 8.9 (4th Gen.)",
+      "marketingName": "Fire HDX 8.9 (2014)",
       "manufacturer": "amazon",
       "brand": "amazon",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 2560,
         "height": 1600,
@@ -3828,11 +3912,11 @@
     "device": {
       "architecture": null,
       "deviceName": "KFAUWI",
-      "marketingName": "Fire (2017)",
+      "marketingName": "Fire 7 (2017)",
       "manufacturer": "amazon",
       "brand": "amazon",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 1024,
         "height": 600,
@@ -3954,11 +4038,11 @@
     "device": {
       "architecture": null,
       "deviceName": "KFASWI",
-      "marketingName": "Fire HD 7 (4th Gen.)",
+      "marketingName": "Fire HD 7 (2014)",
       "manufacturer": "amazon",
       "brand": "amazon",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 1280,
         "height": 800,
@@ -3996,11 +4080,11 @@
     "device": {
       "architecture": null,
       "deviceName": "KFFOWI",
-      "marketingName": "Fire (5th Gen.)",
+      "marketingName": "Fire (2015)",
       "manufacturer": "amazon",
       "brand": "amazon",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 1024,
         "height": 600,
@@ -4112,90 +4196,6 @@
     "engine": {
       "name": "Blink",
       "version": "90.0.4430.210",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; KFGIWI) AppleWebKit/537.36 (KHTML, like Gecko) Silk/91.1.153 like Chrome/91.0.4472.120 Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "KFGIWI",
-      "marketingName": "Fire HD 8 (2016)",
-      "manufacturer": "amazon",
-      "brand": "amazon",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1280,
-        "height": 800,
-        "touch": true,
-        "size": 8
-      },
-      "type": "tablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.1.1",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Silk",
-      "version": "91.1.153",
-      "manufacturer": "amazon",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "91.0.4472.120",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; KFDOWI) AppleWebKit/537.36 (KHTML, like Gecko) Silk/91.1.153 like Chrome/91.0.4472.120 Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "KFDOWI",
-      "marketingName": "Fire HD 8 (2017)",
-      "manufacturer": "amazon",
-      "brand": "amazon",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1280,
-        "height": 800,
-        "touch": true,
-        "size": 7.1
-      },
-      "type": "tablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.1.1",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Silk",
-      "version": "91.1.153",
-      "manufacturer": "amazon",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "91.0.4472.120",
       "manufacturer": "google"
     }
   }

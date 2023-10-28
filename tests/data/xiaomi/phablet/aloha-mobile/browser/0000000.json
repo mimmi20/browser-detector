@@ -43,21 +43,21 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 12; M2007J17G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.5249.65 Mobile Safari/537.36 AlohaBrowser/4.8.5"
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; M2103K19G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.96 Mobile Safari/537.36 AlohaBrowser/3.12.1"
     },
     "device": {
       "architecture": null,
-      "deviceName": "M2007J17G",
-      "marketingName": "Mi 10T Lite 5G (Global)",
+      "deviceName": "M2103K19G",
+      "marketingName": "Redmi Note 10 5G",
       "manufacturer": "xiaomi",
       "brand": "xiaomi",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 2400,
         "height": 1080,
         "touch": true,
-        "size": 6.7
+        "size": 6.5
       },
       "type": "phablet",
       "ismobile": true,
@@ -67,19 +67,19 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "12.0.0",
+      "version": "11.0.0",
       "manufacturer": "google"
     },
     "client": {
       "name": "Aloha Browser",
-      "version": "4.8.5",
+      "version": "3.12.1",
       "manufacturer": "aloha-mobile",
       "type": "browser",
       "isbot": false
     },
     "engine": {
       "name": "Blink",
-      "version": "106.0.5249.65",
+      "version": "83.0.4103.96",
       "manufacturer": "google"
     }
   }

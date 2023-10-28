@@ -362,5 +362,17 @@
       "search": null
     },
     "engine": "unknown"
+  },
+  "postman-runtime": {
+    "name": "Postman Desktop",
+    "manufacturer": "postman",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "PostmanRuntime"
+      ]
+    },
+    "engine": "unknown"
   }
 }

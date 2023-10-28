@@ -25,6 +25,7 @@ use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
+use RuntimeException;
 use Stringable;
 use UnexpectedValueException;
 
@@ -35,6 +36,7 @@ final class EngineLoaderTest extends TestCase
     /**
      * @throws NotFoundException
      * @throws UnexpectedValueException
+     * @throws RuntimeException
      */
     public function testInvokeNotInCache(): void
     {
@@ -102,6 +104,7 @@ final class EngineLoaderTest extends TestCase
     /**
      * @throws NotFoundException
      * @throws UnexpectedValueException
+     * @throws RuntimeException
      */
     public function testInvokeNullInCache(): void
     {
@@ -173,6 +176,7 @@ final class EngineLoaderTest extends TestCase
      * @throws Exception
      * @throws NotFoundException
      * @throws UnexpectedValueException
+     * @throws RuntimeException
      */
     public function testInvokeNoVersion(): void
     {
@@ -259,6 +263,7 @@ final class EngineLoaderTest extends TestCase
      * @throws Exception
      * @throws NotFoundException
      * @throws UnexpectedValueException
+     * @throws RuntimeException
      */
     public function testInvokeGenericVersion(): void
     {
@@ -345,6 +350,7 @@ final class EngineLoaderTest extends TestCase
      * @throws Exception
      * @throws NotFoundException
      * @throws UnexpectedValueException
+     * @throws RuntimeException
      */
     public function testInvokeVersion(): void
     {
@@ -431,6 +437,7 @@ final class EngineLoaderTest extends TestCase
      * @throws Exception
      * @throws NotFoundException
      * @throws UnexpectedValueException
+     * @throws RuntimeException
      */
     public function testInvokeVersionWithException(): void
     {
@@ -518,6 +525,7 @@ final class EngineLoaderTest extends TestCase
      * @throws Exception
      * @throws NotFoundException
      * @throws UnexpectedValueException
+     * @throws RuntimeException
      */
     public function testInvokeGenericVersion2(): void
     {

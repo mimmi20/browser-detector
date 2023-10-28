@@ -211,48 +211,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.2; de-de; GT-P1000 Build/FROYO) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1 Flipboard/1.9.11/226,1.9.11.226,2012-12-04 16:21, +0100, de"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "GT-P1000",
-      "marketingName": "Galaxy Tab 7.0",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1024,
-        "height": 600,
-        "touch": true,
-        "size": 7
-      },
-      "type": "tablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "2.2.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Flipboard App",
-      "version": "1.9.11",
-      "manufacturer": "flipboard",
-      "type": "mobile-application",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "533.1.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; U; Android 3.2; de-de; GT-P6211 Build/HTJ85B) AppleWebKit/534.13 (KHTML, like Gecko) Version/4.0 Safari/534.13 Flipboard/1.9.6/126,1.9.6.126,2012-08-10 18:42, de"
     },
     "device": {
@@ -300,7 +258,7 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-T580",
-      "marketingName": "Galaxy Tab A (2016, 10.1,  Wi-Fi)",
+      "marketingName": "Galaxy Tab A 10.1 Wi-Fi (2016)",
       "manufacturer": "samsung",
       "brand": "samsung",
       "dualOrientation": true,
@@ -342,11 +300,11 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-T813",
-      "marketingName": "Galaxy Tab S2 (9.7, 2016,  Wi-Fi)",
+      "marketingName": "Galaxy Tab S2 9.7 Wi-Fi (2016)",
       "manufacturer": "samsung",
       "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 2048,
         "height": 1536,
@@ -384,7 +342,7 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-T230NU",
-      "marketingName": "Galaxy Tab 4 7.0 (Wi-Fi) 8GB",
+      "marketingName": "Galaxy Tab 4 7.0 Wi-Fi 8GB",
       "manufacturer": "samsung",
       "brand": "samsung",
       "dualOrientation": null,
@@ -426,7 +384,7 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-T580",
-      "marketingName": "Galaxy Tab A (2016, 10.1,  Wi-Fi)",
+      "marketingName": "Galaxy Tab A 10.1 Wi-Fi (2016)",
       "manufacturer": "samsung",
       "brand": "samsung",
       "dualOrientation": true,
@@ -468,11 +426,11 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-T800",
-      "marketingName": "Galaxy Tab S 10.5",
+      "marketingName": "Galaxy Tab S 10.5 Wi-Fi",
       "manufacturer": "samsung",
       "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 2560,
         "height": 1600,
@@ -510,7 +468,7 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-T580",
-      "marketingName": "Galaxy Tab A (2016, 10.1,  Wi-Fi)",
+      "marketingName": "Galaxy Tab A 10.1 Wi-Fi (2016)",
       "manufacturer": "samsung",
       "brand": "samsung",
       "dualOrientation": true,
@@ -552,7 +510,7 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-T580",
-      "marketingName": "Galaxy Tab A (2016, 10.1,  Wi-Fi)",
+      "marketingName": "Galaxy Tab A 10.1 Wi-Fi (2016)",
       "manufacturer": "samsung",
       "brand": "samsung",
       "dualOrientation": true,

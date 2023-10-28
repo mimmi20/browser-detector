@@ -15,6 +15,7 @@ namespace BrowserDetector\Loader;
 use BrowserDetector\Loader\Helper\DataInterface;
 use BrowserDetector\Version\VersionBuilderInterface;
 use Psr\Log\LoggerInterface;
+use RuntimeException;
 use stdClass;
 use UnexpectedValueException;
 
@@ -27,7 +28,7 @@ final class EngineLoader implements EngineLoaderInterface
 
     public const DATA_PATH = __DIR__ . '/../../data/engines';
 
-    /** @throws void */
+    /** @throws RuntimeException */
     public function __construct(
         private readonly LoggerInterface $logger,
         private readonly DataInterface $initData,

@@ -15,6 +15,7 @@ namespace BrowserDetector\Loader;
 use BrowserDetector\Loader\Helper\DataInterface;
 use BrowserDetector\Version\VersionBuilderInterface;
 use Psr\Log\LoggerInterface;
+use RuntimeException;
 use stdClass;
 use UaBrowserType\TypeLoaderInterface;
 use UaBrowserType\Unknown;
@@ -30,7 +31,7 @@ final class BrowserLoader implements BrowserLoaderInterface
 
     public const DATA_PATH = __DIR__ . '/../../data/browsers';
 
-    /** @throws void */
+    /** @throws RuntimeException */
     public function __construct(
         private readonly LoggerInterface $logger,
         private readonly DataInterface $initData,

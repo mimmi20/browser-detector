@@ -85,10 +85,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (X11; Linux x86_64; Quest 2) AppleWebKit/537.36 (KHTML, like Gecko) OculusBrowser/24.3.0.4.63.416895357 SamsungBrowser/4.0 Chrome/106.0.5249.168 VR Safari/537.36",
-      "sec-ch-ua": "\"Chromium\";v=\"106\", \"Oculus Browser\";v=\"24\", \"Not;A=Brand\";v=\"99\"",
-      "sec-ch-ua-platform": "Linux",
-      "sec-ch-ua-mobile": "?0"
+      "user-agent": "Mozilla/5.0 (X11; Linux x86_64; PICO 4 OS5.4.0 like Quest) AppleWebKit/537.36 (KHTML, like Gecko) PicoBrowser/3.3.22 Chrome/105.0.5195.68 VR Safari/537.36 OculusBrowser/7.0"
     },
     "device": {
       "architecture": null,
@@ -117,14 +114,14 @@
     },
     "client": {
       "name": "OculusBrowser",
-      "version": "24.3.0.4.63",
+      "version": "7.0.0",
       "manufacturer": "facebook",
       "type": "browser",
       "isbot": false
     },
     "engine": {
       "name": "Blink",
-      "version": "106.0.5249.168",
+      "version": "105.0.5195.68",
       "manufacturer": "google"
     }
   }

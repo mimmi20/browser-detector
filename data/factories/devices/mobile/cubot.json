@@ -1,5 +1,6 @@
 {
   "rules": {
+    "/quest/i": "cubot quest",
     "/p20/i": "cubot p20",
     "/nova/i": "cubot nova",
     "/power/i": "cubot power",
@@ -16,7 +17,8 @@
     "/[_ ]j3/i": "cubot j3",
     "/ h3[ )]/i": "cubot h3",
     "/ h1[ )]/i": "cubot h1",
-    "/note_s/i": "cubot note s",
+    "/note[ _]s/i": "cubot note s",
+    "/note[ _]7/i": "cubot note 7",
     "/r11[ )]/i": "cubot r11",
     "/p12[ )]/i": "cubot p12",
     "/p7[ )]/i": "cubot p7",
@@ -57,6 +59,7 @@
     "/gt90/i": "cubot gt90",
     "/gt72e/i": "cubot gt72e",
     "/gt72\\+/i": "cubot gt72+",
+    "/gt20/i": "cubot gt20",
     "/c11/i": "cubot c11",
     "/c9\\+/i": "cubot c9+",
     "/c7/i": "cubot c7"

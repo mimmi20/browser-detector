@@ -33,11 +33,11 @@
   },
   "huawei bah-w09": {
     "deviceName": "BAH-W09",
-    "marketingName": "M3 Lite",
+    "marketingName": "MediaPad M3 Lite 10",
     "manufacturer": "huawei",
     "brand": "huawei",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 0,
     "display": {
       "width": 1920,
       "height": 1200,
@@ -49,11 +49,11 @@
   },
   "huawei mrx-w09": {
     "deviceName": "MRX-W09",
-    "marketingName": "MatePad Pro",
+    "marketingName": "MatePad Pro 10.8 Wi-Fi (2019)",
     "manufacturer": "huawei",
     "brand": "huawei",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 0,
     "display": {
       "width": 2560,
       "height": 1600,
@@ -65,11 +65,11 @@
   },
   "huawei mrx-w19": {
     "deviceName": "MRX-W19",
-    "marketingName": "MatePad Pro",
+    "marketingName": "MatePad Pro 10.8 Wi-Fi (2019)",
     "manufacturer": "huawei",
     "brand": "huawei",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 0,
     "display": {
       "width": 2560,
       "height": 1600,
@@ -223,29 +223,13 @@
     "type": "tablet",
     "platform": "android"
   },
-  "huawei m2-a01l": {
-    "deviceName": "M2-A01L",
-    "marketingName": "MediaPad M2 10.0",
-    "manufacturer": "huawei",
-    "brand": "huawei",
-    "dualOrientation": null,
-    "simCount": null,
-    "display": {
-      "width": 1920,
-      "height": 1200,
-      "touch": true,
-      "size": 10.1
-    },
-    "type": "tablet",
-    "platform": "android"
-  },
   "huawei m2-a01w": {
     "deviceName": "M2-A01W",
-    "marketingName": "MediaPad M2 10.0",
+    "marketingName": "MediaPad M2 10.0 Wi-Fi",
     "manufacturer": "huawei",
     "brand": "huawei",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 0,
     "display": {
       "width": 1920,
       "height": 1200,
@@ -635,6 +619,150 @@
       "height": 1200,
       "touch": true,
       "size": 10.1
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "huawei ags3k-w09": {
+    "deviceName": "AGS3K-W09",
+    "marketingName": "MatePad T 10s Wi-Fi",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "size": 10.1
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "huawei dby-w09": {
+    "deviceName": "DBY-W09",
+    "marketingName": "MatePad 11 Wi-Fi (2021)",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 2560,
+      "height": 1600,
+      "touch": true,
+      "size": 10.95
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "huawei agr-w09": {
+    "deviceName": "AGR-W09",
+    "marketingName": "Pad X6",
+    "manufacturer": "huawei",
+    "brand": "honor",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": 9.7
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "huawei agrk-w09": {
+    "deviceName": "AGRK-W09",
+    "marketingName": "MatePad T 10",
+    "manufacturer": "huawei",
+    "brand": "honor",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": 9.7
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "huawei bah3-w59": {
+    "deviceName": "BAH3-W59",
+    "marketingName": "MatePad 10.4 Wi-Fi",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 2000,
+      "height": 1200,
+      "touch": true,
+      "size": 10.4
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "huawei bah3-w09": {
+    "deviceName": "BAH3-W09",
+    "marketingName": "MatePad 10.4 Wi-Fi",
+    "manufacturer": "huawei",
+    "brand": "honor",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 2000,
+      "height": 1200,
+      "touch": true,
+      "size": 10.4
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "huawei bah4-w09": {
+    "deviceName": "BAH4-W09",
+    "marketingName": "MatePad 10.4 2022 Wi-Fi",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 2000,
+      "height": 1200,
+      "touch": true,
+      "size": 10.4
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "huawei bah4-w29": {
+    "deviceName": "BAH4-W29",
+    "marketingName": "MatePad 10.4 2022 Wi-Fi",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 2000,
+      "height": 1200,
+      "touch": true,
+      "size": 10.4
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "huawei bah4-w39": {
+    "deviceName": "BAH4-W39",
+    "marketingName": "MatePad 10.4 2022 Wi-Fi",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 2000,
+      "height": 1200,
+      "touch": true,
+      "size": 10.4
     },
     "type": "tablet",
     "platform": "android"

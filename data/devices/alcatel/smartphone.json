@@ -180,8 +180,8 @@
     "marketingName": "1s",
     "manufacturer": "tcl",
     "brand": "alcatel",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 1440,
       "height": 720,
@@ -196,8 +196,8 @@
     "marketingName": "1s",
     "manufacturer": "tcl",
     "brand": "alcatel",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 1440,
       "height": 720,
@@ -212,8 +212,8 @@
     "marketingName": "1s",
     "manufacturer": "tcl",
     "brand": "alcatel",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 1440,
       "height": 720,
@@ -228,8 +228,8 @@
     "marketingName": "1s",
     "manufacturer": "tcl",
     "brand": "alcatel",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 1440,
       "height": 720,
@@ -244,8 +244,8 @@
     "marketingName": "1s",
     "manufacturer": "tcl",
     "brand": "alcatel",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 1440,
       "height": 720,
@@ -7579,6 +7579,38 @@
       "height": 720,
       "touch": true,
       "size": 5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "alcatel 5024f": {
+    "deviceName": "5024F",
+    "marketingName": "1s",
+    "manufacturer": "tcl",
+    "brand": "alcatel",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1440,
+      "height": 720,
+      "touch": true,
+      "size": 5.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "alcatel 5024f_eea": {
+    "deviceName": "5024F_EEA",
+    "marketingName": "1s",
+    "manufacturer": "tcl",
+    "brand": "alcatel",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1440,
+      "height": 720,
+      "touch": true,
+      "size": 5.5
     },
     "type": "smartphone",
     "platform": "android"

@@ -43,21 +43,21 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; M2004J19C Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.101 Mobile Safari/537.36 Viber/16.7.0.10"
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; 2201117SY Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/94.0.4606.85 Mobile Safari/537.36 Viber/19.1.4.0"
     },
     "device": {
       "architecture": null,
-      "deviceName": "M2004J19C",
-      "marketingName": "Redmi 9 Standard Edition Dual SIM",
+      "deviceName": "2201117SY",
+      "marketingName": "Redmi Note 11S",
       "manufacturer": "xiaomi",
       "brand": "xiaomi",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
-        "width": 2340,
+        "width": 2400,
         "height": 1080,
         "touch": true,
-        "size": 6.5
+        "size": 6.43
       },
       "type": "phablet",
       "ismobile": true,
@@ -67,19 +67,19 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "10.0.0",
+      "version": "11.0.0",
       "manufacturer": "google"
     },
     "client": {
       "name": "Viber",
-      "version": "16.7.0.10",
+      "version": "19.1.4.0",
       "manufacturer": "rakuten",
       "type": "application",
       "isbot": false
     },
     "engine": {
       "name": "Blink",
-      "version": "83.0.4103.101",
+      "version": "94.0.4606.85",
       "manufacturer": "google"
     }
   }

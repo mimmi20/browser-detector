@@ -30,6 +30,7 @@ use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\InvalidArgumentException;
 use Psr\Log\LoggerInterface;
+use RuntimeException;
 use Stringable;
 use UnexpectedValueException;
 
@@ -40,6 +41,7 @@ final class PlatformLoaderTest extends TestCase
     /**
      * @throws NotFoundException
      * @throws UnexpectedValueException
+     * @throws RuntimeException
      */
     public function testInvokeNotInCache(): void
     {
@@ -109,6 +111,7 @@ final class PlatformLoaderTest extends TestCase
     /**
      * @throws NotFoundException
      * @throws UnexpectedValueException
+     * @throws RuntimeException
      */
     public function testInvokeNullInCache(): void
     {
@@ -180,6 +183,7 @@ final class PlatformLoaderTest extends TestCase
      * @throws Exception
      * @throws NotFoundException
      * @throws UnexpectedValueException
+     * @throws RuntimeException
      */
     public function testInvokeNoVersion(): void
     {
@@ -268,6 +272,7 @@ final class PlatformLoaderTest extends TestCase
      * @throws Exception
      * @throws NotFoundException
      * @throws UnexpectedValueException
+     * @throws RuntimeException
      */
     public function testInvokeVersionSet(): void
     {
@@ -377,6 +382,7 @@ final class PlatformLoaderTest extends TestCase
      * @throws Exception
      * @throws NotFoundException
      * @throws UnexpectedValueException
+     * @throws RuntimeException
      */
     public function testInvokeGenericVersionForMacos(): void
     {
@@ -465,6 +471,7 @@ final class PlatformLoaderTest extends TestCase
      * @throws Exception
      * @throws NotFoundException
      * @throws UnexpectedValueException
+     * @throws RuntimeException
      */
     public function testInvokeGenericVersionIos(): void
     {
@@ -553,6 +560,7 @@ final class PlatformLoaderTest extends TestCase
      * @throws Exception
      * @throws NotFoundException
      * @throws UnexpectedValueException
+     * @throws RuntimeException
      */
     public function testInvokeVersion(): void
     {
@@ -641,6 +649,7 @@ final class PlatformLoaderTest extends TestCase
      * @throws Exception
      * @throws NotFoundException
      * @throws UnexpectedValueException
+     * @throws RuntimeException
      */
     public function testInvokeVersionWithException(): void
     {
@@ -730,6 +739,7 @@ final class PlatformLoaderTest extends TestCase
      * @throws Exception
      * @throws NotFoundException
      * @throws UnexpectedValueException
+     * @throws RuntimeException
      */
     public function testInvokeNullVersion(): void
     {
@@ -818,6 +828,7 @@ final class PlatformLoaderTest extends TestCase
      * @throws Exception
      * @throws NotFoundException
      * @throws UnexpectedValueException
+     * @throws RuntimeException
      */
     public function testInvokeStringVersion(): void
     {
@@ -927,6 +938,7 @@ final class PlatformLoaderTest extends TestCase
      * @throws Exception
      * @throws NotFoundException
      * @throws UnexpectedValueException
+     * @throws RuntimeException
      */
     public function testInvokeStringVersionWithException(): void
     {
@@ -1020,6 +1032,7 @@ final class PlatformLoaderTest extends TestCase
      * @throws Exception
      * @throws NotFoundException
      * @throws UnexpectedValueException
+     * @throws RuntimeException
      */
     public function testInvokeVersionObject(): void
     {
@@ -1129,6 +1142,7 @@ final class PlatformLoaderTest extends TestCase
      * @throws Exception
      * @throws NotFoundException
      * @throws UnexpectedValueException
+     * @throws RuntimeException
      */
     public function testInvokeVersionObjectWithException(): void
     {
@@ -1222,6 +1236,7 @@ final class PlatformLoaderTest extends TestCase
      * @throws Exception
      * @throws NotFoundException
      * @throws UnexpectedValueException
+     * @throws RuntimeException
      */
     public function testInvokeVersionObjectWithException2(): void
     {
@@ -1311,6 +1326,7 @@ final class PlatformLoaderTest extends TestCase
      * @throws Exception
      * @throws NotFoundException
      * @throws UnexpectedValueException
+     * @throws RuntimeException
      */
     public function testInvokeVersionObject2(): void
     {
@@ -1400,6 +1416,7 @@ final class PlatformLoaderTest extends TestCase
      * @throws Exception
      * @throws NotFoundException
      * @throws UnexpectedValueException
+     * @throws RuntimeException
      */
     public function testInvokeVersionObject3(): void
     {
@@ -1509,6 +1526,7 @@ final class PlatformLoaderTest extends TestCase
      * @throws Exception
      * @throws NotFoundException
      * @throws UnexpectedValueException
+     * @throws RuntimeException
      */
     public function testInvokeVersionObject4(): void
     {
@@ -1618,6 +1636,7 @@ final class PlatformLoaderTest extends TestCase
      * @throws Exception
      * @throws NotFoundException
      * @throws UnexpectedValueException
+     * @throws RuntimeException
      */
     public function testInvokeVersionObject5(): void
     {
@@ -1706,6 +1725,7 @@ final class PlatformLoaderTest extends TestCase
      * @throws Exception
      * @throws NotFoundException
      * @throws UnexpectedValueException
+     * @throws RuntimeException
      */
     public function testInvokeVersionObject6(): void
     {
@@ -1794,6 +1814,7 @@ final class PlatformLoaderTest extends TestCase
      * @throws Exception
      * @throws NotFoundException
      * @throws UnexpectedValueException
+     * @throws RuntimeException
      */
     public function testInvokeGenericVersionIos2(): void
     {
@@ -1894,6 +1915,7 @@ final class PlatformLoaderTest extends TestCase
      * @throws Exception
      * @throws NotFoundException
      * @throws UnexpectedValueException
+     * @throws RuntimeException
      */
     public function testInvokeGenericVersionIos3(): void
     {

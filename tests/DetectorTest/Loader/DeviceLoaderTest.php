@@ -22,6 +22,7 @@ use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
+use RuntimeException;
 use Stringable;
 use UaDeviceType\TypeInterface;
 use UaDeviceType\TypeLoaderInterface;
@@ -32,6 +33,7 @@ final class DeviceLoaderTest extends TestCase
     /**
      * @throws NotFoundException
      * @throws UnexpectedValueException
+     * @throws RuntimeException
      */
     public function testInvokeNotInCache(): void
     {
@@ -95,6 +97,7 @@ final class DeviceLoaderTest extends TestCase
     /**
      * @throws NotFoundException
      * @throws UnexpectedValueException
+     * @throws RuntimeException
      */
     public function testInvokeNullInCache(): void
     {
@@ -160,6 +163,7 @@ final class DeviceLoaderTest extends TestCase
      * @throws Exception
      * @throws NotFoundException
      * @throws UnexpectedValueException
+     * @throws RuntimeException
      */
     public function testInvokeNoVersion(): void
     {
@@ -282,6 +286,7 @@ final class DeviceLoaderTest extends TestCase
      * @throws Exception
      * @throws NotFoundException
      * @throws UnexpectedValueException
+     * @throws RuntimeException
      */
     public function testInvokeGenericVersionAndPlatformInvalidException(): void
     {
@@ -407,6 +412,7 @@ final class DeviceLoaderTest extends TestCase
      * @throws Exception
      * @throws NotFoundException
      * @throws UnexpectedValueException
+     * @throws RuntimeException
      */
     public function testInvokeVersionAndPlatform(): void
     {

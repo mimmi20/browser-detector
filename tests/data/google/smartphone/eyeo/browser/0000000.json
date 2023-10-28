@@ -1,30 +1,21 @@
 [
   {
     "headers": {
-      "sec-ch-ua": "\"Chromium\";v=\"93\", \" Not;A Brand\";v=\"99\"",
-      "sec-ch-ua-mobile": "?1",
-      "sec-ch-ua-platform": "\"Android\"",
-      "user-agent": "Mozilla/5.0 (Linux; Android 12; Pixel 4a) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.75 Mobile Safari/537.36 ABB/3.0.1",
-      "sec-fetch-site": "cross-site",
-      "sec-fetch-mode": "navigate",
-      "sec-fetch-user": "?1",
-      "sec-fetch-dest": "document",
-      "dnt": "1",
-      "sec-gpc": "1"
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; Pixel 3a) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.75 Mobile Safari/537.36 ABB/3.0.1"
     },
     "device": {
       "architecture": null,
-      "deviceName": "Pixel 4a",
-      "marketingName": "Pixel 4a",
+      "deviceName": "Pixel 3a",
+      "marketingName": "Pixel 3a",
       "manufacturer": "google",
       "brand": "google",
-      "dualOrientation": true,
-      "simCount": 1,
+      "dualOrientation": null,
+      "simCount": null,
       "display": {
-        "width": 2340,
+        "width": 2220,
         "height": 1080,
         "touch": true,
-        "size": 5.81
+        "size": 5.6
       },
       "type": "smartphone",
       "ismobile": true,
@@ -52,38 +43,21 @@
   },
   {
     "headers": {
-      "device-memory": "4",
-      "dpr": "2.75",
-      "viewport-width": "980",
-      "rtt": "50",
-      "downlink": "10",
-      "ect": "4g",
-      "sec-ch-ua": "\"Chromium\";v=\"93\", \" Not;A Brand\";v=\"99\"",
-      "sec-ch-ua-mobile": "?1",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua-platform-version": "\"12.0.0\"",
-      "sec-ch-ua-model": "\"Pixel 3a\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "user-agent": "Mozilla/5.0 (Linux; Android 12; Pixel 3a) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.75 Mobile Safari/537.36 ABB/3.0.1",
-      "sec-fetch-site": "same-origin",
-      "sec-fetch-mode": "navigate",
-      "sec-fetch-user": "?1",
-      "sec-fetch-dest": "document"
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; Pixel 4a) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.75 Mobile Safari/537.36 ABB/3.0.1"
     },
     "device": {
       "architecture": null,
-      "deviceName": "Pixel 3a",
-      "marketingName": "Pixel 3a",
+      "deviceName": "Pixel 4a",
+      "marketingName": "Pixel 4a",
       "manufacturer": "google",
       "brand": "google",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
-        "width": 2220,
+        "width": 2340,
         "height": 1080,
         "touch": true,
-        "size": 5.6
+        "size": 5.81
       },
       "type": "smartphone",
       "ismobile": true,

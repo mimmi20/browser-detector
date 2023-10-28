@@ -19,12 +19,14 @@ use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
+use RuntimeException;
 
 final class DeviceLoaderFactoryTest extends TestCase
 {
     /**
      * @throws ExpectationFailedException
      * @throws Exception
+     * @throws RuntimeException
      */
     public function testInvoke(): void
     {

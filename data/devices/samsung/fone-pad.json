@@ -33,11 +33,11 @@
   },
   "samsung sm-p601": {
     "deviceName": "SM-P601",
-    "marketingName": "Galaxy Note 10.1 2014 Edition 3G + Wi-Fi",
+    "marketingName": "Galaxy Note 10.1 3G (2014)",
     "manufacturer": "samsung",
     "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 2560,
       "height": 1600,
@@ -49,11 +49,11 @@
   },
   "samsung sm-p605": {
     "deviceName": "SM-P605",
-    "marketingName": "Galaxy Note 10.1 2014 Edition WI-FI + 4G LTE",
+    "marketingName": "Galaxy Note 10.1 LTE (2014)",
     "manufacturer": "samsung",
     "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 2560,
       "height": 1600,
@@ -401,7 +401,7 @@
   },
   "samsung sm-p901": {
     "deviceName": "SM-P901",
-    "marketingName": "Galaxy Note Pro 12.2 3G+Wi-Fi",
+    "marketingName": "Galaxy Note Pro 12.2 3G",
     "manufacturer": "samsung",
     "brand": "samsung",
     "dualOrientation": null,
@@ -1007,22 +1007,6 @@
     "type": "fone-pad",
     "platform": "android"
   },
-  "samsung sm-t530nu": {
-    "deviceName": "SM-T530NU",
-    "marketingName": "Galaxy Tab 4 10.1 16GB",
-    "manufacturer": "samsung",
-    "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "size": 10.1
-    },
-    "type": "fone-pad",
-    "platform": "android"
-  },
   "samsung sm-t531": {
     "deviceName": "SM-T531",
     "marketingName": "Galaxy Tab 4 10.1 3G",
@@ -1090,22 +1074,6 @@
   "samsung sm-t537v": {
     "deviceName": "SM-T537V",
     "marketingName": "Galaxy Tab 4 10.1 LTE (Verizon)",
-    "manufacturer": "samsung",
-    "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "size": 10.1
-    },
-    "type": "fone-pad",
-    "platform": "android"
-  },
-  "samsung sm-t530": {
-    "deviceName": "SM-T530",
-    "marketingName": "Galaxy Tab 4 10.1 Wi-Fi",
     "manufacturer": "samsung",
     "brand": "samsung",
     "dualOrientation": null,
@@ -1201,7 +1169,7 @@
   },
   "samsung sm-t232": {
     "deviceName": "SM-T232",
-    "marketingName": "Galaxy Tab 4 7.0 Wi-Fi + LTE",
+    "marketingName": "Galaxy Tab 4 7.0 LTE",
     "manufacturer": "samsung",
     "brand": "samsung",
     "dualOrientation": null,
@@ -1217,7 +1185,7 @@
   },
   "samsung sm-t235": {
     "deviceName": "SM-T235",
-    "marketingName": "Galaxy Tab 4 7.0 Wi-Fi + LTE",
+    "marketingName": "Galaxy Tab 4 7.0 LTE",
     "manufacturer": "samsung",
     "brand": "samsung",
     "dualOrientation": null,
@@ -1521,7 +1489,7 @@
   },
   "samsung sch-i815": {
     "deviceName": "SCH-I815",
-    "marketingName": "Galaxy Tab 7.7 CDMA + LTE",
+    "marketingName": "Galaxy Tab 7.7 CDMA+LTE",
     "manufacturer": "samsung",
     "brand": "samsung",
     "dualOrientation": null,
@@ -1697,11 +1665,11 @@
   },
   "samsung sm-t595": {
     "deviceName": "SM-T595",
-    "marketingName": "Galaxy Tab A (10.5)",
+    "marketingName": "Galaxy Tab A 10.5 LTE (2018)",
     "manufacturer": "samsung",
     "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1920,
       "height": 1200,
@@ -1713,11 +1681,11 @@
   },
   "samsung sm-t585n0": {
     "deviceName": "SM-T585N0",
-    "marketingName": "Galaxy Tab A (2016, 10.1)",
+    "marketingName": "Galaxy Tab A 10.1 LTE (2016)",
     "manufacturer": "samsung",
     "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1920,
       "height": 1200,
@@ -1761,7 +1729,7 @@
   },
   "samsung sm-p585": {
     "deviceName": "SM-P585",
-    "marketingName": "Galaxy Tab A (2016, 10.1,  Wi-Fi+LTE)",
+    "marketingName": "Galaxy Tab A (2016, 10.1, LTE)",
     "manufacturer": "samsung",
     "brand": "samsung",
     "dualOrientation": null,
@@ -1777,7 +1745,7 @@
   },
   "samsung sm-p585y": {
     "deviceName": "SM-P585Y",
-    "marketingName": "Galaxy Tab A (2016, 10.1,  Wi-Fi+LTE)",
+    "marketingName": "Galaxy Tab A (2016, 10.1, LTE)",
     "manufacturer": "samsung",
     "brand": "samsung",
     "dualOrientation": null,
@@ -1793,11 +1761,11 @@
   },
   "samsung sm-t585": {
     "deviceName": "SM-T585",
-    "marketingName": "Galaxy Tab A (2016, 10.1, Wi-Fi+LTE)",
+    "marketingName": "Galaxy Tab A 10.1 LTE (2016)",
     "manufacturer": "samsung",
     "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1920,
       "height": 1200,
@@ -1809,11 +1777,11 @@
   },
   "samsung sm-t597w": {
     "deviceName": "SM-T597W",
-    "marketingName": "Galaxy Tab A (2018, 10.5, LTE)",
+    "marketingName": "Galaxy Tab A 10.5 LTE (2018)",
     "manufacturer": "samsung",
     "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1920,
       "height": 1200,
@@ -1967,29 +1935,13 @@
     "type": "fone-pad",
     "platform": "android"
   },
-  "samsung sm-t290": {
-    "deviceName": "SM-T290",
-    "marketingName": "Galaxy Tab A 8.0 (2019, Global)",
-    "manufacturer": "samsung",
-    "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
-    "display": {
-      "width": 1280,
-      "height": 800,
-      "touch": true,
-      "size": 8
-    },
-    "type": "fone-pad",
-    "platform": "android"
-  },
   "samsung sm-t295": {
     "deviceName": "SM-T295",
-    "marketingName": "Galaxy Tab A 8.0 (2019, Global)",
+    "marketingName": "Galaxy Tab A 8.0 LTE (2019, Global)",
     "manufacturer": "samsung",
     "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1280,
       "height": 800,
@@ -2180,8 +2132,8 @@
     "marketingName": "Galaxy Tab A7 10.4 LTE (2020)",
     "manufacturer": "samsung",
     "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 2000,
       "height": 1200,
@@ -2465,11 +2417,11 @@
   },
   "samsung sm-t561": {
     "deviceName": "SM-T561",
-    "marketingName": "Galaxy Tab E 9.6 Bianco 3G",
+    "marketingName": "Galaxy Tab E 9.6 3G",
     "manufacturer": "samsung",
     "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1280,
       "height": 800,
@@ -2721,11 +2673,11 @@
   },
   "samsung sm-t815y": {
     "deviceName": "SM-T815Y",
-    "marketingName": "Galaxy Tab S2 (9.7, 2015)",
+    "marketingName": "Galaxy Tab S2 9.7 LTE (2015)",
     "manufacturer": "samsung",
     "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 2048,
       "height": 1536,
@@ -2737,11 +2689,11 @@
   },
   "samsung sm-t815": {
     "deviceName": "SM-T815",
-    "marketingName": "Galaxy Tab S2 (9.7, 2015) LTE",
+    "marketingName": "Galaxy Tab S2 9.7 LTE (2015)",
     "manufacturer": "samsung",
     "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 2048,
       "height": 1536,
@@ -2913,11 +2865,43 @@
   },
   "samsung sm-t819": {
     "deviceName": "SM-T819",
-    "marketingName": "Galaxy Tab S2 Plus (9.7, 2016)",
+    "marketingName": "Galaxy Tab S2 9.7 LTE (2016)",
     "manufacturer": "samsung",
     "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2048,
+      "height": 1536,
+      "touch": true,
+      "size": 9.7
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "samsung sm-t819n": {
+    "deviceName": "SM-T819N",
+    "marketingName": "Galaxy Tab S2 9.7 LTE (2016)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2048,
+      "height": 1536,
+      "touch": true,
+      "size": 9.7
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "samsung sm-t819y": {
+    "deviceName": "SM-T819Y",
+    "marketingName": "Galaxy Tab S2 9.7 LTE (2016)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 2048,
       "height": 1536,
@@ -2929,11 +2913,27 @@
   },
   "samsung sm-t825": {
     "deviceName": "SM-T825",
-    "marketingName": "Galaxy Tab S3 (9.7) LTE",
+    "marketingName": "Galaxy Tab S3 (9.7, LTE)",
     "manufacturer": "samsung",
     "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2048,
+      "height": 1536,
+      "touch": true,
+      "size": 9.7
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "samsung sm-t825y": {
+    "deviceName": "SM-T825Y",
+    "marketingName": "Galaxy Tab S3 (9.7, LTE)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 2048,
       "height": 1536,
@@ -2977,11 +2977,11 @@
   },
   "samsung sm-t835": {
     "deviceName": "SM-T835",
-    "marketingName": "Galaxy Tab S4 (10.5)",
+    "marketingName": "Galaxy Tab S4 10.5 LTE",
     "manufacturer": "samsung",
     "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 2560,
       "height": 1600,
@@ -3089,11 +3089,11 @@
   },
   "samsung sm-t865": {
     "deviceName": "SM-T865",
-    "marketingName": "Galaxy Tab S6 (LTE)",
+    "marketingName": "Galaxy Tab S6 10.5 LTE",
     "manufacturer": "samsung",
     "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 2560,
       "height": 1600,
@@ -3105,11 +3105,11 @@
   },
   "samsung sm-t867": {
     "deviceName": "SM-T867",
-    "marketingName": "Galaxy Tab S6 (LTE)",
+    "marketingName": "Galaxy Tab S6 10.5 LTE",
     "manufacturer": "samsung",
     "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 2560,
       "height": 1600,
@@ -3121,11 +3121,11 @@
   },
   "samsung sm-t867u": {
     "deviceName": "SM-T867U",
-    "marketingName": "Galaxy Tab S6 (LTE, T-Mobile)",
+    "marketingName": "Galaxy Tab S6 10.5 LTE (T-Mobile)",
     "manufacturer": "samsung",
     "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 2560,
       "height": 1600,
@@ -3137,11 +3137,11 @@
   },
   "samsung sm-t867v": {
     "deviceName": "SM-T867V",
-    "marketingName": "Galaxy Tab S6 (LTE, Verizon)",
+    "marketingName": "Galaxy Tab S6 10.5 LTE (Verizon)",
     "manufacturer": "samsung",
     "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 2560,
       "height": 1600,
@@ -3153,11 +3153,11 @@
   },
   "samsung sm-p615": {
     "deviceName": "SM-P615",
-    "marketingName": "Galaxy Tab S6 Lite 10.4 Global LTE",
+    "marketingName": "Galaxy Tab S6 Lite 10.4 LTE",
     "manufacturer": "samsung",
     "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 2000,
       "height": 1200,
@@ -3169,7 +3169,7 @@
   },
   "samsung sm-t875": {
     "deviceName": "SM-T875",
-    "marketingName": "Galaxy Tab S7 (LTE)",
+    "marketingName": "Galaxy Tab S7 11.0 LTE",
     "manufacturer": "samsung",
     "brand": "samsung",
     "dualOrientation": null,
@@ -3185,7 +3185,7 @@
   },
   "samsung sm-t876b": {
     "deviceName": "SM-T876B",
-    "marketingName": "Galaxy Tab S7 (LTE+5G)",
+    "marketingName": "Galaxy Tab S7 11.0 5G",
     "manufacturer": "samsung",
     "brand": "samsung",
     "dualOrientation": null,
@@ -3201,11 +3201,27 @@
   },
   "samsung sm-t976b": {
     "deviceName": "SM-T976B",
-    "marketingName": "Galaxy Tab S7 Plus 5G",
+    "marketingName": "Galaxy Tab S7 Plus 12.4 5G",
     "manufacturer": "samsung",
     "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2800,
+      "height": 1752,
+      "touch": true,
+      "size": 12.4
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "samsung sm-t975": {
+    "deviceName": "SM-T975",
+    "marketingName": "Galaxy Tab S7 Plus 12.4 4G",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 2800,
       "height": 1752,
@@ -3217,11 +3233,27 @@
   },
   "samsung sm-t677v": {
     "deviceName": "SM-T677V",
-    "marketingName": "Galaxy Tab View",
+    "marketingName": "Galaxy View 18.4 LTE (USA, Verizon)",
     "manufacturer": "samsung",
     "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": 18.4
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "samsung sm-t677a": {
+    "deviceName": "SM-T677A",
+    "marketingName": "Galaxy View 18.4 LTE (USA, AT&T)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1920,
       "height": 1080,
@@ -3233,11 +3265,27 @@
   },
   "samsung sm-t677": {
     "deviceName": "SM-T677",
-    "marketingName": "Galaxy Tab View LTE",
+    "marketingName": "Galaxy View 18.4 LTE (EMEA)",
     "manufacturer": "samsung",
     "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1920,
+      "height": 1080,
+      "touch": true,
+      "size": 18.4
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "samsung sm-t677y": {
+    "deviceName": "SM-T677Y",
+    "marketingName": "Galaxy View 18.4 LTE (EMEA)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1920,
       "height": 1080,
@@ -3281,7 +3329,7 @@
   },
   "samsung sm-t515": {
     "deviceName": "SM-T515",
-    "marketingName": "Tab A 10.1 LTE (2019)",
+    "marketingName": "Galaxy Tab A 10.1 LTE (2019)",
     "manufacturer": "samsung",
     "brand": "samsung",
     "dualOrientation": null,
@@ -3297,7 +3345,7 @@
   },
   "samsung sm-t225": {
     "deviceName": "SM-T225",
-    "marketingName": "Galaxy Tab A7 Lite LTE",
+    "marketingName": "Galaxy Tab A7 Lite 8.7 LTE (2021)",
     "manufacturer": "samsung",
     "brand": "samsung",
     "dualOrientation": true,
@@ -3313,7 +3361,7 @@
   },
   "samsung sm-t225n": {
     "deviceName": "SM-T225N",
-    "marketingName": "Galaxy Tab A7 Lite LTE",
+    "marketingName": "Galaxy Tab A7 Lite LTE (Korea)",
     "manufacturer": "samsung",
     "brand": "samsung",
     "dualOrientation": true,
@@ -3329,7 +3377,7 @@
   },
   "samsung sm-t227u": {
     "deviceName": "SM-T227U",
-    "marketingName": "Galaxy Tab A7 Lite LTE",
+    "marketingName": "Galaxy Tab A7 Lite LTE (USA)",
     "manufacturer": "samsung",
     "brand": "samsung",
     "dualOrientation": true,
@@ -3345,7 +3393,7 @@
   },
   "samsung sm-p619": {
     "deviceName": "SM-P619",
-    "marketingName": "Galaxy Tab S6 Lite LTE (2022)",
+    "marketingName": "Galaxy Tab S6 Lite 10.4 LTE (2022)",
     "manufacturer": "samsung",
     "brand": "samsung",
     "dualOrientation": true,
@@ -3358,5 +3406,293 @@
     },
     "type": "fone-pad",
     "platform": null
+  },
+  "samsung sm-t725": {
+    "deviceName": "SM-T725",
+    "marketingName": "Galaxy Tab S5e 10.5 LTE",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2560,
+      "height": 1600,
+      "touch": true,
+      "size": 10.5
+    },
+    "type": "fone-pad",
+    "platform": null
+  },
+  "samsung sm-x706b": {
+    "deviceName": "SM-X706B",
+    "marketingName": "Galaxy Tab S8 11.0 5G (International)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2560,
+      "height": 1600,
+      "touch": true,
+      "size": 11
+    },
+    "type": "fone-pad",
+    "platform": null
+  },
+  "samsung sm-x706u": {
+    "deviceName": "SM-X706U",
+    "marketingName": "Galaxy Tab S8 11.0 5G (USA)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2560,
+      "height": 1600,
+      "touch": true,
+      "size": 11
+    },
+    "type": "fone-pad",
+    "platform": null
+  },
+  "samsung sm-x706n": {
+    "deviceName": "SM-X706N",
+    "marketingName": "Galaxy Tab S8 11.0 5G (Korea)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2560,
+      "height": 1600,
+      "touch": true,
+      "size": 11
+    },
+    "type": "fone-pad",
+    "platform": null
+  },
+  "samsung sm-x706": {
+    "deviceName": "SM-X706",
+    "marketingName": "Galaxy Tab S8 11.0 5G",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2560,
+      "height": 1600,
+      "touch": true,
+      "size": 11
+    },
+    "type": "fone-pad",
+    "platform": null
+  },
+  "samsung sm-x205": {
+    "deviceName": "SM-X205",
+    "marketingName": "Galaxy Tab A8 10.5 LTE (2021)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "size": 10.5
+    },
+    "type": "fone-pad",
+    "platform": null
+  },
+  "samsung sm-t575": {
+    "deviceName": "SM-T575",
+    "marketingName": "Galaxy Tab Active3 8.0 LTE (2021)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "size": 8
+    },
+    "type": "fone-pad",
+    "platform": null
+  },
+  "samsung sm-t735": {
+    "deviceName": "SM-T735",
+    "marketingName": "Galaxy Tab S7 FE 12.4 5G",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2560,
+      "height": 1600,
+      "touch": true,
+      "size": 12.4
+    },
+    "type": "fone-pad",
+    "platform": null
+  },
+  "samsung sm-t735c": {
+    "deviceName": "SM-T735C",
+    "marketingName": "Galaxy Tab S7 FE 12.4 5G",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2560,
+      "height": 1600,
+      "touch": true,
+      "size": 12.4
+    },
+    "type": "fone-pad",
+    "platform": null
+  },
+  "samsung sm-t735n": {
+    "deviceName": "SM-T735N",
+    "marketingName": "Galaxy Tab S7 FE 12.4 5G (Korea)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2560,
+      "height": 1600,
+      "touch": true,
+      "size": 12.4
+    },
+    "type": "fone-pad",
+    "platform": null
+  },
+  "samsung sm-t736b": {
+    "deviceName": "SM-T736B",
+    "marketingName": "Galaxy Tab S7 FE 12.4 5G (International)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2560,
+      "height": 1600,
+      "touch": true,
+      "size": 12.4
+    },
+    "type": "fone-pad",
+    "platform": null
+  },
+  "samsung sm-t736n": {
+    "deviceName": "SM-T736N",
+    "marketingName": "Galaxy Tab S7 FE 12.4 5G (Korea)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2560,
+      "height": 1600,
+      "touch": true,
+      "size": 12.4
+    },
+    "type": "fone-pad",
+    "platform": null
+  },
+  "samsung sm-x906": {
+    "deviceName": "SM-X906",
+    "marketingName": "Galaxy Tab S8 Ultra 14.6 5G",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2960,
+      "height": 1848,
+      "touch": true,
+      "size": 14.6
+    },
+    "type": "fone-pad",
+    "platform": null
+  },
+  "samsung sm-x906b": {
+    "deviceName": "SM-X906B",
+    "marketingName": "Galaxy Tab S8 Ultra 14.6 5G (International)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2960,
+      "height": 1848,
+      "touch": true,
+      "size": 14.6
+    },
+    "type": "fone-pad",
+    "platform": null
+  },
+  "samsung sm-x906u": {
+    "deviceName": "SM-X906U",
+    "marketingName": "Galaxy Tab S8 Ultra 14.6 5G (USA)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2960,
+      "height": 1848,
+      "touch": true,
+      "size": 14.6
+    },
+    "type": "fone-pad",
+    "platform": null
+  },
+  "samsung sm-x906n": {
+    "deviceName": "SM-X906N",
+    "marketingName": "Galaxy Tab S8 Ultra 14.6 5G (Korea)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2960,
+      "height": 1848,
+      "touch": true,
+      "size": 14.6
+    },
+    "type": "fone-pad",
+    "platform": null
+  },
+  "samsung gt-p1000": {
+    "deviceName": "GT-P1000",
+    "marketingName": "Galaxy Tab 7.0",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "size": 7
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "samsung gt-p1000m": {
+    "deviceName": "GT-P1000M",
+    "marketingName": "Galaxy Tab 7.0",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1024,
+      "height": 600,
+      "touch": true,
+      "size": 7
+    },
+    "type": "fone-pad",
+    "platform": "android"
   }
 }

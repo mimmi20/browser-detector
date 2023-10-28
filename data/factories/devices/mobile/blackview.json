@@ -15,10 +15,13 @@
     "/bv5000/i": "blackview bv5000",
     "/bv4000[ _]?pro/i": "blackview bv4000 pro",
     "/bv4000/i": "blackview bv4000",
+    "/bl8800[ _]?pro/i": "blackview bl8800 pro",
+    "/bl8800/i": "blackview bl8800",
     "/ultra plus/i": "blackview ultra plus",
     "/p2lite/i": "blackview p2 lite",
     "/zeta/i": "blackview zeta",
     "/a80pro/i": "blackview a80 pro",
+    "/a70/i": "blackview a70",
     "/a60pro/i": "blackview a60 pro",
     "/a7pro/i": "blackview a7 pro",
     "/e7s/i": "blackview e7s",
@@ -29,7 +32,8 @@
     "/crown/i": "blackview t570",
     "/ r6 /i": "blackview r6",
     "/ a8 /i": "blackview a8",
-    "/tab8/i": "blackview tab 8"
+    "/tab ?8/i": "blackview tab 8",
+    "/tab ?6/i": "blackview tab 6"
   },
   "generic": "general blackview device"
 }

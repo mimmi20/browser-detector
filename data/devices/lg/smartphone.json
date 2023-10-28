@@ -468,8 +468,8 @@
     "marketingName": "Escape",
     "manufacturer": "lg",
     "brand": "lg",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 960,
       "height": 540,
@@ -3220,8 +3220,8 @@
     "marketingName": "G8 ThinQ",
     "manufacturer": "lg",
     "brand": "lg",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 3120,
       "height": 1440,
@@ -3233,11 +3233,11 @@
   },
   "lg lm-g850": {
     "deviceName": "LM-G850",
-    "marketingName": "G8 ThinQ",
+    "marketingName": "G8X ThinQ",
     "manufacturer": "lg",
     "brand": "lg",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 3120,
       "height": 1440,
@@ -3252,8 +3252,8 @@
     "marketingName": "G8 ThinQ (AT&T)",
     "manufacturer": "lg",
     "brand": "lg",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 3120,
       "height": 1440,
@@ -3268,8 +3268,8 @@
     "marketingName": "G8 ThinQ (Canada)",
     "manufacturer": "lg",
     "brand": "lg",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 3120,
       "height": 1440,
@@ -3284,8 +3284,8 @@
     "marketingName": "G8 ThinQ (Korea)",
     "manufacturer": "lg",
     "brand": "lg",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 3120,
       "height": 1440,
@@ -3300,8 +3300,8 @@
     "marketingName": "G8 ThinQ (Sprint)",
     "manufacturer": "lg",
     "brand": "lg",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 3120,
       "height": 1440,
@@ -3313,11 +3313,11 @@
   },
   "lg lm-g820qm7": {
     "deviceName": "LM-G820QM7",
-    "marketingName": "G8 ThinQ (US Unlocked)",
+    "marketingName": "G8 ThinQ (USA Unlocked)",
     "manufacturer": "lg",
     "brand": "lg",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 3120,
       "height": 1440,
@@ -3332,8 +3332,8 @@
     "marketingName": "G8 ThinQ (Verizon)",
     "manufacturer": "lg",
     "brand": "lg",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 3120,
       "height": 1440,
@@ -3940,8 +3940,8 @@
     "marketingName": "K20 (2019)",
     "manufacturer": "lg",
     "brand": "lg",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 960,
       "height": 480,
@@ -4390,6 +4390,22 @@
     "brand": "lg",
     "dualOrientation": null,
     "simCount": null,
+    "display": {
+      "width": 2340,
+      "height": 1080,
+      "touch": true,
+      "size": 6.53
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "lg lm-q630n": {
+    "deviceName": "LM-Q630N",
+    "marketingName": "Q61",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 2340,
       "height": 1080,
@@ -11380,8 +11396,8 @@
     "marketingName": "Velvet 5G",
     "manufacturer": "lg",
     "brand": "lg",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 2460,
       "height": 1080,
@@ -11396,8 +11412,40 @@
     "marketingName": "Velvet 5G",
     "manufacturer": "lg",
     "brand": "lg",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2460,
+      "height": 1080,
+      "touch": true,
+      "size": 6.8
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "lg lm-g900em": {
+    "deviceName": "LM-G900EM",
+    "marketingName": "Velvet 5G",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2460,
+      "height": 1080,
+      "touch": true,
+      "size": 6.8
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "lg lm-g900tm": {
+    "deviceName": "LM-G900TM",
+    "marketingName": "Velvet 5G",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 2460,
       "height": 1080,
@@ -11409,11 +11457,11 @@
   },
   "lg lm-g910": {
     "deviceName": "LM-G910",
-    "marketingName": "Velvet 5G",
+    "marketingName": "Velvet 4G",
     "manufacturer": "lg",
     "brand": "lg",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 2460,
       "height": 1080,
@@ -12219,6 +12267,102 @@
       "height": 720,
       "touch": true,
       "size": 5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "lg lm-v500n": {
+    "deviceName": "LM-V500N",
+    "marketingName": "V50 ThinQ 5G",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 3120,
+      "height": 1440,
+      "touch": true,
+      "size": 6.4
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "lg lm-v500": {
+    "deviceName": "LM-V500",
+    "marketingName": "V50 ThinQ 5G",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 3120,
+      "height": 1440,
+      "touch": true,
+      "size": 6.4
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "lg lm-v500em": {
+    "deviceName": "LM-V500EM",
+    "marketingName": "V50 ThinQ 5G",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 3120,
+      "height": 1440,
+      "touch": true,
+      "size": 6.4
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "lg lm-v500xm": {
+    "deviceName": "LM-V500XM",
+    "marketingName": "V50 ThinQ 5G",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 3120,
+      "height": 1440,
+      "touch": true,
+      "size": 6.4
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "lg lm-v450pm": {
+    "deviceName": "LM-V450PM",
+    "marketingName": "V50 ThinQ 5G",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 3120,
+      "height": 1440,
+      "touch": true,
+      "size": 6.4
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "lg lm-v450": {
+    "deviceName": "LM-V450",
+    "marketingName": "V50 ThinQ 5G",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 3120,
+      "height": 1440,
+      "touch": true,
+      "size": 6.4
     },
     "type": "smartphone",
     "platform": "android"

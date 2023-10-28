@@ -16,12 +16,16 @@ use BrowserDetector\Header\HeaderInterface;
 use BrowserDetector\Header\HeaderLoaderInterface;
 use Psr\Http\Message\MessageInterface;
 
+use function array_change_key_case;
 use function array_filter;
 use function array_key_exists;
 use function array_keys;
 use function is_string;
+use function mb_strtolower;
 use function serialize;
 use function sha1;
+
+use const CASE_LOWER;
 
 final class GenericRequest implements GenericRequestInterface
 {
@@ -113,15 +117,15 @@ final class GenericRequest implements GenericRequestInterface
     /** @throws void */
     private function filterHeaders(): void
     {
-        $headers  = $this->headers;
+        $headers  = array_change_key_case($this->headers, CASE_LOWER);
         $filtered = array_filter(
             self::HEADERS,
-            static fn ($value): bool => array_key_exists($value, $headers),
+            static fn ($value): bool => array_key_exists(mb_strtolower($value), $headers),
         );
 
         foreach ($filtered as $header) {
             try {
-                $headerObj = $this->headerLoader->load($header, $this->headers[$header]);
+                $headerObj = $this->headerLoader->load($header, $headers[mb_strtolower($header)]);
             } catch (NotFoundException) {
                 continue;
             }

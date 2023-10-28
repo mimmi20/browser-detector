@@ -174,5 +174,37 @@
     },
     "type": "fone-pad",
     "platform": "android"
+  },
+  "zte k88": {
+    "deviceName": "K88",
+    "marketingName": "Trek 2",
+    "manufacturer": "zte",
+    "brand": "zte",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": 8
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "zte k92": {
+    "deviceName": "K92",
+    "marketingName": "Primetime LTE",
+    "manufacturer": "zte",
+    "brand": "zte",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "size": 10.1
+    },
+    "type": "fone-pad",
+    "platform": "android"
   }
 }
