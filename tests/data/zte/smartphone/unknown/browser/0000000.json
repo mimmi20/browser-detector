@@ -1555,7 +1555,14 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; ZTE A2020G Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.41 Mobile Safari/537.36 (Ecosia android@101.0.4951.41)"
+      "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"101\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-platform": "\"Android\"",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; ZTE A2020G Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.41 Mobile Safari/537.36 (Ecosia android@101.0.4951.41)",
+      "sec-fetch-site": "cross-site",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-user": "?1",
+      "sec-fetch-dest": "document"
     },
     "device": {
       "architecture": null,
@@ -2012,6 +2019,70 @@
     "engine": {
       "name": "Blink",
       "version": "101.0.4951.41",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "8",
+      "downlink": "4.95",
+      "dpr": "3.29834",
+      "ect": "4g",
+      "rtt": "100",
+      "sec-ch-device-memory": "8",
+      "sec-ch-dpr": "3.29834",
+      "sec-ch-prefers-color-scheme": "dark",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Chromium\";v=\"111\", \"Not(A:Brand\";v=\"8\"",
+      "sec-ch-ua-full-version": "\"111.0.5563.116\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"ZTE A2322G\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"12.0.0\"",
+      "sec-ch-viewport-height": "628",
+      "sec-ch-viewport-width": "327",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Mobile Safari/537.36 (Ecosia android@111.0.5563.116)",
+      "viewport-width": "327",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "A2322G",
+      "marketingName": "Axon 30 5G",
+      "manufacturer": "zte",
+      "brand": "zte",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2460,
+        "height": 1080,
+        "touch": true,
+        "size": 6.92
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Ecosia",
+      "version": "111.0.5563.116",
+      "manufacturer": "unknown",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "111.0.0.0",
       "manufacturer": "google"
     }
   }

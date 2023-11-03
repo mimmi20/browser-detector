@@ -3235,24 +3235,31 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 9; KFTRPWI) AppleWebKit/537.36 (KHTML, like Gecko) Silk/96.4.6 like Chrome/96.0.4664.175 Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; KFKAWI) AppleWebKit/537.36 (KHTML, like Gecko) Silk/98.1.148 like Chrome/98.0.4758.101 Safari/537.36",
+      "sec-ch-ua": "\" Not A;Brand\";v=\"99.0.0.0\", \"Chromium\";v=\"98.0.4758.101\"",
+      "sec-ch-ua-platform": "Android",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-full-version": "98.0.4758.101",
+      "sec-ch-ua-platform-version": "9.0.0",
+      "sec-ch-ua-model": "KFKAWI",
+      "sec-ch-prefers-color-scheme": "light"
     },
     "device": {
       "architecture": null,
-      "deviceName": "KFTRPWI",
-      "marketingName": "Fire HD 10 (2021)",
+      "deviceName": "KFKAWI",
+      "marketingName": "Fire HD 8 (2018)",
       "manufacturer": "amazon",
       "brand": "amazon",
-      "dualOrientation": true,
-      "simCount": 0,
+      "dualOrientation": null,
+      "simCount": null,
       "display": {
-        "width": 1920,
-        "height": 1200,
+        "width": 1280,
+        "height": 800,
         "touch": true,
-        "size": 10.1
+        "size": 8
       },
       "type": "tablet",
-      "ismobile": true,
+      "ismobile": false,
       "istv": false,
       "bits": null
     },
@@ -3264,20 +3271,38 @@
     },
     "client": {
       "name": "Silk",
-      "version": "96.4.6",
+      "version": "98.0.4758.101",
       "manufacturer": "amazon",
       "type": "browser",
       "isbot": false
     },
     "engine": {
       "name": "Blink",
-      "version": "96.0.4664.175",
+      "version": "98.0.4758.101",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; KFGIWI) AppleWebKit/537.36 (KHTML, like Gecko) Silk/98.2.4 like Chrome/98.0.4758.123 Safari/537.36"
+      "device-memory": "1",
+      "dpr": "1.3312500715255737",
+      "viewport-width": "980",
+      "rtt": "100",
+      "downlink": "5.4",
+      "ect": "4g",
+      "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"98\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"5.1.1\"",
+      "sec-ch-ua-model": "\"KFGIWI\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version-list": "\" Not A;Brand\";v=\"99.0.0.0\", \"Chromium\";v=\"98.0.4758.123\"",
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; KFGIWI) AppleWebKit/537.36 (KHTML, like Gecko) Silk/98.2.4 like Chrome/98.0.4758.123 Safari/537.36",
+      "sec-fetch-site": "same-origin",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-user": "?1",
+      "sec-fetch-dest": "document"
     },
     "device": {
       "architecture": null,
@@ -3294,7 +3319,7 @@
         "size": 8
       },
       "type": "tablet",
-      "ismobile": true,
+      "ismobile": false,
       "istv": false,
       "bits": null
     },
@@ -3314,6 +3339,65 @@
     "engine": {
       "name": "Blink",
       "version": "98.0.4758.123",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "4",
+      "dpr": "1.5",
+      "viewport-width": "980",
+      "rtt": "50",
+      "downlink": "10",
+      "ect": "4g",
+      "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"9.0.0\"",
+      "sec-ch-ua-model": "\"KFTRPWI\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; KFTRPWI) AppleWebKit/537.36 (KHTML, like Gecko) Silk/96.4.6 like Chrome/96.0.4664.175 Safari/537.36",
+      "sec-fetch-site": "same-origin",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-user": "?1",
+      "sec-fetch-dest": "document"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "KFTRPWI",
+      "marketingName": "Fire HD 10 (2021)",
+      "manufacturer": "amazon",
+      "brand": "amazon",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": 10.1
+      },
+      "type": "tablet",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Silk",
+      "version": "96.4.6",
+      "manufacturer": "amazon",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "96.0.4664.175",
       "manufacturer": "google"
     }
   },
@@ -3376,48 +3460,6 @@
         "height": 1200,
         "touch": true,
         "size": 10.1
-      },
-      "type": "tablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "9.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Silk",
-      "version": "98.2.4",
-      "manufacturer": "amazon",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "98.0.4758.123",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 9; KFKAWI) AppleWebKit/537.36 (KHTML, like Gecko) Silk/98.2.4 like Chrome/98.0.4758.123 Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "KFKAWI",
-      "marketingName": "Fire HD 8 (2018)",
-      "manufacturer": "amazon",
-      "brand": "amazon",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1280,
-        "height": 800,
-        "touch": true,
-        "size": 8
       },
       "type": "tablet",
       "ismobile": true,
@@ -4075,7 +4117,14 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 9; KFKAWI) AppleWebKit/537.36 (KHTML, like Gecko) Silk/100.1.163 like Chrome/100.0.4896.127 Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; KFKAWI) AppleWebKit/537.36 (KHTML, like Gecko) Silk/100.3.7 like Chrome/100.0.4896.162 Safari/537.36",
+      "sec-fetch-site": "cross-site",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-user": "?1",
+      "sec-fetch-dest": "document",
+      "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"100\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-platform": "\"Android\""
     },
     "device": {
       "architecture": null,
@@ -4092,7 +4141,7 @@
         "size": 8
       },
       "type": "tablet",
-      "ismobile": true,
+      "ismobile": false,
       "istv": false,
       "bits": null
     },
@@ -4100,48 +4149,6 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "9.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Silk",
-      "version": "100.1.163",
-      "manufacturer": "amazon",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "100.0.4896.127",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; KFGIWI) AppleWebKit/537.36 (KHTML, like Gecko) Silk/100.3.7 like Chrome/100.0.4896.162 Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "KFGIWI",
-      "marketingName": "Fire HD 8 (2016)",
-      "manufacturer": "amazon",
-      "brand": "amazon",
-      "dualOrientation": true,
-      "simCount": 0,
-      "display": {
-        "width": 1280,
-        "height": 800,
-        "touch": true,
-        "size": 8
-      },
-      "type": "tablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.1.1",
       "manufacturer": "google"
     },
     "client": {
@@ -4159,7 +4166,74 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 9; KFTRPWI) AppleWebKit/537.36 (KHTML, like Gecko) Silk/100.2.19 like Chrome/100.0.4896.162 Safari/537.36"
+      "device-memory": "1",
+      "dpr": "1.3312500715255737",
+      "viewport-width": "980",
+      "rtt": "50",
+      "downlink": "9.65",
+      "ect": "4g",
+      "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"100\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"5.1.1\"",
+      "sec-ch-ua-model": "\"KFGIWI\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version-list": "\" Not A;Brand\";v=\"99.0.0.0\", \"Chromium\";v=\"100.0.4896.162\"",
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; KFGIWI) AppleWebKit/537.36 (KHTML, like Gecko) Silk/100.2.19 like Chrome/100.0.4896.162 Safari/537.36",
+      "sec-fetch-site": "cross-site",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-user": "?1",
+      "sec-fetch-dest": "document"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "KFGIWI",
+      "marketingName": "Fire HD 8 (2016)",
+      "manufacturer": "amazon",
+      "brand": "amazon",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 8
+      },
+      "type": "tablet",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Silk",
+      "version": "100.2.19",
+      "manufacturer": "amazon",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "100.0.4896.162",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; KFTRPWI) AppleWebKit/537.36 (KHTML, like Gecko) Silk/100.2.19 like Chrome/100.0.4896.162 Safari/537.36",
+      "sec-fetch-site": "cross-site",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-user": "?1",
+      "sec-fetch-dest": "document",
+      "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"100\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-platform": "\"Android\""
     },
     "device": {
       "architecture": null,
@@ -4176,7 +4250,7 @@
         "size": 10.1
       },
       "type": "tablet",
-      "ismobile": true,
+      "ismobile": false,
       "istv": false,
       "bits": null
     },

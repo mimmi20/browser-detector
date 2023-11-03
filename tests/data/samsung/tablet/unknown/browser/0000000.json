@@ -3638,6 +3638,175 @@
   },
   {
     "headers": {
+      "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"101\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-platform": "\"Android\"",
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-P610) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.41 Safari/537.36 (Ecosia android@101.0.4951.41)",
+      "sec-fetch-site": "cross-site",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-user": "?1",
+      "sec-fetch-dest": "document"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-P610",
+      "marketingName": "Galaxy Tab S6 Lite 10.4 Wi-Fi",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 2000,
+        "height": 1200,
+        "touch": true,
+        "size": 10.4
+      },
+      "type": "tablet",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Ecosia",
+      "version": "101.0.4951.41",
+      "manufacturer": "unknown",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "101.0.4951.41",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "4",
+      "dpr": "1.75",
+      "viewport-width": "980",
+      "rtt": "50",
+      "downlink": "10",
+      "ect": "4g",
+      "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"101\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"12.0.0\"",
+      "sec-ch-ua-model": "\"SM-T733\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version-list": "\" Not A;Brand\";v=\"99.0.0.0\", \"Chromium\";v=\"101.0.4951.41\"",
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-T733) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.41 Safari/537.36 (Ecosia android@101.0.4951.41)",
+      "sec-fetch-site": "same-origin",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-user": "?1",
+      "sec-fetch-dest": "document"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-T733",
+      "marketingName": "Galaxy Tab S7 FE 12.4 Wi-Fi",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 2560,
+        "height": 1600,
+        "touch": true,
+        "size": 12.4
+      },
+      "type": "tablet",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Ecosia",
+      "version": "101.0.4951.41",
+      "manufacturer": "unknown",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "101.0.4951.41",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "2",
+      "dpr": "1.75",
+      "viewport-width": "980",
+      "rtt": "50",
+      "downlink": "10",
+      "ect": "4g",
+      "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"101\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"8.1.0\"",
+      "sec-ch-ua-model": "\"SM-T580\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version-list": "\" Not A;Brand\";v=\"99.0.0.0\", \"Chromium\";v=\"101.0.4951.41\"",
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; SM-T580) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.41 Safari/537.36 (Ecosia android@101.0.4951.41)",
+      "sec-fetch-site": "same-origin",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-user": "?1",
+      "sec-fetch-dest": "document"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-T580",
+      "marketingName": "Galaxy Tab A 10.1 Wi-Fi (2016)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": 10.1
+      },
+      "type": "tablet",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.1.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Ecosia",
+      "version": "101.0.4951.41",
+      "manufacturer": "unknown",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "101.0.4951.41",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "device-memory": "4",
       "dpr": "1.5",
       "viewport-width": "980",
@@ -3685,132 +3854,6 @@
     "engine": {
       "name": "Blink",
       "version": "88.0.4324.181",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-T733) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.41 Safari/537.36 (Ecosia android@101.0.4951.41)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SM-T733",
-      "marketingName": "Galaxy Tab S7 FE 12.4 Wi-Fi",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": true,
-      "simCount": 0,
-      "display": {
-        "width": 2560,
-        "height": 1600,
-        "touch": true,
-        "size": 12.4
-      },
-      "type": "tablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "12.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Ecosia",
-      "version": "101.0.4951.41",
-      "manufacturer": "unknown",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "101.0.4951.41",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; SM-T580) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.41 Safari/537.36 (Ecosia android@101.0.4951.41)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SM-T580",
-      "marketingName": "Galaxy Tab A 10.1 Wi-Fi (2016)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": true,
-      "simCount": 0,
-      "display": {
-        "width": 1920,
-        "height": 1200,
-        "touch": true,
-        "size": 10.1
-      },
-      "type": "tablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "8.1.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Ecosia",
-      "version": "101.0.4951.41",
-      "manufacturer": "unknown",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "101.0.4951.41",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-P610) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.41 Safari/537.36 (Ecosia android@101.0.4951.41)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SM-P610",
-      "marketingName": "Galaxy Tab S6 Lite 10.4 Wi-Fi",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": true,
-      "simCount": 0,
-      "display": {
-        "width": 2000,
-        "height": 1200,
-        "touch": true,
-        "size": 10.4
-      },
-      "type": "tablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "12.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Ecosia",
-      "version": "101.0.4951.41",
-      "manufacturer": "unknown",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "101.0.4951.41",
       "manufacturer": "google"
     }
   },

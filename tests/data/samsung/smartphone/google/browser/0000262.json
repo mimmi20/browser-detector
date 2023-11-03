@@ -1,6 +1,48 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; Galaxy A72) AppleWebKit/537.46 (KHTML, like Gecko) Chrome/112.0.5615.101 Mobile Safari/537.46"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "GT-I7500",
+      "marketingName": "Galaxy",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 4
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "112.0.5615.101",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "112.0.5615.101",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 11; Galaxy S21 Ultra) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.5563.116 Mobile Safari/537.43"
     },
     "device": {
@@ -4142,48 +4184,6 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Android WebView",
-      "version": "114.0.5735.196",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "114.0.5735.196",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; SM-A605FN Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/114.0.5735.196 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SM-A605FN",
-      "marketingName": "Galaxy A6 Plus (2018)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 2220,
-        "height": 1080,
-        "touch": true,
-        "size": 6
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
       "manufacturer": "google"
     },
     "client": {

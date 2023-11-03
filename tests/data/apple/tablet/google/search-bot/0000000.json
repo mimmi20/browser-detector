@@ -82,5 +82,47 @@
       "version": "601.1.46",
       "manufacturer": "apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "com.google.Drive.ShareExtension/4.2023.40228 iPad/16.6.1 hw/iPad7_1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPad 7,1",
+      "marketingName": "iPad Pro (12.9, 2nd Gen.)",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 2732,
+        "height": 2048,
+        "touch": true,
+        "size": 12.9
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "16.6.1",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "Google Bot",
+      "version": null,
+      "manufacturer": "google",
+      "type": "search-bot",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
   }
 ]

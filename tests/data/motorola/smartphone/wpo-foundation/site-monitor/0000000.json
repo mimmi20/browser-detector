@@ -1384,5 +1384,47 @@
       "version": "117.0.0.0",
       "manufacturer": "google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; Moto G (4)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Mobile Safari/537.36 PTST/231010.185822"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Moto G4",
+      "marketingName": "Moto G4",
+      "manufacturer": "motorola",
+      "brand": "motorola",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.1.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "WebPagetest",
+      "version": null,
+      "manufacturer": "wpo-foundation",
+      "type": "site-monitor",
+      "isbot": true
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "118.0.0.0",
+      "manufacturer": "google"
+    }
   }
 ]

@@ -1681,6 +1681,54 @@
   },
   {
     "headers": {
+      "sec-ch-ua": "\";Not A Brand\";v=\"99\", \"Chromium\";v=\"88\"",
+      "sec-ch-ua-mobile": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; CPH2185) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.181 Mobile Safari/537.36 (Ecosia android@88.0.4324.181)",
+      "sec-fetch-site": "cross-site",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-user": "?1",
+      "sec-fetch-dest": "document"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "CPH2185",
+      "marketingName": "A15",
+      "manufacturer": "bbk",
+      "brand": "oppo",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1600,
+        "height": 720,
+        "touch": true,
+        "size": 6.52
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Ecosia",
+      "version": "88.0.4324.181",
+      "manufacturer": "unknown",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "88.0.4324.181",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 11; RMX1971) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.181 Mobile Safari/537.36 (Ecosia android@88.0.4324.181)"
     },
     "device": {
@@ -1706,48 +1754,6 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "11.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Ecosia",
-      "version": "88.0.4324.181",
-      "manufacturer": "unknown",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "88.0.4324.181",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; CPH2185) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.181 Mobile Safari/537.36 (Ecosia android@88.0.4324.181)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "CPH2185",
-      "marketingName": "A15",
-      "manufacturer": "bbk",
-      "brand": "oppo",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1600,
-        "height": 720,
-        "touch": true,
-        "size": 6.52
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
       "manufacturer": "google"
     },
     "client": {
@@ -2275,91 +2281,25 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 11; GM1903) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.98 Mobile Safari/537.36 (Ecosia android@97.0.4692.98)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "GM1903",
-      "marketingName": "7",
-      "manufacturer": "bbk",
-      "brand": "oneplus",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 2340,
-        "height": 1080,
-        "touch": true,
-        "size": 6.41
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "11.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Ecosia",
-      "version": "97.0.4692.98",
-      "manufacturer": "unknown",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "97.0.4692.98",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 11; KB2003) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.41 Mobile Safari/537.36 (Ecosia android@101.0.4951.41)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "KB2003",
-      "marketingName": "8T",
-      "manufacturer": "bbk",
-      "brand": "oneplus",
-      "dualOrientation": true,
-      "simCount": 2,
-      "display": {
-        "width": 2400,
-        "height": 1080,
-        "touch": true,
-        "size": 6.55
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "11.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Ecosia",
-      "version": "101.0.4951.41",
-      "manufacturer": "unknown",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "101.0.4951.41",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 11; DN2103) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.41 Mobile Safari/537.36 (Ecosia android@101.0.4951.41)"
+      "device-memory": "8",
+      "dpr": "3",
+      "viewport-width": "980",
+      "rtt": "50",
+      "downlink": "10",
+      "ect": "4g",
+      "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"101\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"11.0.0\"",
+      "sec-ch-ua-model": "\"DN2103\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version-list": "\" Not A;Brand\";v=\"99.0.0.0\", \"Chromium\";v=\"101.0.4951.41\"",
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; DN2103) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.41 Mobile Safari/537.36 (Ecosia android@101.0.4951.41)",
+      "sec-fetch-site": "same-origin",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-user": "?1",
+      "sec-fetch-dest": "document"
     },
     "device": {
       "architecture": null,
@@ -2401,7 +2341,85 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 11; AC2003) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.41 Mobile Safari/537.36 (Ecosia android@101.0.4951.41)"
+      "device-memory": "8",
+      "dpr": "2.8125",
+      "viewport-width": "980",
+      "rtt": "0",
+      "downlink": "10",
+      "ect": "4g",
+      "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"101\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"11.0.0\"",
+      "sec-ch-ua-model": "\"KB2003\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version-list": "\" Not A;Brand\";v=\"99.0.0.0\", \"Chromium\";v=\"101.0.4951.41\"",
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; KB2003) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.41 Mobile Safari/537.36 (Ecosia android@101.0.4951.41)",
+      "sec-fetch-site": "same-origin",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-user": "?1",
+      "sec-fetch-dest": "document"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "KB2003",
+      "marketingName": "8T",
+      "manufacturer": "bbk",
+      "brand": "oneplus",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.55
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Ecosia",
+      "version": "101.0.4951.41",
+      "manufacturer": "unknown",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "101.0.4951.41",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "8",
+      "dpr": "2.8125",
+      "viewport-width": "980",
+      "rtt": "50",
+      "downlink": "3.75",
+      "ect": "4g",
+      "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"101\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"11.0.0\"",
+      "sec-ch-ua-model": "\"AC2003\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version-list": "\" Not A;Brand\";v=\"99.0.0.0\", \"Chromium\";v=\"101.0.4951.41\"",
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; AC2003) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.41 Mobile Safari/537.36 (Ecosia android@101.0.4951.41)",
+      "sec-fetch-site": "same-origin",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-user": "?1",
+      "sec-fetch-dest": "document"
     },
     "device": {
       "architecture": null,
@@ -2438,6 +2456,56 @@
     "engine": {
       "name": "Blink",
       "version": "101.0.4951.41",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua": "\"Chromium\";v=\"97\", \" Not;A Brand\";v=\"99\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-platform": "\"Android\"",
+      "dnt": "1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; GM1903) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.98 Mobile Safari/537.36 (Ecosia android@97.0.4692.98)",
+      "sec-fetch-site": "cross-site",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-user": "?1",
+      "sec-fetch-dest": "document"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "GM1903",
+      "marketingName": "7",
+      "manufacturer": "bbk",
+      "brand": "oneplus",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.41
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Ecosia",
+      "version": "97.0.4692.98",
+      "manufacturer": "unknown",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "97.0.4692.98",
       "manufacturer": "google"
     }
   },
@@ -3997,6 +4065,70 @@
   },
   {
     "headers": {
+      "device-memory": "8",
+      "downlink": "3.1",
+      "dpr": "2.8125",
+      "ect": "4g",
+      "rtt": "50",
+      "sec-ch-device-memory": "8",
+      "sec-ch-dpr": "2.8125",
+      "sec-ch-prefers-color-scheme": "dark",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Chromium\";v=\"111\", \"Not(A:Brand\";v=\"8\"",
+      "sec-ch-ua-full-version": "\"111.0.5563.116\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"HD1903\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"12.0.0\"",
+      "sec-ch-viewport-height": "753",
+      "sec-ch-viewport-width": "384",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Mobile Safari/537.36 (Ecosia android@111.0.5563.116)",
+      "viewport-width": "384",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "HD1903",
+      "marketingName": "7T",
+      "manufacturer": "bbk",
+      "brand": "oneplus",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.55
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Ecosia",
+      "version": "111.0.5563.116",
+      "manufacturer": "unknown",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "111.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; U; Android 9; zh-CN; PDBM00 Build/PPR1.180610.011) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.108 Quark/5.4.9.201 Mobile Safari/537.36"
     },
     "device": {
@@ -4034,6 +4166,136 @@
     "engine": {
       "name": "Blink",
       "version": "78.0.3904.108",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "8",
+      "downlink": "10",
+      "dpr": "3.79963",
+      "ect": "4g",
+      "rtt": "50",
+      "sec-ch-device-memory": "8",
+      "sec-ch-dpr": "3.79963",
+      "sec-ch-prefers-color-scheme": "dark",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Chromium\";v=\"111\", \"Not(A:Brand\";v=\"8\"",
+      "sec-ch-ua-full-version": "\"111.0.5563.116\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"AC2003\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"12.0.0\"",
+      "sec-ch-viewport-height": "528",
+      "sec-ch-viewport-width": "284",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Mobile Safari/537.36 (Ecosia android@111.0.5563.116)",
+      "viewport-width": "284",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "AC2003",
+      "marketingName": "Nord 5G (International)",
+      "manufacturer": "bbk",
+      "brand": "oneplus",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.4
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Ecosia",
+      "version": "111.0.5563.116",
+      "manufacturer": "unknown",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "111.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "8",
+      "downlink": "8.4",
+      "dpr": "3",
+      "ect": "4g",
+      "rtt": "300",
+      "sec-ch-device-memory": "8",
+      "sec-ch-dpr": "3",
+      "sec-ch-prefers-color-scheme": "dark",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Chromium\";v=\"111\", \"Not(A:Brand\";v=\"8\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version": "\"111.0.5563.116\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"CPH2065\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"12.0.0\"",
+      "sec-ch-viewport-height": "1805",
+      "sec-ch-viewport-width": "980",
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "same-origin",
+      "sec-fetch-user": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Mobile Safari/537.36 (Ecosia android@111.0.5563.116)",
+      "viewport-width": "980"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "CPH2065",
+      "marketingName": "Reno 4 Z 5G",
+      "manufacturer": "bbk",
+      "brand": "oppo",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.57
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Ecosia",
+      "version": "111.0.5563.116",
+      "manufacturer": "unknown",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "111.0.0.0",
       "manufacturer": "google"
     }
   }

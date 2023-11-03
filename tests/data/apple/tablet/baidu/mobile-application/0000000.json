@@ -1,0 +1,51 @@
+[
+  {
+    "headers": {
+      "bdpparallelload": "2",
+      "purpose": "prefetch",
+      "user-agent": "Mozilla/5.0 (iPad; CPU OS 16_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 SP-engine/2.81.0 main%2F1.0 baiduboxapp/13.43.0.14 (Baidu; P2 16.6.1) NABar/1.0",
+      "x-bd-quic": "1",
+      "x-bd-traceid": "0524714d3a1b40e18b7d9ab5b4a9c30a",
+      "x-bdboxapp-netengine": "3",
+      "x-from-h3-trnet": "true",
+      "x-turbonet-info": "3.0.1946.289"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPad",
+      "marketingName": "iPad",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1024,
+        "height": 768,
+        "touch": true,
+        "size": 9.7
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iPadOS",
+      "marketingName": "iPadOS",
+      "version": "16.6.1",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "Baidu Box App",
+      "version": "13.43.0.14",
+      "manufacturer": "baidu",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  }
+]

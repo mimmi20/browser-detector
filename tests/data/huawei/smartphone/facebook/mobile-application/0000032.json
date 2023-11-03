@@ -3572,5 +3572,47 @@
       "version": "117.0.0.0",
       "manufacturer": "google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "[FBAN/FB4A;FBAV/271.0.0.55.109;FBBV/215365668;FBDM/{density=2.0,width=720,height=1422};FBLC/fr_FR;FBRV/217238672;FBCR/Maroc Telecom;FBMF/HUAWEI;FBBD/HUAWEI;FBPN/com.facebook.katana;FBDV/MRD-LX1F;FBSV/9;FBOP/1;FBCA/armeabi-v7a:armeabi;]"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "MRD-LX1F",
+      "marketingName": "Y6 Prime (2019)",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1560,
+        "height": 720,
+        "touch": true,
+        "size": 6.09
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "Facebook App",
+      "version": "271.0.0.55.109",
+      "manufacturer": "facebook",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
   }
 ]

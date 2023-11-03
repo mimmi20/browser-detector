@@ -3655,6 +3655,54 @@
   },
   {
     "headers": {
+      "sec-ch-ua": "\"Chromium\";v=\"99\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-platform": "\"Windows\"",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.84 ADG/11.0.3746 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows",
+      "marketingName": "Windows",
+      "version": null,
+      "manufacturer": "microsoft"
+    },
+    "client": {
+      "name": "AOL Desktop",
+      "version": "11.0.3746",
+      "manufacturer": "aol",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "99.0.4844.84",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.115 ADG/11.0.3800 Safari/537.36"
     },
     "device": {
@@ -4142,48 +4190,6 @@
       "name": "Windows",
       "marketingName": "Windows",
       "version": "8.0.0",
-      "manufacturer": "microsoft"
-    },
-    "client": {
-      "name": "AOL Desktop",
-      "version": "11.0.4074",
-      "manufacturer": "aol",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "109.0.5414.87",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.5414.87 ADG/11.0.4074 Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Windows Desktop",
-      "marketingName": "Windows Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Windows",
-      "marketingName": "Windows",
-      "version": "10.0.0",
       "manufacturer": "microsoft"
     },
     "client": {

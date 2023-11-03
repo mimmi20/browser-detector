@@ -3413,5 +3413,47 @@
       "version": "109.0.0",
       "manufacturer": "mozilla-foundation"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 11_15; rv:105.0esr) Gecko/20100101 Firefox/105.0esr"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "macOS",
+      "marketingName": "macOS",
+      "version": "11.15.0",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "Firefox",
+      "version": "105.0.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "105.0.0",
+      "manufacturer": "mozilla-foundation"
+    }
   }
 ]

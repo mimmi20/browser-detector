@@ -3949,6 +3949,55 @@
   },
   {
     "headers": {
+      "sec-ch-ua": "\"Chromium\";v=\"97\", \" Not;A Brand\";v=\"99\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-platform": "\"Windows\"",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4950.0 Iron Safari/537.36",
+      "sec-fetch-site": "cross-site",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-user": "?1",
+      "sec-fetch-dest": "document"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows",
+      "marketingName": "Windows",
+      "version": null,
+      "manufacturer": "microsoft"
+    },
+    "client": {
+      "name": "Iron",
+      "version": "97.0.4950.0",
+      "manufacturer": "srware",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "97.0.4950.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.5100.0 Iron Safari/537.36"
     },
     "device": {
@@ -4075,7 +4124,14 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.9999.0 Iron Safari/537.36"
+      "sec-ch-ua": "\"-Not.A/Brand\";v=\"8\", \"Chromium\";v=\"102\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-platform": "\"Windows\"",
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "cross-site",
+      "sec-fetch-user": "?1",
+      "user-agent": "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.9999.0 Iron Safari/537.36"
     },
     "device": {
       "architecture": null,
@@ -4099,7 +4155,7 @@
     "os": {
       "name": "Windows",
       "marketingName": "Windows",
-      "version": "10.0.0",
+      "version": null,
       "manufacturer": "microsoft"
     },
     "client": {
@@ -4117,7 +4173,14 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.5000.0 Iron Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.5100.0 Iron Safari/537.36",
+      "sec-fetch-site": "none",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-user": "?1",
+      "sec-fetch-dest": "document",
+      "sec-ch-ua": "\"(Not(A:Brand\";v=\"8\", \"Chromium\";v=\"100\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-platform": "\"Windows\""
     },
     "device": {
       "architecture": null,
@@ -4141,61 +4204,19 @@
     "os": {
       "name": "Windows",
       "marketingName": "Windows",
-      "version": "7.0.0",
+      "version": null,
       "manufacturer": "microsoft"
     },
     "client": {
       "name": "Iron",
-      "version": "98.0.5000.0",
+      "version": "100.0.5100.0",
       "manufacturer": "srware",
       "type": "browser",
       "isbot": false
     },
     "engine": {
       "name": "Blink",
-      "version": "98.0.5000.0",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Iron Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Windows Desktop",
-      "marketingName": "Windows Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Windows",
-      "marketingName": "Windows",
-      "version": "10.0.0",
-      "manufacturer": "microsoft"
-    },
-    "client": {
-      "name": "Iron",
-      "version": "104.0.0.0",
-      "manufacturer": "srware",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "104.0.0.0",
+      "version": "100.0.5100.0",
       "manufacturer": "google"
     }
   }
