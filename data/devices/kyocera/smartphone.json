@@ -894,5 +894,37 @@
     },
     "type": "smartphone",
     "platform": "android"
+  },
+  "kyocera wx10k": {
+    "deviceName": "WX10K",
+    "marketingName": "Digno Dual 2",
+    "manufacturer": "kyocera",
+    "brand": "kyocera",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 4.7
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "kyocera kyf39": {
+    "deviceName": "KYF39",
+    "marketingName": "Gratina 4G",
+    "manufacturer": "kyocera",
+    "brand": "kyocera",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 854,
+      "height": 480,
+      "touch": true,
+      "size": 3.4
+    },
+    "type": "smartphone",
+    "platform": "android"
   }
 }

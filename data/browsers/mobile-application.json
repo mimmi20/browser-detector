@@ -1306,5 +1306,17 @@
       "search": null
     },
     "engine": "unknown"
+  },
+  "history-tv": {
+    "name": "HISTORY TV",
+    "manufacturer": "unknown",
+    "type": "mobile-application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "HISTORY"
+      ]
+    },
+    "engine": "unknown"
   }
 }

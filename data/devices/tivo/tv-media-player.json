@@ -2,8 +2,8 @@
   "general tivo device": {
     "deviceName": "general TiVo device",
     "marketingName": "general TiVo device",
-    "manufacturer": "arris",
-    "brand": "arris",
+    "manufacturer": "tivo",
+    "brand": "tivo",
     "dualOrientation": null,
     "simCount": null,
     "display": {
@@ -82,6 +82,22 @@
   "tivo tcdc68000": {
     "deviceName": "TCDC68000",
     "marketingName": "TCDC68000",
+    "manufacturer": "tivo",
+    "brand": "tivo",
+    "dualOrientation": null,
+    "simCount": null,
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": false,
+      "size": null
+    },
+    "type": "tv-media-player",
+    "platform": "android"
+  },
+  "tivo tcdd6e000": {
+    "deviceName": "TCDD6E000",
+    "marketingName": "TCDD6E000",
     "manufacturer": "tivo",
     "brand": "tivo",
     "dualOrientation": null,

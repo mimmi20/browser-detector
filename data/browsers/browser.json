@@ -5229,5 +5229,17 @@
       "search": null
     },
     "engine": null
+  },
+  "reqwireless-webviewer": {
+    "name": "Reqwireless WebViewer",
+    "manufacturer": "reqwireless",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "ReqwirelessWeb"
+      ]
+    },
+    "engine": null
   }
 }

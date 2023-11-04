@@ -9476,8 +9476,8 @@
     "marketingName": "Q7 Stylus",
     "manufacturer": "lg",
     "brand": "lg",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 2160,
       "height": 1080,
@@ -10177,11 +10177,27 @@
   },
   "lg q710al": {
     "deviceName": "Q710AL",
-    "marketingName": "Stylo 4",
+    "marketingName": "Q Stylo 4",
     "manufacturer": "lg",
     "brand": "lg",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2160,
+      "height": 1080,
+      "touch": true,
+      "size": 6.2
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "lg q710pl": {
+    "deviceName": "Q710PL",
+    "marketingName": "Q Stylo 4",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 2160,
       "height": 1080,
@@ -12363,6 +12379,22 @@
       "height": 1440,
       "touch": true,
       "size": 6.4
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "lg lm-l713dl": {
+    "deviceName": "LM-L713DL",
+    "marketingName": "Q Stylo 4",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2160,
+      "height": 1080,
+      "touch": true,
+      "size": 6.2
     },
     "type": "smartphone",
     "platform": "android"
