@@ -68,8 +68,24 @@
     "marketingName": "BlackBerry 7100",
     "manufacturer": "rim",
     "brand": "rim",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": false,
+    "simCount": 1,
+    "display": {
+      "width": 260,
+      "height": 240,
+      "touch": false,
+      "size": 2.4
+    },
+    "type": "feature-phone",
+    "platform": "rim os"
+  },
+  "blackberry 7100i": {
+    "deviceName": "BlackBerry 7100i",
+    "marketingName": "BlackBerry 7100i",
+    "manufacturer": "rim",
+    "brand": "rim",
+    "dualOrientation": false,
+    "simCount": 1,
     "display": {
       "width": 260,
       "height": 240,

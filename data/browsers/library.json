@@ -374,5 +374,17 @@
       ]
     },
     "engine": "unknown"
+  },
+  "alamofire": {
+    "name": "Alamofire",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Alamofire"
+      ]
+    },
+    "engine": "unknown"
   }
 }

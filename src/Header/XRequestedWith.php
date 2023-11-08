@@ -77,8 +77,10 @@ final class XRequestedWith implements HeaderInterface
             'com.cmcm.armorfly' => 'armorfly-browser',
             'com.cookiegames.smartcookie' => 'smartcookieweb-privacy-browser',
             'com.dolphin.browser.zero' => 'dolfin-zero',
-            // 'com.doro.apps.browser' => '',
+            'com.doro.apps.browser' => 'doro-browser',
             'com.douban.group' => 'douban app',
+            'com.droidlogic.mboxlauncher' => 'mbox-launcher',
+            'com.droidlogic.xlauncher' => 'x-launcher',
             'com.duckduckgo.mobile.android' => 'duckduck app',
             'com.dv.adm' => 'advanced-download-manager',
             'com.eagle.web.browser.internet.privacy.browser' => 'private-browser-web-browser',
@@ -201,6 +203,7 @@ final class XRequestedWith implements HeaderInterface
             'com.yy.hiyo' => 'hago-app',
             'de.baumann.browser' => 'foss-browser',
             'de.einsundeins.searchapp.gmx.com' => 'gmx-search',
+            'de.einsundeins.searchapp.web' => 'web.de-search',
             'de.eue.mobile.android.mail' => 'einsundeins-mail',
             'de.freenet.mail' => 'freenet-mail',
             'de.gdata.mobilesecurity2b' => 'tie-team-mobile-security',
@@ -251,5 +254,23 @@ final class XRequestedWith implements HeaderInterface
             'xbrowser', 'com.xbrowser.play' => 'x-browser',
             default => null,
         };
+    }
+
+    /** @throws void */
+    public function hasClientVersion(): bool
+    {
+        $match = preg_match('/xmlhttprequest|fake\\./i', $this->value);
+
+        return $match === 0;
+    }
+
+    /**
+     * @throws void
+     *
+     * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+     */
+    public function getClientVersion(string | null $code = null): string | null
+    {
+        return null;
     }
 }

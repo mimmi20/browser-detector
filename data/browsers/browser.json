@@ -5219,5 +5219,39 @@
       "search": null
     },
     "engine": null
+  },
+  "doro-browser": {
+    "name": "Doro Browser",
+    "manufacturer": "chen gang",
+    "type": "browser",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
+  },
+  "reqwireless-webviewer": {
+    "name": "Reqwireless WebViewer",
+    "manufacturer": "reqwireless",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "ReqwirelessWeb"
+      ]
+    },
+    "engine": null
+  },
+  "falkon": {
+    "name": "Falkon",
+    "manufacturer": "kde",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Falkon"
+      ]
+    },
+    "engine": "webkit"
   }
 }

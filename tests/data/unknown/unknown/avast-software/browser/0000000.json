@@ -1,6 +1,54 @@
 [
   {
     "headers": {
+      "sec-ch-ua": "\"AvastSecureBrowser\";v=\"6.6.0\", \" Not A;Brand\";v=\"99.0.0.0\", \"Chromium\";v=\"98.0.4758.101\"",
+      "sec-ch-ua-platform": "Android",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-full-version": "6.6.0",
+      "sec-ch-ua-platform-version": "11",
+      "sec-ch-ua-arch": "[arm64-v8a, armeabi-v7a, armeabi]",
+      "sec-ch-prefers-color-scheme": "light"
+    },
+    "device": {
+      "architecture": "[arm64-v8a, armeabi-v7a, armeabi]",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": null,
+      "brand": null,
+      "dualOrientation": false,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": null,
+        "size": null
+      },
+      "type": null,
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Avast Secure Browser",
+      "version": "6.6.0",
+      "manufacturer": "avast-software",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": null
+    }
+  },
+  {
+    "headers": {
       "device-memory": "4",
       "dpr": "1",
       "viewport-width": "1920",
@@ -2138,6 +2186,138 @@
     "client": {
       "name": "Avast Secure Browser",
       "version": "112.0.0",
+      "manufacturer": "avast-software",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "112.0.5615.138",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "2",
+      "downlink": "7.2",
+      "dpr": "1.274999976158142",
+      "ect": "4g",
+      "rtt": "50",
+      "sec-ch-device-memory": "2",
+      "sec-ch-dpr": "1.274999976158142",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-prefers-reduced-motion": "reduce",
+      "sec-ch-ua": "\"AvastSecureBrowser\";v=\"7.5.2\", \"Chromium\";v=\"111\", \"Not(A:Brand\";v=\"8\"",
+      "sec-ch-ua-arch": "\"[arm64-v8a, armeabi-v7a, armeabi]\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version": "\"7.5.2\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"10\"",
+      "sec-ch-viewport-height": "543",
+      "sec-ch-viewport-width": "980",
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "same-origin",
+      "sec-fetch-user": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; LX7ftaJxsg; U; de) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.5563.115 Mobile AvastSecureBrowser/7.5.2 Safari/537.36",
+      "viewport-width": "980"
+    },
+    "device": {
+      "architecture": "[arm64-v8a, armeabi-v7a, armeabi]",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": null,
+      "brand": null,
+      "dualOrientation": false,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": null,
+        "size": null
+      },
+      "type": null,
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Avast Secure Browser",
+      "version": "7.5.2",
+      "manufacturer": "avast-software",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "111.0.5563.115",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "8",
+      "downlink": "10",
+      "dpr": "2.047499895095825",
+      "ect": "4g",
+      "rtt": "50",
+      "sec-ch-device-memory": "8",
+      "sec-ch-dpr": "2.047499895095825",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Chromium\";v=\"112\", \"AVG Secure Browser\";v=\"112\", \"Not:A-Brand\";v=\"99\"",
+      "sec-ch-ua-arch": "\"x86\"",
+      "sec-ch-ua-bitness": "\"64\"",
+      "sec-ch-ua-full-version": "\"112.0.21002.139\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-model": "\"\"",
+      "sec-ch-ua-platform": "\"Windows\"",
+      "sec-ch-ua-platform-version": "\"15.0.0\"",
+      "sec-ch-viewport-height": "669",
+      "sec-ch-viewport-width": "1220",
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "same-origin",
+      "sec-fetch-user": "?1",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.5615.138 Safari/537.36 AVG/112.0.21002.139",
+      "viewport-width": "1220"
+    },
+    "device": {
+      "architecture": "x86",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": null,
+      "brand": null,
+      "dualOrientation": false,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": null,
+        "size": null
+      },
+      "type": null,
+      "ismobile": false,
+      "istv": false,
+      "bits": 64
+    },
+    "os": {
+      "name": "Windows",
+      "marketingName": "Windows",
+      "version": "15.0.0",
+      "manufacturer": "microsoft"
+    },
+    "client": {
+      "name": "AVG Secure Browser",
+      "version": "112.0.21002.139",
       "manufacturer": "avast-software",
       "type": "browser",
       "isbot": false

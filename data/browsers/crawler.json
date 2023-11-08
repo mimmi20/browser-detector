@@ -970,5 +970,17 @@
       ]
     },
     "engine": null
+  },
+  "what-cms": {
+    "name": "WhatCMS",
+    "manufacturer": "nineteen-ten",
+    "type": "crawler",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "WhatCMS"
+      ]
+    },
+    "engine": null
   }
 }

@@ -82,5 +82,47 @@
       "version": "12.19.0.0",
       "manufacturer": "baidu"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; DBY-W09 Build/HUAWEIDBY-W09; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/13.41 BDOS/1.0 (HarmonyOS 3.0.0) SP-engine/2.79.0 baiduboxapp/13.41.5.10 (Baidu; P1 12) NABar/1.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "DBY-W09",
+      "marketingName": "MatePad 11 Wi-Fi (2021)",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 2560,
+        "height": 1600,
+        "touch": true,
+        "size": 10.95
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "HarmonyOS",
+      "marketingName": "HarmonyOS",
+      "version": "3.0.0",
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "Baidu Box App",
+      "version": "13.41.5.10",
+      "manufacturer": "baidu",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "T7",
+      "version": "13.41.0",
+      "manufacturer": "baidu"
+    }
   }
 ]

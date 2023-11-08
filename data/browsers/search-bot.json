@@ -435,5 +435,17 @@
       ]
     },
     "engine": "webkit"
+  },
+  "gigablast search engine": {
+    "name": "Gigablast Search Engine",
+    "manufacturer": "gigablast.com",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "GigablastOpenSource"
+      ]
+    },
+    "engine": "unknown"
   }
 }
