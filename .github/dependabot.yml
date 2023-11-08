@@ -39,7 +39,6 @@ updates:
 
     labels:
       - "dependencies"
-      - "patch"
 
     versioning-strategy: "increase"
 
@@ -91,7 +90,6 @@ updates:
 
     labels:
       - "dependencies"
-      - "patch"
 
     target-branch: "master"
 
