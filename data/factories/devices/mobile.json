@@ -335,7 +335,7 @@
     "/jolla|sailfish(?!browser|;)/i": "jolla",
     "/(?<!e)Magic(?!i|box)/": "magic",
     "/s5003d_champ|esmart m3|s5000d|flash s4010|s5002d spark|victory s4700d/i": "switel",
-    "/dl1036/": "digiland",
+    "/dl1036/i": "digiland",
     "/panasonic|panatv[0-9]+|viera\\/|p902i(?: +build|[;\\/\\)])|eluga[ _]|fz-(?:n1|a1b)|dl1|p55 max|dmc-cm1|940p|840pe|103p|p55 novo 4g|(?:adr|android) 4\\.[24].* t10(?: +build|[;\\/\\)])|p-08d/i": "panasonic",
     "/videocon|vt75c/i": "videocon",
     "/gtv100/i": "netgear",

@@ -179,6 +179,8 @@
     "/avira\\//i": "avira-secure-browser",
     "/norton\\//i": "norton-secure-browser",
     "/archivebox\\//i": "archive-box",
+    "/falkon\\//i": "falkon",
+    "/semjibot/i": "semjibot",
     "/(?<!agent)version[ \\/][0-9_.]+ +chrome|com\\.android\\.browser/i": "android webview",
     "/theworld/i": "theworld",
     "/(?<!u)ptst/i": "webpagetest",

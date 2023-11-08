@@ -9704,5 +9704,75 @@
       ]
     },
     "engine": "unknown"
+  },
+  "freshbot": {
+    "name": "Freshbot",
+    "manufacturer": "unknown",
+    "type": "bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Freshbot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "centuryb": {
+    "name": "centuryb",
+    "manufacturer": "unknown",
+    "type": "bot",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "pricedrone-shopping-bot": {
+    "name": "Pricedrone Shopping Bot",
+    "manufacturer": "bundleman",
+    "type": "bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "PricedroneShoppingBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "bne.es bot": {
+    "name": "bne.es Bot",
+    "manufacturer": "biblioteca-nacional-de-espana",
+    "type": "bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "bne.es_bot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "semjibot": {
+    "name": "SemjiBot",
+    "manufacturer": "unknown",
+    "type": "bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "SemjiBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "impendoom-bot": {
+    "name": "impendoom-bot",
+    "manufacturer": "unknown",
+    "type": "bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "impendoom\\-bot"
+      ]
+    },
+    "engine": "unknown"
   }
 }

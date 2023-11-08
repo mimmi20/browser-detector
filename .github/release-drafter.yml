@@ -28,12 +28,10 @@ version-resolver:
     labels:
       - "bc break"
       - "removed"
-      - "major"
   minor:
     labels:
       - "deprecated"
       - "security"
-      - "minor"
   patch:
     labels:
       - "bug"
@@ -41,7 +39,6 @@ version-resolver:
       - "enhancement"
       - "maintenance"
       - "documentation"
-      - "patch"
   default: patch
 
 autolabeler:

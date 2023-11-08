@@ -5241,5 +5241,17 @@
       ]
     },
     "engine": null
+  },
+  "falkon": {
+    "name": "Falkon",
+    "manufacturer": "kde",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Falkon"
+      ]
+    },
+    "engine": "webkit"
   }
 }
