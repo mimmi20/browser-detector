@@ -34,6 +34,9 @@ use Psr\SimpleCache\InvalidArgumentException;
 use Stringable;
 use UnexpectedValueException;
 
+use function assert;
+use function sprintf;
+
 final class DetectorTest extends TestCase
 {
     /**
@@ -1341,7 +1344,9 @@ final class DetectorTest extends TestCase
     {
         $hash                = 'test-hash';
         $headers             = ['xyz' => 'abc'];
-        $deviceCodeForLoader = 'lg=lg lm-g710';
+        $company             = 'lg';
+        $key                 = 'lg lm-g710';
+        $deviceCodeForLoader = $company . '=' . $key;
 
         $exception = new NotFoundException('device not found');
 
@@ -1471,7 +1476,19 @@ final class DetectorTest extends TestCase
         $logger
             ->expects(self::once())
             ->method('info')
-            ->with($exception, []);
+            ->willReturnCallback(
+                static function (string | Stringable $message, array $context = []) use ($exception, $company, $key): void {
+                    assert($message instanceof UnexpectedValueException);
+                    self::assertInstanceOf(UnexpectedValueException::class, $message);
+                    self::assertSame(
+                        sprintf('Device %s of Manufacturer %s was not found', $key, $company),
+                        $message->getMessage(),
+                    );
+                    self::assertSame(0, $message->getCode());
+                    self::assertSame($exception, $message->getPrevious());
+                    self::assertSame([], $context);
+                },
+            );
         $logger
             ->expects(self::never())
             ->method('notice');
@@ -1530,14 +1547,14 @@ final class DetectorTest extends TestCase
         $deviceLoader
             ->expects(self::once())
             ->method('load')
-            ->with('lg lm-g710')
+            ->with($key)
             ->willThrowException($exception);
 
         $deviceLoaderFactory = $this->createMock(DeviceLoaderFactoryInterface::class);
         $deviceLoaderFactory
             ->expects(self::once())
             ->method('__invoke')
-            ->with('lg')
+            ->with($company)
             ->willReturn($deviceLoader);
 
         $platformLoader = $this->createMock(PlatformLoaderInterface::class);

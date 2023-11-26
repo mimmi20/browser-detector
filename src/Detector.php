@@ -33,6 +33,7 @@ use function in_array;
 use function is_array;
 use function mb_strtolower;
 use function reset;
+use function sprintf;
 use function str_starts_with;
 
 final class Detector implements DetectorInterface
@@ -541,7 +542,13 @@ final class Detector implements DetectorInterface
                     $platformCodenameFromDevice,
                 ];
             } catch (UnexpectedValueException $e) {
-                $this->logger->info($e);
+                $this->logger->info(
+                    new UnexpectedValueException(
+                        sprintf('Device %s of Manufacturer %s was not found', $key, $company),
+                        0,
+                        $e,
+                    ),
+                );
             }
         }
 
