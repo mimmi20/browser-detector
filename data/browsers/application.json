@@ -1740,5 +1740,17 @@
       ]
     },
     "engine": null
+  },
+  "sticky-password": {
+    "name": "Sticky Password",
+    "manufacturer": "unknown",
+    "type": "application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "stickypassword"
+      ]
+    },
+    "engine": null
   }
 }

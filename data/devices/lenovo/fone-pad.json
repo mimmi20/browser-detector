@@ -1214,5 +1214,37 @@
     },
     "type": "fone-pad",
     "platform": "android"
+  },
+  "lenovo tb300xu": {
+    "deviceName": "TB300XU",
+    "marketingName": "Tab M8 Gen 4 LTE",
+    "manufacturer": "lenovo",
+    "brand": "lenovo",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": 8
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "lenovo tb328xu": {
+    "deviceName": "TB328XU",
+    "marketingName": "Tab M10 3rd Gen LTE",
+    "manufacturer": "lenovo",
+    "brand": "lenovo",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "size": 10.1
+    },
+    "type": "fone-pad",
+    "platform": "android"
   }
 }

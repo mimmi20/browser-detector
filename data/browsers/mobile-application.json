@@ -1162,8 +1162,10 @@
     "manufacturer": "norton-mobile",
     "type": "mobile-application",
     "version": {
-      "factory": null,
-      "search": null
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "NortonPasswordManager"
+      ]
     },
     "engine": "unknown"
   },
