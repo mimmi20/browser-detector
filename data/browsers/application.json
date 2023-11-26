@@ -929,18 +929,6 @@
     },
     "engine": null
   },
-  "polaris": {
-    "name": "Polaris",
-    "manufacturer": "infraware",
-    "type": "application",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Polaris"
-      ]
-    },
-    "engine": "webkit"
-  },
   "powerpoint": {
     "name": "PowerPoint",
     "manufacturer": "microsoft",
@@ -1749,6 +1737,18 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "stickypassword"
+      ]
+    },
+    "engine": null
+  },
+  "ruby-browser": {
+    "name": "RubyBrowser",
+    "manufacturer": "unknown",
+    "type": "application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "RubyBrowser"
       ]
     },
     "engine": null

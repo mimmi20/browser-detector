@@ -2624,18 +2624,6 @@
     },
     "engine": null
   },
-  "googlebot-mobile": {
-    "name": "Google Bot Mobile",
-    "manufacturer": "google",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Googlebot\\-Mobile"
-      ]
-    },
-    "engine": "unknown"
-  },
   "google chtml proxy": {
     "name": "Google CHTML Proxy",
     "manufacturer": "google",
@@ -9847,6 +9835,30 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "grub\\-client\\-"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "search-express": {
+    "name": "SearchExpress",
+    "manufacturer": "unknown",
+    "type": "bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "SearchExpress"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "img2dataset": {
+    "name": "img2dataset",
+    "manufacturer": "unknown",
+    "type": "bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "img2dataset"
       ]
     },
     "engine": "unknown"

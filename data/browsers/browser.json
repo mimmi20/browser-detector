@@ -3515,18 +3515,6 @@
     },
     "engine": null
   },
-  "ruby-browser": {
-    "name": "RubyBrowser",
-    "manufacturer": "unknown",
-    "type": "browser",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "RubyBrowser"
-      ]
-    },
-    "engine": null
-  },
   "ruunk": {
     "name": "Ruunk",
     "manufacturer": "unknown",
@@ -5250,6 +5238,42 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "Falkon"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "uzbl": {
+    "name": "Uzbl",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Uzbl"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "polaris": {
+    "name": "Polaris",
+    "manufacturer": "infraware",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Polaris"
+      ]
+    },
+    "engine": "webkit"
+  },
+  "splash": {
+    "name": "splash",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "splash"
       ]
     },
     "engine": "webkit"

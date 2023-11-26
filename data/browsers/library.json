@@ -386,5 +386,29 @@
       ]
     },
     "engine": "unknown"
+  },
+  "undici": {
+    "name": "undici",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "undici"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "safari-view-service": {
+    "name": "SafariViewService",
+    "manufacturer": "unknown",
+    "type": "library",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "SafariViewService"
+      ]
+    },
+    "engine": "unknown"
   }
 }
