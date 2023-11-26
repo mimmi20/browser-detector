@@ -1021,9 +1021,10 @@
     "marketingName": "Windows CE",
     "manufacturer": "microsoft",
     "version": {
-      "class": null,
-      "search": null,
-      "value": "CE"
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Windows CE"
+      ]
     }
   },
   "windows iot 10.0": {

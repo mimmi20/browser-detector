@@ -9826,5 +9826,29 @@
       "search": null
     },
     "engine": "unknown"
+  },
+  "superbot": {
+    "name": "SuperBot",
+    "manufacturer": "unknown",
+    "type": "bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "SuperBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "grub-client": {
+    "name": "grub-client",
+    "manufacturer": "unknown",
+    "type": "bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "grub\\-client\\-"
+      ]
+    },
+    "engine": "unknown"
   }
 }
