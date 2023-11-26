@@ -1,6 +1,48 @@
 [
   {
     "headers": {
+      "user-agent": "Blackberry9670/6.0.0.407 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/104"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "BlackBerry 9670",
+      "marketingName": "BlackBerry Style 9670",
+      "manufacturer": "rim",
+      "brand": "rim",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 400,
+        "height": 360,
+        "touch": false,
+        "size": 2.7
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "RIM OS",
+      "marketingName": "RIM OS",
+      "version": "6.0.0.407",
+      "manufacturer": "rim"
+    },
+    "client": {
+      "name": "black-berry",
+      "version": "6.0.0.407",
+      "manufacturer": "rim",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "black-berry",
+      "version": null,
+      "manufacturer": "rim"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "BlackBerry9700/6.0.0.418 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/600"
     },
     "device": {
@@ -513,8 +555,8 @@
       "marketingName": "BlackBerry 7100",
       "manufacturer": "rim",
       "brand": "rim",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 260,
         "height": 240,
@@ -719,12 +761,12 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "BlackBerry 7100",
-      "marketingName": "BlackBerry 7100",
+      "deviceName": "BlackBerry 7100i",
+      "marketingName": "BlackBerry 7100i",
       "manufacturer": "rim",
       "brand": "rim",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 1,
       "display": {
         "width": 260,
         "height": 240,

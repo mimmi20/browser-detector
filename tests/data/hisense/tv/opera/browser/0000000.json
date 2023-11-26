@@ -23,8 +23,8 @@
       "bits": null
     },
     "os": {
-      "name": "Maemo",
-      "marketingName": "Maemo",
+      "name": "Linux",
+      "marketingName": "Linux",
       "version": null,
       "manufacturer": "linux-foundation"
     },
@@ -65,8 +65,8 @@
       "bits": null
     },
     "os": {
-      "name": "Maemo",
-      "marketingName": "Maemo",
+      "name": "Linux",
+      "marketingName": "Linux",
       "version": null,
       "manufacturer": "linux-foundation"
     },
@@ -107,8 +107,8 @@
       "bits": null
     },
     "os": {
-      "name": "Maemo",
-      "marketingName": "Maemo",
+      "name": "Linux",
+      "marketingName": "Linux",
       "version": null,
       "manufacturer": "linux-foundation"
     },
@@ -191,8 +191,8 @@
       "bits": null
     },
     "os": {
-      "name": "Maemo",
-      "marketingName": "Maemo",
+      "name": "Linux",
+      "marketingName": "Linux",
       "version": null,
       "manufacturer": "linux-foundation"
     },
@@ -233,8 +233,8 @@
       "bits": null
     },
     "os": {
-      "name": "Maemo",
-      "marketingName": "Maemo",
+      "name": "Linux",
+      "marketingName": "Linux",
       "version": null,
       "manufacturer": "linux-foundation"
     },
@@ -275,8 +275,8 @@
       "bits": null
     },
     "os": {
-      "name": "Maemo",
-      "marketingName": "Maemo",
+      "name": "Linux",
+      "marketingName": "Linux",
       "version": null,
       "manufacturer": "linux-foundation"
     },
@@ -317,8 +317,8 @@
       "bits": null
     },
     "os": {
-      "name": "Maemo",
-      "marketingName": "Maemo",
+      "name": "Linux",
+      "marketingName": "Linux",
       "version": null,
       "manufacturer": "linux-foundation"
     },
@@ -359,8 +359,134 @@
       "bits": null
     },
     "os": {
-      "name": "Maemo",
-      "marketingName": "Maemo",
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation"
+    },
+    "client": {
+      "name": "Opera Devices",
+      "version": "4.9.0.183",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "53.0.2785.143",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36 OPR/40.0.2207.0 OMI/4.9.0.183.Catcher.151 Model/Hisense-MSD6586 (Hisense;HU50A6100UW_0001;V0000.01.00a.K1130) MST6586"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "HU50A6100UW",
+      "marketingName": "HU50A6100UW",
+      "manufacturer": "hisense",
+      "brand": "hisense",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 3840,
+        "height": 2160,
+        "touch": false,
+        "size": 49.5
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation"
+    },
+    "client": {
+      "name": "Opera Devices",
+      "version": "4.9.0.183",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "53.0.2785.143",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36 OPR/40.0.2207.0 OMI/4.9.0.237.Martell-2.312 Model/Hisense-MT5658-SDK4-9 MT5658 (;Hisense;SmartTV;V0000.01.00a.J0211;HE43A6500UWTS) FXM-U2FsdGVkX18/+ceY1oqH8mnezkZ/ZlbriwD7ixl/Ho5dsOsPG6/PhIre4h8t42z4-END"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general HiSense TV",
+      "marketingName": "general HiSense TV",
+      "manufacturer": "hisense",
+      "brand": "hisense",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation"
+    },
+    "client": {
+      "name": "Opera Devices",
+      "version": "4.9.0.237",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "53.0.2785.143",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36 OPR/40.0.2207.0 OMI/4.9.0.183.Catcher.151 Model/Hisense-MSD6586 (Hisense;HU43A6100UW;V0000.01.00a.N0412) MST6586"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "HU43A6100UW",
+      "marketingName": "HU43A6100UW",
+      "manufacturer": "hisense",
+      "brand": "hisense",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 3840,
+        "height": 2160,
+        "touch": false,
+        "size": 43
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
       "version": null,
       "manufacturer": "linux-foundation"
     },

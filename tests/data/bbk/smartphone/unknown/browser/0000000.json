@@ -1429,6 +1429,48 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 10; en-us; CPH1919 Build/QKQ1.191021.002) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/70.0.3538.80 Mobile Safari/537.36 HeyTapBrowser/45.7.0.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "CPH1919",
+      "marketingName": "Reno 10x Zoom",
+      "manufacturer": "bbk",
+      "brand": "oppo",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.6
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "HeyTapBrowser",
+      "version": "45.7.0.0",
+      "manufacturer": "unknown",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "70.0.3538.80",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; U; Android 8.1.0; en-us; CPH1803 Build/OPM1.171019.026) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/70.0.3538.80 Mobile Safari/537.36 HeyTapBrowser/15.7.1.1"
     },
     "device": {
@@ -1585,6 +1627,48 @@
     "client": {
       "name": "HeyTapBrowser",
       "version": "15.7.1.1",
+      "manufacturer": "unknown",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "70.0.3538.80",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 9; ru-ru; PCCM00 Build/PKQ1.190223.001) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/70.0.3538.80 Mobile Safari/537.36 HeyTapBrowser/20.7.2.1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "PCCM00",
+      "marketingName": "Reno 10x Zoom",
+      "manufacturer": "bbk",
+      "brand": "oppo",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.6
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "HeyTapBrowser",
+      "version": "20.7.2.1",
       "manufacturer": "unknown",
       "type": "browser",
       "isbot": false
@@ -2022,7 +2106,7 @@
     "device": {
       "architecture": null,
       "deviceName": "CPH1801",
-      "marketingName": "A71",
+      "marketingName": "A71 (2018)",
       "manufacturer": "bbk",
       "brand": "oppo",
       "dualOrientation": null,
@@ -4112,90 +4196,6 @@
     "engine": {
       "name": "Blink",
       "version": "70.0.3538.80",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; ONEPLUS A5010) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.127 Mobile Safari/537.36 (Ecosia android@85.0.4183.127)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "A5010",
-      "marketingName": "5T",
-      "manufacturer": "bbk",
-      "brand": "oneplus",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 2160,
-        "height": 1080,
-        "touch": true,
-        "size": 6.01
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Ecosia",
-      "version": "85.0.4183.127",
-      "manufacturer": "unknown",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "85.0.4183.127",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; AC2003) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.127 Mobile Safari/537.36 (Ecosia android@85.0.4183.127)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "AC2003",
-      "marketingName": "Nord 5G (International)",
-      "manufacturer": "bbk",
-      "brand": "oneplus",
-      "dualOrientation": true,
-      "simCount": 2,
-      "display": {
-        "width": 2400,
-        "height": 1080,
-        "touch": true,
-        "size": 6.4
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Ecosia",
-      "version": "85.0.4183.127",
-      "manufacturer": "unknown",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "85.0.4183.127",
       "manufacturer": "google"
     }
   }

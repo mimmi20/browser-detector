@@ -1216,5 +1216,52 @@
       "version": "103.0.5060.71",
       "manufacturer": "google"
     }
+  },
+  {
+    "headers": {
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "same-origin",
+      "sec-fetch-user": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; moto z3 Build/PDX29.84-51-11-8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.71 Mobile Safari/537.36 OPT/2.9",
+      "x-requested-with": "com.opera.touch"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Z3",
+      "marketingName": "Z3",
+      "manufacturer": "motorola",
+      "brand": "motorola",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": 1.9
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Opera Touch",
+      "version": null,
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "103.0.5060.71",
+      "manufacturer": "google"
+    }
   }
 ]

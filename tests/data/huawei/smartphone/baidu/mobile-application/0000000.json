@@ -1976,6 +1976,104 @@
   },
   {
     "headers": {
+      "purpose": "prefetch",
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "cross-site",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; VOG-AL10 Build/HUAWEIVOG-AL10; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/13.37 BDOS/1.0 (HarmonyOS 2.2.0) SP-engine/2.75.0 baiduboxapp/13.37.5.10 (Baidu; P1 10) NABar/1.0",
+      "x-bd-traceid": "1af41c3e20384ba18645bfd040db182a",
+      "x-from-h3-trnet": "true",
+      "x-requested-with": "com.baidu.searchbox"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "VOG-AL10",
+      "marketingName": "P30 Pro",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.47
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "HarmonyOS",
+      "marketingName": "HarmonyOS",
+      "version": "2.2.0",
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "Baidu Box App",
+      "version": null,
+      "manufacturer": "baidu",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "T7",
+      "version": "13.37.0",
+      "manufacturer": "baidu"
+    }
+  },
+  {
+    "headers": {
+      "purpose": "prefetch",
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "cross-site",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; HMA-AL00 Build/HUAWEIHMA-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/13.37 BDOS/1.0 (HarmonyOS 2.2.0) SP-engine/2.75.0 baiduboxapp/13.37.5.10 (Baidu; P1 10) NABar/1.0",
+      "x-bd-traceid": "c9bb3ac056534ceca332ee8cb68f37bb",
+      "x-from-h3-trnet": "true",
+      "x-requested-with": "com.baidu.searchbox"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "HMA-AL00",
+      "marketingName": "Mate 20",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2244,
+        "height": 1080,
+        "touch": true,
+        "size": 6.53
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "HarmonyOS",
+      "marketingName": "HarmonyOS",
+      "version": "2.2.0",
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "Baidu Box App",
+      "version": null,
+      "manufacturer": "baidu",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "T7",
+      "version": "13.37.0",
+      "manufacturer": "baidu"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 12; ELS-AN00 Build/HUAWEIELS-AN00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/13.42 BDOS/1.0 (HarmonyOS 3.0.0) SP-engine/2.80.0 baiduboxapp/13.42.5.10 (Baidu; P1 12) NABar/1.0"
     },
     "device": {
@@ -2006,6 +2104,55 @@
     "client": {
       "name": "Baidu Box App",
       "version": "13.42.5.10",
+      "manufacturer": "baidu",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "T7",
+      "version": "13.42.0",
+      "manufacturer": "baidu"
+    }
+  },
+  {
+    "headers": {
+      "purpose": "prefetch",
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "cross-site",
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; ELS-AN00 Build/HUAWEIELS-AN00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/13.42 BDOS/1.0 (HarmonyOS 3.0.0) SP-engine/2.80.0 baiduboxapp/13.42.5.10 (Baidu; P1 12) NABar/1.0",
+      "x-bd-traceid": "ebe6aac9697c47e98bb1c8495db015ea",
+      "x-from-h3-trnet": "true",
+      "x-requested-with": "com.baidu.searchbox"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "ELS-AN00",
+      "marketingName": "P40 Pro 5G",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2640,
+        "height": 1200,
+        "touch": true,
+        "size": 6.58
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "HarmonyOS",
+      "marketingName": "HarmonyOS",
+      "version": "3.0.0",
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "Baidu Box App",
+      "version": null,
       "manufacturer": "baidu",
       "type": "mobile-application",
       "isbot": false

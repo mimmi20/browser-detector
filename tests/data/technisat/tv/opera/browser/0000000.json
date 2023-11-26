@@ -149,8 +149,8 @@
       "bits": null
     },
     "os": {
-      "name": "Maemo",
-      "marketingName": "Maemo",
+      "name": "Linux",
+      "marketingName": "Linux",
       "version": null,
       "manufacturer": "linux-foundation"
     },
@@ -165,48 +165,6 @@
       "name": "Blink",
       "version": "67.0.3396.99",
       "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.80 (Linux armv7l; U; HbbTV/1.2.1 (; TechniSat; TechniMedia UHD+; 2.73.0.4; 56.0-5; ); CE-HTML/1.0 (); TechniSat TechniMedia UHD+ BCM2 TV; de) Presto/2.12.407 Version/12.51"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "MultyVision ISIO",
-      "marketingName": "MultyVision ISIO",
-      "manufacturer": "technisat",
-      "brand": "technisat",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv",
-      "ismobile": false,
-      "istv": true,
-      "bits": null
-    },
-    "os": {
-      "name": "Maemo",
-      "marketingName": "Maemo",
-      "version": null,
-      "manufacturer": "linux-foundation"
-    },
-    "client": {
-      "name": "Opera",
-      "version": "12.51.0",
-      "manufacturer": "opera",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.12.407",
-      "manufacturer": "opera"
     }
   }
 ]

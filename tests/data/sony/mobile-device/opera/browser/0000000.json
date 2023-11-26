@@ -23,8 +23,8 @@
       "bits": null
     },
     "os": {
-      "name": "Maemo",
-      "marketingName": "Maemo",
+      "name": "Linux",
+      "marketingName": "Linux",
       "version": null,
       "manufacturer": "linux-foundation"
     },
@@ -515,90 +515,6 @@
     "engine": {
       "name": "Blink",
       "version": "104.0.5112.97",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 13; XQ-CT54) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.5249.126 Mobile Safari/537.36 OPR/72.5.3767.69342"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Sony device",
-      "marketingName": "general Sony device",
-      "manufacturer": "sony",
-      "brand": "sony",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "13.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Opera Mobile",
-      "version": "72.5.3767.69342",
-      "manufacturer": "opera",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "106.0.5249.126",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 13; XQ-CT54) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.167 Mobile Safari/537.36 OPR/77.5.4095.75179"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Sony device",
-      "marketingName": "general Sony device",
-      "manufacturer": "sony",
-      "brand": "sony",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "13.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Opera Mobile",
-      "version": "77.5.4095.75179",
-      "manufacturer": "opera",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "115.0.5790.167",
       "manufacturer": "google"
     }
   }

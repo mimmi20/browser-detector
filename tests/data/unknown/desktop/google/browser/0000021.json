@@ -1,70 +1,6 @@
 [
   {
     "headers": {
-      "device-memory": "8",
-      "downlink": "1.45",
-      "dpr": "1",
-      "ect": "4g",
-      "origin": "https://www.geld.de",
-      "rtt": "100",
-      "sec-ch-device-memory": "8",
-      "sec-ch-dpr": "1",
-      "sec-ch-prefers-color-scheme": "light",
-      "sec-ch-ua": "\"Chromium\";v=\"105\", \"Not)A;Brand\";v=\"8\"",
-      "sec-ch-ua-arch": "\"x86\"",
-      "sec-ch-ua-bitness": "\"64\"",
-      "sec-ch-ua-full-version": "\"105.0.5171.0\"",
-      "sec-ch-ua-mobile": "?0",
-      "sec-ch-ua-platform": "\"Linux\"",
-      "sec-ch-ua-platform-version": "\"5.10.123\"",
-      "sec-ch-viewport-width": "500",
-      "sec-fetch-dest": "empty",
-      "sec-fetch-mode": "cors",
-      "sec-fetch-site": "same-origin",
-      "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36",
-      "viewport-width": "500",
-      "x-requested-with": "XMLHttpRequest"
-    },
-    "device": {
-      "architecture": "x86",
-      "deviceName": "Linux Desktop",
-      "marketingName": "Linux Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": 64
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": "5.10.123",
-      "manufacturer": "linux-foundation"
-    },
-    "client": {
-      "name": "Chrome",
-      "version": "105.0.5171.0",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "105.0.0.0",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
       "origin": "https://www.geld.de",
       "sec-ch-ua": "\" Not;A Brand\";v=\"99\", \"Google Chrome\";v=\"65\", \"Chromium\";v=\"65\"",
       "sec-ch-ua-mobile": "?0",
@@ -248,7 +184,7 @@
     },
     "client": {
       "name": "Android WebView",
-      "version": "11.0.696.34",
+      "version": null,
       "manufacturer": "google",
       "type": "browser",
       "isbot": false
@@ -4647,6 +4583,48 @@
     "engine": {
       "name": "Blink",
       "version": "67.0.2919",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 9_1; Win64; x64) AppleWebKit/554.48 (KHTML, like Gecko) Chrome/101.0.297 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows NT",
+      "marketingName": "Windows NT",
+      "version": null,
+      "manufacturer": "microsoft"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "101.0.297",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "101.0.297",
       "manufacturer": "google"
     }
   }

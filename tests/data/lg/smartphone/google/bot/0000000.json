@@ -460,5 +460,47 @@
       "version": "117.0.5938.92",
       "manufacturer": "google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.6045.105 Mobile Safari/537.36 (compatible; Google-Safety; +http://www.google.com/bot.html)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Nexus 5X",
+      "marketingName": "Nexus 5X",
+      "manufacturer": "lg",
+      "brand": "google",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.2
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Google-Safety",
+      "version": null,
+      "manufacturer": "google",
+      "type": "bot",
+      "isbot": true
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "119.0.6045.105",
+      "manufacturer": "google"
+    }
   }
 ]

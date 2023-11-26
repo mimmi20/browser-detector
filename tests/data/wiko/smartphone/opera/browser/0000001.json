@@ -922,5 +922,47 @@
       "version": "114.0.5735.196",
       "manufacturer": "google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.112 Safari/537.36 OPR/36.0.2128.0 OMI/4.8.0.129.JFK.669 TiVo, TiVo_STB_BCM7438S/21.11.1.v25-USH-11 (BlueRidgeCommunications, TCDA95000, wired)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Ridge",
+      "marketingName": "Ridge",
+      "manufacturer": "wiko",
+      "brand": "wiko",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation"
+    },
+    "client": {
+      "name": "Opera Devices",
+      "version": "4.8.0.129",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "49.0.2623.112",
+      "manufacturer": "google"
+    }
   }
 ]

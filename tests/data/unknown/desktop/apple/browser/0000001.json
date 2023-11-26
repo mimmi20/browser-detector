@@ -463,48 +463,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (X11; Linux arm_32; rv:24.0) Gecko/20100101 WebKit 2.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Linux Desktop",
-      "marketingName": "Linux Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Maemo",
-      "marketingName": "Maemo",
-      "version": null,
-      "manufacturer": "linux-foundation"
-    },
-    "client": {
-      "name": "Safari",
-      "version": null,
-      "manufacturer": "apple",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "2.0.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Windows; U; Windows; en-US) AppleWebKit/533.16 (KHTML, like Gecko) Version/5.0 Safari/533.16 Gecko/20100527 Firefox/3.6.4 EvoHtmlToPdf/2.3"
     },
     "device": {
@@ -4196,6 +4154,48 @@
     "engine": {
       "name": "WebKit",
       "version": "533.3.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/535.4+ (KHTML, like Gecko) Version/5.0 Safari/535.4+"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation"
+    },
+    "client": {
+      "name": "Safari",
+      "version": "5.0.0",
+      "manufacturer": "apple",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "535.4.0",
       "manufacturer": "apple"
     }
   }

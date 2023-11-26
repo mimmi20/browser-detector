@@ -1,48 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; KFARWI Build/LVY48F) AppleWebKit/537.36 (KHTML, like Gecko) Silk/62.4.2 like Chrome/62.0.3202.84 Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "KFARWI",
-      "marketingName": "Fire HD 6 (2014)",
-      "manufacturer": "amazon",
-      "brand": "amazon",
-      "dualOrientation": true,
-      "simCount": 0,
-      "display": {
-        "width": 1280,
-        "height": 800,
-        "touch": true,
-        "size": 6
-      },
-      "type": "tablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.1.1",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Silk",
-      "version": "62.4.2",
-      "manufacturer": "amazon",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "62.0.3202.84",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; KFMEWI Build/LVY48F) AppleWebKit/537.36 (KHTML, like Gecko) Silk/62.4.2 like Chrome/62.0.3202.84 Safari/537.36"
     },
     "device": {
@@ -4184,6 +4142,48 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "4.4.3",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Silk",
+      "version": "69.2.14",
+      "manufacturer": "amazon",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "69.0.3497.100",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; KFDOWI Build/LVY48F) AppleWebKit/537.36 (KHTML, like Gecko) Silk/69.2.14 like Chrome/69.0.3497.100 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "KFDOWI",
+      "marketingName": "Fire HD 8 (2017)",
+      "manufacturer": "amazon",
+      "brand": "amazon",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 7.1
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
       "manufacturer": "google"
     },
     "client": {

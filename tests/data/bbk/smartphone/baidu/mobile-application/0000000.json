@@ -2476,5 +2476,96 @@
       "version": "13.39.0",
       "manufacturer": "baidu"
     }
+  },
+  {
+    "headers": {
+      "purpose": "prefetch",
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "cross-site",
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; PERM10 Build/TP1A.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/13.39 SP-engine/2.77.0 baiduboxapp/13.39.0.11 (Baidu; P1 13) NABar/1.0",
+      "x-bd-traceid": "45672451fe6340308cfb06628cfb5ec4",
+      "x-from-h3-trnet": "true",
+      "x-requested-with": "com.baidu.searchbox"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "PERM10",
+      "marketingName": "K9s",
+      "manufacturer": "bbk",
+      "brand": "oppo",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2412,
+        "height": 1080,
+        "touch": true,
+        "size": 6.59
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Baidu Box App",
+      "version": null,
+      "manufacturer": "baidu",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "T7",
+      "version": "13.39.0",
+      "manufacturer": "baidu"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; RMX2121 Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/12.27 SP-engine/2.65.0 baiduboxapp/13.27.0.12 (Baidu; P1 12) NABar/1.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "RMX2121",
+      "marketingName": "X7 Pro 5G",
+      "manufacturer": "bbk",
+      "brand": "realme",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.55
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Baidu Box App",
+      "version": "13.27.0.12",
+      "manufacturer": "baidu",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "T7",
+      "version": "12.27.0",
+      "manufacturer": "baidu"
+    }
   }
 ]

@@ -23,8 +23,8 @@
       "bits": null
     },
     "os": {
-      "name": "Maemo",
-      "marketingName": "Maemo",
+      "name": "Linux",
+      "marketingName": "Linux",
       "version": null,
       "manufacturer": "linux-foundation"
     },
@@ -65,8 +65,8 @@
       "bits": null
     },
     "os": {
-      "name": "Maemo",
-      "marketingName": "Maemo",
+      "name": "Linux",
+      "marketingName": "Linux",
       "version": null,
       "manufacturer": "linux-foundation"
     },
@@ -80,48 +80,6 @@
     "engine": {
       "name": "Blink",
       "version": "77.0.3865.120",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux aarch64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.112 Safari/537.36 OPR/36.0.2128.0 OMI/4.8.0.129.JFK.669 TiVo, TiVo_STB_BCM7278/21.11.1.v22-USM-12 (TiVo, TCDD6E000, wireless)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general TiVo device",
-      "marketingName": "general TiVo device",
-      "manufacturer": "arris",
-      "brand": "arris",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv-media-player",
-      "ismobile": false,
-      "istv": true,
-      "bits": null
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "linux-foundation"
-    },
-    "client": {
-      "name": "Opera Devices",
-      "version": "4.8.0.129",
-      "manufacturer": "opera",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "49.0.2623.112",
       "manufacturer": "google"
     }
   }

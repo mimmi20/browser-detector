@@ -557,5 +557,64 @@
       "version": "92.0.4700.1",
       "manufacturer": "google"
     }
+  },
+  {
+    "headers": {
+      "device-memory": "8",
+      "downlink": "10",
+      "dpr": "1.1",
+      "ect": "4g",
+      "rtt": "0",
+      "sec-ch-ua": "\"Chromium\";v=\"91\", \" Not;A Brand\";v=\"99\"",
+      "sec-ch-ua-arch": "\"x86\"",
+      "sec-ch-ua-full-version": "\"91.0.4650.0\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-model": "\"\"",
+      "sec-ch-ua-platform": "\"Windows\"",
+      "sec-ch-ua-platform-version": "\"6.1\"",
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "same-origin",
+      "sec-fetch-user": "?1",
+      "user-agent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4650.0 Iron Safari/537.36",
+      "viewport-width": "1455"
+    },
+    "device": {
+      "architecture": "x86",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": null,
+      "brand": null,
+      "dualOrientation": false,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": null,
+        "size": null
+      },
+      "type": null,
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows",
+      "marketingName": "Windows",
+      "version": "6.1.0",
+      "manufacturer": "microsoft"
+    },
+    "client": {
+      "name": "Iron",
+      "version": "91.0.4650.0",
+      "manufacturer": "srware",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "91.0.4650.0",
+      "manufacturer": "google"
+    }
   }
 ]

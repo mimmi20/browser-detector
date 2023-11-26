@@ -107,8 +107,8 @@
       "bits": null
     },
     "os": {
-      "name": "Maemo",
-      "marketingName": "Maemo",
+      "name": "Linux",
+      "marketingName": "Linux",
       "version": null,
       "manufacturer": "linux-foundation"
     },
@@ -149,8 +149,8 @@
       "bits": null
     },
     "os": {
-      "name": "Maemo",
-      "marketingName": "Maemo",
+      "name": "Linux",
+      "marketingName": "Linux",
       "version": null,
       "manufacturer": "linux-foundation"
     },
@@ -191,8 +191,8 @@
       "bits": null
     },
     "os": {
-      "name": "Maemo",
-      "marketingName": "Maemo",
+      "name": "Linux",
+      "marketingName": "Linux",
       "version": null,
       "manufacturer": "linux-foundation"
     },
@@ -233,8 +233,8 @@
       "bits": null
     },
     "os": {
-      "name": "Maemo",
-      "marketingName": "Maemo",
+      "name": "Linux",
+      "marketingName": "Linux",
       "version": null,
       "manufacturer": "linux-foundation"
     },
@@ -332,6 +332,216 @@
     "engine": {
       "name": "Blink",
       "version": "84.0.4147.125",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.140 Safari/537.36 OPR/46.0.2207.0 OMI/4.21.4.112.Catcher4.69 Model/Hisense-MT9602 VIDAA/5.0(Hisense;SmartTV;55A52FEVS;MTK9602/V0000.01.00R.M0531;UHD;55A5FE;)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Smart TV",
+      "marketingName": "Smart TV",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation"
+    },
+    "client": {
+      "name": "Opera Devices",
+      "version": "4.21.4.112",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "84.0.4147.140",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36 OPR/46.0.2207.0 OMI/4.20.3.54.Catcher2.205 Model/Hisense-MSD6886 VIDAA/4.0(Hisense;SmartTV;HE55A6803FUWTS;mstar6886/V0000.01.00K.M0518;UHD)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Smart TV",
+      "marketingName": "Smart TV",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation"
+    },
+    "client": {
+      "name": "Opera Devices",
+      "version": "4.20.3.54",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "77.0.3865.120",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Andr0id 9; AFTANNA0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.82 Safari/537.36 OPR/46.0.2207.0 OMI/4.24.1.52.AFTdev.551 HbbTV/1.5.1 (+DRM;Amazon;AFTANNA0-Xiaomi-L43M7-FVEU;0029159767172;unknown;com.amazon.m7632;) FVC/6.0 (Amazon;com.amazon.m7632;) smarttv_AFTANNA0-Xiaomi-L43M7-FVEU_Build_0029159767172_Chromium_116.0.5845.82"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Smart TV",
+      "marketingName": "Smart TV",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Opera Devices",
+      "version": "4.24.1.52",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "116.0.5845.82",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Andr0id 9; AFTBOXE1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.5359.59 Safari/537.36 OPR/46.0.2207.0 OMI/4.23.2.73.AFTdev.465 HbbTV/1.5.1 (+DRM;Amazon;AFTBOXE1-TOSHIBA-65UF3D63DA;0024126536068;unknown;com.amazon.m7632;) smarttv_AFTBOXE1-TOSHIBA-65UF3D63DA_Build_0024126536068_Chromium_108.0.5359.59"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Smart TV",
+      "marketingName": "Smart TV",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Opera Devices",
+      "version": "4.23.2.73",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "108.0.5359.59",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Andr0id 9; AFTEU011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.5615.55 Safari/537.36 OPR/46.0.2207.0 OMI/4.24.0.13.AFTdev.509 HbbTV/1.5.1 (+DRM;Amazon;clara;0028488623748;unknown;clara;) smarttv_AFTEU011-GRUNDIG-40FHDMGA_Build_0028488623748_Chromium_112.0.5615.55"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Smart TV",
+      "marketingName": "Smart TV",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Opera Devices",
+      "version": "4.24.0.13",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "112.0.5615.55",
       "manufacturer": "google"
     }
   }

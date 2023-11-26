@@ -213,6 +213,53 @@
     "headers": {
       "sec-fetch-dest": "document",
       "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "same-origin",
+      "sec-fetch-user": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; CPH2219 Build/RKQ1.201217.002; ) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/96.0.4664.45 Mobile Safari/537.36 BingSapphire/23.5.401102302",
+      "x-requested-with": "com.microsoft.bing"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "CPH2219",
+      "marketingName": "F19s",
+      "manufacturer": "bbk",
+      "brand": "oppo",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.43
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Bing Search",
+      "version": null,
+      "manufacturer": "microsoft",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "96.0.4664.45",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
       "sec-fetch-site": "none",
       "sec-fetch-user": "?1",
       "user-agent": "Mozilla/5.0 (Linux; Android 11; CPH2219 Build/RKQ1.201217.002; ) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/87.0.4280.141 Mobile Safari/537.36 BingSapphire/23.6.401111302",
@@ -245,7 +292,7 @@
     },
     "client": {
       "name": "Bing Search",
-      "version": "23.6.401111302",
+      "version": null,
       "manufacturer": "microsoft",
       "type": "application",
       "isbot": false
@@ -292,7 +339,7 @@
     },
     "client": {
       "name": "Bing Search",
-      "version": "24.1.410218302",
+      "version": null,
       "manufacturer": "microsoft",
       "type": "application",
       "isbot": false
@@ -342,6 +389,48 @@
     "engine": {
       "name": "Blink",
       "version": "102.0.5005.78",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; KB2003 Build/RKQ1.211119.001; ) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/114.0.0.0 Mobile Safari/537.36 BingSapphire/27.3.411031318"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "KB2003",
+      "marketingName": "8T",
+      "manufacturer": "bbk",
+      "brand": "oneplus",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.55
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Bing Search",
+      "version": "27.3.411031318",
+      "manufacturer": "microsoft",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "114.0.0.0",
       "manufacturer": "google"
     }
   }

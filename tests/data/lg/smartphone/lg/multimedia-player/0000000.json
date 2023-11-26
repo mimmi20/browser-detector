@@ -292,5 +292,47 @@
       "version": null,
       "manufacturer": "unknown"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "LG-H870/V20a Player/LG Player 1.0 for Android 8.0.0 (stagefright alternative)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "H870",
+      "marketingName": "G6",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 2880,
+        "height": 1440,
+        "touch": true,
+        "size": 5.7
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "LG Player",
+      "version": "1.0.0",
+      "manufacturer": "lg",
+      "type": "multimedia-player",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
   }
 ]
