@@ -1,300 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; RMX2020) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "RMX2020",
-      "marketingName": "C3",
-      "manufacturer": "bbk",
-      "brand": "realme",
-      "dualOrientation": true,
-      "simCount": 2,
-      "display": {
-        "width": 1560,
-        "height": 720,
-        "touch": true,
-        "size": 6.5
-      },
-      "type": "phablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Chrome",
-      "version": "86.0.4240.198",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "86.0.4240.198",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 9; PCAM10 Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/80.0.3987.99 Mobile Safari/537.36 Zalo android/12100438"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "PCAM10",
-      "marketingName": "A9",
-      "manufacturer": "bbk",
-      "brand": "oppo",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 2340,
-        "height": 1080,
-        "touch": true,
-        "size": 6.53
-      },
-      "type": "phablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "9.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Android WebView",
-      "version": "80.0.3987.99",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "80.0.3987.99",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; CPH2109) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "CPH2109",
-      "marketingName": "Reno 4 Pro 4G",
-      "manufacturer": "bbk",
-      "brand": "oppo",
-      "dualOrientation": true,
-      "simCount": 2,
-      "display": {
-        "width": 2400,
-        "height": 1080,
-        "touch": true,
-        "size": 6.5
-      },
-      "type": "phablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Chrome",
-      "version": "87.0.4280.141",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "87.0.4280.141",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; CPH1969) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.101 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "CPH1969",
-      "marketingName": "F11 Pro",
-      "manufacturer": "bbk",
-      "brand": "oppo",
-      "dualOrientation": true,
-      "simCount": 2,
-      "display": {
-        "width": 2340,
-        "height": 1080,
-        "touch": true,
-        "size": 6.53
-      },
-      "type": "phablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Chrome",
-      "version": "87.0.4280.101",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "87.0.4280.101",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; vivo 1918) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.101 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "1918",
-      "marketingName": "Z1 Pro",
-      "manufacturer": "bbk",
-      "brand": "vivo",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 2340,
-        "height": 1080,
-        "touch": true,
-        "size": 6.53
-      },
-      "type": "phablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Chrome",
-      "version": "87.0.4280.101",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "87.0.4280.101",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; RMX2180) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.101 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "RMX2180",
-      "marketingName": "C15",
-      "manufacturer": "bbk",
-      "brand": "realme",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1600,
-        "height": 720,
-        "touch": true,
-        "size": 6.5
-      },
-      "type": "phablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Chrome",
-      "version": "87.0.4280.101",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "87.0.4280.101",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; CPH2059) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.101 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "CPH2059",
-      "marketingName": "A92",
-      "manufacturer": "bbk",
-      "brand": "oppo",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 2400,
-        "height": 1080,
-        "touch": true,
-        "size": 6.5
-      },
-      "type": "phablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Chrome",
-      "version": "87.0.4280.101",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "87.0.4280.101",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 10; V2027) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.99 Mobile Safari/537.36"
     },
     "device": {
@@ -1009,48 +715,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; RMX2020) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.101 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "RMX2020",
-      "marketingName": "C3",
-      "manufacturer": "bbk",
-      "brand": "realme",
-      "dualOrientation": true,
-      "simCount": 2,
-      "display": {
-        "width": 1560,
-        "height": 720,
-        "touch": true,
-        "size": 6.5
-      },
-      "type": "phablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Chrome",
-      "version": "87.0.4280.101",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "87.0.4280.101",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 10; CPH2009) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.101 Mobile Safari/537.36"
     },
     "device": {
@@ -1395,8 +1059,8 @@
       "marketingName": "7 5G",
       "manufacturer": "bbk",
       "brand": "realme",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 2400,
         "height": 1080,
@@ -2151,8 +1815,8 @@
       "marketingName": "7 5G",
       "manufacturer": "bbk",
       "brand": "realme",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 2400,
         "height": 1080,
@@ -3789,8 +3453,8 @@
       "marketingName": "7 5G",
       "manufacturer": "bbk",
       "brand": "realme",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 2400,
         "height": 1080,
@@ -3873,8 +3537,8 @@
       "marketingName": "7 5G",
       "manufacturer": "bbk",
       "brand": "realme",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 2400,
         "height": 1080,
@@ -4196,6 +3860,342 @@
     "engine": {
       "name": "Blink",
       "version": "90.0.4430.210",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; CPH2127) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.210 Mobile Safari/537.36 comdirect/1.0 (appVersion:21.9.1;deviceType:mobile)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "CPH2127",
+      "marketingName": "A53",
+      "manufacturer": "bbk",
+      "brand": "oppo",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1600,
+        "height": 720,
+        "touch": true,
+        "size": 6.5
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "90.0.4430.210",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "90.0.4430.210",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; RMX1911) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.50 Mobile Safari/537.36 comdirect/1.0 (appVersion:21.9.1;deviceType:mobile)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "RMX1911",
+      "marketingName": "5",
+      "manufacturer": "bbk",
+      "brand": "realme",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1600,
+        "height": 720,
+        "touch": true,
+        "size": 6.5
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "94.0.4606.50",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "94.0.4606.50",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; CPH2069) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.82 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "CPH2069",
+      "marketingName": "A52",
+      "manufacturer": "bbk",
+      "brand": "oppo",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.5
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "93.0.4577.82",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "93.0.4577.82",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; CPH2015) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.82 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "CPH2015",
+      "marketingName": "A31",
+      "manufacturer": "bbk",
+      "brand": "oppo",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1600,
+        "height": 720,
+        "touch": true,
+        "size": 6.5
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "93.0.4577.82",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "93.0.4577.82",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; CPH2113) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.62 Mobile Safari/537.36 comdirect/1.0 (appVersion:21.9.1;deviceType:mobile)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "CPH2113",
+      "marketingName": "Reno 4",
+      "manufacturer": "bbk",
+      "brand": "oppo",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.4
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "93.0.4577.62",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "93.0.4577.62",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; CPH2059) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Mobile Safari/537.36 comdirect/1.0 (appVersion:21.9.1;deviceType:mobile)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "CPH2059",
+      "marketingName": "A92",
+      "manufacturer": "bbk",
+      "brand": "oppo",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.5
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "94.0.4606.61",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "94.0.4606.61",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; CPH1937) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.82 Mobile Safari/537.36 comdirect/1.0 (appVersion:21.9.1;deviceType:mobile)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "CPH1937",
+      "marketingName": "A9 (2020)",
+      "manufacturer": "bbk",
+      "brand": "oppo",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1600,
+        "height": 720,
+        "touch": true,
+        "size": 6.5
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "93.0.4577.82",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "93.0.4577.82",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; CPH1911) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Mobile Safari/537.36 comdirect/1.0 (appVersion:21.9.1;deviceType:mobile)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "CPH1911",
+      "marketingName": "F11",
+      "manufacturer": "bbk",
+      "brand": "oppo",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.5
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "94.0.4606.61",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "94.0.4606.61",
       "manufacturer": "google"
     }
   }

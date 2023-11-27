@@ -2143,6 +2143,53 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; SM-A217F Build/QP1A.190711.020; ) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/80.0.3987.99 Mobile Safari/537.36 BingSapphire/22.2.400225302",
+      "x-requested-with": "com.microsoft.bing",
+      "sec-fetch-site": "none",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-user": "?1",
+      "sec-fetch-dest": "document"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-A217F",
+      "marketingName": "Galaxy A21s (2020)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1600,
+        "height": 720,
+        "touch": true,
+        "size": 6.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Bing Search",
+      "version": null,
+      "manufacturer": "microsoft",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "80.0.3987.99",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 11; SM-A326B Build/RP1A.200720.012; ) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/87.0.4280.141 Mobile Safari/537.36 BingSapphire/22.2.400225302"
     },
     "device": {
@@ -2311,6 +2358,100 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; SM-J600FN Build/QP1A.190711.020; ) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36 BingSapphire/22.4.400328301",
+      "x-requested-with": "com.microsoft.bing",
+      "sec-fetch-site": "cross-site",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-user": "?1",
+      "sec-fetch-dest": "document"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-J600FN",
+      "marketingName": "Galaxy J6 (2018)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1480,
+        "height": 720,
+        "touch": true,
+        "size": 5.6
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Bing Search",
+      "version": null,
+      "manufacturer": "microsoft",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "88.0.4324.181",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; SM-G950F Build/PPR1.180610.011; ) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36 BingSapphire/22.3.400317302",
+      "x-requested-with": "com.microsoft.bing",
+      "sec-fetch-site": "none",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-user": "?1",
+      "sec-fetch-dest": "document"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-G950F",
+      "marketingName": "Galaxy S8 (Global)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 2960,
+        "height": 1440,
+        "touch": true,
+        "size": 5.8
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Bing Search",
+      "version": null,
+      "manufacturer": "microsoft",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "88.0.4324.181",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 11; SM-A202F Build/RP1A.200720.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/87.0.4280.141 Mobile Safari/537.36",
       "x-requested-with": "com.microsoft.bing",
       "sec-fetch-site": "none",
@@ -2331,6 +2472,100 @@
         "height": 720,
         "touch": true,
         "size": 5.8
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Bing Search",
+      "version": null,
+      "manufacturer": "microsoft",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "87.0.4280.141",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-G991B Build/SP1A.210812.016; ) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/96.0.4664.104 Mobile Safari/537.36 BingSapphire/22.3.400317302",
+      "x-requested-with": "com.microsoft.bing",
+      "sec-fetch-site": "none",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-user": "?1",
+      "sec-fetch-dest": "document"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-G991B",
+      "marketingName": "Galaxy S21 5G (International)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.2
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Bing Search",
+      "version": null,
+      "manufacturer": "microsoft",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "96.0.4664.104",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; SM-A326B Build/RP1A.200720.012; ) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/87.0.4280.141 Mobile Safari/537.36 BingSapphire/22.2.400225302",
+      "x-requested-with": "com.microsoft.bing",
+      "sec-fetch-site": "none",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-user": "?1",
+      "sec-fetch-dest": "document"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-A326B",
+      "marketingName": "Galaxy A32 5G (International)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1600,
+        "height": 720,
+        "touch": true,
+        "size": 6.5
       },
       "type": "smartphone",
       "ismobile": true,
@@ -2473,6 +2708,100 @@
     "client": {
       "name": "Bing Search",
       "version": "22.5.400420302",
+      "manufacturer": "microsoft",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "83.0.4103.106",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; SM-G991B Build/RP1A.200720.012; ) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/87.0.4280.141 Mobile Safari/537.36 BingSapphire/22.5.400420302",
+      "x-requested-with": "com.microsoft.bing",
+      "sec-fetch-site": "cross-site",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-user": "?1",
+      "sec-fetch-dest": "document"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-G991B",
+      "marketingName": "Galaxy S21 5G (International)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.2
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Bing Search",
+      "version": null,
+      "manufacturer": "microsoft",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "87.0.4280.141",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; SM-A326B Build/RP1A.200720.012; ) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.106 Mobile Safari/537.36 BingSapphire/22.4.400411306",
+      "x-requested-with": "com.microsoft.bing",
+      "sec-fetch-site": "cross-site",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-user": "?1",
+      "sec-fetch-dest": "document"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-A326B",
+      "marketingName": "Galaxy A32 5G (International)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1600,
+        "height": 720,
+        "touch": true,
+        "size": 6.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Bing Search",
+      "version": null,
       "manufacturer": "microsoft",
       "type": "application",
       "isbot": false
@@ -2687,7 +3016,7 @@
     },
     "client": {
       "name": "Bing Search",
-      "version": "22.6.400511306",
+      "version": null,
       "manufacturer": "microsoft",
       "type": "application",
       "isbot": false
@@ -2695,6 +3024,53 @@
     "engine": {
       "name": "Blink",
       "version": "87.0.4280.141",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; SM-G780F Build/RP1A.200720.012; ) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36 BingSapphire/22.6.400511306",
+      "x-requested-with": "com.microsoft.bing",
+      "sec-fetch-site": "cross-site",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-user": "?1",
+      "sec-fetch-dest": "document"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-G780F",
+      "marketingName": "Galaxy S20 FE 4G",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Bing Search",
+      "version": null,
+      "manufacturer": "microsoft",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "88.0.4324.181",
       "manufacturer": "google"
     }
   },
@@ -2734,6 +3110,189 @@
     },
     "client": {
       "name": "Bing Search",
+      "version": null,
+      "manufacturer": "microsoft",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "93.0.4577.82",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; SM-A415F Build/QP1A.190711.020; ) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/89.0.4389.72 Mobile Safari/537.36 BingSapphire/22.5.400425302",
+      "x-requested-with": "com.microsoft.bing",
+      "sec-fetch-site": "cross-site",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-user": "?1",
+      "sec-fetch-dest": "document"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-A415F",
+      "marketingName": "Galaxy A41",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.1
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Bing Search",
+      "version": null,
+      "manufacturer": "microsoft",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "89.0.4389.72",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.0.0; SM-G930F Build/R16NW; ) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/94.0.4606.85 Mobile Safari/537.36 BingSapphire/22.5.400425302",
+      "x-requested-with": "com.microsoft.bing",
+      "sec-fetch-site": "cross-site",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-user": "?1",
+      "sec-fetch-dest": "document"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-G930F",
+      "marketingName": "Galaxy S7",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 2560,
+        "height": 1440,
+        "touch": true,
+        "size": 5.1
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Bing Search",
+      "version": null,
+      "manufacturer": "microsoft",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "94.0.4606.85",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; SM-A025G Build/RP1A.200720.012; ) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/98.0.4758.101 Mobile Safari/537.36 BingSapphire/22.5.400425301",
+      "x-requested-with": "com.microsoft.bing",
+      "sec-fetch-site": "cross-site",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-user": "?1",
+      "sec-fetch-dest": "document"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-A025G",
+      "marketingName": "Galaxy A02s",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1600,
+        "height": 720,
+        "touch": true,
+        "size": 6.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Bing Search",
+      "version": null,
+      "manufacturer": "microsoft",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "98.0.4758.101",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; SM-A528B Build/RP1A.200720.012; ) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/93.0.4577.82 Mobile Safari/537.36 BingSapphire/21.6.390831302"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-A528B",
+      "marketingName": "Galaxy A52s 5G (International)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Bing Search",
       "version": "21.6.390831302",
       "manufacturer": "microsoft",
       "type": "application",
@@ -2742,6 +3301,48 @@
     "engine": {
       "name": "Blink",
       "version": "93.0.4577.82",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; SM-A125F Build/RP1A.200720.012; ) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/87.0.4280.141 Mobile Safari/537.36 BingSapphire/22.6.400511306"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-A125F",
+      "marketingName": "Galaxy A12",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1600,
+        "height": 720,
+        "touch": true,
+        "size": 6.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Bing Search",
+      "version": "22.6.400511306",
+      "manufacturer": "microsoft",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "87.0.4280.141",
       "manufacturer": "google"
     }
   },
@@ -3545,21 +4146,26 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; SM-A505FN Build/QP1A.190711.020; ) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36 BingSapphire/23.5.401026306"
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "none",
+      "sec-fetch-user": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-G988B Build/SP1A.210812.016; ) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/95.0.4638.69 Mobile Safari/537.36  BingSapphire/23.3.400920306",
+      "x-requested-with": "com.microsoft.bing"
     },
     "device": {
       "architecture": null,
-      "deviceName": "SM-A505FN",
-      "marketingName": "Galaxy A50",
+      "deviceName": "SM-G988B",
+      "marketingName": "Galaxy S20 Ultra 5G (International)",
       "manufacturer": "samsung",
       "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
-        "width": 2340,
-        "height": 1080,
+        "width": 3200,
+        "height": 1440,
         "touch": true,
-        "size": 6.4
+        "size": 6.9
       },
       "type": "smartphone",
       "ismobile": true,
@@ -3569,12 +4175,59 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "10.0.0",
+      "version": "12.0.0",
       "manufacturer": "google"
     },
     "client": {
       "name": "Bing Search",
-      "version": "23.5.401026306",
+      "version": null,
+      "manufacturer": "microsoft",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "95.0.4638.69",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "cross-site",
+      "sec-fetch-user": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; SM-J730F Build/PPR1.180610.011; ) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36 BingSapphire/23.3.400920305",
+      "x-requested-with": "com.microsoft.bing"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-J730F",
+      "marketingName": "Galaxy J7 (2017, Global)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Bing Search",
+      "version": null,
       "manufacturer": "microsoft",
       "type": "application",
       "isbot": false
@@ -3587,343 +4240,12 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 11; SM-A105FN Build/RP1A.200720.012; ) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/106.0.5249.126 Mobile Safari/537.36 BingSapphire/23.5.401026305"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SM-A105FN",
-      "marketingName": "Galaxy A10",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1520,
-        "height": 720,
-        "touch": true,
-        "size": 6.2
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "11.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Bing Search",
-      "version": "23.5.401026305",
-      "manufacturer": "microsoft",
-      "type": "application",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "106.0.5249.126",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; SM-A415F Build/QP1A.190711.020; ) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/89.0.4389.72 Mobile Safari/537.36 BingSapphire/23.4.401011302"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SM-A415F",
-      "marketingName": "Galaxy A41",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 2400,
-        "height": 1080,
-        "touch": true,
-        "size": 6.1
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Bing Search",
-      "version": "23.4.401011302",
-      "manufacturer": "microsoft",
-      "type": "application",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "89.0.4389.72",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 11; SM-A528B Build/RP1A.200720.012; ) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/87.0.4280.141 Mobile Safari/537.36 BingSapphire/23.5.401102302"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SM-A528B",
-      "marketingName": "Galaxy A52s 5G (International)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 2400,
-        "height": 1080,
-        "touch": true,
-        "size": 6.5
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "11.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Bing Search",
-      "version": "23.5.401102302",
-      "manufacturer": "microsoft",
-      "type": "application",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "87.0.4280.141",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; SM-A125F Build/QP1A.190711.020; ) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/81.0.4044.138 Mobile Safari/537.36 BingSapphire/23.4.401013302"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SM-A125F",
-      "marketingName": "Galaxy A12",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 1600,
-        "height": 720,
-        "touch": true,
-        "size": 6.5
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Bing Search",
-      "version": "23.4.401013302",
-      "manufacturer": "microsoft",
-      "type": "application",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "81.0.4044.138",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-A127F Build/SP1A.210812.016; ) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/95.0.4638.69 Mobile Safari/537.36 BingSapphire/23.6.401128314"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SM-A127F",
-      "marketingName": "Galaxy A12 (India)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 1600,
-        "height": 720,
-        "touch": true,
-        "size": 6.5
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "12.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Bing Search",
-      "version": "23.6.401128314",
-      "manufacturer": "microsoft",
-      "type": "application",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "95.0.4638.69",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; SM-G920F Build/NRD90M; ) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/93.0.4577.82 Mobile Safari/537.36 BingSapphire/23.7.401209302"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SM-G920F",
-      "marketingName": "Galaxy S6 (Global)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 2560,
-        "height": 1440,
-        "touch": true,
-        "size": 5.1
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "7.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Bing Search",
-      "version": "23.7.401209302",
-      "manufacturer": "microsoft",
-      "type": "application",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "93.0.4577.82",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-S908B Build/SP1A.210812.016; ) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/95.0.4638.69 Mobile Safari/537.36  BingSapphire/23.8.401227302"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SM-S908B",
-      "marketingName": "Galaxy S22 Ultra 5G (International)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 3088,
-        "height": 1440,
-        "touch": true,
-        "size": 6.8
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "12.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Bing Search",
-      "version": "23.8.401227302",
-      "manufacturer": "microsoft",
-      "type": "application",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "95.0.4638.69",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 11; SM-G991B Build/RP1A.200720.012; ) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.106 Mobile Safari/537.36 BingSapphire/23.8.401227302"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SM-G991B",
-      "marketingName": "Galaxy S21 5G (International)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 2400,
-        "height": 1080,
-        "touch": true,
-        "size": 6.2
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "11.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Bing Search",
-      "version": "23.8.401227302",
-      "manufacturer": "microsoft",
-      "type": "application",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "83.0.4103.106",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; SM-G780F Build/QP1A.190711.020; ) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/81.0.4044.138 Mobile Safari/537.36 BingSapphire/23.8.401227302"
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "cross-site",
+      "sec-fetch-user": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; SM-G780F Build/QP1A.190711.020; ) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/90.0.4430.210 Mobile Safari/537.36 BingSapphire/23.1.400826306",
+      "x-requested-with": "com.microsoft.bing"
     },
     "device": {
       "architecture": null,
@@ -3952,270 +4274,14 @@
     },
     "client": {
       "name": "Bing Search",
-      "version": "23.8.401227302",
+      "version": null,
       "manufacturer": "microsoft",
       "type": "application",
       "isbot": false
     },
     "engine": {
       "name": "Blink",
-      "version": "81.0.4044.138",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 13; SM-A127F Build/TP1A.220624.014; ) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/95.0.4638.69 Mobile Safari/537.36 BingSapphire/24.1.410205314"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SM-A127F",
-      "marketingName": "Galaxy A12 (India)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 1600,
-        "height": 720,
-        "touch": true,
-        "size": 6.5
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "13.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Bing Search",
-      "version": "24.1.410205314",
-      "manufacturer": "microsoft",
-      "type": "application",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "95.0.4638.69",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 11; SM-A225F Build/RP1A.200720.012; ) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/95.0.4638.69 Mobile Safari/537.36  BingSapphire/23.8.401227302"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SM-A225F",
-      "marketingName": "Galaxy A22 4G",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 1600,
-        "height": 720,
-        "touch": true,
-        "size": 6.4
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "11.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Bing Search",
-      "version": "23.8.401227302",
-      "manufacturer": "microsoft",
-      "type": "application",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "95.0.4638.69",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 13; SM-A715F Build/TP1A.220624.014; ) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/95.0.4638.69 Mobile Safari/537.36 BingSapphire/24.1.410310302"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SM-A715F",
-      "marketingName": "Galaxy A71 LTE",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 2400,
-        "height": 1080,
-        "touch": true,
-        "size": 6.7
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "13.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Bing Search",
-      "version": "24.1.410310302",
-      "manufacturer": "microsoft",
-      "type": "application",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "95.0.4638.69",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "sec-fetch-dest": "document",
-      "sec-fetch-mode": "navigate",
-      "sec-fetch-site": "same-origin",
-      "user-agent": "Mozilla/5.0 (Linux; Android 13; SM-G980F Build/TP1A.220624.014; ) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/95.0.4638.69 Mobile Safari/537.36 BingSapphire/24.1.410218302",
-      "x-requested-with": "com.microsoft.bing"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SM-G980F",
-      "marketingName": "Galaxy S20 4G",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 3200,
-        "height": 1440,
-        "touch": true,
-        "size": 6.2
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "13.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Bing Search",
-      "version": "24.1.410218302",
-      "manufacturer": "microsoft",
-      "type": "application",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "95.0.4638.69",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; SM-G980F Build/QP1A.190711.020; ) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/95.0.4638.69 Mobile Safari/537.36 BingSapphire/24.7.410328302"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SM-G980F",
-      "marketingName": "Galaxy S20 4G",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 3200,
-        "height": 1440,
-        "touch": true,
-        "size": 6.2
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Bing Search",
-      "version": "24.7.410328302",
-      "manufacturer": "microsoft",
-      "type": "application",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "95.0.4638.69",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 13; SM-A546B Build/TP1A.220624.014; ) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/95.0.4638.69 Mobile Safari/537.36 BingSapphire/25.0.410424302"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SM-A546B",
-      "marketingName": "Galaxy A54 5G (International)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 2340,
-        "height": 1080,
-        "touch": true,
-        "size": 6.4
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "13.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Bing Search",
-      "version": "25.0.410424302",
-      "manufacturer": "microsoft",
-      "type": "application",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "95.0.4638.69",
+      "version": "90.0.4430.210",
       "manufacturer": "google"
     }
   }

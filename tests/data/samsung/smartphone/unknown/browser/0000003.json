@@ -1,6 +1,48 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; SM-M307FN) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.127 Mobile Safari/537.36 (Ecosia android@85.0.4183.127)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-M307FN",
+      "marketingName": "Galaxy M30s (Global)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.4
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Ecosia",
+      "version": "85.0.4183.127",
+      "manufacturer": "unknown",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "85.0.4183.127",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 9; SM-A505FN) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.127 Mobile Safari/537.36 (Ecosia android@85.0.4183.127)"
     },
     "device": {
@@ -4132,48 +4174,6 @@
         "height": 720,
         "touch": true,
         "size": 5
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "9.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Ecosia",
-      "version": "88.0.4324.181",
-      "manufacturer": "unknown",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "88.0.4324.181",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 9; SM-G955F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.181 Mobile Safari/537.36 (Ecosia android@88.0.4324.181)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SM-G955F",
-      "marketingName": "Galaxy S8 Plus",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 2960,
-        "height": 1440,
-        "touch": true,
-        "size": 6.2
       },
       "type": "smartphone",
       "ismobile": true,

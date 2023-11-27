@@ -21,9 +21,9 @@ final class IosFactory implements IosFactoryInterface
     public function __invoke(LoggerInterface $logger): Ios
     {
         return new Ios(
-            $logger,
-            new VersionBuilder($logger),
-            new IosBuild(),
+            logger: $logger,
+            versionBuilder: new VersionBuilder($logger),
+            iosBuild: new IosBuild(),
         );
     }
 }

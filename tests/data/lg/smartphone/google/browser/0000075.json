@@ -1,6 +1,48 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; LGLS665 Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.91 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "LS665",
+      "marketingName": "Tribute 2 (Boost Mobile)",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 854,
+        "height": 480,
+        "touch": true,
+        "size": 4.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "55.0.2883.91",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "55.0.2883.91",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; LGLS755 Build/MXB48T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.91 Mobile Safari/537.36"
     },
     "device": {
@@ -4146,48 +4188,6 @@
     },
     "client": {
       "name": "Chrome",
-      "version": "57.0.2987.132",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "57.0.2987.132",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; LGMS330 Build/LMY47V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "MS330",
-      "marketingName": "Tribute 5 (MetroPCS)",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 854,
-        "height": 480,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.1.1",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Android WebView",
       "version": "57.0.2987.132",
       "manufacturer": "google",
       "type": "browser",

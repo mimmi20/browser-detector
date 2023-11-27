@@ -1,48 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "UCWEB/2.0 (Java; U; MIDP-2.0; en-US; Maui Browser) U2/1.0.0 UCBrowser/9.4.1.377 U2/1.0.0 Mobile UNTRUSTED/1.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Mobile device",
-      "marketingName": "general Mobile device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems"
-    },
-    "client": {
-      "name": "UC Browser",
-      "version": "9.4.1.377",
-      "manufacturer": "ucweb",
-      "type": "transcoder",
-      "isbot": false
-    },
-    "engine": {
-      "name": "U2",
-      "version": "1.0.0",
-      "manufacturer": "ucweb"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "UCWEB/2.0 (MIDP-2.0; U; Adr 4.2.2; en-US; A51+) U2/1.0.0 UCBrowser/9.9.0.543 U2/1.0.0 Mobile"
     },
     "device": {
@@ -73,48 +31,6 @@
     "client": {
       "name": "UC Browser",
       "version": "9.9.0.543",
-      "manufacturer": "ucweb",
-      "type": "transcoder",
-      "isbot": false
-    },
-    "engine": {
-      "name": "U2",
-      "version": "1.0.0",
-      "manufacturer": "ucweb"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "UCWEB/2.0 (MIDP-2.0; U; Adr 4.0.1; en-US; A90) U2/1.0.0 UCBrowser/9.7.0.520 U2/1.0.0 Mobile"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Mobile device",
-      "marketingName": "general Mobile device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.0.1",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "UC Browser",
-      "version": "9.7.0.520",
       "manufacturer": "ucweb",
       "type": "transcoder",
       "isbot": false
@@ -493,48 +409,6 @@
     "client": {
       "name": "UC Browser",
       "version": "9.5.0.449",
-      "manufacturer": "ucweb",
-      "type": "transcoder",
-      "isbot": false
-    },
-    "engine": {
-      "name": "U2",
-      "version": "1.0.0",
-      "manufacturer": "ucweb"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "UCWEB/2.0 (MIDP-2.0; U; Adr 4.0.1; en-US; A90) U2/1.0.0 UCBrowser/9.8.0.534 U2/1.0.0 Mobile"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Mobile device",
-      "marketingName": "general Mobile device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.0.1",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "UC Browser",
-      "version": "9.8.0.534",
       "manufacturer": "ucweb",
       "type": "transcoder",
       "isbot": false
@@ -4190,6 +4064,132 @@
     "client": {
       "name": "UC Browser",
       "version": "8.8.1.252",
+      "manufacturer": "ucweb",
+      "type": "transcoder",
+      "isbot": false
+    },
+    "engine": {
+      "name": "U2",
+      "version": "1.0.0",
+      "manufacturer": "ucweb"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "UCWEB/2.0 (MIDP-2.0; U; Adr 4.4.2; en-US; Y4) U2/1.0.0 UCBrowser/9.2.0.419 U2/1.0.0 Mobile"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.2",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "UC Browser",
+      "version": "9.2.0.419",
+      "manufacturer": "ucweb",
+      "type": "transcoder",
+      "isbot": false
+    },
+    "engine": {
+      "name": "U2",
+      "version": "1.0.0",
+      "manufacturer": "ucweb"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "UCWEB/2.0 (MIDP-2.0; U; Adr 4.4.2; en-US; E75) U2/1.0.0 UCBrowser/9.0.2.389 U2/1.0.0 Mobile"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.2",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "UC Browser",
+      "version": "9.0.2.389",
+      "manufacturer": "ucweb",
+      "type": "transcoder",
+      "isbot": false
+    },
+    "engine": {
+      "name": "U2",
+      "version": "1.0.0",
+      "manufacturer": "ucweb"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "UCWEB/2.0 (MIDP-2.0; U; Adr 4.2.2; id; Ex45i) U2/1.0.0 UCBrowser/10.4.2.659 U2/1.0.0 Mobile"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "UC Browser",
+      "version": "10.4.2.659",
       "manufacturer": "ucweb",
       "type": "transcoder",
       "isbot": false

@@ -1747,7 +1747,7 @@
     "os": {
       "name": "Fedora Linux",
       "marketingName": "Fedora Linux",
-      "version": null,
+      "version": "13.0.0",
       "manufacturer": "redhat"
     },
     "client": {
@@ -3679,7 +3679,7 @@
     "os": {
       "name": "Suse Linux",
       "marketingName": "Suse Linux",
-      "version": null,
+      "version": "1.5.0.14.0",
       "manufacturer": "suse"
     },
     "client": {
@@ -3818,6 +3818,48 @@
     "engine": {
       "name": "Gecko",
       "version": "25.0.0",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.2.9) Gecko/20100921 Fedora/3.1.4-1.fc14 Thunderbird/3.1.4"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Fedora Linux",
+      "marketingName": "Fedora Linux",
+      "version": "14.0.0",
+      "manufacturer": "redhat"
+    },
+    "client": {
+      "name": "Thunderbird",
+      "version": "3.1.4",
+      "manufacturer": "mozilla-foundation",
+      "type": "pim",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "1.9.2.9",
       "manufacturer": "mozilla-foundation"
     }
   },
@@ -4143,48 +4185,6 @@
       "marketingName": "Linux",
       "version": null,
       "manufacturer": "linux-foundation"
-    },
-    "client": {
-      "name": "SeaMonkey",
-      "version": "2.48.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "pim",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": "51.0.0",
-      "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Windows NT 6.1; rv:51.0) Gecko/20100101 Firefox/51.0 SeaMonkey/2.48"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Windows Desktop",
-      "marketingName": "Windows Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Windows",
-      "marketingName": "Windows",
-      "version": "7.0.0",
-      "manufacturer": "microsoft"
     },
     "client": {
       "name": "SeaMonkey",

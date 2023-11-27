@@ -1,6 +1,48 @@
 [
   {
     "headers": {
+      "user-agent": "Opera/9.391 (Windows NT 6.0; U; nl) Presto/431.631.81 Version/711.651"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows NT 6.0",
+      "marketingName": "Windows Vista",
+      "version": "6.0.0",
+      "manufacturer": "microsoft"
+    },
+    "client": {
+      "name": "Opera",
+      "version": "711.651.0",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "431.631.81",
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Opera/9.361 (Windows NT 6.0; U; nl) Presto/351.471.391 Version/621.61"
     },
     "device": {
@@ -4154,48 +4196,6 @@
     "engine": {
       "name": "Presto",
       "version": "831.121.891",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Opera/9.541 (Windows NT 6.0; U; nl) Presto/231.681.861 Version/221.971"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Windows Desktop",
-      "marketingName": "Windows Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Windows NT 6.0",
-      "marketingName": "Windows Vista",
-      "version": "6.0.0",
-      "manufacturer": "microsoft"
-    },
-    "client": {
-      "name": "Opera",
-      "version": "221.971.0",
-      "manufacturer": "opera",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "231.681.861",
       "manufacturer": "opera"
     }
   }

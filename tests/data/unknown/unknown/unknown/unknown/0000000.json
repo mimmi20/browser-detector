@@ -865,7 +865,7 @@
     "os": {
       "name": "Fedora Linux",
       "marketingName": "Fedora Linux",
-      "version": null,
+      "version": "4.1.0",
       "manufacturer": "redhat"
     },
     "client": {
@@ -1087,6 +1087,48 @@
       "name": null,
       "version": null,
       "manufacturer": null
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "KaiOS Downloader"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "kaios",
+      "marketingName": "kaios",
+      "version": null,
+      "manufacturer": "kaios"
+    },
+    "client": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "unknown",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
     }
   }
 ]

@@ -20,8 +20,8 @@ final class ObigoQFactory implements ObigoQFactoryInterface
     public function __invoke(LoggerInterface $logger): ObigoQ
     {
         return new ObigoQ(
-            $logger,
-            new VersionBuilder($logger),
+            logger: $logger,
+            versionBuilder: new VersionBuilder($logger),
         );
     }
 }

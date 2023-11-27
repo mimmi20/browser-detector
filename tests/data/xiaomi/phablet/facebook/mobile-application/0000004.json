@@ -1,6 +1,48 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; M1908C3JGG Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.79 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/383.1.0.25.106;]"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "M1908C3JGG",
+      "marketingName": "Redmi Note 8 (2021)",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.3
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Facebook App",
+      "version": "383.1.0.25.106",
+      "manufacturer": "facebook",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "105.0.5195.79",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 11; M2103K19G Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.79 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/383.1.0.25.106;]"
     },
     "device": {
@@ -253,6 +295,52 @@
   },
   {
     "headers": {
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "cross-site",
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; 2201117TY Build/RKQ1.211001.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.79 Mobile Safari/537.36 Instagram 252.0.0.17.111 Android (30/11; 440dpi; 1080x2177; Xiaomi/Redmi; 2201117TY; spesn; qcom; de_DE; 397702075)",
+      "x-requested-with": "com.instagram.android"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "2201117TY",
+      "marketingName": "Redmi Note 11 4G",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.43
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Instagram App",
+      "version": null,
+      "manufacturer": "facebook",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "105.0.5195.79",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 11; M2101K6G Build/RKQ1.200826.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/108.0.5359.128 Mobile Safari/537.36 Instagram 264.0.0.22.106 Android (30/11; 440dpi; 1080x2177; Xiaomi/Redmi; M2101K6G; sweet; qcom; tr_TR; 430370703)"
     },
     "device": {
@@ -298,6 +386,52 @@
       "sec-fetch-dest": "document",
       "sec-fetch-mode": "navigate",
       "sec-fetch-site": "cross-site",
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; M2101K6G Build/RKQ1.200826.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/108.0.5359.128 Mobile Safari/537.36 Instagram 264.0.0.22.106 Android (30/11; 440dpi; 1080x2177; Xiaomi/Redmi; M2101K6G; sweet; qcom; tr_TR; 430370703)",
+      "x-requested-with": "com.instagram.android"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "M2101K6G",
+      "marketingName": "Redmi Note 10 Pro",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.67
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Instagram App",
+      "version": null,
+      "manufacturer": "facebook",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "108.0.5359.128",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "cross-site",
       "user-agent": "Mozilla/5.0 (Linux; Android 9; Redmi Note 8 Build/PKQ1.190616.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/107.0.5304.105 Mobile Safari/537.36 Instagram 261.0.0.21.111 Android (28/9; 440dpi; 1080x2130; Xiaomi/xiaomi; Redmi Note 8; ginkgo; qcom; tr_TR; 418951310)",
       "x-requested-with": "com.instagram.android"
     },
@@ -328,7 +462,7 @@
     },
     "client": {
       "name": "Instagram App",
-      "version": "261.0.0.21.111",
+      "version": null,
       "manufacturer": "facebook",
       "type": "mobile-application",
       "isbot": false
@@ -929,6 +1063,98 @@
   },
   {
     "headers": {
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "cross-site",
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; Mi Note 10 Lite Build/SKQ1.210908.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/112.0.5615.101 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/411.1.0.29.112;]",
+      "x-requested-with": "com.facebook.katana"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Mi Note 10 Lite",
+      "marketingName": "Mi Note 10 Lite",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.47
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Facebook App",
+      "version": null,
+      "manufacturer": "facebook",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "112.0.5615.101",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "cross-site",
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; M2101K7BG Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 Instagram 277.0.0.17.107 Android (31/12; 440dpi; 1080x2177; Xiaomi/Redmi; M2101K7BG; secret; mt6785; tr_TR; 462178076)",
+      "x-requested-with": "com.instagram.android"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "M2101K7BG",
+      "marketingName": "Redmi Note 10S",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.43
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Instagram App",
+      "version": null,
+      "manufacturer": "facebook",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "111.0.5563.116",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 11; Redmi Note 8T Build/RKQ1.201004.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/110.0.5481.65 Mobile Safari/537.36 Instagram 281.0.0.19.105 Android (30/11; 440dpi; 1080x2130; Xiaomi/xiaomi; Redmi Note 8T; willow; qcom; es_US; 470774573)"
     },
     "device": {
@@ -1043,6 +1269,52 @@
     "client": {
       "name": "Instagram App",
       "version": "284.0.0.22.85",
+      "manufacturer": "facebook",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "113.0.5672.131",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "cross-site",
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; 2201117TY Build/SKQ1.211103.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.131 Mobile Safari/537.36 Instagram 284.0.0.22.85 Android (31/12; 440dpi; 1080x2177; Xiaomi/Redmi; 2201117TY; spesn; qcom; de_DE; 477443883)",
+      "x-requested-with": "com.instagram.android"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "2201117TY",
+      "marketingName": "Redmi Note 11 4G",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.43
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Instagram App",
+      "version": null,
       "manufacturer": "facebook",
       "type": "mobile-application",
       "isbot": false
@@ -1265,6 +1537,52 @@
   },
   {
     "headers": {
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "cross-site",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; Redmi Note 9 Pro Build/QKQ1.191215.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.162 Mobile Safari/537.36 Instagram 286.0.0.20.69 Android (29/10; 440dpi; 1080x2168; Xiaomi/Redmi; Redmi Note 9 Pro; joyeuse; qcom; de_DE; 481918897)",
+      "x-requested-with": "com.instagram.android"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Redmi Note 9 Pro",
+      "marketingName": "Redmi Note 9 Pro",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.67
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Instagram App",
+      "version": null,
+      "manufacturer": "facebook",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "113.0.5672.162",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 13; 21091116UG Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.166 Mobile Safari/537.36 Instagram 295.0.0.32.109 Android (33/13; 440dpi; 1080x2190; Xiaomi/Redmi; 21091116UG; pissarropro; mt6877; de_DE; 502546265)"
     },
     "device": {
@@ -1421,6 +1739,52 @@
     "client": {
       "name": "Instagram App",
       "version": "295.0.0.32.109",
+      "manufacturer": "facebook",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "115.0.5790.166",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "cross-site",
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; M2101K6G Build/SKQ1.210908.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.166 Mobile Safari/537.36 Instagram 295.0.0.32.109 Android (31/12; 440dpi; 1080x2177; Xiaomi/Redmi; M2101K6G; sweet; qcom; de_DE; 502546265)",
+      "x-requested-with": "com.instagram.android"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "M2101K6G",
+      "marketingName": "Redmi Note 10 Pro",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.67
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Instagram App",
+      "version": null,
       "manufacturer": "facebook",
       "type": "mobile-application",
       "isbot": false
@@ -1638,6 +2002,174 @@
     "engine": {
       "name": "Blink",
       "version": "110.0.5481.153",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; Redmi Note 8 Pro Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/118.0.0.0 Mobile Safari/537.36 Instagram 306.0.0.35.109 Android (29/10; 440dpi; 1080x2134; Xiaomi/Redmi; Redmi Note 8 Pro; begonia; mt6785; de_DE; 530130426)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Redmi Note 8 Pro",
+      "marketingName": "Redmi Note 8 Pro",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.53
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Instagram App",
+      "version": "306.0.0.35.109",
+      "manufacturer": "facebook",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "118.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; 21091116UG Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/118.0.0.0 Mobile Safari/537.36 Instagram 307.0.0.34.111 Android (33/13; 440dpi; 1080x2190; Xiaomi/Redmi; 21091116UG; pissarropro; mt6877; de_DE; 532277880)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "21091116UG",
+      "marketingName": "Redmi Note 11 Pro Plus 5G",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.67
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Instagram App",
+      "version": "307.0.0.34.111",
+      "manufacturer": "facebook",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "118.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; 2201116TG Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/119.0.6045.114 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/440.0.0.31.105;]"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "2201116TG",
+      "marketingName": "Redmi Note 11 Pro 4G",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.67
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Facebook App",
+      "version": "440.0.0.31.105",
+      "manufacturer": "facebook",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "119.0.6045.114",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; M2101K6G Build/TKQ1.221013.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/118.0.0.0 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/439.0.0.44.117;]"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "M2101K6G",
+      "marketingName": "Redmi Note 10 Pro",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.67
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Facebook App",
+      "version": "439.0.0.44.117",
+      "manufacturer": "facebook",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "118.0.0.0",
       "manufacturer": "google"
     }
   }

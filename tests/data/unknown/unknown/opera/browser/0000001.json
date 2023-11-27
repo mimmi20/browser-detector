@@ -1,66 +1,6 @@
 [
   {
     "headers": {
-      "device-memory": "8",
-      "dpr": "1.25",
-      "viewport-width": "1229",
-      "rtt": "50",
-      "downlink": "10",
-      "ect": "4g",
-      "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"100\", \"Opera GX\";v=\"86\"",
-      "sec-ch-ua-mobile": "?0",
-      "sec-ch-ua-arch": "\"x86\"",
-      "sec-ch-ua-platform": "\"Windows\"",
-      "sec-ch-ua-platform-version": "\"10.0.0\"",
-      "sec-ch-ua-model": "\"\"",
-      "sec-ch-ua-bitness": "\"64\"",
-      "sec-ch-ua-full-version-list": "\" Not A;Brand\";v=\"99.0.0.0\", \"Chromium\";v=\"100.0.4896.127\", \"Opera GX\";v=\"100.0.4896.127\"",
-      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36 OPR/86.0.4363.70",
-      "sec-fetch-site": "same-origin",
-      "sec-fetch-mode": "navigate",
-      "sec-fetch-user": "?1",
-      "sec-fetch-dest": "document"
-    },
-    "device": {
-      "architecture": "x86",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": null,
-      "brand": null,
-      "dualOrientation": false,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": null,
-        "size": null
-      },
-      "type": null,
-      "ismobile": false,
-      "istv": false,
-      "bits": 64
-    },
-    "os": {
-      "name": "Windows",
-      "marketingName": "Windows",
-      "version": "10.0.0",
-      "manufacturer": "microsoft"
-    },
-    "client": {
-      "name": "Opera GX",
-      "version": "100.0.4896.127",
-      "manufacturer": "opera",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "100.0.4896.127",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
       "device-memory": "4",
       "dpr": "2",
       "viewport-width": "980",
@@ -6205,6 +6145,70 @@
     },
     "client": {
       "name": "Opera GX",
+      "version": "93.0.0",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "107.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "4",
+      "downlink": "1.45",
+      "dpr": "0.9",
+      "ect": "4g",
+      "rtt": "100",
+      "sec-ch-device-memory": "4",
+      "sec-ch-dpr": "0.9",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-ua": "\"Opera\";v=\"93\", \"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"107\"",
+      "sec-ch-ua-arch": "\"x86\"",
+      "sec-ch-ua-bitness": "\"64\"",
+      "sec-ch-ua-full-version": "\"107.0.5304.122\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-model": "\"\"",
+      "sec-ch-ua-platform": "\"Windows\"",
+      "sec-ch-ua-platform-version": "\"10.0.0\"",
+      "sec-ch-viewport-width": "1378",
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "none",
+      "sec-fetch-user": "?1",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36 OPR/93.0.0.0",
+      "viewport-width": "1378"
+    },
+    "device": {
+      "architecture": "x86",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": null,
+      "brand": null,
+      "dualOrientation": false,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": null,
+        "size": null
+      },
+      "type": null,
+      "ismobile": false,
+      "istv": false,
+      "bits": 64
+    },
+    "os": {
+      "name": "Windows",
+      "marketingName": "Windows",
+      "version": "10.0.0",
+      "manufacturer": "microsoft"
+    },
+    "client": {
+      "name": "Opera",
       "version": "93.0.0",
       "manufacturer": "opera",
       "type": "browser",

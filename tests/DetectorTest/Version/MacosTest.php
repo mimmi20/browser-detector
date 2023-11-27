@@ -128,6 +128,10 @@ final class MacosTest extends TestCase
                 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10102) AppleWebKit/640.3.18 (KHTML like Gecko) Version/10.0.2 Safari/640.3.18',
                 '10.10.2',
             ],
+            [
+                'Safari/19616.2.9.11.7 CFNetwork/1485 Darwin/23.1.0',
+                '14.1.0',
+            ],
         ];
     }
 

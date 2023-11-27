@@ -3025,6 +3025,52 @@
   },
   {
     "headers": {
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "cross-site",
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; Pixel 7 Build/TQ3A.230605.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/114.0.5735.60 Mobile Safari/537.36 Instagram 287.0.0.25.77 Android (33/13; 420dpi; 1080x2138; Google/google; Pixel 7; panther; panther; en_US; 483850214)",
+      "x-requested-with": "com.instagram.android"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Pixel 7",
+      "marketingName": "Pixel 7",
+      "manufacturer": "google",
+      "brand": "google",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.3
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Instagram App",
+      "version": null,
+      "manufacturer": "facebook",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "114.0.5735.60",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 12; Pixel 6a Build/SD2A.220601.003.B1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.138 Mobile Safari/537.36 [FB_IAB/Orca-Android;FBAV/419.0.0.10.49;]"
     },
     "device": {
@@ -3062,6 +3108,90 @@
     "engine": {
       "name": "Blink",
       "version": "115.0.5790.138",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; Pixel 4a Build/SQ3A.220705.003.A1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/118.0.0.0 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/440.0.0.31.105;]"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Pixel 4a",
+      "marketingName": "Pixel 4a",
+      "manufacturer": "google",
+      "brand": "google",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 5.81
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Facebook App",
+      "version": "440.0.0.31.105",
+      "manufacturer": "facebook",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "118.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; Pixel 4a Build/TQ3A.230805.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/118.0.0.0 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/439.0.0.44.117;]"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Pixel 4a",
+      "marketingName": "Pixel 4a",
+      "manufacturer": "google",
+      "brand": "google",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 5.81
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Facebook App",
+      "version": "439.0.0.44.117",
+      "manufacturer": "facebook",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "118.0.0.0",
       "manufacturer": "google"
     }
   }

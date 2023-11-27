@@ -2624,18 +2624,6 @@
     },
     "engine": null
   },
-  "googlebot-mobile": {
-    "name": "Google Bot Mobile",
-    "manufacturer": "google",
-    "type": "bot",
-    "version": {
-      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
-      "search": [
-        "Googlebot\\-Mobile"
-      ]
-    },
-    "engine": "unknown"
-  },
   "google chtml proxy": {
     "name": "Google CHTML Proxy",
     "manufacturer": "google",
@@ -9771,6 +9759,106 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "impendoom\\-bot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "claudebot": {
+    "name": "ClaudeBot",
+    "manufacturer": "unknown",
+    "type": "bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "ClaudeBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "fidget-spinner-bot": {
+    "name": "fidget-spinner-bot",
+    "manufacturer": "unknown",
+    "type": "bot",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "my-tiny-bot": {
+    "name": "my-tiny-bot",
+    "manufacturer": "unknown",
+    "type": "bot",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "test-bot": {
+    "name": "test-bot",
+    "manufacturer": "unknown",
+    "type": "bot",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "thesis-research-bot": {
+    "name": "thesis-research-bot",
+    "manufacturer": "unknown",
+    "type": "bot",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": "unknown"
+  },
+  "superbot": {
+    "name": "SuperBot",
+    "manufacturer": "unknown",
+    "type": "bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "SuperBot"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "grub-client": {
+    "name": "grub-client",
+    "manufacturer": "unknown",
+    "type": "bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "grub\\-client\\-"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "search-express": {
+    "name": "SearchExpress",
+    "manufacturer": "unknown",
+    "type": "bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "SearchExpress"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "img2dataset": {
+    "name": "img2dataset",
+    "manufacturer": "unknown",
+    "type": "bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "img2dataset"
       ]
     },
     "engine": "unknown"

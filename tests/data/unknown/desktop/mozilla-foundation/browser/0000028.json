@@ -1,6 +1,3198 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (X11; Fedora; Linux x86_64; rv:86.0) Gecko/20100101 Firefox/86.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Fedora Linux",
+      "marketingName": "Fedora Linux",
+      "version": null,
+      "manufacturer": "redhat"
+    },
+    "client": {
+      "name": "Firefox",
+      "version": "86.0.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "86.0.0",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 5.1; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows NT",
+      "marketingName": "Windows XP",
+      "version": "5.1.0",
+      "manufacturer": "microsoft"
+    },
+    "client": {
+      "name": "Firefox",
+      "version": "81.0.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "81.0.0",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.10) Gecko/20050720 Fedora/1.0.6-1.1.fc3 Firefox/50.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Fedora Linux",
+      "marketingName": "Fedora Linux",
+      "version": "3.0.0",
+      "manufacturer": "redhat"
+    },
+    "client": {
+      "name": "Firefox",
+      "version": "50.0.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "1.7.10",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:87.0) Gecko/20100101 Firefox/87.0 comdirect/1.0 (appVersion:21.3.0;deviceType:desktop)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows",
+      "marketingName": "Windows",
+      "version": "8.1.0",
+      "manufacturer": "microsoft"
+    },
+    "client": {
+      "name": "Firefox",
+      "version": "87.0.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "87.0.0",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 6.0; Win64; x64; rv:85.0) Gecko/20100101 Firefox/85.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows NT 6.0",
+      "marketingName": "Windows Vista",
+      "version": "6.0.0",
+      "manufacturer": "microsoft"
+    },
+    "client": {
+      "name": "Firefox",
+      "version": "85.0.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "85.0.0",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 6.0; Win64; x64; rv:86.0) Gecko/20100101 Firefox/86.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows NT 6.0",
+      "marketingName": "Windows Vista",
+      "version": "6.0.0",
+      "manufacturer": "microsoft"
+    },
+    "client": {
+      "name": "Firefox",
+      "version": "86.0.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "86.0.0",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:87.0) Gecko/20100101 Firefox/87.0 comdirect/1.0 (appVersion:21.3.1.1;deviceType:desktop)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Ubuntu",
+      "marketingName": "Ubuntu",
+      "version": null,
+      "manufacturer": "canonical"
+    },
+    "client": {
+      "name": "Firefox",
+      "version": "87.0.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "87.0.0",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; Linux x86_64; rv:87.0) Gecko/20100101 Firefox/87.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation"
+    },
+    "client": {
+      "name": "Firefox",
+      "version": "87.0.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "87.0.0",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; Fedora; Linux x86_64; rv:87.0) Gecko/20100101 Firefox/87.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Fedora Linux",
+      "marketingName": "Fedora Linux",
+      "version": null,
+      "manufacturer": "redhat"
+    },
+    "client": {
+      "name": "Firefox",
+      "version": "87.0.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "87.0.0",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:83.0) Gecko/20100101 Firefox/86.0 comdirect/1.0 (appVersion:21.3.1.1;deviceType:desktop)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows",
+      "marketingName": "Windows",
+      "version": "10.0.0",
+      "manufacturer": "microsoft"
+    },
+    "client": {
+      "name": "Firefox",
+      "version": "86.0.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "83.0.0",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:89.0) Gecko/20100101 Firefox/89.0 comdirect/1.0 (appVersion:21.3.1.1;deviceType:desktop)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows",
+      "marketingName": "Windows",
+      "version": "10.0.0",
+      "manufacturer": "microsoft"
+    },
+    "client": {
+      "name": "Firefox",
+      "version": "89.0.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "89.0.0",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:88.0) Gecko/20100101 Firefox/88.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Ubuntu",
+      "marketingName": "Ubuntu",
+      "version": null,
+      "manufacturer": "canonical"
+    },
+    "client": {
+      "name": "Firefox",
+      "version": "88.0.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "88.0.0",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 5.3; Win64; x64; rv:10.5) Gecko/20100101 Firefox/10.5.7"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows NT 5.3",
+      "marketingName": "Windows XP",
+      "version": "5.3.0",
+      "manufacturer": "microsoft"
+    },
+    "client": {
+      "name": "Firefox",
+      "version": "10.5.7",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "10.5.0",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 5.3; rv:8.7) Gecko/20100101 Firefox/8.7.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows NT 5.3",
+      "marketingName": "Windows XP",
+      "version": "5.3.0",
+      "manufacturer": "microsoft"
+    },
+    "client": {
+      "name": "Firefox",
+      "version": "8.7.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "8.7.0",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:88.0) Gecko/20100101 Firefox/88.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows",
+      "marketingName": "Windows",
+      "version": "7.0.0",
+      "manufacturer": "microsoft"
+    },
+    "client": {
+      "name": "Firefox",
+      "version": "88.0.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "88.0.0",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:88.0) Gecko/20100101 Firefox/88.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows",
+      "marketingName": "Windows",
+      "version": "8.1.0",
+      "manufacturer": "microsoft"
+    },
+    "client": {
+      "name": "Firefox",
+      "version": "88.0.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "88.0.0",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; Linux x86_64; rv:88.0) Gecko/20100101 Firefox/88.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation"
+    },
+    "client": {
+      "name": "Firefox",
+      "version": "88.0.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "88.0.0",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; Linux x86_64; rv:90.0) Gecko/20100101 /90.0a1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation"
+    },
+    "client": {
+      "name": "Mozilla",
+      "version": "5.0.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "90.0.0",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; Linux x86_64; rv:88.0) Gecko/20100101 /88.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation"
+    },
+    "client": {
+      "name": "Mozilla",
+      "version": "5.0.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "88.0.0",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:90.0) Gecko/20100101 Firefox/90.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows",
+      "marketingName": "Windows",
+      "version": "7.0.0",
+      "manufacturer": "microsoft"
+    },
+    "client": {
+      "name": "Firefox",
+      "version": "90.0.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "90.0.0",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.8.1.10) Gecko/20071213 Fedora/2.0.0.10-3.fc8 Firefox/50.0.1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Fedora Linux",
+      "marketingName": "Fedora Linux",
+      "version": "8.0.0",
+      "manufacturer": "redhat"
+    },
+    "client": {
+      "name": "Firefox",
+      "version": "50.0.1",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "1.8.1.10",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; OpenBSD i386; rv:72.0) Gecko/20100101 Firefox/72.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "OpenBSD",
+      "marketingName": "OpenBSD",
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "Firefox",
+      "version": "72.0.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "72.0.0",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 5.3; Win64; x64; rv:5.7) Gecko/20100101 Firefox/5.7.8"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows NT 5.3",
+      "marketingName": "Windows XP",
+      "version": "5.3.0",
+      "manufacturer": "microsoft"
+    },
+    "client": {
+      "name": "Firefox",
+      "version": "5.7.8",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "5.7.0",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:28.0) Gecko/20100101 Firefox/31.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows",
+      "marketingName": "Windows",
+      "version": "7.0.0",
+      "manufacturer": "microsoft"
+    },
+    "client": {
+      "name": "Firefox",
+      "version": "31.0.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "28.0.0",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; Fedora; Linux x86_64; rv:88.0) Gecko/20100101 Firefox/88.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Fedora Linux",
+      "marketingName": "Fedora Linux",
+      "version": null,
+      "manufacturer": "redhat"
+    },
+    "client": {
+      "name": "Firefox",
+      "version": "88.0.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "88.0.0",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:90.0) Gecko/20100101 Firefox/90.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows",
+      "marketingName": "Windows",
+      "version": "10.0.0",
+      "manufacturer": "microsoft"
+    },
+    "client": {
+      "name": "Firefox",
+      "version": "90.0.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "90.0.0",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT.6.2; Win64; x64) Gecko/20082606 Firefox/10.0 comdirect/1.0 (appVersion:21.4.2)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows NT",
+      "marketingName": "Windows NT",
+      "version": null,
+      "manufacturer": "microsoft"
+    },
+    "client": {
+      "name": "Firefox",
+      "version": "10.0.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": null,
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 5.3; WOW64; rv:15.6) Gecko/20100101 Firefox/15.6.4"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows NT 5.3",
+      "marketingName": "Windows XP",
+      "version": "5.3.0",
+      "manufacturer": "microsoft"
+    },
+    "client": {
+      "name": "Firefox",
+      "version": "15.6.4",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "15.6.0",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 5.3; Win64; x64; rv:11.2) Gecko/20100101 Firefox/11.2.1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows NT 5.3",
+      "marketingName": "Windows XP",
+      "version": "5.3.0",
+      "manufacturer": "microsoft"
+    },
+    "client": {
+      "name": "Firefox",
+      "version": "11.2.1",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "11.2.0",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:64.0) Gecko/20100101 Firefox/65.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows",
+      "marketingName": "Windows",
+      "version": "7.0.0",
+      "manufacturer": "microsoft"
+    },
+    "client": {
+      "name": "Firefox",
+      "version": "65.0.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "64.0.0",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 5.3; Win64; x64; rv:12.3) Gecko/20100101 Firefox/12.3.4"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows NT 5.3",
+      "marketingName": "Windows XP",
+      "version": "5.3.0",
+      "manufacturer": "microsoft"
+    },
+    "client": {
+      "name": "Firefox",
+      "version": "12.3.4",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "12.3.0",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows ME 4.9; rv:31.0) Gecko/20100101 Firefox/31.7"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows ME",
+      "marketingName": "Windows ME",
+      "version": null,
+      "manufacturer": "microsoft"
+    },
+    "client": {
+      "name": "Firefox",
+      "version": "31.7.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "31.0.0",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 6.0; rv:88.0) Gecko/20100101 Firefox/88.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows NT 6.0",
+      "marketingName": "Windows Vista",
+      "version": "6.0.0",
+      "manufacturer": "microsoft"
+    },
+    "client": {
+      "name": "Firefox",
+      "version": "88.0.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "88.0.0",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:89.0) Gecko/20100101 Firefox/89.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows",
+      "marketingName": "Windows",
+      "version": "8.1.0",
+      "manufacturer": "microsoft"
+    },
+    "client": {
+      "name": "Firefox",
+      "version": "89.0.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "89.0.0",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:89.0) Gecko/20100101 Firefox/89.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Ubuntu",
+      "marketingName": "Ubuntu",
+      "version": null,
+      "manufacturer": "canonical"
+    },
+    "client": {
+      "name": "Firefox",
+      "version": "89.0.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "89.0.0",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 6.2; Win64; x64; rv:64.0) Gecko/20100101 Firefox/66.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows",
+      "marketingName": "Windows",
+      "version": "8.0.0",
+      "manufacturer": "microsoft"
+    },
+    "client": {
+      "name": "Firefox",
+      "version": "66.0.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "64.0.0",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:89.0) Gecko/20100101 Firefox/89.0 comdirect/1.0 (appVersion:21.5.0;deviceType:desktop)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows",
+      "marketingName": "Windows",
+      "version": "7.0.0",
+      "manufacturer": "microsoft"
+    },
+    "client": {
+      "name": "Firefox",
+      "version": "89.0.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "89.0.0",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 6.2; WOW64; rv:5.0) Gecko/20100101 Firefox/20.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows",
+      "marketingName": "Windows",
+      "version": "8.0.0",
+      "manufacturer": "microsoft"
+    },
+    "client": {
+      "name": "Firefox",
+      "version": "20.0.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "5.0.0",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:91.0) Gecko/20100101 Firefox/91.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows",
+      "marketingName": "Windows",
+      "version": "10.0.0",
+      "manufacturer": "microsoft"
+    },
+    "client": {
+      "name": "Firefox",
+      "version": "91.0.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "91.0.0",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:90.0) Gecko/20100101 Firefox/90.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Ubuntu",
+      "marketingName": "Ubuntu",
+      "version": null,
+      "manufacturer": "canonical"
+    },
+    "client": {
+      "name": "Firefox",
+      "version": "90.0.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "90.0.0",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; Linux x86_64; rv:89.0) Gecko/20100101 Firefox/89.0 comdirect/1.0 (appVersion:21.6.0;deviceType:desktop)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation"
+    },
+    "client": {
+      "name": "Firefox",
+      "version": "89.0.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "89.0.0",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows; U; Windows 95; de; rv:1.9.2.6) Gecko/20100625 Firefox/89.0 (x86 de) Anonymisiert durch AlMiSoft Browser-Anonymisierer 39496272"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows 95",
+      "marketingName": "Windows 95",
+      "version": "95.0.0",
+      "manufacturer": "microsoft"
+    },
+    "client": {
+      "name": "Firefox",
+      "version": "89.0.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "1.9.2.6",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; U; FreeBSD i386; en-US; rv:1.8.1.20) Gecko/20090225 Firefox/51.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "FreeBSD",
+      "marketingName": "FreeBSD",
+      "version": null,
+      "manufacturer": "free-bsd-foundation"
+    },
+    "client": {
+      "name": "Firefox",
+      "version": "51.0.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "1.8.1.20",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:90.0) Gecko/20100101 Firefox/90.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows",
+      "marketingName": "Windows",
+      "version": "8.1.0",
+      "manufacturer": "microsoft"
+    },
+    "client": {
+      "name": "Firefox",
+      "version": "90.0.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "90.0.0",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.1b3) Gecko/20090327 Fedora/3.1-0.11.beta3.fc11 Firefox/52.4.1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Fedora Linux",
+      "marketingName": "Fedora Linux",
+      "version": "3.1.0.11",
+      "manufacturer": "redhat"
+    },
+    "client": {
+      "name": "Firefox",
+      "version": "52.4.1",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "1.9.1",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/80.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows",
+      "marketingName": "Windows",
+      "version": "10.0.0",
+      "manufacturer": "microsoft"
+    },
+    "client": {
+      "name": "Firefox",
+      "version": "80.0.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "70.0.0",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 6.3; WOW64; rv:43.0) Gecko/20100101 Firefox/51.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows",
+      "marketingName": "Windows",
+      "version": "8.1.0",
+      "manufacturer": "microsoft"
+    },
+    "client": {
+      "name": "Firefox",
+      "version": "51.0.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "43.0.0",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; Linux x86_64; rv:90.0) Gecko/20100101 Firefox/90.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation"
+    },
+    "client": {
+      "name": "Firefox",
+      "version": "90.0.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "90.0.0",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (textmode; U; Linux i386; en-US; rv:3.0.110.0) Gecko/20101006 EzineArticlesLinkScanner/3.0.0g"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation"
+    },
+    "client": {
+      "name": "Mozilla",
+      "version": "5.0.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "3.0.110.0",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 6.2; ta-LK; rv:1.9.0.20) Gecko/2021-05-01 12:19:18 Firefox/8.0 comdirect/1.0 (appVersion:21.6.3;deviceType:desktop)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows",
+      "marketingName": "Windows",
+      "version": "8.0.0",
+      "manufacturer": "microsoft"
+    },
+    "client": {
+      "name": "Firefox",
+      "version": "8.0.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "1.9.0.20",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; Fedora; Linux x86_64; rv:89.0) Gecko/20100101 Firefox/89.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Fedora Linux",
+      "marketingName": "Fedora Linux",
+      "version": null,
+      "manufacturer": "redhat"
+    },
+    "client": {
+      "name": "Firefox",
+      "version": "89.0.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "89.0.0",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:92.0) Gecko/20100101 Firefox/92.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows",
+      "marketingName": "Windows",
+      "version": "10.0.0",
+      "manufacturer": "microsoft"
+    },
+    "client": {
+      "name": "Firefox",
+      "version": "92.0.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "92.0.0",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:21.0) Gecko/20130331 Firefox/50.0.2"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Ubuntu",
+      "marketingName": "Ubuntu",
+      "version": null,
+      "manufacturer": "canonical"
+    },
+    "client": {
+      "name": "Firefox",
+      "version": "50.0.2",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "21.0.0",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 6.3; rv:36.0) Gecko/20100101 Firefox/4"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows",
+      "marketingName": "Windows",
+      "version": "8.1.0",
+      "manufacturer": "microsoft"
+    },
+    "client": {
+      "name": "Firefox",
+      "version": "4.0.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "36.0.0",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:91.0) Gecko/20100101 Firefox/91.0 comdirect/1.0 (appVersion:21.7.0;deviceType:desktop)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows",
+      "marketingName": "Windows",
+      "version": "7.0.0",
+      "manufacturer": "microsoft"
+    },
+    "client": {
+      "name": "Firefox",
+      "version": "91.0.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "91.0.0",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; Fedora; Linux x86_64; rv:90.0) Gecko/20100101 Firefox/90.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Fedora Linux",
+      "marketingName": "Fedora Linux",
+      "version": null,
+      "manufacturer": "redhat"
+    },
+    "client": {
+      "name": "Firefox",
+      "version": "90.0.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "90.0.0",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 6.0; Win64; x64; rv:89.0) Gecko/20100101 Firefox/89.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows NT 6.0",
+      "marketingName": "Windows Vista",
+      "version": "6.0.0",
+      "manufacturer": "microsoft"
+    },
+    "client": {
+      "name": "Firefox",
+      "version": "89.0.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "89.0.0",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 6.0; Win64; x64; rv:90.0) Gecko/20100101 Firefox/90.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows NT 6.0",
+      "marketingName": "Windows Vista",
+      "version": "6.0.0",
+      "manufacturer": "microsoft"
+    },
+    "client": {
+      "name": "Firefox",
+      "version": "90.0.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "90.0.0",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:553.0) Gecko/20100101 Firefox/55.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows",
+      "marketingName": "Windows",
+      "version": "10.0.0",
+      "manufacturer": "microsoft"
+    },
+    "client": {
+      "name": "Firefox",
+      "version": "55.0.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "553.0.0",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows 3.1 6.1; rv:5.0.1) Gecko/20100101 Firefox/8.3"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows 3.1",
+      "marketingName": "Windows 3.1",
+      "version": "3.1.0",
+      "manufacturer": "microsoft"
+    },
+    "client": {
+      "name": "Firefox",
+      "version": "8.3.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "5.0.1",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:91.0) Gecko/20100101 Firefox/91.0 comdirect/1.0 (appVersion:21.8.0;deviceType:desktop)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Ubuntu",
+      "marketingName": "Ubuntu",
+      "version": null,
+      "manufacturer": "canonical"
+    },
+    "client": {
+      "name": "Firefox",
+      "version": "91.0.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "91.0.0",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:91.0) Gecko/20100101 Firefox/91.0 comdirect/1.0 (appVersion:21.8.0;deviceType:desktop)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows",
+      "marketingName": "Windows",
+      "version": "8.1.0",
+      "manufacturer": "microsoft"
+    },
+    "client": {
+      "name": "Firefox",
+      "version": "91.0.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "91.0.0",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; Linux x86_64; rv:91.0) Gecko/20100101 Firefox/91.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation"
+    },
+    "client": {
+      "name": "Firefox",
+      "version": "91.0.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "91.0.0",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; Fedora; Linux x86_64; rv:91.0) Gecko/20100101 Firefox/91.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Fedora Linux",
+      "marketingName": "Fedora Linux",
+      "version": null,
+      "manufacturer": "redhat"
+    },
+    "client": {
+      "name": "Firefox",
+      "version": "91.0.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "91.0.0",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:92.0) Gecko/20100101 Firefox/92.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows",
+      "marketingName": "Windows",
+      "version": "7.0.0",
+      "manufacturer": "microsoft"
+    },
+    "client": {
+      "name": "Firefox",
+      "version": "92.0.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "92.0.0",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 6.1; rv:35.0) Gecko/20100101 Firefox/69.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows",
+      "marketingName": "Windows",
+      "version": "7.0.0",
+      "manufacturer": "microsoft"
+    },
+    "client": {
+      "name": "Firefox",
+      "version": "69.0.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "35.0.0",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows",
+      "marketingName": "Windows",
+      "version": "10.0.0",
+      "manufacturer": "microsoft"
+    },
+    "client": {
+      "name": "Firefox",
+      "version": "93.0.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "93.0.0",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; Linux x86_64; rv:92.0) Gecko/20100101 Firefox/92.0 comdirect/1.0 (appVersion:21.8.5;deviceType:desktop)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation"
+    },
+    "client": {
+      "name": "Firefox",
+      "version": "92.0.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "92.0.0",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:92.0) Gecko/20100101 Firefox/92.0 comdirect/1.0 (appVersion:21.8.5;deviceType:desktop)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Ubuntu",
+      "marketingName": "Ubuntu",
+      "version": null,
+      "manufacturer": "canonical"
+    },
+    "client": {
+      "name": "Firefox",
+      "version": "92.0.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "92.0.0",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:92.0) Gecko/20100101 Firefox/92.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows",
+      "marketingName": "Windows",
+      "version": "8.1.0",
+      "manufacturer": "microsoft"
+    },
+    "client": {
+      "name": "Firefox",
+      "version": "92.0.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "92.0.0",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 3.87; rv:197.68) Gecko/20100101  Firefox/197.68;"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows NT",
+      "marketingName": "Windows NT",
+      "version": null,
+      "manufacturer": "microsoft"
+    },
+    "client": {
+      "name": "Firefox",
+      "version": "197.68.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "197.68.0",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:89.0) Gecko/20100101 Firefox/92.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows",
+      "marketingName": "Windows",
+      "version": "10.0.0",
+      "manufacturer": "microsoft"
+    },
+    "client": {
+      "name": "Firefox",
+      "version": "92.0.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "89.0.0",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:94.0) Gecko/20100101 Firefox/94.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows",
+      "marketingName": "Windows",
+      "version": "10.0.0",
+      "manufacturer": "microsoft"
+    },
+    "client": {
+      "name": "Firefox",
+      "version": "94.0.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "94.0.0",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; Fedora; Linux x86_64; rv:92.0) Gecko/20100101 Firefox/92.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Fedora Linux",
+      "marketingName": "Fedora Linux",
+      "version": null,
+      "manufacturer": "redhat"
+    },
+    "client": {
+      "name": "Firefox",
+      "version": "92.0.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "92.0.0",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 6.1; rv:93.0) Gecko/20100101 Firefox/93.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows",
+      "marketingName": "Windows",
+      "version": "7.0.0",
+      "manufacturer": "microsoft"
+    },
+    "client": {
+      "name": "Firefox",
+      "version": "93.0.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "93.0.0",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.8.0.12) Gecko/20070529 Red Hat/1.5.0.12-0.1.el4 Firefox/54.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Redhat Linux",
+      "marketingName": "Redhat Linux",
+      "version": "1.5.0.12.0",
+      "manufacturer": "redhat"
+    },
+    "client": {
+      "name": "Firefox",
+      "version": "54.0.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "1.8.0.12",
+      "manufacturer": "mozilla-foundation"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0 comdirect/1.0 (appVersion:21.9.1;deviceType:desktop)"
     },
     "device": {
@@ -1004,3198 +4196,6 @@
     "engine": {
       "name": "Gecko",
       "version": "78.0.0",
-      "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:95.0) Gecko/20100101 Firefox/95.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Linux Desktop",
-      "marketingName": "Linux Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Ubuntu",
-      "marketingName": "Ubuntu",
-      "version": null,
-      "manufacturer": "canonical"
-    },
-    "client": {
-      "name": "Firefox",
-      "version": "95.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": "95.0.0",
-      "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (X11; Linux x86_64; rv:95.0) Gecko/20100101 Firefox/95.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Linux Desktop",
-      "marketingName": "Linux Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "linux-foundation"
-    },
-    "client": {
-      "name": "Firefox",
-      "version": "95.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": "95.0.0",
-      "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:96.0) Gecko/20100101 Firefox/96.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Windows Desktop",
-      "marketingName": "Windows Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Windows",
-      "marketingName": "Windows",
-      "version": "10.0.0",
-      "manufacturer": "microsoft"
-    },
-    "client": {
-      "name": "Firefox",
-      "version": "96.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": "96.0.0",
-      "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Windows NT 6.0; Win64; x64; rv:80.0) Gecko/20100101 Firefox/80.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Windows Desktop",
-      "marketingName": "Windows Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Windows NT 6.0",
-      "marketingName": "Windows Vista",
-      "version": "6.0.0",
-      "manufacturer": "microsoft"
-    },
-    "client": {
-      "name": "Firefox",
-      "version": "80.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": "80.0.0",
-      "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:97.0) Gecko/20100101 Firefox/97.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Windows Desktop",
-      "marketingName": "Windows Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Windows",
-      "marketingName": "Windows",
-      "version": "10.0.0",
-      "manufacturer": "microsoft"
-    },
-    "client": {
-      "name": "Firefox",
-      "version": "97.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": "97.0.0",
-      "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (X11; Fedora; Linux x86_64; rv:95.0) Gecko/20100101 Firefox/95.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Linux Desktop",
-      "marketingName": "Linux Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Fedora Linux",
-      "marketingName": "Fedora Linux",
-      "version": null,
-      "manufacturer": "redhat"
-    },
-    "client": {
-      "name": "Firefox",
-      "version": "95.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": "95.0.0",
-      "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/89.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Linux Desktop",
-      "marketingName": "Linux Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "linux-foundation"
-    },
-    "client": {
-      "name": "Firefox",
-      "version": "89.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": "60.0.0",
-      "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:96.0) Gecko/20100101 Firefox/96.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Windows Desktop",
-      "marketingName": "Windows Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Windows",
-      "marketingName": "Windows",
-      "version": "8.1.0",
-      "manufacturer": "microsoft"
-    },
-    "client": {
-      "name": "Firefox",
-      "version": "96.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": "96.0.0",
-      "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/89.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Windows Desktop",
-      "marketingName": "Windows Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Windows",
-      "marketingName": "Windows",
-      "version": "10.0.0",
-      "manufacturer": "microsoft"
-    },
-    "client": {
-      "name": "Firefox",
-      "version": "89.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": "66.0.0",
-      "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (X11; FreeBSD amd64; rv:95.0) Gecko/20100101 Firefox/95.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Desktop",
-      "marketingName": "general Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "FreeBSD",
-      "marketingName": "FreeBSD",
-      "version": null,
-      "manufacturer": "free-bsd-foundation"
-    },
-    "client": {
-      "name": "Firefox",
-      "version": "95.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": "95.0.0",
-      "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (X11; Linux x86_64:89.0) Gecko/20100101 Firefox/89.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Linux Desktop",
-      "marketingName": "Linux Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "linux-foundation"
-    },
-    "client": {
-      "name": "Firefox",
-      "version": "89.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Windows NT 5.1; rv:80.0) Gecko/20100101 Firefox/80.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Windows Desktop",
-      "marketingName": "Windows Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Windows NT",
-      "marketingName": "Windows XP",
-      "version": "5.1.0",
-      "manufacturer": "microsoft"
-    },
-    "client": {
-      "name": "Firefox",
-      "version": "80.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": "80.0.0",
-      "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Windows NT 5.1; rv:75.0) Gecko/20100101 Firefox/75.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Windows Desktop",
-      "marketingName": "Windows Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Windows NT",
-      "marketingName": "Windows XP",
-      "version": "5.1.0",
-      "manufacturer": "microsoft"
-    },
-    "client": {
-      "name": "Firefox",
-      "version": "75.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": "75.0.0",
-      "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Windows NT 10.0; ) Gecko/20100101 Firefox/61.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Windows Desktop",
-      "marketingName": "Windows Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Windows",
-      "marketingName": "Windows",
-      "version": "10.0.0",
-      "manufacturer": "microsoft"
-    },
-    "client": {
-      "name": "Firefox",
-      "version": "61.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Windows NT 5.1; rv:68.9) Goanna/4.4 Basilisk/20191212"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Windows Desktop",
-      "marketingName": "Windows Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Windows NT",
-      "marketingName": "Windows XP",
-      "version": "5.1.0",
-      "manufacturer": "microsoft"
-    },
-    "client": {
-      "name": "Mozilla",
-      "version": "5.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Goanna",
-      "version": "4.4.0",
-      "manufacturer": "moonchild-productions"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (X11; Linux i686 on x86_64; rv:5.0) Gecko/20100101 Firefox/3.6.17 Firefox/3.6.17"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Linux Desktop",
-      "marketingName": "Linux Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "linux-foundation"
-    },
-    "client": {
-      "name": "Firefox",
-      "version": "3.6.17",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": "5.0.0",
-      "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; diordnA 9) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Focus/8.0.9 Chrome/85.0.4183.127 eliboM Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Linux Desktop",
-      "marketingName": "Linux Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "linux-foundation"
-    },
-    "client": {
-      "name": "Firefox Focus",
-      "version": "8.0.9",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "85.0.4183.127",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:96.0) Gecko/20100101 Firefox/96.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Windows Desktop",
-      "marketingName": "Windows Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Windows",
-      "marketingName": "Windows",
-      "version": "7.0.0",
-      "manufacturer": "microsoft"
-    },
-    "client": {
-      "name": "Firefox",
-      "version": "96.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": "96.0.0",
-      "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:96.0) Gecko/20100101 Firefox/96.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Linux Desktop",
-      "marketingName": "Linux Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Ubuntu",
-      "marketingName": "Ubuntu",
-      "version": null,
-      "manufacturer": "canonical"
-    },
-    "client": {
-      "name": "Firefox",
-      "version": "96.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": "96.0.0",
-      "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Windows NT 5.1; rv:79.0) Gecko/20100101 Firefox/79.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Windows Desktop",
-      "marketingName": "Windows Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Windows NT",
-      "marketingName": "Windows XP",
-      "version": "5.1.0",
-      "manufacturer": "microsoft"
-    },
-    "client": {
-      "name": "Firefox",
-      "version": "79.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": "79.0.0",
-      "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (X11; Linux x86_64:95.0) Gecko/20100101 Firefox/95.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Linux Desktop",
-      "marketingName": "Linux Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "linux-foundation"
-    },
-    "client": {
-      "name": "Firefox",
-      "version": "95.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (X11; OpenBSD amd64; rv:56.0) Gecko/20100101 Firefox/66.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Desktop",
-      "marketingName": "general Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "OpenBSD",
-      "marketingName": "OpenBSD",
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "Firefox",
-      "version": "66.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": "56.0.0",
-      "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (X11; CrOS x86_64 13505.112.0)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Linux Desktop",
-      "marketingName": "Linux Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ChromeOS",
-      "marketingName": "ChromeOS",
-      "version": "13505.112.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Mozilla",
-      "version": "5.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (X11; CrOS x86_64 13816.82.0)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Linux Desktop",
-      "marketingName": "Linux Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ChromeOS",
-      "marketingName": "ChromeOS",
-      "version": "13816.82.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Mozilla",
-      "version": "5.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (X11; CrOS x86_64 13421.102.0)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Linux Desktop",
-      "marketingName": "Linux Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ChromeOS",
-      "marketingName": "ChromeOS",
-      "version": "13421.102.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Mozilla",
-      "version": "5.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (X11; CrOS x86_64 13597.84.0)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Linux Desktop",
-      "marketingName": "Linux Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ChromeOS",
-      "marketingName": "ChromeOS",
-      "version": "13597.84.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Mozilla",
-      "version": "5.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (X11; CrOS x86_64 13729.56.0)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Linux Desktop",
-      "marketingName": "Linux Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ChromeOS",
-      "marketingName": "ChromeOS",
-      "version": "13729.56.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Mozilla",
-      "version": "5.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (X11; CrOS x86_64 12239.92.0)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Linux Desktop",
-      "marketingName": "Linux Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ChromeOS",
-      "marketingName": "ChromeOS",
-      "version": "12239.92.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Mozilla",
-      "version": "5.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.0 (X11; CrOS x86_64 13310.102.0)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Linux Desktop",
-      "marketingName": "Linux Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ChromeOS",
-      "marketingName": "ChromeOS",
-      "version": "13310.102.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Mozilla",
-      "version": "4.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (X11; CrOS armv7l 12105.100.0)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Linux Desktop",
-      "marketingName": "Linux Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ChromeOS",
-      "marketingName": "ChromeOS",
-      "version": "12105.100.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Mozilla",
-      "version": "5.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (X11; CrOS armv7l 12371.89.0)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Linux Desktop",
-      "marketingName": "Linux Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ChromeOS",
-      "marketingName": "ChromeOS",
-      "version": "12371.89.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Mozilla",
-      "version": "5.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (X11; CrOS x86_64 13310.102.0)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Linux Desktop",
-      "marketingName": "Linux Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ChromeOS",
-      "marketingName": "ChromeOS",
-      "version": "13310.102.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Mozilla",
-      "version": "5.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.0 (Windows NT 10.0; Win64; x64)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Windows Desktop",
-      "marketingName": "Windows Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Windows",
-      "marketingName": "Windows",
-      "version": "10.0.0",
-      "manufacturer": "microsoft"
-    },
-    "client": {
-      "name": "Mozilla",
-      "version": "4.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.0 (Windows NT 6.3; Win64; x64; rv:80.0)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Windows Desktop",
-      "marketingName": "Windows Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Windows",
-      "marketingName": "Windows",
-      "version": "8.1.0",
-      "manufacturer": "microsoft"
-    },
-    "client": {
-      "name": "Mozilla",
-      "version": "4.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (X11; CrOS x86_64 11647.104.0)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Linux Desktop",
-      "marketingName": "Linux Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ChromeOS",
-      "marketingName": "ChromeOS",
-      "version": "11647.104.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Mozilla",
-      "version": "5.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.0 (X11; CrOS x86_64 13505.73.0)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Linux Desktop",
-      "marketingName": "Linux Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ChromeOS",
-      "marketingName": "ChromeOS",
-      "version": "13505.73.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Mozilla",
-      "version": "4.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.0 (X11; CrOS x86_64 12239.92.1)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Linux Desktop",
-      "marketingName": "Linux Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ChromeOS",
-      "marketingName": "ChromeOS",
-      "version": "12239.92.1",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Mozilla",
-      "version": "4.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.0 (X11; Ubuntu; Linux x86_64; rv:83.0)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Linux Desktop",
-      "marketingName": "Linux Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Ubuntu",
-      "marketingName": "Ubuntu",
-      "version": null,
-      "manufacturer": "canonical"
-    },
-    "client": {
-      "name": "Mozilla",
-      "version": "4.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.0 (X11; CrOS x86_64 13816.80.0)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Linux Desktop",
-      "marketingName": "Linux Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ChromeOS",
-      "marketingName": "ChromeOS",
-      "version": "13816.80.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Mozilla",
-      "version": "4.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.0 (X11; CrOS x86_64 13729.56.0)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Linux Desktop",
-      "marketingName": "Linux Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ChromeOS",
-      "marketingName": "ChromeOS",
-      "version": "13729.56.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Mozilla",
-      "version": "4.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.0 (X11; CrOS x86_64 13597.94.0)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Linux Desktop",
-      "marketingName": "Linux Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ChromeOS",
-      "marketingName": "ChromeOS",
-      "version": "13597.94.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Mozilla",
-      "version": "4.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.0 (X11; CrOS x86_64 13421.102.0)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Linux Desktop",
-      "marketingName": "Linux Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ChromeOS",
-      "marketingName": "ChromeOS",
-      "version": "13421.102.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Mozilla",
-      "version": "4.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.0 (X11; CrOS armv7l 12371.89.0)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Linux Desktop",
-      "marketingName": "Linux Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ChromeOS",
-      "marketingName": "ChromeOS",
-      "version": "12371.89.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Mozilla",
-      "version": "4.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (X11; CrOS x86_64 13505.100.0) Gecko/20100101 Firefox/89.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Linux Desktop",
-      "marketingName": "Linux Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ChromeOS",
-      "marketingName": "ChromeOS",
-      "version": "13505.100.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Firefox",
-      "version": "89.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (X11; CrOS aarch64 13729.84.0) Gecko/20100101 Firefox/52.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Linux Desktop",
-      "marketingName": "Linux Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ChromeOS",
-      "marketingName": "ChromeOS",
-      "version": "13729.84.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Firefox",
-      "version": "52.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:56.0) Gecko/20100101 Firefox/88.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Windows Desktop",
-      "marketingName": "Windows Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Windows",
-      "marketingName": "Windows",
-      "version": "10.0.0",
-      "manufacturer": "microsoft"
-    },
-    "client": {
-      "name": "Firefox",
-      "version": "88.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": "56.0.0",
-      "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:89.0) Gecko/20100101 Firefox/87.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Windows Desktop",
-      "marketingName": "Windows Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Windows",
-      "marketingName": "Windows",
-      "version": "10.0.0",
-      "manufacturer": "microsoft"
-    },
-    "client": {
-      "name": "Firefox",
-      "version": "87.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": "89.0.0",
-      "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.0 (X11; CrOS x86_64 13421.102.0) Gecko/20100101 Firefox/75.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Linux Desktop",
-      "marketingName": "Linux Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ChromeOS",
-      "marketingName": "ChromeOS",
-      "version": "13421.102.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Firefox",
-      "version": "75.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Windows NT 6.2; Win64; x64; rv:87.0) Gecko/20100101 Firefox/84.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Windows Desktop",
-      "marketingName": "Windows Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Windows",
-      "marketingName": "Windows",
-      "version": "8.0.0",
-      "manufacturer": "microsoft"
-    },
-    "client": {
-      "name": "Firefox",
-      "version": "84.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": "87.0.0",
-      "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/4.0 (Windows NT 6.2; Win64; x64; rv:78.0) Gecko/20100101 Firefox/56.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Windows Desktop",
-      "marketingName": "Windows Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Windows",
-      "marketingName": "Windows",
-      "version": "8.0.0",
-      "manufacturer": "microsoft"
-    },
-    "client": {
-      "name": "Firefox",
-      "version": "56.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": "78.0.0",
-      "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (X11; U; Linux x86_64) Gecko/20100101 Firefox/81.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Linux Desktop",
-      "marketingName": "Linux Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "linux-foundation"
-    },
-    "client": {
-      "name": "Firefox",
-      "version": "81.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:85.0) Gecko/20100101 Firefox/84.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Linux Desktop",
-      "marketingName": "Linux Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Ubuntu",
-      "marketingName": "Ubuntu",
-      "version": null,
-      "manufacturer": "canonical"
-    },
-    "client": {
-      "name": "Firefox",
-      "version": "84.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": "85.0.0",
-      "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/75.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Linux Desktop",
-      "marketingName": "Linux Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Ubuntu",
-      "marketingName": "Ubuntu",
-      "version": null,
-      "manufacturer": "canonical"
-    },
-    "client": {
-      "name": "Firefox",
-      "version": "75.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": "84.0.0",
-      "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:58.0) Gecko/20100101 Firefox/61.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Linux Desktop",
-      "marketingName": "Linux Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Ubuntu",
-      "marketingName": "Ubuntu",
-      "version": null,
-      "manufacturer": "canonical"
-    },
-    "client": {
-      "name": "Firefox",
-      "version": "61.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": "58.0.0",
-      "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (X11; Linux x86_64; rv:85.0) Gecko/20100101 Firefox/82.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Linux Desktop",
-      "marketingName": "Linux Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "linux-foundation"
-    },
-    "client": {
-      "name": "Firefox",
-      "version": "82.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": "85.0.0",
-      "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (X11; Linux x86_64; rv:85.0) Gecko/20100101 Firefox/78.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Linux Desktop",
-      "marketingName": "Linux Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "linux-foundation"
-    },
-    "client": {
-      "name": "Firefox",
-      "version": "78.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": "85.0.0",
-      "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (X11; Linux x86_64; rv:78.0) Gecko/20100101 Firefox/84.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Linux Desktop",
-      "marketingName": "Linux Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "linux-foundation"
-    },
-    "client": {
-      "name": "Firefox",
-      "version": "84.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": "78.0.0",
-      "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (X11; Linux i686) Gecko/20100101 Firefox/88.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Linux Desktop",
-      "marketingName": "Linux Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "linux-foundation"
-    },
-    "client": {
-      "name": "Firefox",
-      "version": "88.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (X11; CrOS x86_64 13816.82.0) Gecko/20100101 Firefox/87.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Linux Desktop",
-      "marketingName": "Linux Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ChromeOS",
-      "marketingName": "ChromeOS",
-      "version": "13816.82.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Firefox",
-      "version": "87.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (X11; CrOS x86_64 13816.64.0) Gecko/20100101 Firefox/78.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Linux Desktop",
-      "marketingName": "Linux Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ChromeOS",
-      "marketingName": "ChromeOS",
-      "version": "13816.64.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Firefox",
-      "version": "78.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (X11; CrOS x86_64 13729.84.0) Gecko/20100101 Firefox/86.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Linux Desktop",
-      "marketingName": "Linux Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ChromeOS",
-      "marketingName": "ChromeOS",
-      "version": "13729.84.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Firefox",
-      "version": "86.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (X11; CrOS x86_64 13729.56.0) Gecko/20100101 Firefox/87.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Linux Desktop",
-      "marketingName": "Linux Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ChromeOS",
-      "marketingName": "ChromeOS",
-      "version": "13729.56.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Firefox",
-      "version": "87.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (X11; CrOS x86_64 13729.45.0) Gecko/20100101 Firefox/82.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Linux Desktop",
-      "marketingName": "Linux Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ChromeOS",
-      "marketingName": "ChromeOS",
-      "version": "13729.45.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Firefox",
-      "version": "82.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (X11; CrOS x86_64 13597.84.0) Gecko/20100101 Firefox/75.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Linux Desktop",
-      "marketingName": "Linux Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ChromeOS",
-      "marketingName": "ChromeOS",
-      "version": "13597.84.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Firefox",
-      "version": "75.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (X11; CrOS x86_64 13597.84.0) Gecko/20100101 Firefox/64.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Linux Desktop",
-      "marketingName": "Linux Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ChromeOS",
-      "marketingName": "ChromeOS",
-      "version": "13597.84.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Firefox",
-      "version": "64.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (X11; CrOS x86_64 13597.105.0) Gecko/20100101 Firefox/89.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Linux Desktop",
-      "marketingName": "Linux Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ChromeOS",
-      "marketingName": "ChromeOS",
-      "version": "13597.105.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Firefox",
-      "version": "89.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (X11; CrOS x86_64 13597.105.0) Gecko/20100101 Firefox/87.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Linux Desktop",
-      "marketingName": "Linux Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ChromeOS",
-      "marketingName": "ChromeOS",
-      "version": "13597.105.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Firefox",
-      "version": "87.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (X11; CrOS x86_64 13505.63.0) Gecko/20100101 Firefox/64.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Linux Desktop",
-      "marketingName": "Linux Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ChromeOS",
-      "marketingName": "ChromeOS",
-      "version": "13505.63.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Firefox",
-      "version": "64.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (X11; CrOS x86_64 13421.53.0) Gecko/20100101 Firefox/83.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Linux Desktop",
-      "marketingName": "Linux Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ChromeOS",
-      "marketingName": "ChromeOS",
-      "version": "13421.53.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Firefox",
-      "version": "83.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (X11; CrOS x86_64 13310.102.0) Gecko/20100101 Firefox/90.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Linux Desktop",
-      "marketingName": "Linux Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ChromeOS",
-      "marketingName": "ChromeOS",
-      "version": "13310.102.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Firefox",
-      "version": "90.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (X11; CrOS x86_64 13310.102.0) Gecko/20100101 Firefox/83.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Linux Desktop",
-      "marketingName": "Linux Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ChromeOS",
-      "marketingName": "ChromeOS",
-      "version": "13310.102.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Firefox",
-      "version": "83.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (X11; CrOS x86_64 13310.102.0) Gecko/20100101 Firefox/78.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Linux Desktop",
-      "marketingName": "Linux Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ChromeOS",
-      "marketingName": "ChromeOS",
-      "version": "13310.102.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Firefox",
-      "version": "78.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (X11; CrOS x86_64 12239.92.1) Gecko/20100101 Firefox/75.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Linux Desktop",
-      "marketingName": "Linux Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ChromeOS",
-      "marketingName": "ChromeOS",
-      "version": "12239.92.1",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Firefox",
-      "version": "75.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (X11; CrOS x86_64 12239.92.1) Gecko/20100101 Firefox/72.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Linux Desktop",
-      "marketingName": "Linux Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ChromeOS",
-      "marketingName": "ChromeOS",
-      "version": "12239.92.1",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Firefox",
-      "version": "72.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (X11; CrOS aarch64 13816.82.0) Gecko/20100101 Firefox/52.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Linux Desktop",
-      "marketingName": "Linux Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ChromeOS",
-      "marketingName": "ChromeOS",
-      "version": "13816.82.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Firefox",
-      "version": "52.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
-      "manufacturer": "mozilla-foundation"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (X11; CrOS aarch64 13729.56.0) Gecko/20100101 Firefox/80.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Linux Desktop",
-      "marketingName": "Linux Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ChromeOS",
-      "marketingName": "ChromeOS",
-      "version": "13729.56.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Firefox",
-      "version": "80.0.0",
-      "manufacturer": "mozilla-foundation",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Gecko",
-      "version": null,
       "manufacturer": "mozilla-foundation"
     }
   }

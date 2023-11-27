@@ -20,8 +20,8 @@ final class GeckoFactory implements GeckoFactoryInterface
     public function __invoke(LoggerInterface $logger): Gecko
     {
         return new Gecko(
-            $logger,
-            new VersionBuilder($logger),
+            logger: $logger,
+            versionBuilder: new VersionBuilder($logger),
         );
     }
 }

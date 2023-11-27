@@ -144,6 +144,7 @@ final class MobileDeviceTest extends TestCase
             ['Mozilla/5.0 (Linux; x86_64 GNU/Linux) AppleWebKit/601.1 (KHTML, like Gecko) Version/8.0 Safari/601.1 WPE ComcastAppPlatform AX061AEI Firebolt/0.8.1,gzip(gfe),gzip(gfe) 1.0.0.0 Xfinity'],
             ['Mozilla/5.0 (Linux; U; Android 13; de-de; Redmi 12C Build/TP1A.220624.014) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/112.0.5615.136 Mobile Safari/537.36 XiaoMi/MiuiBrowser/13.38.0-gn'],
             ['HISTORY/6.3.0 (com.aetn.history.ios.watch; build:4385; iOS 16.6.0) Alamofire/4.8.2'],
+            ['nook browser/1.0'],
         ];
     }
 

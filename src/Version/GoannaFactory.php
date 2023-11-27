@@ -20,8 +20,8 @@ final class GoannaFactory implements GoannaFactoryInterface
     public function __invoke(LoggerInterface $logger): Goanna
     {
         return new Goanna(
-            $logger,
-            new VersionBuilder($logger),
+            logger: $logger,
+            versionBuilder: new VersionBuilder($logger),
         );
     }
 }

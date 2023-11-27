@@ -20,8 +20,8 @@ final class ScreamingFrogFactory implements ScreamingFrogFactoryInterface
     public function __invoke(LoggerInterface $logger): ScreamingFrog
     {
         return new ScreamingFrog(
-            $logger,
-            new VersionBuilder($logger),
+            logger: $logger,
+            versionBuilder: new VersionBuilder($logger),
         );
     }
 }

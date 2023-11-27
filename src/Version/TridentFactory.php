@@ -20,8 +20,8 @@ final class TridentFactory implements TridentFactoryInterface
     public function __invoke(LoggerInterface $logger): Trident
     {
         return new Trident(
-            $logger,
-            new VersionBuilder($logger),
+            logger: $logger,
+            versionBuilder: new VersionBuilder($logger),
         );
     }
 }

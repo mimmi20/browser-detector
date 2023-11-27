@@ -618,7 +618,49 @@
     },
     "client": {
       "name": "WeChat App",
-      "version": "0.0.0",
+      "version": "6.7.3",
+      "manufacturer": "tencent",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "605.1.15",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 12_1_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/16C101 MicroMessenger/7.0.4(0x17000428) NetType/4G Language/en"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPhone",
+      "marketingName": "iPhone",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": 3.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "12.1.2",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "WeChat App",
+      "version": "7.0.4",
       "manufacturer": "tencent",
       "type": "mobile-application",
       "isbot": false
@@ -702,7 +744,7 @@
     },
     "client": {
       "name": "WeChat App",
-      "version": "0.0.0",
+      "version": "7.0.10",
       "manufacturer": "tencent",
       "type": "mobile-application",
       "isbot": false
@@ -744,7 +786,7 @@
     },
     "client": {
       "name": "WeChat App",
-      "version": "0.0.0",
+      "version": "7.0.4",
       "manufacturer": "tencent",
       "type": "mobile-application",
       "isbot": false
@@ -786,7 +828,7 @@
     },
     "client": {
       "name": "WeChat App",
-      "version": "0.0.0",
+      "version": "7.0.3",
       "manufacturer": "tencent",
       "type": "mobile-application",
       "isbot": false
@@ -828,7 +870,7 @@
     },
     "client": {
       "name": "WeChat App",
-      "version": "0.0.0",
+      "version": "8.0.20",
       "manufacturer": "tencent",
       "type": "mobile-application",
       "isbot": false
@@ -870,7 +912,7 @@
     },
     "client": {
       "name": "WeChat App",
-      "version": "0.0.0",
+      "version": "8.0.29",
       "manufacturer": "tencent",
       "type": "mobile-application",
       "isbot": false

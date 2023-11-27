@@ -421,6 +421,48 @@
   },
   {
     "headers": {
+      "user-agent": "Opera/9.5 (Windows CE 5.2; SAMSUNG-GT-i8000/BOIL4 profile/MIDP-2.0 configuration/CLDC-1.1 (Windows CE; Opera Mobi; U; en) Opera 9.5; U; de)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "GT-I8000",
+      "marketingName": "Omnia II",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 800,
+        "height": 480,
+        "touch": true,
+        "size": null
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows CE",
+      "marketingName": "Windows CE",
+      "version": "5.2.0",
+      "manufacturer": "microsoft"
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "version": "9.5.0",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Presto",
+      "version": null,
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "SAMSUNG-GT-I8330-Vodafone/I8330BUJF8 Opera/9.8 (SLP; Linux/SLP/R1; U; en) Presto/2.4.21 Version/10.00 SMM-MMS/1.2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1"
     },
     "device": {
@@ -1495,7 +1537,7 @@
     "os": {
       "name": "Windows CE",
       "marketingName": "Windows CE",
-      "version": null,
+      "version": "6.1.0",
       "manufacturer": "microsoft"
     },
     "client": {

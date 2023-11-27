@@ -1,6 +1,90 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; LM-G710) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "LM-G710",
+      "marketingName": "G7 ThinQ",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 3120,
+        "height": 1440,
+        "touch": true,
+        "size": 6.1
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "109.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "109.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; LM-K420 Build/SKQ1.211103.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/109.0.5414.117 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "K420",
+      "marketingName": "K10",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5.3
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Android WebView",
+      "version": "109.0.5414.117",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "109.0.5414.117",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 10; LM-G850) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Mobile Safari/537.36"
     },
     "device": {
@@ -345,8 +429,8 @@
       "marketingName": "Q7 Stylus",
       "manufacturer": "lg",
       "brand": "lg",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 2160,
         "height": 1080,
@@ -4112,90 +4196,6 @@
     "engine": {
       "name": "Blink",
       "version": "87.0.4280.86",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; LG-F600S) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.101 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "F600S",
-      "marketingName": "V10",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 2560,
-        "height": 1440,
-        "touch": true,
-        "size": 5.7
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.1.1",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Chrome",
-      "version": "87.0.4280.101",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "87.0.4280.101",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; LG-F580L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.181 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "F580L",
-      "marketingName": "Gentle",
-      "manufacturer": "lg",
-      "brand": "lg",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": 3.2
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.1.1",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Chrome",
-      "version": "88.0.4324.181",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "88.0.4324.181",
       "manufacturer": "google"
     }
   }

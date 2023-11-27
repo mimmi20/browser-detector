@@ -5,17 +5,17 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "MacBook Pro",
-      "marketingName": "MacBook Pro",
+      "deviceName": "MacBook Pro 4,1",
+      "marketingName": "MacBook Pro 15\" (2008)",
       "manufacturer": "apple",
       "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
         "touch": false,
-        "size": null
+        "size": 15
       },
       "type": "desktop",
       "ismobile": false,
@@ -43,21 +43,147 @@
   },
   {
     "headers": {
+      "user-agent": "Reeder/1000.02.03 CFNetwork/454.11.5 Darwin/10.5.0 (i386) (MacBookPro6%2C2)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "MacBook Pro 6,2",
+      "marketingName": "MacBook Pro 15\" (2010)",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 1440,
+        "height": 900,
+        "touch": false,
+        "size": 15.4
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": "10.6.5",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "Reeder",
+      "version": "1000.02.03",
+      "manufacturer": "unknown",
+      "type": "feed-reader",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "454.11.5",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Reeder/1000.02.13 CFNetwork/454.11.12 Darwin/10.7.0 (i386) (MacBookPro7%2C1)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "MacBook Pro 7,1",
+      "marketingName": "MacBook Pro 13\" (2010)",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": false,
+        "size": 13.3
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": "10.6.7",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "Reeder",
+      "version": "1000.02.13",
+      "manufacturer": "unknown",
+      "type": "feed-reader",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "454.11.12",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Reeder/1000.03.02 CFNetwork/454.11.12 Darwin/10.7.4 (x86_64) (MacBookPro8%2C1)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "MacBook Pro 8,1",
+      "marketingName": "MacBook Pro 13\" (2011)",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": false,
+        "size": 13.3
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": "10.6.7",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "Reeder",
+      "version": "1000.03.02",
+      "manufacturer": "unknown",
+      "type": "feed-reader",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "454.11.12",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Reeder/1000.09.00 CFNetwork/520.0.13 Darwin/11.0.0 (x86_64) (MacBookPro7%2C1)"
     },
     "device": {
       "architecture": null,
-      "deviceName": "MacBook Pro",
-      "marketingName": "MacBook Pro",
+      "deviceName": "MacBook Pro 7,1",
+      "marketingName": "MacBook Pro 13\" (2010)",
       "manufacturer": "apple",
       "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 0,
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1280,
+        "height": 800,
         "touch": false,
-        "size": null
+        "size": 13.3
       },
       "type": "desktop",
       "ismobile": false,
@@ -89,17 +215,17 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "MacBook Pro",
-      "marketingName": "MacBook Pro",
+      "deviceName": "MacBook Pro 7,1",
+      "marketingName": "MacBook Pro 13\" (2010)",
       "manufacturer": "apple",
       "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 0,
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1280,
+        "height": 800,
         "touch": false,
-        "size": null
+        "size": 13.3
       },
       "type": "desktop",
       "ismobile": false,
@@ -127,21 +253,63 @@
   },
   {
     "headers": {
+      "user-agent": "Reeder/1010.29.00 CFNetwork/520.0.13 Darwin/11.1.0 (x86_64) (MacBookPro8%2C1)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "MacBook Pro 8,1",
+      "marketingName": "MacBook Pro 13\" (2011)",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": false,
+        "size": 13.3
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": "10.7.1",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "Reeder",
+      "version": "1010.29.00",
+      "manufacturer": "unknown",
+      "type": "feed-reader",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "520.0.13",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Reeder/1010.39.00 CFNetwork/520.2.5 Darwin/11.2.0 (x86_64) (MacBookAir4%2C2)"
     },
     "device": {
       "architecture": null,
-      "deviceName": "MacBook Air",
-      "marketingName": "MacBook Air",
+      "deviceName": "MacBook Air 4,2",
+      "marketingName": "MacBook Air 13\" (2011)",
       "manufacturer": "apple",
       "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 0,
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1440,
+        "height": 900,
         "touch": false,
-        "size": null
+        "size": 13.3
       },
       "type": "desktop",
       "ismobile": false,
@@ -169,6 +337,48 @@
   },
   {
     "headers": {
+      "user-agent": "Reeder/1010.49.00 CFNetwork/520.3.2 Darwin/11.3.0 (x86_64) (MacBookPro8%2C2)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "MacBook Pro 8,2",
+      "marketingName": "MacBook Pro 15\" (2011)",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 1440,
+        "height": 900,
+        "touch": false,
+        "size": 15.4
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": "10.7.3",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "Reeder",
+      "version": "1010.49.00",
+      "manufacturer": "unknown",
+      "type": "feed-reader",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "520.3.2",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Newsflow/29 CFNetwork/807.2.14 Darwin/16.4.0 (x86_64)"
     },
     "device": {
@@ -177,8 +387,8 @@
       "marketingName": "Macintosh",
       "manufacturer": "apple",
       "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -219,8 +429,8 @@
       "marketingName": "Macintosh",
       "manufacturer": "apple",
       "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -261,8 +471,8 @@
       "marketingName": "Macintosh",
       "manufacturer": "apple",
       "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -303,8 +513,8 @@
       "marketingName": "Macintosh",
       "manufacturer": "apple",
       "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -345,8 +555,8 @@
       "marketingName": "Macintosh",
       "manufacturer": "apple",
       "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -387,8 +597,8 @@
       "marketingName": "Macintosh",
       "manufacturer": "apple",
       "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -429,8 +639,8 @@
       "marketingName": "Macintosh",
       "manufacturer": "apple",
       "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -471,8 +681,8 @@
       "marketingName": "Macintosh",
       "manufacturer": "apple",
       "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -513,8 +723,8 @@
       "marketingName": "Mac Mini",
       "manufacturer": "apple",
       "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -555,8 +765,8 @@
       "marketingName": "Macintosh",
       "manufacturer": "apple",
       "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -597,8 +807,8 @@
       "marketingName": "Macintosh",
       "manufacturer": "apple",
       "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -631,6 +841,48 @@
   },
   {
     "headers": {
+      "user-agent": "Reeder/1010.79.00 CFNetwork/520.4.3 Darwin/11.4.0 (x86_64) (MacBookPro4%2C1)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "MacBook Pro 4,1",
+      "marketingName": "MacBook Pro 15\" (2008)",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": 15
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": "10.7.4",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "Reeder",
+      "version": "1010.79.00",
+      "manufacturer": "unknown",
+      "type": "feed-reader",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "520.4.3",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Reeder/1020.09.00 CFNetwork/596.3.3 Darwin/12.3.0 (x86_64) (iMac9%2C1)"
     },
     "device": {
@@ -639,8 +891,8 @@
       "marketingName": "iMac",
       "manufacturer": "apple",
       "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -685,8 +937,8 @@
       "marketingName": "Macintosh",
       "manufacturer": "apple",
       "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -727,8 +979,8 @@
       "marketingName": "Macintosh",
       "manufacturer": "apple",
       "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,

@@ -85,6 +85,53 @@
   },
   {
     "headers": {
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "cross-site",
+      "sec-fetch-user": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; A063 Build/TKQ1.220915.002) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.5672.77 Mobile Safari/537.36 OPT/2.9",
+      "x-requested-with": "com.opera.touch"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "1",
+      "marketingName": "1",
+      "manufacturer": "nothing-phone",
+      "brand": "nothing-phone",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.55
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Opera Touch",
+      "version": null,
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "113.0.5672.77",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 13; A063) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.167 Mobile Safari/537.36 OPR/77.0.4095.74331"
     },
     "device": {

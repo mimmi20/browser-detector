@@ -20,8 +20,8 @@ final class ChromeOsFactory implements ChromeOsFactoryInterface
     public function __invoke(LoggerInterface $logger): ChromeOs
     {
         return new ChromeOs(
-            $logger,
-            new VersionBuilder($logger),
+            logger: $logger,
+            versionBuilder: new VersionBuilder($logger),
         );
     }
 }

@@ -1,6 +1,48 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; Mi 9T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.79 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Mi 9T",
+      "marketingName": "Mi 9T",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 2280,
+        "height": 1080,
+        "touch": true,
+        "size": 6.39
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "100.0.4896.79",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "100.0.4896.79",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 11; M2012K11AG) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.41 Mobile Safari/537.36"
     },
     "device": {
@@ -4429,55 +4471,6 @@
     "engine": {
       "name": "Blink",
       "version": "102.0.5005.78",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; M2004J19C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.61 Mobile Safari/537.36",
-      "sec-fetch-site": "none",
-      "sec-fetch-mode": "navigate",
-      "sec-fetch-user": "?1",
-      "sec-fetch-dest": "document",
-      "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"101\", \"Google Chrome\";v=\"101\"",
-      "sec-ch-ua-mobile": "?1",
-      "sec-ch-ua-platform": "\"Android\""
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "M2004J19C",
-      "marketingName": "Redmi 9",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
-      "dualOrientation": true,
-      "simCount": 2,
-      "display": {
-        "width": 2340,
-        "height": 1080,
-        "touch": true,
-        "size": 6.5
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Chrome",
-      "version": "101.0.0",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "101.0.4951.61",
       "manufacturer": "google"
     }
   }

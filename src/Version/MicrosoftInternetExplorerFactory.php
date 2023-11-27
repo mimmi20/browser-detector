@@ -20,9 +20,9 @@ final class MicrosoftInternetExplorerFactory implements MicrosoftInternetExplore
     public function __invoke(LoggerInterface $logger): MicrosoftInternetExplorer
     {
         return new MicrosoftInternetExplorer(
-            $logger,
-            new VersionBuilder($logger),
-            new Trident($logger, new VersionBuilder($logger)),
+            logger: $logger,
+            versionBuilder: new VersionBuilder($logger),
+            trident: new Trident(logger: $logger, versionBuilder: new VersionBuilder($logger)),
         );
     }
 }

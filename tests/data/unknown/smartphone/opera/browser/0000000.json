@@ -4075,48 +4075,6 @@
   },
   {
     "headers": {
-      "user-agent": "Opera/9.80 (Macintosh; Intel Mac OS X; Opera Mobi/3730; U; en) Presto/2.4.18 Version/10.00"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Mobile Phone",
-      "marketingName": "general Mobile Phone",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Mac OS X",
-      "marketingName": "Mac OS X",
-      "version": null,
-      "manufacturer": "apple"
-    },
-    "client": {
-      "name": "Opera Mobile",
-      "version": "10.00.0",
-      "manufacturer": "opera",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.4.18",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Opera/9.80 (Android; Linux; Opera Mobi/ADR-1012272315; U; pl) Presto/2.7.60 Version/10.5"
     },
     "device": {
@@ -4159,7 +4117,7 @@
   },
   {
     "headers": {
-      "user-agent": "Opera/9.80 (Macintosh; Intel Mac OS X; Opera Mobi/27; U; en) Presto/2.4.18 Version/10.00"
+      "user-agent": "Opera/9.80 (S60; SymbOS; Opera Mobi/751; U; ru) Presto/2.5.28 Version/10.1"
     },
     "device": {
       "architecture": null,
@@ -4181,10 +4139,52 @@
       "bits": null
     },
     "os": {
-      "name": "Mac OS X",
-      "marketingName": "Mac OS X",
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
       "version": null,
-      "manufacturer": "apple"
+      "manufacturer": "symbian-foundation"
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "version": "10.1.0",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.5.28",
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/9.80 (S60; SymbOS; Opera Mobi/498; U; sv) Presto/2.4.18 Version/10.00"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Mobile Phone",
+      "marketingName": "general Mobile Phone",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "symbian-foundation"
     },
     "client": {
       "name": "Opera Mobile",

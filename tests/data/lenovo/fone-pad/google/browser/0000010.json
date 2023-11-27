@@ -1,6 +1,132 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; Lenovo A7-60HC) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.99 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "A7-60HC",
+      "marketingName": "A7-60HC",
+      "manufacturer": "lenovo",
+      "brand": "medion",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 7
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "71.0.3578.99",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "71.0.3578.99",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.1; Lenovo TB-X704L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36 comdirect/1.0 (appVersion:19.11.0;deviceType:mobile)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "TB-X704L",
+      "marketingName": "Tab 4 10 Plus 10.1",
+      "manufacturer": "lenovo",
+      "brand": "lenovo",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": 10.1
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.1.1",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "78.0.3904.108",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "78.0.3904.108",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; Lenovo TB-X304L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.96 Safari/537.36 comdirect/1.0 (appVersion:19.11.0;deviceType:mobile)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "TB-X304L",
+      "marketingName": "Tab 4 10 HD",
+      "manufacturer": "lenovo",
+      "brand": "lenovo",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 10.1
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.1.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "78.0.3904.96",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "78.0.3904.96",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 5.0.1; Lenovo TAB 2 A10-70L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36 comdirect/1.0 (appVersion:19.11.0;deviceName:nokia 2;deviceType:mobile)"
     },
     "device": {
@@ -1550,6 +1676,48 @@
     "engine": {
       "name": "Blink",
       "version": "58.0.3029.83",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1; Lenovo TAB 2 A8-50LC Build/LMY47D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.91 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "A8-50LC",
+      "marketingName": "Tab 2 A8-50 LTE",
+      "manufacturer": "lenovo",
+      "brand": "lenovo",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 8
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "55.0.2883.91",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "55.0.2883.91",
       "manufacturer": "google"
     }
   },
@@ -4028,174 +4196,6 @@
     "engine": {
       "name": "Blink",
       "version": "79.0.3945.116",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.1; Lenovo TB-X304L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.136 Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "TB-X304L",
-      "marketingName": "Tab 4 10 HD",
-      "manufacturer": "lenovo",
-      "brand": "lenovo",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1280,
-        "height": 800,
-        "touch": true,
-        "size": 10.1
-      },
-      "type": "fone-pad",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "7.1.1",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Chrome",
-      "version": "79.0.3945.136",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "79.0.3945.136",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.0.1; YOGA Tablet 2-830L Build/LRX22C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "830L",
-      "marketingName": "Yoga Tablet 2 8.0",
-      "manufacturer": "lenovo",
-      "brand": "lenovo",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1920,
-        "height": 1200,
-        "touch": true,
-        "size": 8
-      },
-      "type": "fone-pad",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.0.1",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Chrome",
-      "version": "67.0.3396.87",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "67.0.3396.87",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; Lenovo TB-8703N Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.154 Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "TB-8703N",
-      "marketingName": "Tab 3 8.0 Plus",
-      "manufacturer": "lenovo",
-      "brand": "medion",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1920,
-        "height": 1200,
-        "touch": true,
-        "size": 8
-      },
-      "type": "fone-pad",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "6.0.1",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Chrome",
-      "version": "42.0.2311.154",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "42.0.2311.154",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 6.0; Lenovo TB3-730M Build/MRA58K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/46.0.2490.76 Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "TB3-730M",
-      "marketingName": "Tab3 7 LTE",
-      "manufacturer": "lenovo",
-      "brand": "lenovo",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1024,
-        "height": 600,
-        "touch": true,
-        "size": 7
-      },
-      "type": "fone-pad",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "6.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Android WebView",
-      "version": "46.0.2490.76",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "46.0.2490.76",
       "manufacturer": "google"
     }
   }

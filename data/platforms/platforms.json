@@ -271,8 +271,11 @@
     "marketingName": "Fedora Linux",
     "manufacturer": "redhat",
     "version": {
-      "class": null,
-      "search": null
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Fedora\\/[0-9\\.\\-]+\\.fc",
+        "Fedora"
+      ]
     }
   },
   "firefoxos": {
@@ -695,8 +698,10 @@
     "marketingName": "Redhat Linux",
     "manufacturer": "redhat",
     "version": {
-      "class": null,
-      "search": null
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Red Hat"
+      ]
     }
   },
   "remixos": {
@@ -835,8 +840,10 @@
     "marketingName": "Suse Linux",
     "manufacturer": "suse",
     "version": {
-      "class": null,
-      "search": null
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "SUSE"
+      ]
     }
   },
   "syllable": {
@@ -853,8 +860,10 @@
     "marketingName": "Symbian OS",
     "manufacturer": "symbian-foundation",
     "version": {
-      "class": null,
-      "search": null
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "SymbianOS"
+      ]
     }
   },
   "threadx": {
@@ -1021,9 +1030,11 @@
     "marketingName": "Windows CE",
     "manufacturer": "microsoft",
     "version": {
-      "class": null,
-      "search": null,
-      "value": "CE"
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Windows CE",
+        "WindowsCE"
+      ]
     }
   },
   "windows iot 10.0": {

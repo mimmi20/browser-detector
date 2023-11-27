@@ -20,8 +20,8 @@ final class RimOsFactory implements RimOsFactoryInterface
     public function __invoke(LoggerInterface $logger): RimOs
     {
         return new RimOs(
-            $logger,
-            new VersionBuilder($logger),
+            logger: $logger,
+            versionBuilder: new VersionBuilder($logger),
         );
     }
 }

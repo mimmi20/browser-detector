@@ -1165,5 +1165,537 @@
       "version": "118.0.0.0",
       "manufacturer": "google"
     }
+  },
+  {
+    "headers": {
+      "device-memory": "8",
+      "downlink": "8.95",
+      "dpr": "1.815000057220459",
+      "ect": "4g",
+      "rtt": "50",
+      "sec-ch-device-memory": "8",
+      "sec-ch-dpr": "1.815000057220459",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Chromium\";v=\"118\", \"Microsoft Edge\";v=\"118\", \"Not=A?Brand\";v=\"99\"",
+      "sec-ch-ua-arch": "\"x86\"",
+      "sec-ch-ua-bitness": "\"64\"",
+      "sec-ch-ua-full-version": "\"118.0.2088.61\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-model": "\"\"",
+      "sec-ch-ua-platform": "\"Windows\"",
+      "sec-ch-ua-platform-version": "\"14.0.0\"",
+      "sec-ch-viewport-height": "497",
+      "sec-ch-viewport-width": "1053",
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "same-origin",
+      "sec-fetch-user": "?1",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 Edg/118.0.2088.61",
+      "viewport-width": "1053"
+    },
+    "device": {
+      "architecture": "x86",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": null,
+      "brand": null,
+      "dualOrientation": false,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": null,
+        "size": null
+      },
+      "type": null,
+      "ismobile": false,
+      "istv": false,
+      "bits": 64
+    },
+    "os": {
+      "name": "Windows",
+      "marketingName": "Windows",
+      "version": "14.0.0",
+      "manufacturer": "microsoft"
+    },
+    "client": {
+      "name": "Edge Mobile",
+      "version": "118.0.0",
+      "manufacturer": "microsoft",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "118.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "2",
+      "downlink": "9.7",
+      "dpr": "4",
+      "ect": "4g",
+      "rtt": "50",
+      "sec-ch-device-memory": "2",
+      "sec-ch-dpr": "4",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Chromium\";v=\"118\", \"Microsoft Edge\";v=\"118\", \"Not=A?Brand\";v=\"99\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version": "\"118.0.2088.58\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"SM-G925F\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"7.0.0\"",
+      "sec-ch-viewport-height": "512",
+      "sec-ch-viewport-width": "360",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Mobile Safari/537.36 EdgA/118.0.2088.58",
+      "viewport-width": "360",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": null,
+      "brand": null,
+      "dualOrientation": false,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": null,
+        "size": null
+      },
+      "type": null,
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Edge Mobile",
+      "version": "118.0.0",
+      "manufacturer": "microsoft",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "118.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "4",
+      "downlink": "9.1",
+      "dpr": "1.65",
+      "ect": "4g",
+      "rtt": "150",
+      "sec-ch-device-memory": "4",
+      "sec-ch-dpr": "1.65",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Microsoft Edge\";v=\"117\", \"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"117\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version": "\"117.0.2045.53\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-model": "\"Lenovo YT-X705F\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"10.0.0\"",
+      "sec-ch-viewport-height": "996",
+      "sec-ch-viewport-width": "728",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36 EdgA/117.0.2045.53",
+      "viewport-width": "728",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": null,
+      "brand": null,
+      "dualOrientation": false,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": null,
+        "size": null
+      },
+      "type": null,
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Edge Mobile",
+      "version": "117.0.0",
+      "manufacturer": "microsoft",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "117.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "4",
+      "downlink": "9.1",
+      "dpr": "1",
+      "ect": "4g",
+      "rtt": "200",
+      "sec-ch-device-memory": "4",
+      "sec-ch-dpr": "1",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-prefers-reduced-transparency": "no-preference",
+      "sec-ch-ua": "\"Microsoft Edge\";v=\"119\", \"Chromium\";v=\"119\", \"Not?A_Brand\";v=\"24\"",
+      "sec-ch-ua-arch": "\"x86\"",
+      "sec-ch-ua-bitness": "\"64\"",
+      "sec-ch-ua-full-version": "\"119.0.2151.72\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-model": "\"\"",
+      "sec-ch-ua-platform": "\"Windows\"",
+      "sec-ch-ua-platform-version": "\"10.0.0\"",
+      "sec-ch-viewport-height": "996",
+      "sec-ch-viewport-width": "1895",
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "same-origin",
+      "sec-fetch-user": "?1",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 Edg/119.0.0.0",
+      "viewport-width": "1895"
+    },
+    "device": {
+      "architecture": "x86",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": null,
+      "brand": null,
+      "dualOrientation": false,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": null,
+        "size": null
+      },
+      "type": null,
+      "ismobile": false,
+      "istv": false,
+      "bits": 64
+    },
+    "os": {
+      "name": "Windows",
+      "marketingName": "Windows",
+      "version": "10.0.0",
+      "manufacturer": "microsoft"
+    },
+    "client": {
+      "name": "Edge Mobile",
+      "version": "119.0.0",
+      "manufacturer": "microsoft",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "119.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "8",
+      "downlink": "1.55",
+      "dpr": "1",
+      "ect": "3g",
+      "rtt": "1000",
+      "sec-ch-device-memory": "8",
+      "sec-ch-dpr": "1",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-prefers-reduced-transparency": "no-preference",
+      "sec-ch-ua": "\"Microsoft Edge\";v=\"119\", \"Chromium\";v=\"119\", \"Not?A_Brand\";v=\"24\"",
+      "sec-ch-ua-arch": "\"x86\"",
+      "sec-ch-ua-bitness": "\"64\"",
+      "sec-ch-ua-full-version": "\"119.0.2151.58\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-model": "\"\"",
+      "sec-ch-ua-platform": "\"Windows\"",
+      "sec-ch-ua-platform-version": "\"15.0.0\"",
+      "sec-ch-viewport-height": "958",
+      "sec-ch-viewport-width": "1872",
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "same-origin",
+      "sec-fetch-user": "?1",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 Edg/119.0.0.0",
+      "viewport-width": "1872"
+    },
+    "device": {
+      "architecture": "x86",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": null,
+      "brand": null,
+      "dualOrientation": false,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": null,
+        "size": null
+      },
+      "type": null,
+      "ismobile": false,
+      "istv": false,
+      "bits": 64
+    },
+    "os": {
+      "name": "Windows",
+      "marketingName": "Windows",
+      "version": "15.0.0",
+      "manufacturer": "microsoft"
+    },
+    "client": {
+      "name": "Edge Mobile",
+      "version": "119.0.0",
+      "manufacturer": "microsoft",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "119.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "8",
+      "downlink": "10",
+      "dpr": "1.4479166269302368",
+      "ect": "4g",
+      "rtt": "50",
+      "sec-ch-device-memory": "8",
+      "sec-ch-dpr": "1.4479166269302368",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-prefers-reduced-transparency": "no-preference",
+      "sec-ch-ua": "\"Microsoft Edge\";v=\"119\", \"Chromium\";v=\"119\", \"Not?A_Brand\";v=\"24\"",
+      "sec-ch-ua-arch": "\"x86\"",
+      "sec-ch-ua-bitness": "\"64\"",
+      "sec-ch-ua-full-version": "\"119.0.2151.72\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-model": "\"\"",
+      "sec-ch-ua-platform": "\"Windows\"",
+      "sec-ch-ua-platform-version": "\"14.0.0\"",
+      "sec-ch-viewport-height": "624",
+      "sec-ch-viewport-width": "1279",
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "same-origin",
+      "sec-fetch-user": "?1",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 Edg/119.0.0.0",
+      "viewport-width": "1279"
+    },
+    "device": {
+      "architecture": "x86",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": null,
+      "brand": null,
+      "dualOrientation": false,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": null,
+        "size": null
+      },
+      "type": null,
+      "ismobile": false,
+      "istv": false,
+      "bits": 64
+    },
+    "os": {
+      "name": "Windows",
+      "marketingName": "Windows",
+      "version": "14.0.0",
+      "manufacturer": "microsoft"
+    },
+    "client": {
+      "name": "Edge Mobile",
+      "version": "119.0.0",
+      "manufacturer": "microsoft",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "119.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "4",
+      "downlink": "8.85",
+      "dpr": "2.125",
+      "ect": "4g",
+      "rtt": "100",
+      "sec-ch-device-memory": "4",
+      "sec-ch-dpr": "2.125",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Chromium\";v=\"118\", \"Microsoft Edge\";v=\"118\", \"Not=A?Brand\";v=\"99\"",
+      "sec-ch-ua-arch": "\"x86\"",
+      "sec-ch-ua-bitness": "\"64\"",
+      "sec-ch-ua-full-version": "\"118.0.2088.66\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-model": "\"\"",
+      "sec-ch-ua-platform": "\"Linux\"",
+      "sec-ch-ua-platform-version": "\"\"",
+      "sec-ch-viewport-height": "1350",
+      "sec-ch-viewport-width": "980",
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "same-origin",
+      "sec-fetch-user": "?1",
+      "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 Edg/118.0.2088.66",
+      "viewport-width": "980"
+    },
+    "device": {
+      "architecture": "x86",
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": null,
+      "brand": null,
+      "dualOrientation": false,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": null,
+        "size": null
+      },
+      "type": null,
+      "ismobile": false,
+      "istv": false,
+      "bits": 64
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation"
+    },
+    "client": {
+      "name": "Edge Mobile",
+      "version": "118.0.0",
+      "manufacturer": "microsoft",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "118.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "4",
+      "downlink": "9.1",
+      "dpr": "2.625",
+      "ect": "4g",
+      "rtt": "50",
+      "save-data": "on",
+      "sec-ch-device-memory": "4",
+      "sec-ch-dpr": "2.625",
+      "sec-ch-prefers-color-scheme": "dark",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Chromium\";v=\"118\", \"Microsoft Edge\";v=\"118\", \"Not=A?Brand\";v=\"99\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version": "\"118.0.2088.58\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"Nokia 6.2\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"11.0.0\"",
+      "sec-ch-viewport-height": "740",
+      "sec-ch-viewport-width": "412",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Mobile Safari/537.36 EdgA/118.0.2088.58",
+      "viewport-width": "412",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": null,
+      "brand": null,
+      "dualOrientation": false,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": null,
+        "size": null
+      },
+      "type": null,
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Edge Mobile",
+      "version": "118.0.0",
+      "manufacturer": "microsoft",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "118.0.0.0",
+      "manufacturer": "google"
+    }
   }
 ]

@@ -1,6 +1,90 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; W-P611-EEA) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "W-P611-EEA",
+      "marketingName": "View 3 Pro",
+      "manufacturer": "wiko",
+      "brand": "wiko",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.26
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "106.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "106.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; W-V680-EEA) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "W-V680-EEA",
+      "marketingName": "Y81",
+      "manufacturer": "wiko",
+      "brand": "wiko",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1520,
+        "height": 720,
+        "touch": true,
+        "size": 6.2
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "81.0.4044.138",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "81.0.4044.138",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; W-V600) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Mobile Safari/537.36"
     },
     "device": {
@@ -4112,90 +4196,6 @@
     "engine": {
       "name": "Blink",
       "version": "114.0.5735.196",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10) plus Build/QPZ30.30-Q3-38-69; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.138 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Plus",
-      "marketingName": "Plus",
-      "manufacturer": "wiko",
-      "brand": "wiko",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 5
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Chrome",
-      "version": "115.0.5790.138",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "115.0.5790.138",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; W-V680-EEA Build/QP1A.190711.020) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.138 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "W-V680-EEA",
-      "marketingName": "Y81",
-      "manufacturer": "wiko",
-      "brand": "wiko",
-      "dualOrientation": true,
-      "simCount": 2,
-      "display": {
-        "width": 1520,
-        "height": 720,
-        "touch": true,
-        "size": 6.2
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Chrome",
-      "version": "115.0.5790.138",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "115.0.5790.138",
       "manufacturer": "google"
     }
   }

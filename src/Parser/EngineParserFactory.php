@@ -31,7 +31,7 @@ final class EngineParserFactory implements EngineParserFactoryInterface
     public function __invoke(): EngineParserInterface
     {
         return new EngineParser(
-            new RulefileParser($this->logger),
+            fileParser: new RulefileParser(logger: $this->logger),
         );
     }
 }

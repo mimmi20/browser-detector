@@ -9,8 +9,8 @@
       "marketingName": "Macintosh",
       "manufacturer": "apple",
       "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -51,8 +51,8 @@
       "marketingName": "Macintosh",
       "manufacturer": "apple",
       "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -93,8 +93,8 @@
       "marketingName": "Macintosh",
       "manufacturer": "apple",
       "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -135,8 +135,8 @@
       "marketingName": "Macintosh",
       "manufacturer": "apple",
       "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -177,8 +177,8 @@
       "marketingName": "Macintosh",
       "manufacturer": "apple",
       "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -206,6 +206,48 @@
     "engine": {
       "name": "Blink",
       "version": "110.0.5481.177",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Evernote/10.65.3 Chrome/116.0.5845.82 Electron/26.0.0 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "macOS",
+      "marketingName": "macOS",
+      "version": "10.15.7",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "Evernote App",
+      "version": "10.65.3",
+      "manufacturer": "evernote",
+      "type": "pim",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "116.0.5845.82",
       "manufacturer": "google"
     }
   }

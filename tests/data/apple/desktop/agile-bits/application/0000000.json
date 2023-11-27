@@ -9,8 +9,8 @@
       "marketingName": "MacBook",
       "manufacturer": "apple",
       "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -51,8 +51,8 @@
       "marketingName": "MacBook Pro",
       "manufacturer": "apple",
       "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -93,8 +93,8 @@
       "marketingName": "Mac Mini",
       "manufacturer": "apple",
       "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -135,8 +135,8 @@
       "marketingName": "MacPro",
       "manufacturer": "apple",
       "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -173,17 +173,17 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "MacBook Pro",
-      "marketingName": "MacBook Pro",
+      "deviceName": "MacBook Pro 5,1",
+      "marketingName": "MacBook Pro 15\" (2008)",
       "manufacturer": "apple",
       "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
         "touch": false,
-        "size": null
+        "size": 15
       },
       "type": "desktop",
       "ismobile": false,
@@ -219,8 +219,8 @@
       "marketingName": "iMac",
       "manufacturer": "apple",
       "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -253,21 +253,63 @@
   },
   {
     "headers": {
-      "user-agent": "1PasswordThumbs/1 CFNetwork/520.3.2 Darwin/11.3.0 (x86_64) (MacBookAir4%2C2)"
+      "user-agent": "1PasswordThumbs/1 CFNetwork/454.11.12 Darwin/10.7.0 (i386) (MacBookPro4%2C1)"
     },
     "device": {
       "architecture": null,
-      "deviceName": "MacBook Air",
-      "marketingName": "MacBook Air",
+      "deviceName": "MacBook Pro 4,1",
+      "marketingName": "MacBook Pro 15\" (2008)",
       "manufacturer": "apple",
       "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
         "touch": false,
-        "size": null
+        "size": 15
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": "10.6.7",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "1PasswordThumbs",
+      "version": "1.0.0",
+      "manufacturer": "agile-bits",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "454.11.12",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "1PasswordThumbs/1 CFNetwork/520.3.2 Darwin/11.3.0 (x86_64) (MacBookAir4%2C2)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "MacBook Air 4,2",
+      "marketingName": "MacBook Air 13\" (2011)",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 1440,
+        "height": 900,
+        "touch": false,
+        "size": 13.3
       },
       "type": "desktop",
       "ismobile": false,
@@ -299,17 +341,17 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "MacBook Air",
-      "marketingName": "MacBook Air",
+      "deviceName": "MacBook Air 4,1",
+      "marketingName": "MacBook Air 11\" (2011)",
       "manufacturer": "apple",
       "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 0,
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1366,
+        "height": 768,
         "touch": false,
-        "size": null
+        "size": 11.6
       },
       "type": "desktop",
       "ismobile": false,
@@ -337,21 +379,273 @@
   },
   {
     "headers": {
+      "user-agent": "1PasswordThumbs/1 CFNetwork/596.5 Darwin/12.5.0 (x86_64) (MacBookAir4%2C2)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "MacBook Air 4,2",
+      "marketingName": "MacBook Air 13\" (2011)",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 1440,
+        "height": 900,
+        "touch": false,
+        "size": 13.3
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": "10.8.5",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "1PasswordThumbs",
+      "version": "1.0.0",
+      "manufacturer": "agile-bits",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "596.5.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "1PasswordThumbs/1 CFNetwork/596.4.3 Darwin/12.4.0 (x86_64) (MacBookAir5%2C1)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "MacBook Air 5,1",
+      "marketingName": "MacBook Air 11\" (2012)",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 1366,
+        "height": 768,
+        "touch": false,
+        "size": 11.6
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": "10.8.4",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "1PasswordThumbs",
+      "version": "1.0.0",
+      "manufacturer": "agile-bits",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "596.4.3",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "1PasswordThumbs/1 CFNetwork/520.5.1 Darwin/11.4.2 (x86_64) (MacBookAir5%2C2)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "MacBook Air 5,2",
+      "marketingName": "MacBook Air 13\" (2012)",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 1440,
+        "height": 900,
+        "touch": false,
+        "size": 13.3
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": "10.7.5",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "1PasswordThumbs",
+      "version": "1.0.0",
+      "manufacturer": "agile-bits",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "520.5.1",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "1PasswordThumbs/1 CFNetwork/596.5 Darwin/12.5.0 (x86_64) (MacBookAir6%2C2)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "MacBook Air 6,2",
+      "marketingName": "MacBook Air 13\" (2013)",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 1440,
+        "height": 900,
+        "touch": false,
+        "size": 13.3
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": "10.8.5",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "1PasswordThumbs",
+      "version": "1.0.0",
+      "manufacturer": "agile-bits",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "596.5.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "1PasswordThumbs/1 CFNetwork/454.12.4 Darwin/10.8.0 (i386) (MacBookPro5%2C5)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "MacBook Pro 5,5",
+      "marketingName": "MacBook Pro 13\" (2009)",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": false,
+        "size": 13.3
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": "10.6.8",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "1PasswordThumbs",
+      "version": "1.0.0",
+      "manufacturer": "agile-bits",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "454.12.4",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "1PasswordThumbs/1 CFNetwork/596.5 Darwin/12.5.0 (x86_64) (MacBookPro9%2C1)"
     },
     "device": {
       "architecture": null,
-      "deviceName": "MacBook Pro",
-      "marketingName": "MacBook Pro",
+      "deviceName": "MacBook Pro 9,1",
+      "marketingName": "MacBook Pro 15\" (2012)",
       "manufacturer": "apple",
       "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 0,
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1440,
+        "height": 900,
         "touch": false,
-        "size": null
+        "size": 15.4
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": "10.8.5",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "1PasswordThumbs",
+      "version": "1.0.0",
+      "manufacturer": "agile-bits",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "596.5.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "1PasswordThumbs/1 CFNetwork/596.5 Darwin/12.5.0 (x86_64) (MacBookPro9%2C2)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "MacBook Pro 9,2",
+      "marketingName": "MacBook Pro 13\" (2012)",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": false,
+        "size": 13.3
       },
       "type": "desktop",
       "ismobile": false,
@@ -383,17 +677,17 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "MacBook Pro",
-      "marketingName": "MacBook Pro",
+      "deviceName": "MacBook Pro 10,1",
+      "marketingName": "MacBook Pro 15\" (2012)",
       "manufacturer": "apple",
       "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 0,
       "display": {
-        "width": null,
-        "height": null,
+        "width": 2880,
+        "height": 1800,
         "touch": false,
-        "size": null
+        "size": 15.4
       },
       "type": "desktop",
       "ismobile": false,
@@ -416,6 +710,48 @@
     "engine": {
       "name": "WebKit",
       "version": "673.0.3",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "1PasswordThumbs/1 CFNetwork/596.5 Darwin/12.5.0 (x86_64) (MacBookPro10%2C2)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "MacBook Pro 10,2",
+      "marketingName": "MacBook Pro 13\" (2012)",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 2560,
+        "height": 1600,
+        "touch": false,
+        "size": 13.3
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": "10.8.5",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "1PasswordThumbs",
+      "version": "1.0.0",
+      "manufacturer": "agile-bits",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "596.5.0",
       "manufacturer": "apple"
     }
   }

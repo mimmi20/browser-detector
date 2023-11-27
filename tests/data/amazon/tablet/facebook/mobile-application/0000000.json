@@ -2938,5 +2938,89 @@
       "version": "100.0.4896.127",
       "manufacturer": "google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; KFMAWI Build/PS7327.3336N; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/114.0.5735.220 Safari/537.36 [FB_IAB/FB4A;FBAV/439.0.0.44.117;]"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "KFMAWI",
+      "marketingName": "Fire HD 10 (2019)",
+      "manufacturer": "amazon",
+      "brand": "amazon",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": 10.1
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Facebook App",
+      "version": "439.0.0.44.117",
+      "manufacturer": "facebook",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "114.0.5735.220",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; KFTRWI Build/PS7328.3443N; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/114.0.5735.220 Safari/537.36 Instagram 308.0.0.36.109 Android (28/9; 240dpi; 1200x1848; Amazon; KFTRWI; trona; mt8183; de_DE; 534961952)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "KFTRWI",
+      "marketingName": "Fire HD 10 (2021)",
+      "manufacturer": "amazon",
+      "brand": "amazon",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": 10.1
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Instagram App",
+      "version": "308.0.0.36.109",
+      "manufacturer": "facebook",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "114.0.5735.220",
+      "manufacturer": "google"
+    }
   }
 ]

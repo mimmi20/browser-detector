@@ -371,6 +371,48 @@
     },
     "client": {
       "name": "Bing Search",
+      "version": null,
+      "manufacturer": "microsoft",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "95.0.4638.69",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; M2010J19SY Build/QKQ1.200830.002; ) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/95.0.4638.69 Mobile Safari/537.36 EdgA/95.0.1020.48 BingSapphire/22.5.400425302"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "M2010J19SY",
+      "marketingName": "Redmi 9T",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.53
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Bing Search",
       "version": "22.5.400425302",
       "manufacturer": "microsoft",
       "type": "application",
@@ -414,6 +456,53 @@
     "client": {
       "name": "Bing Search",
       "version": "23.2.400829306",
+      "manufacturer": "microsoft",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "95.0.4638.69",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "cross-site",
+      "sec-fetch-user": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; 2203129G Build/SKQ1.211006.001; ) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/95.0.4638.69 Mobile Safari/537.36  BingSapphire/23.2.400829306",
+      "x-requested-with": "com.microsoft.bing"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "2203129G",
+      "marketingName": "12 Lite 5G",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.55
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Bing Search",
+      "version": null,
       "manufacturer": "microsoft",
       "type": "application",
       "isbot": false
@@ -547,6 +636,95 @@
     "engine": {
       "name": "Blink",
       "version": "113.0.5672.162",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; 22081212UG Build/TKQ1.220829.002; ) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/114.0.0.0 Mobile Safari/537.36 BingSapphire/27.2.411013306"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "22081212UG",
+      "marketingName": "12T Pro",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2712,
+        "height": 1220,
+        "touch": true,
+        "size": 6.67
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Bing Search",
+      "version": "27.2.411013306",
+      "manufacturer": "microsoft",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "114.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "none",
+      "sec-fetch-user": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; 22081212UG Build/TKQ1.220829.002; ) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/114.0.0.0 Mobile Safari/537.36 BingSapphire/27.2.411013306",
+      "x-requested-with": "com.microsoft.bing"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "22081212UG",
+      "marketingName": "12T Pro",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2712,
+        "height": 1220,
+        "touch": true,
+        "size": 6.67
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Bing Search",
+      "version": null,
+      "manufacturer": "microsoft",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "114.0.0.0",
       "manufacturer": "google"
     }
   }

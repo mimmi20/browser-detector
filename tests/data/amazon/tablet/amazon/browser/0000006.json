@@ -1,48 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; KFKAWI) AppleWebKit/537.36 (KHTML, like Gecko) Silk/83.1.130 like Chrome/83.0.4103.101 Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "KFKAWI",
-      "marketingName": "Fire HD 8 (2018)",
-      "manufacturer": "amazon",
-      "brand": "amazon",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1280,
-        "height": 800,
-        "touch": true,
-        "size": 8
-      },
-      "type": "tablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "5.1.1",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Silk",
-      "version": "83.1.130",
-      "manufacturer": "amazon",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "83.0.4103.101",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; KFAUWI) AppleWebKit/537.36 (KHTML, like Gecko) Silk/83.1.130 like Chrome/83.0.4103.101 Safari/537.36 comdirect/1.0 (appVersion:20.6.3;deviceType:mobile)"
     },
     "device": {
@@ -4196,6 +4154,48 @@
     "engine": {
       "name": "Blink",
       "version": "90.0.4430.210",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; KFGIWI) AppleWebKit/537.36 (KHTML, like Gecko) Silk/91.1.153 like Chrome/91.0.4472.120 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "KFGIWI",
+      "marketingName": "Fire HD 8 (2016)",
+      "manufacturer": "amazon",
+      "brand": "amazon",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 8
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.1",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Silk",
+      "version": "91.1.153",
+      "manufacturer": "amazon",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "91.0.4472.120",
       "manufacturer": "google"
     }
   }

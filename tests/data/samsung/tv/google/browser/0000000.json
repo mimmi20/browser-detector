@@ -65,8 +65,8 @@
       "bits": null
     },
     "os": {
-      "name": "Maemo",
-      "marketingName": "Maemo",
+      "name": "Linux",
+      "marketingName": "Linux",
       "version": null,
       "manufacturer": "linux-foundation"
     },
@@ -779,8 +779,8 @@
       "bits": null
     },
     "os": {
-      "name": "Maemo",
-      "marketingName": "Maemo",
+      "name": "Linux",
+      "marketingName": "Linux",
       "version": null,
       "manufacturer": "linux-foundation"
     },
@@ -947,8 +947,8 @@
       "bits": null
     },
     "os": {
-      "name": "Maemo",
-      "marketingName": "Maemo",
+      "name": "Linux",
+      "marketingName": "Linux",
       "version": null,
       "manufacturer": "linux-foundation"
     },
@@ -1424,6 +1424,48 @@
     "engine": {
       "name": "Blink",
       "version": "79.0.3945.79",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 HbbTV/1.6.1 (+DRM; LGE/ATMACA/AXEN; AX32DAL540-0276; WEBOS22 03.34.35; W22_K8AP; DTV_C22L;)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Smart TV",
+      "marketingName": "Smart TV",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "webOS",
+      "marketingName": "webOS",
+      "version": null,
+      "manufacturer": "lg"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "87.0.4280.88",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "87.0.4280.88",
       "manufacturer": "google"
     }
   }

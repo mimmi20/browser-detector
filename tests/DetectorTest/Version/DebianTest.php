@@ -92,6 +92,10 @@ final class DebianTest extends TestCase
                 'Mozilla/5.0 (Macintosh; ARM Mac OS X) AppleWebKit/538.15 (KHTML, like Gecko) Safari/538.15 Version/6.0 Debian/8.0 (1:3.8.2.0-0) Epiphany/3.8.2',
                 '8.0.0',
             ],
+            [
+                'Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.0.3) Gecko/2008092814 (Debian-3.0.1-1)',
+                '3.0.1.1',
+            ],
         ];
     }
 

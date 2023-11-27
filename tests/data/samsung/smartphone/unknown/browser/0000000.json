@@ -1933,6 +1933,49 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.2.2; zh-cn; Galaxy Nexus Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/5.0 Mb2345Browser/4.0 Mobile Safari/534.30",
+      "x-requested-with": "com.browser2345"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Galaxy Nexus",
+      "marketingName": "Galaxy Nexus",
+      "manufacturer": "samsung",
+      "brand": "google",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 4.65
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.2.2",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "2345 Browser",
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.30.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; SM-J120FN Build/LMY47X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.101 Mobile Safari/537.36 (Ecosia android@62.0.3202.101)"
     },
     "device": {
@@ -4142,48 +4185,6 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "9.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Ecosia",
-      "version": "65.0.3325.230",
-      "manufacturer": "unknown",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "65.0.3325.230",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; SM-G390F Build/M1AJQ) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.230 Mobile Safari/537.36 (Ecosia android@65.0.3325.230)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SM-G390F",
-      "marketingName": "Galaxy Xcover 4",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 5
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "8.1.0",
       "manufacturer": "google"
     },
     "client": {

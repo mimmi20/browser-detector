@@ -26,7 +26,7 @@ final class CompanyLoaderFactory implements CompanyLoaderFactoryInterface
     {
         if ($this->loader === null) {
             $this->loader = new CompanyLoader(
-                new Data(self::DATA_PATH, 'json'),
+                initData: new Data(self::DATA_PATH, 'json'),
             );
         }
 

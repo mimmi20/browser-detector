@@ -20,8 +20,8 @@ final class WindowsMobileOsFactory implements WindowsMobileOsFactoryInterface
     public function __invoke(LoggerInterface $logger): WindowsMobileOs
     {
         return new WindowsMobileOs(
-            $logger,
-            new VersionBuilder($logger),
+            logger: $logger,
+            versionBuilder: new VersionBuilder($logger),
         );
     }
 }

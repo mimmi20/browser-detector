@@ -82,5 +82,49 @@
       "version": "97.0.4692.98",
       "manufacturer": "google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0; P9000 Build/MRA58K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/44.0.2403.119 Mobile Safari/537.36",
+      "x-requested-with": "com.android.browser",
+      "x-wap-profile": "http://218.249.47.94/Xianghe/MTK_Phone_KK_UAprofile.xml"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "P9000",
+      "marketingName": "P9000",
+      "manufacturer": "elephone",
+      "brand": "elephone",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Android WebView",
+      "version": null,
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "44.0.2403.119",
+      "manufacturer": "google"
+    }
   }
 ]

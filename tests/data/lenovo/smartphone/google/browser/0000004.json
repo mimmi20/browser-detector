@@ -1639,48 +1639,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.3.3; en-; Lenovo A60 Build/GRI40) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "A60",
-      "marketingName": "Lephone A60",
-      "manufacturer": "lenovo",
-      "brand": "lenovo",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "2.3.3",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Android Webkit",
-      "version": "4.0.0",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "533.1.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; U; Android 2.3.6; en-gb; Lenovo A60+ Build/LenovoLePhone) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
     },
     "device": {
@@ -4197,6 +4155,48 @@
       "name": null,
       "version": null,
       "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Lenovo-A65/S204 Linux/2.6.35.7 Android/2.3 Release/12.07.2011 Browser/AppleWebKit533.1 Profile/ Configuration/"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "A65",
+      "marketingName": "A65",
+      "manufacturer": "lenovo",
+      "brand": "lenovo",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 480,
+        "height": 320,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "2.3.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Android Webkit",
+      "version": null,
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "533.1.0",
+      "manufacturer": "apple"
     }
   }
 ]

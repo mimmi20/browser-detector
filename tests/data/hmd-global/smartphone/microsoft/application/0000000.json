@@ -413,6 +413,48 @@
     },
     "client": {
       "name": "Bing Search",
+      "version": null,
+      "manufacturer": "microsoft",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "87.0.4280.141",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; Nokia 7.2 Build/QKQ1.191014.001; ) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/87.0.4280.141 Mobile Safari/537.36 BingSapphire/22.7.400602306"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "7.2",
+      "marketingName": "7.2",
+      "manufacturer": "hmd-global",
+      "brand": "nokia",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 2280,
+        "height": 1080,
+        "touch": true,
+        "size": 6.3
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Bing Search",
       "version": "22.7.400602306",
       "manufacturer": "microsoft",
       "type": "application",
@@ -582,6 +624,124 @@
     "client": {
       "name": "Bing Search",
       "version": "25.8.410717310",
+      "manufacturer": "microsoft",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "109.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "2",
+      "downlink": "8.95",
+      "dpr": "3.375",
+      "ect": "4g",
+      "rtt": "150",
+      "sec-ch-device-memory": "2",
+      "sec-ch-dpr": "3.375",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-viewport-height": "1213",
+      "sec-ch-viewport-width": "980",
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "cross-site",
+      "sec-fetch-user": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; Nokia 6.1 Build/QKQ1.190828.002; ) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/114.0.0.0 Mobile Safari/537.36 BingSapphire/26.0.410726302",
+      "viewport-width": "980",
+      "x-requested-with": "com.microsoft.bing"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "6.1",
+      "marketingName": "6.1",
+      "manufacturer": "hmd-global",
+      "brand": "nokia",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Bing Search",
+      "version": null,
+      "manufacturer": "microsoft",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "114.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "2",
+      "downlink": "0.6",
+      "dpr": "3.375",
+      "ect": "3g",
+      "rtt": "350",
+      "sec-ch-device-memory": "2",
+      "sec-ch-dpr": "3.375",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-viewport-height": "1213",
+      "sec-ch-viewport-width": "980",
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "same-origin",
+      "sec-fetch-user": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; Nokia 6.1 Build/QKQ1.190828.002; ) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/109.0.0.0 Mobile Safari/537.36 BingSapphire/25.8.410717310",
+      "viewport-width": "980",
+      "x-requested-with": "com.microsoft.bing"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "6.1",
+      "marketingName": "6.1",
+      "manufacturer": "hmd-global",
+      "brand": "nokia",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Bing Search",
+      "version": null,
       "manufacturer": "microsoft",
       "type": "application",
       "isbot": false

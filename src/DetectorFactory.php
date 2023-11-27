@@ -50,63 +50,66 @@ final class DetectorFactory
             $companyLoader = $companyLoaderFactory();
 
             $platformLoader = new PlatformLoader(
-                $this->logger,
-                new Data(PlatformLoader::DATA_PATH, 'json'),
-                $companyLoader,
-                new VersionBuilder($this->logger),
+                logger: $this->logger,
+                initData: new Data(PlatformLoader::DATA_PATH, 'json'),
+                companyLoader: $companyLoader,
+                versionBuilder: new VersionBuilder(logger: $this->logger),
             );
 
-            $platformParserFactory = new PlatformParserFactory($this->logger);
+            $platformParserFactory = new PlatformParserFactory(logger: $this->logger);
             $platformParser        = $platformParserFactory();
 
-            $deviceLoaderFactory = new DeviceLoaderFactory($this->logger, $companyLoader);
+            $deviceLoaderFactory = new DeviceLoaderFactory(
+                logger: $this->logger,
+                companyLoader: $companyLoader,
+            );
 
-            $deviceParserFactory = new DeviceParserFactory($this->logger);
+            $deviceParserFactory = new DeviceParserFactory(logger: $this->logger);
             $deviceParser        = $deviceParserFactory();
 
             $engineLoader = new EngineLoader(
-                $this->logger,
-                new Data(EngineLoader::DATA_PATH, 'json'),
-                $companyLoader,
-                new VersionBuilder($this->logger),
+                logger: $this->logger,
+                initData: new Data(EngineLoader::DATA_PATH, 'json'),
+                companyLoader: $companyLoader,
+                versionBuilder: new VersionBuilder(logger: $this->logger),
             );
 
-            $engineParserFactory = new EngineParserFactory($this->logger);
+            $engineParserFactory = new EngineParserFactory(logger: $this->logger);
             $engineParser        = $engineParserFactory();
 
             $browserLoader = new BrowserLoader(
-                $this->logger,
-                new Data(BrowserLoader::DATA_PATH, 'json'),
-                $companyLoader,
-                new TypeLoader(),
-                new VersionBuilder($this->logger),
+                logger: $this->logger,
+                initData: new Data(BrowserLoader::DATA_PATH, 'json'),
+                companyLoader: $companyLoader,
+                typeLoader: new TypeLoader(),
+                versionBuilder: new VersionBuilder(logger: $this->logger),
             );
 
-            $browserParserFactory = new BrowserParserFactory($this->logger);
+            $browserParserFactory = new BrowserParserFactory(logger: $this->logger);
             $browserParser        = $browserParserFactory();
 
             $normalizerFactory = new NormalizerFactory();
 
             $requestBuilder = new RequestBuilder(
-                $deviceParser,
-                $platformParser,
-                $browserParser,
-                $engineParser,
-                $normalizerFactory,
-                $browserLoader,
-                $platformLoader,
-                $engineLoader,
+                deviceParser: $deviceParser,
+                platformParser: $platformParser,
+                browserParser: $browserParser,
+                engineParser: $engineParser,
+                normalizerFactory: $normalizerFactory,
+                browserLoader: $browserLoader,
+                platformLoader: $platformLoader,
+                engineLoader: $engineLoader,
             );
 
             $this->detector = new Detector(
-                $this->logger,
-                new Cache($this->cache),
-                $requestBuilder,
-                $deviceLoaderFactory,
-                $platformLoader,
-                $browserLoader,
-                $engineLoader,
-                new VersionBuilderFactory(),
+                logger: $this->logger,
+                cache: new Cache(cache: $this->cache),
+                requestBuilder: $requestBuilder,
+                deviceLoaderFactory: $deviceLoaderFactory,
+                platformLoader: $platformLoader,
+                browserLoader: $browserLoader,
+                engineLoader: $engineLoader,
+                versionBuilderFactory: new VersionBuilderFactory(),
             );
         }
 

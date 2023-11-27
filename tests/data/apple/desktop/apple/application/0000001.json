@@ -1,6 +1,2946 @@
 [
   {
     "headers": {
+      "user-agent": "iCoreService (unknown version) CFNetwork/673.2.1 Darwin/13.1.0 (x86_64) (MacBookAir6%2C2)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "MacBook Air 6,2",
+      "marketingName": "MacBook Air 13\" (2013)",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 1440,
+        "height": 900,
+        "touch": false,
+        "size": 13.3
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": "10.9.1",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "CFNetwork",
+      "version": null,
+      "manufacturer": "apple",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "673.2.1",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "iCoreService (unknown version) CFNetwork/520.5.3 Darwin/11.4.2 (x86_64) (MacBookPro8%2C3)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "MacBook Pro 8,3",
+      "marketingName": "MacBook Pro 17\" (2011)",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": false,
+        "size": 17
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": "10.7.5",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "CFNetwork",
+      "version": null,
+      "manufacturer": "apple",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "520.5.3",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "WebLoadPerf (unknown version) CFNetwork/735 Darwin/14.3.0 (x86_64)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": "10.10.3",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "CFNetwork",
+      "version": null,
+      "manufacturer": "apple",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "735.0.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "iCoreService (unknown version) CFNetwork/673.2.1 Darwin/13.1.0 (x86_64) (MacBookPro10%2C2)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "MacBook Pro 10,2",
+      "marketingName": "MacBook Pro 13\" (2012)",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 2560,
+        "height": 1600,
+        "touch": false,
+        "size": 13.3
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": "10.9.1",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "CFNetwork",
+      "version": null,
+      "manufacturer": "apple",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "673.2.1",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "iCoreService (unknown version) CFNetwork/520.5.3 Darwin/11.4.2 (x86_64) (MacBookAir5%2C2)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "MacBook Air 5,2",
+      "marketingName": "MacBook Air 13\" (2012)",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 1440,
+        "height": 900,
+        "touch": false,
+        "size": 13.3
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": "10.7.5",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "CFNetwork",
+      "version": null,
+      "manufacturer": "apple",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "520.5.3",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "iCoreService (unknown version) CFNetwork/673.2.1 Darwin/13.1.0 (x86_64) (MacBookPro8%2C1)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "MacBook Pro 8,1",
+      "marketingName": "MacBook Pro 13\" (2011)",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": false,
+        "size": 13.3
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": "10.9.1",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "CFNetwork",
+      "version": null,
+      "manufacturer": "apple",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "673.2.1",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "iCoreService (unknown version) CFNetwork/454.12.4 Darwin/10.8.0 (i386) (Macmini4%2C1)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Mac Mini",
+      "marketingName": "Mac Mini",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": "10.6.8",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "CFNetwork",
+      "version": null,
+      "manufacturer": "apple",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "454.12.4",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "iCoreService (unknown version) CFNetwork/673.4 Darwin/13.4.0 (x86_64) (MacBookPro11%2C3)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "MacBook Pro 11,3",
+      "marketingName": "MacBook Pro 15\" (2013)",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 2880,
+        "height": 1800,
+        "touch": false,
+        "size": 15.4
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": "10.9.4",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "CFNetwork",
+      "version": null,
+      "manufacturer": "apple",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "673.4.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "MacAppStore/1.3 (Macintosh; OS X 10.9.5) AppleWebKit/537.78.2"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": "10.9.5",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "Mac AppStore App",
+      "version": "1.3.0",
+      "manufacturer": "apple",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.78.2",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "iCoreService (unknown version) CFNetwork/596.6.3 Darwin/12.6.0 (x86_64) (MacBookPro9%2C1)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "MacBook Pro 9,1",
+      "marketingName": "MacBook Pro 15\" (2012)",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 1440,
+        "height": 900,
+        "touch": false,
+        "size": 15.4
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": "10.8.0",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "CFNetwork",
+      "version": null,
+      "manufacturer": "apple",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "596.6.3",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "iCoreService (unknown version) CFNetwork/673.3 Darwin/13.3.0 (x86_64) (MacBookPro9%2C1)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "MacBook Pro 9,1",
+      "marketingName": "MacBook Pro 15\" (2012)",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 1440,
+        "height": 900,
+        "touch": false,
+        "size": 15.4
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": "10.9.3",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "CFNetwork",
+      "version": null,
+      "manufacturer": "apple",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "673.3.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "iCoreService (unknown version) CFNetwork/673.3 Darwin/13.4.0 (x86_64) (MacBookAir5%2C2)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "MacBook Air 5,2",
+      "marketingName": "MacBook Air 13\" (2012)",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 1440,
+        "height": 900,
+        "touch": false,
+        "size": 13.3
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": "10.9.4",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "CFNetwork",
+      "version": null,
+      "manufacturer": "apple",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "673.3.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "iCoreService (unknown version) CFNetwork/673.3 Darwin/13.3.0 (x86_64) (MacBookAir4%2C1)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "MacBook Air 4,1",
+      "marketingName": "MacBook Air 11\" (2011)",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 1366,
+        "height": 768,
+        "touch": false,
+        "size": 11.6
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": "10.9.3",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "CFNetwork",
+      "version": null,
+      "manufacturer": "apple",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "673.3.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "iCoreService (unknown version) CFNetwork/673.4 Darwin/13.3.0 (x86_64) (MacBookPro11%2C1)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "MacBook Pro 11,1",
+      "marketingName": "MacBook Pro 13\" (2013)",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 2560,
+        "height": 1600,
+        "touch": false,
+        "size": 13.3
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": "10.9.3",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "CFNetwork",
+      "version": null,
+      "manufacturer": "apple",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "673.4.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "iCoreService (unknown version) CFNetwork/673.3 Darwin/13.4.0 (x86_64) (MacBookPro7%2C1)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "MacBook Pro 7,1",
+      "marketingName": "MacBook Pro 13\" (2010)",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": false,
+        "size": 13.3
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": "10.9.4",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "CFNetwork",
+      "version": null,
+      "manufacturer": "apple",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "673.3.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "iCoreService (unknown version) CFNetwork/596.4.3 Darwin/12.4.1 (x86_64) (MacBookAir6%2C2)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "MacBook Air 6,2",
+      "marketingName": "MacBook Air 13\" (2013)",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 1440,
+        "height": 900,
+        "touch": false,
+        "size": 13.3
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": "10.8.4",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "CFNetwork",
+      "version": null,
+      "manufacturer": "apple",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "596.4.3",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "iCoreService (unknown version) CFNetwork/673.5 Darwin/13.4.0 (x86_64) (MacBookAir3%2C1)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "MacBook Air 3,1",
+      "marketingName": "MacBook Air 11\" (2010)",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 1366,
+        "height": 768,
+        "touch": false,
+        "size": 11.6
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": "10.9.4",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "CFNetwork",
+      "version": null,
+      "manufacturer": "apple",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "673.5.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "iCoreService (unknown version) CFNetwork/596.2.3 Darwin/12.2.1 (x86_64) (MacBookAir5%2C1)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "MacBook Air 5,1",
+      "marketingName": "MacBook Air 11\" (2012)",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 1366,
+        "height": 768,
+        "touch": false,
+        "size": 11.6
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": "10.8.2",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "CFNetwork",
+      "version": null,
+      "manufacturer": "apple",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "596.2.3",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "iCoreService (unknown version) CFNetwork/520.5.3 Darwin/11.4.2 (x86_64) (MacBookAir4%2C1)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "MacBook Air 4,1",
+      "marketingName": "MacBook Air 11\" (2011)",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 1366,
+        "height": 768,
+        "touch": false,
+        "size": 11.6
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": "10.7.5",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "CFNetwork",
+      "version": null,
+      "manufacturer": "apple",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "520.5.3",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "iCoreService (unknown version) CFNetwork/673.5 Darwin/13.4.0 (x86_64) (MacBookPro5%2C5)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "MacBook Pro 5,5",
+      "marketingName": "MacBook Pro 13\" (2009)",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": false,
+        "size": 13.3
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": "10.9.4",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "CFNetwork",
+      "version": null,
+      "manufacturer": "apple",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "673.5.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "iCoreService (unknown version) CFNetwork/673.5 Darwin/13.4.0 (x86_64) (MacBookAir5%2C1)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "MacBook Air 5,1",
+      "marketingName": "MacBook Air 11\" (2012)",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 1366,
+        "height": 768,
+        "touch": false,
+        "size": 11.6
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": "10.9.4",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "CFNetwork",
+      "version": null,
+      "manufacturer": "apple",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "673.5.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "iCoreService (unknown version) CFNetwork/454.12.4 Darwin/10.8.0 (x86_64) (MacBookPro8%2C1)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "MacBook Pro 8,1",
+      "marketingName": "MacBook Pro 13\" (2011)",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": false,
+        "size": 13.3
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": "10.6.8",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "CFNetwork",
+      "version": null,
+      "manufacturer": "apple",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "454.12.4",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "POP/0.24 CFNetwork/596.6.3 Darwin/12.5.0 (x86_64) (MacBookAir3%2C2)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "MacBook Air 3,2",
+      "marketingName": "MacBook Air 13\" (2010)",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 1440,
+        "height": 900,
+        "touch": false,
+        "size": 13.3
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": "10.8.5",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "CFNetwork",
+      "version": null,
+      "manufacturer": "apple",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "596.6.3",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "iCoreService (unknown version) CFNetwork/596.6.3 Darwin/12.5.0 (x86_64) (MacBookPro10%2C1)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "MacBook Pro 10,1",
+      "marketingName": "MacBook Pro 15\" (2012)",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 2880,
+        "height": 1800,
+        "touch": false,
+        "size": 15.4
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": "10.8.5",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "CFNetwork",
+      "version": null,
+      "manufacturer": "apple",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "596.6.3",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "iCoreService (unknown version) CFNetwork/596.6.3 Darwin/12.6.0 (x86_64) (MacBookAir3%2C1)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "MacBook Air 3,1",
+      "marketingName": "MacBook Air 11\" (2010)",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 1366,
+        "height": 768,
+        "touch": false,
+        "size": 11.6
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": "10.8.0",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "CFNetwork",
+      "version": null,
+      "manufacturer": "apple",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "596.6.3",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "iCoreService (unknown version) CFNetwork/520.5.3 Darwin/11.4.2 (x86_64) (MacBookAir5%2C1)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "MacBook Air 5,1",
+      "marketingName": "MacBook Air 11\" (2012)",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 1366,
+        "height": 768,
+        "touch": false,
+        "size": 11.6
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": "10.7.5",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "CFNetwork",
+      "version": null,
+      "manufacturer": "apple",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "520.5.3",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "iCoreService (unknown version) CFNetwork/520.5.3 Darwin/11.4.2 (x86_64) (MacBookAir3%2C2)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "MacBook Air 3,2",
+      "marketingName": "MacBook Air 13\" (2010)",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 1440,
+        "height": 900,
+        "touch": false,
+        "size": 13.3
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": "10.7.5",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "CFNetwork",
+      "version": null,
+      "manufacturer": "apple",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "520.5.3",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "iCoreService (unknown version) CFNetwork/520.5.3 Darwin/11.4.2 (x86_64) (MacBookPro9%2C1)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "MacBook Pro 9,1",
+      "marketingName": "MacBook Pro 15\" (2012)",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 1440,
+        "height": 900,
+        "touch": false,
+        "size": 15.4
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": "10.7.5",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "CFNetwork",
+      "version": null,
+      "manufacturer": "apple",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "520.5.3",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "iCoreService (unknown version) CFNetwork/520.5.3 Darwin/11.4.2 (x86_64) (MacBookPro9%2C2)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "MacBook Pro 9,2",
+      "marketingName": "MacBook Pro 13\" (2012)",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": false,
+        "size": 13.3
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": "10.7.5",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "CFNetwork",
+      "version": null,
+      "manufacturer": "apple",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "520.5.3",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "iCoreService (unknown version) CFNetwork/673.5 Darwin/13.4.0 (x86_64) (MacBookPro6%2C2)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "MacBook Pro 6,2",
+      "marketingName": "MacBook Pro 15\" (2010)",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 1440,
+        "height": 900,
+        "touch": false,
+        "size": 15.4
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": "10.9.4",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "CFNetwork",
+      "version": null,
+      "manufacturer": "apple",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "673.5.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "iCoreService (unknown version) CFNetwork/596.5 Darwin/12.5.0 (x86_64) (MacBookAir6%2C1)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "MacBook Air 6,1",
+      "marketingName": "MacBook Air 11\" (2013)",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 1366,
+        "height": 768,
+        "touch": false,
+        "size": 11.6
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": "10.8.5",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "CFNetwork",
+      "version": null,
+      "manufacturer": "apple",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "596.5.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "iCoreService (unknown version) CFNetwork/673.5 Darwin/13.4.0 (x86_64) (MacBookPro5%2C1)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "MacBook Pro 5,1",
+      "marketingName": "MacBook Pro 15\" (2008)",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": 15
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": "10.9.4",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "CFNetwork",
+      "version": null,
+      "manufacturer": "apple",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "673.5.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "iCoreService (unknown version) CFNetwork/454.12.4 Darwin/10.8.0 (i386) (MacBook7%2C1)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "MacBook 7,1",
+      "marketingName": "MacBook 13\" (2010)",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": false,
+        "size": 13.3
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": "10.6.8",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "CFNetwork",
+      "version": null,
+      "manufacturer": "apple",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "454.12.4",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "CFNetwork/330.4"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": null,
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "CFNetwork",
+      "version": null,
+      "manufacturer": "apple",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "330.4.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "CFNetwork/325.2"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Darwin",
+      "marketingName": "Darwin",
+      "version": null,
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "CFNetwork",
+      "version": null,
+      "manufacturer": "apple",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "325.2.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "CFNetwork/185.4"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Darwin",
+      "marketingName": "Darwin",
+      "version": null,
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "CFNetwork",
+      "version": null,
+      "manufacturer": "apple",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "185.4.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "CFNetwork/152.4"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Darwin",
+      "marketingName": "Darwin",
+      "version": null,
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "CFNetwork",
+      "version": null,
+      "manufacturer": "apple",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "152.4.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "CFNetwork/10.4.4"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Darwin",
+      "marketingName": "Darwin",
+      "version": null,
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "CFNetwork",
+      "version": null,
+      "manufacturer": "apple",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "10.4.4",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "CFNetwork/0.9"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Darwin",
+      "marketingName": "Darwin",
+      "version": null,
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "CFNetwork",
+      "version": null,
+      "manufacturer": "apple",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "0.9.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "CFNetwork/4.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": null,
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "CFNetwork",
+      "version": null,
+      "manufacturer": "apple",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "4.0.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "WebKit2WebProcess (unknown version) CFNetwork/520.2.6"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": null,
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "CFNetwork",
+      "version": null,
+      "manufacturer": "apple",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "2.0.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_3) AppleWebKit/534.53.11 (KHTML, like Gecko) iWeb/304"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": "10.7.3",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "iWeb",
+      "version": null,
+      "manufacturer": "apple",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.53.11",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "oneSafe/2060 CFNetwork/887 Darwin/17.0.0 (x86_64)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "macOS",
+      "marketingName": "macOS",
+      "version": "10.13.0",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "CFNetwork",
+      "version": null,
+      "manufacturer": "apple",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "887.0.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "httpscheck (unknown version) CFNetwork/889.9 Darwin/17.2.0 (x86_64)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "macOS",
+      "marketingName": "macOS",
+      "version": "10.13.2",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "CFNetwork",
+      "version": null,
+      "manufacturer": "apple",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "889.9.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "com.apple.WebKit.Networking/9537.71 CFNetwork/673.0.3 Darwin/13.0.0 (x86_64) (MacBookPro7%2C1)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "MacBook Pro 7,1",
+      "marketingName": "MacBook Pro 13\" (2010)",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": false,
+        "size": 13.3
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": "10.9.0",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "Webkit Service",
+      "version": null,
+      "manufacturer": "apple",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "673.0.3",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "com.apple.WebKit.Networking/9537.75.14 CFNetwork/673.2.1 Darwin/13.1.0 (x86_64) (MacBookPro9%2C2)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "MacBook Pro 9,2",
+      "marketingName": "MacBook Pro 13\" (2012)",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": false,
+        "size": 13.3
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": "10.9.1",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "Webkit Service",
+      "version": null,
+      "manufacturer": "apple",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "673.2.1",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "CFNetwork/0.0.0 Darwin/0.0.0 (x86_64)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": null,
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "CFNetwork",
+      "version": null,
+      "manufacturer": "apple",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "0.0.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Email%20Extractor%20Vius/27 CFNetwork/893.13.1 Darwin/17.3.0 (x86_64)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "macOS",
+      "marketingName": "macOS",
+      "version": "10.13.3",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "CFNetwork",
+      "version": null,
+      "manufacturer": "apple",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "893.13.1",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "safarifetcherd/604.1 CFNetwork/894 Darwin/17.4.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.2.0",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "Safari Fetcher Daemon",
+      "version": null,
+      "manufacturer": "apple",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "894.0.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "httpscheck (unknown version) CFNetwork/897.15 Darwin/17.5.0 (x86_64)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "macOS",
+      "marketingName": "macOS",
+      "version": "10.13.5",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "CFNetwork",
+      "version": null,
+      "manufacturer": "apple",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "897.15.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "safarifetcherd/604.1 CFNetwork/897.15 Darwin/17.5.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "11.3.0",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "Safari Fetcher Daemon",
+      "version": null,
+      "manufacturer": "apple",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "897.15.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "safarifetcherd/604.1 CFNetwork/974.2.1 Darwin/18.0.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "12.0.0",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "Safari Fetcher Daemon",
+      "version": null,
+      "manufacturer": "apple",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "974.2.1",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "safarifetcherd/604.1 CFNetwork/975.0.3 Darwin/18.2.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "12.1.0",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "Safari Fetcher Daemon",
+      "version": null,
+      "manufacturer": "apple",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "975.0.3",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "httpscheck (unknown version) CFNetwork/976 Darwin/18.2.0 (x86_64)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "macOS",
+      "marketingName": "macOS",
+      "version": "10.14.2",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "CFNetwork",
+      "version": null,
+      "manufacturer": "apple",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "976.0.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "httpscheck (unknown version) CFNetwork/978.0.7 Darwin/18.5.0 (x86_64)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "macOS",
+      "marketingName": "macOS",
+      "version": "10.14.5",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "CFNetwork",
+      "version": null,
+      "manufacturer": "apple",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "978.0.7",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "safarifetcherd/604.1 CFNetwork/978.0.7 Darwin/18.5.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "12.2.0",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "Safari Fetcher Daemon",
+      "version": null,
+      "manufacturer": "apple",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "978.0.7",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "OneNote/16.26.19060901 CFNetwork/902.3.1 Darwin/17.7.0 (x86_64)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "macOS",
+      "marketingName": "macOS",
+      "version": "10.13.0",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "CFNetwork",
+      "version": null,
+      "manufacturer": "apple",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "902.3.1",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "safarifetcherd/604.1 CFNetwork/1098.7 Darwin/19.0.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "13.0.0",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "Safari Fetcher Daemon",
+      "version": null,
+      "manufacturer": "apple",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "1098.7.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SafeInCloud/190201 CFNetwork/1111 Darwin/19.0.0 (x86_64)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "macOS",
+      "marketingName": "macOS",
+      "version": "10.15.0",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "CFNetwork",
+      "version": null,
+      "manufacturer": "apple",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "1111.0.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "httpscheck (unknown version) CFNetwork/1120 Darwin/19.0.0 (x86_64)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "macOS",
+      "marketingName": "macOS",
+      "version": "10.15.0",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "CFNetwork",
+      "version": null,
+      "manufacturer": "apple",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "1120.0.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SafeInCloud/190303 CFNetwork/1121.1.2 Darwin/19.2.0 (x86_64)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "macOS",
+      "marketingName": "macOS",
+      "version": "10.15.0",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "CFNetwork",
+      "version": null,
+      "manufacturer": "apple",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "1121.1.2",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "AppStoreScraperZ/1 CFNetwork/889.9 Darwin/17.2.0 (x86_64)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "macOS",
+      "marketingName": "macOS",
+      "version": "10.13.2",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "AppStore App",
+      "version": null,
+      "manufacturer": "apple",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "889.9.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "URLTester/1 CFNetwork/974.1 Darwin/18.0.0 (x86_64)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "macOS",
+      "marketingName": "macOS",
+      "version": "10.14.0",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "CFNetwork",
+      "version": null,
+      "manufacturer": "apple",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "974.1.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "URLTester/1 CFNetwork/975.0.3 Darwin/18.2.0 (x86_64)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "macOS",
+      "marketingName": "macOS",
+      "version": "10.14.2",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "CFNetwork",
+      "version": null,
+      "manufacturer": "apple",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "975.0.3",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "com.apple.WebKit.Networking/12602.3.12.0.1 CFNetwork/807.2.14 Darwin/16.3.0 (x86_64)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "macOS",
+      "marketingName": "macOS",
+      "version": "10.12.3",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "Webkit Service",
+      "version": null,
+      "manufacturer": "apple",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "807.2.14",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Copied/211 CFNetwork/807.2.14 Darwin/16.4.0 (x86_64)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "macOS",
+      "marketingName": "macOS",
+      "version": "10.12.4",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "CFNetwork",
+      "version": null,
+      "manufacturer": "apple",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "807.2.14",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "com.apple.WebKit.Networking/12603.1.30.0.34 CFNetwork/811.4.18 Darwin/16.5.0 (x86_64)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "macOS",
+      "marketingName": "macOS",
+      "version": "10.12.5",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "Webkit Service",
+      "version": null,
+      "manufacturer": "apple",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "811.4.18",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "com.apple.WebKit.Networking/9601.7.8 CFNetwork/673.6 Darwin/13.4.0 (x86_64) (MacBookPro11%2C1)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "MacBook Pro 11,1",
+      "marketingName": "MacBook Pro 13\" (2013)",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": 2560,
+        "height": 1600,
+        "touch": false,
+        "size": 13.3
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": "10.9.4",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "Webkit Service",
+      "version": null,
+      "manufacturer": "apple",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "673.6.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "com.apple.WebKit.Networking/13604.3.5 CFNetwork/889.9 Darwin/17.2.0 (x86_64)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "macOS",
+      "marketingName": "macOS",
+      "version": "10.13.2",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "Webkit Service",
+      "version": null,
+      "manufacturer": "apple",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "889.9.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "com.apple.WebKit.Networking/13604.4.7.1.6 CFNetwork/893.13.1 Darwin/17.3.0 (x86_64)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "macOS",
+      "marketingName": "macOS",
+      "version": "10.13.3",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "Webkit Service",
+      "version": null,
+      "manufacturer": "apple",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "893.13.1",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "com.apple.Notes.SharingExtension/863 CFNetwork/887 Darwin/17.0.0 (x86_64)"
     },
     "device": {
@@ -9,8 +2949,8 @@
       "marketingName": "Macintosh",
       "manufacturer": "apple",
       "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -51,8 +2991,8 @@
       "marketingName": "Macintosh",
       "manufacturer": "apple",
       "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -93,8 +3033,8 @@
       "marketingName": "Macintosh",
       "manufacturer": "apple",
       "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -135,8 +3075,8 @@
       "marketingName": "Macintosh",
       "manufacturer": "apple",
       "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -177,8 +3117,8 @@
       "marketingName": "Macintosh",
       "manufacturer": "apple",
       "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -219,8 +3159,8 @@
       "marketingName": "Macintosh",
       "manufacturer": "apple",
       "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -261,8 +3201,8 @@
       "marketingName": "Macintosh",
       "manufacturer": "apple",
       "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -303,8 +3243,8 @@
       "marketingName": "Macintosh",
       "manufacturer": "apple",
       "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -345,8 +3285,8 @@
       "marketingName": "Macintosh",
       "manufacturer": "apple",
       "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -387,8 +3327,8 @@
       "marketingName": "Macintosh",
       "manufacturer": "apple",
       "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -429,8 +3369,8 @@
       "marketingName": "Macintosh",
       "manufacturer": "apple",
       "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -471,8 +3411,8 @@
       "marketingName": "Macintosh",
       "manufacturer": "apple",
       "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -513,8 +3453,8 @@
       "marketingName": "Macintosh",
       "manufacturer": "apple",
       "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -555,8 +3495,8 @@
       "marketingName": "Macintosh",
       "manufacturer": "apple",
       "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -597,8 +3537,8 @@
       "marketingName": "Macintosh",
       "manufacturer": "apple",
       "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -639,8 +3579,8 @@
       "marketingName": "Macintosh",
       "manufacturer": "apple",
       "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -681,8 +3621,8 @@
       "marketingName": "Macintosh",
       "manufacturer": "apple",
       "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -723,8 +3663,8 @@
       "marketingName": "Macintosh",
       "manufacturer": "apple",
       "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -765,8 +3705,8 @@
       "marketingName": "Macintosh",
       "manufacturer": "apple",
       "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -794,6 +3734,48 @@
     "engine": {
       "name": "WebKit",
       "version": "1410.0.3",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Messages/5500 CFNetwork/1098 Darwin/19.0.0 (x86_64)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "macOS",
+      "marketingName": "macOS",
+      "version": "10.15.0",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "CFNetwork",
+      "version": null,
+      "manufacturer": "apple",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "1098.0.0",
       "manufacturer": "apple"
     }
   }

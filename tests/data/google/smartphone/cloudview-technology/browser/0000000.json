@@ -40,5 +40,53 @@
       "version": "98.0.4758.101",
       "manufacturer": "google"
     }
+  },
+  {
+    "headers": {
+      "q-ua2": "QV=3&PL=ADR&PR=PHX&PP=com.transsion.phoenix&PPVN=11.8.3.4200&PPVC=4200&CO=SYS&CHID=23600&ACID=23601&MO= Pixel3a &DN= sargo &BN= google &RL=1080*2088&OS=12&API=32&CTRY=DE&LNG=de-DE",
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "none",
+      "sec-fetch-user": "?1",
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 12; de-de; Pixel 3a Build/SP2A.220505.008) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.101 Mobile Safari/537.36 PHX/11.8",
+      "x-requested-with": "com.transsion.phoenix"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Pixel 3a",
+      "marketingName": "Pixel 3a",
+      "manufacturer": "google",
+      "brand": "google",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 2220,
+        "height": 1080,
+        "touch": true,
+        "size": 5.6
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Phoenix Browser",
+      "version": null,
+      "manufacturer": "cloudview-technology",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "98.0.4758.101",
+      "manufacturer": "google"
+    }
   }
 ]

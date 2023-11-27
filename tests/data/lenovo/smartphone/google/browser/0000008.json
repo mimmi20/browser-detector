@@ -1,132 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 4.3; en-us; Lenovo K910L/JSS15Q) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.3 Mobile Safari/534.30"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "K910L",
-      "marketingName": "Vibe Z LTE",
-      "manufacturer": "lenovo",
-      "brand": "vodafone",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.3.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Android Webkit",
-      "version": "4.3.0",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "534.30.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.2.1; Lenovo S920_ROW Build/JOP40D) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.58 Mobile Safari/537.31"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "S920",
-      "marketingName": "S920",
-      "manufacturer": "lenovo",
-      "brand": "lenovo",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.2.1",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Chrome",
-      "version": "26.0.1410.58",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "537.31.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; Lenovo S660 Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.114 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "S660",
-      "marketingName": "S660",
-      "manufacturer": "lenovo",
-      "brand": "lenovo",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 960,
-        "height": 540,
-        "touch": true,
-        "size": 4.7
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.2.2",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Chrome",
-      "version": "34.0.1847.114",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "34.0.1847.114",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 4.2.2; Lenovo A516 Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.109 Mobile Safari/537.36"
     },
     "device": {
@@ -2815,48 +2689,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 2.1.2; en-US; A60 Build/L9142H)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "A60",
-      "marketingName": "Lephone A60",
-      "manufacturer": "lenovo",
-      "brand": "lenovo",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 480,
-        "height": 320,
-        "touch": true,
-        "size": null
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "2.1.2",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Android Webkit",
-      "version": null,
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Dalvik/1.4.0 (Linux; U; Android 2.3.5; Lenovo A65 Build/GRJ90)"
     },
     "device": {
@@ -4184,6 +4016,174 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "7.1.1",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "63.0.3239.111",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "63.0.3239.111",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0; B5032 Build/MRA58K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/63.0.3239.111 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "B5032",
+      "marketingName": "B5032",
+      "manufacturer": "lenovo",
+      "brand": "lenovo",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 640,
+        "height": 360,
+        "touch": true,
+        "size": 4
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Android WebView",
+      "version": "63.0.3239.111",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "63.0.3239.111",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; Lenovo K33a48 Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "K33a48",
+      "marketingName": "Vibe K6",
+      "manufacturer": "lenovo",
+      "brand": "lenovo",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "63.0.3239.111",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "63.0.3239.111",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; Lenovo P1c58 Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "P1c58",
+      "marketingName": "Vibe P1 Pro",
+      "manufacturer": "lenovo",
+      "brand": "lenovo",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": null
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.1",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "62.0.3202.84",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "62.0.3202.84",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0; Lenovo K10a40 Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "K10a40",
+      "marketingName": "C2 Power",
+      "manufacturer": "lenovo",
+      "brand": "lenovo",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.0",
       "manufacturer": "google"
     },
     "client": {

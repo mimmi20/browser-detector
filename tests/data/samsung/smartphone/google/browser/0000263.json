@@ -1,6 +1,48 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; SM-A146P Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/114.0.5735.196 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-A146P",
+      "marketingName": "Galaxy A14 5G",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2408,
+        "height": 1080,
+        "touch": true,
+        "size": 6.6
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Android WebView",
+      "version": "114.0.5735.196",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "114.0.5735.196",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 10; SM-A605FN Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/114.0.5735.196 Mobile Safari/537.36"
     },
     "device": {
@@ -5397,72 +5439,6 @@
         "height": 720,
         "touch": true,
         "size": 5.3
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "12.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Chrome",
-      "version": "114.0.0",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "114.0.0.0",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "device-memory": "4",
-      "downlink": "4.05",
-      "dpr": "3.29834",
-      "ect": "4g",
-      "rtt": "250",
-      "sec-ch-device-memory": "4",
-      "sec-ch-dpr": "3.29834",
-      "sec-ch-prefers-color-scheme": "dark",
-      "sec-ch-prefers-reduced-motion": "reduce",
-      "sec-ch-ua": "\"Not.A/Brand\";v=\"8\", \"Chromium\";v=\"114\", \"Google Chrome\";v=\"114\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-full-version": "\"114.0.5735.61\"",
-      "sec-ch-ua-mobile": "?1",
-      "sec-ch-ua-model": "\"SM-A536B\"",
-      "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua-platform-version": "\"12.0.0\"",
-      "sec-ch-viewport-height": "606",
-      "sec-ch-viewport-width": "327",
-      "sec-fetch-dest": "empty",
-      "sec-fetch-mode": "cors",
-      "sec-fetch-site": "same-origin",
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36",
-      "viewport-width": "327",
-      "x-requested-with": "XMLHttpRequest"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SM-A536B",
-      "marketingName": "Galaxy A53 5G (International)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 2400,
-        "height": 1080,
-        "touch": true,
-        "size": 6.5
       },
       "type": "smartphone",
       "ismobile": true,

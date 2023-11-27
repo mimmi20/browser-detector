@@ -1,6 +1,90 @@
 [
   {
     "headers": {
+      "user-agent": "Dalvik/1.4.0 (Linux; U; Android 2.3.4; ADR6300 Build/GRJ22)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "ADR6300",
+      "marketingName": "Droid Incredible",
+      "manufacturer": "htc",
+      "brand": "htc",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 960,
+        "height": 540,
+        "touch": true,
+        "size": 4
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "2.3.4",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Dalvik",
+      "version": "1.4.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.4; HTC6525LVW Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.96 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "HTC6525LVW",
+      "marketingName": "One M8",
+      "manufacturer": "htc",
+      "brand": "htc",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.4",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "41.0.2272.96",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "41.0.2272.96",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 4.4.4; HTC_0P6B6 Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.94 Mobile Safari/537.36"
     },
     "device": {
@@ -4112,90 +4196,6 @@
     "engine": {
       "name": "Blink",
       "version": "37.0.0.0",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; HTC_D610x Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "D610x",
-      "marketingName": "Desire 610",
-      "manufacturer": "htc",
-      "brand": "htc",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 960,
-        "height": 540,
-        "touch": true,
-        "size": 4.7
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.4.2",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Android WebView",
-      "version": "30.0.0.0",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "30.0.0.0",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; HTC Desire 526GPLUS dual sim Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.109 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Desire 526G+",
-      "marketingName": "Desire 526G+",
-      "manufacturer": "htc",
-      "brand": "htc",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 960,
-        "height": 540,
-        "touch": true,
-        "size": 4.7
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "4.4.2",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Chrome",
-      "version": "40.0.2214.109",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "40.0.2214.109",
       "manufacturer": "google"
     }
   }

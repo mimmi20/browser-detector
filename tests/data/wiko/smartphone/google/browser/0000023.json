@@ -4117,6 +4117,50 @@
   },
   {
     "headers": {
+      "x-wap-profile": "http://218.249.47.94/Xianghe/MTK_Phone_KK_UAprofile.xml",
+      "user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; LENNY Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36",
+      "x-requested-with": "com.android.browser"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Lenny",
+      "marketingName": "Lenny",
+      "manufacturer": "wiko",
+      "brand": "wiko",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 854,
+        "height": 480,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "4.4.2",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Android WebView",
+      "version": null,
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "30.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 6.0; Pelitt T1 PLUS) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.82 Mobile Safari/537.36"
     },
     "device": {
@@ -4154,48 +4198,6 @@
     "engine": {
       "name": "Blink",
       "version": "90.0.4430.82",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 6.0; STK Sync 5z Plus) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.82 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Plus",
-      "marketingName": "Plus",
-      "manufacturer": "wiko",
-      "brand": "wiko",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1280,
-        "height": 720,
-        "touch": true,
-        "size": 5
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "6.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Chrome",
-      "version": "93.0.4577.82",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "93.0.4577.82",
       "manufacturer": "google"
     }
   }

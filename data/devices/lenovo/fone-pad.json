@@ -431,6 +431,22 @@
     "type": "fone-pad",
     "platform": "android"
   },
+  "lenovo a8-50lc": {
+    "deviceName": "A8-50LC",
+    "marketingName": "Tab 2 A8-50 LTE",
+    "manufacturer": "lenovo",
+    "brand": "lenovo",
+    "dualOrientation": null,
+    "simCount": null,
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": 8
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
   "lenovo tb-8703n": {
     "deviceName": "TB-8703N",
     "marketingName": "Tab 3 8.0 Plus",
@@ -1209,6 +1225,38 @@
     "display": {
       "width": 1280,
       "height": 800,
+      "touch": true,
+      "size": 10.1
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "lenovo tb300xu": {
+    "deviceName": "TB300XU",
+    "marketingName": "Tab M8 Gen 4 LTE",
+    "manufacturer": "lenovo",
+    "brand": "lenovo",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": 8
+    },
+    "type": "fone-pad",
+    "platform": "android"
+  },
+  "lenovo tb328xu": {
+    "deviceName": "TB328XU",
+    "marketingName": "Tab M10 3rd Gen LTE",
+    "manufacturer": "lenovo",
+    "brand": "lenovo",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1920,
+      "height": 1200,
       "touch": true,
       "size": 10.1
     },

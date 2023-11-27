@@ -2098,5 +2098,47 @@
       "version": "605.1.15",
       "manufacturer": "apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPod touch; CPU iPhone OS 10_1_1 like Mac OS X) AppleWebKit/602.2.14 (KHTML, like Gecko) Mobile/14B100 Instagram 46.0.0.14.96 (iPod7,1; iOS 10_1_1; pt_PT; pt-PT; scale=2.00; gamut=normal; 640x1136)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPod Touch 7,1",
+      "marketingName": "iPod Touch (6th Gen.)",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1136,
+        "height": 640,
+        "touch": true,
+        "size": 4
+      },
+      "type": "mobile-media-player",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation"
+    },
+    "client": {
+      "name": "Instagram App",
+      "version": "46.0.0.14.96",
+      "manufacturer": "facebook",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "602.2.14",
+      "manufacturer": "apple"
+    }
   }
 ]

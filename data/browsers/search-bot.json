@@ -25,6 +25,18 @@
     },
     "engine": null
   },
+  "googlebot-mobile": {
+    "name": "Google Bot Mobile",
+    "manufacturer": "google",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Googlebot\\-Mobile"
+      ]
+    },
+    "engine": "unknown"
+  },
   "mj12bot": {
     "name": "MJ12bot",
     "manufacturer": "majestic-12",
@@ -444,6 +456,18 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "GigablastOpenSource"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "woorank-review": {
+    "name": "WooRank Review",
+    "manufacturer": "woo-rank",
+    "type": "search-bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "woorankreview"
       ]
     },
     "engine": "unknown"
