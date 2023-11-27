@@ -9,8 +9,8 @@
       "marketingName": "Macintosh",
       "manufacturer": "apple",
       "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -51,8 +51,8 @@
       "marketingName": "Macintosh",
       "manufacturer": "apple",
       "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -85,6 +85,132 @@
   },
   {
     "headers": {
+      "user-agent": "SafariViewService/1.0 CFNetwork/975.0.3 Darwin/18.2.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "12.1.0",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "SafariViewService",
+      "version": "1.0.0",
+      "manufacturer": "unknown",
+      "type": "library",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "975.0.3",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SafariViewService/1.0 CFNetwork/976 Darwin/18.2.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "12.1.0",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "SafariViewService",
+      "version": "1.0.0",
+      "manufacturer": "unknown",
+      "type": "library",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "976.0.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SafariViewService/1.0 CFNetwork/978.0.7 Darwin/18.7.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "12.4.0",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "SafariViewService",
+      "version": "1.0.0",
+      "manufacturer": "unknown",
+      "type": "library",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "978.0.7",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (darwin) AppleWebKit/537.36 (KHTML, like Gecko) jsdom/15.1.1"
     },
     "device": {
@@ -93,8 +219,8 @@
       "marketingName": "Macintosh",
       "manufacturer": "apple",
       "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": false,
+      "simCount": 0,
       "display": {
         "width": null,
         "height": null,
@@ -122,6 +248,720 @@
     "engine": {
       "name": "WebKit",
       "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SafariViewService/1.0 CFNetwork/1121.2.2 Darwin/19.3.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Darwin",
+      "marketingName": "Darwin",
+      "version": "19.3.0",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "SafariViewService",
+      "version": "1.0.0",
+      "manufacturer": "unknown",
+      "type": "library",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "1121.2.2",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SafariViewService/1.0 CFNetwork/1126 Darwin/19.5.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Darwin",
+      "marketingName": "Darwin",
+      "version": "19.5.0",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "SafariViewService",
+      "version": "1.0.0",
+      "manufacturer": "unknown",
+      "type": "library",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "1126.0.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SafariViewService/1.0 CFNetwork/1206 Darwin/20.1.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Darwin",
+      "marketingName": "Darwin",
+      "version": "20.1.0",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "SafariViewService",
+      "version": "1.0.0",
+      "manufacturer": "unknown",
+      "type": "library",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "1206.0.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SafariViewService/1.0 CFNetwork/1209 Darwin/20.2.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Darwin",
+      "marketingName": "Darwin",
+      "version": "20.2.0",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "SafariViewService",
+      "version": "1.0.0",
+      "manufacturer": "unknown",
+      "type": "library",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "1209.0.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SafariViewService/1.0 CFNetwork/1220.1 Darwin/20.3.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Darwin",
+      "marketingName": "Darwin",
+      "version": "20.3.0",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "SafariViewService",
+      "version": "1.0.0",
+      "manufacturer": "unknown",
+      "type": "library",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "1220.1.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SafariViewService/1.0 CFNetwork/1240.0.4 Darwin/20.5.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Darwin",
+      "marketingName": "Darwin",
+      "version": "20.5.0",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "SafariViewService",
+      "version": "1.0.0",
+      "manufacturer": "unknown",
+      "type": "library",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "1240.0.4",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SafariViewService/8613.2.7.0.7 CFNetwork/1333.0.4 Darwin/21.5.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Darwin",
+      "marketingName": "Darwin",
+      "version": "21.5.0",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "SafariViewService",
+      "version": "8613.2.7.0.7",
+      "manufacturer": "unknown",
+      "type": "library",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "1333.0.4",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SafariViewService/8614.1.25.0.30 CFNetwork/1390 Darwin/22.0.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Darwin",
+      "marketingName": "Darwin",
+      "version": "22.0.0",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "SafariViewService",
+      "version": "8614.1.25.0.30",
+      "manufacturer": "unknown",
+      "type": "library",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "1390.0.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SafariViewService/8614.3.7.0.6 CFNetwork/1402.0.8 Darwin/22.2.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "16.2.0",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "SafariViewService",
+      "version": "8614.3.7.0.6",
+      "manufacturer": "unknown",
+      "type": "library",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "1402.0.8",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SafariViewService/8615.1.26.10.24 CFNetwork/1406.0.4 Darwin/22.4.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Darwin",
+      "marketingName": "Darwin",
+      "version": "22.4.0",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "SafariViewService",
+      "version": "8615.1.26.10.24",
+      "manufacturer": "unknown",
+      "type": "library",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "1406.0.4",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SafariViewService/8615.2.1 CFNetwork/1408.0.1 Darwin/22.5.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Darwin",
+      "marketingName": "Darwin",
+      "version": "22.5.0",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "SafariViewService",
+      "version": "8615.2.1",
+      "manufacturer": "unknown",
+      "type": "library",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "1408.0.1",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SafariViewService/8615.3.6 CFNetwork/1410.0.1.1 Darwin/22.6.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Darwin",
+      "marketingName": "Darwin",
+      "version": "22.6.0",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "SafariViewService",
+      "version": "8615.3.6",
+      "manufacturer": "unknown",
+      "type": "library",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "1410.0.1.1",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SafariViewService/8616.1.20.10.5 CFNetwork/1467.1 Darwin/23.0.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Darwin",
+      "marketingName": "Darwin",
+      "version": "23.0.0",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "SafariViewService",
+      "version": "8616.1.20.10.5",
+      "manufacturer": "unknown",
+      "type": "library",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "1467.1.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SafariViewService/8616.1.27.10.11 CFNetwork/1474 Darwin/23.0.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Darwin",
+      "marketingName": "Darwin",
+      "version": "23.0.0",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "SafariViewService",
+      "version": "8616.1.27.10.11",
+      "manufacturer": "unknown",
+      "type": "library",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "1474.0.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SafariViewService/8616.2.6.10.1 CFNetwork/1483 Darwin/23.1.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Darwin",
+      "marketingName": "Darwin",
+      "version": "23.1.0",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "SafariViewService",
+      "version": "8616.2.6.10.1",
+      "manufacturer": "unknown",
+      "type": "library",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "1483.0.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SafariViewService/8616.2.9.10.10 CFNetwork/1485 Darwin/23.1.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Darwin",
+      "marketingName": "Darwin",
+      "version": "23.1.0",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "SafariViewService",
+      "version": "8616.2.9.10.10",
+      "manufacturer": "unknown",
+      "type": "library",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "1485.0.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SafariViewService/8617.1.11.10.1 CFNetwork/1490.0.1.1 Darwin/23.2.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Darwin",
+      "marketingName": "Darwin",
+      "version": "23.2.0",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "SafariViewService",
+      "version": "8617.1.11.10.1",
+      "manufacturer": "unknown",
+      "type": "library",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "1490.0.1.1",
       "manufacturer": "apple"
     }
   }

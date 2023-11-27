@@ -3193,6 +3193,90 @@
   },
   {
     "headers": {
+      "user-agent": "Nokia7650/1.0 SymbianOS/6.1 (compatible; YOSPACE SmartPhone Emulator Developer Edition 4.0)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "7650",
+      "marketingName": "7650",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 208,
+        "height": 176,
+        "touch": false,
+        "size": 2.1
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": "6.1.0",
+      "manufacturer": "symbian-foundation"
+    },
+    "client": {
+      "name": "Nokia Browser",
+      "version": null,
+      "manufacturer": "nokia",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Nokia6708/2.0 (V1.0.0) SymbianOS/7.0 UIQ/2.1 Profile/MIDP-2.0 Configuration/CLDC-1.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "6708",
+      "marketingName": "6708",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 320,
+        "height": 208,
+        "touch": true,
+        "size": 2.7
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": "7.0.0",
+      "manufacturer": "symbian-foundation"
+    },
+    "client": {
+      "name": "Nokia Browser",
+      "version": null,
+      "manufacturer": "nokia",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Nokia6681/2.0 (6.09.00) SymbianOS/8.0 Series60/2.6 Profile/MIDP-2.0 Configuration/CLDC-1.1"
     },
     "device": {
@@ -4101,90 +4185,6 @@
       "marketingName": "Series 60",
       "version": null,
       "manufacturer": "nokia"
-    },
-    "client": {
-      "name": "Nokia Browser",
-      "version": null,
-      "manufacturer": "nokia",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "NOKIAE5-00"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "E5-00",
-      "marketingName": "E5",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "symbian-foundation"
-    },
-    "client": {
-      "name": "Nokia Browser",
-      "version": null,
-      "manufacturer": "nokia",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "NokiaC5-05"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "C5-05",
-      "marketingName": "C5",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 640,
-        "height": 360,
-        "touch": true,
-        "size": null
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "symbian-foundation"
     },
     "client": {
       "name": "Nokia Browser",

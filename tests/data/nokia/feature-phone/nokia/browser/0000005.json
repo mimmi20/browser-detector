@@ -1,6 +1,90 @@
 [
   {
     "headers": {
+      "user-agent": "NOKIAE5-00"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "E5-00",
+      "marketingName": "E5",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "symbian-foundation"
+    },
+    "client": {
+      "name": "Nokia Browser",
+      "version": null,
+      "manufacturer": "nokia",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "NokiaC5-05"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "C5-05",
+      "marketingName": "C5",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 640,
+        "height": 360,
+        "touch": true,
+        "size": null
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "symbian-foundation"
+    },
+    "client": {
+      "name": "Nokia Browser",
+      "version": null,
+      "manufacturer": "nokia",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "nokia7660"
     },
     "device": {

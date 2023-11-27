@@ -1,6 +1,48 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (X11; CrOS x86_64 14.4.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3075.0 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "ChromeOS",
+      "marketingName": "ChromeOS",
+      "version": "14.4.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "60.0.3075.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "60.0.3075.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3073.0 Safari/537.36"
     },
     "device": {
@@ -1243,7 +1285,7 @@
     "os": {
       "name": "Suse Linux",
       "marketingName": "Suse Linux",
-      "version": null,
+      "version": "27.0.1425.0",
       "manufacturer": "suse"
     },
     "client": {
@@ -1411,7 +1453,7 @@
     "os": {
       "name": "Suse Linux",
       "marketingName": "Suse Linux",
-      "version": null,
+      "version": "33.0.1750.117",
       "manufacturer": "suse"
     },
     "client": {
@@ -1831,7 +1873,7 @@
     "os": {
       "name": "Suse Linux",
       "marketingName": "Suse Linux",
-      "version": null,
+      "version": "26.0.1393.0",
       "manufacturer": "suse"
     },
     "client": {
@@ -1957,7 +1999,7 @@
     "os": {
       "name": "Suse Linux",
       "marketingName": "Suse Linux",
-      "version": null,
+      "version": "30.0.1553.0",
       "manufacturer": "suse"
     },
     "client": {
@@ -2209,7 +2251,7 @@
     "os": {
       "name": "Suse Linux",
       "marketingName": "Suse Linux",
-      "version": null,
+      "version": "34.0.1847.132",
       "manufacturer": "suse"
     },
     "client": {
@@ -2251,7 +2293,7 @@
     "os": {
       "name": "Suse Linux",
       "marketingName": "Suse Linux",
-      "version": null,
+      "version": "12.0.724.0",
       "manufacturer": "suse"
     },
     "client": {
@@ -2797,7 +2839,7 @@
     "os": {
       "name": "Suse Linux",
       "marketingName": "Suse Linux",
-      "version": null,
+      "version": "25.0.1362.0",
       "manufacturer": "suse"
     },
     "client": {
@@ -4154,48 +4196,6 @@
     "engine": {
       "name": "WebKit",
       "version": "535.58.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Windows NT 6.0) AppleWebKit/535.51 (KHTML, like Gecko) Chrome/25.0.1612.1 Safari/535.51"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Windows Desktop",
-      "marketingName": "Windows Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Windows NT 6.0",
-      "marketingName": "Windows Vista",
-      "version": "6.0.0",
-      "manufacturer": "microsoft"
-    },
-    "client": {
-      "name": "Chrome",
-      "version": "25.0.1612.1",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "535.51.0",
       "manufacturer": "apple"
     }
   }
