@@ -37,20 +37,20 @@ final class DeviceParserFactory implements DeviceParserFactoryInterface
      */
     public function __invoke(): DeviceParserInterface
     {
-        $fileParser    = new RulefileParser($this->logger);
-        $darwinParser  = new DarwinParser($fileParser);
-        $mobileParser  = new MobileParser($fileParser);
-        $tvParser      = new TvParser($fileParser);
-        $desktopParser = new DesktopParser($fileParser);
+        $fileParser    = new RulefileParser(logger: $this->logger);
+        $darwinParser  = new DarwinParser(fileParser: $fileParser);
+        $mobileParser  = new MobileParser(fileParser: $fileParser);
+        $tvParser      = new TvParser(fileParser: $fileParser);
+        $desktopParser = new DesktopParser(fileParser: $fileParser);
 
         return new DeviceParser(
-            $darwinParser,
-            $mobileParser,
-            $tvParser,
-            $desktopParser,
-            new MobileDevice(),
-            new Tv(),
-            new Desktop(),
+            darwinParser: $darwinParser,
+            mobileParser: $mobileParser,
+            tvParser: $tvParser,
+            desktopParser: $desktopParser,
+            mobileDevice: new MobileDevice(),
+            tvDevice: new Tv(),
+            desktopDevice: new Desktop(),
         );
     }
 }

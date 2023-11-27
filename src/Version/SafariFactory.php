@@ -21,9 +21,9 @@ final class SafariFactory implements SafariFactoryInterface
     public function __invoke(LoggerInterface $logger): Safari
     {
         return new Safari(
-            $logger,
-            new VersionBuilder($logger),
-            new SafariHelper(),
+            logger: $logger,
+            versionBuilder: new VersionBuilder($logger),
+            safariHelper: new SafariHelper(),
         );
     }
 }

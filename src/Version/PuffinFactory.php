@@ -20,8 +20,8 @@ final class PuffinFactory implements PuffinFactoryInterface
     public function __invoke(LoggerInterface $logger): Puffin
     {
         return new Puffin(
-            $logger,
-            new VersionBuilder($logger),
+            logger: $logger,
+            versionBuilder: new VersionBuilder($logger),
         );
     }
 }

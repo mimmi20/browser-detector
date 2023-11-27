@@ -41,6 +41,14 @@ final class RulefileParser implements RulefileParserInterface
     /** @throws void */
     public function parseFile(string $file, string $useragent, string $fallback): string
     {
+        if (!file_exists($file)) {
+            $this->logger->error(
+                new Exception(sprintf('file %s does not exist', $file)),
+            );
+
+            return $fallback;
+        }
+
         $content = @file_get_contents($file);
         $mode    = null;
 

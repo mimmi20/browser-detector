@@ -27,7 +27,7 @@ final class PlatformParserFactory implements PlatformParserFactoryInterface
     public function __invoke(): PlatformParserInterface
     {
         return new PlatformParser(
-            new RulefileParser($this->logger),
+            fileParser: new RulefileParser(logger: $this->logger),
         );
     }
 }

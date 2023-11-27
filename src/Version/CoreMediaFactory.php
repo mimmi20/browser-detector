@@ -20,8 +20,8 @@ final class CoreMediaFactory implements CoreMediaFactoryInterface
     public function __invoke(LoggerInterface $logger): CoreMedia
     {
         return new CoreMedia(
-            $logger,
-            new VersionBuilder($logger),
+            logger: $logger,
+            versionBuilder: new VersionBuilder($logger),
         );
     }
 }

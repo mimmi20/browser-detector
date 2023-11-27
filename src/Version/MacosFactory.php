@@ -21,9 +21,9 @@ final class MacosFactory implements MacosFactoryInterface
     public function __invoke(LoggerInterface $logger): Macos
     {
         return new Macos(
-            $logger,
-            new VersionBuilder($logger),
-            new MacosBuild(),
+            logger: $logger,
+            versionBuilder: new VersionBuilder($logger),
+            macosBuild: new MacosBuild(),
         );
     }
 }

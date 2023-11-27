@@ -20,8 +20,8 @@ final class MaxthonFactory implements MaxthonFactoryInterface
     public function __invoke(LoggerInterface $logger): Maxthon
     {
         return new Maxthon(
-            $logger,
-            new VersionBuilder($logger),
+            logger: $logger,
+            versionBuilder: new VersionBuilder($logger),
         );
     }
 }

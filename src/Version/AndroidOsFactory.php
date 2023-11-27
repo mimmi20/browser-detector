@@ -20,8 +20,8 @@ final class AndroidOsFactory implements AndroidOsFactoryInterface
     public function __invoke(LoggerInterface $logger): AndroidOs
     {
         return new AndroidOs(
-            $logger,
-            new VersionBuilder($logger),
+            logger: $logger,
+            versionBuilder: new VersionBuilder($logger),
         );
     }
 }

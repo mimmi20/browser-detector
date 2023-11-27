@@ -20,8 +20,8 @@ final class FirefoxOsFactory implements FirefoxOsFactoryInterface
     public function __invoke(LoggerInterface $logger): FirefoxOs
     {
         return new FirefoxOs(
-            $logger,
-            new VersionBuilder($logger),
+            logger: $logger,
+            versionBuilder: new VersionBuilder($logger),
         );
     }
 }

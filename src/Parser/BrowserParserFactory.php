@@ -31,7 +31,7 @@ final class BrowserParserFactory implements BrowserParserFactoryInterface
     public function __invoke(): BrowserParserInterface
     {
         return new BrowserParser(
-            new RulefileParser($this->logger),
+            fileParser: new RulefileParser(logger: $this->logger),
         );
     }
 }

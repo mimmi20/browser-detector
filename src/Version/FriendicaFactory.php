@@ -20,8 +20,8 @@ final class FriendicaFactory implements FriendicaFactoryInterface
     public function __invoke(LoggerInterface $logger): Friendica
     {
         return new Friendica(
-            $logger,
-            new VersionBuilder($logger),
+            logger: $logger,
+            versionBuilder: new VersionBuilder($logger),
         );
     }
 }

@@ -20,8 +20,8 @@ final class DebianFactory implements DebianFactoryInterface
     public function __invoke(LoggerInterface $logger): Debian
     {
         return new Debian(
-            $logger,
-            new VersionBuilder($logger),
+            logger: $logger,
+            versionBuilder: new VersionBuilder($logger),
         );
     }
 }

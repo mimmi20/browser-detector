@@ -20,8 +20,8 @@ final class RaspbianFactory implements RaspbianFactoryInterface
     public function __invoke(LoggerInterface $logger): Raspbian
     {
         return new Raspbian(
-            $logger,
-            new VersionBuilder($logger),
+            logger: $logger,
+            versionBuilder: new VersionBuilder($logger),
         );
     }
 }
