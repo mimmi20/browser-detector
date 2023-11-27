@@ -59,7 +59,10 @@ final class DetectorFactory
             $platformParserFactory = new PlatformParserFactory(logger: $this->logger);
             $platformParser        = $platformParserFactory();
 
-            $deviceLoaderFactory = new DeviceLoaderFactory(logger: $this->logger, companyLoader: $companyLoader);
+            $deviceLoaderFactory = new DeviceLoaderFactory(
+                logger: $this->logger,
+                companyLoader: $companyLoader,
+            );
 
             $deviceParserFactory = new DeviceParserFactory(logger: $this->logger);
             $deviceParser        = $deviceParserFactory();

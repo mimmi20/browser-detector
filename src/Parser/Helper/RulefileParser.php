@@ -19,6 +19,7 @@ use Psr\Log\LoggerInterface;
 use function array_key_exists;
 use function array_keys;
 use function assert;
+use function file_exists;
 use function file_get_contents;
 use function is_array;
 use function is_int;
