@@ -41,6 +41,7 @@ final class Ios implements VersionFactoryInterface
     ];
 
     private const DARWIN_MAP = [
+        '/darwin\/23\.2/i' => '17.2',
         '/darwin\/23\.1/i' => '17.1',
         '/darwin\/23/i' => '17.0',
         '/darwin\/22\.6/i' => '16.6',
