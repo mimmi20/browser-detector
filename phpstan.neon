@@ -56,6 +56,9 @@ parameters:
   # reports properties with native types that weren’t initialized in the class constructor
   checkUninitializedProperties: true
 
+  # reports missing #[\Override] attribute
+  checkMissingOverrideMethodAttribute: true
+
   # doesn’t require typehints for properties if the types can be inferred from constructor injection
   inferPrivatePropertyTypeFromConstructor: false
 
