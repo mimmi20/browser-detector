@@ -106,4 +106,4 @@ The `getBrowser` function returns an array with this structure
 ## Issues and feature requests
 
 Please report your issues and ask for new features on the GitHub Issue Tracker
-at https://github.com/mimmi20/BrowserDetector/issues
+at <https://github.com/mimmi20/BrowserDetector/issues>

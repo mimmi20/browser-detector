@@ -1,4 +1,4 @@
-# file-version: 1.0
+# file-version: 2.0
 
 # text files
 *                text=auto
@@ -6,6 +6,10 @@
 *.md             text eol=lf
 *.js             text eol=lf
 *.ts             text eol=lf
+*.cjs            text eol=lf
+*.cts            text eol=lf
+*.mjs            text eol=lf
+*.mts            text eol=lf
 *.css            text eol=lf
 *.scss           text eol=lf
 *.json           text eol=lf
@@ -29,10 +33,12 @@
 # files/folders to ignore
 /.*                       export-ignore
 .github/CODEOWNERS        export-ignore text eol=lf
+.codeclimate.yml          export-ignore text eol=lf
 .editorconfig             export-ignore text eol=lf
 .gitattributes            export-ignore text eol=lf
 .gitignore                export-ignore text eol=lf
 .markdown-link-check.json export-ignore text eol=lf
+.markdownlint.yaml        export-ignore text eol=lf
 .mega-linter.yml          export-ignore text eol=lf
 .php-cs-fixer.php         export-ignore text eol=lf
 .phplint.yml              export-ignore text eol=lf
@@ -44,9 +50,12 @@ phpcs.xml                 export-ignore text eol=lf
 phpmd.ruleset.xml         export-ignore text eol=lf
 phpstan.neon              export-ignore text eol=lf
 phpunit.xml               export-ignore text eol=lf
+phpunit-integration.xml   export-ignore text eol=lf
 psalm.xml                 export-ignore text eol=lf
 rector.php                export-ignore text eol=lf
 /cache                    export-ignore
+/examples                 export-ignore
+/resources                export-ignore
 /test                     export-ignore
 /tests                    export-ignore
 /tools                    export-ignore
