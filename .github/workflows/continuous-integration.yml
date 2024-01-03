@@ -21,7 +21,7 @@ jobs:
 
     uses: "mimmi20/ci/.github/workflows/validate.yml@master"
     with:
-      extensions: "curl, iconv, mbstring, intl, dom, simplexml, tokenizer, xml, xmlwriter"
+      extensions: "ctype, curl, iconv, mbstring, intl, dom, simplexml, tokenizer, xml, xmlwriter"
       ini-values: "opcache.enable=1, opcache.fast_shutdown=0, zend.assertions=1, assert.exception=On, intl.default_locale=de, intl.use_exceptions=1, zend.exception_ignore_args=0"
       composer-options: "--optimize-autoloader --prefer-dist --prefer-stable -v"
       skip-phplint: false
@@ -34,7 +34,7 @@ jobs:
 
     uses: "mimmi20/ci/.github/workflows/install.yml@master"
     with:
-      extensions: "curl, iconv, mbstring, intl, dom, simplexml, tokenizer, xml, xmlwriter"
+      extensions: "ctype, curl, iconv, mbstring, intl, dom, simplexml, tokenizer, xml, xmlwriter"
       ini-values: "opcache.enable=1, opcache.fast_shutdown=0, zend.assertions=1, assert.exception=On, intl.default_locale=de, intl.use_exceptions=1, zend.exception_ignore_args=0"
       composer-options: "--optimize-autoloader --prefer-dist --prefer-stable -v"
 
@@ -45,66 +45,12 @@ jobs:
 
     uses: "mimmi20/ci/.github/workflows/analytics.yml@master"
     with:
-      extensions: "curl, iconv, mbstring, intl, dom, simplexml, tokenizer, xml, xmlwriter"
+      extensions: "ctype, curl, iconv, mbstring, intl, dom, simplexml, tokenizer, xml, xmlwriter"
       ini-values: "opcache.enable=1, opcache.fast_shutdown=0, zend.assertions=1, assert.exception=On, intl.default_locale=de, intl.use_exceptions=1, zend.exception_ignore_args=0"
       composer-options: "--optimize-autoloader --prefer-dist --prefer-stable -v"
       skip-phpstan: false
       skip-rector: false
       skip-phpmd: false
-
-  check-composer:
-    name: "Check composer dependencies"
-
-    runs-on: "${{ matrix.operating-system }}"
-
-    timeout-minutes: 10
-
-    continue-on-error: false
-
-    needs: "analytics"
-
-    strategy:
-      fail-fast: false
-
-      matrix:
-        operating-system:
-          - "ubuntu-20.04"
-
-        php-version:
-          # Should use the lowest supported version
-          - "8.1"
-
-    steps:
-      - name: "Checkout"
-        uses: "actions/checkout@v4"
-        with:
-          # Disabling shallow clone is recommended for improving relevancy of reporting
-          fetch-depth: 0
-          lfs: false
-          persist-credentials: false
-
-      - name: "Install PHP"
-        uses: "shivammathur/setup-php@2.28.0"
-        with:
-          php-version: "${{ matrix.php-version }}"
-          extensions: "none, phar, json, opcache, curl, iconv, mbstring, ctype, dom, intl, simplexml, tokenizer, xml, xmlwriter"
-          ini-values: "opcache.enable=1, opcache.fast_shutdown=0, zend.assertions=1, assert.exception=On, intl.default_locale=de, intl.use_exceptions=1, zend.exception_ignore_args=0"
-          coverage: "none"
-          tools: "composer:v2, composer-unused"
-        env:
-          fail-fast: true
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          phpts: "nts"
-          debug: true
-
-      - name: "Update dependencies with composer"
-        uses: "ramsey/composer-install@2.2.0"
-        with:
-          dependency-versions: "${{ matrix.dependencies }}"
-          composer-options: "--optimize-autoloader --prefer-dist --prefer-stable -v"
-
-      - name: "Check composer.json"
-        run: "composer-unused unused --ansi --no-progress --no-interaction --output-format=github"
 
   tests:
     name: "UnitTests with PHPUnit"
