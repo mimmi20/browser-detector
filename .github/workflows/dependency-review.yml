@@ -31,7 +31,7 @@ jobs:
           persist-credentials: false
 
       - name: "Dependency Review"
-        uses: "actions/dependency-review-action@v3"
+        uses: "actions/dependency-review-action@v4"
         with:
           "license-check": true
           "vulnerability-check": true
