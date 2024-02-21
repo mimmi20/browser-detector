@@ -18,7 +18,7 @@ use function preg_match;
 
 final class Debian implements VersionFactoryInterface
 {
-    public const SEARCHES = ['kFreeBSD', 'Debian', 'Debian\\-'];
+    public const SEARCHES = ['kFreeBSD', 'Debian', 'Debian\-'];
 
     /** @throws void */
     public function __construct(

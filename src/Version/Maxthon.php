@@ -18,7 +18,7 @@ use function mb_strpos;
 
 final class Maxthon implements VersionFactoryInterface
 {
-    public const SEARCHES = ['MxBrowser\\-iPhone', 'Maxthon', 'MxBrowser', 'Version'];
+    public const SEARCHES = ['MxBrowser\-iPhone', 'Maxthon', 'MxBrowser', 'Version'];
 
     public const SEARCH_OLD = ['MyIE'];
 

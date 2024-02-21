@@ -44,6 +44,7 @@ return $config
                     'separate' => 'bottom',
                 ],
                 'php_unit_strict' => ['assertions' => ['assertAttributeEquals', 'assertAttributeNotEquals', 'assertNotEquals']],
+                'string_implicit_backslashes' => false,
             ],
         ),
     )
