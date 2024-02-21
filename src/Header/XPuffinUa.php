@@ -31,7 +31,7 @@ final class XPuffinUa implements HeaderInterface
         $matches = [];
 
         if (
-            preg_match('/(?:android|iphone os)\\/(?P<device>[^\\/]+)/i', $this->value, $matches)
+            preg_match('/(?:android|iphone os)\/(?P<device>[^\/]+)/i', $this->value, $matches)
             && isset($matches['device'])
         ) {
             $code = mb_strtolower($matches['device']);
