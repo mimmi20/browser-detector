@@ -13,11 +13,8 @@ indent_style = space
 indent_size = 4
 trim_trailing_whitespace = true
 
-[*.{js,ts,cjs,cts,mjs,mts,json,json5,yml}]
+[*.{js,ts,cjs,cts,mjs,mts,json,json5,yaml,yml}]
 indent_size = 2
-
-[composer.json]
-indent_size = 4
 
 [*.md]
 indent_size = 2

@@ -1,47 +1,89 @@
-# file-version: 2.0
+# Declare files that will always have LF line endings on checkout.
 
-# text files
+# file-version: 3.0
+
 *                text=auto
-*.markdown       text eol=lf
-*.md             text eol=lf
+
+# Javascript & Typescript
 *.js             text eol=lf
 *.ts             text eol=lf
 *.cjs            text eol=lf
 *.cts            text eol=lf
 *.mjs            text eol=lf
 *.mts            text eol=lf
+
+# CSS & SCSS
 *.css            text eol=lf
 *.scss           text eol=lf
+
+# Json
 *.json           text eol=lf
 *.json5          text eol=lf
-*.lock           text eol=lf
-*.html           text eol=lf
-*.php            text eol=lf
+
+# Markdown
+*.markdown       text eol=lf
+*.md             text eol=lf
+
+# Yaml
 *.yml            text eol=lf
 *.yaml           text eol=lf
+
+# other
 *.xml            text eol=lf
-*.dist           text eol=lf
+*.lock           text eol=lf
 *.txt            text eol=lf
 *.ini            text eol=lf
 *.sh             text eol=lf
 *.stub           text eol=lf
 *.tmp            text eol=lf
+*.dist           text eol=lf
+*.lock           text eol=lf
+*.html           text eol=lf
+*.phtml          text eol=lf
+*.php            text eol=lf
 
-# binary files
+# Denote all files that are truly binary and should not be modified.
+*.gpg            -text binary
+*.gpg~           -text binary
+*.asc            -text binary
+*.png            -text binary
+*.jpg            -text binary
+*.gif            -text binary
+*.pdf            -text binary
+*.ico            -text binary
+*.odt            -text binary
+*.eot            -text binary
+*.ttf            -text binary
+*.woff           -text binary
+*.woff2          -text binary
+*.swf            -text binary
+*.mp4            -text binary
+*.ogv            -text binary
+*.webm           -text binary
+*.exe            -text binary
 *.zip            -text binary
 
 # files/folders to ignore
 /.*                       export-ignore
 .github/CODEOWNERS        export-ignore text eol=lf
+.browserslistrc           export-ignore text eol=lf
 .codeclimate.yml          export-ignore text eol=lf
 .editorconfig             export-ignore text eol=lf
+.eslintignore             export-ignore text eol=lf
+.eslintrc.json            export-ignore text eol=lf
 .gitattributes            export-ignore text eol=lf
 .gitignore                export-ignore text eol=lf
+.jshintrc                 export-ignore text eol=lf
 .markdown-link-check.json export-ignore text eol=lf
 .markdownlint.yaml        export-ignore text eol=lf
 .mega-linter.yml          export-ignore text eol=lf
+.noai                     export-ignore text eol=lf
+.npmrc                    export-ignore text eol=lf
 .php-cs-fixer.php         export-ignore text eol=lf
 .phplint.yml              export-ignore text eol=lf
+.prettierignore           export-ignore text eol=lf
+.prettierrc.json          export-ignore text eol=lf
+.stylelintrc.json         export-ignore text eol=lf
 .yamllint.yml             export-ignore text eol=lf
 codecov.yml               export-ignore text eol=lf
 infection.json            export-ignore text eol=lf
@@ -51,8 +93,13 @@ phpmd.ruleset.xml         export-ignore text eol=lf
 phpstan.neon              export-ignore text eol=lf
 phpunit.xml               export-ignore text eol=lf
 phpunit-integration.xml   export-ignore text eol=lf
+postcss.config.cjs        export-ignore text eol=lf
+postcss.config.json       export-ignore text eol=lf
 psalm.xml                 export-ignore text eol=lf
 rector.php                export-ignore text eol=lf
+tsconfig.json             export-ignore text eol=lf
+tsconfig.node.json        export-ignore text eol=lf
+vite.config.ts            export-ignore text eol=lf
 /cache                    export-ignore
 /examples                 export-ignore
 /resources                export-ignore
