@@ -27,6 +27,7 @@ jobs:
       skip-validate-composer: false
       skip-phplint: false
       skip-check-composer: false
+      dependency-analyser-options: ""
 
   install:
     name: "Install Project"
