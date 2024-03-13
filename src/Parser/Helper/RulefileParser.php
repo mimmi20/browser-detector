@@ -76,7 +76,7 @@ final class RulefileParser implements RulefileParserInterface
         }
 
         if (is_array($rules)) {
-             $mode = $this->getModeFromRules($rules, $file, $useragent);
+            $mode = $this->getModeFromRules($rules, $file, $useragent);
         }
 
         if (!is_string($mode) && array_key_exists('generic', $factories)) {
