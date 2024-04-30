@@ -28,6 +28,8 @@ use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use UaNormalizer\NormalizerFactory;
 
+use function sprintf;
+
 final class HeaderLoaderTest extends TestCase
 {
     /** @throws NotFoundException */
@@ -42,6 +44,8 @@ final class HeaderLoaderTest extends TestCase
         $engineLoader      = $this->createMock(EngineLoaderInterface::class);
         $normalizerFactory = new NormalizerFactory();
 
+        $key = Constants::HEADER_TEST;
+
         $subject = new HeaderLoader(
             $deviceParser,
             $platformParser,
@@ -54,9 +58,9 @@ final class HeaderLoaderTest extends TestCase
         );
 
         $this->expectException(NotFoundException::class);
-        $this->expectExceptionMessage('the header with name "unknown header" was not found');
+        $this->expectExceptionMessage(sprintf('the header with name "%s" was not found', $key));
 
-        $subject->load('unknown header', '');
+        $subject->load($key, '');
     }
 
     /**

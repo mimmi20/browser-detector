@@ -82,4 +82,6 @@ final class Constants
     public const HEADER_SEC_CH_UA_PLATFORM = 'Sec-CH-UA-Platform';
 
     public const HEADER_SEC_CH_UA_PLATFORM_VERSION = 'Sec-CH-UA-Platform-Version';
+
+    public const HEADER_TEST = 'unknown header';
 }

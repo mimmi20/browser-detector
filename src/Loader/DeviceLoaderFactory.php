@@ -21,7 +21,7 @@ use function array_key_exists;
 
 final class DeviceLoaderFactory implements DeviceLoaderFactoryInterface
 {
-    public const DATA_PATH = __DIR__ . '/../../data/devices/';
+    private const DATA_PATH = __DIR__ . '/../../data/devices/';
 
     /** @var array<DeviceLoaderInterface> */
     private array $loader = [];

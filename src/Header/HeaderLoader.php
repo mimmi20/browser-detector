@@ -25,6 +25,7 @@ use Closure;
 use UaNormalizer\NormalizerFactory;
 
 use function array_key_exists;
+use function sprintf;
 
 final class HeaderLoader implements HeaderLoaderInterface
 {
@@ -145,17 +146,25 @@ final class HeaderLoader implements HeaderLoaderInterface
         ];
     }
 
-    /** @throws void */
+    /**
+     * @param Constants::HEADER_* $key
+     *
+     * @throws void
+     */
     public function has(string $key): bool
     {
         return array_key_exists($key, $this->factories);
     }
 
-    /** @throws NotFoundException */
+    /**
+     * @param Constants::HEADER_* $key
+     *
+     * @throws NotFoundException
+     */
     public function load(string $key, string $value): HeaderInterface
     {
         if (!$this->has($key)) {
-            throw new NotFoundException('the header with name "' . $key . '" was not found');
+            throw new NotFoundException(sprintf('the header with name "%s" was not found', $key));
         }
 
         $factory = $this->factories[$key];

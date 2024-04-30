@@ -120,7 +120,7 @@ final class GenericRequest implements GenericRequestInterface
         $headers  = array_change_key_case($this->headers, CASE_LOWER);
         $filtered = array_filter(
             self::HEADERS,
-            static fn ($value): bool => array_key_exists(mb_strtolower($value), $headers),
+            static fn (string $value): bool => array_key_exists(mb_strtolower($value), $headers),
         );
 
         foreach ($filtered as $header) {
