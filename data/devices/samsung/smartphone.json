@@ -1185,11 +1185,27 @@
   },
   "samsung sm-a217f": {
     "deviceName": "SM-A217F",
-    "marketingName": "Galaxy A21s (2020)",
+    "marketingName": "Galaxy A21s (2020, International)",
     "manufacturer": "samsung",
     "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1600,
+      "height": 720,
+      "touch": true,
+      "size": 6.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sm-a217m": {
+    "deviceName": "SM-A217M",
+    "marketingName": "Galaxy A21s (2020, USA)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 1600,
       "height": 720,
@@ -12095,6 +12111,22 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "samsung sm-m215g": {
+    "deviceName": "SM-M215G",
+    "marketingName": "Galaxy M21",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2340,
+      "height": 1080,
+      "touch": true,
+      "size": 6.4
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "samsung sm-m3050": {
     "deviceName": "SM-M3050",
     "marketingName": "Galaxy M30",
@@ -19807,6 +19839,22 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "samsung sc-04g": {
+    "deviceName": "SC-04G",
+    "marketingName": "Galaxy S6 Edge",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": null,
+    "simCount": null,
+    "display": {
+      "width": 2560,
+      "height": 1440,
+      "touch": true,
+      "size": 5.1
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "samsung sm-g9250": {
     "deviceName": "SM-G9250",
     "marketingName": "Galaxy S6 Edge",
@@ -24991,6 +25039,22 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "samsung sc-52d": {
+    "deviceName": "SC-52D",
+    "marketingName": "Galaxy S23 Ultra",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 3088,
+      "height": 1440,
+      "touch": true,
+      "size": 6.8
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "samsung sm-s9180": {
     "deviceName": "SM-S9180",
     "marketingName": "Galaxy S23 Ultra (China)",
@@ -25089,6 +25153,22 @@
   },
   "samsung sm-s908n": {
     "deviceName": "SM-S908N",
+    "marketingName": "Galaxy S22 Ultra 5G (Korea)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 3088,
+      "height": 1440,
+      "touch": true,
+      "size": 6.8
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sc-52c": {
+    "deviceName": "SC-52C",
     "marketingName": "Galaxy S22 Ultra 5G (Korea)",
     "manufacturer": "samsung",
     "brand": "samsung",
@@ -27823,6 +27903,22 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "samsung sm-m326b": {
+    "deviceName": "SM-M326B",
+    "marketingName": "Galaxy M32 5G",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1600,
+      "height": 720,
+      "touch": true,
+      "size": 6.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "samsung sm-m236b": {
     "deviceName": "SM-M236B",
     "marketingName": "Galaxy M23 5G",
@@ -27841,6 +27937,22 @@
   },
   "samsung sm-m236l": {
     "deviceName": "SM-M236L",
+    "marketingName": "Galaxy M23 5G",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2408,
+      "height": 1080,
+      "touch": true,
+      "size": 6.6
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sm-m236q": {
+    "deviceName": "SM-M236Q",
     "marketingName": "Galaxy M23 5G",
     "manufacturer": "samsung",
     "brand": "samsung",
@@ -29787,6 +29899,118 @@
       "height": 1080,
       "touch": true,
       "size": 6.7
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sm-g991r4": {
+    "deviceName": "SM-G991R4",
+    "marketingName": "Galaxy S21 5G",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.2
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sm-g991q": {
+    "deviceName": "SM-G991Q",
+    "marketingName": "Galaxy S21 5G",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.2
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sm-m426b": {
+    "deviceName": "SM-M426B",
+    "marketingName": "Galaxy M42 (India)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1600,
+      "height": 720,
+      "touch": true,
+      "size": 6.6
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sm-e025f": {
+    "deviceName": "SM-E025F",
+    "marketingName": "Galaxy F02s",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1600,
+      "height": 720,
+      "touch": true,
+      "size": 6.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sm-m025f": {
+    "deviceName": "SM-M025F",
+    "marketingName": "Galaxy M02s",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1600,
+      "height": 720,
+      "touch": true,
+      "size": 6.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sm-w2022": {
+    "deviceName": "SM-W2022",
+    "marketingName": "Galaxy W22 5G",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2208,
+      "height": 1768,
+      "touch": true,
+      "size": 7.6
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "samsung sm-e236b": {
+    "deviceName": "SM-E236B",
+    "marketingName": "Galaxy F23",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1408,
+      "height": 1080,
+      "touch": true,
+      "size": 6.6
     },
     "type": "smartphone",
     "platform": "android"

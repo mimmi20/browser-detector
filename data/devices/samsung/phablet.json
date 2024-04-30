@@ -127,6 +127,54 @@
     "type": "phablet",
     "platform": "android"
   },
+  "samsung sm-a716t": {
+    "deviceName": "SM-A716T",
+    "marketingName": "Galaxy A71 (5G, USA)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": null,
+    "simCount": null,
+    "display": {
+      "width": 1600,
+      "height": 720,
+      "touch": true,
+      "size": 6.5
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sm-a516t": {
+    "deviceName": "SM-A516T",
+    "marketingName": "Galaxy A51 (5G, USA)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.5
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sm-a516u": {
+    "deviceName": "SM-A516U",
+    "marketingName": "Galaxy A51 (5G, USA)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.5
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
   "samsung sm-g8850": {
     "deviceName": "SM-G8850",
     "marketingName": "Galaxy A8 Star Duos",

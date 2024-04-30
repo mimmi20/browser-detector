@@ -113,11 +113,11 @@
   },
   "samsung sm-r800": {
     "deviceName": "SM-R800",
-    "marketingName": "Gear S4",
+    "marketingName": "Galaxy Watch (46mm)",
     "manufacturer": "samsung",
     "brand": "samsung",
     "dualOrientation": null,
-    "simCount": null,
+    "simCount": 0,
     "display": {
       "width": 360,
       "height": 360,
@@ -139,6 +139,582 @@
       "height": 176,
       "touch": true,
       "size": 1.76
+    },
+    "type": "watch",
+    "platform": null
+  },
+  "samsung sm-r870": {
+    "deviceName": "SM-R870",
+    "marketingName": "Galaxy Watch 4 (44mm)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": null,
+    "simCount": 0,
+    "display": {
+      "width": 450,
+      "height": 450,
+      "touch": true,
+      "size": 1.4
+    },
+    "type": "watch",
+    "platform": null
+  },
+  "samsung sm-r875f": {
+    "deviceName": "SM-R875F",
+    "marketingName": "Galaxy Watch 4 (44mm, LTE)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": null,
+    "simCount": 0,
+    "display": {
+      "width": 450,
+      "height": 450,
+      "touch": true,
+      "size": 1.4
+    },
+    "type": "watch",
+    "platform": null
+  },
+  "samsung sm-r860": {
+    "deviceName": "SM-R860",
+    "marketingName": "Galaxy Watch 4 (40mm)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": null,
+    "simCount": 0,
+    "display": {
+      "width": 396,
+      "height": 396,
+      "touch": true,
+      "size": 1.2
+    },
+    "type": "watch",
+    "platform": null
+  },
+  "samsung sm-r925f": {
+    "deviceName": "SM-R925F",
+    "marketingName": "Galaxy Watch 5 Pro (44mm, LTE)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": null,
+    "simCount": 1,
+    "display": {
+      "width": 450,
+      "height": 450,
+      "touch": true,
+      "size": 1.4
+    },
+    "type": "watch",
+    "platform": null
+  },
+  "samsung sm-r925n": {
+    "deviceName": "SM-R925N",
+    "marketingName": "Galaxy Watch 5 Pro (44mm, LTE)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": null,
+    "simCount": 1,
+    "display": {
+      "width": 450,
+      "height": 450,
+      "touch": true,
+      "size": 1.4
+    },
+    "type": "watch",
+    "platform": null
+  },
+  "samsung sm-r925u": {
+    "deviceName": "SM-R925U",
+    "marketingName": "Galaxy Watch 5 Pro (44mm, LTE)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": null,
+    "simCount": 1,
+    "display": {
+      "width": 450,
+      "height": 450,
+      "touch": true,
+      "size": 1.4
+    },
+    "type": "watch",
+    "platform": null
+  },
+  "samsung sm-r915u": {
+    "deviceName": "SM-R915U",
+    "marketingName": "Galaxy Watch 5 (44mm, LTE)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": null,
+    "simCount": 1,
+    "display": {
+      "width": 450,
+      "height": 450,
+      "touch": true,
+      "size": 1.4
+    },
+    "type": "watch",
+    "platform": null
+  },
+  "samsung sm-r915f": {
+    "deviceName": "SM-R915F",
+    "marketingName": "Galaxy Watch 5 (44mm, LTE)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": null,
+    "simCount": 1,
+    "display": {
+      "width": 450,
+      "height": 450,
+      "touch": true,
+      "size": 1.4
+    },
+    "type": "watch",
+    "platform": null
+  },
+  "samsung sm-r905u": {
+    "deviceName": "SM-R905U",
+    "marketingName": "Galaxy Watch 5 (40mm, LTE)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": null,
+    "simCount": 1,
+    "display": {
+      "width": 396,
+      "height": 396,
+      "touch": true,
+      "size": 1.2
+    },
+    "type": "watch",
+    "platform": null
+  },
+  "samsung sm-r905n": {
+    "deviceName": "SM-R905N",
+    "marketingName": "Galaxy Watch 5 (40mm, LTE)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": null,
+    "simCount": 1,
+    "display": {
+      "width": 396,
+      "height": 396,
+      "touch": true,
+      "size": 1.2
+    },
+    "type": "watch",
+    "platform": null
+  },
+  "samsung sm-r905f": {
+    "deviceName": "SM-R905F",
+    "marketingName": "Galaxy Watch 5 (40mm, LTE)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": null,
+    "simCount": 1,
+    "display": {
+      "width": 396,
+      "height": 396,
+      "touch": true,
+      "size": 1.2
+    },
+    "type": "watch",
+    "platform": null
+  },
+  "samsung sm-r910": {
+    "deviceName": "SM-R910",
+    "marketingName": "Galaxy Watch 5 (44mm)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": null,
+    "simCount": 0,
+    "display": {
+      "width": 450,
+      "height": 450,
+      "touch": true,
+      "size": 1.4
+    },
+    "type": "watch",
+    "platform": null
+  },
+  "samsung sm-r895u": {
+    "deviceName": "SM-R895U",
+    "marketingName": "Galaxy Watch 4 Classic (46mm, LTE)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": null,
+    "simCount": 0,
+    "display": {
+      "width": 450,
+      "height": 450,
+      "touch": true,
+      "size": 1.4
+    },
+    "type": "watch",
+    "platform": null
+  },
+  "samsung sm-r895n": {
+    "deviceName": "SM-R895N",
+    "marketingName": "Galaxy Watch 4 Classic (46mm, LTE)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": null,
+    "simCount": 0,
+    "display": {
+      "width": 450,
+      "height": 450,
+      "touch": true,
+      "size": 1.4
+    },
+    "type": "watch",
+    "platform": null
+  },
+  "samsung sm-r895f": {
+    "deviceName": "SM-R895F",
+    "marketingName": "Galaxy Watch 4 Classic (46mm, LTE)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": null,
+    "simCount": 0,
+    "display": {
+      "width": 450,
+      "height": 450,
+      "touch": true,
+      "size": 1.4
+    },
+    "type": "watch",
+    "platform": null
+  },
+  "samsung sm-r890": {
+    "deviceName": "SM-R890",
+    "marketingName": "Galaxy Watch 4 Classic (46mm)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": null,
+    "simCount": 0,
+    "display": {
+      "width": 450,
+      "height": 450,
+      "touch": true,
+      "size": 1.4
+    },
+    "type": "watch",
+    "platform": null
+  },
+  "samsung sm-r885u": {
+    "deviceName": "SM-R885U",
+    "marketingName": "Galaxy Watch 4 Classic (42mm, LTE)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": null,
+    "simCount": 0,
+    "display": {
+      "width": 396,
+      "height": 396,
+      "touch": true,
+      "size": 1.2
+    },
+    "type": "watch",
+    "platform": null
+  },
+  "samsung sm-r885n": {
+    "deviceName": "SM-R885N",
+    "marketingName": "Galaxy Watch 4 Classic (42mm, LTE)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": null,
+    "simCount": 0,
+    "display": {
+      "width": 396,
+      "height": 396,
+      "touch": true,
+      "size": 1.2
+    },
+    "type": "watch",
+    "platform": null
+  },
+  "samsung sm-r885f": {
+    "deviceName": "SM-R885F",
+    "marketingName": "Galaxy Watch 4 Classic (42mm, LTE)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": null,
+    "simCount": 0,
+    "display": {
+      "width": 396,
+      "height": 396,
+      "touch": true,
+      "size": 1.2
+    },
+    "type": "watch",
+    "platform": null
+  },
+  "samsung sm-r880": {
+    "deviceName": "SM-R880",
+    "marketingName": "Galaxy Watch 4 Classic (42mm)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": null,
+    "simCount": 0,
+    "display": {
+      "width": 396,
+      "height": 396,
+      "touch": true,
+      "size": 1.2
+    },
+    "type": "watch",
+    "platform": null
+  },
+  "samsung sm-r810": {
+    "deviceName": "SM-R810",
+    "marketingName": "Galaxy Watch (42mm)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": null,
+    "simCount": 0,
+    "display": {
+      "width": 360,
+      "height": 360,
+      "touch": true,
+      "size": 1.2
+    },
+    "type": "watch",
+    "platform": null
+  },
+  "samsung sm-r815w": {
+    "deviceName": "SM-R815W",
+    "marketingName": "Galaxy Watch (42mm, LTE)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": null,
+    "simCount": 1,
+    "display": {
+      "width": 360,
+      "height": 360,
+      "touch": true,
+      "size": 1.2
+    },
+    "type": "watch",
+    "platform": null
+  },
+  "samsung sm-r815u": {
+    "deviceName": "SM-R815U",
+    "marketingName": "Galaxy Watch (42mm, LTE)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": null,
+    "simCount": 1,
+    "display": {
+      "width": 360,
+      "height": 360,
+      "touch": true,
+      "size": 1.2
+    },
+    "type": "watch",
+    "platform": null
+  },
+  "samsung sm-r815f": {
+    "deviceName": "SM-R815F",
+    "marketingName": "Galaxy Watch (42mm, LTE)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": null,
+    "simCount": 1,
+    "display": {
+      "width": 360,
+      "height": 360,
+      "touch": true,
+      "size": 1.2
+    },
+    "type": "watch",
+    "platform": null
+  },
+  "samsung sm-r805f": {
+    "deviceName": "SM-R805F",
+    "marketingName": "Galaxy Watch (46mm, LTE)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": null,
+    "simCount": 1,
+    "display": {
+      "width": 360,
+      "height": 360,
+      "touch": true,
+      "size": 1.3
+    },
+    "type": "watch",
+    "platform": null
+  },
+  "samsung sm-r805u": {
+    "deviceName": "SM-R805U",
+    "marketingName": "Galaxy Watch (46mm, LTE)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": null,
+    "simCount": 1,
+    "display": {
+      "width": 360,
+      "height": 360,
+      "touch": true,
+      "size": 1.3
+    },
+    "type": "watch",
+    "platform": null
+  },
+  "samsung sm-r8050": {
+    "deviceName": "SM-R8050",
+    "marketingName": "Galaxy Watch (46mm, LTE)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": null,
+    "simCount": 1,
+    "display": {
+      "width": 360,
+      "height": 360,
+      "touch": true,
+      "size": 1.3
+    },
+    "type": "watch",
+    "platform": null
+  },
+  "samsung sm-r825u": {
+    "deviceName": "SM-R825U",
+    "marketingName": "Galaxy Watch Active 2 (44mm, LTE)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": null,
+    "simCount": 1,
+    "display": {
+      "width": 360,
+      "height": 360,
+      "touch": true,
+      "size": 1.4
+    },
+    "type": "watch",
+    "platform": null
+  },
+  "samsung sm-r825f": {
+    "deviceName": "SM-R825F",
+    "marketingName": "Galaxy Watch Active 2 (44mm, LTE)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": null,
+    "simCount": 1,
+    "display": {
+      "width": 360,
+      "height": 360,
+      "touch": true,
+      "size": 1.4
+    },
+    "type": "watch",
+    "platform": null
+  },
+  "samsung sm-r835f": {
+    "deviceName": "SM-R835F",
+    "marketingName": "Galaxy Watch Active 2 (40mm, LTE)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": null,
+    "simCount": 1,
+    "display": {
+      "width": 360,
+      "height": 360,
+      "touch": true,
+      "size": 1.2
+    },
+    "type": "watch",
+    "platform": null
+  },
+  "samsung sm-r835u": {
+    "deviceName": "SM-R835U",
+    "marketingName": "Galaxy Watch Active 2 (40mm, LTE)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": null,
+    "simCount": 1,
+    "display": {
+      "width": 360,
+      "height": 360,
+      "touch": true,
+      "size": 1.2
+    },
+    "type": "watch",
+    "platform": null
+  },
+  "samsung sm-r830": {
+    "deviceName": "SM-R830",
+    "marketingName": "Galaxy Watch Active 2 (40mm)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": null,
+    "simCount": 0,
+    "display": {
+      "width": 360,
+      "height": 360,
+      "touch": true,
+      "size": 1.2
+    },
+    "type": "watch",
+    "platform": null
+  },
+  "samsung sm-r845u": {
+    "deviceName": "SM-R845U",
+    "marketingName": "Galaxy Watch 3 (45mm, LTE)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": null,
+    "simCount": 0,
+    "display": {
+      "width": 360,
+      "height": 360,
+      "touch": true,
+      "size": 1.4
+    },
+    "type": "watch",
+    "platform": null
+  },
+  "samsung sm-r845f": {
+    "deviceName": "SM-R845F",
+    "marketingName": "Galaxy Watch 3 (45mm, LTE)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": null,
+    "simCount": 0,
+    "display": {
+      "width": 360,
+      "height": 360,
+      "touch": true,
+      "size": 1.4
+    },
+    "type": "watch",
+    "platform": null
+  },
+  "samsung sm-r845n": {
+    "deviceName": "SM-R845N",
+    "marketingName": "Galaxy Watch 3 (45mm, LTE)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": null,
+    "simCount": 0,
+    "display": {
+      "width": 360,
+      "height": 360,
+      "touch": true,
+      "size": 1.4
+    },
+    "type": "watch",
+    "platform": null
+  },
+  "samsung sm-r840": {
+    "deviceName": "SM-R840",
+    "marketingName": "Galaxy Watch 3 (45mm)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": null,
+    "simCount": 0,
+    "display": {
+      "width": 360,
+      "height": 360,
+      "touch": true,
+      "size": 1.4
     },
     "type": "watch",
     "platform": null
