@@ -20,7 +20,7 @@ final class BrowserParser implements BrowserParserInterface
 {
     private const GENERIC_FILE = __DIR__ . '/../../data/factories/browsers.json';
 
-    private const SPECIFIC_FILE = __DIR__ . '/../../data/factories/browsers/%s.json';
+    private const SPECIFIC_FILE = __DIR__ . '/../data/factories/browsers/%s.json';
 
     /** @throws void */
     public function __construct(private readonly RulefileParserInterface $fileParser)

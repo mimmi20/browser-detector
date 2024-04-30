@@ -17,7 +17,7 @@ use RuntimeException;
 
 final class CompanyLoaderFactory implements CompanyLoaderFactoryInterface
 {
-    public const DATA_PATH = __DIR__ . '/../../data/companies';
+    private const DATA_PATH = __DIR__ . '/../../data/companies';
 
     private CompanyLoader | null $loader = null;
 
