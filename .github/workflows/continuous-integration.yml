@@ -172,7 +172,7 @@ jobs:
         run: "vendor/bin/phpunit -c phpunit.xml --coverage-clover=.build/coverage/clover.xml --coverage-text --coverage-xml=.build/coverage/coverage-xml --log-junit=.build/coverage/phpunit.junit.xml --display-warnings --display-deprecations"
 
       - name: "Upload coverage to Codecov"
-        uses: "codecov/codecov-action@v4.3.0"
+        uses: "codecov/codecov-action@v4.3.1"
         with:
           file: ".build/coverage/clover.xml"
           flags: "phpunit,php-${{ matrix.php-version }},${{ matrix.operating-system }}"
