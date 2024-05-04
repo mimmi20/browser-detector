@@ -338,7 +338,7 @@ final class DetectorTest extends TestCase
     }
 
     /**
-     * @return array<string, array<string, (array<string, string>)>>
+     * @return array<string, array<int, mixed>>
      *
      * @throws Exception
      * @throws NotNumericException
@@ -440,8 +440,8 @@ final class DetectorTest extends TestCase
                 $index = sprintf('file:%s test:%d', $filepath, $i);
 
                 $data[$index] = [
-                    'headers' => $expectedResult['headers'],
-                    'result' => $expectedResult,
+                    $expectedResult['headers'],
+                    $expectedResult,
                 ];
             }
         }
