@@ -2308,5 +2308,47 @@
       "version": "112.0.0.0",
       "manufacturer": "google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; Captiva Pad 10 3G Plus Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/119.0.6045.163 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Pad 10 3G Plus",
+      "marketingName": "Pad 10 3G Plus",
+      "manufacturer": "captiva",
+      "brand": "captiva",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1024,
+        "height": 600,
+        "touch": true,
+        "size": 10
+      },
+      "type": "fone-pad",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "7.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Android WebView",
+      "version": "119.0.6045.163",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "119.0.6045.163",
+      "manufacturer": "google"
+    }
   }
 ]

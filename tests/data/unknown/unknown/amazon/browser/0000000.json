@@ -1449,5 +1449,72 @@
       "version": "118.0.5993.111",
       "manufacturer": "google"
     }
+  },
+  {
+    "headers": {
+      "device-memory": "2",
+      "downlink": "10",
+      "dpr": "1.55",
+      "ect": "4g",
+      "rtt": "100",
+      "sec-ch-device-memory": "2",
+      "sec-ch-dpr": "1.55",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-prefers-reduced-transparency": "no-preference",
+      "sec-ch-ua": "\"Not_A Brand\";v=\"8\", \"Chromium\";v=\"120\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version": "\"\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-model": "\"\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"\"",
+      "sec-ch-viewport-height": "640",
+      "sec-ch-viewport-width": "517",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; KFRAPWI) AppleWebKit/537.36 (KHTML, like Gecko) Silk/120.3.5 like Chrome/120.0.6099.266 Safari/537.36",
+      "viewport-width": "517",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": null,
+      "brand": null,
+      "dualOrientation": false,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": null,
+        "size": null
+      },
+      "type": null,
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": null,
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Silk",
+      "version": "120.3.5",
+      "manufacturer": "amazon",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "120.0.6099.266",
+      "manufacturer": "google"
+    }
   }
 ]

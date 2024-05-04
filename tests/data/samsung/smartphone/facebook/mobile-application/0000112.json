@@ -1,6 +1,48 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-S908B Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/104.0.5112.97 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/382.0.0.33.111;]"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-S908B",
+      "marketingName": "Galaxy S22 Ultra 5G (International)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 3088,
+        "height": 1440,
+        "touch": true,
+        "size": 6.8
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Facebook App",
+      "version": "382.0.0.33.111",
+      "manufacturer": "facebook",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "104.0.5112.97",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 9; SM-G390F Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/105.0.5195.79 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/383.1.0.25.106;]"
     },
     "device": {
@@ -132,11 +174,11 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-A217F",
-      "marketingName": "Galaxy A21s (2020)",
+      "marketingName": "Galaxy A21s (2020, International)",
       "manufacturer": "samsung",
       "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1600,
         "height": 720,
@@ -636,11 +678,11 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-A217F",
-      "marketingName": "Galaxy A21s (2020)",
+      "marketingName": "Galaxy A21s (2020, International)",
       "manufacturer": "samsung",
       "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1600,
         "height": 720,
@@ -3287,11 +3329,11 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-A217F",
-      "marketingName": "Galaxy A21s (2020)",
+      "marketingName": "Galaxy A21s (2020, International)",
       "manufacturer": "samsung",
       "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1600,
         "height": 720,
@@ -3539,11 +3581,11 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-A217F",
-      "marketingName": "Galaxy A21s (2020)",
+      "marketingName": "Galaxy A21s (2020, International)",
       "manufacturer": "samsung",
       "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1600,
         "height": 720,
@@ -4201,48 +4243,6 @@
     "engine": {
       "name": "Blink",
       "version": "104.0.5112.97",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 8.0.0; SM-G935F Build/R16NW; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.115 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/407.0.0.30.97;]"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SM-G935F",
-      "marketingName": "Galaxy S7 Edge (Global)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 2560,
-        "height": 1440,
-        "touch": true,
-        "size": 5.5
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "8.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Facebook App",
-      "version": "407.0.0.30.97",
-      "manufacturer": "facebook",
-      "type": "mobile-application",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "111.0.5563.115",
       "manufacturer": "google"
     }
   }

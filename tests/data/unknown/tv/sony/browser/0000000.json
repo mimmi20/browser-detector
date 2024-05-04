@@ -40,5 +40,47 @@
       "version": "32.0.1700.107",
       "manufacturer": "google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (linux armv7I) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.19 Safari/537.36 OPR/19.0.1325.0 OMI/4.1.49.ALSAN3.1 SonyCEBrowser/1.0 (BDPlayer; BDP10G_BX; BDP2015/M22.D.0017; XAE; )"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general TV device",
+      "marketingName": "general TV device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation"
+    },
+    "client": {
+      "name": "SonyCEBrowser",
+      "version": "1.0.0",
+      "manufacturer": "sony",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "32.0.1700.19",
+      "manufacturer": "google"
+    }
   }
 ]

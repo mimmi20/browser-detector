@@ -40,5 +40,47 @@
       "version": "30.0.1599.114",
       "manufacturer": "google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux;) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36 SRAF/4.0 (; SERAPHIC; SERAPHIC; v4.0; v1.0; ); CE-HTML/1.0 hbbtv NETRANGEMMH"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "NETRANGEMMH",
+      "marketingName": "NETRANGEMMH",
+      "manufacturer": "net-range",
+      "brand": "net-range",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation"
+    },
+    "client": {
+      "name": "Sraf",
+      "version": "4.0.0",
+      "manufacturer": "seraphic",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "47.0.2526.106",
+      "manufacturer": "google"
+    }
   }
 ]

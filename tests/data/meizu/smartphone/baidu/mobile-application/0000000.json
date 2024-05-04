@@ -250,5 +250,47 @@
       "version": "2.0.0",
       "manufacturer": "baidu"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1; m2 note Build/LMY47D) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/35.0.1916.138 Mobile Safari/537.36 T7/7.4 baiduboxapp/8.2.5 (Baidu; P1 5.1)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "M571C",
+      "marketingName": "M2 Note",
+      "manufacturer": "meizu",
+      "brand": "meizu",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "5.1.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Baidu Box App",
+      "version": "8.2.5",
+      "manufacturer": "baidu",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "T7",
+      "version": "7.4.0",
+      "manufacturer": "baidu"
+    }
   }
 ]

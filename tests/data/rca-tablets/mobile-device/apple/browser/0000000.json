@@ -82,5 +82,47 @@
       "version": null,
       "manufacturer": "apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (iPad; U; CPU OS 5_0 like Mac OS X; en-us) AppleWebKit/534.46 (KHTML, like Gecko) Version/5.0.2 Mobile/9A5248d Safari/6533.18.5#2.0#TCL/RCA-LA-RT41KB-S1/28/tclwebkit1.0.2/1920*1080(551908975,null;231834470,000)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general RCA Tablets device",
+      "marketingName": "general RCA Tablets device",
+      "manufacturer": "rca-tablets",
+      "brand": "rca-tablets",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "5.0.0",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "Safari",
+      "version": "5.0.2",
+      "manufacturer": "apple",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "534.46.0",
+      "manufacturer": "apple"
+    }
   }
 ]

@@ -437,11 +437,11 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-A217F",
-      "marketingName": "Galaxy A21s (2020)",
+      "marketingName": "Galaxy A21s (2020, International)",
       "manufacturer": "samsung",
       "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1600,
         "height": 720,
@@ -763,6 +763,48 @@
     "engine": {
       "name": "Blink",
       "version": "97.0.4692.98",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-G991Q) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.181 Mobile Safari/537.36 (Ecosia android@88.0.4324.181)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-G991Q",
+      "marketingName": "Galaxy S21 5G",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.2
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Ecosia",
+      "version": "88.0.4324.181",
+      "manufacturer": "unknown",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "88.0.4324.181",
       "manufacturer": "google"
     }
   },
@@ -3207,11 +3249,11 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-A217F",
-      "marketingName": "Galaxy A21s (2020)",
+      "marketingName": "Galaxy A21s (2020, International)",
       "manufacturer": "samsung",
       "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1600,
         "height": 720,
@@ -3711,11 +3753,11 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-A217F",
-      "marketingName": "Galaxy A21s (2020)",
+      "marketingName": "Galaxy A21s (2020, International)",
       "manufacturer": "samsung",
       "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1600,
         "height": 720,
@@ -4499,48 +4541,6 @@
     "engine": {
       "name": "Blink",
       "version": "97.0.4692.98",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; SM-J600FN) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.41 Mobile Safari/537.36 (Ecosia android@101.0.4951.41)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SM-J600FN",
-      "marketingName": "Galaxy J6 (2018)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1480,
-        "height": 720,
-        "touch": true,
-        "size": 5.6
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Ecosia",
-      "version": "101.0.4951.41",
-      "manufacturer": "unknown",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "101.0.4951.41",
       "manufacturer": "google"
     }
   }

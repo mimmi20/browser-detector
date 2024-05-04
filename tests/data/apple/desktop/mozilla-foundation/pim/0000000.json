@@ -3526,5 +3526,47 @@
       "version": "115.0.0",
       "manufacturer": "mozilla-foundation"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:78.0) Gecko/20100101 Thunderbird/78.14.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Mac OS X",
+      "marketingName": "Mac OS X",
+      "version": "10.11.0",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "Thunderbird",
+      "version": "78.14.0",
+      "manufacturer": "mozilla-foundation",
+      "type": "pim",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Gecko",
+      "version": "78.0.0",
+      "manufacturer": "mozilla-foundation"
+    }
   }
 ]

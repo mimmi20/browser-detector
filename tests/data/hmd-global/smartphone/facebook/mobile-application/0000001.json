@@ -1510,5 +1510,47 @@
       "version": "110.0.5481.153",
       "manufacturer": "google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; TA-1032 Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/120.0.6099.230 Mobile Safari/537.36 Instagram 315.0.0.29.109 Android (28/9; 360dpi; 720x1280; HMD Global/Nokia; TA-1032; NE1; mt6735; sr_RS_#Cyrl; 558601268)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "TA-1032",
+      "marketingName": "3",
+      "manufacturer": "hmd-global",
+      "brand": "nokia",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Instagram App",
+      "version": "315.0.0.29.109",
+      "manufacturer": "facebook",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "120.0.6099.230",
+      "manufacturer": "google"
+    }
   }
 ]

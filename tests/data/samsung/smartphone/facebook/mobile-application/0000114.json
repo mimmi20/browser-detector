@@ -1,6 +1,48 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.0.0; SM-A520F Build/R16NW; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/110.0.5481.153 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/405.0.0.23.72;]"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-A520F",
+      "marketingName": "Galaxy A5 (2017)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.2
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Facebook App",
+      "version": "405.0.0.23.72",
+      "manufacturer": "facebook",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "110.0.5481.153",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 13; SM-A536B Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.49 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/404.0.0.35.70;]"
     },
     "device": {
@@ -216,11 +258,11 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-A217F",
-      "marketingName": "Galaxy A21s (2020)",
+      "marketingName": "Galaxy A21s (2020, International)",
       "manufacturer": "samsung",
       "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1600,
         "height": 720,
@@ -258,11 +300,11 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-A217F",
-      "marketingName": "Galaxy A21s (2020)",
+      "marketingName": "Galaxy A21s (2020, International)",
       "manufacturer": "samsung",
       "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 1600,
         "height": 720,
@@ -4219,52 +4261,6 @@
     "engine": {
       "name": "Blink",
       "version": "114.0.5735.61",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "sec-fetch-dest": "document",
-      "sec-fetch-mode": "navigate",
-      "sec-fetch-site": "cross-site",
-      "user-agent": "Mozilla/5.0 (Linux; Android 11; SM-A202F Build/RP1A.200720.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/114.0.5735.60 Mobile Safari/537.36 Instagram 288.0.0.22.66 Android (30/11; 320dpi; 720x1406; samsung; SM-A202F; a20e; exynos7884B; de_DE; 486308486)",
-      "x-requested-with": "com.instagram.android"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SM-A202F",
-      "marketingName": "Galaxy A20e",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1560,
-        "height": 720,
-        "touch": true,
-        "size": 5.8
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "11.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Instagram App",
-      "version": null,
-      "manufacturer": "facebook",
-      "type": "mobile-application",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "114.0.5735.60",
       "manufacturer": "google"
     }
   }

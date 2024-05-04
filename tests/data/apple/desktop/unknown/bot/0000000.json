@@ -754,5 +754,47 @@
       "version": "602.4.8",
       "manufacturer": "apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:72.0) Gecko/20100101 Firefox/72.0 (compatible; mozilla/5.0 (macintosh; intel mac os x 10_9_5) applewebkit/537.78.2 (khtml, like gecko) version/7.0.6 safari/537.78.2; +https://github.com/rom1504/img2dataset)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Ubuntu",
+      "marketingName": "Ubuntu",
+      "version": null,
+      "manufacturer": "canonical"
+    },
+    "client": {
+      "name": "img2dataset",
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "bot",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.78.2",
+      "manufacturer": "apple"
+    }
   }
 ]

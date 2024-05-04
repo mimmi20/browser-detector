@@ -1468,5 +1468,176 @@
       "version": "87.0.4280.88",
       "manufacturer": "google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Android armv8l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.91 Safari/537.36 Model/Vestel-MB185 VSTVB MB185 FVC/6.0 (CECOTEC; MB185; ) HbbTV/1.5.1 (+DRM; CECOTEC; MB185; R2.0.1.0.0.V0.25.3; ; _TV_MSTARG31_2021;) SmartTvA/3.0.0 LaTivu_1.0.1_2022"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Smart TV",
+      "marketingName": "Smart TV",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": null,
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "55.0.2883.91",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "55.0.2883.91",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HbbTV/1.6.1 (+DRM; Panasonic; SmartTV2022mid; 3.000; 0000-1111 222-3333; com.panasonic.SmartTV2022mid;) FVC/7.0 (Panasonic; com.panasonic.SmartTV2022mid;) Mozilla/5.0 (Linux; U; SmartTV; en-GB) AppleWebKit/xxx.x (KHTML, like Gecko) SmartTV/x.x.x Chrome/x.x.x.x Safari/x.x.x.x"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Smart TV",
+      "marketingName": "Smart TV",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": null,
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "HbbTV/1.6.1 (+DRM; Samsung; SmartTV2023_LICENSE:K2LCSU;T-23KTSU2EATMDEUC-0612.20; KANTSU2E; urn:samsungtv:familyname:23_K2LC_REF_UHD_LIC:2023; ) Tizen/7.0 (+TVPLUS+SmartHubLink+POINTER) Chrome/94 LaTivu_1.0.1_2023"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Smart TV",
+      "marketingName": "Smart TV",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Tizen",
+      "marketingName": "Tizen",
+      "version": "7.0.0",
+      "manufacturer": "linux-foundation"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "94.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "94.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; NetCast; U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.128 Safari/537.36 SmartTV/10.0 Colt/2.0",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"8\", \"Chromium\";v=\"94\", \"CrowBrowser\";v=\"94\"",
+      "sec-ch-ua-platform": "Linux",
+      "sec-ch-ua-mobile": "?0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Smart TV",
+      "marketingName": "Smart TV",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "94.0.4606.128",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "94.0.4606.128",
+      "manufacturer": "google"
+    }
   }
 ]

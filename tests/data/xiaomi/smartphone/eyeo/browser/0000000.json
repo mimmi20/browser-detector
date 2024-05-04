@@ -230,5 +230,47 @@
       "version": "107.0.0.0",
       "manufacturer": "google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; 22126RN91Y) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Mobile Safari/537.36 ABB/3.4.5-beta1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "22126RN91Y",
+      "marketingName": "Redmi 12C",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1650,
+        "height": 720,
+        "touch": true,
+        "size": 6.71
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Adblock Browser",
+      "version": "3.4.5-beta+1",
+      "manufacturer": "eyeo",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "111.0.0.0",
+      "manufacturer": "google"
+    }
   }
 ]

@@ -250,5 +250,47 @@
       "version": "51.0.2704.100",
       "manufacturer": "google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0(compatible; U; InfiNet 0.1; Viera) AppleWebKit/420  (KHTML, like Gecko)(avdn/Panasonic.tv.high.2014) Viera/3.10.15 Chrome/23.0.1271.97 Safari/537.11; Freetime/1.0 (ctv); (Panasonic, 2014, idtv, medium, wired); (PRO4, 3128);"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Viera TV",
+      "marketingName": "Viera TV",
+      "manufacturer": "panasonic",
+      "brand": "panasonic",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "Viera Browser",
+      "version": "3.10.15",
+      "manufacturer": "panasonic",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "420.0.0",
+      "manufacturer": "apple"
+    }
   }
 ]
