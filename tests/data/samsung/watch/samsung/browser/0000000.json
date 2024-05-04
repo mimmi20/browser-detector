@@ -6,11 +6,11 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-R800",
-      "marketingName": "Gear S4",
+      "marketingName": "Galaxy Watch (46mm)",
       "manufacturer": "samsung",
       "brand": "samsung",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": 360,
         "height": 360,
@@ -90,11 +90,11 @@
     "device": {
       "architecture": null,
       "deviceName": "SM-R800",
-      "marketingName": "Gear S4",
+      "marketingName": "Galaxy Watch (46mm)",
       "manufacturer": "samsung",
       "brand": "samsung",
       "dualOrientation": null,
-      "simCount": null,
+      "simCount": 0,
       "display": {
         "width": 360,
         "height": 360,
@@ -164,6 +164,384 @@
     "engine": {
       "name": "Blink",
       "version": "56.0.2924.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Tizen 5.5; SAMSUNG SM-R845F) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/2.0 Chrome/69.0.3497.106 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-R845F",
+      "marketingName": "Galaxy Watch 3 (45mm, LTE)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": 360,
+        "height": 360,
+        "touch": true,
+        "size": 1.4
+      },
+      "type": "watch",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Tizen",
+      "marketingName": "Tizen",
+      "version": "5.5.0",
+      "manufacturer": "linux-foundation"
+    },
+    "client": {
+      "name": "Samsung Browser",
+      "version": "2.0.0",
+      "manufacturer": "samsung",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "69.0.3497.106",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Tizen 4.0; SAMSUNG SM-R805F) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/2.0 Chrome/56.0.2924.0 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-R805F",
+      "marketingName": "Galaxy Watch (46mm, LTE)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": 1,
+      "display": {
+        "width": 360,
+        "height": 360,
+        "touch": true,
+        "size": 1.3
+      },
+      "type": "watch",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Tizen",
+      "marketingName": "Tizen",
+      "version": "4.0.0",
+      "manufacturer": "linux-foundation"
+    },
+    "client": {
+      "name": "Samsung Browser",
+      "version": "2.0.0",
+      "manufacturer": "samsung",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "56.0.2924.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; SAMSUNG SM-R875F) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/1.2 Chrome/90.0.4430.210 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-R875F",
+      "marketingName": "Galaxy Watch 4 (44mm, LTE)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": 450,
+        "height": 450,
+        "touch": true,
+        "size": 1.4
+      },
+      "type": "watch",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Samsung Browser",
+      "version": "1.2.0",
+      "manufacturer": "samsung",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "90.0.4430.210",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; SAMSUNG SM-R905U) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/2.2. Chrome/102.0.5005.125 Mobile Safari/537.36 29"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-R905U",
+      "marketingName": "Galaxy Watch 5 (40mm, LTE)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": 1,
+      "display": {
+        "width": 396,
+        "height": 396,
+        "touch": true,
+        "size": 1.2
+      },
+      "type": "watch",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Samsung Browser",
+      "version": "2.2.0",
+      "manufacturer": "samsung",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "102.0.5005.125",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; SAMSUNG SM-R925N) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/1.2. Chrome/90.0.4430.210 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-R925N",
+      "marketingName": "Galaxy Watch 5 Pro (44mm, LTE)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": 1,
+      "display": {
+        "width": 450,
+        "height": 450,
+        "touch": true,
+        "size": 1.4
+      },
+      "type": "watch",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Samsung Browser",
+      "version": "1.2.0",
+      "manufacturer": "samsung",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "90.0.4430.210",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; SAMSUNG SM-R925U) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/2.2. Chrome/102.0.5005.125 Mobile Safari/537.36 29"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-R925U",
+      "marketingName": "Galaxy Watch 5 Pro (44mm, LTE)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": 1,
+      "display": {
+        "width": 450,
+        "height": 450,
+        "touch": true,
+        "size": 1.4
+      },
+      "type": "watch",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Samsung Browser",
+      "version": "2.2.0",
+      "manufacturer": "samsung",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "102.0.5005.125",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "ozilla/5.0 (Linux; Android 11; SAMSUNG SM-R915F) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/1.2. Chrome/90.0.4430.210 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-R915F",
+      "marketingName": "Galaxy Watch 5 (44mm, LTE)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": 1,
+      "display": {
+        "width": 450,
+        "height": 450,
+        "touch": true,
+        "size": 1.4
+      },
+      "type": "watch",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Samsung Browser",
+      "version": "1.2.0",
+      "manufacturer": "samsung",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "90.0.4430.210",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; SAMSUNG SM-R905N) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/2.2. Chrome/102.0.5005.125 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-R905N",
+      "marketingName": "Galaxy Watch 5 (40mm, LTE)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": 1,
+      "display": {
+        "width": 396,
+        "height": 396,
+        "touch": true,
+        "size": 1.2
+      },
+      "type": "watch",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Samsung Browser",
+      "version": "2.2.0",
+      "manufacturer": "samsung",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "102.0.5005.125",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; SM-R905F) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/2.2. Chrome/102.0.5005.125 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-R905F",
+      "marketingName": "Galaxy Watch 5 (40mm, LTE)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": 1,
+      "display": {
+        "width": 396,
+        "height": 396,
+        "touch": true,
+        "size": 1.2
+      },
+      "type": "watch",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Samsung Browser",
+      "version": "2.2.0",
+      "manufacturer": "samsung",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "102.0.5005.125",
       "manufacturer": "google"
     }
   }

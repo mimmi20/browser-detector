@@ -48,10 +48,10 @@ updates:
       include: "scope"
       prefix: "composer"
 
-#    ignore:
-#      - dependency-name: infection/infection
-#        versions:
-#          - ">= 0"
+    ignore:
+      - dependency-name: "nikic/php-parser"
+        versions:
+          - ">= 0"
 #      - dependency-name: phpunit/phpunit
 #        versions:
 #          - ">= 0"
