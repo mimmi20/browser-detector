@@ -90,7 +90,7 @@ final class DeviceLoader implements DeviceLoaderInterface
 
         try {
             $type = $this->typeLoader->load((string) $data['type']);
-        } catch (\UaDeviceType\NotFoundException $e) {
+        } catch (\UaDeviceType\Exception\NotFoundException $e) {
             $this->logger->info($e);
         }
 

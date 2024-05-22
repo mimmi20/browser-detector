@@ -109,7 +109,7 @@ final class BrowserLoader implements BrowserLoaderInterface
         if ($data['type'] !== null) {
             try {
                 $type = $this->typeLoader->load($data['type']);
-            } catch (\UaBrowserType\NotFoundException $e) {
+            } catch (\UaBrowserType\Exception\NotFoundException $e) {
                 $this->logger->info($e);
             }
         }

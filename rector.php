@@ -15,6 +15,7 @@ use Rector\DeadCode\Rector\ClassMethod\RemoveUnusedPromotedPropertyRector;
 use Rector\DeadCode\Rector\If_\RemoveAlwaysTrueIfConditionRector;
 use Rector\DeadCode\Rector\If_\RemoveDeadInstanceOfRector;
 use Rector\DeadCode\Rector\StaticCall\RemoveParentCallWithoutParentRector;
+use Rector\Php80\Rector\FunctionLike\MixedTypeRector;
 use Rector\Php81\Rector\Array_\FirstClassCallableRector;
 use Rector\Php81\Rector\FuncCall\NullToStrictStringFuncCallArgRector;
 use Rector\PHPUnit\Set\PHPUnitSetList;
@@ -40,6 +41,7 @@ return static function (RectorConfig $rectorConfig): void {
             FirstClassCallableRector::class,
             RemoveAlwaysTrueIfConditionRector::class,
             RemoveParentCallWithoutParentRector::class,
+            MixedTypeRector::class,
         ],
     );
 

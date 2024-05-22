@@ -12,16 +12,16 @@ declare(strict_types = 1);
 
 namespace BrowserDetectorTest\Version;
 
+use BrowserDetector\Version\Exception\NotNumericException;
 use BrowserDetector\Version\Macos;
-use BrowserDetector\Version\NotNumericException;
 use BrowserDetector\Version\NullVersion;
 use BrowserDetector\Version\VersionBuilder;
 use BrowserDetector\Version\VersionBuilderInterface;
 use BrowserDetector\Version\VersionInterface;
 use Exception;
+use MacosBuild\Exception\NotFoundException;
 use MacosBuild\MacosBuild;
 use MacosBuild\MacosBuildInterface;
-use MacosBuild\NotFoundException;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;

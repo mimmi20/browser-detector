@@ -12,8 +12,9 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Version;
 
+use BrowserDetector\Version\Exception\NotNumericException;
+use MacosBuild\Exception\NotFoundException;
 use MacosBuild\MacosBuildInterface;
-use MacosBuild\NotFoundException;
 use Psr\Log\LoggerInterface;
 use UnexpectedValueException;
 

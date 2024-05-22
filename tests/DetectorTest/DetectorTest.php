@@ -23,7 +23,7 @@ use BrowserDetector\Loader\EngineLoaderInterface;
 use BrowserDetector\Loader\NotFoundException;
 use BrowserDetector\Loader\PlatformLoaderInterface;
 use BrowserDetector\RequestBuilderInterface;
-use BrowserDetector\Version\NotNumericException;
+use BrowserDetector\Version\Exception\NotNumericException;
 use BrowserDetector\Version\VersionBuilderFactoryInterface;
 use BrowserDetector\Version\VersionBuilderInterface;
 use BrowserDetector\Version\VersionInterface;

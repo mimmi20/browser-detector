@@ -12,6 +12,8 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Version;
 
+use BrowserDetector\Version\Exception\NotNumericException;
+
 final class Test implements VersionFactoryInterface
 {
     /**

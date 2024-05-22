@@ -18,7 +18,7 @@ use BrowserDetector\Loader\BrowserLoaderInterface;
 use BrowserDetector\Loader\DeviceLoaderFactoryInterface;
 use BrowserDetector\Loader\EngineLoaderInterface;
 use BrowserDetector\Loader\PlatformLoaderInterface;
-use BrowserDetector\Version\NotNumericException;
+use BrowserDetector\Version\Exception\NotNumericException;
 use BrowserDetector\Version\VersionBuilderFactoryInterface;
 use BrowserDetector\Version\VersionInterface;
 use Psr\Http\Message\MessageInterface;

@@ -17,7 +17,7 @@ use BrowserDetector\Parser\DeviceParserInterface;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
-use UaNormalizer\Normalizer\Exception;
+use UaNormalizer\Normalizer\Exception\Exception;
 use UaNormalizer\NormalizerFactory;
 
 use function in_array;

@@ -12,7 +12,7 @@ declare(strict_types = 1);
 
 namespace BrowserDetector;
 
-use BrowserDetector\Version\NotNumericException;
+use BrowserDetector\Version\Exception\NotNumericException;
 use Psr\Http\Message\MessageInterface;
 use Psr\SimpleCache\InvalidArgumentException;
 use UnexpectedValueException;
