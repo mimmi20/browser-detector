@@ -8,17 +8,25 @@
   "assignees": [
     "mimmi20"
   ],
+  "automerge": false,
   "branchConcurrentLimit": 0,
   "commitBody": "Signed-off-by: {{{gitAuthor}}}",
   "commitBodyTable": true,
   "configMigration": true,
   "configWarningReuseIssue": false,
-  "dependencyDashboard": true,
-  "dependencyDashboardApproval": true,
+  "dependencyDashboard": false,
+  "dependencyDashboardApproval": false,
   "dependencyDashboardOSVVulnerabilitySummary": "all",
+  //"enabledManagers": ["composer", "github-actions", "npm"],
+  "ignoreTests": false,
+  "ignoreUnstable": true,
+  "internalChecksFilter": "strict",
   "labels": [
     "dependencies"
   ],
+  "lockFileMaintenance": {
+    "enabled": false
+  },
   "osvVulnerabilityAlerts": true,
   "platformAutomerge": false,
   "prBodyColumns": [
@@ -41,9 +49,14 @@
   "reviewers": [
     "mimmi20"
   ],
+  "rollbackPrs": true,
   "schedule": ["at 4:00 am on Wednesday"],
   "semanticCommits": "disabled",
+  "separateMajorMinor": true,
+  "separateMinorPatch": false,
   "timezone": "Europe/Berlin",
+  "updateLockFiles": false,
+  "updateNotScheduled": false,
   "packageRules": [
     {
       "groupName": "PHP",

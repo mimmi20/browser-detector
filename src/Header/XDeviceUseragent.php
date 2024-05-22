@@ -13,7 +13,7 @@ declare(strict_types = 1);
 namespace BrowserDetector\Header;
 
 use BrowserDetector\Parser\DeviceParserInterface;
-use UaNormalizer\Normalizer\Exception;
+use UaNormalizer\Normalizer\Exception\Exception;
 use UaNormalizer\NormalizerFactory;
 
 final class XDeviceUseragent implements HeaderInterface

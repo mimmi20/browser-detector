@@ -23,7 +23,7 @@ use BrowserDetector\Parser\EngineParserInterface;
 use BrowserDetector\Parser\PlatformParserInterface;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
-use UaNormalizer\Normalizer\Exception;
+use UaNormalizer\Normalizer\Exception\Exception;
 use UaNormalizer\NormalizerFactory;
 use UnexpectedValueException;
 

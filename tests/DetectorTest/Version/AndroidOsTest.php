@@ -13,7 +13,7 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest\Version;
 
 use BrowserDetector\Version\AndroidOs;
-use BrowserDetector\Version\NotNumericException;
+use BrowserDetector\Version\Exception\NotNumericException;
 use BrowserDetector\Version\NullVersion;
 use BrowserDetector\Version\VersionBuilder;
 use BrowserDetector\Version\VersionBuilderInterface;

@@ -12,9 +12,9 @@ declare(strict_types = 1);
 
 namespace BrowserDetectorTest\Version;
 
+use BrowserDetector\Version\Exception\NotNumericException;
 use BrowserDetector\Version\Helper\Safari as SafariHelper;
 use BrowserDetector\Version\Helper\SafariInterface;
-use BrowserDetector\Version\NotNumericException;
 use BrowserDetector\Version\NullVersion;
 use BrowserDetector\Version\Safari;
 use BrowserDetector\Version\Version;

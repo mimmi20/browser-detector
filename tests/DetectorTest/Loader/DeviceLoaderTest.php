@@ -416,7 +416,7 @@ final class DeviceLoaderTest extends TestCase
      */
     public function testInvokeVersionAndPlatform(): void
     {
-        $typeException     = new \UaDeviceType\NotFoundException('type');
+        $typeException     = new \UaDeviceType\Exception\NotFoundException('type');
         $companyException1 = new NotFoundException('type');
         $companyException2 = new NotFoundException('type');
 

@@ -698,7 +698,7 @@ final class BrowserLoaderTest extends TestCase
      */
     public function testInvokeVersionAndEngineWithException2(): void
     {
-        $exception = new \UaBrowserType\NotFoundException('test');
+        $exception = new \UaBrowserType\Exception\NotFoundException('test');
 
         $logger = $this->createMock(LoggerInterface::class);
         $logger

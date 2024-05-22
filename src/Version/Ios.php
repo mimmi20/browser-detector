@@ -12,8 +12,9 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Version;
 
+use BrowserDetector\Version\Exception\NotNumericException;
+use IosBuild\Exception\NotFoundException;
 use IosBuild\IosBuildInterface;
-use IosBuild\NotFoundException;
 use Psr\Log\LoggerInterface;
 use UnexpectedValueException;
 

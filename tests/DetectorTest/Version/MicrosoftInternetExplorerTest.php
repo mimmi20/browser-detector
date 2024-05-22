@@ -12,8 +12,8 @@ declare(strict_types = 1);
 
 namespace BrowserDetectorTest\Version;
 
+use BrowserDetector\Version\Exception\NotNumericException;
 use BrowserDetector\Version\MicrosoftInternetExplorer;
-use BrowserDetector\Version\NotNumericException;
 use BrowserDetector\Version\NullVersion;
 use BrowserDetector\Version\Trident;
 use BrowserDetector\Version\Version;

@@ -14,7 +14,7 @@ namespace BrowserDetector\Header;
 
 use BrowserDetector\Parser\DeviceParserInterface;
 use BrowserDetector\Parser\EngineParserInterface;
-use UaNormalizer\Normalizer\Exception;
+use UaNormalizer\Normalizer\Exception\Exception;
 use UaNormalizer\NormalizerFactory;
 
 use function in_array;

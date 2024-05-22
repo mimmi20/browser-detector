@@ -12,16 +12,16 @@ declare(strict_types = 1);
 
 namespace BrowserDetectorTest\Version;
 
+use BrowserDetector\Version\Exception\NotNumericException;
 use BrowserDetector\Version\Ios;
-use BrowserDetector\Version\NotNumericException;
 use BrowserDetector\Version\NullVersion;
 use BrowserDetector\Version\VersionBuilder;
 use BrowserDetector\Version\VersionBuilderInterface;
 use BrowserDetector\Version\VersionInterface;
 use Exception;
+use IosBuild\Exception\NotFoundException;
 use IosBuild\IosBuild;
 use IosBuild\IosBuildInterface;
-use IosBuild\NotFoundException;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;

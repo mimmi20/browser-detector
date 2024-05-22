@@ -35,9 +35,6 @@ parameters:
   # reports function and method calls with incorrect name case
   checkFunctionNameCase: true
 
-  # it requires type variables always be specified in typehints
-  checkGenericClassInNonGenericObjectType: true
-
   # be strict about values with an unspecified (implicit mixed) type
   checkImplicitMixed: true
 
@@ -128,12 +125,9 @@ rules:
   # code complexity
   - Symplify\PHPStanRules\Rules\Explicit\NoMixedPropertyFetcherRule
   - Symplify\PHPStanRules\Rules\Explicit\NoMixedMethodCallerRule
-  - Symplify\PHPStanRules\Rules\Enum\RequireEnumDocBlockOnConstantListPassRule
   # - Symplify\PHPStanRules\Rules\NoDynamicNameRule
-  # - Symplify\PHPStanRules\Rules\Explicit\NoRelativeFilePathRule - relative paths are required
   # - Symplify\PHPStanRules\Rules\NoReturnArrayVariableListRule - todo: fix
 
-  - Symplify\PHPStanRules\Rules\NoProtectedClassElementRule
   - Symplify\PHPStanRules\Rules\ForbiddenExtendOfNonAbstractClassRule
   - Symplify\PHPStanRules\Rules\Complexity\ForbiddenSameNamedNewInstanceRule
 
@@ -146,12 +140,10 @@ rules:
 
   # paths
   # - Symplify\PHPStanRules\Rules\NoMissingDirPathRule
-  - Symplify\PHPStanRules\Rules\NoAbstractMethodRule
   # - Symplify\PHPStanRules\Rules\NoReferenceRule - References are required
   - Symplify\PHPStanRules\Rules\NoArrayAccessOnObjectRule
 
   - Symplify\PHPStanRules\Rules\NoNullableArrayPropertyRule
-  # - Symplify\PHPStanRules\Rules\BoolishClassMethodPrefixRule - "accept" is not an valid function name by this rule
 
   # dead-code
   - Symplify\PHPStanRules\Rules\NoIssetOnObjectRule

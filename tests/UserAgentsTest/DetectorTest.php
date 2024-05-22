@@ -15,7 +15,7 @@ namespace UserAgentsTest;
 use BrowserDetector\Detector;
 use BrowserDetector\DetectorFactory;
 use BrowserDetector\Loader\NotFoundException;
-use BrowserDetector\Version\NotNumericException;
+use BrowserDetector\Version\Exception\NotNumericException;
 use DateInterval;
 use Exception;
 use FilterIterator;

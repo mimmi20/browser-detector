@@ -12,6 +12,7 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Version;
 
+use BrowserDetector\Version\Exception\NotNumericException;
 use Psr\Log\LoggerInterface;
 
 use function mb_strpos;

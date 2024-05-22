@@ -12,8 +12,8 @@ declare(strict_types = 1);
 
 namespace BrowserDetectorTest\Version\Helper;
 
+use BrowserDetector\Version\Exception\NotNumericException;
 use BrowserDetector\Version\Helper\Safari;
-use BrowserDetector\Version\NotNumericException;
 use BrowserDetector\Version\VersionBuilder;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\ExpectationFailedException;

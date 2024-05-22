@@ -20,7 +20,7 @@ use BrowserDetector\Parser\BrowserParserInterface;
 use BrowserDetector\Parser\DeviceParserInterface;
 use BrowserDetector\Parser\EngineParserInterface;
 use BrowserDetector\Parser\PlatformParserInterface;
-use UaNormalizer\Normalizer\Exception;
+use UaNormalizer\Normalizer\Exception\Exception;
 use UaNormalizer\NormalizerFactory;
 use UnexpectedValueException;
 

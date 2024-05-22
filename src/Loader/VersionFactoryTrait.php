@@ -12,7 +12,7 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Loader;
 
-use BrowserDetector\Version\NotNumericException;
+use BrowserDetector\Version\Exception\NotNumericException;
 use BrowserDetector\Version\NullVersion;
 use BrowserDetector\Version\VersionBuilderInterface;
 use BrowserDetector\Version\VersionFactoryInterface;
