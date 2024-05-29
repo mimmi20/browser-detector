@@ -114,6 +114,15 @@ jobs:
       - name: "Run unit tests with phpunit/phpunit"
         run: "vendor/bin/phpunit -c phpunit.xml --no-coverage --display-warnings --display-deprecations"
 
+      - name: "Enable annotations for validation errors and warnings"
+        uses: "korelstar/xmllint-problem-matcher@v1"
+
+      - name: "Validate phpcs.xml"
+        uses: "ChristophWurst/xmllint-action@v1"
+        with:
+          xml-file: "phpunit.xml"
+          xml-schema-file: "vendor/phpunit/phpunit/phpunit.xsd"
+
   code-coverage:
     name: "Code Coverage with PHPUnit"
 
@@ -182,11 +191,6 @@ jobs:
         env:
           CODECOV_TOKEN: "${{ secrets.CODECOV_TOKEN }}"
 
-      - name: "Run mutation tests with infection/infection"
-        env:
-          STRYKER_DASHBOARD_API_KEY: ${{ secrets.STRYKER_DASHBOARD_API_KEY }}
-        run: "vendor/bin/infection --show-mutations --only-covered --min-covered-msi=93 --min-msi=93 --coverage=.build/coverage --logger-github --no-progress -vv"
-
       - name: "Upload coverage to Codeclimate"
         uses: "paambaati/codeclimate-action@v6.0.0"
         env:
@@ -204,6 +208,11 @@ jobs:
           file: ".build/coverage/clover.xml"
           format: "clover"
           debug: false
+
+      - name: "Run mutation tests with infection/infection"
+        env:
+          STRYKER_DASHBOARD_API_KEY: ${{ secrets.STRYKER_DASHBOARD_API_KEY }}
+        run: "vendor/bin/infection --show-mutations --only-covered --min-covered-msi=93 --min-msi=93 --coverage=.build/coverage --logger-github --no-progress -vv"
 
   finish-code-coverage:
     runs-on: "ubuntu-22.04"
@@ -271,6 +280,15 @@ jobs:
 
       - name: "Run integration tests with phpunit/phpunit"
         run: "vendor/bin/phpunit -c phpunit-integration.xml --no-coverage --colors --display-warnings --display-deprecations"
+
+      - name: "Enable annotations for validation errors and warnings"
+        uses: "korelstar/xmllint-problem-matcher@v1"
+
+      - name: "Validate phpcs.xml"
+        uses: "ChristophWurst/xmllint-action@v1"
+        with:
+          xml-file: "phpunit-integration.xml"
+          xml-schema-file: "vendor/phpunit/phpunit/phpunit.xsd"
 
   # This is a meta job to avoid to have to constantly change the protection rules
   # whenever we touch the matrix.
