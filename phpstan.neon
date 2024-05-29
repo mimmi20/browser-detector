@@ -129,7 +129,6 @@ rules:
   # - Symplify\PHPStanRules\Rules\NoReturnArrayVariableListRule - todo: fix
 
   - Symplify\PHPStanRules\Rules\ForbiddenExtendOfNonAbstractClassRule
-  - Symplify\PHPStanRules\Rules\Complexity\ForbiddenSameNamedNewInstanceRule
 
   # domain
   # - Symplify\PHPStanRules\Rules\Domain\RequireExceptionNamespaceRule
@@ -152,12 +151,10 @@ rules:
   - Symplify\PHPStanRules\Rules\ForbiddenMultipleClassLikeInOneFileRule
 
   # comlexity
-  - Symplify\PHPStanRules\Rules\Complexity\ForbiddenSameNamedNewInstanceRule
   - Symplify\PHPStanRules\Rules\NarrowType\NoReturnFalseInNonBoolClassMethodRule
 
   - Symplify\PHPStanRules\Rules\Complexity\ForbiddenArrayMethodCallRule
   # - Symplify\PHPStanRules\Rules\CheckRequiredInterfaceInContractNamespaceRule
-  - Symplify\PHPStanRules\Rules\NoEmptyClassRule
 
   # naming
   - Symplify\PHPStanRules\Rules\RequireAttributeNameRule
@@ -170,7 +167,6 @@ rules:
   # naming
   - Symplify\PHPStanRules\Rules\Explicit\ExplicitClassPrefixSuffixRule
   # - Symplify\PHPStanRules\Rules\NoReturnSetterMethodRule
-  - Symplify\PHPStanRules\Rules\NoVoidGetterMethodRule
   - Symplify\PHPStanRules\Rules\UppercaseConstantRule
   - Symplify\PHPStanRules\Rules\ClassNameRespectsParentSuffixRule
   - Symplify\PHPStanRules\Rules\CheckTypehintCallerTypeRule

@@ -52,7 +52,7 @@
     "infection/infection": "^0.27.11 || ^0.28.1",
     "mikey179/vfsstream": "^1.6.11",
     "mimmi20/coding-standard": "^5.2.32",
-    "nikic/php-parser": "^v4.19.1 || ^5.0.2",
+    "nikic/php-parser": "^4.19.1 || ^5.0.2",
     "phpstan/extension-installer": "^1.3.1",
     "phpstan/phpstan": "^1.11.2",
     "phpstan/phpstan-deprecation-rules": "^1.2.0",
@@ -78,13 +78,13 @@
     }
   },
   "config": {
-    "preferred-install": "dist",
-    "lock": false,
-    "sort-packages": true,
     "allow-plugins": {
       "dealerdirect/phpcodesniffer-composer-installer": true,
-      "phpstan/extension-installer": true,
-      "infection/extension-installer": true
-    }
+      "infection/extension-installer": true,
+      "phpstan/extension-installer": true
+    },
+    "lock": false,
+    "preferred-install": "dist",
+    "sort-packages": true
   }
 }
