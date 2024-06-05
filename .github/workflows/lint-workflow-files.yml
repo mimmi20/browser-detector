@@ -1,0 +1,27 @@
+name: "Lint GitHub Actions workflows"
+
+on:
+  pull_request:
+    paths:
+      - ".github/**"
+
+jobs:
+  actionlint:
+    runs-on: "ubuntu-22.04"
+
+    steps:
+      - name: "Checkout"
+        uses: "actions/checkout@v4"
+        with:
+          # Disabling shallow clone is recommended for improving relevancy of reporting
+          fetch-depth: 0
+          lfs: false
+          persist-credentials: false
+
+      - name: "Check workflow files"
+        uses: "raven-actions/actionlint@v1"
+        with:
+          matcher: true
+          cache: true
+          fail-on-error: false
+          flags: "-ignore SC2086"
