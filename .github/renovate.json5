@@ -1,32 +1,33 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
 
-  "extends": ["mergeConfidence:all-badges"],
-
-  "enabled": true,
-
-  "assignees": [
-    "mimmi20"
+  "extends": [
+    ":assignAndReview(mimmi20)",
+    ":automergeDisabled",
+    ":combinePatchMinorReleases",
+    ":disableDependencyDashboard",
+    ":disableRateLimiting",
+    ":enableRenovate",
+    ":enableVulnerabilityAlertsWithLabel(security)",
+    ":gitSignOff",
+    ":ignoreUnstable",
+    ":label(dependencies)",
+    ":maintainLockFilesDisabled",
+    ":prImmediately",
+    ":rebaseStalePrs",
+    ":semanticCommitsDisabled",
+    ":separateMajorReleases",
+    ":timezone(Europe/Berlin)",
+    ":updateNotScheduled",
+    "group:allDigest",
+    "group:allNonMajor",
+    "security:openssf-scorecard",
+    "mergeConfidence:all-badges"
   ],
-  "automerge": false,
-  "branchConcurrentLimit": 0,
-  "commitBody": "Signed-off-by: {{{gitAuthor}}}",
+
   "commitBodyTable": true,
   "configMigration": true,
-  "configWarningReuseIssue": false,
-  "dependencyDashboard": false,
-  "dependencyDashboardApproval": false,
-  "dependencyDashboardOSVVulnerabilitySummary": "all",
-  // "enabledManagers": ["composer", "github-actions", "npm"],
-  "ignoreTests": false,
-  "ignoreUnstable": true,
-  "internalChecksFilter": "strict",
-  "labels": [
-    "dependencies"
-  ],
-  "lockFileMaintenance": {
-    "enabled": false
-  },
+  "ignorePaths": ["**/node_modules/**", "**/vendor/**"],
   "osvVulnerabilityAlerts": true,
   "platformAutomerge": false,
   "prBodyColumns": [
@@ -41,39 +42,11 @@
     "Update": "{{{updateType}}}",
     "Change": "[{{#if displayFrom}}`{{{displayFrom}}}` -> {{else}}{{#if currentValue}}`{{{currentValue}}}` -> {{/if}}{{/if}}{{#if displayTo}}`{{{displayTo}}}`{{else}}`{{{newValue}}}`{{/if}}]({{#if depName}}https://renovatebot.com/diffs/npm/{{replace '/' '%2f' depName}}/{{{currentVersion}}}/{{{newVersion}}}{{/if}})"
   },
-  "prConcurrentLimit": 0,
-  "prCreation": "immediate",
-  "prHourlyLimit": 0,
   "rangeStrategy": "bump",
-  "rebaseWhen": "behind-base-branch",
-  "reviewers": [
-    "mimmi20"
-  ],
   "rollbackPrs": true,
-  "schedule": ["at 4:00 am on Wednesday"],
-  "semanticCommits": "disabled",
-  "separateMajorMinor": true,
-  "separateMinorPatch": false,
-  "timezone": "Europe/Berlin",
-  "updateLockFiles": false,
-  "updateNotScheduled": false,
+  "schedule": ["before 4am on Wednesday"],
   "packageRules": [
     {
-      "groupName": "PHP",
-      "matchDepNames": ["php"],
-      "allowedVersions": "~8.1.0 || ~8.2.0 || ~8.3.0 || ~8.4.0",
-      "ignoreUnstable": false,
-      "rangeStrategy": "widen"
-    },
-    {
-      "groupName": "Node",
-      "matchDepNames": ["node"],
-      "allowedVersions": "~19.5.0 || ~20.0.0 || ~21.0.0 || ~22.0.0",
-      "ignoreUnstable": false,
-      "rangeStrategy": "widen"
-    },
-    {
-      "groupName": "devDependencies",
       "matchDepTypes": ["devDependencies", "peerDependencies"],
       "rangeStrategy": "widen"
     },
@@ -89,9 +62,5 @@
         "patch"
       ]
     }
-  ],
-  "vulnerabilityAlerts": {
-    "enabled": true,
-    "labels": ["security"]
-  }
+  ]
 }
