@@ -18,6 +18,14 @@ jobs:
           lfs: false
           persist-credentials: false
 
+      - name: "install libimagequant-dev"
+        run: "sudo apt-get install libimagequant-dev -y"
+
+      - name: "Use Node.js 22"
+        uses: "actions/setup-node@v4"
+        with:
+          node-version: "22"
+
       - name: "Check workflow files"
         uses: "raven-actions/actionlint@v1"
         with:

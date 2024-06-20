@@ -51,8 +51,12 @@
       "rangeStrategy": "widen"
     },
     {
-      "matchPackageNames": ["nikic/php-parser", "infection/infection"],
+      "matchPackageNames": ["nikic/php-parser", "infection/infection", "psr/container", "psr/http-message", "laminas/laminas-servicemanager", "psr/simple-cache", "illuminate/view", "illuminate/config", "endorphin-studio/browser-detector-tests", "laminas/laminas-diactoros", "symfony/console", "symfony/finder", "symfony/yaml", "symfony/http-foundation", "psr/log", "browscap/browscap"],
       "rangeStrategy": "widen"
+    },
+    {
+      "matchPackageNames": ["vitest", "@vitest/coverage-istanbul", "@vitest/ui"],
+      "enabled": false
     },
     {
       "groupName": "all non-major dependencies",
