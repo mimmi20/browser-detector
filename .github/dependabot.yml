@@ -12,22 +12,18 @@ updates:
     schedule:
       interval: "weekly"
       day: "wednesday"
-      time: "07:00"
+      time: "04:00"
       timezone: "Europe/Berlin"
 
     groups:
       # Specify a name for the group, which will be used in pull request titles
       # and branch names
       minor-patch-dependencies:
+        applies-to: "version-updates"
         # Define patterns to include dependencies in the group (based on
         # dependency name)
         patterns:
           - "*"
-        # update-types:
-        #   - "minor"
-        #   - "patch"
-        # exclude-patterns:
-        #   - "gc_ruboconfig"
 
     open-pull-requests-limit: 10
 
@@ -48,13 +44,89 @@ updates:
       include: "scope"
       prefix: "composer"
 
+    #allow:
+    #  - '*'
+
     ignore:
+      - dependency-name: "laminas/laminas-servicemanager"
+      - dependency-name: "psr/container"
       - dependency-name: "nikic/php-parser"
-        versions:
-          - ">= 0"
       - dependency-name: "infection/infection"
-        versions:
-          - ">= 0"
+      - dependency-name: "psr/http-message"
+      - dependency-name: "psr/simple-cache"
+      - dependency-name: "illuminate/view"
+      - dependency-name: "illuminate/config"
+      - dependency-name: "endorphin-studio/browser-detector-tests"
+      - dependency-name: "laminas/laminas-diactoros"
+      - dependency-name: "symfony/console"
+      - dependency-name: "symfony/finder"
+      - dependency-name: "symfony/yaml"
+      - dependency-name: "symfony/http-foundation"
+      - dependency-name: "psr/log"
+      - dependency-name: "browscap/browscap"
+
+    # Disable rebasing for all pull requests
+    rebase-strategy: "disabled"
+
+  #- package-ecosystem: "composer"
+  #
+  #  directory: "/"
+  #
+  #  schedule:
+  #    interval: "weekly"
+  #    day: "wednesday"
+  #    time: "04:00"
+  #    timezone: "Europe/Berlin"
+  #
+  #  groups:
+  #    # Specify a name for the group, which will be used in pull request titles
+  #    # and branch names
+  #    minor-patch-dependencies:
+  #      applies-to: "version-updates"
+  #      # Define patterns to include dependencies in the group (based on
+  #      # dependency name)
+  #      patterns:
+  #        - "*"
+  #
+  #  open-pull-requests-limit: 10
+  #
+  #  reviewers:
+  #    - "mimmi20"
+  #
+  #  assignees:
+  #    - "mimmi20"
+  #
+  #  labels:
+  #    - "dependencies"
+  #
+  #  versioning-strategy: "widen"
+  #
+  #  target-branch: "master"
+  #
+  #  commit-message:
+  #    include: "scope"
+  #    prefix: "composer"
+  #
+  #  allow:
+  #    - dependency-name: "psr/container"
+  #    - dependency-name: "infection/infection"
+  #    - dependency-name: "nikic/php-parser"
+  #    - dependency-name: "psr/http-message"
+  #    - dependency-name: "laminas/laminas-servicemanager"
+  #    - dependency-name: "psr/simple-cache"
+  #    - dependency-name: "illuminate/view"
+  #    - dependency-name: "illuminate/config"
+  #    - dependency-name: "endorphin-studio/browser-detector-tests"
+  #    - dependency-name: "laminas/laminas-diactoros"
+  #    - dependency-name: "symfony/console"
+  #    - dependency-name: "symfony/finder"
+  #    - dependency-name: "symfony/yaml"
+  #    - dependency-name: "symfony/http-foundation"
+  #    - dependency-name: "psr/log"
+  #    - dependency-name: "browscap/browscap"
+  #
+  #  # Disable rebasing for all pull requests
+  #  rebase-strategy: "disabled"
 
   - package-ecosystem: "github-actions"
 
@@ -63,22 +135,18 @@ updates:
     schedule:
       interval: "weekly"
       day: "wednesday"
-      time: "07:00"
+      time: "04:00"
       timezone: "Europe/Berlin"
 
     groups:
       # Specify a name for the group, which will be used in pull request titles
       # and branch names
       minor-patch-dependencies:
+        applies-to: "version-updates"
         # Define patterns to include dependencies in the group (based on
         # dependency name)
         patterns:
           - "*"
-        # update-types:
-        #   - "minor"
-        #   - "patch"
-        # exclude-patterns:
-        #   - "gc_ruboconfig"
 
     open-pull-requests-limit: 10
 
@@ -95,3 +163,6 @@ updates:
 
     commit-message:
       prefix: "github-actions"
+
+    # Disable rebasing for all pull requests
+    rebase-strategy: "disabled"
