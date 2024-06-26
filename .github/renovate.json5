@@ -51,7 +51,7 @@
       "rangeStrategy": "widen"
     },
     {
-      "matchPackageNames": ["nikic/php-parser", "infection/infection", "psr/container", "psr/http-message", "laminas/laminas-servicemanager", "psr/simple-cache", "illuminate/view", "illuminate/config", "endorphin-studio/browser-detector-tests", "laminas/laminas-diactoros", "symfony/console", "symfony/finder", "symfony/yaml", "symfony/http-foundation", "psr/log", "browscap/browscap"],
+      "matchPackageNames": ["nikic/php-parser", "infection/infection", "psr/container", "psr/http-message", "laminas/laminas-servicemanager", "psr/simple-cache", "illuminate/view", "illuminate/config", "illuminate/container", "illuminate/contracts", "illuminate/events", "illuminate/filesystem" ,"endorphin-studio/browser-detector-tests", "laminas/laminas-diactoros", "symfony/console", "symfony/finder", "symfony/yaml", "symfony/http-foundation", "psr/log", "browscap/browscap", "symfony/filesystem", "supports-color", "elasticsearch/elasticsearch", "predis/predis", "@localnerve/imagemin-gifsicle", "@localnerve/imagemin-pngquant", "@node-minify/core", "@node-minify/no-compress", "@node-minify/terser", "@typescript-eslint/eslint-plugin", "@typescript-eslint/parser", "@typescript-eslint/typescript-estree", "@vheemstra/vite-plugin-imagemin", "cssnano", "cssnano-preset-default", "imagemin", "postcss-load-config"],
       "rangeStrategy": "widen"
     },
     {

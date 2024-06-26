@@ -12,16 +12,10 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Version;
 
-use Psr\Log\LoggerInterface;
-
 final class ErrorVersionCreatorFactory
 {
-    /**
-     * @throws void
-     *
-     * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
-     */
-    public function __invoke(LoggerInterface $logger): ErrorVersionCreator
+    /** @throws void */
+    public function __invoke(): ErrorVersionCreator
     {
         return new ErrorVersionCreator();
     }
