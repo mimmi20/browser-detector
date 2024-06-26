@@ -17,7 +17,6 @@ use BrowserDetector\Version\ErrorVersionCreatorFactory;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
-use Psr\Log\NullLogger;
 
 use function assert;
 use function sprintf;
@@ -47,7 +46,7 @@ final class ErrorVersionCreatorFactoryTest extends TestCase
                 $object::class,
             ),
         );
-        $result = $object(new NullLogger());
+        $result = $object();
         self::assertInstanceOf(ErrorVersionCreator::class, $result);
     }
 }
