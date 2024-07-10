@@ -55,7 +55,7 @@
       "rangeStrategy": "widen"
     },
     {
-      "matchPackageNames": ["vitest", "@vitest/coverage-istanbul", "@vitest/ui"],
+      "matchPackageNames": ["vitest", "@vitest/coverage-istanbul", "@vitest/ui", "phpstan/phpstan", "phpunit/phpunit", "rector/rector", "rector/type-perfect", "friendsofphp/php-cs-fixer", "sirbrillig/phpcs-variable-analysis", "slevomat/coding-standard", "squizlabs/php_codesniffer", "laminas/laminas-i18n", "mimmi20/mezzio-setlocale-middleware", "mimmi20/coding-standard", "shivammathur/setup-php", "laminas/laminas-form", "laminas/laminas-i18n"],
       "enabled": false
     },
     {
