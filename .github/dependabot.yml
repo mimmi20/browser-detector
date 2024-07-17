@@ -48,29 +48,29 @@ updates:
     #  - '*'
 
     ignore:
-      - dependency-name: "laminas/laminas-servicemanager"
-      - dependency-name: "psr/container"
-      - dependency-name: "nikic/php-parser"
-      - dependency-name: "infection/infection"
-      - dependency-name: "psr/http-message"
-      - dependency-name: "psr/simple-cache"
-      - dependency-name: "illuminate/view"
+      - dependency-name: "browscap/browscap"
+      - dependency-name: "elasticsearch/elasticsearch"
+      - dependency-name: "endorphin-studio/browser-detector-tests"
       - dependency-name: "illuminate/config"
       - dependency-name: "illuminate/container"
       - dependency-name: "illuminate/contracts"
       - dependency-name: "illuminate/events"
       - dependency-name: "illuminate/filesystem"
-      - dependency-name: "endorphin-studio/browser-detector-tests"
+      - dependency-name: "illuminate/view"
+      - dependency-name: "infection/infection"
       - dependency-name: "laminas/laminas-diactoros"
-      - dependency-name: "symfony/console"
-      - dependency-name: "symfony/finder"
-      - dependency-name: "symfony/yaml"
-      - dependency-name: "symfony/http-foundation"
-      - dependency-name: "psr/log"
-      - dependency-name: "browscap/browscap"
-      - dependency-name: "symfony/filesystem"
+      - dependency-name: "laminas/laminas-servicemanager"
+      - dependency-name: "nikic/php-parser"
       - dependency-name: "predis/predis"
-      - dependency-name: "elasticsearch/elasticsearch"
+      - dependency-name: "psr/container"
+      - dependency-name: "psr/http-message"
+      - dependency-name: "psr/log"
+      - dependency-name: "psr/simple-cache"
+      - dependency-name: "symfony/console"
+      - dependency-name: "symfony/filesystem"
+      - dependency-name: "symfony/finder"
+      - dependency-name: "symfony/http-foundation"
+      - dependency-name: "symfony/yaml"
 
     # Disable rebasing for all pull requests
     rebase-strategy: "disabled"
@@ -106,7 +106,7 @@ updates:
     labels:
       - "dependencies"
 
-    versioning-strategy: "widen"
+    versioning-strategy: "increase"
 
     target-branch: "master"
 
@@ -115,10 +115,6 @@ updates:
       prefix: "npm"
 
     ignore:
-      - dependency-name: "@vitest/coverage-istanbul"
-      - dependency-name: "@vitest/ui"
-      - dependency-name: "vitest"
-      - dependency-name: "supports-color"
       - dependency-name: "@localnerve/imagemin-gifsicle"
       - dependency-name: "@localnerve/imagemin-pngquant"
       - dependency-name: "@node-minify/core"
@@ -128,10 +124,14 @@ updates:
       - dependency-name: "@typescript-eslint/parser"
       - dependency-name: "@typescript-eslint/typescript-estree"
       - dependency-name: "@vheemstra/vite-plugin-imagemin"
+      - dependency-name: "@vitest/coverage-istanbul"
+      - dependency-name: "@vitest/ui"
       - dependency-name: "cssnano"
       - dependency-name: "cssnano-preset-default"
       - dependency-name: "imagemin"
       - dependency-name: "postcss-load-config"
+      - dependency-name: "supports-color"
+      - dependency-name: "vitest"
 
     # Disable rebasing for all pull requests
     rebase-strategy: "disabled"
