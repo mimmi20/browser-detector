@@ -27,7 +27,7 @@ jobs:
           node-version: "22"
 
       - name: "Check workflow files"
-        uses: "raven-actions/actionlint@v1"
+        uses: "raven-actions/actionlint@v2"
         with:
           matcher: true
           cache: true
