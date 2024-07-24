@@ -7,7 +7,7 @@ on:
 
 jobs:
   actionlint:
-    runs-on: "ubuntu-22.04"
+    runs-on: "ubuntu-24.04"
 
     steps:
       - name: "Checkout"
@@ -21,10 +21,10 @@ jobs:
       - name: "install libimagequant-dev"
         run: "sudo apt-get install libimagequant-dev -y"
 
-      - name: "Use Node.js 22"
+      - name: "Use Node.js 22.4"
         uses: "actions/setup-node@v4"
         with:
-          node-version: "22"
+          node-version: "22.4"
 
       - name: "Check workflow files"
         uses: "raven-actions/actionlint@v2"
