@@ -35,7 +35,6 @@ final class UaOs implements HeaderInterface
                 $this->value,
                 $matches,
             )
-            && $matches['name'] === 'Windows CE'
         ) {
             return 'windows ce';
         }

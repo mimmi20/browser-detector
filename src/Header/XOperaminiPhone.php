@@ -39,7 +39,6 @@ final class XOperaminiPhone implements HeaderInterface
                 $this->value,
                 $matches,
             )
-            && isset($matches['device'])
         ) {
             $code = mb_strtolower($matches['company'] . ' ' . $matches['device']);
 

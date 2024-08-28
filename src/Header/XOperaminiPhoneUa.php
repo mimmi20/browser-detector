@@ -120,7 +120,6 @@ final class XOperaminiPhoneUa implements HeaderInterface
                 $this->value,
                 $matches,
             )
-            && isset($matches['platform'])
         ) {
             $code = mb_strtolower($matches['platform']);
 

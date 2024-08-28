@@ -17,6 +17,7 @@ use BrowserDetector\Version\Helper\SafariInterface;
 use Psr\Log\LoggerInterface;
 use UnexpectedValueException;
 
+use function is_string;
 use function preg_match;
 
 final class Safari implements VersionFactoryInterface
@@ -41,7 +42,7 @@ final class Safari implements VersionFactoryInterface
 
         $doMatch = preg_match('/version\/(?P<version>[\d\.]+)/i', $useragent, $matches);
 
-        if ($doMatch) {
+        if ($doMatch && is_string($matches['version'])) {
             try {
                 $version = $this->versionBuilder->set($matches['version']);
             } catch (NotNumericException $e) {
@@ -67,7 +68,7 @@ final class Safari implements VersionFactoryInterface
 
         $doMatch = preg_match('/Safari\/(?P<version>[\d\.]+)/', $useragent, $matches);
 
-        if ($doMatch) {
+        if ($doMatch && is_string($matches['version'])) {
             try {
                 $version = $this->versionBuilder->set($matches['version']);
             } catch (NotNumericException $e) {
