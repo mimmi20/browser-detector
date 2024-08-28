@@ -194,7 +194,7 @@ jobs:
           CODECOV_TOKEN: "${{ secrets.CODECOV_TOKEN }}"
 
       - name: "Upload coverage to Codeclimate"
-        uses: "paambaati/codeclimate-action@v8.0.0"
+        uses: "paambaati/codeclimate-action@v9.0.0"
         env:
           CC_TEST_REPORTER_ID: "${{ secrets.CODECLIMATE_API_KEY }}"
         with:
