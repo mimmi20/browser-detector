@@ -30,10 +30,7 @@ final class XPuffinUa implements HeaderInterface
     {
         $matches = [];
 
-        if (
-            preg_match('/(?:android|iphone os)\/(?P<device>[^\/]+)/i', $this->value, $matches)
-            && isset($matches['device'])
-        ) {
+        if (preg_match('/(?:android|iphone os)\/(?P<device>[^\/]+)/i', $this->value, $matches)) {
             $code = mb_strtolower($matches['device']);
 
             return match ($code) {
@@ -66,10 +63,7 @@ final class XPuffinUa implements HeaderInterface
     {
         $matches = [];
 
-        if (
-            preg_match('/(?P<platform>android|iphone os)/i', $this->value, $matches)
-            && isset($matches['platform'])
-        ) {
+        if (preg_match('/(?P<platform>android|iphone os)/i', $this->value, $matches)) {
             $code = mb_strtolower($matches['platform']);
 
             return match ($code) {

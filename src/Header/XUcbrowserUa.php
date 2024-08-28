@@ -73,10 +73,7 @@ final class XUcbrowserUa implements HeaderInterface
     {
         $matches = [];
 
-        if (
-            preg_match('/pr\((?P<client>[^\/)]+)(?:\/[\d.]+)?\);/', $this->value, $matches)
-            && isset($matches['client'])
-        ) {
+        if (preg_match('/pr\((?P<client>[^\/)]+)(?:\/[\d.]+)?\);/', $this->value, $matches)) {
             $code = mb_strtolower($matches['client']);
 
             return match ($code) {
@@ -113,10 +110,7 @@ final class XUcbrowserUa implements HeaderInterface
     /** @throws void */
     public function hasPlatformCode(): bool
     {
-        if (
-            preg_match('/pf\((?P<platform>[^)]+)\);/i', $this->value, $matches)
-            && isset($matches['platform'])
-        ) {
+        if (preg_match('/pf\((?P<platform>[^)]+)\);/i', $this->value, $matches)) {
             return match (mb_strtolower($matches['platform'])) {
                 'linux', 'symbian', '42', '44', 'windows', 'java' => true,
                 default => false,
@@ -131,10 +125,7 @@ final class XUcbrowserUa implements HeaderInterface
     {
         $matches = [];
 
-        if (
-            preg_match('/ov\((?P<platform>[^)]+)\);/i', $this->value, $matches)
-            && isset($matches['platform'])
-        ) {
+        if (preg_match('/ov\((?P<platform>[^)]+)\);/i', $this->value, $matches)) {
             $code = mb_strtolower($matches['platform']);
 
             return match ($code) {
@@ -152,10 +143,7 @@ final class XUcbrowserUa implements HeaderInterface
     /** @throws void */
     public function hasPlatformVersion(): bool
     {
-        if (
-            preg_match('/ov\((?P<version>[^)]+)\);/i', $this->value, $matches)
-            && isset($matches['version'])
-        ) {
+        if (preg_match('/ov\((?P<version>[^)]+)\);/i', $this->value, $matches)) {
             return (bool) preg_match('/^(?:(wds|android) )?[\d_.]+$/i', $matches['version']);
         }
 
@@ -171,10 +159,7 @@ final class XUcbrowserUa implements HeaderInterface
     {
         $matches = [];
 
-        if (
-            preg_match('/ov\((?:(wds|android) )?(?P<version>[\d_.]+)\);/i', $this->value, $matches)
-            && isset($matches['version'])
-        ) {
+        if (preg_match('/ov\((?:(wds|android) )?(?P<version>[\d_.]+)\);/i', $this->value, $matches)) {
             return str_replace('_', '.', $matches['version']);
         }
 
