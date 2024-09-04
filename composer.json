@@ -50,11 +50,11 @@
     "ext-xml": "*",
     "ext-xmlwriter": "*",
     "infection/infection": "^0.27.11 || ^0.28.1 || ^0.29.0",
-    "mikey179/vfsstream": "^1.6.11",
-    "mimmi20/coding-standard": "^5.2.41",
+    "mikey179/vfsstream": "^1.6.12",
+    "mimmi20/coding-standard": "^5.2.43",
     "nikic/php-parser": "^4.19.1 || ^5.0.2",
     "phpstan/extension-installer": "^1.4.2",
-    "phpstan/phpstan": "^1.12.0",
+    "phpstan/phpstan": "^1.12.1",
     "phpstan/phpstan-deprecation-rules": "^1.2.0",
     "phpstan/phpstan-phpunit": "^1.4.0",
     "phpunit/phpunit": "^10.5.25",
@@ -63,7 +63,7 @@
     "symplify/phpstan-rules": "^13.0.1",
     "tomasvotruba/cognitive-complexity": "^0.2.3",
     "tomasvotruba/type-coverage": "^0.3.1",
-    "tomasvotruba/unused-public": "^0.3.10"
+    "tomasvotruba/unused-public": "^0.3.11"
   },
   "minimum-stability": "stable",
   "prefer-stable": true,
