@@ -25,8 +25,11 @@ jobs:
       ini-values: "opcache.enable=1, opcache.fast_shutdown=0, zend.assertions=1, assert.exception=On, intl.default_locale=de, intl.use_exceptions=1, zend.exception_ignore_args=0"
       composer-options: "--optimize-autoloader --prefer-dist --prefer-stable -v"
       skip-validate-composer: false
+      skip-validate-yaml: false
+      skip-validate-md: false
       skip-phplint: false
       skip-check-composer: false
+      skip-ec-checker: false
       dependency-analyser-options: ""
 
   install:
@@ -55,6 +58,7 @@ jobs:
       skip-phpstan: false
       skip-rector: false
       skip-phpmd: false
+      phpcs-options: ""
 
   tests:
     name: "UnitTests with PHPUnit"
