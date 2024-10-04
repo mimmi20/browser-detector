@@ -124,5 +124,47 @@
       "version": "120.0.6099.516",
       "manufacturer": "google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 13; Nubia Z17) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6261.645 YaSearchBrowser/24.44 BroPP/1.0 YaSearchApp/24.44 webOmni SA/3 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general ZTE device",
+      "marketingName": "general ZTE device",
+      "manufacturer": "zte",
+      "brand": "zte",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Yandex Search Browser",
+      "version": "24.44.0",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "122.0.6261.645",
+      "manufacturer": "google"
+    }
   }
 ]

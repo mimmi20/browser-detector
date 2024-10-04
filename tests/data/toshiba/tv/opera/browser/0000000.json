@@ -418,5 +418,47 @@
       "version": "44.0.2403.130",
       "manufacturer": "google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/9.80 (Linux mips; ) Presto/2.12.407 Version/12.51 MB97/0.0.39.18 (TOSHIBA, Mxl661L32, wireless) VSTVB_MB97  SmartTvA/3.0.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Toshiba TV",
+      "marketingName": "general Toshiba TV",
+      "manufacturer": "toshiba",
+      "brand": "toshiba",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation"
+    },
+    "client": {
+      "name": "Opera",
+      "version": "12.51.0",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.12.407",
+      "manufacturer": "opera"
+    }
   }
 ]

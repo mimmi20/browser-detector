@@ -544,5 +544,47 @@
       "version": "102.0.5005.125",
       "manufacturer": "google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; SAMSUNG SM-R885U) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/3.0. Chrome/111.0.5563.116 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-R885U",
+      "marketingName": "Galaxy Watch 4 Classic (42mm, LTE)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": 0,
+      "display": {
+        "width": 396,
+        "height": 396,
+        "touch": true,
+        "size": 1.2
+      },
+      "type": "watch",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Samsung Browser",
+      "version": "3.0.0",
+      "manufacturer": "samsung",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "111.0.5563.116",
+      "manufacturer": "google"
+    }
   }
 ]

@@ -250,5 +250,47 @@
       "version": "60.0.3112.113",
       "manufacturer": "google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/605.1.16 (KHTML, like Gecko; compatible; Friendly_Crawler/2.0) Chrome/120.0.6099.217 Safari/605.1.15/Nutch-1.20-SNAPSHOT"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Windows Desktop",
+      "marketingName": "Windows Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows",
+      "marketingName": "Windows",
+      "version": "10.0.0",
+      "manufacturer": "microsoft"
+    },
+    "client": {
+      "name": "Nutch",
+      "version": "1.20.0",
+      "manufacturer": "apache",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "120.0.6099.217",
+      "manufacturer": "google"
+    }
   }
 ]
