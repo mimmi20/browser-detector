@@ -1,7 +1,11 @@
 {
   "rules": {
+    "/glory[ _]g1s/i": "agm glory g1s",
+    "/pad[ _]p2/i": "agm pad p2",
     "/x2/i": "agm x2",
-    "/x1/i": "agm x1"
+    "/x1/i": "agm x1",
+    "/h6/i": "agm h6",
+    "/g2/i": "agm g2"
   },
   "generic": "general agm device"
 }
