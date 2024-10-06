@@ -175,7 +175,6 @@ final class XUcbrowserUa implements HeaderInterface
 
         if (preg_match('/re\((?P<engine>[^\/)]+)(?:\/[\d.]+)?/', $this->value, $matches)) {
             $code = mb_strtolower($matches['engine']);
-            //var_dump($code);
 
             return match ($code) {
                 'applewebkit' => 'webkit',

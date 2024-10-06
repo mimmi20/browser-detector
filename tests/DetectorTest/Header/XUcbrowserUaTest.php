@@ -26,20 +26,20 @@ final class XUcbrowserUaTest extends TestCase
     /** @throws ExpectationFailedException */
     #[DataProvider('providerUa')]
     public function testData(
-        string        $ua,
-        bool          $hasDeviceCode,
-        string        $deviceCode,
-        bool          $hasClientInfo,
+        string $ua,
+        bool $hasDeviceCode,
+        string $deviceCode,
+        bool $hasClientInfo,
         string | null $clientCode,
-        bool          $hasClientVersion,
+        bool $hasClientVersion,
         string | null $clientVersion,
-        bool          $hasPlatformCode,
+        bool $hasPlatformCode,
         string | null $platformCode,
-        bool          $hasPlatformVersion,
+        bool $hasPlatformVersion,
         string | null $platformVersion,
-        bool          $hasEngineCode,
+        bool $hasEngineCode,
         string | null $engineCode,
-        bool          $hasEngineVersion,
+        bool $hasEngineVersion,
         string | null $engineVersion,
     ): void {
         $searchCode = null;

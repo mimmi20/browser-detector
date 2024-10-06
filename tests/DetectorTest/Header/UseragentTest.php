@@ -1299,7 +1299,7 @@ final class UseragentTest extends TestCase
         $ua = 'dv(iPh14,4);pr(UCBrowse/11a);ov(17a);ss(375x812);bt(GJ);pm(0);bv(0);nm(0);im(0);nt(2);';
 
         $deviceParser = $this->createMock(DeviceParserInterface::class);
-        $matcher = self::exactly(2);
+        $matcher      = self::exactly(2);
         $deviceParser
             ->expects($matcher)
             ->method('parse')

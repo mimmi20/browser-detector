@@ -19,7 +19,9 @@ use function mb_strtolower;
 use function mb_substr;
 use function preg_match;
 
+use const SORT_ASC;
 use const SORT_DESC;
+use const SORT_NATURAL;
 use const SORT_NUMERIC;
 
 trait SortTrait
@@ -59,7 +61,15 @@ trait SortTrait
             $nameList[$brand] = $code;
         }
 
-        array_multisort($fullVersionList, SORT_DESC, SORT_NUMERIC, $nameList, SORT_ASC, SORT_NATURAL, $list);
+        array_multisort(
+            $fullVersionList,
+            SORT_DESC,
+            SORT_NUMERIC,
+            $nameList,
+            SORT_ASC,
+            SORT_NATURAL,
+            $list,
+        );
 
         return $list;
     }

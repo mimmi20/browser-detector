@@ -22,6 +22,8 @@ use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\TestCase;
 use Psr\Http\Message\MessageInterface;
 
+use function mb_strtoupper;
+
 final class GenericRequestTest extends TestCase
 {
     /** @throws Exception */
@@ -582,7 +584,7 @@ final class GenericRequestTest extends TestCase
         $browserUa = 'pr(testBrowserUA)';
         $deviceUa  = 'testDeviceUA';
         $headers   = [
-            strtoupper(Constants::HEADER_USERAGENT) => [$userAgent],
+            mb_strtoupper(Constants::HEADER_USERAGENT) => [$userAgent],
             Constants::HEADER_DEVICE_STOCK_UA => [$deviceUa],
             'via' => ['test'],
             'x-test' => [''],
@@ -666,7 +668,7 @@ final class GenericRequestTest extends TestCase
             ->willReturnCallback(
                 static function (string $name) use ($matcher, $userAgent, $deviceUa, $browserUa): string {
                     match ($matcher->numberOfInvocations()) {
-                        1 => self::assertSame(strtoupper(Constants::HEADER_USERAGENT), $name),
+                        1 => self::assertSame(mb_strtoupper(Constants::HEADER_USERAGENT), $name),
                         2 => self::assertSame(Constants::HEADER_DEVICE_STOCK_UA, $name),
                         5 => self::assertSame(Constants::HEADER_UCBROWSER_UA, $name),
                         3 => self::assertSame('via', $name),
