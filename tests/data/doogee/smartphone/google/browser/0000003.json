@@ -4228,12 +4228,12 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 11; N40Pro Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/122.0.6261.119 Mobile Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 14; Blade10 Ultra) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Mobile Safari/537.36"
     },
     "device": {
       "architecture": null,
-      "deviceName": "N40 Pro",
-      "marketingName": "N40 Pro",
+      "deviceName": "Blade 10 Ultra",
+      "marketingName": "Blade 10 Ultra",
       "manufacturer": "doogee",
       "brand": "doogee",
       "dualOrientation": true,
@@ -4242,7 +4242,7 @@
         "width": 1600,
         "height": 720,
         "touch": true,
-        "size": 6.52
+        "size": 6.56
       },
       "type": "smartphone",
       "ismobile": true,
@@ -4252,39 +4252,39 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "11.0.0",
+      "version": "14.0.0",
       "manufacturer": "google"
     },
     "client": {
-      "name": "Android WebView",
-      "version": "122.0.6261.119",
+      "name": "Chrome",
+      "version": "129.0.0.0",
       "manufacturer": "google",
       "type": "browser",
       "isbot": false
     },
     "engine": {
       "name": "Blink",
-      "version": "122.0.6261.119",
+      "version": "129.0.0.0",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; S59Pro Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/126.0.6478.134 Mobile Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 14; Blade10 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Mobile Safari/537.36"
     },
     "device": {
       "architecture": null,
-      "deviceName": "S59 Pro",
-      "marketingName": "S59 Pro",
+      "deviceName": "Blade 10 Pro",
+      "marketingName": "Blade 10 Pro",
       "manufacturer": "doogee",
       "brand": "doogee",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
-        "width": 1520,
+        "width": 1600,
         "height": 720,
         "touch": true,
-        "size": 5.71
+        "size": 6.56
       },
       "type": "smartphone",
       "ismobile": true,
@@ -4294,19 +4294,19 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "10.0.0",
+      "version": "14.0.0",
       "manufacturer": "google"
     },
     "client": {
-      "name": "Android WebView",
-      "version": "126.0.6478.134",
+      "name": "Chrome",
+      "version": "128.0.0.0",
       "manufacturer": "google",
       "type": "browser",
       "isbot": false
     },
     "engine": {
       "name": "Blink",
-      "version": "126.0.6478.134",
+      "version": "128.0.0.0",
       "manufacturer": "google"
     }
   }

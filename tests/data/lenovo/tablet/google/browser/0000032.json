@@ -1,6 +1,48 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; Lenovo TB-X104F Build/OPM1.171019.026) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.5672.162 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "TB-X104F",
+      "marketingName": "Tab E10 Wi-Fi",
+      "manufacturer": "lenovo",
+      "brand": "lenovo",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 10.1
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.1.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "113.0.5672.162",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "113.0.5672.162",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 13; TB300FU Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/116.0.0.0 Mobile Safari/537.36"
     },
     "device": {
@@ -194,6 +236,48 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; TB370FU Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/120.0.6099.144 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "TB370FU",
+      "marketingName": "Tab P12 Wi-Fi",
+      "manufacturer": "lenovo",
+      "brand": "lenovo",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 2944,
+        "height": 1840,
+        "touch": true,
+        "size": 12.7
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Android WebView",
+      "version": "120.0.6099.144",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "120.0.6099.144",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 11; TB328FU) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.85 Safari/537.36"
     },
     "device": {
@@ -357,6 +441,90 @@
     "engine": {
       "name": "Blink",
       "version": "121.0.6167.178",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; TB370FU Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/121.0.6167.178 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "TB370FU",
+      "marketingName": "Tab P12 Wi-Fi",
+      "manufacturer": "lenovo",
+      "brand": "lenovo",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 2944,
+        "height": 1840,
+        "touch": true,
+        "size": 12.7
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Android WebView",
+      "version": "121.0.6167.178",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "121.0.6167.178",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; TB370FU Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/122.0.6261.105 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "TB370FU",
+      "marketingName": "Tab P12 Wi-Fi",
+      "manufacturer": "lenovo",
+      "brand": "lenovo",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 2944,
+        "height": 1840,
+        "touch": true,
+        "size": 12.7
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Android WebView",
+      "version": "122.0.6261.105",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "122.0.6261.105",
       "manufacturer": "google"
     }
   },
@@ -596,6 +764,48 @@
     "engine": {
       "name": "Blink",
       "version": "120.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; TB301FU) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "TB301FU",
+      "marketingName": "Tab M8 G4 Wi-Fi (2024)",
+      "manufacturer": "lenovo",
+      "brand": "lenovo",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 8
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "126.0.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "126.0.0.0",
       "manufacturer": "google"
     }
   },
@@ -1142,6 +1352,90 @@
     "engine": {
       "name": "Blink",
       "version": "125.0.6422.165",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; TB350FU Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/126.0.6478.134 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "TB350FU",
+      "marketingName": "Tab P11 G2 Wi-Fi",
+      "manufacturer": "lenovo",
+      "brand": "lenovo",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 2000,
+        "height": 1200,
+        "touch": true,
+        "size": 11.5
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Android WebView",
+      "version": "126.0.6478.134",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "126.0.6478.134",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; TB370FU Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/124.0.6367.179 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "TB370FU",
+      "marketingName": "Tab P12 Wi-Fi",
+      "manufacturer": "lenovo",
+      "brand": "lenovo",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 2944,
+        "height": 1840,
+        "touch": true,
+        "size": 12.7
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Android WebView",
+      "version": "124.0.6367.179",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "124.0.6367.179",
       "manufacturer": "google"
     }
   },

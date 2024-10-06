@@ -3949,6 +3949,48 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; TB330FU) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.5615.135 Safari/537.36 OPR/75.3.3978.72666"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "TB330FU",
+      "marketingName": "Tab M11 Wi-Fi",
+      "manufacturer": "lenovo",
+      "brand": "lenovo",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 1920,
+        "height": 1200,
+        "touch": true,
+        "size": 11
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "version": "75.3.3978.72666",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "112.0.5615.135",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 10; Lenovo YT-X705F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.6367.113 Safari/537.36 OPR/82.2.4342.79505"
     },
     "device": {
@@ -3986,6 +4028,48 @@
     "engine": {
       "name": "Blink",
       "version": "124.0.6367.113",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 14; TB370FU) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6261.149 Safari/537.36 OPR/81.3.4292.78780"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "TB370FU",
+      "marketingName": "Tab P12 Wi-Fi",
+      "manufacturer": "lenovo",
+      "brand": "lenovo",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 2944,
+        "height": 1840,
+        "touch": true,
+        "size": 12.7
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "version": "81.3.4292.78780",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "122.0.6261.149",
       "manufacturer": "google"
     }
   },

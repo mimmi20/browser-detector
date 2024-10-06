@@ -1143,4 +1143,293 @@ final class UseragentTest extends TestCase
             sprintf('engine info mismatch for ua "%s"', $ua),
         );
     }
+
+    /**
+     * @throws ExpectationFailedException
+     * @throws Exception
+     */
+    public function testData2(): void
+    {
+        $ua = 'dv(iPh14,4);pr(UCBrowser/11.3.5.1203);ov(17_3_1);ss(375x812);bt(GJ);pm(0);bv(0);nm(0);im(0);nt(2);';
+
+        $deviceParser = $this->createMock(DeviceParserInterface::class);
+        $deviceParser
+            ->expects(self::once())
+            ->method('parse')
+            ->with('iPh14,4')
+            ->willReturn('iPh14,4');
+
+        $platformParser = $this->createMock(PlatformParserInterface::class);
+        $platformParser
+            ->expects(self::once())
+            ->method('parse')
+            ->with($ua)
+            ->willReturn('');
+
+        $browserParser = $this->createMock(BrowserParserInterface::class);
+        $browserParser
+            ->expects(self::never())
+            ->method('parse');
+
+        $engineParser = $this->createMock(EngineParserInterface::class);
+        $engineParser
+            ->expects(self::exactly(2))
+            ->method('parse')
+            ->with($ua)
+            ->willReturn('');
+
+        $browserLoader = $this->createMock(BrowserLoaderInterface::class);
+        $browserLoader
+            ->expects(self::never())
+            ->method('load');
+
+        $platformLoader = $this->createMock(PlatformLoaderInterface::class);
+        $platformLoader
+            ->expects(self::never())
+            ->method('load');
+
+        $engineLoader = $this->createMock(EngineLoaderInterface::class);
+        $engineLoader
+            ->expects(self::never())
+            ->method('load');
+
+        $normalizerFactory = new NormalizerFactory();
+
+        $header = new Useragent(
+            $ua,
+            $deviceParser,
+            $platformParser,
+            $browserParser,
+            $engineParser,
+            $normalizerFactory,
+            $browserLoader,
+            $platformLoader,
+            $engineLoader,
+        );
+
+        self::assertSame($ua, $header->getValue(), sprintf('value mismatch for ua "%s"', $ua));
+        self::assertSame(
+            $ua,
+            $header->getNormalizedValue(),
+            sprintf('value mismatch for ua "%s"', $ua),
+        );
+        self::assertFalse(
+            $header->hasDeviceArchitecture(),
+            sprintf('device info mismatch for ua "%s"', $ua),
+        );
+        self::assertNull(
+            $header->getDeviceArchitecture(),
+            sprintf('device info mismatch for ua "%s"', $ua),
+        );
+        self::assertFalse(
+            $header->hasDeviceBitness(),
+            sprintf('device info mismatch for ua "%s"', $ua),
+        );
+        self::assertNull(
+            $header->getDeviceBitness(),
+            sprintf('device info mismatch for ua "%s"', $ua),
+        );
+        self::assertFalse(
+            $header->hasDeviceIsMobile(),
+            sprintf('device info mismatch for ua "%s"', $ua),
+        );
+        self::assertNull(
+            $header->getDeviceIsMobile(),
+            sprintf('device info mismatch for ua "%s"', $ua),
+        );
+        self::assertTrue($header->hasDeviceCode(), sprintf('device info mismatch for ua "%s"', $ua));
+        self::assertSame(
+            'iPh14,4',
+            $header->getDeviceCode(),
+            sprintf('device info mismatch for ua "%s"', $ua),
+        );
+        self::assertTrue($header->hasClientCode(), sprintf('browser info mismatch for ua "%s"', $ua));
+        self::assertSame(
+            'ucbrowser',
+            $header->getClientCode(),
+            sprintf('browser info mismatch for ua "%s"', $ua),
+        );
+        self::assertTrue(
+            $header->hasClientVersion(),
+            sprintf('browser info mismatch for ua "%s"', $ua),
+        );
+        self::assertSame(
+            '11.3.5.1203',
+            $header->getClientVersion(),
+            sprintf('browser info mismatch for ua "%s"', $ua),
+        );
+        self::assertTrue(
+            $header->hasPlatformCode(),
+            sprintf('platform info mismatch for ua "%s"', $ua),
+        );
+        self::assertNull(
+            $header->getPlatformCode(),
+            sprintf('platform info mismatch for ua "%s"', $ua),
+        );
+        self::assertTrue(
+            $header->hasPlatformVersion(),
+            sprintf('platform info mismatch for ua "%s"', $ua),
+        );
+        self::assertSame(
+            '17.3.1',
+            $header->getPlatformVersion(),
+            sprintf('platform info mismatch for ua "%s"', $ua),
+        );
+        self::assertTrue($header->hasEngineCode(), sprintf('engine info mismatch for ua "%s"', $ua));
+        self::assertNull(
+            $header->getEngineCode(),
+            sprintf('engine info mismatch for ua "%s"', $ua),
+        );
+        self::assertTrue(
+            $header->hasEngineVersion(),
+            sprintf('engine info mismatch for ua "%s"', $ua),
+        );
+        self::assertNull(
+            $header->getEngineVersion(),
+            sprintf('engine info mismatch for ua "%s"', $ua),
+        );
+    }
+
+    /**
+     * @throws ExpectationFailedException
+     * @throws Exception
+     */
+    public function testData3(): void
+    {
+        $ua = 'dv(iPh14,4);pr(UCBrowse/11a);ov(17a);ss(375x812);bt(GJ);pm(0);bv(0);nm(0);im(0);nt(2);';
+
+        $deviceParser = $this->createMock(DeviceParserInterface::class);
+        $deviceParser
+            ->expects(self::exactly(2))
+            ->method('parse')
+            ->willReturnMap([['iPh14,4', ''], [$ua, '']]);
+
+        $platformParser = $this->createMock(PlatformParserInterface::class);
+        $platformParser
+            ->expects(self::exactly(2))
+            ->method('parse')
+            ->with($ua)
+            ->willReturn('');
+
+        $browserParser = $this->createMock(BrowserParserInterface::class);
+        $browserParser
+            ->expects(self::exactly(2))
+            ->method('parse')
+            ->with($ua)
+            ->willReturn('');
+
+        $engineParser = $this->createMock(EngineParserInterface::class);
+        $engineParser
+            ->expects(self::exactly(2))
+            ->method('parse')
+            ->with($ua)
+            ->willReturn('');
+
+        $browserLoader = $this->createMock(BrowserLoaderInterface::class);
+        $browserLoader
+            ->expects(self::never())
+            ->method('load');
+
+        $platformLoader = $this->createMock(PlatformLoaderInterface::class);
+        $platformLoader
+            ->expects(self::never())
+            ->method('load');
+
+        $engineLoader = $this->createMock(EngineLoaderInterface::class);
+        $engineLoader
+            ->expects(self::never())
+            ->method('load');
+
+        $normalizerFactory = new NormalizerFactory();
+
+        $header = new Useragent(
+            $ua,
+            $deviceParser,
+            $platformParser,
+            $browserParser,
+            $engineParser,
+            $normalizerFactory,
+            $browserLoader,
+            $platformLoader,
+            $engineLoader,
+        );
+
+        self::assertSame($ua, $header->getValue(), sprintf('value mismatch for ua "%s"', $ua));
+        self::assertSame(
+            $ua,
+            $header->getNormalizedValue(),
+            sprintf('value mismatch for ua "%s"', $ua),
+        );
+        self::assertFalse(
+            $header->hasDeviceArchitecture(),
+            sprintf('device info mismatch for ua "%s"', $ua),
+        );
+        self::assertNull(
+            $header->getDeviceArchitecture(),
+            sprintf('device info mismatch for ua "%s"', $ua),
+        );
+        self::assertFalse(
+            $header->hasDeviceBitness(),
+            sprintf('device info mismatch for ua "%s"', $ua),
+        );
+        self::assertNull(
+            $header->getDeviceBitness(),
+            sprintf('device info mismatch for ua "%s"', $ua),
+        );
+        self::assertFalse(
+            $header->hasDeviceIsMobile(),
+            sprintf('device info mismatch for ua "%s"', $ua),
+        );
+        self::assertNull(
+            $header->getDeviceIsMobile(),
+            sprintf('device info mismatch for ua "%s"', $ua),
+        );
+        self::assertTrue($header->hasDeviceCode(), sprintf('device info mismatch for ua "%s"', $ua));
+        self::assertNull(
+            $header->getDeviceCode(),
+            sprintf('device info mismatch for ua "%s"', $ua),
+        );
+        self::assertTrue($header->hasClientCode(), sprintf('browser info mismatch for ua "%s"', $ua));
+        self::assertNull(
+            $header->getClientCode(),
+            sprintf('browser info mismatch for ua "%s"', $ua),
+        );
+        self::assertTrue(
+            $header->hasClientVersion(),
+            sprintf('browser info mismatch for ua "%s"', $ua),
+        );
+        self::assertNull(
+            $header->getClientVersion(),
+            sprintf('browser info mismatch for ua "%s"', $ua),
+        );
+        self::assertTrue(
+            $header->hasPlatformCode(),
+            sprintf('platform info mismatch for ua "%s"', $ua),
+        );
+        self::assertNull(
+            $header->getPlatformCode(),
+            sprintf('platform info mismatch for ua "%s"', $ua),
+        );
+        self::assertTrue(
+            $header->hasPlatformVersion(),
+            sprintf('platform info mismatch for ua "%s"', $ua),
+        );
+        self::assertNull(
+            $header->getPlatformVersion(),
+            sprintf('platform info mismatch for ua "%s"', $ua),
+        );
+        self::assertTrue($header->hasEngineCode(), sprintf('engine info mismatch for ua "%s"', $ua));
+        self::assertNull(
+            $header->getEngineCode(),
+            sprintf('engine info mismatch for ua "%s"', $ua),
+        );
+        self::assertTrue(
+            $header->hasEngineVersion(),
+            sprintf('engine info mismatch for ua "%s"', $ua),
+        );
+        self::assertNull(
+            $header->getEngineVersion(),
+            sprintf('engine info mismatch for ua "%s"', $ua),
+        );
+    }
 }
