@@ -82,7 +82,7 @@ final class AndroidOs implements VersionFactoryInterface
             }
         }
 
-        if (preg_match('/Android API (?P<version>\d+)/', $useragent, $matches)) {
+        if (preg_match('/Android API (?:Level\: )?(?P<version>\d+)/', $useragent, $matches)) {
             try {
                 return $this->versionBuilder->set($this->mapSdkVersion($matches['version']));
             } catch (NotNumericException $e) {

@@ -36,7 +36,7 @@ final class Ios implements VersionFactoryInterface
         'IUC\(U\;iOS',
         'iPh OS',
         'iosv',
-        'iPad\/',
+        '(?<!browser)iPad\/',
         'iPhone\/',
         '(?<!Outlook-)iOS',
     ];
@@ -367,20 +367,6 @@ final class Ios implements VersionFactoryInterface
         $versionNumber = $detectedVersion->getVersion(VersionInterface::IGNORE_MINOR);
 
         if ($versionNumber !== null) {
-            if (
-                preg_match('/(?P<major>\d{2})(?P<minor>\d{2})(?P<micro>\d)/', $versionNumber, $versions)
-            ) {
-                try {
-                    return $this->versionBuilder->set(
-                        $versions['major'] . '.' . $versions['minor'] . '.' . $versions['micro'],
-                    );
-                } catch (NotNumericException $e) {
-                    $this->logger->info($e);
-
-                    return new NullVersion();
-                }
-            }
-
             if (
                 preg_match('/(?P<major>\d{1,2})(?P<minor>\d)(?P<micro>\d)/', $versionNumber, $versions)
             ) {
