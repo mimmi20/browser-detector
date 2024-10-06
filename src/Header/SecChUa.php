@@ -62,8 +62,7 @@ final class SecChUa implements HeaderInterface
             'google chrome' => 'chrome',
             'avastsecurebrowser' => 'avast secure browser',
             'wavebrowser' => 'wave-browser',
-            'opera', 'atom', 'opera gx', 'avast secure browser', 'ccleaner browser' => $code,
-            default => null,
+            default => $code,
         };
     }
 

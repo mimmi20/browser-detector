@@ -390,10 +390,12 @@ final class Detector implements DetectorInterface
         }
 
         if ($clientCodename !== null) {
+            assert($clientHeader instanceof HeaderInterface);
+
             try {
                 [$client, $engineCodenameFromClient] = $this->browserLoader->load(
                     key: $clientCodename,
-                    useragent: $clientHeader instanceof HeaderInterface ? $clientHeader->getValue() : '',
+                    useragent: $clientHeader->getValue(),
                 );
 
                 return [

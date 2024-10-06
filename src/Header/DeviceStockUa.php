@@ -122,13 +122,12 @@ final class DeviceStockUa implements HeaderInterface
             $code = mb_strtolower($matches['platform']);
 
             return match ($code) {
-                'bada', 'android', 'brew', 'mre' => $code,
                 'blackberry' => 'rim os',
                 'iphone os' => 'ios',
                 'mtk' => 'nucleus os',
                 'windows phone os', 'windows phone' => 'windows phone',
                 'brew mp' => 'brew',
-                default => null,
+                default => $code,
             };
         }
 
