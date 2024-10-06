@@ -119,7 +119,7 @@ final class Detector implements DetectorInterface
 
             try {
                 $version    = $versionBuilder->set((string) $platformVersion);
-                $iosVersion = (int) $version->getVersion(VersionInterface::IGNORE_MINOR);
+                $iosVersion = $version->getVersion(VersionInterface::IGNORE_MINOR);
 
                 if (
                     $deviceMarketingName !== null
