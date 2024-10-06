@@ -1,6 +1,48 @@
 [
   {
     "headers": {
+      "user-agent": "dv(GT-S6102);pr(UCBrowser/9.8.5.442);ov(Android 2.3.6);ss(240*301);bt(GJ);pm(1);bv(0);nm(0);im(0);sr(0);nt(2);"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "2.3.6",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "UC Browser",
+      "version": "9.8.5.442",
+      "manufacturer": "ucweb",
+      "type": "transcoder",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Java; U; en-us; samsung-gt-s3370b) --XIOZ-->8.4.0.159/69/352/UCWEB Mobile UNTRUSTED/1.0"
     },
     "device": {
@@ -298,6 +340,48 @@
       "name": null,
       "version": "1.0.0",
       "manufacturer": null
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "dv(HMA-AL00);pr(UCBrowser/13.7.0.1132);ov(Android 10);ss(360*683);pi(1080*2049);bt(UM);pm(1);bv(1);nm(0);im(0);sr(0);nt(2);"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "UC Browser",
+      "version": "13.7.0.1132",
+      "manufacturer": "ucweb",
+      "type": "transcoder",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
     }
   },
   {

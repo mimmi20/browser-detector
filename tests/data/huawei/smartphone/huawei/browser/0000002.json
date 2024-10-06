@@ -1,6 +1,48 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; CDY-NX9A Build/HUAWEICDY-N29; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.93 Mobile Safari/537.36 HuaweiBrowser/12.0.0.303 HMSCore/6.3.0.316"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "CDY-NX9A",
+      "marketingName": "P40 Lite 5G",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "HuaweiBrowser",
+      "version": "12.0.0.303",
+      "manufacturer": "huawei",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "88.0.4324.93",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 10; PPA-LX1 Build/HUAWEIPPA-LX1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Mobile Safari/537.36 HuaweiBrowser/12.0.0.303 HMSCore/6.3.0.326"
     },
     "device": {
@@ -394,6 +436,48 @@
         "height": 1228,
         "touch": true,
         "size": 6.6
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "HarmonyOS",
+      "marketingName": "HarmonyOS",
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "HuaweiBrowser",
+      "version": "12.0.3.310",
+      "manufacturer": "huawei",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "92.0.4515.105",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; HarmonyOS; BAL-AL00; HMSCore 6.3.0.327) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.105 HuaweiBrowser/12.0.3.310 Mobile Safari/537.3"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "BAL-AL00",
+      "marketingName": "P50 Pocket",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2790,
+        "height": 1188,
+        "touch": true,
+        "size": 6.9
       },
       "type": "smartphone",
       "ismobile": true,
@@ -1428,6 +1512,48 @@
     "engine": {
       "name": "Blink",
       "version": "78.0.3904.108",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; BAL-L49; HMSCore 6.4.0.312; GMSCore 22.06.18) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.105 HuaweiBrowser/12.0.3.314 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "BAL-L49",
+      "marketingName": "P50 Pocket",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2790,
+        "height": 1188,
+        "touch": true,
+        "size": 6.9
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "HuaweiBrowser",
+      "version": "12.0.3.314",
+      "manufacturer": "huawei",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "92.0.4515.105",
       "manufacturer": "google"
     }
   },
@@ -4168,132 +4294,6 @@
     "client": {
       "name": "HuaweiBrowser",
       "version": "99.0.0",
-      "manufacturer": "huawei",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "99.0.4844.88",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; MAR-LX1B; HMSCore 6.10.4.302; GMSCore 23.16.13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.88 HuaweiBrowser/13.0.4.302 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "MAR-LX1B",
-      "marketingName": "P30 Lite",
-      "manufacturer": "huawei",
-      "brand": "huawei",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 2312,
-        "height": 1080,
-        "touch": true,
-        "size": 6.15
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "HuaweiBrowser",
-      "version": "13.0.4.302",
-      "manufacturer": "huawei",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "99.0.4844.88",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; MED-LX9N; HMSCore 6.10.0.311) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.88 HuaweiBrowser/13.0.4.303 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "MED-LX9N",
-      "marketingName": "Y6p (2020)",
-      "manufacturer": "huawei",
-      "brand": "huawei",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1600,
-        "height": 720,
-        "touch": true,
-        "size": 6.3
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "HuaweiBrowser",
-      "version": "13.0.4.303",
-      "manufacturer": "huawei",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "99.0.4844.88",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; YAL-L21; HMSCore 6.10.4.302; GMSCore 23.16.13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.88 HuaweiBrowser/13.0.4.303 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "YAL-L21",
-      "marketingName": "Honor 20",
-      "manufacturer": "huawei",
-      "brand": "huawei",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 2340,
-        "height": 1080,
-        "touch": true,
-        "size": 6.26
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "HuaweiBrowser",
-      "version": "13.0.4.303",
       "manufacturer": "huawei",
       "type": "browser",
       "isbot": false

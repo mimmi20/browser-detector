@@ -344,6 +344,48 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 14; 23127PN0CC Build/UKQ1.230804.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/13.51 SP-engine/2.89.0 baiduboxapp/13.51.0.10 (Baidu; P1 14) NABar/1.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "23127PN0CC",
+      "marketingName": "14",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2670,
+        "height": 1200,
+        "touch": true,
+        "size": 6.36
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Baidu Box App",
+      "version": "13.51.0.10",
+      "manufacturer": "baidu",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "T7",
+      "version": "13.51.0",
+      "manufacturer": "baidu"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; MI 6X Build/OPM1.171019.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/63.0.3239.83 Mobile Safari/537.36 T7/10.12 baiduboxapp/10.12.0.12 (Baidu; P1 8.1.0)"
     },
     "device": {
@@ -381,6 +423,55 @@
     "engine": {
       "name": "T7",
       "version": "10.12.0",
+      "manufacturer": "baidu"
+    }
+  },
+  {
+    "headers": {
+      "purpose": "prefetch",
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "cross-site",
+      "user-agent": "Mozilla/5.0 (Linux; Android 14; 23127PN0CC Build/UKQ1.230804.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/13.51 SP-engine/2.89.0 baiduboxapp/13.51.0.10 (Baidu; P1 14) NABar/1.0",
+      "x-bd-traceid": "adbec7720628434994aec0f1a2b8ca31",
+      "x-from-h3-trnet": "true",
+      "x-requested-with": "com.baidu.searchbox"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "23127PN0CC",
+      "marketingName": "14",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2670,
+        "height": 1200,
+        "touch": true,
+        "size": 6.36
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Baidu Box App",
+      "version": null,
+      "manufacturer": "baidu",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "T7",
+      "version": "13.51.0",
       "manufacturer": "baidu"
     }
   }

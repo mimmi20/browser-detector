@@ -1936,6 +1936,48 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 13; PHP110) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 YaBrowser/23.7.0.271.00 SA/3 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "PHP110",
+      "marketingName": "Ace 2V",
+      "manufacturer": "bbk",
+      "brand": "oneplus",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2772,
+        "height": 1240,
+        "touch": true,
+        "size": 6.74
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "version": "23.7.0.271.00",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "114.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 13; CPH2565) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 YaBrowser/23.7.5.95.00 SA/3 Mobile Safari/537.36"
     },
     "device": {
@@ -2020,6 +2062,48 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 14; PJD110) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.90 YaBrowser/24.1.8.90.00 SA/3 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "PJD110",
+      "marketingName": "12",
+      "manufacturer": "bbk",
+      "brand": "oneplus",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 3168,
+        "height": 1440,
+        "touch": true,
+        "size": 6.82
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "version": "24.1.8.90.00",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "120.0.6099.90",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 14; PJR110) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.6367.82 YaBrowser/24.6.1.82.00 SA/3 Mobile Safari/537.36"
     },
     "device": {
@@ -2057,6 +2141,48 @@
     "engine": {
       "name": "Blink",
       "version": "124.0.6367.82",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 13; RMX3781) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.6367.46 YaBrowser/24.6.5.46.00 SA/3 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "RMX3781",
+      "marketingName": "V50s",
+      "manufacturer": "bbk",
+      "brand": "realme",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.72
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "version": "24.6.5.46.00",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "124.0.6367.46",
       "manufacturer": "google"
     }
   },
