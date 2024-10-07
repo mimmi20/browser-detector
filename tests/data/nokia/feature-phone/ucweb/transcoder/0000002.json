@@ -3361,6 +3361,49 @@
   },
   {
     "headers": {
+      "user-agent": "NokiaE72-1/UCWEB8.9.0.253/28/999",
+      "x-ucbrowser-ua": "pf(Symbian);er(U);la(zh-CN);up(U2/1.0.0);re(U2/1.0.0);dv(NokiaE72-1);pr(UCBrowser/8.9.0.253);ov(S60V3);pi(320*240);ss(320*240);bt(UC);pm(1);bv(0);nm(0);im(0);sr(2);nt(2)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "E72",
+      "marketingName": "E72",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.4
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Symbian OS",
+      "marketingName": "Symbian OS",
+      "version": null,
+      "manufacturer": "symbian-foundation"
+    },
+    "client": {
+      "name": "UC Browser",
+      "version": "8.9.0.253",
+      "manufacturer": "ucweb",
+      "type": "transcoder",
+      "isbot": false
+    },
+    "engine": {
+      "name": "U2",
+      "version": "1.0.0",
+      "manufacturer": "ucweb"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Nokia200/2.0 (11.95) Profile/MIDP-2.1 Configuration/CLDC-1.1 UCWEB/2.0 (Java; U; MIDP-2.0; xx; Nokia200) U2/1.0.0 UCBrowser/9.4.1.377 U2/1.0.0 Mobile",
       "x-ucbrowser-ua": "pf(Java);la(en-US);re(U2/1.0.0);dv(Nokia200);pr(UCBrowser/9.4.1.377);ov(MIDP-2.0);pi(320*240);ss(320*240);up(U2/1.0.0);er(U);bt(GJ);pm(1);bv(0);nm(0);im(0);sr(0);nt(1);",
       "x-ucbrowser-device-ua": "Mozilla/5.0 (Series40; Nokia200/11.81; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/3.7.0.0.11",
@@ -3386,10 +3429,10 @@
       "bits": null
     },
     "os": {
-      "name": "Nokia OS",
-      "marketingName": "Nokia OS",
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "nokia"
+      "manufacturer": "sun-microsystems"
     },
     "client": {
       "name": "UC Browser",
@@ -3399,9 +3442,9 @@
       "isbot": false
     },
     "engine": {
-      "name": null,
+      "name": "U2",
       "version": "1.0.0",
-      "manufacturer": null
+      "manufacturer": "ucweb"
     }
   },
   {
@@ -3431,10 +3474,10 @@
       "bits": null
     },
     "os": {
-      "name": "Nokia OS",
-      "marketingName": "Nokia OS",
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "nokia"
+      "manufacturer": "sun-microsystems"
     },
     "client": {
       "name": "UC Browser",
@@ -3444,9 +3487,9 @@
       "isbot": false
     },
     "engine": {
-      "name": null,
+      "name": "U2",
       "version": "1.0.0",
-      "manufacturer": null
+      "manufacturer": "ucweb"
     }
   },
   {
@@ -3476,10 +3519,10 @@
       "bits": null
     },
     "os": {
-      "name": "Nokia OS",
-      "marketingName": "Nokia OS",
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "nokia"
+      "manufacturer": "sun-microsystems"
     },
     "client": {
       "name": "UC Browser",
@@ -3489,99 +3532,9 @@
       "isbot": false
     },
     "engine": {
-      "name": null,
+      "name": "U2",
       "version": "1.0.0",
-      "manufacturer": null
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "UCWEB/2.0 (Symbian; U; S60 V3; xx; NOKIA6120c) U2/1.0.0 UCBrowser/9.2.0.336 U2/1.0.0 Mobile",
-      "x-ucbrowser-device": "NOKIA # 6120c",
-      "x-ucbrowser-device-ua": "Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NOKIA6120c/07.20; Profile/MIDP-2.0 Configuration/CLDC-1.1) AppleWebKit/413 (KHTML, like Gecko) Safari/413",
-      "x-ucbrowser-ua": "pf(Symbian);er(U);la(en-US);up(U2/1.0.0);re(U2/1.0.0);dv(NOKIA6120c);pr(UCBrowser/9.2.0.336);ov(S60V3);pi(240*320);ss(240*320);bt(GJ);pm(1);bv(0);nm(0);im(0);sr(2);nt(1)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "6120c",
-      "marketingName": "6120 classic",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": 2
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
-      "version": null,
-      "manufacturer": "symbian-foundation"
-    },
-    "client": {
-      "name": "UC Browser",
-      "version": "9.2.0.336",
-      "manufacturer": "ucweb",
-      "type": "transcoder",
-      "isbot": false
-    },
-    "engine": {
-      "name": null,
-      "version": "1.0.0",
-      "manufacturer": null
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Windows; U; Windows NT 6.0; xx; Desktop) AppleWebKit/534.13 (KHTML, like Gecko) UCBrowser/9.4.1.377",
-      "x-ucbrowser-ua": "pf(Java);la(en-US);re(U2/1.0.0);dv(Nokia501s);pr(UCBrowser/9.4.1.377);ov(MIDP-2.0);pi(240*320);ss(240*320);up(U2/1.0.0);er(U);bt(GJ);pm(1);bv(0);nm(0);im(0);sr(0);nt(1);",
-      "x-ucbrowser-device": "nokia#501s",
-      "x-ucbrowser-device-ua": "Nokia501s/2.0 (10.0.12) Profile/MIDP-2.1 Configuration/CLDC-1.1"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "501",
-      "marketingName": "Asha 501",
-      "manufacturer": "nokia",
-      "brand": "nokia",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": true,
-        "size": 3
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Nokia OS",
-      "marketingName": "Nokia OS",
-      "version": null,
-      "manufacturer": "nokia"
-    },
-    "client": {
-      "name": "UC Browser",
-      "version": "9.4.1.377",
-      "manufacturer": "ucweb",
-      "type": "transcoder",
-      "isbot": false
-    },
-    "engine": {
-      "name": null,
-      "version": "534.13.0",
-      "manufacturer": null
+      "manufacturer": "ucweb"
     }
   },
   {
@@ -3611,10 +3564,10 @@
       "bits": null
     },
     "os": {
-      "name": "Symbian OS",
-      "marketingName": "Symbian OS",
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "symbian-foundation"
+      "manufacturer": "sun-microsystems"
     },
     "client": {
       "name": "UC Browser",
@@ -3624,9 +3577,9 @@
       "isbot": false
     },
     "engine": {
-      "name": null,
+      "name": "U2",
       "version": "1.0.0",
-      "manufacturer": null
+      "manufacturer": "ucweb"
     }
   },
   {
@@ -3656,10 +3609,10 @@
       "bits": null
     },
     "os": {
-      "name": "Nokia OS",
-      "marketingName": "Nokia OS",
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
       "version": null,
-      "manufacturer": "nokia"
+      "manufacturer": "sun-microsystems"
     },
     "client": {
       "name": "UC Browser",
@@ -3669,9 +3622,9 @@
       "isbot": false
     },
     "engine": {
-      "name": null,
+      "name": "U2",
       "version": "1.0.0",
-      "manufacturer": null
+      "manufacturer": "ucweb"
     }
   },
   {
@@ -4218,6 +4171,48 @@
       "name": "U2",
       "version": "1.0.0",
       "manufacturer": "ucweb"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "NokiaX2-02/2.0 (11.79) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0; SLCC2;.NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.2) UCBrowser8.4.0.159/70/352"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "X2-02",
+      "marketingName": "X2",
+      "manufacturer": "nokia",
+      "brand": "nokia",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 320,
+        "height": 240,
+        "touch": false,
+        "size": 2.2
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows",
+      "marketingName": "Windows",
+      "version": "7.0.0",
+      "manufacturer": "microsoft"
+    },
+    "client": {
+      "name": "UC Browser",
+      "version": "8.4.0.159",
+      "manufacturer": "ucweb",
+      "type": "transcoder",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Trident",
+      "version": "4.0.0",
+      "manufacturer": "microsoft"
     }
   }
 ]

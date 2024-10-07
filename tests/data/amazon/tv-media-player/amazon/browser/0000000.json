@@ -719,8 +719,8 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "AFTSS",
-      "marketingName": "Fire TV Stick Lite (1st Gen.)",
+      "deviceName": "AFTSSS",
+      "marketingName": "Fire TV Stick (3rd Gen.)",
       "manufacturer": "amazon",
       "brand": "amazon",
       "dualOrientation": null,
@@ -887,8 +887,8 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "AFTSS",
-      "marketingName": "Fire TV Stick Lite (1st Gen.)",
+      "deviceName": "AFTSSS",
+      "marketingName": "Fire TV Stick (3rd Gen.)",
       "manufacturer": "amazon",
       "brand": "amazon",
       "dualOrientation": null,
@@ -971,8 +971,8 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "AFTSS",
-      "marketingName": "Fire TV Stick Lite (1st Gen.)",
+      "deviceName": "AFTSSS",
+      "marketingName": "Fire TV Stick (3rd Gen.)",
       "manufacturer": "amazon",
       "brand": "amazon",
       "dualOrientation": null,
@@ -1094,6 +1094,48 @@
   {
     "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 9; AFTSSS) AppleWebKit/537.36 (KHTML, like Gecko) Silk/108.1.135 like Chrome/108.0.5359.160 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "AFTSSS",
+      "marketingName": "Fire TV Stick (3rd Gen.)",
+      "manufacturer": "amazon",
+      "brand": "amazon",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv-media-player",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Silk",
+      "version": "108.1.135",
+      "manufacturer": "amazon",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "108.0.5359.160",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; AFTSS) AppleWebKit/537.36 (KHTML, like Gecko) Silk/108.1.135 like Chrome/108.0.5359.160 Safari/537.36"
     },
     "device": {
       "architecture": null,
