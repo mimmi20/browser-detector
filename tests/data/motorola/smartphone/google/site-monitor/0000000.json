@@ -250,5 +250,47 @@
       "version": "98.0.4695.0",
       "manufacturer": "google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11.0; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.6045.159 Mobile Safari/537.36 Chrome-Lighthouse DebugBear"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Moto G Power (2022)",
+      "marketingName": "Moto G Power (2022)",
+      "manufacturer": "motorola",
+      "brand": "motorola",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 1600,
+        "height": 720,
+        "touch": true,
+        "size": 6.5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Lighthouse",
+      "version": null,
+      "manufacturer": "google",
+      "type": "site-monitor",
+      "isbot": true
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "119.0.6045.159",
+      "manufacturer": "google"
+    }
   }
 ]

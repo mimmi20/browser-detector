@@ -2567,5 +2567,47 @@
       "version": "12.27.0",
       "manufacturer": "baidu"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; RMX3783 Build/TP1A.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/103.0.5060.129 Mobile Safari/537.36 SP-engine/2.63.0 baiduboxapp/13.25.0.10 (Baidu; P1 13) NABar/1.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "RMX3783",
+      "marketingName": "V50s",
+      "manufacturer": "bbk",
+      "brand": "realme",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.72
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Baidu Box App",
+      "version": "13.25.0.10",
+      "manufacturer": "baidu",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "103.0.5060.129",
+      "manufacturer": "google"
+    }
   }
 ]

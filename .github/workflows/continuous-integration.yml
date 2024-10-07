@@ -76,7 +76,6 @@ jobs:
 
       matrix:
         operating-system:
-          - "ubuntu-22.04"
           - "ubuntu-24.04"
 
         php-version:
@@ -144,7 +143,6 @@ jobs:
 
       matrix:
         operating-system:
-          - "ubuntu-22.04"
           - "ubuntu-24.04"
 
         php-version:
@@ -218,7 +216,7 @@ jobs:
       - name: "Run mutation tests with infection/infection"
         env:
           STRYKER_DASHBOARD_API_KEY: ${{ secrets.STRYKER_DASHBOARD_API_KEY }}
-        run: "vendor/bin/infection --show-mutations --only-covered --min-covered-msi=93 --min-msi=93 --coverage=.build/coverage --logger-github --no-progress -vv"
+        run: "vendor/bin/infection --show-mutations --only-covered --min-covered-msi=95 --min-msi=95 --coverage=.build/coverage --logger-github --no-progress -vv"
 
   finish-code-coverage:
     runs-on: "ubuntu-24.04"
@@ -247,7 +245,6 @@ jobs:
 
       matrix:
         operating-system:
-          - "ubuntu-22.04"
           - "ubuntu-24.04"
 
         php-version:

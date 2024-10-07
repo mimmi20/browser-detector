@@ -719,8 +719,8 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "AFTS",
-      "marketingName": "Fire TV (2nd Gen.)",
+      "deviceName": "AFTSSS",
+      "marketingName": "Fire TV Stick (3rd Gen.)",
       "manufacturer": "amazon",
       "brand": "amazon",
       "dualOrientation": null,
@@ -845,8 +845,8 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "AFTS",
-      "marketingName": "Fire TV (2nd Gen.)",
+      "deviceName": "AFTSS",
+      "marketingName": "Fire TV Stick Lite (1st Gen.)",
       "manufacturer": "amazon",
       "brand": "amazon",
       "dualOrientation": null,
@@ -887,8 +887,8 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "AFTS",
-      "marketingName": "Fire TV (2nd Gen.)",
+      "deviceName": "AFTSSS",
+      "marketingName": "Fire TV Stick (3rd Gen.)",
       "manufacturer": "amazon",
       "brand": "amazon",
       "dualOrientation": null,
@@ -971,8 +971,8 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "AFTS",
-      "marketingName": "Fire TV (2nd Gen.)",
+      "deviceName": "AFTSSS",
+      "marketingName": "Fire TV Stick (3rd Gen.)",
       "manufacturer": "amazon",
       "brand": "amazon",
       "dualOrientation": null,
@@ -1051,12 +1051,96 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 9; AFTSSS) AppleWebKit/537.36 (KHTML, like Gecko) Silk/108.1.135 like Chrome/108.0.5359.160 Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; AFTSO001) AppleWebKit/537.36 (KHTML, like Gecko) Silk/100.2.23 like Chrome/100.0.4896.162 Safari/537.36"
     },
     "device": {
       "architecture": null,
       "deviceName": "AFTS",
       "marketingName": "Fire TV (2nd Gen.)",
+      "manufacturer": "amazon",
+      "brand": "amazon",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv-media-player",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Silk",
+      "version": "100.2.23",
+      "manufacturer": "amazon",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "100.0.4896.162",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; AFTSSS) AppleWebKit/537.36 (KHTML, like Gecko) Silk/108.1.135 like Chrome/108.0.5359.160 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "AFTSSS",
+      "marketingName": "Fire TV Stick (3rd Gen.)",
+      "manufacturer": "amazon",
+      "brand": "amazon",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv-media-player",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Silk",
+      "version": "108.1.135",
+      "manufacturer": "amazon",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "108.0.5359.160",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; AFTSS) AppleWebKit/537.36 (KHTML, like Gecko) Silk/108.1.135 like Chrome/108.0.5359.160 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "AFTSS",
+      "marketingName": "Fire TV Stick Lite (1st Gen.)",
       "manufacturer": "amazon",
       "brand": "amazon",
       "dualOrientation": null,
@@ -1181,8 +1265,8 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "AFTS",
-      "marketingName": "Fire TV (2nd Gen.)",
+      "deviceName": "AFTSS",
+      "marketingName": "Fire TV Stick Lite (1st Gen.)",
       "manufacturer": "amazon",
       "brand": "amazon",
       "dualOrientation": null,
@@ -1340,6 +1424,48 @@
     "engine": {
       "name": "Blink",
       "version": "118.0.5993.155",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; AFTSS) AppleWebKit/537.36 (KHTML, like Gecko) Silk/120.5.10 like Chrome/120.0.6099.295 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "AFTSS",
+      "marketingName": "Fire TV Stick Lite (1st Gen.)",
+      "manufacturer": "amazon",
+      "brand": "amazon",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv-media-player",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Silk",
+      "version": "120.5.10",
+      "manufacturer": "amazon",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "120.0.6099.295",
       "manufacturer": "google"
     }
   }

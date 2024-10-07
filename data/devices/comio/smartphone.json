@@ -78,5 +78,37 @@
     },
     "type": "smartphone",
     "platform": "android"
+  },
+  "comio x1 note": {
+    "deviceName": "X1 Note",
+    "marketingName": "X1 Note",
+    "manufacturer": "comio",
+    "brand": "comio",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2160,
+      "height": 1080,
+      "touch": true,
+      "size": 6
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "comio c1": {
+    "deviceName": "C1",
+    "marketingName": "C1",
+    "manufacturer": "comio",
+    "brand": "comio",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 5
+    },
+    "type": "smartphone",
+    "platform": "android"
   }
 }

@@ -1,5 +1,6 @@
 {
   "rules": {
+    "/nova[ _]?60/i": "condor nova 60",
     "/allure m1/i": "condor allure m1",
     "/plume p8 pro/i": "condor plume p8 pro",
     "/plume l1/i": "condor plume l1",

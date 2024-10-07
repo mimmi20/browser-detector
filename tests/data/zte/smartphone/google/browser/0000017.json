@@ -1811,17 +1811,17 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "Z17s",
-      "marketingName": "Nubia Z17s",
+      "deviceName": "Nubia Z17",
+      "marketingName": "Nubia Z17",
       "manufacturer": "zte",
       "brand": "zte",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
-        "width": 2040,
+        "width": 1920,
         "height": 1080,
         "touch": true,
-        "size": 5.73
+        "size": 5.5
       },
       "type": "smartphone",
       "ismobile": true,

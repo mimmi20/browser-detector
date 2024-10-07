@@ -132,7 +132,7 @@ final class SecChUaTest extends TestCase
             ['" Not A;Brand";v="99", "Chromium";v="101", "Opera";v="101"', true, 'opera', true, '101'],
             ['" Not A;Brand";v="99", "Chromium";v="100", "Yandex";v="22"', true, 'yabrowser', true, '22'],
             ['""', false, null, false, null],
-            ['";Not A Brand";v="99", "Opera";v="80", "OperaMobile";v="66", "Chromium";v="94""', true, 'opera mobile', true, '66'],
+            ['";Not A Brand";v="99", "Opera";v="80", "OperaMobile";v="66", "Chromium";v="94"', true, 'opera mobile', true, '66'],
             ['" Not A;Brand";v="99", "Chromium";v="100", "Atom";v="22"', true, 'atom', true, '22'],
             ['" Not A;Brand";v="99", "Chromium";v="99", "HuaweiBrowser";v="99"', true, 'huawei-browser', true, '99'],
             ['"Chromium";v="108", "Opera GX";v="94", "Not)A;Brand";v="99"', true, 'opera gx', true, '94'],
@@ -140,6 +140,7 @@ final class SecChUaTest extends TestCase
             ['" Not A;Brand";v="99", "Chromium";v="100", "CCleaner Browser";v="100"', true, 'ccleaner browser', true, '100'],
             ['"AvastSecureBrowser";v="6.6.0", " Not A;Brand";v="99.0.0.0", "Chromium";v="98.0.4758.101"', true, 'avast secure browser', true, '6.6.0'],
             ['"WaveBrowser";v="112", "WaveBrowser";v="112", "Not:A-Brand";v="99"', true, 'wave-browser', true, '112'],
+            ['"Opera";v="86", ";Not A Brand";v="99", "Chromium";v="100", "OperaMobile";v="69"', true, 'opera mobile', true, '69'],
         ];
     }
 }

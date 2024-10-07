@@ -24,6 +24,10 @@ use UaNormalizer\Normalizer\Exception\Exception;
 use UaNormalizer\NormalizerFactory;
 use UnexpectedValueException;
 
+use function mb_strtolower;
+use function preg_match;
+use function str_replace;
+
 final class Useragent implements HeaderInterface
 {
     use HeaderTrait;
@@ -68,6 +72,16 @@ final class Useragent implements HeaderInterface
     /** @throws void */
     public function getDeviceCode(): string | null
     {
+        $matches = [];
+
+        if (preg_match('/dv\((?P<device>[^)]+)\);/', $this->value, $matches)) {
+            $code = $this->deviceParser->parse($matches['device']);
+
+            if ($code !== '') {
+                return $code;
+            }
+        }
+
         $code = $this->deviceParser->parse($this->normalizedValue);
 
         if ($code === '') {
@@ -86,6 +100,16 @@ final class Useragent implements HeaderInterface
     /** @throws void */
     public function getClientCode(): string | null
     {
+        $matches = [];
+
+        if (preg_match('/pr\((?P<client>[^\/)]+)(?:\/[\d.]+)?\);/', $this->value, $matches)) {
+            $code = mb_strtolower($matches['client']);
+
+            if ($code === 'ucbrowser') {
+                return $code;
+            }
+        }
+
         try {
             $code = $this->browserParser->parse($this->normalizedValue);
 
@@ -94,7 +118,7 @@ final class Useragent implements HeaderInterface
             }
 
             return $code;
-        } catch (NotFoundException | UnexpectedValueException) {
+        } catch (UnexpectedValueException) {
             // do nothing
         }
 
@@ -110,6 +134,12 @@ final class Useragent implements HeaderInterface
     /** @throws void */
     public function getClientVersion(string | null $code = null): string | null
     {
+        $matches = [];
+
+        if (preg_match('/pr\([^\/]+\/(?P<version>[\d.]+)\);/', $this->value, $matches)) {
+            return $matches['version'];
+        }
+
         if ($code === null) {
             try {
                 $code = $this->browserParser->parse($this->normalizedValue);
@@ -117,14 +147,14 @@ final class Useragent implements HeaderInterface
                 if ($code === '') {
                     return null;
                 }
-            } catch (NotFoundException | UnexpectedValueException) {
+            } catch (UnexpectedValueException) {
                 return null;
             }
         }
 
         try {
             [$browser] = $this->browserLoader->load($code, $this->normalizedValue);
-        } catch (NotFoundException | UnexpectedValueException) {
+        } catch (UnexpectedValueException) {
             return null;
         }
 
@@ -140,6 +170,20 @@ final class Useragent implements HeaderInterface
     /** @throws void */
     public function getPlatformCode(): string | null
     {
+        $matches = [];
+
+        if (preg_match('/pf\((?P<platform>[^)]+)\);/', $this->value, $matches)) {
+            $code = mb_strtolower($matches['platform']);
+
+            return match ($code) {
+                'symbian', 'java' => $code,
+                'windows' => 'windows phone',
+                '42', '44' => 'ios',
+                'linux' => 'android',
+                default => null,
+            };
+        }
+
         $code = $this->platformParser->parse($this->normalizedValue);
 
         if ($code === '') {
@@ -158,6 +202,12 @@ final class Useragent implements HeaderInterface
     /** @throws void */
     public function getPlatformVersion(string | null $code = null): string | null
     {
+        $matches = [];
+
+        if (preg_match('/ov\((?:(wds|android) )?(?P<version>[\d_.]+)\);/i', $this->value, $matches)) {
+            return str_replace('_', '.', $matches['version']);
+        }
+
         if ($code === null) {
             $code = $this->platformParser->parse($this->normalizedValue);
 

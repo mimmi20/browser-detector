@@ -15,7 +15,6 @@ namespace BrowserDetectorTest\Parser\Helper;
 use BrowserDetector\Parser\Helper\RulefileParser;
 use JsonException;
 use org\bovigo\vfs\vfsStream;
-use PHPUnit\Framework\Constraint\IsInstanceOf;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
@@ -58,7 +57,25 @@ final class RulefileParserTest extends TestCase
         $logger
             ->expects(self::once())
             ->method('error')
-            ->with(new IsInstanceOf(Throwable::class));
+            ->willReturnCallback(
+                static function (string | Stringable $message, array $context = []): void {
+                    assert($message instanceof Throwable);
+
+                    self::assertInstanceOf(Throwable::class, $message);
+                    self::assertSame([], $context);
+
+                    self::assertSame(
+                        sprintf(
+                            'file %s does not exist',
+                            vfsStream::url(self::DATA_PATH . '/bot2.json'),
+                        ),
+                        $message->getMessage(),
+                    );
+
+                    self::assertSame(0, $message->getCode());
+                    self::assertNull($message->getPrevious());
+                },
+            );
         $logger
             ->expects(self::never())
             ->method('critical');
@@ -109,7 +126,22 @@ final class RulefileParserTest extends TestCase
         $logger
             ->expects(self::once())
             ->method('error')
-            ->with(new IsInstanceOf(Throwable::class));
+            ->willReturnCallback(
+                static function (string | Stringable $message, array $context = []): void {
+                    assert($message instanceof Throwable);
+
+                    self::assertInstanceOf(Throwable::class, $message);
+                    self::assertSame([], $context);
+
+                    self::assertSame(
+                        'could not decode content of file vfs://root/bot.json',
+                        $message->getMessage(),
+                    );
+
+                    self::assertSame(0, $message->getCode());
+                    self::assertInstanceOf(JsonException::class, $message->getPrevious());
+                },
+            );
         $logger
             ->expects(self::never())
             ->method('critical');
@@ -172,6 +204,7 @@ final class RulefileParserTest extends TestCase
                         sprintf('could not decode content of file %s', $path),
                         $message->getMessage(),
                     );
+
                     self::assertSame(0, $message->getCode());
                     self::assertInstanceOf(JsonException::class, $message->getPrevious());
                 },
@@ -270,7 +303,22 @@ final class RulefileParserTest extends TestCase
         $logger
             ->expects(self::once())
             ->method('error')
-            ->with(new IsInstanceOf(Throwable::class));
+            ->willReturnCallback(
+                static function (string | Stringable $message, array $context = []): void {
+                    assert($message instanceof Throwable);
+
+                    self::assertInstanceOf(Throwable::class, $message);
+                    self::assertSame([], $context);
+
+                    self::assertSame(
+                        'invalid numeric rule "1" found in file vfs://root/bot2.json',
+                        $message->getMessage(),
+                    );
+
+                    self::assertSame(0, $message->getCode());
+                    self::assertNull($message->getPrevious());
+                },
+            );
         $logger
             ->expects(self::never())
             ->method('critical');
@@ -320,7 +368,22 @@ final class RulefileParserTest extends TestCase
         $logger
             ->expects(self::once())
             ->method('error')
-            ->with(new IsInstanceOf(Throwable::class));
+            ->willReturnCallback(
+                static function (string | Stringable $message, array $context = []): void {
+                    assert($message instanceof Throwable);
+
+                    self::assertInstanceOf(Throwable::class, $message);
+                    self::assertSame([], $context);
+
+                    self::assertSame(
+                        'could not match rule "/(?<!test-?)useragent/" of file vfs://root/bot2.json: 1',
+                        $message->getMessage(),
+                    );
+
+                    self::assertSame(0, $message->getCode());
+                    self::assertNull($message->getPrevious());
+                },
+            );
         $logger
             ->expects(self::never())
             ->method('critical');
@@ -370,7 +433,22 @@ final class RulefileParserTest extends TestCase
         $logger
             ->expects(self::once())
             ->method('error')
-            ->with(new IsInstanceOf(Throwable::class));
+            ->willReturnCallback(
+                static function (string | Stringable $message, array $context = []): void {
+                    assert($message instanceof Throwable);
+
+                    self::assertInstanceOf(Throwable::class, $message);
+                    self::assertSame([], $context);
+
+                    self::assertSame(
+                        'could not match rule "/(?<!test-?)useragent/" of file vfs://root/bot2.json: 1',
+                        $message->getMessage(),
+                    );
+
+                    self::assertSame(0, $message->getCode());
+                    self::assertNull($message->getPrevious());
+                },
+            );
         $logger
             ->expects(self::never())
             ->method('critical');
@@ -420,7 +498,22 @@ final class RulefileParserTest extends TestCase
         $logger
             ->expects(self::once())
             ->method('error')
-            ->with(new IsInstanceOf(Throwable::class));
+            ->willReturnCallback(
+                static function (string | Stringable $message, array $context = []): void {
+                    assert($message instanceof Throwable);
+
+                    self::assertInstanceOf(Throwable::class, $message);
+                    self::assertSame([], $context);
+
+                    self::assertSame(
+                        'could not match rule "/(?<!test-?)useragent/" of file vfs://root/bot2.json: 1',
+                        $message->getMessage(),
+                    );
+
+                    self::assertSame(0, $message->getCode());
+                    self::assertNull($message->getPrevious());
+                },
+            );
         $logger
             ->expects(self::never())
             ->method('critical');

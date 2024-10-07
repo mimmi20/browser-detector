@@ -964,5 +964,47 @@
       "version": "75.0.3770.143",
       "manufacturer": "google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 13; TB370FU) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.90 YaBrowser/24.1.8.90.01 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "TB370FU",
+      "marketingName": "Tab P12 Wi-Fi",
+      "manufacturer": "lenovo",
+      "brand": "lenovo",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 2944,
+        "height": 1840,
+        "touch": true,
+        "size": 12.7
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "version": "24.1.8.90.01",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "120.0.6099.90",
+      "manufacturer": "google"
+    }
   }
 ]

@@ -514,6 +514,7 @@ final class SecChUaModelTest extends TestCase
             ['"RMX3563"', 'realme=realme rmx3563'],
             ['"RMX3623"', 'realme=realme rmx3623'],
             ['"ZC554KL"', 'asus=asus x00id'],
+            ['"SM-G965F"', 'samsung=samsung sm-g965f'],
             ['""', null],
         ];
     }

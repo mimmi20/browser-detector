@@ -110,7 +110,7 @@ final class XUcbrowserUa implements HeaderInterface
     /** @throws void */
     public function hasPlatformCode(): bool
     {
-        if (preg_match('/pf\((?P<platform>[^)]+)\);/i', $this->value, $matches)) {
+        if (preg_match('/pf\((?P<platform>[^)]+)\);/', $this->value, $matches)) {
             return match (mb_strtolower($matches['platform'])) {
                 'linux', 'symbian', '42', '44', 'windows', 'java' => true,
                 default => false,
@@ -125,7 +125,7 @@ final class XUcbrowserUa implements HeaderInterface
     {
         $matches = [];
 
-        if (preg_match('/ov\((?P<platform>[^)]+)\);/i', $this->value, $matches)) {
+        if (preg_match('/pf\((?P<platform>[^)]+)\);/', $this->value, $matches)) {
             $code = mb_strtolower($matches['platform']);
 
             return match ($code) {
@@ -143,11 +143,7 @@ final class XUcbrowserUa implements HeaderInterface
     /** @throws void */
     public function hasPlatformVersion(): bool
     {
-        if (preg_match('/ov\((?P<version>[^)]+)\);/i', $this->value, $matches)) {
-            return (bool) preg_match('/^(?:(wds|android) )?[\d_.]+$/i', $matches['version']);
-        }
-
-        return false;
+        return (bool) preg_match('/ov\((?:(wds|android) )?(?P<version>[\d_.]+)\);/i', $this->value);
     }
 
     /**
@@ -169,12 +165,45 @@ final class XUcbrowserUa implements HeaderInterface
     /** @throws void */
     public function hasEngineCode(): bool
     {
-        return (bool) preg_match('/re\((?P<engine>[^)]+)\)/', $this->value);
+        return (bool) preg_match('/re\(([^)]+)\)/', $this->value);
+    }
+
+    /** @throws void */
+    public function getEngineCode(): string | null
+    {
+        $matches = [];
+
+        if (preg_match('/re\((?P<engine>[^\/)]+)(?:\/[\d.]+)?/', $this->value, $matches)) {
+            $code = mb_strtolower($matches['engine']);
+
+            return match ($code) {
+                'applewebkit' => 'webkit',
+                default => $code,
+            };
+        }
+
+        return null;
     }
 
     /** @throws void */
     public function hasEngineVersion(): bool
     {
-        return (bool) preg_match('/re\((?P<engine>[\d_.]+)\)/', $this->value);
+        return (bool) preg_match('/re\([^\/]+\/[\d.]+/', $this->value);
+    }
+
+    /**
+     * @throws void
+     *
+     * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+     */
+    public function getEngineVersion(string | null $code = null): string | null
+    {
+        $matches = [];
+
+        if (preg_match('/re\([^\/]+\/(?P<version>[\d.]+)/', $this->value, $matches)) {
+            return $matches['version'];
+        }
+
+        return null;
     }
 }

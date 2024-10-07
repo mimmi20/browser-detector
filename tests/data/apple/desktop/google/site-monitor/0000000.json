@@ -250,5 +250,47 @@
       "version": "98.0.4695.0",
       "manufacturer": "google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.6045.159 Safari/537.36 Chrome-Lighthouse DebugBear"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Macintosh",
+      "marketingName": "Macintosh",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": false,
+      "simCount": 0,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "macOS",
+      "marketingName": "macOS",
+      "version": "10.15.7",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "Lighthouse",
+      "version": null,
+      "manufacturer": "google",
+      "type": "site-monitor",
+      "isbot": true
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "119.0.6045.159",
+      "manufacturer": "google"
+    }
   }
 ]

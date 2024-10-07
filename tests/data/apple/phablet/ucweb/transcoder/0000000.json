@@ -1,21 +1,21 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_1_1 like Mac OS X; zh-CN) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/19B81 UCBrowser/13.7.2.1636 Mobile AliApp(TUnionSDK/0.1.20.4) dv(iPh14,5);pr(UCBrowser/13.7.2.1636);ov(15_1_1);ss(390x844);bt(UC);pm(0);bv(0);nm(0);im(0);nt(1);"
+      "user-agent": "dv(iPh7,1);pr(UCBrowser/11.3.5.1203);ov(12_5_6);ss(414x736);bt(GJ);pm(0);bv(0);nm(0);im(0);nt(2);"
     },
     "device": {
       "architecture": null,
-      "deviceName": "iPhone 14,5",
-      "marketingName": "iPhone 13",
+      "deviceName": "iPhone 7,1",
+      "marketingName": "iPhone 6 Plus",
       "manufacturer": "apple",
       "brand": "apple",
-      "dualOrientation": true,
-      "simCount": 1,
+      "dualOrientation": null,
+      "simCount": null,
       "display": {
-        "width": 2532,
-        "height": 1170,
+        "width": 1920,
+        "height": 1080,
         "touch": true,
-        "size": 6.1
+        "size": 5.5
       },
       "type": "phablet",
       "ismobile": true,
@@ -23,22 +23,148 @@
       "bits": null
     },
     "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "15.1.1",
-      "manufacturer": "apple"
+      "name": null,
+      "marketingName": null,
+      "version": "12.5.6",
+      "manufacturer": "unknown"
     },
     "client": {
       "name": "UC Browser",
-      "version": "13.7.2.1636",
+      "version": "11.3.5.1203",
       "manufacturer": "ucweb",
       "type": "transcoder",
       "isbot": false
     },
     "engine": {
-      "name": "WebKit",
-      "version": "605.1.15",
-      "manufacturer": "apple"
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "dv(iPh8,2);pr(UCBrowser/11.3.5.1203);ov(15_8);ss(414x736);bt(GJ);pm(0);bv(0);nm(0);im(0);nt(1);"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPhone 8,2",
+      "marketingName": "iPhone 6S Plus",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": "15.8.0",
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "UC Browser",
+      "version": "11.3.5.1203",
+      "manufacturer": "ucweb",
+      "type": "transcoder",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "dv(iPh9,2);pr(UCBrowser/11.3.5.1203);ov(15_7_4);ss(414x736);bt(GJ);pm(0);bv(0);nm(0);im(0);nt(2);"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPhone 9,2",
+      "marketingName": "iPhone 7 Plus",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": "15.7.4",
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "UC Browser",
+      "version": "11.3.5.1203",
+      "manufacturer": "ucweb",
+      "type": "transcoder",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "dv(iPh9,4);pr(UCBrowser/11.3.5.1203);ov(15_8);ss(414x736);bt(GJ);pm(0);bv(0);nm(0);im(0);nt(1);"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "iPhone 9,4",
+      "marketingName": "iPhone 7 Plus",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": true,
+        "size": 5.5
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": "15.8.0",
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "UC Browser",
+      "version": "11.3.5.1203",
+      "manufacturer": "ucweb",
+      "type": "transcoder",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
     }
   }
 ]

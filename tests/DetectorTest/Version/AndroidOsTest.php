@@ -127,6 +127,98 @@ final class AndroidOsTest extends TestCase
                 'Instagram 5.0.2 Android (15/4.0.4; 240dpi; 480x800; AIRIS; TM450; AIRIS_TM450; qcom; es_ES)',
                 '4.0.4',
             ],
+            [
+                'ddg_android/5.92.1 (com.duckduckgo.mobile.android; Android API 30)',
+                '11.0.0',
+            ],
+            [
+                'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.24 (KHTML, like Gecko) Chrome/11.0.696.34 Safari/534.24#2.0#TCL/TCL-AP-MS68-S1/22/tclwebkit1.0.2/1920*1080(512512136,null;210494962,c756f2d1114b47c79c86725a20185784)',
+                '5.1.0',
+            ],
+            [
+                'ddg_android/5.92.1 (com.duckduckgo.mobile.android; Android API 34)',
+                '14.0.0',
+            ],
+            [
+                'ddg_android/5.92.1 (com.duckduckgo.mobile.android; Android API 33)',
+                '13.0.0',
+            ],
+            [
+                'ddg_android/5.92.1 (com.duckduckgo.mobile.android; Android API 32)',
+                '12.1.0',
+            ],
+            [
+                'ddg_android/5.92.1 (com.duckduckgo.mobile.android; Android API 31)',
+                '12.0.0',
+            ],
+            [
+                'ddg_android/5.92.1 (com.duckduckgo.mobile.android; Android API 29)',
+                '10.0.0',
+            ],
+            [
+                'ddg_android/5.92.1 (com.duckduckgo.mobile.android; Android API 28)',
+                '9.0.0',
+            ],
+            [
+                'ddg_android/5.92.1 (com.duckduckgo.mobile.android; Android API 27)',
+                '8.1.0',
+            ],
+            [
+                'ddg_android/5.92.1 (com.duckduckgo.mobile.android; Android API 26)',
+                '8.0.0',
+            ],
+            [
+                'ddg_android/5.92.1 (com.duckduckgo.mobile.android; Android API 25)',
+                '7.1.0',
+            ],
+            [
+                'ddg_android/5.92.1 (com.duckduckgo.mobile.android; Android API 24)',
+                '7.0.0',
+            ],
+            [
+                'ddg_android/5.92.1 (com.duckduckgo.mobile.android; Android API 23)',
+                '6.0.0',
+            ],
+            [
+                'ddg_android/5.92.1 (com.duckduckgo.mobile.android; Android API 22)',
+                '5.1.0',
+            ],
+            [
+                'ddg_android/5.92.1 (com.duckduckgo.mobile.android; Android API 21)',
+                '5.0.0',
+            ],
+            [
+                'ddg_android/5.92.1 (com.duckduckgo.mobile.android; Android API 20)',
+                '4.4.0',
+            ],
+            [
+                'ddg_android/5.92.1 (com.duckduckgo.mobile.android; Android API 19)',
+                '4.4.0',
+            ],
+            [
+                'ddg_android/5.92.1 (com.duckduckgo.mobile.android; Android API 18)',
+                '4.3.0',
+            ],
+            [
+                'ddg_android/5.92.1 (com.duckduckgo.mobile.android; Android API 17)',
+                '4.2.0',
+            ],
+            [
+                'ddg_android/5.92.1 (com.duckduckgo.mobile.android; Android API 16)',
+                '4.2.0',
+            ],
+            [
+                'ddg_android/5.92.1 (com.duckduckgo.mobile.android; Android API 15)',
+                '4.0.3',
+            ],
+            [
+                'Appcelerator Titanium/3.1.2 (HTC One X; Android API Level: 17; de-DE;)',
+                '4.2.0',
+            ],
+            [
+                'ddg_android/5.92.1 (com.duckduckgo.mobile.android; Android API 35)',
+                '0.0.0',
+            ],
         ];
     }
 
@@ -520,6 +612,106 @@ final class AndroidOsTest extends TestCase
             ->expects(self::once())
             ->method('set')
             ->with('9')
+            ->willThrowException($exception);
+
+        assert($logger instanceof LoggerInterface);
+        assert($versionBuilder instanceof VersionFactoryInterface);
+        $object = new AndroidOs($logger, $versionBuilder);
+
+        $detectedVersion = $object->detectVersion($useragent);
+
+        self::assertInstanceOf(VersionInterface::class, $detectedVersion);
+        self::assertInstanceOf(NullVersion::class, $detectedVersion);
+        self::assertNull($detectedVersion->getVersion());
+    }
+
+    /** @throws UnexpectedValueException */
+    public function testDetectVersionFail9(): void
+    {
+        $useragent = 'ddg_android/5.92.1 (com.duckduckgo.mobile.android; Android API 30)';
+        $exception = new NotNumericException('set failed');
+        $logger    = $this->createMock(LoggerInterface::class);
+        $logger
+            ->expects(self::never())
+            ->method('debug');
+        $logger
+            ->expects(self::once())
+            ->method('info')
+            ->with($exception);
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::never())
+            ->method('warning');
+        $logger
+            ->expects(self::never())
+            ->method('error');
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
+
+        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
+            ->expects(self::once())
+            ->method('set')
+            ->with('11')
+            ->willThrowException($exception);
+
+        assert($logger instanceof LoggerInterface);
+        assert($versionBuilder instanceof VersionFactoryInterface);
+        $object = new AndroidOs($logger, $versionBuilder);
+
+        $detectedVersion = $object->detectVersion($useragent);
+
+        self::assertInstanceOf(VersionInterface::class, $detectedVersion);
+        self::assertInstanceOf(NullVersion::class, $detectedVersion);
+        self::assertNull($detectedVersion->getVersion());
+    }
+
+    /** @throws UnexpectedValueException */
+    public function testDetectVersionFail10(): void
+    {
+        $useragent = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.24 (KHTML, like Gecko) Chrome/11.0.696.34 Safari/534.24#2.0#TCL/TCL-AP-MS68-S1/22/tclwebkit1.0.2/1920*1080(512512136,null;210494962,c756f2d1114b47c79c86725a20185784)';
+        $exception = new NotNumericException('set failed');
+        $logger    = $this->createMock(LoggerInterface::class);
+        $logger
+            ->expects(self::never())
+            ->method('debug');
+        $logger
+            ->expects(self::once())
+            ->method('info')
+            ->with($exception);
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::never())
+            ->method('warning');
+        $logger
+            ->expects(self::never())
+            ->method('error');
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
+
+        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
+            ->expects(self::once())
+            ->method('set')
+            ->with('5.1')
             ->willThrowException($exception);
 
         assert($logger instanceof LoggerInterface);

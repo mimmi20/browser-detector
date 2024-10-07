@@ -11,7 +11,7 @@ checks:
   method-count:
     enabled: true
   method-lines:
-    enabled: true
+    enabled: false
   nested-control-flow:
     enabled: true
   return-statements:

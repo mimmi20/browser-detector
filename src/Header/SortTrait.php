@@ -19,7 +19,9 @@ use function mb_strtolower;
 use function mb_substr;
 use function preg_match;
 
+use const SORT_ASC;
 use const SORT_DESC;
+use const SORT_NATURAL;
 use const SORT_NUMERIC;
 
 trait SortTrait
@@ -35,6 +37,7 @@ trait SortTrait
         $list            = [];
         $value           = $this->value;
         $fullVersionList = [];
+        $nameList        = [];
 
         while (preg_match($reg, $value, $matches)) {
             $list[$matches['brand']] = $matches['version'];
@@ -49,14 +52,24 @@ trait SortTrait
             $code = mb_strtolower($brand);
 
             $fullVersionList[$brand] = match ($code) {
-                'operamobile' => 3,
                 'opera', 'google chrome', 'microsoft edge', 'yandex', 'huaweibrowser', 'atom', 'opera gx', 'avast secure browser', 'avastsecurebrowser', 'ccleaner browser', 'wavebrowser' => 2,
+                'operamobile' => 3,
                 'chromium' => 1,
                 default => 0,
             };
+
+            $nameList[$brand] = $code;
         }
 
-        array_multisort($fullVersionList, SORT_DESC, SORT_NUMERIC, $list);
+        array_multisort(
+            $fullVersionList,
+            SORT_DESC,
+            SORT_NUMERIC,
+            $nameList,
+            SORT_ASC,
+            SORT_NATURAL,
+            $list,
+        );
 
         return $list;
     }
