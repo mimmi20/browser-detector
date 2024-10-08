@@ -2437,48 +2437,6 @@
   },
   {
     "headers": {
-      "user-agent": "SCH-X859 UP.Browser/6.2.2.5 (GUI) MMP/2.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SCH-X859",
-      "marketingName": "SCH-X859",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 120,
-        "height": 120,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "Openwave Mobile Browser",
-      "version": "6.2.2.5",
-      "manufacturer": "myriad",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "SCH-W569 UP.Browser/6.2.3.8 (GUI) MMP/2.0"
     },
     "device": {
@@ -3181,48 +3139,6 @@
     "client": {
       "name": "Openwave Mobile Browser",
       "version": "6.1.0.6",
-      "manufacturer": "myriad",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG-SGH-X600/K3 UP.Browser/5.0.3.3 (GUI)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SGH-X600",
-      "marketingName": "SGH-X600",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 128,
-        "height": 128,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "Openwave Mobile Browser",
-      "version": "5.0.3.3",
       "manufacturer": "myriad",
       "type": "browser",
       "isbot": false
@@ -4189,6 +4105,90 @@
     "client": {
       "name": "Openwave Mobile Browser",
       "version": "6.2.2.6",
+      "manufacturer": "myriad",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-E780/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SGH-E780",
+      "marketingName": "SGH-E780",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems"
+    },
+    "client": {
+      "name": "Openwave Mobile Browser",
+      "version": "6.2.3.3",
+      "manufacturer": "myriad",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SAMSUNG-SGH-E760/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SGH-E760",
+      "marketingName": "SGH-E760",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems"
+    },
+    "client": {
+      "name": "Openwave Mobile Browser",
+      "version": "6.2.3.3",
       "manufacturer": "myriad",
       "type": "browser",
       "isbot": false

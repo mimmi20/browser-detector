@@ -169,70 +169,6 @@
   },
   {
     "headers": {
-      "device-memory": "8",
-      "downlink": "4.35",
-      "dpr": "2.75",
-      "ect": "4g",
-      "rtt": "100",
-      "sec-ch-device-memory": "8",
-      "sec-ch-dpr": "2.75",
-      "sec-ch-prefers-color-scheme": "light",
-      "sec-ch-ua": "\"Chromium\";v=\"107\", \"Not=A?Brand\";v=\"24\"",
-      "sec-ch-ua-full-version": "\"107.0.5304.99\"",
-      "sec-ch-ua-mobile": "?1",
-      "sec-ch-ua-model": "\"2107113SG\"",
-      "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua-platform-version": "\"11.0.0\"",
-      "sec-ch-viewport-height": "739",
-      "sec-ch-viewport-width": "393",
-      "sec-fetch-dest": "empty",
-      "sec-fetch-mode": "cors",
-      "sec-fetch-site": "same-origin",
-      "sec-gpc": "1",
-      "user-agent": "Mozilla/5.0 (Linux; Android 11; 2107113SG) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Mobile Safari/537.36 ABB/3.3.0",
-      "viewport-width": "393",
-      "x-requested-with": "XMLHttpRequest"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "2107113SG",
-      "marketingName": "11T Pro",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
-      "dualOrientation": true,
-      "simCount": 2,
-      "display": {
-        "width": 2400,
-        "height": 1080,
-        "touch": true,
-        "size": 6.67
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "11.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Adblock Browser",
-      "version": "107.0.5304.99",
-      "manufacturer": "eyeo",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "107.0.0.0",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 12; 22126RN91Y) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Mobile Safari/537.36 ABB/3.4.5-beta1"
     },
     "device": {
@@ -305,48 +241,6 @@
     "client": {
       "name": "Adblock Browser",
       "version": "3.4.5",
-      "manufacturer": "eyeo",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "111.0.0.0",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 13; 22126RN91Y) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Mobile Safari/537.36 ABB/3.4.5-beta1"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "22126RN91Y",
-      "marketingName": "Redmi 12C",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
-      "dualOrientation": true,
-      "simCount": 2,
-      "display": {
-        "width": 1650,
-        "height": 720,
-        "touch": true,
-        "size": 6.71
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "13.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Adblock Browser",
-      "version": "3.4.5-beta+1",
       "manufacturer": "eyeo",
       "type": "browser",
       "isbot": false

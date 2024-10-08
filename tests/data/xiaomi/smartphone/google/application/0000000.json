@@ -283,56 +283,6 @@
   },
   {
     "headers": {
-      "sec-ch-ua": "\"Android WebView\";v=\"119\", \"Chromium\";v=\"119\", \"Not?A_Brand\";v=\"24\"",
-      "sec-ch-ua-mobile": "?1",
-      "sec-ch-ua-platform": "\"Android\"",
-      "sec-fetch-dest": "document",
-      "sec-fetch-mode": "navigate",
-      "sec-fetch-site": "none",
-      "sec-fetch-user": "?1",
-      "user-agent": "Mozilla/5.0 (Linux; Android 13; 23028RN4DG Build/TP1A.220624.014) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.6045.66 Mobile Safari/537.36",
-      "x-requested-with": "com.google.android.apps.searchlite"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "23028RN4DG",
-      "marketingName": "Redmi A2",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
-      "dualOrientation": true,
-      "simCount": 2,
-      "display": {
-        "width": 1600,
-        "height": 720,
-        "touch": true,
-        "size": 6.52
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "13.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Google Go",
-      "version": null,
-      "manufacturer": "google",
-      "type": "application",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "119.0.6045.66",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "com.google.android.apps.searchlite/950587 (Linux; U; Android 12; de_DE; 220733SG; Build/SP1A.210812.016; Cronet/121.0.6167.71)"
     },
     "device": {
@@ -371,56 +321,6 @@
       "name": null,
       "version": null,
       "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "sec-ch-ua": "\"Android WebView\";v=\"125\", \"Chromium\";v=\"125\", \"Not.A/Brand\";v=\"24\"",
-      "sec-ch-ua-mobile": "?1",
-      "sec-ch-ua-platform": "\"Android\"",
-      "sec-fetch-dest": "document",
-      "sec-fetch-mode": "navigate",
-      "sec-fetch-site": "none",
-      "sec-fetch-user": "?1",
-      "user-agent": "Mozilla/5.0 (Linux; Android 13; 23028RN4DG Build/TP1A.220624.014) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.6422.34 Mobile Safari/537.36",
-      "x-requested-with": "com.google.android.apps.searchlite"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "23028RN4DG",
-      "marketingName": "Redmi A2",
-      "manufacturer": "xiaomi",
-      "brand": "xiaomi",
-      "dualOrientation": true,
-      "simCount": 2,
-      "display": {
-        "width": 1600,
-        "height": 720,
-        "touch": true,
-        "size": 6.52
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "13.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Google Go",
-      "version": null,
-      "manufacturer": "google",
-      "type": "application",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "125.0.6422.34",
-      "manufacturer": "google"
     }
   }
 ]
