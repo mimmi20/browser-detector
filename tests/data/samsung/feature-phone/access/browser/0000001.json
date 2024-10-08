@@ -715,48 +715,6 @@
   },
   {
     "headers": {
-      "user-agent": "SAMSUNG-SGH-T259/1.0 SHP/VPP/R5 NetFront/3.5 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SGH-T259",
-      "marketingName": "SGH-T259",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": true,
-        "size": null
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems"
-    },
-    "client": {
-      "name": "NetFront",
-      "version": "3.5.0",
-      "manufacturer": "access",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "NetFront",
-      "version": null,
-      "manufacturer": "access"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "SAMSUNG-SGH-T330G NetFront/3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1[TFXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX]"
     },
     "device": {
@@ -1627,48 +1585,6 @@
     "client": {
       "name": "NetFront",
       "version": "3.4.0",
-      "manufacturer": "access",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "NetFront",
-      "version": null,
-      "manufacturer": "access"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "SAMSUNG-SPHM550 NETFRONT/351 MMP/20 PROFILE/MIDP-21 CONFIGURATION/CLDC-11 UNTRUSTED/10"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SPH-M550",
-      "marketingName": "Exclaim (Sprint)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 320,
-        "height": 240,
-        "touch": false,
-        "size": null
-      },
-      "type": "feature-phone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems"
-    },
-    "client": {
-      "name": "NetFront",
-      "version": "351.0.0",
       "manufacturer": "access",
       "type": "browser",
       "isbot": false
@@ -4165,6 +4081,90 @@
       "architecture": null,
       "deviceName": "SGH-X820",
       "marketingName": "SGH-X820",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 220,
+        "height": 176,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems"
+    },
+    "client": {
+      "name": "NetFront",
+      "version": "3.2.0",
+      "manufacturer": "access",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "NetFront",
+      "version": null,
+      "manufacturer": "access"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SEC-SGHX810/1.0 NetFront/3.2 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SGH-X810",
+      "marketingName": "SGH-X810",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 160,
+        "height": 128,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "JavaOS",
+      "marketingName": "JavaOS",
+      "version": null,
+      "manufacturer": "sun-microsystems"
+    },
+    "client": {
+      "name": "NetFront",
+      "version": "3.2.0",
+      "manufacturer": "access",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "NetFront",
+      "version": null,
+      "manufacturer": "access"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "SEC-SGHX800/1.0 NetFront/3.2"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SGH-X800",
+      "marketingName": "SGH-X800",
       "manufacturer": "samsung",
       "brand": "samsung",
       "dualOrientation": null,

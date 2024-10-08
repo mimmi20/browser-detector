@@ -505,48 +505,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/3.01 (compatible; Netgem/3.6.8; netbox; Linux 2.2)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Netbox",
-      "marketingName": "Netbox",
-      "manufacturer": "sony",
-      "brand": "sony",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "tv",
-      "ismobile": false,
-      "istv": true,
-      "bits": null
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "linux-foundation"
-    },
-    "client": {
-      "name": "Netbox",
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Opera/9.80 (Linux armv7l; InettvBrowser/2.2 (00014A;SonyDTV140;0001;0001) KD65X8505B; CC/DEU) Presto/2.12.407 Version/12.50"
     },
     "device": {
@@ -4174,6 +4132,48 @@
         "height": 768,
         "touch": false,
         "size": 22
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "Linux",
+      "marketingName": "Linux",
+      "version": null,
+      "manufacturer": "linux-foundation"
+    },
+    "client": {
+      "name": "InettvBrowser",
+      "version": "00014.0.0-alpha",
+      "manufacturer": "unknown",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Presto",
+      "version": "2.10.250",
+      "manufacturer": "opera"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Opera/9.80 (Linux mips; U; InettvBrowser/2.2 (00014A;SonyDTV115;0002;0100) KDL40NX655; CC/BRA; xx) Presto/2.10.250 Version/11.60"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "KDL-40NX655",
+      "marketingName": "KDL-40NX655",
+      "manufacturer": "sony",
+      "brand": "sony",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1920,
+        "height": 1080,
+        "touch": false,
+        "size": 40
       },
       "type": "tv",
       "ismobile": false,

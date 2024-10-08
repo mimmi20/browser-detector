@@ -88,52 +88,6 @@
   },
   {
     "headers": {
-      "user-agent": "Opera/9.80 (J2ME/MIDP; Opera Mini/7.1.32052/32.1151; U; xx) Presto/2.8.119 Version/11.10",
-      "device-stock-ua": "SAMSUNG-GT-S8500",
-      "x-operamini-phone": "Samsung # GT-S8500",
-      "x-operamini-phone-ua": "SAMSUNG-GT-S8500",
-      "x-operamini-features": "httpping, advanced, routing, file_system, folding, camera, touch"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "GT-S8500",
-      "marketingName": "Wave 2",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 400,
-        "height": 240,
-        "touch": true,
-        "size": 3.2
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems"
-    },
-    "client": {
-      "name": "Opera Mini",
-      "version": "7.1.32052",
-      "manufacturer": "opera",
-      "type": "transcoder",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Presto",
-      "version": "2.8.119",
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; U; Android 10; SM-A202F Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/96.0.4664.104 Mobile Safari/537.36 OPR/58.0.2254.58441",
       "x-requested-with": "com.opera.mini.native",
       "sec-fetch-site": "cross-site",
@@ -693,56 +647,6 @@
       "name": "WebKit",
       "version": "533.1.0",
       "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "device-stock-ua": "Mozilla/5.0 (Linux; Android 11; SM-G900F Build/RQ3A.211001.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/108.0.5359.128 Mobile Safari/537.36",
-      "forwarded": "for=\"109.43.242.186:26499\"",
-      "save-data": "on",
-      "user-agent": "Opera/9.80 (Android; Opera Mini/68.0.2254/191.296; U; de) Presto/2.12.423 Version/12.16",
-      "x-clacks-overhead": "GNU ph",
-      "x-operamini-features": "advanced, camera, download, file_system, folding, httpping, pingback, routing, touch, viewport",
-      "x-operamini-phone": "Android #",
-      "x-operamini-phone-ua": "Mozilla/5.0 (Linux; Android 11; SM-G900F Build/RQ3A.211001.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/108.0.5359.128 Mobile Safari/537.36",
-      "x-operamini-route": "1"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SM-G900F",
-      "marketingName": "Galaxy S5 LTE",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 1920,
-        "height": 1080,
-        "touch": true,
-        "size": 5.1
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "11.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Opera Mini",
-      "version": "68.0.2254",
-      "manufacturer": "opera",
-      "type": "transcoder",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "537.36.0",
-      "manufacturer": "google"
     }
   }
 ]
