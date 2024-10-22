@@ -61,175 +61,30 @@ jobs:
       phpcs-options: ""
 
   tests:
-    name: "UnitTests with PHPUnit"
+    name: "UnitTests"
 
     needs: "analytics"
 
-    runs-on: "${{ matrix.operating-system }}"
-
-    timeout-minutes: 10
-
-    continue-on-error: false
-
-    strategy:
-      fail-fast: false
-
-      matrix:
-        operating-system:
-          - "ubuntu-24.04"
-
-        php-version:
-          - "8.1"
-          - "8.2"
-          - "8.3"
-
-        dependencies:
-          - "lowest"
-
-    steps:
-      - name: "Checkout"
-        uses: "actions/checkout@v4"
-        with:
-          # Disabling shallow clone is recommended for improving relevancy of reporting
-          fetch-depth: 0
-          lfs: false
-          persist-credentials: false
-
-      - name: "Install PHP"
-        uses: "shivammathur/setup-php@2.31.1"
-        with:
-          php-version: "${{ matrix.php-version }}"
-          extensions: "none, phar, json, opcache, ctype, curl, dom, iconv, intl, mbstring, simplexml, tokenizer, xml, xmlwriter"
-          ini-values: "opcache.enable=1, opcache.fast_shutdown=0, zend.assertions=1, assert.exception=On, intl.default_locale=de, intl.use_exceptions=1, zend.exception_ignore_args=0"
-          coverage: "none"
-          tools: "composer:v2"
-        env:
-          fail-fast: true
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          phpts: "nts"
-          debug: true
-
-      - name: "Update dependencies with composer"
-        uses: "ramsey/composer-install@3.0.0"
-        with:
-          dependency-versions: "${{ matrix.dependencies }}"
-          composer-options: "--optimize-autoloader --prefer-dist --prefer-stable -v"
-
-      - name: "Run unit tests with phpunit/phpunit"
-        run: "vendor/bin/phpunit -c phpunit.xml --no-coverage --display-warnings --display-deprecations"
-
-      - name: "Enable annotations for validation errors and warnings"
-        uses: "korelstar/xmllint-problem-matcher@v1"
-
-      - name: "Validate phpcs.xml"
-        uses: "ChristophWurst/xmllint-action@v1"
-        with:
-          xml-file: "phpunit.xml"
-          xml-schema-file: "vendor/phpunit/phpunit/phpunit.xsd"
-
-  code-coverage:
-    name: "Code Coverage with PHPUnit"
-
-    needs: "analytics"
-
-    runs-on: "${{ matrix.operating-system }}"
-
-    timeout-minutes: 10
-
-    continue-on-error: false
-
-    strategy:
-      fail-fast: false
-
-      matrix:
-        operating-system:
-          - "ubuntu-24.04"
-
-        php-version:
-          - "8.1"
-
-        dependencies:
-          - "lowest"
-
-    steps:
-      - name: "Checkout"
-        uses: "actions/checkout@v4"
-        with:
-          # Disabling shallow clone is recommended for improving relevancy of reporting
-          fetch-depth: 0
-          lfs: false
-          persist-credentials: false
-
-      - name: "Install PHP"
-        uses: "shivammathur/setup-php@2.31.1"
-        with:
-          php-version: "${{ matrix.php-version }}"
-          extensions: "none, phar, json, opcache, ctype, curl, dom, iconv, intl, mbstring, simplexml, tokenizer, xml, xmlwriter"
-          ini-values: "opcache.enable=1, opcache.fast_shutdown=0, zend.assertions=1, assert.exception=On, intl.default_locale=de, intl.use_exceptions=1, zend.exception_ignore_args=0, xdebug.mode=coverage"
-          coverage: "xdebug"
-          tools: "composer:v2"
-        env:
-          fail-fast: true
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          phpts: "nts"
-          debug: true
-
-      - name: "Update dependencies with composer"
-        uses: "ramsey/composer-install@3.0.0"
-        with:
-          dependency-versions: "${{ matrix.dependencies }}"
-          composer-options: "--optimize-autoloader --prefer-dist --prefer-stable -v"
-
-      - name: "Create cache directory for phpunit/phpunit"
-        run: "mkdir -p .build/coverage"
-
-      - name: "Collect code coverage with Xdebug and phpunit/phpunit"
-        run: "vendor/bin/phpunit -c phpunit.xml --coverage-clover=.build/coverage/clover.xml --coverage-text --coverage-xml=.build/coverage/coverage-xml --log-junit=.build/coverage/phpunit.junit.xml --display-warnings --display-deprecations"
-
-      - name: "Upload coverage to Codecov"
-        uses: "codecov/codecov-action@v4.6.0"
-        with:
-          file: ".build/coverage/clover.xml"
-          flags: "phpunit,php-${{ matrix.php-version }},${{ matrix.operating-system }}"
-          verbose: false
-        env:
-          CODECOV_TOKEN: "${{ secrets.CODECOV_TOKEN }}"
-
-      - name: "Upload coverage to Codeclimate"
-        uses: "paambaati/codeclimate-action@v9.0.0"
-        env:
-          CC_TEST_REPORTER_ID: "${{ secrets.CODECLIMATE_API_KEY }}"
-        with:
-          coverageLocations: ".build/coverage/clover.xml:clover"
-          debug: false
-
-      - name: "Upload coverage to Coveralls"
-        uses: "coverallsapp/github-action@v2"
-        with:
-          github-token: "${{ secrets.GITHUB_TOKEN }}"
-          flag-name: "php ${{ matrix.php-version }} on ${{ matrix.operating-system }}"
-          parallel: true
-          file: ".build/coverage/clover.xml"
-          format: "clover"
-          debug: false
-
-      - name: "Run mutation tests with infection/infection"
-        env:
-          STRYKER_DASHBOARD_API_KEY: ${{ secrets.STRYKER_DASHBOARD_API_KEY }}
-        run: "vendor/bin/infection --show-mutations --only-covered --min-covered-msi=95 --min-msi=95 --coverage=.build/coverage --logger-github --no-progress -vv"
-
-  finish-code-coverage:
-    runs-on: "ubuntu-24.04"
-
-    needs: "code-coverage"
-
-    if: always()
-
-    steps:
-      - name: "Coveralls Finished"
-        uses: "coverallsapp/github-action@v2"
-        with:
-          parallel-finished: true
+    uses: "mimmi20/ci/.github/workflows/test.yml@8.1"
+    with:
+      extensions: "ctype, dom, fileinfo, intl, simplexml, tokenizer, xml, xmlwriter"
+      ini-values: "opcache.enable=1, opcache.fast_shutdown=0, zend.assertions=1, assert.exception=On, intl.default_locale=de, intl.use_exceptions=1, zend.exception_ignore_args=0"
+      coverage: "xdebug"
+      composer-options: "--optimize-autoloader --prefer-dist --prefer-stable -v"
+      test-name: ""
+      min-msi: 95
+      min-covered-msi: 95
+      skip-phpunit: false
+      skip-vitest: true
+      skip-stryker: true
+      upload-codecov: true
+      upload-codeclimate: true
+      upload-coveralls: true
+      upload-flag: ""
+    secrets:
+      ENV_CODECLIMATE_API_KEY: ${{ secrets.CODECLIMATE_API_KEY }}
+      ENV_CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+      ENV_STRYKER_DASHBOARD_API_KEY: ${{ secrets.STRYKER_DASHBOARD_API_KEY }}
 
   integration-tests:
     name: "Integration Tests with PHPUnit"
@@ -305,7 +160,6 @@ jobs:
 
     needs:
       - "tests"
-      - "code-coverage"
 
     steps:
       - name: Successful run
