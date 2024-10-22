@@ -55,9 +55,14 @@ jobs:
       extensions: "ctype, curl, dom, iconv, intl, mbstring, simplexml, tokenizer, xml, xmlwriter"
       ini-values: "opcache.enable=1, opcache.fast_shutdown=0, zend.assertions=1, assert.exception=On, intl.default_locale=de, intl.use_exceptions=1, zend.exception_ignore_args=0"
       composer-options: "--optimize-autoloader --prefer-dist --prefer-stable -v"
+      skip-php-cs-fixer: false
+      skip-phpcs: false
       skip-phpstan: false
       skip-rector: false
       skip-phpmd: false
+      skip-eslint: true
+      skip-stylelint: true
+      skip-prettier: true
       phpcs-options: ""
 
   tests:
