@@ -142,8 +142,8 @@ final class SecChUaTest extends TestCase
             ['"WaveBrowser";v="112", "WaveBrowser";v="112", "Not:A-Brand";v="99"', true, 'wave-browser', true, '112'],
             ['"Opera";v="86", ";Not A Brand";v="99", "Chromium";v="100", "OperaMobile";v="69"', true, 'opera mobile', true, '69'],
             ['"Chromium";v="124", "Android WebView";v="124", "Not-A.Brand";v="99"', true, 'android webview', true, '124'],
-            ["\"Chromium\";v=\"130\", \"Brave\";v=\"130\", \"Not?A_Brand\";v=\"99\"", true, 'brave', true, '130'],
-            ["\"DuckDuckGo\";v=\"119\", \"Chromium\";v=\"119\", \"Not?A_Brand\";v=\"24\"", true, 'duckduck app', true, '119'],
+            ['"Chromium";v="130", "Brave";v="130", "Not?A_Brand";v="99"', true, 'brave', true, '130'],
+            ['"DuckDuckGo";v="119", "Chromium";v="119", "Not?A_Brand";v="24"', true, 'duckduck app', true, '119'],
         ];
     }
 }
