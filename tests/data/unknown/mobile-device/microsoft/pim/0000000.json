@@ -670,5 +670,47 @@
       "version": null,
       "manufacturer": "microsoft"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "mobmail android 15.6.0.87050 park.outlook.sign.in.client"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "15.6.0.87050",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Outlook",
+      "version": null,
+      "manufacturer": "microsoft",
+      "type": "pim",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Trident",
+      "version": null,
+      "manufacturer": "microsoft"
+    }
   }
 ]

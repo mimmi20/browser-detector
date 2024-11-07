@@ -766,5 +766,37 @@
     },
     "type": "tablet",
     "platform": "android"
+  },
+  "huawei ags6-w09": {
+    "deviceName": "AGS6-W09",
+    "marketingName": "MatePad SE 11 2024 Wi-Fi",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "size": 11
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "huawei rod2-w09": {
+    "deviceName": "ROD2-W09",
+    "marketingName": "Honor MagicPad 2 12.3",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 3000,
+      "height": 1920,
+      "touch": true,
+      "size": 12.3
+    },
+    "type": "tablet",
+    "platform": "android"
   }
 }

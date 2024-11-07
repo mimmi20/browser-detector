@@ -370,6 +370,7 @@ final class XRequestedWithTest extends TestCase
             ['de.einsundeins.searchapp.web', true, 'web.de-search', true, null],
             ['com.droidlogic.mboxlauncher', true, 'mbox-launcher', true, null],
             ['com.droidlogic.xlauncher', true, 'x-launcher', true, null],
+            ['com.baidu.browser.apps', true, 'baidu browser', true, null],
             // ['webexplorer.amazing.biro', true, '', true, null],
         ];
     }
