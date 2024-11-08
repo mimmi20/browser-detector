@@ -371,6 +371,7 @@ final class XRequestedWithTest extends TestCase
             ['com.droidlogic.mboxlauncher', true, 'mbox-launcher', true, null],
             ['com.droidlogic.xlauncher', true, 'x-launcher', true, null],
             ['com.baidu.browser.apps', true, 'baidu browser', true, null],
+            ['com.hihonor.baidu.browser', true, 'honor-browser', true, null],
             // ['webexplorer.amazing.biro', true, '', true, null],
         ];
     }

@@ -253,6 +253,7 @@ final class XRequestedWith implements HeaderInterface
             // 'webexplorer.amazing.biro' => '',
             'xbrowser', 'com.xbrowser.play' => 'x-browser',
             'com.baidu.browser.apps' => 'baidu browser',
+            'com.hihonor.baidu.browser' => 'honor-browser',
             default => null,
         };
     }
