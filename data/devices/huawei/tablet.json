@@ -180,8 +180,8 @@
     "marketingName": "MediaPad C5 10.1",
     "manufacturer": "huawei",
     "brand": "huawei",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 0,
     "display": {
       "width": 1280,
       "height": 800,
@@ -196,8 +196,8 @@
     "marketingName": "MediaPad C5 10.1",
     "manufacturer": "huawei",
     "brand": "huawei",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 0,
     "display": {
       "width": 1280,
       "height": 800,
@@ -607,6 +607,22 @@
     "type": "tablet",
     "platform": "android"
   },
+  "huawei dby2-w00": {
+    "deviceName": "DBY2-W00",
+    "marketingName": "MatePad Air Wi-Fi (2021)",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 2800,
+      "height": 1840,
+      "touch": true,
+      "size": 11.5
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
   "huawei ags3-w09": {
     "deviceName": "AGS3-W09",
     "marketingName": "MatePad T 10s Wi-Fi",
@@ -795,6 +811,134 @@
       "height": 1920,
       "touch": true,
       "size": 12.3
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "huawei mrr-w29": {
+    "deviceName": "MRR-W29",
+    "marketingName": "MatePad Pro 10.8 (2021)",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 2560,
+      "height": 1600,
+      "touch": true,
+      "size": 10.8
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "huawei mrr-w39": {
+    "deviceName": "MRR-W39",
+    "marketingName": "MatePad Pro 10.8 (2021)",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 2560,
+      "height": 1600,
+      "touch": true,
+      "size": 10.8
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "huawei bzt-w09": {
+    "deviceName": "BZT-W09",
+    "marketingName": "MediaPad C5 10.1",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": 10.1
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "huawei got-w09": {
+    "deviceName": "GOT-W09",
+    "marketingName": "MatePad Pro 11 Wi-Fi (2022)",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 2560,
+      "height": 1600,
+      "touch": true,
+      "size": 11
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "huawei got-w29": {
+    "deviceName": "GOT-W29",
+    "marketingName": "MatePad Pro 11 Wi-Fi (2022)",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 2560,
+      "height": 1600,
+      "touch": true,
+      "size": 11
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "huawei bach-w09": {
+    "deviceName": "Bach-W09",
+    "marketingName": "MediaPad M3 Lite 10 Wi-Fi",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "size": 10.1
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "huawei ags5-w09": {
+    "deviceName": "AGS5-W09",
+    "marketingName": "MatePad SE 10.4 2023 Wi-Fi",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 2000,
+      "height": 1200,
+      "touch": true,
+      "size": 10.4
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "huawei ags5-w00": {
+    "deviceName": "AGS5-W00",
+    "marketingName": "MatePad SE 10.4 2023 Wi-Fi",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 2000,
+      "height": 1200,
+      "touch": true,
+      "size": 10.4
     },
     "type": "tablet",
     "platform": "android"
