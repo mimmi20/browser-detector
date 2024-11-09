@@ -519,6 +519,13 @@ final class SecChUaModelTest extends TestCase
             ['"RMX3623"', true, 'realme=realme rmx3623'],
             ['"ZC554KL"', true, 'asus=asus x00id'],
             ['"SM-G965F"', true, 'samsung=samsung sm-g965f'],
+            ['"SM-G975F"', true, 'samsung=samsung sm-g975f'],
+            ['"Lenovo TB-8705F"', true, 'lenovo=lenovo tb-8705f'],
+            ['"KFMAWI"', true, 'amazon=amazon kfmawi'],
+            ['"SM-A217F"', true, 'samsung=samsung sm-a217f'],
+            ['"SM-G988B"', true, 'samsung=samsung sm-g988b'],
+            ['"X30"', true, 'doogee=doogee x30'],
+            ['"Model"', false, null],
             ['""', false, null],
         ];
     }

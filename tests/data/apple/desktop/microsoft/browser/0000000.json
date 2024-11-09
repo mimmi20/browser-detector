@@ -673,16 +673,28 @@
   },
   {
     "headers": {
+      "device-memory": "8",
+      "dpr": "1",
+      "viewport-width": "3840",
+      "rtt": "0",
+      "downlink": "10",
+      "ect": "4g",
       "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"98\", \"Microsoft Edge\";v=\"98\"",
       "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-arch": "\"arm\"",
       "sec-ch-ua-platform": "\"macOS\"",
+      "sec-ch-ua-platform-version": "\"12.2.1\"",
+      "sec-ch-ua-model": "\"\"",
+      "sec-ch-ua-bitness": "\"64\"",
+      "sec-ch-ua-full-version-list": "\" Not A;Brand\";v=\"99.0.0.0\", \"Chromium\";v=\"98.0.1108.62\", \"Microsoft Edge\";v=\"98.0.1108.62\"",
       "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 Edg/98.0.1108.62",
-      "sec-fetch-site": "cross-site",
+      "sec-fetch-site": "same-origin",
       "sec-fetch-mode": "navigate",
+      "sec-fetch-user": "?1",
       "sec-fetch-dest": "document"
     },
     "device": {
-      "architecture": null,
+      "architecture": "arm",
       "deviceName": "Macintosh",
       "marketingName": "Macintosh",
       "manufacturer": "apple",
@@ -698,17 +710,17 @@
       "type": "desktop",
       "ismobile": false,
       "istv": false,
-      "bits": null
+      "bits": 64
     },
     "os": {
       "name": "Mac OS X",
       "marketingName": "Mac OS X",
-      "version": "10.15.7",
+      "version": "12.2.1",
       "manufacturer": "apple"
     },
     "client": {
       "name": "Edge Mobile",
-      "version": "98.0.0",
+      "version": "98.0.1108.62",
       "manufacturer": "microsoft",
       "type": "browser",
       "isbot": false

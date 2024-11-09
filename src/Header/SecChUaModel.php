@@ -12,6 +12,7 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Header;
 
+use function in_array;
 use function mb_strtolower;
 use function trim;
 
@@ -23,8 +24,9 @@ final class SecChUaModel implements HeaderInterface
     public function hasDeviceCode(): bool
     {
         $value = trim($this->value, '"');
+        $code  = mb_strtolower($value);
 
-        return $value !== '';
+        return !in_array($code, ['', 'model'], true);
     }
 
     /** @throws void */
@@ -60,6 +62,7 @@ final class SecChUaModel implements HeaderInterface
             'kftrpwi' => 'amazon=amazon kftrpwi',
             'kfrapwi' => 'amazon=amazon kfrapwi',
             'kfonwi' => 'amazon=amazon kfonwi',
+            'kfmawi' => 'amazon=amazon kfmawi',
             // Asus
             'p024' => 'asus=asus p024',
             'asus_x00dd' => 'asus=asus x00dd',
@@ -325,6 +328,11 @@ final class SecChUaModel implements HeaderInterface
             'sm-t736b' => 'samsung=samsung sm-t736b',
             'sm-x900' => 'samsung=samsung sm-x900',
             'sm-x906b' => 'samsung=samsung sm-x906b',
+            'sm-g975f' => 'samsung=samsung sm-g975f',
+            'sm-a217f' => 'samsung=samsung sm-a217f',
+            'sm-g988b' => 'samsung=samsung sm-g988b',
+            'sm-a105fn' => 'samsung=samsung sm-a105fn',
+            'sm-g920f' => 'samsung=samsung sm-g920f',
             // Huawei
             'mar-lx1b' => 'huawei=huawei mar-lx1b',
             'lya-l09' => 'huawei=huawei lya-l09',
@@ -357,6 +365,8 @@ final class SecChUaModel implements HeaderInterface
             'ine-lx1r' => 'huawei=huawei ine-lx1r',
             'fne-nx9' => 'huawei=huawei fne-nx9',
             'pgt-n19' => 'huawei=huawei pgt-n19',
+            'yal-l41' => 'huawei=huawei yal-l41',
+            'rvl-al09' => 'huawei=huawei rvl-al09',
             // Lenovo
             'lenovo tb-x304f' => 'lenovo=lenovo tb-x304f',
             'lenovo yt-j706f' => 'lenovo=lenovo yt-j706f',
@@ -366,6 +376,7 @@ final class SecChUaModel implements HeaderInterface
             'lenovo tb-j616f' => 'lenovo=lenovo tb-j616f',
             'lenovo tb-j616x' => 'lenovo=lenovo tb-j616x',
             'lenovo tb-x606f' => 'lenovo=lenovo tb-x606f',
+            'lenovo tb-8705f' => 'lenovo=lenovo tb-8705f',
             // Nokia
             'nokia g50' => 'nokia=nokia g50',
             'nokia g20' => 'nokia=nokia g20',
@@ -448,6 +459,7 @@ final class SecChUaModel implements HeaderInterface
             's88pro' => 'doogee=doogee s88 pro',
             's59pro' => 'doogee=doogee s59 pro',
             's97pro' => 'doogee=doogee s97 pro',
+            'x30' => 'doogee=doogee x30',
             // shiftphones
             'shift6mq' => 'shift-phones=shift-phones shift6mq',
             // Cubot/Hafury

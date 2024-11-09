@@ -589,17 +589,28 @@
   },
   {
     "headers": {
+      "device-memory": "8",
+      "dpr": "2",
+      "viewport-width": "1280",
+      "rtt": "50",
+      "downlink": "10",
+      "ect": "4g",
       "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"100\", \"Opera GX\";v=\"86\"",
       "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-arch": "\"x86\"",
       "sec-ch-ua-platform": "\"macOS\"",
+      "sec-ch-ua-platform-version": "\"12.4.0\"",
+      "sec-ch-ua-model": "\"\"",
+      "sec-ch-ua-bitness": "\"64\"",
+      "sec-ch-ua-full-version-list": "\" Not A;Brand\";v=\"99.0.0.0\", \"Chromium\";v=\"100.0.4896.127\", \"Opera GX\";v=\"100.0.4896.127\"",
       "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36 OPR/86.0.4363.64",
-      "sec-fetch-site": "cross-site",
+      "sec-fetch-site": "same-origin",
       "sec-fetch-mode": "navigate",
       "sec-fetch-user": "?1",
       "sec-fetch-dest": "document"
     },
     "device": {
-      "architecture": null,
+      "architecture": "x86",
       "deviceName": "Macintosh",
       "marketingName": "Macintosh",
       "manufacturer": "apple",
@@ -615,17 +626,17 @@
       "type": "desktop",
       "ismobile": false,
       "istv": false,
-      "bits": null
+      "bits": 64
     },
     "os": {
       "name": "Mac OS X",
       "marketingName": "Mac OS X",
-      "version": "10.15.7",
+      "version": "12.4.0",
       "manufacturer": "apple"
     },
     "client": {
       "name": "Opera GX",
-      "version": "86.0.0",
+      "version": "100.0.4896.127",
       "manufacturer": "opera",
       "type": "browser",
       "isbot": false

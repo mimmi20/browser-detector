@@ -23,7 +23,7 @@ final class SecChUaPlatformTest extends TestCase
 {
     /** @throws ExpectationFailedException */
     #[DataProvider('providerUa')]
-    public function testData(string $ua, string | null $platform): void
+    public function testData(string $ua, bool $hasPlatform, string | null $platform): void
     {
         $header = new SecChUaPlatform($ua);
 
@@ -75,7 +75,8 @@ final class SecChUaPlatformTest extends TestCase
             $header->getClientVersion(),
             sprintf('browser info mismatch for ua "%s"', $ua),
         );
-        self::assertTrue(
+        self::assertSame(
+            $hasPlatform,
             $header->hasPlatformCode(),
             sprintf('platform info mismatch for ua "%s"', $ua),
         );
@@ -108,21 +109,23 @@ final class SecChUaPlatformTest extends TestCase
     }
 
     /**
-     * @return array<int, array<int, string|null>>
+     * @return array<int, array<int, bool|string|null>>
      *
      * @throws void
      */
     public static function providerUa(): array
     {
         return [
-            ['Android', 'android'],
-            ['"Android"', 'android'],
-            ['"Windows"', 'windows'],
-            ['"Chrome OS"', 'chromeos'],
-            ['"Linux"', 'linux'],
-            ['"ChromeOS"', 'chromeos'],
-            ['"macOS"', 'mac os x'],
-            ['""', null],
+            ['Android', true, 'android'],
+            ['"Android"', true, 'android'],
+            ['"Windows"', true, 'windows'],
+            ['"Chrome OS"', true, 'chromeos'],
+            ['"Linux"', true, 'linux'],
+            ['"ChromeOS"', true, 'chromeos'],
+            ['"macOS"', true, 'mac os x'],
+            ['"Chromium OS"', true, 'chromeos'],
+            ['"Unknown"', false, null],
+            ['""', false, null],
         ];
     }
 }
