@@ -23,7 +23,7 @@ final class SecChUaBitnessTest extends TestCase
 {
     /** @throws ExpectationFailedException */
     #[DataProvider('providerUa')]
-    public function testData(string $ua, int | null $bits): void
+    public function testData(string $ua, bool $hasBits, int | null $bits): void
     {
         $header = new SecChUaBitness($ua);
 
@@ -41,7 +41,11 @@ final class SecChUaBitnessTest extends TestCase
             $header->getDeviceArchitecture(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
-        self::assertTrue($header->hasDeviceBitness(), sprintf('device info mismatch for ua "%s"', $ua));
+        self::assertSame(
+            $hasBits,
+            $header->hasDeviceBitness(),
+            sprintf('device info mismatch for ua "%s"', $ua),
+        );
         self::assertSame(
             $bits,
             $header->getDeviceBitness(),
@@ -112,9 +116,9 @@ final class SecChUaBitnessTest extends TestCase
     public static function providerUa(): array
     {
         return [
-            ['64', 64],
-            ['"64"', 64],
-            ['""', null],
+            ['64', true, 64],
+            ['"64"', true, 64],
+            ['""', false, null],
         ];
     }
 }

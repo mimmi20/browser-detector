@@ -21,7 +21,9 @@ final class SecChUaPlatformVersion implements HeaderInterface
     /** @throws void */
     public function hasPlatformVersion(): bool
     {
-        return true;
+        $value = trim($this->value, '"');
+
+        return $value !== '';
     }
 
     /**

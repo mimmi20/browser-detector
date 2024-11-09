@@ -1,6 +1,132 @@
 [
   {
     "headers": {
+      "user-agent": "Dalvik/2.1.0 (Linux; U; Android 10; ELS-NX9 Build/HUAWEIELS-N29)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "ELS-NX9",
+      "marketingName": "P40 Pro 5G",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2640,
+        "height": 1200,
+        "touch": true,
+        "size": 6.58
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Dalvik",
+      "version": "2.1.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; CAG-L02 Build/HUAWEICAG-L02; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "CAG-L02",
+      "marketingName": "Y3 (2018)",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 854,
+        "height": 480,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.1.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Android WebView",
+      "version": "66.0.3359.126",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "66.0.3359.126",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; HRY-AL00a) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.101 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "HRY-AL00a",
+      "marketingName": "Honor 10 Lite",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.2
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "87.0.4280.101",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "87.0.4280.101",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Dalvik/2.1.0 (Linux; U; Android 8.1.0; DUB-AL00a Build/HUAWEIDUB-AL00a)"
     },
     "device": {
@@ -387,8 +513,8 @@
       "marketingName": "Honor 20 Pro",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 2340,
         "height": 1080,
@@ -4082,132 +4208,6 @@
     "engine": {
       "name": "Blink",
       "version": "101.0.4951.61",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 11; BAL-L49) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.87 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "BAL-L49",
-      "marketingName": "P50 Pocket",
-      "manufacturer": "huawei",
-      "brand": "huawei",
-      "dualOrientation": true,
-      "simCount": 2,
-      "display": {
-        "width": 2790,
-        "height": 1188,
-        "touch": true,
-        "size": 6.9
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "11.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Chrome",
-      "version": "98.0.4758.87",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "98.0.4758.87",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Amazon.com/24.12.6.100 (Android/10/JNY-LX1)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "JNY-LX1",
-      "marketingName": "P40 Lite",
-      "manufacturer": "huawei",
-      "brand": "huawei",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 2310,
-        "height": 1080,
-        "touch": true,
-        "size": 6.4
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Android Webkit",
-      "version": null,
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; MGA-LX9) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.134 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "MGA-LX9",
-      "marketingName": "nova Y70 Plus",
-      "manufacturer": "huawei",
-      "brand": "huawei",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 1600,
-        "height": 720,
-        "touch": true,
-        "size": 6.75
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Chrome",
-      "version": "91.0.4472.134",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "91.0.4472.134",
       "manufacturer": "google"
     }
   }

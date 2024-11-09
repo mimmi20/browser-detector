@@ -21,7 +21,9 @@ final class SecChUaFullVersion implements HeaderInterface
     /** @throws void */
     public function hasClientVersion(): bool
     {
-        return true;
+        $value = trim($this->value, '"');
+
+        return $value !== '';
     }
 
     /**

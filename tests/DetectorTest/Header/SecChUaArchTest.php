@@ -23,7 +23,7 @@ final class SecChUaArchTest extends TestCase
 {
     /** @throws ExpectationFailedException */
     #[DataProvider('providerUa')]
-    public function testData(string $ua, string | null $arch): void
+    public function testData(string $ua, bool $hasArch, string | null $arch): void
     {
         $header = new SecChUaArch($ua);
 
@@ -33,7 +33,8 @@ final class SecChUaArchTest extends TestCase
             $header->getNormalizedValue(),
             sprintf('value mismatch for ua "%s"', $ua),
         );
-        self::assertTrue(
+        self::assertSame(
+            $hasArch,
             $header->hasDeviceArchitecture(),
             sprintf('device info mismatch for ua "%s"', $ua),
         );
@@ -115,10 +116,10 @@ final class SecChUaArchTest extends TestCase
     public static function providerUa(): array
     {
         return [
-            ['arm', 'arm'],
-            ['"arm"', 'arm'],
-            ['"x86"', 'x86'],
-            ['""', null],
+            ['arm', true, 'arm'],
+            ['"arm"', true, 'arm'],
+            ['"x86"', true, 'x86'],
+            ['""', false, null],
         ];
     }
 }

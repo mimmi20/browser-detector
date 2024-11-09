@@ -862,5 +862,21 @@
     },
     "type": "phablet",
     "platform": "android"
+  },
+  "huawei amz-l29": {
+    "deviceName": "AMZ-L29",
+    "marketingName": "Mate 30 4G",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2340,
+      "height": 1080,
+      "touch": true,
+      "size": 6.62
+    },
+    "type": "phablet",
+    "platform": "android"
   }
 }

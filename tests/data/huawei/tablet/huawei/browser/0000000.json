@@ -337,6 +337,48 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; HarmonyOS; MRR-W29; HMSCore 6.0.1.306) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.93 HuaweiBrowser/11.1.4.301 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "MRR-W29",
+      "marketingName": "MatePad Pro 10.8 (2021)",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 2560,
+        "height": 1600,
+        "touch": true,
+        "size": 10.8
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "HarmonyOS",
+      "marketingName": "HarmonyOS",
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "HuaweiBrowser",
+      "version": "11.1.4.301",
+      "manufacturer": "huawei",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "88.0.4324.93",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 10; HarmonyOS; SCMR-W09; HMSCore 6.1.0.314) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.93 HuaweiBrowser/11.1.5.310 Safari/537.36"
     },
     "device": {
@@ -500,6 +542,48 @@
     "engine": {
       "name": "Blink",
       "version": "78.0.3904.108",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; HarmonyOS; MRR-W39; HMSCore 6.1.0.314) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.93 HuaweiBrowser/11.1.5.310 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "MRR-W39",
+      "marketingName": "MatePad Pro 10.8 (2021)",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 2560,
+        "height": 1600,
+        "touch": true,
+        "size": 10.8
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "HarmonyOS",
+      "marketingName": "HarmonyOS",
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "HuaweiBrowser",
+      "version": "11.1.5.310",
+      "manufacturer": "huawei",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "88.0.4324.93",
       "manufacturer": "google"
     }
   },

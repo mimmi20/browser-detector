@@ -21,7 +21,9 @@ final class SecChUaArch implements HeaderInterface
     /** @throws void */
     public function hasDeviceArchitecture(): bool
     {
-        return true;
+        $value = trim($this->value, '"');
+
+        return $value !== '';
     }
 
     /** @throws void */

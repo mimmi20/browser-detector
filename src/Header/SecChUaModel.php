@@ -22,7 +22,9 @@ final class SecChUaModel implements HeaderInterface
     /** @throws void */
     public function hasDeviceCode(): bool
     {
-        return true;
+        $value = trim($this->value, '"');
+
+        return $value !== '';
     }
 
     /** @throws void */

@@ -2991,8 +2991,8 @@
       "marketingName": "MediaPad C5 10.1",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 1280,
         "height": 800,
@@ -3033,8 +3033,8 @@
       "marketingName": "MediaPad C5 10.1",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
         "width": 1280,
         "height": 800,
@@ -3739,6 +3739,48 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; MRR-W29 Build/HUAWEIMRR-W29; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.93 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "MRR-W29",
+      "marketingName": "MatePad Pro 10.8 (2021)",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 2560,
+        "height": 1600,
+        "touch": true,
+        "size": 10.8
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Android WebView",
+      "version": "88.0.4324.93",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "88.0.4324.93",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Dalvik/2.1.0 (Linux; U; Android 10; AGS3-W09 Build/HUAWEIAGS3-W09)"
     },
     "device": {
@@ -3865,6 +3907,48 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 8.0.0; zh-CN; BZT-W09 Build/BZT-W09) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/69.0.3497.100 UWS/3.22.1.233 Mobile Safari/537.36 AliApp(DingTalk/6.5.50) com.alibaba.android.rimet/26843028 Channel/702008 language/zh-CN abi/32 Pad/APad UT4Aplus/0.2.25 colorScheme/dark"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "BZT-W09",
+      "marketingName": "MediaPad C5 10.1",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 1280,
+        "height": 800,
+        "touch": true,
+        "size": 10.1
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Android WebView",
+      "version": "69.0.3497.100",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "69.0.3497.100",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Dalvik/2.1.0 (Linux; U; Android 10; AGR-W09 Build/HUAWEIAGR-W09)"
     },
     "device": {
@@ -3903,6 +3987,48 @@
       "name": "WebKit",
       "version": null,
       "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; GOT-W09) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.0 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "GOT-W09",
+      "marketingName": "MatePad Pro 11 Wi-Fi (2022)",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 2560,
+        "height": 1600,
+        "touch": true,
+        "size": 11
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "98.0.4758.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "98.0.4758.0",
+      "manufacturer": "google"
     }
   },
   {

@@ -5,19 +5,19 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "general Adreamer device",
-      "marketingName": "general Adreamer device",
+      "deviceName": "LeoPad 10",
+      "marketingName": "LeoPad 10",
       "manufacturer": "adreamer",
       "brand": "adreamer",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 0,
       "display": {
-        "width": null,
-        "height": null,
+        "width": 1280,
+        "height": 800,
         "touch": true,
-        "size": null
+        "size": 10.1
       },
-      "type": "mobile-device",
+      "type": "tablet",
       "ismobile": true,
       "istv": false,
       "bits": null
