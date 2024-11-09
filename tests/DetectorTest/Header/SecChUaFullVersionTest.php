@@ -109,7 +109,7 @@ final class SecChUaFullVersionTest extends TestCase
     }
 
     /**
-     * @return array<int, array<int, string|null>>
+     * @return array<int, array<int, bool|string|null>>
      *
      * @throws void
      */

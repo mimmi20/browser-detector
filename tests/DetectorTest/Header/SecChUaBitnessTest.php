@@ -109,7 +109,7 @@ final class SecChUaBitnessTest extends TestCase
     }
 
     /**
-     * @return array<int, array<int, int|string|null>>
+     * @return array<int, array<int, bool|int|string|null>>
      *
      * @throws void
      */
