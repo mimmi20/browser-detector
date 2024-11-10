@@ -25,7 +25,6 @@ use Laminas\Diactoros\ServerRequestFactory;
 use Psr\Http\Message\MessageInterface;
 use UaNormalizer\NormalizerFactory;
 
-use function array_change_key_case;
 use function array_filter;
 use function is_array;
 use function is_string;
@@ -33,7 +32,6 @@ use function preg_replace;
 use function str_starts_with;
 
 use const ARRAY_FILTER_USE_BOTH;
-use const CASE_UPPER;
 
 final class RequestBuilder implements RequestBuilderInterface
 {
@@ -107,16 +105,16 @@ final class RequestBuilder implements RequestBuilderInterface
 
         $headers = [];
 
-        foreach (array_change_key_case($filteredHeaders, CASE_UPPER) as $upperCaseHeader => $value) {
-            if (!str_starts_with($upperCaseHeader, 'HTTP_')) {
-                $upperCaseHeader = 'HTTP_' . $upperCaseHeader;
+        foreach ($filteredHeaders as $header => $value) {
+            if (!str_starts_with($header, 'HTTP_')) {
+                $header = 'HTTP_' . $header;
             }
 
             if (!HeaderSecurity::isValid($value)) {
                 $value = $this->filterHeader($value);
             }
 
-            $headers[$upperCaseHeader] = $value;
+            $headers[$header] = $value;
         }
 
         $message = ServerRequestFactory::fromGlobals($headers);

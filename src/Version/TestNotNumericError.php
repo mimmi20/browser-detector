@@ -12,19 +12,19 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Version;
 
-use UnexpectedValueException;
+use BrowserDetector\Version\Exception\NotNumericException;
 
-final class TestError implements VersionFactoryInterface
+final class TestNotNumericError implements VersionFactoryInterface
 {
     /**
      * returns the version of the operating system/platform
      *
-     * @throws UnexpectedValueException
+     * @throws NotNumericException
      *
      * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
      */
     public function detectVersion(string $useragent): VersionInterface
     {
-        throw new UnexpectedValueException('error');
+        throw new NotNumericException('error');
     }
 }

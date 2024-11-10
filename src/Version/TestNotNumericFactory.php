@@ -14,8 +14,15 @@ namespace BrowserDetector\Version;
 
 use Psr\Log\LoggerInterface;
 
-interface TestErrorFactoryInterface
+final class TestNotNumericFactory implements TestErrorFactoryInterface
 {
-    /** @throws void */
-    public function __invoke(LoggerInterface $logger): TestUnexpectedError | TestNotNumericError;
+    /**
+     * @throws void
+     *
+     * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+     */
+    public function __invoke(LoggerInterface $logger): TestNotNumericError
+    {
+        return new TestNotNumericError();
+    }
 }

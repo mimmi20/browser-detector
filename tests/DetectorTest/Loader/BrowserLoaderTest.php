@@ -19,6 +19,7 @@ use BrowserDetector\Loader\Helper\DataInterface;
 use BrowserDetector\Loader\NotFoundException;
 use BrowserDetector\Version\ErrorVersionCreatorFactory;
 use BrowserDetector\Version\TestFactory;
+use BrowserDetector\Version\TridentFactory;
 use BrowserDetector\Version\VersionBuilderFactory;
 use BrowserDetector\Version\VersionBuilderInterface;
 use BrowserDetector\Version\VersionInterface;
@@ -849,6 +850,108 @@ final class BrowserLoaderTest extends TestCase
         $engineKey   = 'unknown';
         $browserData = (object) [
             'version' => (object) ['factory' => '\\' . ErrorVersionCreatorFactory::class, 'search' => 'test'],
+            'manufacturer' => 'xyz',
+            'type' => 'unknown',
+            'engine' => $engineKey,
+            'name' => null,
+        ];
+
+        $initData
+            ->expects(self::once())
+            ->method('getItem')
+            ->with('test-key')
+            ->willReturn($browserData);
+
+        $company = ['type' => 'xyz-type'];
+
+        $companyLoader = $this->createMock(CompanyLoaderInterface::class);
+        $companyLoader
+            ->expects(self::once())
+            ->method('load')
+            ->with('xyz')
+            ->willReturn($company);
+
+        $typeLoader = $this->createMock(TypeLoaderInterface::class);
+        $typeLoader
+            ->expects(self::once())
+            ->method('load')
+            ->with('unknown')
+            ->willReturn(new Unknown());
+
+        $versionBuilder = $this->createMock(VersionBuilderInterface::class);
+        $versionBuilder
+            ->expects(self::never())
+            ->method('setRegex');
+        $versionBuilder
+            ->expects(self::never())
+            ->method('set');
+        $versionBuilder
+            ->expects(self::never())
+            ->method('detectVersion');
+
+        $object = new BrowserLoader($logger, $initData, $companyLoader, $typeLoader, $versionBuilder);
+
+        $result = $object->load('test-key', 'test/3.0');
+
+        $expected = [
+            [
+                'name' => null,
+                'version' => null,
+                'manufacturer' => 'xyz-type',
+                'type' => 'unknown',
+                'isbot' => false,
+            ],
+            'unknown',
+        ];
+
+        self::assertSame($expected, $result);
+    }
+
+    /**
+     * @throws ExpectationFailedException
+     * @throws Exception
+     * @throws NotFoundException
+     * @throws UnexpectedValueException
+     * @throws RuntimeException
+     */
+    public function testInvokeGenericVersion3(): void
+    {
+        $logger = $this->createMock(LoggerInterface::class);
+        $logger
+            ->expects(self::never())
+            ->method('info');
+        $logger
+            ->expects(self::never())
+            ->method('notice');
+        $logger
+            ->expects(self::never())
+            ->method('warning');
+        $logger
+            ->expects(self::never())
+            ->method('error');
+        $logger
+            ->expects(self::never())
+            ->method('critical');
+        $logger
+            ->expects(self::never())
+            ->method('alert');
+        $logger
+            ->expects(self::never())
+            ->method('emergency');
+
+        $initData = $this->createMock(DataInterface::class);
+        $initData
+            ->expects(self::once())
+            ->method('__invoke');
+        $initData
+            ->expects(self::once())
+            ->method('hasItem')
+            ->with('test-key')
+            ->willReturn(true);
+
+        $engineKey   = 'unknown';
+        $browserData = (object) [
+            'version' => (object) ['factory' => TridentFactory::class, 'search' => 'test'],
             'manufacturer' => 'xyz',
             'type' => 'unknown',
             'engine' => $engineKey,

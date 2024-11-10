@@ -12,7 +12,7 @@ declare(strict_types = 1);
 
 namespace BrowserDetectorTest\Version;
 
-use BrowserDetector\Version\TestError;
+use BrowserDetector\Version\TestUnexpectedError;
 use PHPUnit\Framework\TestCase;
 use UnexpectedValueException;
 
@@ -21,7 +21,7 @@ final class TestErrorTest extends TestCase
     /** @throws UnexpectedValueException */
     public function testDetectVersion(): void
     {
-        $object = new TestError();
+        $object = new TestUnexpectedError();
 
         $this->expectException(UnexpectedValueException::class);
         $this->expectExceptionCode(0);

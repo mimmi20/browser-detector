@@ -129,7 +129,7 @@ final class DeviceStockUa implements HeaderInterface
                 'blackberry' => 'rim os',
                 'iphone os' => 'ios',
                 'mtk' => 'nucleus os',
-                'windows phone os', 'windows phone' => 'windows phone',
+                'windows phone os' => 'windows phone',
                 'brew mp' => 'brew',
                 default => $code,
             };

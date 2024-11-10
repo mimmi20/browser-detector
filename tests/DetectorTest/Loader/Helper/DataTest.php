@@ -235,4 +235,63 @@ final class DataTest extends TestCase
         self::assertTrue($object->hasItem('42'));
         self::assertEquals((object) ['abc4' => 'test4'], $object->getItem('42'));
     }
+
+    /**
+     * @throws ExpectationFailedException
+     * @throws Exception
+     * @throws InvalidArgumentException
+     * @throws RuntimeException
+     */
+    public function testInvokeSuccess4(): void
+    {
+        vfsStream::setup(self::DATA_PATH);
+
+        $baseDir = vfsStreamWrapper::getRoot();
+
+        $dir = vfsStream::newDirectory('valid.json');
+        $baseDir->addChild($dir);
+
+        $file1 = vfsStream::newFile('tool.json');
+        $file1->withContent('{"aix": {"abc": "xyz"}}');
+
+        $file2 = vfsStream::newFile('tool2.json5');
+        $file2->withContent(
+            '{"aix": {"abc2": "xyz2"}, "amiga os": {"abc3": "value3"}, "test": "test", "42": {"abc4": "test4"}}',
+        );
+
+        $file3 = vfsStream::newFile('tool2.json');
+        $file3->withContent(
+            '{"aix": {"abc2": "xyz2"}, "amiga os": {"abc3": "value3"}, "test": "test", "42": {"abc4": "test4"}}',
+        );
+
+        $dir->addChild($file1);
+        $dir->addChild($file2);
+        $dir->addChild($file3);
+
+        $key   = 'aix';
+        $value = ['abc' => 'xyz'];
+
+        $object = new Data($dir->url(), 'json');
+
+        self::assertFalse($object->isInitialized());
+
+        $object();
+
+        self::assertTrue($object->isInitialized());
+
+        $object();
+
+        self::assertTrue($object->isInitialized());
+        self::assertTrue($object->hasItem($key));
+        self::assertEquals((object) $value, $object->getItem($key));
+        self::assertCount(3, $object);
+
+        self::assertTrue($object->hasItem('amiga os'));
+        self::assertEquals((object) ['abc3' => 'value3'], $object->getItem('amiga os'));
+
+        self::assertFalse($object->hasItem('test'));
+
+        self::assertTrue($object->hasItem('42'));
+        self::assertEquals((object) ['abc4' => 'test4'], $object->getItem('42'));
+    }
 }

@@ -154,7 +154,7 @@ final class Useragent implements HeaderInterface
 
         try {
             [$browser] = $this->browserLoader->load($code, $this->normalizedValue);
-        } catch (UnexpectedValueException) {
+        } catch (NotFoundException) {
             return null;
         }
 
@@ -243,7 +243,7 @@ final class Useragent implements HeaderInterface
 
         try {
             $platform = $this->platformLoader->load($code, $this->normalizedValue);
-        } catch (NotFoundException | UnexpectedValueException) {
+        } catch (NotFoundException) {
             return null;
         }
 
@@ -304,7 +304,7 @@ final class Useragent implements HeaderInterface
 
         try {
             $engine = $this->engineLoader->load($code, $this->normalizedValue);
-        } catch (NotFoundException | UnexpectedValueException) {
+        } catch (UnexpectedValueException) {
             return null;
         }
 

@@ -57,7 +57,10 @@ final class DeviceLoader implements DeviceLoaderInterface
 
         $device = $this->fromArray((array) $deviceData);
 
-        assert(is_string($deviceData->platform) || $deviceData->platform === null);
+        assert(
+            is_string($deviceData->platform) || $deviceData->platform === null,
+            '"platform" property is required',
+        );
 
         return [$device, $deviceData->platform];
     }

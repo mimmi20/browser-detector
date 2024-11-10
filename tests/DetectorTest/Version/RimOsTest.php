@@ -100,6 +100,14 @@ final class RimOsTest extends TestCase
                 'Opera/9.80 (BlackBerry; Opera Mini/8.0.35667/35.7561; U; en) Presto/2.8.119 Version/11.10',
                 null,
             ],
+            [
+                'Mozilla/5.0 (BB10; Kbd) AppleWebKit/537.35+ (KHTML, like Gecko) Version/10.3.3.3057 Opera Mobile Safari/537.35+',
+                '10.3.3.3057',
+            ],
+            [
+                'Mozilla/5.0 (BlackBerry; Kbd) AppleWebKit/537.35+ (KHTML, like Gecko) Version/10.3.3.3057 Mobile Safari/537.35+',
+                '10.3.3.3057',
+            ],
         ];
     }
 

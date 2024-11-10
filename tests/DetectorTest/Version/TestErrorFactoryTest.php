@@ -12,8 +12,8 @@ declare(strict_types = 1);
 
 namespace BrowserDetectorTest\Version;
 
-use BrowserDetector\Version\TestError;
-use BrowserDetector\Version\TestErrorFactory;
+use BrowserDetector\Version\TestUnexpectedError;
+use BrowserDetector\Version\TestUnexpectedFactory;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
@@ -24,12 +24,12 @@ use function sprintf;
 
 final class TestErrorFactoryTest extends TestCase
 {
-    private TestErrorFactory $object;
+    private TestUnexpectedFactory $object;
 
     /** @throws void */
     protected function setUp(): void
     {
-        $this->object = new TestErrorFactory();
+        $this->object = new TestUnexpectedFactory();
     }
 
     /**
@@ -40,14 +40,14 @@ final class TestErrorFactoryTest extends TestCase
     {
         $object = $this->object;
         assert(
-            $object instanceof TestErrorFactory,
+            $object instanceof TestUnexpectedFactory,
             sprintf(
                 '$object should be an instance of %s, but is %s',
-                TestErrorFactory::class,
+                TestUnexpectedFactory::class,
                 $object::class,
             ),
         );
         $result = $object(new NullLogger());
-        self::assertInstanceOf(TestError::class, $result);
+        self::assertInstanceOf(TestUnexpectedError::class, $result);
     }
 }
