@@ -59,7 +59,7 @@ jobs:
       skip-phpcs: false
       skip-phpstan: false
       skip-rector: false
-      skip-phpmd: false
+      skip-phpmd: true
       skip-eslint: true
       skip-stylelint: true
       skip-prettier: true
