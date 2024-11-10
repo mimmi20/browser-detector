@@ -461,7 +461,23 @@
       "size": 8
     },
     "type": "fone-pad",
-    "platform": "android"
+    "platform": null
+  },
+  "huawei jdn2-al50hn": {
+    "deviceName": "JDN2-AL50HN",
+    "marketingName": "MediaPad M5 Lite 8.0 (2019)",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "dualOrientation": null,
+    "simCount": null,
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "size": 8
+    },
+    "type": "fone-pad",
+    "platform": null
   },
   "huawei jdn2-l09": {
     "deviceName": "JDN2-L09",
@@ -1133,7 +1149,23 @@
       "size": 9.7
     },
     "type": "fone-pad",
-    "platform": "android"
+    "platform": null
+  },
+  "huawei agr-al09hn": {
+    "deviceName": "AGR-AL09HN",
+    "marketingName": "Pad X6",
+    "manufacturer": "huawei",
+    "brand": "honor",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": 9.7
+    },
+    "type": "fone-pad",
+    "platform": null
   },
   "huawei agr-l09": {
     "deviceName": "AGR-L09",
@@ -1149,7 +1181,7 @@
       "size": 9.7
     },
     "type": "fone-pad",
-    "platform": "android"
+    "platform": null
   },
   "huawei agrk-l09": {
     "deviceName": "AGRK-L09",
@@ -1229,7 +1261,7 @@
       "size": 10.4
     },
     "type": "fone-pad",
-    "platform": "android"
+    "platform": null
   },
   "huawei bah4-l09": {
     "deviceName": "BAH4-L09",
@@ -1245,7 +1277,7 @@
       "size": 10.4
     },
     "type": "fone-pad",
-    "platform": "android"
+    "platform": null
   },
   "huawei ags6-l09": {
     "deviceName": "AGS6-L09",
@@ -1277,7 +1309,7 @@
       "size": 10.4
     },
     "type": "fone-pad",
-    "platform": "android"
+    "platform": null
   },
   "huawei got-al09": {
     "deviceName": "GOT-AL09",
@@ -1293,7 +1325,7 @@
       "size": 11
     },
     "type": "fone-pad",
-    "platform": "android"
+    "platform": null
   },
   "huawei got-al19": {
     "deviceName": "GOT-AL19",
@@ -1309,7 +1341,7 @@
       "size": 11
     },
     "type": "fone-pad",
-    "platform": "android"
+    "platform": null
   },
   "huawei bach-l09": {
     "deviceName": "Bach-L09",
@@ -1326,5 +1358,21 @@
     },
     "type": "fone-pad",
     "platform": "android"
+  },
+  "huawei scmr-al09": {
+    "deviceName": "SCMR-AL09",
+    "marketingName": "MatePad 10.8 LTE",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2560,
+      "height": 1600,
+      "touch": true,
+      "size": 10.8
+    },
+    "type": "fone-pad",
+    "platform": null
   }
 }

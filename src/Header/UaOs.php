@@ -24,8 +24,12 @@ final class UaOs implements HeaderInterface
         return (bool) preg_match('/Windows CE \(Pocket PC\) - Version \d+\.\d+/', $this->value);
     }
 
-    /** @throws void */
-    public function getPlatformCode(): string | null
+    /**
+     * @throws void
+     *
+     * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+     */
+    public function getPlatformCode(string | null $derivate = null): string | null
     {
         $matches = [];
 

@@ -631,21 +631,20 @@
   },
   {
     "headers": {
-      "device-memory": "2",
-      "dpr": "1.75",
+      "device-memory": "8",
+      "dpr": "2.8125",
       "viewport-width": "980",
-      "rtt": "50",
-      "downlink": "10",
+      "rtt": "200",
+      "downlink": "4.85",
       "ect": "4g",
       "sec-ch-ua": "\";Not A Brand\";v=\"99\", \"Chromium\";v=\"94\"",
       "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-arch": "\"\"",
       "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua-platform-version": "\"11.0.0\"",
-      "sec-ch-ua-model": "\"SM-A217F\"",
+      "sec-ch-ua-platform-version": "\"10.0.0\"",
+      "sec-ch-ua-model": "\"SM-N960F\"",
       "sec-ch-ua-bitness": "\"\"",
-      "dnt": "1",
-      "user-agent": "Mozilla/5.0 (Linux; Android 11; SM-A217F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.85 Mobile Safari/537.36 (Ecosia android@94.0.4606.85)",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; SM-N960F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.85 Mobile Safari/537.36 (Ecosia android@94.0.4606.85)",
       "sec-fetch-site": "same-origin",
       "sec-fetch-mode": "navigate",
       "sec-fetch-user": "?1",
@@ -673,7 +672,7 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "11.0.0",
+      "version": "10.0.0",
       "manufacturer": "google"
     },
     "client": {

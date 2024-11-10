@@ -30,15 +30,32 @@ final class SecChUaPlatform implements HeaderInterface
     }
 
     /** @throws void */
-    public function getPlatformCode(): string | null
+    public function getPlatformCode(string | null $derivate = null): string | null
     {
         $value = trim($this->value, '"');
         $code  = mb_strtolower($value);
 
+        if ($derivate !== null) {
+            $derivate     = mb_strtolower($derivate);
+            $derivateCode = $this->getCode($derivate);
+
+            if ($derivateCode !== null) {
+                return $derivateCode;
+            }
+        }
+
+        return $this->getCode($code);
+    }
+
+    /** @throws void */
+    private function getCode(string $code): string | null
+    {
         return match ($code) {
-            'android', 'windows', 'linux', 'chromeos' => $code,
-            'macos' => 'mac os x',
+            'android', 'linux', 'chromeos' => $code,
+            'macos', 'mac os x' => 'mac os x',
             'chrome os', 'chromium os' => 'chromeos',
+            'windows', 'win32' => 'windows',
+            'harmonyos' => 'harmony-os',
             default => null,
         };
     }

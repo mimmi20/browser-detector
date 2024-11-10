@@ -1,21 +1,21 @@
 [
   {
     "headers": {
-      "device-memory": "8",
-      "dpr": "2.625",
+      "device-memory": "2",
+      "dpr": "2",
       "viewport-width": "980",
-      "rtt": "50",
-      "downlink": "10",
+      "rtt": "200",
+      "downlink": "1.35",
       "ect": "4g",
       "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"98\", \"Yandex\";v=\"22\"",
-      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-mobile": "?0",
       "sec-ch-ua-arch": "\"\"",
       "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua-platform-version": "\"12.0.0\"",
-      "sec-ch-ua-model": "\"SM-G988B\"",
+      "sec-ch-ua-platform-version": "\"8.0.0\"",
+      "sec-ch-ua-model": "\"AGS2-W09\"",
       "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-full-version-list": "\" Not A;Brand\";v=\"99.0.0.0\", \"Chromium\";v=\"98.0.4758.303\", \"Yandex\";v=\"22.3.0.303\"",
-      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 12; SM-G988B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 YaBrowser/22.3.0.303.00 SA/3 Mobile Safari/537.36",
+      "sec-ch-ua-full-version-list": "\" Not A;Brand\";v=\"99.0.0.0\", \"Chromium\";v=\"98.0.4758.86\", \"Yandex\";v=\"22.3.5.86\"",
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 8.0.0; AGS2-W09) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.141 YaBrowser/22.3.5.86.01 Safari/537.36",
       "sec-fetch-site": "same-origin",
       "sec-fetch-mode": "navigate",
       "sec-fetch-user": "?1",
@@ -36,26 +36,26 @@
         "size": null
       },
       "type": null,
-      "ismobile": true,
+      "ismobile": false,
       "istv": false,
       "bits": null
     },
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "12.0.0",
+      "version": "8.0.0",
       "manufacturer": "google"
     },
     "client": {
       "name": "Yandex Browser",
-      "version": "22.3.0.303",
+      "version": "22.3.5.86",
       "manufacturer": "yandex",
       "type": "browser",
       "isbot": false
     },
     "engine": {
       "name": "Blink",
-      "version": "98.0.4758.102",
+      "version": "98.0.4758.141",
       "manufacturer": "google"
     }
   }

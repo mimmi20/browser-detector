@@ -31,10 +31,14 @@ use function assert;
 use function explode;
 use function in_array;
 use function is_array;
+use function mb_strpos;
 use function mb_strtolower;
+use function mb_substr;
 use function reset;
 use function sprintf;
+use function str_contains;
 use function str_starts_with;
+use function trim;
 
 final class Detector implements DetectorInterface
 {
@@ -430,9 +434,13 @@ final class Detector implements DetectorInterface
         $platformHeaderVerion = reset($headersWithPlatformVersion);
 
         if ($platformHeaderVerion instanceof HeaderInterface) {
-            return $this->getVersion(
-                $platformHeaderVerion->getPlatformVersion($platformCodename),
-            );
+            $platformVersion = $platformHeaderVerion->getPlatformVersion($platformCodename);
+
+            if ($platformVersion !== null && str_contains($platformVersion, ';')) {
+                return $platformVersion;
+            }
+
+            return $this->getVersion($platformVersion);
         }
 
         return null;
@@ -471,6 +479,22 @@ final class Detector implements DetectorInterface
             $platformVersion = $this->getPlatformVersion($filteredHeaders, $platformCodename);
         } catch (NotNumericException | UnexpectedValueException $e) {
             $this->logger->info($e);
+        }
+
+        if ($platformVersion !== null && $platformHeader instanceof HeaderInterface) {
+            $derivatePosition = mb_strpos($platformVersion, ';');
+
+            if ($derivatePosition !== false) {
+                // the platform contains information about a derivate of the platform
+                $derivate        = trim(mb_substr($platformVersion, $derivatePosition + 1));
+                $platformVersion = null;
+
+                $derivateCodename = $platformHeader->getPlatformCode($derivate);
+
+                if ($derivateCodename !== null) {
+                    $platformCodename = $derivateCodename;
+                }
+            }
         }
 
         if ($platformCodename !== null) {

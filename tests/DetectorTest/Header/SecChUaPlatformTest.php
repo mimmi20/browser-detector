@@ -125,7 +125,31 @@ final class SecChUaPlatformTest extends TestCase
             ['"macOS"', true, 'mac os x'],
             ['"Chromium OS"', true, 'chromeos'],
             ['"Unknown"', false, null],
+            ['"Win32"', true, 'windows'],
+            ['"Mac OS X"', true, 'mac os x'],
             ['""', false, null],
         ];
+    }
+
+    /** @throws ExpectationFailedException */
+    public function testHeaderWithDerivate(): void
+    {
+        $header = new SecChUaPlatform('"Android"');
+
+        self::assertSame(
+            'harmony-os',
+            $header->getPlatformCode('HarmonyOS'),
+        );
+    }
+
+    /** @throws ExpectationFailedException */
+    public function testHeaderWithDerivate2(): void
+    {
+        $header = new SecChUaPlatform('"Android"');
+
+        self::assertSame(
+            'android',
+            $header->getPlatformCode('x'),
+        );
     }
 }
