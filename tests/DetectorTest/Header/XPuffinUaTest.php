@@ -139,6 +139,7 @@ final class XPuffinUaTest extends TestCase
             ['iPhone OS/iPad4,1/1024x768', true, 'apple=apple ipad 4,1', true, 'ios'],
             ['iPhone OS/iPhone 3GS/320x480', true, 'apple=apple iphone 2,1', true, 'ios'],
             ['fake OS/iPhone 3GS/320x480', false, null, false, null],
+            ['iPhone OS/x/320x480', true, null, true, 'ios'],
         ];
     }
 }

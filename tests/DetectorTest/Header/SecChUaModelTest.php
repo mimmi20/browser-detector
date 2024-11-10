@@ -420,6 +420,8 @@ final class SecChUaModelTest extends TestCase
             ['"SM-A750FN"', true, 'samsung=samsung sm-a750fn'],
             ['"SM-N960F"', true, 'samsung=samsung sm-n960f'],
             ['"SM-G781B"', true, 'samsung=samsung sm-g781b'],
+            ['"SM-A105FN"', true, 'samsung=samsung sm-a105fn'],
+            ['SM-G920F', true, 'samsung=samsung sm-g920f'],
             // Huawei
             ['"VOG-L29"', true, 'huawei=huawei vog-l29'],
             ['"MAR-LX1B"', true, 'huawei=huawei mar-lx1b'],
@@ -454,6 +456,7 @@ final class SecChUaModelTest extends TestCase
             ['"AGS2-W09"', true, 'huawei=huawei ags2-w09'],
             ['"ELS-NX9"', true, 'huawei=huawei els-nx9'],
             ['"ANE-LX1"', true, 'huawei=huawei ane-lx1'],
+            ['"YAL-L41"', true, 'huawei=huawei yal-l41'],
             // Lenovo
             ['"Lenovo TB-X304F"', true, 'lenovo=lenovo tb-x304f'],
             ['"X1030X"', true, 'lenovo=lenovo x1030x'],

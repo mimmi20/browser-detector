@@ -71,9 +71,8 @@ final class XPuffinUa implements HeaderInterface
             $code = mb_strtolower($matches['platform']);
 
             return match ($code) {
-                'android' => $code,
                 'iphone os' => 'ios',
-                default => null,
+                default => $code,
             };
         }
 

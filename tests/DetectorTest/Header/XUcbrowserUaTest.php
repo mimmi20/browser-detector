@@ -229,6 +229,7 @@ final class XUcbrowserUaTest extends TestCase
             ['pf(Windows);la(en-US);re(U2/1.0.0);dv(NOKIA RM-914_eu_turkey_355);pr(UCBrowser/3.0.1.302);ov(wds 8.0);pi(480*800);ss(480*800);er(U);bt(GJ);nm(0);im(0);sr(0);nt(1);pm(0);', true, '', true, 'ucbrowser', true, '3.0.1.302', true, 'windows phone', true, '8.0', true, 'u2', true, '1.0.0'],
             ['pf(Windows);la(en-US);pi(480*800);ss(480*800);er(U);bt(GJ);nm(0);im(0);sr(0);nt(1);pm(0);', false, '', false, null, false, null, true, 'windows phone', false, null, false, null, false, null],
             ['pf(44);la(en-US);dv(iPh4,1);pr(UCBrowser);ov(8_1_2);pi(640x960);ss(320x416);er(U);bt(GJ);up();re(AppleWebKit/600.1.4.12.4 (KHTML, like Gecko));pm(0);bv(0);nm(0);im(0);nt(1);', true, 'test-device-code', true, 'ucbrowser', false, null, true, 'ios', true, '8.1.2', true, 'webkit', true, '600.1.4.12.4'],
+            ['pf(fake);la(en-US);dv(iPh4,1);pr(fake Browser);ov(8_1_2);pi(640x960);ss(320x416);er(U);bt(GJ);up();re(AppleWebKit/600.1.4.12.4 (KHTML, like Gecko));pm(0);bv(0);nm(0);im(0);nt(1);', true, 'test-device-code', true, null, false, null, false, null, true, '8.1.2', true, 'webkit', true, '600.1.4.12.4'],
         ];
     }
 }

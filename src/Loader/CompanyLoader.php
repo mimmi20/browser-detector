@@ -45,8 +45,14 @@ final class CompanyLoader implements CompanyLoaderInterface
         }
 
         assert($companyData instanceof stdClass);
-        assert(is_string($companyData->name) || $companyData->name === null);
-        assert(is_string($companyData->brandname) || $companyData->brandname === null);
+        assert(
+            is_string($companyData->name) || $companyData->name === null,
+            '"name" property is required',
+        );
+        assert(
+            is_string($companyData->brandname) || $companyData->brandname === null,
+            '"brandname" property is required',
+        );
 
         return [
             'type' => $key,

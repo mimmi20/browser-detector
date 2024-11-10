@@ -24,6 +24,7 @@ use UnexpectedValueException;
 use function array_key_exists;
 use function assert;
 use function is_string;
+use function property_exists;
 
 final class BrowserLoader implements BrowserLoaderInterface
 {
@@ -63,7 +64,12 @@ final class BrowserLoader implements BrowserLoaderInterface
 
         assert($browserData instanceof stdClass);
 
-        assert(is_string($browserData->engine) || $browserData->engine === null);
+        assert(
+            property_exists($browserData, 'engine') && (is_string(
+                $browserData->engine,
+            ) || $browserData->engine === null),
+            '"engine" property is required',
+        );
 
         return [
             $this->fromArray((array) $browserData, $useragent),
