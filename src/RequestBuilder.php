@@ -145,9 +145,9 @@ final class RequestBuilder implements RequestBuilderInterface
     }
 
     /** @throws void */
-    private function filterHeader(string $header): string
+    private function filterHeader(string $header): string | null
     {
-        return (string) preg_replace(
+        return preg_replace(
             ["#(((?<!\r)\n)|(\r(?!\n))|(\r\n(?![ \t])))#", '/[^\x09\x0a\x0d\x20-\x7E\x80-\xFE]/'],
             '-',
             $header,

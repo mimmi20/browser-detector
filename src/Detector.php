@@ -107,7 +107,6 @@ final class Detector implements DetectorInterface
 
         [$deviceName, $deviceMarketingName, $deviceManufacturer, $brand, $dualOrientation, $simCount, $display, $deviceType, $deviceIsMobileFromDevice, $deviceIsTv, $platformCodenameFromDevice] = $this->getDeviceData(
             filteredHeaders: $filteredHeaders,
-            deviceIsMobile: $deviceIsMobile,
         );
 
         /* detect platform */
@@ -527,7 +526,7 @@ final class Detector implements DetectorInterface
      *
      * @throws void
      */
-    private function getDeviceData(array $filteredHeaders, bool | null $deviceIsMobile): array
+    private function getDeviceData(array $filteredHeaders): array
     {
         $headersWithDeviceCode = array_filter(
             $filteredHeaders,
@@ -563,7 +562,7 @@ final class Detector implements DetectorInterface
                         'size' => $device['display']['size'] ?? null,
                     ],
                     $device['type'],
-                    $deviceIsMobile ?? $device['ismobile'],
+                    $device['ismobile'],
                     $device['istv'],
                     $platformCodenameFromDevice,
                 ];

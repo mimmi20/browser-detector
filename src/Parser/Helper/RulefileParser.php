@@ -19,7 +19,6 @@ use Psr\Log\LoggerInterface;
 use function array_key_exists;
 use function array_keys;
 use function assert;
-use function file_exists;
 use function file_get_contents;
 use function is_array;
 use function is_int;
@@ -42,14 +41,6 @@ final class RulefileParser implements RulefileParserInterface
     /** @throws void */
     public function parseFile(string $file, string $useragent, string $fallback): string
     {
-        if (!file_exists($file)) {
-            $this->logger->error(
-                new Exception(sprintf('file %s does not exist', $file)),
-            );
-
-            return $fallback;
-        }
-
         $content = @file_get_contents($file);
         $mode    = null;
 

@@ -19,7 +19,6 @@ use BrowserDetector\Loader\Helper\DataInterface;
 use BrowserDetector\Loader\NotFoundException;
 use BrowserDetector\Version\ErrorVersionCreatorFactory;
 use BrowserDetector\Version\TestFactory;
-use BrowserDetector\Version\TridentFactory;
 use BrowserDetector\Version\VersionBuilderFactory;
 use BrowserDetector\Version\VersionBuilderInterface;
 use BrowserDetector\Version\VersionInterface;
@@ -951,7 +950,7 @@ final class BrowserLoaderTest extends TestCase
 
         $engineKey   = 'unknown';
         $browserData = (object) [
-            'version' => (object) ['factory' => TridentFactory::class, 'search' => 'test'],
+            'version' => (object) ['factory' => VersionBuilderFactory::class, 'search' => 'test'],
             'manufacturer' => 'xyz',
             'type' => 'unknown',
             'engine' => $engineKey,

@@ -70,7 +70,7 @@ final class Data implements DataInterface
 
                 assert($file instanceof SplFileInfo);
 
-                return $file->isFile() && $file->getExtension() === $this->extension;
+                return $file->getExtension() === $this->extension;
             }
         };
 

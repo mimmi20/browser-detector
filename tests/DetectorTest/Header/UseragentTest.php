@@ -466,6 +466,26 @@ final class UseragentTest extends TestCase
                 'hasEngineVersion' => true,
                 'engineVersion' => '534.31',
             ],
+            [
+                'ua' => 'pf(Linux);la(en-US);re(U2/1.0.0);dv(GT-S7262);pr(UCBrowser/9.4.1.482);ov(4.1.2);pi(480*800);ss(480*800);up(U2/1.0.0);er(U);bt(GJ);pm(1);nm(0);im(0);sr(2);nt(99);',
+                'normalizedUa' => 'pf(Linux);la(en-US);re(U2/1.0.0);dv(GT-S7262);pr(UCBrowser/9.4.1.482);ov(4.1.2);pi(480*800);ss(480*800);up(U2/1.0.0);er(U);bt(GJ);pm(1);nm(0);im(0);sr(2);nt(99);',
+                'hasDeviceInfo' => true,
+                'deviceUa' => 'GT-S7262',
+                'deviceCode' => 'A369i',
+                'hasClientInfo' => true,
+                'clientCode' => 'ucbrowser',
+                'hasClientVersion' => true,
+                'clientVersion' => '9.4.1.482',
+                'hasPlatformInfo' => true,
+                'platformCode' => 'android',
+                'hasPlatformVersion' => true,
+                'platformVersion' => '4.1.2',
+                'hasEngineInfo' => true,
+                'engineUa' => '',
+                'engineCode' => 'u2',
+                'hasEngineVersion' => true,
+                'engineVersion' => '1.0.0',
+            ],
         ];
     }
 
