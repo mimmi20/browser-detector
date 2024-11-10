@@ -64,6 +64,7 @@ final class SecChUaModel implements HeaderInterface
             'kfonwi' => 'amazon=amazon kfonwi',
             'kfmawi' => 'amazon=amazon kfmawi',
             'kfsuwi' => 'amazon=amazon kfsuwi',
+            'aftmm' => 'amazon=amazon aftmm',
             // Asus
             'p024' => 'asus=asus p024',
             'asus_x00dd' => 'asus=asus x00dd',
@@ -107,6 +108,7 @@ final class SecChUaModel implements HeaderInterface
             'cph2415' => 'oneplus=oneplus cph2415',
             'in2015' => 'oneplus=oneplus in2015',
             'cph2409' => 'oneplus=oneplus cph2409',
+            'oneplus a6003' => 'oneplus=oneplus a6003',
             // Oppo
             'cph2065' => 'oppo=oppo cph2065',
             'cph2211' => 'oppo=oppo cph2211',
@@ -218,6 +220,7 @@ final class SecChUaModel implements HeaderInterface
             '21121210g' => 'xiaomi=xiaomi 21121210g',
             '22101320g' => 'xiaomi=xiaomi 22101320g',
             '220233l2g' => 'xiaomi=xiaomi 220233l2g',
+            'm2007j3sg' => 'xiaomi=xiaomi m2007j3sg',
             // ZTE
             'zte a2121e' => 'zte=zte a2121e',
             'zte blade 10 vita' => 'zte=zte blade 10 vita',
@@ -337,6 +340,9 @@ final class SecChUaModel implements HeaderInterface
             'sm-a750fn' => 'samsung=samsung sm-a750fn',
             'sm-n960f' => 'samsung=samsung sm-n960f',
             'sm-g781b' => 'samsung=samsung sm-g781b',
+            'sm-g955f' => 'samsung=samsung sm-g955f',
+            'sm-a715f' => 'samsung=samsung sm-a715f',
+            'sm-p610' => 'samsung=samsung sm-p610',
             // Huawei
             'mar-lx1b' => 'huawei=huawei mar-lx1b',
             'lya-l09' => 'huawei=huawei lya-l09',
@@ -374,6 +380,8 @@ final class SecChUaModel implements HeaderInterface
             'ags2-w09' => 'huawei=huawei ags2-w09',
             'els-nx9' => 'huawei=huawei els-nx9',
             'ane-lx1' => 'huawei=huawei ane-lx1',
+            'jat-l41' => 'huawei=huawei jat-l41',
+            'jny-lx1' => 'huawei=huawei jny-lx1',
             // Lenovo
             'lenovo tb-x304f' => 'lenovo=lenovo tb-x304f',
             'lenovo yt-j706f' => 'lenovo=lenovo yt-j706f',
@@ -478,6 +486,7 @@ final class SecChUaModel implements HeaderInterface
             'aoyodkg_a38' => 'aoyodkg=aoyodkg a38',
             // gigaset
             'e940-2795-00' => 'gigaset=gigaset e940-2795-00',
+            'gs185' => 'gigaset=gigaset gs185',
             // wiko
             'w-v750bn-eea' => 'wiko=wiko w-v750bn-eea',
             'w-v680-eea' => 'wiko=wiko w-v680-eea',

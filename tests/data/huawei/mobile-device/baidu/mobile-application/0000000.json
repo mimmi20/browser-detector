@@ -26,7 +26,7 @@
       "name": "HarmonyOS",
       "marketingName": "HarmonyOS",
       "version": "2.1.0",
-      "manufacturer": "unknown"
+      "manufacturer": "huawei"
     },
     "client": {
       "name": "Baidu Box App",
@@ -110,7 +110,7 @@
       "name": "HarmonyOS",
       "marketingName": "HarmonyOS",
       "version": "2.2.0",
-      "manufacturer": "unknown"
+      "manufacturer": "huawei"
     },
     "client": {
       "name": "Baidu Box App",
@@ -122,6 +122,223 @@
     "engine": {
       "name": "T7",
       "version": "12.26.0",
+      "manufacturer": "baidu"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; BZT4-W19 Build/HUAWEIBZT4-W19; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Safari/537.36 T7/13.16 BDOS/1.0 (HarmonyOS 2.2.0) SP-engine/2.47.0 matrixstyle/0 lite baiduboxapp/5.39.0.11 (Baidu; P1 11) NABar/1.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Huawei device",
+      "marketingName": "general Huawei device",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "HarmonyOS",
+      "marketingName": "HarmonyOS",
+      "version": "2.2.0",
+      "manufacturer": "huawei"
+    },
+    "client": {
+      "name": "Baidu Box App Lite",
+      "version": "5.39.0.11",
+      "manufacturer": "baidu",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "T7",
+      "version": "13.16.0",
+      "manufacturer": "baidu"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; FRL-TN00 Build/HUAWEIFRL-TN00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/13.32 BDOS/1.0 (HarmonyOS 2.2.0) SP-engine/2.70.0 baiduboxapp/13.32.0.10 (Baidu; P1 10) NABar/1.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Huawei device",
+      "marketingName": "general Huawei device",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "HarmonyOS",
+      "marketingName": "HarmonyOS",
+      "version": "2.2.0",
+      "manufacturer": "huawei"
+    },
+    "client": {
+      "name": "Baidu Box App",
+      "version": "13.32.0.10",
+      "manufacturer": "baidu",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "T7",
+      "version": "13.32.0",
+      "manufacturer": "baidu"
+    }
+  },
+  {
+    "headers": {
+      "purpose": "prefetch",
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "cross-site",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; FRL-TN00 Build/HUAWEIFRL-TN00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/13.32 BDOS/1.0 (HarmonyOS 2.2.0) SP-engine/2.70.0 baiduboxapp/13.32.0.10 (Baidu; P1 10) NABar/1.0",
+      "x-bd-traceid": "ea111fa70e5e4580b025509753dd71ce",
+      "x-from-h3-trnet": "true",
+      "x-requested-with": "com.baidu.searchbox"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Huawei device",
+      "marketingName": "general Huawei device",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "HarmonyOS",
+      "marketingName": "HarmonyOS",
+      "version": "2.2.0",
+      "manufacturer": "huawei"
+    },
+    "client": {
+      "name": "Baidu Box App",
+      "version": null,
+      "manufacturer": "baidu",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "T7",
+      "version": "13.32.0",
+      "manufacturer": "baidu"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; LNA-AL00 Build/HUAWEILNA-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/13.32 BDOS/1.0 (HarmonyOS 3.0.0) SP-engine/2.70.0 baiduboxapp/13.32.5.10 (Baidu; P1 12) NABar"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Huawei device",
+      "marketingName": "general Huawei device",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "HarmonyOS",
+      "marketingName": "HarmonyOS",
+      "version": "3.0.0",
+      "manufacturer": "huawei"
+    },
+    "client": {
+      "name": "Baidu Box App",
+      "version": "13.32.5.10",
+      "manufacturer": "baidu",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "T7",
+      "version": "13.32.0",
+      "manufacturer": "baidu"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; NCO-AL00 Build/HUAWEINCO-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/13.48 BDOS/1.0 (HarmonyOS 3.0.0) SP-engine/2.86.0 baiduboxapp/13.48.5.10 (Baidu; P1 12) NABar/1.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Huawei device",
+      "marketingName": "general Huawei device",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "HarmonyOS",
+      "marketingName": "HarmonyOS",
+      "version": "3.0.0",
+      "manufacturer": "huawei"
+    },
+    "client": {
+      "name": "Baidu Box App",
+      "version": "13.48.5.10",
+      "manufacturer": "baidu",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "T7",
+      "version": "13.48.0",
       "manufacturer": "baidu"
     }
   },
@@ -152,7 +369,7 @@
       "name": "HarmonyOS",
       "marketingName": "HarmonyOS",
       "version": "3.0.0",
-      "manufacturer": "unknown"
+      "manufacturer": "huawei"
     },
     "client": {
       "name": "Baidu Box App",
@@ -194,7 +411,7 @@
       "name": "HarmonyOS",
       "marketingName": "HarmonyOS",
       "version": "3.0.0",
-      "manufacturer": "unknown"
+      "manufacturer": "huawei"
     },
     "client": {
       "name": "Baidu Box App",
@@ -243,7 +460,7 @@
       "name": "HarmonyOS",
       "marketingName": "HarmonyOS",
       "version": "3.0.0",
-      "manufacturer": "unknown"
+      "manufacturer": "huawei"
     },
     "client": {
       "name": "Baidu Box App",

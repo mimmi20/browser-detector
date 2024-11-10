@@ -505,24 +505,26 @@
   },
   {
     "headers": {
-      "device-memory": "2",
-      "dpr": "1.75",
-      "viewport-width": "980",
-      "rtt": "100",
-      "downlink": "10",
-      "ect": "4g",
-      "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\", \"Opera\";v=\"82\", \"OperaMobile\";v=\"67\"",
-      "sec-ch-ua-mobile": "?1",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua-platform-version": "\"10\"",
-      "sec-ch-ua-model": "\"W-V680-EEA\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; W-V680-EEA) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.104 Mobile Safari/537.36 OPR/67.1.3508.63168",
-      "sec-fetch-site": "same-origin",
+      "sec-ch-ua-model": "\"GS185\"",
+      "rtt": "250",
+      "sec-fetch-dest": "document",
       "sec-fetch-mode": "navigate",
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; GS185) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.104 Mobile Safari/537.36 OPR/67.1.3508.63168",
+      "sec-fetch-site": "same-origin",
+      "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\", \"Opera\";v=\"82\", \"OperaMobile\";v=\"67\"",
+      "x-enrichmentstatus": "unsupported",
+      "sec-ch-ua-bitness": "\"\"",
+      "downlink": "3",
+      "ect": "4g",
+      "viewport-width": "980",
+      "save-data": "on",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"8.1.0\"",
       "sec-fetch-user": "?1",
-      "sec-fetch-dest": "document"
+      "dpr": "2",
+      "sec-ch-ua-arch": "\"\"",
+      "device-memory": "2"
     },
     "device": {
       "architecture": null,
@@ -546,7 +548,7 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "10.0.0",
+      "version": "8.1.0",
       "manufacturer": "google"
     },
     "client": {
@@ -564,18 +566,18 @@
   },
   {
     "headers": {
-      "device-memory": "2",
-      "dpr": "1.274999976158142",
+      "device-memory": "4",
+      "dpr": "1.75",
       "viewport-width": "980",
       "rtt": "50",
-      "downlink": "4.65",
+      "downlink": "10",
       "ect": "4g",
       "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"99\"",
       "sec-ch-ua-mobile": "?0",
       "sec-ch-ua-arch": "\"\"",
       "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua-platform-version": "\"10.0.0\"",
-      "sec-ch-ua-model": "\"Lenovo TB-8505X\"",
+      "sec-ch-ua-platform-version": "\"11.0.0\"",
+      "sec-ch-ua-model": "\"SM-P610\"",
       "sec-ch-ua-bitness": "\"\"",
       "sec-ch-ua-full-version-list": "\" Not A;Brand\";v=\"99.0.0.0\", \"Chromium\";v=\"99.0.4844.88\"",
       "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.88 Safari/537.36 OPR/85.0.4341.13",
@@ -606,7 +608,7 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "10.0.0",
+      "version": "11.0.0",
       "manufacturer": "google"
     },
     "client": {
