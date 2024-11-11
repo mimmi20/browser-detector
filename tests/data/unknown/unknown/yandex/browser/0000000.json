@@ -2,24 +2,28 @@
   {
     "headers": {
       "device-memory": "4",
-      "dpr": "2.625",
-      "viewport-width": "980",
-      "rtt": "50",
-      "downlink": "10",
+      "downlink": "3.3",
+      "dpr": "2.75",
       "ect": "4g",
-      "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"100\", \"Yandex\";v=\"22\"",
-      "sec-ch-ua-mobile": "?1",
+      "rtt": "100",
+      "sec-ch-device-memory": "4",
+      "sec-ch-dpr": "2.75",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-ua": "\"Chromium\";v=\"104\", \" Not A;Brand\";v=\"99\", \"Yandex\";v=\"22\"",
       "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua-platform-version": "\"11.0.0\"",
-      "sec-ch-ua-model": "\"SM-A715F\"",
       "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-full-version-list": "\" Not A;Brand\";v=\"99.0.0.0\", \"Chromium\";v=\"100.0.4896.127\", \"Yandex\";v=\"22.5.0.1706\"",
-      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 11; SM-A715F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 YaApp_Android/22.50.1 YaSearchBrowser/22.50.1 BroPP/1.0 SA/3 Mobile Safari/537.36",
-      "sec-fetch-site": "same-origin",
+      "sec-ch-ua-full-version": "\"22.9.7.43\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"Mi Note 2\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"8.0.0\"",
+      "sec-ch-viewport-width": "980",
+      "sec-fetch-dest": "document",
       "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "same-origin",
       "sec-fetch-user": "?1",
-      "sec-fetch-dest": "document"
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 8.0.0; Mi Note 2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.124 YaBrowser/22.9.7.43.00 SA/3 Mobile Safari/537.36",
+      "viewport-width": "980"
     },
     "device": {
       "architecture": null,
@@ -43,19 +47,19 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "11.0.0",
+      "version": "8.0.0",
       "manufacturer": "google"
     },
     "client": {
       "name": "Yandex Browser",
-      "version": "22.5.0.1706",
+      "version": "22.0.0",
       "manufacturer": "yandex",
       "type": "browser",
       "isbot": false
     },
     "engine": {
       "name": "Blink",
-      "version": "100.0.4896.127",
+      "version": "104.0.5112.124",
       "manufacturer": "google"
     }
   }

@@ -65,6 +65,7 @@ final class SecChUaModel implements HeaderInterface
             'kfmawi' => 'amazon=amazon kfmawi',
             'kfsuwi' => 'amazon=amazon kfsuwi',
             'aftmm' => 'amazon=amazon aftmm',
+            'aftsss' => 'amazon=amazon aftsss',
             // Asus
             'p024' => 'asus=asus p024',
             'asus_x00dd' => 'asus=asus x00dd',
@@ -221,6 +222,7 @@ final class SecChUaModel implements HeaderInterface
             '22101320g' => 'xiaomi=xiaomi 22101320g',
             '220233l2g' => 'xiaomi=xiaomi 220233l2g',
             'm2007j3sg' => 'xiaomi=xiaomi m2007j3sg',
+            'mi note 2' => 'xiaomi=xiaomi mi note 2',
             // ZTE
             'zte a2121e' => 'zte=zte a2121e',
             'zte blade 10 vita' => 'zte=zte blade 10 vita',
@@ -343,6 +345,9 @@ final class SecChUaModel implements HeaderInterface
             'sm-g955f' => 'samsung=samsung sm-g955f',
             'sm-a715f' => 'samsung=samsung sm-a715f',
             'sm-p610' => 'samsung=samsung sm-p610',
+            'sm-g998b' => 'samsung=samsung sm-g998b',
+            'sm-g973u1' => 'samsung=samsung sm-g973u1',
+            'sm-j415fn' => 'samsung=samsung sm-j415fn',
             // Huawei
             'mar-lx1b' => 'huawei=huawei mar-lx1b',
             'lya-l09' => 'huawei=huawei lya-l09',
@@ -382,6 +387,9 @@ final class SecChUaModel implements HeaderInterface
             'ane-lx1' => 'huawei=huawei ane-lx1',
             'jat-l41' => 'huawei=huawei jat-l41',
             'jny-lx1' => 'huawei=huawei jny-lx1',
+            'evr-l29' => 'huawei=huawei evr-l29',
+            'bah-l09' => 'huawei=huawei bah-l09',
+            'art-l29' => 'huawei=huawei art-l29',
             // Lenovo
             'lenovo tb-x304f' => 'lenovo=lenovo tb-x304f',
             'lenovo yt-j706f' => 'lenovo=lenovo yt-j706f',
@@ -404,6 +412,7 @@ final class SecChUaModel implements HeaderInterface
             'nokia 5.4' => 'nokia=nokia 5.4',
             'nokia 8.3 5g' => 'nokia=nokia 8.3 5g',
             'nokia g11' => 'nokia=nokia g11',
+            'nokia 8.1' => 'nokia=nokia 8.1',
             // Microsoft
             'surface duo' => 'microsoft=microsoft surface duo',
             // realme

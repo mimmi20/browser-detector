@@ -1,18 +1,18 @@
 [
   {
     "headers": {
+      "origin": "https://www.geld.de",
       "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"99\", \"HuaweiBrowser\";v=\"99\"",
-      "sec-ch-ua-arch": "\"\"",
       "sec-ch-ua-full-version": "\"99.0.4844.88\"",
       "sec-ch-ua-mobile": "?1",
-      "sec-ch-ua-model": "\"JNY-LX1\"",
+      "sec-ch-ua-model": "\"ART-L29\"",
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua-platform-version": "\"10.0.0\"",
-      "sec-fetch-dest": "document",
-      "sec-fetch-mode": "navigate",
-      "sec-fetch-site": "cross-site",
-      "sec-fetch-user": "?1",
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; JNY-LX1; HMSCore 6.9.6.301; GMSCore 21.18.16) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.88 HuaweiBrowser/13.0.4.302 Mobile Safari/537.36"
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; ART-L29; HMSCore 6.9.6.301) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.88 HuaweiBrowser/13.0.0.312 Mobile Safari/537.36",
+      "x-requested-with": "XMLHttpRequest"
     },
     "device": {
       "architecture": null,

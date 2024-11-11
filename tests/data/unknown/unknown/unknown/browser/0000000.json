@@ -632,19 +632,19 @@
   {
     "headers": {
       "device-memory": "8",
-      "dpr": "2.75",
+      "dpr": "2.625",
       "viewport-width": "980",
-      "rtt": "50",
+      "rtt": "100",
       "downlink": "10",
       "ect": "4g",
-      "sec-ch-ua": "\";Not A Brand\";v=\"99\", \"Chromium\";v=\"94\"",
+      "sec-ch-ua": "\"Chromium\";v=\"97\", \" Not;A Brand\";v=\"99\"",
       "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-arch": "\"\"",
       "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua-platform-version": "\"11.0.0\"",
-      "sec-ch-ua-model": "\"M2007J3SG\"",
+      "sec-ch-ua-platform-version": "\"12.0.0\"",
+      "sec-ch-ua-model": "\"SM-G973U1\"",
       "sec-ch-ua-bitness": "\"\"",
-      "user-agent": "Mozilla/5.0 (Linux; Android 11; M2007J3SG) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.85 Mobile Safari/537.36 (Ecosia android@94.0.4606.85)",
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-G973U1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.98 Mobile Safari/537.36 (Ecosia android@97.0.4692.98)",
       "sec-fetch-site": "same-origin",
       "sec-fetch-mode": "navigate",
       "sec-fetch-user": "?1",
@@ -672,19 +672,19 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "11.0.0",
+      "version": "12.0.0",
       "manufacturer": "google"
     },
     "client": {
       "name": "Ecosia",
-      "version": "94.0.4606.85",
+      "version": "97.0.4692.98",
       "manufacturer": "unknown",
       "type": "browser",
       "isbot": false
     },
     "engine": {
       "name": "Blink",
-      "version": "94.0.4606.85",
+      "version": "97.0.4692.98",
       "manufacturer": "google"
     }
   },

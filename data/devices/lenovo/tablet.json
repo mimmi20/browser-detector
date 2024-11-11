@@ -879,13 +879,29 @@
     "type": "tablet",
     "platform": "android"
   },
+  "lenovo tb-x605m": {
+    "deviceName": "TB-X605M",
+    "marketingName": "Tab M10 FHD Wi-Fi",
+    "manufacturer": "lenovo",
+    "brand": "lenovo",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "size": 10.1
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
   "lenovo tb-x605f": {
     "deviceName": "TB-X605F",
     "marketingName": "Tab M10 FHD Wi-Fi",
     "manufacturer": "lenovo",
     "brand": "lenovo",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 0,
     "display": {
       "width": 1920,
       "height": 1200,

@@ -149,6 +149,7 @@ final class SecChUaModelTest extends TestCase
             ['"KFMAWI"', true, 'amazon=amazon kfmawi'],
             ['"KFSUWI"', true, 'amazon=amazon kfsuwi'],
             ['"AFTMM"', true, 'amazon=amazon aftmm'],
+            ['"AFTSSS"', true, 'amazon=amazon aftsss'],
             // Asus
             ['"P024"', true, 'asus=asus p024'],
             ['"ASUS_X00DD"', true, 'asus=asus x00dd'],
@@ -305,6 +306,7 @@ final class SecChUaModelTest extends TestCase
             ['"22101320G"', true, 'xiaomi=xiaomi 22101320g'],
             ['"220233L2G"', true, 'xiaomi=xiaomi 220233l2g'],
             ['"M2007J3SG"', true, 'xiaomi=xiaomi m2007j3sg'],
+            ['"Mi Note 2"', true, 'xiaomi=xiaomi mi note 2'],
             // ZTE
             ['"ZTE A2121E"', true, 'zte=zte a2121e'],
             ['"ZTE Blade 10 Vita"', true, 'zte=zte blade 10 vita'],
@@ -427,6 +429,9 @@ final class SecChUaModelTest extends TestCase
             ['SM-G955F', true, 'samsung=samsung sm-g955f'],
             ['SM-A715F', true, 'samsung=samsung sm-a715f'],
             ['SM-P610', true, 'samsung=samsung sm-p610'],
+            ['SM-G998B', true, 'samsung=samsung sm-g998b'],
+            ['SM-G973U1', true, 'samsung=samsung sm-g973u1'],
+            ['SM-J415FN', true, 'samsung=samsung sm-j415fn'],
             // Huawei
             ['"LGE-NX9"', true, 'huawei=huawei lge-nx9'],
             ['"VOG-L29"', true, 'huawei=huawei vog-l29'],
@@ -465,6 +470,9 @@ final class SecChUaModelTest extends TestCase
             ['"YAL-L41"', true, 'huawei=huawei yal-l41'],
             ['"JAT-L41"', true, 'huawei=huawei jat-l41'],
             ['"JNY-LX1"', true, 'huawei=huawei jny-lx1'],
+            ['"EVR-L29"', true, 'huawei=huawei evr-l29'],
+            ['"BAH-L09"', true, 'huawei=huawei bah-l09'],
+            ['"ART-L29"', true, 'huawei=huawei art-l29'],
             // Lenovo
             ['"Lenovo TB-X304F"', true, 'lenovo=lenovo tb-x304f'],
             ['"X1030X"', true, 'lenovo=lenovo x1030x'],
@@ -487,6 +495,7 @@ final class SecChUaModelTest extends TestCase
             ['"Nokia 5.4"', true, 'nokia=nokia 5.4'],
             ['"Nokia 8.3 5G"', true, 'nokia=nokia 8.3 5g'],
             ['"Nokia G11"', true, 'nokia=nokia g11'],
+            ['"Nokia 8.1"', true, 'nokia=nokia 8.1'],
             // Microsoft
             ['"Surface Duo"', true, 'microsoft=microsoft surface duo'],
             // realme
