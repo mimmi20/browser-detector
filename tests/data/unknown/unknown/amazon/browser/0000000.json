@@ -2,20 +2,20 @@
   {
     "headers": {
       "device-memory": "1",
-      "dpr": "2",
+      "dpr": "1",
       "viewport-width": "980",
-      "rtt": "50",
-      "downlink": "10",
+      "rtt": "150",
+      "downlink": "3.15",
       "ect": "4g",
       "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"100\"",
       "sec-ch-ua-mobile": "?0",
       "sec-ch-ua-arch": "\"\"",
       "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua-platform-version": "\"9.0.0\"",
-      "sec-ch-ua-model": "\"AFTSSS\"",
+      "sec-ch-ua-platform-version": "\"5.1.1\"",
+      "sec-ch-ua-model": "\"KFTBWI\"",
       "sec-ch-ua-bitness": "\"\"",
       "sec-ch-ua-full-version-list": "\" Not A;Brand\";v=\"99.0.0.0\", \"Chromium\";v=\"100.0.4896.127\"",
-      "user-agent": "Mozilla/5.0 (Linux; Android 9; AFTSSS) AppleWebKit/537.36 (KHTML, like Gecko) Silk/100.1.153 like Chrome/100.0.4896.127 Safari/537.36",
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; KFTBWI) AppleWebKit/537.36 (KHTML, like Gecko) Silk/100.1.163 like Chrome/100.0.4896.127 Safari/537.36",
       "sec-fetch-site": "same-origin",
       "sec-fetch-mode": "navigate",
       "sec-fetch-user": "?1",
@@ -43,12 +43,12 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "9.0.0",
+      "version": "5.1.1",
       "manufacturer": "google"
     },
     "client": {
       "name": "Silk",
-      "version": "100.1.153",
+      "version": "100.1.163",
       "manufacturer": "amazon",
       "type": "browser",
       "isbot": false

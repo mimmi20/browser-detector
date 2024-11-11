@@ -150,6 +150,7 @@ final class SecChUaModelTest extends TestCase
             ['"KFSUWI"', true, 'amazon=amazon kfsuwi'],
             ['"AFTMM"', true, 'amazon=amazon aftmm'],
             ['"AFTSSS"', true, 'amazon=amazon aftsss'],
+            ['"KFTBWI"', true, 'amazon=amazon kftbwi'],
             // Asus
             ['"P024"', true, 'asus=asus p024'],
             ['"ASUS_X00DD"', true, 'asus=asus x00dd'],
@@ -307,6 +308,7 @@ final class SecChUaModelTest extends TestCase
             ['"220233L2G"', true, 'xiaomi=xiaomi 220233l2g'],
             ['"M2007J3SG"', true, 'xiaomi=xiaomi m2007j3sg'],
             ['"Mi Note 2"', true, 'xiaomi=xiaomi mi note 2'],
+            ['"Redmi Note 8T"', true, 'xiaomi=xiaomi redmi note 8t'],
             // ZTE
             ['"ZTE A2121E"', true, 'zte=zte a2121e'],
             ['"ZTE Blade 10 Vita"', true, 'zte=zte blade 10 vita'],
@@ -432,6 +434,8 @@ final class SecChUaModelTest extends TestCase
             ['SM-G998B', true, 'samsung=samsung sm-g998b'],
             ['SM-G973U1', true, 'samsung=samsung sm-g973u1'],
             ['SM-J415FN', true, 'samsung=samsung sm-j415fn'],
+            ['SM-T585', true, 'samsung=samsung sm-t585'],
+            ['SM-T725', true, 'samsung=samsung sm-t725'],
             // Huawei
             ['"LGE-NX9"', true, 'huawei=huawei lge-nx9'],
             ['"VOG-L29"', true, 'huawei=huawei vog-l29'],
@@ -473,6 +477,9 @@ final class SecChUaModelTest extends TestCase
             ['"EVR-L29"', true, 'huawei=huawei evr-l29'],
             ['"BAH-L09"', true, 'huawei=huawei bah-l09'],
             ['"ART-L29"', true, 'huawei=huawei art-l29'],
+            ['"BAH2-W19"', true, 'huawei=huawei bah2-w19'],
+            ['"AGS2-L09"', true, 'huawei=huawei ags2-l09'],
+            ['"YAL-L21"', true, 'huawei=huawei yal-l21'],
             // Lenovo
             ['"Lenovo TB-X304F"', true, 'lenovo=lenovo tb-x304f'],
             ['"X1030X"', true, 'lenovo=lenovo x1030x'],
@@ -550,6 +557,7 @@ final class SecChUaModelTest extends TestCase
             ['"XQ-BQ52"', true, 'sony=sony xq-bq52'],
             ['"XQ-BE52"', true, 'sony=sony xq-be52'],
             ['"H8266"', true, 'sony=sony h8266'],
+            ['"XQ-BC52"', true, 'sony=sony xq-bc52'],
             // Vivo
             ['"V2109"', true, 'vivo=vivo v2109'],
             ['"vivo 1716"', true, 'vivo=vivo 1716'],

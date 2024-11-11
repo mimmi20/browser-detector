@@ -506,19 +506,19 @@
   {
     "headers": {
       "device-memory": "4",
-      "dpr": "2.625",
+      "dpr": "1.7000000476837158",
       "viewport-width": "980",
-      "rtt": "150",
+      "rtt": "50",
       "downlink": "10",
       "ect": "4g",
       "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\", \"Opera\";v=\"82\", \"OperaMobile\";v=\"67\"",
       "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-arch": "\"\"",
       "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua-platform-version": "\"11\"",
-      "sec-ch-ua-model": "\"Nokia 8.1\"",
+      "sec-ch-ua-platform-version": "\"8.0.0\"",
+      "sec-ch-ua-model": "\"BAH2-W19\"",
       "sec-ch-ua-bitness": "\"\"",
-      "user-agent": "Mozilla/5.0 (Linux; Android 11; Nokia 8.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.104 Mobile Safari/537.36 OPR/67.1.3508.63168",
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.0.0; BAH2-W19) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.104 Safari/537.36 OPR/67.1.3508.63168",
       "sec-fetch-site": "same-origin",
       "sec-fetch-mode": "navigate",
       "sec-fetch-user": "?1",
@@ -546,7 +546,7 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "11.0.0",
+      "version": "8.0.0",
       "manufacturer": "google"
     },
     "client": {
@@ -564,21 +564,21 @@
   },
   {
     "headers": {
-      "device-memory": "2",
-      "dpr": "2",
+      "device-memory": "8",
+      "dpr": "3.1500000953674316",
       "viewport-width": "980",
       "rtt": "50",
       "downlink": "10",
       "ect": "4g",
-      "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"99\"",
+      "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"100\"",
       "sec-ch-ua-mobile": "?0",
       "sec-ch-ua-arch": "\"\"",
       "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua-platform-version": "\"7.0.0\"",
-      "sec-ch-ua-model": "\"BAH-L09\"",
+      "sec-ch-ua-platform-version": "\"12.0.0\"",
+      "sec-ch-ua-model": "\"XQ-BC52\"",
       "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-full-version-list": "\" Not A;Brand\";v=\"99.0.0.0\", \"Chromium\";v=\"99.0.4844.88\"",
-      "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.88 Safari/537.36 OPR/85.0.4341.13",
+      "sec-ch-ua-full-version-list": "\" Not A;Brand\";v=\"99.0.0.0\", \"Chromium\";v=\"100.0.4896.127\"",
+      "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36 OPR/86.0.4363.50",
       "sec-fetch-site": "same-origin",
       "sec-fetch-mode": "navigate",
       "sec-fetch-user": "?1",
@@ -606,19 +606,19 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "7.0.0",
+      "version": "12.0.0",
       "manufacturer": "google"
     },
     "client": {
       "name": "Opera",
-      "version": "85.0.4341.13",
+      "version": "86.0.4363.50",
       "manufacturer": "opera",
       "type": "browser",
       "isbot": false
     },
     "engine": {
       "name": "Blink",
-      "version": "99.0.4844.88",
+      "version": "100.0.4896.127",
       "manufacturer": "google"
     }
   }

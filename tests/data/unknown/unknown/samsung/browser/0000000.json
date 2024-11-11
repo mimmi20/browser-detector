@@ -1,12 +1,12 @@
 [
   {
     "headers": {
-      "device-memory": "2",
-      "downlink": "9.4",
+      "device-memory": "4",
+      "downlink": "9.5",
       "dpr": "2.25",
       "ect": "4g",
       "rtt": "0",
-      "sec-ch-device-memory": "2",
+      "sec-ch-device-memory": "4",
       "sec-ch-dpr": "2.25",
       "sec-ch-prefers-color-scheme": "light",
       "sec-ch-prefers-reduced-motion": "no-preference",
@@ -14,17 +14,17 @@
       "sec-ch-ua-arch": "\"\"",
       "sec-ch-ua-bitness": "\"\"",
       "sec-ch-ua-full-version": "\"23.0.0.47\"",
-      "sec-ch-ua-mobile": "?1",
-      "sec-ch-ua-model": "\"SM-J415FN\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-model": "\"SM-T720\"",
       "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua-platform-version": "\"9.0.0\"",
-      "sec-ch-viewport-height": "490",
-      "sec-ch-viewport-width": "320",
+      "sec-ch-ua-platform-version": "\"11.0.0\"",
+      "sec-ch-viewport-height": "972",
+      "sec-ch-viewport-width": "712",
       "sec-fetch-dest": "empty",
       "sec-fetch-mode": "cors",
       "sec-fetch-site": "same-origin",
-      "user-agent": "Mozilla/5.0 (Linux; Android 9; SAMSUNG SM-J415FN) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/23.0 Chrome/115.0.0.0 Mobile Safari/537.36",
-      "viewport-width": "320",
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; SAMSUNG SM-T720) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/23.0 Chrome/115.0.0.0 Safari/537.36",
+      "viewport-width": "712",
       "x-requested-with": "XMLHttpRequest"
     },
     "device": {
@@ -42,14 +42,14 @@
         "size": null
       },
       "type": null,
-      "ismobile": true,
+      "ismobile": false,
       "istv": false,
       "bits": null
     },
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "9.0.0",
+      "version": "11.0.0",
       "manufacturer": "google"
     },
     "client": {

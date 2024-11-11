@@ -1,29 +1,30 @@
 [
   {
     "headers": {
-      "device-memory": "4",
-      "downlink": "3.3",
-      "dpr": "2.75",
+      "device-memory": "2",
+      "downlink": "4.45",
+      "dpr": "2",
       "ect": "4g",
       "rtt": "100",
-      "sec-ch-device-memory": "4",
-      "sec-ch-dpr": "2.75",
+      "save-data": "on",
+      "sec-ch-device-memory": "2",
+      "sec-ch-dpr": "2",
       "sec-ch-prefers-color-scheme": "light",
-      "sec-ch-ua": "\"Chromium\";v=\"104\", \" Not A;Brand\";v=\"99\", \"Yandex\";v=\"22\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-full-version": "\"22.9.7.43\"",
-      "sec-ch-ua-mobile": "?1",
-      "sec-ch-ua-model": "\"Mi Note 2\"",
+      "sec-ch-prefers-reduced-motion": "reduce",
+      "sec-ch-ua": "\"Chromium\";v=\"110\", \"Not A(Brand\";v=\"24\", \"Yandex\";v=\"23\"",
+      "sec-ch-ua-full-version": "\"23.3.0.24\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-model": "\"AGS2-L09\"",
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua-platform-version": "\"8.0.0\"",
-      "sec-ch-viewport-width": "980",
-      "sec-fetch-dest": "document",
-      "sec-fetch-mode": "navigate",
+      "sec-ch-viewport-height": "501",
+      "sec-ch-viewport-width": "600",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
       "sec-fetch-site": "same-origin",
-      "sec-fetch-user": "?1",
-      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 8.0.0; Mi Note 2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.124 YaBrowser/22.9.7.43.00 SA/3 Mobile Safari/537.36",
-      "viewport-width": "980"
+      "user-agent": "Mozilla/5.0 (Linux; arm; Android 8.0.0; AGS2-L09) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 YaBrowser/23.3.0.24.01 (alpha) Safari/537.36",
+      "viewport-width": "600",
+      "x-requested-with": "XMLHttpRequest"
     },
     "device": {
       "architecture": null,
@@ -40,7 +41,7 @@
         "size": null
       },
       "type": null,
-      "ismobile": true,
+      "ismobile": false,
       "istv": false,
       "bits": null
     },
@@ -52,14 +53,14 @@
     },
     "client": {
       "name": "Yandex Browser",
-      "version": "22.0.0",
+      "version": "23.0.0",
       "manufacturer": "yandex",
       "type": "browser",
       "isbot": false
     },
     "engine": {
       "name": "Blink",
-      "version": "104.0.5112.124",
+      "version": "110.0.0.0",
       "manufacturer": "google"
     }
   }
