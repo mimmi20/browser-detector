@@ -5277,5 +5277,17 @@
       ]
     },
     "engine": "webkit"
+  },
+  "honor-browser": {
+    "name": "HONOR Browser",
+    "manufacturer": "baidu",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "bdhonorbrowser"
+      ]
+    },
+    "engine": null
   }
 }

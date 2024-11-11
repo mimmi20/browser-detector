@@ -596,8 +596,8 @@
     "marketingName": "X5",
     "manufacturer": "doogee",
     "brand": "doogee",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 1280,
       "height": 720,
@@ -907,6 +907,70 @@
       "height": 720,
       "touch": true,
       "size": 6.56
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "doogee v10": {
+    "deviceName": "V10",
+    "marketingName": "V10",
+    "manufacturer": "doogee",
+    "brand": "doogee",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1560,
+      "height": 720,
+      "touch": true,
+      "size": 6.39
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "doogee s35": {
+    "deviceName": "S35",
+    "marketingName": "S35",
+    "manufacturer": "doogee",
+    "brand": "doogee",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "doogee n50": {
+    "deviceName": "N50",
+    "marketingName": "N50",
+    "manufacturer": "doogee",
+    "brand": "doogee",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1600,
+      "height": 720,
+      "touch": true,
+      "size": 6.52
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "doogee y6": {
+    "deviceName": "Y6",
+    "marketingName": "Y6",
+    "manufacturer": "doogee",
+    "brand": "doogee",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1280,
+      "height": 720,
+      "touch": true,
+      "size": 5.5
     },
     "type": "smartphone",
     "platform": "android"

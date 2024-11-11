@@ -23,6 +23,7 @@ use BrowserDetector\Parser\BrowserParserInterface;
 use BrowserDetector\Parser\DeviceParserInterface;
 use BrowserDetector\Parser\EngineParserInterface;
 use BrowserDetector\Parser\PlatformParserInterface;
+use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
@@ -64,10 +65,13 @@ final class HeaderLoaderTest extends TestCase
     }
 
     /**
+     * @param Constants::HEADER_* $key
+     *
      * @throws Exception
      * @throws NotFoundException
      */
-    public function testLoadOk(): void
+    #[DataProvider('providerHeader')]
+    public function testLoadOk(string $key): void
     {
         $value = 'header-value';
 
@@ -91,14 +95,19 @@ final class HeaderLoaderTest extends TestCase
             $engineLoader,
         );
 
-        $header = $subject->load(Constants::HEADER_USERAGENT, $value);
+        $header = $subject->load($key, $value);
 
         self::assertInstanceOf(HeaderInterface::class, $header);
         self::assertSame($value, $header->getValue());
     }
 
-    /** @throws ExpectationFailedException */
-    public function testHas(): void
+    /**
+     * @param Constants::HEADER_* $key
+     *
+     * @throws ExpectationFailedException
+     */
+    #[DataProvider('providerHeader')]
+    public function testHas(string $key): void
     {
         $deviceParser      = $this->createMock(DeviceParserInterface::class);
         $platformParser    = $this->createMock(PlatformParserInterface::class);
@@ -120,6 +129,41 @@ final class HeaderLoaderTest extends TestCase
             $engineLoader,
         );
 
-        self::assertTrue($subject->has(Constants::HEADER_USERAGENT));
+        self::assertTrue($subject->has($key));
+    }
+
+    /**
+     * @return array<int, array<int, string>>
+     *
+     * @throws void
+     */
+    public static function providerHeader(): array
+    {
+        return [
+            [Constants::HEADER_USERAGENT],
+            [Constants::HEADER_BAIDU_FLYFLOW],
+            [Constants::HEADER_DEVICE_STOCK_UA],
+            [Constants::HEADER_SEC_CH_UA],
+            [Constants::HEADER_SEC_CH_UA_ARCH],
+            [Constants::HEADER_SEC_CH_UA_BITNESS],
+            [Constants::HEADER_SEC_CH_UA_FULL_VERSION],
+            [Constants::HEADER_SEC_CH_UA_FULL_VERSION_LIST],
+            [Constants::HEADER_SEC_CH_UA_MOBILE],
+            [Constants::HEADER_SEC_CH_UA_MODEL],
+            [Constants::HEADER_SEC_CH_UA_PLATFORM],
+            [Constants::HEADER_SEC_CH_UA_PLATFORM_VERSION],
+            [Constants::HEADER_UA_OS],
+            [Constants::HEADER_ORIGINAL_UA],
+            [Constants::HEADER_DEVICE_UA],
+            [Constants::HEADER_OPERAMINI_PHONE],
+            [Constants::HEADER_OPERAMINI_PHONE_UA],
+            [Constants::HEADER_PUFFIN_UA],
+            [Constants::HEADER_REQUESTED_WITH],
+            [Constants::HEADER_UCBROWSER_DEVICE],
+            [Constants::HEADER_UCBROWSER_DEVICE_UA],
+            [Constants::HEADER_UCBROWSER_PHONE],
+            [Constants::HEADER_UCBROWSER_PHONE_UA],
+            [Constants::HEADER_UCBROWSER_UA],
+        ];
     }
 }

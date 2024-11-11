@@ -23,7 +23,7 @@ final class SecChUaPlatformVersionTest extends TestCase
 {
     /** @throws ExpectationFailedException */
     #[DataProvider('providerUa')]
-    public function testData(string $ua, string | null $version): void
+    public function testData(string $ua, bool $hasVersion, string | null $version): void
     {
         $header = new SecChUaPlatformVersion($ua);
 
@@ -83,7 +83,8 @@ final class SecChUaPlatformVersionTest extends TestCase
             $header->getPlatformCode(),
             sprintf('platform info mismatch for ua "%s"', $ua),
         );
-        self::assertTrue(
+        self::assertSame(
+            $hasVersion,
             $header->hasPlatformVersion(),
             sprintf('platform info mismatch for ua "%s"', $ua),
         );
@@ -108,16 +109,16 @@ final class SecChUaPlatformVersionTest extends TestCase
     }
 
     /**
-     * @return array<int, array<int, string|null>>
+     * @return array<int, array<int, bool|string|null>>
      *
      * @throws void
      */
     public static function providerUa(): array
     {
         return [
-            ['11.0.0', '11.0.0'],
-            ['"11.0.0"', '11.0.0'],
-            ['""', null],
+            ['11.0.0', true, '11.0.0'],
+            ['"11.0.0"', true, '11.0.0'],
+            ['""', false, null],
         ];
     }
 }

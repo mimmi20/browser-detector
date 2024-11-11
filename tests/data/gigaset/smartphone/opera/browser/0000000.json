@@ -505,9 +505,26 @@
   },
   {
     "headers": {
-      "save-data": "on",
+      "sec-ch-ua-model": "\"GS185\"",
+      "rtt": "250",
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
       "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; GS185) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.104 Mobile Safari/537.36 OPR/67.1.3508.63168",
-      "x-enrichmentstatus": "unsupported"
+      "sec-fetch-site": "same-origin",
+      "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\", \"Opera\";v=\"82\", \"OperaMobile\";v=\"67\"",
+      "x-enrichmentstatus": "unsupported",
+      "sec-ch-ua-bitness": "\"\"",
+      "downlink": "3",
+      "ect": "4g",
+      "viewport-width": "980",
+      "save-data": "on",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"8.1.0\"",
+      "sec-fetch-user": "?1",
+      "dpr": "2",
+      "sec-ch-ua-arch": "\"\"",
+      "device-memory": "2"
     },
     "device": {
       "architecture": null,
@@ -536,7 +553,7 @@
     },
     "client": {
       "name": "Opera Mobile",
-      "version": "67.1.3508.63168",
+      "version": "67.0.0",
       "manufacturer": "opera",
       "type": "browser",
       "isbot": false

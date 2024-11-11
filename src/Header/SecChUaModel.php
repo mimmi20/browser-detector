@@ -12,6 +12,7 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Header;
 
+use function in_array;
 use function mb_strtolower;
 use function trim;
 
@@ -22,7 +23,10 @@ final class SecChUaModel implements HeaderInterface
     /** @throws void */
     public function hasDeviceCode(): bool
     {
-        return true;
+        $value = trim($this->value, '"');
+        $code  = mb_strtolower($value);
+
+        return !in_array($code, ['', 'model'], true);
     }
 
     /** @throws void */
@@ -58,6 +62,10 @@ final class SecChUaModel implements HeaderInterface
             'kftrpwi' => 'amazon=amazon kftrpwi',
             'kfrapwi' => 'amazon=amazon kfrapwi',
             'kfonwi' => 'amazon=amazon kfonwi',
+            'kfmawi' => 'amazon=amazon kfmawi',
+            'kfsuwi' => 'amazon=amazon kfsuwi',
+            'aftmm' => 'amazon=amazon aftmm',
+            'aftsss' => 'amazon=amazon aftsss',
             // Asus
             'p024' => 'asus=asus p024',
             'asus_x00dd' => 'asus=asus x00dd',
@@ -101,6 +109,7 @@ final class SecChUaModel implements HeaderInterface
             'cph2415' => 'oneplus=oneplus cph2415',
             'in2015' => 'oneplus=oneplus in2015',
             'cph2409' => 'oneplus=oneplus cph2409',
+            'oneplus a6003' => 'oneplus=oneplus a6003',
             // Oppo
             'cph2065' => 'oppo=oppo cph2065',
             'cph2211' => 'oppo=oppo cph2211',
@@ -212,6 +221,8 @@ final class SecChUaModel implements HeaderInterface
             '21121210g' => 'xiaomi=xiaomi 21121210g',
             '22101320g' => 'xiaomi=xiaomi 22101320g',
             '220233l2g' => 'xiaomi=xiaomi 220233l2g',
+            'm2007j3sg' => 'xiaomi=xiaomi m2007j3sg',
+            'mi note 2' => 'xiaomi=xiaomi mi note 2',
             // ZTE
             'zte a2121e' => 'zte=zte a2121e',
             'zte blade 10 vita' => 'zte=zte blade 10 vita',
@@ -323,6 +334,20 @@ final class SecChUaModel implements HeaderInterface
             'sm-t736b' => 'samsung=samsung sm-t736b',
             'sm-x900' => 'samsung=samsung sm-x900',
             'sm-x906b' => 'samsung=samsung sm-x906b',
+            'sm-g975f' => 'samsung=samsung sm-g975f',
+            'sm-a217f' => 'samsung=samsung sm-a217f',
+            'sm-g988b' => 'samsung=samsung sm-g988b',
+            'sm-a105fn' => 'samsung=samsung sm-a105fn',
+            'sm-g920f' => 'samsung=samsung sm-g920f',
+            'sm-a750fn' => 'samsung=samsung sm-a750fn',
+            'sm-n960f' => 'samsung=samsung sm-n960f',
+            'sm-g781b' => 'samsung=samsung sm-g781b',
+            'sm-g955f' => 'samsung=samsung sm-g955f',
+            'sm-a715f' => 'samsung=samsung sm-a715f',
+            'sm-p610' => 'samsung=samsung sm-p610',
+            'sm-g998b' => 'samsung=samsung sm-g998b',
+            'sm-g973u1' => 'samsung=samsung sm-g973u1',
+            'sm-j415fn' => 'samsung=samsung sm-j415fn',
             // Huawei
             'mar-lx1b' => 'huawei=huawei mar-lx1b',
             'lya-l09' => 'huawei=huawei lya-l09',
@@ -355,6 +380,16 @@ final class SecChUaModel implements HeaderInterface
             'ine-lx1r' => 'huawei=huawei ine-lx1r',
             'fne-nx9' => 'huawei=huawei fne-nx9',
             'pgt-n19' => 'huawei=huawei pgt-n19',
+            'yal-l41' => 'huawei=huawei yal-l41',
+            'rvl-al09' => 'huawei=huawei rvl-al09',
+            'ags2-w09' => 'huawei=huawei ags2-w09',
+            'els-nx9' => 'huawei=huawei els-nx9',
+            'ane-lx1' => 'huawei=huawei ane-lx1',
+            'jat-l41' => 'huawei=huawei jat-l41',
+            'jny-lx1' => 'huawei=huawei jny-lx1',
+            'evr-l29' => 'huawei=huawei evr-l29',
+            'bah-l09' => 'huawei=huawei bah-l09',
+            'art-l29' => 'huawei=huawei art-l29',
             // Lenovo
             'lenovo tb-x304f' => 'lenovo=lenovo tb-x304f',
             'lenovo yt-j706f' => 'lenovo=lenovo yt-j706f',
@@ -364,6 +399,8 @@ final class SecChUaModel implements HeaderInterface
             'lenovo tb-j616f' => 'lenovo=lenovo tb-j616f',
             'lenovo tb-j616x' => 'lenovo=lenovo tb-j616x',
             'lenovo tb-x606f' => 'lenovo=lenovo tb-x606f',
+            'lenovo tb-8705f' => 'lenovo=lenovo tb-8705f',
+            'lenovo tb-8505x' => 'lenovo=lenovo tb-8505x',
             // Nokia
             'nokia g50' => 'nokia=nokia g50',
             'nokia g20' => 'nokia=nokia g20',
@@ -375,6 +412,7 @@ final class SecChUaModel implements HeaderInterface
             'nokia 5.4' => 'nokia=nokia 5.4',
             'nokia 8.3 5g' => 'nokia=nokia 8.3 5g',
             'nokia g11' => 'nokia=nokia g11',
+            'nokia 8.1' => 'nokia=nokia 8.1',
             // Microsoft
             'surface duo' => 'microsoft=microsoft surface duo',
             // realme
@@ -400,6 +438,7 @@ final class SecChUaModel implements HeaderInterface
             'rmx3242' => 'realme=realme rmx3242',
             'rmx3563' => 'realme=realme rmx3563',
             'rmx3623' => 'realme=realme rmx3623',
+            'rmx1931' => 'realme=realme rmx1931',
             // Motorola
             'moto g200 5g' => 'motorola=motorola moto g200 5g',
             'motorola razr 5g' => 'motorola=motorola razr 5g',
@@ -422,6 +461,7 @@ final class SecChUaModel implements HeaderInterface
             'motorola edge 30 neo' => 'motorola=motorola edge 30 neo',
             'motorola edge 30' => 'motorola=motorola edge 30',
             'motorola edge 30 ultra' => 'motorola=motorola edge 30 ultra',
+            'moto g(20)' => 'motorola=motorola moto g20',
             // Sony
             'xq-cc54' => 'sony=sony xq-cc54',
             'xq-bq52' => 'sony=sony xq-bq52',
@@ -446,6 +486,7 @@ final class SecChUaModel implements HeaderInterface
             's88pro' => 'doogee=doogee s88 pro',
             's59pro' => 'doogee=doogee s59 pro',
             's97pro' => 'doogee=doogee s97 pro',
+            'x30' => 'doogee=doogee x30',
             // shiftphones
             'shift6mq' => 'shift-phones=shift-phones shift6mq',
             // Cubot/Hafury
@@ -454,14 +495,18 @@ final class SecChUaModel implements HeaderInterface
             'aoyodkg_a38' => 'aoyodkg=aoyodkg a38',
             // gigaset
             'e940-2795-00' => 'gigaset=gigaset e940-2795-00',
+            'gs185' => 'gigaset=gigaset gs185',
             // wiko
             'w-v750bn-eea' => 'wiko=wiko w-v750bn-eea',
+            'w-v680-eea' => 'wiko=wiko w-v680-eea',
             // razer
             'phone 2' => 'razer=razer phone 2',
             // Alcatel
             '5024d_eea' => 'alcatel=alcatel 5024d_eea',
             // HTC
             'htc desire 19+' => 'htc=htc desire 19 plus',
+            // teclast
+            'p30s_eea' => 'teclast=teclast p30s_eea',
             default => null,
         };
     }

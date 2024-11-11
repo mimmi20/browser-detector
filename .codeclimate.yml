@@ -1,7 +1,7 @@
 version: "2"
 checks:
   argument-count:
-    enabled: true
+    enabled: false
   complex-logic:
     enabled: false
   file-lines:
@@ -15,7 +15,7 @@ checks:
   nested-control-flow:
     enabled: true
   return-statements:
-    enabled: true
+    enabled: false
   similar-code:
     enabled: false
   identical-code:

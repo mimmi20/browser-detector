@@ -23,7 +23,7 @@ final class SecChUaFullVersionTest extends TestCase
 {
     /** @throws ExpectationFailedException */
     #[DataProvider('providerUa')]
-    public function testData(string $ua, string | null $version): void
+    public function testData(string $ua, bool $hasVersion, string | null $version): void
     {
         $header = new SecChUaFullVersion($ua);
 
@@ -67,7 +67,8 @@ final class SecChUaFullVersionTest extends TestCase
             $header->getClientCode(),
             sprintf('browser info mismatch for ua "%s"', $ua),
         );
-        self::assertTrue(
+        self::assertSame(
+            $hasVersion,
             $header->hasClientVersion(),
             sprintf('browser info mismatch for ua "%s"', $ua),
         );
@@ -108,16 +109,16 @@ final class SecChUaFullVersionTest extends TestCase
     }
 
     /**
-     * @return array<int, array<int, string|null>>
+     * @return array<int, array<int, bool|string|null>>
      *
      * @throws void
      */
     public static function providerUa(): array
     {
         return [
-            ['98.0.4758.102', '98.0.4758.102'],
-            ['"98.0.4758.102"', '98.0.4758.102'],
-            ['""', null],
+            ['98.0.4758.102', true, '98.0.4758.102'],
+            ['"98.0.4758.102"', true, '98.0.4758.102'],
+            ['""', false, null],
         ];
     }
 }

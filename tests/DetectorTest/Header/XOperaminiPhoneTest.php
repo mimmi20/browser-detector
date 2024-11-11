@@ -141,6 +141,8 @@ final class XOperaminiPhoneTest extends TestCase
             ['Apple # iPhone', true, 'apple=apple iphone'],
             ['Motorola # A1000', true, 'motorola=motorola a1000'],
             ['HTC # HD2', true, 'htc=htc t8585'],
+            [' HTC # HD2', false, null],
+            ['HTC # HD2 ', true, null],
         ];
     }
 }

@@ -1623,7 +1623,7 @@
       "name": "HarmonyOS",
       "marketingName": "HarmonyOS",
       "version": "2.2.0",
-      "manufacturer": "unknown"
+      "manufacturer": "huawei"
     },
     "client": {
       "name": "Baidu Box App",
@@ -1665,7 +1665,7 @@
       "name": "HarmonyOS",
       "marketingName": "HarmonyOS",
       "version": "2.2.0",
-      "manufacturer": "unknown"
+      "manufacturer": "huawei"
     },
     "client": {
       "name": "Baidu Box App",
@@ -1707,7 +1707,7 @@
       "name": "HarmonyOS",
       "marketingName": "HarmonyOS",
       "version": "2.2.0",
-      "manufacturer": "unknown"
+      "manufacturer": "huawei"
     },
     "client": {
       "name": "Baidu Box App",
@@ -1749,7 +1749,7 @@
       "name": "HarmonyOS",
       "marketingName": "HarmonyOS",
       "version": "2.2.0",
-      "manufacturer": "unknown"
+      "manufacturer": "huawei"
     },
     "client": {
       "name": "Baidu Box App",
@@ -1791,7 +1791,7 @@
       "name": "HarmonyOS",
       "marketingName": "HarmonyOS",
       "version": "3.0.0",
-      "manufacturer": "unknown"
+      "manufacturer": "huawei"
     },
     "client": {
       "name": "Baidu Box App",
@@ -1833,7 +1833,7 @@
       "name": "HarmonyOS",
       "marketingName": "HarmonyOS",
       "version": "3.0.0",
-      "manufacturer": "unknown"
+      "manufacturer": "huawei"
     },
     "client": {
       "name": "Baidu Box App",
@@ -1917,7 +1917,7 @@
       "name": "HarmonyOS",
       "marketingName": "HarmonyOS",
       "version": "3.0.0",
-      "manufacturer": "unknown"
+      "manufacturer": "huawei"
     },
     "client": {
       "name": "Baidu Box App",
@@ -1959,7 +1959,7 @@
       "name": "HarmonyOS",
       "marketingName": "HarmonyOS",
       "version": "3.0.0",
-      "manufacturer": "unknown"
+      "manufacturer": "huawei"
     },
     "client": {
       "name": "Baidu Box App Lite",
@@ -2001,7 +2001,7 @@
       "name": "HarmonyOS",
       "marketingName": "HarmonyOS",
       "version": "2.2.0",
-      "manufacturer": "unknown"
+      "manufacturer": "huawei"
     },
     "client": {
       "name": "Baidu Box App Lite",
@@ -2043,7 +2043,7 @@
       "name": "HarmonyOS",
       "marketingName": "HarmonyOS",
       "version": "3.0.0",
-      "manufacturer": "unknown"
+      "manufacturer": "huawei"
     },
     "client": {
       "name": "Baidu Box App Lite",
@@ -2085,7 +2085,7 @@
       "name": "HarmonyOS",
       "marketingName": "HarmonyOS",
       "version": "3.0.0",
-      "manufacturer": "unknown"
+      "manufacturer": "huawei"
     },
     "client": {
       "name": "Baidu Box App",
@@ -2127,7 +2127,7 @@
       "name": "HarmonyOS",
       "marketingName": "HarmonyOS",
       "version": "3.0.0",
-      "manufacturer": "unknown"
+      "manufacturer": "huawei"
     },
     "client": {
       "name": "Baidu Box App",
@@ -2265,6 +2265,55 @@
     "engine": {
       "name": "T7",
       "version": "10.13.0",
+      "manufacturer": "baidu"
+    }
+  },
+  {
+    "headers": {
+      "purpose": "prefetch",
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "cross-site",
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; LSA-AN00 Build/HONORLSA-AN00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/13.57 SP-engine/2.96.0 baiduboxapp/13.57.5.10 (Baidu; P1 12) NABar/1.0",
+      "x-bd-traceid": "9b30abd08a37423186f609f50e87324e",
+      "x-from-h3-trnet": "true",
+      "x-requested-with": "com.baidu.searchbox"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "LSA-AN00",
+      "marketingName": "Honor 60",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.67
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Baidu Box App",
+      "version": null,
+      "manufacturer": "baidu",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "T7",
+      "version": "13.57.0",
       "manufacturer": "baidu"
     }
   }

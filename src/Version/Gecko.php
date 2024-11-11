@@ -50,7 +50,7 @@ final class Gecko implements VersionFactoryInterface
         $ffversion    = $ffMatches['ffversion'] ?? null;
         $rvversion    = $rvMatches['rvversion'] ?? null;
 
-        if (!empty($geckoversion) && !empty($ffversion) && $geckoversion === $ffversion) {
+        if (!empty($geckoversion) && $geckoversion === $ffversion) {
             try {
                 return $this->versionBuilder->set($geckoversion);
             } catch (NotNumericException $e) {

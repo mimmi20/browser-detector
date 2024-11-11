@@ -107,8 +107,12 @@ final class DeviceStockUa implements HeaderInterface
         );
     }
 
-    /** @throws void */
-    public function getPlatformCode(): string | null
+    /**
+     * @throws void
+     *
+     * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+     */
+    public function getPlatformCode(string | null $derivate = null): string | null
     {
         $matches = [];
 
@@ -125,7 +129,7 @@ final class DeviceStockUa implements HeaderInterface
                 'blackberry' => 'rim os',
                 'iphone os' => 'ios',
                 'mtk' => 'nucleus os',
-                'windows phone os', 'windows phone' => 'windows phone',
+                'windows phone os' => 'windows phone',
                 'brew mp' => 'brew',
                 default => $code,
             };

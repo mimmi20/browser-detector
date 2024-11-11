@@ -206,6 +206,7 @@ final class DeviceStockUaTest extends TestCase
             ['Motorola', false, '', false, null, false, null, false, null, false, null, false, null, false, null],
             ['Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_HD2_T8585; Windows Phone 6.5)', true, 'HTC_HD2_T8585', false, null, false, null, true, 'windows phone', true, '6.5', false, null, false, null],
             ['Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 710)', true, '', true, 'iemobile', true, '9.0', true, 'windows phone', true, '7.5', true, 'trident', true, '5.0'],
+            ['Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 710)', true, '', true, 'iemobile', true, '9.0', true, 'windows phone', true, '7.5', true, 'trident', true, '5.0'],
             ['Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_3_3 like Mac OS X; en-us) AppleWebKit/533_17_9 (KHTML, like Gecko) Version/5.0.2 Mobile/8J2 Safari/6533.18.5', true, 'iPhone', false, null, false, null, true, 'ios', true, '4.3.3', true, 'webkit', true, '533.17.9'],
         ];
     }

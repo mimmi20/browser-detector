@@ -31,10 +31,14 @@ use function assert;
 use function explode;
 use function in_array;
 use function is_array;
+use function mb_strpos;
 use function mb_strtolower;
+use function mb_substr;
 use function reset;
 use function sprintf;
+use function str_contains;
 use function str_starts_with;
+use function trim;
 
 final class Detector implements DetectorInterface
 {
@@ -103,7 +107,6 @@ final class Detector implements DetectorInterface
 
         [$deviceName, $deviceMarketingName, $deviceManufacturer, $brand, $dualOrientation, $simCount, $display, $deviceType, $deviceIsMobileFromDevice, $deviceIsTv, $platformCodenameFromDevice] = $this->getDeviceData(
             filteredHeaders: $filteredHeaders,
-            deviceIsMobile: $deviceIsMobile,
         );
 
         /* detect platform */
@@ -430,9 +433,13 @@ final class Detector implements DetectorInterface
         $platformHeaderVerion = reset($headersWithPlatformVersion);
 
         if ($platformHeaderVerion instanceof HeaderInterface) {
-            return $this->getVersion(
-                $platformHeaderVerion->getPlatformVersion($platformCodename),
-            );
+            $platformVersion = $platformHeaderVerion->getPlatformVersion($platformCodename);
+
+            if ($platformVersion !== null && str_contains($platformVersion, ';')) {
+                return $platformVersion;
+            }
+
+            return $this->getVersion($platformVersion);
         }
 
         return null;
@@ -473,6 +480,22 @@ final class Detector implements DetectorInterface
             $this->logger->info($e);
         }
 
+        if ($platformVersion !== null && $platformHeader instanceof HeaderInterface) {
+            $derivatePosition = mb_strpos($platformVersion, ';');
+
+            if ($derivatePosition !== false) {
+                // the platform contains information about a derivate of the platform
+                $derivate        = trim(mb_substr($platformVersion, $derivatePosition + 1));
+                $platformVersion = null;
+
+                $derivateCodename = $platformHeader->getPlatformCode($derivate);
+
+                if ($derivateCodename !== null) {
+                    $platformCodename = $derivateCodename;
+                }
+            }
+        }
+
         if ($platformCodename !== null) {
             try {
                 $platform = $this->platformLoader->load(
@@ -503,7 +526,7 @@ final class Detector implements DetectorInterface
      *
      * @throws void
      */
-    private function getDeviceData(array $filteredHeaders, bool | null $deviceIsMobile): array
+    private function getDeviceData(array $filteredHeaders): array
     {
         $headersWithDeviceCode = array_filter(
             $filteredHeaders,
@@ -539,7 +562,7 @@ final class Detector implements DetectorInterface
                         'size' => $device['display']['size'] ?? null,
                     ],
                     $device['type'],
-                    $deviceIsMobile ?? $device['ismobile'],
+                    $device['ismobile'],
                     $device['istv'],
                     $platformCodenameFromDevice,
                 ];

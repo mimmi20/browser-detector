@@ -66,7 +66,7 @@ final class RulefileParserTest extends TestCase
 
                     self::assertSame(
                         sprintf(
-                            'file %s does not exist',
+                            'could not load file %s',
                             vfsStream::url(self::DATA_PATH . '/bot2.json'),
                         ),
                         $message->getMessage(),

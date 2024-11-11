@@ -62,5 +62,53 @@
     },
     "type": "tablet",
     "platform": "android"
+  },
+  "casper via t41": {
+    "deviceName": "Via T41",
+    "marketingName": "Via T41",
+    "manufacturer": "casper",
+    "brand": "casper",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": 10.1
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "casper via t1e": {
+    "deviceName": "Via T1e",
+    "marketingName": "Via T1e",
+    "manufacturer": "casper",
+    "brand": "casper",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "size": 8.9
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "casper via t4e-g": {
+    "deviceName": "Via T4E-G",
+    "marketingName": "Via T4E-G",
+    "manufacturer": "casper",
+    "brand": "casper",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 1024,
+      "height": 768,
+      "touch": true,
+      "size": 7.85
+    },
+    "type": "tablet",
+    "platform": "android"
   }
 }

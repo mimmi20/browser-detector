@@ -2443,16 +2443,28 @@
   },
   {
     "headers": {
+      "device-memory": "2",
+      "dpr": "2",
+      "viewport-width": "980",
+      "rtt": "50",
+      "downlink": "8.85",
+      "ect": "4g",
       "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"99\", \"Microsoft Edge\";v=\"99\"",
       "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-arch": "\"x86\"",
       "sec-ch-ua-platform": "\"Linux\"",
+      "sec-ch-ua-platform-version": "\"\"",
+      "sec-ch-ua-model": "\"\"",
+      "sec-ch-ua-bitness": "\"64\"",
+      "sec-ch-ua-full-version-list": "\" Not A;Brand\";v=\"99.0.0.0\", \"Chromium\";v=\"99.0.1150.30\", \"Microsoft Edge\";v=\"99.0.1150.30\"",
       "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36 Edg/99.0.1150.30",
-      "sec-fetch-site": "cross-site",
+      "sec-fetch-site": "same-origin",
       "sec-fetch-mode": "navigate",
+      "sec-fetch-user": "?1",
       "sec-fetch-dest": "document"
     },
     "device": {
-      "architecture": null,
+      "architecture": "x86",
       "deviceName": "Linux Desktop",
       "marketingName": "Linux Desktop",
       "manufacturer": "unknown",
@@ -2468,7 +2480,7 @@
       "type": "desktop",
       "ismobile": false,
       "istv": false,
-      "bits": null
+      "bits": 64
     },
     "os": {
       "name": "Linux",
@@ -2478,7 +2490,7 @@
     },
     "client": {
       "name": "Edge Mobile",
-      "version": "99.0.0",
+      "version": "99.0.1150.30",
       "manufacturer": "microsoft",
       "type": "browser",
       "isbot": false

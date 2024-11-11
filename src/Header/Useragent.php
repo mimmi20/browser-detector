@@ -74,7 +74,7 @@ final class Useragent implements HeaderInterface
     {
         $matches = [];
 
-        if (preg_match('/dv\((?P<device>[^)]+)\);/', $this->value, $matches)) {
+        if (preg_match('/dv\((?P<device>[^)]+)\);/', $this->normalizedValue, $matches)) {
             $code = $this->deviceParser->parse($matches['device']);
 
             if ($code !== '') {
@@ -102,7 +102,7 @@ final class Useragent implements HeaderInterface
     {
         $matches = [];
 
-        if (preg_match('/pr\((?P<client>[^\/)]+)(?:\/[\d.]+)?\);/', $this->value, $matches)) {
+        if (preg_match('/pr\((?P<client>[^\/)]+)(?:\/[\d.]+)?\);/', $this->normalizedValue, $matches)) {
             $code = mb_strtolower($matches['client']);
 
             if ($code === 'ucbrowser') {
@@ -136,7 +136,7 @@ final class Useragent implements HeaderInterface
     {
         $matches = [];
 
-        if (preg_match('/pr\([^\/]+\/(?P<version>[\d.]+)\);/', $this->value, $matches)) {
+        if (preg_match('/pr\([^\/]+\/(?P<version>[\d.]+)\);/', $this->normalizedValue, $matches)) {
             return $matches['version'];
         }
 
@@ -154,7 +154,7 @@ final class Useragent implements HeaderInterface
 
         try {
             [$browser] = $this->browserLoader->load($code, $this->normalizedValue);
-        } catch (UnexpectedValueException) {
+        } catch (NotFoundException) {
             return null;
         }
 
@@ -167,12 +167,31 @@ final class Useragent implements HeaderInterface
         return true;
     }
 
-    /** @throws void */
-    public function getPlatformCode(): string | null
+    /**
+     * @throws void
+     *
+     * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+     */
+    public function getPlatformCode(string | null $derivate = null): string | null
     {
         $matches = [];
 
-        if (preg_match('/pf\((?P<platform>[^)]+)\);/', $this->value, $matches)) {
+        if (
+            preg_match(
+                '/ov\((?P<platform>wds|android) (?:[\d_.]+)\);/i',
+                $this->normalizedValue,
+                $matches,
+            )
+        ) {
+            $code = mb_strtolower($matches['platform']);
+
+            return match ($code) {
+                'wds' => 'windows phone',
+                default => 'android',
+            };
+        }
+
+        if (preg_match('/pf\((?P<platform>[^)]+)\);/', $this->normalizedValue, $matches)) {
             $code = mb_strtolower($matches['platform']);
 
             return match ($code) {
@@ -204,7 +223,13 @@ final class Useragent implements HeaderInterface
     {
         $matches = [];
 
-        if (preg_match('/ov\((?:(wds|android) )?(?P<version>[\d_.]+)\);/i', $this->value, $matches)) {
+        if (
+            preg_match(
+                '/ov\((?:(wds|android) )?(?P<version>[\d_.]+)\);/i',
+                $this->normalizedValue,
+                $matches,
+            )
+        ) {
             return str_replace('_', '.', $matches['version']);
         }
 
@@ -218,7 +243,7 @@ final class Useragent implements HeaderInterface
 
         try {
             $platform = $this->platformLoader->load($code, $this->normalizedValue);
-        } catch (NotFoundException | UnexpectedValueException) {
+        } catch (NotFoundException) {
             return null;
         }
 
@@ -234,6 +259,17 @@ final class Useragent implements HeaderInterface
     /** @throws void */
     public function getEngineCode(): string | null
     {
+        $matches = [];
+
+        if (preg_match('/re\((?P<engine>[^\/)]+)(?:\/[\d.]+)?/', $this->normalizedValue, $matches)) {
+            $code = mb_strtolower($matches['engine']);
+
+            return match ($code) {
+                'applewebkit' => 'webkit',
+                default => $code,
+            };
+        }
+
         $code = $this->engineParser->parse($this->normalizedValue);
 
         if ($code === '') {
@@ -252,6 +288,12 @@ final class Useragent implements HeaderInterface
     /** @throws void */
     public function getEngineVersion(string | null $code = null): string | null
     {
+        $matches = [];
+
+        if (preg_match('/re\([^\/]+\/(?P<version>[\d.]+)/', $this->normalizedValue, $matches)) {
+            return $matches['version'];
+        }
+
         if ($code === null) {
             $code = $this->engineParser->parse($this->normalizedValue);
 
@@ -262,7 +304,7 @@ final class Useragent implements HeaderInterface
 
         try {
             $engine = $this->engineLoader->load($code, $this->normalizedValue);
-        } catch (NotFoundException | UnexpectedValueException) {
+        } catch (UnexpectedValueException) {
             return null;
         }
 

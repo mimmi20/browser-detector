@@ -17,5 +17,5 @@ use Psr\Log\LoggerInterface;
 interface TestErrorFactoryInterface
 {
     /** @throws void */
-    public function __invoke(LoggerInterface $logger): TestError;
+    public function __invoke(LoggerInterface $logger): TestUnexpectedError | TestNotNumericError;
 }

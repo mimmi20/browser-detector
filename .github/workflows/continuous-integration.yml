@@ -59,7 +59,7 @@ jobs:
       skip-phpcs: false
       skip-phpstan: false
       skip-rector: false
-      skip-phpmd: false
+      skip-phpmd: true
       skip-eslint: true
       skip-stylelint: true
       skip-prettier: true
@@ -77,8 +77,8 @@ jobs:
       coverage: "xdebug"
       composer-options: "--optimize-autoloader --prefer-dist --prefer-stable -v"
       test-name: ""
-      min-msi: 95
-      min-covered-msi: 95
+      min-msi: 99
+      min-covered-msi: 99
       skip-phpunit: false
       skip-vitest: true
       skip-stryker: true

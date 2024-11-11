@@ -28,10 +28,6 @@ final class XUcbrowserPhone implements HeaderInterface
     /** @throws void */
     public function getDeviceCode(): string | null
     {
-        if (in_array(mb_strtolower($this->value), ['maui browser', 'sunmicro'], true)) {
-            return null;
-        }
-
         $code = mb_strtolower($this->value);
 
         return match ($code) {

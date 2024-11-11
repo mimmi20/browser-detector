@@ -17,7 +17,6 @@ use BrowserDetector\Parser\EngineParserInterface;
 use UaNormalizer\Normalizer\Exception\Exception;
 use UaNormalizer\NormalizerFactory;
 
-use function in_array;
 use function mb_strtolower;
 use function preg_match;
 
@@ -44,10 +43,6 @@ final class XOperaminiPhoneUa implements HeaderInterface
     /** @throws void */
     public function hasDeviceCode(): bool
     {
-        if (in_array(mb_strtolower($this->value), ['mozilla/5.0 (bada 2.0.0)', 'motorola'], true)) {
-            return false;
-        }
-
         return (bool) preg_match(
             '/samsung|nokia|blackberry|smartfren|sprint|iphone|lava|gionee|philips|htc|pantech|lg|casio|zte|mi 2sc|sm-g900f|gt-i9000|gt-s5830i|sne-lx1/i',
             $this->value,
@@ -109,8 +104,12 @@ final class XOperaminiPhoneUa implements HeaderInterface
         );
     }
 
-    /** @throws void */
-    public function getPlatformCode(): string | null
+    /**
+     * @throws void
+     *
+     * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+     */
+    public function getPlatformCode(string | null $derivate = null): string | null
     {
         $matches = [];
 
@@ -124,12 +123,11 @@ final class XOperaminiPhoneUa implements HeaderInterface
             $code = mb_strtolower($matches['platform']);
 
             return match ($code) {
-                'bada', 'android', 'brew', 'mre', 'windows ce' => $code,
                 'blackberry' => 'rim os',
                 'windows' => 'windows phone',
                 'iphone' => 'ios',
                 'mtk' => 'nucleus os',
-                default => null,
+                default => $code,
             };
         }
 

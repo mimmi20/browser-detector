@@ -252,6 +252,9 @@ final class XRequestedWith implements HeaderInterface
             'threads.thor' => 'thor-browser',
             // 'webexplorer.amazing.biro' => '',
             'xbrowser', 'com.xbrowser.play' => 'x-browser',
+            'com.baidu.browser.apps' => 'baidu browser',
+            'com.hihonor.baidu.browser' => 'honor-browser',
+            'com.baidu.searchbox.lite' => 'baidu box app lite',
             default => null,
         };
     }

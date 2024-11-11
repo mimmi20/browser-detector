@@ -975,8 +975,8 @@
       "marketingName": "Honor 20 Pro",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 2340,
         "height": 1080,
@@ -1059,8 +1059,8 @@
       "marketingName": "Honor 20",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 2340,
         "height": 1080,
@@ -2630,7 +2630,7 @@
       "name": "HarmonyOS",
       "marketingName": "HarmonyOS",
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "huawei"
     },
     "client": {
       "name": "HuaweiBrowser",
@@ -2983,6 +2983,48 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; LSA-AN00; HMSCore 6.3.0.327) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.105 HuaweiBrowser/12.0.3.310 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "LSA-AN00",
+      "marketingName": "Honor 60",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.67
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "HuaweiBrowser",
+      "version": "12.0.3.310",
+      "manufacturer": "huawei",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "92.0.4515.105",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 10; BKL-L09; HMSCore 6.3.0.326; GMSCore 21.48.15) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.105 HuaweiBrowser/12.0.1.302 Mobile Safari/537.36"
     },
     "device": {
@@ -3050,7 +3092,7 @@
       "name": "HarmonyOS",
       "marketingName": "HarmonyOS",
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "huawei"
     },
     "client": {
       "name": "HuaweiBrowser",
@@ -3092,7 +3134,7 @@
       "name": "HarmonyOS",
       "marketingName": "HarmonyOS",
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "huawei"
     },
     "client": {
       "name": "HuaweiBrowser",
@@ -3176,7 +3218,7 @@
       "name": "HarmonyOS",
       "marketingName": "HarmonyOS",
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "huawei"
     },
     "client": {
       "name": "HuaweiBrowser",
@@ -3218,7 +3260,7 @@
       "name": "HarmonyOS",
       "marketingName": "HarmonyOS",
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "huawei"
     },
     "client": {
       "name": "HuaweiBrowser",
@@ -3386,7 +3428,7 @@
       "name": "HarmonyOS",
       "marketingName": "HarmonyOS",
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "huawei"
     },
     "client": {
       "name": "HuaweiBrowser",
@@ -3440,6 +3482,48 @@
     "engine": {
       "name": "Blink",
       "version": "92.0.4515.105",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; YAL-L21 Build/HUAWEIYAL-L61; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.61 Mobile Safari/537.36 HuaweiBrowser/12.0.4.304 HMSCore/6.5.0.312"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "YAL-L61",
+      "marketingName": "nova 5T",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2340,
+        "height": 1080,
+        "touch": true,
+        "size": 6.26
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "HuaweiBrowser",
+      "version": "12.0.4.304",
+      "manufacturer": "huawei",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "101.0.4951.61",
       "manufacturer": "google"
     }
   },
@@ -3638,7 +3722,7 @@
       "name": "HarmonyOS",
       "marketingName": "HarmonyOS",
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "huawei"
     },
     "client": {
       "name": "HuaweiBrowser",
@@ -3764,7 +3848,7 @@
       "name": "HarmonyOS",
       "marketingName": "HarmonyOS",
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "huawei"
     },
     "client": {
       "name": "HuaweiBrowser",
@@ -3806,7 +3890,7 @@
       "name": "HarmonyOS",
       "marketingName": "HarmonyOS",
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "huawei"
     },
     "client": {
       "name": "HuaweiBrowser",
@@ -3848,7 +3932,7 @@
       "name": "HarmonyOS",
       "marketingName": "HarmonyOS",
       "version": null,
-      "manufacturer": "unknown"
+      "manufacturer": "huawei"
     },
     "client": {
       "name": "HuaweiBrowser",
@@ -3860,6 +3944,48 @@
     "engine": {
       "name": "Blink",
       "version": "92.0.4515.105",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; DCO-LX9; HMSCore 6.10.4.302) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.88 HuaweiBrowser/13.0.4.302 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "DCO-LX9",
+      "marketingName": "Mate 50 Pro",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2616,
+        "height": 1212,
+        "touch": true,
+        "size": 6.74
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "HuaweiBrowser",
+      "version": "13.0.4.302",
+      "manufacturer": "huawei",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "99.0.4844.88",
       "manufacturer": "google"
     }
   },
@@ -3895,6 +4021,48 @@
     "client": {
       "name": "HuaweiBrowser",
       "version": "13.0.4.303",
+      "manufacturer": "huawei",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "99.0.4844.88",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; HarmonyOS; MNA-AL00; HMSCore 6.11.0.302) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.88 HuaweiBrowser/13.0.6.302 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "MNA-AL00",
+      "marketingName": "P60 Pro",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2700,
+        "height": 1220,
+        "touch": true,
+        "size": 6.67
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "HarmonyOS",
+      "marketingName": "HarmonyOS",
+      "version": null,
+      "manufacturer": "huawei"
+    },
+    "client": {
+      "name": "HuaweiBrowser",
+      "version": "13.0.6.302",
       "manufacturer": "huawei",
       "type": "browser",
       "isbot": false
@@ -3991,63 +4159,21 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 12; HarmonyOS; FIN-AL60a; HMSCore 6.13.0.309) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.88 HuaweiBrowser/14.0.7.302 Mobile Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; MNA-LX9; HMSCore 6.12.4.312) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.88 HuaweiBrowser/14.0.2.311 Mobile Safari/537.36"
     },
     "device": {
       "architecture": null,
-      "deviceName": "FIN-AL60a",
-      "marketingName": "nova 12 Lite",
+      "deviceName": "MNA-LX9",
+      "marketingName": "P60 Pro",
       "manufacturer": "huawei",
       "brand": "huawei",
       "dualOrientation": true,
-      "simCount": 2,
+      "simCount": 1,
       "display": {
-        "width": 2412,
-        "height": 1084,
+        "width": 2700,
+        "height": 1220,
         "touch": true,
-        "size": 6.7
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "HarmonyOS",
-      "marketingName": "HarmonyOS",
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "HuaweiBrowser",
-      "version": "14.0.7.302",
-      "manufacturer": "huawei",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "99.0.4844.88",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 12; ADY-LX9; HMSCore 6.13.0.352; GMSCore 0.3.2.240913) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.88 HuaweiBrowser/14.0.5.302 Mobile Safari/537.36"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "ADY-LX9",
-      "marketingName": "Pura 70",
-      "manufacturer": "huawei",
-      "brand": "huawei",
-      "dualOrientation": true,
-      "simCount": 2,
-      "display": {
-        "width": 2760,
-        "height": 1256,
-        "touch": true,
-        "size": 6.6
+        "size": 6.67
       },
       "type": "smartphone",
       "ismobile": true,
@@ -4062,7 +4188,7 @@
     },
     "client": {
       "name": "HuaweiBrowser",
-      "version": "14.0.5.302",
+      "version": "14.0.2.311",
       "manufacturer": "huawei",
       "type": "browser",
       "isbot": false

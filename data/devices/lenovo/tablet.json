@@ -879,13 +879,29 @@
     "type": "tablet",
     "platform": "android"
   },
+  "lenovo tb-x605m": {
+    "deviceName": "TB-X605M",
+    "marketingName": "Tab M10 FHD Wi-Fi",
+    "manufacturer": "lenovo",
+    "brand": "lenovo",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "size": 10.1
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
   "lenovo tb-x605f": {
     "deviceName": "TB-X605F",
     "marketingName": "Tab M10 FHD Wi-Fi",
     "manufacturer": "lenovo",
     "brand": "lenovo",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 0,
     "display": {
       "width": 1920,
       "height": 1200,
@@ -1579,6 +1595,86 @@
       "height": 1200,
       "touch": true,
       "size": 11
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "lenovo tb310fu": {
+    "deviceName": "TB310FU",
+    "marketingName": "Tab M9 Wi-Fi",
+    "manufacturer": "lenovo",
+    "brand": "lenovo",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 1340,
+      "height": 800,
+      "touch": true,
+      "size": 9
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "lenovo tb132fu": {
+    "deviceName": "TB132FU",
+    "marketingName": "Tab P11 Pro Gen 2 Wi-Fi",
+    "manufacturer": "lenovo",
+    "brand": "lenovo",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 2560,
+      "height": 1536,
+      "touch": true,
+      "size": 11.2
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "lenovo tb331fc": {
+    "deviceName": "TB331FC",
+    "marketingName": "Pad 2024 Wi-Fi",
+    "manufacturer": "lenovo",
+    "brand": "lenovo",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 1920,
+      "height": 1200,
+      "touch": true,
+      "size": 11
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "lenovo tb320fc": {
+    "deviceName": "TB320FC",
+    "marketingName": "Legion Tab Wi-Fi",
+    "manufacturer": "lenovo",
+    "brand": "lenovo",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 2560,
+      "height": 1600,
+      "touch": true,
+      "size": 8.8
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "lenovo tb125fu": {
+    "deviceName": "TB125FU",
+    "marketingName": "Tab M10 Plus (3rd Gen) Wi-Fi",
+    "manufacturer": "lenovo",
+    "brand": "lenovo",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 2000,
+      "height": 1200,
+      "touch": true,
+      "size": 10.61
     },
     "type": "tablet",
     "platform": "android"

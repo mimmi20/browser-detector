@@ -23,7 +23,7 @@ final class XOperaminiPhone implements HeaderInterface
     public function hasDeviceCode(): bool
     {
         return preg_match(
-            '/(?:rim|htc|samsung|apple|casio|motorola|pantech|lg|zte|blackberry) # .*/i',
+            '/^(?:rim|htc|samsung|apple|casio|motorola|pantech|lg|zte|blackberry) # .*/i',
             $this->value,
         ) === 1;
     }
@@ -35,7 +35,7 @@ final class XOperaminiPhone implements HeaderInterface
 
         if (
             preg_match(
-                '/^(?P<company>rim|htc|samsung|apple|casio|motorola|pantech|lg|zte|blackberry) # (?P<device>.*)$/i',
+                '/^(?P<company>rim|htc|samsung|apple|casio|motorola|pantech|lg|zte|blackberry) # (?P<device>.*)/i',
                 $this->value,
                 $matches,
             )

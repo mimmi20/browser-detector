@@ -1,6 +1,48 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/4.0 (compatible; MSIE 8.0; TOB 6.11; Windows NT 5.1; Trident/4.0; SIMBAR={26CD4EB0-CA08-4CE8-BADA-A8E3E9ADDE4C}; .NET CLR 2.0.50727; .NET CLR 3.0.04506.30; .NET CLR 3.0.04506.648; .NET CLR 1.1.4322; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Huawei device",
+      "marketingName": "general Huawei device",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows NT",
+      "marketingName": "Windows XP",
+      "version": "5.1.0",
+      "manufacturer": "microsoft"
+    },
+    "client": {
+      "name": "T-Online Browser",
+      "version": "6.11.0",
+      "manufacturer": "unknown",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Trident",
+      "version": "4.0.0",
+      "manufacturer": "microsoft"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; U; Android 10; zh-CN; CDY-AN95 Build/HUAWEICDY-AN95) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.108 Quark/4.8.6.175 Mobile Safari/537.36"
     },
     "device": {
@@ -43,7 +85,7 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; U; Android 14; zh-Hans-CN; PGT-AN00 Build/HONORPGT-AN00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/100.0.4896.58 Quark/6.11.0.530 Mobile Safari/537.36"
+      "user-agent": "Mozilla/5.0 (Linux; U; Android 12; zh-Hans-CN; CET-AL00 Build/HUAWEICET-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.108 Quark/6.0.1.231 Mobile Safari/537.36"
     },
     "device": {
       "architecture": null,
@@ -67,19 +109,19 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "14.0.0",
+      "version": "12.0.0",
       "manufacturer": "google"
     },
     "client": {
       "name": "Quark",
-      "version": "6.11.0.530",
+      "version": "6.0.1.231",
       "manufacturer": "unknown",
       "type": "browser",
       "isbot": false
     },
     "engine": {
       "name": "Blink",
-      "version": "100.0.4896.58",
+      "version": "78.0.3904.108",
       "manufacturer": "google"
     }
   }

@@ -62,6 +62,7 @@ final class SecChUa implements HeaderInterface
             'google chrome' => 'chrome',
             'avastsecurebrowser' => 'avast secure browser',
             'wavebrowser' => 'wave-browser',
+            'duckduckgo' => 'duckduck app',
             default => $code,
         };
     }

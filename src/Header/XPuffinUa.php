@@ -58,8 +58,12 @@ final class XPuffinUa implements HeaderInterface
         return (bool) preg_match('/android|iphone os/i', $this->value);
     }
 
-    /** @throws void */
-    public function getPlatformCode(): string | null
+    /**
+     * @throws void
+     *
+     * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
+     */
+    public function getPlatformCode(string | null $derivate = null): string | null
     {
         $matches = [];
 
@@ -67,9 +71,8 @@ final class XPuffinUa implements HeaderInterface
             $code = mb_strtolower($matches['platform']);
 
             return match ($code) {
-                'android' => $code,
                 'iphone os' => 'ios',
-                default => null,
+                default => $code,
             };
         }
 

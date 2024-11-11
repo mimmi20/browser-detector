@@ -2875,6 +2875,66 @@
   },
   {
     "headers": {
+      "device-memory": "4",
+      "dpr": "1.75",
+      "viewport-width": "980",
+      "rtt": "50",
+      "downlink": "10",
+      "ect": "4g",
+      "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"99\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"11.0.0\"",
+      "sec-ch-ua-model": "\"SM-P610\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version-list": "\" Not A;Brand\";v=\"99.0.0.0\", \"Chromium\";v=\"99.0.4844.88\"",
+      "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.88 Safari/537.36 OPR/85.0.4341.13",
+      "sec-fetch-site": "same-origin",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-user": "?1",
+      "sec-fetch-dest": "document"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-P610",
+      "marketingName": "Galaxy Tab S6 Lite 10.4 Wi-Fi",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 2000,
+        "height": 1200,
+        "touch": true,
+        "size": 10.4
+      },
+      "type": "tablet",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Opera",
+      "version": "85.0.4341.13",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "99.0.4844.88",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "device-memory": "2",
       "dpr": "0.9375",
       "viewport-width": "980",
@@ -3354,16 +3414,16 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 14; SM-X806C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.5938.154 Safari/537.36 OPR/78.1.4143.75368"
+      "user-agent": "Mozilla/5.0 (Linux; Android 13; SM-X810) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.5938.154 Safari/537.36 OPR/78.5.4143.75924"
     },
     "device": {
       "architecture": null,
-      "deviceName": "SM-X806",
-      "marketingName": "Galaxy Tab S8+ LTE",
+      "deviceName": "SM-X810",
+      "marketingName": "Galaxy Tab S9+ Wi-Fi",
       "manufacturer": "samsung",
       "brand": "samsung",
       "dualOrientation": true,
-      "simCount": 1,
+      "simCount": 0,
       "display": {
         "width": 2800,
         "height": 1752,
@@ -3378,12 +3438,12 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "14.0.0",
+      "version": "13.0.0",
       "manufacturer": "google"
     },
     "client": {
       "name": "Opera Mobile",
-      "version": "78.1.4143.75368",
+      "version": "78.5.4143.75924",
       "manufacturer": "opera",
       "type": "browser",
       "isbot": false
@@ -3391,6 +3451,48 @@
     "engine": {
       "name": "Blink",
       "version": "117.0.5938.154",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 14; SM-X910) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.6367.179 Safari/537.36 OPR/82.3.4342.79590"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-X910",
+      "marketingName": "Galaxy Tab S9 Ultra Wi-Fi",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": true,
+      "simCount": 0,
+      "display": {
+        "width": 2960,
+        "height": 1848,
+        "touch": true,
+        "size": 14.6
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "version": "82.3.4342.79590",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "124.0.6367.179",
       "manufacturer": "google"
     }
   }
