@@ -2,24 +2,27 @@
   {
     "headers": {
       "device-memory": "1",
+      "downlink": "7.35",
       "dpr": "1",
-      "viewport-width": "980",
-      "rtt": "150",
-      "downlink": "3.15",
       "ect": "4g",
-      "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"100\"",
+      "origin": "https://www.geld.de",
+      "rtt": "50",
+      "sec-ch-device-memory": "1",
+      "sec-ch-dpr": "1",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"102\"",
+      "sec-ch-ua-full-version": "\"102.0.5005.125\"",
       "sec-ch-ua-mobile": "?0",
-      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-model": "\"KFAUWI\"",
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua-platform-version": "\"5.1.1\"",
-      "sec-ch-ua-model": "\"KFTBWI\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-full-version-list": "\" Not A;Brand\";v=\"99.0.0.0\", \"Chromium\";v=\"100.0.4896.127\"",
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; KFTBWI) AppleWebKit/537.36 (KHTML, like Gecko) Silk/100.1.163 like Chrome/100.0.4896.127 Safari/537.36",
+      "sec-ch-viewport-width": "600",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
       "sec-fetch-site": "same-origin",
-      "sec-fetch-mode": "navigate",
-      "sec-fetch-user": "?1",
-      "sec-fetch-dest": "document"
+      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; KFAUWI) AppleWebKit/537.36 (KHTML, like Gecko) Silk/102.2.1 like Chrome/102.0.5005.125 Safari/537.36",
+      "viewport-width": "600",
+      "x-requested-with": "XMLHttpRequest"
     },
     "device": {
       "architecture": null,
@@ -48,14 +51,14 @@
     },
     "client": {
       "name": "Silk",
-      "version": "100.1.163",
+      "version": "102.0.5005.125",
       "manufacturer": "amazon",
       "type": "browser",
       "isbot": false
     },
     "engine": {
       "name": "Blink",
-      "version": "100.0.4896.127",
+      "version": "102.0.5005.125",
       "manufacturer": "google"
     }
   }
