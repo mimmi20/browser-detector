@@ -68,6 +68,7 @@ final class SecChUaModel implements HeaderInterface
             'aftsss' => 'amazon=amazon aftsss',
             'kftbwi' => 'amazon=amazon kftbwi',
             'kfauwi' => 'amazon=amazon kfauwi',
+            'kfsawi' => 'amazon=amazon kfsawi',
             // Asus
             'p024' => 'asus=asus p024',
             'asus_x00dd' => 'asus=asus x00dd',
@@ -90,6 +91,7 @@ final class SecChUaModel implements HeaderInterface
             'pixel 7' => 'google=google pixel 7',
             'pixel 7a' => 'google=google pixel 7a',
             'pixel 7 pro' => 'google=google pixel 7 pro',
+            'pixel 8' => 'google=google pixel 8',
             // OnePlus
             'ac2003' => 'oneplus=oneplus ac2003',
             'in2023' => 'oneplus=oneplus in2023',
@@ -357,6 +359,8 @@ final class SecChUaModel implements HeaderInterface
             'sm-a320fl' => 'samsung=samsung sm-a320fl',
             'sm-t590' => 'samsung=samsung sm-t590',
             'sm-t720' => 'samsung=samsung sm-t720',
+            'sm-m315f' => 'samsung=samsung sm-m315f',
+            'sm-g973f' => 'samsung=samsung sm-g973f',
             // Huawei
             'mar-lx1b' => 'huawei=huawei mar-lx1b',
             'lya-l09' => 'huawei=huawei lya-l09',
@@ -404,6 +408,7 @@ final class SecChUaModel implements HeaderInterface
             'yal-l21' => 'huawei=huawei yal-l21',
             'rne-l21' => 'huawei=huawei rne-l21',
             'pot-lx1' => 'huawei=huawei pot-lx1',
+            'sht-al09' => 'huawei=huawei sht-al09',
             // Lenovo
             'lenovo tb-x304f' => 'lenovo=lenovo tb-x304f',
             'lenovo yt-j706f' => 'lenovo=lenovo yt-j706f',
@@ -482,6 +487,7 @@ final class SecChUaModel implements HeaderInterface
             'xq-be52' => 'sony=sony xq-be52',
             'h8266' => 'sony=sony h8266',
             'xq-bc52' => 'sony=sony xq-bc52',
+            'xq-au52' => 'sony=sony xq-au52',
             // Vivo
             'v2109' => 'vivo=vivo v2109',
             'vivo 1716' => 'vivo=vivo 1716',
@@ -496,6 +502,7 @@ final class SecChUaModel implements HeaderInterface
             'note 6p' => 'ulefone=ulefone note 6p',
             'armor 11t 5g' => 'ulefone=ulefone armor 11t 5g',
             'armor x5' => 'ulefone=ulefone armor x5',
+            'armor_6e' => 'ulefone=ulefone armor 6e',
             // Doogee
             'n40pro' => 'doogee=doogee n40 pro',
             's88pro' => 'doogee=doogee s88 pro',
@@ -524,6 +531,8 @@ final class SecChUaModel implements HeaderInterface
             'p30s_eea' => 'teclast=teclast p30s_eea',
             // alldocube
             'iplay_40' => 'alldocube=alldocube iplay 40',
+            // dgtec
+            'dg101hstb' => 'dgtec=dgtec dg101hstb',
             default => null,
         };
     }

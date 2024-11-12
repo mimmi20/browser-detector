@@ -1,30 +1,30 @@
 [
   {
     "headers": {
-      "device-memory": "4",
+      "device-memory": "8",
       "downlink": "9.5",
-      "dpr": "2.25",
+      "dpr": "2.875",
       "ect": "4g",
       "rtt": "0",
-      "sec-ch-device-memory": "4",
-      "sec-ch-dpr": "2.25",
+      "sec-ch-device-memory": "8",
+      "sec-ch-dpr": "2.875",
       "sec-ch-prefers-color-scheme": "light",
       "sec-ch-prefers-reduced-motion": "no-preference",
       "sec-ch-ua": "\"Not/A)Brand\";v=\"99\", \"Samsung Internet\";v=\"23.0\", \"Chromium\";v=\"115\"",
       "sec-ch-ua-arch": "\"\"",
       "sec-ch-ua-bitness": "\"\"",
       "sec-ch-ua-full-version": "\"23.0.0.47\"",
-      "sec-ch-ua-mobile": "?0",
-      "sec-ch-ua-model": "\"SM-T720\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"Pixel 8\"",
       "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua-platform-version": "\"11.0.0\"",
-      "sec-ch-viewport-height": "972",
-      "sec-ch-viewport-width": "712",
+      "sec-ch-ua-platform-version": "\"14.0.0\"",
+      "sec-ch-viewport-height": "627",
+      "sec-ch-viewport-width": "376",
       "sec-fetch-dest": "empty",
       "sec-fetch-mode": "cors",
       "sec-fetch-site": "same-origin",
-      "user-agent": "Mozilla/5.0 (Linux; Android 11; SAMSUNG SM-T720) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/23.0 Chrome/115.0.0.0 Safari/537.36",
-      "viewport-width": "712",
+      "user-agent": "Mozilla/5.0 (Linux; Android 14; Pixel 8) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/23.0 Chrome/115.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "376",
       "x-requested-with": "XMLHttpRequest"
     },
     "device": {
@@ -42,14 +42,14 @@
         "size": null
       },
       "type": null,
-      "ismobile": false,
+      "ismobile": true,
       "istv": false,
       "bits": null
     },
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "11.0.0",
+      "version": "14.0.0",
       "manufacturer": "google"
     },
     "client": {
