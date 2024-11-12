@@ -67,6 +67,7 @@ final class SecChUaModel implements HeaderInterface
             'aftmm' => 'amazon=amazon aftmm',
             'aftsss' => 'amazon=amazon aftsss',
             'kftbwi' => 'amazon=amazon kftbwi',
+            'kfauwi' => 'amazon=amazon kfauwi',
             // Asus
             'p024' => 'asus=asus p024',
             'asus_x00dd' => 'asus=asus x00dd',
@@ -352,6 +353,10 @@ final class SecChUaModel implements HeaderInterface
             'sm-j415fn' => 'samsung=samsung sm-j415fn',
             'sm-t585' => 'samsung=samsung sm-t585',
             'sm-t725' => 'samsung=samsung sm-t725',
+            'sm-a202f' => 'samsung=samsung sm-a202f',
+            'sm-a320fl' => 'samsung=samsung sm-a320fl',
+            'sm-t590' => 'samsung=samsung sm-t590',
+            'sm-t720' => 'samsung=samsung sm-t720',
             // Huawei
             'mar-lx1b' => 'huawei=huawei mar-lx1b',
             'lya-l09' => 'huawei=huawei lya-l09',
@@ -397,6 +402,8 @@ final class SecChUaModel implements HeaderInterface
             'bah2-w19' => 'huawei=huawei bah2-w19',
             'ags2-l09' => 'huawei=huawei ags2-l09',
             'yal-l21' => 'huawei=huawei yal-l21',
+            'rne-l21' => 'huawei=huawei rne-l21',
+            'pot-lx1' => 'huawei=huawei pot-lx1',
             // Lenovo
             'lenovo tb-x304f' => 'lenovo=lenovo tb-x304f',
             'lenovo yt-j706f' => 'lenovo=lenovo yt-j706f',
@@ -515,6 +522,8 @@ final class SecChUaModel implements HeaderInterface
             'htc desire 19+' => 'htc=htc desire 19 plus',
             // teclast
             'p30s_eea' => 'teclast=teclast p30s_eea',
+            // alldocube
+            'iplay_40' => 'alldocube=alldocube iplay 40',
             default => null,
         };
     }

@@ -151,6 +151,7 @@ final class SecChUaModelTest extends TestCase
             ['"AFTMM"', true, 'amazon=amazon aftmm'],
             ['"AFTSSS"', true, 'amazon=amazon aftsss'],
             ['"KFTBWI"', true, 'amazon=amazon kftbwi'],
+            ['"KFAUWI"', true, 'amazon=amazon kfauwi'],
             // Asus
             ['"P024"', true, 'asus=asus p024'],
             ['"ASUS_X00DD"', true, 'asus=asus x00dd'],
@@ -436,6 +437,10 @@ final class SecChUaModelTest extends TestCase
             ['SM-J415FN', true, 'samsung=samsung sm-j415fn'],
             ['SM-T585', true, 'samsung=samsung sm-t585'],
             ['SM-T725', true, 'samsung=samsung sm-t725'],
+            ['SM-A202F', true, 'samsung=samsung sm-a202f'],
+            ['SM-A320FL', true, 'samsung=samsung sm-a320fl'],
+            ['SM-T590', true, 'samsung=samsung sm-t590'],
+            ['SM-T720', true, 'samsung=samsung sm-t720'],
             // Huawei
             ['"LGE-NX9"', true, 'huawei=huawei lge-nx9'],
             ['"VOG-L29"', true, 'huawei=huawei vog-l29'],
@@ -480,6 +485,8 @@ final class SecChUaModelTest extends TestCase
             ['"BAH2-W19"', true, 'huawei=huawei bah2-w19'],
             ['"AGS2-L09"', true, 'huawei=huawei ags2-l09'],
             ['"YAL-L21"', true, 'huawei=huawei yal-l21'],
+            ['"RNE-L21"', true, 'huawei=huawei rne-l21'],
+            ['"POT-LX1"', true, 'huawei=huawei pot-lx1'],
             // Lenovo
             ['"Lenovo TB-X304F"', true, 'lenovo=lenovo tb-x304f'],
             ['"X1030X"', true, 'lenovo=lenovo x1030x'],
@@ -598,6 +605,8 @@ final class SecChUaModelTest extends TestCase
             ['"HTC Desire 19+"', true, 'htc=htc desire 19 plus'],
             // teclast
             ['"P30S_EEA"', true, 'teclast=teclast p30s_eea'],
+            // alldocube
+            ['"iPlay_40"', true, 'alldocube=alldocube iplay 40'],
             // other
             ['"Model"', false, null],
             ['""', false, null],
