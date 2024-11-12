@@ -66,6 +66,7 @@ final class SecChUaModel implements HeaderInterface
             'kfsuwi' => 'amazon=amazon kfsuwi',
             'aftmm' => 'amazon=amazon aftmm',
             'aftsss' => 'amazon=amazon aftsss',
+            'kftbwi' => 'amazon=amazon kftbwi',
             // Asus
             'p024' => 'asus=asus p024',
             'asus_x00dd' => 'asus=asus x00dd',
@@ -223,6 +224,7 @@ final class SecChUaModel implements HeaderInterface
             '220233l2g' => 'xiaomi=xiaomi 220233l2g',
             'm2007j3sg' => 'xiaomi=xiaomi m2007j3sg',
             'mi note 2' => 'xiaomi=xiaomi mi note 2',
+            'redmi note 8t' => 'xiaomi=xiaomi redmi note 8t',
             // ZTE
             'zte a2121e' => 'zte=zte a2121e',
             'zte blade 10 vita' => 'zte=zte blade 10 vita',
@@ -348,6 +350,8 @@ final class SecChUaModel implements HeaderInterface
             'sm-g998b' => 'samsung=samsung sm-g998b',
             'sm-g973u1' => 'samsung=samsung sm-g973u1',
             'sm-j415fn' => 'samsung=samsung sm-j415fn',
+            'sm-t585' => 'samsung=samsung sm-t585',
+            'sm-t725' => 'samsung=samsung sm-t725',
             // Huawei
             'mar-lx1b' => 'huawei=huawei mar-lx1b',
             'lya-l09' => 'huawei=huawei lya-l09',
@@ -390,6 +394,9 @@ final class SecChUaModel implements HeaderInterface
             'evr-l29' => 'huawei=huawei evr-l29',
             'bah-l09' => 'huawei=huawei bah-l09',
             'art-l29' => 'huawei=huawei art-l29',
+            'bah2-w19' => 'huawei=huawei bah2-w19',
+            'ags2-l09' => 'huawei=huawei ags2-l09',
+            'yal-l21' => 'huawei=huawei yal-l21',
             // Lenovo
             'lenovo tb-x304f' => 'lenovo=lenovo tb-x304f',
             'lenovo yt-j706f' => 'lenovo=lenovo yt-j706f',
@@ -467,6 +474,7 @@ final class SecChUaModel implements HeaderInterface
             'xq-bq52' => 'sony=sony xq-bq52',
             'xq-be52' => 'sony=sony xq-be52',
             'h8266' => 'sony=sony h8266',
+            'xq-bc52' => 'sony=sony xq-bc52',
             // Vivo
             'v2109' => 'vivo=vivo v2109',
             'vivo 1716' => 'vivo=vivo 1716',

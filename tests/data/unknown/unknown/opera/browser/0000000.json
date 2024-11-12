@@ -505,20 +505,19 @@
   },
   {
     "headers": {
-      "device-memory": "4",
-      "dpr": "2.625",
+      "device-memory": "2",
+      "dpr": "2",
       "viewport-width": "980",
-      "rtt": "150",
-      "downlink": "10",
+      "rtt": "100",
+      "downlink": "6",
       "ect": "4g",
-      "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\", \"Opera\";v=\"82\", \"OperaMobile\";v=\"67\"",
+      "sec-ch-ua": "\"Opera\";v=\"79\", \"Chromium\";v=\"92\", \"OperaMobile\";v=\"65\", \" Not A;Brand\";v=\"99\"",
       "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-arch": "\"\"",
       "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua-platform-version": "\"11\"",
-      "sec-ch-ua-model": "\"Nokia 8.1\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "user-agent": "Mozilla/5.0 (Linux; Android 11; Nokia 8.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.104 Mobile Safari/537.36 OPR/67.1.3508.63168",
+      "sec-ch-ua-platform-version": "\"8.0.0\"",
+      "sec-ch-ua-model": "\"SM-A320FL\"",
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.0.0; SM-A320FL) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.166 Mobile Safari/537.36 OPR/65.2.3381.61420",
       "sec-fetch-site": "same-origin",
       "sec-fetch-mode": "navigate",
       "sec-fetch-user": "?1",
@@ -546,43 +545,47 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "11.0.0",
+      "version": "8.0.0",
       "manufacturer": "google"
     },
     "client": {
       "name": "Opera Mobile",
-      "version": "67.0.0",
+      "version": "65.0.0",
       "manufacturer": "opera",
       "type": "browser",
       "isbot": false
     },
     "engine": {
       "name": "Blink",
-      "version": "96.0.4664.104",
+      "version": "92.0.4515.166",
       "manufacturer": "google"
     }
   },
   {
     "headers": {
-      "device-memory": "2",
+      "device-memory": "8",
+      "downlink": "2.45",
       "dpr": "2",
-      "viewport-width": "980",
-      "rtt": "50",
-      "downlink": "10",
       "ect": "4g",
-      "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"99\"",
-      "sec-ch-ua-mobile": "?0",
+      "rtt": "100",
+      "sec-ch-device-memory": "8",
+      "sec-ch-dpr": "2",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"102\"",
       "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua-platform-version": "\"7.0.0\"",
-      "sec-ch-ua-model": "\"BAH-L09\"",
       "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-full-version-list": "\" Not A;Brand\";v=\"99.0.0.0\", \"Chromium\";v=\"99.0.4844.88\"",
-      "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.88 Safari/537.36 OPR/85.0.4341.13",
-      "sec-fetch-site": "same-origin",
+      "sec-ch-ua-full-version": "\"102.0.5005.134\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-model": "\"iPlay_40\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"10.0.0\"",
+      "sec-ch-viewport-width": "980",
+      "sec-fetch-dest": "document",
       "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "same-origin",
       "sec-fetch-user": "?1",
-      "sec-fetch-dest": "document"
+      "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.134 Safari/537.36 OPR/88.0.4412.53",
+      "viewport-width": "980"
     },
     "device": {
       "architecture": null,
@@ -606,19 +609,19 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "7.0.0",
+      "version": "10.0.0",
       "manufacturer": "google"
     },
     "client": {
       "name": "Opera",
-      "version": "85.0.4341.13",
+      "version": "102.0.5005.134",
       "manufacturer": "opera",
       "type": "browser",
       "isbot": false
     },
     "engine": {
       "name": "Blink",
-      "version": "99.0.4844.88",
+      "version": "102.0.5005.134",
       "manufacturer": "google"
     }
   }

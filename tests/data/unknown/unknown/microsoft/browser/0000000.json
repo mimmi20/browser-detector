@@ -1017,21 +1017,21 @@
   },
   {
     "headers": {
-      "device-memory": "8",
-      "dpr": "2.8125",
+      "device-memory": "2",
+      "dpr": "1.75",
       "viewport-width": "980",
       "rtt": "50",
       "downlink": "10",
       "ect": "4g",
       "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"99\", \"Microsoft Edge\";v=\"99\"",
-      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-mobile": "?0",
       "sec-ch-ua-arch": "\"\"",
       "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua-platform-version": "\"12.0.0\"",
-      "sec-ch-ua-model": "\"SM-G998B\"",
+      "sec-ch-ua-platform-version": "\"10.0.0\"",
+      "sec-ch-ua-model": "\"SM-T590\"",
       "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-full-version-list": "\" Not A;Brand\";v=\"99.0.0.0\", \"Chromium\";v=\"99.0.1150.55\", \"Microsoft Edge\";v=\"99.0.1150.55\"",
-      "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-G998B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Mobile Safari/537.36 EdgA/99.0.1150.55",
+      "sec-ch-ua-full-version-list": "\" Not A;Brand\";v=\"99.0.0.0\", \"Chromium\";v=\"99.0.1150.39\", \"Microsoft Edge\";v=\"99.0.1150.39\"",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; SM-T590) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36 EdgA/99.0.1150.39",
       "sec-fetch-site": "same-origin",
       "sec-fetch-mode": "navigate",
       "sec-fetch-user": "?1",
@@ -1052,26 +1052,26 @@
         "size": null
       },
       "type": null,
-      "ismobile": true,
+      "ismobile": false,
       "istv": false,
       "bits": null
     },
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "12.0.0",
+      "version": "10.0.0",
       "manufacturer": "google"
     },
     "client": {
       "name": "Edge Mobile",
-      "version": "99.0.1150.55",
+      "version": "99.0.1150.39",
       "manufacturer": "microsoft",
       "type": "browser",
       "isbot": false
     },
     "engine": {
       "name": "Blink",
-      "version": "99.0.4844.74",
+      "version": "99.0.4844.51",
       "manufacturer": "google"
     }
   },

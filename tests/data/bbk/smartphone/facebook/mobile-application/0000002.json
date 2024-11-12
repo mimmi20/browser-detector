@@ -43,6 +43,48 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 14; CPH2621 Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/127.0.6533.97 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/476.0.0.49.74;]"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "CPH2621",
+      "marketingName": "Nord CE4 Lite (India)",
+      "manufacturer": "bbk",
+      "brand": "oneplus",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.67
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Facebook App",
+      "version": "476.0.0.49.74",
+      "manufacturer": "facebook",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "127.0.6533.97",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "SupportsFresco=1 modular=3 Dalvik/2.1.0 (Linux; U; Android 11; vivo 1901 Build/RP1A.200720.012) [FBAN/EMA;FBBV/586070141;FBAV/402.0.0.10.113;FBDV/vivo 1901;FBSV/11;FBCX/OkHttp3;FBDM/{density=2.0}]"
     },
     "device": {
