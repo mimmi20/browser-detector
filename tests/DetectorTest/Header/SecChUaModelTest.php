@@ -125,6 +125,7 @@ final class SecChUaModelTest extends TestCase
             ['"LM-G900"', true, 'lg=lg lm-g900'],
             ['"LM-G850"', true, 'lg=lg lm-g850'],
             ['"LM-Q630"', true, 'lg=lg lm-q630'],
+            ['"LG-M700"', true, 'lg=lg m700'],
             // Acer
             ['"A100"', true, 'acer=acer a100'],
             ['"B1-860A"', true, 'acer=acer b1-860a'],
@@ -153,6 +154,7 @@ final class SecChUaModelTest extends TestCase
             ['"KFTBWI"', true, 'amazon=amazon kftbwi'],
             ['"KFAUWI"', true, 'amazon=amazon kfauwi'],
             ['"KFSAWI"', true, 'amazon=amazon kfsawi'],
+            ['"KFQUWI"', true, 'amazon=amazon kfquwi'],
             // Asus
             ['"P024"', true, 'asus=asus p024'],
             ['"ASUS_X00DD"', true, 'asus=asus x00dd'],
@@ -227,6 +229,7 @@ final class SecChUaModelTest extends TestCase
             ['"CPH2343"', true, 'oppo=oppo cph2343'],
             ['"CPH2273"', true, 'oppo=oppo cph2273'],
             ['"CPH2127"', true, 'oppo=oppo cph2127'],
+            ['"OPD2202"', true, 'oppo=oppo opd2202'],
             // Xiaomi
             ['"Redmi Note 9 Pro"', true, 'xiaomi=xiaomi redmi note 9 pro'],
             ['"M2103K19G"', true, 'xiaomi=xiaomi m2103k19g'],
@@ -445,6 +448,8 @@ final class SecChUaModelTest extends TestCase
             ['SM-T720', true, 'samsung=samsung sm-t720'],
             ['SM-M315F', true, 'samsung=samsung sm-m315f'],
             ['SM-G973F', true, 'samsung=samsung sm-g973f'],
+            ['SM-T719', true, 'samsung=samsung sm-t719'],
+            ['SM-G980F', true, 'samsung=samsung sm-g980f'],
             // Huawei
             ['"LGE-NX9"', true, 'huawei=huawei lge-nx9'],
             ['"VOG-L29"', true, 'huawei=huawei vog-l29'],
@@ -492,6 +497,7 @@ final class SecChUaModelTest extends TestCase
             ['"RNE-L21"', true, 'huawei=huawei rne-l21'],
             ['"POT-LX1"', true, 'huawei=huawei pot-lx1'],
             ['"SHT-AL09"', true, 'huawei=huawei sht-al09'],
+            ['"BAH-W09"', true, 'huawei=huawei bah-w09'],
             // Lenovo
             ['"Lenovo TB-X304F"', true, 'lenovo=lenovo tb-x304f'],
             ['"X1030X"', true, 'lenovo=lenovo x1030x'],
@@ -571,6 +577,7 @@ final class SecChUaModelTest extends TestCase
             ['"H8266"', true, 'sony=sony h8266'],
             ['"XQ-BC52"', true, 'sony=sony xq-bc52'],
             ['"XQ-AU52"', true, 'sony=sony xq-au52'],
+            ['"I4312"', true, 'sony=sony i4312'],
             // Vivo
             ['"V2109"', true, 'vivo=vivo v2109'],
             ['"vivo 1716"', true, 'vivo=vivo 1716'],

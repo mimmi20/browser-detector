@@ -42,6 +42,7 @@ final class SecChUaModel implements HeaderInterface
             'lm-g900' => 'lg=lg lm-g900',
             'lm-g850' => 'lg=lg lm-g850',
             'lm-q630' => 'lg=lg lm-q630',
+            'lg-m700' => 'lg=lg m700',
             // Acer
             'a100' => 'acer=acer a100',
             'a1-734' => 'acer=acer a1-734',
@@ -69,6 +70,7 @@ final class SecChUaModel implements HeaderInterface
             'kftbwi' => 'amazon=amazon kftbwi',
             'kfauwi' => 'amazon=amazon kfauwi',
             'kfsawi' => 'amazon=amazon kfsawi',
+            'kfquwi' => 'amazon=amazon kfquwi',
             // Asus
             'p024' => 'asus=asus p024',
             'asus_x00dd' => 'asus=asus x00dd',
@@ -143,6 +145,7 @@ final class SecChUaModel implements HeaderInterface
             'cph2343' => 'oppo=oppo cph2343',
             'cph2273' => 'oppo=oppo cph2273',
             'cph2127' => 'oppo=oppo cph2127',
+            'opd2202' => 'oppo=oppo opd2202',
             // Xiaomi
             'redmi note 9 pro' => 'xiaomi=xiaomi redmi note 9 pro',
             'redmi note 8 pro' => 'xiaomi=xiaomi redmi note 8 pro',
@@ -361,6 +364,8 @@ final class SecChUaModel implements HeaderInterface
             'sm-t720' => 'samsung=samsung sm-t720',
             'sm-m315f' => 'samsung=samsung sm-m315f',
             'sm-g973f' => 'samsung=samsung sm-g973f',
+            'sm-t719' => 'samsung=samsung sm-t719',
+            'sm-g980f' => 'samsung=samsung sm-g980f',
             // Huawei
             'mar-lx1b' => 'huawei=huawei mar-lx1b',
             'lya-l09' => 'huawei=huawei lya-l09',
@@ -409,6 +414,7 @@ final class SecChUaModel implements HeaderInterface
             'rne-l21' => 'huawei=huawei rne-l21',
             'pot-lx1' => 'huawei=huawei pot-lx1',
             'sht-al09' => 'huawei=huawei sht-al09',
+            'bah-w09' => 'huawei=huawei bah-w09',
             // Lenovo
             'lenovo tb-x304f' => 'lenovo=lenovo tb-x304f',
             'lenovo yt-j706f' => 'lenovo=lenovo yt-j706f',
@@ -488,6 +494,7 @@ final class SecChUaModel implements HeaderInterface
             'h8266' => 'sony=sony h8266',
             'xq-bc52' => 'sony=sony xq-bc52',
             'xq-au52' => 'sony=sony xq-au52',
+            'i4312' => 'sony=sony i4312',
             // Vivo
             'v2109' => 'vivo=vivo v2109',
             'vivo 1716' => 'vivo=vivo 1716',

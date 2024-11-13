@@ -1219,12 +1219,24 @@
   },
   {
     "headers": {
+      "device-memory": "4",
+      "dpr": "2.875",
+      "viewport-width": "980",
+      "rtt": "50",
+      "downlink": "10",
+      "ect": "4g",
       "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"101\", \"Microsoft Edge\";v=\"101\"",
       "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-arch": "\"\"",
       "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"11.0.0\"",
+      "sec-ch-ua-model": "\"XQ-AU52\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version-list": "\" Not A;Brand\";v=\"99.0.0.0\", \"Chromium\";v=\"101.0.1210.32\", \"Microsoft Edge\";v=\"101.0.1210.32\"",
       "user-agent": "Mozilla/5.0 (Linux; Android 11; XQ-AU52) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.41 Mobile Safari/537.36 EdgA/101.0.1210.32",
-      "sec-fetch-site": "none",
+      "sec-fetch-site": "same-origin",
       "sec-fetch-mode": "navigate",
+      "sec-fetch-user": "?1",
       "sec-fetch-dest": "document"
     },
     "device": {
@@ -1254,7 +1266,7 @@
     },
     "client": {
       "name": "Edge Mobile",
-      "version": "101.0.0",
+      "version": "101.0.1210.32",
       "manufacturer": "microsoft",
       "type": "browser",
       "isbot": false

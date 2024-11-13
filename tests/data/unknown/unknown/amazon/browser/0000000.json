@@ -2,28 +2,28 @@
   {
     "headers": {
       "device-memory": "2",
-      "downlink": "9.3",
-      "dpr": "2",
+      "downlink": "3.15",
+      "dpr": "1",
       "ect": "4g",
-      "rtt": "50",
+      "rtt": "150",
       "sec-ch-device-memory": "2",
-      "sec-ch-dpr": "2",
+      "sec-ch-dpr": "1",
       "sec-ch-prefers-color-scheme": "light",
-      "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"102\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-full-version": "\"102.0.5005.125\"",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not A(Brand\";v=\"24\", \"Chromium\";v=\"110\"",
+      "sec-ch-ua-full-version": "\"110.0.5481.212\"",
       "sec-ch-ua-mobile": "?0",
-      "sec-ch-ua-model": "\"KFSAWI\"",
+      "sec-ch-ua-model": "\"KFQUWI\"",
       "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua-platform-version": "\"5.1.1\"",
-      "sec-ch-viewport-width": "980",
-      "sec-fetch-dest": "document",
-      "sec-fetch-mode": "navigate",
+      "sec-ch-ua-platform-version": "\"11.0.0\"",
+      "sec-ch-viewport-height": "838",
+      "sec-ch-viewport-width": "600",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
       "sec-fetch-site": "same-origin",
-      "sec-fetch-user": "?1",
-      "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; KFSAWI) AppleWebKit/537.36 (KHTML, like Gecko) Silk/102.2.1 like Chrome/102.0.5005.125 Safari/537.36",
-      "viewport-width": "980"
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; KFQUWI) AppleWebKit/537.36 (KHTML, like Gecko) Silk/110.4.3 like Chrome/110.0.5481.212 Safari/537.36",
+      "viewport-width": "600",
+      "x-requested-with": "XMLHttpRequest"
     },
     "device": {
       "architecture": null,
@@ -47,19 +47,19 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "5.1.1",
+      "version": "11.0.0",
       "manufacturer": "google"
     },
     "client": {
       "name": "Silk",
-      "version": "102.0.5005.125",
+      "version": "110.0.5481.212",
       "manufacturer": "amazon",
       "type": "browser",
       "isbot": false
     },
     "engine": {
       "name": "Blink",
-      "version": "102.0.5005.125",
+      "version": "110.0.5481.212",
       "manufacturer": "google"
     }
   }
