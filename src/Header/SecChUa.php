@@ -63,6 +63,10 @@ final class SecChUa implements HeaderInterface
             'avastsecurebrowser' => 'avast secure browser',
             'wavebrowser' => 'wave-browser',
             'duckduckgo' => 'duckduck app',
+            'samsung internet' => 'samsungbrowser',
+            'norton secure browser', 'norton private browser' => 'norton-secure-browser',
+            'microsoft edge webview2' => 'edge webview',
+            'headlesschrome' => 'headless-chrome',
             default => $code,
         };
     }

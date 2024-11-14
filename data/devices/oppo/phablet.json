@@ -676,8 +676,24 @@
     "marketingName": "K3",
     "manufacturer": "bbk",
     "brand": "oppo",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2340,
+      "height": 1080,
+      "touch": true,
+      "size": 6.5
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "oppo pcgm00": {
+    "deviceName": "PCGM00",
+    "marketingName": "K3",
+    "manufacturer": "bbk",
+    "brand": "oppo",
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 2340,
       "height": 1080,

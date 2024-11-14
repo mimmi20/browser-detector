@@ -1752,5 +1752,27 @@
       ]
     },
     "engine": null
+  },
+  "microsoft-copilot": {
+    "name": "Microsoft Copilot",
+    "manufacturer": "microsoft",
+    "type": "application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "CopilotSapphire"
+      ]
+    },
+    "engine": null
+  },
+  "web.de mail": {
+    "name": "WEB.DE Mail",
+    "manufacturer": "einsundeins",
+    "type": "application",
+    "version": {
+      "class": null,
+      "search": null
+    },
+    "engine": null
   }
 }

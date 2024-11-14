@@ -26,7 +26,7 @@ final class SecChUaModel implements HeaderInterface
         $value = trim($this->value, '"');
         $code  = mb_strtolower($value);
 
-        return !in_array($code, ['', 'model'], true);
+        return !in_array($code, ['', 'model', ': '], true);
     }
 
     /** @throws void */
@@ -71,6 +71,7 @@ final class SecChUaModel implements HeaderInterface
             'kfauwi' => 'amazon=amazon kfauwi',
             'kfsawi' => 'amazon=amazon kfsawi',
             'kfquwi' => 'amazon=amazon kfquwi',
+            'aftt' => 'amazon=amazon aftt',
             // Asus
             'p024' => 'asus=asus p024',
             'asus_x00dd' => 'asus=asus x00dd',
@@ -366,6 +367,9 @@ final class SecChUaModel implements HeaderInterface
             'sm-g973f' => 'samsung=samsung sm-g973f',
             'sm-t719' => 'samsung=samsung sm-t719',
             'sm-g980f' => 'samsung=samsung sm-g980f',
+            'sm-t860' => 'samsung=samsung sm-t860',
+            'sm-a600fn' => 'samsung=samsung sm-a600fn',
+            'sm-a346b' => 'samsung=samsung sm-a346b',
             // Huawei
             'mar-lx1b' => 'huawei=huawei mar-lx1b',
             'lya-l09' => 'huawei=huawei lya-l09',
@@ -415,6 +419,7 @@ final class SecChUaModel implements HeaderInterface
             'pot-lx1' => 'huawei=huawei pot-lx1',
             'sht-al09' => 'huawei=huawei sht-al09',
             'bah-w09' => 'huawei=huawei bah-w09',
+            'ele-l29' => 'huawei=huawei ele-l29',
             // Lenovo
             'lenovo tb-x304f' => 'lenovo=lenovo tb-x304f',
             'lenovo yt-j706f' => 'lenovo=lenovo yt-j706f',
@@ -440,6 +445,7 @@ final class SecChUaModel implements HeaderInterface
             'nokia 8.1' => 'nokia=nokia 8.1',
             // Microsoft
             'surface duo' => 'microsoft=microsoft surface duo',
+            'xbox' => 'microsoft=microsoft xbox one',
             // realme
             'rmx3085' => 'realme=realme rmx3085',
             'rmx3231' => 'realme=realme rmx3231',
@@ -487,6 +493,7 @@ final class SecChUaModel implements HeaderInterface
             'motorola edge 30' => 'motorola=motorola edge 30',
             'motorola edge 30 ultra' => 'motorola=motorola edge 30 ultra',
             'moto g(20)' => 'motorola=motorola moto g20',
+            'motorola one' => 'motorola=motorola one',
             // Sony
             'xq-cc54' => 'sony=sony xq-cc54',
             'xq-bq52' => 'sony=sony xq-bq52',
@@ -540,6 +547,8 @@ final class SecChUaModel implements HeaderInterface
             'iplay_40' => 'alldocube=alldocube iplay 40',
             // dgtec
             'dg101hstb' => 'dgtec=dgtec dg101hstb',
+            // coopers
+            'cp20_gold' => 'coopers=coopers cocp20gold',
             default => null,
         };
     }

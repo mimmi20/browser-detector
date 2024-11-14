@@ -155,6 +155,7 @@ final class SecChUaModelTest extends TestCase
             ['"KFAUWI"', true, 'amazon=amazon kfauwi'],
             ['"KFSAWI"', true, 'amazon=amazon kfsawi'],
             ['"KFQUWI"', true, 'amazon=amazon kfquwi'],
+            ['"AFTT"', true, 'amazon=amazon aftt'],
             // Asus
             ['"P024"', true, 'asus=asus p024'],
             ['"ASUS_X00DD"', true, 'asus=asus x00dd'],
@@ -450,6 +451,9 @@ final class SecChUaModelTest extends TestCase
             ['SM-G973F', true, 'samsung=samsung sm-g973f'],
             ['SM-T719', true, 'samsung=samsung sm-t719'],
             ['SM-G980F', true, 'samsung=samsung sm-g980f'],
+            ['SM-T860', true, 'samsung=samsung sm-t860'],
+            ['SM-A600FN', true, 'samsung=samsung sm-a600fn'],
+            ['SM-A346B', true, 'samsung=samsung sm-a346b'],
             // Huawei
             ['"LGE-NX9"', true, 'huawei=huawei lge-nx9'],
             ['"VOG-L29"', true, 'huawei=huawei vog-l29'],
@@ -498,6 +502,7 @@ final class SecChUaModelTest extends TestCase
             ['"POT-LX1"', true, 'huawei=huawei pot-lx1'],
             ['"SHT-AL09"', true, 'huawei=huawei sht-al09'],
             ['"BAH-W09"', true, 'huawei=huawei bah-w09'],
+            ['"ELE-L29"', true, 'huawei=huawei ele-l29'],
             // Lenovo
             ['"Lenovo TB-X304F"', true, 'lenovo=lenovo tb-x304f'],
             ['"X1030X"', true, 'lenovo=lenovo x1030x'],
@@ -523,6 +528,7 @@ final class SecChUaModelTest extends TestCase
             ['"Nokia 8.1"', true, 'nokia=nokia 8.1'],
             // Microsoft
             ['"Surface Duo"', true, 'microsoft=microsoft surface duo'],
+            ['"Xbox"', true, 'microsoft=microsoft xbox one'],
             // realme
             ['"RMX3085"', true, 'realme=realme rmx3085'],
             ['"RMX3231"', true, 'realme=realme rmx3231'],
@@ -570,6 +576,7 @@ final class SecChUaModelTest extends TestCase
             ['"motorola edge 30"', true, 'motorola=motorola edge 30'],
             ['"motorola edge 30 ultra"', true, 'motorola=motorola edge 30 ultra'],
             ['moto g(20)', true, 'motorola=motorola moto g20'],
+            ['motorola one', true, 'motorola=motorola one'],
             // Sony
             ['"XQ-CC54"', true, 'sony=sony xq-cc54'],
             ['"XQ-BQ52"', true, 'sony=sony xq-bq52'],
@@ -623,8 +630,11 @@ final class SecChUaModelTest extends TestCase
             ['"iPlay_40"', true, 'alldocube=alldocube iplay 40'],
             // dgtec
             ['"DG101HSTB"', true, 'dgtec=dgtec dg101hstb'],
+            // coopers
+            ['"CP20_Gold"', true, 'coopers=coopers cocp20gold'],
             // other
             ['"Model"', false, null],
+            ['": "', false, null],
             ['""', false, null],
         ];
     }
