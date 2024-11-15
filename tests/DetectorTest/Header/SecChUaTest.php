@@ -147,13 +147,13 @@ final class SecChUaTest extends TestCase
             ['"Not/A)Brand";v="8", "Chromium";v="126", "Android WebView";v="126"', true, 'android webview', true, '126'],
             ['"Not/A)Brand";v="99", "Samsung Internet";v="23.0", "Chromium";v="115"', true, 'samsungbrowser', true, '23.0'],
             ['"Not/A)Brand";v="99.0.0.0", "Norton Secure Browser";v="115.0.21984.175", "Chromium";v="115.0.21984.175"', true, 'norton-secure-browser', true, '115.0.21984.175'],
-            ["\"Microsoft Edge\";v=\"111\", \"Not(A:Brand\";v=\"8\", \"Chromium\";v=\"111\", \"Microsoft Edge WebView2\";v=\"111\"", true, 'edge webview', true, '111'],
-            ["\"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"126\", \"HeadlessChrome\";v=\"126\"", true, 'headless-chrome', true, '126'],
-            ["\"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"126\", \"YaBrowser\";v=\"24.7\", \"Yowser\";v=\"2.5\"", true, 'yowser', true, '2.5'],
-            ["\"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"126\", \"Norton Private Browser\";v=\"126\"", true, 'norton-secure-browser', true, '126'],
-            ["\"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"126\", \"Vivaldi\";v=\"6.8\"", true, 'vivaldi', true, '6.8'],
-            ["\"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"126\", \"AVG Secure Browser\";v=\"126\"", true, 'avg secure browser', true, '126'],
-            ["\"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"126\", \"YaBrowser\";v=\"24.7\"", true, 'yabrowser', true, '24.7'],
+            ['"Microsoft Edge";v="111", "Not(A:Brand";v="8", "Chromium";v="111", "Microsoft Edge WebView2";v="111"', true, 'edge webview', true, '111'],
+            ['"Not/A)Brand";v="8", "Chromium";v="126", "HeadlessChrome";v="126"', true, 'headless-chrome', true, '126'],
+            ['"Not/A)Brand";v="8", "Chromium";v="126", "YaBrowser";v="24.7", "Yowser";v="2.5"', true, 'yowser', true, '2.5'],
+            ['"Not/A)Brand";v="8", "Chromium";v="126", "Norton Private Browser";v="126"', true, 'norton-secure-browser', true, '126'],
+            ['"Not/A)Brand";v="8", "Chromium";v="126", "Vivaldi";v="6.8"', true, 'vivaldi', true, '6.8'],
+            ['"Not/A)Brand";v="8", "Chromium";v="126", "AVG Secure Browser";v="126"', true, 'avg secure browser', true, '126'],
+            ['"Not/A)Brand";v="8", "Chromium";v="126", "YaBrowser";v="24.7"', true, 'yabrowser', true, '24.7'],
         ];
     }
 }

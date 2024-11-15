@@ -1640,6 +1640,48 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; TET-AN10 Build/HUAWEITET-AN10; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/76.0.3809.89 Safari/537.36 T7/12.26 BDOS/1.0 (HarmonyOS 2.2.0) SP-engine/2.36.0 baiduboxapp/12.26.5.10 (Baidu; P1 10) NABar/1.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "TET-AN10",
+      "marketingName": "Mate X2",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2480,
+        "height": 2200,
+        "touch": true,
+        "size": 8
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "HarmonyOS",
+      "marketingName": "HarmonyOS",
+      "version": "2.2.0",
+      "manufacturer": "huawei"
+    },
+    "client": {
+      "name": "Baidu Box App",
+      "version": "12.26.5.10",
+      "manufacturer": "baidu",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "T7",
+      "version": "12.26.0",
+      "manufacturer": "baidu"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 11; BNE-AL00 Build/HUAWEIBNE-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/13.25 BDOS/1.0 (HarmonyOS 2.2.0) SP-engine/2.63.0 baiduboxapp/13.25.0.10 (Baidu; P1 11) NABar/1.0"
     },
     "device": {
@@ -1677,6 +1719,90 @@
     "engine": {
       "name": "T7",
       "version": "13.25.0",
+      "manufacturer": "baidu"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; FRL-TN00 Build/HUAWEIFRL-TN00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/13.32 BDOS/1.0 (HarmonyOS 2.2.0) SP-engine/2.70.0 baiduboxapp/13.32.0.10 (Baidu; P1 10) NABar/1.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "FRL-TN00",
+      "marketingName": "Enjoy 20 Plus",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.63
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "HarmonyOS",
+      "marketingName": "HarmonyOS",
+      "version": "2.2.0",
+      "manufacturer": "huawei"
+    },
+    "client": {
+      "name": "Baidu Box App",
+      "version": "13.32.0.10",
+      "manufacturer": "baidu",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "T7",
+      "version": "13.32.0",
+      "manufacturer": "baidu"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; LNA-AL00 Build/HUAWEILNA-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/13.32 BDOS/1.0 (HarmonyOS 3.0.0) SP-engine/2.70.0 baiduboxapp/13.32.5.10 (Baidu; P1 12) NABar"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "LNA-AL00",
+      "marketingName": "P60",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2700,
+        "height": 1220,
+        "touch": true,
+        "size": 6.67
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "HarmonyOS",
+      "marketingName": "HarmonyOS",
+      "version": "3.0.0",
+      "manufacturer": "huawei"
+    },
+    "client": {
+      "name": "Baidu Box App",
+      "version": "13.32.5.10",
+      "manufacturer": "baidu",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "T7",
+      "version": "13.32.0",
       "manufacturer": "baidu"
     }
   },
@@ -1971,6 +2097,48 @@
     "engine": {
       "name": "T7",
       "version": "13.51.0",
+      "manufacturer": "baidu"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; NOH-AN80 Build/HUAWEINOH-AN80; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36 T7/13.53 BDOS/1.0 (HarmonyOS 3.0.0) SP-engine/2.91.0 baiduboxapp/13.53.5.10 (Baidu; P1 12) NABar/1.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "NOH-AN80",
+      "marketingName": "Mate 40E Pro 5G",
+      "manufacturer": "huawei",
+      "brand": "huawei",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2772,
+        "height": 1344,
+        "touch": true,
+        "size": 6.8
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "HarmonyOS",
+      "marketingName": "HarmonyOS",
+      "version": "3.0.0",
+      "manufacturer": "huawei"
+    },
+    "client": {
+      "name": "Baidu Box App",
+      "version": "13.53.5.10",
+      "manufacturer": "baidu",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "T7",
+      "version": "13.53.0",
       "manufacturer": "baidu"
     }
   },
