@@ -54,32 +54,6 @@ updates:
       include: "scope"
       prefix: "composer"
 
-    ignore:
-      - dependency-name: "browscap/browscap"
-      - dependency-name: "elasticsearch/elasticsearch"
-      - dependency-name: "endorphin-studio/browser-detector-tests"
-      - dependency-name: "illuminate/config"
-      - dependency-name: "illuminate/container"
-      - dependency-name: "illuminate/contracts"
-      - dependency-name: "illuminate/events"
-      - dependency-name: "illuminate/filesystem"
-      - dependency-name: "illuminate/view"
-      - dependency-name: "infection/infection"
-      - dependency-name: "laminas/laminas-diactoros"
-      - dependency-name: "laminas/laminas-servicemanager"
-      - dependency-name: "nikic/php-parser"
-      - dependency-name: "phpunit/phpunit"
-      - dependency-name: "predis/predis"
-      - dependency-name: "psr/container"
-      - dependency-name: "psr/http-message"
-      - dependency-name: "psr/log"
-      - dependency-name: "psr/simple-cache"
-      - dependency-name: "symfony/console"
-      - dependency-name: "symfony/filesystem"
-      - dependency-name: "symfony/finder"
-      - dependency-name: "symfony/http-foundation"
-      - dependency-name: "symfony/yaml"
-
     # Disable rebasing for all pull requests
     rebase-strategy: "disabled"
 
