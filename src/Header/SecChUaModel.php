@@ -232,6 +232,7 @@ final class SecChUaModel implements HeaderInterface
             'm2007j3sg' => 'xiaomi=xiaomi m2007j3sg',
             'mi note 2' => 'xiaomi=xiaomi mi note 2',
             'redmi note 8t' => 'xiaomi=xiaomi redmi note 8t',
+            '2405crpfdc' => 'xiaomi=xiaomi 2405crpfdc',
             // ZTE
             'zte a2121e' => 'zte=zte a2121e',
             'zte blade 10 vita' => 'zte=zte blade 10 vita',
@@ -370,6 +371,8 @@ final class SecChUaModel implements HeaderInterface
             'sm-t860' => 'samsung=samsung sm-t860',
             'sm-a600fn' => 'samsung=samsung sm-a600fn',
             'sm-a346b' => 'samsung=samsung sm-a346b',
+            'sm-a520f' => 'samsung=samsung sm-a520f',
+            'sm-g935f' => 'samsung=samsung sm-g935f',
             // Huawei
             'mar-lx1b' => 'huawei=huawei mar-lx1b',
             'lya-l09' => 'huawei=huawei lya-l09',
@@ -420,6 +423,7 @@ final class SecChUaModel implements HeaderInterface
             'sht-al09' => 'huawei=huawei sht-al09',
             'bah-w09' => 'huawei=huawei bah-w09',
             'ele-l29' => 'huawei=huawei ele-l29',
+            'fig-lx1' => 'huawei=huawei fig-lx1',
             // Lenovo
             'lenovo tb-x304f' => 'lenovo=lenovo tb-x304f',
             'lenovo yt-j706f' => 'lenovo=lenovo yt-j706f',
@@ -443,6 +447,7 @@ final class SecChUaModel implements HeaderInterface
             'nokia 8.3 5g' => 'nokia=nokia 8.3 5g',
             'nokia g11' => 'nokia=nokia g11',
             'nokia 8.1' => 'nokia=nokia 8.1',
+            'nokia 5.1' => 'nokia=nokia 5.1',
             // Microsoft
             'surface duo' => 'microsoft=microsoft surface duo',
             'xbox' => 'microsoft=microsoft xbox one',
@@ -494,6 +499,7 @@ final class SecChUaModel implements HeaderInterface
             'motorola edge 30 ultra' => 'motorola=motorola edge 30 ultra',
             'moto g(20)' => 'motorola=motorola moto g20',
             'motorola one' => 'motorola=motorola one',
+            'motorola one vision' => 'motorola=motorola one vision',
             // Sony
             'xq-cc54' => 'sony=sony xq-cc54',
             'xq-bq52' => 'sony=sony xq-bq52',
