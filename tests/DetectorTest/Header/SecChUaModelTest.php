@@ -457,6 +457,9 @@ final class SecChUaModelTest extends TestCase
             ['SM-A346B', true, 'samsung=samsung sm-a346b'],
             ['SM-A520F', true, 'samsung=samsung sm-a520f'],
             ['SM-G935F', true, 'samsung=samsung sm-g935f'],
+            ['SM-G991B', true, 'samsung=samsung sm-g991b'],
+            ['SM-G981B', true, 'samsung=samsung sm-g981b'],
+            ['SCG22', true, 'samsung=samsung scg22'],
             // Huawei
             ['"LGE-NX9"', true, 'huawei=huawei lge-nx9'],
             ['"VOG-L29"', true, 'huawei=huawei vog-l29'],
@@ -507,6 +510,7 @@ final class SecChUaModelTest extends TestCase
             ['"BAH-W09"', true, 'huawei=huawei bah-w09'],
             ['"ELE-L29"', true, 'huawei=huawei ele-l29'],
             ['"FIG-LX1"', true, 'huawei=huawei fig-lx1'],
+            ['"MAR-LX1A"', true, 'huawei=huawei mar-lx1a'],
             // Lenovo
             ['"Lenovo TB-X304F"', true, 'lenovo=lenovo tb-x304f'],
             ['"X1030X"', true, 'lenovo=lenovo x1030x'],
@@ -531,6 +535,7 @@ final class SecChUaModelTest extends TestCase
             ['"Nokia G11"', true, 'nokia=nokia g11'],
             ['"Nokia 8.1"', true, 'nokia=nokia 8.1'],
             ['"Nokia 5.1"', true, 'nokia=nokia 5.1'],
+            ['"Nokia 7.1"', true, 'nokia=nokia 7.1'],
             // Microsoft
             ['"Surface Duo"', true, 'microsoft=microsoft surface duo'],
             ['"Xbox"', true, 'microsoft=microsoft xbox one'],
@@ -591,6 +596,7 @@ final class SecChUaModelTest extends TestCase
             ['"XQ-BC52"', true, 'sony=sony xq-bc52'],
             ['"XQ-AU52"', true, 'sony=sony xq-au52'],
             ['"I4312"', true, 'sony=sony i4312'],
+            ['"F5321"', true, 'sony=sony f5321'],
             // Vivo
             ['"V2109"', true, 'vivo=vivo v2109'],
             ['"vivo 1716"', true, 'vivo=vivo 1716'],

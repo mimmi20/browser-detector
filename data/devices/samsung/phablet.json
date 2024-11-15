@@ -2990,5 +2990,21 @@
     },
     "type": "phablet",
     "platform": "android"
+  },
+  "samsung scg22": {
+    "deviceName": "SCG22",
+    "marketingName": "Galaxy Z Fold5",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2176,
+      "height": 1812,
+      "touch": true,
+      "size": 7.6
+    },
+    "type": "phablet",
+    "platform": "android"
   }
 }

@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <phpunit
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="vendor/phpunit/phpunit/phpunit.xsd"
@@ -53,7 +52,7 @@
         </testsuite>
     </testsuites>
 
-    <coverage includeUncoveredFiles="true">
+    <coverage>
         <report>
             <clover outputFile=".reports/clover.xml"/>
             <html outputDirectory=".reports/report/" lowUpperBound="50" highLowerBound="80"/>

@@ -373,6 +373,9 @@ final class SecChUaModel implements HeaderInterface
             'sm-a346b' => 'samsung=samsung sm-a346b',
             'sm-a520f' => 'samsung=samsung sm-a520f',
             'sm-g935f' => 'samsung=samsung sm-g935f',
+            'sm-g991b' => 'samsung=samsung sm-g991b',
+            'sm-g981b' => 'samsung=samsung sm-g981b',
+            'scg22' => 'samsung=samsung scg22',
             // Huawei
             'mar-lx1b' => 'huawei=huawei mar-lx1b',
             'lya-l09' => 'huawei=huawei lya-l09',
@@ -424,6 +427,7 @@ final class SecChUaModel implements HeaderInterface
             'bah-w09' => 'huawei=huawei bah-w09',
             'ele-l29' => 'huawei=huawei ele-l29',
             'fig-lx1' => 'huawei=huawei fig-lx1',
+            'mar-lx1a' => 'huawei=huawei mar-lx1a',
             // Lenovo
             'lenovo tb-x304f' => 'lenovo=lenovo tb-x304f',
             'lenovo yt-j706f' => 'lenovo=lenovo yt-j706f',
@@ -448,6 +452,7 @@ final class SecChUaModel implements HeaderInterface
             'nokia g11' => 'nokia=nokia g11',
             'nokia 8.1' => 'nokia=nokia 8.1',
             'nokia 5.1' => 'nokia=nokia 5.1',
+            'nokia 7.1' => 'nokia=nokia 7.1',
             // Microsoft
             'surface duo' => 'microsoft=microsoft surface duo',
             'xbox' => 'microsoft=microsoft xbox one',
@@ -508,6 +513,7 @@ final class SecChUaModel implements HeaderInterface
             'xq-bc52' => 'sony=sony xq-bc52',
             'xq-au52' => 'sony=sony xq-au52',
             'i4312' => 'sony=sony i4312',
+            'f5321' => 'sony=sony f5321',
             // Vivo
             'v2109' => 'vivo=vivo v2109',
             'vivo 1716' => 'vivo=vivo 1716',
