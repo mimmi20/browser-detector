@@ -317,6 +317,7 @@ final class SecChUaModelTest extends TestCase
             ['"Mi Note 2"', true, 'xiaomi=xiaomi mi note 2'],
             ['"Redmi Note 8T"', true, 'xiaomi=xiaomi redmi note 8t'],
             ['"2405CRPFDC"', true, 'xiaomi=xiaomi 2405crpfdc'],
+            ['"Redmi Note 9S"', true, 'xiaomi=xiaomi redmi note 9s'],
             // ZTE
             ['"ZTE A2121E"', true, 'zte=zte a2121e'],
             ['"ZTE Blade 10 Vita"', true, 'zte=zte blade 10 vita'],
@@ -460,6 +461,8 @@ final class SecChUaModelTest extends TestCase
             ['SM-G991B', true, 'samsung=samsung sm-g991b'],
             ['SM-G981B', true, 'samsung=samsung sm-g981b'],
             ['SCG22', true, 'samsung=samsung scg22'],
+            ['SM-G900F', true, 'samsung=samsung sm-g900f'],
+            ['SM-A605FN', true, 'samsung=samsung sm-a605fn'],
             // Huawei
             ['"LGE-NX9"', true, 'huawei=huawei lge-nx9'],
             ['"VOG-L29"', true, 'huawei=huawei vog-l29'],
@@ -511,6 +514,7 @@ final class SecChUaModelTest extends TestCase
             ['"ELE-L29"', true, 'huawei=huawei ele-l29'],
             ['"FIG-LX1"', true, 'huawei=huawei fig-lx1'],
             ['"MAR-LX1A"', true, 'huawei=huawei mar-lx1a'],
+            ['"BLA-L09"', true, 'huawei=huawei bla-l09'],
             // Lenovo
             ['"Lenovo TB-X304F"', true, 'lenovo=lenovo tb-x304f'],
             ['"X1030X"', true, 'lenovo=lenovo x1030x'],
@@ -522,6 +526,7 @@ final class SecChUaModelTest extends TestCase
             ['"Lenovo TB-X606F"', true, 'lenovo=lenovo tb-x606f'],
             ['"Lenovo TB-8705F"', true, 'lenovo=lenovo tb-8705f'],
             ['"Lenovo TB-8505X"', true, 'lenovo=lenovo tb-8505x'],
+            ['"Lenovo TB-X605F"', true, 'lenovo=lenovo tb-x605f'],
             // Nokia
             ['"Nokia G50"', true, 'nokia=nokia g50'],
             ['"Nokia G20"', true, 'nokia=nokia g20'],
@@ -536,6 +541,7 @@ final class SecChUaModelTest extends TestCase
             ['"Nokia 8.1"', true, 'nokia=nokia 8.1'],
             ['"Nokia 5.1"', true, 'nokia=nokia 5.1'],
             ['"Nokia 7.1"', true, 'nokia=nokia 7.1'],
+            ['"Nokia 7.2"', true, 'nokia=nokia 7.2'],
             // Microsoft
             ['"Surface Duo"', true, 'microsoft=microsoft surface duo'],
             ['"Xbox"', true, 'microsoft=microsoft xbox one'],

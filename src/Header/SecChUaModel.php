@@ -233,6 +233,7 @@ final class SecChUaModel implements HeaderInterface
             'mi note 2' => 'xiaomi=xiaomi mi note 2',
             'redmi note 8t' => 'xiaomi=xiaomi redmi note 8t',
             '2405crpfdc' => 'xiaomi=xiaomi 2405crpfdc',
+            'redmi note 9s' => 'xiaomi=xiaomi redmi note 9s',
             // ZTE
             'zte a2121e' => 'zte=zte a2121e',
             'zte blade 10 vita' => 'zte=zte blade 10 vita',
@@ -376,6 +377,8 @@ final class SecChUaModel implements HeaderInterface
             'sm-g991b' => 'samsung=samsung sm-g991b',
             'sm-g981b' => 'samsung=samsung sm-g981b',
             'scg22' => 'samsung=samsung scg22',
+            'sm-g900f' => 'samsung=samsung sm-g900f',
+            'sm-a605fn' => 'samsung=samsung sm-a605fn',
             // Huawei
             'mar-lx1b' => 'huawei=huawei mar-lx1b',
             'lya-l09' => 'huawei=huawei lya-l09',
@@ -428,6 +431,7 @@ final class SecChUaModel implements HeaderInterface
             'ele-l29' => 'huawei=huawei ele-l29',
             'fig-lx1' => 'huawei=huawei fig-lx1',
             'mar-lx1a' => 'huawei=huawei mar-lx1a',
+            'bla-l09' => 'huawei=huawei bla-l09',
             // Lenovo
             'lenovo tb-x304f' => 'lenovo=lenovo tb-x304f',
             'lenovo yt-j706f' => 'lenovo=lenovo yt-j706f',
@@ -439,6 +443,7 @@ final class SecChUaModel implements HeaderInterface
             'lenovo tb-x606f' => 'lenovo=lenovo tb-x606f',
             'lenovo tb-8705f' => 'lenovo=lenovo tb-8705f',
             'lenovo tb-8505x' => 'lenovo=lenovo tb-8505x',
+            'lenovo tb-x605f' => 'lenovo=lenovo tb-x605f',
             // Nokia
             'nokia g50' => 'nokia=nokia g50',
             'nokia g20' => 'nokia=nokia g20',
@@ -453,6 +458,7 @@ final class SecChUaModel implements HeaderInterface
             'nokia 8.1' => 'nokia=nokia 8.1',
             'nokia 5.1' => 'nokia=nokia 5.1',
             'nokia 7.1' => 'nokia=nokia 7.1',
+            'nokia 7.2' => 'nokia=nokia 7.2',
             // Microsoft
             'surface duo' => 'microsoft=microsoft surface duo',
             'xbox' => 'microsoft=microsoft xbox one',
