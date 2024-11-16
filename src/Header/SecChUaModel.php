@@ -95,6 +95,7 @@ final class SecChUaModel implements HeaderInterface
             'pixel 7a' => 'google=google pixel 7a',
             'pixel 7 pro' => 'google=google pixel 7 pro',
             'pixel 8' => 'google=google pixel 8',
+            'kukui' => 'google=google kukui',
             // OnePlus
             'ac2003' => 'oneplus=oneplus ac2003',
             'in2023' => 'oneplus=oneplus in2023',
@@ -234,6 +235,7 @@ final class SecChUaModel implements HeaderInterface
             'redmi note 8t' => 'xiaomi=xiaomi redmi note 8t',
             '2405crpfdc' => 'xiaomi=xiaomi 2405crpfdc',
             'redmi note 9s' => 'xiaomi=xiaomi redmi note 9s',
+            'mi a2 lite' => 'xiaomi=xiaomi mi a2 lite',
             // ZTE
             'zte a2121e' => 'zte=zte a2121e',
             'zte blade 10 vita' => 'zte=zte blade 10 vita',
@@ -379,6 +381,9 @@ final class SecChUaModel implements HeaderInterface
             'scg22' => 'samsung=samsung scg22',
             'sm-g900f' => 'samsung=samsung sm-g900f',
             'sm-a605fn' => 'samsung=samsung sm-a605fn',
+            'sm-t805' => 'samsung=samsung sm-t805',
+            'sm-s921b' => 'samsung=samsung sm-s921b',
+            'sm-g781v' => 'samsung=samsung sm-g781v',
             // Huawei
             'mar-lx1b' => 'huawei=huawei mar-lx1b',
             'lya-l09' => 'huawei=huawei lya-l09',
@@ -432,6 +437,8 @@ final class SecChUaModel implements HeaderInterface
             'fig-lx1' => 'huawei=huawei fig-lx1',
             'mar-lx1a' => 'huawei=huawei mar-lx1a',
             'bla-l09' => 'huawei=huawei bla-l09',
+            'cmr-al09' => 'huawei=huawei cmr-al09',
+            'eml-l29' => 'huawei=huawei eml-l29',
             // Lenovo
             'lenovo tb-x304f' => 'lenovo=lenovo tb-x304f',
             'lenovo yt-j706f' => 'lenovo=lenovo yt-j706f',

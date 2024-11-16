@@ -1409,5 +1409,175 @@
         "Pardus"
       ]
     }
+  },
+  "fuchsia": {
+    "name": "Fuchsia",
+    "marketingName": "Fuchsia",
+    "manufacturer": "google",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Fuchsia"
+      ]
+    }
+  },
+  "leaf-os": {
+    "name": "LeafOS",
+    "marketingName": "LeafOS",
+    "manufacturer": "n-computing",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "LeafOS"
+      ]
+    }
+  },
+  "puffin-os": {
+    "name": "Puffin OS",
+    "marketingName": "Puffin OS",
+    "manufacturer": "cloud-mosa",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Cloud Phone"
+      ]
+    }
+  },
+  "rising-os": {
+    "name": "risingOS",
+    "marketingName": "risingOS",
+    "manufacturer": "unknown",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "RisingOS"
+      ]
+    }
+  },
+  "azure-linux": {
+    "name": "Azure Linux",
+    "marketingName": "Azure Linux",
+    "manufacturer": "microsoft",
+    "version": {
+      "factory": null,
+      "search": null
+    }
+  },
+  "vizi-os": {
+    "name": "ViziOS",
+    "marketingName": "ViziOS",
+    "manufacturer": "vizio",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "ViziOS"
+      ]
+    }
+  },
+  "black-panther-os": {
+    "name": "blackPanther OS",
+    "marketingName": "blackPanther OS",
+    "manufacturer": "unknown",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "blackPanther OS"
+      ]
+    }
+  },
+  "kin-os": {
+    "name": "KIN OS",
+    "marketingName": "KIN OS",
+    "manufacturer": "microsoft",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "KIN\\.(?:One|Two)"
+      ]
+    }
+  },
+  "wo-phone": {
+    "name": "WoPhone",
+    "marketingName": "WoPhone",
+    "manufacturer": "unknown",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "WoPhone"
+      ]
+    }
+  },
+  "star-blade-os": {
+    "name": "Star-Blade OS",
+    "marketingName": "Star-Blade OS",
+    "manufacturer": "unknown",
+    "version": {
+      "factory": null,
+      "search": null
+    }
+  },
+  "aros": {
+    "name": "AROS",
+    "marketingName": "AROS",
+    "manufacturer": "unknown",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "AROS"
+      ]
+    }
+  },
+  "turbolinux": {
+    "name": "Turbolinux",
+    "marketingName": "Turbolinux",
+    "manufacturer": "unknown",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Turbolinux"
+      ]
+    }
+  },
+  "genix": {
+    "name": "GENIX",
+    "marketingName": "GENIX",
+    "manufacturer": "unknown",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "GENIX"
+      ]
+    }
+  },
+  "next-step": {
+    "name": "NeXTSTEP",
+    "marketingName": "NeXTSTEP",
+    "manufacturer": "unknown",
+    "version": {
+      "factory": null,
+      "search": null
+    }
+  },
+  "news-os": {
+    "name": "NEWS-OS",
+    "marketingName": "NEWS-OS",
+    "manufacturer": "sony",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "NEWS-OS"
+      ]
+    }
+  },
+  "ultrix": {
+    "name": "ULTRIX",
+    "marketingName": "ULTRIX",
+    "manufacturer": "dec",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "ULTRIX"
+      ]
+    }
   }
 }

@@ -179,6 +179,7 @@ final class SecChUaModelTest extends TestCase
             ['"Pixel 7a"', true, 'google=google pixel 7a'],
             ['"Pixel 4"', true, 'google=google pixel 4'],
             ['"Pixel 8"', true, 'google=google pixel 8'],
+            ['"kukui"', true, 'google=google kukui'],
             // OnePlus
             ['"AC2003"', true, 'oneplus=oneplus ac2003'],
             ['"IN2023"', true, 'oneplus=oneplus in2023'],
@@ -318,6 +319,7 @@ final class SecChUaModelTest extends TestCase
             ['"Redmi Note 8T"', true, 'xiaomi=xiaomi redmi note 8t'],
             ['"2405CRPFDC"', true, 'xiaomi=xiaomi 2405crpfdc'],
             ['"Redmi Note 9S"', true, 'xiaomi=xiaomi redmi note 9s'],
+            ['"Mi A2 Lite"', true, 'xiaomi=xiaomi mi a2 lite'],
             // ZTE
             ['"ZTE A2121E"', true, 'zte=zte a2121e'],
             ['"ZTE Blade 10 Vita"', true, 'zte=zte blade 10 vita'],
@@ -463,6 +465,9 @@ final class SecChUaModelTest extends TestCase
             ['SCG22', true, 'samsung=samsung scg22'],
             ['SM-G900F', true, 'samsung=samsung sm-g900f'],
             ['SM-A605FN', true, 'samsung=samsung sm-a605fn'],
+            ['SM-T805', true, 'samsung=samsung sm-t805'],
+            ['SM-S921B', true, 'samsung=samsung sm-s921b'],
+            ['SM-G781V', true, 'samsung=samsung sm-g781v'],
             // Huawei
             ['"LGE-NX9"', true, 'huawei=huawei lge-nx9'],
             ['"VOG-L29"', true, 'huawei=huawei vog-l29'],
@@ -515,6 +520,8 @@ final class SecChUaModelTest extends TestCase
             ['"FIG-LX1"', true, 'huawei=huawei fig-lx1'],
             ['"MAR-LX1A"', true, 'huawei=huawei mar-lx1a'],
             ['"BLA-L09"', true, 'huawei=huawei bla-l09'],
+            ['"CMR-AL09"', true, 'huawei=huawei cmr-al09'],
+            ['"EML-L29"', true, 'huawei=huawei eml-l29'],
             // Lenovo
             ['"Lenovo TB-X304F"', true, 'lenovo=lenovo tb-x304f'],
             ['"X1030X"', true, 'lenovo=lenovo x1030x'],

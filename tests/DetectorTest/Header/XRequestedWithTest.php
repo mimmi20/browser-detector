@@ -375,6 +375,7 @@ final class XRequestedWithTest extends TestCase
             ['com.baidu.searchbox.lite', true, 'baidu box app lite', true, null],
             ['com.microsoft.copilot', true, 'microsoft-copilot', true, null],
             ['de.web.mobile.android.mail', true, 'web.de mail', true, null],
+            ['com.readly.client', true, 'readly-app', true, null],
             // ['webexplorer.amazing.biro', true, '', true, null],
         ];
     }
