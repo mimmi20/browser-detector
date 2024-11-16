@@ -468,6 +468,9 @@ final class SecChUaModelTest extends TestCase
             ['SM-T805', true, 'samsung=samsung sm-t805'],
             ['SM-S921B', true, 'samsung=samsung sm-s921b'],
             ['SM-G781V', true, 'samsung=samsung sm-g781v'],
+            ['SM-T500', true, 'samsung=samsung sm-t500'],
+            ['SM-N770F', true, 'samsung=samsung sm-n770f'],
+            ['SM-T865', true, 'samsung=samsung sm-t865'],
             // Huawei
             ['"LGE-NX9"', true, 'huawei=huawei lge-nx9'],
             ['"VOG-L29"', true, 'huawei=huawei vog-l29'],
@@ -522,6 +525,7 @@ final class SecChUaModelTest extends TestCase
             ['"BLA-L09"', true, 'huawei=huawei bla-l09'],
             ['"CMR-AL09"', true, 'huawei=huawei cmr-al09'],
             ['"EML-L29"', true, 'huawei=huawei eml-l29'],
+            ['"MRD-LX1"', true, 'huawei=huawei mrd-lx1'],
             // Lenovo
             ['"Lenovo TB-X304F"', true, 'lenovo=lenovo tb-x304f'],
             ['"X1030X"', true, 'lenovo=lenovo x1030x'],
@@ -657,6 +661,8 @@ final class SecChUaModelTest extends TestCase
             ['"DG101HSTB"', true, 'dgtec=dgtec dg101hstb'],
             // coopers
             ['"CP20_Gold"', true, 'coopers=coopers cocp20gold'],
+            // blackview
+            ['"BV6800Pro"', true, 'blackview=blackview bv6800 pro'],
             // other
             ['"Model"', false, null],
             ['": "', false, null],

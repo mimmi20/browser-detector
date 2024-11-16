@@ -384,6 +384,9 @@ final class SecChUaModel implements HeaderInterface
             'sm-t805' => 'samsung=samsung sm-t805',
             'sm-s921b' => 'samsung=samsung sm-s921b',
             'sm-g781v' => 'samsung=samsung sm-g781v',
+            'sm-t500' => 'samsung=samsung sm-t500',
+            'sm-n770f' => 'samsung=samsung sm-n770f',
+            'sm-t865' => 'samsung=samsung sm-t865',
             // Huawei
             'mar-lx1b' => 'huawei=huawei mar-lx1b',
             'lya-l09' => 'huawei=huawei lya-l09',
@@ -439,6 +442,7 @@ final class SecChUaModel implements HeaderInterface
             'bla-l09' => 'huawei=huawei bla-l09',
             'cmr-al09' => 'huawei=huawei cmr-al09',
             'eml-l29' => 'huawei=huawei eml-l29',
+            'mrd-lx1' => 'huawei=huawei mrd-lx1',
             // Lenovo
             'lenovo tb-x304f' => 'lenovo=lenovo tb-x304f',
             'lenovo yt-j706f' => 'lenovo=lenovo yt-j706f',
@@ -574,6 +578,8 @@ final class SecChUaModel implements HeaderInterface
             'dg101hstb' => 'dgtec=dgtec dg101hstb',
             // coopers
             'cp20_gold' => 'coopers=coopers cocp20gold',
+            // blackview
+            'bv6800pro' => 'blackview=blackview bv6800 pro',
             default => null,
         };
     }
