@@ -169,6 +169,48 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; XQ-BT52 Build/62.1.A.0.533) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Mobile Safari/537.36 OPT/2.9"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "XQ-BT52",
+      "marketingName": "Xperia 10 III",
+      "manufacturer": "sony",
+      "brand": "sony",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2520,
+        "height": 1080,
+        "touch": true,
+        "size": 6
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Opera Touch",
+      "version": "2.9.0",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "100.0.4896.127",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 10; H8314) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.88 Mobile Safari/537.36 OPR/68.3.3557.64528"
     },
     "device": {
@@ -266,6 +308,90 @@
     "engine": {
       "name": "Blink",
       "version": "100.0.4896.127",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; XQ-BT52) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Mobile Safari/537.36 OPR/64.2.3282.60128"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "XQ-BT52",
+      "marketingName": "Xperia 10 III",
+      "manufacturer": "sony",
+      "brand": "sony",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2520,
+        "height": 1080,
+        "touch": true,
+        "size": 6
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "version": "64.2.3282.60128",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "91.0.4472.114",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; XQ-AD52) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.97 Mobile Safari/537.36 OPR/71.0.3718.67035"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "XQ-AD52",
+      "marketingName": "Xperia L4",
+      "manufacturer": "sony",
+      "brand": "sony",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1680,
+        "height": 720,
+        "touch": true,
+        "size": 6.2
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "version": "71.0.3718.67035",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "104.0.5112.97",
       "manufacturer": "google"
     }
   },

@@ -2227,6 +2227,48 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; XQ-BT52 Build/62.0.A.3.109; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/94.0.4606.71 Mobile Safari/537.36 Instagram 207.0.0.39.120 Android (30/11; 420dpi; 1080x2394; Sony; XQ-BT52; XQ-BT52; qcom; de_DE; 321039152)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "XQ-BT52",
+      "marketingName": "Xperia 10 III",
+      "manufacturer": "sony",
+      "brand": "sony",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2520,
+        "height": 1080,
+        "touch": true,
+        "size": 6
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Instagram App",
+      "version": "207.0.0.39.120",
+      "manufacturer": "facebook",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "94.0.4606.71",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 9; H3213 Build/50.2.A.3.77; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/96.0.4664.92 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/347.0.0.28.237;]"
     },
     "device": {
@@ -2264,6 +2306,48 @@
     "engine": {
       "name": "Blink",
       "version": "96.0.4664.92",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; XQ-AD52 Build/57.0.A.2.300; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/98.0.4758.87 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/353.0.0.34.116;]"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "XQ-AD52",
+      "marketingName": "Xperia L4",
+      "manufacturer": "sony",
+      "brand": "sony",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1680,
+        "height": 720,
+        "touch": true,
+        "size": 6.2
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Facebook App",
+      "version": "353.0.0.34.116",
+      "manufacturer": "facebook",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "98.0.4758.87",
       "manufacturer": "google"
     }
   },

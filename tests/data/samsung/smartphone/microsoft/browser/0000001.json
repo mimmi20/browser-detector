@@ -1,6 +1,48 @@
 [
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; SM-A920F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36 EdgA/45.09.4.5083 comdirect/1.0 (appVersion:20.11.0;deviceType:mobile)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-A920F",
+      "marketingName": "Galaxy A9 (2018)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 2220,
+        "height": 1080,
+        "touch": true,
+        "size": 6.3
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Edge Mobile for Android",
+      "version": "45.09.4.5083",
+      "manufacturer": "microsoft",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "77.0.3865.116",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 8.0.0; SM-G935F Build/R16NW; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/87.0.4280.66 Mobile Safari/537.36 EdgW/1.0 comdirect/1.0 (appVersion:20.11.1;deviceType:mobile)"
     },
     "device": {
@@ -2950,6 +2992,126 @@
   },
   {
     "headers": {
+      "device-memory": "8",
+      "dpr": "3",
+      "viewport-width": "980",
+      "rtt": "100",
+      "downlink": "10",
+      "ect": "4g",
+      "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"100\", \"Microsoft Edge\";v=\"100\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"12.0.0\"",
+      "sec-ch-ua-model": "\"SM-G991B\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version-list": "\" Not A;Brand\";v=\"99.0.0.0\", \"Chromium\";v=\"100.0.1185.43\", \"Microsoft Edge\";v=\"100.0.1185.43\"",
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-G991B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.88 Mobile Safari/537.36 EdgA/100.0.1185.43",
+      "sec-fetch-site": "same-origin",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-user": "?1",
+      "sec-fetch-dest": "document"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-G991B",
+      "marketingName": "Galaxy S21 5G (International)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.2
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Edge Mobile",
+      "version": "100.0.1185.43",
+      "manufacturer": "microsoft",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "100.0.4896.88",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "8",
+      "dpr": "3",
+      "viewport-width": "980",
+      "rtt": "50",
+      "downlink": "8.8",
+      "ect": "4g",
+      "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"100\", \"Microsoft Edge\";v=\"100\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"12.0.0\"",
+      "sec-ch-ua-model": "\"SM-G973F\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version-list": "\" Not A;Brand\";v=\"99.0.0.0\", \"Chromium\";v=\"100.0.1185.39\", \"Microsoft Edge\";v=\"100.0.1185.39\"",
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-G973F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Mobile Safari/537.36 EdgA/100.0.1185.39",
+      "sec-fetch-site": "same-origin",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-user": "?1",
+      "sec-fetch-dest": "document"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SM-G973F",
+      "marketingName": "Galaxy S10 (Global)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 3040,
+        "height": 1440,
+        "touch": true,
+        "size": 6.1
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Edge Mobile",
+      "version": "100.0.1185.39",
+      "manufacturer": "microsoft",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "100.0.4896.75",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "device-memory": "4",
       "dpr": "2.8125",
       "viewport-width": "980",
@@ -3070,14 +3232,25 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 11; SM-A202F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Mobile Safari/537.36 EdgA/99.0.1150.55",
-      "sec-fetch-site": "cross-site",
-      "sec-fetch-mode": "navigate",
-      "sec-fetch-user": "?1",
-      "sec-fetch-dest": "document",
+      "device-memory": "2",
+      "dpr": "2",
+      "viewport-width": "980",
+      "rtt": "100",
+      "downlink": "10",
+      "ect": "4g",
       "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"99\", \"Microsoft Edge\";v=\"99\"",
       "sec-ch-ua-mobile": "?1",
-      "sec-ch-ua-platform": "\"Android\""
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"11.0.0\"",
+      "sec-ch-ua-model": "\"SM-A202F\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version-list": "\" Not A;Brand\";v=\"99.0.0.0\", \"Chromium\";v=\"99.0.1150.55\", \"Microsoft Edge\";v=\"99.0.1150.55\"",
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; SM-A202F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Mobile Safari/537.36 EdgA/99.0.1150.55",
+      "sec-fetch-site": "same-origin",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-user": "?1",
+      "sec-fetch-dest": "document"
     },
     "device": {
       "architecture": null,
@@ -3106,7 +3279,7 @@
     },
     "client": {
       "name": "Edge Mobile",
-      "version": "99.0.0",
+      "version": "99.0.1150.55",
       "manufacturer": "microsoft",
       "type": "browser",
       "isbot": false
@@ -3252,56 +3425,6 @@
     "client": {
       "name": "Edge Mobile",
       "version": "101.0.1210.53",
-      "manufacturer": "microsoft",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "101.0.4951.64",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "dnt": "1",
-      "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-G973F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.64 Mobile Safari/537.36 EdgA/101.0.1210.53",
-      "sec-fetch-site": "cross-site",
-      "sec-fetch-mode": "navigate",
-      "sec-fetch-user": "?1",
-      "sec-fetch-dest": "document",
-      "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"101\", \"Microsoft Edge\";v=\"101\"",
-      "sec-ch-ua-mobile": "?1",
-      "sec-ch-ua-platform": "\"Android\""
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SM-G973F",
-      "marketingName": "Galaxy S10 (Global)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 3040,
-        "height": 1440,
-        "touch": true,
-        "size": 6.1
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "12.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Edge Mobile",
-      "version": "101.0.0",
       "manufacturer": "microsoft",
       "type": "browser",
       "isbot": false
@@ -4133,55 +4256,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-G991B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.124 Mobile Safari/537.36 EdgA/102.0.1245.44",
-      "sec-fetch-site": "cross-site",
-      "sec-fetch-mode": "navigate",
-      "sec-fetch-user": "?1",
-      "sec-fetch-dest": "document",
-      "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"102\", \"Microsoft Edge\";v=\"102\"",
-      "sec-ch-ua-mobile": "?1",
-      "sec-ch-ua-platform": "\"Android\""
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SM-G991B",
-      "marketingName": "Galaxy S21 5G (International)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 2400,
-        "height": 1080,
-        "touch": true,
-        "size": 6.2
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "12.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Edge Mobile",
-      "version": "102.0.0",
-      "manufacturer": "microsoft",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "102.0.5005.124",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-S906B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.102 Mobile Safari/537.36 EdgA/104.0.1293.70"
     },
     "device": {
@@ -4519,69 +4593,6 @@
         "height": 1440,
         "touch": true,
         "size": 6.9
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "12.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Edge Mobile",
-      "version": "105.0.0",
-      "manufacturer": "microsoft",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "105.0.0.0",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "device-memory": "4",
-      "downlink": "7.35",
-      "dpr": "1.875",
-      "ect": "4g",
-      "origin": "https://www.geld.de",
-      "rtt": "50",
-      "sec-ch-device-memory": "4",
-      "sec-ch-dpr": "1.875",
-      "sec-ch-prefers-color-scheme": "light",
-      "sec-ch-ua": "\"Microsoft Edge\";v=\"105\", \"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"105\"",
-      "sec-ch-ua-full-version": "\"105.0.1343.50\"",
-      "sec-ch-ua-mobile": "?1",
-      "sec-ch-ua-model": "\"SM-A127F\"",
-      "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua-platform-version": "\"12.0.0\"",
-      "sec-ch-viewport-width": "384",
-      "sec-fetch-dest": "empty",
-      "sec-fetch-mode": "cors",
-      "sec-fetch-site": "same-origin",
-      "user-agent": "Mozilla/5.0 (Linux; Android 12; SM-A127F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Mobile Safari/537.36 EdgA/105.0.1343.50",
-      "viewport-width": "384",
-      "x-requested-with": "XMLHttpRequest"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "SM-A127F",
-      "marketingName": "Galaxy A12 (India)",
-      "manufacturer": "samsung",
-      "brand": "samsung",
-      "dualOrientation": true,
-      "simCount": 1,
-      "display": {
-        "width": 1600,
-        "height": 720,
-        "touch": true,
-        "size": 6.5
       },
       "type": "smartphone",
       "ismobile": true,

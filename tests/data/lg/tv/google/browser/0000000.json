@@ -4114,5 +4114,47 @@
       "version": "94.0.4606.128",
       "manufacturer": "google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.122 Safari/537.36 HbbTV/1.4.1 (+DRM; LGE; OLED55B7V-Z; WEBOS3.5 06.10.45; W3_M16P; W3_M16P;)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general LG TV",
+      "marketingName": "general LG TV",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "tv",
+      "ismobile": false,
+      "istv": true,
+      "bits": null
+    },
+    "os": {
+      "name": "webOS",
+      "marketingName": "webOS",
+      "version": null,
+      "manufacturer": "lg"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "38.0.2125.122",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "38.0.2125.122",
+      "manufacturer": "google"
+    }
   }
 ]

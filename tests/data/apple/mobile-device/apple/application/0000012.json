@@ -1,6 +1,48 @@
 [
   {
     "headers": {
+      "user-agent": "Safe%20In%20Cloud.Pro/190103 CFNetwork/976 Darwin/18.2.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Apple device",
+      "marketingName": "general Apple device",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "12.1.0",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "CFNetwork",
+      "version": null,
+      "manufacturer": "apple",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "976.0.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "com.apple.mobilenotes.SharingExtension/1349.30 CFNetwork/978.0.7 Darwin/18.7.0"
     },
     "device": {
@@ -4154,48 +4196,6 @@
     "engine": {
       "name": "WebKit",
       "version": "1126.0.0",
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Spark/2.8.2.300 CFNetwork/1188 Darwin/20.0.0 comdirect/1.0 (appVersion:20.7.3)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Apple device",
-      "marketingName": "general Apple device",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "14.0.0",
-      "manufacturer": "apple"
-    },
-    "client": {
-      "name": "CFNetwork",
-      "version": null,
-      "manufacturer": "apple",
-      "type": "application",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": "1188.0.0",
       "manufacturer": "apple"
     }
   }

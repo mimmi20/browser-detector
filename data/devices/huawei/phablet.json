@@ -36,8 +36,8 @@
     "marketingName": "Honor 30",
     "manufacturer": "huawei",
     "brand": "huawei",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 2400,
       "height": 1080,
@@ -52,8 +52,8 @@
     "marketingName": "Honor 30",
     "manufacturer": "huawei",
     "brand": "huawei",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 2400,
       "height": 1080,
@@ -875,6 +875,22 @@
       "height": 1080,
       "touch": true,
       "size": 6.62
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "huawei bmh-tn10": {
+    "deviceName": "BMH-TN10",
+    "marketingName": "Honor 30",
+    "manufacturer": "huawei",
+    "brand": "huawei",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.53
     },
     "type": "phablet",
     "platform": "android"

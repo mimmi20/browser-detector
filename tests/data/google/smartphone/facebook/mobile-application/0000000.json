@@ -1636,5 +1636,47 @@
       "version": "124.0.6367.123",
       "manufacturer": "google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Dalvik/2.1.0 (Linux; U; Android 15; Pixel 8 Pro Build/AP3A.241005.015) [FBAN/Orca-Android;FBAV/482.0.0.71.108;FBPN/com.facebook.orca;FBLC/de_DE;FBBV/658301643;FBCR/Telekom.de;FBMF/Google;FBBD/google;FBDV/Pixel 8 Pro;FBSV/15;FBCA/arm64-v8a:null;FBDM/{density=2.25,width=1008,height=2244};FB_FW/1;]"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Pixel 8 Pro",
+      "marketingName": "Pixel 8 Pro",
+      "manufacturer": "google",
+      "brand": "google",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2992,
+        "height": 1344,
+        "touch": true,
+        "size": 6.7
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "15.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Facebook Messenger App",
+      "version": "482.0.0.71.108",
+      "manufacturer": "facebook",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
   }
 ]

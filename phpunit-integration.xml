@@ -9,12 +9,14 @@
     beStrictAboutCoverageMetadata="false"
     beStrictAboutOutputDuringTests="true"
     beStrictAboutTestsThatDoNotTestAnything="true"
+    displayDetailsOnPhpunitDeprecations="true"
     displayDetailsOnTestsThatTriggerWarnings="true"
     displayDetailsOnTestsThatTriggerNotices="true"
     displayDetailsOnTestsThatTriggerErrors="true"
     displayDetailsOnTestsThatTriggerDeprecations="true"
     displayDetailsOnSkippedTests="true"
     displayDetailsOnIncompleteTests="true"
+    failOnPhpunitDeprecation="true"
     failOnEmptyTestSuite="true"
     failOnIncomplete="true"
     failOnRisky="true"
@@ -51,7 +53,7 @@
         </testsuite>
     </testsuites>
 
-    <coverage includeUncoveredFiles="true">
+    <coverage>
         <report>
             <clover outputFile=".reports/clover.xml"/>
             <html outputDirectory=".reports/report/" lowUpperBound="50" highLowerBound="80"/>

@@ -255,6 +255,8 @@ final class XRequestedWith implements HeaderInterface
             'com.baidu.browser.apps' => 'baidu browser',
             'com.hihonor.baidu.browser' => 'honor-browser',
             'com.baidu.searchbox.lite' => 'baidu box app lite',
+            'com.microsoft.copilot' => 'microsoft-copilot',
+            'de.web.mobile.android.mail' => 'web.de mail',
             default => null,
         };
     }

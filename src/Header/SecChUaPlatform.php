@@ -23,7 +23,7 @@ final class SecChUaPlatform implements HeaderInterface
     /** @throws void */
     public function hasPlatformCode(): bool
     {
-        $value = trim($this->value, '"');
+        $value = trim($this->value, '"\\');
         $code  = mb_strtolower($value);
 
         return !in_array($code, ['', 'unknown'], true);
@@ -32,7 +32,7 @@ final class SecChUaPlatform implements HeaderInterface
     /** @throws void */
     public function getPlatformCode(string | null $derivate = null): string | null
     {
-        $value = trim($this->value, '"');
+        $value = trim($this->value, '"\\');
         $code  = mb_strtolower($value);
 
         if ($derivate !== null) {

@@ -155,7 +155,7 @@
   },
   "bb work connect": {
     "name": "BB Work Connect",
-    "manufacturer": "unknown",
+    "manufacturer": "black-berry",
     "type": "application",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
@@ -238,7 +238,7 @@
   },
   "chatlyio app": {
     "name": "chatlyio App",
-    "manufacturer": "unknown",
+    "manufacturer": "slack",
     "type": "application",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
@@ -476,7 +476,7 @@
   },
   "goodreader": {
     "name": "GoodReader",
-    "manufacturer": "unknown",
+    "manufacturer": "good-iware",
     "type": "application",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
@@ -643,7 +643,7 @@
   },
   "listia": {
     "name": "Listia",
-    "manufacturer": "unknown",
+    "manufacturer": "listia",
     "type": "application",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
@@ -893,7 +893,7 @@
   },
   "perfect browser": {
     "name": "Perfect Browser",
-    "manufacturer": "unknown",
+    "manufacturer": "app-simply",
     "type": "application",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
@@ -965,7 +965,7 @@
   },
   "qq-app": {
     "name": "QQ-App",
-    "manufacturer": "unknown",
+    "manufacturer": "tencent",
     "type": "application",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
@@ -989,7 +989,7 @@
   },
   "rddocuments app": {
     "name": "RDDocuments App",
-    "manufacturer": "unknown",
+    "manufacturer": "readdle",
     "type": "application",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
@@ -1045,7 +1045,7 @@
   },
   "safari technology preview": {
     "name": "Safari Technology Preview",
-    "manufacturer": "unknown",
+    "manufacturer": "apple",
     "type": "application",
     "version": {
       "class": null,
@@ -1399,7 +1399,7 @@
   },
   "webclip app": {
     "name": "WebClip App",
-    "manufacturer": "unknown",
+    "manufacturer": "apple",
     "type": "application",
     "version": {
       "class": null,
@@ -1609,7 +1609,7 @@
   },
   "zdownload pro": {
     "name": "zDownload Pro",
-    "manufacturer": "unknown",
+    "manufacturer": "wonjoo-jang",
     "type": "application",
     "version": {
       "class": null,
@@ -1631,7 +1631,7 @@
   },
   "zite": {
     "name": "Zite App",
-    "manufacturer": "unknown",
+    "manufacturer": "flipboard",
     "type": "application",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
@@ -1731,7 +1731,7 @@
   },
   "sticky-password": {
     "name": "Sticky Password",
-    "manufacturer": "unknown",
+    "manufacturer": "lamantine-software",
     "type": "application",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
@@ -1743,13 +1743,35 @@
   },
   "ruby-browser": {
     "name": "RubyBrowser",
-    "manufacturer": "unknown",
+    "manufacturer": "emad-elsaid",
     "type": "application",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "RubyBrowser"
       ]
+    },
+    "engine": null
+  },
+  "microsoft-copilot": {
+    "name": "Microsoft Copilot",
+    "manufacturer": "microsoft",
+    "type": "application",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "CopilotSapphire"
+      ]
+    },
+    "engine": null
+  },
+  "web.de mail": {
+    "name": "WEB.DE Mail",
+    "manufacturer": "einsundeins",
+    "type": "application",
+    "version": {
+      "class": null,
+      "search": null
     },
     "engine": null
   }

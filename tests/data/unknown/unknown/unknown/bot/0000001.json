@@ -2059,48 +2059,6 @@
   },
   {
     "headers": {
-      "user-agent": "IRLbot/2.0 (+http://irl.cs.tamu.edu/crawler)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "IRLbot",
-      "version": "2.0.0",
-      "manufacturer": "unknown",
-      "type": "bot",
-      "isbot": true
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Orbiter (+http://www.dailyorbit.com/bot.htm)"
     },
     "device": {
@@ -2815,48 +2773,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 CommonCrawler Node 4EH6XSME6KWKBZTQWCK4HIXODDS3JCD7D4OXMSLRLMAKEP42YF7AFP6CIM2WUYS.E.RB672NZKGBIQCJUOPR5MNUXLNVKCSYNF3ZI3ORBD73AWO6PM.cdn0.common.crawl.zone"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "CommonCrawler Node",
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "bot",
-      "isbot": true
-    },
-    "engine": {
-      "name": "NetFront",
-      "version": null,
-      "manufacturer": "access"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "TYPO3/6.2.22"
     },
     "device": {
@@ -2979,48 +2895,6 @@
       "name": null,
       "version": null,
       "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Mozilla/5.0 CommonCrawler Node JYGZ34V6J2RP6DZLSRU6BCJU2NHQZD4WIOSKP3ROGX4FNWCQAGEU6NFKSJ4AV6R.3.Q6FMSXMC7ES2OFJJG7FHR7UW5DSMTITSSVIQWK3YSQBCK2SG.cdn0.common.crawl.zone"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "CommonCrawler Node",
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "bot",
-      "isbot": true
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
     }
   },
   {
@@ -4189,6 +4063,132 @@
     "client": {
       "name": "dcrawl",
       "version": "1.0.0",
+      "manufacturer": "unknown",
+      "type": "bot",
+      "isbot": true
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "OutclicksBot/1 +https://www.outclicks.net/agent/h2sju5"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "OutclicksBot",
+      "version": "1.0.0",
+      "manufacturer": "unknown",
+      "type": "bot",
+      "isbot": true
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Klondike/1.70 (WSP PPC3)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Macintosh",
+      "marketingName": "Macintosh",
+      "version": null,
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "WSP Bot",
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "bot",
+      "isbot": true
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "EmailWolf 1.00"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "EmailWolf",
+      "version": "1.00.0",
       "manufacturer": "unknown",
       "type": "bot",
       "isbot": true

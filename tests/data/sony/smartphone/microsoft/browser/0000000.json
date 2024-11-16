@@ -1009,6 +1009,48 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; XQ-BT52 Build/62.0.A.3.163; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/98.0.4758.101 Mobile Safari/537.36 EdgW/1.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "XQ-BT52",
+      "marketingName": "Xperia 10 III",
+      "manufacturer": "sony",
+      "brand": "sony",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2520,
+        "height": 1080,
+        "touch": true,
+        "size": 6
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Edge WebView",
+      "version": "1.0.0",
+      "manufacturer": "microsoft",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "98.0.4758.101",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 9; H3113) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Mobile Safari/537.36 EdgA/97.0.1072.78"
     },
     "device": {
@@ -1219,12 +1261,24 @@
   },
   {
     "headers": {
+      "device-memory": "4",
+      "dpr": "2.875",
+      "viewport-width": "980",
+      "rtt": "50",
+      "downlink": "10",
+      "ect": "4g",
       "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"101\", \"Microsoft Edge\";v=\"101\"",
       "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-arch": "\"\"",
       "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"11.0.0\"",
+      "sec-ch-ua-model": "\"XQ-AU52\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version-list": "\" Not A;Brand\";v=\"99.0.0.0\", \"Chromium\";v=\"101.0.1210.32\", \"Microsoft Edge\";v=\"101.0.1210.32\"",
       "user-agent": "Mozilla/5.0 (Linux; Android 11; XQ-AU52) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.41 Mobile Safari/537.36 EdgA/101.0.1210.32",
-      "sec-fetch-site": "none",
+      "sec-fetch-site": "same-origin",
       "sec-fetch-mode": "navigate",
+      "sec-fetch-user": "?1",
       "sec-fetch-dest": "document"
     },
     "device": {
@@ -1254,7 +1308,7 @@
     },
     "client": {
       "name": "Edge Mobile",
-      "version": "101.0.0",
+      "version": "101.0.1210.32",
       "manufacturer": "microsoft",
       "type": "browser",
       "isbot": false
@@ -1262,6 +1316,66 @@
     "engine": {
       "name": "Blink",
       "version": "101.0.4951.41",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "2",
+      "dpr": "2",
+      "viewport-width": "980",
+      "rtt": "100",
+      "downlink": "10",
+      "ect": "4g",
+      "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"100\", \"Microsoft Edge\";v=\"100\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"8.1.0\"",
+      "sec-ch-ua-model": "\"I4312\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version-list": "\" Not A;Brand\";v=\"99.0.0.0\", \"Chromium\";v=\"100.0.1185.43\", \"Microsoft Edge\";v=\"100.0.1185.43\"",
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; I4312) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.88 Mobile Safari/537.36 EdgA/100.0.1185.43",
+      "sec-fetch-site": "same-origin",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-user": "?1",
+      "sec-fetch-dest": "document"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "I4312",
+      "marketingName": "Xperia L3",
+      "manufacturer": "sony",
+      "brand": "sony",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1440,
+        "height": 720,
+        "touch": true,
+        "size": 5.7
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.1.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Edge Mobile",
+      "version": "100.0.1185.43",
+      "manufacturer": "microsoft",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "100.0.4896.88",
       "manufacturer": "google"
     }
   },
