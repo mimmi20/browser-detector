@@ -2,12 +2,12 @@
   {
     "headers": {
       "device-memory": "4",
-      "downlink": "7.75",
-      "dpr": "3.1875",
+      "downlink": "9.8",
+      "dpr": "4",
       "ect": "4g",
-      "rtt": "50",
+      "rtt": "0",
       "sec-ch-device-memory": "4",
-      "sec-ch-dpr": "3.1875",
+      "sec-ch-dpr": "4",
       "sec-ch-prefers-color-scheme": "light",
       "sec-ch-prefers-reduced-motion": "no-preference",
       "sec-ch-ua": "\"Not/A)Brand\";v=\"99\", \"Samsung Internet\";v=\"23.0\", \"Chromium\";v=\"115\"",
@@ -15,17 +15,17 @@
       "sec-ch-ua-bitness": "\"\"",
       "sec-ch-ua-full-version": "\"23.0.1.1\"",
       "sec-ch-ua-mobile": "?1",
-      "sec-ch-ua-model": "\"SM-G970F\"",
+      "sec-ch-ua-model": "\"SM-G950F\"",
       "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua-platform-version": "\"12.0.0\"",
-      "sec-ch-viewport-height": "1414",
-      "sec-ch-viewport-width": "980",
-      "sec-fetch-dest": "document",
-      "sec-fetch-mode": "navigate",
+      "sec-ch-ua-platform-version": "\"9.0.0\"",
+      "sec-ch-viewport-height": "572",
+      "sec-ch-viewport-width": "360",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
       "sec-fetch-site": "same-origin",
-      "sec-fetch-user": "?1",
-      "user-agent": "Mozilla/5.0 (Linux; Android 12; SAMSUNG SM-G970F) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/23.0 Chrome/115.0.0.0 Mobile Safari/537.36",
-      "viewport-width": "980"
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; SAMSUNG SM-G950F) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/23.0 Chrome/115.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "360",
+      "x-requested-with": "XMLHttpRequest"
     },
     "device": {
       "architecture": null,
@@ -49,7 +49,7 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "12.0.0",
+      "version": "9.0.0",
       "manufacturer": "google"
     },
     "client": {

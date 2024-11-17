@@ -44,6 +44,7 @@ final class SecChUaModel implements HeaderInterface
             'lm-q630' => 'lg=lg lm-q630',
             'lg-m700' => 'lg=lg m700',
             'lm-v405' => 'lg=lg lm-v405',
+            'lg-h870' => 'lg=lg h870',
             // Acer
             'a100' => 'acer=acer a100',
             'a1-734' => 'acer=acer a1-734',
@@ -391,6 +392,10 @@ final class SecChUaModel implements HeaderInterface
             'sm-a920f' => 'samsung=samsung sm-a920f',
             'sm-s928b' => 'samsung=samsung sm-s928b',
             'sm-g970f' => 'samsung=samsung sm-g970f',
+            'sm-j600fn' => 'samsung=samsung sm-j600fn',
+            'sm-n950f' => 'samsung=samsung sm-n950f',
+            'sm-g780f' => 'samsung=samsung sm-g780f',
+            'sm-g950f' => 'samsung=samsung sm-g950f',
             // Huawei
             'mar-lx1b' => 'huawei=huawei mar-lx1b',
             'lya-l09' => 'huawei=huawei lya-l09',

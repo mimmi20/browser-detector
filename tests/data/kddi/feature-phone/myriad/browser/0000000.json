@@ -1471,6 +1471,48 @@
   },
   {
     "headers": {
+      "user-agent": "KDDI-MA33 UP.Browser/6.2.0.13.1.5 (GUI) MMP/2.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "MA33",
+      "marketingName": "MA33",
+      "manufacturer": "kddi",
+      "brand": "kddi",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "feature-phone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "Openwave Mobile Browser",
+      "version": "6.2.0.13.1",
+      "manufacturer": "myriad",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "KDDI-KC3B UP.Browser/6.2.0.13.2 (GUI) MMP/2.0"
     },
     "device": {

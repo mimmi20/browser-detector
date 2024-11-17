@@ -589,48 +589,6 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/4.0 (compatible; MSIE 6.0; KDDI-MA33) Opera 8.60 [en]"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "A33",
-      "marketingName": "Neo 7",
-      "manufacturer": "bbk",
-      "brand": "oppo",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": 960,
-        "height": 540,
-        "touch": true,
-        "size": 5
-      },
-      "type": "smartphone",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "Opera",
-      "version": "8.60.0",
-      "manufacturer": "opera",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Presto",
-      "version": null,
-      "manufacturer": "opera"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 7.1.1; ONEPLUS A5010 Build/NMF26X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.116 Mobile Safari/537.36 OPR/44.1.2246.123029"
     },
     "device": {
@@ -4241,6 +4199,48 @@
     "engine": {
       "name": "Blink",
       "version": "102.0.5005.134",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; CPH2413) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.97 Mobile Safari/537.36 OPR/71.3.3718.67322"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "CPH2413",
+      "marketingName": "10T 5G",
+      "manufacturer": "bbk",
+      "brand": "oneplus",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2412,
+        "height": 1080,
+        "touch": true,
+        "size": 6.7
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "version": "71.3.3718.67322",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "104.0.5112.97",
       "manufacturer": "google"
     }
   }
