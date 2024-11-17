@@ -474,6 +474,7 @@ final class SecChUaModelTest extends TestCase
             ['SM-T865', true, 'samsung=samsung sm-t865'],
             ['SM-A920F', true, 'samsung=samsung sm-a920f'],
             ['SM-S928B', true, 'samsung=samsung sm-s928b'],
+            ['SM-G970F', true, 'samsung=samsung sm-g970f'],
             // Huawei
             ['"LGE-NX9"', true, 'huawei=huawei lge-nx9'],
             ['"VOG-L29"', true, 'huawei=huawei vog-l29'],
@@ -530,6 +531,7 @@ final class SecChUaModelTest extends TestCase
             ['"EML-L29"', true, 'huawei=huawei eml-l29'],
             ['"MRD-LX1"', true, 'huawei=huawei mrd-lx1'],
             ['"CLT-L29"', true, 'huawei=huawei clt-l29'],
+            ['"HUAWEI SCL-L21"', true, 'huawei=huawei scl-l21'],
             // Lenovo
             ['"Lenovo TB-X304F"', true, 'lenovo=lenovo tb-x304f'],
             ['"X1030X"', true, 'lenovo=lenovo x1030x'],
@@ -557,6 +559,7 @@ final class SecChUaModelTest extends TestCase
             ['"Nokia 5.1"', true, 'nokia=nokia 5.1'],
             ['"Nokia 7.1"', true, 'nokia=nokia 7.1'],
             ['"Nokia 7.2"', true, 'nokia=nokia 7.2'],
+            ['"Nokia 4.2"', true, 'nokia=nokia 4.2'],
             // Microsoft
             ['"Surface Duo"', true, 'microsoft=microsoft surface duo'],
             ['"Xbox"', true, 'microsoft=microsoft xbox one'],
@@ -609,6 +612,7 @@ final class SecChUaModelTest extends TestCase
             ['moto g(20)', true, 'motorola=motorola moto g20'],
             ['motorola one', true, 'motorola=motorola one'],
             ['motorola one vision', true, 'motorola=motorola one vision'],
+            ['moto g(8) power', true, 'motorola=motorola moto g8 power'],
             // Sony
             ['"XQ-CC54"', true, 'sony=sony xq-cc54'],
             ['"XQ-BQ52"', true, 'sony=sony xq-bq52'],

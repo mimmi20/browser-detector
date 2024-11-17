@@ -631,48 +631,6 @@
   },
   {
     "headers": {
-      "user-agent": "NetSurf/2.7 (AmigaOS; powerpc)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Amiga OS",
-      "marketingName": "Amiga OS",
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "unknown",
-      "isbot": false
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "YAM/2.6p1 (MorphOS; PPC; rv:20100926)"
     },
     "device": {
@@ -757,7 +715,7 @@
   },
   {
     "headers": {
-      "user-agent": "Tor Browser/3.7 (Fedora 4.1; en_NZ;)"
+      "user-agent": "OWB/3.12 (AmigaOS 4.1; ppc; U)"
     },
     "device": {
       "architecture": null,
@@ -779,10 +737,10 @@
       "bits": null
     },
     "os": {
-      "name": "Fedora Linux",
-      "marketingName": "Fedora Linux",
+      "name": "Amiga OS",
+      "marketingName": "Amiga OS",
       "version": "4.1.0",
-      "manufacturer": "redhat"
+      "manufacturer": "unknown"
     },
     "client": {
       "name": null,
@@ -825,6 +783,48 @@
       "marketingName": "NeXTSTEP",
       "version": null,
       "manufacturer": "unknown"
+    },
+    "client": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "unknown",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mobile/4.3 (Fedora 4.6; nl_NL;)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Fedora Linux",
+      "marketingName": "Fedora Linux",
+      "version": "4.6.0",
+      "manufacturer": "redhat"
     },
     "client": {
       "name": null,

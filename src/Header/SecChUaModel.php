@@ -390,6 +390,7 @@ final class SecChUaModel implements HeaderInterface
             'sm-t865' => 'samsung=samsung sm-t865',
             'sm-a920f' => 'samsung=samsung sm-a920f',
             'sm-s928b' => 'samsung=samsung sm-s928b',
+            'sm-g970f' => 'samsung=samsung sm-g970f',
             // Huawei
             'mar-lx1b' => 'huawei=huawei mar-lx1b',
             'lya-l09' => 'huawei=huawei lya-l09',
@@ -447,6 +448,7 @@ final class SecChUaModel implements HeaderInterface
             'eml-l29' => 'huawei=huawei eml-l29',
             'mrd-lx1' => 'huawei=huawei mrd-lx1',
             'clt-l29' => 'huawei=huawei clt-l29',
+            'huawei scl-l21' => 'huawei=huawei scl-l21',
             // Lenovo
             'lenovo tb-x304f' => 'lenovo=lenovo tb-x304f',
             'lenovo yt-j706f' => 'lenovo=lenovo yt-j706f',
@@ -474,6 +476,7 @@ final class SecChUaModel implements HeaderInterface
             'nokia 5.1' => 'nokia=nokia 5.1',
             'nokia 7.1' => 'nokia=nokia 7.1',
             'nokia 7.2' => 'nokia=nokia 7.2',
+            'nokia 4.2' => 'nokia=nokia 4.2',
             // Microsoft
             'surface duo' => 'microsoft=microsoft surface duo',
             'xbox' => 'microsoft=microsoft xbox one',
@@ -526,6 +529,7 @@ final class SecChUaModel implements HeaderInterface
             'moto g(20)' => 'motorola=motorola moto g20',
             'motorola one' => 'motorola=motorola one',
             'motorola one vision' => 'motorola=motorola one vision',
+            'moto g(8) power' => 'motorola=motorola moto g8 power',
             // Sony
             'xq-cc54' => 'sony=sony xq-cc54',
             'xq-bq52' => 'sony=sony xq-bq52',
