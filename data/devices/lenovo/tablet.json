@@ -996,8 +996,24 @@
     "marketingName": "Tab M8",
     "manufacturer": "lenovo",
     "brand": "lenovo",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": 8
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "lenovo tb-8505fs": {
+    "deviceName": "TB-8505FS",
+    "marketingName": "Tab M8",
+    "manufacturer": "lenovo",
+    "brand": "lenovo",
+    "dualOrientation": true,
+    "simCount": 0,
     "display": {
       "width": 1280,
       "height": 800,
