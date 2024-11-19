@@ -2445,8 +2445,8 @@
       "marketingName": "P Smart (2019)",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 2340,
         "height": 1080,
@@ -4159,21 +4159,21 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; MED-LX9N Build/HUAWEIMED-LX9N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.128 Mobile Safari/537.36 (Ecosia android@69.0.3497.128)"
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; POT-LX1T Build/HUAWEIPOT-L21T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.128 Mobile Safari/537.36 (Ecosia android@69.0.3497.128)"
     },
     "device": {
       "architecture": null,
-      "deviceName": "MED-LX9N",
-      "marketingName": "Y6p (2020)",
+      "deviceName": "POT-LX1T",
+      "marketingName": "P Smart+ (2019)",
       "manufacturer": "huawei",
       "brand": "huawei",
       "dualOrientation": true,
       "simCount": 2,
       "display": {
-        "width": 1600,
-        "height": 720,
+        "width": 2340,
+        "height": 1080,
         "touch": true,
-        "size": 6.3
+        "size": 6.21
       },
       "type": "smartphone",
       "ismobile": true,
