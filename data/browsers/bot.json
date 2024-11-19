@@ -9862,5 +9862,29 @@
       ]
     },
     "engine": "unknown"
+  },
+  "toutiao-spider": {
+    "name": "ToutiaoSpider",
+    "manufacturer": "toutiao",
+    "type": "bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "ToutiaoSpider"
+      ]
+    },
+    "engine": "unknown"
+  },
+  "etao-spider": {
+    "name": "EtaoSpider",
+    "manufacturer": "unknown",
+    "type": "bot",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "EtaoSpider"
+      ]
+    },
+    "engine": "unknown"
   }
 }

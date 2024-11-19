@@ -1,4 +1,6 @@
 {
-  "rules": [],
+  "rules": {
+    "/[\\<\\>]/i": "code"
+  },
   "generic": "unknown"
 }

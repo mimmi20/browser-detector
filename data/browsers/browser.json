@@ -13,7 +13,7 @@
   },
   "115 browser": {
     "name": "115 Browser",
-    "manufacturer": "unknown",
+    "manufacturer": "115-com",
     "type": "browser",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
@@ -37,7 +37,7 @@
   },
   "2345 browser": {
     "name": "2345 Browser",
-    "manufacturer": "unknown",
+    "manufacturer": "leysin-media",
     "type": "browser",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
@@ -49,7 +49,7 @@
   },
   "2345-browser-hd": {
     "name": "2345 Browser HD",
-    "manufacturer": "unknown",
+    "manufacturer": "leysin-media",
     "type": "browser",
     "version": {
       "factory": null,
@@ -59,7 +59,7 @@
   },
   "2345 chrome": {
     "name": "2345 Chrome",
-    "manufacturer": "unknown",
+    "manufacturer": "leysin-media",
     "type": "browser",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
@@ -166,7 +166,7 @@
   },
   "aliyun-browser": {
     "name": "Aliyun Browser",
-    "manufacturer": "unknown",
+    "manufacturer": "alibaba",
     "type": "browser",
     "version": {
       "class": null,
@@ -1469,7 +1469,7 @@
   },
   "flock": {
     "name": "Flock",
-    "manufacturer": "unknown",
+    "manufacturer": "flock",
     "type": "browser",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
@@ -1609,7 +1609,7 @@
   },
   "heliummobilebrowser": {
     "name": "HeliumMobileBrowser",
-    "manufacturer": "unknown",
+    "manufacturer": "orange-labs",
     "type": "browser",
     "version": {
       "class": null,
@@ -1619,7 +1619,7 @@
   },
   "heytapbrowser": {
     "name": "HeyTapBrowser",
-    "manufacturer": "unknown",
+    "manufacturer": "bravo-unicorn",
     "type": "browser",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
@@ -2851,7 +2851,7 @@
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
-        "Origyn Web Browser",
+        "Odyssey Web Browser",
         "OWB",
         "rv:"
       ]
@@ -3384,7 +3384,7 @@
   },
   "quark": {
     "name": "Quark",
-    "manufacturer": "unknown",
+    "manufacturer": "quark-team",
     "type": "browser",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
@@ -3686,7 +3686,7 @@
   },
   "shiira": {
     "name": "Shiira",
-    "manufacturer": "unknown",
+    "manufacturer": "shiira",
     "type": "browser",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
@@ -4077,7 +4077,7 @@
   },
   "tenta": {
     "name": "Tenta",
-    "manufacturer": "unknown",
+    "manufacturer": "tenta",
     "type": "browser",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
@@ -4164,7 +4164,7 @@
   },
   "tizenbrowser": {
     "name": "TizenBrowser",
-    "manufacturer": "unknown",
+    "manufacturer": "samsung",
     "type": "browser",
     "version": {
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
@@ -4374,7 +4374,7 @@
   },
   "webpositive": {
     "name": "Webpositive",
-    "manufacturer": "unknown",
+    "manufacturer": "haiku",
     "type": "browser",
     "version": {
       "class": null,
@@ -5286,6 +5286,18 @@
       "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
       "search": [
         "bdhonorbrowser"
+      ]
+    },
+    "engine": null
+  },
+  "tor-browser": {
+    "name": "Tor Browser",
+    "manufacturer": "tor",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Tor Browser"
       ]
     },
     "engine": null

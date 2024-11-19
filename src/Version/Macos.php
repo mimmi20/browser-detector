@@ -29,6 +29,9 @@ final class Macos implements VersionFactoryInterface
     public const SEARCHES = ['Mac OS X Version', 'Mac OS X v', 'Mac OS X', 'OS X', 'os=mac '];
 
     private const DARWIN_MAP = [
+        '/darwin\/24\.2/i' => '15.2.0',
+        '/darwin\/24\.1/i' => '15.1.0',
+        '/darwin\/24/i' => '15.0.0',
         '/darwin\/23\.2/i' => '14.2.0',
         '/darwin\/23\.1/i' => '14.1.0',
         '/darwin\/23/i' => '14.0.0',

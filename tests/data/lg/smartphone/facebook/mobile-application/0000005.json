@@ -1098,11 +1098,11 @@
     "device": {
       "architecture": null,
       "deviceName": "H873",
-      "marketingName": "G6",
+      "marketingName": "G6 (Canada)",
       "manufacturer": "lg",
       "brand": "lg",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 2880,
         "height": 1440,
@@ -1765,6 +1765,48 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; LM-K420 Build/QKQ1.200614.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/96.0.4664.92 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/347.0.0.28.237;]"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "LM-K420",
+      "marketingName": "K42",
+      "manufacturer": "lg",
+      "brand": "lg",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1600,
+        "height": 720,
+        "touch": true,
+        "size": 6.6
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Facebook App",
+      "version": "347.0.0.28.237",
+      "manufacturer": "facebook",
+      "type": "mobile-application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "96.0.4664.92",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 10; LM-G910 Build/QKQ1.200412.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/89.0.4389.105 Mobile Safari/537.36 Instagram 214.0.0.27.120 Android (29/10; 420dpi; 1080x2342; LGE/lge; LM-G910; caymanslm; caymanslm; en_US; 332901678)"
     },
     "device": {
@@ -1979,17 +2021,17 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "X150",
-      "marketingName": "Bello II",
+      "deviceName": "LM-K420",
+      "marketingName": "K42",
       "manufacturer": "lg",
       "brand": "lg",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
-        "width": 854,
-        "height": 480,
+        "width": 1600,
+        "height": 720,
         "touch": true,
-        "size": 5
+        "size": 6.6
       },
       "type": "smartphone",
       "ismobile": true,

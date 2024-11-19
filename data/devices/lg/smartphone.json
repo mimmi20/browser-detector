@@ -2929,11 +2929,11 @@
   },
   "lg h870": {
     "deviceName": "H870",
-    "marketingName": "G6",
+    "marketingName": "G6 (Europe)",
     "manufacturer": "lg",
     "brand": "lg",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 2880,
       "height": 1440,
@@ -2948,8 +2948,8 @@
     "marketingName": "G6",
     "manufacturer": "lg",
     "brand": "lg",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 2880,
       "height": 1440,
@@ -2964,8 +2964,8 @@
     "marketingName": "G6",
     "manufacturer": "lg",
     "brand": "lg",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 2880,
       "height": 1440,
@@ -2977,11 +2977,11 @@
   },
   "lg h870k": {
     "deviceName": "H870K",
-    "marketingName": "G6",
+    "marketingName": "G6 (Australia)",
     "manufacturer": "lg",
     "brand": "lg",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 2880,
       "height": 1440,
@@ -2996,8 +2996,8 @@
     "marketingName": "G6",
     "manufacturer": "lg",
     "brand": "lg",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 2880,
       "height": 1440,
@@ -3009,11 +3009,11 @@
   },
   "lg h871": {
     "deviceName": "H871",
-    "marketingName": "G6",
+    "marketingName": "G6 (AT&T)",
     "manufacturer": "lg",
     "brand": "lg",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 2880,
       "height": 1440,
@@ -3025,11 +3025,11 @@
   },
   "lg h871s": {
     "deviceName": "H871S",
-    "marketingName": "G6",
+    "marketingName": "G6 (AT&T)",
     "manufacturer": "lg",
     "brand": "lg",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 2880,
       "height": 1440,
@@ -3041,11 +3041,11 @@
   },
   "lg h872": {
     "deviceName": "H872",
-    "marketingName": "G6",
+    "marketingName": "G6 (T-Mobile)",
     "manufacturer": "lg",
     "brand": "lg",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 2880,
       "height": 1440,
@@ -3057,11 +3057,11 @@
   },
   "lg h872pr": {
     "deviceName": "H872PR",
-    "marketingName": "G6",
+    "marketingName": "G6 (T-Mobile)",
     "manufacturer": "lg",
     "brand": "lg",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 2880,
       "height": 1440,
@@ -3073,11 +3073,11 @@
   },
   "lg h873": {
     "deviceName": "H873",
-    "marketingName": "G6",
+    "marketingName": "G6 (Canada)",
     "manufacturer": "lg",
     "brand": "lg",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 2880,
       "height": 1440,
@@ -3089,11 +3089,11 @@
   },
   "lg ls993": {
     "deviceName": "LS993",
-    "marketingName": "G6",
+    "marketingName": "G6 (Sprint)",
     "manufacturer": "lg",
     "brand": "lg",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 2880,
       "height": 1440,
@@ -3105,11 +3105,11 @@
   },
   "lg us997": {
     "deviceName": "US997",
-    "marketingName": "G6",
+    "marketingName": "G6 (U.S. Cellular)",
     "manufacturer": "lg",
     "brand": "lg",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 2880,
       "height": 1440,
@@ -3121,11 +3121,11 @@
   },
   "lg vs988": {
     "deviceName": "VS988",
-    "marketingName": "G6",
+    "marketingName": "G6 (Verizon Wireless)",
     "manufacturer": "lg",
     "brand": "lg",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 2880,
       "height": 1440,
@@ -12395,6 +12395,22 @@
       "height": 1080,
       "touch": true,
       "size": 6.2
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "lg lm-k420": {
+    "deviceName": "LM-K420",
+    "marketingName": "K42",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1600,
+      "height": 720,
+      "touch": true,
+      "size": 6.6
     },
     "type": "smartphone",
     "platform": "android"

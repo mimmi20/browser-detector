@@ -2353,6 +2353,48 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) blackPanther OS Chromium/60.0.3112.101 Chrome/60.0.3112.101 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "blackPanther OS",
+      "marketingName": "blackPanther OS",
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "Chromium",
+      "version": "60.0.3112.101",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "60.0.3112.101",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (X11; Xubuntu 14.04.5 LTS) AppleWebKit/537.36 (KHTML, like Gecko) Xubuntu Chrome/66.0.2623.87 Chrome/66.0.2623.87 Safari/537.36"
     },
     "device": {

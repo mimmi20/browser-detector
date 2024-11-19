@@ -78,5 +78,21 @@
     },
     "type": "tablet",
     "platform": "android"
+  },
+  "google kukui": {
+    "deviceName": "Kukui Chromebook",
+    "marketingName": "Kukui Chromebook",
+    "manufacturer": "google",
+    "brand": "google",
+    "dualOrientation": null,
+    "simCount": null,
+    "display": {
+      "width": null,
+      "height": null,
+      "touch": true,
+      "size": null
+    },
+    "type": "tablet",
+    "platform": "chromeos"
   }
 }

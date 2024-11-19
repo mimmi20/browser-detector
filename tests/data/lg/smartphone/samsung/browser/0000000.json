@@ -132,11 +132,11 @@
     "device": {
       "architecture": null,
       "deviceName": "H870",
-      "marketingName": "G6",
+      "marketingName": "G6 (Europe)",
       "manufacturer": "lg",
       "brand": "lg",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
         "width": 2880,
         "height": 1440,
@@ -761,17 +761,17 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "K420",
-      "marketingName": "K10",
+      "deviceName": "LM-K420",
+      "marketingName": "K42",
       "manufacturer": "lg",
       "brand": "lg",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
-        "width": 1280,
+        "width": 1600,
         "height": 720,
         "touch": true,
-        "size": 5.3
+        "size": 6.6
       },
       "type": "smartphone",
       "ismobile": true,

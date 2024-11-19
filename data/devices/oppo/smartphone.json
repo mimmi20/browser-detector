@@ -276,8 +276,8 @@
     "marketingName": "A5",
     "manufacturer": "bbk",
     "brand": "oppo",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 1520,
       "height": 720,
@@ -292,8 +292,8 @@
     "marketingName": "A5",
     "manufacturer": "bbk",
     "brand": "oppo",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 1520,
       "height": 720,
@@ -308,8 +308,8 @@
     "marketingName": "A5",
     "manufacturer": "bbk",
     "brand": "oppo",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 1520,
       "height": 720,
@@ -2164,8 +2164,8 @@
     "marketingName": "R15 Neo",
     "manufacturer": "bbk",
     "brand": "oppo",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 1520,
       "height": 720,
@@ -5489,7 +5489,7 @@
   },
   "oppo pftm20": {
     "deviceName": "PFTM20",
-    "marketingName": "A57",
+    "marketingName": "A57 5G",
     "manufacturer": "bbk",
     "brand": "oppo",
     "dualOrientation": true,
@@ -5995,6 +5995,214 @@
       "height": 1080,
       "touch": true,
       "size": 6.3
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "oppo pbbt30": {
+    "deviceName": "PBBT30",
+    "marketingName": "A5",
+    "manufacturer": "bbk",
+    "brand": "oppo",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1520,
+      "height": 720,
+      "touch": true,
+      "size": 6.2
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "oppo pbbm30": {
+    "deviceName": "PBBM30",
+    "marketingName": "A5",
+    "manufacturer": "bbk",
+    "brand": "oppo",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1520,
+      "height": 720,
+      "touch": true,
+      "size": 6.2
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "oppo pgbm10": {
+    "deviceName": "PGBM10",
+    "marketingName": "Reno8 (China)",
+    "manufacturer": "bbk",
+    "brand": "oppo",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.43
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "oppo phs110": {
+    "deviceName": "PHS110",
+    "marketingName": "A1",
+    "manufacturer": "bbk",
+    "brand": "oppo",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.72
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "oppo pkd130": {
+    "deviceName": "PKD130",
+    "marketingName": "A3x (China)",
+    "manufacturer": "bbk",
+    "brand": "oppo",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1604,
+      "height": 720,
+      "touch": true,
+      "size": 6.67
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "oppo pha120": {
+    "deviceName": "PHA120",
+    "marketingName": "A96",
+    "manufacturer": "bbk",
+    "brand": "oppo",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.43
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "oppo pfum10": {
+    "deviceName": "PFUM10",
+    "marketingName": "A96",
+    "manufacturer": "bbk",
+    "brand": "oppo",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.43
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "oppo cph2407": {
+    "deviceName": "CPH2407",
+    "marketingName": "A57 5G",
+    "manufacturer": "bbk",
+    "brand": "oppo",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1612,
+      "height": 720,
+      "touch": true,
+      "size": 6.56
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "oppo cph2579": {
+    "deviceName": "CPH2579",
+    "marketingName": "A38",
+    "manufacturer": "bbk",
+    "brand": "oppo",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1612,
+      "height": 720,
+      "touch": true,
+      "size": 6.56
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "oppo cph2529": {
+    "deviceName": "CPH2529",
+    "marketingName": "A98",
+    "manufacturer": "bbk",
+    "brand": "oppo",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.72
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "oppo cph2525": {
+    "deviceName": "CPH2525",
+    "marketingName": "A98",
+    "manufacturer": "bbk",
+    "brand": "oppo",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2412,
+      "height": 1080,
+      "touch": true,
+      "size": 6.7
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "oppo cph2591": {
+    "deviceName": "CPH2591",
+    "marketingName": "A18",
+    "manufacturer": "bbk",
+    "brand": "oppo",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1612,
+      "height": 720,
+      "touch": true,
+      "size": 6.56
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "oppo cph2523": {
+    "deviceName": "CPH2523",
+    "marketingName": "Reno9 A 5G",
+    "manufacturer": "bbk",
+    "brand": "oppo",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.4
     },
     "type": "smartphone",
     "platform": "android"

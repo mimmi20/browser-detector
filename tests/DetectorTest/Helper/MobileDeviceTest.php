@@ -145,6 +145,8 @@ final class MobileDeviceTest extends TestCase
             ['Mozilla/5.0 (Linux; U; Android 13; de-de; Redmi 12C Build/TP1A.220624.014) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/112.0.5615.136 Mobile Safari/537.36 XiaoMi/MiuiBrowser/13.38.0-gn'],
             ['HISTORY/6.3.0 (com.aetn.history.ios.watch; build:4385; iOS 16.6.0) Alamofire/4.8.2'],
             ['nook browser/1.0'],
+            ['Mozilla/4.0 (compatible; MSIE 6.0; KDDI-CA3B) Opera 8.60 [ja]'],
+            ['Mozilla/5.0 (Linux; Android 10; GM1910 Build/QKQ1.190716.003; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MBrowser/6.2 TBS/045008 Mobile Safari/537.36 BiliApp/5531000 mobi_app/android channel/oppo Buvid/<hide> internal_version/5531000'],
         ];
     }
 

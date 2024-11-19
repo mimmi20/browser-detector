@@ -257,6 +257,11 @@ final class XRequestedWith implements HeaderInterface
             'com.baidu.searchbox.lite' => 'baidu box app lite',
             'com.microsoft.copilot' => 'microsoft-copilot',
             'de.web.mobile.android.mail' => 'web.de mail',
+            'com.readly.client' => 'readly-app',
+            'com.gbox.android.helper' => 'gbox-helper',
+            'com.samsung.android.email.provider' => 'samsung-email',
+            'it.italiaonline.mail' => 'libero-mail',
+            'webexplorer.amazing.speed' => 'web-browser-explorer',
             default => null,
         };
     }
