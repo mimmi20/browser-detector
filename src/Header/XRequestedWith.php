@@ -88,7 +88,7 @@ final class XRequestedWith implements HeaderInterface
             'com.emporia.browser', 'com.emporia.emporiaapprebuild' => 'emporia-app',
             'com.esaba.downloader' => 'downloader',
             'com.espn.score_center' => 'espn-app',
-            'com.explore.web.browser' => 'web-browser-explorer',
+            'com.explore.web.browser', 'webexplorer.amazing.speed' => 'web-browser-explorer',
             'com.facebook.katana' => 'facebook app',
             'com.facebook.orca' => 'facebook messenger app',
             'com.fancyclean.security.antivirus' => 'fancy-security',
@@ -261,7 +261,8 @@ final class XRequestedWith implements HeaderInterface
             'com.gbox.android.helper' => 'gbox-helper',
             'com.samsung.android.email.provider' => 'samsung-email',
             'it.italiaonline.mail' => 'libero-mail',
-            'webexplorer.amazing.speed' => 'web-browser-explorer',
+            'nu.tommie.inbrowser' => 'in-browser',
+            'com.massimple.nacion.gcba.es', 'com.massimple.nacion.parana.es' => 'plus-simple-browser',
             default => null,
         };
     }

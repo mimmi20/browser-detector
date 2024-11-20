@@ -380,6 +380,9 @@ final class XRequestedWithTest extends TestCase
             ['com.samsung.android.email.provider', true, 'samsung-email', true, null],
             ['it.italiaonline.mail', true, 'libero-mail', true, null],
             ['webexplorer.amazing.speed', true, 'web-browser-explorer', true, null],
+            ['nu.tommie.inbrowser', true, 'in-browser', true, null],
+            ['com.massimple.nacion.gcba.es', true, 'plus-simple-browser', true, null],
+            ['com.massimple.nacion.parana.es', true, 'plus-simple-browser', true, null],
             // ['webexplorer.amazing.biro', true, '', true, null],
         ];
     }

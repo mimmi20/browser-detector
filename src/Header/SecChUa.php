@@ -35,7 +35,7 @@ final class SecChUa implements HeaderInterface
         $key  = array_key_first($list);
         $code = mb_strtolower($key);
 
-        return $code !== 'chromium';
+        return !str_contains($code, 'brand');
     }
 
     /** @throws void */
@@ -50,7 +50,7 @@ final class SecChUa implements HeaderInterface
         $key  = array_key_first($list);
         $code = mb_strtolower($key);
 
-        if ($code === 'chromium') {
+        if (str_contains($code, 'brand')) {
             return null;
         }
 
@@ -83,7 +83,7 @@ final class SecChUa implements HeaderInterface
         $key  = array_key_first($list);
         $code = mb_strtolower($key);
 
-        return $code !== 'chromium';
+        return !str_contains($code, 'brand');
     }
 
     /** @throws void */
@@ -101,7 +101,7 @@ final class SecChUa implements HeaderInterface
 
         $code = mb_strtolower($key);
 
-        if ($code === 'chromium') {
+        if (str_contains($code, 'brand')) {
             return null;
         }
 

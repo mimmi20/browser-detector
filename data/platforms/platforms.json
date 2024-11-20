@@ -1579,5 +1579,16 @@
         "ULTRIX"
       ]
     }
+  },
+  "lindows": {
+    "name": "Lindows",
+    "marketingName": "Lindows",
+    "manufacturer": "unknown",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Lindows"
+      ]
+    }
   }
 }

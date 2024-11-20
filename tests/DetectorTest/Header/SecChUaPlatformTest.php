@@ -128,6 +128,7 @@ final class SecChUaPlatformTest extends TestCase
             ['"Win32"', true, 'windows'],
             ['"Mac OS X"', true, 'mac os x'],
             ['\\"Windows\\"', true, 'windows'],
+            ['Lindows', true, 'lindows'],
             ['""', false, null],
         ];
     }

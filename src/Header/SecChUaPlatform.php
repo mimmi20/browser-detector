@@ -51,7 +51,7 @@ final class SecChUaPlatform implements HeaderInterface
     private function getCode(string $code): string | null
     {
         return match ($code) {
-            'android', 'linux', 'chromeos' => $code,
+            'android', 'linux', 'chromeos', 'lindows' => $code,
             'macos', 'mac os x' => 'mac os x',
             'chrome os', 'chromium os' => 'chromeos',
             'windows', 'win32' => 'windows',
