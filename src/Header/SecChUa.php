@@ -17,6 +17,7 @@ use function current;
 use function key;
 use function mb_strtolower;
 use function reset;
+use function str_contains;
 
 final class SecChUa implements HeaderInterface
 {
