@@ -3148,5 +3148,53 @@
       "version": "112.0.5615.135",
       "manufacturer": "google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; HLTE239E) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Mobile Safari/537.36",
+      "sec-ch-ua": "\"Chromium\";v=\"112.0.5615.48\", \"Google Chrome\";v=\"112.0.5615.48\", \"Not:A-Brand\";v=\"99.0.0.0\"",
+      "sec-ch-ua-platform": "Android",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-full-version": "112.0.5615.48",
+      "sec-ch-ua-platform-version": "12.0.0",
+      "sec-ch-ua-model": "HLTE239E"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "HLTE239E",
+      "marketingName": "E50S",
+      "manufacturer": "hisense",
+      "brand": "hisense",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": 6.52
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "12.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "112.0.5615.48",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "112.0.0.0",
+      "manufacturer": "google"
+    }
   }
 ]

@@ -1605,17 +1605,17 @@
       "architecture": null,
       "deviceName": null,
       "marketingName": null,
-      "manufacturer": null,
-      "brand": null,
-      "dualOrientation": false,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
       "simCount": null,
       "display": {
         "width": null,
         "height": null,
-        "touch": null,
+        "touch": false,
         "size": null
       },
-      "type": null,
+      "type": "unknown",
       "ismobile": false,
       "istv": false,
       "bits": null

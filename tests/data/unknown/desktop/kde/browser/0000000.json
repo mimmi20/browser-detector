@@ -967,6 +967,48 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (compatible; Konqueror/2.2.2; Linux 2.4.18; X11; i686; AffiliateCashGen/1.0; en) LindowsOS (Lindows.com, Inc.)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Linux Desktop",
+      "marketingName": "Linux Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Lindows",
+      "marketingName": "Lindows",
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "Konqueror",
+      "version": "2.2.2",
+      "manufacturer": "kde",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "KHTML",
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (compatible; Konqueror/4.4) KHTML/4.4.5 (like Gecko) Kubuntu"
     },
     "device": {
