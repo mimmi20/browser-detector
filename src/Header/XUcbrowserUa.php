@@ -169,7 +169,7 @@ final class XUcbrowserUa implements HeaderInterface
     /** @throws void */
     public function hasEngineCode(): bool
     {
-        return (bool) preg_match('/re\(([^)]+)\)/', $this->value);
+        return (bool) preg_match('/(?<!o)re\(([^)]+)\)/', $this->value);
     }
 
     /** @throws void */
@@ -177,7 +177,7 @@ final class XUcbrowserUa implements HeaderInterface
     {
         $matches = [];
 
-        if (preg_match('/re\((?P<engine>[^\/)]+)(?:\/[\d.]+)?/', $this->value, $matches)) {
+        if (preg_match('/(?<!o)re\((?P<engine>[^\/)]+)(?:\/[\d.]+)?/', $this->value, $matches)) {
             $code = mb_strtolower($matches['engine']);
 
             return match ($code) {
@@ -192,7 +192,7 @@ final class XUcbrowserUa implements HeaderInterface
     /** @throws void */
     public function hasEngineVersion(): bool
     {
-        return (bool) preg_match('/re\([^\/]+\/[\d.]+/', $this->value);
+        return (bool) preg_match('/(?<!o)re\([^\/]+\/[\d.]+/', $this->value);
     }
 
     /**
@@ -204,7 +204,7 @@ final class XUcbrowserUa implements HeaderInterface
     {
         $matches = [];
 
-        if (preg_match('/re\([^\/]+\/(?P<version>[\d.]+)/', $this->value, $matches)) {
+        if (preg_match('/(?<!o)re\([^\/]+\/(?P<version>[\d.]+)/', $this->value, $matches)) {
             return $matches['version'];
         }
 

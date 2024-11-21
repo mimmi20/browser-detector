@@ -261,7 +261,9 @@ final class Useragent implements HeaderInterface
     {
         $matches = [];
 
-        if (preg_match('/re\((?P<engine>[^\/)]+)(?:\/[\d.]+)?/', $this->normalizedValue, $matches)) {
+        if (
+            preg_match('/(?<!o)re\((?P<engine>[^\/)]+)(?:\/[\d.]+)?/', $this->normalizedValue, $matches)
+        ) {
             $code = mb_strtolower($matches['engine']);
 
             return match ($code) {
@@ -290,7 +292,7 @@ final class Useragent implements HeaderInterface
     {
         $matches = [];
 
-        if (preg_match('/re\([^\/]+\/(?P<version>[\d.]+)/', $this->normalizedValue, $matches)) {
+        if (preg_match('/(?<!o)re\([^\/]+\/(?P<version>[\d.]+)/', $this->normalizedValue, $matches)) {
             return $matches['version'];
         }
 
