@@ -21,11 +21,10 @@ use function array_key_exists;
 use function array_keys;
 use function is_string;
 use function mb_strtolower;
+use function mb_substr;
 use function serialize;
 use function sha1;
 use function str_starts_with;
-use function strtolower;
-use function substr;
 
 final class GenericRequest implements GenericRequestInterface
 {
@@ -76,10 +75,10 @@ final class GenericRequest implements GenericRequestInterface
                 continue;
             }
 
-            $header = strtolower($header);
+            $header = mb_strtolower($header);
 
             if (str_starts_with($header, 'http-') || str_starts_with($header, 'http_')) {
-                $header = substr($header, 5);
+                $header = mb_substr($header, 5);
             }
 
             if ($header === '') {
