@@ -23,7 +23,7 @@ final class SecChUaModel implements HeaderInterface
     /** @throws void */
     public function hasDeviceCode(): bool
     {
-        $value = trim($this->value, '"');
+        $value = trim($this->value, '"\\\'');
         $code  = mb_strtolower($value);
 
         return !in_array($code, ['', 'model', ': ', 'some unknown model'], true);
@@ -32,7 +32,7 @@ final class SecChUaModel implements HeaderInterface
     /** @throws void */
     public function getDeviceCode(): string | null
     {
-        $value = trim($this->value, '"');
+        $value = trim($this->value, '"\\\'');
         $code  = mb_strtolower($value);
 
         return match ($code) {

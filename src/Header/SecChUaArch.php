@@ -21,7 +21,7 @@ final class SecChUaArch implements HeaderInterface
     /** @throws void */
     public function hasDeviceArchitecture(): bool
     {
-        $value = trim($this->value, '"');
+        $value = trim($this->value, '"\\\'');
 
         return $value !== '';
     }
@@ -29,7 +29,7 @@ final class SecChUaArch implements HeaderInterface
     /** @throws void */
     public function getDeviceArchitecture(): string | null
     {
-        $value = trim($this->value, '"');
+        $value = trim($this->value, '"\\\'');
 
         if ($value === '') {
             return null;

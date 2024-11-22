@@ -21,7 +21,7 @@ final class SecChUaFullVersion implements HeaderInterface
     /** @throws void */
     public function hasClientVersion(): bool
     {
-        $value = trim($this->value, '"');
+        $value = trim($this->value, '"\\\'');
 
         return $value !== '';
     }
@@ -33,7 +33,7 @@ final class SecChUaFullVersion implements HeaderInterface
      */
     public function getClientVersion(string | null $code = null): string | null
     {
-        $value = trim($this->value, '"');
+        $value = trim($this->value, '"\\\'');
 
         if ($value === '') {
             return null;
