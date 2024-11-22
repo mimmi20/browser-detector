@@ -16,7 +16,6 @@ use BrowserDetector\Header\HeaderInterface;
 use BrowserDetector\Header\HeaderLoaderInterface;
 use Psr\Http\Message\MessageInterface;
 
-use function array_change_key_case;
 use function array_filter;
 use function array_key_exists;
 use function array_keys;
@@ -24,8 +23,9 @@ use function is_string;
 use function mb_strtolower;
 use function serialize;
 use function sha1;
-
-use const CASE_LOWER;
+use function str_starts_with;
+use function strtolower;
+use function substr;
 
 final class GenericRequest implements GenericRequestInterface
 {
@@ -76,6 +76,16 @@ final class GenericRequest implements GenericRequestInterface
                 continue;
             }
 
+            $header = strtolower($header);
+
+            if (str_starts_with($header, 'http-') || str_starts_with($header, 'http_')) {
+                $header = substr($header, 5);
+            }
+
+            if ($header === '') {
+                continue;
+            }
+
             $this->headers[$header] = $headerLine;
         }
 
@@ -117,7 +127,7 @@ final class GenericRequest implements GenericRequestInterface
     /** @throws void */
     private function filterHeaders(): void
     {
-        $headers  = array_change_key_case($this->headers, CASE_LOWER);
+        $headers  = $this->headers;
         $filtered = array_filter(
             self::HEADERS,
             static fn (string $value): bool => array_key_exists(mb_strtolower($value), $headers),
