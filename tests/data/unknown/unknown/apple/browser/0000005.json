@@ -1425,5 +1425,210 @@
       "version": "537.36.0",
       "manufacturer": "apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "NetworkingExtension/8620.1.15.10.3 Network/4277.60.253.0.2 iOS/18.2"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "Mobile Safari UIWebView",
+      "version": null,
+      "manufacturer": "apple",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "if-none-match": "force-revalidate",
+      "tracestate": "dd=p:6d5794cadc06a197;s:2;t.dm:-4;t.tid:673efcc900000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "7878929672103698839",
+      "x-datadog-sampling-priority": "2",
+      "x-datadog-tags": "_dd.p.dm=-4,_dd.p.tid=673efcc900000000",
+      "x-datadog-trace-id": "6660784894753568001",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "115a3340-9ebd-441c-851d-34ce053637f3"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "Safari",
+      "version": null,
+      "manufacturer": "apple",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "tracestate": "dd=p:001d0db2b3f50122;s:2;t.dm:-4;t.tid:543521fe8ca46dc9",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "8177835499127074",
+      "x-datadog-sampling-priority": "2",
+      "x-datadog-tags": "_dd.p.tid=543521fe8ca46dc9,_dd.p.dm=-4",
+      "x-datadog-trace-id": "11335341368420869810",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "e2732e9d-6d87-40f9-8356-6bc98cef11ff"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "Safari",
+      "version": null,
+      "manufacturer": "apple",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "tracestate": "dd=p:89ea6c09eced597f;s:2;o:rum;t.dm:-4;t.tid:673a33a700000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "9937874317631904127",
+      "x-datadog-sampling-priority": "2",
+      "x-datadog-tags": "_dd.p.tid=673a33a700000000,_dd.p.dm=-4",
+      "x-datadog-trace-id": "14589154331478923313",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "73b7dc89-84c9-4bdb-adaa-f1ac1626bb6c"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "Safari",
+      "version": null,
+      "manufacturer": "apple",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
   }
 ]

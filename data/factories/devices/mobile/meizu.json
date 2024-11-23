@@ -1,8 +1,10 @@
 {
   "rules": {
-    "/note ?9/i": "meizu note 9",
-    "/note ?8/i": "meizu note 8",
+    "/20[ _]inf/i": "meizu 20 infinity",
+    "/note[ _]?9/i": "meizu note 9",
+    "/note[ _]?8/i": "meizu note 8",
     "/mz-u20/i": "meizu mz-u20",
+    "/meizu[ _]s6/i": "meizu s6",
     "/m1852/i": "meizu m1852",
     "/m1816/i": "meizu m1816",
     "/m1813/i": "meizu m1813",
@@ -23,7 +25,7 @@
     "/m355/i": "meizu m355",
     "/m353/i": "meizu m353",
     "/m351/i": "meizu m351",
-    "/meizu_m9|[ _]m9[ )]/i": "meizu m9",
+    "/meizu[ _]m9|[ _]m9[ )]/i": "meizu m9",
     "/m6 note/i": "meizu m6 note",
     "/[ _]m6[ )]/i": "meizu m6",
     "/m5 note/i": "meizu m5 note",

@@ -502,5 +502,47 @@
       "version": "116.0.5845.64",
       "manufacturer": "google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 14; moto g85 5G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.6613.123 YaBrowser/24.10.2.123.00 SA/3 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Moto G",
+      "marketingName": "Moto G",
+      "manufacturer": "motorola",
+      "brand": "motorola",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1280,
+        "height": 720,
+        "touch": true,
+        "size": 4
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Yandex Browser",
+      "version": "24.10.2.123.00",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "128.0.6613.123",
+      "manufacturer": "google"
+    }
   }
 ]

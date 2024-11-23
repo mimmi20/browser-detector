@@ -159,6 +159,7 @@ final class AndroidOs implements VersionFactoryInterface
     private function mapSdkVersion(string $sdkVersion): string
     {
         return match ($sdkVersion) {
+            '35' => '15',
             '34' => '14',
             '33' => '13',
             '32' => '12.1',
