@@ -178,6 +178,48 @@ final class DetectorTest extends TestCase
                     ],
                 ],
             ],
+            [
+                ['user-agent' => 'Mozilla/5.0 (Linux; U; Android 6.0.1; xx; Le X820 Build/MOB31T) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/40.0.2214.89 Quark/1.6.9.911 Mobile Safari/537.36'],
+                [
+                    'device' => [
+                        'architecture' => null,
+                        'deviceName' => 'Le X820',
+                        'marketingName' => 'Le Max 2',
+                        'manufacturer' => 'leeco',
+                        'brand' => 'leeco',
+                        'dualOrientation' => true,
+                        'simCount' => 2,
+                        'display' => [
+                            'width' => 2560,
+                            'height' => 1440,
+                            'touch' => true,
+                            'size' => 5.7,
+                        ],
+                        'type' => 'smartphone',
+                        'ismobile' => true,
+                        'istv' => false,
+                        'bits' => null,
+                    ],
+                    'os' => [
+                        'name' => 'Android',
+                        'marketingName' => 'Android',
+                        'version' => '6.0.1',
+                        'manufacturer' => 'google',
+                    ],
+                    'client' => [
+                        'name' => 'Quark',
+                        'version' => '1.6.9.911',
+                        'manufacturer' => 'quark-team',
+                        'type' => 'browser',
+                        'isbot' => false,
+                    ],
+                    'engine' => [
+                        'name' => 'Blink',
+                        'version' => '40.0.2214.89',
+                        'manufacturer' => 'google',
+                    ],
+                ],
+            ],
         ];
     }
 }
