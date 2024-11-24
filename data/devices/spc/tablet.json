@@ -4,11 +4,75 @@
     "marketingName": "Dark Glee 10.1",
     "manufacturer": "spc",
     "brand": "spc",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 0,
     "display": {
       "width": 1024,
       "height": 600,
+      "touch": true,
+      "size": 10.1
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "spc gravity 3 se": {
+    "deviceName": "Gravity 3 SE",
+    "marketingName": "Gravity 3 SE",
+    "manufacturer": "spc",
+    "brand": "spc",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 1332,
+      "height": 800,
+      "touch": true,
+      "size": 10.35
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "spc gravity 3 mini": {
+    "deviceName": "Gravity 3 Mini",
+    "marketingName": "Gravity 3 Mini",
+    "manufacturer": "spc",
+    "brand": "spc",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 1280,
+      "height": 800,
+      "touch": true,
+      "size": 8
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "spc gravity 3": {
+    "deviceName": "Gravity 3",
+    "marketingName": "Gravity 3",
+    "manufacturer": "spc",
+    "brand": "spc",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 1332,
+      "height": 800,
+      "touch": true,
+      "size": 10.35
+    },
+    "type": "tablet",
+    "platform": "android"
+  },
+  "spc gravity ultimate 2": {
+    "deviceName": "Gravity Ultimate 2",
+    "marketingName": "Gravity Ultimate 2",
+    "manufacturer": "spc",
+    "brand": "spc",
+    "dualOrientation": true,
+    "simCount": 0,
+    "display": {
+      "width": 1920,
+      "height": 1200,
       "touch": true,
       "size": 10.1
     },

@@ -111,6 +111,7 @@ final class SecChUaModel implements HeaderInterface
             'pixel 4a' => 'google=google pixel 4a',
             'pixel 9 pro xl' => 'google=google pixel 9 pro xl',
             'pixel 8a' => 'google=google pixel 8a',
+            'pixel 9 pro fold' => 'google=google pixel 9 pro fold',
             // OnePlus
             'ac2003' => 'oneplus=oneplus ac2003',
             'in2023' => 'oneplus=oneplus in2023',
@@ -292,6 +293,8 @@ final class SecChUaModel implements HeaderInterface
             'zte blade a0620' => 'zte=zte blade a0620',
             'zte 8050' => 'zte=zte 8050',
             'zte 7060' => 'zte=zte 7060',
+            'z6255ca' => 'zte=zte z6255ca',
+            'a303zt' => 'zte=zte a303zt',
             // Samsung
             'sm-a405fn' => 'samsung=samsung sm-a405fn',
             'sm-a415f' => 'samsung=samsung sm-a415f',
@@ -541,6 +544,10 @@ final class SecChUaModel implements HeaderInterface
             'sm-j250f' => 'samsung=samsung sm-j250f',
             'sm-a736b' => 'samsung=samsung sm-a736b',
             'sm-s906e' => 'samsung=samsung sm-s906e',
+            'scg27' => 'samsung=samsung scg27',
+            'scg26' => 'samsung=samsung scg26',
+            'scg25' => 'samsung=samsung scg25',
+            'scg24' => 'samsung=samsung scg24',
             // Huawei
             'mar-lx1b' => 'huawei=huawei mar-lx1b',
             'lya-l09' => 'huawei=huawei lya-l09',
@@ -625,6 +632,7 @@ final class SecChUaModel implements HeaderInterface
             'huawei vns-l31' => 'huawei=huawei vns-l31',
             'ine-lx2r' => 'huawei=huawei ine-lx2r',
             'ali-nx1' => 'huawei=huawei ali-nx1',
+            'bvl-n49' => 'huawei=huawei bvl-n49',
             // Lenovo
             'lenovo tb-x304f' => 'lenovo=lenovo tb-x304f',
             'lenovo yt-j706f' => 'lenovo=lenovo yt-j706f',
@@ -691,6 +699,7 @@ final class SecChUaModel implements HeaderInterface
             'rmx3563' => 'realme=realme rmx3563',
             'rmx3623' => 'realme=realme rmx3623',
             'rmx1931' => 'realme=realme rmx1931',
+            'rmx3830' => 'realme=realme rmx3830',
             // Motorola
             'moto g200 5g' => 'motorola=motorola moto g200 5g',
             'motorola razr 5g' => 'motorola=motorola razr 5g',
@@ -729,6 +738,7 @@ final class SecChUaModel implements HeaderInterface
             'motorola edge 40' => 'motorola=motorola edge 40',
             'motorola edge 40 neo' => 'motorola=motorola edge 40 neo',
             'moto g24' => 'motorola=motorola moto g24',
+            'moto g35 5g' => 'motorola=motorola moto g35 5g',
             // Sony
             'xq-cc54' => 'sony=sony xq-cc54',
             'xq-bq52' => 'sony=sony xq-bq52',
@@ -748,6 +758,7 @@ final class SecChUaModel implements HeaderInterface
             'e5823' => 'sony=sony e5823',
             'xq-es54' => 'sony=sony xq-es54',
             'xq-dc54' => 'sony=sony xq-dc54',
+            'a302so' => 'sony=sony a302so',
             // Vivo
             'v2109' => 'vivo=vivo v2109',
             'vivo 1716' => 'vivo=vivo 1716',
@@ -801,6 +812,8 @@ final class SecChUaModel implements HeaderInterface
             // Alcatel
             '5024d_eea' => 'alcatel=alcatel 5024d_eea',
             '6025d_eea' => 'alcatel=alcatel 6025d_eea',
+            '9009f' => 'alcatel=alcatel 9009f',
+            '4063t' => 'alcatel=alcatel 4063t',
             // HTC
             'htc desire 19+' => 'htc=htc desire 19 plus',
             'htc u11' => 'htc=htc u11',
@@ -819,6 +832,7 @@ final class SecChUaModel implements HeaderInterface
             'bv6800pro' => 'blackview=blackview bv6800 pro',
             'bv4900pro' => 'blackview=blackview bv4900 pro',
             'tab 7 wifi' => 'blackview=blackview tab 7 wifi',
+            'tab 70 wifi' => 'blackview=blackview tab 70 wifi',
             // medion
             'b5532' => 'medion=medion b5532',
             // caterpillar
@@ -864,6 +878,54 @@ final class SecChUaModel implements HeaderInterface
             'awtx6' => 'aiwa=aiwa awtx6',
             // walton
             'xanon x90' => 'walton=walton xanon x90',
+            // kempler-strauss
+            'zkempler plus' => 'kempler-strauss=kempler-strauss zkempler plus',
+            // zuum
+            'sens m1' => 'zuum=zuum sens m1',
+            // retroid-pocket
+            'retroid pocket 2+' => 'retroid-pocket=retroid-pocket 2 plus',
+            // logitech
+            'gr0006' => 'logitech=logitech gr0006',
+            // x-mobile
+            'xmobile x7' => 'x-mobile=x-mobile x7',
+            // soho-style
+            's1586k' => 'soho-style=soho-style s1586k',
+            'ss5724g' => 'soho-style=soho-style ss5724g',
+            // veidoo
+            'veidoo_t60_plus' => 'veidoo=veidoo t60 plus',
+            // crosscall
+            'stellar-x5' => 'crosscall=crosscall stellar-x5',
+            // touchmate
+            'tm-mid1065' => 'touchmate=touchmate tm-mid1065',
+            // ila
+            'ila x2' => 'ila=ila x2',
+            // sharp
+            'a302sh' => 'sharp=sharp a302sh',
+            // kyocera
+            'a301kc' => 'kyocera=kyocera a301kc',
+            // iq-t
+            'iq&amp;t n8', 'iq&t n8' => 'iq-t=iq-t n8',
+            // packard-bell
+            'silverstone-t5a' => 'packard-bell=packard-bell silverstone t5a',
+            // sgin
+            'sgin_e10m' => 'sgin=sgin e10m',
+            // maze-speed
+            'ms5614g' => 'maze-speed=maze-speed ms5614g',
+            'ms5539g' => 'maze-speed=maze-speed ms5539g',
+            // rct
+            'mx101m3' => 'rct=rct mx101m3',
+            'mx101m2' => 'rct=rct mx101m2',
+            // vortex
+            'hd68' => 'vortex=vortex hd68',
+            'hd60l' => 'vortex=vortex hd60l',
+            'hd60i' => 'vortex=vortex hd60i',
+            'hd60' => 'vortex=vortex hd60',
+            'hd55' => 'vortex=vortex hd55',
+            // spc
+            'gravity_3_se' => 'spc=spc gravity 3 se',
+            'gravity_3_mini' => 'spc=spc gravity 3 mini',
+            'gravity_3' => 'spc=spc gravity 3',
+            'gravity ultimate 2' => 'spc=spc gravity ultimate 2',
             default => null,
         };
     }
