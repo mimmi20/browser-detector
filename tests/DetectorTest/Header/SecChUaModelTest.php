@@ -990,7 +990,7 @@ final class SecChUaModelTest extends TestCase
             ['"A301KC"', true, 'kyocera=kyocera a301kc'],
             // iq-t
             ['"iQ&amp;T N8"', true, 'iq-t=iq-t n8'],
-            ["'iQ&amp;T N8'", true, 'iq-t=iq-t n8'],
+            ['\'iQ&amp;T N8\'', true, 'iq-t=iq-t n8'],
             ['"iQ&T N8"', true, 'iq-t=iq-t n8'],
             // packard-bell
             ['"SILVERSTONE-T5A"', true, 'packard-bell=packard-bell silverstone t5a'],
