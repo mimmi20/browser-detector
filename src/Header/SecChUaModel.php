@@ -845,6 +845,7 @@ final class SecChUaModel implements HeaderInterface
             'terra_pad_1006' => 'wortmann=wortmann terra pad 1006',
             // infinix
             's5 pro' => 'infinix=infinix s5 pro',
+            'infinix x688b' => 'infinix=infinix x688b',
             // cyrus
             'cs24' => 'cyrus=cyrus cs24',
             // facetel

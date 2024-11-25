@@ -930,6 +930,7 @@ final class SecChUaModelTest extends TestCase
             ['"TERRA_PAD_1006"', true, 'wortmann=wortmann terra pad 1006'],
             // infinix
             ['"S5 Pro"', true, 'infinix=infinix s5 pro'],
+            ['"Infinix X688B"', true, 'infinix=infinix x688b'],
             // cyrus
             ['"CS24"', true, 'cyrus=cyrus cs24'],
             // facetel
