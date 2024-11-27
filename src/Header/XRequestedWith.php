@@ -279,6 +279,7 @@ final class XRequestedWith implements HeaderInterface
             'com.transsion.magicshow' => 'visha',
             'com.awesapp.isp' => 'isafeplay',
             'com.anydesk.anydeskandroid' => 'anydesk-remote-desktop',
+            'com.palmteam.imagesearch' => 'search-by-image',
             default => null,
         };
     }

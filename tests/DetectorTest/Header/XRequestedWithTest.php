@@ -401,6 +401,7 @@ final class XRequestedWithTest extends TestCase
             ['com.transsion.magicshow', true, 'visha', true, null],
             ['com.awesapp.isp', true, 'isafeplay', true, null],
             ['com.anydesk.anydeskandroid', true, 'anydesk-remote-desktop', true, null],
+            ['com.palmteam.imagesearch', true, 'search-by-image', true, null],
             // ['webexplorer.amazing.biro', true, '', true, null],
         ];
     }

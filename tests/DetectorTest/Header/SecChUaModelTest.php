@@ -379,6 +379,7 @@ final class SecChUaModelTest extends TestCase
             ['"ZTE 7060"', true, 'zte=zte 7060'],
             ['"Z6255CA"', true, 'zte=zte z6255ca'],
             ['"A303ZT"', true, 'zte=zte a303zt'],
+            ['"ZTE Blade A7 2019"', true, 'zte=zte blade a7 2019'],
             // Samsung
             ['"SM-A415F"', true, 'samsung=samsung sm-a415f'],
             ['"SM-A505FN"', true, 'samsung=samsung sm-a505fn'],
@@ -634,6 +635,7 @@ final class SecChUaModelTest extends TestCase
             ['SCG26', true, 'samsung=samsung scg26'],
             ['SCG25', true, 'samsung=samsung scg25'],
             ['SCG24', true, 'samsung=samsung scg24'],
+            ['SM-S926B', true, 'samsung=samsung sm-s926b'],
             // Huawei
             ['"LGE-NX9"', true, 'huawei=huawei lge-nx9'],
             ['"VOG-L29"', true, 'huawei=huawei vog-l29'],
@@ -739,6 +741,7 @@ final class SecChUaModelTest extends TestCase
             ['"B5032"', true, 'lenovo=lenovo b5032'],
             ['"TB330FU"', true, 'lenovo=lenovo tb330fu'],
             ['"TB350FU"', true, 'lenovo=lenovo tb350fu'],
+            ['"TB310FU"', true, 'lenovo=lenovo tb310fu'],
             // Nokia
             ['"Nokia G50"', true, 'nokia=nokia g50'],
             ['"Nokia G20"', true, 'nokia=nokia g20'],
@@ -824,6 +827,7 @@ final class SecChUaModelTest extends TestCase
             ['motorola edge 40 neo', true, 'motorola=motorola edge 40 neo'],
             ['moto g24', true, 'motorola=motorola moto g24'],
             ['moto g35 5G', true, 'motorola=motorola moto g35 5g'],
+            ['moto g23', true, 'motorola=motorola moto g23'],
             // Sony
             ['"XQ-CC54"', true, 'sony=sony xq-cc54'],
             ['"XQ-BQ52"', true, 'sony=sony xq-bq52'],

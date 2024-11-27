@@ -295,6 +295,7 @@ final class SecChUaModel implements HeaderInterface
             'zte 7060' => 'zte=zte 7060',
             'z6255ca' => 'zte=zte z6255ca',
             'a303zt' => 'zte=zte a303zt',
+            'zte blade a7 2019' => 'zte=zte blade a7 2019',
             // Samsung
             'sm-a405fn' => 'samsung=samsung sm-a405fn',
             'sm-a415f' => 'samsung=samsung sm-a415f',
@@ -548,6 +549,7 @@ final class SecChUaModel implements HeaderInterface
             'scg26' => 'samsung=samsung scg26',
             'scg25' => 'samsung=samsung scg25',
             'scg24' => 'samsung=samsung scg24',
+            'sm-s926b' => 'samsung=samsung sm-s926b',
             // Huawei
             'mar-lx1b' => 'huawei=huawei mar-lx1b',
             'lya-l09' => 'huawei=huawei lya-l09',
@@ -654,6 +656,7 @@ final class SecChUaModel implements HeaderInterface
             'b5032' => 'lenovo=lenovo b5032',
             'tb330fu' => 'lenovo=lenovo tb330fu',
             'tb350fu' => 'lenovo=lenovo tb350fu',
+            'tb310fu' => 'lenovo=lenovo tb310fu',
             // Nokia
             'nokia g50' => 'nokia=nokia g50',
             'nokia g20' => 'nokia=nokia g20',
@@ -739,6 +742,7 @@ final class SecChUaModel implements HeaderInterface
             'motorola edge 40 neo' => 'motorola=motorola edge 40 neo',
             'moto g24' => 'motorola=motorola moto g24',
             'moto g35 5g' => 'motorola=motorola moto g35 5g',
+            'moto g23' => 'motorola=motorola moto g23',
             // Sony
             'xq-cc54' => 'sony=sony xq-cc54',
             'xq-bq52' => 'sony=sony xq-bq52',
