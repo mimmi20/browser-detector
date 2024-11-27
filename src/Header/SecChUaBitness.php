@@ -21,7 +21,7 @@ final class SecChUaBitness implements HeaderInterface
     /** @throws void */
     public function hasDeviceBitness(): bool
     {
-        $value = trim($this->value, '"');
+        $value = trim($this->value, '"\\\'');
 
         return $value !== '';
     }
@@ -29,7 +29,7 @@ final class SecChUaBitness implements HeaderInterface
     /** @throws void */
     public function getDeviceBitness(): int | null
     {
-        $value = trim($this->value, '"');
+        $value = trim($this->value, '"\\\'');
 
         if ($value === '') {
             return null;

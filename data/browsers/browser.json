@@ -5301,5 +5301,39 @@
       ]
     },
     "engine": null
+  },
+  "in-browser": {
+    "name": "InBrowser - Inkognito Surfen",
+    "manufacturer": "pia",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "InBrowser"
+      ]
+    },
+    "engine": null
+  },
+  "plus-simple-browser": {
+    "name": "+Simple Browser",
+    "manufacturer": "unknown",
+    "type": "browser",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "\\+Simple Browser"
+      ]
+    },
+    "engine": null
+  },
+  "tv-bro": {
+    "name": "TV Bro",
+    "manufacturer": "fedir-tsapana",
+    "type": "browser",
+    "version": {
+      "factory": null,
+      "search": null
+    },
+    "engine": null
   }
 }

@@ -158,5 +158,53 @@
     },
     "type": "smartphone",
     "platform": "android"
+  },
+  "crosscall stellar-x5": {
+    "deviceName": "Stellar-X5",
+    "marketingName": "Stellar-X5",
+    "manufacturer": "crosscall",
+    "brand": "crosscall",
+    "dualOrientation": null,
+    "simCount": null,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.497
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "crosscall action-x5": {
+    "deviceName": "Action-X5",
+    "marketingName": "Action-X5",
+    "manufacturer": "crosscall",
+    "brand": "crosscall",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1440,
+      "height": 720,
+      "touch": true,
+      "size": 5.45
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "crosscall trekker-x3": {
+    "deviceName": "Trekker-X3",
+    "marketingName": "Trekker-X3",
+    "manufacturer": "crosscall",
+    "brand": "crosscall",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1980,
+      "height": 1090,
+      "touch": true,
+      "size": 5
+    },
+    "type": "smartphone",
+    "platform": "android"
   }
 }

@@ -175,6 +175,134 @@
     "type": "phablet",
     "platform": "android"
   },
+  "samsung sm-a516u1": {
+    "deviceName": "SM-A516U1",
+    "marketingName": "Galaxy A51 (5G, USA)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.5
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sm-a516b": {
+    "deviceName": "SM-A516B",
+    "marketingName": "Galaxy A51 (5G, International)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.5
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sm-a516n": {
+    "deviceName": "SM-A516N",
+    "marketingName": "Galaxy A51 (5G, Korea)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.5
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sm-a516f": {
+    "deviceName": "SM-A516F",
+    "marketingName": "Galaxy A51 (5G)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.5
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sm-a5160": {
+    "deviceName": "SM-A5160",
+    "marketingName": "Galaxy A51 (5G, China)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.5
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sm-a516v": {
+    "deviceName": "SM-A516V",
+    "marketingName": "Galaxy A51 (5G)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.5
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sc-54a": {
+    "deviceName": "SC-54A",
+    "marketingName": "Galaxy A51 (5G)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.5
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung scg07": {
+    "deviceName": "SCG07",
+    "marketingName": "Galaxy A51 (5G)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2400,
+      "height": 1080,
+      "touch": true,
+      "size": 6.5
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
   "samsung sm-g8850": {
     "deviceName": "SM-G8850",
     "marketingName": "Galaxy A8 Star Duos",
@@ -932,8 +1060,8 @@
     "marketingName": "Galaxy Note 20 Ultra 4G",
     "manufacturer": "samsung",
     "brand": "samsung",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 3088,
       "height": 1440,
@@ -994,6 +1122,22 @@
   "samsung sm-n986n": {
     "deviceName": "SM-N986N",
     "marketingName": "Galaxy Note 20 Ultra 5G (Korea)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 3088,
+      "height": 1440,
+      "touch": true,
+      "size": 6.9
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sm-n986c": {
+    "deviceName": "SM-N986C",
+    "marketingName": "Galaxy Note 20 Ultra 5G",
     "manufacturer": "samsung",
     "brand": "samsung",
     "dualOrientation": true,
@@ -2095,6 +2239,38 @@
     "type": "phablet",
     "platform": "android"
   },
+  "samsung sm-f721j": {
+    "deviceName": "SM-F721J",
+    "marketingName": "Galaxy Z Flip4",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2640,
+      "height": 1080,
+      "touch": true,
+      "size": 6.7
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung scg17": {
+    "deviceName": "SCG17",
+    "marketingName": "Galaxy Z Flip4",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2640,
+      "height": 1080,
+      "touch": true,
+      "size": 6.7
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
   "samsung sm-f721n": {
     "deviceName": "SM-F721N",
     "marketingName": "Galaxy Z Flip4 (Korea)",
@@ -2114,6 +2290,38 @@
   "samsung sm-f721u": {
     "deviceName": "SM-F721U",
     "marketingName": "Galaxy Z Flip4 (USA)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2640,
+      "height": 1080,
+      "touch": true,
+      "size": 6.7
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sm-f721d": {
+    "deviceName": "SM-F721D",
+    "marketingName": "Galaxy Z Flip4 5G",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2640,
+      "height": 1080,
+      "touch": true,
+      "size": 6.7
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sc-54c": {
+    "deviceName": "SC-54C",
+    "marketingName": "Galaxy Z Flip4 5G",
     "manufacturer": "samsung",
     "brand": "samsung",
     "dualOrientation": true,
@@ -2783,6 +2991,38 @@
     "type": "phablet",
     "platform": "android"
   },
+  "samsung sm-f936d": {
+    "deviceName": "SM-F936D",
+    "marketingName": "Galaxy Z Fold4 5G",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2176,
+      "height": 1812,
+      "touch": true,
+      "size": 7.6
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sc-55c": {
+    "deviceName": "SC-55C",
+    "marketingName": "Galaxy Z Fold4 5G",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2176,
+      "height": 1812,
+      "touch": true,
+      "size": 7.6
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
   "samsung sm-f936w": {
     "deviceName": "SM-F936W",
     "marketingName": "Galaxy Z Fold4 5G (Canada)",
@@ -2818,6 +3058,38 @@
   "samsung sm-f731b": {
     "deviceName": "SM-F731B",
     "marketingName": "Galaxy Z Flip5 (International)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2640,
+      "height": 1080,
+      "touch": true,
+      "size": 6.7
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sm-f731j": {
+    "deviceName": "SM-F731J",
+    "marketingName": "Galaxy Z Flip5 (Japan)",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2640,
+      "height": 1080,
+      "touch": true,
+      "size": 6.7
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung scg23": {
+    "deviceName": "SCG23",
+    "marketingName": "Galaxy Z Flip5 (Japan)",
     "manufacturer": "samsung",
     "brand": "samsung",
     "dualOrientation": true,
@@ -3003,6 +3275,38 @@
       "height": 1812,
       "touch": true,
       "size": 7.6
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sc-55d": {
+    "deviceName": "SC-55D",
+    "marketingName": "Galaxy Z Fold5 5G UW",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2316,
+      "height": 904,
+      "touch": true,
+      "size": 6.2
+    },
+    "type": "phablet",
+    "platform": "android"
+  },
+  "samsung sm-f946d": {
+    "deviceName": "SM-F946D",
+    "marketingName": "Galaxy Z Fold5 5G UW",
+    "manufacturer": "samsung",
+    "brand": "samsung",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2316,
+      "height": 904,
+      "touch": true,
+      "size": 6.2
     },
     "type": "phablet",
     "platform": "android"

@@ -23,7 +23,7 @@ final class SecChUaPlatform implements HeaderInterface
     /** @throws void */
     public function hasPlatformCode(): bool
     {
-        $value = trim($this->value, '"\\');
+        $value = trim($this->value, '"\\\'');
         $code  = mb_strtolower($value);
 
         return !in_array($code, ['', 'unknown'], true);
@@ -32,7 +32,7 @@ final class SecChUaPlatform implements HeaderInterface
     /** @throws void */
     public function getPlatformCode(string | null $derivate = null): string | null
     {
-        $value = trim($this->value, '"\\');
+        $value = trim($this->value, '"\\\'');
         $code  = mb_strtolower($value);
 
         if ($derivate !== null) {
@@ -51,7 +51,7 @@ final class SecChUaPlatform implements HeaderInterface
     private function getCode(string $code): string | null
     {
         return match ($code) {
-            'android', 'linux', 'chromeos' => $code,
+            'android', 'linux', 'chromeos', 'lindows' => $code,
             'macos', 'mac os x' => 'mac os x',
             'chrome os', 'chromium os' => 'chromeos',
             'windows', 'win32' => 'windows',

@@ -846,5 +846,37 @@
     },
     "type": "smartphone",
     "platform": "android"
+  },
+  "meizu 20 infinity": {
+    "deviceName": "20 Infinity",
+    "marketingName": "20 Infinity",
+    "manufacturer": "meizu",
+    "brand": "meizu",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 3192,
+      "height": 1368,
+      "touch": true,
+      "size": 6.79
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "meizu s6": {
+    "deviceName": "S6",
+    "marketingName": "S6",
+    "manufacturer": "meizu",
+    "brand": "meizu",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1440,
+      "height": 720,
+      "touch": true,
+      "size": 5.7
+    },
+    "type": "smartphone",
+    "platform": "android"
   }
 }

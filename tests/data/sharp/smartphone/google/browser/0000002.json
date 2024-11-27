@@ -40,5 +40,53 @@
       "version": "90.0.4430.210",
       "manufacturer": "google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Mobile Safari/537.36",
+      "sec-ch-ua": "\"Google Chrome\";v=\"125.0.6422.165\", \"Chromium\";v=\"125.0.6422.165\", \"Not.A/Brand\";v=\"24.0.0.0\"",
+      "sec-ch-ua-platform": "Android",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-full-version": "125.0.6422.165",
+      "sec-ch-ua-platform-version": "14.0.0",
+      "sec-ch-ua-model": "A302SH"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "A302SH",
+      "marketingName": "Aquos Wish 3 5G",
+      "manufacturer": "sharp",
+      "brand": "sharp",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1520,
+        "height": 720,
+        "touch": true,
+        "size": 5.7
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "125.0.6422.165",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "125.0.0.0",
+      "manufacturer": "google"
+    }
   }
 ]

@@ -237,4 +237,174 @@ final class RequestBuilderTest extends TestCase
 
         self::assertSame($request, $result);
     }
+
+    /**
+     * @throws ExpectationFailedException
+     * @throws Exception
+     */
+    public function testBuildRequestFromHeaderArray2(): void
+    {
+        $useragent     = '+Simple Browser';
+        $requestedWith = 'com.massimple.nacion.parana.es';
+
+        $deviceParser      = $this->createMock(DeviceParserInterface::class);
+        $platformParser    = $this->createMock(PlatformParserInterface::class);
+        $browserParser     = $this->createMock(BrowserParserInterface::class);
+        $engineParser      = $this->createMock(EngineParserInterface::class);
+        $browserLoader     = $this->createMock(BrowserLoaderInterface::class);
+        $platformLoader    = $this->createMock(PlatformLoaderInterface::class);
+        $engineLoader      = $this->createMock(EngineLoaderInterface::class);
+        $normalizerFactory = new NormalizerFactory();
+
+        $object = new RequestBuilder(
+            $deviceParser,
+            $platformParser,
+            $browserParser,
+            $engineParser,
+            $normalizerFactory,
+            $browserLoader,
+            $platformLoader,
+            $engineLoader,
+        );
+
+        $result = $object->buildRequest(
+            [
+                'user-agent' => $useragent,
+                'http-x-requested-with' => $requestedWith,
+            ],
+        );
+        assert(
+            $result instanceof GenericRequestInterface,
+            sprintf(
+                '$result should be an instance of %s, but is %s',
+                GenericRequestInterface::class,
+                $result::class,
+            ),
+        );
+
+        self::assertInstanceOf(GenericRequestInterface::class, $result);
+        self::assertSame(
+            ['user-agent' => $useragent, 'x-requested-with' => $requestedWith],
+            $result->getHeaders(),
+        );
+
+        $filteredHeaders = $result->getFilteredHeaders();
+
+        self::assertCount(2, $filteredHeaders);
+        self::assertArrayHasKey('user-agent', $filteredHeaders);
+        self::assertArrayHasKey('x-requested-with', $filteredHeaders);
+    }
+
+    /**
+     * @throws ExpectationFailedException
+     * @throws Exception
+     */
+    public function testBuildRequestFromHeaderArray3(): void
+    {
+        $useragent     = '+Simple Browser';
+        $requestedWith = 'com.massimple.nacion.parana.es';
+
+        $deviceParser      = $this->createMock(DeviceParserInterface::class);
+        $platformParser    = $this->createMock(PlatformParserInterface::class);
+        $browserParser     = $this->createMock(BrowserParserInterface::class);
+        $engineParser      = $this->createMock(EngineParserInterface::class);
+        $browserLoader     = $this->createMock(BrowserLoaderInterface::class);
+        $platformLoader    = $this->createMock(PlatformLoaderInterface::class);
+        $engineLoader      = $this->createMock(EngineLoaderInterface::class);
+        $normalizerFactory = new NormalizerFactory();
+
+        $object = new RequestBuilder(
+            $deviceParser,
+            $platformParser,
+            $browserParser,
+            $engineParser,
+            $normalizerFactory,
+            $browserLoader,
+            $platformLoader,
+            $engineLoader,
+        );
+
+        $result = $object->buildRequest(
+            [
+                'user-agent' => $useragent,
+                'http_x-requested-with' => $requestedWith,
+            ],
+        );
+        assert(
+            $result instanceof GenericRequestInterface,
+            sprintf(
+                '$result should be an instance of %s, but is %s',
+                GenericRequestInterface::class,
+                $result::class,
+            ),
+        );
+
+        self::assertInstanceOf(GenericRequestInterface::class, $result);
+        self::assertSame(
+            ['user-agent' => $useragent, 'x-requested-with' => $requestedWith],
+            $result->getHeaders(),
+        );
+
+        $filteredHeaders = $result->getFilteredHeaders();
+
+        self::assertCount(2, $filteredHeaders);
+        self::assertArrayHasKey('user-agent', $filteredHeaders);
+        self::assertArrayHasKey('x-requested-with', $filteredHeaders);
+    }
+
+    /**
+     * @throws ExpectationFailedException
+     * @throws Exception
+     */
+    public function testBuildRequestFromHeaderArray4(): void
+    {
+        $useragent     = '+Simple Browser';
+        $requestedWith = 'com.massimple.nacion.parana.es';
+
+        $deviceParser      = $this->createMock(DeviceParserInterface::class);
+        $platformParser    = $this->createMock(PlatformParserInterface::class);
+        $browserParser     = $this->createMock(BrowserParserInterface::class);
+        $engineParser      = $this->createMock(EngineParserInterface::class);
+        $browserLoader     = $this->createMock(BrowserLoaderInterface::class);
+        $platformLoader    = $this->createMock(PlatformLoaderInterface::class);
+        $engineLoader      = $this->createMock(EngineLoaderInterface::class);
+        $normalizerFactory = new NormalizerFactory();
+
+        $object = new RequestBuilder(
+            $deviceParser,
+            $platformParser,
+            $browserParser,
+            $engineParser,
+            $normalizerFactory,
+            $browserLoader,
+            $platformLoader,
+            $engineLoader,
+        );
+
+        $result = $object->buildRequest(
+            [
+                'user-agent' => $useragent,
+                'http+x-requested-with' => $requestedWith,
+            ],
+        );
+        assert(
+            $result instanceof GenericRequestInterface,
+            sprintf(
+                '$result should be an instance of %s, but is %s',
+                GenericRequestInterface::class,
+                $result::class,
+            ),
+        );
+
+        self::assertInstanceOf(GenericRequestInterface::class, $result);
+        self::assertSame(
+            ['user-agent' => $useragent, 'http+x-requested-with' => $requestedWith],
+            $result->getHeaders(),
+        );
+
+        $filteredHeaders = $result->getFilteredHeaders();
+
+        self::assertCount(1, $filteredHeaders);
+        self::assertArrayHasKey('user-agent', $filteredHeaders);
+    }
 }

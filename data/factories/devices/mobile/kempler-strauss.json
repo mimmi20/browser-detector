@@ -1,8 +1,9 @@
 {
   "rules": {
-    "/alumini ?3 ?plus/i": "kempler-strauss alumini 3 plus",
-    "/alumini ?3/i": "kempler-strauss alumini 3",
-    "/alumini ?2/i": "kempler-strauss alumini 2"
+    "/alumini[ _]?3[ _]?plus/i": "kempler-strauss alumini 3 plus",
+    "/alumini[ _]?3/i": "kempler-strauss alumini 3",
+    "/alumini[ _]?2/i": "kempler-strauss alumini 2",
+    "/zkempler[ _]plus/i": "kempler-strauss zkempler plus"
   },
   "generic": "general kempler-strauss device"
 }

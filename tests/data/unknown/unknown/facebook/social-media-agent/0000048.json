@@ -3746,5 +3746,96 @@
       "version": null,
       "manufacturer": "unknown"
     }
+  },
+  {
+    "headers": {
+      "tracestate": "dd=t.tid:673c625a00000000;t.dm:-1;s:1;p:7712908c6692b117",
+      "user-agent": "facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)",
+      "x-bufferbot": "Being Awesome! P.S. We're hiring! buffer.com/journey",
+      "x-datadog-parent-id": "8580079172784926999",
+      "x-datadog-sampling-priority": "1",
+      "x-datadog-tags": "_dd.p.tid=673c625a00000000,_dd.p.dm=-1",
+      "x-datadog-trace-id": "2898574250878602965"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "FacebookExternalHit",
+      "version": "1.1.0",
+      "manufacturer": "facebook",
+      "type": "social-media-agent",
+      "isbot": true
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)",
+      "x-fb-crawlerbot": "Aals1FnZVakRNlIMlZGc3naFm2qUza8-jSbv8z4BAUgaVU4zMQzir3A1KQ3Mt9fCcS4gINA1qos6pscI"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "FacebookExternalHit",
+      "version": "1.1.0",
+      "manufacturer": "facebook",
+      "type": "social-media-agent",
+      "isbot": true
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
   }
 ]

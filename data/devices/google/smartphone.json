@@ -526,5 +526,37 @@
     },
     "type": "smartphone",
     "platform": "android"
+  },
+  "google pixel 9 pro xl": {
+    "deviceName": "Pixel 9 Pro XL",
+    "marketingName": "Pixel 9 Pro XL",
+    "manufacturer": "google",
+    "brand": "google",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2992,
+      "height": 1344,
+      "touch": true,
+      "size": 6.8
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "google pixel 9 pro fold": {
+    "deviceName": "Pixel 9 Pro Fold",
+    "marketingName": "Pixel 9 Pro Fold",
+    "manufacturer": "google",
+    "brand": "google",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2152,
+      "height": 2076,
+      "touch": true,
+      "size": 8
+    },
+    "type": "smartphone",
+    "platform": "android"
   }
 }

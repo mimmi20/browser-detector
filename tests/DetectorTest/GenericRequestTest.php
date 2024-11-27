@@ -691,4 +691,153 @@ final class GenericRequestTest extends TestCase
         self::assertSame($expectedHeaders, $resultHeaders);
         self::assertSame('230c34f734fa2f80c81be71068dd4ccad2dc0ff2', $original->getHash());
     }
+
+    /** @throws Exception */
+    public function testGetFilteredHeaders4(): void
+    {
+        $userAgent     = '+Simple Browser';
+        $requestedWith = 'com.massimple.nacion.parana.es';
+        $headers       = [
+            'user-agent' => [$userAgent],
+            'http-x-requested-with' => [$requestedWith],
+        ];
+
+        $header1 = $this->createMock(HeaderInterface::class);
+        $header1->expects(self::once())
+            ->method('getValue')
+            ->willReturn($requestedWith);
+        $header1->expects(self::never())
+            ->method('hasPlatformCode');
+        $header1->expects(self::never())
+            ->method('hasClientCode');
+        $header1->expects(self::never())
+            ->method('hasDeviceCode');
+
+        $header2 = $this->createMock(HeaderInterface::class);
+        $header2->expects(self::once())
+            ->method('getValue')
+            ->willReturn($userAgent);
+        $header2->expects(self::never())
+            ->method('hasPlatformCode');
+        $header2->expects(self::never())
+            ->method('hasClientCode');
+        $header2->expects(self::never())
+            ->method('hasDeviceCode');
+
+        $expectedHeaders = [
+            Constants::HEADER_REQUESTED_WITH => $header1,
+            Constants::HEADER_USERAGENT => $header2,
+        ];
+
+        $loader = $this->createMock(HeaderLoaderInterface::class);
+        $loader->expects(self::never())
+            ->method('has');
+        $matcher = self::exactly(2);
+        $loader->expects($matcher)
+            ->method('load')
+            ->willReturnCallback(
+                static function (string $key, string $value) use ($matcher, $requestedWith, $userAgent, $header1, $header2): HeaderInterface {
+                    match ($matcher->numberOfInvocations()) {
+                        1 => self::assertSame(Constants::HEADER_REQUESTED_WITH, $key),
+                        default => self::assertSame(Constants::HEADER_USERAGENT, $key),
+                    };
+
+                    match ($matcher->numberOfInvocations()) {
+                        1 => self::assertSame($requestedWith, $value),
+                        default => self::assertSame($userAgent, $value),
+                    };
+
+                    return match ($matcher->numberOfInvocations()) {
+                        1 => $header1,
+                        default => $header2,
+                    };
+                },
+            );
+
+        $message = $this->createMock(MessageInterface::class);
+        $message->expects(self::once())
+            ->method('getHeaders')
+            ->willReturn($headers);
+        $matcher = self::exactly(2);
+        $message->expects($matcher)
+            ->method('getHeaderLine')
+            ->willReturnCallback(
+                static function (string $name) use ($matcher, $userAgent, $requestedWith): string {
+                    match ($matcher->numberOfInvocations()) {
+                        1 => self::assertSame(Constants::HEADER_USERAGENT, $name),
+                        default => self::assertSame('http-x-requested-with', $name),
+                    };
+
+                    return match ($matcher->numberOfInvocations()) {
+                        1 => $userAgent,
+                        default => $requestedWith,
+                    };
+                },
+            );
+
+        $original      = new GenericRequest($message, $loader);
+        $resultHeaders = $original->getFilteredHeaders();
+
+        self::assertSame($expectedHeaders, $resultHeaders);
+        self::assertSame('fe38d00b3fa8a78553f2a052cc1c881d32241312', $original->getHash());
+    }
+
+    /** @throws Exception */
+    public function testGetFilteredHeaders5(): void
+    {
+        $userAgent     = '+Simple Browser';
+        $requestedWith = 'com.massimple.nacion.parana.es';
+        $headers       = [
+            'user-agent' => [$userAgent],
+            'http-' => [$requestedWith],
+        ];
+
+        $header2 = $this->createMock(HeaderInterface::class);
+        $header2->expects(self::once())
+            ->method('getValue')
+            ->willReturn($userAgent);
+        $header2->expects(self::never())
+            ->method('hasPlatformCode');
+        $header2->expects(self::never())
+            ->method('hasClientCode');
+        $header2->expects(self::never())
+            ->method('hasDeviceCode');
+
+        $expectedHeaders = [Constants::HEADER_USERAGENT => $header2];
+
+        $loader = $this->createMock(HeaderLoaderInterface::class);
+        $loader->expects(self::never())
+            ->method('has');
+        $loader->expects(self::once())
+            ->method('load')
+            ->with(Constants::HEADER_USERAGENT, $userAgent)
+            ->willReturn($header2);
+
+        $message = $this->createMock(MessageInterface::class);
+        $message->expects(self::once())
+            ->method('getHeaders')
+            ->willReturn($headers);
+        $matcher = self::exactly(2);
+        $message->expects($matcher)
+            ->method('getHeaderLine')
+            ->willReturnCallback(
+                static function (string $name) use ($matcher, $userAgent, $requestedWith): string {
+                    match ($matcher->numberOfInvocations()) {
+                        1 => self::assertSame(Constants::HEADER_USERAGENT, $name),
+                        default => self::assertSame('http-', $name),
+                    };
+
+                    return match ($matcher->numberOfInvocations()) {
+                        1 => $userAgent,
+                        default => $requestedWith,
+                    };
+                },
+            );
+
+        $original      = new GenericRequest($message, $loader);
+        $resultHeaders = $original->getFilteredHeaders();
+
+        self::assertSame($expectedHeaders, $resultHeaders);
+        self::assertSame('7ac574c15f9aa5f4ed68a391cc956b5368a56b18', $original->getHash());
+    }
 }

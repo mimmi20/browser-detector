@@ -127,7 +127,7 @@ final class SecChUaTest extends TestCase
     {
         return [
             ['" Not A;Brand";v="99", "Chromium";v="99", "Google Chrome";v="99"', true, 'chrome', true, '99'],
-            ['" Not A;Brand";v="99", "Chromium";v="101"', false, null, false, null],
+            ['" Not A;Brand";v="99", "Chromium";v="101"', false, 'chromium', false, '101'],
             ['" Not A;Brand";v="99", "Chromium";v="102", "Microsoft Edge";v="102"', true, 'edge mobile', true, '102'],
             ['" Not A;Brand";v="99", "Chromium";v="101", "Opera";v="101"', true, 'opera', true, '101'],
             ['" Not A;Brand";v="99", "Chromium";v="100", "Yandex";v="22"', true, 'yabrowser', true, '22'],
@@ -154,6 +154,8 @@ final class SecChUaTest extends TestCase
             ['"Not/A)Brand";v="8", "Chromium";v="126", "Vivaldi";v="6.8"', true, 'vivaldi', true, '6.8'],
             ['"Not/A)Brand";v="8", "Chromium";v="126", "AVG Secure Browser";v="126"', true, 'avg secure browser', true, '126'],
             ['"Not/A)Brand";v="8", "Chromium";v="126", "YaBrowser";v="24.7"', true, 'yabrowser', true, '24.7'],
+            ['"Not/A)Brand";v="8", "Chromium";v="126", "Android WebView";v="126"', true, 'android webview', true, '126'],
+            ['"Not/A)Brand";v="8"', false, null, false, null],
         ];
     }
 }

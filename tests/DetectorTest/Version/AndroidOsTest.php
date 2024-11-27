@@ -217,6 +217,10 @@ final class AndroidOsTest extends TestCase
             ],
             [
                 'ddg_android/5.92.1 (com.duckduckgo.mobile.android; Android API 35)',
+                '15.0.0',
+            ],
+            [
+                'ddg_android/5.92.1 (com.duckduckgo.mobile.android; Android API 4)',
                 '0.0.0',
             ],
         ];

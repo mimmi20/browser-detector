@@ -34,7 +34,7 @@
     "/safari\\/.*cfnetwork/i": "mac",
     "/(?<!FBSN\\/|\\()darwin|cfnetwork/i": "darwin",
     "/sunos|solaris/i": "solaris",
-    "/linux|debian|raspbian|ubuntu|suse|fedora|mint|red ?hat|slackware|zenwalk gnu|xentos|(?<!i)cros|windows aarch64|moblin|esx|netcast|kantonix|dillo|gvfs|libvlc|lynx|tinybrowser|akregator|installatron|nettv|hbbtv|smart-tv|x11|openpda/i": "linux",
+    "/linux|debian|raspbian|ubuntu|suse|fedora|mint|red ?hat|slackware|zenwalk gnu|xentos|(?<!i)cros|windows aarch64|moblin|esx|netcast|kantonix|dillo|gvfs|libvlc|lynx|tinybrowser|akregator|installatron|nettv|hbbtv|smart-tv|x11|openpda|lindows/i": "linux",
     "/blackberry|bb10; ?(kbd|touch)|rim tablet/i": "rimos",
     "/^Mozilla\\/5\\.0 \\(.*(Mobile|Tablet);.*rv:(\\d+\\.\\d+).*\\) Gecko\\/(\\d+).* Firefox\\/(\\d+\\.\\d+).*/": "firefoxos",
     "/amigaos/i": "amigaos",
