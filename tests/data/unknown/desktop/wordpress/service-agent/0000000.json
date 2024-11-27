@@ -85,6 +85,48 @@
   },
   {
     "headers": {
+      "user-agent": "WordPress/3.0.1; http://www.unixs.net"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Unix",
+      "marketingName": "Unix",
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "WordPress",
+      "version": "3.0.1",
+      "manufacturer": "wordpress",
+      "type": "service-agent",
+      "isbot": true
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "WordPress/2.8; http://cubuntu.org"
     },
     "device": {

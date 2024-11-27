@@ -1,0 +1,5407 @@
+[
+  {
+    "headers": {
+      "tracestate": "dd=p:a981451da06308ce;s:0;t.dm:-1;t.tid:67408e8000000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "12214119657952708814",
+      "x-datadog-sampling-priority": "0",
+      "x-datadog-tags": "_dd.p.dm=-1,_dd.p.tid=67408e8000000000",
+      "x-datadog-trace-id": "17242791891246793719",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "01582c37-ca21-44f1-9812-cef7958468e7"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "tracestate": "dd=p:4af036b4f76394ba;s:0;t.dm:-1;t.tid:67408ce800000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "5399876104089736378",
+      "x-datadog-sampling-priority": "0",
+      "x-datadog-tags": "_dd.p.dm=-1,_dd.p.tid=67408ce800000000",
+      "x-datadog-trace-id": "10766825464557140776",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "0539e503-6b2b-4dba-80ea-31f48f33f03c"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "tracestate": "dd=p:a2005d70723896c2;s:0;t.dm:-1;t.tid:67408cc300000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "11673432971678357186",
+      "x-datadog-sampling-priority": "0",
+      "x-datadog-tags": "_dd.p.dm=-1,_dd.p.tid=67408cc300000000",
+      "x-datadog-trace-id": "16501601147447934956",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "ced9fec9-e921-457e-83e4-86ded1e233b7"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "tracestate": "dd=p:ab3d26934029242a;s:0;t.dm:-1;t.tid:67408b9900000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "12339060967943513130",
+      "x-datadog-sampling-priority": "0",
+      "x-datadog-tags": "_dd.p.dm=-1,_dd.p.tid=67408b9900000000",
+      "x-datadog-trace-id": "9320029668250171339",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "fc76de27-6f22-4148-9e08-1a84fc38973d"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "tracestate": "dd=p:aec453a7fea3d14c;s:1;t.dm:-1;t.tid:674088e300000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "12593282439031542092",
+      "x-datadog-sampling-priority": "1",
+      "x-datadog-tags": "_dd.p.dm=-1,_dd.p.tid=674088e300000000",
+      "x-datadog-trace-id": "13511818744292773661",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "9a96d287-bfb9-4566-9b83-60ad939776bc"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "tracestate": "dd=p:1aa09678f244eae5;s:0;t.dm:-1;t.tid:674087a500000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "1918698887464676069",
+      "x-datadog-sampling-priority": "0",
+      "x-datadog-tags": "_dd.p.dm=-1,_dd.p.tid=674087a500000000",
+      "x-datadog-trace-id": "6830542928305633425",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "d0147125-ce5f-46c8-ac3d-2cdac281e4c7"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "tracestate": "dd=p:e6da1371190c96e7;s:0;t.dm:-1;t.tid:6740879f00000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "16634629550118835943",
+      "x-datadog-sampling-priority": "0",
+      "x-datadog-tags": "_dd.p.dm=-1,_dd.p.tid=6740879f00000000",
+      "x-datadog-trace-id": "4330295148530323062",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "f4f81d6d-d029-4b85-a60f-989eac63cff7"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "tracestate": "dd=p:da861b195d9d577f;s:0;t.dm:-1;t.tid:674086cc00000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "15746302942906242943",
+      "x-datadog-sampling-priority": "0",
+      "x-datadog-tags": "_dd.p.dm=-1,_dd.p.tid=674086cc00000000",
+      "x-datadog-trace-id": "739482972056518541",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "4b852bc6-e2b4-4caa-83e1-7215adc0fcd9"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "tracestate": "dd=p:a1240219c5885073;s:1;t.dm:-1;t.tid:674085bc00000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "11611408048979464307",
+      "x-datadog-sampling-priority": "1",
+      "x-datadog-tags": "_dd.p.dm=-1,_dd.p.tid=674085bc00000000",
+      "x-datadog-trace-id": "16894494270985120558",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "15bfe46e-4616-497c-99aa-c273b0d4c0bd"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "tracestate": "dd=p:aeeb62419c317d99;s:0;t.dm:-1;t.tid:6740853000000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-parent-id": "12604276016059350425",
+      "x-datadog-sampling-priority": "0",
+      "x-datadog-tags": "_dd.p.dm=-1,_dd.p.tid=6740853000000000",
+      "x-datadog-trace-id": "12747286506641178845",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "sa-server",
+      "x-openai-originator": "sa-server",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "4ad7a6b7-5a4b-4cee-82d8-0dc5de6b2612"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "tracestate": "dd=p:45ceb95de60835e8;s:0;t.dm:-1;t.tid:6740852c00000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "5030161646761817576",
+      "x-datadog-sampling-priority": "0",
+      "x-datadog-tags": "_dd.p.dm=-1,_dd.p.tid=6740852c00000000",
+      "x-datadog-trace-id": "338793181792655128",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "cb5ec495-5e76-4d31-a376-ec717f1273e4"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "tracestate": "dd=p:ce0ec7f88ed8084d;s:0;t.dm:-1;t.tid:6740847600000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "14848024891849443405",
+      "x-datadog-sampling-priority": "0",
+      "x-datadog-tags": "_dd.p.dm=-1,_dd.p.tid=6740847600000000",
+      "x-datadog-trace-id": "4044328388127868296",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "a2438965-9cfb-4dc6-b35f-71d8fe3b4423"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "tracestate": "dd=p:6ad7db511b22cd87;s:0;t.dm:-1;t.tid:6740840400000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "7698863229407251847",
+      "x-datadog-sampling-priority": "0",
+      "x-datadog-tags": "_dd.p.dm=-1,_dd.p.tid=6740840400000000",
+      "x-datadog-trace-id": "7254295973753906843",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "86f5efed-c40a-4a53-a52c-7437d4dbe96d"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "tracestate": "dd=p:5675eb3f224aa4af;s:0;o:rum;t.dm:-3;t.tid:6740838700000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "6230144315927733423",
+      "x-datadog-sampling-priority": "0",
+      "x-datadog-tags": "_dd.p.tid=6740838700000000,_dd.p.dm=-3",
+      "x-datadog-trace-id": "8647373767100132220",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "5fc3fadd-6bf4-47ae-ae2d-02f926375706"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "tracestate": "dd=p:a23575c5c391d94d;s:1;t.dm:-1;t.tid:6740831e00000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "11688377900160112973",
+      "x-datadog-sampling-priority": "1",
+      "x-datadog-tags": "_dd.p.dm=-1,_dd.p.tid=6740831e00000000",
+      "x-datadog-trace-id": "17828685374663410282",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "65cae09f-b213-44f3-be39-1996b99953d1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "tracestate": "dd=p:b9a3c3f38dfb78fe;s:0;t.dm:-1;t.tid:674082f800000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "13376750769047042302",
+      "x-datadog-sampling-priority": "0",
+      "x-datadog-tags": "_dd.p.dm=-1,_dd.p.tid=674082f800000000",
+      "x-datadog-trace-id": "11978876250691653824",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "bcdbd99d-fda5-420e-8cfd-2f2a6f344dcd"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "tracestate": "dd=p:60f8167fffac8e58;s:1;t.dm:-1;t.tid:6740824c00000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "6987359560871480920",
+      "x-datadog-sampling-priority": "1",
+      "x-datadog-tags": "_dd.p.dm=-1,_dd.p.tid=6740824c00000000",
+      "x-datadog-trace-id": "7191265122170831240",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "83f399b3-8bba-465c-b33e-969ad2fc22fd"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "tracestate": "dd=p:c4ac52bd7429a73c;s:1;t.dm:-1;t.tid:6740824c00000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "14171793101079291708",
+      "x-datadog-sampling-priority": "1",
+      "x-datadog-tags": "_dd.p.dm=-1,_dd.p.tid=6740824c00000000",
+      "x-datadog-trace-id": "7191265122170831240",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "62136e9e-ae07-423e-ae74-9ea070749bfb"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "tracestate": "dd=p:2c7d4b287fd8e6a3;s:0;t.dm:-1;t.tid:6740816700000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-parent-id": "3205801147073357475",
+      "x-datadog-sampling-priority": "0",
+      "x-datadog-tags": "_dd.p.dm=-1,_dd.p.tid=6740816700000000",
+      "x-datadog-trace-id": "17223350073199379576",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse-paid",
+      "x-openai-originator": "browse-paid",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "04ce6540-560c-4729-9b80-f3107f2c131f"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "tracestate": "dd=p:eb4d2a7d1a980782;s:0;t.dm:-1;t.tid:6740814a00000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "16955254888925235074",
+      "x-datadog-sampling-priority": "0",
+      "x-datadog-tags": "_dd.p.dm=-1,_dd.p.tid=6740814a00000000",
+      "x-datadog-trace-id": "7619438588243386602",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "245ebe14-372b-4fc3-9d3d-3faf560b7c30"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "tracestate": "dd=p:faa4bd536e6e8bdc;s:1;t.dm:-1;t.tid:674080ef00000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "18060768571695205340",
+      "x-datadog-sampling-priority": "1",
+      "x-datadog-tags": "_dd.p.dm=-1,_dd.p.tid=674080ef00000000",
+      "x-datadog-trace-id": "15011730418284464004",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "d46bde74-ab9d-4d6a-9407-aa72b3c7c9a0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "tracestate": "dd=p:766ec0dbf3e4e328;s:0;t.dm:-1;t.tid:674080c400000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "8533970394835903272",
+      "x-datadog-sampling-priority": "0",
+      "x-datadog-tags": "_dd.p.dm=-1,_dd.p.tid=674080c400000000",
+      "x-datadog-trace-id": "4578808978978474731",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "196c84c1-a69a-4a9f-9063-88ec56fc885f"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "if-none-match": "force-revalidate",
+      "tracestate": "dd=p:37806e949b3340f4;s:0;t.dm:-1;t.tid:6740809500000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-parent-id": "3999318053643043060",
+      "x-datadog-sampling-priority": "0",
+      "x-datadog-tags": "_dd.p.dm=-1,_dd.p.tid=6740809500000000",
+      "x-datadog-trace-id": "4516940611266286158",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "sa-server",
+      "x-openai-originator": "sa-server",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "5dc2fc98-cd76-41ac-a06a-1a3543a75ea0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "if-none-match": "force-revalidate",
+      "tracestate": "dd=p:668e834cf1357088;s:0;t.dm:-1;t.tid:6740806100000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "7389988405049127048",
+      "x-datadog-sampling-priority": "0",
+      "x-datadog-tags": "_dd.p.dm=-1,_dd.p.tid=6740806100000000",
+      "x-datadog-trace-id": "13771937247993751636",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "0bd241f9-0e09-43ad-bf6b-f0062ce57444"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "if-none-match": "force-revalidate",
+      "tracestate": "dd=p:be65f7825f75ce5e;s:0;t.dm:-1;t.tid:6740800900000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "13719643979173449310",
+      "x-datadog-sampling-priority": "0",
+      "x-datadog-tags": "_dd.p.dm=-1,_dd.p.tid=6740800900000000",
+      "x-datadog-trace-id": "7682746127772344262",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "10753f5b-b3e4-4315-9724-dcf04769769b"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "tracestate": "dd=p:fc97f9813d04ead4;s:0;t.dm:-1;t.tid:67407fe200000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "18201290752510978772",
+      "x-datadog-sampling-priority": "0",
+      "x-datadog-tags": "_dd.p.dm=-1,_dd.p.tid=67407fe200000000",
+      "x-datadog-trace-id": "17333352992695470069",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "a163be1b-b86e-4b21-8d23-ec0b64fcda0d"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "tracestate": "dd=p:ba9aa03674b5e306;s:0;t.dm:-1;t.tid:67407f0800000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "13446235793214792454",
+      "x-datadog-sampling-priority": "0",
+      "x-datadog-tags": "_dd.p.dm=-1,_dd.p.tid=67407f0800000000",
+      "x-datadog-trace-id": "12209807854670035738",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "1f4c3490-881e-4d34-8236-6b1ed1480021"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "if-none-match": "force-revalidate",
+      "tracestate": "dd=p:75c326cb398f0385;s:0;t.dm:-1;t.tid:67407e3700000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "8485668777182036869",
+      "x-datadog-sampling-priority": "0",
+      "x-datadog-tags": "_dd.p.dm=-1,_dd.p.tid=67407e3700000000",
+      "x-datadog-trace-id": "4551809988803732983",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "0056b859-b0d2-4bdf-8de8-3f69a3960b5b"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "tracestate": "dd=p:70d3fa5fac1613df;s:0;t.dm:-1;t.tid:67407c4300000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "8130117041149842399",
+      "x-datadog-sampling-priority": "0",
+      "x-datadog-tags": "_dd.p.dm=-1,_dd.p.tid=67407c4300000000",
+      "x-datadog-trace-id": "18134691328657978961",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "88638217-5e40-4b03-9ed1-a3f20a80293a"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "if-none-match": "force-revalidate",
+      "tracestate": "dd=p:9f33cfc2227a40b2;s:0;t.dm:-1;t.tid:67407c0b00000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "11471741108551827634",
+      "x-datadog-sampling-priority": "0",
+      "x-datadog-tags": "_dd.p.dm=-1,_dd.p.tid=67407c0b00000000",
+      "x-datadog-trace-id": "13530475430336061958",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "ea911b00-c423-4730-8021-00d78fe2b272"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "tracestate": "dd=p:fa5f2f1215394a29;s:0;t.dm:-1;t.tid:67407b6500000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "18041190386981489193",
+      "x-datadog-sampling-priority": "0",
+      "x-datadog-tags": "_dd.p.dm=-1,_dd.p.tid=67407b6500000000",
+      "x-datadog-trace-id": "8853276119849028631",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "e888860b-2573-4cd0-9ce6-710a50c58cef"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "tracestate": "dd=p:0ff7e10a597da56c;s:0;t.dm:-1;t.tid:67407a9000000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "1150635664383780204",
+      "x-datadog-sampling-priority": "0",
+      "x-datadog-tags": "_dd.p.dm=-1,_dd.p.tid=67407a9000000000",
+      "x-datadog-trace-id": "2994229511278478085",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "5fb39ea4-6bf5-474d-aa94-9d7366dc8fc0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "tracestate": "dd=p:257126dd738db64b;s:1;t.dm:-1;t.tid:6740784e00000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "2697980384339932747",
+      "x-datadog-sampling-priority": "1",
+      "x-datadog-tags": "_dd.p.dm=-1,_dd.p.tid=6740784e00000000",
+      "x-datadog-trace-id": "2095490859481044900",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "62a532f9-bfd2-443d-a5ec-ffb329ccd5df"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "tracestate": "dd=p:549c67affed36737;s:0;t.dm:-1;t.tid:674077fb00000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "6096862001145014071",
+      "x-datadog-sampling-priority": "0",
+      "x-datadog-tags": "_dd.p.dm=-1,_dd.p.tid=674077fb00000000",
+      "x-datadog-trace-id": "560229700853957496",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "df992bdf-7087-416a-bb3c-ee3466de5e6f"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "tracestate": "dd=p:7684384097a8f65f;s:0;t.dm:-1;t.tid:674077c900000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "8540012643474798175",
+      "x-datadog-sampling-priority": "0",
+      "x-datadog-tags": "_dd.p.dm=-1,_dd.p.tid=674077c900000000",
+      "x-datadog-trace-id": "7309847877492059217",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "89ee7046-9b1e-4efa-9bd0-dc28f9f5a4cb"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "tracestate": "dd=p:eb360836d8266d72;s:0;t.dm:-1;t.tid:674074c200000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "16948743279303093618",
+      "x-datadog-sampling-priority": "0",
+      "x-datadog-tags": "_dd.p.dm=-1,_dd.p.tid=674074c200000000",
+      "x-datadog-trace-id": "14708971309444050334",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "77694f94-2712-4cab-9dd5-2afe00a8d25d"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "tracestate": "dd=p:979461efb7b6ce89;s:1;t.dm:-1;t.tid:6740746800000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "10922462678487584393",
+      "x-datadog-sampling-priority": "1",
+      "x-datadog-tags": "_dd.p.dm=-1,_dd.p.tid=6740746800000000",
+      "x-datadog-trace-id": "17135478333893633797",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "5be4e977-6378-4046-a59e-5b2e984f23c2"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "tracestate": "dd=p:d710a0d07c1fc978;s:0;t.dm:-1;t.tid:6740741100000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "15497063135077976440",
+      "x-datadog-sampling-priority": "0",
+      "x-datadog-tags": "_dd.p.dm=-1,_dd.p.tid=6740741100000000",
+      "x-datadog-trace-id": "6701041731131546954",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "60b25f83-fc3e-4fd4-bb58-aa4334e077a7"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "tracestate": "dd=p:a6473003f1c63884;s:0;t.dm:-1;t.tid:674071b200000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "11981598127141828740",
+      "x-datadog-sampling-priority": "0",
+      "x-datadog-tags": "_dd.p.dm=-1,_dd.p.tid=674071b200000000",
+      "x-datadog-trace-id": "7642657267450191320",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "85d1c3cc-5ba3-4295-8188-8518f03e96bd"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "tracestate": "dd=p:0211274c05ac8b18;s:0;t.dm:-1;t.tid:6740709f00000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "148943470146128664",
+      "x-datadog-sampling-priority": "0",
+      "x-datadog-tags": "_dd.p.dm=-1,_dd.p.tid=6740709f00000000",
+      "x-datadog-trace-id": "16907041673949371121",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "891193b5-1e5d-4326-a527-6689cbfa002d"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "tracestate": "dd=p:e005669a9ce09145;s:0;t.dm:-1;t.tid:6740705500000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "16142421253622370629",
+      "x-datadog-sampling-priority": "0",
+      "x-datadog-tags": "_dd.p.dm=-1,_dd.p.tid=6740705500000000",
+      "x-datadog-trace-id": "2060063320764880246",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "16e65660-b4e3-4c74-8e27-142e7846c6d4"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "tracestate": "dd=p:bc1e50ae84fca490;s:1;t.dm:-1;t.tid:6740701600000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "13555360638917452944",
+      "x-datadog-sampling-priority": "1",
+      "x-datadog-tags": "_dd.p.dm=-1,_dd.p.tid=6740701600000000",
+      "x-datadog-trace-id": "2129789862815110522",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "1892d38a-a2ea-493b-a909-a72bc9e2fec5"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "tracestate": "dd=p:e4ca7404610eb985;s:1;t.dm:-1;t.tid:6740701600000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "16486116948100168069",
+      "x-datadog-sampling-priority": "1",
+      "x-datadog-tags": "_dd.p.dm=-1,_dd.p.tid=6740701600000000",
+      "x-datadog-trace-id": "2129789862815110522",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "cc26a9af-7171-442c-9c77-9084922a004e"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "tracestate": "dd=p:3147f043cbdceb4b;s:1;t.dm:-1;t.tid:67406e7800000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "3551071005178653515",
+      "x-datadog-sampling-priority": "1",
+      "x-datadog-tags": "_dd.p.dm=-1,_dd.p.tid=67406e7800000000",
+      "x-datadog-trace-id": "2797587913347179726",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "a67c999a-f6c8-4196-acb9-9c7c11ff71bc"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "tracestate": "dd=p:0e4bbbc96c768a77;s:1;t.dm:-1;t.tid:67406d8800000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "1030123413566818935",
+      "x-datadog-sampling-priority": "1",
+      "x-datadog-tags": "_dd.p.dm=-1,_dd.p.tid=67406d8800000000",
+      "x-datadog-trace-id": "11613629089323278441",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "ddef0b9e-022f-4238-8eb0-bd68222575e9"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "tracestate": "dd=p:e32a4580e93a9609;s:0;t.dm:-1;t.tid:67406c5c00000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "16368972215602550281",
+      "x-datadog-sampling-priority": "0",
+      "x-datadog-tags": "_dd.p.dm=-1,_dd.p.tid=67406c5c00000000",
+      "x-datadog-trace-id": "7055353191883661248",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "7c42dc16-1a18-46e9-af22-fd96ace87ce7"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "tracestate": "dd=p:e0dee984ac5fa799;s:0;t.dm:-1;t.tid:67406bfb00000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "16203645265362528153",
+      "x-datadog-sampling-priority": "0",
+      "x-datadog-tags": "_dd.p.dm=-1,_dd.p.tid=67406bfb00000000",
+      "x-datadog-trace-id": "18363844640247231805",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "12c2f512-4fcf-4305-add8-0b7fdcd04c39"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "if-none-match": "force-revalidate",
+      "tracestate": "dd=p:556fa82665f5db77;s:0;t.dm:-1;t.tid:67406be200000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "6156324098511592311",
+      "x-datadog-sampling-priority": "0",
+      "x-datadog-tags": "_dd.p.dm=-1,_dd.p.tid=67406be200000000",
+      "x-datadog-trace-id": "2341031019071819054",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "ba7c57bd-548f-40ec-82fb-f448b085c25f"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "tracestate": "dd=p:ed446b43a7a6d16f;s:0;o:rum;t.dm:-3;t.tid:6740694200000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "17096908023724953967",
+      "x-datadog-sampling-priority": "0",
+      "x-datadog-tags": "_dd.p.tid=6740694200000000,_dd.p.dm=-3",
+      "x-datadog-trace-id": "2592127816950729336",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "95dc568f-8439-48ac-b9a4-e230dea8887e"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "tracestate": "dd=p:b298a75db83de848;s:0;t.dm:-1;t.tid:6740692200000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "12869219956176054344",
+      "x-datadog-sampling-priority": "0",
+      "x-datadog-tags": "_dd.p.dm=-1,_dd.p.tid=6740692200000000",
+      "x-datadog-trace-id": "10272271347963006847",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "f9a1a82e-e27a-4b07-9e38-a6721461759a"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "tracestate": "dd=p:9e8c9a0ec9cf66db;s:0;t.dm:-1;t.tid:674068f900000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "11424675743038138075",
+      "x-datadog-sampling-priority": "0",
+      "x-datadog-tags": "_dd.p.dm=-1,_dd.p.tid=674068f900000000",
+      "x-datadog-trace-id": "17559601225920423186",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "20acfdbe-27da-400e-a250-47cafafb030b"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "if-none-match": "force-revalidate",
+      "tracestate": "dd=p:6775c20da9b0392e;s:0;t.dm:-1;t.tid:6740684000000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "7455078122118986030",
+      "x-datadog-sampling-priority": "0",
+      "x-datadog-tags": "_dd.p.dm=-1,_dd.p.tid=6740684000000000",
+      "x-datadog-trace-id": "11693091964798222878",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "b915d838-23a5-44eb-bf05-eaed27540296"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "tracestate": "dd=p:37b859e6cd0d415f;s:0;t.dm:-1;t.tid:674067d700000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "4015057915618345311",
+      "x-datadog-sampling-priority": "0",
+      "x-datadog-tags": "_dd.p.dm=-1,_dd.p.tid=674067d700000000",
+      "x-datadog-trace-id": "479420109245801239",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "93a95ada-b213-463a-bfbb-0136616c5c9e"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "tracestate": "dd=p:a944ad0d98ffb435;s:0;t.dm:-1;t.tid:6740675500000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "12197063964739220533",
+      "x-datadog-sampling-priority": "0",
+      "x-datadog-tags": "_dd.p.dm=-1,_dd.p.tid=6740675500000000",
+      "x-datadog-trace-id": "6834710109144674151",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "d1e500f7-d681-4dad-ba52-d4bad968a190"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "if-none-match": "force-revalidate",
+      "tracestate": "dd=p:3eeef316734b841e;s:0;t.dm:-1;t.tid:6740661200000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-parent-id": "4534829152557827102",
+      "x-datadog-sampling-priority": "0",
+      "x-datadog-tags": "_dd.p.dm=-1,_dd.p.tid=6740661200000000",
+      "x-datadog-trace-id": "13380906661196365685",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "sa-server",
+      "x-openai-originator": "sa-server",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "9145a304-ff4c-4acf-b6d9-5ae84fa731b5"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "tracestate": "dd=p:a43362b16c615729;s:0;t.dm:-1;t.tid:6740661200000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "11831909160199477033",
+      "x-datadog-sampling-priority": "0",
+      "x-datadog-tags": "_dd.p.dm=-1,_dd.p.tid=6740661200000000",
+      "x-datadog-trace-id": "8165227214864628807",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "8cd3277d-63e8-4860-a852-626569922904"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "tracestate": "dd=p:dfb768924009f430;s:0;t.dm:-1;t.tid:6740654500000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "16120468368544887856",
+      "x-datadog-sampling-priority": "0",
+      "x-datadog-tags": "_dd.p.dm=-1,_dd.p.tid=6740654500000000",
+      "x-datadog-trace-id": "901980675233315929",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "8bff2ba5-63c4-4ad3-9b92-157e7951901d"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "tracestate": "dd=p:e9f392907595a642;s:0;t.dm:-1;t.tid:6740645200000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "16857978979323586114",
+      "x-datadog-sampling-priority": "0",
+      "x-datadog-tags": "_dd.p.dm=-1,_dd.p.tid=6740645200000000",
+      "x-datadog-trace-id": "10155426478091647548",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "fdee02ba-5b79-4a1b-9f56-0660629caaea"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "tracestate": "dd=p:d12b301649e32d61;s:1;t.dm:-1;t.tid:6740634200000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "15072193450212535649",
+      "x-datadog-sampling-priority": "1",
+      "x-datadog-tags": "_dd.p.dm=-1,_dd.p.tid=6740634200000000",
+      "x-datadog-trace-id": "9213609412622690634",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "d54be5e0-fdb5-4207-9c35-eadd133459a4"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "tracestate": "dd=p:ac4e82b09896da99;s:1;t.dm:-1;t.tid:674062ac00000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "12416004917692914329",
+      "x-datadog-sampling-priority": "1",
+      "x-datadog-tags": "_dd.p.dm=-1,_dd.p.tid=674062ac00000000",
+      "x-datadog-trace-id": "7723512531073566101",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "f8a1716e-611d-466d-97a6-4b09a960126a"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "tracestate": "dd=p:de1b33c9037178df;s:0;t.dm:-1;t.tid:6740628a00000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "16004442639230400735",
+      "x-datadog-sampling-priority": "0",
+      "x-datadog-tags": "_dd.p.dm=-1,_dd.p.tid=6740628a00000000",
+      "x-datadog-trace-id": "8387961774437202834",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "4e840355-431f-4ef9-a0dd-f72b1d566d3c"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "tracestate": "dd=p:a1ae3d77c62b6135;s:1;t.dm:-1;t.tid:6740624a00000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "11650316870689186101",
+      "x-datadog-sampling-priority": "1",
+      "x-datadog-tags": "_dd.p.dm=-1,_dd.p.tid=6740624a00000000",
+      "x-datadog-trace-id": "15106740533512734070",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "d8210c88-d95b-4a9e-becd-cba9f4a386cf"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "tracestate": "dd=p:013722e6851a5221;s:0;t.dm:-1;t.tid:6740621e00000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "87577091227931169",
+      "x-datadog-sampling-priority": "0",
+      "x-datadog-tags": "_dd.p.dm=-1,_dd.p.tid=6740621e00000000",
+      "x-datadog-trace-id": "3973533825655453350",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "e31cfac5-835d-492e-b73f-1448b5b734d8"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "tracestate": "dd=p:74f47d64549ee3d2;s:0;t.dm:-1;t.tid:6740621c00000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "8427498672586941394",
+      "x-datadog-sampling-priority": "0",
+      "x-datadog-tags": "_dd.p.dm=-1,_dd.p.tid=6740621c00000000",
+      "x-datadog-trace-id": "5238025299438952209",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "df6498a0-96ca-47f8-9eb6-250c3cf6f786"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "tracestate": "dd=p:a74a79da256e84a4;s:0;t.dm:-1;t.tid:674060b600000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "12054581330448385188",
+      "x-datadog-sampling-priority": "0",
+      "x-datadog-tags": "_dd.p.dm=-1,_dd.p.tid=674060b600000000",
+      "x-datadog-trace-id": "1891110975703434773",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "59769d0b-2c33-476a-a71f-8200d84054c3"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "tracestate": "dd=p:d9133acee19240a9;s:0;t.dm:-1;t.tid:674060b000000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "15641910591009996969",
+      "x-datadog-sampling-priority": "0",
+      "x-datadog-tags": "_dd.p.dm=-1,_dd.p.tid=674060b000000000",
+      "x-datadog-trace-id": "173832333699947228",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "6daaf726-df22-4663-9e3e-f4c2355426f0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "tracestate": "dd=p:0df47c64a622e25b;s:1;o:rum;t.dm:-3;t.tid:67405f8000000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "1005565388536341083",
+      "x-datadog-sampling-priority": "1",
+      "x-datadog-tags": "_dd.p.tid=67405f8000000000,_dd.p.dm=-3",
+      "x-datadog-trace-id": "15623010648493065153",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "6d19cf85-de7c-4ea4-9d99-7c908c04d8f4"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "tracestate": "dd=p:96262dff4eb9753f;s:0;t.dm:-1;t.tid:67405edc00000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "10819385729364882751",
+      "x-datadog-sampling-priority": "0",
+      "x-datadog-tags": "_dd.p.dm=-1,_dd.p.tid=67405edc00000000",
+      "x-datadog-trace-id": "8860865195686562182",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "fe964557-ea21-4796-8533-71994791b18b"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "tracestate": "dd=p:d19c44a7bc33d313;s:0;t.dm:-1;t.tid:67405d4500000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "15104022737501541139",
+      "x-datadog-sampling-priority": "0",
+      "x-datadog-tags": "_dd.p.dm=-1,_dd.p.tid=67405d4500000000",
+      "x-datadog-trace-id": "2519038348142246446",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "24bdd7a3-c99a-4370-b78b-bf52a0cc6a01"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "tracestate": "dd=p:1f2f21f620f81e19;s:0;t.dm:-1;t.tid:67405c1f00000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "2247052080079969817",
+      "x-datadog-sampling-priority": "0",
+      "x-datadog-tags": "_dd.p.dm=-1,_dd.p.tid=67405c1f00000000",
+      "x-datadog-trace-id": "10278417749037855677",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "cd6c485f-fb0d-4d38-ab98-c05e9048fdee"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "tracestate": "dd=p:43b376d023308d91;s:0;t.dm:-1;t.tid:67405c0300000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "4878373457688038801",
+      "x-datadog-sampling-priority": "0",
+      "x-datadog-tags": "_dd.p.dm=-1,_dd.p.tid=67405c0300000000",
+      "x-datadog-trace-id": "9698618717319368455",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "6217521f-1e41-4831-bff9-44d500f2305d"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "tracestate": "dd=p:7f871e5c824cff18;s:1;t.dm:-1;t.tid:67405bcf00000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "9189346947344695064",
+      "x-datadog-sampling-priority": "1",
+      "x-datadog-tags": "_dd.p.dm=-1,_dd.p.tid=67405bcf00000000",
+      "x-datadog-trace-id": "4049406114085546482",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "bb37db3c-5bdb-4fa8-8bd0-1bedfa245b5b"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "tracestate": "dd=p:412dc72acd988b01;s:0;t.dm:-1;t.tid:67405b9900000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "4696628973069175553",
+      "x-datadog-sampling-priority": "0",
+      "x-datadog-tags": "_dd.p.dm=-1,_dd.p.tid=67405b9900000000",
+      "x-datadog-trace-id": "10861839857642033342",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "88103dbd-d379-43af-9c83-53890d5dca7d"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "tracestate": "dd=p:125f282c8044bde3;s:1;t.dm:-1;t.tid:67405ad700000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "1323820987065875939",
+      "x-datadog-sampling-priority": "1",
+      "x-datadog-tags": "_dd.p.dm=-1,_dd.p.tid=67405ad700000000",
+      "x-datadog-trace-id": "11289055777093345321",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "fda0cf4e-ded3-4111-8dad-8a281ccac06c"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "tracestate": "dd=p:8de944232a7ddde9;s:0;t.dm:-1;t.tid:67405aa700000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "10225779346748857833",
+      "x-datadog-sampling-priority": "0",
+      "x-datadog-tags": "_dd.p.dm=-1,_dd.p.tid=67405aa700000000",
+      "x-datadog-trace-id": "6952880599363570310",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "00a8acdf-0b22-4896-80eb-81b8c5f56563"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "tracestate": "dd=p:cda154a269bfaa07;s:0;t.dm:-1;t.tid:674059e500000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "14817217305561246215",
+      "x-datadog-sampling-priority": "0",
+      "x-datadog-tags": "_dd.p.dm=-1,_dd.p.tid=674059e500000000",
+      "x-datadog-trace-id": "10134973348728973345",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "4e048ff2-3364-4eba-a5cc-efc23c3082b4"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "tracestate": "dd=p:1ec9dd1505f1ae17;s:0;t.dm:-1;t.tid:6740596700000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "2218547373820456471",
+      "x-datadog-sampling-priority": "0",
+      "x-datadog-tags": "_dd.p.dm=-1,_dd.p.tid=6740596700000000",
+      "x-datadog-trace-id": "16683690097784273716",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "83ff5c05-f799-4c66-89b7-ee822ff8b59e"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "tracestate": "dd=p:cae4da695e028bf3;s:0;t.dm:-3;t.tid:6740578000000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "14620050436435119091",
+      "x-datadog-sampling-priority": "0",
+      "x-datadog-tags": "_dd.p.tid=6740578000000000,_dd.p.dm=-3",
+      "x-datadog-trace-id": "6330407260140311611",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "1cbd5a74-3d57-473c-bce2-fe006f33f503"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "tracestate": "dd=p:74b9b486b360b60d;s:0;t.dm:-1;t.tid:674056d200000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "8410952269719189005",
+      "x-datadog-sampling-priority": "0",
+      "x-datadog-tags": "_dd.p.dm=-1,_dd.p.tid=674056d200000000",
+      "x-datadog-trace-id": "17554291947134963658",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "aa1cd68c-4550-49df-b2cc-c8a7b8350a30"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "tracestate": "dd=p:48960bf2461c109c;s:0;t.dm:-1;t.tid:6740565e00000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "5230381152423645340",
+      "x-datadog-sampling-priority": "0",
+      "x-datadog-tags": "_dd.p.dm=-1,_dd.p.tid=6740565e00000000",
+      "x-datadog-trace-id": "4208060273436915857",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "ff0a994a-c7f4-4d02-bbfe-f6105bdc75a0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "tracestate": "dd=p:7a8f438391ddb516;s:0;t.dm:-1;t.tid:6740554500000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "8831351626663834902",
+      "x-datadog-sampling-priority": "0",
+      "x-datadog-tags": "_dd.p.dm=-1,_dd.p.tid=6740554500000000",
+      "x-datadog-trace-id": "5140614836995570955",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "d4296206-5139-4ef5-930e-a79db5b7633a"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "tracestate": "dd=p:1f12a44d8e3b2426;s:1;t.dm:-1;t.tid:674054bf00000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "2239032617762235430",
+      "x-datadog-sampling-priority": "1",
+      "x-datadog-tags": "_dd.p.dm=-1,_dd.p.tid=674054bf00000000",
+      "x-datadog-trace-id": "7551389380342452111",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "a0eff640-9d10-4bfd-90ec-89920d6b5e10"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "tracestate": "dd=p:83ce43339019d2be;s:0;t.dm:-1;t.tid:6740510900000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "9497602552910959294",
+      "x-datadog-sampling-priority": "0",
+      "x-datadog-tags": "_dd.p.dm=-1,_dd.p.tid=6740510900000000",
+      "x-datadog-trace-id": "3807485986230343723",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "1aa8623e-e88a-47c8-b141-f6346f54e8de"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "tracestate": "dd=p:2fa3c3df2751045a;s:0;t.dm:-1;t.tid:6740509800000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "3432802704191194202",
+      "x-datadog-sampling-priority": "0",
+      "x-datadog-tags": "_dd.p.dm=-1,_dd.p.tid=6740509800000000",
+      "x-datadog-trace-id": "13450277350967486867",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "6294a3c4-1ac3-4da8-adc3-8b844abda9f2"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "tracestate": "dd=p:bfc905c2743731b9;s:0;t.dm:-1;t.tid:6740509700000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "13819583264294646201",
+      "x-datadog-sampling-priority": "0",
+      "x-datadog-tags": "_dd.p.dm=-1,_dd.p.tid=6740509700000000",
+      "x-datadog-trace-id": "5213056482127239020",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "fac7f0d9-ccd5-41ca-b3d0-bb8202c3938b"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "tracestate": "dd=p:480b3f57b0c7fce9;s:0;t.dm:-1;t.tid:6740508e00000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "5191312641335229673",
+      "x-datadog-sampling-priority": "0",
+      "x-datadog-tags": "_dd.p.dm=-1,_dd.p.tid=6740508e00000000",
+      "x-datadog-trace-id": "11194625066008558948",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "ab7ef094-d007-4ae7-89fb-675eee04c1e3"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "tracestate": "dd=p:fdc9e0f53cbe6c73;s:0;t.dm:-1;t.tid:6740508900000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "18287395105805331571",
+      "x-datadog-sampling-priority": "0",
+      "x-datadog-tags": "_dd.p.dm=-1,_dd.p.tid=6740508900000000",
+      "x-datadog-trace-id": "7738445023055305951",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "a14351c6-f8f7-4764-80f6-87bc2850e381"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "tracestate": "dd=p:f107779301ee1574;s:0;t.dm:-1;t.tid:6740500c00000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "17367981961253885300",
+      "x-datadog-sampling-priority": "0",
+      "x-datadog-tags": "_dd.p.dm=-1,_dd.p.tid=6740500c00000000",
+      "x-datadog-trace-id": "4527397436724704363",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "1fcc49df-7844-4ee4-999d-142643a344cb"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "tracestate": "dd=p:a3b98d1c09220a35;s:0;t.dm:-1;t.tid:67404fe200000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "11797615850425551413",
+      "x-datadog-sampling-priority": "0",
+      "x-datadog-tags": "_dd.p.dm=-1,_dd.p.tid=67404fe200000000",
+      "x-datadog-trace-id": "8592297238156064609",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "9b925476-678f-43fb-9d18-bf7d6ac4d9fe"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "tracestate": "dd=p:1d08f93ac0ba4d37;s:0;t.dm:-1;t.tid:67404fe200000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "2092196057650449719",
+      "x-datadog-sampling-priority": "0",
+      "x-datadog-tags": "_dd.p.dm=-1,_dd.p.tid=67404fe200000000",
+      "x-datadog-trace-id": "8592297238156064609",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "b008a3cf-de59-4f9c-b620-9c9cec398d4b"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "tracestate": "dd=p:c3d3adeb64544d02;s:0;t.dm:-1;t.tid:67404ece00000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "14110813283994062082",
+      "x-datadog-sampling-priority": "0",
+      "x-datadog-tags": "_dd.p.dm=-1,_dd.p.tid=67404ece00000000",
+      "x-datadog-trace-id": "3612718645735195986",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "5de597cb-af21-435e-ba83-80ca9241e54a"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "tracestate": "dd=p:61f828a1bdb0f791;s:0;t.dm:-1;t.tid:67404e5800000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "7059437091040589713",
+      "x-datadog-sampling-priority": "0",
+      "x-datadog-tags": "_dd.p.dm=-1,_dd.p.tid=67404e5800000000",
+      "x-datadog-trace-id": "11082426178551119874",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "0f21dc83-22cd-4281-95f0-434391adc651"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "tracestate": "dd=p:86f69db234046c3a;s:0;t.dm:-1;t.tid:67404ba700000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "9725133834055609402",
+      "x-datadog-sampling-priority": "0",
+      "x-datadog-tags": "_dd.p.dm=-1,_dd.p.tid=67404ba700000000",
+      "x-datadog-trace-id": "15226069154137173241",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "11e83c72-11c9-40ad-9d42-36907640f4c6"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "tracestate": "dd=p:f87e6f2bf9fd8f7c;s:0;t.dm:-1;t.tid:6740496300000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "17905871403140091772",
+      "x-datadog-sampling-priority": "0",
+      "x-datadog-tags": "_dd.p.dm=-1,_dd.p.tid=6740496300000000",
+      "x-datadog-trace-id": "11804961145767497520",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "97665449-ef5a-429c-b129-2713ac46ac7d"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "tracestate": "dd=p:b42cd97c7a320483;s:0;o:rum;t.dm:-3;t.tid:674047dc00000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "12982990954451567747",
+      "x-datadog-sampling-priority": "0",
+      "x-datadog-tags": "_dd.p.tid=674047dc00000000,_dd.p.dm=-3",
+      "x-datadog-trace-id": "2841493958760331910",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse-paid",
+      "x-openai-originator": "browse-paid",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "3b513639-2c4b-42ba-848b-c7f20bda7110"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "tracestate": "dd=p:7ca0b82aeb184287;s:0;t.dm:-1;t.tid:6740460900000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "8980380151449141895",
+      "x-datadog-sampling-priority": "0",
+      "x-datadog-tags": "_dd.p.dm=-1,_dd.p.tid=6740460900000000",
+      "x-datadog-trace-id": "455812689240387133",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "3eb79a9a-0a45-48be-be5b-d85fe0f44c4c"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "if-none-match": "force-revalidate",
+      "tracestate": "dd=p:8a41b4b0d6452ee1;s:0;t.dm:-1;t.tid:674041dd00000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-parent-id": "9962442522322349793",
+      "x-datadog-sampling-priority": "0",
+      "x-datadog-tags": "_dd.p.dm=-1,_dd.p.tid=674041dd00000000",
+      "x-datadog-trace-id": "4772357945143947047",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "sa-server",
+      "x-openai-originator": "sa-server",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "f18337f7-3deb-453f-9510-657d116c09d1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "tracestate": "dd=p:92fbaf5a30fe2467;s:0;t.dm:-1;t.tid:674041d700000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "10591251750595732583",
+      "x-datadog-sampling-priority": "0",
+      "x-datadog-tags": "_dd.p.dm=-1,_dd.p.tid=674041d700000000",
+      "x-datadog-trace-id": "10092604132169983406",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "53a18156-9197-40b0-8731-baac962a60e0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "if-none-match": "force-revalidate",
+      "tracestate": "dd=p:3000d8e2e06d8772;s:0;o:rum;t.dm:-3;t.tid:6740414f00000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "3459002982760023922",
+      "x-datadog-sampling-priority": "0",
+      "x-datadog-tags": "_dd.p.tid=6740414f00000000,_dd.p.dm=-3",
+      "x-datadog-trace-id": "13691757030542626405",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "aa81e55f-d656-4bbb-86ba-d6ca322ecf44"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "tracestate": "dd=p:77df48f9ecbfaf79;s:0;o:rum;t.dm:-3;t.tid:6740414a00000000",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot",
+      "x-datadog-origin": "rum",
+      "x-datadog-parent-id": "8637702848575942521",
+      "x-datadog-sampling-priority": "0",
+      "x-datadog-tags": "_dd.p.tid=6740414a00000000,_dd.p.dm=-3",
+      "x-datadog-trace-id": "17582920983561980409",
+      "x-envoy-expected-rq-timeout-ms": "15000",
+      "x-openai-internal-caller": "browse",
+      "x-openai-originator": "browse",
+      "x-openai-originator-env": "prod",
+      "x-openai-traffic-source": "user",
+      "x-request-id": "936d4182-edd3-4f3f-8adf-ed268e0638ab"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "ChatGPT User Bot",
+      "version": "1.0.0",
+      "manufacturer": "openai",
+      "type": "crawler",
+      "isbot": true
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "537.36.0",
+      "manufacturer": "apple"
+    }
+  }
+]

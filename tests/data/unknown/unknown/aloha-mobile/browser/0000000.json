@@ -502,5 +502,54 @@
       "version": null,
       "manufacturer": "apple"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Mobile Safari/537.36 AlohaBrowser/5.10.4",
+      "sec-ch-ua": "\"Not_A Brand\";v=\"8.0.0.0\", \"Chromium\";v=\"123.0.6312.118\", \"Android WebView\";v=\"123.0.6312.118\"",
+      "sec-ch-ua-platform": "Android",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-full-version": "123.0.6312.118",
+      "sec-ch-ua-platform-version": "13",
+      "sec-ch-ua-model": "Fairphone FP5",
+      "x-requested-with": "AlohaBrowser"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": null,
+      "brand": null,
+      "dualOrientation": false,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": null,
+        "size": null
+      },
+      "type": null,
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Aloha Browser",
+      "version": null,
+      "manufacturer": "aloha-mobile",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "123.0.0.0",
+      "manufacturer": "google"
+    }
   }
 ]

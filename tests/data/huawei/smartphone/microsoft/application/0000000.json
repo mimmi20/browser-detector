@@ -1430,7 +1430,7 @@
   {
     "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 10; ART-L29N Build/HUAWEIART-L29N; ) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.108 Mobile Safari/537.36 BingSapphire/21.9.400310302",
-      "http-x-requested-with": "com.microsoft.bingintl"
+      "x-requested-with": "com.microsoft.bingintl"
     },
     "device": {
       "architecture": null,
@@ -1459,7 +1459,7 @@
     },
     "client": {
       "name": "Bing Search",
-      "version": "21.9.400310302",
+      "version": null,
       "manufacturer": "microsoft",
       "type": "application",
       "isbot": false

@@ -1807,6 +1807,48 @@
   },
   {
     "headers": {
+      "user-agent": "A1 Sitemap Generator/3.1.1 (+http://www.microsystools.com/products/sitemap-generator/) miggibot"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "Sitemap Generator",
+      "version": "3.1.1",
+      "manufacturer": "unknown",
+      "type": "bot",
+      "isbot": true
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "B-l-i-t-z-B-O-T/16.6 (DeLi Linux 5.1; hr_HR;)"
     },
     "device": {
@@ -2089,6 +2131,48 @@
     "client": {
       "name": "httpclient",
       "version": "0.3.3",
+      "manufacturer": "unknown",
+      "type": "bot",
+      "isbot": true
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "B-l-i-t-z-B-O-T/6.3 (Ubuntu 7.0; zh_TW;)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Ubuntu",
+      "marketingName": "Ubuntu",
+      "version": "7.0.0",
+      "manufacturer": "canonical"
+    },
+    "client": {
+      "name": "BlitzBot",
+      "version": null,
       "manufacturer": "unknown",
       "type": "bot",
       "isbot": true

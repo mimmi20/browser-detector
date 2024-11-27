@@ -2531,5 +2531,47 @@
       "version": "126.0.6478.209",
       "manufacturer": "google"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; arm_64; Android 14; 2405CPX3DG) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.6613.657 YaSearchBrowser/24.102.1 BroPP/1.0 YaSearchApp/24.102.1 webOmni SA/3 Mobile Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "2405CPX3DG",
+      "marketingName": "Mix Flip",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 2912,
+        "height": 1224,
+        "touch": true,
+        "size": 6.86
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Yandex Search Browser",
+      "version": "24.102.1",
+      "manufacturer": "yandex",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "128.0.6613.657",
+      "manufacturer": "google"
+    }
   }
 ]

@@ -253,22 +253,27 @@
   },
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 9; KYV46 Build/1.070PR.0099.a; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/103.0.5060.71 Mobile Safari/537.36",
-      "http-x-requested-with": "com.awesapp.isp"
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Mobile Safari/537.36",
+      "sec-ch-ua": "\"Chromium\";v=\"128.0.6613.100\", \"Not;A=Brand\";v=\"24.0.0.0\", \"Google Chrome\";v=\"128.0.6613.100\"",
+      "sec-ch-ua-platform": "Android",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-full-version": "128.0.6613.100",
+      "sec-ch-ua-platform-version": "13.0.0",
+      "sec-ch-ua-model": "A301KC"
     },
     "device": {
       "architecture": null,
-      "deviceName": "KYV46",
-      "marketingName": "Torque G04 WiMAX 2+",
+      "deviceName": "A301KC",
+      "marketingName": "DuraForce EX",
       "manufacturer": "kyocera",
-      "brand": "kddi",
-      "dualOrientation": null,
-      "simCount": null,
+      "brand": "kyocera",
+      "dualOrientation": true,
+      "simCount": 1,
       "display": {
-        "width": 1920,
-        "height": 1080,
+        "width": 1560,
+        "height": 720,
         "touch": true,
-        "size": 5
+        "size": 5.8
       },
       "type": "smartphone",
       "ismobile": true,
@@ -278,19 +283,19 @@
     "os": {
       "name": "Android",
       "marketingName": "Android",
-      "version": "9.0.0",
+      "version": "13.0.0",
       "manufacturer": "google"
     },
     "client": {
-      "name": "Android WebView",
-      "version": "103.0.5060.71",
+      "name": "Chrome",
+      "version": "128.0.6613.100",
       "manufacturer": "google",
       "type": "browser",
       "isbot": false
     },
     "engine": {
       "name": "Blink",
-      "version": "103.0.5060.71",
+      "version": "128.0.0.0",
       "manufacturer": "google"
     }
   }
