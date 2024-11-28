@@ -304,6 +304,7 @@ final class SecChUaModelTest extends TestCase
             ['"M2003J15SC"', true, 'xiaomi=xiaomi m2003j15sc'],
             ['"2210132G"', true, 'xiaomi=xiaomi 2210132g'],
             ['"22081212UG"', true, 'xiaomi=xiaomi 22081212ug'],
+            ['"22081212R"', true, 'xiaomi=xiaomi 22081212r'],
             ['"M2010J19CG"', true, 'xiaomi=xiaomi m2010j19cg'],
             ['"21051182G"', true, 'xiaomi=xiaomi 21051182g'],
             ['"22011119UY"', true, 'xiaomi=xiaomi 22011119uy'],
@@ -364,6 +365,9 @@ final class SecChUaModelTest extends TestCase
             ['"23124RA7EO"', true, 'xiaomi=xiaomi 23124ra7eo'],
             ['"23106RN0DA"', true, 'xiaomi=xiaomi 23106rn0da'],
             ['"23090RA98G"', true, 'xiaomi=xiaomi 23090ra98g'],
+            ['"24053PY09I"', true, 'xiaomi=xiaomi 24053py09i'],
+            ['"24044RN32L"', true, 'xiaomi=xiaomi 24044rn32l'],
+            ['"24048RN6CI"', true, 'xiaomi=xiaomi 24048rn6ci'],
             // ZTE
             ['"ZTE A2121E"', true, 'zte=zte a2121e'],
             ['"ZTE Blade 10 Vita"', true, 'zte=zte blade 10 vita'],
@@ -636,6 +640,7 @@ final class SecChUaModelTest extends TestCase
             ['SCG25', true, 'samsung=samsung scg25'],
             ['SCG24', true, 'samsung=samsung scg24'],
             ['SM-S926B', true, 'samsung=samsung sm-s926b'],
+            ['SCG23', true, 'samsung=samsung scg23'],
             // Huawei
             ['"LGE-NX9"', true, 'huawei=huawei lge-nx9'],
             ['"VOG-L29"', true, 'huawei=huawei vog-l29'],
@@ -720,6 +725,7 @@ final class SecChUaModelTest extends TestCase
             ['"INE-LX2r"', true, 'huawei=huawei ine-lx2r'],
             ['"ALI-NX1"', true, 'huawei=huawei ali-nx1'],
             ['"BVL-N49"', true, 'huawei=huawei bvl-n49'],
+            ['"ELN-L03"', true, 'huawei=huawei eln-l03'],
             // Lenovo
             ['"Lenovo TB-X304F"', true, 'lenovo=lenovo tb-x304f'],
             ['"X1030X"', true, 'lenovo=lenovo x1030x'],
@@ -1018,6 +1024,15 @@ final class SecChUaModelTest extends TestCase
             ['"GRAVITY_3_MINI"', true, 'spc=spc gravity 3 mini'],
             ['"GRAVITY_3"', true, 'spc=spc gravity 3'],
             ['"GRAVITY ULTIMATE 2"', true, 'spc=spc gravity ultimate 2'],
+            // onn
+            ['"100011886_GTW"', true, 'onn=onn 100011886_gtw'],
+            ['"100011886CA"', true, 'onn=onn 100011886ca'],
+            ['"100044018"', true, 'onn=onn 100044018'],
+            ['"100071485A"', true, 'onn=onn 100071485a'],
+            ['"100071483A"', true, 'onn=onn 100071483a'],
+            ['"100110027"', true, 'onn=onn 100110027'],
+            ['"100135923"', true, 'onn=onn 100135923'],
+            ['"100092980"', true, 'onn=onn 100092980'],
             // other
             ['"Model"', false, null],
             ['": "', false, null],

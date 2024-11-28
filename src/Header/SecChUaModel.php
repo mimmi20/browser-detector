@@ -220,6 +220,7 @@ final class SecChUaModel implements HeaderInterface
             'm2003j15sc' => 'xiaomi=xiaomi m2003j15sc',
             '2210132g' => 'xiaomi=xiaomi 2210132g',
             '22081212ug' => 'xiaomi=xiaomi 22081212ug',
+            '22081212r' => 'xiaomi=xiaomi 22081212r',
             'm2010j19cg' => 'xiaomi=xiaomi m2010j19cg',
             '21051182g' => 'xiaomi=xiaomi 21051182g',
             '22011119uy' => 'xiaomi=xiaomi 22011119uy',
@@ -280,6 +281,9 @@ final class SecChUaModel implements HeaderInterface
             '23124ra7eo' => 'xiaomi=xiaomi 23124ra7eo',
             '23106rn0da' => 'xiaomi=xiaomi 23106rn0da',
             '23090ra98g' => 'xiaomi=xiaomi 23090ra98g',
+            '24053py09i' => 'xiaomi=xiaomi 24053py09i',
+            '24044rn32l' => 'xiaomi=xiaomi 24044rn32l',
+            '24048rn6ci' => 'xiaomi=xiaomi 24048rn6ci',
             // ZTE
             'zte a2121e' => 'zte=zte a2121e',
             'zte blade 10 vita' => 'zte=zte blade 10 vita',
@@ -550,6 +554,7 @@ final class SecChUaModel implements HeaderInterface
             'scg25' => 'samsung=samsung scg25',
             'scg24' => 'samsung=samsung scg24',
             'sm-s926b' => 'samsung=samsung sm-s926b',
+            'scg23' => 'samsung=samsung scg23',
             // Huawei
             'mar-lx1b' => 'huawei=huawei mar-lx1b',
             'lya-l09' => 'huawei=huawei lya-l09',
@@ -635,6 +640,7 @@ final class SecChUaModel implements HeaderInterface
             'ine-lx2r' => 'huawei=huawei ine-lx2r',
             'ali-nx1' => 'huawei=huawei ali-nx1',
             'bvl-n49' => 'huawei=huawei bvl-n49',
+            'eln-l03' => 'huawei=huawei eln-l03',
             // Lenovo
             'lenovo tb-x304f' => 'lenovo=lenovo tb-x304f',
             'lenovo yt-j706f' => 'lenovo=lenovo yt-j706f',
@@ -931,6 +937,15 @@ final class SecChUaModel implements HeaderInterface
             'gravity_3_mini' => 'spc=spc gravity 3 mini',
             'gravity_3' => 'spc=spc gravity 3',
             'gravity ultimate 2' => 'spc=spc gravity ultimate 2',
+            // onn
+            '100011886_gtw' => 'onn=onn 100011886_gtw',
+            '100011886ca' => 'onn=onn 100011886ca',
+            '100044018' => 'onn=onn 100044018',
+            '100071485a' => 'onn=onn 100071485a',
+            '100071483a' => 'onn=onn 100071483a',
+            '100110027' => 'onn=onn 100110027',
+            '100135923' => 'onn=onn 100135923',
+            '100092980' => 'onn=onn 100092980',
             default => null,
         };
     }
