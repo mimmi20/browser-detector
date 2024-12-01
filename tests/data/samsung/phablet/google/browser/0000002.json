@@ -3824,6 +3824,54 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36",
+      "sec-ch-ua": "\"Not_A Brand\";v=\"8.0.0.0\", \"Chromium\";v=\"120.0.6099.210\", \"Google Chrome\";v=\"120.0.6099.210\"",
+      "sec-ch-ua-platform": "Android",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-full-version": "120.0.6099.210",
+      "sec-ch-ua-platform-version": "14.0.0",
+      "sec-ch-ua-model": "SCG23"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "SCG23",
+      "marketingName": "Galaxy Z Flip5 (Japan)",
+      "manufacturer": "samsung",
+      "brand": "samsung",
+      "dualOrientation": true,
+      "simCount": 1,
+      "display": {
+        "width": 2640,
+        "height": 1080,
+        "touch": true,
+        "size": 6.7
+      },
+      "type": "phablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "14.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "120.0.6099.210",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "120.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Dalvik/2.1.0 (Linux; U; Android 14; SM-F946B Build/UP1A.231005.007)"
     },
     "device": {
