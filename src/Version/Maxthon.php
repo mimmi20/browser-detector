@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file is part of the browser-detector package.
  *
@@ -13,23 +14,22 @@ declare(strict_types = 1);
 namespace BrowserDetector\Version;
 
 use BrowserDetector\Version\Exception\NotNumericException;
+use Override;
 use Psr\Log\LoggerInterface;
 
 use function mb_strpos;
 
-final class Maxthon implements VersionFactoryInterface
+final readonly class Maxthon implements VersionFactoryInterface
 {
-    public const SEARCHES = ['MxBrowser\-iPhone', 'Maxthon', 'MxBrowser', 'Version'];
+    public const array SEARCHES = ['MxBrowser\-iPhone', 'Maxthon', 'MxBrowser', 'Version'];
 
-    public const SEARCH_OLD = ['MyIE'];
+    public const array SEARCH_OLD = ['MyIE'];
 
-    public const REGEX = '/^v?(?<major>\d+)(?:[-|\.](?<minor>\d+))?(?:[-|\.](?<micro>\d+))?(?:[-|\.](?<patch>\d+))?(?:[-|\.](?<micropatch>\d+))?(?:[-_.+ ]?(?<stability>rc|alpha|a|beta|b|patch|pl?|stable|dev|d)[-_.+ ]?(?<build>\d*))?.*$/i';
+    public const string REGEX = '/^v?(?<major>\d+)(?:[-|\.](?<minor>\d+))?(?:[-|\.](?<micro>\d+))?(?:[-|\.](?<patch>\d+))?(?:[-|\.](?<micropatch>\d+))?(?:[-_.+ ]?(?<stability>rc|alpha|a|beta|b|patch|pl?|stable|dev|d)[-_.+ ]?(?<build>\d*))?.*$/i';
 
     /** @throws void */
-    public function __construct(
-        private readonly LoggerInterface $logger,
-        private readonly VersionBuilderInterface $versionBuilder,
-    ) {
+    public function __construct(private LoggerInterface $logger, private VersionBuilderInterface $versionBuilder)
+    {
         // nothing to do
     }
 
@@ -38,6 +38,7 @@ final class Maxthon implements VersionFactoryInterface
      *
      * @throws void
      */
+    #[Override]
     public function detectVersion(string $useragent): VersionInterface
     {
         if (mb_strpos($useragent, 'MyIE2') !== false) {

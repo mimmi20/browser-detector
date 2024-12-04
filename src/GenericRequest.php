@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file is part of the browser-detector package.
  *
@@ -14,6 +15,7 @@ namespace BrowserDetector;
 
 use BrowserDetector\Header\HeaderInterface;
 use BrowserDetector\Header\HeaderLoaderInterface;
+use Override;
 use Psr\Http\Message\MessageInterface;
 
 use function array_filter;
@@ -28,7 +30,7 @@ use function str_starts_with;
 
 final class GenericRequest implements GenericRequestInterface
 {
-    private const HEADERS = [
+    private const array HEADERS = [
         Constants::HEADER_SEC_CH_UA_MODEL,
         Constants::HEADER_SEC_CH_UA_PLATFORM,
         Constants::HEADER_SEC_CH_UA_PLATFORM_VERSION,
@@ -96,6 +98,7 @@ final class GenericRequest implements GenericRequestInterface
      *
      * @throws void
      */
+    #[Override]
     public function getHeaders(): array
     {
         return $this->headers;
@@ -106,12 +109,14 @@ final class GenericRequest implements GenericRequestInterface
      *
      * @throws void
      */
+    #[Override]
     public function getFilteredHeaders(): array
     {
         return $this->filteredHeaders;
     }
 
     /** @throws void */
+    #[Override]
     public function getHash(): string
     {
         $data = [];

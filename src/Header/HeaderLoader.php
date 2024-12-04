@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file is part of the browser-detector package.
  *
@@ -22,6 +23,7 @@ use BrowserDetector\Parser\DeviceParserInterface;
 use BrowserDetector\Parser\EngineParserInterface;
 use BrowserDetector\Parser\PlatformParserInterface;
 use Closure;
+use Override;
 use UaNormalizer\NormalizerFactory;
 
 use function array_key_exists;
@@ -151,6 +153,7 @@ final class HeaderLoader implements HeaderLoaderInterface
      *
      * @throws void
      */
+    #[Override]
     public function has(string $key): bool
     {
         return array_key_exists($key, $this->factories);
@@ -161,6 +164,7 @@ final class HeaderLoader implements HeaderLoaderInterface
      *
      * @throws NotFoundException
      */
+    #[Override]
     public function load(string $key, string $value): HeaderInterface
     {
         if (!$this->has($key)) {

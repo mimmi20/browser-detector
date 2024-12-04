@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file is part of the browser-detector package.
  *
@@ -13,6 +14,7 @@ declare(strict_types = 1);
 namespace BrowserDetector\Header;
 
 use BrowserDetector\Parser\DeviceParserInterface;
+use Override;
 use UaNormalizer\Normalizer\Exception\Exception;
 use UaNormalizer\NormalizerFactory;
 
@@ -36,12 +38,14 @@ final class XDeviceUseragent implements HeaderInterface
     }
 
     /** @throws void */
+    #[Override]
     public function hasDeviceCode(): bool
     {
         return true;
     }
 
     /** @throws void */
+    #[Override]
     public function getDeviceCode(): string | null
     {
         $code = $this->deviceParser->parse($this->normalizedValue);

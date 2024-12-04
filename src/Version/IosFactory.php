@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file is part of the browser-detector package.
  *
@@ -13,11 +14,13 @@ declare(strict_types = 1);
 namespace BrowserDetector\Version;
 
 use IosBuild\IosBuild;
+use Override;
 use Psr\Log\LoggerInterface;
 
 final class IosFactory implements IosFactoryInterface
 {
     /** @throws void */
+    #[Override]
     public function __invoke(LoggerInterface $logger): Ios
     {
         return new Ios(

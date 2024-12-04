@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file is part of the browser-detector package.
  *
@@ -13,15 +14,16 @@ declare(strict_types = 1);
 namespace BrowserDetector\Version;
 
 use BrowserDetector\Version\Exception\NotNumericException;
+use Override;
 use Psr\Log\LoggerInterface;
 use UnexpectedValueException;
 
 use function mb_stripos;
 use function preg_match;
 
-final class AndroidOs implements VersionFactoryInterface
+final readonly class AndroidOs implements VersionFactoryInterface
 {
-    public const SEARCHES = [
+    public const array SEARCHES = [
         'android android',
         'android androidhouse team',
         'android wildpuzzlerom v8 froyo',
@@ -38,10 +40,8 @@ final class AndroidOs implements VersionFactoryInterface
     ];
 
     /** @throws void */
-    public function __construct(
-        private readonly LoggerInterface $logger,
-        private readonly VersionBuilderInterface $versionBuilder,
-    ) {
+    public function __construct(private LoggerInterface $logger, private VersionBuilderInterface $versionBuilder)
+    {
         // nothing to do
     }
 
@@ -50,6 +50,7 @@ final class AndroidOs implements VersionFactoryInterface
      *
      * @throws UnexpectedValueException
      */
+    #[Override]
     public function detectVersion(string $useragent): VersionInterface
     {
         if (mb_stripos($useragent, 'android 2.1-update1') !== false) {

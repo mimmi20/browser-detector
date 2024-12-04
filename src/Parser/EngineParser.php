@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file is part of the browser-detector package.
  *
@@ -13,13 +14,14 @@ declare(strict_types = 1);
 namespace BrowserDetector\Parser;
 
 use BrowserDetector\Parser\Helper\RulefileParserInterface;
+use Override;
 
-final class EngineParser implements EngineParserInterface
+final readonly class EngineParser implements EngineParserInterface
 {
-    private const GENERIC_FILE = __DIR__ . '/../../data/factories/engines.json';
+    private const string GENERIC_FILE = __DIR__ . '/../../data/factories/engines.json';
 
     /** @throws void */
-    public function __construct(private readonly RulefileParserInterface $fileParser)
+    public function __construct(private RulefileParserInterface $fileParser)
     {
         // nothing to do
     }
@@ -29,6 +31,7 @@ final class EngineParser implements EngineParserInterface
      *
      * @throws void
      */
+    #[Override]
     public function parse(string $useragent): string
     {
         return $this->fileParser->parseFile(self::GENERIC_FILE, $useragent, 'unknown');

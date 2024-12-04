@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file is part of the browser-detector package.
  *
@@ -21,6 +22,7 @@ use Exception;
 use FilterIterator;
 use Iterator;
 use JsonException;
+use Override;
 use PHPUnit\Framework\Attributes\CoversNothing;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\ExpectationFailedException;
@@ -61,6 +63,7 @@ final class DetectorTest extends TestCase
     private Detector $object;
 
     /** @throws void */
+    #[Override]
     public static function setUpBeforeClass(): void
     {
         $logger = new class () extends AbstractLogger {
@@ -73,6 +76,7 @@ final class DetectorTest extends TestCase
              *
              * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
              */
+            #[Override]
             public function debug(string | Stringable $message, array $context = []): void
             {
                 // do nothing here
@@ -89,6 +93,7 @@ final class DetectorTest extends TestCase
              * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
              * @phpcsSuppress SlevomatCodingStandard.TypeHints.ParameterTypeHint.MissingNativeTypeHint
              */
+            #[Override]
             public function log($level, string | Stringable $message, array $context = []): void
             {
                 echo '[', $level, '] ', $message, PHP_EOL;
@@ -108,6 +113,7 @@ final class DetectorTest extends TestCase
              *
              * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
              */
+            #[Override]
             public function get(string $key, mixed $default = null): mixed
             {
                 return null;
@@ -128,6 +134,7 @@ final class DetectorTest extends TestCase
              *
              * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
              */
+            #[Override]
             public function set(string $key, mixed $value, int | DateInterval | null $ttl = null): bool
             {
                 return false;
@@ -144,6 +151,7 @@ final class DetectorTest extends TestCase
              *
              * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
              */
+            #[Override]
             public function delete(string $key): bool
             {
                 return false;
@@ -156,6 +164,7 @@ final class DetectorTest extends TestCase
              *
              * @throws void
              */
+            #[Override]
             public function clear(): bool
             {
                 return false;
@@ -173,6 +182,7 @@ final class DetectorTest extends TestCase
              *
              * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
              */
+            #[Override]
             public function getMultiple(iterable $keys, mixed $default = null): iterable
             {
                 return [];
@@ -192,6 +202,7 @@ final class DetectorTest extends TestCase
              *
              * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
              */
+            #[Override]
             public function setMultiple(iterable $values, int | DateInterval | null $ttl = null): bool
             {
                 return false;
@@ -208,6 +219,7 @@ final class DetectorTest extends TestCase
              *
              * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
              */
+            #[Override]
             public function deleteMultiple(iterable $keys): bool
             {
                 return false;
@@ -227,6 +239,7 @@ final class DetectorTest extends TestCase
              *
              * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
              */
+            #[Override]
             public function has(string $key): bool
             {
                 return false;
@@ -244,6 +257,7 @@ final class DetectorTest extends TestCase
      * @throws RuntimeException
      */
     #[CoversNothing]
+    #[Override]
     protected function setUp(): void
     {
         $this->object = (self::$factory)();
@@ -359,6 +373,7 @@ final class DetectorTest extends TestCase
             }
 
             /** @throws void */
+            #[Override]
             public function accept(): bool
             {
                 $file = $this->getInnerIterator()->current();

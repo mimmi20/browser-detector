@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file is part of the browser-detector package.
  *
@@ -12,6 +13,8 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Header;
 
+use Override;
+
 use function preg_match;
 
 final class UaOs implements HeaderInterface
@@ -19,6 +22,7 @@ final class UaOs implements HeaderInterface
     use HeaderTrait;
 
     /** @throws void */
+    #[Override]
     public function hasPlatformCode(): bool
     {
         return (bool) preg_match('/Windows CE \(Pocket PC\) - Version \d+\.\d+/', $this->value);
@@ -29,6 +33,7 @@ final class UaOs implements HeaderInterface
      *
      * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
      */
+    #[Override]
     public function getPlatformCode(string | null $derivate = null): string | null
     {
         $matches = [];
@@ -47,6 +52,7 @@ final class UaOs implements HeaderInterface
     }
 
     /** @throws void */
+    #[Override]
     public function hasPlatformVersion(): bool
     {
         return (bool) preg_match('/Windows CE \(Pocket PC\) - Version \d+\.\d+/', $this->value);
@@ -57,6 +63,7 @@ final class UaOs implements HeaderInterface
      *
      * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
      */
+    #[Override]
     public function getPlatformVersion(string | null $code = null): string | null
     {
         $matches = [];

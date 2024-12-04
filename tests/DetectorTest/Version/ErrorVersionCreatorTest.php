@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file is part of the browser-detector package.
  *
@@ -15,6 +16,7 @@ namespace BrowserDetectorTest\Version;
 use BrowserDetector\Version\ErrorVersionCreator;
 use BrowserDetector\Version\NullVersion;
 use BrowserDetector\Version\VersionInterface;
+use Override;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\TestCase;
 use UnexpectedValueException;
@@ -24,6 +26,7 @@ final class ErrorVersionCreatorTest extends TestCase
     private ErrorVersionCreator $object;
 
     /** @throws void */
+    #[Override]
     protected function setUp(): void
     {
         $this->object = new ErrorVersionCreator();

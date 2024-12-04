@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file is part of the browser-detector package.
  *
@@ -14,6 +15,7 @@ namespace BrowserDetectorTest\Version;
 
 use BrowserDetector\Version\Goanna;
 use BrowserDetector\Version\GoannaFactory;
+use Override;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
@@ -27,6 +29,7 @@ final class GoannaFactoryTest extends TestCase
     private GoannaFactory $object;
 
     /** @throws void */
+    #[Override]
     protected function setUp(): void
     {
         $this->object = new GoannaFactory();

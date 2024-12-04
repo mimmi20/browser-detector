@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file is part of the browser-detector package.
  *
@@ -22,6 +23,7 @@ use BrowserDetector\Parser\EngineParserInterface;
 use BrowserDetector\Parser\PlatformParserInterface;
 use Laminas\Diactoros\HeaderSecurity;
 use Laminas\Diactoros\ServerRequestFactory;
+use Override;
 use Psr\Http\Message\MessageInterface;
 use UaNormalizer\NormalizerFactory;
 
@@ -33,18 +35,18 @@ use function str_starts_with;
 
 use const ARRAY_FILTER_USE_BOTH;
 
-final class RequestBuilder implements RequestBuilderInterface
+final readonly class RequestBuilder implements RequestBuilderInterface
 {
     /** @throws void */
     public function __construct(
-        private readonly DeviceParserInterface $deviceParser,
-        private readonly PlatformParserInterface $platformParser,
-        private readonly BrowserParserInterface $browserParser,
-        private readonly EngineParserInterface $engineParser,
-        private readonly NormalizerFactory $normalizerFactory,
-        private readonly BrowserLoaderInterface $browserLoader,
-        private readonly PlatformLoaderInterface $platformLoader,
-        private readonly EngineLoaderInterface $engineLoader,
+        private DeviceParserInterface $deviceParser,
+        private PlatformParserInterface $platformParser,
+        private BrowserParserInterface $browserParser,
+        private EngineParserInterface $engineParser,
+        private NormalizerFactory $normalizerFactory,
+        private BrowserLoaderInterface $browserLoader,
+        private PlatformLoaderInterface $platformLoader,
+        private EngineLoaderInterface $engineLoader,
     ) {
         // nothing to do
     }
@@ -54,6 +56,7 @@ final class RequestBuilder implements RequestBuilderInterface
      *
      * @throws void
      */
+    #[Override]
     public function buildRequest(
         array | GenericRequestInterface | MessageInterface | string $request,
     ): GenericRequestInterface {

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file is part of the browser-detector package.
  *
@@ -12,6 +13,7 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Version;
 
+use Override;
 use UnexpectedValueException;
 
 final class TestUnexpectedError implements VersionFactoryInterface
@@ -23,6 +25,7 @@ final class TestUnexpectedError implements VersionFactoryInterface
      *
      * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
      */
+    #[Override]
     public function detectVersion(string $useragent): VersionInterface
     {
         throw new UnexpectedValueException('error');

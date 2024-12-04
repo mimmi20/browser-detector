@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file is part of the browser-detector package.
  *
@@ -12,6 +13,8 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Header;
 
+use Override;
+
 use function mb_strtolower;
 use function preg_match;
 
@@ -20,6 +23,7 @@ final class XOperaminiPhone implements HeaderInterface
     use HeaderTrait;
 
     /** @throws void */
+    #[Override]
     public function hasDeviceCode(): bool
     {
         return preg_match(
@@ -29,6 +33,7 @@ final class XOperaminiPhone implements HeaderInterface
     }
 
     /** @throws void */
+    #[Override]
     public function getDeviceCode(): string | null
     {
         $matches = [];

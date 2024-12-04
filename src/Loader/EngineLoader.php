@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file is part of the browser-detector package.
  *
@@ -14,6 +15,7 @@ namespace BrowserDetector\Loader;
 
 use BrowserDetector\Loader\Helper\DataInterface;
 use BrowserDetector\Version\VersionBuilderInterface;
+use Override;
 use Psr\Log\LoggerInterface;
 use RuntimeException;
 use stdClass;
@@ -26,7 +28,7 @@ final class EngineLoader implements EngineLoaderInterface
 {
     use VersionFactoryTrait;
 
-    public const DATA_PATH = __DIR__ . '/../../data/engines';
+    public const string DATA_PATH = __DIR__ . '/../../data/engines';
 
     /** @throws RuntimeException */
     public function __construct(
@@ -45,6 +47,7 @@ final class EngineLoader implements EngineLoaderInterface
      *
      * @throws NotFoundException
      */
+    #[Override]
     public function load(string $key, string $useragent = ''): array
     {
         if (!$this->initData->hasItem($key)) {

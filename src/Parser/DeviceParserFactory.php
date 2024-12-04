@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file is part of the browser-detector package.
  *
@@ -20,12 +21,13 @@ use BrowserDetector\Parser\Device\DesktopParser;
 use BrowserDetector\Parser\Device\MobileParser;
 use BrowserDetector\Parser\Device\TvParser;
 use BrowserDetector\Parser\Helper\RulefileParser;
+use Override;
 use Psr\Log\LoggerInterface;
 
-final class DeviceParserFactory implements DeviceParserFactoryInterface
+final readonly class DeviceParserFactory implements DeviceParserFactoryInterface
 {
     /** @throws void */
-    public function __construct(private readonly LoggerInterface $logger)
+    public function __construct(private LoggerInterface $logger)
     {
         // nothing to do
     }
@@ -35,6 +37,7 @@ final class DeviceParserFactory implements DeviceParserFactoryInterface
      *
      * @throws void
      */
+    #[Override]
     public function __invoke(): DeviceParserInterface
     {
         $fileParser    = new RulefileParser(logger: $this->logger);

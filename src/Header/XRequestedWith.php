@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file is part of the browser-detector package.
  *
@@ -12,6 +13,8 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Header;
 
+use Override;
+
 use function mb_strtolower;
 use function preg_match;
 
@@ -20,6 +23,7 @@ final class XRequestedWith implements HeaderInterface
     use HeaderTrait;
 
     /** @throws void */
+    #[Override]
     public function hasClientCode(): bool
     {
         $match = preg_match('/xmlhttprequest|fake\./i', $this->value);
@@ -28,6 +32,7 @@ final class XRequestedWith implements HeaderInterface
     }
 
     /** @throws void */
+    #[Override]
     public function getClientCode(): string | null
     {
         // see also vendor/whichbrowser/parser/data/id-android.php
@@ -285,6 +290,7 @@ final class XRequestedWith implements HeaderInterface
     }
 
     /** @throws void */
+    #[Override]
     public function hasClientVersion(): bool
     {
         $match = preg_match('/xmlhttprequest|fake\./i', $this->value);
@@ -297,6 +303,7 @@ final class XRequestedWith implements HeaderInterface
      *
      * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
      */
+    #[Override]
     public function getClientVersion(string | null $code = null): string | null
     {
         return null;

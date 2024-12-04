@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file is part of the browser-detector package.
  *
@@ -20,6 +21,7 @@ use BrowserDetector\Parser\BrowserParserInterface;
 use BrowserDetector\Parser\DeviceParserInterface;
 use BrowserDetector\Parser\EngineParserInterface;
 use BrowserDetector\Parser\PlatformParserInterface;
+use Override;
 use UaNormalizer\Normalizer\Exception\Exception;
 use UaNormalizer\NormalizerFactory;
 use UnexpectedValueException;
@@ -58,18 +60,21 @@ final class Useragent implements HeaderInterface
      *
      * @throws void
      */
+    #[Override]
     public function getNormalizedValue(): string
     {
         return $this->normalizedValue;
     }
 
     /** @throws void */
+    #[Override]
     public function hasDeviceCode(): bool
     {
         return true;
     }
 
     /** @throws void */
+    #[Override]
     public function getDeviceCode(): string | null
     {
         $matches = [];
@@ -92,12 +97,14 @@ final class Useragent implements HeaderInterface
     }
 
     /** @throws void */
+    #[Override]
     public function hasClientCode(): bool
     {
         return true;
     }
 
     /** @throws void */
+    #[Override]
     public function getClientCode(): string | null
     {
         $matches = [];
@@ -126,12 +133,14 @@ final class Useragent implements HeaderInterface
     }
 
     /** @throws void */
+    #[Override]
     public function hasClientVersion(): bool
     {
         return true;
     }
 
     /** @throws void */
+    #[Override]
     public function getClientVersion(string | null $code = null): string | null
     {
         $matches = [];
@@ -162,6 +171,7 @@ final class Useragent implements HeaderInterface
     }
 
     /** @throws void */
+    #[Override]
     public function hasPlatformCode(): bool
     {
         return true;
@@ -172,6 +182,7 @@ final class Useragent implements HeaderInterface
      *
      * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
      */
+    #[Override]
     public function getPlatformCode(string | null $derivate = null): string | null
     {
         $matches = [];
@@ -213,12 +224,14 @@ final class Useragent implements HeaderInterface
     }
 
     /** @throws void */
+    #[Override]
     public function hasPlatformVersion(): bool
     {
         return true;
     }
 
     /** @throws void */
+    #[Override]
     public function getPlatformVersion(string | null $code = null): string | null
     {
         $matches = [];
@@ -251,12 +264,14 @@ final class Useragent implements HeaderInterface
     }
 
     /** @throws void */
+    #[Override]
     public function hasEngineCode(): bool
     {
         return true;
     }
 
     /** @throws void */
+    #[Override]
     public function getEngineCode(): string | null
     {
         $matches = [];
@@ -282,12 +297,14 @@ final class Useragent implements HeaderInterface
     }
 
     /** @throws void */
+    #[Override]
     public function hasEngineVersion(): bool
     {
         return true;
     }
 
     /** @throws void */
+    #[Override]
     public function getEngineVersion(string | null $code = null): string | null
     {
         $matches = [];

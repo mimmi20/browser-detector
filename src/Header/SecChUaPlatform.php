@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file is part of the browser-detector package.
  *
@@ -12,6 +13,8 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Header;
 
+use Override;
+
 use function in_array;
 use function mb_strtolower;
 use function trim;
@@ -21,6 +24,7 @@ final class SecChUaPlatform implements HeaderInterface
     use HeaderTrait;
 
     /** @throws void */
+    #[Override]
     public function hasPlatformCode(): bool
     {
         $value = trim($this->value, '"\\\'');
@@ -30,6 +34,7 @@ final class SecChUaPlatform implements HeaderInterface
     }
 
     /** @throws void */
+    #[Override]
     public function getPlatformCode(string | null $derivate = null): string | null
     {
         $value = trim($this->value, '"\\\'');

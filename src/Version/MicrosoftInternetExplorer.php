@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file is part of the browser-detector package.
  *
@@ -13,15 +14,16 @@ declare(strict_types = 1);
 namespace BrowserDetector\Version;
 
 use BrowserDetector\Version\Exception\NotNumericException;
+use Override;
 use Psr\Log\LoggerInterface;
 use UnexpectedValueException;
 
 use function preg_match;
 use function version_compare;
 
-final class MicrosoftInternetExplorer implements VersionFactoryInterface
+final readonly class MicrosoftInternetExplorer implements VersionFactoryInterface
 {
-    private const VERSIONS = [
+    private const array VERSIONS = [
         '8' => '11.0',
         '7' => '11.0',
         '6' => '10.0',
@@ -31,9 +33,9 @@ final class MicrosoftInternetExplorer implements VersionFactoryInterface
 
     /** @throws void */
     public function __construct(
-        private readonly LoggerInterface $logger,
-        private readonly VersionBuilderInterface $versionBuilder,
-        private readonly VersionFactoryInterface $trident,
+        private LoggerInterface $logger,
+        private VersionBuilderInterface $versionBuilder,
+        private VersionFactoryInterface $trident,
     ) {
         // nothing to do
     }
@@ -43,6 +45,7 @@ final class MicrosoftInternetExplorer implements VersionFactoryInterface
      *
      * @throws void
      */
+    #[Override]
     public function detectVersion(string $useragent): VersionInterface
     {
         try {

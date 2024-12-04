@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file is part of the browser-detector package.
  *
@@ -13,6 +14,7 @@ declare(strict_types = 1);
 namespace BrowserDetector\Version;
 
 use BrowserDetector\Version\Exception\NotNumericException;
+use Override;
 
 final class Test implements VersionFactoryInterface
 {
@@ -23,6 +25,7 @@ final class Test implements VersionFactoryInterface
      *
      * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
      */
+    #[Override]
     public function detectVersion(string $useragent): VersionInterface
     {
         return new Version('1', '11', '111', '1111', '11111');

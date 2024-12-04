@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file is part of the browser-detector package.
  *
@@ -13,6 +14,7 @@ declare(strict_types = 1);
 namespace BrowserDetector\Parser\Device;
 
 use BrowserDetector\Parser\DeviceParserInterface;
+use Override;
 
 interface TvParserInterface extends DeviceParserInterface
 {
@@ -23,5 +25,6 @@ interface TvParserInterface extends DeviceParserInterface
      *
      * @throws void
      */
+    #[Override]
     public function parse(string $useragent): string;
 }

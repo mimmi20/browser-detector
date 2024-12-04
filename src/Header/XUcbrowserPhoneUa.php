@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file is part of the browser-detector package.
  *
@@ -12,6 +13,8 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Header;
 
+use Override;
+
 use function in_array;
 use function mb_strtolower;
 
@@ -20,12 +23,14 @@ final class XUcbrowserPhoneUa implements HeaderInterface
     use HeaderTrait;
 
     /** @throws void */
+    #[Override]
     public function hasDeviceCode(): bool
     {
         return !in_array(mb_strtolower($this->value), ['maui browser', 'sunmicro'], true);
     }
 
     /** @throws void */
+    #[Override]
     public function getDeviceCode(): string | null
     {
         $code = mb_strtolower($this->value);
@@ -41,12 +46,14 @@ final class XUcbrowserPhoneUa implements HeaderInterface
     }
 
     /** @throws void */
+    #[Override]
     public function hasClientCode(): bool
     {
         return $this->value === 'maui browser';
     }
 
     /** @throws void */
+    #[Override]
     public function getClientCode(): string | null
     {
         return $this->value === 'maui browser' ? 'maui browser' : null;

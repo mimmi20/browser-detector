@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file is part of the browser-detector package.
  *
@@ -12,6 +13,8 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Helper;
 
+use Override;
+
 use function preg_match;
 
 final class Tv implements TvInterface
@@ -21,6 +24,7 @@ final class Tv implements TvInterface
      *
      * @throws void
      */
+    #[Override]
     public function isTvDevice(string $useragent): bool
     {
         return 0 < preg_match(

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file is part of the browser-detector package.
  *
@@ -13,17 +14,18 @@ declare(strict_types = 1);
 namespace BrowserDetector\Parser\Device;
 
 use BrowserDetector\Parser\Helper\RulefileParserInterface;
+use Override;
 
 use function sprintf;
 
-final class DarwinParser implements DarwinParserInterface
+final readonly class DarwinParser implements DarwinParserInterface
 {
-    private const GENERIC_FILE = __DIR__ . '/../../../data/factories/devices/darwin.json';
+    private const string GENERIC_FILE = __DIR__ . '/../../../data/factories/devices/darwin.json';
 
-    private const SPECIFIC_FILE = __DIR__ . '/../../../data/factories/devices/%s/apple.json';
+    private const string SPECIFIC_FILE = __DIR__ . '/../../../data/factories/devices/%s/apple.json';
 
     /** @throws void */
-    public function __construct(private readonly RulefileParserInterface $fileParser)
+    public function __construct(private RulefileParserInterface $fileParser)
     {
         // nothing to do
     }
@@ -35,6 +37,7 @@ final class DarwinParser implements DarwinParserInterface
      *
      * @throws void
      */
+    #[Override]
     public function parse(string $useragent): string
     {
         $mode = $this->fileParser->parseFile(self::GENERIC_FILE, $useragent, 'unknown');

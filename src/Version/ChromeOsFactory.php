@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file is part of the browser-detector package.
  *
@@ -12,11 +13,13 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Version;
 
+use Override;
 use Psr\Log\LoggerInterface;
 
 final class ChromeOsFactory implements ChromeOsFactoryInterface
 {
     /** @throws void */
+    #[Override]
     public function __invoke(LoggerInterface $logger): ChromeOs
     {
         return new ChromeOs(

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file is part of the browser-detector package.
  *
@@ -13,6 +14,7 @@ declare(strict_types = 1);
 namespace BrowserDetector\Version\Helper;
 
 use BrowserDetector\Version\VersionInterface;
+use Override;
 use UnexpectedValueException;
 
 use function in_array;
@@ -20,7 +22,7 @@ use function version_compare;
 
 final class Safari implements SafariInterface
 {
-    private const REGULAR_VERSIONS = [
+    private const array REGULAR_VERSIONS = [
         '3.0',
         '3.1',
         '3.2',
@@ -95,7 +97,7 @@ final class Safari implements SafariInterface
         '18.0',
     ];
 
-    private const MAP_VERSIONS = [
+    private const array MAP_VERSIONS = [
         '15600' => '13.0',
         '14600' => '12.0',
         '13600' => '11.0',
@@ -117,6 +119,7 @@ final class Safari implements SafariInterface
      *
      * @throws UnexpectedValueException
      */
+    #[Override]
     public function mapSafariVersion(VersionInterface $detectedVersion): string | null
     {
         if (

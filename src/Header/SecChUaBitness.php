@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file is part of the browser-detector package.
  *
@@ -12,6 +13,8 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Header;
 
+use Override;
+
 use function trim;
 
 final class SecChUaBitness implements HeaderInterface
@@ -19,6 +22,7 @@ final class SecChUaBitness implements HeaderInterface
     use HeaderTrait;
 
     /** @throws void */
+    #[Override]
     public function hasDeviceBitness(): bool
     {
         $value = trim($this->value, '"\\\'');
@@ -27,6 +31,7 @@ final class SecChUaBitness implements HeaderInterface
     }
 
     /** @throws void */
+    #[Override]
     public function getDeviceBitness(): int | null
     {
         $value = trim($this->value, '"\\\'');
