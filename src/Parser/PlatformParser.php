@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file is part of the browser-detector package.
  *
@@ -13,17 +14,18 @@ declare(strict_types = 1);
 namespace BrowserDetector\Parser;
 
 use BrowserDetector\Parser\Helper\RulefileParserInterface;
+use Override;
 
 use function sprintf;
 
-final class PlatformParser implements PlatformParserInterface
+final readonly class PlatformParser implements PlatformParserInterface
 {
-    private const GENERIC_FILE = __DIR__ . '/../../data/factories/platforms.json';
+    private const string GENERIC_FILE = __DIR__ . '/../../data/factories/platforms.json';
 
-    private const SPECIFIC_FILE = __DIR__ . '/../../data/factories/platforms/%s.json';
+    private const string SPECIFIC_FILE = __DIR__ . '/../../data/factories/platforms/%s.json';
 
     /** @throws void */
-    public function __construct(private readonly RulefileParserInterface $fileParser)
+    public function __construct(private RulefileParserInterface $fileParser)
     {
         // nothing to do
     }
@@ -33,6 +35,7 @@ final class PlatformParser implements PlatformParserInterface
      *
      * @throws void
      */
+    #[Override]
     public function parse(string $useragent): string
     {
         $mode = $this->fileParser->parseFile(self::GENERIC_FILE, $useragent, 'unknown');

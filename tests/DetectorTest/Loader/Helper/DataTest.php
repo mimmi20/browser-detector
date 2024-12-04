@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file is part of the browser-detector package.
  *
@@ -25,7 +26,7 @@ use function sprintf;
 
 final class DataTest extends TestCase
 {
-    private const DATA_PATH = 'root';
+    private const string DATA_PATH = 'root';
 
     /**
      * @throws InvalidArgumentException

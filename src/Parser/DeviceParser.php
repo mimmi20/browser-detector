@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file is part of the browser-detector package.
  *
@@ -19,20 +20,21 @@ use BrowserDetector\Parser\Device\DarwinParserInterface;
 use BrowserDetector\Parser\Device\DesktopParserInterface;
 use BrowserDetector\Parser\Device\MobileParserInterface;
 use BrowserDetector\Parser\Device\TvParserInterface;
+use Override;
 
 use function preg_match;
 
-final class DeviceParser implements DeviceParserInterface
+final readonly class DeviceParser implements DeviceParserInterface
 {
     /** @throws void */
     public function __construct(
-        private readonly DarwinParserInterface $darwinParser,
-        private readonly MobileParserInterface $mobileParser,
-        private readonly TvParserInterface $tvParser,
-        private readonly DesktopParserInterface $desktopParser,
-        private readonly MobileDeviceInterface $mobileDevice,
-        private readonly TvInterface $tvDevice,
-        private readonly DesktopInterface $desktopDevice,
+        private DarwinParserInterface $darwinParser,
+        private MobileParserInterface $mobileParser,
+        private TvParserInterface $tvParser,
+        private DesktopParserInterface $desktopParser,
+        private MobileDeviceInterface $mobileDevice,
+        private TvInterface $tvDevice,
+        private DesktopInterface $desktopDevice,
     ) {
         // nothing to do
     }
@@ -44,6 +46,7 @@ final class DeviceParser implements DeviceParserInterface
      *
      * @throws void
      */
+    #[Override]
     public function parse(string $useragent): string
     {
         if (

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file is part of the browser-detector package.
  *
@@ -13,6 +14,7 @@ declare(strict_types = 1);
 namespace BrowserDetector\Loader;
 
 use BrowserDetector\Loader\Helper\DataInterface;
+use Override;
 use Psr\Log\LoggerInterface;
 use RuntimeException;
 use stdClass;
@@ -23,14 +25,14 @@ use function array_key_exists;
 use function assert;
 use function is_string;
 
-final class DeviceLoader implements DeviceLoaderInterface
+final readonly class DeviceLoader implements DeviceLoaderInterface
 {
     /** @throws RuntimeException */
     public function __construct(
-        private readonly LoggerInterface $logger,
-        private readonly DataInterface $initData,
-        private readonly CompanyLoaderInterface $companyLoader,
-        private readonly TypeLoaderInterface $typeLoader,
+        private LoggerInterface $logger,
+        private DataInterface $initData,
+        private CompanyLoaderInterface $companyLoader,
+        private TypeLoaderInterface $typeLoader,
     ) {
         $initData();
     }
@@ -41,6 +43,7 @@ final class DeviceLoader implements DeviceLoaderInterface
      *
      * @throws NotFoundException
      */
+    #[Override]
     public function load(string $key): array
     {
         if (!$this->initData->hasItem($key)) {

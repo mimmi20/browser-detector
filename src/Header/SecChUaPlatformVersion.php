@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file is part of the browser-detector package.
  *
@@ -12,6 +13,8 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Header;
 
+use Override;
+
 use function trim;
 
 final class SecChUaPlatformVersion implements HeaderInterface
@@ -19,6 +22,7 @@ final class SecChUaPlatformVersion implements HeaderInterface
     use HeaderTrait;
 
     /** @throws void */
+    #[Override]
     public function hasPlatformVersion(): bool
     {
         $value = trim($this->value, '"\\\'');
@@ -31,6 +35,7 @@ final class SecChUaPlatformVersion implements HeaderInterface
      *
      * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
      */
+    #[Override]
     public function getPlatformVersion(string | null $code = null): string | null
     {
         $value = trim($this->value, '"\\\'');

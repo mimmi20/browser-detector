@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file is part of the browser-detector package.
  *
@@ -13,11 +14,13 @@ declare(strict_types = 1);
 namespace BrowserDetector\Version;
 
 use MacosBuild\MacosBuild;
+use Override;
 use Psr\Log\LoggerInterface;
 
 final class MacosFactory implements MacosFactoryInterface
 {
     /** @throws void */
+    #[Override]
     public function __invoke(LoggerInterface $logger): Macos
     {
         return new Macos(

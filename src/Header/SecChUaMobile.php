@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file is part of the browser-detector package.
  *
@@ -12,17 +13,21 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Header;
 
+use Override;
+
 final class SecChUaMobile implements HeaderInterface
 {
     use HeaderTrait;
 
     /** @throws void */
+    #[Override]
     public function hasDeviceIsMobile(): bool
     {
         return true;
     }
 
     /** @throws void */
+    #[Override]
     public function getDeviceIsMobile(): bool
     {
         return $this->value === '1' || $this->value === '?1' || $this->value === '"?1"';

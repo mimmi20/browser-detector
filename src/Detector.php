@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file is part of the browser-detector package.
  *
@@ -21,6 +22,7 @@ use BrowserDetector\Loader\PlatformLoaderInterface;
 use BrowserDetector\Version\Exception\NotNumericException;
 use BrowserDetector\Version\VersionBuilderFactoryInterface;
 use BrowserDetector\Version\VersionInterface;
+use Override;
 use Psr\Http\Message\MessageInterface;
 use Psr\Log\LoggerInterface;
 use Psr\SimpleCache\InvalidArgumentException;
@@ -40,7 +42,7 @@ use function str_contains;
 use function str_starts_with;
 use function trim;
 
-final class Detector implements DetectorInterface
+final readonly class Detector implements DetectorInterface
 {
     /**
      * sets the cache used to make the detection faster
@@ -51,14 +53,14 @@ final class Detector implements DetectorInterface
         /**
          * an logger instance
          */
-        private readonly LoggerInterface $logger,
-        private readonly CacheInterface $cache,
-        private readonly RequestBuilderInterface $requestBuilder,
-        private readonly DeviceLoaderFactoryInterface $deviceLoaderFactory,
-        private readonly PlatformLoaderInterface $platformLoader,
-        private readonly BrowserLoaderInterface $browserLoader,
-        private readonly EngineLoaderInterface $engineLoader,
-        private readonly VersionBuilderFactoryInterface $versionBuilderFactory,
+        private LoggerInterface $logger,
+        private CacheInterface $cache,
+        private RequestBuilderInterface $requestBuilder,
+        private DeviceLoaderFactoryInterface $deviceLoaderFactory,
+        private PlatformLoaderInterface $platformLoader,
+        private BrowserLoaderInterface $browserLoader,
+        private EngineLoaderInterface $engineLoader,
+        private VersionBuilderFactoryInterface $versionBuilderFactory,
     ) {
         // nothing to do
     }
@@ -73,6 +75,7 @@ final class Detector implements DetectorInterface
      * @throws InvalidArgumentException
      * @throws UnexpectedValueException
      */
+    #[Override]
     public function getBrowser(array | GenericRequestInterface | MessageInterface | string $headers): array
     {
         $request = $this->requestBuilder->buildRequest($headers);

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file is part of the browser-detector package.
  *
@@ -15,6 +16,7 @@ namespace BrowserDetector\Version;
 use BrowserDetector\Version\Exception\NotNumericException;
 use MacosBuild\Exception\NotFoundException;
 use MacosBuild\MacosBuildInterface;
+use Override;
 use Psr\Log\LoggerInterface;
 use UnexpectedValueException;
 
@@ -24,11 +26,11 @@ use function preg_match;
 use function str_contains;
 use function str_replace;
 
-final class Macos implements VersionFactoryInterface
+final readonly class Macos implements VersionFactoryInterface
 {
-    public const SEARCHES = ['Mac OS X Version', 'Mac OS X v', 'Mac OS X', 'OS X', 'os=mac '];
+    public const array SEARCHES = ['Mac OS X Version', 'Mac OS X v', 'Mac OS X', 'OS X', 'os=mac '];
 
-    private const DARWIN_MAP = [
+    private const array DARWIN_MAP = [
         '/darwin\/24\.2/i' => '15.2.0',
         '/darwin\/24\.1/i' => '15.1.0',
         '/darwin\/24/i' => '15.0.0',
@@ -167,9 +169,9 @@ final class Macos implements VersionFactoryInterface
 
     /** @throws void */
     public function __construct(
-        private readonly LoggerInterface $logger,
-        private readonly VersionBuilderInterface $versionBuilder,
-        private readonly MacosBuildInterface $macosBuild,
+        private LoggerInterface $logger,
+        private VersionBuilderInterface $versionBuilder,
+        private MacosBuildInterface $macosBuild,
     ) {
         // nothing to do
     }
@@ -179,6 +181,7 @@ final class Macos implements VersionFactoryInterface
      *
      * @throws UnexpectedValueException
      */
+    #[Override]
     public function detectVersion(string $useragent): VersionInterface
     {
         $doMatch = preg_match(

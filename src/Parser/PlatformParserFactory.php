@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file is part of the browser-detector package.
  *
@@ -13,17 +14,19 @@ declare(strict_types = 1);
 namespace BrowserDetector\Parser;
 
 use BrowserDetector\Parser\Helper\RulefileParser;
+use Override;
 use Psr\Log\LoggerInterface;
 
-final class PlatformParserFactory implements PlatformParserFactoryInterface
+final readonly class PlatformParserFactory implements PlatformParserFactoryInterface
 {
     /** @throws void */
-    public function __construct(private readonly LoggerInterface $logger)
+    public function __construct(private LoggerInterface $logger)
     {
         // nothing to do
     }
 
     /** @throws void */
+    #[Override]
     public function __invoke(): PlatformParserInterface
     {
         return new PlatformParser(

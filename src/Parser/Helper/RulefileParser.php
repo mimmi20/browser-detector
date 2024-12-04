@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file is part of the browser-detector package.
  *
@@ -14,6 +15,7 @@ namespace BrowserDetector\Parser\Helper;
 
 use Exception;
 use JsonException;
+use Override;
 use Psr\Log\LoggerInterface;
 
 use function array_key_exists;
@@ -30,15 +32,16 @@ use function sprintf;
 
 use const JSON_THROW_ON_ERROR;
 
-final class RulefileParser implements RulefileParserInterface
+final readonly class RulefileParser implements RulefileParserInterface
 {
     /** @throws void */
-    public function __construct(private readonly LoggerInterface $logger)
+    public function __construct(private LoggerInterface $logger)
     {
         // nothing to do
     }
 
     /** @throws void */
+    #[Override]
     public function parseFile(string $file, string $useragent, string $fallback): string
     {
         $content = @file_get_contents($file);

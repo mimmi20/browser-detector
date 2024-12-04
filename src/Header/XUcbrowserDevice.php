@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file is part of the browser-detector package.
  *
@@ -13,6 +14,7 @@ declare(strict_types = 1);
 namespace BrowserDetector\Header;
 
 use BrowserDetector\Parser\DeviceParserInterface;
+use Override;
 use UaNormalizer\Normalizer\Exception\Exception;
 use UaNormalizer\NormalizerFactory;
 
@@ -39,12 +41,14 @@ final class XUcbrowserDevice implements HeaderInterface
     }
 
     /** @throws void */
+    #[Override]
     public function hasDeviceCode(): bool
     {
         return !in_array(mb_strtolower($this->value), ['j2me', 'opera', 'jblend'], true);
     }
 
     /** @throws void */
+    #[Override]
     public function getDeviceCode(): string | null
     {
         if (in_array(mb_strtolower($this->value), ['j2me', 'opera', 'jblend'], true)) {

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file is part of the browser-detector package.
  *
@@ -15,6 +16,7 @@ namespace BrowserDetector\Version;
 use BrowserDetector\Version\Exception\NotNumericException;
 use IosBuild\Exception\NotFoundException;
 use IosBuild\IosBuildInterface;
+use Override;
 use Psr\Log\LoggerInterface;
 use UnexpectedValueException;
 
@@ -23,9 +25,9 @@ use function mb_strtolower;
 use function preg_match;
 use function str_contains;
 
-final class Ios implements VersionFactoryInterface
+final readonly class Ios implements VersionFactoryInterface
 {
-    public const SEARCHES = [
+    public const array SEARCHES = [
         'IphoneOSX',
         'CPU OS_?',
         'CPU iOS',
@@ -41,7 +43,7 @@ final class Ios implements VersionFactoryInterface
         '(?<!Outlook-)iOS',
     ];
 
-    private const DARWIN_MAP = [
+    private const array DARWIN_MAP = [
         '/darwin\/24\.2/i' => '18.2',
         '/darwin\/24\.1/i' => '18.1',
         '/darwin\/24/i' => '18.0',
@@ -125,7 +127,7 @@ final class Ios implements VersionFactoryInterface
     ];
 
     /** @see https://justworks.ca/blog/ios-and */
-    private const BUILD_MAP = [
+    private const array BUILD_MAP = [
         '508.11' => '2.2.1',
         '701.341' => '3.0',
         '701.400' => '3.0.1',
@@ -243,9 +245,9 @@ final class Ios implements VersionFactoryInterface
 
     /** @throws void */
     public function __construct(
-        private readonly LoggerInterface $logger,
-        private readonly VersionBuilderInterface $versionBuilder,
-        private readonly IosBuildInterface $iosBuild,
+        private LoggerInterface $logger,
+        private VersionBuilderInterface $versionBuilder,
+        private IosBuildInterface $iosBuild,
     ) {
         // nothing to do
     }
@@ -255,6 +257,7 @@ final class Ios implements VersionFactoryInterface
      *
      * @throws UnexpectedValueException
      */
+    #[Override]
     public function detectVersion(string $useragent): VersionInterface
     {
         $doMatch = preg_match('/CPU like Mac OS X/', $useragent);

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file is part of the browser-detector package.
  *
@@ -23,6 +24,7 @@ use BrowserDetector\Parser\EngineParserInterface;
 use BrowserDetector\Parser\PlatformParserInterface;
 use BrowserDetector\RequestBuilder;
 use Laminas\Diactoros\ServerRequestFactory;
+use Override;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
@@ -203,6 +205,7 @@ final class RequestBuilderTest extends TestCase
              *
              * @throws void
              */
+            #[Override]
             public function getHeaders(): array
             {
                 return [];
@@ -213,12 +216,14 @@ final class RequestBuilderTest extends TestCase
              *
              * @throws void
              */
+            #[Override]
             public function getFilteredHeaders(): array
             {
                 return [];
             }
 
             /** @throws void */
+            #[Override]
             public function getHash(): string
             {
                 return '';

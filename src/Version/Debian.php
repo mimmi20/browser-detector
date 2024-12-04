@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file is part of the browser-detector package.
  *
@@ -13,19 +14,18 @@ declare(strict_types = 1);
 namespace BrowserDetector\Version;
 
 use BrowserDetector\Version\Exception\NotNumericException;
+use Override;
 use Psr\Log\LoggerInterface;
 
 use function preg_match;
 
-final class Debian implements VersionFactoryInterface
+final readonly class Debian implements VersionFactoryInterface
 {
-    public const SEARCHES = ['kFreeBSD', 'Debian', 'Debian\-'];
+    public const array SEARCHES = ['kFreeBSD', 'Debian', 'Debian\-'];
 
     /** @throws void */
-    public function __construct(
-        private readonly LoggerInterface $logger,
-        private readonly VersionBuilderInterface $versionBuilder,
-    ) {
+    public function __construct(private LoggerInterface $logger, private VersionBuilderInterface $versionBuilder)
+    {
         // nothing to do
     }
 
@@ -34,6 +34,7 @@ final class Debian implements VersionFactoryInterface
      *
      * @throws void
      */
+    #[Override]
     public function detectVersion(string $useragent): VersionInterface
     {
         if (preg_match('/squeeze/i', $useragent)) {

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file is part of the browser-detector package.
  *
@@ -12,11 +13,14 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Bits;
 
+use Override;
+
 use function preg_match;
 
 final class Browser implements BitsInterface
 {
     /** @throws void */
+    #[Override]
     public function getBits(string $useragent): int | null
     {
         // 32 bits on a 64-bit system

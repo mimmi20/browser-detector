@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file is part of the browser-detector package.
  *
@@ -12,6 +13,8 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Helper;
 
+use Override;
+
 use function preg_match;
 
 final class MobileDevice implements MobileDeviceInterface
@@ -21,6 +24,7 @@ final class MobileDevice implements MobileDeviceInterface
      *
      * @throws void
      */
+    #[Override]
     public function isMobile(string $useragent): bool
     {
         if (preg_match('/wpdesktop|zunewp7|xblwp7|windows (phone|mobile|ce)|polaris/i', $useragent)) {

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file is part of the browser-detector package.
  *
@@ -15,6 +16,7 @@ namespace BrowserDetector\Loader;
 use BrowserDetector\Loader\Helper\DataInterface;
 use BrowserDetector\Version\VersionBuilderInterface;
 use BrowserDetector\Version\VersionInterface;
+use Override;
 use Psr\Log\LoggerInterface;
 use RuntimeException;
 use stdClass;
@@ -28,7 +30,7 @@ final class PlatformLoader implements PlatformLoaderInterface
 {
     use VersionFactoryTrait;
 
-    public const DATA_PATH = __DIR__ . '/../../data/platforms';
+    public const string DATA_PATH = __DIR__ . '/../../data/platforms';
 
     /** @throws RuntimeException */
     public function __construct(
@@ -47,6 +49,7 @@ final class PlatformLoader implements PlatformLoaderInterface
      *
      * @throws NotFoundException
      */
+    #[Override]
     public function load(string $key, string $useragent = ''): array
     {
         if (!$this->initData->hasItem($key)) {

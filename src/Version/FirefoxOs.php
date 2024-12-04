@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file is part of the browser-detector package.
  *
@@ -13,14 +14,15 @@ declare(strict_types = 1);
 namespace BrowserDetector\Version;
 
 use BrowserDetector\Version\Exception\NotNumericException;
+use Override;
 use Psr\Log\LoggerInterface;
 
 use function preg_match;
 use function version_compare;
 
-final class FirefoxOs implements VersionFactoryInterface
+final readonly class FirefoxOs implements VersionFactoryInterface
 {
-    private const SEARCHES = [
+    private const array SEARCHES = [
         '44.0' => '2.5',
         '37.0' => '2.2',
         '34.0' => '2.1',
@@ -33,10 +35,8 @@ final class FirefoxOs implements VersionFactoryInterface
     ];
 
     /** @throws void */
-    public function __construct(
-        private readonly LoggerInterface $logger,
-        private readonly VersionBuilderInterface $versionBuilder,
-    ) {
+    public function __construct(private LoggerInterface $logger, private VersionBuilderInterface $versionBuilder)
+    {
         // nothing to do
     }
 
@@ -45,6 +45,7 @@ final class FirefoxOs implements VersionFactoryInterface
      *
      * @throws void
      */
+    #[Override]
     public function detectVersion(string $useragent): VersionInterface
     {
         if (!preg_match('/rv:(?P<version>\d+\.\d+)/', $useragent, $matches)) {

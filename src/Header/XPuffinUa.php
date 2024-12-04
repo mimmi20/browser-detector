@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file is part of the browser-detector package.
  *
@@ -12,6 +13,8 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Header;
 
+use Override;
+
 use function mb_strtolower;
 use function preg_match;
 
@@ -20,12 +23,14 @@ final class XPuffinUa implements HeaderInterface
     use HeaderTrait;
 
     /** @throws void */
+    #[Override]
     public function hasDeviceCode(): bool
     {
         return (bool) preg_match('/android|iphone os/i', $this->value);
     }
 
     /** @throws void */
+    #[Override]
     public function getDeviceCode(): string | null
     {
         $matches = [];
@@ -53,6 +58,7 @@ final class XPuffinUa implements HeaderInterface
     }
 
     /** @throws void */
+    #[Override]
     public function hasPlatformCode(): bool
     {
         return (bool) preg_match('/android|iphone os/i', $this->value);
@@ -63,6 +69,7 @@ final class XPuffinUa implements HeaderInterface
      *
      * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
      */
+    #[Override]
     public function getPlatformCode(string | null $derivate = null): string | null
     {
         $matches = [];

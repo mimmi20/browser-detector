@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file is part of the browser-detector package.
  *
@@ -11,6 +12,8 @@
 declare(strict_types = 1);
 
 namespace BrowserDetector\Header;
+
+use Override;
 
 use function array_key_first;
 use function current;
@@ -25,6 +28,7 @@ final class SecChUa implements HeaderInterface
     use SortTrait;
 
     /** @throws void */
+    #[Override]
     public function hasClientCode(): bool
     {
         $list = $this->sort();
@@ -40,6 +44,7 @@ final class SecChUa implements HeaderInterface
     }
 
     /** @throws void */
+    #[Override]
     public function getClientCode(): string | null
     {
         $list = $this->sort();
@@ -73,6 +78,7 @@ final class SecChUa implements HeaderInterface
     }
 
     /** @throws void */
+    #[Override]
     public function hasClientVersion(): bool
     {
         $list = $this->sort();
@@ -88,6 +94,7 @@ final class SecChUa implements HeaderInterface
     }
 
     /** @throws void */
+    #[Override]
     public function getClientVersion(string | null $code = null): string | null
     {
         $list = $this->sort();

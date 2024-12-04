@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file is part of the browser-detector package.
  *
@@ -14,6 +15,7 @@ namespace BrowserDetectorTest\Version;
 
 use BrowserDetector\Version\WindowsMobileOs;
 use BrowserDetector\Version\WindowsMobileOsFactory;
+use Override;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
@@ -27,6 +29,7 @@ final class WindowsMobileOsFactoryTest extends TestCase
     private WindowsMobileOsFactory $object;
 
     /** @throws void */
+    #[Override]
     protected function setUp(): void
     {
         $this->object = new WindowsMobileOsFactory();

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file is part of the browser-detector package.
  *
@@ -14,6 +15,7 @@ namespace BrowserDetector\Header;
 
 use BrowserDetector\Parser\DeviceParserInterface;
 use BrowserDetector\Parser\EngineParserInterface;
+use Override;
 use UaNormalizer\Normalizer\Exception\Exception;
 use UaNormalizer\NormalizerFactory;
 
@@ -41,6 +43,7 @@ final class XOperaminiPhoneUa implements HeaderInterface
     }
 
     /** @throws void */
+    #[Override]
     public function hasDeviceCode(): bool
     {
         return (bool) preg_match(
@@ -50,6 +53,7 @@ final class XOperaminiPhoneUa implements HeaderInterface
     }
 
     /** @throws void */
+    #[Override]
     public function getDeviceCode(): string | null
     {
         $code = $this->deviceParser->parse($this->normalizedValue);
@@ -62,18 +66,21 @@ final class XOperaminiPhoneUa implements HeaderInterface
     }
 
     /** @throws void */
+    #[Override]
     public function hasClientCode(): bool
     {
         return (bool) preg_match('/opera mini/i', $this->value);
     }
 
     /** @throws void */
+    #[Override]
     public function getClientCode(): string
     {
         return 'opera mini';
     }
 
     /** @throws void */
+    #[Override]
     public function hasClientVersion(): bool
     {
         return (bool) preg_match('/opera mini\/[\d\.]+/i', $this->value);
@@ -84,6 +91,7 @@ final class XOperaminiPhoneUa implements HeaderInterface
      *
      * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
      */
+    #[Override]
     public function getClientVersion(string | null $code = null): string | null
     {
         $matches = [];
@@ -96,6 +104,7 @@ final class XOperaminiPhoneUa implements HeaderInterface
     }
 
     /** @throws void */
+    #[Override]
     public function hasPlatformCode(): bool
     {
         return (bool) preg_match(
@@ -109,6 +118,7 @@ final class XOperaminiPhoneUa implements HeaderInterface
      *
      * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
      */
+    #[Override]
     public function getPlatformCode(string | null $derivate = null): string | null
     {
         $matches = [];
@@ -135,12 +145,14 @@ final class XOperaminiPhoneUa implements HeaderInterface
     }
 
     /** @throws void */
+    #[Override]
     public function hasEngineCode(): bool
     {
         return (bool) preg_match('/trident|presto|webkit|gecko/i', $this->value);
     }
 
     /** @throws void */
+    #[Override]
     public function getEngineCode(string | null $code = null): string | null
     {
         $code = $this->engineParser->parse($this->normalizedValue);

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file is part of the browser-detector package.
  *
@@ -13,6 +14,7 @@ declare(strict_types = 1);
 namespace BrowserDetector\Header;
 
 use BrowserDetector\Parser\DeviceParserInterface;
+use Override;
 
 use function preg_match;
 
@@ -27,6 +29,7 @@ final class BaiduFlyflow implements HeaderInterface
     }
 
     /** @throws void */
+    #[Override]
     public function hasDeviceCode(): bool
     {
         $hasMatch = preg_match('/;htc;htc;/i', $this->value);
@@ -35,6 +38,7 @@ final class BaiduFlyflow implements HeaderInterface
     }
 
     /** @throws void */
+    #[Override]
     public function getDeviceCode(): string | null
     {
         if (preg_match('/;htc;htc;/i', $this->value)) {

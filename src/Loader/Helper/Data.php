@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file is part of the browser-detector package.
  *
@@ -15,6 +16,7 @@ namespace BrowserDetector\Loader\Helper;
 use FilterIterator;
 use Iterator;
 use JsonException;
+use Override;
 use RecursiveDirectoryIterator;
 use RecursiveIteratorIterator;
 use RuntimeException;
@@ -45,6 +47,7 @@ final class Data implements DataInterface
     }
 
     /** @throws RuntimeException */
+    #[Override]
     public function __invoke(): void
     {
         if ($this->initialized) {
@@ -64,6 +67,7 @@ final class Data implements DataInterface
             }
 
             /** @throws void */
+            #[Override]
             public function accept(): bool
             {
                 $file = $this->getInnerIterator()->current();
@@ -110,12 +114,14 @@ final class Data implements DataInterface
     }
 
     /** @throws void */
+    #[Override]
     public function getItem(string $cacheId): mixed
     {
         return $this->items[$cacheId] ?? null;
     }
 
     /** @throws void */
+    #[Override]
     public function hasItem(string $cacheId): bool
     {
         return array_key_exists($cacheId, $this->items);
@@ -136,6 +142,7 @@ final class Data implements DataInterface
      *
      * @throws void
      */
+    #[Override]
     public function count(): int
     {
         return count($this->items);

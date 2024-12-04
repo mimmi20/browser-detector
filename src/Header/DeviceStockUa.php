@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file is part of the browser-detector package.
  *
@@ -13,6 +14,7 @@ declare(strict_types = 1);
 namespace BrowserDetector\Header;
 
 use BrowserDetector\Parser\DeviceParserInterface;
+use Override;
 
 use function mb_strtolower;
 use function preg_match;
@@ -29,6 +31,7 @@ final class DeviceStockUa implements HeaderInterface
     }
 
     /** @throws void */
+    #[Override]
     public function hasDeviceCode(): bool
     {
         return (bool) preg_match(
@@ -38,6 +41,7 @@ final class DeviceStockUa implements HeaderInterface
     }
 
     /** @throws void */
+    #[Override]
     public function getDeviceCode(): string | null
     {
         if (
@@ -59,12 +63,14 @@ final class DeviceStockUa implements HeaderInterface
     }
 
     /** @throws void */
+    #[Override]
     public function hasClientCode(): bool
     {
         return (bool) preg_match('/opera mini|iemobile/i', $this->value);
     }
 
     /** @throws void */
+    #[Override]
     public function getClientCode(): string | null
     {
         $matches = [];
@@ -77,6 +83,7 @@ final class DeviceStockUa implements HeaderInterface
     }
 
     /** @throws void */
+    #[Override]
     public function hasClientVersion(): bool
     {
         return (bool) preg_match('/(?:opera mini|iemobile)\/[\d\.]+/i', $this->value);
@@ -87,6 +94,7 @@ final class DeviceStockUa implements HeaderInterface
      *
      * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
      */
+    #[Override]
     public function getClientVersion(string | null $code = null): string | null
     {
         $matches = [];
@@ -99,6 +107,7 @@ final class DeviceStockUa implements HeaderInterface
     }
 
     /** @throws void */
+    #[Override]
     public function hasPlatformCode(): bool
     {
         return (bool) preg_match(
@@ -112,6 +121,7 @@ final class DeviceStockUa implements HeaderInterface
      *
      * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
      */
+    #[Override]
     public function getPlatformCode(string | null $derivate = null): string | null
     {
         $matches = [];
@@ -139,6 +149,7 @@ final class DeviceStockUa implements HeaderInterface
     }
 
     /** @throws void */
+    #[Override]
     public function hasPlatformVersion(): bool
     {
         return (bool) preg_match(
@@ -152,6 +163,7 @@ final class DeviceStockUa implements HeaderInterface
      *
      * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
      */
+    #[Override]
     public function getPlatformVersion(string | null $code = null): string | null
     {
         $matches = [];
@@ -170,6 +182,7 @@ final class DeviceStockUa implements HeaderInterface
     }
 
     /** @throws void */
+    #[Override]
     public function hasEngineCode(): bool
     {
         return (bool) preg_match('/trident|presto|webkit|gecko/i', $this->value);
@@ -180,6 +193,7 @@ final class DeviceStockUa implements HeaderInterface
      *
      * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
      */
+    #[Override]
     public function getEngineCode(string | null $code = null): string | null
     {
         $matches = [];
@@ -192,6 +206,7 @@ final class DeviceStockUa implements HeaderInterface
     }
 
     /** @throws void */
+    #[Override]
     public function hasEngineVersion(): bool
     {
         return (bool) preg_match('/(?:trident|presto|webkit|gecko)[\/ ]([\d._]+)/i', $this->value);
@@ -202,6 +217,7 @@ final class DeviceStockUa implements HeaderInterface
      *
      * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
      */
+    #[Override]
     public function getEngineVersion(string | null $code = null): string | null
     {
         $matches = [];

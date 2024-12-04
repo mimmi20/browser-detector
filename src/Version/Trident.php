@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file is part of the browser-detector package.
  *
@@ -13,17 +14,16 @@ declare(strict_types = 1);
 namespace BrowserDetector\Version;
 
 use BrowserDetector\Version\Exception\NotNumericException;
+use Override;
 use Psr\Log\LoggerInterface;
 
 use function preg_match;
 
-final class Trident implements VersionFactoryInterface
+final readonly class Trident implements VersionFactoryInterface
 {
     /** @throws void */
-    public function __construct(
-        private readonly LoggerInterface $logger,
-        private readonly VersionBuilderInterface $versionBuilder,
-    ) {
+    public function __construct(private LoggerInterface $logger, private VersionBuilderInterface $versionBuilder)
+    {
         // nothing to do
     }
 
@@ -32,6 +32,7 @@ final class Trident implements VersionFactoryInterface
      *
      * @throws void
      */
+    #[Override]
     public function detectVersion(string $useragent): VersionInterface
     {
         $doMatch = preg_match('/Trident\/(?P<version>[\d\.]+)/', $useragent, $matches);

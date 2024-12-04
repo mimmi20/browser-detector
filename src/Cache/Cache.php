@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file is part of the browser-detector package.
  *
@@ -12,6 +13,7 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Cache;
 
+use Override;
 use Psr\SimpleCache\InvalidArgumentException;
 
 use function array_key_exists;
@@ -20,10 +22,10 @@ use function is_string;
 use function serialize;
 use function unserialize;
 
-final class Cache implements CacheInterface
+final readonly class Cache implements CacheInterface
 {
     /** @throws void */
-    public function __construct(private readonly \Psr\SimpleCache\CacheInterface $cache)
+    public function __construct(private \Psr\SimpleCache\CacheInterface $cache)
     {
         // nothing to do
     }
@@ -35,6 +37,7 @@ final class Cache implements CacheInterface
      *
      * @throws InvalidArgumentException
      */
+    #[Override]
     public function getItem(string $cacheId): mixed
     {
         if (!$this->cache->has($cacheId)) {
@@ -60,6 +63,7 @@ final class Cache implements CacheInterface
      *
      * @throws InvalidArgumentException
      */
+    #[Override]
     public function setItem(string $cacheId, mixed $content): bool
     {
         // Get the whole PHP code
@@ -76,6 +80,7 @@ final class Cache implements CacheInterface
      *
      * @throws InvalidArgumentException
      */
+    #[Override]
     public function hasItem(string $cacheId): bool
     {
         return $this->cache->has($cacheId);

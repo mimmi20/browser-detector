@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file is part of the browser-detector package.
  *
@@ -13,6 +14,7 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest\Helper;
 
 use BrowserDetector\Helper\MobileDevice;
+use Override;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
@@ -24,6 +26,7 @@ final class MobileDeviceTest extends TestCase
     private MobileDevice $object;
 
     /** @throws void */
+    #[Override]
     protected function setUp(): void
     {
         $this->object = new MobileDevice();

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file is part of the browser-detector package.
  *
@@ -13,6 +14,7 @@ declare(strict_types = 1);
 namespace BrowserDetectorTest\Bits;
 
 use BrowserDetector\Bits\Os;
+use Override;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\ExpectationFailedException;
@@ -23,6 +25,7 @@ final class OsTest extends TestCase
     private Os $object;
 
     /** @throws void */
+    #[Override]
     protected function setUp(): void
     {
         $this->object = new Os();

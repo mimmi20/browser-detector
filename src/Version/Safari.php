@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file is part of the browser-detector package.
  *
@@ -14,19 +15,20 @@ namespace BrowserDetector\Version;
 
 use BrowserDetector\Version\Exception\NotNumericException;
 use BrowserDetector\Version\Helper\SafariInterface;
+use Override;
 use Psr\Log\LoggerInterface;
 use UnexpectedValueException;
 
 use function is_string;
 use function preg_match;
 
-final class Safari implements VersionFactoryInterface
+final readonly class Safari implements VersionFactoryInterface
 {
     /** @throws void */
     public function __construct(
-        private readonly LoggerInterface $logger,
-        private readonly VersionBuilderInterface $versionBuilder,
-        private readonly SafariInterface $safariHelper,
+        private LoggerInterface $logger,
+        private VersionBuilderInterface $versionBuilder,
+        private SafariInterface $safariHelper,
     ) {
         // nothing to do
     }
@@ -36,6 +38,7 @@ final class Safari implements VersionFactoryInterface
      *
      * @throws UnexpectedValueException
      */
+    #[Override]
     public function detectVersion(string $useragent): VersionInterface
     {
         $matches = [];

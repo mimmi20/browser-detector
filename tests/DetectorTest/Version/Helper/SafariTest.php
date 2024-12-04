@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file is part of the browser-detector package.
  *
@@ -15,6 +16,7 @@ namespace BrowserDetectorTest\Version\Helper;
 use BrowserDetector\Version\Exception\NotNumericException;
 use BrowserDetector\Version\Helper\Safari;
 use BrowserDetector\Version\VersionBuilder;
+use Override;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
@@ -26,6 +28,7 @@ final class SafariTest extends TestCase
     private Safari $object;
 
     /** @throws void */
+    #[Override]
     protected function setUp(): void
     {
         $this->object = new Safari();

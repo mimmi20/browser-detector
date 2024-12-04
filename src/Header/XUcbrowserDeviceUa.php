@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file is part of the browser-detector package.
  *
@@ -14,6 +15,7 @@ namespace BrowserDetector\Header;
 
 use BrowserDetector\Parser\DeviceParserInterface;
 use BrowserDetector\Parser\PlatformParserInterface;
+use Override;
 use UaNormalizer\Normalizer\Exception\Exception;
 use UaNormalizer\NormalizerFactory;
 
@@ -40,12 +42,14 @@ final class XUcbrowserDeviceUa implements HeaderInterface
     }
 
     /** @throws void */
+    #[Override]
     public function hasDeviceCode(): bool
     {
         return $this->value !== '?';
     }
 
     /** @throws void */
+    #[Override]
     public function getDeviceCode(): string | null
     {
         if ($this->value === '?') {
@@ -62,6 +66,7 @@ final class XUcbrowserDeviceUa implements HeaderInterface
     }
 
     /** @throws void */
+    #[Override]
     public function hasPlatformCode(): bool
     {
         if ($this->value === '?') {
@@ -79,6 +84,7 @@ final class XUcbrowserDeviceUa implements HeaderInterface
      *
      * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
      */
+    #[Override]
     public function getPlatformCode(string | null $derivate = null): string | null
     {
         if ($this->value === '?') {

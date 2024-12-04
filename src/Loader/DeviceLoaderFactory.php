@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file is part of the browser-detector package.
  *
@@ -13,6 +14,7 @@ declare(strict_types = 1);
 namespace BrowserDetector\Loader;
 
 use BrowserDetector\Loader\Helper\Data;
+use Override;
 use Psr\Log\LoggerInterface;
 use RuntimeException;
 use UaDeviceType\TypeLoader;
@@ -21,7 +23,7 @@ use function array_key_exists;
 
 final class DeviceLoaderFactory implements DeviceLoaderFactoryInterface
 {
-    private const DATA_PATH = __DIR__ . '/../../data/devices/';
+    private const string DATA_PATH = __DIR__ . '/../../data/devices/';
 
     /** @var array<DeviceLoaderInterface> */
     private array $loader = [];
@@ -35,6 +37,7 @@ final class DeviceLoaderFactory implements DeviceLoaderFactoryInterface
     }
 
     /** @throws RuntimeException */
+    #[Override]
     public function __invoke(string $company = ''): DeviceLoaderInterface
     {
         if (array_key_exists($company, $this->loader)) {

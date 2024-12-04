@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file is part of the browser-detector package.
  *
@@ -12,6 +13,8 @@ declare(strict_types = 1);
 
 namespace BrowserDetector\Loader;
 
+use Override;
+
 interface BrowserLoaderInterface extends SpecificLoaderInterface
 {
     /**
@@ -19,5 +22,6 @@ interface BrowserLoaderInterface extends SpecificLoaderInterface
      *
      * @throws NotFoundException
      */
+    #[Override]
     public function load(string $key, string $useragent = ''): array;
 }

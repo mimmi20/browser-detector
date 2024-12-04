@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file is part of the browser-detector package.
  *
@@ -13,16 +14,17 @@ declare(strict_types = 1);
 namespace BrowserDetector\Loader;
 
 use BrowserDetector\Loader\Helper\DataInterface;
+use Override;
 use RuntimeException;
 use stdClass;
 
 use function assert;
 use function is_string;
 
-final class CompanyLoader implements CompanyLoaderInterface
+final readonly class CompanyLoader implements CompanyLoaderInterface
 {
     /** @throws RuntimeException */
-    public function __construct(private readonly DataInterface $initData)
+    public function __construct(private DataInterface $initData)
     {
         $initData();
     }
@@ -32,6 +34,7 @@ final class CompanyLoader implements CompanyLoaderInterface
      *
      * @throws NotFoundException
      */
+    #[Override]
     public function load(string $key): array
     {
         if (!$this->initData->hasItem($key)) {
