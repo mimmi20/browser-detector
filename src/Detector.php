@@ -147,10 +147,8 @@ final readonly class Detector implements DetectorInterface
                 $version        = $versionBuilder->set((string) $platformVersion);
                 $windowsVersion = (float) $version->getVersion(VersionInterface::IGNORE_MICRO);
 
-                if (
-                    $windowsVersion < 1
-                ) {
-                    $windowsVersion = $windowsVersion * 10;
+                if ($windowsVersion < 1) {
+                    $windowsVersion     *= 10;
                     $minorVersionMapping = [1 => '7', 2 => '8', 3 => '8.1'];
 
                     $platformVersion = $minorVersionMapping[$windowsVersion] ?? $platformVersion;
