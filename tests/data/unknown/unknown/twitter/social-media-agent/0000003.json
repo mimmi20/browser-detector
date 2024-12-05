@@ -2912,5 +2912,52 @@
       "version": null,
       "manufacturer": "unknown"
     }
+  },
+  {
+    "headers": {
+      "user-agent": "Twitterbot/1.0",
+      "x-b3-flags": "17167166818",
+      "x-b3-parentspanid": "20a1ff9ade2c8f14",
+      "x-b3-sampled": "false",
+      "x-b3-spanid": "462bc1a0cdbe194a",
+      "x-b3-traceid": "a63ca01d02b14ee3"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "Twitterbot",
+      "version": "1.0.0",
+      "manufacturer": "twitter",
+      "type": "social-media-agent",
+      "isbot": true
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
   }
 ]
