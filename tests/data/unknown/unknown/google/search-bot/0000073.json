@@ -1204,7 +1204,6 @@
       "sec-fetch-mode": "navigate",
       "sec-fetch-site": "cross-site",
       "sec-fetch-user": "?1",
-      "sec-gpc": "1",
       "user-agent": "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
     },
     "device": {
@@ -3064,194 +3063,6 @@
   },
   {
     "headers": {
-      "tracestate": "dd=p:03b40a1304b9416d;s:1;t.dm:-0;t.tid:667c59e100000000",
-      "user-agent": "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)",
-      "x-datadog-parent-id": "266849354721608045",
-      "x-datadog-sampling-priority": "1",
-      "x-datadog-tags": "_dd.p.dm=-0,_dd.p.tid=667c59e100000000",
-      "x-datadog-trace-id": "15555833569745165769"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "Google Bot",
-      "version": "2.1.0",
-      "manufacturer": "google",
-      "type": "search-bot",
-      "isbot": true
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "tracestate": "dd=p:688da9b73e7665f0;s:1;t.dm:-0;t.tid:667c59e100000000",
-      "user-agent": "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)",
-      "x-datadog-parent-id": "7533864356152763888",
-      "x-datadog-sampling-priority": "1",
-      "x-datadog-tags": "_dd.p.dm=-0,_dd.p.tid=667c59e100000000",
-      "x-datadog-trace-id": "15555833569745165769"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "Google Bot",
-      "version": "2.1.0",
-      "manufacturer": "google",
-      "type": "search-bot",
-      "isbot": true
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "tracestate": "dd=p:d7181a06d7e8be19;s:1;t.dm:-0;t.tid:667c59e100000000",
-      "user-agent": "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)",
-      "x-datadog-parent-id": "15499166734290042393",
-      "x-datadog-sampling-priority": "1",
-      "x-datadog-tags": "_dd.p.dm=-0,_dd.p.tid=667c59e100000000",
-      "x-datadog-trace-id": "15555833569745165769"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "Google Bot",
-      "version": "2.1.0",
-      "manufacturer": "google",
-      "type": "search-bot",
-      "isbot": true
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "tracestate": "dd=p:1b541d00ee2f98d7;s:1;t.dm:-0;t.tid:667c59e100000000",
-      "user-agent": "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)",
-      "x-datadog-parent-id": "1969230826901051607",
-      "x-datadog-sampling-priority": "1",
-      "x-datadog-tags": "_dd.p.dm=-0,_dd.p.tid=667c59e100000000",
-      "x-datadog-trace-id": "15555833569745165769"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "Google Bot",
-      "version": "2.1.0",
-      "manufacturer": "google",
-      "type": "search-bot",
-      "isbot": true
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
       "from": "googlebot(at)googlebot.com",
       "user-agent": "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; GoogleOther) Chrome/125.0.6422.175 Safari/537.36"
     },
@@ -4266,6 +4077,178 @@
     "engine": {
       "name": "Blink",
       "version": "130.0.6723.69",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "from": "googlebot(at)googlebot.com",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 Chrome/130.0.6723.58 Safari/537.36 Google-Ads-Conversions"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "Google Ads Conversions",
+      "version": null,
+      "manufacturer": "google",
+      "type": "search-bot",
+      "isbot": true
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "130.0.6723.58",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "from": "googlebot(at)googlebot.com",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 Chrome/129.0.6668.89 Safari/537.36 Google-Ads-Conversions"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "Google Ads Conversions",
+      "version": null,
+      "manufacturer": "google",
+      "type": "search-bot",
+      "isbot": true
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "129.0.6668.89",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "from": "googlebot(at)googlebot.com",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 Chrome/129.0.6668.70 Safari/537.36 Google-Ads-Conversions"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "Google Ads Conversions",
+      "version": null,
+      "manufacturer": "google",
+      "type": "search-bot",
+      "isbot": true
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "129.0.6668.70",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "from": "googlebot(at)googlebot.com",
+      "user-agent": "Mozilla/5.0 AppleWebKit/537.36 Chrome/128.0.6613.137 Safari/537.36 Google-Ads-Conversions"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "Google Ads Conversions",
+      "version": null,
+      "manufacturer": "google",
+      "type": "search-bot",
+      "isbot": true
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "128.0.6613.137",
       "manufacturer": "google"
     }
   }

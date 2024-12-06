@@ -140,28 +140,6 @@ final readonly class Detector implements DetectorInterface
             }
         }
 
-        if (in_array(mb_strtolower($platformName ?? ''), ['windows'], true)) {
-            $versionBuilder = ($this->versionBuilderFactory)($this->logger);
-
-            try {
-                $version        = $versionBuilder->set((string) $platformVersion);
-                $windowsVersion = (float) $version->getVersion(VersionInterface::IGNORE_MICRO);
-
-                if ($windowsVersion < 1) {
-                    $windowsVersion     *= 10;
-                    $minorVersionMapping = [1 => '7', 2 => '8', 3 => '8.1'];
-
-                    $platformVersion = $minorVersionMapping[$windowsVersion] ?? $platformVersion;
-                } elseif ($windowsVersion > 0 && $windowsVersion < 11) {
-                    $platformVersion = '10';
-                } elseif ($windowsVersion > 10) {
-                    $platformVersion = '11';
-                }
-            } catch (NotNumericException | UnexpectedValueException $e) {
-                $this->logger->info($e);
-            }
-        }
-
         /* detect client */
         [$clientName, $clientVersion, $clientManufacturer, $clientType, $isBot, $engineCodenameFromClient] = $this->getClientData(
             filteredHeaders: $filteredHeaders,

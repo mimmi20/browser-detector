@@ -251,7 +251,7 @@ final class DetectorTest extends TestCase
                     'os' => [
                         'name' => 'Windows',
                         'marketingName' => 'Windows',
-                        'version' => '11',
+                        'version' => '11.0.0',
                         'manufacturer' => 'microsoft',
                     ],
                     'client' => [
@@ -298,7 +298,7 @@ final class DetectorTest extends TestCase
                     'os' => [
                         'name' => 'Windows',
                         'marketingName' => 'Windows',
-                        'version' => '10',
+                        'version' => '10.0.0',
                         'manufacturer' => 'microsoft',
                     ],
                     'client' => [
@@ -345,7 +345,7 @@ final class DetectorTest extends TestCase
                     'os' => [
                         'name' => 'Windows',
                         'marketingName' => 'Windows',
-                        'version' => '7',
+                        'version' => '7.0.0',
                         'manufacturer' => 'microsoft',
                     ],
                     'client' => [
@@ -392,7 +392,7 @@ final class DetectorTest extends TestCase
                     'os' => [
                         'name' => 'Windows',
                         'marketingName' => 'Windows',
-                        'version' => '8',
+                        'version' => '8.0.0',
                         'manufacturer' => 'microsoft',
                     ],
                     'client' => [
@@ -439,7 +439,7 @@ final class DetectorTest extends TestCase
                     'os' => [
                         'name' => 'Windows',
                         'marketingName' => 'Windows',
-                        'version' => '8.1',
+                        'version' => '8.1.0',
                         'manufacturer' => 'microsoft',
                     ],
                     'client' => [

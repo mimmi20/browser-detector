@@ -2816,51 +2816,6 @@
   },
   {
     "headers": {
-      "user-agent": "python-requests/2.27.1",
-      "x-datadog-trace-id": "8286563192279443186",
-      "x-datadog-parent-id": "989657081527481590",
-      "x-datadog-sampling-priority": "1"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "python-requests",
-      "version": "2.27.1",
-      "manufacturer": "python-software-foundation",
-      "type": "library",
-      "isbot": false
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
       "sentry-trace": "07a75ca29fd348f4bdfa1e731da222b8-8234b8c2d64cee82-",
       "user-agent": "python-requests/2.26.0"
     },
@@ -2935,51 +2890,6 @@
     "client": {
       "name": "python-requests",
       "version": "2.26.0",
-      "manufacturer": "python-software-foundation",
-      "type": "library",
-      "isbot": false
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "python-requests/2.27.1",
-      "x-datadog-trace-id": "16197860073615832849",
-      "x-datadog-parent-id": "1571156124278352762",
-      "x-datadog-sampling-priority": "1"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "python-requests",
-      "version": "2.27.1",
       "manufacturer": "python-software-foundation",
       "type": "library",
       "isbot": false
@@ -3166,7 +3076,6 @@
       "sentry-trace": "54519e89dfd447da8afda80a9640152f-a5c7f8b5eba99bfd-0",
       "user-agent": "python-requests/2.25.1",
       "traceparent": "00-3adb4910b34b174f3234029d062f3437-088f17750e6cce81-01",
-      "tracestate": "2851699@nr=0-0-2851699-183864033-088f17750e6cce81-3adb4910b34b174f-1-1.924302-1648972531594",
       "newrelic": "eyJ2IjpbMCwxXSwiZCI6eyJ0eSI6IkFwcCIsImFjIjoiMjg1MTY5OSIsImFwIjoiMTgzODY0MDMzIiwidHIiOiIzYWRiNDkxMGIzNGIxNzRmMzIzNDAyOWQwNjJmMzQzNyIsInNhIjp0cnVlLCJwciI6MS45MjQzMDIsInR4IjoiM2FkYjQ5MTBiMzRiMTc0ZiIsInRpIjoxNjQ4OTcyNTMxNTk0LCJpZCI6IjA4OGYxNzc1MGU2Y2NlODEifX0="
     },
     "device": {
@@ -3498,51 +3407,6 @@
     "client": {
       "name": "python-requests",
       "version": "2.26.0",
-      "manufacturer": "python-software-foundation",
-      "type": "library",
-      "isbot": false
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "python-requests/2.27.1",
-      "x-datadog-trace-id": "4098067621881896725",
-      "x-datadog-parent-id": "13274838663909078997",
-      "x-datadog-sampling-priority": "1"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "python-requests",
-      "version": "2.27.1",
       "manufacturer": "python-software-foundation",
       "type": "library",
       "isbot": false
@@ -4028,10 +3892,7 @@
   },
   {
     "headers": {
-      "user-agent": "python-requests/2.28.0",
-      "x-datadog-trace-id": "14827455785567113622",
-      "x-datadog-parent-id": "1599624213848546877",
-      "x-datadog-sampling-priority": "0"
+      "user-agent": "python-requests/2.28.0"
     },
     "device": {
       "architecture": null,
@@ -4159,10 +4020,8 @@
   },
   {
     "headers": {
-      "user-agent": "python-requests/2.27.1",
-      "x-datadog-trace-id": "9619315517774179962",
-      "x-datadog-parent-id": "15830129665081437051",
-      "x-datadog-sampling-priority": "0"
+      "sentry-trace": "b54c9f4deb4f4bcfb5cd3fccd20d2b0b-8e41d1fc3a4db73a-",
+      "user-agent": "python-requests/2.26.0"
     },
     "device": {
       "architecture": null,
@@ -4191,7 +4050,7 @@
     },
     "client": {
       "name": "python-requests",
-      "version": "2.27.1",
+      "version": "2.26.0",
       "manufacturer": "python-software-foundation",
       "type": "library",
       "isbot": false
@@ -4204,7 +4063,136 @@
   },
   {
     "headers": {
-      "sentry-trace": "b54c9f4deb4f4bcfb5cd3fccd20d2b0b-8e41d1fc3a4db73a-",
+      "sentry-trace": "90a264be63e64e068169198827c11ce9-970b4f059a6e879b-",
+      "user-agent": "python-requests/2.26.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "python-requests",
+      "version": "2.26.0",
+      "manufacturer": "python-software-foundation",
+      "type": "library",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "sentry-trace": "536574c7fc284736ae358a44d2e804eb-be0f346ba68bdde4-",
+      "user-agent": "python-requests/2.26.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "python-requests",
+      "version": "2.26.0",
+      "manufacturer": "python-software-foundation",
+      "type": "library",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "sentry-trace": "4955c789b4ac4c03a943a374b900ba37-b0d54c6185e765a1-",
+      "user-agent": "python-requests/2.26.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "python-requests",
+      "version": "2.26.0",
+      "manufacturer": "python-software-foundation",
+      "type": "library",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "sentry-trace": "a1cd95ee075c4361832140ee1699a6e1-9fb2a4225ed53699-",
       "user-agent": "python-requests/2.26.0"
     },
     "device": {

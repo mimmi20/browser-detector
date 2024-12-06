@@ -2295,11 +2295,9 @@
       "x-b3-traceid": "5259131914a43c9f10022c38d36f73a5",
       "x-envoy-attempt-count": "1",
       "x-envoy-decorator-operation": "b114.crawl.yahoo.net:443/*",
-      "x-envoy-expected-rq-timeout-ms": "15000",
       "x-envoy-peer-metadata": "ChoKCkNMVVNURVJfSUQSDBoKS3ViZXJuZXRlcwo5CgxJTlNUQU5DRV9JUFMSKRonMTAuMjI2LjEyOC4xNSxmZTgwOjpkNDI4OmI1ZmY6ZmUzZjpmZmI2CuIBCgZMQUJFTFMS1wEq1AEKKwoDYXBwEiQaImxsZi1hcGktc2VydmljZS0tYzItcHJvZHVjdGlvbi1iZjEKIAoKYXBwVmVyc2lvbhISGhAxLjAuMC4xNjkzOTYwMzkyCiAKDWJhc2VJbWFnZU5hbWUSDxoNb3Blbmpkay0xMWpkawocChBiYXNlSW1hZ2VWZXJzaW9uEggaBmxhdGVzdAobCgtlbnZpcm9ubWVudBIMGgpwcm9kdWN0aW9uCiYKA3N2YxIfGh1sbGYtYXBpLXNlcnZpY2UtYzItcHJvZHVjdGlvbgo8CgROQU1FEjQaMmxsZi1hcGktc2VydmljZS0tYzItcHJvZHVjdGlvbi1iZjEtOGZiOGY4YjRiLTJzc3E2ChgKCU5BTUVTUEFDRRILGglzaWV2ZS1rOHMKaAoFT1dORVISXxpda3ViZXJuZXRlczovL2FwaXMvYXBwcy92MS9uYW1lc3BhY2VzL3NpZXZlLWs4cy9kZXBsb3ltZW50cy9sbGYtYXBpLXNlcnZpY2UtLWMyLXByb2R1Y3Rpb24tYmYxCjUKDVdPUktMT0FEX05BTUUSJBoibGxmLWFwaS1zZXJ2aWNlLS1jMi1wcm9kdWN0aW9uLWJmMQ==",
       "x-envoy-peer-metadata-id": "sidecar~10.226.128.15~llf-api-service--c2-production-bf1-8fb8f8b4b-2ssq6.sieve-k8s~sieve-k8s.svc.yahoo.local",
-      "x-real-host": "www.geld.de",
-      "x-request-id": "b037a625-273a-442d-8f1a-5c8ca60ceae2"
+      "x-real-host": "www.geld.de"
     },
     "device": {
       "architecture": null,
