@@ -898,6 +898,11 @@ final class SecChUaModel implements HeaderInterface
             'w-v755-ope' => 'wiko=wiko w-v755-ope',
             'w-v755-eea' => 'wiko=wiko w-v755-eea',
             'w-p611-eea' => 'wiko=wiko w-p611-eea',
+            'w-k610-eea' => 'wiko=wiko w-k610-eea',
+            'w-v745-eea' => 'wiko=wiko w-v745-eea',
+            'w-v851-eea' => 'wiko=wiko w-v851-eea',
+            'w-v830-eea' => 'wiko=wiko w-v830-eea',
+            'w-v830-id' => 'wiko=wiko w-v830-id',
             // razer
             'phone 2' => 'razer=razer phone 2',
             // Alcatel

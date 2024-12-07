@@ -1537,7 +1537,7 @@
     "os": {
       "name": "Windows",
       "marketingName": "Windows",
-      "version": "10",
+      "version": "10.0.0",
       "manufacturer": "microsoft"
     },
     "client": {
@@ -3427,7 +3427,7 @@
     "os": {
       "name": "Windows",
       "marketingName": "Windows",
-      "version": "10",
+      "version": "10.0.0",
       "manufacturer": "microsoft"
     },
     "client": {
@@ -3460,11 +3460,7 @@
       "sec-ch-ua-bitness": "\"\"",
       "sec-ch-ua-full-version-list": "\" Not A;Brand\";v=\"99.0.0.0\", \"Chromium\";v=\"101.0.1210.53\", \"Microsoft Edge\";v=\"101.0.1210.53\"",
       "dnt": "1",
-      "user-agent": "Mozilla/5.0 (Linux; Android 12; Nokia G50) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.64 Mobile Safari/537.36 EdgA/101.0.1210.53",
-      "sec-fetch-site": "same-origin",
-      "sec-fetch-mode": "navigate",
-      "sec-fetch-user": "?1",
-      "sec-fetch-dest": "document"
+      "user-agent": "Mozilla/5.0 (Linux; Android 12; Nokia G50) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.64 Mobile Safari/537.36 EdgA/101.0.1210.53"
     },
     "device": {
       "architecture": null,
@@ -3649,9 +3645,6 @@
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua-platform-version": "\"12.0.0\"",
       "sec-ch-viewport-width": "377",
-      "sec-fetch-dest": "empty",
-      "sec-fetch-mode": "cors",
-      "sec-fetch-site": "same-origin",
       "user-agent": "Mozilla/5.0 (Linux; Android 12; Nokia 5.4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Mobile Safari/537.36 EdgA/105.0.1343.50",
       "viewport-width": "377",
       "x-requested-with": "XMLHttpRequest"

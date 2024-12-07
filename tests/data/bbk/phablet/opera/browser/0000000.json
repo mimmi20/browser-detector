@@ -379,6 +379,19 @@
   },
   {
     "headers": {
+      "device-memory": "4",
+      "dpr": "1.875",
+      "viewport-width": "980",
+      "rtt": "50",
+      "downlink": "10",
+      "ect": "4g",
+      "sec-ch-ua": "\"Opera\";v=\"86\", \";Not A Brand\";v=\"99\", \"Chromium\";v=\"100\", \"OperaMobile\";v=\"69\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"12\"",
+      "sec-ch-ua-model": "\"V2027\"",
+      "sec-ch-ua-bitness": "\"\"",
       "user-agent": "Mozilla/5.0 (Linux; Android 12; V2027) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Mobile Safari/537.36 OPR/69.3.3606.65458"
     },
     "device": {
@@ -408,7 +421,7 @@
     },
     "client": {
       "name": "Opera Mobile",
-      "version": "69.3.3606.65458",
+      "version": "69.0.0",
       "manufacturer": "opera",
       "type": "browser",
       "isbot": false

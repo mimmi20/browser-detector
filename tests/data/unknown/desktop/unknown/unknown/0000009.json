@@ -576,7 +576,7 @@
     "os": {
       "name": "Windows",
       "marketingName": "Windows",
-      "version": "10",
+      "version": "10.0.0",
       "manufacturer": "microsoft"
     },
     "client": {
@@ -1257,7 +1257,7 @@
     "os": {
       "name": "Windows",
       "marketingName": "Windows",
-      "version": "10",
+      "version": "10.0.0",
       "manufacturer": "microsoft"
     },
     "client": {
@@ -1635,7 +1635,7 @@
     "os": {
       "name": "Windows",
       "marketingName": "Windows",
-      "version": "10",
+      "version": "10.0.0",
       "manufacturer": "microsoft"
     },
     "client": {
@@ -1678,7 +1678,7 @@
     "os": {
       "name": "Windows",
       "marketingName": "Windows",
-      "version": "10",
+      "version": "10.0.0",
       "manufacturer": "microsoft"
     },
     "client": {
@@ -2034,52 +2034,6 @@
   },
   {
     "headers": {
-      "sec-fetch-dest": "document",
-      "sec-fetch-mode": "navigate",
-      "sec-fetch-site": "none",
-      "sec-fetch-user": "?1",
-      "user-agent": "Linux"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Linux Desktop",
-      "marketingName": "Linux Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Linux",
-      "marketingName": "Linux",
-      "version": null,
-      "manufacturer": "linux-foundation"
-    },
-    "client": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "unknown",
-      "isbot": false
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "cert-manager-challenges/v1.13.3 (linux/amd64) cert-manager/876e386ee905aa86e2466c287e654613b0426927"
     },
     "device": {
@@ -2164,52 +2118,6 @@
   },
   {
     "headers": {
-      "user-agent": "Windows NT"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "Windows Desktop",
-      "marketingName": "Windows Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Windows NT",
-      "marketingName": "Windows NT",
-      "version": null,
-      "manufacturer": "microsoft"
-    },
-    "client": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "unknown",
-      "isbot": false
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "sec-fetch-dest": "document",
-      "sec-fetch-mode": "navigate",
-      "sec-fetch-site": "none",
-      "sec-fetch-user": "?1",
       "user-agent": "Windows NT"
     },
     "device": {

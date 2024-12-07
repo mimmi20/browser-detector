@@ -979,6 +979,11 @@ final class SecChUaModelTest extends TestCase
             ['"W-V755-OPE"', true, 'wiko=wiko w-v755-ope'],
             ['"W-V755-EEA"', true, 'wiko=wiko w-v755-eea'],
             ['"W-P611-EEA"', true, 'wiko=wiko w-p611-eea'],
+            ['"W-K610-EEA"', true, 'wiko=wiko w-k610-eea'],
+            ['"W-V745-EEA"', true, 'wiko=wiko w-v745-eea'],
+            ['"W-V851-EEA"', true, 'wiko=wiko w-v851-eea'],
+            ['"W-V830-EEA"', true, 'wiko=wiko w-v830-eea'],
+            ['"W-V830-ID"', true, 'wiko=wiko w-v830-id'],
             // razer
             ['"Phone 2"', true, 'razer=razer phone 2'],
             // Alcatel

@@ -593,17 +593,17 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "Moto G",
-      "marketingName": "Moto G",
+      "deviceName": "Moto G10",
+      "marketingName": "Moto G10",
       "manufacturer": "motorola",
       "brand": "motorola",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
-        "width": 1280,
+        "width": 1600,
         "height": 720,
         "touch": true,
-        "size": 4
+        "size": 6.5
       },
       "type": "smartphone",
       "ismobile": true,
