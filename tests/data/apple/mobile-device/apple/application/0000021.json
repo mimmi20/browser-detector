@@ -253,48 +253,6 @@
   },
   {
     "headers": {
-      "user-agent": "iOS/17.3.1 (21D61) dataaccessd/1.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Apple device",
-      "marketingName": "general Apple device",
-      "manufacturer": "apple",
-      "brand": "apple",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "iOS",
-      "marketingName": "iOS",
-      "version": "21.0.0-dev+61",
-      "manufacturer": "apple"
-    },
-    "client": {
-      "name": "iOS dataaccessd",
-      "version": "1.0.0",
-      "manufacturer": "apple",
-      "type": "application",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "ArcMobile2/49515.2 CFNetwork/1494.0.7 Darwin/23.4.0"
     },
     "device": {
@@ -4196,6 +4154,48 @@
     "engine": {
       "name": "WebKit",
       "version": "1568.100.1",
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "NetworkingExtension/8618.5.1.10.2 CFNetwork/1498.700.2 Darwin/23.6.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Apple device",
+      "marketingName": "general Apple device",
+      "manufacturer": "apple",
+      "brand": "apple",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "iOS",
+      "marketingName": "iOS",
+      "version": "17.0.0",
+      "manufacturer": "apple"
+    },
+    "client": {
+      "name": "CFNetwork",
+      "version": null,
+      "manufacturer": "apple",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": "1498.700.2",
       "manufacturer": "apple"
     }
   }
