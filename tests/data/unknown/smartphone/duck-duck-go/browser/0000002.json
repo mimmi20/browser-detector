@@ -381,9 +381,7 @@
   {
     "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 12) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/101.0.4951.41 Mobile Safari/537.36",
-      "dnt": "1",
-      "x-requested-with": "com.duckduckgo.mobile.android",
-      "save-data": "on"
+      "x-requested-with": "com.duckduckgo.mobile.android"
     },
     "device": {
       "architecture": null,
@@ -425,7 +423,6 @@
   },
   {
     "headers": {
-      "save-data": "on",
       "user-agent": "Mozilla/5.0 (Linux; Android 12) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/103.0.5060.129 Mobile Safari/537.36",
       "x-requested-with": "com.duckduckgo.mobile.android"
     },
@@ -851,7 +848,6 @@
       "dpr": "2.549999952316284",
       "ect": "4g",
       "rtt": "0",
-      "save-data": "on",
       "sec-ch-device-memory": "8",
       "sec-ch-dpr": "2.549999952316284",
       "sec-ch-prefers-color-scheme": "dark",
@@ -911,7 +907,6 @@
   },
   {
     "headers": {
-      "save-data": "on",
       "sec-ch-ua": "\"Not A(Brand\";v=\"99\", \"Android WebView\";v=\"121\", \"Chromium\";v=\"121\"",
       "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-platform": "\"Android\"",
@@ -1157,7 +1152,6 @@
   },
   {
     "headers": {
-      "save-data": "on",
       "sec-ch-ua": "\"Not_A Brand\";v=\"8\", \"Chromium\";v=\"120\", \"Android WebView\";v=\"120\"",
       "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-platform": "\"Android\"",
@@ -1562,7 +1556,6 @@
   },
   {
     "headers": {
-      "save-data": "on",
       "sec-ch-ua": "\"Chromium\";v=\"124\", \"Android WebView\";v=\"124\", \"Not-A.Brand\";v=\"99\"",
       "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-platform": "\"Android\"",

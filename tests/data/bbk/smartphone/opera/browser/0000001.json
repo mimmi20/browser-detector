@@ -1824,9 +1824,7 @@
       "downlink": "5.65",
       "dpr": "4",
       "ect": "4g",
-      "priority": "u=0, i",
       "rtt": "50",
-      "save-data": "on",
       "sec-ch-device-memory": "8",
       "sec-ch-dpr": "4",
       "sec-ch-prefers-color-scheme": "dark",
@@ -1843,8 +1841,7 @@
       "sec-ch-viewport-height": "1720",
       "sec-ch-viewport-width": "980",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Mobile Safari/537.36 OPR/83.0.0.0",
-      "viewport-width": "980",
-      "x-enrichmentstatus": "unsupported"
+      "viewport-width": "980"
     },
     "device": {
       "architecture": null,
@@ -1901,6 +1898,48 @@
         "height": 1080,
         "touch": true,
         "size": 6.62
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "version": "77.0.4054.90",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "91.0.4472.101",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; Y71t) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Mobile Safari/537.36 OPR/77.0.4054.90"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Y71",
+      "marketingName": "Y71",
+      "manufacturer": "bbk",
+      "brand": "vivo",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1440,
+        "height": 720,
+        "touch": true,
+        "size": 6
       },
       "type": "smartphone",
       "ismobile": true,

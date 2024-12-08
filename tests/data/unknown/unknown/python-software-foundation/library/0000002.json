@@ -1,49 +1,6 @@
 [
   {
     "headers": {
-      "baggage": "layerx-request-id=1d955fd5-58e6-441c-bd1d-f7854941b6b9,layerx-client-request-id=ext-8622fa3a-bbc3-482e-8c6c-92b2ef49f160",
-      "user-agent": "python-requests/2.32.3"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "python-requests",
-      "version": "2.32.3",
-      "manufacturer": "python-software-foundation",
-      "type": "library",
-      "isbot": false
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "python-urllib3/2.2.3"
     },
     "device": {

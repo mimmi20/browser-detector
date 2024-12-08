@@ -411,6 +411,7 @@ final class SecChUaModelTest extends TestCase
             ['"A303ZT"', true, 'zte=zte a303zt'],
             ['"ZTE Blade A7 2019"', true, 'zte=zte blade a7 2019'],
             ['"ZTE Blade A54"', true, 'zte=zte blade a54'],
+            ['"ZTE A7040"', true, 'zte=zte a7040'],
             // Samsung
             ['"SM-A415F"', true, 'samsung=samsung sm-a415f'],
             ['"SM-A505FN"', true, 'samsung=samsung sm-a505fn'],
@@ -678,6 +679,19 @@ final class SecChUaModelTest extends TestCase
             ['SM-G389F', true, 'samsung=samsung sm-g389f'],
             ['SM-M205FN', true, 'samsung=samsung sm-m205fn'],
             ['SM-T820', true, 'samsung=samsung sm-t820'],
+            ['SM-G975F/G975FXXU4BTA8', true, 'samsung=samsung sm-g975f'],
+            ['"SM-G780G/G780GXXS7EWJ8"', true, 'samsung=samsung sm-g780g'],
+            ['"SM-A025U"', true, 'samsung=samsung sm-a025u'],
+            ['"SM-G996N"', true, 'samsung=samsung sm-g996n'],
+            ['"SM-G965F/G965FXXUHFVG4"', true, 'samsung=samsung sm-g965f'],
+            ['"SM-J500F"', true, 'samsung=samsung sm-j500f'],
+            ['"SM-G930F/G930FXXU8EVG3"', true, 'samsung=samsung sm-j500f'],
+            ['"SM-G996U1"', true, 'samsung=samsung sm-g996u1'],
+            ['"SM-N975U1"', true, 'samsung=samsung sm-n975u1'],
+            ['"SM-F946B"', true, 'samsung=samsung sm-f946b'],
+            ['"SM-G9550"', true, 'samsung=samsung sm-g9550'],
+            ['"SM-X210"', true, 'samsung=samsung sm-x210'],
+            ['"SM-X510"', true, 'samsung=samsung sm-x510'],
             // Huawei
             ['"LGE-NX9"', true, 'huawei=huawei lge-nx9'],
             ['"VOG-L29"', true, 'huawei=huawei vog-l29'],
@@ -799,6 +813,7 @@ final class SecChUaModelTest extends TestCase
             ['"Lenovo TB-X505L"', true, 'lenovo=lenovo tb-x505l'],
             ['"Lenovo TB-J606F"', true, 'lenovo=lenovo tb-j606f'],
             ['"Lenovo TB-8704X"', true, 'lenovo=lenovo tb-8704x'],
+            ['"Lenovo TB-X306FA"', true, 'lenovo=lenovo tb-x306fa'],
             // Nokia
             ['"Nokia G50"', true, 'nokia=nokia g50'],
             ['"Nokia G20"', true, 'nokia=nokia g20'],
@@ -820,6 +835,7 @@ final class SecChUaModelTest extends TestCase
             ['"Nokia G60 5G"', true, 'nokia=nokia g60 5g'],
             ['"Nokia 3.1 Plus"', true, 'nokia=nokia 3.1 plus'],
             ['"TA-1021"', true, 'nokia=nokia ta-1021'],
+            ['"Nokia 2"', true, 'nokia=nokia 2'],
             // Microsoft
             ['"Surface Duo"', true, 'microsoft=microsoft surface duo'],
             ['"Xbox"', true, 'microsoft=microsoft xbox one'],
@@ -934,6 +950,7 @@ final class SecChUaModelTest extends TestCase
             // Fairphone
             ['"FP4"', true, 'fairphone=fairphone fp4'],
             ['"FP3"', true, 'fairphone=fairphone fp3'],
+            ['"Fairphone FP5"', true, 'fairphone=fairphone fp5'],
             // Oukitel
             ['"WP16"', true, 'oukitel=oukitel wp16'],
             ['"WP18"', true, 'oukitel=oukitel wp18'],
@@ -997,6 +1014,7 @@ final class SecChUaModelTest extends TestCase
             ['"HTC 10"', true, 'htc=htc 10'],
             ['"HTC 2PZF1"', true, 'htc=htc 2pzf1'],
             ['"HTC Desire 21 pro 5G"', true, 'htc=htc desire 21 pro 5g'],
+            ['"HTC 10 evo"', true, 'htc=htc 10 evo'],
             // teclast
             ['"P30S_EEA"', true, 'teclast=teclast p30s_eea'],
             ['"P25T_EEA"', true, 'teclast=teclast p25t_eea'],
@@ -1013,6 +1031,7 @@ final class SecChUaModelTest extends TestCase
             ['"Tab 70 WiFi"', true, 'blackview=blackview tab 70 wifi'],
             ['"BV9900Pro"', true, 'blackview=blackview bv9900 pro'],
             ['"A80Pro"', true, 'blackview=blackview a80 pro'],
+            ['"BV8900"', true, 'blackview=blackview bv8900'],
             // medion
             ['"B5532"', true, 'medion=medion b5532'],
             ['"LIFETAB_P733X"', true, 'medion=medion lifetab p733x'],
@@ -1121,6 +1140,8 @@ final class SecChUaModelTest extends TestCase
             ['"100110027"', true, 'onn=onn 100110027'],
             ['"100135923"', true, 'onn=onn 100135923'],
             ['"100092980"', true, 'onn=onn 100092980'],
+            // archos
+            ['"Archos 101c Platinum"', true, 'archos=archos 101c platinum'],
             // other
             ['"Model"', false, null],
             ['": "', false, null],
