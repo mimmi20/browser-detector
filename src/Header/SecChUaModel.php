@@ -783,7 +783,7 @@ final class SecChUaModel implements HeaderInterface
             'lenovo tb-8505f' => 'lenovo=lenovo tb-8505f',
             'lenovo tab 2 a10-70f' => 'lenovo=lenovo a10-70f',
             'lenovo tb-x306f' => 'lenovo=lenovo tb-x306f',
-            'lenovo tb-x703l' => 'lenovo=lenovo tb-x703l',
+            'lenovo yt-x703l' => 'lenovo=lenovo yt-x703l',
             'tb328fu' => 'lenovo=lenovo tb328fu',
             'lenovo p2a42' => 'lenovo=lenovo p2a42',
             // Nokia

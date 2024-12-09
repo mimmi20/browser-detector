@@ -713,7 +713,7 @@ final class SecChUaModelTest extends TestCase
             ['"SM-G996N"', true, 'samsung=samsung sm-g996n'],
             ['"SM-G965F/G965FXXUHFVG4"', true, 'samsung=samsung sm-g965f'],
             ['"SM-J500F"', true, 'samsung=samsung sm-j500f'],
-            ['"SM-G930F/G930FXXU8EVG3"', true, 'samsung=samsung sm-j500f'],
+            ['"SM-G930F/G930FXXU8EVG3"', true, 'samsung=samsung sm-g930f'],
             ['"SM-G996U1"', true, 'samsung=samsung sm-g996u1'],
             ['"SM-N975U1"', true, 'samsung=samsung sm-n975u1'],
             ['"SM-F946B"', true, 'samsung=samsung sm-f946b'],
@@ -868,7 +868,7 @@ final class SecChUaModelTest extends TestCase
             ['"Lenovo TB-8505F"', true, 'lenovo=lenovo tb-8505f'],
             ['"Lenovo TAB 2 A10-70F"', true, 'lenovo=lenovo a10-70f'],
             ['"Lenovo TB-X306F"', true, 'lenovo=lenovo tb-x306f'],
-            ['"Lenovo YT-X703L"', true, 'lenovo=lenovo tb-x703l'],
+            ['"Lenovo YT-X703L"', true, 'lenovo=lenovo yt-x703l'],
             ['"TB328FU"', true, 'lenovo=lenovo tb328fu'],
             ['"Lenovo P2a42"', true, 'lenovo=lenovo p2a42'],
             // Nokia
