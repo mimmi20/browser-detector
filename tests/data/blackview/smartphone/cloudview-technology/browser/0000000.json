@@ -5,19 +5,19 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "general Blackview device",
-      "marketingName": "general Blackview device",
+      "deviceName": "BV8900",
+      "marketingName": "BV8900",
       "manufacturer": "blackview",
       "brand": "blackview",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
-        "width": null,
-        "height": null,
+        "width": 2408,
+        "height": 1080,
         "touch": true,
-        "size": null
+        "size": 6.5
       },
-      "type": "mobile-device",
+      "type": "smartphone",
       "ismobile": true,
       "istv": false,
       "bits": null

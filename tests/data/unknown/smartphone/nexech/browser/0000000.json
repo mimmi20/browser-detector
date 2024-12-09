@@ -1,22 +1,22 @@
 [
   {
     "headers": {
-      "user-agent": "Mozilla/5.0 (Linux; Android 11; ZTE 8010) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.127 Mobile Safari/537.36 Instabridge/21.9.0",
-      "x-requested-with": "com.instabridge.android"
+      "user-agent": "Mozilla/5.0 (Linux; Android 11) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.172 Mobile Safari/537.36",
+      "x-requested-with": "com.aospstudio.tvsearch"
     },
     "device": {
       "architecture": null,
-      "deviceName": "8010",
-      "marketingName": "Blade V2020 Smart",
-      "manufacturer": "zte",
-      "brand": "zte",
+      "deviceName": "general Mobile Phone",
+      "marketingName": "general Mobile Phone",
+      "manufacturer": "unknown",
+      "brand": "unknown",
       "dualOrientation": null,
       "simCount": null,
       "display": {
-        "width": 1640,
-        "height": 720,
+        "width": null,
+        "height": null,
         "touch": true,
-        "size": 6.82
+        "size": null
       },
       "type": "smartphone",
       "ismobile": true,
@@ -30,15 +30,15 @@
       "manufacturer": "google"
     },
     "client": {
-      "name": null,
+      "name": "Neptune TV Browser",
       "version": null,
-      "manufacturer": null,
-      "type": null,
+      "manufacturer": "nexech",
+      "type": "browser",
       "isbot": false
     },
     "engine": {
       "name": "Blink",
-      "version": "85.0.4183.127",
+      "version": "116.0.5845.172",
       "manufacturer": "google"
     }
   }
