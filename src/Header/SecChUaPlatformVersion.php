@@ -15,6 +15,7 @@ namespace BrowserDetector\Header;
 
 use Override;
 
+use function mb_strtolower;
 use function trim;
 
 final class SecChUaPlatformVersion implements HeaderInterface
@@ -30,11 +31,7 @@ final class SecChUaPlatformVersion implements HeaderInterface
         return $value !== '';
     }
 
-    /**
-     * @throws void
-     *
-     * @phpcsSuppress SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter
-     */
+    /** @throws void */
     #[Override]
     public function getPlatformVersion(string | null $code = null): string | null
     {
@@ -42,6 +39,21 @@ final class SecChUaPlatformVersion implements HeaderInterface
 
         if ($value === '') {
             return null;
+        }
+
+        if (mb_strtolower($code ?? '') === 'windows') {
+            $windowsVersion = (float) $value;
+
+            if ($windowsVersion < 1) {
+                $windowsVersion     *= 10;
+                $minorVersionMapping = [1 => '7', 2 => '8', 3 => '8.1'];
+
+                $value = $minorVersionMapping[$windowsVersion] ?? $value;
+            } elseif ($windowsVersion > 0 && $windowsVersion < 11) {
+                $value = '10';
+            } elseif ($windowsVersion > 10) {
+                $value = '11';
+            }
         }
 
         return $value;

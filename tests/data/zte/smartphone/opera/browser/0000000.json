@@ -2819,8 +2819,8 @@
     },
     "device": {
       "architecture": null,
-      "deviceName": "Blade A3 (2019)",
-      "marketingName": "Blade A3 (2019)",
+      "deviceName": "Blade A3 (2019) RU",
+      "marketingName": "Blade A3 (2019) RU",
       "manufacturer": "zte",
       "brand": "zte",
       "dualOrientation": true,
@@ -3146,6 +3146,48 @@
     "engine": {
       "name": "Blink",
       "version": "122.0.6261.149",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; Blade A3 Lite) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Mobile Safari/537.36 OPR/77.0.4054.90"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Blade A3 Lite",
+      "marketingName": "Blade A3 Lite",
+      "manufacturer": "zte",
+      "brand": "zte",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 960,
+        "height": 480,
+        "touch": true,
+        "size": 5
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Opera Mobile",
+      "version": "77.0.4054.90",
+      "manufacturer": "opera",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "91.0.4472.101",
       "manufacturer": "google"
     }
   }
