@@ -23,6 +23,18 @@
     },
     "engine": null
   },
+  "opera mini beta": {
+    "name": "Opera Mini (Beta)",
+    "manufacturer": "opera",
+    "type": "transcoder",
+    "version": {
+      "factory": "\\BrowserDetector\\Version\\VersionBuilderFactory",
+      "search": [
+        "Opera Mini"
+      ]
+    },
+    "engine": null
+  },
   "opera mini ios": {
     "name": "Opera Mini for iOS",
     "manufacturer": "opera",

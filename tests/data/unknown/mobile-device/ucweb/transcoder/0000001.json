@@ -3908,48 +3908,6 @@
   },
   {
     "headers": {
-      "user-agent": "UCWEB/2.0 (MIDP-2.0; U; Adr 8.1.0; en-US; MI_PLAY) U2/1.0.0 UCBrowser/9.8.0.534 U2/1.0.0 Mobile"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Mobile device",
-      "marketingName": "general Mobile device",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "8.1.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "UC Browser",
-      "version": "9.8.0.534",
-      "manufacturer": "ucweb",
-      "type": "transcoder",
-      "isbot": false
-    },
-    "engine": {
-      "name": "U2",
-      "version": "1.0.0",
-      "manufacturer": "ucweb"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "480x800; XV6875.1; Window Mobile 6.5 Professional; (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.8.0.95"
     },
     "device": {
@@ -4190,6 +4148,48 @@
     "client": {
       "name": "UC Browser",
       "version": "10.4.2.659",
+      "manufacturer": "ucweb",
+      "type": "transcoder",
+      "isbot": false
+    },
+    "engine": {
+      "name": "U2",
+      "version": "1.0.0",
+      "manufacturer": "ucweb"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "UCWEB/2.0 (MIDP-2.0; U; Adr 8.1.0; ru; Luck) U2/1.0.0 UCBrowser/11.1.2.1113 U2/1.0.0 Mobile"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Mobile device",
+      "marketingName": "general Mobile device",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "mobile-device",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.1.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "UC Browser",
+      "version": "11.1.2.1113",
       "manufacturer": "ucweb",
       "type": "transcoder",
       "isbot": false

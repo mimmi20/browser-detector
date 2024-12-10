@@ -142,5 +142,37 @@
     },
     "type": "smartphone",
     "platform": "android"
+  },
+  "caterpillar s42": {
+    "deviceName": "S42",
+    "marketingName": "Cat S42",
+    "manufacturer": "caterpillar",
+    "brand": "caterpillar",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1440,
+      "height": 720,
+      "touch": true,
+      "size": 5.4
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "caterpillar s62 pro": {
+    "deviceName": "S62 Pro",
+    "marketingName": "Cat S62 Pro",
+    "manufacturer": "caterpillar",
+    "brand": "caterpillar",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 2160,
+      "height": 1080,
+      "touch": true,
+      "size": 5.7
+    },
+    "type": "smartphone",
+    "platform": "android"
   }
 }

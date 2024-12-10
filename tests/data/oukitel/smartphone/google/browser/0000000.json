@@ -3022,5 +3022,69 @@
       "version": "119.0.6045.163",
       "manufacturer": "google"
     }
+  },
+  {
+    "headers": {
+      "device-memory": "8",
+      "downlink": "0.7",
+      "dpr": "2",
+      "ect": "3g",
+      "rtt": "450",
+      "sec-ch-device-memory": "8",
+      "sec-ch-dpr": "2",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-prefers-reduced-transparency": "no-preference",
+      "sec-ch-ua": "\"Google Chrome\";v=\"119\", \"Chromium\";v=\"119\", \"Not?A_Brand\";v=\"24\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version": "\"119.0.6045.163\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"C33\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"13.0.0\"",
+      "sec-ch-viewport-height": "696",
+      "sec-ch-viewport-width": "360",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "360",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "C33",
+      "marketingName": "C33",
+      "manufacturer": "oukitel",
+      "brand": "oukitel",
+      "dualOrientation": true,
+      "simCount": 2,
+      "display": {
+        "width": 1600,
+        "height": 720,
+        "touch": true,
+        "size": 6.8
+      },
+      "type": "smartphone",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "119.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "119.0.0.0",
+      "manufacturer": "google"
+    }
   }
 ]

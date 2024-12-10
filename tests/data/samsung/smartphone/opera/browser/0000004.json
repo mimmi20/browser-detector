@@ -132,7 +132,6 @@
       "dpr": "2.625",
       "ect": "4g",
       "rtt": "150",
-      "save-data": "on",
       "sec-ch-device-memory": "8",
       "sec-ch-dpr": "2.625",
       "sec-ch-prefers-color-scheme": "light",
@@ -145,10 +144,6 @@
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua-platform-version": "\"12.0.0\"",
       "sec-ch-viewport-width": "980",
-      "sec-fetch-dest": "document",
-      "sec-fetch-mode": "navigate",
-      "sec-fetch-site": "same-origin",
-      "sec-fetch-user": "?1",
       "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.134 Safari/537.36 OPR/88.0.4412.53",
       "viewport-width": "980"
     },
@@ -289,9 +284,6 @@
       "sec-ch-ua-model": "\"SM-E700F\"",
       "sec-ch-ua-platform": "\"Android\"",
       "sec-ch-ua-platform-version": "\"5.1.1\"",
-      "sec-fetch-dest": "empty",
-      "sec-fetch-mode": "cors",
-      "sec-fetch-site": "same-origin",
       "user-agent": "Mozilla/5.0 (Linux; Android 5.1.1; SM-E700F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.85 Mobile Safari/537.36 OPR/66.3.3445.67625",
       "viewport-width": "360",
       "x-requested-with": "XMLHttpRequest"
@@ -336,9 +328,6 @@
   },
   {
     "headers": {
-      "sec-fetch-dest": "document",
-      "sec-fetch-mode": "navigate",
-      "sec-fetch-site": "cross-site",
       "user-agent": "Mozilla/5.0 (Linux; Android 11; SM-A207F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36 OPR/62.3.3146.57763"
     },
     "device": {
@@ -862,10 +851,6 @@
       "sec-ch-ua-platform-version": "\"10.0.0\"",
       "sec-ch-viewport-height": "1920",
       "sec-ch-viewport-width": "980",
-      "sec-fetch-dest": "document",
-      "sec-fetch-mode": "navigate",
-      "sec-fetch-site": "cross-site",
-      "sec-fetch-user": "?1",
       "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.5481.192 Safari/537.36 OPR/96.0.4693.50",
       "viewport-width": "980"
     },
@@ -909,10 +894,6 @@
   },
   {
     "headers": {
-      "sec-fetch-dest": "document",
-      "sec-fetch-mode": "navigate",
-      "sec-fetch-site": "none",
-      "sec-fetch-user": "?1",
       "user-agent": "Mozilla/5.0 (Linux; U; Android 12; en-us; SM-A125F Build/JOP24G) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/68.0.3440.91 Mobile Safari/537.36",
       "x-requested-with": "com.opera.browser"
     },
@@ -956,10 +937,6 @@
   },
   {
     "headers": {
-      "sec-fetch-dest": "document",
-      "sec-fetch-mode": "navigate",
-      "sec-fetch-site": "cross-site",
-      "sec-fetch-user": "?1",
       "user-agent": "Mozilla/5.0 (Linux; Android 13; SM-S901B Build/TP1A.220624.014) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.5481.154 Mobile Safari/537.36 OPX/1.9",
       "x-requested-with": "com.opera.gx"
     },
@@ -3261,10 +3238,6 @@
       "sec-ch-ua-platform-version": "\"14\"",
       "sec-ch-viewport-height": "1718",
       "sec-ch-viewport-width": "980",
-      "sec-fetch-dest": "document",
-      "sec-fetch-mode": "navigate",
-      "sec-fetch-site": "same-origin",
-      "sec-fetch-user": "?1",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Mobile Safari/537.36 OPR/83.0.0.0",
       "viewport-width": "980"
     },
@@ -3312,9 +3285,7 @@
       "downlink": "6.35",
       "dpr": "3.375",
       "ect": "4g",
-      "priority": "u=0, i",
       "rtt": "100",
-      "save-data": "on",
       "sec-ch-device-memory": "4",
       "sec-ch-dpr": "3.375",
       "sec-ch-prefers-color-scheme": "dark",
@@ -3330,13 +3301,8 @@
       "sec-ch-ua-platform-version": "\"14\"",
       "sec-ch-viewport-height": "1810",
       "sec-ch-viewport-width": "980",
-      "sec-fetch-dest": "document",
-      "sec-fetch-mode": "navigate",
-      "sec-fetch-site": "same-origin",
-      "sec-fetch-user": "?1",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Mobile Safari/537.36 OPR/83.0.0.0",
-      "viewport-width": "980",
-      "x-enrichmentstatus": "unsupported"
+      "viewport-width": "980"
     },
     "device": {
       "architecture": null,

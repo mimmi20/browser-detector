@@ -4,10 +4,6 @@
       "user-agent": "Mozilla/5.0 (Linux; Android 10; HarmonyOS; GLK-AL00; HMSCore 6.2.0.302) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.51 Mobile Safari/537.36",
       "client-ip": "89.245.74.37",
       "x-real-ip": "89.245.74.37",
-      "sec-fetch-site": "cross-site",
-      "sec-fetch-mode": "navigate",
-      "sec-fetch-user": "?1",
-      "sec-fetch-dest": "document",
       "sec-ch-ua": "\"Google Chrome\";v=\"98\", \"Chromium\";v=\"98\", \" Not A;Brand\";v=\"99\"",
       "sec-ch-ua-mobile": "?0",
       "sec-ch-ua-platform": "\"Windows\""
@@ -1021,9 +1017,6 @@
       "sec-ch-ua": "\"Chromium\";v=\"99\"",
       "sec-ch-ua-mobile": "?0",
       "sec-ch-ua-platform": "\"Linux\"",
-      "sec-fetch-dest": "image",
-      "sec-fetch-mode": "no-cors",
-      "sec-fetch-site": "same-origin",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; MAR-LX1A) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Mobile Safari/537.36"
     },
     "device": {
@@ -1069,9 +1062,6 @@
       "sec-ch-ua": "\"Chromium\";v=\"99\"",
       "sec-ch-ua-mobile": "?0",
       "sec-ch-ua-platform": "\"Linux\"",
-      "sec-fetch-dest": "empty",
-      "sec-fetch-mode": "cors",
-      "sec-fetch-site": "same-origin",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; VOG-L29) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Mobile Safari/537.36",
       "x-requested-with": "XMLHttpRequest"
     },
@@ -3360,10 +3350,6 @@
       "sec-ch-ua-platform-version": "\"13.0.0\"",
       "sec-ch-viewport-height": "1884",
       "sec-ch-viewport-width": "980",
-      "sec-fetch-dest": "document",
-      "sec-fetch-mode": "navigate",
-      "sec-fetch-site": "same-origin",
-      "sec-fetch-user": "?1",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36",
       "viewport-width": "980"
     },
@@ -3499,8 +3485,8 @@
       "marketingName": "P Smart",
       "manufacturer": "huawei",
       "brand": "huawei",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 2160,
         "height": 1080,
@@ -3720,9 +3706,6 @@
       "sec-ch-ua-platform-version": "\"13.0.0\"",
       "sec-ch-viewport-height": "724",
       "sec-ch-viewport-width": "367",
-      "sec-fetch-dest": "empty",
-      "sec-fetch-mode": "cors",
-      "sec-fetch-site": "same-origin",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36",
       "viewport-width": "367",
       "x-requested-with": "XMLHttpRequest"

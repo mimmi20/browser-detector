@@ -2,11 +2,7 @@
   {
     "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 10; 8091_EEA Build/PPR1.180610.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.101 Safari/537.36",
-      "x-requested-with": "com.google.android.apps.searchlite",
-      "sec-fetch-site": "none",
-      "sec-fetch-mode": "navigate",
-      "sec-fetch-user": "?1",
-      "sec-fetch-dest": "document"
+      "x-requested-with": "com.google.android.apps.searchlite"
     },
     "device": {
       "architecture": null,
@@ -49,11 +45,7 @@
   {
     "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 9; 5001D_EEA Build/PPR1.180610.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.58 Mobile Safari/537.36",
-      "x-requested-with": "com.google.android.apps.searchlite",
-      "sec-fetch-site": "none",
-      "sec-fetch-mode": "navigate",
-      "sec-fetch-user": "?1",
-      "sec-fetch-dest": "document"
+      "x-requested-with": "com.google.android.apps.searchlite"
     },
     "device": {
       "architecture": null,
@@ -96,11 +88,7 @@
   {
     "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 10; 8091_EEA Build/PPR1.180610.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.58 Safari/537.36",
-      "x-requested-with": "com.google.android.apps.searchlite",
-      "sec-fetch-site": "none",
-      "sec-fetch-mode": "navigate",
-      "sec-fetch-user": "?1",
-      "sec-fetch-dest": "document"
+      "x-requested-with": "com.google.android.apps.searchlite"
     },
     "device": {
       "architecture": null,
@@ -185,10 +173,6 @@
   },
   {
     "headers": {
-      "sec-fetch-dest": "document",
-      "sec-fetch-mode": "navigate",
-      "sec-fetch-site": "none",
-      "sec-fetch-user": "?1",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; 8091_EEA Build/PPR1.180610.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.69 Safari/537.36",
       "x-requested-with": "com.google.android.apps.searchlite"
     },
@@ -232,10 +216,6 @@
   },
   {
     "headers": {
-      "sec-fetch-dest": "document",
-      "sec-fetch-mode": "navigate",
-      "sec-fetch-site": "same-origin",
-      "sec-fetch-user": "?1",
       "user-agent": "Mozilla/5.0 (Linux; Android 9; 5001D_EEA Build/PPR1.180610.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.5304.91 Mobile Safari/537.36",
       "x-requested-with": "com.google.android.apps.searchlite"
     },
@@ -279,104 +259,6 @@
   },
   {
     "headers": {
-      "sec-fetch-dest": "document",
-      "sec-fetch-mode": "navigate",
-      "sec-fetch-site": "none",
-      "sec-fetch-user": "?1",
-      "user-agent": "Mozilla/5.0 (Linux; Android 9; 5001D_EEA Build/PPR1.180610.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.5304.91 Mobile Safari/537.36",
-      "x-requested-with": "com.google.android.apps.searchlite"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Alcatel device",
-      "marketingName": "general Alcatel device",
-      "manufacturer": "tcl",
-      "brand": "alcatel",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "9.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Google Go",
-      "version": null,
-      "manufacturer": "google",
-      "type": "application",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "107.0.5304.91",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "sec-fetch-dest": "document",
-      "sec-fetch-mode": "navigate",
-      "sec-fetch-site": "same-origin",
-      "sec-fetch-user": "?1",
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; 5002H_EEA Build/QKQ1.200623.002) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.5414.117 Mobile Safari/537.36",
-      "x-requested-with": "com.google.android.apps.searchlite"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Alcatel device",
-      "marketingName": "general Alcatel device",
-      "manufacturer": "tcl",
-      "brand": "alcatel",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "mobile-device",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Google Go",
-      "version": null,
-      "manufacturer": "google",
-      "type": "application",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "109.0.5414.117",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "sec-fetch-dest": "document",
-      "sec-fetch-mode": "navigate",
-      "sec-fetch-site": "none",
-      "sec-fetch-user": "?1",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; 5002H_EEA Build/QKQ1.200623.002) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.5414.117 Mobile Safari/537.36",
       "x-requested-with": "com.google.android.apps.searchlite"
     },
@@ -431,10 +313,6 @@
       "sec-ch-prefers-reduced-motion": "no-preference",
       "sec-ch-viewport-height": "1372",
       "sec-ch-viewport-width": "980",
-      "sec-fetch-dest": "document",
-      "sec-fetch-mode": "navigate",
-      "sec-fetch-site": "same-origin",
-      "sec-fetch-user": "?1",
       "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; 8082 Build/O11019) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.5563.57 Safari/537.36",
       "viewport-width": "980",
       "x-requested-with": "com.google.android.apps.searchlite"
@@ -479,10 +357,6 @@
   },
   {
     "headers": {
-      "sec-fetch-dest": "document",
-      "sec-fetch-mode": "navigate",
-      "sec-fetch-site": "none",
-      "sec-fetch-user": "?1",
       "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; 8082 Build/O11019) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.5563.57 Safari/537.36",
       "x-requested-with": "com.google.android.apps.searchlite"
     },

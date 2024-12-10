@@ -147,10 +147,6 @@
       "sec-ch-ua-platform-version": "\"11.0.0\"",
       "sec-ch-viewport-height": "474",
       "sec-ch-viewport-width": "980",
-      "sec-fetch-dest": "document",
-      "sec-fetch-mode": "navigate",
-      "sec-fetch-site": "same-origin",
-      "sec-fetch-user": "?1",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
       "viewport-width": "980",
       "x-requested-with": "com.duckduckgo.mobile.android"
@@ -215,10 +211,6 @@
       "sec-ch-ua-platform-version": "\"13.0.0\"",
       "sec-ch-viewport-height": "1840",
       "sec-ch-viewport-width": "980",
-      "sec-fetch-dest": "document",
-      "sec-fetch-mode": "navigate",
-      "sec-fetch-site": "same-origin",
-      "sec-fetch-user": "?1",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Mobile Safari/537.36",
       "viewport-width": "980",
       "x-requested-with": "com.duckduckgo.mobile.android"
@@ -263,74 +255,6 @@
   },
   {
     "headers": {
-      "device-memory": "2",
-      "downlink": "0",
-      "dpr": "1.725000023841858",
-      "ect": "4g",
-      "rtt": "0",
-      "sec-ch-device-memory": "2",
-      "sec-ch-dpr": "1.725000023841858",
-      "sec-ch-prefers-color-scheme": "light",
-      "sec-ch-prefers-reduced-motion": "no-preference",
-      "sec-ch-prefers-reduced-transparency": "no-preference",
-      "sec-ch-ua": "\"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"126\", \"DuckDuckGo\";v=\"126\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-full-version": "\"126.0.6478.186\"",
-      "sec-ch-ua-mobile": "?0",
-      "sec-ch-ua-model": "\"TB328FU\"",
-      "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua-platform-version": "\"12.0.0\"",
-      "sec-ch-viewport-height": "497",
-      "sec-ch-viewport-width": "980",
-      "sec-fetch-dest": "document",
-      "sec-fetch-mode": "navigate",
-      "sec-fetch-site": "same-origin",
-      "sec-fetch-user": "?1",
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
-      "viewport-width": "980",
-      "x-requested-with": "com.duckduckgo.mobile.android"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": null,
-      "brand": null,
-      "dualOrientation": false,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": null,
-        "size": null
-      },
-      "type": null,
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "12.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "DuckDuckGo Privacy Browser",
-      "version": null,
-      "manufacturer": "duck-duck-go",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "126.0.0.0",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
       "device-memory": "4",
       "downlink": "0",
       "dpr": "2.0375001430511475",
@@ -351,10 +275,6 @@
       "sec-ch-ua-platform-version": "\"13.0.0\"",
       "sec-ch-viewport-height": "1421",
       "sec-ch-viewport-width": "980",
-      "sec-fetch-dest": "document",
-      "sec-fetch-mode": "navigate",
-      "sec-fetch-site": "same-origin",
-      "sec-fetch-user": "?1",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Mobile Safari/537.36",
       "viewport-width": "980",
       "x-requested-with": "com.duckduckgo.mobile.android"
@@ -399,74 +319,6 @@
   },
   {
     "headers": {
-      "device-memory": "8",
-      "downlink": "0",
-      "dpr": "3.075000047683716",
-      "ect": "4g",
-      "rtt": "0",
-      "sec-ch-device-memory": "8",
-      "sec-ch-dpr": "3.075000047683716",
-      "sec-ch-prefers-color-scheme": "light",
-      "sec-ch-prefers-reduced-motion": "no-preference",
-      "sec-ch-prefers-reduced-transparency": "no-preference",
-      "sec-ch-ua": "\"DuckDuckGo\";v=\"123\", \"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"123\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-full-version": "\"123.0.6312.99\"",
-      "sec-ch-ua-mobile": "?1",
-      "sec-ch-ua-model": "\"moto g84 5G\"",
-      "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua-platform-version": "\"14.0.0\"",
-      "sec-ch-viewport-height": "1787",
-      "sec-ch-viewport-width": "980",
-      "sec-fetch-dest": "document",
-      "sec-fetch-mode": "navigate",
-      "sec-fetch-site": "same-origin",
-      "sec-fetch-user": "?1",
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Mobile Safari/537.36",
-      "viewport-width": "980",
-      "x-requested-with": "com.duckduckgo.mobile.android"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": null,
-      "brand": null,
-      "dualOrientation": false,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": null,
-        "size": null
-      },
-      "type": null,
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "14.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "DuckDuckGo Privacy Browser",
-      "version": null,
-      "manufacturer": "duck-duck-go",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "123.0.0.0",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
       "device-memory": "4",
       "downlink": "0",
       "dpr": "1.350000023841858",
@@ -487,10 +339,6 @@
       "sec-ch-ua-platform-version": "\"13.0.0\"",
       "sec-ch-viewport-height": "1355",
       "sec-ch-viewport-width": "980",
-      "sec-fetch-dest": "document",
-      "sec-fetch-mode": "navigate",
-      "sec-fetch-site": "same-origin",
-      "sec-fetch-user": "?1",
       "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Mobile Safari/537.36",
       "viewport-width": "980",
       "x-requested-with": "com.duckduckgo.mobile.android"
