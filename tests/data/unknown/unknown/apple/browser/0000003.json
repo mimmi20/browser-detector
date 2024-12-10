@@ -1303,8 +1303,217 @@
   },
   {
     "headers": {
-      "baggage": "sentry-trace_id=c7f1d3d1513c4a908c8da515bcf1e73e,sentry-environment=prod,sentry-release=1d3a47a,sentry-public_key=c508abd38d9e4d9eacafd16da4925de2",
-      "user-agent": "VIZIO V655-H9 ViziOS/1.0.75.134 WatchFree/24.07.25 FancyPlayer/1.1.30-qa"
+      "user-agent": "NetworkingExtension/8619.1.26.30.7 Network/4277.2.6 iOS/18.0.1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "Mobile Safari UIWebView",
+      "version": null,
+      "manufacturer": "apple",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "NetworkingExtension/8619.2.3.1 Network/4277.40.77.0.1 iOS/18.1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "Mobile Safari UIWebView",
+      "version": null,
+      "manufacturer": "apple",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "NetworkingExtension/8619.2.5.10.3 Network/4277.40.90 iOS/18.1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "Mobile Safari UIWebView",
+      "version": null,
+      "manufacturer": "apple",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "NetworkingExtension/8619.2.8.10.3 Network/4277.42.1 iOS/18.1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "Mobile Safari UIWebView",
+      "version": null,
+      "manufacturer": "apple",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "NetworkingExtension/8619.2.8.10.7 Network/4277.42.2 iOS/18.1"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "Mobile Safari UIWebView",
+      "version": null,
+      "manufacturer": "apple",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "WebKit",
+      "version": null,
+      "manufacturer": "apple"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "VIZIO D40f-J09 ViziOS/1.4.507.835.1 WatchFree/24.07.25 FancyPlayer/1.1.26-qa"
     },
     "device": {
       "architecture": null,
@@ -1328,7 +1537,7 @@
     "os": {
       "name": "ViziOS",
       "marketingName": "ViziOS",
-      "version": "1.0.75.134",
+      "version": "1.4.507.835.1",
       "manufacturer": "vizio"
     },
     "client": {
@@ -1346,8 +1555,7 @@
   },
   {
     "headers": {
-      "baggage": "sentry-trace_id=41937bb5f6114054b4928a41d850a3f3,sentry-environment=prod,sentry-release=1d3a47a,sentry-public_key=c508abd38d9e4d9eacafd16da4925de2",
-      "user-agent": "VIZIO V756x-J03 ViziOS/1.0.69.130 WatchFree/24.07.25 FancyPlayer/1.1.30-qa"
+      "user-agent": "VIZIO V555-J01 ViziOS/1.0.69.130 WatchFree/24.08.28 FancyPlayer/1.1.30-qa"
     },
     "device": {
       "architecture": null,
@@ -1389,51 +1597,7 @@
   },
   {
     "headers": {
-      "baggage": "sentry-trace_id=8e4e5e75a7734d24be968a636c3da885,sentry-environment=prod,sentry-release=1d3a47a,sentry-public_key=c508abd38d9e4d9eacafd16da4925de2",
-      "user-agent": "VIZIO V705-J03 ViziOS/1.4.519.868.1 WatchFree/24.07.25 FancyPlayer/1.1.30-qa"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ViziOS",
-      "marketingName": "ViziOS",
-      "version": "1.4.519.868.1",
-      "manufacturer": "vizio"
-    },
-    "client": {
-      "name": "Mobile Safari UIWebView",
-      "version": null,
-      "manufacturer": "apple",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "baggage": "sentry-trace_id=8cbb2664a886460faf9589d665fb17ab,sentry-environment=prod,sentry-release=1d3a47a,sentry-public_key=c508abd38d9e4d9eacafd16da4925de2",
-      "user-agent": "VIZIO V555-J01 ViziOS/1.0.67.124 WatchFree/24.07.25 FancyPlayer/1.1.30-qa"
+      "user-agent": "VIZIO V605-H3 ViziOS/1.0.67.124 WatchFree/24.07.25 FancyPlayer/1.1.30-qa"
     },
     "device": {
       "architecture": null,
@@ -1475,8 +1639,7 @@
   },
   {
     "headers": {
-      "baggage": "sentry-trace_id=1e27a40b2987414495753434c30e1072,sentry-environment=prod,sentry-release=1d3a47a,sentry-public_key=c508abd38d9e4d9eacafd16da4925de2",
-      "user-agent": "VIZIO M65Q6-L4 ViziOS/1.4.519.868.1 WatchFree/24.07.25 FancyPlayer/1.1.30-qa"
+      "user-agent": "VIZIO V755M-K04 ViziOS/1.4.519.868.1 WatchFree/24.07.25 FancyPlayer/1.1.30-qa"
     },
     "device": {
       "architecture": null,
@@ -1518,266 +1681,7 @@
   },
   {
     "headers": {
-      "baggage": "sentry-trace_id=11bc9138dc7749ba833deace7dec9bd3,sentry-environment=prod,sentry-release=1d3a47a,sentry-public_key=c508abd38d9e4d9eacafd16da4925de2",
-      "user-agent": "VIZIO V555-J01 ViziOS/1.4.512.847.1 WatchFree/24.07.25 FancyPlayer/1.1.30-qa"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ViziOS",
-      "marketingName": "ViziOS",
-      "version": "1.4.512.847.1",
-      "manufacturer": "vizio"
-    },
-    "client": {
-      "name": "Mobile Safari UIWebView",
-      "version": null,
-      "manufacturer": "apple",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "baggage": "sentry-trace_id=75ac30e5e14847bf892fda4571564e33,sentry-environment=prod,sentry-release=1d3a47a,sentry-public_key=c508abd38d9e4d9eacafd16da4925de2",
-      "user-agent": "VIZIO V585-H1 ViziOS/1.0.67.124 WatchFree/24.07.25 FancyPlayer/1.1.30-qa"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ViziOS",
-      "marketingName": "ViziOS",
-      "version": "1.0.67.124",
-      "manufacturer": "vizio"
-    },
-    "client": {
-      "name": "Mobile Safari UIWebView",
-      "version": null,
-      "manufacturer": "apple",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "baggage": "sentry-trace_id=b12e7aacc137471da7fb45797f9f01a2,sentry-environment=prod,sentry-release=1d3a47a,sentry-public_key=c508abd38d9e4d9eacafd16da4925de2",
-      "user-agent": "VIZIO V585-H1 ViziOS/1.0.67.124 WatchFree/24.07.25 FancyPlayer/1.1.30-qa"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ViziOS",
-      "marketingName": "ViziOS",
-      "version": "1.0.67.124",
-      "manufacturer": "vizio"
-    },
-    "client": {
-      "name": "Mobile Safari UIWebView",
-      "version": null,
-      "manufacturer": "apple",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "baggage": "sentry-trace_id=1b047aa5782f4259bd5363013fa12953,sentry-environment=prod,sentry-release=1d3a47a,sentry-public_key=c508abd38d9e4d9eacafd16da4925de2",
-      "user-agent": "VIZIO V435-J01 ViziOS/1.3.329.403.0 WatchFree/24.07.25 FancyPlayer/1.1.30-qa"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ViziOS",
-      "marketingName": "ViziOS",
-      "version": "1.3.329.403.0",
-      "manufacturer": "vizio"
-    },
-    "client": {
-      "name": "Mobile Safari UIWebView",
-      "version": null,
-      "manufacturer": "apple",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "baggage": "sentry-trace_id=a689fe26de004afb82d5a3a322308082,sentry-environment=prod,sentry-release=1d3a47a,sentry-public_key=c508abd38d9e4d9eacafd16da4925de2",
-      "user-agent": "VIZIO V555-H1 ViziOS/1.0.67.124 WatchFree/24.07.25 FancyPlayer/1.1.30-qa"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ViziOS",
-      "marketingName": "ViziOS",
-      "version": "1.0.67.124",
-      "manufacturer": "vizio"
-    },
-    "client": {
-      "name": "Mobile Safari UIWebView",
-      "version": null,
-      "manufacturer": "apple",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "baggage": "sentry-trace_id=ee425c2837c5418fa95051dff091cb72,sentry-environment=prod,sentry-release=1d3a47a,sentry-public_key=c508abd38d9e4d9eacafd16da4925de2",
-      "user-agent": "VIZIO V555-H1 ViziOS/1.0.67.124 WatchFree/24.07.25 FancyPlayer/1.1.30-qa"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ViziOS",
-      "marketingName": "ViziOS",
-      "version": "1.0.67.124",
-      "manufacturer": "vizio"
-    },
-    "client": {
-      "name": "Mobile Safari UIWebView",
-      "version": null,
-      "manufacturer": "apple",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "baggage": "sentry-trace_id=0988c290059c480dad1428ed82cfaf4c,sentry-environment=prod,sentry-release=1d3a47a,sentry-public_key=c508abd38d9e4d9eacafd16da4925de2",
-      "user-agent": "VIZIO M65Q6M-K04 ViziOS/1.4.519.868.1 WatchFree/24.07.25 FancyPlayer/1.1.30-qa"
+      "user-agent": "VIZIO V755M-K04 ViziOS/1.4.519.868.1 WatchFree/24.08.28 FancyPlayer/1.1.30-qa"
     },
     "device": {
       "architecture": null,
@@ -1819,8 +1723,7 @@
   },
   {
     "headers": {
-      "baggage": "sentry-trace_id=a9c1492bb5e64504b65a36254d495037,sentry-environment=prod,sentry-release=1d3a47a,sentry-public_key=c508abd38d9e4d9eacafd16da4925de2",
-      "user-agent": "VIZIO D32h-J09 ViziOS/1.4.519.868.1 WatchFree/24.07.25 FancyPlayer/1.1.30-qa"
+      "user-agent": "NetworkingExtension/8620.1.14.10.4 Network/4277.60.249 iOS/18.2"
     },
     "device": {
       "architecture": null,
@@ -1842,10 +1745,10 @@
       "bits": null
     },
     "os": {
-      "name": "ViziOS",
-      "marketingName": "ViziOS",
-      "version": "1.4.519.868.1",
-      "manufacturer": "vizio"
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
     },
     "client": {
       "name": "Mobile Safari UIWebView",
@@ -1862,8 +1765,7 @@
   },
   {
     "headers": {
-      "baggage": "sentry-trace_id=1244718d9ae14de6af111dc307749af4,sentry-environment=prod,sentry-release=1d3a47a,sentry-public_key=c508abd38d9e4d9eacafd16da4925de2",
-      "user-agent": "VIZIO V505M-K09 ViziOS/1.4.512.847.1 WatchFree/24.07.25 FancyPlayer/1.1.30-qa"
+      "user-agent": "NetworkingExtension/8620.1.15.10.3 Network/4277.60.253.0.2 iOS/18.2"
     },
     "device": {
       "architecture": null,
@@ -1885,10 +1787,10 @@
       "bits": null
     },
     "os": {
-      "name": "ViziOS",
-      "marketingName": "ViziOS",
-      "version": "1.4.512.847.1",
-      "manufacturer": "vizio"
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
     },
     "client": {
       "name": "Mobile Safari UIWebView",
@@ -1905,8 +1807,7 @@
   },
   {
     "headers": {
-      "baggage": "sentry-trace_id=9341e711ccfa4cf0bf3167cae078a4c7,sentry-environment=prod,sentry-release=1d3a47a,sentry-public_key=c508abd38d9e4d9eacafd16da4925de2",
-      "user-agent": "VIZIO M55Q6-L4 ViziOS/1.4.519.868.1 WatchFree/24.07.25 FancyPlayer/1.1.30-qa"
+      "user-agent": "NetworkingExtension/8619.2.8.10.9 Network/4277.42.2 iOS/18.1.1"
     },
     "device": {
       "architecture": null,
@@ -1928,10 +1829,10 @@
       "bits": null
     },
     "os": {
-      "name": "ViziOS",
-      "marketingName": "ViziOS",
-      "version": "1.4.519.868.1",
-      "manufacturer": "vizio"
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
     },
     "client": {
       "name": "Mobile Safari UIWebView",
@@ -1948,8 +1849,7 @@
   },
   {
     "headers": {
-      "baggage": "sentry-trace_id=7b37fad13048444b82e78d7da2e36c8e,sentry-environment=prod,sentry-release=1d3a47a,sentry-public_key=c508abd38d9e4d9eacafd16da4925de2",
-      "user-agent": "VIZIO M70Q6-J03 ViziOS/1.0.67.124 WatchFree/24.07.25 FancyPlayer/1.1.30-qa"
+      "user-agent": "NetworkingExtension/8620.1.16.10.8 Network/4277.60.255 iOS/18.2"
     },
     "device": {
       "architecture": null,
@@ -1971,2289 +1871,10 @@
       "bits": null
     },
     "os": {
-      "name": "ViziOS",
-      "marketingName": "ViziOS",
-      "version": "1.0.67.124",
-      "manufacturer": "vizio"
-    },
-    "client": {
-      "name": "Mobile Safari UIWebView",
-      "version": null,
-      "manufacturer": "apple",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "baggage": "sentry-trace_id=2c2ed05f817d4bea9c9ac4ff44c552a4,sentry-environment=prod,sentry-release=1d3a47a,sentry-public_key=c508abd38d9e4d9eacafd16da4925de2",
-      "user-agent": "VIZIO V655-J09 ViziOS/1.4.519.868.1 WatchFree/24.07.25 FancyPlayer/1.1.30-qa"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
+      "name": null,
       "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ViziOS",
-      "marketingName": "ViziOS",
-      "version": "1.4.519.868.1",
-      "manufacturer": "vizio"
-    },
-    "client": {
-      "name": "Mobile Safari UIWebView",
       "version": null,
-      "manufacturer": "apple",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "baggage": "sentry-trace_id=e4e367e0f3814411932b3c5ba8453659,sentry-environment=prod,sentry-release=1d3a47a,sentry-public_key=c508abd38d9e4d9eacafd16da4925de2",
-      "user-agent": "VIZIO V655-H9 ViziOS/1.0.75.134 WatchFree/24.07.25 FancyPlayer/1.1.30-qa"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ViziOS",
-      "marketingName": "ViziOS",
-      "version": "1.0.75.134",
-      "manufacturer": "vizio"
-    },
-    "client": {
-      "name": "Mobile Safari UIWebView",
-      "version": null,
-      "manufacturer": "apple",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "baggage": "sentry-trace_id=c570a42928dd4df6842c81f956727ae2,sentry-environment=prod,sentry-release=1d3a47a,sentry-public_key=c508abd38d9e4d9eacafd16da4925de2",
-      "user-agent": "VIZIO D32fM-K01 ViziOS/1.4.519.868.1 WatchFree/24.07.25 FancyPlayer/1.1.30-qa"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ViziOS",
-      "marketingName": "ViziOS",
-      "version": "1.4.519.868.1",
-      "manufacturer": "vizio"
-    },
-    "client": {
-      "name": "Mobile Safari UIWebView",
-      "version": null,
-      "manufacturer": "apple",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "baggage": "sentry-trace_id=c14fd196f88a4d8ba7de869194d6bfdd,sentry-environment=prod,sentry-release=1d3a47a,sentry-public_key=c508abd38d9e4d9eacafd16da4925de2",
-      "user-agent": "VIZIO D32h-J09 ViziOS/1.0.92.150 WatchFree/24.07.25 FancyPlayer/1.1.30-qa"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ViziOS",
-      "marketingName": "ViziOS",
-      "version": "1.0.92.150",
-      "manufacturer": "vizio"
-    },
-    "client": {
-      "name": "Mobile Safari UIWebView",
-      "version": null,
-      "manufacturer": "apple",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "baggage": "sentry-trace_id=ddb186015ef0435d9d911b73a2349238,sentry-environment=prod,sentry-release=1d3a47a,sentry-public_key=c508abd38d9e4d9eacafd16da4925de2",
-      "user-agent": "VIZIO D43f-J04 ViziOS/1.0.67.121 WatchFree/24.07.25 FancyPlayer/1.1.30-qa"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ViziOS",
-      "marketingName": "ViziOS",
-      "version": "1.0.67.121",
-      "manufacturer": "vizio"
-    },
-    "client": {
-      "name": "Mobile Safari UIWebView",
-      "version": null,
-      "manufacturer": "apple",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "baggage": "sentry-trace_id=5555d34604424b65a0cfa17f7e34dc5a,sentry-environment=prod,sentry-release=1d3a47a,sentry-public_key=c508abd38d9e4d9eacafd16da4925de2",
-      "user-agent": "VIZIO V505-J09 ViziOS/1.4.519.868.1 WatchFree/24.07.25 FancyPlayer/1.1.30-qa"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ViziOS",
-      "marketingName": "ViziOS",
-      "version": "1.4.519.868.1",
-      "manufacturer": "vizio"
-    },
-    "client": {
-      "name": "Mobile Safari UIWebView",
-      "version": null,
-      "manufacturer": "apple",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "baggage": "sentry-trace_id=558118ab1f3e4f14a378da284bf0d566,sentry-environment=prod,sentry-release=1d3a47a,sentry-public_key=c508abd38d9e4d9eacafd16da4925de2",
-      "user-agent": "VIZIO V705x-J03 ViziOS/1.0.69.130 WatchFree/24.07.25 FancyPlayer/1.1.30-qa"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ViziOS",
-      "marketingName": "ViziOS",
-      "version": "1.0.69.130",
-      "manufacturer": "vizio"
-    },
-    "client": {
-      "name": "Mobile Safari UIWebView",
-      "version": null,
-      "manufacturer": "apple",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "baggage": "sentry-trace_id=3fdb859ef7e3434faf05581525f61103,sentry-environment=prod,sentry-release=1d3a47a,sentry-public_key=c508abd38d9e4d9eacafd16da4925de2",
-      "user-agent": "VIZIO M506x-H9 ViziOS/1.4.519.868.1 WatchFree/24.07.25 FancyPlayer/1.1.30-qa"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ViziOS",
-      "marketingName": "ViziOS",
-      "version": "1.4.519.868.1",
-      "manufacturer": "vizio"
-    },
-    "client": {
-      "name": "Mobile Safari UIWebView",
-      "version": null,
-      "manufacturer": "apple",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "baggage": "sentry-trace_id=b5e522c17e3d4004a49e5a6be64f0cd7,sentry-environment=prod,sentry-release=1d3a47a,sentry-public_key=c508abd38d9e4d9eacafd16da4925de2",
-      "user-agent": "VIZIO V435-H1 ViziOS/1.4.519.868.1 WatchFree/24.07.25 FancyPlayer/1.1.30-qa"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ViziOS",
-      "marketingName": "ViziOS",
-      "version": "1.4.519.868.1",
-      "manufacturer": "vizio"
-    },
-    "client": {
-      "name": "Mobile Safari UIWebView",
-      "version": null,
-      "manufacturer": "apple",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "baggage": "sentry-trace_id=9fc8f280506c4474b0a703a66c9d868a,sentry-environment=prod,sentry-release=55ed40a,sentry-public_key=c508abd38d9e4d9eacafd16da4925de2",
-      "user-agent": "VIZIO V655-J09 ViziOS/1.0.67.124 WatchFree/24.07.25 FancyPlayer/1.1.30-qa"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ViziOS",
-      "marketingName": "ViziOS",
-      "version": "1.0.67.124",
-      "manufacturer": "vizio"
-    },
-    "client": {
-      "name": "Mobile Safari UIWebView",
-      "version": null,
-      "manufacturer": "apple",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "baggage": "sentry-trace_id=c4432b7c647845588a1853e5c6a22268,sentry-environment=prod,sentry-release=55ed40a,sentry-public_key=c508abd38d9e4d9eacafd16da4925de2",
-      "user-agent": "VIZIO V435M-K04 ViziOS/1.4.519.868.1 WatchFree/24.07.25 FancyPlayer/1.1.30-qa"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ViziOS",
-      "marketingName": "ViziOS",
-      "version": "1.4.519.868.1",
-      "manufacturer": "vizio"
-    },
-    "client": {
-      "name": "Mobile Safari UIWebView",
-      "version": null,
-      "manufacturer": "apple",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "baggage": "sentry-trace_id=e2316d9bf4294271a674795128a81977,sentry-environment=prod,sentry-release=55ed40a,sentry-public_key=c508abd38d9e4d9eacafd16da4925de2",
-      "user-agent": "VIZIO D32h-J09 ViziOS/1.4.512.845.1 WatchFree/24.07.25 FancyPlayer/1.1.30-qa"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ViziOS",
-      "marketingName": "ViziOS",
-      "version": "1.4.512.845.1",
-      "manufacturer": "vizio"
-    },
-    "client": {
-      "name": "Mobile Safari UIWebView",
-      "version": null,
-      "manufacturer": "apple",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "baggage": "sentry-trace_id=81e74c4094dc40e0ae1ec896f93f606d,sentry-environment=prod,sentry-release=55ed40a,sentry-public_key=c508abd38d9e4d9eacafd16da4925de2",
-      "user-agent": "VIZIO V705-J03 ViziOS/1.0.67.124 WatchFree/24.07.25 FancyPlayer/1.1.30-qa"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ViziOS",
-      "marketingName": "ViziOS",
-      "version": "1.0.67.124",
-      "manufacturer": "vizio"
-    },
-    "client": {
-      "name": "Mobile Safari UIWebView",
-      "version": null,
-      "manufacturer": "apple",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "baggage": "sentry-trace_id=f0017ef9e82341a08ee1776e85d45d29,sentry-environment=prod,sentry-release=55ed40a,sentry-public_key=c508abd38d9e4d9eacafd16da4925de2",
-      "user-agent": "VIZIO V555-J01 ViziOS/1.0.59.105 WatchFree/24.07.25 FancyPlayer/1.1.30-qa"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ViziOS",
-      "marketingName": "ViziOS",
-      "version": "1.0.59.105",
-      "manufacturer": "vizio"
-    },
-    "client": {
-      "name": "Mobile Safari UIWebView",
-      "version": null,
-      "manufacturer": "apple",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "baggage": "sentry-trace_id=c74698c99fc140dc9c03e7b49f8f6586,sentry-environment=prod,sentry-release=55ed40a,sentry-public_key=c508abd38d9e4d9eacafd16da4925de2",
-      "user-agent": "VIZIO V655-J04 ViziOS/1.4.512.847.1 WatchFree/24.07.25 FancyPlayer/1.1.30-qa"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ViziOS",
-      "marketingName": "ViziOS",
-      "version": "1.4.512.847.1",
-      "manufacturer": "vizio"
-    },
-    "client": {
-      "name": "Mobile Safari UIWebView",
-      "version": null,
-      "manufacturer": "apple",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "baggage": "sentry-trace_id=72a51fd9dd034145b52e966ad17948c7,sentry-environment=prod,sentry-release=55ed40a,sentry-public_key=c508abd38d9e4d9eacafd16da4925de2",
-      "user-agent": "VIZIO V506-J09 ViziOS/1.4.512.847.1 WatchFree/24.07.25 FancyPlayer/1.1.30-qa"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ViziOS",
-      "marketingName": "ViziOS",
-      "version": "1.4.512.847.1",
-      "manufacturer": "vizio"
-    },
-    "client": {
-      "name": "Mobile Safari UIWebView",
-      "version": null,
-      "manufacturer": "apple",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "baggage": "sentry-trace_id=095f147264d6420e98a465eea2e57f2a,sentry-environment=prod,sentry-release=55ed40a,sentry-public_key=c508abd38d9e4d9eacafd16da4925de2",
-      "user-agent": "VIZIO M556-H1 ViziOS/1.0.67.124 WatchFree/24.07.25 FancyPlayer/1.1.30-qa"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ViziOS",
-      "marketingName": "ViziOS",
-      "version": "1.0.67.124",
-      "manufacturer": "vizio"
-    },
-    "client": {
-      "name": "Mobile Safari UIWebView",
-      "version": null,
-      "manufacturer": "apple",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "baggage": "sentry-trace_id=f515903ffbc64659ab4d0a331fd83f11,sentry-environment=prod,sentry-release=55ed40a,sentry-public_key=c508abd38d9e4d9eacafd16da4925de2",
-      "user-agent": "VIZIO V655-J09 ViziOS/1.4.519.868.1 WatchFree/24.07.25 FancyPlayer/1.1.30-qa"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ViziOS",
-      "marketingName": "ViziOS",
-      "version": "1.4.519.868.1",
-      "manufacturer": "vizio"
-    },
-    "client": {
-      "name": "Mobile Safari UIWebView",
-      "version": null,
-      "manufacturer": "apple",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "baggage": "sentry-trace_id=6a7ea2deb8fa467fa18478e2caf90ba9,sentry-environment=prod,sentry-release=55ed40a,sentry-public_key=c508abd38d9e4d9eacafd16da4925de2",
-      "user-agent": "VIZIO V505-J01 ViziOS/1.4.519.868.1 WatchFree/24.07.25 FancyPlayer/1.1.30-qa"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ViziOS",
-      "marketingName": "ViziOS",
-      "version": "1.4.519.868.1",
-      "manufacturer": "vizio"
-    },
-    "client": {
-      "name": "Mobile Safari UIWebView",
-      "version": null,
-      "manufacturer": "apple",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "baggage": "sentry-trace_id=074439e9e9104bd882fffbe91efa0592,sentry-environment=prod,sentry-release=55ed40a,sentry-public_key=c508abd38d9e4d9eacafd16da4925de2",
-      "user-agent": "VIZIO V506-J09 ViziOS/1.4.519.868.1 WatchFree/24.07.25 FancyPlayer/1.1.30-qa"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ViziOS",
-      "marketingName": "ViziOS",
-      "version": "1.4.519.868.1",
-      "manufacturer": "vizio"
-    },
-    "client": {
-      "name": "Mobile Safari UIWebView",
-      "version": null,
-      "manufacturer": "apple",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "baggage": "sentry-trace_id=678c6aefc524416f84899e83a0dda05f,sentry-environment=prod,sentry-release=55ed40a,sentry-public_key=c508abd38d9e4d9eacafd16da4925de2",
-      "user-agent": "VIZIO V655-J04 ViziOS/1.0.67.124 WatchFree/24.07.25 FancyPlayer/1.1.30-qa"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ViziOS",
-      "marketingName": "ViziOS",
-      "version": "1.0.67.124",
-      "manufacturer": "vizio"
-    },
-    "client": {
-      "name": "Mobile Safari UIWebView",
-      "version": null,
-      "manufacturer": "apple",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "baggage": "sentry-trace_id=f6bbd66dd03f4f9d81c7bbbf89b94fc3,sentry-environment=prod,sentry-release=55ed40a,sentry-public_key=c508abd38d9e4d9eacafd16da4925de2",
-      "user-agent": "VIZIO V585M-K01 ViziOS/1.4.519.868.1 WatchFree/24.07.25 FancyPlayer/1.1.30-qa"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ViziOS",
-      "marketingName": "ViziOS",
-      "version": "1.4.519.868.1",
-      "manufacturer": "vizio"
-    },
-    "client": {
-      "name": "Mobile Safari UIWebView",
-      "version": null,
-      "manufacturer": "apple",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "baggage": "sentry-trace_id=043a9720083f4b0697c66f2e5345317d,sentry-environment=prod,sentry-release=55ed40a,sentry-public_key=c508abd38d9e4d9eacafd16da4925de2",
-      "user-agent": "VIZIO V655-J09 ViziOS/1.0.75.134 WatchFree/24.07.25 FancyPlayer/1.1.30-qa"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ViziOS",
-      "marketingName": "ViziOS",
-      "version": "1.0.75.134",
-      "manufacturer": "vizio"
-    },
-    "client": {
-      "name": "Mobile Safari UIWebView",
-      "version": null,
-      "manufacturer": "apple",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "baggage": "sentry-trace_id=54ae886906224d4386698c8b241227c8,sentry-environment=prod,sentry-release=55ed40a,sentry-public_key=c508abd38d9e4d9eacafd16da4925de2",
-      "user-agent": "VIZIO M70Q6-J03 ViziOS/1.0.67.124 WatchFree/24.07.25 FancyPlayer/1.1.30-qa"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ViziOS",
-      "marketingName": "ViziOS",
-      "version": "1.0.67.124",
-      "manufacturer": "vizio"
-    },
-    "client": {
-      "name": "Mobile Safari UIWebView",
-      "version": null,
-      "manufacturer": "apple",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "baggage": "sentry-trace_id=1f7abf48ce3c4eefbd246e13bbfc8010,sentry-environment=prod,sentry-release=55ed40a,sentry-public_key=c508abd38d9e4d9eacafd16da4925de2",
-      "user-agent": "VIZIO V555-J01 ViziOS/1.0.59.105 WatchFree/24.07.25 FancyPlayer/1.1.30-qa"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ViziOS",
-      "marketingName": "ViziOS",
-      "version": "1.0.59.105",
-      "manufacturer": "vizio"
-    },
-    "client": {
-      "name": "Mobile Safari UIWebView",
-      "version": null,
-      "manufacturer": "apple",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "baggage": "sentry-trace_id=a66145b3448948b586c0ce8500644b86,sentry-environment=prod,sentry-release=55ed40a,sentry-public_key=c508abd38d9e4d9eacafd16da4925de2",
-      "user-agent": "VIZIO V505-H9 ViziOS/1.0.75.134 WatchFree/24.07.25 FancyPlayer/1.1.30-qa"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ViziOS",
-      "marketingName": "ViziOS",
-      "version": "1.0.75.134",
-      "manufacturer": "vizio"
-    },
-    "client": {
-      "name": "Mobile Safari UIWebView",
-      "version": null,
-      "manufacturer": "apple",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "baggage": "sentry-trace_id=c4a44286d4fc400a99f8ab658b792500,sentry-environment=prod,sentry-release=55ed40a,sentry-public_key=c508abd38d9e4d9eacafd16da4925de2",
-      "user-agent": "VIZIO D40f-J09 ViziOS/1.0.92.150 WatchFree/24.07.25 FancyPlayer/1.1.30-qa"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ViziOS",
-      "marketingName": "ViziOS",
-      "version": "1.0.92.150",
-      "manufacturer": "vizio"
-    },
-    "client": {
-      "name": "Mobile Safari UIWebView",
-      "version": null,
-      "manufacturer": "apple",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "baggage": "sentry-trace_id=4f808473ec4247e9a948f173b711bca2,sentry-environment=prod,sentry-release=55ed40a,sentry-public_key=c508abd38d9e4d9eacafd16da4925de2",
-      "user-agent": "VIZIO V705-J01 ViziOS/1.0.67.124 WatchFree/24.07.25 FancyPlayer/1.1.30-qa"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ViziOS",
-      "marketingName": "ViziOS",
-      "version": "1.0.67.124",
-      "manufacturer": "vizio"
-    },
-    "client": {
-      "name": "Mobile Safari UIWebView",
-      "version": null,
-      "manufacturer": "apple",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "baggage": "sentry-trace_id=92171eee288245b2b1c43d004a4b6ff3,sentry-environment=prod,sentry-release=55ed40a,sentry-public_key=c508abd38d9e4d9eacafd16da4925de2",
-      "user-agent": "VIZIO D40fM-K09 ViziOS/1.3.172.239 WatchFree/24.07.25 FancyPlayer/1.1.30-qa"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ViziOS",
-      "marketingName": "ViziOS",
-      "version": "1.3.172.239",
-      "manufacturer": "vizio"
-    },
-    "client": {
-      "name": "Mobile Safari UIWebView",
-      "version": null,
-      "manufacturer": "apple",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "baggage": "sentry-trace_id=bfb799dc9c3743b483fa257c5ee546ac,sentry-environment=prod,sentry-release=55ed40a,sentry-public_key=c508abd38d9e4d9eacafd16da4925de2",
-      "user-agent": "VIZIO V405-H9 ViziOS/1.4.512.847.1 WatchFree/24.07.25 FancyPlayer/1.1.30-qa"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ViziOS",
-      "marketingName": "ViziOS",
-      "version": "1.4.512.847.1",
-      "manufacturer": "vizio"
-    },
-    "client": {
-      "name": "Mobile Safari UIWebView",
-      "version": null,
-      "manufacturer": "apple",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "baggage": "sentry-trace_id=5d1346f40c6c410d992f6903aba06391,sentry-environment=prod,sentry-release=55ed40a,sentry-public_key=c508abd38d9e4d9eacafd16da4925de2",
-      "user-agent": "VIZIO M65Q6-J09 ViziOS/1.4.519.868.1 WatchFree/24.07.25 FancyPlayer/1.1.30-qa"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ViziOS",
-      "marketingName": "ViziOS",
-      "version": "1.4.519.868.1",
-      "manufacturer": "vizio"
-    },
-    "client": {
-      "name": "Mobile Safari UIWebView",
-      "version": null,
-      "manufacturer": "apple",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "baggage": "sentry-trace_id=893d2f4866c9459481b1b39cb01ad120,sentry-environment=prod,sentry-release=0e0a869,sentry-public_key=c508abd38d9e4d9eacafd16da4925de2",
-      "user-agent": "VIZIO V655-J09 ViziOS/1.4.507.837.1 WatchFree/24.06.13.2 FancyPlayer/1.1.26-qa"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ViziOS",
-      "marketingName": "ViziOS",
-      "version": "1.4.507.837.1",
-      "manufacturer": "vizio"
-    },
-    "client": {
-      "name": "Mobile Safari UIWebView",
-      "version": null,
-      "manufacturer": "apple",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "baggage": "sentry-trace_id=304f76c37c964f66bfc72046f719cc75,sentry-environment=prod,sentry-release=0e0a869,sentry-public_key=c508abd38d9e4d9eacafd16da4925de2",
-      "user-agent": "VIZIO D40fM-K09 ViziOS/1.3.176.261 WatchFree/24.06.13.2 FancyPlayer/1.1.30-qa"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ViziOS",
-      "marketingName": "ViziOS",
-      "version": "1.3.176.261",
-      "manufacturer": "vizio"
-    },
-    "client": {
-      "name": "Mobile Safari UIWebView",
-      "version": null,
-      "manufacturer": "apple",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "baggage": "sentry-trace_id=3719c1862f0d4876be3bae046cc483ea,sentry-environment=prod,sentry-release=0e0a869,sentry-public_key=c508abd38d9e4d9eacafd16da4925de2",
-      "user-agent": "VIZIO V705x-H1 ViziOS/1.0.67.124 WatchFree/24.06.13.2 FancyPlayer/1.1.30-qa"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ViziOS",
-      "marketingName": "ViziOS",
-      "version": "1.0.67.124",
-      "manufacturer": "vizio"
-    },
-    "client": {
-      "name": "Mobile Safari UIWebView",
-      "version": null,
-      "manufacturer": "apple",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "baggage": "sentry-trace_id=ca3bdc2812b34154821a12ac141fa03d,sentry-environment=prod,sentry-release=0e0a869,sentry-public_key=c508abd38d9e4d9eacafd16da4925de2",
-      "user-agent": "VIZIO D32h-J09 ViziOS/1.4.512.845.1 WatchFree/24.06.13.2 FancyPlayer/1.1.30-qa"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ViziOS",
-      "marketingName": "ViziOS",
-      "version": "1.4.512.845.1",
-      "manufacturer": "vizio"
-    },
-    "client": {
-      "name": "Mobile Safari UIWebView",
-      "version": null,
-      "manufacturer": "apple",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "baggage": "sentry-trace_id=80548fb723ce4bb59b7e982751624a7f,sentry-environment=prod,sentry-release=0e0a869,sentry-public_key=c508abd38d9e4d9eacafd16da4925de2",
-      "user-agent": "VIZIO D32h-J09 ViziOS/1.0.92.150 WatchFree/24.06.13.2 FancyPlayer/1.1.30-qa"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ViziOS",
-      "marketingName": "ViziOS",
-      "version": "1.0.92.150",
-      "manufacturer": "vizio"
-    },
-    "client": {
-      "name": "Mobile Safari UIWebView",
-      "version": null,
-      "manufacturer": "apple",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "baggage": "sentry-trace_id=2203ab2cd41a440980c694173e6f8b76,sentry-environment=prod,sentry-release=0e0a869,sentry-public_key=c508abd38d9e4d9eacafd16da4925de2",
-      "user-agent": "VIZIO V505-J09 ViziOS/1.0.75.134 WatchFree/24.06.13.2 FancyPlayer/1.1.26-qa"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ViziOS",
-      "marketingName": "ViziOS",
-      "version": "1.0.75.134",
-      "manufacturer": "vizio"
-    },
-    "client": {
-      "name": "Mobile Safari UIWebView",
-      "version": null,
-      "manufacturer": "apple",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "baggage": "sentry-trace_id=9077aa03e3a847bbb96378e3bfcb9aec,sentry-environment=prod,sentry-release=0e0a869,sentry-public_key=c508abd38d9e4d9eacafd16da4925de2",
-      "user-agent": "VIZIO V705-H3 ViziOS/1.4.512.847.1 WatchFree/24.06.13.2 FancyPlayer/1.1.30-qa"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ViziOS",
-      "marketingName": "ViziOS",
-      "version": "1.4.512.847.1",
-      "manufacturer": "vizio"
-    },
-    "client": {
-      "name": "Mobile Safari UIWebView",
-      "version": null,
-      "manufacturer": "apple",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "baggage": "sentry-trace_id=fe16c66ac065497282d3f7280f584b81,sentry-environment=prod,sentry-release=0e0a869,sentry-public_key=c508abd38d9e4d9eacafd16da4925de2",
-      "user-agent": "VIZIO V655M-K03 ViziOS/1.4.512.847.1 WatchFree/24.06.13.2 FancyPlayer/1.1.30-qa"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ViziOS",
-      "marketingName": "ViziOS",
-      "version": "1.4.512.847.1",
-      "manufacturer": "vizio"
-    },
-    "client": {
-      "name": "Mobile Safari UIWebView",
-      "version": null,
-      "manufacturer": "apple",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "baggage": "sentry-trace_id=5cf66f18066b4e7aa0c59a18137ff1ed,sentry-environment=prod,sentry-release=0e0a869,sentry-public_key=c508abd38d9e4d9eacafd16da4925de2",
-      "user-agent": "VIZIO V655-J09 ViziOS/1.0.75.134 WatchFree/24.06.13.2 FancyPlayer/1.1.30-qa"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ViziOS",
-      "marketingName": "ViziOS",
-      "version": "1.0.75.134",
-      "manufacturer": "vizio"
-    },
-    "client": {
-      "name": "Mobile Safari UIWebView",
-      "version": null,
-      "manufacturer": "apple",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "baggage": "sentry-trace_id=ea17fc02e85344bba5c45854a92d5095,sentry-environment=prod,sentry-release=0e0a869,sentry-public_key=c508abd38d9e4d9eacafd16da4925de2",
-      "user-agent": "VIZIO V555-H1 ViziOS/1.0.67.124 WatchFree/24.06.13.2 FancyPlayer/1.1.30-qa"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ViziOS",
-      "marketingName": "ViziOS",
-      "version": "1.0.67.124",
-      "manufacturer": "vizio"
-    },
-    "client": {
-      "name": "Mobile Safari UIWebView",
-      "version": null,
-      "manufacturer": "apple",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "baggage": "sentry-trace_id=bfe5b8c43f6e42fbae97e5974da2f9d5,sentry-environment=prod,sentry-release=0e0a869,sentry-public_key=c508abd38d9e4d9eacafd16da4925de2",
-      "user-agent": "VIZIO V655-H9 ViziOS/1.4.512.847.1 WatchFree/24.06.13.2 FancyPlayer/1.1.30-qa"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ViziOS",
-      "marketingName": "ViziOS",
-      "version": "1.4.512.847.1",
-      "manufacturer": "vizio"
-    },
-    "client": {
-      "name": "Mobile Safari UIWebView",
-      "version": null,
-      "manufacturer": "apple",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "baggage": "sentry-trace_id=55802475c06d4e1d982ae4eda08e1791,sentry-environment=prod,sentry-release=0e0a869,sentry-public_key=c508abd38d9e4d9eacafd16da4925de2",
-      "user-agent": "VIZIO V435-J01 ViziOS/1.0.75.134 WatchFree/24.06.13.2 FancyPlayer/1.1.30-qa"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ViziOS",
-      "marketingName": "ViziOS",
-      "version": "1.0.75.134",
-      "manufacturer": "vizio"
-    },
-    "client": {
-      "name": "Mobile Safari UIWebView",
-      "version": null,
-      "manufacturer": "apple",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "baggage": "sentry-trace_id=fcf0e74bf0454ece980dee8e4200604e,sentry-environment=prod,sentry-release=0e0a869,sentry-public_key=c508abd38d9e4d9eacafd16da4925de2",
-      "user-agent": "VIZIO V505-H1 ViziOS/1.0.67.124 WatchFree/24.06.13.2 FancyPlayer/1.1.30-qa"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ViziOS",
-      "marketingName": "ViziOS",
-      "version": "1.0.67.124",
-      "manufacturer": "vizio"
-    },
-    "client": {
-      "name": "Mobile Safari UIWebView",
-      "version": null,
-      "manufacturer": "apple",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "baggage": "sentry-trace_id=3af3e1c65aa74543856c433a9eb016d7,sentry-environment=prod,sentry-release=0e0a869,sentry-public_key=c508abd38d9e4d9eacafd16da4925de2",
-      "user-agent": "VIZIO M65Q6-J09 ViziOS/1.0.69.130 WatchFree/24.06.13.2 FancyPlayer/1.1.30-qa"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ViziOS",
-      "marketingName": "ViziOS",
-      "version": "1.0.69.130",
-      "manufacturer": "vizio"
-    },
-    "client": {
-      "name": "Mobile Safari UIWebView",
-      "version": null,
-      "manufacturer": "apple",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "baggage": "sentry-trace_id=d6a6a45edaab4892bba9d8652079f618,sentry-environment=prod,sentry-release=0e0a869,sentry-public_key=c508abd38d9e4d9eacafd16da4925de2",
-      "user-agent": "VIZIO V505-H9 ViziOS/1.0.75.134 WatchFree/24.06.13.2 FancyPlayer/1.1.30-qa"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ViziOS",
-      "marketingName": "ViziOS",
-      "version": "1.0.75.134",
-      "manufacturer": "vizio"
-    },
-    "client": {
-      "name": "Mobile Safari UIWebView",
-      "version": null,
-      "manufacturer": "apple",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "baggage": "sentry-trace_id=03ee2e2e65a4431ab36043db036d66ec,sentry-environment=prod,sentry-release=0e0a869,sentry-public_key=c508abd38d9e4d9eacafd16da4925de2",
-      "user-agent": "VIZIO D32f-J04 ViziOS/1.4.512.845.1 WatchFree/24.06.13.2 FancyPlayer/1.1.30-qa"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ViziOS",
-      "marketingName": "ViziOS",
-      "version": "1.4.512.845.1",
-      "manufacturer": "vizio"
-    },
-    "client": {
-      "name": "Mobile Safari UIWebView",
-      "version": null,
-      "manufacturer": "apple",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "baggage": "sentry-trace_id=872a98fb94644c5dbce87e2d26799ae7,sentry-environment=prod,sentry-release=0e0a869,sentry-public_key=c508abd38d9e4d9eacafd16da4925de2",
-      "user-agent": "VIZIO D24f4-J01 ViziOS/1.4.512.845.1 WatchFree/24.06.13.2 FancyPlayer/1.1.30-qa"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ViziOS",
-      "marketingName": "ViziOS",
-      "version": "1.4.512.845.1",
-      "manufacturer": "vizio"
-    },
-    "client": {
-      "name": "Mobile Safari UIWebView",
-      "version": null,
-      "manufacturer": "apple",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "baggage": "sentry-trace_id=ba93981aa0d54248af3d0f90c079179c,sentry-environment=prod,sentry-release=0e0a869,sentry-public_key=c508abd38d9e4d9eacafd16da4925de2",
-      "user-agent": "VIZIO V585-J01 ViziOS/1.0.91.149 WatchFree/24.06.13.2 FancyPlayer/1.1.30-qa"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ViziOS",
-      "marketingName": "ViziOS",
-      "version": "1.0.91.149",
-      "manufacturer": "vizio"
-    },
-    "client": {
-      "name": "Mobile Safari UIWebView",
-      "version": null,
-      "manufacturer": "apple",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "baggage": "sentry-trace_id=bd3e981afba6438b9edc057b911237cc,sentry-environment=prod,sentry-release=0e0a869,sentry-public_key=c508abd38d9e4d9eacafd16da4925de2",
-      "user-agent": "VIZIO V755-J04 ViziOS/1.0.70.130 WatchFree/24.06.13.2 FancyPlayer/1.1.30-qa"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ViziOS",
-      "marketingName": "ViziOS",
-      "version": "1.0.70.130",
-      "manufacturer": "vizio"
-    },
-    "client": {
-      "name": "Mobile Safari UIWebView",
-      "version": null,
-      "manufacturer": "apple",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "baggage": "sentry-trace_id=4efe6032a1554e689cf40deea1e038ea,sentry-environment=prod,sentry-release=0e0a869,sentry-public_key=c508abd38d9e4d9eacafd16da4925de2",
-      "user-agent": "VIZIO V655-J09 ViziOS/1.4.507.837.1 WatchFree/24.06.13.2 FancyPlayer/1.1.26-qa"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ViziOS",
-      "marketingName": "ViziOS",
-      "version": "1.4.507.837.1",
-      "manufacturer": "vizio"
-    },
-    "client": {
-      "name": "Mobile Safari UIWebView",
-      "version": null,
-      "manufacturer": "apple",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "baggage": "sentry-trace_id=a96026fd70b948d5a91e2fefed480200,sentry-environment=prod,sentry-release=0e0a869,sentry-public_key=c508abd38d9e4d9eacafd16da4925de2",
-      "user-agent": "VIZIO V505-J09 ViziOS/1.0.67.124 WatchFree/24.06.13.2 FancyPlayer/1.1.26-qa"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ViziOS",
-      "marketingName": "ViziOS",
-      "version": "1.0.67.124",
-      "manufacturer": "vizio"
-    },
-    "client": {
-      "name": "Mobile Safari UIWebView",
-      "version": null,
-      "manufacturer": "apple",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "WebKit",
-      "version": null,
-      "manufacturer": "apple"
-    }
-  },
-  {
-    "headers": {
-      "baggage": "sentry-trace_id=2b031122caa341e5a0872b9013fb42aa,sentry-environment=prod,sentry-release=0e0a869,sentry-public_key=c508abd38d9e4d9eacafd16da4925de2",
-      "user-agent": "VIZIO D40f-J09 ViziOS/1.4.497.819.1 WatchFree/24.03.28.1 FancyPlayer/1.1.26-qa"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "ViziOS",
-      "marketingName": "ViziOS",
-      "version": "1.4.497.819.1",
-      "manufacturer": "vizio"
+      "manufacturer": "unknown"
     },
     "client": {
       "name": "Mobile Safari UIWebView",

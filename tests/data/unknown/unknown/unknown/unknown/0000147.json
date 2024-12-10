@@ -1639,48 +1639,6 @@
   },
   {
     "headers": {
-      "baggage": "sentry-environment=production,sentry-release=2.33.2,sentry-transaction=GET%20%2Fjobinfo%2F%3AjobNr,sentry-public_key=f443a15a58994373b4da270bb432c6f5,sentry-trace_id=ef57523d22844880b7ebb3ab26409a81,sentry-sample_rate=0.1"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": null,
-      "brand": null,
-      "dualOrientation": false,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": null,
-        "size": null
-      },
-      "type": null,
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": null
-    },
-    "client": {
-      "name": null,
-      "version": null,
-      "manufacturer": null,
-      "type": null,
-      "isbot": false
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": null
-    }
-  },
-  {
-    "headers": {
       "expect": "100-continue"
     },
     "device": {
@@ -4217,6 +4175,49 @@
   {
     "headers": {
       "user-agent": "WfuorErk' OR 841=(SELECT 841 FROM PG_SLEEP(15))--",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "unknown",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "sNcmGK0Y'; waitfor delay '0:0:15' --",
       "x-requested-with": "XMLHttpRequest"
     },
     "device": {
