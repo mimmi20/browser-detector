@@ -712,5 +712,48 @@
       "version": "55.0.2868.0",
       "manufacturer": "google"
     }
+  },
+  {
+    "headers": {
+      "from": "googlebot(at)googlebot.com",
+      "user-agent": "Mediapartners-Google"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "AdSense Bot",
+      "version": null,
+      "manufacturer": "google",
+      "type": "bot-trancoder",
+      "isbot": true
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
   }
 ]

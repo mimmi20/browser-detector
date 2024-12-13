@@ -3572,8 +3572,8 @@
     "marketingName": "Moto Z Play Droid",
     "manufacturer": "lenovo",
     "brand": "motorola",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 1920,
       "height": 1080,
@@ -3588,8 +3588,8 @@
     "marketingName": "Moto Z Play Dual",
     "manufacturer": "motorola",
     "brand": "motorola",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 1920,
       "height": 1080,
@@ -3604,8 +3604,8 @@
     "marketingName": "Moto Z Play Dual",
     "manufacturer": "motorola",
     "brand": "motorola",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 2,
     "display": {
       "width": 1920,
       "height": 1080,
@@ -5007,6 +5007,22 @@
     "type": "smartphone",
     "platform": "android"
   },
+  "motorola moto e7": {
+    "deviceName": "Moto E7",
+    "marketingName": "Moto E7",
+    "manufacturer": "motorola",
+    "brand": "motorola",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1600,
+      "height": 720,
+      "touch": true,
+      "size": 6.5
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
   "motorola moto e13": {
     "deviceName": "Moto E13",
     "marketingName": "Moto E13",
@@ -5355,6 +5371,22 @@
       "height": 1080,
       "touch": true,
       "size": 6.3
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "motorola moto g8": {
+    "deviceName": "Moto G8",
+    "marketingName": "Moto G8",
+    "manufacturer": "motorola",
+    "brand": "motorola",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1560,
+      "height": 720,
+      "touch": true,
+      "size": 6.4
     },
     "type": "smartphone",
     "platform": "android"
