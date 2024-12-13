@@ -915,7 +915,7 @@ final class SecChUaModelTest extends TestCase
             ['"TB330FU"', true, 'lenovo=lenovo tb330fu'],
             ['"TB350FU"', true, 'lenovo=lenovo tb350fu'],
             ['"TB310FU"', true, 'lenovo=lenovo tb310fu'],
-            ['"LIFETAB_S1036X"', true, 'lenovo=lenovo lifetab s1036x'],
+            ['"LIFETAB_S1036X"', true, 'medion=lenovo lifetab s1036x'],
             ['"Lenovo A2016a40"', true, 'lenovo=lenovo a2016a40'],
             ['"Lenovo TB-X505L"', true, 'lenovo=lenovo tb-x505l'],
             ['"Lenovo TB-J606F"', true, 'lenovo=lenovo tb-j606f'],

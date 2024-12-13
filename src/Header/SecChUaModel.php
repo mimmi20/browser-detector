@@ -830,7 +830,7 @@ final class SecChUaModel implements HeaderInterface
             'tb330fu' => 'lenovo=lenovo tb330fu',
             'tb350fu' => 'lenovo=lenovo tb350fu',
             'tb310fu' => 'lenovo=lenovo tb310fu',
-            'lifetab_s1036x' => 'lenovo=lenovo lifetab s1036x',
+            'lifetab_s1036x' => 'medion=lenovo lifetab s1036x',
             'lenovo a2016a40' => 'lenovo=lenovo a2016a40',
             'lenovo tb-x505l' => 'lenovo=lenovo tb-x505l',
             'lenovo tb-j606f' => 'lenovo=lenovo tb-j606f',
