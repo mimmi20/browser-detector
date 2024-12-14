@@ -1471,8 +1471,8 @@ final class SecChUaModelTest extends TestCase
             ['"Trekstor Surftab theatre S11"', true, 'trekstor=trekstor surftab theatre s11'],
             // aeezo
             ['"TK701_EEA"', true, 'aeezo=aeezo tk701'],
-            // jaytech
-            ['"TPC-G1011LTE"', true, 'jaytech=jaytech tpc-g1011lte'],
+            // jay-tech
+            ['"TPC-G1011LTE"', true, 'jay-tech=jay-tech tpc-g1011lte'],
             // yuntab
             ['"K107"', true, 'yuntab=yuntab k107'],
             // vankyo

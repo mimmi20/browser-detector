@@ -1382,8 +1382,8 @@ final class SecChUaModel implements HeaderInterface
             'trekstor surftab theatre s11' => 'trekstor=trekstor surftab theatre s11',
             // aeezo
             'tk701_eea' => 'aeezo=aeezo tk701',
-            // jaytech
-            'tpc-g1011lte' => 'jaytech=jaytech tpc-g1011lte',
+            // jay-tech
+            'tpc-g1011lte' => 'jay-tech=jay-tech tpc-g1011lte',
             // yuntab
             'k107' => 'yuntab=yuntab k107',
             // vankyo
