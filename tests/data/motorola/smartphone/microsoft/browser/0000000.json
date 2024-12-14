@@ -303,8 +303,8 @@
       "marketingName": "Moto Z Play Dual",
       "manufacturer": "motorola",
       "brand": "motorola",
-      "dualOrientation": null,
-      "simCount": null,
+      "dualOrientation": true,
+      "simCount": 2,
       "display": {
         "width": 1920,
         "height": 1080,
@@ -1520,7 +1520,6 @@
       "downlink": "3.9",
       "dpr": "2.225",
       "ect": "4g",
-      "origin": "https://www.geld.de",
       "rtt": "100",
       "sec-ch-device-memory": "8",
       "sec-ch-dpr": "2.225",

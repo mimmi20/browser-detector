@@ -3949,92 +3949,6 @@
   },
   {
     "headers": {
-      "user-agent": "Microsoft Office Excel 2014",
-      "via": "HTTPS/1.1 Zatora 0ACD014F"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Desktop",
-      "marketingName": "general Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "Excel",
-      "version": "2014.0.0",
-      "manufacturer": "microsoft",
-      "type": "application",
-      "isbot": false
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
-      "user-agent": "Microsoft Office Excel 2014",
-      "via": "HTTPS/1.1 Jesse 0ACD0157"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Desktop",
-      "marketingName": "general Desktop",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": false,
-        "size": null
-      },
-      "type": "desktop",
-      "ismobile": false,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": null,
-      "marketingName": null,
-      "version": null,
-      "manufacturer": "unknown"
-    },
-    "client": {
-      "name": "Excel",
-      "version": "2014.0.0",
-      "manufacturer": "microsoft",
-      "type": "application",
-      "isbot": false
-    },
-    "engine": {
-      "name": null,
-      "version": null,
-      "manufacturer": "unknown"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Microsoft Office Excel 2014 comdirect/1.0 (appVersion:19.7.0-FW-19)"
     },
     "device": {
@@ -4119,8 +4033,50 @@
   },
   {
     "headers": {
+      "user-agent": "Microsoft Office Excel"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "Office",
+      "version": null,
+      "manufacturer": "microsoft",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
       "user-agent": "Microsoft Office Excel 2014",
-      "via": "Proxy"
+      "x-bluecoat-via": "52614fb0f3c88a71"
     },
     "device": {
       "architecture": null,
@@ -4162,8 +4118,7 @@
   },
   {
     "headers": {
-      "user-agent": "Microsoft Office Excel 2014",
-      "via": "1.1 192.168.100.22 (McAfee Web Gateway 10.2.5.39162)"
+      "user-agent": "Microsoft Office Word/16.78.1008 (Desktop; Desktop app; Unknown/Unknown)"
     },
     "device": {
       "architecture": null,
@@ -4191,8 +4146,50 @@
       "manufacturer": "unknown"
     },
     "client": {
-      "name": "Excel",
-      "version": "2014.0.0",
+      "name": "Word",
+      "version": "16.78.1008",
+      "manufacturer": "microsoft",
+      "type": "application",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Microsoft Office Word"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Desktop",
+      "marketingName": "general Desktop",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "desktop",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": null,
+      "marketingName": null,
+      "version": null,
+      "manufacturer": "unknown"
+    },
+    "client": {
+      "name": "Word",
+      "version": null,
       "manufacturer": "microsoft",
       "type": "application",
       "isbot": false
