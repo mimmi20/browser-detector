@@ -750,5 +750,37 @@
     },
     "type": "smartphone",
     "platform": "android"
+  },
+  "oukitel wp8 pro": {
+    "deviceName": "WP8 Pro",
+    "marketingName": "WP8 Pro",
+    "manufacturer": "oukitel",
+    "brand": "oukitel",
+    "dualOrientation": true,
+    "simCount": 2,
+    "display": {
+      "width": 1560,
+      "height": 720,
+      "touch": true,
+      "size": 6.49
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "oukitel wp12 pro": {
+    "deviceName": "WP12 Pro",
+    "marketingName": "WP12 Pro",
+    "manufacturer": "oukitel",
+    "brand": "oukitel",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1440,
+      "height": 720,
+      "touch": true,
+      "size": 5.5
+    },
+    "type": "smartphone",
+    "platform": "android"
   }
 }

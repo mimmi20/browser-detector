@@ -932,8 +932,8 @@
     "marketingName": "9",
     "manufacturer": "hmd-global",
     "brand": "nokia",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 2560,
       "height": 1440,
@@ -3243,6 +3243,22 @@
       "height": 720,
       "touch": true,
       "size": 6.52
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "nokia 2.2": {
+    "deviceName": "2.2",
+    "marketingName": "2.2",
+    "manufacturer": "hmd-global",
+    "brand": "nokia",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 1520,
+      "height": 720,
+      "touch": true,
+      "size": 5.71
     },
     "type": "smartphone",
     "platform": "android"
