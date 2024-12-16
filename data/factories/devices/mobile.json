@@ -89,7 +89,7 @@
     "/infinix|s[25][ _]pro|p5s_x403/i": "infinix",
     "/vnt[ _]tab[ _]?8/i": "vnt",
     "/openbox/i": "openbox",
-    "/blackview|bl8800|bv[4-9][01356789]00[ _]?(?:pro)?|dm550|crown|alife[ _][ps]1|omega_pro|ultra[ _]plus|p2lite|(?:adr|android) 4\\.4.* zeta|(?:(?<!nov)a[6-9][05](?:[ _]?pro)?|(?<!fire_)tab[ _]?[689]|(?<!e)tab[ _]?7[ _]?wifi|tab[ _]?70[ _]?wifi| e7s|a80s|a7pro| r6| a8|hero[ _]?10|color[ _]8|n6000[ _]se)(?: +build|[;\\/\\)])/i": "blackview",
+    "/blackview|bl8800|bv[4-9][01356789]00[ _]?(?:pro)?|dm550|crown|alife[ _][ps]1|omega_pro|ultra[ _]plus|p2lite|(?:adr|android) 4\\.4.* zeta|(?:(?<!nov|qmobile[ _]|apanda[ _\\-]|celkon[ _\\*]|lenovo[ \\-]|micromax[ _]|twz |agm |sie-|smart )a[6-9][05](?:[ _]?pro)?|(?<!fire_)tab[ _]?[689]|(?<!e)tab[ _]?7[ _]?wifi|tab[ _]?70[ _]?wifi| e7s|a80s|a7pro| r6| a8|hero[ _]?10|color[ _]8|n6000[ _]se)(?: +build|[;\\/\\)])/i": "blackview",
     "/celkon| a400(?: +build|[;\\/\\)])|(?:adr|android) 2\\.3.* a19/i": "celkon",
     "/multilaser/i": "multilaser",
     "/karbonn|(?<!appcelerator )titanium|machfive|sparkle v|s109|k9 smart (?:grand|4g)|(?:(?:adr|android) 4\\.[02].* a1[689]\\+?|[ _]a[19]\\+|[ _]a7\\*|(?:adr|android) 4\\.1.* st10)(?: +build|[;\\/\\)])|jk8000|a40 indian|smarttab[12](?: +build|[;\\/\\)])/i": "karbonn",
