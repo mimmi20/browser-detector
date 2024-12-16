@@ -1,61 +1,6 @@
 [
   {
     "headers": {
-      "device-memory": "2",
-      "downlink": "10",
-      "dpr": "1.33125",
-      "ect": "4g",
-      "rtt": "0",
-      "sec-ch-device-memory": "2",
-      "sec-ch-dpr": "1.33125",
-      "sec-ch-prefers-color-scheme": "light",
-      "sec-ch-prefers-reduced-motion": "no-preference",
-      "sec-ch-viewport-height": "802",
-      "sec-ch-viewport-width": "602",
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; MT-1011QU Build/QP1A.191105.004) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.131 Safari/537.36",
-      "viewport-width": "602",
-      "x-requested-with": "XMLHttpRequest"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": "general Tablet",
-      "marketingName": "general Tablet",
-      "manufacturer": "unknown",
-      "brand": "unknown",
-      "dualOrientation": null,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": true,
-        "size": null
-      },
-      "type": "tablet",
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Chrome",
-      "version": "114.0.5735.131",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "114.0.5735.131",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; TravelMate B118-M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36"
     },
     "device": {
@@ -4263,6 +4208,48 @@
   {
     "headers": {
       "user-agent": "Mozilla/5.0 (Linux; Android 9; POLAR_K_P32L32T2CSM Build/PPR2.180905.006.A1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.158 Safari/537.36"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": "general Tablet",
+      "marketingName": "general Tablet",
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": true,
+        "size": null
+      },
+      "type": "tablet",
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Android WebView",
+      "version": "66.0.3359.158",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "66.0.3359.158",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "user-agent": "Mozilla/5.0 (Linux; Android 9; POLAR_K_P32L21T2SCSM Build/PPR2.180905.006.A1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.158 Safari/537.36"
     },
     "device": {
       "architecture": null,

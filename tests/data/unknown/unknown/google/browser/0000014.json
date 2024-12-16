@@ -3714,66 +3714,6 @@
   },
   {
     "headers": {
-      "device-memory": "2",
-      "downlink": "4.55",
-      "dpr": "3",
-      "ect": "4g",
-      "rtt": "100",
-      "sec-ch-device-memory": "2",
-      "sec-ch-dpr": "3",
-      "sec-ch-prefers-color-scheme": "light",
-      "sec-ch-ua": "\"Chromium\";v=\"106\", \"Google Chrome\";v=\"106\", \"Not;A=Brand\";v=\"99\"",
-      "sec-ch-ua-full-version": "\"106.0.5249.126\"",
-      "sec-ch-ua-mobile": "?1",
-      "sec-ch-ua-model": "\"D6633\"",
-      "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua-platform-version": "\"6.0.1\"",
-      "sec-ch-viewport-height": "512",
-      "sec-ch-viewport-width": "360",
-      "user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; D6633) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Mobile Safari/537.36",
-      "viewport-width": "360",
-      "x-requested-with": "XMLHttpRequest"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": null,
-      "brand": null,
-      "dualOrientation": false,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": null,
-        "size": null
-      },
-      "type": null,
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "6.0.1",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Chrome",
-      "version": "106.0.0",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "106.0.0.0",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
       "device-memory": "4",
       "downlink": "1.75",
       "dpr": "1",
@@ -3892,255 +3832,6 @@
     "engine": {
       "name": "Blink",
       "version": "114.0.0.0",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "device-memory": "8",
-      "downlink": "10",
-      "dpr": "3.3125",
-      "ect": "4g",
-      "rtt": "200",
-      "sec-ch-device-memory": "8",
-      "sec-ch-dpr": "3.3125",
-      "sec-ch-prefers-color-scheme": "light",
-      "sec-ch-prefers-reduced-motion": "no-preference",
-      "sec-ch-ua": "\"Chromium\";v=\"112\", \"Google Chrome\";v=\"112\", \"Not:A-Brand\";v=\"99\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-full-version": "\"112.0.5615.48\"",
-      "sec-ch-ua-mobile": "?1",
-      "sec-ch-ua-model": "\"ELS-N39\"",
-      "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua-platform-version": "\"10.0.0\"",
-      "sec-ch-viewport-height": "660",
-      "sec-ch-viewport-width": "363",
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Mobile Safari/537.36",
-      "viewport-width": "363",
-      "x-requested-with": "XMLHttpRequest"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": null,
-      "brand": null,
-      "dualOrientation": false,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": null,
-        "size": null
-      },
-      "type": null,
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Chrome",
-      "version": "112.0.0",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "112.0.0.0",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "device-memory": "2",
-      "downlink": "1.6",
-      "dpr": "2",
-      "ect": "4g",
-      "rtt": "250",
-      "sec-ch-device-memory": "2",
-      "sec-ch-dpr": "2",
-      "sec-ch-prefers-color-scheme": "light",
-      "sec-ch-prefers-reduced-motion": "no-preference",
-      "sec-ch-ua": "\"Not_A Brand\";v=\"99\", \"Google Chrome\";v=\"109\", \"Chromium\";v=\"109\"",
-      "sec-ch-ua-full-version": "\"109.0.5414.117\"",
-      "sec-ch-ua-mobile": "?1",
-      "sec-ch-ua-model": "\"Aquaris X5\"",
-      "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua-platform-version": "\"7.1.2\"",
-      "sec-ch-viewport-height": "560",
-      "sec-ch-viewport-width": "360",
-      "user-agent": "Mozilla/5.0 (Linux; Android 7.1.2; Aquaris X5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Mobile Safari/537.36",
-      "viewport-width": "360",
-      "x-requested-with": "XMLHttpRequest"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": null,
-      "brand": null,
-      "dualOrientation": false,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": null,
-        "size": null
-      },
-      "type": null,
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "7.1.2",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Chrome",
-      "version": "109.0.0",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "109.0.0.0",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "device-memory": "8",
-      "downlink": "5.25",
-      "dpr": "3.3125",
-      "ect": "4g",
-      "rtt": "50",
-      "sec-ch-device-memory": "8",
-      "sec-ch-dpr": "3.3125",
-      "sec-ch-prefers-color-scheme": "light",
-      "sec-ch-prefers-reduced-motion": "no-preference",
-      "sec-ch-ua": "\"Chromium\";v=\"112\", \"Google Chrome\";v=\"112\", \"Not:A-Brand\";v=\"99\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-full-version": "\"112.0.5615.48\"",
-      "sec-ch-ua-mobile": "?1",
-      "sec-ch-ua-model": "\"ELS-N39\"",
-      "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua-platform-version": "\"10.0.0\"",
-      "sec-ch-viewport-height": "660",
-      "sec-ch-viewport-width": "363",
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Mobile Safari/537.36",
-      "viewport-width": "363",
-      "x-requested-with": "XMLHttpRequest"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": null,
-      "brand": null,
-      "dualOrientation": false,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": null,
-        "size": null
-      },
-      "type": null,
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Chrome",
-      "version": "112.0.0",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "112.0.0.0",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "device-memory": "8",
-      "downlink": "4.85",
-      "dpr": "3.3125",
-      "ect": "4g",
-      "rtt": "50",
-      "sec-ch-device-memory": "8",
-      "sec-ch-dpr": "3.3125",
-      "sec-ch-prefers-color-scheme": "light",
-      "sec-ch-prefers-reduced-motion": "no-preference",
-      "sec-ch-ua": "\"Chromium\";v=\"112\", \"Google Chrome\";v=\"112\", \"Not:A-Brand\";v=\"99\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-full-version": "\"112.0.5615.48\"",
-      "sec-ch-ua-mobile": "?1",
-      "sec-ch-ua-model": "\"ELS-N39\"",
-      "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua-platform-version": "\"10.0.0\"",
-      "sec-ch-viewport-height": "1933",
-      "sec-ch-viewport-width": "980",
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Mobile Safari/537.36",
-      "viewport-width": "980"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": null,
-      "brand": null,
-      "dualOrientation": false,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": null,
-        "size": null
-      },
-      "type": null,
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "10.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Chrome",
-      "version": "112.0.0",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "112.0.0.0",
       "manufacturer": "google"
     }
   },
@@ -4397,131 +4088,6 @@
   },
   {
     "headers": {
-      "device-memory": "8",
-      "downlink": "6.9",
-      "dpr": "4",
-      "ect": "4g",
-      "rtt": "100",
-      "sec-ch-device-memory": "8",
-      "sec-ch-dpr": "4",
-      "sec-ch-prefers-color-scheme": "light",
-      "sec-ch-prefers-reduced-motion": "no-preference",
-      "sec-ch-ua": "\"Not.A/Brand\";v=\"8\", \"Chromium\";v=\"114\", \"Google Chrome\";v=\"114\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-full-version": "\"114.0.5735.196\"",
-      "sec-ch-ua-mobile": "?1",
-      "sec-ch-ua-model": "\"CPH2449\"",
-      "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua-platform-version": "\"13.0.0\"",
-      "sec-ch-viewport-height": "1829",
-      "sec-ch-viewport-width": "980",
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36",
-      "viewport-width": "980"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": null,
-      "brand": null,
-      "dualOrientation": false,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": null,
-        "size": null
-      },
-      "type": null,
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "13.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Chrome",
-      "version": "114.0.0",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "114.0.0.0",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "device-memory": "8",
-      "downlink": "7.75",
-      "dpr": "4",
-      "ect": "4g",
-      "rtt": "100",
-      "sec-ch-device-memory": "8",
-      "sec-ch-dpr": "4",
-      "sec-ch-prefers-color-scheme": "light",
-      "sec-ch-prefers-reduced-motion": "no-preference",
-      "sec-ch-ua": "\"Not.A/Brand\";v=\"8\", \"Chromium\";v=\"114\", \"Google Chrome\";v=\"114\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-full-version": "\"114.0.5735.196\"",
-      "sec-ch-ua-mobile": "?1",
-      "sec-ch-ua-model": "\"CPH2449\"",
-      "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua-platform-version": "\"13.0.0\"",
-      "sec-ch-viewport-height": "672",
-      "sec-ch-viewport-width": "360",
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36",
-      "viewport-width": "360",
-      "x-requested-with": "XMLHttpRequest"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": null,
-      "brand": null,
-      "dualOrientation": false,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": null,
-        "size": null
-      },
-      "type": null,
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "13.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Chrome",
-      "version": "114.0.0",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "114.0.0.0",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
       "device-memory": "2",
       "downlink": "6.85",
       "dpr": "1",
@@ -4585,131 +4151,6 @@
   {
     "headers": {
       "device-memory": "8",
-      "downlink": "6.6",
-      "dpr": "3.125",
-      "ect": "4g",
-      "rtt": "100",
-      "sec-ch-device-memory": "8",
-      "sec-ch-dpr": "3.125",
-      "sec-ch-prefers-color-scheme": "dark",
-      "sec-ch-prefers-reduced-motion": "no-preference",
-      "sec-ch-ua": "\"Not.A/Brand\";v=\"8\", \"Chromium\";v=\"114\", \"Google Chrome\";v=\"114\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-full-version": "\"114.0.5735.196\"",
-      "sec-ch-ua-mobile": "?1",
-      "sec-ch-ua-model": "\"ASUS_AI2203_C\"",
-      "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua-platform-version": "\"13.0.0\"",
-      "sec-ch-viewport-height": "1926",
-      "sec-ch-viewport-width": "980",
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36",
-      "viewport-width": "980"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": null,
-      "brand": null,
-      "dualOrientation": false,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": null,
-        "size": null
-      },
-      "type": null,
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "13.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Chrome",
-      "version": "114.0.0",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "114.0.0.0",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "device-memory": "8",
-      "downlink": "5.65",
-      "dpr": "3.125",
-      "ect": "4g",
-      "rtt": "50",
-      "sec-ch-device-memory": "8",
-      "sec-ch-dpr": "3.125",
-      "sec-ch-prefers-color-scheme": "dark",
-      "sec-ch-prefers-reduced-motion": "no-preference",
-      "sec-ch-ua": "\"Not.A/Brand\";v=\"8\", \"Chromium\";v=\"114\", \"Google Chrome\";v=\"114\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-full-version": "\"114.0.5735.196\"",
-      "sec-ch-ua-mobile": "?1",
-      "sec-ch-ua-model": "\"ASUS_AI2203_C\"",
-      "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua-platform-version": "\"13.0.0\"",
-      "sec-ch-viewport-height": "680",
-      "sec-ch-viewport-width": "346",
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36",
-      "viewport-width": "346",
-      "x-requested-with": "XMLHttpRequest"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": null,
-      "brand": null,
-      "dualOrientation": false,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": null,
-        "size": null
-      },
-      "type": null,
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "13.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Chrome",
-      "version": "114.0.0",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "114.0.0.0",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "device-memory": "8",
       "downlink": "10",
       "dpr": "2.30144",
       "ect": "4g",
@@ -4755,193 +4196,6 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "13.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Chrome",
-      "version": "114.0.0",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "114.0.0.0",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "device-memory": "2",
-      "downlink": "8",
-      "dpr": "2.325",
-      "ect": "4g",
-      "rtt": "50",
-      "sec-ch-device-memory": "2",
-      "sec-ch-dpr": "2.325",
-      "sec-ch-prefers-color-scheme": "light",
-      "sec-ch-prefers-reduced-motion": "no-preference",
-      "sec-ch-ua": "\"Not.A/Brand\";v=\"8\", \"Chromium\";v=\"114\", \"Google Chrome\";v=\"114\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-full-version": "\"114.0.5735.196\"",
-      "sec-ch-ua-mobile": "?1",
-      "sec-ch-ua-model": "\"P851X\"",
-      "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua-platform-version": "\"7.1.1\"",
-      "sec-ch-viewport-height": "698",
-      "sec-ch-viewport-width": "517",
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36",
-      "viewport-width": "517",
-      "x-requested-with": "XMLHttpRequest"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": null,
-      "brand": null,
-      "dualOrientation": false,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": null,
-        "size": null
-      },
-      "type": null,
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "7.1.1",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Chrome",
-      "version": "114.0.0",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "114.0.0.0",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "device-memory": "2",
-      "downlink": "2.4",
-      "dpr": "2.25",
-      "ect": "4g",
-      "rtt": "200",
-      "sec-ch-device-memory": "2",
-      "sec-ch-dpr": "2.25",
-      "sec-ch-prefers-color-scheme": "light",
-      "sec-ch-prefers-reduced-motion": "no-preference",
-      "sec-ch-ua": "\"Not.A/Brand\";v=\"8\", \"Chromium\";v=\"114\", \"Google Chrome\";v=\"114\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-full-version": "\"114.0.5735.196\"",
-      "sec-ch-ua-mobile": "?1",
-      "sec-ch-ua-model": "\"JDN2-W09\"",
-      "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua-platform-version": "\"9.0.0\"",
-      "sec-ch-viewport-height": "1351",
-      "sec-ch-viewport-width": "980",
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36",
-      "viewport-width": "980"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": null,
-      "brand": null,
-      "dualOrientation": false,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": null,
-        "size": null
-      },
-      "type": null,
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "9.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Chrome",
-      "version": "114.0.0",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "114.0.0.0",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "device-memory": "2",
-      "downlink": "7.9",
-      "dpr": "2.325000047683716",
-      "ect": "4g",
-      "rtt": "50",
-      "sec-ch-device-memory": "2",
-      "sec-ch-dpr": "2.325000047683716",
-      "sec-ch-prefers-color-scheme": "light",
-      "sec-ch-prefers-reduced-motion": "no-preference",
-      "sec-ch-ua": "\"Not.A/Brand\";v=\"8\", \"Chromium\";v=\"114\", \"Google Chrome\";v=\"114\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-full-version": "\"114.0.5735.196\"",
-      "sec-ch-ua-mobile": "?1",
-      "sec-ch-ua-model": "\"P851X\"",
-      "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua-platform-version": "\"7.1.1\"",
-      "sec-ch-viewport-height": "1323",
-      "sec-ch-viewport-width": "980",
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36",
-      "viewport-width": "980"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": null,
-      "brand": null,
-      "dualOrientation": false,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": null,
-        "size": null
-      },
-      "type": null,
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "7.1.1",
       "manufacturer": "google"
     },
     "client": {
@@ -5068,69 +4322,6 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "12.0.0",
-      "manufacturer": "google"
-    },
-    "client": {
-      "name": "Chrome",
-      "version": "114.0.0",
-      "manufacturer": "google",
-      "type": "browser",
-      "isbot": false
-    },
-    "engine": {
-      "name": "Blink",
-      "version": "114.0.0.0",
-      "manufacturer": "google"
-    }
-  },
-  {
-    "headers": {
-      "device-memory": "8",
-      "downlink": "4.2",
-      "dpr": "3.5",
-      "ect": "4g",
-      "rtt": "100",
-      "sec-ch-device-memory": "8",
-      "sec-ch-dpr": "3.5",
-      "sec-ch-prefers-color-scheme": "dark",
-      "sec-ch-prefers-reduced-motion": "no-preference",
-      "sec-ch-ua": "\"Not.A/Brand\";v=\"8\", \"Chromium\";v=\"114\", \"Google Chrome\";v=\"114\"",
-      "sec-ch-ua-arch": "\"\"",
-      "sec-ch-ua-bitness": "\"\"",
-      "sec-ch-ua-full-version": "\"114.0.5735.196\"",
-      "sec-ch-ua-mobile": "?1",
-      "sec-ch-ua-model": "\"CPH2449\"",
-      "sec-ch-ua-platform": "\"Android\"",
-      "sec-ch-ua-platform-version": "\"13.0.0\"",
-      "sec-ch-viewport-height": "783",
-      "sec-ch-viewport-width": "412",
-      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36",
-      "viewport-width": "412",
-      "x-requested-with": "XMLHttpRequest"
-    },
-    "device": {
-      "architecture": null,
-      "deviceName": null,
-      "marketingName": null,
-      "manufacturer": null,
-      "brand": null,
-      "dualOrientation": false,
-      "simCount": null,
-      "display": {
-        "width": null,
-        "height": null,
-        "touch": null,
-        "size": null
-      },
-      "type": null,
-      "ismobile": true,
-      "istv": false,
-      "bits": null
-    },
-    "os": {
-      "name": "Android",
-      "marketingName": "Android",
-      "version": "13.0.0",
       "manufacturer": "google"
     },
     "client": {
@@ -6174,6 +5365,801 @@
       "name": "Android",
       "marketingName": "Android",
       "version": "12.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "114.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "114.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "2",
+      "downlink": "8.15",
+      "dpr": "1.5",
+      "ect": "4g",
+      "rtt": "100",
+      "sec-ch-device-memory": "2",
+      "sec-ch-dpr": "1.5",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"8\", \"Chromium\";v=\"114\", \"Google Chrome\";v=\"114\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version": "\"114.0.5735.196\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"X95\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"10.0.0\"",
+      "sec-ch-viewport-height": "1829",
+      "sec-ch-viewport-width": "980",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "980"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": null,
+      "brand": null,
+      "dualOrientation": false,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": null,
+        "size": null
+      },
+      "type": null,
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "114.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "114.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "8",
+      "downlink": "5.6",
+      "dpr": "2.8768",
+      "ect": "4g",
+      "rtt": "100",
+      "sec-ch-device-memory": "8",
+      "sec-ch-dpr": "2.8768",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"8\", \"Chromium\";v=\"114\", \"Google Chrome\";v=\"114\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version": "\"114.0.5735.196\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"moto g73 5G\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"13.0.0\"",
+      "sec-ch-viewport-height": "704",
+      "sec-ch-viewport-width": "375",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "375",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": null,
+      "brand": null,
+      "dualOrientation": false,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": null,
+        "size": null
+      },
+      "type": null,
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "114.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "114.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "sec-ch-ua": "\"Google Chrome\";v=\"113\", \"Not(A:Brand\";v=\"8\", \"Chromium\";v=\"113\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-platform": "\"Windows\"",
+      "user-agent": "BrightEdge Crawler/1.0 (crawler@brightedge.com)"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": "unknown",
+      "brand": "unknown",
+      "dualOrientation": null,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": false,
+        "size": null
+      },
+      "type": "unknown",
+      "ismobile": false,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Windows",
+      "marketingName": "Windows",
+      "version": null,
+      "manufacturer": "microsoft"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "113.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": null,
+      "version": null,
+      "manufacturer": "unknown"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "8",
+      "downlink": "8.4",
+      "dpr": "3.38979",
+      "ect": "4g",
+      "rtt": "50",
+      "sec-ch-device-memory": "8",
+      "sec-ch-dpr": "3.38979",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"8\", \"Chromium\";v=\"114\", \"Google Chrome\";v=\"114\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version": "\"114.0.5735.196\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"Armor 7\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"10.0.0\"",
+      "sec-ch-viewport-height": "573",
+      "sec-ch-viewport-width": "318",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "318",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": null,
+      "brand": null,
+      "dualOrientation": false,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": null,
+        "size": null
+      },
+      "type": null,
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "114.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "114.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "8",
+      "downlink": "5.5",
+      "dpr": "2.5",
+      "ect": "4g",
+      "rtt": "100",
+      "sec-ch-device-memory": "8",
+      "sec-ch-dpr": "2.5",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"8\", \"Chromium\";v=\"114\", \"Google Chrome\";v=\"114\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version": "\"114.0.5735.196\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"moto g73 5G\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"13.0.0\"",
+      "sec-ch-viewport-height": "1670",
+      "sec-ch-viewport-width": "980",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "980"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": null,
+      "brand": null,
+      "dualOrientation": false,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": null,
+        "size": null
+      },
+      "type": null,
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "114.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "114.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "8",
+      "downlink": "6.75",
+      "dpr": "3.38979",
+      "ect": "4g",
+      "rtt": "50",
+      "sec-ch-device-memory": "8",
+      "sec-ch-dpr": "3.38979",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"8\", \"Chromium\";v=\"114\", \"Google Chrome\";v=\"114\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version": "\"114.0.5735.196\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"Armor 7\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"10.0.0\"",
+      "sec-ch-viewport-height": "573",
+      "sec-ch-viewport-width": "318",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "318",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": null,
+      "brand": null,
+      "dualOrientation": false,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": null,
+        "size": null
+      },
+      "type": null,
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "114.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "114.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "8",
+      "downlink": "10",
+      "dpr": "2.8768",
+      "ect": "4g",
+      "rtt": "50",
+      "sec-ch-device-memory": "8",
+      "sec-ch-dpr": "2.8768",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"8\", \"Chromium\";v=\"114\", \"Google Chrome\";v=\"114\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version": "\"114.0.5735.196\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"moto g73 5G\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"13.0.0\"",
+      "sec-ch-viewport-height": "704",
+      "sec-ch-viewport-width": "375",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "375",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": null,
+      "brand": null,
+      "dualOrientation": false,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": null,
+        "size": null
+      },
+      "type": null,
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "13.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "114.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "114.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "2",
+      "downlink": "6.2",
+      "dpr": "2.25",
+      "ect": "4g",
+      "rtt": "100",
+      "sec-ch-device-memory": "2",
+      "sec-ch-dpr": "2.25",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Google Chrome\";v=\"113\", \"Chromium\";v=\"113\", \"Not-A.Brand\";v=\"24\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version": "\"113.0.5672.162\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"A55\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"11.0.0\"",
+      "sec-ch-viewport-height": "632",
+      "sec-ch-viewport-width": "320",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "320",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": null,
+      "brand": null,
+      "dualOrientation": false,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": null,
+        "size": null
+      },
+      "type": null,
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "113.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "113.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "2",
+      "downlink": "9.35",
+      "dpr": "2.25",
+      "ect": "4g",
+      "rtt": "100",
+      "sec-ch-device-memory": "2",
+      "sec-ch-dpr": "2.25",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Google Chrome\";v=\"113\", \"Chromium\";v=\"113\", \"Not-A.Brand\";v=\"24\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version": "\"113.0.5672.162\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"A55\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"11.0.0\"",
+      "sec-ch-viewport-height": "632",
+      "sec-ch-viewport-width": "320",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "320",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": null,
+      "brand": null,
+      "dualOrientation": false,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": null,
+        "size": null
+      },
+      "type": null,
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "11.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "113.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "113.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "8",
+      "downlink": "3.4",
+      "dpr": "3",
+      "ect": "4g",
+      "rtt": "150",
+      "sec-ch-device-memory": "8",
+      "sec-ch-dpr": "3",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"8\", \"Chromium\";v=\"114\", \"Google Chrome\";v=\"114\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version": "\"114.0.5735.147\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"Armor 9\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"10.0.0\"",
+      "sec-ch-viewport-height": "1840",
+      "sec-ch-viewport-width": "980",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "980"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": null,
+      "brand": null,
+      "dualOrientation": false,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": null,
+        "size": null
+      },
+      "type": null,
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "114.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "114.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "2",
+      "downlink": "9.2",
+      "dpr": "1.5",
+      "ect": "4g",
+      "rtt": "50",
+      "sec-ch-device-memory": "2",
+      "sec-ch-dpr": "1.5",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"8\", \"Chromium\";v=\"114\", \"Google Chrome\";v=\"114\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version": "\"114.0.5735.130\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"KINGKONG_MINI\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"9.0.0\"",
+      "sec-ch-viewport-height": "1612",
+      "sec-ch-viewport-width": "980",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "980"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": null,
+      "brand": null,
+      "dualOrientation": false,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": null,
+        "size": null
+      },
+      "type": null,
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "9.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "114.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "114.0.0.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "4",
+      "downlink": "8.25",
+      "dpr": "1",
+      "ect": "4g",
+      "rtt": "0",
+      "sec-ch-device-memory": "4",
+      "sec-ch-dpr": "1",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-ua": "\"Chromium\";v=\"90\", \"Google Chrome\";v=\"90\", \"Lighthouse\";v=\"9.6.8\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-bitness": "\"64\"",
+      "sec-ch-ua-full-version": "\"90.0.4420.0\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"Moto G4\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"6.0\"",
+      "sec-ch-viewport-height": "812",
+      "sec-ch-viewport-width": "375",
+      "user-agent": "Mozilla/5.0 (Linux; Android 7.0; Moto G (4)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4420.0 Mobile Safari/537.36",
+      "viewport-width": "375"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": null,
+      "brand": null,
+      "dualOrientation": false,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": null,
+        "size": null
+      },
+      "type": null,
+      "ismobile": true,
+      "istv": false,
+      "bits": 64
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "6.0.0",
+      "manufacturer": "google"
+    },
+    "client": {
+      "name": "Chrome",
+      "version": "90.0.0",
+      "manufacturer": "google",
+      "type": "browser",
+      "isbot": false
+    },
+    "engine": {
+      "name": "Blink",
+      "version": "90.0.4420.0",
+      "manufacturer": "google"
+    }
+  },
+  {
+    "headers": {
+      "device-memory": "4",
+      "downlink": "10",
+      "dpr": "2.30144",
+      "ect": "4g",
+      "rtt": "100",
+      "sec-ch-device-memory": "4",
+      "sec-ch-dpr": "2.30144",
+      "sec-ch-prefers-color-scheme": "light",
+      "sec-ch-prefers-reduced-motion": "no-preference",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"8\", \"Chromium\";v=\"114\", \"Google Chrome\";v=\"114\"",
+      "sec-ch-ua-arch": "\"\"",
+      "sec-ch-ua-bitness": "\"\"",
+      "sec-ch-ua-full-version": "\"114.0.5735.61\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-model": "\"MX1\"",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-ch-ua-platform-version": "\"10.0.0\"",
+      "sec-ch-viewport-height": "545",
+      "sec-ch-viewport-width": "313",
+      "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36",
+      "viewport-width": "313",
+      "x-requested-with": "XMLHttpRequest"
+    },
+    "device": {
+      "architecture": null,
+      "deviceName": null,
+      "marketingName": null,
+      "manufacturer": null,
+      "brand": null,
+      "dualOrientation": false,
+      "simCount": null,
+      "display": {
+        "width": null,
+        "height": null,
+        "touch": null,
+        "size": null
+      },
+      "type": null,
+      "ismobile": true,
+      "istv": false,
+      "bits": null
+    },
+    "os": {
+      "name": "Android",
+      "marketingName": "Android",
+      "version": "10.0.0",
       "manufacturer": "google"
     },
     "client": {

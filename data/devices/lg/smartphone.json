@@ -3188,8 +3188,8 @@
     "marketingName": "G7 ThinQ",
     "manufacturer": "lg",
     "brand": "lg",
-    "dualOrientation": null,
-    "simCount": null,
+    "dualOrientation": true,
+    "simCount": 1,
     "display": {
       "width": 3120,
       "height": 1440,
@@ -12459,6 +12459,38 @@
       "height": 720,
       "touch": true,
       "size": 6.6
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "lg lm-g710n": {
+    "deviceName": "LM-G710N",
+    "marketingName": "G7 ThinQ (South Korea)",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 3120,
+      "height": 1440,
+      "touch": true,
+      "size": 6.1
+    },
+    "type": "smartphone",
+    "platform": "android"
+  },
+  "lg lm-g710vm": {
+    "deviceName": "LM-G710VM",
+    "marketingName": "G7 ThinQ (South Korea)",
+    "manufacturer": "lg",
+    "brand": "lg",
+    "dualOrientation": true,
+    "simCount": 1,
+    "display": {
+      "width": 3120,
+      "height": 1440,
+      "touch": true,
+      "size": 6.1
     },
     "type": "smartphone",
     "platform": "android"
